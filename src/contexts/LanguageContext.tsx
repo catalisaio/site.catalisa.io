@@ -1,9 +1,12 @@
 import React, { createContext, useState, useContext, ReactNode } from 'react';
 import { ptBR } from '../locales/pt-BR';
 import { enUS } from '../locales/en-US';
+import { deDE } from '../locales/de-DE';
+import { esES } from '../locales/es-ES';
+import { ruRU } from '../locales/ru-RU';
 
 // Define available languages
-export type Language = 'pt-BR' | 'en-US';
+export type Language = 'pt-BR' | 'en-US' | 'de-DE' | 'es-ES' | 'ru-RU';
 
 // Define the context type
 type LanguageContextType = {
@@ -18,7 +21,10 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 // Translations
 const translations = {
   'pt-BR': ptBR,
-  'en-US': enUS
+  'en-US': enUS,
+  'de-DE': deDE,
+  'es-ES': esES,
+  'ru-RU': ruRU
 };
 
 // Provider component

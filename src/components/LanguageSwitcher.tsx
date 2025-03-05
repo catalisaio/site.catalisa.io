@@ -57,6 +57,33 @@ const LanguageSwitcher: React.FC = () => {
             >
               English
             </button>
+            <button
+              className={`${
+                language === 'de-DE' ? 'bg-gray-100 text-gray-900' : 'text-gray-700'
+              } block w-full text-left px-4 py-2 text-sm hover:bg-gray-100`}
+              role="menuitem"
+              onClick={() => handleLanguageChange('de-DE')}
+            >
+              Deutch
+            </button>
+            <button
+              className={`${
+                language === 'es-ES' ? 'bg-gray-100 text-gray-900' : 'text-gray-700'
+              } block w-full text-left px-4 py-2 text-sm hover:bg-gray-100`}
+              role="menuitem"
+              onClick={() => handleLanguageChange('es-ES')}
+            >
+              Español
+            </button>
+            <button
+              className={`${
+                language === 'ru-RU' ? 'bg-gray-100 text-gray-900' : 'text-gray-700'
+              } block w-full text-left px-4 py-2 text-sm hover:bg-gray-100`}
+              role="menuitem"
+              onClick={() => handleLanguageChange('ru-RU')}
+            >
+              Pусский
+            </button>
           </div>
         </div>
       )}

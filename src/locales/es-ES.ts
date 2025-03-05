@@ -106,7 +106,7 @@ export const esES = {
     'footer.platform.item4': 'Conformidad',
     'footer.resources': 'Recursos',
     'footer.resources.item1': 'Documentación',
-    'footer.resources.item2': 'Blog',
+    'footer.resources.item2': 'LEGO Banking - La Revolución Bancaria',
     'footer.resources.item3': 'Casos de éxito',
     'footer.resources.item4': 'Webinars',
     'footer.company': 'Empresa',

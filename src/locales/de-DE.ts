@@ -106,7 +106,7 @@ export const deDE = {
     'footer.platform.item4': 'Konformität',
     'footer.resources': 'Ressourcen',
     'footer.resources.item1': 'Dokumentation',
-    'footer.resources.item2': 'Blog',
+    'footer.resources.item2': 'LEGO Banking – Die Bankenrevolution',
     'footer.resources.item3': 'Erfolgsgeschichten',
     'footer.resources.item4': 'Webinare',
     'footer.company': 'Unternehmen',

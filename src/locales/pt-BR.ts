@@ -107,7 +107,7 @@ export const ptBR = {
   'footer.platform.item4': 'Conformidade',
   'footer.resources': 'Recursos',
   'footer.resources.item1': 'Documentação',
-  'footer.resources.item2': 'Blog',
+  'footer.resources.item2': 'LEGO Banking - A Revolucao Bancária',
   'footer.resources.item3': 'Casos de Sucesso',
   'footer.resources.item4': 'Webinars',
   'footer.company': 'Empresa',

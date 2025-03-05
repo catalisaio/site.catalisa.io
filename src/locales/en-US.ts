@@ -107,7 +107,7 @@ export const enUS = {
   'footer.platform.item4': 'Compliance',
   'footer.resources': 'Resources',
   'footer.resources.item1': 'Documentation',
-  'footer.resources.item2': 'Blog',
+  'footer.resources.item2': 'LEGO Banking - The Banking Revolution',
   'footer.resources.item3': 'Success Stories',
   'footer.resources.item4': 'Webinars',
   'footer.company': 'Company',

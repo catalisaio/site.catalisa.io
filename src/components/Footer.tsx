@@ -35,13 +35,13 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4 text-gray-900">{t('footer.resources')}</h4>
             <ul className="space-y-2 text-gray-700">
-              <li><a href="#" className="hover:text-accent-blue transition-colors">{t('footer.resources.item1')}</a></li>
-              <li><a href="#" className="hover:text-accent-blue transition-colors">{t('footer.resources.item2')}</a></li>
-              <li><a href="#" className="hover:text-accent-blue transition-colors">{t('footer.resources.item3')}</a></li>
-              <li><a href="#" className="hover:text-accent-blue transition-colors">{t('footer.resources.item4')}</a></li>
+              <li><a href="https://developers.catalisa.com.br" target='_blank' className="hover:text-accent-blue transition-colors">{t('footer.resources.item1')}</a></li>
+              <li><a href="https://legobanking.com/revolucao-bancaria" target="_blank" className="hover:text-accent-blue transition-colors">{t('footer.resources.item2')}</a></li>
+              {/* <li><a href="#" className="hover:text-accent-blue transition-colors">{t('footer.resources.item3')}</a></li>
+              <li><a href="#" className="hover:text-accent-blue transition-colors">{t('footer.resources.item4')}</a></li> */}
             </ul>
           </div>
-          <div>
+          {/* <div>
             <h4 className="text-lg font-semibold mb-4 text-gray-900">{t('footer.company')}</h4>
             <ul className="space-y-2 text-gray-700">
               <li><a href="#" className="hover:text-accent-yellow transition-colors">{t('footer.company.item1')}</a></li>
@@ -49,7 +49,7 @@ const Footer: React.FC = () => {
               <li><a href="#" className="hover:text-accent-yellow transition-colors">{t('footer.company.item3')}</a></li>
               <li><a href="#" className="hover:text-accent-yellow transition-colors">{t('footer.company.item4')}</a></li>
             </ul>
-          </div>
+          </div> */}
         </div>
         <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-600 mb-4 md:mb-0">{t('footer.copyright')}</p>

@@ -106,7 +106,7 @@ export const ruRU = {
     'footer.platform.item4': 'Соответствие',
     'footer.resources': 'Ресурсы',
     'footer.resources.item1': 'Документация',
-    'footer.resources.item2': 'Блог',
+    'footer.resources.item2': 'LEGO Banking - Банковская революция',
     'footer.resources.item3': 'Истории успеха',
     'footer.resources.item4': 'Вебинары',
     'footer.company': 'Компания',

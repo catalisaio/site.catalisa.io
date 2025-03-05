@@ -10,7 +10,7 @@ const LanguageSwitcher: React.FC = () => {
     setIsOpen(!isOpen);
   };
 
-  const handleLanguageChange = (lang: 'pt-BR' | 'en-US') => {
+  const handleLanguageChange = (lang: 'pt-BR' | 'en-US' | 'de-DE' | 'es-ES' | 'ru-RU' | 'zn-CN') => {
     setLanguage(lang);
     setIsOpen(false);
   };
@@ -27,7 +27,7 @@ const LanguageSwitcher: React.FC = () => {
           onClick={toggleDropdown}
         >
           <Globe className="h-5 w-5 mr-1" />
-          {language === 'pt-BR' ? 'PT' : 'EN'}
+          {language}
         </button>
       </div>
 
@@ -84,6 +84,15 @@ const LanguageSwitcher: React.FC = () => {
             >
               Pусский
             </button>
+            {/* <button
+              className={`${
+                language === 'zn-CN' ? 'bg-gray-100 text-gray-900' : 'text-gray-700'
+              } block w-full text-left px-4 py-2 text-sm hover:bg-gray-100`}
+              role="menuitem"
+              onClick={() => handleLanguageChange('zn-CN')}
+            >
+              國語
+            </button> */}
           </div>
         </div>
       )}

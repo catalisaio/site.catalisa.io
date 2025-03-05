@@ -4,9 +4,10 @@ import { enUS } from '../locales/en-US';
 import { deDE } from '../locales/de-DE';
 import { esES } from '../locales/es-ES';
 import { ruRU } from '../locales/ru-RU';
+import { zhCN } from '../locales/zh-CN';
 
 // Define available languages
-export type Language = 'pt-BR' | 'en-US' | 'de-DE' | 'es-ES' | 'ru-RU';
+export type Language = 'pt-BR' | 'en-US' | 'de-DE' | 'es-ES' | 'ru-RU' | 'zn-CN';
 
 // Define the context type
 type LanguageContextType = {
@@ -24,7 +25,8 @@ const translations = {
   'en-US': enUS,
   'de-DE': deDE,
   'es-ES': esES,
-  'ru-RU': ruRU
+  'ru-RU': ruRU,
+  'zh-CN': zhCN
 };
 
 // Provider component

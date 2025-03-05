@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Shield, DollarSign, Activity, Edit3 } from 'lucide-react';
 import { FlowCanvas, useFlowState } from '../flow';
 import { useLanguage } from '../../contexts/LanguageContext';
@@ -6,32 +6,9 @@ import { Link } from 'react-router-dom';
 
 const FlowHero: React.FC = () => {
   const { t } = useLanguage();
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   
-  // Update window width on resize
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-    
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-  
-  // Calculate offsets based on screen width
-  const getPositionOffset = () => {
-    if (windowWidth < 640) { // Mobile
-      return { x: 50, scale: 0.7 };
-    } else if (windowWidth < 1024) { // Tablet
-      return { x: 300, scale: 0.8 };
-    } else { // Desktop
-      return { x: 650, scale: 0.9 };
-    }
-  };
-  
-  const { x: xOffset, scale: initialScale } = getPositionOffset();
+  // Set initial scale for the flow
+  const initialScale = 0.9;
   
   // Create a flow state for the financial flow
    const flowState = useFlowState({
@@ -43,7 +20,7 @@ const FlowHero: React.FC = () => {
          type: "custom",
          icon: Shield,
          color: "#734b9c",
-         position: { x: 119 + xOffset, y: 302 },
+         position: { x: 769, y: 302 }, // Absolute position for desktop (650 + 119)
          visible: true,
          data: {
            category: "Segurança e Compliance"
@@ -55,7 +32,7 @@ const FlowHero: React.FC = () => {
          type: "custom",
          icon: Activity,
          color: "#5b9bd5",
-         position: { x: 476 + xOffset, y: 114 },
+         position: { x: 1126, y: 114 }, // Absolute position for desktop (650 + 476)
          visible: true,
          data: {
            category: "Dados e Analytics"
@@ -67,7 +44,7 @@ const FlowHero: React.FC = () => {
          type: "custom",
          icon: Edit3,
          color: "#734b9c",
-         position: { x: 749 + xOffset, y: 259 },
+         position: { x: 1399, y: 259 }, // Absolute position for desktop (650 + 749)
          visible: true,
          data: {
            category: "Segurança e Compliance"
@@ -79,7 +56,7 @@ const FlowHero: React.FC = () => {
          type: "custom",
          icon: DollarSign,
          color: "#fe8342",
-         position: { x: 1021 + xOffset, y: 134 },
+         position: { x: 1671, y: 134 }, // Absolute position for desktop (650 + 1021)
          visible: true,
          data: {
            category: "Operações Financeiras"

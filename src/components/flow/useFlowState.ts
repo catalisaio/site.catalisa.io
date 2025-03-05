@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { FlowNode, FlowConnection } from './FlowCanvas';
 
 export interface FlowStateOptions {
@@ -11,6 +11,9 @@ export interface FlowStateOptions {
 }
 
 export const useFlowState = (options: FlowStateOptions = {}) => {
+  // Track window width for responsive positioning
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  
   // Form state
   const [formState, setFormState] = useState({
     name: '',
@@ -36,6 +39,20 @@ export const useFlowState = (options: FlowStateOptions = {}) => {
   const [nodes, setNodes] = useState<FlowNode[]>(options.initialNodes || []);
   const [connections, setConnections] = useState<FlowConnection[]>(options.initialConnections || []);
   
+  // Store original node positions for responsive positioning
+  const originalPositionsRef = useRef<{[key: number]: {x: number, y: number}}>({}); 
+  
+  // Initialize original positions if not set
+  useEffect(() => {
+    if (Object.keys(originalPositionsRef.current).length === 0 && nodes.length > 0) {
+      const positions: {[key: number]: {x: number, y: number}} = {};
+      nodes.forEach(node => {
+        positions[node.id] = { ...node.position };
+      });
+      originalPositionsRef.current = positions;
+    }
+  }, [nodes]);
+  
   // Animation effect
   useEffect(() => {
     const interval = setInterval(() => {
@@ -44,6 +61,62 @@ export const useFlowState = (options: FlowStateOptions = {}) => {
     
     return () => clearInterval(interval);
   }, []);
+  
+  // Responsive positioning effect
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+    
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+  
+  // Update node positions when window width changes
+  useEffect(() => {
+    if (Object.keys(originalPositionsRef.current).length > 0) {
+      repositionNodesForViewport();
+    }
+  }, [windowWidth]);
+  
+  // Calculate position adjustment based on viewport width
+  const getPositionFactors = () => {
+    if (windowWidth < 640) { // Mobile
+      return { xFactor: 0.5, yFactor: 1, xOffset: -100 };
+    } else if (windowWidth < 1024) { // Tablet
+      return { xFactor: 0.7, yFactor: 1, xOffset: 0 };
+    } else { // Desktop - original positions
+      return { xFactor: 1, yFactor: 1, xOffset: 0 };
+    }
+  };
+  
+  // Reposition nodes based on current viewport
+  const repositionNodesForViewport = () => {
+    const { xFactor, yFactor, xOffset } = getPositionFactors();
+    
+    // If we're on desktop, restore original positions
+    if (xFactor === 1 && yFactor === 1 && xOffset === 0) {
+      setNodes(prev => prev.map(node => ({
+        ...node,
+        position: originalPositionsRef.current[node.id] || node.position
+      })));
+      return;
+    }
+    
+    // Otherwise, adjust positions based on viewport
+    setNodes(prev => prev.map(node => {
+      const original = originalPositionsRef.current[node.id] || node.position;
+      return {
+        ...node,
+        position: {
+          x: original.x * xFactor + xOffset,
+          y: original.y * yFactor
+        }
+      };
+    }));
+  };
   
   // Form handlers
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -210,6 +283,12 @@ export const useFlowState = (options: FlowStateOptions = {}) => {
           ? { ...node, position: { x, y } } 
           : node
       ));
+      
+      // Update original position if we're in desktop view
+      const { xFactor } = getPositionFactors();
+      if (xFactor === 1 && draggingNode !== null) {
+        originalPositionsRef.current[draggingNode] = { x, y };
+      }
     }
   };
   
@@ -228,6 +307,7 @@ export const useFlowState = (options: FlowStateOptions = {}) => {
   
   const addNode = (node: FlowNode) => {
     setNodes(prev => [...prev, node]);
+    originalPositionsRef.current[node.id] = { ...node.position };
   };
   
   const addConnection = (connection: FlowConnection) => {
@@ -238,6 +318,10 @@ export const useFlowState = (options: FlowStateOptions = {}) => {
     setNodes(prev => prev.filter(node => node.id !== nodeId));
     // Also remove any connections to/from this node
     setConnections(prev => prev.filter(conn => conn.from !== nodeId && conn.to !== nodeId));
+    // Remove from original positions as well
+    const updatedPositions = { ...originalPositionsRef.current };
+    delete updatedPositions[nodeId];
+    originalPositionsRef.current = updatedPositions;
   };
   
   const removeConnection = (connectionId: number) => {
@@ -257,6 +341,7 @@ export const useFlowState = (options: FlowStateOptions = {}) => {
     draggingNode,
     nodes,
     connections,
+    windowWidth,
     
     // Form handlers
     handleChange,
@@ -281,6 +366,9 @@ export const useFlowState = (options: FlowStateOptions = {}) => {
     addNode,
     addConnection,
     removeNode,
-    removeConnection
+    removeConnection,
+    
+    // Responsive positioning
+    repositionNodesForViewport
   };
 };

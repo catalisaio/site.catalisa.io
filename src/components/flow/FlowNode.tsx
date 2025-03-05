@@ -14,6 +14,7 @@ interface NodeProps {
   activateNode: (nodeId: number, data?: any) => void;
   draggingNode: number | null;
   startDraggingNode: (e: React.MouseEvent, nodeId: number) => void;
+  startDraggingNodeTouch?: (e: React.TouchEvent, nodeId: number) => void;
   scale: number;
   customRenderer?: (node: FlowNodeType) => React.ReactNode;
 }
@@ -29,6 +30,7 @@ const FlowNode: React.FC<NodeProps> = ({
   activateNode,
   draggingNode,
   startDraggingNode,
+  startDraggingNodeTouch,
   scale,
   customRenderer
 }) => {
@@ -49,6 +51,7 @@ const FlowNode: React.FC<NodeProps> = ({
           transition: draggingNode === node.id ? 'none' : 'opacity 0.5s ease-in-out, transform 0.3s ease-in-out'
         }}
         onMouseDown={(e) => startDraggingNode(e, node.id)}
+        onTouchStart={startDraggingNodeTouch ? (e) => startDraggingNodeTouch(e, node.id) : undefined}
       >
         {customRenderer(node)}
       </div>
@@ -222,6 +225,7 @@ const FlowNode: React.FC<NodeProps> = ({
         transition: draggingNode === node.id ? 'none' : 'opacity 0.5s ease-in-out, transform 0.3s ease-in-out'
       }}
       onMouseDown={(e) => startDraggingNode(e, node.id)}
+      onTouchStart={startDraggingNodeTouch ? (e) => startDraggingNodeTouch(e, node.id) : undefined}
     >
       {nodeContent}
     </div>

@@ -23,11 +23,19 @@ interface FlowCanvasProps {
   handleChange: (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
   handleSubmit: (e: React.FormEvent) => void;
   activateNode: (nodeId: number) => void;
+  
+  // Mouse event handlers
   startDraggingCanvas: (e: React.MouseEvent) => void;
   startDraggingNode: (e: React.MouseEvent, nodeId: number) => void;
   handleMouseMove: (e: React.MouseEvent) => void;
   stopDraggingCanvas: () => void;
   stopDraggingNode: () => void;
+  
+  // Touch event handlers (for mobile devices)
+  startDraggingCanvasTouch?: (e: React.TouchEvent) => void;
+  startDraggingNodeTouch?: (e: React.TouchEvent, nodeId: number) => void;
+  handleTouchMove?: (e: React.TouchEvent) => void;
+  stopDraggingCanvasTouch?: () => void;
 }
 
 const FlowCanvas: React.FC<FlowCanvasProps> = ({
@@ -49,7 +57,11 @@ const FlowCanvas: React.FC<FlowCanvasProps> = ({
   startDraggingNode,
   handleMouseMove,
   stopDraggingCanvas,
-  stopDraggingNode
+  stopDraggingNode,
+  startDraggingCanvasTouch,
+  startDraggingNodeTouch,
+  handleTouchMove,
+  stopDraggingCanvasTouch
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [showDebug, setShowDebug] = useState(false);
@@ -74,6 +86,16 @@ const FlowCanvas: React.FC<FlowCanvasProps> = ({
       }}
       onMouseLeave={() => {
         stopDraggingCanvas();
+        stopDraggingNode();
+      }}
+      onTouchStart={startDraggingCanvasTouch}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={() => {
+        if (stopDraggingCanvasTouch) stopDraggingCanvasTouch();
+        stopDraggingNode();
+      }}
+      onTouchCancel={() => {
+        if (stopDraggingCanvasTouch) stopDraggingCanvasTouch();
         stopDraggingNode();
       }}
     >
@@ -120,6 +142,7 @@ const FlowCanvas: React.FC<FlowCanvasProps> = ({
             activateNode={activateNode}
             draggingNode={draggingNode}
             startDraggingNode={startDraggingNode}
+            startDraggingNodeTouch={startDraggingNodeTouch}
             scale={scale}
           />
         ))}

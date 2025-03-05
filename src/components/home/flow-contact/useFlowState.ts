@@ -21,6 +21,11 @@ export const useFlowState = () => {
   const [draggingNode, setDraggingNode] = useState<number | null>(null);
   const [dragOffset, setDragOffset] = useState({ x: 0, y: 0 });
   
+  // Touch state for pinch-to-zoom
+  const [touchStartDistance, setTouchStartDistance] = useState<number | null>(null);
+  const [touchStartScale, setTouchStartScale] = useState<number>(scale);
+  const [lastTouches, setLastTouches] = useState<{ x: number, y: number }[]>([]);
+  
   // Animation state
   const [animationProgress, setAnimationProgress] = useState(0);
   
@@ -153,6 +158,7 @@ export const useFlowState = () => {
     setScale(prev => Math.max(prev - 0.1, 0.5));
   };
   
+  // Mouse event handlers
   const startDraggingCanvas = (e: React.MouseEvent) => {
     if (draggingNode) return;
     
@@ -213,6 +219,133 @@ export const useFlowState = () => {
     }
   };
   
+  // Touch event handlers
+  const startDraggingCanvasTouch = (e: React.TouchEvent) => {
+    if (draggingNode) return;
+    
+    e.preventDefault();
+    
+    const touches = e.touches;
+    
+    // If it's a pinch gesture (2 touches)
+    if (touches.length === 2) {
+      const touch1 = { x: touches[0].clientX, y: touches[0].clientY };
+      const touch2 = { x: touches[1].clientX, y: touches[1].clientY };
+      
+      // Calculate the distance between the two touch points
+      const distance = Math.hypot(touch2.x - touch1.x, touch2.y - touch1.y);
+      setTouchStartDistance(distance);
+      setTouchStartScale(scale);
+      
+      // Save touch positions for pan calculations
+      setLastTouches([touch1, touch2]);
+    } 
+    // If it's a single touch (panning)
+    else if (touches.length === 1) {
+      setIsDraggingCanvas(true);
+      setDragStart({ x: touches[0].clientX, y: touches[0].clientY });
+      
+      // Reset pinch state
+      setTouchStartDistance(null);
+      setLastTouches([]);
+    }
+  };
+  
+  const stopDraggingCanvasTouch = () => {
+    setIsDraggingCanvas(false);
+    setTouchStartDistance(null);
+    setLastTouches([]);
+  };
+  
+  const startDraggingNodeTouch = (e: React.TouchEvent, nodeId: number) => {
+    e.stopPropagation();
+    
+    if (e.touches.length !== 1) return;
+    
+    const node = nodes.find(n => n.id === nodeId);
+    if (!node) return;
+    
+    const rect = e.currentTarget.getBoundingClientRect();
+    const touch = e.touches[0];
+    const offsetX = (touch.clientX - rect.left) / scale;
+    const offsetY = (touch.clientY - rect.top) / scale;
+    
+    setDraggingNode(nodeId);
+    setDragOffset({ x: offsetX, y: offsetY });
+  };
+  
+  const handleTouchMove = (e: React.TouchEvent) => {
+    const touches = e.touches;
+    
+    // Handle pinch-to-zoom (2 touches)
+    if (touches.length === 2 && touchStartDistance !== null) {
+      const touch1 = { x: touches[0].clientX, y: touches[0].clientY };
+      const touch2 = { x: touches[1].clientX, y: touches[1].clientY };
+      
+      // Calculate the current distance between touch points
+      const currentDistance = Math.hypot(touch2.x - touch1.x, touch2.y - touch1.y);
+      
+      // Calculate the new scale based on the distance change
+      const newScale = Math.max(
+        0.5,
+        Math.min(2, touchStartScale * (currentDistance / touchStartDistance))
+      );
+      
+      // Apply the new scale
+      setScale(newScale);
+      
+      // Calculate the midpoint of the two touches for panning
+      const midX = (touch1.x + touch2.x) / 2;
+      const midY = (touch1.y + touch2.y) / 2;
+      
+      // If we have previous touch positions, calculate pan delta
+      if (lastTouches.length === 2) {
+        const lastMidX = (lastTouches[0].x + lastTouches[1].x) / 2;
+        const lastMidY = (lastTouches[0].y + lastTouches[1].y) / 2;
+        
+        const deltaX = midX - lastMidX;
+        const deltaY = midY - lastMidY;
+        
+        // Apply panning
+        setPosition(prev => ({
+          x: prev.x + deltaX / scale,
+          y: prev.y + deltaY / scale
+        }));
+      }
+      
+      // Save current touches for next frame
+      setLastTouches([touch1, touch2]);
+    }
+    // Handle canvas dragging (1 touch)
+    else if (touches.length === 1 && isDraggingCanvas) {
+      const touch = touches[0];
+      const deltaX = touch.clientX - dragStart.x;
+      const deltaY = touch.clientY - dragStart.y;
+      
+      setPosition(prev => ({
+        x: prev.x + deltaX / scale,
+        y: prev.y + deltaY / scale
+      }));
+      
+      setDragStart({ x: touch.clientX, y: touch.clientY });
+    }
+    // Handle node dragging (1 touch)
+    else if (touches.length === 1 && draggingNode !== null) {
+      const touch = touches[0];
+      const containerRect = e.currentTarget.getBoundingClientRect();
+      
+      // Calculate the position considering the zoom and the pan
+      const x = (touch.clientX - containerRect.left) / scale - position.x - dragOffset.x;
+      const y = (touch.clientY - containerRect.top) / scale - position.y - dragOffset.y;
+      
+      setNodes(prev => prev.map(node => 
+        node.id === draggingNode 
+          ? { ...node, position: { x, y } } 
+          : node
+      ));
+    }
+  };
+  
   return {
     formState,
     isSubmitting,
@@ -234,6 +367,11 @@ export const useFlowState = () => {
     startDraggingNode,
     handleMouseMove,
     stopDraggingCanvas,
-    stopDraggingNode
+    stopDraggingNode,
+    // Touch event handlers
+    startDraggingCanvasTouch,
+    stopDraggingCanvasTouch,
+    startDraggingNodeTouch,
+    handleTouchMove
   };
 };

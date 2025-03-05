@@ -42,11 +42,19 @@ interface FlowCanvasProps {
   
   // Node interaction handlers
   activateNode: (nodeId: number, data?: any) => void;
+  
+  // Mouse event handlers
   startDraggingCanvas: (e: React.MouseEvent) => void;
   startDraggingNode: (e: React.MouseEvent, nodeId: number) => void;
   handleMouseMove: (e: React.MouseEvent) => void;
   stopDraggingCanvas: () => void;
   stopDraggingNode: () => void;
+  
+  // Touch event handlers (for mobile devices)
+  startDraggingCanvasTouch?: (e: React.TouchEvent) => void;
+  startDraggingNodeTouch?: (e: React.TouchEvent, nodeId: number) => void;
+  handleTouchMove?: (e: React.TouchEvent) => void;
+  stopDraggingCanvasTouch?: () => void;
   
   // Optional custom renderers
   renderNodeContent?: (node: FlowNode) => React.ReactNode;
@@ -76,6 +84,10 @@ const FlowCanvas: React.FC<FlowCanvasProps> = ({
   handleMouseMove,
   stopDraggingCanvas,
   stopDraggingNode,
+  startDraggingCanvasTouch,
+  startDraggingNodeTouch,
+  handleTouchMove,
+  stopDraggingCanvasTouch,
   renderNodeContent,
   renderConnectionPath,
   debugMode = false
@@ -103,6 +115,16 @@ const FlowCanvas: React.FC<FlowCanvasProps> = ({
       }}
       onMouseLeave={() => {
         stopDraggingCanvas();
+        stopDraggingNode();
+      }}
+      onTouchStart={startDraggingCanvasTouch}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={() => {
+        if (stopDraggingCanvasTouch) stopDraggingCanvasTouch();
+        stopDraggingNode();
+      }}
+      onTouchCancel={() => {
+        if (stopDraggingCanvasTouch) stopDraggingCanvasTouch();
         stopDraggingNode();
       }}
     >
@@ -149,6 +171,7 @@ const FlowCanvas: React.FC<FlowCanvasProps> = ({
             activateNode={activateNode}
             draggingNode={draggingNode}
             startDraggingNode={startDraggingNode}
+            startDraggingNodeTouch={startDraggingNodeTouch}
             scale={scale}
             customRenderer={renderNodeContent}
           />

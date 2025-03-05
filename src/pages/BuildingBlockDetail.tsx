@@ -7,6 +7,9 @@ import Footer from '../components/Footer';
 import { getBlockById, BuildingBlock, buildingBlocks } from '../data/buildingBlocks';
 import { useLanguage } from '../contexts/LanguageContext';
 
+import heroBg from '../../public/bg-blocks-002.jpeg';
+
+
 const BuildingBlockDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const [block, setBlock] = useState<BuildingBlock | null>(null);
@@ -70,17 +73,22 @@ const BuildingBlockDetail: React.FC = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className={`py-20 ${bgColor}`}>
+      <section className="py-20 bg-cover bg-center bg-no-repeat" style={{ 
+      backgroundImage: `url(${heroBg})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat'
+    }}>
         <div className="container mx-auto px-4">
           <Link to="/building-blocks" className={`inline-flex items-center ${textColor} hover:underline mb-8`}>
             <ArrowLeft className="h-5 w-5 mr-2" /> {t('blockDetail.viewAll')}
           </Link>
           
-          <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
+          <div className="flex flex-col md:flex-row items-start md:items-center gap-6 ">
             <div className={`${iconBgColor} p-6 rounded-full`}>
               <IconComponent className="h-12 w-12 text-white" />
             </div>
-            <div>
+            <div className='backdrop-blur-md bg-white/20 rounded-xl border border-white/20 z-30 p-10'>
               <h1 className="text-4xl md:text-5xl font-semibold text-gray-900">{block.title}</h1>
               <p className="text-xl text-gray-700 mt-2">{block.short_description}</p>
               <div className="mt-4">

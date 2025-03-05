@@ -3,12 +3,14 @@ import { ArrowRight } from 'lucide-react';
 import { useLanguage } from '../../contexts/LanguageContext';
 import { Link } from 'react-router-dom';
 
+import heroBg from '../../../public/bg-blocks-004.jpeg'
+
 const HeroSection: React.FC = () => {
   const { t } = useLanguage();
   
   return (
     <section className="py-20 bg-cover bg-center bg-no-repeat" style={{ 
-      backgroundImage: "url('/dist/assets/bg-blocks-004.jpeg')",
+      backgroundImage: `url(${heroBg})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat'

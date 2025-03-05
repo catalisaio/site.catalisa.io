@@ -3,12 +3,15 @@ import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { useLanguage } from '../../contexts/LanguageContext';
 
+import heroBg from '../../../public/bg-paas-000.png'
+
+
 const PaasExplanationHero: React.FC = () => {
   const { t } = useLanguage();
   
   return (
       <section className="bg-gradient-to-b from-accent-bluePastel to-white py-20 bg-cover bg-center bg-no-repeat" style={{ 
-      backgroundImage: "url('/dist/assets/bg-paas-000.png')",
+      backgroundImage: `url(${heroBg})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat'

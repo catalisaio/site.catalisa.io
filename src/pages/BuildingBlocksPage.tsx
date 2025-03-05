@@ -7,6 +7,9 @@ import { buildingBlocks, getBlocksByCategory } from '../data/buildingBlocks';
 import { useLanguage } from '../contexts/LanguageContext';
 import { Link } from 'react-router-dom';
 
+import heroBg from '../../public/bg-blocks-005.jpeg';
+
+
 const BuildingBlocksPage: React.FC = () => {
   const { t } = useLanguage();
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
@@ -31,7 +34,7 @@ const BuildingBlocksPage: React.FC = () => {
       
       {/* Hero Section */}
       <section className="py-20 bg-cover bg-center bg-no-repeat" style={{ 
-      backgroundImage: "url('/dist/assets/bg-blocks-005.jpeg')",
+      backgroundImage: `url(${heroBg})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat'

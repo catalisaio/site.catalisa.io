@@ -90,23 +90,26 @@ const FlowContactSection: React.FC = () => {
   
   return (
     <section className="bg-gray-150 relative" style={{ marginBottom: '-25px' }}>
-        {/* Floating glass container */}
-        <div className="absolute top-1/2 left-3/4 transform -translate-x-1/2 -translate-y-1/2 max-w-md w-full p-8 rounded-xl backdrop-blur-md bg-white/05 border border-white/25 z-30">
-          <h3 className="text-4xl font-semibold text-gray-900 mb-4 text-primary-main">
+        {/* Floating glass container - responsively positioned */}
+        <div className={`
+          z-30 backdrop-blur-md bg-white/05 border border-white/25 rounded-xl
+          sm:absolute sm:top-1/2 sm:left-3/4 sm:transform sm:-translate-x-1/2 sm:-translate-y-1/2 sm:max-w-md sm:w-full sm:p-8
+          mx-4 my-6 p-6 relative
+        `}>
+          <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-900 mb-3 sm:mb-4 text-primary-main">
             {t('flow.hero.title')}
           </h3>
-          <p className="text-gray-800 mb-6">
-          {t('flow.hero.subtitle')}
+          <p className="text-sm sm:text-base text-gray-800 mb-4 sm:mb-6">
+            {t('flow.hero.subtitle')}
           </p>
-          <Link to="/schedule" className="bg-primary-main hover:bg-primary-light text-white px-6 py-3 rounded-md font-medium transition-colors shadow-soft hover:shadow-hover">
+          <Link to="/schedule" className="bg-primary-main hover:bg-primary-light text-white px-4 sm:px-6 py-2 sm:py-3 rounded-md font-medium transition-colors shadow-soft hover:shadow-hover text-sm sm:text-base inline-block">
             Try It Now
           </Link>
         </div>
         
         {/* Main visualization area with relative positioning */}
-        <div className="relative">
-          
-          <FlowCanvas 
+        <div className="relative h-[350px] sm:h-[400px] md:h-[500px]">
+          <FlowCanvas
             nodes={flowState.nodes}
             connections={flowState.connections}
             scale={flowState.scale}

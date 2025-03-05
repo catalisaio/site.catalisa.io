@@ -67,19 +67,19 @@ const ContactSection: React.FC = () => {
   };
   
   return (
-    <section id="contato" className="py-20 bg-white">
+    <section id="contato" className="py-10 sm:py-16 md:py-20 bg-white">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-semibold mb-6 text-gray-900">{t('contact.title')}</h2>
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+        <div className="text-center mb-8 sm:mb-12 md:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold mb-3 sm:mb-6 text-gray-900">{t('contact.title')}</h2>
+          <p className="text-base sm:text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
             {t('contact.subtitle')}
           </p>
         </div>
         
-        <div className="grid md:grid-cols-5 gap-12 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-5 gap-6 sm:gap-8 md:gap-12 max-w-6xl mx-auto">
           <div className="md:col-span-3">
             {submitted ? (
-              <div className="bg-success-pastel rounded-xl p-8 text-center h-full flex flex-col items-center justify-center">
+              <div className="bg-success-pastel rounded-xl p-4 sm:p-6 md:p-8 text-center h-full flex flex-col items-center justify-center">
                 <div className="w-16 h-16 bg-success-DEFAULT rounded-full flex items-center justify-center mb-4">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -213,8 +213,8 @@ const ContactSection: React.FC = () => {
           </div>
           
           <div className="md:col-span-2">
-            <div className="bg-gray-50 p-8 rounded-xl h-full">
-              <h3 className="text-2xl font-semibold mb-8 text-gray-900 border-b border-gray-200 pb-4">{t('contact.info.title')}</h3>
+            <div className="bg-gray-50 p-4 sm:p-6 md:p-8 rounded-xl h-full">
+              <h3 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6 md:mb-8 text-gray-900 border-b border-gray-200 pb-3 sm:pb-4">{t('contact.info.title')}</h3>
               
               <div className="space-y-8">
                 <div className="flex items-start">

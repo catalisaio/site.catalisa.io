@@ -1,4 +1,4 @@
-export const zhCN = {
+export const paas = {
   // PaaS Section
   'paas.title': 'Catalisa平台：推动数字化转型的基础设施',
   'paas.subtitle': '我们的平台提供开发、部署和管理金融应用所需的全套基础设施，既安全又高效，支持构建或购买模块的选择。',

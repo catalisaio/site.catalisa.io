@@ -1,4 +1,5 @@
-export const ruRU = {
+// Russian translations - Flow sections
+export const flow = {
   // Flow Section
   'flow.title': 'Оркеструйте ваш финансовый поток',
   'flow.subtitle': 'Соединяйте мощные модули для создания комплексных финансовых решений',

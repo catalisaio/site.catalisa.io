@@ -1,4 +1,4 @@
-export const zhCN = {
+export const blocks = {
   // Building Blocks
   'blocks.title': 'Catalisa构件',
   'blocks.subtitle': '模块化、专业化组件，助您构建完整金融解决方案，实现高效与安全，推动金融领域数字化转型。',

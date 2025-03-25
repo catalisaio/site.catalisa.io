@@ -1,4 +1,5 @@
-export const zhCN = {
+// Chinese (Simplified) translations - Common elements
+export const common = {
   // Header
   'nav.home': '首页',
   'nav.platform': 'Catalisa 平台',

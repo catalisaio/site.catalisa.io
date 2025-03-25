@@ -1,4 +1,4 @@
-export const zhCN = {
+export const flow = {
   // Flow Section
   'flow.title': '编排您的金融流程',
   'flow.subtitle': '连接强大构件，构建完整金融解决方案',

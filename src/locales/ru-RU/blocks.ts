@@ -1,4 +1,5 @@
-export const ruRU = {
+// Russian translations - Building Blocks sections
+export const blocks = {
   // Building Blocks
   'blocks.title': 'Модули от',
   'blocks.subtitle': 'Модульные и специализированные компоненты для создания комплексных финансовых решений с оперативностью и безопасностью, ускоряющие цифровую трансформацию в финансовом секторе.',

@@ -1,4 +1,5 @@
-export const ruRU = {
+// Russian translations - PaaS Explanation sections
+export const paasExplanation = {
   // PaaS Explanation What
   'paasExplanation.what.title': 'Что такое финансовая платформа Composable?',
   'paasExplanation.what.subtitle': 'Полное решение, устраняющее сложности инфраструктуры и позволяющее сосредоточиться на разработке финансовых продуктов с гибкостью.',

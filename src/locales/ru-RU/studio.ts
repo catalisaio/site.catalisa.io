@@ -1,4 +1,5 @@
-export const ruRU = {
+// Russian translations - Studio sections
+export const studio = {
   // Studio Section
   'studio.title': 'Catalisa Studio: Low-Code разработка для финансовых услуг',
   'studio.subtitle': 'Визуальная среда разработки, позволяющая быстро создавать сложные финансовые решения, сокращая необходимость в обширном кодировании и поддерживая эффективное сотрудничество между бизнесом и IT-командами.',

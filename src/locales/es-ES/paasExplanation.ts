@@ -1,4 +1,5 @@
-export const esES = {
+// Spanish (Spain) translations - PaaS Explanation sections
+export const paasExplanation = {
   // PaaS Explanation What
   'paasExplanation.what.title': '¿Qué es una plataforma financiera Composable?',
   'paasExplanation.what.subtitle': 'Una solución completa que elimina la complejidad de la infraestructura y te permite centrarte en el desarrollo de productos financieros con agilidad.',

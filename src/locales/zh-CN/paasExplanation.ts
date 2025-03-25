@@ -1,4 +1,4 @@
-export const zhCN = {
+export const paasExplanation = {
   // PaaS Explanation What
   'paasExplanation.what.title': '什么是组合式金融平台？',
   'paasExplanation.what.subtitle': '一站式解决方案，消除基础设施复杂性，让您专注于敏捷开发金融产品。',

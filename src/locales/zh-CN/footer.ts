@@ -1,4 +1,4 @@
-export const zhCN = {
+export const footer = {
   // Footer
   'footer.desc': '用组合式与模块化技术革新金融服务的未来。',
   'footer.desc2': 'Catalisa助力您的机构打破传统系统限制，加速按需金融产品创新。',

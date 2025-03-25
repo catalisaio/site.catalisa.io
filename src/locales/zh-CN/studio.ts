@@ -1,4 +1,4 @@
-export const zhCN = {
+export const studio = {
   // Studio Section
   'studio.title': 'Catalisa Studio：面向金融服务的低代码开发',
   'studio.subtitle': '一个可视化开发环境，能快速构建复杂的金融解决方案，减少大量编程需求，并通过高效协作赋能业务与IT团队。',

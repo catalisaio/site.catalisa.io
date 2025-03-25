@@ -1,4 +1,5 @@
-export const esES = {
+// Spanish (Spain) translations - Studio sections
+export const studio = {
   // Studio Section
   'studio.title': 'Catalisa Studio: Low-Code para servicios financieros',
   'studio.subtitle': 'Un entorno de desarrollo visual que permite crear soluciones financieras complejas rápidamente, reduciendo la necesidad de programación extensiva y empoderando a los equipos de negocio e IT mediante una colaboración efectiva.',

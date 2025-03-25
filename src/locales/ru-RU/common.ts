@@ -1,4 +1,5 @@
-export const ruRU = {
+// Russian translations - Common elements
+export const common = {
   // Header
   'nav.home': 'Главная',
   'nav.platform': 'Платформа Catalisa',

@@ -1,4 +1,5 @@
-export const ruRU = {
+// Russian translations - Home sections
+export const home = {
   // Hero Section
   'hero.title': 'Революционизируйте свои финансовые услуги с',
   'hero.subtitle': 'Финансовая платформа Composable, ускоряющая разработку, внедрение и масштабирование цифровых финансовых решений с интегрированной безопасностью.',

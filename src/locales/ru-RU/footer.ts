@@ -1,4 +1,5 @@
-export const ruRU = {
+// Russian translations - Footer sections
+export const footer = {
   // Footer
   'footer.desc': 'Трансформируя будущее финансовых услуг с помощью composable и модульных технологий.',
   'footer.desc2': 'Catalisa даёт вашему учреждению возможность для инноваций, устраняя барьеры устаревших систем и ускоряя внедрение финансовых продуктов по требованию.',

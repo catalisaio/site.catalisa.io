@@ -1,4 +1,5 @@
-export const esES = {
+// Spanish (Spain) translations - Footer sections
+export const footer = {
   // Footer
   'footer.desc': 'Transformando el futuro de los servicios financieros con tecnología Composable y modular.',
   'footer.desc2': 'Catalisa empodera a tu institución para innovar, eliminando las barreras del legado y acelerando productos financieros a la carta.',

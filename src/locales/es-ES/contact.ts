@@ -1,4 +1,5 @@
-export const esES = {
+// Spanish (Spain) translations - Contact sections
+export const contact = {
   // Contact Section
   'contact.title': 'Contacto',
   'contact.subtitle': 'Estamos listos para ayudar a tu institución a acelerar la transformación digital con nuestra plataforma financiera Composable.',

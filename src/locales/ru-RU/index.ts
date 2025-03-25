@@ -1,23 +1,25 @@
-import { ruRU as commonTranslations } from './common';
-import { ruRU as homeTranslations } from './home';
-import { ruRU as paasTranslations } from './paas';
-import { ruRU as paasExplanationTranslations } from './paasExplanation';
-import { ruRU as studioTranslations } from './studio';
-import { ruRU as blocksTranslations } from './blocks';
-import { ruRU as flowTranslations } from './flow';
-import { ruRU as contactTranslations } from './contact';
-import { ruRU as footerTranslations } from './footer';
-import { ruRU as faqTranslations } from './faq';
+// Russian translations - Index file
+import { common } from './common';
+import { home } from './home';
+import { paas } from './paas';
+import { paasExplanation } from './paasExplanation';
+import { studio } from './studio';
+import { blocks } from './blocks';
+import { flow } from './flow';
+import { contact } from './contact';
+import { footer } from './footer';
+import { faq } from './faq';
 
+// Combine all translation sections
 export const ruRU = {
-  ...commonTranslations,
-  ...homeTranslations,
-  ...paasTranslations,
-  ...paasExplanationTranslations,
-  ...studioTranslations,
-  ...blocksTranslations,
-  ...flowTranslations,
-  ...contactTranslations,
-  ...footerTranslations,
-  ...faqTranslations
+  ...common,
+  ...home,
+  ...paas,
+  ...paasExplanation,
+  ...studio,
+  ...blocks,
+  ...flow,
+  ...contact,
+  ...footer,
+  ...faq
 };

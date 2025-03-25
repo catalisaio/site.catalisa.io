@@ -1,4 +1,5 @@
-export const esES = {
+// Spanish (Spain) translations - PaaS sections
+export const paas = {
   // PaaS Section
   'paas.title': 'Catalisa Platform: Infraestructura para la transformación digital',
   'paas.subtitle': 'Nuestra plataforma ofrece toda la infraestructura necesaria para desarrollar, implementar y gestionar aplicaciones financieras con seguridad y agilidad, permitiéndote elegir entre construir o comprar módulos.',

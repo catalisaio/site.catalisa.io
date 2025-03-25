@@ -1,4 +1,5 @@
-export const esES = {
+// Spanish (Spain) translations - Flow sections
+export const flow = {
   // Flow Section
   'flow.title': 'Orquesta tu flujo financiero',
   'flow.subtitle': 'Conecta building blocks potentes para crear soluciones financieras completas',

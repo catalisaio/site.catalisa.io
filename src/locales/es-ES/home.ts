@@ -1,4 +1,5 @@
-export const esES = {
+// Spanish (Spain) translations - Home sections
+export const home = {
   // Hero Section
   'hero.title': 'Revoluciona tus servicios financieros con la',
   'hero.subtitle': 'La plataforma financiera Composable que acelera el desarrollo, la implementación y la escalabilidad de soluciones financieras digitales con seguridad integrada.',

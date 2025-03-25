@@ -1,4 +1,5 @@
-export const esES = {
+// Spanish (Spain) translations - Building Blocks sections
+export const blocks = {
   // Building Blocks
   'blocks.title': 'Building Blocks de',
   'blocks.subtitle': 'Componentes modulares y especializados para construir soluciones financieras completas con agilidad y seguridad, acelerando la transformación digital en el sector financiero.',

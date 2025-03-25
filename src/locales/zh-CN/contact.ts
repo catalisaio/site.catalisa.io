@@ -1,4 +1,4 @@
-export const zhCN = {
+export const contact = {
   // Contact Section
   'contact.title': '联系我们',
   'contact.subtitle': '我们已准备好帮助您的机构利用组合式金融平台加速数字化转型。',

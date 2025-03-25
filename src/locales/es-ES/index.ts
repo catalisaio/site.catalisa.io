@@ -1,23 +1,25 @@
-import { esES as commonTranslations } from './common';
-import { esES as homeTranslations } from './home';
-import { esES as paasTranslations } from './paas';
-import { esES as paasExplanationTranslations } from './paasExplanation';
-import { esES as studioTranslations } from './studio';
-import { esES as blocksTranslations } from './blocks';
-import { esES as flowTranslations } from './flow';
-import { esES as contactTranslations } from './contact';
-import { esES as footerTranslations } from './footer';
-import { esES as faqTranslations } from './faq';
+// Spanish (Spain) translations - Index file
+import { common } from './common';
+import { home } from './home';
+import { paas } from './paas';
+import { paasExplanation } from './paasExplanation';
+import { studio } from './studio';
+import { blocks } from './blocks';
+import { flow } from './flow';
+import { contact } from './contact';
+import { footer } from './footer';
+import { faq } from './faq';
 
+// Combine all translation sections
 export const esES = {
-  ...commonTranslations,
-  ...homeTranslations,
-  ...paasTranslations,
-  ...paasExplanationTranslations,
-  ...studioTranslations,
-  ...blocksTranslations,
-  ...flowTranslations,
-  ...contactTranslations,
-  ...footerTranslations,
-  ...faqTranslations
+  ...common,
+  ...home,
+  ...paas,
+  ...paasExplanation,
+  ...studio,
+  ...blocks,
+  ...flow,
+  ...contact,
+  ...footer,
+  ...faq
 };

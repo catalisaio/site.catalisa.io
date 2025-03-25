@@ -1,4 +1,5 @@
-export const ruRU = {
+// Russian translations - Contact sections
+export const contact = {
   // Contact Section
   'contact.title': 'Контакты',
   'contact.subtitle': 'Мы готовы помочь вашему учреждению ускорить цифровую трансформацию с нашей финансовой платформой Composable.',

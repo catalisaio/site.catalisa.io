@@ -1,4 +1,5 @@
-export const zhCN = {
+// Chinese (Simplified) translations - Home sections
+export const home = {
   // Hero Section
   'hero.title': '用Catalisa平台革新您的金融服务',
   'hero.subtitle': '组合式金融平台，加速数字金融解决方案的开发、部署与扩展，并内置安全保障。',

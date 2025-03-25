@@ -10,6 +10,7 @@ import PaasExplanationPage from './pages/PaasExplanationPage.tsx';
 import BuildingBlocksPage from './pages/BuildingBlocksPage.tsx';
 import BuildingBlockDetail from './pages/BuildingBlockDetail.tsx';
 import SchedulePage from './pages/SchedulePage.tsx';
+import FAQPage from './pages/FAQPage.tsx';
 
 //Utils
 import { LanguageProvider } from './contexts/LanguageContext.tsx';
@@ -27,6 +28,7 @@ createRoot(document.getElementById('root')!).render(
             <Route path="/building-blocks" element={<BuildingBlocksPage />} />
             <Route path="/building-blocks/:id" element={<BuildingBlockDetail />} />
             <Route path="/schedule" element={<SchedulePage />} />
+            <Route path="/faq" element={<FAQPage />} />
           </Routes>
         </Layout>
       </BrowserRouter>

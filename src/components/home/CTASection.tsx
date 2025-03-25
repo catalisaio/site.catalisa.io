@@ -17,6 +17,9 @@ const CTASection: React.FC = () => {
           <Link to="/schedule" className="bg-white text-primary-main hover:bg-gray-100 px-6 py-3 rounded-md font-medium text-lg transition-colors shadow-soft hover:shadow-hover flex items-center justify-center">
             {t('cta.button1')} <ArrowRight className="ml-2 h-5 w-5" />
           </Link>
+          <Link to="/faq" className="bg-transparent border border-white text-white hover:bg-primary-light px-6 py-3 rounded-md font-medium text-lg transition-colors flex items-center justify-center">
+            {t('faq.viewMore') || 'Ver perguntas frequentes'} <ArrowRight className="ml-2 h-5 w-5" />
+          </Link>
         </div>
       </div>
     </section>

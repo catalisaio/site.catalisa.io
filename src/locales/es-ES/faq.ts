@@ -1,0 +1,15 @@
+export const esES = {
+  // PaaS Explanation FAQ
+  'paasExplanation.faq.title': 'Preguntas frecuentes',
+  'paasExplanation.faq.subtitle': 'Respuestas a las preguntas más comunes sobre la plataforma Composable y Catalisa Platform.',
+  'paasExplanation.faq.q1': '¿Qué diferencia a la plataforma Composable de otros modelos de computación en la nube?',
+  'paasExplanation.faq.a1': 'La plataforma Composable ofrece un equilibrio ideal entre control y comodidad. A diferencia del IaaS, donde gestionas el sistema operativo y el middleware, o del SaaS, donde utilizas aplicaciones preconstruidas, nuestra plataforma proporciona módulos completos para el desarrollo, permitiéndote centrarte en la lógica de negocio y acelerar la transformación digital.',
+  'paasExplanation.faq.q2': '¿Es segura Catalisa Platform para las instituciones financieras?',
+  'paasExplanation.faq.a2': 'La seguridad de Catalisa Platform es una prioridad. Adoptamos un enfoque "security by design" y seguimos las mejores prácticas de seguridad del mercado, alineando nuestros controles a los requisitos exigidos por los grandes bancos. Aunque aún estamos en proceso de obtener certificaciones formales, invertimos continuamente en medidas robustas – como cifrado, autenticación multifactor, monitoreo continuo y políticas estrictas de gobernanza – para garantizar la integridad, confidencialidad y disponibilidad de los datos. Estamos comprometidos a evolucionar y mejorar nuestra postura de seguridad para ofrecer un entorno confiable para las instituciones financieras.',
+  'paasExplanation.faq.q3': '¿Cómo ayuda Catalisa Platform a reducir el tiempo de desarrollo?',
+  'paasExplanation.faq.a3': 'Nuestra plataforma ofrece building blocks preconstruidos para funcionalidades financieras comunes, entornos de desarrollo estandarizados, herramientas integradas de CI/CD y automatización de infraestructura. Esto permite que tus equipos se centren en el desarrollo de funcionalidades específicas del negocio, reduciendo el tiempo de lanzamiento hasta en un 70% y acelerando la transformación digital.',
+  'paasExplanation.faq.q4': '¿Es escalable Catalisa Platform para grandes volúmenes de transacciones?',
+  'paasExplanation.faq.a4': 'Absolutamente. Nuestra plataforma ha sido diseñada para escalar automáticamente según la demanda, soportando desde pequeñas fintechs hasta grandes instituciones financieras con millones de transacciones diarias. La infraestructura subyacente se ajusta dinámicamente para garantizar un rendimiento consistente incluso durante picos de uso, manteniendo la seguridad y conformidad.',
+  'paasExplanation.faq.q5': '¿Qué lenguajes de programación y frameworks son compatibles?',
+  'paasExplanation.faq.a5': 'Catalisa Platform es compatible con una amplia gama de lenguajes de programación y frameworks modernos, incluyendo Java, Python, Node.js, .NET, Go y otros. Esto permite que tus equipos utilicen las tecnologías con las que ya están familiarizados, reduciendo la curva de aprendizaje y acelerando la implementación de soluciones financieras digitales.',
+};

@@ -1,0 +1,21 @@
+export const zhCN = {
+  // Footer
+  'footer.desc': '用组合式与模块化技术革新金融服务的未来。',
+  'footer.desc2': 'Catalisa助力您的机构打破传统系统限制，加速按需金融产品创新。',
+  'footer.platform': '平台',
+  'footer.platform.item1': 'Catalisa平台',
+  'footer.platform.item2': 'Studio',
+  'footer.platform.item3': '安全性',
+  'footer.platform.item4': '合规性',
+  'footer.resources': '资源',
+  'footer.resources.item1': '文档',
+  'footer.resources.item2': 'LEGO Banking - 银行业革命',    
+  'footer.resources.item3': '成功案例',
+  'footer.resources.item4': '网络研讨会',
+  'footer.company': '公司',
+  'footer.company.item1': '关于我们',
+  'footer.company.item2': '招聘',
+  'footer.company.item3': '联系',
+  'footer.company.item4': '媒体',
+  'footer.copyright': '© 2025 Catalisa. 保留所有权利.',
+};

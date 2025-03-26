@@ -21,6 +21,8 @@ export const home = {
   'podcast.subtitle.spanish': 'Spanish',
   'podcast.cinemaMode': 'Cinema Mode',
   'podcast.exitCinemaMode': 'Exit Cinema Mode',
+  'podcast.ribbon.text': 'Discover Catalisa in 20 minutes',
+  'podcast.ribbon.cta': 'Listen to Podcast',
   
   // Platform Overview
   'overview.title': 'One Financial Platform, Infinite Possibilities',
@@ -51,4 +53,14 @@ export const home = {
   'cta.subtitle': 'Join the financial institutions that are already revolutionizing the development and delivery of digital solutions with our composable financial platform.',
   'cta.button1': 'Schedule a Demo',
   'cta.button2': 'Talk to an Expert',
+  
+  // Podcasts Page
+  'podcasts.title': 'Our Podcasts',
+  'podcasts.subtitle': 'Listen to our insights on financial technology and digital transformation',
+  'podcasts.search': 'Search podcasts...',
+  'podcasts.filter': 'Filter by tags:',
+  'podcasts.allEpisodes': 'All Episodes',
+  'podcasts.noResults': 'No podcasts found. Try different search terms or filters.',
+  'podcasts.listen': 'Listen Now',
+  'podcasts.nav': 'Podcasts'
 };

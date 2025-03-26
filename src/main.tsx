@@ -12,6 +12,7 @@ import BuildingBlockDetail from './pages/BuildingBlockDetail.tsx';
 import SchedulePage from './pages/SchedulePage.tsx';
 import FAQPage from './pages/FAQPage.tsx';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage.tsx';
+import PodcastsPage from './pages/PodcastsPage.tsx';
 
 //Utils
 import { LanguageProvider } from './contexts/LanguageContext.tsx';
@@ -31,6 +32,7 @@ createRoot(document.getElementById('root')!).render(
             <Route path="/schedule" element={<SchedulePage />} />
             <Route path="/faq" element={<FAQPage />} />
             <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+            <Route path="/podcasts" element={<PodcastsPage />} />
           </Routes>
         </Layout>
       </BrowserRouter>

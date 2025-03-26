@@ -16,4 +16,32 @@ export const home = {
   'overview.section1.item2.desc': 'Сертифицированная инфраструктура, соответствующая регуляторным стандартам финансового сектора без ущерба для гибкости.',
   'overview.section1.item3.title': 'Интегрированная масштабируемость',
   'overview.section1.item3.desc': 'Развивайтесь уверенно, используя платформу, которая автоматически масштабируется в зависимости от ваших потребностей, устраняя операционные узкие места.',
+  
+  // Podcast Section
+  'podcast.title': 'Откройте для себя платформу Catalisa за 20 минут',
+  'podcast.description': 'Послушайте наш краткий подкаст, чтобы понять, как платформа Catalisa может революционизировать ваши финансовые услуги и ускорить цифровую трансформацию.',
+  'podcast.overview': 'Обзор Catalisa',
+  'podcast.play': 'Воспроизвести',
+  'podcast.pause': 'Пауза',
+  'podcast.mute': 'Без звука',
+  'podcast.unmute': 'Включить звук',
+  'podcast.subtitle.loading': 'Загрузка субтитров...',
+  'podcast.subtitle.label': 'Язык субтитров',
+  'podcast.subtitle.english': 'Английский',
+  'podcast.subtitle.portuguese': 'Португальский',
+  'podcast.subtitle.spanish': 'Испанский',
+  'podcast.cinemaMode': 'Режим кинотеатра',
+  'podcast.exitCinemaMode': 'Выйти из режима кинотеатра',
+  'podcast.ribbon.text': 'Откройте Catalisa за 20 минут',
+  'podcast.ribbon.cta': 'Слушать подкаст',
+  
+  // Podcasts Page
+  'podcasts.title': 'Наши подкасты',
+  'podcasts.subtitle': 'Слушайте наши идеи о финансовых технологиях и цифровой трансформации',
+  'podcasts.search': 'Поиск подкастов...',
+  'podcasts.filter': 'Фильтр по тегам:',
+  'podcasts.allEpisodes': 'Все эпизоды',
+  'podcasts.noResults': 'Подкасты не найдены. Попробуйте другие поисковые запросы или фильтры.',
+  'podcasts.listen': 'Слушать сейчас',
+  'podcasts.nav': 'Подкасты'
 };

@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useLanguage } from '../../contexts/LanguageContext';
-import { Play, Pause, Volume2, VolumeX, Globe, Maximize, Minimize, X } from 'lucide-react';
+import { Play, Pause, Volume2, VolumeX, Globe, Maximize, Minimize, X, Headphones } from 'lucide-react';
 
 interface Subtitle {
   id: number;
@@ -11,9 +11,32 @@ interface Subtitle {
 
 type SubtitleLanguage = 'en-US' | 'pt-BR' | 'es-ES';
 
-const PodcastHeroSection: React.FC = () => {
+interface PodcastHeroSectionProps {
+  isRibbonVisible?: boolean;
+  audioSrc?: string;
+  subtitleSrcs?: {
+    'en-US'?: string;
+    'pt-BR'?: string;
+    'es-ES'?: string;
+  };
+  title?: string;
+  description?: string;
+}
+
+const PodcastHeroSection: React.FC<PodcastHeroSectionProps> = ({ 
+  isRibbonVisible = true,
+  audioSrc = '/podcasts/CatalisaExplanationPodcastFinal.mp3',
+  subtitleSrcs = {
+    'en-US': '/podcasts/CatalisaOverview-en-US.srt',
+    'pt-BR': '/podcasts/CatalisaOverview-pt-BR.srt',
+    'es-ES': '/podcasts/CatalisaOverview-es-ES.srt'
+  },
+  title,
+  description
+}) => {
   const { t, language } = useLanguage();
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const sectionRef = useRef<HTMLElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
@@ -49,20 +72,27 @@ const PodcastHeroSection: React.FC = () => {
   
   // Load subtitles when subtitle language changes
   useEffect(() => {
-    fetch(`/podcasts/CatalisaOverview-${subtitleLanguage}.srt`)
-      .then(response => response.text())
-      .then(srtContent => {
-        const parsedSubtitles = parseSRT(srtContent);
-        setSubtitles(parsedSubtitles);
-      })
-      .catch(error => {
-        console.error(`Failed to load subtitles for ${subtitleLanguage}:`, error);
-        // Fallback to English if the selected language fails
-        if (subtitleLanguage !== 'en-US') {
-          setSubtitleLanguage('en-US');
-        }
-      });
-  }, [subtitleLanguage]);
+    // Only attempt to load if we have a subtitle source for this language
+    if (subtitleSrcs[subtitleLanguage]) {
+      fetch(subtitleSrcs[subtitleLanguage]!)
+        .then(response => response.text())
+        .then(srtContent => {
+          const parsedSubtitles = parseSRT(srtContent);
+          setSubtitles(parsedSubtitles);
+        })
+        .catch(error => {
+          console.error(`Failed to load subtitles for ${subtitleLanguage}:`, error);
+          // Fallback to English if the selected language fails
+          if (subtitleLanguage !== 'en-US' && subtitleSrcs['en-US']) {
+            setSubtitleLanguage('en-US');
+          }
+        });
+    } else {
+      // If no subtitle available for this language, clear subtitles
+      setSubtitles([]);
+      setCurrentSubtitle('');
+    }
+  }, [subtitleLanguage, subtitleSrcs]);
   
   // Update current subtitle based on playback time
   useEffect(() => {
@@ -201,18 +231,45 @@ const PodcastHeroSection: React.FC = () => {
     };
   }, [isCinemaMode]);
   
+  // Smooth scroll to podcast section
+  const scrollToPodcast = () => {
+    if (sectionRef.current) {
+      sectionRef.current.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+  
   return (
     <>
+      {/* Ribbon CTA - Only shown when isRibbonVisible is true */}
+      {isRibbonVisible && (
+        <div className="fixed bottom-4 md:bottom-6 left-1/2 transform -translate-x-1/2 z-40">
+          <button
+            onClick={scrollToPodcast}
+            className="flex items-center space-x-2 bg-primary-main text-white py-2 px-4 rounded-full shadow-md hover:bg-primary-dark transition-colors duration-300 group"
+          >
+            <Headphones size={18} className="text-white" />
+            <span className="text-sm font-medium">{t('podcast.ribbon.cta')}</span>
+          </button>
+        </div>
+      )}
+      
       {/* Regular Podcast Player */}
-      <section className="py-8 sm:py-12 bg-primary-light bg-opacity-10 backdrop-blur-sm">
+      <section 
+        id="podcast-section"
+        ref={sectionRef} 
+        className="py-8 sm:py-12 bg-primary-light bg-opacity-10 backdrop-blur-sm"
+      >
         <div className="container mx-auto px-4 sm:px-6 md:px-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="md:w-1/2">
               <h2 className="text-2xl sm:text-3xl font-semibold mb-3 text-gray-900">
-                {t('podcast.title')}
+                {title || t('podcast.title')}
               </h2>
               <p className="text-base sm:text-lg text-gray-700 mb-5">
-                {t('podcast.description')}
+                {description || t('podcast.description')}
               </p>
             </div>
             
@@ -220,7 +277,7 @@ const PodcastHeroSection: React.FC = () => {
               <div className="bg-white rounded-lg shadow-md p-4 sm:p-5">
                 <audio 
                   ref={audioRef} 
-                  src="/podcasts/CatalisaExplanationPodcastFinal.mp3"
+                  src={audioSrc}
                   preload="metadata"
                   className="hidden"
                 />

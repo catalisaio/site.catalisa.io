@@ -16,4 +16,32 @@ export const home = {
   'overview.section1.item2.desc': 'Infraestructura certificada que cumple con los estándares regulatorios del sector financiero sin comprometer la agilidad.',
   'overview.section1.item3.title': 'Escalabilidad integrada',
   'overview.section1.item3.desc': 'Crece con confianza utilizando una plataforma que escala automáticamente según tu demanda, eliminando cuellos de botella operativos.',
+  
+  // Podcast Section
+  'podcast.title': 'Descubre Catalisa Platform en 20 Minutos',
+  'podcast.description': 'Escucha nuestro podcast rápido para entender cómo Catalisa Platform puede revolucionar tus servicios financieros e impulsar tu transformación digital.',
+  'podcast.overview': 'Visión General de Catalisa',
+  'podcast.play': 'Reproducir',
+  'podcast.pause': 'Pausar',
+  'podcast.mute': 'Silenciar',
+  'podcast.unmute': 'Activar sonido',
+  'podcast.subtitle.loading': 'Cargando subtítulos...',
+  'podcast.subtitle.label': 'Idioma de subtítulos',
+  'podcast.subtitle.english': 'Inglés',
+  'podcast.subtitle.portuguese': 'Portugués',
+  'podcast.subtitle.spanish': 'Español',
+  'podcast.cinemaMode': 'Modo Cine',
+  'podcast.exitCinemaMode': 'Salir del Modo Cine',
+  'podcast.ribbon.text': 'Descubre Catalisa en 20 minutos',
+  'podcast.ribbon.cta': 'Escuchar Podcast',
+  
+  // Podcasts Page
+  'podcasts.title': 'Nuestros Podcasts',
+  'podcasts.subtitle': 'Escucha nuestros insights sobre tecnología financiera y transformación digital',
+  'podcasts.search': 'Buscar podcasts...',
+  'podcasts.filter': 'Filtrar por etiquetas:',
+  'podcasts.allEpisodes': 'Todos los Episodios',
+  'podcasts.noResults': 'No se encontraron podcasts. Intenta con diferentes términos de búsqueda o filtros.',
+  'podcasts.listen': 'Escuchar Ahora',
+  'podcasts.nav': 'Podcasts'
 };

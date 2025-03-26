@@ -21,6 +21,8 @@ export const home = {
   'podcast.subtitle.spanish': 'Espanhol',
   'podcast.cinemaMode': 'Modo Cinema',
   'podcast.exitCinemaMode': 'Sair do Modo Cinema',
+  'podcast.ribbon.text': 'Conheça a Catalisa em 20 minutos',
+  'podcast.ribbon.cta': 'Ouça o Podcast',
   
   // Platform Overview
   'overview.title': 'Uma Plataforma Financeira, Infinitas Possibilidades',
@@ -51,4 +53,14 @@ export const home = {
   'cta.subtitle': 'Junte-se às instituições financeiras que já revolucionam o desenvolvimento e entrega de soluções digitais com nossa plataforma financeira Composable.',
   'cta.button1': 'Agende uma Demo',
   'cta.button2': 'Fale com um Especialista',
+  
+  // Podcasts Page
+  'podcasts.title': 'Nossos Podcasts',
+  'podcasts.subtitle': 'Ouça nossos insights sobre tecnologia financeira e transformação digital',
+  'podcasts.search': 'Buscar podcasts...',
+  'podcasts.filter': 'Filtrar por tags:',
+  'podcasts.allEpisodes': 'Todos os Episódios',
+  'podcasts.noResults': 'Nenhum podcast encontrado. Tente outros termos de busca ou filtros.',
+  'podcasts.listen': 'Ouvir Agora',
+  'podcasts.nav': 'Podcasts'
 };

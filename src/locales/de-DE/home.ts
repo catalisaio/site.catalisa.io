@@ -36,6 +36,34 @@ export const home = {
   'cta.button1': 'Demo vereinbaren',
   'cta.button2': 'Sprechen Sie mit einem Experten',
   
+  // Podcast Section
+  'podcast.title': 'Entdecken Sie die Catalisa Platform in 20 Minuten',
+  'podcast.description': 'Hören Sie unseren kurzen Podcast, um zu verstehen, wie die Catalisa Platform Ihre Finanzdienstleistungen revolutionieren und Ihre digitale Transformation vorantreiben kann.',
+  'podcast.overview': 'Catalisa Überblick',
+  'podcast.play': 'Abspielen',
+  'podcast.pause': 'Pausieren',
+  'podcast.mute': 'Stummschalten',
+  'podcast.unmute': 'Ton aktivieren',
+  'podcast.subtitle.loading': 'Untertitel werden geladen...',
+  'podcast.subtitle.label': 'Untertitelsprache',
+  'podcast.subtitle.english': 'Englisch',
+  'podcast.subtitle.portuguese': 'Portugiesisch',
+  'podcast.subtitle.spanish': 'Spanisch',
+  'podcast.cinemaMode': 'Kinomodus',
+  'podcast.exitCinemaMode': 'Kinomodus beenden',
+  'podcast.ribbon.text': 'Entdecken Sie Catalisa in 20 Minuten',
+  'podcast.ribbon.cta': 'Podcast anhören',
+  
+  // Podcasts Page
+  'podcasts.title': 'Unsere Podcasts',
+  'podcasts.subtitle': 'Hören Sie unsere Einblicke zu Finanztechnologie und digitaler Transformation',
+  'podcasts.search': 'Podcasts suchen...',
+  'podcasts.filter': 'Nach Tags filtern:',
+  'podcasts.allEpisodes': 'Alle Episoden',
+  'podcasts.noResults': 'Keine Podcasts gefunden. Versuchen Sie andere Suchbegriffe oder Filter.',
+  'podcasts.listen': 'Jetzt anhören',
+  'podcasts.nav': 'Podcasts',
+  
   // Contact Section
   'contact.title': 'Kontaktieren Sie uns',
   'contact.subtitle': 'Wir sind bereit, Ihrem Institut zu helfen, die digitale Transformation mit unserer modularen Finanzplattform zu beschleunigen.',

@@ -9,6 +9,7 @@ import { flow } from './flow';
 import { contact } from './contact';
 import { footer } from './footer';
 import { faq } from './faq';
+import { privacy } from './privacy';
 
 // Combine all translation sections
 export const esES = {
@@ -21,5 +22,6 @@ export const esES = {
   ...flow,
   ...contact,
   ...footer,
-  ...faq
+  ...faq,
+  ...privacy
 };

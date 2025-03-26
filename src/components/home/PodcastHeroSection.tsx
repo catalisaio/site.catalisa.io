@@ -323,40 +323,44 @@ const PodcastHeroSection: React.FC = () => {
         </div>
       </section>
       
-      {/* Cinema Mode Overlay */}
+      {/* Cinema Mode Overlay - Optimized for mobile and desktop */}
       {isCinemaMode && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
-          <div className="w-full max-w-4xl p-8 rounded-xl backdrop-blur-lg bg-primary-light bg-opacity-10 border border-white/20">
-            <div className="flex justify-end mb-2">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 overflow-y-auto">
+          <div className="w-full max-w-4xl p-4 sm:p-8 rounded-xl backdrop-blur-lg bg-primary-light bg-opacity-10 border border-white/20 m-2 sm:m-0">
+            {/* Close button */}
+            <div className="flex justify-end">
               <button 
                 onClick={toggleCinemaMode}
-                className="text-white rounded-full p-2 hover:bg-white/10 transition-colors"
+                className="text-white rounded-full p-3 hover:bg-white/10 transition-colors"
                 aria-label={t('podcast.exitCinemaMode')}
               >
-                <X size={24} />
+                <X size={28} />
               </button>
             </div>
             
-            <div className="mb-8">
-              <h2 className="text-3xl font-semibold mb-2 text-white text-center">
+            {/* Title - Smaller on mobile */}
+            <div className="mb-4 sm:mb-8">
+              <h2 className="text-2xl sm:text-3xl font-semibold mb-2 text-white text-center">
                 {t('podcast.overview')}
               </h2>
             </div>
             
-            <div className="min-h-[120px] bg-gray-900/40 p-6 rounded-lg mb-8 flex items-center justify-center">
-              <p className="text-xl sm:text-2xl text-white text-center font-medium">
+            {/* Subtitles - Larger and more optimized for mobile reading */}
+            <div className="min-h-[120px] bg-gray-900/50 p-4 sm:p-6 rounded-lg mb-4 sm:mb-8 flex items-center justify-center">
+              <p className="text-lg sm:text-2xl text-white text-center font-medium px-2 leading-relaxed">
                 {currentSubtitle || t('podcast.subtitle.loading')}
               </p>
             </div>
             
-            <div className="mb-4">
+            {/* Progress bar */}
+            <div className="mb-4 sm:mb-6">
               <input
                 type="range"
                 min="0"
                 max={duration || 0}
                 value={currentTime}
                 onChange={handleSeek}
-                className="w-full h-3 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-primary-main"
+                className="w-full h-3 sm:h-4 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-primary-main"
               />
               <div className="flex justify-between text-sm text-white mt-2">
                 <span>{formatTime(currentTime)}</span>
@@ -364,34 +368,39 @@ const PodcastHeroSection: React.FC = () => {
               </div>
             </div>
             
-            <div className="flex items-center justify-center space-x-8">
-              <button 
-                onClick={togglePlayPause}
-                className="bg-white text-primary-main rounded-full p-4 hover:bg-gray-100 transition-colors"
-                aria-label={isPlaying ? t('podcast.pause') : t('podcast.play')}
-              >
-                {isPlaying ? <Pause size={24} /> : <Play size={24} />}
-              </button>
+            {/* Controls - Mobile optimized */}
+            <div className="flex flex-col sm:flex-row items-center">
+              {/* Main playback controls - Centered for mobile */}
+              <div className="flex items-center justify-center w-full sm:w-auto sm:justify-start space-x-4 sm:space-x-8 mb-4 sm:mb-0">
+                <button 
+                  onClick={togglePlayPause}
+                  className="bg-white text-primary-main rounded-full p-5 sm:p-4 hover:bg-gray-100 transition-colors"
+                  aria-label={isPlaying ? t('podcast.pause') : t('podcast.play')}
+                >
+                  {isPlaying ? <Pause size={32} className="sm:w-6 sm:h-6" /> : <Play size={32} className="sm:w-6 sm:h-6" />}
+                </button>
+                
+                <button 
+                  onClick={toggleMute}
+                  className="text-white rounded-full p-4 sm:p-3 hover:bg-white/10 transition-colors"
+                  aria-label={isMuted ? t('podcast.unmute') : t('podcast.mute')}
+                >
+                  {isMuted ? <VolumeX size={28} className="sm:w-6 sm:h-6" /> : <Volume2 size={28} className="sm:w-6 sm:h-6" />}
+                </button>
+              </div>
               
-              <button 
-                onClick={toggleMute}
-                className="text-white rounded-full p-3 hover:bg-white/10 transition-colors"
-                aria-label={isMuted ? t('podcast.unmute') : t('podcast.mute')}
-              >
-                {isMuted ? <VolumeX size={24} /> : <Volume2 size={24} />}
-              </button>
-              
-              <div className="relative">
+              {/* Language selector - Bottom for mobile, right side for desktop */}
+              <div className="relative self-center sm:self-auto sm:ml-auto">
                 <button 
                   onClick={() => setIsSubtitleMenuOpen(!isSubtitleMenuOpen)}
-                  className="flex items-center text-white space-x-2 px-4 py-2 rounded-full hover:bg-white/10 transition-colors"
+                  className="flex items-center text-white space-x-2 px-5 py-3 sm:px-4 sm:py-2 rounded-full hover:bg-white/10 transition-colors"
                 >
-                  <Globe size={20} />
-                  <span>{subtitleLanguages.find(lang => lang.code === subtitleLanguage)?.name}</span>
+                  <Globe size={24} className="sm:w-5 sm:h-5" />
+                  <span className="text-base sm:text-sm">{subtitleLanguages.find(lang => lang.code === subtitleLanguage)?.name}</span>
                 </button>
                 
                 {isSubtitleMenuOpen && (
-                  <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 w-48 bg-white rounded-md shadow-lg z-10 border border-gray-200">
+                  <div className="absolute bottom-16 sm:bottom-12 left-1/2 transform -translate-x-1/2 w-56 sm:w-48 bg-white rounded-md shadow-lg z-10 border border-gray-200">
                     <ul className="py-1">
                       {subtitleLanguages.map((lang) => (
                         <li key={lang.code}>
@@ -400,7 +409,7 @@ const PodcastHeroSection: React.FC = () => {
                               setSubtitleLanguage(lang.code);
                               setIsSubtitleMenuOpen(false);
                             }}
-                            className={`block w-full text-left px-4 py-2 text-sm ${
+                            className={`block w-full text-left px-4 py-3 sm:py-2 text-base sm:text-sm ${
                               subtitleLanguage === lang.code 
                                 ? 'bg-primary-pastel text-primary-main' 
                                 : 'text-gray-700 hover:bg-gray-100'

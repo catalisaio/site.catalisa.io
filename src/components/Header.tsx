@@ -56,7 +56,7 @@ const Header: React.FC = () => {
               
               <Link to="/podcasts" className="flex items-center space-x-1 text-gray-700 hover:text-primary-main transition-colors">
                 <Headphones size={16} className="text-primary-main" />
-                <span>{t('home.podcasts.nav')}</span>
+                <span>{t('nav.podcast')}</span>
               </Link>
               
               <Link to="/paas-explanation" className="flex items-center space-x-1 text-gray-700 hover:text-primary-main transition-colors">
@@ -125,7 +125,7 @@ const Header: React.FC = () => {
                 onClick={() => setMobileMenuOpen(false)} // Close mobile menu after clicking
               >
                 <Headphones size={18} className="text-primary-main" />
-                <span>{t('home.podcasts.nav')}</span>
+                <span>{t('nav.podcast')}</span>
               </Link>
               
               <Link to="/paas-explanation" className="flex items-center space-x-2 text-gray-700 hover:text-primary-main transition-colors">

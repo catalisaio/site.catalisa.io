@@ -112,7 +112,7 @@ const PodcastsPage: React.FC = () => {
               </div>
               
               {/* Podcast player area */}
-              <div ref={featuredSectionRef} className="w-full max-w-5xl backdrop-blur-md bg-white/70 rounded-xl border border-white/30 p-4 sm:p-6 overflow-hidden">
+              <div ref={featuredSectionRef} className="w-full max-w-5xl backdrop-blur-md bg-white/70 rounded-xl border border-white/30 p-4 sm:p-6">
                 <PodcastHeroSection 
                   isRibbonVisible={false}
                   audioSrc={selectedPodcast.audioSrc}

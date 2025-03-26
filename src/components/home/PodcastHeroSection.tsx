@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { useLanguage } from '../../contexts/LanguageContext';
 import { Play, Pause, Volume2, VolumeX, Globe, Maximize, Minimize, X, Headphones } from 'lucide-react';
 
@@ -372,7 +373,7 @@ const PodcastHeroSection: React.FC<PodcastHeroSectionProps> = ({
                 </div>
                 
                 <div className="min-h-[60px] bg-gray-50 p-3 rounded border border-gray-200 text-sm sm:text-base">
-                  {currentSubtitle || t('podcast.subtitle.loading')}
+                  {currentSubtitle || ""}
                 </div>
               </div>
             </div>
@@ -381,8 +382,8 @@ const PodcastHeroSection: React.FC<PodcastHeroSectionProps> = ({
       </section>
       
       {/* Cinema Mode Overlay - Optimized for mobile and desktop */}
-      {isCinemaMode && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 overflow-y-auto">
+      {isCinemaMode && createPortal(
+        <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black bg-opacity-90 overflow-y-auto">
           <div className="w-full max-w-4xl p-4 sm:p-8 rounded-xl backdrop-blur-lg bg-primary-light bg-opacity-10 border border-white/20 m-2 sm:m-0">
             {/* Close button */}
             <div className="flex justify-end">
@@ -482,7 +483,8 @@ const PodcastHeroSection: React.FC<PodcastHeroSectionProps> = ({
               </div>
             </div>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </>
   );

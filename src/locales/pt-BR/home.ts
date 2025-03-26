@@ -7,7 +7,7 @@ export const home = {
   'hero.button.more': 'Saiba Mais',
   
   // Podcast Section
-  'podcast.title': 'Conheça a Catalisa Platform em 20 minutos',
+  'podcast.title': 'A Plataforma Financeira Composable',
   'podcast.description': 'Ouça nosso podcast rápido para entender como a Catalisa Platform pode revolucionar seus serviços financeiros e impulsionar sua transformação digital.',
   'podcast.overview': 'Catalisa Overview',
   'podcast.play': 'Reproduzir',
@@ -21,7 +21,7 @@ export const home = {
   'podcast.subtitle.spanish': 'Espanhol',
   'podcast.cinemaMode': 'Modo Cinema',
   'podcast.exitCinemaMode': 'Sair do Modo Cinema',
-  'podcast.ribbon.text': 'Conheça a Catalisa em 20 minutos',
+  'podcast.ribbon.text': 'A Plataforma Financeira Composable',
   'podcast.ribbon.cta': 'Ouça o Podcast',
   
   // Platform Overview

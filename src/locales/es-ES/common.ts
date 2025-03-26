@@ -9,4 +9,5 @@ export const common = {
   'nav.contact': 'Contacto',
   'nav.demo': 'Agendar Demo',
   'nav.tryIt': 'Pruébalo',
+  'nav.podcast': 'Hablando de Catalisa',
 };

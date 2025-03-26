@@ -9,5 +9,5 @@ export const common = {
   'nav.contact': '联系',
   'nav.demo': '预约演示',
   'nav.tryIt': '试用',
-  'nav.podcast': '谈论Catalisa ',
+  'nav.podcast': 'On-Air',
 };

@@ -3,6 +3,13 @@ import { createPortal } from 'react-dom';
 import { useLanguage } from '../../contexts/LanguageContext';
 import { Play, Pause, Volume2, VolumeX, Globe, Maximize, Minimize, X, Headphones } from 'lucide-react';
 
+// Import audio and subtitle files
+import podcastAudio from '../../../public/podcasts/CatalisaExplanationPodcastFinal.mp3';
+import subtitleEnUS from '../../../public/podcasts/CatalisaOverview-en-US.srt';
+import subtitlePtBR from '../../../public/podcasts/CatalisaOverview-pt-BR.srt';
+import subtitleEsES from '../../../public/podcasts/CatalisaOverview-es-ES.srt';
+import subtitleDeDe from '../../../public/podcasts/CatalisaOverview-de-DE.srt';
+
 interface Subtitle {
   id: number;
   start: number;
@@ -26,11 +33,11 @@ interface PodcastHeroSectionProps {
 
 const PodcastHeroSection: React.FC<PodcastHeroSectionProps> = ({ 
   isRibbonVisible = true,
-  audioSrc = '/podcasts/CatalisaExplanationPodcastFinal.mp3',
+  audioSrc = podcastAudio,
   subtitleSrcs = {
-    'en-US': '/podcasts/CatalisaOverview-en-US.srt',
-    'pt-BR': '/podcasts/CatalisaOverview-pt-BR.srt',
-    'es-ES': '/podcasts/CatalisaOverview-es-ES.srt'
+    'en-US': subtitleEnUS,
+    'pt-BR': subtitlePtBR,
+    'es-ES': subtitleEsES
   },
   title,
   description

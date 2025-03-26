@@ -4,16 +4,24 @@
  * e garantir uma implementação consistente em toda a aplicação.
  */
 
+// Configurações das variáveis de ambiente
+const GA_MEASUREMENT_ID = import.meta.env.VITE_GA_MEASUREMENT_ID;
+const ANALYTICS_ENABLED = import.meta.env.VITE_ANALYTICS_ENABLED === 'true';
+const APP_NAME = import.meta.env.VITE_APP_NAME;
+const APP_VERSION = import.meta.env.VITE_APP_VERSION;
+
 // Tipos para eventos personalizados
 export interface EventParams {
   [key: string]: string | number | boolean | null;
 }
 
 /**
- * Verifica se o Google Analytics está carregado
+ * Verifica se o Google Analytics está carregado e habilitado
  */
 const isGtagLoaded = (): boolean => {
-  return typeof window !== 'undefined' && typeof window.gtag === 'function';
+  return ANALYTICS_ENABLED && 
+         typeof window !== 'undefined' && 
+         typeof window.gtag === 'function';
 };
 
 /**
@@ -21,10 +29,10 @@ const isGtagLoaded = (): boolean => {
  * Essa função pode ser chamada em um contexto de carregamento condicional
  * como em casos onde o usuário precisa aceitar cookies antes de carregar o GA
  * 
- * @param measurementId - ID de medição do GA4 (formato G-XXXXXXXX)
+ * @param measurementId - ID de medição do GA4 opcional (usa a variável de ambiente por padrão)
  */
-export const initializeAnalytics = (measurementId: string): void => {
-  if (typeof window === 'undefined') return;
+export const initializeAnalytics = (measurementId: string = GA_MEASUREMENT_ID): void => {
+  if (typeof window === 'undefined' || !ANALYTICS_ENABLED) return;
   
   // Carrega o script do GA4 dinamicamente
   const script = document.createElement('script');
@@ -41,8 +49,8 @@ export const initializeAnalytics = (measurementId: string): void => {
   gtag('config', measurementId, {
     send_page_view: true,
     user_properties: {
-      app_name: 'Catalisa Platform',
-      app_version: '1.0.0'
+      app_name: APP_NAME,
+      app_version: APP_VERSION
     }
   });
 };

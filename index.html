@@ -9,16 +9,16 @@
     <meta name="keywords" content="Plataforma Financeira Componível, Catalisa Studio, Portabilidade de Crédito, Transformação Digital, Setor Financeiro, Building Blocks Financeiros" />
     
     <!-- Google Analytics (GA4) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=%VITE_GA_MEASUREMENT_ID%"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-XXXXXXXXXX', {
+      gtag('config', '%VITE_GA_MEASUREMENT_ID%', {
         'send_page_view': true,
         'user_properties': {
-          'app_name': 'Catalisa Platform',
-          'app_version': '1.0.0'
+          'app_name': '%VITE_APP_NAME%',
+          'app_version': '%VITE_APP_VERSION%'
         }
       });
     </script>

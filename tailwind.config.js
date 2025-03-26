@@ -55,7 +55,7 @@ export default {
         // }
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif']
+        sans: ['Poppins', 'sans-serif']
       },
       boxShadow: {
         subtle: '0 2px 6px rgba(0, 0, 0, 0.03)',

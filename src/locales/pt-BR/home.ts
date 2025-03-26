@@ -6,6 +6,22 @@ export const home = {
   'hero.button.start': 'Comece Agora',
   'hero.button.more': 'Saiba Mais',
   
+  // Podcast Section
+  'podcast.title': 'Conheça a Catalisa Platform em 20 minutos',
+  'podcast.description': 'Ouça nosso podcast rápido para entender como a Catalisa Platform pode revolucionar seus serviços financeiros e impulsionar sua transformação digital.',
+  'podcast.overview': 'Catalisa Overview',
+  'podcast.play': 'Reproduzir',
+  'podcast.pause': 'Pausar',
+  'podcast.mute': 'Silenciar',
+  'podcast.unmute': 'Ativar som',
+  'podcast.subtitle.loading': 'Legendas carregando...',
+  'podcast.subtitle.label': 'Idioma das legendas',
+  'podcast.subtitle.english': 'Inglês',
+  'podcast.subtitle.portuguese': 'Português',
+  'podcast.subtitle.spanish': 'Espanhol',
+  'podcast.cinemaMode': 'Modo Cinema',
+  'podcast.exitCinemaMode': 'Sair do Modo Cinema',
+  
   // Platform Overview
   'overview.title': 'Uma Plataforma Financeira, Infinitas Possibilidades',
   'overview.subtitle': 'A Catalisa Platform integra infraestrutura e Studio para oferecer uma solução Composable que reduz custos e acelera a inovação em instituições financeiras.',

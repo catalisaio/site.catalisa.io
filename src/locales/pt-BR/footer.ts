@@ -18,5 +18,7 @@ export const footer = {
   'footer.company.item2': 'Carreiras',
   'footer.company.item3': 'Contato',
   'footer.company.item4': 'Imprensa',
+  'footer.legal': 'Legal',
+  'footer.legal.privacy': 'Política de Privacidade',
   'footer.copyright': '© 2025 Catalisa. Todos os direitos reservados.',
 };

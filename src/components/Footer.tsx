@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Rocket } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
@@ -8,7 +9,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-100 py-12 border-t border-gray-200">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
+        <div className="grid md:grid-cols-5 gap-8 mb-8">
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <span className="text-xl font-semibold text-primary-main">
@@ -41,15 +42,16 @@ const Footer: React.FC = () => {
               <li><a href="#" className="hover:text-accent-blue transition-colors">{t('footer.resources.item4')}</a></li> */}
             </ul>
           </div>
-          {/* <div>
-            <h4 className="text-lg font-semibold mb-4 text-gray-900">{t('footer.company')}</h4>
+          <div>
+            <h4 className="text-lg font-semibold mb-4 text-gray-900">{t('footer.legal')}</h4>
             <ul className="space-y-2 text-gray-700">
-              <li><a href="#" className="hover:text-accent-yellow transition-colors">{t('footer.company.item1')}</a></li>
-              <li><a href="#" className="hover:text-accent-yellow transition-colors">{t('footer.company.item2')}</a></li>
-              <li><a href="#" className="hover:text-accent-yellow transition-colors">{t('footer.company.item3')}</a></li>
-              <li><a href="#" className="hover:text-accent-yellow transition-colors">{t('footer.company.item4')}</a></li>
+              <li>
+                <Link to="/privacy-policy" className="hover:text-primary-main transition-colors">
+                  {t('footer.legal.privacy')}
+                </Link>
+              </li>
             </ul>
-          </div> */}
+          </div>
         </div>
         <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-600 mb-4 md:mb-0">{t('footer.copyright')}</p>

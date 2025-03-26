@@ -6,6 +6,22 @@ export const home = {
   'hero.button.start': 'Get Started',
   'hero.button.more': 'Learn More',
   
+  // Podcast Section
+  'podcast.title': 'Discover Catalisa Platform in 20 Minutes',
+  'podcast.description': 'Listen to our quick podcast to understand how Catalisa Platform can revolutionize your financial services and drive your digital transformation.',
+  'podcast.overview': 'Catalisa Overview',
+  'podcast.play': 'Play',
+  'podcast.pause': 'Pause',
+  'podcast.mute': 'Mute',
+  'podcast.unmute': 'Unmute',
+  'podcast.subtitle.loading': 'Subtitles loading...',
+  'podcast.subtitle.label': 'Subtitle language',
+  'podcast.subtitle.english': 'English',
+  'podcast.subtitle.portuguese': 'Portuguese',
+  'podcast.subtitle.spanish': 'Spanish',
+  'podcast.cinemaMode': 'Cinema Mode',
+  'podcast.exitCinemaMode': 'Exit Cinema Mode',
+  
   // Platform Overview
   'overview.title': 'One Financial Platform, Infinite Possibilities',
   'overview.subtitle': 'The Catalisa Platform integrates infrastructure and Studio to offer a composable solution that reduces costs and accelerates innovation in financial institutions.',

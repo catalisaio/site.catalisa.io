@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import HeroSection from './components/home/HeroSection';
+import PodcastHeroSection from './components/home/PodcastHeroSection';
 import PlatformOverview from './components/home/PlatformOverview';
 import PaasSection from './components/home/PaasSection';
 import StudioSection from './components/home/StudioSection';
@@ -20,6 +21,7 @@ function App() {
       <Header />
       <FlowHero />
       <HeroSection />
+      <PodcastHeroSection />
       <PlatformOverview />
       <PaasSection />
       <StudioSection />

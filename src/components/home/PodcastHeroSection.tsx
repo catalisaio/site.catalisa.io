@@ -26,6 +26,7 @@ interface PodcastHeroSectionProps {
     'en-US'?: string;
     'pt-BR'?: string;
     'es-ES'?: string;
+    'de-DE'?: string;
   };
   title?: string;
   description?: string;
@@ -37,7 +38,8 @@ const PodcastHeroSection: React.FC<PodcastHeroSectionProps> = ({
   subtitleSrcs = {
     'en-US': subtitleEnUS,
     'pt-BR': subtitlePtBR,
-    'es-ES': subtitleEsES
+    'es-ES': subtitleEsES,
+    'de-DE': subtitleDeDe
   },
   title,
   description
@@ -68,7 +70,8 @@ const PodcastHeroSection: React.FC<PodcastHeroSectionProps> = ({
   const subtitleLanguages: { code: SubtitleLanguage; name: string }[] = [
     { code: 'en-US', name: t('podcast.subtitle.english') },
     { code: 'pt-BR', name: t('podcast.subtitle.portuguese') },
-    { code: 'es-ES', name: t('podcast.subtitle.spanish') }
+    { code: 'es-ES', name: t('podcast.subtitle.spanish') },
+    { code: 'de-DE', name: "German" }
   ];
   
   // Update subtitle language when site language changes

@@ -3,11 +3,13 @@ import { common } from './common';
 import { home } from './home';
 import { paas } from './paas';
 import { paasExplanation } from './paasExplanation';
+import { founders } from './founders';
 
 // Combine all translation sections
 export const deDE = {
   ...common,
   ...home,
   ...paas,
-  ...paasExplanation
+  ...paasExplanation,
+  ...founders
 };

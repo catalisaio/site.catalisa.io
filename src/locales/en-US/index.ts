@@ -9,6 +9,7 @@ import { flow } from './flow';
 import { contact } from './contact';
 import { footer } from './footer';
 import { faq } from './faq';
+import { founders } from './founders';
 
 // Combine all translation sections
 export const enUS = {
@@ -21,5 +22,6 @@ export const enUS = {
   ...flow,
   ...contact,
   ...footer,
-  ...faq
+  ...faq,
+  ...founders
 };

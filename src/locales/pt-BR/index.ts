@@ -10,6 +10,7 @@ import { contact } from './contact';
 import { footer } from './footer';
 import { faq } from './faq';
 import { privacy } from './privacy';
+import { founders } from './founders';
 
 // Combine all translation sections
 export const ptBR = {
@@ -23,5 +24,6 @@ export const ptBR = {
   ...contact,
   ...footer,
   ...faq,
-  ...privacy
+  ...privacy,
+  ...founders
 };

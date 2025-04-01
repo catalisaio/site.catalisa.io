@@ -13,6 +13,7 @@ import SchedulePage from './pages/SchedulePage.tsx';
 import FAQPage from './pages/FAQPage.tsx';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage.tsx';
 import PodcastsPage from './pages/PodcastsPage.tsx';
+import FoundersPage from './pages/FoundersPage.tsx';
 
 //Utils
 import { LanguageProvider } from './contexts/LanguageContext.tsx';
@@ -33,6 +34,8 @@ createRoot(document.getElementById('root')!).render(
             <Route path="/faq" element={<FAQPage />} />
             <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
             <Route path="/podcasts" element={<PodcastsPage />} />
+            <Route path="/founders" element={<FoundersPage />} />
+            <Route path="/socios" element={<FoundersPage />} />
           </Routes>
         </Layout>
       </BrowserRouter>

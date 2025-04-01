@@ -10,6 +10,7 @@ import { contact } from './contact';
 import { footer } from './footer';
 import { faq } from './faq';
 import { privacy } from './privacy';
+import { founders } from './founders';
 
 // Combine all translation sections
 export const esES = {
@@ -23,5 +24,6 @@ export const esES = {
   ...contact,
   ...footer,
   ...faq,
-  ...privacy
+  ...privacy,
+  ...founders
 };

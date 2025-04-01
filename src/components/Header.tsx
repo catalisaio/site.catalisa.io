@@ -5,14 +5,14 @@ import LanguageSwitcher from './LanguageSwitcher';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const Header: React.FC = () => {
-  const { t } = useLanguage();
+  const { t, getLocalizedUrl } = useLanguage();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <header className="bg-white shadow-subtle sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
-          <Link to="/" className="flex items-center space-x-2">
+          <Link to={getLocalizedUrl('/')} className="flex items-center space-x-2">
             <span className="text-2xl font-semibold">
               <span className="text-primary-main">Catalisa</span>
               <span className="text-accent-yellow">.</span>
@@ -21,17 +21,17 @@ const Header: React.FC = () => {
           
           <div className="flex items-center">
             <nav className="hidden md:flex space-x-6">
-              <Link to="/" className="flex items-center space-x-1 text-gray-700 hover:text-primary-main transition-colors">
+              <Link to={getLocalizedUrl('/')} className="flex items-center space-x-1 text-gray-700 hover:text-primary-main transition-colors">
                 <Rocket size={16} className="text-primary-main" />
                 <span>{t('nav.home')}</span>
               </Link>
               
-              <Link to="/paas" className="flex items-center space-x-1 text-gray-700 hover:text-primary-main transition-colors">
+              <Link to={getLocalizedUrl('/paas')} className="flex items-center space-x-1 text-gray-700 hover:text-primary-main transition-colors">
                 <BarChart size={16} className="text-primary-main" />
                 <span>{t('nav.platform')}</span>
               </Link>
               
-              <Link to="/building-blocks" className="flex items-center space-x-1 text-gray-700 hover:text-primary-main transition-colors">
+              <Link to={getLocalizedUrl('/building-blocks')} className="flex items-center space-x-1 text-gray-700 hover:text-primary-main transition-colors">
                 <Box size={16} className="text-primary-main" />
                 <span>{t('nav.blocks')}</span>
               </Link>
@@ -54,12 +54,12 @@ const Header: React.FC = () => {
                 <span>{t('nav.studio')}</span>
               </a>
               
-              <Link to="/podcasts" className="flex items-center space-x-1 text-gray-700 hover:text-primary-main transition-colors">
+              <Link to={getLocalizedUrl('/podcasts')} className="flex items-center space-x-1 text-gray-700 hover:text-primary-main transition-colors">
                 <Headphones size={16} className="text-primary-main" />
                 <span>{t('nav.podcast')}</span>
               </Link>
               
-              <Link to="/paas-explanation" className="flex items-center space-x-1 text-gray-700 hover:text-primary-main transition-colors">
+              <Link to={getLocalizedUrl('/paas-explanation')} className="flex items-center space-x-1 text-gray-700 hover:text-primary-main transition-colors">
                 <span>{t('nav.about')}</span>
               </Link>
             </nav>
@@ -68,7 +68,7 @@ const Header: React.FC = () => {
               <LanguageSwitcher />
             </div>
             
-            <Link to="/schedule" className="ml-4 bg-primary-main hover:bg-primary-light text-white px-4 py-2 rounded-md font-medium transition-colors shadow-subtle hover:shadow-hover">
+            <Link to={getLocalizedUrl('/schedule')} className="ml-4 bg-primary-main hover:bg-primary-light text-white px-4 py-2 rounded-md font-medium transition-colors shadow-subtle hover:shadow-hover">
               {t('nav.demo')}
             </Link>
             
@@ -85,17 +85,17 @@ const Header: React.FC = () => {
         {mobileMenuOpen && (
           <div className="md:hidden mt-4 py-4 border-t border-gray-100">
             <nav className="flex flex-col space-y-4">
-              <Link to="/" className="flex items-center space-x-2 text-gray-700 hover:text-primary-main transition-colors">
+              <Link to={getLocalizedUrl('/')} className="flex items-center space-x-2 text-gray-700 hover:text-primary-main transition-colors">
                 <Rocket size={18} className="text-primary-main" />
                 <span>{t('nav.home')}</span>
               </Link>
               
-              <Link to="/paas" className="flex items-center space-x-2 text-gray-700 hover:text-primary-main transition-colors">
+              <Link to={getLocalizedUrl('/paas')} className="flex items-center space-x-2 text-gray-700 hover:text-primary-main transition-colors">
                 <BarChart size={18} className="text-primary-main" />
                 <span>{t('nav.platform')}</span>
               </Link>
               
-              <Link to="/building-blocks" className="flex items-center space-x-2 text-gray-700 hover:text-primary-main transition-colors">
+              <Link to={getLocalizedUrl('/building-blocks')} className="flex items-center space-x-2 text-gray-700 hover:text-primary-main transition-colors">
                 <Box size={18} className="text-primary-main" />
                 <span>{t('nav.blocks')}</span>
               </Link>
@@ -120,7 +120,7 @@ const Header: React.FC = () => {
               </a>
               
               <Link 
-                to="/podcasts" 
+                to={getLocalizedUrl('/podcasts')} 
                 className="flex items-center space-x-2 text-gray-700 hover:text-primary-main transition-colors"
                 onClick={() => setMobileMenuOpen(false)} // Close mobile menu after clicking
               >
@@ -128,7 +128,7 @@ const Header: React.FC = () => {
                 <span>{t('nav.podcast')}</span>
               </Link>
               
-              <Link to="/paas-explanation" className="flex items-center space-x-2 text-gray-700 hover:text-primary-main transition-colors">
+              <Link to={getLocalizedUrl('/paas-explanation')} className="flex items-center space-x-2 text-gray-700 hover:text-primary-main transition-colors">
                 <span>{t('nav.about')}</span>
               </Link>
               

@@ -4,7 +4,7 @@ import { Rocket } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const Footer: React.FC = () => {
-  const { t } = useLanguage();
+  const { t, getLocalizedUrl } = useLanguage();
   
   return (
     <footer className="bg-gray-100 py-12 border-t border-gray-200">
@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
             <h4 className="text-lg font-semibold mb-4 text-gray-900">{t('footer.company')}</h4>
             <ul className="space-y-2 text-gray-700">
               <li>
-                <Link to="/founders" className="hover:text-primary-main transition-colors">
+                <Link to={getLocalizedUrl('/founders')} className="hover:text-primary-main transition-colors">
                   {t('footer.company.founders')}
                 </Link>
               </li>
@@ -56,7 +56,7 @@ const Footer: React.FC = () => {
             <h4 className="text-lg font-semibold mb-4 text-gray-900">{t('footer.legal')}</h4>
             <ul className="space-y-2 text-gray-700">
               <li>
-                <Link to="/privacy-policy" className="hover:text-primary-main transition-colors">
+                <Link to={getLocalizedUrl('/privacy-policy')} className="hover:text-primary-main transition-colors">
                   {t('footer.legal.privacy')}
                 </Link>
               </li>

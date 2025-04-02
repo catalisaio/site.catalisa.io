@@ -14,6 +14,7 @@ import FAQPage from './pages/FAQPage.tsx';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage.tsx';
 import PodcastsPage from './pages/PodcastsPage.tsx';
 import FoundersPage from './pages/FoundersPage.tsx';
+import StudioPage from './pages/StudioPage.tsx';
 
 //Utils
 import { LanguageProvider } from './contexts/LanguageContext.tsx';
@@ -116,6 +117,14 @@ createRoot(document.getElementById('root')!).render(
             <Route path="/ru/подкасты" element={<PodcastsPage />} />
             <Route path="/zh/播客" element={<PodcastsPage />} />
             
+            {/* Studio routes */}
+            <Route path="/pt/studio" element={<StudioPage />} />
+            <Route path="/en/studio" element={<StudioPage />} />
+            <Route path="/de/studio" element={<StudioPage />} />
+            <Route path="/es/studio" element={<StudioPage />} />
+            <Route path="/ru/студия" element={<StudioPage />} />
+            <Route path="/zh/工作室" element={<StudioPage />} />
+            
             {/* Founders routes */}
             <Route path="/pt/socios" element={<FoundersPage />} />
             <Route path="/en/founders" element={<FoundersPage />} />
@@ -137,6 +146,7 @@ createRoot(document.getElementById('root')!).render(
             <Route path="/faq" element={<Navigate to={`/${defaultUrlLanguage}/perguntas-frequentes`} replace />} />
             <Route path="/privacy-policy" element={<Navigate to={`/${defaultUrlLanguage}/politica-privacidade`} replace />} />
             <Route path="/podcasts" element={<Navigate to={`/${defaultUrlLanguage}/podcasts`} replace />} />
+            <Route path="/studio" element={<Navigate to={`/${defaultUrlLanguage}/studio`} replace />} />
             <Route path="/founders" element={<Navigate to={`/${defaultUrlLanguage}/socios`} replace />} />
             <Route path="/socios" element={<Navigate to={`/${defaultUrlLanguage}/socios`} replace />} />
             

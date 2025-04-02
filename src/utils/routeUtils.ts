@@ -83,6 +83,15 @@ export const routeMappings: RouteMapping = {
     'ru-RU': 'подкасты',
     'zh-CN': '播客',
   },
+  // Studio route
+  '/studio': {
+    'pt-BR': 'studio',
+    'en-US': 'studio',
+    'de-DE': 'studio',
+    'es-ES': 'studio',
+    'ru-RU': 'студия',
+    'zh-CN': '工作室',
+  },
   // Founders route
   '/founders': {
     'pt-BR': 'socios',

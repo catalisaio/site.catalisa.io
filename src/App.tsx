@@ -5,8 +5,6 @@ import HeroSection from './components/home/HeroSection';
 import PodcastHeroSection from './components/home/PodcastHeroSection';
 import PlatformOverview from './components/home/PlatformOverview';
 import PaasSection from './components/home/PaasSection';
-import StudioSection from './components/home/StudioSection';
-import StudioOrchestrationSection from './components/home/StudioOrchestrationSection';
 import FeaturesSection from './components/home/FeaturesSection';
 import CTASection from './components/home/CTASection';
 import ContactSection from './components/home/ContactSection';
@@ -56,8 +54,6 @@ function App() {
       <FlowHero />
       <PlatformOverview />
       <PaasSection />
-      <StudioSection />
-      <StudioOrchestrationSection />
       <FeaturesSection />
       <CTASection />
       <FlowContactForm />

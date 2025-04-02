@@ -36,23 +36,10 @@ const Header: React.FC = () => {
                 <span>{t('nav.blocks')}</span>
               </Link>
               
-              <a 
-                href="#studio" 
-                className="flex items-center space-x-1 text-gray-700 hover:text-primary-main transition-colors"
-                onClick={(e) => {
-                  e.preventDefault();
-                  const studioSection = document.getElementById('studio');
-                  if (studioSection) {
-                    studioSection.scrollIntoView({
-                      behavior: 'smooth',
-                      block: 'start'
-                    });
-                  }
-                }}
-              >
+              <Link to={getLocalizedUrl('/studio')} className="flex items-center space-x-1 text-gray-700 hover:text-primary-main transition-colors">
                 <Shield size={16} className="text-primary-main" />
                 <span>{t('nav.studio')}</span>
-              </a>
+              </Link>
               
               <Link to={getLocalizedUrl('/podcasts')} className="flex items-center space-x-1 text-gray-700 hover:text-primary-main transition-colors">
                 <Headphones size={16} className="text-primary-main" />
@@ -100,24 +87,14 @@ const Header: React.FC = () => {
                 <span>{t('nav.blocks')}</span>
               </Link>
               
-              <a 
-                href="#studio" 
+              <Link 
+                to={getLocalizedUrl('/studio')} 
                 className="flex items-center space-x-2 text-gray-700 hover:text-primary-main transition-colors"
-                onClick={(e) => {
-                  e.preventDefault();
-                  const studioSection = document.getElementById('studio');
-                  if (studioSection) {
-                    studioSection.scrollIntoView({
-                      behavior: 'smooth',
-                      block: 'start'
-                    });
-                  }
-                  setMobileMenuOpen(false); // Close mobile menu after clicking
-                }}
+                onClick={() => setMobileMenuOpen(false)} // Close mobile menu after clicking
               >
                 <Shield size={18} className="text-primary-main" />
                 <span>{t('nav.studio')}</span>
-              </a>
+              </Link>
               
               <Link 
                 to={getLocalizedUrl('/podcasts')} 

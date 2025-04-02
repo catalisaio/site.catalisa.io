@@ -23,6 +23,9 @@ export const home = {
   'podcast.exitCinemaMode': 'Sair do Modo Cinema',
   'podcast.ribbon.text': 'A Plataforma Financeira Composable',
   'podcast.ribbon.cta': 'Ouça o Podcast',
+  'podcast.viewTranscription': 'Ver Transcrição',
+  'podcast.transcription.title': 'Transcrição Completa',
+  'podcast.transcription.close': 'Fechar',
   
   // Platform Overview
   'overview.title': 'Uma Plataforma Financeira, Infinitas Possibilidades',

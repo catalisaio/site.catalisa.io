@@ -19,6 +19,7 @@ export const routeMappings: RouteMapping = {
     'es-ES': 'inicio',
     'ru-RU': 'главная',
     'zh-CN': '首页',
+    'ja-JP': 'ホーム',
   },
   // Platform route
   '/paas': {
@@ -28,6 +29,7 @@ export const routeMappings: RouteMapping = {
     'es-ES': 'plataforma',
     'ru-RU': 'платформа',
     'zh-CN': '平台',
+    'ja-JP': 'プラットフォーム',
   },
   // Platform explanation route
   '/paas-explanation': {
@@ -37,6 +39,7 @@ export const routeMappings: RouteMapping = {
     'es-ES': 'explicacion-plataforma',
     'ru-RU': 'объяснение-платформы',
     'zh-CN': '平台解释',
+    'ja-JP': 'プラットフォーム説明',
   },
   // Building blocks route
   '/building-blocks': {
@@ -46,6 +49,7 @@ export const routeMappings: RouteMapping = {
     'es-ES': 'bloques-construccion',
     'ru-RU': 'строительные-блоки',
     'zh-CN': '构建块',
+    'ja-JP': 'ビルディングブロック',
   },
   // Schedule route
   '/schedule': {
@@ -55,6 +59,7 @@ export const routeMappings: RouteMapping = {
     'es-ES': 'programar',
     'ru-RU': 'расписание',
     'zh-CN': '日程安排',
+    'ja-JP': 'スケジュール',
   },
   // FAQ route
   '/faq': {
@@ -64,6 +69,7 @@ export const routeMappings: RouteMapping = {
     'es-ES': 'preguntas-frecuentes',
     'ru-RU': 'часто-задаваемые-вопросы',
     'zh-CN': '常见问题',
+    'ja-JP': 'よくある質問',
   },
   // Privacy policy route
   '/privacy-policy': {
@@ -73,6 +79,7 @@ export const routeMappings: RouteMapping = {
     'es-ES': 'politica-privacidad',
     'ru-RU': 'политика-конфиденциальности',
     'zh-CN': '隐私政策',
+    'ja-JP': 'プライバシーポリシー',
   },
   // Podcasts route
   '/podcasts': {
@@ -82,6 +89,7 @@ export const routeMappings: RouteMapping = {
     'es-ES': 'podcasts',
     'ru-RU': 'подкасты',
     'zh-CN': '播客',
+    'ja-JP': 'ポッドキャスト',
   },
   // Studio route
   '/studio': {
@@ -91,6 +99,7 @@ export const routeMappings: RouteMapping = {
     'es-ES': 'studio',
     'ru-RU': 'студия',
     'zh-CN': '工作室',
+    'ja-JP': 'スタジオ',
   },
   // Founders route
   '/founders': {
@@ -100,6 +109,7 @@ export const routeMappings: RouteMapping = {
     'es-ES': 'fundadores',
     'ru-RU': 'основатели',
     'zh-CN': '创始人',
+    'ja-JP': '創設者',
   },
   // Alias for founders in Portuguese
   '/socios': {
@@ -109,6 +119,7 @@ export const routeMappings: RouteMapping = {
     'es-ES': 'fundadores',
     'ru-RU': 'основатели',
     'zh-CN': '创始人',
+    'ja-JP': '創設者',
   },
   // Building blocks detail route handled separately with :id parameter
 };

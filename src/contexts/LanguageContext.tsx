@@ -7,12 +7,13 @@ import { deDE } from '../locales/de-DE';
 import { esES } from '../locales/es-ES';
 import { ruRU } from '../locales/ru-RU';
 import { zhCN } from '../locales/zh-CN';
+import { jaJP } from '../locales/ja-JP';
 
 // Define available languages
-export type Language = 'pt-BR' | 'en-US' | 'de-DE' | 'es-ES' | 'ru-RU' | 'zh-CN';
+export type Language = 'pt-BR' | 'en-US' | 'de-DE' | 'es-ES' | 'ru-RU' | 'zh-CN' | 'ja-JP';
 
 // Define URL language codes (shorter versions)
-export type UrlLanguage = 'pt' | 'en' | 'de' | 'es' | 'ru' | 'zh';
+export type UrlLanguage = 'pt' | 'en' | 'de' | 'es' | 'ru' | 'zh' | 'ja';
 
 // Map between full Language and URL language codes
 export const languageToUrlMap: Record<Language, UrlLanguage> = {
@@ -21,7 +22,8 @@ export const languageToUrlMap: Record<Language, UrlLanguage> = {
   'de-DE': 'de',
   'es-ES': 'es',
   'ru-RU': 'ru',
-  'zh-CN': 'zh'
+  'zh-CN': 'zh',
+  'ja-JP': 'ja'
 };
 
 // Map from URL language codes to full Language
@@ -31,7 +33,8 @@ export const urlToLanguageMap: Record<UrlLanguage, Language> = {
   'de': 'de-DE',
   'es': 'es-ES',
   'ru': 'ru-RU',
-  'zh': 'zh-CN'
+  'zh': 'zh-CN',
+  'ja': 'ja-JP'
 };
 
 // Define the context type
@@ -52,7 +55,8 @@ const translations = {
   'de-DE': deDE,
   'es-ES': esES,
   'ru-RU': ruRU,
-  'zh-CN': zhCN
+  'zh-CN': zhCN,
+  'ja-JP': jaJP
 };
 
 // Provider component
@@ -85,6 +89,9 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }
           break;
         case 'zh-CN':
           homePath = '首页';
+          break;
+        case 'ja-JP':
+          homePath = 'ホーム';
           break;
         default:
           homePath = 'inicio'; // Portuguese or fallback

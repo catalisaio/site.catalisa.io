@@ -10,7 +10,7 @@ const LanguageSwitcher: React.FC = () => {
     setIsOpen(!isOpen);
   };
 
-  const handleLanguageChange = (lang: 'pt-BR' | 'en-US' | 'de-DE' | 'es-ES' | 'ru-RU' | 'zh-CN') => {
+  const handleLanguageChange = (lang: 'pt-BR' | 'en-US' | 'de-DE' | 'es-ES' | 'ru-RU' | 'zh-CN' | 'ja-JP') => {
     setLanguage(lang);
     setIsOpen(false);
   };
@@ -92,6 +92,15 @@ const LanguageSwitcher: React.FC = () => {
               onClick={() => handleLanguageChange('zh-CN')}
             >
               中文
+            </button>
+            <button
+              className={`${
+                language === 'ja-JP' ? 'bg-gray-100 text-gray-900' : 'text-gray-700'
+              } block w-full text-left px-4 py-2 text-sm hover:bg-gray-100`}
+              role="menuitem"
+              onClick={() => handleLanguageChange('ja-JP')}
+            >
+              日本語
             </button>
           </div>
         </div>

@@ -23,6 +23,9 @@ export const home = {
   'podcast.exitCinemaMode': 'Exit Cinema Mode',
   'podcast.ribbon.text': 'Discover Catalisa in 20 minutes',
   'podcast.ribbon.cta': 'Listen to Podcast',
+  'podcast.viewTranscription': 'View Transcription',
+  'podcast.transcription.title': 'Full Transcription',
+  'podcast.transcription.close': 'Close',
   
   // Platform Overview
   'overview.title': 'One Financial Platform, Infinite Possibilities',

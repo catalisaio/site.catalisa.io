@@ -23,6 +23,9 @@ export const home = {
   'podcast.exitCinemaMode': 'シアターモードを終了',
   'podcast.ribbon.text': 'Composable金融プラットフォーム',
   'podcast.ribbon.cta': 'ポッドキャストを聴く',
+  'podcast.viewTranscription': '書き起こしを表示',
+  'podcast.transcription.title': '完全な書き起こし',
+  'podcast.transcription.close': '閉じる',
   
   // Platform Overview
   'overview.title': '1つの金融プラットフォーム、無限の可能性',

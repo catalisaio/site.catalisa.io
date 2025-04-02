@@ -34,6 +34,9 @@ export const home = {
   'podcast.exitCinemaMode': 'Salir del Modo Cine',
   'podcast.ribbon.text': 'Descubre Catalisa en 20 minutos',
   'podcast.ribbon.cta': 'Escuchar Podcast',
+  'podcast.viewTranscription': 'Ver Transcripción',
+  'podcast.transcription.title': 'Transcripción Completa',
+  'podcast.transcription.close': 'Cerrar',
   
   // Features Section
   'features.title': 'Características Avanzadas para la Transformación Digital',

@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { createPortal } from 'react-dom';
 import { useLanguage } from '../../contexts/LanguageContext';
-import { Play, Pause, Volume2, VolumeX, Globe, Maximize, Minimize, X, Headphones } from 'lucide-react';
+import { Play, Pause, Volume2, VolumeX, Globe, Maximize, Minimize, X, Headphones, FileText } from 'lucide-react';
 
 // Import audio and subtitle files
 import podcastAudio from '../../../public/podcasts/CatalisaExplanationPodcastFinal.mp3';
@@ -65,6 +65,8 @@ const PodcastHeroSection: React.FC<PodcastHeroSectionProps> = ({
   const [subtitleLanguage, setSubtitleLanguage] = useState<SubtitleLanguage>(getDefaultSubtitleLanguage());
   const [isSubtitleMenuOpen, setIsSubtitleMenuOpen] = useState(false);
   const [isCinemaMode, setIsCinemaMode] = useState(false);
+  const [isTranscriptionModalOpen, setIsTranscriptionModalOpen] = useState(false);
+  const [fullTranscription, setFullTranscription] = useState<string>('');
   
   // Subtitle language options
   const subtitleLanguages: { code: SubtitleLanguage; name: string }[] = [
@@ -263,6 +265,40 @@ const PodcastHeroSection: React.FC<PodcastHeroSectionProps> = ({
     };
   }, [isCinemaMode]);
   
+  // Load full transcription
+  const loadFullTranscription = useCallback(async () => {
+    if (subtitleSrcs[subtitleLanguage]) {
+      try {
+        const response = await fetch(subtitleSrcs[subtitleLanguage]!);
+        const srtContent = await response.text();
+        const parsedSubtitles = parseSRT(srtContent);
+        
+        // Combine all subtitle texts to form the full transcription
+        const fullText = parsedSubtitles
+          .map(sub => sub.text)
+          .join('\n\n');
+        
+        setFullTranscription(fullText);
+      } catch (error) {
+        console.error(`Failed to load transcription for ${subtitleLanguage}:`, error);
+        setFullTranscription(t('podcast.subtitle.loading'));
+      }
+    } else {
+      setFullTranscription('');
+    }
+  }, [subtitleLanguage, subtitleSrcs, parseSRT, t]);
+
+  // Handle opening the transcription modal
+  const openTranscriptionModal = useCallback(() => {
+    loadFullTranscription();
+    setIsTranscriptionModalOpen(true);
+  }, [loadFullTranscription]);
+
+  // Handle closing the transcription modal
+  const closeTranscriptionModal = useCallback(() => {
+    setIsTranscriptionModalOpen(false);
+  }, []);
+
   // Smooth scroll to podcast section
   const scrollToPodcast = () => {
     if (sectionRef.current) {
@@ -366,40 +402,50 @@ const PodcastHeroSection: React.FC<PodcastHeroSectionProps> = ({
                     <Globe size={16} className="text-gray-500 mr-2" />
                     <span className="text-sm text-gray-600">{t('podcast.subtitle.label')}:</span>
                   </div>
-                  <div className="relative">
-                    <button 
-                      onClick={() => setIsSubtitleMenuOpen(!isSubtitleMenuOpen)}
+                  <div className="flex items-center gap-2">
+                    <button
+                      onClick={openTranscriptionModal}
                       className="flex items-center text-sm bg-white hover:bg-gray-50 border border-gray-300 rounded px-3 py-1"
+                      aria-label={t('podcast.viewTranscription')}
                     >
-                      {subtitleLanguages.find(lang => lang.code === subtitleLanguage)?.name}
-                      <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-                      </svg>
+                      <FileText size={14} className="mr-1" />
+                      <span>{t('podcast.viewTranscription')}</span>
                     </button>
-                    
-                    {isSubtitleMenuOpen && (
-                      <div className="absolute right-0 mt-1 w-48 bg-white rounded-md shadow-lg z-10 border border-gray-200">
-                        <ul className="py-1">
-                          {subtitleLanguages.map((lang) => (
-                            <li key={lang.code}>
-                              <button
-                                onClick={() => {
-                                  setSubtitleLanguage(lang.code);
-                                  setIsSubtitleMenuOpen(false);
-                                }}
-                                className={`block w-full text-left px-4 py-2 text-sm ${
-                                  subtitleLanguage === lang.code 
-                                    ? 'bg-primary-pastel text-primary-main' 
-                                    : 'text-gray-700 hover:bg-gray-100'
-                                }`}
-                              >
-                                {lang.name}
-                              </button>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    )}
+                    <div className="relative">
+                      <button 
+                        onClick={() => setIsSubtitleMenuOpen(!isSubtitleMenuOpen)}
+                        className="flex items-center text-sm bg-white hover:bg-gray-50 border border-gray-300 rounded px-3 py-1"
+                      >
+                        {subtitleLanguages.find(lang => lang.code === subtitleLanguage)?.name}
+                        <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                      </button>
+                      
+                      {isSubtitleMenuOpen && (
+                        <div className="absolute right-0 mt-1 w-48 bg-white rounded-md shadow-lg z-10 border border-gray-200">
+                          <ul className="py-1">
+                            {subtitleLanguages.map((lang) => (
+                              <li key={lang.code}>
+                                <button
+                                  onClick={() => {
+                                    setSubtitleLanguage(lang.code);
+                                    setIsSubtitleMenuOpen(false);
+                                  }}
+                                  className={`block w-full text-left px-4 py-2 text-sm ${
+                                    subtitleLanguage === lang.code 
+                                      ? 'bg-primary-pastel text-primary-main' 
+                                      : 'text-gray-700 hover:bg-gray-100'
+                                  }`}
+                                >
+                                  {lang.name}
+                                </button>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                    </div>
                   </div>
                 </div>
                 
@@ -412,7 +458,7 @@ const PodcastHeroSection: React.FC<PodcastHeroSectionProps> = ({
         </div>
       </section>
       
-      {/* Cinema Mode Overlay - Optimized for mobile and desktop */}
+      {/* Cinema Mode Overlay */}
       {isCinemaMode && createPortal(
         <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black bg-opacity-90 overflow-y-auto">
           <div className="w-full max-w-4xl p-4 sm:p-8 rounded-xl backdrop-blur-lg bg-primary-light bg-opacity-10 border border-white/20 m-2 sm:m-0">
@@ -512,6 +558,45 @@ const PodcastHeroSection: React.FC<PodcastHeroSectionProps> = ({
                   </div>
                 )}
               </div>
+            </div>
+          </div>
+        </div>,
+        document.body
+      )}
+
+      {/* Transcription Modal */}
+      {isTranscriptionModalOpen && createPortal(
+        <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black bg-opacity-90 overflow-y-auto">
+          <div className="w-full max-w-4xl p-4 sm:p-8 rounded-xl backdrop-blur-lg bg-primary-light bg-opacity-10 border border-white/20 m-2 sm:m-0 max-h-[90vh] flex flex-col">
+            {/* Close button */}
+            <div className="flex justify-between items-center mb-4">
+              <h2 className="text-2xl font-semibold text-white">
+                {t('podcast.transcription.title')}
+              </h2>
+              <button 
+                onClick={closeTranscriptionModal}
+                className="text-white rounded-full p-2 hover:bg-white/10 transition-colors"
+                aria-label={t('podcast.transcription.close')}
+              >
+                <X size={24} />
+              </button>
+            </div>
+            
+            {/* Transcription content */}
+            <div className="overflow-y-auto flex-1 bg-gray-900/50 p-4 sm:p-6 rounded-lg">
+              <div className="text-white text-base leading-relaxed whitespace-pre-line">
+                {fullTranscription || t('podcast.subtitle.loading')}
+              </div>
+            </div>
+            
+            {/* Footer with close button */}
+            <div className="mt-4 flex justify-end">
+              <button 
+                onClick={closeTranscriptionModal}
+                className="bg-white text-primary-main rounded-md px-4 py-2 hover:bg-gray-100 transition-colors"
+              >
+                {t('podcast.transcription.close')}
+              </button>
             </div>
           </div>
         </div>,

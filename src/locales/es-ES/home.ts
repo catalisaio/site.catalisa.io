@@ -35,6 +35,25 @@ export const home = {
   'podcast.ribbon.text': 'Descubre Catalisa en 20 minutos',
   'podcast.ribbon.cta': 'Escuchar Podcast',
   
+  // Features Section
+  'features.title': 'Características Avanzadas para la Transformación Digital',
+  'features.subtitle': 'La Catalisa Platform ofrece un conjunto completo de características modulares para impulsar tu transformación digital con seguridad y agilidad.',
+  'features.card1.title': 'Seguridad',
+  'features.card1.desc': 'Protección de datos a nivel bancario con cifrado avanzado y cumplimiento normativo integrado en cada componente.',
+  'features.card2.title': 'Automatización',
+  'features.card2.desc': 'Automatiza procesos complejos y flujos de trabajo para aumentar la eficiencia operativa y reducir costes.',
+  'features.card3.title': 'Analytics',
+  'features.card3.desc': 'Información en tiempo real y análisis avanzados para la toma de decisiones basada en datos, acelerando resultados.',
+  'features.card4.title': 'Integración',
+  'features.card4.desc': 'Conéctate fácilmente con sistemas heredados y servicios de terceros a través de APIs estandarizadas, eliminando barreras técnicas.',
+  'features.more': 'Más información',
+  
+  // CTA Section
+  'cta.title': '¿Listo para Transformar tus Servicios Financieros?',
+  'cta.subtitle': 'Únete a las instituciones financieras que ya están revolucionando el desarrollo y entrega de soluciones digitales con nuestra plataforma financiera Composable.',
+  'cta.button1': 'Programa una Demo',
+  'cta.button2': 'Habla con un Especialista',
+  
   // Podcasts Page
   'podcasts.title': 'Nuestros Podcasts',
   'podcasts.subtitle': 'Escucha nuestros insights sobre tecnología financiera y transformación digital',

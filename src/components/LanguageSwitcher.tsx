@@ -10,7 +10,7 @@ const LanguageSwitcher: React.FC = () => {
     setIsOpen(!isOpen);
   };
 
-  const handleLanguageChange = (lang: 'pt-BR' | 'en-US' | 'de-DE' | 'es-ES' | 'ru-RU' | 'zn-CN') => {
+  const handleLanguageChange = (lang: 'pt-BR' | 'en-US' | 'de-DE' | 'es-ES' | 'ru-RU' | 'zh-CN') => {
     setLanguage(lang);
     setIsOpen(false);
   };
@@ -84,15 +84,15 @@ const LanguageSwitcher: React.FC = () => {
             >
               Pусский
             </button>
-            {/* <button
+            <button
               className={`${
-                language === 'zn-CN' ? 'bg-gray-100 text-gray-900' : 'text-gray-700'
+                language === 'zh-CN' ? 'bg-gray-100 text-gray-900' : 'text-gray-700'
               } block w-full text-left px-4 py-2 text-sm hover:bg-gray-100`}
               role="menuitem"
-              onClick={() => handleLanguageChange('zn-CN')}
+              onClick={() => handleLanguageChange('zh-CN')}
             >
-              國語
-            </button> */}
+              中文
+            </button>
           </div>
         </div>
       )}

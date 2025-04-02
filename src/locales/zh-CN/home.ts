@@ -35,6 +35,25 @@ export const home = {
   'podcast.ribbon.text': '20分钟了解Catalisa',
   'podcast.ribbon.cta': '收听播客',
   
+  // Features Section
+  'features.title': '数字化转型的先进功能',
+  'features.subtitle': 'Catalisa平台提供全套模块化功能，以安全敏捷的方式推动您的数字化转型。',
+  'features.card1.title': '安全性',
+  'features.card1.desc': '银行级数据保护，每个组件都集成高级加密和监管合规性。',
+  'features.card2.title': '自动化',
+  'features.card2.desc': '自动化复杂流程和工作流，提高运营效率并降低成本。',
+  'features.card3.title': '分析',
+  'features.card3.desc': '实时洞察和高级分析，加速基于数据的决策结果。',
+  'features.card4.title': '集成',
+  'features.card4.desc': '通过标准化API轻松连接传统系统和第三方服务，消除技术障碍。',
+  'features.more': '了解更多',
+  
+  // CTA Section
+  'cta.title': '准备好转型您的金融服务了吗？',
+  'cta.subtitle': '加入那些已经通过我们的组合式金融平台革新数字解决方案开发和交付的金融机构。',
+  'cta.button1': '预约演示',
+  'cta.button2': '咨询专家',
+  
   // Podcasts Page
   'podcasts.title': '我们的播客',
   'podcasts.subtitle': '收听我们关于金融科技与数字化转型的见解',

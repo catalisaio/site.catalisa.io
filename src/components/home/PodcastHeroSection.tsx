@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { createPortal } from 'react-dom';
 import { useLanguage } from '../../contexts/LanguageContext';
 import { Play, Pause, Volume2, VolumeX, Globe, Maximize, Minimize, X, Headphones } from 'lucide-react';
@@ -17,7 +17,7 @@ interface Subtitle {
   text: string;
 }
 
-type SubtitleLanguage = 'en-US' | 'pt-BR' | 'es-ES';
+type SubtitleLanguage = 'en-US' | 'pt-BR' | 'es-ES' | 'de-DE';
 
 interface PodcastHeroSectionProps {
   isRibbonVisible?: boolean;
@@ -81,72 +81,8 @@ const PodcastHeroSection: React.FC<PodcastHeroSectionProps> = ({
     }
   }, [language]);
   
-  // Load subtitles when subtitle language changes
-  useEffect(() => {
-    // Only attempt to load if we have a subtitle source for this language
-    if (subtitleSrcs[subtitleLanguage]) {
-      fetch(subtitleSrcs[subtitleLanguage]!)
-        .then(response => response.text())
-        .then(srtContent => {
-          const parsedSubtitles = parseSRT(srtContent);
-          setSubtitles(parsedSubtitles);
-        })
-        .catch(error => {
-          console.error(`Failed to load subtitles for ${subtitleLanguage}:`, error);
-          // Fallback to English if the selected language fails
-          if (subtitleLanguage !== 'en-US' && subtitleSrcs['en-US']) {
-            setSubtitleLanguage('en-US');
-          }
-        });
-    } else {
-      // If no subtitle available for this language, clear subtitles
-      setSubtitles([]);
-      setCurrentSubtitle('');
-    }
-  }, [subtitleLanguage, subtitleSrcs]);
-  
-  // Update current subtitle based on playback time
-  useEffect(() => {
-    if (subtitles.length > 0) {
-      const currentSub = subtitles.find(
-        sub => currentTime >= sub.start && currentTime <= sub.end
-      );
-      setCurrentSubtitle(currentSub ? currentSub.text : '');
-    }
-  }, [currentTime, subtitles]);
-  
-  // Update time and handle playback state
-  useEffect(() => {
-    const audio = audioRef.current;
-    if (!audio) return;
-    
-    const handleTimeUpdate = () => {
-      setCurrentTime(audio.currentTime);
-    };
-    
-    const handleLoadedMetadata = () => {
-      setDuration(audio.duration);
-    };
-    
-    const handleEnded = () => {
-      setIsPlaying(false);
-      setCurrentTime(0);
-      audio.currentTime = 0;
-    };
-    
-    audio.addEventListener('timeupdate', handleTimeUpdate);
-    audio.addEventListener('loadedmetadata', handleLoadedMetadata);
-    audio.addEventListener('ended', handleEnded);
-    
-    return () => {
-      audio.removeEventListener('timeupdate', handleTimeUpdate);
-      audio.removeEventListener('loadedmetadata', handleLoadedMetadata);
-      audio.removeEventListener('ended', handleEnded);
-    };
-  }, []);
-  
   // Parse SRT format to structured subtitle objects
-  const parseSRT = (srtContent: string): Subtitle[] => {
+  const parseSRT = useCallback((srtContent: string): Subtitle[] => {
     const srtLines = srtContent.trim().split('\n\n');
     return srtLines.map(block => {
       const lines = block.split('\n');
@@ -181,7 +117,92 @@ const PodcastHeroSection: React.FC<PodcastHeroSectionProps> = ({
       
       return { id, start, end, text };
     });
-  };
+  }, []);
+
+  // Track loaded language to prevent infinite loops
+  const loadedLanguageRef = useRef<string | null>(null);
+
+  // Load subtitles when subtitle language changes
+  useEffect(() => {
+    // Skip if we're already loading this language or if it's a fallback attempt
+    if (loadedLanguageRef.current === subtitleLanguage) return;
+    
+    // Only attempt to load if we have a subtitle source for this language
+    if (subtitleSrcs[subtitleLanguage]) {
+      loadedLanguageRef.current = subtitleLanguage;
+      
+      fetch(subtitleSrcs[subtitleLanguage]!)
+        .then(response => response.text())
+        .then(srtContent => {
+          const parsedSubtitles = parseSRT(srtContent);
+          setSubtitles(parsedSubtitles);
+        })
+        .catch(error => {
+          console.error(`Failed to load subtitles for ${subtitleLanguage}:`, error);
+          
+          // Fallback to English if the selected language fails, but avoid loop
+          if (subtitleLanguage !== 'en-US' && subtitleSrcs['en-US'] && loadedLanguageRef.current !== 'en-US') {
+            loadedLanguageRef.current = 'en-US'; // Mark that we're attempting English
+            setSubtitleLanguage('en-US');
+          } else {
+            // Reset tracking ref if we can't even load English
+            loadedLanguageRef.current = null;
+            setSubtitles([]);
+            setCurrentSubtitle('');
+          }
+        });
+    } else {
+      // If no subtitle available for this language, clear subtitles
+      setSubtitles([]);
+      setCurrentSubtitle('');
+    }
+  }, [subtitleLanguage, subtitleSrcs, parseSRT]);
+  
+  // Update current subtitle based on playback time, memoize the subtitle finding logic
+  useEffect(() => {
+    if (subtitles.length > 0) {
+      const currentSub = subtitles.find(
+        sub => currentTime >= sub.start && currentTime <= sub.end
+      );
+      
+      // Only update if subtitle actually changed to prevent unnecessary renders
+      if ((currentSub && currentSub.text !== currentSubtitle) || 
+          (!currentSub && currentSubtitle !== '')) {
+        setCurrentSubtitle(currentSub ? currentSub.text : '');
+      }
+    }
+  }, [currentTime, subtitles, currentSubtitle]);
+  
+  // Update time and handle playback state
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio) return;
+    
+    const handleTimeUpdate = () => {
+      setCurrentTime(audio.currentTime);
+    };
+    
+    const handleLoadedMetadata = () => {
+      setDuration(audio.duration);
+    };
+    
+    const handleEnded = () => {
+      setIsPlaying(false);
+      setCurrentTime(0);
+      audio.currentTime = 0;
+    };
+    
+    audio.addEventListener('timeupdate', handleTimeUpdate);
+    audio.addEventListener('loadedmetadata', handleLoadedMetadata);
+    audio.addEventListener('ended', handleEnded);
+    
+    return () => {
+      audio.removeEventListener('timeupdate', handleTimeUpdate);
+      audio.removeEventListener('loadedmetadata', handleLoadedMetadata);
+      audio.removeEventListener('ended', handleEnded);
+    };
+  }, []);
+  
   
   const togglePlayPause = () => {
     const audio = audioRef.current;

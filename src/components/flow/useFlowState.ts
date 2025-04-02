@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { FlowNode, FlowConnection } from './FlowCanvas';
 
 export interface FlowStateOptions {
@@ -78,15 +78,8 @@ export const useFlowState = (options: FlowStateOptions = {}) => {
     };
   }, []);
   
-  // Update node positions when window width changes
-  useEffect(() => {
-    if (Object.keys(originalPositionsRef.current).length > 0) {
-      repositionNodesForViewport();
-    }
-  }, [windowWidth]);
-  
   // Calculate position adjustment based on viewport width
-  const getPositionFactors = () => {
+  const getPositionFactors = useCallback(() => {
     if (windowWidth < 640) { // Mobile
       return { xFactor: 0.5, yFactor: 1, xOffset: -100 };
     } else if (windowWidth < 1024) { // Tablet
@@ -94,10 +87,10 @@ export const useFlowState = (options: FlowStateOptions = {}) => {
     } else { // Desktop - original positions
       return { xFactor: 1, yFactor: 1, xOffset: 0 };
     }
-  };
+  }, [windowWidth]);
   
   // Reposition nodes based on current viewport
-  const repositionNodesForViewport = () => {
+  const repositionNodesForViewport = useCallback(() => {
     const { xFactor, yFactor, xOffset } = getPositionFactors();
     
     // If we're on desktop, restore original positions
@@ -120,7 +113,14 @@ export const useFlowState = (options: FlowStateOptions = {}) => {
         }
       };
     }));
-  };
+  }, [getPositionFactors]);
+  
+  // Update node positions when window width changes
+  useEffect(() => {
+    if (Object.keys(originalPositionsRef.current).length > 0) {
+      repositionNodesForViewport();
+    }
+  }, [windowWidth, repositionNodesForViewport]);
   
   // Form handlers
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {

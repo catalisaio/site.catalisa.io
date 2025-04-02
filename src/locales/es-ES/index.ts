@@ -1,4 +1,4 @@
-// Spanish (Spain) translations - Index file
+// Spanish translations - Index file
 import { common } from './common';
 import { home } from './home';
 import { paas } from './paas';

@@ -1,3 +1,4 @@
+// Mandarin (Chinese) translations - Index file
 import { common } from './common';
 import { home } from './home';
 import { paas } from './paas';
@@ -8,7 +9,10 @@ import { flow } from './flow';
 import { contact } from './contact';
 import { footer } from './footer';
 import { faq } from './faq';
+import { privacy } from './privacy';
+import { founders } from './founders';
 
+// Combine all translation sections
 export const zhCN = {
   ...common,
   ...home,
@@ -19,5 +23,7 @@ export const zhCN = {
   ...flow,
   ...contact,
   ...footer,
-  ...faq
+  ...faq,
+  ...privacy,
+  ...founders
 };

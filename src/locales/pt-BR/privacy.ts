@@ -2,7 +2,7 @@
 export const privacy = {
   'privacy.title': 'Política de Privacidade',
   'privacy.subtitle': 'Nossa política de privacidade explica como coletamos, usamos e protegemos suas informações ao utilizar nossos serviços.',
-  'privacy.lastUpdated': 'Última atualização: 25 de Março, 2025',
+  'privacy.lastUpdated': 'Última atualização: 10 de Fevereiro, 2026',
 
   'privacy.intro.title': 'Introdução',
   'privacy.intro.text': 'A Catalisa valoriza sua privacidade e está comprometida em proteger seus dados pessoais. Esta Política de Privacidade descreve como coletamos, usamos, compartilhamos e protegemos suas informações quando você visita nosso site, utiliza nossa plataforma ou interage com nossos serviços.',
@@ -56,6 +56,53 @@ export const privacy = {
   'privacy.contact.email': 'privacidade@catalisa.io',
   'privacy.contact.address': 'Rua Exemplo, 123 - São Paulo, SP - Brasil',
 
+  'privacy.whatsapp.title': 'Dados do WhatsApp e Meta',
+  'privacy.whatsapp.text': 'A Catalisa utiliza a API do WhatsApp Business para oferecer serviços de comunicação. Ao utilizar funcionalidades integradas ao WhatsApp, os seguintes dados podem ser coletados e processados:',
+  'privacy.whatsapp.list.1': 'Números de telefone dos participantes das conversas',
+  'privacy.whatsapp.list.2': 'Conteúdo das mensagens enviadas e recebidas através da plataforma',
+  'privacy.whatsapp.list.3': 'Metadados de conversa (horários, status de entrega, tipo de mídia)',
+  'privacy.whatsapp.list.4': 'Identificadores de usuário da plataforma Meta/Facebook',
+
+  'privacy.whatsapp.meta.title': 'Integração com a Plataforma Meta',
+  'privacy.whatsapp.meta.text': 'Nossa plataforma é integrada à plataforma Meta (Facebook) para viabilizar a comunicação via WhatsApp Business API. Dados compartilhados com a Meta são limitados ao necessário para o funcionamento do serviço e estão sujeitos às políticas de privacidade da Meta. Não compartilhamos dados adicionais dos usuários com a Meta além do necessário para a operação do WhatsApp Business.',
+
+  'privacy.dataDeletion.title': 'Exclusão de Dados',
+  'privacy.dataDeletion.text': 'Você tem o direito de solicitar a exclusão de seus dados pessoais a qualquer momento. Os pedidos de exclusão podem ser feitos das seguintes formas:',
+  'privacy.dataDeletion.list.1': 'Através das configurações de privacidade do Facebook (para dados vinculados ao WhatsApp)',
+  'privacy.dataDeletion.list.2': 'Através do nosso formulário de solicitação de exclusão de dados',
+  'privacy.dataDeletion.list.3': 'Entrando em contato diretamente pelo e-mail privacidade@catalisa.io',
+  'privacy.dataDeletion.list.4': 'Após a solicitação, seus dados serão removidos em até 30 dias úteis',
+  'privacy.dataDeletion.callback': 'Para usuários que utilizaram login via Facebook, a exclusão de dados pode ser solicitada diretamente nas configurações do aplicativo no Facebook. Um código de confirmação será gerado para acompanhamento do processo.',
+
+  'privacy.retention.title': 'Retenção de Dados',
+  'privacy.retention.text': 'Os dados coletados são retidos pelo período necessário para o cumprimento das finalidades descritas nesta política:',
+  'privacy.retention.list.1': 'Dados de conta e perfil: mantidos enquanto a conta estiver ativa ou conforme exigido por lei',
+  'privacy.retention.list.2': 'Mensagens do WhatsApp: retidas por até 12 meses após a última interação, salvo obrigação legal em contrário',
+  'privacy.retention.list.3': 'Logs de uso e metadados: retidos por até 6 meses para fins de análise e segurança',
+  'privacy.retention.list.4': 'Dados de faturamento: retidos conforme exigências fiscais e legais aplicáveis (mínimo de 5 anos)',
+
   'privacy.consent.title': 'Seu Consentimento',
   'privacy.consent.text': 'Ao utilizar nosso site e serviços, você concorda com esta Política de Privacidade.',
+
+  // Data Deletion Request Form
+  'privacy.deletionForm.title': 'Solicitação de Exclusão de Dados',
+  'privacy.deletionForm.subtitle': 'Preencha o formulário abaixo para solicitar a exclusão dos seus dados pessoais de nossa plataforma.',
+  'privacy.deletionForm.name': 'Nome completo',
+  'privacy.deletionForm.namePlaceholder': 'Seu nome completo',
+  'privacy.deletionForm.email': 'E-mail',
+  'privacy.deletionForm.emailPlaceholder': 'seu@email.com',
+  'privacy.deletionForm.phone': 'Telefone (opcional)',
+  'privacy.deletionForm.phonePlaceholder': '+55 11 99999-9999',
+  'privacy.deletionForm.reason': 'Motivo da solicitação (opcional)',
+  'privacy.deletionForm.reasonPlaceholder': 'Descreva o motivo da sua solicitação de exclusão...',
+  'privacy.deletionForm.submit': 'Solicitar Exclusão',
+  'privacy.deletionForm.submitting': 'Enviando...',
+  'privacy.deletionForm.success.title': 'Solicitação Recebida',
+  'privacy.deletionForm.success.text': 'Sua solicitação de exclusão de dados foi registrada com sucesso. Você receberá uma confirmação por e-mail.',
+  'privacy.deletionForm.success.code': 'Código de confirmação:',
+  'privacy.deletionForm.success.note': 'Guarde este código para acompanhar o status da sua solicitação. Seus dados serão removidos em até 30 dias úteis.',
+  'privacy.deletionForm.error.title': 'Erro ao enviar',
+  'privacy.deletionForm.error.text': 'Não foi possível enviar sua solicitação. Tente novamente ou entre em contato pelo e-mail privacidade@catalisa.io.',
+  'privacy.deletionForm.disclaimer': 'Ao enviar esta solicitação, confirmo que desejo a exclusão dos meus dados pessoais conforme descrito na nossa Política de Privacidade.',
+  'privacy.deletionForm.backToPrivacy': 'Voltar para a Política de Privacidade',
 };

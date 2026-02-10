@@ -2,7 +2,7 @@
 export const privacy = {
   'privacy.title': 'Privacy Policy',
   'privacy.subtitle': 'Our privacy policy explains how we collect, use, and protect your information when using our services.',
-  'privacy.lastUpdated': 'Last updated: March 25, 2025',
+  'privacy.lastUpdated': 'Last updated: February 10, 2026',
 
   'privacy.intro.title': 'Introduction',
   'privacy.intro.text': 'Catalisa values your privacy and is committed to protecting your personal data. This Privacy Policy describes how we collect, use, share, and protect your information when you visit our website, use our platform, or interact with our services.',
@@ -56,6 +56,53 @@ export const privacy = {
   'privacy.contact.email': 'privacidade@catalisa.io',
   'privacy.contact.address': 'Rua Exemplo, 123 - São Paulo, SP - Brazil',
 
+  'privacy.whatsapp.title': 'WhatsApp and Meta Data',
+  'privacy.whatsapp.text': 'Catalisa uses the WhatsApp Business API to provide communication services. When using WhatsApp-integrated features, the following data may be collected and processed:',
+  'privacy.whatsapp.list.1': 'Phone numbers of conversation participants',
+  'privacy.whatsapp.list.2': 'Content of messages sent and received through the platform',
+  'privacy.whatsapp.list.3': 'Conversation metadata (timestamps, delivery status, media type)',
+  'privacy.whatsapp.list.4': 'Meta/Facebook platform user identifiers',
+
+  'privacy.whatsapp.meta.title': 'Meta Platform Integration',
+  'privacy.whatsapp.meta.text': 'Our platform is integrated with the Meta (Facebook) platform to enable communication via WhatsApp Business API. Data shared with Meta is limited to what is necessary for the service to function and is subject to Meta\'s privacy policies. We do not share additional user data with Meta beyond what is required for WhatsApp Business operations.',
+
+  'privacy.dataDeletion.title': 'Data Deletion',
+  'privacy.dataDeletion.text': 'You have the right to request the deletion of your personal data at any time. Deletion requests can be made through the following methods:',
+  'privacy.dataDeletion.list.1': 'Through Facebook privacy settings (for WhatsApp-linked data)',
+  'privacy.dataDeletion.list.2': 'Through our data deletion request form',
+  'privacy.dataDeletion.list.3': 'By contacting us directly at privacidade@catalisa.io',
+  'privacy.dataDeletion.list.4': 'After your request, your data will be removed within 30 business days',
+  'privacy.dataDeletion.callback': 'For users who logged in via Facebook, data deletion can be requested directly in the application settings on Facebook. A confirmation code will be generated to track the process.',
+
+  'privacy.retention.title': 'Data Retention',
+  'privacy.retention.text': 'Collected data is retained for the period necessary to fulfill the purposes described in this policy:',
+  'privacy.retention.list.1': 'Account and profile data: maintained while the account is active or as required by law',
+  'privacy.retention.list.2': 'WhatsApp messages: retained for up to 12 months after the last interaction, unless otherwise required by law',
+  'privacy.retention.list.3': 'Usage logs and metadata: retained for up to 6 months for analytics and security purposes',
+  'privacy.retention.list.4': 'Billing data: retained as required by applicable tax and legal requirements (minimum 5 years)',
+
   'privacy.consent.title': 'Your Consent',
   'privacy.consent.text': 'By using our website and services, you agree to this Privacy Policy.',
+
+  // Data Deletion Request Form
+  'privacy.deletionForm.title': 'Data Deletion Request',
+  'privacy.deletionForm.subtitle': 'Fill out the form below to request the deletion of your personal data from our platform.',
+  'privacy.deletionForm.name': 'Full name',
+  'privacy.deletionForm.namePlaceholder': 'Your full name',
+  'privacy.deletionForm.email': 'Email',
+  'privacy.deletionForm.emailPlaceholder': 'your@email.com',
+  'privacy.deletionForm.phone': 'Phone (optional)',
+  'privacy.deletionForm.phonePlaceholder': '+1 555 123-4567',
+  'privacy.deletionForm.reason': 'Reason for request (optional)',
+  'privacy.deletionForm.reasonPlaceholder': 'Describe the reason for your deletion request...',
+  'privacy.deletionForm.submit': 'Request Deletion',
+  'privacy.deletionForm.submitting': 'Submitting...',
+  'privacy.deletionForm.success.title': 'Request Received',
+  'privacy.deletionForm.success.text': 'Your data deletion request has been successfully registered. You will receive a confirmation by email.',
+  'privacy.deletionForm.success.code': 'Confirmation code:',
+  'privacy.deletionForm.success.note': 'Keep this code to track the status of your request. Your data will be removed within 30 business days.',
+  'privacy.deletionForm.error.title': 'Submission Error',
+  'privacy.deletionForm.error.text': 'Unable to submit your request. Please try again or contact us at privacidade@catalisa.io.',
+  'privacy.deletionForm.disclaimer': 'By submitting this request, I confirm that I want my personal data deleted as described in our Privacy Policy.',
+  'privacy.deletionForm.backToPrivacy': 'Back to Privacy Policy',
 };

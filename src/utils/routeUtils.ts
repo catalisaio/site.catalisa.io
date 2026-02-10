@@ -71,6 +71,16 @@ export const routeMappings: RouteMapping = {
     'zh-CN': '常见问题',
     'ja-JP': 'よくある質問',
   },
+  // Data deletion route
+  '/data-deletion': {
+    'pt-BR': 'exclusao-dados',
+    'en-US': 'data-deletion',
+    'de-DE': 'datenloschung',
+    'es-ES': 'eliminacion-datos',
+    'ru-RU': 'удаление-данных',
+    'zh-CN': '数据删除',
+    'ja-JP': 'データ削除',
+  },
   // Privacy policy route
   '/privacy-policy': {
     'pt-BR': 'politica-privacidade',

@@ -15,6 +15,7 @@ import PrivacyPolicyPage from './pages/PrivacyPolicyPage.tsx';
 import PodcastsPage from './pages/PodcastsPage.tsx';
 import FoundersPage from './pages/FoundersPage.tsx';
 import StudioPage from './pages/StudioPage.tsx';
+import DataDeletionPage from './pages/DataDeletionPage.tsx';
 
 //Utils
 import { LanguageProvider } from './contexts/LanguageContext.tsx';
@@ -109,6 +110,14 @@ createRoot(document.getElementById('root')!).render(
             <Route path="/ru/политика-конфиденциальности" element={<PrivacyPolicyPage />} />
             <Route path="/zh/隐私政策" element={<PrivacyPolicyPage />} />
             
+            {/* Data deletion request routes */}
+            <Route path="/pt/exclusao-dados" element={<DataDeletionPage />} />
+            <Route path="/en/data-deletion" element={<DataDeletionPage />} />
+            <Route path="/de/datenloschung" element={<DataDeletionPage />} />
+            <Route path="/es/eliminacion-datos" element={<DataDeletionPage />} />
+            <Route path="/ru/удаление-данных" element={<DataDeletionPage />} />
+            <Route path="/zh/数据删除" element={<DataDeletionPage />} />
+
             {/* Podcasts routes */}
             <Route path="/pt/podcasts" element={<PodcastsPage />} />
             <Route path="/en/podcasts" element={<PodcastsPage />} />
@@ -145,6 +154,7 @@ createRoot(document.getElementById('root')!).render(
             <Route path="/schedule" element={<Navigate to={`/${defaultUrlLanguage}/agendar`} replace />} />
             <Route path="/faq" element={<Navigate to={`/${defaultUrlLanguage}/perguntas-frequentes`} replace />} />
             <Route path="/privacy-policy" element={<Navigate to={`/${defaultUrlLanguage}/politica-privacidade`} replace />} />
+            <Route path="/data-deletion" element={<Navigate to={`/${defaultUrlLanguage}/exclusao-dados`} replace />} />
             <Route path="/podcasts" element={<Navigate to={`/${defaultUrlLanguage}/podcasts`} replace />} />
             <Route path="/studio" element={<Navigate to={`/${defaultUrlLanguage}/studio`} replace />} />
             <Route path="/founders" element={<Navigate to={`/${defaultUrlLanguage}/socios`} replace />} />

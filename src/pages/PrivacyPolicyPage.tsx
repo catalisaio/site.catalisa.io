@@ -2,10 +2,11 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { useLanguage } from '../contexts/LanguageContext';
+import { getLocalizedPath } from '../utils/routeUtils';
 import ContactSection from '../components/home/ContactSection';
 
 const PrivacyPolicyPage: React.FC = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   return (
     <div className="min-h-screen bg-primary-ultraLight text-gray-800 font-sans">
@@ -142,6 +143,67 @@ const PrivacyPolicyPage: React.FC = () => {
             </ul>
           </div>
           
+          {/* WhatsApp and Meta Data */}
+          <div className="mb-14">
+            <h2 className="text-3xl font-bold mb-6 text-primary-main pb-2 border-b border-primary-light">{t('privacy.whatsapp.title')}</h2>
+            <p className="text-gray-700 leading-relaxed mb-8 text-lg">{t('privacy.whatsapp.text')}</p>
+
+            <div className="bg-primary-ultraLight rounded-xl p-8 shadow-md mb-8 border border-primary-light/20">
+              <ul className="grid gap-4 text-gray-700">
+                <li>{t('privacy.whatsapp.list.1')}</li>
+                <li>{t('privacy.whatsapp.list.2')}</li>
+                <li>{t('privacy.whatsapp.list.3')}</li>
+                <li>{t('privacy.whatsapp.list.4')}</li>
+              </ul>
+            </div>
+
+            <h3 className="text-2xl font-bold mb-4 text-primary-dark">{t('privacy.whatsapp.meta.title')}</h3>
+            <div className="bg-gray-50 rounded-xl p-8 shadow-sm border border-gray-100">
+              <p className="text-gray-700 leading-relaxed text-lg">{t('privacy.whatsapp.meta.text')}</p>
+            </div>
+          </div>
+
+          {/* Data Deletion */}
+          <div className="mb-14">
+            <h2 className="text-3xl font-bold mb-6 text-primary-main pb-2 border-b border-primary-light">{t('privacy.dataDeletion.title')}</h2>
+            <p className="text-gray-700 leading-relaxed mb-8 text-lg">{t('privacy.dataDeletion.text')}</p>
+
+            <div className="bg-primary-ultraLight rounded-xl p-8 shadow-md mb-8 border border-primary-light/20">
+              <ul className="grid gap-4 text-gray-700">
+                <li>{t('privacy.dataDeletion.list.1')}</li>
+                <li>{t('privacy.dataDeletion.list.2')}</li>
+                <li>{t('privacy.dataDeletion.list.3')}</li>
+                <li>{t('privacy.dataDeletion.list.4')}</li>
+              </ul>
+            </div>
+
+            <div className="bg-gray-50 rounded-xl p-8 shadow-sm border border-gray-100">
+              <p className="text-gray-700 leading-relaxed">{t('privacy.dataDeletion.callback')}</p>
+            </div>
+
+            <div className="mt-8 text-center">
+              <a
+                href={getLocalizedPath('/data-deletion', language)}
+                className="inline-block px-8 py-3 bg-primary-main text-white font-semibold rounded-lg hover:bg-primary-dark transition-colors shadow-md"
+              >
+                {t('privacy.deletionForm.submit')}
+              </a>
+            </div>
+          </div>
+
+          {/* Data Retention */}
+          <div className="mb-14">
+            <h2 className="text-3xl font-bold mb-6 text-primary-main pb-2 border-b border-primary-light">{t('privacy.retention.title')}</h2>
+            <p className="text-gray-700 leading-relaxed mb-8 text-lg">{t('privacy.retention.text')}</p>
+
+            <ul className="grid gap-3 text-gray-700">
+              <li>{t('privacy.retention.list.1')}</li>
+              <li>{t('privacy.retention.list.2')}</li>
+              <li>{t('privacy.retention.list.3')}</li>
+              <li>{t('privacy.retention.list.4')}</li>
+            </ul>
+          </div>
+
           {/* Final Sections with Card Grid */}
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             {/* Children's Privacy */}

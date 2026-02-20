@@ -189,17 +189,29 @@
     "demoLink": "See live demo"
   },
   "liveDemos": {
-    "badge": "SEE IT WORKING",
-    "headline": "Don't just take our word for it.",
-    "headlineHighlight": "Watch.",
-    "subtitle": "Two real examples of the platform in action \u2014 from creation to final result.",
     "aiDemo": {
-      "title": "AI creates a complete service workflow",
-      "description": "One sentence. AI plans, executes and delivers 3 agents + 1 workflow in under 3 minutes."
+      "badge": "AI IN ACTION",
+      "headline": "One sentence. A complete",
+      "headlineHighlight": "system.",
+      "description": "Watch the AI analyze the request, plan the architecture, create 3 specialized agents and build the workflow \u2014 all without a single line of code.",
+      "caption": "Real platform recording, no cuts",
+      "stats": [
+        { "value": "< 3min", "label": "Zero to deploy" },
+        { "value": "3", "label": "Agents created" },
+        { "value": "1", "label": "Complete workflow" }
+      ]
     },
     "whatsappDemo": {
-      "title": "Real WhatsApp customer service",
-      "description": "Lead arrives, agent responds, workflow triggers \u2014 all automatic, in real time."
+      "badge": "LIVE WHATSAPP",
+      "headline": "The final result on",
+      "headlineHighlight": "real WhatsApp.",
+      "description": "The system created by AI working for real: lead arrives, agent responds, workflow triggers \u2014 all automatic.",
+      "highlights": [
+        "Automatic response in under 5 seconds",
+        "Complete lead context preserved",
+        "Workflow triggers actions in real time",
+        "CRM updated automatically"
+      ]
     }
   }
 }

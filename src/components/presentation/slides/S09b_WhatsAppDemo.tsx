@@ -1,16 +1,15 @@
-import { Heading, Text, VStack, Box, HStack, Flex } from '@chakra-ui/react';
-import { FiPlay, FiCpu, FiGitBranch, FiZap } from 'react-icons/fi';
+import { Heading, Text, VStack, Box, HStack, Flex, Icon } from '@chakra-ui/react';
+import { FiPlay, FiMessageCircle, FiCheck } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
 import { useRef, useState } from 'react';
 import { Slide } from '../Slide';
 import { MotionBox } from '../../motion';
 import { GradientText } from '../../shared/GradientText';
-import { BrowserFrame } from '../../shared/BrowserFrame';
-import { usePresentationTheme, usePresentationColors } from '../PresentationThemeContext';
+import { PhoneMockup } from '../../shared/PhoneMockup';
+import { usePresentationColors } from '../PresentationThemeContext';
 
-export function S09_LiveDemos() {
+export function S09b_WhatsAppDemo() {
   const { t } = useTranslation('presentation');
-  const { mode } = usePresentationTheme();
   const c = usePresentationColors();
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -27,44 +26,44 @@ export function S09_LiveDemos() {
     }
   };
 
-  const stats = t('liveDemos.aiDemo.stats', { returnObjects: true }) as Array<{ value: string; label: string }>;
+  const highlights = t('liveDemos.whatsappDemo.highlights', { returnObjects: true }) as string[];
 
   return (
     <Slide>
       {/* Ambient glow */}
       <Box
         position="absolute"
-        top="30%"
-        left="30%"
-        w="60%"
-        h="60%"
-        bgGradient={`radial(circle, ${c.glowPurple} 0%, transparent 60%)`}
+        top="20%"
+        right="20%"
+        w="50%"
+        h="50%"
+        bgGradient="radial(circle, rgba(37, 211, 102, 0.1) 0%, transparent 60%)"
         pointerEvents="none"
       />
       <Box
         position="absolute"
-        bottom="20%"
-        right="10%"
+        bottom="30%"
+        left="10%"
         w="40%"
         h="40%"
-        bgGradient="radial(circle, rgba(253, 194, 52, 0.06) 0%, transparent 60%)"
+        bgGradient={`radial(circle, ${c.glowPurple} 0%, transparent 60%)`}
         pointerEvents="none"
       />
 
       <Flex
-        direction={{ base: 'column', lg: 'row' }}
+        direction={{ base: 'column', lg: 'row-reverse' }}
         align="center"
         justify="center"
         gap={{ base: 6, lg: 10 }}
         w="full"
         maxW="1100px"
       >
-        {/* Left: Content */}
+        {/* Right (visually): Content */}
         <VStack
           align={{ base: 'center', lg: 'flex-start' }}
           spacing={{ base: 3, md: 4 }}
           textAlign={{ base: 'center', lg: 'left' }}
-          flex={{ lg: '0 0 38%' }}
+          flex={{ lg: '0 0 42%' }}
         >
           <MotionBox initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.4 }}>
             <HStack
@@ -76,95 +75,98 @@ export function S09_LiveDemos() {
               py={1.5}
               borderRadius="full"
             >
-              <Box as={FiCpu} color="brand.400" fontSize="xs" />
-              <Text fontSize="2xs" color="brand.400" fontWeight="700" letterSpacing="0.1em">
-                {t('liveDemos.aiDemo.badge')}
+              <Box as={FiMessageCircle} color="whatsapp.400" fontSize="xs" />
+              <Text fontSize="2xs" color="whatsapp.400" fontWeight="700" letterSpacing="0.1em">
+                {t('liveDemos.whatsappDemo.badge')}
               </Text>
             </HStack>
           </MotionBox>
 
           <MotionBox initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.1 }}>
             <Heading fontSize={{ base: 'xl', md: '2xl', lg: '3xl' }} fontWeight="800" lineHeight="1.2">
-              {t('liveDemos.aiDemo.headline')}{' '}
-              <GradientText gradient="linear(to-r, brand.400, catalisa.secondary)">
-                {t('liveDemos.aiDemo.headlineHighlight')}
+              {t('liveDemos.whatsappDemo.headline')}{' '}
+              <GradientText gradient="linear(to-r, whatsapp.400, brand.400)">
+                {t('liveDemos.whatsappDemo.headlineHighlight')}
               </GradientText>
             </Heading>
           </MotionBox>
 
           <MotionBox initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.25 }}>
-            <Text color={c.textSecondary} fontSize={{ base: 'sm', md: 'md' }} lineHeight="1.7" maxW="400px">
-              {t('liveDemos.aiDemo.description')}
+            <Text color={c.textSecondary} fontSize={{ base: 'sm', md: 'md' }} lineHeight="1.7" maxW="420px">
+              {t('liveDemos.whatsappDemo.description')}
             </Text>
           </MotionBox>
 
-          {/* Stats */}
-          <MotionBox initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.4 }}>
-            <HStack
-              spacing={0}
-              divider={<Box w="1px" h={8} bg={c.surfaceBorder} />}
-              bg={c.surfaceBg}
-              border="1px solid"
-              borderColor={c.surfaceBorder}
-              borderRadius="xl"
-              overflow="hidden"
-            >
-              {stats.map((s, i) => (
-                <VStack key={i} spacing={0} px={{ base: 4, md: 5 }} py={3}>
-                  <HStack spacing={1}>
-                    <Box as={[FiZap, FiGitBranch, FiCpu][i % 3]} color="brand.400" fontSize="xs" />
-                    <Text fontSize={{ base: 'lg', md: 'xl' }} fontWeight="800" color="brand.400">
-                      {s.value}
-                    </Text>
-                  </HStack>
-                  <Text fontSize="2xs" color={c.textMuted} fontWeight="500">
-                    {s.label}
+          {/* Highlights */}
+          <VStack spacing={2.5} align={{ base: 'center', lg: 'flex-start' }} pt={1}>
+            {highlights.map((h, i) => (
+              <MotionBox
+                key={i}
+                initial={{ opacity: 0, x: -15 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.4, delay: 0.35 + i * 0.1 }}
+              >
+                <HStack spacing={3}>
+                  <Flex
+                    w={5}
+                    h={5}
+                    borderRadius="full"
+                    bg="rgba(37, 211, 102, 0.15)"
+                    align="center"
+                    justify="center"
+                    flexShrink={0}
+                  >
+                    <Icon as={FiCheck} color="whatsapp.400" fontSize="xs" />
+                  </Flex>
+                  <Text fontSize={{ base: 'xs', md: 'sm' }} color={c.textSecondary} fontWeight="500">
+                    {h}
                   </Text>
-                </VStack>
-              ))}
-            </HStack>
-          </MotionBox>
+                </HStack>
+              </MotionBox>
+            ))}
+          </VStack>
         </VStack>
 
-        {/* Right: Browser frame with video */}
+        {/* Left (visually): Phone mockup with video */}
         <MotionBox
-          initial={{ opacity: 0, x: 40, scale: 0.95 }}
+          initial={{ opacity: 0, x: -40, scale: 0.95 }}
           animate={{ opacity: 1, x: 0, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.15 }}
-          flex={{ lg: '0 0 58%' }}
-          w="full"
+          flexShrink={0}
           position="relative"
           cursor="pointer"
           onClick={handlePlay}
         >
-          {/* Glow ring behind frame */}
+          {/* Glow ring behind phone */}
           <Box
             position="absolute"
-            inset="-4px"
-            borderRadius="2xl"
-            bgGradient="linear(to-br, brand.500, whatsapp.400)"
-            opacity={0.12}
-            filter="blur(24px)"
+            top="10%"
+            left="-10%"
+            w="120%"
+            h="80%"
+            bgGradient="radial(circle, rgba(37, 211, 102, 0.15) 0%, transparent 60%)"
             pointerEvents="none"
+            filter="blur(30px)"
           />
-          <BrowserFrame url="panel.catalisa.app/ai-assistant" variant={mode === 'dark' ? 'dark' : 'light'}>
-            <Box position="relative" w="full" pt="56.25%" bg="black">
+          <PhoneMockup
+            maxH={{ base: '360px', md: '420px', lg: '500px' } as unknown as string}
+            variant="dark"
+            showStatusBar={false}
+          >
+            <Box position="relative" w="full" h="full" bg="#075E54">
               <Box
                 as="video"
                 ref={videoRef}
-                position="absolute"
-                top={0}
-                left={0}
                 w="full"
                 h="full"
-                objectFit="contain"
+                objectFit="cover"
                 playsInline
                 preload="metadata"
-                poster="/videos/ai-demo-poster.jpg"
+                poster="/videos/whatsapp-demo-poster.jpg"
                 controls={isPlaying}
                 onEnded={() => setIsPlaying(false)}
               >
-                <source src="/videos/ai-demo-full.mp4" type="video/mp4" />
+                <source src="/videos/whatsapp-demo.mp4" type="video/mp4" />
               </Box>
               {/* Play overlay */}
               {!isPlaying && (
@@ -179,8 +181,8 @@ export function S09_LiveDemos() {
                   _hover={{ bg: 'blackAlpha.300' }}
                 >
                   <Box
-                    w={{ base: 14, md: 18 }}
-                    h={{ base: 14, md: 18 }}
+                    w={14}
+                    h={14}
                     borderRadius="full"
                     bg="whiteAlpha.200"
                     backdropFilter="blur(12px)"
@@ -192,12 +194,12 @@ export function S09_LiveDemos() {
                     transition="transform 0.2s"
                     _hover={{ transform: 'scale(1.1)' }}
                   >
-                    <Box as={FiPlay} color="white" fontSize={{ base: 'xl', md: '2xl' }} ml="3px" />
+                    <Box as={FiPlay} color="white" fontSize="xl" ml="2px" />
                   </Box>
                 </Box>
               )}
             </Box>
-          </BrowserFrame>
+          </PhoneMockup>
         </MotionBox>
       </Flex>
     </Slide>

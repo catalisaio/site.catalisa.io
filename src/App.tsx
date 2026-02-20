@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate, Outlet } from 'react-router-dom';
 import { ChakraProvider, Spinner, Flex } from '@chakra-ui/react';
 import { theme } from './theme';
 import { PageLayout } from './components/layout/PageLayout';
@@ -19,6 +19,7 @@ const UseCases = lazy(() => import('./pages/UseCases').then(m => ({ default: m.U
 const Contact = lazy(() => import('./pages/Contact').then(m => ({ default: m.Contact })));
 const Demo = lazy(() => import('./pages/Demo').then(m => ({ default: m.Demo })));
 const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy').then(m => ({ default: m.PrivacyPolicy })));
+const CommercialPresentation = lazy(() => import('./pages/CommercialPresentation').then(m => ({ default: m.CommercialPresentation })));
 
 function PageLoader() {
   return (
@@ -28,13 +29,31 @@ function PageLoader() {
   );
 }
 
+/** Layout route that wraps children with Header + Footer */
+function SiteLayout() {
+  return (
+    <PageLayout>
+      <Outlet />
+    </PageLayout>
+  );
+}
+
 function App() {
   return (
     <ChakraProvider theme={theme}>
       <BrowserRouter>
-        <PageLayout>
-          <Suspense fallback={<PageLoader />}>
-            <Routes>
+        <Suspense fallback={<PageLoader />}>
+          <Routes>
+            {/* Fullscreen routes — no Header/Footer */}
+            <Route element={<LanguageLayout lang="pt-BR" />}>
+              <Route path="/apresentacao-comercial" element={<CommercialPresentation />} />
+            </Route>
+            <Route path="/en" element={<LanguageLayout lang="en-US" />}>
+              <Route path="commercial-presentation" element={<CommercialPresentation />} />
+            </Route>
+
+            {/* Standard routes — with Header/Footer */}
+            <Route element={<SiteLayout />}>
               {/* pt-BR routes (default, no prefix) */}
               <Route element={<LanguageLayout lang="pt-BR" />}>
                 <Route path="/" element={<Home />} />
@@ -73,9 +92,9 @@ function App() {
 
               {/* Catch-all */}
               <Route path="*" element={<Navigate to="/" replace />} />
-            </Routes>
-          </Suspense>
-        </PageLayout>
+            </Route>
+          </Routes>
+        </Suspense>
       </BrowserRouter>
     </ChakraProvider>
   );

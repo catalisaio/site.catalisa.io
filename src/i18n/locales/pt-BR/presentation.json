@@ -1,0 +1,191 @@
+{
+  "cover": {
+    "tagline": "Plataforma de automacao inteligente para WhatsApp e servicos financeiros",
+    "badge": "Apresentacao Comercial \u2022 2026"
+  },
+  "problemHook": {
+    "headline": "Seus clientes esperam respostas em segundos.",
+    "headlineHighlight": "Quanto tempo leva para construir um novo produto?",
+    "painPoints": [
+      {
+        "title": "Respostas manuais",
+        "description": "Sua equipe responde uma mensagem por vez. Leads esfriam enquanto esperam."
+      },
+      {
+        "title": "Sem contexto entre atendentes",
+        "description": "Cada troca de agente recomeca do zero. O cliente repete tudo de novo."
+      },
+      {
+        "title": "Zero automacao",
+        "description": "Tarefas repetitivas consomem horas. Qualificacao, follow-up, cobranca \u2014 tudo manual."
+      }
+    ]
+  },
+  "solutionVision": {
+    "headline": "A Catalisa resolve ambos.",
+    "card1": {
+      "title": "WhatsApp & AI",
+      "description": "Automacao inteligente, agentes de IA especializados, workflows visuais e CRM integrado."
+    },
+    "card2": {
+      "title": "Banking & Fintech",
+      "description": "Building blocks modulares para construir produtos financeiros completos em semanas."
+    }
+  },
+  "whatsappProblem": {
+    "headline": "O cenario atual do atendimento",
+    "columns": [
+      { "title": "Respostas manuais", "description": "Uma mensagem por vez. Leads esfriam." },
+      { "title": "Sem contexto", "description": "Cada troca de agente recomeca do zero." },
+      { "title": "Zero automacao", "description": "Qualificacao e follow-up 100% manuais." }
+    ],
+    "metricsLabel": "CENARIO TIPICO",
+    "metrics": [
+      { "value": "3", "label": "atendentes necessarios" },
+      { "value": "2h", "label": "tempo medio de espera" },
+      { "value": "R$ 15k", "label": "custo mensal" }
+    ]
+  },
+  "whatsappSolution": {
+    "headline": "Quatro pilares. Uma plataforma.",
+    "steps": [
+      { "label": "Conectar", "title": "WhatsApp", "description": "Multi-tenant, multi-device. QR Code ou Cloud API." },
+      { "label": "Automatizar", "title": "Workflows", "description": "Drag & drop visual. 150+ building blocks composiveis." },
+      { "label": "Inteligencia", "title": "AI Agents", "description": "Agentes especializados com ferramentas seletivas." },
+      { "label": "Resultado", "title": "CRM & Analytics", "description": "Pipeline de leads, metricas e historico completo." }
+    ]
+  },
+  "whatsappFeatures": {
+    "headline": "Tudo que voce precisa. Nada que nao precisa.",
+    "items": [
+      { "title": "WhatsApp Multi-Agente", "description": "Conecte multiplos numeros. Baileys + Cloud API." },
+      { "title": "Agentes de IA", "description": "Prompt customizado e ferramentas seletivas." },
+      { "title": "Workflows Visuais", "description": "Drag & drop com execucao paralela (DAG)." },
+      { "title": "Building Blocks", "description": "150+ blocos: IA, fintech, CRM e mais." },
+      { "title": "CRM de Leads", "description": "Pipeline completo com kanban e campos dinamicos." },
+      { "title": "Seguranca & LGPD", "description": "Multi-tenant isolado. Criptografia bancaria." }
+    ]
+  },
+  "beforeAfter": {
+    "headline": "O impacto real",
+    "before": {
+      "label": "ANTES",
+      "items": [
+        { "label": "Atendentes", "value": "3" },
+        { "label": "Tempo de resposta", "value": "2h" },
+        { "label": "Custo mensal", "value": "R$ 15k" }
+      ]
+    },
+    "after": {
+      "label": "DEPOIS",
+      "items": [
+        { "label": "Equipe", "value": "IA + 1" },
+        { "label": "Tempo de resposta", "value": "5s" },
+        { "label": "Custo mensal", "value": "R$ 800" }
+      ]
+    }
+  },
+  "aiInAction": {
+    "badge": "CASO REAL",
+    "headline": "De uma frase a um sistema",
+    "headlineHighlight": "de atendimento completo",
+    "steps": [
+      { "label": "Descreveu", "title": "\"Quero atendimento de seguros via WhatsApp\"", "description": "Uma frase. Sem codigo. Sem especificacao tecnica." },
+      { "label": "IA Planejou", "title": "Plano em 4 fases gerado em segundos", "description": "O usuario so precisou dizer \"Aprovado.\"" },
+      { "label": "Executou", "title": "3 agentes + 1 workflow criados automaticamente", "description": "A IA executou e o usuario deu feedback em tempo real." },
+      { "label": "Funcionando", "title": "Atendimento real no WhatsApp em 13 segundos", "description": "Da frase ao atendimento funcionando: menos de 3 minutos." }
+    ]
+  },
+  "differentiators": {
+    "headline": "Por que a Catalisa?",
+    "items": [
+      { "vs": "vs n8n / Make", "title": "IA nativa, nao plugin", "description": "Agentes de IA, analise de sentimento, OCR e geracao de texto sao building blocks nativos." },
+      { "vs": "vs Intercom / WATI", "title": "Blocos composiveis, nao chatbot", "description": "150+ building blocks que voce combina livremente para criar automacoes sob medida." },
+      { "vs": "vs Zapier / Pipedream", "title": "WhatsApp nativo + IA embarcada", "description": "Conexao direta com WhatsApp, agentes IA com ferramentas reais, CRM integrado." },
+      { "vs": "vs Dev interno", "title": "150+ blocos. Meses de economia.", "description": "Building blocks prontos e testados. Foque no seu negocio, nao em infraestrutura." }
+    ]
+  },
+  "bankingLego": {
+    "headline": "Banking as a LEGO",
+    "subtitle": "Componentes modulares non-core para construir produtos financeiros completos.",
+    "tagline": "Deploy em semanas. Totalmente funcional.",
+    "highlights": [
+      "Modular e composivel",
+      "Compliance integrado",
+      "White-label ready"
+    ]
+  },
+  "buildingBlocks": {
+    "headline": "23+ Building Blocks",
+    "subtitle": "Cada bloco e um componente funcional independente, pronto para compor seu produto.",
+    "categories": [
+      {
+        "name": "Credito",
+        "items": ["Simulacao", "Contratacao", "Portabilidade", "Autorizacao", "Cobranca", "Esteira"]
+      },
+      {
+        "name": "Compliance",
+        "items": ["KYC/KYB", "AML", "PLD/FT", "Documentoscopia", "Background Check", "Scoring"]
+      },
+      {
+        "name": "Pagamentos",
+        "items": ["PIX", "Boleto", "TED/DOC", "Split", "Recorrencia"]
+      },
+      {
+        "name": "Digital Assets",
+        "items": ["Tokenizacao", "Custodia", "Smart Contracts", "Marketplace"]
+      },
+      {
+        "name": "Core Banking",
+        "items": ["Conta Digital", "Extrato", "Cartao", "Seguros"]
+      }
+    ]
+  },
+  "bankingProducts": {
+    "headline": "Produtos prontos para mercado",
+    "cards": [
+      {
+        "title": "Financiamento de Veiculos",
+        "steps": ["Simulacao", "Contratacao", "Autorizacao", "Liberacao"],
+        "claim": "Automacao reduz custos operacionais em ate 30%"
+      },
+      {
+        "title": "Portabilidade de Credito",
+        "steps": ["Analise", "Proposta", "Transferencia", "Ativacao"],
+        "claim": "Processo que levava semanas agora leva dias"
+      }
+    ]
+  },
+  "architecture": {
+    "headline": "Arquitetura & Modelo de Negocio",
+    "stack": ["UI/UX Layer", "API Gateway", "Orchestration", "Platform Core", "Infrastructure"],
+    "models": [
+      { "title": "On Demand", "description": "Pague pelo que usar. Ideal para startups." },
+      { "title": "Success Fee", "description": "Custo atrelado a resultado. Sem risco." },
+      { "title": "White Label", "description": "Sua marca, nossa tecnologia. 100% personalizado." }
+    ]
+  },
+  "trustSecurity": {
+    "headline": "Seguranca & Confianca",
+    "badges": [
+      { "label": "LGPD", "description": "Conformidade total" },
+      { "label": "Meta Business", "description": "WhatsApp oficial" },
+      { "label": "BACEN", "description": "Regulamentacao bancaria" },
+      { "label": "E2E", "description": "Criptografia ponta a ponta" }
+    ],
+    "highlights": [
+      "Setup em 5 minutos",
+      "Dados hospedados no Brasil",
+      "Backups automaticos 24/7",
+      "Multi-tenant isolado"
+    ]
+  },
+  "cta": {
+    "headline": "Vamos conversar?",
+    "subtitle": "Agende uma demonstracao e descubra como a Catalisa pode transformar seu negocio.",
+    "whatsappButton": "Falar pelo WhatsApp",
+    "emailButton": "Enviar email",
+    "email": "contato@catalisa.io",
+    "demoLink": "Ver demo ao vivo"
+  }
+}

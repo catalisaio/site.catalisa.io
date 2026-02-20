@@ -1,0 +1,191 @@
+{
+  "cover": {
+    "tagline": "Intelligent automation platform for WhatsApp and financial services",
+    "badge": "Commercial Presentation \u2022 2026"
+  },
+  "problemHook": {
+    "headline": "Your customers expect answers in seconds.",
+    "headlineHighlight": "How long does it take to build a new product?",
+    "painPoints": [
+      {
+        "title": "Manual responses",
+        "description": "Your team answers one message at a time. Leads go cold while waiting."
+      },
+      {
+        "title": "No context between agents",
+        "description": "Every agent switch starts from zero. The customer repeats everything."
+      },
+      {
+        "title": "Zero automation",
+        "description": "Repetitive tasks consume hours. Qualification, follow-up, billing \u2014 all manual."
+      }
+    ]
+  },
+  "solutionVision": {
+    "headline": "Catalisa solves both.",
+    "card1": {
+      "title": "WhatsApp & AI",
+      "description": "Intelligent automation, specialized AI agents, visual workflows and integrated CRM."
+    },
+    "card2": {
+      "title": "Banking & Fintech",
+      "description": "Modular building blocks to build complete financial products in weeks."
+    }
+  },
+  "whatsappProblem": {
+    "headline": "The current customer service landscape",
+    "columns": [
+      { "title": "Manual responses", "description": "One message at a time. Leads go cold." },
+      { "title": "No context", "description": "Every agent switch starts from zero." },
+      { "title": "Zero automation", "description": "Qualification and follow-up 100% manual." }
+    ],
+    "metricsLabel": "TYPICAL SCENARIO",
+    "metrics": [
+      { "value": "3", "label": "agents needed" },
+      { "value": "2h", "label": "average wait time" },
+      { "value": "$3k", "label": "monthly cost" }
+    ]
+  },
+  "whatsappSolution": {
+    "headline": "Four pillars. One platform.",
+    "steps": [
+      { "label": "Connect", "title": "WhatsApp", "description": "Multi-tenant, multi-device. QR Code or Cloud API." },
+      { "label": "Automate", "title": "Workflows", "description": "Visual drag & drop. 150+ composable building blocks." },
+      { "label": "Intelligence", "title": "AI Agents", "description": "Specialized agents with selective tools." },
+      { "label": "Results", "title": "CRM & Analytics", "description": "Lead pipeline, metrics and complete history." }
+    ]
+  },
+  "whatsappFeatures": {
+    "headline": "Everything you need. Nothing you don't.",
+    "items": [
+      { "title": "Multi-Agent WhatsApp", "description": "Connect multiple numbers. Baileys + Cloud API." },
+      { "title": "AI Agents", "description": "Custom prompts and selective tools." },
+      { "title": "Visual Workflows", "description": "Drag & drop with parallel execution (DAG)." },
+      { "title": "Building Blocks", "description": "150+ blocks: AI, fintech, CRM and more." },
+      { "title": "Lead CRM", "description": "Complete pipeline with kanban and dynamic fields." },
+      { "title": "Security & LGPD", "description": "Isolated multi-tenant. Banking-grade encryption." }
+    ]
+  },
+  "beforeAfter": {
+    "headline": "The real impact",
+    "before": {
+      "label": "BEFORE",
+      "items": [
+        { "label": "Agents", "value": "3" },
+        { "label": "Response time", "value": "2h" },
+        { "label": "Monthly cost", "value": "$3k" }
+      ]
+    },
+    "after": {
+      "label": "AFTER",
+      "items": [
+        { "label": "Team", "value": "AI + 1" },
+        { "label": "Response time", "value": "5s" },
+        { "label": "Monthly cost", "value": "$160" }
+      ]
+    }
+  },
+  "aiInAction": {
+    "badge": "REAL CASE",
+    "headline": "From a single sentence to a complete",
+    "headlineHighlight": "customer service system",
+    "steps": [
+      { "label": "Described", "title": "\"I want insurance support via WhatsApp\"", "description": "One sentence. No code. No technical spec." },
+      { "label": "AI Planned", "title": "4-phase plan generated in seconds", "description": "The user just needed to say \"Approved.\"" },
+      { "label": "Executed", "title": "3 agents + 1 workflow created automatically", "description": "AI executed and the user gave feedback in real time." },
+      { "label": "Running", "title": "Live WhatsApp support in 13 seconds", "description": "From sentence to working system: under 3 minutes." }
+    ]
+  },
+  "differentiators": {
+    "headline": "Why Catalisa?",
+    "items": [
+      { "vs": "vs n8n / Make", "title": "Native AI, not plugins", "description": "AI agents, sentiment analysis, OCR and text generation are native building blocks." },
+      { "vs": "vs Intercom / WATI", "title": "Composable blocks, not chatbot", "description": "150+ building blocks you freely combine to create custom automations." },
+      { "vs": "vs Zapier / Pipedream", "title": "Native WhatsApp + embedded AI", "description": "Direct WhatsApp connection, AI agents with real tools, integrated CRM." },
+      { "vs": "vs Internal dev", "title": "150+ blocks. Months of savings.", "description": "Ready-made, tested building blocks. Focus on your business, not infrastructure." }
+    ]
+  },
+  "bankingLego": {
+    "headline": "Banking as a LEGO",
+    "subtitle": "Modular non-core components to build complete financial products.",
+    "tagline": "Deploy in weeks. Fully functional.",
+    "highlights": [
+      "Modular and composable",
+      "Built-in compliance",
+      "White-label ready"
+    ]
+  },
+  "buildingBlocks": {
+    "headline": "23+ Building Blocks",
+    "subtitle": "Each block is an independent functional component, ready to compose your product.",
+    "categories": [
+      {
+        "name": "Credit",
+        "items": ["Simulation", "Contracting", "Portability", "Authorization", "Billing", "Pipeline"]
+      },
+      {
+        "name": "Compliance",
+        "items": ["KYC/KYB", "AML", "PLD/FT", "Document Analysis", "Background Check", "Scoring"]
+      },
+      {
+        "name": "Payments",
+        "items": ["PIX", "Boleto", "Wire Transfer", "Split", "Recurring"]
+      },
+      {
+        "name": "Digital Assets",
+        "items": ["Tokenization", "Custody", "Smart Contracts", "Marketplace"]
+      },
+      {
+        "name": "Core Banking",
+        "items": ["Digital Account", "Statement", "Card", "Insurance"]
+      }
+    ]
+  },
+  "bankingProducts": {
+    "headline": "Market-ready products",
+    "cards": [
+      {
+        "title": "Vehicle Financing",
+        "steps": ["Simulation", "Contracting", "Authorization", "Release"],
+        "claim": "Automation reduces operational costs by up to 30%"
+      },
+      {
+        "title": "Credit Portability",
+        "steps": ["Analysis", "Proposal", "Transfer", "Activation"],
+        "claim": "Process that took weeks now takes days"
+      }
+    ]
+  },
+  "architecture": {
+    "headline": "Architecture & Business Model",
+    "stack": ["UI/UX Layer", "API Gateway", "Orchestration", "Platform Core", "Infrastructure"],
+    "models": [
+      { "title": "On Demand", "description": "Pay for what you use. Ideal for startups." },
+      { "title": "Success Fee", "description": "Cost tied to results. Zero risk." },
+      { "title": "White Label", "description": "Your brand, our technology. 100% customized." }
+    ]
+  },
+  "trustSecurity": {
+    "headline": "Security & Trust",
+    "badges": [
+      { "label": "LGPD", "description": "Full compliance" },
+      { "label": "Meta Business", "description": "Official WhatsApp" },
+      { "label": "BACEN", "description": "Banking regulation" },
+      { "label": "E2E", "description": "End-to-end encryption" }
+    ],
+    "highlights": [
+      "Setup in 5 minutes",
+      "Data hosted in Brazil",
+      "Automatic 24/7 backups",
+      "Isolated multi-tenant"
+    ]
+  },
+  "cta": {
+    "headline": "Let's talk?",
+    "subtitle": "Schedule a demo and discover how Catalisa can transform your business.",
+    "whatsappButton": "Chat on WhatsApp",
+    "emailButton": "Send email",
+    "email": "contact@catalisa.io",
+    "demoLink": "See live demo"
+  }
+}

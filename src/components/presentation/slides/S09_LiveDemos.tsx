@@ -132,7 +132,6 @@ export function S09_LiveDemos() {
           <BrowserFrame url="panel.catalisa.app/ai-assistant" variant={mode === 'dark' ? 'dark' : 'light'}>
             <Box position="relative" w="full" pt="56.25%" bg="black">
               <video
-                ref={videoRef}
                 style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'contain' }}
                 autoPlay
                 muted

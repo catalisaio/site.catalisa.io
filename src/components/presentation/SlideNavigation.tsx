@@ -21,19 +21,23 @@ export function SlideNavigation({ currentSlide, totalSlides, progress, onNext, o
   const [isFullscreen, setIsFullscreen] = useState(!!document.fullscreenElement);
   const enLoaded = useRef(false);
 
-  const currentLang = i18n.language;
-  const isPt = currentLang === 'pt-BR';
+  const currentLang = i18n.language || 'pt-BR';
+  const isPt = currentLang.startsWith('pt');
 
   const toggleLanguage = useCallback(async () => {
     if (isPt) {
       // Lazy-load EN if not loaded yet
       if (!enLoaded.current) {
-        await loadEnUSNamespaces();
+        try {
+          await loadEnUSNamespaces();
+        } catch (e) {
+          console.warn('Failed to load en-US translations:', e);
+        }
         enLoaded.current = true;
       }
-      i18n.changeLanguage('en-US');
+      await i18n.changeLanguage('en-US');
     } else {
-      i18n.changeLanguage('pt-BR');
+      await i18n.changeLanguage('pt-BR');
     }
   }, [i18n, isPt]);
 

@@ -18,7 +18,7 @@ function getInitialMode(): PresentationMode {
     const stored = localStorage.getItem(STORAGE_KEY);
     if (stored === 'light' || stored === 'dark') return stored;
   } catch { /* SSR / privacy mode */ }
-  return 'dark';
+  return 'light';
 }
 
 export function PresentationThemeProvider({ children }: { children: ReactNode }) {

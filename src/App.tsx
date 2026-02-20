@@ -1,66 +1,56 @@
-import React, { useState, useEffect } from 'react';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import HeroSection from './components/home/HeroSection';
-import PodcastHeroSection from './components/home/PodcastHeroSection';
-import PlatformOverview from './components/home/PlatformOverview';
-import PaasSection from './components/home/PaasSection';
-import FeaturesSection from './components/home/FeaturesSection';
-import CTASection from './components/home/CTASection';
-import ContactSection from './components/home/ContactSection';
-import FlowContactSection from './components/home/FlowContactSection';
-import FlowContactForm from './components/home/FlowContactForm';
-import FlowHero from './components/home/FlowHero';
-import PaasExplanationFAQ from './components/paas-explanation/PaasExplanationFAQ';
+import { lazy, Suspense } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { ChakraProvider, Spinner, Flex } from '@chakra-ui/react';
+import { theme } from './theme';
+import { PageLayout } from './components/layout/PageLayout';
+
+const Home = lazy(() => import('./pages/Home').then(m => ({ default: m.Home })));
+const Studio = lazy(() => import('./pages/Studio').then(m => ({ default: m.Studio })));
+const AIAgents = lazy(() => import('./pages/AIAgents').then(m => ({ default: m.AIAgents })));
+const BuildingBlocks = lazy(() => import('./pages/BuildingBlocks').then(m => ({ default: m.BuildingBlocks })));
+const Workflows = lazy(() => import('./pages/Workflows').then(m => ({ default: m.Workflows })));
+const Fintech = lazy(() => import('./pages/Fintech').then(m => ({ default: m.Fintech })));
+const Banking = lazy(() => import('./pages/Banking').then(m => ({ default: m.Banking })));
+const Insurance = lazy(() => import('./pages/Insurance').then(m => ({ default: m.Insurance })));
+const Retail = lazy(() => import('./pages/Retail').then(m => ({ default: m.Retail })));
+const Startups = lazy(() => import('./pages/Startups').then(m => ({ default: m.Startups })));
+const UseCases = lazy(() => import('./pages/UseCases').then(m => ({ default: m.UseCases })));
+const Contact = lazy(() => import('./pages/Contact').then(m => ({ default: m.Contact })));
+const Demo = lazy(() => import('./pages/Demo').then(m => ({ default: m.Demo })));
+
+function PageLoader() {
+  return (
+    <Flex justify="center" align="center" minH="60vh">
+      <Spinner size="lg" color="brand.500" />
+    </Flex>
+  );
+}
 
 function App() {
-  // State to track if we're in mobile view
-  const [isMobile, setIsMobile] = useState<boolean>(false);
-
-  // Check for mobile view on mount and when window resizes
-  useEffect(() => {
-    const checkForMobile = () => {
-      setIsMobile(window.innerWidth < 768); // Standard MD breakpoint in Tailwind
-    };
-    
-    // Check initially
-    checkForMobile();
-    
-    // Set up event listener
-    window.addEventListener('resize', checkForMobile);
-    
-    // Clean up
-    return () => {
-      window.removeEventListener('resize', checkForMobile);
-    };
-  }, []);
-
   return (
-    <div className="min-h-screen bg-primary-ultraLight text-gray-800 font-sans">
-      <Header />
-      
-      {/* Mobile podcast section - only visible on small screens */}
-      <div className={isMobile ? 'block' : 'hidden'}>
-        <PodcastHeroSection isRibbonVisible={false} />
-      </div>
-      
-      <HeroSection />
-
-      {/* Desktop podcast section - only visible on larger screens */}
-      <div className={isMobile ? 'hidden' : 'block'}>
-        <PodcastHeroSection isRibbonVisible={true} />
-      </div>
-
-      <FlowHero />
-      <PlatformOverview />
-      <PaasSection />
-      <FeaturesSection />
-      <CTASection />
-      <FlowContactForm />
-      <PaasExplanationFAQ />
-      <ContactSection />
-      <Footer />
-    </div>
+    <ChakraProvider theme={theme}>
+      <BrowserRouter>
+        <PageLayout>
+          <Suspense fallback={<PageLoader />}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/studio" element={<Studio />} />
+              <Route path="/ai-agents" element={<AIAgents />} />
+              <Route path="/building-blocks" element={<BuildingBlocks />} />
+              <Route path="/workflows" element={<Workflows />} />
+              <Route path="/fintech" element={<Fintech />} />
+              <Route path="/bancario" element={<Banking />} />
+              <Route path="/seguros" element={<Insurance />} />
+              <Route path="/varejo" element={<Retail />} />
+              <Route path="/startups" element={<Startups />} />
+              <Route path="/use-cases" element={<UseCases />} />
+              <Route path="/contato" element={<Contact />} />
+              <Route path="/demo" element={<Demo />} />
+            </Routes>
+          </Suspense>
+        </PageLayout>
+      </BrowserRouter>
+    </ChakraProvider>
   );
 }
 

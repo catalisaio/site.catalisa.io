@@ -1,0 +1,146 @@
+import type { WorkflowPreviewData } from '../components/workflow-preview/types';
+
+export const workflowPreviews: WorkflowPreviewData[] = [
+  // 1. Boas-vindas ao Lead — SIMPLES (4 nodes, linear)
+  {
+    id: 'welcome',
+    title: 'Boas-vindas ao Lead',
+    subtitle: 'Primeiro contato automatizado',
+    description: 'Quando um lead chega, a IA gera uma mensagem personalizada e envia pelo WhatsApp, registrando tudo no CRM.',
+    badge: 'SIMPLES',
+    badgeColor: 'green',
+    nodes: [
+      { id: 'trigger', label: 'Lead criado', category: 'Trigger', x: 50, y: 10 },
+      { id: 'ai', label: 'Gera mensagem', category: 'IA', x: 50, y: 33 },
+      { id: 'wpp', label: 'Envia WhatsApp', category: 'WhatsApp', x: 50, y: 59 },
+      { id: 'crm', label: 'Atualiza CRM', category: 'CRM', x: 50, y: 86 },
+    ],
+    edges: [
+      { from: 'trigger', to: 'ai' },
+      { from: 'ai', to: 'wpp' },
+      { from: 'wpp', to: 'crm' },
+    ],
+    executionOrder: ['trigger', 'ai', 'wpp', 'crm'],
+  },
+
+  // 2. Triagem com IA — MEDIO (6 nodes, branch)
+  {
+    id: 'triage',
+    title: 'Triagem com IA',
+    subtitle: 'Qualificacao inteligente de leads',
+    description: 'Mensagem recebida e analisada pela IA, que decide se encaminha para agente autonomo ou atendente humano.',
+    badge: 'MEDIO',
+    badgeColor: 'blue',
+    nodes: [
+      { id: 'trigger', label: 'Mensagem recebida', category: 'Trigger', x: 50, y: 10 },
+      { id: 'ai', label: 'Analisa intent', category: 'IA', x: 50, y: 26 },
+      { id: 'cond', label: 'Complexo?', category: 'Logica', x: 50, y: 42 },
+      { id: 'agent', label: 'Agente IA', category: 'IA', x: 25, y: 62 },
+      { id: 'human', label: 'Atendente', category: 'WhatsApp', x: 75, y: 62 },
+      { id: 'crm', label: 'Registra no CRM', category: 'CRM', x: 50, y: 85 },
+    ],
+    edges: [
+      { from: 'trigger', to: 'ai' },
+      { from: 'ai', to: 'cond' },
+      { from: 'cond', to: 'agent', label: 'Nao' },
+      { from: 'cond', to: 'human', label: 'Sim' },
+      { from: 'agent', to: 'crm' },
+      { from: 'human', to: 'crm' },
+    ],
+    executionOrder: ['trigger', 'ai', 'cond', ['agent', 'human'], 'crm'],
+  },
+
+  // 3. Nutricao de Lead — MEDIO (7 nodes, sequential with delay)
+  {
+    id: 'nurture',
+    title: 'Nutricao de Lead',
+    subtitle: 'Follow-up automatizado com delays',
+    description: 'Qualifica o lead, espera o momento certo e envia conteudo personalizado pela IA para avancar no funil.',
+    badge: 'MEDIO',
+    badgeColor: 'orange',
+    nodes: [
+      { id: 'trigger', label: 'Lead criado', category: 'Trigger', x: 50, y: 8 },
+      { id: 'classify', label: 'Classifica perfil', category: 'IA', x: 50, y: 22 },
+      { id: 'segment', label: 'Define segmento', category: 'Logica', x: 50, y: 35 },
+      { id: 'delay', label: 'Aguarda 24h', category: 'Logica', x: 50, y: 48 },
+      { id: 'content', label: 'Gera conteudo', category: 'IA', x: 50, y: 62 },
+      { id: 'send', label: 'Envia WhatsApp', category: 'WhatsApp', x: 50, y: 77 },
+      { id: 'update', label: 'Atualiza CRM', category: 'CRM', x: 50, y: 90 },
+    ],
+    edges: [
+      { from: 'trigger', to: 'classify' },
+      { from: 'classify', to: 'segment' },
+      { from: 'segment', to: 'delay' },
+      { from: 'delay', to: 'content' },
+      { from: 'content', to: 'send' },
+      { from: 'send', to: 'update' },
+    ],
+    executionOrder: ['trigger', 'classify', 'segment', 'delay', 'content', 'send', 'update'],
+  },
+
+  // 4. Originacao de Credito — COMPLEXO (9 nodes, parallel + conditional)
+  {
+    id: 'credit',
+    title: 'Originacao de Credito',
+    subtitle: 'Do contato a decisao automatica',
+    description: 'Coleta dados em paralelo, roda motor de decisao com regras configuradas e notifica resultado pelo WhatsApp.',
+    badge: 'COMPLEXO',
+    badgeColor: 'red',
+    nodes: [
+      { id: 'trigger', label: 'Mensagem recebida', category: 'Trigger', x: 50, y: 8 },
+      { id: 'ai', label: 'Coleta dados', category: 'IA', x: 50, y: 20 },
+      { id: 'docs', label: 'Analisa docs', category: 'Dados', x: 25, y: 33 },
+      { id: 'finance', label: 'Simula parcelas', category: 'Financeiro', x: 75, y: 33 },
+      { id: 'engine', label: 'Motor de decisao', category: 'Financeiro', x: 50, y: 47 },
+      { id: 'cond', label: 'Aprovado?', category: 'Logica', x: 50, y: 60 },
+      { id: 'approved', label: 'Envia proposta', category: 'WhatsApp', x: 25, y: 76 },
+      { id: 'rejected', label: 'Notifica recusa', category: 'WhatsApp', x: 75, y: 76 },
+      { id: 'crm', label: 'Atualiza CRM', category: 'CRM', x: 50, y: 90 },
+    ],
+    edges: [
+      { from: 'trigger', to: 'ai' },
+      { from: 'ai', to: 'docs' },
+      { from: 'ai', to: 'finance' },
+      { from: 'docs', to: 'engine' },
+      { from: 'finance', to: 'engine' },
+      { from: 'engine', to: 'cond' },
+      { from: 'cond', to: 'approved', label: 'Sim' },
+      { from: 'cond', to: 'rejected', label: 'Nao' },
+      { from: 'approved', to: 'crm' },
+      { from: 'rejected', to: 'crm' },
+    ],
+    executionOrder: ['trigger', 'ai', ['docs', 'finance'], 'engine', 'cond', ['approved', 'rejected'], 'crm'],
+  },
+
+  // 5. Hub Fan-out/Fan-in — COMPLEXO (8 nodes, parallel fan-out then consolidate)
+  {
+    id: 'fanout',
+    title: 'Hub Fan-out/Fan-in',
+    subtitle: 'Integracao paralela com consolidacao',
+    description: 'Busca dados do CRM, dispara 3 APIs em paralelo, consolida resultados e notifica pelo WhatsApp.',
+    badge: 'COMPLEXO',
+    badgeColor: 'red',
+    nodes: [
+      { id: 'trigger', label: 'Webhook recebido', category: 'Trigger', x: 50, y: 8 },
+      { id: 'crm', label: 'Busca lead', category: 'CRM', x: 50, y: 22 },
+      { id: 'api1', label: 'API Bureau', category: 'Integracao', x: 15, y: 40 },
+      { id: 'api2', label: 'API Scoring', category: 'Integracao', x: 50, y: 40 },
+      { id: 'api3', label: 'API Compliance', category: 'Integracao', x: 85, y: 40 },
+      { id: 'consolidate', label: 'Consolida dados', category: 'Dados', x: 50, y: 58 },
+      { id: 'ai', label: 'IA analisa', category: 'IA', x: 50, y: 75 },
+      { id: 'notify', label: 'Notifica WhatsApp', category: 'WhatsApp', x: 50, y: 90 },
+    ],
+    edges: [
+      { from: 'trigger', to: 'crm' },
+      { from: 'crm', to: 'api1' },
+      { from: 'crm', to: 'api2' },
+      { from: 'crm', to: 'api3' },
+      { from: 'api1', to: 'consolidate' },
+      { from: 'api2', to: 'consolidate' },
+      { from: 'api3', to: 'consolidate' },
+      { from: 'consolidate', to: 'ai' },
+      { from: 'ai', to: 'notify' },
+    ],
+    executionOrder: ['trigger', 'crm', ['api1', 'api2', 'api3'], 'consolidate', 'ai', 'notify'],
+  },
+];

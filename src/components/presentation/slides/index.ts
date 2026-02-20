@@ -14,6 +14,7 @@ import { S13_Architecture } from './S13_Architecture';
 import { S14_BusinessModel } from './S14_BusinessModel';
 import { S15_TrustSecurity } from './S15_TrustSecurity';
 import { S16_CTA } from './S16_CTA';
+import { S17_EasterEgg } from './S17_EasterEgg';
 
 export const slides = [
   S01_Cover,
@@ -32,4 +33,5 @@ export const slides = [
   S14_BusinessModel,
   S15_TrustSecurity,
   S16_CTA,
+  S17_EasterEgg,
 ];

@@ -26,7 +26,6 @@ import {
   AccordionIcon,
   Icon,
 } from '@chakra-ui/react';
-import { AnimatePresence, motion } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
 import {
   FiMenu,
@@ -96,36 +95,20 @@ function MegaMenuItemLink({
       as={Link}
       to={item.path}
       gap={3}
-      p={2.5}
-      borderRadius="lg"
-      _hover={{
-        bg: 'brand.50',
-        transform: 'translateX(4px)',
-      }}
-      transition="all 0.2s"
+      p={2}
+      borderRadius="md"
+      _hover={{ bg: 'brand.50' }}
       align="flex-start"
       onClick={onClose}
       role="group"
     >
-      <Flex
-        align="center"
-        justify="center"
-        w="36px"
-        h="36px"
-        minW="36px"
-        borderRadius="lg"
-        bg="brand.50"
-        _groupHover={{ bg: 'brand.500' }}
-        transition="all 0.2s"
-      >
-        <Icon
-          as={item.icon}
-          boxSize={4}
-          color="brand.500"
-          _groupHover={{ color: 'white' }}
-          transition="all 0.2s"
-        />
-      </Flex>
+      <Icon
+        as={item.icon}
+        boxSize={5}
+        mt="2px"
+        color="brand.500"
+        _groupHover={{ color: 'brand.600' }}
+      />
       <Box>
         <Text fontSize="sm" fontWeight="600" color="gray.800" _groupHover={{ color: 'brand.600' }}>
           {t(item.labelKey)}
@@ -193,28 +176,16 @@ function MegaMenuPopover({
         minW="600px"
         maxW="720px"
         border="1px solid"
-        borderColor="rgba(115, 75, 156, 0.12)"
-        boxShadow="0 25px 60px -12px rgba(0,0,0,0.12), 0 0 40px -10px rgba(115,75,156,0.1)"
-        borderRadius="2xl"
-        bg="rgba(255, 255, 255, 0.92)"
-        backdropFilter="blur(20px)"
+        borderColor="gray.100"
+        boxShadow="xl"
+        borderRadius="xl"
+        bg="white"
         p={0}
         onMouseEnter={handleEnter}
         onMouseLeave={handleLeave}
         _focus={{ outline: 'none' }}
       >
-        <AnimatePresence>
-          {isOpen && (
-            <motion.div
-              initial={{ opacity: 0, y: -8, scale: 0.98 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              exit={{ opacity: 0, y: -8, scale: 0.98 }}
-              transition={{ duration: 0.2, ease: 'easeOut' }}
-            >
-              <PopoverBody p={5}>{children(onClose)}</PopoverBody>
-            </motion.div>
-          )}
-        </AnimatePresence>
+        <PopoverBody p={5}>{children(onClose)}</PopoverBody>
       </PopoverContent>
     </Popover>
   );
@@ -337,23 +308,15 @@ export function Header() {
             >
               {(closeMega) => (
                 <SimpleGrid columns={3} spacing={4}>
-                  {platformColumns.map((col, idx) => (
-                    <Box
-                      key={col.titleKey}
-                      borderRight={idx < platformColumns.length - 1 ? '1px solid' : 'none'}
-                      borderColor="gray.100"
-                      pr={idx < platformColumns.length - 1 ? 4 : 0}
-                    >
+                  {platformColumns.map((col) => (
+                    <Box key={col.titleKey}>
                       <Text
                         fontSize="xs"
                         fontWeight="700"
-                        color="brand.600"
+                        color="gray.400"
                         textTransform="uppercase"
                         letterSpacing="wider"
-                        pb={2}
                         mb={3}
-                        borderBottom="1px solid"
-                        borderColor="gray.100"
                       >
                         {t(col.titleKey)}
                       </Text>
@@ -381,23 +344,15 @@ export function Header() {
             >
               {(closeMega) => (
                 <SimpleGrid columns={3} spacing={4}>
-                  {solutionsColumns.map((col, idx) => (
-                    <Box
-                      key={col.titleKey}
-                      borderRight={idx < solutionsColumns.length - 1 ? '1px solid' : 'none'}
-                      borderColor="gray.100"
-                      pr={idx < solutionsColumns.length - 1 ? 4 : 0}
-                    >
+                  {solutionsColumns.map((col) => (
+                    <Box key={col.titleKey}>
                       <Text
                         fontSize="xs"
                         fontWeight="700"
-                        color="brand.300"
+                        color="gray.400"
                         textTransform="uppercase"
                         letterSpacing="wider"
-                        pb={2}
                         mb={3}
-                        borderBottom="1px solid"
-                        borderColor="whiteAlpha.100"
                       >
                         {t(col.titleKey)}
                       </Text>
@@ -431,41 +386,22 @@ export function Header() {
                       as={Link}
                       to={item.path}
                       gap={3}
-                      p={3.5}
-                      borderRadius="xl"
+                      p={3}
+                      borderRadius="lg"
                       border="1px solid"
-                      borderColor="brand.100"
-                      bg="white"
-                      _hover={{
-                        borderColor: 'brand.300',
-                        bg: 'brand.50',
-                        boxShadow: '0 0 20px -5px rgba(115,75,156,0.2)',
-                        transform: 'translateY(-2px)',
-                      }}
-                      transition="all 0.25s"
+                      borderColor="gray.100"
+                      _hover={{ borderColor: 'brand.200', bg: 'brand.50' }}
                       align="flex-start"
                       onClick={closeMega}
                       role="group"
                     >
-                      <Flex
-                        align="center"
-                        justify="center"
-                        w="36px"
-                        h="36px"
-                        minW="36px"
-                        borderRadius="lg"
-                        bg="brand.50"
-                        _groupHover={{ bg: 'brand.500' }}
-                        transition="all 0.2s"
-                      >
-                        <Icon
-                          as={item.icon}
-                          boxSize={4}
-                          color="brand.500"
-                          _groupHover={{ color: 'white' }}
-                          transition="all 0.2s"
-                        />
-                      </Flex>
+                      <Icon
+                        as={item.icon}
+                        boxSize={5}
+                        mt="2px"
+                        color="brand.500"
+                        _groupHover={{ color: 'brand.600' }}
+                      />
                       <Box>
                         <Text
                           fontSize="sm"

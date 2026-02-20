@@ -22,12 +22,14 @@ import dataUsecasesPtBR from './locales/pt-BR/data-usecases.json';
 import dataCapabilitiesPtBR from './locales/pt-BR/data-capabilities.json';
 import dataStatsPtBR from './locales/pt-BR/data-stats.json';
 import dataWorkflowsPtBR from './locales/pt-BR/data-workflows.json';
+import presentationPtBR from './locales/pt-BR/presentation.json';
 
 export const allNamespaces = [
   'common', 'home', 'studio', 'ai-agents', 'building-blocks', 'workflows',
   'fintech', 'banking', 'insurance', 'retail', 'startups', 'use-cases',
   'contact', 'demo', 'privacy',
   'data-actions', 'data-usecases', 'data-capabilities', 'data-stats', 'data-workflows',
+  'presentation',
 ] as const;
 
 export type Namespace = (typeof allNamespaces)[number];
@@ -67,6 +69,7 @@ i18n.use(initReactI18next).init({
       'data-capabilities': dataCapabilitiesPtBR,
       'data-stats': dataStatsPtBR,
       'data-workflows': dataWorkflowsPtBR,
+      presentation: presentationPtBR,
     },
   },
   lng: 'pt-BR',

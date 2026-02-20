@@ -1,10 +1,9 @@
-import { useState, useCallback, useEffect, useRef } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { Box, Flex, IconButton, Text, Button } from '@chakra-ui/react';
 import { FiChevronLeft, FiChevronRight, FiX, FiSun, FiMoon, FiMaximize, FiMinimize } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
 import { usePresentationTheme } from './PresentationThemeContext';
 import { presentationThemes } from './presentationTheme';
-import { loadEnUSNamespaces } from '../../i18n';
 
 interface SlideNavigationProps {
   currentSlide: number;
@@ -19,26 +18,11 @@ export function SlideNavigation({ currentSlide, totalSlides, progress, onNext, o
   const { mode, toggleMode } = usePresentationTheme();
   const { i18n } = useTranslation();
   const [isFullscreen, setIsFullscreen] = useState(!!document.fullscreenElement);
-  const enLoaded = useRef(false);
 
-  const currentLang = i18n.language || 'pt-BR';
-  const isPt = currentLang.startsWith('pt');
+  const isPt = (i18n.language || 'pt-BR').startsWith('pt');
 
-  const toggleLanguage = useCallback(async () => {
-    if (isPt) {
-      // Lazy-load EN if not loaded yet
-      if (!enLoaded.current) {
-        try {
-          await loadEnUSNamespaces();
-        } catch (e) {
-          console.warn('Failed to load en-US translations:', e);
-        }
-        enLoaded.current = true;
-      }
-      await i18n.changeLanguage('en-US');
-    } else {
-      await i18n.changeLanguage('pt-BR');
-    }
+  const toggleLanguage = useCallback(() => {
+    i18n.changeLanguage(isPt ? 'en-US' : 'pt-BR');
   }, [i18n, isPt]);
 
   const toggleFullscreen = useCallback(() => {

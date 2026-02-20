@@ -1,0 +1,87 @@
+{
+  "hero": {
+    "badge": "CATALISA STUDIO",
+    "heading": "Da ideia a producao.",
+    "headingGradient": "Sem codigo.",
+    "subtitle": "Descreva o que precisa em linguagem natural. A IA entende, especifica e constroi — workflows, triggers, acoes, tudo.",
+    "stats": [
+      { "label": "Zero codigo" },
+      { "label": "Minutos, nao meses" },
+      { "label": "Spec-driven" }
+    ]
+  },
+  "beforeAfter": {
+    "heading": "Antes vs",
+    "headingHighlight": "Com Studio",
+    "subtitle": "Chega de semanas perdidas. Com Studio, voce descreve e a IA entrega.",
+    "beforeLabel": "Antes",
+    "afterLabel": "Com Studio",
+    "before": [
+      "Briefing confuso que ninguem entende",
+      "Semanas esperando a equipe de TI",
+      "Resultado diferente do que foi pedido",
+      "Voltar ao inicio toda vez que algo muda",
+      "Depender de dev pra qualquer ajuste"
+    ],
+    "after": [
+      "Descreva em linguagem natural",
+      "Pronto em minutos, nao semanas",
+      "Especificacao validada antes de executar",
+      "IA refina antes de construir",
+      "Voce ajusta com um clique"
+    ]
+  },
+  "canvas": {
+    "badge": "CANVAS VISUAL",
+    "heading": "O resultado?",
+    "headingHighlight": "Workflows visuais prontos para producao.",
+    "subtitle": "O Builder gera workflows completos no canvas visual. Drag & drop, execucao paralela, 150+ building blocks.",
+    "features": [
+      "Canvas drag & drop intuitivo",
+      "Execucao paralela automatica (DAG)",
+      "150+ building blocks composiveis"
+    ]
+  },
+  "dashboard": {
+    "badge": "PLATAFORMA COMPLETA",
+    "heading": "Tudo num so lugar.",
+    "headingGradient": "Dashboard, CRM e automacao.",
+    "subtitle": "Leads, metricas, mensagens e workflows — tudo integrado num painel unico. Sem alternar entre ferramentas.",
+    "stats": [
+      { "value": "98%", "label": "Uptime garantido" },
+      { "value": "150+", "label": "Building blocks" },
+      { "value": "<3min", "label": "Setup completo" }
+    ]
+  },
+  "templates": {
+    "badge": "TEMPLATES",
+    "heading": "Comece com um template pronto",
+    "subtitle": "Escolha um caso de uso e o Builder monta tudo pra voce. Personalize depois se quiser.",
+    "items": [
+      { "title": "Boas-vindas WhatsApp", "description": "Enviar mensagem personalizada para novos leads automaticamente." },
+      { "title": "Qualificacao IA", "description": "Qualificar leads automaticamente com agente inteligente." },
+      { "title": "Notificacao", "description": "Notificar equipe quando um lead e atualizado." },
+      { "title": "Auto-criar Lead", "description": "Criar lead automaticamente ao receber mensagem no WhatsApp." },
+      { "title": "Reengajar Inativos", "description": "Enviar mensagem para leads sem interacao ha dias." },
+      { "title": "Relatorio Semanal", "description": "Gerar e enviar metricas de desempenho automaticamente." }
+    ]
+  },
+  "whyStudio": {
+    "heading": "Por que Studio?",
+    "subtitle": "Tres diferenciais que mudam a forma como voce cria automacoes.",
+    "items": [
+      {
+        "title": "Especificacao antes da execucao",
+        "description": "A IA nao sai fazendo. Ela gera requisitos, design e tarefas pra voce validar ANTES de construir. Zero desperdicio."
+      },
+      {
+        "title": "Linguagem natural, resultado profissional",
+        "description": "Voce fala como fala. A IA traduz para uma especificacao tecnica completa. Sem intermediarios."
+      },
+      {
+        "title": "Do Builder ao Canvas, tudo conectado",
+        "description": "O que o Builder cria aparece no canvas visual pronto. Triggers, acoes, conexoes — tudo configurado."
+      }
+    ]
+  }
+}

@@ -1,9 +1,10 @@
 import { SimpleGrid, VStack, Text, Box } from '@chakra-ui/react';
-import { platformStats } from '../../data/stats';
+import { useTranslatedStats } from '../../i18n/useTranslatedData';
 import { AnimatedCounter } from '../shared/AnimatedCounter';
 import { SectionWrapper } from '../shared/SectionWrapper';
 
 export function StatsCounter() {
+  const { platformStats } = useTranslatedStats();
   return (
     <SectionWrapper bg="brand.500">
       <SimpleGrid columns={{ base: 2, md: 4 }} spacing={8}>

@@ -3,12 +3,15 @@ import {
   Box, Container, Heading, Text, VStack, HStack, Badge, Button, Flex,
 } from '@chakra-ui/react';
 import { FiArrowRight } from 'react-icons/fi';
+import { useTranslation } from 'react-i18next';
+import { useTranslatedWorkflows } from '../../i18n/useTranslatedData';
 import { MotionBox } from '../motion';
 import { WorkflowPreview } from '../workflow-preview/WorkflowPreview';
-import { workflowPreviews } from '../../data/workflowPreviews';
 import { categoryBadges } from '../../data/capabilityClusters';
 
 export function WorkflowShowcase() {
+  const { t } = useTranslation('workflows');
+  const workflowPreviews = useTranslatedWorkflows();
   const [selectedIdx, setSelectedIdx] = useState(0);
   const selected = workflowPreviews[selectedIdx];
 
@@ -17,13 +20,13 @@ export function WorkflowShowcase() {
       <Container maxW="1280px">
         <VStack spacing={4} textAlign="center" mb={12}>
           <Badge colorScheme="blue" fontSize="xs" px={3} py={1} borderRadius="full">
-            EXEMPLOS INTERATIVOS
+            {t('workflowShowcase.badge')}
           </Badge>
           <Heading as="h2" size="xl" fontWeight="800">
-            Veja workflows em acao
+            {t('workflowShowcase.heading')}
           </Heading>
           <Text color="gray.500" maxW="550px">
-            Clique em cada workflow para ver a animacao de execucao — dos mais simples aos complexos com execucao paralela.
+            {t('workflowShowcase.subtitle')}
           </Text>
         </VStack>
 
@@ -157,7 +160,7 @@ export function WorkflowShowcase() {
                           ))}
                           {stepIds.length > 1 && (
                             <Badge colorScheme="blue" fontSize="2xs" variant="outline">
-                              paralelo
+                              {t('workflowShowcase.parallel')}
                             </Badge>
                           )}
                         </HStack>

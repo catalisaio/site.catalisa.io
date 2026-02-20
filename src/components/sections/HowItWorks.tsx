@@ -1,41 +1,43 @@
 import { Heading, Text, VStack, Box, SimpleGrid, Icon, HStack } from '@chakra-ui/react';
 import { FiSmartphone, FiLayout, FiZap } from 'react-icons/fi';
+import { useTranslation } from 'react-i18next';
 import { SectionWrapper } from '../shared/SectionWrapper';
 import { MotionBox } from '../motion';
 
-const steps = [
-  {
-    icon: FiSmartphone,
-    number: '01',
-    title: 'Conecte seu WhatsApp',
-    description: 'QR Code para Baileys ou Cloud API da Meta. Setup em 2 minutos. Multi-device suportado.',
-    color: 'whatsapp.500',
-  },
-  {
-    icon: FiLayout,
-    number: '02',
-    title: 'Monte seu workflow visual',
-    description: 'Arraste building blocks no canvas. Conecte triggers a blocos. Configure cada um sem codigo.',
-    color: 'brand.500',
-  },
-  {
-    icon: FiZap,
-    number: '03',
-    title: 'Ative e escale',
-    description: 'IA assume a operacao. Voce monitora resultados. Escale de 1 para 1.000 conversas sem contratar.',
-    color: 'catalisa.accent',
-  },
-];
-
 export function HowItWorks() {
+  const { t } = useTranslation('home');
+
+  const steps = [
+    {
+      icon: FiSmartphone,
+      number: '01',
+      title: t('howItWorks.steps.0.title'),
+      description: t('howItWorks.steps.0.description'),
+      color: 'whatsapp.500',
+    },
+    {
+      icon: FiLayout,
+      number: '02',
+      title: t('howItWorks.steps.1.title'),
+      description: t('howItWorks.steps.1.description'),
+      color: 'brand.500',
+    },
+    {
+      icon: FiZap,
+      number: '03',
+      title: t('howItWorks.steps.2.title'),
+      description: t('howItWorks.steps.2.description'),
+      color: 'catalisa.accent',
+    },
+  ];
   return (
     <SectionWrapper id="how-it-works">
       <VStack spacing={4} textAlign="center" mb={12}>
         <Heading as="h2" size="xl" fontWeight="800">
-          Como funciona
+          {t('howItWorks.heading')}
         </Heading>
         <Text color="gray.500" maxW="500px" fontSize="lg">
-          Tres passos para automatizar seu WhatsApp com inteligencia artificial.
+          {t('howItWorks.subtitle')}
         </Text>
       </VStack>
 

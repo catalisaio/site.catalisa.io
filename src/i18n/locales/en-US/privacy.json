@@ -1,0 +1,89 @@
+{
+  "title": "Privacy Policy",
+  "lastUpdated": "Last updated: February 2026",
+  "intro": {
+    "title": "Introduction",
+    "text": "Catalisa (\"we\", \"our\" or \"Catalisa\") operates the WhatsApp automation platform with artificial intelligence. This Privacy Policy describes how we collect, use, store and protect your personal information."
+  },
+  "collection": {
+    "title": "Information We Collect",
+    "items": [
+      "Registration data: name, email, phone, company",
+      "Usage data: platform interactions, access logs",
+      "Communication data: messages processed by the platform",
+      "Technical data: IP address, browser, device"
+    ]
+  },
+  "use": {
+    "title": "How We Use Your Information",
+    "items": [
+      "Provide and improve our services",
+      "Process configured automations and workflows",
+      "Communicate updates and technical support",
+      "Comply with legal and regulatory obligations"
+    ]
+  },
+  "sharing": {
+    "title": "Data Sharing",
+    "text": "We do not sell your personal information. We share data only with:",
+    "items": [
+      "Infrastructure providers (cloud hosting in Brazil)",
+      "Meta/WhatsApp (for WhatsApp Business API operation)",
+      "AI providers (Anthropic, OpenAI) for natural language processing",
+      "Competent authorities when required by law"
+    ]
+  },
+  "security": {
+    "title": "Data Security",
+    "text": "We implement technical and organizational measures to protect your information:",
+    "items": [
+      "Encryption in transit (TLS) and at rest (AES-256)",
+      "Multi-tenant isolation with access control (RBAC)",
+      "Automatic sensitive data masking (PII)",
+      "Automatic backups and 24/7 monitoring",
+      "Infrastructure hosted in data centers in Brazil"
+    ]
+  },
+  "rights": {
+    "title": "Your Rights (LGPD)",
+    "text": "In accordance with the Brazilian General Data Protection Law (LGPD), you have the right to:",
+    "items": [
+      "Confirm the existence of data processing",
+      "Access your personal data",
+      "Correct incomplete or outdated data",
+      "Request anonymization or deletion of data",
+      "Revoke consent at any time",
+      "Request data portability"
+    ]
+  },
+  "whatsapp": {
+    "title": "WhatsApp and Meta",
+    "text": "Our platform uses the WhatsApp Business API. Processed messages are subject to WhatsApp/Meta's Terms of Service and Privacy Policy. We do not store message content beyond what is necessary for the operation of configured workflows."
+  },
+  "deletion": {
+    "title": "Data Deletion",
+    "text": "You can request deletion of your data at any time by contacting us. Data will be removed within 30 days, except when there is a legal obligation for retention."
+  },
+  "retention": {
+    "title": "Data Retention",
+    "text": "We retain your data for as long as necessary to provide our services or as required by law. Account data is retained while the account is active. Audit logs are kept for 12 months."
+  },
+  "children": {
+    "title": "Minors",
+    "text": "Our services are not intended for individuals under 18 years of age. We do not intentionally collect data from minors."
+  },
+  "changes": {
+    "title": "Changes to this Policy",
+    "text": "We may update this policy periodically. Significant changes will be communicated by email or platform notification."
+  },
+  "contact": {
+    "title": "Contact",
+    "text": "To exercise your rights or clarify questions about this policy:",
+    "email": "Email: contato@catalisa.io",
+    "whatsapp": "WhatsApp: +55 11 97730-3414"
+  },
+  "consent": {
+    "title": "Consent",
+    "text": "By using our platform, you consent to the collection and use of information as described in this Privacy Policy."
+  }
+}

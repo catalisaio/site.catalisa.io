@@ -1,4 +1,5 @@
 import { Box, Container, Text, HStack } from '@chakra-ui/react';
+import { useTranslation } from 'react-i18next';
 
 const partners = [
   'WhatsApp Business',
@@ -14,11 +15,13 @@ const partners = [
 ];
 
 export function LogoMarquee() {
+  const { t } = useTranslation('common');
+
   return (
     <Box bg="gray.50" py={6} overflow="hidden">
       <Container maxW="1280px" mb={4}>
         <Text textAlign="center" fontSize="xs" color="gray.400" textTransform="uppercase" letterSpacing="wider" fontWeight="600">
-          Tecnologias e integrações
+          {t('logoMarquee.title')}
         </Text>
       </Container>
       <Box overflow="hidden" position="relative">

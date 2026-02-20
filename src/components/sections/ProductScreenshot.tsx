@@ -1,7 +1,9 @@
 import { Box, Container, Heading, Text, VStack, Flex, Badge, Image } from '@chakra-ui/react';
+import { useTranslation } from 'react-i18next';
 import { MotionBox } from '../motion';
 
 export function ProductScreenshot() {
+  const { t } = useTranslation('workflows');
   return (
     <Box py={{ base: 16, lg: 20 }}>
       <Container maxW="1280px">
@@ -13,16 +15,14 @@ export function ProductScreenshot() {
           {/* Text */}
           <VStack align="flex-start" spacing={4} flex={1} maxW={{ lg: '360px' }}>
             <Badge colorScheme="green" fontSize="xs" px={3} py={1} borderRadius="full">
-              PRODUTO REAL
+              {t('screenshot.badge')}
             </Badge>
             <Heading as="h2" size="lg" fontWeight="800" lineHeight="1.2">
-              Isso nao e mockup.{' '}
-              <Text as="span" color="brand.500">E o editor real.</Text>
+              {t('screenshot.heading')}{' '}
+              <Text as="span" color="brand.500">{t('screenshot.headingHighlight')}</Text>
             </Heading>
             <Text color="gray.500" fontSize="sm" lineHeight="1.7">
-              O canvas visual do Catalisa com execucao paralela real —
-              arrastar blocos, conectar, executar. O workflow "Hub de Eventos Fan-out/Fan-in"
-              rodando em producao com 3 APIs em paralelo.
+              {t('screenshot.description')}
             </Text>
           </VStack>
 

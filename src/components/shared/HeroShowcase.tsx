@@ -1,7 +1,9 @@
+import { useMemo } from 'react';
 import { Box, Flex, HStack, Text } from '@chakra-ui/react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { FiMessageCircle, FiGitBranch, FiCpu, FiShield, FiTrendingUp, FiLayers } from 'react-icons/fi';
-import { WhatsAppChatPreview, insuranceMessages, pensionMessages } from './WhatsAppChatPreview';
+import { useTranslation } from 'react-i18next';
+import { WhatsAppChatPreview, useCreditMessages, useInsuranceMessages, usePensionMessages } from './WhatsAppChatPreview';
 import { WorkflowPreviewHero } from '../workflow-preview/WorkflowPreviewHero';
 import { AIAgentPreview } from './AIAgentPreview';
 import { StudioBuilderPreview } from './StudioBuilderPreview';
@@ -14,14 +16,38 @@ export interface HeroShowcaseTab {
   dwellTime: number;
 }
 
-export const heroTabs: HeroShowcaseTab[] = [
-  { id: 'studio', label: 'Studio', icon: FiLayers, color: 'brand.400', dwellTime: 7000 },
-  { id: 'credito', label: 'Credito', icon: FiMessageCircle, color: 'whatsapp.500', dwellTime: 8000 },
-  { id: 'workflows', label: 'Automacoes', icon: FiGitBranch, color: 'blue.500', dwellTime: 8000 },
-  { id: 'seguros', label: 'Seguros', icon: FiShield, color: 'orange.400', dwellTime: 8000 },
-  { id: 'agents', label: 'Agentes IA', icon: FiCpu, color: 'brand.500', dwellTime: 6000 },
-  { id: 'previdencia', label: 'Previdencia', icon: FiTrendingUp, color: 'cyan.400', dwellTime: 8000 },
-];
+const heroTabDefs = [
+  { id: 'studio', labelKey: 'heroShowcase.tabs.studio', icon: FiLayers, color: 'brand.400', dwellTime: 7000 },
+  { id: 'credito', labelKey: 'heroShowcase.tabs.credito', icon: FiMessageCircle, color: 'whatsapp.500', dwellTime: 8000 },
+  { id: 'workflows', labelKey: 'heroShowcase.tabs.workflows', icon: FiGitBranch, color: 'blue.500', dwellTime: 8000 },
+  { id: 'seguros', labelKey: 'heroShowcase.tabs.seguros', icon: FiShield, color: 'orange.400', dwellTime: 8000 },
+  { id: 'agents', labelKey: 'heroShowcase.tabs.agents', icon: FiCpu, color: 'brand.500', dwellTime: 6000 },
+  { id: 'previdencia', labelKey: 'heroShowcase.tabs.previdencia', icon: FiTrendingUp, color: 'cyan.400', dwellTime: 8000 },
+] as const;
+
+export function useHeroTabs(): HeroShowcaseTab[] {
+  const { t } = useTranslation('home');
+  return useMemo(
+    () =>
+      heroTabDefs.map((def) => ({
+        id: def.id,
+        label: t(def.labelKey),
+        icon: def.icon,
+        color: def.color,
+        dwellTime: def.dwellTime,
+      })),
+    [t],
+  );
+}
+
+/** @deprecated Use useHeroTabs() hook instead */
+export const heroTabs: HeroShowcaseTab[] = heroTabDefs.map((def) => ({
+  id: def.id,
+  label: def.id, // Fallback — callers should migrate to useHeroTabs()
+  icon: def.icon,
+  color: def.color,
+  dwellTime: def.dwellTime,
+}));
 
 interface HeroShowcaseProps {
   activeIndex: number;
@@ -36,26 +62,32 @@ const panelVariants = {
 };
 
 function PanelContent({ index }: { index: number }) {
+  const { t } = useTranslation('home');
+  const creditMessages = useCreditMessages();
+  const insuranceMessages = useInsuranceMessages();
+  const pensionMessages = usePensionMessages();
+
   switch (index) {
     case 0:
       return <StudioBuilderPreview />;
     case 1:
-      return <WhatsAppChatPreview triggerMode="auto" title="Agente IA - Credito" />;
+      return <WhatsAppChatPreview triggerMode="auto" title={t('chatPreview.creditTitle')} messages={creditMessages} />;
     case 2:
       return <WorkflowPreviewHero />;
     case 3:
-      return <WhatsAppChatPreview triggerMode="auto" title="Agente IA - Seguros" messages={insuranceMessages} />;
+      return <WhatsAppChatPreview triggerMode="auto" title={t('chatPreview.insuranceTitle')} messages={insuranceMessages} />;
     case 4:
       return <AIAgentPreview />;
     case 5:
-      return <WhatsAppChatPreview triggerMode="auto" title="Agente IA - Previdencia" messages={pensionMessages} />;
+      return <WhatsAppChatPreview triggerMode="auto" title={t('chatPreview.pensionTitle')} messages={pensionMessages} />;
     default:
       return null;
   }
 }
 
 export function HeroShowcase({ activeIndex, onTabChange, paused }: HeroShowcaseProps) {
-  const activeTab = heroTabs[activeIndex];
+  const tabs = useHeroTabs();
+  const activeTab = tabs[activeIndex];
 
   return (
     <Flex direction="column" gap={4} maxW="580px" w="full">
@@ -83,7 +115,7 @@ export function HeroShowcase({ activeIndex, onTabChange, paused }: HeroShowcaseP
 
       {/* Tab indicators */}
       <HStack spacing={1.5} justify="center" flexWrap="wrap">
-        {heroTabs.map((tab, i) => {
+        {tabs.map((tab, i) => {
           const isActive = i === activeIndex;
           const TabIcon = tab.icon;
           return (

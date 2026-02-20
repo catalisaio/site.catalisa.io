@@ -8,49 +8,50 @@ import {
   FiSearch, FiCalendar, FiGitBranch, FiSettings, FiSend, FiUserPlus,
   FiClipboard, FiBarChart2,
 } from 'react-icons/fi';
+import { useTranslation } from 'react-i18next';
 import { SectionWrapper } from '../components/shared/SectionWrapper';
 import { MotionBox } from '../components/motion';
 import { GradientText } from '../components/shared/GradientText';
 import { agentTemplates } from '../data/useCases';
 import { FinalCTA } from '../components/sections/FinalCTA';
 
-const comparisonItems = [
-  {
-    type: 'Chatbot',
-    description: 'Responde perguntas com base em FAQ',
-    capabilities: ['Respostas pre-definidas', 'Menu de opcoes', 'Encaminha para humano'],
-    color: 'gray',
-    level: 'Informacional',
-  },
-  {
-    type: 'AI Agent',
-    description: 'Executa tarefas com ferramentas reais',
-    capabilities: ['Qualifica leads', 'Agenda reunioes', 'Atualiza CRM', 'Processa documentos', 'Envia mensagens'],
-    color: 'brand',
-    level: 'Operacional',
-    highlight: true,
-  },
-  {
-    type: 'Time de Agents',
-    description: 'Cada agente e especialista em uma area',
-    capabilities: ['SDR qualifica', 'Suporte resolve', 'Cobranca negocia', 'Onboarding guia', 'Orquestracao via workflow'],
-    color: 'purple',
-    level: 'Orquestrado',
-  },
-];
-
-const aiCapabilities = [
-  { icon: FiSmile, label: 'Analise de Sentimento', description: 'Detecta emocao e urgencia' },
-  { icon: FiFileText, label: 'Sumarizacao', description: 'Resume conversas longas' },
-  { icon: FiDatabase, label: 'Classificacao', description: 'Categoriza automaticamente' },
-  { icon: FiEdit3, label: 'Geracao de Texto', description: 'Cria conteudo personalizado' },
-  { icon: FiGlobe, label: 'Traducao', description: 'Multi-idioma em tempo real' },
-  { icon: FiTool, label: 'Extracao de Dados', description: 'Estrutura texto livre' },
-  { icon: FiImage, label: 'Analise de Imagem', description: 'OCR e visao computacional' },
-  { icon: FiMic, label: 'Transcricao', description: 'Audio para texto' },
-];
-
 export function AIAgents() {
+  const { t } = useTranslation('ai-agents');
+  const comparisonItems = [
+    {
+      type: t('comparison.items.0.type'),
+      description: t('comparison.items.0.description'),
+      capabilities: t('comparison.items.0.capabilities', { returnObjects: true }) as string[],
+      color: 'gray',
+      level: t('comparison.items.0.level'),
+    },
+    {
+      type: t('comparison.items.1.type'),
+      description: t('comparison.items.1.description'),
+      capabilities: t('comparison.items.1.capabilities', { returnObjects: true }) as string[],
+      color: 'brand',
+      level: t('comparison.items.1.level'),
+      highlight: true,
+    },
+    {
+      type: t('comparison.items.2.type'),
+      description: t('comparison.items.2.description'),
+      capabilities: t('comparison.items.2.capabilities', { returnObjects: true }) as string[],
+      color: 'purple',
+      level: t('comparison.items.2.level'),
+    },
+  ];
+
+  const aiCapabilities = [
+    { icon: FiSmile, label: t('aiCapabilities.items.0.label'), description: t('aiCapabilities.items.0.description') },
+    { icon: FiFileText, label: t('aiCapabilities.items.1.label'), description: t('aiCapabilities.items.1.description') },
+    { icon: FiDatabase, label: t('aiCapabilities.items.2.label'), description: t('aiCapabilities.items.2.description') },
+    { icon: FiEdit3, label: t('aiCapabilities.items.3.label'), description: t('aiCapabilities.items.3.description') },
+    { icon: FiGlobe, label: t('aiCapabilities.items.4.label'), description: t('aiCapabilities.items.4.description') },
+    { icon: FiTool, label: t('aiCapabilities.items.5.label'), description: t('aiCapabilities.items.5.description') },
+    { icon: FiImage, label: t('aiCapabilities.items.6.label'), description: t('aiCapabilities.items.6.description') },
+    { icon: FiMic, label: t('aiCapabilities.items.7.label'), description: t('aiCapabilities.items.7.description') },
+  ];
   return (
     <>
       {/* Hero */}
@@ -58,14 +59,14 @@ export function AIAgents() {
         <Container maxW="1280px">
           <VStack spacing={6} textAlign="center" maxW="800px" mx="auto">
             <Badge colorScheme="purple" fontSize="xs" px={3} py={1} borderRadius="full">
-              AI AGENTS
+              {t('hero.badge')}
             </Badge>
             <Heading as="h1" size="2xl" fontWeight="800" color="white" lineHeight="1.15">
-              Crie especialistas de IA que trabalham{' '}
-              <GradientText gradient="linear(to-r, brand.300, whatsapp.400)">24/7 no WhatsApp</GradientText>
+              {t('hero.heading')}{' '}
+              <GradientText gradient="linear(to-r, brand.300, whatsapp.400)">{t('hero.headingGradient')}</GradientText>
             </Heading>
             <Text color="whiteAlpha.700" fontSize="lg" maxW="600px" lineHeight="1.7">
-              Nao e um chatbot. E uma equipe inteira. Cada agente tem personalidade, ferramentas e contexto proprios.
+              {t('hero.subtitle')}
             </Text>
           </VStack>
         </Container>
@@ -75,7 +76,7 @@ export function AIAgents() {
       <SectionWrapper>
         <VStack spacing={4} textAlign="center" mb={12}>
           <Heading as="h2" size="xl" fontWeight="800">
-            A diferenca: Assistant vs Agent vs <Text as="span" color="brand.500">Time</Text>
+            {t('comparison.heading')}{' '}<Text as="span" color="brand.500">{t('comparison.headingHighlight')}</Text>
           </Heading>
         </VStack>
 
@@ -110,7 +111,7 @@ export function AIAgents() {
                     borderRadius="full"
                     fontSize="xs"
                   >
-                    SEU PRODUTO
+                    {t('comparison.yourProduct')}
                   </Badge>
                 )}
                 <VStack align="flex-start" spacing={4}>
@@ -133,8 +134,8 @@ export function AIAgents() {
 
         <Box bg="brand.50" p={6} borderRadius="xl" mt={8} textAlign="center">
           <Text color="gray.700" fontSize="md" fontWeight="500">
-            <Text as="span" fontWeight="700" color="brand.600">Seu agente nao apenas informa.</Text>{' '}
-            Ele qualifica leads, agenda reunioes, processa documentos, atualiza o CRM, envia mensagens — tudo de forma autonoma.
+            <Text as="span" fontWeight="700" color="brand.600">{t('comparison.calloutBold')}</Text>{' '}
+            {t('comparison.calloutText')}
           </Text>
         </Box>
       </SectionWrapper>
@@ -143,16 +144,16 @@ export function AIAgents() {
       <SectionWrapper bg="gray.50">
         <VStack spacing={4} textAlign="center" mb={12}>
           <Heading as="h2" size="xl" fontWeight="800">
-            Como agentes funcionam
+            {t('howAgentsWork.heading')}
           </Heading>
         </VStack>
 
         <SimpleGrid columns={{ base: 1, sm: 2, lg: 4 }} spacing={6}>
           {[
-            { icon: FiEdit3, title: 'System Prompt', description: 'Voce define a personalidade, regras e objetivo do agente.', color: 'brand.500' },
-            { icon: FiTool, title: 'Ferramentas', description: 'Escolha quais ferramentas o agente pode usar (150+ built-in).', color: 'orange.500' },
-            { icon: FiMessageCircle, title: 'Conversas', description: 'Contexto persistente por lead. Memoria de todas as interacoes.', color: 'whatsapp.500' },
-            { icon: FiCpu, title: 'Workflows', description: 'Agentes embutidos em automacoes. Acionados por triggers.', color: 'blue.500' },
+            { icon: FiEdit3, title: t('howAgentsWork.items.0.title'), description: t('howAgentsWork.items.0.description'), color: 'brand.500' },
+            { icon: FiTool, title: t('howAgentsWork.items.1.title'), description: t('howAgentsWork.items.1.description'), color: 'orange.500' },
+            { icon: FiMessageCircle, title: t('howAgentsWork.items.2.title'), description: t('howAgentsWork.items.2.description'), color: 'whatsapp.500' },
+            { icon: FiCpu, title: t('howAgentsWork.items.3.title'), description: t('howAgentsWork.items.3.description'), color: 'blue.500' },
           ].map((item, i) => (
             <MotionBox
               key={item.title}
@@ -177,10 +178,10 @@ export function AIAgents() {
       <SectionWrapper>
         <VStack spacing={4} textAlign="center" mb={12}>
           <Heading as="h2" size="xl" fontWeight="800">
-            Marketplace de Templates
+            {t('marketplace.heading')}
           </Heading>
           <Text color="gray.500" maxW="500px">
-            Instale agentes pre-configurados com um clique. Prompts otimizados e ferramentas pre-selecionadas.
+            {t('marketplace.subtitle')}
           </Text>
         </VStack>
 
@@ -227,10 +228,10 @@ export function AIAgents() {
       <SectionWrapper bg="gray.50">
         <VStack spacing={4} textAlign="center" mb={12}>
           <Heading as="h2" size="xl" fontWeight="800">
-            Poderes de processamento IA
+            {t('aiCapabilities.heading')}
           </Heading>
           <Text color="gray.500" maxW="500px">
-            Cada capacidade e uma ferramenta que voce combina livremente.
+            {t('aiCapabilities.subtitle')}
           </Text>
         </VStack>
 
@@ -268,19 +269,19 @@ export function AIAgents() {
       <SectionWrapper>
         <VStack spacing={4} textAlign="center" mb={12}>
           <Heading as="h2" size="xl" fontWeight="800">
-            Exemplo real: Lead qualificado pelo WhatsApp
+            {t('realWorldExample.heading')}
           </Heading>
         </VStack>
 
         <Flex justify="center" overflow="auto" pb={4}>
           <HStack spacing={3} px={4}>
             {[
-              { action: 'Mensagem recebida', color: 'green.500', icon: FiMessageCircle },
-              { action: 'Transcreve audio', color: 'purple.500', icon: FiMic },
-              { action: 'Analisa sentimento', color: 'orange.500', icon: FiSmile },
-              { action: 'Agente SDR qualifica', color: 'brand.500', icon: FiCpu },
-              { action: 'Cria lead no CRM', color: 'blue.500', icon: FiUsers },
-              { action: 'Envia proposta', color: 'whatsapp.500', icon: FiMessageCircle },
+              { action: t('realWorldExample.steps.0'), color: 'green.500', icon: FiMessageCircle },
+              { action: t('realWorldExample.steps.1'), color: 'purple.500', icon: FiMic },
+              { action: t('realWorldExample.steps.2'), color: 'orange.500', icon: FiSmile },
+              { action: t('realWorldExample.steps.3'), color: 'brand.500', icon: FiCpu },
+              { action: t('realWorldExample.steps.4'), color: 'blue.500', icon: FiUsers },
+              { action: t('realWorldExample.steps.5'), color: 'whatsapp.500', icon: FiMessageCircle },
             ].map((step, i) => (
               <MotionBox
                 key={step.action}
@@ -314,30 +315,30 @@ export function AIAgents() {
       <SectionWrapper bg="gray.50">
         <VStack spacing={4} textAlign="center" mb={12}>
           <Badge colorScheme="purple" fontSize="xs" px={3} py={1} borderRadius="full">
-            FERRAMENTAS
+            {t('toolsGrid.badge')}
           </Badge>
           <Heading as="h2" size="xl" fontWeight="800">
-            21+ categorias de ferramentas para agentes
+            {t('toolsGrid.heading')}
           </Heading>
           <Text color="gray.500" maxW="600px">
-            Cada agente escolhe quais ferramentas pode usar. Aqui estao as categorias disponiveis.
+            {t('toolsGrid.subtitle')}
           </Text>
         </VStack>
 
         <SimpleGrid columns={{ base: 1, sm: 2, lg: 4 }} spacing={4}>
           {[
-            { icon: FiSearch, title: 'Buscar Leads', description: 'Pesquisa e filtra leads no CRM', color: 'orange.500' },
-            { icon: FiUserPlus, title: 'Gerenciar Leads', description: 'Cria, atualiza e qualifica leads', color: 'orange.500' },
-            { icon: FiMessageCircle, title: 'WhatsApp', description: 'Envia mensagens e midia', color: 'green.500' },
-            { icon: FiCalendar, title: 'Calendario', description: 'Agenda e consulta eventos', color: 'blue.500' },
-            { icon: FiGitBranch, title: 'Workflows', description: 'Dispara e consulta workflows', color: 'blue.500' },
-            { icon: FiCpu, title: 'Outros Agentes', description: 'Orquestra time de agentes', color: 'purple.500' },
-            { icon: FiSettings, title: 'Acoes Customizadas', description: 'Executa logica customizada', color: 'gray.500' },
-            { icon: FiSend, title: 'Notificacoes', description: 'Email e webhooks', color: 'cyan.500' },
-            { icon: FiClipboard, title: 'Captura', description: 'Links de captura de leads', color: 'pink.500' },
-            { icon: FiBarChart2, title: 'Metricas', description: 'Estatisticas e performance', color: 'teal.500' },
-            { icon: FiDatabase, title: 'Dados', description: 'Extracao e transformacao', color: 'teal.500' },
-            { icon: FiGlobe, title: 'APIs Externas', description: 'Integracao HTTP generica', color: 'cyan.500' },
+            { icon: FiSearch, title: t('toolsGrid.items.0.title'), description: t('toolsGrid.items.0.description'), color: 'orange.500' },
+            { icon: FiUserPlus, title: t('toolsGrid.items.1.title'), description: t('toolsGrid.items.1.description'), color: 'orange.500' },
+            { icon: FiMessageCircle, title: t('toolsGrid.items.2.title'), description: t('toolsGrid.items.2.description'), color: 'green.500' },
+            { icon: FiCalendar, title: t('toolsGrid.items.3.title'), description: t('toolsGrid.items.3.description'), color: 'blue.500' },
+            { icon: FiGitBranch, title: t('toolsGrid.items.4.title'), description: t('toolsGrid.items.4.description'), color: 'blue.500' },
+            { icon: FiCpu, title: t('toolsGrid.items.5.title'), description: t('toolsGrid.items.5.description'), color: 'purple.500' },
+            { icon: FiSettings, title: t('toolsGrid.items.6.title'), description: t('toolsGrid.items.6.description'), color: 'gray.500' },
+            { icon: FiSend, title: t('toolsGrid.items.7.title'), description: t('toolsGrid.items.7.description'), color: 'cyan.500' },
+            { icon: FiClipboard, title: t('toolsGrid.items.8.title'), description: t('toolsGrid.items.8.description'), color: 'pink.500' },
+            { icon: FiBarChart2, title: t('toolsGrid.items.9.title'), description: t('toolsGrid.items.9.description'), color: 'teal.500' },
+            { icon: FiDatabase, title: t('toolsGrid.items.10.title'), description: t('toolsGrid.items.10.description'), color: 'teal.500' },
+            { icon: FiGlobe, title: t('toolsGrid.items.11.title'), description: t('toolsGrid.items.11.description'), color: 'cyan.500' },
           ].map((category, i) => (
             <MotionBox
               key={category.title}

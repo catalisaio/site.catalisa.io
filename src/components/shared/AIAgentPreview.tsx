@@ -1,16 +1,17 @@
 import { Box, Flex, Text, VStack, HStack } from '@chakra-ui/react';
 import { FiCheck, FiCpu } from 'react-icons/fi';
+import { useTranslation } from 'react-i18next';
 import { MotionBox } from '../motion';
 
-const recentActions = [
-  { label: 'Lead qualificado — Maria Silva', delay: 0.3 },
-  { label: 'Proposta enviada — Joao Souza', delay: 0.8 },
-  { label: 'Follow-up agendado — Ana Costa', delay: 1.3 },
-  { label: 'Reuniao marcada — Pedro Lima', delay: 1.8 },
-  { label: 'Contrato gerado — Carla Nunes', delay: 2.3 },
-];
+interface AgentAction {
+  label: string;
+  delay: number;
+}
 
 export function AIAgentPreview() {
+  const { t } = useTranslation('home');
+  const actions = t('agentPreview.actions', { returnObjects: true }) as AgentAction[];
+
   return (
     <Box
       maxW="360px"
@@ -42,10 +43,10 @@ export function AIAgentPreview() {
           <Box as={FiCpu} color="white" boxSize="16px" />
         </Flex>
         <Box flex={1}>
-          <Text color="white" fontSize="sm" fontWeight="600">Agente de Vendas</Text>
+          <Text color="white" fontSize="sm" fontWeight="600">{t('agentPreview.title')}</Text>
           <HStack spacing={1.5}>
             <Box w={1.5} h={1.5} borderRadius="full" bg="whatsapp.400" />
-            <Text color="whatsapp.400" fontSize="xs">Online</Text>
+            <Text color="whatsapp.400" fontSize="xs">{t('agentPreview.online')}</Text>
           </HStack>
         </Box>
         <Box
@@ -54,16 +55,16 @@ export function AIAgentPreview() {
           py={0.5}
           borderRadius="full"
         >
-          <Text color="whiteAlpha.600" fontSize="2xs" fontWeight="600">AUTO</Text>
+          <Text color="whiteAlpha.600" fontSize="2xs" fontWeight="600">{t('agentPreview.autoBadge')}</Text>
         </Box>
       </Flex>
 
       {/* Recent actions */}
       <VStack spacing={0} align="stretch" px={4} py={3} minH="220px">
         <Text color="whiteAlpha.400" fontSize="2xs" fontWeight="600" textTransform="uppercase" letterSpacing="wider" mb={2}>
-          Acoes recentes
+          {t('agentPreview.recentActionsHeader')}
         </Text>
-        {recentActions.map((action, i) => (
+        {actions.map((action, i) => (
           <MotionBox
             key={i}
             initial={{ opacity: 0, x: -10 }}
@@ -120,7 +121,7 @@ export function AIAgentPreview() {
               ))}
             </HStack>
             <Text color="whiteAlpha.400" fontSize="xs" fontStyle="italic">
-              Respondendo cliente agora...
+              {t('agentPreview.typing')}
             </Text>
           </HStack>
         </MotionBox>
@@ -142,15 +143,15 @@ export function AIAgentPreview() {
         >
           <VStack spacing={0}>
             <Text color="white" fontSize="sm" fontWeight="700">47</Text>
-            <Text color="whiteAlpha.400" fontSize="2xs">atendimentos</Text>
+            <Text color="whiteAlpha.400" fontSize="2xs">{t('agentPreview.stats.conversations')}</Text>
           </VStack>
           <VStack spacing={0}>
             <Text color="whatsapp.400" fontSize="sm" fontWeight="700">94%</Text>
-            <Text color="whiteAlpha.400" fontSize="2xs">satisfacao</Text>
+            <Text color="whiteAlpha.400" fontSize="2xs">{t('agentPreview.stats.satisfaction')}</Text>
           </VStack>
           <VStack spacing={0}>
             <Text color="brand.300" fontSize="sm" fontWeight="700">12s</Text>
-            <Text color="whiteAlpha.400" fontSize="2xs">tempo medio</Text>
+            <Text color="whiteAlpha.400" fontSize="2xs">{t('agentPreview.stats.avgTime')}</Text>
           </VStack>
         </Flex>
       </MotionBox>

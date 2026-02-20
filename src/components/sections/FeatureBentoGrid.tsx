@@ -1,66 +1,68 @@
 import { Heading, Text, VStack, Box, Icon, SimpleGrid, GridItem } from '@chakra-ui/react';
 import { FiMessageCircle, FiCpu, FiGitBranch, FiBox, FiUsers, FiShield } from 'react-icons/fi';
+import { useTranslation } from 'react-i18next';
 import { SectionWrapper } from '../shared/SectionWrapper';
 import { MotionBox } from '../motion';
 
-const features = [
-  {
-    icon: FiMessageCircle,
-    title: 'WhatsApp Multi-Agente',
-    description: 'Conecte multiplos numeros. Baileys + Cloud API. Cada agente com seu contexto e historico.',
-    color: 'whatsapp.500',
-    bg: 'green.50',
-    span: 2,
-  },
-  {
-    icon: FiCpu,
-    title: 'Agentes de IA',
-    description: 'Crie agentes especializados com prompt customizado e ferramentas seletivas. Marketplace com 10+ templates.',
-    color: 'brand.500',
-    bg: 'brand.50',
-    span: 2,
-  },
-  {
-    icon: FiGitBranch,
-    title: 'Workflows Visuais',
-    description: 'Monte automacoes com drag & drop. DAG com execucao paralela. Teste A/B nativo.',
-    color: 'blue.500',
-    bg: 'blue.50',
-    span: 1,
-  },
-  {
-    icon: FiBox,
-    title: 'Building Blocks',
-    description: '150+ building blocks: IA, fintech, CRM, seguranca, integrações e mais. Combine como quiser.',
-    color: 'orange.500',
-    bg: 'orange.50',
-    span: 1,
-  },
-  {
-    icon: FiUsers,
-    title: 'CRM de Leads',
-    description: 'Pipeline completo com tipos customizados, kanban, campos dinamicos e historico de interacoes.',
-    color: 'cyan.500',
-    bg: 'cyan.50',
-    span: 1,
-  },
-  {
-    icon: FiShield,
-    title: 'Seguranca & LGPD',
-    description: 'Multi-tenant isolado. Mascaramento automatico de PII. Criptografia bancaria. RBAC.',
-    color: 'red.500',
-    bg: 'red.50',
-    span: 1,
-  },
-];
-
 export function FeatureBentoGrid() {
+  const { t } = useTranslation('home');
+
+  const features = [
+    {
+      icon: FiMessageCircle,
+      title: t('features.items.0.title'),
+      description: t('features.items.0.description'),
+      color: 'whatsapp.500',
+      bg: 'green.50',
+      span: 2,
+    },
+    {
+      icon: FiCpu,
+      title: t('features.items.1.title'),
+      description: t('features.items.1.description'),
+      color: 'brand.500',
+      bg: 'brand.50',
+      span: 2,
+    },
+    {
+      icon: FiGitBranch,
+      title: t('features.items.2.title'),
+      description: t('features.items.2.description'),
+      color: 'blue.500',
+      bg: 'blue.50',
+      span: 1,
+    },
+    {
+      icon: FiBox,
+      title: t('features.items.3.title'),
+      description: t('features.items.3.description'),
+      color: 'orange.500',
+      bg: 'orange.50',
+      span: 1,
+    },
+    {
+      icon: FiUsers,
+      title: t('features.items.4.title'),
+      description: t('features.items.4.description'),
+      color: 'cyan.500',
+      bg: 'cyan.50',
+      span: 1,
+    },
+    {
+      icon: FiShield,
+      title: t('features.items.5.title'),
+      description: t('features.items.5.description'),
+      color: 'red.500',
+      bg: 'red.50',
+      span: 1,
+    },
+  ];
   return (
     <SectionWrapper>
       <VStack spacing={4} textAlign="center" mb={12}>
         <Heading as="h2" size="xl" fontWeight="800">
-          Tudo que voce precisa.{' '}
-          <Text as="span" color="brand.500">Nada que nao precisa.</Text>
+          {t('features.heading')}{' '}
+          <Text as="span" color="brand.500">{t('features.headingHighlight')}</Text>
         </Heading>
       </VStack>
 

@@ -1,0 +1,87 @@
+{
+  "hero": {
+    "badge": "CATALISA STUDIO",
+    "heading": "From idea to production.",
+    "headingGradient": "No code.",
+    "subtitle": "Describe what you need in natural language. AI understands, specifies and builds — workflows, triggers, actions, everything.",
+    "stats": [
+      { "label": "Zero code" },
+      { "label": "Minutes, not months" },
+      { "label": "Spec-driven" }
+    ]
+  },
+  "beforeAfter": {
+    "heading": "Before vs",
+    "headingHighlight": "With Studio",
+    "subtitle": "No more lost weeks. With Studio, you describe and AI delivers.",
+    "beforeLabel": "Before",
+    "afterLabel": "With Studio",
+    "before": [
+      "Confusing briefs nobody understands",
+      "Weeks waiting for IT",
+      "Results different from what was requested",
+      "Starting over every time something changes",
+      "Depending on a dev for any adjustment"
+    ],
+    "after": [
+      "Describe in natural language",
+      "Ready in minutes, not weeks",
+      "Specification validated before execution",
+      "AI refines before building",
+      "You adjust with one click"
+    ]
+  },
+  "canvas": {
+    "badge": "VISUAL CANVAS",
+    "heading": "The result?",
+    "headingHighlight": "Production-ready visual workflows.",
+    "subtitle": "Builder generates complete workflows on the visual canvas. Drag & drop, parallel execution, 150+ building blocks.",
+    "features": [
+      "Intuitive drag & drop canvas",
+      "Automatic parallel execution (DAG)",
+      "150+ composable building blocks"
+    ]
+  },
+  "dashboard": {
+    "badge": "COMPLETE PLATFORM",
+    "heading": "All in one place.",
+    "headingGradient": "Dashboard, CRM and automation.",
+    "subtitle": "Leads, metrics, messages and workflows — all integrated in a single panel. No switching between tools.",
+    "stats": [
+      { "value": "98%", "label": "Guaranteed uptime" },
+      { "value": "150+", "label": "Building blocks" },
+      { "value": "<3min", "label": "Complete setup" }
+    ]
+  },
+  "templates": {
+    "badge": "TEMPLATES",
+    "heading": "Start with a ready template",
+    "subtitle": "Choose a use case and Builder sets up everything for you. Customize later if you want.",
+    "items": [
+      { "title": "WhatsApp Welcome", "description": "Automatically send personalized messages to new leads." },
+      { "title": "AI Qualification", "description": "Automatically qualify leads with an intelligent agent." },
+      { "title": "Notification", "description": "Notify your team when a lead is updated." },
+      { "title": "Auto-create Lead", "description": "Automatically create a lead when receiving a WhatsApp message." },
+      { "title": "Re-engage Inactive", "description": "Send messages to leads without interaction for days." },
+      { "title": "Weekly Report", "description": "Automatically generate and send performance metrics." }
+    ]
+  },
+  "whyStudio": {
+    "heading": "Why Studio?",
+    "subtitle": "Three differentiators that change how you create automations.",
+    "items": [
+      {
+        "title": "Specification before execution",
+        "description": "AI doesn't just start building. It generates requirements, design and tasks for you to validate BEFORE building. Zero waste."
+      },
+      {
+        "title": "Natural language, professional results",
+        "description": "You speak naturally. AI translates into a complete technical specification. No middlemen."
+      },
+      {
+        "title": "From Builder to Canvas, all connected",
+        "description": "What Builder creates appears on the visual canvas ready to go. Triggers, actions, connections — all configured."
+      }
+    ]
+  }
+}

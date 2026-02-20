@@ -1,53 +1,55 @@
 import { Heading, Text, VStack, Box, SimpleGrid, Icon, HStack } from '@chakra-ui/react';
 import { FiMessageCircle, FiGitBranch, FiCpu, FiBarChart2 } from 'react-icons/fi';
+import { useTranslation } from 'react-i18next';
 import { SectionWrapper } from '../shared/SectionWrapper';
 import { MotionBox } from '../motion';
 
-const steps = [
-  {
-    icon: FiMessageCircle,
-    label: 'Conectar',
-    title: 'WhatsApp',
-    description: 'Multi-tenant, multi-device. QR Code ou Cloud API.',
-    color: 'whatsapp.500',
-    bg: 'green.50',
-  },
-  {
-    icon: FiGitBranch,
-    label: 'Automatizar',
-    title: 'Workflows',
-    description: 'Drag & drop visual. 150+ building blocks composiveis.',
-    color: 'blue.500',
-    bg: 'blue.50',
-  },
-  {
-    icon: FiCpu,
-    label: 'Inteligência',
-    title: 'AI Agents',
-    description: 'Agentes especializados com ferramentas seletivas.',
-    color: 'brand.500',
-    bg: 'brand.50',
-  },
-  {
-    icon: FiBarChart2,
-    label: 'Resultado',
-    title: 'CRM & Analytics',
-    description: 'Pipeline de leads, métricas e histórico completo.',
-    color: 'orange.500',
-    bg: 'orange.50',
-  },
-];
-
 export function SolutionOverview() {
+  const { t } = useTranslation('home');
+
+  const steps = [
+    {
+      icon: FiMessageCircle,
+      label: t('solution.steps.0.label'),
+      title: t('solution.steps.0.title'),
+      description: t('solution.steps.0.description'),
+      color: 'whatsapp.500',
+      bg: 'green.50',
+    },
+    {
+      icon: FiGitBranch,
+      label: t('solution.steps.1.label'),
+      title: t('solution.steps.1.title'),
+      description: t('solution.steps.1.description'),
+      color: 'blue.500',
+      bg: 'blue.50',
+    },
+    {
+      icon: FiCpu,
+      label: t('solution.steps.2.label'),
+      title: t('solution.steps.2.title'),
+      description: t('solution.steps.2.description'),
+      color: 'brand.500',
+      bg: 'brand.50',
+    },
+    {
+      icon: FiBarChart2,
+      label: t('solution.steps.3.label'),
+      title: t('solution.steps.3.title'),
+      description: t('solution.steps.3.description'),
+      color: 'orange.500',
+      bg: 'orange.50',
+    },
+  ];
   return (
     <SectionWrapper bg="gray.50">
       <VStack spacing={4} textAlign="center" mb={12}>
         <Heading as="h2" size="xl" fontWeight="800">
-          Uma plataforma completa.{' '}
-          <Text as="span" color="brand.500">Quatro pilares.</Text>
+          {t('solution.heading')}{' '}
+          <Text as="span" color="brand.500">{t('solution.headingHighlight')}</Text>
         </Heading>
         <Text color="gray.500" maxW="600px" fontSize="lg">
-          Do primeiro contato ao fechamento — tudo conectado, automatizado e inteligente.
+          {t('solution.subtitle')}
         </Text>
       </VStack>
 

@@ -1,1 +1,47 @@
-{ "heading": "Demo", "subtitle": "See the platform in action" }
+{
+  "hero": {
+    "badge": "FULL DEMO",
+    "heading": "Building an Insurance Customer Service System",
+    "headingGradient": "with AI in Minutes",
+    "subtitle": "Watch from start to finish: a user describes what they need in plain language and AI creates 3 agents, 1 workflow, and a complete WhatsApp customer service."
+  },
+  "chapters": {
+    "heading": "What happens in this demo",
+    "items": [
+      { "time": "0:00", "label": "User describes what they need" },
+      { "time": "0:30", "label": "AI generates a 4-phase plan" },
+      { "time": "0:50", "label": "Approval and automatic execution" },
+      { "time": "1:15", "label": "3 AI agents being created (sped up)" },
+      { "time": "2:00", "label": "Feedback and adjustment via chat (sped up)" },
+      { "time": "2:18", "label": "Final workflow assembled and activated" },
+      { "time": "2:55", "label": "Full execution in 13 seconds" }
+    ]
+  },
+  "ctaSection": {
+    "heading": "I want to try it for my company",
+    "description": "Schedule a personalized demo and see how Catalisa can automate your company's customer service in minutes, not months.",
+    "scheduleDemo": "Schedule Demo",
+    "backToHome": "Back to home"
+  },
+  "cta": {
+    "heading": "I want to try it for my company",
+    "description": "Schedule a personalized demo and see how Catalisa can automate your company's customer service in minutes, not months.",
+    "scheduleDemo": "Schedule Demo",
+    "backToHome": "Back to home"
+  },
+  "result": {
+    "badge": "RESULT",
+    "heading": "And in practice?",
+    "headingGradient": "Customer service working.",
+    "subtitle": "Watch the workflow created in the demo responding to a real customer on WhatsApp in real time.",
+    "items": [
+      "Customer sends \"Good afternoon, looking for insurance\"",
+      "AI identifies the lead automatically",
+      "Collects ID, data and preferences",
+      "Offers home and mobile insurance",
+      "All in 13 seconds of execution"
+    ],
+    "callout": "This is what the AI created in the demo above actually working.",
+    "cta": "I want to try it for my company"
+  }
+}

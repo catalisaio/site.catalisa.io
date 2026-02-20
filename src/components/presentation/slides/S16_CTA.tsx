@@ -1,5 +1,5 @@
 import { Heading, Text, VStack, HStack, Button, Box } from '@chakra-ui/react';
-import { FiMessageCircle, FiMail, FiExternalLink } from 'react-icons/fi';
+import { FiMessageCircle, FiExternalLink } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
 import { Slide } from '../Slide';
 import { MotionBox } from '../../motion';
@@ -42,35 +42,20 @@ export function S16_CTA() {
         </MotionBox>
 
         <MotionBox initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.4 }}>
-          <HStack spacing={4} flexWrap="wrap" justify="center">
-            <Button
-              as="a"
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              size="lg"
-              bg="whatsapp.500"
-              color="white"
-              _hover={{ bg: 'whatsapp.600', transform: 'translateY(-2px)' }}
-              leftIcon={<FiMessageCircle />}
-              px={8}
-            >
-              {t('cta.whatsappButton')}
-            </Button>
-            <Button
-              as="a"
-              href={`mailto:${t('cta.email')}`}
-              size="lg"
-              variant="outline"
-              borderColor={c.outlineBorder}
-              color={c.outlineColor}
-              _hover={{ bg: c.outlineHoverBg, transform: 'translateY(-2px)' }}
-              leftIcon={<FiMail />}
-              px={8}
-            >
-              {t('cta.emailButton')}
-            </Button>
-          </HStack>
+          <Button
+            as="a"
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            size="lg"
+            bg="whatsapp.500"
+            color="white"
+            _hover={{ bg: 'whatsapp.600', transform: 'translateY(-2px)' }}
+            leftIcon={<FiMessageCircle />}
+            px={8}
+          >
+            {t('cta.whatsappButton')}
+          </Button>
         </MotionBox>
 
         <MotionBox initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.6 }}>

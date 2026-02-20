@@ -1,6 +1,6 @@
 import { Box, Container, Flex, HStack, VStack, Text, Link as ChakraLink, SimpleGrid } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
-import { FiMail, FiMessageCircle } from 'react-icons/fi';
+import { FiMessageCircle } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
 import { useLocalizedPath } from '../../i18n/useLocalizedPath';
 import { config } from '../../config';
@@ -64,9 +64,6 @@ export function Footer() {
               {t('footer.description')}
             </Text>
             <HStack spacing={3}>
-              <ChakraLink href="mailto:contato@catalisa.io" _hover={{ color: 'brand.300' }}>
-                <FiMail size={18} />
-              </ChakraLink>
               <ChakraLink href="https://wa.me/5511977303414" _hover={{ color: 'whatsapp.400' }} isExternal>
                 <FiMessageCircle size={18} />
               </ChakraLink>

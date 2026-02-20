@@ -1,19 +1,21 @@
 import {
-  Box, Container, Heading, Text, VStack, HStack, Button, SimpleGrid,
-  FormControl, FormLabel, Input, Textarea, Icon, Flex,
+  Box, Container, Heading, Text, VStack, HStack, Button, Icon, Flex,
 } from '@chakra-ui/react';
-import { FiMessageCircle, FiMail, FiClock, FiHeart, FiMonitor } from 'react-icons/fi';
+import { FiMessageCircle, FiClock, FiHeart, FiMonitor } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
 import { MotionBox } from '../components/motion';
 import { GradientText } from '../components/shared/GradientText';
 import { WhatsAppChatPreview } from '../components/shared/WhatsAppChatPreview';
 import type { ChatMessage } from '../components/shared/WhatsAppChatPreview';
 import { SectionWrapper } from '../components/shared/SectionWrapper';
+import { BehindTheScenesHint } from '../components/shared/BehindTheScenesHint';
+import { BehindTheScenesModal, useBehindTheScenes } from '../components/shared/BehindTheScenesModal';
 
 const WHATSAPP_URL = 'https://wa.me/5511977303414?text=Ola!%20Quero%20saber%20mais%20sobre%20a%20Catalisa.';
 
 export function Contact() {
   const { t } = useTranslation('contact');
+  const behindTheScenes = useBehindTheScenes();
   const contactMessages: ChatMessage[] = [
     { text: t('chat.messages.0'), sent: false, delay: 0.3 },
     { text: t('chat.messages.1'), sent: true, delay: 1.0 },
@@ -129,10 +131,7 @@ export function Contact() {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.5 }}
               >
-                <HStack spacing={2} pt={2}>
-                  <Icon as={FiMail} color="whiteAlpha.500" boxSize={4} />
-                  <Text color="whiteAlpha.600" fontSize="sm">contato@catalisa.io</Text>
-                </HStack>
+                <BehindTheScenesHint onOpen={behindTheScenes.onOpen} variant="dark" />
               </MotionBox>
             </VStack>
 
@@ -153,97 +152,41 @@ export function Contact() {
         </Container>
       </Box>
 
-      {/* Form section (light bg) */}
+      {/* Differentials section */}
       <SectionWrapper>
-        <Flex
-          direction={{ base: 'column', lg: 'row' }}
-          gap={{ base: 10, lg: 16 }}
-          align="flex-start"
-        >
-          {/* Left: Form */}
-          <Box flex={1} maxW={{ lg: '560px' }}>
-            <VStack spacing={4} align="stretch">
-              <Heading as="h2" size="lg" fontWeight="800">
-                {t('form.heading')}
-              </Heading>
-              <Text color="gray.500" fontSize="md" mb={2}>
-                {t('form.subtitle')}
-              </Text>
-
-              <SimpleGrid columns={{ base: 1, md: 2 }} spacing={4}>
-                <FormControl>
-                  <FormLabel fontSize="sm" fontWeight="600">{t('form.name')}</FormLabel>
-                  <Input placeholder={t('form.namePlaceholder')} focusBorderColor="brand.500" />
-                </FormControl>
-                <FormControl>
-                  <FormLabel fontSize="sm" fontWeight="600">{t('form.email')}</FormLabel>
-                  <Input type="email" placeholder={t('form.emailPlaceholder')} focusBorderColor="brand.500" />
-                </FormControl>
-              </SimpleGrid>
-
-              <FormControl>
-                <FormLabel fontSize="sm" fontWeight="600">{t('form.phone')}</FormLabel>
-                <Input type="tel" placeholder={t('form.phonePlaceholder')} focusBorderColor="brand.500" />
-              </FormControl>
-
-              <FormControl>
-                <FormLabel fontSize="sm" fontWeight="600">{t('form.message')}</FormLabel>
-                <Textarea
-                  placeholder={t('form.messagePlaceholder')}
-                  rows={4}
-                  focusBorderColor="brand.500"
-                />
-              </FormControl>
-
-              <Button
-                as="a"
-                href="mailto:contato@catalisa.io"
-                size="lg"
-                bg="brand.500"
-                color="white"
-                _hover={{ bg: 'brand.600' }}
-                fontWeight="700"
-                w={{ base: 'full', md: 'auto' }}
-                alignSelf="flex-start"
+        <VStack spacing={5} align="stretch" maxW="640px" mx="auto">
+          {differentials.map((diff, i) => (
+            <MotionBox
+              key={diff.title}
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.15, duration: 0.5 }}
+            >
+              <HStack
+                spacing={4}
+                p={5}
+                bg="gray.50"
+                borderRadius="xl"
+                border="1px solid"
+                borderColor="gray.100"
+                _hover={{ borderColor: 'brand.200', boxShadow: 'sm' }}
+                transition="all 0.2s"
               >
-                {t('form.submit')}
-              </Button>
-            </VStack>
-          </Box>
-
-          {/* Right: Differentials */}
-          <VStack flex={1} spacing={5} align="stretch" pt={{ base: 0, lg: 2 }}>
-            {differentials.map((diff, i) => (
-              <MotionBox
-                key={diff.title}
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.15, duration: 0.5 }}
-              >
-                <HStack
-                  spacing={4}
-                  p={5}
-                  bg="gray.50"
-                  borderRadius="xl"
-                  border="1px solid"
-                  borderColor="gray.100"
-                  _hover={{ borderColor: 'brand.200', boxShadow: 'sm' }}
-                  transition="all 0.2s"
-                >
-                  <Box p={3} borderRadius="xl" bg="brand.50" flexShrink={0}>
-                    <Icon as={diff.icon} boxSize={5} color="brand.500" />
-                  </Box>
-                  <VStack align="flex-start" spacing={1}>
-                    <Text fontWeight="700" fontSize="sm">{diff.title}</Text>
-                    <Text color="gray.500" fontSize="sm" lineHeight="1.6">{diff.description}</Text>
-                  </VStack>
-                </HStack>
-              </MotionBox>
-            ))}
-          </VStack>
-        </Flex>
+                <Box p={3} borderRadius="xl" bg="brand.50" flexShrink={0}>
+                  <Icon as={diff.icon} boxSize={5} color="brand.500" />
+                </Box>
+                <VStack align="flex-start" spacing={1}>
+                  <Text fontWeight="700" fontSize="sm">{diff.title}</Text>
+                  <Text color="gray.500" fontSize="sm" lineHeight="1.6">{diff.description}</Text>
+                </VStack>
+              </HStack>
+            </MotionBox>
+          ))}
+        </VStack>
       </SectionWrapper>
+
+      <BehindTheScenesModal isOpen={behindTheScenes.isOpen} onClose={behindTheScenes.onClose} />
     </>
   );
 }

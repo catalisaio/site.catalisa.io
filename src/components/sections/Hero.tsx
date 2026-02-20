@@ -6,6 +6,8 @@ import { useTranslation } from 'react-i18next';
 import { MotionBox } from '../motion';
 import { HeroShowcase, useHeroTabs } from '../shared/HeroShowcase';
 import { GradientText } from '../shared/GradientText';
+import { BehindTheScenesHint } from '../shared/BehindTheScenesHint';
+import { BehindTheScenesModal, useBehindTheScenes } from '../shared/BehindTheScenesModal';
 
 const WHATSAPP_URL = 'https://wa.me/5511977303414?text=Ola!%20Quero%20saber%20mais%20sobre%20a%20Catalisa.';
 
@@ -13,6 +15,7 @@ export function Hero() {
   const { t } = useTranslation('home');
   const subtitles = t('hero.subtitles', { returnObjects: true }) as string[];
   const heroTabs = useHeroTabs();
+  const behindTheScenes = useBehindTheScenes();
   const [activeIndex, setActiveIndex] = useState(0);
   const [paused, setPaused] = useState(false);
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -193,6 +196,7 @@ export function Hero() {
                 <HStack><Box w={1.5} h={1.5} borderRadius="full" bg="brand.400" /><Text>{t('badges.metaWhatsApp', { ns: 'common' })}</Text></HStack>
                 <HStack><Box w={1.5} h={1.5} borderRadius="full" bg="catalisa.secondary" /><Text>{t('badges.setupMinutes', { ns: 'common' })}</Text></HStack>
               </HStack>
+              <BehindTheScenesHint onOpen={behindTheScenes.onOpen} variant="dark" />
             </MotionBox>
           </VStack>
 
@@ -215,6 +219,8 @@ export function Hero() {
           </MotionBox>
         </Flex>
       </Container>
+
+      <BehindTheScenesModal isOpen={behindTheScenes.isOpen} onClose={behindTheScenes.onClose} />
     </Box>
   );
 }

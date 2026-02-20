@@ -4,12 +4,15 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { SectionWrapper } from '../shared/SectionWrapper';
 import { useLocalizedPath } from '../../i18n/useLocalizedPath';
+import { BehindTheScenesHint } from '../shared/BehindTheScenesHint';
+import { BehindTheScenesModal, useBehindTheScenes } from '../shared/BehindTheScenesModal';
 
 const WHATSAPP_URL = 'https://wa.me/5511977303414?text=Ola!%20Quero%20saber%20mais%20sobre%20a%20Catalisa.';
 
 export function FinalCTA() {
   const { t } = useTranslation('home');
   const lp = useLocalizedPath();
+  const behindTheScenes = useBehindTheScenes();
   return (
     <SectionWrapper bg="brand.500" py={{ base: 20, md: 28 }}>
       <VStack spacing={6} textAlign="center" maxW="700px" mx="auto">
@@ -55,7 +58,11 @@ export function FinalCTA() {
           <Box w={1} h={1} borderRadius="full" bg="whiteAlpha.400" />
           <Text>{t('badges.metaWhatsApp', { ns: 'common' })}</Text>
         </HStack>
+
+        <BehindTheScenesHint onOpen={behindTheScenes.onOpen} variant="light" />
       </VStack>
+
+      <BehindTheScenesModal isOpen={behindTheScenes.isOpen} onClose={behindTheScenes.onClose} />
     </SectionWrapper>
   );
 }

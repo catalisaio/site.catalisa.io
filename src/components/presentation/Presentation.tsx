@@ -5,7 +5,7 @@ import { SlideNavigation } from './SlideNavigation';
 import { usePresentation } from './usePresentation';
 import { PresentationThemeProvider, usePresentationColors } from './PresentationThemeContext';
 import { presentationThemes } from './presentationTheme';
-import type { ComponentType } from 'react';
+import { useEffect, type ComponentType } from 'react';
 
 interface PresentationProps {
   slides: ComponentType[];
@@ -18,6 +18,14 @@ function PresentationInner({ slides }: PresentationProps) {
 
   const c = usePresentationColors();
   const CurrentSlideComponent = slides[currentSlide];
+
+  // Auto-fullscreen on mobile
+  useEffect(() => {
+    const isMobile = window.innerWidth <= 768 && 'ontouchstart' in window;
+    if (isMobile && !document.fullscreenElement && document.documentElement.requestFullscreen) {
+      document.documentElement.requestFullscreen().catch(() => {});
+    }
+  }, []);
 
   // Touch/drag handling
   const dragThreshold = 100;

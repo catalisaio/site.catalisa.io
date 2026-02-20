@@ -41,6 +41,7 @@ export function Hero() {
 
   return (
     <Box
+      id="hero"
       position="relative"
       minH="100vh"
       bg="hero.bg"

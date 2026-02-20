@@ -1,7 +1,6 @@
 import { Heading, Text, VStack, Box, HStack, Flex } from '@chakra-ui/react';
-import { FiPlay, FiCpu, FiGitBranch, FiZap } from 'react-icons/fi';
+import { FiCpu, FiGitBranch, FiZap } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
-import { useRef, useState } from 'react';
 import { Slide } from '../Slide';
 import { MotionBox } from '../../motion';
 import { GradientText } from '../../shared/GradientText';
@@ -12,21 +11,6 @@ export function S09_LiveDemos() {
   const { t } = useTranslation('presentation');
   const { mode } = usePresentationTheme();
   const c = usePresentationColors();
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-
-  const handlePlay = () => {
-    const v = videoRef.current;
-    if (!v) return;
-    if (v.paused) {
-      v.play();
-      setIsPlaying(true);
-    } else {
-      v.pause();
-      setIsPlaying(false);
-    }
-  };
-
   const stats = t('liveDemos.aiDemo.stats', { returnObjects: true }) as Array<{ value: string; label: string }>;
 
   return (
@@ -134,8 +118,6 @@ export function S09_LiveDemos() {
           flex={{ lg: '0 0 58%' }}
           w="full"
           position="relative"
-          cursor="pointer"
-          onClick={handlePlay}
         >
           {/* Glow ring behind frame */}
           <Box
@@ -149,53 +131,19 @@ export function S09_LiveDemos() {
           />
           <BrowserFrame url="panel.catalisa.app/ai-assistant" variant={mode === 'dark' ? 'dark' : 'light'}>
             <Box position="relative" w="full" pt="56.25%" bg="black">
-              <Box
-                as="video"
+              <video
                 ref={videoRef}
-                position="absolute"
-                top={0}
-                left={0}
-                w="full"
-                h="full"
-                objectFit="contain"
+                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'contain' }}
+                autoPlay
+                muted
+                loop
                 playsInline
                 preload="metadata"
                 poster="/videos/ai-demo-poster.jpg"
-                controls={isPlaying}
-                onEnded={() => setIsPlaying(false)}
+                controls
               >
                 <source src="/videos/ai-demo-full.mp4" type="video/mp4" />
-              </Box>
-              {/* Play overlay */}
-              {!isPlaying && (
-                <Box
-                  position="absolute"
-                  inset={0}
-                  display="flex"
-                  alignItems="center"
-                  justifyContent="center"
-                  bg="blackAlpha.400"
-                  transition="all 0.3s"
-                  _hover={{ bg: 'blackAlpha.300' }}
-                >
-                  <Box
-                    w={{ base: 14, md: 18 }}
-                    h={{ base: 14, md: 18 }}
-                    borderRadius="full"
-                    bg="whiteAlpha.200"
-                    backdropFilter="blur(12px)"
-                    display="flex"
-                    alignItems="center"
-                    justifyContent="center"
-                    border="1px solid"
-                    borderColor="whiteAlpha.300"
-                    transition="transform 0.2s"
-                    _hover={{ transform: 'scale(1.1)' }}
-                  >
-                    <Box as={FiPlay} color="white" fontSize={{ base: 'xl', md: '2xl' }} ml="3px" />
-                  </Box>
-                </Box>
-              )}
+              </video>
             </Box>
           </BrowserFrame>
         </MotionBox>

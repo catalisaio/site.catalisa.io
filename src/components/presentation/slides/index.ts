@@ -6,6 +6,7 @@ import { S05_WhatsAppSolution } from './S05_WhatsAppSolution';
 import { S06_WhatsAppFeatures } from './S06_WhatsAppFeatures';
 import { S07_BeforeAfter } from './S07_BeforeAfter';
 import { S08_AIInAction } from './S08_AIInAction';
+import { S09_LiveDemos } from './S09_LiveDemos';
 import { S09_Differentiators } from './S09_Differentiators';
 import { S10_BankingLego } from './S10_BankingLego';
 import { S11_BuildingBlocks } from './S11_BuildingBlocks';
@@ -14,24 +15,23 @@ import { S13_Architecture } from './S13_Architecture';
 import { S14_BusinessModel } from './S14_BusinessModel';
 import { S15_TrustSecurity } from './S15_TrustSecurity';
 import { S16_CTA } from './S16_CTA';
-import { S17_EasterEgg } from './S17_EasterEgg';
 
 export const slides = [
-  S01_Cover,
-  S02_ProblemHook,
-  S03_SolutionVision,
-  S04_WhatsAppProblem,
-  S05_WhatsAppSolution,
-  S06_WhatsAppFeatures,
-  S07_BeforeAfter,
-  S08_AIInAction,
-  S09_Differentiators,
-  S10_BankingLego,
-  S11_BuildingBlocks,
-  S12_BankingProducts,
-  S13_Architecture,
-  S14_BusinessModel,
-  S15_TrustSecurity,
-  S16_CTA,
-  S17_EasterEgg,
+  S01_Cover,              // 1. Brand identity
+  S02_ProblemHook,        // 2. Pain points
+  S03_SolutionVision,     // 3. Catalisa solves both
+  S04_WhatsAppProblem,    // 4. Current service landscape
+  S05_WhatsAppSolution,   // 5. Four pillars
+  S06_WhatsAppFeatures,   // 6. Feature grid
+  S07_BeforeAfter,        // 7. Impact numbers
+  S08_AIInAction,         // 8. Real case — screenshots
+  S09_LiveDemos,          // 9. Proof — watch it happen (videos)
+  S09_Differentiators,    // 10. Why Catalisa vs competitors
+  S10_BankingLego,        // 11. Banking as LEGO
+  S11_BuildingBlocks,     // 12. 23+ building blocks
+  S12_BankingProducts,    // 13. Market-ready products
+  S13_Architecture,       // 14. Architecture & business model
+  S14_BusinessModel,      // 15. Trust & security
+  S15_TrustSecurity,      // 16. Pricing overview
+  S16_CTA,                // 17. Call to action
 ];

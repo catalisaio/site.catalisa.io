@@ -62,7 +62,7 @@ function VideoCard({ src, poster, title, description, delay }: VideoCardProps) {
   );
 }
 
-export function S17_EasterEgg() {
+export function S09_LiveDemos() {
   const { t } = useTranslation('presentation');
   const c = usePresentationColors();
 
@@ -84,15 +84,21 @@ export function S17_EasterEgg() {
         <VStack spacing={2} textAlign="center">
           <MotionBox initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.4 }}>
             <Text fontSize="xs" color="brand.400" fontWeight="700" letterSpacing="0.15em">
-              {t('easterEgg.badge')}
+              {t('liveDemos.badge')}
             </Text>
           </MotionBox>
           <MotionBox initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.1 }}>
             <Heading fontSize={{ base: 'xl', md: '3xl', lg: '4xl' }} fontWeight="800">
+              {t('liveDemos.headline')}{' '}
               <GradientText gradient="linear(to-r, brand.400, whatsapp.400)">
-                {t('easterEgg.headline')}
+                {t('liveDemos.headlineHighlight')}
               </GradientText>
             </Heading>
+          </MotionBox>
+          <MotionBox initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.2 }}>
+            <Text color={c.textMuted} fontSize={{ base: 'sm', md: 'md' }} maxW="600px">
+              {t('liveDemos.subtitle')}
+            </Text>
           </MotionBox>
         </VStack>
 
@@ -100,15 +106,15 @@ export function S17_EasterEgg() {
           <VideoCard
             src="/videos/ai-demo-full.mp4"
             poster="/videos/ai-demo-poster.jpg"
-            title={t('easterEgg.aiDemo.title')}
-            description={t('easterEgg.aiDemo.description')}
+            title={t('liveDemos.aiDemo.title')}
+            description={t('liveDemos.aiDemo.description')}
             delay={0.3}
           />
           <VideoCard
             src="/videos/whatsapp-demo.mp4"
             poster="/videos/whatsapp-demo-poster.jpg"
-            title={t('easterEgg.whatsappDemo.title')}
-            description={t('easterEgg.whatsappDemo.description')}
+            title={t('liveDemos.whatsappDemo.title')}
+            description={t('liveDemos.whatsappDemo.description')}
             delay={0.5}
           />
         </SimpleGrid>

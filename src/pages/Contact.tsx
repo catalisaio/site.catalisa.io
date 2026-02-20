@@ -1,14 +1,13 @@
 import {
   Box, Container, Heading, Text, VStack, HStack, Button, Icon, Flex,
 } from '@chakra-ui/react';
-import { FiMessageCircle, FiClock, FiHeart, FiMonitor } from 'react-icons/fi';
+import { FiMessageCircle, FiPlay, FiClock, FiHeart, FiMonitor } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
 import { MotionBox } from '../components/motion';
 import { GradientText } from '../components/shared/GradientText';
 import { WhatsAppChatPreview } from '../components/shared/WhatsAppChatPreview';
 import type { ChatMessage } from '../components/shared/WhatsAppChatPreview';
 import { SectionWrapper } from '../components/shared/SectionWrapper';
-import { BehindTheScenesHint } from '../components/shared/BehindTheScenesHint';
 import { BehindTheScenesModal, useBehindTheScenes } from '../components/shared/BehindTheScenesModal';
 
 const WHATSAPP_URL = 'https://wa.me/5511977303414?text=Ola!%20Quero%20saber%20mais%20sobre%20a%20Catalisa.';
@@ -127,11 +126,29 @@ export function Contact() {
               </MotionBox>
 
               <MotionBox
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.5 }}
               >
-                <BehindTheScenesHint onOpen={behindTheScenes.onOpen} variant="dark" />
+                <HStack
+                  as="button"
+                  onClick={behindTheScenes.onOpen}
+                  spacing={3}
+                  px={4}
+                  py={2.5}
+                  bg="whiteAlpha.100"
+                  border="1px solid"
+                  borderColor="whiteAlpha.200"
+                  borderRadius="xl"
+                  cursor="pointer"
+                  _hover={{ bg: 'whiteAlpha.200', borderColor: 'brand.400', transform: 'translateY(-1px)' }}
+                  transition="all 0.2s"
+                >
+                  <Box as={FiPlay} color="brand.300" boxSize={4} />
+                  <Text color="whiteAlpha.800" fontSize="sm" fontWeight="600">
+                    {t('behindTheScenes.hint', { ns: 'common' })}
+                  </Text>
+                </HStack>
               </MotionBox>
             </VStack>
 

@@ -1,7 +1,6 @@
 import { Heading, Text, VStack, Box, HStack, Flex, Icon } from '@chakra-ui/react';
-import { FiPlay, FiMessageCircle, FiCheck } from 'react-icons/fi';
+import { FiMessageCircle, FiCheck } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
-import { useRef, useState } from 'react';
 import { Slide } from '../Slide';
 import { MotionBox } from '../../motion';
 import { GradientText } from '../../shared/GradientText';
@@ -11,21 +10,6 @@ import { usePresentationColors } from '../PresentationThemeContext';
 export function S09b_WhatsAppDemo() {
   const { t } = useTranslation('presentation');
   const c = usePresentationColors();
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-
-  const handlePlay = () => {
-    const v = videoRef.current;
-    if (!v) return;
-    if (v.paused) {
-      v.play();
-      setIsPlaying(true);
-    } else {
-      v.pause();
-      setIsPlaying(false);
-    }
-  };
-
   const highlights = t('liveDemos.whatsappDemo.highlights', { returnObjects: true }) as string[];
 
   return (
@@ -134,8 +118,6 @@ export function S09b_WhatsAppDemo() {
           transition={{ duration: 0.7, delay: 0.15 }}
           flexShrink={0}
           position="relative"
-          cursor="pointer"
-          onClick={handlePlay}
         >
           {/* Glow ring behind phone */}
           <Box
@@ -154,50 +136,19 @@ export function S09b_WhatsAppDemo() {
             showStatusBar={false}
           >
             <Box position="relative" w="full" h="full" bg="#075E54">
-              <Box
-                as="video"
+              <video
                 ref={videoRef}
-                w="full"
-                h="full"
-                objectFit="cover"
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                autoPlay
+                muted
+                loop
                 playsInline
                 preload="metadata"
                 poster="/videos/whatsapp-demo-poster.jpg"
-                controls={isPlaying}
-                onEnded={() => setIsPlaying(false)}
+                controls
               >
                 <source src="/videos/whatsapp-demo.mp4" type="video/mp4" />
-              </Box>
-              {/* Play overlay */}
-              {!isPlaying && (
-                <Box
-                  position="absolute"
-                  inset={0}
-                  display="flex"
-                  alignItems="center"
-                  justifyContent="center"
-                  bg="blackAlpha.400"
-                  transition="all 0.3s"
-                  _hover={{ bg: 'blackAlpha.300' }}
-                >
-                  <Box
-                    w={14}
-                    h={14}
-                    borderRadius="full"
-                    bg="whiteAlpha.200"
-                    backdropFilter="blur(12px)"
-                    display="flex"
-                    alignItems="center"
-                    justifyContent="center"
-                    border="1px solid"
-                    borderColor="whiteAlpha.300"
-                    transition="transform 0.2s"
-                    _hover={{ transform: 'scale(1.1)' }}
-                  >
-                    <Box as={FiPlay} color="white" fontSize="xl" ml="2px" />
-                  </Box>
-                </Box>
-              )}
+              </video>
             </Box>
           </PhoneMockup>
         </MotionBox>

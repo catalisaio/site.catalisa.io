@@ -1,8 +1,10 @@
-import { useState, useCallback, useEffect } from 'react';
-import { Box, Flex, IconButton, Text } from '@chakra-ui/react';
+import { useState, useCallback, useEffect, useRef } from 'react';
+import { Box, Flex, IconButton, Text, Button } from '@chakra-ui/react';
 import { FiChevronLeft, FiChevronRight, FiX, FiSun, FiMoon, FiMaximize, FiMinimize } from 'react-icons/fi';
+import { useTranslation } from 'react-i18next';
 import { usePresentationTheme } from './PresentationThemeContext';
 import { presentationThemes } from './presentationTheme';
+import { loadEnUSNamespaces } from '../../i18n';
 
 interface SlideNavigationProps {
   currentSlide: number;
@@ -15,7 +17,25 @@ interface SlideNavigationProps {
 
 export function SlideNavigation({ currentSlide, totalSlides, progress, onNext, onPrev, onExit }: SlideNavigationProps) {
   const { mode, toggleMode } = usePresentationTheme();
+  const { i18n } = useTranslation();
   const [isFullscreen, setIsFullscreen] = useState(!!document.fullscreenElement);
+  const enLoaded = useRef(false);
+
+  const currentLang = i18n.language;
+  const isPt = currentLang === 'pt-BR';
+
+  const toggleLanguage = useCallback(async () => {
+    if (isPt) {
+      // Lazy-load EN if not loaded yet
+      if (!enLoaded.current) {
+        await loadEnUSNamespaces();
+        enLoaded.current = true;
+      }
+      i18n.changeLanguage('en-US');
+    } else {
+      i18n.changeLanguage('pt-BR');
+    }
+  }, [i18n, isPt]);
 
   const toggleFullscreen = useCallback(() => {
     if (document.fullscreenElement) {
@@ -31,7 +51,7 @@ export function SlideNavigation({ currentSlide, totalSlides, progress, onNext, o
     return () => document.removeEventListener('fullscreenchange', handler);
   }, []);
 
-  // Keyboard: F to toggle fullscreen
+  // Keyboard: F to toggle fullscreen, L to toggle language
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
       if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return;
@@ -39,10 +59,14 @@ export function SlideNavigation({ currentSlide, totalSlides, progress, onNext, o
         e.preventDefault();
         toggleFullscreen();
       }
+      if (e.key === 'l' || e.key === 'L') {
+        e.preventDefault();
+        toggleLanguage();
+      }
     };
     window.addEventListener('keydown', handler);
     return () => window.removeEventListener('keydown', handler);
-  }, [toggleFullscreen]);
+  }, [toggleFullscreen, toggleLanguage]);
 
   // Slide 0 (Cover) always uses light nav chrome
   const c = currentSlide === 0 ? presentationThemes.light : (mode === 'dark' ? presentationThemes.dark : presentationThemes.light);
@@ -59,8 +83,8 @@ export function SlideNavigation({ currentSlide, totalSlides, progress, onNext, o
         />
       </Box>
 
-      {/* Top-left: Toggle + Fullscreen */}
-      <Flex position="fixed" top={4} left={4} zIndex={100} gap={1}>
+      {/* Top-left: Toggle theme + Fullscreen + Language */}
+      <Flex position="fixed" top={4} left={4} zIndex={100} gap={1} align="center">
         <IconButton
           aria-label="Toggle light/dark mode"
           icon={mode === 'dark' ? <FiSun /> : <FiMoon />}
@@ -79,6 +103,20 @@ export function SlideNavigation({ currentSlide, totalSlides, progress, onNext, o
           _hover={{ color: c.navHoverColor, bg: c.navHoverBg }}
           onClick={toggleFullscreen}
         />
+        <Button
+          variant="ghost"
+          color={c.navColor}
+          fontSize="xs"
+          fontWeight="700"
+          letterSpacing="0.05em"
+          minW="auto"
+          h={10}
+          px={3}
+          _hover={{ color: c.navHoverColor, bg: c.navHoverBg }}
+          onClick={toggleLanguage}
+        >
+          {isPt ? 'EN' : 'PT'}
+        </Button>
       </Flex>
 
       {/* Exit button */}

@@ -40,8 +40,10 @@ const enUSModules = import.meta.glob('./locales/en-US/*.json');
 export async function loadEnUSNamespaces(): Promise<void> {
   const promises = Object.entries(enUSModules).map(async ([path, loader]) => {
     const ns = path.replace('./locales/en-US/', '').replace('.json', '');
-    const mod = (await loader()) as { default: Record<string, unknown> };
-    i18n.addResourceBundle('en-US', ns, mod.default, true, true);
+    const mod = (await loader()) as Record<string, unknown>;
+    // Vite may return { default: {...} } or the JSON object directly
+    const data = (mod.default ?? mod) as Record<string, unknown>;
+    i18n.addResourceBundle('en-US', ns, data, true, true);
   });
   await Promise.all(promises);
 }

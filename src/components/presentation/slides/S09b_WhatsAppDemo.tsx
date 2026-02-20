@@ -137,7 +137,6 @@ export function S09b_WhatsAppDemo() {
           >
             <Box position="relative" w="full" h="full" bg="#075E54">
               <video
-                ref={videoRef}
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                 autoPlay
                 muted

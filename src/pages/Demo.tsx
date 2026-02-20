@@ -30,6 +30,7 @@ export function Demo() {
     <Box bg="gray.900" minH="100vh">
       {/* Hero */}
       <Box
+        id="hero"
         position="relative"
         overflow="hidden"
         pt={{ base: 24, md: 32 }}

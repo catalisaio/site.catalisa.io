@@ -1,8 +1,9 @@
 import { Box, Text, HStack, Badge } from '@chakra-ui/react';
 import { WorkflowPreview } from './WorkflowPreview';
-import { workflowPreviews } from '../../data/workflowPreviews';
+import { useTranslatedWorkflows } from '../../i18n/useTranslatedData';
 
 export function WorkflowPreviewHero() {
+  const workflowPreviews = useTranslatedWorkflows();
   // Use workflow #2 (Triagem com IA) — visually interesting with branch
   const workflow = workflowPreviews[1];
 

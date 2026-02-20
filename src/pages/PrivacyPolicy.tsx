@@ -48,7 +48,7 @@ export function PrivacyPolicy() {
   ];
 
   return (
-    <Box pt={24} pb={16}>
+    <Box id="hero" pt={24} pb={16}>
       <Container maxW="800px">
         <VStack spacing={8} align="flex-start">
           <VStack align="flex-start" spacing={2}>

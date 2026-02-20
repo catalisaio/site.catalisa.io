@@ -41,7 +41,7 @@ export function Contact() {
   return (
     <>
       {/* Hero section (dark bg) */}
-      <Box bg="hero.bg" pt={20} pb={16}>
+      <Box id="hero" bg="hero.bg" pt={20} pb={16}>
         <Container maxW="1280px">
           <Flex
             direction={{ base: 'column', lg: 'row' }}

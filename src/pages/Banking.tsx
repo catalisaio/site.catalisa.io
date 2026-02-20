@@ -104,7 +104,7 @@ export function Banking() {
   return (
     <>
       {/* Hero */}
-      <Box bg="hero.bg" pt={20} pb={16}>
+      <Box id="hero" bg="hero.bg" pt={20} pb={16}>
         <Container maxW="1280px">
           <VStack spacing={6} textAlign="center" maxW="800px" mx="auto">
             <Badge colorScheme="blue" fontSize="xs" px={3} py={1} borderRadius="full">

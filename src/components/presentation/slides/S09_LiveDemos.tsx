@@ -36,7 +36,7 @@ export function S09_LiveDemos() {
       />
 
       <Flex
-        direction={{ base: 'column', lg: 'row' }}
+        direction="row"
         align="center"
         justify="center"
         gap={{ base: 6, lg: 10 }}
@@ -45,10 +45,10 @@ export function S09_LiveDemos() {
       >
         {/* Left: Content */}
         <VStack
-          align={{ base: 'center', lg: 'flex-start' }}
+          align="flex-start"
           spacing={{ base: 3, md: 4 }}
-          textAlign={{ base: 'center', lg: 'left' }}
-          flex={{ lg: '0 0 38%' }}
+          textAlign="left"
+          flex="0 0 38%"
         >
           <MotionBox initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.4 }}>
             <HStack
@@ -115,7 +115,7 @@ export function S09_LiveDemos() {
           initial={{ opacity: 0, x: 40, scale: 0.95 }}
           animate={{ opacity: 1, x: 0, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.15 }}
-          flex={{ lg: '0 0 58%' }}
+          flex="0 0 58%"
           w="full"
           position="relative"
         >

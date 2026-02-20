@@ -35,7 +35,7 @@ export function S09b_WhatsAppDemo() {
       />
 
       <Flex
-        direction={{ base: 'column', lg: 'row-reverse' }}
+        direction="row-reverse"
         align="center"
         justify="center"
         gap={{ base: 6, lg: 10 }}
@@ -44,10 +44,10 @@ export function S09b_WhatsAppDemo() {
       >
         {/* Right (visually): Content */}
         <VStack
-          align={{ base: 'center', lg: 'flex-start' }}
+          align="flex-start"
           spacing={{ base: 3, md: 4 }}
-          textAlign={{ base: 'center', lg: 'left' }}
-          flex={{ lg: '0 0 42%' }}
+          textAlign="left"
+          flex="0 0 42%"
         >
           <MotionBox initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.4 }}>
             <HStack

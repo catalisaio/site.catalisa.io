@@ -1,0 +1,52 @@
+{
+  "hero": {
+    "badge": "RETAIL",
+    "heading": "WhatsApp as a sales channel",
+    "headingGradient": "for retail",
+    "subtitle": "120M Brazilians on WhatsApp. 91% open rate. 67% already buy through the app.",
+    "stats": {
+      "whatsappUsers": "Brazilians on WhatsApp",
+      "openRate": "Open rate",
+      "buyViaApp": "Buy via app"
+    }
+  },
+  "beforeAfter": {
+    "before": "BEFORE",
+    "after": "AFTER"
+  },
+  "workflow": "Workflow",
+  "compliance": {
+    "heading": "Security and compliance for retail",
+    "items": [
+      { "label": "LGPD Compliance", "description": "Automatic customer data protection" },
+      { "label": "Secure Payments", "description": "Protected and tracked payment links" },
+      { "label": "Protected Data", "description": "End-to-end encryption in all conversations" },
+      { "label": "Multi-store", "description": "Manage multiple stores on a single platform" }
+    ]
+  },
+  "capabilities": {
+    "badge": "RETAIL CAPABILITIES",
+    "heading": "Everything retail needs in one place",
+    "subtitle": "Digital catalog, order management, loyalty programs and omnichannel support — integrated with WhatsApp.",
+    "items": [
+      { "title": "Digital Catalog", "description": "Showcase products with photos, prices and availability via WhatsApp." },
+      { "title": "Order Management", "description": "Receive, process and track orders automatically." },
+      { "title": "Loyalty Program", "description": "Engage customers with rewards and personalized offers." },
+      { "title": "Omnichannel Support", "description": "WhatsApp, website and physical store on a single platform." }
+    ],
+    "pipelineLabel": "Full pipeline:",
+    "pipelineSteps": "Contact \u2192 Catalog \u2192 Order \u2192 Payment \u2192 Delivery \u2192 Feedback"
+  },
+  "roi": {
+    "heading": "How much do you save?",
+    "subtitle": "Simulate your monthly savings by automating customer service and orders for your business.",
+    "calculatorTitle": "ROI Calculator",
+    "agentsLabel": "Number of agents",
+    "ordersLabel": "Orders per day",
+    "costLabel": "Cost per agent (R$)",
+    "currentCost": "Current cost/month",
+    "withCatalisa": "With Catalisa/month",
+    "monthlySavings": "Monthly savings",
+    "reduction": "reduction"
+  }
+}

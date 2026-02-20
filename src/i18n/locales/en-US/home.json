@@ -1,0 +1,263 @@
+{
+  "hero": {
+    "headline": "Your customers expect answers in seconds.",
+    "headlineGradient": "Your team can't keep up.",
+    "subtitles": [
+      "Describe what you need in plain language. AI specifies and builds — from idea to production in minutes.",
+      "AI agents that serve, qualify and close deals on WhatsApp — 24 hours a day.",
+      "Visual workflows that automate from first contact to closing — no code.",
+      "From first contact to automatic renewal — your insurance service on autopilot.",
+      "Each agent has its role, tools and context. Like a real team.",
+      "Lead capture, simulation and pension contracting — all via WhatsApp, frictionless."
+    ]
+  },
+  "heroTabs": {
+    "studio": "Studio",
+    "credito": "Credit",
+    "automacoes": "Automations",
+    "seguros": "Insurance",
+    "agentesIA": "AI Agents",
+    "previdencia": "Pension"
+  },
+  "problem": {
+    "heading": "WhatsApp became your main channel.",
+    "headingHighlight": "But how do you scale?",
+    "subtitle": "120 million Brazilians use WhatsApp daily. Your team can't keep up.",
+    "items": [
+      {
+        "title": "Manual responses",
+        "description": "Your team answers one message at a time. Leads go cold while waiting."
+      },
+      {
+        "title": "No context between agents",
+        "description": "Every agent switch starts from zero. The customer repeats everything."
+      },
+      {
+        "title": "Zero automation",
+        "description": "Repetitive tasks consume hours. Qualification, follow-up, billing — all manual."
+      }
+    ]
+  },
+  "solution": {
+    "heading": "One complete platform.",
+    "headingHighlight": "Four pillars.",
+    "subtitle": "From first contact to closing — everything connected, automated and intelligent.",
+    "steps": [
+      { "label": "Connect", "title": "WhatsApp", "description": "Multi-tenant, multi-device. QR Code or Cloud API." },
+      { "label": "Automate", "title": "Workflows", "description": "Visual drag & drop. 150+ composable building blocks." },
+      { "label": "Intelligence", "title": "AI Agents", "description": "Specialized agents with selective tools." },
+      { "label": "Results", "title": "CRM & Analytics", "description": "Lead pipeline, metrics and complete history." }
+    ]
+  },
+  "howItWorks": {
+    "heading": "How it works",
+    "subtitle": "Three steps to automate your WhatsApp with artificial intelligence.",
+    "steps": [
+      { "title": "Connect your WhatsApp", "description": "QR Code for Baileys or Meta's Cloud API. Setup in 2 minutes. Multi-device supported." },
+      { "title": "Build your visual workflow", "description": "Drag building blocks onto the canvas. Connect triggers to blocks. Configure each one without code." },
+      { "title": "Activate and scale", "description": "AI takes over operations. You monitor results. Scale from 1 to 1,000 conversations without hiring." }
+    ]
+  },
+  "features": {
+    "heading": "Everything you need.",
+    "headingHighlight": "Nothing you don't.",
+    "items": [
+      { "title": "Multi-Agent WhatsApp", "description": "Connect multiple numbers. Baileys + Cloud API. Each agent with its own context and history." },
+      { "title": "AI Agents", "description": "Create specialized agents with custom prompts and selective tools. Marketplace with 10+ templates." },
+      { "title": "Visual Workflows", "description": "Build automations with drag & drop. DAG with parallel execution. Native A/B testing." },
+      { "title": "Building Blocks", "description": "150+ building blocks: AI, fintech, CRM, security, integrations and more. Combine as you wish." },
+      { "title": "Lead CRM", "description": "Complete pipeline with custom types, kanban, dynamic fields and interaction history." },
+      { "title": "Security & LGPD", "description": "Isolated multi-tenant. Automatic PII masking. Banking-grade encryption. RBAC." }
+    ]
+  },
+  "aiAgentsTeaser": {
+    "heading": "Your AI agents.",
+    "headingHighlight": "Your rules. Your data.",
+    "description": "It's not a chatbot. It's an entire team. Each agent has its own personality, tools and context.",
+    "before": {
+      "label": "BEFORE",
+      "items": ["3 agents", "2h wait time", "R$ 15k/month"]
+    },
+    "after": {
+      "label": "AFTER",
+      "items": ["AI Agent + 1 supervisor", "5 second response", "R$ 800/month"]
+    }
+  },
+  "differentiators": {
+    "badge": "DIFFERENTIATORS",
+    "heading": "Why",
+    "headingHighlight": "Catalisa",
+    "subtitle": "We compare with alternatives so you can decide clearly.",
+    "items": [
+      { "vs": "vs n8n / Make", "title": "Native AI, not plugins", "description": "AI agents, sentiment analysis, OCR and text generation are native building blocks — no plugins or external API setup." },
+      { "vs": "vs Intercom / WATI", "title": "Composable blocks, not chatbot", "description": "Not a chatbot with fixed menus. 150+ building blocks you freely combine to create custom automations." },
+      { "vs": "vs Zapier / Pipedream", "title": "Native WhatsApp + embedded AI", "description": "Direct WhatsApp connection (Baileys + Cloud API), AI agents with real tools, integrated CRM — all in one platform." },
+      { "vs": "vs Internal development", "title": "150+ building blocks. Months of savings.", "description": "From fintech to CRM, security to calendar — ready-made, tested building blocks. Focus on your business, not infrastructure." }
+    ]
+  },
+  "trust": {
+    "heading": "Banking-grade security",
+    "subtitle": "Your data protected with the same security practices of major financial institutions.",
+    "infrastructure": "Infrastructure in",
+    "cloudBrazil": "Brazilian cloud",
+    "monitoring": "with automatic backups and 24/7 monitoring"
+  },
+  "finalCTA": {
+    "heading": "Start your smart automation",
+    "subtitle": "Connect your WhatsApp, build visual workflows and activate AI agents in minutes."
+  },
+  "aiInAction": {
+    "badge": "REAL CASE",
+    "heading": "From one sentence to a complete",
+    "headingGradient": "customer service system",
+    "subtitle": "No lines of code. No programmer.\nJust a conversation with AI.",
+    "steps": [
+      {
+        "label": "Described",
+        "title": "\"I want insurance service via WhatsApp\"",
+        "description": "The user described in one sentence what they needed: a complete insurance service and sales system that identifies leads, collects data and offers products.",
+        "highlight": "One sentence. No code. No technical specification."
+      },
+      {
+        "label": "AI Planned",
+        "title": "4-phase plan generated in seconds",
+        "description": "AI analyzed the request and created a structured plan: prepare specialized agents, build the workflow, implement sales flow and activate WhatsApp integration.",
+        "highlight": "The user just needed to say \"Approved.\""
+      },
+      {
+        "label": "Executed",
+        "title": "3 agents + 1 workflow created automatically",
+        "description": "AI executed the steps: created 3 specialized AI agents (Identifier, Collector, Seller), selected tools and built the complete workflow with 4 actions.",
+        "highlight": "The user gave feedback and AI adjusted on the spot."
+      },
+      {
+        "label": "Running",
+        "title": "Real WhatsApp service in 13 seconds",
+        "description": "Workflow running: customer sends \"Good afternoon\" and AI identifies the lead, collects data, offers home and phone insurance — all automatic.",
+        "highlight": "From sentence to working service: less than 3 minutes."
+      }
+    ],
+    "resultStats": [
+      { "value": "3", "label": "AI agents created" },
+      { "value": "1", "label": "complete workflow" },
+      { "value": "13s", "label": "execution time" },
+      { "value": "0", "label": "lines of code" }
+    ],
+    "videoSection": {
+      "heading": "Watch the full demo",
+      "description": "See in a few minutes how an insurance service system was created from scratch using only AI chat."
+    }
+  },
+  "studioShowcase": {
+    "badge": "CATALISA STUDIO",
+    "heading": "Describe what you need.",
+    "headingGradient": "AI builds it for you.",
+    "subtitle": "No code. No technical team. No weeks of waiting.",
+    "steps": [
+      {
+        "label": "Describe",
+        "title": "Describe what you need",
+        "description": "Type in natural language, as if explaining to a colleague. Choose from 6 ready templates — WhatsApp Welcome, AI Qualification, Email Notification and more — or start from scratch.",
+        "bullets": ["No technical language", "6 templates for real use cases", "AI understands your business context"]
+      },
+      {
+        "label": "AI Refines",
+        "title": "AI asks the right questions",
+        "description": "Don't know exactly what you need? No problem. AI asked: \"How do you want to know WHICH field was changed?\" — and gave concrete examples to help.",
+        "bullets": ["Natural conversation", "Automatically clarifies ambiguities", "You don't need to be technical"]
+      },
+      {
+        "label": "Spec Ready",
+        "title": "Complete specification in seconds",
+        "description": "2 requirements, 2 components, 3 tasks — generated in seconds. Requirements, technical design with data flow and tasks with dependencies, all ready to review and approve.",
+        "bullets": ["Structured and validated requirements", "Clear architecture and data flow", "Execution plan with dependencies"],
+        "subTabs": ["Requirements", "Design", "Tasks"]
+      },
+      {
+        "label": "Execute",
+        "title": "Approve All & Execute",
+        "description": "Approve the specification and Builder creates everything: workflow, triggers, actions, connections. One click on \"Approve All & Execute\" and it's ready for production.",
+        "bullets": ["100% automated execution", "Result guaranteed by specification", "From idea to production in minutes"]
+      }
+    ],
+    "stats": [
+      { "value": "Zero", "label": "code" },
+      { "value": "Seconds", "label": "not months" },
+      { "value": "100%", "label": "spec-driven" }
+    ]
+  },
+  "chatPreview": {
+    "creditTitle": "AI Agent - Credit",
+    "insuranceTitle": "AI Agent - Insurance",
+    "pensionTitle": "AI Agent - Pension",
+    "online": "online",
+    "creditMessages": [
+      { "text": "Hi, I want to apply for a loan", "sent": false, "delay": 0.2 },
+      { "text": "Great! I've pulled your pre-approved data. You have a limit of up to $25,000. What amount would you like?", "sent": true, "delay": 0.8 },
+      { "text": "$15,000 in 24 installments", "sent": false, "delay": 1.6 },
+      { "text": "Done! Contract generated:\n\nAmount: $15,000\nInstallments: 24x of $743.25\nRate: 1.89%/mo\n\nI'll send the digital signature link now.", "sent": true, "delay": 2.4 },
+      { "text": "Perfect, I'll sign it!", "sent": false, "delay": 3.4 }
+    ],
+    "insuranceMessages": [
+      { "text": "I need to renew my auto insurance", "sent": false, "delay": 0.2 },
+      { "text": "Found your policy! Vehicle: Honda Civic 2023. I'll quote the best options for you.", "sent": true, "delay": 0.8 },
+      { "text": "I want full coverage", "sent": false, "delay": 1.6 },
+      { "text": "Done! 3 options:\n\n1. Basic: $185/mo\n2. Full: $247/mo \u2b50\n3. Premium: $312/mo\n\nOption 2 covers theft, collision and third-party. Which do you prefer?", "sent": true, "delay": 2.4 },
+      { "text": "Let's go with full!", "sent": false, "delay": 3.4 }
+    ],
+    "pensionMessages": [
+      { "text": "I want to start investing in a pension plan", "sent": false, "delay": 0.2 },
+      { "text": "Excellent decision! What's your main goal: retirement, children's education or long-term savings?", "sent": true, "delay": 0.8 },
+      { "text": "Retirement, I'm 35 years old", "sent": false, "delay": 1.6 },
+      { "text": "Perfect! For your profile I recommend:\n\nModerate Pension Plan\nContribution: $500/mo\nProjection in 30 years: $892,000\nTax benefit: up to 12%\n\nShall I open your account now?", "sent": true, "delay": 2.4 },
+      { "text": "Yes, let's start!", "sent": false, "delay": 3.4 }
+    ]
+  },
+  "agentPreview": {
+    "title": "Sales Agent",
+    "online": "Online",
+    "autoBadge": "AUTO",
+    "recentActionsHeader": "Recent actions",
+    "actions": [
+      { "label": "Lead qualified — Maria Silva", "delay": 0.3 },
+      { "label": "Proposal sent — Joao Souza", "delay": 0.8 },
+      { "label": "Follow-up scheduled — Ana Costa", "delay": 1.3 },
+      { "label": "Meeting booked — Pedro Lima", "delay": 1.8 },
+      { "label": "Contract generated — Carla Nunes", "delay": 2.3 }
+    ],
+    "typing": "Responding to client now...",
+    "stats": {
+      "conversations": "conversations",
+      "satisfaction": "satisfaction",
+      "avgTime": "avg time"
+    }
+  },
+  "studioPreview": {
+    "title": "Catalisa Studio",
+    "builderActive": "Builder active",
+    "aiBadge": "AI",
+    "pipelineHeader": "Builder Pipeline",
+    "steps": [
+      { "label": "Describe", "detail": "\"I want a welcome workflow...\"" },
+      { "label": "AI Refines", "detail": "Generating specification..." },
+      { "label": "Spec Ready", "detail": "3 requirements, 2 actions, 1 trigger" },
+      { "label": "Execute", "detail": "Workflow created successfully!" }
+    ],
+    "typing": "Building workflow...",
+    "stats": {
+      "codeLines": "code lines",
+      "steps": "steps",
+      "totalTime": "total time"
+    }
+  },
+  "heroShowcase": {
+    "tabs": {
+      "studio": "Studio",
+      "credito": "Credit",
+      "workflows": "Automations",
+      "seguros": "Insurance",
+      "agents": "AI Agents",
+      "previdencia": "Pension"
+    }
+  }
+}

@@ -2,29 +2,24 @@ import { useState, useEffect, useCallback, useRef } from 'react';
 import { Box, Container, Heading, Text, Button, HStack, Flex, VStack } from '@chakra-ui/react';
 import { AnimatePresence } from 'framer-motion';
 import { FiMessageCircle, FiPlay } from 'react-icons/fi';
+import { useTranslation } from 'react-i18next';
 import { MotionBox } from '../motion';
-import { HeroShowcase, heroTabs } from '../shared/HeroShowcase';
+import { HeroShowcase, useHeroTabs } from '../shared/HeroShowcase';
 import { GradientText } from '../shared/GradientText';
 
 const WHATSAPP_URL = 'https://wa.me/5511977303414?text=Ola!%20Quero%20saber%20mais%20sobre%20a%20Catalisa.';
 
-const subtitles = [
-  'Descreva o que precisa em linguagem natural. A IA especifica e constroi — da ideia a producao em minutos.',
-  'Agentes de IA que atendem, qualificam e fecham negocios pelo WhatsApp — 24 horas por dia.',
-  'Workflows visuais que automatizam desde o primeiro contato ate o fechamento — sem codigo.',
-  'Do primeiro contato a renovacao automatica — seu atendimento de seguros no piloto automatico.',
-  'Cada agente tem seu papel, suas ferramentas e seu contexto. Como uma equipe real.',
-  'Captacao, simulacao e contratacao de previdencia — tudo pelo WhatsApp, sem atrito.',
-];
-
 export function Hero() {
+  const { t } = useTranslation('home');
+  const subtitles = t('hero.subtitles', { returnObjects: true }) as string[];
+  const heroTabs = useHeroTabs();
   const [activeIndex, setActiveIndex] = useState(0);
   const [paused, setPaused] = useState(false);
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const goToNext = useCallback(() => {
     setActiveIndex((prev) => (prev + 1) % heroTabs.length);
-  }, []);
+  }, [heroTabs.length]);
 
   const handleTabChange = useCallback((index: number) => {
     setActiveIndex(index);
@@ -42,7 +37,7 @@ export function Hero() {
     return () => {
       if (timerRef.current) clearTimeout(timerRef.current);
     };
-  }, [activeIndex, paused, goToNext]);
+  }, [activeIndex, paused, goToNext, heroTabs]);
 
   return (
     <Box
@@ -102,7 +97,7 @@ export function Hero() {
                 spacing={2}
               >
                 <Box w={2} h={2} borderRadius="full" bg="whatsapp.400" />
-                <Text color="whiteAlpha.800" fontSize="sm">Atendimento 24/7 pelo WhatsApp</Text>
+                <Text color="whiteAlpha.800" fontSize="sm">{t('badges.whatsapp247', { ns: 'common' })}</Text>
               </HStack>
             </MotionBox>
 
@@ -119,13 +114,13 @@ export function Hero() {
                 color="white"
                 lineHeight="1.1"
               >
-                Seus clientes esperam respostas em segundos.{' '}
+                {t('hero.headline')}{' '}
                 <GradientText
                   gradient="linear(to-r, brand.300, brand.400, catalisa.accent)"
                   fontSize="inherit"
                   fontWeight="inherit"
                 >
-                  Sua equipe nao consegue acompanhar.
+                  {t('hero.headlineGradient')}
                 </GradientText>
               </Heading>
             </MotionBox>
@@ -170,7 +165,7 @@ export function Hero() {
                   leftIcon={<FiMessageCircle />}
                   transition="all 0.2s"
                 >
-                  Vamos conversar
+                  {t('cta.letsChat', { ns: 'common' })}
                 </Button>
                 <Button
                   as="a"
@@ -181,7 +176,7 @@ export function Hero() {
                   _hover={{ bg: 'whiteAlpha.100' }}
                   leftIcon={<FiPlay />}
                 >
-                  Ver como funciona
+                  {t('cta.seeHowItWorks', { ns: 'common' })}
                 </Button>
               </HStack>
             </MotionBox>
@@ -193,9 +188,9 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 0.5 }}
             >
               <HStack spacing={4} flexWrap="wrap" fontSize="xs" color="whiteAlpha.500">
-                <HStack><Box w={1.5} h={1.5} borderRadius="full" bg="whatsapp.400" /><Text>Conforme LGPD</Text></HStack>
-                <HStack><Box w={1.5} h={1.5} borderRadius="full" bg="brand.400" /><Text>Meta WhatsApp Business</Text></HStack>
-                <HStack><Box w={1.5} h={1.5} borderRadius="full" bg="catalisa.secondary" /><Text>Setup em 5 minutos</Text></HStack>
+                <HStack><Box w={1.5} h={1.5} borderRadius="full" bg="whatsapp.400" /><Text>{t('badges.lgpd', { ns: 'common' })}</Text></HStack>
+                <HStack><Box w={1.5} h={1.5} borderRadius="full" bg="brand.400" /><Text>{t('badges.metaWhatsApp', { ns: 'common' })}</Text></HStack>
+                <HStack><Box w={1.5} h={1.5} borderRadius="full" bg="catalisa.secondary" /><Text>{t('badges.setupMinutes', { ns: 'common' })}</Text></HStack>
               </HStack>
             </MotionBox>
           </VStack>

@@ -14,22 +14,18 @@ import {
 } from '@chakra-ui/react';
 import { FiClock, FiArrowRight, FiCheckCircle } from 'react-icons/fi';
 import { Link as RouterLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import { useLocalizedPath } from '../i18n/useLocalizedPath';
 import { MotionBox, fadeInUp } from '../components/motion';
 import { GradientText } from '../components/shared/GradientText';
 import { VideoPlayer } from '../components/shared/VideoPlayer';
 import { PhoneMockup } from '../components/shared/PhoneMockup';
 
-const chapters = [
-  { time: '0:00', label: 'Usuario descreve o que precisa' },
-  { time: '0:30', label: 'IA gera plano com 4 fases' },
-  { time: '0:50', label: 'Aprovacao e execucao automatica' },
-  { time: '1:15', label: '3 agentes IA sendo criados (acelerado)' },
-  { time: '2:00', label: 'Feedback e ajuste via chat (acelerado)' },
-  { time: '2:18', label: 'Workflow final montado e ativado' },
-  { time: '2:55', label: 'Execucao completa em 13 segundos' },
-];
-
 export function Demo() {
+  const { t } = useTranslation('demo');
+  const lp = useLocalizedPath();
+
+  const chapters = t('chapters.items', { returnObjects: true }) as { time: string; label: string }[];
   return (
     <Box bg="gray.900" minH="100vh">
       {/* Hero */}
@@ -62,7 +58,7 @@ export function Demo() {
                 spacing={2}
               >
                 <Text color="green.300" fontSize="sm" fontWeight="600">
-                  &#9654; DEMO COMPLETO
+                  &#9654; {t('hero.badge')}
                 </Text>
               </HStack>
 
@@ -74,20 +70,18 @@ export function Demo() {
                 lineHeight="1.2"
                 maxW="800px"
               >
-                Criando um Sistema de Atendimento de Seguros{' '}
+                {t('hero.heading')}{' '}
                 <GradientText
                   gradient="linear(to-r, green.300, green.400, brand.300)"
                   fontSize="inherit"
                   fontWeight="inherit"
                 >
-                  com IA em poucos Minutos
+                  {t('hero.headingGradient')}
                 </GradientText>
               </Heading>
 
               <Text color="whiteAlpha.600" fontSize={{ base: 'md', md: 'lg' }} maxW="600px">
-                Assista do comeco ao fim: um usuario descreve o que precisa em
-                portugues e a IA cria 3 agentes, 1 workflow e um atendimento
-                completo via WhatsApp.
+                {t('hero.subtitle')}
               </Text>
             </VStack>
           </MotionBox>
@@ -124,7 +118,7 @@ export function Demo() {
                 color="white"
                 mb={6}
               >
-                O que acontece neste demo
+                {t('chapters.heading')}
               </Heading>
 
               <List spacing={3}>
@@ -180,18 +174,17 @@ export function Demo() {
                     fontWeight="700"
                     color="white"
                   >
-                    Quero testar na minha empresa
+                    {t('cta.heading')}
                   </Heading>
 
                   <Text color="whiteAlpha.600" fontSize="md" lineHeight="1.8">
-                    Agende uma demo personalizada e veja como a Catalisa pode
-                    automatizar o atendimento da sua empresa em minutos, nao meses.
+                    {t('cta.description')}
                   </Text>
 
                   <VStack spacing={3} w="full" pt={2}>
                     <Button
                       as={RouterLink}
-                      to="/contato"
+                      to={lp('/contato')}
                       size="lg"
                       w="full"
                       rightIcon={<Icon as={FiArrowRight} />}
@@ -205,12 +198,12 @@ export function Demo() {
                       transition="all 0.3s"
                       borderRadius="xl"
                     >
-                      Agendar Demo
+                      {t('cta.scheduleDemo')}
                     </Button>
 
                     <Button
                       as={RouterLink}
-                      to="/"
+                      to={lp('/')}
                       size="lg"
                       w="full"
                       variant="outline"
@@ -224,7 +217,7 @@ export function Demo() {
                       transition="all 0.3s"
                       borderRadius="xl"
                     >
-                      Voltar ao inicio
+                      {t('cta.backToHome')}
                     </Button>
                   </VStack>
                 </VStack>
@@ -252,7 +245,7 @@ export function Demo() {
                 spacing={2}
               >
                 <Text color="green.300" fontSize="sm" fontWeight="600">
-                  &#9679; RESULTADO
+                  &#9679; {t('result.badge')}
                 </Text>
               </HStack>
 
@@ -263,19 +256,18 @@ export function Demo() {
                 color="white"
                 lineHeight="1.2"
               >
-                E na pratica?{' '}
+                {t('result.heading')}{' '}
                 <GradientText
                   gradient="linear(to-r, green.300, green.400, brand.300)"
                   fontSize="inherit"
                   fontWeight="inherit"
                 >
-                  Atendimento funcionando.
+                  {t('result.headingGradient')}
                 </GradientText>
               </Heading>
 
               <Text color="whiteAlpha.600" fontSize={{ base: 'md', md: 'lg' }} maxW="600px">
-                Veja o workflow criado no demo respondendo um cliente real
-                no WhatsApp em tempo real.
+                {t('result.subtitle')}
               </Text>
             </VStack>
           </MotionBox>
@@ -312,13 +304,7 @@ export function Demo() {
               {/* Context */}
               <VStack align="flex-start" spacing={5} flex={1}>
                 <VStack align="flex-start" spacing={3}>
-                  {[
-                    'Cliente manda "Boa tarde, busco seguro"',
-                    'IA identifica o lead automaticamente',
-                    'Coleta CPF, dados e preferencias',
-                    'Oferece seguros residencial e celular',
-                    'Tudo em 13 segundos de execucao',
-                  ].map((item) => (
+                  {(t('result.items', { returnObjects: true }) as string[]).map((item) => (
                     <HStack key={item} spacing={3} align="flex-start">
                       <Icon as={FiCheckCircle} color="green.400" mt={0.5} flexShrink={0} />
                       <Text color="whiteAlpha.800" fontSize="md">
@@ -344,13 +330,13 @@ export function Demo() {
                     fontWeight="600"
                     fontStyle="italic"
                   >
-                    Isso e o que a IA criou no demo acima funcionando de verdade.
+                    {t('result.callout')}
                   </Text>
                 </Box>
 
                 <Button
                   as={RouterLink}
-                  to="/contato"
+                  to={lp('/contato')}
                   size="lg"
                   rightIcon={<Icon as={FiArrowRight} />}
                   bgGradient="linear(to-r, green.500, green.400)"
@@ -364,7 +350,7 @@ export function Demo() {
                   borderRadius="xl"
                   mt={2}
                 >
-                  Quero testar na minha empresa
+                  {t('result.cta')}
                 </Button>
               </VStack>
             </Flex>

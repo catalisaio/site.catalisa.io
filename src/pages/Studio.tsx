@@ -7,6 +7,7 @@ import {
   FiCpu, FiMail, FiUserPlus, FiRefreshCw, FiBarChart2,
   FiLayers, FiGitBranch, FiZap,
 } from 'react-icons/fi';
+import { useTranslation } from 'react-i18next';
 import { SectionWrapper } from '../components/shared/SectionWrapper';
 import { MotionBox } from '../components/motion';
 import { GradientText } from '../components/shared/GradientText';
@@ -17,86 +18,68 @@ import { BrowserFrame } from '../components/shared/BrowserFrame';
 
 const WHATSAPP_URL = 'https://wa.me/5511977303414?text=Ola!%20Quero%20saber%20mais%20sobre%20a%20Catalisa.';
 
-/* ── Before vs After ── */
-const beforeItems = [
-  'Briefing confuso que ninguem entende',
-  'Semanas esperando a equipe de TI',
-  'Resultado diferente do que foi pedido',
-  'Voltar ao inicio toda vez que algo muda',
-  'Depender de dev pra qualquer ajuste',
-];
-
-const afterItems = [
-  'Descreva em linguagem natural',
-  'Pronto em minutos, nao semanas',
-  'Especificacao validada antes de executar',
-  'IA refina antes de construir',
-  'Voce ajusta com um clique',
-];
-
-/* ── Templates ── */
-const templates = [
-  {
-    icon: FiMessageCircle,
-    title: 'Boas-vindas WhatsApp',
-    description: 'Enviar mensagem personalizada para novos leads automaticamente.',
-    color: 'whatsapp.500',
-  },
-  {
-    icon: FiCpu,
-    title: 'Qualificacao IA',
-    description: 'Qualificar leads automaticamente com agente inteligente.',
-    color: 'purple.500',
-  },
-  {
-    icon: FiMail,
-    title: 'Notificacao',
-    description: 'Notificar equipe quando um lead e atualizado.',
-    color: 'blue.500',
-  },
-  {
-    icon: FiUserPlus,
-    title: 'Auto-criar Lead',
-    description: 'Criar lead automaticamente ao receber mensagem no WhatsApp.',
-    color: 'orange.500',
-  },
-  {
-    icon: FiRefreshCw,
-    title: 'Reengajar Inativos',
-    description: 'Enviar mensagem para leads sem interacao ha dias.',
-    color: 'red.400',
-  },
-  {
-    icon: FiBarChart2,
-    title: 'Relatorio Semanal',
-    description: 'Gerar e enviar metricas de desempenho automaticamente.',
-    color: 'teal.500',
-  },
-];
-
-/* ── Why Studio ── */
-const differentiators = [
-  {
-    icon: FiShield,
-    title: 'Especificacao antes da execucao',
-    description:
-      'A IA nao sai fazendo. Ela gera requisitos, design e tarefas pra voce validar ANTES de construir. Zero desperdicio.',
-  },
-  {
-    icon: FiMessageCircle,
-    title: 'Linguagem natural, resultado profissional',
-    description:
-      'Voce fala como fala. A IA traduz para uma especificacao tecnica completa. Sem intermediarios.',
-  },
-  {
-    icon: FiLayers,
-    title: 'Do Builder ao Canvas, tudo conectado',
-    description:
-      'O que o Builder cria aparece no canvas visual pronto. Triggers, acoes, conexoes — tudo configurado.',
-  },
-];
-
 export function Studio() {
+  const { t } = useTranslation('studio');
+  const beforeItems = t('beforeAfter.before', { returnObjects: true }) as string[];
+  const afterItems = t('beforeAfter.after', { returnObjects: true }) as string[];
+
+  const templates = [
+    {
+      icon: FiMessageCircle,
+      title: t('templates.items.0.title'),
+      description: t('templates.items.0.description'),
+      color: 'whatsapp.500',
+    },
+    {
+      icon: FiCpu,
+      title: t('templates.items.1.title'),
+      description: t('templates.items.1.description'),
+      color: 'purple.500',
+    },
+    {
+      icon: FiMail,
+      title: t('templates.items.2.title'),
+      description: t('templates.items.2.description'),
+      color: 'blue.500',
+    },
+    {
+      icon: FiUserPlus,
+      title: t('templates.items.3.title'),
+      description: t('templates.items.3.description'),
+      color: 'orange.500',
+    },
+    {
+      icon: FiRefreshCw,
+      title: t('templates.items.4.title'),
+      description: t('templates.items.4.description'),
+      color: 'red.400',
+    },
+    {
+      icon: FiBarChart2,
+      title: t('templates.items.5.title'),
+      description: t('templates.items.5.description'),
+      color: 'teal.500',
+    },
+  ];
+
+  const differentiators = [
+    {
+      icon: FiShield,
+      title: t('whyStudio.items.0.title'),
+      description: t('whyStudio.items.0.description'),
+    },
+    {
+      icon: FiMessageCircle,
+      title: t('whyStudio.items.1.title'),
+      description: t('whyStudio.items.1.description'),
+    },
+    {
+      icon: FiLayers,
+      title: t('whyStudio.items.2.title'),
+      description: t('whyStudio.items.2.description'),
+    },
+  ];
+
   return (
     <>
       {/* ─── Section 1: Hero (dark bg) ─── */}
@@ -113,20 +96,19 @@ export function Studio() {
               spacing={2}
             >
               <Text color="brand.300" fontSize="sm" fontWeight="600">
-                &#10022; CATALISA STUDIO
+                &#10022; {t('hero.badge')}
               </Text>
             </HStack>
 
             <Heading as="h1" size="2xl" fontWeight="800" color="white" lineHeight="1.15">
-              Da ideia a producao.{' '}
+              {t('hero.heading')}{' '}
               <GradientText gradient="linear(to-r, brand.300, brand.400, catalisa.accent)">
-                Sem codigo.
+                {t('hero.headingGradient')}
               </GradientText>
             </Heading>
 
             <Text color="whiteAlpha.700" fontSize="lg" maxW="600px" lineHeight="1.7">
-              Descreva o que precisa em linguagem natural. A IA entende,
-              especifica e constroi — workflows, triggers, acoes, tudo.
+              {t('hero.subtitle')}
             </Text>
 
             <HStack spacing={4} flexWrap="wrap" justify="center">
@@ -142,7 +124,7 @@ export function Studio() {
                 transition="all 0.2s"
                 fontWeight="700"
               >
-                Vamos conversar
+                {t('cta.letsChat', { ns: 'common' })}
               </Button>
               <Button
                 as="a"
@@ -154,15 +136,15 @@ export function Studio() {
                 border="1px solid"
                 _hover={{ bg: 'whiteAlpha.100', color: 'white' }}
               >
-                Ver em acao
+                {t('cta.seeInAction', { ns: 'common' })}
               </Button>
             </HStack>
 
             <HStack spacing={{ base: 4, md: 8 }} flexWrap="wrap" justify="center" pt={4}>
               {[
-                { icon: FiCode, label: 'Zero codigo' },
-                { icon: FiClock, label: 'Minutos, nao meses' },
-                { icon: FiShield, label: 'Spec-driven' },
+                { icon: FiCode, label: t('hero.stats.0.label') },
+                { icon: FiClock, label: t('hero.stats.1.label') },
+                { icon: FiShield, label: t('hero.stats.2.label') },
               ].map((stat) => (
                 <HStack key={stat.label} spacing={2}>
                   <Icon as={stat.icon} color="brand.300" boxSize={4} />
@@ -180,11 +162,11 @@ export function Studio() {
       <SectionWrapper>
         <VStack spacing={4} textAlign="center" mb={12}>
           <Heading as="h2" size="xl" fontWeight="800">
-            Antes vs{' '}
-            <Text as="span" color="brand.500">Com Studio</Text>
+            {t('beforeAfter.heading')}{' '}
+            <Text as="span" color="brand.500">{t('beforeAfter.headingHighlight')}</Text>
           </Heading>
           <Text color="gray.500" maxW="500px">
-            Chega de semanas perdidas. Com Studio, voce descreve e a IA entrega.
+            {t('beforeAfter.subtitle')}
           </Text>
         </VStack>
 
@@ -205,7 +187,7 @@ export function Studio() {
               h="full"
             >
               <Text fontWeight="700" color="red.600" fontSize="sm" textTransform="uppercase" mb={5}>
-                Antes
+                {t('beforeAfter.beforeLabel')}
               </Text>
               <List spacing={4}>
                 {beforeItems.map((item) => (
@@ -234,7 +216,7 @@ export function Studio() {
               h="full"
             >
               <Text fontWeight="700" color="green.600" fontSize="sm" textTransform="uppercase" mb={5}>
-                Com Studio
+                {t('beforeAfter.afterLabel')}
               </Text>
               <List spacing={4}>
                 {afterItems.map((item) => (
@@ -263,29 +245,28 @@ export function Studio() {
         >
           <VStack align="flex-start" spacing={5} flex={1} maxW={{ lg: '400px' }}>
             <Badge colorScheme="green" fontSize="xs" px={3} py={1} borderRadius="full">
-              CANVAS VISUAL
+              {t('canvas.badge')}
             </Badge>
             <Heading as="h2" size="xl" fontWeight="800" lineHeight="1.2">
-              O resultado?{' '}
-              <Text as="span" color="brand.500">Workflows visuais prontos para producao.</Text>
+              {t('canvas.heading')}{' '}
+              <Text as="span" color="brand.500">{t('canvas.headingHighlight')}</Text>
             </Heading>
             <Text color="gray.500" fontSize="md" lineHeight="1.7">
-              O Builder gera workflows completos no canvas visual.
-              Drag & drop, execucao paralela, 150+ building blocks.
+              {t('canvas.subtitle')}
             </Text>
 
             <VStack align="flex-start" spacing={3} w="full" pt={2}>
               <HStack spacing={3} p={3} bg="green.50" borderRadius="lg" w="full">
                 <Icon as={FiLayers} color="green.500" />
-                <Text fontSize="sm" fontWeight="500">Canvas drag & drop intuitivo</Text>
+                <Text fontSize="sm" fontWeight="500">{t('canvas.features.0')}</Text>
               </HStack>
               <HStack spacing={3} p={3} bg="blue.50" borderRadius="lg" w="full">
                 <Icon as={FiGitBranch} color="blue.500" />
-                <Text fontSize="sm" fontWeight="500">Execucao paralela automatica (DAG)</Text>
+                <Text fontSize="sm" fontWeight="500">{t('canvas.features.1')}</Text>
               </HStack>
               <HStack spacing={3} p={3} bg="purple.50" borderRadius="lg" w="full">
                 <Icon as={FiZap} color="purple.500" />
-                <Text fontSize="sm" fontWeight="500">150+ building blocks composiveis</Text>
+                <Text fontSize="sm" fontWeight="500">{t('canvas.features.2')}</Text>
               </HStack>
             </VStack>
           </VStack>
@@ -356,19 +337,18 @@ export function Studio() {
                 spacing={2}
               >
                 <Text color="brand.300" fontSize="sm" fontWeight="600">
-                  &#10022; PLATAFORMA COMPLETA
+                  &#10022; {t('dashboard.badge')}
                 </Text>
               </HStack>
 
               <Heading as="h2" fontSize={{ base: '2xl', md: '3xl', lg: '4xl' }} fontWeight="800" color="white" lineHeight="1.2">
-                Tudo num so lugar.{' '}
+                {t('dashboard.heading')}{' '}
                 <GradientText gradient="linear(to-r, brand.300, brand.400, catalisa.accent)" fontSize="inherit" fontWeight="inherit">
-                  Dashboard, CRM e automacao.
+                  {t('dashboard.headingGradient')}
                 </GradientText>
               </Heading>
               <Text color="whiteAlpha.600" fontSize={{ base: 'md', md: 'lg' }} maxW="550px">
-                Leads, metricas, mensagens e workflows — tudo integrado num painel unico.
-                Sem alternar entre ferramentas.
+                {t('dashboard.subtitle')}
               </Text>
             </VStack>
           </MotionBox>
@@ -426,9 +406,9 @@ export function Studio() {
               flexWrap="wrap"
             >
               {[
-                { value: '98%', label: 'Uptime garantido' },
-                { value: '150+', label: 'Building blocks' },
-                { value: '<3min', label: 'Setup completo' },
+                { value: t('dashboard.stats.0.value'), label: t('dashboard.stats.0.label') },
+                { value: t('dashboard.stats.1.value'), label: t('dashboard.stats.1.label') },
+                { value: t('dashboard.stats.2.value'), label: t('dashboard.stats.2.label') },
               ].map((stat) => (
                 <VStack key={stat.label} spacing={0}>
                   <Text color="white" fontWeight="700" fontSize={{ base: 'md', md: 'lg' }}>
@@ -451,13 +431,13 @@ export function Studio() {
       <SectionWrapper>
         <VStack spacing={4} textAlign="center" mb={12}>
           <Badge colorScheme="brand" fontSize="xs" px={3} py={1} borderRadius="full">
-            TEMPLATES
+            {t('templates.badge')}
           </Badge>
           <Heading as="h2" size="xl" fontWeight="800">
-            Comece com um template pronto
+            {t('templates.heading')}
           </Heading>
           <Text color="gray.500" maxW="500px">
-            Escolha um caso de uso e o Builder monta tudo pra voce. Personalize depois se quiser.
+            {t('templates.subtitle')}
           </Text>
         </VStack>
 
@@ -496,10 +476,10 @@ export function Studio() {
         <Container maxW="1280px">
           <VStack spacing={4} textAlign="center" mb={12}>
             <Heading as="h2" size="xl" fontWeight="800" color="white">
-              Por que Studio?
+              {t('whyStudio.heading')}
             </Heading>
             <Text color="whiteAlpha.600" maxW="500px">
-              Tres diferenciais que mudam a forma como voce cria automacoes.
+              {t('whyStudio.subtitle')}
             </Text>
           </VStack>
 

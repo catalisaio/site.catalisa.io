@@ -1,0 +1,92 @@
+{
+  "hero": {
+    "badge": "AI AGENTS",
+    "heading": "Create AI specialists that work",
+    "headingGradient": "24/7 on WhatsApp",
+    "subtitle": "It's not a chatbot. It's an entire team. Each agent has its own personality, tools and context."
+  },
+  "comparison": {
+    "heading": "The difference: Assistant vs Agent vs",
+    "headingHighlight": "Team",
+    "yourProduct": "YOUR PRODUCT",
+    "agentCallout": "Your agent doesn't just inform.",
+    "agentCalloutDesc": "It qualifies leads, schedules meetings, processes documents, updates CRM, sends messages — all autonomously.",
+    "items": [
+      {
+        "type": "Chatbot",
+        "level": "Informational",
+        "description": "Answers questions based on FAQ",
+        "capabilities": ["Pre-defined answers", "Option menus", "Routes to human"]
+      },
+      {
+        "type": "AI Agent",
+        "level": "Operational",
+        "description": "Executes tasks with real tools",
+        "capabilities": ["Qualifies leads", "Schedules meetings", "Updates CRM", "Processes documents", "Sends messages"]
+      },
+      {
+        "type": "Agent Team",
+        "level": "Orchestrated",
+        "description": "Each agent specializes in one area",
+        "capabilities": ["SDR qualifies", "Support resolves", "Billing negotiates", "Onboarding guides", "Orchestration via workflow"]
+      }
+    ]
+  },
+  "howAgentsWork": {
+    "heading": "How agents work",
+    "items": [
+      { "title": "System Prompt", "description": "You define the agent's personality, rules and objective." },
+      { "title": "Tools", "description": "Choose which tools the agent can use (150+ built-in)." },
+      { "title": "Conversations", "description": "Persistent context per lead. Memory of all interactions." },
+      { "title": "Workflows", "description": "Agents embedded in automations. Triggered by events." }
+    ]
+  },
+  "marketplace": {
+    "heading": "Template Marketplace",
+    "subtitle": "Install pre-configured agents with one click. Optimized prompts and pre-selected tools."
+  },
+  "aiCapabilities": {
+    "heading": "AI processing powers",
+    "subtitle": "Each capability is a tool you freely combine.",
+    "items": [
+      { "label": "Sentiment Analysis", "description": "Detects emotion and urgency" },
+      { "label": "Summarization", "description": "Summarizes long conversations" },
+      { "label": "Classification", "description": "Automatically categorizes" },
+      { "label": "Text Generation", "description": "Creates personalized content" },
+      { "label": "Translation", "description": "Multi-language in real time" },
+      { "label": "Data Extraction", "description": "Structures free text" },
+      { "label": "Image Analysis", "description": "OCR and computer vision" },
+      { "label": "Transcription", "description": "Audio to text" }
+    ]
+  },
+  "realWorldExample": {
+    "heading": "Real example: Lead qualified via WhatsApp",
+    "steps": [
+      "Message received",
+      "Transcribes audio",
+      "Analyzes sentiment",
+      "SDR Agent qualifies",
+      "Creates CRM lead",
+      "Sends proposal"
+    ]
+  },
+  "toolsGrid": {
+    "badge": "TOOLS",
+    "heading": "21+ tool categories for agents",
+    "subtitle": "Each agent chooses which tools it can use. Here are the available categories.",
+    "items": [
+      { "title": "Search Leads", "description": "Search and filter CRM leads" },
+      { "title": "Manage Leads", "description": "Create, update and qualify leads" },
+      { "title": "WhatsApp", "description": "Send messages and media" },
+      { "title": "Calendar", "description": "Schedule and query events" },
+      { "title": "Workflows", "description": "Trigger and query workflows" },
+      { "title": "Other Agents", "description": "Orchestrate agent teams" },
+      { "title": "Custom Actions", "description": "Execute custom logic" },
+      { "title": "Notifications", "description": "Email and webhooks" },
+      { "title": "Capture", "description": "Lead capture links" },
+      { "title": "Metrics", "description": "Statistics and performance" },
+      { "title": "Data", "description": "Extraction and transformation" },
+      { "title": "External APIs", "description": "Generic HTTP integration" }
+    ]
+  }
+}

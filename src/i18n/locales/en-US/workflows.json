@@ -1,0 +1,79 @@
+{
+  "hero": {
+    "badge": "WORKFLOWS",
+    "heading": "Build visual automations.",
+    "headingGradient": "No code.",
+    "subtitle": "Drag & drop with 150+ building blocks, parallel execution (DAG), native A/B testing and variable interpolation between blocks."
+  },
+  "howItWorks": {
+    "heading": "How it works",
+    "steps": [
+      { "title": "Drag capabilities onto canvas", "description": "Choose from 150+ capabilities. Each block is configurable with visual interface." },
+      { "title": "Connect triggers to capabilities", "description": "Define what triggers the workflow: message received, lead created, webhook, schedule." },
+      { "title": "Configure each block", "description": "Parameterize variables, define conditions and connect with external APIs." },
+      { "title": "Activate with one click", "description": "Publish and monitor. See executions in real time. Rollback to any version." }
+    ]
+  },
+  "triggers": {
+    "heading": "What can trigger a workflow?",
+    "subtitle": "8 trigger types to start automations automatically or on demand.",
+    "items": [
+      { "label": "Lead created", "description": "When a new lead is registered" },
+      { "label": "Lead updated", "description": "When lead data changes" },
+      { "label": "Message received", "description": "When a WhatsApp message arrives" },
+      { "label": "Message sent", "description": "After sending a message" },
+      { "label": "Webhook received", "description": "External system triggers event" },
+      { "label": "Workflow completed", "description": "When another workflow finishes" },
+      { "label": "Schedule", "description": "Scheduled execution (cron)" },
+      { "label": "Manual", "description": "Manually triggered by team" }
+    ]
+  },
+  "workflowShowcase": {
+    "badge": "INTERACTIVE EXAMPLES",
+    "heading": "See workflows in action",
+    "subtitle": "Click each workflow to see the execution animation — from simple to complex with parallel execution.",
+    "parallel": "parallel"
+  },
+  "screenshot": {
+    "badge": "REAL PRODUCT",
+    "heading": "This is not a mockup.",
+    "headingHighlight": "It's the real editor.",
+    "description": "Catalisa's visual canvas with real parallel execution — drag blocks, connect, execute. The \"Event Hub Fan-out/Fan-in\" workflow running in production with 3 APIs in parallel."
+  },
+  "dag": {
+    "badge": "DAG EXECUTION",
+    "heading": "Parallel + Sequential",
+    "description": "Workflows execute as directed acyclic graphs (DAG). Blocks without dependencies run in parallel. Blocks with dependencies wait automatically.",
+    "features": [
+      "Independent blocks run in parallel",
+      "Branching logic with conditions",
+      "Waits for response up to 7 days",
+      "Automatic circular dependency detection"
+    ],
+    "dagExample": {
+      "trigger": "Trigger: Message",
+      "sentiment": "Sentiment",
+      "extractData": "Extract data",
+      "conditional": "Conditional",
+      "approved": "Approved",
+      "rejected": "Rejected"
+    }
+  },
+  "variables": {
+    "heading": "Capabilities talk to each other",
+    "subtitle": "Use variables to pass data between blocks. The output of one capability feeds the next.",
+    "examples": [
+      { "variable": "{{trigger.payload.phone}}", "description": "Trigger phone number" },
+      { "variable": "{{actions.createLead.output.id}}", "description": "Created lead ID" },
+      { "variable": "{{actions.aiAgent.output.response}}", "description": "AI agent response" },
+      { "variable": "{{trigger.payload.message.text}}", "description": "Message text" }
+    ]
+  },
+  "versioning": {
+    "items": [
+      { "title": "Versioning", "description": "Each save creates a version. Rollback to any point." },
+      { "title": "Execution history", "description": "See each execution with details: inputs, outputs, durations." },
+      { "title": "Replay", "description": "Re-execute any workflow with the same data for debugging." }
+    ]
+  }
+}

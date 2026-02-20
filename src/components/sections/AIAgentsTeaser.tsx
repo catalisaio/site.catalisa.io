@@ -1,6 +1,8 @@
 import { Heading, Text, VStack, Box, Flex, HStack, Icon, Button } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import { FiCpu, FiMessageCircle, FiCalendar, FiGlobe, FiUsers, FiArrowRight } from 'react-icons/fi';
+import { useTranslation } from 'react-i18next';
+import { useLocalizedPath } from '../../i18n/useLocalizedPath';
 import { SectionWrapper } from '../shared/SectionWrapper';
 import { MotionBox } from '../motion';
 
@@ -12,6 +14,8 @@ const orbitTools = [
 ];
 
 export function AIAgentsTeaser() {
+  const { t } = useTranslation('home');
+  const lp = useLocalizedPath();
   return (
     <SectionWrapper bg="gray.900">
       <Flex direction={{ base: 'column', lg: 'row' }} gap={12} align="center">
@@ -93,40 +97,40 @@ export function AIAgentsTeaser() {
         {/* Right - Content */}
         <VStack align="flex-start" spacing={6} flex={1}>
           <Heading as="h2" size="xl" fontWeight="800" color="white">
-            Seus agentes de IA.{' '}
-            <Text as="span" color="brand.300">Suas regras. Seus dados.</Text>
+            {t('aiAgentsTeaser.heading')}{' '}
+            <Text as="span" color="brand.300">{t('aiAgentsTeaser.headingHighlight')}</Text>
           </Heading>
 
           <Text color="whiteAlpha.700" fontSize="lg" lineHeight="1.7">
-            Nao e um chatbot. E uma equipe inteira. Cada agente tem personalidade, ferramentas e contexto proprios.
+            {t('aiAgentsTeaser.description')}
           </Text>
 
           {/* Before/After */}
           <HStack spacing={6} flexWrap="wrap">
             <Box bg="whiteAlpha.50" p={5} borderRadius="xl" border="1px solid" borderColor="whiteAlpha.100" flex={1} minW="200px">
-              <Text fontSize="xs" color="red.300" fontWeight="600" mb={2}>ANTES</Text>
-              <Text color="whiteAlpha.800" fontSize="sm">3 atendentes</Text>
-              <Text color="whiteAlpha.800" fontSize="sm">2h de espera</Text>
-              <Text color="whiteAlpha.800" fontSize="sm">R$ 15k/mes</Text>
+              <Text fontSize="xs" color="red.300" fontWeight="600" mb={2}>{t('aiAgentsTeaser.before.label')}</Text>
+              <Text color="whiteAlpha.800" fontSize="sm">{t('aiAgentsTeaser.before.items.0')}</Text>
+              <Text color="whiteAlpha.800" fontSize="sm">{t('aiAgentsTeaser.before.items.1')}</Text>
+              <Text color="whiteAlpha.800" fontSize="sm">{t('aiAgentsTeaser.before.items.2')}</Text>
             </Box>
             <Box bg="whiteAlpha.50" p={5} borderRadius="xl" border="1px solid" borderColor="brand.500" flex={1} minW="200px">
-              <Text fontSize="xs" color="whatsapp.400" fontWeight="600" mb={2}>DEPOIS</Text>
-              <Text color="whiteAlpha.800" fontSize="sm">Agente IA + 1 supervisor</Text>
-              <Text color="whiteAlpha.800" fontSize="sm">5 segundos de resposta</Text>
-              <Text color="whiteAlpha.800" fontSize="sm">R$ 800/mes</Text>
+              <Text fontSize="xs" color="whatsapp.400" fontWeight="600" mb={2}>{t('aiAgentsTeaser.after.label')}</Text>
+              <Text color="whiteAlpha.800" fontSize="sm">{t('aiAgentsTeaser.after.items.0')}</Text>
+              <Text color="whiteAlpha.800" fontSize="sm">{t('aiAgentsTeaser.after.items.1')}</Text>
+              <Text color="whiteAlpha.800" fontSize="sm">{t('aiAgentsTeaser.after.items.2')}</Text>
             </Box>
           </HStack>
 
           <Button
             as={Link}
-            to="/ai-agents"
+            to={lp('/ai-agents')}
             size="lg"
             bg="brand.500"
             color="white"
             _hover={{ bg: 'brand.400' }}
             rightIcon={<FiArrowRight />}
           >
-            Conhecer AI Agents
+            {t('cta.knowAIAgents', { ns: 'common' })}
           </Button>
         </VStack>
       </Flex>

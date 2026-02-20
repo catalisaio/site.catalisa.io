@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import {
   Box, Container, Heading, Text, VStack, SimpleGrid, HStack, Icon, Badge,
   Flex, Input, FormControl, FormLabel, Stat, StatLabel, StatNumber,
@@ -12,11 +13,11 @@ import { SectionWrapper } from '../components/shared/SectionWrapper';
 import { MotionBox } from '../components/motion';
 import { GradientText } from '../components/shared/GradientText';
 import { AnimatedCounter } from '../components/shared/AnimatedCounter';
-import { startupUseCases } from '../data/useCases';
+import { useTranslatedUseCases } from '../i18n/useTranslatedData';
 import { categoryBadges } from '../data/capabilityClusters';
 import { FinalCTA } from '../components/sections/FinalCTA';
 
-function ROICalculator() {
+function ROICalculator({ t }: { t: (key: string) => string }) {
   const [sdrs, setSdrs] = useState(3);
   const [leadsPerDay, setLeadsPerDay] = useState(30);
   const [costPerSdr, setCostPerSdr] = useState(4000);
@@ -29,11 +30,11 @@ function ROICalculator() {
   return (
     <Box bg="white" p={8} borderRadius="2xl" border="1px solid" borderColor="gray.200" boxShadow="lg">
       <VStack spacing={6} align="stretch">
-        <Heading as="h3" size="md" fontWeight="700">Calculadora de ROI</Heading>
+        <Heading as="h3" size="md" fontWeight="700">{t('roi.calculatorTitle')}</Heading>
 
         <SimpleGrid columns={{ base: 1, md: 3 }} spacing={4}>
           <FormControl>
-            <FormLabel fontSize="sm">SDRs atuais</FormLabel>
+            <FormLabel fontSize="sm">{t('roi.sdrsLabel')}</FormLabel>
             <Input
               type="number"
               value={sdrs}
@@ -42,7 +43,7 @@ function ROICalculator() {
             />
           </FormControl>
           <FormControl>
-            <FormLabel fontSize="sm">Leads por dia</FormLabel>
+            <FormLabel fontSize="sm">{t('roi.leadsLabel')}</FormLabel>
             <Input
               type="number"
               value={leadsPerDay}
@@ -51,7 +52,7 @@ function ROICalculator() {
             />
           </FormControl>
           <FormControl>
-            <FormLabel fontSize="sm">Custo por SDR (R$)</FormLabel>
+            <FormLabel fontSize="sm">{t('roi.costLabel')}</FormLabel>
             <Input
               type="number"
               value={costPerSdr}
@@ -63,25 +64,25 @@ function ROICalculator() {
 
         <SimpleGrid columns={{ base: 1, md: 3 }} spacing={4} pt={2}>
           <Stat>
-            <StatLabel fontSize="xs" color="gray.500">Custo atual/mes</StatLabel>
+            <StatLabel fontSize="xs" color="gray.500">{t('roi.currentCost')}</StatLabel>
             <StatNumber fontSize="xl" color="red.500">
               R$ {currentMonthlyCost.toLocaleString('pt-BR')}
             </StatNumber>
           </Stat>
           <Stat>
-            <StatLabel fontSize="xs" color="gray.500">Com Catalisa/mes</StatLabel>
+            <StatLabel fontSize="xs" color="gray.500">{t('roi.withCatalisa')}</StatLabel>
             <StatNumber fontSize="xl" color="green.500">
               R$ {Math.round(aiMonthlyCost).toLocaleString('pt-BR')}
             </StatNumber>
           </Stat>
           <Stat>
-            <StatLabel fontSize="xs" color="gray.500">Economia mensal</StatLabel>
+            <StatLabel fontSize="xs" color="gray.500">{t('roi.monthlySavings')}</StatLabel>
             <StatNumber fontSize="xl" color="cyan.500">
               R$ {Math.max(0, Math.round(savings)).toLocaleString('pt-BR')}
             </StatNumber>
             <StatHelpText>
               <StatArrow type={savings > 0 ? 'increase' : 'decrease'} />
-              {Math.abs(savingsPercent)}% de reducao
+              {Math.abs(savingsPercent)}% {t('roi.reduction')}
             </StatHelpText>
           </Stat>
         </SimpleGrid>
@@ -91,6 +92,15 @@ function ROICalculator() {
 }
 
 export function Startups() {
+  const { t } = useTranslation('startups');
+  const { startupUseCases } = useTranslatedUseCases();
+
+  const complianceIcons = [FiShield, FiCode, FiTrendingUp, FiLayers];
+  const complianceColors = ['green.400', 'cyan.400', 'purple.400', 'orange.400'];
+
+  const capabilityIcons = [FiTarget, FiUserPlus, FiCpu, FiActivity];
+  const capabilityColors = ['cyan.500', 'teal.500', 'blue.500', 'purple.500'];
+
   return (
     <>
       {/* Hero */}
@@ -98,29 +108,29 @@ export function Startups() {
         <Container maxW="1280px">
           <VStack spacing={6} textAlign="center" maxW="800px" mx="auto">
             <Badge colorScheme="cyan" fontSize="xs" px={3} py={1} borderRadius="full">
-              STARTUPS
+              {t('hero.badge')}
             </Badge>
             <Heading as="h1" size="2xl" fontWeight="800" color="white" lineHeight="1.15">
-              WhatsApp como motor de crescimento{' '}
-              <GradientText gradient="linear(to-r, cyan.300, teal.400)">para startups</GradientText>
+              {t('hero.heading')}{' '}
+              <GradientText gradient="linear(to-r, cyan.300, teal.400)">{t('hero.headingGradient')}</GradientText>
             </Heading>
             <Text color="whiteAlpha.700" fontSize="lg" maxW="600px" lineHeight="1.7">
-              91% taxa de abertura. 10x mais barato que call center. Menos de 1 minuto de tempo de resposta.
+              {t('hero.subtitle')}
             </Text>
 
             {/* Market stats */}
             <SimpleGrid columns={{ base: 2, md: 3 }} spacing={6} pt={4}>
               <VStack>
                 <AnimatedCounter target={91} suffix="%" fontSize="3xl" fontWeight="800" color="whatsapp.400" />
-                <Text color="whiteAlpha.600" fontSize="xs">Taxa de abertura</Text>
+                <Text color="whiteAlpha.600" fontSize="xs">{t('hero.stats.openRate')}</Text>
               </VStack>
               <VStack>
                 <Text fontSize="3xl" fontWeight="800" color="cyan.300">10x</Text>
-                <Text color="whiteAlpha.600" fontSize="xs">Mais barato que call center</Text>
+                <Text color="whiteAlpha.600" fontSize="xs">{t('hero.stats.cheaper')}</Text>
               </VStack>
               <VStack>
                 <Text fontSize="3xl" fontWeight="800" color="teal.300">&lt;1min</Text>
-                <Text color="whiteAlpha.600" fontSize="xs">Tempo de resposta</Text>
+                <Text color="whiteAlpha.600" fontSize="xs">{t('hero.stats.responseTime')}</Text>
               </VStack>
             </SimpleGrid>
           </VStack>
@@ -141,7 +151,7 @@ export function Startups() {
               {/* Before/After */}
               <SimpleGrid columns={2} spacing={4} w="full" pt={2}>
                 <Box bg="red.50" p={4} borderRadius="xl" border="1px solid" borderColor="red.100">
-                  <Text fontSize="xs" fontWeight="700" color="red.500" mb={2}>ANTES</Text>
+                  <Text fontSize="xs" fontWeight="700" color="red.500" mb={2}>{t('beforeAfter.before')}</Text>
                   {useCase.before.map((item) => (
                     <HStack key={item.metric} justify="space-between" mb={1}>
                       <Text fontSize="xs" color="gray.600">{item.metric}</Text>
@@ -150,7 +160,7 @@ export function Startups() {
                   ))}
                 </Box>
                 <Box bg="green.50" p={4} borderRadius="xl" border="1px solid" borderColor="green.100">
-                  <Text fontSize="xs" fontWeight="700" color="green.500" mb={2}>DEPOIS</Text>
+                  <Text fontSize="xs" fontWeight="700" color="green.500" mb={2}>{t('beforeAfter.after')}</Text>
                   {useCase.after.map((item) => (
                     <HStack key={item.metric} justify="space-between" mb={1}>
                       <Text fontSize="xs" color="gray.600">{item.metric}</Text>
@@ -165,7 +175,7 @@ export function Startups() {
             <Box flex={1} maxW={{ lg: '400px' }}>
               <Box bg="white" p={5} borderRadius="xl" border="1px solid" borderColor="gray.200">
                 <Text fontSize="xs" fontWeight="700" color="gray.400" mb={3} textTransform="uppercase">
-                  Workflow
+                  {t('workflow')}
                 </Text>
                 <VStack align="stretch" spacing={2}>
                   {useCase.workflowSteps.map((step, i) => (
@@ -204,18 +214,13 @@ export function Startups() {
       <SectionWrapper bg="gray.900">
         <VStack spacing={6} textAlign="center">
           <Heading as="h2" size="xl" fontWeight="800" color="white">
-            Infraestrutura pronta para escalar
+            {t('compliance.heading')}
           </Heading>
 
           <SimpleGrid columns={{ base: 1, sm: 2, lg: 4 }} spacing={4} w="full" pt={4}>
-            {[
-              { icon: FiShield, label: 'Conformidade LGPD', description: 'Protecao de dados desde o dia zero', color: 'green.400' },
-              { icon: FiCode, label: 'API-first', description: 'Integre com qualquer stack em minutos', color: 'cyan.400' },
-              { icon: FiTrendingUp, label: 'Escalabilidade', description: 'De 10 a 10.000 conversas sem mudar nada', color: 'purple.400' },
-              { icon: FiLayers, label: 'Isolamento Total', description: 'Multi-tenant com dados isolados por empresa', color: 'orange.400' },
-            ].map((item, i) => (
+            {[0, 1, 2, 3].map((i) => (
               <MotionBox
-                key={item.label}
+                key={t(`compliance.items.${i}.label`)}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -223,9 +228,9 @@ export function Startups() {
               >
                 <Box bg="whiteAlpha.50" p={5} borderRadius="xl" border="1px solid" borderColor="whiteAlpha.100" h="full">
                   <VStack spacing={3}>
-                    <Icon as={item.icon} boxSize={6} color={item.color} />
-                    <Text fontWeight="600" color="white" fontSize="sm">{item.label}</Text>
-                    <Text color="whiteAlpha.600" fontSize="xs">{item.description}</Text>
+                    <Icon as={complianceIcons[i]} boxSize={6} color={complianceColors[i]} />
+                    <Text fontWeight="600" color="white" fontSize="sm">{t(`compliance.items.${i}.label`)}</Text>
+                    <Text color="whiteAlpha.600" fontSize="xs">{t(`compliance.items.${i}.description`)}</Text>
                   </VStack>
                 </Box>
               </MotionBox>
@@ -238,38 +243,33 @@ export function Startups() {
       <SectionWrapper>
         <VStack spacing={4} textAlign="center" mb={12}>
           <Badge colorScheme="cyan" fontSize="xs" px={3} py={1} borderRadius="full">
-            CAPACIDADES PARA STARTUPS
+            {t('capabilities.badge')}
           </Badge>
           <Heading as="h2" size="xl" fontWeight="800">
-            Cresça rapido com IA no WhatsApp
+            {t('capabilities.heading')}
           </Heading>
           <Text color="gray.500" maxW="600px">
-            Qualificacao automatica, onboarding inteligente, suporte escalavel e analytics em tempo real.
+            {t('capabilities.subtitle')}
           </Text>
         </VStack>
 
         <SimpleGrid columns={{ base: 1, sm: 2, lg: 4 }} spacing={5}>
-          {[
-            { icon: FiTarget, title: 'Qualificacao IA', description: 'SDR automatizado que qualifica leads 24/7 sem intervencao humana.', color: 'cyan.500' },
-            { icon: FiUserPlus, title: 'Onboarding Automatizado', description: 'Guie novos usuarios pelo produto com tutoriais conversacionais.', color: 'teal.500' },
-            { icon: FiCpu, title: 'Suporte Inteligente', description: 'IA resolve 75% dos tickets sem escalar para humanos.', color: 'blue.500' },
-            { icon: FiActivity, title: 'Analytics em Tempo Real', description: 'NPS, engajamento e metricas de conversao atualizados ao vivo.', color: 'purple.500' },
-          ].map((item, i) => (
+          {[0, 1, 2, 3].map((i) => (
             <MotionBox
-              key={item.title}
+              key={t(`capabilities.items.${i}.title`)}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, duration: 0.4 }}
             >
               <Box bg="white" p={6} borderRadius="xl" border="1px solid" borderColor="gray.100" h="full"
-                _hover={{ borderColor: item.color, boxShadow: 'md', transform: 'translateY(-2px)' }}
+                _hover={{ borderColor: capabilityColors[i], boxShadow: 'md', transform: 'translateY(-2px)' }}
                 transition="all 0.2s"
               >
                 <VStack align="flex-start" spacing={3}>
-                  <Icon as={item.icon} boxSize={6} color={item.color} />
-                  <Heading as="h3" size="sm" fontWeight="700">{item.title}</Heading>
-                  <Text color="gray.500" fontSize="sm" lineHeight="1.6">{item.description}</Text>
+                  <Icon as={capabilityIcons[i]} boxSize={6} color={capabilityColors[i]} />
+                  <Heading as="h3" size="sm" fontWeight="700">{t(`capabilities.items.${i}.title`)}</Heading>
+                  <Text color="gray.500" fontSize="sm" lineHeight="1.6">{t(`capabilities.items.${i}.description`)}</Text>
                 </VStack>
               </Box>
             </MotionBox>
@@ -278,8 +278,8 @@ export function Startups() {
 
         <Box bg="cyan.50" p={6} borderRadius="xl" mt={8} textAlign="center" border="1px solid" borderColor="cyan.100">
           <Text color="gray.700" fontSize="md" fontWeight="500">
-            <Text as="span" fontWeight="700" color="cyan.700">Pipeline completo:</Text>{' '}
-            Lead &rarr; Qualificacao &rarr; Demo &rarr; Onboarding &rarr; Suporte &rarr; Retencao
+            <Text as="span" fontWeight="700" color="cyan.700">{t('capabilities.pipelineLabel')}</Text>{' '}
+            {t('capabilities.pipelineSteps')}
           </Text>
         </Box>
       </SectionWrapper>
@@ -290,15 +290,15 @@ export function Startups() {
           <HStack>
             <Icon as={FiDollarSign} boxSize={6} color="cyan.500" />
             <Heading as="h2" size="xl" fontWeight="800">
-              Quanto voce economiza?
+              {t('roi.heading')}
             </Heading>
           </HStack>
           <Text color="gray.500" maxW="500px">
-            Simule a economia mensal ao substituir SDRs manuais por agentes de IA.
+            {t('roi.subtitle')}
           </Text>
         </VStack>
         <Box maxW="900px" mx="auto">
-          <ROICalculator />
+          <ROICalculator t={t} />
         </Box>
       </SectionWrapper>
 

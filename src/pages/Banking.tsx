@@ -8,15 +8,16 @@ import {
   FiShield, FiLock, FiKey, FiUsers, FiArrowRight, FiDollarSign,
   FiGlobe, FiDatabase, FiCheckCircle, FiCpu,
 } from 'react-icons/fi';
+import { useTranslation } from 'react-i18next';
 import { SectionWrapper } from '../components/shared/SectionWrapper';
 import { MotionBox } from '../components/motion';
 import { GradientText } from '../components/shared/GradientText';
 import { AnimatedCounter } from '../components/shared/AnimatedCounter';
-import { bankingUseCases } from '../data/useCases';
+import { useTranslatedUseCases } from '../i18n/useTranslatedData';
 import { categoryBadges } from '../data/capabilityClusters';
 import { FinalCTA } from '../components/sections/FinalCTA';
 
-function BankingROICalculator() {
+function BankingROICalculator({ t, locale }: { t: (key: string) => string; locale: string }) {
   const [branches, setBranches] = useState(10);
   const [transactionsPerDay, setTransactionsPerDay] = useState(200);
   const [costPerTransaction, setCostPerTransaction] = useState(8);
@@ -29,11 +30,11 @@ function BankingROICalculator() {
   return (
     <Box bg="white" p={8} borderRadius="2xl" border="1px solid" borderColor="gray.200" boxShadow="lg">
       <VStack spacing={6} align="stretch">
-        <Heading as="h3" size="md" fontWeight="700">Calculadora de ROI Bancario</Heading>
+        <Heading as="h3" size="md" fontWeight="700">{t('roi.calc.title')}</Heading>
 
         <SimpleGrid columns={{ base: 1, md: 3 }} spacing={4}>
           <FormControl>
-            <FormLabel fontSize="sm">Numero de agencias</FormLabel>
+            <FormLabel fontSize="sm">{t('roi.calc.fields.branches')}</FormLabel>
             <Input
               type="number"
               value={branches}
@@ -42,7 +43,7 @@ function BankingROICalculator() {
             />
           </FormControl>
           <FormControl>
-            <FormLabel fontSize="sm">Transacoes/dia por agencia</FormLabel>
+            <FormLabel fontSize="sm">{t('roi.calc.fields.transactionsPerDay')}</FormLabel>
             <Input
               type="number"
               value={transactionsPerDay}
@@ -51,7 +52,7 @@ function BankingROICalculator() {
             />
           </FormControl>
           <FormControl>
-            <FormLabel fontSize="sm">Custo por transacao (R$)</FormLabel>
+            <FormLabel fontSize="sm">{t('roi.calc.fields.costPerTransaction')}</FormLabel>
             <Input
               type="number"
               value={costPerTransaction}
@@ -63,25 +64,25 @@ function BankingROICalculator() {
 
         <SimpleGrid columns={{ base: 1, md: 3 }} spacing={4} pt={2}>
           <Stat>
-            <StatLabel fontSize="xs" color="gray.500">Custo atual/mes</StatLabel>
+            <StatLabel fontSize="xs" color="gray.500">{t('roi.calc.stats.currentCost')}</StatLabel>
             <StatNumber fontSize="xl" color="red.500">
-              R$ {currentMonthlyCost.toLocaleString('pt-BR')}
+              {t('roi.calc.currency')} {currentMonthlyCost.toLocaleString(locale)}
             </StatNumber>
           </Stat>
           <Stat>
-            <StatLabel fontSize="xs" color="gray.500">Com Catalisa/mes</StatLabel>
+            <StatLabel fontSize="xs" color="gray.500">{t('roi.calc.stats.withCatalisa')}</StatLabel>
             <StatNumber fontSize="xl" color="green.500">
-              R$ {Math.round(aiMonthlyCost).toLocaleString('pt-BR')}
+              {t('roi.calc.currency')} {Math.round(aiMonthlyCost).toLocaleString(locale)}
             </StatNumber>
           </Stat>
           <Stat>
-            <StatLabel fontSize="xs" color="gray.500">Economia mensal</StatLabel>
+            <StatLabel fontSize="xs" color="gray.500">{t('roi.calc.stats.monthlySavings')}</StatLabel>
             <StatNumber fontSize="xl" color="brand.500">
-              R$ {Math.max(0, Math.round(savings)).toLocaleString('pt-BR')}
+              {t('roi.calc.currency')} {Math.max(0, Math.round(savings)).toLocaleString(locale)}
             </StatNumber>
             <StatHelpText>
               <StatArrow type={savings > 0 ? 'increase' : 'decrease'} />
-              {Math.abs(savingsPercent)}% de reducao
+              {Math.abs(savingsPercent)}% {t('roi.calc.reduction')}
             </StatHelpText>
           </Stat>
         </SimpleGrid>
@@ -90,7 +91,16 @@ function BankingROICalculator() {
   );
 }
 
+const complianceIcons = [FiShield, FiLock, FiKey, FiUsers];
+const complianceColors = ['green.400', 'blue.400', 'purple.400', 'orange.400'];
+const capabilityIcons = [FiGlobe, FiDatabase, FiCpu, FiCheckCircle];
+const capabilityColors = ['blue.500', 'green.500', 'purple.500', 'brand.500'];
+
 export function Banking() {
+  const { t, i18n } = useTranslation('banking');
+  const { bankingUseCases } = useTranslatedUseCases();
+  const locale = i18n.language === 'pt-BR' ? 'pt-BR' : 'en-US';
+
   return (
     <>
       {/* Hero */}
@@ -98,28 +108,28 @@ export function Banking() {
         <Container maxW="1280px">
           <VStack spacing={6} textAlign="center" maxW="800px" mx="auto">
             <Badge colorScheme="blue" fontSize="xs" px={3} py={1} borderRadius="full">
-              BANCARIO
+              {t('hero.badge')}
             </Badge>
             <Heading as="h1" size="2xl" fontWeight="800" color="white" lineHeight="1.15">
-              WhatsApp como canal bancario{' '}
-              <GradientText gradient="linear(to-r, catalisa.secondary, catalisa.accent)">inteligente</GradientText>
+              {t('hero.heading')}{' '}
+              <GradientText gradient="linear(to-r, catalisa.secondary, catalisa.accent)">{t('hero.headingGradient')}</GradientText>
             </Heading>
             <Text color="whiteAlpha.700" fontSize="lg" maxW="600px" lineHeight="1.7">
-              148M de brasileiros no WhatsApp. 82% das transacoes bancarias sao digitais. 85% dos bancos ja tem chatbot.
+              {t('hero.subtitle')}
             </Text>
 
             <SimpleGrid columns={{ base: 2, md: 3 }} spacing={6} pt={4}>
               <VStack>
                 <AnimatedCounter target={148} suffix="M" fontSize="3xl" fontWeight="800" color="white" />
-                <Text color="whiteAlpha.600" fontSize="xs">Usuarios WhatsApp BR</Text>
+                <Text color="whiteAlpha.600" fontSize="xs">{t('hero.stats.stat1.label')}</Text>
               </VStack>
               <VStack>
                 <AnimatedCounter target={82} suffix="%" fontSize="3xl" fontWeight="800" color="whatsapp.400" />
-                <Text color="whiteAlpha.600" fontSize="xs">Transacoes digitais</Text>
+                <Text color="whiteAlpha.600" fontSize="xs">{t('hero.stats.stat2.label')}</Text>
               </VStack>
               <VStack>
                 <AnimatedCounter target={76} suffix="%" fontSize="3xl" fontWeight="800" color="catalisa.secondary" />
-                <Text color="whiteAlpha.600" fontSize="xs">Crescimento messaging YoY</Text>
+                <Text color="whiteAlpha.600" fontSize="xs">{t('hero.stats.stat3.label')}</Text>
               </VStack>
             </SimpleGrid>
           </VStack>
@@ -130,26 +140,20 @@ export function Banking() {
       <SectionWrapper>
         <VStack spacing={4} textAlign="center" mb={10}>
           <Badge colorScheme="blue" fontSize="xs" px={3} py={1} borderRadius="full">
-            MERCADO
+            {t('market.badge')}
           </Badge>
           <Heading as="h2" size="xl" fontWeight="800">
-            O mercado bancario ja esta no WhatsApp
+            {t('market.heading')}
           </Heading>
           <Text color="gray.500" maxW="700px" lineHeight="1.7">
-            Os maiores bancos do Brasil ja utilizam WhatsApp com IA para atender clientes.
-            As transacoes por messaging cresceram 76% em um ano (70.9M para 125.2M).
+            {t('market.subtitle')}
           </Text>
         </VStack>
 
         <SimpleGrid columns={{ base: 1, sm: 2, lg: 4 }} spacing={5}>
-          {[
-            { name: 'Itau', description: 'IA generativa + Pix pelo WhatsApp', highlight: 'Pioneiro em IA' },
-            { name: 'Nubank', description: '109M clientes, suporte 100% digital', highlight: '109M clientes' },
-            { name: 'PicPay', description: 'Pix por audio com IA no WhatsApp', highlight: 'Pix por audio' },
-            { name: 'C6 Bank', description: 'Assistente IA para operacoes bancarias', highlight: 'Assistente IA' },
-          ].map((bank, i) => (
+          {[0, 1, 2, 3].map((i) => (
             <MotionBox
-              key={bank.name}
+              key={t(`market.banks.${i}.name`)}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -160,9 +164,9 @@ export function Banking() {
                 transition="all 0.2s"
               >
                 <VStack align="flex-start" spacing={2}>
-                  <Badge colorScheme="blue" fontSize="2xs">{bank.highlight}</Badge>
-                  <Heading as="h3" size="sm" fontWeight="700">{bank.name}</Heading>
-                  <Text color="gray.500" fontSize="sm">{bank.description}</Text>
+                  <Badge colorScheme="blue" fontSize="2xs">{t(`market.banks.${i}.highlight`)}</Badge>
+                  <Heading as="h3" size="sm" fontWeight="700">{t(`market.banks.${i}.name`)}</Heading>
+                  <Text color="gray.500" fontSize="sm">{t(`market.banks.${i}.description`)}</Text>
                 </VStack>
               </Box>
             </MotionBox>
@@ -171,9 +175,9 @@ export function Banking() {
 
         <Box bg="blue.50" p={5} borderRadius="xl" mt={8} textAlign="center" border="1px solid" borderColor="blue.100">
           <Text color="gray.700" fontSize="md" fontStyle="italic">
-            "85% dos bancos brasileiros tem chatbot no WhatsApp"
+            {t('market.quote')}
           </Text>
-          <Text color="gray.400" fontSize="xs" mt={1}>— Finsiders / FEBRABAN, 2024</Text>
+          <Text color="gray.400" fontSize="xs" mt={1}>{t('market.quoteSource')}</Text>
         </Box>
       </SectionWrapper>
 
@@ -189,7 +193,7 @@ export function Banking() {
 
               <SimpleGrid columns={2} spacing={4} w="full" pt={2}>
                 <Box bg="red.50" p={4} borderRadius="xl" border="1px solid" borderColor="red.100">
-                  <Text fontSize="xs" fontWeight="700" color="red.500" mb={2}>ANTES</Text>
+                  <Text fontSize="xs" fontWeight="700" color="red.500" mb={2}>{t('beforeAfter.before')}</Text>
                   {useCase.before.map((item) => (
                     <HStack key={item.metric} justify="space-between" mb={1}>
                       <Text fontSize="xs" color="gray.600">{item.metric}</Text>
@@ -198,7 +202,7 @@ export function Banking() {
                   ))}
                 </Box>
                 <Box bg="green.50" p={4} borderRadius="xl" border="1px solid" borderColor="green.100">
-                  <Text fontSize="xs" fontWeight="700" color="green.500" mb={2}>DEPOIS</Text>
+                  <Text fontSize="xs" fontWeight="700" color="green.500" mb={2}>{t('beforeAfter.after')}</Text>
                   {useCase.after.map((item) => (
                     <HStack key={item.metric} justify="space-between" mb={1}>
                       <Text fontSize="xs" color="gray.600">{item.metric}</Text>
@@ -212,7 +216,7 @@ export function Banking() {
             <Box flex={1} maxW={{ lg: '400px' }}>
               <Box bg="white" p={5} borderRadius="xl" border="1px solid" borderColor="gray.200">
                 <Text fontSize="xs" fontWeight="700" color="gray.400" mb={3} textTransform="uppercase">
-                  Workflow
+                  {t('workflow')}
                 </Text>
                 <VStack align="stretch" spacing={2}>
                   {useCase.workflowSteps.map((step, i) => (
@@ -251,21 +255,16 @@ export function Banking() {
       <SectionWrapper bg="gray.900">
         <VStack spacing={6} textAlign="center">
           <Heading as="h2" size="xl" fontWeight="800" color="white">
-            Compliance e regulatorio bancario
+            {t('compliance.heading')}
           </Heading>
           <Text color="whiteAlpha.600" maxW="600px">
-            Conformidade com BACEN, LGPD e Open Finance integrada em cada capacidade.
+            {t('compliance.subtitle')}
           </Text>
 
           <SimpleGrid columns={{ base: 1, sm: 2, lg: 4 }} spacing={4} w="full" pt={4}>
-            {[
-              { icon: FiShield, label: 'Conformidade BACEN/LGPD', description: 'Protecao automatica de dados sensiveis', color: 'green.400' },
-              { icon: FiLock, label: 'Criptografia Bancaria', description: 'Dados protegidos com criptografia avancada', color: 'blue.400' },
-              { icon: FiKey, label: 'Auditoria Digital', description: 'Trilha de auditoria completa e imutavel', color: 'purple.400' },
-              { icon: FiUsers, label: 'Isolamento e Controle', description: 'Multi-tenant com controle de acesso granular', color: 'orange.400' },
-            ].map((item, i) => (
+            {complianceIcons.map((icon, i) => (
               <MotionBox
-                key={item.label}
+                key={t(`compliance.items.${i}.label`)}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -273,9 +272,9 @@ export function Banking() {
               >
                 <Box bg="whiteAlpha.50" p={5} borderRadius="xl" border="1px solid" borderColor="whiteAlpha.100" h="full">
                   <VStack spacing={3}>
-                    <Icon as={item.icon} boxSize={6} color={item.color} />
-                    <Text fontWeight="600" color="white" fontSize="sm">{item.label}</Text>
-                    <Text color="whiteAlpha.600" fontSize="xs">{item.description}</Text>
+                    <Icon as={icon} boxSize={6} color={complianceColors[i]} />
+                    <Text fontWeight="600" color="white" fontSize="sm">{t(`compliance.items.${i}.label`)}</Text>
+                    <Text color="whiteAlpha.600" fontSize="xs">{t(`compliance.items.${i}.description`)}</Text>
                   </VStack>
                 </Box>
               </MotionBox>
@@ -288,38 +287,33 @@ export function Banking() {
       <SectionWrapper>
         <VStack spacing={4} textAlign="center" mb={12}>
           <Badge colorScheme="blue" fontSize="xs" px={3} py={1} borderRadius="full">
-            OPEN FINANCE
+            {t('capabilities.badge')}
           </Badge>
           <Heading as="h2" size="xl" fontWeight="800">
-            Integracao com Open Finance
+            {t('capabilities.heading')}
           </Heading>
           <Text color="gray.500" maxW="600px">
-            62M de consentimentos ativos e R$ 18B em operacoes de credito. Conecte dados abertos aos seus workflows.
+            {t('capabilities.subtitle')}
           </Text>
         </VStack>
 
         <SimpleGrid columns={{ base: 1, sm: 2, lg: 4 }} spacing={5}>
-          {[
-            { icon: FiGlobe, title: 'APIs Open Finance', description: 'Conecte a qualquer instituicao participante.', color: 'blue.500' },
-            { icon: FiDatabase, title: 'Validacao de Dados', description: 'Valide consentimentos e dados recebidos.', color: 'green.500' },
-            { icon: FiCpu, title: 'Motor de Decisao', description: 'Regras configuraveis para scoring com dados enriquecidos.', color: 'purple.500' },
-            { icon: FiCheckCircle, title: 'Scoring Personalizado', description: 'Taxa de juros baseada no historico real.', color: 'brand.500' },
-          ].map((item, i) => (
+          {capabilityIcons.map((icon, i) => (
             <MotionBox
-              key={item.title}
+              key={t(`capabilities.items.${i}.title`)}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, duration: 0.4 }}
             >
               <Box bg="white" p={6} borderRadius="xl" border="1px solid" borderColor="gray.100" h="full"
-                _hover={{ borderColor: item.color, boxShadow: 'md', transform: 'translateY(-2px)' }}
+                _hover={{ borderColor: capabilityColors[i], boxShadow: 'md', transform: 'translateY(-2px)' }}
                 transition="all 0.2s"
               >
                 <VStack align="flex-start" spacing={3}>
-                  <Icon as={item.icon} boxSize={6} color={item.color} />
-                  <Heading as="h3" size="sm" fontWeight="700">{item.title}</Heading>
-                  <Text color="gray.500" fontSize="sm" lineHeight="1.6">{item.description}</Text>
+                  <Icon as={icon} boxSize={6} color={capabilityColors[i]} />
+                  <Heading as="h3" size="sm" fontWeight="700">{t(`capabilities.items.${i}.title`)}</Heading>
+                  <Text color="gray.500" fontSize="sm" lineHeight="1.6">{t(`capabilities.items.${i}.description`)}</Text>
                 </VStack>
               </Box>
             </MotionBox>
@@ -328,8 +322,8 @@ export function Banking() {
 
         <Box bg="blue.50" p={6} borderRadius="xl" mt={8} textAlign="center" border="1px solid" borderColor="blue.100">
           <Text color="gray.700" fontSize="md" fontWeight="500">
-            <Text as="span" fontWeight="700" color="blue.700">Pipeline Open Finance:</Text>{' '}
-            Consentimento → Consulta Open Finance → Historico → Scoring → Decisao → Resultado
+            <Text as="span" fontWeight="700" color="blue.700">{t('capabilities.pipelineLabel')}</Text>{' '}
+            {t('capabilities.pipeline')}
           </Text>
         </Box>
       </SectionWrapper>
@@ -340,15 +334,15 @@ export function Banking() {
           <HStack>
             <Icon as={FiDollarSign} boxSize={6} color="brand.500" />
             <Heading as="h2" size="xl" fontWeight="800">
-              Quanto seu banco economiza?
+              {t('roi.heading')}
             </Heading>
           </HStack>
           <Text color="gray.500" maxW="500px">
-            Simule a economia mensal ao migrar transacoes de agencia para WhatsApp com IA.
+            {t('roi.subtitle')}
           </Text>
         </VStack>
         <Box maxW="900px" mx="auto">
-          <BankingROICalculator />
+          <BankingROICalculator t={t} locale={locale} />
         </Box>
       </SectionWrapper>
 

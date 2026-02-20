@@ -1,4 +1,5 @@
 import { Box, Flex, Text, VStack } from '@chakra-ui/react';
+import { useTranslation } from 'react-i18next';
 import { MotionBox } from '../motion';
 
 export interface ChatMessage {
@@ -8,37 +9,31 @@ export interface ChatMessage {
   time?: string;
 }
 
-const defaultMessages: ChatMessage[] = [
-  { text: 'Oi, quero contratar um emprestimo', sent: false, delay: 0.2 },
-  { text: 'Otimo! Ja puxei seus dados pre-aprovados. Voce tem limite de ate R$ 25.000. Qual valor deseja?', sent: true, delay: 0.8 },
-  { text: 'R$ 15.000 em 24x', sent: false, delay: 1.6 },
-  { text: 'Pronto! Contrato gerado:\n\nValor: R$ 15.000\nParcelas: 24x de R$ 743,25\nTaxa: 1,89% a.m.\n\nVou enviar o link para assinatura digital agora.', sent: true, delay: 2.4 },
-  { text: 'Perfeito, vou assinar!', sent: false, delay: 3.4 },
-];
+export function useCreditMessages(): ChatMessage[] {
+  const { t } = useTranslation('home');
+  return t('chatPreview.creditMessages', { returnObjects: true }) as ChatMessage[];
+}
 
-export const insuranceMessages: ChatMessage[] = [
-  { text: 'Preciso renovar meu seguro auto', sent: false, delay: 0.2 },
-  { text: 'Encontrei sua apolice! Veiculo: Honda Civic 2023. Vou cotar as melhores opcoes pra voce.', sent: true, delay: 0.8 },
-  { text: 'Quero cobertura completa', sent: false, delay: 1.6 },
-  { text: 'Pronto! 3 opcoes:\n\n1. Basica: R$ 185/mes\n2. Completa: R$ 247/mes ⭐\n3. Premium: R$ 312/mes\n\nA opcao 2 cobre roubo, colisao e terceiros. Qual prefere?', sent: true, delay: 2.4 },
-  { text: 'Vai de completa!', sent: false, delay: 3.4 },
-];
+export function useInsuranceMessages(): ChatMessage[] {
+  const { t } = useTranslation('home');
+  return t('chatPreview.insuranceMessages', { returnObjects: true }) as ChatMessage[];
+}
 
-export const pensionMessages: ChatMessage[] = [
-  { text: 'Quero comecar a investir em previdencia', sent: false, delay: 0.2 },
-  { text: 'Excelente decisao! Qual seu objetivo principal: aposentadoria, educacao dos filhos ou reserva de longo prazo?', sent: true, delay: 0.8 },
-  { text: 'Aposentadoria, tenho 35 anos', sent: false, delay: 1.6 },
-  { text: 'Perfeito! Para seu perfil recomendo:\n\nPlano PGBL Moderado\nAporte: R$ 500/mes\nProjecao em 30 anos: R$ 892.000\nBeneficio fiscal no IR: ate 12%\n\nAbro sua conta agora?', sent: true, delay: 2.4 },
-  { text: 'Sim, quero comecar!', sent: false, delay: 3.4 },
-];
+export function usePensionMessages(): ChatMessage[] {
+  const { t } = useTranslation('home');
+  return t('chatPreview.pensionMessages', { returnObjects: true }) as ChatMessage[];
+}
 
 interface WhatsAppChatPreviewProps {
-  messages?: ChatMessage[];
+  messages: ChatMessage[];
   title?: string;
   triggerMode?: 'inView' | 'auto';
 }
 
-export function WhatsAppChatPreview({ messages = defaultMessages, title = 'Agente IA - Credito', triggerMode = 'inView' }: WhatsAppChatPreviewProps) {
+export function WhatsAppChatPreview({ messages, title, triggerMode = 'inView' }: WhatsAppChatPreviewProps) {
+  const { t } = useTranslation('home');
+  const displayTitle = title ?? t('chatPreview.creditTitle');
+
   return (
     <Box
       maxW="360px"
@@ -59,8 +54,8 @@ export function WhatsAppChatPreview({ messages = defaultMessages, title = 'Agent
           <Text color="white" fontSize="xs" fontWeight="bold">IA</Text>
         </Box>
         <Box>
-          <Text color="white" fontSize="sm" fontWeight="600">{title}</Text>
-          <Text color="whiteAlpha.600" fontSize="xs">online</Text>
+          <Text color="white" fontSize="sm" fontWeight="600">{displayTitle}</Text>
+          <Text color="whiteAlpha.600" fontSize="xs">{t('chatPreview.online')}</Text>
         </Box>
       </Flex>
 

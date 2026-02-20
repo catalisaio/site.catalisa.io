@@ -1,0 +1,59 @@
+{
+  "hero": {
+    "badge": "FINTECH",
+    "heading": "WhatsApp como canal de negocios",
+    "headingGradient": "para fintechs",
+    "subtitle": "120M de brasileiros no WhatsApp. 91% taxa de abertura. Canal #1 para servicos financeiros.",
+    "stats": {
+      "stat1": { "label": "Brasileiros no WhatsApp" },
+      "stat2": { "label": "Taxa de abertura" },
+      "stat3": { "value": "#1", "label": "Canal financeiro" }
+    }
+  },
+  "compliance": {
+    "heading": "Compliance e seguranca bancaria",
+    "items": [
+      { "label": "Mascaramento LGPD", "description": "Protecao automatica de dados sensiveis" },
+      { "label": "Criptografia Bancaria", "description": "Dados protegidos com criptografia avancada" },
+      { "label": "Auditoria Digital", "description": "Trilha de auditoria completa e imutavel" },
+      { "label": "Multi-tenant", "description": "Isolamento total por empresa" }
+    ]
+  },
+  "capabilities": {
+    "badge": "PRODUTOS FINANCEIROS",
+    "heading": "Capacidades para produtos financeiros",
+    "subtitle": "Gerencie produtos, calcule parcelas, precifique credito e tome decisoes — tudo dentro do workflow.",
+    "items": [
+      { "title": "Cadastro de Produto", "description": "Crie linhas de credito com regras e taxas customizadas." },
+      { "title": "Simulacao de Parcelas", "description": "Calcule parcelas com tabela de amortizacao completa." },
+      { "title": "Custos Regulatorios", "description": "Calculos regulatorios automaticos para conformidade." },
+      { "title": "Motor de Decisao", "description": "Regras configuraveis para aprovar ou rejeitar sem codigo." }
+    ],
+    "pipeline": "Cadastro \u2192 Precificacao \u2192 Custos regulatorios \u2192 Decisao \u2192 Notificacao",
+    "pipelineLabel": "Pipeline completo:"
+  },
+  "roi": {
+    "heading": "Quanto voce economiza?",
+    "subtitle": "Simule a economia mensal ao substituir atendentes manuais por agentes de IA.",
+    "calc": {
+      "title": "Calculadora de ROI",
+      "fields": {
+        "agents": "Numero de atendentes",
+        "leadsPerDay": "Leads por dia",
+        "costPerAgent": "Custo por atendente (R$)"
+      },
+      "stats": {
+        "currentCost": "Custo atual/mes",
+        "withCatalisa": "Com Catalisa/mes",
+        "monthlySavings": "Economia mensal"
+      },
+      "reduction": "de reducao",
+      "currency": "R$"
+    }
+  },
+  "beforeAfter": {
+    "before": "ANTES",
+    "after": "DEPOIS"
+  },
+  "workflow": "Workflow"
+}

@@ -1,0 +1,92 @@
+{
+  "hero": {
+    "badge": "AI AGENTS",
+    "heading": "Crie especialistas de IA que trabalham",
+    "headingGradient": "24/7 no WhatsApp",
+    "subtitle": "Nao e um chatbot. E uma equipe inteira. Cada agente tem personalidade, ferramentas e contexto proprios."
+  },
+  "comparison": {
+    "heading": "A diferenca: Assistant vs Agent vs",
+    "headingHighlight": "Time",
+    "yourProduct": "SEU PRODUTO",
+    "agentCallout": "Seu agente nao apenas informa.",
+    "agentCalloutDesc": "Ele qualifica leads, agenda reunioes, processa documentos, atualiza o CRM, envia mensagens — tudo de forma autonoma.",
+    "items": [
+      {
+        "type": "Chatbot",
+        "level": "Informacional",
+        "description": "Responde perguntas com base em FAQ",
+        "capabilities": ["Respostas pre-definidas", "Menu de opcoes", "Encaminha para humano"]
+      },
+      {
+        "type": "AI Agent",
+        "level": "Operacional",
+        "description": "Executa tarefas com ferramentas reais",
+        "capabilities": ["Qualifica leads", "Agenda reunioes", "Atualiza CRM", "Processa documentos", "Envia mensagens"]
+      },
+      {
+        "type": "Time de Agents",
+        "level": "Orquestrado",
+        "description": "Cada agente e especialista em uma area",
+        "capabilities": ["SDR qualifica", "Suporte resolve", "Cobranca negocia", "Onboarding guia", "Orquestracao via workflow"]
+      }
+    ]
+  },
+  "howAgentsWork": {
+    "heading": "Como agentes funcionam",
+    "items": [
+      { "title": "System Prompt", "description": "Voce define a personalidade, regras e objetivo do agente." },
+      { "title": "Ferramentas", "description": "Escolha quais ferramentas o agente pode usar (150+ built-in)." },
+      { "title": "Conversas", "description": "Contexto persistente por lead. Memoria de todas as interacoes." },
+      { "title": "Workflows", "description": "Agentes embutidos em automacoes. Acionados por triggers." }
+    ]
+  },
+  "marketplace": {
+    "heading": "Marketplace de Templates",
+    "subtitle": "Instale agentes pre-configurados com um clique. Prompts otimizados e ferramentas pre-selecionadas."
+  },
+  "aiCapabilities": {
+    "heading": "Poderes de processamento IA",
+    "subtitle": "Cada capacidade e uma ferramenta que voce combina livremente.",
+    "items": [
+      { "label": "Analise de Sentimento", "description": "Detecta emocao e urgencia" },
+      { "label": "Sumarizacao", "description": "Resume conversas longas" },
+      { "label": "Classificacao", "description": "Categoriza automaticamente" },
+      { "label": "Geracao de Texto", "description": "Cria conteudo personalizado" },
+      { "label": "Traducao", "description": "Multi-idioma em tempo real" },
+      { "label": "Extracao de Dados", "description": "Estrutura texto livre" },
+      { "label": "Analise de Imagem", "description": "OCR e visao computacional" },
+      { "label": "Transcricao", "description": "Audio para texto" }
+    ]
+  },
+  "realWorldExample": {
+    "heading": "Exemplo real: Lead qualificado pelo WhatsApp",
+    "steps": [
+      "Mensagem recebida",
+      "Transcreve audio",
+      "Analisa sentimento",
+      "Agente SDR qualifica",
+      "Cria lead no CRM",
+      "Envia proposta"
+    ]
+  },
+  "toolsGrid": {
+    "badge": "FERRAMENTAS",
+    "heading": "21+ categorias de ferramentas para agentes",
+    "subtitle": "Cada agente escolhe quais ferramentas pode usar. Aqui estao as categorias disponiveis.",
+    "items": [
+      { "title": "Buscar Leads", "description": "Pesquisa e filtra leads no CRM" },
+      { "title": "Gerenciar Leads", "description": "Cria, atualiza e qualifica leads" },
+      { "title": "WhatsApp", "description": "Envia mensagens e midia" },
+      { "title": "Calendario", "description": "Agenda e consulta eventos" },
+      { "title": "Workflows", "description": "Dispara e consulta workflows" },
+      { "title": "Outros Agentes", "description": "Orquestra time de agentes" },
+      { "title": "Acoes Customizadas", "description": "Executa logica customizada" },
+      { "title": "Notificacoes", "description": "Email e webhooks" },
+      { "title": "Captura", "description": "Links de captura de leads" },
+      { "title": "Metricas", "description": "Estatisticas e performance" },
+      { "title": "Dados", "description": "Extracao e transformacao" },
+      { "title": "APIs Externas", "description": "Integracao HTTP generica" }
+    ]
+  }
+}

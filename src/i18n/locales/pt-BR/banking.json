@@ -1,0 +1,73 @@
+{
+  "hero": {
+    "badge": "BANCARIO",
+    "heading": "WhatsApp como canal bancario",
+    "headingGradient": "inteligente",
+    "subtitle": "148M de brasileiros no WhatsApp. 82% das transacoes bancarias sao digitais. 85% dos bancos ja tem chatbot.",
+    "stats": {
+      "stat1": { "label": "Usuarios WhatsApp BR" },
+      "stat2": { "label": "Transacoes digitais" },
+      "stat3": { "label": "Crescimento messaging YoY" }
+    }
+  },
+  "market": {
+    "badge": "MERCADO",
+    "heading": "O mercado bancario ja esta no WhatsApp",
+    "subtitle": "Os maiores bancos do Brasil ja utilizam WhatsApp com IA para atender clientes. As transacoes por messaging cresceram 76% em um ano (70.9M para 125.2M).",
+    "banks": [
+      { "name": "Itau", "description": "IA generativa + Pix pelo WhatsApp", "highlight": "Pioneiro em IA" },
+      { "name": "Nubank", "description": "109M clientes, suporte 100% digital", "highlight": "109M clientes" },
+      { "name": "PicPay", "description": "Pix por audio com IA no WhatsApp", "highlight": "Pix por audio" },
+      { "name": "C6 Bank", "description": "Assistente IA para operacoes bancarias", "highlight": "Assistente IA" }
+    ],
+    "quote": "\"85% dos bancos brasileiros tem chatbot no WhatsApp\"",
+    "quoteSource": "\u2014 Finsiders / FEBRABAN, 2024"
+  },
+  "compliance": {
+    "heading": "Compliance e regulatorio bancario",
+    "subtitle": "Conformidade com BACEN, LGPD e Open Finance integrada em cada capacidade.",
+    "items": [
+      { "label": "Conformidade BACEN/LGPD", "description": "Protecao automatica de dados sensiveis" },
+      { "label": "Criptografia Bancaria", "description": "Dados protegidos com criptografia avancada" },
+      { "label": "Auditoria Digital", "description": "Trilha de auditoria completa e imutavel" },
+      { "label": "Isolamento e Controle", "description": "Multi-tenant com controle de acesso granular" }
+    ]
+  },
+  "capabilities": {
+    "badge": "OPEN FINANCE",
+    "heading": "Integracao com Open Finance",
+    "subtitle": "62M de consentimentos ativos e R$ 18B em operacoes de credito. Conecte dados abertos aos seus workflows.",
+    "items": [
+      { "title": "APIs Open Finance", "description": "Conecte a qualquer instituicao participante." },
+      { "title": "Validacao de Dados", "description": "Valide consentimentos e dados recebidos." },
+      { "title": "Motor de Decisao", "description": "Regras configuraveis para scoring com dados enriquecidos." },
+      { "title": "Scoring Personalizado", "description": "Taxa de juros baseada no historico real." }
+    ],
+    "pipeline": "Consentimento \u2192 Consulta Open Finance \u2192 Historico \u2192 Scoring \u2192 Decisao \u2192 Resultado",
+    "pipelineLabel": "Pipeline Open Finance:"
+  },
+  "roi": {
+    "heading": "Quanto seu banco economiza?",
+    "subtitle": "Simule a economia mensal ao migrar transacoes de agencia para WhatsApp com IA.",
+    "calc": {
+      "title": "Calculadora de ROI Bancario",
+      "fields": {
+        "branches": "Numero de agencias",
+        "transactionsPerDay": "Transacoes/dia por agencia",
+        "costPerTransaction": "Custo por transacao (R$)"
+      },
+      "stats": {
+        "currentCost": "Custo atual/mes",
+        "withCatalisa": "Com Catalisa/mes",
+        "monthlySavings": "Economia mensal"
+      },
+      "reduction": "de reducao",
+      "currency": "R$"
+    }
+  },
+  "beforeAfter": {
+    "before": "ANTES",
+    "after": "DEPOIS"
+  },
+  "workflow": "Workflow"
+}

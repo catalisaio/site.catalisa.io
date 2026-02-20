@@ -1,0 +1,52 @@
+{
+  "hero": {
+    "badge": "STARTUPS",
+    "heading": "WhatsApp como motor de crescimento",
+    "headingGradient": "para startups",
+    "subtitle": "91% taxa de abertura. 10x mais barato que call center. Menos de 1 minuto de tempo de resposta.",
+    "stats": {
+      "openRate": "Taxa de abertura",
+      "cheaper": "Mais barato que call center",
+      "responseTime": "Tempo de resposta"
+    }
+  },
+  "beforeAfter": {
+    "before": "ANTES",
+    "after": "DEPOIS"
+  },
+  "workflow": "Workflow",
+  "compliance": {
+    "heading": "Infraestrutura pronta para escalar",
+    "items": [
+      { "label": "Conformidade LGPD", "description": "Protecao de dados desde o dia zero" },
+      { "label": "API-first", "description": "Integre com qualquer stack em minutos" },
+      { "label": "Escalabilidade", "description": "De 10 a 10.000 conversas sem mudar nada" },
+      { "label": "Isolamento Total", "description": "Multi-tenant com dados isolados por empresa" }
+    ]
+  },
+  "capabilities": {
+    "badge": "CAPACIDADES PARA STARTUPS",
+    "heading": "Cresca rapido com IA no WhatsApp",
+    "subtitle": "Qualificacao automatica, onboarding inteligente, suporte escalavel e analytics em tempo real.",
+    "items": [
+      { "title": "Qualificacao IA", "description": "SDR automatizado que qualifica leads 24/7 sem intervencao humana." },
+      { "title": "Onboarding Automatizado", "description": "Guie novos usuarios pelo produto com tutoriais conversacionais." },
+      { "title": "Suporte Inteligente", "description": "IA resolve 75% dos tickets sem escalar para humanos." },
+      { "title": "Analytics em Tempo Real", "description": "NPS, engajamento e metricas de conversao atualizados ao vivo." }
+    ],
+    "pipelineLabel": "Pipeline completo:",
+    "pipelineSteps": "Lead \u2192 Qualificacao \u2192 Demo \u2192 Onboarding \u2192 Suporte \u2192 Retencao"
+  },
+  "roi": {
+    "heading": "Quanto voce economiza?",
+    "subtitle": "Simule a economia mensal ao substituir SDRs manuais por agentes de IA.",
+    "calculatorTitle": "Calculadora de ROI",
+    "sdrsLabel": "SDRs atuais",
+    "leadsLabel": "Leads por dia",
+    "costLabel": "Custo por SDR (R$)",
+    "currentCost": "Custo atual/mes",
+    "withCatalisa": "Com Catalisa/mes",
+    "monthlySavings": "Economia mensal",
+    "reduction": "de reducao"
+  }
+}

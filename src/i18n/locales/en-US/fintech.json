@@ -1,0 +1,59 @@
+{
+  "hero": {
+    "badge": "FINTECH",
+    "heading": "WhatsApp as a business channel",
+    "headingGradient": "for fintechs",
+    "subtitle": "120M Brazilians on WhatsApp. 91% open rate. #1 channel for financial services.",
+    "stats": {
+      "stat1": { "label": "Brazilians on WhatsApp" },
+      "stat2": { "label": "Open rate" },
+      "stat3": { "value": "#1", "label": "Financial channel" }
+    }
+  },
+  "compliance": {
+    "heading": "Compliance and banking security",
+    "items": [
+      { "label": "LGPD Masking", "description": "Automatic protection of sensitive data" },
+      { "label": "Banking Encryption", "description": "Data protected with advanced encryption" },
+      { "label": "Digital Auditing", "description": "Complete and immutable audit trail" },
+      { "label": "Multi-tenant", "description": "Total isolation per company" }
+    ]
+  },
+  "capabilities": {
+    "badge": "FINANCIAL PRODUCTS",
+    "heading": "Capabilities for financial products",
+    "subtitle": "Manage products, calculate installments, price credit, and make decisions \u2014 all within the workflow.",
+    "items": [
+      { "title": "Product Registration", "description": "Create credit lines with custom rules and rates." },
+      { "title": "Installment Simulation", "description": "Calculate installments with a full amortization table." },
+      { "title": "Regulatory Costs", "description": "Automatic regulatory calculations for compliance." },
+      { "title": "Decision Engine", "description": "Configurable rules to approve or reject without code." }
+    ],
+    "pipeline": "Registration \u2192 Pricing \u2192 Regulatory costs \u2192 Decision \u2192 Notification",
+    "pipelineLabel": "Full pipeline:"
+  },
+  "roi": {
+    "heading": "How much do you save?",
+    "subtitle": "Simulate your monthly savings by replacing manual agents with AI agents.",
+    "calc": {
+      "title": "ROI Calculator",
+      "fields": {
+        "agents": "Number of agents",
+        "leadsPerDay": "Leads per day",
+        "costPerAgent": "Cost per agent (R$)"
+      },
+      "stats": {
+        "currentCost": "Current cost/month",
+        "withCatalisa": "With Catalisa/month",
+        "monthlySavings": "Monthly savings"
+      },
+      "reduction": "reduction",
+      "currency": "R$"
+    }
+  },
+  "beforeAfter": {
+    "before": "BEFORE",
+    "after": "AFTER"
+  },
+  "workflow": "Workflow"
+}

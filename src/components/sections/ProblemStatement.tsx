@@ -1,36 +1,38 @@
 import { Heading, Text, SimpleGrid, VStack, Icon, Box } from '@chakra-ui/react';
 import { FiClock, FiUsers, FiAlertTriangle } from 'react-icons/fi';
+import { useTranslation } from 'react-i18next';
 import { SectionWrapper } from '../shared/SectionWrapper';
 import { MotionBox, staggerItem } from '../motion';
 
-const problems = [
-  {
-    icon: FiClock,
-    title: 'Respostas manuais',
-    description: 'Sua equipe responde uma mensagem por vez. Leads esfriam enquanto esperam.',
-  },
-  {
-    icon: FiUsers,
-    title: 'Sem contexto entre atendentes',
-    description: 'Cada troca de agente recomeça do zero. O cliente repete tudo de novo.',
-  },
-  {
-    icon: FiAlertTriangle,
-    title: 'Zero automação',
-    description: 'Tarefas repetitivas consomem horas. Qualificação, follow-up, cobrança — tudo manual.',
-  },
-];
-
 export function ProblemStatement() {
+  const { t } = useTranslation('home');
+
+  const problems = [
+    {
+      icon: FiClock,
+      title: t('problem.items.0.title'),
+      description: t('problem.items.0.description'),
+    },
+    {
+      icon: FiUsers,
+      title: t('problem.items.1.title'),
+      description: t('problem.items.1.description'),
+    },
+    {
+      icon: FiAlertTriangle,
+      title: t('problem.items.2.title'),
+      description: t('problem.items.2.description'),
+    },
+  ];
   return (
     <SectionWrapper>
       <VStack spacing={4} textAlign="center" mb={12}>
         <Heading as="h2" size="xl" fontWeight="800">
-          O WhatsApp virou seu canal principal.{' '}
-          <Text as="span" color="brand.500">Mas como escalar?</Text>
+          {t('problem.heading')}{' '}
+          <Text as="span" color="brand.500">{t('problem.headingHighlight')}</Text>
         </Heading>
         <Text color="gray.500" maxW="600px" fontSize="lg">
-          120 milhões de brasileiros usam WhatsApp diariamente. Seu time não consegue acompanhar.
+          {t('problem.subtitle')}
         </Text>
       </VStack>
 

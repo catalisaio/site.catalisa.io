@@ -1,0 +1,86 @@
+{
+  "hero": {
+    "badge": "INSURANCE",
+    "heading": "Claims, quotes, and renewals",
+    "headingGradient": "via WhatsApp",
+    "subtitle": "R$ 207B in premiums (2024). 42% of sales are already digital. Claims resolved by AI in under 10 minutes.",
+    "stats": {
+      "stat1": { "value": "R$ 207B", "label": "Premiums 2024" },
+      "stat2": { "label": "Digital sales" },
+      "stat3": { "value": "10min", "label": "AI-resolved claims" }
+    }
+  },
+  "market": {
+    "badge": "MARKET",
+    "heading": "Insurers already using WhatsApp with AI",
+    "subtitle": "Brazil's largest insurers already use WhatsApp with AI for claims, quotes, and customer service. Insurtechs received R$ 350M in investments in the first half of 2025.",
+    "insurers": [
+      {
+        "name": "MAPFRE",
+        "description": "14K visits, 1.6K claims, 50% resolved by AI, 90%+ satisfaction",
+        "highlight": "1st 100% AI claim"
+      },
+      {
+        "name": "EZZE Seguros",
+        "description": "Claims resolved in under 10 minutes via WhatsApp with AI",
+        "highlight": "<10min per claim"
+      },
+      {
+        "name": "Porto Seguro",
+        "description": "Claims, tracking, document upload \u2014 all via WhatsApp",
+        "highlight": "Digital claims"
+      }
+    ],
+    "quote": "\"MAPFRE registered the first claim 100% resolved by AI on WhatsApp, with 90%+ satisfaction\"",
+    "quoteSource": "\u2014 MAPFRE Brasil, 2024"
+  },
+  "compliance": {
+    "heading": "SUSEP compliance and regulation",
+    "subtitle": "CNSP Resolution 382/2020, LGPD, and SUSEP compliance built into every capability.",
+    "items": [
+      { "label": "SUSEP Compliance", "description": "CNSP Resolution 382/2020 integrated" },
+      { "label": "LGPD Protection", "description": "Automatic masking of policyholder data" },
+      { "label": "Full Auditing", "description": "Immutable and traceable audit trail" },
+      { "label": "Advanced Encryption", "description": "Sensitive data protected by encryption" }
+    ]
+  },
+  "capabilities": {
+    "badge": "INSURTECH",
+    "heading": "Capabilities for insurance",
+    "subtitle": "AI inspections, document extraction, automatic underwriting, and more \u2014 all within the workflow.",
+    "items": [
+      { "title": "AI Inspection", "description": "Vehicle and property photo analysis with computer vision." },
+      { "title": "Document Extraction", "description": "Intelligent reading of policies, driver's licenses, and reports." },
+      { "title": "Automatic Underwriting", "description": "Configurable decision engine to approve or reject risks." },
+      { "title": "Pricing", "description": "Premium calculation based on risk profile." },
+      { "title": "LGPD Protection", "description": "Real-time masking of policyholder data." },
+      { "title": "Document Management", "description": "Receive and store photos and documents via WhatsApp." }
+    ],
+    "pipeline": "Details \u2192 Photos & docs \u2192 Visual analysis \u2192 Extraction \u2192 Decision \u2192 Archive \u2192 Confirmation",
+    "pipelineLabel": "Claims pipeline:"
+  },
+  "roi": {
+    "heading": "How much does your insurer save?",
+    "subtitle": "Simulate monthly savings by automating claims and customer service with AI on WhatsApp.",
+    "calc": {
+      "title": "Insurance ROI Calculator",
+      "fields": {
+        "brokers": "Number of brokers",
+        "claimsPerMonth": "Claims/month",
+        "costPerClaim": "Cost per claim (R$)"
+      },
+      "stats": {
+        "currentCost": "Current cost/month",
+        "withCatalisa": "With Catalisa/month",
+        "monthlySavings": "Monthly savings"
+      },
+      "reduction": "reduction",
+      "currency": "R$"
+    }
+  },
+  "beforeAfter": {
+    "before": "BEFORE",
+    "after": "AFTER"
+  },
+  "workflow": "Workflow"
+}

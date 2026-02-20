@@ -5,10 +5,12 @@ import {
   FiCpu, FiMessageCircle, FiUsers, FiDollarSign, FiShield, FiGlobe, FiGitBranch,
   FiDatabase, FiFileText, FiCalendar, FiArrowRight, FiCheck,
 } from 'react-icons/fi';
+import { useTranslation } from 'react-i18next';
+import { useTranslatedCapabilities } from '../i18n/useTranslatedData';
 import { SectionWrapper } from '../components/shared/SectionWrapper';
 import { MotionBox } from '../components/motion';
 import { GradientText } from '../components/shared/GradientText';
-import { capabilityClusters, businessRecipes, categoryBadges } from '../data/capabilityClusters';
+import { categoryBadges } from '../data/capabilityClusters';
 import { FinalCTA } from '../components/sections/FinalCTA';
 
 const WHATSAPP_URL = 'https://wa.me/5511977303414?text=Ola!%20Quero%20saber%20mais%20sobre%20a%20Catalisa.';
@@ -19,6 +21,8 @@ const iconMap: Record<string, React.ElementType> = {
 };
 
 export function BuildingBlocks() {
+  const { t } = useTranslation('building-blocks');
+  const { capabilityClusters, businessRecipes } = useTranslatedCapabilities();
   return (
     <>
       {/* Hero */}
@@ -26,14 +30,14 @@ export function BuildingBlocks() {
         <Container maxW="1280px">
           <VStack spacing={6} textAlign="center" maxW="800px" mx="auto">
             <Badge colorScheme="orange" fontSize="xs" px={3} py={1} borderRadius="full">
-              CAPACIDADES
+              {t('hero.badge')}
             </Badge>
             <Heading as="h1" size="2xl" fontWeight="800" color="white" lineHeight="1.15">
-              <GradientText gradient="linear(to-r, catalisa.accent, catalisa.secondary)">150+ capacidades.</GradientText>{' '}
-              Infinitas combinacoes.
+              <GradientText gradient="linear(to-r, catalisa.accent, catalisa.secondary)">{t('hero.headingGradient')}</GradientText>{' '}
+              {t('hero.heading')}
             </Heading>
             <Text color="whiteAlpha.700" fontSize="lg" maxW="600px" lineHeight="1.7">
-              Cada dominio reune dezenas de capacidades especializadas. Combine-os em workflows que resolvem qualquer desafio de negocio.
+              {t('hero.subtitle')}
             </Text>
           </VStack>
         </Container>
@@ -43,10 +47,10 @@ export function BuildingBlocks() {
       <SectionWrapper>
         <VStack spacing={4} textAlign="center" mb={10}>
           <Heading as="h2" size="xl" fontWeight="800">
-            10 dominios de capacidades
+            {t('clusters.heading')}
           </Heading>
           <Text color="gray.500" maxW="600px">
-            Cada dominio agrupa capacidades complementares. Juntos, cobrem todo o ciclo de atendimento, vendas e operacoes.
+            {t('clusters.subtitle')}
           </Text>
         </VStack>
 
@@ -89,7 +93,7 @@ export function BuildingBlocks() {
                         ))}
                         {cluster.outcomes.length > 5 && (
                           <Text fontSize="xs" color="gray.400" fontStyle="italic" pl={5}>
-                            e muito mais...
+                            {t('clusters.andMore')}
                           </Text>
                         )}
                       </VStack>
@@ -104,8 +108,8 @@ export function BuildingBlocks() {
         {/* Platform extras + CTA */}
         <Box bg="gray.50" p={5} borderRadius="xl" mt={8} textAlign="center" border="1px solid" borderColor="gray.100">
           <Text color="gray.600" fontSize="sm">
-            <Text as="span" fontWeight="700" color="gray.700">+ Plataforma:</Text>{' '}
-            Extensibilidade, eventos customizados, acoes personalizadas, debug e monitoramento.
+            <Text as="span" fontWeight="700" color="gray.700">{t('platform.label')}</Text>{' '}
+            {t('platform.description')}
           </Text>
           <Button
             as="a"
@@ -118,7 +122,7 @@ export function BuildingBlocks() {
             mt={2}
             rightIcon={<FiArrowRight />}
           >
-            Quero saber mais
+            {t('cta.letsChat', { ns: 'common' })}
           </Button>
         </Box>
       </SectionWrapper>
@@ -127,13 +131,13 @@ export function BuildingBlocks() {
       <SectionWrapper bg="gray.50">
         <VStack spacing={4} textAlign="center" mb={12}>
           <Badge colorScheme="brand" fontSize="xs" px={3} py={1} borderRadius="full">
-            RECEITAS DE NEGOCIO
+            {t('recipes.badge')}
           </Badge>
           <Heading as="h2" size="xl" fontWeight="800">
-            Combinacoes que empresas reais usam
+            {t('recipes.heading')}
           </Heading>
           <Text color="gray.500" maxW="600px">
-            Veja como dominios se combinam para resolver cenarios complexos de ponta a ponta.
+            {t('recipes.subtitle')}
           </Text>
         </VStack>
 
@@ -182,19 +186,19 @@ export function BuildingBlocks() {
         <SimpleGrid columns={{ base: 2, md: 4 }} spacing={6} textAlign="center">
           <VStack>
             <Text fontSize="3xl" fontWeight="800" color="brand.500">150+</Text>
-            <Text color="gray.500" fontSize="sm">Capacidades</Text>
+            <Text color="gray.500" fontSize="sm">{t('summary.capabilities')}</Text>
           </VStack>
           <VStack>
             <Text fontSize="3xl" fontWeight="800" color="purple.500">10</Text>
-            <Text color="gray.500" fontSize="sm">Dominios</Text>
+            <Text color="gray.500" fontSize="sm">{t('summary.domains')}</Text>
           </VStack>
           <VStack>
             <Text fontSize="3xl" fontWeight="800" color="green.500">8</Text>
-            <Text color="gray.500" fontSize="sm">Triggers</Text>
+            <Text color="gray.500" fontSize="sm">{t('summary.triggers')}</Text>
           </VStack>
           <VStack>
             <Text fontSize="3xl" fontWeight="800" color="orange.500">DAG</Text>
-            <Text color="gray.500" fontSize="sm">Execucao paralela</Text>
+            <Text color="gray.500" fontSize="sm">{t('summary.parallelExecution')}</Text>
           </VStack>
         </SimpleGrid>
       </SectionWrapper>
@@ -210,7 +214,7 @@ export function BuildingBlocks() {
           _hover={{ bg: 'whatsapp.600' }}
           leftIcon={<FiMessageCircle />}
         >
-          Vamos conversar
+          {t('cta.letsChat', { ns: 'common' })}
         </Button>
       </Box>
 

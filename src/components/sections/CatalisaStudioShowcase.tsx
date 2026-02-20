@@ -15,6 +15,7 @@ import {
 } from '@chakra-ui/react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { FiCheck, FiCode, FiClock, FiShield } from 'react-icons/fi';
+import { useTranslation } from 'react-i18next';
 import { MotionBox } from '../motion';
 import { GradientText } from '../shared/GradientText';
 
@@ -31,80 +32,6 @@ interface StudioStep {
   cropPosition: string;
 }
 
-const steps: StudioStep[] = [
-  {
-    id: 'describe',
-    number: '01',
-    label: 'Descreva',
-    title: 'Descreva o que precisa',
-    description:
-      'Digite em linguagem natural, como se estivesse explicando para um colega. Escolha entre 6 templates prontos — Boas-vindas WhatsApp, Qualificacao AI, Notificacao Email e mais — ou comece do zero.',
-    bullets: [
-      'Sem linguagem tecnica',
-      '6 templates prontos para casos reais',
-      'A IA entende o contexto do seu negocio',
-    ],
-    image: '/screenshots/studio/builder-home-real.jpg',
-    cropPosition: 'center 30%',
-  },
-  {
-    id: 'refine',
-    number: '02',
-    label: 'IA Refina',
-    title: 'A IA faz as perguntas certas',
-    description:
-      'Nao sabe exatamente o que precisa? Sem problema. A IA perguntou: "Como voce quer saber QUAL campo foi alterado?" — e deu exemplos concretos para facilitar a resposta.',
-    bullets: [
-      'Conversa natural em portugues',
-      'Esclarece ambiguidades automaticamente',
-      'Voce nao precisa ser tecnico',
-    ],
-    image: '/screenshots/studio/builder-clarify-real.jpg',
-    cropPosition: 'center 55%',
-  },
-  {
-    id: 'spec',
-    number: '03',
-    label: 'Spec Pronta',
-    title: 'Especificacao completa em segundos',
-    description:
-      '2 requisitos, 2 componentes, 3 tarefas — gerados em segundos. Requisitos, design tecnico com fluxo de dados e tarefas com dependencias, tudo pronto para revisar e aprovar.',
-    bullets: [
-      'Requisitos estruturados e validados',
-      'Arquitetura e fluxo de dados claros',
-      'Plano de execucao com dependencias',
-    ],
-    image: '/screenshots/studio/builder-requirements-real.jpg',
-    subTabs: [
-      { label: 'Requisitos', image: '/screenshots/studio/builder-requirements-real.jpg' },
-      { label: 'Design', image: '/screenshots/studio/builder-design-real.jpg' },
-      { label: 'Tarefas', image: '/screenshots/studio/builder-tasks-real.jpg' },
-    ],
-    cropPosition: 'center 35%',
-  },
-  {
-    id: 'execute',
-    number: '04',
-    label: 'Execute',
-    title: 'Aprovar Tudo & Executar',
-    description:
-      'Aprove a especificacao e o Builder cria tudo: workflow, triggers, acoes, conexoes. Um clique em "Aprovar Tudo & Executar" e esta pronto para producao.',
-    bullets: [
-      'Execucao 100% automatizada',
-      'Resultado garantido pela especificacao',
-      'Da ideia a producao em minutos',
-    ],
-    image: '/screenshots/studio/builder-tasks-real.jpg',
-    cropPosition: 'center 60%',
-  },
-];
-
-const stats = [
-  { icon: FiCode, value: 'Zero', label: 'codigo' },
-  { icon: FiClock, value: 'Segundos', label: 'nao meses' },
-  { icon: FiShield, value: '100%', label: 'spec-driven' },
-];
-
 const panelVariants = {
   enter: { opacity: 0, x: 40, scale: 0.98 },
   center: { opacity: 1, x: 0, scale: 1 },
@@ -112,8 +39,65 @@ const panelVariants = {
 };
 
 export function CatalisaStudioShowcase() {
+  const { t } = useTranslation('home');
   const [activeStep, setActiveStep] = useState(0);
   const [activeSubTab, setActiveSubTab] = useState(0);
+
+  const subTabLabels = t('studioShowcase.steps.2.subTabs', { returnObjects: true }) as string[];
+
+  const steps: StudioStep[] = [
+    {
+      id: 'describe',
+      number: '01',
+      label: t('studioShowcase.steps.0.label'),
+      title: t('studioShowcase.steps.0.title'),
+      description: t('studioShowcase.steps.0.description'),
+      bullets: t('studioShowcase.steps.0.bullets', { returnObjects: true }) as string[],
+      image: '/screenshots/studio/builder-home-real.jpg',
+      cropPosition: 'center 30%',
+    },
+    {
+      id: 'refine',
+      number: '02',
+      label: t('studioShowcase.steps.1.label'),
+      title: t('studioShowcase.steps.1.title'),
+      description: t('studioShowcase.steps.1.description'),
+      bullets: t('studioShowcase.steps.1.bullets', { returnObjects: true }) as string[],
+      image: '/screenshots/studio/builder-clarify-real.jpg',
+      cropPosition: 'center 55%',
+    },
+    {
+      id: 'spec',
+      number: '03',
+      label: t('studioShowcase.steps.2.label'),
+      title: t('studioShowcase.steps.2.title'),
+      description: t('studioShowcase.steps.2.description'),
+      bullets: t('studioShowcase.steps.2.bullets', { returnObjects: true }) as string[],
+      image: '/screenshots/studio/builder-requirements-real.jpg',
+      subTabs: [
+        { label: subTabLabels[0], image: '/screenshots/studio/builder-requirements-real.jpg' },
+        { label: subTabLabels[1], image: '/screenshots/studio/builder-design-real.jpg' },
+        { label: subTabLabels[2], image: '/screenshots/studio/builder-tasks-real.jpg' },
+      ],
+      cropPosition: 'center 35%',
+    },
+    {
+      id: 'execute',
+      number: '04',
+      label: t('studioShowcase.steps.3.label'),
+      title: t('studioShowcase.steps.3.title'),
+      description: t('studioShowcase.steps.3.description'),
+      bullets: t('studioShowcase.steps.3.bullets', { returnObjects: true }) as string[],
+      image: '/screenshots/studio/builder-tasks-real.jpg',
+      cropPosition: 'center 60%',
+    },
+  ];
+
+  const stats = [
+    { icon: FiCode, value: t('studioShowcase.stats.0.value'), label: t('studioShowcase.stats.0.label') },
+    { icon: FiClock, value: t('studioShowcase.stats.1.value'), label: t('studioShowcase.stats.1.label') },
+    { icon: FiShield, value: t('studioShowcase.stats.2.value'), label: t('studioShowcase.stats.2.label') },
+  ];
 
   const currentStep = steps[activeStep];
   const currentImage = currentStep.subTabs
@@ -172,7 +156,7 @@ export function CatalisaStudioShowcase() {
               spacing={2}
             >
               <Text color="brand.300" fontSize="sm" fontWeight="600">
-                &#10022; CATALISA STUDIO
+                &#10022; {t('studioShowcase.badge')}
               </Text>
             </HStack>
 
@@ -184,18 +168,18 @@ export function CatalisaStudioShowcase() {
               lineHeight="1.2"
               maxW="700px"
             >
-              Descreva o que precisa.{' '}
+              {t('studioShowcase.heading')}{' '}
               <GradientText
                 gradient="linear(to-r, brand.300, brand.400, catalisa.accent)"
                 fontSize="inherit"
                 fontWeight="inherit"
               >
-                A IA constroi pra voce.
+                {t('studioShowcase.headingGradient')}
               </GradientText>
             </Heading>
 
             <Text color="whiteAlpha.600" fontSize={{ base: 'md', md: 'lg' }} maxW="500px">
-              Sem codigo. Sem equipe tecnica. Sem semanas de espera.
+              {t('studioShowcase.subtitle')}
             </Text>
           </VStack>
         </MotionBox>

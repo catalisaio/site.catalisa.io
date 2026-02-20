@@ -1,0 +1,109 @@
+{
+  "nav": {
+    "studio": "Studio",
+    "aiAgents": "AI Agents",
+    "buildingBlocks": "Building Blocks",
+    "workflows": "Workflows",
+    "useCases": "Casos de Uso",
+    "developers": "Developers",
+    "verticals": "Verticais",
+    "fintech": "Fintech",
+    "banking": "Bancario",
+    "insurance": "Seguros",
+    "retail": "Varejo",
+    "startups": "Startups"
+  },
+  "megaMenu": {
+    "platform": {
+      "label": "Plataforma",
+      "products": "Produtos",
+      "infrastructure": "Infraestrutura",
+      "resources": "Recursos",
+      "studio": { "label": "Studio", "desc": "Construa automacoes sem escrever codigo" },
+      "aiAgents": { "label": "AI Agents", "desc": "Agentes inteligentes com IA generativa" },
+      "blocks": { "label": "Building Blocks", "desc": "150+ capacidades prontas para usar" },
+      "workflows": { "label": "Workflows", "desc": "Automacao paralela com DAG" },
+      "useCases": { "label": "Casos de Uso", "desc": "Veja exemplos reais" },
+      "demo": { "label": "Ver Demo", "desc": "Demonstracao ao vivo" }
+    },
+    "solutions": {
+      "label": "Solucoes",
+      "whatsapp": {
+        "title": "WhatsApp & Mensageria",
+        "support247": { "label": "Atendimento 24/7", "desc": "Responda clientes automaticamente" },
+        "campaigns": { "label": "Campanhas & notificacoes", "desc": "Envio em massa com personalizacao" },
+        "multichannel": { "label": "Integracao multicanal", "desc": "WhatsApp, SMS, e-mail" }
+      },
+      "support": {
+        "title": "Atendimento & Suporte",
+        "chatbots": { "label": "Chatbots inteligentes", "desc": "Resolva sem humano" },
+        "routing": { "label": "Roteamento inteligente", "desc": "Encaminhe pro time certo" },
+        "dashboards": { "label": "Dashboards & metricas", "desc": "Acompanhe em tempo real" }
+      },
+      "sales": {
+        "title": "Vendas & Automacao",
+        "qualification": { "label": "Qualificacao de leads", "desc": "Identifique oportunidades" },
+        "followup": { "label": "Follow-up automatico", "desc": "Nunca perca um lead" },
+        "customWorkflows": { "label": "Workflows personalizados", "desc": "Monte seus fluxos" }
+      }
+    },
+    "industries": {
+      "label": "Industrias",
+      "fintech": { "label": "Fintech", "desc": "Automacao regulatoria, onboarding, KYC" },
+      "banking": { "label": "Bancario", "desc": "Open Finance, Pix, compliance bancario" },
+      "insurance": { "label": "Seguros", "desc": "SUSEP, sinistros, cotacoes" },
+      "retail": { "label": "Varejo", "desc": "Vendas, pos-venda, fidelizacao" },
+      "startups": { "label": "Startups", "desc": "Scale rapido, custo otimizado" }
+    }
+  },
+  "cta": {
+    "letsChat": "Vamos conversar",
+    "seeDemo": "Ver Demo Real",
+    "seeHowItWorks": "Ver como funciona",
+    "learnMore": "Conheca mais",
+    "sendMessage": "Enviar mensagem",
+    "chatOnWhatsApp": "Conversar no WhatsApp",
+    "seeInAction": "Ver em acao",
+    "wantToKnowMore": "Quero saber mais",
+    "startAutomation": "Comece sua automacao inteligente",
+    "watchFullDemo": "Ver Demo Completo",
+    "knowAIAgents": "Conhecer AI Agents"
+  },
+  "footer": {
+    "sections": {
+      "platform": "Plataforma",
+      "industries": "Industrias",
+      "developer": "Developer",
+      "company": "Empresa & Recursos",
+      "product": "Produto",
+      "verticals": "Verticais"
+    },
+    "links": {
+      "documentation": "Documentacao",
+      "apiReference": "API Reference",
+      "about": "Sobre",
+      "contact": "Contato",
+      "termsOfUse": "Termos de Uso",
+      "privacyPolicy": "Politica de Privacidade",
+      "useCases": "Casos de Uso",
+      "demo": "Ver Demo"
+    },
+    "description": "Plataforma de automacao WhatsApp com IA para fintechs e empresas brasileiras.",
+    "copyright": "Catalisa. Todos os direitos reservados."
+  },
+  "badges": {
+    "lgpd": "Conforme LGPD",
+    "metaWhatsApp": "Meta WhatsApp Business",
+    "setupMinutes": "Setup em 5 minutos",
+    "setupInMinutes": "Setup em minutos",
+    "dataBrazil": "Dados no Brasil",
+    "dataStoredBrazil": "Dados armazenados no Brasil",
+    "encryption": "Criptografia ponta a ponta",
+    "multiTenant": "Isolamento multi-tenant",
+    "rbac": "Controle de acesso (RBAC)",
+    "whatsapp247": "Atendimento 24/7 pelo WhatsApp"
+  },
+  "logoMarquee": {
+    "title": "Tecnologias e integracoes"
+  }
+}

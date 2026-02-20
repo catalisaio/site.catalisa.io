@@ -3,6 +3,7 @@ import {
   FormControl, FormLabel, Input, Textarea, Icon, Flex,
 } from '@chakra-ui/react';
 import { FiMessageCircle, FiMail, FiClock, FiHeart, FiMonitor } from 'react-icons/fi';
+import { useTranslation } from 'react-i18next';
 import { MotionBox } from '../components/motion';
 import { GradientText } from '../components/shared/GradientText';
 import { WhatsAppChatPreview } from '../components/shared/WhatsAppChatPreview';
@@ -11,32 +12,32 @@ import { SectionWrapper } from '../components/shared/SectionWrapper';
 
 const WHATSAPP_URL = 'https://wa.me/5511977303414?text=Ola!%20Quero%20saber%20mais%20sobre%20a%20Catalisa.';
 
-const contactMessages: ChatMessage[] = [
-  { text: 'Ola! Vi o site de voces e quero saber mais sobre automacao WhatsApp.', sent: false, delay: 0.3 },
-  { text: 'Ola! Que bom ter voce aqui! Posso te ajudar! Voce ja usa WhatsApp Business?', sent: true, delay: 1.0 },
-  { text: 'Sim, mas tudo manual ainda...', sent: false, delay: 1.8 },
-  { text: 'Perfeito, vou te mostrar como automatizar isso em minutos. Pode me contar um pouco sobre seu negocio?', sent: true, delay: 2.6 },
-];
-
-const differentials = [
-  {
-    icon: FiClock,
-    title: 'Resposta rapida',
-    description: 'Nossa equipe responde em menos de 1 hora durante o horario comercial.',
-  },
-  {
-    icon: FiHeart,
-    title: 'Sem compromisso',
-    description: 'Conversa aberta, sem pressao. Queremos entender seu cenario primeiro.',
-  },
-  {
-    icon: FiMonitor,
-    title: 'Demo personalizada',
-    description: 'Mostramos a plataforma funcionando com exemplos do seu negocio.',
-  },
-];
-
 export function Contact() {
+  const { t } = useTranslation('contact');
+  const contactMessages: ChatMessage[] = [
+    { text: t('chat.messages.0'), sent: false, delay: 0.3 },
+    { text: t('chat.messages.1'), sent: true, delay: 1.0 },
+    { text: t('chat.messages.2'), sent: false, delay: 1.8 },
+    { text: t('chat.messages.3'), sent: true, delay: 2.6 },
+  ];
+
+  const differentials = [
+    {
+      icon: FiClock,
+      title: t('differentials.0.title'),
+      description: t('differentials.0.description'),
+    },
+    {
+      icon: FiHeart,
+      title: t('differentials.1.title'),
+      description: t('differentials.1.description'),
+    },
+    {
+      icon: FiMonitor,
+      title: t('differentials.2.title'),
+      description: t('differentials.2.description'),
+    },
+  ];
   return (
     <>
       {/* Hero section (dark bg) */}
@@ -65,7 +66,7 @@ export function Contact() {
                   spacing={2}
                 >
                   <Box w={2} h={2} borderRadius="full" bg="whatsapp.400" />
-                  <Text color="whiteAlpha.800" fontSize="sm" fontWeight="600">FALE CONOSCO</Text>
+                  <Text color="whiteAlpha.800" fontSize="sm" fontWeight="600">{t('hero.badge')}</Text>
                 </HStack>
               </MotionBox>
 
@@ -81,13 +82,13 @@ export function Contact() {
                   color="white"
                   lineHeight="1.1"
                 >
-                  Vamos construir algo incrivel{' '}
+                  {t('hero.heading')}{' '}
                   <GradientText
                     gradient="linear(to-r, brand.300, brand.400, catalisa.accent)"
                     fontSize="inherit"
                     fontWeight="inherit"
                   >
-                    juntos.
+                    {t('hero.headingGradient')}
                   </GradientText>
                 </Heading>
               </MotionBox>
@@ -98,8 +99,7 @@ export function Contact() {
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
                 <Text color="whiteAlpha.700" fontSize={{ base: 'md', md: 'lg' }} lineHeight="1.7" maxW="480px">
-                  Conte o que voce precisa. Nossa equipe responde rapido
-                  — geralmente em menos de 1 hora.
+                  {t('hero.subtitle')}
                 </Text>
               </MotionBox>
 
@@ -120,7 +120,7 @@ export function Contact() {
                   transition="all 0.2s"
                   fontWeight="700"
                 >
-                  Conversar no WhatsApp
+                  {t('hero.ctaWhatsApp')}
                 </Button>
               </MotionBox>
 
@@ -145,7 +145,7 @@ export function Contact() {
             >
               <WhatsAppChatPreview
                 messages={contactMessages}
-                title="Equipe Catalisa"
+                title={t('chat.title')}
                 triggerMode="auto"
               />
             </MotionBox>
@@ -164,32 +164,32 @@ export function Contact() {
           <Box flex={1} maxW={{ lg: '560px' }}>
             <VStack spacing={4} align="stretch">
               <Heading as="h2" size="lg" fontWeight="800">
-                Prefere enviar uma mensagem?
+                {t('form.heading')}
               </Heading>
               <Text color="gray.500" fontSize="md" mb={2}>
-                Preencha o formulario e entraremos em contato.
+                {t('form.subtitle')}
               </Text>
 
               <SimpleGrid columns={{ base: 1, md: 2 }} spacing={4}>
                 <FormControl>
-                  <FormLabel fontSize="sm" fontWeight="600">Nome</FormLabel>
-                  <Input placeholder="Seu nome" focusBorderColor="brand.500" />
+                  <FormLabel fontSize="sm" fontWeight="600">{t('form.name')}</FormLabel>
+                  <Input placeholder={t('form.namePlaceholder')} focusBorderColor="brand.500" />
                 </FormControl>
                 <FormControl>
-                  <FormLabel fontSize="sm" fontWeight="600">Email</FormLabel>
-                  <Input type="email" placeholder="seu@email.com" focusBorderColor="brand.500" />
+                  <FormLabel fontSize="sm" fontWeight="600">{t('form.email')}</FormLabel>
+                  <Input type="email" placeholder={t('form.emailPlaceholder')} focusBorderColor="brand.500" />
                 </FormControl>
               </SimpleGrid>
 
               <FormControl>
-                <FormLabel fontSize="sm" fontWeight="600">Telefone</FormLabel>
-                <Input type="tel" placeholder="(11) 99999-9999" focusBorderColor="brand.500" />
+                <FormLabel fontSize="sm" fontWeight="600">{t('form.phone')}</FormLabel>
+                <Input type="tel" placeholder={t('form.phonePlaceholder')} focusBorderColor="brand.500" />
               </FormControl>
 
               <FormControl>
-                <FormLabel fontSize="sm" fontWeight="600">Mensagem</FormLabel>
+                <FormLabel fontSize="sm" fontWeight="600">{t('form.message')}</FormLabel>
                 <Textarea
-                  placeholder="Conte um pouco sobre seu negocio e o que precisa..."
+                  placeholder={t('form.messagePlaceholder')}
                   rows={4}
                   focusBorderColor="brand.500"
                 />
@@ -206,7 +206,7 @@ export function Contact() {
                 w={{ base: 'full', md: 'auto' }}
                 alignSelf="flex-start"
               >
-                Enviar mensagem
+                {t('form.submit')}
               </Button>
             </VStack>
           </Box>

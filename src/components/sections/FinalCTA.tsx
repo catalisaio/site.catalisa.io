@@ -1,19 +1,23 @@
 import { Heading, Text, VStack, Button, HStack, Box } from '@chakra-ui/react';
 import { FiMessageCircle } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { SectionWrapper } from '../shared/SectionWrapper';
+import { useLocalizedPath } from '../../i18n/useLocalizedPath';
 
 const WHATSAPP_URL = 'https://wa.me/5511977303414?text=Ola!%20Quero%20saber%20mais%20sobre%20a%20Catalisa.';
 
 export function FinalCTA() {
+  const { t } = useTranslation('home');
+  const lp = useLocalizedPath();
   return (
     <SectionWrapper bg="brand.500" py={{ base: 20, md: 28 }}>
       <VStack spacing={6} textAlign="center" maxW="700px" mx="auto">
         <Heading as="h2" size="2xl" fontWeight="800" color="white">
-          Comece sua automacao inteligente
+          {t('finalCTA.heading')}
         </Heading>
         <Text color="whiteAlpha.800" fontSize="lg" lineHeight="1.7">
-          Conecte seu WhatsApp, monte workflows visuais e ative agentes de IA em minutos.
+          {t('finalCTA.subtitle')}
         </Text>
 
         <HStack spacing={4} flexWrap="wrap" justify="center">
@@ -29,27 +33,27 @@ export function FinalCTA() {
             transition="all 0.2s"
             fontWeight="700"
           >
-            Vamos conversar
+            {t('cta.letsChat', { ns: 'common' })}
           </Button>
           <Button
             as={Link}
-            to="/contato"
+            to={lp('/contato')}
             size="lg"
             variant="outline"
             borderColor="whiteAlpha.500"
             color="white"
             _hover={{ bg: 'whiteAlpha.200' }}
           >
-            Conheca mais
+            {t('cta.learnMore', { ns: 'common' })}
           </Button>
         </HStack>
 
         <HStack spacing={6} fontSize="sm" color="whiteAlpha.700" flexWrap="wrap" justify="center">
-          <Text>Setup em minutos</Text>
+          <Text>{t('badges.setupInMinutes', { ns: 'common' })}</Text>
           <Box w={1} h={1} borderRadius="full" bg="whiteAlpha.400" />
-          <Text>Conforme LGPD</Text>
+          <Text>{t('badges.lgpd', { ns: 'common' })}</Text>
           <Box w={1} h={1} borderRadius="full" bg="whiteAlpha.400" />
-          <Text>Meta WhatsApp Business</Text>
+          <Text>{t('badges.metaWhatsApp', { ns: 'common' })}</Text>
         </HStack>
       </VStack>
     </SectionWrapper>

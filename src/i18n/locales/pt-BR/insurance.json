@@ -1,0 +1,86 @@
+{
+  "hero": {
+    "badge": "SEGUROS",
+    "heading": "Sinistros, cotacoes e renovacoes",
+    "headingGradient": "pelo WhatsApp",
+    "subtitle": "R$ 207B em premios (2024). 42% das vendas ja sao digitais. Sinistro resolvido por IA em menos de 10 minutos.",
+    "stats": {
+      "stat1": { "value": "R$ 207B", "label": "Premios 2024" },
+      "stat2": { "label": "Vendas digitais" },
+      "stat3": { "value": "10min", "label": "Sinistro com IA" }
+    }
+  },
+  "market": {
+    "badge": "MERCADO",
+    "heading": "Seguradoras que ja usam WhatsApp com IA",
+    "subtitle": "As maiores seguradoras do Brasil ja utilizam WhatsApp com IA para sinistros, cotacoes e atendimento. Insurtechs receberam R$ 350M em investimentos no primeiro semestre de 2025.",
+    "insurers": [
+      {
+        "name": "MAPFRE",
+        "description": "14K acessos, 1.6K sinistros, 50% resolvidos por IA, 90%+ satisfacao",
+        "highlight": "1o sinistro 100% IA"
+      },
+      {
+        "name": "EZZE Seguros",
+        "description": "Sinistro resolvido em menos de 10 minutos via WhatsApp com IA",
+        "highlight": "<10min por sinistro"
+      },
+      {
+        "name": "Porto Seguro",
+        "description": "Claims, tracking, upload de documentos \u2014 tudo pelo WhatsApp",
+        "highlight": "Claims digitais"
+      }
+    ],
+    "quote": "\"MAPFRE registrou o primeiro sinistro 100% resolvido por IA no WhatsApp, com 90%+ de satisfacao\"",
+    "quoteSource": "\u2014 MAPFRE Brasil, 2024"
+  },
+  "compliance": {
+    "heading": "Compliance SUSEP e regulatorio",
+    "subtitle": "Conformidade com Resolucao CNSP 382/2020, LGPD e normas da SUSEP integrada em cada capacidade.",
+    "items": [
+      { "label": "Conformidade SUSEP", "description": "Resolucao CNSP 382/2020 integrada" },
+      { "label": "Protecao LGPD", "description": "Mascaramento automatico de dados de segurados" },
+      { "label": "Auditoria Completa", "description": "Trilha de auditoria imutavel e rastreavel" },
+      { "label": "Criptografia Avancada", "description": "Dados sensiveis protegidos por criptografia" }
+    ]
+  },
+  "capabilities": {
+    "badge": "INSURTECH",
+    "heading": "Capacidades para seguros",
+    "subtitle": "Vistorias por IA, extracao de documentos, subscricao automatica e mais \u2014 tudo dentro do workflow.",
+    "items": [
+      { "title": "Vistoria por IA", "description": "Analise de fotos de veiculos e imoveis com visao computacional." },
+      { "title": "Extracao de Documentos", "description": "Leitura inteligente de apolices, CNH, CRLV e laudos." },
+      { "title": "Subscricao Automatica", "description": "Motor de decisao configuravel para aprovar ou rejeitar riscos." },
+      { "title": "Precificacao", "description": "Calculo de premio baseado no perfil de risco." },
+      { "title": "Protecao LGPD", "description": "Mascaramento de dados de segurados em tempo real." },
+      { "title": "Gestao de Documentos", "description": "Receba e armazene fotos e documentos pelo WhatsApp." }
+    ],
+    "pipeline": "Detalhes \u2192 Fotos e docs \u2192 Analise visual \u2192 Extracao \u2192 Decisao \u2192 Arquivo \u2192 Confirmacao",
+    "pipelineLabel": "Pipeline de sinistro:"
+  },
+  "roi": {
+    "heading": "Quanto sua seguradora economiza?",
+    "subtitle": "Simule a economia mensal ao automatizar sinistros e atendimento com IA no WhatsApp.",
+    "calc": {
+      "title": "Calculadora de ROI Seguros",
+      "fields": {
+        "brokers": "Numero de corretores",
+        "claimsPerMonth": "Sinistros/mes",
+        "costPerClaim": "Custo por sinistro (R$)"
+      },
+      "stats": {
+        "currentCost": "Custo atual/mes",
+        "withCatalisa": "Com Catalisa/mes",
+        "monthlySavings": "Economia mensal"
+      },
+      "reduction": "de reducao",
+      "currency": "R$"
+    }
+  },
+  "beforeAfter": {
+    "before": "ANTES",
+    "after": "DEPOIS"
+  },
+  "workflow": "Workflow"
+}

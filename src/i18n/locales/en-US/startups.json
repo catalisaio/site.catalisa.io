@@ -1,0 +1,52 @@
+{
+  "hero": {
+    "badge": "STARTUPS",
+    "heading": "WhatsApp as a growth engine",
+    "headingGradient": "for startups",
+    "subtitle": "91% open rate. 10x cheaper than a call center. Less than 1 minute response time.",
+    "stats": {
+      "openRate": "Open rate",
+      "cheaper": "Cheaper than call center",
+      "responseTime": "Response time"
+    }
+  },
+  "beforeAfter": {
+    "before": "BEFORE",
+    "after": "AFTER"
+  },
+  "workflow": "Workflow",
+  "compliance": {
+    "heading": "Infrastructure ready to scale",
+    "items": [
+      { "label": "LGPD Compliance", "description": "Data protection from day zero" },
+      { "label": "API-first", "description": "Integrate with any stack in minutes" },
+      { "label": "Scalability", "description": "From 10 to 10,000 conversations without changing anything" },
+      { "label": "Full Isolation", "description": "Multi-tenant with isolated data per company" }
+    ]
+  },
+  "capabilities": {
+    "badge": "STARTUP CAPABILITIES",
+    "heading": "Grow fast with AI on WhatsApp",
+    "subtitle": "Automatic qualification, smart onboarding, scalable support and real-time analytics.",
+    "items": [
+      { "title": "AI Qualification", "description": "Automated SDR that qualifies leads 24/7 without human intervention." },
+      { "title": "Automated Onboarding", "description": "Guide new users through the product with conversational tutorials." },
+      { "title": "Smart Support", "description": "AI resolves 75% of tickets without escalating to humans." },
+      { "title": "Real-Time Analytics", "description": "NPS, engagement and conversion metrics updated live." }
+    ],
+    "pipelineLabel": "Full pipeline:",
+    "pipelineSteps": "Lead \u2192 Qualification \u2192 Demo \u2192 Onboarding \u2192 Support \u2192 Retention"
+  },
+  "roi": {
+    "heading": "How much do you save?",
+    "subtitle": "Simulate your monthly savings by replacing manual SDRs with AI agents.",
+    "calculatorTitle": "ROI Calculator",
+    "sdrsLabel": "Current SDRs",
+    "leadsLabel": "Leads per day",
+    "costLabel": "Cost per SDR (R$)",
+    "currentCost": "Current cost/month",
+    "withCatalisa": "With Catalisa/month",
+    "monthlySavings": "Monthly savings",
+    "reduction": "reduction"
+  }
+}

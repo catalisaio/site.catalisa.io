@@ -1,0 +1,89 @@
+{
+  "title": "Politica de Privacidade",
+  "lastUpdated": "Ultima atualizacao: Fevereiro 2026",
+  "intro": {
+    "title": "Introducao",
+    "text": "A Catalisa (\"nos\", \"nosso\" ou \"Catalisa\") opera a plataforma de automacao WhatsApp com inteligencia artificial. Esta Politica de Privacidade descreve como coletamos, usamos, armazenamos e protegemos suas informacoes pessoais."
+  },
+  "collection": {
+    "title": "Informacoes que Coletamos",
+    "items": [
+      "Dados de cadastro: nome, email, telefone, empresa",
+      "Dados de uso: interacoes com a plataforma, logs de acesso",
+      "Dados de comunicacao: mensagens processadas pela plataforma",
+      "Dados tecnicos: endereco IP, navegador, dispositivo"
+    ]
+  },
+  "use": {
+    "title": "Como Usamos suas Informacoes",
+    "items": [
+      "Fornecer e melhorar nossos servicos",
+      "Processar automacoes e workflows configurados",
+      "Comunicar atualizacoes e suporte tecnico",
+      "Cumprir obrigacoes legais e regulatorias"
+    ]
+  },
+  "sharing": {
+    "title": "Compartilhamento de Dados",
+    "text": "Nao vendemos suas informacoes pessoais. Compartilhamos dados apenas com:",
+    "items": [
+      "Provedores de infraestrutura (hospedagem em nuvem no Brasil)",
+      "Meta/WhatsApp (para funcionamento da API do WhatsApp Business)",
+      "Provedores de IA (Anthropic, OpenAI) para processamento de linguagem natural",
+      "Autoridades competentes quando exigido por lei"
+    ]
+  },
+  "security": {
+    "title": "Seguranca dos Dados",
+    "text": "Implementamos medidas tecnicas e organizacionais para proteger suas informacoes:",
+    "items": [
+      "Criptografia em transito (TLS) e em repouso (AES-256)",
+      "Isolamento multi-tenant com controle de acesso (RBAC)",
+      "Mascaramento automatico de dados sensiveis (PII)",
+      "Backups automaticos e monitoramento 24/7",
+      "Infraestrutura hospedada em data centers no Brasil"
+    ]
+  },
+  "rights": {
+    "title": "Seus Direitos (LGPD)",
+    "text": "De acordo com a Lei Geral de Protecao de Dados (LGPD), voce tem direito a:",
+    "items": [
+      "Confirmar a existencia de tratamento de dados",
+      "Acessar seus dados pessoais",
+      "Corrigir dados incompletos ou desatualizados",
+      "Solicitar a anonimizacao ou eliminacao de dados",
+      "Revogar o consentimento a qualquer momento",
+      "Solicitar a portabilidade dos dados"
+    ]
+  },
+  "whatsapp": {
+    "title": "WhatsApp e Meta",
+    "text": "Nossa plataforma utiliza a API do WhatsApp Business. As mensagens processadas estao sujeitas aos Termos de Servico e Politica de Privacidade do WhatsApp/Meta. Nao armazenamos o conteudo das mensagens alem do necessario para o funcionamento dos workflows configurados."
+  },
+  "deletion": {
+    "title": "Exclusao de Dados",
+    "text": "Voce pode solicitar a exclusao dos seus dados a qualquer momento entrando em contato conosco. Dados serao removidos em ate 30 dias, exceto quando houver obrigacao legal de retencao."
+  },
+  "retention": {
+    "title": "Retencao de Dados",
+    "text": "Mantemos seus dados pelo tempo necessario para fornecer nossos servicos ou conforme exigido por lei. Dados de conta sao retidos enquanto a conta estiver ativa. Logs de auditoria sao mantidos por 12 meses."
+  },
+  "children": {
+    "title": "Menores de Idade",
+    "text": "Nossos servicos nao sao destinados a menores de 18 anos. Nao coletamos intencionalmente dados de menores."
+  },
+  "changes": {
+    "title": "Alteracoes nesta Politica",
+    "text": "Podemos atualizar esta politica periodicamente. Alteracoes significativas serao comunicadas por email ou notificacao na plataforma."
+  },
+  "contact": {
+    "title": "Contato",
+    "text": "Para exercer seus direitos ou esclarecer duvidas sobre esta politica:",
+    "email": "Email: contato@catalisa.io",
+    "whatsapp": "WhatsApp: +55 11 97730-3414"
+  },
+  "consent": {
+    "title": "Consentimento",
+    "text": "Ao utilizar nossa plataforma, voce consente com a coleta e uso de informacoes conforme descrito nesta Politica de Privacidade."
+  }
+}

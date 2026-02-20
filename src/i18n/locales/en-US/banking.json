@@ -1,0 +1,73 @@
+{
+  "hero": {
+    "badge": "BANKING",
+    "heading": "WhatsApp as a banking channel",
+    "headingGradient": "intelligent",
+    "subtitle": "148M Brazilians on WhatsApp. 82% of banking transactions are digital. 85% of banks already have chatbots.",
+    "stats": {
+      "stat1": { "label": "WhatsApp users in Brazil" },
+      "stat2": { "label": "Digital transactions" },
+      "stat3": { "label": "Messaging growth YoY" }
+    }
+  },
+  "market": {
+    "badge": "MARKET",
+    "heading": "The banking market is already on WhatsApp",
+    "subtitle": "Brazil's largest banks already use WhatsApp with AI to serve customers. Messaging transactions grew 76% in one year (70.9M to 125.2M).",
+    "banks": [
+      { "name": "Itau", "description": "Generative AI + Pix via WhatsApp", "highlight": "AI Pioneer" },
+      { "name": "Nubank", "description": "109M customers, 100% digital support", "highlight": "109M customers" },
+      { "name": "PicPay", "description": "Pix by voice with AI on WhatsApp", "highlight": "Pix by voice" },
+      { "name": "C6 Bank", "description": "AI assistant for banking operations", "highlight": "AI Assistant" }
+    ],
+    "quote": "\"85% of Brazilian banks have a chatbot on WhatsApp\"",
+    "quoteSource": "\u2014 Finsiders / FEBRABAN, 2024"
+  },
+  "compliance": {
+    "heading": "Banking compliance and regulation",
+    "subtitle": "BACEN, LGPD, and Open Finance compliance built into every capability.",
+    "items": [
+      { "label": "BACEN/LGPD Compliance", "description": "Automatic protection of sensitive data" },
+      { "label": "Banking Encryption", "description": "Data protected with advanced encryption" },
+      { "label": "Digital Auditing", "description": "Complete and immutable audit trail" },
+      { "label": "Isolation and Control", "description": "Multi-tenant with granular access control" }
+    ]
+  },
+  "capabilities": {
+    "badge": "OPEN FINANCE",
+    "heading": "Open Finance integration",
+    "subtitle": "62M active consents and R$ 18B in credit operations. Connect open data to your workflows.",
+    "items": [
+      { "title": "Open Finance APIs", "description": "Connect to any participating institution." },
+      { "title": "Data Validation", "description": "Validate consents and received data." },
+      { "title": "Decision Engine", "description": "Configurable rules for scoring with enriched data." },
+      { "title": "Custom Scoring", "description": "Interest rates based on real history." }
+    ],
+    "pipeline": "Consent \u2192 Open Finance Query \u2192 History \u2192 Scoring \u2192 Decision \u2192 Result",
+    "pipelineLabel": "Open Finance Pipeline:"
+  },
+  "roi": {
+    "heading": "How much does your bank save?",
+    "subtitle": "Simulate monthly savings by migrating branch transactions to WhatsApp with AI.",
+    "calc": {
+      "title": "Banking ROI Calculator",
+      "fields": {
+        "branches": "Number of branches",
+        "transactionsPerDay": "Transactions/day per branch",
+        "costPerTransaction": "Cost per transaction (R$)"
+      },
+      "stats": {
+        "currentCost": "Current cost/month",
+        "withCatalisa": "With Catalisa/month",
+        "monthlySavings": "Monthly savings"
+      },
+      "reduction": "reduction",
+      "currency": "R$"
+    }
+  },
+  "beforeAfter": {
+    "before": "BEFORE",
+    "after": "AFTER"
+  },
+  "workflow": "Workflow"
+}

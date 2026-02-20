@@ -1,51 +1,55 @@
 import { Box, Container, Flex, HStack, VStack, Text, Link as ChakraLink, SimpleGrid } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import { FiMail, FiMessageCircle } from 'react-icons/fi';
+import { useTranslation } from 'react-i18next';
+import { useLocalizedPath } from '../../i18n/useLocalizedPath';
 import { config } from '../../config';
 
 type FooterLink = { label: string; to?: string; href?: string };
 
-const footerSections: { title: string; links: FooterLink[] }[] = [
-  {
-    title: 'Produto',
-    links: [
-      { label: 'Studio', to: '/studio' },
-      { label: 'AI Agents', to: '/ai-agents' },
-      { label: 'Building Blocks', to: '/building-blocks' },
-      { label: 'Workflows', to: '/workflows' },
-      { label: 'Casos de Uso', to: '/use-cases' },
-    ],
-  },
-  {
-    title: 'Verticais',
-    links: [
-      { label: 'Fintech', to: '/fintech' },
-      { label: 'Bancario', to: '/bancario' },
-      { label: 'Seguros', to: '/seguros' },
-      { label: 'Varejo', to: '/varejo' },
-      { label: 'Startups', to: '/startups' },
-      { label: 'Casos de Uso', to: '/use-cases' },
-    ],
-  },
-  {
-    title: 'Developer',
-    links: [
-      { label: 'Documentacao', href: config.docsUrl },
-      { label: 'API Reference', href: config.apiReferenceUrl },
-    ],
-  },
-  {
-    title: 'Empresa',
-    links: [
-      { label: 'Sobre', to: '/' },
-      { label: 'Contato', to: '/contato' },
-      { label: 'Termos de Uso', to: '/' },
-      { label: 'Politica de Privacidade', to: '/' },
-    ],
-  },
-];
-
 export function Footer() {
+  const { t } = useTranslation('common');
+  const lp = useLocalizedPath();
+
+  const footerSections: { title: string; links: FooterLink[] }[] = [
+    {
+      title: t('footer.sections.platform'),
+      links: [
+        { label: t('megaMenu.platform.studio.label'), to: lp('/studio') },
+        { label: t('megaMenu.platform.aiAgents.label'), to: lp('/ai-agents') },
+        { label: t('megaMenu.platform.blocks.label'), to: lp('/building-blocks') },
+        { label: t('megaMenu.platform.workflows.label'), to: lp('/workflows') },
+      ],
+    },
+    {
+      title: t('footer.sections.industries'),
+      links: [
+        { label: t('megaMenu.industries.fintech.label'), to: lp('/fintech') },
+        { label: t('megaMenu.industries.banking.label'), to: lp('/bancario') },
+        { label: t('megaMenu.industries.insurance.label'), to: lp('/seguros') },
+        { label: t('megaMenu.industries.retail.label'), to: lp('/varejo') },
+        { label: t('megaMenu.industries.startups.label'), to: lp('/startups') },
+      ],
+    },
+    {
+      title: t('footer.sections.developer'),
+      links: [
+        { label: t('footer.links.documentation'), href: config.docsUrl },
+        { label: t('footer.links.apiReference'), href: config.apiReferenceUrl },
+      ],
+    },
+    {
+      title: t('footer.sections.company'),
+      links: [
+        { label: t('footer.links.about'), to: lp('/') },
+        { label: t('footer.links.useCases'), to: lp('/use-cases') },
+        { label: t('footer.links.demo'), to: lp('/demo') },
+        { label: t('footer.links.contact'), to: lp('/contato') },
+        { label: t('footer.links.privacyPolicy'), to: lp('/politica-privacidade') },
+      ],
+    },
+  ];
+
   return (
     <Box bg="gray.900" color="whiteAlpha.800" pt={16} pb={8}>
       <Container maxW="1280px">
@@ -57,7 +61,7 @@ export function Footer() {
               <Box as="span" color="#ECC94B">.</Box>
             </Flex>
             <Text fontSize="sm" color="whiteAlpha.600" lineHeight="tall">
-              Plataforma de automacao WhatsApp com IA para fintechs e empresas brasileiras.
+              {t('footer.description')}
             </Text>
             <HStack spacing={3}>
               <ChakraLink href="mailto:contato@catalisa.io" _hover={{ color: 'brand.300' }}>
@@ -76,7 +80,7 @@ export function Footer() {
                 {section.title}
               </Text>
               {section.links.map((link) =>
-                'to' in link ? (
+                link.to ? (
                   <ChakraLink
                     key={link.label}
                     as={Link}
@@ -94,7 +98,7 @@ export function Footer() {
                     fontSize="sm"
                     color="whiteAlpha.600"
                     _hover={{ color: 'white' }}
-                    isExternal={'href' in link}
+                    isExternal
                   >
                     {link.label}
                   </ChakraLink>
@@ -112,12 +116,12 @@ export function Footer() {
             gap={4}
           >
             <Text fontSize="xs" color="whiteAlpha.400">
-              &copy; {new Date().getFullYear()} Catalisa. Todos os direitos reservados.
+              &copy; {new Date().getFullYear()} {t('footer.copyright')}
             </Text>
             <HStack spacing={4} fontSize="xs" color="whiteAlpha.400">
-              <Text>Conforme LGPD</Text>
-              <Text>Meta WhatsApp Business</Text>
-              <Text>Dados no Brasil</Text>
+              <Text>{t('badges.lgpd')}</Text>
+              <Text>{t('badges.metaWhatsApp')}</Text>
+              <Text>{t('badges.dataBrazil')}</Text>
             </HStack>
           </Flex>
         </Box>

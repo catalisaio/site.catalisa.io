@@ -15,6 +15,8 @@ import {
 import { AnimatePresence, motion } from 'framer-motion';
 import { FiPlay, FiZap, FiCpu, FiClock, FiCode } from 'react-icons/fi';
 import { Link as RouterLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import { useLocalizedPath } from '../../i18n/useLocalizedPath';
 import { MotionBox } from '../motion';
 import { GradientText } from '../shared/GradientText';
 import { BrowserFrame } from '../shared/BrowserFrame';
@@ -31,53 +33,6 @@ interface CaseStep {
   mobileVideo?: string;
 }
 
-const caseSteps: CaseStep[] = [
-  {
-    number: '01',
-    label: 'Descreveu',
-    title: '"Quero atendimento de seguros via WhatsApp"',
-    description:
-      'O usuario descreveu em uma frase o que precisava: um sistema completo de atendimento e vendas de seguros que identifica leads, coleta dados e oferece produtos.',
-    image: '/screenshots/case/ai-assistant-plan.jpg',
-    highlight: 'Uma frase. Sem codigo. Sem especificacao tecnica.',
-  },
-  {
-    number: '02',
-    label: 'IA Planejou',
-    title: 'Plano em 4 fases gerado em segundos',
-    description:
-      'A IA analisou o pedido e criou um plano estruturado: preparar agentes especializados, montar o workflow, implementar fluxo de vendas e ativar integracao WhatsApp.',
-    image: '/screenshots/case/ai-assistant-plan.jpg',
-    highlight: 'O usuario so precisou dizer "Aprovado."',
-  },
-  {
-    number: '03',
-    label: 'Executou',
-    title: '3 agentes + 1 workflow criados automaticamente',
-    description:
-      'A IA executou os steps: criou 3 agentes IA especializados (Identificador, Coletor, Vendedor), selecionou ferramentas e montou o workflow completo com 4 actions.',
-    image: '/screenshots/case/ai-assistant-executing.jpg',
-    highlight: 'O usuario deu feedback e a IA ajustou na hora.',
-  },
-  {
-    number: '04',
-    label: 'Funcionando',
-    title: 'Atendimento real no WhatsApp em 13 segundos',
-    description:
-      'Workflow rodando: o cliente manda "Boa tarde" e a IA identifica o lead, coleta dados, oferece seguros residencial e celular — tudo automatico.',
-    image: '/screenshots/case/workflow-complete.jpg',
-    mobileVideo: '/videos/whatsapp-demo.mp4',
-    highlight: 'Da frase ao atendimento funcionando: menos de 3 minutos.',
-  },
-];
-
-const resultStats = [
-  { icon: FiCpu, value: '3', label: 'agentes IA criados' },
-  { icon: FiZap, value: '1', label: 'workflow completo' },
-  { icon: FiClock, value: '13s', label: 'tempo de execucao' },
-  { icon: FiCode, value: '0', label: 'linhas de codigo' },
-];
-
 const panelVariants = {
   enter: { opacity: 0, x: 40, scale: 0.98 },
   center: { opacity: 1, x: 0, scale: 1 },
@@ -85,7 +40,53 @@ const panelVariants = {
 };
 
 export function AIInAction() {
+  const { t } = useTranslation('home');
+  const lp = useLocalizedPath();
   const [activeStep, setActiveStep] = useState(0);
+
+  const caseSteps: CaseStep[] = [
+    {
+      number: '01',
+      label: t('aiInAction.steps.0.label'),
+      title: t('aiInAction.steps.0.title'),
+      description: t('aiInAction.steps.0.description'),
+      image: '/screenshots/case/ai-assistant-plan.jpg',
+      highlight: t('aiInAction.steps.0.highlight'),
+    },
+    {
+      number: '02',
+      label: t('aiInAction.steps.1.label'),
+      title: t('aiInAction.steps.1.title'),
+      description: t('aiInAction.steps.1.description'),
+      image: '/screenshots/case/ai-assistant-plan.jpg',
+      highlight: t('aiInAction.steps.1.highlight'),
+    },
+    {
+      number: '03',
+      label: t('aiInAction.steps.2.label'),
+      title: t('aiInAction.steps.2.title'),
+      description: t('aiInAction.steps.2.description'),
+      image: '/screenshots/case/ai-assistant-executing.jpg',
+      highlight: t('aiInAction.steps.2.highlight'),
+    },
+    {
+      number: '04',
+      label: t('aiInAction.steps.3.label'),
+      title: t('aiInAction.steps.3.title'),
+      description: t('aiInAction.steps.3.description'),
+      image: '/screenshots/case/workflow-complete.jpg',
+      mobileVideo: '/videos/whatsapp-demo.mp4',
+      highlight: t('aiInAction.steps.3.highlight'),
+    },
+  ];
+
+  const resultStats = [
+    { icon: FiCpu, value: t('aiInAction.resultStats.0.value'), label: t('aiInAction.resultStats.0.label') },
+    { icon: FiZap, value: t('aiInAction.resultStats.1.value'), label: t('aiInAction.resultStats.1.label') },
+    { icon: FiClock, value: t('aiInAction.resultStats.2.value'), label: t('aiInAction.resultStats.2.label') },
+    { icon: FiCode, value: t('aiInAction.resultStats.3.value'), label: t('aiInAction.resultStats.3.label') },
+  ];
+
   const currentStep = caseSteps[activeStep];
 
   return (
@@ -134,7 +135,7 @@ export function AIInAction() {
               spacing={2}
             >
               <Text color="green.300" fontSize="sm" fontWeight="600">
-                &#9679; CASO REAL
+                &#9679; {t('aiInAction.badge')}
               </Text>
             </HStack>
 
@@ -146,19 +147,18 @@ export function AIInAction() {
               lineHeight="1.2"
               maxW="750px"
             >
-              De uma frase a um sistema{' '}
+              {t('aiInAction.heading')}{' '}
               <GradientText
                 gradient="linear(to-r, green.300, green.400, brand.300)"
                 fontSize="inherit"
                 fontWeight="inherit"
               >
-                de atendimento completo
+                {t('aiInAction.headingGradient')}
               </GradientText>
             </Heading>
 
             <Text color="whiteAlpha.600" fontSize={{ base: 'md', md: 'lg' }} maxW="550px">
-              Nenhuma linha de codigo. Nenhum programador.
-              Apenas uma conversa com a IA.
+              {t('aiInAction.subtitle')}
             </Text>
           </VStack>
         </MotionBox>
@@ -480,15 +480,14 @@ export function AIInAction() {
                 fontWeight="700"
                 color="white"
               >
-                Assista ao demo completo
+                {t('aiInAction.videoSection.heading')}
               </Heading>
               <Text color="whiteAlpha.600" fontSize="sm">
-                Veja em poucos minutos como um sistema de atendimento de seguros
-                foi criado do zero usando apenas o chat com IA.
+                {t('aiInAction.videoSection.description')}
               </Text>
               <Button
                 as={RouterLink}
-                to="/demo"
+                to={lp('/demo')}
                 size="lg"
                 leftIcon={<FiPlay />}
                 bgGradient="linear(to-r, green.500, green.400)"
@@ -501,7 +500,7 @@ export function AIInAction() {
                 transition="all 0.3s"
                 borderRadius="xl"
               >
-                Ver Demo Completo
+                {t('cta.watchFullDemo', { ns: 'common' })}
               </Button>
             </VStack>
           </Flex>

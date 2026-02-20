@@ -1,0 +1,79 @@
+{
+  "hero": {
+    "badge": "WORKFLOWS",
+    "heading": "Monte automacoes visuais.",
+    "headingGradient": "Sem codigo.",
+    "subtitle": "Drag & drop com 150+ building blocks, execucao paralela (DAG), teste A/B nativo e interpolacao de variaveis entre blocos."
+  },
+  "howItWorks": {
+    "heading": "Como funciona",
+    "steps": [
+      { "title": "Arraste capacidades no canvas", "description": "Escolha entre 150+ capacidades. Cada bloco e configuravel com interface visual." },
+      { "title": "Conecte triggers a capacidades", "description": "Defina o que dispara o workflow: mensagem recebida, lead criado, webhook, agendamento." },
+      { "title": "Configure cada bloco", "description": "Parametrize variaveis, defina condicoes e conecte com APIs externas." },
+      { "title": "Ative com um clique", "description": "Publique e monitore. Veja execucoes em tempo real. Rollback a qualquer versao." }
+    ]
+  },
+  "triggers": {
+    "heading": "O que pode disparar um workflow?",
+    "subtitle": "8 tipos de triggers para iniciar automacoes automaticamente ou sob demanda.",
+    "items": [
+      { "label": "Lead criado", "description": "Quando um novo lead e registrado" },
+      { "label": "Lead atualizado", "description": "Quando dados de um lead mudam" },
+      { "label": "Mensagem recebida", "description": "Quando chega mensagem no WhatsApp" },
+      { "label": "Mensagem enviada", "description": "Apos envio de mensagem" },
+      { "label": "Webhook recebido", "description": "Sistema externo dispara evento" },
+      { "label": "Workflow completado", "description": "Quando outro workflow termina" },
+      { "label": "Agendamento", "description": "Execucao programada (cron)" },
+      { "label": "Manual", "description": "Disparado manualmente pela equipe" }
+    ]
+  },
+  "workflowShowcase": {
+    "badge": "EXEMPLOS INTERATIVOS",
+    "heading": "Veja workflows em acao",
+    "subtitle": "Clique em cada workflow para ver a animacao de execucao — dos mais simples aos complexos com execucao paralela.",
+    "parallel": "paralelo"
+  },
+  "screenshot": {
+    "badge": "PRODUTO REAL",
+    "heading": "Isso nao e mockup.",
+    "headingHighlight": "E o editor real.",
+    "description": "O canvas visual do Catalisa com execucao paralela real — arrastar blocos, conectar, executar. O workflow \"Hub de Eventos Fan-out/Fan-in\" rodando em producao com 3 APIs em paralelo."
+  },
+  "dag": {
+    "badge": "EXECUCAO DAG",
+    "heading": "Paralelo + Sequencial",
+    "description": "Workflows executam como grafos aciclicos direcionados (DAG). Blocos sem dependencias rodam em paralelo. Blocos com dependencias esperam automaticamente.",
+    "features": [
+      "Blocos independentes rodam em paralelo",
+      "Logica de branching com condicoes",
+      "Aguarda resposta por ate 7 dias",
+      "Deteccao automatica de dependencias circulares"
+    ],
+    "dagExample": {
+      "trigger": "Trigger: Mensagem",
+      "sentiment": "Sentimento",
+      "extractData": "Extrair dados",
+      "conditional": "Condicional",
+      "approved": "Aprovado",
+      "rejected": "Rejeitado"
+    }
+  },
+  "variables": {
+    "heading": "Capacidades conversam entre si",
+    "subtitle": "Use variaveis para passar dados entre blocos. O output de uma capacidade alimenta a proxima.",
+    "examples": [
+      { "variable": "{{trigger.payload.phone}}", "description": "Telefone do trigger" },
+      { "variable": "{{actions.createLead.output.id}}", "description": "ID do lead criado" },
+      { "variable": "{{actions.aiAgent.output.response}}", "description": "Resposta do agente IA" },
+      { "variable": "{{trigger.payload.message.text}}", "description": "Texto da mensagem" }
+    ]
+  },
+  "versioning": {
+    "items": [
+      { "title": "Versionamento", "description": "Cada salvamento cria uma versao. Rollback a qualquer ponto." },
+      { "title": "Historico de execucoes", "description": "Veja cada execucao com detalhes: inputs, outputs, duracoes." },
+      { "title": "Replay", "description": "Reexecute qualquer workflow com os mesmos dados para depurar." }
+    ]
+  }
+}

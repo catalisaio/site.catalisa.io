@@ -1,0 +1,109 @@
+{
+  "nav": {
+    "studio": "Studio",
+    "aiAgents": "AI Agents",
+    "buildingBlocks": "Building Blocks",
+    "workflows": "Workflows",
+    "useCases": "Use Cases",
+    "developers": "Developers",
+    "verticals": "Industries",
+    "fintech": "Fintech",
+    "banking": "Banking",
+    "insurance": "Insurance",
+    "retail": "Retail",
+    "startups": "Startups"
+  },
+  "megaMenu": {
+    "platform": {
+      "label": "Platform",
+      "products": "Products",
+      "infrastructure": "Infrastructure",
+      "resources": "Resources",
+      "studio": { "label": "Studio", "desc": "Build automations without writing code" },
+      "aiAgents": { "label": "AI Agents", "desc": "Intelligent agents with generative AI" },
+      "blocks": { "label": "Building Blocks", "desc": "150+ ready-to-use capabilities" },
+      "workflows": { "label": "Workflows", "desc": "Parallel automation with DAG" },
+      "useCases": { "label": "Use Cases", "desc": "See real-world examples" },
+      "demo": { "label": "See Demo", "desc": "Live demonstration" }
+    },
+    "solutions": {
+      "label": "Solutions",
+      "whatsapp": {
+        "title": "WhatsApp & Messaging",
+        "support247": { "label": "24/7 Support", "desc": "Respond to customers automatically" },
+        "campaigns": { "label": "Campaigns & notifications", "desc": "Bulk sending with personalization" },
+        "multichannel": { "label": "Multichannel integration", "desc": "WhatsApp, SMS, email" }
+      },
+      "support": {
+        "title": "Customer Support",
+        "chatbots": { "label": "Smart chatbots", "desc": "Resolve without human intervention" },
+        "routing": { "label": "Intelligent routing", "desc": "Route to the right team" },
+        "dashboards": { "label": "Dashboards & metrics", "desc": "Monitor in real time" }
+      },
+      "sales": {
+        "title": "Sales & Automation",
+        "qualification": { "label": "Lead qualification", "desc": "Identify opportunities" },
+        "followup": { "label": "Automatic follow-up", "desc": "Never miss a lead" },
+        "customWorkflows": { "label": "Custom workflows", "desc": "Build your own flows" }
+      }
+    },
+    "industries": {
+      "label": "Industries",
+      "fintech": { "label": "Fintech", "desc": "Regulatory automation, onboarding, KYC" },
+      "banking": { "label": "Banking", "desc": "Open Finance, Pix, banking compliance" },
+      "insurance": { "label": "Insurance", "desc": "SUSEP, claims, quotes" },
+      "retail": { "label": "Retail", "desc": "Sales, after-sales, loyalty" },
+      "startups": { "label": "Startups", "desc": "Scale fast, optimized cost" }
+    }
+  },
+  "cta": {
+    "letsChat": "Let's chat",
+    "seeDemo": "See Live Demo",
+    "seeHowItWorks": "See how it works",
+    "learnMore": "Learn more",
+    "sendMessage": "Send message",
+    "chatOnWhatsApp": "Chat on WhatsApp",
+    "seeInAction": "See it in action",
+    "wantToKnowMore": "Want to know more",
+    "startAutomation": "Start your smart automation",
+    "watchFullDemo": "Watch Full Demo",
+    "knowAIAgents": "Explore AI Agents"
+  },
+  "footer": {
+    "sections": {
+      "platform": "Platform",
+      "industries": "Industries",
+      "developer": "Developer",
+      "company": "Company & Resources",
+      "product": "Product",
+      "verticals": "Industries"
+    },
+    "links": {
+      "documentation": "Documentation",
+      "apiReference": "API Reference",
+      "about": "About",
+      "contact": "Contact",
+      "termsOfUse": "Terms of Use",
+      "privacyPolicy": "Privacy Policy",
+      "useCases": "Use Cases",
+      "demo": "See Demo"
+    },
+    "description": "WhatsApp automation platform with AI for fintechs and Brazilian companies.",
+    "copyright": "Catalisa. All rights reserved."
+  },
+  "badges": {
+    "lgpd": "LGPD Compliant",
+    "metaWhatsApp": "Meta WhatsApp Business",
+    "setupMinutes": "Setup in 5 minutes",
+    "setupInMinutes": "Setup in minutes",
+    "dataBrazil": "Data in Brazil",
+    "dataStoredBrazil": "Data stored in Brazil",
+    "encryption": "End-to-end encryption",
+    "multiTenant": "Multi-tenant isolation",
+    "rbac": "Access control (RBAC)",
+    "whatsapp247": "24/7 WhatsApp support"
+  },
+  "logoMarquee": {
+    "title": "Technologies and integrations"
+  }
+}

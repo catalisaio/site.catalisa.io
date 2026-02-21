@@ -50,7 +50,7 @@
       "Waits for response up to 7 days",
       "Automatic circular dependency detection"
     ],
-    "dagExample": {
+    "example": {
       "trigger": "Trigger: Message",
       "sentiment": "Sentiment",
       "extractData": "Extract data",
@@ -63,10 +63,10 @@
     "heading": "Capabilities talk to each other",
     "subtitle": "Use variables to pass data between blocks. The output of one capability feeds the next.",
     "examples": [
-      { "variable": "{{trigger.payload.phone}}", "description": "Trigger phone number" },
-      { "variable": "{{actions.createLead.output.id}}", "description": "Created lead ID" },
-      { "variable": "{{actions.aiAgent.output.response}}", "description": "AI agent response" },
-      { "variable": "{{trigger.payload.message.text}}", "description": "Message text" }
+      "Trigger phone number",
+      "Created lead ID",
+      "AI agent response",
+      "Message text"
     ]
   },
   "versioning": {

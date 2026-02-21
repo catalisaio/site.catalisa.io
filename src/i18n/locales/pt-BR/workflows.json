@@ -50,7 +50,7 @@
       "Aguarda resposta por ate 7 dias",
       "Deteccao automatica de dependencias circulares"
     ],
-    "dagExample": {
+    "example": {
       "trigger": "Trigger: Mensagem",
       "sentiment": "Sentimento",
       "extractData": "Extrair dados",
@@ -63,10 +63,10 @@
     "heading": "Capacidades conversam entre si",
     "subtitle": "Use variaveis para passar dados entre blocos. O output de uma capacidade alimenta a proxima.",
     "examples": [
-      { "variable": "{{trigger.payload.phone}}", "description": "Telefone do trigger" },
-      { "variable": "{{actions.createLead.output.id}}", "description": "ID do lead criado" },
-      { "variable": "{{actions.aiAgent.output.response}}", "description": "Resposta do agente IA" },
-      { "variable": "{{trigger.payload.message.text}}", "description": "Texto da mensagem" }
+      "Telefone do trigger",
+      "ID do lead criado",
+      "Resposta do agente IA",
+      "Texto da mensagem"
     ]
   },
   "versioning": {

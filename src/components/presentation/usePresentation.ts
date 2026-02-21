@@ -1,5 +1,6 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
+import { useSlideTracking } from '../../hooks/useAnalytics';
 
 interface UsePresentationOptions {
   totalSlides: number;
@@ -14,6 +15,8 @@ export function usePresentation({ totalSlides }: UsePresentationOptions) {
   const [direction, setDirection] = useState<'forward' | 'back'>('forward');
 
   const progress = totalSlides > 1 ? currentSlide / (totalSlides - 1) : 0;
+  const { trackSlide, trackSlideEngagement } = useSlideTracking();
+  const slideStartRef = useRef(Date.now());
 
   const goTo = useCallback((index: number) => {
     const clamped = Math.max(0, Math.min(totalSlides - 1, index));
@@ -38,6 +41,17 @@ export function usePresentation({ totalSlides }: UsePresentationOptions) {
   const exit = useCallback(() => {
     navigate('/');
   }, [navigate]);
+
+  // Slide analytics
+  useEffect(() => {
+    // Track engagement time on previous slide
+    const prevSeconds = Math.round((Date.now() - slideStartRef.current) / 1000);
+    trackSlideEngagement(currentSlide === 0 ? 0 : currentSlide - (direction === 'forward' ? 1 : -1), prevSeconds);
+
+    // Track new slide view
+    slideStartRef.current = Date.now();
+    trackSlide(currentSlide, totalSlides);
+  }, [currentSlide]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // URL sync
   useEffect(() => {

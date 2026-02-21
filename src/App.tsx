@@ -4,6 +4,7 @@ import { ChakraProvider, Spinner, Flex } from '@chakra-ui/react';
 import { theme } from './theme';
 import { PageLayout } from './components/layout/PageLayout';
 import { LanguageLayout } from './components/layout/LanguageLayout';
+import { useAnalytics } from './hooks/useAnalytics';
 
 const Home = lazy(() => import('./pages/Home').then(m => ({ default: m.Home })));
 const Studio = lazy(() => import('./pages/Studio').then(m => ({ default: m.Studio })));
@@ -29,6 +30,12 @@ function PageLoader() {
   );
 }
 
+/** Analytics tracker — must be inside BrowserRouter */
+function AnalyticsTracker() {
+  useAnalytics();
+  return null;
+}
+
 /** Layout route that wraps children with Header + Footer */
 function SiteLayout() {
   return (
@@ -42,6 +49,7 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
       <BrowserRouter>
+        <AnalyticsTracker />
         <Suspense fallback={<PageLoader />}>
           <Routes>
             {/* Fullscreen routes — no Header/Footer */}

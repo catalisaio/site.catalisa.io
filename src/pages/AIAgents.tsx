@@ -134,8 +134,8 @@ export function AIAgents() {
 
         <Box bg="brand.50" p={6} borderRadius="xl" mt={8} textAlign="center">
           <Text color="gray.700" fontSize="md" fontWeight="500">
-            <Text as="span" fontWeight="700" color="brand.600">{t('comparison.calloutBold')}</Text>{' '}
-            {t('comparison.calloutText')}
+            <Text as="span" fontWeight="700" color="brand.600">{t('comparison.agentCallout')}</Text>{' '}
+            {t('comparison.agentCalloutDesc')}
           </Text>
         </Box>
       </SectionWrapper>

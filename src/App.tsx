@@ -1,9 +1,10 @@
-import { lazy, Suspense } from 'react';
+import { lazy, Suspense, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, Navigate, Outlet } from 'react-router-dom';
 import { ChakraProvider, Spinner, Flex } from '@chakra-ui/react';
 import { theme } from './theme';
 import { PageLayout } from './components/layout/PageLayout';
 import { LanguageLayout } from './components/layout/LanguageLayout';
+import { CookieConsent } from './components/shared/CookieConsent';
 import { useAnalytics } from './hooks/useAnalytics';
 
 const Home = lazy(() => import('./pages/Home').then(m => ({ default: m.Home })));
@@ -45,11 +46,20 @@ function SiteLayout() {
   );
 }
 
+/** Dispatch event for pre-renderer to know the app is ready */
+function AppReadySignal() {
+  useEffect(() => {
+    document.dispatchEvent(new Event('app-rendered'));
+  }, []);
+  return null;
+}
+
 function App() {
   return (
     <ChakraProvider theme={theme}>
       <BrowserRouter>
         <AnalyticsTracker />
+        <AppReadySignal />
         <Suspense fallback={<PageLoader />}>
           <Routes>
             {/* Fullscreen routes — no Header/Footer */}
@@ -103,6 +113,7 @@ function App() {
             </Route>
           </Routes>
         </Suspense>
+        <CookieConsent />
       </BrowserRouter>
     </ChakraProvider>
   );

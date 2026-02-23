@@ -1,15 +1,20 @@
 import { useEffect, useRef, useCallback } from 'react';
 import { useLocation } from 'react-router-dom';
 
-// ---- gtag type helper ----
+// ---- Data Layer type helper ----
 declare global {
   interface Window {
+    dataLayer?: Record<string, unknown>[];
     gtag?: (...args: unknown[]) => void;
   }
 }
 
-function gtag(...args: unknown[]) {
-  window.gtag?.(...args);
+/**
+ * Push an event to the GTM Data Layer.
+ * All analytics hooks go through this single function.
+ */
+function pushEvent(event: string, params: Record<string, unknown> = {}) {
+  window.dataLayer?.push({ event, ...params });
 }
 
 // =============================================
@@ -21,7 +26,7 @@ export function usePageViewTracking() {
   const location = useLocation();
 
   useEffect(() => {
-    gtag('event', 'page_view', {
+    pushEvent('page_view', {
       page_path: location.pathname + location.search,
       page_location: window.location.href,
       page_title: document.title,
@@ -51,7 +56,7 @@ export function useScrollDepthTracking() {
       for (const t of thresholds) {
         if (percent >= t && !firedRef.current.has(t)) {
           firedRef.current.add(t);
-          gtag('event', 'scroll_depth', {
+          pushEvent('scroll_depth', {
             percent: t,
             page_path: location.pathname,
           });
@@ -74,9 +79,9 @@ export function useCtaClickTracking() {
       const href = el.getAttribute('href') || '';
       const text = (el.textContent || '').trim().slice(0, 50);
 
-      // WhatsApp CTA
+      // WhatsApp CTA (Key Event / Conversion)
       if (href.includes('wa.me')) {
-        gtag('event', 'cta_click', {
+        pushEvent('cta_click', {
           cta_type: 'whatsapp',
           cta_text: text,
           page_path: window.location.pathname,
@@ -86,7 +91,7 @@ export function useCtaClickTracking() {
 
       // External links
       if (href.startsWith('http') && !href.includes(window.location.hostname)) {
-        gtag('event', 'outbound_click', {
+        pushEvent('outbound_click', {
           url: href,
           link_text: text,
           page_path: window.location.pathname,
@@ -97,7 +102,7 @@ export function useCtaClickTracking() {
       // Internal navigation CTAs (buttons with specific keywords)
       const isNavCta = el.tagName === 'BUTTON' || el.getAttribute('role') === 'button';
       if (isNavCta && text) {
-        gtag('event', 'cta_click', {
+        pushEvent('cta_click', {
           cta_type: 'internal',
           cta_text: text,
           page_path: window.location.pathname,
@@ -121,7 +126,7 @@ export function useSectionEngagementTracking() {
     for (const [id, start] of timersRef.current) {
       const seconds = Math.round((Date.now() - start) / 1000);
       if (seconds > 2) {
-        gtag('event', 'section_engagement', {
+        pushEvent('section_engagement', {
           section_id: id,
           seconds,
           page_path: location.pathname,
@@ -144,7 +149,7 @@ export function useSectionEngagementTracking() {
             // Section entered viewport
             if (!visibleRef.current.has(id)) {
               visibleRef.current.add(id);
-              gtag('event', 'section_view', {
+              pushEvent('section_view', {
                 section_id: id,
                 page_path: location.pathname,
               });
@@ -158,7 +163,7 @@ export function useSectionEngagementTracking() {
             if (start) {
               const seconds = Math.round((Date.now() - start) / 1000);
               if (seconds > 2) {
-                gtag('event', 'section_engagement', {
+                pushEvent('section_engagement', {
                   section_id: id,
                   seconds,
                   page_path: location.pathname,
@@ -189,7 +194,7 @@ export function useTimeOnPageTracking() {
     return () => {
       const seconds = Math.round((Date.now() - prevStart) / 1000);
       if (seconds > 2) {
-        gtag('event', 'time_on_page', {
+        pushEvent('time_on_page', {
           seconds,
           page_path: location.pathname,
         });
@@ -211,7 +216,7 @@ export function useAttentionTracking() {
         const awaySeconds = Math.round((Date.now() - hiddenAtRef.current) / 1000);
         hiddenAtRef.current = null;
         if (awaySeconds > 3) {
-          gtag('event', 'tab_return', {
+          pushEvent('tab_return', {
             away_seconds: awaySeconds,
             page_path: location.pathname,
           });
@@ -241,7 +246,7 @@ export function useVideoTracking() {
         const label = src.split('/').pop() || src;
 
         video.addEventListener('play', () => {
-          gtag('event', 'video_play', {
+          pushEvent('video_play', {
             video_src: label,
             page_path: location.pathname,
           });
@@ -249,7 +254,7 @@ export function useVideoTracking() {
 
         video.addEventListener('pause', () => {
           const pct = video.duration ? Math.round((video.currentTime / video.duration) * 100) : 0;
-          gtag('event', 'video_pause', {
+          pushEvent('video_pause', {
             video_src: label,
             percent_watched: pct,
             current_time: Math.round(video.currentTime),
@@ -258,7 +263,7 @@ export function useVideoTracking() {
         });
 
         video.addEventListener('ended', () => {
-          gtag('event', 'video_complete', {
+          pushEvent('video_complete', {
             video_src: label,
             duration: Math.round(video.duration),
             page_path: location.pathname,
@@ -273,7 +278,7 @@ export function useVideoTracking() {
           for (const m of [25, 50, 75]) {
             if (pct >= m && !milestones.has(m)) {
               milestones.add(m);
-              gtag('event', 'video_progress', {
+              pushEvent('video_progress', {
                 video_src: label,
                 milestone: m,
                 page_path: location.pathname,
@@ -293,20 +298,20 @@ export function useVideoTracking() {
   }, [location.pathname]);
 }
 
-// ---- 8. Language & device context ----
+// ---- 8. Language & device context (User Properties via Data Layer) ----
 export function useSessionContext() {
   useEffect(() => {
     const lang = document.documentElement.lang || navigator.language;
     const isMobile = window.innerWidth <= 768;
-    const isTouch = 'ontouchstart' in window;
 
-    gtag('event', 'session_context', {
-      language: lang,
-      device_type: isMobile ? 'mobile' : 'desktop',
-      touch_device: isTouch,
-      screen_width: window.innerWidth,
-      screen_height: window.innerHeight,
-      referrer: document.referrer || 'direct',
+    // Push user properties to Data Layer for GTM to set as GA4 User Properties
+    pushEvent('user_properties_set', {
+      user_properties: {
+        language: lang,
+        device_type: isMobile ? 'mobile' : 'desktop',
+        entry_page: window.location.pathname,
+        referrer_source: document.referrer || 'direct',
+      },
     });
   }, []);
 }
@@ -321,16 +326,16 @@ export function useNavigationPathTracking() {
 
     // Fire at meaningful depth (3+ pages = engaged user)
     if (historyRef.current.length === 3) {
-      gtag('event', 'engaged_session', {
+      pushEvent('engaged_session', {
         pages_viewed: 3,
-        path: historyRef.current.join(' → '),
+        path: historyRef.current.join(' > '),
       });
     }
 
     if (historyRef.current.length === 5) {
-      gtag('event', 'deep_engagement', {
+      pushEvent('deep_engagement', {
         pages_viewed: 5,
-        path: historyRef.current.join(' → '),
+        path: historyRef.current.join(' > '),
       });
     }
   }, [location.pathname]);
@@ -343,7 +348,7 @@ export function useNavigationPathTracking() {
 // ---- 10. Slide view & engagement ----
 export function useSlideTracking() {
   const trackSlide = useCallback((slideIndex: number, totalSlides: number, slideName?: string) => {
-    gtag('event', 'slide_view', {
+    pushEvent('slide_view', {
       slide_index: slideIndex,
       slide_name: slideName || `slide_${slideIndex}`,
       total_slides: totalSlides,
@@ -353,7 +358,7 @@ export function useSlideTracking() {
 
   const trackSlideEngagement = useCallback((slideIndex: number, seconds: number) => {
     if (seconds > 2) {
-      gtag('event', 'slide_engagement', {
+      pushEvent('slide_engagement', {
         slide_index: slideIndex,
         seconds,
       });

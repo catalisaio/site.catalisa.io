@@ -23,6 +23,7 @@ import dataCapabilitiesPtBR from './locales/pt-BR/data-capabilities.json';
 import dataStatsPtBR from './locales/pt-BR/data-stats.json';
 import dataWorkflowsPtBR from './locales/pt-BR/data-workflows.json';
 import presentationPtBR from './locales/pt-BR/presentation.json';
+import pressKitPtBR from './locales/pt-BR/press-kit.json';
 import seoPtBR from './locales/pt-BR/seo.json';
 
 // Static en-US imports
@@ -47,6 +48,7 @@ import dataCapabilitiesEnUS from './locales/en-US/data-capabilities.json';
 import dataStatsEnUS from './locales/en-US/data-stats.json';
 import dataWorkflowsEnUS from './locales/en-US/data-workflows.json';
 import presentationEnUS from './locales/en-US/presentation.json';
+import pressKitEnUS from './locales/en-US/press-kit.json';
 import seoEnUS from './locales/en-US/seo.json';
 
 export const allNamespaces = [
@@ -54,7 +56,7 @@ export const allNamespaces = [
   'fintech', 'banking', 'insurance', 'retail', 'startups', 'use-cases',
   'contact', 'demo', 'privacy',
   'data-actions', 'data-usecases', 'data-capabilities', 'data-stats', 'data-workflows',
-  'presentation', 'seo',
+  'presentation', 'press-kit', 'seo',
 ] as const;
 
 export type Namespace = (typeof allNamespaces)[number];
@@ -83,6 +85,7 @@ i18n.use(initReactI18next).init({
       'data-stats': dataStatsPtBR,
       'data-workflows': dataWorkflowsPtBR,
       presentation: presentationPtBR,
+      'press-kit': pressKitPtBR,
       seo: seoPtBR,
     },
     'en-US': {
@@ -107,6 +110,7 @@ i18n.use(initReactI18next).init({
       'data-stats': dataStatsEnUS,
       'data-workflows': dataWorkflowsEnUS,
       presentation: presentationEnUS,
+      'press-kit': pressKitEnUS,
       seo: seoEnUS,
     },
   },

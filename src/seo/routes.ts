@@ -154,6 +154,15 @@ export const routes: RouteDefinition[] = [
     ogImage: '/og/default.png',
   },
   {
+    ptPath: '/press-kit',
+    enPath: '/en/press-kit',
+    pageKey: 'pressKit',
+    priority: 0.5,
+    changefreq: 'monthly',
+    schemas: ['Organization', 'BreadcrumbList'],
+    ogImage: '/og/default.png',
+  },
+  {
     ptPath: '/apresentacao-comercial',
     enPath: '/en/commercial-presentation',
     pageKey: 'presentation',

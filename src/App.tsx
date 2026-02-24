@@ -21,6 +21,7 @@ const UseCases = lazy(() => import('./pages/UseCases').then(m => ({ default: m.U
 const Contact = lazy(() => import('./pages/Contact').then(m => ({ default: m.Contact })));
 const Demo = lazy(() => import('./pages/Demo').then(m => ({ default: m.Demo })));
 const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy').then(m => ({ default: m.PrivacyPolicy })));
+const PressKit = lazy(() => import('./pages/PressKit').then(m => ({ default: m.PressKit })));
 const CommercialPresentation = lazy(() => import('./pages/CommercialPresentation').then(m => ({ default: m.CommercialPresentation })));
 
 function PageLoader() {
@@ -88,6 +89,7 @@ function App() {
                 <Route path="/contato" element={<Contact />} />
                 <Route path="/demo" element={<Demo />} />
                 <Route path="/politica-privacidade" element={<PrivacyPolicy />} />
+                <Route path="/press-kit" element={<PressKit />} />
               </Route>
 
               {/* en-US routes (/en prefix) */}
@@ -106,6 +108,7 @@ function App() {
                 <Route path="contact" element={<Contact />} />
                 <Route path="demo" element={<Demo />} />
                 <Route path="privacy-policy" element={<PrivacyPolicy />} />
+                <Route path="press-kit" element={<PressKit />} />
               </Route>
 
               {/* Catch-all */}

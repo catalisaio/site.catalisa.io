@@ -21,6 +21,7 @@ const ptToEn: Record<string, string> = {
   '/contato': '/en/contact',
   '/demo': '/en/demo',
   '/politica-privacidade': '/en/privacy-policy',
+  '/press-kit': '/en/press-kit',
 };
 
 /**

@@ -1,0 +1,112 @@
+{
+  "hero": {
+    "title": "Press Kit",
+    "subtitle": "Brand resources, logos, and visual guidelines for Catalisa."
+  },
+  "boilerplate": {
+    "title": "About Catalisa",
+    "description": "Official company description for press use. Click to copy.",
+    "text": "Catalisa is a composable B2B platform with 150+ ready-made building blocks for automating customer communication, integrations, and workflows. From fintech to healthcare, companies use Catalisa to ship in days what used to take months of internal development.",
+    "copied": "Copied!"
+  },
+  "keyFacts": {
+    "title": "Key Facts",
+    "description": "Quick reference numbers about Catalisa.",
+    "items": [
+      { "label": "Building Blocks", "value": "150+" },
+      { "label": "Platform Type", "value": "B2B SaaS" },
+      { "label": "Focus", "value": "Composable Automation" },
+      { "label": "Headquarters", "value": "Brazil" }
+    ]
+  },
+  "colors": {
+    "title": "Brand Colors",
+    "description": "Click any color to copy the hex code.",
+    "copied": "Copied!",
+    "primary": {
+      "name": "Primary Purple",
+      "usage": "Main usage, backgrounds, buttons"
+    },
+    "secondary": {
+      "name": "Secondary Yellow",
+      "usage": "Brand dot, highlights, CTAs"
+    },
+    "dark": {
+      "name": "Dark Graphite",
+      "usage": "Text on light backgrounds"
+    },
+    "white": {
+      "name": "White",
+      "usage": "Text on dark backgrounds"
+    }
+  },
+  "typography": {
+    "title": "Typography",
+    "description": "Catalisa uses Inter as its primary typeface across all touchpoints.",
+    "fontName": "Inter",
+    "weights": [
+      { "name": "Regular", "weight": 400 },
+      { "name": "Medium", "weight": 500 },
+      { "name": "Semi Bold", "weight": 600 },
+      { "name": "Bold", "weight": 700 },
+      { "name": "Extra Bold", "weight": 800 }
+    ],
+    "sample": "The quick brown fox jumps over the lazy dog."
+  },
+  "logos": {
+    "title": "Logos",
+    "description": "The Catalisa logo is available in three color variants. Prefer SVG for digital use.",
+    "color": "Color",
+    "white": "White",
+    "dark": "Dark",
+    "download": "Download SVG"
+  },
+  "icons": {
+    "title": "Icons",
+    "description": "The brand icon in different styles for apps, favicons, and social media.",
+    "color": "Color (default)",
+    "onWhite": "On white",
+    "transparent": "Transparent",
+    "monoWhite": "Mono white",
+    "monoDark": "Mono dark",
+    "monoPurple": "Mono purple",
+    "download": "Download SVG"
+  },
+  "guidelines": {
+    "title": "Usage Guidelines",
+    "description": "Follow these rules to maintain Catalisa brand consistency.",
+    "do": {
+      "title": "Do",
+      "items": [
+        "Use the white version on dark backgrounds",
+        "Use the color or dark version on light backgrounds",
+        "Keep minimum clear space (dot height around the logo)",
+        "Minimum size: 80px width for logo, 16px for icon",
+        "Always keep the yellow dot visible",
+        "Prefer SVG for digital, PNG for documents"
+      ]
+    },
+    "dont": {
+      "title": "Don't",
+      "items": [
+        "Don't distort or rotate the logo",
+        "Don't change the yellow dot color",
+        "Don't add shadows, gradients, or effects",
+        "Don't alter the proportion between text and dot",
+        "Don't use the logo on backgrounds that compromise readability"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Press Contact",
+    "description": "For press inquiries, partnerships, or brand usage requests.",
+    "email": "press@catalisa.io",
+    "emailLabel": "Email",
+    "response": "We typically respond within 24 hours."
+  },
+  "downloadAll": {
+    "label": "Download All Assets",
+    "description": "Get the complete package with all SVG and PNG brand files.",
+    "button": "Download ZIP"
+  }
+}

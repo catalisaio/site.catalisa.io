@@ -27,6 +27,7 @@ const routes: SitemapRoute[] = [
   { ptPath: '/contato', enPath: '/en/contact', priority: 0.7, changefreq: 'monthly' },
   { ptPath: '/demo', enPath: '/en/demo', priority: 0.7, changefreq: 'monthly' },
   { ptPath: '/politica-privacidade', enPath: '/en/privacy-policy', priority: 0.3, changefreq: 'monthly' },
+  { ptPath: '/press-kit', enPath: '/en/press-kit', priority: 0.5, changefreq: 'monthly' },
   { ptPath: '/apresentacao-comercial', enPath: '/en/commercial-presentation', priority: 0.0, changefreq: 'monthly', noIndex: true },
 ];
 

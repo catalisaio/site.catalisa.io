@@ -1,0 +1,112 @@
+{
+  "hero": {
+    "title": "Press Kit",
+    "subtitle": "Recursos de marca, logos e diretrizes visuais da Catalisa."
+  },
+  "boilerplate": {
+    "title": "Sobre a Catalisa",
+    "description": "Descricao oficial da empresa para uso em imprensa. Clique para copiar.",
+    "text": "A Catalisa e uma plataforma B2B composable com mais de 150 building blocks prontos para automatizar comunicacao com clientes, integracoes e workflows. De fintech a saude, empresas usam a Catalisa para entregar em dias o que antes levava meses de desenvolvimento interno.",
+    "copied": "Copiado!"
+  },
+  "keyFacts": {
+    "title": "Dados Chave",
+    "description": "Numeros de referencia rapida sobre a Catalisa.",
+    "items": [
+      { "label": "Building Blocks", "value": "150+" },
+      { "label": "Tipo de Plataforma", "value": "B2B SaaS" },
+      { "label": "Foco", "value": "Automacao Composable" },
+      { "label": "Sede", "value": "Brasil" }
+    ]
+  },
+  "colors": {
+    "title": "Cores da Marca",
+    "description": "Clique em qualquer cor para copiar o codigo hexadecimal.",
+    "copied": "Copiado!",
+    "primary": {
+      "name": "Roxo Primario",
+      "usage": "Uso principal, fundos, botoes"
+    },
+    "secondary": {
+      "name": "Amarelo Secundario",
+      "usage": "Dot da marca, destaques, CTAs"
+    },
+    "dark": {
+      "name": "Grafite Escuro",
+      "usage": "Textos em fundo claro"
+    },
+    "white": {
+      "name": "Branco",
+      "usage": "Textos em fundo escuro"
+    }
+  },
+  "typography": {
+    "title": "Tipografia",
+    "description": "A Catalisa usa Inter como fonte principal em todos os pontos de contato.",
+    "fontName": "Inter",
+    "weights": [
+      { "name": "Regular", "weight": 400 },
+      { "name": "Medium", "weight": 500 },
+      { "name": "Semi Bold", "weight": 600 },
+      { "name": "Bold", "weight": 700 },
+      { "name": "Extra Bold", "weight": 800 }
+    ],
+    "sample": "A rapida raposa marrom pula sobre o cachorro preguicoso."
+  },
+  "logos": {
+    "title": "Logotipos",
+    "description": "O logotipo Catalisa esta disponivel em tres variantes de cor. Prefira SVG para uso digital.",
+    "color": "Colorido",
+    "white": "Branco",
+    "dark": "Escuro",
+    "download": "Download SVG"
+  },
+  "icons": {
+    "title": "Icones",
+    "description": "O icone da marca em diferentes estilos para uso em apps, favicons e redes sociais.",
+    "color": "Colorido (padrao)",
+    "onWhite": "Fundo branco",
+    "transparent": "Transparente",
+    "monoWhite": "Mono branco",
+    "monoDark": "Mono escuro",
+    "monoPurple": "Mono roxo",
+    "download": "Download SVG"
+  },
+  "guidelines": {
+    "title": "Diretrizes de Uso",
+    "description": "Siga estas regras para manter a consistencia da marca Catalisa.",
+    "do": {
+      "title": "Correto",
+      "items": [
+        "Use a versao branca em fundos escuros",
+        "Use a versao colorida ou escura em fundos claros",
+        "Mantenha o espaco livre minimo (altura do dot ao redor do logo)",
+        "Tamanho minimo: 80px de largura para logotipo, 16px para icone",
+        "Sempre mantenha o dot amarelo visivel",
+        "Prefira SVG para digital, PNG para documentos"
+      ]
+    },
+    "dont": {
+      "title": "Incorreto",
+      "items": [
+        "Nao distorca ou rotacione o logotipo",
+        "Nao mude a cor do dot amarelo",
+        "Nao adicione sombras, gradientes ou efeitos",
+        "Nao altere a proporcao entre texto e dot",
+        "Nao use o logotipo em fundos que comprometam a legibilidade"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contato para Imprensa",
+    "description": "Para consultas de imprensa, parcerias ou solicitacoes de uso da marca.",
+    "email": "press@catalisa.io",
+    "emailLabel": "Email",
+    "response": "Normalmente respondemos em ate 24 horas."
+  },
+  "downloadAll": {
+    "label": "Baixar Todos os Assets",
+    "description": "Baixe o pacote completo com todos os arquivos SVG e PNG da marca.",
+    "button": "Download ZIP"
+  }
+}

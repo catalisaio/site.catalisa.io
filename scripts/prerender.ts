@@ -12,12 +12,12 @@ const routes = [
   '/', '/studio', '/ai-agents', '/building-blocks', '/workflows',
   '/fintech', '/bancario', '/seguros', '/varejo', '/startups',
   '/use-cases', '/contato', '/demo', '/politica-privacidade',
-  '/apresentacao-comercial',
+  '/press-kit', '/apresentacao-comercial',
   // en-US
   '/en', '/en/studio', '/en/ai-agents', '/en/building-blocks', '/en/workflows',
   '/en/fintech', '/en/banking', '/en/insurance', '/en/retail', '/en/startups',
   '/en/use-cases', '/en/contact', '/en/demo', '/en/privacy-policy',
-  '/en/commercial-presentation',
+  '/en/press-kit', '/en/commercial-presentation',
 ];
 
 // Simple static file server for dist/

@@ -1,10 +1,8 @@
-import {
-  Box, Container, Heading, Text, VStack, UnorderedList, ListItem, Divider,
-} from '@chakra-ui/react';
+import { Box, Container, Heading, Text, VStack, UnorderedList, ListItem, Divider } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
 
-export function PrivacyPolicy() {
-  const { t } = useTranslation('privacy');
+export function Terms() {
+  const { t } = useTranslation('terms');
   const sections = t('sections', { returnObjects: true }) as Array<{
     title: string;
     content: string;

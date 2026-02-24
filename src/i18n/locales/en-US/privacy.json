@@ -1,89 +1,129 @@
 {
   "title": "Privacy Policy",
   "lastUpdated": "Last updated: February 2026",
-  "intro": {
-    "title": "Introduction",
-    "text": "Catalisa (\"we\", \"our\" or \"Catalisa\") operates the WhatsApp automation platform with artificial intelligence. This Privacy Policy describes how we collect, use, store and protect your personal information."
-  },
-  "collection": {
-    "title": "Information We Collect",
-    "items": [
-      "Registration data: name, email, phone, company",
-      "Usage data: platform interactions, access logs",
-      "Communication data: messages processed by the platform",
-      "Technical data: IP address, browser, device"
-    ]
-  },
-  "use": {
-    "title": "How We Use Your Information",
-    "items": [
-      "Provide and improve our services",
-      "Process configured automations and workflows",
-      "Communicate updates and technical support",
-      "Comply with legal and regulatory obligations"
-    ]
-  },
-  "sharing": {
-    "title": "Data Sharing",
-    "text": "We do not sell your personal information. We share data only with:",
-    "items": [
-      "Infrastructure providers (cloud hosting in Brazil)",
-      "Meta/WhatsApp (for WhatsApp Business API operation)",
-      "AI providers (Anthropic, OpenAI) for natural language processing",
-      "Competent authorities when required by law"
-    ]
-  },
-  "security": {
-    "title": "Data Security",
-    "text": "We implement technical and organizational measures to protect your information:",
-    "items": [
-      "Encryption in transit (TLS) and at rest (AES-256)",
-      "Multi-tenant isolation with access control (RBAC)",
-      "Automatic sensitive data masking (PII)",
-      "Automatic backups and 24/7 monitoring",
-      "Infrastructure hosted in data centers in Brazil"
-    ]
-  },
-  "rights": {
-    "title": "Your Rights (LGPD)",
-    "text": "In accordance with the Brazilian General Data Protection Law (LGPD), you have the right to:",
-    "items": [
-      "Confirm the existence of data processing",
-      "Access your personal data",
-      "Correct incomplete or outdated data",
-      "Request anonymization or deletion of data",
-      "Revoke consent at any time",
-      "Request data portability"
-    ]
-  },
-  "whatsapp": {
-    "title": "WhatsApp and Meta",
-    "text": "Our platform uses the WhatsApp Business API. Processed messages are subject to WhatsApp/Meta's Terms of Service and Privacy Policy. We do not store message content beyond what is necessary for the operation of configured workflows."
-  },
-  "deletion": {
-    "title": "Data Deletion",
-    "text": "You can request deletion of your data at any time by contacting us. Data will be removed within 30 days, except when there is a legal obligation for retention."
-  },
-  "retention": {
-    "title": "Data Retention",
-    "text": "We retain your data for as long as necessary to provide our services or as required by law. Account data is retained while the account is active. Audit logs are kept for 12 months."
-  },
-  "children": {
-    "title": "Minors",
-    "text": "Our services are not intended for individuals under 18 years of age. We do not intentionally collect data from minors."
-  },
-  "changes": {
-    "title": "Changes to this Policy",
-    "text": "We may update this policy periodically. Significant changes will be communicated by email or platform notification."
-  },
-  "contact": {
-    "title": "Contact",
-    "text": "To exercise your rights or clarify questions about this policy:",
-    "email": "Email: contato@catalisa.io",
-    "whatsapp": "WhatsApp: +55 11 97730-3414"
-  },
-  "consent": {
-    "title": "Consent",
-    "text": "By using our platform, you consent to the collection and use of information as described in this Privacy Policy."
-  }
+  "sections": [
+    {
+      "title": "Data Controller Identification",
+      "content": "This Privacy Policy describes how Catalisa collects, uses, stores and protects your personal data.\n\nData Controller:\nCatalisa Tecnologia e Dados LTDA\nCNPJ (Tax ID): 49.646.439/0001-85\nAddress: Rodovia Raposo Tavares, 7389 - Sao Paulo - SP - Brazil - 05577-902\n\nData Protection Officer (DPO):\nEmail: privacidade@catalisa.io\nContact channel: privacidade@catalisa.io"
+    },
+    {
+      "title": "Scope",
+      "content": "This Policy applies to the processing of personal data carried out by Catalisa in two categories:\n\n(a) Platform user data: personal information provided by you when creating an account, using our services or interacting with our website.\n\n(b) Users' customer data: personal information of third parties (the User's end customers) that is processed through the Platform, especially via WhatsApp integrations. For this data, the relationship between Catalisa and the User follows the roles defined in Section 13.\n\nThis Policy is an integral part of the Platform's Terms of Service."
+    },
+    {
+      "title": "Data Collected",
+      "content": "We collect the following categories of personal data:",
+      "items": [
+        "Registration data (legal basis: contract performance): full name, corporate email, phone number, company name, job title, tax ID. Collected at the time of registration on the Platform.",
+        "Usage data (legal basis: legitimate interest): Platform interactions, features used, access logs, usage times, actions taken. Collected automatically during use.",
+        "Communication data (legal basis: contract performance): messages processed by the Platform, message templates, Workflow and AI Agent configurations. Processed according to User instructions.",
+        "Technical data (legal basis: legitimate interest): IP address, browser type and version, operating system, device, screen resolution, pages accessed, time spent. Collected automatically by cookies and similar technologies."
+      ]
+    },
+    {
+      "title": "Legal Basis (LGPD Art. 7)",
+      "content": "The processing of personal data by Catalisa is based on the following legal bases provided by the LGPD (Brazilian General Data Protection Law):",
+      "items": [
+        "Contract performance (Art. 7, V): processing necessary for the provision of contracted services, including account creation, message processing, Workflow execution and technical support.",
+        "Legitimate interest (Art. 7, IX): processing necessary to improve the Platform, ensure security, prevent fraud, perform usage analytics and send service communications. We conduct a Legitimate Interest Assessment (LIA) to ensure our interests do not override the data subject's rights.",
+        "Consent (Art. 7, I): used for specific purposes such as marketing communications, analytical and marketing cookies, and participation in surveys. Consent may be revoked at any time without prejudice to prior processing.",
+        "Legal obligation (Art. 7, II): processing necessary to comply with legal and regulatory obligations, including retention of fiscal and financial data, compliance with requests from competent authorities and maintenance of legally required records."
+      ]
+    },
+    {
+      "title": "Processing Purposes",
+      "content": "We use your personal data for the following purposes:",
+      "items": [
+        "Service provision: operating the Platform, processing automations and Workflows, running AI Agents and providing contracted features.",
+        "Account management: creating and maintaining your account, authenticating access, managing permissions and preferences.",
+        "Technical support: handling support requests, diagnosing issues and providing technical assistance.",
+        "Service communications: sending notifications about maintenance, updates, terms changes and essential service information.",
+        "Platform improvement: analyzing usage patterns (in aggregate), identifying improvements, developing new features and fixing bugs.",
+        "Security: monitoring suspicious activities, preventing fraud, detecting vulnerabilities and protecting Platform integrity.",
+        "Legal compliance: meeting legal and regulatory obligations and responding to requests from competent authorities.",
+        "Marketing (with consent): sending communications about new features, educational content and offers, only when authorized by the data subject."
+      ]
+    },
+    {
+      "title": "Cookies and Tracking Technologies",
+      "content": "Our website and Platform use cookies and similar technologies to improve your experience. We use Google Tag Manager (GTM) and Google Analytics 4 (GA4) with Consent Mode v2 implemented.\n\nCookie categories:",
+      "items": [
+        "Strictly necessary cookies: essential for Platform operation, including authentication, security and session preferences. Stored via localStorage and session cookies. Do not require consent.",
+        "Analytical cookies (GA4): collect aggregated data about website and Platform usage for improvement purposes. Include: _ga (user identification, 2 years), _ga_* (session state, 2 years). Require consent.",
+        "Marketing cookies: used to deliver relevant communications. Activated only with explicit consent via the cookie banner."
+      ]
+    },
+    {
+      "title": "Data Sharing",
+      "content": "We do not sell your personal data. We share data only with the following categories of recipients, to the extent necessary for the purposes described in this Policy:",
+      "items": [
+        "Infrastructure providers (AWS/GCP): hosting, storage and data processing. Servers located in Brazil, with replication for service continuity.",
+        "Meta/WhatsApp: message processing through the WhatsApp Business API. Necessary for communication integration functionality. Subject to WhatsApp's Terms of Service and Privacy Policy.",
+        "Anthropic (Claude): natural language processing and content generation by AI Agents. Data may be transferred to servers in the United States (see Section 8).",
+        "OpenAI (GPT): natural language processing and content generation by AI Agents. Data may be transferred to servers in the United States (see Section 8).",
+        "Competent authorities: when required by law, judicial or administrative order, or to protect rights in legal proceedings."
+      ]
+    },
+    {
+      "title": "International Data Transfer",
+      "content": "Some of our sub-processors, specifically Anthropic and OpenAI, operate servers in the United States. This means that personal data processed by AI Agents may be transferred outside of Brazil.\n\nTo ensure adequate protection of internationally transferred data, we adopt the following safeguards in accordance with the LGPD (Art. 33):\n\n(a) Standard contractual clauses with data protection commitments equivalent to those of Brazilian legislation.\n(b) International transfer impact assessment to verify the level of protection in the destination country.\n(c) Guarantees that sub-processors apply adequate technical and organizational measures for data protection.\n\nWe minimize the transfer of personal data abroad, using anonymization and pseudonymization whenever possible before sending data for AI model processing."
+    },
+    {
+      "title": "Data Security",
+      "content": "We implement robust technical and organizational measures to protect your personal data against unauthorized access, destruction, loss, alteration or leakage:",
+      "items": [
+        "Encryption in transit (TLS 1.2+) for all communications between the browser and our servers.",
+        "Encryption at rest (AES-256) for data stored in our databases and file systems.",
+        "Multi-tenant isolation with role-based access control (RBAC), ensuring each organization accesses only its own data.",
+        "Automatic sensitive data masking (PII masking) in logs and development environments.",
+        "Automatic backups with geographic redundancy and periodic restoration testing.",
+        "24/7 monitoring with anomaly detection and real-time security alerts.",
+        "Primary infrastructure hosted in data centers in Brazil with security certifications (ISO 27001, SOC 2).",
+        "Periodic penetration testing conducted by specialized teams.",
+        "Security and privacy training program for all employees."
+      ]
+    },
+    {
+      "title": "Data Retention",
+      "content": "We retain your personal data only for as long as necessary to fulfill the purposes described in this Policy, observing the following periods:",
+      "items": [
+        "Account data: retained while the account is active, plus 6 (six) months after closure to allow reactivation and meet legal obligations.",
+        "Access and security logs: retained for 12 (twelve) months, as required by the Marco Civil da Internet (Law No. 12,965/2014).",
+        "Communication data (messages): retained according to the User's Workflow configuration, plus 90 (ninety) days after deletion for backup and recovery purposes.",
+        "Financial and fiscal data: retained for 5 (five) years, as required by Brazilian tax legislation.",
+        "Anonymized and aggregated data: may be retained indefinitely, as they do not allow identification of the data subject."
+      ]
+    },
+    {
+      "title": "Data Subject Rights (LGPD Art. 18)",
+      "content": "In accordance with the LGPD (Brazilian General Data Protection Law), you have the following rights regarding your personal data:",
+      "items": [
+        "Confirmation of processing: know whether Catalisa processes your personal data.",
+        "Data access: obtain a copy of the personal data we hold about you.",
+        "Data correction: request correction of incomplete, inaccurate or outdated data.",
+        "Anonymization, blocking or deletion: request when data is unnecessary, excessive or processed in non-compliance with the LGPD.",
+        "Data portability: obtain your data in a structured format for transfer to another service provider.",
+        "Deletion of consent-based data: request deletion of data whose processing was based on consent.",
+        "Information about sharing: know which public and private entities your data was shared with.",
+        "Objection to processing: object to processing based on legitimate interest, if you believe your rights prevail.",
+        "Review of automated decisions: request human review of decisions made solely based on automated processing of personal data, including AI Agent decisions."
+      ]
+    },
+    {
+      "title": "Automated Decisions",
+      "content": "The Platform uses AI Agents that process personal data in an automated manner to generate responses, classify requests and execute Workflows.\n\nIn accordance with the LGPD (Art. 20), you have the right to request human review of decisions made solely based on automated processing of personal data that affect your interests, including profiling decisions.\n\nTo request human review or obtain information about the logic used in automated decisions, contact our Data Protection Officer at privacidade@catalisa.io. We will respond within 15 (fifteen) business days."
+    },
+    {
+      "title": "Third-Party Data (User's Customers)",
+      "content": "When the User processes personal data of their own customers through the Platform (especially via WhatsApp integrations), the parties operate in the following roles:\n\n- User: Controller of their customers' personal data. Responsible for defining the purpose and legal basis for processing, informing their customers about the use of the Platform and handling data subject rights requests.\n\n- Catalisa: Processor of the User's customers' personal data. Processes data exclusively according to the User's instructions and for the provision of contracted services.\n\nThe User is responsible for:\n\n(a) Ensuring they have a valid legal basis for processing their customers' data through the Platform.\n(b) Providing clear information to their customers about data processing, including the existence of AI processing.\n(c) Handling data subject rights requests in a timely manner.\n(d) Entering into a Data Processing Agreement (DPA) with Catalisa, when necessary, available upon request."
+    },
+    {
+      "title": "Security Incidents",
+      "content": "In the event of a security incident that may pose a risk or relevant harm to personal data subjects, Catalisa will take the following measures:\n\n(a) Notification to the National Data Protection Authority (ANPD) within 72 (seventy-two) business hours after confirmation of the incident, in accordance with Art. 48 of the LGPD.\n\n(b) Communication to affected data subjects, within a reasonable timeframe, containing: description of the nature of the affected data, information about the risks, measures taken to mitigate the effects and guidance for the data subject.\n\n(c) Internal incident record with complete documentation: nature, affected data, impacted data subjects, technical measures taken and results of containment actions.\n\n(d) Notification to the User (when acting as Processor) so that they may take the necessary measures with their customers."
+    },
+    {
+      "title": "Final Provisions",
+      "content": "Minors. Our services are not intended for individuals under 18 (eighteen) years of age. We do not intentionally collect personal data from minors. If you become aware that data from a minor has been collected, please contact us so we can delete it.\n\nChanges to this Policy. We may update this Privacy Policy periodically. Significant changes will be communicated with a minimum of 30 (thirty) days' advance notice by email or Platform notification. Continued use of the Platform after the notice period constitutes acceptance of the updated Policy.\n\nContact. To exercise your rights, clarify questions or submit complaints about this Policy:\n\nDPO email: privacidade@catalisa.io\nGeneral email: contato@catalisa.io\nWhatsApp: +55 11 97730-3414\n\nJurisdiction. The courts of Sao Paulo, State of Sao Paulo, Brazil, are elected to resolve any disputes arising from this Policy."
+    }
+  ]
 }

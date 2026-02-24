@@ -1,0 +1,87 @@
+{
+  "hero": {
+    "heading": "Planos que crescem",
+    "headingGradient": "com voce",
+    "subtitle": "Sem contrato de fidelidade. Escale conforme sua operacao cresce. Comece pequeno, pense grande."
+  },
+  "plans": [
+    {
+      "name": "Starter",
+      "description": "Para times pequenos que querem comecar a automatizar.",
+      "price": "Sob consulta",
+      "features": [
+        "Ate 1.000 conversas/mes",
+        "5 building blocks inclusos",
+        "1 agente IA",
+        "QR Code ou Cloud API",
+        "Suporte por email",
+        "CRM basico"
+      ],
+      "cta": "Comecar agora"
+    },
+    {
+      "name": "Business",
+      "description": "Para operacoes em escala que precisam de poder total.",
+      "price": "Sob consulta",
+      "badge": "MAIS POPULAR",
+      "highlighted": true,
+      "features": [
+        "Conversas ilimitadas",
+        "Building blocks ilimitados",
+        "Agentes IA ilimitados",
+        "Cloud API + QR Code",
+        "Suporte prioritario",
+        "CRM completo",
+        "Workflows avancados",
+        "Catalisa Studio com IA"
+      ],
+      "cta": "Falar com vendas"
+    },
+    {
+      "name": "Enterprise",
+      "description": "Para grandes operacoes com requisitos de compliance e seguranca.",
+      "price": "Customizado",
+      "features": [
+        "Tudo do Business",
+        "Multi-tenant dedicado",
+        "SLA customizado (99.9%+)",
+        "Onboarding dedicado",
+        "Suporte 24/7",
+        "Compliance dedicado (LGPD, BACEN)",
+        "API & SDK ilimitados",
+        "Account manager dedicado"
+      ],
+      "cta": "Falar com especialista"
+    }
+  ],
+  "disclaimer": "Valores sob consulta. Os planos podem ser personalizados de acordo com sua necessidade. Entre em contato para uma proposta personalizada.",
+  "faq": {
+    "heading": "Perguntas sobre precos",
+    "items": [
+      {
+        "question": "Existe periodo minimo de contrato?",
+        "answer": "Nao. Nossos planos sao mensais e voce pode cancelar a qualquer momento sem multa. Para planos anuais, oferecemos desconto especial."
+      },
+      {
+        "question": "O que conta como uma 'conversa'?",
+        "answer": "Uma conversa e uma sessao de troca de mensagens entre seu numero WhatsApp e um contato, dentro de uma janela de 24 horas. Multiplas mensagens na mesma janela contam como uma unica conversa."
+      },
+      {
+        "question": "Posso mudar de plano a qualquer momento?",
+        "answer": "Sim. Voce pode fazer upgrade ou downgrade do plano a qualquer momento. As mudancas entram em vigor no proximo ciclo de cobranca."
+      },
+      {
+        "question": "Existe custo adicional pelo WhatsApp Cloud API?",
+        "answer": "A Catalisa nao cobra pelo uso da Cloud API em si. Porem, a Meta cobra por conversa iniciada pela empresa (conforme tabela oficial da Meta). Conversas iniciadas pelo usuario sao gratuitas nas primeiras 1.000/mes."
+      },
+      {
+        "question": "Posso testar antes de contratar?",
+        "answer": "Sim. Oferecemos uma demonstracao completa e personalizada. Agende uma demo com nosso time para ver a plataforma funcionando com seu caso de uso real."
+      },
+      {
+        "question": "Como funciona o suporte?",
+        "answer": "Starter: suporte por email em horario comercial. Business: suporte prioritario com SLA de resposta. Enterprise: suporte 24/7 com account manager dedicado."
+      }
+    ]
+  }
+}

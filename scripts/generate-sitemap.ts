@@ -28,6 +28,11 @@ const routes: SitemapRoute[] = [
   { ptPath: '/demo', enPath: '/en/demo', priority: 0.7, changefreq: 'monthly' },
   { ptPath: '/politica-privacidade', enPath: '/en/privacy-policy', priority: 0.3, changefreq: 'monthly' },
   { ptPath: '/press-kit', enPath: '/en/press-kit', priority: 0.5, changefreq: 'monthly' },
+  { ptPath: '/termos', enPath: '/en/terms', priority: 0.3, changefreq: 'monthly' },
+  { ptPath: '/seguranca', enPath: '/en/security', priority: 0.7, changefreq: 'monthly' },
+  { ptPath: '/precos', enPath: '/en/pricing', priority: 0.8, changefreq: 'monthly' },
+  { ptPath: '/como-funciona', enPath: '/en/how-it-works', priority: 0.8, changefreq: 'weekly' },
+  { ptPath: '/integracoes/whatsapp', enPath: '/en/integrations/whatsapp', priority: 0.7, changefreq: 'monthly' },
   { ptPath: '/apresentacao-comercial', enPath: '/en/commercial-presentation', priority: 0.0, changefreq: 'monthly', noIndex: true },
 ];
 

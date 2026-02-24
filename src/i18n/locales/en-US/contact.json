@@ -19,5 +19,23 @@
     { "title": "Fast response", "description": "Our team responds in less than 1 hour during business hours." },
     { "title": "No commitment", "description": "Open conversation, no pressure. We want to understand your scenario first." },
     { "title": "Personalized demo", "description": "We show the platform working with examples from your business." }
-  ]
+  ],
+  "form": {
+    "heading": "Send us a message",
+    "subtitle": "Fill out the form below and we'll get back to you within 24 business hours.",
+    "name": "Full name",
+    "email": "Business email",
+    "company": "Company",
+    "role": "Role (optional)",
+    "phone": "Phone / WhatsApp (optional)",
+    "message": "How can we help?",
+    "privacy": "I have read and agree to the",
+    "privacyLink": "Privacy Policy",
+    "submit": "Send message",
+    "success": "Message sent successfully! We'll get back to you soon.",
+    "error": "Error sending message. Please try again or reach us on WhatsApp.",
+    "whatsappAlternative": "Prefer WhatsApp?",
+    "whatsappCta": "Chat now",
+    "responseTime": "We respond within 24 business hours"
+  }
 }

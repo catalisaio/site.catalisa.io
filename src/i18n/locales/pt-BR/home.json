@@ -326,5 +326,67 @@
       "agents": "Agentes IA",
       "previdencia": "Previdencia"
     }
+  },
+  "faq": {
+    "heading": "Perguntas frequentes",
+    "subtitle": "Tudo que voce precisa saber sobre a Catalisa.",
+    "items": [
+      {
+        "question": "O que e a Catalisa?",
+        "answer": "A Catalisa e uma plataforma composable de automacao WhatsApp com IA. Ela combina 150+ building blocks, um studio visual com IA generativa e agentes inteligentes para automatizar atendimento, vendas e operacoes pelo WhatsApp — sem codigo."
+      },
+      {
+        "question": "Preciso saber programar para usar?",
+        "answer": "Nao. A Catalisa foi projetada para ser usada sem codigo. Voce descreve o que precisa em linguagem natural e o Studio cria a especificacao e o workflow automaticamente. Para integracao avancada, oferecemos API e SDK."
+      },
+      {
+        "question": "Qual a diferenca entre Cloud API e QR Code?",
+        "answer": "A Cloud API e a conexao oficial da Meta, ideal para empresas que precisam de compliance, escala ilimitada e auditabilidade. O QR Code (Baileys) e instantaneo e gratuito, ideal para testes, POCs e pequenas operacoes. Voce pode usar ambos na mesma plataforma."
+      },
+      {
+        "question": "A Catalisa e parceira oficial da Meta?",
+        "answer": "Sim. A Catalisa utiliza a API oficial do WhatsApp Business (Cloud API) da Meta, garantindo conformidade e acesso a todos os recursos oficiais da plataforma."
+      },
+      {
+        "question": "Como funciona a cobranca?",
+        "answer": "A Catalisa oferece planos flexiveis baseados no volume de uso. Entre em contato com nossa equipe para uma proposta personalizada de acordo com sua necessidade."
+      },
+      {
+        "question": "Posso testar antes de contratar?",
+        "answer": "Sim. Oferecemos uma demonstracao completa onde voce pode ver a plataforma funcionando com seu caso de uso real. Agende uma demo com nosso time."
+      },
+      {
+        "question": "Quanto tempo leva para configurar?",
+        "answer": "O setup inicial leva minutos. Com QR Code voce conecta instantaneamente. Com Cloud API, o processo de aprovacao da Meta leva de 3 a 5 dias uteis. A criacao de workflows e agentes IA e feita em minutos pelo Studio."
+      },
+      {
+        "question": "Quantas conversas simultaneas suporta?",
+        "answer": "Nao ha limite fixo. Com Cloud API, a escala e ilimitada. A plataforma foi projetada para suportar de 1 a milhares de conversas simultaneas, com agentes IA que operam 24/7."
+      },
+      {
+        "question": "Meus dados ficam seguros?",
+        "answer": "Sim. A Catalisa utiliza criptografia ponta a ponta, isolamento multi-tenant, controle de acesso (RBAC), mascaramento automatico de dados sensiveis e infraestrutura em nuvem no Brasil com backups automaticos."
+      },
+      {
+        "question": "A Catalisa esta em conformidade com a LGPD?",
+        "answer": "Sim. A plataforma foi projetada desde o inicio com privacidade por design. Todas as operacoes de dados seguem a Lei Geral de Protecao de Dados (LGPD), incluindo consentimento, anonimizacao e direitos do titular."
+      },
+      {
+        "question": "Posso integrar com meu CRM/ERP atual?",
+        "answer": "Sim. A Catalisa oferece building blocks de integracao para os principais CRMs e ERPs do mercado, alem de webhooks e API REST para integracoes customizadas."
+      },
+      {
+        "question": "O que sao building blocks?",
+        "answer": "Building blocks sao componentes prontos e composiveis que voce combina para criar automacoes. Sao 150+ blocos em 12 categorias: IA, fintech, CRM, seguranca, comunicacao, integracao e mais. Cada bloco e testado e pronto para producao."
+      },
+      {
+        "question": "Como funcionam os agentes IA?",
+        "answer": "Cada agente IA tem personalidade, ferramentas e contexto proprios. Eles podem atender clientes, qualificar leads, fechar vendas, agendar reunioes e executar tarefas complexas — tudo de forma autonoma pelo WhatsApp."
+      },
+      {
+        "question": "Posso usar para mais de um numero de WhatsApp?",
+        "answer": "Sim. A Catalisa suporta multi-device e multi-tenant. Voce pode conectar multiplos numeros de WhatsApp, cada um com seus proprios workflows, agentes e configuracoes."
+      }
+    ]
   }
 }

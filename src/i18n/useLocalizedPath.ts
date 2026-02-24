@@ -22,6 +22,11 @@ const ptToEn: Record<string, string> = {
   '/demo': '/en/demo',
   '/politica-privacidade': '/en/privacy-policy',
   '/press-kit': '/en/press-kit',
+  '/termos': '/en/terms',
+  '/seguranca': '/en/security',
+  '/precos': '/en/pricing',
+  '/como-funciona': '/en/how-it-works',
+  '/integracoes/whatsapp': '/en/integrations/whatsapp',
 };
 
 /**

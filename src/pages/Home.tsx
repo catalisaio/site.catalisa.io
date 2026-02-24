@@ -11,22 +11,24 @@ import { Differentiators } from '../components/sections/Differentiators';
 import { TrustSection } from '../components/sections/TrustSection';
 import { FinalCTA } from '../components/sections/FinalCTA';
 import { AIInAction } from '../components/sections/AIInAction';
+import { FAQ } from '../components/sections/FAQ';
 
 export function Home() {
   return (
     <>
       <Hero />
       <LogoMarquee />
+      <AIInAction />
+      <CatalisaStudioShowcase />
       <ProblemStatement />
       <SolutionOverview />
-      <CatalisaStudioShowcase />
-      <AIInAction />
       <FeatureBentoGrid />
       <AIAgentsTeaser />
       <StatsCounter />
       <HowItWorks />
       <Differentiators />
       <TrustSection />
+      <FAQ />
       <FinalCTA />
     </>
   );

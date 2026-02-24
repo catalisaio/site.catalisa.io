@@ -46,6 +46,8 @@ export function Footer() {
         { label: t('footer.links.demo'), to: lp('/demo') },
         { label: t('footer.links.contact'), to: lp('/contato') },
         { label: t('footer.links.privacyPolicy'), to: lp('/politica-privacidade') },
+        { label: t('footer.links.termsOfUse'), to: lp('/termos') },
+        { label: t('footer.links.security'), to: lp('/seguranca') },
         { label: t('footer.links.pressKit'), to: lp('/press-kit') },
       ],
     },

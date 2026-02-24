@@ -1,0 +1,87 @@
+{
+  "hero": {
+    "heading": "Plans that grow",
+    "headingGradient": "with you",
+    "subtitle": "No lock-in contracts. Scale as your operation grows. Start small, think big."
+  },
+  "plans": [
+    {
+      "name": "Starter",
+      "description": "For small teams looking to start automating.",
+      "price": "Contact us",
+      "features": [
+        "Up to 1,000 conversations/month",
+        "5 building blocks included",
+        "1 AI agent",
+        "QR Code or Cloud API",
+        "Email support",
+        "Basic CRM"
+      ],
+      "cta": "Get started"
+    },
+    {
+      "name": "Business",
+      "description": "For scaled operations that need full power.",
+      "price": "Contact us",
+      "badge": "MOST POPULAR",
+      "highlighted": true,
+      "features": [
+        "Unlimited conversations",
+        "Unlimited building blocks",
+        "Unlimited AI agents",
+        "Cloud API + QR Code",
+        "Priority support",
+        "Full CRM",
+        "Advanced workflows",
+        "Catalisa Studio with AI"
+      ],
+      "cta": "Talk to sales"
+    },
+    {
+      "name": "Enterprise",
+      "description": "For large operations with compliance and security requirements.",
+      "price": "Custom",
+      "features": [
+        "Everything in Business",
+        "Dedicated multi-tenant",
+        "Custom SLA (99.9%+)",
+        "Dedicated onboarding",
+        "24/7 support",
+        "Dedicated compliance (LGPD, BACEN)",
+        "Unlimited API & SDK",
+        "Dedicated account manager"
+      ],
+      "cta": "Talk to specialist"
+    }
+  ],
+  "disclaimer": "Pricing on request. Plans can be customized to your needs. Contact us for a personalized proposal.",
+  "faq": {
+    "heading": "Pricing questions",
+    "items": [
+      {
+        "question": "Is there a minimum contract period?",
+        "answer": "No. Our plans are monthly and you can cancel anytime without penalty. For annual plans, we offer a special discount."
+      },
+      {
+        "question": "What counts as a 'conversation'?",
+        "answer": "A conversation is a message exchange session between your WhatsApp number and a contact within a 24-hour window. Multiple messages in the same window count as a single conversation."
+      },
+      {
+        "question": "Can I change plans anytime?",
+        "answer": "Yes. You can upgrade or downgrade your plan at any time. Changes take effect on the next billing cycle."
+      },
+      {
+        "question": "Are there additional costs for WhatsApp Cloud API?",
+        "answer": "Catalisa does not charge for Cloud API usage itself. However, Meta charges per business-initiated conversation (per Meta's official pricing). User-initiated conversations are free for the first 1,000/month."
+      },
+      {
+        "question": "Can I try before committing?",
+        "answer": "Yes. We offer a complete, personalized demo. Schedule a demo with our team to see the platform working with your real use case."
+      },
+      {
+        "question": "How does support work?",
+        "answer": "Starter: email support during business hours. Business: priority support with response SLA. Enterprise: 24/7 support with dedicated account manager."
+      }
+    ]
+  }
+}

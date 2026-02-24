@@ -251,5 +251,67 @@
       "agents": "AI Agents",
       "previdencia": "Pension"
     }
+  },
+  "faq": {
+    "heading": "Frequently asked questions",
+    "subtitle": "Everything you need to know about Catalisa.",
+    "items": [
+      {
+        "question": "What is Catalisa?",
+        "answer": "Catalisa is a composable WhatsApp automation platform with AI. It combines 150+ building blocks, a visual studio with generative AI, and intelligent agents to automate customer service, sales, and operations via WhatsApp — no code required."
+      },
+      {
+        "question": "Do I need to know how to code?",
+        "answer": "No. Catalisa was designed to be used without code. You describe what you need in natural language and the Studio creates the specification and workflow automatically. For advanced integrations, we offer API and SDK."
+      },
+      {
+        "question": "What's the difference between Cloud API and QR Code?",
+        "answer": "Cloud API is Meta's official connection, ideal for companies that need compliance, unlimited scale, and auditability. QR Code (Baileys) is instant and free, ideal for testing, POCs, and small operations. You can use both on the same platform."
+      },
+      {
+        "question": "Is Catalisa an official Meta partner?",
+        "answer": "Yes. Catalisa uses Meta's official WhatsApp Business API (Cloud API), ensuring compliance and access to all official platform features."
+      },
+      {
+        "question": "How does billing work?",
+        "answer": "Catalisa offers flexible plans based on usage volume. Contact our team for a personalized proposal according to your needs."
+      },
+      {
+        "question": "Can I try before committing?",
+        "answer": "Yes. We offer a complete demonstration where you can see the platform working with your real use case. Schedule a demo with our team."
+      },
+      {
+        "question": "How long does setup take?",
+        "answer": "Initial setup takes minutes. With QR Code you connect instantly. With Cloud API, Meta's approval process takes 3 to 5 business days. Creating workflows and AI agents is done in minutes through the Studio."
+      },
+      {
+        "question": "How many simultaneous conversations does it support?",
+        "answer": "There's no fixed limit. With Cloud API, scale is unlimited. The platform was designed to support from 1 to thousands of simultaneous conversations, with AI agents operating 24/7."
+      },
+      {
+        "question": "Is my data secure?",
+        "answer": "Yes. Catalisa uses end-to-end encryption, multi-tenant isolation, access control (RBAC), automatic sensitive data masking, and cloud infrastructure in Brazil with automatic backups."
+      },
+      {
+        "question": "Is Catalisa LGPD compliant?",
+        "answer": "Yes. The platform was designed from the ground up with privacy by design. All data operations follow Brazil's General Data Protection Law (LGPD), including consent, anonymization, and data subject rights."
+      },
+      {
+        "question": "Can I integrate with my current CRM/ERP?",
+        "answer": "Yes. Catalisa offers integration building blocks for major CRMs and ERPs, plus webhooks and REST API for custom integrations."
+      },
+      {
+        "question": "What are building blocks?",
+        "answer": "Building blocks are ready-made, composable components you combine to create automations. There are 150+ blocks across 12 categories: AI, fintech, CRM, security, communication, integration, and more. Each block is tested and production-ready."
+      },
+      {
+        "question": "How do AI agents work?",
+        "answer": "Each AI agent has its own personality, tools, and context. They can serve customers, qualify leads, close sales, schedule meetings, and execute complex tasks — all autonomously via WhatsApp."
+      },
+      {
+        "question": "Can I use it with more than one WhatsApp number?",
+        "answer": "Yes. Catalisa supports multi-device and multi-tenant. You can connect multiple WhatsApp numbers, each with its own workflows, agents, and configurations."
+      }
+    ]
   }
 }

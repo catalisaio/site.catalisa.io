@@ -1,0 +1,100 @@
+{
+  "hero": {
+    "badge": "SEGURANCA ENTERPRISE",
+    "heading": "Seguranca de",
+    "headingGradient": "nivel bancario",
+    "subtitle": "Seus dados protegidos com as mesmas praticas de seguranca das maiores instituicoes financeiras do Brasil."
+  },
+  "pillarsHeading": "6 pilares de seguranca",
+  "pillars": [
+    {
+      "title": "Conformidade LGPD",
+      "description": "Plataforma projetada com privacidade por design desde o dia zero. Todas as operacoes de dados seguem a Lei Geral de Protecao de Dados.",
+      "details": [
+        "Consentimento e base legal rastreados",
+        "Direitos do titular (acesso, exclusao, portabilidade)",
+        "Registro de operacoes de tratamento",
+        "DPO designado e acessivel"
+      ]
+    },
+    {
+      "title": "Criptografia ponta a ponta",
+      "description": "Dados protegidos em transito e em repouso com padroes de criptografia de nivel bancario.",
+      "details": [
+        "TLS 1.3 para todas as comunicacoes",
+        "AES-256 para dados em repouso",
+        "Chaves gerenciadas com rotacao automatica",
+        "Criptografia de campos sensiveis (PII)"
+      ]
+    },
+    {
+      "title": "Isolamento multi-tenant",
+      "description": "Cada organizacao opera em ambiente completamente isolado. Dados, configuracoes e workflows nunca se misturam.",
+      "details": [
+        "Banco de dados isolado por tenant",
+        "Namespaces separados por organizacao",
+        "Filas de processamento independentes",
+        "Zero vazamento de dados entre tenants"
+      ]
+    },
+    {
+      "title": "Controle de acesso (RBAC)",
+      "description": "Controle granular de permissoes por funcao, equipe e recurso. Cada usuario ve e acessa apenas o que deve.",
+      "details": [
+        "Roles customizaveis por organizacao",
+        "Permissoes por recurso (workflow, agente, bloco)",
+        "Autenticacao multi-fator (MFA)",
+        "Logs de acesso auditaveis"
+      ]
+    },
+    {
+      "title": "Dados armazenados no Brasil",
+      "description": "Infraestrutura em nuvem brasileira com backups automaticos, disaster recovery e monitoramento 24/7.",
+      "details": [
+        "Servidores em data centers brasileiros",
+        "Backups automaticos diarios",
+        "Disaster recovery com RPO < 1h",
+        "Monitoramento de infraestrutura 24/7"
+      ]
+    },
+    {
+      "title": "Meta WhatsApp Business",
+      "description": "Integracao oficial via Cloud API da Meta. Conformidade garantida com os termos do WhatsApp Business Platform.",
+      "details": [
+        "Cloud API oficial da Meta",
+        "Verificacao de negocio Meta",
+        "Conformidade com politicas de mensageria",
+        "Auditoria de uso disponivel"
+      ]
+    }
+  ],
+  "infrastructure": {
+    "heading": "Infraestrutura",
+    "subtitle": "Arquitetura projetada para alta disponibilidade, escalabilidade e seguranca.",
+    "items": [
+      "Cloud hosting em data centers tier-3+",
+      "Load balancing e auto-scaling",
+      "Backups automaticos com retencao de 30 dias",
+      "Disaster recovery com failover automatico",
+      "Monitoramento com alertas em tempo real",
+      "Rede privada com firewall gerenciado",
+      "CDN para assets estaticos",
+      "Logs centralizados e auditaveis"
+    ]
+  },
+  "compliance": {
+    "heading": "Compliance e Certificacoes",
+    "items": [
+      "LGPD — Lei Geral de Protecao de Dados",
+      "Meta WhatsApp Business Platform — Partner verificado",
+      "Criptografia AES-256 e TLS 1.3",
+      "Mascaramento automatico de PII",
+      "Audit logs com retencao configuravel",
+      "Politica de resposta a incidentes documentada"
+    ]
+  },
+  "cta": {
+    "heading": "Precisa de mais detalhes?",
+    "subtitle": "Nossa equipe de seguranca esta pronta para responder suas perguntas e compartilhar documentacao detalhada."
+  }
+}

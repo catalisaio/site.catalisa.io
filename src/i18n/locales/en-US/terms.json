@@ -1,0 +1,115 @@
+{
+  "title": "Terms of Service",
+  "lastUpdated": "Last updated: February 2026",
+  "sections": [
+    {
+      "title": "Identification of the Parties",
+      "content": "These Terms of Service (\"Terms\") govern access to and use of the Catalisa platform, operated by:\n\nCatalisa Tecnologia e Dados LTDA\nCNPJ (Tax ID): 49.646.439/0001-85\nAddress: Rodovia Raposo Tavares, 7389 - Sao Paulo - SP - Brazil - 05577-902\n\nThroughout this document, \"Catalisa\", \"we\" or \"our\" refer to the company identified above. \"User\", \"you\" or \"your\" refer to the individual or legal entity that accesses or uses the Platform."
+    },
+    {
+      "title": "Definitions",
+      "content": "For the purposes of these Terms, the following definitions apply:",
+      "items": [
+        "\"Platform\": the Catalisa software, including all its features, APIs, SDKs, interfaces, documentation and associated services, made available as SaaS.",
+        "\"Account\": the individual or organizational registration that allows the User to access the Platform, including access credentials and associated settings.",
+        "\"Plan\": the subscription tier chosen by the User, which defines available features, usage limits, support levels and applicable fees.",
+        "\"User Data\": all information entered, processed, generated or stored by the User on the Platform, including messages, contacts, files and configurations.",
+        "\"Personal Data\": any information relating to an identified or identifiable natural person, as defined by LGPD (Brazilian General Data Protection Law).",
+        "\"User Content\": texts, images, media, message templates and any other materials created, sent or published by the User through the Platform.",
+        "\"AI Agents\": intelligent virtual assistants configured on the Platform that use language models to process and generate content in an automated manner.",
+        "\"Workflow\": automation flows created by the User on the Platform, composed of sequences of actions, conditions and integrations.",
+        "\"Building Blocks\": modular and composable components made available by the Platform for building Workflows and AI Agents.",
+        "\"Third-Party Services\": external services integrated with the Platform, including WhatsApp/Meta, artificial intelligence providers (Anthropic, OpenAI) and others.",
+        "\"LGPD\": Lei Geral de Protecao de Dados Pessoais (Brazilian General Data Protection Law — Law No. 13,709/2018).",
+        "\"Controller\": the natural or legal person responsible for decisions regarding the processing of Personal Data.",
+        "\"Processor\": the natural or legal person that processes Personal Data on behalf of the Controller.",
+        "\"SLA\": Service Level Agreement, which establishes the availability and performance commitments of the Platform.",
+        "\"Confidential Information\": any information of a technical, commercial, financial or strategic nature, disclosed by one party to the other in the context of these Terms, in any format."
+      ]
+    },
+    {
+      "title": "Purpose of the Agreement",
+      "content": "Catalisa provides the User with access to a SaaS platform for WhatsApp communication automation with artificial intelligence, including Building Blocks, visual Workflows, AI Agents and integration with external APIs.\n\nThe scope of services available to the User is determined by the contracted Plan and by the current technical documentation available on our website.\n\nCatalisa may make features available in beta or experimental versions. These features are provided \"as is\", without guarantees of availability or stability, and may be discontinued at any time without prior notice.\n\nUse of the Platform is subject to full acceptance of these Terms and the Privacy Policy."
+    },
+    {
+      "title": "Acceptance and Registration",
+      "content": "By creating an Account, clicking \"I Accept\" or using the Platform, you represent that:\n\n(a) You have read, understood and fully agree with these Terms and the Privacy Policy.\n(b) You have the legal capacity to enter into this agreement. If acting on behalf of a legal entity, you represent that you have the authority to bind it.\n(c) The information provided during registration is true, complete and current.\n(d) You will keep your registration information up to date throughout the term of the agreement."
+    },
+    {
+      "title": "Account and Access",
+      "content": "The User is fully responsible for maintaining the confidentiality of their access credentials (login and password) and for all activities performed under their Account.\n\nThe Platform operates in a multi-tenant environment with logical data isolation. Each Account has role-based access controls (RBAC), and the User is responsible for properly configuring permissions for their team members.\n\nThe User must notify Catalisa immediately in case of unauthorized use of their Account or any security breach. Catalisa may temporarily suspend access to the Account when there are signs of security compromise, notifying the User at the earliest opportunity."
+    },
+    {
+      "title": "Acceptable Use Policy",
+      "content": "The User agrees to use the Platform responsibly and in compliance with applicable laws. The following activities are expressly prohibited:",
+      "items": [
+        "Sending spam, unsolicited messages, bulk messages without consent or content that violates WhatsApp/Meta policies.",
+        "Using the Platform for fraudulent, deceptive, defamatory purposes or purposes that violate the rights of third parties.",
+        "Distributing malware, viruses or any malicious code through the Platform.",
+        "Exceeding the volume, request or storage limits specified in the contracted Plan without prior authorization.",
+        "Reverse-engineering, decompiling, disassembling or attempting to extract the source code of the Platform.",
+        "Sublicensing, reselling, renting or transferring access to the Platform to third parties without Catalisa's express authorization.",
+        "Taking actions that compromise the stability, security or performance of the Platform for other users.",
+        "Sending or processing illegal content, including child pornography, incitement to violence, hate speech or any material that violates applicable law.",
+        "Failing to comply with WhatsApp Business API usage policies, including rules on message templates, service windows and contact opt-in."
+      ]
+    },
+    {
+      "title": "AI-Generated Content",
+      "content": "The Platform uses third-party artificial intelligence models (including Anthropic and OpenAI) to generate content, process natural language and automate interactions. The User acknowledges and agrees that:\n\n(a) Content generated by AI Agents may contain inaccuracies, errors or outdated information. Catalisa does not guarantee the accuracy, completeness or suitability of generated content.\n\n(b) The User is solely responsible for reviewing, validating and approving content generated by AI Agents before its use, especially in communications with end customers.\n\n(c) Content sent to end recipients through the Platform is the exclusive responsibility of the User, regardless of whether it was generated by AI Agents.\n\n(d) Commercial, financial, legal or medical decisions should not be based solely on AI-generated content. Human judgment should always prevail.\n\n(e) The use of AI models is subject to the terms of use of the respective providers (Anthropic, OpenAI), and Catalisa is not responsible for changes, unavailability or limitations imposed by these providers."
+    },
+    {
+      "title": "Payment and Billing",
+      "content": "The User shall pay the applicable fees for the contracted Plan under the following conditions:\n\n(a) Billing cycle: monthly or annual, as defined at the time of purchase. Payment is due in advance, by the due date indicated on the invoice.\n\n(b) Late payment: failure to pay by the due date will result in a penalty of 2% (two percent) on the amount due, plus late-payment interest of 1% (one percent) per month, calculated pro rata die, without prejudice to monetary adjustment.\n\n(c) Price adjustment: Plan fees may be adjusted annually based on the variation of the IGPM/FGV index or, in its absence, the IPCA/IBGE index, with 30 (thirty) days' prior notice.\n\n(d) Taxes: stated prices do not include applicable taxes. Any taxes, fees or contributions applicable shall be the responsibility of the User, in accordance with current legislation.\n\n(e) Suspension for non-payment: Catalisa may suspend access to the Platform after 10 (ten) calendar days of non-payment, without prejudice to the collection of amounts due."
+    },
+    {
+      "title": "Catalisa's Obligations",
+      "content": "Catalisa commits to:",
+      "items": [
+        "Maintain Platform availability according to the service levels established in Section 13 (SLA).",
+        "Implement and maintain appropriate technical and organizational security measures to protect User Data, as detailed in the Privacy Policy.",
+        "Communicate scheduled maintenance with a minimum of 48 (forty-eight) hours' advance notice, except in emergency situations requiring immediate intervention.",
+        "Provide technical support through the channels and hours defined in the contracted Plan.",
+        "Process Personal Data in compliance with the LGPD, as Processor, in accordance with the instructions of the User-Controller.",
+        "Notify the User of security incidents that may affect their Data, as described in the Privacy Policy.",
+        "Maintain up-to-date technical documentation on Platform features and APIs."
+      ]
+    },
+    {
+      "title": "Intellectual Property",
+      "content": "The Platform, including its source code, design, trademarks, native Building Blocks, algorithms, models and documentation, are the exclusive property of Catalisa or its licensors. No intellectual property rights over the Platform are transferred to the User under these Terms.\n\nThe User retains full ownership of their Data, Content, Workflows, AI Agent configurations and automations created on the Platform.\n\nThe User grants Catalisa a limited, non-exclusive and revocable license to process their Data solely for the purpose of providing the contracted services.\n\nCatalisa may use aggregated and anonymized data, which does not identify the User or their customers, for the purpose of improving the Platform, statistical analysis and market benchmarks."
+    },
+    {
+      "title": "Confidentiality",
+      "content": "Both parties agree to maintain the confidentiality of Confidential Information received from the other party, using it exclusively for the purposes set forth in these Terms and applying the same degree of protection they afford to their own confidential information, never less than a reasonable standard.\n\nThe following shall not be considered Confidential Information: (a) information that is or becomes publicly available without breach of these Terms; (b) information legitimately in the receiving party's possession prior to disclosure; (c) information independently developed by the receiving party; or (d) information that must be disclosed by judicial or administrative order, provided the obligated party gives prior notice to the other, when legally permissible.\n\nThe confidentiality obligation shall remain in effect for 2 (two) years after the termination of these Terms."
+    },
+    {
+      "title": "Privacy and Data",
+      "content": "The processing of Personal Data by Catalisa is governed by the Privacy Policy, available at /privacy-policy, which is an integral part of these Terms.\n\nIn the context of the Platform, the parties operate in the following roles as defined by LGPD:\n\n- Catalisa as Processor: processes Personal Data of the User's customers according to the User's instructions, exclusively for the provision of services.\n- User as Controller: makes decisions regarding the processing of Personal Data of their customers, including collection, purpose and legal basis.\n\nThe User agrees to:\n\n(a) Ensure that they have an adequate legal basis (consent, contract or other) for the processing of Personal Data of their customers through the Platform.\n(b) Inform their end customers about the use of the Platform for processing their communications.\n(c) Handle requests from data subjects regarding their Personal Data, and may request technical support from Catalisa to do so."
+    },
+    {
+      "title": "Service Level Agreement (SLA)",
+      "content": "Catalisa commits to a minimum availability of 99.5% (ninety-nine point five percent) of the Platform, measured monthly.\n\nCalculation formula: Availability (%) = ((Total Minutes in Month - Minutes of Downtime) / Total Minutes in Month) x 100\n\nExclusions from availability calculation:\n- Scheduled maintenance communicated with a minimum of 48 hours' advance notice.\n- Unavailability of Third-Party Services (WhatsApp/Meta, cloud providers, AI providers).\n- Force majeure events as defined in Section 18.\n- Denial-of-service (DDoS) attacks or other cyber attacks.\n- Unavailability caused by actions or omissions of the User.\n\nDowntime credits:\n- Availability between 99.0% and 99.4%: credit of 5% of the monthly fee.\n- Availability between 95.0% and 98.9%: credit of 10% of the monthly fee.\n- Availability below 95.0%: credit of 25% of the monthly fee.\n\nCredits must be requested by the User within 30 (thirty) days after the reference month and will be applied to the subsequent invoice. Credits constitute the User's sole compensation for Platform downtime."
+    },
+    {
+      "title": "Warranties and Disclaimers",
+      "content": "The Platform is provided \"AS IS\" and \"AS AVAILABLE\". To the maximum extent permitted by applicable law, Catalisa makes no warranties, express or implied, including, without limitation, warranties of merchantability, fitness for a particular purpose or non-infringement of third-party rights.\n\nWithout limiting the foregoing, Catalisa does not warrant that:\n\n(a) The Platform will meet all of the User's specific requirements.\n(b) The operation of the Platform will be uninterrupted or error-free.\n(c) Results obtained through the use of AI Agents will be accurate, complete or suitable for any purpose.\n(d) The use of the Platform will generate specific business results.\n\nThe User acknowledges that artificial intelligence has inherent limitations and that human judgment should always prevail over automated suggestions."
+    },
+    {
+      "title": "Limitation of Liability",
+      "content": "To the maximum extent permitted by applicable law:\n\n(a) Catalisa shall not be liable for indirect, incidental, special, consequential or punitive damages, including, without limitation, loss of profits, loss of data, business interruption or loss of business opportunities, even if advised of the possibility of such damages.\n\n(b) Catalisa's total and aggregate liability for all claims arising out of or relating to these Terms shall be limited to the amount actually paid by the User to Catalisa in the 12 (twelve) months immediately preceding the event giving rise to the claim.\n\nExcluded from these limitations (carve-outs) are liabilities arising from: breach of confidentiality obligations, indemnification obligations, intellectual property rights violations and damages caused by willful misconduct or bad faith."
+    },
+    {
+      "title": "Indemnification",
+      "content": "The User agrees to indemnify, defend and hold harmless Catalisa, its directors, employees and service providers from any losses, damages, costs and expenses (including reasonable attorney fees) arising from:\n\n(a) Breach of these Terms by the User.\n(b) Illegal or improper use of the Platform by the User.\n(c) Content sent, processed or stored by the User on the Platform, including content generated by AI Agents under the User's responsibility.\n(d) Violation of third-party rights by the User, including intellectual property and privacy rights.\n(e) Claims from data subjects whose data processing is the responsibility of the User as Controller."
+    },
+    {
+      "title": "Suspension and Termination",
+      "content": "Suspension. Catalisa may immediately suspend the User's access to the Platform, in whole or in part, in the following circumstances:\n\n(a) Violation of the Acceptable Use Policy (Section 6).\n(b) Non-payment for more than 10 (ten) calendar days.\n(c) Judicial or administrative order.\n(d) Imminent risk to the security of the Platform or other users.\n(e) Use that may create liability for Catalisa.\n\nCatalisa will make reasonable efforts to notify the User before or immediately after the suspension, indicating the cause and necessary corrective measures.\n\nTermination without cause. Either party may terminate the agreement at any time with 30 (thirty) days' written notice. Prepaid amounts will be refunded proportionally for the unused period.\n\nTermination for cause. Either party may terminate the agreement immediately, by written notice, if the other party commits a material breach of these Terms and fails to cure such breach within 15 (fifteen) days after notification.\n\nEffects of termination. After termination, for any reason: (i) access to the Platform will be terminated; (ii) the User will have 30 (thirty) days to export their Data; (iii) after the export period, Data will be deleted in accordance with the Privacy Policy; (iv) the confidentiality, limitation of liability and indemnification clauses shall survive termination."
+    },
+    {
+      "title": "General Provisions",
+      "content": "Force majeure. Neither party shall be liable for delays or failures in the performance of its obligations resulting from events beyond its reasonable control, including natural disasters, pandemics, wars, strikes, telecommunications failures, governmental acts or third-party infrastructure failures. The affected party shall notify the other within 5 (five) business days after the onset of the event.\n\nAnti-corruption. The parties represent and warrant that they conduct their business in compliance with applicable anti-corruption legislation, including Law No. 12,846/2013 (Anti-Corruption Law) and Decree No. 11,129/2022. Neither party shall offer, promise, pay or authorize the payment of any undue advantage to public officials or third parties.\n\nAssignment. The User may not assign or transfer their rights and obligations under these Terms without the prior written consent of Catalisa. Catalisa may assign these Terms to any affiliate or in the event of a merger, acquisition or asset sale, upon notice to the User.\n\nEntire agreement. These Terms, together with the Privacy Policy and the documents referenced herein, constitute the entire agreement between the parties and supersede all prior agreements, written or oral.\n\nAmendments. Catalisa may modify these Terms at any time, communicating changes with a minimum of 30 (thirty) days' advance notice by email or Platform notification. Continued use of the Platform after the notice period constitutes acceptance of the new Terms. If the User disagrees with the changes, they may terminate the agreement as provided in Section 17.\n\nSeverability. The invalidity or unenforceability of any provision of these Terms shall not affect the validity of the remaining provisions, which shall remain in full force and effect.\n\nWaiver. The failure of either party to exercise any right provided under these Terms shall not constitute a waiver of such right.\n\nJurisdiction. The courts of Sao Paulo, State of Sao Paulo, Brazil, are elected to resolve any disputes arising from these Terms, with waiver of any other jurisdiction, however privileged."
+    }
+  ]
+}

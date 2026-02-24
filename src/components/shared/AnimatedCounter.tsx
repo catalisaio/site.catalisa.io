@@ -9,15 +9,21 @@ interface AnimatedCounterProps extends TextProps {
 }
 
 export function AnimatedCounter({ target, duration = 2000, prefix = '', suffix = '', ...props }: AnimatedCounterProps) {
-  const [count, setCount] = useState(0);
-  const [hasStarted, setHasStarted] = useState(false);
+  // Start with target so pre-rendered HTML shows the real value (not "0")
+  const [count, setCount] = useState(target);
+  const [hasAnimated, setHasAnimated] = useState(false);
   const ref = useRef<HTMLParagraphElement>(null);
+
+  useEffect(() => {
+    // On client hydration, reset to 0 to prepare for scroll-triggered animation
+    setCount(0);
+  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting && !hasStarted) {
-          setHasStarted(true);
+        if (entry.isIntersecting && !hasAnimated) {
+          setHasAnimated(true);
         }
       },
       { threshold: 0.3 }
@@ -25,10 +31,10 @@ export function AnimatedCounter({ target, duration = 2000, prefix = '', suffix =
 
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
-  }, [hasStarted]);
+  }, [hasAnimated]);
 
   useEffect(() => {
-    if (!hasStarted) return;
+    if (!hasAnimated) return;
 
     const startTime = Date.now();
     const tick = () => {
@@ -41,7 +47,7 @@ export function AnimatedCounter({ target, duration = 2000, prefix = '', suffix =
     };
 
     requestAnimationFrame(tick);
-  }, [hasStarted, target, duration]);
+  }, [hasAnimated, target, duration]);
 
   return (
     <Text ref={ref} {...props}>

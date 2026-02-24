@@ -19,5 +19,23 @@
     { "title": "Resposta rapida", "description": "Nossa equipe responde em menos de 1 hora durante o horario comercial." },
     { "title": "Sem compromisso", "description": "Conversa aberta, sem pressao. Queremos entender seu cenario primeiro." },
     { "title": "Demo personalizada", "description": "Mostramos a plataforma funcionando com exemplos do seu negocio." }
-  ]
+  ],
+  "form": {
+    "heading": "Envie sua mensagem",
+    "subtitle": "Preencha o formulario abaixo e retornaremos em ate 24h uteis.",
+    "name": "Nome completo",
+    "email": "Email corporativo",
+    "company": "Empresa",
+    "role": "Cargo (opcional)",
+    "phone": "Telefone / WhatsApp (opcional)",
+    "message": "Como podemos ajudar?",
+    "privacy": "Li e concordo com a",
+    "privacyLink": "Politica de Privacidade",
+    "submit": "Enviar mensagem",
+    "success": "Mensagem enviada com sucesso! Retornaremos em breve.",
+    "error": "Erro ao enviar mensagem. Tente novamente ou fale conosco pelo WhatsApp.",
+    "whatsappAlternative": "Prefere WhatsApp?",
+    "whatsappCta": "Conversar agora",
+    "responseTime": "Respondemos em ate 24h uteis"
+  }
 }

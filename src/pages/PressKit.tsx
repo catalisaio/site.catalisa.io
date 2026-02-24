@@ -2,8 +2,9 @@ import { useState, useCallback } from 'react';
 import {
   Box, Container, Heading, Text, VStack, SimpleGrid, HStack, Image,
   Button, Flex, List, ListItem, ListIcon, useColorModeValue, Icon,
+  Menu, MenuButton, MenuList, MenuItem,
 } from '@chakra-ui/react';
-import { FiDownload, FiCheck, FiX, FiCopy, FiMail } from 'react-icons/fi';
+import { FiDownload, FiCheck, FiX, FiCopy, FiMail, FiChevronDown } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
 
 const BRAND_COLORS = [
@@ -13,19 +14,78 @@ const BRAND_COLORS = [
   { key: 'white', hex: '#FFFFFF' },
 ] as const;
 
+type DownloadOption = { label: string; href: string };
+
 const LOGO_VARIANTS = [
-  { key: 'color', file: 'logo-full-color.svg', bg: 'gray.50' },
-  { key: 'white', file: 'logo-full-white.svg', bg: 'gray.800' },
-  { key: 'dark', file: 'logo-full-dark.svg', bg: 'gray.50' },
+  { key: 'color', file: 'logo-full-color.svg', bg: 'gray.50', downloads: [
+    { label: 'SVG', href: '/brand/logo-full-color.svg' },
+    { label: 'PNG 200h', href: '/brand/logos/color/logo-color-200h.png' },
+    { label: 'PNG 400h', href: '/brand/logos/color/logo-color-400h.png' },
+    { label: 'PNG 800h', href: '/brand/logos/color/logo-color-800h.png' },
+  ] },
+  { key: 'white', file: 'logo-full-white.svg', bg: 'gray.800', downloads: [
+    { label: 'SVG', href: '/brand/logo-full-white.svg' },
+    { label: 'PNG 200h', href: '/brand/logos/white/logo-white-200h.png' },
+    { label: 'PNG 400h', href: '/brand/logos/white/logo-white-400h.png' },
+    { label: 'PNG 800h', href: '/brand/logos/white/logo-white-800h.png' },
+  ] },
+  { key: 'dark', file: 'logo-full-dark.svg', bg: 'gray.50', downloads: [
+    { label: 'SVG', href: '/brand/logo-full-dark.svg' },
+    { label: 'PNG 200h', href: '/brand/logos/dark/logo-dark-200h.png' },
+    { label: 'PNG 400h', href: '/brand/logos/dark/logo-dark-400h.png' },
+    { label: 'PNG 800h', href: '/brand/logos/dark/logo-dark-800h.png' },
+  ] },
 ] as const;
 
 const ICON_VARIANTS = [
-  { key: 'color', file: 'icon-color.svg', bg: 'gray.50' },
-  { key: 'onWhite', file: 'icon-on-white.svg', bg: 'gray.50' },
-  { key: 'transparent', file: 'icon-transparent.svg', bg: 'gray.50' },
-  { key: 'monoWhite', file: 'icon-mono-white.svg', bg: 'gray.800' },
-  { key: 'monoDark', file: 'icon-mono-dark.svg', bg: 'gray.50' },
-  { key: 'monoPurple', file: 'icon-mono-purple.svg', bg: 'gray.50' },
+  { key: 'color', file: 'icon-color.svg', bg: 'gray.50', downloads: [
+    { label: 'SVG', href: '/brand/icon-color.svg' },
+    { label: 'PNG 64x64', href: '/brand/icons/icon-64x64.png' },
+    { label: 'PNG 128x128', href: '/brand/icons/icon-128x128.png' },
+    { label: 'PNG 256x256', href: '/brand/icons/icon-256x256.png' },
+    { label: 'PNG 512x512', href: '/brand/icons/icon-512x512.png' },
+    { label: 'PNG 1024x1024', href: '/brand/icons/icon-1024x1024.png' },
+  ] },
+  { key: 'onWhite', file: 'icon-on-white.svg', bg: 'gray.50', downloads: [
+    { label: 'SVG', href: '/brand/icon-on-white.svg' },
+    { label: 'PNG 64x64', href: '/brand/icons/on-white/icon-on-white-64x64.png' },
+    { label: 'PNG 128x128', href: '/brand/icons/on-white/icon-on-white-128x128.png' },
+    { label: 'PNG 256x256', href: '/brand/icons/on-white/icon-on-white-256x256.png' },
+    { label: 'PNG 512x512', href: '/brand/icons/on-white/icon-on-white-512x512.png' },
+    { label: 'PNG 1024x1024', href: '/brand/icons/on-white/icon-on-white-1024x1024.png' },
+  ] },
+  { key: 'transparent', file: 'icon-transparent.svg', bg: 'gray.50', downloads: [
+    { label: 'SVG', href: '/brand/icon-transparent.svg' },
+    { label: 'PNG 64x64', href: '/brand/icons/transparent/icon-transparent-64x64.png' },
+    { label: 'PNG 128x128', href: '/brand/icons/transparent/icon-transparent-128x128.png' },
+    { label: 'PNG 256x256', href: '/brand/icons/transparent/icon-transparent-256x256.png' },
+    { label: 'PNG 512x512', href: '/brand/icons/transparent/icon-transparent-512x512.png' },
+    { label: 'PNG 1024x1024', href: '/brand/icons/transparent/icon-transparent-1024x1024.png' },
+  ] },
+  { key: 'monoWhite', file: 'icon-mono-white.svg', bg: 'gray.800', downloads: [
+    { label: 'SVG', href: '/brand/icon-mono-white.svg' },
+    { label: 'PNG 64x64', href: '/brand/icons/mono-white/icon-mono-white-64x64.png' },
+    { label: 'PNG 128x128', href: '/brand/icons/mono-white/icon-mono-white-128x128.png' },
+    { label: 'PNG 256x256', href: '/brand/icons/mono-white/icon-mono-white-256x256.png' },
+    { label: 'PNG 512x512', href: '/brand/icons/mono-white/icon-mono-white-512x512.png' },
+    { label: 'PNG 1024x1024', href: '/brand/icons/mono-white/icon-mono-white-1024x1024.png' },
+  ] },
+  { key: 'monoDark', file: 'icon-mono-dark.svg', bg: 'gray.50', downloads: [
+    { label: 'SVG', href: '/brand/icon-mono-dark.svg' },
+    { label: 'PNG 64x64', href: '/brand/icons/mono-dark/icon-mono-dark-64x64.png' },
+    { label: 'PNG 128x128', href: '/brand/icons/mono-dark/icon-mono-dark-128x128.png' },
+    { label: 'PNG 256x256', href: '/brand/icons/mono-dark/icon-mono-dark-256x256.png' },
+    { label: 'PNG 512x512', href: '/brand/icons/mono-dark/icon-mono-dark-512x512.png' },
+    { label: 'PNG 1024x1024', href: '/brand/icons/mono-dark/icon-mono-dark-1024x1024.png' },
+  ] },
+  { key: 'monoPurple', file: 'icon-mono-purple.svg', bg: 'gray.50', downloads: [
+    { label: 'SVG', href: '/brand/icon-mono-purple.svg' },
+    { label: 'PNG 64x64', href: '/brand/icons/mono-purple/icon-mono-purple-64x64.png' },
+    { label: 'PNG 128x128', href: '/brand/icons/mono-purple/icon-mono-purple-128x128.png' },
+    { label: 'PNG 256x256', href: '/brand/icons/mono-purple/icon-mono-purple-256x256.png' },
+    { label: 'PNG 512x512', href: '/brand/icons/mono-purple/icon-mono-purple-512x512.png' },
+    { label: 'PNG 1024x1024', href: '/brand/icons/mono-purple/icon-mono-purple-1024x1024.png' },
+  ] },
 ] as const;
 
 const TYPOGRAPHY_WEIGHTS = [400, 500, 600, 700, 800] as const;
@@ -70,14 +130,13 @@ function ColorSwatch({ hex, name, usage, copiedText }: { hex: string; name: stri
   );
 }
 
-function AssetCard({ src, label, bg, downloadHref }: { src: string; label: string; bg: string; downloadHref: string }) {
+function AssetCard({ src, label, bg, downloads }: { src: string; label: string; bg: string; downloads: readonly DownloadOption[] }) {
   return (
     <VStack
       spacing={3}
       borderRadius="xl"
       border="1px solid"
       borderColor="gray.200"
-      overflow="hidden"
       transition="all 0.2s"
       _hover={{ shadow: 'md', transform: 'translateY(-2px)' }}
     >
@@ -88,6 +147,7 @@ function AssetCard({ src, label, bg, downloadHref }: { src: string; label: strin
         align="center"
         justify="center"
         p={4}
+        borderTopRadius="xl"
         sx={bg === 'gray.800' ? {
           backgroundImage: 'radial-gradient(circle at 1px 1px, rgba(255,255,255,0.05) 1px, transparent 0)',
           backgroundSize: '20px 20px',
@@ -100,17 +160,46 @@ function AssetCard({ src, label, bg, downloadHref }: { src: string; label: strin
       </Flex>
       <VStack spacing={1} px={3} pb={3} w="full">
         <Text fontSize="xs" fontWeight="600" textAlign="center">{label}</Text>
-        <Button
-          as="a"
-          href={downloadHref}
-          download
-          size="xs"
-          variant="ghost"
-          colorScheme="purple"
-          leftIcon={<FiDownload />}
-        >
-          SVG
-        </Button>
+        {downloads.length === 1 ? (
+          <Button
+            as="a"
+            href={downloads[0].href}
+            download
+            size="xs"
+            variant="ghost"
+            colorScheme="purple"
+            leftIcon={<FiDownload />}
+          >
+            {downloads[0].label}
+          </Button>
+        ) : (
+          <Menu strategy="fixed" placement="bottom">
+            <MenuButton
+              as={Button}
+              size="xs"
+              variant="ghost"
+              colorScheme="purple"
+              leftIcon={<FiDownload />}
+              rightIcon={<FiChevronDown />}
+            >
+              Download
+            </MenuButton>
+            <MenuList minW="160px" fontSize="xs" zIndex="popover">
+              {downloads.map((dl) => (
+                <MenuItem
+                  key={dl.label}
+                  as="a"
+                  href={dl.href}
+                  download
+                  fontSize="xs"
+                  icon={<FiDownload />}
+                >
+                  {dl.label}
+                </MenuItem>
+              ))}
+            </MenuList>
+          </Menu>
+        )}
       </VStack>
     </VStack>
   );
@@ -303,7 +392,7 @@ export function PressKit() {
                   src={`/brand/${logo.file}`}
                   label={t(`logos.${logo.key}`)}
                   bg={logo.bg}
-                  downloadHref={`/brand/${logo.file}`}
+                  downloads={logo.downloads}
                 />
               ))}
             </SimpleGrid>
@@ -322,7 +411,7 @@ export function PressKit() {
                   src={`/brand/${icon.file}`}
                   label={t(`icons.${icon.key}`)}
                   bg={icon.bg}
-                  downloadHref={`/brand/${icon.file}`}
+                  downloads={icon.downloads}
                 />
               ))}
             </SimpleGrid>

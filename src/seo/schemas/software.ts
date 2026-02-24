@@ -8,7 +8,7 @@ export function getSoftwareApplicationSchema() {
     applicationCategory: 'BusinessApplication',
     operatingSystem: 'Web',
     url: BASE_URL,
-    description: 'Plataforma B2B de automacao WhatsApp com agentes de IA, workflows visuais e 150+ building blocks',
+    description: 'Plataforma B2B de automacao WhatsApp com agentes de IA, workflows visuais e 60+ building blocks',
     offers: {
       '@type': 'Offer',
       price: '0',
@@ -18,7 +18,7 @@ export function getSoftwareApplicationSchema() {
     featureList: [
       'WhatsApp Business API Integration',
       'AI Agents with Generative AI',
-      '150+ Building Blocks',
+      '60+ Building Blocks',
       'Visual Workflow Builder',
       'Multi-tenant Architecture',
       'LGPD Compliance',

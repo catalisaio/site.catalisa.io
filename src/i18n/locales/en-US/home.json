@@ -36,7 +36,7 @@
     "subtitle": "From first contact to closing — everything connected, automated and intelligent.",
     "steps": [
       { "label": "Connect", "title": "WhatsApp", "description": "Multi-tenant, multi-device. Official Cloud API or QR Code." },
-      { "label": "Automate", "title": "Workflows", "description": "Visual drag & drop. 150+ composable building blocks." },
+      { "label": "Automate", "title": "Workflows", "description": "Visual drag & drop. 60+ composable building blocks." },
       { "label": "Intelligence", "title": "AI Agents", "description": "Specialized agents with selective tools." },
       { "label": "Results", "title": "CRM & Analytics", "description": "Lead pipeline, metrics and complete history." }
     ]
@@ -57,7 +57,7 @@
       { "title": "Multi-Agent WhatsApp", "description": "Connect multiple numbers. Official Cloud API + QR Code. Each agent with its own context and history." },
       { "title": "AI Agents", "description": "Create specialized agents with custom prompts and selective tools. Marketplace with 10+ templates." },
       { "title": "Visual Workflows", "description": "Build automations with drag & drop. DAG with parallel execution. Native A/B testing." },
-      { "title": "Building Blocks", "description": "150+ building blocks: AI, fintech, CRM, security, integrations and more. Combine as you wish." },
+      { "title": "Building Blocks", "description": "60+ building blocks: AI, fintech, CRM, security, integrations and more. Combine as you wish." },
       { "title": "Lead CRM", "description": "Complete pipeline with custom types, kanban, dynamic fields and interaction history." },
       { "title": "Security & LGPD", "description": "Isolated multi-tenant. Automatic PII masking. Banking-grade encryption. RBAC." }
     ]
@@ -82,9 +82,9 @@
     "subtitle": "We compare with alternatives so you can decide clearly.",
     "items": [
       { "vs": "vs n8n / Make", "title": "Native AI, not plugins", "description": "AI agents, sentiment analysis, OCR and text generation are native building blocks — no plugins or external API setup." },
-      { "vs": "vs Intercom / WATI", "title": "Composable blocks, not chatbot", "description": "Not a chatbot with fixed menus. 150+ building blocks you freely combine to create custom automations." },
+      { "vs": "vs Intercom / WATI", "title": "Composable blocks, not chatbot", "description": "Not a chatbot with fixed menus. 60+ building blocks you freely combine to create custom automations." },
       { "vs": "vs Zapier / Pipedream", "title": "Native WhatsApp + embedded AI", "description": "Official WhatsApp connection (Cloud API + QR Code), AI agents with real tools, integrated CRM — all in one platform." },
-      { "vs": "vs Internal development", "title": "150+ building blocks. Months of savings.", "description": "From fintech to CRM, security to calendar — ready-made, tested building blocks. Focus on your business, not infrastructure." }
+      { "vs": "vs Internal development", "title": "60+ building blocks. Months of savings.", "description": "From fintech to CRM, security to calendar — ready-made, tested building blocks. Focus on your business, not infrastructure." }
     ]
   },
   "trust": {
@@ -258,7 +258,7 @@
     "items": [
       {
         "question": "What is Catalisa?",
-        "answer": "Catalisa is a composable WhatsApp automation platform with AI. It combines 150+ building blocks, a visual studio with generative AI, and intelligent agents to automate customer service, sales, and operations via WhatsApp — no code required."
+        "answer": "Catalisa is a composable WhatsApp automation platform with AI. It combines 60+ building blocks, a visual studio with generative AI, and intelligent agents to automate customer service, sales, and operations via WhatsApp — no code required."
       },
       {
         "question": "Do I need to know how to code?",
@@ -302,7 +302,7 @@
       },
       {
         "question": "What are building blocks?",
-        "answer": "Building blocks are ready-made, composable components you combine to create automations. There are 150+ blocks across 12 categories: AI, fintech, CRM, security, communication, integration, and more. Each block is tested and production-ready."
+        "answer": "Building blocks are ready-made, composable components you combine to create automations. There are 60+ blocks across 10 domains: AI, fintech, CRM, security, communication, integration, and more. Each block is tested and production-ready."
       },
       {
         "question": "How do AI agents work?",

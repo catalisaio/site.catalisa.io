@@ -166,7 +166,7 @@ export const capabilityClusters: CapabilityCluster[] = [
 ];
 
 // Platform extras (absorbed in total): extensibility, events, custom actions, debug, device status
-// Total: 10 + 6 + 7 + 10 + 6 + 7 + 5 + 4 + 4 + 4 + 5(platform) = 68 + 5 = 73
+// Total: 10 + 6 + 7 + 10 + 6 + 7 + 5 + 4 + 4 + 4 + 5(platform) = 63 + 5 = 68
 
 export const categoryBadges: Record<string, { label: string; color: string }> = {
   IA: { label: 'IA', color: 'purple' },

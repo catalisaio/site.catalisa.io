@@ -185,7 +185,7 @@ export function BuildingBlocks() {
       <SectionWrapper>
         <SimpleGrid columns={{ base: 2, md: 4 }} spacing={6} textAlign="center">
           <VStack>
-            <Text fontSize="3xl" fontWeight="800" color="brand.500">150+</Text>
+            <Text fontSize="3xl" fontWeight="800" color="brand.500">60+</Text>
             <Text color="gray.500" fontSize="sm">{t('summary.capabilities')}</Text>
           </VStack>
           <VStack>

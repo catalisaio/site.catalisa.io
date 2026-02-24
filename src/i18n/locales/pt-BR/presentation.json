@@ -58,7 +58,7 @@
     "headline": "Quatro pilares. Uma plataforma.",
     "steps": [
       { "label": "Conectar", "title": "WhatsApp", "description": "Multi-tenant, multi-device. QR Code ou Cloud API." },
-      { "label": "Automatizar", "title": "Workflows", "description": "Drag & drop visual. 150+ building blocks composiveis." },
+      { "label": "Automatizar", "title": "Workflows", "description": "Drag & drop visual. 60+ building blocks composiveis." },
       { "label": "Inteligencia", "title": "AI Agents", "description": "Agentes especializados com ferramentas seletivas." },
       { "label": "Resultado", "title": "CRM & Analytics", "description": "Pipeline de leads, metricas e historico completo." }
     ]
@@ -66,10 +66,10 @@
   "whatsappFeatures": {
     "headline": "Tudo que voce precisa. Nada que nao precisa.",
     "items": [
-      { "title": "WhatsApp Multi-Agente", "description": "Conecte multiplos numeros. Baileys + Cloud API." },
+      { "title": "WhatsApp Multi-Agente", "description": "Conecte multiplos numeros. Cloud API oficial + QR Code." },
       { "title": "Agentes de IA", "description": "Prompt customizado e ferramentas seletivas." },
       { "title": "Workflows Visuais", "description": "Drag & drop com execucao paralela (DAG)." },
-      { "title": "Building Blocks", "description": "150+ blocos: IA, fintech, CRM e mais." },
+      { "title": "Building Blocks", "description": "60+ blocos: IA, fintech, CRM e mais." },
       { "title": "CRM de Leads", "description": "Pipeline completo com kanban e campos dinamicos." },
       { "title": "Seguranca & LGPD", "description": "Multi-tenant isolado. Criptografia bancaria." }
     ]
@@ -108,9 +108,9 @@
     "headline": "Por que a Catalisa?",
     "items": [
       { "vs": "vs n8n / Make", "title": "IA nativa, nao plugin", "description": "Agentes de IA, analise de sentimento, OCR e geracao de texto sao building blocks nativos." },
-      { "vs": "vs Intercom / WATI", "title": "Blocos composiveis, nao chatbot", "description": "150+ building blocks que voce combina livremente para criar automacoes sob medida." },
+      { "vs": "vs Intercom / WATI", "title": "Blocos composiveis, nao chatbot", "description": "60+ building blocks que voce combina livremente para criar automacoes sob medida." },
       { "vs": "vs Zapier / Pipedream", "title": "WhatsApp nativo + IA embarcada", "description": "Conexao direta com WhatsApp, agentes IA com ferramentas reais, CRM integrado." },
-      { "vs": "vs Dev interno", "title": "150+ blocos. Meses de economia.", "description": "Building blocks prontos e testados. Foque no seu negocio, nao em infraestrutura." }
+      { "vs": "vs Dev interno", "title": "60+ blocos. Meses de economia.", "description": "Building blocks prontos e testados. Foque no seu negocio, nao em infraestrutura." }
     ]
   },
   "bankingLego": {

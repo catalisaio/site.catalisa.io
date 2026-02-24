@@ -58,7 +58,7 @@
     "headline": "Four pillars. One platform.",
     "steps": [
       { "label": "Connect", "title": "WhatsApp", "description": "Multi-tenant, multi-device. QR Code or Cloud API." },
-      { "label": "Automate", "title": "Workflows", "description": "Visual drag & drop. 150+ composable building blocks." },
+      { "label": "Automate", "title": "Workflows", "description": "Visual drag & drop. 60+ composable building blocks." },
       { "label": "Intelligence", "title": "AI Agents", "description": "Specialized agents with selective tools." },
       { "label": "Results", "title": "CRM & Analytics", "description": "Lead pipeline, metrics and complete history." }
     ]
@@ -66,10 +66,10 @@
   "whatsappFeatures": {
     "headline": "Everything you need. Nothing you don't.",
     "items": [
-      { "title": "Multi-Agent WhatsApp", "description": "Connect multiple numbers. Baileys + Cloud API." },
+      { "title": "Multi-Agent WhatsApp", "description": "Connect multiple numbers. Official Cloud API + QR Code." },
       { "title": "AI Agents", "description": "Custom prompts and selective tools." },
       { "title": "Visual Workflows", "description": "Drag & drop with parallel execution (DAG)." },
-      { "title": "Building Blocks", "description": "150+ blocks: AI, fintech, CRM and more." },
+      { "title": "Building Blocks", "description": "60+ blocks: AI, fintech, CRM and more." },
       { "title": "Lead CRM", "description": "Complete pipeline with kanban and dynamic fields." },
       { "title": "Security & LGPD", "description": "Isolated multi-tenant. Banking-grade encryption." }
     ]
@@ -108,9 +108,9 @@
     "headline": "Why Catalisa?",
     "items": [
       { "vs": "vs n8n / Make", "title": "Native AI, not plugins", "description": "AI agents, sentiment analysis, OCR and text generation are native building blocks." },
-      { "vs": "vs Intercom / WATI", "title": "Composable blocks, not chatbot", "description": "150+ building blocks you freely combine to create custom automations." },
+      { "vs": "vs Intercom / WATI", "title": "Composable blocks, not chatbot", "description": "60+ building blocks you freely combine to create custom automations." },
       { "vs": "vs Zapier / Pipedream", "title": "Native WhatsApp + embedded AI", "description": "Direct WhatsApp connection, AI agents with real tools, integrated CRM." },
-      { "vs": "vs Internal dev", "title": "150+ blocks. Months of savings.", "description": "Ready-made, tested building blocks. Focus on your business, not infrastructure." }
+      { "vs": "vs Internal dev", "title": "60+ blocks. Months of savings.", "description": "Ready-made, tested building blocks. Focus on your business, not infrastructure." }
     ]
   },
   "bankingLego": {

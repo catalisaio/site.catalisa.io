@@ -115,6 +115,7 @@ export function BuildingBlocks() {
             as="a"
             href={WHATSAPP_URL}
             target="_blank"
+            rel="noopener noreferrer"
             variant="link"
             color="brand.500"
             fontSize="sm"
@@ -208,6 +209,7 @@ export function BuildingBlocks() {
           as="a"
           href={WHATSAPP_URL}
           target="_blank"
+          rel="noopener noreferrer"
           size="lg"
           bg="whatsapp.500"
           color="white"

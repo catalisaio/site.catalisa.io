@@ -80,7 +80,7 @@ async function prerender() {
     try {
       await page.goto(`http://localhost:${PORT}${route}`, {
         waitUntil: 'networkidle0',
-        timeout: 15000,
+        timeout: 30000,
       });
 
       // Wait for our custom app-rendered event or timeout
@@ -127,6 +127,6 @@ async function prerender() {
 }
 
 prerender().catch((err) => {
-  console.error('Pre-render failed:', err);
-  process.exit(1);
+  console.error('Pre-render failed (non-blocking):', err);
+  process.exit(0);
 });

@@ -14,7 +14,13 @@ interface SEOHeadProps {
 function setMeta(nameOrProperty: string, content: string) {
   const isOg = nameOrProperty.startsWith('og:') || nameOrProperty.startsWith('twitter:');
   const attr = isOg ? 'property' : 'name';
+  // First try to find an existing data-seo tag
   let el = document.querySelector(`meta[${attr}="${nameOrProperty}"][data-seo="true"]`) as HTMLMetaElement | null;
+  // Then try to reuse a static tag from index.html (no data-seo)
+  if (!el) {
+    el = document.querySelector(`meta[${attr}="${nameOrProperty}"]:not([data-seo])`) as HTMLMetaElement | null;
+    if (el) el.setAttribute('data-seo', 'true');
+  }
   if (!el) {
     el = document.createElement('meta');
     el.setAttribute(attr, nameOrProperty);
@@ -28,7 +34,13 @@ function setLink(rel: string, href: string, attrs?: Record<string, string>) {
   const extraSelector = attrs
     ? Object.entries(attrs).map(([k, v]) => `[${k}="${v}"]`).join('')
     : '';
+  // First try to find an existing data-seo tag
   let el = document.querySelector(`link[rel="${rel}"]${extraSelector}[data-seo="true"]`) as HTMLLinkElement | null;
+  // Then try to reuse a static tag from index.html (no data-seo)
+  if (!el) {
+    el = document.querySelector(`link[rel="${rel}"]${extraSelector}:not([data-seo])`) as HTMLLinkElement | null;
+    if (el) el.setAttribute('data-seo', 'true');
+  }
   if (!el) {
     el = document.createElement('link');
     el.rel = rel;

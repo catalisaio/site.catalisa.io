@@ -28,6 +28,7 @@ export function FinalCTA() {
             as="a"
             href={WHATSAPP_URL}
             target="_blank"
+            rel="noopener noreferrer"
             size="lg"
             bg="white"
             color="brand.600"

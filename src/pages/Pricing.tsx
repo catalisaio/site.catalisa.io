@@ -125,6 +125,7 @@ export function Pricing() {
                   as="a"
                   href={WHATSAPP_URL}
                   target="_blank"
+                  rel="noopener noreferrer"
                   size="lg"
                   bg={plan.highlighted ? 'brand.500' : 'gray.100'}
                   color={plan.highlighted ? 'white' : 'gray.800'}

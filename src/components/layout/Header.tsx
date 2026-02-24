@@ -465,6 +465,7 @@ export function Header() {
               as="a"
               href={WHATSAPP_URL}
               target="_blank"
+              rel="noopener noreferrer"
               size="sm"
               bg="whatsapp.500"
               color="white"
@@ -644,6 +645,7 @@ export function Header() {
                     as="a"
                     href={WHATSAPP_URL}
                     target="_blank"
+                    rel="noopener noreferrer"
                     w="full"
                     bg="whatsapp.500"
                     color="white"

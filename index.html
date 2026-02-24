@@ -4,10 +4,28 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/brand/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/brand/favicons/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="/brand/favicons/favicon-192x192.png" />
+    <link rel="manifest" href="/manifest.json" />
     <meta name="theme-color" content="#734B9C" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Automatize WhatsApp com IA para sua fintech. Plataforma multi-tenant com agentes de IA, workflows visuais e 150+ building blocks." />
     <title>Catalisa - Automatize WhatsApp com IA</title>
+
+    <!-- Static OG tags (fallback for bots that don't execute JS) -->
+    <link rel="canonical" href="https://catalisa.io/" />
+    <meta property="og:title" content="Catalisa - Automatize WhatsApp com IA" />
+    <meta property="og:description" content="Automatize WhatsApp com IA para sua fintech. Plataforma multi-tenant com agentes de IA, workflows visuais e 150+ building blocks." />
+    <meta property="og:image" content="https://catalisa.io/og/default.png" />
+    <meta property="og:url" content="https://catalisa.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Catalisa" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Catalisa - Automatize WhatsApp com IA" />
+    <meta name="twitter:description" content="Automatize WhatsApp com IA para sua fintech. Plataforma multi-tenant com agentes de IA, workflows visuais e 150+ building blocks." />
+    <meta name="twitter:image" content="https://catalisa.io/og/default.png" />
 
     <!-- Consent Mode v2 defaults (LGPD) - MUST be before GTM -->
     <script>
@@ -29,10 +47,12 @@
     })(window,document,'script','dataLayer','GT-5TW4R7FV');</script>
     <!-- End Google Tag Manager -->
 
-    <!-- Font preloading -->
+    <!-- Font loading (non-render-blocking) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->

@@ -238,6 +238,7 @@ export function WhatsAppIntegration() {
             as="a"
             href={WHATSAPP_URL}
             target="_blank"
+            rel="noopener noreferrer"
             size="lg"
             bg="whatsapp.500"
             color="white"

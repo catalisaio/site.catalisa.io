@@ -60,11 +60,11 @@ export function S16_CTA() {
 
         <MotionBox initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.6 }}>
           <HStack spacing={6} color={c.textSubtle} fontSize="sm">
-            <HStack as="a" href="https://catalisa.io" target="_blank" spacing={1} _hover={{ color: c.textSecondary }}>
+            <HStack as="a" href="https://catalisa.io" target="_blank" rel="noopener noreferrer" spacing={1} _hover={{ color: c.textSecondary }}>
               <FiExternalLink />
               <Text>catalisa.io</Text>
             </HStack>
-            <HStack as="a" href="https://linkedin.com/company/catalisa" target="_blank" spacing={1} _hover={{ color: c.textSecondary }}>
+            <HStack as="a" href="https://linkedin.com/company/catalisa" target="_blank" rel="noopener noreferrer" spacing={1} _hover={{ color: c.textSecondary }}>
               <FiExternalLink />
               <Text>LinkedIn</Text>
             </HStack>

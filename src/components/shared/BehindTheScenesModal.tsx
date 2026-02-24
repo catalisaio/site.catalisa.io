@@ -52,6 +52,7 @@ export function BehindTheScenesModal({ isOpen, onClose }: BehindTheScenesModalPr
             as="a"
             href={WHATSAPP_URL}
             target="_blank"
+            rel="noopener noreferrer"
             size="md"
             bg="whatsapp.500"
             color="white"

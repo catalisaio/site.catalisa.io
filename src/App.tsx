@@ -1,5 +1,5 @@
 import { lazy, Suspense, useEffect } from 'react';
-import { BrowserRouter, Routes, Route, Navigate, Outlet } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
 import { ChakraProvider, Spinner, Flex } from '@chakra-ui/react';
 import { theme } from './theme';
 import { PageLayout } from './components/layout/PageLayout';
@@ -28,6 +28,7 @@ const Pricing = lazy(() => import('./pages/Pricing').then(m => ({ default: m.Pri
 const HowItWorksPage = lazy(() => import('./pages/HowItWorks').then(m => ({ default: m.HowItWorks })));
 const WhatsAppIntegration = lazy(() => import('./pages/WhatsAppIntegration').then(m => ({ default: m.WhatsAppIntegration })));
 const CommercialPresentation = lazy(() => import('./pages/CommercialPresentation').then(m => ({ default: m.CommercialPresentation })));
+const NotFound = lazy(() => import('./pages/NotFound').then(m => ({ default: m.NotFound })));
 
 function PageLoader() {
   return (
@@ -127,7 +128,7 @@ function App() {
               </Route>
 
               {/* Catch-all */}
-              <Route path="*" element={<Navigate to="/" replace />} />
+              <Route path="*" element={<NotFound />} />
             </Route>
           </Routes>
         </Suspense>

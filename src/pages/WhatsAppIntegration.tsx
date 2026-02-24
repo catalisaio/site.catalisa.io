@@ -3,7 +3,7 @@ import {
   Table, Thead, Tbody, Tr, Th, Td, Badge,
   Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel,
 } from '@chakra-ui/react';
-import { FiMessageCircle, FiShield, FiZap, FiCheck, FiX } from 'react-icons/fi';
+import { FiMessageCircle, FiShield, FiZap, FiCheck } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
 import { SectionWrapper } from '../components/shared/SectionWrapper';
 import { GradientText } from '../components/shared/GradientText';

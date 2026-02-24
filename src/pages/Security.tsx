@@ -1,7 +1,7 @@
 import {
-  Box, Container, Heading, Text, VStack, SimpleGrid, HStack, Icon, Divider,
+  Box, Container, Heading, Text, VStack, SimpleGrid, HStack, Icon,
 } from '@chakra-ui/react';
-import { FiShield, FiLock, FiGlobe, FiUsers, FiKey, FiDatabase, FiServer, FiCheckCircle } from 'react-icons/fi';
+import { FiShield, FiLock, FiUsers, FiKey, FiDatabase, FiServer, FiCheckCircle } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
 import { SectionWrapper } from '../components/shared/SectionWrapper';
 import { GradientText } from '../components/shared/GradientText';

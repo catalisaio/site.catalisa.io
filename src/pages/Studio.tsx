@@ -385,7 +385,6 @@ export function Studio() {
                     w="100%"
                     h="auto"
                     mt={{ base: '-50px', md: '-70px', lg: '-90px' }}
-                    loading="lazy"
                   />
                 </Box>
               </BrowserFrame>

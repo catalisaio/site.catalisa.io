@@ -35,7 +35,7 @@
     "headingHighlight": "Four pillars.",
     "subtitle": "From first contact to closing — everything connected, automated and intelligent.",
     "steps": [
-      { "label": "Connect", "title": "WhatsApp", "description": "Multi-tenant, multi-device. QR Code or Cloud API." },
+      { "label": "Connect", "title": "WhatsApp", "description": "Multi-tenant, multi-device. Official Cloud API or QR Code." },
       { "label": "Automate", "title": "Workflows", "description": "Visual drag & drop. 150+ composable building blocks." },
       { "label": "Intelligence", "title": "AI Agents", "description": "Specialized agents with selective tools." },
       { "label": "Results", "title": "CRM & Analytics", "description": "Lead pipeline, metrics and complete history." }
@@ -45,7 +45,7 @@
     "heading": "How it works",
     "subtitle": "Three steps to automate your WhatsApp with artificial intelligence.",
     "steps": [
-      { "title": "Connect your WhatsApp", "description": "QR Code for Baileys or Meta's Cloud API. Setup in 2 minutes. Multi-device supported." },
+      { "title": "Connect your WhatsApp", "description": "Meta's official Cloud API or instant QR Code. Setup in 2 minutes. Multi-device supported." },
       { "title": "Build your visual workflow", "description": "Drag building blocks onto the canvas. Connect triggers to blocks. Configure each one without code." },
       { "title": "Activate and scale", "description": "AI takes over operations. You monitor results. Scale from 1 to 1,000 conversations without hiring." }
     ]
@@ -54,7 +54,7 @@
     "heading": "Everything you need.",
     "headingHighlight": "Nothing you don't.",
     "items": [
-      { "title": "Multi-Agent WhatsApp", "description": "Connect multiple numbers. Baileys + Cloud API. Each agent with its own context and history." },
+      { "title": "Multi-Agent WhatsApp", "description": "Connect multiple numbers. Official Cloud API + QR Code. Each agent with its own context and history." },
       { "title": "AI Agents", "description": "Create specialized agents with custom prompts and selective tools. Marketplace with 10+ templates." },
       { "title": "Visual Workflows", "description": "Build automations with drag & drop. DAG with parallel execution. Native A/B testing." },
       { "title": "Building Blocks", "description": "150+ building blocks: AI, fintech, CRM, security, integrations and more. Combine as you wish." },
@@ -83,7 +83,7 @@
     "items": [
       { "vs": "vs n8n / Make", "title": "Native AI, not plugins", "description": "AI agents, sentiment analysis, OCR and text generation are native building blocks — no plugins or external API setup." },
       { "vs": "vs Intercom / WATI", "title": "Composable blocks, not chatbot", "description": "Not a chatbot with fixed menus. 150+ building blocks you freely combine to create custom automations." },
-      { "vs": "vs Zapier / Pipedream", "title": "Native WhatsApp + embedded AI", "description": "Direct WhatsApp connection (Baileys + Cloud API), AI agents with real tools, integrated CRM — all in one platform." },
+      { "vs": "vs Zapier / Pipedream", "title": "Native WhatsApp + embedded AI", "description": "Official WhatsApp connection (Cloud API + QR Code), AI agents with real tools, integrated CRM — all in one platform." },
       { "vs": "vs Internal development", "title": "150+ building blocks. Months of savings.", "description": "From fintech to CRM, security to calendar — ready-made, tested building blocks. Focus on your business, not infrastructure." }
     ]
   },

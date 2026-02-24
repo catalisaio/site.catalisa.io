@@ -15,11 +15,6 @@ export function AnimatedCounter({ target, duration = 2000, prefix = '', suffix =
   const ref = useRef<HTMLParagraphElement>(null);
 
   useEffect(() => {
-    // On client hydration, reset to 0 to prepare for scroll-triggered animation
-    setCount(0);
-  }, []);
-
-  useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting && !hasAnimated) {

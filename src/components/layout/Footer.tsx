@@ -42,6 +42,8 @@ export function Footer() {
       title: t('footer.sections.company'),
       links: [
         { label: t('footer.links.about'), to: lp('/') },
+        { label: t('footer.links.howItWorks'), to: lp('/como-funciona') },
+        { label: t('footer.links.whatsappIntegration'), to: lp('/integracoes/whatsapp') },
         { label: t('footer.links.useCases'), to: lp('/use-cases') },
         { label: t('footer.links.demo'), to: lp('/demo') },
         { label: t('footer.links.contact'), to: lp('/contato') },

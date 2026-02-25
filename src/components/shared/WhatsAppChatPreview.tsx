@@ -37,10 +37,13 @@ export function WhatsAppChatPreview({ messages, title, triggerMode = 'inView' }:
   return (
     <Box
       maxW="360px"
+      h="440px"
       borderRadius="2xl"
       overflow="hidden"
       boxShadow="2xl"
       bg="#0B141A"
+      display="flex"
+      flexDirection="column"
     >
       {/* Header */}
       <Flex
@@ -63,8 +66,9 @@ export function WhatsAppChatPreview({ messages, title, triggerMode = 'inView' }:
       <VStack
         spacing={2}
         p={3}
-        minH="280px"
+        flex={1}
         align="stretch"
+        overflow="hidden"
         bg="#0B141A"
         sx={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg width='400' height='400' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='p' width='40' height='40' patternUnits='userSpaceOnUse'%3E%3Ccircle cx='20' cy='20' r='1' fill='rgba(255,255,255,0.03)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='400' height='400' fill='url(%23p)'/%3E%3C/svg%3E\")" }}
       >

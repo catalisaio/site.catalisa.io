@@ -194,15 +194,15 @@ export function PlaybookDetail() {
             {/* Left: text content */}
             <Box flex={1} minW={0}>
               <MotionBox initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-                <HStack spacing={5} mb={6}>
+                <HStack spacing={{ base: 3, md: 5 }} mb={6}>
                   <Flex
-                    w="72px" h="72px" borderRadius="full"
+                    w={{ base: '52px', md: '72px' }} h={{ base: '52px', md: '72px' }} borderRadius="full"
                     bg={`${catMeta.color}.50`}
                     border="1px solid" borderColor={`${catMeta.color}.200`}
                     boxShadow={`0 0 40px var(--chakra-colors-${catMeta.color}-200)`}
                     align="center" justify="center" flexShrink={0}
                   >
-                    <Box as={Icon} color={`${catMeta.color}.500`} boxSize="34px" />
+                    <Box as={Icon} color={`${catMeta.color}.500`} boxSize={{ base: '24px', md: '34px' }} />
                   </Flex>
                   <VStack align="flex-start" spacing={1}>
                     <Heading
@@ -226,23 +226,25 @@ export function PlaybookDetail() {
                 </Text>
               </MotionBox>
 
-              <HStack spacing={4} mt={8}>
+              <Flex direction={{ base: 'column', sm: 'row' }} gap={3} mt={8}>
                 <Button
                   as="a" href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer"
-                  size="lg" bgGradient="linear(to-r, brand.500, brand.600)" color="white"
+                  size={{ base: 'md', md: 'lg' }} bgGradient="linear(to-r, brand.500, brand.600)" color="white"
                   _hover={{ transform: 'translateY(-2px)', boxShadow: '0 8px 30px rgba(115, 75, 156, 0.4)' }}
                   leftIcon={<FiMessageCircle />} transition="all 0.2s"
+                  w={{ base: 'full', sm: 'auto' }}
                 >
                   {t('detail.cta')}
                 </Button>
                 <Button
                   as="a" href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer"
-                  size="lg" variant="outline" borderColor="gray.300" color="gray.700"
+                  size={{ base: 'md', md: 'lg' }} variant="outline" borderColor="gray.300" color="gray.700"
                   _hover={{ bg: 'gray.50' }}
+                  w={{ base: 'full', sm: 'auto' }}
                 >
                   {t('detail.ctaSecondary')}
                 </Button>
-              </HStack>
+              </Flex>
 
               {/* Trust indicators */}
               <HStack spacing={5} mt={6} flexWrap="wrap">
@@ -264,10 +266,10 @@ export function PlaybookDetail() {
             </Box>
 
             {/* Right: showcase with tabs (workflow / blocks) */}
-            <Box flex={1} minW={0} maxW={{ base: '100%', lg: '520px' }} display={{ base: 'none', lg: 'block' }}>
+            <Box flex={1} minW={0} maxW={{ base: '100%', lg: '520px' }} w="full">
               <Flex direction="column" gap={4} w="full">
                 {/* Panel content */}
-                <Box h="480px" display="flex" alignItems="center" justifyContent="center" overflow="hidden">
+                <Box minH={{ base: '340px', lg: '480px' }} display="flex" alignItems="center" justifyContent="center">
                   <AnimatePresence mode="wait">
                     <motion.div
                       key={heroTab}
@@ -280,9 +282,9 @@ export function PlaybookDetail() {
                       {heroTab === 1 && (
                         /* ── Workflow panel ── */
                         <Box
-                          bg="gray.50" borderRadius="2xl" p={6}
+                          bg="gray.50" borderRadius="2xl" p={{ base: 4, md: 6 }}
                           border="1px solid" borderColor="gray.100" w="full"
-                          maxH="460px" overflowY="auto"
+                          maxH={{ base: '340px', lg: '460px' }} overflowY="auto"
                           sx={{ '&::-webkit-scrollbar': { width: '4px' }, '&::-webkit-scrollbar-thumb': { bg: 'gray.200', borderRadius: 'full' } }}
                         >
                           <VStack spacing={0} align="stretch">
@@ -331,7 +333,12 @@ export function PlaybookDetail() {
                       )}
                       {heroTab === 0 && (
                         /* ── Blocks diagram panel ── */
-                        <Box position="relative" w={`${DG.w}px`} h={`${DG.h}px`}>
+                        <Box
+                          position="relative" w={`${DG.w}px`} h={`${DG.h}px`}
+                          transform={{ base: 'scale(0.58)', sm: 'scale(0.7)', md: 'scale(0.85)', lg: 'scale(1)' }}
+                          transformOrigin="center center"
+                          flexShrink={0}
+                        >
                           <motion.svg
                             viewBox={`0 0 ${DG.w} ${DG.h}`}
                             style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', pointerEvents: 'none' }}
@@ -399,7 +406,7 @@ export function PlaybookDetail() {
                       )}
                       {heroTab === 2 && (
                         /* ── Chat / API panel ── */
-                        <Box w="full" maxW="380px">
+                        <Box w="full" maxW={{ base: '100%', md: '380px' }}>
                           {isApp ? (
                             <APIPreview
                               triggerMode="auto"
@@ -420,7 +427,7 @@ export function PlaybookDetail() {
                 </Box>
 
                 {/* Tab indicator buttons */}
-                <HStack spacing={2} justify="center">
+                <HStack spacing={{ base: 1, md: 2 }} justify="center">
                   {[
                     { id: 'blocks', label: t('detail.blocksUsed'), icon: FiLayers, color: `${catMeta.color}.400` },
                     { id: 'workflow', label: t('detail.workflow'), icon: FiGitBranch, color: `${catMeta.color}.400` },
@@ -433,7 +440,7 @@ export function PlaybookDetail() {
                         key={tab.id}
                         as="button"
                         onClick={() => handleHeroTabChange(i)}
-                        px={3} py={2}
+                        px={{ base: 2.5, md: 3 }} py={2}
                         borderRadius="full"
                         bg={isActive ? 'gray.100' : 'transparent'}
                         border="1px solid"
@@ -448,6 +455,7 @@ export function PlaybookDetail() {
                           <Text
                             color={isActive ? 'gray.700' : 'gray.400'}
                             fontSize="xs" fontWeight={isActive ? '600' : '400'}
+                            display={{ base: 'none', sm: 'block' }}
                           >
                             {tab.label}
                           </Text>
@@ -470,66 +478,6 @@ export function PlaybookDetail() {
             </Box>
           </Flex>
 
-          {/* Mobile: stacked workflow + blocks grid */}
-          <Box display={{ base: 'block', lg: 'none' }} mt={10}>
-            <Text fontSize="xs" fontWeight="700" color="gray.400" textTransform="uppercase" letterSpacing="wider" mb={4}>
-              {t('detail.workflow')}
-            </Text>
-            <VStack spacing={0} align="stretch" mb={8}>
-              {playbook.workflowSteps.map((step, i) => {
-                const clr = categoryBadges[step.category]?.color || 'gray';
-                const SIcon = stepIconMap[step.category];
-                return (
-                  <HStack key={i} spacing={4} align="flex-start">
-                    <VStack spacing={0} align="center" flexShrink={0} w="36px">
-                      <Flex
-                        w="36px" h="36px" borderRadius="full"
-                        bg={`${clr}.50`} border="2px solid" borderColor={`${clr}.100`}
-                        align="center" justify="center"
-                      >
-                        {SIcon
-                          ? <Box as={SIcon} color={`${clr}.500`} boxSize="16px" />
-                          : <Text fontWeight="800" fontSize="xs" color={`${clr}.500`}>{i + 1}</Text>
-                        }
-                      </Flex>
-                      {i < playbook.workflowSteps.length - 1 && (
-                        <Box h="16px" borderLeft="2px dashed" borderColor="gray.200" />
-                      )}
-                    </VStack>
-                    <Box flex={1} pt="4px" pb={i < playbook.workflowSteps.length - 1 ? 1 : 0}>
-                      <Badge
-                        bg={`${clr}.50`} color={`${clr}.600`} fontSize="2xs" borderRadius="full" px={2} mb={1}
-                      >
-                        {step.category}
-                      </Badge>
-                      <Text fontSize="sm" color="gray.700" lineHeight="1.4">{t(step.labelKey)}</Text>
-                    </Box>
-                  </HStack>
-                );
-              })}
-            </VStack>
-
-            <Text fontSize="xs" fontWeight="700" color="gray.400" textTransform="uppercase" letterSpacing="wider" mb={4}>
-              {t('detail.blocksUsed')}
-            </Text>
-            <SimpleGrid columns={2} spacing={3} maxW="300px">
-              {playbook.blocks.map((block) => {
-                const meta = blockMeta[block] || { icon: FiGlobe, color: 'gray' };
-                const BlkIcon = meta.icon;
-                return (
-                  <VStack
-                    key={block} spacing={1} p={3} borderRadius="xl" bg="gray.50"
-                    border="1px solid" borderColor="gray.100" textAlign="center"
-                  >
-                    <Flex w="28px" h="28px" borderRadius="md" bg={`${meta.color}.50`} align="center" justify="center">
-                      <Box as={BlkIcon} color={`${meta.color}.500`} boxSize="14px" />
-                    </Flex>
-                    <Text fontSize="2xs" fontWeight="600" color="gray.700">{block}</Text>
-                  </VStack>
-                );
-              })}
-            </SimpleGrid>
-          </Box>
         </Container>
       </Box>
 
@@ -557,7 +505,7 @@ export function PlaybookDetail() {
                 {before.map((item) => (
                   <Flex key={item.metric} justify="space-between" w="full" align="baseline">
                     <Text fontSize="sm" color="gray.600">{item.metric}</Text>
-                    <Text fontWeight="800" fontSize="2xl" color="red.600">{item.value}</Text>
+                    <Text fontWeight="800" fontSize={{ base: 'lg', md: '2xl' }} color="red.600">{item.value}</Text>
                   </Flex>
                 ))}
               </VStack>
@@ -591,7 +539,7 @@ export function PlaybookDetail() {
                 {after.map((item) => (
                   <Flex key={item.metric} justify="space-between" w="full" align="baseline">
                     <Text fontSize="sm" color="gray.600">{item.metric}</Text>
-                    <Text fontWeight="800" fontSize="2xl" color="green.600">{item.value}</Text>
+                    <Text fontWeight="800" fontSize={{ base: 'lg', md: '2xl' }} color="green.600">{item.value}</Text>
                   </Flex>
                 ))}
               </VStack>

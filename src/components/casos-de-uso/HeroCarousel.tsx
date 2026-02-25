@@ -80,7 +80,12 @@ function BlocksDiagramPreview({ playbookId }: { playbookId: string }) {
   if (!pb || !catMeta) return null;
 
   return (
-    <Box position="relative" w={`${DG.w}px`} h={`${DG.h}px`}>
+    <Box
+      position="relative" w={`${DG.w}px`} h={`${DG.h}px`}
+      transform={{ base: 'scale(0.6)', sm: 'scale(0.72)', md: 'scale(0.85)', lg: 'scale(1)' }}
+      transformOrigin="center center"
+      flexShrink={0}
+    >
       {/* SVG connecting lines */}
       <motion.svg
         viewBox={`0 0 ${DG.w} ${DG.h}`}
@@ -333,8 +338,8 @@ export function HeroCarousel() {
             </AnimatePresence>
           </Box>
 
-          {/* Right: preview (desktop only) */}
-          <Box flex={1} minW={0} maxW={{ base: '100%', lg: '400px' }} display={{ base: 'none', lg: 'block' }}>
+          {/* Right: preview */}
+          <Box flex={1} minW={0} maxW={{ base: '100%', lg: '400px' }} w="full">
             <AnimatePresence mode="wait">
               <motion.div
                 key={slide.id}
@@ -380,6 +385,7 @@ export function HeroCarousel() {
                     fontSize="2xs"
                     fontWeight={isActive ? '600' : '400'}
                     noOfLines={1}
+                    display={{ base: 'none', sm: 'block' }}
                   >
                     {s.headline.split(' ').slice(0, 2).join(' ')}
                   </Text>

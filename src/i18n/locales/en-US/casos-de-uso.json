@@ -1,0 +1,71 @@
+{
+  "hero": {
+    "badge": "USE CASES (Playbooks)",
+    "slides": [
+      {
+        "id": "sdr-automatizado",
+        "headline": "Automated SDR that Qualifies and Books",
+        "description": "AI agent on WhatsApp that qualifies leads, answers questions and books meetings — 24/7, no human intervention.",
+        "preview": "whatsapp"
+      },
+      {
+        "id": "app-originacao-credito",
+        "headline": "Complete Credit Origination App",
+        "description": "Enterprise backend with decision engine, scoring, integrated KYC and partner API. Deploy in minutes.",
+        "preview": "api"
+      },
+      {
+        "id": "onboarding-kyc",
+        "headline": "Digital KYC Onboarding in Minutes",
+        "description": "Complete identity verification flow with OCR, liveness and regulatory checks — all via WhatsApp.",
+        "preview": "workflow"
+      },
+      {
+        "id": "cobranca-inteligente",
+        "headline": "Smart Multichannel Collections",
+        "description": "AI agent that negotiates debts, sends invoices and Pix, with automatic escalation and empathetic tone.",
+        "preview": "whatsapp"
+      },
+      {
+        "id": "app-portal-cliente",
+        "headline": "Self-Service Customer Portal",
+        "description": "Complete app with authentication, statements, payments and support — ready to integrate into your operation.",
+        "preview": "api"
+      }
+    ]
+  },
+  "catalog": {
+    "heading": "All Playbooks",
+    "subtitle": "Explore our complete catalog of ready-to-use automations."
+  },
+  "byIndustry": {
+    "heading": "By industry",
+    "subtitle": "Specialized solutions for your segment"
+  },
+  "industryCards": [
+    { "label": "Fintech", "desc": "Origination, KYC, collections, credit simulation", "path": "/fintech" },
+    { "label": "Banking", "desc": "Digital account, conversational Pix, Open Finance", "path": "/banking" },
+    { "label": "Insurance", "desc": "Claims, quotes, renewal, digital inspection", "path": "/insurance" },
+    { "label": "Retail", "desc": "Customer service, digital menu, post-sale", "path": "/retail" },
+    { "label": "Startups", "desc": "Automated SDR, onboarding, tech support", "path": "/startups" }
+  ],
+  "roi": {
+    "heading": "How much do you save?",
+    "subtitle": "Select your scenario, enter the daily interaction volume and see the projected savings by automating with AI agents.",
+    "calculatorTitle": "Calculate your savings",
+    "interactionsLabel": "Interactions per day",
+    "manualLabel": "Manual",
+    "withAILabel": "With AI",
+    "savingsLabel": "Savings",
+    "scenarios": {
+      "sdr": "Lead qualification",
+      "support": "Customer service",
+      "realestate": "Real estate service"
+    }
+  },
+  "cta": {
+    "heading": "Didn't find your scenario?",
+    "subtitle": "Talk to our team and we'll build the ideal automation for your business.",
+    "button": "Let's talk"
+  }
+}

@@ -36,8 +36,9 @@ export function WhatsAppChatPreview({ messages, title, triggerMode = 'inView' }:
 
   return (
     <Box
-      maxW="360px"
-      h="440px"
+      w="full"
+      maxW={{ base: '100%', md: '360px' }}
+      h={{ base: '340px', md: '440px' }}
       borderRadius="2xl"
       overflow="hidden"
       boxShadow="2xl"

@@ -191,15 +191,6 @@ export const routes: RouteDefinition[] = [
     breadcrumbCategory: 'platform',
   },
   {
-    ptPath: '/precos',
-    enPath: '/en/pricing',
-    pageKey: 'pricing',
-    priority: 0.8,
-    changefreq: 'monthly',
-    schemas: ['Organization', 'BreadcrumbList', 'FAQPage'],
-    ogImage: '/og/default.png',
-  },
-  {
     ptPath: '/como-funciona',
     enPath: '/en/how-it-works',
     pageKey: 'howItWorks',

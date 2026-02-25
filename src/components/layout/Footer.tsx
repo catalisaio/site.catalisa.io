@@ -42,7 +42,6 @@ export function Footer() {
       title: t('footer.sections.company'),
       links: [
         { label: t('footer.links.playbooks'), to: lp('/playbooks') },
-        { label: t('footer.links.pricing'), to: lp('/precos') },
         { label: t('footer.links.howItWorks'), to: lp('/como-funciona') },
         { label: t('footer.links.whatsappIntegration'), to: lp('/integracoes/whatsapp') },
         { label: t('footer.links.useCases'), to: lp('/use-cases') },

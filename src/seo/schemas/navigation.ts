@@ -18,11 +18,6 @@ export function getSiteNavigationSchema() {
       },
       {
         '@type': 'WebPage',
-        name: 'Pricing',
-        url: `${BASE_URL}/precos`,
-      },
-      {
-        '@type': 'WebPage',
         name: 'Building Blocks',
         url: `${BASE_URL}/building-blocks`,
       },

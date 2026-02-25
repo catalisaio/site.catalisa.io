@@ -587,8 +587,28 @@
       "workflows": "Automacoes",
       "seguros": "Seguros",
       "agents": "Agentes IA",
-      "previdencia": "Previdencia"
-    }
+      "previdencia": "Previdencia",
+      "appCredito": "App Credito",
+      "appKyc": "App KYC"
+    },
+    "appCreditTitle": "API Originacao",
+    "appCreditMessages": [
+      { "text": "POST /api/v1/credit/analyze", "sent": true, "delay": 0.2 },
+      { "text": "{\n  \"cpf\": \"***.***.***-12\",\n  \"valor\": 25000,\n  \"prazo\": 36\n}", "sent": true, "delay": 0.6 },
+      { "text": "200 OK", "sent": false, "delay": 1.2 },
+      { "text": "{\n  \"score\": 782,\n  \"risco\": \"baixo\",\n  \"limite\": 30000,\n  \"taxa\": \"1.49%\"\n}", "sent": false, "delay": 1.6 },
+      { "text": "POST /api/v1/credit/approve", "sent": true, "delay": 2.2 },
+      { "text": "201 Created — Contrato gerado", "sent": false, "delay": 2.8 }
+    ],
+    "appKycTitle": "API Verificacao",
+    "appKycMessages": [
+      { "text": "POST /api/v1/kyc/verify", "sent": true, "delay": 0.2 },
+      { "text": "{\n  \"documento\": \"RG\",\n  \"selfie\": true,\n  \"bureau\": \"serasa\"\n}", "sent": true, "delay": 0.6 },
+      { "text": "200 OK", "sent": false, "delay": 1.2 },
+      { "text": "{\n  \"facematch\": 98.7,\n  \"documento\": \"valido\",\n  \"pep\": false,\n  \"status\": \"aprovado\"\n}", "sent": false, "delay": 1.6 },
+      { "text": "GET /api/v1/kyc/audit/trail", "sent": true, "delay": 2.2 },
+      { "text": "200 OK — 4 eventos registrados", "sent": false, "delay": 2.8 }
+    ]
   },
   "appBuilderShowcase": {
     "badge": "APPS & BACKENDS",

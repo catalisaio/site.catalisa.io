@@ -1,7 +1,7 @@
-import { HStack, Button, Select, Input, InputGroup, InputLeftElement, Icon, Flex, Box } from '@chakra-ui/react';
-import { FiSearch } from 'react-icons/fi';
+import { HStack, Button, Select, Input, InputGroup, InputLeftElement, Icon, Flex, Box, Text, VStack } from '@chakra-ui/react';
+import { FiSearch, FiCpu, FiServer, FiGrid } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
-import type { PlaybookCategory, PlaybookIndustry } from '../../data/playbooks';
+import type { PlaybookCategory, PlaybookIndustry, PlaybookType } from '../../data/playbooks';
 
 interface PlaybookFiltersProps {
   search: string;
@@ -10,6 +10,8 @@ interface PlaybookFiltersProps {
   onCategoryChange: (cat: PlaybookCategory | 'all') => void;
   industry: PlaybookIndustry | 'all';
   onIndustryChange: (ind: PlaybookIndustry | 'all') => void;
+  type: PlaybookType | 'all';
+  onTypeChange: (type: PlaybookType | 'all') => void;
 }
 
 const categories: (PlaybookCategory | 'all')[] = [
@@ -20,6 +22,12 @@ const industries: (PlaybookIndustry | 'all')[] = [
   'all', 'geral', 'fintech', 'banking', 'insurance', 'retail', 'saas', 'saude', 'educacao', 'imobiliario', 'ecommerce',
 ];
 
+const typeConfig = [
+  { key: 'all' as const, icon: FiGrid, color: 'brand', gradient: 'linear(to-r, brand.400, orange.400)' },
+  { key: 'agent' as const, icon: FiCpu, color: 'brand', gradient: 'linear(to-r, brand.400, brand.500)' },
+  { key: 'app' as const, icon: FiServer, color: 'orange', gradient: 'linear(to-r, orange.400, orange.500)' },
+];
+
 export function PlaybookFilters({
   search,
   onSearchChange,
@@ -27,13 +35,77 @@ export function PlaybookFilters({
   onCategoryChange,
   industry,
   onIndustryChange,
+  type,
+  onTypeChange,
 }: PlaybookFiltersProps) {
   const { t } = useTranslation('playbooks');
 
   return (
-    <Box mb={8}>
+    <VStack spacing={6} mb={8}>
+      {/* Type toggle — prominent */}
+      <Flex
+        justify="center"
+        gap={3}
+        flexWrap="wrap"
+      >
+        {typeConfig.map(({ key, icon: TypeIcon, color, gradient }) => {
+          const isActive = type === key;
+          return (
+            <Box
+              key={key}
+              as="button"
+              onClick={() => onTypeChange(key)}
+              display="flex"
+              alignItems="center"
+              gap={2.5}
+              px={5}
+              py={3}
+              borderRadius="xl"
+              bg={isActive ? `${color}.50` : 'white'}
+              border="2px solid"
+              borderColor={isActive ? `${color}.400` : 'gray.200'}
+              color={isActive ? `${color}.700` : 'gray.500'}
+              cursor="pointer"
+              transition="all 0.2s"
+              _hover={{
+                borderColor: `${color}.300`,
+                bg: `${color}.50`,
+                transform: 'translateY(-1px)',
+                boxShadow: 'md',
+              }}
+              position="relative"
+              overflow="hidden"
+            >
+              {isActive && (
+                <Box
+                  position="absolute"
+                  top={0}
+                  left={0}
+                  right={0}
+                  h="3px"
+                  bgGradient={gradient}
+                />
+              )}
+              <Box
+                p={1.5}
+                borderRadius="lg"
+                bg={isActive ? `${color}.100` : 'gray.100'}
+              >
+                <Icon as={TypeIcon} boxSize={4} color={isActive ? `${color}.500` : 'gray.400'} />
+              </Box>
+              <Text
+                fontWeight={isActive ? '700' : '500'}
+                fontSize="sm"
+              >
+                {t(`types.${key}`)}
+              </Text>
+            </Box>
+          );
+        })}
+      </Flex>
+
       {/* Search bar */}
-      <InputGroup maxW="480px" mx="auto" mb={6}>
+      <InputGroup maxW="480px" mx="auto">
         <InputLeftElement pointerEvents="none">
           <Icon as={FiSearch} color="gray.400" />
         </InputLeftElement>
@@ -48,7 +120,7 @@ export function PlaybookFilters({
       </InputGroup>
 
       {/* Category pills */}
-      <Flex justify="center" mb={4} flexWrap="wrap" gap={2}>
+      <Flex justify="center" flexWrap="wrap" gap={2}>
         {categories.map((cat) => (
           <Button
             key={cat}
@@ -86,6 +158,6 @@ export function PlaybookFilters({
           ))}
         </Select>
       </HStack>
-    </Box>
+    </VStack>
   );
 }

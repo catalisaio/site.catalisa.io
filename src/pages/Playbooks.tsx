@@ -117,31 +117,6 @@ export function Playbooks() {
               ))}
             </HStack>
 
-            {/* Type toggle */}
-            <HStack justify="center" spacing={2} mb={6}>
-              {(['all', 'agent', 'app'] as const).map((key) => (
-                <Box
-                  key={key}
-                  as="button"
-                  onClick={() => setType(key)}
-                  px={4}
-                  py={2}
-                  borderRadius="full"
-                  bg={type === key ? 'whiteAlpha.200' : 'transparent'}
-                  border="1px solid"
-                  borderColor={type === key ? 'brand.400' : 'whiteAlpha.200'}
-                  color={type === key ? 'white' : 'whiteAlpha.600'}
-                  fontSize="sm"
-                  fontWeight={type === key ? '600' : '400'}
-                  cursor="pointer"
-                  transition="all 0.2s"
-                  _hover={{ bg: 'whiteAlpha.100', borderColor: 'brand.300' }}
-                >
-                  {t(`types.${key}`)}
-                </Box>
-              ))}
-            </HStack>
-
             {/* Search bar in hero */}
             <InputGroup maxW="520px" mx="auto">
               <InputLeftElement pointerEvents="none" h="full">
@@ -189,6 +164,8 @@ export function Playbooks() {
           onCategoryChange={setCategory}
           industry={industry}
           onIndustryChange={setIndustry}
+          type={type}
+          onTypeChange={setType}
         />
 
         {/* Result count */}

@@ -1,136 +1,88 @@
 import {
-  Box, Container, Heading, Text, VStack, SimpleGrid, HStack, Icon, Flex, Badge,
-  List, ListItem, ListIcon,
+  Box, SimpleGrid, HStack, Icon, Flex, Badge, VStack, Text, Heading,
 } from '@chakra-ui/react';
 import {
   FiCpu, FiMessageCircle, FiTool, FiDatabase, FiUsers, FiArrowRight,
-  FiCheck, FiMic, FiSmile, FiEdit3, FiGlobe, FiImage, FiFileText,
+  FiMic, FiSmile, FiEdit3, FiGlobe, FiImage, FiFileText,
   FiSearch, FiCalendar, FiGitBranch, FiSettings, FiSend, FiUserPlus,
   FiClipboard, FiBarChart2,
 } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
 import { SectionWrapper } from '../components/shared/SectionWrapper';
+import { PageHero } from '../components/shared/PageHero';
+import { SectionHeader } from '../components/shared/SectionHeader';
+import { PageCTA } from '../components/shared/PageCTA';
+import { FeatureComparisonTable } from '../components/shared/FeatureComparisonTable';
 import { MotionBox } from '../components/motion';
-import { GradientText } from '../components/shared/GradientText';
 import { agentTemplates } from '../data/useCases';
 import { FinalCTA } from '../components/sections/FinalCTA';
+import { useLocalizedPath } from '../i18n/useLocalizedPath';
 
 export function AIAgents() {
   const { t } = useTranslation('ai-agents');
-  const comparisonItems = [
-    {
-      type: t('comparison.items.0.type'),
-      description: t('comparison.items.0.description'),
-      capabilities: t('comparison.items.0.capabilities', { returnObjects: true }) as string[],
-      color: 'gray',
-      level: t('comparison.items.0.level'),
-    },
-    {
-      type: t('comparison.items.1.type'),
-      description: t('comparison.items.1.description'),
-      capabilities: t('comparison.items.1.capabilities', { returnObjects: true }) as string[],
-      color: 'brand',
-      level: t('comparison.items.1.level'),
-      highlight: true,
-    },
-    {
-      type: t('comparison.items.2.type'),
-      description: t('comparison.items.2.description'),
-      capabilities: t('comparison.items.2.capabilities', { returnObjects: true }) as string[],
-      color: 'purple',
-      level: t('comparison.items.2.level'),
-    },
+  const { t: tc } = useTranslation('common');
+  const lp = useLocalizedPath();
+
+  const comparisonTable = t('comparison.table', { returnObjects: true }) as {
+    columns: { label: string; highlighted?: boolean }[];
+    rows: { feature: string; values: string[] }[];
+  };
+
+  const howAgentsWork = [
+    { icon: FiEdit3, color: 'brand.500' },
+    { icon: FiTool, color: 'orange.500' },
+    { icon: FiMessageCircle, color: 'whatsapp.500' },
+    { icon: FiCpu, color: 'blue.500' },
   ];
 
   const aiCapabilities = [
-    { icon: FiSmile, label: t('aiCapabilities.items.0.label'), description: t('aiCapabilities.items.0.description') },
-    { icon: FiFileText, label: t('aiCapabilities.items.1.label'), description: t('aiCapabilities.items.1.description') },
-    { icon: FiDatabase, label: t('aiCapabilities.items.2.label'), description: t('aiCapabilities.items.2.description') },
-    { icon: FiEdit3, label: t('aiCapabilities.items.3.label'), description: t('aiCapabilities.items.3.description') },
-    { icon: FiGlobe, label: t('aiCapabilities.items.4.label'), description: t('aiCapabilities.items.4.description') },
-    { icon: FiTool, label: t('aiCapabilities.items.5.label'), description: t('aiCapabilities.items.5.description') },
-    { icon: FiImage, label: t('aiCapabilities.items.6.label'), description: t('aiCapabilities.items.6.description') },
-    { icon: FiMic, label: t('aiCapabilities.items.7.label'), description: t('aiCapabilities.items.7.description') },
+    { icon: FiSmile }, { icon: FiFileText }, { icon: FiDatabase }, { icon: FiEdit3 },
+    { icon: FiGlobe }, { icon: FiTool }, { icon: FiImage }, { icon: FiMic },
   ];
+
+  const toolIcons = [
+    FiSearch, FiUserPlus, FiMessageCircle, FiCalendar, FiGitBranch, FiCpu,
+    FiSettings, FiSend, FiClipboard, FiBarChart2, FiDatabase, FiGlobe,
+  ];
+  const toolColors = [
+    'orange.500', 'orange.500', 'green.500', 'blue.500', 'blue.500', 'purple.500',
+    'gray.500', 'cyan.500', 'pink.500', 'teal.500', 'teal.500', 'cyan.500',
+  ];
+
   return (
     <>
       {/* Hero */}
-      <Box id="hero" bg="hero.bg" pt={20} pb={16}>
-        <Container maxW="1280px">
-          <VStack spacing={6} textAlign="center" maxW="800px" mx="auto">
-            <Badge colorScheme="purple" fontSize="xs" px={3} py={1} borderRadius="full">
-              {t('hero.badge')}
-            </Badge>
-            <Heading as="h1" size="2xl" fontWeight="800" color="white" lineHeight="1.15">
-              {t('hero.heading')}{' '}
-              <GradientText gradient="linear(to-r, brand.300, whatsapp.400)">{t('hero.headingGradient')}</GradientText>
-            </Heading>
-            <Text color="whiteAlpha.700" fontSize="lg" maxW="600px" lineHeight="1.7">
-              {t('hero.subtitle')}
-            </Text>
-          </VStack>
-        </Container>
-      </Box>
+      <PageHero
+        badge={t('hero.badge')}
+        heading={t('hero.heading')}
+        headingGradient={t('hero.headingGradient')}
+        subtitle={t('hero.subtitle')}
+        primaryCTA={{ label: tc('cta.letsChat') }}
+        secondaryCTA={{ label: tc('cta.knowAIAgents'), href: '#comparison' }}
+        stats={[
+          { value: t('hero.stats.specialties.value'), label: t('hero.stats.specialties.label') },
+          { value: t('hero.stats.uptime.value'), label: t('hero.stats.uptime.label') },
+          { value: t('hero.stats.response.value'), label: t('hero.stats.response.label') },
+        ]}
+      />
 
-      {/* Comparison: Chatbot vs Agent vs Team */}
-      <SectionWrapper>
-        <VStack spacing={4} textAlign="center" mb={12}>
-          <Heading as="h2" size="xl" fontWeight="800">
-            {t('comparison.heading')}{' '}<Text as="span" color="brand.500">{t('comparison.headingHighlight')}</Text>
-          </Heading>
-        </VStack>
+      {/* Comparison Table: Chatbot vs Agent vs Team */}
+      <SectionWrapper id="comparison">
+        <SectionHeader
+          heading={t('comparison.heading')}
+          headingGradient={t('comparison.headingGradient')}
+          subtitle={t('comparison.subtitle')}
+        />
 
-        <SimpleGrid columns={{ base: 1, md: 3 }} spacing={6}>
-          {comparisonItems.map((item, i) => (
-            <MotionBox
-              key={item.type}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.15, duration: 0.5 }}
-            >
-              <Box
-                bg="white"
-                p={7}
-                borderRadius="xl"
-                border="2px solid"
-                borderColor={item.highlight ? 'brand.400' : 'gray.100'}
-                boxShadow={item.highlight ? 'lg' : 'sm'}
-                h="full"
-                position="relative"
-              >
-                {item.highlight && (
-                  <Badge
-                    position="absolute"
-                    top={-3}
-                    left="50%"
-                    transform="translateX(-50%)"
-                    colorScheme="brand"
-                    px={3}
-                    py={1}
-                    borderRadius="full"
-                    fontSize="xs"
-                  >
-                    {t('comparison.yourProduct')}
-                  </Badge>
-                )}
-                <VStack align="flex-start" spacing={4}>
-                  <Badge colorScheme={item.color} variant="subtle" fontSize="xs">{item.level}</Badge>
-                  <Heading as="h3" size="md" fontWeight="700">{item.type}</Heading>
-                  <Text color="gray.500" fontSize="sm">{item.description}</Text>
-                  <List spacing={2}>
-                    {item.capabilities.map((cap) => (
-                      <ListItem key={cap} fontSize="sm" color="gray.600">
-                        <ListIcon as={FiCheck} color={item.highlight ? 'brand.500' : 'gray.400'} />
-                        {cap}
-                      </ListItem>
-                    ))}
-                  </List>
-                </VStack>
-              </Box>
-            </MotionBox>
-          ))}
-        </SimpleGrid>
+        <Box maxW="900px" mx="auto">
+          <FeatureComparisonTable
+            columns={comparisonTable.columns}
+            rows={comparisonTable.rows.map((r) => ({
+              feature: r.feature,
+              values: r.values,
+            }))}
+          />
+        </Box>
 
         <Box bg="brand.50" p={6} borderRadius="xl" mt={8} textAlign="center">
           <Text color="gray.700" fontSize="md" fontWeight="500">
@@ -142,31 +94,33 @@ export function AIAgents() {
 
       {/* How Agents Work */}
       <SectionWrapper bg="gray.50">
-        <VStack spacing={4} textAlign="center" mb={12}>
-          <Heading as="h2" size="xl" fontWeight="800">
-            {t('howAgentsWork.heading')}
-          </Heading>
-        </VStack>
+        <SectionHeader heading={t('howAgentsWork.heading')} />
 
         <SimpleGrid columns={{ base: 1, sm: 2, lg: 4 }} spacing={6}>
-          {[
-            { icon: FiEdit3, title: t('howAgentsWork.items.0.title'), description: t('howAgentsWork.items.0.description'), color: 'brand.500' },
-            { icon: FiTool, title: t('howAgentsWork.items.1.title'), description: t('howAgentsWork.items.1.description'), color: 'orange.500' },
-            { icon: FiMessageCircle, title: t('howAgentsWork.items.2.title'), description: t('howAgentsWork.items.2.description'), color: 'whatsapp.500' },
-            { icon: FiCpu, title: t('howAgentsWork.items.3.title'), description: t('howAgentsWork.items.3.description'), color: 'blue.500' },
-          ].map((item, i) => (
+          {howAgentsWork.map((item, i) => (
             <MotionBox
-              key={item.title}
+              key={i}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, duration: 0.5 }}
             >
-              <Box bg="white" p={6} borderRadius="xl" border="1px solid" borderColor="gray.100" h="full">
+              <Box
+                bg="white"
+                p={6}
+                borderRadius="xl"
+                border="1px solid"
+                borderColor="gray.100"
+                h="full"
+                _hover={{ borderColor: 'brand.200', transform: 'translateY(-4px)', boxShadow: 'md' }}
+                transition="all 0.2s"
+              >
                 <VStack align="flex-start" spacing={3}>
-                  <Icon as={item.icon} boxSize={6} color={item.color} />
-                  <Heading as="h3" size="sm" fontWeight="700">{item.title}</Heading>
-                  <Text color="gray.500" fontSize="sm" lineHeight="1.7">{item.description}</Text>
+                  <Box p={3} borderRadius="lg" bg="brand.50">
+                    <Icon as={item.icon} boxSize={6} color={item.color} />
+                  </Box>
+                  <Heading as="h3" size="sm" fontWeight="700">{t(`howAgentsWork.items.${i}.title`)}</Heading>
+                  <Text color="gray.500" fontSize="sm" lineHeight="1.7">{t(`howAgentsWork.items.${i}.description`)}</Text>
                 </VStack>
               </Box>
             </MotionBox>
@@ -176,14 +130,10 @@ export function AIAgents() {
 
       {/* Agent Marketplace */}
       <SectionWrapper>
-        <VStack spacing={4} textAlign="center" mb={12}>
-          <Heading as="h2" size="xl" fontWeight="800">
-            {t('marketplace.heading')}
-          </Heading>
-          <Text color="gray.500" maxW="500px">
-            {t('marketplace.subtitle')}
-          </Text>
-        </VStack>
+        <SectionHeader
+          heading={t('marketplace.heading')}
+          subtitle={t('marketplace.subtitle')}
+        />
 
         <SimpleGrid columns={{ base: 1, sm: 2, lg: 3 }} spacing={5}>
           {agentTemplates.map((template, i) => (
@@ -200,7 +150,7 @@ export function AIAgents() {
                 borderRadius="xl"
                 border="1px solid"
                 borderColor="gray.100"
-                _hover={{ borderColor: 'brand.200', boxShadow: 'md' }}
+                _hover={{ borderColor: 'brand.200', boxShadow: 'md', transform: 'translateY(-4px)' }}
                 transition="all 0.2s"
                 h="full"
               >
@@ -226,19 +176,15 @@ export function AIAgents() {
 
       {/* AI Processing Powers */}
       <SectionWrapper bg="gray.50">
-        <VStack spacing={4} textAlign="center" mb={12}>
-          <Heading as="h2" size="xl" fontWeight="800">
-            {t('aiCapabilities.heading')}
-          </Heading>
-          <Text color="gray.500" maxW="500px">
-            {t('aiCapabilities.subtitle')}
-          </Text>
-        </VStack>
+        <SectionHeader
+          heading={t('aiCapabilities.heading')}
+          subtitle={t('aiCapabilities.subtitle')}
+        />
 
         <SimpleGrid columns={{ base: 2, md: 4 }} spacing={5}>
           {aiCapabilities.map((cap, i) => (
             <MotionBox
-              key={cap.label}
+              key={i}
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -250,14 +196,14 @@ export function AIAgents() {
                 borderRadius="xl"
                 border="1px solid"
                 borderColor="gray.100"
-                _hover={{ borderColor: 'brand.200', transform: 'translateY(-2px)' }}
+                _hover={{ borderColor: 'brand.200', transform: 'translateY(-4px)', boxShadow: 'md' }}
                 transition="all 0.2s"
                 textAlign="center"
               >
                 <VStack spacing={3}>
                   <Icon as={cap.icon} boxSize={6} color="brand.500" />
-                  <Text fontWeight="600" fontSize="sm">{cap.label}</Text>
-                  <Text color="gray.400" fontSize="xs">{cap.description}</Text>
+                  <Text fontWeight="600" fontSize="sm">{t(`aiCapabilities.items.${i}.label`)}</Text>
+                  <Text color="gray.400" fontSize="xs">{t(`aiCapabilities.items.${i}.description`)}</Text>
                 </VStack>
               </Box>
             </MotionBox>
@@ -267,24 +213,20 @@ export function AIAgents() {
 
       {/* Real-World Example */}
       <SectionWrapper>
-        <VStack spacing={4} textAlign="center" mb={12}>
-          <Heading as="h2" size="xl" fontWeight="800">
-            {t('realWorldExample.heading')}
-          </Heading>
-        </VStack>
+        <SectionHeader heading={t('realWorldExample.heading')} />
 
         <Flex justify="center" overflow="auto" pb={4}>
           <HStack spacing={3} px={4}>
             {[
-              { action: t('realWorldExample.steps.0'), color: 'green.500', icon: FiMessageCircle },
-              { action: t('realWorldExample.steps.1'), color: 'purple.500', icon: FiMic },
-              { action: t('realWorldExample.steps.2'), color: 'orange.500', icon: FiSmile },
-              { action: t('realWorldExample.steps.3'), color: 'brand.500', icon: FiCpu },
-              { action: t('realWorldExample.steps.4'), color: 'blue.500', icon: FiUsers },
-              { action: t('realWorldExample.steps.5'), color: 'whatsapp.500', icon: FiMessageCircle },
+              { color: 'green.500', icon: FiMessageCircle },
+              { color: 'purple.500', icon: FiMic },
+              { color: 'orange.500', icon: FiSmile },
+              { color: 'brand.500', icon: FiCpu },
+              { color: 'blue.500', icon: FiUsers },
+              { color: 'whatsapp.500', icon: FiMessageCircle },
             ].map((step, i) => (
               <MotionBox
-                key={step.action}
+                key={i}
                 initial={{ opacity: 0, x: -10 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
@@ -301,7 +243,7 @@ export function AIAgents() {
                     spacing={2}
                   >
                     <Icon as={step.icon} boxSize={5} color={step.color} />
-                    <Text fontSize="xs" fontWeight="600" textAlign="center">{step.action}</Text>
+                    <Text fontSize="xs" fontWeight="600" textAlign="center">{t(`realWorldExample.steps.${i}`)}</Text>
                   </VStack>
                   {i < 5 && <Icon as={FiArrowRight} color="gray.300" />}
                 </HStack>
@@ -313,35 +255,16 @@ export function AIAgents() {
 
       {/* Available Tools Grid */}
       <SectionWrapper bg="gray.50">
-        <VStack spacing={4} textAlign="center" mb={12}>
-          <Badge colorScheme="purple" fontSize="xs" px={3} py={1} borderRadius="full">
-            {t('toolsGrid.badge')}
-          </Badge>
-          <Heading as="h2" size="xl" fontWeight="800">
-            {t('toolsGrid.heading')}
-          </Heading>
-          <Text color="gray.500" maxW="600px">
-            {t('toolsGrid.subtitle')}
-          </Text>
-        </VStack>
+        <SectionHeader
+          badge={t('toolsGrid.badge')}
+          heading={t('toolsGrid.heading')}
+          subtitle={t('toolsGrid.subtitle')}
+        />
 
         <SimpleGrid columns={{ base: 1, sm: 2, lg: 4 }} spacing={4}>
-          {[
-            { icon: FiSearch, title: t('toolsGrid.items.0.title'), description: t('toolsGrid.items.0.description'), color: 'orange.500' },
-            { icon: FiUserPlus, title: t('toolsGrid.items.1.title'), description: t('toolsGrid.items.1.description'), color: 'orange.500' },
-            { icon: FiMessageCircle, title: t('toolsGrid.items.2.title'), description: t('toolsGrid.items.2.description'), color: 'green.500' },
-            { icon: FiCalendar, title: t('toolsGrid.items.3.title'), description: t('toolsGrid.items.3.description'), color: 'blue.500' },
-            { icon: FiGitBranch, title: t('toolsGrid.items.4.title'), description: t('toolsGrid.items.4.description'), color: 'blue.500' },
-            { icon: FiCpu, title: t('toolsGrid.items.5.title'), description: t('toolsGrid.items.5.description'), color: 'purple.500' },
-            { icon: FiSettings, title: t('toolsGrid.items.6.title'), description: t('toolsGrid.items.6.description'), color: 'gray.500' },
-            { icon: FiSend, title: t('toolsGrid.items.7.title'), description: t('toolsGrid.items.7.description'), color: 'cyan.500' },
-            { icon: FiClipboard, title: t('toolsGrid.items.8.title'), description: t('toolsGrid.items.8.description'), color: 'pink.500' },
-            { icon: FiBarChart2, title: t('toolsGrid.items.9.title'), description: t('toolsGrid.items.9.description'), color: 'teal.500' },
-            { icon: FiDatabase, title: t('toolsGrid.items.10.title'), description: t('toolsGrid.items.10.description'), color: 'teal.500' },
-            { icon: FiGlobe, title: t('toolsGrid.items.11.title'), description: t('toolsGrid.items.11.description'), color: 'cyan.500' },
-          ].map((category, i) => (
+          {toolIcons.map((icon, i) => (
             <MotionBox
-              key={category.title}
+              key={i}
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -349,19 +272,27 @@ export function AIAgents() {
             >
               <Box
                 bg="white" p={4} borderRadius="xl" border="1px solid" borderColor="gray.100"
-                _hover={{ borderColor: category.color, transform: 'translateY(-2px)' }}
+                _hover={{ borderColor: toolColors[i], transform: 'translateY(-4px)', boxShadow: 'md' }}
                 transition="all 0.2s" h="full"
               >
                 <VStack align="flex-start" spacing={2}>
-                  <Icon as={category.icon} boxSize={5} color={category.color} />
-                  <Text fontWeight="600" fontSize="sm">{category.title}</Text>
-                  <Text color="gray.400" fontSize="xs">{category.description}</Text>
+                  <Icon as={icon} boxSize={5} color={toolColors[i]} />
+                  <Text fontWeight="600" fontSize="sm">{t(`toolsGrid.items.${i}.title`)}</Text>
+                  <Text color="gray.400" fontSize="xs">{t(`toolsGrid.items.${i}.description`)}</Text>
                 </VStack>
               </Box>
             </MotionBox>
           ))}
         </SimpleGrid>
       </SectionWrapper>
+
+      {/* PageCTA */}
+      <PageCTA
+        heading={t('pageCTA.heading')}
+        subtitle={t('pageCTA.subtitle')}
+        primaryCTA={{ label: tc('cta.letsChat') }}
+        secondaryCTA={{ label: tc('cta.seeDemo'), to: lp('/demo') }}
+      />
 
       <FinalCTA />
     </>

@@ -1,16 +1,19 @@
 import {
-  Box, Container, Heading, Text, VStack, SimpleGrid, HStack, Icon,
+  Box, Heading, Text, VStack, SimpleGrid, HStack, Icon,
 } from '@chakra-ui/react';
 import { FiShield, FiLock, FiUsers, FiKey, FiDatabase, FiServer, FiCheckCircle } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
 import { SectionWrapper } from '../components/shared/SectionWrapper';
-import { GradientText } from '../components/shared/GradientText';
-import { MotionBox, fadeInUp } from '../components/motion';
+import { PageHero } from '../components/shared/PageHero';
+import { SectionHeader } from '../components/shared/SectionHeader';
+import { PageCTA } from '../components/shared/PageCTA';
+import { MotionBox } from '../components/motion';
 
 const pillarIcons = [FiShield, FiLock, FiUsers, FiKey, FiDatabase, FiCheckCircle];
 
 export function Security() {
   const { t } = useTranslation('security');
+  const { t: tc } = useTranslation('common');
   const pillars = t('pillars', { returnObjects: true }) as Array<{
     title: string;
     description: string;
@@ -21,54 +24,20 @@ export function Security() {
 
   return (
     <>
-      {/* Hero */}
-      <Box bg="hero.bg" pt={20} pb={16}>
-        <Container maxW="1280px">
-          <VStack spacing={4} textAlign="center" maxW="700px" mx="auto">
-            <MotionBox {...fadeInUp}>
-              <HStack
-                bg="whiteAlpha.100"
-                px={4}
-                py={1.5}
-                borderRadius="full"
-                border="1px solid"
-                borderColor="whiteAlpha.200"
-                spacing={2}
-                mx="auto"
-                w="fit-content"
-              >
-                <Icon as={FiShield} color="green.400" boxSize={4} />
-                <Text color="whiteAlpha.800" fontSize="sm" fontWeight="600">
-                  {t('hero.badge')}
-                </Text>
-              </HStack>
-            </MotionBox>
-
-            <MotionBox {...fadeInUp}>
-              <Heading as="h1" fontSize={{ base: '3xl', md: '5xl' }} fontWeight="800" color="white" lineHeight="1.1">
-                {t('hero.heading')}{' '}
-                <GradientText gradient="linear(to-r, green.300, green.400, brand.400)" fontSize="inherit" fontWeight="inherit">
-                  {t('hero.headingGradient')}
-                </GradientText>
-              </Heading>
-            </MotionBox>
-
-            <MotionBox {...fadeInUp}>
-              <Text color="whiteAlpha.700" fontSize={{ base: 'md', md: 'lg' }} lineHeight="1.7" maxW="600px">
-                {t('hero.subtitle')}
-              </Text>
-            </MotionBox>
-          </VStack>
-        </Container>
-      </Box>
+      <PageHero
+        badge={t('hero.badge')}
+        badgeIcon={FiShield}
+        heading={t('hero.heading')}
+        headingGradient={t('hero.headingGradient')}
+        subtitle={t('hero.subtitle')}
+        accentColor="green"
+        gradient="linear(to-r, green.300, green.400, brand.400)"
+        primaryCTA={{ label: tc('cta.letsChat') }}
+      />
 
       {/* Security Pillars */}
       <SectionWrapper>
-        <VStack spacing={8} textAlign="center" mb={10}>
-          <Heading as="h2" size="xl" fontWeight="800">
-            {t('pillarsHeading')}
-          </Heading>
-        </VStack>
+        <SectionHeader heading={t('pillarsHeading')} />
 
         <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={6}>
           {pillars.map((pillar, i) => (
@@ -87,7 +56,7 @@ export function Security() {
                 borderRadius="xl"
                 border="1px solid"
                 borderColor="gray.200"
-                _hover={{ borderColor: 'green.300', boxShadow: 'md' }}
+                _hover={{ borderColor: 'green.300', boxShadow: 'md', transform: 'translateY(-4px)' }}
                 transition="all 0.2s"
                 h="full"
               >
@@ -116,14 +85,10 @@ export function Security() {
 
       {/* Infrastructure */}
       <SectionWrapper bg="gray.50">
-        <VStack spacing={8} textAlign="center" mb={8}>
-          <Heading as="h2" size="lg" fontWeight="800">
-            {t('infrastructure.heading')}
-          </Heading>
-          <Text color="gray.500" maxW="600px" fontSize="md">
-            {t('infrastructure.subtitle')}
-          </Text>
-        </VStack>
+        <SectionHeader
+          heading={t('infrastructure.heading')}
+          subtitle={t('infrastructure.subtitle')}
+        />
 
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={4} maxW="700px" mx="auto">
           {infraItems.map((item, i) => (
@@ -137,11 +102,7 @@ export function Security() {
 
       {/* Compliance */}
       <SectionWrapper>
-        <VStack spacing={8} textAlign="center" mb={8}>
-          <Heading as="h2" size="lg" fontWeight="800">
-            {t('compliance.heading')}
-          </Heading>
-        </VStack>
+        <SectionHeader heading={t('compliance.heading')} />
 
         <VStack spacing={3} maxW="600px" mx="auto">
           {complianceItems.map((item, i) => (
@@ -153,17 +114,11 @@ export function Security() {
         </VStack>
       </SectionWrapper>
 
-      {/* CTA */}
-      <SectionWrapper bg="gray.50">
-        <VStack spacing={4} textAlign="center">
-          <Heading as="h2" size="lg" fontWeight="700">
-            {t('cta.heading')}
-          </Heading>
-          <Text color="gray.500" maxW="500px" fontSize="md">
-            {t('cta.subtitle')}
-          </Text>
-        </VStack>
-      </SectionWrapper>
+      <PageCTA
+        heading={t('cta.heading')}
+        subtitle={t('cta.subtitle')}
+        primaryCTA={{ label: tc('cta.letsChat'), icon: FiShield }}
+      />
     </>
   );
 }

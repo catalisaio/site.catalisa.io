@@ -1,14 +1,38 @@
 {
   "hero": {
     "badge": "CASOS DE USO",
-    "heading": "Qual cenario",
-    "headingGradient": "se parece com o seu?",
-    "subtitle": "Veja como empresas reais usam a Catalisa para automatizar operacoes com WhatsApp e IA."
+    "heading": "30+ automacoes",
+    "headingGradient": "prontas para usar.",
+    "subtitle": "Playbooks por funcao, por industria e com ROI calculado. Encontre o cenario que mais se parece com o seu."
   },
-  "templates": {
-    "heading": "Templates de agentes",
-    "subtitle": "Instale agentes pre-configurados com um clique e personalize para seu negocio."
+  "stats": {
+    "templates": "30+ playbooks",
+    "industries": "10 industrias",
+    "blocks": "60+ blocos"
   },
+  "featured": {
+    "heading": "Playbooks em destaque",
+    "subtitle": "Os mais usados pelos nossos clientes"
+  },
+  "byFunction": {
+    "heading": "Por funcao",
+    "viewAll": "Ver todos",
+    "vendas": "Vendas",
+    "suporte": "Suporte",
+    "financeiro": "Financeiro",
+    "onboarding": "Onboarding"
+  },
+  "byIndustry": {
+    "heading": "Por industria",
+    "subtitle": "Solucoes especializadas para seu segmento"
+  },
+  "industryCards": [
+    { "label": "Fintech", "desc": "Originacao, KYC, cobranca, simulacao de credito", "path": "/fintech" },
+    { "label": "Bancario", "desc": "Conta digital, Pix conversacional, Open Finance", "path": "/bancario" },
+    { "label": "Seguros", "desc": "Sinistros, cotacoes, renovacao, vistoria digital", "path": "/seguros" },
+    { "label": "Varejo", "desc": "Atendimento, cardapio digital, pos-venda", "path": "/varejo" },
+    { "label": "Startups", "desc": "SDR automatizado, onboarding, suporte tecnico", "path": "/startups" }
+  ],
   "beforeAfter": {
     "before": "ANTES",
     "after": "DEPOIS"
@@ -29,8 +53,8 @@
     }
   },
   "cta": {
-    "heading": "Qual cenario mais se parece com o seu?",
-    "subtitle": "Fale com nosso time para montar a automacao ideal para o seu negocio.",
+    "heading": "Nao encontrou seu cenario?",
+    "subtitle": "Fale com nosso time e criamos a automacao ideal para o seu negocio.",
     "button": "Vamos conversar"
   }
 }

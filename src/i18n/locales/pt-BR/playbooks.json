@@ -1,0 +1,700 @@
+{
+  "hero": {
+    "badge": "PLAYBOOKS",
+    "heading": "Comece em minutos.",
+    "headingGradient": "Nao meses.",
+    "subtitle": "30+ automacoes prontas para usar. Escolha um playbook, personalize e ative."
+  },
+  "search": {
+    "placeholder": "Buscar playbooks..."
+  },
+  "categories": {
+    "all": "Todos",
+    "vendas": "Vendas",
+    "suporte": "Suporte",
+    "financeiro": "Financeiro",
+    "onboarding": "Onboarding",
+    "marketing": "Marketing",
+    "operacoes": "Operacoes",
+    "produtividade": "Produtividade"
+  },
+  "industries": {
+    "all": "Todas industrias",
+    "geral": "Geral",
+    "fintech": "Fintech",
+    "banking": "Bancario",
+    "insurance": "Seguros",
+    "retail": "Varejo",
+    "saas": "SaaS",
+    "saude": "Saude",
+    "educacao": "Educacao",
+    "imobiliario": "Imobiliario",
+    "ecommerce": "E-commerce"
+  },
+  "featured": {
+    "heading": "Playbooks em destaque",
+    "subtitle": "Os mais usados pelos nossos clientes"
+  },
+  "card": {
+    "useTemplate": "Usar playbook",
+    "blocks": "Blocos usados"
+  },
+  "detail": {
+    "backToTemplates": "Voltar para Playbooks",
+    "blocksUsed": "Building Blocks utilizados",
+    "workflow": "Como funciona",
+    "results": "Resultados esperados",
+    "before": "Antes",
+    "after": "Depois",
+    "related": "Playbooks relacionados",
+    "cta": "Ativar este playbook",
+    "ctaSecondary": "Falar com especialista"
+  },
+  "empty": {
+    "heading": "Nenhum playbook encontrado",
+    "subtitle": "Tente ajustar os filtros ou buscar por outro termo."
+  },
+  "bottomCTA": {
+    "heading": "Nao encontrou o que precisa?",
+    "subtitle": "Descreva o que voce precisa no Studio e a IA constroi para voce."
+  },
+  "sdr": {
+    "name": "SDR Automatizado",
+    "description": "Qualifica leads 24/7 no WhatsApp, coleta informacoes, classifica por prioridade e agenda reunioes com vendedores.",
+    "before": [
+      { "metric": "Leads qualificados/dia", "value": "15" },
+      { "metric": "Custo por lead", "value": "R$ 45" },
+      { "metric": "Tempo de resposta", "value": "4h" }
+    ],
+    "after": [
+      { "metric": "Leads qualificados/dia", "value": "200+" },
+      { "metric": "Custo por lead", "value": "R$ 2" },
+      { "metric": "Tempo de resposta", "value": "10s" }
+    ],
+    "steps": [
+      "Lead entra em contato",
+      "Agente qualifica lead",
+      "Coleta informacoes",
+      "Registra no CRM",
+      "Agenda reuniao",
+      "Confirma agendamento"
+    ]
+  },
+  "followup": {
+    "name": "Follow-up Inteligente",
+    "description": "Nunca perca um lead. IA acompanha automaticamente cada oportunidade com mensagens personalizadas no tempo certo.",
+    "before": [
+      { "metric": "Follow-ups realizados", "value": "30%" },
+      { "metric": "Tempo entre contatos", "value": "5 dias" },
+      { "metric": "Conversao", "value": "8%" }
+    ],
+    "after": [
+      { "metric": "Follow-ups realizados", "value": "100%" },
+      { "metric": "Tempo entre contatos", "value": "Automatico" },
+      { "metric": "Conversao", "value": "22%" }
+    ],
+    "steps": [
+      "Detecta lead sem resposta",
+      "Busca historico do lead",
+      "Gera mensagem personalizada",
+      "Envia follow-up",
+      "Aguarda resposta",
+      "Atualiza status no CRM"
+    ]
+  },
+  "leadQualification": {
+    "name": "Qualificacao de Leads SaaS",
+    "description": "Agente IA conversa com leads de SaaS, identifica fit de produto, qualifica com BANT e envia para CRM externo.",
+    "before": [
+      { "metric": "Taxa de qualificacao", "value": "20%" },
+      { "metric": "Tempo de qualificacao", "value": "2 dias" },
+      { "metric": "Leads perdidos", "value": "45%" }
+    ],
+    "after": [
+      { "metric": "Taxa de qualificacao", "value": "65%" },
+      { "metric": "Tempo de qualificacao", "value": "5min" },
+      { "metric": "Leads perdidos", "value": "5%" }
+    ],
+    "steps": [
+      "Lead chega via formulario",
+      "IA inicia conversa",
+      "Qualifica com BANT",
+      "Registra score no CRM",
+      "Envia para ferramenta externa"
+    ]
+  },
+  "realEstate": {
+    "name": "Atendimento Imobiliario",
+    "description": "Captura e qualifica interessados em imoveis, apresenta opcoes personalizadas e agenda visitas automaticamente.",
+    "before": [
+      { "metric": "Visitas agendadas/mes", "value": "30" },
+      { "metric": "No-show", "value": "40%" },
+      { "metric": "Tempo para agendar", "value": "24h" }
+    ],
+    "after": [
+      { "metric": "Visitas agendadas/mes", "value": "120+" },
+      { "metric": "No-show", "value": "10%" },
+      { "metric": "Tempo para agendar", "value": "3min" }
+    ],
+    "steps": [
+      "Agente atende cliente",
+      "Identifica preferencias",
+      "Registra lead no CRM",
+      "Agenda visita",
+      "Confirma visita"
+    ]
+  },
+  "support247": {
+    "name": "Suporte 24/7",
+    "description": "Resolva duvidas frequentes automaticamente e escale para humano apenas casos complexos. Funciona 24 horas, 7 dias por semana.",
+    "before": [
+      { "metric": "Tickets resolvidos/dia", "value": "50" },
+      { "metric": "CSAT", "value": "3.2/5" },
+      { "metric": "Equipe necessaria", "value": "6 pessoas" }
+    ],
+    "after": [
+      { "metric": "Tickets resolvidos/dia", "value": "400+" },
+      { "metric": "CSAT", "value": "4.7/5" },
+      { "metric": "Equipe necessaria", "value": "2 pessoas" }
+    ],
+    "steps": [
+      "Detecta urgencia",
+      "Agente de suporte atende",
+      "Verifica resolucao",
+      "Registra ticket",
+      "Envia feedback"
+    ]
+  },
+  "techSupport": {
+    "name": "Suporte Tecnico com IA",
+    "description": "Base de conhecimento + IA resolve duvidas tecnicas automaticamente. Escala para humano so quando necessario.",
+    "before": [
+      { "metric": "Tempo de resposta", "value": "3h" },
+      { "metric": "Resolucao 1o contato", "value": "30%" },
+      { "metric": "Equipe", "value": "5" }
+    ],
+    "after": [
+      { "metric": "Tempo de resposta", "value": "20s" },
+      { "metric": "Resolucao 1o contato", "value": "75%" },
+      { "metric": "Equipe", "value": "1" }
+    ],
+    "steps": [
+      "Recebe duvida tecnica",
+      "Classifica complexidade",
+      "Busca na base de conhecimento",
+      "Gera resposta tecnica",
+      "Envia solucao"
+    ]
+  },
+  "postSale": {
+    "name": "Pos-Venda E-commerce",
+    "description": "Atendimento e-commerce automatizado. Consulta status de pedido, resolve trocas/devolucoes e coleta feedback.",
+    "before": [
+      { "metric": "Tickets resolvidos/dia", "value": "30" },
+      { "metric": "NPS", "value": "42" },
+      { "metric": "Custo por ticket", "value": "R$ 18" }
+    ],
+    "after": [
+      { "metric": "Tickets resolvidos/dia", "value": "300+" },
+      { "metric": "NPS", "value": "78" },
+      { "metric": "Custo por ticket", "value": "R$ 1.50" }
+    ],
+    "steps": [
+      "Analisa urgencia",
+      "Agente pos-venda atende",
+      "Consulta sistema externo",
+      "Gera resposta personalizada",
+      "Envia resolucao",
+      "Atualiza cadastro no CRM"
+    ]
+  },
+  "bankingSupport": {
+    "name": "Atendimento Bancario 24/7",
+    "description": "Agente IA especialista em banking resolve consultas de saldo, extrato, bloqueio de cartao e duvidas frequentes.",
+    "before": [
+      { "metric": "Tempo de resposta", "value": "2h" },
+      { "metric": "Resolucao 1o contato", "value": "35%" },
+      { "metric": "Atendentes", "value": "8" }
+    ],
+    "after": [
+      { "metric": "Tempo de resposta", "value": "5s" },
+      { "metric": "Resolucao 1o contato", "value": "80%" },
+      { "metric": "Atendentes", "value": "2" }
+    ],
+    "steps": [
+      "Classifica demanda",
+      "Define tipo de servico",
+      "Agente bancario atende",
+      "Dialogo continuo",
+      "Atualiza cadastro"
+    ]
+  },
+  "insuranceSupport": {
+    "name": "Atendimento ao Segurado 24/7",
+    "description": "Status de sinistro, segunda via de boleto, duvidas sobre cobertura — tudo resolvido por IA especialista em seguros.",
+    "before": [
+      { "metric": "Tempo de resposta", "value": "4h" },
+      { "metric": "Resolucao autonoma", "value": "30%" },
+      { "metric": "Atendentes", "value": "6" }
+    ],
+    "after": [
+      { "metric": "Tempo de resposta", "value": "10s" },
+      { "metric": "Resolucao autonoma", "value": "75%" },
+      { "metric": "Atendentes", "value": "1" }
+    ],
+    "steps": [
+      "Analisa urgencia",
+      "Classifica demanda",
+      "Define tipo de servico",
+      "Agente de seguros atende",
+      "Confirmacao e encerramento"
+    ]
+  },
+  "collections": {
+    "name": "Cobranca Inteligente",
+    "description": "Cobranca humanizada com IA que negocia. Respeita horario comercial, analisa sentimento e oferece condicoes personalizadas.",
+    "before": [
+      { "metric": "Taxa de recuperacao", "value": "15%" },
+      { "metric": "Reclamacoes", "value": "45/mes" },
+      { "metric": "Custo por contato", "value": "R$ 12" }
+    ],
+    "after": [
+      { "metric": "Taxa de recuperacao", "value": "42%" },
+      { "metric": "Reclamacoes", "value": "3/mes" },
+      { "metric": "Custo por contato", "value": "R$ 0.50" }
+    ],
+    "steps": [
+      "Verifica horario comercial",
+      "Analisa tom da conversa",
+      "Agente negocia condicoes",
+      "Envia lembrete",
+      "Aguarda resposta",
+      "Envia link de pagamento"
+    ]
+  },
+  "creditOrigination": {
+    "name": "Originacao de Credito",
+    "description": "Do primeiro contato a aprovacao sem sair do WhatsApp. IA qualifica, coleta documentos, calcula custos e submete ao motor de decisao.",
+    "before": [
+      { "metric": "Tempo de analise", "value": "48h" },
+      { "metric": "Taxa de desistencia", "value": "60%" },
+      { "metric": "Custo por analise", "value": "R$ 85" }
+    ],
+    "after": [
+      { "metric": "Tempo de analise", "value": "15min" },
+      { "metric": "Taxa de desistencia", "value": "12%" },
+      { "metric": "Custo por analise", "value": "R$ 3" }
+    ],
+    "steps": [
+      "Transcreve audio do cliente",
+      "Analisa documento enviado",
+      "Validacao automatica",
+      "Calculo de custos regulatorios",
+      "Motor de decisao",
+      "Notifica resultado"
+    ]
+  },
+  "creditSimulation": {
+    "name": "Simulacao de Credito",
+    "description": "Cliente simula emprestimo direto no WhatsApp. IA conversa, calcula parcelas e gera proposta personalizada.",
+    "before": [
+      { "metric": "Simulacoes/dia", "value": "20" },
+      { "metric": "Conversao", "value": "8%" },
+      { "metric": "Canal", "value": "Site + telefone" }
+    ],
+    "after": [
+      { "metric": "Simulacoes/dia", "value": "500+" },
+      { "metric": "Conversao", "value": "23%" },
+      { "metric": "Canal", "value": "WhatsApp 24/7" }
+    ],
+    "steps": [
+      "Agente de simulacao atende",
+      "Calcula parcelas",
+      "Gera proposta formatada",
+      "Envia proposta",
+      "Registra lead"
+    ]
+  },
+  "debtRenegotiation": {
+    "name": "Renegociacao de Dividas",
+    "description": "Agente IA negocia dividas com empatia. Gera boleto, envia link de pagamento e registra acordo — humanizado e em escala.",
+    "before": [
+      { "metric": "Taxa de recuperacao", "value": "15%" },
+      { "metric": "Custo por contato", "value": "R$ 12" },
+      { "metric": "Reclamacoes", "value": "45/mes" }
+    ],
+    "after": [
+      { "metric": "Taxa de recuperacao", "value": "42%" },
+      { "metric": "Custo por contato", "value": "R$ 0.50" },
+      { "metric": "Reclamacoes", "value": "3/mes" }
+    ],
+    "steps": [
+      "Verifica horario comercial",
+      "Analisa tom da conversa",
+      "Agente negocia",
+      "Aguarda resposta",
+      "Envia link de pagamento"
+    ]
+  },
+  "openFinanceCredit": {
+    "name": "Credito com Open Finance",
+    "description": "Analise de credito enriquecida com dados Open Finance. Consulta historico real e oferece taxa personalizada em minutos.",
+    "before": [
+      { "metric": "Tempo de analise", "value": "48h" },
+      { "metric": "Dados disponiveis", "value": "Limitados" },
+      { "metric": "Taxa de juros", "value": "Padrao unica" }
+    ],
+    "after": [
+      { "metric": "Tempo de analise", "value": "5min" },
+      { "metric": "Dados disponiveis", "value": "Enriquecidos" },
+      { "metric": "Taxa de juros", "value": "Personalizada" }
+    ],
+    "steps": [
+      "Solicita consentimento",
+      "Consulta dados abertos",
+      "Analisa historico",
+      "Scoring personalizado",
+      "Notifica resultado"
+    ]
+  },
+  "insuranceQuote": {
+    "name": "Cotacao de Seguro",
+    "description": "Agente IA cota, calcula premio e fecha seguro pelo WhatsApp. Conversacional, rapido e personalizado.",
+    "before": [
+      { "metric": "Cotacoes/dia", "value": "20" },
+      { "metric": "Conversao", "value": "8%" },
+      { "metric": "Tempo de resposta", "value": "24h" }
+    ],
+    "after": [
+      { "metric": "Cotacoes/dia", "value": "500+" },
+      { "metric": "Conversao", "value": "25%" },
+      { "metric": "Tempo de resposta", "value": "2min" }
+    ],
+    "steps": [
+      "Agente de cotacao atende",
+      "Identifica perfil do cliente",
+      "Calcula premio",
+      "Envia cotacao",
+      "Registra lead"
+    ]
+  },
+  "kycOnboarding": {
+    "name": "Onboarding KYC",
+    "description": "Know Your Customer 100% pelo WhatsApp. Solicita documentos, analisa com IA, valida dados e cria cadastro automaticamente.",
+    "before": [
+      { "metric": "Tempo de onboarding", "value": "5 dias" },
+      { "metric": "Documentos perdidos", "value": "30%" },
+      { "metric": "Abandono", "value": "55%" }
+    ],
+    "after": [
+      { "metric": "Tempo de onboarding", "value": "20min" },
+      { "metric": "Documentos perdidos", "value": "0%" },
+      { "metric": "Abandono", "value": "8%" }
+    ],
+    "steps": [
+      "Solicita documentos",
+      "Analisa documento com IA",
+      "Extracao de dados",
+      "Protecao de dados sensiveis",
+      "Cadastra cliente",
+      "Boas-vindas"
+    ]
+  },
+  "digitalAccount": {
+    "name": "Abertura de Conta Digital",
+    "description": "KYC completo pelo WhatsApp em minutos. Da foto do documento a conta ativa, tudo automatico.",
+    "before": [
+      { "metric": "Tempo de onboarding", "value": "5 dias" },
+      { "metric": "Abandono KYC", "value": "25%" },
+      { "metric": "Custo por abertura", "value": "R$ 85" }
+    ],
+    "after": [
+      { "metric": "Tempo de onboarding", "value": "20min" },
+      { "metric": "Abandono KYC", "value": "5%" },
+      { "metric": "Custo por abertura", "value": "R$ 4" }
+    ],
+    "steps": [
+      "Solicita documentos",
+      "Analisa documento com IA",
+      "Validacao automatica",
+      "Protecao de dados sensiveis",
+      "Cria conta",
+      "Boas-vindas"
+    ]
+  },
+  "userOnboarding": {
+    "name": "Onboarding de Usuarios SaaS",
+    "description": "Guie novos usuarios pelo produto via WhatsApp. Tutoriais, duvidas e feedback — tudo conversacional.",
+    "before": [
+      { "metric": "Ativacao", "value": "25%" },
+      { "metric": "Churn 1o mes", "value": "40%" },
+      { "metric": "Tickets suporte", "value": "80/dia" }
+    ],
+    "after": [
+      { "metric": "Ativacao", "value": "65%" },
+      { "metric": "Churn 1o mes", "value": "12%" },
+      { "metric": "Tickets suporte", "value": "15/dia" }
+    ],
+    "steps": [
+      "Detecta novo usuario",
+      "Mensagem de boas-vindas",
+      "Envia tutorial personalizado",
+      "Responde perguntas",
+      "Coleta feedback"
+    ]
+  },
+  "enrollment": {
+    "name": "Matricula Automatizada",
+    "description": "Captacao e matricula 100% pelo WhatsApp. Apresenta cursos, coleta dados e envia link de matricula.",
+    "before": [
+      { "metric": "Matriculas/mes", "value": "40" },
+      { "metric": "Custo por matricula", "value": "R$ 120" },
+      { "metric": "Tempo de resposta", "value": "6h" }
+    ],
+    "after": [
+      { "metric": "Matriculas/mes", "value": "150+" },
+      { "metric": "Custo por matricula", "value": "R$ 8" },
+      { "metric": "Tempo de resposta", "value": "15s" }
+    ],
+    "steps": [
+      "Apresenta cursos",
+      "Identifica interesse",
+      "Registra aluno",
+      "Link de matricula",
+      "Envia proposta"
+    ]
+  },
+  "campaigns": {
+    "name": "Campanhas WhatsApp",
+    "description": "Envio em massa com personalizacao IA. Segmente sua base, crie mensagens unicas e acompanhe resultados.",
+    "before": [
+      { "metric": "Taxa de abertura", "value": "20% (email)" },
+      { "metric": "Conversao", "value": "2%" },
+      { "metric": "Personalizacao", "value": "Nenhuma" }
+    ],
+    "after": [
+      { "metric": "Taxa de abertura", "value": "91% (WhatsApp)" },
+      { "metric": "Conversao", "value": "12%" },
+      { "metric": "Personalizacao", "value": "Por perfil IA" }
+    ],
+    "steps": [
+      "Segmenta base de contatos",
+      "IA personaliza mensagem",
+      "Envia campanha",
+      "Aguarda interacao",
+      "Registra engajamento"
+    ]
+  },
+  "cartRecovery": {
+    "name": "Recuperacao de Carrinho",
+    "description": "Recupere vendas perdidas com IA conversacional. Detecta carrinho abandonado, oferece cupom e facilita a compra.",
+    "before": [
+      { "metric": "Recuperacao", "value": "5%" },
+      { "metric": "Canal", "value": "Email" },
+      { "metric": "Conversao", "value": "Baixa" }
+    ],
+    "after": [
+      { "metric": "Recuperacao", "value": "28%" },
+      { "metric": "Canal", "value": "WhatsApp" },
+      { "metric": "Conversao", "value": "3x maior" }
+    ],
+    "steps": [
+      "Detecta carrinho abandonado",
+      "Busca dados do cliente",
+      "Gera mensagem personalizada",
+      "Envia lembrete",
+      "Link de checkout"
+    ]
+  },
+  "npsFeedback": {
+    "name": "Coleta de NPS e Feedback",
+    "description": "Pesquisa conversacional com taxa de resposta 5x maior. Coleta NPS, categoriza e alerta equipe automaticamente.",
+    "before": [
+      { "metric": "Taxa de resposta", "value": "8%" },
+      { "metric": "Canal", "value": "Email" },
+      { "metric": "Insights", "value": "Mensais" }
+    ],
+    "after": [
+      { "metric": "Taxa de resposta", "value": "45%" },
+      { "metric": "Canal", "value": "WhatsApp" },
+      { "metric": "Insights", "value": "Tempo real" }
+    ],
+    "steps": [
+      "Detecta interacao finalizada",
+      "Envia pesquisa conversacional",
+      "Coleta NPS e feedback",
+      "Registra dados",
+      "Alerta equipe (detratores)"
+    ]
+  },
+  "proactiveRenewal": {
+    "name": "Renovacao Proativa",
+    "description": "Lembrete automatico 30 dias antes do vencimento. Agente IA negocia condicoes e envia link de pagamento.",
+    "before": [
+      { "metric": "Taxa de renovacao", "value": "60%" },
+      { "metric": "Contato", "value": "Manual" },
+      { "metric": "Personalizacao", "value": "Nenhuma" }
+    ],
+    "after": [
+      { "metric": "Taxa de renovacao", "value": "85%" },
+      { "metric": "Contato", "value": "Automatico 30d antes" },
+      { "metric": "Personalizacao", "value": "Por perfil" }
+    ],
+    "steps": [
+      "30 dias antes do vencimento",
+      "Busca dados do cliente",
+      "Proposta personalizada",
+      "Envia lembrete",
+      "Link de pagamento"
+    ]
+  },
+  "claimNotification": {
+    "name": "Aviso de Sinistro",
+    "description": "Do acidente a abertura do processo em 10 minutos. Fotos, audio e documentos analisados por IA pelo WhatsApp.",
+    "before": [
+      { "metric": "Tempo do processo", "value": "5 dias" },
+      { "metric": "Docs incompletos", "value": "40%" },
+      { "metric": "Custo por sinistro", "value": "R$ 120" }
+    ],
+    "after": [
+      { "metric": "Tempo do processo", "value": "10min" },
+      { "metric": "Docs incompletos", "value": "0%" },
+      { "metric": "Custo por sinistro", "value": "R$ 8" }
+    ],
+    "steps": [
+      "Solicita detalhes",
+      "Analisa imagens",
+      "Extracao de dados",
+      "Protecao de dados sensiveis",
+      "Anexa documentos",
+      "Confirma abertura"
+    ]
+  },
+  "digitalInspection": {
+    "name": "Vistoria Digital",
+    "description": "Fotos do veiculo analisadas por IA em minutos. Sem vistoriador presencial, 100% pelo WhatsApp.",
+    "before": [
+      { "metric": "Tempo de vistoria", "value": "3 dias" },
+      { "metric": "Metodo", "value": "Presencial" },
+      { "metric": "Custo por vistoria", "value": "R$ 150" }
+    ],
+    "after": [
+      { "metric": "Tempo de vistoria", "value": "15min" },
+      { "metric": "Metodo", "value": "Autoservico IA" },
+      { "metric": "Custo por vistoria", "value": "R$ 5" }
+    ],
+    "steps": [
+      "Instrucoes de fotos",
+      "Recebe fotos",
+      "Analisa veiculo",
+      "Classifica condicao",
+      "Decisao automatica",
+      "Resultado da vistoria"
+    ]
+  },
+  "digitalMenu": {
+    "name": "Cardapio Digital e Pedidos",
+    "description": "Receba pedidos pelo WhatsApp 24/7. IA mostra cardapio, coleta pedido, calcula total e coordena entrega.",
+    "before": [
+      { "metric": "Pedidos/dia", "value": "40" },
+      { "metric": "Erros de pedido", "value": "20%" },
+      { "metric": "Canal", "value": "Telefone" }
+    ],
+    "after": [
+      { "metric": "Pedidos/dia", "value": "200+" },
+      { "metric": "Erros de pedido", "value": "2%" },
+      { "metric": "Canal", "value": "WhatsApp 24/7" }
+    ],
+    "steps": [
+      "Cliente inicia pedido",
+      "Apresenta cardapio",
+      "Coleta itens",
+      "Calcula total",
+      "Envia para cozinha"
+    ]
+  },
+  "conversationalPix": {
+    "name": "Pix Conversacional",
+    "description": "Transferencias por mensagem de texto ou audio. IA transcreve, extrai dados e executa Pix em segundos.",
+    "before": [
+      { "metric": "Tempo por Pix", "value": "3min (app)" },
+      { "metric": "Canal", "value": "Apenas app" },
+      { "metric": "Acessibilidade", "value": "Limitada" }
+    ],
+    "after": [
+      { "metric": "Tempo por Pix", "value": "15s (WhatsApp)" },
+      { "metric": "Canal", "value": "WhatsApp 24/7" },
+      { "metric": "Acessibilidade", "value": "Texto ou audio" }
+    ],
+    "steps": [
+      "Transcreve audio",
+      "Identifica dados da transferencia",
+      "Validacao automatica",
+      "Executa transferencia",
+      "Confirma operacao"
+    ]
+  },
+  "smartScheduling": {
+    "name": "Agendamento Inteligente",
+    "description": "Encontra horarios disponiveis, agenda reunioes e envia lembretes automaticos — tudo pelo WhatsApp.",
+    "before": [
+      { "metric": "Agendamentos/dia", "value": "15" },
+      { "metric": "No-show", "value": "40%" },
+      { "metric": "Tempo para agendar", "value": "2h" }
+    ],
+    "after": [
+      { "metric": "Agendamentos/dia", "value": "80+" },
+      { "metric": "No-show", "value": "8%" },
+      { "metric": "Tempo para agendar", "value": "2min" }
+    ],
+    "steps": [
+      "Cliente solicita agendamento",
+      "Identifica servico desejado",
+      "Busca horarios disponiveis",
+      "Confirma agendamento",
+      "Envia lembrete"
+    ]
+  },
+  "healthScheduling": {
+    "name": "Agendamento de Consultas",
+    "description": "Clinica com agendamento inteligente 24/7. Identifica especialidade, agenda consulta e envia lembrete.",
+    "before": [
+      { "metric": "Agendamentos/dia", "value": "25" },
+      { "metric": "No-show", "value": "35%" },
+      { "metric": "Recepcionistas", "value": "3" }
+    ],
+    "after": [
+      { "metric": "Agendamentos/dia", "value": "100+" },
+      { "metric": "No-show", "value": "8%" },
+      { "metric": "Recepcionistas", "value": "1" }
+    ],
+    "steps": [
+      "Agente de saude atende",
+      "Identifica especialidade",
+      "Busca horarios",
+      "Confirma agendamento",
+      "Lembrete automatico"
+    ]
+  },
+  "notifications": {
+    "name": "Notificacoes Transacionais",
+    "description": "Lembretes de pagamento, atualizacoes de status e alertas — tudo pelo WhatsApp com 91% de abertura.",
+    "before": [
+      { "metric": "Taxa de abertura", "value": "20% (email)" },
+      { "metric": "Engajamento", "value": "Baixo" },
+      { "metric": "Canal", "value": "Email" }
+    ],
+    "after": [
+      { "metric": "Taxa de abertura", "value": "91% (WhatsApp)" },
+      { "metric": "Engajamento", "value": "4x maior" },
+      { "metric": "Canal", "value": "WhatsApp" }
+    ],
+    "steps": [
+      "Evento transacional",
+      "Personaliza mensagem",
+      "Envia notificacao",
+      "Responde se necessario",
+      "Registra engajamento"
+    ]
+  }
+}

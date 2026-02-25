@@ -1,14 +1,38 @@
 {
   "hero": {
     "badge": "USE CASES",
-    "heading": "Which scenario",
-    "headingGradient": "looks like yours?",
-    "subtitle": "See how real companies use Catalisa to automate operations with WhatsApp and AI."
+    "heading": "30+ automations",
+    "headingGradient": "ready to use.",
+    "subtitle": "Playbooks by function, by industry and with calculated ROI. Find the scenario that matches yours."
   },
-  "templates": {
-    "heading": "Agent templates",
-    "subtitle": "Install pre-configured agents with one click and customize for your business."
+  "stats": {
+    "templates": "30+ playbooks",
+    "industries": "10 industries",
+    "blocks": "60+ blocks"
   },
+  "featured": {
+    "heading": "Featured playbooks",
+    "subtitle": "Most used by our customers"
+  },
+  "byFunction": {
+    "heading": "By function",
+    "viewAll": "View all",
+    "vendas": "Sales",
+    "suporte": "Support",
+    "financeiro": "Financial",
+    "onboarding": "Onboarding"
+  },
+  "byIndustry": {
+    "heading": "By industry",
+    "subtitle": "Specialized solutions for your segment"
+  },
+  "industryCards": [
+    { "label": "Fintech", "desc": "Origination, KYC, collections, credit simulation", "path": "/fintech" },
+    { "label": "Banking", "desc": "Digital account, conversational Pix, Open Finance", "path": "/banking" },
+    { "label": "Insurance", "desc": "Claims, quotes, renewal, digital inspection", "path": "/insurance" },
+    { "label": "Retail", "desc": "Customer service, digital menu, post-sale", "path": "/retail" },
+    { "label": "Startups", "desc": "Automated SDR, onboarding, tech support", "path": "/startups" }
+  ],
   "beforeAfter": {
     "before": "BEFORE",
     "after": "AFTER"
@@ -29,8 +53,8 @@
     }
   },
   "cta": {
-    "heading": "Which scenario looks most like yours?",
-    "subtitle": "Talk to our team to build the ideal automation for your business.",
+    "heading": "Didn't find your scenario?",
+    "subtitle": "Talk to our team and we'll build the ideal automation for your business.",
     "button": "Let's talk"
   }
 }

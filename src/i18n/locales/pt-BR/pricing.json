@@ -1,66 +1,195 @@
 {
   "hero": {
-    "heading": "Planos que crescem",
-    "headingGradient": "com voce",
-    "subtitle": "Sem contrato de fidelidade. Escale conforme sua operacao cresce. Comece pequeno, pense grande."
+    "badge": "PRECOS",
+    "heading": "Comece gratis.",
+    "headingGradient": "Escale quando quiser.",
+    "subtitle": "Planos transparentes com precos reais. Sem surpresas, sem contrato de fidelidade."
+  },
+  "billing": {
+    "monthly": "Mensal",
+    "annual": "Anual",
+    "saveTag": "Economize 17%",
+    "perMonth": "/mes",
+    "billedAnnually": "cobrado anualmente"
   },
   "plans": [
     {
-      "name": "Starter",
-      "description": "Para times pequenos que querem comecar a automatizar.",
-      "price": "Sob consulta",
+      "name": "Free",
+      "description": "Para testar e validar sua primeira automacao.",
+      "price": "R$ 0",
+      "priceAnnual": "R$ 0",
       "features": [
-        "Ate 1.000 conversas/mes",
-        "5 building blocks inclusos",
+        "100 conversas/mes",
         "1 agente IA",
-        "QR Code ou Cloud API",
+        "10 building blocks basicos",
+        "1 membro",
+        "WhatsApp QR Code",
+        "Studio basico",
+        "CRM basico",
+        "Suporte community",
+        "Retencao de dados: 30 dias"
+      ],
+      "cta": "Comecar gratis",
+      "ctaVariant": "outline"
+    },
+    {
+      "name": "Starter",
+      "description": "Para times pequenos que querem automatizar de verdade.",
+      "price": "R$ 297",
+      "priceAnnual": "R$ 247",
+      "features": [
+        "1.000 conversas/mes",
+        "3 agentes IA",
+        "25 building blocks",
+        "3 membros",
+        "WhatsApp QR + Cloud API",
+        "Studio completo",
+        "CRM completo",
         "Suporte por email",
-        "CRM basico"
+        "SLA 99%",
+        "Retencao de dados: 90 dias"
+      ],
+      "cta": "Comecar agora"
+    },
+    {
+      "name": "Professional",
+      "description": "Para operacoes que precisam de poder total.",
+      "price": "R$ 897",
+      "priceAnnual": "R$ 747",
+      "badge": "MAIS POPULAR",
+      "highlighted": true,
+      "features": [
+        "5.000 conversas/mes",
+        "10 agentes IA",
+        "Todos building blocks",
+        "10 membros",
+        "WhatsApp Cloud API",
+        "Studio + AI Builder",
+        "CRM completo",
+        "Suporte prioritario (8h)",
+        "SLA 99.5%",
+        "Retencao de dados: 1 ano"
       ],
       "cta": "Comecar agora"
     },
     {
       "name": "Business",
-      "description": "Para operacoes em escala que precisam de poder total.",
-      "price": "Sob consulta",
-      "badge": "MAIS POPULAR",
-      "highlighted": true,
+      "description": "Para operacoes em escala com alto volume.",
+      "price": "R$ 2.497",
+      "priceAnnual": "R$ 2.097",
       "features": [
-        "Conversas ilimitadas",
-        "Building blocks ilimitados",
+        "25.000 conversas/mes",
         "Agentes IA ilimitados",
-        "Cloud API + QR Code",
-        "Suporte prioritario",
-        "CRM completo",
-        "Workflows avancados",
-        "Catalisa Studio com IA"
+        "Todos building blocks",
+        "25 membros",
+        "WhatsApp multi-numero",
+        "Studio + AI Builder",
+        "CRM completo + API",
+        "Suporte prioritario (4h) + Slack",
+        "SLA 99.9%",
+        "Retencao de dados: 2 anos"
       ],
       "cta": "Falar com vendas"
     },
     {
       "name": "Enterprise",
-      "description": "Para grandes operacoes com requisitos de compliance e seguranca.",
+      "description": "Para grandes operacoes com compliance e seguranca.",
       "price": "Customizado",
+      "priceAnnual": "Customizado",
       "features": [
-        "Tudo do Business",
-        "Multi-tenant dedicado",
-        "SLA customizado (99.9%+)",
-        "Onboarding dedicado",
-        "Suporte 24/7",
-        "Compliance dedicado (LGPD, BACEN)",
-        "API & SDK ilimitados",
-        "Account manager dedicado"
+        "Conversas ilimitadas",
+        "Agentes IA ilimitados",
+        "Todos + custom blocks",
+        "Membros ilimitados",
+        "WhatsApp dedicado",
+        "Studio + custom",
+        "CRM + custom",
+        "Suporte 24/7 + Account Manager",
+        "SLA 99.95%+",
+        "Retencao de dados: custom"
       ],
       "cta": "Falar com especialista"
     }
   ],
-  "disclaimer": "Valores sob consulta. Os planos podem ser personalizados de acordo com sua necessidade. Entre em contato para uma proposta personalizada.",
+  "comparison": {
+    "heading": "Compare os planos",
+    "headingGradient": "em detalhe",
+    "columns": [
+      { "label": "Free" },
+      { "label": "Starter" },
+      { "label": "Professional", "highlighted": true },
+      { "label": "Business" },
+      { "label": "Enterprise" }
+    ],
+    "rows": [
+      { "feature": "Conversas/mes", "values": ["100", "1.000", "5.000", "25.000", "Ilimitado"] },
+      { "feature": "Agentes IA", "values": ["1", "3", "10", "Ilimitado", "Ilimitado"] },
+      { "feature": "Building Blocks", "values": ["10 basicos", "25", "Todos", "Todos", "Todos + custom"] },
+      { "feature": "Membros", "values": ["1", "3", "10", "25", "Ilimitado"] },
+      { "feature": "WhatsApp", "values": ["QR Code", "QR + Cloud API", "Cloud API", "Multi-numero", "Dedicado"] },
+      { "feature": "Catalisa Studio", "values": ["Basico", "Completo", "Completo + AI Builder", "Completo + AI Builder", "Completo + custom"] },
+      { "feature": "CRM", "values": ["Basico", "Completo", "Completo", "Completo + API", "Completo + custom"] },
+      { "feature": "Suporte", "values": ["Community", "Email", "Prioritario (8h)", "Prioritario (4h) + Slack", "24/7 + AM"] },
+      { "feature": "SLA", "values": ["-", "99%", "99.5%", "99.9%", "99.95%+"] },
+      { "feature": "Retencao de dados", "values": ["30 dias", "90 dias", "1 ano", "2 anos", "Custom"] }
+    ]
+  },
+  "addons": {
+    "heading": "Add-ons",
+    "headingGradient": "para expandir",
+    "subtitle": "Adicione capacidades extras conforme sua necessidade cresce.",
+    "items": [
+      { "name": "+1.000 conversas", "price": "R$ 49/mes", "description": "Pacote adicional de conversas mensais" },
+      { "name": "+1 Agente IA", "price": "R$ 97/mes", "description": "Agente adicional para automacoes" },
+      { "name": "Blocos financeiros", "price": "R$ 297/mes", "description": "PRICE, SAC, Decision Engine" },
+      { "name": "Open Finance", "price": "R$ 497/mes", "description": "Consulta de dados abertos e scoring" },
+      { "name": "Infra dedicada", "price": "R$ 997/mes", "description": "Ambiente isolado de alta performance" },
+      { "name": "White-label", "price": "Custom", "description": "Marca propria em toda plataforma" }
+    ]
+  },
+  "savings": {
+    "heading": "Economize vs. contratar",
+    "subtitle": "Compare o custo da Catalisa com o de manter uma equipe tradicional.",
+    "traditional": {
+      "title": "Equipe tradicional",
+      "items": [
+        { "label": "3 atendentes (CLT)", "value": "R$ 9.000/mes" },
+        { "label": "Ferramentas (CRM, help desk)", "value": "R$ 1.500/mes" },
+        { "label": "Treinamento e turnover", "value": "R$ 2.000/mes" }
+      ],
+      "total": "R$ 12.500/mes"
+    },
+    "catalisa": {
+      "title": "Catalisa Business",
+      "items": [
+        { "label": "Plano Business", "value": "R$ 2.497/mes" },
+        { "label": "CRM, Studio, AI inclusos", "value": "R$ 0" },
+        { "label": "Funciona 24/7, sem ferias", "value": "R$ 0" }
+      ],
+      "total": "R$ 2.497/mes"
+    },
+    "savingsLabel": "Economia mensal",
+    "savingsValue": "R$ 10.003",
+    "savingsPercent": "80%"
+  },
+  "calculator": {
+    "heading": "Qual plano e ideal para voce?",
+    "subtitle": "Responda 2 perguntas e descubra.",
+    "conversationsLabel": "Quantas conversas/mes voce tem?",
+    "agentsLabel": "Quantos agentes IA voce precisa?",
+    "recommendLabel": "Plano recomendado:",
+    "conversationsMarks": ["100", "1K", "5K", "25K", "50K+"]
+  },
   "faq": {
-    "heading": "Perguntas sobre precos",
+    "heading": "Perguntas frequentes",
     "items": [
       {
+        "question": "O plano Free e realmente gratis?",
+        "answer": "Sim. O Free inclui 100 conversas/mes, 1 agente IA e 10 building blocks basicos. Nao precisa de cartao de credito para comecar. E funcional, nao e demo — voce pode criar automacoes reais."
+      },
+      {
         "question": "Existe periodo minimo de contrato?",
-        "answer": "Nao. Nossos planos sao mensais e voce pode cancelar a qualquer momento sem multa. Para planos anuais, oferecemos desconto especial."
+        "answer": "Nao. Todos os planos pagos sao mensais e voce pode cancelar a qualquer momento sem multa. Para planos anuais, oferecemos 17% de desconto."
       },
       {
         "question": "O que conta como uma 'conversa'?",
@@ -68,20 +197,28 @@
       },
       {
         "question": "Posso mudar de plano a qualquer momento?",
-        "answer": "Sim. Voce pode fazer upgrade ou downgrade do plano a qualquer momento. As mudancas entram em vigor no proximo ciclo de cobranca."
+        "answer": "Sim. Voce pode fazer upgrade ou downgrade a qualquer momento. No upgrade, a diferenca e cobrada pro-rata. No downgrade, o credito e aplicado no proximo ciclo."
       },
       {
         "question": "Existe custo adicional pelo WhatsApp Cloud API?",
-        "answer": "A Catalisa nao cobra pelo uso da Cloud API em si. Porem, a Meta cobra por conversa iniciada pela empresa (conforme tabela oficial da Meta). Conversas iniciadas pelo usuario sao gratuitas nas primeiras 1.000/mes."
-      },
-      {
-        "question": "Posso testar antes de contratar?",
-        "answer": "Sim. Oferecemos uma demonstracao completa e personalizada. Agende uma demo com nosso time para ver a plataforma funcionando com seu caso de uso real."
+        "answer": "A Catalisa nao cobra pelo uso da Cloud API em si. Porem, a Meta cobra por conversa iniciada pela empresa (conforme tabela oficial). Conversas iniciadas pelo usuario sao gratuitas nas primeiras 1.000/mes."
       },
       {
         "question": "Como funciona o suporte?",
-        "answer": "Starter: suporte por email em horario comercial. Business: suporte prioritario com SLA de resposta. Enterprise: suporte 24/7 com account manager dedicado."
+        "answer": "Free: community forum. Starter: email em horario comercial. Professional: prioritario com SLA de 8h. Business: prioritario com SLA de 4h + canal Slack. Enterprise: 24/7 com account manager dedicado."
+      },
+      {
+        "question": "Posso testar antes de contratar um plano pago?",
+        "answer": "Sim! Comece pelo plano Free e teste com ate 100 conversas/mes. Quando estiver pronto para escalar, faca upgrade. Tambem oferecemos demos personalizadas para empresas."
+      },
+      {
+        "question": "Os precos incluem impostos?",
+        "answer": "Os precos exibidos nao incluem impostos. O valor final pode variar conforme a localizacao e o regime tributario da sua empresa."
       }
     ]
+  },
+  "pageCTA": {
+    "heading": "Pronto para comecar?",
+    "subtitle": "Comece gratis hoje e escale quando precisar. Sem cartao de credito."
   }
 }

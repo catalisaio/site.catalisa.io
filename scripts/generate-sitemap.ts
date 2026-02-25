@@ -30,6 +30,7 @@ const routes: SitemapRoute[] = [
   { ptPath: '/press-kit', enPath: '/en/press-kit', priority: 0.5, changefreq: 'monthly' },
   { ptPath: '/termos', enPath: '/en/terms', priority: 0.3, changefreq: 'monthly' },
   { ptPath: '/seguranca', enPath: '/en/security', priority: 0.7, changefreq: 'monthly' },
+  { ptPath: '/playbooks', enPath: '/en/playbooks', priority: 0.9, changefreq: 'weekly' },
   { ptPath: '/precos', enPath: '/en/pricing', priority: 0.8, changefreq: 'monthly' },
   { ptPath: '/como-funciona', enPath: '/en/how-it-works', priority: 0.8, changefreq: 'weekly' },
   { ptPath: '/integracoes/whatsapp', enPath: '/en/integrations/whatsapp', priority: 0.7, changefreq: 'monthly' },

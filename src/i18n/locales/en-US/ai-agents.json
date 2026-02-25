@@ -1,44 +1,45 @@
 {
   "hero": {
     "badge": "AI AGENTS",
-    "heading": "Create AI specialists that work",
-    "headingGradient": "24/7 on WhatsApp",
-    "subtitle": "It's not a chatbot. It's an entire team. Each agent has its own personality, tools and context."
+    "heading": "Your operations team.",
+    "headingGradient": "Available 24/7.",
+    "subtitle": "Specialized agents that serve, qualify, sell and resolve — like real team members.",
+    "stats": {
+      "specialties": { "value": "5", "label": "Specialties" },
+      "uptime": { "value": "24/7", "label": "Online" },
+      "response": { "value": "5s", "label": "Avg response" }
+    }
   },
   "comparison": {
-    "heading": "The difference: Assistant vs Agent vs",
-    "headingHighlight": "Team",
+    "heading": "Chatbot vs Agent vs",
+    "headingGradient": "Team",
+    "subtitle": "Understand the difference between a basic chatbot, an AI agent and a full agent team.",
     "yourProduct": "YOUR PRODUCT",
     "agentCallout": "Your agent doesn't just inform.",
     "agentCalloutDesc": "It qualifies leads, schedules meetings, processes documents, updates CRM, sends messages — all autonomously.",
-    "items": [
-      {
-        "type": "Chatbot",
-        "level": "Informational",
-        "description": "Answers questions based on FAQ",
-        "capabilities": ["Pre-defined answers", "Option menus", "Routes to human"]
-      },
-      {
-        "type": "AI Agent",
-        "level": "Operational",
-        "description": "Executes tasks with real tools",
-        "capabilities": ["Qualifies leads", "Schedules meetings", "Updates CRM", "Processes documents", "Sends messages"]
-      },
-      {
-        "type": "Agent Team",
-        "level": "Orchestrated",
-        "description": "Each agent specializes in one area",
-        "capabilities": ["SDR qualifies", "Support resolves", "Billing negotiates", "Onboarding guides", "Orchestration via workflow"]
-      }
-    ]
+    "table": {
+      "columns": [
+        { "label": "Chatbot" },
+        { "label": "AI Agent" },
+        { "label": "Agent Team", "highlighted": true }
+      ],
+      "rows": [
+        { "feature": "Responses", "values": ["Pre-defined", "Contextual", "Specialized"] },
+        { "feature": "Tools", "values": ["None", "Limited", "60+ integrations"] },
+        { "feature": "Memory", "values": ["Session", "Per lead", "Cross-agent"] },
+        { "feature": "Autonomy", "values": ["Low", "Medium", "High"] },
+        { "feature": "Scalability", "values": ["Linear", "Good", "Unlimited"] },
+        { "feature": "Orchestration", "values": ["Manual", "Basic", "Via workflow"] }
+      ]
+    }
   },
   "howAgentsWork": {
     "heading": "How agents work",
     "items": [
-      { "title": "System Prompt", "description": "You define the agent's personality, rules and objective." },
-      { "title": "Tools", "description": "Choose which tools the agent can use (60+ built-in)." },
-      { "title": "Conversations", "description": "Persistent context per lead. Memory of all interactions." },
-      { "title": "Workflows", "description": "Agents embedded in automations. Triggered by events." }
+      { "title": "Define the personality", "description": "System prompt with rules, tone and objective. Each agent knows exactly what to do." },
+      { "title": "Connect tools", "description": "Choose from 60+ building blocks — CRM, WhatsApp, APIs, calendar and more." },
+      { "title": "Activate on WhatsApp", "description": "Agents operate via Meta's official Cloud API. 24/7 service without QR code." },
+      { "title": "Orchestrate via workflow", "description": "Combine agents into automated flows. SDR qualifies, support resolves, billing negotiates." }
     ]
   },
   "marketplace": {
@@ -88,5 +89,9 @@
       { "title": "Data", "description": "Extraction and transformation" },
       { "title": "External APIs", "description": "Generic HTTP integration" }
     ]
+  },
+  "pageCTA": {
+    "heading": "Build your AI agent team",
+    "subtitle": "Talk to our team and see how agents can transform your operations."
   }
 }

@@ -1,5 +1,5 @@
 import {
-  Box, Container, Heading, Text, VStack, SimpleGrid, HStack, Icon, Badge, Button,
+  Box, Heading, Text, VStack, SimpleGrid, HStack, Icon, Badge,
 } from '@chakra-ui/react';
 import {
   FiCpu, FiMessageCircle, FiUsers, FiDollarSign, FiShield, FiGlobe, FiGitBranch,
@@ -8,12 +8,14 @@ import {
 import { useTranslation } from 'react-i18next';
 import { useTranslatedCapabilities } from '../i18n/useTranslatedData';
 import { SectionWrapper } from '../components/shared/SectionWrapper';
+import { PageHero } from '../components/shared/PageHero';
+import { SectionHeader } from '../components/shared/SectionHeader';
+import { PageCTA } from '../components/shared/PageCTA';
 import { MotionBox } from '../components/motion';
-import { GradientText } from '../components/shared/GradientText';
+import { AnimatedCounter } from '../components/shared/AnimatedCounter';
 import { categoryBadges } from '../data/capabilityClusters';
 import { FinalCTA } from '../components/sections/FinalCTA';
-
-const WHATSAPP_URL = 'https://wa.me/5511977303414?text=Ola!%20Quero%20saber%20mais%20sobre%20a%20Catalisa.';
+import { useLocalizedPath } from '../i18n/useLocalizedPath';
 
 const iconMap: Record<string, React.ElementType> = {
   FiCpu, FiMessageCircle, FiUsers, FiDollarSign, FiShield, FiGlobe, FiGitBranch,
@@ -22,37 +24,35 @@ const iconMap: Record<string, React.ElementType> = {
 
 export function BuildingBlocks() {
   const { t } = useTranslation('building-blocks');
+  const { t: tc } = useTranslation('common');
+  const lp = useLocalizedPath();
   const { capabilityClusters, businessRecipes } = useTranslatedCapabilities();
+
   return (
     <>
       {/* Hero */}
-      <Box id="hero" bg="hero.bg" pt={20} pb={16}>
-        <Container maxW="1280px">
-          <VStack spacing={6} textAlign="center" maxW="800px" mx="auto">
-            <Badge colorScheme="orange" fontSize="xs" px={3} py={1} borderRadius="full">
-              {t('hero.badge')}
-            </Badge>
-            <Heading as="h1" size="2xl" fontWeight="800" color="white" lineHeight="1.15">
-              <GradientText gradient="linear(to-r, catalisa.accent, catalisa.secondary)">{t('hero.headingGradient')}</GradientText>{' '}
-              {t('hero.heading')}
-            </Heading>
-            <Text color="whiteAlpha.700" fontSize="lg" maxW="600px" lineHeight="1.7">
-              {t('hero.subtitle')}
-            </Text>
-          </VStack>
-        </Container>
-      </Box>
+      <PageHero
+        badge={t('hero.badge')}
+        heading={t('hero.heading')}
+        headingGradient={t('hero.headingGradient')}
+        subtitle={t('hero.subtitle')}
+        accentColor="orange"
+        gradient="linear(to-r, catalisa.accent, catalisa.secondary)"
+        primaryCTA={{ label: tc('cta.letsChat') }}
+        secondaryCTA={{ label: tc('cta.seeInAction'), href: '#clusters' }}
+        stats={[
+          { value: '60+', label: t('summary.capabilities'), numericValue: 60, suffix: '+' },
+          { value: '10', label: t('summary.domains'), numericValue: 10 },
+          { value: '8', label: t('summary.triggers'), numericValue: 8 },
+        ]}
+      />
 
       {/* Cluster Grid */}
-      <SectionWrapper>
-        <VStack spacing={4} textAlign="center" mb={10}>
-          <Heading as="h2" size="xl" fontWeight="800">
-            {t('clusters.heading')}
-          </Heading>
-          <Text color="gray.500" maxW="600px">
-            {t('clusters.subtitle')}
-          </Text>
-        </VStack>
+      <SectionWrapper id="clusters">
+        <SectionHeader
+          heading={t('clusters.heading')}
+          subtitle={t('clusters.subtitle')}
+        />
 
         <SimpleGrid columns={{ base: 1, sm: 2, lg: 2 }} spacing={6}>
           {capabilityClusters.map((cluster, i) => {
@@ -71,7 +71,7 @@ export function BuildingBlocks() {
                   borderRadius="xl"
                   border="1px solid"
                   borderColor="gray.100"
-                  _hover={{ borderColor: `${cluster.color}.300`, boxShadow: 'md', transform: 'translateY(-2px)' }}
+                  _hover={{ borderColor: `${cluster.color}.300`, boxShadow: 'md', transform: 'translateY(-4px)' }}
                   transition="all 0.2s"
                   h="full"
                 >
@@ -81,9 +81,7 @@ export function BuildingBlocks() {
                     </Box>
                     <VStack align="flex-start" spacing={3} flex={1}>
                       <Heading as="h3" size="sm" fontWeight="700">{cluster.name}</Heading>
-                      <Text color="gray.500" fontSize="sm" lineHeight="1.6">
-                        {cluster.description}
-                      </Text>
+                      <Text color="gray.500" fontSize="sm" lineHeight="1.6">{cluster.description}</Text>
                       <VStack align="flex-start" spacing={1} w="full">
                         {cluster.outcomes.slice(0, 5).map((outcome) => (
                           <HStack key={outcome} spacing={2}>
@@ -105,42 +103,21 @@ export function BuildingBlocks() {
           })}
         </SimpleGrid>
 
-        {/* Platform extras + CTA */}
         <Box bg="gray.50" p={5} borderRadius="xl" mt={8} textAlign="center" border="1px solid" borderColor="gray.100">
           <Text color="gray.600" fontSize="sm">
             <Text as="span" fontWeight="700" color="gray.700">{t('platform.label')}</Text>{' '}
             {t('platform.description')}
           </Text>
-          <Button
-            as="a"
-            href={WHATSAPP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            variant="link"
-            color="brand.500"
-            fontSize="sm"
-            fontWeight="600"
-            mt={2}
-            rightIcon={<FiArrowRight />}
-          >
-            {t('cta.letsChat', { ns: 'common' })}
-          </Button>
         </Box>
       </SectionWrapper>
 
       {/* Business Recipes */}
       <SectionWrapper bg="gray.50">
-        <VStack spacing={4} textAlign="center" mb={12}>
-          <Badge colorScheme="brand" fontSize="xs" px={3} py={1} borderRadius="full">
-            {t('recipes.badge')}
-          </Badge>
-          <Heading as="h2" size="xl" fontWeight="800">
-            {t('recipes.heading')}
-          </Heading>
-          <Text color="gray.500" maxW="600px">
-            {t('recipes.subtitle')}
-          </Text>
-        </VStack>
+        <SectionHeader
+          badge={t('recipes.badge')}
+          heading={t('recipes.heading')}
+          subtitle={t('recipes.subtitle')}
+        />
 
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={6}>
           {businessRecipes.map((recipe, i) => (
@@ -151,7 +128,16 @@ export function BuildingBlocks() {
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, duration: 0.4 }}
             >
-              <Box bg="white" p={6} borderRadius="xl" border="1px solid" borderColor="gray.100" h="full">
+              <Box
+                bg="white"
+                p={6}
+                borderRadius="xl"
+                border="1px solid"
+                borderColor="gray.100"
+                h="full"
+                _hover={{ borderColor: 'brand.200', boxShadow: 'md', transform: 'translateY(-4px)' }}
+                transition="all 0.2s"
+              >
                 <VStack align="flex-start" spacing={4}>
                   <Heading as="h3" size="sm" fontWeight="700">{recipe.title}</Heading>
                   <Text color="gray.500" fontSize="sm">{recipe.description}</Text>
@@ -173,7 +159,7 @@ export function BuildingBlocks() {
                     ))}
                   </HStack>
                   <Text fontSize="xs" color="gray.400">
-                    {recipe.steps.map(s => s.label).join(' → ')}
+                    {recipe.steps.map(s => s.label).join(' \u2192 ')}
                   </Text>
                 </VStack>
               </Box>
@@ -182,19 +168,19 @@ export function BuildingBlocks() {
         </SimpleGrid>
       </SectionWrapper>
 
-      {/* Summary stats */}
+      {/* Summary Stats */}
       <SectionWrapper>
         <SimpleGrid columns={{ base: 2, md: 4 }} spacing={6} textAlign="center">
           <VStack>
-            <Text fontSize="3xl" fontWeight="800" color="brand.500">60+</Text>
+            <AnimatedCounter target={60} suffix="+" fontSize="3xl" fontWeight="800" color="brand.500" />
             <Text color="gray.500" fontSize="sm">{t('summary.capabilities')}</Text>
           </VStack>
           <VStack>
-            <Text fontSize="3xl" fontWeight="800" color="purple.500">10</Text>
+            <AnimatedCounter target={10} fontSize="3xl" fontWeight="800" color="purple.500" />
             <Text color="gray.500" fontSize="sm">{t('summary.domains')}</Text>
           </VStack>
           <VStack>
-            <Text fontSize="3xl" fontWeight="800" color="green.500">8</Text>
+            <AnimatedCounter target={8} fontSize="3xl" fontWeight="800" color="green.500" />
             <Text color="gray.500" fontSize="sm">{t('summary.triggers')}</Text>
           </VStack>
           <VStack>
@@ -204,21 +190,13 @@ export function BuildingBlocks() {
         </SimpleGrid>
       </SectionWrapper>
 
-      <Box textAlign="center" py={8}>
-        <Button
-          as="a"
-          href={WHATSAPP_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          size="lg"
-          bg="whatsapp.500"
-          color="white"
-          _hover={{ bg: 'whatsapp.600' }}
-          leftIcon={<FiMessageCircle />}
-        >
-          {t('cta.letsChat', { ns: 'common' })}
-        </Button>
-      </Box>
+      {/* PageCTA */}
+      <PageCTA
+        heading={t('clusters.heading')}
+        subtitle={t('hero.subtitle')}
+        primaryCTA={{ label: tc('cta.letsChat') }}
+        secondaryCTA={{ label: tc('cta.seeDemo'), to: lp('/demo') }}
+      />
 
       <FinalCTA />
     </>

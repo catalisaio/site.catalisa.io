@@ -28,6 +28,8 @@ const Pricing = lazy(() => import('./pages/Pricing').then(m => ({ default: m.Pri
 const HowItWorksPage = lazy(() => import('./pages/HowItWorks').then(m => ({ default: m.HowItWorks })));
 const WhatsAppIntegration = lazy(() => import('./pages/WhatsAppIntegration').then(m => ({ default: m.WhatsAppIntegration })));
 const CommercialPresentation = lazy(() => import('./pages/CommercialPresentation').then(m => ({ default: m.CommercialPresentation })));
+const Playbooks = lazy(() => import('./pages/Playbooks').then(m => ({ default: m.Playbooks })));
+const PlaybookDetail = lazy(() => import('./pages/PlaybookDetail').then(m => ({ default: m.PlaybookDetail })));
 const NotFound = lazy(() => import('./pages/NotFound').then(m => ({ default: m.NotFound })));
 
 function PageLoader() {
@@ -92,6 +94,8 @@ function App() {
                 <Route path="/varejo" element={<Retail />} />
                 <Route path="/startups" element={<Startups />} />
                 <Route path="/use-cases" element={<UseCases />} />
+                <Route path="/playbooks" element={<Playbooks />} />
+                <Route path="/playbooks/:playbookId" element={<PlaybookDetail />} />
                 <Route path="/contato" element={<Contact />} />
                 <Route path="/demo" element={<Demo />} />
                 <Route path="/politica-privacidade" element={<PrivacyPolicy />} />
@@ -116,6 +120,8 @@ function App() {
                 <Route path="retail" element={<Retail />} />
                 <Route path="startups" element={<Startups />} />
                 <Route path="use-cases" element={<UseCases />} />
+                <Route path="playbooks" element={<Playbooks />} />
+                <Route path="playbooks/:playbookId" element={<PlaybookDetail />} />
                 <Route path="contact" element={<Contact />} />
                 <Route path="demo" element={<Demo />} />
                 <Route path="privacy-policy" element={<PrivacyPolicy />} />

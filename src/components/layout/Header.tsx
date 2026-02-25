@@ -30,7 +30,6 @@ import { Link, useLocation } from 'react-router-dom';
 import {
   FiMenu,
   FiChevronDown,
-  FiMessageCircle,
   FiExternalLink,
   FiPlay,
   FiLayout,
@@ -58,8 +57,6 @@ import { useTranslation } from 'react-i18next';
 import { useLocalizedPath } from '../../i18n/useLocalizedPath';
 import { LanguageSwitcher } from '../shared/LanguageSwitcher';
 import { config } from '../../config';
-
-const WHATSAPP_URL = 'https://wa.me/5511977303414?text=Ola!%20Quero%20saber%20mais%20sobre%20a%20Catalisa.';
 
 type MegaMenuItem = {
   icon: IconType;
@@ -421,6 +418,22 @@ export function Header() {
               )}
             </MegaMenuPopover>
 
+            {/* Casos de Uso — top-level link */}
+            <Button
+              as={Link}
+              to={lp('/use-cases')}
+              variant="ghost"
+              size="sm"
+              color={isDarkHero ? 'whiteAlpha.800' : 'gray.600'}
+              fontWeight={pathname === lp('/use-cases') ? '600' : '400'}
+              _hover={{
+                color: isDarkHero ? 'white' : 'brand.500',
+                bg: isDarkHero ? 'whiteAlpha.100' : 'brand.50',
+              }}
+            >
+              {t('nav.useCases')}
+            </Button>
+
             {/* Developers link */}
             <Button
               as="a"
@@ -460,20 +473,6 @@ export function Header() {
               display={{ base: 'none', md: 'inline-flex' }}
             >
               {t('cta.seeDemo')}
-            </Button>
-            <Button
-              as="a"
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              size="sm"
-              bg="whatsapp.500"
-              color="white"
-              _hover={{ bg: 'whatsapp.600' }}
-              leftIcon={<FiMessageCircle />}
-              display={{ base: 'none', md: 'inline-flex' }}
-            >
-              {t('cta.letsChat')}
             </Button>
             <Box display={{ base: 'none', md: 'inline-flex' }}>
               <LanguageSwitcher isDark={isDarkHero} />
@@ -610,6 +609,18 @@ export function Header() {
                 </AccordionItem>
               </Accordion>
 
+              {/* Casos de Uso */}
+              <Button
+                as={Link}
+                to={lp('/use-cases')}
+                variant="ghost"
+                justifyContent="flex-start"
+                fontWeight={pathname === lp('/use-cases') ? '600' : '400'}
+                onClick={onClose}
+              >
+                {t('nav.useCases')}
+              </Button>
+
               {/* Developers */}
               <Button
                 as="a"
@@ -640,19 +651,6 @@ export function Header() {
                     onClick={onClose}
                   >
                     {t('cta.seeDemo')}
-                  </Button>
-                  <Button
-                    as="a"
-                    href={WHATSAPP_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    w="full"
-                    bg="whatsapp.500"
-                    color="white"
-                    _hover={{ bg: 'whatsapp.600' }}
-                    leftIcon={<FiMessageCircle />}
-                  >
-                    {t('cta.letsChat')}
                   </Button>
                 </VStack>
               </Box>

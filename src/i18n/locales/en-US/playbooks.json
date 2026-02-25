@@ -1,0 +1,700 @@
+{
+  "hero": {
+    "badge": "PLAYBOOKS",
+    "heading": "Start in minutes.",
+    "headingGradient": "Not months.",
+    "subtitle": "30+ ready-to-use automations. Pick a playbook, customize and activate."
+  },
+  "search": {
+    "placeholder": "Search playbooks..."
+  },
+  "categories": {
+    "all": "All",
+    "vendas": "Sales",
+    "suporte": "Support",
+    "financeiro": "Financial",
+    "onboarding": "Onboarding",
+    "marketing": "Marketing",
+    "operacoes": "Operations",
+    "produtividade": "Productivity"
+  },
+  "industries": {
+    "all": "All industries",
+    "geral": "General",
+    "fintech": "Fintech",
+    "banking": "Banking",
+    "insurance": "Insurance",
+    "retail": "Retail",
+    "saas": "SaaS",
+    "saude": "Healthcare",
+    "educacao": "Education",
+    "imobiliario": "Real Estate",
+    "ecommerce": "E-commerce"
+  },
+  "featured": {
+    "heading": "Featured playbooks",
+    "subtitle": "Most used by our customers"
+  },
+  "card": {
+    "useTemplate": "Use playbook",
+    "blocks": "Blocks used"
+  },
+  "detail": {
+    "backToTemplates": "Back to Playbooks",
+    "blocksUsed": "Building Blocks used",
+    "workflow": "How it works",
+    "results": "Expected results",
+    "before": "Before",
+    "after": "After",
+    "related": "Related playbooks",
+    "cta": "Activate this playbook",
+    "ctaSecondary": "Talk to specialist"
+  },
+  "empty": {
+    "heading": "No playbooks found",
+    "subtitle": "Try adjusting the filters or searching for another term."
+  },
+  "bottomCTA": {
+    "heading": "Didn't find what you need?",
+    "subtitle": "Describe what you need in Studio and AI builds it for you."
+  },
+  "sdr": {
+    "name": "Automated SDR",
+    "description": "Qualifies leads 24/7 on WhatsApp, collects information, classifies by priority and schedules meetings with sales reps.",
+    "before": [
+      { "metric": "Qualified leads/day", "value": "15" },
+      { "metric": "Cost per lead", "value": "R$ 45" },
+      { "metric": "Response time", "value": "4h" }
+    ],
+    "after": [
+      { "metric": "Qualified leads/day", "value": "200+" },
+      { "metric": "Cost per lead", "value": "R$ 2" },
+      { "metric": "Response time", "value": "10s" }
+    ],
+    "steps": [
+      "Lead reaches out",
+      "Agent qualifies lead",
+      "Collects information",
+      "Registers in CRM",
+      "Schedules meeting",
+      "Confirms booking"
+    ]
+  },
+  "followup": {
+    "name": "Smart Follow-up",
+    "description": "Never lose a lead. AI automatically follows up on every opportunity with personalized messages at the right time.",
+    "before": [
+      { "metric": "Follow-ups done", "value": "30%" },
+      { "metric": "Time between contacts", "value": "5 days" },
+      { "metric": "Conversion", "value": "8%" }
+    ],
+    "after": [
+      { "metric": "Follow-ups done", "value": "100%" },
+      { "metric": "Time between contacts", "value": "Automatic" },
+      { "metric": "Conversion", "value": "22%" }
+    ],
+    "steps": [
+      "Detects unresponsive lead",
+      "Fetches lead history",
+      "Generates personalized message",
+      "Sends follow-up",
+      "Awaits response",
+      "Updates CRM status"
+    ]
+  },
+  "leadQualification": {
+    "name": "SaaS Lead Qualification",
+    "description": "AI agent chats with SaaS leads, identifies product fit, qualifies with BANT and sends to external CRM.",
+    "before": [
+      { "metric": "Qualification rate", "value": "20%" },
+      { "metric": "Qualification time", "value": "2 days" },
+      { "metric": "Lost leads", "value": "45%" }
+    ],
+    "after": [
+      { "metric": "Qualification rate", "value": "65%" },
+      { "metric": "Qualification time", "value": "5min" },
+      { "metric": "Lost leads", "value": "5%" }
+    ],
+    "steps": [
+      "Lead arrives via form",
+      "AI starts conversation",
+      "Qualifies with BANT",
+      "Records score in CRM",
+      "Sends to external tool"
+    ]
+  },
+  "realEstate": {
+    "name": "Real Estate Assistant",
+    "description": "Captures and qualifies property prospects, presents personalized options and schedules visits automatically.",
+    "before": [
+      { "metric": "Visits scheduled/mo", "value": "30" },
+      { "metric": "No-show", "value": "40%" },
+      { "metric": "Time to schedule", "value": "24h" }
+    ],
+    "after": [
+      { "metric": "Visits scheduled/mo", "value": "120+" },
+      { "metric": "No-show", "value": "10%" },
+      { "metric": "Time to schedule", "value": "3min" }
+    ],
+    "steps": [
+      "Agent assists customer",
+      "Identifies preferences",
+      "Registers lead in CRM",
+      "Schedules visit",
+      "Confirms visit"
+    ]
+  },
+  "support247": {
+    "name": "24/7 Support",
+    "description": "Resolve common questions automatically and escalate only complex cases to humans. Works 24 hours, 7 days a week.",
+    "before": [
+      { "metric": "Tickets resolved/day", "value": "50" },
+      { "metric": "CSAT", "value": "3.2/5" },
+      { "metric": "Team needed", "value": "6 people" }
+    ],
+    "after": [
+      { "metric": "Tickets resolved/day", "value": "400+" },
+      { "metric": "CSAT", "value": "4.7/5" },
+      { "metric": "Team needed", "value": "2 people" }
+    ],
+    "steps": [
+      "Detects urgency",
+      "Support agent assists",
+      "Verifies resolution",
+      "Registers ticket",
+      "Sends feedback"
+    ]
+  },
+  "techSupport": {
+    "name": "AI Tech Support",
+    "description": "Knowledge base + AI resolves technical questions automatically. Escalates to humans only when needed.",
+    "before": [
+      { "metric": "Response time", "value": "3h" },
+      { "metric": "First contact resolution", "value": "30%" },
+      { "metric": "Team", "value": "5" }
+    ],
+    "after": [
+      { "metric": "Response time", "value": "20s" },
+      { "metric": "First contact resolution", "value": "75%" },
+      { "metric": "Team", "value": "1" }
+    ],
+    "steps": [
+      "Receives technical question",
+      "Classifies complexity",
+      "Searches knowledge base",
+      "Generates technical response",
+      "Sends solution"
+    ]
+  },
+  "postSale": {
+    "name": "E-commerce Post-Sale",
+    "description": "Automated e-commerce support. Checks order status, resolves exchanges/returns and collects feedback.",
+    "before": [
+      { "metric": "Tickets resolved/day", "value": "30" },
+      { "metric": "NPS", "value": "42" },
+      { "metric": "Cost per ticket", "value": "R$ 18" }
+    ],
+    "after": [
+      { "metric": "Tickets resolved/day", "value": "300+" },
+      { "metric": "NPS", "value": "78" },
+      { "metric": "Cost per ticket", "value": "R$ 1.50" }
+    ],
+    "steps": [
+      "Analyzes urgency",
+      "Post-sale agent assists",
+      "Queries external system",
+      "Generates personalized response",
+      "Sends resolution",
+      "Updates CRM record"
+    ]
+  },
+  "bankingSupport": {
+    "name": "Banking Support 24/7",
+    "description": "AI agent specialized in banking resolves balance inquiries, statements, card blocks and common questions.",
+    "before": [
+      { "metric": "Response time", "value": "2h" },
+      { "metric": "First contact resolution", "value": "35%" },
+      { "metric": "Agents", "value": "8" }
+    ],
+    "after": [
+      { "metric": "Response time", "value": "5s" },
+      { "metric": "First contact resolution", "value": "80%" },
+      { "metric": "Agents", "value": "2" }
+    ],
+    "steps": [
+      "Classifies demand",
+      "Defines service type",
+      "Banking agent assists",
+      "Continuous dialogue",
+      "Updates record"
+    ]
+  },
+  "insuranceSupport": {
+    "name": "Insurance Support 24/7",
+    "description": "Claim status, duplicate bills, coverage questions — all resolved by AI specialist in insurance.",
+    "before": [
+      { "metric": "Response time", "value": "4h" },
+      { "metric": "Autonomous resolution", "value": "30%" },
+      { "metric": "Agents", "value": "6" }
+    ],
+    "after": [
+      { "metric": "Response time", "value": "10s" },
+      { "metric": "Autonomous resolution", "value": "75%" },
+      { "metric": "Agents", "value": "1" }
+    ],
+    "steps": [
+      "Analyzes urgency",
+      "Classifies demand",
+      "Defines service type",
+      "Insurance agent assists",
+      "Confirmation and closure"
+    ]
+  },
+  "collections": {
+    "name": "Smart Collections",
+    "description": "Humanized collection with AI that negotiates. Respects business hours, analyzes sentiment and offers personalized terms.",
+    "before": [
+      { "metric": "Recovery rate", "value": "15%" },
+      { "metric": "Complaints", "value": "45/mo" },
+      { "metric": "Cost per contact", "value": "R$ 12" }
+    ],
+    "after": [
+      { "metric": "Recovery rate", "value": "42%" },
+      { "metric": "Complaints", "value": "3/mo" },
+      { "metric": "Cost per contact", "value": "R$ 0.50" }
+    ],
+    "steps": [
+      "Checks business hours",
+      "Analyzes conversation tone",
+      "Agent negotiates terms",
+      "Sends reminder",
+      "Awaits response",
+      "Sends payment link"
+    ]
+  },
+  "creditOrigination": {
+    "name": "Credit Origination",
+    "description": "From first contact to approval without leaving WhatsApp. AI qualifies, collects documents, calculates costs and submits to decision engine.",
+    "before": [
+      { "metric": "Analysis time", "value": "48h" },
+      { "metric": "Drop-off rate", "value": "60%" },
+      { "metric": "Cost per analysis", "value": "R$ 85" }
+    ],
+    "after": [
+      { "metric": "Analysis time", "value": "15min" },
+      { "metric": "Drop-off rate", "value": "12%" },
+      { "metric": "Cost per analysis", "value": "R$ 3" }
+    ],
+    "steps": [
+      "Transcribes customer audio",
+      "Analyzes submitted document",
+      "Automatic validation",
+      "Regulatory cost calculation",
+      "Decision engine",
+      "Notifies result"
+    ]
+  },
+  "creditSimulation": {
+    "name": "Credit Simulation",
+    "description": "Customer simulates a loan directly on WhatsApp. AI chats, calculates installments and generates personalized proposal.",
+    "before": [
+      { "metric": "Simulations/day", "value": "20" },
+      { "metric": "Conversion", "value": "8%" },
+      { "metric": "Channel", "value": "Website + phone" }
+    ],
+    "after": [
+      { "metric": "Simulations/day", "value": "500+" },
+      { "metric": "Conversion", "value": "23%" },
+      { "metric": "Channel", "value": "WhatsApp 24/7" }
+    ],
+    "steps": [
+      "Simulation agent assists",
+      "Calculates installments",
+      "Generates formatted proposal",
+      "Sends proposal",
+      "Registers lead"
+    ]
+  },
+  "debtRenegotiation": {
+    "name": "Debt Renegotiation",
+    "description": "AI agent negotiates debts with empathy. Generates payment slip, sends payment link and records agreement — humanized at scale.",
+    "before": [
+      { "metric": "Recovery rate", "value": "15%" },
+      { "metric": "Cost per contact", "value": "R$ 12" },
+      { "metric": "Complaints", "value": "45/mo" }
+    ],
+    "after": [
+      { "metric": "Recovery rate", "value": "42%" },
+      { "metric": "Cost per contact", "value": "R$ 0.50" },
+      { "metric": "Complaints", "value": "3/mo" }
+    ],
+    "steps": [
+      "Checks business hours",
+      "Analyzes conversation tone",
+      "Agent negotiates",
+      "Awaits response",
+      "Sends payment link"
+    ]
+  },
+  "openFinanceCredit": {
+    "name": "Open Finance Credit",
+    "description": "Credit analysis enriched with Open Finance data. Queries real history and offers personalized rates in minutes.",
+    "before": [
+      { "metric": "Analysis time", "value": "48h" },
+      { "metric": "Available data", "value": "Limited" },
+      { "metric": "Interest rate", "value": "Standard single" }
+    ],
+    "after": [
+      { "metric": "Analysis time", "value": "5min" },
+      { "metric": "Available data", "value": "Enriched" },
+      { "metric": "Interest rate", "value": "Personalized" }
+    ],
+    "steps": [
+      "Requests consent",
+      "Queries open data",
+      "Analyzes history",
+      "Personalized scoring",
+      "Notifies result"
+    ]
+  },
+  "insuranceQuote": {
+    "name": "Insurance Quote",
+    "description": "AI agent quotes, calculates premium and closes insurance on WhatsApp. Conversational, fast and personalized.",
+    "before": [
+      { "metric": "Quotes/day", "value": "20" },
+      { "metric": "Conversion", "value": "8%" },
+      { "metric": "Response time", "value": "24h" }
+    ],
+    "after": [
+      { "metric": "Quotes/day", "value": "500+" },
+      { "metric": "Conversion", "value": "25%" },
+      { "metric": "Response time", "value": "2min" }
+    ],
+    "steps": [
+      "Quote agent assists",
+      "Identifies customer profile",
+      "Calculates premium",
+      "Sends quote",
+      "Registers lead"
+    ]
+  },
+  "kycOnboarding": {
+    "name": "KYC Onboarding",
+    "description": "Know Your Customer 100% on WhatsApp. Requests documents, analyzes with AI, validates data and creates account automatically.",
+    "before": [
+      { "metric": "Onboarding time", "value": "5 days" },
+      { "metric": "Lost documents", "value": "30%" },
+      { "metric": "Drop-off", "value": "55%" }
+    ],
+    "after": [
+      { "metric": "Onboarding time", "value": "20min" },
+      { "metric": "Lost documents", "value": "0%" },
+      { "metric": "Drop-off", "value": "8%" }
+    ],
+    "steps": [
+      "Requests documents",
+      "Analyzes document with AI",
+      "Data extraction",
+      "Sensitive data protection",
+      "Registers customer",
+      "Welcome message"
+    ]
+  },
+  "digitalAccount": {
+    "name": "Digital Account Opening",
+    "description": "Complete KYC on WhatsApp in minutes. From document photo to active account, fully automated.",
+    "before": [
+      { "metric": "Onboarding time", "value": "5 days" },
+      { "metric": "KYC drop-off", "value": "25%" },
+      { "metric": "Cost per opening", "value": "R$ 85" }
+    ],
+    "after": [
+      { "metric": "Onboarding time", "value": "20min" },
+      { "metric": "KYC drop-off", "value": "5%" },
+      { "metric": "Cost per opening", "value": "R$ 4" }
+    ],
+    "steps": [
+      "Requests documents",
+      "Analyzes document with AI",
+      "Automatic validation",
+      "Sensitive data protection",
+      "Creates account",
+      "Welcome message"
+    ]
+  },
+  "userOnboarding": {
+    "name": "SaaS User Onboarding",
+    "description": "Guide new users through the product via WhatsApp. Tutorials, questions and feedback — all conversational.",
+    "before": [
+      { "metric": "Activation", "value": "25%" },
+      { "metric": "1st month churn", "value": "40%" },
+      { "metric": "Support tickets", "value": "80/day" }
+    ],
+    "after": [
+      { "metric": "Activation", "value": "65%" },
+      { "metric": "1st month churn", "value": "12%" },
+      { "metric": "Support tickets", "value": "15/day" }
+    ],
+    "steps": [
+      "Detects new user",
+      "Welcome message",
+      "Sends personalized tutorial",
+      "Answers questions",
+      "Collects feedback"
+    ]
+  },
+  "enrollment": {
+    "name": "Automated Enrollment",
+    "description": "Student capture and enrollment 100% on WhatsApp. Presents courses, collects data and sends enrollment link.",
+    "before": [
+      { "metric": "Enrollments/mo", "value": "40" },
+      { "metric": "Cost per enrollment", "value": "R$ 120" },
+      { "metric": "Response time", "value": "6h" }
+    ],
+    "after": [
+      { "metric": "Enrollments/mo", "value": "150+" },
+      { "metric": "Cost per enrollment", "value": "R$ 8" },
+      { "metric": "Response time", "value": "15s" }
+    ],
+    "steps": [
+      "Presents courses",
+      "Identifies interest",
+      "Registers student",
+      "Enrollment link",
+      "Sends proposal"
+    ]
+  },
+  "campaigns": {
+    "name": "WhatsApp Campaigns",
+    "description": "Bulk sending with AI personalization. Segment your base, create unique messages and track results.",
+    "before": [
+      { "metric": "Open rate", "value": "20% (email)" },
+      { "metric": "Conversion", "value": "2%" },
+      { "metric": "Personalization", "value": "None" }
+    ],
+    "after": [
+      { "metric": "Open rate", "value": "91% (WhatsApp)" },
+      { "metric": "Conversion", "value": "12%" },
+      { "metric": "Personalization", "value": "AI-powered" }
+    ],
+    "steps": [
+      "Segments contact base",
+      "AI personalizes message",
+      "Sends campaign",
+      "Awaits interaction",
+      "Records engagement"
+    ]
+  },
+  "cartRecovery": {
+    "name": "Cart Recovery",
+    "description": "Recover lost sales with conversational AI. Detects abandoned cart, offers coupon and facilitates purchase.",
+    "before": [
+      { "metric": "Recovery", "value": "5%" },
+      { "metric": "Channel", "value": "Email" },
+      { "metric": "Conversion", "value": "Low" }
+    ],
+    "after": [
+      { "metric": "Recovery", "value": "28%" },
+      { "metric": "Channel", "value": "WhatsApp" },
+      { "metric": "Conversion", "value": "3x higher" }
+    ],
+    "steps": [
+      "Detects abandoned cart",
+      "Fetches customer data",
+      "Generates personalized message",
+      "Sends reminder",
+      "Checkout link"
+    ]
+  },
+  "npsFeedback": {
+    "name": "NPS & Feedback Collection",
+    "description": "Conversational survey with 5x higher response rate. Collects NPS, categorizes and alerts team automatically.",
+    "before": [
+      { "metric": "Response rate", "value": "8%" },
+      { "metric": "Channel", "value": "Email" },
+      { "metric": "Insights", "value": "Monthly" }
+    ],
+    "after": [
+      { "metric": "Response rate", "value": "45%" },
+      { "metric": "Channel", "value": "WhatsApp" },
+      { "metric": "Insights", "value": "Real-time" }
+    ],
+    "steps": [
+      "Detects finished interaction",
+      "Sends conversational survey",
+      "Collects NPS and feedback",
+      "Records data",
+      "Alerts team (detractors)"
+    ]
+  },
+  "proactiveRenewal": {
+    "name": "Proactive Renewal",
+    "description": "Automatic reminder 30 days before expiration. AI agent negotiates conditions and sends payment link.",
+    "before": [
+      { "metric": "Renewal rate", "value": "60%" },
+      { "metric": "Contact", "value": "Manual" },
+      { "metric": "Personalization", "value": "None" }
+    ],
+    "after": [
+      { "metric": "Renewal rate", "value": "85%" },
+      { "metric": "Contact", "value": "Automatic 30d before" },
+      { "metric": "Personalization", "value": "By profile" }
+    ],
+    "steps": [
+      "30 days before expiration",
+      "Fetches customer data",
+      "Personalized proposal",
+      "Sends reminder",
+      "Payment link"
+    ]
+  },
+  "claimNotification": {
+    "name": "Claim Notification",
+    "description": "From accident to process opening in 10 minutes. Photos, audio and documents analyzed by AI on WhatsApp.",
+    "before": [
+      { "metric": "Process time", "value": "5 days" },
+      { "metric": "Incomplete docs", "value": "40%" },
+      { "metric": "Cost per claim", "value": "R$ 120" }
+    ],
+    "after": [
+      { "metric": "Process time", "value": "10min" },
+      { "metric": "Incomplete docs", "value": "0%" },
+      { "metric": "Cost per claim", "value": "R$ 8" }
+    ],
+    "steps": [
+      "Requests details",
+      "Analyzes images",
+      "Data extraction",
+      "Sensitive data protection",
+      "Attaches documents",
+      "Confirms opening"
+    ]
+  },
+  "digitalInspection": {
+    "name": "Digital Inspection",
+    "description": "Vehicle photos analyzed by AI in minutes. No in-person inspector, 100% on WhatsApp.",
+    "before": [
+      { "metric": "Inspection time", "value": "3 days" },
+      { "metric": "Method", "value": "In-person" },
+      { "metric": "Cost per inspection", "value": "R$ 150" }
+    ],
+    "after": [
+      { "metric": "Inspection time", "value": "15min" },
+      { "metric": "Method", "value": "AI self-service" },
+      { "metric": "Cost per inspection", "value": "R$ 5" }
+    ],
+    "steps": [
+      "Photo instructions",
+      "Receives photos",
+      "Analyzes vehicle",
+      "Classifies condition",
+      "Automatic decision",
+      "Inspection result"
+    ]
+  },
+  "digitalMenu": {
+    "name": "Digital Menu & Orders",
+    "description": "Receive orders on WhatsApp 24/7. AI shows menu, takes orders, calculates total and coordinates delivery.",
+    "before": [
+      { "metric": "Orders/day", "value": "40" },
+      { "metric": "Order errors", "value": "20%" },
+      { "metric": "Channel", "value": "Phone" }
+    ],
+    "after": [
+      { "metric": "Orders/day", "value": "200+" },
+      { "metric": "Order errors", "value": "2%" },
+      { "metric": "Channel", "value": "WhatsApp 24/7" }
+    ],
+    "steps": [
+      "Customer starts order",
+      "Shows menu",
+      "Collects items",
+      "Calculates total",
+      "Sends to kitchen"
+    ]
+  },
+  "conversationalPix": {
+    "name": "Conversational Pix",
+    "description": "Transfers via text or voice message. AI transcribes, extracts data and executes Pix in seconds.",
+    "before": [
+      { "metric": "Time per Pix", "value": "3min (app)" },
+      { "metric": "Channel", "value": "App only" },
+      { "metric": "Accessibility", "value": "Limited" }
+    ],
+    "after": [
+      { "metric": "Time per Pix", "value": "15s (WhatsApp)" },
+      { "metric": "Channel", "value": "WhatsApp 24/7" },
+      { "metric": "Accessibility", "value": "Text or voice" }
+    ],
+    "steps": [
+      "Transcribes audio",
+      "Identifies transfer data",
+      "Automatic validation",
+      "Executes transfer",
+      "Confirms operation"
+    ]
+  },
+  "smartScheduling": {
+    "name": "Smart Scheduling",
+    "description": "Finds available time slots, schedules meetings and sends automatic reminders — all on WhatsApp.",
+    "before": [
+      { "metric": "Bookings/day", "value": "15" },
+      { "metric": "No-show", "value": "40%" },
+      { "metric": "Time to schedule", "value": "2h" }
+    ],
+    "after": [
+      { "metric": "Bookings/day", "value": "80+" },
+      { "metric": "No-show", "value": "8%" },
+      { "metric": "Time to schedule", "value": "2min" }
+    ],
+    "steps": [
+      "Customer requests booking",
+      "Identifies desired service",
+      "Finds available slots",
+      "Confirms booking",
+      "Sends reminder"
+    ]
+  },
+  "healthScheduling": {
+    "name": "Medical Appointment Scheduling",
+    "description": "Clinic with smart 24/7 scheduling. Identifies specialty, books appointment and sends reminder.",
+    "before": [
+      { "metric": "Bookings/day", "value": "25" },
+      { "metric": "No-show", "value": "35%" },
+      { "metric": "Receptionists", "value": "3" }
+    ],
+    "after": [
+      { "metric": "Bookings/day", "value": "100+" },
+      { "metric": "No-show", "value": "8%" },
+      { "metric": "Receptionists", "value": "1" }
+    ],
+    "steps": [
+      "Health agent assists",
+      "Identifies specialty",
+      "Finds time slots",
+      "Confirms booking",
+      "Automatic reminder"
+    ]
+  },
+  "notifications": {
+    "name": "Transactional Notifications",
+    "description": "Payment reminders, status updates and alerts — all on WhatsApp with 91% open rate.",
+    "before": [
+      { "metric": "Open rate", "value": "20% (email)" },
+      { "metric": "Engagement", "value": "Low" },
+      { "metric": "Channel", "value": "Email" }
+    ],
+    "after": [
+      { "metric": "Open rate", "value": "91% (WhatsApp)" },
+      { "metric": "Engagement", "value": "4x higher" },
+      { "metric": "Channel", "value": "WhatsApp" }
+    ],
+    "steps": [
+      "Transactional event",
+      "Personalizes message",
+      "Sends notification",
+      "Responds if needed",
+      "Records engagement"
+    ]
+  }
+}

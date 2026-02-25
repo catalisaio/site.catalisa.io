@@ -8,10 +8,8 @@ const partners = [
   'OpenAI',
   'Microsoft Teams',
   'Outlook',
-  'Prisma',
   'Redis',
   'PostgreSQL',
-  'Cloud Brasil',
 ];
 
 export function LogoMarquee() {

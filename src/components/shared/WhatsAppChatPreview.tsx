@@ -81,7 +81,7 @@ export function WhatsAppChatPreview({ messages, title, triggerMode = 'inView' }:
               : { whileInView: { opacity: 1, y: 0, scale: 1 }, viewport: { once: true } }
             )}
             transition={{ delay: msg.delay, duration: 0.4 }}
-            alignSelf={msg.sent ? 'flex-end' : 'flex-start'}
+            alignSelf={msg.sent ? 'flex-start' : 'flex-end'}
             maxW="85%"
           >
             <Box
@@ -90,8 +90,8 @@ export function WhatsAppChatPreview({ messages, title, triggerMode = 'inView' }:
               px={3}
               py={2}
               borderRadius="lg"
-              borderTopRightRadius={msg.sent ? '4px' : 'lg'}
-              borderTopLeftRadius={msg.sent ? 'lg' : '4px'}
+              borderTopRightRadius={msg.sent ? 'lg' : '4px'}
+              borderTopLeftRadius={msg.sent ? '4px' : 'lg'}
               fontSize="sm"
               whiteSpace="pre-line"
               lineHeight="1.5"

@@ -130,7 +130,7 @@ export function PlaybookDetail() {
     return (
       <Container maxW="1280px" py={32} textAlign="center">
         <Heading size="lg" mb={4}>Playbook not found</Heading>
-        <Button as={Link} to={lp('/playbooks')} leftIcon={<FiArrowLeft />}>
+        <Button as={Link} to={lp('/casos-de-uso')} leftIcon={<FiArrowLeft />}>
           {t('detail.backToTemplates')}
         </Button>
       </Container>
@@ -164,7 +164,7 @@ export function PlaybookDetail() {
         />
         <Container maxW="1280px" position="relative" zIndex={1} py={16}>
           <Button
-            as={Link} to={lp('/playbooks')} variant="ghost"
+            as={Link} to={lp('/casos-de-uso')} variant="ghost"
             color="gray.500" _hover={{ color: 'gray.800' }}
             leftIcon={<FiArrowLeft />} mb={6} size="sm"
           >

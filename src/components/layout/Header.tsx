@@ -199,7 +199,7 @@ export function Header() {
   const isHome = pathname === '/' || pathname === '/en';
   const isDarkHero =
     isHome ||
-    ['/studio', '/contato', '/demo', '/apps', '/en/studio', '/en/contact', '/en/demo', '/en/apps'].includes(pathname);
+    ['/studio', '/contato', '/demo', '/apps', '/casos-de-uso', '/en/studio', '/en/contact', '/en/demo', '/en/apps', '/en/use-cases'].includes(pathname);
 
   // --- Platform mega-menu data ---
   const platformColumns: MegaMenuColumn[] = [
@@ -221,7 +221,7 @@ export function Header() {
     {
       titleKey: 'megaMenu.platform.resources',
       items: [
-        { icon: FiFileText, labelKey: 'megaMenu.platform.useCases.label', descKey: 'megaMenu.platform.useCases.desc', path: lp('/use-cases') },
+        { icon: FiFileText, labelKey: 'megaMenu.platform.useCases.label', descKey: 'megaMenu.platform.useCases.desc', path: lp('/casos-de-uso') },
         { icon: FiPlay, labelKey: 'megaMenu.platform.demo.label', descKey: 'megaMenu.platform.demo.desc', path: lp('/demo') },
       ],
     },
@@ -248,7 +248,7 @@ export function Header() {
     {
       titleKey: 'megaMenu.solutions.sales.title',
       items: [
-        { icon: FiTarget, labelKey: 'megaMenu.solutions.sales.qualification.label', descKey: 'megaMenu.solutions.sales.qualification.desc', path: lp('/use-cases') },
+        { icon: FiTarget, labelKey: 'megaMenu.solutions.sales.qualification.label', descKey: 'megaMenu.solutions.sales.qualification.desc', path: lp('/casos-de-uso') },
         { icon: FiRepeat, labelKey: 'megaMenu.solutions.sales.followup.label', descKey: 'megaMenu.solutions.sales.followup.desc', path: lp('/workflows') },
         { icon: FiSettings, labelKey: 'megaMenu.solutions.sales.customWorkflows.label', descKey: 'megaMenu.solutions.sales.customWorkflows.desc', path: lp('/workflows') },
       ],
@@ -423,11 +423,11 @@ export function Header() {
             {/* Casos de Uso — top-level link */}
             <Button
               as={Link}
-              to={lp('/use-cases')}
+              to={lp('/casos-de-uso')}
               variant="ghost"
               size="sm"
               color={isDarkHero ? 'whiteAlpha.800' : 'gray.600'}
-              fontWeight={pathname === lp('/use-cases') ? '600' : '400'}
+              fontWeight={pathname === lp('/casos-de-uso') ? '600' : '400'}
               _hover={{
                 color: isDarkHero ? 'white' : 'brand.500',
                 bg: isDarkHero ? 'whiteAlpha.100' : 'brand.50',
@@ -614,10 +614,10 @@ export function Header() {
               {/* Casos de Uso */}
               <Button
                 as={Link}
-                to={lp('/use-cases')}
+                to={lp('/casos-de-uso')}
                 variant="ghost"
                 justifyContent="flex-start"
-                fontWeight={pathname === lp('/use-cases') ? '600' : '400'}
+                fontWeight={pathname === lp('/casos-de-uso') ? '600' : '400'}
                 onClick={onClose}
               >
                 {t('nav.useCases')}

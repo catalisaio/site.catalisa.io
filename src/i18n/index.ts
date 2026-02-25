@@ -13,7 +13,6 @@ import bankingPtBR from './locales/pt-BR/banking.json';
 import insurancePtBR from './locales/pt-BR/insurance.json';
 import retailPtBR from './locales/pt-BR/retail.json';
 import startupsPtBR from './locales/pt-BR/startups.json';
-import useCasesPtBR from './locales/pt-BR/use-cases.json';
 import contactPtBR from './locales/pt-BR/contact.json';
 import demoPtBR from './locales/pt-BR/demo.json';
 import privacyPtBR from './locales/pt-BR/privacy.json';
@@ -32,6 +31,7 @@ import whatsappIntegrationPtBR from './locales/pt-BR/whatsapp-integration.json';
 import playbooksPtBR from './locales/pt-BR/playbooks.json';
 import seoPtBR from './locales/pt-BR/seo.json';
 import appsPtBR from './locales/pt-BR/apps.json';
+import casosDeUsoPtBR from './locales/pt-BR/casos-de-uso.json';
 
 // Static en-US imports
 import commonEnUS from './locales/en-US/common.json';
@@ -45,7 +45,6 @@ import bankingEnUS from './locales/en-US/banking.json';
 import insuranceEnUS from './locales/en-US/insurance.json';
 import retailEnUS from './locales/en-US/retail.json';
 import startupsEnUS from './locales/en-US/startups.json';
-import useCasesEnUS from './locales/en-US/use-cases.json';
 import contactEnUS from './locales/en-US/contact.json';
 import demoEnUS from './locales/en-US/demo.json';
 import privacyEnUS from './locales/en-US/privacy.json';
@@ -64,13 +63,14 @@ import whatsappIntegrationEnUS from './locales/en-US/whatsapp-integration.json';
 import playbooksEnUS from './locales/en-US/playbooks.json';
 import seoEnUS from './locales/en-US/seo.json';
 import appsEnUS from './locales/en-US/apps.json';
+import casosDeUsoEnUS from './locales/en-US/casos-de-uso.json';
 
 export const allNamespaces = [
   'common', 'home', 'studio', 'ai-agents', 'building-blocks', 'workflows',
-  'fintech', 'banking', 'insurance', 'retail', 'startups', 'use-cases',
+  'fintech', 'banking', 'insurance', 'retail', 'startups',
   'contact', 'demo', 'privacy',
   'data-actions', 'data-usecases', 'data-capabilities', 'data-stats', 'data-workflows',
-  'presentation', 'press-kit', 'terms', 'security', 'pricing', 'how-it-works', 'whatsapp-integration', 'playbooks', 'seo', 'apps',
+  'presentation', 'press-kit', 'terms', 'security', 'pricing', 'how-it-works', 'whatsapp-integration', 'playbooks', 'seo', 'apps', 'casos-de-uso',
 ] as const;
 
 export type Namespace = (typeof allNamespaces)[number];
@@ -89,7 +89,6 @@ i18n.use(initReactI18next).init({
       insurance: insurancePtBR,
       retail: retailPtBR,
       startups: startupsPtBR,
-      'use-cases': useCasesPtBR,
       contact: contactPtBR,
       demo: demoPtBR,
       privacy: privacyPtBR,
@@ -108,6 +107,7 @@ i18n.use(initReactI18next).init({
       playbooks: playbooksPtBR,
       seo: seoPtBR,
       apps: appsPtBR,
+      'casos-de-uso': casosDeUsoPtBR,
     },
     'en-US': {
       common: commonEnUS,
@@ -121,7 +121,6 @@ i18n.use(initReactI18next).init({
       insurance: insuranceEnUS,
       retail: retailEnUS,
       startups: startupsEnUS,
-      'use-cases': useCasesEnUS,
       contact: contactEnUS,
       demo: demoEnUS,
       privacy: privacyEnUS,
@@ -140,6 +139,7 @@ i18n.use(initReactI18next).init({
       playbooks: playbooksEnUS,
       seo: seoEnUS,
       apps: appsEnUS,
+      'casos-de-uso': casosDeUsoEnUS,
     },
   },
   lng: 'pt-BR',

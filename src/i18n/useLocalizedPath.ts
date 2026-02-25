@@ -17,7 +17,7 @@ const ptToEn: Record<string, string> = {
   '/seguros': '/en/insurance',
   '/varejo': '/en/retail',
   '/startups': '/en/startups',
-  '/use-cases': '/en/use-cases',
+  '/casos-de-uso': '/en/use-cases',
   '/contato': '/en/contact',
   '/demo': '/en/demo',
   '/politica-privacidade': '/en/privacy-policy',

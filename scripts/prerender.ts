@@ -11,13 +11,13 @@ const routes = [
   // pt-BR
   '/', '/studio', '/ai-agents', '/apps', '/building-blocks', '/workflows',
   '/fintech', '/bancario', '/seguros', '/varejo', '/startups',
-  '/use-cases', '/playbooks', '/contato', '/demo', '/politica-privacidade',
+  '/casos-de-uso', '/contato', '/demo', '/politica-privacidade',
   '/termos', '/seguranca', '/precos', '/como-funciona', '/integracoes/whatsapp',
   '/press-kit', '/apresentacao-comercial',
   // en-US
   '/en', '/en/studio', '/en/ai-agents', '/en/apps', '/en/building-blocks', '/en/workflows',
   '/en/fintech', '/en/banking', '/en/insurance', '/en/retail', '/en/startups',
-  '/en/use-cases', '/en/playbooks', '/en/contact', '/en/demo', '/en/privacy-policy',
+  '/en/use-cases', '/en/contact', '/en/demo', '/en/privacy-policy',
   '/en/terms', '/en/security', '/en/pricing', '/en/how-it-works', '/en/integrations/whatsapp',
   '/en/press-kit', '/en/commercial-presentation',
 ];

@@ -1,5 +1,5 @@
 import { lazy, Suspense, useEffect } from 'react';
-import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Outlet, Navigate } from 'react-router-dom';
 import { ChakraProvider, Spinner, Flex } from '@chakra-ui/react';
 import { theme } from './theme';
 import { PageLayout } from './components/layout/PageLayout';
@@ -17,7 +17,7 @@ const Banking = lazy(() => import('./pages/Banking').then(m => ({ default: m.Ban
 const Insurance = lazy(() => import('./pages/Insurance').then(m => ({ default: m.Insurance })));
 const Retail = lazy(() => import('./pages/Retail').then(m => ({ default: m.Retail })));
 const Startups = lazy(() => import('./pages/Startups').then(m => ({ default: m.Startups })));
-const UseCases = lazy(() => import('./pages/UseCases').then(m => ({ default: m.UseCases })));
+const CasosDeUso = lazy(() => import('./pages/CasosDeUso').then(m => ({ default: m.CasosDeUso })));
 const Contact = lazy(() => import('./pages/Contact').then(m => ({ default: m.Contact })));
 const Demo = lazy(() => import('./pages/Demo').then(m => ({ default: m.Demo })));
 const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy').then(m => ({ default: m.PrivacyPolicy })));
@@ -28,7 +28,6 @@ const HowItWorksPage = lazy(() => import('./pages/HowItWorks').then(m => ({ defa
 const WhatsAppIntegration = lazy(() => import('./pages/WhatsAppIntegration').then(m => ({ default: m.WhatsAppIntegration })));
 const CommercialPresentation = lazy(() => import('./pages/CommercialPresentation').then(m => ({ default: m.CommercialPresentation })));
 const Apps = lazy(() => import('./pages/Apps').then(m => ({ default: m.Apps })));
-const Playbooks = lazy(() => import('./pages/Playbooks').then(m => ({ default: m.Playbooks })));
 const PlaybookDetail = lazy(() => import('./pages/PlaybookDetail').then(m => ({ default: m.PlaybookDetail })));
 const NotFound = lazy(() => import('./pages/NotFound').then(m => ({ default: m.NotFound })));
 
@@ -94,8 +93,9 @@ function App() {
                 <Route path="/seguros" element={<Insurance />} />
                 <Route path="/varejo" element={<Retail />} />
                 <Route path="/startups" element={<Startups />} />
-                <Route path="/use-cases" element={<UseCases />} />
-                <Route path="/playbooks" element={<Playbooks />} />
+                <Route path="/casos-de-uso" element={<CasosDeUso />} />
+                <Route path="/use-cases" element={<Navigate to="/casos-de-uso" replace />} />
+                <Route path="/playbooks" element={<Navigate to="/casos-de-uso" replace />} />
                 <Route path="/playbooks/:playbookId" element={<PlaybookDetail />} />
                 <Route path="/contato" element={<Contact />} />
                 <Route path="/demo" element={<Demo />} />
@@ -120,8 +120,8 @@ function App() {
                 <Route path="insurance" element={<Insurance />} />
                 <Route path="retail" element={<Retail />} />
                 <Route path="startups" element={<Startups />} />
-                <Route path="use-cases" element={<UseCases />} />
-                <Route path="playbooks" element={<Playbooks />} />
+                <Route path="use-cases" element={<CasosDeUso />} />
+                <Route path="playbooks" element={<Navigate to="/en/use-cases" replace />} />
                 <Route path="playbooks/:playbookId" element={<PlaybookDetail />} />
                 <Route path="contact" element={<Contact />} />
                 <Route path="demo" element={<Demo />} />

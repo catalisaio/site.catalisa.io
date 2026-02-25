@@ -102,21 +102,21 @@ export function PlaybookDetail() {
 
   return (
     <>
-      {/* ── 1. Hero (DARK) ───────────────────────────────── */}
+      {/* ── 1. Hero (LIGHT) ───────────────────────────────── */}
       <Box
-        bg="hero.bg" pb={16} color="white"
+        bg="white" pb={16} color="gray.900"
         position="relative" overflow="hidden"
         mt="-64px" pt="calc(64px + 7rem)"
       >
         <Box
           position="absolute" top="-20%" left="20%" w="60%" h="80%"
-          bgGradient={`radial(circle, var(--chakra-colors-${catMeta.color}-500) 0%, transparent 70%)`}
-          opacity={0.08} pointerEvents="none"
+          bgGradient={`radial(circle, var(--chakra-colors-${catMeta.color}-100) 0%, transparent 70%)`}
+          opacity={0.5} pointerEvents="none"
         />
         <Container maxW="1280px" position="relative" zIndex={1}>
           <Button
             as={Link} to={lp('/playbooks')} variant="ghost"
-            color="whiteAlpha.700" _hover={{ color: 'white' }}
+            color="gray.500" _hover={{ color: 'gray.800' }}
             leftIcon={<FiArrowLeft />} mb={6} size="sm"
           >
             {t('detail.backToTemplates')}
@@ -126,23 +126,23 @@ export function PlaybookDetail() {
             <HStack spacing={4} mb={4}>
               <Flex
                 w="56px" h="56px" borderRadius="full"
-                bg="whiteAlpha.100" backdropFilter="blur(8px)"
-                border="1px solid" borderColor="whiteAlpha.200"
+                bg={`${catMeta.color}.50`}
+                border="1px solid" borderColor={`${catMeta.color}.200`}
                 align="center" justify="center" flexShrink={0}
               >
-                <Box as={Icon} color={`${catMeta.color}.300`} boxSize="28px" />
+                <Box as={Icon} color={`${catMeta.color}.500`} boxSize="28px" />
               </Flex>
               <VStack align="flex-start" spacing={1}>
-                <Heading as="h1" size="xl" fontWeight="800">{t(playbook.nameKey)}</Heading>
+                <Heading as="h1" size="xl" fontWeight="800" color="gray.900">{t(playbook.nameKey)}</Heading>
                 <HStack spacing={2}>
                   <Badge colorScheme={catMeta.color}>{t(catMeta.labelKey)}</Badge>
-                  <Badge variant="outline" color="whiteAlpha.700" borderColor="whiteAlpha.300">
+                  <Badge variant="outline" color="gray.500" borderColor="gray.300">
                     {t(`industries.${playbook.industry}`)}
                   </Badge>
                 </HStack>
               </VStack>
             </HStack>
-            <Text color="whiteAlpha.800" fontSize="lg" maxW="700px" lineHeight="1.8">
+            <Text color="gray.600" fontSize="lg" maxW="700px" lineHeight="1.8">
               {t(playbook.descriptionKey)}
             </Text>
           </MotionBox>
@@ -158,8 +158,8 @@ export function PlaybookDetail() {
             </Button>
             <Button
               as="a" href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer"
-              size="lg" variant="outline" borderColor="whiteAlpha.400" color="white"
-              _hover={{ bg: 'whiteAlpha.100' }}
+              size="lg" variant="outline" borderColor="gray.300" color="gray.700"
+              _hover={{ bg: 'gray.50' }}
             >
               {t('detail.ctaSecondary')}
             </Button>
@@ -290,12 +290,19 @@ export function PlaybookDetail() {
       </SectionWrapper>
 
       {/* ── 3. Vertical Workflow (DARK) ──────────────────── */}
+      <Box position="relative" overflow="hidden">
+        <Box
+          position="absolute" top="10%" left="50%" w="60%" h="80%"
+          transform="translateX(-50%)"
+          bgGradient="radial(circle, rgba(115, 75, 156, 0.1) 0%, transparent 70%)"
+          pointerEvents="none"
+        />
       <SectionWrapper bg="hero.bg">
-        <Heading as="h2" size="md" fontWeight="700" mb={10} textAlign="center" color="white">
+        <Heading as="h2" size="md" fontWeight="700" mb={10} textAlign="center" color="white" position="relative">
           {t('detail.workflow')}
         </Heading>
 
-        <MotionBox {...staggerContainer} maxW="480px" mx="auto">
+        <MotionBox {...staggerContainer} maxW="480px" mx="auto" position="relative">
           {playbook.workflowSteps.map((step, i) => {
             const clr = categoryBadges[step.category]?.color || 'gray';
             const SIcon = stepIconMap[step.category];
@@ -305,20 +312,25 @@ export function PlaybookDetail() {
                   <VStack spacing={0} align="center" flexShrink={0} w="40px">
                     <Flex
                       w="40px" h="40px" borderRadius="full"
-                      bg={`${clr}.900`} border="2px solid" borderColor={`${clr}.700`}
+                      bg="whiteAlpha.100" border="2px solid" borderColor="whiteAlpha.200"
                       align="center" justify="center"
                     >
-                      <Text fontWeight="800" fontSize="sm" color={`${clr}.200`}>{i + 1}</Text>
+                      <Text fontWeight="800" fontSize="sm" color="white">{i + 1}</Text>
                     </Flex>
                     {i < playbook.workflowSteps.length - 1 && (
-                      <Box h="40px" borderLeft="2px dashed" borderColor="whiteAlpha.200" />
+                      <Box h="40px" borderLeft="2px dashed" borderColor="whiteAlpha.100" />
                     )}
                   </VStack>
 
                   <Box pt="6px" pb={i < playbook.workflowSteps.length - 1 ? 2 : 0}>
                     <HStack spacing={2} mb={1}>
-                      {SIcon && <Box as={SIcon} color={`${clr}.300`} boxSize="14px" />}
-                      <Badge colorScheme={clr} fontSize="2xs" borderRadius="full">{step.category}</Badge>
+                      {SIcon && <Box as={SIcon} color={`${clr}.400`} boxSize="14px" />}
+                      <Badge
+                        bg="whiteAlpha.100" color={`${clr}.300`} border="1px solid"
+                        borderColor="whiteAlpha.200" fontSize="2xs" borderRadius="full"
+                      >
+                        {step.category}
+                      </Badge>
                     </HStack>
                     <Text fontSize="sm" color="whiteAlpha.700" lineHeight="short">{t(step.labelKey)}</Text>
                   </Box>
@@ -328,6 +340,7 @@ export function PlaybookDetail() {
           })}
         </MotionBox>
       </SectionWrapper>
+      </Box>
 
       {/* ── 4. Metrics Before/After (LIGHT) ──────────────── */}
       {Array.isArray(before) && before.length > 0 && (

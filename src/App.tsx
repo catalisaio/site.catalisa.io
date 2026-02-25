@@ -27,6 +27,7 @@ const Security = lazy(() => import('./pages/Security').then(m => ({ default: m.S
 const HowItWorksPage = lazy(() => import('./pages/HowItWorks').then(m => ({ default: m.HowItWorks })));
 const WhatsAppIntegration = lazy(() => import('./pages/WhatsAppIntegration').then(m => ({ default: m.WhatsAppIntegration })));
 const CommercialPresentation = lazy(() => import('./pages/CommercialPresentation').then(m => ({ default: m.CommercialPresentation })));
+const Apps = lazy(() => import('./pages/Apps').then(m => ({ default: m.Apps })));
 const Playbooks = lazy(() => import('./pages/Playbooks').then(m => ({ default: m.Playbooks })));
 const PlaybookDetail = lazy(() => import('./pages/PlaybookDetail').then(m => ({ default: m.PlaybookDetail })));
 const NotFound = lazy(() => import('./pages/NotFound').then(m => ({ default: m.NotFound })));
@@ -85,6 +86,7 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/studio" element={<Studio />} />
                 <Route path="/ai-agents" element={<AIAgents />} />
+                <Route path="/apps" element={<Apps />} />
                 <Route path="/building-blocks" element={<BuildingBlocks />} />
                 <Route path="/workflows" element={<Workflows />} />
                 <Route path="/fintech" element={<Fintech />} />
@@ -110,6 +112,7 @@ function App() {
                 <Route index element={<Home />} />
                 <Route path="studio" element={<Studio />} />
                 <Route path="ai-agents" element={<AIAgents />} />
+                <Route path="apps" element={<Apps />} />
                 <Route path="building-blocks" element={<BuildingBlocks />} />
                 <Route path="workflows" element={<Workflows />} />
                 <Route path="fintech" element={<Fintech />} />

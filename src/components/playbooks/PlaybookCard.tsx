@@ -63,14 +63,27 @@ export function PlaybookCard({ playbook, index }: PlaybookCardProps) {
             >
               <Box as={Icon} color={`${catMeta.color}.500`} boxSize="20px" />
             </Flex>
-            <Badge
-              colorScheme={catMeta.color}
-              fontSize="2xs"
-              borderRadius="full"
-              px={2}
-            >
-              {t(catMeta.labelKey)}
-            </Badge>
+            <HStack spacing={1.5}>
+              {playbook.type === 'app' && (
+                <Badge
+                  colorScheme="orange"
+                  variant="subtle"
+                  fontSize="2xs"
+                  borderRadius="full"
+                  px={2}
+                >
+                  App
+                </Badge>
+              )}
+              <Badge
+                colorScheme={catMeta.color}
+                fontSize="2xs"
+                borderRadius="full"
+                px={2}
+              >
+                {t(catMeta.labelKey)}
+              </Badge>
+            </HStack>
           </HStack>
 
           {/* Title */}

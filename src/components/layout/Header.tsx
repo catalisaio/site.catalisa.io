@@ -43,6 +43,7 @@ import {
   FiHeadphones,
   FiShuffle,
   FiBarChart2,
+  FiGrid,
   FiTarget,
   FiRepeat,
   FiSettings,
@@ -198,7 +199,7 @@ export function Header() {
   const isHome = pathname === '/' || pathname === '/en';
   const isDarkHero =
     isHome ||
-    ['/studio', '/contato', '/demo', '/en/studio', '/en/contact', '/en/demo'].includes(pathname);
+    ['/studio', '/contato', '/demo', '/apps', '/en/studio', '/en/contact', '/en/demo', '/en/apps'].includes(pathname);
 
   // --- Platform mega-menu data ---
   const platformColumns: MegaMenuColumn[] = [
@@ -207,6 +208,7 @@ export function Header() {
       items: [
         { icon: FiLayout, labelKey: 'megaMenu.platform.studio.label', descKey: 'megaMenu.platform.studio.desc', path: lp('/studio') },
         { icon: FiCpu, labelKey: 'megaMenu.platform.aiAgents.label', descKey: 'megaMenu.platform.aiAgents.desc', path: lp('/ai-agents') },
+        { icon: FiGrid, labelKey: 'megaMenu.platform.apps.label', descKey: 'megaMenu.platform.apps.desc', path: lp('/apps') },
       ],
     },
     {

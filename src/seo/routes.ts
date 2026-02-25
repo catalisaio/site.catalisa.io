@@ -48,6 +48,16 @@ export const routes: RouteDefinition[] = [
     breadcrumbCategory: 'platform',
   },
   {
+    ptPath: '/apps',
+    enPath: '/en/apps',
+    pageKey: 'apps',
+    priority: 0.9,
+    changefreq: 'weekly',
+    schemas: ['Organization', 'SoftwareApplication', 'BreadcrumbList'],
+    ogImage: '/og/default.png',
+    breadcrumbCategory: 'platform',
+  },
+  {
     ptPath: '/building-blocks',
     enPath: '/en/building-blocks',
     pageKey: 'buildingBlocks',

@@ -17,6 +17,7 @@ export function Footer() {
       links: [
         { label: t('megaMenu.platform.studio.label'), to: lp('/studio') },
         { label: t('megaMenu.platform.aiAgents.label'), to: lp('/ai-agents') },
+        { label: t('footer.links.apps'), to: lp('/apps') },
         { label: t('megaMenu.platform.blocks.label'), to: lp('/building-blocks') },
         { label: t('megaMenu.platform.workflows.label'), to: lp('/workflows') },
       ],

@@ -55,9 +55,14 @@
     "subtitle": "Try adjusting the filters or searching for another term."
   },
   "stats": {
-    "playbooks": "30+ playbooks",
+    "playbooks": "45+ playbooks",
     "categories": "7 categories",
     "industries": "10 industries"
+  },
+  "types": {
+    "all": "All",
+    "agent": "AI Agents",
+    "app": "Apps & Backends"
   },
   "showing": "Showing {{count}} of {{total}} playbooks",
   "whyPlaybooks": {
@@ -956,6 +961,415 @@
       { "text": "Perfect, thanks!", "sent": false, "delay": 1.2 },
       { "text": "Update: Your package is on its way! Tracking: track.delivery.com/pkg/45210. The driver is 3 stops away.", "sent": true, "delay": 1.8 },
       { "text": "Package delivered! If everything looks good, we'd love a quick review. Enjoy your purchase, Ana!", "sent": true, "delay": 2.3 }
+    ]
+  },
+  "appOriginacaoCredito": {
+    "name": "Credit Origination System",
+    "description": "Full backend for credit origination with automated risk analysis, integrated KYC, digital signature and disbursement — with native audit trail and LGPD compliance.",
+    "before": [
+      { "metric": "Approval time", "value": "5 days" },
+      { "metric": "Cost per operation", "value": "$120" },
+      { "metric": "Fraud rate", "value": "3.2%" }
+    ],
+    "after": [
+      { "metric": "Approval time", "value": "12 min" },
+      { "metric": "Cost per operation", "value": "$8" },
+      { "metric": "Fraud rate", "value": "0.1%" }
+    ],
+    "steps": [
+      "Receives application via API",
+      "Validates applicant identity",
+      "Queries credit bureau",
+      "Analyzes risk with Decision Engine",
+      "Generates digital contract",
+      "Processes disbursement"
+    ],
+    "chatMessages": [
+      { "text": "POST /api/credit/apply\n{\"ssn\": \"123-**-****\", \"amount\": 50000}", "sent": false, "delay": 0 },
+      { "text": "200 OK — Application received. Starting automated KYC...", "sent": true, "delay": 0.3 },
+      { "text": "GET /api/credit/abc123/status", "sent": false, "delay": 0.8 },
+      { "text": "200 OK — Status: APPROVED\nScore: 842 | Risk: LOW\nContract generated: DOC-2024-789", "sent": true, "delay": 1.2 },
+      { "text": "POST /api/contracts/DOC-2024-789/sign", "sent": false, "delay": 1.8 },
+      { "text": "200 OK — Contract digitally signed.\nDisbursement scheduled: $50,000.00\nAudit trail: 12 records", "sent": true, "delay": 2.3 }
+    ]
+  },
+  "appPortalCliente": {
+    "name": "Customer Portal",
+    "description": "Logged-in area with balance inquiry, statements, documents and support — with native SSO authentication, encryption and audit trail.",
+    "before": [
+      { "metric": "Support tickets", "value": "800/month" },
+      { "metric": "Query time", "value": "Manual" },
+      { "metric": "Support cost", "value": "$25/ticket" }
+    ],
+    "after": [
+      { "metric": "Support tickets", "value": "120/month" },
+      { "metric": "Query time", "value": "Instant" },
+      { "metric": "Support cost", "value": "$0.50" }
+    ],
+    "steps": [
+      "Authenticates user via SSO",
+      "Queries balance in real time",
+      "Lists recent transactions",
+      "Generates formatted statement",
+      "Notifies customer"
+    ],
+    "chatMessages": [
+      { "text": "GET /api/portal/balance\nAuthorization: Bearer eyJ...", "sent": false, "delay": 0 },
+      { "text": "200 OK\n{\"balance\": \"$12,450.00\",\n \"available\": \"$10,200.00\"}", "sent": true, "delay": 0.3 },
+      { "text": "GET /api/portal/transactions?limit=5", "sent": false, "delay": 0.8 },
+      { "text": "200 OK — 5 transactions returned\nLatest: Wire $350.00 (today 2:32 PM)\nAudit: access recorded", "sent": true, "delay": 1.2 }
+    ]
+  },
+  "appMotorCobranca": {
+    "name": "Automated Collections Engine",
+    "description": "Collections system with configurable business rules, invoice generation, automatic notifications and complete audit trail.",
+    "before": [
+      { "metric": "Recovery rate", "value": "22%" },
+      { "metric": "Collection cost", "value": "$15/action" },
+      { "metric": "Average time", "value": "30 days" }
+    ],
+    "after": [
+      { "metric": "Recovery rate", "value": "68%" },
+      { "metric": "Collection cost", "value": "$0.80" },
+      { "metric": "Average time", "value": "3 days" }
+    ],
+    "steps": [
+      "Identifies delinquency",
+      "Selects collection strategy",
+      "Generates updated invoice",
+      "Sends multichannel collection",
+      "Records action in audit trail"
+    ],
+    "chatMessages": [
+      { "text": "POST /api/collections/trigger\n{\"batch\": \"overdue_30d\", \"strategy\": \"progressive\"}", "sent": false, "delay": 0 },
+      { "text": "200 OK — 342 accounts processed\nInvoices generated: 342\nNotifications sent: 342", "sent": true, "delay": 0.3 },
+      { "text": "GET /api/collections/stats/today", "sent": false, "delay": 0.8 },
+      { "text": "200 OK — Recovered: $89,400\nRate: 68%\nAudit trail: 1,026 records", "sent": true, "delay": 1.2 }
+    ]
+  },
+  "appKycDigital": {
+    "name": "Digital KYC System",
+    "description": "Complete identity validation with OCR, face match, bureau lookup and audit trail — native compliance built in.",
+    "before": [
+      { "metric": "Validation time", "value": "2 days" },
+      { "metric": "Cost per KYC", "value": "$35" },
+      { "metric": "Auto-approval", "value": "0%" }
+    ],
+    "after": [
+      { "metric": "Validation time", "value": "45 sec" },
+      { "metric": "Cost per KYC", "value": "$3" },
+      { "metric": "Auto-approval", "value": "92%" }
+    ],
+    "steps": [
+      "Receives documents via API",
+      "OCR extracts data automatically",
+      "Biometric face match",
+      "Queries data bureau",
+      "Records validation with audit trail"
+    ],
+    "chatMessages": [
+      { "text": "POST /api/kyc/verify\n{\"document\": \"base64...\", \"selfie\": \"base64...\"}", "sent": false, "delay": 0 },
+      { "text": "200 OK — OCR: ID extracted, name validated\nFace match: 98.7% similarity\nBureau: no restrictions", "sent": true, "delay": 0.3 },
+      { "text": "GET /api/kyc/KYC-2024-456/result", "sent": false, "delay": 0.8 },
+      { "text": "200 OK — Status: APPROVED\nConfidence score: 97.2%\nTotal time: 42 seconds\nAudit trail: 8 records", "sent": true, "delay": 1.2 }
+    ]
+  },
+  "appBackofficeSeguros": {
+    "name": "Insurance Backoffice",
+    "description": "Policy, claims and renewal management with integrated workflow, digital signature and complete audit trail.",
+    "before": [
+      { "metric": "Claims processing time", "value": "15 days" },
+      { "metric": "Manual processes", "value": "85%" },
+      { "metric": "Operational errors", "value": "12%" }
+    ],
+    "after": [
+      { "metric": "Claims processing time", "value": "48 hours" },
+      { "metric": "Manual processes", "value": "8%" },
+      { "metric": "Operational errors", "value": "0.5%" }
+    ],
+    "steps": [
+      "Registers policy in system",
+      "Evaluates claim with Decision Engine",
+      "Collects digital signature",
+      "Stores documents securely",
+      "Generates complete audit trail"
+    ],
+    "chatMessages": [
+      { "text": "POST /api/claims/register\n{\"policy\": \"POL-2024-789\", \"type\": \"auto\"}", "sent": false, "delay": 0 },
+      { "text": "200 OK — Claim CLM-2024-123 registered\nDecision Engine: coverage confirmed\nEstimated value: $8,500", "sent": true, "delay": 0.3 },
+      { "text": "POST /api/claims/CLM-2024-123/approve", "sent": false, "delay": 0.8 },
+      { "text": "200 OK — Approved and digitally signed\nPayment scheduled: $8,500\nAudit trail: 15 records", "sent": true, "delay": 1.2 }
+    ]
+  },
+  "appHubOnboarding": {
+    "name": "Digital Onboarding Hub",
+    "description": "Data collection, document validation and step-by-step approval with internal system integration and audit trail.",
+    "before": [
+      { "metric": "Onboarding time", "value": "7 days" },
+      { "metric": "Drop-off rate", "value": "45%" },
+      { "metric": "Rework rate", "value": "30%" }
+    ],
+    "after": [
+      { "metric": "Onboarding time", "value": "15 min" },
+      { "metric": "Drop-off rate", "value": "8%" },
+      { "metric": "Rework rate", "value": "2%" }
+    ],
+    "steps": [
+      "Starts registration via API",
+      "Validates documents with OCR",
+      "Creates secure credentials",
+      "Syncs with internal systems",
+      "Confirms onboarding"
+    ],
+    "chatMessages": [
+      { "text": "POST /api/onboarding/start\n{\"name\": \"Jane Smith\", \"email\": \"jane@...\"}", "sent": false, "delay": 0 },
+      { "text": "200 OK — Onboarding ONB-789 started\nPending documents: 2\nUpload link sent", "sent": true, "delay": 0.3 },
+      { "text": "GET /api/onboarding/ONB-789/status", "sent": false, "delay": 0.8 },
+      { "text": "200 OK — Status: COMPLETED\nDocs validated: 2/2\nCredentials created\nSystems synced: 3", "sent": true, "delay": 1.2 }
+    ]
+  },
+  "appApiPagamentos": {
+    "name": "Unified Payments API",
+    "description": "Bank transfer, invoice and card payments with automatic reconciliation, payment splitting and audit trail — all via a single API.",
+    "before": [
+      { "metric": "Payment integrations", "value": "3 separate" },
+      { "metric": "Reconciliation", "value": "Manual" },
+      { "metric": "Reconciliation time", "value": "2 days" }
+    ],
+    "after": [
+      { "metric": "Payment integrations", "value": "1 API" },
+      { "metric": "Reconciliation", "value": "Automatic" },
+      { "metric": "Reconciliation time", "value": "Real time" }
+    ],
+    "steps": [
+      "Receives payment via API",
+      "Processes transaction with provider",
+      "Reconciles in accounting ledger",
+      "Records operation in audit trail",
+      "Returns confirmation"
+    ],
+    "chatMessages": [
+      { "text": "POST /api/payments/charge\n{\"method\": \"ach\", \"amount\": 1500}", "sent": false, "delay": 0 },
+      { "text": "200 OK — ACH initiated\nReference: available\nExpiry: 30 min\nSplit: 90% merchant, 10% platform", "sent": true, "delay": 0.3 },
+      { "text": "GET /api/payments/PAY-456/status", "sent": false, "delay": 0.8 },
+      { "text": "200 OK — Status: PAID\nAmount: $1,500.00\nReconciled: yes\nAudit trail: 4 records", "sent": true, "delay": 1.2 }
+    ]
+  },
+  "appAssinaturaDigital": {
+    "name": "Digital Signature System",
+    "description": "Digital contracts with electronic signature, legal validity, secure storage and automatic certification.",
+    "before": [
+      { "metric": "Signing time", "value": "5 days" },
+      { "metric": "Lost contracts", "value": "15%" },
+      { "metric": "Cost per contract", "value": "$45" }
+    ],
+    "after": [
+      { "metric": "Signing time", "value": "2 min" },
+      { "metric": "Lost contracts", "value": "0.5%" },
+      { "metric": "Cost per contract", "value": "$3" }
+    ],
+    "steps": [
+      "Creates contract via API",
+      "Validates signatories",
+      "Collects electronic signatures",
+      "Stores certified document",
+      "Certifies complete process"
+    ],
+    "chatMessages": [
+      { "text": "POST /api/signatures/create\n{\"template\": \"loan_agreement\", \"signers\": 2}", "sent": false, "delay": 0 },
+      { "text": "200 OK — Contract SIG-2024-321 created\nSignatories notified: 2\nSigning link sent", "sent": true, "delay": 0.3 },
+      { "text": "GET /api/signatures/SIG-2024-321/status", "sent": false, "delay": 0.8 },
+      { "text": "200 OK — Status: SIGNED\nSignatures: 2/2 complete\nCertificate generated\nAudit trail: 6 records", "sent": true, "delay": 1.2 }
+    ]
+  },
+  "appOpenFinance": {
+    "name": "Open Finance Hub",
+    "description": "Connection to regulated Open Finance, financial profile analysis and native compliance built in.",
+    "before": [
+      { "metric": "Data sources", "value": "1 bureau" },
+      { "metric": "Analysis time", "value": "3 days" },
+      { "metric": "Score accuracy", "value": "72%" }
+    ],
+    "after": [
+      { "metric": "Data sources", "value": "5+ banks" },
+      { "metric": "Analysis time", "value": "30 sec" },
+      { "metric": "Score accuracy", "value": "94%" }
+    ],
+    "steps": [
+      "Authenticates via customer bank",
+      "Obtains Open Finance data",
+      "Analyzes financial profile",
+      "Records consent",
+      "Returns complete analysis"
+    ],
+    "chatMessages": [
+      { "text": "POST /api/openfinance/consent\n{\"id\": \"123-**-****\", \"banks\": [\"chase\", \"bofa\"]}", "sent": false, "delay": 0 },
+      { "text": "200 OK — Consent recorded\nData obtained: 2 banks\nTransactions analyzed: 847", "sent": true, "delay": 0.3 },
+      { "text": "GET /api/openfinance/profile/abc123", "sent": false, "delay": 0.8 },
+      { "text": "200 OK — Enriched score: 94.2%\nEstimated income: $12,000\nDebt ratio: 28%\nConsent: active", "sent": true, "delay": 1.2 }
+    ]
+  },
+  "appGestaoSinistros": {
+    "name": "Digital Claims Management",
+    "description": "Claims registration, analysis and resolution with OCR, Decision Engine and automatic notifications.",
+    "before": [
+      { "metric": "Resolution time", "value": "20 days" },
+      { "metric": "Lost documents", "value": "8%" },
+      { "metric": "Customer satisfaction", "value": "3.2/5" }
+    ],
+    "after": [
+      { "metric": "Resolution time", "value": "3 days" },
+      { "metric": "Lost documents", "value": "0%" },
+      { "metric": "Customer satisfaction", "value": "4.7/5" }
+    ],
+    "steps": [
+      "Registers claim via API",
+      "Analyzes documents with OCR",
+      "Evaluates coverage with Decision Engine",
+      "Notifies all parties",
+      "Closes process with audit trail"
+    ],
+    "chatMessages": [
+      { "text": "POST /api/claims/submit\n{\"policy\": \"POL-123\", \"type\": \"theft\", \"docs\": [...]}", "sent": false, "delay": 0 },
+      { "text": "200 OK — Claim SIN-2024-567 registered\nOCR: 3 documents processed\nDecision Engine: coverage confirmed", "sent": true, "delay": 0.3 },
+      { "text": "GET /api/claims/SIN-2024-567/timeline", "sent": false, "delay": 0.8 },
+      { "text": "200 OK — Resolution in 72h\nIndemnification: $15,000\nParties notified: 4\nAudit trail: 22 records", "sent": true, "delay": 1.2 }
+    ]
+  },
+  "appMotorDecisao": {
+    "name": "Enterprise Decision Engine",
+    "description": "Configurable business rules engine for credit, risk, pricing and compliance — with native audit trail.",
+    "before": [
+      { "metric": "Rules in code", "value": "200+" },
+      { "metric": "Change time", "value": "2 weeks" },
+      { "metric": "Traceability", "value": "None" }
+    ],
+    "after": [
+      { "metric": "Configured rules", "value": "200+" },
+      { "metric": "Change time", "value": "5 min" },
+      { "metric": "Traceability", "value": "100%" }
+    ],
+    "steps": [
+      "Receives decision request",
+      "Loads configured rules",
+      "Executes business policies",
+      "Records decision in audit trail",
+      "Returns result"
+    ],
+    "chatMessages": [
+      { "text": "POST /api/decisions/evaluate\n{\"policy\": \"credit_approval\", \"data\": {...}}", "sent": false, "delay": 0 },
+      { "text": "200 OK — Decision: APPROVED\nRules evaluated: 47\nTime: 120ms\nScore: 842", "sent": true, "delay": 0.3 },
+      { "text": "GET /api/decisions/audit/DEC-789", "sent": false, "delay": 0.8 },
+      { "text": "200 OK — Complete audit trail\nRules triggered: 12\nVariables considered: 23\nResponsible: policy_v3.2", "sent": true, "delay": 1.2 }
+    ]
+  },
+  "appPortalParceiros": {
+    "name": "Partner Portal",
+    "description": "Logged-in area for partners with dashboard, metrics, reports and data synchronization — with SSO and RBAC.",
+    "before": [
+      { "metric": "Manual reports", "value": "20h/month" },
+      { "metric": "Data lag", "value": "3 days" },
+      { "metric": "Active partners", "value": "Limited" }
+    ],
+    "after": [
+      { "metric": "Manual reports", "value": "0h" },
+      { "metric": "Data lag", "value": "Real time" },
+      { "metric": "Active partners", "value": "Unlimited" }
+    ],
+    "steps": [
+      "Authenticates partner via SSO",
+      "Displays metrics dashboard",
+      "Syncs data in real time",
+      "Generates automatic reports",
+      "Records accesses in audit trail"
+    ],
+    "chatMessages": [
+      { "text": "GET /api/partners/dashboard\nAuthorization: Bearer eyJ...", "sent": false, "delay": 0 },
+      { "text": "200 OK — Partner: TechCorp\nMonthly sales: $245,000\nCommission: $12,250\nActive clients: 89", "sent": true, "delay": 0.3 },
+      { "text": "GET /api/partners/reports/monthly", "sent": false, "delay": 0.8 },
+      { "text": "200 OK — Report generated\n12 pages | PDF available\nAudit: access recorded", "sent": true, "delay": 1.2 }
+    ]
+  },
+  "appComplianceLgpd": {
+    "name": "Automated Data Compliance",
+    "description": "Personal data management, consent, anonymization and data subject rights fulfillment — fully automated.",
+    "before": [
+      { "metric": "Manual requests", "value": "100%" },
+      { "metric": "Response time", "value": "15 days" },
+      { "metric": "Fine risk", "value": "High" }
+    ],
+    "after": [
+      { "metric": "Manual requests", "value": "5%" },
+      { "metric": "Response time", "value": "24h" },
+      { "metric": "Fine risk", "value": "Minimal" }
+    ],
+    "steps": [
+      "Receives data subject request",
+      "Locates personal data",
+      "Applies compliance policy",
+      "Masks sensitive data",
+      "Records fulfillment"
+    ],
+    "chatMessages": [
+      { "text": "POST /api/compliance/request\n{\"type\": \"data_export\", \"id\": \"123-**-****\"}", "sent": false, "delay": 0 },
+      { "text": "200 OK — Request PRIV-2024-456\nType: Data export\nData located in 4 systems", "sent": true, "delay": 0.3 },
+      { "text": "GET /api/compliance/PRIV-2024-456/status", "sent": false, "delay": 0.8 },
+      { "text": "200 OK — Status: COMPLETED\nData exported: 4 sources\nMasking applied: yes\nAudit trail: 9 records", "sent": true, "delay": 1.2 }
+    ]
+  },
+  "appConciliacaoFinanceira": {
+    "name": "Automatic Financial Reconciliation",
+    "description": "Import, comparison and reconciliation of financial transactions with accounting ledger and audit trail.",
+    "before": [
+      { "metric": "Manual reconciliation", "value": "3 days" },
+      { "metric": "Errors identified", "value": "12%" },
+      { "metric": "Operational cost", "value": "$8,000/month" }
+    ],
+    "after": [
+      { "metric": "Automatic reconciliation", "value": "Real time" },
+      { "metric": "Errors identified", "value": "0.1%" },
+      { "metric": "Operational cost", "value": "$200/month" }
+    ],
+    "steps": [
+      "Imports transactions from external sources",
+      "Compares with internal records",
+      "Identifies discrepancies",
+      "Marks reconciled records",
+      "Generates reconciliation report"
+    ],
+    "chatMessages": [
+      { "text": "POST /api/reconciliation/run\n{\"source\": \"bank_feed\", \"period\": \"2024-01\"}", "sent": false, "delay": 0 },
+      { "text": "200 OK — 2,847 transactions imported\nReconciled: 2,831 (99.4%)\nDiscrepancies: 16", "sent": true, "delay": 0.3 },
+      { "text": "GET /api/reconciliation/report/latest", "sent": false, "delay": 0.8 },
+      { "text": "200 OK — Report generated\nTotal reconciled: $4.2M\nPending: $12,400\nAudit trail: 5,694 records", "sent": true, "delay": 1.2 }
+    ]
+  },
+  "appMarketplaceCredito": {
+    "name": "Credit Marketplace",
+    "description": "Credit offer comparison platform with bureau lookup, scoring, digital contract and integrated disbursement.",
+    "before": [
+      { "metric": "Offers compared", "value": "1-2" },
+      { "metric": "Contract time", "value": "7 days" },
+      { "metric": "Conversion", "value": "8%" }
+    ],
+    "after": [
+      { "metric": "Offers compared", "value": "10+" },
+      { "metric": "Contract time", "value": "15 min" },
+      { "metric": "Conversion", "value": "34%" }
+    ],
+    "steps": [
+      "Customer applies via API",
+      "Queries credit bureau",
+      "Compares partner offers",
+      "Generates digital contract",
+      "Processes disbursement via partner",
+      "Records audit trail"
+    ],
+    "chatMessages": [
+      { "text": "POST /api/marketplace/apply\n{\"amount\": 25000, \"term\": 36}", "sent": false, "delay": 0 },
+      { "text": "200 OK — Score: 798\n8 offers available\nBest rate: 6.99% APR\nMonthly payment: $892", "sent": true, "delay": 0.3 },
+      { "text": "POST /api/marketplace/accept/OFFER-123", "sent": false, "delay": 0.8 },
+      { "text": "200 OK — Offer accepted\nContract generated and signed\nDisbursement in 24h\nAudit trail: 18 records", "sent": true, "delay": 1.2 }
     ]
   }
 }

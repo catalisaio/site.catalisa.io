@@ -18,7 +18,9 @@
       "Agentes especializados que atendem, qualificam e fecham pelo WhatsApp — como uma equipe real.",
       "Cada agente tem seu papel, suas ferramentas e seu contexto. 24/7.",
       "Descreva o que precisa. A IA monta a equipe e ativa em minutos.",
-      "Seus agentes operam suas ferramentas existentes — CRM, ERP, calendarios."
+      "Seus agentes operam suas ferramentas existentes — CRM, ERP, calendarios.",
+      "Backends, APIs e portais construidos com Building Blocks enterprise-grade. Seguranca bancaria nativa, providers de mercado plugados.",
+      "Agentes atendem seus clientes. Apps processam suas operacoes. Tudo enterprise-grade, sem codigo."
     ],
     "ctaMeetTeam": "Conheca a equipe",
     "agents": {
@@ -245,27 +247,27 @@
     "industries": [
       {
         "name": "Fintech",
-        "scenario": "Onboarding automatico, KYC, analise de credito e atendimento 24/7.",
+        "scenario": "Onboarding automatico, KYC, analise de credito, Apps de originacao e portal do cliente — tudo enterprise-grade.",
         "stats": ["85% automacao", "12s resposta", "60% menos custo"]
       },
       {
         "name": "Bancario",
-        "scenario": "Open Finance, Pix automatizado, compliance e suporte ao correntista.",
+        "scenario": "Open Finance, Pix automatizado, Apps de portal do cliente, compliance e suporte ao correntista.",
         "stats": ["90% automacao", "8s resposta", "70% menos custo"]
       },
       {
         "name": "Seguros",
-        "scenario": "Cotacoes instantaneas, renovacoes automaticas e gestao de sinistros.",
+        "scenario": "Cotacoes instantaneas, Apps de backoffice, gestao de sinistros e renovacoes automaticas.",
         "stats": ["78% automacao", "15s resposta", "55% menos custo"]
       },
       {
         "name": "Varejo",
-        "scenario": "Vendas pelo WhatsApp, pos-venda, rastreamento e fidelizacao.",
+        "scenario": "Vendas pelo WhatsApp, Apps de e-commerce, pos-venda, rastreamento e fidelizacao.",
         "stats": ["82% automacao", "10s resposta", "50% menos custo"]
       },
       {
         "name": "Startups",
-        "scenario": "Scale rapido com custo otimizado. Atendimento, vendas e suporte unificados.",
+        "scenario": "Scale rapido com Apps enterprise e custo otimizado. Atendimento, vendas e suporte unificados.",
         "stats": ["88% automacao", "6s resposta", "75% menos custo"]
       }
     ],
@@ -588,6 +590,112 @@
       "previdencia": "Previdencia"
     }
   },
+  "appBuilderShowcase": {
+    "badge": "APPS & BACKENDS",
+    "heading": "Descreva o que precisa.",
+    "headingGradient": "Publique em minutos.",
+    "subtitle": "A IA seleciona Building Blocks enterprise, modela a arquitetura e gera APIs prontas para producao.",
+    "steps": [
+      {
+        "label": "Descreva",
+        "title": "Descreva o sistema",
+        "description": "Em linguagem natural, diga qual backend, API ou portal voce precisa. A IA entende o contexto.",
+        "bullets": ["Sistema de credito completo", "Portal do cliente com SSO", "API de pagamentos com split"]
+      },
+      {
+        "label": "IA Modela",
+        "title": "IA seleciona blocos enterprise",
+        "description": "A IA escolhe os Building Blocks certos para o seu caso — cada um testado em producao com seguranca bancaria.",
+        "bullets": ["Decision Engine para regras de negocio", "IAM com SSO e RBAC nativo", "Audit Trail imutavel automatico"]
+      },
+      {
+        "label": "Revise",
+        "title": "Configure regras de negocio",
+        "description": "Ajuste parametros, limites e fluxos de aprovacao. Tudo via interface visual, sem codigo.",
+        "bullets": ["Regras de aprovacao configuráveis", "Limites e alcadas personalizados", "Fluxos de assinatura digital"]
+      },
+      {
+        "label": "Publique",
+        "title": "Publique com seguranca bancaria",
+        "description": "APIs documentadas, criptografia ponta a ponta e LGPD nativa. Pronto para producao enterprise.",
+        "bullets": ["APIs auto-documentadas (OpenAPI)", "Criptografia E2E nativa", "LGPD e audit trail de fabrica"]
+      }
+    ],
+    "stats": [
+      { "value": "25+", "label": "Building Blocks enterprise" },
+      { "value": "Minutos", "label": "para deploy" },
+      { "value": "Zero", "label": "codigo necessario" }
+    ]
+  },
+  "appsInAction": {
+    "badge": "CONSTRUCAO REAL",
+    "heading": "De uma frase a",
+    "headingGradient": "producao enterprise.",
+    "subtitle": "Veja como um sistema de originacao de credito foi construido em 10 minutos.",
+    "steps": [
+      {
+        "number": "01",
+        "label": "Descreveu",
+        "title": "Uma frase, um sistema",
+        "description": "O usuario descreveu: 'Preciso de um sistema de originacao de credito com KYC, analise de risco e contrato digital.'",
+        "highlight": "Uma frase. Sem briefing de 50 paginas."
+      },
+      {
+        "number": "02",
+        "label": "IA modelou",
+        "title": "7 Building Blocks enterprise selecionados",
+        "description": "A IA identificou os blocos necessarios: IAM, KYC/OCR, Bureau Check, Decision Engine, E-Signature, Payments e Audit Trail.",
+        "highlight": "Cada bloco ja testado em producao com seguranca bancaria."
+      },
+      {
+        "number": "03",
+        "label": "Gerou",
+        "title": "14 APIs prontas com data models",
+        "description": "O sistema gerou 14 endpoints documentados, modelos de dados, regras de negocio e fluxos de aprovacao — tudo configuravel.",
+        "highlight": "OpenAPI gerado automaticamente. Zero codigo manual."
+      },
+      {
+        "number": "04",
+        "label": "Em producao",
+        "title": "Backend rodando com seguranca enterprise",
+        "description": "Sistema em producao com criptografia E2E, LGPD nativa, audit trail completo e SLA enterprise. Pronto para escalar.",
+        "highlight": "10 minutos do zero ao deploy. Com seguranca bancaria real."
+      }
+    ],
+    "resultStats": [
+      { "value": "7", "label": "building blocks" },
+      { "value": "14", "label": "APIs geradas" },
+      { "value": "10min", "label": "tempo total" },
+      { "value": "0", "label": "linhas de codigo" }
+    ]
+  },
+  "agentsAndApps": {
+    "badge": "AGENTES + APPS",
+    "heading": "Agentes atendem.",
+    "headingGradient": "Apps processam.",
+    "subtitle": "A mesma plataforma entrega interface humana via Agentes IA e infraestrutura enterprise via Apps.",
+    "examples": [
+      {
+        "title": "Credito via WhatsApp",
+        "agent": "Agente coleta dados e qualifica o cliente",
+        "app": "App analisa risco com Decision Engine e audit trail"
+      },
+      {
+        "title": "KYC Digital",
+        "agent": "Agente guia o envio de documentos",
+        "app": "App valida identidade com OCR, facematch e bureau"
+      },
+      {
+        "title": "Portal do Cliente",
+        "agent": "Agente responde duvidas em tempo real",
+        "app": "Portal exibe saldo, extrato e documentos do backend seguro"
+      }
+    ],
+    "callout": {
+      "heading": "Mesma plataforma. Mesmos Building Blocks.",
+      "description": "Agentes usam a interface humana. Apps usam a infraestrutura enterprise. Voce combina os dois."
+    }
+  },
   "faq": {
     "heading": "Perguntas frequentes",
     "subtitle": "Tudo que voce precisa saber sobre a Catalisa.",
@@ -659,6 +767,30 @@
       {
         "question": "Tenho controle sobre o que os agentes fazem?",
         "answer": "Sim, total controle. Voce define limites de autonomia, regras de escalacao para humano, tom de voz e quais acoes cada agente pode executar. Tudo e monitorado em tempo real no painel de operacoes."
+      },
+      {
+        "question": "O que sao os Apps da Catalisa?",
+        "answer": "Apps sao backends, APIs e portais completos construidos com Building Blocks enterprise-grade. Diferente de ferramentas low-code genericas, cada app Catalisa vem com seguranca bancaria nativa, providers de mercado homologados, audit trail e compliance LGPD — tudo de fabrica."
+      },
+      {
+        "question": "Qual a diferenca entre Agentes IA e Apps?",
+        "answer": "Agentes IA sao a interface humana — eles atendem clientes, qualificam leads e resolvem problemas via WhatsApp. Apps sao a infraestrutura enterprise — backends, APIs e portais que processam operacoes com seguranca bancaria. Ambos usam os mesmos Building Blocks e funcionam na mesma plataforma."
+      },
+      {
+        "question": "Consigo criar um sistema de credito completo?",
+        "answer": "Sim. Com Building Blocks enterprise como Decision Engine, Bureau Check, E-Signature e Audit Trail, voce cria um sistema de originacao de credito completo — da solicitacao ao desembolso — em minutos, com seguranca bancaria nativa."
+      },
+      {
+        "question": "Preciso de desenvolvedores para criar Apps?",
+        "answer": "Nao. A IA seleciona os Building Blocks enterprise, modela a arquitetura e gera as APIs automaticamente. Voce configura regras de negocio via interface visual. Para integracao avancada, oferecemos API e SDK."
+      },
+      {
+        "question": "Meus Apps geram APIs documentadas?",
+        "answer": "Sim. Toda API e gerada com documentacao OpenAPI automatica, autenticacao, rate limiting e versionamento. Prontas para consumo por outros sistemas, apps mobile ou parceiros."
+      },
+      {
+        "question": "Posso conectar um Agente IA a um App que criei?",
+        "answer": "Sim. Essa e a forca da plataforma. Um Agente IA pode coletar dados via WhatsApp e enviar para um App que processa com Decision Engine, gera contratos e registra tudo no audit trail — tudo na mesma plataforma, com os mesmos Building Blocks."
       }
     ]
   }

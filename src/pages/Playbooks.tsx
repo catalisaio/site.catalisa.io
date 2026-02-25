@@ -13,7 +13,7 @@ import { PlaybookCard } from '../components/playbooks/PlaybookCard';
 import { PlaybookFilters } from '../components/playbooks/PlaybookFilters';
 import { MotionBox } from '../components/motion';
 import { playbooks } from '../data/playbooks';
-import type { PlaybookCategory, PlaybookIndustry } from '../data/playbooks';
+import type { PlaybookCategory, PlaybookIndustry, PlaybookType } from '../data/playbooks';
 import { useLocalizedPath } from '../i18n/useLocalizedPath';
 
 export function Playbooks() {
@@ -24,11 +24,17 @@ export function Playbooks() {
   const [search, setSearch] = useState('');
   const [category, setCategory] = useState<PlaybookCategory | 'all'>('all');
   const [industry, setIndustry] = useState<PlaybookIndustry | 'all'>('all');
+  const [type, setType] = useState<PlaybookType | 'all'>('all');
 
-  const featured = useMemo(() => playbooks.filter((tpl) => tpl.featured), []);
+  const featured = useMemo(() => {
+    const base = playbooks.filter((tpl) => tpl.featured);
+    if (type === 'all') return base;
+    return base.filter((tpl) => tpl.type === type);
+  }, [type]);
 
   const filtered = useMemo(() => {
     return playbooks.filter((tpl) => {
+      if (type !== 'all' && tpl.type !== type) return false;
       if (category !== 'all' && tpl.category !== category) return false;
       if (industry !== 'all' && tpl.industry !== industry) return false;
       if (search) {
@@ -39,7 +45,7 @@ export function Playbooks() {
       }
       return true;
     });
-  }, [category, industry, search, t]);
+  }, [type, category, industry, search, t]);
 
   return (
     <>
@@ -108,6 +114,31 @@ export function Playbooks() {
                 >
                   {t(`stats.${key}`)}
                 </Badge>
+              ))}
+            </HStack>
+
+            {/* Type toggle */}
+            <HStack justify="center" spacing={2} mb={6}>
+              {(['all', 'agent', 'app'] as const).map((key) => (
+                <Box
+                  key={key}
+                  as="button"
+                  onClick={() => setType(key)}
+                  px={4}
+                  py={2}
+                  borderRadius="full"
+                  bg={type === key ? 'whiteAlpha.200' : 'transparent'}
+                  border="1px solid"
+                  borderColor={type === key ? 'brand.400' : 'whiteAlpha.200'}
+                  color={type === key ? 'white' : 'whiteAlpha.600'}
+                  fontSize="sm"
+                  fontWeight={type === key ? '600' : '400'}
+                  cursor="pointer"
+                  transition="all 0.2s"
+                  _hover={{ bg: 'whiteAlpha.100', borderColor: 'brand.300' }}
+                >
+                  {t(`types.${key}`)}
+                </Box>
               ))}
             </HStack>
 

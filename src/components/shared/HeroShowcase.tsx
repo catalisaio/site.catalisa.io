@@ -1,9 +1,10 @@
 import { useMemo } from 'react';
 import { Box, Flex, HStack, Text } from '@chakra-ui/react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { FiMessageCircle, FiGitBranch, FiCpu, FiShield, FiLayers, FiUsers } from 'react-icons/fi';
+import { FiMessageCircle, FiGitBranch, FiCpu, FiShield, FiLayers, FiUsers, FiServer, FiKey } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
 import { WhatsAppChatPreview, useCreditMessages, useInsuranceMessages } from './WhatsAppChatPreview';
+import { APIPreview, type APIMessage } from './APIPreview';
 import { WorkflowPreviewHero } from '../workflow-preview/WorkflowPreviewHero';
 import { AIAgentPreview } from './AIAgentPreview';
 import { StudioBuilderPreview } from './StudioBuilderPreview';
@@ -24,6 +25,8 @@ const heroTabDefs = [
   { id: 'workflows', labelKey: 'heroShowcase.tabs.workflows', icon: FiGitBranch, color: 'blue.500', dwellTime: 8000 },
   { id: 'seguros', labelKey: 'heroShowcase.tabs.seguros', icon: FiShield, color: 'orange.400', dwellTime: 8000 },
   { id: 'agents', labelKey: 'heroShowcase.tabs.agents', icon: FiCpu, color: 'brand.500', dwellTime: 6000 },
+  { id: 'appCredito', labelKey: 'heroShowcase.tabs.appCredito', icon: FiServer, color: 'orange.400', dwellTime: 8000 },
+  { id: 'appKyc', labelKey: 'heroShowcase.tabs.appKyc', icon: FiKey, color: 'orange.500', dwellTime: 8000 },
 ] as const;
 
 export function useHeroTabs(): HeroShowcaseTab[] {
@@ -62,10 +65,22 @@ const panelVariants = {
   exit: { opacity: 0, x: -30 },
 };
 
+function useAppCreditMessages(): APIMessage[] {
+  const { t } = useTranslation('home');
+  return useMemo(() => t('heroShowcase.appCreditMessages', { returnObjects: true }) as APIMessage[], [t]);
+}
+
+function useAppKycMessages(): APIMessage[] {
+  const { t } = useTranslation('home');
+  return useMemo(() => t('heroShowcase.appKycMessages', { returnObjects: true }) as APIMessage[], [t]);
+}
+
 function PanelContent({ index }: { index: number }) {
   const { t } = useTranslation('home');
   const creditMessages = useCreditMessages();
   const insuranceMessages = useInsuranceMessages();
+  const appCreditMessages = useAppCreditMessages();
+  const appKycMessages = useAppKycMessages();
 
   switch (index) {
     case 0:
@@ -80,6 +95,10 @@ function PanelContent({ index }: { index: number }) {
       return <WhatsAppChatPreview triggerMode="auto" title={t('chatPreview.insuranceTitle')} messages={insuranceMessages} />;
     case 5:
       return <AIAgentPreview />;
+    case 6:
+      return <APIPreview triggerMode="auto" title={t('heroShowcase.appCreditTitle')} messages={appCreditMessages} />;
+    case 7:
+      return <APIPreview triggerMode="auto" title={t('heroShowcase.appKycTitle')} messages={appKycMessages} />;
     default:
       return null;
   }

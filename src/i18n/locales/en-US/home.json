@@ -512,8 +512,28 @@
       "workflows": "Automations",
       "seguros": "Insurance",
       "agents": "AI Agents",
-      "previdencia": "Pension"
-    }
+      "previdencia": "Pension",
+      "appCredito": "Credit App",
+      "appKyc": "KYC App"
+    },
+    "appCreditTitle": "Origination API",
+    "appCreditMessages": [
+      { "text": "POST /api/v1/credit/analyze", "sent": true, "delay": 0.2 },
+      { "text": "{\n  \"ssn\": \"***-**-1234\",\n  \"amount\": 25000,\n  \"term\": 36\n}", "sent": true, "delay": 0.6 },
+      { "text": "200 OK", "sent": false, "delay": 1.2 },
+      { "text": "{\n  \"score\": 782,\n  \"risk\": \"low\",\n  \"limit\": 30000,\n  \"rate\": \"1.49%\"\n}", "sent": false, "delay": 1.6 },
+      { "text": "POST /api/v1/credit/approve", "sent": true, "delay": 2.2 },
+      { "text": "201 Created — Contract generated", "sent": false, "delay": 2.8 }
+    ],
+    "appKycTitle": "Verification API",
+    "appKycMessages": [
+      { "text": "POST /api/v1/kyc/verify", "sent": true, "delay": 0.2 },
+      { "text": "{\n  \"document\": \"ID\",\n  \"selfie\": true,\n  \"bureau\": \"equifax\"\n}", "sent": true, "delay": 0.6 },
+      { "text": "200 OK", "sent": false, "delay": 1.2 },
+      { "text": "{\n  \"facematch\": 98.7,\n  \"document\": \"valid\",\n  \"pep\": false,\n  \"status\": \"approved\"\n}", "sent": false, "delay": 1.6 },
+      { "text": "GET /api/v1/kyc/audit/trail", "sent": true, "delay": 2.2 },
+      { "text": "200 OK — 4 events logged", "sent": false, "delay": 2.8 }
+    ]
   },
   "appBuilderShowcase": {
     "badge": "APPS & BACKENDS",

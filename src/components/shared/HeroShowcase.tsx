@@ -1,9 +1,9 @@
 import { useMemo } from 'react';
 import { Box, Flex, HStack, Text } from '@chakra-ui/react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { FiMessageCircle, FiGitBranch, FiCpu, FiShield, FiTrendingUp, FiLayers, FiUsers } from 'react-icons/fi';
+import { FiMessageCircle, FiGitBranch, FiCpu, FiShield, FiLayers, FiUsers } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
-import { WhatsAppChatPreview, useCreditMessages, useInsuranceMessages, usePensionMessages } from './WhatsAppChatPreview';
+import { WhatsAppChatPreview, useCreditMessages, useInsuranceMessages } from './WhatsAppChatPreview';
 import { WorkflowPreviewHero } from '../workflow-preview/WorkflowPreviewHero';
 import { AIAgentPreview } from './AIAgentPreview';
 import { StudioBuilderPreview } from './StudioBuilderPreview';
@@ -24,7 +24,6 @@ const heroTabDefs = [
   { id: 'workflows', labelKey: 'heroShowcase.tabs.workflows', icon: FiGitBranch, color: 'blue.500', dwellTime: 8000 },
   { id: 'seguros', labelKey: 'heroShowcase.tabs.seguros', icon: FiShield, color: 'orange.400', dwellTime: 8000 },
   { id: 'agents', labelKey: 'heroShowcase.tabs.agents', icon: FiCpu, color: 'brand.500', dwellTime: 6000 },
-  { id: 'previdencia', labelKey: 'heroShowcase.tabs.previdencia', icon: FiTrendingUp, color: 'cyan.400', dwellTime: 8000 },
 ] as const;
 
 export function useHeroTabs(): HeroShowcaseTab[] {
@@ -67,7 +66,6 @@ function PanelContent({ index }: { index: number }) {
   const { t } = useTranslation('home');
   const creditMessages = useCreditMessages();
   const insuranceMessages = useInsuranceMessages();
-  const pensionMessages = usePensionMessages();
 
   switch (index) {
     case 0:
@@ -82,8 +80,6 @@ function PanelContent({ index }: { index: number }) {
       return <WhatsAppChatPreview triggerMode="auto" title={t('chatPreview.insuranceTitle')} messages={insuranceMessages} />;
     case 5:
       return <AIAgentPreview />;
-    case 6:
-      return <WhatsAppChatPreview triggerMode="auto" title={t('chatPreview.pensionTitle')} messages={pensionMessages} />;
     default:
       return null;
   }

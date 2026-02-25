@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import {
   Box,
   Container,
@@ -12,11 +12,12 @@ import {
   ListItem,
   ListIcon,
 } from '@chakra-ui/react';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, motion, useScroll, useMotionValueEvent } from 'framer-motion';
 import { FiCheck, FiServer, FiClock, FiLayers } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
 import { MotionBox } from '../motion';
 import { GradientText } from '../shared/GradientText';
+import { ScrollHint } from '../shared/ScrollHint';
 
 interface BuilderStep {
   label: string;
@@ -28,6 +29,25 @@ interface BuilderStep {
 export function AppBuilderShowcase() {
   const { t } = useTranslation('home');
   const [activeStep, setActiveStep] = useState(0);
+  const sectionRef = useRef<HTMLDivElement>(null);
+
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ['start start', 'end end'],
+  });
+
+  useMotionValueEvent(scrollYProgress, 'change', (progress) => {
+    // Remap raw progress into active zone, leaving buffers at start/end
+    // 0–3% = lead-in buffer, 3–70% = animation zone, 70–100% = tail buffer (absorbs momentum)
+    const ANIM_START = 0.03;
+    const ANIM_END = 0.70;
+    const normalized = progress <= ANIM_START ? 0
+      : progress >= ANIM_END ? 1
+      : (progress - ANIM_START) / (ANIM_END - ANIM_START);
+
+    const step = Math.min(3, Math.floor(normalized * 4));
+    setActiveStep(step);
+  });
 
   const steps = t('appBuilderShowcase.steps', { returnObjects: true }) as BuilderStep[];
   const stats = t('appBuilderShowcase.stats', { returnObjects: true }) as Array<{ value: string; label: string }>;
@@ -180,7 +200,16 @@ export function AppBuilderShowcase() {
   ];
 
   return (
-    <Box as="section" position="relative" bg="gray.900" overflow="hidden">
+    <Box as="section" ref={sectionRef} position="relative" bg="gray.900" minH="400vh">
+      {/* Sticky visual container */}
+      <Box
+        position="sticky"
+        top={0}
+        h="100vh"
+        display="flex"
+        alignItems="center"
+        overflow="hidden"
+      >
       <Box
         position="absolute"
         top="-20%"
@@ -272,17 +301,13 @@ export function AppBuilderShowcase() {
                       />
                     )}
                     <Box
-                      as="button"
-                      onClick={() => setActiveStep(i)}
                       px={{ base: 3, md: 5 }}
                       py={{ base: 2, md: 2.5 }}
                       borderRadius="full"
                       bg={isActive ? 'whiteAlpha.150' : 'transparent'}
                       border="1px solid"
                       borderColor={isActive ? 'orange.400' : isPast ? 'orange.400' : 'whiteAlpha.200'}
-                      cursor="pointer"
                       transition="all 0.3s"
-                      _hover={{ bg: 'whiteAlpha.100', borderColor: 'orange.300' }}
                       flexShrink={0}
                     >
                       <HStack spacing={2}>
@@ -441,6 +466,8 @@ export function AppBuilderShowcase() {
           </Flex>
         </MotionBox>
       </Container>
+      <ScrollHint scrollYProgress={scrollYProgress} color="orange.300" label={t('scrollHint')} />
+      </Box>
     </Box>
   );
 }

@@ -102,7 +102,7 @@ export function PlaybookDetail() {
 
   return (
     <>
-      {/* ── Hero ─────────────────────────────────────────── */}
+      {/* ── 1. Hero (DARK) ───────────────────────────────── */}
       <Box
         bg="hero.bg" pb={16} color="white"
         position="relative" overflow="hidden"
@@ -167,9 +167,9 @@ export function PlaybookDetail() {
         </Container>
       </Box>
 
-      {/* ── Agent + Building Blocks Diagram ──────────────── */}
-      <SectionWrapper>
-        <Heading as="h2" size="md" fontWeight="700" mb={10} textAlign="center">
+      {/* ── 2. Agent Diagram (DARK) ──────────────────────── */}
+      <SectionWrapper bg="hero.bg">
+        <Heading as="h2" size="md" fontWeight="700" mb={10} textAlign="center" color="white">
           {t('detail.blocksUsed')}
         </Heading>
 
@@ -180,6 +180,14 @@ export function PlaybookDetail() {
           w={`${DG.w}px`} h={`${DG.h}px`}
           mx="auto"
         >
+          {/* Ambient glow behind center */}
+          <Box
+            position="absolute" top="50%" left="50%" transform="translate(-50%, -50%)"
+            w="200px" h="200px" borderRadius="full"
+            bgGradient={`radial(circle, var(--chakra-colors-${catMeta.color}-500) 0%, transparent 70%)`}
+            opacity={0.12} pointerEvents="none"
+          />
+
           {/* SVG dashed connector lines */}
           <motion.svg
             viewBox={`0 0 ${DG.w} ${DG.h}`}
@@ -190,7 +198,7 @@ export function PlaybookDetail() {
                 key={i}
                 x1={CX} y1={CY}
                 x2={CX + pos.x} y2={CY + pos.y}
-                stroke="#CBD5E0" strokeWidth="1.5" strokeDasharray="6 4"
+                stroke="rgba(255,255,255,0.12)" strokeWidth="1.5" strokeDasharray="6 4"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
@@ -203,15 +211,16 @@ export function PlaybookDetail() {
           <Box position="absolute" top="50%" left="50%" transform="translate(-50%, -50%)">
             <MotionBox {...nodeReveal}>
               <VStack
-                spacing={2} p={5} borderRadius="2xl" bg="white"
-                border="2px solid" borderColor={`${catMeta.color}.200`}
-                boxShadow={`0 0 50px var(--chakra-colors-${catMeta.color}-100), 0 4px 20px rgba(0,0,0,0.06)`}
+                spacing={2} p={5} borderRadius="2xl"
+                bg="whiteAlpha.100" backdropFilter="blur(12px)"
+                border="1px solid" borderColor={`${catMeta.color}.400`}
+                boxShadow={`0 0 60px var(--chakra-colors-${catMeta.color}-500), 0 0 20px rgba(0,0,0,0.3)`}
                 w="140px" textAlign="center"
               >
-                <Flex w="44px" h="44px" borderRadius="xl" bg={`${catMeta.color}.50`} align="center" justify="center">
-                  <Box as={Icon} color={`${catMeta.color}.500`} boxSize="22px" />
+                <Flex w="44px" h="44px" borderRadius="xl" bg={`${catMeta.color}.500`} align="center" justify="center">
+                  <Box as={Icon} color="white" boxSize="22px" />
                 </Flex>
-                <Text fontSize="xs" fontWeight="700" color="gray.800" lineHeight="short" noOfLines={2}>
+                <Text fontSize="xs" fontWeight="700" color="white" lineHeight="short" noOfLines={2}>
                   {t(playbook.nameKey)}
                 </Text>
                 <Badge colorScheme={catMeta.color} fontSize="2xs" borderRadius="full">
@@ -236,16 +245,17 @@ export function PlaybookDetail() {
               >
                 <MotionBox {...nodeReveal} transition={{ ...nodeReveal.transition, delay: 0.15 + i * 0.1 }}>
                   <VStack
-                    spacing={1.5} p={3} borderRadius="xl" bg="white"
-                    border="1px solid" borderColor="gray.100" shadow="sm"
+                    spacing={1.5} p={3} borderRadius="xl"
+                    bg="whiteAlpha.100" backdropFilter="blur(8px)"
+                    border="1px solid" borderColor="whiteAlpha.200"
                     w="110px" textAlign="center"
-                    _hover={{ shadow: 'md', borderColor: `${meta.color}.200` }}
+                    _hover={{ borderColor: `${meta.color}.400`, bg: 'whiteAlpha.200' }}
                     transition="all 0.2s"
                   >
-                    <Flex w="32px" h="32px" borderRadius="lg" bg={`${meta.color}.50`} align="center" justify="center">
-                      <Box as={BlkIcon} color={`${meta.color}.500`} boxSize="16px" />
+                    <Flex w="32px" h="32px" borderRadius="lg" bg={`${meta.color}.500`} align="center" justify="center">
+                      <Box as={BlkIcon} color="white" boxSize="16px" />
                     </Flex>
-                    <Text fontSize="2xs" fontWeight="600" color="gray.700">{block}</Text>
+                    <Text fontSize="2xs" fontWeight="600" color="whiteAlpha.800">{block}</Text>
                   </VStack>
                 </MotionBox>
               </Box>
@@ -257,15 +267,16 @@ export function PlaybookDetail() {
         <Box display={{ base: 'block', md: 'none' }}>
           <Flex justify="center" mb={4}>
             <VStack
-              spacing={2} p={4} borderRadius="2xl" bg="white"
-              border="2px solid" borderColor={`${catMeta.color}.200`}
-              boxShadow={`0 0 30px var(--chakra-colors-${catMeta.color}-100)`}
+              spacing={2} p={4} borderRadius="2xl"
+              bg="whiteAlpha.100" backdropFilter="blur(12px)"
+              border="1px solid" borderColor={`${catMeta.color}.400`}
+              boxShadow={`0 0 40px var(--chakra-colors-${catMeta.color}-500)`}
               textAlign="center" w="full" maxW="200px"
             >
-              <Flex w="40px" h="40px" borderRadius="xl" bg={`${catMeta.color}.50`} align="center" justify="center">
-                <Box as={Icon} color={`${catMeta.color}.500`} boxSize="20px" />
+              <Flex w="40px" h="40px" borderRadius="xl" bg={`${catMeta.color}.500`} align="center" justify="center">
+                <Box as={Icon} color="white" boxSize="20px" />
               </Flex>
-              <Text fontSize="sm" fontWeight="700" color="gray.800">{t(playbook.nameKey)}</Text>
+              <Text fontSize="sm" fontWeight="700" color="white">{t(playbook.nameKey)}</Text>
               <Badge colorScheme={catMeta.color} fontSize="2xs">{t(catMeta.labelKey)}</Badge>
             </VStack>
           </Flex>
@@ -275,13 +286,14 @@ export function PlaybookDetail() {
               const BlkIcon = meta.icon;
               return (
                 <VStack
-                  key={block} spacing={1} p={3} borderRadius="xl" bg="white"
-                  border="1px solid" borderColor="gray.100" shadow="sm" textAlign="center"
+                  key={block} spacing={1} p={3} borderRadius="xl"
+                  bg="whiteAlpha.100" border="1px solid" borderColor="whiteAlpha.200"
+                  textAlign="center"
                 >
-                  <Flex w="28px" h="28px" borderRadius="md" bg={`${meta.color}.50`} align="center" justify="center">
-                    <Box as={BlkIcon} color={`${meta.color}.500`} boxSize="14px" />
+                  <Flex w="28px" h="28px" borderRadius="md" bg={`${meta.color}.500`} align="center" justify="center">
+                    <Box as={BlkIcon} color="white" boxSize="14px" />
                   </Flex>
-                  <Text fontSize="2xs" fontWeight="600" color="gray.700">{block}</Text>
+                  <Text fontSize="2xs" fontWeight="600" color="whiteAlpha.800">{block}</Text>
                 </VStack>
               );
             })}
@@ -289,8 +301,8 @@ export function PlaybookDetail() {
         </Box>
       </SectionWrapper>
 
-      {/* ── Vertical Workflow ────────────────────────────── */}
-      <SectionWrapper bg="gray.50">
+      {/* ── 3. Vertical Workflow (LIGHT) ─────────────────── */}
+      <SectionWrapper>
         <Heading as="h2" size="md" fontWeight="700" mb={10} textAlign="center">
           {t('detail.workflow')}
         </Heading>
@@ -329,10 +341,10 @@ export function PlaybookDetail() {
         </MotionBox>
       </SectionWrapper>
 
-      {/* ── Metrics Before/After ─────────────────────────── */}
+      {/* ── 4. Metrics Before/After (DARK) ───────────────── */}
       {Array.isArray(before) && before.length > 0 && (
-        <SectionWrapper>
-          <Heading as="h2" size="md" fontWeight="700" textAlign="center" mb={8}>
+        <SectionWrapper bg="hero.bg">
+          <Heading as="h2" size="md" fontWeight="700" textAlign="center" mb={8} color="white">
             {t('detail.results')}
           </Heading>
           <Flex
@@ -342,9 +354,13 @@ export function PlaybookDetail() {
             gap={6}
           >
             {/* Before */}
-            <Box flex={1} bg="red.50" p={6} borderRadius="xl" border="1px solid" borderColor="red.100">
+            <Box
+              flex={1} p={6} borderRadius="xl"
+              bg="rgba(254, 178, 178, 0.06)"
+              border="1px solid" borderColor="red.800"
+            >
               <Text
-                fontSize="xs" fontWeight="700" color="red.500" mb={4}
+                fontSize="xs" fontWeight="700" color="red.300" mb={4}
                 textTransform="uppercase" letterSpacing="wide"
               >
                 {t('detail.before')}
@@ -352,8 +368,8 @@ export function PlaybookDetail() {
               <VStack align="flex-start" spacing={3}>
                 {before.map((item) => (
                   <Flex key={item.metric} justify="space-between" w="full" align="baseline">
-                    <Text fontSize="sm" color="gray.600">{item.metric}</Text>
-                    <Text fontWeight="800" fontSize="2xl" color="red.600">{item.value}</Text>
+                    <Text fontSize="sm" color="whiteAlpha.600">{item.metric}</Text>
+                    <Text fontWeight="800" fontSize="2xl" color="red.300">{item.value}</Text>
                   </Flex>
                 ))}
               </VStack>
@@ -361,24 +377,25 @@ export function PlaybookDetail() {
 
             {/* Arrow indicator (desktop) */}
             <Flex display={{ base: 'none', md: 'flex' }} align="center" justify="center" flexShrink={0}>
-              <Flex w="36px" h="36px" borderRadius="full" bg="gray.100" align="center" justify="center">
-                <Box as={FiArrowRight} color="gray.500" boxSize="18px" />
+              <Flex w="36px" h="36px" borderRadius="full" bg="whiteAlpha.100" align="center" justify="center">
+                <Box as={FiArrowRight} color="whiteAlpha.600" boxSize="18px" />
               </Flex>
             </Flex>
 
             {/* After */}
             <Box
-              flex={1} bg="green.50" p={6} borderRadius="xl"
-              border="1px solid" borderColor="green.100"
+              flex={1} p={6} borderRadius="xl"
+              bg="rgba(154, 230, 180, 0.06)"
+              border="1px solid" borderColor="green.800"
               position="relative" overflow="hidden"
             >
               <Box
                 position="absolute" top="-20px" right="-20px" w="100px" h="100px"
-                bgGradient="radial(circle, rgba(72, 187, 120, 0.15) 0%, transparent 70%)"
+                bgGradient="radial(circle, rgba(72, 187, 120, 0.1) 0%, transparent 70%)"
                 pointerEvents="none"
               />
               <Text
-                fontSize="xs" fontWeight="700" color="green.500" mb={4}
+                fontSize="xs" fontWeight="700" color="green.300" mb={4}
                 textTransform="uppercase" letterSpacing="wide" position="relative"
               >
                 {t('detail.after')}
@@ -386,8 +403,8 @@ export function PlaybookDetail() {
               <VStack align="flex-start" spacing={3} position="relative">
                 {after.map((item) => (
                   <Flex key={item.metric} justify="space-between" w="full" align="baseline">
-                    <Text fontSize="sm" color="gray.600">{item.metric}</Text>
-                    <Text fontWeight="800" fontSize="2xl" color="green.600">{item.value}</Text>
+                    <Text fontSize="sm" color="whiteAlpha.600">{item.metric}</Text>
+                    <Text fontWeight="800" fontSize="2xl" color="green.300">{item.value}</Text>
                   </Flex>
                 ))}
               </VStack>
@@ -396,7 +413,7 @@ export function PlaybookDetail() {
         </SectionWrapper>
       )}
 
-      {/* ── Related Playbooks ────────────────────────────── */}
+      {/* ── 5. Related Playbooks (LIGHT) ─────────────────── */}
       {related.length > 0 && (
         <SectionWrapper bg="gray.50">
           <Heading as="h2" size="md" fontWeight="700" textAlign="center" mb={8}>

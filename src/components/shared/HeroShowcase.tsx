@@ -93,10 +93,11 @@ export function HeroShowcase({ activeIndex, onTabChange, paused }: HeroShowcaseP
     <Flex direction="column" gap={4} w="full">
       {/* Panel content */}
       <Box
-        minH={{ base: '340px', xl: '400px' }}
+        h={{ base: '380px', xl: '420px' }}
         display="flex"
         alignItems="flex-end"
         justifyContent="center"
+        overflow="hidden"
       >
         <AnimatePresence mode="wait">
           <motion.div

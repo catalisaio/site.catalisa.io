@@ -1,5 +1,5 @@
 import {
-  Box, Container, Heading, Text, VStack, SimpleGrid, HStack, Icon, Badge,
+  Box, Heading, Text, VStack, SimpleGrid, HStack, Icon, Badge,
   Code, Flex,
 } from '@chakra-ui/react';
 import {
@@ -8,43 +8,22 @@ import {
 } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
 import { SectionWrapper } from '../components/shared/SectionWrapper';
+import { PageHero } from '../components/shared/PageHero';
+import { SectionHeader } from '../components/shared/SectionHeader';
 import { MotionBox } from '../components/motion';
-import { GradientText } from '../components/shared/GradientText';
 import { FinalCTA } from '../components/sections/FinalCTA';
 import { WorkflowShowcase } from '../components/sections/WorkflowShowcase';
 import { ProductScreenshot } from '../components/sections/ProductScreenshot';
 
 export function Workflows() {
   const { t } = useTranslation('workflows');
+  const { t: tc } = useTranslation('common');
+
   const workflowSteps = [
-    {
-      step: '01',
-      title: t('howItWorks.steps.0.title'),
-      description: t('howItWorks.steps.0.description'),
-      icon: FiLayout,
-      color: 'blue.500',
-    },
-    {
-      step: '02',
-      title: t('howItWorks.steps.1.title'),
-      description: t('howItWorks.steps.1.description'),
-      icon: FiZap,
-      color: 'orange.500',
-    },
-    {
-      step: '03',
-      title: t('howItWorks.steps.2.title'),
-      description: t('howItWorks.steps.2.description'),
-      icon: FiGitBranch,
-      color: 'brand.500',
-    },
-    {
-      step: '04',
-      title: t('howItWorks.steps.3.title'),
-      description: t('howItWorks.steps.3.description'),
-      icon: FiPlay,
-      color: 'whatsapp.500',
-    },
+    { step: '01', title: t('howItWorks.steps.0.title'), description: t('howItWorks.steps.0.description'), icon: FiLayout, color: 'blue.500' },
+    { step: '02', title: t('howItWorks.steps.1.title'), description: t('howItWorks.steps.1.description'), icon: FiZap, color: 'orange.500' },
+    { step: '03', title: t('howItWorks.steps.2.title'), description: t('howItWorks.steps.2.description'), icon: FiGitBranch, color: 'brand.500' },
+    { step: '04', title: t('howItWorks.steps.3.title'), description: t('howItWorks.steps.3.description'), icon: FiPlay, color: 'whatsapp.500' },
   ];
 
   const triggers = [
@@ -64,33 +43,20 @@ export function Workflows() {
     { variable: '{{actions.aiAgent.output.response}}', description: t('variables.examples.2') },
     { variable: '{{trigger.payload.message.text}}', description: t('variables.examples.3') },
   ];
+
   return (
     <>
-      {/* Hero */}
-      <Box id="hero" bg="hero.bg" pt={20} pb={16}>
-        <Container maxW="1280px">
-          <VStack spacing={6} textAlign="center" maxW="800px" mx="auto">
-            <Badge colorScheme="blue" fontSize="xs" px={3} py={1} borderRadius="full">
-              {t('hero.badge')}
-            </Badge>
-            <Heading as="h1" size="2xl" fontWeight="800" color="white" lineHeight="1.15">
-              {t('hero.heading')}{' '}
-              <GradientText gradient="linear(to-r, blue.300, brand.400)">{t('hero.headingGradient')}</GradientText>
-            </Heading>
-            <Text color="whiteAlpha.700" fontSize="lg" maxW="600px" lineHeight="1.7">
-              {t('hero.subtitle')}
-            </Text>
-          </VStack>
-        </Container>
-      </Box>
+      <PageHero
+        badge={t('hero.badge')}
+        heading={t('hero.heading')}
+        headingGradient={t('hero.headingGradient')}
+        subtitle={t('hero.subtitle')}
+        primaryCTA={{ label: tc('cta.letsChat') }}
+      />
 
       {/* How it works - Steps */}
       <SectionWrapper>
-        <VStack spacing={4} textAlign="center" mb={12}>
-          <Heading as="h2" size="xl" fontWeight="800">
-            {t('howItWorks.heading')}
-          </Heading>
-        </VStack>
+        <SectionHeader heading={t('howItWorks.heading')} />
 
         <SimpleGrid columns={{ base: 1, sm: 2, lg: 4 }} spacing={6}>
           {workflowSteps.map((step, i) => (
@@ -101,7 +67,11 @@ export function Workflows() {
               viewport={{ once: true }}
               transition={{ delay: i * 0.15, duration: 0.5 }}
             >
-              <Box bg="white" p={6} borderRadius="xl" border="1px solid" borderColor="gray.100" h="full" position="relative">
+              <Box
+                bg="white" p={6} borderRadius="xl" border="1px solid" borderColor="gray.100" h="full" position="relative"
+                _hover={{ borderColor: step.color, boxShadow: 'md', transform: 'translateY(-4px)' }}
+                transition="all 0.2s"
+              >
                 <Text position="absolute" top={3} right={4} fontSize="3xl" fontWeight="900" color="gray.100">{step.step}</Text>
                 <VStack align="flex-start" spacing={4}>
                   <Icon as={step.icon} boxSize={6} color={step.color} />
@@ -116,14 +86,10 @@ export function Workflows() {
 
       {/* Trigger Types */}
       <SectionWrapper bg="gray.50">
-        <VStack spacing={4} textAlign="center" mb={12}>
-          <Heading as="h2" size="xl" fontWeight="800">
-            {t('triggers.heading')}
-          </Heading>
-          <Text color="gray.500" maxW="500px">
-            {t('triggers.subtitle')}
-          </Text>
-        </VStack>
+        <SectionHeader
+          heading={t('triggers.heading')}
+          subtitle={t('triggers.subtitle')}
+        />
 
         <SimpleGrid columns={{ base: 2, md: 4 }} spacing={4}>
           {triggers.map((trigger, i) => (
@@ -135,12 +101,8 @@ export function Workflows() {
               transition={{ delay: i * 0.05, duration: 0.4 }}
             >
               <Box
-                bg="white"
-                p={4}
-                borderRadius="xl"
-                border="1px solid"
-                borderColor="gray.100"
-                _hover={{ borderColor: trigger.color, transform: 'translateY(-2px)' }}
+                bg="white" p={4} borderRadius="xl" border="1px solid" borderColor="gray.100"
+                _hover={{ borderColor: trigger.color, transform: 'translateY(-4px)', boxShadow: 'md' }}
                 transition="all 0.2s"
                 h="full"
               >
@@ -228,14 +190,10 @@ export function Workflows() {
 
       {/* Variable Interpolation */}
       <SectionWrapper bg="gray.50">
-        <VStack spacing={4} textAlign="center" mb={12}>
-          <Heading as="h2" size="xl" fontWeight="800">
-            {t('variables.heading')}
-          </Heading>
-          <Text color="gray.500" maxW="500px">
-            {t('variables.subtitle')}
-          </Text>
-        </VStack>
+        <SectionHeader
+          heading={t('variables.heading')}
+          subtitle={t('variables.subtitle')}
+        />
 
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={4} maxW="800px" mx="auto">
           {variableExamples.map((example, i) => (
@@ -272,7 +230,11 @@ export function Workflows() {
               viewport={{ once: true }}
               transition={{ delay: i * 0.15, duration: 0.5 }}
             >
-              <Box bg="white" p={6} borderRadius="xl" border="1px solid" borderColor="gray.100" h="full">
+              <Box
+                bg="white" p={6} borderRadius="xl" border="1px solid" borderColor="gray.100" h="full"
+                _hover={{ borderColor: feature.color, boxShadow: 'md', transform: 'translateY(-4px)' }}
+                transition="all 0.2s"
+              >
                 <VStack align="flex-start" spacing={3}>
                   <Icon as={feature.icon} boxSize={6} color={feature.color} />
                   <Heading as="h3" size="sm" fontWeight="700">{feature.title}</Heading>

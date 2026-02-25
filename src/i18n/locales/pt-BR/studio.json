@@ -1,40 +1,36 @@
 {
   "hero": {
     "badge": "CATALISA STUDIO",
-    "heading": "Da ideia a producao.",
-    "headingGradient": "Sem codigo.",
-    "subtitle": "Descreva o que precisa em linguagem natural. A IA entende, especifica e constroi — workflows, triggers, acoes, tudo.",
-    "stats": [
-      { "label": "Zero codigo" },
-      { "label": "Minutos, nao meses" },
-      { "label": "Spec-driven" }
-    ]
+    "heading": "Descreva o que precisa.",
+    "headingGradient": "A IA constroi pra voce.",
+    "subtitle": "O Studio transforma linguagem natural em agentes operacionais completos — com personalidade, ferramentas e fluxos.",
+    "stats": {
+      "blocks": { "value": "60+", "label": "Building Blocks" },
+      "setup": { "value": "Minutos", "label": "Setup completo" },
+      "code": { "value": "Zero", "label": "Codigo necessario" }
+    }
   },
   "beforeAfter": {
-    "heading": "Antes vs",
-    "headingHighlight": "Com Studio",
+    "heading": "Sem Catalisa vs",
+    "headingGradient": "Com Studio",
     "subtitle": "Chega de semanas perdidas. Com Studio, voce descreve e a IA entrega.",
-    "beforeLabel": "Antes",
-    "afterLabel": "Com Studio",
-    "before": [
-      "Briefing confuso que ninguem entende",
-      "Semanas esperando a equipe de TI",
-      "Resultado diferente do que foi pedido",
-      "Voltar ao inicio toda vez que algo muda",
-      "Depender de dev pra qualquer ajuste"
-    ],
-    "after": [
-      "Descreva em linguagem natural",
-      "Pronto em minutos, nao semanas",
-      "Especificacao validada antes de executar",
-      "IA refina antes de construir",
-      "Voce ajusta com um clique"
+    "columns": {
+      "before": "Sem Catalisa",
+      "after": "Com Studio"
+    },
+    "rows": [
+      { "feature": "Criacao de fluxo", "before": "Semanas de dev", "after": "Minutos com IA" },
+      { "feature": "Linguagem", "before": "Codigo ou no-code complexo", "after": "Linguagem natural" },
+      { "feature": "Validacao", "before": "Depois de pronto", "after": "Antes de construir" },
+      { "feature": "Ajustes", "before": "Depende de dev", "after": "1 clique" },
+      { "feature": "Building blocks", "before": "Construir do zero", "after": "60+ prontos" },
+      { "feature": "Execucao", "before": "Sequencial", "after": "Paralela (DAG)" }
     ]
   },
   "canvas": {
     "badge": "CANVAS VISUAL",
     "heading": "O resultado?",
-    "headingHighlight": "Workflows visuais prontos para producao.",
+    "headingGradient": "Workflows visuais prontos para producao.",
     "subtitle": "O Builder gera workflows completos no canvas visual. Drag & drop, execucao paralela, 60+ building blocks.",
     "features": [
       "Canvas drag & drop intuitivo",
@@ -83,5 +79,9 @@
         "description": "O que o Builder cria aparece no canvas visual pronto. Triggers, acoes, conexoes — tudo configurado."
       }
     ]
+  },
+  "pageCTA": {
+    "heading": "Pronto para criar sem codigo?",
+    "subtitle": "Converse com nosso time e veja o Studio em acao."
   }
 }

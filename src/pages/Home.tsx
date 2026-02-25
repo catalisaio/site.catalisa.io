@@ -1,32 +1,30 @@
-import { Hero } from '../components/sections/Hero';
+import { HeroTeamBuilder } from '../components/sections/HeroTeamBuilder';
 import { LogoMarquee } from '../components/sections/LogoMarquee';
-import { ProblemStatement } from '../components/sections/ProblemStatement';
-import { SolutionOverview } from '../components/sections/SolutionOverview';
-import { CatalisaStudioShowcase } from '../components/sections/CatalisaStudioShowcase';
-import { FeatureBentoGrid } from '../components/sections/FeatureBentoGrid';
-import { AIAgentsTeaser } from '../components/sections/AIAgentsTeaser';
-import { StatsCounter } from '../components/sections/StatsCounter';
-import { HowItWorks } from '../components/sections/HowItWorks';
-import { Differentiators } from '../components/sections/Differentiators';
-import { TrustSection } from '../components/sections/TrustSection';
-import { FinalCTA } from '../components/sections/FinalCTA';
+import { MeetYourTeam } from '../components/sections/MeetYourTeam';
+import { WhatsAppCommandCenter } from '../components/sections/WhatsAppCommandCenter';
+import { YourToolsTheirHands } from '../components/sections/YourToolsTheirHands';
+import { AgentBuilderShowcase } from '../components/sections/AgentBuilderShowcase';
+import { LiveOperationsDashboard } from '../components/sections/LiveOperationsDashboard';
 import { AIInAction } from '../components/sections/AIInAction';
+import { ROICalculator } from '../components/sections/ROICalculator';
+import { IndustrySolutions } from '../components/sections/IndustrySolutions';
+import { TrustSection } from '../components/sections/TrustSection';
 import { FAQ } from '../components/sections/FAQ';
+import { FinalCTA } from '../components/sections/FinalCTA';
 
 export function Home() {
   return (
     <>
-      <Hero />
+      <HeroTeamBuilder />
       <LogoMarquee />
+      <MeetYourTeam />
+      <WhatsAppCommandCenter />
+      <YourToolsTheirHands />
+      <AgentBuilderShowcase />
+      <LiveOperationsDashboard />
       <AIInAction />
-      <CatalisaStudioShowcase />
-      <ProblemStatement />
-      <SolutionOverview />
-      <FeatureBentoGrid />
-      <AIAgentsTeaser />
-      <StatsCounter />
-      <HowItWorks />
-      <Differentiators />
+      <ROICalculator />
+      <IndustrySolutions />
       <TrustSection />
       <FAQ />
       <FinalCTA />

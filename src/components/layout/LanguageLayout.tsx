@@ -7,6 +7,7 @@ import { resolveRoute } from '../../seo/routes';
 import { getOrganizationSchema } from '../../seo/schemas/organization';
 import { getWebSiteSchema } from '../../seo/schemas/website';
 import { getSoftwareApplicationSchema } from '../../seo/schemas/software';
+import { getSiteNavigationSchema } from '../../seo/schemas/navigation';
 
 interface LanguageLayoutProps {
   lang: 'pt-BR' | 'en-US';
@@ -36,6 +37,9 @@ export function LanguageLayout({ lang }: LanguageLayoutProps) {
     }
     if (schemas.includes('SoftwareApplication')) {
       result.push(getSoftwareApplicationSchema());
+    }
+    if (schemas.includes('SiteNavigationElement')) {
+      result.push(getSiteNavigationSchema());
     }
     return result;
   }, [schemas]);

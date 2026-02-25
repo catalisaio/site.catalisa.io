@@ -1,40 +1,36 @@
 {
   "hero": {
     "badge": "CATALISA STUDIO",
-    "heading": "From idea to production.",
-    "headingGradient": "No code.",
-    "subtitle": "Describe what you need in natural language. AI understands, specifies and builds — workflows, triggers, actions, everything.",
-    "stats": [
-      { "label": "Zero code" },
-      { "label": "Minutes, not months" },
-      { "label": "Spec-driven" }
-    ]
+    "heading": "Describe what you need.",
+    "headingGradient": "AI builds it for you.",
+    "subtitle": "Studio transforms natural language into fully operational agents — with personality, tools and workflows.",
+    "stats": {
+      "blocks": { "value": "60+", "label": "Building Blocks" },
+      "setup": { "value": "Minutes", "label": "Full setup" },
+      "code": { "value": "Zero", "label": "Code required" }
+    }
   },
   "beforeAfter": {
-    "heading": "Before vs",
-    "headingHighlight": "With Studio",
+    "heading": "Without Catalisa vs",
+    "headingGradient": "With Studio",
     "subtitle": "No more lost weeks. With Studio, you describe and AI delivers.",
-    "beforeLabel": "Before",
-    "afterLabel": "With Studio",
-    "before": [
-      "Confusing briefs nobody understands",
-      "Weeks waiting for IT",
-      "Results different from what was requested",
-      "Starting over every time something changes",
-      "Depending on a dev for any adjustment"
-    ],
-    "after": [
-      "Describe in natural language",
-      "Ready in minutes, not weeks",
-      "Specification validated before execution",
-      "AI refines before building",
-      "You adjust with one click"
+    "columns": {
+      "before": "Without Catalisa",
+      "after": "With Studio"
+    },
+    "rows": [
+      { "feature": "Flow creation", "before": "Weeks of dev", "after": "Minutes with AI" },
+      { "feature": "Language", "before": "Code or complex no-code", "after": "Natural language" },
+      { "feature": "Validation", "before": "After it's built", "after": "Before building" },
+      { "feature": "Adjustments", "before": "Depends on dev", "after": "1 click" },
+      { "feature": "Building blocks", "before": "Build from scratch", "after": "60+ ready" },
+      { "feature": "Execution", "before": "Sequential", "after": "Parallel (DAG)" }
     ]
   },
   "canvas": {
     "badge": "VISUAL CANVAS",
     "heading": "The result?",
-    "headingHighlight": "Production-ready visual workflows.",
+    "headingGradient": "Production-ready visual workflows.",
     "subtitle": "Builder generates complete workflows on the visual canvas. Drag & drop, parallel execution, 60+ building blocks.",
     "features": [
       "Intuitive drag & drop canvas",
@@ -83,5 +79,9 @@
         "description": "What Builder creates appears on the visual canvas ready to go. Triggers, actions, connections — all configured."
       }
     ]
+  },
+  "pageCTA": {
+    "heading": "Ready to build without code?",
+    "subtitle": "Talk to our team and see Studio in action."
   }
 }

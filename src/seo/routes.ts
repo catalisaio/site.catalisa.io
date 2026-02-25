@@ -1,6 +1,6 @@
 import { ptToEn } from '../i18n/useLocalizedPath';
 
-export type SchemaType = 'Organization' | 'WebSite' | 'SoftwareApplication' | 'BreadcrumbList' | 'VideoObject';
+export type SchemaType = 'Organization' | 'WebSite' | 'SoftwareApplication' | 'BreadcrumbList' | 'VideoObject' | 'SiteNavigationElement' | 'FAQPage';
 
 export interface RouteDefinition {
   ptPath: string;
@@ -24,7 +24,7 @@ export const routes: RouteDefinition[] = [
     pageKey: 'home',
     priority: 1.0,
     changefreq: 'weekly',
-    schemas: ['Organization', 'WebSite', 'SoftwareApplication'],
+    schemas: ['Organization', 'WebSite', 'SoftwareApplication', 'SiteNavigationElement'],
     ogImage: '/og/default.png',
   },
   {
@@ -181,13 +181,14 @@ export const routes: RouteDefinition[] = [
     ogImage: '/og/default.png',
   },
   {
-    ptPath: '/precos',
-    enPath: '/en/pricing',
-    pageKey: 'pricing',
-    priority: 0.8,
-    changefreq: 'monthly',
+    ptPath: '/playbooks',
+    enPath: '/en/playbooks',
+    pageKey: 'playbooks',
+    priority: 0.9,
+    changefreq: 'weekly',
     schemas: ['Organization', 'BreadcrumbList'],
     ogImage: '/og/default.png',
+    breadcrumbCategory: 'platform',
   },
   {
     ptPath: '/como-funciona',
@@ -204,7 +205,7 @@ export const routes: RouteDefinition[] = [
     pageKey: 'whatsappIntegration',
     priority: 0.7,
     changefreq: 'monthly',
-    schemas: ['Organization', 'BreadcrumbList'],
+    schemas: ['Organization', 'BreadcrumbList', 'FAQPage'],
     ogImage: '/og/default.png',
   },
   {

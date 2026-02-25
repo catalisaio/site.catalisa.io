@@ -24,9 +24,9 @@ const ptToEn: Record<string, string> = {
   '/press-kit': '/en/press-kit',
   '/termos': '/en/terms',
   '/seguranca': '/en/security',
-  '/precos': '/en/pricing',
   '/como-funciona': '/en/how-it-works',
   '/integracoes/whatsapp': '/en/integrations/whatsapp',
+  '/playbooks': '/en/playbooks',
 };
 
 /**

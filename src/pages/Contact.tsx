@@ -1,24 +1,22 @@
 import {
-  Box, Container, Heading, Text, VStack, HStack, Button, Icon, Flex,
-  FormControl, FormLabel, Input, Textarea, Checkbox, SimpleGrid, Divider,
-  Link as ChakraLink, useToast,
+  Box, Heading, Text, VStack, HStack, Button, Icon, SimpleGrid, Divider,
+  FormControl, FormLabel, Input, Textarea, Checkbox, Link as ChakraLink, useToast,
 } from '@chakra-ui/react';
 import { FiMessageCircle, FiPlay, FiClock, FiHeart, FiMonitor, FiSend, FiMail } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { MotionBox } from '../components/motion';
-import { GradientText } from '../components/shared/GradientText';
+import { PageHero } from '../components/shared/PageHero';
+import { SectionWrapper } from '../components/shared/SectionWrapper';
 import { WhatsAppChatPreview } from '../components/shared/WhatsAppChatPreview';
 import type { ChatMessage } from '../components/shared/WhatsAppChatPreview';
-import { SectionWrapper } from '../components/shared/SectionWrapper';
 import { BehindTheScenesModal, useBehindTheScenes } from '../components/shared/BehindTheScenesModal';
 import { useLocalizedPath } from '../i18n/useLocalizedPath';
 
-const WHATSAPP_URL = 'https://wa.me/5511977303414?text=Ola!%20Quero%20saber%20mais%20sobre%20a%20Catalisa.';
-
 export function Contact() {
   const { t } = useTranslation('contact');
+  const { t: tc } = useTranslation('common');
   const lp = useLocalizedPath();
   const behindTheScenes = useBehindTheScenes();
   const toast = useToast();
@@ -39,7 +37,6 @@ export function Contact() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Form submission placeholder - integrate with backend/CRM
     toast({
       title: t('form.success'),
       status: 'success',
@@ -50,134 +47,22 @@ export function Contact() {
 
   return (
     <>
-      {/* Hero section (dark bg) */}
-      <Box id="hero" bg="hero.bg" pt={20} pb={16}>
-        <Container maxW="1280px">
-          <Flex
-            direction={{ base: 'column', lg: 'row' }}
-            align="center"
-            justify="space-between"
-            gap={{ base: 12, lg: 16 }}
-          >
-            {/* Left: Text + CTA */}
-            <VStack align="flex-start" spacing={6} flex={1} maxW="560px">
-              <MotionBox
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-              >
-                <HStack
-                  bg="whiteAlpha.100"
-                  px={4}
-                  py={1.5}
-                  borderRadius="full"
-                  border="1px solid"
-                  borderColor="whiteAlpha.200"
-                  spacing={2}
-                >
-                  <Box w={2} h={2} borderRadius="full" bg="whatsapp.400" />
-                  <Text color="whiteAlpha.800" fontSize="sm" fontWeight="600">{t('hero.badge')}</Text>
-                </HStack>
-              </MotionBox>
-
-              <MotionBox
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-              >
-                <Heading
-                  as="h1"
-                  fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
-                  fontWeight="800"
-                  color="white"
-                  lineHeight="1.1"
-                >
-                  {t('hero.heading')}{' '}
-                  <GradientText
-                    gradient="linear(to-r, brand.300, brand.400, catalisa.accent)"
-                    fontSize="inherit"
-                    fontWeight="inherit"
-                  >
-                    {t('hero.headingGradient')}
-                  </GradientText>
-                </Heading>
-              </MotionBox>
-
-              <MotionBox
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-              >
-                <Text color="whiteAlpha.700" fontSize={{ base: 'md', md: 'lg' }} lineHeight="1.7" maxW="480px">
-                  {t('hero.subtitle')}
-                </Text>
-              </MotionBox>
-
-              <MotionBox
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-              >
-                <Button
-                  as="a"
-                  href={WHATSAPP_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  size="lg"
-                  bg="whatsapp.500"
-                  color="white"
-                  _hover={{ bg: 'whatsapp.600', transform: 'translateY(-2px)', boxShadow: '0 8px 30px rgba(37, 211, 102, 0.4)' }}
-                  leftIcon={<FiMessageCircle />}
-                  transition="all 0.2s"
-                  fontWeight="700"
-                >
-                  {t('hero.ctaWhatsApp')}
-                </Button>
-              </MotionBox>
-
-              <MotionBox
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.5 }}
-              >
-                <HStack
-                  as="button"
-                  onClick={behindTheScenes.onOpen}
-                  spacing={3}
-                  px={4}
-                  py={2.5}
-                  bg="whiteAlpha.100"
-                  border="1px solid"
-                  borderColor="whiteAlpha.200"
-                  borderRadius="xl"
-                  cursor="pointer"
-                  _hover={{ bg: 'whiteAlpha.200', borderColor: 'brand.400', transform: 'translateY(-1px)' }}
-                  transition="all 0.2s"
-                >
-                  <Box as={FiPlay} color="brand.300" boxSize={4} />
-                  <Text color="whiteAlpha.800" fontSize="sm" fontWeight="600">
-                    {t('behindTheScenes.hint', { ns: 'common' })}
-                  </Text>
-                </HStack>
-              </MotionBox>
-            </VStack>
-
-            {/* Right: WhatsApp Chat Preview */}
-            <MotionBox
-              initial={{ opacity: 0, x: 40 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              display={{ base: 'none', lg: 'block' }}
-            >
-              <WhatsAppChatPreview
-                messages={contactMessages}
-                title={t('chat.title')}
-                triggerMode="auto"
-              />
-            </MotionBox>
-          </Flex>
-        </Container>
-      </Box>
+      {/* Hero with WhatsApp Chat Preview */}
+      <PageHero
+        badge={t('hero.badge')}
+        heading={t('hero.heading')}
+        headingGradient={t('hero.headingGradient')}
+        subtitle={t('hero.subtitle')}
+        primaryCTA={{ label: t('hero.ctaWhatsApp') }}
+      >
+        <Box display={{ base: 'none', lg: 'block' }}>
+          <WhatsAppChatPreview
+            messages={contactMessages}
+            title={t('chat.title')}
+            triggerMode="auto"
+          />
+        </Box>
+      </PageHero>
 
       {/* Contact Form Section */}
       <SectionWrapper>
@@ -187,13 +72,9 @@ export function Contact() {
             <VStack align="flex-start" spacing={2}>
               <HStack spacing={2}>
                 <Icon as={FiMail} color="brand.500" />
-                <Heading as="h2" size="lg" fontWeight="700">
-                  {t('form.heading')}
-                </Heading>
+                <Heading as="h2" size="lg" fontWeight="700">{t('form.heading')}</Heading>
               </HStack>
-              <Text color="gray.500" fontSize="sm">
-                {t('form.subtitle')}
-              </Text>
+              <Text color="gray.500" fontSize="sm">{t('form.subtitle')}</Text>
             </VStack>
 
             <Box as="form" onSubmit={handleSubmit}>
@@ -263,19 +144,12 @@ export function Contact() {
 
           {/* Right side: WhatsApp alternative + differentials */}
           <VStack spacing={8} align="stretch">
-            {/* WhatsApp alternative */}
-            <Box
-              bg="whatsapp.50"
-              border="1px solid"
-              borderColor="whatsapp.200"
-              borderRadius="xl"
-              p={6}
-            >
+            <Box bg="whatsapp.50" border="1px solid" borderColor="whatsapp.200" borderRadius="xl" p={6}>
               <VStack spacing={3} align="flex-start">
                 <Text fontWeight="700" fontSize="md">{t('form.whatsappAlternative')}</Text>
                 <Button
                   as="a"
-                  href={WHATSAPP_URL}
+                  href="https://wa.me/5511977303414?text=Ola!%20Quero%20saber%20mais%20sobre%20a%20Catalisa."
                   target="_blank"
                   rel="noopener noreferrer"
                   size="md"
@@ -293,7 +167,6 @@ export function Contact() {
 
             <Divider />
 
-            {/* Differentials */}
             {differentials.map((diff, i) => (
               <MotionBox
                 key={diff.title}
@@ -309,7 +182,7 @@ export function Contact() {
                   borderRadius="xl"
                   border="1px solid"
                   borderColor="gray.100"
-                  _hover={{ borderColor: 'brand.200', boxShadow: 'sm' }}
+                  _hover={{ borderColor: 'brand.200', boxShadow: 'sm', transform: 'translateY(-4px)' }}
                   transition="all 0.2s"
                 >
                   <Box p={3} borderRadius="xl" bg="brand.50" flexShrink={0}>
@@ -322,6 +195,35 @@ export function Contact() {
                 </HStack>
               </MotionBox>
             ))}
+
+            {/* Behind the scenes hint */}
+            <MotionBox
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+            >
+              <HStack
+                as="button"
+                onClick={behindTheScenes.onOpen}
+                spacing={3}
+                px={4}
+                py={2.5}
+                bg="brand.50"
+                border="1px solid"
+                borderColor="brand.100"
+                borderRadius="xl"
+                cursor="pointer"
+                _hover={{ bg: 'brand.100', borderColor: 'brand.300' }}
+                transition="all 0.2s"
+                w="full"
+              >
+                <Box as={FiPlay} color="brand.500" boxSize={4} />
+                <Text color="brand.600" fontSize="sm" fontWeight="600">
+                  {tc('behindTheScenes.hint')}
+                </Text>
+              </HStack>
+            </MotionBox>
           </VStack>
         </SimpleGrid>
       </SectionWrapper>

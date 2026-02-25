@@ -24,10 +24,11 @@ const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy').then(m => ({ de
 const PressKit = lazy(() => import('./pages/PressKit').then(m => ({ default: m.PressKit })));
 const Terms = lazy(() => import('./pages/Terms').then(m => ({ default: m.Terms })));
 const Security = lazy(() => import('./pages/Security').then(m => ({ default: m.Security })));
-const Pricing = lazy(() => import('./pages/Pricing').then(m => ({ default: m.Pricing })));
 const HowItWorksPage = lazy(() => import('./pages/HowItWorks').then(m => ({ default: m.HowItWorks })));
 const WhatsAppIntegration = lazy(() => import('./pages/WhatsAppIntegration').then(m => ({ default: m.WhatsAppIntegration })));
 const CommercialPresentation = lazy(() => import('./pages/CommercialPresentation').then(m => ({ default: m.CommercialPresentation })));
+const Playbooks = lazy(() => import('./pages/Playbooks').then(m => ({ default: m.Playbooks })));
+const PlaybookDetail = lazy(() => import('./pages/PlaybookDetail').then(m => ({ default: m.PlaybookDetail })));
 const NotFound = lazy(() => import('./pages/NotFound').then(m => ({ default: m.NotFound })));
 
 function PageLoader() {
@@ -92,12 +93,13 @@ function App() {
                 <Route path="/varejo" element={<Retail />} />
                 <Route path="/startups" element={<Startups />} />
                 <Route path="/use-cases" element={<UseCases />} />
+                <Route path="/playbooks" element={<Playbooks />} />
+                <Route path="/playbooks/:playbookId" element={<PlaybookDetail />} />
                 <Route path="/contato" element={<Contact />} />
                 <Route path="/demo" element={<Demo />} />
                 <Route path="/politica-privacidade" element={<PrivacyPolicy />} />
                 <Route path="/termos" element={<Terms />} />
                 <Route path="/seguranca" element={<Security />} />
-                <Route path="/precos" element={<Pricing />} />
                 <Route path="/como-funciona" element={<HowItWorksPage />} />
                 <Route path="/integracoes/whatsapp" element={<WhatsAppIntegration />} />
                 <Route path="/press-kit" element={<PressKit />} />
@@ -116,12 +118,13 @@ function App() {
                 <Route path="retail" element={<Retail />} />
                 <Route path="startups" element={<Startups />} />
                 <Route path="use-cases" element={<UseCases />} />
+                <Route path="playbooks" element={<Playbooks />} />
+                <Route path="playbooks/:playbookId" element={<PlaybookDetail />} />
                 <Route path="contact" element={<Contact />} />
                 <Route path="demo" element={<Demo />} />
                 <Route path="privacy-policy" element={<PrivacyPolicy />} />
                 <Route path="terms" element={<Terms />} />
                 <Route path="security" element={<Security />} />
-                <Route path="pricing" element={<Pricing />} />
                 <Route path="how-it-works" element={<HowItWorksPage />} />
                 <Route path="integrations/whatsapp" element={<WhatsAppIntegration />} />
                 <Route path="press-kit" element={<PressKit />} />

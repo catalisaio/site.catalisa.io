@@ -1,16 +1,6 @@
 import {
-  Box,
-  Container,
-  Heading,
-  Text,
-  VStack,
-  HStack,
-  List,
-  ListItem,
-  ListIcon,
-  Button,
-  Flex,
-  Icon,
+  Box, Container, Heading, Text, VStack, HStack, List, ListItem, ListIcon,
+  Button, Flex, Icon,
 } from '@chakra-ui/react';
 import { FiClock, FiArrowRight, FiCheckCircle } from 'react-icons/fi';
 import { Link as RouterLink } from 'react-router-dom';
@@ -26,6 +16,7 @@ export function Demo() {
   const lp = useLocalizedPath();
 
   const chapters = t('chapters.items', { returnObjects: true }) as { time: string; label: string }[];
+
   return (
     <Box bg="gray.900" minH="100vh">
       {/* Hero */}
@@ -105,20 +96,11 @@ export function Demo() {
 
       {/* Chapters + CTA */}
       <Container maxW="1000px" py={{ base: 8, md: 16 }}>
-        <Flex
-          direction={{ base: 'column', md: 'row' }}
-          gap={{ base: 8, md: 12 }}
-        >
+        <Flex direction={{ base: 'column', md: 'row' }} gap={{ base: 8, md: 12 }}>
           {/* Chapter list */}
           <Box flex={1}>
             <MotionBox {...fadeInUp}>
-              <Heading
-                as="h3"
-                fontSize={{ base: 'lg', md: 'xl' }}
-                fontWeight="700"
-                color="white"
-                mb={6}
-              >
+              <Heading as="h3" fontSize={{ base: 'lg', md: 'xl' }} fontWeight="700" color="white" mb={6}>
                 {t('chapters.heading')}
               </Heading>
 
@@ -136,19 +118,8 @@ export function Demo() {
                     _hover={{ bg: 'whiteAlpha.50' }}
                     transition="background 0.2s"
                   >
-                    <ListIcon
-                      as={FiClock}
-                      color="green.300"
-                      fontSize="md"
-                      mr={3}
-                    />
-                    <Text
-                      color="green.300"
-                      fontWeight="700"
-                      fontFamily="mono"
-                      fontSize="sm"
-                      minW="50px"
-                    >
+                    <ListIcon as={FiClock} color="green.300" fontSize="md" mr={3} />
+                    <Text color="green.300" fontWeight="700" fontFamily="mono" fontSize="sm" minW="50px">
                       {ch.time}
                     </Text>
                     <Text>{ch.label}</Text>
@@ -161,27 +132,14 @@ export function Demo() {
           {/* CTA */}
           <Box flex={1}>
             <MotionBox {...fadeInUp}>
-              <Box
-                p={{ base: 6, md: 8 }}
-                borderRadius="2xl"
-                bg="whiteAlpha.50"
-                border="1px solid"
-                borderColor="whiteAlpha.100"
-              >
+              <Box p={{ base: 6, md: 8 }} borderRadius="2xl" bg="whiteAlpha.50" border="1px solid" borderColor="whiteAlpha.100">
                 <VStack spacing={5} align="flex-start">
-                  <Heading
-                    as="h3"
-                    fontSize={{ base: 'lg', md: 'xl' }}
-                    fontWeight="700"
-                    color="white"
-                  >
+                  <Heading as="h3" fontSize={{ base: 'lg', md: 'xl' }} fontWeight="700" color="white">
                     {t('cta.heading')}
                   </Heading>
-
                   <Text color="whiteAlpha.600" fontSize="md" lineHeight="1.8">
                     {t('cta.description')}
                   </Text>
-
                   <VStack spacing={3} w="full" pt={2}>
                     <Button
                       as={RouterLink}
@@ -201,7 +159,6 @@ export function Demo() {
                     >
                       {t('cta.scheduleDemo')}
                     </Button>
-
                     <Button
                       as={RouterLink}
                       to={lp('/')}
@@ -210,11 +167,7 @@ export function Demo() {
                       variant="outline"
                       borderColor="whiteAlpha.300"
                       color="whiteAlpha.700"
-                      _hover={{
-                        bg: 'whiteAlpha.100',
-                        borderColor: 'whiteAlpha.500',
-                        color: 'white',
-                      }}
+                      _hover={{ bg: 'whiteAlpha.100', borderColor: 'whiteAlpha.500', color: 'white' }}
                       transition="all 0.3s"
                       borderRadius="xl"
                     >
@@ -229,10 +182,7 @@ export function Demo() {
       </Container>
 
       {/* Resultado em Producao */}
-      <Box
-        borderTop="1px solid"
-        borderColor="whiteAlpha.100"
-      >
+      <Box borderTop="1px solid" borderColor="whiteAlpha.100">
         <Container maxW="1000px" py={{ base: 12, md: 20 }}>
           <MotionBox {...fadeInUp}>
             <VStack spacing={4} textAlign="center" mb={{ base: 8, md: 12 }}>
@@ -279,12 +229,7 @@ export function Demo() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <Flex
-              direction={{ base: 'column', md: 'row' }}
-              align="center"
-              gap={{ base: 8, md: 12 }}
-            >
-              {/* Phone with WhatsApp video */}
+            <Flex direction={{ base: 'column', md: 'row' }} align="center" gap={{ base: 8, md: 12 }}>
               <Box flexShrink={0}>
                 <PhoneMockup maxH="480px">
                   <Box
@@ -302,15 +247,12 @@ export function Demo() {
                 </PhoneMockup>
               </Box>
 
-              {/* Context */}
               <VStack align="flex-start" spacing={5} flex={1}>
                 <VStack align="flex-start" spacing={3}>
                   {(t('result.items', { returnObjects: true }) as string[]).map((item) => (
                     <HStack key={item} spacing={3} align="flex-start">
                       <Icon as={FiCheckCircle} color="green.400" mt={0.5} flexShrink={0} />
-                      <Text color="whiteAlpha.800" fontSize="md">
-                        {item}
-                      </Text>
+                      <Text color="whiteAlpha.800" fontSize="md">{item}</Text>
                     </HStack>
                   ))}
                 </VStack>
@@ -325,12 +267,7 @@ export function Demo() {
                   borderLeft="3px solid"
                   borderLeftColor="green.400"
                 >
-                  <Text
-                    color="green.300"
-                    fontSize={{ base: 'sm', md: 'md' }}
-                    fontWeight="600"
-                    fontStyle="italic"
-                  >
+                  <Text color="green.300" fontSize={{ base: 'sm', md: 'md' }} fontWeight="600" fontStyle="italic">
                     {t('result.callout')}
                   </Text>
                 </Box>

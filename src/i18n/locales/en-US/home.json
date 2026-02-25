@@ -11,6 +11,266 @@
       "Lead capture, simulation and pension contracting — all via WhatsApp, frictionless."
     ]
   },
+  "heroTeamBuilder": {
+    "headline": "Build your AI operations team.",
+    "headlineGradient": "They work. You scale.",
+    "subtitles": [
+      "Specialized agents that serve, qualify and close on WhatsApp — like a real team.",
+      "Each agent has its role, tools and context. 24/7.",
+      "Describe what you need. AI assembles the team and activates in minutes.",
+      "Your agents operate your existing tools — CRM, ERP, calendars."
+    ],
+    "ctaMeetTeam": "Meet the team",
+    "agents": {
+      "whatsapp": { "label": "WhatsApp", "activity": "Command center" },
+      "sdr": { "label": "Digital SDR", "activity": "12 active conversations" },
+      "support": { "label": "24/7 Support", "activity": "8 open tickets" },
+      "finance": { "label": "Finance", "activity": "3 collections today" },
+      "onboarding": { "label": "Onboarding", "activity": "5 new clients" },
+      "apps": { "label": "Apps", "activity": "3 apps active" }
+    }
+  },
+  "meetYourTeam": {
+    "badge": "YOUR AI TEAM",
+    "heading": "Meet your team.",
+    "headingGradient": "Each agent, a specialty.",
+    "agents": [
+      {
+        "role": "Digital SDR",
+        "capabilities": ["Qualifies leads automatically", "Schedules meetings", "Sends personalized proposals", "Smart follow-up"],
+        "tools": ["WhatsApp", "CRM", "Calendar", "Email"],
+        "stats": "127/day | 34% conversion | 8s response"
+      },
+      {
+        "role": "24/7 Support",
+        "capabilities": ["Answers questions in seconds", "Escalates to human when needed", "Queries knowledge base", "Tracks satisfaction"],
+        "tools": ["WhatsApp", "Knowledge base", "Tickets", "CRM"],
+        "stats": "89/day | 94% resolution | 12s response"
+      },
+      {
+        "role": "Onboarding Specialist",
+        "capabilities": ["Guides new clients", "Collects documents", "Configures access", "Sends tutorials"],
+        "tools": ["WhatsApp", "CRM", "Docs", "Email"],
+        "stats": "23/day | 91% completion | 15s response"
+      },
+      {
+        "role": "Finance",
+        "capabilities": ["Generates invoices", "Negotiates installments", "Sends payment reminders", "Processes refunds"],
+        "tools": ["WhatsApp", "Payments", "ERP", "Email"],
+        "stats": "45/day | 78% payment | 10s response"
+      },
+      {
+        "role": "Data Analyst",
+        "capabilities": ["Generates automatic reports", "Identifies trends", "Alerts anomalies", "Real-time dashboard"],
+        "tools": ["CRM", "ERP", "Analytics", "Email"],
+        "stats": "15 reports/day | 99.9% accuracy"
+      }
+    ],
+    "online": "Online",
+    "detailTitle": "Agent details",
+    "toolsLabel": "Tools",
+    "capabilitiesLabel": "Capabilities"
+  },
+  "whatsAppCommandCenter": {
+    "badge": "COMMAND CENTER",
+    "heading": "WhatsApp is the interface.",
+    "headingGradient": "Intelligence is behind it.",
+    "subtitle": "Your customers see a natural conversation. Behind the scenes, agents orchestrate tools, data and decisions.",
+    "chatTitle": "AI Agent - Insurance",
+    "chatMessages": [
+      { "text": "I need to renew my insurance", "sent": false, "delay": 0.5 },
+      { "text": "Found your policy! Vehicle: Honda Civic 2023. I'll quote the best options for you.", "sent": true, "delay": 3.5 },
+      { "text": "I want full coverage", "sent": false, "delay": 5.5 },
+      { "text": "Done! 3 options:\n\n1. Basic: $185/mo\n2. Full: $247/mo\n3. Premium: $312/mo\n\nOption 2 covers theft, collision and third-party. Which do you prefer?", "sent": true, "delay": 8.0 }
+    ],
+    "timeline": [
+      { "title": "Message received", "detail": "\"I need to renew my insurance\"", "delay": 0.8 },
+      { "title": "Identifying intent...", "detail": "Intent: insurance_renewal (97%)", "delay": 1.5 },
+      { "title": "CRM.findCustomer()", "detail": "Customer: Maria Silva | Policy #4521", "delay": 2.2 },
+      { "title": "Insurance.quoteOptions()", "detail": "3 options generated in 1.2s", "delay": 3.0 },
+      { "title": "Generating personalized response...", "detail": "Claude Sonnet | 187 tokens", "delay": 3.8 },
+      { "title": "Response sent", "detail": "Total time: 4.8 seconds", "delay": 4.5 }
+    ]
+  },
+  "agentBuilder": {
+    "badge": "CATALISA STUDIO",
+    "heading": "Describe the role.",
+    "headingGradient": "AI hires for you.",
+    "subtitle": "Build new team members in minutes. No code, no manual configuration.",
+    "steps": [
+      {
+        "label": "Describe the Role",
+        "title": "Describe what you need",
+        "description": "Type as if you were writing a job posting: \"I need an SDR that qualifies leads via WhatsApp, schedules meetings and sends personalized proposals.\"",
+        "bullets": [
+          "Natural language, no technical terms",
+          "Describe the role, not the tool",
+          "AI understands your business context"
+        ]
+      },
+      {
+        "label": "AI Interviews",
+        "title": "AI asks the right questions",
+        "description": "Like a recruiter, AI asks: tone of voice, autonomy limits, available tools, operating hours. Everything to configure the perfect agent.",
+        "bullets": [
+          "Tone of voice: formal, casual or custom",
+          "Limits: when to escalate to human",
+          "Tools: which systems to connect"
+        ]
+      },
+      {
+        "label": "Profile Ready",
+        "title": "Complete profile configured",
+        "description": "Personality, tools, knowledge base and business rules — all automatically configured. Review and adjust as needed.",
+        "bullets": [
+          "Personality and tone of voice defined",
+          "Tools connected and tested",
+          "Knowledge base imported"
+        ]
+      },
+      {
+        "label": "Hire",
+        "title": "One click, agent in operation",
+        "description": "Activate the agent and it starts working immediately. Monitor performance in real-time and adjust as needed.",
+        "bullets": [
+          "Instant activation",
+          "Real-time monitoring",
+          "Adjust anytime"
+        ]
+      }
+    ],
+    "stats": [
+      { "value": "Zero", "label": "code" },
+      { "value": "Minutes", "label": "not weeks" },
+      { "value": "100%", "label": "customizable" }
+    ]
+  },
+  "yourTools": {
+    "badge": "INTEGRATIONS",
+    "heading": "Your tools.",
+    "headingGradient": "In your agents' hands.",
+    "subtitle": "Your agents don't replace your tools. They master them.",
+    "tools": [
+      {
+        "name": "CRM",
+        "actions": ["Create and update leads", "Search interaction history", "Move pipeline automatically", "Sync contacts"]
+      },
+      {
+        "name": "ERP",
+        "actions": ["Check inventory in real-time", "Issue invoices", "Sync orders", "Update records"]
+      },
+      {
+        "name": "Calendar",
+        "actions": ["Schedule meetings automatically", "Check availability", "Reschedule with notification", "Send reminders"]
+      },
+      {
+        "name": "Payments",
+        "actions": ["Generate invoices", "Process payments", "Negotiate installments", "Send receipts"]
+      },
+      {
+        "name": "Email",
+        "actions": ["Send confirmations", "Automatic notifications", "Scheduled follow-up", "Personalized templates"]
+      },
+      {
+        "name": "Custom APIs",
+        "actions": ["Any REST API", "Bidirectional webhooks", "Automatic retry", "Data transformation"]
+      }
+    ]
+  },
+  "liveOps": {
+    "badge": "REAL-TIME OPERATIONS",
+    "heading": "Your AI team.",
+    "headingGradient": "Working now.",
+    "browserTitle": "Catalisa Operations",
+    "activeConversations": "active conversations",
+    "lanes": [
+      {
+        "title": "Digital SDR",
+        "events": [
+          "Lead qualified: Ana Costa",
+          "Meeting scheduled: Pedro Lima",
+          "Proposal sent: Marcos Reis",
+          "Follow-up done: Julia Santos",
+          "Lead converted: Ricardo Alves"
+        ]
+      },
+      {
+        "title": "24/7 Support",
+        "events": [
+          "Question resolved: #4521",
+          "Ticket escalated: #4518",
+          "FAQ answered: #4525",
+          "Satisfaction collected: #4519",
+          "Issue resolved: #4523"
+        ]
+      },
+      {
+        "title": "Finance",
+        "events": [
+          "Invoice generated: $1,200",
+          "Payment processed: $2,100",
+          "Installment negotiated: $850",
+          "Reminder sent: $3,400",
+          "Refund processed: $290"
+        ]
+      }
+    ],
+    "stats": {
+      "conversations": "conversations",
+      "leads": "leads",
+      "revenue": "processed",
+      "uptime": "uptime"
+    }
+  },
+  "roiCalculator": {
+    "badge": "ROI CALCULATOR",
+    "heading": "Your numbers.",
+    "headingGradient": "Your savings.",
+    "subtitle": "Enter your current data and see the projection with Catalisa.",
+    "today": "TODAY",
+    "withCatalisa": "WITH CATALISA",
+    "attendants": "Attendants",
+    "responseTime": "Response time",
+    "monthlyCost": "Monthly cost",
+    "hours": "hours",
+    "aiAgent": "1 AI agent + 1 supervisor",
+    "seconds": "seconds",
+    "estimatedSavings": "Estimated savings",
+    "perMonth": "/month"
+  },
+  "industrySolutions": {
+    "badge": "INDUSTRY SOLUTIONS",
+    "heading": "Where your AI team",
+    "headingGradient": "makes the difference.",
+    "industries": [
+      {
+        "name": "Fintech",
+        "scenario": "Automatic onboarding, KYC, credit analysis and 24/7 support.",
+        "stats": ["85% automation", "12s response", "60% less cost"]
+      },
+      {
+        "name": "Banking",
+        "scenario": "Open Finance, automated Pix, compliance and account holder support.",
+        "stats": ["90% automation", "8s response", "70% less cost"]
+      },
+      {
+        "name": "Insurance",
+        "scenario": "Instant quotes, automatic renewals and claims management.",
+        "stats": ["78% automation", "15s response", "55% less cost"]
+      },
+      {
+        "name": "Retail",
+        "scenario": "WhatsApp sales, after-sales, tracking and loyalty.",
+        "stats": ["82% automation", "10s response", "50% less cost"]
+      },
+      {
+        "name": "Startups",
+        "scenario": "Scale fast with optimized cost. Service, sales and support unified.",
+        "stats": ["88% automation", "6s response", "75% less cost"]
+      }
+    ],
+    "learnMore": "Learn more"
+  },
   "problem": {
     "heading": "WhatsApp became your main channel.",
     "headingHighlight": "But how do you scale?",
@@ -95,13 +355,13 @@
     "monitoring": "with automatic backups and 24/7 monitoring"
   },
   "finalCTA": {
-    "heading": "Start your smart automation",
-    "subtitle": "Connect your WhatsApp, build visual workflows and activate AI agents in minutes."
+    "heading": "Start building your AI team",
+    "subtitle": "Specialized agents that serve, qualify and close on WhatsApp — activated in minutes."
   },
   "aiInAction": {
-    "badge": "REAL CASE",
-    "heading": "From one sentence to a complete",
-    "headingGradient": "customer service system",
+    "badge": "REAL HIRING",
+    "heading": "From one sentence to a new",
+    "headingGradient": "team member",
     "subtitle": "No lines of code. No programmer.\nJust a conversation with AI.",
     "steps": [
       {
@@ -244,6 +504,7 @@
   },
   "heroShowcase": {
     "tabs": {
+      "team": "Your Team",
       "studio": "Studio",
       "credito": "Credit",
       "workflows": "Automations",
@@ -311,6 +572,18 @@
       {
         "question": "Can I use it with more than one WhatsApp number?",
         "answer": "Yes. Catalisa supports multi-device and multi-tenant. You can connect multiple WhatsApp numbers, each with its own workflows, agents, and configurations."
+      },
+      {
+        "question": "What is Catalisa's 'AI team'?",
+        "answer": "It's a set of specialized AI agents that function as members of your team. Each agent has a defined role (SDR, Support, Finance, etc.), its own tools and autonomy to execute tasks — all coordinated via WhatsApp."
+      },
+      {
+        "question": "What tools can my agents use?",
+        "answer": "Agents connect with your existing tools: CRM, ERP, calendar, payments, email and any REST API. They don't replace your tools — they operate them autonomously."
+      },
+      {
+        "question": "Do I have control over what the agents do?",
+        "answer": "Yes, full control. You define autonomy limits, human escalation rules, tone of voice and which actions each agent can perform. Everything is monitored in real-time on the operations dashboard."
       }
     ]
   }

@@ -104,14 +104,14 @@ export function PlaybookDetail() {
     <>
       {/* ── 1. Hero (LIGHT) ───────────────────────────────── */}
       <Box
-        bg="white" pb={16} color="gray.900"
+        bg="white" pb={20} color="gray.900"
         position="relative" overflow="hidden"
         mt="-64px" pt="calc(64px + 7rem)"
       >
         <Box
-          position="absolute" top="-20%" left="20%" w="60%" h="80%"
+          position="absolute" top="-10%" left="15%" w="70%" h="90%"
           bgGradient={`radial(circle, var(--chakra-colors-${catMeta.color}-100) 0%, transparent 70%)`}
-          opacity={0.5} pointerEvents="none"
+          opacity={0.7} pointerEvents="none"
         />
         <Container maxW="1280px" position="relative" zIndex={1}>
           <Button
@@ -123,26 +123,34 @@ export function PlaybookDetail() {
           </Button>
 
           <MotionBox initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-            <HStack spacing={4} mb={4}>
+            <HStack spacing={5} mb={6}>
               <Flex
-                w="56px" h="56px" borderRadius="full"
+                w="72px" h="72px" borderRadius="full"
                 bg={`${catMeta.color}.50`}
                 border="1px solid" borderColor={`${catMeta.color}.200`}
+                boxShadow={`0 0 40px var(--chakra-colors-${catMeta.color}-200)`}
                 align="center" justify="center" flexShrink={0}
               >
-                <Box as={Icon} color={`${catMeta.color}.500`} boxSize="28px" />
+                <Box as={Icon} color={`${catMeta.color}.500`} boxSize="34px" />
               </Flex>
               <VStack align="flex-start" spacing={1}>
-                <Heading as="h1" size="xl" fontWeight="800" color="gray.900">{t(playbook.nameKey)}</Heading>
+                <Heading
+                  as="h1" fontSize={{ base: '2xl', md: '3xl' }}
+                  fontWeight="800" lineHeight="1.15" color="gray.900"
+                >
+                  {t(playbook.nameKey)}
+                </Heading>
                 <HStack spacing={2}>
-                  <Badge colorScheme={catMeta.color}>{t(catMeta.labelKey)}</Badge>
-                  <Badge variant="outline" color="gray.500" borderColor="gray.300">
+                  <Badge colorScheme={catMeta.color} px={3} py={1} fontSize="sm">
+                    {t(catMeta.labelKey)}
+                  </Badge>
+                  <Badge variant="outline" color="gray.500" borderColor="gray.300" px={3} py={1} fontSize="sm">
                     {t(`industries.${playbook.industry}`)}
                   </Badge>
                 </HStack>
               </VStack>
             </HStack>
-            <Text color="gray.600" fontSize="lg" maxW="700px" lineHeight="1.8">
+            <Text color="gray.600" fontSize={{ base: 'lg', md: 'xl' }} maxW="700px" lineHeight="1.8">
               {t(playbook.descriptionKey)}
             </Text>
           </MotionBox>
@@ -163,6 +171,24 @@ export function PlaybookDetail() {
             >
               {t('detail.ctaSecondary')}
             </Button>
+          </HStack>
+
+          {/* Trust indicators */}
+          <HStack spacing={5} mt={6} flexWrap="wrap">
+            <HStack spacing={2}>
+              <Box w="8px" h="8px" borderRadius="full" bg={`${catMeta.color}.400`} />
+              <Text fontSize="sm" color="gray.400">{t(catMeta.labelKey)}</Text>
+            </HStack>
+            <HStack spacing={2}>
+              <Box w="8px" h="8px" borderRadius="full" bg={`${catMeta.color}.400`} />
+              <Text fontSize="sm" color="gray.400">{t(`industries.${playbook.industry}`)}</Text>
+            </HStack>
+            <HStack spacing={2}>
+              <Box w="8px" h="8px" borderRadius="full" bg={`${catMeta.color}.400`} />
+              <Text fontSize="sm" color="gray.400">
+                {playbook.blocks.length} blocks
+              </Text>
+            </HStack>
           </HStack>
         </Container>
       </Box>
@@ -292,47 +318,59 @@ export function PlaybookDetail() {
       {/* ── 3. Vertical Workflow (DARK) ──────────────────── */}
       <Box position="relative" overflow="hidden">
         <Box
-          position="absolute" top="10%" left="50%" w="60%" h="80%"
+          position="absolute" top="10%" left="50%" w="80%" h="90%"
           transform="translateX(-50%)"
-          bgGradient="radial(circle, rgba(115, 75, 156, 0.1) 0%, transparent 70%)"
+          bgGradient="radial(circle, rgba(115, 75, 156, 0.12) 0%, transparent 70%)"
           pointerEvents="none"
         />
       <SectionWrapper bg="hero.bg">
-        <Heading as="h2" size="md" fontWeight="700" mb={10} textAlign="center" color="white" position="relative">
+        <Heading as="h2" size="lg" fontWeight="800" mb={12} textAlign="center" color="white" position="relative">
           {t('detail.workflow')}
         </Heading>
 
-        <MotionBox {...staggerContainer} maxW="480px" mx="auto" position="relative">
+        <MotionBox {...staggerContainer} maxW="600px" mx="auto" position="relative">
           {playbook.workflowSteps.map((step, i) => {
             const clr = categoryBadges[step.category]?.color || 'gray';
             const SIcon = stepIconMap[step.category];
             return (
               <MotionBox key={i} {...staggerItem}>
-                <HStack spacing={4} align="flex-start">
-                  <VStack spacing={0} align="center" flexShrink={0} w="40px">
+                <HStack spacing={5} align="flex-start">
+                  {/* Step number + connector */}
+                  <VStack spacing={0} align="center" flexShrink={0} w="48px">
                     <Flex
-                      w="40px" h="40px" borderRadius="full"
+                      w="48px" h="48px" borderRadius="full"
                       bg="whiteAlpha.100" border="2px solid" borderColor="whiteAlpha.200"
                       align="center" justify="center"
                     >
-                      <Text fontWeight="800" fontSize="sm" color="white">{i + 1}</Text>
+                      {SIcon
+                        ? <Box as={SIcon} color={`${clr}.400`} boxSize="20px" />
+                        : <Text fontWeight="800" fontSize="md" color="white">{i + 1}</Text>
+                      }
                     </Flex>
                     {i < playbook.workflowSteps.length - 1 && (
-                      <Box h="40px" borderLeft="2px dashed" borderColor="whiteAlpha.100" />
+                      <Box h="24px" borderLeft="2px dashed" borderColor="whiteAlpha.150" />
                     )}
                   </VStack>
 
-                  <Box pt="6px" pb={i < playbook.workflowSteps.length - 1 ? 2 : 0}>
-                    <HStack spacing={2} mb={1}>
-                      {SIcon && <Box as={SIcon} color={`${clr}.400`} boxSize="14px" />}
+                  {/* Step content card */}
+                  <Box
+                    flex={1} pt="4px" pb={i < playbook.workflowSteps.length - 1 ? 4 : 0}
+                  >
+                    <HStack spacing={2} mb={2}>
                       <Badge
                         bg="whiteAlpha.100" color={`${clr}.300`} border="1px solid"
-                        borderColor="whiteAlpha.200" fontSize="2xs" borderRadius="full"
+                        borderColor="whiteAlpha.200" fontSize="xs" borderRadius="full"
+                        px={3} py={0.5}
                       >
                         {step.category}
                       </Badge>
+                      <Text fontSize="xs" color="whiteAlpha.400" fontWeight="600">
+                        {t('detail.stepLabel', { defaultValue: 'Passo' })} {i + 1}
+                      </Text>
                     </HStack>
-                    <Text fontSize="sm" color="whiteAlpha.700" lineHeight="short">{t(step.labelKey)}</Text>
+                    <Text fontSize="md" color="whiteAlpha.800" lineHeight="1.6" fontWeight="500">
+                      {t(step.labelKey)}
+                    </Text>
                   </Box>
                 </HStack>
               </MotionBox>

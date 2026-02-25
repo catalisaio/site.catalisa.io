@@ -25,6 +25,10 @@ import { playbooks, categoryMeta, getPlaybookIcon } from '../data/playbooks';
 import type { PlaybookType } from '../data/playbooks';
 import { useLocalizedPath } from '../i18n/useLocalizedPath';
 import { categoryBadges } from '../data/capabilityClusters';
+import { SEOHead } from '../seo/SEOHead';
+import { JsonLd } from '../seo/JsonLd';
+import { getBreadcrumbSchema } from '../seo/schemas/breadcrumb';
+import { getPlaybookSchema } from '../seo/schemas/playbook';
 
 /** Hero showcase tab config */
 const HERO_TAB_DWELL = 8000;
@@ -69,6 +73,7 @@ export function PlaybookDetail() {
   const { playbookId } = useParams<{ playbookId: string }>();
   const { t } = useTranslation('playbooks');
   const { t: tc } = useTranslation('common');
+  const { t: tSeo } = useTranslation('seo');
   const lp = useLocalizedPath();
 
   const playbook = useMemo(() => playbooks.find((p) => p.id === playbookId), [playbookId]);
@@ -150,6 +155,20 @@ export function PlaybookDetail() {
 
   return (
     <>
+      <SEOHead
+        pageKey="casosDeUso"
+        title={`${t(playbook.nameKey)} | Catalisa`}
+        description={t(playbook.descriptionKey)}
+      />
+      <JsonLd data={[
+        getBreadcrumbSchema([
+          { name: tSeo('breadcrumbs.home'), path: lp('/') },
+          { name: tSeo('breadcrumbs.casosDeUso'), path: lp('/casos-de-uso') },
+          { name: t(playbook.nameKey), path: `/playbooks/${playbook.id}` },
+        ]),
+        getPlaybookSchema(playbook, t),
+      ]} />
+
       {/* ── 1. Hero (LIGHT) — full viewport with tabs ──── */}
       <Box
         bg="white" color="gray.900"

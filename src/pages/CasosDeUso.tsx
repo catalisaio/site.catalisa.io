@@ -18,6 +18,8 @@ import { MotionBox } from '../components/motion';
 import { playbooks } from '../data/playbooks';
 import type { PlaybookCategory, PlaybookIndustry, PlaybookType } from '../data/playbooks';
 import { useLocalizedPath } from '../i18n/useLocalizedPath';
+import { JsonLd } from '../seo/JsonLd';
+import { BASE_URL } from '../seo/routes';
 
 const industryIcons: Record<string, IconType> = {
   '/fintech': FiDollarSign,
@@ -31,6 +33,7 @@ export function CasosDeUso() {
   const { t } = useTranslation('casos-de-uso');
   const { t: tc } = useTranslation('common');
   const { t: tp } = useTranslation('playbooks');
+  const { t: tSeo } = useTranslation('seo');
   const lp = useLocalizedPath();
 
   const [search, setSearch] = useState('');
@@ -59,8 +62,27 @@ export function CasosDeUso() {
     path: string;
   }>;
 
+  const collectionSchema = useMemo(() => ({
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: t('catalog.heading'),
+    description: tSeo('casosDeUso.description'),
+    mainEntity: {
+      '@type': 'ItemList',
+      numberOfItems: playbooks.length,
+      itemListElement: playbooks.map((pb, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: tp(pb.nameKey),
+        url: `${BASE_URL}/playbooks/${pb.id}`,
+      })),
+    },
+  }), [t, tSeo, tp]);
+
   return (
     <>
+      <JsonLd data={collectionSchema} />
+
       {/* 1. Hero Carousel — full viewport */}
       <HeroCarousel />
 

@@ -1,7 +1,7 @@
 import { Box, Text, VStack, HStack } from '@chakra-ui/react';
 import { type IconType } from 'react-icons';
 import { FiMessageCircle, FiUsers, FiHeadphones, FiDollarSign, FiUserCheck, FiGrid } from 'react-icons/fi';
-import { MotionBox, nodeReveal } from '../motion';
+import { MotionBox } from '../motion';
 import { AnimatedCounter } from './AnimatedCounter';
 
 export type AgentRole = 'whatsapp' | 'sdr' | 'support' | 'finance' | 'onboarding' | 'apps';
@@ -32,8 +32,9 @@ export function AgentAvatarCard({ role, label, activity, activityCount, delay = 
 
   return (
     <MotionBox
-      {...nodeReveal}
-      transition={{ ...nodeReveal.transition, delay }}
+      initial={{ opacity: 0, scale: 0 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5, type: 'spring', stiffness: 200, damping: 15, delay }}
     >
       <VStack spacing={1.5} w={cardW}>
         {/* Icon with pulse ring */}

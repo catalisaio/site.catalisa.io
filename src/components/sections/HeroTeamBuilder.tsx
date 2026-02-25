@@ -5,7 +5,6 @@ import { FiMessageCircle, FiArrowDown } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
 import { MotionBox } from '../motion';
 import { GradientText } from '../shared/GradientText';
-import { TeamGridVisual } from '../shared/TeamGridVisual';
 import { HeroShowcase, useHeroTabs } from '../shared/HeroShowcase';
 import { BehindTheScenesHint } from '../shared/BehindTheScenesHint';
 import { BehindTheScenesModal, useBehindTheScenes } from '../shared/BehindTheScenesModal';
@@ -86,7 +85,6 @@ export function HeroTeamBuilder() {
       />
 
       <Container maxW="1280px" position="relative" zIndex={1}>
-        {/* Top row: text + TeamGridVisual */}
         <Flex
           direction={{ base: 'column', lg: 'row' }}
           align="center"
@@ -213,34 +211,22 @@ export function HeroTeamBuilder() {
             </MotionBox>
           </VStack>
 
-          {/* Right visual - Team Grid */}
+          {/* Right visual - Showcase Tabs */}
           <MotionBox
             initial={{ opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            display={{ base: 'none', lg: 'block' }}
-            maxW="480px"
+            display={{ base: 'none', md: 'block' }}
+            maxW="540px"
             flex={1}
           >
-            <TeamGridVisual />
+            <HeroShowcase
+              activeIndex={showcaseIndex}
+              onTabChange={handleShowcaseTabChange}
+              paused={showcasePaused}
+            />
           </MotionBox>
         </Flex>
-
-        {/* Bottom row: HeroShowcase tabs */}
-        <MotionBox
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
-          display={{ base: 'none', md: 'flex' }}
-          justifyContent="center"
-          pb={12}
-        >
-          <HeroShowcase
-            activeIndex={showcaseIndex}
-            onTabChange={handleShowcaseTabChange}
-            paused={showcasePaused}
-          />
-        </MotionBox>
       </Container>
 
       <BehindTheScenesModal isOpen={behindTheScenes.isOpen} onClose={behindTheScenes.onClose} />

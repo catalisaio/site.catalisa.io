@@ -9,8 +9,7 @@ const MotionCircle = motion.circle;
 
 const lineVariant = {
   initial: { pathLength: 0, opacity: 0 },
-  whileInView: { pathLength: 1, opacity: 1 },
-  viewport: { once: true, margin: '-50px' },
+  animate: { pathLength: 1, opacity: 1 },
 };
 
 export function TeamGridVisual() {
@@ -20,8 +19,7 @@ export function TeamGridVisual() {
   return (
     <MotionBox
       initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: true }}
+      animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
       position="relative"
       w="100%"

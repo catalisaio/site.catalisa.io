@@ -12,25 +12,28 @@ interface TimelineEvent {
 
 interface BehindTheScenesTimelineProps {
   events: TimelineEvent[];
-  triggerStart: boolean;
+  triggerStart?: boolean;
+  visibleCount?: number;
 }
 
 const eventIcons = [FiMessageCircle, FiCpu, FiTool, FiTool, FiCpu, FiCheck];
 
-export function BehindTheScenesTimeline({ events, triggerStart }: BehindTheScenesTimelineProps) {
-  const [visibleCount, setVisibleCount] = useState(0);
+export function BehindTheScenesTimeline({ events, triggerStart, visibleCount: externalCount }: BehindTheScenesTimelineProps) {
+  const [internalCount, setInternalCount] = useState(0);
+  const count = externalCount ?? internalCount;
   const timerRef = useRef<ReturnType<typeof setTimeout>[]>([]);
 
+  // setTimeout fallback — only runs when externalCount is not provided
   useEffect(() => {
-    if (!triggerStart) return;
-    setVisibleCount(0);
+    if (externalCount !== undefined || !triggerStart) return;
+    setInternalCount(0);
 
     timerRef.current.forEach(clearTimeout);
     timerRef.current = [];
 
     events.forEach((evt, i) => {
       const timer = setTimeout(() => {
-        setVisibleCount((prev) => Math.max(prev, i + 1));
+        setInternalCount((prev) => Math.max(prev, i + 1));
       }, evt.delay * 1000);
       timerRef.current.push(timer);
     });
@@ -38,15 +41,15 @@ export function BehindTheScenesTimeline({ events, triggerStart }: BehindTheScene
     return () => {
       timerRef.current.forEach(clearTimeout);
     };
-  }, [triggerStart, events]);
+  }, [triggerStart, events, externalCount]);
 
   return (
     <VStack align="stretch" spacing={0} w="full">
       <AnimatePresence>
-        {events.slice(0, visibleCount).map((evt, i) => {
+        {events.slice(0, count).map((evt, i) => {
           const Icon = eventIcons[i] || FiCheck;
           const isLast = i === events.length - 1;
-          const isCompleted = i < visibleCount - 1;
+          const isCompleted = i < count - 1;
 
           return (
             <MotionBox

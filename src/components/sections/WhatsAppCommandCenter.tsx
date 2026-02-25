@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useRef } from 'react';
 import {
   Box,
   Container,
@@ -9,11 +9,12 @@ import {
   Flex,
 } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
-import { useInView } from 'framer-motion';
+import { useScroll, useMotionValueEvent } from 'framer-motion';
 import { MotionBox } from '../motion';
 import { GradientText } from '../shared/GradientText';
 import { BrowserFrame } from '../shared/BrowserFrame';
 import { BehindTheScenesTimeline } from '../shared/BehindTheScenesTimeline';
+import { ScrollHint } from '../shared/ScrollHint';
 
 interface ChatMessage {
   text: string;
@@ -33,27 +34,33 @@ export function WhatsAppCommandCenter() {
   const timelineEvents = t('whatsAppCommandCenter.timeline', { returnObjects: true }) as TimelineEvent[];
 
   const sectionRef = useRef<HTMLDivElement>(null);
-  const isInView = useInView(sectionRef, { once: true, margin: '-100px' });
   const [visibleMessages, setVisibleMessages] = useState(0);
-  const timerRef = useRef<ReturnType<typeof setTimeout>[]>([]);
+  const [visibleTimelineEvents, setVisibleTimelineEvents] = useState(0);
 
-  // Stagger chat messages when in view
-  useEffect(() => {
-    if (!isInView) return;
-    timerRef.current.forEach(clearTimeout);
-    timerRef.current = [];
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ['start start', 'end end'],
+  });
 
-    chatMessages.forEach((msg, i) => {
-      const timer = setTimeout(() => {
-        setVisibleMessages((prev) => Math.max(prev, i + 1));
-      }, msg.delay * 1000);
-      timerRef.current.push(timer);
-    });
+  useMotionValueEvent(scrollYProgress, 'change', (progress) => {
+    // Remap raw progress into active zone, leaving buffers at start/end
+    // 0–5% = lead-in buffer, 5–65% = animation zone, 65–100% = tail buffer (absorbs momentum)
+    const ANIM_START = 0.05;
+    const ANIM_END = 0.65;
+    const normalized = progress <= ANIM_START ? 0
+      : progress >= ANIM_END ? 1
+      : (progress - ANIM_START) / (ANIM_END - ANIM_START);
 
-    return () => {
-      timerRef.current.forEach(clearTimeout);
-    };
-  }, [isInView, chatMessages]);
+    // 4 chat msgs: evenly spaced within normalized range
+    const chatThresholds = [0.05, 0.30, 0.55, 0.80];
+    // 6 timeline events: slightly ahead of chat, spread evenly
+    const timelineThresholds = [0.08, 0.22, 0.36, 0.50, 0.65, 0.80];
+
+    const msgs = chatThresholds.filter(t => normalized >= t).length;
+    const evts = timelineThresholds.filter(t => normalized >= t).length;
+    setVisibleMessages(msgs);
+    setVisibleTimelineEvents(evts);
+  });
 
   return (
     <Box
@@ -61,8 +68,17 @@ export function WhatsAppCommandCenter() {
       ref={sectionRef}
       position="relative"
       bg="gray.900"
-      overflow="hidden"
+      minH="300vh"
     >
+      {/* Sticky visual container */}
+      <Box
+        position="sticky"
+        top={0}
+        h="100vh"
+        display="flex"
+        alignItems="center"
+        overflow="hidden"
+      >
       {/* Green gradient for WhatsApp identity */}
       <Box
         position="absolute"
@@ -237,7 +253,7 @@ export function WhatsAppCommandCenter() {
                   </HStack>
                   <BehindTheScenesTimeline
                     events={timelineEvents}
-                    triggerStart={isInView}
+                    visibleCount={visibleTimelineEvents}
                   />
                 </Box>
               </BrowserFrame>
@@ -245,6 +261,8 @@ export function WhatsAppCommandCenter() {
           </Flex>
         </MotionBox>
       </Container>
+      <ScrollHint scrollYProgress={scrollYProgress} color="green.300" label={t('scrollHint')} />
+      </Box>
     </Box>
   );
 }

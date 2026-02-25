@@ -43,3 +43,26 @@ export const scaleIn = {
   viewport: { once: true },
   transition: { duration: 0.5, ease: 'easeOut' },
 };
+
+// Node that appears with "pop" and pulse ring
+export const nodeReveal = {
+  initial: { opacity: 0, scale: 0 },
+  whileInView: { opacity: 1, scale: 1 },
+  viewport: { once: true, margin: '-100px' },
+  transition: { duration: 0.5, type: 'spring', stiffness: 200, damping: 15 },
+};
+
+// SVG line that "draws" progressively
+export const lineDrawIn = {
+  initial: { pathLength: 0, opacity: 0 },
+  whileInView: { pathLength: 1, opacity: 1 },
+  viewport: { once: true, margin: '-50px' },
+  transition: { duration: 0.8, ease: 'easeInOut' },
+};
+
+// Stagger with larger delays for dramatic "assembly" effect
+export const teamAssembly = {
+  initial: {},
+  whileInView: { transition: { staggerChildren: 0.2, delayChildren: 0.3 } },
+  viewport: { once: true, margin: '-100px' },
+};

@@ -1,5 +1,5 @@
 import { Heading, Text, VStack, Button, HStack, Box } from '@chakra-ui/react';
-import { FiMessageCircle } from 'react-icons/fi';
+import { FiMessageCircle, FiUsers, FiHeadphones, FiDollarSign, FiUserCheck } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { SectionWrapper } from '../shared/SectionWrapper';
@@ -9,6 +9,13 @@ import { BehindTheScenesModal, useBehindTheScenes } from '../shared/BehindTheSce
 
 const WHATSAPP_URL = 'https://wa.me/5511977303414?text=Ola!%20Quero%20saber%20mais%20sobre%20a%20Catalisa.';
 
+const agentAvatars = [
+  { icon: FiUsers, color: 'blue.300', label: 'SDR' },
+  { icon: FiHeadphones, color: 'green.300', label: 'Suporte' },
+  { icon: FiDollarSign, color: 'orange.300', label: 'Financeiro' },
+  { icon: FiUserCheck, color: 'purple.300', label: 'Onboarding' },
+];
+
 export function FinalCTA() {
   const { t } = useTranslation('home');
   const lp = useLocalizedPath();
@@ -16,6 +23,26 @@ export function FinalCTA() {
   return (
     <SectionWrapper bg="brand.500" py={{ base: 20, md: 28 }}>
       <VStack spacing={6} textAlign="center" maxW="700px" mx="auto">
+        {/* Mini agent avatars row */}
+        <HStack spacing={-2} justify="center">
+          {agentAvatars.map((agent) => (
+            <Box
+              key={agent.label}
+              w="36px"
+              h="36px"
+              borderRadius="full"
+              bg="whiteAlpha.200"
+              border="2px solid"
+              borderColor="brand.400"
+              display="flex"
+              alignItems="center"
+              justifyContent="center"
+            >
+              <Box as={agent.icon} color={agent.color} boxSize={4} />
+            </Box>
+          ))}
+        </HStack>
+
         <Heading as="h2" size="2xl" fontWeight="800" color="white">
           {t('finalCTA.heading')}
         </Heading>

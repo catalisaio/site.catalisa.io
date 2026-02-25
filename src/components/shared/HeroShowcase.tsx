@@ -93,9 +93,9 @@ export function HeroShowcase({ activeIndex, onTabChange, paused }: HeroShowcaseP
     <Flex direction="column" gap={4} w="full">
       {/* Panel content */}
       <Box
-        h={{ base: '400px', xl: '440px' }}
+        h={{ base: '420px', xl: '460px' }}
         display="flex"
-        alignItems="flex-end"
+        alignItems="center"
         justifyContent="center"
         overflow="hidden"
       >

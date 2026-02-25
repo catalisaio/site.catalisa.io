@@ -99,6 +99,14 @@
       "Registra no CRM",
       "Agenda reuniao",
       "Confirma agendamento"
+    ],
+    "chatMessages": [
+      { "text": "Oi, vi o anuncio de voces sobre automacao de vendas. Queria saber mais!", "sent": false, "delay": 0 },
+      { "text": "Ola! Que bom ter voce aqui. Sou o assistente da Catalisa. Para entender melhor como posso te ajudar, qual o tamanho da sua equipe de vendas hoje?", "sent": true, "delay": 0.3 },
+      { "text": "Temos 8 vendedores, mas so 2 conseguem fazer follow-up direito", "sent": false, "delay": 0.8 },
+      { "text": "Entendo perfeitamente. E quantos leads novos voces recebem por mes, aproximadamente?", "sent": true, "delay": 1.2 },
+      { "text": "Uns 500, mas a maioria acaba esfriando porque ninguem responde rapido", "sent": false, "delay": 1.8 },
+      { "text": "Com 500 leads/mes, nosso SDR automatizado pode qualificar e responder em segundos, 24/7. Posso agendar uma demo com nosso especialista? Temos horarios amanha as 10h ou 14h.", "sent": true, "delay": 2.3 }
     ]
   },
   "followup": {
@@ -121,6 +129,14 @@
       "Envia follow-up",
       "Aguarda resposta",
       "Atualiza status no CRM"
+    ],
+    "chatMessages": [
+      { "text": "Oi Marcos! Tudo bem? Vi que voce demonstrou interesse na nossa plataforma semana passada. Conseguiu avaliar a proposta que enviamos?", "sent": true, "delay": 0 },
+      { "text": "Oi! Desculpa, acabei nao vendo ainda. Semana corrida aqui", "sent": false, "delay": 0.3 },
+      { "text": "Sem problemas! Aproveitando, desde a nossa conversa lancamos uma integracao nova com Salesforce que pode ser bem util pro seu caso. Quer que eu envie um resumo rapido?", "sent": true, "delay": 0.8 },
+      { "text": "Ah sim, a gente usa Salesforce! Manda sim", "sent": false, "delay": 1.2 },
+      { "text": "Pronto, enviei por email! Em resumo: a integracao sincroniza seus leads automaticamente e ja qualifica com IA. Quer agendar 15 min pra eu te mostrar ao vivo?", "sent": true, "delay": 1.8 },
+      { "text": "Pode ser quinta as 11h?", "sent": false, "delay": 2.3 }
     ]
   },
   "leadQualification": {
@@ -142,6 +158,14 @@
       "Qualifica com BANT",
       "Registra score no CRM",
       "Envia para ferramenta externa"
+    ],
+    "chatMessages": [
+      { "text": "Oi, preenchi o formulario no site de voces sobre gestao de projetos", "sent": false, "delay": 0 },
+      { "text": "Ola! Obrigado pelo interesse. Para te indicar a melhor solucao, me conta: qual ferramenta voces usam hoje para gestao de projetos?", "sent": true, "delay": 0.3 },
+      { "text": "A gente usa planilhas mesmo, ta um caos haha", "sent": false, "delay": 0.8 },
+      { "text": "Entendo! E quantas pessoas da equipe precisariam usar a plataforma?", "sent": true, "delay": 1.2 },
+      { "text": "Umas 25 pessoas, entre devs e PMs", "sent": false, "delay": 1.8 },
+      { "text": "Perfeito! Com 25 usuarios, o plano Team se encaixa bem e ja inclui dashboards e integracao com Slack. Voces tem orcamento aprovado para essa iniciativa ou ainda estao avaliando?", "sent": true, "delay": 2.3 }
     ]
   },
   "realEstate": {
@@ -163,6 +187,14 @@
       "Registra lead no CRM",
       "Agenda visita",
       "Confirma visita"
+    ],
+    "chatMessages": [
+      { "text": "Boa tarde! Vi o anuncio do apartamento de 3 quartos no Jardins. Ainda esta disponivel?", "sent": false, "delay": 0 },
+      { "text": "Boa tarde! Sim, o apartamento no Jardins esta disponivel! 3 quartos, 92m2, com varanda gourmet. Voce esta buscando para moradia ou investimento?", "sent": true, "delay": 0.3 },
+      { "text": "Moradia mesmo. Somos um casal com 1 filho. Tem vaga de garagem?", "sent": false, "delay": 0.8 },
+      { "text": "Tem sim! 2 vagas cobertas. Esse imovel tambem tem area de lazer completa, otimo para familias. O valor e R$ 850 mil. Gostaria de agendar uma visita?", "sent": true, "delay": 1.2 },
+      { "text": "Sim, quero visitar! Sabado de manha pode ser?", "sent": false, "delay": 1.8 },
+      { "text": "Perfeito! Agendei sua visita para sabado as 10h com o corretor Rafael. Vou te enviar a localizacao exata e o contato dele. Ate la!", "sent": true, "delay": 2.3 }
     ]
   },
   "support247": {
@@ -184,6 +216,14 @@
       "Verifica resolucao",
       "Registra ticket",
       "Envia feedback"
+    ],
+    "chatMessages": [
+      { "text": "Nao consigo acessar minha conta desde ontem! Ja tentei redefinir a senha e nada", "sent": false, "delay": 0 },
+      { "text": "Oi! Entendo a urgencia. Vou te ajudar agora mesmo. Pode me informar o email cadastrado na sua conta?", "sent": true, "delay": 0.3 },
+      { "text": "joao.silva@empresa.com.br", "sent": false, "delay": 0.8 },
+      { "text": "Encontrei sua conta. Identifiquei que houve um bloqueio temporario por tentativas de login. Acabei de desbloquear e enviei um link de redefinicao para seu email. Pode verificar?", "sent": true, "delay": 1.2 },
+      { "text": "Recebi! Ja consegui entrar. Muito obrigado, resolveu rapidinho!", "sent": false, "delay": 1.8 },
+      { "text": "Que otimo! Fico feliz em ajudar. Se precisar de qualquer coisa, estou disponivel 24h. Tenha um otimo dia!", "sent": true, "delay": 2.3 }
     ]
   },
   "techSupport": {
@@ -205,6 +245,14 @@
       "Busca na base de conhecimento",
       "Gera resposta tecnica",
       "Envia solucao"
+    ],
+    "chatMessages": [
+      { "text": "A API de voces ta retornando erro 429 quando tento fazer mais de 10 requests por segundo", "sent": false, "delay": 0 },
+      { "text": "Oi! O erro 429 indica rate limiting. Pela sua descricao, voce esta no plano Starter que tem limite de 10 req/s. Voce esta usando alguma estrategia de retry com backoff exponencial?", "sent": true, "delay": 0.3 },
+      { "text": "Nao, estou fazendo as chamadas direto sem retry", "sent": false, "delay": 0.8 },
+      { "text": "Recomendo implementar retry com backoff exponencial. Aqui esta um exemplo em Python:\n\nimport time\nfor attempt in range(3):\n  try: response = requests.get(url)\n  except: time.sleep(2 ** attempt)\n\nIsso resolve a maioria dos casos. Quer que eu envie a documentacao completa?", "sent": true, "delay": 1.2 },
+      { "text": "Perfeito, era isso que eu precisava! Manda a doc sim", "sent": false, "delay": 1.8 },
+      { "text": "Enviei o link da documentacao de rate limits. Se precisar de mais throughput, o plano Pro suporta 100 req/s. Qualquer duvida, estou aqui!", "sent": true, "delay": 2.3 }
     ]
   },
   "postSale": {
@@ -227,6 +275,14 @@
       "Gera resposta personalizada",
       "Envia resolucao",
       "Atualiza cadastro no CRM"
+    ],
+    "chatMessages": [
+      { "text": "Oi, comprei um tenis tamanho 42 mas veio apertado. Quero trocar por 43", "sent": false, "delay": 0 },
+      { "text": "Oi! Sem problemas, vou te ajudar com a troca. Pode me informar o numero do pedido?", "sent": true, "delay": 0.3 },
+      { "text": "Pedido #78432", "sent": false, "delay": 0.8 },
+      { "text": "Encontrei! Tenis Nike Air Max, pedido de 18/02. Otima noticia: o tamanho 43 esta disponivel em estoque. Vou gerar uma etiqueta de devolucao gratuita para voce. Aceita?", "sent": true, "delay": 1.2 },
+      { "text": "Aceito sim! Como faco pra devolver?", "sent": false, "delay": 1.8 },
+      { "text": "Pronto! Enviei a etiqueta de devolucao por email. Basta colar na caixa e levar a qualquer agencia dos Correios. Assim que recebermos, o novo par sera enviado em ate 2 dias uteis. Posso ajudar em mais algo?", "sent": true, "delay": 2.3 }
     ]
   },
   "bankingSupport": {
@@ -248,6 +304,14 @@
       "Agente bancario atende",
       "Dialogo continuo",
       "Atualiza cadastro"
+    ],
+    "chatMessages": [
+      { "text": "Preciso bloquear meu cartao urgente! Acho que clonaram", "sent": false, "delay": 0 },
+      { "text": "Entendi a urgencia! Vou bloquear seu cartao imediatamente. Para sua seguranca, pode confirmar os 4 ultimos digitos do cartao?", "sent": true, "delay": 0.3 },
+      { "text": "Final 8847", "sent": false, "delay": 0.8 },
+      { "text": "Cartao final 8847 bloqueado com sucesso! Nenhuma transacao nova sera aprovada. Identifiquei 2 compras suspeitas hoje: R$ 340 no Magazine e R$ 89 na Shopee. Reconhece essas compras?", "sent": true, "delay": 1.2 },
+      { "text": "Nao reconheco nenhuma das duas!", "sent": false, "delay": 1.8 },
+      { "text": "Certo, ja abri uma contestacao para ambas e um novo cartao sera enviado em ate 3 dias uteis no seu endereco cadastrado. Voce recebera o codigo de rastreio por aqui. Precisa de mais alguma coisa?", "sent": true, "delay": 2.3 }
     ]
   },
   "insuranceSupport": {
@@ -269,6 +333,14 @@
       "Define tipo de servico",
       "Agente de seguros atende",
       "Confirmacao e encerramento"
+    ],
+    "chatMessages": [
+      { "text": "Boa noite, quero saber como esta o andamento do meu sinistro. Protocolo 2024-11587", "sent": false, "delay": 0 },
+      { "text": "Boa noite! Consultei seu sinistro 2024-11587. Status atual: em analise pela pericia. A vistoria foi realizada em 20/02 e o laudo esta previsto para ate 28/02.", "sent": true, "delay": 0.3 },
+      { "text": "E a cobertura do meu plano cobre carro reserva enquanto isso?", "sent": false, "delay": 0.8 },
+      { "text": "Sim! Seu plano Premium inclui carro reserva por ate 15 dias durante o reparo. Quer que eu solicite a ativacao agora?", "sent": true, "delay": 1.2 },
+      { "text": "Quero sim, por favor!", "sent": false, "delay": 1.8 },
+      { "text": "Pronto! Carro reserva solicitado. A locadora Movida vai entrar em contato em ate 2h para combinar a retirada. Enviei o voucher no seu email. Mais alguma duvida?", "sent": true, "delay": 2.3 }
     ]
   },
   "collections": {
@@ -291,6 +363,14 @@
       "Envia lembrete",
       "Aguarda resposta",
       "Envia link de pagamento"
+    ],
+    "chatMessages": [
+      { "text": "Ola! Aqui e da empresa XYZ. Identificamos uma fatura em aberto de R$ 450,00 com vencimento em 10/02. Podemos te ajudar a regularizar?", "sent": true, "delay": 0 },
+      { "text": "Oi, eu sei que to devendo mas to sem condicoes de pagar tudo agora", "sent": false, "delay": 0.3 },
+      { "text": "Entendo perfeitamente, sem preocupacao. Temos condicoes especiais: posso parcelar em ate 3x de R$ 150 sem juros, ou dar 15% de desconto para pagamento a vista (R$ 382,50). O que funciona melhor pra voce?", "sent": true, "delay": 0.8 },
+      { "text": "O parcelamento em 3x ficaria bom pra mim", "sent": false, "delay": 1.2 },
+      { "text": "Otimo! Vou gerar os 3 boletos de R$ 150 cada, com vencimento nos dias 5 de cada mes. Primeiro boleto vence em 05/03. Confirma?", "sent": true, "delay": 1.8 },
+      { "text": "Confirmo sim, obrigado pela compreensao!", "sent": false, "delay": 2.3 }
     ]
   },
   "creditOrigination": {
@@ -313,6 +393,14 @@
       "Calculo de custos regulatorios",
       "Motor de decisao",
       "Notifica resultado"
+    ],
+    "chatMessages": [
+      { "text": "Oi, quero solicitar um emprestimo pessoal de R$ 15 mil", "sent": false, "delay": 0 },
+      { "text": "Ola! Vou te ajudar com isso. Para iniciar a analise, preciso de uma foto do seu RG ou CNH (frente e verso). Pode enviar aqui mesmo!", "sent": true, "delay": 0.3 },
+      { "text": "[Enviou foto do documento]", "sent": false, "delay": 0.8 },
+      { "text": "Documento recebido e validado! CPF: ***.***.789-00. Agora preciso de um comprovante de renda recente (holerite ou extrato bancario).", "sent": true, "delay": 1.2 },
+      { "text": "[Enviou foto do holerite]", "sent": false, "delay": 1.8 },
+      { "text": "Analise concluida! Seu credito de R$ 15.000 foi pre-aprovado em 12x de R$ 1.380 (taxa de 1,49% a.m.). Quer prosseguir com a contratacao? Vou enviar o contrato digital para assinatura.", "sent": true, "delay": 2.3 }
     ]
   },
   "creditSimulation": {
@@ -334,6 +422,14 @@
       "Gera proposta formatada",
       "Envia proposta",
       "Registra lead"
+    ],
+    "chatMessages": [
+      { "text": "Quero simular um emprestimo, quanto ficaria R$ 20 mil?", "sent": false, "delay": 0 },
+      { "text": "Vamos simular! Qual prazo voce prefere? Temos opcoes de 12, 24, 36 ou 48 meses.", "sent": true, "delay": 0.3 },
+      { "text": "Quero ver em 24 e 36 meses", "sent": false, "delay": 0.8 },
+      { "text": "Aqui estao suas simulacoes para R$ 20.000:\n\n24x de R$ 985 (taxa 1,39% a.m.)\n36x de R$ 720 (taxa 1,49% a.m.)\n\nCET: 18,9% a.a. e 20,1% a.a. respectivamente. Qual te interessa mais?", "sent": true, "delay": 1.2 },
+      { "text": "O de 36x fica mais confortavel no meu orcamento", "sent": false, "delay": 1.8 },
+      { "text": "Otima escolha! Gerei sua proposta personalizada de 36x de R$ 720. Quer seguir para a analise de credito? Leva menos de 5 minutos e e tudo por aqui mesmo.", "sent": true, "delay": 2.3 }
     ]
   },
   "debtRenegotiation": {
@@ -355,6 +451,14 @@
       "Agente negocia",
       "Aguarda resposta",
       "Envia link de pagamento"
+    ],
+    "chatMessages": [
+      { "text": "Oi, recebi uma mensagem sobre uma divida. Quero resolver mas ta muito dificil", "sent": false, "delay": 0 },
+      { "text": "Ola! Fico feliz que quer resolver. Encontrei uma divida de R$ 2.800 (contrato #4521). Entendo que o momento pode ser dificil. Preparei opcoes especiais pra te ajudar:", "sent": true, "delay": 0.3 },
+      { "text": "Quais as opcoes?", "sent": false, "delay": 0.8 },
+      { "text": "Temos 3 opcoes:\n1. A vista com 40% de desconto: R$ 1.680\n2. 6x de R$ 520 (sem juros)\n3. 12x de R$ 280 (juros reduzidos)\n\nQual se encaixa melhor na sua realidade?", "sent": true, "delay": 1.2 },
+      { "text": "Consigo pagar a vista com o desconto de 40%!", "sent": false, "delay": 1.8 },
+      { "text": "Excelente decisao! Gerei o boleto de R$ 1.680 com vencimento em 5 dias. Aqui esta o link de pagamento: pay.link/xyz. Apos o pagamento, seu nome sera limpo em ate 5 dias uteis. Parabens por resolver!", "sent": true, "delay": 2.3 }
     ]
   },
   "openFinanceCredit": {
@@ -376,6 +480,14 @@
       "Analisa historico",
       "Scoring personalizado",
       "Notifica resultado"
+    ],
+    "chatMessages": [
+      { "text": "Vi que voces oferecem taxas melhores com Open Finance. Como funciona?", "sent": false, "delay": 0 },
+      { "text": "Oi! Com Open Finance, acessamos seu historico bancario real (com sua autorizacao) e oferecemos taxas personalizadas. Normalmente conseguimos reduzir a taxa em ate 30%. Quer conectar seus dados?", "sent": true, "delay": 0.3 },
+      { "text": "Quero sim! E seguro?", "sent": false, "delay": 0.8 },
+      { "text": "100% seguro! Regulamentado pelo Banco Central. Vou enviar um link para voce autorizar o compartilhamento dos dados no app do seu banco. Seus dados sao criptografados e voce pode revogar a qualquer momento.", "sent": true, "delay": 1.2 },
+      { "text": "Pronto, autorizei no app do banco", "sent": false, "delay": 1.8 },
+      { "text": "Recebi seus dados! Com base no seu historico, seu score ficou acima da media. Resultado: taxa personalizada de 1,19% a.m. (contra 1,89% padrao). Para R$ 10.000 em 24x, a parcela fica R$ 490 ao inves de R$ 530. Quer prosseguir?", "sent": true, "delay": 2.3 }
     ]
   },
   "insuranceQuote": {
@@ -397,6 +509,14 @@
       "Calcula premio",
       "Envia cotacao",
       "Registra lead"
+    ],
+    "chatMessages": [
+      { "text": "Oi, quero cotar seguro pro meu carro. HB20 2023", "sent": false, "delay": 0 },
+      { "text": "Ola! Vou cotar agora pra voce. Me passa algumas informacoes: qual seu CEP e voce tem garagem em casa e no trabalho?", "sent": true, "delay": 0.3 },
+      { "text": "CEP 01310-100, tenho garagem nos dois lugares", "sent": false, "delay": 0.8 },
+      { "text": "Otimo! Garagem nos dois lugares ajuda no preco. Mais uma: voce e o principal condutor? E qual sua idade?", "sent": true, "delay": 1.2 },
+      { "text": "Sou sim, tenho 34 anos", "sent": false, "delay": 1.8 },
+      { "text": "Pronto! Sua cotacao para o HB20 2023:\n\nPlano Basico: R$ 142/mes (roubo + colisao)\nPlano Completo: R$ 189/mes (+ vidros + carro reserva)\n\nPerfil baixo risco = desconto de 18% aplicado! Quer contratar algum dos planos?", "sent": true, "delay": 2.3 }
     ]
   },
   "kycOnboarding": {
@@ -419,6 +539,14 @@
       "Protecao de dados sensiveis",
       "Cadastra cliente",
       "Boas-vindas"
+    ],
+    "chatMessages": [
+      { "text": "Oi, quero abrir minha conta. O que preciso fazer?", "sent": false, "delay": 0 },
+      { "text": "Ola! Bem-vindo! O processo e rapido e todo por aqui. Primeiro, envie uma foto do seu RG ou CNH (frente e verso). Pode tirar a foto agora mesmo!", "sent": true, "delay": 0.3 },
+      { "text": "[Enviou foto do RG frente e verso]", "sent": false, "delay": 0.8 },
+      { "text": "Documento recebido! Validando... Nome: Maria Santos, CPF verificado, documento dentro da validade. Agora preciso de uma selfie sua segurando o documento para confirmacao facial.", "sent": true, "delay": 1.2 },
+      { "text": "[Enviou selfie com documento]", "sent": false, "delay": 1.8 },
+      { "text": "Validacao facial aprovada! Seu cadastro foi criado com sucesso. Bem-vinda, Maria! Seu acesso ja esta liberado. Enviei um email de boas-vindas com os proximos passos.", "sent": true, "delay": 2.3 }
     ]
   },
   "digitalAccount": {
@@ -441,6 +569,14 @@
       "Protecao de dados sensiveis",
       "Cria conta",
       "Boas-vindas"
+    ],
+    "chatMessages": [
+      { "text": "Quero abrir uma conta digital. E gratis mesmo?", "sent": false, "delay": 0 },
+      { "text": "Sim, 100% gratuita e sem tarifas de manutencao! Vamos comecar? Me envia uma foto da frente e do verso da sua CNH.", "sent": true, "delay": 0.3 },
+      { "text": "[Enviou fotos da CNH]", "sent": false, "delay": 0.8 },
+      { "text": "CNH validada com sucesso! Dados extraidos automaticamente. Agora me confirma: seu endereco atual e Rua das Flores, 123 - Sao Paulo/SP?", "sent": true, "delay": 1.2 },
+      { "text": "Isso mesmo!", "sent": false, "delay": 1.8 },
+      { "text": "Conta criada com sucesso! Sua agencia e 0001, conta 987654-3. Ja pode receber Pix pelo CPF. Enviei o link pra baixar o app e criar sua senha. Bem-vindo ao banco digital!", "sent": true, "delay": 2.3 }
     ]
   },
   "userOnboarding": {
@@ -462,6 +598,14 @@
       "Envia tutorial personalizado",
       "Responde perguntas",
       "Coleta feedback"
+    ],
+    "chatMessages": [
+      { "text": "Oi! Bem-vindo ao TaskFlow! Sou seu assistente de onboarding. Vi que voce acabou de criar sua conta. Quer que eu te guie pelos primeiros passos?", "sent": true, "delay": 0 },
+      { "text": "Oi! Quero sim, to meio perdido na plataforma", "sent": false, "delay": 0.3 },
+      { "text": "Normal! Vamos por partes. Primeiro passo: crie seu primeiro projeto. Va em \"Novo Projeto\" no menu lateral. Ja consegue ver esse botao?", "sent": true, "delay": 0.8 },
+      { "text": "Achei! Criei o projeto \"Marketing Q1\"", "sent": false, "delay": 1.2 },
+      { "text": "Perfeito! Agora adicione sua equipe: clique em \"Convidar\" e coloque os emails dos seus colegas. Dica: voce pode importar direto do Google Workspace!", "sent": true, "delay": 1.8 },
+      { "text": "Que pratico! Ja importei o time todo. Esse app e muito mais facil do que eu imaginava", "sent": false, "delay": 2.3 }
     ]
   },
   "enrollment": {
@@ -483,6 +627,14 @@
       "Registra aluno",
       "Link de matricula",
       "Envia proposta"
+    ],
+    "chatMessages": [
+      { "text": "Oi, quero informacoes sobre cursos de programacao", "sent": false, "delay": 0 },
+      { "text": "Ola! Temos otimas opcoes! Voce tem interesse em qual area?\n\n1. Desenvolvimento Web (6 meses)\n2. Ciencia de Dados (8 meses)\n3. Mobile com React Native (4 meses)\n4. DevOps e Cloud (5 meses)", "sent": true, "delay": 0.3 },
+      { "text": "Desenvolvimento Web! Quanto custa e quando comeca?", "sent": false, "delay": 0.8 },
+      { "text": "O curso de Desenvolvimento Web comeca dia 10/03, aulas ao vivo de terca e quinta, 19h-21h30. Investimento: 12x de R$ 297 ou a vista com 15% de desconto (R$ 3.029). Inclui certificado e acesso vitalicio ao conteudo!", "sent": true, "delay": 1.2 },
+      { "text": "Quero me matricular! Como faco?", "sent": false, "delay": 1.8 },
+      { "text": "Otimo! Enviei o link de matricula com seus dados pre-preenchidos. Basta escolher a forma de pagamento e confirmar. As vagas sao limitadas (restam 8). Qualquer duvida, estou aqui!", "sent": true, "delay": 2.3 }
     ]
   },
   "campaigns": {
@@ -504,6 +656,14 @@
       "Envia campanha",
       "Aguarda interacao",
       "Registra engajamento"
+    ],
+    "chatMessages": [
+      { "text": "Oi Ana! Vimos que voce adorou nossos produtos de skincare. Temos uma novidade exclusiva pra voce: lancamento da linha Vitamina C com 20% OFF so ate sexta!", "sent": true, "delay": 0 },
+      { "text": "Oi! Nossa, eu amo a linha de voces! Quais produtos estao com desconto?", "sent": false, "delay": 0.3 },
+      { "text": "Pra voce que ja comprou o serum, temos o combo perfeito:\n\nSerum Vitamina C + Protetor Solar = R$ 119 (de R$ 149)\nKit Completo (serum + hidratante + protetor) = R$ 189 (de R$ 249)\n\nFrete gratis acima de R$ 150!", "sent": true, "delay": 0.8 },
+      { "text": "Quero o kit completo!", "sent": false, "delay": 1.2 },
+      { "text": "Excelente escolha! Aqui esta seu link exclusivo com o desconto ja aplicado. Frete gratis e entrega em ate 3 dias uteis pra sua regiao.", "sent": true, "delay": 1.8 },
+      { "text": "Comprei! Obrigada pela dica!", "sent": false, "delay": 2.3 }
     ]
   },
   "cartRecovery": {
@@ -525,6 +685,14 @@
       "Gera mensagem personalizada",
       "Envia lembrete",
       "Link de checkout"
+    ],
+    "chatMessages": [
+      { "text": "Oi Pedro! Notei que voce deixou um Notebook Dell Inspiron no carrinho. Aconteceu algum problema na hora da compra?", "sent": true, "delay": 0 },
+      { "text": "Oi! Na verdade achei o frete meio caro", "sent": false, "delay": 0.3 },
+      { "text": "Entendo! Tenho uma boa noticia: como cliente especial, liberei frete gratis pro seu pedido. Alem disso, tenho um cupom de 5% OFF: VOLTA5. O notebook sai de R$ 3.499 por R$ 3.324!", "sent": true, "delay": 0.8 },
+      { "text": "Serio? Com frete gratis e esse desconto fica otimo!", "sent": false, "delay": 1.2 },
+      { "text": "Sim! Seu carrinho ainda esta salvo. Aqui esta o link direto pro checkout com o cupom ja aplicado e frete gratis. So finalizar o pagamento!", "sent": true, "delay": 1.8 },
+      { "text": "Comprei! Valeu pelo desconto!", "sent": false, "delay": 2.3 }
     ]
   },
   "npsFeedback": {
@@ -546,6 +714,14 @@
       "Coleta NPS e feedback",
       "Registra dados",
       "Alerta equipe (detratores)"
+    ],
+    "chatMessages": [
+      { "text": "Oi Carla! Voce finalizou seu atendimento conosco. Em uma escala de 0 a 10, o quanto recomendaria nosso servico para um amigo?", "sent": true, "delay": 0 },
+      { "text": "Dou 9!", "sent": false, "delay": 0.3 },
+      { "text": "Que otimo! Ficamos muito felizes com a sua nota. O que voce mais gostou no atendimento?", "sent": true, "delay": 0.8 },
+      { "text": "A rapidez! Antes eu esperava horas pra ser atendida, agora resolveram em minutos", "sent": false, "delay": 1.2 },
+      { "text": "Incrivel saber disso! E tem algo que poderiamos melhorar?", "sent": true, "delay": 1.8 },
+      { "text": "Seria legal ter atendimento por video tambem, pra problemas mais complexos", "sent": false, "delay": 2.3 }
     ]
   },
   "proactiveRenewal": {
@@ -567,6 +743,14 @@
       "Proposta personalizada",
       "Envia lembrete",
       "Link de pagamento"
+    ],
+    "chatMessages": [
+      { "text": "Oi Roberto! Seu seguro auto vence em 30 dias (25/03). Como voce e cliente ha 3 anos sem sinistros, preparei condicoes especiais de renovacao pra voce!", "sent": true, "delay": 0 },
+      { "text": "Oi! Quanto ficaria a renovacao?", "sent": false, "delay": 0.3 },
+      { "text": "Com seu historico excelente, consegui um desconto de 22% sobre o ano anterior:\n\nPlano atual (Completo): de R$ 2.400 por R$ 1.872/ano\nOu 12x de R$ 156 sem juros!\n\nMesmas coberturas + assistencia 24h inclusa.", "sent": true, "delay": 0.8 },
+      { "text": "Boa! Ta mais barato que ano passado mesmo. Pode renovar", "sent": false, "delay": 1.2 },
+      { "text": "Perfeito! Gerei sua proposta de renovacao. Envio o link de pagamento ou prefere debito automatico como no ano anterior?", "sent": true, "delay": 1.8 },
+      { "text": "Mantem no debito automatico, mais pratico", "sent": false, "delay": 2.3 }
     ]
   },
   "claimNotification": {
@@ -589,6 +773,14 @@
       "Protecao de dados sensiveis",
       "Anexa documentos",
       "Confirma abertura"
+    ],
+    "chatMessages": [
+      { "text": "Oi, acabei de bater o carro. Preciso abrir sinistro", "sent": false, "delay": 0 },
+      { "text": "Oi! Primeiro: voce esta bem? Alguem se machucou?", "sent": true, "delay": 0.3 },
+      { "text": "Sim, estou bem. Foi so dano material, batida leve no estacionamento", "sent": false, "delay": 0.8 },
+      { "text": "Que bom que esta bem! Vou abrir o sinistro agora. Preciso que envie fotos dos danos no seu veiculo (frente, lateral e placa) e tambem o B.O. ou registro da ocorrencia, se tiver.", "sent": true, "delay": 1.2 },
+      { "text": "[Enviou 3 fotos do veiculo]", "sent": false, "delay": 1.8 },
+      { "text": "Fotos analisadas! Identifiquei danos no para-choque traseiro e lanterna esquerda. Sinistro aberto com sucesso! Protocolo #SIN-2024-8832. Um perito entrara em contato em ate 24h. Posso te ajudar com guincho ou carro reserva?", "sent": true, "delay": 2.3 }
     ]
   },
   "digitalInspection": {
@@ -611,6 +803,14 @@
       "Classifica condicao",
       "Decisao automatica",
       "Resultado da vistoria"
+    ],
+    "chatMessages": [
+      { "text": "Oi, preciso fazer a vistoria do meu carro pra ativar o seguro", "sent": false, "delay": 0 },
+      { "text": "Ola! Vamos fazer a vistoria digital, e bem rapido! Preciso de 6 fotos do seu veiculo:\n1. Frente\n2. Traseira\n3. Lateral esquerda\n4. Lateral direita\n5. Painel/hodometro\n6. Placa\n\nTire as fotos com boa iluminacao, de preferencia ao ar livre.", "sent": true, "delay": 0.3 },
+      { "text": "[Enviou 6 fotos do veiculo]", "sent": false, "delay": 0.8 },
+      { "text": "Fotos recebidas! Analisando com IA... Veiculo: Honda Civic 2022, placa ABC-1234, km 32.450. Identifiquei um pequeno risco na porta traseira direita. Demais condicoes: excelentes.", "sent": true, "delay": 1.2 },
+      { "text": "Sim, esse risco ja existia quando comprei. E agora?", "sent": false, "delay": 1.8 },
+      { "text": "Sem problemas! O risco foi registrado como pre-existente. Vistoria aprovada! Seu seguro sera ativado em ate 2h. Voce recebera a apolice digital por email. Parabens pela contratacao!", "sent": true, "delay": 2.3 }
     ]
   },
   "digitalMenu": {
@@ -632,6 +832,14 @@
       "Coleta itens",
       "Calcula total",
       "Envia para cozinha"
+    ],
+    "chatMessages": [
+      { "text": "Oi, quero fazer um pedido pra entrega", "sent": false, "delay": 0 },
+      { "text": "Ola! Bem-vindo ao Restaurante Sabor! Aqui esta nosso cardapio de hoje:\n\nPratos: Pizza Margherita R$39 | Hamburguer Artesanal R$32 | Salada Caesar R$28\nBebidas: Suco Natural R$12 | Refri lata R$8\nSobremesa: Petit Gateau R$22\n\nO que vai ser?", "sent": true, "delay": 0.3 },
+      { "text": "Quero 2 pizzas margherita e 1 petit gateau. E 2 sucos de laranja", "sent": false, "delay": 0.8 },
+      { "text": "Anotado! Seu pedido:\n2x Pizza Margherita — R$ 78\n1x Petit Gateau — R$ 22\n2x Suco Natural — R$ 24\n\nTotal: R$ 124,00\nTaxa de entrega: R$ 6,00\nTotal final: R$ 130,00\n\nConfirma?", "sent": true, "delay": 1.2 },
+      { "text": "Confirmo! Pago no Pix", "sent": false, "delay": 1.8 },
+      { "text": "Pedido confirmado! Aqui esta a chave Pix: pedidos@sabor.com.br. Tempo estimado de entrega: 40 minutos. Vou te avisar quando sair para entrega!", "sent": true, "delay": 2.3 }
     ]
   },
   "conversationalPix": {
@@ -653,6 +861,14 @@
       "Validacao automatica",
       "Executa transferencia",
       "Confirma operacao"
+    ],
+    "chatMessages": [
+      { "text": "Quero mandar um Pix de 150 reais pro celular da Maria, 11 99876-5432", "sent": false, "delay": 0 },
+      { "text": "Entendi! Vou preparar seu Pix:\n\nValor: R$ 150,00\nChave: (11) 99876-5432\nDestinatario: Maria C. Oliveira\n\nConfirma a transferencia?", "sent": true, "delay": 0.3 },
+      { "text": "Isso, pode mandar!", "sent": false, "delay": 0.8 },
+      { "text": "Para confirmar, me envia sua senha de 4 digitos ou use sua biometria no link que vou enviar.", "sent": true, "delay": 1.2 },
+      { "text": "[Confirmou via biometria]", "sent": false, "delay": 1.8 },
+      { "text": "Pix realizado com sucesso!\n\nR$ 150,00 enviado para Maria C. Oliveira\nID: E123456789\nData: 25/02/2026 14:32\n\nComprovante salvo automaticamente. Precisa de mais alguma coisa?", "sent": true, "delay": 2.3 }
     ]
   },
   "smartScheduling": {
@@ -674,6 +890,14 @@
       "Busca horarios disponiveis",
       "Confirma agendamento",
       "Envia lembrete"
+    ],
+    "chatMessages": [
+      { "text": "Oi, preciso agendar uma reuniao com o time de vendas de voces", "sent": false, "delay": 0 },
+      { "text": "Ola! Claro, vou encontrar o melhor horario. Qual sua preferencia: manha ou tarde? E tem algum dia da semana que funciona melhor?", "sent": true, "delay": 0.3 },
+      { "text": "Prefiro terca ou quarta a tarde", "sent": false, "delay": 0.8 },
+      { "text": "Perfeito! Encontrei esses horarios disponiveis:\n\nTerca 27/02 - 14h00\nTerca 27/02 - 16h00\nQuarta 28/02 - 14h30\n\nQual prefere?", "sent": true, "delay": 1.2 },
+      { "text": "Terca as 14h ta otimo", "sent": false, "delay": 1.8 },
+      { "text": "Agendado! Reuniao com o time de vendas na terca 27/02 as 14h00, duracao de 30 min. Enviei o convite com link do Google Meet pro seu email. Vou te lembrar 1h antes. Ate la!", "sent": true, "delay": 2.3 }
     ]
   },
   "healthScheduling": {
@@ -695,6 +919,14 @@
       "Busca horarios",
       "Confirma agendamento",
       "Lembrete automatico"
+    ],
+    "chatMessages": [
+      { "text": "Oi, quero marcar uma consulta com dermatologista", "sent": false, "delay": 0 },
+      { "text": "Ola! Temos 3 dermatologistas na clinica. E sua primeira consulta conosco? E voce tem algum convenio?", "sent": true, "delay": 0.3 },
+      { "text": "Primeira vez sim. Tenho Unimed", "sent": false, "delay": 0.8 },
+      { "text": "Otimo, aceitamos Unimed! Horarios disponiveis esta semana:\n\nDra. Paula Mendes:\n- Quarta 26/02 as 09h00\n- Sexta 28/02 as 15h30\n\nDr. Ricardo Alves:\n- Quinta 27/02 as 10h00\n\nQual prefere?", "sent": true, "delay": 1.2 },
+      { "text": "Quinta as 10h com Dr. Ricardo", "sent": false, "delay": 1.8 },
+      { "text": "Consulta agendada! Dr. Ricardo Alves, quinta 27/02 as 10h00. Endereco: Rua Paulista, 1000 - sala 802. Traga documento com foto e carteirinha do convenio. Vou te lembrar na vespera. Ate la!", "sent": true, "delay": 2.3 }
     ]
   },
   "notifications": {
@@ -716,6 +948,14 @@
       "Envia notificacao",
       "Responde se necessario",
       "Registra engajamento"
+    ],
+    "chatMessages": [
+      { "text": "Oi Lucas! Sua fatura de R$ 289,90 vence amanha (26/02). Quer pagar agora pelo Pix? Codigo: 00020126...", "sent": true, "delay": 0 },
+      { "text": "Opa, quase esqueci! Vou pagar agora", "sent": false, "delay": 0.3 },
+      { "text": "Pagamento de R$ 289,90 confirmado! Obrigado, Lucas. Seu proximo vencimento e em 26/03. Quer ativar o lembrete automatico 3 dias antes?", "sent": true, "delay": 0.8 },
+      { "text": "Quero sim, sempre esqueco haha", "sent": false, "delay": 1.2 },
+      { "text": "Lembrete ativado! Voce recebera um aviso 3 dias e 1 dia antes de cada vencimento. Tambem posso enviar o codigo Pix junto pra facilitar. Deseja?", "sent": true, "delay": 1.8 },
+      { "text": "Perfeito, manda o Pix junto sim!", "sent": false, "delay": 2.3 }
     ]
   }
 }

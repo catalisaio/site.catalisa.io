@@ -99,6 +99,14 @@
       "Registers in CRM",
       "Schedules meeting",
       "Confirms booking"
+    ],
+    "chatMessages": [
+      { "text": "Hi, I saw your ad about the CRM platform. Can you tell me more?", "sent": false, "delay": 0 },
+      { "text": "Hey there! Glad you reached out. I'd love to help you learn more. Could you tell me your company name and how many people are on your sales team?", "sent": true, "delay": 0.3 },
+      { "text": "Sure, it's BrightPath Solutions. We have about 12 sales reps.", "sent": false, "delay": 0.8 },
+      { "text": "Great, BrightPath! With a team of 12, our Growth plan would be a perfect fit. What's your biggest challenge right now -- lead tracking, pipeline visibility, or something else?", "sent": true, "delay": 1.2 },
+      { "text": "Definitely pipeline visibility. We're losing deals because nobody follows up on time.", "sent": false, "delay": 1.8 },
+      { "text": "That's exactly what we solve. I've booked a 20-min demo for you with Sarah, our solutions specialist, tomorrow at 2 PM. I just sent the calendar invite to your email. See you there!", "sent": true, "delay": 2.3 }
     ]
   },
   "followup": {
@@ -121,6 +129,14 @@
       "Sends follow-up",
       "Awaits response",
       "Updates CRM status"
+    ],
+    "chatMessages": [
+      { "text": "Hi Marcus! We chatted last week about automating your customer support. Just checking in -- did you get a chance to review the proposal?", "sent": true, "delay": 0 },
+      { "text": "Oh hey, sorry I got swamped. I haven't had time to look at it yet.", "sent": false, "delay": 0.3 },
+      { "text": "No worries at all! I know things get busy. Quick update: we just released a new feature that cuts setup time by 60%. Want me to send a short 2-min video summary?", "sent": true, "delay": 0.8 },
+      { "text": "That would actually be great. Send it over!", "sent": false, "delay": 1.2 },
+      { "text": "Done! Here's the video link. Also, I blocked a 15-min slot for Thursday at 3 PM in case you'd like to discuss. I can cancel if the timing doesn't work.", "sent": true, "delay": 1.8 },
+      { "text": "Thursday works. Let's do it.", "sent": false, "delay": 2.3 }
     ]
   },
   "leadQualification": {
@@ -142,6 +158,14 @@
       "Qualifies with BANT",
       "Records score in CRM",
       "Sends to external tool"
+    ],
+    "chatMessages": [
+      { "text": "I signed up for a free trial on your website. What can the platform do for my team?", "sent": false, "delay": 0 },
+      { "text": "Welcome! Happy to walk you through it. To recommend the best plan, could you tell me your company size and what tools you're currently using?", "sent": true, "delay": 0.3 },
+      { "text": "We're a 50-person startup using Trello and Google Sheets. It's becoming a nightmare.", "sent": false, "delay": 0.8 },
+      { "text": "Totally understand -- that's a common pain point at your stage. Do you have a budget in mind, and when are you looking to make a decision?", "sent": true, "delay": 1.2 },
+      { "text": "We have around $500/mo approved and want to switch by end of this month.", "sent": false, "delay": 1.8 },
+      { "text": "Perfect -- that fits our Pro plan exactly. You're a great match! I'm connecting you with Jake from our solutions team. He'll reach out within the hour with a personalized demo.", "sent": true, "delay": 2.3 }
     ]
   },
   "realEstate": {
@@ -163,6 +187,14 @@
       "Registers lead in CRM",
       "Schedules visit",
       "Confirms visit"
+    ],
+    "chatMessages": [
+      { "text": "Hi, I'm looking for a 2-bedroom apartment in Brooklyn, ideally under $3,000/month.", "sent": false, "delay": 0 },
+      { "text": "Great choice! I found 4 apartments matching your criteria in Brooklyn. Do you prefer a doorman building or a walk-up? And do you need parking?", "sent": true, "delay": 0.3 },
+      { "text": "Doorman would be nice, and no parking needed. Also pet-friendly if possible.", "sent": false, "delay": 0.8 },
+      { "text": "Got it! I have 2 perfect matches -- one in Park Slope ($2,800/mo) and another in Williamsburg ($2,950/mo), both pet-friendly with doorman. Want to schedule visits?", "sent": true, "delay": 1.2 },
+      { "text": "Yes! Can I see both this Saturday?", "sent": false, "delay": 1.8 },
+      { "text": "Done! Park Slope at 10 AM and Williamsburg at 12 PM this Saturday. I'll send you the addresses and agent contact info. See you there!", "sent": true, "delay": 2.3 }
     ]
   },
   "support247": {
@@ -184,6 +216,14 @@
       "Verifies resolution",
       "Registers ticket",
       "Sends feedback"
+    ],
+    "chatMessages": [
+      { "text": "I can't log into my account. I've tried resetting my password twice and it's not working!", "sent": false, "delay": 0 },
+      { "text": "I'm sorry to hear that! Let me look into this right away. Can you confirm the email address linked to your account?", "sent": true, "delay": 0.3 },
+      { "text": "It's john.miller@email.com", "sent": false, "delay": 0.8 },
+      { "text": "Found it! There was a temporary security lock on your account due to multiple failed login attempts. I've just unlocked it. Please try logging in now with your most recent password.", "sent": true, "delay": 1.2 },
+      { "text": "It worked! I'm in. Thank you so much!", "sent": false, "delay": 1.8 },
+      { "text": "You're welcome! Glad I could help. On a scale of 1-5, how would you rate this support experience?", "sent": true, "delay": 2.3 }
     ]
   },
   "techSupport": {
@@ -205,6 +245,14 @@
       "Searches knowledge base",
       "Generates technical response",
       "Sends solution"
+    ],
+    "chatMessages": [
+      { "text": "Our API integration is returning a 403 error when calling the /users endpoint. We were working fine yesterday.", "sent": false, "delay": 0 },
+      { "text": "I see the issue. Let me check your API credentials and recent changes. What's your API key prefix? (first 8 characters only)", "sent": true, "delay": 0.3 },
+      { "text": "It starts with sk_live_8f", "sent": false, "delay": 0.8 },
+      { "text": "Found it! Your API key was rotated automatically at midnight due to our scheduled security update. You need to generate a new key from Settings > API Keys and update your integration. Here's the step-by-step guide: docs.example.com/api-rotation", "sent": true, "delay": 1.2 },
+      { "text": "That fixed it! Calls are going through now. Thanks!", "sent": false, "delay": 1.8 },
+      { "text": "Excellent! Pro tip: enable webhook notifications for key rotations so you get alerted next time. Let me know if anything else comes up.", "sent": true, "delay": 2.3 }
     ]
   },
   "postSale": {
@@ -227,6 +275,14 @@
       "Generates personalized response",
       "Sends resolution",
       "Updates CRM record"
+    ],
+    "chatMessages": [
+      { "text": "Hi, I ordered a jacket 5 days ago and still haven't received it. Order #78432.", "sent": false, "delay": 0 },
+      { "text": "Let me check that for you right away! Order #78432... I can see it shipped on Monday and is currently at the local distribution center. Expected delivery is tomorrow by 6 PM.", "sent": true, "delay": 0.3 },
+      { "text": "Oh okay. Also, I want to exchange the sneakers from my last order. They're too small.", "sent": false, "delay": 0.8 },
+      { "text": "No problem! I've started an exchange for order #78210 (sneakers, size 9). What size do you need instead?", "sent": true, "delay": 1.2 },
+      { "text": "Size 10 please.", "sent": false, "delay": 1.8 },
+      { "text": "Done! Size 10 is in stock. I'm sending you a free return label by email. Once we receive the return, your new pair ships within 24h. Anything else I can help with?", "sent": true, "delay": 2.3 }
     ]
   },
   "bankingSupport": {
@@ -248,11 +304,19 @@
       "Banking agent assists",
       "Continuous dialogue",
       "Updates record"
+    ],
+    "chatMessages": [
+      { "text": "I need to check my account balance and I think there's a charge I don't recognize.", "sent": false, "delay": 0 },
+      { "text": "I can help with both! After verifying your identity, your current balance is $4,320.50. Which charge looks unfamiliar to you?", "sent": true, "delay": 0.3 },
+      { "text": "There's a $49.99 charge from 'DGT*Services' on the 15th. I have no idea what that is.", "sent": false, "delay": 0.8 },
+      { "text": "I found it. 'DGT*Services' is the billing name for DigitalPlus, a streaming subscription. Does that ring a bell?", "sent": true, "delay": 1.2 },
+      { "text": "Oh wait, yes! My son signed up for that. Never mind, it's fine. Can you also block my old card ending in 4521? I got a new one.", "sent": false, "delay": 1.8 },
+      { "text": "Card ending in 4521 has been blocked immediately. Your new card is already active. Is there anything else I can help you with today?", "sent": true, "delay": 2.3 }
     ]
   },
   "insuranceSupport": {
     "name": "Insurance Support 24/7",
-    "description": "Claim status, duplicate bills, coverage questions — all resolved by AI specialist in insurance.",
+    "description": "Claim status, duplicate bills, coverage questions -- all resolved by AI specialist in insurance.",
     "before": [
       { "metric": "Response time", "value": "4h" },
       { "metric": "Autonomous resolution", "value": "30%" },
@@ -269,6 +333,14 @@
       "Defines service type",
       "Insurance agent assists",
       "Confirmation and closure"
+    ],
+    "chatMessages": [
+      { "text": "I filed a claim two weeks ago after a fender bender. Any updates on claim #CLM-9021?", "sent": false, "delay": 0 },
+      { "text": "Let me pull that up. Claim #CLM-9021 is currently under review -- the adjuster completed their assessment yesterday. You should receive the settlement offer within 2 business days.", "sent": true, "delay": 0.3 },
+      { "text": "Good to know. Also, does my policy cover rental cars while mine is being repaired?", "sent": false, "delay": 0.8 },
+      { "text": "Yes! Your Gold plan includes rental car coverage up to $50/day for a maximum of 14 days during claim-related repairs. I can send you the list of partner rental agencies near you.", "sent": true, "delay": 1.2 },
+      { "text": "That would be great. And can you send me a duplicate of this month's bill?", "sent": false, "delay": 1.8 },
+      { "text": "Done! I just sent the duplicate bill and the rental agency list to your registered email. Your next payment of $185.00 is due on March 5th. Anything else?", "sent": true, "delay": 2.3 }
     ]
   },
   "collections": {
@@ -291,6 +363,14 @@
       "Sends reminder",
       "Awaits response",
       "Sends payment link"
+    ],
+    "chatMessages": [
+      { "text": "Hi Lisa, this is a friendly reminder from FinanceHub regarding your overdue balance of $1,240.00. We'd like to help you find a solution. Would you like to chat about your options?", "sent": true, "delay": 0 },
+      { "text": "I know I'm behind. Things have been tight lately. I just can't pay the full amount right now.", "sent": false, "delay": 0.3 },
+      { "text": "I completely understand, and we're here to work with you. I can offer you 3 installments of $430 with no additional interest, or a single payment of $990 with a 20% discount. Which works better?", "sent": true, "delay": 0.8 },
+      { "text": "The 3 installments option sounds doable. When would the first one be due?", "sent": false, "delay": 1.2 },
+      { "text": "First installment would be on March 10th. I'm generating the agreement now.", "sent": true, "delay": 1.8 },
+      { "text": "Here's your payment link for the first installment: pay.financehub.com/s/lk82. You'll receive the next two automatically. Thank you for working this out with us, Lisa!", "sent": true, "delay": 2.3 }
     ]
   },
   "creditOrigination": {
@@ -313,6 +393,14 @@
       "Regulatory cost calculation",
       "Decision engine",
       "Notifies result"
+    ],
+    "chatMessages": [
+      { "text": "I'd like to apply for a personal loan of $15,000. How do I get started?", "sent": false, "delay": 0 },
+      { "text": "Great, I can help you with that right here! First, I'll need a photo of your government-issued ID (front and back). You can send it as an image.", "sent": true, "delay": 0.3 },
+      { "text": "Here you go. [Photo attached]", "sent": false, "delay": 0.8 },
+      { "text": "ID verified successfully! Now I need your last 2 pay stubs or proof of income. You can take a photo or send a PDF.", "sent": true, "delay": 1.2 },
+      { "text": "[Document attached] Here are my last two pay stubs.", "sent": false, "delay": 1.8 },
+      { "text": "All documents validated! Based on your profile, you're pre-approved for $15,000 at 1.2% monthly rate, 24 installments of $742. The contract is ready for your digital signature. Shall I send it?", "sent": true, "delay": 2.3 }
     ]
   },
   "creditSimulation": {
@@ -334,11 +422,19 @@
       "Generates formatted proposal",
       "Sends proposal",
       "Registers lead"
+    ],
+    "chatMessages": [
+      { "text": "I want to see how much a $20,000 loan would cost per month.", "sent": false, "delay": 0 },
+      { "text": "Sure! Let me run a few scenarios for you. How many months would you like to pay it off -- 12, 24, or 36?", "sent": true, "delay": 0.3 },
+      { "text": "Show me 24 and 36 months please.", "sent": false, "delay": 0.8 },
+      { "text": "Here are your options:\n- 24 months: $945/mo (rate: 1.1%)\n- 36 months: $685/mo (rate: 1.2%)\nBoth include insurance coverage at no extra cost.", "sent": true, "delay": 1.2 },
+      { "text": "The 36-month option looks good. Can I apply now?", "sent": false, "delay": 1.8 },
+      { "text": "Absolutely! I'm saving your simulation and starting the application process. I just need your full name and ID number to get started. You'll have a decision in under 15 minutes!", "sent": true, "delay": 2.3 }
     ]
   },
   "debtRenegotiation": {
     "name": "Debt Renegotiation",
-    "description": "AI agent negotiates debts with empathy. Generates payment slip, sends payment link and records agreement — humanized at scale.",
+    "description": "AI agent negotiates debts with empathy. Generates payment slip, sends payment link and records agreement -- humanized at scale.",
     "before": [
       { "metric": "Recovery rate", "value": "15%" },
       { "metric": "Cost per contact", "value": "R$ 12" },
@@ -355,6 +451,14 @@
       "Agent negotiates",
       "Awaits response",
       "Sends payment link"
+    ],
+    "chatMessages": [
+      { "text": "I received a message about an overdue balance. I want to sort this out but I really can't pay the full $3,500.", "sent": false, "delay": 0 },
+      { "text": "Thank you for reaching out -- that's already a great first step! Let me see what options I can put together for you. What monthly payment amount would be comfortable?", "sent": true, "delay": 0.3 },
+      { "text": "Honestly, around $300/month is the max I can handle right now.", "sent": false, "delay": 0.8 },
+      { "text": "I can work with that! Here's what I can offer:\n- Option A: $300/mo for 10 months (15% discount = $2,975 total)\n- Option B: One-time payment of $2,450 (30% discount)\nWhich do you prefer?", "sent": true, "delay": 1.2 },
+      { "text": "Option A please. $300/month works for my budget.", "sent": false, "delay": 1.8 },
+      { "text": "Deal confirmed! First payment due on March 1st. Here's your payment link: pay.example.com/rn/4829. You'll receive automatic reminders before each due date. Thank you for settling this -- you're all set!", "sent": true, "delay": 2.3 }
     ]
   },
   "openFinanceCredit": {
@@ -376,6 +480,14 @@
       "Analyzes history",
       "Personalized scoring",
       "Notifies result"
+    ],
+    "chatMessages": [
+      { "text": "I'd like to get a credit offer. I heard you can give better rates if I share my bank data?", "sent": false, "delay": 0 },
+      { "text": "Exactly! Through Open Finance, we can access your real financial history (with your permission) and offer personalized rates. To start, I need your consent. Here's the secure authorization link:", "sent": true, "delay": 0.3 },
+      { "text": "Done, I just authorized it.", "sent": false, "delay": 0.8 },
+      { "text": "Your data is being analyzed... Based on your income history, spending patterns, and excellent payment record across 3 institutions, you qualify for our best tier!", "sent": true, "delay": 1.2 },
+      { "text": "That's great! What rate can you offer?", "sent": false, "delay": 1.8 },
+      { "text": "Your personalized rate is 0.89%/month -- 40% lower than our standard rate. For a $10,000 loan over 24 months, that's $462/mo. Want me to start the application?", "sent": true, "delay": 2.3 }
     ]
   },
   "insuranceQuote": {
@@ -397,6 +509,14 @@
       "Calculates premium",
       "Sends quote",
       "Registers lead"
+    ],
+    "chatMessages": [
+      { "text": "Hi, I need auto insurance for my 2023 Honda Civic. Can you give me a quote?", "sent": false, "delay": 0 },
+      { "text": "Of course! Let me get you a quick quote. A few details: What's your zip code, and approximately how many miles do you drive per year?", "sent": true, "delay": 0.3 },
+      { "text": "Zip 10001, about 12,000 miles a year. Clean driving record.", "sent": false, "delay": 0.8 },
+      { "text": "Excellent! With your clean record and low mileage, here's your quote:\n- Basic coverage: $89/mo\n- Full coverage: $142/mo\n- Premium (includes roadside + rental): $168/mo", "sent": true, "delay": 1.2 },
+      { "text": "The full coverage sounds right. Can I sign up now?", "sent": false, "delay": 1.8 },
+      { "text": "Absolutely! I'm generating your policy right now. I just need your driver's license number and preferred payment method. Coverage starts tomorrow at 12:01 AM!", "sent": true, "delay": 2.3 }
     ]
   },
   "kycOnboarding": {
@@ -419,6 +539,14 @@
       "Sensitive data protection",
       "Registers customer",
       "Welcome message"
+    ],
+    "chatMessages": [
+      { "text": "I want to open an account. What do I need?", "sent": false, "delay": 0 },
+      { "text": "Welcome! The process takes about 5 minutes, all right here. First, please send a photo of the front of your government-issued ID.", "sent": true, "delay": 0.3 },
+      { "text": "[Photo attached] Here's the front.", "sent": false, "delay": 0.8 },
+      { "text": "ID captured and verified! Name and date of birth extracted. Now I need a quick selfie for facial verification -- please look directly at the camera.", "sent": true, "delay": 1.2 },
+      { "text": "[Selfie attached]", "sent": false, "delay": 1.8 },
+      { "text": "Face match confirmed (99.2% confidence). Your identity is verified! Your account is now active. Welcome aboard! Here's your account number: 4820-1. You can start using all features right away.", "sent": true, "delay": 2.3 }
     ]
   },
   "digitalAccount": {
@@ -441,11 +569,19 @@
       "Sensitive data protection",
       "Creates account",
       "Welcome message"
+    ],
+    "chatMessages": [
+      { "text": "I want to open a digital checking account. Is it really all done through WhatsApp?", "sent": false, "delay": 0 },
+      { "text": "Yes, 100% right here! It takes about 8 minutes. Let's start -- please send a clear photo of your driver's license or passport.", "sent": true, "delay": 0.3 },
+      { "text": "[Photo attached] Here's my driver's license.", "sent": false, "delay": 0.8 },
+      { "text": "Document validated! I've extracted your details. Now I need to verify your address -- please send a recent utility bill or bank statement.", "sent": true, "delay": 1.2 },
+      { "text": "[Document attached] Here's my electric bill from last month.", "sent": false, "delay": 1.8 },
+      { "text": "Address confirmed! Your digital account is now active:\n- Account: 7391-2\n- Agency: 0001\n- Your virtual debit card is ready in the app.\nWelcome! You can make transfers, pay bills, and invest starting now.", "sent": true, "delay": 2.3 }
     ]
   },
   "userOnboarding": {
     "name": "SaaS User Onboarding",
-    "description": "Guide new users through the product via WhatsApp. Tutorials, questions and feedback — all conversational.",
+    "description": "Guide new users through the product via WhatsApp. Tutorials, questions and feedback -- all conversational.",
     "before": [
       { "metric": "Activation", "value": "25%" },
       { "metric": "1st month churn", "value": "40%" },
@@ -462,6 +598,14 @@
       "Sends personalized tutorial",
       "Answers questions",
       "Collects feedback"
+    ],
+    "chatMessages": [
+      { "text": "Welcome to TaskFlow, Emma! I'm your setup assistant. Ready to get started with a quick 3-step setup?", "sent": true, "delay": 0 },
+      { "text": "Sure, let's do it!", "sent": false, "delay": 0.3 },
+      { "text": "Step 1: Create your first project. Go to Dashboard > New Project and give it a name. Let me know when you're done!", "sent": true, "delay": 0.8 },
+      { "text": "Done! I created 'Q1 Marketing Plan'.", "sent": false, "delay": 1.2 },
+      { "text": "Awesome! Step 2: Invite your team. Go to Settings > Team Members and add their emails. You can start with 2-3 people. This is where the magic happens!", "sent": true, "delay": 1.8 },
+      { "text": "Added 3 teammates. This is way simpler than I expected! What's step 3?", "sent": false, "delay": 2.3 }
     ]
   },
   "enrollment": {
@@ -483,6 +627,14 @@
       "Registers student",
       "Enrollment link",
       "Sends proposal"
+    ],
+    "chatMessages": [
+      { "text": "Hi, I'm interested in data science courses. What programs do you offer?", "sent": false, "delay": 0 },
+      { "text": "Great choice! We have 3 data science programs:\n1. Data Analytics Fundamentals (3 months) - $299\n2. Data Science Bootcamp (6 months) - $799\n3. Machine Learning Specialization (4 months) - $599\nWhich level matches your experience?", "sent": true, "delay": 0.3 },
+      { "text": "I have some Python experience. The Bootcamp sounds interesting. When does it start?", "sent": false, "delay": 0.8 },
+      { "text": "Perfect fit! The next cohort starts March 15th with 20 spots remaining. Classes are Tue/Thu evenings + Saturday mornings. Want to secure your spot?", "sent": true, "delay": 1.2 },
+      { "text": "Yes, how do I enroll?", "sent": false, "delay": 1.8 },
+      { "text": "I just need your full name and email to reserve your spot. Here's the enrollment link with an early-bird 10% discount (valid for 48h): enroll.academy.com/ds-bootcamp. Welcome to the cohort!", "sent": true, "delay": 2.3 }
     ]
   },
   "campaigns": {
@@ -504,6 +656,14 @@
       "Sends campaign",
       "Awaits interaction",
       "Records engagement"
+    ],
+    "chatMessages": [
+      { "text": "Hey David! Based on your recent purchase of running shoes, we thought you'd love our new moisture-wicking sports socks -- 25% off this week only!", "sent": true, "delay": 0 },
+      { "text": "Oh nice, I was actually looking for good running socks! What colors do you have?", "sent": false, "delay": 0.3 },
+      { "text": "We have Black, Navy, and Neon Green in your size (10). The 3-pack is $18.75 instead of $25. Free shipping on orders over $15!", "sent": true, "delay": 0.8 },
+      { "text": "I'll take the 3-pack. How do I order?", "sent": false, "delay": 1.2 },
+      { "text": "Here's your personalized checkout link with the discount already applied: shop.example.com/d/4k92. Your socks will arrive in 2-3 business days!", "sent": true, "delay": 1.8 },
+      { "text": "Just ordered. Thanks for the recommendation, spot on!", "sent": false, "delay": 2.3 }
     ]
   },
   "cartRecovery": {
@@ -525,6 +685,14 @@
       "Generates personalized message",
       "Sends reminder",
       "Checkout link"
+    ],
+    "chatMessages": [
+      { "text": "Hi Rachel! You left some great items in your cart -- a leather tote bag and a silk scarf ($175 total). Still thinking about them?", "sent": true, "delay": 0 },
+      { "text": "Yeah, I liked them but the total was a bit more than I planned to spend.", "sent": false, "delay": 0.3 },
+      { "text": "I get that! Here's a special offer just for you: use code COMEBACK15 for 15% off your cart. That brings it down to $148.75 with free shipping!", "sent": true, "delay": 0.8 },
+      { "text": "Ooh that's tempting. Is the leather tote still in stock in brown?", "sent": false, "delay": 1.2 },
+      { "text": "Yes! The brown leather tote is in stock -- only 3 left though. Your cart is saved and the coupon is applied. Here's your checkout link: shop.example.com/cart/r892", "sent": true, "delay": 1.8 },
+      { "text": "Just completed the purchase. Love the discount, thanks!", "sent": false, "delay": 2.3 }
     ]
   },
   "npsFeedback": {
@@ -546,6 +714,14 @@
       "Collects NPS and feedback",
       "Records data",
       "Alerts team (detractors)"
+    ],
+    "chatMessages": [
+      { "text": "Hi Michael! Thanks for using our service today. Quick question: on a scale of 0-10, how likely are you to recommend us to a friend?", "sent": true, "delay": 0 },
+      { "text": "I'd say 9. Really happy with the service.", "sent": false, "delay": 0.3 },
+      { "text": "That's wonderful to hear! What did you like most about your experience?", "sent": true, "delay": 0.8 },
+      { "text": "The speed. I expected to wait days for a response and got help in under a minute.", "sent": false, "delay": 1.2 },
+      { "text": "Thanks for sharing that! Is there anything we could do to make it a perfect 10?", "sent": true, "delay": 1.8 },
+      { "text": "Maybe add video tutorials for the advanced features. That would be really helpful.", "sent": false, "delay": 2.3 }
     ]
   },
   "proactiveRenewal": {
@@ -567,6 +743,14 @@
       "Personalized proposal",
       "Sends reminder",
       "Payment link"
+    ],
+    "chatMessages": [
+      { "text": "Hi Tom! Your home insurance policy expires in 30 days (April 15th). I've prepared a renewal offer with an exclusive 10% loyalty discount. Shall I share the details?", "sent": true, "delay": 0 },
+      { "text": "Oh right, I totally forgot about that. What's the renewal price?", "sent": false, "delay": 0.3 },
+      { "text": "With your loyalty discount, it's $1,080/year instead of $1,200. Same great coverage, and I can also add flood protection for just $8/month more. Interested?", "sent": true, "delay": 0.8 },
+      { "text": "Yes, add the flood protection too. We had a scare last year.", "sent": false, "delay": 1.2 },
+      { "text": "Smart move! Your new total is $1,176/year ($98/month) with flood coverage included. Shall I process the renewal now?", "sent": true, "delay": 1.8 },
+      { "text": "Here's your secure payment link: pay.insure.com/rnw/t482. Once confirmed, your new policy starts seamlessly on April 15th. No coverage gaps!", "sent": true, "delay": 2.3 }
     ]
   },
   "claimNotification": {
@@ -589,6 +773,14 @@
       "Sensitive data protection",
       "Attaches documents",
       "Confirms opening"
+    ],
+    "chatMessages": [
+      { "text": "I just had a car accident in the parking lot. I need to file a claim.", "sent": false, "delay": 0 },
+      { "text": "I'm sorry to hear that! I hope you're okay. Let me help you file the claim right now. First, are you or anyone else injured?", "sent": true, "delay": 0.3 },
+      { "text": "No, everyone is fine. Just damage to my rear bumper.", "sent": false, "delay": 0.8 },
+      { "text": "Glad everyone is safe. Please send me 4 photos: front, back, left side, and a close-up of the damage. Take them from about 3 feet away.", "sent": true, "delay": 1.2 },
+      { "text": "[4 photos attached] Here are all four angles.", "sent": false, "delay": 1.8 },
+      { "text": "Photos analyzed! I've detected rear bumper damage, moderate severity. Your claim #CLM-2847 is now open. An adjuster will contact you within 24 hours. Estimated repair: $1,200-1,800. Your deductible is $500.", "sent": true, "delay": 2.3 }
     ]
   },
   "digitalInspection": {
@@ -611,6 +803,14 @@
       "Classifies condition",
       "Automatic decision",
       "Inspection result"
+    ],
+    "chatMessages": [
+      { "text": "I need to do the vehicle inspection for my new insurance policy.", "sent": false, "delay": 0 },
+      { "text": "No need to visit a shop -- we can do it right here! Park your car in a well-lit area and send me these 7 photos:\n1. Front\n2. Back\n3. Left side\n4. Right side\n5. Dashboard/odometer\n6. VIN plate\n7. Any existing damage", "sent": true, "delay": 0.3 },
+      { "text": "[7 photos attached] Here they all are. There's a small scratch on the left door.", "sent": false, "delay": 0.8 },
+      { "text": "Photos received and being analyzed by AI... All 7 images are clear and valid. Scratch on left door detected and documented.", "sent": true, "delay": 1.2 },
+      { "text": "How long until I get the result?", "sent": false, "delay": 1.8 },
+      { "text": "It's done! Vehicle condition: Good (minor cosmetic wear noted). Inspection APPROVED. Your policy can now be activated. The full inspection report has been sent to your email.", "sent": true, "delay": 2.3 }
     ]
   },
   "digitalMenu": {
@@ -632,6 +832,14 @@
       "Collects items",
       "Calculates total",
       "Sends to kitchen"
+    ],
+    "chatMessages": [
+      { "text": "Hi! I'd like to place a delivery order.", "sent": false, "delay": 0 },
+      { "text": "Welcome! Here's today's menu highlights:\n- Classic Burger: $12.90\n- Margherita Pizza: $15.90\n- Caesar Salad: $9.90\n- Grilled Salmon: $22.90\nWant to see the full menu or ready to order?", "sent": true, "delay": 0.3 },
+      { "text": "I'll have 2 Classic Burgers and 1 Caesar Salad. Can I add extra bacon to the burgers?", "sent": false, "delay": 0.8 },
+      { "text": "Got it! 2x Classic Burger (+bacon, $1.50 each) + 1x Caesar Salad.\nSubtotal: $38.70\nDelivery: $3.00\nTotal: $41.70\nAnything else?", "sent": true, "delay": 1.2 },
+      { "text": "Add a chocolate milkshake. That's it!", "sent": false, "delay": 1.8 },
+      { "text": "Updated total: $48.60 (milkshake $6.90). Order confirmed! Estimated delivery: 35-45 minutes. Pay on delivery or via this link: pay.menu.com/ord/8291. Enjoy your meal!", "sent": true, "delay": 2.3 }
     ]
   },
   "conversationalPix": {
@@ -653,11 +861,19 @@
       "Automatic validation",
       "Executes transfer",
       "Confirms operation"
+    ],
+    "chatMessages": [
+      { "text": "I need to send $250 to my landlord's Pix key.", "sent": false, "delay": 0 },
+      { "text": "Sure! What's the Pix key? It can be an email, phone number, or random key.", "sent": true, "delay": 0.3 },
+      { "text": "It's landlord@realty.com", "sent": false, "delay": 0.8 },
+      { "text": "Found it! Transfer details:\n- To: James Peterson (landlord@realty.com)\n- Amount: $250.00\n- From: Your checking account\nPlease confirm with YES to proceed.", "sent": true, "delay": 1.2 },
+      { "text": "YES", "sent": false, "delay": 1.8 },
+      { "text": "Transfer complete! $250.00 sent to James Peterson. Transaction ID: PIX-8429301. Receipt saved to your transaction history. Anything else?", "sent": true, "delay": 2.3 }
     ]
   },
   "smartScheduling": {
     "name": "Smart Scheduling",
-    "description": "Finds available time slots, schedules meetings and sends automatic reminders — all on WhatsApp.",
+    "description": "Finds available time slots, schedules meetings and sends automatic reminders -- all on WhatsApp.",
     "before": [
       { "metric": "Bookings/day", "value": "15" },
       { "metric": "No-show", "value": "40%" },
@@ -674,6 +890,14 @@
       "Finds available slots",
       "Confirms booking",
       "Sends reminder"
+    ],
+    "chatMessages": [
+      { "text": "I'd like to schedule a consultation with a financial advisor.", "sent": false, "delay": 0 },
+      { "text": "I'd be happy to help! We have availability this week. Do you prefer mornings or afternoons?", "sent": true, "delay": 0.3 },
+      { "text": "Afternoons work best, ideally Wednesday or Thursday.", "sent": false, "delay": 0.8 },
+      { "text": "Here are the available slots:\n- Wed, 2:00 PM - Maria Santos\n- Wed, 4:30 PM - Carlos Lima\n- Thu, 1:00 PM - Maria Santos\n- Thu, 3:00 PM - Carlos Lima\nWhich one works for you?", "sent": true, "delay": 1.2 },
+      { "text": "Wednesday at 2 PM with Maria, please.", "sent": false, "delay": 1.8 },
+      { "text": "Booked! Wed at 2:00 PM with Maria Santos, Office 302. I'll send you a reminder 1 hour before. If you need to reschedule, just message me anytime!", "sent": true, "delay": 2.3 }
     ]
   },
   "healthScheduling": {
@@ -695,11 +919,19 @@
       "Finds time slots",
       "Confirms booking",
       "Automatic reminder"
+    ],
+    "chatMessages": [
+      { "text": "I need to schedule a dermatology appointment. I have a skin rash that's been bothering me.", "sent": false, "delay": 0 },
+      { "text": "I'll help you schedule that. We have two dermatologists available. Do you have insurance, and do you have a preference for doctor?", "sent": true, "delay": 0.3 },
+      { "text": "I have BlueCross insurance. No preference on the doctor.", "sent": false, "delay": 0.8 },
+      { "text": "BlueCross is accepted! Available appointments:\n- Dr. Sarah Chen: Mon 3/3 at 10 AM\n- Dr. Sarah Chen: Wed 3/5 at 2 PM\n- Dr. James Park: Tue 3/4 at 11 AM\nWhich works best?", "sent": true, "delay": 1.2 },
+      { "text": "Tuesday at 11 AM please.", "sent": false, "delay": 1.8 },
+      { "text": "Confirmed! Tue March 4th at 11 AM with Dr. James Park, Room 204. Please bring your insurance card and arrive 10 minutes early. I'll send a reminder the day before. Get well soon!", "sent": true, "delay": 2.3 }
     ]
   },
   "notifications": {
     "name": "Transactional Notifications",
-    "description": "Payment reminders, status updates and alerts — all on WhatsApp with 91% open rate.",
+    "description": "Payment reminders, status updates and alerts -- all on WhatsApp with 91% open rate.",
     "before": [
       { "metric": "Open rate", "value": "20% (email)" },
       { "metric": "Engagement", "value": "Low" },
@@ -716,6 +948,14 @@
       "Sends notification",
       "Responds if needed",
       "Records engagement"
+    ],
+    "chatMessages": [
+      { "text": "Hi Ana! Your payment of $89.90 for order #45210 has been confirmed. Your package ships today!", "sent": true, "delay": 0 },
+      { "text": "Great! When should I expect delivery?", "sent": false, "delay": 0.3 },
+      { "text": "Estimated delivery: Thursday, March 6th between 9 AM - 12 PM. I'll send you the tracking link as soon as it's dispatched.", "sent": true, "delay": 0.8 },
+      { "text": "Perfect, thanks!", "sent": false, "delay": 1.2 },
+      { "text": "Update: Your package is on its way! Tracking: track.delivery.com/pkg/45210. The driver is 3 stops away.", "sent": true, "delay": 1.8 },
+      { "text": "Package delivered! If everything looks good, we'd love a quick review. Enjoy your purchase, Ana!", "sent": true, "delay": 2.3 }
     ]
   }
 }

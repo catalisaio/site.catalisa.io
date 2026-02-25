@@ -1,0 +1,146 @@
+{
+  "hero": {
+    "badge": "APPS & BACKENDS",
+    "heading": "Enterprise infrastructure.",
+    "headingGradient": "Shaped by AI.",
+    "subtitle": "Full backends, APIs and portals — built with enterprise-grade Building Blocks. Banking-level security, market providers and native compliance. Describe what you need, deploy in minutes.",
+    "stats": {
+      "blocks": { "value": "25+", "label": "Enterprise Building Blocks" },
+      "deploy": { "value": "Minutes", "label": "to deploy" },
+      "code": { "value": "Zero", "label": "code" }
+    }
+  },
+  "comparison": {
+    "heading": "Spreadsheet vs Internal Dev vs",
+    "headingGradient": "Catalisa App",
+    "subtitle": "Understand why building with enterprise-grade Building Blocks changes the game.",
+    "yourProduct": "YOUR APP",
+    "callout": "Your app is not a prototype.",
+    "calloutDesc": "It has native banking-level security, complete audit trail, built-in LGPD compliance and certified market providers — from the very first deploy.",
+    "table": {
+      "columns": [
+        { "label": "Spreadsheet" },
+        { "label": "Internal Dev" },
+        { "label": "Catalisa App", "highlighted": true }
+      ],
+      "rows": [
+        { "feature": "Security", "values": ["Non-existent", "Variable", "Native banking-level"] },
+        { "feature": "Time to deliver", "values": ["Fast, fragile", "6-12 months", "Minutes"] },
+        { "feature": "LGPD Compliance", "values": ["No", "Manual", "Built-in"] },
+        { "feature": "Audit Trail", "values": ["No", "If implemented", "Automatic"] },
+        { "feature": "Documented APIs", "values": ["No", "If the dev does it", "Auto-generated"] },
+        { "feature": "Multi-tenant", "values": ["No", "Complex", "Native"] },
+        { "feature": "Market providers", "values": ["None", "Integrate yourself", "Plugged in"] },
+        { "feature": "Scalability", "values": ["Limited", "Depends", "Enterprise-ready"] }
+      ]
+    }
+  },
+  "howAppsWork": {
+    "heading": "How Apps work",
+    "items": [
+      { "title": "Describe what you need", "description": "In natural language, tell us what system you want. AI understands the context and requirements." },
+      { "title": "AI selects enterprise blocks", "description": "AI picks the right Building Blocks — Decision Engine, IAM, Audit Trail, e-signature and more." },
+      { "title": "Configure business rules", "description": "Adjust parameters, limits, approval flows and business-specific rules." },
+      { "title": "Deploy with banking-level security", "description": "Documented APIs, end-to-end encryption, native LGPD compliance and enterprise SLA. Production-ready." }
+    ]
+  },
+  "appTemplates": {
+    "heading": "App Templates",
+    "subtitle": "Ready-made systems to customize and deploy in minutes.",
+    "items": [
+      { "name": "Credit Portal", "category": "Fintech", "description": "Origination, risk analysis and approval with Decision Engine and audit trail.", "blocks": ["Decision Engine", "IAM", "Audit Trail"] },
+      { "name": "KYC System", "category": "Compliance", "description": "Identity validation with OCR, facematch and bureau checks.", "blocks": ["OCR", "Facematch", "Bureau Check"] },
+      { "name": "Customer Portal", "category": "Banking", "description": "Logged area with balance, statement, documents and support.", "blocks": ["IAM", "Ledger", "Notifications"] },
+      { "name": "Collection Engine", "category": "Financial", "description": "Collection rules, invoice generation and automated negotiation.", "blocks": ["Decision Engine", "Payments", "Notifications"] },
+      { "name": "Insurance Backoffice", "category": "Insurance", "description": "Policy management, claims and renewals with integrated workflow.", "blocks": ["Decision Engine", "E-Signature", "Audit Trail"] },
+      { "name": "Onboarding Hub", "category": "Onboarding", "description": "Data collection, document validation and step-by-step approval.", "blocks": ["OCR", "IAM", "Webhooks"] },
+      { "name": "Payments API", "category": "Payments", "description": "Pix, invoice and card with automatic reconciliation and split.", "blocks": ["Payments", "Ledger", "Audit Trail"] },
+      { "name": "Signature System", "category": "Legal", "description": "Digital contracts with electronic signature and legal validity.", "blocks": ["E-Signature", "Storage", "Notifications"] }
+    ]
+  },
+  "buildingBlocks": {
+    "badge": "BUILDING BLOCKS",
+    "heading": "25+ enterprise blocks for your apps",
+    "subtitle": "Each block is production-tested with banking-level security. Combine them to create any system.",
+    "items": [
+      { "name": "IAM / SSO", "description": "Authentication and authorization with SSO, RBAC and MFA", "category": "Security" },
+      { "name": "Decision Engine", "description": "Business rules with complete audit trail", "category": "Logic" },
+      { "name": "Audit Trail", "description": "Immutable record of every action in the system", "category": "Compliance" },
+      { "name": "Ledger", "description": "Accounting ledger with double-entry and reconciliation", "category": "Financial" },
+      { "name": "Payments", "description": "Pix, invoice and card with certified providers", "category": "Financial" },
+      { "name": "E-Signature", "description": "Electronic signature with legal validity", "category": "Legal" },
+      { "name": "OCR / Vision", "description": "Document data extraction with AI", "category": "AI" },
+      { "name": "Facematch", "description": "Facial biometric verification", "category": "Security" },
+      { "name": "Bureau Check", "description": "Credit and data bureau queries", "category": "Data" },
+      { "name": "Open Finance", "description": "Connection with Central Bank regulated Open Finance", "category": "Financial" },
+      { "name": "Notifications", "description": "Email, SMS, push and WhatsApp unified", "category": "Communication" },
+      { "name": "Storage", "description": "Secure storage with encryption", "category": "Infrastructure" },
+      { "name": "Webhooks", "description": "Real-time events for external systems", "category": "Integration" },
+      { "name": "API Gateway", "description": "Rate limiting, auth and automatic versioning", "category": "Infrastructure" },
+      { "name": "LGPD Engine", "description": "Consent, anonymization and data subject rights", "category": "Compliance" },
+      { "name": "Data Masking", "description": "Automatic masking of sensitive data", "category": "Security" },
+      { "name": "Queue / Jobs", "description": "Async processing with retry and DLQ", "category": "Infrastructure" },
+      { "name": "Cache", "description": "Distributed cache for high performance", "category": "Infrastructure" },
+      { "name": "Search", "description": "Full-text search with filters and relevance", "category": "Data" }
+    ]
+  },
+  "realWorldExample": {
+    "heading": "Real example: End-to-end credit system",
+    "steps": [
+      "Customer applies",
+      "Automatic KYC",
+      "Risk analysis",
+      "Approval",
+      "Digital contract",
+      "Disbursement"
+    ]
+  },
+  "synergy": {
+    "badge": "AGENTS + APPS",
+    "heading": "Agents serve. Apps process.",
+    "headingGradient": "Same platform.",
+    "subtitle": "Combine the human interface of AI Agents with the enterprise infrastructure of Apps.",
+    "examples": [
+      {
+        "title": "Credit via WhatsApp",
+        "agent": "Agent collects customer data",
+        "app": "App analyzes risk with Decision Engine",
+        "agentIcon": "FiMessageCircle",
+        "appIcon": "FiBarChart2"
+      },
+      {
+        "title": "Digital KYC",
+        "agent": "Agent guides the verification process",
+        "app": "App validates identity with enterprise providers",
+        "agentIcon": "FiUsers",
+        "appIcon": "FiShield"
+      },
+      {
+        "title": "Customer Portal",
+        "agent": "Agent answers questions in real time",
+        "app": "Portal displays data from secure backend",
+        "agentIcon": "FiCpu",
+        "appIcon": "FiServer"
+      }
+    ],
+    "callout": "Same platform. Same enterprise-grade Building Blocks. Two ways to deliver value."
+  },
+  "capabilities": {
+    "heading": "Native enterprise capabilities",
+    "subtitle": "Not bolt-ons. Every capability is built-in from the ground up in every Catalisa app.",
+    "items": [
+      { "label": "Multi-tenant", "description": "Complete isolation between organizations" },
+      { "label": "Native LGPD", "description": "Consent, anonymization and portability" },
+      { "label": "Audit Trail", "description": "Immutable record of every operation" },
+      { "label": "Auto-documented APIs", "description": "OpenAPI generated automatically" },
+      { "label": "SSO / RBAC", "description": "Unified authentication and granular control" },
+      { "label": "Certified Providers", "description": "Integration with renowned market providers" },
+      { "label": "E2E Encryption", "description": "Data protected in transit and at rest" },
+      { "label": "Enterprise SLA", "description": "Availability, support and 24/7 monitoring" }
+    ]
+  },
+  "pageCTA": {
+    "heading": "Build your enterprise infrastructure with AI",
+    "subtitle": "Talk to our team and see how to build complete systems in minutes, not months."
+  }
+}

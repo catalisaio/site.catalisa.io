@@ -18,7 +18,9 @@
       "Specialized agents that serve, qualify and close on WhatsApp — like a real team.",
       "Each agent has its role, tools and context. 24/7.",
       "Describe what you need. AI assembles the team and activates in minutes.",
-      "Your agents operate your existing tools — CRM, ERP, calendars."
+      "Your agents operate your existing tools — CRM, ERP, calendars.",
+      "Backends, APIs and portals built with enterprise-grade Building Blocks. Native banking-level security, plugged-in market providers.",
+      "Agents serve your customers. Apps process your operations. Everything enterprise-grade, no code."
     ],
     "ctaMeetTeam": "Meet the team",
     "agents": {
@@ -245,27 +247,27 @@
     "industries": [
       {
         "name": "Fintech",
-        "scenario": "Automatic onboarding, KYC, credit analysis and 24/7 support.",
+        "scenario": "Automatic onboarding, KYC, credit analysis, origination Apps and customer portal — all enterprise-grade.",
         "stats": ["85% automation", "12s response", "60% less cost"]
       },
       {
         "name": "Banking",
-        "scenario": "Open Finance, automated Pix, compliance and account holder support.",
+        "scenario": "Open Finance, automated Pix, customer portal Apps, compliance and account holder support.",
         "stats": ["90% automation", "8s response", "70% less cost"]
       },
       {
         "name": "Insurance",
-        "scenario": "Instant quotes, automatic renewals and claims management.",
+        "scenario": "Instant quotes, backoffice Apps, claims management and automatic renewals.",
         "stats": ["78% automation", "15s response", "55% less cost"]
       },
       {
         "name": "Retail",
-        "scenario": "WhatsApp sales, after-sales, tracking and loyalty.",
+        "scenario": "WhatsApp sales, e-commerce Apps, after-sales, tracking and loyalty.",
         "stats": ["82% automation", "10s response", "50% less cost"]
       },
       {
         "name": "Startups",
-        "scenario": "Scale fast with optimized cost. Service, sales and support unified.",
+        "scenario": "Scale fast with enterprise Apps and optimized cost. Service, sales and support unified.",
         "stats": ["88% automation", "6s response", "75% less cost"]
       }
     ],
@@ -513,6 +515,112 @@
       "previdencia": "Pension"
     }
   },
+  "appBuilderShowcase": {
+    "badge": "APPS & BACKENDS",
+    "heading": "Describe what you need.",
+    "headingGradient": "Publish in minutes.",
+    "subtitle": "AI selects enterprise Building Blocks, models the architecture and generates production-ready APIs.",
+    "steps": [
+      {
+        "label": "Describe",
+        "title": "Describe the system",
+        "description": "In natural language, say which backend, API or portal you need. AI understands the context.",
+        "bullets": ["Complete credit system", "Customer portal with SSO", "Payments API with split"]
+      },
+      {
+        "label": "AI Models",
+        "title": "AI selects enterprise blocks",
+        "description": "AI picks the right Building Blocks for your case — each one battle-tested in production with banking-grade security.",
+        "bullets": ["Decision Engine for business rules", "IAM with native SSO and RBAC", "Immutable automatic Audit Trail"]
+      },
+      {
+        "label": "Review",
+        "title": "Configure business rules",
+        "description": "Adjust parameters, limits and approval flows. All via visual interface, no code.",
+        "bullets": ["Configurable approval rules", "Personalized limits and thresholds", "Digital signature flows"]
+      },
+      {
+        "label": "Publish",
+        "title": "Publish with banking-grade security",
+        "description": "Documented APIs, end-to-end encryption and native compliance. Ready for enterprise production.",
+        "bullets": ["Auto-documented APIs (OpenAPI)", "Native E2E encryption", "Compliance and audit trail out of the box"]
+      }
+    ],
+    "stats": [
+      { "value": "25+", "label": "Enterprise Building Blocks" },
+      { "value": "Minutes", "label": "to deploy" },
+      { "value": "Zero", "label": "code required" }
+    ]
+  },
+  "appsInAction": {
+    "badge": "REAL BUILDING",
+    "heading": "From one sentence to",
+    "headingGradient": "enterprise production.",
+    "subtitle": "See how a credit origination system was built in 10 minutes.",
+    "steps": [
+      {
+        "number": "01",
+        "label": "Described",
+        "title": "One sentence, one system",
+        "description": "The user described: 'I need a credit origination system with KYC, risk analysis and digital contract.'",
+        "highlight": "One sentence. No 50-page brief."
+      },
+      {
+        "number": "02",
+        "label": "AI modeled",
+        "title": "7 enterprise Building Blocks selected",
+        "description": "AI identified the required blocks: IAM, KYC/OCR, Bureau Check, Decision Engine, E-Signature, Payments and Audit Trail.",
+        "highlight": "Each block already tested in production with banking-grade security."
+      },
+      {
+        "number": "03",
+        "label": "Generated",
+        "title": "14 production-ready APIs with data models",
+        "description": "The system generated 14 documented endpoints, data models, business rules and approval flows — all configurable.",
+        "highlight": "OpenAPI generated automatically. Zero manual code."
+      },
+      {
+        "number": "04",
+        "label": "In production",
+        "title": "Backend running with enterprise security",
+        "description": "System in production with E2E encryption, native compliance, full audit trail and enterprise SLA. Ready to scale.",
+        "highlight": "10 minutes from zero to deploy. With real banking-grade security."
+      }
+    ],
+    "resultStats": [
+      { "value": "7", "label": "building blocks" },
+      { "value": "14", "label": "APIs generated" },
+      { "value": "10min", "label": "total time" },
+      { "value": "0", "label": "lines of code" }
+    ]
+  },
+  "agentsAndApps": {
+    "badge": "AGENTS + APPS",
+    "heading": "Agents serve.",
+    "headingGradient": "Apps process.",
+    "subtitle": "The same platform delivers human interface via AI Agents and enterprise infrastructure via Apps.",
+    "examples": [
+      {
+        "title": "Credit via WhatsApp",
+        "agent": "Agent collects data and qualifies the customer",
+        "app": "App analyzes risk with Decision Engine and audit trail"
+      },
+      {
+        "title": "Digital KYC",
+        "agent": "Agent guides document submission",
+        "app": "App validates identity with OCR, face match and bureau"
+      },
+      {
+        "title": "Customer Portal",
+        "agent": "Agent answers questions in real time",
+        "app": "Portal displays balance, statements and documents from the secure backend"
+      }
+    ],
+    "callout": {
+      "heading": "Same platform. Same Building Blocks.",
+      "description": "Agents use the human interface. Apps use the enterprise infrastructure. You combine both."
+    }
+  },
   "faq": {
     "heading": "Frequently asked questions",
     "subtitle": "Everything you need to know about Catalisa.",
@@ -584,6 +692,30 @@
       {
         "question": "Do I have control over what the agents do?",
         "answer": "Yes, full control. You define autonomy limits, human escalation rules, tone of voice and which actions each agent can perform. Everything is monitored in real-time on the operations dashboard."
+      },
+      {
+        "question": "What are Catalisa Apps?",
+        "answer": "Apps are complete backends, APIs and portals built with enterprise-grade Building Blocks. Unlike generic low-code tools, each Catalisa app comes with native banking-grade security, approved market providers, audit trail and compliance — all out of the box."
+      },
+      {
+        "question": "What's the difference between AI Agents and Apps?",
+        "answer": "AI Agents are the human interface — they serve customers, qualify leads and resolve issues via WhatsApp. Apps are the enterprise infrastructure — backends, APIs and portals that process operations with banking-grade security. Both use the same Building Blocks and run on the same platform."
+      },
+      {
+        "question": "Can I build a complete credit system?",
+        "answer": "Yes. With enterprise Building Blocks such as Decision Engine, Bureau Check, E-Signature and Audit Trail, you can build a complete credit origination system — from application to disbursement — in minutes, with native banking-grade security."
+      },
+      {
+        "question": "Do I need developers to create Apps?",
+        "answer": "No. AI selects the enterprise Building Blocks, models the architecture and generates APIs automatically. You configure business rules via visual interface. For advanced integrations, we offer API and SDK."
+      },
+      {
+        "question": "Do my Apps generate documented APIs?",
+        "answer": "Yes. Every API is generated with automatic OpenAPI documentation, authentication, rate limiting and versioning. Ready for consumption by other systems, mobile apps or partners."
+      },
+      {
+        "question": "Can I connect an AI Agent to an App I created?",
+        "answer": "Yes. That's the power of the platform. An AI Agent can collect data via WhatsApp and send it to an App that processes with Decision Engine, generates contracts and logs everything in the audit trail — all on the same platform, with the same Building Blocks."
       }
     ]
   }

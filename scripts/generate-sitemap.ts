@@ -16,6 +16,7 @@ const routes: SitemapRoute[] = [
   { ptPath: '/', enPath: '/en', priority: 1.0, changefreq: 'weekly' },
   { ptPath: '/studio', enPath: '/en/studio', priority: 0.9, changefreq: 'weekly' },
   { ptPath: '/ai-agents', enPath: '/en/ai-agents', priority: 0.9, changefreq: 'weekly' },
+  { ptPath: '/apps', enPath: '/en/apps', priority: 0.9, changefreq: 'weekly' },
   { ptPath: '/building-blocks', enPath: '/en/building-blocks', priority: 0.9, changefreq: 'weekly' },
   { ptPath: '/workflows', enPath: '/en/workflows', priority: 0.9, changefreq: 'weekly' },
   { ptPath: '/fintech', enPath: '/en/fintech', priority: 0.8, changefreq: 'monthly' },

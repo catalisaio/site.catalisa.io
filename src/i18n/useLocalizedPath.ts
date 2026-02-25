@@ -26,6 +26,7 @@ const ptToEn: Record<string, string> = {
   '/seguranca': '/en/security',
   '/como-funciona': '/en/how-it-works',
   '/integracoes/whatsapp': '/en/integrations/whatsapp',
+  '/apps': '/en/apps',
   '/playbooks': '/en/playbooks',
 };
 

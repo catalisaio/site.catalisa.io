@@ -55,9 +55,14 @@
     "subtitle": "Tente ajustar os filtros ou buscar por outro termo."
   },
   "stats": {
-    "playbooks": "30+ playbooks",
+    "playbooks": "45+ playbooks",
     "categories": "7 categorias",
     "industries": "10 industrias"
+  },
+  "types": {
+    "all": "Todos",
+    "agent": "Agentes IA",
+    "app": "Apps & Backends"
   },
   "showing": "Mostrando {{count}} de {{total}} playbooks",
   "whyPlaybooks": {
@@ -956,6 +961,415 @@
       { "text": "Quero sim, sempre esqueco haha", "sent": false, "delay": 1.2 },
       { "text": "Lembrete ativado! Voce recebera um aviso 3 dias e 1 dia antes de cada vencimento. Tambem posso enviar o codigo Pix junto pra facilitar. Deseja?", "sent": true, "delay": 1.8 },
       { "text": "Perfeito, manda o Pix junto sim!", "sent": false, "delay": 2.3 }
+    ]
+  },
+  "appOriginacaoCredito": {
+    "name": "Sistema de Originacao de Credito",
+    "description": "Backend completo para originacao de credito com analise de risco automatizada, KYC integrado, assinatura digital e desembolso — tudo com audit trail e compliance LGPD nativos.",
+    "before": [
+      { "metric": "Tempo de aprovacao", "value": "5 dias" },
+      { "metric": "Custo por operacao", "value": "R$ 120" },
+      { "metric": "Taxa de fraude", "value": "3.2%" }
+    ],
+    "after": [
+      { "metric": "Tempo de aprovacao", "value": "12 min" },
+      { "metric": "Custo por operacao", "value": "R$ 8" },
+      { "metric": "Taxa de fraude", "value": "0.1%" }
+    ],
+    "steps": [
+      "Recebe solicitacao via API",
+      "Valida identidade do solicitante",
+      "Consulta bureau de credito",
+      "Analisa risco com Decision Engine",
+      "Gera contrato digital",
+      "Processa desembolso"
+    ],
+    "chatMessages": [
+      { "text": "POST /api/credit/apply\n{\"cpf\": \"123.***.***-00\", \"amount\": 50000}", "sent": false, "delay": 0 },
+      { "text": "200 OK — Solicitacao recebida. Iniciando KYC automatico...", "sent": true, "delay": 0.3 },
+      { "text": "GET /api/credit/abc123/status", "sent": false, "delay": 0.8 },
+      { "text": "200 OK — Status: APPROVED\nScore: 842 | Risco: BAIXO\nContrato gerado: DOC-2024-789", "sent": true, "delay": 1.2 },
+      { "text": "POST /api/contracts/DOC-2024-789/sign", "sent": false, "delay": 1.8 },
+      { "text": "200 OK — Contrato assinado digitalmente.\nDesembolso agendado: R$ 50.000,00\nAudit trail: 12 registros", "sent": true, "delay": 2.3 }
+    ]
+  },
+  "appPortalCliente": {
+    "name": "Portal do Cliente",
+    "description": "Area logada com consulta de saldo, extrato, documentos e suporte — com autenticacao SSO, criptografia e audit trail nativos.",
+    "before": [
+      { "metric": "Chamados no suporte", "value": "800/mes" },
+      { "metric": "Tempo de consulta", "value": "Manual" },
+      { "metric": "Custo de atendimento", "value": "R$ 25/chamado" }
+    ],
+    "after": [
+      { "metric": "Chamados no suporte", "value": "120/mes" },
+      { "metric": "Tempo de consulta", "value": "Instantaneo" },
+      { "metric": "Custo de atendimento", "value": "R$ 0,50" }
+    ],
+    "steps": [
+      "Autentica usuario via SSO",
+      "Consulta saldo em tempo real",
+      "Lista transacoes recentes",
+      "Gera extrato formatado",
+      "Notifica cliente"
+    ],
+    "chatMessages": [
+      { "text": "GET /api/portal/balance\nAuthorization: Bearer eyJ...", "sent": false, "delay": 0 },
+      { "text": "200 OK\n{\"balance\": \"R$ 12.450,00\",\n \"available\": \"R$ 10.200,00\"}", "sent": true, "delay": 0.3 },
+      { "text": "GET /api/portal/transactions?limit=5", "sent": false, "delay": 0.8 },
+      { "text": "200 OK — 5 transacoes retornadas\nUltima: PIX R$ 350,00 (hoje 14:32)\nAudit: acesso registrado", "sent": true, "delay": 1.2 }
+    ]
+  },
+  "appMotorCobranca": {
+    "name": "Motor de Cobranca Automatizado",
+    "description": "Sistema de cobranca com regras de negocio configuráveis, geracao de boletos, notificacoes automaticas e audit trail completo.",
+    "before": [
+      { "metric": "Taxa de recuperacao", "value": "22%" },
+      { "metric": "Custo de cobranca", "value": "R$ 15/acao" },
+      { "metric": "Tempo medio", "value": "30 dias" }
+    ],
+    "after": [
+      { "metric": "Taxa de recuperacao", "value": "68%" },
+      { "metric": "Custo de cobranca", "value": "R$ 0,80" },
+      { "metric": "Tempo medio", "value": "3 dias" }
+    ],
+    "steps": [
+      "Identifica inadimplencia",
+      "Seleciona estrategia de cobranca",
+      "Gera boleto atualizado",
+      "Envia cobranca multicanal",
+      "Registra acao no audit trail"
+    ],
+    "chatMessages": [
+      { "text": "POST /api/collections/trigger\n{\"batch\": \"overdue_30d\", \"strategy\": \"progressive\"}", "sent": false, "delay": 0 },
+      { "text": "200 OK — 342 contas processadas\nBoletos gerados: 342\nNotificacoes enviadas: 342", "sent": true, "delay": 0.3 },
+      { "text": "GET /api/collections/stats/today", "sent": false, "delay": 0.8 },
+      { "text": "200 OK — Recuperados: R$ 89.400\nTaxa: 68%\nAudit trail: 1.026 registros", "sent": true, "delay": 1.2 }
+    ]
+  },
+  "appKycDigital": {
+    "name": "Sistema KYC Digital",
+    "description": "Validacao de identidade completa com OCR, facematch, consulta em bureaus e audit trail — compliance LGPD nativo.",
+    "before": [
+      { "metric": "Tempo de validacao", "value": "2 dias" },
+      { "metric": "Custo por KYC", "value": "R$ 35" },
+      { "metric": "Aprovacao automatica", "value": "0%" }
+    ],
+    "after": [
+      { "metric": "Tempo de validacao", "value": "45 seg" },
+      { "metric": "Custo por KYC", "value": "R$ 3" },
+      { "metric": "Aprovacao automatica", "value": "92%" }
+    ],
+    "steps": [
+      "Recebe documentos via API",
+      "OCR extrai dados automaticamente",
+      "Facematch biometrico",
+      "Consulta bureau de dados",
+      "Registra validacao com audit trail"
+    ],
+    "chatMessages": [
+      { "text": "POST /api/kyc/verify\n{\"document\": \"base64...\", \"selfie\": \"base64...\"}", "sent": false, "delay": 0 },
+      { "text": "200 OK — OCR: CPF extraido, nome validado\nFacematch: 98.7% similaridade\nBureau: sem restricoes", "sent": true, "delay": 0.3 },
+      { "text": "GET /api/kyc/KYC-2024-456/result", "sent": false, "delay": 0.8 },
+      { "text": "200 OK — Status: APPROVED\nScore de confianca: 97.2%\nTempo total: 42 segundos\nAudit trail: 8 registros", "sent": true, "delay": 1.2 }
+    ]
+  },
+  "appBackofficeSeguros": {
+    "name": "Backoffice de Seguros",
+    "description": "Gestao de apolices, sinistros e renovacoes com workflow integrado, assinatura digital e audit trail completo.",
+    "before": [
+      { "metric": "Tempo de sinistro", "value": "15 dias" },
+      { "metric": "Processos manuais", "value": "85%" },
+      { "metric": "Erros operacionais", "value": "12%" }
+    ],
+    "after": [
+      { "metric": "Tempo de sinistro", "value": "48 horas" },
+      { "metric": "Processos manuais", "value": "8%" },
+      { "metric": "Erros operacionais", "value": "0.5%" }
+    ],
+    "steps": [
+      "Registra apolice no sistema",
+      "Avalia sinistro com Decision Engine",
+      "Coleta assinatura digital",
+      "Armazena documentos com seguranca",
+      "Gera trilha de auditoria completa"
+    ],
+    "chatMessages": [
+      { "text": "POST /api/claims/register\n{\"policy\": \"POL-2024-789\", \"type\": \"auto\"}", "sent": false, "delay": 0 },
+      { "text": "200 OK — Sinistro CLM-2024-123 registrado\nDecision Engine: cobertura confirmada\nValor estimado: R$ 8.500", "sent": true, "delay": 0.3 },
+      { "text": "POST /api/claims/CLM-2024-123/approve", "sent": false, "delay": 0.8 },
+      { "text": "200 OK — Aprovado e assinado digitalmente\nPagamento agendado: R$ 8.500\nAudit trail: 15 registros", "sent": true, "delay": 1.2 }
+    ]
+  },
+  "appHubOnboarding": {
+    "name": "Hub de Onboarding Digital",
+    "description": "Coleta de dados, validacao documental e aprovacao em etapas com integracao a sistemas internos e audit trail.",
+    "before": [
+      { "metric": "Tempo de onboarding", "value": "7 dias" },
+      { "metric": "Desistencia", "value": "45%" },
+      { "metric": "Retrabalho", "value": "30%" }
+    ],
+    "after": [
+      { "metric": "Tempo de onboarding", "value": "15 min" },
+      { "metric": "Desistencia", "value": "8%" },
+      { "metric": "Retrabalho", "value": "2%" }
+    ],
+    "steps": [
+      "Inicia cadastro via API",
+      "Valida documentos com OCR",
+      "Cria credenciais seguras",
+      "Sincroniza com sistemas internos",
+      "Confirma onboarding"
+    ],
+    "chatMessages": [
+      { "text": "POST /api/onboarding/start\n{\"name\": \"Maria Silva\", \"email\": \"maria@...\"}", "sent": false, "delay": 0 },
+      { "text": "200 OK — Onboarding ONB-789 iniciado\nDocumentos pendentes: 2\nLink de upload enviado", "sent": true, "delay": 0.3 },
+      { "text": "GET /api/onboarding/ONB-789/status", "sent": false, "delay": 0.8 },
+      { "text": "200 OK — Status: COMPLETED\nDocs validados: 2/2\nCredenciais criadas\nSistemas sincronizados: 3", "sent": true, "delay": 1.2 }
+    ]
+  },
+  "appApiPagamentos": {
+    "name": "API de Pagamentos Unificada",
+    "description": "Pix, boleto e cartao com conciliacao automatica, split de pagamentos e audit trail — tudo via uma unica API.",
+    "before": [
+      { "metric": "Integrações de pagamento", "value": "3 separadas" },
+      { "metric": "Conciliacao", "value": "Manual" },
+      { "metric": "Tempo de conciliacao", "value": "2 dias" }
+    ],
+    "after": [
+      { "metric": "Integrações de pagamento", "value": "1 API" },
+      { "metric": "Conciliacao", "value": "Automatica" },
+      { "metric": "Tempo de conciliacao", "value": "Tempo real" }
+    ],
+    "steps": [
+      "Recebe pagamento via API",
+      "Processa transacao com provider",
+      "Concilia no razao contabil",
+      "Registra operacao no audit trail",
+      "Retorna confirmacao"
+    ],
+    "chatMessages": [
+      { "text": "POST /api/payments/charge\n{\"method\": \"pix\", \"amount\": 1500}", "sent": false, "delay": 0 },
+      { "text": "200 OK — PIX gerado\nQR Code: disponivel\nExpiracao: 30 min\nSplit: 90% merchant, 10% platform", "sent": true, "delay": 0.3 },
+      { "text": "GET /api/payments/PAY-456/status", "sent": false, "delay": 0.8 },
+      { "text": "200 OK — Status: PAID\nValor: R$ 1.500,00\nConciliado: sim\nAudit trail: 4 registros", "sent": true, "delay": 1.2 }
+    ]
+  },
+  "appAssinaturaDigital": {
+    "name": "Sistema de Assinatura Digital",
+    "description": "Contratos digitais com assinatura eletronica, validade juridica, armazenamento seguro e certificacao automatica.",
+    "before": [
+      { "metric": "Tempo de assinatura", "value": "5 dias" },
+      { "metric": "Contratos perdidos", "value": "15%" },
+      { "metric": "Custo por contrato", "value": "R$ 45" }
+    ],
+    "after": [
+      { "metric": "Tempo de assinatura", "value": "2 min" },
+      { "metric": "Contratos perdidos", "value": "0.5%" },
+      { "metric": "Custo por contrato", "value": "R$ 3" }
+    ],
+    "steps": [
+      "Cria contrato via API",
+      "Valida signatarios",
+      "Coleta assinaturas eletronicas",
+      "Armazena documento certificado",
+      "Certifica processo completo"
+    ],
+    "chatMessages": [
+      { "text": "POST /api/signatures/create\n{\"template\": \"loan_agreement\", \"signers\": 2}", "sent": false, "delay": 0 },
+      { "text": "200 OK — Contrato SIG-2024-321 criado\nSignatarios notificados: 2\nLink de assinatura enviado", "sent": true, "delay": 0.3 },
+      { "text": "GET /api/signatures/SIG-2024-321/status", "sent": false, "delay": 0.8 },
+      { "text": "200 OK — Status: SIGNED\nAssinaturas: 2/2 completas\nCertificado ICP-Brasil gerado\nAudit trail: 6 registros", "sent": true, "delay": 1.2 }
+    ]
+  },
+  "appOpenFinance": {
+    "name": "Hub Open Finance",
+    "description": "Conexao com Open Finance regulado pelo Bacen, analise de perfil financeiro e compliance LGPD nativo.",
+    "before": [
+      { "metric": "Fontes de dados", "value": "1 bureau" },
+      { "metric": "Tempo de analise", "value": "3 dias" },
+      { "metric": "Precisao do score", "value": "72%" }
+    ],
+    "after": [
+      { "metric": "Fontes de dados", "value": "5+ bancos" },
+      { "metric": "Tempo de analise", "value": "30 seg" },
+      { "metric": "Precisao do score", "value": "94%" }
+    ],
+    "steps": [
+      "Autentica via banco do cliente",
+      "Obtem dados Open Finance",
+      "Analisa perfil financeiro",
+      "Registra consentimento LGPD",
+      "Retorna analise completa"
+    ],
+    "chatMessages": [
+      { "text": "POST /api/openfinance/consent\n{\"cpf\": \"123.***.***-00\", \"banks\": [\"itau\", \"bb\"]}", "sent": false, "delay": 0 },
+      { "text": "200 OK — Consentimento registrado\nDados obtidos: 2 bancos\nTransacoes analisadas: 847", "sent": true, "delay": 0.3 },
+      { "text": "GET /api/openfinance/profile/abc123", "sent": false, "delay": 0.8 },
+      { "text": "200 OK — Score enriquecido: 94.2%\nRenda estimada: R$ 12.000\nComprometimento: 28%\nLGPD: consentimento ativo", "sent": true, "delay": 1.2 }
+    ]
+  },
+  "appGestaoSinistros": {
+    "name": "Gestao de Sinistros Digital",
+    "description": "Registro, analise e resolucao de sinistros com OCR, Decision Engine e notificacoes automaticas.",
+    "before": [
+      { "metric": "Tempo de resolucao", "value": "20 dias" },
+      { "metric": "Documentos extraviados", "value": "8%" },
+      { "metric": "Satisfacao cliente", "value": "3.2/5" }
+    ],
+    "after": [
+      { "metric": "Tempo de resolucao", "value": "3 dias" },
+      { "metric": "Documentos extraviados", "value": "0%" },
+      { "metric": "Satisfacao cliente", "value": "4.7/5" }
+    ],
+    "steps": [
+      "Registra sinistro via API",
+      "Analisa documentos com OCR",
+      "Avalia cobertura com Decision Engine",
+      "Notifica todas as partes",
+      "Fecha processo com audit trail"
+    ],
+    "chatMessages": [
+      { "text": "POST /api/claims/submit\n{\"policy\": \"POL-123\", \"type\": \"theft\", \"docs\": [...]}", "sent": false, "delay": 0 },
+      { "text": "200 OK — Sinistro SIN-2024-567 registrado\nOCR: 3 documentos processados\nDecision Engine: cobertura confirmada", "sent": true, "delay": 0.3 },
+      { "text": "GET /api/claims/SIN-2024-567/timeline", "sent": false, "delay": 0.8 },
+      { "text": "200 OK — Resolucao em 72h\nIndenizacao: R$ 15.000\nPartes notificadas: 4\nAudit trail: 22 registros", "sent": true, "delay": 1.2 }
+    ]
+  },
+  "appMotorDecisao": {
+    "name": "Motor de Decisao Enterprise",
+    "description": "Engine de regras de negocio configuravel para credito, risco, pricing e compliance — com audit trail nativo.",
+    "before": [
+      { "metric": "Regras no codigo", "value": "200+" },
+      { "metric": "Tempo de mudanca", "value": "2 semanas" },
+      { "metric": "Rastreabilidade", "value": "Nenhuma" }
+    ],
+    "after": [
+      { "metric": "Regras configuradas", "value": "200+" },
+      { "metric": "Tempo de mudanca", "value": "5 min" },
+      { "metric": "Rastreabilidade", "value": "100%" }
+    ],
+    "steps": [
+      "Recebe requisicao de decisao",
+      "Carrega regras configuradas",
+      "Executa politicas de negocio",
+      "Registra decisao no audit trail",
+      "Retorna resultado"
+    ],
+    "chatMessages": [
+      { "text": "POST /api/decisions/evaluate\n{\"policy\": \"credit_approval\", \"data\": {...}}", "sent": false, "delay": 0 },
+      { "text": "200 OK — Decisao: APPROVED\nRegras avaliadas: 47\nTempo: 120ms\nScore: 842", "sent": true, "delay": 0.3 },
+      { "text": "GET /api/decisions/audit/DEC-789", "sent": false, "delay": 0.8 },
+      { "text": "200 OK — Audit trail completo\nRegras ativadas: 12\nDados considerados: 23 variaveis\nResponsavel: policy_v3.2", "sent": true, "delay": 1.2 }
+    ]
+  },
+  "appPortalParceiros": {
+    "name": "Portal de Parceiros",
+    "description": "Area logada para parceiros com dashboard, metricas, relatorios e sincronizacao de dados — com SSO e RBAC.",
+    "before": [
+      { "metric": "Relatorios manuais", "value": "20h/mes" },
+      { "metric": "Atraso de dados", "value": "3 dias" },
+      { "metric": "Parceiros ativos", "value": "Limitado" }
+    ],
+    "after": [
+      { "metric": "Relatorios manuais", "value": "0h" },
+      { "metric": "Atraso de dados", "value": "Tempo real" },
+      { "metric": "Parceiros ativos", "value": "Ilimitado" }
+    ],
+    "steps": [
+      "Autentica parceiro via SSO",
+      "Exibe dashboard de metricas",
+      "Sincroniza dados em tempo real",
+      "Gera relatorios automaticos",
+      "Registra acessos no audit trail"
+    ],
+    "chatMessages": [
+      { "text": "GET /api/partners/dashboard\nAuthorization: Bearer eyJ...", "sent": false, "delay": 0 },
+      { "text": "200 OK — Parceiro: TechCorp\nVendas do mes: R$ 245.000\nComissao: R$ 12.250\nClientes ativos: 89", "sent": true, "delay": 0.3 },
+      { "text": "GET /api/partners/reports/monthly", "sent": false, "delay": 0.8 },
+      { "text": "200 OK — Relatorio gerado\n12 paginas | PDF disponivel\nAudit: acesso registrado", "sent": true, "delay": 1.2 }
+    ]
+  },
+  "appComplianceLgpd": {
+    "name": "Compliance LGPD Automatizado",
+    "description": "Gestao de dados pessoais, consentimento, anonimizacao e atendimento a direitos do titular — tudo automatizado.",
+    "before": [
+      { "metric": "Solicitacoes manuais", "value": "100%" },
+      { "metric": "Tempo de resposta", "value": "15 dias" },
+      { "metric": "Risco de multa", "value": "Alto" }
+    ],
+    "after": [
+      { "metric": "Solicitacoes manuais", "value": "5%" },
+      { "metric": "Tempo de resposta", "value": "24h" },
+      { "metric": "Risco de multa", "value": "Minimo" }
+    ],
+    "steps": [
+      "Recebe solicitacao do titular",
+      "Localiza dados pessoais",
+      "Aplica politica LGPD",
+      "Mascara dados sensiveis",
+      "Registra atendimento"
+    ],
+    "chatMessages": [
+      { "text": "POST /api/lgpd/request\n{\"type\": \"data_export\", \"cpf\": \"123.***.***-00\"}", "sent": false, "delay": 0 },
+      { "text": "200 OK — Solicitacao LGPD-2024-456\nTipo: Exportacao de dados\nDados localizados em 4 sistemas", "sent": true, "delay": 0.3 },
+      { "text": "GET /api/lgpd/LGPD-2024-456/status", "sent": false, "delay": 0.8 },
+      { "text": "200 OK — Status: COMPLETED\nDados exportados: 4 fontes\nMascaramento aplicado: sim\nAudit trail: 9 registros", "sent": true, "delay": 1.2 }
+    ]
+  },
+  "appConciliacaoFinanceira": {
+    "name": "Conciliacao Financeira Automatica",
+    "description": "Importacao, comparacao e conciliacao de transacoes financeiras com razao contabil e audit trail.",
+    "before": [
+      { "metric": "Conciliacao manual", "value": "3 dias" },
+      { "metric": "Erros identificados", "value": "12%" },
+      { "metric": "Custo operacional", "value": "R$ 8.000/mes" }
+    ],
+    "after": [
+      { "metric": "Conciliacao automatica", "value": "Tempo real" },
+      { "metric": "Erros identificados", "value": "0.1%" },
+      { "metric": "Custo operacional", "value": "R$ 200/mes" }
+    ],
+    "steps": [
+      "Importa transacoes de fontes externas",
+      "Compara com registros internos",
+      "Identifica divergencias",
+      "Marca registros conciliados",
+      "Gera relatorio de conciliacao"
+    ],
+    "chatMessages": [
+      { "text": "POST /api/reconciliation/run\n{\"source\": \"bank_feed\", \"period\": \"2024-01\"}", "sent": false, "delay": 0 },
+      { "text": "200 OK — 2.847 transacoes importadas\nConciliadas: 2.831 (99.4%)\nDivergencias: 16", "sent": true, "delay": 0.3 },
+      { "text": "GET /api/reconciliation/report/latest", "sent": false, "delay": 0.8 },
+      { "text": "200 OK — Relatorio gerado\nTotal conciliado: R$ 4.2M\nPendentes: R$ 12.400\nAudit trail: 5.694 registros", "sent": true, "delay": 1.2 }
+    ]
+  },
+  "appMarketplaceCredito": {
+    "name": "Marketplace de Credito",
+    "description": "Plataforma de comparacao de ofertas de credito com bureau, scoring, contrato digital e desembolso integrado.",
+    "before": [
+      { "metric": "Ofertas comparadas", "value": "1-2" },
+      { "metric": "Tempo de contratacao", "value": "7 dias" },
+      { "metric": "Conversao", "value": "8%" }
+    ],
+    "after": [
+      { "metric": "Ofertas comparadas", "value": "10+" },
+      { "metric": "Tempo de contratacao", "value": "15 min" },
+      { "metric": "Conversao", "value": "34%" }
+    ],
+    "steps": [
+      "Cliente solicita via API",
+      "Consulta bureau de credito",
+      "Compara ofertas de parceiros",
+      "Gera contrato digital",
+      "Processa desembolso via parceiro",
+      "Registra trilha de auditoria"
+    ],
+    "chatMessages": [
+      { "text": "POST /api/marketplace/apply\n{\"amount\": 25000, \"term\": 36}", "sent": false, "delay": 0 },
+      { "text": "200 OK — Score: 798\n8 ofertas disponiveis\nMelhor taxa: 1.49% a.m.\nParcela: R$ 892", "sent": true, "delay": 0.3 },
+      { "text": "POST /api/marketplace/accept/OFFER-123", "sent": false, "delay": 0.8 },
+      { "text": "200 OK — Oferta aceita\nContrato gerado e assinado\nDesembolso em 24h\nAudit trail: 18 registros", "sent": true, "delay": 1.2 }
     ]
   }
 }

@@ -31,6 +31,7 @@ import howItWorksPtBR from './locales/pt-BR/how-it-works.json';
 import whatsappIntegrationPtBR from './locales/pt-BR/whatsapp-integration.json';
 import playbooksPtBR from './locales/pt-BR/playbooks.json';
 import seoPtBR from './locales/pt-BR/seo.json';
+import appsPtBR from './locales/pt-BR/apps.json';
 
 // Static en-US imports
 import commonEnUS from './locales/en-US/common.json';
@@ -62,13 +63,14 @@ import howItWorksEnUS from './locales/en-US/how-it-works.json';
 import whatsappIntegrationEnUS from './locales/en-US/whatsapp-integration.json';
 import playbooksEnUS from './locales/en-US/playbooks.json';
 import seoEnUS from './locales/en-US/seo.json';
+import appsEnUS from './locales/en-US/apps.json';
 
 export const allNamespaces = [
   'common', 'home', 'studio', 'ai-agents', 'building-blocks', 'workflows',
   'fintech', 'banking', 'insurance', 'retail', 'startups', 'use-cases',
   'contact', 'demo', 'privacy',
   'data-actions', 'data-usecases', 'data-capabilities', 'data-stats', 'data-workflows',
-  'presentation', 'press-kit', 'terms', 'security', 'pricing', 'how-it-works', 'whatsapp-integration', 'playbooks', 'seo',
+  'presentation', 'press-kit', 'terms', 'security', 'pricing', 'how-it-works', 'whatsapp-integration', 'playbooks', 'seo', 'apps',
 ] as const;
 
 export type Namespace = (typeof allNamespaces)[number];
@@ -105,6 +107,7 @@ i18n.use(initReactI18next).init({
       'whatsapp-integration': whatsappIntegrationPtBR,
       playbooks: playbooksPtBR,
       seo: seoPtBR,
+      apps: appsPtBR,
     },
     'en-US': {
       common: commonEnUS,
@@ -136,6 +139,7 @@ i18n.use(initReactI18next).init({
       'whatsapp-integration': whatsappIntegrationEnUS,
       playbooks: playbooksEnUS,
       seo: seoEnUS,
+      apps: appsEnUS,
     },
   },
   lng: 'pt-BR',

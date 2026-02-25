@@ -181,6 +181,10 @@ export const categoryBadges: Record<string, { label: string; color: string }> = 
   Agenda: { label: 'Agenda', color: 'linkedin' },
   Workflow: { label: 'Workflow', color: 'blue' },
   Trigger: { label: 'Trigger', color: 'gray' },
+  API: { label: 'API', color: 'orange' },
+  Decisao: { label: 'Decisao', color: 'purple' },
+  Assinatura: { label: 'Assinatura', color: 'pink' },
+  Auditoria: { label: 'Auditoria', color: 'red' },
 };
 
 export const businessRecipes = [

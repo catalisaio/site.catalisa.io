@@ -8,7 +8,7 @@ import {
   FiArrowLeft, FiMessageCircle, FiArrowRight,
   FiCpu, FiUsers, FiDollarSign, FiShield, FiGlobe,
   FiCalendar, FiFileText, FiDatabase, FiBarChart2, FiGitBranch,
-  FiLayers,
+  FiLayers, FiCode,
 } from 'react-icons/fi';
 import type { IconType } from 'react-icons';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -19,7 +19,10 @@ import { PlaybookCard } from '../components/playbooks/PlaybookCard';
 import { MotionBox } from '../components/motion';
 import { WhatsAppChatPreview } from '../components/shared/WhatsAppChatPreview';
 import type { ChatMessage } from '../components/shared/WhatsAppChatPreview';
+import { APIPreview } from '../components/shared/APIPreview';
+import type { APIMessage } from '../components/shared/APIPreview';
 import { playbooks, categoryMeta, getPlaybookIcon } from '../data/playbooks';
+import type { PlaybookType } from '../data/playbooks';
 import { useLocalizedPath } from '../i18n/useLocalizedPath';
 import { categoryBadges } from '../data/capabilityClusters';
 
@@ -72,9 +75,13 @@ export function PlaybookDetail() {
 
   const related = useMemo(() => {
     if (!playbook) return [];
-    return playbooks
-      .filter((p) => p.id !== playbook.id && p.category === playbook.category)
-      .slice(0, 3);
+    const crossLinked = playbook.relatedPlaybookId
+      ? playbooks.find((p) => p.id === playbook.relatedPlaybookId)
+      : null;
+    const sameCategory = playbooks
+      .filter((p) => p.id !== playbook.id && p.id !== playbook.relatedPlaybookId && p.category === playbook.category)
+      .slice(0, crossLinked ? 2 : 3);
+    return crossLinked ? [crossLinked, ...sameCategory] : sameCategory;
   }, [playbook]);
 
   const blockPositions = useMemo(() => {
@@ -97,6 +104,12 @@ export function PlaybookDetail() {
     if (!chatPrefix) return [];
     const msgs = t(`${chatPrefix}.chatMessages`, { returnObjects: true });
     return Array.isArray(msgs) ? (msgs as ChatMessage[]) : [];
+  }, [chatPrefix, t]);
+
+  const apiMessages = useMemo(() => {
+    if (!chatPrefix) return [];
+    const msgs = t(`${chatPrefix}.chatMessages`, { returnObjects: true });
+    return Array.isArray(msgs) ? (msgs as APIMessage[]) : [];
   }, [chatPrefix, t]);
 
   useEffect(() => {
@@ -125,6 +138,8 @@ export function PlaybookDetail() {
   }
 
   const catMeta = categoryMeta[playbook.category];
+  const playbookType: PlaybookType = playbook.type || 'agent';
+  const isApp = playbookType === 'app';
   const Icon = getPlaybookIcon(playbook.icon);
   const before = playbook.metrics
     ? (t(playbook.metrics.beforeKey, { returnObjects: true }) as { metric: string; value: string }[])
@@ -364,13 +379,21 @@ export function PlaybookDetail() {
                         </Box>
                       )}
                       {heroTab === 2 && (
-                        /* ── WhatsApp chat panel ── */
+                        /* ── Chat / API panel ── */
                         <Box w="full" maxW="380px">
-                          <WhatsAppChatPreview
-                            triggerMode="auto"
-                            title={t(playbook.nameKey)}
-                            messages={chatMessages}
-                          />
+                          {isApp ? (
+                            <APIPreview
+                              triggerMode="auto"
+                              title={t(playbook.nameKey)}
+                              messages={apiMessages}
+                            />
+                          ) : (
+                            <WhatsAppChatPreview
+                              triggerMode="auto"
+                              title={t(playbook.nameKey)}
+                              messages={chatMessages}
+                            />
+                          )}
                         </Box>
                       )}
                     </motion.div>
@@ -382,7 +405,7 @@ export function PlaybookDetail() {
                   {[
                     { id: 'blocks', label: t('detail.blocksUsed'), icon: FiLayers, color: `${catMeta.color}.400` },
                     { id: 'workflow', label: t('detail.workflow'), icon: FiGitBranch, color: `${catMeta.color}.400` },
-                    { id: 'chat', label: 'WhatsApp', icon: FiMessageCircle, color: 'green.400' },
+                    { id: 'chat', label: isApp ? 'API Preview' : 'WhatsApp', icon: isApp ? FiCode : FiMessageCircle, color: isApp ? 'orange.400' : 'green.400' },
                   ].map((tab, i) => {
                     const isActive = i === heroTab;
                     const TabIcon = tab.icon;

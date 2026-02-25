@@ -5,13 +5,16 @@ import {
   FiLock, FiBell, FiShoppingCart, FiStar, FiSend, FiZap, FiMonitor,
   FiTrendingUp, FiSmile, FiActivity, FiFeather, FiCalendar, FiEdit3,
   FiHeart, FiBookOpen, FiCamera, FiCoffee,
+  FiServer, FiGrid, FiKey,
 } from 'react-icons/fi';
 
 export type PlaybookCategory = 'vendas' | 'suporte' | 'financeiro' | 'onboarding' | 'marketing' | 'operacoes' | 'produtividade';
 export type PlaybookIndustry = 'geral' | 'fintech' | 'banking' | 'insurance' | 'retail' | 'saas' | 'saude' | 'educacao' | 'imobiliario' | 'ecommerce';
+export type PlaybookType = 'agent' | 'app';
 
 export interface Playbook {
   id: string;
+  type: PlaybookType;
   icon: string;
   nameKey: string;
   descriptionKey: string;
@@ -24,6 +27,7 @@ export interface Playbook {
     afterKey: string;
   };
   workflowSteps: { category: string; labelKey: string }[];
+  relatedPlaybookId?: string;
 }
 
 const iconMap: Record<string, IconType> = {
@@ -32,6 +36,7 @@ const iconMap: Record<string, IconType> = {
   FiLock, FiBell, FiShoppingCart, FiStar, FiSend, FiZap, FiMonitor,
   FiTrendingUp, FiSmile, FiActivity, FiFeather, FiCalendar, FiEdit3,
   FiHeart, FiBookOpen, FiCamera, FiCoffee,
+  FiServer, FiGrid, FiKey,
 };
 
 export function getPlaybookIcon(key: string): IconType {
@@ -46,6 +51,7 @@ export const playbooks: Playbook[] = [
   // ── Vendas ──────────────────────────────────────────────
   {
     id: 'sdr-automatizado',
+    type: 'agent',
     icon: 'FiTarget',
     nameKey: 'sdr.name',
     descriptionKey: 'sdr.description',
@@ -65,6 +71,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'follow-up-inteligente',
+    type: 'agent',
     icon: 'FiRefreshCw',
     nameKey: 'followup.name',
     descriptionKey: 'followup.description',
@@ -83,6 +90,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'qualificacao-leads',
+    type: 'agent',
     icon: 'FiClipboard',
     nameKey: 'leadQualification.name',
     descriptionKey: 'leadQualification.description',
@@ -100,6 +108,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'atendimento-imobiliario',
+    type: 'agent',
     icon: 'FiHome',
     nameKey: 'realEstate.name',
     descriptionKey: 'realEstate.description',
@@ -119,6 +128,7 @@ export const playbooks: Playbook[] = [
   // ── Suporte ─────────────────────────────────────────────
   {
     id: 'suporte-24-7',
+    type: 'agent',
     icon: 'FiLifeBuoy',
     nameKey: 'support247.name',
     descriptionKey: 'support247.description',
@@ -137,6 +147,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'suporte-tecnico-ia',
+    type: 'agent',
     icon: 'FiTool',
     nameKey: 'techSupport.name',
     descriptionKey: 'techSupport.description',
@@ -154,6 +165,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'pos-venda-ecommerce',
+    type: 'agent',
     icon: 'FiPackage',
     nameKey: 'postSale.name',
     descriptionKey: 'postSale.description',
@@ -172,6 +184,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'atendimento-bancario',
+    type: 'agent',
     icon: 'FiCreditCard',
     nameKey: 'bankingSupport.name',
     descriptionKey: 'bankingSupport.description',
@@ -189,6 +202,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'atendimento-segurado',
+    type: 'agent',
     icon: 'FiShield',
     nameKey: 'insuranceSupport.name',
     descriptionKey: 'insuranceSupport.description',
@@ -208,6 +222,7 @@ export const playbooks: Playbook[] = [
   // ── Financeiro ──────────────────────────────────────────
   {
     id: 'cobranca-inteligente',
+    type: 'agent',
     icon: 'FiDollarSign',
     nameKey: 'collections.name',
     descriptionKey: 'collections.description',
@@ -215,6 +230,7 @@ export const playbooks: Playbook[] = [
     industry: 'fintech',
     blocks: ['AI Agents', 'WhatsApp', 'Financial'],
     featured: true,
+    relatedPlaybookId: 'app-motor-cobranca',
     metrics: { beforeKey: 'collections.before', afterKey: 'collections.after' },
     workflowSteps: [
       { category: 'Logica', labelKey: 'collections.steps.0' },
@@ -227,6 +243,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'originacao-credito',
+    type: 'agent',
     icon: 'FiBarChart2',
     nameKey: 'creditOrigination.name',
     descriptionKey: 'creditOrigination.description',
@@ -234,6 +251,7 @@ export const playbooks: Playbook[] = [
     industry: 'fintech',
     blocks: ['AI Agents', 'WhatsApp', 'Financial', 'Docs', 'Security'],
     featured: true,
+    relatedPlaybookId: 'app-originacao-credito',
     metrics: { beforeKey: 'creditOrigination.before', afterKey: 'creditOrigination.after' },
     workflowSteps: [
       { category: 'IA', labelKey: 'creditOrigination.steps.0' },
@@ -246,6 +264,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'simulacao-credito',
+    type: 'agent',
     icon: 'FiPercent',
     nameKey: 'creditSimulation.name',
     descriptionKey: 'creditSimulation.description',
@@ -263,6 +282,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'renegociacao-dividas',
+    type: 'agent',
     icon: 'FiFileText',
     nameKey: 'debtRenegotiation.name',
     descriptionKey: 'debtRenegotiation.description',
@@ -280,12 +300,14 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'open-finance-credito',
+    type: 'agent',
     icon: 'FiLock',
     nameKey: 'openFinanceCredit.name',
     descriptionKey: 'openFinanceCredit.description',
     category: 'financeiro',
     industry: 'banking',
     blocks: ['AI Agents', 'WhatsApp', 'Financial', 'Security', 'Open Finance'],
+    relatedPlaybookId: 'app-open-finance',
     metrics: { beforeKey: 'openFinanceCredit.before', afterKey: 'openFinanceCredit.after' },
     workflowSteps: [
       { category: 'WhatsApp', labelKey: 'openFinanceCredit.steps.0' },
@@ -297,6 +319,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'cotacao-seguro',
+    type: 'agent',
     icon: 'FiEdit3',
     nameKey: 'insuranceQuote.name',
     descriptionKey: 'insuranceQuote.description',
@@ -316,6 +339,7 @@ export const playbooks: Playbook[] = [
   // ── Onboarding ──────────────────────────────────────────
   {
     id: 'onboarding-kyc',
+    type: 'agent',
     icon: 'FiShield',
     nameKey: 'kycOnboarding.name',
     descriptionKey: 'kycOnboarding.description',
@@ -323,6 +347,7 @@ export const playbooks: Playbook[] = [
     industry: 'fintech',
     blocks: ['AI Agents', 'WhatsApp', 'Docs', 'Security', 'CRM'],
     featured: true,
+    relatedPlaybookId: 'app-kyc-digital',
     metrics: { beforeKey: 'kycOnboarding.before', afterKey: 'kycOnboarding.after' },
     workflowSteps: [
       { category: 'WhatsApp', labelKey: 'kycOnboarding.steps.0' },
@@ -335,6 +360,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'abertura-conta-digital',
+    type: 'agent',
     icon: 'FiCreditCard',
     nameKey: 'digitalAccount.name',
     descriptionKey: 'digitalAccount.description',
@@ -353,6 +379,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'onboarding-usuarios',
+    type: 'agent',
     icon: 'FiSmile',
     nameKey: 'userOnboarding.name',
     descriptionKey: 'userOnboarding.description',
@@ -370,6 +397,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'matricula-educacao',
+    type: 'agent',
     icon: 'FiBookOpen',
     nameKey: 'enrollment.name',
     descriptionKey: 'enrollment.description',
@@ -389,6 +417,7 @@ export const playbooks: Playbook[] = [
   // ── Marketing ───────────────────────────────────────────
   {
     id: 'campanhas-whatsapp',
+    type: 'agent',
     icon: 'FiSend',
     nameKey: 'campaigns.name',
     descriptionKey: 'campaigns.description',
@@ -406,6 +435,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'recuperacao-carrinho',
+    type: 'agent',
     icon: 'FiShoppingCart',
     nameKey: 'cartRecovery.name',
     descriptionKey: 'cartRecovery.description',
@@ -423,6 +453,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'nps-feedback',
+    type: 'agent',
     icon: 'FiActivity',
     nameKey: 'npsFeedback.name',
     descriptionKey: 'npsFeedback.description',
@@ -440,6 +471,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'renovacao-proativa',
+    type: 'agent',
     icon: 'FiBell',
     nameKey: 'proactiveRenewal.name',
     descriptionKey: 'proactiveRenewal.description',
@@ -459,12 +491,14 @@ export const playbooks: Playbook[] = [
   // ── Operacoes ───────────────────────────────────────────
   {
     id: 'sinistro-whatsapp',
+    type: 'agent',
     icon: 'FiFileText',
     nameKey: 'claimNotification.name',
     descriptionKey: 'claimNotification.description',
     category: 'operacoes',
     industry: 'insurance',
     blocks: ['AI Agents', 'WhatsApp', 'Docs', 'Security'],
+    relatedPlaybookId: 'app-gestao-sinistros',
     metrics: { beforeKey: 'claimNotification.before', afterKey: 'claimNotification.after' },
     workflowSteps: [
       { category: 'WhatsApp', labelKey: 'claimNotification.steps.0' },
@@ -477,6 +511,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'vistoria-digital',
+    type: 'agent',
     icon: 'FiCamera',
     nameKey: 'digitalInspection.name',
     descriptionKey: 'digitalInspection.description',
@@ -495,6 +530,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'cardapio-digital',
+    type: 'agent',
     icon: 'FiCoffee',
     nameKey: 'digitalMenu.name',
     descriptionKey: 'digitalMenu.description',
@@ -512,6 +548,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'pix-conversacional',
+    type: 'agent',
     icon: 'FiZap',
     nameKey: 'conversationalPix.name',
     descriptionKey: 'conversationalPix.description',
@@ -531,6 +568,7 @@ export const playbooks: Playbook[] = [
   // ── Produtividade ───────────────────────────────────────
   {
     id: 'agendamento-inteligente',
+    type: 'agent',
     icon: 'FiCalendar',
     nameKey: 'smartScheduling.name',
     descriptionKey: 'smartScheduling.description',
@@ -548,6 +586,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'agendamento-consultas',
+    type: 'agent',
     icon: 'FiHeart',
     nameKey: 'healthScheduling.name',
     descriptionKey: 'healthScheduling.description',
@@ -565,6 +604,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'notificacoes-transacionais',
+    type: 'agent',
     icon: 'FiBell',
     nameKey: 'notifications.name',
     descriptionKey: 'notifications.description',
@@ -578,6 +618,289 @@ export const playbooks: Playbook[] = [
       { category: 'WhatsApp', labelKey: 'notifications.steps.2' },
       { category: 'IA', labelKey: 'notifications.steps.3' },
       { category: 'CRM', labelKey: 'notifications.steps.4' },
+    ],
+  },
+
+  // ── App Playbooks ────────────────────────────────────────
+  {
+    id: 'app-originacao-credito',
+    type: 'app',
+    icon: 'FiBarChart2',
+    nameKey: 'appOriginacaoCredito.name',
+    descriptionKey: 'appOriginacaoCredito.description',
+    category: 'financeiro',
+    industry: 'fintech',
+    blocks: ['Decision Engine', 'IAM', 'Audit Trail', 'Bureau Check', 'E-Signature', 'Payments'],
+    featured: true,
+    metrics: { beforeKey: 'appOriginacaoCredito.before', afterKey: 'appOriginacaoCredito.after' },
+    workflowSteps: [
+      { category: 'API', labelKey: 'appOriginacaoCredito.steps.0' },
+      { category: 'Seguranca', labelKey: 'appOriginacaoCredito.steps.1' },
+      { category: 'Dados', labelKey: 'appOriginacaoCredito.steps.2' },
+      { category: 'Decisao', labelKey: 'appOriginacaoCredito.steps.3' },
+      { category: 'Assinatura', labelKey: 'appOriginacaoCredito.steps.4' },
+      { category: 'Integracao', labelKey: 'appOriginacaoCredito.steps.5' },
+    ],
+    relatedPlaybookId: 'originacao-credito',
+  },
+  {
+    id: 'app-portal-cliente',
+    type: 'app',
+    icon: 'FiServer',
+    nameKey: 'appPortalCliente.name',
+    descriptionKey: 'appPortalCliente.description',
+    category: 'operacoes',
+    industry: 'banking',
+    blocks: ['IAM', 'Ledger', 'Notifications', 'Storage', 'API Gateway'],
+    featured: true,
+    metrics: { beforeKey: 'appPortalCliente.before', afterKey: 'appPortalCliente.after' },
+    workflowSteps: [
+      { category: 'Seguranca', labelKey: 'appPortalCliente.steps.0' },
+      { category: 'API', labelKey: 'appPortalCliente.steps.1' },
+      { category: 'API', labelKey: 'appPortalCliente.steps.2' },
+      { category: 'Dados', labelKey: 'appPortalCliente.steps.3' },
+      { category: 'Integracao', labelKey: 'appPortalCliente.steps.4' },
+    ],
+  },
+  {
+    id: 'app-motor-cobranca',
+    type: 'app',
+    icon: 'FiDollarSign',
+    nameKey: 'appMotorCobranca.name',
+    descriptionKey: 'appMotorCobranca.description',
+    category: 'financeiro',
+    industry: 'fintech',
+    blocks: ['Decision Engine', 'Payments', 'Notifications', 'Audit Trail'],
+    metrics: { beforeKey: 'appMotorCobranca.before', afterKey: 'appMotorCobranca.after' },
+    workflowSteps: [
+      { category: 'Logica', labelKey: 'appMotorCobranca.steps.0' },
+      { category: 'Decisao', labelKey: 'appMotorCobranca.steps.1' },
+      { category: 'Integracao', labelKey: 'appMotorCobranca.steps.2' },
+      { category: 'API', labelKey: 'appMotorCobranca.steps.3' },
+      { category: 'Auditoria', labelKey: 'appMotorCobranca.steps.4' },
+    ],
+    relatedPlaybookId: 'cobranca-inteligente',
+  },
+  {
+    id: 'app-kyc-digital',
+    type: 'app',
+    icon: 'FiShield',
+    nameKey: 'appKycDigital.name',
+    descriptionKey: 'appKycDigital.description',
+    category: 'onboarding',
+    industry: 'fintech',
+    blocks: ['OCR', 'Facematch', 'Bureau Check', 'IAM', 'Audit Trail'],
+    featured: true,
+    metrics: { beforeKey: 'appKycDigital.before', afterKey: 'appKycDigital.after' },
+    workflowSteps: [
+      { category: 'API', labelKey: 'appKycDigital.steps.0' },
+      { category: 'Dados', labelKey: 'appKycDigital.steps.1' },
+      { category: 'Seguranca', labelKey: 'appKycDigital.steps.2' },
+      { category: 'Dados', labelKey: 'appKycDigital.steps.3' },
+      { category: 'Auditoria', labelKey: 'appKycDigital.steps.4' },
+    ],
+    relatedPlaybookId: 'onboarding-kyc',
+  },
+  {
+    id: 'app-backoffice-seguros',
+    type: 'app',
+    icon: 'FiFileText',
+    nameKey: 'appBackofficeSeguros.name',
+    descriptionKey: 'appBackofficeSeguros.description',
+    category: 'operacoes',
+    industry: 'insurance',
+    blocks: ['Decision Engine', 'E-Signature', 'Audit Trail', 'Notifications', 'Storage'],
+    metrics: { beforeKey: 'appBackofficeSeguros.before', afterKey: 'appBackofficeSeguros.after' },
+    workflowSteps: [
+      { category: 'API', labelKey: 'appBackofficeSeguros.steps.0' },
+      { category: 'Decisao', labelKey: 'appBackofficeSeguros.steps.1' },
+      { category: 'Assinatura', labelKey: 'appBackofficeSeguros.steps.2' },
+      { category: 'Dados', labelKey: 'appBackofficeSeguros.steps.3' },
+      { category: 'Auditoria', labelKey: 'appBackofficeSeguros.steps.4' },
+    ],
+  },
+  {
+    id: 'app-hub-onboarding',
+    type: 'app',
+    icon: 'FiGrid',
+    nameKey: 'appHubOnboarding.name',
+    descriptionKey: 'appHubOnboarding.description',
+    category: 'onboarding',
+    industry: 'geral',
+    blocks: ['OCR', 'IAM', 'Webhooks', 'Notifications', 'Audit Trail'],
+    metrics: { beforeKey: 'appHubOnboarding.before', afterKey: 'appHubOnboarding.after' },
+    workflowSteps: [
+      { category: 'API', labelKey: 'appHubOnboarding.steps.0' },
+      { category: 'Dados', labelKey: 'appHubOnboarding.steps.1' },
+      { category: 'Seguranca', labelKey: 'appHubOnboarding.steps.2' },
+      { category: 'Integracao', labelKey: 'appHubOnboarding.steps.3' },
+      { category: 'API', labelKey: 'appHubOnboarding.steps.4' },
+    ],
+  },
+  {
+    id: 'app-api-pagamentos',
+    type: 'app',
+    icon: 'FiCreditCard',
+    nameKey: 'appApiPagamentos.name',
+    descriptionKey: 'appApiPagamentos.description',
+    category: 'financeiro',
+    industry: 'fintech',
+    blocks: ['Payments', 'Ledger', 'Audit Trail', 'API Gateway', 'Webhooks'],
+    metrics: { beforeKey: 'appApiPagamentos.before', afterKey: 'appApiPagamentos.after' },
+    workflowSteps: [
+      { category: 'API', labelKey: 'appApiPagamentos.steps.0' },
+      { category: 'Integracao', labelKey: 'appApiPagamentos.steps.1' },
+      { category: 'Dados', labelKey: 'appApiPagamentos.steps.2' },
+      { category: 'Auditoria', labelKey: 'appApiPagamentos.steps.3' },
+      { category: 'API', labelKey: 'appApiPagamentos.steps.4' },
+    ],
+  },
+  {
+    id: 'app-assinatura-digital',
+    type: 'app',
+    icon: 'FiKey',
+    nameKey: 'appAssinaturaDigital.name',
+    descriptionKey: 'appAssinaturaDigital.description',
+    category: 'operacoes',
+    industry: 'geral',
+    blocks: ['E-Signature', 'Storage', 'Notifications', 'Audit Trail', 'IAM'],
+    metrics: { beforeKey: 'appAssinaturaDigital.before', afterKey: 'appAssinaturaDigital.after' },
+    workflowSteps: [
+      { category: 'API', labelKey: 'appAssinaturaDigital.steps.0' },
+      { category: 'Seguranca', labelKey: 'appAssinaturaDigital.steps.1' },
+      { category: 'Assinatura', labelKey: 'appAssinaturaDigital.steps.2' },
+      { category: 'Dados', labelKey: 'appAssinaturaDigital.steps.3' },
+      { category: 'Auditoria', labelKey: 'appAssinaturaDigital.steps.4' },
+    ],
+  },
+  {
+    id: 'app-open-finance',
+    type: 'app',
+    icon: 'FiLock',
+    nameKey: 'appOpenFinance.name',
+    descriptionKey: 'appOpenFinance.description',
+    category: 'financeiro',
+    industry: 'banking',
+    blocks: ['Open Finance', 'IAM', 'Audit Trail', 'Decision Engine', 'LGPD Engine'],
+    metrics: { beforeKey: 'appOpenFinance.before', afterKey: 'appOpenFinance.after' },
+    workflowSteps: [
+      { category: 'Seguranca', labelKey: 'appOpenFinance.steps.0' },
+      { category: 'Integracao', labelKey: 'appOpenFinance.steps.1' },
+      { category: 'Decisao', labelKey: 'appOpenFinance.steps.2' },
+      { category: 'Auditoria', labelKey: 'appOpenFinance.steps.3' },
+      { category: 'API', labelKey: 'appOpenFinance.steps.4' },
+    ],
+    relatedPlaybookId: 'open-finance-credito',
+  },
+  {
+    id: 'app-gestao-sinistros',
+    type: 'app',
+    icon: 'FiFileText',
+    nameKey: 'appGestaoSinistros.name',
+    descriptionKey: 'appGestaoSinistros.description',
+    category: 'operacoes',
+    industry: 'insurance',
+    blocks: ['Decision Engine', 'OCR', 'Storage', 'Notifications', 'Audit Trail'],
+    metrics: { beforeKey: 'appGestaoSinistros.before', afterKey: 'appGestaoSinistros.after' },
+    workflowSteps: [
+      { category: 'API', labelKey: 'appGestaoSinistros.steps.0' },
+      { category: 'Dados', labelKey: 'appGestaoSinistros.steps.1' },
+      { category: 'Decisao', labelKey: 'appGestaoSinistros.steps.2' },
+      { category: 'Integracao', labelKey: 'appGestaoSinistros.steps.3' },
+      { category: 'Auditoria', labelKey: 'appGestaoSinistros.steps.4' },
+    ],
+    relatedPlaybookId: 'sinistro-whatsapp',
+  },
+  {
+    id: 'app-motor-decisao',
+    type: 'app',
+    icon: 'FiBarChart2',
+    nameKey: 'appMotorDecisao.name',
+    descriptionKey: 'appMotorDecisao.description',
+    category: 'financeiro',
+    industry: 'geral',
+    blocks: ['Decision Engine', 'Audit Trail', 'API Gateway', 'Cache'],
+    featured: true,
+    metrics: { beforeKey: 'appMotorDecisao.before', afterKey: 'appMotorDecisao.after' },
+    workflowSteps: [
+      { category: 'API', labelKey: 'appMotorDecisao.steps.0' },
+      { category: 'Dados', labelKey: 'appMotorDecisao.steps.1' },
+      { category: 'Decisao', labelKey: 'appMotorDecisao.steps.2' },
+      { category: 'Auditoria', labelKey: 'appMotorDecisao.steps.3' },
+      { category: 'API', labelKey: 'appMotorDecisao.steps.4' },
+    ],
+  },
+  {
+    id: 'app-portal-parceiros',
+    type: 'app',
+    icon: 'FiServer',
+    nameKey: 'appPortalParceiros.name',
+    descriptionKey: 'appPortalParceiros.description',
+    category: 'vendas',
+    industry: 'saas',
+    blocks: ['IAM', 'API Gateway', 'Webhooks', 'Notifications', 'Audit Trail'],
+    metrics: { beforeKey: 'appPortalParceiros.before', afterKey: 'appPortalParceiros.after' },
+    workflowSteps: [
+      { category: 'Seguranca', labelKey: 'appPortalParceiros.steps.0' },
+      { category: 'API', labelKey: 'appPortalParceiros.steps.1' },
+      { category: 'Integracao', labelKey: 'appPortalParceiros.steps.2' },
+      { category: 'API', labelKey: 'appPortalParceiros.steps.3' },
+      { category: 'Auditoria', labelKey: 'appPortalParceiros.steps.4' },
+    ],
+  },
+  {
+    id: 'app-compliance-lgpd',
+    type: 'app',
+    icon: 'FiShield',
+    nameKey: 'appComplianceLgpd.name',
+    descriptionKey: 'appComplianceLgpd.description',
+    category: 'operacoes',
+    industry: 'geral',
+    blocks: ['LGPD Engine', 'Audit Trail', 'Data Masking', 'IAM', 'Notifications'],
+    metrics: { beforeKey: 'appComplianceLgpd.before', afterKey: 'appComplianceLgpd.after' },
+    workflowSteps: [
+      { category: 'API', labelKey: 'appComplianceLgpd.steps.0' },
+      { category: 'Dados', labelKey: 'appComplianceLgpd.steps.1' },
+      { category: 'Logica', labelKey: 'appComplianceLgpd.steps.2' },
+      { category: 'Seguranca', labelKey: 'appComplianceLgpd.steps.3' },
+      { category: 'Auditoria', labelKey: 'appComplianceLgpd.steps.4' },
+    ],
+  },
+  {
+    id: 'app-conciliacao-financeira',
+    type: 'app',
+    icon: 'FiDollarSign',
+    nameKey: 'appConciliacaoFinanceira.name',
+    descriptionKey: 'appConciliacaoFinanceira.description',
+    category: 'financeiro',
+    industry: 'banking',
+    blocks: ['Ledger', 'Payments', 'Audit Trail', 'Webhooks', 'Queue'],
+    metrics: { beforeKey: 'appConciliacaoFinanceira.before', afterKey: 'appConciliacaoFinanceira.after' },
+    workflowSteps: [
+      { category: 'Integracao', labelKey: 'appConciliacaoFinanceira.steps.0' },
+      { category: 'Dados', labelKey: 'appConciliacaoFinanceira.steps.1' },
+      { category: 'Logica', labelKey: 'appConciliacaoFinanceira.steps.2' },
+      { category: 'Auditoria', labelKey: 'appConciliacaoFinanceira.steps.3' },
+      { category: 'API', labelKey: 'appConciliacaoFinanceira.steps.4' },
+    ],
+  },
+  {
+    id: 'app-marketplace-credito',
+    type: 'app',
+    icon: 'FiTrendingUp',
+    nameKey: 'appMarketplaceCredito.name',
+    descriptionKey: 'appMarketplaceCredito.description',
+    category: 'vendas',
+    industry: 'fintech',
+    blocks: ['Decision Engine', 'Bureau Check', 'Payments', 'E-Signature', 'Audit Trail', 'IAM'],
+    metrics: { beforeKey: 'appMarketplaceCredito.before', afterKey: 'appMarketplaceCredito.after' },
+    workflowSteps: [
+      { category: 'API', labelKey: 'appMarketplaceCredito.steps.0' },
+      { category: 'Dados', labelKey: 'appMarketplaceCredito.steps.1' },
+      { category: 'Decisao', labelKey: 'appMarketplaceCredito.steps.2' },
+      { category: 'Assinatura', labelKey: 'appMarketplaceCredito.steps.3' },
+      { category: 'Integracao', labelKey: 'appMarketplaceCredito.steps.4' },
+      { category: 'Auditoria', labelKey: 'appMarketplaceCredito.steps.5' },
     ],
   },
 ];

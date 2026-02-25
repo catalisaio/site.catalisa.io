@@ -31,7 +31,7 @@ export function TeamGridVisual() {
       {/* SVG connection lines */}
       <Box
         as="svg"
-        viewBox="0 0 420 340"
+        viewBox="0 0 420 380"
         w="100%"
         h="auto"
         position="absolute"
@@ -72,7 +72,7 @@ export function TeamGridVisual() {
         />
         {/* Support to Onboarding */}
         <MotionPath
-          d="M210,200 L210,270"
+          d="M210,200 L130,290"
           stroke="rgba(255,255,255,0.15)"
           strokeWidth="1.5"
           strokeDasharray="4 4"
@@ -80,12 +80,24 @@ export function TeamGridVisual() {
           {...lineVariant}
           transition={{ delay: 0.7, duration: 0.8 }}
         />
+        {/* Support to Apps */}
+        <MotionPath
+          d="M210,200 L300,290"
+          stroke="rgba(255,255,255,0.15)"
+          strokeWidth="1.5"
+          strokeDasharray="4 4"
+          fill="none"
+          {...lineVariant}
+          transition={{ delay: 0.8, duration: 0.8 }}
+        />
 
         {/* Data packets */}
         {[
           { path: 'M210,70 L100,160', delay: 1.5 },
           { path: 'M210,70 L210,160', delay: 2.0 },
           { path: 'M210,70 L320,160', delay: 2.5 },
+          { path: 'M210,200 L130,290', delay: 3.0 },
+          { path: 'M210,200 L300,290', delay: 3.5 },
         ].map((pkt, i) => (
           <MotionCircle
             key={i}
@@ -106,7 +118,7 @@ export function TeamGridVisual() {
       </Box>
 
       {/* Agent nodes */}
-      <Box position="relative" zIndex={1} h="340px">
+      <Box position="relative" zIndex={1} h="380px">
         {/* WhatsApp - center top */}
         <Box position="absolute" top="10px" left="50%" transform="translateX(-50%)">
           <AgentAvatarCard
@@ -147,13 +159,23 @@ export function TeamGridVisual() {
           />
         </Box>
 
-        {/* Onboarding - center bottom */}
-        <Box position="absolute" bottom="10px" left="50%" transform="translateX(-50%)">
+        {/* Onboarding - bottom left */}
+        <Box position="absolute" bottom="10px" left="60px">
           <AgentAvatarCard
             role="onboarding"
             label={agents.onboarding.label}
             activity={agents.onboarding.activity}
             delay={1.0}
+          />
+        </Box>
+
+        {/* Apps - bottom right */}
+        <Box position="absolute" bottom="10px" right="50px">
+          <AgentAvatarCard
+            role="apps"
+            label={agents.apps.label}
+            activity={agents.apps.activity}
+            delay={1.2}
           />
         </Box>
       </Box>

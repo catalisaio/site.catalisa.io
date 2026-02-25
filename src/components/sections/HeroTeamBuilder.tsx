@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next';
 import { MotionBox } from '../motion';
 import { GradientText } from '../shared/GradientText';
 import { TeamGridVisual } from '../shared/TeamGridVisual';
+import { HeroShowcase, useHeroTabs } from '../shared/HeroShowcase';
 import { BehindTheScenesHint } from '../shared/BehindTheScenesHint';
 import { BehindTheScenesModal, useBehindTheScenes } from '../shared/BehindTheScenesModal';
 
@@ -19,6 +20,12 @@ export function HeroTeamBuilder() {
   const [activeIndex, setActiveIndex] = useState(0);
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
+  // Showcase tabs state
+  const heroTabs = useHeroTabs();
+  const [showcaseIndex, setShowcaseIndex] = useState(0);
+  const [showcasePaused, setShowcasePaused] = useState(false);
+  const showcaseTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
   const goToNext = useCallback(() => {
     setActiveIndex((prev) => (prev + 1) % subtitles.length);
   }, [subtitles.length]);
@@ -30,15 +37,30 @@ export function HeroTeamBuilder() {
     };
   }, [activeIndex, goToNext]);
 
+  // Showcase tab auto-cycling
+  useEffect(() => {
+    if (showcasePaused) return;
+    const dwell = heroTabs[showcaseIndex]?.dwellTime || 7000;
+    showcaseTimerRef.current = setTimeout(() => {
+      setShowcaseIndex((prev) => (prev + 1) % heroTabs.length);
+    }, dwell);
+    return () => {
+      if (showcaseTimerRef.current) clearTimeout(showcaseTimerRef.current);
+    };
+  }, [showcaseIndex, showcasePaused, heroTabs]);
+
+  const handleShowcaseTabChange = useCallback((index: number) => {
+    setShowcaseIndex(index);
+    setShowcasePaused(true);
+    setTimeout(() => setShowcasePaused(false), 3000);
+  }, []);
+
   return (
     <Box
       id="hero"
       position="relative"
-      minH="100vh"
       bg="hero.bg"
       overflow="hidden"
-      display="flex"
-      alignItems="center"
       mt="-64px"
       pt="64px"
     >
@@ -64,12 +86,14 @@ export function HeroTeamBuilder() {
       />
 
       <Container maxW="1280px" position="relative" zIndex={1}>
+        {/* Top row: text + TeamGridVisual */}
         <Flex
           direction={{ base: 'column', lg: 'row' }}
           align="center"
           justify="space-between"
           gap={{ base: 12, lg: 16 }}
-          py={{ base: 12, lg: 0 }}
+          py={{ base: 12, lg: 10 }}
+          minH={{ base: 'auto', lg: '70vh' }}
         >
           {/* Left content */}
           <VStack align="flex-start" spacing={6} maxW="600px" flex={1}>
@@ -201,6 +225,22 @@ export function HeroTeamBuilder() {
             <TeamGridVisual />
           </MotionBox>
         </Flex>
+
+        {/* Bottom row: HeroShowcase tabs */}
+        <MotionBox
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+          display={{ base: 'none', md: 'flex' }}
+          justifyContent="center"
+          pb={12}
+        >
+          <HeroShowcase
+            activeIndex={showcaseIndex}
+            onTabChange={handleShowcaseTabChange}
+            paused={showcasePaused}
+          />
+        </MotionBox>
       </Container>
 
       <BehindTheScenesModal isOpen={behindTheScenes.isOpen} onClose={behindTheScenes.onClose} />

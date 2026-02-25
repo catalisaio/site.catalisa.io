@@ -1,9 +1,18 @@
+import { type IconType } from 'react-icons';
+import {
+  FiTarget, FiRefreshCw, FiClipboard, FiHome, FiLifeBuoy, FiTool, FiPackage,
+  FiCreditCard, FiShield, FiDollarSign, FiBarChart2, FiPercent, FiFileText,
+  FiLock, FiBell, FiShoppingCart, FiStar, FiSend, FiZap, FiMonitor,
+  FiTrendingUp, FiSmile, FiActivity, FiFeather, FiCalendar, FiEdit3,
+  FiHeart, FiBookOpen, FiCamera, FiCoffee,
+} from 'react-icons/fi';
+
 export type PlaybookCategory = 'vendas' | 'suporte' | 'financeiro' | 'onboarding' | 'marketing' | 'operacoes' | 'produtividade';
 export type PlaybookIndustry = 'geral' | 'fintech' | 'banking' | 'insurance' | 'retail' | 'saas' | 'saude' | 'educacao' | 'imobiliario' | 'ecommerce';
 
 export interface Playbook {
   id: string;
-  emoji: string;
+  icon: string;
   nameKey: string;
   descriptionKey: string;
   category: PlaybookCategory;
@@ -17,6 +26,18 @@ export interface Playbook {
   workflowSteps: { category: string; labelKey: string }[];
 }
 
+const iconMap: Record<string, IconType> = {
+  FiTarget, FiRefreshCw, FiClipboard, FiHome, FiLifeBuoy, FiTool, FiPackage,
+  FiCreditCard, FiShield, FiDollarSign, FiBarChart2, FiPercent, FiFileText,
+  FiLock, FiBell, FiShoppingCart, FiStar, FiSend, FiZap, FiMonitor,
+  FiTrendingUp, FiSmile, FiActivity, FiFeather, FiCalendar, FiEdit3,
+  FiHeart, FiBookOpen, FiCamera, FiCoffee,
+};
+
+export function getPlaybookIcon(key: string): IconType {
+  return iconMap[key] || FiZap;
+}
+
 /**
  * 30 templates — each has i18n keys for name/description/metrics.
  * The actual translated strings live in templates.json (pt-BR / en-US).
@@ -25,7 +46,7 @@ export const playbooks: Playbook[] = [
   // ── Vendas ──────────────────────────────────────────────
   {
     id: 'sdr-automatizado',
-    emoji: '🎯',
+    icon: 'FiTarget',
     nameKey: 'sdr.name',
     descriptionKey: 'sdr.description',
     category: 'vendas',
@@ -44,7 +65,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'follow-up-inteligente',
-    emoji: '🔄',
+    icon: 'FiRefreshCw',
     nameKey: 'followup.name',
     descriptionKey: 'followup.description',
     category: 'vendas',
@@ -62,7 +83,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'qualificacao-leads',
-    emoji: '📋',
+    icon: 'FiClipboard',
     nameKey: 'leadQualification.name',
     descriptionKey: 'leadQualification.description',
     category: 'vendas',
@@ -79,7 +100,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'atendimento-imobiliario',
-    emoji: '🏠',
+    icon: 'FiHome',
     nameKey: 'realEstate.name',
     descriptionKey: 'realEstate.description',
     category: 'vendas',
@@ -98,7 +119,7 @@ export const playbooks: Playbook[] = [
   // ── Suporte ─────────────────────────────────────────────
   {
     id: 'suporte-24-7',
-    emoji: '🛟',
+    icon: 'FiLifeBuoy',
     nameKey: 'support247.name',
     descriptionKey: 'support247.description',
     category: 'suporte',
@@ -116,7 +137,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'suporte-tecnico-ia',
-    emoji: '🔧',
+    icon: 'FiTool',
     nameKey: 'techSupport.name',
     descriptionKey: 'techSupport.description',
     category: 'suporte',
@@ -133,7 +154,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'pos-venda-ecommerce',
-    emoji: '📦',
+    icon: 'FiPackage',
     nameKey: 'postSale.name',
     descriptionKey: 'postSale.description',
     category: 'suporte',
@@ -151,7 +172,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'atendimento-bancario',
-    emoji: '🏦',
+    icon: 'FiCreditCard',
     nameKey: 'bankingSupport.name',
     descriptionKey: 'bankingSupport.description',
     category: 'suporte',
@@ -168,7 +189,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'atendimento-segurado',
-    emoji: '🛡️',
+    icon: 'FiShield',
     nameKey: 'insuranceSupport.name',
     descriptionKey: 'insuranceSupport.description',
     category: 'suporte',
@@ -187,7 +208,7 @@ export const playbooks: Playbook[] = [
   // ── Financeiro ──────────────────────────────────────────
   {
     id: 'cobranca-inteligente',
-    emoji: '💰',
+    icon: 'FiDollarSign',
     nameKey: 'collections.name',
     descriptionKey: 'collections.description',
     category: 'financeiro',
@@ -206,7 +227,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'originacao-credito',
-    emoji: '📊',
+    icon: 'FiBarChart2',
     nameKey: 'creditOrigination.name',
     descriptionKey: 'creditOrigination.description',
     category: 'financeiro',
@@ -225,7 +246,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'simulacao-credito',
-    emoji: '🧮',
+    icon: 'FiPercent',
     nameKey: 'creditSimulation.name',
     descriptionKey: 'creditSimulation.description',
     category: 'financeiro',
@@ -242,7 +263,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'renegociacao-dividas',
-    emoji: '🤝',
+    icon: 'FiFileText',
     nameKey: 'debtRenegotiation.name',
     descriptionKey: 'debtRenegotiation.description',
     category: 'financeiro',
@@ -259,7 +280,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'open-finance-credito',
-    emoji: '🔓',
+    icon: 'FiLock',
     nameKey: 'openFinanceCredit.name',
     descriptionKey: 'openFinanceCredit.description',
     category: 'financeiro',
@@ -276,7 +297,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'cotacao-seguro',
-    emoji: '📋',
+    icon: 'FiEdit3',
     nameKey: 'insuranceQuote.name',
     descriptionKey: 'insuranceQuote.description',
     category: 'financeiro',
@@ -295,7 +316,7 @@ export const playbooks: Playbook[] = [
   // ── Onboarding ──────────────────────────────────────────
   {
     id: 'onboarding-kyc',
-    emoji: '🪪',
+    icon: 'FiShield',
     nameKey: 'kycOnboarding.name',
     descriptionKey: 'kycOnboarding.description',
     category: 'onboarding',
@@ -314,7 +335,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'abertura-conta-digital',
-    emoji: '💳',
+    icon: 'FiCreditCard',
     nameKey: 'digitalAccount.name',
     descriptionKey: 'digitalAccount.description',
     category: 'onboarding',
@@ -332,7 +353,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'onboarding-usuarios',
-    emoji: '👋',
+    icon: 'FiSmile',
     nameKey: 'userOnboarding.name',
     descriptionKey: 'userOnboarding.description',
     category: 'onboarding',
@@ -349,7 +370,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'matricula-educacao',
-    emoji: '🎓',
+    icon: 'FiBookOpen',
     nameKey: 'enrollment.name',
     descriptionKey: 'enrollment.description',
     category: 'onboarding',
@@ -368,7 +389,7 @@ export const playbooks: Playbook[] = [
   // ── Marketing ───────────────────────────────────────────
   {
     id: 'campanhas-whatsapp',
-    emoji: '📢',
+    icon: 'FiSend',
     nameKey: 'campaigns.name',
     descriptionKey: 'campaigns.description',
     category: 'marketing',
@@ -385,7 +406,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'recuperacao-carrinho',
-    emoji: '🛒',
+    icon: 'FiShoppingCart',
     nameKey: 'cartRecovery.name',
     descriptionKey: 'cartRecovery.description',
     category: 'marketing',
@@ -402,7 +423,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'nps-feedback',
-    emoji: '⭐',
+    icon: 'FiActivity',
     nameKey: 'npsFeedback.name',
     descriptionKey: 'npsFeedback.description',
     category: 'marketing',
@@ -419,7 +440,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'renovacao-proativa',
-    emoji: '🔔',
+    icon: 'FiBell',
     nameKey: 'proactiveRenewal.name',
     descriptionKey: 'proactiveRenewal.description',
     category: 'marketing',
@@ -438,7 +459,7 @@ export const playbooks: Playbook[] = [
   // ── Operacoes ───────────────────────────────────────────
   {
     id: 'sinistro-whatsapp',
-    emoji: '🚗',
+    icon: 'FiFileText',
     nameKey: 'claimNotification.name',
     descriptionKey: 'claimNotification.description',
     category: 'operacoes',
@@ -456,7 +477,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'vistoria-digital',
-    emoji: '📸',
+    icon: 'FiCamera',
     nameKey: 'digitalInspection.name',
     descriptionKey: 'digitalInspection.description',
     category: 'operacoes',
@@ -474,7 +495,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'cardapio-digital',
-    emoji: '🍔',
+    icon: 'FiCoffee',
     nameKey: 'digitalMenu.name',
     descriptionKey: 'digitalMenu.description',
     category: 'operacoes',
@@ -491,7 +512,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'pix-conversacional',
-    emoji: '⚡',
+    icon: 'FiZap',
     nameKey: 'conversationalPix.name',
     descriptionKey: 'conversationalPix.description',
     category: 'operacoes',
@@ -510,7 +531,7 @@ export const playbooks: Playbook[] = [
   // ── Produtividade ───────────────────────────────────────
   {
     id: 'agendamento-inteligente',
-    emoji: '📅',
+    icon: 'FiCalendar',
     nameKey: 'smartScheduling.name',
     descriptionKey: 'smartScheduling.description',
     category: 'produtividade',
@@ -527,7 +548,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'agendamento-consultas',
-    emoji: '🏥',
+    icon: 'FiHeart',
     nameKey: 'healthScheduling.name',
     descriptionKey: 'healthScheduling.description',
     category: 'produtividade',
@@ -544,7 +565,7 @@ export const playbooks: Playbook[] = [
   },
   {
     id: 'notificacoes-transacionais',
-    emoji: '🔔',
+    icon: 'FiBell',
     nameKey: 'notifications.name',
     descriptionKey: 'notifications.description',
     category: 'produtividade',

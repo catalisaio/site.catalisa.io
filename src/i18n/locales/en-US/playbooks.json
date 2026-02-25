@@ -54,6 +54,27 @@
     "heading": "No playbooks found",
     "subtitle": "Try adjusting the filters or searching for another term."
   },
+  "stats": {
+    "playbooks": "30+ playbooks",
+    "categories": "7 categories",
+    "industries": "10 industries"
+  },
+  "showing": "Showing {{count}} of {{total}} playbooks",
+  "whyPlaybooks": {
+    "heading": "Why use playbooks?",
+    "speed": {
+      "title": "Minutes, not months",
+      "description": "Pick a ready-made playbook and activate in minutes. No development from scratch."
+    },
+    "proven": {
+      "title": "Proven with real customers",
+      "description": "Each playbook was built from real use cases with proven results."
+    },
+    "customizable": {
+      "title": "Adapt to your business",
+      "description": "Customize each step, message and integration for your context."
+    }
+  },
   "bottomCTA": {
     "heading": "Didn't find what you need?",
     "subtitle": "Describe what you need in Studio and AI builds it for you."

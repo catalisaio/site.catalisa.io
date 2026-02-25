@@ -1,10 +1,10 @@
 import { Box, Text, VStack, HStack } from '@chakra-ui/react';
 import { type IconType } from 'react-icons';
-import { FiMessageCircle, FiUsers, FiHeadphones, FiDollarSign, FiUserCheck } from 'react-icons/fi';
+import { FiMessageCircle, FiUsers, FiHeadphones, FiDollarSign, FiUserCheck, FiGrid } from 'react-icons/fi';
 import { MotionBox, nodeReveal } from '../motion';
 import { AnimatedCounter } from './AnimatedCounter';
 
-export type AgentRole = 'whatsapp' | 'sdr' | 'support' | 'finance' | 'onboarding';
+export type AgentRole = 'whatsapp' | 'sdr' | 'support' | 'finance' | 'onboarding' | 'apps';
 
 interface AgentAvatarCardProps {
   role: AgentRole;
@@ -21,6 +21,7 @@ const roleConfig: Record<AgentRole, { icon: IconType; color: string; ring: strin
   support: { icon: FiHeadphones, color: 'green.400', ring: 'rgba(72, 187, 120, 0.4)' },
   finance: { icon: FiDollarSign, color: 'orange.400', ring: 'rgba(237, 137, 54, 0.4)' },
   onboarding: { icon: FiUserCheck, color: 'purple.400', ring: 'rgba(159, 122, 234, 0.4)' },
+  apps: { icon: FiGrid, color: 'cyan.400', ring: 'rgba(0, 188, 212, 0.4)' },
 };
 
 export function AgentAvatarCard({ role, label, activity, activityCount, delay = 0, size = 'md' }: AgentAvatarCardProps) {

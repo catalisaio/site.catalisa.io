@@ -18,8 +18,23 @@ export function getSiteNavigationSchema() {
       },
       {
         '@type': 'WebPage',
+        name: 'Apps & Backends',
+        url: `${BASE_URL}/apps`,
+      },
+      {
+        '@type': 'WebPage',
         name: 'Building Blocks',
         url: `${BASE_URL}/building-blocks`,
+      },
+      {
+        '@type': 'WebPage',
+        name: 'Workflows',
+        url: `${BASE_URL}/workflows`,
+      },
+      {
+        '@type': 'WebPage',
+        name: 'Casos de Uso',
+        url: `${BASE_URL}/casos-de-uso`,
       },
       {
         '@type': 'WebPage',

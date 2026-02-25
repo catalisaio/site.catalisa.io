@@ -2,6 +2,7 @@ import puppeteer from 'puppeteer';
 import { createServer } from 'http';
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
 import { resolve, dirname } from 'path';
+import { playbookIds } from '../src/data/playbook-ids';
 
 const DIST_DIR = resolve(process.cwd(), 'dist');
 const PORT = 4173;
@@ -20,6 +21,9 @@ const routes = [
   '/en/use-cases', '/en/contact', '/en/demo', '/en/privacy-policy',
   '/en/terms', '/en/security', '/en/pricing', '/en/how-it-works', '/en/integrations/whatsapp',
   '/en/press-kit', '/en/commercial-presentation',
+  // Playbook detail pages
+  ...playbookIds.map(id => `/playbooks/${id}`),
+  ...playbookIds.map(id => `/en/playbooks/${id}`),
 ];
 
 // Simple static file server for dist/

@@ -3,12 +3,21 @@ import { useTranslation } from 'react-i18next';
 import { useHreflangPaths } from '../i18n/useAlternatePath';
 import { BASE_URL } from './routes';
 
+export interface ArticleOGProps {
+  publishedTime: string;
+  modifiedTime: string;
+  author: string;
+  section: string;
+  tags: string[];
+}
+
 interface SEOHeadProps {
   pageKey: string;
   title?: string;
   description?: string;
   ogImage?: string;
   noIndex?: boolean;
+  article?: ArticleOGProps;
 }
 
 function setMeta(nameOrProperty: string, content: string) {
@@ -55,7 +64,7 @@ function setLink(rel: string, href: string, attrs?: Record<string, string>) {
  * Manages all SEO-related tags in <head>: title, meta, canonical, OG, Twitter, hreflang.
  * Uses data-seo="true" attribute for cleanup on unmount.
  */
-export function SEOHead({ pageKey, title, description, ogImage, noIndex }: SEOHeadProps) {
+export function SEOHead({ pageKey, title, description, ogImage, noIndex, article }: SEOHeadProps) {
   const { t } = useTranslation('seo');
   const { i18n } = useTranslation();
   const { ptBR, enUS } = useHreflangPaths();
@@ -94,10 +103,39 @@ export function SEOHead({ pageKey, title, description, ogImage, noIndex }: SEOHe
     setMeta('og:description', resolvedDescription);
     setMeta('og:image', resolvedOgImage);
     setMeta('og:url', canonicalUrl);
-    setMeta('og:type', 'website');
+    setMeta('og:type', article ? 'article' : 'website');
     setMeta('og:locale', lang === 'en-US' ? 'en_US' : 'pt_BR');
     setMeta('og:locale:alternate', lang === 'en-US' ? 'pt_BR' : 'en_US');
     setMeta('og:site_name', 'Catalisa');
+
+    // Clean up previous article tags
+    document.querySelectorAll('meta[property^="og:article:"][data-seo-article]').forEach((el) => el.remove());
+
+    // Article-specific OG tags
+    if (article) {
+      const articleMetas: [string, string][] = [
+        ['og:article:published_time', article.publishedTime],
+        ['og:article:modified_time', article.modifiedTime],
+        ['og:article:author', article.author],
+        ['og:article:section', article.section],
+      ];
+      for (const [prop, content] of articleMetas) {
+        const el = document.createElement('meta');
+        el.setAttribute('property', prop);
+        el.content = content;
+        el.setAttribute('data-seo', 'true');
+        el.setAttribute('data-seo-article', 'true');
+        document.head.appendChild(el);
+      }
+      for (const tag of article.tags) {
+        const el = document.createElement('meta');
+        el.setAttribute('property', 'og:article:tag');
+        el.content = tag;
+        el.setAttribute('data-seo', 'true');
+        el.setAttribute('data-seo-article', 'true');
+        document.head.appendChild(el);
+      }
+    }
 
     // Twitter Card
     setMeta('twitter:card', 'summary_large_image');
@@ -116,7 +154,7 @@ export function SEOHead({ pageKey, title, description, ogImage, noIndex }: SEOHe
     return () => {
       document.querySelectorAll('[data-seo="true"]').forEach((el) => el.remove());
     };
-  }, [pageKey, title, description, ogImage, noIndex, t, i18n.language, ptBR, enUS]);
+  }, [pageKey, title, description, ogImage, noIndex, article, t, i18n.language, ptBR, enUS]);
 
   return null;
 }

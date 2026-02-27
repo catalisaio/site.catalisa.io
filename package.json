@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "postbuild": "tsx scripts/generate-sitemap.ts; bash scripts/generate-brand-zip.sh; tsx scripts/prerender.ts",
+    "postbuild": "tsx scripts/generate-og-images.ts; tsx scripts/generate-sitemap.ts; bash scripts/generate-brand-zip.sh; tsx scripts/prerender.ts",
     "lint": "eslint .",
     "preview": "vite preview"
   },

@@ -31,6 +31,7 @@ export interface Article {
   keywords: string[];
   category: ArticleCategory;
   publishedDate: string;
+  updatedDate?: string;
   readingTime: number;
   sources: ArticleSource[];
   metrics: ArticleMetric[];

@@ -1,13 +1,15 @@
-import { useState, useEffect, useCallback, useRef } from 'react';
-import { Box, Container, Heading, Text, Button, HStack, Flex, VStack } from '@chakra-ui/react';
-import { AnimatePresence } from 'framer-motion';
+import { useState, useEffect, useCallback, useRef, lazy, Suspense } from 'react';
+import { Box, Container, Heading, Text, Button, HStack, Flex, VStack, useBreakpointValue } from '@chakra-ui/react';
+import { AnimatePresence, useReducedMotion } from 'framer-motion';
 import { FiMessageCircle, FiArrowDown } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
 import { MotionBox } from '../motion';
 import { GradientText } from '../shared/GradientText';
 import { HeroShowcase, useHeroTabs } from '../shared/HeroShowcase';
 import { BehindTheScenesHint } from '../shared/BehindTheScenesHint';
-import { BehindTheScenesModal, useBehindTheScenes } from '../shared/BehindTheScenesModal';
+import { useBehindTheScenes } from '../shared/BehindTheScenesModal';
+
+const BehindTheScenesModal = lazy(() => import('../shared/BehindTheScenesModal').then(m => ({ default: m.BehindTheScenesModal })));
 
 const WHATSAPP_URL = 'https://wa.me/5511977303414?text=Ola!%20Quero%20saber%20mais%20sobre%20a%20Catalisa.';
 const DWELL_TIME = 4000;
@@ -18,6 +20,8 @@ export function HeroTeamBuilder() {
   const behindTheScenes = useBehindTheScenes();
   const [activeIndex, setActiveIndex] = useState(0);
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const prefersReducedMotion = useReducedMotion();
+  const showShowcase = useBreakpointValue({ base: false, md: true });
 
   // Showcase tabs state
   const heroTabs = useHeroTabs();
@@ -98,53 +102,41 @@ export function HeroTeamBuilder() {
         >
           {/* Left content */}
           <VStack align="flex-start" spacing={6} maxW="600px" flex={1}>
-            {/* Badge */}
-            <MotionBox
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
+            {/* Badge — no animation wrapper to avoid hiding above-the-fold content */}
+            <HStack
+              bg="whiteAlpha.100"
+              px={4}
+              py={1.5}
+              borderRadius="full"
+              border="1px solid"
+              borderColor="whiteAlpha.200"
+              spacing={2}
             >
-              <HStack
-                bg="whiteAlpha.100"
-                px={4}
-                py={1.5}
-                borderRadius="full"
-                border="1px solid"
-                borderColor="whiteAlpha.200"
-                spacing={2}
-              >
-                <Box w={2} h={2} borderRadius="full" bg="whatsapp.400" />
-                <Text color="whiteAlpha.800" fontSize="sm">{t('badges.gartnerValidated', { ns: 'common' })}</Text>
-              </HStack>
-            </MotionBox>
+              <Box w={2} h={2} borderRadius="full" bg="whatsapp.400" />
+              <Text color="whiteAlpha.800" fontSize="sm">{t('badges.gartnerValidated', { ns: 'common' })}</Text>
+            </HStack>
 
-            {/* Headline */}
-            <MotionBox
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
+            {/* Headline — no animation wrapper so LCP element renders immediately */}
+            <Heading
+              as="h1"
+              fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
+              fontWeight="800"
+              color="white"
+              lineHeight="1.1"
             >
-              <Heading
-                as="h1"
-                fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
-                fontWeight="800"
-                color="white"
-                lineHeight="1.1"
+              {t('heroTeamBuilder.headline')}{' '}
+              <GradientText
+                gradient="linear(to-r, brand.300, brand.400, catalisa.accent)"
+                fontSize="inherit"
+                fontWeight="inherit"
               >
-                {t('heroTeamBuilder.headline')}{' '}
-                <GradientText
-                  gradient="linear(to-r, brand.300, brand.400, catalisa.accent)"
-                  fontSize="inherit"
-                  fontWeight="inherit"
-                >
-                  {t('heroTeamBuilder.headlineGradient')}
-                </GradientText>
-              </Heading>
-            </MotionBox>
+                {t('heroTeamBuilder.headlineGradient')}
+              </GradientText>
+            </Heading>
 
             {/* Dynamic subtitle */}
             <MotionBox
-              initial={{ opacity: 0, y: 20 }}
+              initial={prefersReducedMotion ? false : { opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               minH="56px"
@@ -152,10 +144,10 @@ export function HeroTeamBuilder() {
               <AnimatePresence mode="wait">
                 <MotionBox
                   key={activeIndex}
-                  initial={{ opacity: 0, y: 8 }}
+                  initial={prefersReducedMotion ? false : { opacity: 0, y: 8 }}
                   animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -8 }}
-                  transition={{ duration: 0.3 }}
+                  exit={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, y: -8 }}
+                  transition={{ duration: prefersReducedMotion ? 0.1 : 0.3 }}
                 >
                   <Text color="whiteAlpha.700" fontSize={{ base: 'md', md: 'lg' }} lineHeight="1.7" maxW="520px">
                     {subtitles[activeIndex]}
@@ -166,7 +158,7 @@ export function HeroTeamBuilder() {
 
             {/* CTAs */}
             <MotionBox
-              initial={{ opacity: 0, y: 20 }}
+              initial={prefersReducedMotion ? false : { opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
             >
@@ -177,9 +169,9 @@ export function HeroTeamBuilder() {
                   target="_blank"
                   rel="noopener noreferrer"
                   size="lg"
-                  bg="whatsapp.500"
+                  bg="whatsapp.600"
                   color="white"
-                  _hover={{ bg: 'whatsapp.600', transform: 'translateY(-2px)', boxShadow: '0 8px 30px rgba(37, 211, 102, 0.4)' }}
+                  _hover={{ bg: 'whatsapp.700', transform: 'translateY(-2px)', boxShadow: '0 8px 30px rgba(37, 211, 102, 0.4)' }}
                   leftIcon={<FiMessageCircle />}
                   transition="all 0.2s"
                 >
@@ -201,11 +193,11 @@ export function HeroTeamBuilder() {
 
             {/* Trust badges */}
             <MotionBox
-              initial={{ opacity: 0 }}
+              initial={prefersReducedMotion ? false : { opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.5 }}
             >
-              <HStack spacing={4} flexWrap="wrap" fontSize="xs" color="whiteAlpha.500">
+              <HStack spacing={4} flexWrap="wrap" fontSize="xs" color="whiteAlpha.600">
                 <HStack><Box w={1.5} h={1.5} borderRadius="full" bg="whatsapp.400" /><Text>{t('badges.lgpd', { ns: 'common' })}</Text></HStack>
                 <HStack><Box w={1.5} h={1.5} borderRadius="full" bg="brand.400" /><Text>{t('badges.metaWhatsApp', { ns: 'common' })}</Text></HStack>
                 <HStack><Box w={1.5} h={1.5} borderRadius="full" bg="catalisa.secondary" /><Text>{t('badges.composableRevenue', { ns: 'common' })}</Text></HStack>
@@ -214,25 +206,30 @@ export function HeroTeamBuilder() {
             </MotionBox>
           </VStack>
 
-          {/* Right visual - Showcase Tabs */}
-          <MotionBox
-            initial={{ opacity: 0, x: 40 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            display={{ base: 'none', md: 'block' }}
-            maxW="540px"
-            flex={1}
-          >
-            <HeroShowcase
-              activeIndex={showcaseIndex}
-              onTabChange={handleShowcaseTabChange}
-              paused={showcasePaused}
-            />
-          </MotionBox>
+          {/* Right visual - Showcase Tabs (not rendered on mobile to reduce TBT) */}
+          {showShowcase && (
+            <MotionBox
+              initial={prefersReducedMotion ? false : { opacity: 0, x: 40 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              maxW="540px"
+              flex={1}
+            >
+              <HeroShowcase
+                activeIndex={showcaseIndex}
+                onTabChange={handleShowcaseTabChange}
+                paused={showcasePaused}
+              />
+            </MotionBox>
+          )}
         </Flex>
       </Container>
 
-      <BehindTheScenesModal isOpen={behindTheScenes.isOpen} onClose={behindTheScenes.onClose} />
+      {behindTheScenes.isOpen && (
+        <Suspense fallback={null}>
+          <BehindTheScenesModal isOpen={behindTheScenes.isOpen} onClose={behindTheScenes.onClose} />
+        </Suspense>
+      )}
     </Box>
   );
 }

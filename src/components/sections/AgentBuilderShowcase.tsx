@@ -8,6 +8,8 @@ import {
   VStack,
   Flex,
   Icon,
+  List,
+  ListItem,
 } from '@chakra-ui/react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { FiCheck, FiCode, FiClock, FiSliders } from 'react-icons/fi';
@@ -333,25 +335,26 @@ export function AgentBuilderShowcase() {
                       {currentStep.description}
                     </Text>
 
-                    <VStack spacing={3} w="full" align="stretch">
+                    <List spacing={3} w="full">
                       {currentStep.bullets.map((bullet, i) => (
-                        <motion.div
-                          key={bullet}
-                          initial={{ opacity: 0, x: -10 }}
-                          animate={{ opacity: 1, x: 0 }}
-                          transition={{ delay: 0.1 + i * 0.1, duration: 0.3 }}
-                        >
-                          <HStack
-                            align="center"
-                            color="whiteAlpha.800"
-                            fontSize={{ base: 'sm', md: 'md' }}
+                        <ListItem key={bullet} listStyleType="none">
+                          <motion.div
+                            initial={{ opacity: 0, x: -10 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ delay: 0.1 + i * 0.1, duration: 0.3 }}
                           >
-                            <Icon as={FiCheck} color="brand.300" fontSize="md" mr={2} flexShrink={0} />
-                            <Text>{bullet}</Text>
-                          </HStack>
-                        </motion.div>
+                            <HStack
+                              align="center"
+                              color="whiteAlpha.800"
+                              fontSize={{ base: 'sm', md: 'md' }}
+                            >
+                              <Icon as={FiCheck} color="brand.300" fontSize="md" mr={2} flexShrink={0} />
+                              <Text>{bullet}</Text>
+                            </HStack>
+                          </motion.div>
+                        </ListItem>
                       ))}
-                    </VStack>
+                    </List>
                   </VStack>
                 </motion.div>
               </AnimatePresence>

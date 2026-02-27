@@ -39,12 +39,20 @@
       });
     </script>
 
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GT-5TW4R7FV');</script>
+    <!-- Google Tag Manager (deferred to avoid blocking critical resources) -->
+    <script>
+    (function(){
+      function loadGTM(){
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GT-5TW4R7FV');
+      }
+      if('requestIdleCallback' in window){requestIdleCallback(loadGTM);}
+      else{setTimeout(loadGTM,2000);}
+    })();
+    </script>
     <!-- End Google Tag Manager -->
 
     <!-- Font loading (non-render-blocking) -->
@@ -53,11 +61,14 @@
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
-    <script type="module" crossorigin src="/assets/index-W2SxeDmE.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/i18n-WzsyY8tL.js">
-    <link rel="modulepreload" crossorigin href="/assets/vendor-C6fCiZN1.js">
-    <link rel="modulepreload" crossorigin href="/assets/chakra-BQSc4H80.js">
-    <link rel="modulepreload" crossorigin href="/assets/icons-CvSmmmvT.js">
+    <script type="module" crossorigin src="/assets/index-DoKf4Yyd.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/vendor-BOw8wRwJ.js">
+    <link rel="modulepreload" crossorigin href="/assets/i18n-CH7COK3N.js">
+    <link rel="modulepreload" crossorigin href="/assets/motion-D0APhGqR.js">
+    <link rel="modulepreload" crossorigin href="/assets/chakra-CCAMZRfN.js">
+    <link rel="modulepreload" crossorigin href="/assets/icons-t6fQnP9A.js">
+    <link rel="modulepreload" crossorigin href="/assets/playbooks-DXZT6GOt.js">
+    <link rel="modulepreload" crossorigin href="/assets/presentation-CssqeUr6.js">
     <link rel="stylesheet" crossorigin href="/assets/index-CQTXBDgt.css">
   </head>
   <body>

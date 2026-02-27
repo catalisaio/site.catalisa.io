@@ -462,11 +462,12 @@ export function PlaybookDetail() {
                         </HStack>
                         {isActive && (
                           <Box
-                            position="absolute" bottom={0} left={0} h="2px"
+                            position="absolute" bottom={0} left={0} w="full" h="2px"
                             bg={tab.color}
                             as={motion.div}
-                            initial={{ width: '0%' }}
-                            animate={{ width: heroTabPaused ? undefined : '100%' }}
+                            style={{ transformOrigin: 'left' }}
+                            initial={{ scaleX: 0 }}
+                            animate={{ scaleX: heroTabPaused ? undefined : 1 }}
                             transition={{ duration: 8, ease: 'linear' } as any}
                           />
                         )}

@@ -82,6 +82,41 @@ export function S07_BeforeAfter() {
             </Box>
           </MotionBox>
         </SimpleGrid>
+
+        {/* Gartner callouts */}
+        <MotionBox
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
+          w="full"
+        >
+          <SimpleGrid columns={{ base: 1, md: 2 }} spacing={{ base: 3, md: 4 }}>
+            <Box
+              bg={c.surfaceBg}
+              px={{ base: 4, md: 5 }}
+              py={3}
+              borderRadius="lg"
+              border="1px solid"
+              borderColor="brand.800"
+            >
+              <Text fontSize={{ base: 'xs', md: 'sm' }} color={c.textSecondary}>
+                {t('beforeAfter.gartnerCallout')}
+              </Text>
+            </Box>
+            <Box
+              bg={c.surfaceBg}
+              px={{ base: 4, md: 5 }}
+              py={3}
+              borderRadius="lg"
+              border="1px solid"
+              borderColor="whatsapp.800"
+            >
+              <Text fontSize={{ base: 'xs', md: 'sm' }} color={c.textSecondary}>
+                {t('beforeAfter.roiCallout')}
+              </Text>
+            </Box>
+          </SimpleGrid>
+        </MotionBox>
       </VStack>
     </Slide>
   );

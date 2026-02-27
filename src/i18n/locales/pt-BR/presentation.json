@@ -1,11 +1,25 @@
 {
   "cover": {
-    "tagline": "Plataforma de automacao inteligente para WhatsApp e servicos financeiros",
-    "badge": "Apresentacao Comercial \u2022 2026"
+    "tagline": "Automação composable com IA para WhatsApp e serviços financeiros",
+    "badge": "Apresentação Comercial \u2022 2026"
   },
-  "problemHook": {
+  "marketOpportunity": {
+    "badge": "OPORTUNIDADE DE MERCADO",
+    "headline": "O mercado está mudando.",
+    "headlineHighlight": "Os dados comprovam.",
+    "stats": [
+      { "value": "$58B", "label": "shake-up com GenAI e agentes de IA", "source": "Gartner" },
+      { "value": "40%", "label": "dos apps enterprise com AI agents até 2026", "source": "Gartner" },
+      { "value": "80%", "label": "dos atendimentos resolvidos por IA até 2029", "source": "Gartner" },
+      { "value": "$450B", "label": "receita enterprise com AI agents até 2035", "source": "Gartner" },
+      { "value": "75%", "label": "dos novos apps serão low-code até 2026", "source": "Gartner" },
+      { "value": "98%", "label": "taxa de abertura no WhatsApp", "source": "Meta" }
+    ],
+    "disclaimer": "Fontes: Gartner (2024-2025), Meta Business"
+  },
+  "theProblem": {
     "headline": "Seus clientes esperam respostas em segundos.",
-    "headlineHighlight": "Quanto tempo leva para construir um novo produto?",
+    "headlineHighlight": "E a sua operação?",
     "painPoints": [
       {
         "title": "Respostas manuais",
@@ -13,65 +27,136 @@
       },
       {
         "title": "Sem contexto entre atendentes",
-        "description": "Cada troca de agente recomeca do zero. O cliente repete tudo de novo."
+        "description": "Cada troca de agente recomeça do zero. O cliente repete tudo de novo."
       },
       {
-        "title": "Zero automacao",
-        "description": "Tarefas repetitivas consomem horas. Qualificacao, follow-up, cobranca \u2014 tudo manual."
+        "title": "Zero automação",
+        "description": "Tarefas repetitivas consomem horas. Qualificação, follow-up, cobrança — tudo manual."
       }
+    ],
+    "metricsLabel": "CENÁRIO TÍPICO",
+    "metrics": [
+      { "value": "3", "label": "atendentes necessários" },
+      { "value": "2h", "label": "tempo médio de espera" },
+      { "value": "R$ 15k", "label": "custo mensal" }
     ]
   },
   "solutionVision": {
     "headline": "Uma plataforma. Todos os verticais.",
     "card1": {
       "title": "WhatsApp & AI",
-      "description": "Automacao inteligente, agentes de IA especializados, workflows visuais e CRM integrado."
+      "description": "Automação inteligente, agentes de IA especializados, workflows visuais e CRM integrado."
     },
     "card2": {
       "title": "Banking & Fintech",
       "description": "Building blocks modulares para construir produtos financeiros completos em semanas."
     },
     "card3": {
-      "title": "Seguros & Previdencia",
-      "description": "Cotacao, contratacao, sinistro e resgate \u2014 jornadas completas automatizadas via WhatsApp."
+      "title": "Seguros & Previdência",
+      "description": "Cotação, contratação, sinistro e resgate — jornadas completas automatizadas via WhatsApp."
     },
     "card4": {
       "title": "Investimentos & Wealth",
       "description": "Onboarding, suitability, carteira e rebalanceamento com IA conversacional integrada."
     }
   },
-  "whatsappProblem": {
-    "headline": "O cenario atual do atendimento",
-    "columns": [
-      { "title": "Respostas manuais", "description": "Uma mensagem por vez. Leads esfriam." },
-      { "title": "Sem contexto", "description": "Cada troca de agente recomeca do zero." },
-      { "title": "Zero automacao", "description": "Qualificacao e follow-up 100% manuais." }
-    ],
-    "metricsLabel": "CENARIO TIPICO",
-    "metrics": [
-      { "value": "3", "label": "atendentes necessarios" },
-      { "value": "2h", "label": "tempo medio de espera" },
-      { "value": "R$ 15k", "label": "custo mensal" }
-    ]
-  },
   "whatsappSolution": {
     "headline": "Quatro pilares. Uma plataforma.",
+    "subtitle": "Conecte seus agentes aos sistemas que você já usa — CRM, ERP, calendário, pagamentos, qualquer API REST.",
     "steps": [
       { "label": "Conectar", "title": "WhatsApp", "description": "Multi-tenant, multi-device. QR Code ou Cloud API." },
-      { "label": "Automatizar", "title": "Workflows", "description": "Drag & drop visual. 60+ building blocks composiveis." },
-      { "label": "Inteligencia", "title": "AI Agents", "description": "Agentes especializados com ferramentas seletivas." },
-      { "label": "Resultado", "title": "CRM & Analytics", "description": "Pipeline de leads, metricas e historico completo." }
+      { "label": "Automatizar", "title": "Workflows", "description": "Drag & drop visual. 60+ building blocks composíveis." },
+      { "label": "Inteligência", "title": "AI Agents", "description": "Agentes especializados com ferramentas seletivas." },
+      { "label": "Resultado", "title": "CRM & Analytics", "description": "Pipeline de leads, métricas e histórico completo." }
+    ]
+  },
+  "agentOrchestra": {
+    "headline": "Não é um chatbot.",
+    "headlineHighlight": "É uma equipe de especialistas.",
+    "subtitle": "Um orquestrador central decide qual agente ativa. Cada especialista tem ferramentas, contexto e limites próprios. Conectados aos seus sistemas existentes.",
+    "orchestrator": "Orquestrador",
+    "orchestratorDesc": "Modelo leve para triagem, avançado para raciocínio complexo",
+    "agents": [
+      { "name": "SDR", "desc": "Qualifica leads e agenda reuniões", "tools": ["WhatsApp", "CRM", "Calendário"] },
+      { "name": "Suporte", "desc": "Resolve dúvidas e escala quando necessário", "tools": ["WhatsApp", "Base de Conhecimento", "Tickets"] },
+      { "name": "Financeiro", "desc": "Gera boletos, negocia e processa pagamentos", "tools": ["WhatsApp", "Pagamentos", "ERP"] },
+      { "name": "Onboarding", "desc": "Guia novos clientes e coleta documentos", "tools": ["WhatsApp", "CRM", "Docs"] },
+      { "name": "Analista", "desc": "Gera relatórios e identifica tendências", "tools": ["CRM", "Analytics", "ERP"] }
+    ],
+    "gartnerNote": "Gartner prevê 40% dos apps enterprise com agentes de IA até 2026. Com a Catalisa, os seus já podem ter hoje."
+  },
+  "behindTheScenes": {
+    "headline": "O que acontece",
+    "headlineHighlight": "por trás da conversa.",
+    "subtitle": "Cada mensagem dispara uma cadeia de decisões inteligentes. Modelos diferentes para cada tarefa.",
+    "steps": [
+      { "label": "Mensagem recebida", "detail": "WhatsApp Cloud API" },
+      { "label": "Intenção classificada", "detail": "Confiança: 96%" },
+      { "label": "CRM consultado", "detail": "Histórico do lead" },
+      { "label": "Lead scoring", "detail": "Score: 85/100" },
+      { "label": "Produto selecionado", "detail": "Match por perfil" },
+      { "label": "Proposta gerada", "detail": "Personalizada em 2s" }
+    ],
+    "models": [
+      { "label": "Leve", "time": "<1s", "desc": "Respostas rápidas e triagem" },
+      { "label": "Visão", "time": "2-3s", "desc": "Análise de imagens e docs" },
+      { "label": "Avançado", "time": "3-5s", "desc": "Raciocínio complexo" }
+    ],
+    "chatMessages": [
+      { "from": "client", "text": "Oi, quero saber do plano empresarial" },
+      { "from": "agent", "text": "Olá! Sou a Ana, assistente da Catalisa. Vou te ajudar com o plano ideal para sua empresa." }
     ]
   },
   "whatsappFeatures": {
-    "headline": "Tudo que voce precisa. Nada que nao precisa.",
+    "headline": "Tudo que você precisa. Nada que não precisa.",
     "items": [
-      { "title": "WhatsApp Multi-Agente", "description": "Conecte multiplos numeros. Cloud API oficial + QR Code." },
+      { "title": "WhatsApp Multi-Agente", "description": "Conecte múltiplos números. Cloud API oficial + QR Code." },
       { "title": "Agentes de IA", "description": "Prompt customizado e ferramentas seletivas." },
-      { "title": "Workflows Visuais", "description": "Drag & drop com execucao paralela (DAG)." },
+      { "title": "Workflows Visuais", "description": "Drag & drop com execução paralela (DAG)." },
       { "title": "Building Blocks", "description": "60+ blocos: IA, fintech, CRM e mais." },
-      { "title": "CRM de Leads", "description": "Pipeline completo com kanban e campos dinamicos." },
-      { "title": "Seguranca & LGPD", "description": "Multi-tenant isolado. Criptografia bancaria." }
+      { "title": "CRM de Leads", "description": "Pipeline completo com kanban e campos dinâmicos." },
+      { "title": "Segurança & LGPD", "description": "Multi-tenant isolado. Criptografia bancária." }
+    ]
+  },
+  "aiInAction": {
+    "badge": "CASO REAL",
+    "headline": "De uma frase a um sistema",
+    "headlineHighlight": "de atendimento completo",
+    "steps": [
+      { "label": "Descreveu", "title": "\"Quero atendimento de seguros via WhatsApp\"", "description": "Uma frase. Sem código. Sem especificação técnica." },
+      { "label": "IA Planejou", "title": "Plano em 4 fases gerado em segundos", "description": "O usuário só precisou dizer \"Aprovado.\"" },
+      { "label": "Executou", "title": "3 agentes + 1 workflow criados automaticamente", "description": "A IA executou e o usuário deu feedback em tempo real." },
+      { "label": "Funcionando", "title": "Atendimento real no WhatsApp em 13 segundos", "description": "Da frase ao atendimento funcionando: menos de 3 minutos." }
+    ]
+  },
+  "useCases": {
+    "headline": "Agentes que já",
+    "headlineHighlight": "entregam resultado.",
+    "scenarios": [
+      {
+        "title": "SDR Digital",
+        "before": { "label": "15 leads/mês", "detail": "R$45/lead" },
+        "after": { "label": "200+ leads/mês", "detail": "R$2/lead" },
+        "blocks": ["WhatsApp", "IA", "CRM", "Calendário"]
+      },
+      {
+        "title": "Suporte 24/7",
+        "before": { "label": "2h tempo de espera", "detail": "35% resolução" },
+        "after": { "label": "5s resposta", "detail": "78% resolução" },
+        "blocks": ["WhatsApp", "IA", "Base de Conhecimento", "Tickets"]
+      },
+      {
+        "title": "Cobrança Inteligente",
+        "before": { "label": "15% recuperação", "detail": "100% manual" },
+        "after": { "label": "42% recuperação", "detail": "80% menos custo" },
+        "blocks": ["WhatsApp", "IA", "Pagamentos", "ERP"]
+      },
+      {
+        "title": "Onboarding KYC",
+        "before": { "label": "5 dias processo", "detail": "Manual e fragmentado" },
+        "after": { "label": "20 min processo", "detail": "100% automatizado" },
+        "blocks": ["WhatsApp", "IA", "Compliance", "Docs"]
+      }
     ]
   },
   "beforeAfter": {
@@ -91,45 +176,75 @@
         { "label": "Tempo de resposta", "value": "5s" },
         { "label": "Custo mensal", "value": "R$ 800" }
       ]
-    }
-  },
-  "aiInAction": {
-    "badge": "CASO REAL",
-    "headline": "De uma frase a um sistema",
-    "headlineHighlight": "de atendimento completo",
-    "steps": [
-      { "label": "Descreveu", "title": "\"Quero atendimento de seguros via WhatsApp\"", "description": "Uma frase. Sem codigo. Sem especificacao tecnica." },
-      { "label": "IA Planejou", "title": "Plano em 4 fases gerado em segundos", "description": "O usuario so precisou dizer \"Aprovado.\"" },
-      { "label": "Executou", "title": "3 agentes + 1 workflow criados automaticamente", "description": "A IA executou e o usuario deu feedback em tempo real." },
-      { "label": "Funcionando", "title": "Atendimento real no WhatsApp em 13 segundos", "description": "Da frase ao atendimento funcionando: menos de 3 minutos." }
-    ]
+    },
+    "gartnerCallout": "Gartner: empresas com IA economizarão $80B globalmente até 2026",
+    "roiCallout": "ROI: $3,50 retorno por $1 investido"
   },
   "differentiators": {
     "headline": "Por que a Catalisa?",
     "items": [
-      { "vs": "vs n8n / Make", "title": "IA nativa, nao plugin", "description": "Agentes de IA, analise de sentimento, OCR e geracao de texto sao building blocks nativos." },
-      { "vs": "vs Intercom / WATI", "title": "Blocos composiveis, nao chatbot", "description": "60+ building blocks que voce combina livremente para criar automacoes sob medida." },
-      { "vs": "vs Zapier / Pipedream", "title": "WhatsApp nativo + IA embarcada", "description": "Conexao direta com WhatsApp, agentes IA com ferramentas reais, CRM integrado." },
-      { "vs": "vs Dev interno", "title": "60+ blocos. Meses de economia.", "description": "Building blocks prontos e testados. Foque no seu negocio, nao em infraestrutura." }
+      { "vs": "vs n8n / Make", "title": "IA nativa, não plugin", "description": "Agentes de IA, análise de sentimento, OCR e geração de texto são building blocks nativos." },
+      { "vs": "vs Intercom / WATI", "title": "Blocos composíveis, não chatbot", "description": "60+ building blocks que você combina livremente para criar automações sob medida." },
+      { "vs": "vs Zapier / Pipedream", "title": "WhatsApp nativo + IA embarcada", "description": "Conexão direta com WhatsApp, agentes IA com ferramentas reais, CRM integrado." },
+      { "vs": "vs Dev interno", "title": "60+ blocos. Meses de economia.", "description": "Building blocks prontos e testados. Foque no seu negócio, não em infraestrutura." }
     ]
   },
-  "bankingLego": {
-    "headline": "Banking as a LEGO",
-    "subtitle": "Componentes modulares non-core para construir produtos financeiros completos.",
-    "tagline": "Deploy em semanas. Totalmente funcional.",
+  "positioningMap": {
+    "headline": "Mapa de Posicionamento",
+    "subtitle": "Única plataforma que combina low-code + AI agents + WhatsApp nativo + building blocks composable.",
+    "axisX": "Completude de Visão",
+    "axisY": "Capacidade de Execução",
+    "quadrants": { "niche": "Nicho", "visionary": "Visionários", "challenger": "Desafiantes", "leader": "Líderes" },
+    "players": [
+      { "name": "WATI", "quadrant": "niche" },
+      { "name": "Blip", "quadrant": "niche" },
+      { "name": "Zapier", "quadrant": "challenger" },
+      { "name": "Make", "quadrant": "challenger" },
+      { "name": "Intercom", "quadrant": "challenger" },
+      { "name": "Zendesk", "quadrant": "challenger" },
+      { "name": "Catalisa", "quadrant": "visionary", "highlight": true }
+    ],
+    "disclaimer": "Representação conceitual baseada em frameworks públicos do Gartner. Não é um Magic Quadrant oficial."
+  },
+  "agenticQuadrant": {
+    "badge": "AGENTIC BUSINESS AUTOMATION",
+    "headline": "A nova categoria",
+    "headlineHighlight": "de mercado.",
+    "subtitle": "Catalisa opera na interseção de três mercados que nenhum player domina sozinho.",
+    "axisX": "Escopo de Negócio",
+    "axisY": "Inteligência dos Agentes",
+    "quadrants": { "niche": "Nicho", "visionary": "Visionários", "challenger": "Desafiantes", "leader": "Líderes" },
+    "players": [
+      { "name": "WATI", "quadrant": "niche" },
+      { "name": "Manychat", "quadrant": "niche" },
+      { "name": "Chatfuel", "quadrant": "niche" },
+      { "name": "Zapier", "quadrant": "challenger" },
+      { "name": "Make", "quadrant": "challenger" },
+      { "name": "n8n", "quadrant": "challenger" },
+      { "name": "Cognigy", "quadrant": "visionary" },
+      { "name": "boost.ai", "quadrant": "visionary" },
+      { "name": "Kore.ai", "quadrant": "visionary" },
+      { "name": "Catalisa", "quadrant": "leader", "highlight": true }
+    ],
+    "insights": [
+      { "label": "Conv AI Leaders", "text": "Agentes inteligentes, mas escopo limitado a suporte e atendimento." },
+      { "label": "Automation Leaders", "text": "Escopo amplo de automação, mas sem agentes inteligentes reais." },
+      { "label": "Catalisa", "text": "Combina os dois + WhatsApp nativo + building blocks enterprise composable." }
+    ],
+    "disclaimer": "Representação conceitual baseada em análise de mercado. Não é um Magic Quadrant oficial."
+  },
+  "buildingBlocksMerged": {
+    "headline": "Building Blocks",
+    "subtitle": "Banking as a LEGO — 23+ componentes modulares prontos para compor seu produto.",
     "highlights": [
-      "Modular e composivel",
+      "Modular e composível",
       "Compliance integrado",
       "White-label ready"
-    ]
-  },
-  "buildingBlocks": {
-    "headline": "23+ Building Blocks",
-    "subtitle": "Cada bloco e um componente funcional independente, pronto para compor seu produto.",
+    ],
     "categories": [
       {
-        "name": "Credito",
-        "items": ["Simulacao", "Contratacao", "Portabilidade", "Autorizacao", "Cobranca", "Esteira"]
+        "name": "Crédito",
+        "items": ["Simulação", "Contratação", "Portabilidade", "Autorização", "Cobrança", "Esteira"]
       },
       {
         "name": "Compliance",
@@ -137,15 +252,15 @@
       },
       {
         "name": "Pagamentos",
-        "items": ["PIX", "Boleto", "TED/DOC", "Split", "Recorrencia"]
+        "items": ["PIX", "Boleto", "TED/DOC", "Split", "Recorrência"]
       },
       {
         "name": "Digital Assets",
-        "items": ["Tokenizacao", "Custodia", "Smart Contracts", "Marketplace"]
+        "items": ["Tokenização", "Custódia", "Smart Contracts", "Marketplace"]
       },
       {
         "name": "Core Banking",
-        "items": ["Conta Digital", "Extrato", "Cartao", "Seguros"]
+        "items": ["Conta Digital", "Extrato", "Cartão", "Seguros"]
       }
     ]
   },
@@ -153,19 +268,19 @@
     "headline": "Produtos prontos para mercado",
     "cards": [
       {
-        "title": "Financiamento de Veiculos",
-        "steps": ["Simulacao", "Contratacao", "Autorizacao", "Liberacao"],
-        "claim": "Automacao reduz custos operacionais em ate 30%"
+        "title": "Financiamento de Veículos",
+        "steps": ["Simulação", "Contratação", "Autorização", "Liberação"],
+        "claim": "Automação reduz custos operacionais em até 30%"
       },
       {
-        "title": "Portabilidade de Credito",
-        "steps": ["Analise", "Proposta", "Transferencia", "Ativacao"],
+        "title": "Portabilidade de Crédito",
+        "steps": ["Análise", "Proposta", "Transferência", "Ativação"],
         "claim": "Processo que levava semanas agora leva dias"
       }
     ]
   },
   "architecture": {
-    "headline": "Arquitetura & Modelo de Negocio",
+    "headline": "Arquitetura & Modelo de Negócio",
     "stack": ["UI/UX Layer", "API Gateway", "Orchestration", "Platform Core", "Infrastructure"],
     "models": [
       { "title": "On Demand", "description": "Pague pelo que usar. Ideal para startups." },
@@ -173,35 +288,47 @@
       { "title": "White Label", "description": "Sua marca, nossa tecnologia. 100% personalizado." }
     ]
   },
-  "trustSecurity": {
-    "headline": "Seguranca & Confianca",
+  "trustAndPricing": {
+    "headline": "Segurança & Modelo de Negócio",
     "badges": [
       { "label": "LGPD", "description": "Conformidade total" },
       { "label": "Meta Business", "description": "WhatsApp oficial" },
-      { "label": "BACEN", "description": "Regulamentacao bancaria" },
+      { "label": "BACEN", "description": "Regulamentação bancária" },
       { "label": "E2E", "description": "Criptografia ponta a ponta" }
     ],
     "highlights": [
       "Setup em 5 minutos",
       "Dados hospedados no Brasil",
-      "Backups automaticos 24/7",
+      "Backups automáticos 24/7",
       "Multi-tenant isolado"
+    ],
+    "models": [
+      { "title": "On Demand", "description": "Pague pelo que usar. Ideal para startups." },
+      { "title": "Success Fee", "description": "Custo atrelado a resultado. Sem risco." },
+      { "title": "White Label", "description": "Sua marca, nossa tecnologia. 100% personalizado." }
+    ],
+    "roiLabel": "ROI ESTIMADO",
+    "roiBars": [
+      { "label": "3 meses", "pct": 40 },
+      { "label": "6 meses", "pct": 70 },
+      { "label": "12 meses", "pct": 95 }
     ]
   },
   "cta": {
     "headline": "Vamos conversar?",
-    "subtitle": "Agende uma demonstracao e descubra como a Catalisa pode transformar seu negocio.",
+    "subtitle": "Agende uma demonstração e descubra como a Catalisa pode transformar seu negócio.",
+    "urgency": "40% dos apps terão AI agents até 2026. $58B em oportunidade com GenAI.",
     "whatsappButton": "Falar pelo WhatsApp"
   },
   "liveDemos": {
     "aiDemo": {
-      "badge": "IA EM ACAO",
+      "badge": "IA EM AÇÃO",
       "headline": "Uma frase. Um sistema",
       "headlineHighlight": "completo.",
-      "description": "Assista a IA analisar o pedido, planejar a arquitetura, criar 3 agentes especializados e montar o workflow \u2014 tudo sem uma linha de codigo.",
-      "caption": "Gravacao real da plataforma, sem cortes",
+      "description": "Assista a IA analisar o pedido, planejar a arquitetura, criar 3 agentes especializados e montar o workflow — tudo sem uma linha de código.",
+      "caption": "Gravação real da plataforma, sem cortes",
       "stats": [
-        { "value": "\u00d8 codigo", "label": "100% linguagem natural" },
+        { "value": "Ø código", "label": "100% linguagem natural" },
         { "value": "Minutos", "label": "Do pedido ao deploy" },
         { "value": "Pronto", "label": "Agentes + workflows inclusos" }
       ]
@@ -210,11 +337,11 @@
       "badge": "WHATSAPP AO VIVO",
       "headline": "O resultado final no",
       "headlineHighlight": "WhatsApp real.",
-      "description": "O sistema criado pela IA funcionando de verdade: lead entra, agente responde, workflow dispara \u2014 tudo automatico.",
+      "description": "O sistema criado pela IA funcionando de verdade: lead entra, agente responde, workflow dispara — tudo automático.",
       "highlights": [
-        "Resposta automatica em menos de 5 segundos",
+        "Resposta automática em menos de 5 segundos",
         "Contexto completo do lead preservado",
-        "Workflow dispara acoes em tempo real",
+        "Workflow dispara ações em tempo real",
         "CRM atualizado automaticamente"
       ]
     }

@@ -27,7 +27,7 @@ export function getOrganizationSchema() {
     ],
     sameAs: [
       'https://wa.me/5511977303414',
-      'https://www.linkedin.com/company/catalisa-io',
+      'https://www.linkedin.com/company/catalisa-platform',
     ],
     address: {
       '@type': 'PostalAddress',

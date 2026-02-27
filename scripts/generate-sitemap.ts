@@ -1,6 +1,7 @@
 import { writeFileSync } from 'fs';
 import { resolve } from 'path';
 import { playbookIds } from '../src/data/playbook-ids';
+import { articleSlugs } from '../src/data/articles';
 
 const BASE_URL = 'https://catalisa.io';
 
@@ -36,6 +37,14 @@ const routes: SitemapRoute[] = [
   { ptPath: '/como-funciona', enPath: '/en/how-it-works', priority: 0.8, changefreq: 'weekly' },
   { ptPath: '/integracoes/whatsapp', enPath: '/en/integrations/whatsapp', priority: 0.7, changefreq: 'monthly' },
   { ptPath: '/apresentacao-comercial', enPath: '/en/commercial-presentation', priority: 0.0, changefreq: 'monthly', noIndex: true },
+  // Insights
+  { ptPath: '/insights', enPath: '/en/insights', priority: 0.8, changefreq: 'weekly' as const },
+  ...articleSlugs.map((slug) => ({
+    ptPath: `/insights/${slug}`,
+    enPath: `/en/insights/${slug}`,
+    priority: 0.7,
+    changefreq: 'monthly' as const,
+  })),
   // Playbook detail pages
   ...playbookIds.map((id) => ({
     ptPath: `/playbooks/${id}`,

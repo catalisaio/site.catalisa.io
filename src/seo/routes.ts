@@ -1,6 +1,6 @@
 import { ptToEn } from '../i18n/useLocalizedPath';
 
-export type SchemaType = 'Organization' | 'WebSite' | 'SoftwareApplication' | 'BreadcrumbList' | 'VideoObject' | 'SiteNavigationElement' | 'FAQPage';
+export type SchemaType = 'Organization' | 'WebSite' | 'SoftwareApplication' | 'BreadcrumbList' | 'VideoObject' | 'SiteNavigationElement' | 'FAQPage' | 'CollectionPage';
 
 export interface RouteDefinition {
   ptPath: string;
@@ -12,7 +12,7 @@ export interface RouteDefinition {
   ogImage: string;
   noIndex?: boolean;
   /** Breadcrumb category for grouping (null = home) */
-  breadcrumbCategory?: 'platform' | 'industries';
+  breadcrumbCategory?: 'platform' | 'industries' | 'insights';
 }
 
 export const BASE_URL = 'https://catalisa.io';
@@ -208,6 +208,16 @@ export const routes: RouteDefinition[] = [
     changefreq: 'monthly',
     schemas: ['Organization', 'BreadcrumbList', 'FAQPage'],
     ogImage: '/og/default.png',
+  },
+  {
+    ptPath: '/insights',
+    enPath: '/en/insights',
+    pageKey: 'insights',
+    priority: 0.8,
+    changefreq: 'weekly',
+    schemas: ['Organization', 'BreadcrumbList', 'CollectionPage'],
+    ogImage: '/og/default.png',
+    breadcrumbCategory: 'insights',
   },
   {
     ptPath: '/apresentacao-comercial',

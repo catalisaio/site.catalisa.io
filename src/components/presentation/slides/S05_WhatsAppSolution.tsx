@@ -17,9 +17,14 @@ export function S05_WhatsAppSolution() {
     <Slide>
       <VStack spacing={{ base: 8, md: 12 }} w="full">
         <MotionBox initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-          <Heading fontSize={{ base: '2xl', md: '4xl', lg: '5xl' }} fontWeight="800" textAlign="center">
-            {t('whatsappSolution.headline')}
-          </Heading>
+          <VStack spacing={3}>
+            <Heading fontSize={{ base: '2xl', md: '4xl', lg: '5xl' }} fontWeight="800" textAlign="center">
+              {t('whatsappSolution.headline')}
+            </Heading>
+            <Text color={c.textMuted} fontSize={{ base: 'sm', md: 'md' }} textAlign="center" maxW="700px">
+              {t('whatsappSolution.subtitle')}
+            </Text>
+          </VStack>
         </MotionBox>
 
         <HStack

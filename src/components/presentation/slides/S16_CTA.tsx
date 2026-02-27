@@ -36,12 +36,18 @@ export function S16_CTA() {
         </MotionBox>
 
         <MotionBox initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }}>
+          <Text fontSize={{ base: 'sm', md: 'md' }} color="brand.300" fontWeight="600" maxW="500px">
+            {t('cta.urgency')}
+          </Text>
+        </MotionBox>
+
+        <MotionBox initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.3 }}>
           <Text fontSize={{ base: 'md', md: 'xl' }} color={c.textSecondary} maxW="600px">
             {t('cta.subtitle')}
           </Text>
         </MotionBox>
 
-        <MotionBox initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.4 }}>
+        <MotionBox initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.5 }}>
           <Button
             as="a"
             href={WHATSAPP_URL}
@@ -64,7 +70,7 @@ export function S16_CTA() {
               <FiExternalLink />
               <Text>catalisa.io</Text>
             </HStack>
-            <HStack as="a" href="https://linkedin.com/company/catalisa" target="_blank" rel="noopener noreferrer" spacing={1} _hover={{ color: c.textSecondary }}>
+            <HStack as="a" href="https://www.linkedin.com/company/catalisa-platform" target="_blank" rel="noopener noreferrer" spacing={1} _hover={{ color: c.textSecondary }}>
               <FiExternalLink />
               <Text>LinkedIn</Text>
             </HStack>

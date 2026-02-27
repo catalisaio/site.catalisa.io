@@ -1,11 +1,25 @@
 {
   "cover": {
-    "tagline": "Intelligent automation platform for WhatsApp and financial services",
+    "tagline": "Composable AI automation for WhatsApp and financial services",
     "badge": "Commercial Presentation \u2022 2026"
   },
-  "problemHook": {
+  "marketOpportunity": {
+    "badge": "MARKET OPPORTUNITY",
+    "headline": "The market is changing.",
+    "headlineHighlight": "The data proves it.",
+    "stats": [
+      { "value": "$58B", "label": "shake-up with GenAI and AI agents", "source": "Gartner" },
+      { "value": "40%", "label": "of enterprise apps with AI agents by 2026", "source": "Gartner" },
+      { "value": "80%", "label": "of support resolved by AI by 2029", "source": "Gartner" },
+      { "value": "$450B", "label": "enterprise revenue with AI agents by 2035", "source": "Gartner" },
+      { "value": "75%", "label": "of new apps will be low-code by 2026", "source": "Gartner" },
+      { "value": "98%", "label": "open rate on WhatsApp", "source": "Meta" }
+    ],
+    "disclaimer": "Sources: Gartner (2024-2025), Meta Business"
+  },
+  "theProblem": {
     "headline": "Your customers expect answers in seconds.",
-    "headlineHighlight": "How long does it take to build a new product?",
+    "headlineHighlight": "How about your operation?",
     "painPoints": [
       {
         "title": "Manual responses",
@@ -19,6 +33,12 @@
         "title": "Zero automation",
         "description": "Repetitive tasks consume hours. Qualification, follow-up, billing \u2014 all manual."
       }
+    ],
+    "metricsLabel": "TYPICAL SCENARIO",
+    "metrics": [
+      { "value": "3", "label": "agents needed" },
+      { "value": "2h", "label": "average wait time" },
+      { "value": "$3k", "label": "monthly cost" }
     ]
   },
   "solutionVision": {
@@ -40,27 +60,51 @@
       "description": "Onboarding, suitability, portfolio and rebalancing with integrated conversational AI."
     }
   },
-  "whatsappProblem": {
-    "headline": "The current customer service landscape",
-    "columns": [
-      { "title": "Manual responses", "description": "One message at a time. Leads go cold." },
-      { "title": "No context", "description": "Every agent switch starts from zero." },
-      { "title": "Zero automation", "description": "Qualification and follow-up 100% manual." }
-    ],
-    "metricsLabel": "TYPICAL SCENARIO",
-    "metrics": [
-      { "value": "3", "label": "agents needed" },
-      { "value": "2h", "label": "average wait time" },
-      { "value": "$3k", "label": "monthly cost" }
-    ]
-  },
   "whatsappSolution": {
     "headline": "Four pillars. One platform.",
+    "subtitle": "Connect your agents to the systems you already use \u2014 CRM, ERP, calendar, payments, any REST API.",
     "steps": [
       { "label": "Connect", "title": "WhatsApp", "description": "Multi-tenant, multi-device. QR Code or Cloud API." },
       { "label": "Automate", "title": "Workflows", "description": "Visual drag & drop. 60+ composable building blocks." },
       { "label": "Intelligence", "title": "AI Agents", "description": "Specialized agents with selective tools." },
       { "label": "Results", "title": "CRM & Analytics", "description": "Lead pipeline, metrics and complete history." }
+    ]
+  },
+  "agentOrchestra": {
+    "headline": "It's not a chatbot.",
+    "headlineHighlight": "It's a team of specialists.",
+    "subtitle": "A central orchestrator decides which agent to activate. Each specialist has its own tools, context and limits. Connected to your existing systems.",
+    "orchestrator": "Orchestrator",
+    "orchestratorDesc": "Lightweight model for triage, advanced for complex reasoning",
+    "agents": [
+      { "name": "SDR", "desc": "Qualifies leads and schedules meetings", "tools": ["WhatsApp", "CRM", "Calendar"] },
+      { "name": "Support", "desc": "Resolves issues and escalates when needed", "tools": ["WhatsApp", "Knowledge Base", "Tickets"] },
+      { "name": "Finance", "desc": "Generates invoices, negotiates and processes payments", "tools": ["WhatsApp", "Payments", "ERP"] },
+      { "name": "Onboarding", "desc": "Guides new clients and collects documents", "tools": ["WhatsApp", "CRM", "Docs"] },
+      { "name": "Analyst", "desc": "Generates reports and identifies trends", "tools": ["CRM", "Analytics", "ERP"] }
+    ],
+    "gartnerNote": "Gartner predicts 40% of enterprise apps will have AI agents by 2026. With Catalisa, yours can have them today."
+  },
+  "behindTheScenes": {
+    "headline": "What happens",
+    "headlineHighlight": "behind the conversation.",
+    "subtitle": "Every message triggers a chain of intelligent decisions. Different models for each task.",
+    "steps": [
+      { "label": "Message received", "detail": "WhatsApp Cloud API" },
+      { "label": "Intent classified", "detail": "Confidence: 96%" },
+      { "label": "CRM queried", "detail": "Lead history" },
+      { "label": "Lead scoring", "detail": "Score: 85/100" },
+      { "label": "Product selected", "detail": "Profile match" },
+      { "label": "Proposal generated", "detail": "Personalized in 2s" }
+    ],
+    "models": [
+      { "label": "Light", "time": "<1s", "desc": "Quick responses and triage" },
+      { "label": "Vision", "time": "2-3s", "desc": "Image and document analysis" },
+      { "label": "Advanced", "time": "3-5s", "desc": "Complex reasoning" }
+    ],
+    "chatMessages": [
+      { "from": "client", "text": "Hi, I'd like to know about the business plan" },
+      { "from": "agent", "text": "Hello! I'm Ana, Catalisa's assistant. I'll help you find the ideal plan for your company." }
     ]
   },
   "whatsappFeatures": {
@@ -72,6 +116,47 @@
       { "title": "Building Blocks", "description": "60+ blocks: AI, fintech, CRM and more." },
       { "title": "Lead CRM", "description": "Complete pipeline with kanban and dynamic fields." },
       { "title": "Security & LGPD", "description": "Isolated multi-tenant. Banking-grade encryption." }
+    ]
+  },
+  "aiInAction": {
+    "badge": "REAL CASE",
+    "headline": "From a single sentence to a complete",
+    "headlineHighlight": "customer service system",
+    "steps": [
+      { "label": "Described", "title": "\"I want insurance support via WhatsApp\"", "description": "One sentence. No code. No technical spec." },
+      { "label": "AI Planned", "title": "4-phase plan generated in seconds", "description": "The user just needed to say \"Approved.\"" },
+      { "label": "Executed", "title": "3 agents + 1 workflow created automatically", "description": "AI executed and the user gave feedback in real time." },
+      { "label": "Running", "title": "Live WhatsApp support in 13 seconds", "description": "From sentence to working system: under 3 minutes." }
+    ]
+  },
+  "useCases": {
+    "headline": "Agents that already",
+    "headlineHighlight": "deliver results.",
+    "scenarios": [
+      {
+        "title": "Digital SDR",
+        "before": { "label": "15 leads/month", "detail": "$9/lead" },
+        "after": { "label": "200+ leads/month", "detail": "$0.40/lead" },
+        "blocks": ["WhatsApp", "AI", "CRM", "Calendar"]
+      },
+      {
+        "title": "24/7 Support",
+        "before": { "label": "2h wait time", "detail": "35% resolution" },
+        "after": { "label": "5s response", "detail": "78% resolution" },
+        "blocks": ["WhatsApp", "AI", "Knowledge Base", "Tickets"]
+      },
+      {
+        "title": "Smart Collections",
+        "before": { "label": "15% recovery", "detail": "100% manual" },
+        "after": { "label": "42% recovery", "detail": "80% less cost" },
+        "blocks": ["WhatsApp", "AI", "Payments", "ERP"]
+      },
+      {
+        "title": "KYC Onboarding",
+        "before": { "label": "5 days process", "detail": "Manual and fragmented" },
+        "after": { "label": "20 min process", "detail": "100% automated" },
+        "blocks": ["WhatsApp", "AI", "Compliance", "Docs"]
+      }
     ]
   },
   "beforeAfter": {
@@ -91,18 +176,9 @@
         { "label": "Response time", "value": "5s" },
         { "label": "Monthly cost", "value": "$160" }
       ]
-    }
-  },
-  "aiInAction": {
-    "badge": "REAL CASE",
-    "headline": "From a single sentence to a complete",
-    "headlineHighlight": "customer service system",
-    "steps": [
-      { "label": "Described", "title": "\"I want insurance support via WhatsApp\"", "description": "One sentence. No code. No technical spec." },
-      { "label": "AI Planned", "title": "4-phase plan generated in seconds", "description": "The user just needed to say \"Approved.\"" },
-      { "label": "Executed", "title": "3 agents + 1 workflow created automatically", "description": "AI executed and the user gave feedback in real time." },
-      { "label": "Running", "title": "Live WhatsApp support in 13 seconds", "description": "From sentence to working system: under 3 minutes." }
-    ]
+    },
+    "gartnerCallout": "Gartner: companies with AI will save $80B globally by 2026",
+    "roiCallout": "ROI: $3.50 return per $1 invested"
   },
   "differentiators": {
     "headline": "Why Catalisa?",
@@ -113,19 +189,58 @@
       { "vs": "vs Internal dev", "title": "60+ blocks. Months of savings.", "description": "Ready-made, tested building blocks. Focus on your business, not infrastructure." }
     ]
   },
-  "bankingLego": {
-    "headline": "Banking as a LEGO",
-    "subtitle": "Modular non-core components to build complete financial products.",
-    "tagline": "Deploy in weeks. Fully functional.",
+  "positioningMap": {
+    "headline": "Positioning Map",
+    "subtitle": "The only platform that combines low-code + AI agents + native WhatsApp + composable building blocks.",
+    "axisX": "Completeness of Vision",
+    "axisY": "Ability to Execute",
+    "quadrants": { "niche": "Niche", "visionary": "Visionaries", "challenger": "Challengers", "leader": "Leaders" },
+    "players": [
+      { "name": "WATI", "quadrant": "niche" },
+      { "name": "Blip", "quadrant": "niche" },
+      { "name": "Zapier", "quadrant": "challenger" },
+      { "name": "Make", "quadrant": "challenger" },
+      { "name": "Intercom", "quadrant": "challenger" },
+      { "name": "Zendesk", "quadrant": "challenger" },
+      { "name": "Catalisa", "quadrant": "visionary", "highlight": true }
+    ],
+    "disclaimer": "Conceptual representation based on public Gartner frameworks. Not an official Magic Quadrant."
+  },
+  "agenticQuadrant": {
+    "badge": "AGENTIC BUSINESS AUTOMATION",
+    "headline": "The new market",
+    "headlineHighlight": "category.",
+    "subtitle": "Catalisa operates at the intersection of three markets that no single player dominates.",
+    "axisX": "Business Scope",
+    "axisY": "Agent Intelligence",
+    "quadrants": { "niche": "Niche", "visionary": "Visionaries", "challenger": "Challengers", "leader": "Leaders" },
+    "players": [
+      { "name": "WATI", "quadrant": "niche" },
+      { "name": "Manychat", "quadrant": "niche" },
+      { "name": "Chatfuel", "quadrant": "niche" },
+      { "name": "Zapier", "quadrant": "challenger" },
+      { "name": "Make", "quadrant": "challenger" },
+      { "name": "n8n", "quadrant": "challenger" },
+      { "name": "Cognigy", "quadrant": "visionary" },
+      { "name": "boost.ai", "quadrant": "visionary" },
+      { "name": "Kore.ai", "quadrant": "visionary" },
+      { "name": "Catalisa", "quadrant": "leader", "highlight": true }
+    ],
+    "insights": [
+      { "label": "Conv AI Leaders", "text": "Smart agents, but scope limited to support and customer service." },
+      { "label": "Automation Leaders", "text": "Broad automation scope, but no real intelligent agents." },
+      { "label": "Catalisa", "text": "Combines both + native WhatsApp + enterprise composable building blocks." }
+    ],
+    "disclaimer": "Conceptual representation based on market analysis. Not an official Magic Quadrant."
+  },
+  "buildingBlocksMerged": {
+    "headline": "Building Blocks",
+    "subtitle": "Banking as a LEGO \u2014 23+ modular components ready to compose your product.",
     "highlights": [
       "Modular and composable",
       "Built-in compliance",
       "White-label ready"
-    ]
-  },
-  "buildingBlocks": {
-    "headline": "23+ Building Blocks",
-    "subtitle": "Each block is an independent functional component, ready to compose your product.",
+    ],
     "categories": [
       {
         "name": "Credit",
@@ -173,8 +288,8 @@
       { "title": "White Label", "description": "Your brand, our technology. 100% customized." }
     ]
   },
-  "trustSecurity": {
-    "headline": "Security & Trust",
+  "trustAndPricing": {
+    "headline": "Security & Business Model",
     "badges": [
       { "label": "LGPD", "description": "Full compliance" },
       { "label": "Meta Business", "description": "Official WhatsApp" },
@@ -186,11 +301,23 @@
       "Data hosted in Brazil",
       "Automatic 24/7 backups",
       "Isolated multi-tenant"
+    ],
+    "models": [
+      { "title": "On Demand", "description": "Pay for what you use. Ideal for startups." },
+      { "title": "Success Fee", "description": "Cost tied to results. Zero risk." },
+      { "title": "White Label", "description": "Your brand, our technology. 100% customized." }
+    ],
+    "roiLabel": "ESTIMATED ROI",
+    "roiBars": [
+      { "label": "3 months", "pct": 40 },
+      { "label": "6 months", "pct": 70 },
+      { "label": "12 months", "pct": 95 }
     ]
   },
   "cta": {
     "headline": "Let's talk?",
     "subtitle": "Schedule a demo and discover how Catalisa can transform your business.",
+    "urgency": "40% of apps will have AI agents by 2026. $58B opportunity with GenAI.",
     "whatsappButton": "Chat on WhatsApp"
   },
   "liveDemos": {

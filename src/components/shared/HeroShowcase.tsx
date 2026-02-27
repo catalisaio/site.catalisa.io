@@ -190,11 +190,13 @@ export function HeroShowcase({ activeIndex, onTabChange, paused }: HeroShowcaseP
                   position="absolute"
                   bottom={0}
                   left={0}
+                  w="full"
                   h="2px"
                   bg={tab.color}
                   as={motion.div}
-                  initial={{ width: '0%' }}
-                  animate={{ width: paused ? undefined : '100%' }}
+                  style={{ transformOrigin: 'left' }}
+                  initial={{ scaleX: 0 }}
+                  animate={{ scaleX: paused ? undefined : 1 }}
                   transition={{ duration: tab.dwellTime / 1000, ease: 'linear' } as any}
                 />
               )}

@@ -14,7 +14,7 @@ import { ArticleBody } from '../components/insights/ArticleBody';
 import { CatalisaConnection } from '../components/insights/CatalisaConnection';
 import { ArticleReferences } from '../components/insights/ArticleReferences';
 import { RelatedArticles } from '../components/insights/RelatedArticles';
-import { getArticleBySlug } from '../data/articles';
+import { getArticleBySlug, categoryLabelKeys } from '../data/articles';
 
 export function InsightArticle() {
   const { slug } = useParams<{ slug: string }>();
@@ -47,6 +47,7 @@ export function InsightArticle() {
 
   const metaTitle = t(article.metaTitleKey.replace('insights.', ''));
   const metaDescription = t(article.metaDescriptionKey.replace('insights.', ''));
+  const categoryLabel = t(categoryLabelKeys[article.category].replace('insights.', ''));
 
   return (
     <>
@@ -54,6 +55,14 @@ export function InsightArticle() {
         pageKey="insights"
         title={metaTitle}
         description={metaDescription}
+        ogImage={`/og/insights/${article.slug}.png`}
+        article={{
+          publishedTime: `${article.publishedDate}T00:00:00-03:00`,
+          modifiedTime: `${(article.updatedDate ?? article.publishedDate)}T00:00:00-03:00`,
+          author: 'Catalisa',
+          section: categoryLabel,
+          tags: article.keywords,
+        }}
       />
       <JsonLd data={schemas} />
 

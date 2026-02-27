@@ -18,6 +18,7 @@ import { useLocalizedPath } from '../i18n/useLocalizedPath';
 import { SEOHead } from '../seo/SEOHead';
 import { JsonLd } from '../seo/JsonLd';
 import { getInsightsCollectionSchema } from '../seo/schemas/article';
+import { getBreadcrumbSchema } from '../seo/schemas/breadcrumb';
 import { MotionBox, fadeInUp } from '../components/motion';
 import { GradientText } from '../components/shared/GradientText';
 import { PageCTA } from '../components/shared/PageCTA';
@@ -33,6 +34,7 @@ const STAT_ICONS = [FiTrendingUp, FiZap, FiTarget, FiClock];
 
 export function InsightsListing() {
   const { t } = useTranslation('insights');
+  const { t: tSeo } = useTranslation('seo');
   const { t: tCommon } = useTranslation('common');
   const lp = useLocalizedPath();
   const [activeCategory, setActiveCategory] = useState<ArticleCategory | 'all'>('all');
@@ -45,14 +47,19 @@ export function InsightsListing() {
   const featured = filtered[0];
   const rest = filtered.slice(1);
 
-  const collectionSchema = useMemo(
-    () =>
+  const schemas = useMemo(
+    () => [
       getInsightsCollectionSchema(
         t('listing.heading') + ' ' + t('listing.headingGradient'),
         t('listing.subtitle'),
         articles.map((a) => `/insights/${a.slug}`),
       ),
-    [t],
+      getBreadcrumbSchema([
+        { name: tSeo('breadcrumbs.home'), path: lp('/') },
+        { name: 'Insights', path: lp('/insights') },
+      ]),
+    ],
+    [t, tSeo, lp],
   );
 
   const heroStats = [
@@ -65,7 +72,7 @@ export function InsightsListing() {
   return (
     <>
       <SEOHead pageKey="insights" />
-      <JsonLd data={collectionSchema} />
+      <JsonLd data={schemas} />
 
       {/* Hero — Light theme, commercial, impactful */}
       <Box

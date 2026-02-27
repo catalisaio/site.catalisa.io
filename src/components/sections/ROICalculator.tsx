@@ -84,6 +84,7 @@ export function ROICalculator() {
                 <Text fontSize="sm" fontWeight="700" color="gray.900">{attendants}</Text>
               </Flex>
               <Slider
+                aria-label="Número de atendentes"
                 value={attendants}
                 onChange={setAttendants}
                 min={1}
@@ -104,6 +105,7 @@ export function ROICalculator() {
                 <Text fontSize="sm" fontWeight="700" color="gray.900">{responseTime} {t('roiCalculator.hours')}</Text>
               </Flex>
               <Slider
+                aria-label="Tempo de resposta"
                 value={responseTime}
                 onChange={setResponseTime}
                 min={0.5}
@@ -124,6 +126,7 @@ export function ROICalculator() {
                 <Text fontSize="sm" fontWeight="700" color="gray.900">R$ {monthlyCost.toLocaleString('pt-BR')}</Text>
               </Flex>
               <Slider
+                aria-label="Custo mensal"
                 value={monthlyCost}
                 onChange={setMonthlyCost}
                 min={3000}

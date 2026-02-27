@@ -1,41 +1,45 @@
+import { lazy, Suspense } from 'react';
 import { HeroTeamBuilder } from '../components/sections/HeroTeamBuilder';
 import { LogoMarquee } from '../components/sections/LogoMarquee';
-import { MarketValidation } from '../components/sections/MarketValidation';
-import { MeetYourTeam } from '../components/sections/MeetYourTeam';
-import { WhatsAppCommandCenter } from '../components/sections/WhatsAppCommandCenter';
-import { AppBuilderShowcase } from '../components/sections/AppBuilderShowcase';
-import { YourToolsTheirHands } from '../components/sections/YourToolsTheirHands';
-import { AgentBuilderShowcase } from '../components/sections/AgentBuilderShowcase';
-import { AppsInAction } from '../components/sections/AppsInAction';
-import { LiveOperationsDashboard } from '../components/sections/LiveOperationsDashboard';
-import { AgentsAndAppsTogether } from '../components/sections/AgentsAndAppsTogether';
-import { AIInAction } from '../components/sections/AIInAction';
-import { ROICalculator } from '../components/sections/ROICalculator';
-import { IndustrySolutions } from '../components/sections/IndustrySolutions';
-import { TrustSection } from '../components/sections/TrustSection';
-import { FAQ } from '../components/sections/FAQ';
-import { FinalCTA } from '../components/sections/FinalCTA';
+
+const MarketValidation = lazy(() => import('../components/sections/MarketValidation').then(m => ({ default: m.MarketValidation })));
+const MeetYourTeam = lazy(() => import('../components/sections/MeetYourTeam').then(m => ({ default: m.MeetYourTeam })));
+const WhatsAppCommandCenter = lazy(() => import('../components/sections/WhatsAppCommandCenter').then(m => ({ default: m.WhatsAppCommandCenter })));
+const AppBuilderShowcase = lazy(() => import('../components/sections/AppBuilderShowcase').then(m => ({ default: m.AppBuilderShowcase })));
+const YourToolsTheirHands = lazy(() => import('../components/sections/YourToolsTheirHands').then(m => ({ default: m.YourToolsTheirHands })));
+const AgentBuilderShowcase = lazy(() => import('../components/sections/AgentBuilderShowcase').then(m => ({ default: m.AgentBuilderShowcase })));
+const AppsInAction = lazy(() => import('../components/sections/AppsInAction').then(m => ({ default: m.AppsInAction })));
+const LiveOperationsDashboard = lazy(() => import('../components/sections/LiveOperationsDashboard').then(m => ({ default: m.LiveOperationsDashboard })));
+const AgentsAndAppsTogether = lazy(() => import('../components/sections/AgentsAndAppsTogether').then(m => ({ default: m.AgentsAndAppsTogether })));
+const AIInAction = lazy(() => import('../components/sections/AIInAction').then(m => ({ default: m.AIInAction })));
+const ROICalculator = lazy(() => import('../components/sections/ROICalculator').then(m => ({ default: m.ROICalculator })));
+const IndustrySolutions = lazy(() => import('../components/sections/IndustrySolutions').then(m => ({ default: m.IndustrySolutions })));
+const TrustSection = lazy(() => import('../components/sections/TrustSection').then(m => ({ default: m.TrustSection })));
+const FAQ = lazy(() => import('../components/sections/FAQ').then(m => ({ default: m.FAQ })));
+const FinalCTA = lazy(() => import('../components/sections/FinalCTA').then(m => ({ default: m.FinalCTA })));
 
 export function Home() {
   return (
     <>
       <HeroTeamBuilder />
       <LogoMarquee />
-      <MarketValidation />
-      <MeetYourTeam />
-      <WhatsAppCommandCenter />
-      <AppBuilderShowcase />
-      <YourToolsTheirHands />
-      <AgentBuilderShowcase />
-      <AppsInAction />
-      <LiveOperationsDashboard />
-      <AgentsAndAppsTogether />
-      <AIInAction />
-      <ROICalculator />
-      <IndustrySolutions />
-      <TrustSection />
-      <FAQ />
-      <FinalCTA />
+      <Suspense>
+        <MarketValidation />
+        <MeetYourTeam />
+        <WhatsAppCommandCenter />
+        <AppBuilderShowcase />
+        <YourToolsTheirHands />
+        <AgentBuilderShowcase />
+        <AppsInAction />
+        <LiveOperationsDashboard />
+        <AgentsAndAppsTogether />
+        <AIInAction />
+        <ROICalculator />
+        <IndustrySolutions />
+        <TrustSection />
+        <FAQ />
+        <FinalCTA />
+      </Suspense>
     </>
   );
 }

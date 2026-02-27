@@ -18,7 +18,7 @@ export function LogoMarquee() {
   return (
     <Box bg="gray.50" py={6} overflow="hidden">
       <Container maxW="1280px" mb={4}>
-        <Text textAlign="center" fontSize="xs" color="gray.400" textTransform="uppercase" letterSpacing="wider" fontWeight="600">
+        <Text textAlign="center" fontSize="xs" color="gray.500" textTransform="uppercase" letterSpacing="wider" fontWeight="600">
           {t('logoMarquee.title')}
         </Text>
       </Container>
@@ -33,7 +33,7 @@ export function LogoMarquee() {
               key={i}
               fontSize="sm"
               fontWeight="600"
-              color="gray.400"
+              color="gray.500"
               whiteSpace="nowrap"
               letterSpacing="wide"
               _hover={{ color: 'brand.500' }}

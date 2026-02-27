@@ -8,9 +8,6 @@ import {
   VStack,
   Flex,
   Icon,
-  List,
-  ListItem,
-  ListIcon,
 } from '@chakra-ui/react';
 import { AnimatePresence, motion, useScroll, useMotionValueEvent } from 'framer-motion';
 import { FiCheck, FiServer, FiClock, FiLayers } from 'react-icons/fi';
@@ -402,7 +399,7 @@ export function AppBuilderShowcase() {
                       {currentStep.description}
                     </Text>
 
-                    <List spacing={3} w="full">
+                    <VStack spacing={3} w="full" align="stretch">
                       {currentStep.bullets.map((bullet, i) => (
                         <motion.div
                           key={bullet}
@@ -410,18 +407,17 @@ export function AppBuilderShowcase() {
                           animate={{ opacity: 1, x: 0 }}
                           transition={{ delay: 0.1 + i * 0.1, duration: 0.3 }}
                         >
-                          <ListItem
-                            display="flex"
-                            alignItems="center"
+                          <HStack
+                            align="center"
                             color="whiteAlpha.800"
                             fontSize={{ base: 'sm', md: 'md' }}
                           >
-                            <ListIcon as={FiCheck} color="orange.300" fontSize="md" mr={2} />
-                            {bullet}
-                          </ListItem>
+                            <Icon as={FiCheck} color="orange.300" fontSize="md" mr={2} flexShrink={0} />
+                            <Text>{bullet}</Text>
+                          </HStack>
                         </motion.div>
                       ))}
-                    </List>
+                    </VStack>
                   </VStack>
                 </motion.div>
               </AnimatePresence>

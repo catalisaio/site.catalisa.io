@@ -1,18 +1,26 @@
 {
   "listing": {
     "badge": "Insights",
-    "title": "Artificial Intelligence in Practice:",
-    "titleHighlight": "Cases and Market Analysis",
-    "subtitle": "Real data on how leading companies are using conversational AI, WhatsApp agents, and intelligent automation to multiply results.",
+    "heading": "Conversational AI",
+    "headingGradient": "That Drives Real Results",
+    "subtitle": "Cases and analyses of how market leaders are using AI agents, WhatsApp, and intelligent automation to multiply conversions, reduce costs, and scale operations.",
     "filterAll": "All",
-    "readMore": "Read more",
-    "readingTime": "{{minutes}} min read",
     "featured": "Featured",
-    "case": "Case Study",
-    "thematic": "Analysis",
-    "ctaTitle": "Want to implement AI in your business?",
-    "ctaDescription": "See how Catalisa can help you replicate results like these with AI agents, WhatsApp integration, and intelligent automation.",
-    "ctaButton": "Schedule a Demo"
+    "readMore": "Read more",
+    "readingTime": "{{min}} min read",
+    "source": "Source",
+    "heroStats": {
+      "roi": { "value": "270%", "label": "Proven ROI (Forrester)" },
+      "conversion": { "value": "3-4x", "label": "More conversion vs. bots" },
+      "selfService": { "value": "87%", "label": "AI Resolution Rate" },
+      "responseTime": { "value": "83%", "label": "Faster Response Time" }
+    },
+    "heroCta": "Explore Cases",
+    "heroSecondaryCta": "Talk to an Expert",
+    "pageCTA": {
+      "heading": "Want to implement AI in your business?",
+      "subtitle": "See how Catalisa can help you replicate results like these"
+    }
   },
   "categories": {
     "varejo": "Retail",
@@ -22,17 +30,16 @@
     "estrategia": "Strategy"
   },
   "article": {
+    "referencesTitle": "Bibliographic References",
+    "relatedTitle": "Related Articles",
+    "catalisaCTA": "See the platform",
+    "ctaHeading": "Want to replicate results like these?",
+    "ctaSubtitle": "Schedule a demo and see how Catalisa can transform your business",
+    "ctaPrimary": "Schedule Demo",
+    "ctaSecondary": "Talk to an Expert",
+    "breadcrumbInsights": "Insights",
     "source": "Source",
-    "publishedAt": "Published on",
-    "challenge": "The Challenge",
-    "solution": "The Solution",
-    "results": "Results and Impact",
-    "catalisaSection": "How Catalisa Addresses This Scenario",
-    "catalisaCta": "See the platform",
-    "references": "Bibliographic References",
-    "relatedArticles": "Related Articles",
-    "backToInsights": "Back to Insights",
-    "metrics": "Key Metrics"
+    "readingTime": "{{min}} min read"
   },
   "articles": {
     "boticario-assistente-ia-conversao-ecommerce": {

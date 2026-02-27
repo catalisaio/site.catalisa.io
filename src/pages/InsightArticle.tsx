@@ -1,10 +1,9 @@
 import { useMemo } from 'react';
 import { useParams, Navigate } from 'react-router-dom';
-import { Box, Container } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
 import { SEOHead } from '../seo/SEOHead';
 import { JsonLd } from '../seo/JsonLd';
-import { Breadcrumbs } from '../seo/Breadcrumbs';
 import { getBreadcrumbSchema } from '../seo/schemas/breadcrumb';
 import { getBlogPostingSchema } from '../seo/schemas/article';
 import { useLocalizedPath } from '../i18n/useLocalizedPath';
@@ -58,16 +57,6 @@ export function InsightArticle() {
       />
       <JsonLd data={schemas} />
 
-      {/* Breadcrumbs */}
-      <Box pt={2}>
-        <Container maxW="780px">
-          <Breadcrumbs
-            currentLabel={t(article.titleKey.replace('insights.', ''))}
-            currentPtPath={`/insights/${article.slug}`}
-          />
-        </Container>
-      </Box>
-
       <ArticleHero article={article} />
       <ArticleMetrics article={article} />
       <ArticleBody article={article} />
@@ -81,7 +70,9 @@ export function InsightArticle() {
         secondaryCTA={{ label: t('article.ctaSecondary'), to: lp('/demo') }}
       />
 
-      <RelatedArticles article={article} />
+      <Box mt={-4}>
+        <RelatedArticles article={article} />
+      </Box>
     </>
   );
 }

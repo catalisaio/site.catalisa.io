@@ -65,11 +65,11 @@ export function Footer() {
               <Box as="span" color="white">Catalisa</Box>
               <Box as="span" color="#ECC94B">.</Box>
             </Flex>
-            <Text fontSize="sm" color="whiteAlpha.600" lineHeight="tall">
+            <Text fontSize="sm" color="whiteAlpha.700" lineHeight="tall">
               {t('footer.description')}
             </Text>
             <HStack spacing={3}>
-              <ChakraLink href="https://wa.me/5511977303414" _hover={{ color: 'whatsapp.400' }} isExternal>
+              <ChakraLink href="https://wa.me/5511977303414" aria-label="WhatsApp" _hover={{ color: 'whatsapp.400' }} isExternal>
                 <FiMessageCircle size={18} />
               </ChakraLink>
             </HStack>
@@ -88,7 +88,7 @@ export function Footer() {
                     as={Link}
                     to={link.to}
                     fontSize="sm"
-                    color="whiteAlpha.600"
+                    color="whiteAlpha.700"
                     _hover={{ color: 'white' }}
                   >
                     {link.label}
@@ -98,7 +98,7 @@ export function Footer() {
                     key={link.label}
                     href={link.href}
                     fontSize="sm"
-                    color="whiteAlpha.600"
+                    color="whiteAlpha.700"
                     _hover={{ color: 'white' }}
                     isExternal
                   >
@@ -117,10 +117,10 @@ export function Footer() {
             align="center"
             gap={4}
           >
-            <Text fontSize="xs" color="whiteAlpha.400">
+            <Text fontSize="xs" color="whiteAlpha.500">
               &copy; {new Date().getFullYear()} {t('footer.copyright')}
             </Text>
-            <HStack spacing={4} fontSize="xs" color="whiteAlpha.400">
+            <HStack spacing={4} fontSize="xs" color="whiteAlpha.500">
               <Text>{t('badges.lgpd')}</Text>
               <Text>{t('badges.metaWhatsApp')}</Text>
               <Text>{t('badges.dataBrazil')}</Text>

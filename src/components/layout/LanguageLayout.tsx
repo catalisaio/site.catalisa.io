@@ -1,4 +1,4 @@
-import { useEffect, useMemo } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { SEOHead } from '../../seo/SEOHead';
@@ -16,9 +16,15 @@ interface LanguageLayoutProps {
 export function LanguageLayout({ lang }: LanguageLayoutProps) {
   const { i18n } = useTranslation();
   const location = useLocation();
+  const [ready, setReady] = useState(i18n.language === lang);
 
   useEffect(() => {
-    i18n.changeLanguage(lang);
+    if (i18n.language === lang) {
+      setReady(true);
+      return;
+    }
+    setReady(false);
+    i18n.changeLanguage(lang).then(() => setReady(true));
     document.documentElement.lang = lang === 'en-US' ? 'en' : 'pt-BR';
   }, [lang, i18n]);
 
@@ -43,6 +49,8 @@ export function LanguageLayout({ lang }: LanguageLayoutProps) {
     }
     return result;
   }, [schemas]);
+
+  if (!ready) return null;
 
   return (
     <>

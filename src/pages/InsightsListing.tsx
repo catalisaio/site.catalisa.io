@@ -27,7 +27,7 @@ import { articles, categoryColors, categoryLabelKeys } from '../data/articles';
 import type { ArticleCategory } from '../data/articles';
 
 const categories: (ArticleCategory | 'all')[] = [
-  'all', 'varejo', 'food-tech', 'atendimento', 'conversational-commerce', 'estrategia',
+  'all', 'varejo', 'food-tech', 'atendimento', 'conversational-commerce', 'estrategia', 'financeiro',
 ];
 
 const STAT_ICONS = [FiTrendingUp, FiZap, FiTarget, FiClock];

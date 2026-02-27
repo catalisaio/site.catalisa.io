@@ -61,6 +61,21 @@ export function TrustSection() {
             {t('trust.infrastructure')} <Text as="span" fontWeight="600" color="gray.700">{t('trust.cloudBrazil')}</Text> {t('trust.monitoring')}
           </Text>
         </Box>
+
+        {/* Gartner callout */}
+        <Box
+          bg="brand.50"
+          px={6}
+          py={4}
+          borderRadius="xl"
+          border="1px solid"
+          borderColor="brand.200"
+          maxW="600px"
+        >
+          <Text fontSize="sm" fontWeight="600" color="brand.700" textAlign="center" fontStyle="italic">
+            "{t('trust.gartnerCallout')}"
+          </Text>
+        </Box>
       </VStack>
     </SectionWrapper>
   );

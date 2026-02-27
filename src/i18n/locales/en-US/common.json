@@ -33,7 +33,9 @@
         "title": "WhatsApp & Messaging",
         "support247": { "label": "24/7 Support", "desc": "Respond to customers automatically" },
         "campaigns": { "label": "Campaigns & notifications", "desc": "Bulk sending with personalization" },
-        "multichannel": { "label": "Multichannel integration", "desc": "WhatsApp, SMS, email" }
+        "multichannel": { "label": "Multichannel integration", "desc": "WhatsApp, SMS, email" },
+        "integration": { "label": "WhatsApp Integration", "desc": "Official Meta API, QR Code, 98% open rate" },
+        "aiAgentsWhatsApp": { "label": "AI Agents on WhatsApp", "desc": "AI agents that sell and serve on WhatsApp" }
       },
       "support": {
         "title": "Customer Support",
@@ -111,7 +113,9 @@
     "encryption": "End-to-end encryption",
     "multiTenant": "Multi-tenant isolation",
     "rbac": "Access control (RBAC)",
-    "whatsapp247": "24/7 WhatsApp support"
+    "whatsapp247": "24/7 WhatsApp support",
+    "gartnerValidated": "Validated by Gartner and Meta data",
+    "composableRevenue": "Composable drives 30% more revenue (Gartner)"
   },
   "logoMarquee": {
     "title": "Integrations and tools your agents master"

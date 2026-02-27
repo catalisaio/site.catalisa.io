@@ -79,6 +79,20 @@ export function FinalCTA() {
           </Button>
         </HStack>
 
+        {/* Urgency note */}
+        <Box
+          bg="whiteAlpha.100"
+          px={5}
+          py={3}
+          borderRadius="xl"
+          border="1px solid"
+          borderColor="whiteAlpha.200"
+        >
+          <Text fontSize="sm" fontWeight="600" color="whiteAlpha.900">
+            {t('finalCTA.urgencyNote')}
+          </Text>
+        </Box>
+
         <HStack spacing={6} fontSize="sm" color="whiteAlpha.700" flexWrap="wrap" justify="center">
           <Text>{t('badges.setupInMinutes', { ns: 'common' })}</Text>
           <Box w={1} h={1} borderRadius="full" bg="whiteAlpha.400" />

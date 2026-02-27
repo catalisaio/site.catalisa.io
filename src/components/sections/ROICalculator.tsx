@@ -59,6 +59,9 @@ export function ROICalculator() {
         <Text color="gray.500" fontSize={{ base: 'md', md: 'lg' }} maxW="500px">
           {t('roiCalculator.subtitle')}
         </Text>
+        <Text color="brand.500" fontSize="sm" fontWeight="600" maxW="500px">
+          {t('roiCalculator.benchmark')}
+        </Text>
       </VStack>
 
       <Flex
@@ -187,6 +190,17 @@ export function ROICalculator() {
           </Text>
         </HStack>
       </Box>
+      {/* Benchmark note */}
+      <Text
+        mt={4}
+        color="gray.400"
+        fontSize="xs"
+        textAlign="center"
+        maxW="900px"
+        mx="auto"
+      >
+        {t('roiCalculator.benchmarkNote')}
+      </Text>
     </SectionWrapper>
   );
 }

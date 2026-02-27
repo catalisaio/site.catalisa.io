@@ -1,0 +1,266 @@
+{
+  "seo": {
+    "title": "AI Agents no WhatsApp | Catalisa",
+    "description": "Monte seus agentes de IA no WhatsApp em minutos. Conecte ao seu CRM, ERP e sistemas existentes. Zero código. Enterprise-grade."
+  },
+  "hero": {
+    "badge": "AGENTES DE IA NO WHATSAPP",
+    "headline": "A Lu do Magalu já vende pelo WhatsApp com IA.",
+    "headlineGradient": "Sua empresa pode fazer o mesmo.",
+    "subtitle": "Grandes varejistas já transformaram conversas em canais de venda com 3x mais conversão e NPS 90, usando agentes especialistas que buscam produtos, comparam specs, montam carrinhos e fecham vendas — tudo dentro do WhatsApp. Com a Catalisa, você monta seus próprios agentes em minutos. Conecte-os ao seu CRM, ERP e sistemas existentes — ou use nossos 60+ Building Blocks enterprise. Sem código, sem meses de desenvolvimento.",
+    "stats": [
+      { "value": "3x", "label": "conversão vs busca no app" },
+      { "value": "98%", "label": "taxa de abertura" },
+      { "value": "NPS 90", "label": "satisfação" },
+      { "value": "$3,50", "label": "ROI por $1" }
+    ],
+    "cta": "Monte seus agentes",
+    "ctaSecondary": "Veja demo ao vivo",
+    "chatTitle": "Agente de Vendas",
+    "chatMessages": [
+      { "text": "Oi, vi o anúncio da TV 55\" que está em promoção", "sent": false, "delay": 0.5 },
+      { "text": "Olá! Sim, a Smart TV 55\" LG está com 30% de desconto! De R$ 3.299 por R$ 2.309. Quer que eu reserve pra você?", "sent": true, "delay": 3.0 },
+      { "text": "Aceito! Pode parcelar?", "sent": false, "delay": 5.0 },
+      { "text": "Claro! 12x de R$ 192,42 sem juros no cartão. Vou gerar seu link de pagamento agora.", "sent": true, "delay": 7.5 }
+    ]
+  },
+  "marketValidation": {
+    "badge": "O MERCADO JÁ DECIDIU",
+    "headline": "Não é tendência.",
+    "headlineGradient": "É o novo padrão.",
+    "subtitle": "Grandes varejistas já usam equipes de agentes especialistas no WhatsApp com 3x mais conversão. Líderes globais validaram: arquitetura composable com agentes de IA é o caminho. O Gartner confirma.",
+    "stats": [
+      { "value": "15M+", "label": "perfis WhatsApp já mapeados como público para vendas com IA", "source": "Cases de mercado" },
+      { "value": "$58B", "label": "shake-up com GenAI e AI agents até 2026", "source": "Gartner" },
+      { "value": "80%", "label": "dos atendimentos resolvidos por AI até 2029", "source": "Gartner" },
+      { "value": "1M+", "label": "usuários frequentes em operações de IA no WhatsApp", "source": "Cases de mercado" },
+      { "value": "$20B+", "label": "conversational commerce até 2030", "source": "Mordor Intelligence" },
+      { "value": "$44,5B", "label": "mercado low-code até 2026", "source": "Gartner" }
+    ],
+    "disclaimer": "Fontes: Gartner (2024-2025), Meta Business, Infobip, Mordor Intelligence, cases públicos de mercado."
+  },
+  "anatomy": {
+    "badge": "ANATOMIA DE UM AGENTE",
+    "headline": "O que acontece",
+    "headlineGradient": "por trás da conversa.",
+    "subtitle": "Cada mensagem ativa uma cadeia de decisões inteligentes. Assim como grandes varejistas usam agentes que buscam produtos, comparam especificações e fecham vendas — seus agentes podem fazer o mesmo para qualquer operação.",
+    "multiModelNote": "Modelos de IA diferentes para cada tarefa: leves para respostas rápidas (< 1s), visão para imagens (2-3s), e avançados para raciocínio complexo (3-5s). A plataforma escolhe automaticamente.",
+    "steps": [
+      {
+        "chat": { "text": "Oi, quero saber sobre o plano empresarial", "sent": false },
+        "timeline": [
+          { "title": "Mensagem recebida", "detail": "WhatsApp Cloud API" },
+          { "title": "Agente SDR ativado", "detail": "Perfil: qualificação de leads" }
+        ]
+      },
+      {
+        "chat": { "text": "Entendi! Antes de apresentar os planos, posso fazer algumas perguntas rápidas sobre sua empresa?", "sent": true },
+        "timeline": [
+          { "title": "NLP classifica intenção", "detail": "Intenção: interesse_plano (96%)" },
+          { "title": "Contexto do CRM carregado", "detail": "Novo lead identificado" }
+        ]
+      },
+      {
+        "chat": { "text": "Claro! Somos uma fintech com 50 funcionários", "sent": false },
+        "timeline": [
+          { "title": "Perguntas de qualificação", "detail": "Setor, tamanho, necessidades" },
+          { "title": "Score calculado", "detail": "Lead score: 85/100 (quente)" }
+        ]
+      },
+      {
+        "chat": { "text": "Perfeito! Para fintechs com até 100 usuários, recomendo o Plano Enterprise. Inclui API completa, SSO e suporte dedicado. R$ 2.900/mês.", "sent": true },
+        "timeline": [
+          { "title": "Produto selecionado", "detail": "Enterprise Plan — match 94%" },
+          { "title": "Proposta personalizada", "detail": "Desconto setor fintech aplicado" }
+        ]
+      },
+      {
+        "chat": { "text": "Gostei! Como faço pra contratar?", "sent": false },
+        "timeline": [
+          { "title": "Pedido criado", "detail": "Proposta #4521 gerada" },
+          { "title": "CRM atualizado", "detail": "Lead → Oportunidade" },
+          { "title": "Notificação enviada", "detail": "Vendedor notificado via Slack" }
+        ]
+      }
+    ]
+  },
+  "orchestra": {
+    "badge": "ARQUITETURA COMPOSABLE",
+    "headline": "Não é um chatbot.",
+    "headlineGradient": "É uma equipe de especialistas.",
+    "subtitle": "A mesma abordagem dos maiores cases de IA no WhatsApp: um orquestrador central que seleciona o agente certo para cada tarefa — busca de produtos, comparação, negociação, fechamento. Cada agente tem suas ferramentas, seu contexto e seus limites. Conectados aos seus sistemas existentes.",
+    "gartnerNote": "Gartner prevê que 40% dos apps enterprise terão agentes de IA até 2026. Com a Catalisa, os seus já podem ter hoje.",
+    "whatsappNative": "Carrosséis nativos, pagamento via Pix e cartão direto no chat, autenticação integrada e jornada completa sem sair do WhatsApp.",
+    "orchestrator": "Orquestrador",
+    "orchestratorDesc": "Decide qual agente ativar com base na intenção detectada — modelo leve para triagem, avançado para raciocínio complexo",
+    "agents": [
+      { "name": "SDR", "desc": "Qualifica leads e agenda reuniões", "tools": ["WhatsApp", "CRM", "Calendário"] },
+      { "name": "Suporte", "desc": "Resolve dúvidas e escala quando necessário", "tools": ["WhatsApp", "Base de Conhecimento", "Tickets"] },
+      { "name": "Financeiro", "desc": "Gera boletos, negocia e processa pagamentos", "tools": ["WhatsApp", "Pagamentos", "ERP"] },
+      { "name": "Onboarding", "desc": "Guia novos clientes e coleta documentos", "tools": ["WhatsApp", "CRM", "Docs"] },
+      { "name": "Analista", "desc": "Gera relatórios e identifica tendências", "tools": ["CRM", "Analytics", "ERP"] }
+    ],
+    "cards": [
+      { "title": "Cada agente tem seu papel", "description": "Descreva o cargo, a IA monta o perfil. Personalidade, ferramentas e limites de autonomia — tudo configurável. Como um time real, cada um sabe o que fazer." },
+      { "title": "Conecte seus sistemas", "description": "Seus agentes operam seu CRM, ERP, calendário, pagamentos e qualquer API REST — sem substituir, potencializando o que você já tem." },
+      { "title": "60+ Building Blocks", "description": "WhatsApp, IA, fintech, segurança, integrações e mais. Combine para criar qualquer automação enterprise." },
+      { "title": "Guardrails enterprise", "description": "Limites de autonomia, escalação humana automática, audit trail completo e LGPD nativa." }
+    ]
+  },
+  "useCases": {
+    "badge": "VEJA EM AÇÃO",
+    "headline": "Agentes que já",
+    "headlineGradient": "geram resultados.",
+    "scenarios": [
+      {
+        "title": "SDR Digital",
+        "description": "Qualifica leads 24/7 pelo WhatsApp",
+        "before": { "label": "Antes", "stats": ["15 leads/dia", "R$ 45/lead", "8h de operação"] },
+        "after": { "label": "Com IA", "stats": ["200+ leads/dia", "R$ 2/lead", "24/7 automático"] },
+        "blocks": ["WhatsApp", "CRM", "Calendário", "E-mail"],
+        "chatMessages": [
+          { "text": "Vi o anúncio de vocês no Instagram", "sent": false, "delay": 0.3 },
+          { "text": "Que bom! Qual o tamanho da sua operação hoje?", "sent": true, "delay": 1.0 },
+          { "text": "50 funcionários, 3 lojas", "sent": false, "delay": 2.0 },
+          { "text": "Perfeito! Tenho uma solução ideal. Posso agendar uma demo de 15min pra amanhã?", "sent": true, "delay": 3.0 }
+        ]
+      },
+      {
+        "title": "Suporte 24/7",
+        "description": "Resolve em 5 segundos, não em 2 horas",
+        "before": { "label": "Antes", "stats": ["2h tempo de resposta", "35% resolução", "3 atendentes"] },
+        "after": { "label": "Com IA", "stats": ["5s tempo de resposta", "78% resolução", "1 supervisor"] },
+        "blocks": ["WhatsApp", "Base de Conhecimento", "Tickets", "CRM"],
+        "chatMessages": [
+          { "text": "Meu boleto não chegou", "sent": false, "delay": 0.3 },
+          { "text": "Encontrei! Seu boleto vence dia 15/03, valor R$ 1.200. Envio a 2ª via agora?", "sent": true, "delay": 1.0 },
+          { "text": "Sim, por favor!", "sent": false, "delay": 2.0 },
+          { "text": "Pronto! Enviado por e-mail e aqui está o código Pix também: 00020126...", "sent": true, "delay": 3.0 }
+        ]
+      },
+      {
+        "title": "Cobrança Inteligente",
+        "description": "Negocia humanizadamente pelo WhatsApp",
+        "before": { "label": "Antes", "stats": ["15% recuperação", "Ligações manuais", "Custo alto"] },
+        "after": { "label": "Com IA", "stats": ["42% recuperação", "Automático 24/7", "80% menos custo"] },
+        "blocks": ["WhatsApp", "Pagamentos", "ERP", "CRM"],
+        "chatMessages": [
+          { "text": "Olá! Vi que tenho uma pendência", "sent": false, "delay": 0.3 },
+          { "text": "Oi! Sim, existe um valor de R$ 850 vencido dia 01/02. Posso oferecer condições especiais?", "sent": true, "delay": 1.0 },
+          { "text": "Pode parcelar?", "sent": false, "delay": 2.0 },
+          { "text": "Claro! 3x de R$ 295 sem juros ou à vista com 10% desconto (R$ 765). Qual prefere?", "sent": true, "delay": 3.0 }
+        ]
+      },
+      {
+        "title": "Onboarding KYC",
+        "description": "Coleta docs automaticamente pelo WhatsApp",
+        "before": { "label": "Antes", "stats": ["5 dias para conclusão", "Processo manual", "Erros frequentes"] },
+        "after": { "label": "Com IA", "stats": ["20 minutos", "100% automatizado", "OCR + validação"] },
+        "blocks": ["WhatsApp", "OCR", "KYC", "CRM"],
+        "chatMessages": [
+          { "text": "Quero abrir minha conta", "sent": false, "delay": 0.3 },
+          { "text": "Ótimo! Preciso de uma foto do seu RG (frente e verso) e uma selfie. Pode enviar agora?", "sent": true, "delay": 1.0 },
+          { "text": "[Foto do RG]", "sent": false, "delay": 2.0 },
+          { "text": "RG validado! Dados extraídos: João Silva, CPF ***.***.***-12. Agora envie a selfie.", "sent": true, "delay": 3.0 }
+        ]
+      }
+    ]
+  },
+  "composablePath": {
+    "badge": "POR QUE COMPOSABLE",
+    "headline": "A arquitetura que os líderes de mercado",
+    "headlineGradient": "já adotaram.",
+    "subtitle": "De e-commerce a automação de negócios, empresas que adotam arquitetura composable com IA alcançam resultados comprovados pelo Gartner. A Catalisa aplica os mesmos princípios às operações de negócio + WhatsApp.",
+    "examples": [
+      { "company": "Líderes Gartner em Commerce", "achievement": "De nicho a líder no Gartner em 4 anos com arquitetura composable" },
+      { "company": "AI Agents Startups (a16z)", "achievement": "$35M+ em Series A para automação com agentes de IA em equipe" },
+      { "company": "Plataformas de Workflow", "achievement": "Building blocks enterprise como padrão de mercado (#1 em TI)" }
+    ],
+    "comparison": [
+      { "pattern": "Packaged Business Capabilities", "catalisa": "Building Blocks" },
+      { "pattern": "App Composition Platform", "catalisa": "Catalisa Studio" },
+      { "pattern": "API-first Architecture", "catalisa": "API Layer" },
+      { "pattern": "Visual State Machines", "catalisa": "Workflow Builder" },
+      { "pattern": "Composable Commerce", "catalisa": "Composable Business Automation" },
+      { "pattern": "Agentic AI", "catalisa": "AI Agents no WhatsApp" }
+    ],
+    "patternLabel": "Padrão de Mercado",
+    "catalisaLabel": "Equivalente Catalisa",
+    "gartnerStats": [
+      "Organizações composable superam a concorrência em 80% na velocidade de lançamento de features",
+      "75% dos novos apps serão construídos com low-code/no-code até 2026",
+      "Empresas com IA composable alcançam ROI 6x mais frequentemente"
+    ],
+    "disclaimer": "Dados: Gartner (2024-2025). Referências baseadas em informações públicas de mercado."
+  },
+  "positioningMap": {
+    "badge": "LANDSCAPE DE AUTOMAÇÃO",
+    "headline": "Onde a Catalisa",
+    "headlineGradient": "se posiciona.",
+    "subtitle": "Mapa de posicionamento baseado em capacidades: composable + AI + WhatsApp + No-Code.",
+    "axisX": "Completude de Visão",
+    "axisY": "Capacidade de Execução",
+    "quadrants": {
+      "niche": "Nichos",
+      "visionary": "Visionários",
+      "challenger": "Desafiantes",
+      "leader": "Líderes"
+    },
+    "players": [
+      { "name": "WATI", "quadrant": "niche" },
+      { "name": "Zapier", "quadrant": "challenger" },
+      { "name": "Make", "quadrant": "challenger" },
+      { "name": "Intercom", "quadrant": "challenger" },
+      { "name": "Zendesk", "quadrant": "challenger" },
+      { "name": "Catalisa", "quadrant": "visionary", "highlight": true }
+    ],
+    "disclaimer": "Representação conceitual baseada em frameworks públicos do Gartner. Não é um Magic Quadrant oficial."
+  },
+  "roi": {
+    "badge": "ROI CALCULADO",
+    "headline": "O retorno",
+    "headlineGradient": "que faz sentido.",
+    "subtitle": "Compare: equipe tradicional vs. equipe com agentes IA no WhatsApp. Cases de mercado mostram NPS 90 com agentes IA — acima dos 85 de canais tradicionais. Gartner projeta que empresas com IA economizarão $80B globalmente até 2026.",
+    "traditional": {
+      "label": "Equipe Tradicional",
+      "cost": "R$ 32.000/mês",
+      "responseTime": "2 horas",
+      "resolution": "35%",
+      "nps": "62",
+      "team": "8 atendentes"
+    },
+    "withAI": {
+      "label": "Com Agentes IA",
+      "cost": "R$ 4.800/mês",
+      "responseTime": "5 segundos",
+      "resolution": "78%",
+      "nps": "89",
+      "team": "2 atendentes + agentes IA"
+    },
+    "labels": {
+      "cost": "Custo/mês",
+      "responseTime": "Tempo de resposta",
+      "resolution": "Taxa de resolução",
+      "nps": "NPS",
+      "team": "Equipe"
+    }
+  },
+  "howToStart": {
+    "badge": "COMO COMEÇAR",
+    "headline": "4 passos.",
+    "headlineGradient": "Minutos, não meses.",
+    "steps": [
+      { "number": "01", "title": "Conecte seu WhatsApp", "description": "Cloud API oficial da Meta ou QR Code instantâneo. Setup em minutos." },
+      { "number": "02", "title": "Descreva seus agentes", "description": "Linguagem natural, como um job posting. A IA monta o perfil completo." },
+      { "number": "03", "title": "Conecte seus sistemas", "description": "CRM, ERP, calendário, pagamentos — seus agentes operam suas ferramentas existentes. Use também nossos 60+ Building Blocks." },
+      { "number": "04", "title": "Ative e monitore", "description": "Dashboard em tempo real. Ajuste a qualquer momento." }
+    ]
+  },
+  "finalCTA": {
+    "headline": "A Lu já está vendendo.",
+    "headlineGradient": "E você?",
+    "subtitle": "Monte seus agentes de IA no WhatsApp em minutos. Conecte aos seus sistemas existentes. Zero código. Enterprise-grade.",
+    "cta": "Fale conosco",
+    "ctaSecondary": "Veja demo ao vivo"
+  }
+}

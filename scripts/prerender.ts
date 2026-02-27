@@ -14,13 +14,13 @@ const routes = [
   '/fintech', '/bancario', '/seguros', '/varejo', '/startups',
   '/casos-de-uso', '/contato', '/demo', '/politica-privacidade',
   '/termos', '/seguranca', '/precos', '/como-funciona', '/integracoes/whatsapp',
-  '/press-kit', '/apresentacao-comercial',
+  '/press-kit', '/apresentacao-comercial', '/agentes-ia-whatsapp',
   // en-US
   '/en', '/en/studio', '/en/ai-agents', '/en/apps', '/en/building-blocks', '/en/workflows',
   '/en/fintech', '/en/banking', '/en/insurance', '/en/retail', '/en/startups',
   '/en/use-cases', '/en/contact', '/en/demo', '/en/privacy-policy',
   '/en/terms', '/en/security', '/en/pricing', '/en/how-it-works', '/en/integrations/whatsapp',
-  '/en/press-kit', '/en/commercial-presentation',
+  '/en/press-kit', '/en/commercial-presentation', '/en/ai-agents-whatsapp',
   // Playbook detail pages
   ...playbookIds.map(id => `/playbooks/${id}`),
   ...playbookIds.map(id => `/en/playbooks/${id}`),

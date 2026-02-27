@@ -1,5 +1,6 @@
 import { HeroTeamBuilder } from '../components/sections/HeroTeamBuilder';
 import { LogoMarquee } from '../components/sections/LogoMarquee';
+import { MarketValidation } from '../components/sections/MarketValidation';
 import { MeetYourTeam } from '../components/sections/MeetYourTeam';
 import { WhatsAppCommandCenter } from '../components/sections/WhatsAppCommandCenter';
 import { AppBuilderShowcase } from '../components/sections/AppBuilderShowcase';
@@ -20,6 +21,7 @@ export function Home() {
     <>
       <HeroTeamBuilder />
       <LogoMarquee />
+      <MarketValidation />
       <MeetYourTeam />
       <WhatsAppCommandCenter />
       <AppBuilderShowcase />

@@ -2,28 +2,28 @@
   "scrollHint": "Role para explorar",
   "hero": {
     "headline": "Seus clientes esperam respostas em segundos.",
-    "headlineGradient": "Sua equipe nao consegue acompanhar.",
+    "headlineGradient": "Sua equipe não consegue acompanhar.",
     "subtitles": [
-      "Descreva o que precisa em linguagem natural. A IA especifica e constroi — da ideia a producao em minutos.",
-      "Agentes de IA que atendem, qualificam e fecham negocios pelo WhatsApp — 24 horas por dia.",
-      "Workflows visuais que automatizam desde o primeiro contato ate o fechamento — sem codigo.",
-      "Do primeiro contato a renovacao automatica — seu atendimento de seguros no piloto automatico.",
+      "Descreva o que precisa em linguagem natural. A IA especifica e constrói — da ideia à produção em minutos.",
+      "Agentes de IA que atendem, qualificam e fecham negócios pelo WhatsApp — 24 horas por dia.",
+      "Workflows visuais que automatizam desde o primeiro contato até o fechamento — sem código.",
+      "Do primeiro contato à renovação automática — seu atendimento de seguros no piloto automático.",
       "Cada agente tem seu papel, suas ferramentas e seu contexto. Como uma equipe real.",
-      "Captacao, simulacao e contratacao de previdencia — tudo pelo WhatsApp, sem atrito."
+      "Captação, simulação e contratação de previdência — tudo pelo WhatsApp, sem atrito."
     ]
   },
   "heroTeamBuilder": {
-    "headline": "Monte sua equipe de operacoes com IA.",
-    "headlineGradient": "Eles trabalham. Voce escala.",
+    "headline": "Seus agentes de IA. Seu WhatsApp. Seus Building Blocks.",
+    "headlineGradient": "Da conversa ao resultado, sem código.",
     "subtitles": [
-      "Agentes especializados que atendem, qualificam e fecham pelo WhatsApp — como uma equipe real.",
-      "Cada agente tem seu papel, suas ferramentas e seu contexto. 24/7.",
-      "Descreva o que precisa. A IA monta a equipe e ativa em minutos.",
-      "Seus agentes operam suas ferramentas existentes — CRM, ERP, calendarios.",
-      "Backends, APIs e portais construidos com Building Blocks enterprise-grade. Seguranca bancaria nativa, providers de mercado plugados.",
-      "Agentes atendem seus clientes. Apps processam suas operacoes. Tudo enterprise-grade, sem codigo."
+      "Empresas composable lançam features 80% mais rápido (Gartner). Com a Catalisa, você monta agentes e apps enterprise sem código.",
+      "WhatsApp tem 98% de abertura. Seus agentes atendem, vendem e fecham — 24/7, em segundos.",
+      "40% dos apps enterprise terão agentes de IA até 2026 (Gartner). Os seus já podem ter hoje.",
+      "A Lu do Magalu já vende pelo WhatsApp com IA. Sua empresa pode fazer o mesmo — em minutos, não meses.",
+      "60+ Building Blocks enterprise. Segurança bancária nativa. Da ideia à produção em minutos.",
+      "IA de atendimento retorna $3,50 por $1 investido. Agentes resolvem 80% dos casos sozinhos até 2029."
     ],
-    "ctaMeetTeam": "Conheca a equipe",
+    "ctaMeetTeam": "Conheça a equipe",
     "agents": {
       "whatsapp": { "label": "WhatsApp", "activity": "Central de comando" },
       "sdr": { "label": "SDR Digital", "activity": "12 conversas ativas" },
@@ -35,26 +35,26 @@
   },
   "meetYourTeam": {
     "badge": "SUA EQUIPE IA",
-    "heading": "Conheca sua equipe.",
+    "heading": "Conheça sua equipe.",
     "headingGradient": "Cada agente, uma especialidade.",
     "agents": [
       {
         "role": "SDR Digital",
-        "capabilities": ["Qualifica leads automaticamente", "Agenda reunioes", "Envia propostas personalizadas", "Follow-up inteligente"],
-        "tools": ["WhatsApp", "CRM", "Calendario", "E-mail"],
-        "stats": "127/dia | 34% conversao | 8s resposta"
+        "capabilities": ["Qualifica leads automaticamente", "Agenda reuniões", "Envia propostas personalizadas", "Follow-up inteligente"],
+        "tools": ["WhatsApp", "CRM", "Calendário", "E-mail"],
+        "stats": "127/dia | 34% conversão | 8s resposta"
       },
       {
         "role": "Suporte 24/7",
-        "capabilities": ["Responde duvidas em segundos", "Escala para humano quando necessario", "Consulta base de conhecimento", "Acompanha satisfacao"],
+        "capabilities": ["Responde dúvidas em segundos", "Escala para humano quando necessário", "Consulta base de conhecimento", "Acompanha satisfação"],
         "tools": ["WhatsApp", "Base de conhecimento", "Tickets", "CRM"],
-        "stats": "89/dia | 94% resolucao | 12s resposta"
+        "stats": "89/dia | 94% resolução | 12s resposta"
       },
       {
         "role": "Onboarding Specialist",
         "capabilities": ["Guia novos clientes", "Coleta documentos", "Configura acessos", "Envia tutoriais"],
         "tools": ["WhatsApp", "CRM", "Docs", "E-mail"],
-        "stats": "23/dia | 91% conclusao | 15s resposta"
+        "stats": "23/dia | 91% conclusão | 15s resposta"
       },
       {
         "role": "Financeiro",
@@ -64,9 +64,9 @@
       },
       {
         "role": "Analista de Dados",
-        "capabilities": ["Gera relatorios automaticos", "Identifica tendencias", "Alerta anomalias", "Dashboard em tempo real"],
+        "capabilities": ["Gera relatórios automáticos", "Identifica tendências", "Alerta anomalias", "Dashboard em tempo real"],
         "tools": ["CRM", "ERP", "Analytics", "E-mail"],
-        "stats": "15 relatorios/dia | 99.9% precisao"
+        "stats": "15 relatórios/dia | 99.9% precisão"
       }
     ],
     "online": "Online",
@@ -76,21 +76,21 @@
   },
   "whatsAppCommandCenter": {
     "badge": "CENTRAL DE COMANDO",
-    "heading": "WhatsApp e a interface.",
-    "headingGradient": "A inteligencia esta por tras.",
-    "subtitle": "Seus clientes veem uma conversa natural. Nos bastidores, agentes orquestram ferramentas, dados e decisoes.",
+    "heading": "WhatsApp é a interface.",
+    "headingGradient": "A inteligência está por trás.",
+    "subtitle": "98% de abertura. 5s de resposta. Seus clientes veem uma conversa natural. Nos bastidores, agentes orquestram ferramentas, dados e decisões.",
     "chatTitle": "Agente IA - Seguros",
     "chatMessages": [
       { "text": "Preciso renovar meu seguro", "sent": false, "delay": 0.5 },
-      { "text": "Encontrei sua apolice! Veiculo: Honda Civic 2023. Vou cotar as melhores opcoes pra voce.", "sent": true, "delay": 3.5 },
+      { "text": "Encontrei sua apólice! Veículo: Honda Civic 2023. Vou cotar as melhores opções pra você.", "sent": true, "delay": 3.5 },
       { "text": "Quero cobertura completa", "sent": false, "delay": 5.5 },
-      { "text": "Pronto! 3 opcoes:\n\n1. Basica: R$ 185/mes\n2. Completa: R$ 247/mes\n3. Premium: R$ 312/mes\n\nA opcao 2 cobre roubo, colisao e terceiros. Qual prefere?", "sent": true, "delay": 8.0 }
+      { "text": "Pronto! 3 opções:\n\n1. Básica: R$ 185/mês\n2. Completa: R$ 247/mês\n3. Premium: R$ 312/mês\n\nA opção 2 cobre roubo, colisão e terceiros. Qual prefere?", "sent": true, "delay": 8.0 }
     ],
     "timeline": [
       { "title": "Mensagem recebida", "detail": "\"Preciso renovar meu seguro\"", "delay": 0.8 },
-      { "title": "Identificando intencao...", "detail": "Intencao: renovacao_seguro (97%)", "delay": 1.5 },
-      { "title": "CRM.buscarCliente()", "detail": "Cliente: Maria Silva | Apolice #4521", "delay": 2.2 },
-      { "title": "Seguros.cotarOpcoes()", "detail": "3 opcoes geradas em 1.2s", "delay": 3.0 },
+      { "title": "Identificando intenção...", "detail": "Intenção: renovacao_seguro (97%)", "delay": 1.5 },
+      { "title": "CRM.buscarCliente()", "detail": "Cliente: Maria Silva | Apólice #4521", "delay": 2.2 },
+      { "title": "Seguros.cotarOpcoes()", "detail": "3 opções geradas em 1.2s", "delay": 3.0 },
       { "title": "Gerando resposta personalizada...", "detail": "Claude Sonnet | 187 tokens", "delay": 3.8 },
       { "title": "Resposta enviada", "detail": "Tempo total: 4.8 segundos", "delay": 4.5 }
     ]
@@ -98,23 +98,23 @@
   "agentBuilder": {
     "badge": "CATALISA STUDIO",
     "heading": "Descreva o cargo.",
-    "headingGradient": "A IA contrata pra voce.",
-    "subtitle": "Monte novos membros da equipe em minutos. Sem codigo, sem configuracao manual.",
+    "headingGradient": "A IA contrata pra você.",
+    "subtitle": "Monte novos membros da equipe em minutos. Sem código, sem configuração manual.",
     "steps": [
       {
         "label": "Descreva o Cargo",
-        "title": "Descreva o que voce precisa",
-        "description": "Digite como se estivesse escrevendo uma vaga: \"Preciso de um SDR que qualifique leads pelo WhatsApp, agende reunioes e envie propostas personalizadas.\"",
+        "title": "Descreva o que você precisa",
+        "description": "Digite como se estivesse escrevendo uma vaga: \"Preciso de um SDR que qualifique leads pelo WhatsApp, agende reuniões e envie propostas personalizadas.\"",
         "bullets": [
-          "Linguagem natural, sem termos tecnicos",
-          "Descreva o papel, nao a ferramenta",
-          "A IA entende o contexto do seu negocio"
+          "Linguagem natural, sem termos técnicos",
+          "Descreva o papel, não a ferramenta",
+          "A IA entende o contexto do seu negócio"
         ]
       },
       {
         "label": "IA Entrevista",
         "title": "A IA faz as perguntas certas",
-        "description": "Como um recrutador, a IA pergunta: tom de voz, limites de autonomia, ferramentas disponiveis, horario de operacao. Tudo para configurar o agente perfeito.",
+        "description": "Como um recrutador, a IA pergunta: tom de voz, limites de autonomia, ferramentas disponíveis, horário de operação. Tudo para configurar o agente perfeito.",
         "bullets": [
           "Tom de voz: formal, casual ou personalizado",
           "Limites: quando escalar para humano",
@@ -124,7 +124,7 @@
       {
         "label": "Perfil Pronto",
         "title": "Perfil completo configurado",
-        "description": "Personalidade, ferramentas, base de conhecimento e regras de negocio — tudo configurado automaticamente. Revise e ajuste o que quiser.",
+        "description": "Personalidade, ferramentas, base de conhecimento e regras de negócio — tudo configurado automaticamente. Revise e ajuste o que quiser.",
         "bullets": [
           "Personalidade e tom de voz definidos",
           "Ferramentas conectadas e testadas",
@@ -133,38 +133,38 @@
       },
       {
         "label": "Contrate",
-        "title": "Um clique, agente em operacao",
-        "description": "Ative o agente e ele comeca a trabalhar imediatamente. Monitore performance em tempo real e ajuste conforme necessario.",
+        "title": "Um clique, agente em operação",
+        "description": "Ative o agente e ele começa a trabalhar imediatamente. Monitore performance em tempo real e ajuste conforme necessário.",
         "bullets": [
-          "Ativacao instantanea",
+          "Ativação instantânea",
           "Monitoramento em tempo real",
           "Ajuste a qualquer momento"
         ]
       }
     ],
     "stats": [
-      { "value": "Zero", "label": "codigo" },
-      { "value": "Minutos", "label": "nao semanas" },
-      { "value": "100%", "label": "personalizavel" }
+      { "value": "Zero", "label": "código" },
+      { "value": "Minutos", "label": "não semanas" },
+      { "value": "100%", "label": "personalizável" }
     ]
   },
   "yourTools": {
-    "badge": "INTEGRACOES",
+    "badge": "INTEGRAÇÕES",
     "heading": "Suas ferramentas.",
-    "headingGradient": "Nas maos dos seus agentes.",
-    "subtitle": "Seus agentes nao substituem suas ferramentas. Eles as dominam.",
+    "headingGradient": "Nas mãos dos seus agentes.",
+    "subtitle": "Seus agentes não substituem suas ferramentas. Eles as dominam.",
     "tools": [
       {
         "name": "CRM",
-        "actions": ["Criar e atualizar leads", "Buscar historico de interacoes", "Mover pipeline automaticamente", "Sincronizar contatos"]
+        "actions": ["Criar e atualizar leads", "Buscar histórico de interações", "Mover pipeline automaticamente", "Sincronizar contatos"]
       },
       {
         "name": "ERP",
         "actions": ["Consultar estoque em tempo real", "Emitir notas fiscais", "Sincronizar pedidos", "Atualizar cadastros"]
       },
       {
-        "name": "Calendario",
-        "actions": ["Agendar reunioes automaticamente", "Verificar disponibilidade", "Reagendar com notificacao", "Enviar lembretes"]
+        "name": "Calendário",
+        "actions": ["Agendar reuniões automaticamente", "Verificar disponibilidade", "Reagendar com notificação", "Enviar lembretes"]
       },
       {
         "name": "Pagamentos",
@@ -172,16 +172,16 @@
       },
       {
         "name": "E-mail",
-        "actions": ["Enviar confirmacoes", "Notificacoes automaticas", "Follow-up programado", "Templates personalizados"]
+        "actions": ["Enviar confirmações", "Notificações automáticas", "Follow-up programado", "Templates personalizados"]
       },
       {
         "name": "APIs Custom",
-        "actions": ["Qualquer API REST", "Webhooks bidirecionais", "Retry automatico", "Transformacao de dados"]
+        "actions": ["Qualquer API REST", "Webhooks bidirecionais", "Retry automático", "Transformação de dados"]
       }
     ]
   },
   "liveOps": {
-    "badge": "OPERACAO EM TEMPO REAL",
+    "badge": "OPERAÇÃO EM TEMPO REAL",
     "heading": "Sua equipe IA.",
     "headingGradient": "Trabalhando agora.",
     "browserTitle": "Catalisa Operations",
@@ -191,19 +191,19 @@
         "title": "SDR Digital",
         "events": [
           "Lead qualificado: Ana Costa",
-          "Reuniao agendada: Pedro Lima",
+          "Reunião agendada: Pedro Lima",
           "Proposta enviada: Marcos Reis",
-          "Follow-up realizado: Julia Santos",
+          "Follow-up realizado: Júlia Santos",
           "Lead convertido: Ricardo Alves"
         ]
       },
       {
         "title": "Suporte 24/7",
         "events": [
-          "Duvida resolvida: #4521",
+          "Dúvida resolvida: #4521",
           "Ticket escalado: #4518",
           "FAQ respondido: #4525",
-          "Satisfacao coletada: #4519",
+          "Satisfação coletada: #4519",
           "Problema resolvido: #4523"
         ]
       },
@@ -227,9 +227,11 @@
   },
   "roiCalculator": {
     "badge": "CALCULADORA ROI",
-    "heading": "Seus numeros.",
+    "heading": "Seus números.",
     "headingGradient": "Sua economia.",
-    "subtitle": "Insira seus dados atuais e veja a projecao com a Catalisa.",
+    "subtitle": "Insira seus dados atuais e veja a projeção com a Catalisa.",
+    "benchmark": "Gartner: empresas com IA economizarão $80B globalmente até 2026.",
+    "benchmarkNote": "Benchmark: IA custa 12x menos por interação que atendimento humano.",
     "today": "HOJE",
     "withCatalisa": "COM CATALISA",
     "attendants": "Atendentes",
@@ -239,37 +241,38 @@
     "aiAgent": "1 agente IA + 1 supervisor",
     "seconds": "segundos",
     "estimatedSavings": "Economia estimada",
-    "perMonth": "/mes"
+    "perMonth": "/mês"
   },
   "industrySolutions": {
-    "badge": "SOLUCOES POR INDUSTRIA",
+    "badge": "SOLUÇÕES POR INDÚSTRIA",
     "heading": "Onde sua equipe IA",
-    "headingGradient": "faz a diferenca.",
+    "headingGradient": "faz a diferença.",
+    "subtitle": "Gartner prevê 40% dos apps enterprise com agentes de IA até 2026. Em cada setor, a Catalisa já entrega.",
     "industries": [
       {
         "name": "Fintech",
-        "scenario": "Onboarding automatico, KYC, analise de credito, Apps de originacao e portal do cliente — tudo enterprise-grade.",
-        "stats": ["85% automacao", "12s resposta", "60% menos custo"]
+        "scenario": "Onboarding automático, KYC, análise de crédito, Apps de originação e portal do cliente — tudo enterprise-grade.",
+        "stats": ["85% automação", "12s resposta", "60% menos custo"]
       },
       {
-        "name": "Bancario",
+        "name": "Bancário",
         "scenario": "Open Finance, Pix automatizado, Apps de portal do cliente, compliance e suporte ao correntista.",
-        "stats": ["90% automacao", "8s resposta", "70% menos custo"]
+        "stats": ["90% automação", "8s resposta", "70% menos custo"]
       },
       {
         "name": "Seguros",
-        "scenario": "Cotacoes instantaneas, Apps de backoffice, gestao de sinistros e renovacoes automaticas.",
-        "stats": ["78% automacao", "15s resposta", "55% menos custo"]
+        "scenario": "Cotações instantâneas, Apps de backoffice, gestão de sinistros e renovações automáticas.",
+        "stats": ["78% automação", "15s resposta", "55% menos custo"]
       },
       {
         "name": "Varejo",
-        "scenario": "Vendas pelo WhatsApp, Apps de e-commerce, pos-venda, rastreamento e fidelizacao.",
-        "stats": ["82% automacao", "10s resposta", "50% menos custo"]
+        "scenario": "Vendas pelo WhatsApp, Apps de e-commerce, pós-venda, rastreamento e fidelização.",
+        "stats": ["82% automação", "10s resposta", "50% menos custo"]
       },
       {
         "name": "Startups",
-        "scenario": "Scale rapido com Apps enterprise e custo otimizado. Atendimento, vendas e suporte unificados.",
-        "stats": ["88% automacao", "6s resposta", "75% menos custo"]
+        "scenario": "Scale rápido com Apps enterprise e custo otimizado. Atendimento, vendas e suporte unificados.",
+        "stats": ["88% automação", "6s resposta", "75% menos custo"]
       }
     ],
     "learnMore": "Saiba mais"
@@ -277,7 +280,7 @@
   "problem": {
     "heading": "O WhatsApp virou seu canal principal.",
     "headingHighlight": "Mas como escalar?",
-    "subtitle": "120 milhoes de brasileiros usam WhatsApp diariamente. Seu time nao consegue acompanhar.",
+    "subtitle": "120 milhões de brasileiros usam WhatsApp diariamente. Seu time não consegue acompanhar.",
     "items": [
       {
         "title": "Respostas manuais",
@@ -285,11 +288,11 @@
       },
       {
         "title": "Sem contexto entre atendentes",
-        "description": "Cada troca de agente recomeca do zero. O cliente repete tudo de novo."
+        "description": "Cada troca de agente recomeça do zero. O cliente repete tudo de novo."
       },
       {
-        "title": "Zero automacao",
-        "description": "Tarefas repetitivas consomem horas. Qualificacao, follow-up, cobranca — tudo manual."
+        "title": "Zero automação",
+        "description": "Tarefas repetitivas consomem horas. Qualificação, follow-up, cobrança — tudo manual."
       }
     ]
   },
@@ -306,45 +309,45 @@
       {
         "label": "Automatizar",
         "title": "Workflows",
-        "description": "Drag & drop visual. 60+ building blocks composiveis."
+        "description": "Drag & drop visual. 60+ building blocks composíveis."
       },
       {
-        "label": "Inteligencia",
+        "label": "Inteligência",
         "title": "AI Agents",
         "description": "Agentes especializados com ferramentas seletivas."
       },
       {
         "label": "Resultado",
         "title": "CRM & Analytics",
-        "description": "Pipeline de leads, metricas e historico completo."
+        "description": "Pipeline de leads, métricas e histórico completo."
       }
     ]
   },
   "howItWorks": {
     "heading": "Como funciona",
-    "subtitle": "Tres passos para automatizar seu WhatsApp com inteligencia artificial.",
+    "subtitle": "Três passos para automatizar seu WhatsApp com inteligência artificial.",
     "steps": [
       {
         "title": "Conecte seu WhatsApp",
-        "description": "Cloud API oficial da Meta ou QR Code instantaneo. Setup em 2 minutos. Multi-device suportado."
+        "description": "Cloud API oficial da Meta ou QR Code instantâneo. Setup em 2 minutos. Multi-device suportado."
       },
       {
         "title": "Monte seu workflow visual",
-        "description": "Arraste building blocks no canvas. Conecte triggers a blocos. Configure cada um sem codigo."
+        "description": "Arraste building blocks no canvas. Conecte triggers a blocos. Configure cada um sem código."
       },
       {
         "title": "Ative e escale",
-        "description": "IA assume a operacao. Voce monitora resultados. Escale de 1 para 1.000 conversas sem contratar."
+        "description": "IA assume a operação. Você monitora resultados. Escale de 1 para 1.000 conversas sem contratar."
       }
     ]
   },
   "features": {
-    "heading": "Tudo que voce precisa.",
-    "headingHighlight": "Nada que nao precisa.",
+    "heading": "Tudo que você precisa.",
+    "headingHighlight": "Nada que não precisa.",
     "items": [
       {
         "title": "WhatsApp Multi-Agente",
-        "description": "Conecte multiplos numeros. Cloud API oficial + QR Code. Cada agente com seu contexto e historico."
+        "description": "Conecte múltiplos números. Cloud API oficial + QR Code. Cada agente com seu contexto e histórico."
       },
       {
         "title": "Agentes de IA",
@@ -352,110 +355,112 @@
       },
       {
         "title": "Workflows Visuais",
-        "description": "Monte automacoes com drag & drop. DAG com execucao paralela. Teste A/B nativo."
+        "description": "Monte automações com drag & drop. DAG com execução paralela. Teste A/B nativo."
       },
       {
         "title": "Building Blocks",
-        "description": "60+ building blocks: IA, fintech, CRM, seguranca, integracoes e mais. Combine como quiser."
+        "description": "60+ building blocks: IA, fintech, CRM, segurança, integrações e mais. Combine como quiser."
       },
       {
         "title": "CRM de Leads",
-        "description": "Pipeline completo com tipos customizados, kanban, campos dinamicos e historico de interacoes."
+        "description": "Pipeline completo com tipos customizados, kanban, campos dinâmicos e histórico de interações."
       },
       {
-        "title": "Seguranca & LGPD",
-        "description": "Multi-tenant isolado. Mascaramento automatico de PII. Criptografia bancaria. RBAC."
+        "title": "Segurança & LGPD",
+        "description": "Multi-tenant isolado. Mascaramento automático de PII. Criptografia bancária. RBAC."
       }
     ]
   },
   "aiAgentsTeaser": {
     "heading": "Seus agentes de IA.",
     "headingHighlight": "Suas regras. Seus dados.",
-    "description": "Nao e um chatbot. E uma equipe inteira. Cada agente tem personalidade, ferramentas e contexto proprios.",
+    "description": "Não é um chatbot. É uma equipe inteira. Cada agente tem personalidade, ferramentas e contexto próprios.",
     "before": {
       "label": "ANTES",
-      "items": ["3 atendentes", "2h de espera", "R$ 15k/mes"]
+      "items": ["3 atendentes", "2h de espera", "R$ 15k/mês"]
     },
     "after": {
       "label": "DEPOIS",
-      "items": ["Agente IA + 1 supervisor", "5 segundos de resposta", "R$ 800/mes"]
+      "items": ["Agente IA + 1 supervisor", "5 segundos de resposta", "R$ 800/mês"]
     }
   },
   "differentiators": {
     "badge": "DIFERENCIAIS",
     "heading": "Por que a",
     "headingHighlight": "Catalisa",
-    "subtitle": "Comparamos com as alternativas para voce decidir com clareza.",
+    "subtitle": "Comparamos com as alternativas para você decidir com clareza.",
     "items": [
       {
         "vs": "vs n8n / Make",
-        "title": "IA nativa, nao plugin",
-        "description": "Agentes de IA, analise de sentimento, OCR e geracao de texto sao building blocks nativos — sem instalar plugins ou configurar APIs externas."
+        "title": "IA nativa, não plugin",
+        "description": "Agentes de IA, análise de sentimento, OCR e geração de texto são building blocks nativos — sem instalar plugins ou configurar APIs externas."
       },
       {
         "vs": "vs Intercom / WATI",
-        "title": "Blocos composiveis, nao chatbot",
-        "description": "Nao e um chatbot com menu fixo. Sao 60+ building blocks que voce combina livremente para criar automacoes sob medida."
+        "title": "Blocos composíveis, não chatbot",
+        "description": "Não é um chatbot com menu fixo. São 60+ building blocks que você combina livremente para criar automações sob medida."
       },
       {
         "vs": "vs Zapier / Pipedream",
         "title": "WhatsApp nativo + IA embarcada",
-        "description": "Conexao oficial com WhatsApp (Cloud API + QR Code), agentes IA com ferramentas reais, CRM integrado — tudo na mesma plataforma."
+        "description": "Conexão oficial com WhatsApp (Cloud API + QR Code), agentes IA com ferramentas reais, CRM integrado — tudo na mesma plataforma."
       },
       {
         "vs": "vs Desenvolvimento interno",
         "title": "60+ building blocks. Meses de economia.",
-        "description": "De fintech a CRM, de seguranca a calendario — building blocks prontos e testados. Foque no seu negocio, nao em infraestrutura."
+        "description": "De fintech a CRM, de segurança a calendário — building blocks prontos e testados. Foque no seu negócio, não em infraestrutura."
       }
     ]
   },
   "trust": {
-    "heading": "Seguranca de nivel bancario",
-    "subtitle": "Seus dados protegidos com as mesmas praticas de seguranca de grandes instituicoes financeiras.",
+    "heading": "Segurança de nível bancário",
+    "subtitle": "Seus dados protegidos com as mesmas práticas de segurança de grandes instituições financeiras.",
     "infrastructure": "Infraestrutura em",
     "cloudBrazil": "nuvem no Brasil",
-    "monitoring": "com backups automaticos e monitoramento 24/7"
+    "monitoring": "com backups automáticos e monitoramento 24/7",
+    "gartnerCallout": "Empresas com arquitetura composable alcançam ROI de IA 6x mais frequentemente — Gartner"
   },
   "finalCTA": {
-    "heading": "Comece a montar sua equipe IA",
-    "subtitle": "Agentes especializados que atendem, qualificam e fecham pelo WhatsApp — ativados em minutos."
+    "heading": "O mercado muda em meses. Sua equipe IA começa em minutos.",
+    "subtitle": "40% dos apps enterprise terão agentes de IA até 2026. Não espere a concorrência chegar primeiro.",
+    "urgencyNote": "$58B em oportunidade com GenAI e agentes. Comece a capturar sua parte."
   },
   "aiInAction": {
-    "badge": "CONTRATACAO REAL",
+    "badge": "CONTRATAÇÃO REAL",
     "heading": "De uma frase a um novo",
     "headingGradient": "membro da equipe",
-    "subtitle": "Nenhuma linha de codigo. Nenhum programador.\nApenas uma conversa com a IA.",
+    "subtitle": "Nenhuma linha de código. Nenhum programador.\nApenas uma conversa com a IA.",
     "steps": [
       {
         "label": "Descreveu",
         "title": "\"Quero atendimento de seguros via WhatsApp\"",
-        "description": "O usuario descreveu em uma frase o que precisava: um sistema completo de atendimento e vendas de seguros que identifica leads, coleta dados e oferece produtos.",
-        "highlight": "Uma frase. Sem codigo. Sem especificacao tecnica."
+        "description": "O usuário descreveu em uma frase o que precisava: um sistema completo de atendimento e vendas de seguros que identifica leads, coleta dados e oferece produtos.",
+        "highlight": "Uma frase. Sem código. Sem especificação técnica."
       },
       {
         "label": "IA Planejou",
         "title": "Plano em 4 fases gerado em segundos",
-        "description": "A IA analisou o pedido e criou um plano estruturado: preparar agentes especializados, montar o workflow, implementar fluxo de vendas e ativar integracao WhatsApp.",
-        "highlight": "O usuario so precisou dizer \"Aprovado.\""
+        "description": "A IA analisou o pedido e criou um plano estruturado: preparar agentes especializados, montar o workflow, implementar fluxo de vendas e ativar integração WhatsApp.",
+        "highlight": "O usuário só precisou dizer \"Aprovado.\""
       },
       {
         "label": "Executou",
         "title": "3 agentes + 1 workflow criados automaticamente",
         "description": "A IA executou os steps: criou 3 agentes IA especializados (Identificador, Coletor, Vendedor), selecionou ferramentas e montou o workflow completo com 4 actions.",
-        "highlight": "O usuario deu feedback e a IA ajustou na hora."
+        "highlight": "O usuário deu feedback e a IA ajustou na hora."
       },
       {
         "label": "Funcionando",
         "title": "Atendimento real no WhatsApp em 13 segundos",
-        "description": "Workflow rodando: o cliente manda \"Boa tarde\" e a IA identifica o lead, coleta dados, oferece seguros residencial e celular — tudo automatico.",
+        "description": "Workflow rodando: o cliente manda \"Boa tarde\" e a IA identifica o lead, coleta dados, oferece seguros residencial e celular — tudo automático.",
         "highlight": "Da frase ao atendimento funcionando: menos de 3 minutos."
       }
     ],
     "resultStats": [
       { "value": "3", "label": "agentes IA criados" },
       { "value": "1", "label": "workflow completo" },
-      { "value": "13s", "label": "tempo de execucao" },
-      { "value": "0", "label": "linhas de codigo" }
+      { "value": "13s", "label": "tempo de execução" },
+      { "value": "0", "label": "linhas de código" }
     ],
     "videoSection": {
       "heading": "Assista ao demo completo",
@@ -465,101 +470,101 @@
   "studioShowcase": {
     "badge": "CATALISA STUDIO",
     "heading": "Descreva o que precisa.",
-    "headingGradient": "A IA constroi pra voce.",
-    "subtitle": "Sem codigo. Sem equipe tecnica. Sem semanas de espera.",
+    "headingGradient": "A IA constrói pra você.",
+    "subtitle": "Sem código. Sem equipe técnica. Sem semanas de espera.",
     "steps": [
       {
         "label": "Descreva",
         "title": "Descreva o que precisa",
-        "description": "Digite em linguagem natural, como se estivesse explicando para um colega. Escolha entre 6 templates prontos — Boas-vindas WhatsApp, Qualificacao AI, Notificacao Email e mais — ou comece do zero.",
+        "description": "Digite em linguagem natural, como se estivesse explicando para um colega. Escolha entre 6 templates prontos — Boas-vindas WhatsApp, Qualificação AI, Notificação Email e mais — ou comece do zero.",
         "bullets": [
-          "Sem linguagem tecnica",
+          "Sem linguagem técnica",
           "6 templates prontos para casos reais",
-          "A IA entende o contexto do seu negocio"
+          "A IA entende o contexto do seu negócio"
         ]
       },
       {
         "label": "IA Refina",
         "title": "A IA faz as perguntas certas",
-        "description": "Nao sabe exatamente o que precisa? Sem problema. A IA perguntou: \"Como voce quer saber QUAL campo foi alterado?\" — e deu exemplos concretos para facilitar a resposta.",
+        "description": "Não sabe exatamente o que precisa? Sem problema. A IA perguntou: \"Como você quer saber QUAL campo foi alterado?\" — e deu exemplos concretos para facilitar a resposta.",
         "bullets": [
-          "Conversa natural em portugues",
+          "Conversa natural em português",
           "Esclarece ambiguidades automaticamente",
-          "Voce nao precisa ser tecnico"
+          "Você não precisa ser técnico"
         ]
       },
       {
         "label": "Spec Pronta",
-        "title": "Especificacao completa em segundos",
-        "description": "2 requisitos, 2 componentes, 3 tarefas — gerados em segundos. Requisitos, design tecnico com fluxo de dados e tarefas com dependencias, tudo pronto para revisar e aprovar.",
+        "title": "Especificação completa em segundos",
+        "description": "2 requisitos, 2 componentes, 3 tarefas — gerados em segundos. Requisitos, design técnico com fluxo de dados e tarefas com dependências, tudo pronto para revisar e aprovar.",
         "bullets": [
           "Requisitos estruturados e validados",
           "Arquitetura e fluxo de dados claros",
-          "Plano de execucao com dependencias"
+          "Plano de execução com dependências"
         ],
         "subTabs": ["Requisitos", "Design", "Tarefas"]
       },
       {
         "label": "Execute",
         "title": "Aprovar Tudo & Executar",
-        "description": "Aprove a especificacao e o Builder cria tudo: workflow, triggers, acoes, conexoes. Um clique em \"Aprovar Tudo & Executar\" e esta pronto para producao.",
+        "description": "Aprove a especificação e o Builder cria tudo: workflow, triggers, ações, conexões. Um clique em \"Aprovar Tudo & Executar\" e está pronto para produção.",
         "bullets": [
-          "Execucao 100% automatizada",
-          "Resultado garantido pela especificacao",
-          "Da ideia a producao em minutos"
+          "Execução 100% automatizada",
+          "Resultado garantido pela especificação",
+          "Da ideia à produção em minutos"
         ]
       }
     ],
     "stats": [
-      { "value": "Zero", "label": "codigo" },
-      { "value": "Segundos", "label": "nao meses" },
+      { "value": "Zero", "label": "código" },
+      { "value": "Segundos", "label": "não meses" },
       { "value": "100%", "label": "spec-driven" }
     ]
   },
   "chatPreview": {
-    "creditTitle": "Agente IA - Credito",
+    "creditTitle": "Agente IA - Crédito",
     "insuranceTitle": "Agente IA - Seguros",
-    "pensionTitle": "Agente IA - Previdencia",
+    "pensionTitle": "Agente IA - Previdência",
     "online": "online",
     "creditMessages": [
-      { "text": "Oi, quero contratar um emprestimo", "sent": false, "delay": 0.2 },
-      { "text": "Otimo! Ja puxei seus dados pre-aprovados. Voce tem limite de ate R$ 25.000. Qual valor deseja?", "sent": true, "delay": 0.8 },
+      { "text": "Oi, quero contratar um empréstimo", "sent": false, "delay": 0.2 },
+      { "text": "Ótimo! Já puxei seus dados pré-aprovados. Você tem limite de até R$ 25.000. Qual valor deseja?", "sent": true, "delay": 0.8 },
       { "text": "R$ 15.000 em 24x", "sent": false, "delay": 1.6 },
       { "text": "Pronto! Contrato gerado:\n\nValor: R$ 15.000\nParcelas: 24x de R$ 743,25\nTaxa: 1,89% a.m.\n\nVou enviar o link para assinatura digital agora.", "sent": true, "delay": 2.4 },
       { "text": "Perfeito, vou assinar!", "sent": false, "delay": 3.4 }
     ],
     "insuranceMessages": [
       { "text": "Preciso renovar meu seguro auto", "sent": false, "delay": 0.2 },
-      { "text": "Encontrei sua apolice! Veiculo: Honda Civic 2023. Vou cotar as melhores opcoes pra voce.", "sent": true, "delay": 0.8 },
+      { "text": "Encontrei sua apólice! Veículo: Honda Civic 2023. Vou cotar as melhores opções pra você.", "sent": true, "delay": 0.8 },
       { "text": "Quero cobertura completa", "sent": false, "delay": 1.6 },
-      { "text": "Pronto! 3 opcoes:\n\n1. Basica: R$ 185/mes\n2. Completa: R$ 247/mes \u2b50\n3. Premium: R$ 312/mes\n\nA opcao 2 cobre roubo, colisao e terceiros. Qual prefere?", "sent": true, "delay": 2.4 },
+      { "text": "Pronto! 3 opções:\n\n1. Básica: R$ 185/mês\n2. Completa: R$ 247/mês \u2b50\n3. Premium: R$ 312/mês\n\nA opção 2 cobre roubo, colisão e terceiros. Qual prefere?", "sent": true, "delay": 2.4 },
       { "text": "Vai de completa!", "sent": false, "delay": 3.4 }
     ],
     "pensionMessages": [
-      { "text": "Quero comecar a investir em previdencia", "sent": false, "delay": 0.2 },
-      { "text": "Excelente decisao! Qual seu objetivo principal: aposentadoria, educacao dos filhos ou reserva de longo prazo?", "sent": true, "delay": 0.8 },
+      { "text": "Quero começar a investir em previdência", "sent": false, "delay": 0.2 },
+      { "text": "Excelente decisão! Qual seu objetivo principal: aposentadoria, educação dos filhos ou reserva de longo prazo?", "sent": true, "delay": 0.8 },
       { "text": "Aposentadoria, tenho 35 anos", "sent": false, "delay": 1.6 },
-      { "text": "Perfeito! Para seu perfil recomendo:\n\nPlano PGBL Moderado\nAporte: R$ 500/mes\nProjecao em 30 anos: R$ 892.000\nBeneficio fiscal no IR: ate 12%\n\nAbro sua conta agora?", "sent": true, "delay": 2.4 },
-      { "text": "Sim, quero comecar!", "sent": false, "delay": 3.4 }
+      { "text": "Perfeito! Para seu perfil recomendo:\n\nPlano PGBL Moderado\nAporte: R$ 500/mês\nProjeção em 30 anos: R$ 892.000\nBenefício fiscal no IR: até 12%\n\nAbro sua conta agora?", "sent": true, "delay": 2.4 },
+      { "text": "Sim, quero começar!", "sent": false, "delay": 3.4 }
     ]
   },
   "agentPreview": {
     "title": "Agente de Vendas",
     "online": "Online",
     "autoBadge": "AUTO",
-    "recentActionsHeader": "Acoes recentes",
+    "recentActionsHeader": "Ações recentes",
     "actions": [
       { "label": "Lead qualificado — Maria Silva", "delay": 0.3 },
-      { "label": "Proposta enviada — Joao Souza", "delay": 0.8 },
+      { "label": "Proposta enviada — João Souza", "delay": 0.8 },
       { "label": "Follow-up agendado — Ana Costa", "delay": 1.3 },
-      { "label": "Reuniao marcada — Pedro Lima", "delay": 1.8 },
+      { "label": "Reunião marcada — Pedro Lima", "delay": 1.8 },
       { "label": "Contrato gerado — Carla Nunes", "delay": 2.3 }
     ],
     "typing": "Respondendo cliente agora...",
     "stats": {
       "conversations": "atendimentos",
-      "satisfaction": "satisfacao",
-      "avgTime": "tempo medio"
+      "satisfaction": "satisfação",
+      "avgTime": "tempo médio"
     }
   },
   "studioPreview": {
@@ -569,13 +574,13 @@
     "pipelineHeader": "Builder Pipeline",
     "steps": [
       { "label": "Descrever", "detail": "\"Quero um workflow de boas-vindas...\"" },
-      { "label": "IA Refina", "detail": "Gerando especificacao..." },
-      { "label": "Spec Pronta", "detail": "3 requisitos, 2 acoes, 1 trigger" },
+      { "label": "IA Refina", "detail": "Gerando especificação..." },
+      { "label": "Spec Pronta", "detail": "3 requisitos, 2 ações, 1 trigger" },
       { "label": "Executar", "detail": "Workflow criado com sucesso!" }
     ],
     "typing": "Construindo workflow...",
     "stats": {
-      "codeLines": "linhas codigo",
+      "codeLines": "linhas código",
       "steps": "passos",
       "totalTime": "tempo total"
     }
@@ -584,15 +589,15 @@
     "tabs": {
       "team": "Sua Equipe",
       "studio": "Studio",
-      "credito": "Credito",
-      "workflows": "Automacoes",
+      "credito": "Crédito",
+      "workflows": "Automações",
       "seguros": "Seguros",
       "agents": "Agentes IA",
-      "previdencia": "Previdencia",
-      "appCredito": "App Credito",
+      "previdencia": "Previdência",
+      "appCredito": "App Crédito",
       "appKyc": "App KYC"
     },
-    "appCreditTitle": "API Originacao",
+    "appCreditTitle": "API Originação",
     "appCreditMessages": [
       { "text": "POST /api/v1/credit/analyze", "sent": true, "delay": 0.2 },
       { "text": "{\n  \"cpf\": \"***.***.***-12\",\n  \"valor\": 25000,\n  \"prazo\": 36\n}", "sent": true, "delay": 0.6 },
@@ -601,12 +606,12 @@
       { "text": "POST /api/v1/credit/approve", "sent": true, "delay": 2.2 },
       { "text": "201 Created — Contrato gerado", "sent": false, "delay": 2.8 }
     ],
-    "appKycTitle": "API Verificacao",
+    "appKycTitle": "API Verificação",
     "appKycMessages": [
       { "text": "POST /api/v1/kyc/verify", "sent": true, "delay": 0.2 },
       { "text": "{\n  \"documento\": \"RG\",\n  \"selfie\": true,\n  \"bureau\": \"serasa\"\n}", "sent": true, "delay": 0.6 },
       { "text": "200 OK", "sent": false, "delay": 1.2 },
-      { "text": "{\n  \"facematch\": 98.7,\n  \"documento\": \"valido\",\n  \"pep\": false,\n  \"status\": \"aprovado\"\n}", "sent": false, "delay": 1.6 },
+      { "text": "{\n  \"facematch\": 98.7,\n  \"documento\": \"válido\",\n  \"pep\": false,\n  \"status\": \"aprovado\"\n}", "sent": false, "delay": 1.6 },
       { "text": "GET /api/v1/kyc/audit/trail", "sent": true, "delay": 2.2 },
       { "text": "200 OK — 4 eventos registrados", "sent": false, "delay": 2.8 }
     ]
@@ -615,79 +620,79 @@
     "badge": "APPS & BACKENDS",
     "heading": "Descreva o que precisa.",
     "headingGradient": "Publique em minutos.",
-    "subtitle": "A IA seleciona Building Blocks enterprise, modela a arquitetura e gera APIs prontas para producao.",
+    "subtitle": "A IA seleciona Building Blocks enterprise, modela a arquitetura e gera APIs prontas para produção.",
     "steps": [
       {
         "label": "Descreva",
         "title": "Descreva o sistema",
-        "description": "Em linguagem natural, diga qual backend, API ou portal voce precisa. A IA entende o contexto.",
-        "bullets": ["Sistema de credito completo", "Portal do cliente com SSO", "API de pagamentos com split"]
+        "description": "Em linguagem natural, diga qual backend, API ou portal você precisa. A IA entende o contexto.",
+        "bullets": ["Sistema de crédito completo", "Portal do cliente com SSO", "API de pagamentos com split"]
       },
       {
         "label": "IA Modela",
         "title": "IA seleciona blocos enterprise",
-        "description": "A IA escolhe os Building Blocks certos para o seu caso — cada um testado em producao com seguranca bancaria.",
-        "bullets": ["Decision Engine para regras de negocio", "IAM com SSO e RBAC nativo", "Audit Trail imutavel automatico"]
+        "description": "A IA escolhe os Building Blocks certos para o seu caso — cada um testado em produção com segurança bancária.",
+        "bullets": ["Decision Engine para regras de negócio", "IAM com SSO e RBAC nativo", "Audit Trail imutável automático"]
       },
       {
         "label": "Revise",
-        "title": "Configure regras de negocio",
-        "description": "Ajuste parametros, limites e fluxos de aprovacao. Tudo via interface visual, sem codigo.",
-        "bullets": ["Regras de aprovacao configuráveis", "Limites e alcadas personalizados", "Fluxos de assinatura digital"]
+        "title": "Configure regras de negócio",
+        "description": "Ajuste parâmetros, limites e fluxos de aprovação. Tudo via interface visual, sem código.",
+        "bullets": ["Regras de aprovação configuráveis", "Limites e alçadas personalizados", "Fluxos de assinatura digital"]
       },
       {
         "label": "Publique",
-        "title": "Publique com seguranca bancaria",
-        "description": "APIs documentadas, criptografia ponta a ponta e LGPD nativa. Pronto para producao enterprise.",
-        "bullets": ["APIs auto-documentadas (OpenAPI)", "Criptografia E2E nativa", "LGPD e audit trail de fabrica"]
+        "title": "Publique com segurança bancária",
+        "description": "APIs documentadas, criptografia ponta a ponta e LGPD nativa. Pronto para produção enterprise.",
+        "bullets": ["APIs auto-documentadas (OpenAPI)", "Criptografia E2E nativa", "LGPD e audit trail de fábrica"]
       }
     ],
     "stats": [
       { "value": "25+", "label": "Building Blocks enterprise" },
       { "value": "Minutos", "label": "para deploy" },
-      { "value": "Zero", "label": "codigo necessario" }
+      { "value": "Zero", "label": "código necessário" }
     ]
   },
   "appsInAction": {
-    "badge": "CONSTRUCAO REAL",
+    "badge": "CONSTRUÇÃO REAL",
     "heading": "De uma frase a",
-    "headingGradient": "producao enterprise.",
-    "subtitle": "Veja como um sistema de originacao de credito foi construido em 10 minutos.",
+    "headingGradient": "produção enterprise.",
+    "subtitle": "Veja como um sistema de originação de crédito foi construído em 10 minutos.",
     "steps": [
       {
         "number": "01",
         "label": "Descreveu",
         "title": "Uma frase, um sistema",
-        "description": "O usuario descreveu: 'Preciso de um sistema de originacao de credito com KYC, analise de risco e contrato digital.'",
-        "highlight": "Uma frase. Sem briefing de 50 paginas."
+        "description": "O usuário descreveu: 'Preciso de um sistema de originação de crédito com KYC, análise de risco e contrato digital.'",
+        "highlight": "Uma frase. Sem briefing de 50 páginas."
       },
       {
         "number": "02",
         "label": "IA modelou",
         "title": "7 Building Blocks enterprise selecionados",
-        "description": "A IA identificou os blocos necessarios: IAM, KYC/OCR, Bureau Check, Decision Engine, E-Signature, Payments e Audit Trail.",
-        "highlight": "Cada bloco ja testado em producao com seguranca bancaria."
+        "description": "A IA identificou os blocos necessários: IAM, KYC/OCR, Bureau Check, Decision Engine, E-Signature, Payments e Audit Trail.",
+        "highlight": "Cada bloco já testado em produção com segurança bancária."
       },
       {
         "number": "03",
         "label": "Gerou",
         "title": "14 APIs prontas com data models",
-        "description": "O sistema gerou 14 endpoints documentados, modelos de dados, regras de negocio e fluxos de aprovacao — tudo configuravel.",
-        "highlight": "OpenAPI gerado automaticamente. Zero codigo manual."
+        "description": "O sistema gerou 14 endpoints documentados, modelos de dados, regras de negócio e fluxos de aprovação — tudo configurável.",
+        "highlight": "OpenAPI gerado automaticamente. Zero código manual."
       },
       {
         "number": "04",
-        "label": "Em producao",
-        "title": "Backend rodando com seguranca enterprise",
-        "description": "Sistema em producao com criptografia E2E, LGPD nativa, audit trail completo e SLA enterprise. Pronto para escalar.",
-        "highlight": "10 minutos do zero ao deploy. Com seguranca bancaria real."
+        "label": "Em produção",
+        "title": "Backend rodando com segurança enterprise",
+        "description": "Sistema em produção com criptografia E2E, LGPD nativa, audit trail completo e SLA enterprise. Pronto para escalar.",
+        "highlight": "10 minutos do zero ao deploy. Com segurança bancária real."
       }
     ],
     "resultStats": [
       { "value": "7", "label": "building blocks" },
       { "value": "14", "label": "APIs geradas" },
       { "value": "10min", "label": "tempo total" },
-      { "value": "0", "label": "linhas de codigo" }
+      { "value": "0", "label": "linhas de código" }
     ]
   },
   "agentsAndApps": {
@@ -697,7 +702,7 @@
     "subtitle": "A mesma plataforma entrega interface humana via Agentes IA e infraestrutura enterprise via Apps.",
     "examples": [
       {
-        "title": "Credito via WhatsApp",
+        "title": "Crédito via WhatsApp",
         "agent": "Agente coleta dados e qualifica o cliente",
         "app": "App analisa risco com Decision Engine e audit trail"
       },
@@ -708,110 +713,125 @@
       },
       {
         "title": "Portal do Cliente",
-        "agent": "Agente responde duvidas em tempo real",
+        "agent": "Agente responde dúvidas em tempo real",
         "app": "Portal exibe saldo, extrato e documentos do backend seguro"
       }
     ],
     "callout": {
       "heading": "Mesma plataforma. Mesmos Building Blocks.",
-      "description": "Agentes usam a interface humana. Apps usam a infraestrutura enterprise. Voce combina os dois."
+      "description": "Agentes usam a interface humana. Apps usam a infraestrutura enterprise. Você combina os dois."
     }
+  },
+  "marketValidation": {
+    "badge": "POR QUE AGORA",
+    "heading": "O mercado está mudando.",
+    "headingGradient": "Os dados comprovam.",
+    "subtitle": "As maiores consultorias do mundo já apontam: automação composable com IA não é tendência. É o novo padrão.",
+    "stats": [
+      { "value": "75%", "label": "dos novos apps serão low-code até 2026", "source": "Gartner" },
+      { "value": "80%", "label": "mais rápido em features com arquitetura composable", "source": "Gartner" },
+      { "value": "98%", "label": "taxa de abertura no WhatsApp (vs 20% email)", "source": "Meta" },
+      { "value": "$3,50", "label": "retorno por $1 investido em IA de atendimento", "source": "Benchmark" },
+      { "value": "6x", "label": "mais ROI de IA com plataforma composable", "source": "Gartner" },
+      { "value": "40%", "label": "dos apps enterprise com agentes de IA até 2026", "source": "Gartner" }
+    ],
+    "disclaimer": "Fontes: Gartner (2024-2025), Meta Business, pesquisas de mercado independentes."
   },
   "faq": {
     "heading": "Perguntas frequentes",
-    "subtitle": "Tudo que voce precisa saber sobre a Catalisa.",
+    "subtitle": "Tudo que você precisa saber sobre a Catalisa.",
     "items": [
       {
-        "question": "O que e a Catalisa?",
-        "answer": "A Catalisa e uma plataforma composable de automacao WhatsApp com IA. Ela combina 60+ building blocks, um studio visual com IA generativa e agentes inteligentes para automatizar atendimento, vendas e operacoes pelo WhatsApp — sem codigo."
+        "question": "O que é a Catalisa?",
+        "answer": "A Catalisa é uma plataforma composable de automação WhatsApp com IA. Ela combina 60+ building blocks, um studio visual com IA generativa e agentes inteligentes para automatizar atendimento, vendas e operações pelo WhatsApp — sem código."
       },
       {
         "question": "Preciso saber programar para usar?",
-        "answer": "Nao. A Catalisa foi projetada para ser usada sem codigo. Voce descreve o que precisa em linguagem natural e o Studio cria a especificacao e o workflow automaticamente. Para integracao avancada, oferecemos API e SDK."
+        "answer": "Não. A Catalisa foi projetada para ser usada sem código. Você descreve o que precisa em linguagem natural e o Studio cria a especificação e o workflow automaticamente. Para integração avançada, oferecemos API e SDK."
       },
       {
-        "question": "Qual a diferenca entre Cloud API e QR Code?",
-        "answer": "A Cloud API e a conexao oficial da Meta, ideal para empresas que precisam de compliance, escala ilimitada e auditabilidade. O QR Code (Baileys) e instantaneo e gratuito, ideal para testes, POCs e pequenas operacoes. Voce pode usar ambos na mesma plataforma."
+        "question": "Qual a diferença entre Cloud API e QR Code?",
+        "answer": "A Cloud API é a conexão oficial da Meta, ideal para empresas que precisam de compliance, escala ilimitada e auditabilidade. O QR Code (Baileys) é instantâneo e gratuito, ideal para testes, POCs e pequenas operações. Você pode usar ambos na mesma plataforma."
       },
       {
-        "question": "A Catalisa e parceira oficial da Meta?",
+        "question": "A Catalisa é parceira oficial da Meta?",
         "answer": "Sim. A Catalisa utiliza a API oficial do WhatsApp Business (Cloud API) da Meta, garantindo conformidade e acesso a todos os recursos oficiais da plataforma."
       },
       {
-        "question": "Como funciona a cobranca?",
-        "answer": "A Catalisa oferece planos flexiveis baseados no volume de uso. Entre em contato com nossa equipe para uma proposta personalizada de acordo com sua necessidade."
+        "question": "Como funciona a cobrança?",
+        "answer": "A Catalisa oferece planos flexíveis baseados no volume de uso. Entre em contato com nossa equipe para uma proposta personalizada de acordo com sua necessidade."
       },
       {
         "question": "Posso testar antes de contratar?",
-        "answer": "Sim. Oferecemos uma demonstracao completa onde voce pode ver a plataforma funcionando com seu caso de uso real. Agende uma demo com nosso time."
+        "answer": "Sim. Oferecemos uma demonstração completa onde você pode ver a plataforma funcionando com seu caso de uso real. Agende uma demo com nosso time."
       },
       {
         "question": "Quanto tempo leva para configurar?",
-        "answer": "O setup inicial leva minutos. Com QR Code voce conecta instantaneamente. Com Cloud API, o processo de aprovacao da Meta leva de 3 a 5 dias uteis. A criacao de workflows e agentes IA e feita em minutos pelo Studio."
+        "answer": "O setup inicial leva minutos. Com QR Code você conecta instantaneamente. Com Cloud API, o processo de aprovação da Meta leva de 3 a 5 dias úteis. A criação de workflows e agentes IA é feita em minutos pelo Studio."
       },
       {
-        "question": "Quantas conversas simultaneas suporta?",
-        "answer": "Nao ha limite fixo. Com Cloud API, a escala e ilimitada. A plataforma foi projetada para suportar de 1 a milhares de conversas simultaneas, com agentes IA que operam 24/7."
+        "question": "Quantas conversas simultâneas suporta?",
+        "answer": "Não há limite fixo. Com Cloud API, a escala é ilimitada. A plataforma foi projetada para suportar de 1 a milhares de conversas simultâneas, com agentes IA que operam 24/7."
       },
       {
         "question": "Meus dados ficam seguros?",
-        "answer": "Sim. A Catalisa utiliza criptografia ponta a ponta, isolamento multi-tenant, controle de acesso (RBAC), mascaramento automatico de dados sensiveis e infraestrutura em nuvem no Brasil com backups automaticos."
+        "answer": "Sim. A Catalisa utiliza criptografia ponta a ponta, isolamento multi-tenant, controle de acesso (RBAC), mascaramento automático de dados sensíveis e infraestrutura em nuvem no Brasil com backups automáticos."
       },
       {
-        "question": "A Catalisa esta em conformidade com a LGPD?",
-        "answer": "Sim. A plataforma foi projetada desde o inicio com privacidade por design. Todas as operacoes de dados seguem a Lei Geral de Protecao de Dados (LGPD), incluindo consentimento, anonimizacao e direitos do titular."
+        "question": "A Catalisa está em conformidade com a LGPD?",
+        "answer": "Sim. A plataforma foi projetada desde o início com privacidade por design. Todas as operações de dados seguem a Lei Geral de Proteção de Dados (LGPD), incluindo consentimento, anonimização e direitos do titular."
       },
       {
         "question": "Posso integrar com meu CRM/ERP atual?",
-        "answer": "Sim. A Catalisa oferece building blocks de integracao para os principais CRMs e ERPs do mercado, alem de webhooks e API REST para integracoes customizadas."
+        "answer": "Sim. A Catalisa oferece building blocks de integração para os principais CRMs e ERPs do mercado, além de webhooks e API REST para integrações customizadas."
       },
       {
-        "question": "O que sao building blocks?",
-        "answer": "Building blocks sao componentes prontos e composiveis que voce combina para criar automacoes. Sao 60+ blocos em 10 dominios: IA, fintech, CRM, seguranca, comunicacao, integracao e mais. Cada bloco e testado e pronto para producao."
+        "question": "O que são building blocks?",
+        "answer": "Building blocks são componentes prontos e composíveis que você combina para criar automações. São 60+ blocos em 10 domínios: IA, fintech, CRM, segurança, comunicação, integração e mais. Cada bloco é testado e pronto para produção."
       },
       {
         "question": "Como funcionam os agentes IA?",
-        "answer": "Cada agente IA tem personalidade, ferramentas e contexto proprios. Eles podem atender clientes, qualificar leads, fechar vendas, agendar reunioes e executar tarefas complexas — tudo de forma autonoma pelo WhatsApp."
+        "answer": "Cada agente IA tem personalidade, ferramentas e contexto próprios. Eles podem atender clientes, qualificar leads, fechar vendas, agendar reuniões e executar tarefas complexas — tudo de forma autônoma pelo WhatsApp."
       },
       {
-        "question": "Posso usar para mais de um numero de WhatsApp?",
-        "answer": "Sim. A Catalisa suporta multi-device e multi-tenant. Voce pode conectar multiplos numeros de WhatsApp, cada um com seus proprios workflows, agentes e configuracoes."
+        "question": "Posso usar para mais de um número de WhatsApp?",
+        "answer": "Sim. A Catalisa suporta multi-device e multi-tenant. Você pode conectar múltiplos números de WhatsApp, cada um com seus próprios workflows, agentes e configurações."
       },
       {
-        "question": "O que e a 'equipe IA' da Catalisa?",
-        "answer": "E um conjunto de agentes de IA especializados que funcionam como membros da sua equipe. Cada agente tem um papel definido (SDR, Suporte, Financeiro, etc.), ferramentas proprias e autonomia para executar tarefas — tudo coordenado pelo WhatsApp."
+        "question": "O que é a 'equipe IA' da Catalisa?",
+        "answer": "É um conjunto de agentes de IA especializados que funcionam como membros da sua equipe. Cada agente tem um papel definido (SDR, Suporte, Financeiro, etc.), ferramentas próprias e autonomia para executar tarefas — tudo coordenado pelo WhatsApp."
       },
       {
         "question": "Quais ferramentas meus agentes podem usar?",
-        "answer": "Os agentes conectam com suas ferramentas existentes: CRM, ERP, calendario, pagamentos, e-mail e qualquer API REST. Eles nao substituem suas ferramentas — eles as operam de forma autonoma."
+        "answer": "Os agentes conectam com suas ferramentas existentes: CRM, ERP, calendário, pagamentos, e-mail e qualquer API REST. Eles não substituem suas ferramentas — eles as operam de forma autônoma."
       },
       {
         "question": "Tenho controle sobre o que os agentes fazem?",
-        "answer": "Sim, total controle. Voce define limites de autonomia, regras de escalacao para humano, tom de voz e quais acoes cada agente pode executar. Tudo e monitorado em tempo real no painel de operacoes."
+        "answer": "Sim, total controle. Você define limites de autonomia, regras de escalação para humano, tom de voz e quais ações cada agente pode executar. Tudo é monitorado em tempo real no painel de operações."
       },
       {
-        "question": "O que sao os Apps da Catalisa?",
-        "answer": "Apps sao backends, APIs e portais completos construidos com Building Blocks enterprise-grade. Diferente de ferramentas low-code genericas, cada app Catalisa vem com seguranca bancaria nativa, providers de mercado homologados, audit trail e compliance LGPD — tudo de fabrica."
+        "question": "O que são os Apps da Catalisa?",
+        "answer": "Apps são backends, APIs e portais completos construídos com Building Blocks enterprise-grade. Diferente de ferramentas low-code genéricas, cada app Catalisa vem com segurança bancária nativa, providers de mercado homologados, audit trail e compliance LGPD — tudo de fábrica."
       },
       {
-        "question": "Qual a diferenca entre Agentes IA e Apps?",
-        "answer": "Agentes IA sao a interface humana — eles atendem clientes, qualificam leads e resolvem problemas via WhatsApp. Apps sao a infraestrutura enterprise — backends, APIs e portais que processam operacoes com seguranca bancaria. Ambos usam os mesmos Building Blocks e funcionam na mesma plataforma."
+        "question": "Qual a diferença entre Agentes IA e Apps?",
+        "answer": "Agentes IA são a interface humana — eles atendem clientes, qualificam leads e resolvem problemas via WhatsApp. Apps são a infraestrutura enterprise — backends, APIs e portais que processam operações com segurança bancária. Ambos usam os mesmos Building Blocks e funcionam na mesma plataforma."
       },
       {
-        "question": "Consigo criar um sistema de credito completo?",
-        "answer": "Sim. Com Building Blocks enterprise como Decision Engine, Bureau Check, E-Signature e Audit Trail, voce cria um sistema de originacao de credito completo — da solicitacao ao desembolso — em minutos, com seguranca bancaria nativa."
+        "question": "Consigo criar um sistema de crédito completo?",
+        "answer": "Sim. Com Building Blocks enterprise como Decision Engine, Bureau Check, E-Signature e Audit Trail, você cria um sistema de originação de crédito completo — da solicitação ao desembolso — em minutos, com segurança bancária nativa."
       },
       {
         "question": "Preciso de desenvolvedores para criar Apps?",
-        "answer": "Nao. A IA seleciona os Building Blocks enterprise, modela a arquitetura e gera as APIs automaticamente. Voce configura regras de negocio via interface visual. Para integracao avancada, oferecemos API e SDK."
+        "answer": "Não. A IA seleciona os Building Blocks enterprise, modela a arquitetura e gera as APIs automaticamente. Você configura regras de negócio via interface visual. Para integração avançada, oferecemos API e SDK."
       },
       {
         "question": "Meus Apps geram APIs documentadas?",
-        "answer": "Sim. Toda API e gerada com documentacao OpenAPI automatica, autenticacao, rate limiting e versionamento. Prontas para consumo por outros sistemas, apps mobile ou parceiros."
+        "answer": "Sim. Toda API é gerada com documentação OpenAPI automática, autenticação, rate limiting e versionamento. Prontas para consumo por outros sistemas, apps mobile ou parceiros."
       },
       {
         "question": "Posso conectar um Agente IA a um App que criei?",
-        "answer": "Sim. Essa e a forca da plataforma. Um Agente IA pode coletar dados via WhatsApp e enviar para um App que processa com Decision Engine, gera contratos e registra tudo no audit trail — tudo na mesma plataforma, com os mesmos Building Blocks."
+        "answer": "Sim. Essa é a força da plataforma. Um Agente IA pode coletar dados via WhatsApp e enviar para um App que processa com Decision Engine, gera contratos e registra tudo no audit trail — tudo na mesma plataforma, com os mesmos Building Blocks."
       }
     ]
   }

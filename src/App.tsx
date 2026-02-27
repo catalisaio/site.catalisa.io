@@ -28,6 +28,7 @@ const HowItWorksPage = lazy(() => import('./pages/HowItWorks').then(m => ({ defa
 const WhatsAppIntegration = lazy(() => import('./pages/WhatsAppIntegration').then(m => ({ default: m.WhatsAppIntegration })));
 const CommercialPresentation = lazy(() => import('./pages/CommercialPresentation').then(m => ({ default: m.CommercialPresentation })));
 const Apps = lazy(() => import('./pages/Apps').then(m => ({ default: m.Apps })));
+const AIAgentsWhatsApp = lazy(() => import('./pages/AIAgentsWhatsApp').then(m => ({ default: m.AIAgentsWhatsApp })));
 const PlaybookDetail = lazy(() => import('./pages/PlaybookDetail').then(m => ({ default: m.PlaybookDetail })));
 const NotFound = lazy(() => import('./pages/NotFound').then(m => ({ default: m.NotFound })));
 
@@ -104,6 +105,7 @@ function App() {
                 <Route path="/seguranca" element={<Security />} />
                 <Route path="/como-funciona" element={<HowItWorksPage />} />
                 <Route path="/integracoes/whatsapp" element={<WhatsAppIntegration />} />
+                <Route path="/agentes-ia-whatsapp" element={<AIAgentsWhatsApp />} />
                 <Route path="/press-kit" element={<PressKit />} />
               </Route>
 
@@ -130,6 +132,7 @@ function App() {
                 <Route path="security" element={<Security />} />
                 <Route path="how-it-works" element={<HowItWorksPage />} />
                 <Route path="integrations/whatsapp" element={<WhatsAppIntegration />} />
+                <Route path="ai-agents-whatsapp" element={<AIAgentsWhatsApp />} />
                 <Route path="press-kit" element={<PressKit />} />
               </Route>
 

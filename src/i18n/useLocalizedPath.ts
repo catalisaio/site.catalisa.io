@@ -28,6 +28,7 @@ const ptToEn: Record<string, string> = {
   '/integracoes/whatsapp': '/en/integrations/whatsapp',
   '/apps': '/en/apps',
   '/playbooks': '/en/playbooks',
+  '/agentes-ia-whatsapp': '/en/ai-agents-whatsapp',
 };
 
 /**

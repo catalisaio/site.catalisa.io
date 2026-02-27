@@ -60,6 +60,10 @@ export function IndustrySolutions() {
             {t('industrySolutions.headingGradient')}
           </GradientText>
         </Heading>
+
+        <Text color="gray.500" fontSize={{ base: 'md', md: 'lg' }} maxW="600px">
+          {t('industrySolutions.subtitle')}
+        </Text>
       </VStack>
 
       <MotionBox {...staggerContainer}>

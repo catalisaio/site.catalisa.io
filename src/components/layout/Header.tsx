@@ -52,6 +52,7 @@ import {
   FiShield,
   FiShoppingCart,
   FiZap,
+  FiMessageCircle,
 } from 'react-icons/fi';
 import type { IconType } from 'react-icons';
 import { useTranslation } from 'react-i18next';
@@ -199,7 +200,7 @@ export function Header() {
   const isHome = pathname === '/' || pathname === '/en';
   const isDarkHero =
     isHome ||
-    ['/studio', '/contato', '/demo', '/apps', '/casos-de-uso', '/en/studio', '/en/contact', '/en/demo', '/en/apps', '/en/use-cases'].includes(pathname);
+    ['/studio', '/contato', '/demo', '/apps', '/casos-de-uso', '/agentes-ia-whatsapp', '/en/studio', '/en/contact', '/en/demo', '/en/apps', '/en/use-cases', '/en/ai-agents-whatsapp'].includes(pathname);
 
   // --- Platform mega-menu data ---
   const platformColumns: MegaMenuColumn[] = [
@@ -235,6 +236,8 @@ export function Header() {
         { icon: FiMessageSquare, labelKey: 'megaMenu.solutions.whatsapp.support247.label', descKey: 'megaMenu.solutions.whatsapp.support247.desc', path: lp('/ai-agents') },
         { icon: FiSend, labelKey: 'megaMenu.solutions.whatsapp.campaigns.label', descKey: 'megaMenu.solutions.whatsapp.campaigns.desc', path: lp('/workflows') },
         { icon: FiLayers, labelKey: 'megaMenu.solutions.whatsapp.multichannel.label', descKey: 'megaMenu.solutions.whatsapp.multichannel.desc', path: lp('/building-blocks') },
+        { icon: FiMessageCircle, labelKey: 'megaMenu.solutions.whatsapp.integration.label', descKey: 'megaMenu.solutions.whatsapp.integration.desc', path: lp('/integracoes/whatsapp') },
+        { icon: FiCpu, labelKey: 'megaMenu.solutions.whatsapp.aiAgentsWhatsApp.label', descKey: 'megaMenu.solutions.whatsapp.aiAgentsWhatsApp.desc', path: lp('/agentes-ia-whatsapp') },
       ],
     },
     {

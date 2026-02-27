@@ -114,7 +114,7 @@ export function HeroTeamBuilder() {
                 spacing={2}
               >
                 <Box w={2} h={2} borderRadius="full" bg="whatsapp.400" />
-                <Text color="whiteAlpha.800" fontSize="sm">{t('badges.whatsapp247', { ns: 'common' })}</Text>
+                <Text color="whiteAlpha.800" fontSize="sm">{t('badges.gartnerValidated', { ns: 'common' })}</Text>
               </HStack>
             </MotionBox>
 
@@ -208,7 +208,7 @@ export function HeroTeamBuilder() {
               <HStack spacing={4} flexWrap="wrap" fontSize="xs" color="whiteAlpha.500">
                 <HStack><Box w={1.5} h={1.5} borderRadius="full" bg="whatsapp.400" /><Text>{t('badges.lgpd', { ns: 'common' })}</Text></HStack>
                 <HStack><Box w={1.5} h={1.5} borderRadius="full" bg="brand.400" /><Text>{t('badges.metaWhatsApp', { ns: 'common' })}</Text></HStack>
-                <HStack><Box w={1.5} h={1.5} borderRadius="full" bg="catalisa.secondary" /><Text>{t('badges.setupMinutes', { ns: 'common' })}</Text></HStack>
+                <HStack><Box w={1.5} h={1.5} borderRadius="full" bg="catalisa.secondary" /><Text>{t('badges.composableRevenue', { ns: 'common' })}</Text></HStack>
               </HStack>
               <BehindTheScenesHint onOpen={behindTheScenes.onOpen} variant="dark" />
             </MotionBox>

@@ -15,9 +15,9 @@ import { S09_Differentiators } from './S09_Differentiators';
 import { S15_PositioningMap } from './S15_PositioningMap';
 import { S16_AgenticQuadrant } from './S16_AgenticQuadrant';
 import { S17_BuildingBlocks } from './S17_BuildingBlocks';
-import { S12_BankingProducts } from './S12_BankingProducts';
 import { S13_Architecture } from './S13_Architecture';
 import { S20_TrustAndPricing } from './S20_TrustAndPricing';
+import { S21_InsightsCTA } from './S21_InsightsCTA';
 import { S16_CTA } from './S16_CTA';
 
 export const slides = [
@@ -38,8 +38,8 @@ export const slides = [
   S15_PositioningMap,     // 15. ★ NEW — Automation Landscape quadrant
   S16_AgenticQuadrant,    // 16. ★ NEW — Agentic Business Automation quadrant
   S17_BuildingBlocks,     // 17. ★ MERGE — LEGO + blocks grid
-  S12_BankingProducts,    // 18. Market-ready products
-  S13_Architecture,       // 19. Stack + business models
+  S13_Architecture,       // 18. Stack + business models
   S20_TrustAndPricing,    // 20. ★ MERGE — Security + Pricing + ROI
-  S16_CTA,                // 21. WhatsApp CTA (enhanced)
+  S21_InsightsCTA,        // 21. ★ NEW — Real cases with metrics from Insights
+  S16_CTA,                // 22. WhatsApp CTA (enhanced)
 ];

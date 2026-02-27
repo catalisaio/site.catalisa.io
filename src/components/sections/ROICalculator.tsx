@@ -94,7 +94,7 @@ export function ROICalculator() {
                 <SliderTrack bg="gray.200">
                   <SliderFilledTrack bg="red.400" />
                 </SliderTrack>
-                <SliderThumb boxSize={5} />
+                <SliderThumb boxSize={5} aria-label="Número de atendentes" />
               </Slider>
             </Box>
 
@@ -115,7 +115,7 @@ export function ROICalculator() {
                 <SliderTrack bg="gray.200">
                   <SliderFilledTrack bg="red.400" />
                 </SliderTrack>
-                <SliderThumb boxSize={5} />
+                <SliderThumb boxSize={5} aria-label="Tempo de resposta em horas" />
               </Slider>
             </Box>
 
@@ -136,7 +136,7 @@ export function ROICalculator() {
                 <SliderTrack bg="gray.200">
                   <SliderFilledTrack bg="red.400" />
                 </SliderTrack>
-                <SliderThumb boxSize={5} />
+                <SliderThumb boxSize={5} aria-label="Custo mensal em reais" />
               </Slider>
             </Box>
           </VStack>

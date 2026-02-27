@@ -118,10 +118,10 @@ export function Footer() {
             align="center"
             gap={4}
           >
-            <Text fontSize="xs" color="whiteAlpha.500">
+            <Text fontSize="xs" color="whiteAlpha.600">
               &copy; {new Date().getFullYear()} {t('footer.copyright')}
             </Text>
-            <HStack spacing={4} fontSize="xs" color="whiteAlpha.500">
+            <HStack spacing={4} fontSize="xs" color="whiteAlpha.600">
               <Text>{t('badges.lgpd')}</Text>
               <Text>{t('badges.metaWhatsApp')}</Text>
               <Text>{t('badges.dataBrazil')}</Text>

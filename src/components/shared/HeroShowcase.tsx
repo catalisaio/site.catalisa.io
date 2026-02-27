@@ -1,14 +1,17 @@
-import { useMemo } from 'react';
-import { Box, Flex, HStack, Text } from '@chakra-ui/react';
+import { useMemo, lazy, Suspense } from 'react';
+import { Box, Flex, HStack, Text, Skeleton } from '@chakra-ui/react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { FiMessageCircle, FiGitBranch, FiCpu, FiShield, FiLayers, FiUsers, FiServer, FiKey } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
-import { WhatsAppChatPreview, useCreditMessages, useInsuranceMessages } from './WhatsAppChatPreview';
-import { APIPreview, type APIMessage } from './APIPreview';
-import { WorkflowPreviewHero } from '../workflow-preview/WorkflowPreviewHero';
-import { AIAgentPreview } from './AIAgentPreview';
-import { StudioBuilderPreview } from './StudioBuilderPreview';
-import { TeamGridVisual } from './TeamGridVisual';
+import { useCreditMessages, useInsuranceMessages } from './WhatsAppChatPreview';
+import type { APIMessage } from './APIPreview';
+
+const WhatsAppChatPreview = lazy(() => import('./WhatsAppChatPreview').then(m => ({ default: m.WhatsAppChatPreview })));
+const APIPreview = lazy(() => import('./APIPreview').then(m => ({ default: m.APIPreview })));
+const WorkflowPreviewHero = lazy(() => import('../workflow-preview/WorkflowPreviewHero').then(m => ({ default: m.WorkflowPreviewHero })));
+const AIAgentPreview = lazy(() => import('./AIAgentPreview').then(m => ({ default: m.AIAgentPreview })));
+const StudioBuilderPreview = lazy(() => import('./StudioBuilderPreview').then(m => ({ default: m.StudioBuilderPreview })));
+const TeamGridVisual = lazy(() => import('./TeamGridVisual').then(m => ({ default: m.TeamGridVisual })));
 
 export interface HeroShowcaseTab {
   id: string;
@@ -75,6 +78,10 @@ function useAppKycMessages(): APIMessage[] {
   return useMemo(() => t('heroShowcase.appKycMessages', { returnObjects: true }) as APIMessage[], [t]);
 }
 
+const PanelSkeleton = () => (
+  <Skeleton h="400px" w="100%" borderRadius="xl" startColor="whiteAlpha.100" endColor="whiteAlpha.200" />
+);
+
 function PanelContent({ index }: { index: number }) {
   const { t } = useTranslation('home');
   const creditMessages = useCreditMessages();
@@ -82,26 +89,37 @@ function PanelContent({ index }: { index: number }) {
   const appCreditMessages = useAppCreditMessages();
   const appKycMessages = useAppKycMessages();
 
+  let content: React.ReactNode;
   switch (index) {
     case 0:
-      return <TeamGridVisual />;
+      content = <TeamGridVisual />;
+      break;
     case 1:
-      return <StudioBuilderPreview />;
+      content = <StudioBuilderPreview />;
+      break;
     case 2:
-      return <WhatsAppChatPreview triggerMode="auto" title={t('chatPreview.creditTitle')} messages={creditMessages} />;
+      content = <WhatsAppChatPreview triggerMode="auto" title={t('chatPreview.creditTitle')} messages={creditMessages} />;
+      break;
     case 3:
-      return <WorkflowPreviewHero />;
+      content = <WorkflowPreviewHero />;
+      break;
     case 4:
-      return <WhatsAppChatPreview triggerMode="auto" title={t('chatPreview.insuranceTitle')} messages={insuranceMessages} />;
+      content = <WhatsAppChatPreview triggerMode="auto" title={t('chatPreview.insuranceTitle')} messages={insuranceMessages} />;
+      break;
     case 5:
-      return <AIAgentPreview />;
+      content = <AIAgentPreview />;
+      break;
     case 6:
-      return <APIPreview triggerMode="auto" title={t('heroShowcase.appCreditTitle')} messages={appCreditMessages} />;
+      content = <APIPreview triggerMode="auto" title={t('heroShowcase.appCreditTitle')} messages={appCreditMessages} />;
+      break;
     case 7:
-      return <APIPreview triggerMode="auto" title={t('heroShowcase.appKycTitle')} messages={appKycMessages} />;
+      content = <APIPreview triggerMode="auto" title={t('heroShowcase.appKycTitle')} messages={appKycMessages} />;
+      break;
     default:
       return null;
   }
+
+  return <Suspense fallback={<PanelSkeleton />}>{content}</Suspense>;
 }
 
 export function HeroShowcase({ activeIndex, onTabChange, paused }: HeroShowcaseProps) {

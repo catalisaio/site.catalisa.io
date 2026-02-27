@@ -1,3 +1,4 @@
+import { lazy, Suspense } from 'react';
 import { Heading, Text, VStack, Button, HStack, Box } from '@chakra-ui/react';
 import { FiMessageCircle, FiUsers, FiHeadphones, FiDollarSign, FiUserCheck } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
@@ -5,7 +6,9 @@ import { useTranslation } from 'react-i18next';
 import { SectionWrapper } from '../shared/SectionWrapper';
 import { useLocalizedPath } from '../../i18n/useLocalizedPath';
 import { BehindTheScenesHint } from '../shared/BehindTheScenesHint';
-import { BehindTheScenesModal, useBehindTheScenes } from '../shared/BehindTheScenesModal';
+import { useBehindTheScenes } from '../shared/BehindTheScenesModal';
+
+const BehindTheScenesModal = lazy(() => import('../shared/BehindTheScenesModal').then(m => ({ default: m.BehindTheScenesModal })));
 
 const WHATSAPP_URL = 'https://wa.me/5511977303414?text=Ola!%20Quero%20saber%20mais%20sobre%20a%20Catalisa.';
 
@@ -104,7 +107,11 @@ export function FinalCTA() {
         <BehindTheScenesHint onOpen={behindTheScenes.onOpen} variant="light" />
       </VStack>
 
-      <BehindTheScenesModal isOpen={behindTheScenes.isOpen} onClose={behindTheScenes.onClose} />
+      {behindTheScenes.isOpen && (
+        <Suspense fallback={null}>
+          <BehindTheScenesModal isOpen={behindTheScenes.isOpen} onClose={behindTheScenes.onClose} />
+        </Suspense>
+      )}
     </SectionWrapper>
   );
 }

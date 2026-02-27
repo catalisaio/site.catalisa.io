@@ -66,7 +66,7 @@ export const articles: Article[] = [
     metaDescriptionKey: 'insights.articles.boticario.metaDescription',
     keywords: ['IA e-commerce', 'conversão inteligência artificial', 'assistente IA varejo', 'personalização IA beleza'],
     category: 'varejo',
-    publishedDate: '2026-02-27',
+    publishedDate: '2026-02-25',
     readingTime: 7,
     sources: [
       {
@@ -101,7 +101,7 @@ export const articles: Article[] = [
     metaDescriptionKey: 'insights.articles.ifoodComprai.metaDescription',
     keywords: ['compras whatsapp IA', 'conversational commerce', 'ifood inteligência artificial', 'chatbot mercado'],
     category: 'food-tech',
-    publishedDate: '2026-02-27',
+    publishedDate: '2026-01-15',
     readingTime: 8,
     sources: [
       {
@@ -136,7 +136,7 @@ export const articles: Article[] = [
     metaDescriptionKey: 'insights.articles.ifoodGerente.metaDescription',
     keywords: ['agente IA financeiro', 'whatsapp business pagamentos', 'gestão restaurante IA', 'pix automático IA'],
     category: 'food-tech',
-    publishedDate: '2026-02-27',
+    publishedDate: '2026-02-03',
     readingTime: 7,
     sources: [
       {
@@ -171,7 +171,7 @@ export const articles: Article[] = [
     metaDescriptionKey: 'insights.articles.ifoodCris.metaDescription',
     keywords: ['agente IA restaurante', 'mentoria IA dados', 'analytics conversacional', 'otimização vendas IA'],
     category: 'food-tech',
-    publishedDate: '2026-02-27',
+    publishedDate: '2025-12-18',
     readingTime: 7,
     sources: [
       {
@@ -206,7 +206,7 @@ export const articles: Article[] = [
     metaDescriptionKey: 'insights.articles.carrefour.metaDescription',
     keywords: ['atendimento IA humanizado', 'customer service IA', 'chatbot varejo personalizado', 'LGPD IA'],
     category: 'varejo',
-    publishedDate: '2026-02-27',
+    publishedDate: '2026-01-28',
     readingTime: 8,
     sources: [
       {
@@ -241,7 +241,7 @@ export const articles: Article[] = [
     metaDescriptionKey: 'insights.articles.lotte.metaDescription',
     keywords: ['redução carga atendimento IA', 'automação customer service', 'IA suporte cliente', 'eficiência operacional IA'],
     category: 'varejo',
-    publishedDate: '2026-02-27',
+    publishedDate: '2025-11-22',
     readingTime: 7,
     sources: [
       {
@@ -276,7 +276,7 @@ export const articles: Article[] = [
     metaDescriptionKey: 'insights.articles.synthesiaIntercom.metaDescription',
     keywords: ['self-service IA', 'escalar suporte sem contratar', 'knowledge base IA', 'autoatendimento inteligente'],
     category: 'atendimento',
-    publishedDate: '2026-02-27',
+    publishedDate: '2026-02-10',
     readingTime: 8,
     sources: [
       {
@@ -311,7 +311,7 @@ export const articles: Article[] = [
     metaDescriptionKey: 'insights.articles.synthesiaFin.metaDescription',
     keywords: ['escalar suporte IA', 'pico demanda IA', 'resolução automática IA', 'CSAT inteligência artificial'],
     category: 'atendimento',
-    publishedDate: '2026-02-27',
+    publishedDate: '2026-01-08',
     readingTime: 8,
     sources: [
       {
@@ -346,7 +346,7 @@ export const articles: Article[] = [
     metaDescriptionKey: 'insights.articles.gupshup.metaDescription',
     keywords: ['ROI whatsapp business', 'retorno investimento IA conversacional', 'whatsapp marketing ROI', 'conversational commerce métricas'],
     category: 'conversational-commerce',
-    publishedDate: '2026-02-27',
+    publishedDate: '2025-12-05',
     readingTime: 8,
     sources: [
       {
@@ -381,7 +381,7 @@ export const articles: Article[] = [
     metaDescriptionKey: 'insights.articles.magalu.metaDescription',
     keywords: ['vendas whatsapp IA', 'comércio conversacional', 'lu magalu IA', 'agente vendedor whatsapp'],
     category: 'varejo',
-    publishedDate: '2026-02-27',
+    publishedDate: '2026-02-20',
     readingTime: 9,
     sources: [
       {
@@ -418,7 +418,7 @@ export const articles: Article[] = [
     metaDescriptionKey: 'insights.articles.varejoBr.metaDescription',
     keywords: ['IA conversacional varejo', 'inteligência artificial retail Brasil', 'transformação digital varejo'],
     category: 'varejo',
-    publishedDate: '2026-02-27',
+    publishedDate: '2026-02-12',
     readingTime: 10,
     sources: [
       { author: 'MUNDO DO MARKETING', title: 'Grupo Boticário lança assistente de IA e eleva conversão em 46% no e-commerce', site: 'mundodomarketing.com.br', url: 'https://mundodomarketing.com.br/grupo-boticario-lanca-assistente-de-ia-e-eleva-conversao-em-46-no-e-commerce', accessDate: '27 fev. 2026' },
@@ -450,7 +450,7 @@ export const articles: Article[] = [
     metaDescriptionKey: 'insights.articles.whatsappCommerce.metaDescription',
     keywords: ['whatsapp vendas', 'conversational commerce Brasil', 'whatsapp business estratégia', 'social commerce'],
     category: 'conversational-commerce',
-    publishedDate: '2026-02-27',
+    publishedDate: '2026-01-20',
     readingTime: 10,
     sources: [
       { author: 'EXAME', title: 'Lu, do Magalu, ganha cérebro com IA e vira vendedora dentro do WhatsApp', site: 'exame.com', url: 'https://exame.com/inteligencia-artificial/lu-do-magalu-ganha-cerebro-com-ia-e-vira-vendedora-dentro-do-whatsapp/', accessDate: '27 fev. 2026' },
@@ -481,7 +481,7 @@ export const articles: Article[] = [
     metaDescriptionKey: 'insights.articles.roiCx.metaDescription',
     keywords: ['ROI inteligência artificial', 'retorno investimento chatbot', 'métricas IA customer experience'],
     category: 'estrategia',
-    publishedDate: '2026-02-27',
+    publishedDate: '2025-12-28',
     readingTime: 10,
     sources: [
       { author: 'GUPSHUP', title: 'Gupshup WhatsApp drive 270% ROI — Total Economic Impact study', site: 'gupshup.ai', url: 'https://www.gupshup.ai/resources/press-releases/gupshup-whatsapp-drive-270-roi-total-economic-impact-study/', accessDate: '27 fev. 2026' },
@@ -513,7 +513,7 @@ export const articles: Article[] = [
     metaDescriptionKey: 'insights.articles.escalar.metaDescription',
     keywords: ['escalar atendimento IA', 'reduzir custo suporte', 'automação atendimento cliente', 'eficiência operacional'],
     category: 'atendimento',
-    publishedDate: '2026-02-27',
+    publishedDate: '2026-02-05',
     readingTime: 9,
     sources: [
       { author: 'FIN.AI', title: 'Synthesia customer story', site: 'fin.ai', url: 'https://fin.ai/customers/synthesia', accessDate: '27 fev. 2026' },
@@ -544,7 +544,7 @@ export const articles: Article[] = [
     metaDescriptionKey: 'insights.articles.agentesWhatsApp.metaDescription',
     keywords: ['agentes IA whatsapp', 'ai agents business', 'chatbot inteligente whatsapp', 'automação inteligente'],
     category: 'conversational-commerce',
-    publishedDate: '2026-02-27',
+    publishedDate: '2026-01-12',
     readingTime: 9,
     sources: [
       { author: 'MOBILE TIME', title: 'iFood Gerente', site: 'mobiletime.com.br', url: 'https://www.mobiletime.com.br/noticias/21/10/2025/ifood-gerente/', accessDate: '27 fev. 2026' },
@@ -575,7 +575,7 @@ export const articles: Article[] = [
     metaDescriptionKey: 'insights.articles.iaHumanizada.metaDescription',
     keywords: ['IA humanizada', 'chatbot humanizado', 'experiência cliente IA', 'personalização atendimento'],
     category: 'atendimento',
-    publishedDate: '2026-02-27',
+    publishedDate: '2025-11-30',
     readingTime: 9,
     sources: [
       { author: 'IT FORUM', title: 'Carrefour aposta em IA para atendimento humanizado', site: 'itforum.com.br', url: 'https://itforum.com.br/noticias/carrefour-aposta-ia-atendimento-humanizado/', accessDate: '27 fev. 2026' },
@@ -606,7 +606,7 @@ export const articles: Article[] = [
     metaDescriptionKey: 'insights.articles.foodtech.metaDescription',
     keywords: ['foodtech IA', 'inteligência artificial restaurante', 'IA supermercado', 'automação food service'],
     category: 'food-tech',
-    publishedDate: '2026-02-27',
+    publishedDate: '2026-02-18',
     readingTime: 9,
     sources: [
       { author: 'IFOOD INSTITUCIONAL', title: 'Compr.AI: compra de mercado pelo WhatsApp', site: 'institucional.ifood.com.br', url: 'https://institucional.ifood.com.br/inovacao/compr-ai-compra-de-mercado-pelo-whatsapp/', accessDate: '27 fev. 2026' },

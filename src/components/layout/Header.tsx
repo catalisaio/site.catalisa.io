@@ -14,7 +14,6 @@ import {
   useDisclosure,
   Container,
   Text,
-  SimpleGrid,
   Popover,
   PopoverTrigger,
   PopoverContent,
@@ -100,6 +99,7 @@ function MegaMenuItemLink({
       align="flex-start"
       onClick={onClose}
       role="group"
+      transition="all 0.15s"
     >
       <Icon
         as={item.icon}
@@ -112,10 +112,46 @@ function MegaMenuItemLink({
         <Text fontSize="sm" fontWeight="600" color="gray.800" _groupHover={{ color: 'brand.600' }}>
           {t(item.labelKey)}
         </Text>
-        <Text fontSize="xs" color="gray.500" lineHeight="short">
+        <Text fontSize="xs" color="gray.500" lineHeight="1.3">
           {t(item.descKey)}
         </Text>
       </Box>
+    </Flex>
+  );
+}
+
+// --- Compact menu item (icon + label only, no description) ---
+function CompactMenuItemLink({
+  item,
+  t,
+  onClose,
+}: {
+  item: MegaMenuItem;
+  t: (key: string) => string;
+  onClose: () => void;
+}) {
+  return (
+    <Flex
+      as={Link}
+      to={item.path}
+      gap={2}
+      p={2}
+      borderRadius="md"
+      _hover={{ bg: 'brand.50' }}
+      align="center"
+      onClick={onClose}
+      role="group"
+      transition="all 0.15s"
+    >
+      <Icon
+        as={item.icon}
+        boxSize={4}
+        color="brand.500"
+        _groupHover={{ color: 'brand.600' }}
+      />
+      <Text fontSize="sm" fontWeight="500" color="gray.700" _groupHover={{ color: 'brand.600' }}>
+        {t(item.labelKey)}
+      </Text>
     </Flex>
   );
 }
@@ -125,11 +161,19 @@ function MegaMenuPopover({
   triggerLabel,
   isActive,
   isDarkHero,
+  minW = '600px',
+  maxW = '720px',
+  bodyP = 5,
+  onOpenCallback,
   children,
 }: {
   triggerLabel: string;
   isActive: boolean;
   isDarkHero: boolean;
+  minW?: string;
+  maxW?: string;
+  bodyP?: number;
+  onOpenCallback?: () => void;
   children: (onClose: () => void) => React.ReactNode;
 }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -138,7 +182,8 @@ function MegaMenuPopover({
   const handleEnter = useCallback(() => {
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
     onOpen();
-  }, [onOpen]);
+    onOpenCallback?.();
+  }, [onOpen, onOpenCallback]);
 
   const handleLeave = useCallback(() => {
     timeoutRef.current = setTimeout(onClose, 200);
@@ -165,15 +210,15 @@ function MegaMenuPopover({
           }}
           onMouseEnter={handleEnter}
           onMouseLeave={handleLeave}
-          onClick={onOpen}
+          onClick={() => { onOpen(); onOpenCallback?.(); }}
         >
           {triggerLabel}
         </Button>
       </PopoverTrigger>
       <PopoverContent
         w="auto"
-        minW="600px"
-        maxW="720px"
+        minW={minW}
+        maxW={maxW}
         border="1px solid"
         borderColor="gray.100"
         boxShadow="xl"
@@ -184,7 +229,7 @@ function MegaMenuPopover({
         onMouseLeave={handleLeave}
         _focus={{ outline: 'none' }}
       >
-        <PopoverBody p={5}>{children(onClose)}</PopoverBody>
+        <PopoverBody p={bodyP}>{children(onClose)}</PopoverBody>
       </PopoverContent>
     </Popover>
   );
@@ -258,6 +303,12 @@ export function Header() {
     },
   ];
 
+  // --- Solutions featured items (shown prominently at top) ---
+  const solutionsFeatured: MegaMenuItem[] = [
+    { icon: FiCpu, labelKey: 'megaMenu.solutions.whatsapp.aiAgentsWhatsApp.label', descKey: 'megaMenu.solutions.whatsapp.aiAgentsWhatsApp.desc', path: lp('/agentes-ia-whatsapp') },
+    { icon: FiGrid, labelKey: 'megaMenu.solutions.apps.label', descKey: 'megaMenu.solutions.apps.desc', path: lp('/apps') },
+  ];
+
   // --- Industries data ---
   const industries: IndustryItem[] = [
     { icon: FiDollarSign, labelKey: 'megaMenu.industries.fintech.label', descKey: 'megaMenu.industries.fintech.desc', path: lp('/fintech') },
@@ -307,11 +358,15 @@ export function Header() {
               triggerLabel={t('megaMenu.platform.label')}
               isActive={isPlatformActive}
               isDarkHero={isDarkHero}
+              minW="560px"
+              maxW="680px"
+              bodyP={6}
             >
               {(closeMega) => (
-                <SimpleGrid columns={3} spacing={4}>
-                  {platformColumns.map((col) => (
-                    <Box key={col.titleKey}>
+                <Flex gap={6}>
+                  {/* Products & Infrastructure columns */}
+                  {platformColumns.slice(0, 2).map((col) => (
+                    <Box key={col.titleKey} flex="1" bg="gray.50" borderRadius="lg" p={4}>
                       <Text
                         fontSize="xs"
                         fontWeight="700"
@@ -334,76 +389,175 @@ export function Header() {
                       </VStack>
                     </Box>
                   ))}
-                </SimpleGrid>
+
+                  {/* Vertical divider */}
+                  <Box w="1px" bg="gray.100" alignSelf="stretch" />
+
+                  {/* Resources column — compact links */}
+                  <Box minW="140px">
+                    <Text
+                      fontSize="xs"
+                      fontWeight="700"
+                      color="gray.400"
+                      textTransform="uppercase"
+                      letterSpacing="wider"
+                      mb={3}
+                    >
+                      {t(platformColumns[2].titleKey)}
+                    </Text>
+                    <VStack spacing={1} align="stretch">
+                      {platformColumns[2].items.map((item) => (
+                        <CompactMenuItemLink
+                          key={item.labelKey}
+                          item={item}
+                          t={t}
+                          onClose={closeMega}
+                        />
+                      ))}
+                    </VStack>
+                  </Box>
+                </Flex>
               )}
             </MegaMenuPopover>
 
-            {/* Solucoes mega-menu */}
+            {/* Solucoes mega-menu — featured + open categories */}
             <MegaMenuPopover
               triggerLabel={t('megaMenu.solutions.label')}
               isActive={false}
               isDarkHero={isDarkHero}
+              minW="640px"
+              maxW="740px"
+              bodyP={6}
             >
               {(closeMega) => (
-                <SimpleGrid columns={3} spacing={4}>
-                  {solutionsColumns.map((col) => (
-                    <Box key={col.titleKey}>
-                      <Text
-                        fontSize="xs"
-                        fontWeight="700"
-                        color="gray.400"
-                        textTransform="uppercase"
-                        letterSpacing="wider"
-                        mb={3}
+                <Box>
+                  {/* Featured items row */}
+                  <Flex gap={4} mb={5}>
+                    {solutionsFeatured.map((item) => (
+                      <Flex
+                        key={item.labelKey}
+                        as={Link}
+                        to={item.path}
+                        flex="1"
+                        gap={3}
+                        p={4}
+                        borderRadius="lg"
+                        bg="gray.50"
+                        _hover={{ bg: 'brand.50', borderColor: 'brand.200' }}
+                        align="flex-start"
+                        onClick={closeMega}
+                        role="group"
+                        transition="all 0.15s"
+                        border="1px solid"
+                        borderColor="gray.100"
                       >
-                        {t(col.titleKey)}
-                      </Text>
-                      <VStack spacing={1} align="stretch">
-                        {col.items.map((item) => (
-                          <MegaMenuItemLink
-                            key={item.labelKey}
-                            item={item}
-                            t={t}
-                            onClose={closeMega}
+                        <Flex
+                          align="center"
+                          justify="center"
+                          w="36px"
+                          h="36px"
+                          borderRadius="lg"
+                          bg="brand.100"
+                          flexShrink={0}
+                        >
+                          <Icon
+                            as={item.icon}
+                            boxSize={5}
+                            color="brand.600"
+                            _groupHover={{ color: 'brand.700' }}
                           />
-                        ))}
-                      </VStack>
-                    </Box>
-                  ))}
-                </SimpleGrid>
+                        </Flex>
+                        <Box>
+                          <Text fontSize="sm" fontWeight="600" color="gray.800" _groupHover={{ color: 'brand.600' }}>
+                            {t(item.labelKey)}
+                          </Text>
+                          <Text fontSize="xs" color="gray.500" lineHeight="1.3">
+                            {t(item.descKey)}
+                          </Text>
+                        </Box>
+                      </Flex>
+                    ))}
+                  </Flex>
+
+                  {/* Divider */}
+                  <Box h="1px" bg="gray.100" mb={4} />
+
+                  {/* All categories open — compact items */}
+                  <Flex gap={6}>
+                    {solutionsColumns.map((col, colIdx) => {
+                      const categoryColors = ['green.500', 'blue.400', 'orange.400'];
+                      return (
+                        <Box key={col.titleKey} flex="1">
+                          <Flex align="center" gap={2} mb={2}>
+                            <Box w="3px" h="14px" borderRadius="full" bg={categoryColors[colIdx]} />
+                            <Text
+                              fontSize="xs"
+                              fontWeight="700"
+                              color="gray.500"
+                              textTransform="uppercase"
+                              letterSpacing="wider"
+                            >
+                              {t(col.titleKey)}
+                            </Text>
+                          </Flex>
+                          <VStack spacing={0} align="stretch">
+                            {col.items.map((item) => (
+                              <CompactMenuItemLink
+                                key={item.labelKey}
+                                item={item}
+                                t={t}
+                                onClose={closeMega}
+                              />
+                            ))}
+                          </VStack>
+                        </Box>
+                      );
+                    })}
+                  </Flex>
+                </Box>
               )}
             </MegaMenuPopover>
 
-            {/* Industrias mega-menu */}
+            {/* Industrias mega-menu — compact list */}
             <MegaMenuPopover
               triggerLabel={t('megaMenu.industries.label')}
               isActive={isIndustryActive}
               isDarkHero={isDarkHero}
+              minW="380px"
+              maxW="440px"
             >
               {(closeMega) => (
-                <SimpleGrid columns={{ base: 2, md: 3 }} spacing={3}>
+                <VStack spacing={1} align="stretch">
                   {industries.map((item) => (
                     <Flex
                       key={item.labelKey}
                       as={Link}
                       to={item.path}
                       gap={3}
-                      p={3}
-                      borderRadius="lg"
-                      border="1px solid"
-                      borderColor="gray.100"
-                      _hover={{ borderColor: 'brand.200', bg: 'brand.50' }}
-                      align="flex-start"
+                      p={2}
+                      borderRadius="md"
+                      _hover={{ bg: 'brand.50' }}
+                      align="center"
                       onClick={closeMega}
                       role="group"
+                      transition="all 0.15s"
                     >
-                      <Icon
-                        as={item.icon}
-                        boxSize={5}
-                        mt="2px"
-                        color="brand.500"
-                        _groupHover={{ color: 'brand.600' }}
-                      />
+                      <Flex
+                        align="center"
+                        justify="center"
+                        w="32px"
+                        h="32px"
+                        borderRadius="md"
+                        bg="brand.50"
+                        flexShrink={0}
+                      >
+                        <Icon
+                          as={item.icon}
+                          boxSize={4}
+                          color="brand.500"
+                          _groupHover={{ color: 'brand.600' }}
+                        />
+                      </Flex>
                       <Box>
                         <Text
                           fontSize="sm"
@@ -413,13 +567,13 @@ export function Header() {
                         >
                           {t(item.labelKey)}
                         </Text>
-                        <Text fontSize="xs" color="gray.500" lineHeight="short">
+                        <Text fontSize="xs" color="gray.500" lineHeight="1.3">
                           {t(item.descKey)}
                         </Text>
                       </Box>
                     </Flex>
                   ))}
-                </SimpleGrid>
+                </VStack>
               )}
             </MegaMenuPopover>
 
@@ -437,6 +591,22 @@ export function Header() {
               }}
             >
               {t('nav.useCases')}
+            </Button>
+
+            {/* Insights — top-level link */}
+            <Button
+              as={Link}
+              to={lp('/insights')}
+              variant="ghost"
+              size="sm"
+              color={isDarkHero ? 'whiteAlpha.800' : 'gray.600'}
+              fontWeight={pathname.startsWith(lp('/insights')) ? '600' : '400'}
+              _hover={{
+                color: isDarkHero ? 'white' : 'brand.500',
+                bg: isDarkHero ? 'whiteAlpha.100' : 'brand.50',
+              }}
+            >
+              {t('nav.insights')}
             </Button>
 
             {/* Developers link */}
@@ -549,6 +719,23 @@ export function Header() {
                   </AccordionButton>
                   <AccordionPanel px={0} pb={2}>
                     <VStack spacing={3} align="stretch">
+                      {/* Featured solutions */}
+                      {solutionsFeatured.map((item) => (
+                        <Button
+                          key={item.labelKey}
+                          as={Link}
+                          to={item.path}
+                          variant="ghost"
+                          justifyContent="flex-start"
+                          fontWeight={pathname === item.path ? '600' : '400'}
+                          size="sm"
+                          pl={4}
+                          onClick={onClose}
+                          leftIcon={<Icon as={item.icon} color="brand.600" />}
+                        >
+                          {t(item.labelKey)}
+                        </Button>
+                      ))}
                       {solutionsColumns.map((col) => (
                         <Box key={col.titleKey}>
                           <Text
@@ -624,6 +811,18 @@ export function Header() {
                 onClick={onClose}
               >
                 {t('nav.useCases')}
+              </Button>
+
+              {/* Insights */}
+              <Button
+                as={Link}
+                to={lp('/insights')}
+                variant="ghost"
+                justifyContent="flex-start"
+                fontWeight={pathname.startsWith(lp('/insights')) ? '600' : '400'}
+                onClick={onClose}
+              >
+                {t('nav.insights')}
               </Button>
 
               {/* Developers */}

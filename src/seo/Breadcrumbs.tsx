@@ -29,9 +29,14 @@ export function Breadcrumbs({ currentLabel, currentPtPath }: BreadcrumbsProps) {
   ];
 
   if (category) {
+    const categoryPaths: Record<string, string> = {
+      platform: '/studio',
+      industries: '/fintech',
+      insights: '/insights',
+    };
     items.push({
       name: t(`breadcrumbs.${category}`),
-      path: lp(category === 'platform' ? '/studio' : '/fintech'),
+      path: lp(categoryPaths[category] || '/'),
     });
   }
 

@@ -3,6 +3,7 @@ import { createServer } from 'http';
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { playbookIds } from '../src/data/playbook-ids';
+import { articleSlugs } from '../src/data/articles';
 
 const DIST_DIR = resolve(process.cwd(), 'dist');
 const PORT = 4173;
@@ -21,6 +22,11 @@ const routes = [
   '/en/use-cases', '/en/contact', '/en/demo', '/en/privacy-policy',
   '/en/terms', '/en/security', '/en/pricing', '/en/how-it-works', '/en/integrations/whatsapp',
   '/en/press-kit', '/en/commercial-presentation', '/en/ai-agents-whatsapp',
+  // Insights
+  '/insights',
+  '/en/insights',
+  ...articleSlugs.map(slug => `/insights/${slug}`),
+  ...articleSlugs.map(slug => `/en/insights/${slug}`),
   // Playbook detail pages
   ...playbookIds.map(id => `/playbooks/${id}`),
   ...playbookIds.map(id => `/en/playbooks/${id}`),

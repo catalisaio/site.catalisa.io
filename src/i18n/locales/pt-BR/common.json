@@ -5,6 +5,7 @@
     "buildingBlocks": "Building Blocks",
     "workflows": "Workflows",
     "useCases": "Casos de Uso",
+    "insights": "Insights",
     "developers": "Developers",
     "verticals": "Verticais",
     "fintech": "Fintech",
@@ -48,7 +49,8 @@
         "qualification": { "label": "Qualificação de leads", "desc": "Identifique oportunidades" },
         "followup": { "label": "Follow-up automático", "desc": "Nunca perca um lead" },
         "customWorkflows": { "label": "Workflows personalizados", "desc": "Monte seus fluxos" }
-      }
+      },
+      "apps": { "label": "Apps & Backends", "desc": "Sistemas enterprise prontos, construídos com IA" }
     },
     "industries": {
       "label": "Indústrias",
@@ -98,7 +100,8 @@
       "howItWorks": "Como Funciona",
       "whatsappIntegration": "Integração WhatsApp",
       "playbooks": "Playbooks",
-      "apps": "Apps & Backends"
+      "apps": "Apps & Backends",
+      "insights": "Insights"
     },
     "description": "Plataforma de automação WhatsApp com IA para fintechs e empresas brasileiras.",
     "copyright": "Catalisa. Todos os direitos reservados."

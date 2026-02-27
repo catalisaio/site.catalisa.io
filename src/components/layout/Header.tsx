@@ -301,7 +301,7 @@ export function Header() {
           </Link>
 
           {/* Desktop nav */}
-          <HStack spacing={1} display={{ base: 'none', lg: 'flex' }}>
+          <HStack as="nav" aria-label="Main Navigation" spacing={1} display={{ base: 'none', lg: 'flex' }}>
             {/* Plataforma mega-menu */}
             <MegaMenuPopover
               triggerLabel={t('megaMenu.platform.label')}

@@ -6,6 +6,7 @@ export function getSiteNavigationSchema() {
     '@type': 'SiteNavigationElement',
     name: 'Main Navigation',
     hasPart: [
+      // Platform
       {
         '@type': 'WebPage',
         name: 'Studio',
@@ -31,10 +32,42 @@ export function getSiteNavigationSchema() {
         name: 'Workflows',
         url: `${BASE_URL}/workflows`,
       },
+      // Industries
+      {
+        '@type': 'WebPage',
+        name: 'Fintech',
+        url: `${BASE_URL}/fintech`,
+      },
+      {
+        '@type': 'WebPage',
+        name: 'Banking',
+        url: `${BASE_URL}/bancario`,
+      },
+      {
+        '@type': 'WebPage',
+        name: 'Insurance',
+        url: `${BASE_URL}/seguros`,
+      },
+      {
+        '@type': 'WebPage',
+        name: 'Retail',
+        url: `${BASE_URL}/varejo`,
+      },
+      {
+        '@type': 'WebPage',
+        name: 'Startups',
+        url: `${BASE_URL}/startups`,
+      },
+      // Resources
       {
         '@type': 'WebPage',
         name: 'Casos de Uso',
         url: `${BASE_URL}/casos-de-uso`,
+      },
+      {
+        '@type': 'WebPage',
+        name: 'Como Funciona',
+        url: `${BASE_URL}/como-funciona`,
       },
       {
         '@type': 'WebPage',
@@ -43,7 +76,18 @@ export function getSiteNavigationSchema() {
       },
       {
         '@type': 'WebPage',
-        name: 'Contact',
+        name: 'WhatsApp Integration',
+        url: `${BASE_URL}/integracoes/whatsapp`,
+      },
+      // Company
+      {
+        '@type': 'WebPage',
+        name: 'Seguranca',
+        url: `${BASE_URL}/seguranca`,
+      },
+      {
+        '@type': 'WebPage',
+        name: 'Contato',
         url: `${BASE_URL}/contato`,
       },
     ],

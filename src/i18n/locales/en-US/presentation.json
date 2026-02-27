@@ -351,6 +351,158 @@
     ],
     "moreInsights": "Explore all cases at catalisa.io/insights"
   },
+  "companyNumbers": {
+    "badge": "CATALISA IN NUMBERS",
+    "headline": "A platform built to",
+    "headlineHighlight": "scale businesses.",
+    "categories": [
+      {
+        "label": "Platform",
+        "stats": [
+          { "value": "60+", "description": "Composable building blocks" },
+          { "value": "50+", "description": "Ready-to-use playbooks" },
+          { "value": "5", "description": "Industries covered" }
+        ]
+      },
+      {
+        "label": "Traction",
+        "stats": [
+          { "value": "3x", "description": "Annual recurring growth" },
+          { "value": "92%", "description": "Customer retention rate" },
+          { "value": "$0", "description": "Organic acquisition cost" }
+        ]
+      },
+      {
+        "label": "Technology",
+        "stats": [
+          { "value": "99.9%", "description": "Platform uptime" },
+          { "value": "<3min", "description": "Setup to first agent" },
+          { "value": "Multi-tenant", "description": "Per-client isolation" }
+        ]
+      }
+    ],
+    "disclaimer": "Internal metrics — Catalisa platform operational data"
+  },
+  "retailCases": {
+    "badge": "REAL CASES — RETAIL",
+    "headline": "Retail already selling",
+    "headlineHighlight": "with AI.",
+    "subtitle": "Leading retailers using conversational AI and WhatsApp to convert more and serve better.",
+    "cases": [
+      {
+        "company": "Grupo Boticário",
+        "segment": "Beauty",
+        "metric": "+46%",
+        "metricLabel": "e-commerce conversion",
+        "highlight": "AI assistant with personalized recommendations by skin profile and preferences. Automated consultive shopping experience.",
+        "source": "Mundo do Marketing"
+      },
+      {
+        "company": "Magalu (Lu)",
+        "segment": "Marketplace",
+        "metric": "AI seller",
+        "metricLabel": "on WhatsApp",
+        "highlight": "Lu got a generative AI brain and became an active seller inside WhatsApp, recommending products via natural language.",
+        "source": "Exame"
+      },
+      {
+        "company": "Carrefour",
+        "segment": "Supermarkets",
+        "metric": "4h → 40min",
+        "metricLabel": "response time",
+        "highlight": "3 AI personas serve 3 brands with distinct personality and empathy. Hybrid human + AI model that never loses its tone.",
+        "source": "IT Forum"
+      },
+      {
+        "company": "Lotte Homeshopping",
+        "segment": "Home Shopping",
+        "metric": "-40%",
+        "metricLabel": "agent workload reduction",
+        "highlight": "AI with advanced NLU drastically reduced human agent needs while maintaining customer satisfaction above 90%.",
+        "source": "AWS Blog"
+      }
+    ]
+  },
+  "fintechCases": {
+    "badge": "REAL CASES — FINTECH",
+    "headline": "Banks already operating",
+    "headlineHighlight": "with AI agents.",
+    "subtitle": "From major Brazilian banks to global fintechs — conversational AI is already a reality in financial services.",
+    "cases": [
+      {
+        "company": "Bradesco, Itaú, Nubank",
+        "segment": "Brazilian Banks",
+        "metric": "300M+",
+        "metricLabel": "AI interactions/month",
+        "highlight": "BIA (Bradesco) handles 300M interactions/month. Itaú has 150+ GenAI solutions in production. Nubank uses AI for 100M+ customers.",
+        "source": "Microsoft, TI Inside, OpenAI"
+      },
+      {
+        "company": "Banco BV",
+        "segment": "Digital Bank",
+        "metric": "-25%",
+        "metricLabel": "repeat calls via AI",
+        "highlight": "Autonomous agents on WhatsApp resolve demands without transferring to humans. Significant reduction in repeat calls and service time.",
+        "source": "TI Inside"
+      },
+      {
+        "company": "PicPay + BTG Pactual",
+        "segment": "Fintech / Wealth",
+        "metric": "Pix by voice",
+        "metricLabel": "multimodal on WhatsApp",
+        "highlight": "PicPay launched Pix on WhatsApp with AI that interprets audio, images and messages. BTG awarded for innovation in banking AI support.",
+        "source": "Microsoft, BTG"
+      },
+      {
+        "company": "DBS, HDFC, Absa",
+        "segment": "Global Banks",
+        "metric": "1st agentic AI",
+        "metricLabel": "in African banking",
+        "highlight": "DBS deployed GenAI for all corporate clients. HDFC reached 85% accuracy with EVA. Absa is the first African bank with agentic AI.",
+        "source": "DBS, Kevit, iAfrica"
+      }
+    ]
+  },
+  "insuranceCases": {
+    "badge": "REAL CASES — INSURANCE",
+    "headline": "Insurers already automating",
+    "headlineHighlight": "with AI.",
+    "subtitle": "From 2-second claims to humanized support — AI is transforming the insurance industry.",
+    "cases": [
+      {
+        "company": "Lemonade",
+        "segment": "Insurtech",
+        "metric": "2s",
+        "metricLabel": "to process a claim",
+        "highlight": "AI Maya handles quoting and contracting. AI Jim processes claims in record time — one was paid in 2 seconds. NPS of 4.9/5.",
+        "source": "AI Magazine"
+      },
+      {
+        "company": "WhatsApp Claims",
+        "segment": "General Insurance",
+        "metric": "100%",
+        "metricLabel": "automated journey",
+        "highlight": "Customer reports claim, sends photos, receives assessment and tracks status — all via WhatsApp with specialized AI agents.",
+        "source": "Catalisa Case"
+      },
+      {
+        "company": "Smart Quoting",
+        "segment": "Auto / Life",
+        "metric": "<60s",
+        "metricLabel": "to generate personalized quote",
+        "highlight": "AI agent collects data via natural conversation, calculates premium and presents options — no forms, no waiting, no calls.",
+        "source": "Catalisa Case"
+      },
+      {
+        "company": "Digital Inspection",
+        "segment": "Auto",
+        "metric": "5 photos",
+        "metricLabel": "automatic AI analysis",
+        "highlight": "Customer sends vehicle photos via WhatsApp. AI analyzes damage, classifies severity and generates preliminary report automatically.",
+        "source": "Catalisa Case"
+      }
+    ]
+  },
   "cta": {
     "headline": "Let's talk?",
     "subtitle": "Schedule a demo and discover how Catalisa can transform your business.",

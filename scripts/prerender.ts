@@ -15,13 +15,15 @@ const routes = [
   '/fintech', '/bancario', '/seguros', '/varejo', '/startups',
   '/casos-de-uso', '/contato', '/demo', '/politica-privacidade',
   '/termos', '/seguranca', '/precos', '/como-funciona', '/integracoes/whatsapp',
-  '/press-kit', '/apresentacao-comercial', '/agentes-ia-whatsapp',
+  '/press-kit', '/agentes-ia-whatsapp',
+  '/apresentacao/comercial', '/apresentacao/investidor', '/apresentacao/varejo', '/apresentacao/fintech', '/apresentacao/seguros',
   // en-US
   '/en', '/en/studio', '/en/ai-agents', '/en/apps', '/en/building-blocks', '/en/workflows',
   '/en/fintech', '/en/banking', '/en/insurance', '/en/retail', '/en/startups',
   '/en/use-cases', '/en/contact', '/en/demo', '/en/privacy-policy',
   '/en/terms', '/en/security', '/en/pricing', '/en/how-it-works', '/en/integrations/whatsapp',
-  '/en/press-kit', '/en/commercial-presentation', '/en/ai-agents-whatsapp',
+  '/en/press-kit', '/en/ai-agents-whatsapp',
+  '/en/presentation/commercial', '/en/presentation/investor', '/en/presentation/retail', '/en/presentation/fintech', '/en/presentation/insurance',
   // Insights
   '/insights',
   '/en/insights',

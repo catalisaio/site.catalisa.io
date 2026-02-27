@@ -27,6 +27,10 @@ const Security = lazy(() => import('./pages/Security').then(m => ({ default: m.S
 const HowItWorksPage = lazy(() => import('./pages/HowItWorks').then(m => ({ default: m.HowItWorks })));
 const WhatsAppIntegration = lazy(() => import('./pages/WhatsAppIntegration').then(m => ({ default: m.WhatsAppIntegration })));
 const CommercialPresentation = lazy(() => import('./pages/CommercialPresentation').then(m => ({ default: m.CommercialPresentation })));
+const InvestorPresentation = lazy(() => import('./pages/InvestorPresentation').then(m => ({ default: m.InvestorPresentation })));
+const RetailPresentation = lazy(() => import('./pages/RetailPresentation').then(m => ({ default: m.RetailPresentation })));
+const FintechPresentation = lazy(() => import('./pages/FintechPresentation').then(m => ({ default: m.FintechPresentation })));
+const InsurancePresentation = lazy(() => import('./pages/InsurancePresentation').then(m => ({ default: m.InsurancePresentation })));
 const Apps = lazy(() => import('./pages/Apps').then(m => ({ default: m.Apps })));
 const AIAgentsWhatsApp = lazy(() => import('./pages/AIAgentsWhatsApp').then(m => ({ default: m.AIAgentsWhatsApp })));
 const PlaybookDetail = lazy(() => import('./pages/PlaybookDetail').then(m => ({ default: m.PlaybookDetail })));
@@ -75,10 +79,18 @@ function App() {
           <Routes>
             {/* Fullscreen routes — no Header/Footer */}
             <Route element={<LanguageLayout lang="pt-BR" />}>
-              <Route path="/apresentacao-comercial" element={<CommercialPresentation />} />
+              <Route path="/apresentacao/comercial" element={<CommercialPresentation />} />
+              <Route path="/apresentacao/investidor" element={<InvestorPresentation />} />
+              <Route path="/apresentacao/varejo" element={<RetailPresentation />} />
+              <Route path="/apresentacao/fintech" element={<FintechPresentation />} />
+              <Route path="/apresentacao/seguros" element={<InsurancePresentation />} />
             </Route>
             <Route path="/en" element={<LanguageLayout lang="en-US" />}>
-              <Route path="commercial-presentation" element={<CommercialPresentation />} />
+              <Route path="presentation/commercial" element={<CommercialPresentation />} />
+              <Route path="presentation/investor" element={<InvestorPresentation />} />
+              <Route path="presentation/retail" element={<RetailPresentation />} />
+              <Route path="presentation/fintech" element={<FintechPresentation />} />
+              <Route path="presentation/insurance" element={<InsurancePresentation />} />
             </Route>
 
             {/* Standard routes — with Header/Footer */}

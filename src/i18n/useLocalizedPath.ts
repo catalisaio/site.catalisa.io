@@ -30,6 +30,11 @@ const ptToEn: Record<string, string> = {
   '/playbooks': '/en/playbooks',
   '/agentes-ia-whatsapp': '/en/ai-agents-whatsapp',
   '/insights': '/en/insights',
+  '/apresentacao/comercial': '/en/presentation/commercial',
+  '/apresentacao/investidor': '/en/presentation/investor',
+  '/apresentacao/varejo': '/en/presentation/retail',
+  '/apresentacao/fintech': '/en/presentation/fintech',
+  '/apresentacao/seguros': '/en/presentation/insurance',
 };
 
 /**

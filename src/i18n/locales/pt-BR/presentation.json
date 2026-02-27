@@ -351,6 +351,158 @@
     ],
     "moreInsights": "Explore todos os cases em catalisa.io/insights"
   },
+  "companyNumbers": {
+    "badge": "CATALISA EM NÚMEROS",
+    "headline": "Plataforma construída para",
+    "headlineHighlight": "escalar negócios.",
+    "categories": [
+      {
+        "label": "Plataforma",
+        "stats": [
+          { "value": "60+", "description": "Building blocks composíveis" },
+          { "value": "50+", "description": "Playbooks prontos para uso" },
+          { "value": "5", "description": "Verticais atendidas" }
+        ]
+      },
+      {
+        "label": "Tração",
+        "stats": [
+          { "value": "3x", "description": "Crescimento anual recorrente" },
+          { "value": "92%", "description": "Taxa de retenção de clientes" },
+          { "value": "R$ 0", "description": "Custo de aquisição orgânico" }
+        ]
+      },
+      {
+        "label": "Tecnologia",
+        "stats": [
+          { "value": "99.9%", "description": "Uptime da plataforma" },
+          { "value": "<3min", "description": "Setup até primeiro agente" },
+          { "value": "Multi-tenant", "description": "Isolamento por cliente" }
+        ]
+      }
+    ],
+    "disclaimer": "Métricas internas — dados operacionais da plataforma Catalisa"
+  },
+  "retailCases": {
+    "badge": "CASES REAIS — VAREJO",
+    "headline": "Varejo que já vende",
+    "headlineHighlight": "com IA.",
+    "subtitle": "Grandes varejistas brasileiros usando IA conversacional e WhatsApp para converter mais e atender melhor.",
+    "cases": [
+      {
+        "company": "Grupo Boticário",
+        "segment": "Beleza",
+        "metric": "+46%",
+        "metricLabel": "conversão no e-commerce",
+        "highlight": "Assistente de IA com recomendações personalizadas por perfil de pele e preferências. Experiência de compra consultiva automatizada.",
+        "source": "Mundo do Marketing"
+      },
+      {
+        "company": "Magalu (Lu)",
+        "segment": "Marketplace",
+        "metric": "IA vendedora",
+        "metricLabel": "no WhatsApp",
+        "highlight": "Lu ganhou cérebro com IA generativa e se tornou vendedora ativa dentro do WhatsApp, recomendando produtos por linguagem natural.",
+        "source": "Exame"
+      },
+      {
+        "company": "Carrefour",
+        "segment": "Supermercados",
+        "metric": "4h → 40min",
+        "metricLabel": "tempo de resposta",
+        "highlight": "3 personas de IA atendem 3 marcas com personalidade e empatia distintas. Modelo híbrido humano + IA que não perde o tom.",
+        "source": "IT Forum"
+      },
+      {
+        "company": "Lotte Homeshopping",
+        "segment": "Home Shopping",
+        "metric": "-40%",
+        "metricLabel": "carga de trabalho dos atendentes",
+        "highlight": "IA com NLU avançada reduziu drasticamente a necessidade de agentes humanos, mantendo satisfação do cliente acima de 90%.",
+        "source": "AWS Blog"
+      }
+    ]
+  },
+  "fintechCases": {
+    "badge": "CASES REAIS — FINTECH",
+    "headline": "Bancos que já operam",
+    "headlineHighlight": "com agentes de IA.",
+    "subtitle": "De grandes bancos brasileiros a fintechs globais — IA conversacional já é realidade no setor financeiro.",
+    "cases": [
+      {
+        "company": "Bradesco, Itaú, Nubank",
+        "segment": "Bancos BR",
+        "metric": "300M+",
+        "metricLabel": "interações/mês com IA",
+        "highlight": "BIA (Bradesco) responde 300M interações/mês. Itaú tem 150+ soluções GenAI em produção. Nubank usa IA para 100M+ clientes.",
+        "source": "Microsoft, TI Inside, OpenAI"
+      },
+      {
+        "company": "Banco BV",
+        "segment": "Banco Digital",
+        "metric": "-25%",
+        "metricLabel": "rechamadas via IA",
+        "highlight": "Agentes autônomos no WhatsApp resolvem demandas sem transferir para humano. Redução significativa de rechamadas e tempo de atendimento.",
+        "source": "TI Inside"
+      },
+      {
+        "company": "PicPay + BTG Pactual",
+        "segment": "Fintech / Wealth",
+        "metric": "Pix por voz",
+        "metricLabel": "multimodal no WhatsApp",
+        "highlight": "PicPay lançou Pix no WhatsApp com IA que interpreta áudio, imagens e mensagens. BTG premiado por inovação em atendimento bancário com IA.",
+        "source": "Microsoft, BTG"
+      },
+      {
+        "company": "DBS, HDFC, Absa",
+        "segment": "Bancos Globais",
+        "metric": "1º agentic AI",
+        "metricLabel": "em banking na África",
+        "highlight": "DBS implantou GenAI para todos os clientes corporate. HDFC atingiu 85% precisão com EVA. Absa é o primeiro banco africano com agentic AI.",
+        "source": "DBS, Kevit, iAfrica"
+      }
+    ]
+  },
+  "insuranceCases": {
+    "badge": "CASES REAIS — SEGUROS",
+    "headline": "Seguradoras que já automatizam",
+    "headlineHighlight": "com IA.",
+    "subtitle": "De sinistros em 2 segundos a atendimento humanizado — IA está transformando o setor de seguros.",
+    "cases": [
+      {
+        "company": "Lemonade",
+        "segment": "Insurtech",
+        "metric": "2s",
+        "metricLabel": "para processar sinistro",
+        "highlight": "IA Maya faz cotação e contratação. IA Jim processa sinistros em tempo recorde — um foi pago em 2 segundos. NPS de 4.9/5.",
+        "source": "AI Magazine"
+      },
+      {
+        "company": "Sinistro via WhatsApp",
+        "segment": "Seguros Gerais",
+        "metric": "100%",
+        "metricLabel": "jornada automatizada",
+        "highlight": "Cliente reporta sinistro, envia fotos, recebe avaliação e acompanha status — tudo pelo WhatsApp com agentes de IA especializados.",
+        "source": "Caso Catalisa"
+      },
+      {
+        "company": "Cotação Inteligente",
+        "segment": "Auto / Vida",
+        "metric": "<60s",
+        "metricLabel": "para gerar cotação personalizada",
+        "highlight": "Agente de IA coleta dados via conversa natural, calcula prêmio e apresenta opções — sem formulários, sem espera, sem ligação.",
+        "source": "Caso Catalisa"
+      },
+      {
+        "company": "Vistoria Digital",
+        "segment": "Auto",
+        "metric": "5 fotos",
+        "metricLabel": "análise automática com IA",
+        "highlight": "Cliente envia fotos do veículo pelo WhatsApp. IA analisa danos, classifica severidade e gera laudo preliminar automaticamente.",
+        "source": "Caso Catalisa"
+      }
+    ]
+  },
   "cta": {
     "headline": "Vamos conversar?",
     "subtitle": "Agende uma demonstração e descubra como a Catalisa pode transformar seu negócio.",

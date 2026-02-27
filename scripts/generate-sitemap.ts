@@ -36,7 +36,11 @@ const routes: SitemapRoute[] = [
   { ptPath: '/precos', enPath: '/en/pricing', priority: 0.8, changefreq: 'monthly' },
   { ptPath: '/como-funciona', enPath: '/en/how-it-works', priority: 0.8, changefreq: 'weekly' },
   { ptPath: '/integracoes/whatsapp', enPath: '/en/integrations/whatsapp', priority: 0.7, changefreq: 'monthly' },
-  { ptPath: '/apresentacao-comercial', enPath: '/en/commercial-presentation', priority: 0.0, changefreq: 'monthly', noIndex: true },
+  { ptPath: '/apresentacao/comercial', enPath: '/en/presentation/commercial', priority: 0.0, changefreq: 'monthly', noIndex: true },
+  { ptPath: '/apresentacao/investidor', enPath: '/en/presentation/investor', priority: 0.0, changefreq: 'monthly', noIndex: true },
+  { ptPath: '/apresentacao/varejo', enPath: '/en/presentation/retail', priority: 0.0, changefreq: 'monthly', noIndex: true },
+  { ptPath: '/apresentacao/fintech', enPath: '/en/presentation/fintech', priority: 0.0, changefreq: 'monthly', noIndex: true },
+  { ptPath: '/apresentacao/seguros', enPath: '/en/presentation/insurance', priority: 0.0, changefreq: 'monthly', noIndex: true },
   // Insights
   { ptPath: '/insights', enPath: '/en/insights', priority: 0.8, changefreq: 'weekly' as const },
   ...articleSlugs.map((slug) => ({

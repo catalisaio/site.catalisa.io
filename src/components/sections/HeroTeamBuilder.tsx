@@ -62,6 +62,9 @@ export function HeroTeamBuilder() {
       overflow="hidden"
       mt="-64px"
       pt="64px"
+      minH="100vh"
+      display="flex"
+      flexDirection="column"
     >
       {/* Radial gradient backgrounds */}
       <Box
@@ -84,14 +87,14 @@ export function HeroTeamBuilder() {
         pointerEvents="none"
       />
 
-      <Container maxW="1280px" position="relative" zIndex={1}>
+      <Container maxW="1280px" position="relative" zIndex={1} flex={1} display="flex" flexDirection="column">
         <Flex
           direction={{ base: 'column', lg: 'row' }}
           align="center"
           justify="space-between"
           gap={{ base: 12, lg: 16 }}
           py={{ base: 12, lg: 10 }}
-          minH={{ base: 'auto', lg: '70vh' }}
+          flex={1}
         >
           {/* Left content */}
           <VStack align="flex-start" spacing={6} maxW="600px" flex={1}>

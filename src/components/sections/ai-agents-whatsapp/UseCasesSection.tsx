@@ -35,7 +35,8 @@ interface Scenario {
 
 export function UseCasesSection() {
   const { t } = useTranslation('ai-agents-whatsapp');
-  const scenarios = t('useCases.scenarios', { returnObjects: true }) as Scenario[];
+  const scenariosRaw = t('useCases.scenarios', { returnObjects: true });
+  const scenarios = (Array.isArray(scenariosRaw) ? scenariosRaw : []) as Scenario[];
   const [activeTab, setActiveTab] = useState(0);
   const active = scenarios[activeTab];
 

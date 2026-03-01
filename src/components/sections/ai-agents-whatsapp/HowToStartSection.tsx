@@ -21,7 +21,8 @@ const stepColors = ['whatsapp.400', 'brand.400', 'blue.400', 'orange.400'];
 
 export function HowToStartSection() {
   const { t } = useTranslation('ai-agents-whatsapp');
-  const steps = t('howToStart.steps', { returnObjects: true }) as StepData[];
+  const stepsRaw = t('howToStart.steps', { returnObjects: true });
+  const steps = (Array.isArray(stepsRaw) ? stepsRaw : []) as StepData[];
 
   return (
     <SectionWrapper bg="white" id="how-to-start">

@@ -15,9 +15,12 @@ import { GradientText } from '../../shared/GradientText';
 export function ROISection() {
   const { t } = useTranslation('ai-agents-whatsapp');
 
-  const labels = t('roi.labels', { returnObjects: true }) as Record<string, string>;
-  const traditional = t('roi.traditional', { returnObjects: true }) as Record<string, string>;
-  const withAI = t('roi.withAI', { returnObjects: true }) as Record<string, string>;
+  const labelsRaw = t('roi.labels', { returnObjects: true });
+  const labels = (typeof labelsRaw === 'object' && labelsRaw !== null ? labelsRaw : {}) as Record<string, string>;
+  const tradRaw = t('roi.traditional', { returnObjects: true });
+  const traditional = (typeof tradRaw === 'object' && tradRaw !== null ? tradRaw : {}) as Record<string, string>;
+  const aiRaw = t('roi.withAI', { returnObjects: true });
+  const withAI = (typeof aiRaw === 'object' && aiRaw !== null ? aiRaw : {}) as Record<string, string>;
 
   const rows = ['cost', 'responseTime', 'resolution', 'nps', 'team'];
 

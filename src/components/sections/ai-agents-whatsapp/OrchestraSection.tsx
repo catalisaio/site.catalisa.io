@@ -33,8 +33,10 @@ const agentColors = ['blue.400', 'green.400', 'orange.400', 'purple.400', 'cyan.
 
 export function OrchestraSection() {
   const { t } = useTranslation('ai-agents-whatsapp');
-  const agents = t('orchestra.agents', { returnObjects: true }) as AgentData[];
-  const cards = t('orchestra.cards', { returnObjects: true }) as CardData[];
+  const agentsRaw = t('orchestra.agents', { returnObjects: true });
+  const agents = (Array.isArray(agentsRaw) ? agentsRaw : []) as AgentData[];
+  const cardsRaw = t('orchestra.cards', { returnObjects: true });
+  const cards = (Array.isArray(cardsRaw) ? cardsRaw : []) as CardData[];
 
   return (
     <SectionWrapper bg="gray.900" id="orchestra">

@@ -25,7 +25,8 @@ interface AnatomyStep {
 
 export function AnatomySection() {
   const { t } = useTranslation('ai-agents-whatsapp');
-  const steps = t('anatomy.steps', { returnObjects: true }) as AnatomyStep[];
+  const stepsRaw = t('anatomy.steps', { returnObjects: true });
+  const steps = (Array.isArray(stepsRaw) ? stepsRaw : []) as AnatomyStep[];
 
   return (
     <SectionWrapper bg="gray.50" id="anatomy">

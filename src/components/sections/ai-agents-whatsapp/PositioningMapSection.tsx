@@ -37,7 +37,8 @@ function getPlayerPosition(player: Player, index: number) {
 
 export function PositioningMapSection() {
   const { t } = useTranslation('ai-agents-whatsapp');
-  const players = t('positioningMap.players', { returnObjects: true }) as Player[];
+  const playersRaw = t('positioningMap.players', { returnObjects: true });
+  const players = (Array.isArray(playersRaw) ? playersRaw : []) as Player[];
 
   return (
     <SectionWrapper bg="white" id="positioning">

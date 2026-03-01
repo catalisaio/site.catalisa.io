@@ -19,7 +19,8 @@ interface StatCard {
 
 export function MarketValidationSection() {
   const { t } = useTranslation('ai-agents-whatsapp');
-  const stats = t('marketValidation.stats', { returnObjects: true }) as StatCard[];
+  const statsRaw = t('marketValidation.stats', { returnObjects: true });
+  const stats = (Array.isArray(statsRaw) ? statsRaw : []) as StatCard[];
 
   return (
     <SectionWrapper bg="white" id="market-validation">

@@ -19,8 +19,10 @@ interface StatItem {
 export function HeroSection() {
   const { t } = useTranslation('ai-agents-whatsapp');
   const lp = useLocalizedPath();
-  const stats = t('hero.stats', { returnObjects: true }) as StatItem[];
-  const chatMessages = t('hero.chatMessages', { returnObjects: true }) as ChatMessage[];
+  const statsRaw = t('hero.stats', { returnObjects: true });
+  const stats = (Array.isArray(statsRaw) ? statsRaw : []) as StatItem[];
+  const chatRaw = t('hero.chatMessages', { returnObjects: true });
+  const chatMessages = (Array.isArray(chatRaw) ? chatRaw : []) as ChatMessage[];
 
   return (
     <Box

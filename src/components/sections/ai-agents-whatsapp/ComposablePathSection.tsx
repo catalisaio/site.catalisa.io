@@ -26,9 +26,12 @@ interface Example {
 
 export function ComposablePathSection() {
   const { t } = useTranslation('ai-agents-whatsapp');
-  const comparison = t('composablePath.comparison', { returnObjects: true }) as ComparisonRow[];
-  const examples = t('composablePath.examples', { returnObjects: true }) as Example[];
-  const gartnerStats = t('composablePath.gartnerStats', { returnObjects: true }) as string[];
+  const compRaw = t('composablePath.comparison', { returnObjects: true });
+  const comparison = (Array.isArray(compRaw) ? compRaw : []) as ComparisonRow[];
+  const exRaw = t('composablePath.examples', { returnObjects: true });
+  const examples = (Array.isArray(exRaw) ? exRaw : []) as Example[];
+  const gsRaw = t('composablePath.gartnerStats', { returnObjects: true });
+  const gartnerStats = (Array.isArray(gsRaw) ? gsRaw : []) as string[];
 
   return (
     <SectionWrapper bg="gray.50" id="composable-path">

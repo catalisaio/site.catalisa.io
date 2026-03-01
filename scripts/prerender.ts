@@ -16,6 +16,7 @@ const routes = [
   '/casos-de-uso', '/contato', '/demo', '/politica-privacidade',
   '/termos', '/seguranca', '/precos', '/como-funciona', '/integracoes/whatsapp',
   '/press-kit', '/agentes-ia-whatsapp',
+  '/apresentacao',
   '/apresentacao/comercial', '/apresentacao/investidor', '/apresentacao/varejo', '/apresentacao/fintech', '/apresentacao/seguros',
   // en-US
   '/en', '/en/studio', '/en/ai-agents', '/en/apps', '/en/building-blocks', '/en/workflows',

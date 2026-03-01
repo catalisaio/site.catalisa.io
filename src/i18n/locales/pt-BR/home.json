@@ -4,7 +4,7 @@
     "headline": "Seus clientes esperam respostas em segundos.",
     "headlineGradient": "Sua equipe não consegue acompanhar.",
     "subtitles": [
-      "Descreva o que precisa em linguagem natural. A IA especifica e constrói — da ideia à produção em minutos.",
+      "Descreva o que precisa em linguagem natural. A IA específica e constrói — da ideia à produção em minutos.",
       "Agentes de IA que atendem, qualificam e fecham negócios pelo WhatsApp — 24 horas por dia.",
       "Workflows visuais que automatizam desde o primeiro contato até o fechamento — sem código.",
       "Do primeiro contato à renovação automática — seu atendimento de seguros no piloto automático.",
@@ -88,7 +88,7 @@
     ],
     "timeline": [
       { "title": "Mensagem recebida", "detail": "\"Preciso renovar meu seguro\"", "delay": 0.8 },
-      { "title": "Identificando intenção...", "detail": "Intenção: renovacao_seguro (97%)", "delay": 1.5 },
+      { "title": "Identificando intenção...", "detail": "Intenção: renovação_seguro (97%)", "delay": 1.5 },
       { "title": "CRM.buscarCliente()", "detail": "Cliente: Maria Silva | Apólice #4521", "delay": 2.2 },
       { "title": "Seguros.cotarOpcoes()", "detail": "3 opções geradas em 1.2s", "delay": 3.0 },
       { "title": "Gerando resposta personalizada...", "detail": "Claude Sonnet | 187 tokens", "delay": 3.8 },
@@ -271,7 +271,7 @@
       },
       {
         "name": "Startups",
-        "scenario": "Scale rápido com Apps enterprise e custo otimizado. Atendimento, vendas e suporte unificados.",
+        "scenario": "Escale rápido com Apps enterprise e custo otimizado. Atendimento, vendas e suporte unificados.",
         "stats": ["88% automação", "6s resposta", "75% menos custo"]
       }
     ],
@@ -463,7 +463,7 @@
       { "value": "0", "label": "linhas de código" }
     ],
     "videoSection": {
-      "heading": "Assista ao demo completo",
+      "heading": "Assista à demo completa",
       "description": "Veja em poucos minutos como um sistema de atendimento de seguros foi criado do zero usando apenas o chat com IA."
     }
   },
@@ -589,7 +589,7 @@
     "tabs": {
       "team": "Sua Equipe",
       "studio": "Studio",
-      "credito": "Crédito",
+      "crédito": "Crédito",
       "workflows": "Automações",
       "seguros": "Seguros",
       "agents": "Agentes IA",

@@ -2,47 +2,47 @@
   "hero": {
     "badge": "CATALISA STUDIO",
     "heading": "Descreva o que precisa.",
-    "headingGradient": "A IA constroi pra voce.",
+    "headingGradient": "A IA constrói pra você.",
     "subtitle": "O Studio transforma linguagem natural em agentes operacionais completos — com personalidade, ferramentas e fluxos.",
     "stats": {
       "blocks": { "value": "60+", "label": "Building Blocks" },
       "setup": { "value": "Minutos", "label": "Setup completo" },
-      "code": { "value": "Zero", "label": "Codigo necessario" }
+      "code": { "value": "Zero", "label": "Código necessário" }
     }
   },
   "beforeAfter": {
     "heading": "Sem Catalisa vs",
     "headingGradient": "Com Studio",
-    "subtitle": "Chega de semanas perdidas. Com Studio, voce descreve e a IA entrega.",
+    "subtitle": "Chega de semanas perdidas. Com Studio, você descreve e a IA entrega.",
     "columns": {
       "before": "Sem Catalisa",
       "after": "Com Studio"
     },
     "rows": [
-      { "feature": "Criacao de fluxo", "before": "Semanas de dev", "after": "Minutos com IA" },
-      { "feature": "Linguagem", "before": "Codigo ou no-code complexo", "after": "Linguagem natural" },
-      { "feature": "Validacao", "before": "Depois de pronto", "after": "Antes de construir" },
+      { "feature": "Criação de fluxo", "before": "Semanas de dev", "after": "Minutos com IA" },
+      { "feature": "Linguagem", "before": "Código ou no-code complexo", "after": "Linguagem natural" },
+      { "feature": "Validação", "before": "Depois de pronto", "after": "Antes de construir" },
       { "feature": "Ajustes", "before": "Depende de dev", "after": "1 clique" },
       { "feature": "Building blocks", "before": "Construir do zero", "after": "60+ prontos" },
-      { "feature": "Execucao", "before": "Sequencial", "after": "Paralela (DAG)" }
+      { "feature": "Execução", "before": "Sequencial", "after": "Paralela (DAG)" }
     ]
   },
   "canvas": {
     "badge": "CANVAS VISUAL",
     "heading": "O resultado?",
-    "headingGradient": "Workflows visuais prontos para producao.",
-    "subtitle": "O Builder gera workflows completos no canvas visual. Drag & drop, execucao paralela, 60+ building blocks.",
+    "headingGradient": "Workflows visuais prontos para produção.",
+    "subtitle": "O Builder gera workflows completos no canvas visual. Drag & drop, execução paralela, 60+ building blocks.",
     "features": [
       "Canvas drag & drop intuitivo",
-      "Execucao paralela automatica (DAG)",
+      "Execução paralela automática (DAG)",
       "60+ building blocks composiveis"
     ]
   },
   "dashboard": {
     "badge": "PLATAFORMA COMPLETA",
-    "heading": "Tudo num so lugar.",
-    "headingGradient": "Dashboard, CRM e automacao.",
-    "subtitle": "Leads, metricas, mensagens e workflows — tudo integrado num painel unico. Sem alternar entre ferramentas.",
+    "heading": "Tudo num só lugar.",
+    "headingGradient": "Dashboard, CRM e automação.",
+    "subtitle": "Leads, métricas, mensagens e workflows — tudo integrado num painel único. Sem alternar entre ferramentas.",
     "stats": [
       { "value": "98%", "label": "Uptime garantido" },
       { "value": "60+", "label": "Building blocks" },
@@ -52,36 +52,36 @@
   "templates": {
     "badge": "TEMPLATES",
     "heading": "Comece com um template pronto",
-    "subtitle": "Escolha um caso de uso e o Builder monta tudo pra voce. Personalize depois se quiser.",
+    "subtitle": "Escolha um caso de uso e o Builder monta tudo pra você. Personalize depois se quiser.",
     "items": [
       { "title": "Boas-vindas WhatsApp", "description": "Enviar mensagem personalizada para novos leads automaticamente." },
-      { "title": "Qualificacao IA", "description": "Qualificar leads automaticamente com agente inteligente." },
-      { "title": "Notificacao", "description": "Notificar equipe quando um lead e atualizado." },
+      { "title": "Qualificação IA", "description": "Qualificar leads automaticamente com agente inteligente." },
+      { "title": "Notificação", "description": "Notificar equipe quando um lead e atualizado." },
       { "title": "Auto-criar Lead", "description": "Criar lead automaticamente ao receber mensagem no WhatsApp." },
-      { "title": "Reengajar Inativos", "description": "Enviar mensagem para leads sem interacao ha dias." },
-      { "title": "Relatorio Semanal", "description": "Gerar e enviar metricas de desempenho automaticamente." }
+      { "title": "Reengajar Inativos", "description": "Enviar mensagem para leads sem interação ha dias." },
+      { "title": "Relatorio Semanal", "description": "Gerar e enviar métricas de desempenho automaticamente." }
     ]
   },
   "whyStudio": {
     "heading": "Por que Studio?",
-    "subtitle": "Tres diferenciais que mudam a forma como voce cria automacoes.",
+    "subtitle": "Três diferenciais que mudam a forma como você cria automações.",
     "items": [
       {
-        "title": "Especificacao antes da execucao",
-        "description": "A IA nao sai fazendo. Ela gera requisitos, design e tarefas pra voce validar ANTES de construir. Zero desperdicio."
+        "title": "Especificação antes da execução",
+        "description": "A IA não sai fazendo. Ela gera requisitos, design e tarefas pra você validar ANTES de construir. Zero desperdicio."
       },
       {
         "title": "Linguagem natural, resultado profissional",
-        "description": "Voce fala como fala. A IA traduz para uma especificacao tecnica completa. Sem intermediarios."
+        "description": "Você fala como fala. A IA traduz para uma especificação técnica completa. Sem intermediarios."
       },
       {
         "title": "Do Builder ao Canvas, tudo conectado",
-        "description": "O que o Builder cria aparece no canvas visual pronto. Triggers, acoes, conexoes — tudo configurado."
+        "description": "O que o Builder cria aparece no canvas visual pronto. Triggers, ações, conexoes — tudo configurado."
       }
     ]
   },
   "pageCTA": {
-    "heading": "Pronto para criar sem codigo?",
-    "subtitle": "Converse com nosso time e veja o Studio em acao."
+    "heading": "Pronto para criar sem código?",
+    "subtitle": "Converse com nosso time e veja o Studio em ação."
   }
 }

@@ -5,67 +5,67 @@
       {
         "id": "sdr-automatizado",
         "headline": "SDR Automatizado que Qualifica e Agenda",
-        "description": "Agente de IA no WhatsApp que qualifica leads, responde perguntas e agenda reunioes — 24/7, sem intervencao humana.",
+        "description": "Agente de IA no WhatsApp que qualifica leads, responde perguntas e agenda reuniões — 24/7, sem intervenção humana.",
         "preview": "whatsapp"
       },
       {
-        "id": "app-originacao-credito",
-        "headline": "App de Originacao de Credito Completo",
-        "description": "Backend enterprise com motor de decisao, scoring, KYC integrado e API para parceiros. Deploy em minutos.",
+        "id": "app-originação-crédito",
+        "headline": "App de Originação de Crédito Completo",
+        "description": "Backend enterprise com motor de decisão, scoring, KYC integrado e API para parceiros. Deploy em minutos.",
         "preview": "api"
       },
       {
         "id": "onboarding-kyc",
         "headline": "Onboarding KYC Digital em Minutos",
-        "description": "Fluxo completo de verificacao de identidade com OCR, liveness e consultas regulatorias — tudo pelo WhatsApp.",
+        "description": "Fluxo completo de verificação de identidade com OCR, liveness e consultas regulatórias — tudo pelo WhatsApp.",
         "preview": "workflow"
       },
       {
-        "id": "cobranca-inteligente",
-        "headline": "Cobranca Inteligente Multicanal",
-        "description": "Agente de IA que negocia dividas, envia boletos e Pix, com escalonamento automatico e tom empatetico.",
+        "id": "cobrança-inteligente",
+        "headline": "Cobrança Inteligente Multicanal",
+        "description": "Agente de IA que negocia dívidas, envia boletos e Pix, com escalonamento automático e tom empatetico.",
         "preview": "whatsapp"
       },
       {
         "id": "app-portal-cliente",
         "headline": "Portal do Cliente Self-Service",
-        "description": "App completo com autenticacao, extrato, pagamentos e suporte — pronto para integrar na sua operacao.",
+        "description": "App completo com autenticação, extrato, pagamentos e suporte — pronto para integrar na sua operação.",
         "preview": "api"
       }
     ]
   },
   "catalog": {
     "heading": "Todos os Playbooks",
-    "subtitle": "Explore nosso catalogo completo de automacoes prontas para usar."
+    "subtitle": "Explore nosso catálogo completo de automações prontas para usar."
   },
   "byIndustry": {
     "heading": "Por industria",
     "subtitle": "Solucoes especializadas para seu segmento"
   },
   "industryCards": [
-    { "label": "Fintech", "desc": "Originacao, KYC, cobranca, simulacao de credito", "path": "/fintech" },
-    { "label": "Bancario", "desc": "Conta digital, Pix conversacional, Open Finance", "path": "/bancario" },
-    { "label": "Seguros", "desc": "Sinistros, cotacoes, renovacao, vistoria digital", "path": "/seguros" },
-    { "label": "Varejo", "desc": "Atendimento, cardapio digital, pos-venda", "path": "/varejo" },
-    { "label": "Startups", "desc": "SDR automatizado, onboarding, suporte tecnico", "path": "/startups" }
+    { "label": "Fintech", "desc": "Originação, KYC, cobrança, simulação de crédito", "path": "/fintech" },
+    { "label": "Bancário", "desc": "Conta digital, Pix conversacional, Open Finance", "path": "/bancário" },
+    { "label": "Seguros", "desc": "Sinistros, cotações, renovação, vistoria digital", "path": "/seguros" },
+    { "label": "Varejo", "desc": "Atendimento, cardápio digital, pós-venda", "path": "/varejo" },
+    { "label": "Startups", "desc": "SDR automatizado, onboarding, suporte técnico", "path": "/startups" }
   ],
   "roi": {
-    "heading": "Quanto voce economiza?",
-    "subtitle": "Selecione seu cenario, informe o volume de interacoes diarias e veja a economia projetada ao automatizar com agentes de IA.",
+    "heading": "Quanto você economiza?",
+    "subtitle": "Selecione seu cenário, informe o volume de interações diarias e veja a economia projetada ao automatizar com agentes de IA.",
     "calculatorTitle": "Calcule sua economia",
-    "interactionsLabel": "Interacoes por dia",
+    "interactionsLabel": "Interações por dia",
     "manualLabel": "Manual",
     "withAILabel": "Com IA",
     "savingsLabel": "Economia",
     "scenarios": {
-      "sdr": "Qualificacao de leads",
+      "sdr": "Qualificação de leads",
       "support": "Atendimento ao cliente",
-      "realestate": "Atendimento imobiliario"
+      "realestate": "Atendimento imobiliário"
     }
   },
   "cta": {
-    "heading": "Nao encontrou seu cenario?",
-    "subtitle": "Fale com nosso time e criamos a automacao ideal para o seu negocio.",
+    "heading": "Não encontrou seu cenário?",
+    "subtitle": "Fale com nosso time e criamos a automação ideal para o seu negócio.",
     "button": "Vamos conversar"
   }
 }

@@ -1,22 +1,22 @@
 {
   "hero": {
     "badge": "AGENTES IA",
-    "heading": "Sua equipe de operacoes.",
-    "headingGradient": "Disponivel 24/7.",
+    "heading": "Sua equipe de operações.",
+    "headingGradient": "Disponível 24/7.",
     "subtitle": "Agentes especializados que atendem, qualificam, vendem e resolvem — como membros reais da equipe.",
     "stats": {
       "specialties": { "value": "5", "label": "Especialidades" },
       "uptime": { "value": "24/7", "label": "Online" },
-      "response": { "value": "5s", "label": "Resposta media" }
+      "response": { "value": "5s", "label": "Resposta média" }
     }
   },
   "comparison": {
     "heading": "Chatbot vs Agent vs",
     "headingGradient": "Time",
-    "subtitle": "Entenda a diferenca entre um chatbot basico, um agente IA e uma equipe completa de agentes.",
+    "subtitle": "Entenda a diferença entre um chatbot básico, um agente IA e uma equipe completa de agentes.",
     "yourProduct": "SEU PRODUTO",
-    "agentCallout": "Seu agente nao apenas informa.",
-    "agentCalloutDesc": "Ele qualifica leads, agenda reunioes, processa documentos, atualiza o CRM, envia mensagens — tudo de forma autonoma.",
+    "agentCallout": "Seu agente não apenas informa.",
+    "agentCalloutDesc": "Ele qualifica leads, agenda reuniões, processa documentos, atualiza o CRM, envia mensagens — tudo de forma autônoma.",
     "table": {
       "columns": [
         { "label": "Chatbot" },
@@ -24,12 +24,12 @@
         { "label": "Time de Agents", "highlighted": true }
       ],
       "rows": [
-        { "feature": "Respostas", "values": ["Pre-definidas", "Contextuais", "Especializadas"] },
-        { "feature": "Ferramentas", "values": ["Nenhuma", "Limitadas", "60+ integracoes"] },
-        { "feature": "Memoria", "values": ["Sessao", "Por lead", "Cross-agent"] },
-        { "feature": "Autonomia", "values": ["Baixa", "Media", "Alta"] },
+        { "feature": "Respostas", "values": ["Pré-definidas", "Contextuais", "Especializadas"] },
+        { "feature": "Ferramentas", "values": ["Nenhuma", "Limitadas", "60+ integrações"] },
+        { "feature": "Memória", "values": ["Sessão", "Por lead", "Cross-agent"] },
+        { "feature": "Autonomia", "values": ["Baixa", "Média", "Alta"] },
         { "feature": "Escalabilidade", "values": ["Linear", "Boa", "Ilimitada"] },
-        { "feature": "Orquestracao", "values": ["Manual", "Basica", "Via workflow"] }
+        { "feature": "Orquestração", "values": ["Manual", "Básica", "Via workflow"] }
       ]
     }
   },
@@ -39,25 +39,25 @@
       { "title": "Defina a personalidade", "description": "System prompt com regras, tom e objetivo. Cada agente sabe exatamente o que fazer." },
       { "title": "Conecte ferramentas", "description": "Escolha entre 60+ building blocks — CRM, WhatsApp, APIs, calendario e mais." },
       { "title": "Ative no WhatsApp", "description": "Agentes operam via Cloud API oficial da Meta. Atendimento 24/7 sem QR code." },
-      { "title": "Orquestre via workflow", "description": "Combine agentes em fluxos automatizados. SDR qualifica, suporte resolve, cobranca negocia." }
+      { "title": "Orquestre via workflow", "description": "Combine agentes em fluxos automatizados. SDR qualifica, suporte resolve, cobrança negocia." }
     ]
   },
   "marketplace": {
     "heading": "Marketplace de Templates",
-    "subtitle": "Instale agentes pre-configurados com um clique. Prompts otimizados e ferramentas pre-selecionadas."
+    "subtitle": "Instale agentes pré-configurados com um clique. Prompts otimizados e ferramentas pré-selecionadas."
   },
   "aiCapabilities": {
     "heading": "Poderes de processamento IA",
-    "subtitle": "Cada capacidade e uma ferramenta que voce combina livremente.",
+    "subtitle": "Cada capacidade e uma ferramenta que você combina livremente.",
     "items": [
-      { "label": "Analise de Sentimento", "description": "Detecta emocao e urgencia" },
-      { "label": "Sumarizacao", "description": "Resume conversas longas" },
-      { "label": "Classificacao", "description": "Categoriza automaticamente" },
-      { "label": "Geracao de Texto", "description": "Cria conteudo personalizado" },
-      { "label": "Traducao", "description": "Multi-idioma em tempo real" },
-      { "label": "Extracao de Dados", "description": "Estrutura texto livre" },
-      { "label": "Analise de Imagem", "description": "OCR e visao computacional" },
-      { "label": "Transcricao", "description": "Audio para texto" }
+      { "label": "Análise de Sentimento", "description": "Detecta emoção e urgência" },
+      { "label": "Sumarização", "description": "Resume conversas longas" },
+      { "label": "Classificação", "description": "Categoriza automaticamente" },
+      { "label": "Geração de Texto", "description": "Cria conteúdo personalizado" },
+      { "label": "Tradução", "description": "Multi-idioma em tempo real" },
+      { "label": "Extração de Dados", "description": "Estrutura texto livre" },
+      { "label": "Análise de Imagem", "description": "OCR e visao computacional" },
+      { "label": "Transcrição", "description": "Audio para texto" }
     ]
   },
   "realWorldExample": {
@@ -74,7 +74,7 @@
   "toolsGrid": {
     "badge": "FERRAMENTAS",
     "heading": "21+ categorias de ferramentas para agentes",
-    "subtitle": "Cada agente escolhe quais ferramentas pode usar. Aqui estao as categorias disponiveis.",
+    "subtitle": "Cada agente escolhe quais ferramentas pode usar. Aqui estao as categorias disponíveis.",
     "items": [
       { "title": "Buscar Leads", "description": "Pesquisa e filtra leads no CRM" },
       { "title": "Gerenciar Leads", "description": "Cria, atualiza e qualifica leads" },
@@ -82,16 +82,16 @@
       { "title": "Calendario", "description": "Agenda e consulta eventos" },
       { "title": "Workflows", "description": "Dispara e consulta workflows" },
       { "title": "Outros Agentes", "description": "Orquestra time de agentes" },
-      { "title": "Acoes Customizadas", "description": "Executa logica customizada" },
-      { "title": "Notificacoes", "description": "Email e webhooks" },
+      { "title": "Ações Customizadas", "description": "Executa lógica customizada" },
+      { "title": "Notificações", "description": "Email e webhooks" },
       { "title": "Captura", "description": "Links de captura de leads" },
-      { "title": "Metricas", "description": "Estatisticas e performance" },
-      { "title": "Dados", "description": "Extracao e transformacao" },
-      { "title": "APIs Externas", "description": "Integracao HTTP generica" }
+      { "title": "Métricas", "description": "Estatísticas e performance" },
+      { "title": "Dados", "description": "Extração e transformacao" },
+      { "title": "APIs Externas", "description": "Integração HTTP generica" }
     ]
   },
   "pageCTA": {
     "heading": "Monte sua equipe de agentes IA",
-    "subtitle": "Fale com nosso time e veja como agentes podem transformar sua operacao."
+    "subtitle": "Fale com nosso time e veja como agentes podem transformar sua operação."
   }
 }

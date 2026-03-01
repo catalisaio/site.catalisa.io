@@ -3,11 +3,11 @@
     "badge": "APPS & BACKENDS",
     "heading": "Infraestrutura enterprise.",
     "headingGradient": "Modelada por IA.",
-    "subtitle": "Backends, APIs e portais completos — construidos com Building Blocks enterprise-grade. Seguranca bancaria, providers de mercado e compliance nativos. Descreva o que precisa, publique em minutos.",
+    "subtitle": "Backends, APIs e portais completos — construídos com Building Blocks enterprise-grade. Segurança bancária, providers de mercado e compliance nativos. Descreva o que precisa, publique em minutos.",
     "stats": {
       "blocks": { "value": "25+", "label": "Building Blocks enterprise" },
       "deploy": { "value": "Minutos", "label": "para deploy" },
-      "code": { "value": "Zero", "label": "codigo" }
+      "code": { "value": "Zero", "label": "código" }
     }
   },
   "comparison": {
@@ -15,8 +15,8 @@
     "headingGradient": "App Catalisa",
     "subtitle": "Entenda por que construir com Building Blocks enterprise-grade muda o jogo.",
     "yourProduct": "SEU APP",
-    "callout": "Seu app nao e um prototipo.",
-    "calloutDesc": "Ele tem seguranca bancaria nativa, audit trail completo, LGPD de fabrica e providers de mercado homologados — desde o primeiro deploy.",
+    "callout": "Seu app não e um protótipo.",
+    "calloutDesc": "Ele tem segurança bancária nativa, audit trail completo, LGPD de fábrica e providers de mercado homologados — desde o primeiro deploy.",
     "table": {
       "columns": [
         { "label": "Planilha" },
@@ -24,13 +24,13 @@
         { "label": "App Catalisa", "highlighted": true }
       ],
       "rows": [
-        { "feature": "Seguranca", "values": ["Inexistente", "Variavel", "Bancaria nativa"] },
-        { "feature": "Tempo de entrega", "values": ["Rapido, fragil", "6-12 meses", "Minutos"] },
-        { "feature": "Compliance LGPD", "values": ["Nao", "Manual", "Nativa de fabrica"] },
-        { "feature": "Audit Trail", "values": ["Nao", "Se implementar", "Automatico"] },
-        { "feature": "APIs documentadas", "values": ["Nao", "Se o dev fizer", "Auto-geradas"] },
-        { "feature": "Multi-tenant", "values": ["Nao", "Complexo", "Nativo"] },
-        { "feature": "Providers de mercado", "values": ["Nenhum", "Integre voce", "Plugados"] },
+        { "feature": "Segurança", "values": ["Inexistente", "Variavel", "Bancária nativa"] },
+        { "feature": "Tempo de entrega", "values": ["Rápido, fragil", "6-12 meses", "Minutos"] },
+        { "feature": "Compliance LGPD", "values": ["Não", "Manual", "Nativa de fábrica"] },
+        { "feature": "Audit Trail", "values": ["Não", "Se implementar", "Automático"] },
+        { "feature": "APIs documentadas", "values": ["Não", "Se o dev fizer", "Auto-geradas"] },
+        { "feature": "Multi-tenant", "values": ["Não", "Complexo", "Nativo"] },
+        { "feature": "Providers de mercado", "values": ["Nenhum", "Integre você", "Plugados"] },
         { "feature": "Escalabilidade", "values": ["Limitada", "Depende", "Enterprise-ready"] }
       ]
     }
@@ -38,59 +38,59 @@
   "howAppsWork": {
     "heading": "Como Apps funcionam",
     "items": [
-      { "title": "Descreva o que precisa", "description": "Em linguagem natural, diga qual sistema voce quer. A IA entende o contexto e os requisitos." },
+      { "title": "Descreva o que precisa", "description": "Em linguagem natural, diga qual sistema você quer. A IA entende o contexto e os requisitos." },
       { "title": "IA seleciona blocos enterprise", "description": "A IA escolhe os Building Blocks certos — Decision Engine, IAM, Audit Trail, e-signature e mais." },
-      { "title": "Configure regras de negocio", "description": "Ajuste parametros, limites, fluxos de aprovacao e regras especificas do seu negocio." },
-      { "title": "Publique com seguranca bancaria", "description": "APIs documentadas, criptografia ponta a ponta, LGPD nativa e SLA enterprise. Pronto para producao." }
+      { "title": "Configure regras de negócio", "description": "Ajuste parametros, limites, fluxos de aprovação e regras específicas do seu negócio." },
+      { "title": "Publique com segurança bancária", "description": "APIs documentadas, criptografia ponta a ponta, LGPD nativa e SLA enterprise. Pronto para produção." }
     ]
   },
   "appTemplates": {
     "heading": "Templates de Apps",
     "subtitle": "Sistemas prontos para personalizar e publicar em minutos.",
     "items": [
-      { "name": "Portal de Credito", "category": "Fintech", "description": "Originacao, analise de risco e aprovacao com Decision Engine e audit trail.", "blocks": ["Decision Engine", "IAM", "Audit Trail"] },
-      { "name": "Sistema KYC", "category": "Compliance", "description": "Validacao de identidade com OCR, facematch e checagem em bureaus.", "blocks": ["OCR", "Facematch", "Bureau Check"] },
-      { "name": "Portal do Cliente", "category": "Banking", "description": "Area logada com consulta de saldo, extrato, documentos e suporte.", "blocks": ["IAM", "Ledger", "Notifications"] },
-      { "name": "Motor de Cobranca", "category": "Financeiro", "description": "Regras de cobranca, geracao de boletos e negociacao automatizada.", "blocks": ["Decision Engine", "Payments", "Notifications"] },
+      { "name": "Portal de Crédito", "category": "Fintech", "description": "Originação, análise de risco e aprovação com Decision Engine e audit trail.", "blocks": ["Decision Engine", "IAM", "Audit Trail"] },
+      { "name": "Sistema KYC", "category": "Compliance", "description": "Validação de identidade com OCR, facematch e checagem em bureaus.", "blocks": ["OCR", "Facematch", "Bureau Check"] },
+      { "name": "Portal do Cliente", "category": "Banking", "description": "Área logada com consulta de saldo, extrato, documentos e suporte.", "blocks": ["IAM", "Ledger", "Notifications"] },
+      { "name": "Motor de Cobrança", "category": "Financeiro", "description": "Regras de cobrança, geração de boletos e negociação automatizada.", "blocks": ["Decision Engine", "Payments", "Notifications"] },
       { "name": "Backoffice de Seguros", "category": "Insurance", "description": "Gestao de apolices, sinistros e renovacoes com workflow integrado.", "blocks": ["Decision Engine", "E-Signature", "Audit Trail"] },
-      { "name": "Hub de Onboarding", "category": "Onboarding", "description": "Coleta de dados, validacao documental e aprovacao em etapas.", "blocks": ["OCR", "IAM", "Webhooks"] },
-      { "name": "API de Pagamentos", "category": "Payments", "description": "Pix, boleto e cartao com conciliacao automatica e split.", "blocks": ["Payments", "Ledger", "Audit Trail"] },
+      { "name": "Hub de Onboarding", "category": "Onboarding", "description": "Coleta de dados, validação documental e aprovação em etapas.", "blocks": ["OCR", "IAM", "Webhooks"] },
+      { "name": "API de Pagamentos", "category": "Payments", "description": "Pix, boleto e cartao com conciliacao automática e split.", "blocks": ["Payments", "Ledger", "Audit Trail"] },
       { "name": "Sistema de Assinaturas", "category": "Legal", "description": "Contratos digitais com assinatura eletronica e validade juridica.", "blocks": ["E-Signature", "Storage", "Notifications"] }
     ]
   },
   "buildingBlocks": {
     "badge": "BUILDING BLOCKS",
     "heading": "25+ blocos enterprise para seus apps",
-    "subtitle": "Cada bloco e testado em producao com seguranca bancaria. Combine-os para criar qualquer sistema.",
+    "subtitle": "Cada bloco e testado em produção com segurança bancária. Combine-os para criar qualquer sistema.",
     "items": [
-      { "name": "IAM / SSO", "description": "Autenticacao e autorizacao com SSO, RBAC e MFA", "category": "Seguranca" },
-      { "name": "Decision Engine", "description": "Regras de negocio com audit trail completo", "category": "Logica" },
-      { "name": "Audit Trail", "description": "Registro imutavel de cada acao no sistema", "category": "Compliance" },
-      { "name": "Ledger", "description": "Razao contabil com double-entry e conciliacao", "category": "Financeiro" },
+      { "name": "IAM / SSO", "description": "Autenticação e autorização com SSO, RBAC e MFA", "category": "Segurança" },
+      { "name": "Decision Engine", "description": "Regras de negócio com audit trail completo", "category": "Lógica" },
+      { "name": "Audit Trail", "description": "Registro imutavel de cada ação no sistema", "category": "Compliance" },
+      { "name": "Ledger", "description": "Razão contabil com double-entry e conciliacao", "category": "Financeiro" },
       { "name": "Payments", "description": "Pix, boleto e cartao com providers homologados", "category": "Financeiro" },
       { "name": "E-Signature", "description": "Assinatura eletronica com validade juridica", "category": "Legal" },
-      { "name": "OCR / Vision", "description": "Extracao de dados de documentos com IA", "category": "IA" },
-      { "name": "Facematch", "description": "Verificacao biometrica facial", "category": "Seguranca" },
-      { "name": "Bureau Check", "description": "Consulta em bureaus de credito e dados", "category": "Dados" },
-      { "name": "Open Finance", "description": "Conexao com Open Finance regulado pelo Bacen", "category": "Financeiro" },
-      { "name": "Notifications", "description": "E-mail, SMS, push e WhatsApp unificados", "category": "Comunicacao" },
+      { "name": "OCR / Vision", "description": "Extração de dados de documentos com IA", "category": "IA" },
+      { "name": "Facematch", "description": "Verificação biometrica facial", "category": "Segurança" },
+      { "name": "Bureau Check", "description": "Consulta em bureaus de crédito e dados", "category": "Dados" },
+      { "name": "Open Finance", "description": "Conexão com Open Finance regulado pelo Bacen", "category": "Financeiro" },
+      { "name": "Notifications", "description": "E-mail, SMS, push e WhatsApp unificados", "category": "Comunicação" },
       { "name": "Storage", "description": "Armazenamento seguro com criptografia", "category": "Infraestrutura" },
-      { "name": "Webhooks", "description": "Eventos em tempo real para sistemas externos", "category": "Integracao" },
-      { "name": "API Gateway", "description": "Rate limiting, auth e versionamento automatico", "category": "Infraestrutura" },
-      { "name": "LGPD Engine", "description": "Consentimento, anonimizacao e direitos do titular", "category": "Compliance" },
-      { "name": "Data Masking", "description": "Mascaramento automatico de dados sensiveis", "category": "Seguranca" },
+      { "name": "Webhooks", "description": "Eventos em tempo real para sistemas externos", "category": "Integração" },
+      { "name": "API Gateway", "description": "Rate limiting, auth e versionamento automático", "category": "Infraestrutura" },
+      { "name": "LGPD Engine", "description": "Consentimento, anonimização e direitos do titular", "category": "Compliance" },
+      { "name": "Data Masking", "description": "Mascaramento automático de dados sensíveis", "category": "Segurança" },
       { "name": "Queue / Jobs", "description": "Processamento assincrono com retry e DLQ", "category": "Infraestrutura" },
-      { "name": "Cache", "description": "Cache distribuido para alta performance", "category": "Infraestrutura" },
+      { "name": "Cache", "description": "Cache distribuído para alta performance", "category": "Infraestrutura" },
       { "name": "Search", "description": "Busca full-text com filtros e relevancia", "category": "Dados" }
     ]
   },
   "realWorldExample": {
-    "heading": "Exemplo real: Sistema de credito end-to-end",
+    "heading": "Exemplo real: Sistema de crédito end-to-end",
     "steps": [
       "Cliente solicita",
-      "KYC automatico",
-      "Analise de risco",
-      "Aprovacao",
+      "KYC automático",
+      "Análise de risco",
+      "Aprovação",
       "Contrato digital",
       "Desembolso"
     ]
@@ -102,7 +102,7 @@
     "subtitle": "Combine a interface humana dos Agentes IA com a infraestrutura enterprise dos Apps.",
     "examples": [
       {
-        "title": "Credito via WhatsApp",
+        "title": "Crédito via WhatsApp",
         "agent": "Agente coleta dados do cliente",
         "app": "App analisa risco com Decision Engine",
         "agentIcon": "FiMessageCircle",
@@ -110,14 +110,14 @@
       },
       {
         "title": "KYC Digital",
-        "agent": "Agente guia o processo de verificacao",
+        "agent": "Agente guia o processo de verificação",
         "app": "App valida identidade com providers enterprise",
         "agentIcon": "FiUsers",
         "appIcon": "FiShield"
       },
       {
         "title": "Portal do Cliente",
-        "agent": "Agente responde duvidas em tempo real",
+        "agent": "Agente responde dúvidas em tempo real",
         "app": "Portal exibe dados do backend seguro",
         "agentIcon": "FiCpu",
         "appIcon": "FiServer"
@@ -127,20 +127,20 @@
   },
   "capabilities": {
     "heading": "Capacidades enterprise nativas",
-    "subtitle": "Nao e bolt-on. Cada capacidade e nativa de fabrica em todo app Catalisa.",
+    "subtitle": "Não e bolt-on. Cada capacidade e nativa de fábrica em todo app Catalisa.",
     "items": [
       { "label": "Multi-tenant", "description": "Isolamento completo entre organizacoes" },
-      { "label": "LGPD Nativa", "description": "Consentimento, anonimizacao e portabilidade" },
-      { "label": "Audit Trail", "description": "Registro imutavel de cada operacao" },
+      { "label": "LGPD Nativa", "description": "Consentimento, anonimização e portabilidade" },
+      { "label": "Audit Trail", "description": "Registro imutavel de cada operação" },
       { "label": "APIs Auto-documentadas", "description": "OpenAPI gerado automaticamente" },
-      { "label": "SSO / RBAC", "description": "Autenticacao unificada e controle granular" },
-      { "label": "Providers Homologados", "description": "Integracao com providers renomados de mercado" },
+      { "label": "SSO / RBAC", "description": "Autenticação unificada e controle granular" },
+      { "label": "Providers Homologados", "description": "Integração com providers renomados de mercado" },
       { "label": "Criptografia E2E", "description": "Dados protegidos em transito e repouso" },
       { "label": "SLA Enterprise", "description": "Disponibilidade, suporte e monitoramento 24/7" }
     ]
   },
   "pageCTA": {
     "heading": "Monte sua infraestrutura enterprise com IA",
-    "subtitle": "Fale com nosso time e veja como construir sistemas completos em minutos, nao meses."
+    "subtitle": "Fale com nosso time e veja como construir sistemas completos em minutos, não meses."
   }
 }

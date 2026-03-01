@@ -1,9 +1,9 @@
 {
   "hero": {
     "badge": "SEGUROS",
-    "heading": "Sinistros, cotacoes e renovacoes",
+    "heading": "Sinistros, cotações e renovacoes",
     "headingGradient": "pelo WhatsApp",
-    "subtitle": "R$ 207B em premios (2024). 42% das vendas ja sao digitais. Sinistro resolvido por IA em menos de 10 minutos.",
+    "subtitle": "R$ 207B em premios (2024). 42% das vendas já são digitais. Sinistro resolvido por IA em menos de 10 minutos.",
     "stats": {
       "stat1": { "value": "R$ 207B", "label": "Premios 2024" },
       "stat2": { "label": "Vendas digitais" },
@@ -12,8 +12,8 @@
   },
   "market": {
     "badge": "MERCADO",
-    "heading": "Seguradoras que ja usam WhatsApp com IA",
-    "subtitle": "As maiores seguradoras do Brasil ja utilizam WhatsApp com IA para sinistros, cotacoes e atendimento. Insurtechs receberam R$ 350M em investimentos no primeiro semestre de 2025.",
+    "heading": "Seguradoras que já usam WhatsApp com IA",
+    "subtitle": "As maiores seguradoras do Brasil já utilizam WhatsApp com IA para sinistros, cotações e atendimento. Insurtechs receberam R$ 350M em investimentos no primeiro semestre de 2025.",
     "insurers": [
       {
         "name": "MAPFRE",
@@ -39,24 +39,24 @@
     "subtitle": "Conformidade com Resolucao CNSP 382/2020, LGPD e normas da SUSEP integrada em cada capacidade.",
     "items": [
       { "label": "Conformidade SUSEP", "description": "Resolucao CNSP 382/2020 integrada" },
-      { "label": "Protecao LGPD", "description": "Mascaramento automatico de dados de segurados" },
+      { "label": "Proteção LGPD", "description": "Mascaramento automático de dados de segurados" },
       { "label": "Auditoria Completa", "description": "Trilha de auditoria imutavel e rastreavel" },
-      { "label": "Criptografia Avancada", "description": "Dados sensiveis protegidos por criptografia" }
+      { "label": "Criptografia Avancada", "description": "Dados sensíveis protegidos por criptografia" }
     ]
   },
   "capabilities": {
     "badge": "INSURTECH",
     "heading": "Capacidades para seguros",
-    "subtitle": "Vistorias por IA, extracao de documentos, subscricao automatica e mais \u2014 tudo dentro do workflow.",
+    "subtitle": "Vistorias por IA, extração de documentos, subscricao automática e mais \u2014 tudo dentro do workflow.",
     "items": [
-      { "title": "Vistoria por IA", "description": "Analise de fotos de veiculos e imoveis com visao computacional." },
-      { "title": "Extracao de Documentos", "description": "Leitura inteligente de apolices, CNH, CRLV e laudos." },
-      { "title": "Subscricao Automatica", "description": "Motor de decisao configuravel para aprovar ou rejeitar riscos." },
-      { "title": "Precificacao", "description": "Calculo de premio baseado no perfil de risco." },
-      { "title": "Protecao LGPD", "description": "Mascaramento de dados de segurados em tempo real." },
+      { "title": "Vistoria por IA", "description": "Análise de fotos de veiculos e imoveis com visao computacional." },
+      { "title": "Extração de Documentos", "description": "Leitura inteligente de apolices, CNH, CRLV e laudos." },
+      { "title": "Subscricao Automática", "description": "Motor de decisão configurável para aprovar ou rejeitar riscos." },
+      { "title": "Precificacao", "description": "Cálculo de premio baseado no perfil de risco." },
+      { "title": "Proteção LGPD", "description": "Mascaramento de dados de segurados em tempo real." },
       { "title": "Gestao de Documentos", "description": "Receba e armazene fotos e documentos pelo WhatsApp." }
     ],
-    "pipeline": "Detalhes \u2192 Fotos e docs \u2192 Analise visual \u2192 Extracao \u2192 Decisao \u2192 Arquivo \u2192 Confirmacao",
+    "pipeline": "Detalhes \u2192 Fotos e docs \u2192 Análise visual \u2192 Extração \u2192 Decisão \u2192 Arquivo \u2192 Confirmação",
     "pipelineLabel": "Pipeline de sinistro:"
   },
   "roi": {
@@ -66,12 +66,12 @@
       "title": "Calculadora de ROI Seguros",
       "fields": {
         "brokers": "Numero de corretores",
-        "claimsPerMonth": "Sinistros/mes",
+        "claimsPerMonth": "Sinistros/mês",
         "costPerClaim": "Custo por sinistro (R$)"
       },
       "stats": {
-        "currentCost": "Custo atual/mes",
-        "withCatalisa": "Com Catalisa/mes",
+        "currentCost": "Custo atual/mês",
+        "withCatalisa": "Com Catalisa/mês",
         "monthlySavings": "Economia mensal"
       },
       "reduction": "de reducao",

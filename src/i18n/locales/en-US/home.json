@@ -234,7 +234,7 @@
     "benchmarkNote": "Benchmark: AI costs 12x less per interaction than human support.",
     "today": "TODAY",
     "withCatalisa": "WITH CATALISA",
-    "attendants": "Attendants",
+    "attendants": "Agents",
     "responseTime": "Response time",
     "monthlyCost": "Monthly cost",
     "hours": "hours",
@@ -251,27 +251,27 @@
     "industries": [
       {
         "name": "Fintech",
-        "scenario": "Automatic onboarding, KYC, credit analysis, origination Apps and customer portal — all enterprise-grade.",
+        "scenario": "Automatic onboarding, KYC, credit analysis, origination apps, and customer portal — all enterprise-grade.",
         "stats": ["85% automation", "12s response", "60% less cost"]
       },
       {
         "name": "Banking",
-        "scenario": "Open Finance, automated Pix, customer portal Apps, compliance and account holder support.",
+        "scenario": "Open Finance, automated Pix, customer portal apps, compliance, and account holder support.",
         "stats": ["90% automation", "8s response", "70% less cost"]
       },
       {
         "name": "Insurance",
-        "scenario": "Instant quotes, backoffice Apps, claims management and automatic renewals.",
+        "scenario": "Instant quotes, back-office apps, claims management, and automatic renewals.",
         "stats": ["78% automation", "15s response", "55% less cost"]
       },
       {
         "name": "Retail",
-        "scenario": "WhatsApp sales, e-commerce Apps, after-sales, tracking and loyalty.",
+        "scenario": "WhatsApp sales, e-commerce apps, after-sales, tracking, and loyalty.",
         "stats": ["82% automation", "10s response", "50% less cost"]
       },
       {
         "name": "Startups",
-        "scenario": "Scale fast with enterprise Apps and optimized cost. Service, sales and support unified.",
+        "scenario": "Scale fast with enterprise apps and optimized cost. Service, sales, and support unified.",
         "stats": ["88% automation", "6s response", "75% less cost"]
       }
     ],
@@ -334,11 +334,11 @@
     "description": "It's not a chatbot. It's an entire team. Each agent has its own personality, tools and context.",
     "before": {
       "label": "BEFORE",
-      "items": ["3 agents", "2h wait time", "R$ 15k/month"]
+      "items": ["3 agents", "2h wait time", "$15k/month"]
     },
     "after": {
       "label": "AFTER",
-      "items": ["AI Agent + 1 supervisor", "5 second response", "R$ 800/month"]
+      "items": ["AI Agent + 1 supervisor", "5 second response", "$800/month"]
     }
   },
   "differentiators": {
@@ -480,7 +480,7 @@
     "recentActionsHeader": "Recent actions",
     "actions": [
       { "label": "Lead qualified — Maria Silva", "delay": 0.3 },
-      { "label": "Proposal sent — Joao Souza", "delay": 0.8 },
+      { "label": "Proposal sent — João Souza", "delay": 0.8 },
       { "label": "Follow-up scheduled — Ana Costa", "delay": 1.3 },
       { "label": "Meeting booked — Pedro Lima", "delay": 1.8 },
       { "label": "Contract generated — Carla Nunes", "delay": 2.3 }

@@ -1,33 +1,33 @@
 {
   "hero": {
-    "badge": "PRECOS",
+    "badge": "Preços",
     "heading": "Comece gratis.",
     "headingGradient": "Escale quando quiser.",
-    "subtitle": "Planos transparentes com precos reais. Sem surpresas, sem contrato de fidelidade."
+    "subtitle": "Planos transparentes com preços reais. Sem surpresas, sem contrato de fidelidade."
   },
   "billing": {
     "monthly": "Mensal",
     "annual": "Anual",
     "saveTag": "Economize 17%",
-    "perMonth": "/mes",
+    "perMonth": "/mês",
     "billedAnnually": "cobrado anualmente"
   },
   "plans": [
     {
       "name": "Free",
-      "description": "Para testar e validar sua primeira automacao.",
+      "description": "Para testar e validar sua primeira automação.",
       "price": "R$ 0",
       "priceAnnual": "R$ 0",
       "features": [
-        "100 conversas/mes",
+        "100 conversas/mês",
         "1 agente IA",
         "10 building blocks basicos",
         "1 membro",
         "WhatsApp QR Code",
-        "Studio basico",
-        "CRM basico",
+        "Studio básico",
+        "CRM básico",
         "Suporte community",
-        "Retencao de dados: 30 dias"
+        "Retenção de dados: 30 dias"
       ],
       "cta": "Comecar gratis",
       "ctaVariant": "outline"
@@ -38,7 +38,7 @@
       "price": "R$ 297",
       "priceAnnual": "R$ 247",
       "features": [
-        "1.000 conversas/mes",
+        "1.000 conversas/mês",
         "3 agentes IA",
         "25 building blocks",
         "3 membros",
@@ -47,19 +47,19 @@
         "CRM completo",
         "Suporte por email",
         "SLA 99%",
-        "Retencao de dados: 90 dias"
+        "Retenção de dados: 90 dias"
       ],
       "cta": "Comecar agora"
     },
     {
       "name": "Professional",
-      "description": "Para operacoes que precisam de poder total.",
+      "description": "Para operações que precisam de poder total.",
       "price": "R$ 897",
       "priceAnnual": "R$ 747",
       "badge": "MAIS POPULAR",
       "highlighted": true,
       "features": [
-        "5.000 conversas/mes",
+        "5.000 conversas/mês",
         "10 agentes IA",
         "Todos building blocks",
         "10 membros",
@@ -68,17 +68,17 @@
         "CRM completo",
         "Suporte prioritario (8h)",
         "SLA 99.5%",
-        "Retencao de dados: 1 ano"
+        "Retenção de dados: 1 ano"
       ],
       "cta": "Comecar agora"
     },
     {
       "name": "Business",
-      "description": "Para operacoes em escala com alto volume.",
+      "description": "Para operações em escala com alto volume.",
       "price": "R$ 2.497",
       "priceAnnual": "R$ 2.097",
       "features": [
-        "25.000 conversas/mes",
+        "25.000 conversas/mês",
         "Agentes IA ilimitados",
         "Todos building blocks",
         "25 membros",
@@ -87,13 +87,13 @@
         "CRM completo + API",
         "Suporte prioritario (4h) + Slack",
         "SLA 99.9%",
-        "Retencao de dados: 2 anos"
+        "Retenção de dados: 2 anos"
       ],
       "cta": "Falar com vendas"
     },
     {
       "name": "Enterprise",
-      "description": "Para grandes operacoes com compliance e seguranca.",
+      "description": "Para grandes operações com compliance e segurança.",
       "price": "Customizado",
       "priceAnnual": "Customizado",
       "features": [
@@ -106,7 +106,7 @@
         "CRM + custom",
         "Suporte 24/7 + Account Manager",
         "SLA 99.95%+",
-        "Retencao de dados: custom"
+        "Retenção de dados: custom"
       ],
       "cta": "Falar com especialista"
     }
@@ -122,16 +122,16 @@
       { "label": "Enterprise" }
     ],
     "rows": [
-      { "feature": "Conversas/mes", "values": ["100", "1.000", "5.000", "25.000", "Ilimitado"] },
+      { "feature": "Conversas/mês", "values": ["100", "1.000", "5.000", "25.000", "Ilimitado"] },
       { "feature": "Agentes IA", "values": ["1", "3", "10", "Ilimitado", "Ilimitado"] },
       { "feature": "Building Blocks", "values": ["10 basicos", "25", "Todos", "Todos", "Todos + custom"] },
       { "feature": "Membros", "values": ["1", "3", "10", "25", "Ilimitado"] },
       { "feature": "WhatsApp", "values": ["QR Code", "QR + Cloud API", "Cloud API", "Multi-numero", "Dedicado"] },
-      { "feature": "Catalisa Studio", "values": ["Basico", "Completo", "Completo + AI Builder", "Completo + AI Builder", "Completo + custom"] },
-      { "feature": "CRM", "values": ["Basico", "Completo", "Completo", "Completo + API", "Completo + custom"] },
+      { "feature": "Catalisa Studio", "values": ["Básico", "Completo", "Completo + AI Builder", "Completo + AI Builder", "Completo + custom"] },
+      { "feature": "CRM", "values": ["Básico", "Completo", "Completo", "Completo + API", "Completo + custom"] },
       { "feature": "Suporte", "values": ["Community", "Email", "Prioritario (8h)", "Prioritario (4h) + Slack", "24/7 + AM"] },
       { "feature": "SLA", "values": ["-", "99%", "99.5%", "99.9%", "99.95%+"] },
-      { "feature": "Retencao de dados", "values": ["30 dias", "90 dias", "1 ano", "2 anos", "Custom"] }
+      { "feature": "Retenção de dados", "values": ["30 dias", "90 dias", "1 ano", "2 anos", "Custom"] }
     ]
   },
   "addons": {
@@ -139,11 +139,11 @@
     "headingGradient": "para expandir",
     "subtitle": "Adicione capacidades extras conforme sua necessidade cresce.",
     "items": [
-      { "name": "+1.000 conversas", "price": "R$ 49/mes", "description": "Pacote adicional de conversas mensais" },
-      { "name": "+1 Agente IA", "price": "R$ 97/mes", "description": "Agente adicional para automacoes" },
-      { "name": "Blocos financeiros", "price": "R$ 297/mes", "description": "PRICE, SAC, Decision Engine" },
-      { "name": "Open Finance", "price": "R$ 497/mes", "description": "Consulta de dados abertos e scoring" },
-      { "name": "Infra dedicada", "price": "R$ 997/mes", "description": "Ambiente isolado de alta performance" },
+      { "name": "+1.000 conversas", "price": "R$ 49/mês", "description": "Pacote adicional de conversas mensais" },
+      { "name": "+1 Agente IA", "price": "R$ 97/mês", "description": "Agente adicional para automações" },
+      { "name": "Blocos financeiros", "price": "R$ 297/mês", "description": "PRICE, SAC, Decision Engine" },
+      { "name": "Open Finance", "price": "R$ 497/mês", "description": "Consulta de dados abertos e scoring" },
+      { "name": "Infra dedicada", "price": "R$ 997/mês", "description": "Ambiente isolado de alta performance" },
       { "name": "White-label", "price": "Custom", "description": "Marca propria em toda plataforma" }
     ]
   },
@@ -153,30 +153,30 @@
     "traditional": {
       "title": "Equipe tradicional",
       "items": [
-        { "label": "3 atendentes (CLT)", "value": "R$ 9.000/mes" },
-        { "label": "Ferramentas (CRM, help desk)", "value": "R$ 1.500/mes" },
-        { "label": "Treinamento e turnover", "value": "R$ 2.000/mes" }
+        { "label": "3 atendentes (CLT)", "value": "R$ 9.000/mês" },
+        { "label": "Ferramentas (CRM, help desk)", "value": "R$ 1.500/mês" },
+        { "label": "Treinamento e turnover", "value": "R$ 2.000/mês" }
       ],
-      "total": "R$ 12.500/mes"
+      "total": "R$ 12.500/mês"
     },
     "catalisa": {
       "title": "Catalisa Business",
       "items": [
-        { "label": "Plano Business", "value": "R$ 2.497/mes" },
+        { "label": "Plano Business", "value": "R$ 2.497/mês" },
         { "label": "CRM, Studio, AI inclusos", "value": "R$ 0" },
         { "label": "Funciona 24/7, sem ferias", "value": "R$ 0" }
       ],
-      "total": "R$ 2.497/mes"
+      "total": "R$ 2.497/mês"
     },
     "savingsLabel": "Economia mensal",
     "savingsValue": "R$ 10.003",
     "savingsPercent": "80%"
   },
   "calculator": {
-    "heading": "Qual plano e ideal para voce?",
+    "heading": "Qual plano e ideal para você?",
     "subtitle": "Responda 2 perguntas e descubra.",
-    "conversationsLabel": "Quantas conversas/mes voce tem?",
-    "agentsLabel": "Quantos agentes IA voce precisa?",
+    "conversationsLabel": "Quantas conversas/mês você tem?",
+    "agentsLabel": "Quantos agentes IA você precisa?",
     "recommendLabel": "Plano recomendado:",
     "conversationsMarks": ["100", "1K", "5K", "25K", "50K+"]
   },
@@ -185,40 +185,40 @@
     "items": [
       {
         "question": "O plano Free e realmente gratis?",
-        "answer": "Sim. O Free inclui 100 conversas/mes, 1 agente IA e 10 building blocks basicos. Nao precisa de cartao de credito para comecar. E funcional, nao e demo — voce pode criar automacoes reais."
+        "answer": "Sim. O Free inclui 100 conversas/mês, 1 agente IA e 10 building blocks basicos. Não precisa de cartao de crédito para comecar. E funcional, não e demo — você pode criar automações reais."
       },
       {
-        "question": "Existe periodo minimo de contrato?",
-        "answer": "Nao. Todos os planos pagos sao mensais e voce pode cancelar a qualquer momento sem multa. Para planos anuais, oferecemos 17% de desconto."
+        "question": "Existe período mínimo de contrato?",
+        "answer": "Não. Todos os planos pagos são mensais e você pode cancelar a qualquer momento sem multa. Para planos anuais, oferecemos 17% de desconto."
       },
       {
         "question": "O que conta como uma 'conversa'?",
-        "answer": "Uma conversa e uma sessao de troca de mensagens entre seu numero WhatsApp e um contato, dentro de uma janela de 24 horas. Multiplas mensagens na mesma janela contam como uma unica conversa."
+        "answer": "Uma conversa e uma sessão de troca de mensagens entre seu numero WhatsApp e um contato, dentro de uma janela de 24 horas. Multiplas mensagens na mesma janela contam como uma única conversa."
       },
       {
         "question": "Posso mudar de plano a qualquer momento?",
-        "answer": "Sim. Voce pode fazer upgrade ou downgrade a qualquer momento. No upgrade, a diferenca e cobrada pro-rata. No downgrade, o credito e aplicado no proximo ciclo."
+        "answer": "Sim. Você pode fazer upgrade ou downgrade a qualquer momento. No upgrade, a diferença e cobrada pro-rata. No downgrade, o crédito e aplicado no proximo ciclo."
       },
       {
         "question": "Existe custo adicional pelo WhatsApp Cloud API?",
-        "answer": "A Catalisa nao cobra pelo uso da Cloud API em si. Porem, a Meta cobra por conversa iniciada pela empresa (conforme tabela oficial). Conversas iniciadas pelo usuario sao gratuitas nas primeiras 1.000/mes."
+        "answer": "A Catalisa não cobra pelo uso da Cloud API em si. Porem, a Meta cobra por conversa iniciada pela empresa (conforme tabela oficial). Conversas iniciadas pelo usuário são gratuitas nas primeiras 1.000/mês."
       },
       {
         "question": "Como funciona o suporte?",
-        "answer": "Free: community forum. Starter: email em horario comercial. Professional: prioritario com SLA de 8h. Business: prioritario com SLA de 4h + canal Slack. Enterprise: 24/7 com account manager dedicado."
+        "answer": "Free: community forum. Starter: email em horário comercial. Professional: prioritario com SLA de 8h. Business: prioritario com SLA de 4h + canal Slack. Enterprise: 24/7 com account manager dedicado."
       },
       {
         "question": "Posso testar antes de contratar um plano pago?",
-        "answer": "Sim! Comece pelo plano Free e teste com ate 100 conversas/mes. Quando estiver pronto para escalar, faca upgrade. Tambem oferecemos demos personalizadas para empresas."
+        "answer": "Sim! Comece pelo plano Free e teste com até 100 conversas/mês. Quando estiver pronto para escalar, faca upgrade. Também oferecemos demos personalizadas para empresas."
       },
       {
-        "question": "Os precos incluem impostos?",
-        "answer": "Os precos exibidos nao incluem impostos. O valor final pode variar conforme a localizacao e o regime tributario da sua empresa."
+        "question": "Os preços incluem impostos?",
+        "answer": "Os preços exibidos não incluem impostos. O valor final pode variar conforme a localizacao e o regime tributario da sua empresa."
       }
     ]
   },
   "pageCTA": {
     "heading": "Pronto para comecar?",
-    "subtitle": "Comece gratis hoje e escale quando precisar. Sem cartao de credito."
+    "subtitle": "Comece gratis hoje e escale quando precisar. Sem cartao de crédito."
   }
 }

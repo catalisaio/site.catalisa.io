@@ -2,8 +2,8 @@
   "hero": {
     "badge": "PLAYBOOKS",
     "heading": "Comece em minutos.",
-    "headingGradient": "Nao meses.",
-    "subtitle": "30+ automacoes prontas para usar. Escolha um playbook, personalize e ative."
+    "headingGradient": "Não meses.",
+    "subtitle": "30+ automações prontas para usar. Escolha um playbook, personalize e ative."
   },
   "search": {
     "placeholder": "Buscar playbooks..."
@@ -15,20 +15,20 @@
     "financeiro": "Financeiro",
     "onboarding": "Onboarding",
     "marketing": "Marketing",
-    "operacoes": "Operacoes",
+    "operações": "Operações",
     "produtividade": "Produtividade"
   },
   "industries": {
     "all": "Todas industrias",
     "geral": "Geral",
     "fintech": "Fintech",
-    "banking": "Bancario",
+    "banking": "Bancário",
     "insurance": "Seguros",
     "retail": "Varejo",
     "saas": "SaaS",
-    "saude": "Saude",
-    "educacao": "Educacao",
-    "imobiliario": "Imobiliario",
+    "saúde": "Saúde",
+    "educação": "Educação",
+    "imobiliário": "Imobiliário",
     "ecommerce": "E-commerce"
   },
   "featured": {
@@ -68,7 +68,7 @@
   "whyPlaybooks": {
     "heading": "Por que usar playbooks?",
     "speed": {
-      "title": "Minutos, nao meses",
+      "title": "Minutos, não meses",
       "description": "Escolha um playbook pronto e ative em minutos. Sem desenvolvimento do zero."
     },
     "proven": {
@@ -76,17 +76,17 @@
       "description": "Cada playbook foi criado a partir de casos de uso reais com resultados comprovados."
     },
     "customizable": {
-      "title": "Adapte ao seu negocio",
-      "description": "Personalize cada etapa, mensagem e integracao para o seu contexto."
+      "title": "Adapte ao seu negócio",
+      "description": "Personalize cada etapa, mensagem e integração para o seu contexto."
     }
   },
   "bottomCTA": {
-    "heading": "Nao encontrou o que precisa?",
-    "subtitle": "Descreva o que voce precisa no Studio e a IA constroi para voce."
+    "heading": "Não encontrou o que precisa?",
+    "subtitle": "Descreva o que você precisa no Studio e a IA constrói para você."
   },
   "sdr": {
     "name": "SDR Automatizado",
-    "description": "Qualifica leads 24/7 no WhatsApp, coleta informacoes, classifica por prioridade e agenda reunioes com vendedores.",
+    "description": "Qualifica leads 24/7 no WhatsApp, coleta informações, classifica por prioridade e agenda reuniões com vendedores.",
     "before": [
       { "metric": "Leads qualificados/dia", "value": "15" },
       { "metric": "Custo por lead", "value": "R$ 45" },
@@ -100,18 +100,18 @@
     "steps": [
       "Lead entra em contato",
       "Agente qualifica lead",
-      "Coleta informacoes",
+      "Coleta informações",
       "Registra no CRM",
-      "Agenda reuniao",
+      "Agenda reunião",
       "Confirma agendamento"
     ],
     "chatMessages": [
-      { "text": "Oi, vi o anuncio de voces sobre automacao de vendas. Queria saber mais!", "sent": false, "delay": 0 },
-      { "text": "Ola! Que bom ter voce aqui. Sou o assistente da Catalisa. Para entender melhor como posso te ajudar, qual o tamanho da sua equipe de vendas hoje?", "sent": true, "delay": 0.3 },
-      { "text": "Temos 8 vendedores, mas so 2 conseguem fazer follow-up direito", "sent": false, "delay": 0.8 },
-      { "text": "Entendo perfeitamente. E quantos leads novos voces recebem por mes, aproximadamente?", "sent": true, "delay": 1.2 },
-      { "text": "Uns 500, mas a maioria acaba esfriando porque ninguem responde rapido", "sent": false, "delay": 1.8 },
-      { "text": "Com 500 leads/mes, nosso SDR automatizado pode qualificar e responder em segundos, 24/7. Posso agendar uma demo com nosso especialista? Temos horarios amanha as 10h ou 14h.", "sent": true, "delay": 2.3 }
+      { "text": "Oi, vi o anuncio de voces sobre automação de vendas. Queria saber mais!", "sent": false, "delay": 0 },
+      { "text": "Ola! Que bom ter você aqui. Sou o assistente da Catalisa. Para entender melhor como posso te ajudar, qual o tamanho da sua equipe de vendas hoje?", "sent": true, "delay": 0.3 },
+      { "text": "Temos 8 vendedores, mas só 2 conseguem fazer follow-up direito", "sent": false, "delay": 0.8 },
+      { "text": "Entendo perfeitamente. E quantos leads novos voces recebem por mês, aproximadamente?", "sent": true, "delay": 1.2 },
+      { "text": "Uns 500, mas a maioria acaba esfriando porque ninguem responde rápido", "sent": false, "delay": 1.8 },
+      { "text": "Com 500 leads/mês, nosso SDR automatizado pode qualificar e responder em segundos, 24/7. Posso agendar uma demo com nosso especialista? Temos horários amanha as 10h ou 14h.", "sent": true, "delay": 2.3 }
     ]
   },
   "followup": {
@@ -120,12 +120,12 @@
     "before": [
       { "metric": "Follow-ups realizados", "value": "30%" },
       { "metric": "Tempo entre contatos", "value": "5 dias" },
-      { "metric": "Conversao", "value": "8%" }
+      { "metric": "Conversão", "value": "8%" }
     ],
     "after": [
       { "metric": "Follow-ups realizados", "value": "100%" },
-      { "metric": "Tempo entre contatos", "value": "Automatico" },
-      { "metric": "Conversao", "value": "22%" }
+      { "metric": "Tempo entre contatos", "value": "Automático" },
+      { "metric": "Conversão", "value": "22%" }
     ],
     "steps": [
       "Detecta lead sem resposta",
@@ -136,25 +136,25 @@
       "Atualiza status no CRM"
     ],
     "chatMessages": [
-      { "text": "Oi Marcos! Tudo bem? Vi que voce demonstrou interesse na nossa plataforma semana passada. Conseguiu avaliar a proposta que enviamos?", "sent": true, "delay": 0 },
-      { "text": "Oi! Desculpa, acabei nao vendo ainda. Semana corrida aqui", "sent": false, "delay": 0.3 },
-      { "text": "Sem problemas! Aproveitando, desde a nossa conversa lancamos uma integracao nova com Salesforce que pode ser bem util pro seu caso. Quer que eu envie um resumo rapido?", "sent": true, "delay": 0.8 },
+      { "text": "Oi Marcos! Tudo bem? Vi que você demonstrou interesse na nossa plataforma semana passada. Conseguiu avaliar a proposta que enviamos?", "sent": true, "delay": 0 },
+      { "text": "Oi! Desculpa, acabei não vendo ainda. Semana corrida aqui", "sent": false, "delay": 0.3 },
+      { "text": "Sem problemas! Aproveitando, desde a nossa conversa lancamos uma integração nova com Salesforce que pode ser bem util pro seu caso. Quer que eu envie um resumo rápido?", "sent": true, "delay": 0.8 },
       { "text": "Ah sim, a gente usa Salesforce! Manda sim", "sent": false, "delay": 1.2 },
-      { "text": "Pronto, enviei por email! Em resumo: a integracao sincroniza seus leads automaticamente e ja qualifica com IA. Quer agendar 15 min pra eu te mostrar ao vivo?", "sent": true, "delay": 1.8 },
+      { "text": "Pronto, enviei por email! Em resumo: a integração sincroniza seus leads automaticamente e já qualifica com IA. Quer agendar 15 min pra eu te mostrar ao vivo?", "sent": true, "delay": 1.8 },
       { "text": "Pode ser quinta as 11h?", "sent": false, "delay": 2.3 }
     ]
   },
   "leadQualification": {
-    "name": "Qualificacao de Leads SaaS",
+    "name": "Qualificação de Leads SaaS",
     "description": "Agente IA conversa com leads de SaaS, identifica fit de produto, qualifica com BANT e envia para CRM externo.",
     "before": [
-      { "metric": "Taxa de qualificacao", "value": "20%" },
-      { "metric": "Tempo de qualificacao", "value": "2 dias" },
+      { "metric": "Taxa de qualificação", "value": "20%" },
+      { "metric": "Tempo de qualificação", "value": "2 dias" },
       { "metric": "Leads perdidos", "value": "45%" }
     ],
     "after": [
-      { "metric": "Taxa de qualificacao", "value": "65%" },
-      { "metric": "Tempo de qualificacao", "value": "5min" },
+      { "metric": "Taxa de qualificação", "value": "65%" },
+      { "metric": "Tempo de qualificação", "value": "5min" },
       { "metric": "Leads perdidos", "value": "5%" }
     ],
     "steps": [
@@ -170,70 +170,70 @@
       { "text": "A gente usa planilhas mesmo, ta um caos haha", "sent": false, "delay": 0.8 },
       { "text": "Entendo! E quantas pessoas da equipe precisariam usar a plataforma?", "sent": true, "delay": 1.2 },
       { "text": "Umas 25 pessoas, entre devs e PMs", "sent": false, "delay": 1.8 },
-      { "text": "Perfeito! Com 25 usuarios, o plano Team se encaixa bem e ja inclui dashboards e integracao com Slack. Voces tem orcamento aprovado para essa iniciativa ou ainda estao avaliando?", "sent": true, "delay": 2.3 }
+      { "text": "Perfeito! Com 25 usuarios, o plano Team se encaixa bem e já inclui dashboards e integração com Slack. Voces tem orcamento aprovado para essa iniciativa ou ainda estao avaliando?", "sent": true, "delay": 2.3 }
     ]
   },
   "realEstate": {
-    "name": "Atendimento Imobiliario",
+    "name": "Atendimento Imobiliário",
     "description": "Captura e qualifica interessados em imoveis, apresenta opcoes personalizadas e agenda visitas automaticamente.",
     "before": [
-      { "metric": "Visitas agendadas/mes", "value": "30" },
+      { "metric": "Visitas agendadas/mês", "value": "30" },
       { "metric": "No-show", "value": "40%" },
       { "metric": "Tempo para agendar", "value": "24h" }
     ],
     "after": [
-      { "metric": "Visitas agendadas/mes", "value": "120+" },
+      { "metric": "Visitas agendadas/mês", "value": "120+" },
       { "metric": "No-show", "value": "10%" },
       { "metric": "Tempo para agendar", "value": "3min" }
     ],
     "steps": [
       "Agente atende cliente",
-      "Identifica preferencias",
+      "Identifica preferências",
       "Registra lead no CRM",
       "Agenda visita",
       "Confirma visita"
     ],
     "chatMessages": [
-      { "text": "Boa tarde! Vi o anuncio do apartamento de 3 quartos no Jardins. Ainda esta disponivel?", "sent": false, "delay": 0 },
-      { "text": "Boa tarde! Sim, o apartamento no Jardins esta disponivel! 3 quartos, 92m2, com varanda gourmet. Voce esta buscando para moradia ou investimento?", "sent": true, "delay": 0.3 },
+      { "text": "Boa tarde! Vi o anuncio do apartamento de 3 quartos no Jardins. Ainda esta disponível?", "sent": false, "delay": 0 },
+      { "text": "Boa tarde! Sim, o apartamento no Jardins esta disponível! 3 quartos, 92m2, com varanda gourmet. Você esta buscando para moradia ou investimento?", "sent": true, "delay": 0.3 },
       { "text": "Moradia mesmo. Somos um casal com 1 filho. Tem vaga de garagem?", "sent": false, "delay": 0.8 },
-      { "text": "Tem sim! 2 vagas cobertas. Esse imovel tambem tem area de lazer completa, otimo para familias. O valor e R$ 850 mil. Gostaria de agendar uma visita?", "sent": true, "delay": 1.2 },
+      { "text": "Tem sim! 2 vagas cobertas. Esse imovel também tem área de lazer completa, otimo para familias. O valor e R$ 850 mil. Gostaria de agendar uma visita?", "sent": true, "delay": 1.2 },
       { "text": "Sim, quero visitar! Sabado de manha pode ser?", "sent": false, "delay": 1.8 },
-      { "text": "Perfeito! Agendei sua visita para sabado as 10h com o corretor Rafael. Vou te enviar a localizacao exata e o contato dele. Ate la!", "sent": true, "delay": 2.3 }
+      { "text": "Perfeito! Agendei sua visita para sabado as 10h com o corretor Rafael. Vou te enviar a localizacao exata e o contato dele. Até la!", "sent": true, "delay": 2.3 }
     ]
   },
   "support247": {
     "name": "Suporte 24/7",
-    "description": "Resolva duvidas frequentes automaticamente e escale para humano apenas casos complexos. Funciona 24 horas, 7 dias por semana.",
+    "description": "Resolva dúvidas frequentes automaticamente e escale para humano apenas casos complexos. Funciona 24 horas, 7 dias por semana.",
     "before": [
       { "metric": "Tickets resolvidos/dia", "value": "50" },
       { "metric": "CSAT", "value": "3.2/5" },
-      { "metric": "Equipe necessaria", "value": "6 pessoas" }
+      { "metric": "Equipe necessária", "value": "6 pessoas" }
     ],
     "after": [
       { "metric": "Tickets resolvidos/dia", "value": "400+" },
       { "metric": "CSAT", "value": "4.7/5" },
-      { "metric": "Equipe necessaria", "value": "2 pessoas" }
+      { "metric": "Equipe necessária", "value": "2 pessoas" }
     ],
     "steps": [
-      "Detecta urgencia",
+      "Detecta urgência",
       "Agente de suporte atende",
       "Verifica resolucao",
       "Registra ticket",
       "Envia feedback"
     ],
     "chatMessages": [
-      { "text": "Nao consigo acessar minha conta desde ontem! Ja tentei redefinir a senha e nada", "sent": false, "delay": 0 },
-      { "text": "Oi! Entendo a urgencia. Vou te ajudar agora mesmo. Pode me informar o email cadastrado na sua conta?", "sent": true, "delay": 0.3 },
+      { "text": "Não consigo acessar minha conta desde ontem! Já tentei redefinir a senha e nada", "sent": false, "delay": 0 },
+      { "text": "Oi! Entendo a urgência. Vou te ajudar agora mesmo. Pode me informar o email cadastrado na sua conta?", "sent": true, "delay": 0.3 },
       { "text": "joao.silva@empresa.com.br", "sent": false, "delay": 0.8 },
       { "text": "Encontrei sua conta. Identifiquei que houve um bloqueio temporario por tentativas de login. Acabei de desbloquear e enviei um link de redefinicao para seu email. Pode verificar?", "sent": true, "delay": 1.2 },
-      { "text": "Recebi! Ja consegui entrar. Muito obrigado, resolveu rapidinho!", "sent": false, "delay": 1.8 },
-      { "text": "Que otimo! Fico feliz em ajudar. Se precisar de qualquer coisa, estou disponivel 24h. Tenha um otimo dia!", "sent": true, "delay": 2.3 }
+      { "text": "Recebi! Já consegui entrar. Muito obrigado, resolveu rapidinho!", "sent": false, "delay": 1.8 },
+      { "text": "Que otimo! Fico feliz em ajudar. Se precisar de qualquer coisa, estou disponível 24h. Tenha um otimo dia!", "sent": true, "delay": 2.3 }
     ]
   },
   "techSupport": {
-    "name": "Suporte Tecnico com IA",
-    "description": "Base de conhecimento + IA resolve duvidas tecnicas automaticamente. Escala para humano so quando necessario.",
+    "name": "Suporte Técnico com IA",
+    "description": "Base de conhecimento + IA resolve dúvidas técnicas automaticamente. Escala para humano só quando necessário.",
     "before": [
       { "metric": "Tempo de resposta", "value": "3h" },
       { "metric": "Resolucao 1o contato", "value": "30%" },
@@ -245,23 +245,23 @@
       { "metric": "Equipe", "value": "1" }
     ],
     "steps": [
-      "Recebe duvida tecnica",
+      "Recebe dúvida técnica",
       "Classifica complexidade",
       "Busca na base de conhecimento",
-      "Gera resposta tecnica",
+      "Gera resposta técnica",
       "Envia solucao"
     ],
     "chatMessages": [
       { "text": "A API de voces ta retornando erro 429 quando tento fazer mais de 10 requests por segundo", "sent": false, "delay": 0 },
-      { "text": "Oi! O erro 429 indica rate limiting. Pela sua descricao, voce esta no plano Starter que tem limite de 10 req/s. Voce esta usando alguma estrategia de retry com backoff exponencial?", "sent": true, "delay": 0.3 },
-      { "text": "Nao, estou fazendo as chamadas direto sem retry", "sent": false, "delay": 0.8 },
-      { "text": "Recomendo implementar retry com backoff exponencial. Aqui esta um exemplo em Python:\n\nimport time\nfor attempt in range(3):\n  try: response = requests.get(url)\n  except: time.sleep(2 ** attempt)\n\nIsso resolve a maioria dos casos. Quer que eu envie a documentacao completa?", "sent": true, "delay": 1.2 },
+      { "text": "Oi! O erro 429 indica rate limiting. Pela sua descrição, você esta no plano Starter que tem limite de 10 req/s. Você esta usando alguma estrategia de retry com backoff exponencial?", "sent": true, "delay": 0.3 },
+      { "text": "Não, estou fazendo as chamadas direto sem retry", "sent": false, "delay": 0.8 },
+      { "text": "Recomendo implementar retry com backoff exponencial. Aqui esta um exemplo em Python:\n\nimport time\nfor attempt in range(3):\n  try: response = requests.get(url)\n  except: time.sleep(2 ** attempt)\n\nIsso resolve a maioria dos casos. Quer que eu envie a documentação completa?", "sent": true, "delay": 1.2 },
       { "text": "Perfeito, era isso que eu precisava! Manda a doc sim", "sent": false, "delay": 1.8 },
-      { "text": "Enviei o link da documentacao de rate limits. Se precisar de mais throughput, o plano Pro suporta 100 req/s. Qualquer duvida, estou aqui!", "sent": true, "delay": 2.3 }
+      { "text": "Enviei o link da documentação de rate limits. Se precisar de mais throughput, o plano Pro suporta 100 req/s. Qualquer dúvida, estou aqui!", "sent": true, "delay": 2.3 }
     ]
   },
   "postSale": {
-    "name": "Pos-Venda E-commerce",
+    "name": "Pós-venda E-commerce",
     "description": "Atendimento e-commerce automatizado. Consulta status de pedido, resolve trocas/devolucoes e coleta feedback.",
     "before": [
       { "metric": "Tickets resolvidos/dia", "value": "30" },
@@ -274,8 +274,8 @@
       { "metric": "Custo por ticket", "value": "R$ 1.50" }
     ],
     "steps": [
-      "Analisa urgencia",
-      "Agente pos-venda atende",
+      "Analisa urgência",
+      "Agente pós-venda atende",
       "Consulta sistema externo",
       "Gera resposta personalizada",
       "Envia resolucao",
@@ -285,14 +285,14 @@
       { "text": "Oi, comprei um tenis tamanho 42 mas veio apertado. Quero trocar por 43", "sent": false, "delay": 0 },
       { "text": "Oi! Sem problemas, vou te ajudar com a troca. Pode me informar o numero do pedido?", "sent": true, "delay": 0.3 },
       { "text": "Pedido #78432", "sent": false, "delay": 0.8 },
-      { "text": "Encontrei! Tenis Nike Air Max, pedido de 18/02. Otima noticia: o tamanho 43 esta disponivel em estoque. Vou gerar uma etiqueta de devolucao gratuita para voce. Aceita?", "sent": true, "delay": 1.2 },
+      { "text": "Encontrei! Tenis Nike Air Max, pedido de 18/02. Otima noticia: o tamanho 43 esta disponível em estoque. Vou gerar uma etiqueta de devolucao gratuita para você. Aceita?", "sent": true, "delay": 1.2 },
       { "text": "Aceito sim! Como faco pra devolver?", "sent": false, "delay": 1.8 },
-      { "text": "Pronto! Enviei a etiqueta de devolucao por email. Basta colar na caixa e levar a qualquer agencia dos Correios. Assim que recebermos, o novo par sera enviado em ate 2 dias uteis. Posso ajudar em mais algo?", "sent": true, "delay": 2.3 }
+      { "text": "Pronto! Enviei a etiqueta de devolucao por email. Basta colar na caixa e levar a qualquer agencia dos Correios. Assim que recebermos, o novo par será enviado em até 2 dias úteis. Posso ajudar em mais algo?", "sent": true, "delay": 2.3 }
     ]
   },
   "bankingSupport": {
-    "name": "Atendimento Bancario 24/7",
-    "description": "Agente IA especialista em banking resolve consultas de saldo, extrato, bloqueio de cartao e duvidas frequentes.",
+    "name": "Atendimento Bancário 24/7",
+    "description": "Agente IA especialista em banking resolve consultas de saldo, extrato, bloqueio de cartao e dúvidas frequentes.",
     "before": [
       { "metric": "Tempo de resposta", "value": "2h" },
       { "metric": "Resolucao 1o contato", "value": "35%" },
@@ -305,64 +305,64 @@
     ],
     "steps": [
       "Classifica demanda",
-      "Define tipo de servico",
-      "Agente bancario atende",
+      "Define tipo de serviço",
+      "Agente bancário atende",
       "Dialogo continuo",
       "Atualiza cadastro"
     ],
     "chatMessages": [
       { "text": "Preciso bloquear meu cartao urgente! Acho que clonaram", "sent": false, "delay": 0 },
-      { "text": "Entendi a urgencia! Vou bloquear seu cartao imediatamente. Para sua seguranca, pode confirmar os 4 ultimos digitos do cartao?", "sent": true, "delay": 0.3 },
+      { "text": "Entendi a urgência! Vou bloquear seu cartao imediatamente. Para sua segurança, pode confirmar os 4 ultimos digitos do cartao?", "sent": true, "delay": 0.3 },
       { "text": "Final 8847", "sent": false, "delay": 0.8 },
-      { "text": "Cartao final 8847 bloqueado com sucesso! Nenhuma transacao nova sera aprovada. Identifiquei 2 compras suspeitas hoje: R$ 340 no Magazine e R$ 89 na Shopee. Reconhece essas compras?", "sent": true, "delay": 1.2 },
-      { "text": "Nao reconheco nenhuma das duas!", "sent": false, "delay": 1.8 },
-      { "text": "Certo, ja abri uma contestacao para ambas e um novo cartao sera enviado em ate 3 dias uteis no seu endereco cadastrado. Voce recebera o codigo de rastreio por aqui. Precisa de mais alguma coisa?", "sent": true, "delay": 2.3 }
+      { "text": "Cartao final 8847 bloqueado com sucesso! Nenhuma transação nova será aprovada. Identifiquei 2 compras suspeitas hoje: R$ 340 no Magazine e R$ 89 na Shopee. Reconhece essas compras?", "sent": true, "delay": 1.2 },
+      { "text": "Não reconheco nenhuma das duas!", "sent": false, "delay": 1.8 },
+      { "text": "Certo, já abri uma contestação para ambas e um novo cartao será enviado em até 3 dias úteis no seu endereço cadastrado. Você recebera o código de rastreio por aqui. Precisa de mais alguma coisa?", "sent": true, "delay": 2.3 }
     ]
   },
   "insuranceSupport": {
     "name": "Atendimento ao Segurado 24/7",
-    "description": "Status de sinistro, segunda via de boleto, duvidas sobre cobertura — tudo resolvido por IA especialista em seguros.",
+    "description": "Status de sinistro, segunda via de boleto, dúvidas sobre cobertura — tudo resolvido por IA especialista em seguros.",
     "before": [
       { "metric": "Tempo de resposta", "value": "4h" },
-      { "metric": "Resolucao autonoma", "value": "30%" },
+      { "metric": "Resolucao autônoma", "value": "30%" },
       { "metric": "Atendentes", "value": "6" }
     ],
     "after": [
       { "metric": "Tempo de resposta", "value": "10s" },
-      { "metric": "Resolucao autonoma", "value": "75%" },
+      { "metric": "Resolucao autônoma", "value": "75%" },
       { "metric": "Atendentes", "value": "1" }
     ],
     "steps": [
-      "Analisa urgencia",
+      "Analisa urgência",
       "Classifica demanda",
-      "Define tipo de servico",
+      "Define tipo de serviço",
       "Agente de seguros atende",
-      "Confirmacao e encerramento"
+      "Confirmação e encerramento"
     ],
     "chatMessages": [
       { "text": "Boa noite, quero saber como esta o andamento do meu sinistro. Protocolo 2024-11587", "sent": false, "delay": 0 },
-      { "text": "Boa noite! Consultei seu sinistro 2024-11587. Status atual: em analise pela pericia. A vistoria foi realizada em 20/02 e o laudo esta previsto para ate 28/02.", "sent": true, "delay": 0.3 },
+      { "text": "Boa noite! Consultei seu sinistro 2024-11587. Status atual: em análise pela pericia. A vistoria foi realizada em 20/02 e o laudo esta previsto para até 28/02.", "sent": true, "delay": 0.3 },
       { "text": "E a cobertura do meu plano cobre carro reserva enquanto isso?", "sent": false, "delay": 0.8 },
-      { "text": "Sim! Seu plano Premium inclui carro reserva por ate 15 dias durante o reparo. Quer que eu solicite a ativacao agora?", "sent": true, "delay": 1.2 },
+      { "text": "Sim! Seu plano Premium inclui carro reserva por até 15 dias durante o reparo. Quer que eu solicite a ativacao agora?", "sent": true, "delay": 1.2 },
       { "text": "Quero sim, por favor!", "sent": false, "delay": 1.8 },
-      { "text": "Pronto! Carro reserva solicitado. A locadora Movida vai entrar em contato em ate 2h para combinar a retirada. Enviei o voucher no seu email. Mais alguma duvida?", "sent": true, "delay": 2.3 }
+      { "text": "Pronto! Carro reserva solicitado. A locadora Movida vai entrar em contato em até 2h para combinar a retirada. Enviei o voucher no seu email. Mais alguma dúvida?", "sent": true, "delay": 2.3 }
     ]
   },
   "collections": {
-    "name": "Cobranca Inteligente",
-    "description": "Cobranca humanizada com IA que negocia. Respeita horario comercial, analisa sentimento e oferece condicoes personalizadas.",
+    "name": "Cobrança Inteligente",
+    "description": "Cobrança humanizada com IA que negocia. Respeita horário comercial, analisa sentimento e oferece condicoes personalizadas.",
     "before": [
-      { "metric": "Taxa de recuperacao", "value": "15%" },
-      { "metric": "Reclamacoes", "value": "45/mes" },
+      { "metric": "Taxa de recuperação", "value": "15%" },
+      { "metric": "Reclamações", "value": "45/mês" },
       { "metric": "Custo por contato", "value": "R$ 12" }
     ],
     "after": [
-      { "metric": "Taxa de recuperacao", "value": "42%" },
-      { "metric": "Reclamacoes", "value": "3/mes" },
+      { "metric": "Taxa de recuperação", "value": "42%" },
+      { "metric": "Reclamações", "value": "3/mês" },
       { "metric": "Custo por contato", "value": "R$ 0.50" }
     ],
     "steps": [
-      "Verifica horario comercial",
+      "Verifica horário comercial",
       "Analisa tom da conversa",
       "Agente negocia condicoes",
       "Envia lembrete",
@@ -372,57 +372,57 @@
     "chatMessages": [
       { "text": "Ola! Aqui e da empresa XYZ. Identificamos uma fatura em aberto de R$ 450,00 com vencimento em 10/02. Podemos te ajudar a regularizar?", "sent": true, "delay": 0 },
       { "text": "Oi, eu sei que to devendo mas to sem condicoes de pagar tudo agora", "sent": false, "delay": 0.3 },
-      { "text": "Entendo perfeitamente, sem preocupacao. Temos condicoes especiais: posso parcelar em ate 3x de R$ 150 sem juros, ou dar 15% de desconto para pagamento a vista (R$ 382,50). O que funciona melhor pra voce?", "sent": true, "delay": 0.8 },
+      { "text": "Entendo perfeitamente, sem preocupacao. Temos condicoes especiais: posso parcelar em até 3x de R$ 150 sem juros, ou dar 15% de desconto para pagamento a vista (R$ 382,50). O que funciona melhor pra você?", "sent": true, "delay": 0.8 },
       { "text": "O parcelamento em 3x ficaria bom pra mim", "sent": false, "delay": 1.2 },
-      { "text": "Otimo! Vou gerar os 3 boletos de R$ 150 cada, com vencimento nos dias 5 de cada mes. Primeiro boleto vence em 05/03. Confirma?", "sent": true, "delay": 1.8 },
+      { "text": "Otimo! Vou gerar os 3 boletos de R$ 150 cada, com vencimento nos dias 5 de cada mês. Primeiro boleto vence em 05/03. Confirma?", "sent": true, "delay": 1.8 },
       { "text": "Confirmo sim, obrigado pela compreensao!", "sent": false, "delay": 2.3 }
     ]
   },
   "creditOrigination": {
-    "name": "Originacao de Credito",
-    "description": "Do primeiro contato a aprovacao sem sair do WhatsApp. IA qualifica, coleta documentos, calcula custos e submete ao motor de decisao.",
+    "name": "Originação de Crédito",
+    "description": "Do primeiro contato a aprovação sem sair do WhatsApp. IA qualifica, coleta documentos, calcula custos e submete ao motor de decisão.",
     "before": [
-      { "metric": "Tempo de analise", "value": "48h" },
+      { "metric": "Tempo de análise", "value": "48h" },
       { "metric": "Taxa de desistencia", "value": "60%" },
-      { "metric": "Custo por analise", "value": "R$ 85" }
+      { "metric": "Custo por análise", "value": "R$ 85" }
     ],
     "after": [
-      { "metric": "Tempo de analise", "value": "15min" },
+      { "metric": "Tempo de análise", "value": "15min" },
       { "metric": "Taxa de desistencia", "value": "12%" },
-      { "metric": "Custo por analise", "value": "R$ 3" }
+      { "metric": "Custo por análise", "value": "R$ 3" }
     ],
     "steps": [
       "Transcreve audio do cliente",
       "Analisa documento enviado",
-      "Validacao automatica",
-      "Calculo de custos regulatorios",
-      "Motor de decisao",
+      "Validação automática",
+      "Cálculo de custos regulatorios",
+      "Motor de decisão",
       "Notifica resultado"
     ],
     "chatMessages": [
       { "text": "Oi, quero solicitar um emprestimo pessoal de R$ 15 mil", "sent": false, "delay": 0 },
-      { "text": "Ola! Vou te ajudar com isso. Para iniciar a analise, preciso de uma foto do seu RG ou CNH (frente e verso). Pode enviar aqui mesmo!", "sent": true, "delay": 0.3 },
+      { "text": "Ola! Vou te ajudar com isso. Para iniciar a análise, preciso de uma foto do seu RG ou CNH (frente e verso). Pode enviar aqui mesmo!", "sent": true, "delay": 0.3 },
       { "text": "[Enviou foto do documento]", "sent": false, "delay": 0.8 },
-      { "text": "Documento recebido e validado! CPF: ***.***.789-00. Agora preciso de um comprovante de renda recente (holerite ou extrato bancario).", "sent": true, "delay": 1.2 },
+      { "text": "Documento recebido e validado! CPF: ***.***.789-00. Agora preciso de um comprovante de renda recente (holerite ou extrato bancário).", "sent": true, "delay": 1.2 },
       { "text": "[Enviou foto do holerite]", "sent": false, "delay": 1.8 },
-      { "text": "Analise concluida! Seu credito de R$ 15.000 foi pre-aprovado em 12x de R$ 1.380 (taxa de 1,49% a.m.). Quer prosseguir com a contratacao? Vou enviar o contrato digital para assinatura.", "sent": true, "delay": 2.3 }
+      { "text": "Análise concluida! Seu crédito de R$ 15.000 foi pre-aprovado em 12x de R$ 1.380 (taxa de 1,49% a.m.). Quer prosseguir com a contratação? Vou enviar o contrato digital para assinatura.", "sent": true, "delay": 2.3 }
     ]
   },
   "creditSimulation": {
-    "name": "Simulacao de Credito",
+    "name": "Simulação de Crédito",
     "description": "Cliente simula emprestimo direto no WhatsApp. IA conversa, calcula parcelas e gera proposta personalizada.",
     "before": [
       { "metric": "Simulacoes/dia", "value": "20" },
-      { "metric": "Conversao", "value": "8%" },
+      { "metric": "Conversão", "value": "8%" },
       { "metric": "Canal", "value": "Site + telefone" }
     ],
     "after": [
       { "metric": "Simulacoes/dia", "value": "500+" },
-      { "metric": "Conversao", "value": "23%" },
+      { "metric": "Conversão", "value": "23%" },
       { "metric": "Canal", "value": "WhatsApp 24/7" }
     ],
     "steps": [
-      "Agente de simulacao atende",
+      "Agente de simulação atende",
       "Calcula parcelas",
       "Gera proposta formatada",
       "Envia proposta",
@@ -430,53 +430,53 @@
     ],
     "chatMessages": [
       { "text": "Quero simular um emprestimo, quanto ficaria R$ 20 mil?", "sent": false, "delay": 0 },
-      { "text": "Vamos simular! Qual prazo voce prefere? Temos opcoes de 12, 24, 36 ou 48 meses.", "sent": true, "delay": 0.3 },
+      { "text": "Vamos simular! Qual prazo você prefere? Temos opcoes de 12, 24, 36 ou 48 meses.", "sent": true, "delay": 0.3 },
       { "text": "Quero ver em 24 e 36 meses", "sent": false, "delay": 0.8 },
       { "text": "Aqui estao suas simulacoes para R$ 20.000:\n\n24x de R$ 985 (taxa 1,39% a.m.)\n36x de R$ 720 (taxa 1,49% a.m.)\n\nCET: 18,9% a.a. e 20,1% a.a. respectivamente. Qual te interessa mais?", "sent": true, "delay": 1.2 },
       { "text": "O de 36x fica mais confortavel no meu orcamento", "sent": false, "delay": 1.8 },
-      { "text": "Otima escolha! Gerei sua proposta personalizada de 36x de R$ 720. Quer seguir para a analise de credito? Leva menos de 5 minutos e e tudo por aqui mesmo.", "sent": true, "delay": 2.3 }
+      { "text": "Otima escolha! Gerei sua proposta personalizada de 36x de R$ 720. Quer seguir para a análise de crédito? Leva menos de 5 minutos e e tudo por aqui mesmo.", "sent": true, "delay": 2.3 }
     ]
   },
   "debtRenegotiation": {
-    "name": "Renegociacao de Dividas",
-    "description": "Agente IA negocia dividas com empatia. Gera boleto, envia link de pagamento e registra acordo — humanizado e em escala.",
+    "name": "Renegociação de Dívidas",
+    "description": "Agente IA negocia dívidas com empatia. Gera boleto, envia link de pagamento e registra acordo — humanizado e em escala.",
     "before": [
-      { "metric": "Taxa de recuperacao", "value": "15%" },
+      { "metric": "Taxa de recuperação", "value": "15%" },
       { "metric": "Custo por contato", "value": "R$ 12" },
-      { "metric": "Reclamacoes", "value": "45/mes" }
+      { "metric": "Reclamações", "value": "45/mês" }
     ],
     "after": [
-      { "metric": "Taxa de recuperacao", "value": "42%" },
+      { "metric": "Taxa de recuperação", "value": "42%" },
       { "metric": "Custo por contato", "value": "R$ 0.50" },
-      { "metric": "Reclamacoes", "value": "3/mes" }
+      { "metric": "Reclamações", "value": "3/mês" }
     ],
     "steps": [
-      "Verifica horario comercial",
+      "Verifica horário comercial",
       "Analisa tom da conversa",
       "Agente negocia",
       "Aguarda resposta",
       "Envia link de pagamento"
     ],
     "chatMessages": [
-      { "text": "Oi, recebi uma mensagem sobre uma divida. Quero resolver mas ta muito dificil", "sent": false, "delay": 0 },
-      { "text": "Ola! Fico feliz que quer resolver. Encontrei uma divida de R$ 2.800 (contrato #4521). Entendo que o momento pode ser dificil. Preparei opcoes especiais pra te ajudar:", "sent": true, "delay": 0.3 },
+      { "text": "Oi, recebi uma mensagem sobre uma dívida. Quero resolver mas ta muito dificil", "sent": false, "delay": 0 },
+      { "text": "Ola! Fico feliz que quer resolver. Encontrei uma dívida de R$ 2.800 (contrato #4521). Entendo que o momento pode ser dificil. Preparei opcoes especiais pra te ajudar:", "sent": true, "delay": 0.3 },
       { "text": "Quais as opcoes?", "sent": false, "delay": 0.8 },
       { "text": "Temos 3 opcoes:\n1. A vista com 40% de desconto: R$ 1.680\n2. 6x de R$ 520 (sem juros)\n3. 12x de R$ 280 (juros reduzidos)\n\nQual se encaixa melhor na sua realidade?", "sent": true, "delay": 1.2 },
       { "text": "Consigo pagar a vista com o desconto de 40%!", "sent": false, "delay": 1.8 },
-      { "text": "Excelente decisao! Gerei o boleto de R$ 1.680 com vencimento em 5 dias. Aqui esta o link de pagamento: pay.link/xyz. Apos o pagamento, seu nome sera limpo em ate 5 dias uteis. Parabens por resolver!", "sent": true, "delay": 2.3 }
+      { "text": "Excelente decisão! Gerei o boleto de R$ 1.680 com vencimento em 5 dias. Aqui esta o link de pagamento: pay.link/xyz. Após o pagamento, seu nome será limpo em até 5 dias úteis. Parabens por resolver!", "sent": true, "delay": 2.3 }
     ]
   },
   "openFinanceCredit": {
-    "name": "Credito com Open Finance",
-    "description": "Analise de credito enriquecida com dados Open Finance. Consulta historico real e oferece taxa personalizada em minutos.",
+    "name": "Crédito com Open Finance",
+    "description": "Análise de crédito enriquecida com dados Open Finance. Consulta historico real e oferece taxa personalizada em minutos.",
     "before": [
-      { "metric": "Tempo de analise", "value": "48h" },
-      { "metric": "Dados disponiveis", "value": "Limitados" },
-      { "metric": "Taxa de juros", "value": "Padrao unica" }
+      { "metric": "Tempo de análise", "value": "48h" },
+      { "metric": "Dados disponíveis", "value": "Limitados" },
+      { "metric": "Taxa de juros", "value": "Padrão única" }
     ],
     "after": [
-      { "metric": "Tempo de analise", "value": "5min" },
-      { "metric": "Dados disponiveis", "value": "Enriquecidos" },
+      { "metric": "Tempo de análise", "value": "5min" },
+      { "metric": "Dados disponíveis", "value": "Enriquecidos" },
       { "metric": "Taxa de juros", "value": "Personalizada" }
     ],
     "steps": [
@@ -488,40 +488,40 @@
     ],
     "chatMessages": [
       { "text": "Vi que voces oferecem taxas melhores com Open Finance. Como funciona?", "sent": false, "delay": 0 },
-      { "text": "Oi! Com Open Finance, acessamos seu historico bancario real (com sua autorizacao) e oferecemos taxas personalizadas. Normalmente conseguimos reduzir a taxa em ate 30%. Quer conectar seus dados?", "sent": true, "delay": 0.3 },
+      { "text": "Oi! Com Open Finance, acessamos seu historico bancário real (com sua autorização) e oferecemos taxas personalizadas. Normalmente conseguimos reduzir a taxa em até 30%. Quer conectar seus dados?", "sent": true, "delay": 0.3 },
       { "text": "Quero sim! E seguro?", "sent": false, "delay": 0.8 },
-      { "text": "100% seguro! Regulamentado pelo Banco Central. Vou enviar um link para voce autorizar o compartilhamento dos dados no app do seu banco. Seus dados sao criptografados e voce pode revogar a qualquer momento.", "sent": true, "delay": 1.2 },
+      { "text": "100% seguro! Regulamentado pelo Banco Central. Vou enviar um link para você autorizar o compartilhamento dos dados no app do seu banco. Seus dados são criptografados e você pode revogar a qualquer momento.", "sent": true, "delay": 1.2 },
       { "text": "Pronto, autorizei no app do banco", "sent": false, "delay": 1.8 },
-      { "text": "Recebi seus dados! Com base no seu historico, seu score ficou acima da media. Resultado: taxa personalizada de 1,19% a.m. (contra 1,89% padrao). Para R$ 10.000 em 24x, a parcela fica R$ 490 ao inves de R$ 530. Quer prosseguir?", "sent": true, "delay": 2.3 }
+      { "text": "Recebi seus dados! Com base no seu historico, seu score ficou acima da média. Resultado: taxa personalizada de 1,19% a.m. (contra 1,89% padrão). Para R$ 10.000 em 24x, a parcela fica R$ 490 ao inves de R$ 530. Quer prosseguir?", "sent": true, "delay": 2.3 }
     ]
   },
   "insuranceQuote": {
-    "name": "Cotacao de Seguro",
-    "description": "Agente IA cota, calcula premio e fecha seguro pelo WhatsApp. Conversacional, rapido e personalizado.",
+    "name": "Cotação de Seguro",
+    "description": "Agente IA cota, calcula premio e fecha seguro pelo WhatsApp. Conversacional, rápido e personalizado.",
     "before": [
-      { "metric": "Cotacoes/dia", "value": "20" },
-      { "metric": "Conversao", "value": "8%" },
+      { "metric": "Cotações/dia", "value": "20" },
+      { "metric": "Conversão", "value": "8%" },
       { "metric": "Tempo de resposta", "value": "24h" }
     ],
     "after": [
-      { "metric": "Cotacoes/dia", "value": "500+" },
-      { "metric": "Conversao", "value": "25%" },
+      { "metric": "Cotações/dia", "value": "500+" },
+      { "metric": "Conversão", "value": "25%" },
       { "metric": "Tempo de resposta", "value": "2min" }
     ],
     "steps": [
-      "Agente de cotacao atende",
+      "Agente de cotação atende",
       "Identifica perfil do cliente",
       "Calcula premio",
-      "Envia cotacao",
+      "Envia cotação",
       "Registra lead"
     ],
     "chatMessages": [
       { "text": "Oi, quero cotar seguro pro meu carro. HB20 2023", "sent": false, "delay": 0 },
-      { "text": "Ola! Vou cotar agora pra voce. Me passa algumas informacoes: qual seu CEP e voce tem garagem em casa e no trabalho?", "sent": true, "delay": 0.3 },
+      { "text": "Ola! Vou cotar agora pra você. Me passa algumas informações: qual seu CEP e você tem garagem em casa e no trabalho?", "sent": true, "delay": 0.3 },
       { "text": "CEP 01310-100, tenho garagem nos dois lugares", "sent": false, "delay": 0.8 },
-      { "text": "Otimo! Garagem nos dois lugares ajuda no preco. Mais uma: voce e o principal condutor? E qual sua idade?", "sent": true, "delay": 1.2 },
+      { "text": "Otimo! Garagem nos dois lugares ajuda no preço. Mais uma: você e o principal condutor? E qual sua idade?", "sent": true, "delay": 1.2 },
       { "text": "Sou sim, tenho 34 anos", "sent": false, "delay": 1.8 },
-      { "text": "Pronto! Sua cotacao para o HB20 2023:\n\nPlano Basico: R$ 142/mes (roubo + colisao)\nPlano Completo: R$ 189/mes (+ vidros + carro reserva)\n\nPerfil baixo risco = desconto de 18% aplicado! Quer contratar algum dos planos?", "sent": true, "delay": 2.3 }
+      { "text": "Pronto! Sua cotação para o HB20 2023:\n\nPlano Básico: R$ 142/mês (roubo + colisao)\nPlano Completo: R$ 189/mês (+ vidros + carro reserva)\n\nPerfil baixo risco = desconto de 18% aplicado! Quer contratar algum dos planos?", "sent": true, "delay": 2.3 }
     ]
   },
   "kycOnboarding": {
@@ -540,23 +540,23 @@
     "steps": [
       "Solicita documentos",
       "Analisa documento com IA",
-      "Extracao de dados",
-      "Protecao de dados sensiveis",
+      "Extração de dados",
+      "Proteção de dados sensíveis",
       "Cadastra cliente",
       "Boas-vindas"
     ],
     "chatMessages": [
       { "text": "Oi, quero abrir minha conta. O que preciso fazer?", "sent": false, "delay": 0 },
-      { "text": "Ola! Bem-vindo! O processo e rapido e todo por aqui. Primeiro, envie uma foto do seu RG ou CNH (frente e verso). Pode tirar a foto agora mesmo!", "sent": true, "delay": 0.3 },
+      { "text": "Ola! Bem-vindo! O processo e rápido e todo por aqui. Primeiro, envie uma foto do seu RG ou CNH (frente e verso). Pode tirar a foto agora mesmo!", "sent": true, "delay": 0.3 },
       { "text": "[Enviou foto do RG frente e verso]", "sent": false, "delay": 0.8 },
-      { "text": "Documento recebido! Validando... Nome: Maria Santos, CPF verificado, documento dentro da validade. Agora preciso de uma selfie sua segurando o documento para confirmacao facial.", "sent": true, "delay": 1.2 },
+      { "text": "Documento recebido! Validando... Nome: Maria Santos, CPF verificado, documento dentro da validade. Agora preciso de uma selfie sua segurando o documento para confirmação facial.", "sent": true, "delay": 1.2 },
       { "text": "[Enviou selfie com documento]", "sent": false, "delay": 1.8 },
-      { "text": "Validacao facial aprovada! Seu cadastro foi criado com sucesso. Bem-vinda, Maria! Seu acesso ja esta liberado. Enviei um email de boas-vindas com os proximos passos.", "sent": true, "delay": 2.3 }
+      { "text": "Validação facial aprovada! Seu cadastro foi criado com sucesso. Bem-vinda, Maria! Seu acesso já esta liberado. Enviei um email de boas-vindas com os proximos passos.", "sent": true, "delay": 2.3 }
     ]
   },
   "digitalAccount": {
     "name": "Abertura de Conta Digital",
-    "description": "KYC completo pelo WhatsApp em minutos. Da foto do documento a conta ativa, tudo automatico.",
+    "description": "KYC completo pelo WhatsApp em minutos. Da foto do documento a conta ativa, tudo automático.",
     "before": [
       { "metric": "Tempo de onboarding", "value": "5 dias" },
       { "metric": "Abandono KYC", "value": "25%" },
@@ -570,59 +570,59 @@
     "steps": [
       "Solicita documentos",
       "Analisa documento com IA",
-      "Validacao automatica",
-      "Protecao de dados sensiveis",
+      "Validação automática",
+      "Proteção de dados sensíveis",
       "Cria conta",
       "Boas-vindas"
     ],
     "chatMessages": [
       { "text": "Quero abrir uma conta digital. E gratis mesmo?", "sent": false, "delay": 0 },
-      { "text": "Sim, 100% gratuita e sem tarifas de manutencao! Vamos comecar? Me envia uma foto da frente e do verso da sua CNH.", "sent": true, "delay": 0.3 },
+      { "text": "Sim, 100% gratuita e sem tarifas de manutenção! Vamos comecar? Me envia uma foto da frente e do verso da sua CNH.", "sent": true, "delay": 0.3 },
       { "text": "[Enviou fotos da CNH]", "sent": false, "delay": 0.8 },
-      { "text": "CNH validada com sucesso! Dados extraidos automaticamente. Agora me confirma: seu endereco atual e Rua das Flores, 123 - Sao Paulo/SP?", "sent": true, "delay": 1.2 },
+      { "text": "CNH validada com sucesso! Dados extraidos automaticamente. Agora me confirma: seu endereço atual e Rua das Flores, 123 - São Paulo/SP?", "sent": true, "delay": 1.2 },
       { "text": "Isso mesmo!", "sent": false, "delay": 1.8 },
-      { "text": "Conta criada com sucesso! Sua agencia e 0001, conta 987654-3. Ja pode receber Pix pelo CPF. Enviei o link pra baixar o app e criar sua senha. Bem-vindo ao banco digital!", "sent": true, "delay": 2.3 }
+      { "text": "Conta criada com sucesso! Sua agencia e 0001, conta 987654-3. Já pode receber Pix pelo CPF. Enviei o link pra baixar o app e criar sua senha. Bem-vindo ao banco digital!", "sent": true, "delay": 2.3 }
     ]
   },
   "userOnboarding": {
     "name": "Onboarding de Usuarios SaaS",
-    "description": "Guie novos usuarios pelo produto via WhatsApp. Tutoriais, duvidas e feedback — tudo conversacional.",
+    "description": "Guie novos usuarios pelo produto via WhatsApp. Tutoriais, dúvidas e feedback — tudo conversacional.",
     "before": [
       { "metric": "Ativacao", "value": "25%" },
-      { "metric": "Churn 1o mes", "value": "40%" },
+      { "metric": "Churn 1o mês", "value": "40%" },
       { "metric": "Tickets suporte", "value": "80/dia" }
     ],
     "after": [
       { "metric": "Ativacao", "value": "65%" },
-      { "metric": "Churn 1o mes", "value": "12%" },
+      { "metric": "Churn 1o mês", "value": "12%" },
       { "metric": "Tickets suporte", "value": "15/dia" }
     ],
     "steps": [
-      "Detecta novo usuario",
+      "Detecta novo usuário",
       "Mensagem de boas-vindas",
       "Envia tutorial personalizado",
       "Responde perguntas",
       "Coleta feedback"
     ],
     "chatMessages": [
-      { "text": "Oi! Bem-vindo ao TaskFlow! Sou seu assistente de onboarding. Vi que voce acabou de criar sua conta. Quer que eu te guie pelos primeiros passos?", "sent": true, "delay": 0 },
+      { "text": "Oi! Bem-vindo ao TaskFlow! Sou seu assistente de onboarding. Vi que você acabou de criar sua conta. Quer que eu te guie pelos primeiros passos?", "sent": true, "delay": 0 },
       { "text": "Oi! Quero sim, to meio perdido na plataforma", "sent": false, "delay": 0.3 },
-      { "text": "Normal! Vamos por partes. Primeiro passo: crie seu primeiro projeto. Va em \"Novo Projeto\" no menu lateral. Ja consegue ver esse botao?", "sent": true, "delay": 0.8 },
+      { "text": "Normal! Vamos por partes. Primeiro passo: crie seu primeiro projeto. Va em \"Novo Projeto\" no menu lateral. Já consegue ver esse botão?", "sent": true, "delay": 0.8 },
       { "text": "Achei! Criei o projeto \"Marketing Q1\"", "sent": false, "delay": 1.2 },
-      { "text": "Perfeito! Agora adicione sua equipe: clique em \"Convidar\" e coloque os emails dos seus colegas. Dica: voce pode importar direto do Google Workspace!", "sent": true, "delay": 1.8 },
-      { "text": "Que pratico! Ja importei o time todo. Esse app e muito mais facil do que eu imaginava", "sent": false, "delay": 2.3 }
+      { "text": "Perfeito! Agora adicione sua equipe: clique em \"Convidar\" e coloque os emails dos seus colegas. Dica: você pode importar direto do Google Workspace!", "sent": true, "delay": 1.8 },
+      { "text": "Que pratico! Já importei o time todo. Esse app e muito mais facil do que eu imaginava", "sent": false, "delay": 2.3 }
     ]
   },
   "enrollment": {
     "name": "Matricula Automatizada",
     "description": "Captacao e matricula 100% pelo WhatsApp. Apresenta cursos, coleta dados e envia link de matricula.",
     "before": [
-      { "metric": "Matriculas/mes", "value": "40" },
+      { "metric": "Matriculas/mês", "value": "40" },
       { "metric": "Custo por matricula", "value": "R$ 120" },
       { "metric": "Tempo de resposta", "value": "6h" }
     ],
     "after": [
-      { "metric": "Matriculas/mes", "value": "150+" },
+      { "metric": "Matriculas/mês", "value": "150+" },
       { "metric": "Custo por matricula", "value": "R$ 8" },
       { "metric": "Tempo de resposta", "value": "15s" }
     ],
@@ -634,55 +634,55 @@
       "Envia proposta"
     ],
     "chatMessages": [
-      { "text": "Oi, quero informacoes sobre cursos de programacao", "sent": false, "delay": 0 },
-      { "text": "Ola! Temos otimas opcoes! Voce tem interesse em qual area?\n\n1. Desenvolvimento Web (6 meses)\n2. Ciencia de Dados (8 meses)\n3. Mobile com React Native (4 meses)\n4. DevOps e Cloud (5 meses)", "sent": true, "delay": 0.3 },
-      { "text": "Desenvolvimento Web! Quanto custa e quando comeca?", "sent": false, "delay": 0.8 },
-      { "text": "O curso de Desenvolvimento Web comeca dia 10/03, aulas ao vivo de terca e quinta, 19h-21h30. Investimento: 12x de R$ 297 ou a vista com 15% de desconto (R$ 3.029). Inclui certificado e acesso vitalicio ao conteudo!", "sent": true, "delay": 1.2 },
+      { "text": "Oi, quero informações sobre cursos de programacao", "sent": false, "delay": 0 },
+      { "text": "Ola! Temos otimas opcoes! Você tem interesse em qual área?\n\n1. Desenvolvimento Web (6 meses)\n2. Ciencia de Dados (8 meses)\n3. Mobile com React Native (4 meses)\n4. DevOps e Cloud (5 meses)", "sent": true, "delay": 0.3 },
+      { "text": "Desenvolvimento Web! Quanto custa e quando começa?", "sent": false, "delay": 0.8 },
+      { "text": "O curso de Desenvolvimento Web começa dia 10/03, aulas ao vivo de terca e quinta, 19h-21h30. Investimento: 12x de R$ 297 ou a vista com 15% de desconto (R$ 3.029). Inclui certificado e acesso vitalicio ao conteúdo!", "sent": true, "delay": 1.2 },
       { "text": "Quero me matricular! Como faco?", "sent": false, "delay": 1.8 },
-      { "text": "Otimo! Enviei o link de matricula com seus dados pre-preenchidos. Basta escolher a forma de pagamento e confirmar. As vagas sao limitadas (restam 8). Qualquer duvida, estou aqui!", "sent": true, "delay": 2.3 }
+      { "text": "Otimo! Enviei o link de matricula com seus dados pre-preenchidos. Basta escolher a forma de pagamento e confirmar. As vagas são limitadas (restam 8). Qualquer dúvida, estou aqui!", "sent": true, "delay": 2.3 }
     ]
   },
   "campaigns": {
     "name": "Campanhas WhatsApp",
-    "description": "Envio em massa com personalizacao IA. Segmente sua base, crie mensagens unicas e acompanhe resultados.",
+    "description": "Envio em massa com personalização IA. Segmente sua base, crie mensagens unicas e acompanhe resultados.",
     "before": [
       { "metric": "Taxa de abertura", "value": "20% (email)" },
-      { "metric": "Conversao", "value": "2%" },
-      { "metric": "Personalizacao", "value": "Nenhuma" }
+      { "metric": "Conversão", "value": "2%" },
+      { "metric": "Personalização", "value": "Nenhuma" }
     ],
     "after": [
       { "metric": "Taxa de abertura", "value": "91% (WhatsApp)" },
-      { "metric": "Conversao", "value": "12%" },
-      { "metric": "Personalizacao", "value": "Por perfil IA" }
+      { "metric": "Conversão", "value": "12%" },
+      { "metric": "Personalização", "value": "Por perfil IA" }
     ],
     "steps": [
       "Segmenta base de contatos",
       "IA personaliza mensagem",
       "Envia campanha",
-      "Aguarda interacao",
+      "Aguarda interação",
       "Registra engajamento"
     ],
     "chatMessages": [
-      { "text": "Oi Ana! Vimos que voce adorou nossos produtos de skincare. Temos uma novidade exclusiva pra voce: lancamento da linha Vitamina C com 20% OFF so ate sexta!", "sent": true, "delay": 0 },
+      { "text": "Oi Ana! Vimos que você adorou nossos produtos de skincare. Temos uma novidade exclusiva pra você: lancamento da linha Vitamina C com 20% OFF só até sexta!", "sent": true, "delay": 0 },
       { "text": "Oi! Nossa, eu amo a linha de voces! Quais produtos estao com desconto?", "sent": false, "delay": 0.3 },
-      { "text": "Pra voce que ja comprou o serum, temos o combo perfeito:\n\nSerum Vitamina C + Protetor Solar = R$ 119 (de R$ 149)\nKit Completo (serum + hidratante + protetor) = R$ 189 (de R$ 249)\n\nFrete gratis acima de R$ 150!", "sent": true, "delay": 0.8 },
+      { "text": "Pra você que já comprou o serum, temos o combo perfeito:\n\nSerum Vitamina C + Protetor Solar = R$ 119 (de R$ 149)\nKit Completo (serum + hidratante + protetor) = R$ 189 (de R$ 249)\n\nFrete gratis acima de R$ 150!", "sent": true, "delay": 0.8 },
       { "text": "Quero o kit completo!", "sent": false, "delay": 1.2 },
-      { "text": "Excelente escolha! Aqui esta seu link exclusivo com o desconto ja aplicado. Frete gratis e entrega em ate 3 dias uteis pra sua regiao.", "sent": true, "delay": 1.8 },
+      { "text": "Excelente escolha! Aqui esta seu link exclusivo com o desconto já aplicado. Frete gratis e entrega em até 3 dias úteis pra sua regiao.", "sent": true, "delay": 1.8 },
       { "text": "Comprei! Obrigada pela dica!", "sent": false, "delay": 2.3 }
     ]
   },
   "cartRecovery": {
-    "name": "Recuperacao de Carrinho",
+    "name": "Recuperação de Carrinho",
     "description": "Recupere vendas perdidas com IA conversacional. Detecta carrinho abandonado, oferece cupom e facilita a compra.",
     "before": [
-      { "metric": "Recuperacao", "value": "5%" },
+      { "metric": "Recuperação", "value": "5%" },
       { "metric": "Canal", "value": "Email" },
-      { "metric": "Conversao", "value": "Baixa" }
+      { "metric": "Conversão", "value": "Baixa" }
     ],
     "after": [
-      { "metric": "Recuperacao", "value": "28%" },
+      { "metric": "Recuperação", "value": "28%" },
       { "metric": "Canal", "value": "WhatsApp" },
-      { "metric": "Conversao", "value": "3x maior" }
+      { "metric": "Conversão", "value": "3x maior" }
     ],
     "steps": [
       "Detecta carrinho abandonado",
@@ -692,11 +692,11 @@
       "Link de checkout"
     ],
     "chatMessages": [
-      { "text": "Oi Pedro! Notei que voce deixou um Notebook Dell Inspiron no carrinho. Aconteceu algum problema na hora da compra?", "sent": true, "delay": 0 },
+      { "text": "Oi Pedro! Notei que você deixou um Notebook Dell Inspiron no carrinho. Aconteceu algum problema na hora da compra?", "sent": true, "delay": 0 },
       { "text": "Oi! Na verdade achei o frete meio caro", "sent": false, "delay": 0.3 },
       { "text": "Entendo! Tenho uma boa noticia: como cliente especial, liberei frete gratis pro seu pedido. Alem disso, tenho um cupom de 5% OFF: VOLTA5. O notebook sai de R$ 3.499 por R$ 3.324!", "sent": true, "delay": 0.8 },
       { "text": "Serio? Com frete gratis e esse desconto fica otimo!", "sent": false, "delay": 1.2 },
-      { "text": "Sim! Seu carrinho ainda esta salvo. Aqui esta o link direto pro checkout com o cupom ja aplicado e frete gratis. So finalizar o pagamento!", "sent": true, "delay": 1.8 },
+      { "text": "Sim! Seu carrinho ainda esta salvo. Aqui esta o link direto pro checkout com o cupom já aplicado e frete gratis. Só finalizar o pagamento!", "sent": true, "delay": 1.8 },
       { "text": "Comprei! Valeu pelo desconto!", "sent": false, "delay": 2.3 }
     ]
   },
@@ -714,33 +714,33 @@
       { "metric": "Insights", "value": "Tempo real" }
     ],
     "steps": [
-      "Detecta interacao finalizada",
+      "Detecta interação finalizada",
       "Envia pesquisa conversacional",
       "Coleta NPS e feedback",
       "Registra dados",
       "Alerta equipe (detratores)"
     ],
     "chatMessages": [
-      { "text": "Oi Carla! Voce finalizou seu atendimento conosco. Em uma escala de 0 a 10, o quanto recomendaria nosso servico para um amigo?", "sent": true, "delay": 0 },
+      { "text": "Oi Carla! Você finalizou seu atendimento conosco. Em uma escala de 0 a 10, o quanto recomendaria nosso serviço para um amigo?", "sent": true, "delay": 0 },
       { "text": "Dou 9!", "sent": false, "delay": 0.3 },
-      { "text": "Que otimo! Ficamos muito felizes com a sua nota. O que voce mais gostou no atendimento?", "sent": true, "delay": 0.8 },
+      { "text": "Que otimo! Ficamos muito felizes com a sua nota. O que você mais gostou no atendimento?", "sent": true, "delay": 0.8 },
       { "text": "A rapidez! Antes eu esperava horas pra ser atendida, agora resolveram em minutos", "sent": false, "delay": 1.2 },
       { "text": "Incrivel saber disso! E tem algo que poderiamos melhorar?", "sent": true, "delay": 1.8 },
-      { "text": "Seria legal ter atendimento por video tambem, pra problemas mais complexos", "sent": false, "delay": 2.3 }
+      { "text": "Seria legal ter atendimento por video também, pra problemas mais complexos", "sent": false, "delay": 2.3 }
     ]
   },
   "proactiveRenewal": {
-    "name": "Renovacao Proativa",
-    "description": "Lembrete automatico 30 dias antes do vencimento. Agente IA negocia condicoes e envia link de pagamento.",
+    "name": "Renovação Proativa",
+    "description": "Lembrete automático 30 dias antes do vencimento. Agente IA negocia condicoes e envia link de pagamento.",
     "before": [
-      { "metric": "Taxa de renovacao", "value": "60%" },
+      { "metric": "Taxa de renovação", "value": "60%" },
       { "metric": "Contato", "value": "Manual" },
-      { "metric": "Personalizacao", "value": "Nenhuma" }
+      { "metric": "Personalização", "value": "Nenhuma" }
     ],
     "after": [
-      { "metric": "Taxa de renovacao", "value": "85%" },
-      { "metric": "Contato", "value": "Automatico 30d antes" },
-      { "metric": "Personalizacao", "value": "Por perfil" }
+      { "metric": "Taxa de renovação", "value": "85%" },
+      { "metric": "Contato", "value": "Automático 30d antes" },
+      { "metric": "Personalização", "value": "Por perfil" }
     ],
     "steps": [
       "30 dias antes do vencimento",
@@ -750,12 +750,12 @@
       "Link de pagamento"
     ],
     "chatMessages": [
-      { "text": "Oi Roberto! Seu seguro auto vence em 30 dias (25/03). Como voce e cliente ha 3 anos sem sinistros, preparei condicoes especiais de renovacao pra voce!", "sent": true, "delay": 0 },
-      { "text": "Oi! Quanto ficaria a renovacao?", "sent": false, "delay": 0.3 },
+      { "text": "Oi Roberto! Seu seguro auto vence em 30 dias (25/03). Como você e cliente ha 3 anos sem sinistros, preparei condicoes especiais de renovação pra você!", "sent": true, "delay": 0 },
+      { "text": "Oi! Quanto ficaria a renovação?", "sent": false, "delay": 0.3 },
       { "text": "Com seu historico excelente, consegui um desconto de 22% sobre o ano anterior:\n\nPlano atual (Completo): de R$ 2.400 por R$ 1.872/ano\nOu 12x de R$ 156 sem juros!\n\nMesmas coberturas + assistencia 24h inclusa.", "sent": true, "delay": 0.8 },
       { "text": "Boa! Ta mais barato que ano passado mesmo. Pode renovar", "sent": false, "delay": 1.2 },
-      { "text": "Perfeito! Gerei sua proposta de renovacao. Envio o link de pagamento ou prefere debito automatico como no ano anterior?", "sent": true, "delay": 1.8 },
-      { "text": "Mantem no debito automatico, mais pratico", "sent": false, "delay": 2.3 }
+      { "text": "Perfeito! Gerei sua proposta de renovação. Envio o link de pagamento ou prefere débito automático como no ano anterior?", "sent": true, "delay": 1.8 },
+      { "text": "Mantém no débito automático, mais pratico", "sent": false, "delay": 2.3 }
     ]
   },
   "claimNotification": {
@@ -774,18 +774,18 @@
     "steps": [
       "Solicita detalhes",
       "Analisa imagens",
-      "Extracao de dados",
-      "Protecao de dados sensiveis",
+      "Extração de dados",
+      "Proteção de dados sensíveis",
       "Anexa documentos",
       "Confirma abertura"
     ],
     "chatMessages": [
       { "text": "Oi, acabei de bater o carro. Preciso abrir sinistro", "sent": false, "delay": 0 },
-      { "text": "Oi! Primeiro: voce esta bem? Alguem se machucou?", "sent": true, "delay": 0.3 },
-      { "text": "Sim, estou bem. Foi so dano material, batida leve no estacionamento", "sent": false, "delay": 0.8 },
-      { "text": "Que bom que esta bem! Vou abrir o sinistro agora. Preciso que envie fotos dos danos no seu veiculo (frente, lateral e placa) e tambem o B.O. ou registro da ocorrencia, se tiver.", "sent": true, "delay": 1.2 },
+      { "text": "Oi! Primeiro: você esta bem? Alguem se machucou?", "sent": true, "delay": 0.3 },
+      { "text": "Sim, estou bem. Foi só dano material, batida leve no estacionamento", "sent": false, "delay": 0.8 },
+      { "text": "Que bom que esta bem! Vou abrir o sinistro agora. Preciso que envie fotos dos danos no seu veiculo (frente, lateral e placa) e também o B.O. ou registro da ocorrencia, se tiver.", "sent": true, "delay": 1.2 },
       { "text": "[Enviou 3 fotos do veiculo]", "sent": false, "delay": 1.8 },
-      { "text": "Fotos analisadas! Identifiquei danos no para-choque traseiro e lanterna esquerda. Sinistro aberto com sucesso! Protocolo #SIN-2024-8832. Um perito entrara em contato em ate 24h. Posso te ajudar com guincho ou carro reserva?", "sent": true, "delay": 2.3 }
+      { "text": "Fotos analisadas! Identifiquei danos no para-choque traseiro e lanterna esquerda. Sinistro aberto com sucesso! Protocolo #SIN-2024-8832. Um perito entrara em contato em até 24h. Posso te ajudar com guincho ou carro reserva?", "sent": true, "delay": 2.3 }
     ]
   },
   "digitalInspection": {
@@ -802,25 +802,25 @@
       { "metric": "Custo por vistoria", "value": "R$ 5" }
     ],
     "steps": [
-      "Instrucoes de fotos",
+      "Instruções de fotos",
       "Recebe fotos",
       "Analisa veiculo",
       "Classifica condicao",
-      "Decisao automatica",
+      "Decisão automática",
       "Resultado da vistoria"
     ],
     "chatMessages": [
       { "text": "Oi, preciso fazer a vistoria do meu carro pra ativar o seguro", "sent": false, "delay": 0 },
-      { "text": "Ola! Vamos fazer a vistoria digital, e bem rapido! Preciso de 6 fotos do seu veiculo:\n1. Frente\n2. Traseira\n3. Lateral esquerda\n4. Lateral direita\n5. Painel/hodometro\n6. Placa\n\nTire as fotos com boa iluminacao, de preferencia ao ar livre.", "sent": true, "delay": 0.3 },
+      { "text": "Ola! Vamos fazer a vistoria digital, e bem rápido! Preciso de 6 fotos do seu veiculo:\n1. Frente\n2. Traseira\n3. Lateral esquerda\n4. Lateral direita\n5. Painel/hodometro\n6. Placa\n\nTire as fotos com boa iluminacao, de preferencia ao ar livre.", "sent": true, "delay": 0.3 },
       { "text": "[Enviou 6 fotos do veiculo]", "sent": false, "delay": 0.8 },
       { "text": "Fotos recebidas! Analisando com IA... Veiculo: Honda Civic 2022, placa ABC-1234, km 32.450. Identifiquei um pequeno risco na porta traseira direita. Demais condicoes: excelentes.", "sent": true, "delay": 1.2 },
-      { "text": "Sim, esse risco ja existia quando comprei. E agora?", "sent": false, "delay": 1.8 },
-      { "text": "Sem problemas! O risco foi registrado como pre-existente. Vistoria aprovada! Seu seguro sera ativado em ate 2h. Voce recebera a apolice digital por email. Parabens pela contratacao!", "sent": true, "delay": 2.3 }
+      { "text": "Sim, esse risco já existia quando comprei. E agora?", "sent": false, "delay": 1.8 },
+      { "text": "Sem problemas! O risco foi registrado como pre-existente. Vistoria aprovada! Seu seguro será ativado em até 2h. Você recebera a apolice digital por email. Parabens pela contratação!", "sent": true, "delay": 2.3 }
     ]
   },
   "digitalMenu": {
-    "name": "Cardapio Digital e Pedidos",
-    "description": "Receba pedidos pelo WhatsApp 24/7. IA mostra cardapio, coleta pedido, calcula total e coordena entrega.",
+    "name": "Cardápio Digital e Pedidos",
+    "description": "Receba pedidos pelo WhatsApp 24/7. IA mostra cardápio, coleta pedido, calcula total e coordena entrega.",
     "before": [
       { "metric": "Pedidos/dia", "value": "40" },
       { "metric": "Erros de pedido", "value": "20%" },
@@ -833,14 +833,14 @@
     ],
     "steps": [
       "Cliente inicia pedido",
-      "Apresenta cardapio",
+      "Apresenta cardápio",
       "Coleta itens",
       "Calcula total",
       "Envia para cozinha"
     ],
     "chatMessages": [
       { "text": "Oi, quero fazer um pedido pra entrega", "sent": false, "delay": 0 },
-      { "text": "Ola! Bem-vindo ao Restaurante Sabor! Aqui esta nosso cardapio de hoje:\n\nPratos: Pizza Margherita R$39 | Hamburguer Artesanal R$32 | Salada Caesar R$28\nBebidas: Suco Natural R$12 | Refri lata R$8\nSobremesa: Petit Gateau R$22\n\nO que vai ser?", "sent": true, "delay": 0.3 },
+      { "text": "Ola! Bem-vindo ao Restaurante Sabor! Aqui esta nosso cardápio de hoje:\n\nPratos: Pizza Margherita R$39 | Hamburguer Artesanal R$32 | Salada Caesar R$28\nBebidas: Suco Natural R$12 | Refri lata R$8\nSobremesa: Petit Gateau R$22\n\nO que vai ser?", "sent": true, "delay": 0.3 },
       { "text": "Quero 2 pizzas margherita e 1 petit gateau. E 2 sucos de laranja", "sent": false, "delay": 0.8 },
       { "text": "Anotado! Seu pedido:\n2x Pizza Margherita — R$ 78\n1x Petit Gateau — R$ 22\n2x Suco Natural — R$ 24\n\nTotal: R$ 124,00\nTaxa de entrega: R$ 6,00\nTotal final: R$ 130,00\n\nConfirma?", "sent": true, "delay": 1.2 },
       { "text": "Confirmo! Pago no Pix", "sent": false, "delay": 1.8 },
@@ -863,9 +863,9 @@
     "steps": [
       "Transcreve audio",
       "Identifica dados da transferencia",
-      "Validacao automatica",
+      "Validação automática",
       "Executa transferencia",
-      "Confirma operacao"
+      "Confirma operação"
     ],
     "chatMessages": [
       { "text": "Quero mandar um Pix de 150 reais pro celular da Maria, 11 99876-5432", "sent": false, "delay": 0 },
@@ -878,7 +878,7 @@
   },
   "smartScheduling": {
     "name": "Agendamento Inteligente",
-    "description": "Encontra horarios disponiveis, agenda reunioes e envia lembretes automaticos — tudo pelo WhatsApp.",
+    "description": "Encontra horários disponíveis, agenda reuniões e envia lembretes automáticos — tudo pelo WhatsApp.",
     "before": [
       { "metric": "Agendamentos/dia", "value": "15" },
       { "metric": "No-show", "value": "40%" },
@@ -891,18 +891,18 @@
     ],
     "steps": [
       "Cliente solicita agendamento",
-      "Identifica servico desejado",
-      "Busca horarios disponiveis",
+      "Identifica serviço desejado",
+      "Busca horários disponíveis",
       "Confirma agendamento",
       "Envia lembrete"
     ],
     "chatMessages": [
-      { "text": "Oi, preciso agendar uma reuniao com o time de vendas de voces", "sent": false, "delay": 0 },
-      { "text": "Ola! Claro, vou encontrar o melhor horario. Qual sua preferencia: manha ou tarde? E tem algum dia da semana que funciona melhor?", "sent": true, "delay": 0.3 },
+      { "text": "Oi, preciso agendar uma reunião com o time de vendas de voces", "sent": false, "delay": 0 },
+      { "text": "Ola! Claro, vou encontrar o melhor horário. Qual sua preferencia: manha ou tarde? E tem algum dia da semana que funciona melhor?", "sent": true, "delay": 0.3 },
       { "text": "Prefiro terca ou quarta a tarde", "sent": false, "delay": 0.8 },
-      { "text": "Perfeito! Encontrei esses horarios disponiveis:\n\nTerca 27/02 - 14h00\nTerca 27/02 - 16h00\nQuarta 28/02 - 14h30\n\nQual prefere?", "sent": true, "delay": 1.2 },
+      { "text": "Perfeito! Encontrei esses horários disponíveis:\n\nTerca 27/02 - 14h00\nTerca 27/02 - 16h00\nQuarta 28/02 - 14h30\n\nQual prefere?", "sent": true, "delay": 1.2 },
       { "text": "Terca as 14h ta otimo", "sent": false, "delay": 1.8 },
-      { "text": "Agendado! Reuniao com o time de vendas na terca 27/02 as 14h00, duracao de 30 min. Enviei o convite com link do Google Meet pro seu email. Vou te lembrar 1h antes. Ate la!", "sent": true, "delay": 2.3 }
+      { "text": "Agendado! Reunião com o time de vendas na terca 27/02 as 14h00, duracao de 30 min. Enviei o convite com link do Google Meet pro seu email. Vou te lembrar 1h antes. Até la!", "sent": true, "delay": 2.3 }
     ]
   },
   "healthScheduling": {
@@ -919,24 +919,24 @@
       { "metric": "Recepcionistas", "value": "1" }
     ],
     "steps": [
-      "Agente de saude atende",
+      "Agente de saúde atende",
       "Identifica especialidade",
-      "Busca horarios",
+      "Busca horários",
       "Confirma agendamento",
-      "Lembrete automatico"
+      "Lembrete automático"
     ],
     "chatMessages": [
       { "text": "Oi, quero marcar uma consulta com dermatologista", "sent": false, "delay": 0 },
-      { "text": "Ola! Temos 3 dermatologistas na clinica. E sua primeira consulta conosco? E voce tem algum convenio?", "sent": true, "delay": 0.3 },
+      { "text": "Ola! Temos 3 dermatologistas na clinica. E sua primeira consulta conosco? E você tem algum convenio?", "sent": true, "delay": 0.3 },
       { "text": "Primeira vez sim. Tenho Unimed", "sent": false, "delay": 0.8 },
-      { "text": "Otimo, aceitamos Unimed! Horarios disponiveis esta semana:\n\nDra. Paula Mendes:\n- Quarta 26/02 as 09h00\n- Sexta 28/02 as 15h30\n\nDr. Ricardo Alves:\n- Quinta 27/02 as 10h00\n\nQual prefere?", "sent": true, "delay": 1.2 },
+      { "text": "Otimo, aceitamos Unimed! Horários disponíveis esta semana:\n\nDra. Paula Mendes:\n- Quarta 26/02 as 09h00\n- Sexta 28/02 as 15h30\n\nDr. Ricardo Alves:\n- Quinta 27/02 as 10h00\n\nQual prefere?", "sent": true, "delay": 1.2 },
       { "text": "Quinta as 10h com Dr. Ricardo", "sent": false, "delay": 1.8 },
-      { "text": "Consulta agendada! Dr. Ricardo Alves, quinta 27/02 as 10h00. Endereco: Rua Paulista, 1000 - sala 802. Traga documento com foto e carteirinha do convenio. Vou te lembrar na vespera. Ate la!", "sent": true, "delay": 2.3 }
+      { "text": "Consulta agendada! Dr. Ricardo Alves, quinta 27/02 as 10h00. Endereço: Rua Paulista, 1000 - sala 802. Traga documento com foto e carteirinha do convenio. Vou te lembrar na vespera. Até la!", "sent": true, "delay": 2.3 }
     ]
   },
   "notifications": {
-    "name": "Notificacoes Transacionais",
-    "description": "Lembretes de pagamento, atualizacoes de status e alertas — tudo pelo WhatsApp com 91% de abertura.",
+    "name": "Notificações Transacionais",
+    "description": "Lembretes de pagamento, atualizações de status e alertas — tudo pelo WhatsApp com 91% de abertura.",
     "before": [
       { "metric": "Taxa de abertura", "value": "20% (email)" },
       { "metric": "Engajamento", "value": "Baixo" },
@@ -950,43 +950,43 @@
     "steps": [
       "Evento transacional",
       "Personaliza mensagem",
-      "Envia notificacao",
-      "Responde se necessario",
+      "Envia notificação",
+      "Responde se necessário",
       "Registra engajamento"
     ],
     "chatMessages": [
-      { "text": "Oi Lucas! Sua fatura de R$ 289,90 vence amanha (26/02). Quer pagar agora pelo Pix? Codigo: 00020126...", "sent": true, "delay": 0 },
+      { "text": "Oi Lucas! Sua fatura de R$ 289,90 vence amanha (26/02). Quer pagar agora pelo Pix? Código: 00020126...", "sent": true, "delay": 0 },
       { "text": "Opa, quase esqueci! Vou pagar agora", "sent": false, "delay": 0.3 },
-      { "text": "Pagamento de R$ 289,90 confirmado! Obrigado, Lucas. Seu proximo vencimento e em 26/03. Quer ativar o lembrete automatico 3 dias antes?", "sent": true, "delay": 0.8 },
+      { "text": "Pagamento de R$ 289,90 confirmado! Obrigado, Lucas. Seu proximo vencimento e em 26/03. Quer ativar o lembrete automático 3 dias antes?", "sent": true, "delay": 0.8 },
       { "text": "Quero sim, sempre esqueco haha", "sent": false, "delay": 1.2 },
-      { "text": "Lembrete ativado! Voce recebera um aviso 3 dias e 1 dia antes de cada vencimento. Tambem posso enviar o codigo Pix junto pra facilitar. Deseja?", "sent": true, "delay": 1.8 },
+      { "text": "Lembrete ativado! Você recebera um aviso 3 dias e 1 dia antes de cada vencimento. Também posso enviar o código Pix junto pra facilitar. Deseja?", "sent": true, "delay": 1.8 },
       { "text": "Perfeito, manda o Pix junto sim!", "sent": false, "delay": 2.3 }
     ]
   },
   "appOriginacaoCredito": {
-    "name": "Sistema de Originacao de Credito",
-    "description": "Backend completo para originacao de credito com analise de risco automatizada, KYC integrado, assinatura digital e desembolso — tudo com audit trail e compliance LGPD nativos.",
+    "name": "Sistema de Originação de Crédito",
+    "description": "Backend completo para originação de crédito com análise de risco automatizada, KYC integrado, assinatura digital e desembolso — tudo com audit trail e compliance LGPD nativos.",
     "before": [
-      { "metric": "Tempo de aprovacao", "value": "5 dias" },
-      { "metric": "Custo por operacao", "value": "R$ 120" },
+      { "metric": "Tempo de aprovação", "value": "5 dias" },
+      { "metric": "Custo por operação", "value": "R$ 120" },
       { "metric": "Taxa de fraude", "value": "3.2%" }
     ],
     "after": [
-      { "metric": "Tempo de aprovacao", "value": "12 min" },
-      { "metric": "Custo por operacao", "value": "R$ 8" },
+      { "metric": "Tempo de aprovação", "value": "12 min" },
+      { "metric": "Custo por operação", "value": "R$ 8" },
       { "metric": "Taxa de fraude", "value": "0.1%" }
     ],
     "steps": [
-      "Recebe solicitacao via API",
+      "Recebe solicitação via API",
       "Valida identidade do solicitante",
-      "Consulta bureau de credito",
+      "Consulta bureau de crédito",
       "Analisa risco com Decision Engine",
       "Gera contrato digital",
       "Processa desembolso"
     ],
     "chatMessages": [
       { "text": "POST /api/credit/apply\n{\"cpf\": \"123.***.***-00\", \"amount\": 50000}", "sent": false, "delay": 0 },
-      { "text": "200 OK — Solicitacao recebida. Iniciando KYC automatico...", "sent": true, "delay": 0.3 },
+      { "text": "200 OK — Solicitação recebida. Iniciando KYC automático...", "sent": true, "delay": 0.3 },
       { "text": "GET /api/credit/abc123/status", "sent": false, "delay": 0.8 },
       { "text": "200 OK — Status: APPROVED\nScore: 842 | Risco: BAIXO\nContrato gerado: DOC-2024-789", "sent": true, "delay": 1.2 },
       { "text": "POST /api/contracts/DOC-2024-789/sign", "sent": false, "delay": 1.8 },
@@ -995,21 +995,21 @@
   },
   "appPortalCliente": {
     "name": "Portal do Cliente",
-    "description": "Area logada com consulta de saldo, extrato, documentos e suporte — com autenticacao SSO, criptografia e audit trail nativos.",
+    "description": "Área logada com consulta de saldo, extrato, documentos e suporte — com autenticação SSO, criptografia e audit trail nativos.",
     "before": [
-      { "metric": "Chamados no suporte", "value": "800/mes" },
+      { "metric": "Chamados no suporte", "value": "800/mês" },
       { "metric": "Tempo de consulta", "value": "Manual" },
       { "metric": "Custo de atendimento", "value": "R$ 25/chamado" }
     ],
     "after": [
-      { "metric": "Chamados no suporte", "value": "120/mes" },
+      { "metric": "Chamados no suporte", "value": "120/mês" },
       { "metric": "Tempo de consulta", "value": "Instantaneo" },
       { "metric": "Custo de atendimento", "value": "R$ 0,50" }
     ],
     "steps": [
-      "Autentica usuario via SSO",
+      "Autentica usuário via SSO",
       "Consulta saldo em tempo real",
-      "Lista transacoes recentes",
+      "Lista transações recentes",
       "Gera extrato formatado",
       "Notifica cliente"
     ],
@@ -1017,28 +1017,28 @@
       { "text": "GET /api/portal/balance\nAuthorization: Bearer eyJ...", "sent": false, "delay": 0 },
       { "text": "200 OK\n{\"balance\": \"R$ 12.450,00\",\n \"available\": \"R$ 10.200,00\"}", "sent": true, "delay": 0.3 },
       { "text": "GET /api/portal/transactions?limit=5", "sent": false, "delay": 0.8 },
-      { "text": "200 OK — 5 transacoes retornadas\nUltima: PIX R$ 350,00 (hoje 14:32)\nAudit: acesso registrado", "sent": true, "delay": 1.2 }
+      { "text": "200 OK — 5 transações retornadas\nUltima: PIX R$ 350,00 (hoje 14:32)\nAudit: acesso registrado", "sent": true, "delay": 1.2 }
     ]
   },
   "appMotorCobranca": {
-    "name": "Motor de Cobranca Automatizado",
-    "description": "Sistema de cobranca com regras de negocio configuráveis, geracao de boletos, notificacoes automaticas e audit trail completo.",
+    "name": "Motor de Cobrança Automatizado",
+    "description": "Sistema de cobrança com regras de negócio configuráveis, geração de boletos, notificações automáticas e audit trail completo.",
     "before": [
-      { "metric": "Taxa de recuperacao", "value": "22%" },
-      { "metric": "Custo de cobranca", "value": "R$ 15/acao" },
+      { "metric": "Taxa de recuperação", "value": "22%" },
+      { "metric": "Custo de cobrança", "value": "R$ 15/ação" },
       { "metric": "Tempo medio", "value": "30 dias" }
     ],
     "after": [
-      { "metric": "Taxa de recuperacao", "value": "68%" },
-      { "metric": "Custo de cobranca", "value": "R$ 0,80" },
+      { "metric": "Taxa de recuperação", "value": "68%" },
+      { "metric": "Custo de cobrança", "value": "R$ 0,80" },
       { "metric": "Tempo medio", "value": "3 dias" }
     ],
     "steps": [
       "Identifica inadimplencia",
-      "Seleciona estrategia de cobranca",
+      "Seleciona estrategia de cobrança",
       "Gera boleto atualizado",
-      "Envia cobranca multicanal",
-      "Registra acao no audit trail"
+      "Envia cobrança multicanal",
+      "Registra ação no audit trail"
     ],
     "chatMessages": [
       { "text": "POST /api/collections/trigger\n{\"batch\": \"overdue_30d\", \"strategy\": \"progressive\"}", "sent": false, "delay": 0 },
@@ -1049,23 +1049,23 @@
   },
   "appKycDigital": {
     "name": "Sistema KYC Digital",
-    "description": "Validacao de identidade completa com OCR, facematch, consulta em bureaus e audit trail — compliance LGPD nativo.",
+    "description": "Validação de identidade completa com OCR, facematch, consulta em bureaus e audit trail — compliance LGPD nativo.",
     "before": [
-      { "metric": "Tempo de validacao", "value": "2 dias" },
+      { "metric": "Tempo de validação", "value": "2 dias" },
       { "metric": "Custo por KYC", "value": "R$ 35" },
-      { "metric": "Aprovacao automatica", "value": "0%" }
+      { "metric": "Aprovação automática", "value": "0%" }
     ],
     "after": [
-      { "metric": "Tempo de validacao", "value": "45 seg" },
+      { "metric": "Tempo de validação", "value": "45 seg" },
       { "metric": "Custo por KYC", "value": "R$ 3" },
-      { "metric": "Aprovacao automatica", "value": "92%" }
+      { "metric": "Aprovação automática", "value": "92%" }
     ],
     "steps": [
       "Recebe documentos via API",
       "OCR extrai dados automaticamente",
       "Facematch biometrico",
       "Consulta bureau de dados",
-      "Registra validacao com audit trail"
+      "Registra validação com audit trail"
     ],
     "chatMessages": [
       { "text": "POST /api/kyc/verify\n{\"document\": \"base64...\", \"selfie\": \"base64...\"}", "sent": false, "delay": 0 },
@@ -1091,7 +1091,7 @@
       "Registra apolice no sistema",
       "Avalia sinistro com Decision Engine",
       "Coleta assinatura digital",
-      "Armazena documentos com seguranca",
+      "Armazena documentos com segurança",
       "Gera trilha de auditoria completa"
     ],
     "chatMessages": [
@@ -1103,7 +1103,7 @@
   },
   "appHubOnboarding": {
     "name": "Hub de Onboarding Digital",
-    "description": "Coleta de dados, validacao documental e aprovacao em etapas com integracao a sistemas internos e audit trail.",
+    "description": "Coleta de dados, validação documental e aprovação em etapas com integração a sistemas internos e audit trail.",
     "before": [
       { "metric": "Tempo de onboarding", "value": "7 dias" },
       { "metric": "Desistencia", "value": "45%" },
@@ -1130,7 +1130,7 @@
   },
   "appApiPagamentos": {
     "name": "API de Pagamentos Unificada",
-    "description": "Pix, boleto e cartao com conciliacao automatica, split de pagamentos e audit trail — tudo via uma unica API.",
+    "description": "Pix, boleto e cartao com conciliacao automática, split de pagamentos e audit trail — tudo via uma única API.",
     "before": [
       { "metric": "Integrações de pagamento", "value": "3 separadas" },
       { "metric": "Conciliacao", "value": "Manual" },
@@ -1138,26 +1138,26 @@
     ],
     "after": [
       { "metric": "Integrações de pagamento", "value": "1 API" },
-      { "metric": "Conciliacao", "value": "Automatica" },
+      { "metric": "Conciliacao", "value": "Automática" },
       { "metric": "Tempo de conciliacao", "value": "Tempo real" }
     ],
     "steps": [
       "Recebe pagamento via API",
-      "Processa transacao com provider",
-      "Concilia no razao contabil",
-      "Registra operacao no audit trail",
-      "Retorna confirmacao"
+      "Processa transação com provider",
+      "Concilia no razão contabil",
+      "Registra operação no audit trail",
+      "Retorna confirmação"
     ],
     "chatMessages": [
       { "text": "POST /api/payments/charge\n{\"method\": \"pix\", \"amount\": 1500}", "sent": false, "delay": 0 },
-      { "text": "200 OK — PIX gerado\nQR Code: disponivel\nExpiracao: 30 min\nSplit: 90% merchant, 10% platform", "sent": true, "delay": 0.3 },
+      { "text": "200 OK — PIX gerado\nQR Code: disponível\nExpiracao: 30 min\nSplit: 90% merchant, 10% platform", "sent": true, "delay": 0.3 },
       { "text": "GET /api/payments/PAY-456/status", "sent": false, "delay": 0.8 },
       { "text": "200 OK — Status: PAID\nValor: R$ 1.500,00\nConciliado: sim\nAudit trail: 4 registros", "sent": true, "delay": 1.2 }
     ]
   },
   "appAssinaturaDigital": {
     "name": "Sistema de Assinatura Digital",
-    "description": "Contratos digitais com assinatura eletronica, validade juridica, armazenamento seguro e certificacao automatica.",
+    "description": "Contratos digitais com assinatura eletronica, validade juridica, armazenamento seguro e certificação automática.",
     "before": [
       { "metric": "Tempo de assinatura", "value": "5 dias" },
       { "metric": "Contratos perdidos", "value": "15%" },
@@ -1184,15 +1184,15 @@
   },
   "appOpenFinance": {
     "name": "Hub Open Finance",
-    "description": "Conexao com Open Finance regulado pelo Bacen, analise de perfil financeiro e compliance LGPD nativo.",
+    "description": "Conexão com Open Finance regulado pelo Bacen, análise de perfil financeiro e compliance LGPD nativo.",
     "before": [
       { "metric": "Fontes de dados", "value": "1 bureau" },
-      { "metric": "Tempo de analise", "value": "3 dias" },
+      { "metric": "Tempo de análise", "value": "3 dias" },
       { "metric": "Precisao do score", "value": "72%" }
     ],
     "after": [
       { "metric": "Fontes de dados", "value": "5+ bancos" },
-      { "metric": "Tempo de analise", "value": "30 seg" },
+      { "metric": "Tempo de análise", "value": "30 seg" },
       { "metric": "Precisao do score", "value": "94%" }
     ],
     "steps": [
@@ -1200,7 +1200,7 @@
       "Obtem dados Open Finance",
       "Analisa perfil financeiro",
       "Registra consentimento LGPD",
-      "Retorna analise completa"
+      "Retorna análise completa"
     ],
     "chatMessages": [
       { "text": "POST /api/openfinance/consent\n{\"cpf\": \"123.***.***-00\", \"banks\": [\"itau\", \"bb\"]}", "sent": false, "delay": 0 },
@@ -1211,7 +1211,7 @@
   },
   "appGestaoSinistros": {
     "name": "Gestao de Sinistros Digital",
-    "description": "Registro, analise e resolucao de sinistros com OCR, Decision Engine e notificacoes automaticas.",
+    "description": "Registro, análise e resolucao de sinistros com OCR, Decision Engine e notificações automáticas.",
     "before": [
       { "metric": "Tempo de resolucao", "value": "20 dias" },
       { "metric": "Documentos extraviados", "value": "8%" },
@@ -1237,10 +1237,10 @@
     ]
   },
   "appMotorDecisao": {
-    "name": "Motor de Decisao Enterprise",
-    "description": "Engine de regras de negocio configuravel para credito, risco, pricing e compliance — com audit trail nativo.",
+    "name": "Motor de Decisão Enterprise",
+    "description": "Engine de regras de negócio configurável para crédito, risco, pricing e compliance — com audit trail nativo.",
     "before": [
-      { "metric": "Regras no codigo", "value": "200+" },
+      { "metric": "Regras no código", "value": "200+" },
       { "metric": "Tempo de mudanca", "value": "2 semanas" },
       { "metric": "Rastreabilidade", "value": "Nenhuma" }
     ],
@@ -1250,24 +1250,24 @@
       { "metric": "Rastreabilidade", "value": "100%" }
     ],
     "steps": [
-      "Recebe requisicao de decisao",
+      "Recebe requisicao de decisão",
       "Carrega regras configuradas",
-      "Executa politicas de negocio",
-      "Registra decisao no audit trail",
+      "Executa politicas de negócio",
+      "Registra decisão no audit trail",
       "Retorna resultado"
     ],
     "chatMessages": [
       { "text": "POST /api/decisions/evaluate\n{\"policy\": \"credit_approval\", \"data\": {...}}", "sent": false, "delay": 0 },
-      { "text": "200 OK — Decisao: APPROVED\nRegras avaliadas: 47\nTempo: 120ms\nScore: 842", "sent": true, "delay": 0.3 },
+      { "text": "200 OK — Decisão: APPROVED\nRegras avaliadas: 47\nTempo: 120ms\nScore: 842", "sent": true, "delay": 0.3 },
       { "text": "GET /api/decisions/audit/DEC-789", "sent": false, "delay": 0.8 },
       { "text": "200 OK — Audit trail completo\nRegras ativadas: 12\nDados considerados: 23 variaveis\nResponsavel: policy_v3.2", "sent": true, "delay": 1.2 }
     ]
   },
   "appPortalParceiros": {
     "name": "Portal de Parceiros",
-    "description": "Area logada para parceiros com dashboard, metricas, relatorios e sincronizacao de dados — com SSO e RBAC.",
+    "description": "Área logada para parceiros com dashboard, métricas, relatorios e sincronizacao de dados — com SSO e RBAC.",
     "before": [
-      { "metric": "Relatorios manuais", "value": "20h/mes" },
+      { "metric": "Relatorios manuais", "value": "20h/mês" },
       { "metric": "Atraso de dados", "value": "3 dias" },
       { "metric": "Parceiros ativos", "value": "Limitado" }
     ],
@@ -1278,60 +1278,60 @@
     ],
     "steps": [
       "Autentica parceiro via SSO",
-      "Exibe dashboard de metricas",
+      "Exibe dashboard de métricas",
       "Sincroniza dados em tempo real",
-      "Gera relatorios automaticos",
+      "Gera relatorios automáticos",
       "Registra acessos no audit trail"
     ],
     "chatMessages": [
       { "text": "GET /api/partners/dashboard\nAuthorization: Bearer eyJ...", "sent": false, "delay": 0 },
-      { "text": "200 OK — Parceiro: TechCorp\nVendas do mes: R$ 245.000\nComissao: R$ 12.250\nClientes ativos: 89", "sent": true, "delay": 0.3 },
+      { "text": "200 OK — Parceiro: TechCorp\nVendas do mês: R$ 245.000\nComissao: R$ 12.250\nClientes ativos: 89", "sent": true, "delay": 0.3 },
       { "text": "GET /api/partners/reports/monthly", "sent": false, "delay": 0.8 },
-      { "text": "200 OK — Relatorio gerado\n12 paginas | PDF disponivel\nAudit: acesso registrado", "sent": true, "delay": 1.2 }
+      { "text": "200 OK — Relatorio gerado\n12 paginas | PDF disponível\nAudit: acesso registrado", "sent": true, "delay": 1.2 }
     ]
   },
   "appComplianceLgpd": {
     "name": "Compliance LGPD Automatizado",
-    "description": "Gestao de dados pessoais, consentimento, anonimizacao e atendimento a direitos do titular — tudo automatizado.",
+    "description": "Gestao de dados pessoais, consentimento, anonimização e atendimento a direitos do titular — tudo automatizado.",
     "before": [
-      { "metric": "Solicitacoes manuais", "value": "100%" },
+      { "metric": "Solicitações manuais", "value": "100%" },
       { "metric": "Tempo de resposta", "value": "15 dias" },
       { "metric": "Risco de multa", "value": "Alto" }
     ],
     "after": [
-      { "metric": "Solicitacoes manuais", "value": "5%" },
+      { "metric": "Solicitações manuais", "value": "5%" },
       { "metric": "Tempo de resposta", "value": "24h" },
-      { "metric": "Risco de multa", "value": "Minimo" }
+      { "metric": "Risco de multa", "value": "Mínimo" }
     ],
     "steps": [
-      "Recebe solicitacao do titular",
+      "Recebe solicitação do titular",
       "Localiza dados pessoais",
       "Aplica politica LGPD",
-      "Mascara dados sensiveis",
+      "Mascara dados sensíveis",
       "Registra atendimento"
     ],
     "chatMessages": [
       { "text": "POST /api/lgpd/request\n{\"type\": \"data_export\", \"cpf\": \"123.***.***-00\"}", "sent": false, "delay": 0 },
-      { "text": "200 OK — Solicitacao LGPD-2024-456\nTipo: Exportacao de dados\nDados localizados em 4 sistemas", "sent": true, "delay": 0.3 },
+      { "text": "200 OK — Solicitação LGPD-2024-456\nTipo: Exportação de dados\nDados localizados em 4 sistemas", "sent": true, "delay": 0.3 },
       { "text": "GET /api/lgpd/LGPD-2024-456/status", "sent": false, "delay": 0.8 },
       { "text": "200 OK — Status: COMPLETED\nDados exportados: 4 fontes\nMascaramento aplicado: sim\nAudit trail: 9 registros", "sent": true, "delay": 1.2 }
     ]
   },
   "appConciliacaoFinanceira": {
-    "name": "Conciliacao Financeira Automatica",
-    "description": "Importacao, comparacao e conciliacao de transacoes financeiras com razao contabil e audit trail.",
+    "name": "Conciliacao Financeira Automática",
+    "description": "Importacao, comparacao e conciliacao de transações financeiras com razão contabil e audit trail.",
     "before": [
       { "metric": "Conciliacao manual", "value": "3 dias" },
       { "metric": "Erros identificados", "value": "12%" },
-      { "metric": "Custo operacional", "value": "R$ 8.000/mes" }
+      { "metric": "Custo operacional", "value": "R$ 8.000/mês" }
     ],
     "after": [
-      { "metric": "Conciliacao automatica", "value": "Tempo real" },
+      { "metric": "Conciliacao automática", "value": "Tempo real" },
       { "metric": "Erros identificados", "value": "0.1%" },
-      { "metric": "Custo operacional", "value": "R$ 200/mes" }
+      { "metric": "Custo operacional", "value": "R$ 200/mês" }
     ],
     "steps": [
-      "Importa transacoes de fontes externas",
+      "Importa transações de fontes externas",
       "Compara com registros internos",
       "Identifica divergencias",
       "Marca registros conciliados",
@@ -1339,27 +1339,27 @@
     ],
     "chatMessages": [
       { "text": "POST /api/reconciliation/run\n{\"source\": \"bank_feed\", \"period\": \"2024-01\"}", "sent": false, "delay": 0 },
-      { "text": "200 OK — 2.847 transacoes importadas\nConciliadas: 2.831 (99.4%)\nDivergencias: 16", "sent": true, "delay": 0.3 },
+      { "text": "200 OK — 2.847 transações importadas\nConciliadas: 2.831 (99.4%)\nDivergencias: 16", "sent": true, "delay": 0.3 },
       { "text": "GET /api/reconciliation/report/latest", "sent": false, "delay": 0.8 },
       { "text": "200 OK — Relatorio gerado\nTotal conciliado: R$ 4.2M\nPendentes: R$ 12.400\nAudit trail: 5.694 registros", "sent": true, "delay": 1.2 }
     ]
   },
   "appMarketplaceCredito": {
-    "name": "Marketplace de Credito",
-    "description": "Plataforma de comparacao de ofertas de credito com bureau, scoring, contrato digital e desembolso integrado.",
+    "name": "Marketplace de Crédito",
+    "description": "Plataforma de comparacao de ofertas de crédito com bureau, scoring, contrato digital e desembolso integrado.",
     "before": [
       { "metric": "Ofertas comparadas", "value": "1-2" },
-      { "metric": "Tempo de contratacao", "value": "7 dias" },
-      { "metric": "Conversao", "value": "8%" }
+      { "metric": "Tempo de contratação", "value": "7 dias" },
+      { "metric": "Conversão", "value": "8%" }
     ],
     "after": [
       { "metric": "Ofertas comparadas", "value": "10+" },
-      { "metric": "Tempo de contratacao", "value": "15 min" },
-      { "metric": "Conversao", "value": "34%" }
+      { "metric": "Tempo de contratação", "value": "15 min" },
+      { "metric": "Conversão", "value": "34%" }
     ],
     "steps": [
       "Cliente solicita via API",
-      "Consulta bureau de credito",
+      "Consulta bureau de crédito",
       "Compara ofertas de parceiros",
       "Gera contrato digital",
       "Processa desembolso via parceiro",
@@ -1367,7 +1367,7 @@
     ],
     "chatMessages": [
       { "text": "POST /api/marketplace/apply\n{\"amount\": 25000, \"term\": 36}", "sent": false, "delay": 0 },
-      { "text": "200 OK — Score: 798\n8 ofertas disponiveis\nMelhor taxa: 1.49% a.m.\nParcela: R$ 892", "sent": true, "delay": 0.3 },
+      { "text": "200 OK — Score: 798\n8 ofertas disponíveis\nMelhor taxa: 1.49% a.m.\nParcela: R$ 892", "sent": true, "delay": 0.3 },
       { "text": "POST /api/marketplace/accept/OFFER-123", "sent": false, "delay": 0.8 },
       { "text": "200 OK — Oferta aceita\nContrato gerado e assinado\nDesembolso em 24h\nAudit trail: 18 registros", "sent": true, "delay": 1.2 }
     ]

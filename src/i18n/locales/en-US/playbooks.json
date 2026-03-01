@@ -89,12 +89,12 @@
     "description": "Qualifies leads 24/7 on WhatsApp, collects information, classifies by priority and schedules meetings with sales reps.",
     "before": [
       { "metric": "Qualified leads/day", "value": "15" },
-      { "metric": "Cost per lead", "value": "R$ 45" },
+      { "metric": "Cost per lead", "value": "$45" },
       { "metric": "Response time", "value": "4h" }
     ],
     "after": [
       { "metric": "Qualified leads/day", "value": "200+" },
-      { "metric": "Cost per lead", "value": "R$ 2" },
+      { "metric": "Cost per lead", "value": "$2" },
       { "metric": "Response time", "value": "10s" }
     ],
     "steps": [
@@ -266,12 +266,12 @@
     "before": [
       { "metric": "Tickets resolved/day", "value": "30" },
       { "metric": "NPS", "value": "42" },
-      { "metric": "Cost per ticket", "value": "R$ 18" }
+      { "metric": "Cost per ticket", "value": "$18" }
     ],
     "after": [
       { "metric": "Tickets resolved/day", "value": "300+" },
       { "metric": "NPS", "value": "78" },
-      { "metric": "Cost per ticket", "value": "R$ 1.50" }
+      { "metric": "Cost per ticket", "value": "$1.50" }
     ],
     "steps": [
       "Analyzes urgency",
@@ -321,7 +321,7 @@
   },
   "insuranceSupport": {
     "name": "Insurance Support 24/7",
-    "description": "Claim status, duplicate bills, coverage questions -- all resolved by AI specialist in insurance.",
+    "description": "Claim status, duplicate bills, coverage questions -- all resolved by an AI specialist in insurance.",
     "before": [
       { "metric": "Response time", "value": "4h" },
       { "metric": "Autonomous resolution", "value": "30%" },
@@ -354,12 +354,12 @@
     "before": [
       { "metric": "Recovery rate", "value": "15%" },
       { "metric": "Complaints", "value": "45/mo" },
-      { "metric": "Cost per contact", "value": "R$ 12" }
+      { "metric": "Cost per contact", "value": "$12" }
     ],
     "after": [
       { "metric": "Recovery rate", "value": "42%" },
       { "metric": "Complaints", "value": "3/mo" },
-      { "metric": "Cost per contact", "value": "R$ 0.50" }
+      { "metric": "Cost per contact", "value": "$0.50" }
     ],
     "steps": [
       "Checks business hours",
@@ -384,12 +384,12 @@
     "before": [
       { "metric": "Analysis time", "value": "48h" },
       { "metric": "Drop-off rate", "value": "60%" },
-      { "metric": "Cost per analysis", "value": "R$ 85" }
+      { "metric": "Cost per analysis", "value": "$85" }
     ],
     "after": [
       { "metric": "Analysis time", "value": "15min" },
       { "metric": "Drop-off rate", "value": "12%" },
-      { "metric": "Cost per analysis", "value": "R$ 3" }
+      { "metric": "Cost per analysis", "value": "$3" }
     ],
     "steps": [
       "Transcribes customer audio",
@@ -442,12 +442,12 @@
     "description": "AI agent negotiates debts with empathy. Generates payment slip, sends payment link and records agreement -- humanized at scale.",
     "before": [
       { "metric": "Recovery rate", "value": "15%" },
-      { "metric": "Cost per contact", "value": "R$ 12" },
+      { "metric": "Cost per contact", "value": "$12" },
       { "metric": "Complaints", "value": "45/mo" }
     ],
     "after": [
       { "metric": "Recovery rate", "value": "42%" },
-      { "metric": "Cost per contact", "value": "R$ 0.50" },
+      { "metric": "Cost per contact", "value": "$0.50" },
       { "metric": "Complaints", "value": "3/mo" }
     ],
     "steps": [
@@ -560,12 +560,12 @@
     "before": [
       { "metric": "Onboarding time", "value": "5 days" },
       { "metric": "KYC drop-off", "value": "25%" },
-      { "metric": "Cost per opening", "value": "R$ 85" }
+      { "metric": "Cost per opening", "value": "$85" }
     ],
     "after": [
       { "metric": "Onboarding time", "value": "20min" },
       { "metric": "KYC drop-off", "value": "5%" },
-      { "metric": "Cost per opening", "value": "R$ 4" }
+      { "metric": "Cost per opening", "value": "$4" }
     ],
     "steps": [
       "Requests documents",
@@ -618,12 +618,12 @@
     "description": "Student capture and enrollment 100% on WhatsApp. Presents courses, collects data and sends enrollment link.",
     "before": [
       { "metric": "Enrollments/mo", "value": "40" },
-      { "metric": "Cost per enrollment", "value": "R$ 120" },
+      { "metric": "Cost per enrollment", "value": "$120" },
       { "metric": "Response time", "value": "6h" }
     ],
     "after": [
       { "metric": "Enrollments/mo", "value": "150+" },
-      { "metric": "Cost per enrollment", "value": "R$ 8" },
+      { "metric": "Cost per enrollment", "value": "$8" },
       { "metric": "Response time", "value": "15s" }
     ],
     "steps": [
@@ -764,12 +764,12 @@
     "before": [
       { "metric": "Process time", "value": "5 days" },
       { "metric": "Incomplete docs", "value": "40%" },
-      { "metric": "Cost per claim", "value": "R$ 120" }
+      { "metric": "Cost per claim", "value": "$120" }
     ],
     "after": [
       { "metric": "Process time", "value": "10min" },
       { "metric": "Incomplete docs", "value": "0%" },
-      { "metric": "Cost per claim", "value": "R$ 8" }
+      { "metric": "Cost per claim", "value": "$8" }
     ],
     "steps": [
       "Requests details",
@@ -794,12 +794,12 @@
     "before": [
       { "metric": "Inspection time", "value": "3 days" },
       { "metric": "Method", "value": "In-person" },
-      { "metric": "Cost per inspection", "value": "R$ 150" }
+      { "metric": "Cost per inspection", "value": "$150" }
     ],
     "after": [
       { "metric": "Inspection time", "value": "15min" },
       { "metric": "Method", "value": "AI self-service" },
-      { "metric": "Cost per inspection", "value": "R$ 5" }
+      { "metric": "Cost per inspection", "value": "$5" }
     ],
     "steps": [
       "Photo instructions",

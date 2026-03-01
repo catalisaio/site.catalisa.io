@@ -2,9 +2,11 @@ import { useEffect, useState } from 'react';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import {
   Flex, Box, Heading, Text, Spinner, SimpleGrid, Card, CardBody, Badge,
-  Button, VStack,
+  Button, VStack, Icon,
 } from '@chakra-ui/react';
-import { FiMessageCircle } from 'react-icons/fi';
+import { FiClock, FiMessageCircle, FiArrowRight } from 'react-icons/fi';
+import { MotionBox } from '../components/motion';
+import { GradientText } from '../components/shared/GradientText';
 import {
   validateInvite, incrementUses,
   type PresentationInvite,
@@ -32,56 +34,104 @@ function ExpiredLinkPage() {
   );
 
   return (
-    <Flex minH="100vh" align="center" justify="center" bg="gray.900" p={8}>
-      <Box textAlign="center" maxW="520px">
-        <Text fontSize="4xl" mb={4}>
-          ⏰
-        </Text>
-        <Heading size="xl" color="white" mb={3}>
-          Esse link já cumpriu sua missão
-        </Heading>
-        <Text color="gray.400" fontSize="lg" mb={2}>
-          O convite que você recebeu expirou ou atingiu o limite de acessos.
-        </Text>
-        <Text color="gray.500" fontSize="md" mb={8}>
-          Sem problemas — boas conversas não têm prazo de validade.
-        </Text>
-        <VStack spacing={4}>
-          <Button
-            as="a"
-            href={`https://wa.me/5511977303414?text=${whatsappMsg}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            colorScheme="whatsapp"
-            size="lg"
-            leftIcon={<FiMessageCircle />}
-            px={8}
+    <Flex minH="100vh" align="center" justify="center" bg="#0A0F14" p={8} position="relative" overflow="hidden">
+      {/* Radial gradient atmosphere */}
+      <Box
+        position="absolute"
+        top="30%"
+        left="50%"
+        transform="translate(-50%, -50%)"
+        w="600px"
+        h="600px"
+        bgGradient="radial(circle, rgba(115, 75, 156, 0.15) 0%, transparent 70%)"
+        pointerEvents="none"
+      />
+      <Box
+        position="absolute"
+        bottom="20%"
+        right="30%"
+        w="400px"
+        h="400px"
+        bgGradient="radial(circle, rgba(253, 194, 52, 0.05) 0%, transparent 60%)"
+        pointerEvents="none"
+      />
+
+      <Box textAlign="center" maxW="520px" position="relative" zIndex={1}>
+        <MotionBox initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }}>
+          <Flex
+            w="64px"
+            h="64px"
+            borderRadius="full"
+            bg="whiteAlpha.100"
+            align="center"
+            justify="center"
+            mx="auto"
+            mb={6}
           >
-            Solicitar novo acesso
-          </Button>
-          <Button
-            as="a"
-            href={`https://wa.me/5511930802555?text=${ceoMsg}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            variant="outline"
-            colorScheme="whiteAlpha"
-            size="sm"
-            leftIcon={<FiMessageCircle />}
-          >
-            Ou fale direto com nosso CEO
-          </Button>
-          <Button
-            as="a"
-            href="https://catalisa.io"
-            variant="ghost"
-            color="gray.500"
-            size="sm"
-            _hover={{ color: 'gray.300' }}
-          >
-            Conhecer a Catalisa
-          </Button>
-        </VStack>
+            <Icon as={FiClock} boxSize={6} color="catalisa.secondary" />
+          </Flex>
+        </MotionBox>
+
+        <MotionBox initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.1 }}>
+          <Heading size="xl" color="white" mb={3} fontWeight="800">
+            Esse link já cumpriu sua{' '}
+            <GradientText fontSize="inherit" fontWeight="inherit">missão</GradientText>
+          </Heading>
+        </MotionBox>
+
+        <MotionBox initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }}>
+          <Text color="whiteAlpha.700" fontSize="lg" mb={2}>
+            O convite que você recebeu expirou ou atingiu o limite de acessos.
+          </Text>
+          <Text color="whiteAlpha.500" fontSize="md" mb={8}>
+            Sem problemas — boas conversas não têm prazo de validade.
+          </Text>
+        </MotionBox>
+
+        <MotionBox initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.35 }}>
+          <VStack spacing={4}>
+            <Button
+              as="a"
+              href={`https://wa.me/5511977303414?text=${whatsappMsg}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              colorScheme="whatsapp"
+              size="lg"
+              leftIcon={<FiMessageCircle />}
+              px={8}
+              _hover={{ transform: 'translateY(-2px)', shadow: 'lg' }}
+              transition="all 0.2s"
+            >
+              Solicitar novo acesso
+            </Button>
+            <Button
+              as="a"
+              href={`https://wa.me/5511930802555?text=${ceoMsg}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              variant="outline"
+              borderColor="whiteAlpha.200"
+              color="whiteAlpha.700"
+              size="sm"
+              leftIcon={<FiMessageCircle />}
+              _hover={{ borderColor: 'whiteAlpha.400', color: 'white', transform: 'translateY(-1px)' }}
+              transition="all 0.2s"
+            >
+              Ou fale direto com nosso CEO
+            </Button>
+            <Button
+              as="a"
+              href="https://catalisa.io"
+              variant="ghost"
+              color="whiteAlpha.400"
+              size="sm"
+              rightIcon={<FiArrowRight />}
+              _hover={{ color: 'whiteAlpha.700' }}
+            >
+              Conhecer a Catalisa
+            </Button>
+          </VStack>
+        </MotionBox>
       </Box>
     </Flex>
   );
@@ -109,7 +159,6 @@ export function PresentationInvite() {
       const validDecks = allowedKeys.filter(k => k in DECK_META);
 
       if (validDecks.length === 1) {
-        // Single deck — go directly
         const deck = validDecks[0];
         initTrackingSession({
           inviteCode: code,
@@ -121,7 +170,6 @@ export function PresentationInvite() {
         navigate(DECK_META[deck].path, { replace: true });
       } else {
         setStatus('valid');
-        // Init tracking without specific deck yet
         initTrackingSession({
           inviteCode: code,
           recipientName: inv.recipient_name,
@@ -148,8 +196,8 @@ export function PresentationInvite() {
   // Loading state
   if (status === 'loading') {
     return (
-      <Flex minH="100vh" align="center" justify="center" bg="gray.900">
-        <Spinner color="purple.400" size="lg" />
+      <Flex minH="100vh" align="center" justify="center" bg="#0A0F14">
+        <Spinner color="brand.400" size="lg" />
       </Flex>
     );
   }
@@ -164,32 +212,59 @@ export function PresentationInvite() {
   const validDecks = allowedKeys.filter(k => k in DECK_META);
 
   return (
-    <Flex minH="100vh" align="center" justify="center" bg="gray.900" p={8}>
-      <Box maxW="600px" w="full" textAlign="center">
-        <Heading size="lg" color="white" mb={2}>
-          Olá, {invite!.recipient_name}!
-        </Heading>
-        <Text color="gray.400" mb={8}>
-          Selecione a apresentação que deseja assistir:
-        </Text>
+    <Flex minH="100vh" align="center" justify="center" bg="#0A0F14" p={8} position="relative" overflow="hidden">
+      {/* Radial gradient atmosphere */}
+      <Box
+        position="absolute"
+        top="20%"
+        left="50%"
+        transform="translate(-50%, -50%)"
+        w="600px"
+        h="600px"
+        bgGradient="radial(circle, rgba(115, 75, 156, 0.12) 0%, transparent 70%)"
+        pointerEvents="none"
+      />
+
+      <Box maxW="600px" w="full" textAlign="center" position="relative" zIndex={1}>
+        <MotionBox initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
+          <Heading size="lg" color="white" mb={2} fontWeight="800">
+            Olá, <GradientText fontSize="inherit" fontWeight="inherit">{invite!.recipient_name}</GradientText>
+          </Heading>
+          <Text color="whiteAlpha.600" mb={8}>
+            Selecione a apresentação que deseja assistir:
+          </Text>
+        </MotionBox>
 
         <SimpleGrid columns={{ base: 1, sm: 2 }} spacing={4}>
-          {validDecks.map(key => {
+          {validDecks.map((key, i) => {
             const meta = DECK_META[key];
             return (
-              <Card
+              <MotionBox
                 key={key}
-                bg="gray.800"
-                cursor="pointer"
-                _hover={{ bg: 'gray.700', transform: 'translateY(-2px)' }}
-                transition="all 0.2s"
-                onClick={() => handleSelectDeck(key)}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.15 + i * 0.1 }}
               >
-                <CardBody textAlign="center" py={8}>
-                  <Badge colorScheme={meta.color} fontSize="md" mb={2}>{meta.label}</Badge>
-                  <Text color="gray.400" fontSize="sm">Ver apresentação</Text>
-                </CardBody>
-              </Card>
+                <Card
+                  bg="whiteAlpha.50"
+                  border="1px solid"
+                  borderColor="whiteAlpha.100"
+                  cursor="pointer"
+                  _hover={{
+                    bg: 'whiteAlpha.100',
+                    borderColor: `${meta.color}.500`,
+                    transform: 'translateY(-2px)',
+                    shadow: 'lg',
+                  }}
+                  transition="all 0.2s"
+                  onClick={() => handleSelectDeck(key)}
+                >
+                  <CardBody textAlign="center" py={8}>
+                    <Badge colorScheme={meta.color} fontSize="md" mb={2}>{meta.label}</Badge>
+                    <Text color="whiteAlpha.500" fontSize="sm">Ver apresentação</Text>
+                  </CardBody>
+                </Card>
+              </MotionBox>
             );
           })}
         </SimpleGrid>

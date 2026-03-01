@@ -72,8 +72,8 @@ export function CookieConsent() {
       <Box maxW="7xl" mx="auto" display={{ md: 'flex' }} alignItems="center" gap={4}>
         <Text fontSize="sm" flex={1} mb={{ base: 3, md: 0 }}>
           {isEn
-            ? 'We use cookies for analytics to improve your experience. By clicking "Accept", you consent to the use of cookies in accordance with our '
-            : 'Usamos cookies de analytics para melhorar sua experiencia. Ao clicar em "Aceitar", voce consente com o uso de cookies conforme nossa '}
+            ? 'We use cookies for analytics and load external resources (images) to improve your experience. By clicking "Accept", you consent to the use of cookies and third-party resources in accordance with our '
+            : 'Usamos cookies de analytics e carregamos recursos externos (imagens) para melhorar sua experiencia. Ao clicar em "Aceitar", voce consente com o uso de cookies e recursos de terceiros conforme nossa '}
           <Link href={lp('/politica-privacidade')} textDecoration="underline">
             {isEn ? 'Privacy Policy' : 'Politica de Privacidade'}
           </Link>

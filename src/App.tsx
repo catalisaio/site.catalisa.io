@@ -36,6 +36,7 @@ const Apps = lazy(() => import('./pages/Apps').then(m => ({ default: m.Apps })))
 const AIAgentsWhatsApp = lazy(() => import('./pages/AIAgentsWhatsApp').then(m => ({ default: m.AIAgentsWhatsApp })));
 const PlaybookDetail = lazy(() => import('./pages/PlaybookDetail').then(m => ({ default: m.PlaybookDetail })));
 const InsightsListing = lazy(() => import('./pages/InsightsListing').then(m => ({ default: m.InsightsListing })));
+const InsightsListingMagazine = lazy(() => import('./pages/InsightsListingMagazine').then(m => ({ default: m.InsightsListingMagazine })));
 const InsightArticle = lazy(() => import('./pages/InsightArticle').then(m => ({ default: m.InsightArticle })));
 const PresentationMenu = lazy(() => import('./pages/PresentationMenu').then(m => ({ default: m.PresentationMenu })));
 const PresentationInvite = lazy(() => import('./pages/PresentationInvite').then(m => ({ default: m.PresentationInvite })));
@@ -127,6 +128,7 @@ function App() {
                 <Route path="/agentes-ia-whatsapp" element={<AIAgentsWhatsApp />} />
                 <Route path="/press-kit" element={<PressKit />} />
                 <Route path="/insights" element={<InsightsListing />} />
+                <Route path="/insights/magazine" element={<InsightsListingMagazine />} />
                 <Route path="/insights/:slug" element={<InsightArticle />} />
               </Route>
 
@@ -156,6 +158,7 @@ function App() {
                 <Route path="ai-agents-whatsapp" element={<AIAgentsWhatsApp />} />
                 <Route path="press-kit" element={<PressKit />} />
                 <Route path="insights" element={<InsightsListing />} />
+                <Route path="insights/magazine" element={<InsightsListingMagazine />} />
                 <Route path="insights/:slug" element={<InsightArticle />} />
               </Route>
 

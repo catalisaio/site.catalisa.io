@@ -220,6 +220,16 @@ export const routes: RouteDefinition[] = [
     breadcrumbCategory: 'insights',
   },
   {
+    ptPath: '/insights/magazine',
+    enPath: '/en/insights/magazine',
+    pageKey: 'insightsMagazine',
+    priority: 0.8,
+    changefreq: 'weekly',
+    schemas: ['Organization', 'BreadcrumbList', 'CollectionPage'],
+    ogImage: '/og/default.png',
+    breadcrumbCategory: 'insights',
+  },
+  {
     ptPath: '/apresentacao/comercial',
     enPath: '/en/presentation/commercial',
     pageKey: 'presentation',

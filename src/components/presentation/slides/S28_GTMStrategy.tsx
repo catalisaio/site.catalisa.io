@@ -7,12 +7,14 @@ import { usePresentationColors } from '../PresentationThemeContext';
 export function S28_GTMStrategy() {
   const { t } = useTranslation('presentation');
   const c = usePresentationColors();
-  const columns = t('gtmStrategy.columns', { returnObjects: true }) as Array<{
+  const colsRaw = t('gtmStrategy.columns', { returnObjects: true });
+  const columns = (Array.isArray(colsRaw) ? colsRaw : []) as Array<{
     title: string;
     steps: string[];
     highlights: string[];
   }>;
-  const stats = t('gtmStrategy.stats', { returnObjects: true }) as Array<{
+  const statsRaw = t('gtmStrategy.stats', { returnObjects: true });
+  const stats = (Array.isArray(statsRaw) ? statsRaw : []) as Array<{
     value: string;
     label: string;
   }>;

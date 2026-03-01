@@ -7,7 +7,8 @@ import { usePresentationColors } from '../PresentationThemeContext';
 export function S29_CompetitiveMoat() {
   const { t } = useTranslation('presentation');
   const c = usePresentationColors();
-  const layers = t('competitiveMoat.layers', { returnObjects: true }) as Array<{
+  const layersRaw = t('competitiveMoat.layers', { returnObjects: true });
+  const layers = (Array.isArray(layersRaw) ? layersRaw : []) as Array<{
     title: string;
     description: string;
   }>;

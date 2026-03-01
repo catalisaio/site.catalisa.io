@@ -7,13 +7,15 @@ import { usePresentationColors } from '../PresentationThemeContext';
 export function S26_TAMSizingFunnel() {
   const { t } = useTranslation('presentation');
   const c = usePresentationColors();
-  const tiers = t('tamSizingFunnel.tiers', { returnObjects: true }) as Array<{
+  const tiersRaw = t('tamSizingFunnel.tiers', { returnObjects: true });
+  const tiers = (Array.isArray(tiersRaw) ? tiersRaw : []) as Array<{
     label: string;
     value: string;
     description: string;
     source: string;
   }>;
-  const proofPoints = t('tamSizingFunnel.proofPoints', { returnObjects: true }) as Array<{
+  const ppRaw = t('tamSizingFunnel.proofPoints', { returnObjects: true });
+  const proofPoints = (Array.isArray(ppRaw) ? ppRaw : []) as Array<{
     value: string;
     label: string;
   }>;

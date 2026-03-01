@@ -7,7 +7,8 @@ import { usePresentationColors } from '../PresentationThemeContext';
 export function S27_ForresterROI() {
   const { t } = useTranslation('presentation');
   const c = usePresentationColors();
-  const metrics = t('forresterROI.metrics', { returnObjects: true }) as Array<{
+  const metricsRaw = t('forresterROI.metrics', { returnObjects: true });
+  const metrics = (Array.isArray(metricsRaw) ? metricsRaw : []) as Array<{
     value: string;
     label: string;
     detail: string;

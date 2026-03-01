@@ -24,7 +24,9 @@ export function initTrackingSession(opts: {
   _recipientName = opts.recipientName ?? null;
   _recipientCompany = opts.recipientCompany ?? null;
   _deck = opts.deck;
-  _sessionId = crypto.randomUUID();
+  _sessionId = typeof crypto?.randomUUID === 'function'
+    ? crypto.randomUUID()
+    : `${Date.now()}-${Math.random().toString(36).slice(2, 10)}`;
 
   // Clarity: identify session
   if (window.clarity && _inviteCode) {

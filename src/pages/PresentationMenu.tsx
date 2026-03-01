@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import {
   Box, Flex, Heading, Text, Button, Input, VStack, HStack,
   SimpleGrid, Badge, IconButton, useToast, Table, Thead,
@@ -422,6 +422,7 @@ function Dashboard({ onSignOut }: { onSignOut: () => void }) {
   const [invites, setInvites] = useState<PresentationInvite[]>([]);
   const [loadingInvites, setLoadingInvites] = useState(true);
   const [eventsCode, setEventsCode] = useState<string | null>(null);
+  const eventsPanelRef = useRef<HTMLDivElement>(null);
 
   const loadInvites = useCallback(async () => {
     setLoadingInvites(true);
@@ -432,13 +433,21 @@ function Dashboard({ onSignOut }: { onSignOut: () => void }) {
 
   useEffect(() => { loadInvites(); }, [loadInvites]);
 
+  useEffect(() => {
+    if (eventsCode && eventsPanelRef.current) {
+      eventsPanelRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, [eventsCode]);
+
   const handleToggle = async (id: string, active: boolean) => {
     await toggleInviteActive(id, active);
     loadInvites();
   };
 
   const openDeck = (deckKey: string, path: string) => {
-    initTrackingSession({ inviteCode: null, deck: deckKey });
+    try {
+      initTrackingSession({ inviteCode: null, deck: deckKey });
+    } catch { /* tracking failure should not block navigation */ }
     navigate(path);
   };
 
@@ -490,7 +499,9 @@ function Dashboard({ onSignOut }: { onSignOut: () => void }) {
 
       {/* Events panel */}
       {eventsCode && (
-        <EventsPanel code={eventsCode} onClose={() => setEventsCode(null)} />
+        <Box ref={eventsPanelRef}>
+          <EventsPanel code={eventsCode} onClose={() => setEventsCode(null)} />
+        </Box>
       )}
     </Box>
   );

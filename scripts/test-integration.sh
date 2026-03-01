@@ -315,7 +315,7 @@ else
     -H "apikey: $ANON_KEY" \
     -H "Authorization: Bearer $ACCESS_TOKEN")
 
-  AUTH_ACTIVE_VAL=$(echo "$AUTH_DEACTIVATED" | jq -r '.[0].is_active // empty')
+  AUTH_ACTIVE_VAL=$(echo "$AUTH_DEACTIVATED" | jq -r 'if length > 0 then .[0].is_active | tostring else "missing" end')
   assert_eq "Auth can see deactivated invite (is_active=false)" "false" "$AUTH_ACTIVE_VAL"
 fi
 

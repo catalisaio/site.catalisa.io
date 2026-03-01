@@ -7,7 +7,8 @@ import { usePresentationColors } from '../PresentationThemeContext';
 export function S30_MarketValidation() {
   const { t } = useTranslation('presentation');
   const c = usePresentationColors();
-  const industries = t('marketValidation.industries', { returnObjects: true }) as Array<{
+  const indRaw = t('marketValidation.industries', { returnObjects: true });
+  const industries = (Array.isArray(indRaw) ? indRaw : []) as Array<{
     name: string;
     color: string;
     stats: Array<{ value: string; label: string }>;

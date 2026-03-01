@@ -2,11 +2,12 @@ import { describe, it, expect } from 'vitest';
 import i18n from '../index';
 
 describe('i18n configuration', () => {
-  it('must have useSuspense disabled to avoid race conditions with lazy-loaded namespaces', () => {
-    // REGRESSION: useSuspense: true caused intermittent language switcher failures
-    // because en-US has zero statically bundled namespaces — all are lazy-loaded.
-    // With suspense enabled, components would suspend before namespaces were ready.
-    expect(i18n.options.react?.useSuspense).toBe(false);
+  it('must have useSuspense enabled so lazy-loaded namespaces suspend correctly', () => {
+    // useSuspense: true is required so that components using returnObjects: true
+    // (e.g. Studio, Playbooks) suspend until the namespace loads, instead of
+    // receiving a string key and crashing on .map().
+    // The LanguageLayout ready-gate handles language switching race conditions.
+    expect(i18n.options.react?.useSuspense).toBe(true);
   });
 
   it('must use pt-BR as default and fallback language', () => {

@@ -1,5 +1,6 @@
 import { useEffect, useRef, useCallback } from 'react';
 import { useLocation } from 'react-router-dom';
+import { getTrackingContext } from '../lib/presentationTracking';
 
 // ---- Data Layer type helper ----
 declare global {
@@ -11,10 +12,20 @@ declare global {
 
 /**
  * Push an event to the GTM Data Layer.
- * All analytics hooks go through this single function.
+ * Automatically enriches with invite context when a tracking session is active.
  */
 function pushEvent(event: string, params: Record<string, unknown> = {}) {
-  window.dataLayer?.push({ event, ...params });
+  const ctx = getTrackingContext();
+  const enriched = ctx.sessionId
+    ? {
+        invite_code: ctx.inviteCode,
+        recipient_name: ctx.recipientName,
+        recipient_company: ctx.recipientCompany,
+        deck: ctx.deck,
+        ...params,
+      }
+    : params;
+  window.dataLayer?.push({ event, ...enriched });
 }
 
 // =============================================

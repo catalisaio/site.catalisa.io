@@ -36,6 +36,8 @@ const AIAgentsWhatsApp = lazy(() => import('./pages/AIAgentsWhatsApp').then(m =>
 const PlaybookDetail = lazy(() => import('./pages/PlaybookDetail').then(m => ({ default: m.PlaybookDetail })));
 const InsightsListing = lazy(() => import('./pages/InsightsListing').then(m => ({ default: m.InsightsListing })));
 const InsightArticle = lazy(() => import('./pages/InsightArticle').then(m => ({ default: m.InsightArticle })));
+const PresentationMenu = lazy(() => import('./pages/PresentationMenu').then(m => ({ default: m.PresentationMenu })));
+const PresentationInvite = lazy(() => import('./pages/PresentationInvite').then(m => ({ default: m.PresentationInvite })));
 const NotFound = lazy(() => import('./pages/NotFound').then(m => ({ default: m.NotFound })));
 
 function PageLoader() {
@@ -79,6 +81,8 @@ function App() {
           <Routes>
             {/* Fullscreen routes — no Header/Footer */}
             <Route element={<LanguageLayout lang="pt-BR" />}>
+              <Route path="/apresentacao" element={<PresentationMenu />} />
+              <Route path="/apresentacao/i/:code" element={<PresentationInvite />} />
               <Route path="/apresentacao/comercial" element={<CommercialPresentation />} />
               <Route path="/apresentacao/investidor" element={<InvestorPresentation />} />
               <Route path="/apresentacao/varejo" element={<RetailPresentation />} />

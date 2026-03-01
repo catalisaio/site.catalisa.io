@@ -5,6 +5,7 @@ import { theme } from './theme';
 import { PageLayout } from './components/layout/PageLayout';
 import { LanguageLayout } from './components/layout/LanguageLayout';
 import { CookieConsent } from './components/shared/CookieConsent';
+import { PresentationGate } from './components/presentation/PresentationGate';
 import { useAnalytics } from './hooks/useAnalytics';
 
 const Home = lazy(() => import('./pages/Home').then(m => ({ default: m.Home })));
@@ -83,18 +84,18 @@ function App() {
             <Route element={<LanguageLayout lang="pt-BR" />}>
               <Route path="/apresentacao" element={<PresentationMenu />} />
               <Route path="/apresentacao/i/:code" element={<PresentationInvite />} />
-              <Route path="/apresentacao/comercial" element={<CommercialPresentation />} />
-              <Route path="/apresentacao/investidor" element={<InvestorPresentation />} />
-              <Route path="/apresentacao/varejo" element={<RetailPresentation />} />
-              <Route path="/apresentacao/fintech" element={<FintechPresentation />} />
-              <Route path="/apresentacao/seguros" element={<InsurancePresentation />} />
+              <Route path="/apresentacao/comercial" element={<PresentationGate><CommercialPresentation /></PresentationGate>} />
+              <Route path="/apresentacao/investidor" element={<PresentationGate><InvestorPresentation /></PresentationGate>} />
+              <Route path="/apresentacao/varejo" element={<PresentationGate><RetailPresentation /></PresentationGate>} />
+              <Route path="/apresentacao/fintech" element={<PresentationGate><FintechPresentation /></PresentationGate>} />
+              <Route path="/apresentacao/seguros" element={<PresentationGate><InsurancePresentation /></PresentationGate>} />
             </Route>
             <Route path="/en" element={<LanguageLayout lang="en-US" />}>
-              <Route path="presentation/commercial" element={<CommercialPresentation />} />
-              <Route path="presentation/investor" element={<InvestorPresentation />} />
-              <Route path="presentation/retail" element={<RetailPresentation />} />
-              <Route path="presentation/fintech" element={<FintechPresentation />} />
-              <Route path="presentation/insurance" element={<InsurancePresentation />} />
+              <Route path="presentation/commercial" element={<PresentationGate><CommercialPresentation /></PresentationGate>} />
+              <Route path="presentation/investor" element={<PresentationGate><InvestorPresentation /></PresentationGate>} />
+              <Route path="presentation/retail" element={<PresentationGate><RetailPresentation /></PresentationGate>} />
+              <Route path="presentation/fintech" element={<PresentationGate><FintechPresentation /></PresentationGate>} />
+              <Route path="presentation/insurance" element={<PresentationGate><InsurancePresentation /></PresentationGate>} />
             </Route>
 
             {/* Standard routes — with Header/Footer */}

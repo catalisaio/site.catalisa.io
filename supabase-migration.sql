@@ -57,6 +57,12 @@ CREATE POLICY "Public validate invite"
   FOR SELECT
   USING (is_active = true);
 
+-- Authenticated: can read ALL invites (admin dashboard)
+CREATE POLICY "Auth read all invites"
+  ON presentation_invites
+  FOR SELECT
+  USING (auth.uid() IS NOT NULL);
+
 -- Authenticated: can create invites
 CREATE POLICY "Auth create invite"
   ON presentation_invites

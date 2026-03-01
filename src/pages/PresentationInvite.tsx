@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import {
   Flex, Box, Heading, Text, Spinner, SimpleGrid, Card, CardBody, Badge,
+  Button, VStack,
 } from '@chakra-ui/react';
+import { FiMessageCircle } from 'react-icons/fi';
 import {
   validateInvite, incrementUses,
   type PresentationInvite,
@@ -18,6 +20,72 @@ const DECK_META: Record<string, { label: string; color: string; path: string }> 
 };
 
 const ALL_DECK_KEYS = Object.keys(DECK_META);
+
+function ExpiredLinkPage() {
+  const location = useLocation();
+  const currentUrl = `catalisa.io${location.pathname}`;
+  const whatsappMsg = encodeURIComponent(
+    `Olá! Tentei acessar ${currentUrl} mas o link expirou. Podemos conversar sobre as apresentações da Catalisa?`
+  );
+  const ceoMsg = encodeURIComponent(
+    `Oi Klederson! Acessei ${currentUrl} e o link já expirou. Posso receber um novo?`
+  );
+
+  return (
+    <Flex minH="100vh" align="center" justify="center" bg="gray.900" p={8}>
+      <Box textAlign="center" maxW="520px">
+        <Text fontSize="4xl" mb={4}>
+          ⏰
+        </Text>
+        <Heading size="xl" color="white" mb={3}>
+          Esse link já cumpriu sua missão
+        </Heading>
+        <Text color="gray.400" fontSize="lg" mb={2}>
+          O convite que você recebeu expirou ou atingiu o limite de acessos.
+        </Text>
+        <Text color="gray.500" fontSize="md" mb={8}>
+          Sem problemas — boas conversas não têm prazo de validade.
+        </Text>
+        <VStack spacing={4}>
+          <Button
+            as="a"
+            href={`https://wa.me/5511977303414?text=${whatsappMsg}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            colorScheme="whatsapp"
+            size="lg"
+            leftIcon={<FiMessageCircle />}
+            px={8}
+          >
+            Solicitar novo acesso
+          </Button>
+          <Button
+            as="a"
+            href={`https://wa.me/5511930802555?text=${ceoMsg}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            variant="outline"
+            colorScheme="whiteAlpha"
+            size="sm"
+            leftIcon={<FiMessageCircle />}
+          >
+            Ou fale direto com nosso CEO
+          </Button>
+          <Button
+            as="a"
+            href="https://catalisa.io"
+            variant="ghost"
+            color="gray.500"
+            size="sm"
+            _hover={{ color: 'gray.300' }}
+          >
+            Conhecer a Catalisa
+          </Button>
+        </VStack>
+      </Box>
+    </Flex>
+  );
+}
 
 export function PresentationInvite() {
   const { code } = useParams<{ code: string }>();
@@ -88,17 +156,7 @@ export function PresentationInvite() {
 
   // Invalid / expired
   if (status === 'invalid') {
-    return (
-      <Flex minH="100vh" align="center" justify="center" bg="gray.900" p={8}>
-        <Box textAlign="center">
-          <Heading size="lg" color="white" mb={4}>Link inválido ou expirado</Heading>
-          <Text color="gray.400">
-            Este link de apresentação não está mais disponível.
-            Entre em contato com quem enviou para solicitar um novo.
-          </Text>
-        </Box>
-      </Flex>
-    );
+    return <ExpiredLinkPage />;
   }
 
   // Multiple decks — show selector

@@ -760,7 +760,7 @@ function Dashboard({ onSignOut }: { onSignOut: () => void }) {
   }, [invites]);
 
   return (
-    <Box minH="100vh" bg="gray.900" p={{ base: 4, md: 8 }} maxW="1400px" mx="auto">
+    <Box minH="100vh" bg="gray.900" p={{ base: 4, md: 8 }}>
       {/* Header */}
       <Flex justify="space-between" align="center" mb={8}>
         <VStack align="start" spacing={1}>

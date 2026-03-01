@@ -534,5 +534,109 @@
         "CRM updated automatically"
       ]
     }
+  },
+  "tamSizingFunnel": {
+    "badge": "MARKET SIZING",
+    "headline": "The size of the",
+    "headlineHighlight": "opportunity.",
+    "tiers": [
+      { "label": "TAM", "value": "$450B", "description": "Enterprise AI agents by 2035", "source": "Gartner" },
+      { "label": "SAM", "value": "$58B", "description": "GenAI + intelligent automation", "source": "Gartner" },
+      { "label": "SOM", "value": "$2.8B", "description": "Brazil: WhatsApp + AI + financial services", "source": "Gartner/FEBRABAN" }
+    ],
+    "proofPoints": [
+      { "value": "148M", "label": "WhatsApp users" },
+      { "value": "82%", "label": "digital transactions" },
+      { "value": "85%", "label": "banks with chatbot" }
+    ],
+    "disclaimer": "Sources: Gartner (2024-2025), FEBRABAN, Meta Business"
+  },
+  "forresterROI": {
+    "badge": "PROVEN ROI",
+    "headline": "Return of",
+    "headlineHighlight": "270% in 3 years.",
+    "heroValue": "270%",
+    "heroLabel": "ROI in 3 years",
+    "heroSource": "Forrester TEI, April 2025",
+    "metrics": [
+      { "value": "+55%", "label": "conversion rate", "detail": "+2.08% total revenue" },
+      { "value": "+20%", "label": "AOV (average order value)", "detail": "+1.17% revenue" },
+      { "value": "+50%", "label": "engagement vs SMS/email", "detail": "$1.4M additional profit" },
+      { "value": "90%", "label": "significant increase", "detail": "in new customers" }
+    ],
+    "bottomBar": "90% higher open rates. 92% increase in click-through.",
+    "disclaimer": "Source: Forrester Total Economic Impact™ Study, April 2025"
+  },
+  "gtmStrategy": {
+    "badge": "GO-TO-MARKET STRATEGY",
+    "headline": "Two engines.",
+    "headlineHighlight": "One platform.",
+    "subtitle": "Compound growth.",
+    "columns": [
+      {
+        "title": "Product-Led Growth",
+        "steps": ["Free Trial", "Organic Expansion", "Self-Serve Upgrade"],
+        "highlights": ["100 free conversations", "<3min to first agent", "$0 organic CAC"]
+      },
+      {
+        "title": "Sales-Led",
+        "steps": ["Content & Inbound", "Qualification", "Enterprise / White-Label"],
+        "highlights": ["Insights and playbooks", "Case studies as entry point", "Sales team closes"]
+      }
+    ],
+    "convergence": "Both feed Success Fee + result-driven expansion",
+    "stats": [
+      { "value": "$0", "label": "organic CAC (PLG)" },
+      { "value": "92%", "label": "retention" },
+      { "value": "3x", "label": "annual growth" }
+    ]
+  },
+  "competitiveMoat": {
+    "badge": "COMPETITIVE ADVANTAGE",
+    "headline": "5 layers of",
+    "headlineHighlight": "structural moat.",
+    "layers": [
+      { "title": "Native WhatsApp", "description": "Direct Cloud API, not a plugin" },
+      { "title": "Real AI Agents", "description": "Orchestrator + specialists with tools" },
+      { "title": "60+ Building Blocks", "description": "Years of composable IP" },
+      { "title": "Regulatory Compliance", "description": "BACEN, SUSEP, LGPD native (hard to retrofit)" },
+      { "title": "Product-Led Growth", "description": "$0 CAC, <3min to value, 92% retention" }
+    ],
+    "callout": "Each layer reinforces the others. A competitor would need to replicate all five simultaneously."
+  },
+  "marketValidation": {
+    "badge": "MARKET VALIDATION",
+    "headline": "Cross-industry",
+    "headlineHighlight": "adoption proof.",
+    "industries": [
+      {
+        "name": "Banking",
+        "color": "brand.400",
+        "stats": [
+          { "value": "300M+/mo", "label": "Bradesco AI" },
+          { "value": "150+", "label": "Itaú GenAI solutions" },
+          { "value": "62M", "label": "Open Finance consents" }
+        ]
+      },
+      {
+        "name": "Retail",
+        "color": "whatsapp.400",
+        "stats": [
+          { "value": "+46%", "label": "Boticário conversion" },
+          { "value": "3x", "label": "Magalu via WhatsApp" },
+          { "value": "148M", "label": "WhatsApp users" }
+        ]
+      },
+      {
+        "name": "Insurance",
+        "color": "catalisa.secondary",
+        "stats": [
+          { "value": "2s", "label": "Lemonade claims" },
+          { "value": "$40B", "label": "annual premiums" },
+          { "value": "42%", "label": "digital sales" }
+        ]
+      }
+    ],
+    "bottomBar": "$300B+ global AI investment by 2026 (IDC). 80% of companies will integrate GenAI into CX (Gartner)."
   }
 }

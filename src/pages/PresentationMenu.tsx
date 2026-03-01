@@ -5,7 +5,7 @@ import {
   Tbody, Tr, Th, Td, Checkbox, CheckboxGroup, Stack,
   Textarea, FormControl, FormLabel, Spinner, Card, CardBody,
 } from '@chakra-ui/react';
-import { FiCopy, FiLogOut, FiPlus, FiX, FiExternalLink } from 'react-icons/fi';
+import { FiCopy, FiLogOut, FiPlus, FiX, FiExternalLink, FiBarChart2 } from 'react-icons/fi';
 import { useNavigate } from 'react-router-dom';
 import { useSupabaseAuth } from '../hooks/useSupabaseAuth';
 import {
@@ -13,6 +13,24 @@ import {
   type PresentationInvite, type CreateInviteInput, type PresentationEvent,
 } from '../lib/invites';
 import { initTrackingSession } from '../lib/presentationTracking';
+
+// ---- Clipboard helper ----
+async function copyToClipboard(text: string): Promise<void> {
+  try {
+    if (navigator.clipboard?.writeText) {
+      await navigator.clipboard.writeText(text);
+      return;
+    }
+  } catch { /* fallback below */ }
+  const ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.opacity = '0';
+  document.body.appendChild(ta);
+  ta.select();
+  document.execCommand('copy');
+  document.body.removeChild(ta);
+}
 
 // ---- Deck definitions ----
 const DECKS = [
@@ -111,7 +129,7 @@ function InviteForm({ onCreated }: { onCreated: () => void }) {
     try {
       const invite = await createInvite(form);
       const link = `${window.location.origin}/apresentacao/i/${invite.code}`;
-      await navigator.clipboard.writeText(link);
+      await copyToClipboard(link);
       toast({
         title: 'Invite criado!',
         description: `Link copiado: ${link}`,
@@ -249,10 +267,15 @@ function InviteTable({
 }) {
   const toast = useToast();
 
-  const copyLink = (code: string) => {
+  const copyLink = async (code: string) => {
     const link = `${window.location.origin}/apresentacao/i/${code}`;
-    navigator.clipboard.writeText(link);
+    await copyToClipboard(link);
     toast({ title: 'Link copiado!', status: 'info', duration: 2000 });
+  };
+
+  const openLink = (code: string) => {
+    const link = `${window.location.origin}/apresentacao/i/${code}`;
+    window.open(link, '_blank');
   };
 
   if (invites.length === 0) {
@@ -308,8 +331,16 @@ function InviteTable({
                     onClick={() => copyLink(inv.code)}
                   />
                   <IconButton
-                    aria-label="Ver eventos"
+                    aria-label="Abrir link"
                     icon={<FiExternalLink />}
+                    size="xs"
+                    variant="ghost"
+                    color="gray.400"
+                    onClick={() => openLink(inv.code)}
+                  />
+                  <IconButton
+                    aria-label="Ver eventos"
+                    icon={<FiBarChart2 />}
                     size="xs"
                     variant="ghost"
                     color="gray.400"

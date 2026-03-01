@@ -56,7 +56,8 @@ export function CasosDeUso() {
     });
   }, [type, category, industry, search, tp]);
 
-  const industryCards = t('industryCards', { returnObjects: true }) as Array<{
+  const industryCardsRaw = t('industryCards', { returnObjects: true });
+  const industryCards = (Array.isArray(industryCardsRaw) ? industryCardsRaw : []) as Array<{
     label: string;
     desc: string;
     path: string;

@@ -61,6 +61,7 @@ export function HeroTeamBuilder() {
   return (
     <Box
       id="hero"
+      data-hero-id="hero_home"
       position="relative"
       bg="hero.bg"
       overflow="hidden"

@@ -57,6 +57,7 @@ export function Fintech() {
         },
       }}
       ctaLabel={tc('cta.letsChat')}
+      heroId="hero_fintech"
     />
   );
 }

@@ -199,7 +199,7 @@ export function AppBuilderShowcase() {
   ];
 
   return (
-    <Box as="section" ref={sectionRef} position="relative" bg="gray.900" minH="400vh">
+    <Box id="app-builder" as="section" ref={sectionRef} position="relative" bg="gray.900" minH="400vh">
       {/* Sticky visual container */}
       <Box
         position="sticky"

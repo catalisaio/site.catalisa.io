@@ -32,6 +32,7 @@ export function BuildingBlocks() {
     <>
       {/* Hero */}
       <PageHero
+        heroId="hero_building_blocks"
         badge={t('hero.badge')}
         heading={t('hero.heading')}
         headingGradient={t('hero.headingGradient')}

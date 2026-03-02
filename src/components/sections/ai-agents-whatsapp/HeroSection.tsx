@@ -26,6 +26,8 @@ export function HeroSection() {
 
   return (
     <Box
+      id="hero"
+      data-hero-id="hero_ai_agents_whatsapp"
       position="relative"
       bg="gray.900"
       overflow="hidden"

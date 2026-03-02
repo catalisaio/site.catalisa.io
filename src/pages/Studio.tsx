@@ -46,6 +46,7 @@ export function Studio() {
     <>
       {/* Hero */}
       <PageHero
+        heroId="hero_studio"
         badge={t('hero.badge')}
         heading={t('hero.heading')}
         headingGradient={t('hero.headingGradient')}

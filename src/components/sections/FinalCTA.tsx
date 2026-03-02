@@ -24,7 +24,7 @@ export function FinalCTA() {
   const lp = useLocalizedPath();
   const behindTheScenes = useBehindTheScenes();
   return (
-    <SectionWrapper bg="brand.500" py={{ base: 20, md: 28 }}>
+    <SectionWrapper id="final-cta" bg="brand.500" py={{ base: 20, md: 28 }}>
       <VStack spacing={6} textAlign="center" maxW="700px" mx="auto">
         {/* Mini agent avatars row */}
         <HStack spacing={-2} justify="center">

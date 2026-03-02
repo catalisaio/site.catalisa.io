@@ -47,6 +47,7 @@ export function Workflows() {
   return (
     <>
       <PageHero
+        heroId="hero_workflows"
         badge={t('hero.badge')}
         heading={t('hero.heading')}
         headingGradient={t('hero.headingGradient')}

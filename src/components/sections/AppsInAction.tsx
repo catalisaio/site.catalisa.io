@@ -250,6 +250,7 @@ export function AppsInAction() {
 
   return (
     <Box
+      id="apps-in-action"
       as="section"
       position="relative"
       bg="gray.900"

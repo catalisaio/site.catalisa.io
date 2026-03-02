@@ -23,6 +23,7 @@ export function Startups() {
       t={t}
       locale={locale}
       accentColor="cyan"
+      heroId="hero_startups"
       heroGradient="linear(to-r, cyan.300, teal.400)"
       useCases={startupUseCases}
       heroStats={[

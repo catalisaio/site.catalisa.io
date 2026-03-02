@@ -26,6 +26,7 @@ export function HowItWorks() {
   return (
     <>
       <PageHero
+        heroId="hero_how_it_works"
         badge={t('hero.badge')}
         badgeIcon={FiZap}
         heading={t('hero.heading')}

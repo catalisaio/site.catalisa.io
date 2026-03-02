@@ -32,6 +32,7 @@ export function WhatsAppIntegration() {
     <>
       {/* Hero */}
       <PageHero
+        heroId="hero_whatsapp_integration"
         badge={t('hero.badge')}
         badgeIcon={FiMessageCircle}
         heading={t('hero.heading')}

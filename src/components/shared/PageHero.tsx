@@ -37,6 +37,7 @@ interface PageHeroProps {
   accentColor?: string;
   gradient?: string;
   children?: ReactNode;
+  heroId?: string;
 }
 
 export function PageHero({
@@ -51,6 +52,7 @@ export function PageHero({
   accentColor = 'brand',
   gradient,
   children,
+  heroId,
 }: PageHeroProps) {
   const hasVisual = !!children;
   const gradientStr = gradient || `linear(to-r, ${accentColor}.300, ${accentColor}.400, catalisa.accent)`;
@@ -58,6 +60,7 @@ export function PageHero({
   return (
     <Box
       id="hero"
+      data-hero-id={heroId}
       bg="hero.bg"
       position="relative"
       overflow="hidden"

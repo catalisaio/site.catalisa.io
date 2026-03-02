@@ -63,6 +63,7 @@ export function LiveOperationsDashboard() {
 
   return (
     <Box
+      id="operations-dashboard"
       as="section"
       ref={sectionRef}
       position="relative"

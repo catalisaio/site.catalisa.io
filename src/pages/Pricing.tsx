@@ -78,6 +78,7 @@ export function Pricing() {
     <>
       {/* Hero */}
       <PageHero
+        heroId="hero_pricing"
         badge={t('hero.badge')}
         heading={t('hero.heading')}
         headingGradient={t('hero.headingGradient')}

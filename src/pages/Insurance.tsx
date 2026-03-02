@@ -57,6 +57,7 @@ export function Insurance() {
         },
       }}
       ctaLabel={tc('cta.letsChat')}
+      heroId="hero_insurance"
     />
   );
 }

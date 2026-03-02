@@ -1,12 +1,14 @@
 import { useEffect, useRef, useCallback } from 'react';
 import { useLocation } from 'react-router-dom';
 import { getTrackingContext } from '../lib/presentationTracking';
+import { classifyPageType, resolveFunnelStages } from '../lib/funnelDefinitions';
 
 // ---- Data Layer type helper ----
 declare global {
   interface Window {
     dataLayer?: Record<string, unknown>[];
     gtag?: (...args: unknown[]) => void;
+    clarity?: (method: string, ...args: unknown[]) => void;
   }
 }
 
@@ -81,7 +83,7 @@ export function useScrollDepthTracking() {
 }
 
 // ---- 3. CTA click tracking ----
-export function useCtaClickTracking() {
+export function useCtaClickTracking(onWhatsAppClick?: () => void) {
   useEffect(() => {
     const handler = (e: MouseEvent) => {
       const el = (e.target as HTMLElement).closest('a, button');
@@ -90,13 +92,26 @@ export function useCtaClickTracking() {
       const href = el.getAttribute('href') || '';
       const text = (el.textContent || '').trim().slice(0, 50);
 
+      // Detect if click is inside a hero
+      const heroEl = (el as HTMLElement).closest('[data-hero-id]');
+      const heroId = heroEl?.getAttribute('data-hero-id') || undefined;
+
       // WhatsApp CTA (Key Event / Conversion)
       if (href.includes('wa.me')) {
         pushEvent('cta_click', {
           cta_type: 'whatsapp',
           cta_text: text,
           page_path: window.location.pathname,
+          hero_id: heroId,
         });
+        if (heroId) {
+          pushEvent('hero_cta_click', {
+            hero_id: heroId,
+            cta_type: 'whatsapp',
+            cta_text: text,
+          });
+        }
+        onWhatsAppClick?.();
         return;
       }
 
@@ -117,13 +132,21 @@ export function useCtaClickTracking() {
           cta_type: 'internal',
           cta_text: text,
           page_path: window.location.pathname,
+          hero_id: heroId,
         });
+        if (heroId) {
+          pushEvent('hero_cta_click', {
+            hero_id: heroId,
+            cta_type: 'internal',
+            cta_text: text,
+          });
+        }
       }
     };
 
     document.addEventListener('click', handler, { passive: true });
     return () => document.removeEventListener('click', handler);
-  }, []);
+  }, [onWhatsAppClick]);
 }
 
 // ---- 4. Section visibility + dwell time ----
@@ -314,13 +337,19 @@ export function useSessionContext() {
   useEffect(() => {
     const lang = document.documentElement.lang || navigator.language;
     const isMobile = window.innerWidth <= 768;
+    const entryPath = window.location.pathname;
+    const entryPageType = classifyPageType(entryPath);
+    const firstHero = document.querySelector('[data-hero-id]');
+    const entryHeroId = firstHero?.getAttribute('data-hero-id') || undefined;
 
     // Push user properties to Data Layer for GTM to set as GA4 User Properties
     pushEvent('user_properties_set', {
       user_properties: {
         language: lang,
         device_type: isMobile ? 'mobile' : 'desktop',
-        entry_page: window.location.pathname,
+        entry_page: entryPath,
+        entry_page_type: entryPageType,
+        entry_hero_id: entryHeroId,
         referrer_source: document.referrer || 'direct',
       },
     });
@@ -380,17 +409,198 @@ export function useSlideTracking() {
 }
 
 // =============================================
+//  HERO OBSERVABILITY
+// =============================================
+
+// ---- 11. Hero view & engagement tracking ----
+export function useHeroTracking() {
+  const location = useLocation();
+  const timersRef = useRef<Map<string, number>>(new Map());
+
+  useEffect(() => {
+    // Flush timers on route change
+    for (const [heroId, start] of timersRef.current) {
+      const seconds = Math.round((Date.now() - start) / 1000);
+      if (seconds > 1) {
+        pushEvent('hero_engagement', {
+          hero_id: heroId,
+          seconds,
+          scroll_past: true,
+          page_path: location.pathname,
+        });
+      }
+    }
+    timersRef.current = new Map();
+  }, [location.pathname]);
+
+  useEffect(() => {
+    const heroes = document.querySelectorAll('[data-hero-id]');
+    if (heroes.length === 0) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          const heroId = (entry.target as HTMLElement).dataset.heroId;
+          if (!heroId) continue;
+
+          if (entry.isIntersecting) {
+            if (!timersRef.current.has(heroId)) {
+              timersRef.current.set(heroId, Date.now());
+              pushEvent('hero_view', {
+                hero_id: heroId,
+                page_path: location.pathname,
+              });
+            }
+          } else {
+            const start = timersRef.current.get(heroId);
+            if (start) {
+              const seconds = Math.round((Date.now() - start) / 1000);
+              if (seconds > 1) {
+                pushEvent('hero_engagement', {
+                  hero_id: heroId,
+                  seconds,
+                  scroll_past: true,
+                  page_path: location.pathname,
+                });
+              }
+              timersRef.current.delete(heroId);
+            }
+          }
+        }
+      },
+      { threshold: 0.3 },
+    );
+
+    heroes.forEach((h) => observer.observe(h));
+    return () => observer.disconnect();
+  }, [location.pathname]);
+}
+
+// =============================================
+//  FUNNEL TRACKING
+// =============================================
+
+// ---- 12. Funnel stage tracking ----
+export function useFunnelTracking() {
+  const location = useLocation();
+  const historyRef = useRef<string[]>([]);
+  const firedStagesRef = useRef<Set<string>>(new Set());
+  const sessionStartRef = useRef(Date.now());
+  const entryPageRef = useRef(window.location.pathname);
+
+  const trackFunnelConversion = useCallback((funnelId: string) => {
+    const key = `${funnelId}:conversion`;
+    if (firedStagesRef.current.has(key)) return;
+    firedStagesRef.current.add(key);
+
+    pushEvent('funnel_conversion', {
+      funnel_id: funnelId,
+      entry_page: entryPageRef.current,
+      total_pages: historyRef.current.length,
+      time_to_convert_seconds: Math.round((Date.now() - sessionStartRef.current) / 1000),
+    });
+  }, []);
+
+  useEffect(() => {
+    historyRef.current.push(location.pathname);
+
+    const activeFunnels = resolveFunnelStages(historyRef.current);
+
+    for (const funnel of activeFunnels) {
+      const stageKey = `${funnel.funnelId}:${funnel.currentStage}`;
+      if (firedStagesRef.current.has(stageKey)) continue;
+      firedStagesRef.current.add(stageKey);
+
+      pushEvent('funnel_stage', {
+        funnel_id: funnel.funnelId,
+        stage: funnel.currentStage,
+        stage_index: funnel.stageIndex,
+        total_stages: funnel.totalStages,
+        entry_page: entryPageRef.current,
+        pages_in_session: historyRef.current.length,
+      });
+    }
+  }, [location.pathname]);
+
+  return { trackFunnelConversion };
+}
+
+// =============================================
+//  CLARITY CUSTOM TAGS
+// =============================================
+
+// ---- 13. Clarity tagging ----
+export function useClarityTagging() {
+  const location = useLocation();
+  const sessionDepthRef = useRef(0);
+  const entryPageRef = useRef(window.location.pathname);
+
+  useEffect(() => {
+    sessionDepthRef.current += 1;
+
+    if (!window.clarity) return;
+
+    const pageType = classifyPageType(location.pathname);
+    const isMobile = window.innerWidth <= 768;
+    const lang = document.documentElement.lang || navigator.language;
+    const hero = document.querySelector('[data-hero-id]');
+    const heroId = hero?.getAttribute('data-hero-id') || '';
+    const depth = sessionDepthRef.current;
+
+    window.clarity('set', 'page_type', pageType);
+    window.clarity('set', 'device_type', isMobile ? 'mobile' : 'desktop');
+    window.clarity('set', 'session_depth', String(depth));
+    window.clarity('set', 'language', lang);
+    window.clarity('set', 'entry_page', entryPageRef.current);
+    window.clarity('set', 'entry_page_type', classifyPageType(entryPageRef.current));
+
+    if (heroId) {
+      window.clarity('set', 'hero_id', heroId);
+    }
+
+    // User intent based on depth
+    let intent = 'browsing';
+    if (depth >= 5) intent = 'high_intent';
+    else if (depth >= 3) intent = 'engaged';
+    window.clarity('set', 'user_intent', intent);
+
+    // Active funnels (set after a small delay to allow history to update)
+    const history = [entryPageRef.current];
+    if (location.pathname !== entryPageRef.current) {
+      history.push(location.pathname);
+    }
+    const activeFunnels = resolveFunnelStages(history);
+    if (activeFunnels.length > 0) {
+      window.clarity('set', 'active_funnels', activeFunnels.map((f) => f.funnelId).join(','));
+      window.clarity('set', 'funnel_stage', activeFunnels.map((f) => `${f.funnelId}:${f.currentStage}`).join(','));
+    }
+  }, [location.pathname]);
+}
+
+// =============================================
 //  COMBINED HOOK
 // =============================================
 
 export function useAnalytics() {
   usePageViewTracking();
   useScrollDepthTracking();
-  useCtaClickTracking();
   useSectionEngagementTracking();
   useTimeOnPageTracking();
   useAttentionTracking();
   useVideoTracking();
   useSessionContext();
   useNavigationPathTracking();
+  useHeroTracking();
+  useClarityTagging();
+
+  // Funnel tracking with WhatsApp conversion wiring
+  const { trackFunnelConversion } = useFunnelTracking();
+  const handleWhatsAppClick = useCallback(() => {
+    trackFunnelConversion('direct_whatsapp');
+    trackFunnelConversion('feature_discovery');
+    trackFunnelConversion('industry_path');
+    trackFunnelConversion('content_path');
+  }, [trackFunnelConversion]);
+
+  useCtaClickTracking(handleWhatsAppClick);
 }

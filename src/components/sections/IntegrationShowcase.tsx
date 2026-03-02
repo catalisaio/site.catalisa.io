@@ -275,7 +275,7 @@ export function IntegrationShowcase() {
   });
 
   return (
-    <Box ref={containerRef} bg="white" py={{ base: 10, md: 14, lg: 18 }} overflow="hidden">
+    <Box id="integrations" ref={containerRef} bg="white" py={{ base: 10, md: 14, lg: 18 }} overflow="hidden">
       <Container maxW="1280px" mb={{ base: 6, md: 10 }}>
         <VStack spacing={3}>
           <Text

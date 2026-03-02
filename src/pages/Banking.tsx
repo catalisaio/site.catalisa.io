@@ -57,6 +57,7 @@ export function Banking() {
         },
       }}
       ctaLabel={tc('cta.letsChat')}
+      heroId="hero_banking"
     />
   );
 }

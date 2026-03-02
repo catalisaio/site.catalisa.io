@@ -53,6 +53,7 @@ export function AIAgents() {
     <>
       {/* Hero */}
       <PageHero
+        heroId="hero_ai_agents"
         badge={t('hero.badge')}
         heading={t('hero.heading')}
         headingGradient={t('hero.headingGradient')}

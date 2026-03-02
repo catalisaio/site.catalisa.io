@@ -3,7 +3,7 @@ import { insertEvent } from './invites';
 // ---- Global types ----
 declare global {
   interface Window {
-    clarity?: (...args: unknown[]) => void;
+    clarity?: (method: string, ...args: unknown[]) => void;
   }
 }
 

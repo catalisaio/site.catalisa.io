@@ -64,6 +64,7 @@ export function WhatsAppCommandCenter() {
 
   return (
     <Box
+      id="whatsapp-command-center"
       as="section"
       ref={sectionRef}
       position="relative"

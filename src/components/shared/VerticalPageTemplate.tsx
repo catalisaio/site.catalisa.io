@@ -72,6 +72,7 @@ interface VerticalPageTemplateProps {
   capabilityPipeline?: { label: string; text: string };
   roiConfig: ROIConfig;
   ctaLabel: string;
+  heroId?: string;
 }
 
 const complianceIcons: IconType[] = [FiShield, FiLock, FiKey, FiUsers];
@@ -153,6 +154,7 @@ export function VerticalPageTemplate({
   capabilityPipeline,
   roiConfig,
   ctaLabel,
+  heroId,
 }: VerticalPageTemplateProps) {
   return (
     <>
@@ -166,6 +168,7 @@ export function VerticalPageTemplate({
         gradient={heroGradient || `linear(to-r, ${accentColor}.300, ${accentColor}.400, catalisa.accent)`}
         primaryCTA={{ label: ctaLabel }}
         stats={heroStats}
+        heroId={heroId}
       />
 
       {/* Use Cases */}

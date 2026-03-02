@@ -1,6 +1,7 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { readFileSync } from 'fs';
-import { resolve } from 'path';
+import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 // ---- Constants (must match index.html) ----
 const CLARITY_PRESENTATIONS_ID = 'vp5b7apoc2';
@@ -24,7 +25,8 @@ describe('index.html Clarity script', () => {
   let html: string;
 
   beforeEach(() => {
-    html = readFileSync(resolve(__dirname, '../../../index.html'), 'utf-8');
+    const __filename = fileURLToPath(import.meta.url);
+    html = readFileSync(resolve(__filename, '../../../../index.html'), 'utf-8');
   });
 
   it('contains both Clarity project IDs', () => {
@@ -130,7 +132,7 @@ describe('Clarity bootstrap in jsdom', () => {
 
   beforeEach(() => {
     originalClarity = window.clarity;
-    delete (window as Record<string, unknown>).clarity;
+    delete (window as unknown as Record<string, unknown>).clarity;
     // The Clarity bootstrap uses getElementsByTagName('script')[0] as an anchor.
     // jsdom starts with no script tags, so we add one for insertBefore to work.
     dummyScript = document.createElement('script');

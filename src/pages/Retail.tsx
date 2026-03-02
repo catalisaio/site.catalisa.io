@@ -23,6 +23,7 @@ export function Retail() {
       t={t}
       locale={locale}
       accentColor="orange"
+      heroId="hero_retail"
       heroGradient="linear(to-r, orange.300, orange.400)"
       useCases={retailUseCases}
       heroStats={[

@@ -138,7 +138,7 @@ export function AgentBuilderShowcase() {
   ];
 
   return (
-    <Box as="section" position="relative" bg="gray.900" overflow="hidden">
+    <Box id="agent-builder" as="section" position="relative" bg="gray.900" overflow="hidden">
       <Box
         position="absolute"
         top="-20%"

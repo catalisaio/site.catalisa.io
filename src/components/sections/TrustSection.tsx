@@ -15,7 +15,7 @@ export function TrustSection() {
     { icon: FiGlobe, label: t('badges.dataStoredBrazil', { ns: 'common' }), color: 'cyan.500' },
   ];
   return (
-    <SectionWrapper bg="gray.50">
+    <SectionWrapper id="trust" bg="gray.50">
       <VStack spacing={8} textAlign="center">
         <VStack spacing={3}>
           <Heading as="h2" size="xl" fontWeight="800">

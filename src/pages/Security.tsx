@@ -25,6 +25,7 @@ export function Security() {
   return (
     <>
       <PageHero
+        heroId="hero_security"
         badge={t('hero.badge')}
         badgeIcon={FiShield}
         heading={t('hero.heading')}

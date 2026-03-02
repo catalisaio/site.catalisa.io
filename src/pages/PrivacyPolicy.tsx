@@ -6,7 +6,7 @@ import {
 } from '@chakra-ui/react';
 import {
   FiShield, FiDatabase, FiTarget, FiToggleRight, FiShare2, FiLock,
-  FiUserCheck, FiMail, FiChevronDown, FiMaximize2, FiMinimize2,
+  FiUserCheck, FiChevronDown, FiMaximize2, FiMinimize2,
   FiFileText,
 } from 'react-icons/fi';
 import type { IconType } from 'react-icons';
@@ -14,10 +14,7 @@ import { useTranslation } from 'react-i18next';
 import { PageHero } from '../components/shared/PageHero';
 import { SectionWrapper } from '../components/shared/SectionWrapper';
 import { SectionHeader } from '../components/shared/SectionHeader';
-import { PageCTA } from '../components/shared/PageCTA';
 import { MotionBox } from '../components/motion';
-
-const WHATSAPP_URL = 'https://wa.me/5511977303414?text=Ola!%20Quero%20saber%20mais%20sobre%20privacidade%20de%20dados.';
 
 const iconMap: Record<string, IconType> = {
   FiDatabase,
@@ -82,6 +79,7 @@ export function PrivacyPolicy() {
   return (
     <>
       <PageHero
+        heroId="hero_privacy"
         badge={t('hero.badge')}
         badgeIcon={FiShield}
         heading={t('hero.heading')}

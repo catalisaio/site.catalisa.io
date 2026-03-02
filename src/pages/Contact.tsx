@@ -49,6 +49,7 @@ export function Contact() {
     <>
       {/* Hero with WhatsApp Chat Preview */}
       <PageHero
+        heroId="hero_contact"
         badge={t('hero.badge')}
         heading={t('hero.heading')}
         headingGradient={t('hero.headingGradient')}

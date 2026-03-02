@@ -59,10 +59,15 @@ export function PrivacyPolicy() {
     setExpandedIndices((prev) =>
       prev.includes(sectionIndex) ? prev : [...prev, sectionIndex]
     );
-    setTimeout(() => {
-      const el = document.getElementById(`policy-section-${sectionIndex}`);
-      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }, 150);
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        const el = document.getElementById(`policy-section-${sectionIndex}`);
+        if (el) {
+          const y = el.getBoundingClientRect().top + window.scrollY - 100;
+          window.scrollTo({ top: y, behavior: 'smooth' });
+        }
+      }, 300);
+    });
   };
 
   return (

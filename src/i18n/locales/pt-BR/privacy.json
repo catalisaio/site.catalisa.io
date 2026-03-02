@@ -1,23 +1,97 @@
 {
-  "title": "Politica de Privacidade",
+  "title": "Política de Privacidade",
   "lastUpdated": "Última atualização: Março de 2026",
+
+  "hero": {
+    "badge": "Privacidade",
+    "heading": "Sua privacidade,",
+    "headingGradient": "sem juridiquês.",
+    "subtitle": "Acreditamos que você merece entender como seus dados são tratados — de verdade, sem letras miúdas."
+  },
+
+  "summary": {
+    "title": "Sua privacidade em 2 minutos",
+    "subtitle": "Um resumo dos pontos mais importantes. Para a versão completa, veja abaixo.",
+    "cards": [
+      {
+        "icon": "FiDatabase",
+        "title": "O que coletamos",
+        "description": "Nome, e-mail, telefone, dados de uso e dados técnicos. Nada além do necessário.",
+        "linkText": "Ver detalhes",
+        "anchor": 2
+      },
+      {
+        "icon": "FiTarget",
+        "title": "Por que usamos",
+        "description": "Para operar a plataforma, melhorar sua experiência e manter tudo seguro.",
+        "linkText": "Ver detalhes",
+        "anchor": 4
+      },
+      {
+        "icon": "FiToggleRight",
+        "title": "Cookies",
+        "description": "Usamos cookies essenciais e, com seu ok, analytics. Você escolhe.",
+        "linkText": "Ver detalhes",
+        "anchor": 5
+      },
+      {
+        "icon": "FiShare2",
+        "title": "Com quem compartilhamos",
+        "description": "Infra (AWS), WhatsApp, IA (Claude/GPT). Nunca vendemos seus dados.",
+        "linkText": "Ver detalhes",
+        "anchor": 6
+      },
+      {
+        "icon": "FiLock",
+        "title": "Segurança",
+        "description": "Criptografia ponta a ponta, isolamento de dados, monitoramento 24/7. Seus dados ficam no Brasil.",
+        "linkText": "Ver detalhes",
+        "anchor": 8
+      },
+      {
+        "icon": "FiUserCheck",
+        "title": "Seus direitos",
+        "description": "Acesso, correção, exclusão, portabilidade e mais. Fale conosco: privacidade@catalisa.io",
+        "linkText": "Ver detalhes",
+        "anchor": 10
+      }
+    ]
+  },
+
+  "fullPolicy": {
+    "title": "Política de Privacidade Completa",
+    "subtitle": "Versão jurídica integral conforme LGPD"
+  },
+
+  "controls": {
+    "expandAll": "Expandir tudo",
+    "collapseAll": "Recolher tudo"
+  },
+
+  "cta": {
+    "heading": "Tem dúvidas sobre seus dados?",
+    "subtitle": "Fale com nosso DPO — estamos aqui para ajudar.",
+    "primaryLabel": "privacidade@catalisa.io",
+    "secondaryLabel": "WhatsApp"
+  },
+
   "sections": [
     {
       "title": "Identificação do Controlador",
-      "content": "Esta Politica de Privacidade descreve como a Catalisa coleta, utiliza, armazena e protege seus dados pessoais.\n\nControlador de dados:\nCatalisa Tecnologia e Dados LTDA\nCNPJ: 49.646.439/0001-85\nEndereco: Rodovia Raposo Tavares, 7389 - São Paulo - SP - Brasil - 05577-902\n\nEncarregado de Proteção de Dados (DPO):\nEmail: privacidade@catalisa.io\nCanal de atendimento: privacidade@catalisa.io"
+      "content": "Esta Política de Privacidade descreve como a Catalisa coleta, utiliza, armazena e protege seus dados pessoais.\n\nControlador de dados:\nCatalisa Tecnologia e Dados LTDA\nCNPJ: 49.646.439/0001-85\nEndereço: Rodovia Raposo Tavares, 7389 - São Paulo - SP - Brasil - 05577-902\n\nEncarregado de Proteção de Dados (DPO):\nE-mail: privacidade@catalisa.io\nCanal de atendimento: privacidade@catalisa.io"
     },
     {
       "title": "Escopo",
-      "content": "Esta Politica aplica-se ao tratamento de dados pessoais realizado pela Catalisa em duas categorias:\n\n(a) Dados de usuarios da Plataforma: informações pessoais fornecidas por você ao criar uma conta, utilizar nossos serviços ou interagir com nosso site.\n\n(b) Dados de clientes dos usuarios: informações pessoais de terceiros (clientes finais do Usuário) que são processadas através da Plataforma, especialmente via integrações com WhatsApp. Para esses dados, a relação entre Catalisa e o Usuário segue os papéis definidos na Seção 13.\n\nEsta Politica e parte integrante dos Termos de Uso da Plataforma."
+      "content": "Esta Política aplica-se ao tratamento de dados pessoais realizado pela Catalisa em duas categorias:\n\n(a) Dados de usuários da Plataforma: informações pessoais fornecidas por você ao criar uma conta, utilizar nossos serviços ou interagir com nosso site.\n\n(b) Dados de clientes dos usuários: informações pessoais de terceiros (clientes finais do Usuário) que são processadas através da Plataforma, especialmente via integrações com WhatsApp. Para esses dados, a relação entre Catalisa e o Usuário segue os papéis definidos na Seção 13.\n\nEsta Política é parte integrante dos Termos de Uso da Plataforma."
     },
     {
       "title": "Dados Coletados",
       "content": "Coletamos as seguintes categorias de dados pessoais:",
       "items": [
-        "Dados de cadastro (base legal: execução de contrato): nome completo, email corporativo, telefone, nome da empresa, cargo, CNPJ. Coletados no momento do registro na Plataforma.",
-        "Dados de uso (base legal: legitimo interesse): interações com a Plataforma, funcionalidades utilizadas, logs de acesso, horários de uso, ações realizadas. Coletados automaticamente durante o uso.",
+        "Dados de cadastro (base legal: execução de contrato): nome completo, e-mail corporativo, telefone, nome da empresa, cargo, CNPJ. Coletados no momento do registro na Plataforma.",
+        "Dados de uso (base legal: legítimo interesse): interações com a Plataforma, funcionalidades utilizadas, logs de acesso, horários de uso, ações realizadas. Coletados automaticamente durante o uso.",
         "Dados de comunicação (base legal: execução de contrato): mensagens processadas pela Plataforma, templates de mensagens, configurações de Workflows e Agentes IA. Processados conforme instruções do Usuário.",
-        "Dados tecnicos (base legal: legitimo interesse): endereço IP, tipo e versao do navegador, sistema operacional, dispositivo, resolucao de tela, paginas acessadas, tempo de permanência. Coletados automaticamente por cookies e tecnologias similares."
+        "Dados técnicos (base legal: legítimo interesse): endereço IP, tipo e versão do navegador, sistema operacional, dispositivo, resolução de tela, páginas acessadas, tempo de permanência. Coletados automaticamente por cookies e tecnologias similares."
       ]
     },
     {
@@ -25,9 +99,9 @@
       "content": "O tratamento de dados pessoais pela Catalisa fundamenta-se nas seguintes bases legais previstas na LGPD:",
       "items": [
         "Execução de contrato (Art. 7, V): tratamento necessário para a prestação dos serviços contratados, incluindo criação de conta, processamento de mensagens, execução de Workflows e fornecimento de suporte técnico.",
-        "Legitimo interesse (Art. 7, IX): tratamento necessário para melhorar a Plataforma, garantir segurança, prevenir fraudes, realizar análises de uso e enviar comunicações sobre o serviço. Realizamos avaliação de impacto (LIA) para assegurar que nossos interesses não se sobrepoem aos direitos do titular.",
-        "Consentimento (Art. 7, I): utilizado para finalidades específicas como envio de comunicações de marketing, uso de cookies analíticos e de marketing, e participacao em pesquisas. O consentimento pode ser revogado a qualquer momento sem prejuizo do tratamento realizado anteriormente.",
-        "Cumprimento de obrigação legal (Art. 7, II): tratamento necessário para cumprir obrigações legais e regulatórias, incluindo retenção de dados fiscais e financeiros, atendimento a requisicoes de autoridades competentes e manutenção de registros exigidos por lei."
+        "Legítimo interesse (Art. 7, IX): tratamento necessário para melhorar a Plataforma, garantir segurança, prevenir fraudes, realizar análises de uso e enviar comunicações sobre o serviço. Realizamos avaliação de impacto (LIA) para assegurar que nossos interesses não se sobrepõem aos direitos do titular.",
+        "Consentimento (Art. 7, I): utilizado para finalidades específicas como envio de comunicações de marketing, uso de cookies analíticos e de marketing, e participação em pesquisas. O consentimento pode ser revogado a qualquer momento sem prejuízo do tratamento realizado anteriormente.",
+        "Cumprimento de obrigação legal (Art. 7, II): tratamento necessário para cumprir obrigações legais e regulatórias, incluindo retenção de dados fiscais e financeiros, atendimento a requisições de autoridades competentes e manutenção de registros exigidos por lei."
       ]
     },
     {
@@ -35,12 +109,12 @@
       "content": "Utilizamos seus dados pessoais para as seguintes finalidades:",
       "items": [
         "Prestação dos serviços: operar a Plataforma, processar automações e Workflows, executar Agentes IA e fornecer as funcionalidades contratadas.",
-        "Gerenciamento da conta: criar e manter sua conta, autenticar acessos, gerenciar permissoes e preferências.",
-        "Suporte técnico: atender solicitações de suporte, diagnosticar problemas e fornecer assistencia técnica.",
+        "Gerenciamento da conta: criar e manter sua conta, autenticar acessos, gerenciar permissões e preferências.",
+        "Suporte técnico: atender solicitações de suporte, diagnosticar problemas e fornecer assistência técnica.",
         "Comunicações de serviço: enviar notificações sobre manutenções, atualizações, alterações nos termos e informações essenciais sobre o serviço.",
         "Melhoria da Plataforma: analisar padrões de uso (de forma agregada), identificar melhorias, desenvolver novas funcionalidades e corrigir erros.",
         "Segurança: monitorar atividades suspeitas, prevenir fraudes, detectar vulnerabilidades e proteger a integridade da Plataforma.",
-        "Cumprimento legal: atender obrigações legais, regulatórias e requisicoes de autoridades competentes.",
+        "Cumprimento legal: atender obrigações legais, regulatórias e requisições de autoridades competentes.",
         "Marketing (com consentimento): enviar comunicações sobre novos recursos, conteúdo educativo e ofertas, somente quando autorizado pelo titular."
       ]
     },
@@ -48,7 +122,7 @@
       "title": "Cookies e Tecnologias de Rastreamento",
       "content": "Nosso site e Plataforma utilizam cookies e tecnologias similares para melhorar sua experiência. Utilizamos o Google Tag Manager (GTM) e Google Analytics 4 (GA4) com Consent Mode v2 implementado.\n\nCategorias de cookies:",
       "items": [
-        "Cookies estritamente necessarios: essenciais para o funcionamento da Plataforma, incluindo autenticação, segurança e preferências de sessão. Armazenados via localStorage e cookies de sessão. Não requerem consentimento.",
+        "Cookies estritamente necessários: essenciais para o funcionamento da Plataforma, incluindo autenticação, segurança e preferências de sessão. Armazenados via localStorage e cookies de sessão. Não requerem consentimento.",
         "Cookies analíticos (GA4): coletam dados agregados sobre uso do site e da Plataforma para fins de melhoria. Incluem: _ga (identificação do usuário, 2 anos), _ga_* (estado da sessão, 2 anos). Requerem consentimento.",
         "Cookies de marketing: utilizados para direcionar comunicações relevantes. Ativados apenas com consentimento explícito via banner de cookies.",
         "Recursos externos (imagens): nosso site pode carregar imagens ilustrativas de serviços de terceiros, como Unsplash (Imgur Inc.), para enriquecer o conteúdo editorial. Ao carregar essas imagens, seu navegador realiza requisições diretas aos servidores do provedor, que pode receber dados técnicos como endereço IP, user-agent e URL da página visitada. Esses recursos são carregados com base em legítimo interesse (Art. 7, IX da LGPD) para melhoria da experiência do usuário. Não requerem consentimento adicional, pois não instalam cookies nem rastreadores."
@@ -56,10 +130,10 @@
     },
     {
       "title": "Compartilhamento de Dados",
-      "content": "Não vendemos seus dados pessoais. Compartilhamos dados apenas com as seguintes categorias de destinatarios, na medida necessária para as finalidades descritas nesta Politica:",
+      "content": "Não vendemos seus dados pessoais. Compartilhamos dados apenas com as seguintes categorias de destinatários, na medida necessária para as finalidades descritas nesta Política:",
       "items": [
         "Provedores de infraestrutura (AWS/GCP): hospedagem, armazenamento e processamento de dados. Servidores localizados no Brasil, com replicação para continuidade de serviço.",
-        "Meta/WhatsApp: processamento de mensagens através da API do WhatsApp Business. Necessário para o funcionamento das integrações de comunicação. Sujeito aos Termos de Serviço e Politica de Privacidade do WhatsApp.",
+        "Meta/WhatsApp: processamento de mensagens através da API do WhatsApp Business. Necessário para o funcionamento das integrações de comunicação. Sujeito aos Termos de Serviço e Política de Privacidade do WhatsApp.",
         "Anthropic (Claude): processamento de linguagem natural e geração de conteúdo por Agentes IA. Dados podem ser transferidos para servidores nos Estados Unidos (ver Seção 8).",
         "OpenAI (GPT): processamento de linguagem natural e geração de conteúdo por Agentes IA. Dados podem ser transferidos para servidores nos Estados Unidos (ver Seção 8).",
         "Unsplash (Imgur Inc.): fornecimento de imagens ilustrativas para conteúdo editorial do site. Ao carregar páginas com imagens externas, seu navegador realiza requisições aos servidores da Unsplash, que podem receber dados técnicos (endereço IP, user-agent). Nenhum dado pessoal é compartilhado ativamente pela Catalisa. Sujeito à Política de Privacidade da Unsplash (unsplash.com/privacy).",
@@ -68,30 +142,30 @@
       ]
     },
     {
-      "title": "Transferencia Internacional de Dados",
-      "content": "Alguns dos nossos subprocessadores, especificamente Anthropic e OpenAI, operam servidores nos Estados Unidos. Isso significa que dados pessoais processados por Agentes IA podem ser transferidos para fora do Brasil.\n\nPara garantir a proteção adequada dos dados transferidos internacionalmente, adotamos as seguintes salvaguardas conforme a LGPD (Art. 33):\n\n(a) Cláusulas contratuais padrão com compromissos de proteção de dados equivalentes aos da legislação brasileira.\n(b) Avaliação de impacto de transferencia internacional para verificar o nível de proteção do país destinatário.\n(c) Garantias de que os subprocessadores aplicam medidas técnicas e organizacionais adequadas para proteção dos dados.\n\nMinimizamos a transferencia de dados pessoais para o exterior, utilizando anonimização e pseudonimização sempre que possível antes do envio para processamento por modelos de IA."
+      "title": "Transferência Internacional de Dados",
+      "content": "Alguns dos nossos subprocessadores, especificamente Anthropic e OpenAI, operam servidores nos Estados Unidos. Isso significa que dados pessoais processados por Agentes IA podem ser transferidos para fora do Brasil.\n\nPara garantir a proteção adequada dos dados transferidos internacionalmente, adotamos as seguintes salvaguardas conforme a LGPD (Art. 33):\n\n(a) Cláusulas contratuais padrão com compromissos de proteção de dados equivalentes aos da legislação brasileira.\n(b) Avaliação de impacto de transferência internacional para verificar o nível de proteção do país destinatário.\n(c) Garantias de que os subprocessadores aplicam medidas técnicas e organizacionais adequadas para proteção dos dados.\n\nMinimizamos a transferência de dados pessoais para o exterior, utilizando anonimização e pseudonimização sempre que possível antes do envio para processamento por modelos de IA."
     },
     {
       "title": "Segurança dos Dados",
       "content": "Implementamos medidas técnicas e organizacionais robustas para proteger seus dados pessoais contra acesso não autorizado, destruição, perda, alteração ou vazamento:",
       "items": [
-        "Criptografia em transito (TLS 1.2+) para todas as comunicações entre o navegador e nossos servidores.",
+        "Criptografia em trânsito (TLS 1.2+) para todas as comunicações entre o navegador e nossos servidores.",
         "Criptografia em repouso (AES-256) para dados armazenados em nossos bancos de dados e sistemas de arquivos.",
         "Isolamento multi-tenant com controle de acesso baseado em papéis (RBAC), garantindo que cada organização acesse apenas seus próprios dados.",
         "Mascaramento automático de dados sensíveis (PII masking) nos logs e ambientes de desenvolvimento.",
         "Backups automáticos com redundância geográfica e testes periódicos de restauração.",
         "Monitoramento 24/7 com detecção de anomalias e alertas de segurança em tempo real.",
         "Infraestrutura primária hospedada em data centers no Brasil com certificações de segurança (ISO 27001, SOC 2).",
-        "Testes de penetracao periódicos realizados por equipes especializadas.",
+        "Testes de penetração periódicos realizados por equipes especializadas.",
         "Programa de treinamento em segurança e privacidade para todos os colaboradores."
       ]
     },
     {
       "title": "Retenção de Dados",
-      "content": "Retemos seus dados pessoais apenas pelo tempo necessário para cumprir as finalidades descritas nesta Politica, observando os seguintes prazos:",
+      "content": "Retemos seus dados pessoais apenas pelo tempo necessário para cumprir as finalidades descritas nesta Política, observando os seguintes prazos:",
       "items": [
         "Dados de conta: mantidos enquanto a conta estiver ativa, acrescidos de 6 (seis) meses após o encerramento para permitir reativação e atender obrigações legais.",
-        "Logs de acesso e segurança: mantidos por 12 (doze) meses, conforme exigido pelo Marco Civil da Internet (Lei n. 12.965/2014).",
+        "Logs de acesso e segurança: mantidos por 12 (doze) meses, conforme exigido pelo Marco Civil da Internet (Lei nº 12.965/2014).",
         "Dados de comunicação (mensagens): mantidos conforme configuração do Workflow do Usuário, acrescidos de 90 (noventa) dias após a exclusão para fins de backup e recuperação.",
         "Dados financeiros e fiscais: mantidos por 5 (cinco) anos, conforme legislação tributária brasileira.",
         "Dados anonimizados e agregados: podem ser mantidos indefinidamente, pois não permitem a identificação do titular."
@@ -101,32 +175,32 @@
       "title": "Direitos do Titular (LGPD Art. 18)",
       "content": "De acordo com a LGPD, você possui os seguintes direitos em relação aos seus dados pessoais:",
       "items": [
-        "Confirmação da existencia de tratamento: saber se a Catalisa trata seus dados pessoais.",
-        "Acesso aos dados: obter copia dos dados pessoais que possuimos sobre você.",
+        "Confirmação da existência de tratamento: saber se a Catalisa trata seus dados pessoais.",
+        "Acesso aos dados: obter cópia dos dados pessoais que possuímos sobre você.",
         "Correção de dados: solicitar a correção de dados incompletos, inexatos ou desatualizados.",
-        "Anonimização, bloqueio ou eliminação: solicitar quando os dados forem desnecessarios, excessivos ou tratados em desconformidade com a LGPD.",
-        "Portabilidade dos dados: obter seus dados em formato estruturado para transferencia a outro fornecedor de serviço.",
+        "Anonimização, bloqueio ou eliminação: solicitar quando os dados forem desnecessários, excessivos ou tratados em desconformidade com a LGPD.",
+        "Portabilidade dos dados: obter seus dados em formato estruturado para transferência a outro fornecedor de serviço.",
         "Eliminação de dados tratados com consentimento: solicitar a exclusão de dados cujo tratamento tenha sido baseado em consentimento.",
-        "Informação sobre compartilhamento: saber com quais entidades publicas e privadas seus dados foram compartilhados.",
-        "Oposição ao tratamento: opor-se ao tratamento realizado com base em legitimo interesse, caso entenda que seus direitos prevalecem.",
+        "Informação sobre compartilhamento: saber com quais entidades públicas e privadas seus dados foram compartilhados.",
+        "Oposição ao tratamento: opor-se ao tratamento realizado com base em legítimo interesse, caso entenda que seus direitos prevalecem.",
         "Revisão de decisões automatizadas: solicitar revisão humana de decisões tomadas unicamente com base em tratamento automatizado de dados pessoais, incluindo decisões de Agentes IA."
       ]
     },
     {
       "title": "Decisões Automatizadas",
-      "content": "A Plataforma utiliza Agentes IA que processam dados pessoais de forma automatizada para gerar respostas, classificar solicitações e executar Workflows.\n\nConforme a LGPD (Art. 20), você tem o direito de solicitar revisão humana de decisões tomadas unicamente com base em tratamento automatizado de dados pessoais que afetem seus interesses, incluindo decisões sobre perfilamento.\n\nPara solicitar revisão humana ou obter informações sobre a lógica utilizada nas decisões automatizadas, entre em contato com nosso Encarregado de Proteção de Dados através do email privacidade@catalisa.io. Responderemos em até 15 (quinze) dias úteis."
+      "content": "A Plataforma utiliza Agentes IA que processam dados pessoais de forma automatizada para gerar respostas, classificar solicitações e executar Workflows.\n\nConforme a LGPD (Art. 20), você tem o direito de solicitar revisão humana de decisões tomadas unicamente com base em tratamento automatizado de dados pessoais que afetem seus interesses, incluindo decisões sobre perfilamento.\n\nPara solicitar revisão humana ou obter informações sobre a lógica utilizada nas decisões automatizadas, entre em contato com nosso Encarregado de Proteção de Dados através do e-mail privacidade@catalisa.io. Responderemos em até 15 (quinze) dias úteis."
     },
     {
       "title": "Dados de Terceiros (Clientes do Usuário)",
-      "content": "Quando o Usuário processa dados pessoais de seus próprios clientes através da Plataforma (especialmente via integrações com WhatsApp), as partes atuam nos seguintes papéis:\n\n- Usuário: Controlador dos dados pessoais de seus clientes. Responsável por definir a finalidade e base legal do tratamento, informar seus clientes sobre o uso da Plataforma e atender solicitações de direitos dos titulares.\n\n- Catalisa: Operadora dos dados pessoais dos clientes do Usuário. Processa os dados exclusivamente conforme as instruções do Usuário e para a prestação dos serviços contratados.\n\nO Usuário e responsável por:\n\n(a) Garantir que possui base legal valida para processar os dados de seus clientes através da Plataforma.\n(b) Fornecer informações claras aos seus clientes sobre o tratamento de dados, incluindo a existencia de processamento por inteligência artificial.\n(c) Atender solicitações de direitos dos titulares em tempo habil.\n(d) Celebrar um Acordo de Processamento de Dados (DPA) com a Catalisa, quando necessário, disponível mediante solicitação."
+      "content": "Quando o Usuário processa dados pessoais de seus próprios clientes através da Plataforma (especialmente via integrações com WhatsApp), as partes atuam nos seguintes papéis:\n\n- Usuário: Controlador dos dados pessoais de seus clientes. Responsável por definir a finalidade e base legal do tratamento, informar seus clientes sobre o uso da Plataforma e atender solicitações de direitos dos titulares.\n\n- Catalisa: Operadora dos dados pessoais dos clientes do Usuário. Processa os dados exclusivamente conforme as instruções do Usuário e para a prestação dos serviços contratados.\n\nO Usuário é responsável por:\n\n(a) Garantir que possui base legal válida para processar os dados de seus clientes através da Plataforma.\n(b) Fornecer informações claras aos seus clientes sobre o tratamento de dados, incluindo a existência de processamento por inteligência artificial.\n(c) Atender solicitações de direitos dos titulares em tempo hábil.\n(d) Celebrar um Acordo de Processamento de Dados (DPA) com a Catalisa, quando necessário, disponível mediante solicitação."
     },
     {
       "title": "Incidentes de Segurança",
-      "content": "Em caso de incidente de segurança que possa acarretar risco ou dano relevante aos titulares de dados pessoais, a Catalisa adotara as seguintes medidas:\n\n(a) Notificação a Autoridade Nacional de Proteção de Dados (ANPD) em até 72 (setenta e duas) horas úteis após a confirmação do incidente, conforme Art. 48 da LGPD.\n\n(b) Comunicação ao titular dos dados afetados, em prazo razoável, contendo: descrição da natureza dos dados afetados, informações sobre os riscos, medidas adotadas para mitigar os efeitos e orientações ao titular.\n\n(c) Registro interno do incidente com documentação completa: natureza, dados afetados, titulares impactados, medidas técnicas adotadas e resultado das ações de contenção.\n\n(d) Notificação ao Usuário (quando Operadora) para que este tome as providencias necessarias junto a seus clientes."
+      "content": "Em caso de incidente de segurança que possa acarretar risco ou dano relevante aos titulares de dados pessoais, a Catalisa adotará as seguintes medidas:\n\n(a) Notificação à Autoridade Nacional de Proteção de Dados (ANPD) em até 72 (setenta e duas) horas após a confirmação do incidente, conforme Art. 48 da LGPD.\n\n(b) Comunicação ao titular dos dados afetados, em prazo razoável, contendo: descrição da natureza dos dados afetados, informações sobre os riscos, medidas adotadas para mitigar os efeitos e orientações ao titular.\n\n(c) Registro interno do incidente com documentação completa: natureza, dados afetados, titulares impactados, medidas técnicas adotadas e resultado das ações de contenção.\n\n(d) Notificação ao Usuário (quando Operadora) para que este tome as providências necessárias junto a seus clientes."
     },
     {
       "title": "Disposições Finais",
-      "content": "Menores de idade. Nossos serviços não são destinados a menores de 18 (dezoito) anos. Não coletamos intencionalmente dados pessoais de menores. Caso tome conhecimento de que dados de um menor foram coletados, entre em contato conosco para que possamos exclui-los.\n\nAlteracoes nesta Politica. Podemos atualizar esta Politica de Privacidade periodicamente. Alterações significativas serão comunicadas com antecedência mínima de 30 (trinta) dias por email ou notificação na Plataforma. O uso continuado da Plataforma após o prazo de notificação constitui aceitação da Politica atualizada.\n\nContato. Para exercer seus direitos, esclarecer dúvidas ou enviar reclamações sobre esta Politica:\n\nEmail do DPO: privacidade@catalisa.io\nEmail geral: contato@catalisa.io\nWhatsApp: +55 11 97730-3414\n\nForo. Fica eleito o foro da Comarca de São Paulo, Estado de São Paulo, Brasil, para dirimir quaisquer controvérsias decorrentes desta Politica."
+      "content": "Menores de idade. Nossos serviços não são destinados a menores de 18 (dezoito) anos. Não coletamos intencionalmente dados pessoais de menores. Caso tome conhecimento de que dados de um menor foram coletados, entre em contato conosco para que possamos excluí-los.\n\nAlterações nesta Política. Podemos atualizar esta Política de Privacidade periodicamente. Alterações significativas serão comunicadas com antecedência mínima de 30 (trinta) dias por e-mail ou notificação na Plataforma. O uso continuado da Plataforma após o prazo de notificação constitui aceitação da Política atualizada.\n\nContato. Para exercer seus direitos, esclarecer dúvidas ou enviar reclamações sobre esta Política:\n\nE-mail do DPO: privacidade@catalisa.io\nE-mail geral: contato@catalisa.io\nWhatsApp: +55 11 97730-3414\n\nForo. Fica eleito o foro da Comarca de São Paulo, Estado de São Paulo, Brasil, para dirimir quaisquer controvérsias decorrentes desta Política."
     }
   ]
 }

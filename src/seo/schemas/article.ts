@@ -26,7 +26,12 @@ export function getBlogPostingSchema(article: Article, title: string, descriptio
       '@type': 'WebPage',
       '@id': `${BASE_URL}/insights/${article.slug}`,
     },
-    image: `${BASE_URL}/og/insights/${article.slug}.png`,
+    image: {
+      '@type': 'ImageObject',
+      url: `${BASE_URL}/og/insights/${article.slug}.png`,
+      width: 1200,
+      height: 630,
+    },
     articleSection: article.category,
     keywords: keywords,
     wordCount: article.readingTime * 200,

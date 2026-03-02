@@ -21,14 +21,24 @@ interface SEOHeadProps {
 }
 
 function setMeta(nameOrProperty: string, content: string) {
-  const isOg = nameOrProperty.startsWith('og:') || nameOrProperty.startsWith('twitter:');
+  const isOg = nameOrProperty.startsWith('og:') || nameOrProperty.startsWith('article:');
   const attr = isOg ? 'property' : 'name';
   // First try to find an existing data-seo tag
   let el = document.querySelector(`meta[${attr}="${nameOrProperty}"][data-seo="true"]`) as HTMLMetaElement | null;
-  // Then try to reuse a static tag from index.html (no data-seo)
+  // Then try to reuse a static tag from index.html (no data-seo) — check both name and property
+  // since twitter: tags may use either attribute depending on source
   if (!el) {
-    el = document.querySelector(`meta[${attr}="${nameOrProperty}"]:not([data-seo])`) as HTMLMetaElement | null;
-    if (el) el.setAttribute('data-seo', 'true');
+    el = (
+      document.querySelector(`meta[${attr}="${nameOrProperty}"]:not([data-seo])`) ??
+      document.querySelector(`meta[name="${nameOrProperty}"]:not([data-seo])`) ??
+      document.querySelector(`meta[property="${nameOrProperty}"]:not([data-seo])`)
+    ) as HTMLMetaElement | null;
+    if (el) {
+      el.setAttribute('data-seo', 'true');
+      // Normalize to the correct attribute
+      el.removeAttribute(attr === 'property' ? 'name' : 'property');
+      el.setAttribute(attr, nameOrProperty);
+    }
   }
   if (!el) {
     el = document.createElement('meta');
@@ -102,22 +112,27 @@ export function SEOHead({ pageKey, title, description, ogImage, noIndex, article
     setMeta('og:title', resolvedTitle);
     setMeta('og:description', resolvedDescription);
     setMeta('og:image', resolvedOgImage);
+    setMeta('og:image:secure_url', resolvedOgImage);
+    setMeta('og:image:width', '1200');
+    setMeta('og:image:height', '630');
+    setMeta('og:image:type', 'image/png');
+    setMeta('og:image:alt', resolvedTitle);
     setMeta('og:url', canonicalUrl);
     setMeta('og:type', article ? 'article' : 'website');
     setMeta('og:locale', lang === 'en-US' ? 'en_US' : 'pt_BR');
     setMeta('og:locale:alternate', lang === 'en-US' ? 'pt_BR' : 'en_US');
     setMeta('og:site_name', 'Catalisa');
 
-    // Clean up previous article tags
-    document.querySelectorAll('meta[property^="og:article:"][data-seo-article]').forEach((el) => el.remove());
+    // Clean up previous article tags (both article: and legacy og:article: prefixes)
+    document.querySelectorAll('meta[data-seo-article]').forEach((el) => el.remove());
 
-    // Article-specific OG tags
+    // Article-specific OG tags (using official OGP article: prefix)
     if (article) {
       const articleMetas: [string, string][] = [
-        ['og:article:published_time', article.publishedTime],
-        ['og:article:modified_time', article.modifiedTime],
-        ['og:article:author', article.author],
-        ['og:article:section', article.section],
+        ['article:published_time', article.publishedTime],
+        ['article:modified_time', article.modifiedTime],
+        ['article:author', article.author],
+        ['article:section', article.section],
       ];
       for (const [prop, content] of articleMetas) {
         const el = document.createElement('meta');
@@ -129,7 +144,7 @@ export function SEOHead({ pageKey, title, description, ogImage, noIndex, article
       }
       for (const tag of article.tags) {
         const el = document.createElement('meta');
-        el.setAttribute('property', 'og:article:tag');
+        el.setAttribute('property', 'article:tag');
         el.content = tag;
         el.setAttribute('data-seo', 'true');
         el.setAttribute('data-seo-article', 'true');
@@ -142,6 +157,7 @@ export function SEOHead({ pageKey, title, description, ogImage, noIndex, article
     setMeta('twitter:title', resolvedTitle);
     setMeta('twitter:description', resolvedDescription);
     setMeta('twitter:image', resolvedOgImage);
+    setMeta('twitter:image:alt', resolvedTitle);
 
     // Hreflang links (absorbing HreflangMeta logic)
     // First remove any old hreflang links (from HreflangMeta or previous render)

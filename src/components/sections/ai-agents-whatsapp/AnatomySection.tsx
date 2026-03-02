@@ -166,7 +166,7 @@ export function AnatomySection() {
                 <MotionBox
                   position={{ md: 'absolute' }}
                   left={{ base: '12px', md: '50%' }}
-                  transform={{ md: 'translateX(-50%)' }}
+                  ml={{ md: '-9px' }}
                   w="18px"
                   h="18px"
                   borderRadius="full"

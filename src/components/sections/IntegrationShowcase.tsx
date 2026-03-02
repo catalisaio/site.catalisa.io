@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { Box, Container, Text, VStack, HStack, Icon } from '@chakra-ui/react';
-import { useScroll, useTransform, motion } from 'framer-motion';
+import { useScroll, useTransform, useSpring, motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import {
   SiWhatsapp, SiTelegram, SiSlack, SiGmail, SiTwilio, SiMailchimp, SiSendgrid,
@@ -230,14 +230,12 @@ const row3 = brands.slice(Math.ceil((brands.length * 2) / 3));
 
 function ScrollRow({ items, reverse = false, scrollYProgress }: { items: Brand[]; reverse?: boolean; scrollYProgress: ReturnType<typeof useScroll>['scrollYProgress'] }) {
   const doubled = [...items, ...items];
-  // Map scroll progress [0,1] to translateX range
-  // Forward rows: start offset, move left as you scroll
-  // Reverse rows: start further left, move right as you scroll
-  const x = useTransform(
+  const rawX = useTransform(
     scrollYProgress,
     [0, 1],
-    reverse ? ['-40%', '0%'] : ['0%', '-40%'],
+    reverse ? ['-15%', '0%'] : ['0%', '-15%'],
   );
+  const x = useSpring(rawX, { stiffness: 50, damping: 30, mass: 1 });
 
   return (
     <Box overflow="hidden" position="relative" w="100%">

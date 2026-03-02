@@ -127,8 +127,9 @@ function App() {
                 <Route path="/integracoes/whatsapp" element={<WhatsAppIntegration />} />
                 <Route path="/agentes-ia-whatsapp" element={<AIAgentsWhatsApp />} />
                 <Route path="/press-kit" element={<PressKit />} />
-                <Route path="/insights" element={<InsightsListing />} />
-                <Route path="/insights/magazine" element={<InsightsListingMagazine />} />
+                <Route path="/insights" element={<InsightsListingMagazine />} />
+                <Route path="/insights/all" element={<InsightsListing />} />
+                <Route path="/insights/magazine" element={<Navigate to="/insights" replace />} />
                 <Route path="/insights/:slug" element={<InsightArticle />} />
               </Route>
 
@@ -157,8 +158,9 @@ function App() {
                 <Route path="integrations/whatsapp" element={<WhatsAppIntegration />} />
                 <Route path="ai-agents-whatsapp" element={<AIAgentsWhatsApp />} />
                 <Route path="press-kit" element={<PressKit />} />
-                <Route path="insights" element={<InsightsListing />} />
-                <Route path="insights/magazine" element={<InsightsListingMagazine />} />
+                <Route path="insights" element={<InsightsListingMagazine />} />
+                <Route path="insights/all" element={<InsightsListing />} />
+                <Route path="insights/magazine" element={<Navigate to="/en/insights" replace />} />
                 <Route path="insights/:slug" element={<InsightArticle />} />
               </Route>
 

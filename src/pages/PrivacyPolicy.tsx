@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useState, useCallback } from 'react';
 import {
   Box, Heading, Text, VStack, SimpleGrid, HStack, Icon, Button,
   Accordion, AccordionItem, AccordionButton, AccordionPanel, AccordionIcon,
@@ -44,7 +44,6 @@ interface PolicySection {
 
 export function PrivacyPolicy() {
   const { t } = useTranslation('privacy');
-  const accordionRef = useRef<HTMLDivElement>(null);
   const [expandedIndices, setExpandedIndices] = useState<number[]>([]);
 
   const cards = t('summary.cards', { returnObjects: true }) as SummaryCard[];
@@ -55,20 +54,30 @@ export function PrivacyPolicy() {
   const handleExpandAll = () => setExpandedIndices(allIndices);
   const handleCollapseAll = () => setExpandedIndices([]);
 
-  const scrollToSection = (sectionIndex: number) => {
-    setExpandedIndices((prev) =>
-      prev.includes(sectionIndex) ? prev : [...prev, sectionIndex]
-    );
-    requestAnimationFrame(() => {
-      setTimeout(() => {
-        const el = document.getElementById(`policy-section-${sectionIndex}`);
-        if (el) {
-          const y = el.getBoundingClientRect().top + window.scrollY - 100;
-          window.scrollTo({ top: y, behavior: 'smooth' });
-        }
-      }, 300);
-    });
-  };
+  const handleAccordionChange = useCallback((indices: number | number[]) => {
+    setExpandedIndices(Array.isArray(indices) ? indices : [indices]);
+  }, []);
+
+  const scrollToSection = useCallback((sectionIndex: number) => {
+    // 1. Collapse all, then open only the target
+    setExpandedIndices([sectionIndex]);
+
+    // 2. Jump instantly to accordion area (triggers MotionBox whileInView)
+    const wrapper = document.getElementById('politica-completa');
+    if (wrapper) {
+      const wy = wrapper.getBoundingClientRect().top + window.scrollY - 80;
+      window.scrollTo({ top: wy });
+    }
+
+    // 3. After MotionBox animates + accordion expands, smooth scroll to exact item
+    setTimeout(() => {
+      const el = document.getElementById(`policy-section-${sectionIndex}`);
+      if (el) {
+        const ey = el.getBoundingClientRect().top + window.scrollY - 80;
+        window.scrollTo({ top: ey, behavior: 'smooth' });
+      }
+    }, 500);
+  }, []);
 
   return (
     <>
@@ -180,11 +189,11 @@ export function PrivacyPolicy() {
         </Text>
 
         {/* Accordion */}
-        <Box maxW="900px" mx="auto" ref={accordionRef}>
+        <Box maxW="900px" mx="auto">
           <Accordion
             allowMultiple
             index={expandedIndices}
-            onChange={(indices) => setExpandedIndices(indices as number[])}
+            onChange={handleAccordionChange}
           >
             {sections.map((section, i) => (
               <AccordionItem

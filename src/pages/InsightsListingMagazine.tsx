@@ -3,13 +3,11 @@ import {
   Box,
   Container,
   HStack,
-  Button,
   Heading,
   Text,
   Badge,
   Flex,
 } from '@chakra-ui/react';
-import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useLocalizedPath } from '../i18n/useLocalizedPath';
 import { SEOHead } from '../seo/SEOHead';
@@ -38,10 +36,6 @@ export function InsightsListingMagazine() {
   const { t: tSeo } = useTranslation('seo');
   const { t: tCommon } = useTranslation('common');
   const lp = useLocalizedPath();
-  const location = useLocation();
-
-  // Determine if we're on the magazine variant (for toggle highlight)
-  const isMagazine = location.pathname.includes('/magazine');
 
   // Sort articles by date (most recent first)
   const sorted = useMemo(
@@ -99,7 +93,6 @@ export function InsightsListingMagazine() {
       getBreadcrumbSchema([
         { name: tSeo('breadcrumbs.home'), path: lp('/') },
         { name: 'Insights', path: lp('/insights') },
-        { name: 'Magazine', path: lp('/insights/magazine') },
       ]),
     ],
     [t, tSeo, lp],
@@ -107,7 +100,7 @@ export function InsightsListingMagazine() {
 
   return (
     <>
-      <SEOHead pageKey="insightsMagazine" />
+      <SEOHead pageKey="insights" />
       <JsonLd data={schemas} />
 
       {/* 1. Header Editorial Slim */}
@@ -137,31 +130,6 @@ export function InsightsListingMagazine() {
               </Badge>
             </HStack>
 
-            {/* Toggle Grid/Magazine */}
-            <HStack spacing={2} bg="gray.100" borderRadius="full" p={1}>
-              <Button
-                as={Link}
-                to={lp('/insights')}
-                size="sm"
-                borderRadius="full"
-                variant={!isMagazine ? 'solid' : 'ghost'}
-                colorScheme={!isMagazine ? 'brand' : 'gray'}
-                fontWeight="500"
-              >
-                Grid
-              </Button>
-              <Button
-                as={Link}
-                to={lp('/insights/magazine')}
-                size="sm"
-                borderRadius="full"
-                variant={isMagazine ? 'solid' : 'ghost'}
-                colorScheme={isMagazine ? 'brand' : 'gray'}
-                fontWeight="500"
-              >
-                Magazine
-              </Button>
-            </HStack>
           </Flex>
         </Container>
       </Box>

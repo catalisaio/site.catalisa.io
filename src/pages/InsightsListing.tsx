@@ -57,6 +57,7 @@ export function InsightsListing() {
       getBreadcrumbSchema([
         { name: tSeo('breadcrumbs.home'), path: lp('/') },
         { name: 'Insights', path: lp('/insights') },
+        { name: t('listing.filterAll'), path: lp('/insights/all') },
       ]),
     ],
     [t, tSeo, lp],
@@ -71,7 +72,7 @@ export function InsightsListing() {
 
   return (
     <>
-      <SEOHead pageKey="insights" />
+      <SEOHead pageKey="insightsAll" />
       <JsonLd data={schemas} />
 
       {/* Hero — Light theme, commercial, impactful */}

@@ -1,4 +1,6 @@
+import { useRef } from 'react';
 import { Box, Container, Text, VStack, HStack, Icon } from '@chakra-ui/react';
+import { useScroll, useTransform, motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import {
   SiWhatsapp, SiTelegram, SiSlack, SiGmail, SiTwilio, SiMailchimp, SiSendgrid,
@@ -226,22 +228,26 @@ const row1 = brands.slice(0, Math.ceil(brands.length / 3));
 const row2 = brands.slice(Math.ceil(brands.length / 3), Math.ceil((brands.length * 2) / 3));
 const row3 = brands.slice(Math.ceil((brands.length * 2) / 3));
 
-function MarqueeRow({ items, reverse = false }: { items: Brand[]; reverse?: boolean }) {
+function ScrollRow({ items, reverse = false, scrollYProgress }: { items: Brand[]; reverse?: boolean; scrollYProgress: ReturnType<typeof useScroll>['scrollYProgress'] }) {
   const doubled = [...items, ...items];
+  // Map scroll progress [0,1] to translateX range
+  // Forward rows: start offset, move left as you scroll
+  // Reverse rows: start further left, move right as you scroll
+  const x = useTransform(
+    scrollYProgress,
+    [0, 1],
+    reverse ? ['-40%', '0%'] : ['0%', '-40%'],
+  );
+
   return (
     <Box overflow="hidden" position="relative" w="100%">
-      <HStack
-        spacing={{ base: 6, md: 8 }}
-        w="max-content"
-        className={reverse ? 'marquee-reverse' : 'marquee-forward'}
-        py={3}
-      >
+      <motion.div style={{ x, display: 'flex', gap: '2rem', width: 'max-content', padding: '0.75rem 0' }}>
         {doubled.map((brand, i) => (
           <HStack
             key={`${brand.name}-${i}`}
             spacing={2}
             flexShrink={0}
-            opacity={0.7}
+            opacity={0.55}
             _hover={{ opacity: 1 }}
             transition="opacity 0.2s"
             cursor="default"
@@ -252,22 +258,26 @@ function MarqueeRow({ items, reverse = false }: { items: Brand[]; reverse?: bool
               fontWeight="600"
               color="gray.500"
               whiteSpace="nowrap"
-              _groupHover={{ color: 'gray.700' }}
             >
               {brand.name}
             </Text>
           </HStack>
         ))}
-      </HStack>
+      </motion.div>
     </Box>
   );
 }
 
 export function IntegrationShowcase() {
   const { t } = useTranslation('common');
+  const containerRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ['start end', 'end start'],
+  });
 
   return (
-    <Box bg="white" py={{ base: 10, md: 14, lg: 18 }} overflow="hidden">
+    <Box ref={containerRef} bg="white" py={{ base: 10, md: 14, lg: 18 }} overflow="hidden">
       <Container maxW="1280px" mb={{ base: 6, md: 10 }}>
         <VStack spacing={3}>
           <Text
@@ -297,9 +307,9 @@ export function IntegrationShowcase() {
         <Box position="absolute" right={0} top={0} bottom={0} w={{ base: '40px', md: '120px' }} bgGradient="linear(to-l, white, transparent)" zIndex={1} />
 
         <VStack spacing={0}>
-          <MarqueeRow items={row1} />
-          <MarqueeRow items={row2} reverse />
-          <MarqueeRow items={row3} />
+          <ScrollRow items={row1} scrollYProgress={scrollYProgress} />
+          <ScrollRow items={row2} scrollYProgress={scrollYProgress} reverse />
+          <ScrollRow items={row3} scrollYProgress={scrollYProgress} />
         </VStack>
       </Box>
     </Box>

@@ -13,17 +13,27 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Logo marquee animation */
-@keyframes marquee {
+/* Integration showcase marquee */
+@keyframes marquee-forward {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
 
-.marquee-track {
-  animation: marquee 30s linear infinite;
+@keyframes marquee-reverse {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
 }
 
-.marquee-track:hover {
+.marquee-forward {
+  animation: marquee-forward 60s linear infinite;
+}
+
+.marquee-reverse {
+  animation: marquee-reverse 60s linear infinite;
+}
+
+.marquee-forward:hover,
+.marquee-reverse:hover {
   animation-play-state: paused;
 }
 

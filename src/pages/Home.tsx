@@ -1,6 +1,6 @@
 import { lazy, Suspense } from 'react';
 import { HeroTeamBuilder } from '../components/sections/HeroTeamBuilder';
-import { LogoMarquee } from '../components/sections/LogoMarquee';
+import { IntegrationShowcase } from '../components/sections/IntegrationShowcase';
 
 const MarketValidation = lazy(() => import('../components/sections/MarketValidation').then(m => ({ default: m.MarketValidation })));
 const MeetYourTeam = lazy(() => import('../components/sections/MeetYourTeam').then(m => ({ default: m.MeetYourTeam })));
@@ -22,7 +22,7 @@ export function Home() {
   return (
     <>
       <HeroTeamBuilder />
-      <LogoMarquee />
+      <IntegrationShowcase />
       <Suspense>
         <YourToolsTheirHands />
         <MarketValidation />

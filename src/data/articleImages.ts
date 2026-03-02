@@ -51,8 +51,8 @@ const articleImageOverrides: Record<string, Partial<ArticleImage>> = {
     thumbnail: 'https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=400&h=300&fit=crop&q=80',
   },
   'magalu-lu-vendedora-ia-whatsapp': {
-    hero: 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=1200&h=800&fit=crop&q=80',
-    thumbnail: 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=400&h=300&fit=crop&q=80',
+    hero: 'https://images.unsplash.com/photo-1556742031-c6961e8560b0?w=1200&h=800&fit=crop&q=80',
+    thumbnail: 'https://images.unsplash.com/photo-1556742031-c6961e8560b0?w=400&h=300&fit=crop&q=80',
   },
   'lotte-homeshopping-ia-reducao-40-carga-atendimento': {
     hero: 'https://images.unsplash.com/photo-1560438718-eb61ede255eb?w=1200&h=800&fit=crop&q=80',
@@ -72,8 +72,8 @@ const articleImageOverrides: Record<string, Partial<ArticleImage>> = {
     thumbnail: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&h=300&fit=crop&q=80',
   },
   'ifood-cris-mentora-ia-restaurantes': {
-    hero: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&h=800&fit=crop&q=80',
-    thumbnail: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&h=300&fit=crop&q=80',
+    hero: 'https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=1200&h=800&fit=crop&q=80',
+    thumbnail: 'https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=400&h=300&fit=crop&q=80',
   },
   'foodtech-ia-transformacao-conversacional': {
     hero: 'https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=1200&h=800&fit=crop&q=80',
@@ -81,8 +81,8 @@ const articleImageOverrides: Record<string, Partial<ArticleImage>> = {
   },
   // ── Atendimento ─────────────────────────────────────────────────────
   'synthesia-intercom-fin-ia-suporte-escala': {
-    hero: 'https://images.unsplash.com/photo-1573164713988-8665fc963095?w=1200&h=800&fit=crop&q=80',
-    thumbnail: 'https://images.unsplash.com/photo-1573164713988-8665fc963095?w=400&h=300&fit=crop&q=80',
+    hero: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200&h=800&fit=crop&q=80',
+    thumbnail: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=300&fit=crop&q=80',
   },
   'synthesia-fin-ai-spike-690-suporte': {
     hero: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1200&h=800&fit=crop&q=80',
@@ -123,8 +123,8 @@ const articleImageOverrides: Record<string, Partial<ArticleImage>> = {
   },
   // ── Estrategia ──────────────────────────────────────────────────────
   'klarna-ia-40m-economia-contraponto': {
-    hero: 'https://images.unsplash.com/photo-1556742111-a301076d9d18?w=1200&h=800&fit=crop&q=80',
-    thumbnail: 'https://images.unsplash.com/photo-1556742111-a301076d9d18?w=400&h=300&fit=crop&q=80',
+    hero: 'https://images.unsplash.com/photo-1556740758-90de374c12ad?w=1200&h=800&fit=crop&q=80',
+    thumbnail: 'https://images.unsplash.com/photo-1556740758-90de374c12ad?w=400&h=300&fit=crop&q=80',
   },
   'roi-ia-customer-experience-dados': {
     hero: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&h=800&fit=crop&q=80',
@@ -136,16 +136,16 @@ const articleImageOverrides: Record<string, Partial<ArticleImage>> = {
     thumbnail: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=300&fit=crop&q=80',
   },
   'banco-bv-agentes-ia-reducao-rechamadas': {
-    hero: 'https://images.unsplash.com/photo-1639322537228-f710d846310a?w=1200&h=800&fit=crop&q=80',
-    thumbnail: 'https://images.unsplash.com/photo-1639322537228-f710d846310a?w=400&h=300&fit=crop&q=80',
+    hero: 'https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?w=1200&h=800&fit=crop&q=80',
+    thumbnail: 'https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?w=400&h=300&fit=crop&q=80',
   },
   'bancos-globais-ia-whatsapp-dbs-hdfc-absa': {
     hero: 'https://images.unsplash.com/photo-1535320903710-d993d3d77d29?w=1200&h=800&fit=crop&q=80',
     thumbnail: 'https://images.unsplash.com/photo-1535320903710-d993d3d77d29?w=400&h=300&fit=crop&q=80',
   },
   'lemonade-sinistro-2-segundos-insurtech': {
-    hero: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&h=800&fit=crop&q=80',
-    thumbnail: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&h=300&fit=crop&q=80',
+    hero: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&h=800&fit=crop&q=80',
+    thumbnail: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400&h=300&fit=crop&q=80',
   },
   'picpay-btg-pix-whatsapp-voz-imagem': {
     hero: 'https://images.unsplash.com/photo-1556155092-490a1ba16284?w=1200&h=800&fit=crop&q=80',

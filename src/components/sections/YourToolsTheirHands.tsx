@@ -49,7 +49,7 @@ export function YourToolsTheirHands() {
         </Text>
       </VStack>
 
-      <ToolConnectionGraph tools={tools} />
+      <ToolConnectionGraph tools={tools} moreLabel={t('yourTools.moreLabel')} />
     </SectionWrapper>
   );
 }

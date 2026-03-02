@@ -31,8 +31,8 @@ const categoryImages: Record<ArticleCategory, ArticleImage> = {
     thumbnail: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop&q=80',
   },
   'financeiro': {
-    hero: 'https://images.unsplash.com/photo-1563986768609-322da13575f2?w=1200&h=800&fit=crop&q=80',
-    thumbnail: 'https://images.unsplash.com/photo-1563986768609-322da13575f2?w=400&h=300&fit=crop&q=80',
+    hero: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=800&fit=crop&q=80',
+    thumbnail: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop&q=80',
   },
 };
 
@@ -64,6 +64,31 @@ const articleImageOverrides: Record<string, Partial<ArticleImage>> = {
   'magalu-lu-agente-ia-varejo': {
     hero: 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=1200&h=800&fit=crop&q=80',
     thumbnail: 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=400&h=300&fit=crop&q=80',
+  },
+  // Financeiro — unique per article to avoid repetition
+  'bancos-brasileiros-ia-whatsapp-bradesco-itau-nubank': {
+    hero: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&h=800&fit=crop&q=80',
+    thumbnail: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=300&fit=crop&q=80',
+  },
+  'banco-bv-agentes-ia-reducao-rechamadas': {
+    hero: 'https://images.unsplash.com/photo-1639322537228-f710d846310a?w=1200&h=800&fit=crop&q=80',
+    thumbnail: 'https://images.unsplash.com/photo-1639322537228-f710d846310a?w=400&h=300&fit=crop&q=80',
+  },
+  'bancos-globais-ia-whatsapp-dbs-hdfc-absa': {
+    hero: 'https://images.unsplash.com/photo-1535320903710-d993d3d77d29?w=1200&h=800&fit=crop&q=80',
+    thumbnail: 'https://images.unsplash.com/photo-1535320903710-d993d3d77d29?w=400&h=300&fit=crop&q=80',
+  },
+  'lemonade-sinistro-2-segundos-insurtech': {
+    hero: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&h=800&fit=crop&q=80',
+    thumbnail: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&h=300&fit=crop&q=80',
+  },
+  'picpay-btg-pix-whatsapp-voz-imagem': {
+    hero: 'https://images.unsplash.com/photo-1556155092-490a1ba16284?w=1200&h=800&fit=crop&q=80',
+    thumbnail: 'https://images.unsplash.com/photo-1556155092-490a1ba16284?w=400&h=300&fit=crop&q=80',
+  },
+  'ia-financeiro-cobranca-investimentos-mapa': {
+    hero: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=1200&h=800&fit=crop&q=80',
+    thumbnail: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=400&h=300&fit=crop&q=80',
   },
 };
 

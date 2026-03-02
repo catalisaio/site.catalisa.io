@@ -40,6 +40,11 @@ const InsightsListingMagazine = lazy(() => import('./pages/InsightsListingMagazi
 const InsightArticle = lazy(() => import('./pages/InsightArticle').then(m => ({ default: m.InsightArticle })));
 const PresentationMenu = lazy(() => import('./pages/PresentationMenu').then(m => ({ default: m.PresentationMenu })));
 const PresentationInvite = lazy(() => import('./pages/PresentationInvite').then(m => ({ default: m.PresentationInvite })));
+const AITransparency = lazy(() => import('./pages/AITransparency').then(m => ({ default: m.AITransparency })));
+const TrainingLogin = lazy(() => import('./pages/training/TrainingLogin').then(m => ({ default: m.TrainingLogin })));
+const TrainingCatalog = lazy(() => import('./pages/training/TrainingCatalog').then(m => ({ default: m.TrainingCatalog })));
+const CourseDetail = lazy(() => import('./pages/training/CourseDetail').then(m => ({ default: m.CourseDetail })));
+const LessonPage = lazy(() => import('./pages/training/LessonPage').then(m => ({ default: m.LessonPage })));
 const NotFound = lazy(() => import('./pages/NotFound').then(m => ({ default: m.NotFound })));
 
 function PageLoader() {
@@ -126,6 +131,11 @@ function App() {
                 <Route path="/como-funciona" element={<HowItWorksPage />} />
                 <Route path="/integracoes/whatsapp" element={<WhatsAppIntegration />} />
                 <Route path="/agentes-ia-whatsapp" element={<AIAgentsWhatsApp />} />
+                <Route path="/transparencia-ia" element={<AITransparency />} />
+                <Route path="/treinamento/login" element={<TrainingLogin />} />
+                <Route path="/treinamento" element={<TrainingCatalog />} />
+                <Route path="/treinamento/:courseSlug" element={<CourseDetail />} />
+                <Route path="/treinamento/:courseSlug/:moduleSlug/:lessonSlug" element={<LessonPage />} />
                 <Route path="/press-kit" element={<PressKit />} />
                 <Route path="/insights" element={<InsightsListingMagazine />} />
                 <Route path="/insights/all" element={<InsightsListing />} />
@@ -157,6 +167,11 @@ function App() {
                 <Route path="how-it-works" element={<HowItWorksPage />} />
                 <Route path="integrations/whatsapp" element={<WhatsAppIntegration />} />
                 <Route path="ai-agents-whatsapp" element={<AIAgentsWhatsApp />} />
+                <Route path="ai-transparency" element={<AITransparency />} />
+                <Route path="training/login" element={<TrainingLogin />} />
+                <Route path="training" element={<TrainingCatalog />} />
+                <Route path="training/:courseSlug" element={<CourseDetail />} />
+                <Route path="training/:courseSlug/:moduleSlug/:lessonSlug" element={<LessonPage />} />
                 <Route path="press-kit" element={<PressKit />} />
                 <Route path="insights" element={<InsightsListingMagazine />} />
                 <Route path="insights/all" element={<InsightsListing />} />

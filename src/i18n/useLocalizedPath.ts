@@ -36,6 +36,9 @@ const ptToEn: Record<string, string> = {
   '/apresentacao/varejo': '/en/presentation/retail',
   '/apresentacao/fintech': '/en/presentation/fintech',
   '/apresentacao/seguros': '/en/presentation/insurance',
+  '/transparencia-ia': '/en/ai-transparency',
+  '/treinamento': '/en/training',
+  '/treinamento/login': '/en/training/login',
 };
 
 /**

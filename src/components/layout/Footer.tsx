@@ -51,6 +51,7 @@ export function Footer() {
         { label: t('footer.links.privacyPolicy'), to: lp('/politica-privacidade') },
         { label: t('footer.links.termsOfUse'), to: lp('/termos') },
         { label: t('footer.links.security'), to: lp('/seguranca') },
+        { label: t('footer.links.aiTransparency'), to: lp('/transparencia-ia') },
         { label: t('footer.links.pressKit'), to: lp('/press-kit') },
       ],
     },

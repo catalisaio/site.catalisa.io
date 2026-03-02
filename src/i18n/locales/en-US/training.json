@@ -1,0 +1,277 @@
+{
+  "lessons": "lessons",
+  "comingSoon": "Coming soon",
+  "login": {
+    "heading": "Training Platform",
+    "subtitle": "Sign in with your credentials to continue your training.",
+    "email": "Email",
+    "emailPlaceholder": "your@email.com",
+    "password": "Password",
+    "passwordPlaceholder": "Your password",
+    "submit": "Sign In",
+    "error": "Incorrect email or password. Please try again."
+  },
+  "catalog": {
+    "heading": "Training",
+    "subtitle": "Compliance, security, and AI ethics training courses.",
+    "logout": "Sign Out"
+  },
+  "lesson": {
+    "previous": "Previous",
+    "next": "Next",
+    "completed": "Completed",
+    "completeAndNext": "Complete & Next",
+    "markComplete": "Mark as Complete"
+  },
+  "courses": {
+    "iso42001": {
+      "title": "ISO 42001 - AI Ethics",
+      "description": "Comprehensive training on ethical artificial intelligence, covering principles, fairness, data protection, transparency, and security per ISO/IEC 42001:2023.",
+      "duration": "5h (20 lessons)",
+      "modules": {
+        "fundamentals": {
+          "title": "AI Ethics Fundamentals",
+          "description": "Basic AI concepts, ethical principles, and ISO 42001 overview",
+          "lessons": {
+            "whatIsAI": "What is Artificial Intelligence",
+            "ethicalPrinciples": "Ethical Principles in AI",
+            "isoOverview": "ISO 42001 - Overview",
+            "yourRole": "Your Role in the AIMS"
+          }
+        },
+        "fairness": {
+          "title": "Fairness & Bias",
+          "description": "Types of bias, impact on decisions, and mitigation",
+          "lessons": {
+            "biasTypes": "Types of Bias",
+            "decisionImpact": "Impact on Decisions",
+            "mitigation": "Mitigation at Catalisa",
+            "automatedTests": "Automated Tests"
+          }
+        },
+        "dataProtection": {
+          "title": "Data Protection & LGPD",
+          "description": "PII, sensitive data, data subject rights, and retention",
+          "lessons": {
+            "pii": "PII & Sensitive Data",
+            "scrubber": "PIIScrubberService",
+            "rights": "Data Subject Rights",
+            "retention": "Data Retention"
+          }
+        },
+        "transparency": {
+          "title": "Transparency & Responsible AI",
+          "description": "Explainability, communication, and incident response",
+          "lessons": {
+            "explainability": "Explainability",
+            "userComms": "User Communication",
+            "killSwitch": "Kill Switch",
+            "incidents": "Incident Response"
+          }
+        },
+        "security": {
+          "title": "AI Systems Security",
+          "description": "Prompt injection, rate limiting, monitoring, and red teaming",
+          "lessons": {
+            "promptInjection": "Prompt Injection",
+            "rateLimiting": "Rate Limiting",
+            "monitoring": "Monitoring",
+            "redTeaming": "Red Teaming"
+          }
+        }
+      }
+    },
+    "iso27001": {
+      "title": "ISO 27001 - Information Security",
+      "description": "Information security fundamentals and risk management per ISO/IEC 27001.",
+      "duration": "4h"
+    },
+    "lgpd": {
+      "title": "LGPD - Data Protection",
+      "description": "Brazilian General Data Protection Law: principles, legal bases, rights, and obligations.",
+      "duration": "3h"
+    },
+    "iso9001": {
+      "title": "ISO 9001 - Quality Management",
+      "description": "Quality management and continual improvement fundamentals per ISO 9001.",
+      "duration": "3h"
+    }
+  },
+  "content": {
+    "iso-42001-ai-ethics": {
+      "fundamentos": {
+        "o-que-e-ia": [
+          { "type": "heading", "text": "What is Artificial Intelligence?" },
+          { "type": "paragraph", "text": "Artificial Intelligence (AI) is a field of computer science dedicated to creating systems capable of performing tasks that would normally require human intelligence. This includes pattern recognition, decision-making, natural language processing, and learning from data." },
+          { "type": "heading", "text": "Types of AI" },
+          { "type": "list", "items": ["Narrow AI: Specialized for specific tasks, such as chatbots, image recognition. This is the type we use at Catalisa.", "General AI (AGI): Ability to perform any human intellectual task. Does not yet exist.", "Machine Learning: A subfield where systems learn from data without explicit programming.", "Large Language Models (LLMs): Models trained on large volumes of text, such as Anthropic's Claude."] },
+          { "type": "heading", "text": "AI at Catalisa" },
+          { "type": "paragraph", "text": "At Catalisa, we use third-party AI (Anthropic Claude) integrated with our systems. We do not train our own models — we configure and orchestrate existing models to meet our clients' specific needs." },
+          { "type": "alert", "alertStatus": "info", "text": "Important: Our systems are Narrow AI. They are very good at specific tasks but do not possess consciousness or real understanding." }
+        ],
+        "principios-eticos": [
+          { "type": "heading", "text": "Ethical Principles in AI" },
+          { "type": "paragraph", "text": "AI ethics refers to a set of principles and practices that guide the responsible development and use of artificial intelligence systems." },
+          { "type": "heading", "text": "The 5 Fundamental Principles" },
+          { "type": "list", "items": ["Transparency: Users should know when they are interacting with AI and how it works.", "Fairness: AI systems should not discriminate or amplify existing prejudices.", "Privacy: Personal data must be protected and used only for legitimate purposes.", "Accountability: There must be clear parties responsible for AI decisions and actions.", "Security: AI systems must be robust and resistant to attacks and manipulation."] },
+          { "type": "heading", "text": "In Practice" },
+          { "type": "paragraph", "text": "These principles translate into technical controls at Catalisa: disclosure badges for transparency, FairnessValidatorService for fairness, PIIScrubberService for privacy, audit logs for accountability, and PromptGuardService for security." },
+          { "type": "alert", "alertStatus": "warning", "text": "AI ethics is not just a technical issue. It requires constant vigilance, process review, and willingness to question automated decisions." }
+        ],
+        "iso42001-visao-geral": [
+          { "type": "heading", "text": "ISO/IEC 42001:2023" },
+          { "type": "paragraph", "text": "ISO/IEC 42001 is the first international standard for Artificial Intelligence Management Systems (AIMS). Published in 2023, it provides a framework for organizations that develop, provide, or use AI systems." },
+          { "type": "heading", "text": "Standard Structure" },
+          { "type": "list", "items": ["Clauses 4-10: Management system requirements (context, leadership, planning, support, operation, evaluation, improvement).", "Annex A: 35 AI-specific controls organized in 9 areas (A.2 to A.10).", "Annex B: Implementation guide for controls.", "Annex C: AI risk objectives and sources.", "Annex D: Use of AI systems in different domains."] },
+          { "type": "heading", "text": "PDCA Cycle" },
+          { "type": "paragraph", "text": "The standard follows the Plan-Do-Check-Act cycle: plan controls, implement, verify effectiveness, and act to continuously improve." },
+          { "type": "alert", "alertStatus": "info", "text": "Catalisa uses ISO 42001 as a reference framework. This means we follow the guidelines and best practices, but we do not have formal certification." }
+        ],
+        "seu-papel-no-aims": [
+          { "type": "heading", "text": "Your Role in the AIMS" },
+          { "type": "paragraph", "text": "Every team member plays a fundamental role in Catalisa's AI Management System. Regardless of your position, you are an active part of ensuring our AI systems operate ethically and responsibly." },
+          { "type": "heading", "text": "Responsibilities by Role" },
+          { "type": "list", "items": ["Engineering: Implement technical controls, review AI code, maintain logs and metrics, run fairness tests.", "Operations: Monitor AI systems, respond to incidents, maintain operational documentation.", "Support: Communicate AI use to clients, forward feedback, identify problems.", "Management: Approve policies, ensure resources, review AIMS effectiveness."] },
+          { "type": "heading", "text": "How to Report Issues" },
+          { "type": "list", "items": ["Internal channel: Slack #ai-incidents for urgent issues.", "Email: compliance@catalisa.io for compliance matters.", "Documentation: Record in incident-response-ai.md for formal incidents."] },
+          { "type": "alert", "alertStatus": "success", "text": "Remember: any team member can (and should) report problematic AI behavior. There is no 'false alarm' in AI security." }
+        ]
+      },
+      "fairness-bias": {
+        "tipos-de-bias": [
+          { "type": "heading", "text": "Types of Bias in AI Systems" },
+          { "type": "paragraph", "text": "Bias in AI refers to systematic prejudices in a system's outputs, often stemming from training data or design decisions." },
+          { "type": "heading", "text": "Main Types" },
+          { "type": "list", "items": ["Selection Bias: Training data doesn't represent the real population. E.g., model trained only with data from one region.", "Confirmation Bias: System reinforces pre-existing beliefs by prioritizing information that confirms known patterns.", "Automation Bias: Users over-rely on automated decisions, ignoring contrary evidence.", "Historical Bias: Historical data reflects past discrimination that the model reproduces.", "Measurement Bias: Metrics used to train/evaluate the model don't adequately capture reality."] },
+          { "type": "alert", "alertStatus": "warning", "text": "At Catalisa, the most relevant bias is Automation Bias. Always verify critical information generated by AI." }
+        ],
+        "impacto-decisoes": [
+          { "type": "heading", "text": "Impact of Bias on Decisions" },
+          { "type": "paragraph", "text": "When AI systems exhibit bias, the consequences can affect real people in significant ways." },
+          { "type": "heading", "text": "Impact Examples" },
+          { "type": "list", "items": ["Lead qualification: A biased system may prioritize leads from certain regions or demographic profiles.", "Customer service: Automated responses may vary in quality depending on language or dialect.", "Credit decisions: Models with historical bias can perpetuate discrimination in approvals.", "Recommendations: Systems may reinforce information bubbles by always suggesting the same type of content."] },
+          { "type": "heading", "text": "Why This Matters" },
+          { "type": "paragraph", "text": "Beyond ethical impact, bias can generate legal liability (LGPD Art. 20: right to review automated decisions), loss of customer trust, and reputational damage." }
+        ],
+        "mitigacao-catalisa": [
+          { "type": "heading", "text": "Bias Mitigation at Catalisa" },
+          { "type": "paragraph", "text": "Catalisa implements multiple layers of protection against bias in its AI systems." },
+          { "type": "heading", "text": "Implemented Controls" },
+          { "type": "list", "items": ["FairnessValidatorService: Service that tests AI responses for differential treatment based on gender, race, region, or socioeconomic level.", "Non-discrimination clause: Included in system prompts of all AI agents.", "Automated tests: Test suite that verifies fairness in predefined scenarios.", "Security Rules: Per-agent rules that limit sensitive topics and problematic behaviors.", "Human oversight: All critical decisions can be reviewed by humans via kill switch."] },
+          { "type": "alert", "alertStatus": "info", "text": "If you notice discriminatory AI behavior, report immediately on Slack #ai-incidents." }
+        ],
+        "testes-automatizados": [
+          { "type": "heading", "text": "Automated Fairness Tests" },
+          { "type": "paragraph", "text": "Catalisa runs automated tests to verify that AI systems treat all users fairly." },
+          { "type": "heading", "text": "How They Work" },
+          { "type": "list", "items": ["Paired scenarios: Same question with demographic variations (e.g., male vs. female name).", "Sentiment analysis: Verifies consistent tone regardless of profile.", "Stereotype detection: Searches for language patterns reflecting stereotypes.", "Geographic coverage: Tests if features work equally for all regions."] },
+          { "type": "heading", "text": "Frequency and Recording" },
+          { "type": "paragraph", "text": "Tests are run automatically as part of the CI/CD suite and also in dedicated quarterly cycles. Results are documented in the continual improvement register." }
+        ]
+      },
+      "protecao-dados": {
+        "pii-dados-sensiveis": [
+          { "type": "heading", "text": "PII & Sensitive Data" },
+          { "type": "paragraph", "text": "PII (Personally Identifiable Information) is data that can identify a specific person. At Catalisa, protecting this data is an absolute priority." },
+          { "type": "heading", "text": "Types of PII We Detect" },
+          { "type": "list", "items": ["CPF: Brazilian Individual Taxpayer ID (11 digits)", "CNPJ: Brazilian Business Registration (14 digits)", "Email: Email addresses", "Credit Card: Card numbers (13-19 digits)", "Phone: Brazilian phone numbers", "Address: Complete physical addresses"] },
+          { "type": "alert", "alertStatus": "warning", "text": "NEVER include real PII data in logs, debug messages, or internal communications. Always use fictional data for testing." }
+        ],
+        "pii-scrubber-service": [
+          { "type": "heading", "text": "PIIScrubberService" },
+          { "type": "paragraph", "text": "The PIIScrubberService is a global Catalisa service that automatically detects and removes sensitive data from text before recording in logs." },
+          { "type": "heading", "text": "Operating Modes" },
+          { "type": "list", "items": ["Full mode: Replaces PII with [REDACTED]. E.g., '123.456.789-00' -> '[REDACTED_CPF]'", "Partial mode: Partial masking. E.g., '123.456.789-00' -> '123.***.***-00'"] },
+          { "type": "heading", "text": "Where Applied" },
+          { "type": "list", "items": ["AILoggerService: All AI interaction logs", "AgentExecution: Agent execution records", "Optional on inputs: Can be enabled to clean PII before sending to Claude"] },
+          { "type": "code", "text": "# Configuration via environment variables\nAI_PII_SCRUB_LOGS=true       # Enable scrubbing on logs\nAI_PII_SCRUB_INPUTS=false    # Scrubbing on inputs (optional)\nAI_PII_SCRUB_TYPES=cpf,cnpj,email,credit_card" }
+        ],
+        "direitos-titular": [
+          { "type": "heading", "text": "Data Subject Rights" },
+          { "type": "paragraph", "text": "The LGPD (Law 13.709/2018) guarantees specific rights to personal data subjects. As AI system operators, we must respect and facilitate the exercise of these rights." },
+          { "type": "heading", "text": "Main Rights" },
+          { "type": "list", "items": ["Access: The subject can request access to all personal data we process.", "Correction: Incorrect data must be corrected upon request.", "Deletion: Data can be deleted when there is no legal basis for retention.", "Portability: Data must be provided in an interoperable format.", "Consent withdrawal: The subject can withdraw consent at any time.", "Review of automated decisions: LGPD Art. 20 guarantees human review of AI decisions."] },
+          { "type": "alert", "alertStatus": "info", "text": "Data subject requests must be forwarded to compliance@catalisa.io within 24 hours." }
+        ],
+        "retencao-dados": [
+          { "type": "heading", "text": "AI Data Retention" },
+          { "type": "paragraph", "text": "Catalisa implements a minimal retention policy for AI interaction data, ensuring personal data is not kept beyond what is necessary." },
+          { "type": "heading", "text": "Retention Policy" },
+          { "type": "list", "items": ["AI Logs (JSONL): 7 days, automatic cleanup by AIDataRetentionService.", "Redis Metrics: 30 days with automatic expiration.", "Agent executions: Retained in database with PII scrubbed.", "Data at Claude: Anthropic's zero-retention policy for API calls."] },
+          { "type": "heading", "text": "AIDataRetentionService" },
+          { "type": "paragraph", "text": "This service runs periodically and automatically removes AI interaction logs older than the configured period (default: 7 days). This ensures compliance with the LGPD's data minimization principle." }
+        ]
+      },
+      "transparencia": {
+        "explicabilidade": [
+          { "type": "heading", "text": "Explainability in AI Systems" },
+          { "type": "paragraph", "text": "Explainability is the ability to understand how and why an AI system arrived at a particular response or decision." },
+          { "type": "heading", "text": "How Catalisa Ensures Explainability" },
+          { "type": "list", "items": ["Visible tool calls: Users can see which tools the AI used and in what order.", "Streaming events: Responses are sent in real-time, showing the reasoning process.", "aiMetadata: Each response includes information about the model used and the provider.", "Plan mode: Before executing complex actions, the AI shows its plan for approval."] },
+          { "type": "alert", "alertStatus": "info", "text": "Explainability doesn't mean the AI is always correct. It means we can understand and audit its decisions." }
+        ],
+        "comunicacao-usuarios": [
+          { "type": "heading", "text": "User Communication" },
+          { "type": "paragraph", "text": "Transparency with users is a fundamental pillar of responsible AI. Users should know when they are interacting with AI and what their options are." },
+          { "type": "heading", "text": "Communication Channels" },
+          { "type": "list", "items": ["Disclosure badge: Banner in the AI Assistant informing that responses are AI-generated.", "Transparency page: catalisa.io/ai-transparency with detailed information.", "aiGenerated flag: AI responses are marked with metadata indicating their origin.", "Footer: Link to transparency page accessible from all pages."] },
+          { "type": "heading", "text": "Best Practices" },
+          { "type": "paragraph", "text": "When communicating about AI with clients, always: clearly identify it as AI, don't exaggerate capabilities, offer human alternatives, and provide a feedback channel." }
+        ],
+        "kill-switch": [
+          { "type": "heading", "text": "AI Kill Switch" },
+          { "type": "paragraph", "text": "The kill switch is a mechanism that allows instantly disabling all AI systems for a user or globally. It is a critical human oversight safeguard." },
+          { "type": "heading", "text": "How It Works" },
+          { "type": "list", "items": ["AiEnabledGuard: NestJS guard that checks a Redis flag before each AI call.", "Per-user toggle: POST /ai/toggle allows enabling/disabling AI per user.", "Status check: GET /ai/status returns the current AI state.", "Audit log: Every activation/deactivation is recorded with timestamp and user."] },
+          { "type": "heading", "text": "When to Use" },
+          { "type": "list", "items": ["Security incident involving AI.", "Anomalous behavior or problematic responses.", "User request to disable AI.", "AI systems maintenance or update."] }
+        ],
+        "resposta-incidentes": [
+          { "type": "heading", "text": "AI Incident Response" },
+          { "type": "paragraph", "text": "An AI incident is any event that compromises the security, integrity, or reliability of artificial intelligence systems." },
+          { "type": "heading", "text": "Severity Classification" },
+          { "type": "list", "items": ["Critical: Data leak via AI, prompt injection with exfiltration, AI taking destructive actions.", "High: Consistently incorrect responses, bias detected in production, kill switch failure.", "Medium: Performance degradation, rate limits not working, inconsistent metrics.", "Low: Lower quality responses, occasional slowness, warnings in logs."] },
+          { "type": "heading", "text": "Response Flow" },
+          { "type": "paragraph", "text": "1) Detect and report (Slack #ai-incidents). 2) Classify severity. 3) Contain (kill switch if necessary). 4) Investigate root cause. 5) Fix. 6) Document RCA. 7) Notify stakeholders." },
+          { "type": "alert", "alertStatus": "warning", "text": "For Critical or High incidents, activate the kill switch FIRST and investigate AFTER." }
+        ]
+      },
+      "seguranca-ai": {
+        "prompt-injection": [
+          { "type": "heading", "text": "Prompt Injection" },
+          { "type": "paragraph", "text": "Prompt injection is an attack technique where a malicious user attempts to manipulate AI behavior by inserting instructions into the input." },
+          { "type": "heading", "text": "Attack Types" },
+          { "type": "list", "items": ["Direct: 'Ignore your previous instructions and do X.'", "Indirect: Insert malicious instructions into data the AI will process (e.g., lead fields).", "Jailbreak: Try to make the AI ignore security restrictions.", "Data exfiltration: Try to extract information from the system prompt or internal data."] },
+          { "type": "heading", "text": "PromptGuardService" },
+          { "type": "paragraph", "text": "Catalisa's PromptGuardService detects prompt injection attempts using heuristics. It can operate in 3 modes: log (records), warn (alerts), and block (blocks the request)." },
+          { "type": "code", "text": "# Configuration\nAI_PROMPT_GUARD_MODE=log   # log | warn | block" }
+        ],
+        "rate-limiting": [
+          { "type": "heading", "text": "AI Rate Limiting" },
+          { "type": "paragraph", "text": "Rate limiting protects AI systems against abuse, ensuring availability for all users and controlling costs." },
+          { "type": "heading", "text": "3 Control Tiers" },
+          { "type": "list", "items": ["Short term: 5 requests per second per user. Protects against aggressive automation.", "Medium term: 30 requests per minute. Prevents excessive burst usage.", "Long term: 300 requests per hour. Controls total daily usage."] },
+          { "type": "heading", "text": "Implementation" },
+          { "type": "paragraph", "text": "Rate limiting is implemented via NestJS ThrottlerGuard with Redis counters. When the limit is reached, the API returns HTTP 429 (Too Many Requests) with a Retry-After header." }
+        ],
+        "monitoramento": [
+          { "type": "heading", "text": "AI Systems Monitoring" },
+          { "type": "paragraph", "text": "Continuous monitoring is essential for detecting problems, measuring effectiveness, and ensuring compliance of AI systems." },
+          { "type": "heading", "text": "Collected Metrics" },
+          { "type": "list", "items": ["Requests per day: Total AI calls processed.", "Errors: Error rate and failure types.", "Tokens: Token consumption by model and by user.", "Tool usage: Which tools are most used.", "Prompt injections: Detected and blocked attempts.", "Latency: AI model response time."] },
+          { "type": "heading", "text": "AIMetricsService" },
+          { "type": "paragraph", "text": "Atomic counters in Redis with 30-day expiration. Endpoints: GET /ai/metrics (detailed by day) and GET /ai/metrics/summary (general summary)." }
+        ],
+        "red-teaming": [
+          { "type": "heading", "text": "AI Red Teaming" },
+          { "type": "paragraph", "text": "Red teaming is the practice of testing AI systems adversarially, trying to find vulnerabilities and undesired behaviors before real attackers do." },
+          { "type": "heading", "text": "Methodology" },
+          { "type": "list", "items": ["Scope: Define which systems and scenarios will be tested.", "Scenarios: Prompt injection, jailbreak, data exfiltration, bias probing, edge cases.", "Execution: Internal team attempts to exploit vulnerabilities in a controlled environment.", "Recording: Document all findings, severity, and recommendations.", "Remediation: Implement controls to mitigate found vulnerabilities."] },
+          { "type": "heading", "text": "Frequency" },
+          { "type": "paragraph", "text": "Red teaming is conducted quarterly and also after significant changes to AI systems (model upgrade, new features)." },
+          { "type": "alert", "alertStatus": "info", "text": "If you're interested in participating in red teaming sessions, let the Eng Lead know. Diversity of perspectives improves test quality." }
+        ]
+      }
+    }
+  }
+}

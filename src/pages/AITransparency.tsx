@@ -202,10 +202,9 @@ export function AITransparency() {
       </SectionWrapper>
 
       <PageCTA
-        heading={t('cta.heading')}
-        headingGradient={t('cta.headingGradient')}
+        heading={`${t('cta.heading')} ${t('cta.headingGradient')}`}
         subtitle={t('cta.subtitle')}
-        gradient="linear(to-r, blue.300, purple.400, brand.400)"
+        primaryCTA={{ label: tc('cta.letsChat') }}
       />
     </>
   );

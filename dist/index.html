@@ -39,13 +39,38 @@
       });
     </script>
 
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GT-5TW4R7FV');</script>
+    <!-- Google Tag Manager (deferred to avoid blocking critical resources) -->
+    <script>
+    (function(){
+      function loadGTM(){
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GT-5TW4R7FV');
+      }
+      if('requestIdleCallback' in window){requestIdleCallback(loadGTM);}
+      else{setTimeout(loadGTM,2000);}
+    })();
+    </script>
     <!-- End Google Tag Manager -->
+
+    <!-- Microsoft Clarity (condicional: site vs apresentacoes) -->
+    <script>
+    (function(){
+      var p = window.location.pathname;
+      var id = (p.startsWith('/apresentacao') || p.startsWith('/en/presentation'))
+        ? 'vp5b7apoc2'   // Apresentacoe Catalisa
+        : 'vp6hhn7234';  // Site Catalisa
+
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window,document,"clarity","script",id);
+    })();
+    </script>
+    <!-- End Microsoft Clarity -->
 
     <!-- Font loading (non-render-blocking) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,11 +78,14 @@
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
-    <script type="module" crossorigin src="/assets/index-W2SxeDmE.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/i18n-WzsyY8tL.js">
-    <link rel="modulepreload" crossorigin href="/assets/vendor-C6fCiZN1.js">
-    <link rel="modulepreload" crossorigin href="/assets/chakra-BQSc4H80.js">
-    <link rel="modulepreload" crossorigin href="/assets/icons-CvSmmmvT.js">
+    <script type="module" crossorigin src="/assets/index-BcadVMcj.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/vendor-B0lcCDCe.js">
+    <link rel="modulepreload" crossorigin href="/assets/i18n-CyQlpJVQ.js">
+    <link rel="modulepreload" crossorigin href="/assets/motion-Q3ZPY77N.js">
+    <link rel="modulepreload" crossorigin href="/assets/chakra-CmVbs_aQ.js">
+    <link rel="modulepreload" crossorigin href="/assets/icons-CWDkq9Nc.js">
+    <link rel="modulepreload" crossorigin href="/assets/presentation-Esehipm3.js">
+    <link rel="modulepreload" crossorigin href="/assets/playbooks-3e6Gms8Q.js">
     <link rel="stylesheet" crossorigin href="/assets/index-CQTXBDgt.css">
   </head>
   <body>

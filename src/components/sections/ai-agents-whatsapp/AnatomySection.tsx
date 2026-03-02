@@ -41,7 +41,7 @@ export function AnatomySection() {
 
   const { scrollYProgress } = useScroll({
     target: timelineRef,
-    offset: ['start 80%', 'end 20%'],
+    offset: ['start 80%', 'end 50%'],
   });
 
   // Zipper line: grows from top to bottom with spring physics

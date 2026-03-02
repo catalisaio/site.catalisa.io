@@ -24,11 +24,11 @@ export function Home() {
       <HeroTeamBuilder />
       <LogoMarquee />
       <Suspense>
+        <YourToolsTheirHands />
         <MarketValidation />
         <MeetYourTeam />
         <WhatsAppCommandCenter />
         <AppBuilderShowcase />
-        <YourToolsTheirHands />
         <AgentBuilderShowcase />
         <AppsInAction />
         <LiveOperationsDashboard />

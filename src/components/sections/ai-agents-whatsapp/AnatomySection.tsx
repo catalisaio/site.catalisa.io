@@ -1,3 +1,4 @@
+import { useRef, useState } from 'react';
 import {
   Heading,
   Text,
@@ -9,9 +10,16 @@ import {
 } from '@chakra-ui/react';
 import { FiMessageCircle, FiCpu, FiCheck } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
+import {
+  useScroll,
+  useTransform,
+  useSpring,
+  useMotionValueEvent,
+  motion,
+} from 'framer-motion';
 import { SectionWrapper } from '../../shared/SectionWrapper';
 import { GradientText } from '../../shared/GradientText';
-import { MotionBox, staggerContainer, staggerItem } from '../../motion';
+import { MotionBox } from '../../motion';
 
 interface TimelineEvent {
   title: string;
@@ -27,6 +35,27 @@ export function AnatomySection() {
   const { t } = useTranslation('ai-agents-whatsapp');
   const stepsRaw = t('anatomy.steps', { returnObjects: true });
   const steps = (Array.isArray(stepsRaw) ? stepsRaw : []) as AnatomyStep[];
+
+  const timelineRef = useRef<HTMLDivElement>(null);
+  const [activeSteps, setActiveSteps] = useState(0);
+
+  const { scrollYProgress } = useScroll({
+    target: timelineRef,
+    offset: ['start 80%', 'end 20%'],
+  });
+
+  // Zipper line: grows from top to bottom with spring physics
+  const rawScaleY = useTransform(scrollYProgress, [0, 1], [0, 1]);
+  const scaleY = useSpring(rawScaleY, { stiffness: 80, damping: 30, mass: 0.8 });
+
+  // Calculate active steps based on scroll progress (bidirectional)
+  useMotionValueEvent(scrollYProgress, 'change', (progress) => {
+    if (steps.length === 0) return;
+    const count = steps.filter(
+      (_, i) => progress >= (i + 0.5) / steps.length,
+    ).length;
+    setActiveSteps(count);
+  });
 
   return (
     <SectionWrapper bg="gray.50" id="anatomy">
@@ -79,49 +108,96 @@ export function AnatomySection() {
         </Box>
       </VStack>
 
-      <MotionBox {...staggerContainer}>
-        <VStack spacing={0} maxW="900px" mx="auto" position="relative">
-          {/* Vertical connector line */}
-          <Box
-            position="absolute"
-            left={{ base: '20px', md: '50%' }}
-            top="0"
-            bottom="0"
-            w="2px"
-            bg="gray.200"
-            transform={{ md: 'translateX(-1px)' }}
-          />
+      <VStack
+        ref={timelineRef}
+        spacing={0}
+        maxW="900px"
+        mx="auto"
+        position="relative"
+      >
+        {/* Background track (gray) */}
+        <Box
+          position="absolute"
+          left={{ base: '20px', md: '50%' }}
+          top="0"
+          bottom="0"
+          w="2px"
+          bg="gray.200"
+          transform={{ md: 'translateX(-1px)' }}
+        />
 
-          {steps.map((step, i) => (
-            <MotionBox key={i} {...staggerItem} w="full">
+        {/* Zipper line (brand purple, grows with scroll) */}
+        <Box
+          position="absolute"
+          left={{ base: '20px', md: '50%' }}
+          top="0"
+          bottom="0"
+          w="2px"
+          transform={{ md: 'translateX(-1px)' }}
+          zIndex={1}
+        >
+          <motion.div
+            style={{
+              width: '100%',
+              height: '100%',
+              background: 'var(--chakra-colors-brand-500)',
+              transformOrigin: 'top',
+              scaleY,
+            }}
+          />
+        </Box>
+
+        {steps.map((step, i) => {
+          const isActive = i < activeSteps;
+
+          return (
+            <Box key={i} w="full">
               <Flex
-                direction={{ base: 'column', md: i % 2 === 0 ? 'row' : 'row-reverse' }}
+                direction={{
+                  base: 'column',
+                  md: i % 2 === 0 ? 'row' : 'row-reverse',
+                }}
                 gap={4}
                 align="flex-start"
                 py={4}
                 position="relative"
               >
-                {/* Step indicator */}
-                <Box
+                {/* Dot indicator — pops in when active */}
+                <MotionBox
                   position={{ md: 'absolute' }}
                   left={{ base: '12px', md: '50%' }}
                   transform={{ md: 'translateX(-50%)' }}
                   w="18px"
                   h="18px"
                   borderRadius="full"
-                  bg="brand.500"
                   border="3px solid"
                   borderColor="white"
-                  boxShadow="0 0 0 2px var(--chakra-colors-brand-200)"
-                  zIndex={1}
+                  zIndex={2}
                   flexShrink={0}
+                  initial={false}
+                  animate={{
+                    scale: isActive ? 1 : 0.5,
+                    backgroundColor: isActive
+                      ? 'var(--chakra-colors-brand-500)'
+                      : 'var(--chakra-colors-gray-300)',
+                    boxShadow: isActive
+                      ? '0 0 0 2px var(--chakra-colors-brand-200)'
+                      : '0 0 0 2px transparent',
+                  }}
+                  transition={{ duration: 0.3, ease: 'easeOut' }}
                 />
 
-                {/* Chat bubble */}
-                <Box
+                {/* Chat bubble — slides in from corresponding side */}
+                <MotionBox
                   flex={1}
                   ml={{ base: '40px', md: i % 2 === 0 ? 0 : 8 }}
                   mr={{ md: i % 2 === 0 ? 8 : 0 }}
+                  initial={false}
+                  animate={{
+                    opacity: isActive ? 1 : 0,
+                    x: isActive ? 0 : i % 2 === 0 ? -30 : 30,
+                  }}
+                  transition={{ duration: 0.4, ease: 'easeOut' }}
                 >
                   <Box
                     p={4}
@@ -146,9 +222,9 @@ export function AnatomySection() {
                     </HStack>
                     <Text fontSize="sm">{step.chat.text}</Text>
                   </Box>
-                </Box>
+                </MotionBox>
 
-                {/* Timeline events */}
+                {/* Timeline events — fade in with stagger */}
                 <Box
                   flex={1}
                   ml={{ base: '40px', md: i % 2 === 0 ? 8 : 0 }}
@@ -156,33 +232,46 @@ export function AnatomySection() {
                 >
                   <VStack align="stretch" spacing={2}>
                     {step.timeline.map((event, j) => (
-                      <HStack
+                      <MotionBox
                         key={j}
-                        p={3}
-                        borderRadius="lg"
-                        bg="white"
-                        border="1px solid"
-                        borderColor="gray.200"
-                        spacing={3}
+                        initial={false}
+                        animate={{
+                          opacity: isActive ? 1 : 0,
+                          y: isActive ? 0 : 15,
+                        }}
+                        transition={{
+                          duration: 0.3,
+                          ease: 'easeOut',
+                          delay: isActive ? j * 0.08 : 0,
+                        }}
                       >
-                        <Icon as={FiCheck} boxSize={4} color="brand.500" />
-                        <VStack align="flex-start" spacing={0}>
-                          <Text fontSize="xs" fontWeight="600" color="gray.700">
-                            {event.title}
-                          </Text>
-                          <Text fontSize="2xs" color="gray.400">
-                            {event.detail}
-                          </Text>
-                        </VStack>
-                      </HStack>
+                        <HStack
+                          p={3}
+                          borderRadius="lg"
+                          bg="white"
+                          border="1px solid"
+                          borderColor="gray.200"
+                          spacing={3}
+                        >
+                          <Icon as={FiCheck} boxSize={4} color="brand.500" />
+                          <VStack align="flex-start" spacing={0}>
+                            <Text fontSize="xs" fontWeight="600" color="gray.700">
+                              {event.title}
+                            </Text>
+                            <Text fontSize="2xs" color="gray.400">
+                              {event.detail}
+                            </Text>
+                          </VStack>
+                        </HStack>
+                      </MotionBox>
                     ))}
                   </VStack>
                 </Box>
               </Flex>
-            </MotionBox>
-          ))}
-        </VStack>
-      </MotionBox>
+            </Box>
+          );
+        })}
+      </VStack>
     </SectionWrapper>
   );
 }

@@ -15,6 +15,7 @@ const categoryGradients: Record<ArticleCategory, [string, string]> = {
   atendimento: ['#2B6CB0', '#4299E1'],
   'conversational-commerce': ['#276749', '#48BB78'],
   estrategia: ['#975A16', '#ECC94B'],
+  financeiro: ['#2C7A7B', '#4FD1C5'],
 };
 
 // Resolve pt-BR titles from the translation file

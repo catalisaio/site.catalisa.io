@@ -233,9 +233,9 @@ function ScrollRow({ items, reverse = false, scrollYProgress }: { items: Brand[]
   const rawX = useTransform(
     scrollYProgress,
     [0, 1],
-    reverse ? ['-15%', '0%'] : ['0%', '-15%'],
+    reverse ? ['-8%', '0%'] : ['0%', '-8%'],
   );
-  const x = useSpring(rawX, { stiffness: 50, damping: 30, mass: 1 });
+  const x = useSpring(rawX, { stiffness: 40, damping: 35, mass: 1.2 });
 
   return (
     <Box overflow="hidden" position="relative" w="100%">

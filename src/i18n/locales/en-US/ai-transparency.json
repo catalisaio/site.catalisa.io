@@ -1,0 +1,113 @@
+{
+  "hero": {
+    "badge": "AI Transparency",
+    "heading": "How we use",
+    "headingGradient": "artificial intelligence",
+    "subtitle": "We believe trust starts with transparency. Learn how our AI systems work, how we protect your data, and what rights you have."
+  },
+  "systems": {
+    "heading": "Our AI Systems",
+    "items": [
+      {
+        "title": "AI Assistant",
+        "description": "Intelligent assistant integrated with the CRM featuring 100+ tools for lead management, messaging, and workflow automation.",
+        "provider": "Claude (Anthropic)",
+        "features": ["Lead management", "WhatsApp messaging", "Workflow creation", "Reports"]
+      },
+      {
+        "title": "AI Agents",
+        "description": "Custom agents created by users with specific prompts and selective tools for specialized tasks.",
+        "provider": "Claude (Anthropic)",
+        "features": ["Custom prompts", "Selective tools", "Persistent conversations", "Ready-made templates"]
+      },
+      {
+        "title": "Workflow AI Actions",
+        "description": "AI actions in automated workflows that process data, make decisions, and execute tasks without manual intervention.",
+        "provider": "Claude (Anthropic)",
+        "features": ["Automated execution", "Data processing", "Conditional decisions", "Integrations"]
+      }
+    ]
+  },
+  "dataProtection": {
+    "heading": "Data Protection",
+    "subtitle": "Your data is handled with the highest level of security and privacy.",
+    "items": [
+      {
+        "title": "PII Scrubbing",
+        "description": "Sensitive data such as tax IDs, email addresses, and credit card numbers are automatically detected and removed from AI logs."
+      },
+      {
+        "title": "No training on your data",
+        "description": "Your data is NOT used to train AI models. Anthropic has a zero-retention policy for API calls."
+      },
+      {
+        "title": "Minimal retention",
+        "description": "AI interaction logs are retained for a maximum of 7 days and automatically cleaned by the retention service."
+      },
+      {
+        "title": "Encryption",
+        "description": "All data in transit and at rest is encrypted. Sensitive data has an additional encryption layer."
+      }
+    ]
+  },
+  "humanOversight": {
+    "heading": "Human Oversight",
+    "subtitle": "We maintain full control over AI systems with multiple security layers.",
+    "items": [
+      {
+        "title": "Kill Switch",
+        "description": "Administrators can pause and resume all AI systems instantly per user."
+      },
+      {
+        "title": "Security Rules",
+        "description": "Each AI agent has configurable rules that limit actions, access, and behaviors."
+      },
+      {
+        "title": "Prompt Injection Detection",
+        "description": "Prompt manipulation attempts are automatically detected and can be blocked."
+      },
+      {
+        "title": "Rate Limiting",
+        "description": "Usage limits protect against abuse with 3 control tiers (short, medium, and long term)."
+      }
+    ]
+  },
+  "userRights": {
+    "heading": "Your Rights",
+    "subtitle": "You have full control over how AI interacts with your data.",
+    "items": [
+      "Request processing without AI (disable AI Assistant)",
+      "Access AI interaction logs",
+      "Report incorrect or problematic responses",
+      "Exercise LGPD rights (access, correction, deletion, portability)",
+      "Request explanation of automated decisions",
+      "Contact compliance@catalisa.io for any questions"
+    ]
+  },
+  "iso42001": {
+    "heading": "ISO 42001 Alignment",
+    "description": "Catalisa follows the guidelines of ISO/IEC 42001:2023 (AI Management System) as a framework for responsible AI governance. Our AI management system (AIMS) covers:",
+    "items": [
+      "Documented AI policy reviewed semi-annually",
+      "AI system impact assessment",
+      "Risk register with mitigation controls",
+      "Internal audit program",
+      "Continual improvement process",
+      "Automated fairness and bias testing",
+      "AI ethics training plan for all employees"
+    ],
+    "disclaimer": "Catalisa uses ISO/IEC 42001:2023 as a reference framework. This does not constitute certification or a formal compliance statement."
+  },
+  "contact": {
+    "heading": "Contact Us",
+    "subtitle": "Have questions about how we use AI? Get in touch.",
+    "email": "compliance@catalisa.io",
+    "emailLabel": "Compliance Email",
+    "formHeading": "Send your question"
+  },
+  "cta": {
+    "heading": "Committed to",
+    "headingGradient": "responsible AI",
+    "subtitle": "Transparency, security, and respect for your data. Always."
+  }
+}

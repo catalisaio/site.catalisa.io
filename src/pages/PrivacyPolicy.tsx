@@ -253,19 +253,7 @@ export function PrivacyPolicy() {
         </Box>
       </SectionWrapper>
 
-      <PageCTA
-        heading={t('cta.heading')}
-        subtitle={t('cta.subtitle')}
-        primaryCTA={{
-          label: t('cta.primaryLabel'),
-          href: 'mailto:privacidade@catalisa.io',
-          icon: FiMail,
-        }}
-        secondaryCTA={{
-          label: t('cta.secondaryLabel'),
-          to: WHATSAPP_URL,
-        }}
-      />
+      {/* CTA temporarily removed */}
     </>
   );
 }

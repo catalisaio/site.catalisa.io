@@ -1,113 +1,113 @@
 {
   "hero": {
-    "badge": "Transparencia AI",
+    "badge": "Transparência AI",
     "heading": "Como usamos",
-    "headingGradient": "inteligencia artificial",
-    "subtitle": "Acreditamos que a confianca comeca pela transparencia. Saiba como nossos sistemas de IA funcionam, como protegemos seus dados e quais direitos voce tem."
+    "headingGradient": "inteligência artificial",
+    "subtitle": "Acreditamos que a confiança começa pela transparência. Saiba como nossos sistemas de IA funcionam, como protegemos seus dados e quais direitos você tem."
   },
   "systems": {
     "heading": "Nossos Sistemas de IA",
     "items": [
       {
         "title": "AI Assistant",
-        "description": "Assistente inteligente integrado ao CRM com mais de 100 ferramentas para gestao de leads, envio de mensagens e automacao de workflows.",
+        "description": "Assistente inteligente integrado ao CRM com mais de 100 ferramentas para gestão de leads, envio de mensagens e automação de workflows.",
         "provider": "Claude (Anthropic)",
-        "features": ["Gestao de leads", "Mensagens WhatsApp", "Criacao de workflows", "Relatorios"]
+        "features": ["Gestão de leads", "Mensagens WhatsApp", "Criação de workflows", "Relatórios"]
       },
       {
         "title": "AI Agents",
-        "description": "Agentes personalizados criados por usuarios com prompts especificos e ferramentas seletivas para tarefas especializadas.",
+        "description": "Agentes personalizados criados por usuários com prompts específicos e ferramentas seletivas para tarefas especializadas.",
         "provider": "Claude (Anthropic)",
         "features": ["Prompts personalizados", "Ferramentas seletivas", "Conversas persistentes", "Templates prontos"]
       },
       {
         "title": "Workflow AI Actions",
-        "description": "Acoes de IA em workflows automatizados que processam dados, tomam decisoes e executam tarefas sem intervencao manual.",
+        "description": "Ações de IA em workflows automatizados que processam dados, tomam decisões e executam tarefas sem intervenção manual.",
         "provider": "Claude (Anthropic)",
-        "features": ["Execucao automatizada", "Processamento de dados", "Decisoes condicionais", "Integracoes"]
+        "features": ["Execução automatizada", "Processamento de dados", "Decisões condicionais", "Integrações"]
       }
     ]
   },
   "dataProtection": {
-    "heading": "Protecao de Dados",
-    "subtitle": "Seus dados sao tratados com o mais alto nivel de seguranca e privacidade.",
+    "heading": "Proteção de Dados",
+    "subtitle": "Seus dados são tratados com o mais alto nível de segurança e privacidade.",
     "items": [
       {
         "title": "PII Scrubbing",
-        "description": "Dados sensiveis como CPF, CNPJ, email e cartao de credito sao automaticamente detectados e removidos dos logs de IA."
+        "description": "Dados sensíveis como CPF, CNPJ, email e cartão de crédito são automaticamente detectados e removidos dos logs de IA."
       },
       {
         "title": "Sem treinamento nos seus dados",
-        "description": "Seus dados NAO sao usados para treinar modelos de IA. A Anthropic possui politica zero-retention para chamadas de API."
+        "description": "Seus dados NÃO são usados para treinar modelos de IA. A Anthropic possui política zero-retention para chamadas de API."
       },
       {
-        "title": "Retencao minima",
-        "description": "Logs de interacao com IA sao retidos por no maximo 7 dias e automaticamente limpos pelo servico de retencao."
+        "title": "Retenção mínima",
+        "description": "Logs de interação com IA são retidos por no máximo 7 dias e automaticamente limpos pelo serviço de retenção."
       },
       {
-        "title": "Encriptacao",
-        "description": "Todos os dados em transito e em repouso sao encriptados. Dados sensiveis possuem camada adicional de encriptacao."
+        "title": "Encriptação",
+        "description": "Todos os dados em trânsito e em repouso são encriptados. Dados sensíveis possuem camada adicional de encriptação."
       }
     ]
   },
   "humanOversight": {
-    "heading": "Supervisao Humana",
-    "subtitle": "Mantemos controle total sobre os sistemas de IA com multiplas camadas de seguranca.",
+    "heading": "Supervisão Humana",
+    "subtitle": "Mantemos controle total sobre os sistemas de IA com múltiplas camadas de segurança.",
     "items": [
       {
         "title": "Kill Switch",
-        "description": "Administradores podem pausar e resumir todos os sistemas de IA instantaneamente por usuario."
+        "description": "Administradores podem pausar e resumir todos os sistemas de IA instantaneamente por usuário."
       },
       {
-        "title": "Regras de Seguranca",
-        "description": "Cada agente de IA possui regras configuráveis que limitam acoes, acessos e comportamentos."
+        "title": "Regras de Segurança",
+        "description": "Cada agente de IA possui regras configuráveis que limitam ações, acessos e comportamentos."
       },
       {
-        "title": "Deteccao de Prompt Injection",
-        "description": "Tentativas de manipulacao de prompts sao detectadas automaticamente e podem ser bloqueadas."
+        "title": "Detecção de Prompt Injection",
+        "description": "Tentativas de manipulação de prompts são detectadas automaticamente e podem ser bloqueadas."
       },
       {
         "title": "Rate Limiting",
-        "description": "Limites de uso protegem contra abuso com 3 niveis de controle (curto, medio e longo prazo)."
+        "description": "Limites de uso protegem contra abuso com 3 níveis de controle (curto, médio e longo prazo)."
       }
     ]
   },
   "userRights": {
     "heading": "Seus Direitos",
-    "subtitle": "Voce tem controle total sobre como a IA interage com seus dados.",
+    "subtitle": "Você tem controle total sobre como a IA interage com seus dados.",
     "items": [
       "Solicitar processamento sem IA (desativar AI Assistant)",
-      "Acessar logs de interacoes com IA",
-      "Reportar respostas incorretas ou problematicas",
-      "Exercer direitos LGPD (acesso, correcao, exclusao, portabilidade)",
-      "Solicitar explicacao sobre decisoes automatizadas",
-      "Contatar compliance@catalisa.io para qualquer questao"
+      "Acessar logs de interações com IA",
+      "Reportar respostas incorretas ou problemáticas",
+      "Exercer direitos LGPD (acesso, correção, exclusão, portabilidade)",
+      "Solicitar explicação sobre decisões automatizadas",
+      "Contatar compliance@catalisa.io para qualquer questão"
     ]
   },
   "iso42001": {
     "heading": "Alinhamento ISO 42001",
-    "description": "A Catalisa segue as diretrizes da ISO/IEC 42001:2023 (AI Management System) como framework para governanca de IA responsavel. Nosso sistema de gestao de IA (AIMS) abrange:",
+    "description": "A Catalisa segue as diretrizes da ISO/IEC 42001:2023 (AI Management System) como framework para governança de IA responsável. Nosso sistema de gestão de IA (AIMS) abrange:",
     "items": [
-      "Politica de IA documentada e revisada semestralmente",
-      "Avaliacao de impacto de sistemas AI (AI Impact Assessment)",
-      "Registro de riscos com controles de mitigacao",
+      "Política de IA documentada e revisada semestralmente",
+      "Avaliação de impacto de sistemas AI (AI Impact Assessment)",
+      "Registro de riscos com controles de mitigação",
       "Programa de auditoria interna",
-      "Processo de melhoria continua",
+      "Processo de melhoria contínua",
       "Testes automatizados de fairness e bias",
-      "Plano de treinamento em IA etica para todos os colaboradores"
+      "Plano de treinamento em IA ética para todos os colaboradores"
     ],
-    "disclaimer": "A Catalisa utiliza a ISO/IEC 42001:2023 como framework de referencia. Isto nao constitui certificacao ou declaracao de conformidade formal."
+    "disclaimer": "A Catalisa utiliza a ISO/IEC 42001:2023 como framework de referência. Isto não constitui certificação ou declaração de conformidade formal."
   },
   "contact": {
     "heading": "Fale Conosco",
-    "subtitle": "Tem duvidas sobre como usamos IA? Entre em contato.",
+    "subtitle": "Tem dúvidas sobre como usamos IA? Entre em contato.",
     "email": "compliance@catalisa.io",
     "emailLabel": "Email de Compliance",
-    "formHeading": "Envie sua duvida"
+    "formHeading": "Envie sua dúvida"
   },
   "cta": {
     "heading": "Compromisso com IA",
-    "headingGradient": "responsavel",
-    "subtitle": "Transparencia, seguranca e respeito aos seus dados. Sempre."
+    "headingGradient": "responsável",
+    "subtitle": "Transparência, segurança e respeito aos seus dados. Sempre."
   }
 }

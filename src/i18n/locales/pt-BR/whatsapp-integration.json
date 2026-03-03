@@ -3,45 +3,45 @@
     "badge": "Integração WHATSAPP",
     "heading": "Cloud API ou QR Code.",
     "headingGradient": "Você escolhe.",
-    "subtitle": "Dois metodos de conexão, uma única plataforma. Escolha o ideal para sua empresa e comece a automatizar."
+    "subtitle": "Dois métodos de conexão, uma única plataforma. Escolha o ideal para sua empresa e comece a automatizar."
   },
   "comparison": {
     "heading": "Dois caminhos, um destino",
     "cloudApi": {
       "title": "Cloud API (Meta Oficial)",
       "badge": "ENTERPRISE",
-      "description": "Conexão oficial via API do WhatsApp Business da Meta. Compliance garantido, escala ilimitada e auditabilidade completa. Ideal para empresas que precisam de conformidade regulatoria.",
+      "description": "Conexão oficial via API do WhatsApp Business da Meta. Compliance garantido, escala ilimitada e auditabilidade completa. Ideal para empresas que precisam de conformidade regulatória.",
       "idealFor": "Ideal para: Enterprise, Fintechs, Bancos, Seguradoras"
     },
     "qrCode": {
       "title": "QR Code (Baileys)",
       "badge": "Rápido",
-      "description": "Conexão instantanea via QR Code. Sem aprovação, sem espera. Perfeito para testar rapidamente, validar POCs e operações de menor escala.",
+      "description": "Conexão instantânea via QR Code. Sem aprovação, sem espera. Perfeito para testar rapidamente, validar POCs e operações de menor escala.",
       "idealFor": "Ideal para: Startups, Testes, POCs, PMEs"
     },
     "tableHeaders": {
-      "feature": "Caracteristica",
+      "feature": "Característica",
       "cloudApi": "Cloud API",
       "qrCode": "QR Code"
     },
     "rows": [
-      { "feature": "Setup", "cloudApi": "3-5 dias (aprovação Meta)", "qrCode": "Instantaneo (QR Code)" },
-      { "feature": "Compliance", "cloudApi": "Oficial, auditavel", "qrCode": "Não-oficial" },
-      { "feature": "Custo de mensagens", "cloudApi": "Por conversa (Meta pricing)", "qrCode": "Gratuito (infra propria)" },
+      { "feature": "Setup", "cloudApi": "3-5 dias (aprovação Meta)", "qrCode": "Instantâneo (QR Code)" },
+      { "feature": "Compliance", "cloudApi": "Oficial, auditável", "qrCode": "Não-oficial" },
+      { "feature": "Custo de mensagens", "cloudApi": "Por conversa (Meta pricing)", "qrCode": "Gratuito (infra própria)" },
       { "feature": "Escala", "cloudApi": "Ilimitada", "qrCode": "Moderada" },
       { "feature": "Multi-device", "cloudApi": "Sim (nativo)", "qrCode": "Sim (com limitações)" },
       { "feature": "Webhooks", "cloudApi": "Sim (Meta)", "qrCode": "Sim (Baileys)" },
       { "feature": "Templates de mensagem", "cloudApi": "Sim (aprovação Meta)", "qrCode": "Não" },
-      { "feature": "Numero verificado", "cloudApi": "Sim (selo verde)", "qrCode": "Não" }
+      { "feature": "Número verificado", "cloudApi": "Sim (selo verde)", "qrCode": "Não" }
     ]
   },
   "decisionGuide": {
     "heading": "Qual escolher?",
-    "subtitle": "Não sabe qual metodo e ideal? Use este guia rápido para decidir.",
+    "subtitle": "Não sabe qual método é ideal? Use este guia rápido para decidir.",
     "cloudApi": {
       "title": "Escolha Cloud API se...",
       "scenarios": [
-        "Sua empresa e regulada (fintech, banco, seguradora)",
+        "Sua empresa é regulada (fintech, banco, seguradora)",
         "Você precisa de audit trail e compliance",
         "Opera com mais de 1.000 conversas/dia",
         "Precisa de templates de mensagem aprovados",
@@ -51,9 +51,9 @@
     "qrCode": {
       "title": "Escolha QR Code se...",
       "scenarios": [
-        "Quer comecar a testar em minutos",
-        "Esta validando um MVP ou POC",
-        "Opera com volume baixo/medio",
+        "Quer começar a testar em minutos",
+        "Está validando um MVP ou POC",
+        "Opera com volume baixo/médio",
         "Não precisa de compliance formal",
         "Quer custo zero de mensagens"
       ]
@@ -63,12 +63,12 @@
     "heading": "Perguntas frequentes",
     "items": [
       {
-        "question": "Posso usar os dois metodos ao mesmo tempo?",
-        "answer": "Sim. A Catalisa suporta Cloud API e QR Code simultaneamente. Você pode usar Cloud API para o numero principal e QR Code para numeros de teste ou secundarios."
+        "question": "Posso usar os dois métodos ao mesmo tempo?",
+        "answer": "Sim. A Catalisa suporta Cloud API e QR Code simultaneamente. Você pode usar Cloud API para o número principal e QR Code para números de teste ou secundários."
       },
       {
         "question": "Posso migrar de QR Code para Cloud API depois?",
-        "answer": "Sim. A migração e simples e não afeta seus workflows. Basta configurar a Cloud API e reconectar — todos os workflows, agentes e configurações continuam funcionando."
+        "answer": "Sim. A migração é simples e não afeta seus workflows. Basta configurar a Cloud API e reconectar — todos os workflows, agentes e configurações continuam funcionando."
       },
       {
         "question": "A Cloud API tem custo por mensagem?",
@@ -76,25 +76,25 @@
       },
       {
         "question": "O QR Code pode ser bloqueado pelo WhatsApp?",
-        "answer": "O QR Code usa a biblioteca Baileys, que não e oficial da Meta. Para uso em produção com alto volume, recomendamos a Cloud API para evitar riscos de bloqueio e garantir conformidade."
+        "answer": "O QR Code usa a biblioteca Baileys, que não é oficial da Meta. Para uso em produção com alto volume, recomendamos a Cloud API para evitar riscos de bloqueio e garantir conformidade."
       },
       {
-        "question": "Preciso de um numero de telefone dedicado?",
-        "answer": "Para Cloud API: sim, você precisa de um numero verificado pelo Meta Business Manager. Para QR Code: você usa seu numero existente do WhatsApp."
+        "question": "Preciso de um número de telefone dedicado?",
+        "answer": "Para Cloud API: sim, você precisa de um número verificado pelo Meta Business Manager. Para QR Code: você usa seu número existente do WhatsApp."
       },
       {
         "question": "Quanto tempo leva para aprovar a Cloud API?",
-        "answer": "A aprovação do Meta Business Manager leva de 3 a 5 dias úteis. Após aprovação, a conexão e instantanea. Nossa equipe ajuda em todo o processo."
+        "answer": "A aprovação do Meta Business Manager leva de 3 a 5 dias úteis. Após aprovação, a conexão é instantânea. Nossa equipe ajuda em todo o processo."
       },
       {
-        "question": "A Catalisa e parceira oficial da Meta?",
+        "question": "A Catalisa é parceira oficial da Meta?",
         "answer": "Sim. A Catalisa utiliza a API oficial do WhatsApp Business (Cloud API) da Meta, com acesso a todos os recursos e conformidade garantida."
       }
     ]
   },
   "cta": {
     "heading": "Pronto para conectar seu WhatsApp?",
-    "subtitle": "Nossa equipe ajuda você a escolher e configurar o metodo ideal para sua empresa.",
+    "subtitle": "Nossa equipe ajuda você a escolher e configurar o método ideal para sua empresa.",
     "button": "Conectar meu WhatsApp"
   }
 }

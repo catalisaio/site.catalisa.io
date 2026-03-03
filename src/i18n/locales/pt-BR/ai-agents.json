@@ -37,7 +37,7 @@
     "heading": "Como agentes funcionam",
     "items": [
       { "title": "Defina a personalidade", "description": "System prompt com regras, tom e objetivo. Cada agente sabe exatamente o que fazer." },
-      { "title": "Conecte ferramentas", "description": "Escolha entre 60+ building blocks — CRM, WhatsApp, APIs, calendario e mais." },
+      { "title": "Conecte ferramentas", "description": "Escolha entre 60+ building blocks — CRM, WhatsApp, APIs, calendário e mais." },
       { "title": "Ative no WhatsApp", "description": "Agentes operam via Cloud API oficial da Meta. Atendimento 24/7 sem QR code." },
       { "title": "Orquestre via workflow", "description": "Combine agentes em fluxos automatizados. SDR qualifica, suporte resolve, cobrança negocia." }
     ]
@@ -48,7 +48,7 @@
   },
   "aiCapabilities": {
     "heading": "Poderes de processamento IA",
-    "subtitle": "Cada capacidade e uma ferramenta que você combina livremente.",
+    "subtitle": "Cada capacidade é uma ferramenta que você combina livremente.",
     "items": [
       { "label": "Análise de Sentimento", "description": "Detecta emoção e urgência" },
       { "label": "Sumarização", "description": "Resume conversas longas" },
@@ -56,15 +56,15 @@
       { "label": "Geração de Texto", "description": "Cria conteúdo personalizado" },
       { "label": "Tradução", "description": "Multi-idioma em tempo real" },
       { "label": "Extração de Dados", "description": "Estrutura texto livre" },
-      { "label": "Análise de Imagem", "description": "OCR e visao computacional" },
-      { "label": "Transcrição", "description": "Audio para texto" }
+      { "label": "Análise de Imagem", "description": "OCR e visão computacional" },
+      { "label": "Transcrição", "description": "Áudio para texto" }
     ]
   },
   "realWorldExample": {
     "heading": "Exemplo real: Lead qualificado pelo WhatsApp",
     "steps": [
       "Mensagem recebida",
-      "Transcreve audio",
+      "Transcreve áudio",
       "Analisa sentimento",
       "Agente SDR qualifica",
       "Cria lead no CRM",
@@ -74,20 +74,20 @@
   "toolsGrid": {
     "badge": "FERRAMENTAS",
     "heading": "21+ categorias de ferramentas para agentes",
-    "subtitle": "Cada agente escolhe quais ferramentas pode usar. Aqui estao as categorias disponíveis.",
+    "subtitle": "Cada agente escolhe quais ferramentas pode usar. Aqui estão as categorias disponíveis.",
     "items": [
       { "title": "Buscar Leads", "description": "Pesquisa e filtra leads no CRM" },
       { "title": "Gerenciar Leads", "description": "Cria, atualiza e qualifica leads" },
-      { "title": "WhatsApp", "description": "Envia mensagens e midia" },
-      { "title": "Calendario", "description": "Agenda e consulta eventos" },
+      { "title": "WhatsApp", "description": "Envia mensagens e mídia" },
+      { "title": "Calendário", "description": "Agenda e consulta eventos" },
       { "title": "Workflows", "description": "Dispara e consulta workflows" },
       { "title": "Outros Agentes", "description": "Orquestra time de agentes" },
       { "title": "Ações Customizadas", "description": "Executa lógica customizada" },
       { "title": "Notificações", "description": "Email e webhooks" },
       { "title": "Captura", "description": "Links de captura de leads" },
       { "title": "Métricas", "description": "Estatísticas e performance" },
-      { "title": "Dados", "description": "Extração e transformacao" },
-      { "title": "APIs Externas", "description": "Integração HTTP generica" }
+      { "title": "Dados", "description": "Extração e transformação" },
+      { "title": "APIs Externas", "description": "Integração HTTP genérica" }
     ]
   },
   "pageCTA": {

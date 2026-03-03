@@ -18,35 +18,59 @@
   "compliance": {
     "heading": "Segurança e conformidade para o varejo",
     "items": [
-      { "label": "Conformidade LGPD", "description": "Proteção automática de dados dos clientes" },
-      { "label": "Pagamentos Seguros", "description": "Links de pagamento protegidos e rastreados" },
-      { "label": "Dados Protegidos", "description": "Criptografia de ponta a ponta em todas as conversas" },
-      { "label": "Multi-loja", "description": "Gerencie multiplas lojas em uma única plataforma" }
+      {
+        "label": "Conformidade LGPD",
+        "description": "Proteção automática de dados dos clientes"
+      },
+      {
+        "label": "Pagamentos Seguros",
+        "description": "Links de pagamento protegidos e rastreados"
+      },
+      {
+        "label": "Dados Protegidos",
+        "description": "Criptografia de ponta a ponta em todas as conversas"
+      },
+      {
+        "label": "Multi-loja",
+        "description": "Gerencie múltiplas lojas em uma única plataforma"
+      }
     ]
   },
   "capabilities": {
     "badge": "CAPACIDADES PARA VAREJO",
     "heading": "Tudo que o varejo precisa em um só lugar",
-    "subtitle": "Catálogo digital, gestao de pedidos, fidelização e atendimento multicanal — integrados ao WhatsApp.",
+    "subtitle": "Catálogo digital, gestão de pedidos, fidelização e atendimento multicanal — integrados ao WhatsApp.",
     "items": [
-      { "title": "Catálogo Digital", "description": "Apresente produtos com fotos, preços e disponibilidade pelo WhatsApp." },
-      { "title": "Gestao de Pedidos", "description": "Receba, processe e acompanhe pedidos automaticamente." },
-      { "title": "Programa de Fidelidade", "description": "Engaje clientes com recompensas e ofertas personalizadas." },
-      { "title": "Atendimento Multicanal", "description": "WhatsApp, site e loja fisica em uma única plataforma." }
+      {
+        "title": "Catálogo Digital",
+        "description": "Apresente produtos com fotos, preços e disponibilidade pelo WhatsApp."
+      },
+      {
+        "title": "Gestão de Pedidos",
+        "description": "Receba, processe e acompanhe pedidos automaticamente."
+      },
+      {
+        "title": "Programa de Fidelidade",
+        "description": "Engaje clientes com recompensas e ofertas personalizadas."
+      },
+      {
+        "title": "Atendimento Multicanal",
+        "description": "WhatsApp, site e loja física em uma única plataforma."
+      }
     ],
     "pipelineLabel": "Pipeline completo:",
-    "pipelineSteps": "Contato \u2192 Catálogo \u2192 Pedido \u2192 Pagamento \u2192 Entrega \u2192 Feedback"
+    "pipelineSteps": "Contato → Catálogo → Pedido → Pagamento → Entrega → Feedback"
   },
   "roi": {
     "heading": "Quanto você economiza?",
     "subtitle": "Simule a economia mensal ao automatizar o atendimento e pedidos do seu negócio.",
     "calculatorTitle": "Calculadora de ROI",
-    "agentsLabel": "Numero de atendentes",
+    "agentsLabel": "Número de atendentes",
     "ordersLabel": "Pedidos por dia",
     "costLabel": "Custo por atendente (R$)",
     "currentCost": "Custo atual/mês",
     "withCatalisa": "Com Catalisa/mês",
     "monthlySavings": "Economia mensal",
-    "reduction": "de reducao"
+    "reduction": "de redução"
   }
 }

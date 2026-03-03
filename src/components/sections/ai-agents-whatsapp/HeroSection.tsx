@@ -4,7 +4,6 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { MotionBox } from '../../motion';
 import { GradientText } from '../../shared/GradientText';
-import { PhoneMockup } from '../../shared/PhoneMockup';
 import { WhatsAppChatPreview } from '../../shared/WhatsAppChatPreview';
 import type { ChatMessage } from '../../shared/WhatsAppChatPreview';
 import { useLocalizedPath } from '../../../i18n/useLocalizedPath';
@@ -191,13 +190,11 @@ export function HeroSection() {
             maxW="360px"
             flex="0 0 auto"
           >
-            <PhoneMockup maxH="520px">
-              <WhatsAppChatPreview
-                messages={chatMessages}
-                title={t('hero.chatTitle')}
-                triggerMode="auto"
-              />
-            </PhoneMockup>
+            <WhatsAppChatPreview
+              messages={chatMessages}
+              title={t('hero.chatTitle')}
+              triggerMode="auto"
+            />
           </MotionBox>
         </Flex>
       </Container>

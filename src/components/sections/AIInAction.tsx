@@ -20,7 +20,6 @@ import { useLocalizedPath } from '../../i18n/useLocalizedPath';
 import { MotionBox } from '../motion';
 import { GradientText } from '../shared/GradientText';
 import { BrowserFrame } from '../shared/BrowserFrame';
-import { PhoneMockup } from '../shared/PhoneMockup';
 
 interface CaseStep {
   number: string;
@@ -286,7 +285,13 @@ export function AIInAction() {
                         flexShrink={0}
                         display={{ base: 'none', md: 'block' }}
                       >
-                        <PhoneMockup maxH="420px">
+                        <Box
+                          maxW="280px"
+                          borderRadius="2xl"
+                          overflow="hidden"
+                          boxShadow="2xl"
+                          bg="#0B141A"
+                        >
                           <Box
                             as="video"
                             src="/videos/whatsapp-demo.mp4"
@@ -296,10 +301,9 @@ export function AIInAction() {
                             loop
                             playsInline
                             w="100%"
-                            h="100%"
                             objectFit="cover"
                           />
-                        </PhoneMockup>
+                        </Box>
                       </Box>
                     </Flex>
                   ) : (

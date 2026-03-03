@@ -4,7 +4,6 @@ import { useTranslation } from 'react-i18next';
 import { Slide } from '../Slide';
 import { MotionBox } from '../../motion';
 import { GradientText } from '../../shared/GradientText';
-import { PhoneMockup } from '../../shared/PhoneMockup';
 import { usePresentationColors } from '../PresentationThemeContext';
 
 export function S09b_WhatsAppDemo() {
@@ -130,26 +129,26 @@ export function S09b_WhatsAppDemo() {
             pointerEvents="none"
             filter="blur(30px)"
           />
-          <PhoneMockup
-            maxH={{ base: '360px', md: '420px', lg: '500px' } as unknown as string}
-            variant="dark"
-            showStatusBar={false}
+          <Box
+            maxH={{ base: '360px', md: '420px', lg: '500px' }}
+            borderRadius="2xl"
+            overflow="hidden"
+            boxShadow="2xl"
+            bg="#0B141A"
           >
-            <Box position="relative" w="full" h="full" bg="#075E54">
-              <video
-                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                autoPlay
-                muted
-                loop
-                playsInline
-                preload="metadata"
-                poster="/videos/whatsapp-demo-poster.jpg"
-                controls
-              >
-                <source src="/videos/whatsapp-demo.mp4" type="video/mp4" />
-              </video>
-            </Box>
-          </PhoneMockup>
+            <video
+              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              poster="/videos/whatsapp-demo-poster.jpg"
+              controls
+            >
+              <source src="/videos/whatsapp-demo.mp4" type="video/mp4" />
+            </video>
+          </Box>
         </MotionBox>
       </Flex>
     </Slide>

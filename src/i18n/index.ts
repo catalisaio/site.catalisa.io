@@ -17,7 +17,7 @@ export const allNamespaces = [
   'fintech', 'banking', 'insurance', 'retail', 'startups',
   'contact', 'demo', 'privacy',
   'data-actions', 'data-usecases', 'data-capabilities', 'data-stats', 'data-workflows',
-  'presentation', 'press-kit', 'terms', 'security', 'pricing', 'how-it-works', 'whatsapp-integration', 'playbooks', 'seo', 'apps', 'casos-de-uso', 'ai-agents-whatsapp', 'insights', 'ai-transparency', 'training',
+  'presentation', 'presentation-admin', 'press-kit', 'terms', 'security', 'pricing', 'how-it-works', 'whatsapp-integration', 'playbooks', 'seo', 'apps', 'casos-de-uso', 'ai-agents-whatsapp', 'insights', 'ai-transparency', 'training',
 ] as const;
 
 export type Namespace = (typeof allNamespaces)[number];

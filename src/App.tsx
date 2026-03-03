@@ -38,8 +38,9 @@ const PlaybookDetail = lazy(() => import('./pages/PlaybookDetail').then(m => ({ 
 const InsightsListing = lazy(() => import('./pages/InsightsListing').then(m => ({ default: m.InsightsListing })));
 const InsightsListingMagazine = lazy(() => import('./pages/InsightsListingMagazine').then(m => ({ default: m.InsightsListingMagazine })));
 const InsightArticle = lazy(() => import('./pages/InsightArticle').then(m => ({ default: m.InsightArticle })));
-const PresentationMenu = lazy(() => import('./pages/PresentationMenu').then(m => ({ default: m.PresentationMenu })));
-const PresentationInvite = lazy(() => import('./pages/PresentationInvite').then(m => ({ default: m.PresentationInvite })));
+const PresentationLogin = lazy(() => import('./pages/presentation/PresentationLogin').then(m => ({ default: m.PresentationLogin })));
+const PresentationDashboard = lazy(() => import('./pages/presentation/PresentationDashboard').then(m => ({ default: m.PresentationDashboard })));
+const PresentationInvite = lazy(() => import('./pages/presentation/PresentationInvite').then(m => ({ default: m.PresentationInvite })));
 const AITransparency = lazy(() => import('./pages/AITransparency').then(m => ({ default: m.AITransparency })));
 const TrainingLogin = lazy(() => import('./pages/training/TrainingLogin').then(m => ({ default: m.TrainingLogin })));
 const TrainingCatalog = lazy(() => import('./pages/training/TrainingCatalog').then(m => ({ default: m.TrainingCatalog })));
@@ -86,10 +87,8 @@ function App() {
         <AppReadySignal />
         <Suspense fallback={<PageLoader />}>
           <Routes>
-            {/* Fullscreen routes — no Header/Footer */}
+            {/* Fullscreen routes — no Header/Footer (presentation viewers only) */}
             <Route element={<LanguageLayout lang="pt-BR" />}>
-              <Route path="/apresentacao" element={<PresentationMenu />} />
-              <Route path="/apresentacao/i/:code" element={<PresentationInvite />} />
               <Route path="/apresentacao/comercial" element={<PresentationGate><CommercialPresentation /></PresentationGate>} />
               <Route path="/apresentacao/investidor" element={<PresentationGate><InvestorPresentation /></PresentationGate>} />
               <Route path="/apresentacao/varejo" element={<PresentationGate><RetailPresentation /></PresentationGate>} />
@@ -136,6 +135,9 @@ function App() {
                 <Route path="/treinamento" element={<TrainingCatalog />} />
                 <Route path="/treinamento/:courseSlug" element={<CourseDetail />} />
                 <Route path="/treinamento/:courseSlug/:moduleSlug/:lessonSlug" element={<LessonPage />} />
+                <Route path="/apresentacao/login" element={<PresentationLogin />} />
+                <Route path="/apresentacao" element={<PresentationDashboard />} />
+                <Route path="/apresentacao/i/:code" element={<PresentationInvite />} />
                 <Route path="/press-kit" element={<PressKit />} />
                 <Route path="/insights" element={<InsightsListingMagazine />} />
                 <Route path="/insights/all" element={<InsightsListing />} />
@@ -172,6 +174,9 @@ function App() {
                 <Route path="training" element={<TrainingCatalog />} />
                 <Route path="training/:courseSlug" element={<CourseDetail />} />
                 <Route path="training/:courseSlug/:moduleSlug/:lessonSlug" element={<LessonPage />} />
+                <Route path="presentation/login" element={<PresentationLogin />} />
+                <Route path="presentation" element={<PresentationDashboard />} />
+                <Route path="presentation/i/:code" element={<PresentationInvite />} />
                 <Route path="press-kit" element={<PressKit />} />
                 <Route path="insights" element={<InsightsListingMagazine />} />
                 <Route path="insights/all" element={<InsightsListing />} />

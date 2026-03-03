@@ -5,7 +5,7 @@ import {
   Tbody, Tr, Th, Td, Checkbox, CheckboxGroup, Stack,
   Textarea, FormControl, FormLabel, Spinner, Card, CardBody,
   InputGroup, InputLeftElement, Select, Tag, TagLabel,
-  Tooltip,
+  Tooltip, Container,
 } from '@chakra-ui/react';
 import {
   FiCopy, FiLogOut, FiPlus, FiX, FiExternalLink, FiBarChart2,
@@ -13,12 +13,14 @@ import {
   FiRefreshCw,
 } from 'react-icons/fi';
 import { useNavigate } from 'react-router-dom';
-import { useSupabaseAuth } from '../hooks/useSupabaseAuth';
+import { useTranslation } from 'react-i18next';
+import { useSupabaseAuth } from '../../hooks/useSupabaseAuth';
+import { ProtectedRoute } from '../../components/training/ProtectedRoute';
 import {
   createInvite, listInvites, toggleInviteActive, listEvents,
   type PresentationInvite, type CreateInviteInput, type PresentationEvent,
-} from '../lib/invites';
-import { initTrackingSession } from '../lib/presentationTracking';
+} from '../../lib/invites';
+import { initTrackingSession } from '../../lib/presentationTracking';
 
 // ---- Clipboard helper ----
 async function copyToClipboard(text: string): Promise<void> {
@@ -59,93 +61,31 @@ function getInviteStatus(inv: PresentationInvite): 'active' | 'expired' | 'maxed
   return 'active';
 }
 
-function statusBadge(status: ReturnType<typeof getInviteStatus>) {
+function StatusBadge({ status, t }: { status: ReturnType<typeof getInviteStatus>; t: (key: string) => string }) {
   const map = {
-    active:   { color: 'green',  label: 'Ativo' },
-    expired:  { color: 'yellow', label: 'Expirado' },
-    maxed:    { color: 'orange', label: 'Esgotado' },
-    inactive: { color: 'red',    label: 'Inativo' },
+    active:   { color: 'green',  label: t('inviteTable.statusActive') },
+    expired:  { color: 'yellow', label: t('inviteTable.statusExpired') },
+    maxed:    { color: 'orange', label: t('inviteTable.statusMaxed') },
+    inactive: { color: 'red',    label: t('inviteTable.statusInactive') },
   };
   const { color, label } = map[status];
   return <Badge colorScheme={color} fontSize="xs" variant="subtle">{label}</Badge>;
 }
 
-function relativeTime(dateStr: string): string {
+function relativeTime(dateStr: string, t: (key: string, opts?: Record<string, unknown>) => string): string {
   const diff = Date.now() - new Date(dateStr).getTime();
   const mins = Math.floor(diff / 60000);
-  if (mins < 1) return 'agora';
-  if (mins < 60) return `${mins}min`;
+  if (mins < 1) return t('time.now');
+  if (mins < 60) return t('time.minutes', { count: mins });
   const hours = Math.floor(mins / 60);
-  if (hours < 24) return `${hours}h`;
+  if (hours < 24) return t('time.hours', { count: hours });
   const days = Math.floor(hours / 24);
-  if (days < 30) return `${days}d`;
+  if (days < 30) return t('time.days', { count: days });
   return new Date(dateStr).toLocaleDateString('pt-BR');
 }
 
-// ---- Login Form ----
-function LoginForm({ onLogin }: { onLogin: (email: string, password: string) => Promise<void> }) {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState('');
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setLoading(true);
-    setError('');
-    try {
-      await onLogin(email, password);
-    } catch (err) {
-      setError(err instanceof Error ? err.message : 'Erro ao fazer login');
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  return (
-    <Flex minH="100vh" align="center" justify="center" bg="gray.900">
-      <Box bg="gray.800" p={8} borderRadius="xl" w="full" maxW="400px">
-        <VStack spacing={6} as="form" onSubmit={handleSubmit}>
-          <Heading size="lg" color="white">Apresentações</Heading>
-          <Text color="gray.400" fontSize="sm">Acesso administrativo</Text>
-          {error && (
-            <Text color="red.400" fontSize="sm" w="full">{error}</Text>
-          )}
-          <FormControl>
-            <FormLabel color="gray.300" fontSize="sm">Email</FormLabel>
-            <Input
-              type="email"
-              value={email}
-              onChange={e => setEmail(e.target.value)}
-              bg="gray.700"
-              color="white"
-              border="none"
-              required
-            />
-          </FormControl>
-          <FormControl>
-            <FormLabel color="gray.300" fontSize="sm">Senha</FormLabel>
-            <Input
-              type="password"
-              value={password}
-              onChange={e => setPassword(e.target.value)}
-              bg="gray.700"
-              color="white"
-              border="none"
-              required
-            />
-          </FormControl>
-          <Button type="submit" colorScheme="purple" w="full" isLoading={loading}>
-            Entrar
-          </Button>
-        </VStack>
-      </Box>
-    </Flex>
-  );
-}
-
 // ---- Invite Form ----
-function InviteForm({ onCreated }: { onCreated: () => void }) {
+function InviteForm({ onCreated, t }: { onCreated: () => void; t: (key: string, opts?: Record<string, unknown>) => string }) {
   const toast = useToast();
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -172,8 +112,8 @@ function InviteForm({ onCreated }: { onCreated: () => void }) {
       const link = `${window.location.origin}/apresentacao/i/${invite.code}`;
       await copyToClipboard(link);
       toast({
-        title: 'Invite criado!',
-        description: `Link copiado: ${link}`,
+        title: t('inviteForm.successTitle'),
+        description: t('inviteForm.successDescription', { link }),
         status: 'success',
         duration: 5000,
       });
@@ -186,8 +126,8 @@ function InviteForm({ onCreated }: { onCreated: () => void }) {
       onCreated();
     } catch (err) {
       toast({
-        title: 'Erro ao criar invite',
-        description: err instanceof Error ? err.message : 'Erro desconhecido',
+        title: t('inviteForm.errorTitle'),
+        description: err instanceof Error ? err.message : t('inviteForm.errorUnknown'),
         status: 'error',
       });
     } finally {
@@ -198,67 +138,67 @@ function InviteForm({ onCreated }: { onCreated: () => void }) {
   if (!open) {
     return (
       <Button leftIcon={<FiPlus />} colorScheme="purple" size="sm" onClick={() => setOpen(true)}>
-        Novo Invite
+        {t('inviteForm.newInvite')}
       </Button>
     );
   }
 
   return (
-    <Box bg="gray.800" p={6} borderRadius="xl" border="1px solid" borderColor="gray.700" mb={6}>
+    <Box bg="gray.50" p={6} borderRadius="xl" border="1px solid" borderColor="gray.200" mb={6}>
       <HStack justify="space-between" mb={4}>
-        <Heading size="sm" color="white">Novo Invite</Heading>
-        <IconButton aria-label="Fechar" icon={<FiX />} size="sm" variant="ghost" color="gray.400" onClick={() => setOpen(false)} />
+        <Heading size="sm" color="gray.800">{t('inviteForm.heading')}</Heading>
+        <IconButton aria-label="Close" icon={<FiX />} size="sm" variant="ghost" color="gray.500" onClick={() => setOpen(false)} />
       </HStack>
       <VStack as="form" spacing={4} onSubmit={handleSubmit}>
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={4} w="full">
           <FormControl isRequired>
-            <FormLabel color="gray.300" fontSize="sm">Nome</FormLabel>
+            <FormLabel color="gray.600" fontSize="sm">{t('inviteForm.name')}</FormLabel>
             <Input
               value={form.recipient_name}
               onChange={e => setForm(f => ({ ...f, recipient_name: e.target.value }))}
-              bg="gray.700" color="white" border="none" size="sm"
-              placeholder="João Silva"
+              size="sm"
+              placeholder={t('inviteForm.namePlaceholder')}
             />
           </FormControl>
           <FormControl>
-            <FormLabel color="gray.300" fontSize="sm">Email</FormLabel>
+            <FormLabel color="gray.600" fontSize="sm">{t('inviteForm.email')}</FormLabel>
             <Input
               type="email"
               value={form.recipient_email || ''}
               onChange={e => setForm(f => ({ ...f, recipient_email: e.target.value }))}
-              bg="gray.700" color="white" border="none" size="sm"
-              placeholder="joao@empresa.com"
+              size="sm"
+              placeholder={t('inviteForm.emailPlaceholder')}
             />
           </FormControl>
           <FormControl>
-            <FormLabel color="gray.300" fontSize="sm">Empresa</FormLabel>
+            <FormLabel color="gray.600" fontSize="sm">{t('inviteForm.company')}</FormLabel>
             <Input
               value={form.recipient_company || ''}
               onChange={e => setForm(f => ({ ...f, recipient_company: e.target.value }))}
-              bg="gray.700" color="white" border="none" size="sm"
-              placeholder="Empresa LTDA"
+              size="sm"
+              placeholder={t('inviteForm.companyPlaceholder')}
             />
           </FormControl>
           <FormControl>
-            <FormLabel color="gray.300" fontSize="sm">Cargo</FormLabel>
+            <FormLabel color="gray.600" fontSize="sm">{t('inviteForm.role')}</FormLabel>
             <Input
               value={form.recipient_role || ''}
               onChange={e => setForm(f => ({ ...f, recipient_role: e.target.value }))}
-              bg="gray.700" color="white" border="none" size="sm"
-              placeholder="CTO"
+              size="sm"
+              placeholder={t('inviteForm.rolePlaceholder')}
             />
           </FormControl>
         </SimpleGrid>
 
         <FormControl>
-          <FormLabel color="gray.300" fontSize="sm">Decks permitidos</FormLabel>
+          <FormLabel color="gray.600" fontSize="sm">{t('inviteForm.allowedDecks')}</FormLabel>
           <CheckboxGroup
             value={form.allowed_decks.includes('*') ? DECKS.map(d => d.key) : form.allowed_decks}
             onChange={handleDeckChange}
           >
             <Stack direction="row" flexWrap="wrap" spacing={3}>
               {DECKS.map(d => (
-                <Checkbox key={d.key} value={d.key} colorScheme={d.color} color="gray.300" size="sm">
+                <Checkbox key={d.key} value={d.key} colorScheme={d.color} size="sm">
                   {d.label}
                 </Checkbox>
               ))}
@@ -268,38 +208,38 @@ function InviteForm({ onCreated }: { onCreated: () => void }) {
 
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={4} w="full">
           <FormControl>
-            <FormLabel color="gray.300" fontSize="sm">Max views (vazio = ilimitado)</FormLabel>
+            <FormLabel color="gray.600" fontSize="sm">{t('inviteForm.maxUses')}</FormLabel>
             <Input
               type="number"
               value={form.max_uses ?? ''}
               onChange={e => setForm(f => ({ ...f, max_uses: e.target.value ? Number(e.target.value) : null }))}
-              bg="gray.700" color="white" border="none" size="sm"
-              placeholder="10"
+              size="sm"
+              placeholder={t('inviteForm.maxUsesPlaceholder')}
             />
           </FormControl>
           <FormControl>
-            <FormLabel color="gray.300" fontSize="sm">Expira em</FormLabel>
+            <FormLabel color="gray.600" fontSize="sm">{t('inviteForm.expiresAt')}</FormLabel>
             <Input
               type="datetime-local"
               value={form.expires_at ?? ''}
               onChange={e => setForm(f => ({ ...f, expires_at: e.target.value || null }))}
-              bg="gray.700" color="white" border="none" size="sm"
+              size="sm"
             />
           </FormControl>
         </SimpleGrid>
 
         <FormControl>
-          <FormLabel color="gray.300" fontSize="sm">Notas internas</FormLabel>
+          <FormLabel color="gray.600" fontSize="sm">{t('inviteForm.notes')}</FormLabel>
           <Textarea
             value={form.notes || ''}
             onChange={e => setForm(f => ({ ...f, notes: e.target.value }))}
-            bg="gray.700" color="white" border="none" size="sm" rows={2}
-            placeholder="Ex: contato feito na FEBRABAN Tech"
+            size="sm" rows={2}
+            placeholder={t('inviteForm.notesPlaceholder')}
           />
         </FormControl>
 
         <Button type="submit" colorScheme="purple" size="sm" w="full" isLoading={loading}>
-          Criar e copiar link
+          {t('inviteForm.submit')}
         </Button>
       </VStack>
     </Box>
@@ -314,6 +254,7 @@ function InviteTable({
   search,
   statusFilter,
   deckFilter,
+  t,
 }: {
   invites: PresentationInvite[];
   onToggle: (id: string, active: boolean) => void;
@@ -321,6 +262,7 @@ function InviteTable({
   search: string;
   statusFilter: string;
   deckFilter: string;
+  t: (key: string, opts?: Record<string, unknown>) => string;
 }) {
   const toast = useToast();
   const [page, setPage] = useState(0);
@@ -331,7 +273,6 @@ function InviteTable({
   const filtered = useMemo(() => {
     let result = invites;
 
-    // Search
     if (search) {
       const q = search.toLowerCase();
       result = result.filter(inv =>
@@ -343,12 +284,10 @@ function InviteTable({
       );
     }
 
-    // Status filter
     if (statusFilter !== 'all') {
       result = result.filter(inv => getInviteStatus(inv) === statusFilter);
     }
 
-    // Deck filter
     if (deckFilter !== 'all') {
       result = result.filter(inv =>
         inv.allowed_decks.includes('*') || inv.allowed_decks.includes(deckFilter)
@@ -365,7 +304,7 @@ function InviteTable({
   const copyLink = async (code: string) => {
     const link = `${window.location.origin}/apresentacao/i/${code}`;
     await copyToClipboard(link);
-    toast({ title: 'Link copiado!', status: 'info', duration: 2000 });
+    toast({ title: t('inviteTable.linkCopied'), status: 'info', duration: 2000 });
   };
 
   const openLink = (code: string) => {
@@ -376,7 +315,7 @@ function InviteTable({
   if (invites.length === 0) {
     return (
       <Box textAlign="center" py={10}>
-        <Text color="gray.500" fontSize="sm">Nenhum invite criado ainda.</Text>
+        <Text color="gray.500" fontSize="sm">{t('dashboard.noInvites')}</Text>
       </Box>
     );
   }
@@ -384,39 +323,38 @@ function InviteTable({
   if (filtered.length === 0) {
     return (
       <Box textAlign="center" py={10}>
-        <Text color="gray.500" fontSize="sm">Nenhum invite encontrado com esses filtros.</Text>
+        <Text color="gray.500" fontSize="sm">{t('dashboard.noResults')}</Text>
       </Box>
     );
   }
 
   return (
     <>
-      <Box overflowX="auto" borderRadius="lg" border="1px solid" borderColor="gray.700">
+      <Box overflowX="auto" borderRadius="lg" border="1px solid" borderColor="gray.200">
         <Table size="sm" variant="simple">
-          <Thead bg="gray.800">
+          <Thead bg="gray.50">
             <Tr>
-              <Th color="gray.400" borderColor="gray.700">Nome</Th>
-              <Th color="gray.400" borderColor="gray.700" display={{ base: 'none', md: 'table-cell' }}>Empresa</Th>
-              <Th color="gray.400" borderColor="gray.700">Código</Th>
-              <Th color="gray.400" borderColor="gray.700" display={{ base: 'none', lg: 'table-cell' }}>Decks</Th>
-              <Th color="gray.400" borderColor="gray.700" isNumeric>Views</Th>
-              <Th color="gray.400" borderColor="gray.700">Status</Th>
-              <Th color="gray.400" borderColor="gray.700" display={{ base: 'none', md: 'table-cell' }}>Criado</Th>
-              <Th color="gray.400" borderColor="gray.700" w="1px"></Th>
+              <Th borderColor="gray.200">{t('inviteTable.name')}</Th>
+              <Th borderColor="gray.200" display={{ base: 'none', md: 'table-cell' }}>{t('inviteTable.company')}</Th>
+              <Th borderColor="gray.200">{t('inviteTable.code')}</Th>
+              <Th borderColor="gray.200" display={{ base: 'none', lg: 'table-cell' }}>{t('inviteTable.decks')}</Th>
+              <Th borderColor="gray.200" isNumeric>{t('inviteTable.views')}</Th>
+              <Th borderColor="gray.200">{t('inviteTable.status')}</Th>
+              <Th borderColor="gray.200" display={{ base: 'none', md: 'table-cell' }}>{t('inviteTable.created')}</Th>
+              <Th borderColor="gray.200" w="1px"></Th>
             </Tr>
           </Thead>
           <Tbody>
             {pageItems.map(inv => {
               const status = getInviteStatus(inv);
               return (
-                <Tr key={inv.id} _hover={{ bg: 'gray.800' }} transition="background 0.15s">
-                  <Td borderColor="gray.700" py={3}>
+                <Tr key={inv.id} _hover={{ bg: 'gray.50' }} transition="background 0.15s">
+                  <Td borderColor="gray.200" py={3}>
                     <VStack align="start" spacing={0}>
-                      <Text color="white" fontSize="sm" fontWeight="500">{inv.recipient_name}</Text>
+                      <Text color="gray.800" fontSize="sm" fontWeight="500">{inv.recipient_name}</Text>
                       {inv.recipient_email && (
                         <Text color="gray.500" fontSize="xs">{inv.recipient_email}</Text>
                       )}
-                      {/* Mobile: show company inline */}
                       {inv.recipient_company && (
                         <Text color="gray.500" fontSize="xs" display={{ base: 'block', md: 'none' }}>
                           {inv.recipient_company}
@@ -424,19 +362,19 @@ function InviteTable({
                       )}
                     </VStack>
                   </Td>
-                  <Td borderColor="gray.700" display={{ base: 'none', md: 'table-cell' }}>
-                    <Text color="gray.300" fontSize="sm">{inv.recipient_company || '—'}</Text>
+                  <Td borderColor="gray.200" display={{ base: 'none', md: 'table-cell' }}>
+                    <Text color="gray.700" fontSize="sm">{inv.recipient_company || '—'}</Text>
                     {inv.recipient_role && (
                       <Text color="gray.500" fontSize="xs">{inv.recipient_role}</Text>
                     )}
                   </Td>
-                  <Td borderColor="gray.700">
-                    <Text fontFamily="mono" color="purple.300" fontSize="sm" fontWeight="600">{inv.code}</Text>
+                  <Td borderColor="gray.200">
+                    <Text fontFamily="mono" color="purple.600" fontSize="sm" fontWeight="600">{inv.code}</Text>
                   </Td>
-                  <Td borderColor="gray.700" display={{ base: 'none', lg: 'table-cell' }}>
+                  <Td borderColor="gray.200" display={{ base: 'none', lg: 'table-cell' }}>
                     <HStack spacing={1} flexWrap="wrap">
                       {inv.allowed_decks.includes('*')
-                        ? <Tag size="sm" colorScheme="purple" variant="subtle"><TagLabel>Todos</TagLabel></Tag>
+                        ? <Tag size="sm" colorScheme="purple" variant="subtle"><TagLabel>{t('inviteTable.allDecksLabel')}</TagLabel></Tag>
                         : inv.allowed_decks.map(d => (
                             <Tag key={d} size="sm" colorScheme={DECK_COLOR_MAP[d] || 'gray'} variant="subtle">
                               <TagLabel>{d}</TagLabel>
@@ -445,65 +383,65 @@ function InviteTable({
                       }
                     </HStack>
                   </Td>
-                  <Td borderColor="gray.700" isNumeric>
-                    <Text color="gray.300" fontSize="sm" fontWeight="500">
+                  <Td borderColor="gray.200" isNumeric>
+                    <Text color="gray.700" fontSize="sm" fontWeight="500">
                       {inv.uses_count}
                       {inv.max_uses ? (
-                        <Text as="span" color="gray.500" fontWeight="400">/{inv.max_uses}</Text>
+                        <Text as="span" color="gray.400" fontWeight="400">/{inv.max_uses}</Text>
                       ) : null}
                     </Text>
                   </Td>
-                  <Td borderColor="gray.700">
-                    {statusBadge(status)}
+                  <Td borderColor="gray.200">
+                    <StatusBadge status={status} t={t} />
                   </Td>
-                  <Td borderColor="gray.700" display={{ base: 'none', md: 'table-cell' }}>
+                  <Td borderColor="gray.200" display={{ base: 'none', md: 'table-cell' }}>
                     <Tooltip label={new Date(inv.created_at).toLocaleString('pt-BR')} placement="top" hasArrow>
-                      <Text color="gray.500" fontSize="xs" cursor="default">{relativeTime(inv.created_at)}</Text>
+                      <Text color="gray.500" fontSize="xs" cursor="default">{relativeTime(inv.created_at, t)}</Text>
                     </Tooltip>
                   </Td>
-                  <Td borderColor="gray.700">
+                  <Td borderColor="gray.200">
                     <HStack spacing={0}>
-                      <Tooltip label="Copiar link" hasArrow>
+                      <Tooltip label={t('inviteTable.copyLink')} hasArrow>
                         <IconButton
-                          aria-label="Copiar link"
+                          aria-label={t('inviteTable.copyLink')}
                           icon={<FiCopy />}
                           size="xs"
                           variant="ghost"
-                          color="gray.400"
-                          _hover={{ color: 'white' }}
+                          color="gray.500"
+                          _hover={{ color: 'gray.800' }}
                           onClick={() => copyLink(inv.code)}
                         />
                       </Tooltip>
-                      <Tooltip label="Abrir link" hasArrow>
+                      <Tooltip label={t('inviteTable.openLink')} hasArrow>
                         <IconButton
-                          aria-label="Abrir link"
+                          aria-label={t('inviteTable.openLink')}
                           icon={<FiExternalLink />}
                           size="xs"
                           variant="ghost"
-                          color="gray.400"
-                          _hover={{ color: 'white' }}
+                          color="gray.500"
+                          _hover={{ color: 'gray.800' }}
                           onClick={() => openLink(inv.code)}
                         />
                       </Tooltip>
-                      <Tooltip label="Ver eventos" hasArrow>
+                      <Tooltip label={t('inviteTable.viewEvents')} hasArrow>
                         <IconButton
-                          aria-label="Ver eventos"
+                          aria-label={t('inviteTable.viewEvents')}
                           icon={<FiBarChart2 />}
                           size="xs"
                           variant="ghost"
-                          color="gray.400"
-                          _hover={{ color: 'purple.300' }}
+                          color="gray.500"
+                          _hover={{ color: 'purple.600' }}
                           onClick={() => onViewEvents(inv.code)}
                         />
                       </Tooltip>
-                      <Tooltip label={inv.is_active ? 'Desativar' : 'Ativar'} hasArrow>
+                      <Tooltip label={inv.is_active ? t('inviteTable.deactivate') : t('inviteTable.activate')} hasArrow>
                         <IconButton
-                          aria-label={inv.is_active ? 'Desativar' : 'Ativar'}
+                          aria-label={inv.is_active ? t('inviteTable.deactivate') : t('inviteTable.activate')}
                           icon={inv.is_active ? <FiEyeOff /> : <FiEye />}
                           size="xs"
                           variant="ghost"
-                          color={inv.is_active ? 'gray.400' : 'green.400'}
-                          _hover={{ color: inv.is_active ? 'red.300' : 'green.300' }}
+                          color={inv.is_active ? 'gray.500' : 'green.500'}
+                          _hover={{ color: inv.is_active ? 'red.500' : 'green.400' }}
                           onClick={() => onToggle(inv.id, !inv.is_active)}
                         />
                       </Tooltip>
@@ -521,29 +459,29 @@ function InviteTable({
         <Text color="gray.500" fontSize="xs">
           {filtered.length} invite{filtered.length !== 1 ? 's' : ''}
           {search || statusFilter !== 'all' || deckFilter !== 'all'
-            ? ` (de ${invites.length} total)`
+            ? ` (${t('dashboard.total')}: ${invites.length})`
             : ''}
         </Text>
         {totalPages > 1 && (
           <HStack spacing={2}>
             <IconButton
-              aria-label="Página anterior"
+              aria-label="Previous page"
               icon={<FiChevronLeft />}
               size="xs"
               variant="ghost"
-              color="gray.400"
+              color="gray.500"
               isDisabled={safePage === 0}
               onClick={() => setPage(p => p - 1)}
             />
-            <Text color="gray.400" fontSize="xs" minW="80px" textAlign="center">
-              {safePage + 1} de {totalPages}
+            <Text color="gray.500" fontSize="xs" minW="80px" textAlign="center">
+              {safePage + 1} {t('inviteTable.pageOf')} {totalPages}
             </Text>
             <IconButton
-              aria-label="Próxima página"
+              aria-label="Next page"
               icon={<FiChevronRight />}
               size="xs"
               variant="ghost"
-              color="gray.400"
+              color="gray.500"
               isDisabled={safePage >= totalPages - 1}
               onClick={() => setPage(p => p + 1)}
             />
@@ -555,7 +493,7 @@ function InviteTable({
 }
 
 // ---- Events Panel ----
-function EventsPanel({ code, onClose }: { code: string; onClose: () => void }) {
+function EventsPanel({ code, onClose, t }: { code: string; onClose: () => void; t: (key: string, opts?: Record<string, unknown>) => string }) {
   const [events, setEvents] = useState<PresentationEvent[]>([]);
   const [loading, setLoading] = useState(true);
   const [eventPage, setEventPage] = useState(0);
@@ -572,7 +510,6 @@ function EventsPanel({ code, onClose }: { code: string; onClose: () => void }) {
   const totalEventPages = Math.max(1, Math.ceil(events.length / 20));
   const pageEvents = events.slice(eventPage * 20, (eventPage + 1) * 20);
 
-  // Group stats
   const stats = useMemo(() => {
     const sessionStarts = events.filter(e => e.event_type === 'session_start').length;
     const uniqueDecks = new Set(events.filter(e => e.deck).map(e => e.deck!)).size;
@@ -584,60 +521,60 @@ function EventsPanel({ code, onClose }: { code: string; onClose: () => void }) {
   }, [events]);
 
   return (
-    <Box bg="gray.800" p={5} borderRadius="xl" border="1px solid" borderColor="gray.700">
+    <Box bg="gray.50" p={5} borderRadius="xl" border="1px solid" borderColor="gray.200">
       <HStack justify="space-between" mb={4}>
         <HStack spacing={3}>
-          <Heading size="sm" color="white">Eventos</Heading>
-          <Text fontFamily="mono" color="purple.300" fontSize="sm">{code}</Text>
+          <Heading size="sm" color="gray.800">{t('events.heading')}</Heading>
+          <Text fontFamily="mono" color="purple.600" fontSize="sm">{code}</Text>
         </HStack>
-        <IconButton aria-label="Fechar" icon={<FiX />} size="sm" variant="ghost" color="gray.400" onClick={onClose} />
+        <IconButton aria-label="Close" icon={<FiX />} size="sm" variant="ghost" color="gray.500" onClick={onClose} />
       </HStack>
 
       {loading ? (
-        <Flex justify="center" py={6}><Spinner color="purple.400" size="sm" /></Flex>
+        <Flex justify="center" py={6}><Spinner color="purple.500" size="sm" /></Flex>
       ) : events.length === 0 ? (
-        <Text color="gray.500" fontSize="sm" textAlign="center" py={6}>Nenhum evento registrado.</Text>
+        <Text color="gray.500" fontSize="sm" textAlign="center" py={6}>{t('events.noEvents')}</Text>
       ) : (
         <>
           {/* Stats bar */}
           <SimpleGrid columns={{ base: 2, md: 4 }} spacing={3} mb={4}>
-            <Box bg="gray.750" px={3} py={2} borderRadius="lg">
-              <Text color="gray.500" fontSize="xs">Sessões</Text>
-              <Text color="white" fontWeight="600">{stats.sessionStarts}</Text>
+            <Box bg="white" px={3} py={2} borderRadius="lg" border="1px solid" borderColor="gray.200">
+              <Text color="gray.500" fontSize="xs">{t('events.sessions')}</Text>
+              <Text color="gray.800" fontWeight="600">{stats.sessionStarts}</Text>
             </Box>
-            <Box bg="gray.750" px={3} py={2} borderRadius="lg">
-              <Text color="gray.500" fontSize="xs">Decks vistos</Text>
-              <Text color="white" fontWeight="600">{stats.uniqueDecks}</Text>
+            <Box bg="white" px={3} py={2} borderRadius="lg" border="1px solid" borderColor="gray.200">
+              <Text color="gray.500" fontSize="xs">{t('events.decksViewed')}</Text>
+              <Text color="gray.800" fontWeight="600">{stats.uniqueDecks}</Text>
             </Box>
-            <Box bg="gray.750" px={3} py={2} borderRadius="lg">
-              <Text color="gray.500" fontSize="xs">Tempo total</Text>
-              <Text color="white" fontWeight="600">
+            <Box bg="white" px={3} py={2} borderRadius="lg" border="1px solid" borderColor="gray.200">
+              <Text color="gray.500" fontSize="xs">{t('events.totalTime')}</Text>
+              <Text color="gray.800" fontWeight="600">
                 {stats.totalSeconds >= 60
                   ? `${Math.floor(stats.totalSeconds / 60)}min ${stats.totalSeconds % 60}s`
                   : `${stats.totalSeconds}s`}
               </Text>
             </Box>
-            <Box bg="gray.750" px={3} py={2} borderRadius="lg">
-              <Text color="gray.500" fontSize="xs">Slide máx</Text>
-              <Text color="white" fontWeight="600">{stats.maxSlide + 1}</Text>
+            <Box bg="white" px={3} py={2} borderRadius="lg" border="1px solid" borderColor="gray.200">
+              <Text color="gray.500" fontSize="xs">{t('events.maxSlide')}</Text>
+              <Text color="gray.800" fontWeight="600">{stats.maxSlide + 1}</Text>
             </Box>
           </SimpleGrid>
 
-          <Box overflowX="auto" maxH="350px" overflowY="auto" borderRadius="lg" border="1px solid" borderColor="gray.700">
+          <Box overflowX="auto" maxH="350px" overflowY="auto" borderRadius="lg" border="1px solid" borderColor="gray.200">
             <Table size="sm">
-              <Thead bg="gray.750" position="sticky" top={0} zIndex={1}>
+              <Thead bg="gray.100" position="sticky" top={0} zIndex={1}>
                 <Tr>
-                  <Th color="gray.400" borderColor="gray.700">Tipo</Th>
-                  <Th color="gray.400" borderColor="gray.700">Deck</Th>
-                  <Th color="gray.400" borderColor="gray.700" isNumeric>Slide</Th>
-                  <Th color="gray.400" borderColor="gray.700" isNumeric>Tempo</Th>
-                  <Th color="gray.400" borderColor="gray.700">Quando</Th>
+                  <Th borderColor="gray.200">{t('events.eventType')}</Th>
+                  <Th borderColor="gray.200">{t('events.deck')}</Th>
+                  <Th borderColor="gray.200" isNumeric>{t('events.slide')}</Th>
+                  <Th borderColor="gray.200" isNumeric>{t('events.time')}</Th>
+                  <Th borderColor="gray.200">{t('events.when')}</Th>
                 </Tr>
               </Thead>
               <Tbody>
                 {pageEvents.map(ev => (
-                  <Tr key={ev.id} _hover={{ bg: 'gray.750' }}>
-                    <Td borderColor="gray.700">
+                  <Tr key={ev.id} _hover={{ bg: 'gray.50' }}>
+                    <Td borderColor="gray.200">
                       <Badge
                         fontSize="xs"
                         variant="subtle"
@@ -651,24 +588,24 @@ function EventsPanel({ code, onClose }: { code: string; onClose: () => void }) {
                         {ev.event_type}
                       </Badge>
                     </Td>
-                    <Td borderColor="gray.700">
+                    <Td borderColor="gray.200">
                       {ev.deck ? (
                         <Tag size="sm" colorScheme={DECK_COLOR_MAP[ev.deck] || 'gray'} variant="subtle">
                           <TagLabel>{ev.deck}</TagLabel>
                         </Tag>
                       ) : (
-                        <Text color="gray.600" fontSize="xs">—</Text>
+                        <Text color="gray.400" fontSize="xs">—</Text>
                       )}
                     </Td>
-                    <Td borderColor="gray.700" color="gray.300" fontSize="xs" isNumeric>
+                    <Td borderColor="gray.200" color="gray.600" fontSize="xs" isNumeric>
                       {ev.slide_index != null ? ev.slide_index + 1 : '—'}
                     </Td>
-                    <Td borderColor="gray.700" color="gray.300" fontSize="xs" isNumeric>
+                    <Td borderColor="gray.200" color="gray.600" fontSize="xs" isNumeric>
                       {ev.seconds != null ? `${Math.round(ev.seconds)}s` : '—'}
                     </Td>
-                    <Td borderColor="gray.700">
+                    <Td borderColor="gray.200">
                       <Tooltip label={new Date(ev.created_at).toLocaleString('pt-BR')} hasArrow>
-                        <Text color="gray.500" fontSize="xs" cursor="default">{relativeTime(ev.created_at)}</Text>
+                        <Text color="gray.500" fontSize="xs" cursor="default">{relativeTime(ev.created_at, t)}</Text>
                       </Tooltip>
                     </Td>
                   </Tr>
@@ -680,26 +617,26 @@ function EventsPanel({ code, onClose }: { code: string; onClose: () => void }) {
           {/* Events pagination */}
           {totalEventPages > 1 && (
             <Flex justify="space-between" align="center" mt={3}>
-              <Text color="gray.500" fontSize="xs">{events.length} eventos</Text>
+              <Text color="gray.500" fontSize="xs">{events.length} {t('events.eventsCount')}</Text>
               <HStack spacing={2}>
                 <IconButton
-                  aria-label="Anterior"
+                  aria-label="Previous"
                   icon={<FiChevronLeft />}
                   size="xs"
                   variant="ghost"
-                  color="gray.400"
+                  color="gray.500"
                   isDisabled={eventPage === 0}
                   onClick={() => setEventPage(p => p - 1)}
                 />
-                <Text color="gray.400" fontSize="xs" minW="60px" textAlign="center">
+                <Text color="gray.500" fontSize="xs" minW="60px" textAlign="center">
                   {eventPage + 1}/{totalEventPages}
                 </Text>
                 <IconButton
-                  aria-label="Próxima"
+                  aria-label="Next"
                   icon={<FiChevronRight />}
                   size="xs"
                   variant="ghost"
-                  color="gray.400"
+                  color="gray.500"
                   isDisabled={eventPage >= totalEventPages - 1}
                   onClick={() => setEventPage(p => p + 1)}
                 />
@@ -712,8 +649,10 @@ function EventsPanel({ code, onClose }: { code: string; onClose: () => void }) {
   );
 }
 
-// ---- Admin Dashboard ----
-function Dashboard({ onSignOut }: { onSignOut: () => void }) {
+// ---- Dashboard Content ----
+function DashboardContent() {
+  const { t } = useTranslation('presentation-admin');
+  const { user, signOut } = useSupabaseAuth();
   const navigate = useNavigate();
   const [invites, setInvites] = useState<PresentationInvite[]>([]);
   const [loadingInvites, setLoadingInvites] = useState(true);
@@ -760,20 +699,25 @@ function Dashboard({ onSignOut }: { onSignOut: () => void }) {
   }, [invites]);
 
   return (
-    <Box minH="100vh" bg="gray.900" p={{ base: 4, md: 8 }}>
+    <Container maxW="1200px" py={12}>
       {/* Header */}
       <Flex justify="space-between" align="center" mb={8}>
         <VStack align="start" spacing={1}>
-          <Heading size="lg" color="white">Apresentações</Heading>
+          <Heading size="lg" color="gray.800">{t('dashboard.heading')}</Heading>
           <HStack spacing={4}>
-            <Text color="gray.500" fontSize="sm">{stats.total} invites</Text>
-            <Text color="green.400" fontSize="sm">{stats.active} ativos</Text>
-            <Text color="purple.300" fontSize="sm">{stats.totalViews} views</Text>
+            <Text color="gray.500" fontSize="sm">{stats.total} {t('dashboard.invites')}</Text>
+            <Text color="green.500" fontSize="sm">{stats.active} {t('dashboard.active')}</Text>
+            <Text color="purple.600" fontSize="sm">{stats.totalViews} {t('dashboard.views')}</Text>
           </HStack>
         </VStack>
-        <Button leftIcon={<FiLogOut />} variant="ghost" color="gray.400" size="sm" onClick={onSignOut}>
-          Sair
-        </Button>
+        <HStack spacing={3}>
+          {user && (
+            <Text color="gray.500" fontSize="sm" display={{ base: 'none', md: 'block' }}>{user.email}</Text>
+          )}
+          <Button leftIcon={<FiLogOut />} variant="ghost" color="gray.500" size="sm" onClick={signOut}>
+            {t('dashboard.logout')}
+          </Button>
+        </HStack>
       </Flex>
 
       {/* Deck cards */}
@@ -781,17 +725,17 @@ function Dashboard({ onSignOut }: { onSignOut: () => void }) {
         {DECKS.map(d => (
           <Card
             key={d.key}
-            bg="gray.800"
+            bg="white"
             cursor="pointer"
-            _hover={{ bg: 'gray.700', transform: 'translateY(-2px)', borderColor: `${d.color}.500` }}
+            _hover={{ transform: 'translateY(-2px)', borderColor: `${d.color}.500`, shadow: 'md' }}
             transition="all 0.2s"
             onClick={() => openDeck(d.key, d.path)}
             border="1px solid"
-            borderColor="gray.700"
+            borderColor="gray.200"
           >
             <CardBody py={4} px={4}>
               <Badge colorScheme={d.color} mb={2} fontSize="xs">{d.label}</Badge>
-              <Text color="gray.500" fontSize="xs">Abrir deck</Text>
+              <Text color="gray.500" fontSize="xs">{t('dashboard.openDeck')}</Text>
             </CardBody>
           </Card>
         ))}
@@ -806,18 +750,18 @@ function Dashboard({ onSignOut }: { onSignOut: () => void }) {
           direction={{ base: 'column', md: 'row' }}
           gap={3}
         >
-          <Heading size="md" color="white">Invites</Heading>
+          <Heading size="md" color="gray.800">{t('dashboard.invitesSection')}</Heading>
           <HStack spacing={2}>
             <IconButton
-              aria-label="Atualizar"
+              aria-label={t('dashboard.refreshInvites')}
               icon={<FiRefreshCw />}
               size="sm"
               variant="ghost"
-              color="gray.400"
+              color="gray.500"
               onClick={loadInvites}
               isLoading={loadingInvites}
             />
-            <InviteForm onCreated={loadInvites} />
+            <InviteForm onCreated={loadInvites} t={t} />
           </HStack>
         </Flex>
 
@@ -833,15 +777,12 @@ function Dashboard({ onSignOut }: { onSignOut: () => void }) {
               <FiSearch color="gray" />
             </InputLeftElement>
             <Input
-              placeholder="Buscar por nome, empresa, código..."
+              placeholder={t('dashboard.searchPlaceholder')}
               value={search}
               onChange={e => setSearch(e.target.value)}
-              bg="gray.800"
-              color="white"
               border="1px solid"
-              borderColor="gray.700"
+              borderColor="gray.200"
               _focus={{ borderColor: 'purple.500' }}
-              _placeholder={{ color: 'gray.500' }}
               borderRadius="lg"
             />
           </InputGroup>
@@ -850,52 +791,48 @@ function Dashboard({ onSignOut }: { onSignOut: () => void }) {
               size="sm"
               value={statusFilter}
               onChange={e => setStatusFilter(e.target.value)}
-              bg="gray.800"
-              color="white"
               border="1px solid"
-              borderColor="gray.700"
+              borderColor="gray.200"
               _focus={{ borderColor: 'purple.500' }}
               borderRadius="lg"
               maxW="160px"
             >
-              <option value="all" style={{ background: '#1A202C' }}>Todos status</option>
-              <option value="active" style={{ background: '#1A202C' }}>Ativos</option>
-              <option value="expired" style={{ background: '#1A202C' }}>Expirados</option>
-              <option value="maxed" style={{ background: '#1A202C' }}>Esgotados</option>
-              <option value="inactive" style={{ background: '#1A202C' }}>Inativos</option>
+              <option value="all">{t('dashboard.allStatuses')}</option>
+              <option value="active">{t('inviteTable.statusActive')}</option>
+              <option value="expired">{t('inviteTable.statusExpired')}</option>
+              <option value="maxed">{t('inviteTable.statusMaxed')}</option>
+              <option value="inactive">{t('inviteTable.statusInactive')}</option>
             </Select>
             <Select
               size="sm"
               value={deckFilter}
               onChange={e => setDeckFilter(e.target.value)}
-              bg="gray.800"
-              color="white"
               border="1px solid"
-              borderColor="gray.700"
+              borderColor="gray.200"
               _focus={{ borderColor: 'purple.500' }}
               borderRadius="lg"
               maxW="160px"
             >
-              <option value="all" style={{ background: '#1A202C' }}>Todos decks</option>
+              <option value="all">{t('dashboard.allDecks')}</option>
               {DECKS.map(d => (
-                <option key={d.key} value={d.key} style={{ background: '#1A202C' }}>{d.label}</option>
+                <option key={d.key} value={d.key}>{d.label}</option>
               ))}
             </Select>
             {(search || statusFilter !== 'all' || deckFilter !== 'all') && (
               <Button
                 size="xs"
                 variant="ghost"
-                color="gray.400"
+                color="gray.500"
                 onClick={() => { setSearch(''); setStatusFilter('all'); setDeckFilter('all'); }}
               >
-                Limpar
+                {t('dashboard.clearFilters')}
               </Button>
             )}
           </HStack>
         </Flex>
 
         {loadingInvites ? (
-          <Flex justify="center" py={10}><Spinner color="purple.400" /></Flex>
+          <Flex justify="center" py={10}><Spinner color="purple.500" /></Flex>
         ) : (
           <InviteTable
             invites={invites}
@@ -904,6 +841,7 @@ function Dashboard({ onSignOut }: { onSignOut: () => void }) {
             search={search}
             statusFilter={statusFilter}
             deckFilter={deckFilter}
+            t={t}
           />
         )}
       </Box>
@@ -911,28 +849,18 @@ function Dashboard({ onSignOut }: { onSignOut: () => void }) {
       {/* Events panel */}
       {eventsCode && (
         <Box ref={eventsPanelRef} mt={6}>
-          <EventsPanel code={eventsCode} onClose={() => setEventsCode(null)} />
+          <EventsPanel code={eventsCode} onClose={() => setEventsCode(null)} t={t} />
         </Box>
       )}
-    </Box>
+    </Container>
   );
 }
 
-// ---- Main page ----
-export function PresentationMenu() {
-  const { user, loading, signIn, signOut } = useSupabaseAuth();
-
-  if (loading) {
-    return (
-      <Flex minH="100vh" align="center" justify="center" bg="gray.900">
-        <Spinner color="purple.400" size="lg" />
-      </Flex>
-    );
-  }
-
-  if (!user) {
-    return <LoginForm onLogin={signIn} />;
-  }
-
-  return <Dashboard onSignOut={signOut} />;
+// ---- Exported page component ----
+export function PresentationDashboard() {
+  return (
+    <ProtectedRoute loginPath="/apresentacao/login">
+      <DashboardContent />
+    </ProtectedRoute>
+  );
 }

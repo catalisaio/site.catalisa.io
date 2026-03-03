@@ -2,16 +2,17 @@ import { useEffect, useState } from 'react';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import {
   Flex, Box, Heading, Text, Spinner, SimpleGrid, Card, CardBody, Badge,
-  Button, VStack, Icon,
+  Button, VStack, Icon, Container,
 } from '@chakra-ui/react';
 import { FiClock, FiMessageCircle, FiArrowRight } from 'react-icons/fi';
-import { MotionBox } from '../components/motion';
-import { GradientText } from '../components/shared/GradientText';
+import { useTranslation } from 'react-i18next';
+import { MotionBox } from '../../components/motion';
+import { GradientText } from '../../components/shared/GradientText';
 import {
   validateInvite, incrementUses,
-  type PresentationInvite,
-} from '../lib/invites';
-import { initTrackingSession, trackPresentationEvent } from '../lib/presentationTracking';
+  type PresentationInvite as PresentationInviteType,
+} from '../../lib/invites';
+import { initTrackingSession, trackPresentationEvent } from '../../lib/presentationTracking';
 
 const DECK_META: Record<string, { label: string; color: string; path: string }> = {
   comercial:  { label: 'Comercial',  color: 'purple', path: '/apresentacao/comercial' },
@@ -24,6 +25,7 @@ const DECK_META: Record<string, { label: string; color: string; path: string }> 
 const ALL_DECK_KEYS = Object.keys(DECK_META);
 
 function ExpiredLinkPage() {
+  const { t } = useTranslation('presentation-admin');
   const location = useLocation();
   const currentUrl = `catalisa.io${location.pathname}`;
   const whatsappMsg = encodeURIComponent(
@@ -34,57 +36,36 @@ function ExpiredLinkPage() {
   );
 
   return (
-    <Flex minH="100vh" align="center" justify="center" bg="#0A0F14" p={8} position="relative" overflow="hidden">
-      {/* Radial gradient atmosphere */}
-      <Box
-        position="absolute"
-        top="30%"
-        left="50%"
-        transform="translate(-50%, -50%)"
-        w="600px"
-        h="600px"
-        bgGradient="radial(circle, rgba(115, 75, 156, 0.15) 0%, transparent 70%)"
-        pointerEvents="none"
-      />
-      <Box
-        position="absolute"
-        bottom="20%"
-        right="30%"
-        w="400px"
-        h="400px"
-        bgGradient="radial(circle, rgba(253, 194, 52, 0.05) 0%, transparent 60%)"
-        pointerEvents="none"
-      />
-
-      <Box textAlign="center" maxW="520px" position="relative" zIndex={1}>
+    <Container maxW="520px" py={20}>
+      <Box textAlign="center">
         <MotionBox initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }}>
           <Flex
             w="64px"
             h="64px"
             borderRadius="full"
-            bg="whiteAlpha.100"
+            bg="purple.50"
             align="center"
             justify="center"
             mx="auto"
             mb={6}
           >
-            <Icon as={FiClock} boxSize={6} color="catalisa.secondary" />
+            <Icon as={FiClock} boxSize={6} color="purple.500" />
           </Flex>
         </MotionBox>
 
         <MotionBox initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.1 }}>
-          <Heading size="xl" color="white" mb={3} fontWeight="800">
-            Esse link já cumpriu sua{' '}
-            <GradientText fontSize="inherit" fontWeight="inherit">missão</GradientText>
+          <Heading size="xl" color="gray.800" mb={3} fontWeight="800">
+            {t('invite.expiredTitle')}{' '}
+            <GradientText fontSize="inherit" fontWeight="inherit">{t('invite.expiredHighlight')}</GradientText>
           </Heading>
         </MotionBox>
 
         <MotionBox initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }}>
-          <Text color="whiteAlpha.700" fontSize="lg" mb={2}>
-            O convite que você recebeu expirou ou atingiu o limite de acessos.
+          <Text color="gray.600" fontSize="lg" mb={2}>
+            {t('invite.expiredMessage')}
           </Text>
-          <Text color="whiteAlpha.500" fontSize="md" mb={8}>
-            Sem problemas — boas conversas não têm prazo de validade.
+          <Text color="gray.400" fontSize="md" mb={8}>
+            {t('invite.expiredSubtext')}
           </Text>
         </MotionBox>
 
@@ -102,7 +83,7 @@ function ExpiredLinkPage() {
               _hover={{ transform: 'translateY(-2px)', shadow: 'lg' }}
               transition="all 0.2s"
             >
-              Solicitar novo acesso
+              {t('invite.requestAccess')}
             </Button>
             <Button
               as="a"
@@ -110,38 +91,39 @@ function ExpiredLinkPage() {
               target="_blank"
               rel="noopener noreferrer"
               variant="outline"
-              borderColor="whiteAlpha.200"
-              color="whiteAlpha.700"
+              borderColor="gray.300"
+              color="gray.600"
               size="sm"
               leftIcon={<FiMessageCircle />}
-              _hover={{ borderColor: 'whiteAlpha.400', color: 'white', transform: 'translateY(-1px)' }}
+              _hover={{ borderColor: 'gray.400', color: 'gray.800', transform: 'translateY(-1px)' }}
               transition="all 0.2s"
             >
-              Ou fale direto com nosso CEO
+              {t('invite.contactCEO')}
             </Button>
             <Button
               as="a"
               href="https://catalisa.io"
               variant="ghost"
-              color="whiteAlpha.400"
+              color="gray.400"
               size="sm"
               rightIcon={<FiArrowRight />}
-              _hover={{ color: 'whiteAlpha.700' }}
+              _hover={{ color: 'gray.600' }}
             >
-              Conhecer a Catalisa
+              {t('invite.discoverCatalisa')}
             </Button>
           </VStack>
         </MotionBox>
       </Box>
-    </Flex>
+    </Container>
   );
 }
 
 export function PresentationInvite() {
+  const { t } = useTranslation('presentation-admin');
   const { code } = useParams<{ code: string }>();
   const navigate = useNavigate();
   const [status, setStatus] = useState<'loading' | 'invalid' | 'valid'>('loading');
-  const [invite, setInvite] = useState<PresentationInvite | null>(null);
+  const [invite, setInvite] = useState<PresentationInviteType | null>(null);
 
   useEffect(() => {
     if (!code) { setStatus('invalid'); return; }
@@ -196,7 +178,7 @@ export function PresentationInvite() {
   // Loading state
   if (status === 'loading') {
     return (
-      <Flex minH="100vh" align="center" justify="center" bg="#0A0F14">
+      <Flex justify="center" align="center" py={20}>
         <Spinner color="brand.400" size="lg" />
       </Flex>
     );
@@ -212,26 +194,15 @@ export function PresentationInvite() {
   const validDecks = allowedKeys.filter(k => k in DECK_META);
 
   return (
-    <Flex minH="100vh" align="center" justify="center" bg="#0A0F14" p={8} position="relative" overflow="hidden">
-      {/* Radial gradient atmosphere */}
-      <Box
-        position="absolute"
-        top="20%"
-        left="50%"
-        transform="translate(-50%, -50%)"
-        w="600px"
-        h="600px"
-        bgGradient="radial(circle, rgba(115, 75, 156, 0.12) 0%, transparent 70%)"
-        pointerEvents="none"
-      />
-
-      <Box maxW="600px" w="full" textAlign="center" position="relative" zIndex={1}>
+    <Container maxW="600px" py={20}>
+      <Box textAlign="center">
         <MotionBox initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-          <Heading size="lg" color="white" mb={2} fontWeight="800">
-            Olá, <GradientText fontSize="inherit" fontWeight="inherit">{invite!.recipient_name}</GradientText>
+          <Heading size="lg" color="gray.800" mb={2} fontWeight="800">
+            {t('invite.greeting', { name: '' })}
+            <GradientText fontSize="inherit" fontWeight="inherit">{invite!.recipient_name}</GradientText>
           </Heading>
-          <Text color="whiteAlpha.600" mb={8}>
-            Selecione a apresentação que deseja assistir:
+          <Text color="gray.500" mb={8}>
+            {t('invite.selectDeck')}
           </Text>
         </MotionBox>
 
@@ -246,12 +217,11 @@ export function PresentationInvite() {
                 transition={{ duration: 0.5, delay: 0.15 + i * 0.1 }}
               >
                 <Card
-                  bg="whiteAlpha.50"
+                  bg="white"
                   border="1px solid"
-                  borderColor="whiteAlpha.100"
+                  borderColor="gray.200"
                   cursor="pointer"
                   _hover={{
-                    bg: 'whiteAlpha.100',
                     borderColor: `${meta.color}.500`,
                     transform: 'translateY(-2px)',
                     shadow: 'lg',
@@ -261,7 +231,7 @@ export function PresentationInvite() {
                 >
                   <CardBody textAlign="center" py={8}>
                     <Badge colorScheme={meta.color} fontSize="md" mb={2}>{meta.label}</Badge>
-                    <Text color="whiteAlpha.500" fontSize="sm">Ver apresentação</Text>
+                    <Text color="gray.500" fontSize="sm">{t('invite.viewPresentation')}</Text>
                   </CardBody>
                 </Card>
               </MotionBox>
@@ -269,6 +239,6 @@ export function PresentationInvite() {
           })}
         </SimpleGrid>
       </Box>
-    </Flex>
+    </Container>
   );
 }

@@ -39,6 +39,8 @@ const ptToEn: Record<string, string> = {
   '/transparencia-ia': '/en/ai-transparency',
   '/treinamento': '/en/training',
   '/treinamento/login': '/en/training/login',
+  '/apresentacao': '/en/presentation',
+  '/apresentacao/login': '/en/presentation/login',
 };
 
 /**

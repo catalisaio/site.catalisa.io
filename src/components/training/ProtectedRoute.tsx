@@ -3,7 +3,12 @@ import { Flex, Spinner } from '@chakra-ui/react';
 import { useSupabaseAuth } from '../../hooks/useSupabaseAuth';
 import { useLocalizedPath } from '../../i18n/useLocalizedPath';
 
-export function ProtectedRoute({ children }: { children: React.ReactNode }) {
+interface ProtectedRouteProps {
+  children: React.ReactNode;
+  loginPath?: string;
+}
+
+export function ProtectedRoute({ children, loginPath = '/treinamento/login' }: ProtectedRouteProps) {
   const { user, loading } = useSupabaseAuth();
   const location = useLocation();
   const lp = useLocalizedPath();
@@ -17,7 +22,7 @@ export function ProtectedRoute({ children }: { children: React.ReactNode }) {
   }
 
   if (!user) {
-    return <Navigate to={lp('/treinamento/login')} state={{ from: location }} replace />;
+    return <Navigate to={lp(loginPath)} state={{ from: location }} replace />;
   }
 
   return <>{children}</>;

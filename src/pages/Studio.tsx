@@ -216,7 +216,7 @@ export function Studio() {
             {(t('dashboard.stats', { returnObjects: true }) as Array<{ value: string; label: string }>).map((stat) => (
               <VStack key={stat.label} spacing={0}>
                 <Text color="white" fontWeight="700" fontSize={{ base: 'md', md: 'lg' }}>{stat.value}</Text>
-                <Text color="whiteAlpha.500" fontSize="xs">{stat.label}</Text>
+                <Text color="whiteAlpha.700" fontSize="xs">{stat.label}</Text>
               </VStack>
             ))}
           </Flex>

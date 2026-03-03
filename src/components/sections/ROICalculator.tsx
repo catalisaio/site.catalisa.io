@@ -15,6 +15,7 @@ import { useTranslation } from 'react-i18next';
 import { SectionWrapper } from '../shared/SectionWrapper';
 import { GradientText } from '../shared/GradientText';
 import { AnimatedCounter } from '../shared/AnimatedCounter';
+import { MotionBox, fadeInLeft, fadeInRight } from '../motion';
 
 export function ROICalculator() {
   const { t } = useTranslation('home');
@@ -71,7 +72,7 @@ export function ROICalculator() {
         mx="auto"
       >
         {/* Left: TODAY */}
-        <Box flex={1} p={6} borderRadius="2xl" bg="gray.50" border="1px solid" borderColor="gray.200">
+        <MotionBox {...fadeInLeft} flex={1} p={6} borderRadius="2xl" bg="gray.50" border="1px solid" borderColor="gray.200" position="relative" overflow="hidden">
           <Text fontSize="sm" fontWeight="700" color="gray.400" textTransform="uppercase" letterSpacing="wider" mb={6}>
             {t('roiCalculator.today')}
           </Text>
@@ -140,10 +141,10 @@ export function ROICalculator() {
               </Slider>
             </Box>
           </VStack>
-        </Box>
+        </MotionBox>
 
         {/* Right: WITH CATALISA */}
-        <Box flex={1} p={6} borderRadius="2xl" bg="brand.50" border="2px solid" borderColor="brand.200">
+        <MotionBox {...fadeInRight} flex={1} p={6} borderRadius="2xl" bg="brand.50" border="2px solid" borderColor="brand.200">
           <Text fontSize="sm" fontWeight="700" color="brand.600" textTransform="uppercase" letterSpacing="wider" mb={6}>
             {t('roiCalculator.withCatalisa')}
           </Text>
@@ -164,7 +165,7 @@ export function ROICalculator() {
               <Text fontSize="sm" fontWeight="700" color="brand.600">R$ {projectedCost.toLocaleString('pt-BR')}</Text>
             </Flex>
           </VStack>
-        </Box>
+        </MotionBox>
       </Flex>
 
       {/* Savings bar */}

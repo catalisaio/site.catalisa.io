@@ -67,24 +67,35 @@ export function PageHero({
       minH={{ base: 'auto', lg: hasVisual ? '85vh' : 'auto' }}
       display="flex"
       alignItems="center"
+      className="grain-overlay"
     >
-      {/* Background radial gradients */}
+      {/* Background radial gradients — intensified */}
       <Box
         position="absolute"
         top="-20%"
-        left="10%"
-        w="60%"
-        h="80%"
-        bgGradient={`radial(circle, rgba(115, 75, 156, 0.08) 0%, transparent 60%)`}
+        left="5%"
+        w="70%"
+        h="90%"
+        bgGradient={`radial(circle at 30% 40%, rgba(115, 75, 156, 0.18) 0%, rgba(115, 75, 156, 0.04) 50%, transparent 70%)`}
         pointerEvents="none"
       />
       <Box
         position="absolute"
         bottom="-10%"
-        right="5%"
-        w="40%"
-        h="50%"
-        bgGradient={`radial(circle, rgba(37, 211, 102, 0.04) 0%, transparent 60%)`}
+        right="0%"
+        w="50%"
+        h="60%"
+        bgGradient={`radial(circle, rgba(37, 211, 102, 0.08) 0%, transparent 55%)`}
+        pointerEvents="none"
+      />
+      {/* Accent warm glow */}
+      <Box
+        position="absolute"
+        top="30%"
+        right="15%"
+        w="30%"
+        h="40%"
+        bgGradient={`radial(circle, rgba(253, 194, 52, 0.05) 0%, transparent 60%)`}
         pointerEvents="none"
       />
 
@@ -239,7 +250,7 @@ export function PageHero({
                           {stat.value}
                         </Text>
                       )}
-                      <Text color="whiteAlpha.600" fontSize="xs">
+                      <Text color="whiteAlpha.700" fontSize="xs">
                         {stat.label}
                       </Text>
                     </VStack>

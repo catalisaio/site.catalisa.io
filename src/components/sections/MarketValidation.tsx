@@ -22,7 +22,7 @@ export function MarketValidation() {
   const stats = t('marketValidation.stats', { returnObjects: true }) as StatCard[];
 
   return (
-    <SectionWrapper bg="gray.900" id="market-validation">
+    <SectionWrapper bg="gray.900" id="market-validation" className="grain-overlay">
       <VStack spacing={4} textAlign="center" mb={{ base: 10, md: 14 }}>
         <HStack
           bg="whiteAlpha.100"
@@ -51,7 +51,7 @@ export function MarketValidation() {
           </GradientText>
         </Heading>
 
-        <Text color="whiteAlpha.600" fontSize={{ base: 'md', md: 'lg' }} maxW="600px">
+        <Text color="whiteAlpha.700" fontSize={{ base: 'md', md: 'lg' }} maxW="600px">
           {t('marketValidation.subtitle')}
         </Text>
       </VStack>
@@ -71,11 +71,14 @@ export function MarketValidation() {
                 bg="whiteAlpha.50"
                 border="1px solid"
                 borderColor="whiteAlpha.100"
+                borderLeft="3px solid"
+                borderLeftColor="brand.400"
                 transition="all 0.3s"
                 _hover={{
                   bg: 'whiteAlpha.100',
                   borderColor: 'brand.400',
-                  transform: 'translateY(-2px)',
+                  transform: 'translateY(-4px)',
+                  boxShadow: '0 12px 40px rgba(115, 75, 156, 0.15)',
                 }}
               >
                 <VStack align="flex-start" spacing={2}>
@@ -90,7 +93,7 @@ export function MarketValidation() {
                   <Text fontSize="sm" color="whiteAlpha.800" lineHeight="1.5">
                     {stat.label}
                   </Text>
-                  <Text fontSize="xs" color="whiteAlpha.400" fontWeight="600">
+                  <Text fontSize="xs" color="whiteAlpha.600" fontWeight="600">
                     {stat.source}
                   </Text>
                 </VStack>
@@ -103,7 +106,7 @@ export function MarketValidation() {
       {/* Disclaimer */}
       <Text
         mt={8}
-        color="whiteAlpha.300"
+        color="whiteAlpha.500"
         fontSize="xs"
         textAlign="center"
       >

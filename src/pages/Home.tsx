@@ -21,12 +21,22 @@ const FinalCTA = lazy(() => import('../components/sections/FinalCTA').then(m => 
 export function Home() {
   return (
     <>
+      {/* 1. Hero — problem + solution */}
       <HeroTeamBuilder />
       <IntegrationShowcase />
       <Suspense>
-        <YourToolsTheirHands />
+        {/* 2. Social proof & trust — early credibility */}
         <MarketValidation />
+        <TrustSection />
+
+        {/* 3. Business case — ROI before feature deep-dive */}
+        <ROICalculator />
+
+        {/* 4. Core value prop — tools & team overview */}
+        <YourToolsTheirHands />
         <MeetYourTeam />
+
+        {/* 5. Feature deep-dive — for users who want more detail */}
         <WhatsAppCommandCenter />
         <AppBuilderShowcase />
         <AgentBuilderShowcase />
@@ -34,9 +44,9 @@ export function Home() {
         <LiveOperationsDashboard />
         <AgentsAndAppsTogether />
         <AIInAction />
-        <ROICalculator />
+
+        {/* 6. Industries + close */}
         <IndustrySolutions />
-        <TrustSection />
         <FAQ />
         <FinalCTA />
       </Suspense>

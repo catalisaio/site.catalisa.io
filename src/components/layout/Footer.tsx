@@ -40,7 +40,7 @@ export function Footer() {
       ],
     },
     {
-      title: t('footer.sections.company'),
+      title: t('footer.sections.resources', 'Resources'),
       links: [
         { label: t('footer.links.useCases'), to: lp('/casos-de-uso') },
         { label: t('footer.links.insights'), to: lp('/insights') },
@@ -48,19 +48,34 @@ export function Footer() {
         { label: t('footer.links.whatsappIntegration'), to: lp('/integracoes/whatsapp') },
         { label: t('footer.links.demo'), to: lp('/demo') },
         { label: t('footer.links.contact'), to: lp('/contato') },
+        { label: t('footer.links.pressKit'), to: lp('/press-kit') },
+      ],
+    },
+    {
+      title: t('footer.sections.legal', 'Legal'),
+      links: [
         { label: t('footer.links.privacyPolicy'), to: lp('/politica-privacidade') },
         { label: t('footer.links.termsOfUse'), to: lp('/termos') },
         { label: t('footer.links.security'), to: lp('/seguranca') },
         { label: t('footer.links.aiTransparency'), to: lp('/transparencia-ia') },
-        { label: t('footer.links.pressKit'), to: lp('/press-kit') },
       ],
     },
   ];
 
   return (
-    <Box bg="gray.900" color="whiteAlpha.800" pt={16} pb={8}>
+    <Box bg="gray.900" color="whiteAlpha.800" pt={16} pb={8} position="relative">
+      {/* Top gradient accent */}
+      <Box
+        position="absolute"
+        top={0}
+        left={0}
+        right={0}
+        h="1px"
+        bgGradient="linear(to-r, transparent, brand.400, catalisa.secondary, transparent)"
+        opacity={0.4}
+      />
       <Container maxW="1280px">
-        <SimpleGrid columns={{ base: 1, md: 2, lg: 5 }} spacing={10} mb={12}>
+        <SimpleGrid columns={{ base: 2, md: 3, lg: 6 }} spacing={10} mb={12}>
           {/* Brand column */}
           <VStack align="flex-start" spacing={4}>
             <Flex align="center" fontWeight="800" fontSize="xl">

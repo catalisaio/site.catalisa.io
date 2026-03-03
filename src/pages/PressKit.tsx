@@ -363,7 +363,7 @@ export function PressKit() {
                   return (
                     <HStack key={weight} px={6} py={4} w="full" justify="space-between">
                       <Text
-                        fontFamily="'Inter', sans-serif"
+                        fontFamily="'Sora', sans-serif"
                         fontWeight={weight}
                         fontSize="lg"
                       >

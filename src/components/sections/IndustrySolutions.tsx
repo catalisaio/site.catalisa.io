@@ -32,7 +32,7 @@ export function IndustrySolutions() {
   const industries = t('industrySolutions.industries', { returnObjects: true }) as IndustryData[];
 
   return (
-    <SectionWrapper bg="gray.50" id="industries">
+    <SectionWrapper bg="bg-section-alt" id="industries">
       <VStack spacing={4} textAlign="center" mb={{ base: 10, md: 14 }}>
         <HStack
           bg="white"
@@ -89,10 +89,12 @@ export function IndustrySolutions() {
                 bg="white"
                 border="1px solid"
                 borderColor="gray.200"
-                transition="all 0.3s"
+                borderTop="3px solid"
+                borderTopColor={industryColors[i]}
+                transition="all 0.3s ease"
                 _hover={{
-                  transform: 'translateY(-4px)',
-                  boxShadow: '0 12px 40px rgba(0,0,0,0.08)',
+                  transform: 'translateY(-6px) scale(1.02)',
+                  boxShadow: '0 16px 48px rgba(0,0,0,0.1)',
                   borderColor: industryColors[i],
                 }}
                 display="block"

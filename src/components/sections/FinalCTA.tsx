@@ -24,7 +24,7 @@ export function FinalCTA() {
   const lp = useLocalizedPath();
   const behindTheScenes = useBehindTheScenes();
   return (
-    <SectionWrapper id="final-cta" bg="brand.500" py={{ base: 20, md: 28 }}>
+    <SectionWrapper id="final-cta" bg="brand.500" py={{ base: 20, md: 28 }} className="grain-overlay" position="relative" overflow="hidden">
       <VStack spacing={6} textAlign="center" maxW="700px" mx="auto">
         {/* Mini agent avatars row */}
         <HStack spacing={-2} justify="center">
@@ -74,7 +74,7 @@ export function FinalCTA() {
             to={lp('/contato')}
             size="lg"
             variant="outline"
-            borderColor="whiteAlpha.500"
+            borderColor="whiteAlpha.600"
             color="white"
             _hover={{ bg: 'whiteAlpha.200' }}
           >

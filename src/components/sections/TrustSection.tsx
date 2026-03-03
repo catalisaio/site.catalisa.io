@@ -2,6 +2,7 @@ import { Heading, Text, VStack, Wrap, WrapItem, HStack, Icon, Box } from '@chakr
 import { FiShield, FiLock, FiGlobe, FiUsers, FiKey, FiCheckCircle } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
 import { SectionWrapper } from '../shared/SectionWrapper';
+import { MotionBox, scaleIn } from '../motion';
 
 export function TrustSection() {
   const { t } = useTranslation('home');
@@ -37,8 +38,13 @@ export function TrustSection() {
                 border="1px solid"
                 borderColor="gray.200"
                 spacing={3}
-                _hover={{ borderColor: badge.color, boxShadow: 'sm' }}
-                transition="all 0.2s"
+                _hover={{
+                  borderColor: badge.color,
+                  boxShadow: `0 4px 20px rgba(0,0,0,0.08)`,
+                  transform: 'translateY(-2px) scale(1.02)',
+                }}
+                transition="all 0.25s ease"
+                cursor="default"
               >
                 <Icon as={badge.icon} boxSize={4} color={badge.color} />
                 <Text fontSize="sm" fontWeight="500" color="gray.700">
@@ -63,19 +69,20 @@ export function TrustSection() {
         </Box>
 
         {/* Gartner callout */}
-        <Box
-          bg="brand.50"
-          px={6}
-          py={4}
-          borderRadius="xl"
-          border="1px solid"
-          borderColor="brand.200"
-          maxW="600px"
-        >
-          <Text fontSize="sm" fontWeight="600" color="brand.700" textAlign="center" fontStyle="italic">
-            "{t('trust.gartnerCallout')}"
-          </Text>
-        </Box>
+        <MotionBox {...scaleIn} maxW="600px" w="full">
+          <Box
+            bg="brand.50"
+            px={6}
+            py={4}
+            borderRadius="xl"
+            border="1px solid"
+            borderColor="brand.200"
+          >
+            <Text fontSize="sm" fontWeight="600" color="brand.700" textAlign="center" fontStyle="italic">
+              "{t('trust.gartnerCallout')}"
+            </Text>
+          </Box>
+        </MotionBox>
       </VStack>
     </SectionWrapper>
   );

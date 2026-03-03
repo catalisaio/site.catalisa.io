@@ -49,7 +49,9 @@ const semanticTokens = {
   colors: {
     'bg-page': { default: '#FAFAFA', _dark: '#0A0F14' },
     'bg-card': { default: '#FFFFFF', _dark: '#151C24' },
-    'bg-accent': { default: '#F5F5F5', _dark: '#1A2230' },
+    'bg-accent': { default: '#F0EDF4', _dark: '#1A2230' },
+    'bg-warm': { default: '#FFF9F0', _dark: '#1C1810' },
+    'bg-section-alt': { default: '#F7F5FA', _dark: '#12171E' },
     'border-default': { default: '#E8E8EC', _dark: 'rgba(255,255,255,0.10)' },
     'text-primary': { default: 'gray.900', _dark: 'whiteAlpha.900' },
     'text-secondary': { default: 'gray.600', _dark: 'gray.400' },
@@ -67,7 +69,11 @@ const components = {
       primary: {
         bg: 'brand.500',
         color: 'white',
-        _hover: { bg: 'brand.600', transform: 'translateY(-1px)', boxShadow: 'lg' },
+        _hover: {
+          bg: 'brand.600',
+          transform: 'translateY(-2px)',
+          boxShadow: '0 8px 25px rgba(115, 75, 156, 0.35)',
+        },
         _active: { bg: 'brand.700', transform: 'translateY(0)' },
       },
       outline: {
@@ -78,10 +84,19 @@ const components = {
       whatsapp: {
         bg: 'whatsapp.500',
         color: 'white',
-        _hover: { bg: 'whatsapp.600', transform: 'translateY(-1px)', boxShadow: 'lg' },
+        _hover: {
+          bg: 'whatsapp.600',
+          transform: 'translateY(-2px)',
+          boxShadow: '0 8px 25px rgba(37, 211, 102, 0.35)',
+        },
       },
       ghost: {
-        _hover: { bg: 'blackAlpha.50' },
+        border: '1px solid',
+        borderColor: 'gray.200',
+        _hover: {
+          bg: 'blackAlpha.50',
+          borderColor: 'gray.300',
+        },
       },
     },
     defaultProps: {
@@ -101,6 +116,12 @@ const styles = {
       bg: 'bg-page',
       color: 'text-primary',
     },
+    '*:focus-visible': {
+      outline: '2px solid',
+      outlineColor: 'brand.400',
+      outlineOffset: '2px',
+      borderRadius: 'sm',
+    },
   },
 };
 
@@ -108,8 +129,9 @@ export const theme = extendTheme({
   config,
   colors,
   fonts: {
-    heading: `'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif`,
-    body: `'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif`,
+    heading: `'Sora', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif`,
+    body: `'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif`,
+    mono: `'JetBrains Mono', SFMono-Regular, Menlo, Monaco, Consolas, monospace`,
   },
   semanticTokens,
   components,

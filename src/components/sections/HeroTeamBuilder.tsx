@@ -70,8 +70,9 @@ export function HeroTeamBuilder() {
       minH="100vh"
       display="flex"
       flexDirection="column"
+      className="grain-overlay"
     >
-      {/* Radial gradient backgrounds */}
+      {/* Radial gradient backgrounds — intensified mesh */}
       <Box
         position="absolute"
         top="-20%"
@@ -79,7 +80,7 @@ export function HeroTeamBuilder() {
         transform="translateX(-50%)"
         w="120%"
         h="120%"
-        bgGradient="radial(circle at 30% 40%, rgba(115, 75, 156, 0.25) 0%, rgba(115, 75, 156, 0.05) 40%, transparent 70%)"
+        bgGradient="radial(circle at 30% 40%, rgba(115, 75, 156, 0.3) 0%, rgba(115, 75, 156, 0.08) 40%, transparent 70%)"
         pointerEvents="none"
       />
       <Box
@@ -88,7 +89,17 @@ export function HeroTeamBuilder() {
         right="-10%"
         w="60%"
         h="60%"
-        bgGradient="radial(circle, rgba(37, 211, 102, 0.08) 0%, transparent 60%)"
+        bgGradient="radial(circle, rgba(37, 211, 102, 0.12) 0%, transparent 55%)"
+        pointerEvents="none"
+      />
+      {/* Secondary warm accent glow */}
+      <Box
+        position="absolute"
+        top="40%"
+        right="5%"
+        w="35%"
+        h="35%"
+        bgGradient="radial(circle, rgba(253, 194, 52, 0.06) 0%, transparent 60%)"
         pointerEvents="none"
       />
 

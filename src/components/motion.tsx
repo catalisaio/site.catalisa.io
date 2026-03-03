@@ -27,7 +27,7 @@ export const fadeIn = {
 
 export const staggerContainer = {
   initial: {},
-  whileInView: { transition: { staggerChildren: 0.1 } },
+  whileInView: { transition: { staggerChildren: 0.15 } },
   viewport: { once: true, margin: '-50px' },
 };
 
@@ -65,4 +65,20 @@ export const teamAssembly = {
   initial: {},
   whileInView: { transition: { staggerChildren: 0.2, delayChildren: 0.3 } },
   viewport: { once: true, margin: '-100px' },
+};
+
+// Fade in from left
+export const fadeInLeft = {
+  initial: { opacity: 0, x: -30 },
+  whileInView: { opacity: 1, x: 0 },
+  viewport: { once: true, margin: '-50px' },
+  transition: { duration: 0.6, ease: 'easeOut' },
+};
+
+// Fade in from right
+export const fadeInRight = {
+  initial: { opacity: 0, x: 30 },
+  whileInView: { opacity: 1, x: 0 },
+  viewport: { once: true, margin: '-50px' },
+  transition: { duration: 0.6, ease: 'easeOut' },
 };

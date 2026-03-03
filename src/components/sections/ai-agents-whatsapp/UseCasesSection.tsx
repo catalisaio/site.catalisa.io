@@ -14,7 +14,6 @@ import {
 import { useTranslation } from 'react-i18next';
 import { SectionWrapper } from '../../shared/SectionWrapper';
 import { GradientText } from '../../shared/GradientText';
-import { PhoneMockup } from '../../shared/PhoneMockup';
 import { WhatsAppChatPreview } from '../../shared/WhatsAppChatPreview';
 import type { ChatMessage } from '../../shared/WhatsAppChatPreview';
 import { MotionBox } from '../../motion';
@@ -108,13 +107,11 @@ export function UseCasesSection() {
         >
           {/* Left: Phone with chat */}
           <Box flex="0 0 auto" mx={{ base: 'auto', lg: 0 }}>
-            <PhoneMockup maxH="440px">
-              <WhatsAppChatPreview
-                messages={active.chatMessages}
-                title={active.title}
-                triggerMode="auto"
-              />
-            </PhoneMockup>
+            <WhatsAppChatPreview
+              messages={active.chatMessages}
+              title={active.title}
+              triggerMode="auto"
+            />
           </Box>
 
           {/* Right: Details */}

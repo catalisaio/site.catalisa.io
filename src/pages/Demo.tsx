@@ -9,7 +9,6 @@ import { useLocalizedPath } from '../i18n/useLocalizedPath';
 import { MotionBox, fadeInUp } from '../components/motion';
 import { GradientText } from '../components/shared/GradientText';
 import { VideoPlayer } from '../components/shared/VideoPlayer';
-import { PhoneMockup } from '../components/shared/PhoneMockup';
 
 export function Demo() {
   const { t } = useTranslation('demo');
@@ -230,21 +229,25 @@ export function Demo() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <Flex direction={{ base: 'column', md: 'row' }} align="center" gap={{ base: 8, md: 12 }}>
-              <Box flexShrink={0}>
-                <PhoneMockup maxH="480px">
-                  <Box
-                    as="video"
-                    src="/videos/whatsapp-demo.mp4"
-                    poster="/videos/whatsapp-demo-poster.jpg"
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    w="100%"
-                    h="100%"
-                    objectFit="cover"
-                  />
-                </PhoneMockup>
+              <Box
+                flexShrink={0}
+                maxW="300px"
+                borderRadius="2xl"
+                overflow="hidden"
+                boxShadow="2xl"
+                bg="#0B141A"
+              >
+                <Box
+                  as="video"
+                  src="/videos/whatsapp-demo.mp4"
+                  poster="/videos/whatsapp-demo-poster.jpg"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  w="100%"
+                  objectFit="cover"
+                />
               </Box>
 
               <VStack align="flex-start" spacing={5} flex={1}>

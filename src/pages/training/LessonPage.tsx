@@ -8,6 +8,7 @@ import { useLocalizedPath } from '../../i18n/useLocalizedPath';
 import { ProtectedRoute } from '../../components/training/ProtectedRoute';
 import { LessonContent } from '../../components/training/LessonContent';
 import { useTrainingProgress } from '../../hooks/useTrainingProgress';
+import { useTrainingSession } from '../../hooks/useTrainingSession';
 import { getCourse, getModule, getLesson } from '../../data/trainingCourses';
 
 function LessonPageContent() {
@@ -20,6 +21,7 @@ function LessonPageContent() {
   const lp = useLocalizedPath();
   const navigate = useNavigate();
   const { isLessonComplete, completeLesson } = useTrainingProgress();
+  useTrainingSession(courseSlug, moduleSlug, lessonSlug);
 
   const course = courseSlug ? getCourse(courseSlug) : undefined;
   const mod = course && moduleSlug ? getModule(course, moduleSlug) : undefined;
@@ -52,7 +54,7 @@ function LessonPageContent() {
   const contentKey = `content.${course.slug}.${mod.slug}.${lesson.slug}`;
 
   const handleComplete = () => {
-    completeLesson(course.slug, mod.slug, lesson.slug);
+    completeLesson(course.slug, mod.slug, lesson.slug, course.modules);
     if (nextLesson) {
       navigate(lp(`/treinamento/${course.slug}/${nextLesson.moduleSlug}/${nextLesson.lessonSlug}`));
     }

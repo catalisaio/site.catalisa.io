@@ -5,18 +5,37 @@
     "headingGradient": "para fintechs",
     "subtitle": "120M de brasileiros no WhatsApp. 91% taxa de abertura. Canal #1 para serviços financeiros.",
     "stats": {
-      "stat1": { "label": "Brasileiros no WhatsApp" },
-      "stat2": { "label": "Taxa de abertura" },
-      "stat3": { "value": "#1", "label": "Canal financeiro" }
+      "stat1": {
+        "label": "Brasileiros no WhatsApp"
+      },
+      "stat2": {
+        "label": "Taxa de abertura"
+      },
+      "stat3": {
+        "value": "#1",
+        "label": "Canal financeiro"
+      }
     }
   },
   "compliance": {
     "heading": "Compliance e segurança bancária",
     "items": [
-      { "label": "Mascaramento LGPD", "description": "Proteção automática de dados sensíveis" },
-      { "label": "Criptografia Bancária", "description": "Dados protegidos com criptografia avancada" },
-      { "label": "Auditoria Digital", "description": "Trilha de auditoria completa e imutavel" },
-      { "label": "Multi-tenant", "description": "Isolamento total por empresa" }
+      {
+        "label": "Mascaramento LGPD",
+        "description": "Proteção automática de dados sensíveis"
+      },
+      {
+        "label": "Criptografia Bancária",
+        "description": "Dados protegidos com criptografia avançada"
+      },
+      {
+        "label": "Auditoria Digital",
+        "description": "Trilha de auditoria completa e imutável"
+      },
+      {
+        "label": "Multi-tenant",
+        "description": "Isolamento total por empresa"
+      }
     ]
   },
   "capabilities": {
@@ -24,12 +43,24 @@
     "heading": "Capacidades para produtos financeiros",
     "subtitle": "Gerencie produtos, calcule parcelas, precifique crédito e tome decisões — tudo dentro do workflow.",
     "items": [
-      { "title": "Cadastro de Produto", "description": "Crie linhas de crédito com regras e taxas customizadas." },
-      { "title": "Simulação de Parcelas", "description": "Calcule parcelas com tabela de amortizacao completa." },
-      { "title": "Custos Regulatorios", "description": "Calculos regulatorios automáticos para conformidade." },
-      { "title": "Motor de Decisão", "description": "Regras configuráveis para aprovar ou rejeitar sem código." }
+      {
+        "title": "Cadastro de Produto",
+        "description": "Crie linhas de crédito com regras e taxas customizadas."
+      },
+      {
+        "title": "Simulação de Parcelas",
+        "description": "Calcule parcelas com tabela de amortização completa."
+      },
+      {
+        "title": "Custos Regulatórios",
+        "description": "Cálculos regulatórios automáticos para conformidade."
+      },
+      {
+        "title": "Motor de Decisão",
+        "description": "Regras configuráveis para aprovar ou rejeitar sem código."
+      }
     ],
-    "pipeline": "Cadastro \u2192 Precificacao \u2192 Custos regulatorios \u2192 Decisão \u2192 Notificação",
+    "pipeline": "Cadastro → Precificação → Custos regulatórios → Decisão → Notificação",
     "pipelineLabel": "Pipeline completo:"
   },
   "roi": {
@@ -38,7 +69,7 @@
     "calc": {
       "title": "Calculadora de ROI",
       "fields": {
-        "agents": "Numero de atendentes",
+        "agents": "Número de atendentes",
         "leadsPerDay": "Leads por dia",
         "costPerAgent": "Custo por atendente (R$)"
       },
@@ -47,7 +78,7 @@
         "withCatalisa": "Com Catalisa/mês",
         "monthlySavings": "Economia mensal"
       },
-      "reduction": "de reducao",
+      "reduction": "de redução",
       "currency": "R$"
     }
   },

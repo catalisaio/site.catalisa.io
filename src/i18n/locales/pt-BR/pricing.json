@@ -1,7 +1,7 @@
 {
   "hero": {
     "badge": "Preços",
-    "heading": "Comece gratis.",
+    "heading": "Comece grátis.",
     "headingGradient": "Escale quando quiser.",
     "subtitle": "Planos transparentes com preços reais. Sem surpresas, sem contrato de fidelidade."
   },
@@ -21,7 +21,7 @@
       "features": [
         "100 conversas/mês",
         "1 agente IA",
-        "10 building blocks basicos",
+        "10 building blocks básicos",
         "1 membro",
         "WhatsApp QR Code",
         "Studio básico",
@@ -29,7 +29,7 @@
         "Suporte community",
         "Retenção de dados: 30 dias"
       ],
-      "cta": "Comecar gratis",
+      "cta": "Começar grátis",
       "ctaVariant": "outline"
     },
     {
@@ -49,7 +49,7 @@
         "SLA 99%",
         "Retenção de dados: 90 dias"
       ],
-      "cta": "Comecar agora"
+      "cta": "Começar agora"
     },
     {
       "name": "Professional",
@@ -66,11 +66,11 @@
         "WhatsApp Cloud API",
         "Studio + AI Builder",
         "CRM completo",
-        "Suporte prioritario (8h)",
+        "Suporte prioritário (8h)",
         "SLA 99.5%",
         "Retenção de dados: 1 ano"
       ],
-      "cta": "Comecar agora"
+      "cta": "Começar agora"
     },
     {
       "name": "Business",
@@ -82,10 +82,10 @@
         "Agentes IA ilimitados",
         "Todos building blocks",
         "25 membros",
-        "WhatsApp multi-numero",
+        "WhatsApp multi-número",
         "Studio + AI Builder",
         "CRM completo + API",
-        "Suporte prioritario (4h) + Slack",
+        "Suporte prioritário (4h) + Slack",
         "SLA 99.9%",
         "Retenção de dados: 2 anos"
       ],
@@ -124,12 +124,12 @@
     "rows": [
       { "feature": "Conversas/mês", "values": ["100", "1.000", "5.000", "25.000", "Ilimitado"] },
       { "feature": "Agentes IA", "values": ["1", "3", "10", "Ilimitado", "Ilimitado"] },
-      { "feature": "Building Blocks", "values": ["10 basicos", "25", "Todos", "Todos", "Todos + custom"] },
+      { "feature": "Building Blocks", "values": ["10 básicos", "25", "Todos", "Todos", "Todos + custom"] },
       { "feature": "Membros", "values": ["1", "3", "10", "25", "Ilimitado"] },
-      { "feature": "WhatsApp", "values": ["QR Code", "QR + Cloud API", "Cloud API", "Multi-numero", "Dedicado"] },
+      { "feature": "WhatsApp", "values": ["QR Code", "QR + Cloud API", "Cloud API", "Multi-número", "Dedicado"] },
       { "feature": "Catalisa Studio", "values": ["Básico", "Completo", "Completo + AI Builder", "Completo + AI Builder", "Completo + custom"] },
       { "feature": "CRM", "values": ["Básico", "Completo", "Completo", "Completo + API", "Completo + custom"] },
-      { "feature": "Suporte", "values": ["Community", "Email", "Prioritario (8h)", "Prioritario (4h) + Slack", "24/7 + AM"] },
+      { "feature": "Suporte", "values": ["Community", "Email", "Prioritário (8h)", "Prioritário (4h) + Slack", "24/7 + AM"] },
       { "feature": "SLA", "values": ["-", "99%", "99.5%", "99.9%", "99.95%+"] },
       { "feature": "Retenção de dados", "values": ["30 dias", "90 dias", "1 ano", "2 anos", "Custom"] }
     ]
@@ -144,7 +144,7 @@
       { "name": "Blocos financeiros", "price": "R$ 297/mês", "description": "PRICE, SAC, Decision Engine" },
       { "name": "Open Finance", "price": "R$ 497/mês", "description": "Consulta de dados abertos e scoring" },
       { "name": "Infra dedicada", "price": "R$ 997/mês", "description": "Ambiente isolado de alta performance" },
-      { "name": "White-label", "price": "Custom", "description": "Marca propria em toda plataforma" }
+      { "name": "White-label", "price": "Custom", "description": "Marca própria em toda plataforma" }
     ]
   },
   "savings": {
@@ -164,7 +164,7 @@
       "items": [
         { "label": "Plano Business", "value": "R$ 2.497/mês" },
         { "label": "CRM, Studio, AI inclusos", "value": "R$ 0" },
-        { "label": "Funciona 24/7, sem ferias", "value": "R$ 0" }
+        { "label": "Funciona 24/7, sem férias", "value": "R$ 0" }
       ],
       "total": "R$ 2.497/mês"
     },
@@ -173,7 +173,7 @@
     "savingsPercent": "80%"
   },
   "calculator": {
-    "heading": "Qual plano e ideal para você?",
+    "heading": "Qual plano é ideal para você?",
     "subtitle": "Responda 2 perguntas e descubra.",
     "conversationsLabel": "Quantas conversas/mês você tem?",
     "agentsLabel": "Quantos agentes IA você precisa?",
@@ -184,8 +184,8 @@
     "heading": "Perguntas frequentes",
     "items": [
       {
-        "question": "O plano Free e realmente gratis?",
-        "answer": "Sim. O Free inclui 100 conversas/mês, 1 agente IA e 10 building blocks basicos. Não precisa de cartao de crédito para comecar. E funcional, não e demo — você pode criar automações reais."
+        "question": "O plano Free é realmente grátis?",
+        "answer": "Sim. O Free inclui 100 conversas/mês, 1 agente IA e 10 building blocks básicos. Não precisa de cartão de crédito para começar. É funcional, não é demo — você pode criar automações reais."
       },
       {
         "question": "Existe período mínimo de contrato?",
@@ -193,32 +193,32 @@
       },
       {
         "question": "O que conta como uma 'conversa'?",
-        "answer": "Uma conversa e uma sessão de troca de mensagens entre seu numero WhatsApp e um contato, dentro de uma janela de 24 horas. Multiplas mensagens na mesma janela contam como uma única conversa."
+        "answer": "Uma conversa é uma sessão de troca de mensagens entre seu número WhatsApp e um contato, dentro de uma janela de 24 horas. Múltiplas mensagens na mesma janela contam como uma única conversa."
       },
       {
         "question": "Posso mudar de plano a qualquer momento?",
-        "answer": "Sim. Você pode fazer upgrade ou downgrade a qualquer momento. No upgrade, a diferença e cobrada pro-rata. No downgrade, o crédito e aplicado no proximo ciclo."
+        "answer": "Sim. Você pode fazer upgrade ou downgrade a qualquer momento. No upgrade, a diferença é cobrada pro-rata. No downgrade, o crédito é aplicado no próximo ciclo."
       },
       {
         "question": "Existe custo adicional pelo WhatsApp Cloud API?",
-        "answer": "A Catalisa não cobra pelo uso da Cloud API em si. Porem, a Meta cobra por conversa iniciada pela empresa (conforme tabela oficial). Conversas iniciadas pelo usuário são gratuitas nas primeiras 1.000/mês."
+        "answer": "A Catalisa não cobra pelo uso da Cloud API em si. Porém, a Meta cobra por conversa iniciada pela empresa (conforme tabela oficial). Conversas iniciadas pelo usuário são gratuitas nas primeiras 1.000/mês."
       },
       {
         "question": "Como funciona o suporte?",
-        "answer": "Free: community forum. Starter: email em horário comercial. Professional: prioritario com SLA de 8h. Business: prioritario com SLA de 4h + canal Slack. Enterprise: 24/7 com account manager dedicado."
+        "answer": "Free: community forum. Starter: email em horário comercial. Professional: prioritário com SLA de 8h. Business: prioritário com SLA de 4h + canal Slack. Enterprise: 24/7 com account manager dedicado."
       },
       {
         "question": "Posso testar antes de contratar um plano pago?",
-        "answer": "Sim! Comece pelo plano Free e teste com até 100 conversas/mês. Quando estiver pronto para escalar, faca upgrade. Também oferecemos demos personalizadas para empresas."
+        "answer": "Sim! Comece pelo plano Free e teste com até 100 conversas/mês. Quando estiver pronto para escalar, faça upgrade. Também oferecemos demos personalizadas para empresas."
       },
       {
         "question": "Os preços incluem impostos?",
-        "answer": "Os preços exibidos não incluem impostos. O valor final pode variar conforme a localizacao e o regime tributario da sua empresa."
+        "answer": "Os preços exibidos não incluem impostos. O valor final pode variar conforme a localização e o regime tributário da sua empresa."
       }
     ]
   },
   "pageCTA": {
-    "heading": "Pronto para comecar?",
-    "subtitle": "Comece gratis hoje e escale quando precisar. Sem cartao de crédito."
+    "heading": "Pronto para começar?",
+    "subtitle": "Comece grátis hoje e escale quando precisar. Sem cartão de crédito."
   }
 }

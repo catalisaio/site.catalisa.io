@@ -3,7 +3,7 @@
     "badge": "Segurança ENTERPRISE",
     "heading": "Segurança de",
     "headingGradient": "nível bancário",
-    "subtitle": "Seus dados protegidos com as mesmas práticas de segurança das maiores instituicoes financeiras do Brasil."
+    "subtitle": "Seus dados protegidos com as mesmas práticas de segurança das maiores instituições financeiras do Brasil."
   },
   "pillarsHeading": "6 pilares de segurança",
   "pillars": [
@@ -14,16 +14,16 @@
         "Consentimento e base legal rastreados",
         "Direitos do titular (acesso, exclusão, portabilidade)",
         "Registro de operações de tratamento",
-        "DPO designado e acessivel"
+        "DPO designado e acessível"
       ]
     },
     {
       "title": "Criptografia ponta a ponta",
-      "description": "Dados protegidos em transito e em repouso com padrões de criptografia de nível bancário.",
+      "description": "Dados protegidos em trânsito e em repouso com padrões de criptografia de nível bancário.",
       "details": [
         "TLS 1.3 para todas as comunicações",
         "AES-256 para dados em repouso",
-        "Chaves gerenciadas com rotacao automática",
+        "Chaves gerenciadas com rotação automática",
         "Criptografia de campos sensíveis (PII)"
       ]
     },
@@ -39,12 +39,12 @@
     },
     {
       "title": "Controle de acesso (RBAC)",
-      "description": "Controle granular de permissoes por função, equipe e recurso. Cada usuário ve e acessa apenas o que deve.",
+      "description": "Controle granular de permissões por função, equipe e recurso. Cada usuário vê e acessa apenas o que deve.",
       "details": [
-        "Roles customizaveis por organização",
-        "Permissoes por recurso (workflow, agente, bloco)",
+        "Roles customizáveis por organização",
+        "Permissões por recurso (workflow, agente, bloco)",
         "Autenticação multi-fator (MFA)",
-        "Logs de acesso auditaveis"
+        "Logs de acesso auditáveis"
       ]
     },
     {
@@ -52,7 +52,7 @@
       "description": "Infraestrutura em nuvem brasileira com backups automáticos, disaster recovery e monitoramento 24/7.",
       "details": [
         "Servidores em data centers brasileiros",
-        "Backups automáticos diarios",
+        "Backups automáticos diários",
         "Disaster recovery com RPO < 1h",
         "Monitoramento de infraestrutura 24/7"
       ]
@@ -63,7 +63,7 @@
       "details": [
         "Cloud API oficial da Meta",
         "Verificação de negócio Meta",
-        "Conformidade com politicas de mensageria",
+        "Conformidade com políticas de mensageria",
         "Auditoria de uso disponível"
       ]
     }
@@ -78,8 +78,8 @@
       "Disaster recovery com failover automático",
       "Monitoramento com alertas em tempo real",
       "Rede privada com firewall gerenciado",
-      "CDN para assets estaticos",
-      "Logs centralizados e auditaveis"
+      "CDN para assets estáticos",
+      "Logs centralizados e auditáveis"
     ]
   },
   "compliance": {
@@ -90,11 +90,11 @@
       "Criptografia AES-256 e TLS 1.3",
       "Mascaramento automático de PII",
       "Audit logs com retenção configurável",
-      "Politica de resposta a incidentes documentada"
+      "Política de resposta a incidentes documentada"
     ]
   },
   "cta": {
     "heading": "Precisa de mais detalhes?",
-    "subtitle": "Nossa equipe de segurança esta pronta para responder suas perguntas e compartilhar documentação detalhada."
+    "subtitle": "Nossa equipe de segurança está pronta para responder suas perguntas e compartilhar documentação detalhada."
   }
 }

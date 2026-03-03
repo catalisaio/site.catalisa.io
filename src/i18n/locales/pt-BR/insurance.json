@@ -1,13 +1,21 @@
 {
   "hero": {
     "badge": "SEGUROS",
-    "heading": "Sinistros, cotações e renovacoes",
+    "heading": "Sinistros, cotações e renovações",
     "headingGradient": "pelo WhatsApp",
-    "subtitle": "R$ 207B em premios (2024). 42% das vendas já são digitais. Sinistro resolvido por IA em menos de 10 minutos.",
+    "subtitle": "R$ 207B em prêmios (2024). 42% das vendas já são digitais. Sinistro resolvido por IA em menos de 10 minutos.",
     "stats": {
-      "stat1": { "value": "R$ 207B", "label": "Premios 2024" },
-      "stat2": { "label": "Vendas digitais" },
-      "stat3": { "value": "10min", "label": "Sinistro com IA" }
+      "stat1": {
+        "value": "R$ 207B",
+        "label": "Prêmios 2024"
+      },
+      "stat2": {
+        "label": "Vendas digitais"
+      },
+      "stat3": {
+        "value": "10min",
+        "label": "Sinistro com IA"
+      }
     }
   },
   "market": {
@@ -17,8 +25,8 @@
     "insurers": [
       {
         "name": "MAPFRE",
-        "description": "14K acessos, 1.6K sinistros, 50% resolvidos por IA, 90%+ satisfacao",
-        "highlight": "1o sinistro 100% IA"
+        "description": "14K acessos, 1.6K sinistros, 50% resolvidos por IA, 90%+ satisfação",
+        "highlight": "1º sinistro 100% IA"
       },
       {
         "name": "EZZE Seguros",
@@ -27,36 +35,66 @@
       },
       {
         "name": "Porto Seguro",
-        "description": "Claims, tracking, upload de documentos \u2014 tudo pelo WhatsApp",
+        "description": "Claims, tracking, upload de documentos — tudo pelo WhatsApp",
         "highlight": "Claims digitais"
       }
     ],
-    "quote": "\"MAPFRE registrou o primeiro sinistro 100% resolvido por IA no WhatsApp, com 90%+ de satisfacao\"",
-    "quoteSource": "\u2014 MAPFRE Brasil, 2024"
+    "quote": "\"MAPFRE registrou o primeiro sinistro 100% resolvido por IA no WhatsApp, com 90%+ de satisfação\"",
+    "quoteSource": "— MAPFRE Brasil, 2024"
   },
   "compliance": {
-    "heading": "Compliance SUSEP e regulatorio",
-    "subtitle": "Conformidade com Resolucao CNSP 382/2020, LGPD e normas da SUSEP integrada em cada capacidade.",
+    "heading": "Compliance SUSEP e regulatório",
+    "subtitle": "Conformidade com Resolução CNSP 382/2020, LGPD e normas da SUSEP integrada em cada capacidade.",
     "items": [
-      { "label": "Conformidade SUSEP", "description": "Resolucao CNSP 382/2020 integrada" },
-      { "label": "Proteção LGPD", "description": "Mascaramento automático de dados de segurados" },
-      { "label": "Auditoria Completa", "description": "Trilha de auditoria imutavel e rastreavel" },
-      { "label": "Criptografia Avancada", "description": "Dados sensíveis protegidos por criptografia" }
+      {
+        "label": "Conformidade SUSEP",
+        "description": "Resolução CNSP 382/2020 integrada"
+      },
+      {
+        "label": "Proteção LGPD",
+        "description": "Mascaramento automático de dados de segurados"
+      },
+      {
+        "label": "Auditoria Completa",
+        "description": "Trilha de auditoria imutável e rastreável"
+      },
+      {
+        "label": "Criptografia Avançada",
+        "description": "Dados sensíveis protegidos por criptografia"
+      }
     ]
   },
   "capabilities": {
     "badge": "INSURTECH",
     "heading": "Capacidades para seguros",
-    "subtitle": "Vistorias por IA, extração de documentos, subscricao automática e mais \u2014 tudo dentro do workflow.",
+    "subtitle": "Vistorias por IA, extração de documentos, subscrição automática e mais — tudo dentro do workflow.",
     "items": [
-      { "title": "Vistoria por IA", "description": "Análise de fotos de veiculos e imoveis com visao computacional." },
-      { "title": "Extração de Documentos", "description": "Leitura inteligente de apolices, CNH, CRLV e laudos." },
-      { "title": "Subscricao Automática", "description": "Motor de decisão configurável para aprovar ou rejeitar riscos." },
-      { "title": "Precificacao", "description": "Cálculo de premio baseado no perfil de risco." },
-      { "title": "Proteção LGPD", "description": "Mascaramento de dados de segurados em tempo real." },
-      { "title": "Gestao de Documentos", "description": "Receba e armazene fotos e documentos pelo WhatsApp." }
+      {
+        "title": "Vistoria por IA",
+        "description": "Análise de fotos de veículos e imóveis com visão computacional."
+      },
+      {
+        "title": "Extração de Documentos",
+        "description": "Leitura inteligente de apólices, CNH, CRLV e laudos."
+      },
+      {
+        "title": "Subscrição Automática",
+        "description": "Motor de decisão configurável para aprovar ou rejeitar riscos."
+      },
+      {
+        "title": "Precificação",
+        "description": "Cálculo de prêmio baseado no perfil de risco."
+      },
+      {
+        "title": "Proteção LGPD",
+        "description": "Mascaramento de dados de segurados em tempo real."
+      },
+      {
+        "title": "Gestão de Documentos",
+        "description": "Receba e armazene fotos e documentos pelo WhatsApp."
+      }
     ],
-    "pipeline": "Detalhes \u2192 Fotos e docs \u2192 Análise visual \u2192 Extração \u2192 Decisão \u2192 Arquivo \u2192 Confirmação",
+    "pipeline": "Detalhes → Fotos e docs → Análise visual → Extração → Decisão → Arquivo → Confirmação",
     "pipelineLabel": "Pipeline de sinistro:"
   },
   "roi": {
@@ -65,7 +103,7 @@
     "calc": {
       "title": "Calculadora de ROI Seguros",
       "fields": {
-        "brokers": "Numero de corretores",
+        "brokers": "Número de corretores",
         "claimsPerMonth": "Sinistros/mês",
         "costPerClaim": "Custo por sinistro (R$)"
       },
@@ -74,7 +112,7 @@
         "withCatalisa": "Com Catalisa/mês",
         "monthlySavings": "Economia mensal"
       },
-      "reduction": "de reducao",
+      "reduction": "de redução",
       "currency": "R$"
     }
   },

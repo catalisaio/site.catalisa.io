@@ -14,7 +14,23 @@
   "catalog": {
     "heading": "Treinamentos",
     "subtitle": "Cursos de capacitação em compliance, segurança e IA ética.",
-    "logout": "Sair"
+    "logout": "Sair",
+    "searchPlaceholder": "Buscar cursos...",
+    "filters": {
+      "all": "Todos",
+      "track": "Trilha",
+      "difficulty": "Nível",
+      "basico": "Básico",
+      "avancado": "Avançado",
+      "especialista": "Especialista",
+      "iniciante": "Iniciante",
+      "intermediario": "Intermediário",
+      "available": "Disponíveis",
+      "comingSoon": "Em Breve",
+      "compliance": "Compliance & Certificações"
+    },
+    "noResults": "Nenhum curso encontrado.",
+    "courseCount": "{{count}} cursos"
   },
   "lesson": {
     "previous": "Anterior",

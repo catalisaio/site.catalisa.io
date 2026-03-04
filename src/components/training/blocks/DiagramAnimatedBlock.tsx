@@ -1,23 +1,34 @@
 import { useMemo } from 'react';
 import { Box } from '@chakra-ui/react';
-import { motion } from 'framer-motion';
-import {
-  FiZap, FiUsers, FiMessageSquare, FiDatabase, FiCpu, FiGlobe,
-  FiMail, FiServer, FiSettings, FiLayers, FiSend, FiTarget,
-} from 'react-icons/fi';
+import { WorkflowPreview } from '../../workflow-preview/WorkflowPreview';
+import type { WorkflowPreviewData } from '../../workflow-preview/types';
 import type { DiagramAnimatedBlock as DiagramAnimatedBlockType } from '../../../data/trainingBlockTypes';
 
-const iconMap: Record<string, React.ComponentType> = {
-  zap: FiZap, users: FiUsers, message: FiMessageSquare, database: FiDatabase,
-  cpu: FiCpu, globe: FiGlobe, mail: FiMail, server: FiServer,
-  settings: FiSettings, layers: FiLayers, send: FiSend, target: FiTarget,
-};
-
-const defaultColors: Record<string, string> = {
-  flow: '#734B9C',
-  architecture: '#3182CE',
-  sequence: '#38A169',
-  'data-flow': '#DD6B20',
+/** Map diagram-animated icon names to WorkflowPreview categories */
+const iconToCategory: Record<string, string> = {
+  whatsapp: 'WhatsApp',
+  message: 'WhatsApp',
+  person: 'CRM',
+  users: 'CRM',
+  flow: 'Logica',
+  robot: 'IA',
+  cpu: 'IA',
+  database: 'Dados',
+  server: 'Integracao',
+  globe: 'Integracao',
+  send: 'WhatsApp',
+  target: 'Trigger',
+  zap: 'Trigger',
+  lightning: 'Trigger',
+  check: 'CRM',
+  filter: 'Logica',
+  edit: 'CRM',
+  text: 'IA',
+  tools: 'Integracao',
+  settings: 'Integracao',
+  layers: 'Dados',
+  mail: 'WhatsApp',
+  smartphone: 'WhatsApp',
 };
 
 interface Props {
@@ -25,139 +36,100 @@ interface Props {
 }
 
 export function DiagramAnimatedBlock({ block }: Props) {
-  const viewW = block.viewBox?.w || 800;
-  const viewH = block.viewBox?.h || 400;
+  const workflowData = useMemo<WorkflowPreviewData>(() => {
+    // Convert diagram-animated nodes to WorkflowPreview format
+    // Original x,y are absolute pixel positions; WorkflowPreview uses percentages (0-100)
+    const viewW = block.viewBox?.w || 800;
+    const viewH = block.viewBox?.h || 400;
 
-  const edgePaths = useMemo(() => {
-    return block.edges.map(edge => {
-      const from = block.nodes.find(n => n.id === edge.from);
-      const to = block.nodes.find(n => n.id === edge.to);
-      if (!from || !to) return null;
+    const nodes = block.nodes.map((n) => {
+      const w = n.w || 140;
+      const h = n.h || 60;
+      // Convert center of node to percentage
+      const cx = n.x + w / 2;
+      const cy = n.y + h / 2;
+      const xPct = (cx / viewW) * 100;
+      const yPct = (cy / viewH) * 100;
+      // Clean up label: remove \n, keep first line as label
+      const label = n.label.replace(/\n/g, ' — ');
+      const category = iconToCategory[n.icon || ''] || 'Dados';
 
-      const fromW = from.w || 140;
-      const fromH = from.h || 60;
-      const toW = to.w || 140;
-      const toH = to.h || 60;
+      return { id: n.id, label, category, x: xPct, y: yPct };
+    });
 
-      const fx = from.x + fromW / 2;
-      const fy = from.y + fromH / 2;
-      const tx = to.x + toW / 2;
-      const ty = to.y + toH / 2;
+    const edges = block.edges.map((e) => ({
+      from: e.from,
+      to: e.to,
+      label: e.label,
+    }));
 
-      // Simple bezier curve
-      const mx = (fx + tx) / 2;
-      const d = `M ${fx} ${fy} C ${mx} ${fy}, ${mx} ${ty}, ${tx} ${ty}`;
+    // Build execution order from edges (topological sort)
+    const executionOrder = buildExecutionOrder(nodes.map((n) => n.id), edges);
 
-      return { ...edge, d, tx, ty, mx, my: (fy + ty) / 2 };
-    }).filter(Boolean);
-  }, [block.nodes, block.edges]);
-
-  const baseColor = defaultColors[block.variant] || '#734B9C';
+    return {
+      id: `diagram-${block.variant}-${nodes.length}`,
+      title: '',
+      subtitle: '',
+      description: '',
+      badge: '',
+      badgeColor: 'purple',
+      nodes,
+      edges,
+      executionOrder,
+    };
+  }, [block]);
 
   return (
-    <Box w="full" overflow="hidden" borderRadius="xl" border="1px solid" borderColor="gray.200" bg="gray.50">
-      <svg
-        viewBox={`0 0 ${viewW} ${viewH}`}
-        width="100%"
-        style={{ display: 'block' }}
-      >
-        <defs>
-          <marker
-            id="arrowhead"
-            markerWidth="10"
-            markerHeight="7"
-            refX="9"
-            refY="3.5"
-            orient="auto"
-          >
-            <polygon points="0 0, 10 3.5, 0 7" fill={baseColor} opacity="0.6" />
-          </marker>
-        </defs>
-
-        {/* Edges */}
-        {edgePaths.map((edge, i) => edge && (
-          <g key={`edge-${i}`}>
-            <motion.path
-              d={edge.d}
-              fill="none"
-              stroke={baseColor}
-              strokeWidth="2"
-              strokeOpacity="0.4"
-              markerEnd="url(#arrowhead)"
-              initial={{ pathLength: 0, opacity: 0 }}
-              whileInView={{ pathLength: 1, opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.3 + i * 0.15, ease: 'easeInOut' }}
-            />
-            {edge.label && (
-              <motion.text
-                x={edge.mx}
-                y={edge.my - 8}
-                textAnchor="middle"
-                fontSize="11"
-                fill="#718096"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.8 + i * 0.15 }}
-              >
-                {edge.label}
-              </motion.text>
-            )}
-          </g>
-        ))}
-
-        {/* Nodes */}
-        {block.nodes.map((node, i) => {
-          const w = node.w || 140;
-          const h = node.h || 60;
-          const color = node.color || baseColor;
-          const IconComp = node.icon ? iconMap[node.icon] : null;
-
-          return (
-            <motion.g
-              key={node.id}
-              initial={{ opacity: 0, scale: 0 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{
-                duration: 0.5,
-                delay: i * 0.12,
-                type: 'spring',
-                stiffness: 200,
-                damping: 15,
-              }}
-              style={{ transformOrigin: `${node.x + w / 2}px ${node.y + h / 2}px` }}
-            >
-              <rect
-                x={node.x}
-                y={node.y}
-                width={w}
-                height={h}
-                rx="12"
-                fill="white"
-                stroke={color}
-                strokeWidth="2"
-              />
-              {IconComp && (
-                <foreignObject x={node.x + 12} y={node.y + (h - 18) / 2} width="18" height="18">
-                  <Box as={IconComp} color={color} boxSize="18px" />
-                </foreignObject>
-              )}
-              <text
-                x={node.x + (IconComp ? 36 : w / 2)}
-                y={node.y + h / 2 + 4}
-                textAnchor={IconComp ? 'start' : 'middle'}
-                fontSize="13"
-                fontWeight="600"
-                fill="#2D3748"
-              >
-                {node.label}
-              </text>
-            </motion.g>
-          );
-        })}
-      </svg>
+    <Box
+      w="full"
+      borderRadius="2xl"
+      border="1px solid"
+      borderColor="gray.100"
+      bg="white"
+      p={{ base: 4, md: 6 }}
+      boxShadow="sm"
+      overflow="hidden"
+    >
+      <WorkflowPreview workflow={workflowData} variant="light" autoPlay />
     </Box>
   );
+}
+
+/** Simple topological sort to derive execution order from edges */
+function buildExecutionOrder(nodeIds: string[], edges: { from: string; to: string }[]): (string | string[])[] {
+  const inDegree: Record<string, number> = {};
+  const adj: Record<string, string[]> = {};
+
+  for (const id of nodeIds) {
+    inDegree[id] = 0;
+    adj[id] = [];
+  }
+  for (const e of edges) {
+    if (adj[e.from]) adj[e.from].push(e.to);
+    if (inDegree[e.to] !== undefined) inDegree[e.to]++;
+  }
+
+  const order: (string | string[])[] = [];
+  const remaining = new Set(nodeIds);
+
+  while (remaining.size > 0) {
+    // Find all nodes with in-degree 0
+    const ready = [...remaining].filter((id) => inDegree[id] === 0);
+    if (ready.length === 0) break; // cycle guard
+
+    if (ready.length === 1) {
+      order.push(ready[0]);
+    } else {
+      order.push(ready);
+    }
+
+    for (const id of ready) {
+      remaining.delete(id);
+      for (const next of adj[id] || []) {
+        inDegree[next]--;
+      }
+    }
+  }
+
+  return order;
 }

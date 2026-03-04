@@ -14,7 +14,23 @@
   "catalog": {
     "heading": "Training",
     "subtitle": "Compliance, security, and AI ethics training courses.",
-    "logout": "Sign Out"
+    "logout": "Sign Out",
+    "searchPlaceholder": "Search courses...",
+    "filters": {
+      "all": "All",
+      "track": "Track",
+      "difficulty": "Level",
+      "basico": "Basic",
+      "avancado": "Advanced",
+      "especialista": "Specialist",
+      "iniciante": "Beginner",
+      "intermediario": "Intermediate",
+      "available": "Available",
+      "comingSoon": "Coming Soon",
+      "compliance": "Compliance & Certifications"
+    },
+    "noResults": "No courses found.",
+    "courseCount": "{{count}} courses"
   },
   "lesson": {
     "previous": "Previous",

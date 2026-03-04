@@ -1,5 +1,5 @@
 import { Box, Heading, Text, Badge, HStack, VStack, Icon } from '@chakra-ui/react';
-import { FiClock, FiBookOpen, FiLock } from 'react-icons/fi';
+import { FiClock, FiBookOpen, FiLock, FiStar } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useLocalizedPath } from '../../i18n/useLocalizedPath';
@@ -7,12 +7,24 @@ import { ProgressBar } from './ProgressBar';
 import type { Course } from '../../data/trainingCourses';
 import { getTotalLessons } from '../../data/trainingCourses';
 
+const difficultyColors: Record<string, string> = {
+  iniciante: 'green',
+  intermediario: 'orange',
+  avancado: 'red',
+};
+
+const trackColors: Record<string, string> = {
+  basico: 'blue',
+  avancado: 'purple',
+};
+
 interface CourseCardProps {
   course: Course;
   progress: number;
+  showTrackBadge?: boolean;
 }
 
-export function CourseCard({ course, progress }: CourseCardProps) {
+export function CourseCard({ course, progress, showTrackBadge = false }: CourseCardProps) {
   const { t } = useTranslation('training');
   const lp = useLocalizedPath();
 
@@ -42,11 +54,32 @@ export function CourseCard({ course, progress }: CourseCardProps) {
         </Badge>
       )}
 
-      {course.badge && (
-        <Badge colorScheme={course.available ? 'blue' : 'gray'} fontSize="xs">
-          {course.badge}
-        </Badge>
-      )}
+      {/* Badges row */}
+      <HStack spacing={2} flexWrap="wrap">
+        {course.badge && (
+          <Badge colorScheme={course.available ? 'blue' : 'gray'} fontSize="xs">
+            {course.badge}
+          </Badge>
+        )}
+        {showTrackBadge && course.track && (
+          <Badge colorScheme={trackColors[course.track] || 'gray'} fontSize="xs" variant="subtle">
+            {t(`catalog.filters.${course.track}`)}
+          </Badge>
+        )}
+        {course.difficulty && (
+          <Badge colorScheme={difficultyColors[course.difficulty] || 'gray'} fontSize="xs" variant="outline">
+            {t(`catalog.filters.${course.difficulty}`)}
+          </Badge>
+        )}
+        {course.totalXP && (
+          <Badge colorScheme="yellow" fontSize="xs" variant="subtle">
+            <HStack spacing={1}>
+              <Icon as={FiStar} boxSize={2.5} />
+              <Text>{course.totalXP} XP</Text>
+            </HStack>
+          </Badge>
+        )}
+      </HStack>
 
       <Heading as="h3" size="sm" fontWeight="700">
         {t(course.titleKey)}

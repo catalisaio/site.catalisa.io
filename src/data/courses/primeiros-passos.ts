@@ -433,7 +433,7 @@ const lessonComoSeConectam: ContentBlock[] = [
       { id: 'lead', label: 'Lead\n(Identificado/Criado)', icon: 'person', color: '#3182CE', x: 240, y: 80, w: 140, h: 60 },
       { id: 'workflow', label: 'Workflow\n(Trigger disparado)', icon: 'flow', color: '#805AD5', x: 240, y: 240, w: 140, h: 60 },
       { id: 'agent', label: 'Agente IA\n(Processa e responde)', icon: 'robot', color: '#E53E3E', x: 450, y: 160, w: 140, h: 60 },
-      { id: 'response', label: 'Resposta\n(Enviada ao cliente)', icon: 'message', color: '#25D366', x: 600, y: 280, w: 80, h: 50 },
+      { id: 'response', label: 'Resposta\n(Enviada ao cliente)', icon: 'message', color: '#25D366', x: 480, y: 280, w: 140, h: 60 },
     ],
     edges: [
       { from: 'whatsapp', to: 'lead', label: 'identifica', animated: true },

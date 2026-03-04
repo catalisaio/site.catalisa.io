@@ -81,6 +81,240 @@
         }
       }
     },
+    "primeirosPassos": {
+      "title": "Getting Started with Catalisa",
+      "description": "Learn the platform basics, discover the three pillars (Leads, Workflows, AI Agents) and create your first lead.",
+      "duration": "25 min (6 lessons)",
+      "modules": {
+        "conhecendoPlataforma": {
+          "title": "Getting to Know the Platform",
+          "description": "Interface tour, navigation and essential settings",
+          "lessons": {
+            "tourDaInterface": "Interface Tour",
+            "navegacao": "Navigating Efficiently",
+            "configuracoes": "Essential Settings"
+          }
+        },
+        "conceitosFundamentais": {
+          "title": "Core Concepts",
+          "description": "The three pillars of Catalisa and how they work together",
+          "lessons": {
+            "tresPilares": "The Three Pillars of Catalisa",
+            "comoSeConectam": "How the Three Pillars Connect",
+            "primeiroLead": "Creating Your First Lead"
+          }
+        }
+      }
+    },
+    "dominandoLeads": {
+      "title": "Mastering Leads",
+      "description": "Organize and manage your contacts with lead types, custom fields, advanced filters and kanban views.",
+      "duration": "45 min (8 lessons)",
+      "modules": {
+        "leadTypesECampos": {
+          "title": "Lead Types & Fields",
+          "description": "Categorize leads and create custom fields for each type",
+          "lessons": {
+            "leadTypes": "Lead Types: Organizing by Category",
+            "camposPersonalizados": "Custom Fields: Data That Matters",
+            "importacao": "Bulk Importing Leads"
+          }
+        },
+        "gestaoDeLeads": {
+          "title": "Lead Management",
+          "description": "View, filter and organize your leads in table or kanban",
+          "lessons": {
+            "visualizacoes": "Views: Table vs Kanban",
+            "filtrosEBusca": "Advanced Filters & Search",
+            "perfilDoLead": "Complete Lead Profile"
+          }
+        },
+        "organizacaoAvancada": {
+          "title": "Advanced Organization",
+          "description": "Tags, status and reports for full pipeline control",
+          "lessons": {
+            "tagsEStatus": "Tags, Status & Pipeline Organization",
+            "relatoriosEExportacao": "Reports & Data Export"
+          }
+        }
+      }
+    },
+    "agentesIA": {
+      "title": "AI Agents",
+      "description": "Create personalized intelligent assistants with prompts, tools and pre-configured templates.",
+      "duration": "50 min (8 lessons)",
+      "modules": {
+        "fundamentos": {
+          "title": "AI Agent Fundamentals",
+          "description": "What is an AI agent and how the basic architecture works",
+          "lessons": {
+            "oQueEAgente": "What is an AI Agent?",
+            "anatomiaDoAgente": "Anatomy of an AI Agent"
+          }
+        },
+        "criandoPrimeiroAgente": {
+          "title": "Creating Your First Agent",
+          "description": "Form, system prompt and agent templates",
+          "lessons": {
+            "formulario": "Creating an Agent: The Form",
+            "systemPrompt": "Writing an Effective System Prompt",
+            "templates": "Agent Templates: Get Started Quickly"
+          }
+        },
+        "ferramentasDoAgente": {
+          "title": "Agent Tools",
+          "description": "The 21 built-in tools and how to configure them",
+          "lessons": {
+            "disponiveis": "Tools: What Your Agent Can Do",
+            "configurando": "Adding and Configuring Tools"
+          }
+        },
+        "testandoEPublicando": {
+          "title": "Testing & Publishing",
+          "description": "Test the agent and connect to WhatsApp",
+          "lessons": {
+            "testando": "Testing Your Agent Before Publishing",
+            "publicando": "Publishing and Connecting to WhatsApp"
+          }
+        }
+      }
+    },
+    "construindoWorkflows": {
+      "title": "Building Workflows",
+      "description": "Create complete automations with triggers, actions, conditionals and action dependencies.",
+      "duration": "60 min (8 lessons)",
+      "modules": {
+        "conceitos": {
+          "title": "Workflow Concepts",
+          "description": "What is a workflow and when it triggers",
+          "lessons": {
+            "oQueEWorkflow": "What is a Workflow?",
+            "triggers": "Trigger Types: When Your Workflow Runs"
+          }
+        },
+        "canvasVisual": {
+          "title": "Visual Canvas",
+          "description": "Drag-and-drop interface for building workflows",
+          "lessons": {
+            "interface": "The Visual Workflow Canvas",
+            "dependencias": "Dependencies & Parallel Execution",
+            "variaveis": "Variable Interpolation"
+          }
+        },
+        "actionsAvancadas": {
+          "title": "Advanced Actions",
+          "description": "Essential actions and conditional logic",
+          "lessons": {
+            "essenciais": "Essential Workflow Actions",
+            "conditional": "CONDITIONAL & Advanced Logic"
+          }
+        },
+        "templatesEDebug": {
+          "title": "Templates & Debug",
+          "description": "Ready-made templates and diagnostic tools",
+          "lessons": {
+            "templates": "Workflow Templates: Get Started in Minutes",
+            "debug": "Debugging & Execution Monitoring"
+          }
+        }
+      }
+    },
+    "customActions": {
+      "title": "Custom Actions: Custom Integrations",
+      "description": "Create reusable actions with JAVASCRIPT, HTTP_WEBHOOK and AI_AGENT.",
+      "duration": "50 min (5 lessons)",
+      "modules": {
+        "customActionsModule": {
+          "title": "Custom Actions: Fundamentals",
+          "description": "The three types of custom actions and how to use them",
+          "lessons": {
+            "tipos": "The Three Types of Custom Actions",
+            "criandoRest": "Creating Your First REST Action",
+            "schemas": "Input & Output Schemas: Your Action's Contract"
+          }
+        },
+        "integracoesProntas": {
+          "title": "Ready-Made Integrations",
+          "description": "Integration templates with Stripe, SendGrid, HubSpot and more",
+          "lessons": {
+            "templatesStripe": "Stripe & SendGrid Integrations via Templates",
+            "restApiTools": "Connecting Any REST API in 5 Minutes"
+          }
+        }
+      }
+    },
+    "buildingBlocks": {
+      "title": "Building Blocks: Modular Architecture",
+      "description": "Understand Catalisa's 21 modular blocks and how to combine them for complete solutions.",
+      "duration": "55 min (5 lessons)",
+      "modules": {
+        "arquitetura": {
+          "title": "Modular Architecture",
+          "description": "The 21 independent platform blocks",
+          "lessons": {
+            "vintEUmBlocos": "The Catalisa Platform: 21 Modular Blocks",
+            "usandoNoPainel": "How to Use Blocks in the Panel"
+          }
+        },
+        "blocosEmAcao": {
+          "title": "Blocks in Action",
+          "description": "Block combinations for solving real problems",
+          "lessons": {
+            "decisionPricing": "Decision Engine + Dynamic Pricing",
+            "billingWebhooks": "Billing & Advanced Webhooks",
+            "esignFlags": "E-Signature & Feature Flags"
+          }
+        }
+      }
+    },
+    "whatsappAvancado": {
+      "title": "Advanced WhatsApp",
+      "description": "Drivers, devices, advanced events and end-to-end scenarios with WhatsApp.",
+      "duration": "50 min (5 lessons)",
+      "modules": {
+        "dispositivos": {
+          "title": "WhatsApp Devices",
+          "description": "Baileys vs Cloud API, connection and troubleshooting",
+          "lessons": {
+            "baileysVsCloud": "Baileys vs Cloud API: Two Drivers, One Platform",
+            "conexaoTroubleshooting": "Connection, QR Code & Troubleshooting"
+          }
+        },
+        "mensagensEventos": {
+          "title": "Messages & Events",
+          "description": "Media, reactions, templates and advanced webhooks",
+          "lessons": {
+            "mediaReacoes": "Media, Reactions & HSM Templates",
+            "eventosWebhooks": "WhatsApp Events & Advanced Webhooks",
+            "cenariosE2E": "End-to-End Scenarios: From Reception to Service"
+          }
+        }
+      }
+    },
+    "automacoesAvancadas": {
+      "title": "Advanced Automations",
+      "description": "Combine workflows, AI agents and custom actions in sophisticated automations for real scenarios.",
+      "duration": "70 min (5 lessons)",
+      "modules": {
+        "combinandoTudo": {
+          "title": "Putting It All Together",
+          "description": "RUN_AGENT, dependency DAGs and multi-step workflows",
+          "lessons": {
+            "workflowsAgentes": "Workflows + AI Agents: The Power of RUN_AGENT",
+            "multiStepDag": "Multi-Step Workflows with Dependency DAGs"
+          }
+        },
+        "cenariosReais": {
+          "title": "Real-World Scenarios",
+          "description": "Lead capture, follow-ups and production monitoring",
+          "lessons": {
+            "leadCapture": "Real Scenario: Lead Capture & Auto-Qualification",
+            "followUps": "Automated Follow-ups & Nurture Sequences",
+            "monitoramento": "Monitoring, Metrics & Workflow Optimization"
+          }
+        }
+      }
+    },
     "iso27001": {
       "title": "ISO 27001 - Information Security",
       "description": "Information security fundamentals and risk management per ISO/IEC 27001.",

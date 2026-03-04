@@ -89,7 +89,13 @@ function LessonPageContent() {
         </VStack>
 
         <Box bg="white" p={6} borderRadius="xl" border="1px solid" borderColor="gray.200">
-          <LessonContent contentKey={contentKey} />
+          <LessonContent
+            contentKey={contentKey}
+            contentBlocks={lesson.contentBlocks}
+            courseSlug={course.slug}
+            moduleSlug={mod.slug}
+            lessonSlug={lesson.slug}
+          />
         </Box>
 
         <Flex justify="space-between" align="center" pt={4}>

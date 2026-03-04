@@ -4,13 +4,9 @@ import {
   FormControl, FormLabel, HStack, Badge, Button, Icon, Code, IconButton,
 } from '@chakra-ui/react';
 import { FiGlobe, FiPlus, FiTrash2 } from 'react-icons/fi';
+import { hp, type MockScreenProps } from './highlightUtils';
 
-interface Props {
-  initialData?: Record<string, unknown>;
-  activeStepId?: string;
-}
-
-export function MockCustomActionForm({ activeStepId }: Props) {
+export function MockCustomActionForm({ activeStepId, onStepAction }: MockScreenProps) {
   const [method, setMethod] = useState('POST');
   const [headers, setHeaders] = useState([
     { key: 'Content-Type', value: 'application/json' },
@@ -29,7 +25,16 @@ export function MockCustomActionForm({ activeStepId }: Props) {
         <VStack spacing={3} align="stretch">
           <FormControl size="sm">
             <FormLabel fontSize="xs" fontWeight="600">Nome</FormLabel>
-            <Input size="sm" placeholder="Ex: Consultar CRM Externo" />
+            <Input size="sm" placeholder="Ex: Consultar CRM Externo" {...hp(activeStepId, 'action-name', onStepAction)} />
+          </FormControl>
+
+          <FormControl size="sm">
+            <FormLabel fontSize="xs" fontWeight="600">Tipo</FormLabel>
+            <Select size="sm" defaultValue="HTTP_WEBHOOK" {...hp(activeStepId, 'action-type-select', onStepAction)}>
+              <option value="HTTP_WEBHOOK">HTTP Webhook</option>
+              <option value="JAVASCRIPT">JavaScript</option>
+              <option value="AI_AGENT">AI Agent</option>
+            </Select>
           </FormControl>
 
           {/* Method + URL */}
@@ -41,15 +46,15 @@ export function MockCustomActionForm({ activeStepId }: Props) {
                 w="100px"
                 value={method}
                 onChange={e => setMethod(e.target.value)}
-                id="method-select"
-                boxShadow={activeStepId === 'method-select' ? '0 0 0 3px rgba(115,75,156,0.4)' : undefined}
               >
                 <option>GET</option>
                 <option>POST</option>
                 <option>PUT</option>
                 <option>DELETE</option>
               </Select>
-              <Input size="sm" placeholder="https://api.exemplo.com/endpoint" flex={1} />
+              <Input size="sm" placeholder="https://api.exemplo.com/endpoint" flex={1}
+                {...hp(activeStepId, 'http-url-field', onStepAction)}
+              />
             </HStack>
           </FormControl>
 
@@ -63,7 +68,7 @@ export function MockCustomActionForm({ activeStepId }: Props) {
                 Adicionar
               </Button>
             </Flex>
-            <VStack spacing={1}>
+            <VStack spacing={1} {...hp(activeStepId, 'input-schema-editor', onStepAction)}>
               {headers.map((h, i) => (
                 <HStack key={i} w="full">
                   <Input size="sm" placeholder="Key" value={h.key}
@@ -111,6 +116,13 @@ export function MockCustomActionForm({ activeStepId }: Props) {
               </Text>
             </FormControl>
           )}
+
+          {/* Test Button */}
+          <Flex justify="flex-end">
+            <Button size="xs" colorScheme="purple" variant="outline" {...hp(activeStepId, 'test-button', onStepAction)}>
+              Testar Action
+            </Button>
+          </Flex>
         </VStack>
       </Box>
     </Box>

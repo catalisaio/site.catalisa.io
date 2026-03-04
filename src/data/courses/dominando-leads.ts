@@ -10,10 +10,6 @@ const lessonLeadTypes: ContentBlock[] = [
     level: 'h2',
   },
   {
-    type: 'paragraph',
-    text: 'Na Catalisa, cada Lead pertence a um "Tipo" (LeadType). Isso permite que você tenha campos completamente diferentes para um corretor de imóveis, um cliente final ou um parceiro de negócios — tudo dentro da mesma plataforma.',
-  },
-  {
     type: 'comparison-table',
     columns: [
       { label: 'LeadType', highlighted: false },
@@ -67,6 +63,16 @@ const lessonLeadTypes: ContentBlock[] = [
     ],
   },
   {
+    type: 'sandbox',
+    variant: 'trigger-config',
+    instructions: 'Configure um trigger para o evento LEAD_CREATED filtrando apenas leads do tipo CORRETOR. Defina o campo "leadType" como condição do filtro.',
+    validation: {
+      type: 'contains',
+      expected: { event: 'LEAD_CREATED', leadType: 'CORRETOR' },
+    },
+    xpReward: 20,
+  },
+  {
     type: 'quiz',
     quizId: 'dl-types-q1',
     variant: 'multiple-choice',
@@ -88,10 +94,6 @@ const lessonCamposPersonalizados: ContentBlock[] = [
     type: 'heading',
     text: 'Campos Personalizados: Dados que Importam',
     level: 'h2',
-  },
-  {
-    type: 'paragraph',
-    text: 'Campos personalizados permitem que você capture exatamente os dados que seu negócio precisa — sem adaptações. Veja os tipos de campo disponíveis e quando usar cada um.',
   },
   {
     type: 'accordion-faq',
@@ -123,7 +125,7 @@ const lessonCamposPersonalizados: ContentBlock[] = [
     variant: 'leads-table',
     interactionSteps: [
       {
-        targetId: 'column-creci',
+        targetId: 'column-type',
         instruction: 'Observe a coluna "CRECI" — um campo personalizado do tipo CORRETOR.',
         position: 'bottom',
       },
@@ -133,7 +135,7 @@ const lessonCamposPersonalizados: ContentBlock[] = [
         position: 'bottom',
       },
       {
-        targetId: 'filter-btn',
+        targetId: 'btn-filter',
         instruction: 'Clique em "Filtrar" para ver como os campos personalizados aparecem nos filtros.',
         position: 'left',
       },
@@ -156,10 +158,6 @@ const lessonImportacao: ContentBlock[] = [
     type: 'heading',
     text: 'Importando Leads em Massa',
     level: 'h2',
-  },
-  {
-    type: 'paragraph',
-    text: 'Se você já tem uma base de contatos em uma planilha, não precisa cadastrar um por um. A Catalisa suporta importação em massa via CSV com mapeamento inteligente de colunas.',
   },
   {
     type: 'step-by-step',
@@ -191,16 +189,36 @@ const lessonImportacao: ContentBlock[] = [
     ],
   },
   {
-    type: 'callout',
-    variant: 'warning',
-    title: 'Formato do Telefone',
-    text: 'O telefone deve estar no formato internacional: +55 11 99999-0000 ou 5511999990000. Números sem DDI falharão na importação. Use uma fórmula no Excel/Sheets para padronizar antes de importar.',
+    type: 'mockui',
+    variant: 'leads-table',
+    interactionSteps: [
+      {
+        targetId: 'btn-add-lead',
+        instruction: 'Clique no botão "+" para ver as opções de criação, incluindo "Importar CSV".',
+        position: 'bottom',
+      },
+      {
+        targetId: 'search-leads',
+        instruction: 'Após importar, use a busca para verificar se os leads foram criados corretamente.',
+        position: 'bottom',
+      },
+    ],
   },
   {
     type: 'callout',
-    variant: 'tip',
-    title: 'Leads Duplicados',
-    text: 'A plataforma detecta automaticamente leads duplicados pelo número de telefone. Se um número já existir, o registro é atualizado em vez de duplicado.',
+    variant: 'warning',
+    title: 'Formato do Telefone',
+    text: 'O telefone deve estar no formato internacional: +55 11 99999-0000 ou 5511999990000. Números sem DDI falharão na importação.',
+  },
+  {
+    type: 'sandbox',
+    variant: 'webhook-config',
+    instructions: 'Monte o payload JSON de uma importação em massa com 3 leads do tipo CORRETOR. Cada lead precisa de: name, phone (formato internacional) e o campo personalizado "CRECI".',
+    validation: {
+      type: 'contains',
+      expected: { type: 'CORRETOR', count: 3 },
+    },
+    xpReward: 25,
   },
 ];
 
@@ -214,19 +232,19 @@ const lessonVisualizacoes: ContentBlock[] = [
   },
   {
     type: 'paragraph',
-    text: 'A Catalisa oferece duas formas de visualizar seus leads: a Tabela (para análise e filtros detalhados) e o Kanban (para acompanhamento visual do pipeline). Cada uma tem seu uso ideal.',
+    text: 'Alterne entre Tabela (filtros detalhados) e Kanban (pipeline visual) conforme sua necessidade.',
   },
   {
     type: 'mockui',
     variant: 'leads-table',
     interactionSteps: [
       {
-        targetId: 'view-toggle-kanban',
+        targetId: 'btn-view-toggle',
         instruction: 'Clique no ícone de Kanban para alternar a visualização.',
         position: 'bottom',
       },
       {
-        targetId: 'sort-name',
+        targetId: 'column-name',
         instruction: 'Na visão tabela, clique no cabeçalho "Nome" para ordenar os leads.',
         position: 'bottom',
       },
@@ -242,11 +260,21 @@ const lessonVisualizacoes: ContentBlock[] = [
         position: 'right',
       },
       {
-        targetId: 'kanban-add-column',
+        targetId: 'btn-add-column',
         instruction: 'Clique em "+ Coluna" para adicionar um novo estágio ao seu pipeline.',
         position: 'bottom',
       },
     ],
+  },
+  {
+    type: 'sandbox',
+    variant: 'trigger-config',
+    instructions: 'Configure um trigger LEAD_UPDATED que dispara quando o status do lead muda para "Qualificado". Defina o campo de filtro como "status" com operador "equals" e valor "Qualificado".',
+    validation: {
+      type: 'contains',
+      expected: { event: 'LEAD_UPDATED', status: 'Qualificado' },
+    },
+    xpReward: 20,
   },
   {
     type: 'comparison-table',
@@ -303,7 +331,7 @@ const lessonFiltrosEBusca: ContentBlock[] = [
   },
   {
     type: 'paragraph',
-    text: 'Com centenas de leads cadastrados, encontrar os certos rapidamente é essencial. Os filtros avançados da Catalisa permitem combinar múltiplos critérios para segmentar exatamente o que você precisa.',
+    text: 'Combine critérios para segmentar leads e salve filtros como segmentos reutilizáveis.',
   },
   {
     type: 'step-by-step',
@@ -365,6 +393,16 @@ const lessonFiltrosEBusca: ContentBlock[] = [
       },
     ],
   },
+  {
+    type: 'sandbox',
+    variant: 'variable-interpolation',
+    instructions: 'Escreva uma expressão de interpolação que acesse o campo personalizado "estado" de um lead retornado por uma ação anterior chamada "buscarLead". Use a sintaxe {{actions.buscarLead.output.customFields.estado}}.',
+    validation: {
+      type: 'contains',
+      expected: { expression: '{{actions.buscarLead.output.customFields.estado}}' },
+    },
+    xpReward: 20,
+  },
 ];
 
 const lessonPerfilDoLead: ContentBlock[] = [
@@ -375,14 +413,14 @@ const lessonPerfilDoLead: ContentBlock[] = [
   },
   {
     type: 'paragraph',
-    text: 'O perfil de um lead é o coração do CRM. Aqui você vê o histórico completo: conversas WhatsApp, atividades, anotações e todas as interações registradas pela plataforma e pelos agentes IA.',
+    text: 'O perfil centraliza conversas, atividades, anotações e interações de cada lead.',
   },
   {
     type: 'mockui',
     variant: 'leads-table',
     interactionSteps: [
       {
-        targetId: 'lead-row-click',
+        targetId: 'lead-row-1',
         instruction: 'Clique em qualquer lead da lista para abrir o perfil completo.',
         position: 'right',
       },
@@ -410,6 +448,27 @@ const lessonPerfilDoLead: ContentBlock[] = [
     ],
   },
   {
+    type: 'mockui',
+    variant: 'whatsapp-chat',
+    interactionSteps: [
+      {
+        targetId: 'lead-row-1',
+        instruction: 'Veja o histórico de conversas WhatsApp diretamente no perfil do lead.',
+        position: 'right',
+      },
+    ],
+  },
+  {
+    type: 'sandbox',
+    variant: 'variable-interpolation',
+    instructions: 'Escreva a expressão de interpolação para acessar o nome e o telefone de um lead dentro de um workflow. Use {{lead.name}} para o nome e {{lead.phone}} para o telefone.',
+    validation: {
+      type: 'contains',
+      expected: { name: '{{lead.name}}', phone: '{{lead.phone}}' },
+    },
+    xpReward: 15,
+  },
+  {
     type: 'callout',
     variant: 'tip',
     title: 'Contexto para Agentes IA',
@@ -426,8 +485,42 @@ const lessonTagsEStatus: ContentBlock[] = [
     level: 'h2',
   },
   {
-    type: 'paragraph',
-    text: 'Além dos campos personalizados, a Catalisa oferece Tags e Status como formas rápidas de classificar leads sem precisar editar o formulário. São atualizados instantaneamente, inclusive por workflows e agentes.',
+    type: 'mockui',
+    variant: 'leads-table',
+    interactionSteps: [
+      {
+        targetId: 'lead-row-1',
+        instruction: 'Observe as tags coloridas ao lado do nome do lead — cada cor representa uma categoria diferente.',
+        position: 'right',
+      },
+      {
+        targetId: 'column-status',
+        instruction: 'A coluna "Status" mostra o estágio atual do lead no pipeline.',
+        position: 'bottom',
+      },
+      {
+        targetId: 'btn-filter',
+        instruction: 'Clique em "Filtros" para filtrar por tags ou status específicos.',
+        position: 'left',
+      },
+    ],
+  },
+  {
+    type: 'accordion-faq',
+    items: [
+      {
+        question: 'Qual a diferença entre Tags e Status?',
+        answer: 'Tags são rótulos livres e acumulativos (um lead pode ter várias). Status é exclusivo e representa o estágio atual no pipeline (ex: "Novo", "Qualificado", "Proposta"). Ambos podem ser alterados por workflows e agentes.',
+      },
+      {
+        question: 'Quando usar Tags vs Campos Personalizados?',
+        answer: 'Tags servem para classificações rápidas e temporárias ("VIP", "Urgente", "Evento-2025"). Campos personalizados são para dados estruturados e permanentes (CRECI, Renda, Segmento).',
+      },
+      {
+        question: 'Workflows podem alterar tags e status automaticamente?',
+        answer: 'Sim! Use ações UPDATE_LEAD no workflow para adicionar tags ou mudar status. Ex: quando um lead responder pela primeira vez, mude status de "Novo" para "Engajado".',
+      },
+    ],
   },
   {
     type: 'comparison-table',
@@ -453,10 +546,31 @@ const lessonTagsEStatus: ContentBlock[] = [
     ],
   },
   {
+    type: 'mockui',
+    variant: 'leads-kanban',
+    interactionSteps: [
+      {
+        targetId: 'kanban-novo',
+        instruction: 'Leads novos chegam nesta coluna. O status "Novo" é atribuído automaticamente.',
+        position: 'bottom',
+      },
+      {
+        targetId: 'kanban-qualificado',
+        instruction: 'Arraste um lead para "Qualificado" quando ele atender seus critérios de qualificação.',
+        position: 'bottom',
+      },
+      {
+        targetId: 'kanban-card-drag',
+        instruction: 'Arrastar o cartão entre colunas atualiza o status automaticamente.',
+        position: 'right',
+      },
+    ],
+  },
+  {
     type: 'callout',
     variant: 'pro-tip',
     title: 'Automação de Status',
-    text: 'Configure workflows para atualizar o status automaticamente. Ex: quando um lead responder pela primeira vez → mudar status de "Novo" para "Engajado". Isso mantém seu pipeline sempre atualizado sem esforço manual.',
+    text: 'Configure workflows para atualizar o status automaticamente. Ex: quando um lead responder pela primeira vez → mudar status de "Novo" para "Engajado".',
   },
   {
     type: 'interactive-demo',
@@ -511,7 +625,7 @@ const lessonRelatoriosEExportacao: ContentBlock[] = [
   },
   {
     type: 'paragraph',
-    text: 'Com os dados organizados, é hora de extrair insights. A Catalisa oferece relatórios básicos integrados e exportação para análises externas.',
+    text: 'Extraia insights com relatórios integrados e exporte dados para análises externas.',
   },
   {
     type: 'step-by-step',
@@ -531,6 +645,17 @@ const lessonRelatoriosEExportacao: ContentBlock[] = [
       {
         title: 'Conecte com BI externo via API',
         description: 'Para análises avançadas, use a API da Catalisa (documentação em Settings → API Keys) para puxar dados para Power BI, Metabase ou Google Sheets.',
+      },
+    ],
+  },
+  {
+    type: 'mockui',
+    variant: 'dashboard',
+    interactionSteps: [
+      {
+        targetId: 'lead-row-1',
+        instruction: 'O dashboard mostra a distribuição de leads por tipo e a evolução do pipeline ao longo do tempo.',
+        position: 'bottom',
       },
     ],
   },

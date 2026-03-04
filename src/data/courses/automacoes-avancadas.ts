@@ -32,10 +32,6 @@ export const automacoesAvancadasCourse: Course = {
               level: 'h2',
             },
             {
-              type: 'paragraph',
-              text: 'A ação RUN_AGENT permite que workflows disparem AI Agents e utilizem o resultado em ações subsequentes. Isso cria automações híbridas onde a IA toma decisões contextuais que guiam o fluxo das ações seguintes.',
-            },
-            {
               type: 'diagram-animated',
               variant: 'flow',
               nodes: [
@@ -98,7 +94,7 @@ export const automacoesAvancadasCourse: Course = {
               variant: 'workflow-canvas',
               interactionSteps: [
                 { targetId: 'node-trigger', instruction: 'Trigger: Lead Criado com campo "empresa" preenchido', position: 'bottom' },
-                { targetId: 'node-enrich', instruction: 'Ação HTTP: Buscar dados da empresa no Clearbit', position: 'right' },
+                { targetId: 'node-send-msg', instruction: 'Ação HTTP: Buscar dados da empresa no Clearbit', position: 'right' },
                 { targetId: 'node-agent', instruction: 'RUN_AGENT: Agente Qualificador analisa e retorna score', position: 'right' },
                 { targetId: 'node-conditional', instruction: 'CONDITIONAL: score ≥ 8 → Proposta, else → Nurture', position: 'left' },
               ],
@@ -186,10 +182,6 @@ export const automacoesAvancadasCourse: Course = {
               type: 'heading',
               text: 'Workflows Multi-Step com DAG de Dependências',
               level: 'h2',
-            },
-            {
-              type: 'paragraph',
-              text: 'O DAG (Directed Acyclic Graph) de workflows permite que ações rodem em paralelo quando não dependem umas das outras, e em sequência quando há dependências. Isso maximiza a velocidade de execução e permite fluxos complexos com lógica de negócio sofisticada.',
             },
             {
               type: 'diagram-animated',
@@ -280,6 +272,34 @@ export const automacoesAvancadasCourse: Course = {
               text: 'O sistema valida o DAG antes de salvar o workflow. Se detectar uma dependência circular (A depende de B que depende de A), a criação do workflow falha com erro "Circular dependency detected". Use dependsOn apenas para expressar dependências reais de dados.',
             },
             {
+              type: 'interactive-demo',
+              title: 'Execucao de DAG Passo a Passo',
+              scenarios: [
+                {
+                  id: 'parallel-execution',
+                  label: 'Acoes Paralelas e Join',
+                  description: 'Veja como o executor processa acoes em paralelo e sincroniza no join.',
+                  steps: [
+                    { instruction: 'Trigger LEAD_UPDATED dispara o workflow', action: 'trigger-fire', feedback: 'Trigger ativado. 3 acoes sem dependsOn identificadas: buscar-cep, validar-cpf, score-ia. Iniciando execucao paralela.' },
+                    { instruction: 'Buscar CEP completa primeiro (0.2s)', action: 'cep-done', feedback: 'buscar-cep: SUCCESS (0.2s). Output: { logradouro: "Av Paulista", cidade: "Sao Paulo" }. Aguardando validar-cpf e score-ia.' },
+                    { instruction: 'Score IA e Validar CPF completam (1.2s e 0.8s)', action: 'all-parallel-done', feedback: 'validar-cpf: SUCCESS (0.8s, valido: true). score-ia: SUCCESS (1.2s, score: 8.5). Todas dependencias de decidir-aprovacao satisfeitas.' },
+                    { instruction: 'CONDITIONAL avalia os resultados combinados', action: 'conditional-eval', feedback: 'Condicao: valido == true AND score >= 7 → TRUE. Ramificacao "true" selecionada. Tempo total paralelo: 1.2s (nao 2.2s sequencial).' },
+                  ],
+                },
+                {
+                  id: 'dependency-failure',
+                  label: 'Falha em Dependencia',
+                  description: 'Observe o comportamento quando uma acao paralela falha.',
+                  steps: [
+                    { instruction: 'Trigger dispara as 3 acoes em paralelo', action: 'trigger-fire-fail', feedback: '3 acoes iniciadas em paralelo: buscar-cep, validar-cpf, score-ia.' },
+                    { instruction: 'validar-cpf falha com timeout', action: 'cpf-timeout', feedback: 'validar-cpf: FAILED (timeout 30s). Erro: "Receita Federal API unavailable". buscar-cep e score-ia completaram OK.' },
+                    { instruction: 'decidir-aprovacao nao executa', action: 'skip-conditional', feedback: 'decidir-aprovacao: SKIPPED. Motivo: dependencia "validar-cpf" falhou. Acoes dependentes cascateiam o skip.' },
+                    { instruction: 'Workflow finaliza com status FAILED', action: 'workflow-failed', feedback: 'Execucao: FAILED. 2 SUCCESS, 1 FAILED, 3 SKIPPED. Disponivel para reexecucao a partir de validar-cpf.' },
+                  ],
+                },
+              ],
+            } as ContentBlock,
+            {
               type: 'sandbox',
               variant: 'variable-interpolation',
               instructions: 'Pratique interpolação de variáveis em um workflow multi-step. Complete as expressões: 1) Nome do lead: _____ (do trigger) 2) Score retornado pelo agente "analisador": _____ 3) Endereço retornado pela action "buscar-cep": _____ 4) Condição para score >= 8: _____',
@@ -338,7 +358,7 @@ export const automacoesAvancadasCourse: Course = {
             },
             {
               type: 'paragraph',
-              text: 'Construa uma jornada completa de captação e qualificação de leads: do formulário web ao primeiro contato personalizado no WhatsApp, com qualificação automática por IA e roteamento inteligente para a equipe correta.',
+              text: 'Jornada completa: do formulario web ao primeiro contato no WhatsApp, com qualificacao automatica por IA.',
             },
             {
               type: 'step-by-step',
@@ -397,18 +417,39 @@ export const automacoesAvancadasCourse: Course = {
               viewBox: { w: 1020, h: 380 },
             } as ContentBlock,
             {
-              type: 'callout',
-              variant: 'exercise',
-              title: 'Desafio: Configure o webhook de entrada',
-              text: 'No painel, acesse Configurações → Webhooks → Incoming. Crie um novo webhook chamado "Formulário Site" e copie a URL gerada. Configure o trigger do seu workflow para escutar esse webhook. Teste enviando um POST com dados fictícios de lead.',
-            },
+              type: 'sandbox',
+              variant: 'trigger-config',
+              instructions: 'Configure o trigger para o cenario de lead capture: 1) Selecione o tipo de trigger WEBHOOK_RECEIVED 2) Aponte para o IncomingWebhook "Formulario Site" 3) Defina os campos esperados no payload: name (string), email (string), phone (string), empresa (string, opcional) 4) Adicione uma condicao: phone deve estar preenchido (nao vazio).',
+              validation: {
+                type: 'contains',
+                expected: {
+                  triggerType: 'WEBHOOK_RECEIVED',
+                  hasPayloadFields: ['name', 'email', 'phone'],
+                  hasCondition: true,
+                },
+              },
+              solution: {
+                trigger: {
+                  type: 'WEBHOOK_RECEIVED',
+                  webhookId: 'formulario-site',
+                  payloadSchema: {
+                    name: { type: 'string', required: true },
+                    email: { type: 'string', required: true },
+                    phone: { type: 'string', required: true },
+                    empresa: { type: 'string', required: false },
+                  },
+                  condition: '{{trigger.payload.phone}} != ""',
+                },
+              },
+              xpReward: 30,
+            } as ContentBlock,
             {
               type: 'mockui',
               variant: 'dashboard',
               interactionSteps: [
-                { targetId: 'leads-hoje', instruction: 'Leads captados pelo formulário nas últimas 24h', position: 'bottom' },
-                { targetId: 'taxa-qualificacao', instruction: 'Percentual de leads qualificados como "Hot" pelo AI Agent', position: 'bottom' },
-                { targetId: 'tempo-medio', instruction: 'Tempo médio do formulário ao primeiro contato WhatsApp', position: 'bottom' },
+                { targetId: 'stat-leads', instruction: 'Leads captados pelo formulário nas últimas 24h', position: 'bottom' },
+                { targetId: 'stat-conversion', instruction: 'Percentual de leads qualificados como "Hot" pelo AI Agent', position: 'bottom' },
+                { targetId: 'stat-messages', instruction: 'Tempo médio do formulário ao primeiro contato WhatsApp', position: 'bottom' },
               ],
               initialData: {
                 leadsHoje: 23,
@@ -418,6 +459,39 @@ export const automacoesAvancadasCourse: Course = {
                 taxaQualificacao: '34.7%',
                 tempoMedioContato: '47 segundos',
               },
+            } as ContentBlock,
+            {
+              type: 'interactive-demo',
+              title: 'Simulação: Lead Capture Completo',
+              scenarios: [
+                {
+                  id: 'full-capture',
+                  label: 'Formulário → Qualificação → WhatsApp',
+                  description: 'Acompanhe a jornada completa de um lead desde o formulário web até o primeiro contato.',
+                  steps: [
+                    {
+                      instruction: 'Formulário web envia dados: nome "Ana Costa", email "ana@empresa.com", telefone "+5511988887777".',
+                      action: 'form-submit',
+                      feedback: 'IncomingWebhook recebeu o payload. Workflow "Lead Capture" disparado.',
+                    },
+                    {
+                      instruction: 'CREATE_LEAD cria o registro no CRM.',
+                      action: 'create-lead',
+                      feedback: 'Lead criado: Ana Costa (ID: lead-abc). Tipo: PROSPECT. Status: Novo.',
+                    },
+                    {
+                      instruction: 'RUN_AGENT "Qualificador" analisa o perfil.',
+                      action: 'run-agent',
+                      feedback: 'Score: 8.2/10. Justificativa: "Empresa B2B, cargo de decisão". Próxima ação: PROPOSTA.',
+                    },
+                    {
+                      instruction: 'SEND_MESSAGE envia proposta personalizada via WhatsApp.',
+                      action: 'send-proposal',
+                      feedback: 'Mensagem enviada: "Olá Ana! Notei que sua empresa pode se beneficiar do nosso CRM..."',
+                    },
+                  ],
+                },
+              ],
             } as ContentBlock,
           ],
         },
@@ -434,9 +508,22 @@ export const automacoesAvancadasCourse: Course = {
               level: 'h2',
             },
             {
-              type: 'paragraph',
-              text: 'Follow-ups automáticos são sequências de mensagens enviadas ao longo do tempo para nutrir leads que ainda não estão prontos para comprar. A chave é personalização baseada em comportamento e respeito ao opt-out.',
-            },
+              type: 'accordion-faq',
+              items: [
+                {
+                  question: 'O que sao follow-ups automaticos?',
+                  answer: 'Sequencias de mensagens enviadas ao longo do tempo para nutrir leads que ainda nao estao prontos para comprar. A chave e personalizacao baseada em comportamento e respeito ao opt-out.',
+                },
+                {
+                  question: 'Qual a diferenca entre DELAY e agendar um horario fixo?',
+                  answer: 'DELAY e relativo ao momento da acao anterior (ex: "48h depois"). Agendar horario fixo usa CRON ou data especifica. Para follow-ups, DELAY e preferivel pois respeita o ritmo individual de cada lead.',
+                },
+                {
+                  question: 'Quantos follow-ups devo enviar antes de parar?',
+                  answer: 'A pratica recomendada e 3-5 tentativas com intervalos crescentes (ex: 24h, 48h, 72h, 1 semana). Apos o ultimo, marque o lead como "Cold" e encerre a sequencia. Sempre respeite opt-out imediato.',
+                },
+              ],
+            } as ContentBlock,
             {
               type: 'code',
               language: 'json',
@@ -581,16 +668,16 @@ export const automacoesAvancadasCourse: Course = {
             },
             {
               type: 'paragraph',
-              text: 'Automações sem monitoramento são caixas-pretas. O painel Catalisa oferece observabilidade completa: logs de execução, métricas de performance, alertas de falha e ferramentas de diagnóstico para manter suas automações saudáveis.',
+              text: 'O painel Catalisa oferece observabilidade completa para suas automacoes.',
             },
             {
               type: 'mockui',
               variant: 'dashboard',
               interactionSteps: [
-                { targetId: 'workflow-executions-chart', instruction: 'Execuções de workflows nas últimas 24h por status', position: 'top' },
-                { targetId: 'failed-workflows', instruction: 'Workflows com falha — clique para ver o log detalhado', position: 'right' },
-                { targetId: 'avg-duration', instruction: 'Tempo médio de execução por workflow', position: 'bottom' },
-                { targetId: 'success-rate', instruction: 'Taxa de sucesso geral (meta: > 99%)', position: 'left' },
+                { targetId: 'chart-area', instruction: 'Execuções de workflows nas últimas 24h por status', position: 'top' },
+                { targetId: 'activity-feed', instruction: 'Workflows com falha — clique para ver o log detalhado', position: 'right' },
+                { targetId: 'stat-agents', instruction: 'Tempo médio de execução por workflow', position: 'bottom' },
+                { targetId: 'stat-leads', instruction: 'Taxa de sucesso geral (meta: > 99%)', position: 'left' },
               ],
               initialData: {
                 execucoesHoje: 1847,
@@ -656,6 +743,16 @@ export const automacoesAvancadasCourse: Course = {
                   answer: 'Ações que falharam antes de completar não são cobradas pelo sistema de metering. Apenas execuções bem-sucedidas contam para o uso. Verifique a política exata no seu plano em Configurações → Billing.',
                 },
               ],
+            } as ContentBlock,
+            {
+              type: 'sandbox',
+              variant: 'variable-interpolation',
+              instructions: 'Configure alertas de monitoramento usando variáveis: 1) Para acessar a taxa de sucesso de um workflow: {{workflow.successRate}} 2) Para acessar o tempo médio de execução: {{workflow.avgDuration}} 3) Para acessar o número de falhas nas últimas 24h: {{workflow.failedLast24h}}. Complete os campos do alerta.',
+              validation: {
+                type: 'contains',
+                expected: { successRate: '{{workflow.successRate}}' },
+              },
+              xpReward: 20,
             } as ContentBlock,
             {
               type: 'interactive-demo',

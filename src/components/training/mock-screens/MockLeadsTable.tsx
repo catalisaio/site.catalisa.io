@@ -5,6 +5,7 @@ import {
   Menu, MenuButton, MenuList, MenuItem, Button, Checkbox,
 } from '@chakra-ui/react';
 import { FiSearch, FiMoreVertical, FiFilter, FiPlus, FiDownload } from 'react-icons/fi';
+import { hp, type MockScreenProps } from './highlightUtils';
 
 const mockLeads = [
   { id: 1, name: 'Maria Silva', phone: '+55 11 98765-4321', type: 'Cliente', status: 'Novo', date: '04/03/2026' },
@@ -18,12 +19,7 @@ const statusColors: Record<string, string> = {
   Novo: 'blue', Qualificado: 'purple', 'Em Negociacao': 'orange', Fechado: 'green',
 };
 
-interface Props {
-  initialData?: Record<string, unknown>;
-  activeStepId?: string;
-}
-
-export function MockLeadsTable({ activeStepId }: Props) {
+export function MockLeadsTable({ activeStepId, onStepAction }: MockScreenProps) {
   const [search, setSearch] = useState('');
   const [selected, setSelected] = useState<number[]>([]);
 
@@ -42,8 +38,7 @@ export function MockLeadsTable({ activeStepId }: Props) {
             size="xs"
             leftIcon={<FiPlus />}
             colorScheme="purple"
-            id="btn-add-lead"
-            boxShadow={activeStepId === 'btn-add-lead' ? '0 0 0 3px rgba(115,75,156,0.4)' : undefined}
+            {...hp(activeStepId, 'btn-add-lead', onStepAction)}
           >
             Novo Lead
           </Button>
@@ -61,11 +56,10 @@ export function MockLeadsTable({ activeStepId }: Props) {
             onChange={e => setSearch(e.target.value)}
             bg="white"
             borderRadius="md"
-            id="search-leads"
-            boxShadow={activeStepId === 'search-leads' ? '0 0 0 3px rgba(115,75,156,0.4)' : undefined}
+            {...hp(activeStepId, 'search-leads', onStepAction)}
           />
         </InputGroup>
-        <Button size="sm" leftIcon={<FiFilter />} variant="outline" id="btn-filter">
+        <Button size="sm" leftIcon={<FiFilter />} variant="outline" {...hp(activeStepId, 'btn-filter', onStepAction)}>
           Filtros
         </Button>
       </Flex>
@@ -76,24 +70,31 @@ export function MockLeadsTable({ activeStepId }: Props) {
           <Thead>
             <Tr bg="gray.50">
               <Th w="32px" py={2}><Checkbox size="sm" /></Th>
-              <Th py={2} fontSize="2xs">Nome</Th>
+              <Th py={2} fontSize="2xs" {...hp(activeStepId, 'column-name', onStepAction)}>Nome</Th>
               <Th py={2} fontSize="2xs">Telefone</Th>
-              <Th py={2} fontSize="2xs">Tipo</Th>
-              <Th py={2} fontSize="2xs">Status</Th>
+              <Th py={2} fontSize="2xs" {...hp(activeStepId, 'column-type', onStepAction)}>Tipo</Th>
+              <Th py={2} fontSize="2xs" {...hp(activeStepId, 'column-status', onStepAction)}>Status</Th>
               <Th py={2} fontSize="2xs">Data</Th>
               <Th py={2} w="40px"></Th>
             </Tr>
           </Thead>
           <Tbody>
-            {filtered.map(lead => (
+            {filtered.map((lead, idx) => (
               <Tr
                 key={lead.id}
                 _hover={{ bg: 'gray.50' }}
                 cursor="pointer"
                 bg={selected.includes(lead.id) ? 'purple.50' : undefined}
-                onClick={() => setSelected(prev =>
-                  prev.includes(lead.id) ? prev.filter(id => id !== lead.id) : [...prev, lead.id],
-                )}
+                {...(idx === 0 ? hp(activeStepId, 'lead-row-1', onStepAction) : {})}
+                onClick={() => {
+                  if (activeStepId === 'lead-row-1' && idx === 0) {
+                    onStepAction?.();
+                    return;
+                  }
+                  setSelected(prev =>
+                    prev.includes(lead.id) ? prev.filter(id => id !== lead.id) : [...prev, lead.id],
+                  );
+                }}
               >
                 <Td py={2}><Checkbox size="sm" isChecked={selected.includes(lead.id)} /></Td>
                 <Td py={2}>

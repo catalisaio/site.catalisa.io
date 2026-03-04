@@ -23,17 +23,13 @@ export const whatsappAvancadoCourse: Course = {
           slug: 'baileys-vs-cloud-api',
           titleKey: 'courses.whatsappAvancado.modules.dispositivos.lessons.baileysVsCloud',
           durationMin: 10,
-          interactivity: 'medium',
+          interactivity: 'high',
           xpPoints: 40,
           contentBlocks: [
             {
               type: 'heading',
               text: 'Baileys vs Cloud API: Dois Drivers, Uma Plataforma',
               level: 'h2',
-            },
-            {
-              type: 'paragraph',
-              text: 'A Catalisa suporta dois drivers de WhatsApp com características muito diferentes. Entender as diferenças é fundamental para escolher a abordagem correta para seu caso de uso e evitar problemas de compliance e disponibilidade.',
             },
             {
               type: 'comparison-table',
@@ -52,6 +48,24 @@ export const whatsappAvancadoCourse: Course = {
                 { feature: 'Funcionalidades', values: ['', 'Todas do app WhatsApp', 'Templates + respostas'] },
                 { feature: 'Ideal para', values: ['', 'PMEs, uso moderado', 'Enterprise, alto volume'] },
               ],
+            } as ContentBlock,
+            {
+              type: 'mockui',
+              variant: 'whatsapp-chat',
+              interactionSteps: [
+                { targetId: 'msg-text', instruction: 'Mensagem via Baileys — enviada pelo protocolo Web', position: 'right' },
+                { targetId: 'msg-template', instruction: 'Template HSM via Cloud API — aprovado pela Meta', position: 'right' },
+                { targetId: 'msg-reply', instruction: 'Resposta do usuário — recebida por ambos os drivers', position: 'left' },
+                { targetId: 'msg-image', instruction: 'Mídia via Cloud API — URL pública obrigatória', position: 'right' },
+              ],
+              initialData: {
+                messages: [
+                  { type: 'text', content: 'Olá! Seu pedido foi recebido. (Baileys)', from: 'bot' },
+                  { type: 'template', templateName: 'order_update', content: 'Pedido #5678 atualizado para "Em transporte". (Cloud API)', from: 'bot' },
+                  { type: 'text', content: 'Obrigado! Quando chega?', from: 'user' },
+                  { type: 'image', content: 'rastreio-mapa.jpg', caption: 'Acompanhe em tempo real', from: 'bot' },
+                ],
+              },
             } as ContentBlock,
             {
               type: 'callout',
@@ -116,17 +130,13 @@ export const whatsappAvancadoCourse: Course = {
           slug: 'conexao-troubleshooting',
           titleKey: 'courses.whatsappAvancado.modules.dispositivos.lessons.conexaoTroubleshooting',
           durationMin: 9,
-          interactivity: 'medium',
+          interactivity: 'high',
           xpPoints: 35,
           contentBlocks: [
             {
               type: 'heading',
               text: 'Conexão, QR Code e Troubleshooting',
               level: 'h2',
-            },
-            {
-              type: 'paragraph',
-              text: 'Conectar e manter dispositivos WhatsApp estáveis requer entender o ciclo de vida da sessão. Problemas de conexão têm causas específicas e soluções determinísticas.',
             },
             {
               type: 'step-by-step',
@@ -150,6 +160,25 @@ export const whatsappAvancadoCourse: Course = {
               ],
             } as ContentBlock,
             {
+              type: 'mockui',
+              variant: 'whatsapp-chat',
+              interactionSteps: [
+                { targetId: 'msg-text', instruction: 'Dispositivo conectado com sucesso', position: 'right' },
+                { targetId: 'msg-question', instruction: 'Status muda para "Conectando..." ao reconectar', position: 'right' },
+                { targetId: 'msg-reply', instruction: 'Mensagem do cliente chega normalmente', position: 'left' },
+                { targetId: 'msg-template', instruction: 'Bot responde automaticamente via workflow', position: 'right' },
+              ],
+              initialData: {
+                messages: [
+                  { type: 'system', content: 'Dispositivo conectado via QR Code', from: 'system' },
+                  { type: 'text', content: 'Oi, quero saber do meu pedido', from: 'user' },
+                  { type: 'text', content: 'Olá! Qual o número do seu pedido?', from: 'bot' },
+                  { type: 'text', content: '#4521', from: 'user' },
+                  { type: 'template', templateName: 'order_status', content: 'Pedido #4521 - Status: Em transporte. Previsão: amanhã.', from: 'bot' },
+                ],
+              },
+            } as ContentBlock,
+            {
               type: 'accordion-faq',
               items: [
                 {
@@ -167,6 +196,42 @@ export const whatsappAvancadoCourse: Course = {
                 {
                   question: 'O que faz o botão "Reset"?',
                   answer: 'Reset apaga completamente as credenciais WaAuth salvas no banco de dados e desconecta o dispositivo. Após um reset, um novo QR Code é necessário. Use quando a sessão estiver corrompida (badSession) e o Reconectar normal não funcionar.',
+                },
+              ],
+            } as ContentBlock,
+            {
+              type: 'interactive-demo',
+              title: 'Diagnóstico de Conexão: Identifique e Resolva',
+              scenarios: [
+                {
+                  id: 'diag-connection-replaced',
+                  label: 'Erro: connectionReplaced',
+                  description: 'O dispositivo desconecta a cada minuto com o erro "connectionReplaced".',
+                  steps: [
+                    { instruction: 'Verifique se há outra instância usando o mesmo número', action: 'check-instances', feedback: 'Detectado: 2 instâncias ativas (produção + staging) no mesmo número.' },
+                    { instruction: 'Desconecte a instância extra no painel de staging', action: 'disconnect-staging', feedback: 'Instância staging desconectada. Apenas produção está ativa agora.' },
+                    { instruction: 'Confirme que o dispositivo estabilizou', action: 'verify-stable', feedback: 'Status: Conectado (verde) por 5 minutos sem desconexão. Problema resolvido.' },
+                  ],
+                },
+                {
+                  id: 'diag-bad-session',
+                  label: 'Erro: badSession',
+                  description: 'O dispositivo não reconecta e mostra "badSession" nos logs.',
+                  steps: [
+                    { instruction: 'Tente o Reconectar (Forçar)', action: 'force-reconnect', feedback: 'Falha: badSession persiste. Credenciais corrompidas.' },
+                    { instruction: 'Execute o Reset para limpar credenciais WaAuth', action: 'reset-device', feedback: 'WaAuth apagado. Dispositivo aguardando novo QR Code.' },
+                    { instruction: 'Escaneie o novo QR Code no celular', action: 'scan-qr', feedback: 'QR escaneado. Status: Conectado. Sessão restaurada com sucesso.' },
+                  ],
+                },
+                {
+                  id: 'diag-ban-405',
+                  label: 'Erro: 405 (Ban temporário)',
+                  description: 'O número retorna status 405 ao tentar reconectar.',
+                  steps: [
+                    { instruction: 'PARE todas as tentativas de reconexão', action: 'stop-reconnect', feedback: 'Reconexão automática desativada para este dispositivo.' },
+                    { instruction: 'Aguarde o período de cooldown (30-60 min)', action: 'wait-cooldown', feedback: '45 minutos se passaram. Pronto para tentar novamente.' },
+                    { instruction: 'Reconecte com cautela e monitore', action: 'careful-reconnect', feedback: 'Reconexão bem-sucedida! Configure alertas para evitar ações que causem novo ban.' },
+                  ],
                 },
               ],
             } as ContentBlock,
@@ -214,7 +279,7 @@ export const whatsappAvancadoCourse: Course = {
             },
             {
               type: 'paragraph',
-              text: 'Além de texto simples, o WhatsApp suporta mensagens ricas com imagens, documentos, áudio, vídeo, reações de emoji e templates HSM (Highly Structured Messages) para comunicações em escala aprovadas pela Meta.',
+              text: 'O WhatsApp suporta mensagens ricas. Explore os tipos na simulação abaixo.',
             },
             {
               type: 'mockui',
@@ -222,8 +287,8 @@ export const whatsappAvancadoCourse: Course = {
               interactionSteps: [
                 { targetId: 'msg-text', instruction: 'Mensagem de texto simples', position: 'right' },
                 { targetId: 'msg-image', instruction: 'Imagem com legenda', position: 'right' },
-                { targetId: 'msg-doc', instruction: 'Documento PDF enviado', position: 'right' },
-                { targetId: 'msg-reaction', instruction: 'Reação de emoji na mensagem', position: 'right' },
+                { targetId: 'msg-question', instruction: 'Documento PDF enviado', position: 'right' },
+                { targetId: 'msg-reply', instruction: 'Reação de emoji na mensagem', position: 'right' },
                 { targetId: 'msg-template', instruction: 'Template HSM aprovado pela Meta', position: 'right' },
               ],
               initialData: {
@@ -233,6 +298,22 @@ export const whatsappAvancadoCourse: Course = {
                   { type: 'document', content: 'nota-fiscal-1234.pdf', from: 'bot' },
                   { type: 'reaction', content: '👍', targetMessageId: 'msg-1', from: 'user' },
                   { type: 'template', templateName: 'order_confirmation', from: 'bot' },
+                ],
+              },
+            } as ContentBlock,
+            {
+              type: 'mockui',
+              variant: 'whatsapp-chat',
+              interactionSteps: [
+                { targetId: 'msg-text', instruction: 'Clique para ver como enviar uma mensagem de texto via API', position: 'right' },
+                { targetId: 'msg-image', instruction: 'Envie imagens com legenda personalizada', position: 'right' },
+                { targetId: 'msg-template', instruction: 'Templates HSM permitem reabrir conversas fora da janela de 24h', position: 'right' },
+              ],
+              initialData: {
+                messages: [
+                  { type: 'template', templateName: 'shipping_update', content: 'Seu pedido #9876 saiu para entrega! Previsão: hoje até 18h.', from: 'bot' },
+                  { type: 'text', content: 'Ótimo! Obrigado pela atualização.', from: 'user' },
+                  { type: 'image', content: 'mapa-rastreio.jpg', caption: 'Acompanhe em tempo real pelo mapa', from: 'bot' },
                 ],
               },
             } as ContentBlock,
@@ -327,7 +408,7 @@ POST /wpp/send-template
             },
             {
               type: 'paragraph',
-              text: 'Cada interação no WhatsApp gera eventos que a plataforma captura e processa. Entender os tipos de eventos e como configurar webhooks para recebê-los é essencial para construir integrações robustas.',
+              text: 'Cada interação no WhatsApp gera eventos. Veja como eles fluem pela plataforma.',
             },
             {
               type: 'diagram-animated',
@@ -354,18 +435,59 @@ POST /wpp/send-template
               viewBox: { w: 1040, h: 380 },
             } as ContentBlock,
             {
-              type: 'list',
-              items: [
-                'messages.upsert — Nova mensagem recebida (ou atualizada)',
-                'messages.update — Status de mensagem alterado (sent, delivered, read)',
-                'connection.update — Status do dispositivo mudou (open, close, connecting)',
-                'chats.update — Conversa atualizada (título, mute, archive)',
-                'contacts.upsert — Novo contato ou contato atualizado',
-                'groups.upsert — Novo grupo ou grupo atualizado',
-                'group-participants.update — Participante adicionado/removido de grupo',
-                'call — Chamada recebida ou perdida',
+              type: 'step-by-step',
+              steps: [
+                {
+                  title: 'messages.upsert',
+                  description: 'Nova mensagem recebida ou atualizada. Evento mais comum para integrações de atendimento.',
+                },
+                {
+                  title: 'messages.update',
+                  description: 'Status de mensagem alterado (sent, delivered, read). Use para confirmar entrega e leitura.',
+                },
+                {
+                  title: 'connection.update',
+                  description: 'Status do dispositivo mudou (open, close, connecting). Essencial para monitoramento de uptime.',
+                },
+                {
+                  title: 'chats.update / contacts.upsert',
+                  description: 'Conversa ou contato atualizados. Sincronize dados de perfil e metadados de chat.',
+                },
+                {
+                  title: 'groups.upsert / group-participants.update',
+                  description: 'Grupo criado/atualizado ou participante adicionado/removido. Para automações de grupos.',
+                },
+                {
+                  title: 'call',
+                  description: 'Chamada recebida ou perdida. Crie alertas ou respostas automáticas para chamadas não atendidas.',
+                },
               ],
-              ordered: false,
+            } as ContentBlock,
+            {
+              type: 'mockui',
+              variant: 'settings',
+              interactionSteps: [
+                { targetId: 'settings-integracao', instruction: 'Em Integrações, configure os endpoints que receberão eventos WhatsApp.', position: 'right' },
+                { targetId: 'settings-devices', instruction: 'Cada dispositivo gera eventos independentes no canal events:{tenantId}.', position: 'right' },
+              ],
+            } as ContentBlock,
+            {
+              type: 'mockui',
+              variant: 'whatsapp-chat',
+              interactionSteps: [
+                { targetId: 'msg-text', instruction: 'Mensagem recebida gera evento messages.upsert', position: 'left' },
+                { targetId: 'msg-reply', instruction: 'Resposta do bot gera evento messages.upsert (outbound)', position: 'right' },
+                { targetId: 'msg-question', instruction: 'Confirmação de leitura gera messages.update status=READ', position: 'left' },
+                { targetId: 'msg-image', instruction: 'Mídia recebida inclui URL para download no evento', position: 'left' },
+              ],
+              initialData: {
+                messages: [
+                  { type: 'text', content: 'Oi, preciso de ajuda com meu pedido', from: 'user' },
+                  { type: 'text', content: 'Claro! Me informe o número do pedido.', from: 'bot' },
+                  { type: 'text', content: 'É o pedido #7890', from: 'user' },
+                  { type: 'image', content: 'screenshot-erro.jpg', caption: 'Está aparecendo esse erro', from: 'user' },
+                ],
+              },
             } as ContentBlock,
             {
               type: 'sandbox',
@@ -420,7 +542,7 @@ POST /wpp/send-template
             },
             {
               type: 'paragraph',
-              text: 'Veja como combinar eventos, webhooks e workflows para criar jornadas completas de atendimento no WhatsApp, desde a primeira mensagem até a resolução.',
+              text: 'Combine eventos, webhooks e workflows em jornadas completas de atendimento.',
             },
             {
               type: 'diagram-animated',
@@ -452,6 +574,34 @@ POST /wpp/send-template
             },
             {
               type: 'interactive-demo',
+              title: 'Roteamento de Mensagens por Tipo',
+              scenarios: [
+                {
+                  id: 'route-by-type',
+                  label: 'Rotear por Tipo de Lead',
+                  description: 'Veja como diferentes tipos de lead são atendidos por agentes diferentes.',
+                  steps: [
+                    {
+                      instruction: 'Lead tipo CORRETOR envia mensagem.',
+                      action: 'corretor-msg',
+                      feedback: 'Workflow detecta tipo CORRETOR → Aciona Agente "Consultor Imobiliário".',
+                    },
+                    {
+                      instruction: 'Lead tipo CLIENTE_FINAL envia mensagem.',
+                      action: 'cliente-msg',
+                      feedback: 'Workflow detecta tipo CLIENTE_FINAL → Aciona Agente "Atendimento Geral".',
+                    },
+                    {
+                      instruction: 'Lead sem tipo (PROSPECT) envia mensagem.',
+                      action: 'prospect-msg',
+                      feedback: 'Workflow detecta tipo vazio → Aciona Agente "Qualificador" para identificar o perfil.',
+                    },
+                  ],
+                },
+              ],
+            } as ContentBlock,
+            {
+              type: 'interactive-demo',
               title: 'Jornada Completa: Suporte via WhatsApp',
               scenarios: [
                 {
@@ -461,7 +611,7 @@ POST /wpp/send-template
                   steps: [
                     { instruction: 'Cliente envia: "Qual o horário de vocês?"', action: 'client-message', feedback: 'Evento messages.upsert capturado. Workflow "Triagem de Suporte" iniciado.' },
                     { instruction: 'AI Agent analisa a intenção', action: 'ai-analyze', feedback: 'Intenção detectada: HORARIO_FUNCIONAMENTO. Score de confiança: 0.95.' },
-                    { instruction: 'AI Agent responde automaticamente', action: 'ai-respond', feedback: 'Mensagem enviada: "Atendemos de segunda a sexta, das 8h às 18h. Posso ajudar com mais alguma coisa?" ✅' },
+                    { instruction: 'AI Agent responde automaticamente', action: 'ai-respond', feedback: 'Mensagem enviada: "Atendemos de segunda a sexta, das 8h às 18h. Posso ajudar com mais alguma coisa?"' },
                   ],
                 },
                 {

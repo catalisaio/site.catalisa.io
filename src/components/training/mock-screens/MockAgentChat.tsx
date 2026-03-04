@@ -2,8 +2,9 @@ import { useState, useEffect, useRef } from 'react';
 import {
   Box, Flex, Text, Input, IconButton, VStack, HStack, Avatar, Icon, Badge,
 } from '@chakra-ui/react';
-import { FiSend, FiCpu } from 'react-icons/fi';
+import { FiSend, FiCpu, FiRefreshCw } from 'react-icons/fi';
 import { MotionBox } from '../../motion';
+import { hp, type MockScreenProps } from './highlightUtils';
 
 const scriptedResponses = [
   {
@@ -18,12 +19,7 @@ const scriptedResponses = [
   },
 ];
 
-interface Props {
-  initialData?: Record<string, unknown>;
-  activeStepId?: string;
-}
-
-export function MockAgentChat({ activeStepId }: Props) {
+export function MockAgentChat({ activeStepId, onStepAction }: MockScreenProps) {
   const [messages, setMessages] = useState<{ role: 'user' | 'agent'; text: string; tools?: string[] }[]>([
     { role: 'agent', text: 'Ola! Sou seu Assistente de Vendas. Como posso ajudar?' },
   ]);
@@ -46,7 +42,6 @@ export function MockAgentChat({ activeStepId }: Props) {
     setInput('');
     setTyping(true);
 
-    // Simulate tool calls then response
     setTimeout(() => {
       if (script) {
         setMessages(prev => [...prev, {
@@ -65,6 +60,12 @@ export function MockAgentChat({ activeStepId }: Props) {
     }, 1500);
   };
 
+  const handleReset = () => {
+    setMessages([{ role: 'agent', text: 'Ola! Sou seu Assistente de Vendas. Como posso ajudar?' }]);
+    setScriptIdx(0);
+    setInput('');
+  };
+
   return (
     <Box bg="gray.50" minH="300px" maxH="400px" display="flex" flexDirection="column">
       {/* Header */}
@@ -78,13 +79,21 @@ export function MockAgentChat({ activeStepId }: Props) {
         gap={2}
       >
         <Avatar size="xs" bg="purple.100" icon={<Icon as={FiCpu} color="purple.600" />} />
-        <Box>
+        <Box flex={1}>
           <Text fontSize="xs" fontWeight="700">Assistente de Vendas</Text>
           <HStack spacing={1}>
             <Box w="6px" h="6px" borderRadius="full" bg="green.400" />
             <Text fontSize="2xs" color="gray.500">Online</Text>
           </HStack>
         </Box>
+        <IconButton
+          aria-label="Resetar"
+          icon={<FiRefreshCw />}
+          size="xs"
+          variant="ghost"
+          onClick={handleReset}
+          {...hp(activeStepId, 'btn-reset', onStepAction)}
+        />
       </Flex>
 
       {/* Messages */}
@@ -99,7 +108,7 @@ export function MockAgentChat({ activeStepId }: Props) {
             maxW="80%"
           >
             {msg.tools && (
-              <HStack spacing={1} mb={1}>
+              <HStack spacing={1} mb={1} {...hp(activeStepId, 'tool-calls-panel', onStepAction)}>
                 {msg.tools.map((tool, j) => (
                   <Badge key={j} colorScheme="purple" fontSize="2xs" variant="subtle">
                     {tool}
@@ -149,8 +158,7 @@ export function MockAgentChat({ activeStepId }: Props) {
           value={input}
           onChange={e => setInput(e.target.value)}
           onKeyDown={e => e.key === 'Enter' && handleSend()}
-          id="agent-chat-input"
-          boxShadow={activeStepId === 'agent-chat-input' ? '0 0 0 3px rgba(115,75,156,0.4)' : undefined}
+          {...hp(activeStepId, 'chat-input', onStepAction)}
         />
         <IconButton
           aria-label="Enviar"

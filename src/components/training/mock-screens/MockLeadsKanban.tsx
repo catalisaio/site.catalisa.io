@@ -1,6 +1,7 @@
-import { Box, Flex, Text, Badge, Avatar, HStack, VStack, Icon } from '@chakra-ui/react';
-import { FiMessageSquare, FiPhone } from 'react-icons/fi';
+import { Box, Flex, Text, Badge, Avatar, HStack, VStack, Icon, Button } from '@chakra-ui/react';
+import { FiMessageSquare, FiPhone, FiList, FiPlus } from 'react-icons/fi';
 import { MotionBox } from '../../motion';
+import { hp, type MockScreenProps } from './highlightUtils';
 
 const columns = [
   {
@@ -27,17 +28,22 @@ const columns = [
   },
 ];
 
-interface Props {
-  initialData?: Record<string, unknown>;
-  activeStepId?: string;
-}
-
-export function MockLeadsKanban({ activeStepId }: Props) {
+export function MockLeadsKanban({ activeStepId, onStepAction }: MockScreenProps) {
   return (
     <Box p={4} bg="gray.50" minH="300px" overflowX="auto">
       <Flex justify="space-between" align="center" mb={4}>
-        <Text fontSize="md" fontWeight="700" color="gray.800">Leads - Kanban</Text>
-        <Badge colorScheme="purple" fontSize="xs">6 leads</Badge>
+        <HStack spacing={2}>
+          <Text fontSize="md" fontWeight="700" color="gray.800">Leads - Kanban</Text>
+          <Badge colorScheme="purple" fontSize="xs">6 leads</Badge>
+        </HStack>
+        <HStack spacing={1}>
+          <Button size="xs" leftIcon={<FiList />} variant="outline" {...hp(activeStepId, 'btn-view-toggle', onStepAction)}>
+            Tabela
+          </Button>
+          <Button size="xs" leftIcon={<FiPlus />} variant="outline" {...hp(activeStepId, 'btn-add-column', onStepAction)}>
+            Coluna
+          </Button>
+        </HStack>
       </Flex>
 
       <Flex gap={3} minW="800px">
@@ -49,8 +55,7 @@ export function MockLeadsKanban({ activeStepId }: Props) {
             borderRadius="lg"
             border="1px solid"
             borderColor="gray.200"
-            id={`kanban-${col.name.toLowerCase()}`}
-            boxShadow={activeStepId === `kanban-${col.name.toLowerCase()}` ? '0 0 0 3px rgba(115,75,156,0.4)' : undefined}
+            {...hp(activeStepId, `kanban-${col.name.toLowerCase().replace(/\s/g, '-')}`, onStepAction)}
           >
             <Flex align="center" gap={2} p={3} borderBottom="1px solid" borderColor="gray.100">
               <Box w="8px" h="8px" borderRadius="full" bg={`${col.color}.400`} />
@@ -74,6 +79,7 @@ export function MockLeadsKanban({ activeStepId }: Props) {
                   borderColor="gray.100"
                   cursor="grab"
                   _hover={{ bg: 'purple.50', borderColor: 'purple.200' }}
+                  {...(i === 0 && col.name === 'Novo' ? hp(activeStepId, 'kanban-card-drag', onStepAction) : {})}
                 >
                   <HStack spacing={2} mb={1}>
                     <Avatar size="2xs" name={lead.name} bg={`${col.color}.100`} color={`${col.color}.600`} />

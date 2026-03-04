@@ -51,6 +51,7 @@ export function MockUIBlock({ block }: Props) {
             <MockScreen
               initialData={block.initialData}
               activeStepId={hasSteps ? block.interactionSteps![activeStep]?.targetId : undefined}
+              onStepAction={hasSteps ? () => setActiveStep(prev => Math.min(prev + 1, block.interactionSteps!.length - 1)) : undefined}
             />
           </Suspense>
 

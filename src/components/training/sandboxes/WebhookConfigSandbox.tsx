@@ -4,6 +4,7 @@ import {
 } from '@chakra-ui/react';
 import { FiGlobe, FiPlus, FiTrash2 } from 'react-icons/fi';
 import { useTrainingSandbox } from '../../../hooks/useTrainingSandbox';
+import { validateSandbox, isValidUrl } from './validateSandbox';
 
 interface WebhookConfig {
   url: string;
@@ -33,7 +34,7 @@ interface Props {
   solution?: Record<string, unknown>;
 }
 
-export function WebhookConfigSandbox({ onValidate }: Props) {
+export function WebhookConfigSandbox({ validation, onValidate }: Props) {
   const { state, saveState } = useTrainingSandbox<WebhookConfig>('webhook-config', defaultConfig);
 
   const toggleEvent = (event: string) => {
@@ -60,7 +61,12 @@ export function WebhookConfigSandbox({ onValidate }: Props) {
     saveState({ ...state, conditions: state.conditions.filter((_, i) => i !== idx) });
   };
 
-  const isValid = state.url.startsWith('http') && state.events.length > 0;
+  const isValid = (() => {
+    if (validation && validation.type !== 'custom') {
+      return validateSandbox(validation, state);
+    }
+    return isValidUrl(state.url) && state.events.length > 0;
+  })();
 
   return (
     <VStack spacing={3} align="stretch">

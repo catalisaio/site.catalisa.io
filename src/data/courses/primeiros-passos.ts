@@ -11,24 +11,24 @@ const lessonTourDaInterface: ContentBlock[] = [
   },
   {
     type: 'paragraph',
-    text: 'A Catalisa é uma plataforma de automação conversacional que une CRM, Agentes de IA e WhatsApp em um único lugar. Nesta aula você vai conhecer cada seção do painel e entender para que serve cada uma delas.',
+    text: 'Vamos conhecer o painel da Catalisa na prática. Siga os passos abaixo para explorar cada seção.',
   },
   {
     type: 'mockui',
     variant: 'dashboard',
     interactionSteps: [
       {
-        targetId: 'sidebar-leads',
+        targetId: 'nav-leads',
         instruction: 'Clique em "Leads" na barra lateral para explorar o CRM.',
         position: 'right',
       },
       {
-        targetId: 'sidebar-workflows',
+        targetId: 'nav-workflows',
         instruction: 'Agora clique em "Workflows" para ver os fluxos de automação.',
         position: 'right',
       },
       {
-        targetId: 'sidebar-agents',
+        targetId: 'nav-agents',
         instruction: 'Por último, clique em "Agentes IA" para conhecer seus assistentes.',
         position: 'right',
       },
@@ -39,6 +39,32 @@ const lessonTourDaInterface: ContentBlock[] = [
     variant: 'tip',
     title: 'Dica de navegação',
     text: 'Você pode minimizar a barra lateral clicando no ícone de menu (☰) no topo esquerdo, ganhando mais espaço para trabalhar.',
+  },
+  {
+    type: 'mockui',
+    variant: 'dashboard',
+    interactionSteps: [
+      {
+        targetId: 'stat-leads',
+        instruction: 'Observe o card de Leads ativos — ele mostra quantos contatos você tem no CRM.',
+        position: 'bottom',
+      },
+      {
+        targetId: 'stat-messages',
+        instruction: 'Este card mostra mensagens enviadas e recebidas no período.',
+        position: 'bottom',
+      },
+      {
+        targetId: 'stat-agents',
+        instruction: 'Aqui você vê quantos Agentes IA estão ativos.',
+        position: 'bottom',
+      },
+      {
+        targetId: 'chart-area',
+        instruction: 'O gráfico mostra a evolução de mensagens e leads ao longo do tempo.',
+        position: 'top',
+      },
+    ],
   },
   {
     type: 'step-by-step',
@@ -82,7 +108,7 @@ const lessonNavegacao: ContentBlock[] = [
   },
   {
     type: 'paragraph',
-    text: 'Conhecer os atalhos e padrões de navegação da Catalisa vai acelerar muito o seu dia a dia. Veja como se mover rapidamente entre as telas.',
+    text: 'Conheça os atalhos que vão acelerar seu dia a dia na Catalisa.',
   },
   {
     type: 'comparison-table',
@@ -96,6 +122,34 @@ const lessonNavegacao: ContentBlock[] = [
       { feature: 'Novo lead', values: ['Botão "+ Novo Lead"', 'N na tela de Leads'] },
       { feature: 'Voltar ao Dashboard', values: ['Logo Catalisa', 'Alt + H'] },
       { feature: 'Salvar formulário', values: ['Botão "Salvar"', 'Ctrl + Enter'] },
+    ],
+  },
+  {
+    type: 'interactive-demo',
+    title: 'Mini-Tour: Conheça os Atalhos',
+    scenarios: [
+      {
+        id: 'keyboard-shortcuts',
+        label: 'Atalhos de Teclado',
+        description: 'Pratique os atalhos que vão acelerar sua produtividade.',
+        steps: [
+          {
+            instruction: 'Pressione Ctrl+K para abrir a busca global.',
+            action: 'press-ctrl-k',
+            feedback: 'A busca global abre! Aqui você encontra leads, workflows e agentes de qualquer tela.',
+          },
+          {
+            instruction: 'Digite "N" na tela de Leads para criar um novo lead.',
+            action: 'press-n',
+            feedback: 'O formulário de novo lead abriu. Atalhos economizam cliques no dia a dia.',
+          },
+          {
+            instruction: 'Pressione Ctrl+Enter para salvar o formulário.',
+            action: 'press-ctrl-enter',
+            feedback: 'Formulário salvo! Você dominou os 3 atalhos principais.',
+          },
+        ],
+      },
     ],
   },
   {
@@ -159,7 +213,7 @@ const lessonConfiguracoes: ContentBlock[] = [
   },
   {
     type: 'paragraph',
-    text: 'Antes de começar a usar a plataforma em produção, é importante configurar algumas coisas básicas: seu perfil, fuso horário e a conexão com o WhatsApp.',
+    text: 'Configure perfil, fuso horário e WhatsApp antes de usar a plataforma em produção.',
   },
   {
     type: 'step-by-step',
@@ -196,6 +250,56 @@ const lessonConfiguracoes: ContentBlock[] = [
         instruction: 'Clique em "Dispositivos" para ver como conectar o WhatsApp.',
         position: 'right',
       },
+      {
+        targetId: 'settings-notificacoes',
+        instruction: 'Clique em "Notificações" para configurar seus alertas.',
+        position: 'right',
+      },
+    ],
+  },
+  {
+    type: 'interactive-demo',
+    title: 'Conectando seu WhatsApp',
+    scenarios: [
+      {
+        id: 'connect-whatsapp',
+        label: 'Conectar Dispositivo',
+        description: 'Siga o fluxo completo para parear um número WhatsApp.',
+        steps: [
+          {
+            instruction: 'Acesse Configurações → Dispositivos e clique em "+ Novo Dispositivo".',
+            action: 'open-devices',
+            feedback: 'A tela de novo dispositivo abriu. Você verá o QR Code em instantes.',
+          },
+          {
+            instruction: 'No celular, abra WhatsApp → Configurações → Dispositivos Conectados → Conectar Dispositivo.',
+            action: 'show-qr',
+            feedback: 'O QR Code apareceu na tela. Aponte a câmera do celular para ele.',
+          },
+          {
+            instruction: 'Escaneie o QR Code com a câmera do celular.',
+            action: 'scan-qr',
+            feedback: 'Dispositivo conectado com sucesso! O status mudou para "Online".',
+          },
+        ],
+      },
+      {
+        id: 'configure-timezone',
+        label: 'Fuso Horário',
+        description: 'Configure o fuso horário para que agendamentos funcionem corretamente.',
+        steps: [
+          {
+            instruction: 'Acesse Configurações → Perfil.',
+            action: 'open-profile',
+            feedback: 'A tela de perfil abriu.',
+          },
+          {
+            instruction: 'Selecione seu fuso horário no dropdown "Fuso Horário".',
+            action: 'select-timezone',
+            feedback: 'Fuso alterado para "America/Sao_Paulo (UTC-3)". Todos os agendamentos usarão este fuso.',
+          },
+        ],
+      },
     ],
   },
   {
@@ -226,10 +330,6 @@ const lessonConceitosBasicos: ContentBlock[] = [
     type: 'heading',
     text: 'Os Três Pilares da Catalisa',
     level: 'h2',
-  },
-  {
-    type: 'paragraph',
-    text: 'A Catalisa é construída em torno de três conceitos centrais que trabalham juntos para automatizar sua operação: Leads, Workflows e Agentes IA. Entender esses três elementos é o ponto de partida para tudo.',
   },
   {
     type: 'comparison-table',
@@ -263,6 +363,17 @@ const lessonConceitosBasicos: ContentBlock[] = [
     ],
   },
   {
+    type: 'mockui',
+    variant: 'leads-kanban',
+    interactionSteps: [
+      {
+        targetId: 'lead-row-1',
+        instruction: 'Arraste um lead entre colunas para alterar seu status. O Kanban organiza leads visualmente por etapa.',
+        position: 'top',
+      },
+    ],
+  },
+  {
     type: 'callout',
     variant: 'tip',
     title: 'A Analogia do Restaurante',
@@ -283,6 +394,26 @@ const lessonConceitosBasicos: ContentBlock[] = [
         question: 'Quantos Leads posso cadastrar?',
         answer: 'Isso depende do seu plano. Verifique os limites em Configurações → Plano. Na maioria dos planos o volume é bem generoso para operações de médio porte.',
       },
+      {
+        question: 'Qual a diferença entre o Agente IA e o Assistente IA?',
+        answer: 'O Assistente IA é o chatbot interno da plataforma que te ajuda a gerenciar leads e workflows. Agentes IA são assistentes que você cria para atender seus clientes via WhatsApp, com personalidade e ferramentas customizadas.',
+      },
+    ],
+  },
+  {
+    type: 'mockui',
+    variant: 'ai-assistant',
+    interactionSteps: [
+      {
+        targetId: 'chat-input',
+        instruction: 'O AI Assistant da Catalisa ajuda você a gerenciar leads e workflows sem sair do painel.',
+        position: 'top',
+      },
+      {
+        targetId: 'chat-suggestions',
+        instruction: 'Sugestões de ação aparecem automaticamente com base no contexto atual.',
+        position: 'left',
+      },
     ],
   },
 ];
@@ -292,10 +423,6 @@ const lessonComoSeConectam: ContentBlock[] = [
     type: 'heading',
     text: 'Como os Três Pilares se Conectam',
     level: 'h2',
-  },
-  {
-    type: 'paragraph',
-    text: 'Os três pilares ganham todo seu poder quando trabalham juntos. Veja o diagrama abaixo que mostra como uma conversa real flui pela plataforma.',
   },
   {
     type: 'diagram-animated',
@@ -317,8 +444,48 @@ const lessonComoSeConectam: ContentBlock[] = [
     ],
   },
   {
-    type: 'paragraph',
-    text: 'Quando um cliente envia uma mensagem pelo WhatsApp: (1) a plataforma identifica ou cria o Lead correspondente, (2) o Workflow com trigger MESSAGE_RECEIVED é disparado, (3) o Workflow aciona o Agente IA com o contexto do Lead, (4) o Agente processa e envia a resposta de volta.',
+    type: 'accordion-faq',
+    items: [
+      {
+        question: '1. O que acontece quando o cliente envia uma mensagem?',
+        answer: 'A plataforma identifica ou cria o Lead correspondente com base no número de telefone. Isso acontece automaticamente.',
+      },
+      {
+        question: '2. Como o Workflow é disparado?',
+        answer: 'O trigger MESSAGE_RECEIVED detecta a mensagem e inicia o Workflow associado. Você pode ter vários Workflows com triggers diferentes.',
+      },
+      {
+        question: '3. Como o Agente IA recebe o contexto?',
+        answer: 'O Workflow aciona o Agente IA via ação RUN_AGENT, passando os dados do Lead (nome, tipo, histórico) como contexto para personalizar a resposta.',
+      },
+      {
+        question: '4. Como a resposta chega ao cliente?',
+        answer: 'O Agente gera a resposta e a ação SEND_MESSAGE a envia de volta pelo WhatsApp. O cliente recebe como uma mensagem normal.',
+      },
+    ],
+  },
+  {
+    type: 'mockui',
+    variant: 'workflow-canvas',
+    interactionSteps: [
+      {
+        targetId: 'node-trigger',
+        instruction: 'O trigger MESSAGE_RECEIVED inicia o fluxo quando o cliente manda uma mensagem.',
+        position: 'bottom',
+      },
+      {
+        targetId: 'node-agent',
+        instruction: 'A ação RUN_AGENT aciona o agente IA para processar e responder.',
+        position: 'right',
+      },
+    ],
+    initialData: {
+      nodes: [
+        { id: 'trigger', type: 'MESSAGE_RECEIVED', label: 'Mensagem Recebida' },
+        { id: 'agent', type: 'AI_AGENT', label: 'Agente IA' },
+        { id: 'send', type: 'SEND_MESSAGE', label: 'Enviar Resposta' },
+      ],
+    },
   },
   {
     type: 'interactive-demo',
@@ -362,16 +529,29 @@ const lessonPrimeiroLead: ContentBlock[] = [
     level: 'h2',
   },
   {
-    type: 'paragraph',
-    text: 'Chegou a hora de colocar a mão na massa! Vamos criar seu primeiro Lead na plataforma. É simples e vai te ajudar a entender como os dados são organizados.',
+    type: 'mockui',
+    variant: 'leads-table',
+    interactionSteps: [
+      {
+        targetId: 'btn-add-lead',
+        instruction: 'Clique em "+ Novo Lead" para abrir o formulário de criação.',
+        position: 'bottom',
+      },
+      {
+        targetId: 'search-leads',
+        instruction: 'Use a barra de busca para encontrar leads por nome ou telefone.',
+        position: 'bottom',
+      },
+      {
+        targetId: 'btn-filter',
+        instruction: 'Clique em "Filtros" para segmentar leads por tipo, status ou data.',
+        position: 'bottom',
+      },
+    ],
   },
   {
     type: 'step-by-step',
     steps: [
-      {
-        title: 'Acesse a seção de Leads',
-        description: 'No menu lateral, clique em "Leads". Você verá a lista de todos os seus contatos (vazia por enquanto).',
-      },
       {
         title: 'Clique em "+ Novo Lead"',
         description: 'O botão está no canto superior direito. Uma janela lateral (drawer) vai se abrir com o formulário.',
@@ -469,7 +649,7 @@ export const primeirosPassosCourse: Course = {
           slug: 'configuracoes-essenciais',
           titleKey: 'courses.primeirosPassos.modules.conhecendoPlataforma.lessons.configuracoes',
           durationMin: 5,
-          interactivity: 'medium',
+          interactivity: 'high',
           xpPoints: 15,
           quizRequired: true,
           contentBlocks: lessonConfiguracoes,
@@ -486,7 +666,7 @@ export const primeirosPassosCourse: Course = {
           slug: 'os-tres-pilares',
           titleKey: 'courses.primeirosPassos.modules.conceitosFundamentais.lessons.tresPilares',
           durationMin: 5,
-          interactivity: 'low',
+          interactivity: 'medium',
           xpPoints: 15,
           contentBlocks: lessonConceitosBasicos,
         },

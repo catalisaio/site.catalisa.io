@@ -10,10 +10,6 @@ const lessonOQueEAgente: ContentBlock[] = [
     level: 'h2',
   },
   {
-    type: 'paragraph',
-    text: 'Um Agente IA na Catalisa é um assistente inteligente que você cria e configura para realizar tarefas específicas: atender clientes no WhatsApp, qualificar leads, agendar reuniões ou responder dúvidas frequentes — tudo de forma autônoma e personalizada.',
-  },
-  {
     type: 'comparison-table',
     columns: [
       { label: 'Característica', highlighted: false },
@@ -65,6 +61,22 @@ const lessonOQueEAgente: ContentBlock[] = [
     ],
   },
   {
+    type: 'mockui',
+    variant: 'agent-chat',
+    interactionSteps: [
+      {
+        targetId: 'chat-input',
+        instruction: 'Veja um agente em ação: ele entende linguagem natural e responde contextualmente.',
+        position: 'top',
+      },
+      {
+        targetId: 'tool-calls-panel',
+        instruction: 'No painel lateral, observe as ferramentas que o agente usou automaticamente para buscar dados.',
+        position: 'left',
+      },
+    ],
+  },
+  {
     type: 'callout',
     variant: 'tip',
     title: 'Agente vs AI Assistant',
@@ -92,10 +104,6 @@ const lessonArquiteturaDoAgente: ContentBlock[] = [
     type: 'heading',
     text: 'Anatomia de um Agente IA',
     level: 'h2',
-  },
-  {
-    type: 'paragraph',
-    text: 'Cada agente é composto por três elementos fundamentais: o System Prompt (personalidade e instruções), as Ferramentas (capacidades de ação) e as Conversas (histórico e memória). Entender essa estrutura é essencial para criar agentes eficazes.',
   },
   {
     type: 'accordion-faq',
@@ -141,6 +149,22 @@ const lessonArquiteturaDoAgente: ContentBlock[] = [
       },
     ],
   },
+  {
+    type: 'mockui',
+    variant: 'agent-chat',
+    interactionSteps: [
+      {
+        targetId: 'chat-input',
+        instruction: 'Observe como o agente Sofia responderia a uma mensagem do lead, usando ferramentas para buscar dados.',
+        position: 'top',
+      },
+      {
+        targetId: 'tool-calls-panel',
+        instruction: 'Note as ferramentas usadas automaticamente: get_lead para buscar dados, update_lead para salvar informações.',
+        position: 'left',
+      },
+    ],
+  },
 ];
 
 // ─── Module 2: Criando seu Primeiro Agente ───────────────────────────────────
@@ -150,10 +174,6 @@ const lessonFormularioDoAgente: ContentBlock[] = [
     type: 'heading',
     text: 'Criando um Agente: O Formulário',
     level: 'h2',
-  },
-  {
-    type: 'paragraph',
-    text: 'Vamos criar seu primeiro agente! O formulário de criação tem quatro seções: Identidade, Configurações de Modelo, System Prompt e Status. Cada uma é importante.',
   },
   {
     type: 'mockui',
@@ -205,6 +225,21 @@ const lessonFormularioDoAgente: ContentBlock[] = [
     ],
   },
   {
+    type: 'sandbox',
+    variant: 'agent-config',
+    instructions: 'Configure um agente de atendimento: escolha um nome, uma descrição, o modelo "smart" e escreva um System Prompt curto (2-3 frases) definindo o papel do agente.',
+    validation: {
+      type: 'contains',
+      expected: { hasName: true, hasModel: true, hasPrompt: true },
+    },
+    solution: {
+      name: 'Sofia - Atendimento',
+      model: 'smart',
+      prompt: 'Você é Sofia, assistente de atendimento. Responda de forma amigável e direcione o cliente para a equipe de vendas quando necessário.',
+    },
+    xpReward: 25,
+  },
+  {
     type: 'callout',
     variant: 'tip',
     title: 'Comece com "smart"',
@@ -220,7 +255,7 @@ const lessonEscrevendoSystemPrompt: ContentBlock[] = [
   },
   {
     type: 'paragraph',
-    text: 'O System Prompt é a parte mais crítica do agente. Um bom prompt faz a diferença entre um agente que impressiona e um que frustra. Siga a estrutura RACI para prompts eficazes.',
+    text: 'O System Prompt define o comportamento do agente. Siga a estrutura RACI.',
   },
   {
     type: 'step-by-step',
@@ -289,7 +324,7 @@ const lessonTemplatesDeAgentes: ContentBlock[] = [
   },
   {
     type: 'paragraph',
-    text: 'Não precisa começar do zero! A Catalisa tem um marketplace de templates de agentes pré-configurados para os casos de uso mais comuns. Instale em um clique e personalize.',
+    text: 'A Catalisa tem um marketplace de templates prontos. Instale em um clique e personalize.',
   },
   {
     type: 'step-by-step',
@@ -311,6 +346,21 @@ const lessonTemplatesDeAgentes: ContentBlock[] = [
         description: 'Edite o prompt para incluir o nome da sua empresa e detalhes específicos. Teste antes de ativar.',
       },
     ],
+  },
+  {
+    type: 'sandbox',
+    variant: 'agent-config',
+    instructions: 'Simule a instalação de um template de agente. Preencha: nome do agente ("Consultor Comercial"), modelo ("smart"), e um System Prompt de 2-3 frases descrevendo o papel do agente como consultor de vendas.',
+    validation: {
+      type: 'contains',
+      expected: { hasName: true, hasModel: true, hasPrompt: true },
+    },
+    solution: {
+      name: 'Consultor Comercial',
+      model: 'smart',
+      prompt: 'Você é um consultor comercial especializado. Ajude os clientes a encontrar a melhor solução para suas necessidades. Sempre qualifique o orçamento antes de fazer recomendações.',
+    },
+    xpReward: 20,
   },
   {
     type: 'interactive-demo',
@@ -354,10 +404,6 @@ const lessonFerramentasDisponiveis: ContentBlock[] = [
     type: 'heading',
     text: 'Ferramentas: O Que Seu Agente Pode Fazer',
     level: 'h2',
-  },
-  {
-    type: 'paragraph',
-    text: 'As ferramentas são as "mãos" do agente — o que ele pode fazer além de responder texto. Cada ferramenta é uma ação real: buscar um lead, enviar uma mensagem, criar uma tarefa. Veja as 21 ferramentas integradas.',
   },
   {
     type: 'comparison-table',
@@ -405,6 +451,27 @@ const lessonFerramentasDisponiveis: ContentBlock[] = [
     ],
   },
   {
+    type: 'mockui',
+    variant: 'agent-form',
+    interactionSteps: [
+      {
+        targetId: 'step-tools',
+        instruction: 'Na aba "Ferramentas", veja as categorias disponíveis: CRM, WhatsApp, Workflows e Utilitários.',
+        position: 'right',
+      },
+      {
+        targetId: 'tool-get-lead',
+        instruction: 'A ferramenta get_lead permite que o agente busque dados completos do lead durante a conversa.',
+        position: 'right',
+      },
+      {
+        targetId: 'tool-update-lead',
+        instruction: 'Com update_lead, o agente salva informações coletadas diretamente no CRM.',
+        position: 'right',
+      },
+    ],
+  },
+  {
     type: 'callout',
     variant: 'pro-tip',
     title: 'Ferramenta Mais Poderosa: update_lead',
@@ -437,7 +504,7 @@ const lessonConfigurondoFerramentas: ContentBlock[] = [
   },
   {
     type: 'paragraph',
-    text: 'Adicionar ferramentas a um agente é simples: na edição do agente, vá na aba "Ferramentas" e selecione as que deseja habilitar. Vamos praticar.',
+    text: 'Na edicao do agente, aba "Ferramentas", selecione as capacidades que deseja habilitar.',
   },
   {
     type: 'step-by-step',
@@ -521,7 +588,7 @@ const lessonTestando: ContentBlock[] = [
   },
   {
     type: 'paragraph',
-    text: 'NUNCA publique um agente sem testá-lo exaustivamente. A Catalisa oferece um ambiente de teste isolado onde você pode simular conversas reais sem afetar clientes.',
+    text: 'Teste exaustivamente antes de publicar. Use o ambiente de teste isolado da Catalisa.',
   },
   {
     type: 'mockui',
@@ -538,7 +605,7 @@ const lessonTestando: ContentBlock[] = [
         position: 'left',
       },
       {
-        targetId: 'reset-conversation',
+        targetId: 'btn-reset',
         instruction: 'Clique em "Nova Conversa" para reiniciar o contexto e testar outro cenário.',
         position: 'bottom',
       },
@@ -566,10 +633,25 @@ const lessonTestando: ContentBlock[] = [
     ],
   },
   {
-    type: 'callout',
-    variant: 'exercise',
-    title: 'Checklist de Teste (15 pontos)',
-    text: '1. O agente se apresentou corretamente? 2. Usou o nome do cliente? 3. Buscou os dados antes de responder? 4. Atualizou campos quando solicitado? 5. Respondeu off-topic de forma adequada? 6. Manteve o tom da marca? 7. Disparou workflow corretamente?',
+    type: 'accordion-faq',
+    items: [
+      {
+        question: 'O agente se apresentou corretamente?',
+        answer: 'Verifique se o agente usou o nome definido no prompt e seguiu o tom de voz esperado na primeira mensagem.',
+      },
+      {
+        question: 'O agente buscou dados antes de responder?',
+        answer: 'No painel de ferramentas, confirme que get_lead foi chamado antes da primeira resposta personalizada.',
+      },
+      {
+        question: 'O agente lidou com perguntas off-topic?',
+        answer: 'Teste com perguntas fora do escopo. O agente deve redirecionar educadamente para o assunto principal.',
+      },
+      {
+        question: 'O agente atualizou o CRM quando solicitado?',
+        answer: 'Se o lead forneceu informações novas (orcamento, email), verifique se update_lead foi chamado com os campos corretos.',
+      },
+    ],
   },
   {
     type: 'callout',
@@ -587,7 +669,7 @@ const lessonPublicando: ContentBlock[] = [
   },
   {
     type: 'paragraph',
-    text: 'Agente testado e aprovado? Agora é conectar ao WhatsApp. Existem duas formas: via Workflow (recomendado para controle) ou diretamente em um dispositivo (mais simples).',
+    text: 'Conecte seu agente ao WhatsApp via Workflow (controle granular) ou direto no dispositivo (universal).',
   },
   {
     type: 'comparison-table',
@@ -614,6 +696,22 @@ const lessonPublicando: ContentBlock[] = [
     ],
   },
   {
+    type: 'mockui',
+    variant: 'workflow-canvas',
+    interactionSteps: [
+      {
+        targetId: 'field-name',
+        instruction: 'Veja o workflow montado: trigger MESSAGE_RECEIVED conectado a uma acao RUN_AGENT que aciona seu agente.',
+        position: 'top',
+      },
+      {
+        targetId: 'btn-next-step',
+        instruction: 'Clique para ver como adicionar condicoes de filtro ao trigger (ex: tipo do lead, horario).',
+        position: 'right',
+      },
+    ],
+  },
+  {
     type: 'step-by-step',
     steps: [
       {
@@ -633,6 +731,24 @@ const lessonPublicando: ContentBlock[] = [
         description: 'Acesse Agentes → [seu agente] → Conversas para ver todas as interações. Ajuste o prompt baseado em comportamentos inesperados.',
       },
     ],
+  },
+  {
+    type: 'sandbox',
+    variant: 'trigger-config',
+    instructions: 'Configure um trigger MESSAGE_RECEIVED que ativa o agente apenas para leads do tipo CORRETOR. Defina o filtro de tipo de lead e conecte a acao RUN_AGENT com o ID do seu agente.',
+    validation: {
+      type: 'contains',
+      expected: {
+        triggerType: 'MESSAGE_RECEIVED',
+        filter: 'leadType',
+      },
+    },
+    solution: {
+      triggerType: 'MESSAGE_RECEIVED',
+      filters: { leadType: 'CORRETOR' },
+      action: 'RUN_AGENT',
+    },
+    xpReward: 30,
   },
   {
     type: 'quiz',
@@ -691,7 +807,7 @@ export const agentesIACourse: Course = {
           slug: 'anatomia-do-agente',
           titleKey: 'courses.agentesIA.modules.fundamentos.lessons.anatomiaDoAgente',
           durationMin: 7,
-          interactivity: 'low',
+          interactivity: 'medium',
           xpPoints: 20,
           contentBlocks: lessonArquiteturaDoAgente,
         },
@@ -740,7 +856,7 @@ export const agentesIACourse: Course = {
           slug: 'ferramentas-disponiveis',
           titleKey: 'courses.agentesIA.modules.ferramentasDoAgente.lessons.disponiveis',
           durationMin: 8,
-          interactivity: 'medium',
+          interactivity: 'high',
           xpPoints: 20,
           contentBlocks: lessonFerramentasDisponiveis,
         },
@@ -773,7 +889,7 @@ export const agentesIACourse: Course = {
           slug: 'publicando-agente',
           titleKey: 'courses.agentesIA.modules.testandoEPublicando.lessons.publicando',
           durationMin: 6,
-          interactivity: 'medium',
+          interactivity: 'high',
           xpPoints: 20,
           quizRequired: true,
           contentBlocks: lessonPublicando,

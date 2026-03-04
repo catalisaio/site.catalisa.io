@@ -2,15 +2,30 @@ import {
   Box, Flex, Text, VStack, HStack, Switch, Select, Input,
   FormControl, FormLabel, Divider, Icon, Badge,
 } from '@chakra-ui/react';
-import { FiSettings, FiBell, FiShield, FiGlobe } from 'react-icons/fi';
-
-interface Props {
-  initialData?: Record<string, unknown>;
-  activeStepId?: string;
-}
+import { FiSettings, FiBell, FiShield, FiGlobe, FiUser, FiSmartphone } from 'react-icons/fi';
+import { hp, type MockScreenProps } from './highlightUtils';
 
 const sections = [
   {
+    id: 'settings-profile',
+    icon: FiUser,
+    title: 'Perfil',
+    items: [
+      { label: 'Nome', type: 'input', value: 'Admin' },
+      { label: 'Email', type: 'input', value: 'admin@empresa.com' },
+    ],
+  },
+  {
+    id: 'settings-devices',
+    icon: FiSmartphone,
+    title: 'Dispositivos',
+    items: [
+      { label: 'WhatsApp Principal', type: 'badge', value: 'Conectado', color: 'green' },
+      { label: 'WhatsApp Suporte', type: 'badge', value: 'Desconectado', color: 'red' },
+    ],
+  },
+  {
+    id: 'settings-geral',
     icon: FiSettings,
     title: 'Geral',
     items: [
@@ -20,6 +35,7 @@ const sections = [
     ],
   },
   {
+    id: 'settings-notificacoes',
     icon: FiBell,
     title: 'Notificacoes',
     items: [
@@ -29,6 +45,7 @@ const sections = [
     ],
   },
   {
+    id: 'settings-seguranca',
     icon: FiShield,
     title: 'Seguranca',
     items: [
@@ -37,6 +54,7 @@ const sections = [
     ],
   },
   {
+    id: 'settings-integracoes',
     icon: FiGlobe,
     title: 'Integracoes',
     items: [
@@ -46,22 +64,21 @@ const sections = [
   },
 ];
 
-export function MockSettings({ activeStepId }: Props) {
+export function MockSettings({ activeStepId, onStepAction }: MockScreenProps) {
   return (
     <Box p={4} bg="gray.50" minH="300px">
       <Text fontSize="md" fontWeight="700" color="gray.800" mb={4}>Configuracoes</Text>
 
       <VStack spacing={3} align="stretch">
-        {sections.map((section, i) => (
+        {sections.map((section) => (
           <Box
-            key={i}
+            key={section.id}
             bg="white"
             borderRadius="lg"
             border="1px solid"
             borderColor="gray.200"
             p={4}
-            id={`settings-${section.title.toLowerCase()}`}
-            boxShadow={activeStepId === `settings-${section.title.toLowerCase()}` ? '0 0 0 3px rgba(115,75,156,0.4)' : undefined}
+            {...hp(activeStepId, section.id, onStepAction)}
           >
             <HStack spacing={2} mb={3}>
               <Icon as={section.icon} color="purple.500" boxSize={4} />

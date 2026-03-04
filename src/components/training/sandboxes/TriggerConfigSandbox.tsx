@@ -4,6 +4,7 @@ import {
 } from '@chakra-ui/react';
 import { FiZap, FiPlus, FiTrash2 } from 'react-icons/fi';
 import { useTrainingSandbox } from '../../../hooks/useTrainingSandbox';
+import { validateSandbox } from './validateSandbox';
 
 interface TriggerConfig {
   type: string;
@@ -32,7 +33,7 @@ interface Props {
   solution?: Record<string, unknown>;
 }
 
-export function TriggerConfigSandbox({ onValidate }: Props) {
+export function TriggerConfigSandbox({ validation, onValidate }: Props) {
   const { state, saveState } = useTrainingSandbox<TriggerConfig>('trigger-config', defaultConfig);
 
   const handleTypeChange = (type: string) => {
@@ -56,8 +57,13 @@ export function TriggerConfigSandbox({ onValidate }: Props) {
     saveState({ ...state, filters: state.filters.filter((_, i) => i !== idx) });
   };
 
-  const isValid = state.type !== '' && state.filters.length > 0 &&
-    state.filters.every(f => f.field && f.operator && f.value);
+  const isValid = (() => {
+    if (validation && validation.type !== 'custom') {
+      return validateSandbox(validation, state);
+    }
+    return state.type !== '' && state.filters.length > 0 &&
+      state.filters.every(f => f.field && f.operator && f.value);
+  })();
 
   return (
     <VStack spacing={3} align="stretch">

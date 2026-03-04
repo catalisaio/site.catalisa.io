@@ -32,10 +32,6 @@ export const customActionsCourse: Course = {
               level: 'h2',
             },
             {
-              type: 'paragraph',
-              text: 'Custom Actions são blocos reutilizáveis que você cria para encapsular lógica de negócio específica. Ao contrário das ações nativas do painel, as Custom Actions são 100% configuradas por você e podem ser usadas em qualquer workflow.',
-            },
-            {
               type: 'comparison-table',
               columns: [
                 { label: 'Tipo' },
@@ -49,6 +45,15 @@ export const customActionsCourse: Course = {
                 { feature: 'Acesso a variáveis', values: ['', 'Sim', 'Via body/headers', 'Via contexto'] },
                 { feature: 'Dependência externa', values: ['', 'Nenhuma', 'URL pública', 'Chave de API de IA'] },
                 { feature: 'Melhor para', values: ['', 'Transformação de dados', 'Integração de APIs', 'Decisões inteligentes'] },
+              ],
+            } as ContentBlock,
+            {
+              type: 'mockui',
+              variant: 'custom-action-form',
+              interactionSteps: [
+                { targetId: 'action-name', instruction: 'Digite o nome da sua Custom Action', position: 'right' },
+                { targetId: 'action-type-select', instruction: 'Selecione entre JAVASCRIPT, HTTP_WEBHOOK ou AI_AGENT', position: 'bottom' },
+                { targetId: 'input-schema-editor', instruction: 'Defina os campos de entrada que sua action precisa receber', position: 'left' },
               ],
             } as ContentBlock,
             {
@@ -101,10 +106,6 @@ export const customActionsCourse: Course = {
               type: 'heading',
               text: 'Criando sua Primeira REST Action',
               level: 'h2',
-            },
-            {
-              type: 'paragraph',
-              text: 'Vamos criar uma Custom Action do tipo HTTP_WEBHOOK que consulta o ViaCEP para enriquecer leads com dados de endereço automaticamente a partir do CEP.',
             },
             {
               type: 'step-by-step',
@@ -205,7 +206,7 @@ export const customActionsCourse: Course = {
             },
             {
               type: 'paragraph',
-              text: 'O Input Schema define o que a action precisa receber para funcionar. O Output Schema define o que ela vai devolver. Juntos, eles formam o contrato que permite ao sistema de workflows conectar ações automaticamente.',
+              text: 'Schemas definem o contrato de entrada e saída da action, permitindo que o workflow conecte ações automaticamente.',
             },
             {
               type: 'diagram-animated',
@@ -224,6 +225,32 @@ export const customActionsCourse: Course = {
                 { from: 'output', to: 'next', label: '{{actions.buscarCep.output.logradouro}}', animated: true },
               ],
               viewBox: { w: 960, h: 260 },
+            } as ContentBlock,
+            {
+              type: 'sandbox',
+              variant: 'variable-interpolation',
+              instructions: 'Pratique a interpolação de outputs de Custom Actions. Complete: 1) Para acessar o logradouro retornado pela action "buscarCep": {{actions.buscarCep.output.logradouro}} 2) Para acessar o telefone formatado pela action "formatarTel": {{actions.formatarTel.output.telefoneFormatado}}',
+              validation: {
+                type: 'contains',
+                expected: { var1: '{{actions.buscarCep.output.logradouro}}' },
+              },
+              xpReward: 15,
+            } as ContentBlock,
+            {
+              type: 'mockui',
+              variant: 'custom-action-form',
+              interactionSteps: [
+                { targetId: 'action-name', instruction: 'Digite "Formatar Telefone"', position: 'right' },
+                { targetId: 'action-type-select', instruction: 'Selecione JAVASCRIPT', position: 'bottom' },
+                { targetId: 'input-schema-editor', instruction: 'Adicione "telefone" como string required e "ddd" como string optional', position: 'left' },
+                { targetId: 'test-button', instruction: 'Clique em Testar para validar o schema', position: 'bottom' },
+              ],
+              initialData: {
+                actionName: 'Formatar Telefone',
+                actionType: 'JAVASCRIPT',
+                inputSchema: { telefone: { type: 'string', required: true }, ddd: { type: 'string' } },
+                outputSchema: { telefoneFormatado: { type: 'string' } },
+              },
             } as ContentBlock,
             {
               type: 'code',
@@ -292,7 +319,7 @@ export const customActionsCourse: Course = {
           slug: 'templates-stripe-sendgrid',
           titleKey: 'courses.customActions.modules.integracoesProntas.lessons.templatesStripe',
           durationMin: 9,
-          interactivity: 'medium',
+          interactivity: 'high',
           xpPoints: 45,
           contentBlocks: [
             {
@@ -302,19 +329,28 @@ export const customActionsCourse: Course = {
             },
             {
               type: 'paragraph',
-              text: 'A Catalisa oferece templates prontos de Custom Actions para as integrações mais comuns do mercado. Em vez de construir do zero, você importa o template e apenas preenche suas credenciais.',
+              text: 'Templates prontos de Custom Actions permitem integrar serviços populares em poucos cliques. Importe, preencha suas credenciais e use.',
             },
             {
-              type: 'list',
+              type: 'accordion-faq',
               items: [
-                'Stripe: Criar cliente, criar checkout session, consultar assinatura, criar reembolso',
-                'SendGrid: Enviar e-mail transacional, adicionar a lista, remover unsubscribe',
-                'HubSpot: Criar/atualizar contato, adicionar a deal, atualizar stage',
-                'Slack: Enviar mensagem para canal, criar alerta de incidente',
-                'Google Sheets: Adicionar linha, ler dados, atualizar célula',
-                'PipeDrive: Criar deal, mover stage, criar atividade',
+                {
+                  question: 'Stripe: quais operações estão disponíveis?',
+                  answer: 'Criar cliente, criar checkout session, consultar assinatura e criar reembolso. Todos os templates usam a API REST do Stripe com autenticação via Bearer token.',
+                },
+                {
+                  question: 'SendGrid: o que posso automatizar?',
+                  answer: 'Enviar e-mail transacional, adicionar contato a lista e remover unsubscribe. Ideal para notificações de workflow como confirmações e follow-ups.',
+                },
+                {
+                  question: 'HubSpot e PipeDrive: CRMs suportados?',
+                  answer: 'Sim. HubSpot: criar/atualizar contato, adicionar a deal, atualizar stage. PipeDrive: criar deal, mover stage, criar atividade.',
+                },
+                {
+                  question: 'Slack e Google Sheets: integrações de produtividade?',
+                  answer: 'Slack: enviar mensagem para canal e criar alerta de incidente. Google Sheets: adicionar linha, ler dados e atualizar célula.',
+                },
               ],
-              ordered: false,
             } as ContentBlock,
             {
               type: 'step-by-step',
@@ -342,11 +378,52 @@ export const customActionsCourse: Course = {
               ],
             } as ContentBlock,
             {
+              type: 'mockui',
+              variant: 'workflow-canvas',
+              interactionSteps: [
+                { targetId: 'action-name', instruction: 'Arraste o bloco "Stripe: Criar Checkout" para o canvas', position: 'right' },
+                { targetId: 'input-schema-editor', instruction: 'Conecte o output do trigger ao input "priceId" da action', position: 'left' },
+                { targetId: 'test-button', instruction: 'Clique em Executar Teste para simular o fluxo completo', position: 'bottom' },
+              ],
+              initialData: {
+                workflowName: 'Checkout Automático',
+                nodes: [
+                  { id: 'trigger', type: 'LEAD_CREATED', label: 'Lead Criado' },
+                  { id: 'stripe', type: 'CUSTOM_ACTION', label: 'Stripe: Criar Checkout' },
+                  { id: 'notify', type: 'SEND_MESSAGE', label: 'Enviar Link por WhatsApp' },
+                ],
+              },
+            } as ContentBlock,
+            {
               type: 'callout',
               variant: 'warning',
               title: 'Nunca hardcode credenciais',
               text: 'Sempre use o sistema de Secrets do painel (configurações → Secrets) para armazenar API Keys. Use {{secrets.NOME_DA_CHAVE}} nos templates. Credenciais no código aparecem nos logs de execução e são um risco de segurança.',
             },
+            {
+              type: 'sandbox',
+              variant: 'webhook-config',
+              instructions: 'Configure um template de Custom Action HTTP_WEBHOOK para o SendGrid. Nome: "Enviar Email Transacional". Método: POST. URL: https://api.sendgrid.com/v3/mail/send. Header Authorization: Bearer {{secrets.SENDGRID_API_KEY}}. Input schema: "to" (string, required), "subject" (string, required), "body" (string, required). Teste com dados fictícios.',
+              validation: {
+                type: 'contains',
+                expected: { type: 'HTTP_WEBHOOK', http: { method: 'POST' } },
+              },
+              solution: {
+                name: 'Enviar Email Transacional',
+                type: 'HTTP_WEBHOOK',
+                http: {
+                  method: 'POST',
+                  url: 'https://api.sendgrid.com/v3/mail/send',
+                  headers: { Authorization: 'Bearer {{secrets.SENDGRID_API_KEY}}' },
+                },
+                inputSchema: {
+                  to: { type: 'string', required: true },
+                  subject: { type: 'string', required: true },
+                  body: { type: 'string', required: true },
+                },
+              },
+              xpReward: 25,
+            } as ContentBlock,
             {
               type: 'interactive-demo',
               title: 'Simulação: Importar Template Stripe',
@@ -396,7 +473,7 @@ export const customActionsCourse: Course = {
             },
             {
               type: 'paragraph',
-              text: 'Com o tipo HTTP_WEBHOOK você pode conectar qualquer API REST ao seu workflow. Vamos criar uma integração completa com a API de CEP e depois com uma API de validação de CPF.',
+              text: 'O tipo HTTP_WEBHOOK conecta qualquer API REST ao seu workflow. Veja o fluxo de execução:',
             },
             {
               type: 'diagram-animated',
@@ -416,6 +493,23 @@ export const customActionsCourse: Course = {
                 { from: 'next', to: 'workflow', label: '5. {{actions.x.output.*}}', animated: false },
               ],
               viewBox: { w: 700, h: 300 },
+            } as ContentBlock,
+            {
+              type: 'mockui',
+              variant: 'custom-action-form',
+              interactionSteps: [
+                { targetId: 'action-name', instruction: 'Digite "Validar E-mail"', position: 'right' },
+                { targetId: 'action-type-select', instruction: 'Selecione HTTP_WEBHOOK', position: 'bottom' },
+                { targetId: 'input-schema-editor', instruction: 'Adicione "email" como string required', position: 'left' },
+                { targetId: 'http-url-field', instruction: 'Cole a URL da API Hunter com {{input.email}} e {{secrets.HUNTER_API_KEY}}', position: 'top' },
+                { targetId: 'test-button', instruction: 'Teste com um e-mail real para ver o score', position: 'bottom' },
+              ],
+              initialData: {
+                actionName: 'Validar E-mail',
+                actionType: 'HTTP_WEBHOOK',
+                method: 'GET',
+                url: 'https://api.hunter.io/v2/email-verifier?email={{input.email}}&api_key={{secrets.HUNTER_API_KEY}}',
+              },
             } as ContentBlock,
             {
               type: 'code',
@@ -448,11 +542,37 @@ export const customActionsCourse: Course = {
 }`,
             } as ContentBlock,
             {
-              type: 'callout',
-              variant: 'pro-tip',
-              title: 'JSONPath no Output Mapping',
-              text: 'Use notação JSONPath ($.campo.subcampo) para extrair campos aninhados da resposta da API. Isso permite trabalhar com APIs que retornam dados em estruturas complexas sem precisar de transformação adicional.',
-            },
+              type: 'accordion-faq',
+              items: [
+                {
+                  question: 'Como funciona o JSONPath no Output Mapping?',
+                  answer: 'Use notação JSONPath ($.campo.subcampo) para extrair campos aninhados da resposta da API. Por exemplo, $.data.status extrai o campo "status" dentro do objeto "data" da resposta JSON.',
+                },
+                {
+                  question: 'E se a API retornar uma estrutura complexa com arrays?',
+                  answer: 'JSONPath suporta navegação em arrays com $.items[0].name ou $.results[*].id. Você pode mapear qualquer nível de aninhamento sem precisar de transformação adicional.',
+                },
+                {
+                  question: 'Posso usar variáveis de secrets nos headers?',
+                  answer: 'Sim! Use {{secrets.NOME_DA_CHAVE}} em qualquer campo: URL, headers ou body. Os secrets são resolvidos no momento da execução e nunca aparecem nos logs.',
+                },
+              ],
+            } as ContentBlock,
+            {
+              type: 'mockui',
+              variant: 'custom-action-form',
+              interactionSteps: [
+                { targetId: 'http-url-field', instruction: 'Cole a URL da API com variáveis de interpolação {{input.campo}}', position: 'top' },
+                { targetId: 'http-headers', instruction: 'Adicione headers de autenticação usando {{secrets.SUA_CHAVE}}', position: 'left' },
+                { targetId: 'output-mapping', instruction: 'Mapeie os campos da resposta JSON para o Output Schema', position: 'left' },
+                { targetId: 'test-button', instruction: 'Teste a action com dados reais antes de salvar', position: 'bottom' },
+              ],
+              initialData: {
+                actionName: 'Consultar API Externa',
+                actionType: 'HTTP_WEBHOOK',
+                method: 'GET',
+              },
+            } as ContentBlock,
             {
               type: 'sandbox',
               variant: 'custom-action',

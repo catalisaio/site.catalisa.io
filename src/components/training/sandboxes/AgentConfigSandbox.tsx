@@ -6,6 +6,7 @@ import {
 import { FiCpu } from 'react-icons/fi';
 import { MotionBox } from '../../motion';
 import { useTrainingSandbox } from '../../../hooks/useTrainingSandbox';
+import { validateSandbox } from './validateSandbox';
 
 interface AgentConfig {
   name: string;
@@ -34,7 +35,7 @@ interface Props {
   solution?: Record<string, unknown>;
 }
 
-export function AgentConfigSandbox({ onValidate }: Props) {
+export function AgentConfigSandbox({ validation, onValidate }: Props) {
   const { state, saveState } = useTrainingSandbox<AgentConfig>('agent-config', defaultConfig);
   const [showPreview, setShowPreview] = useState(false);
 
@@ -42,7 +43,12 @@ export function AgentConfigSandbox({ onValidate }: Props) {
     saveState({ ...state, [field]: value });
   };
 
-  const isComplete = state.name.length >= 3 && state.systemPrompt.length >= 20;
+  const isComplete = (() => {
+    if (validation && validation.type !== 'custom') {
+      return validateSandbox(validation, state);
+    }
+    return state.name.length >= 3 && state.systemPrompt.length >= 20;
+  })();
 
   const handleValidate = () => {
     onValidate(isComplete);

@@ -31,10 +31,6 @@ export const buildingBlocksCourse: Course = {
               level: 'h2',
             },
             {
-              type: 'paragraph',
-              text: 'A Catalisa não é uma solução monolítica. É uma plataforma composta por 21 blocos independentes que podem ser ativados, combinados e configurados conforme a necessidade do seu negócio. Você paga e usa apenas o que precisa.',
-            },
-            {
               type: 'diagram-animated',
               variant: 'architecture',
               nodes: [
@@ -43,9 +39,9 @@ export const buildingBlocksCourse: Course = {
                 { id: 'whatsapp', label: 'WhatsApp\nMulti-tenant', x: 260, y: 120, color: '#0d9488' },
                 { id: 'workflows', label: 'Workflow\nEngine', x: 440, y: 120, color: '#0d9488' },
                 { id: 'ai', label: 'AI\nAgents', x: 620, y: 120, color: '#0d9488' },
-                { id: 'billing', label: 'Billing &\nMeteração', x: 800, y: 120, color: '#0d9488' },
+                { id: 'billing', label: 'Billing &\nMeteracao', x: 800, y: 120, color: '#0d9488' },
                 { id: 'decision', label: 'Decision\nEngine', x: 80, y: 250, color: '#14b8a6' },
-                { id: 'pricing', label: 'Pricing\nDinâmico', x: 220, y: 250, color: '#14b8a6' },
+                { id: 'pricing', label: 'Pricing\nDinamico', x: 220, y: 250, color: '#14b8a6' },
                 { id: 'esign', label: 'E-Signature', x: 360, y: 250, color: '#14b8a6' },
                 { id: 'flags', label: 'Feature\nFlags', x: 500, y: 250, color: '#14b8a6' },
                 { id: 'webhooks', label: 'Advanced\nWebhooks', x: 640, y: 250, color: '#14b8a6' },
@@ -70,13 +66,13 @@ export const buildingBlocksCourse: Course = {
               type: 'comparison-table',
               columns: [
                 { label: 'Categoria' },
-                { label: 'Blocos Incluídos' },
-                { label: 'Disponível em' },
+                { label: 'Blocos Incluidos' },
+                { label: 'Disponivel em' },
               ],
               rows: [
-                { feature: 'Comunicação', values: ['', 'WhatsApp, E-mail, SMS, Push', 'Todos os planos'] },
-                { feature: 'CRM', values: ['', 'Leads, Pipeline, Segmentação', 'Starter+'] },
-                { feature: 'Automação', values: ['', 'Workflows, Triggers, Schedulers', 'Starter+'] },
+                { feature: 'Comunicacao', values: ['', 'WhatsApp, E-mail, SMS, Push', 'Todos os planos'] },
+                { feature: 'CRM', values: ['', 'Leads, Pipeline, Segmentacao', 'Starter+'] },
+                { feature: 'Automacao', values: ['', 'Workflows, Triggers, Schedulers', 'Starter+'] },
                 { feature: 'IA', values: ['', 'AI Agents, AI Assistant, AI Analytics', 'Pro+'] },
                 { feature: 'Financeiro', values: ['', 'Billing, Pricing, Invoicing', 'Pro+'] },
                 { feature: 'Compliance', values: ['', 'E-Signature, Audit Trail, LGPD', 'Enterprise'] },
@@ -84,25 +80,45 @@ export const buildingBlocksCourse: Course = {
               ],
             } as ContentBlock,
             {
-              type: 'callout',
-              variant: 'tip',
-              title: 'Filosofia composável',
-              text: 'Cada bloco expõe APIs REST e eventos padronizados. Isso significa que o Decision Engine pode disparar um Workflow que usa o Billing para cobrar, e o resultado pode ser enviado via WhatsApp — tudo sem código personalizado.',
-            },
+              type: 'diagram-animated',
+              variant: 'data-flow',
+              nodes: [
+                { id: 'crm-ev', label: 'CRM\nLEAD_CREATED', x: 60, y: 40, color: '#0d9488' },
+                { id: 'wpp-ev', label: 'WhatsApp\nMESSAGE_RECEIVED', x: 60, y: 140, color: '#16a34a' },
+                { id: 'billing-ev', label: 'Billing\nPAYMENT_SUCCEEDED', x: 60, y: 240, color: '#f59e0b' },
+                { id: 'bus', label: 'Barramento\nde Eventos', x: 300, y: 140, color: '#6366f1', w: 160 },
+                { id: 'wf-engine', label: 'Workflow\nEngine', x: 540, y: 60, color: '#805AD5' },
+                { id: 'webhooks', label: 'Advanced\nWebhooks', x: 540, y: 140, color: '#ea580c' },
+                { id: 'analytics', label: 'Analytics', x: 540, y: 220, color: '#10b981' },
+              ],
+              edges: [
+                { from: 'crm-ev', to: 'bus', animated: true },
+                { from: 'wpp-ev', to: 'bus', animated: true },
+                { from: 'billing-ev', to: 'bus', animated: true },
+                { from: 'bus', to: 'wf-engine', label: 'processa', animated: true },
+                { from: 'bus', to: 'webhooks', label: 'entrega', animated: true },
+                { from: 'bus', to: 'analytics', label: 'registra', animated: true },
+              ],
+              viewBox: { w: 700, h: 300 },
+            } as ContentBlock,
             {
               type: 'accordion-faq',
               items: [
                 {
+                  question: 'Qual e a filosofia composavel da plataforma?',
+                  answer: 'Cada bloco expoe APIs REST e eventos padronizados. Isso significa que o Decision Engine pode disparar um Workflow que usa o Billing para cobrar, e o resultado pode ser enviado via WhatsApp -- tudo sem codigo personalizado.',
+                },
+                {
                   question: 'Posso ativar apenas os blocos que preciso?',
-                  answer: 'Sim. O painel de administração permite ativar ou desativar módulos por organização. Módulos desativados não aparecem na interface e não geram custos de metering.',
+                  answer: 'Sim. O painel de administracao permite ativar ou desativar modulos por organizacao. Modulos desativados nao aparecem na interface e nao geram custos de metering.',
                 },
                 {
                   question: 'Os blocos compartilham dados entre si?',
-                  answer: 'Sim, através de um barramento de eventos interno. Quando um Lead é criado no CRM, o Workflow Engine recebe o evento. Quando um Workflow dispara o Billing, o resultado volta como evento para atualizar o Lead.',
+                  answer: 'Sim, atraves de um barramento de eventos interno. Quando um Lead e criado no CRM, o Workflow Engine recebe o evento. Quando um Workflow dispara o Billing, o resultado volta como evento para atualizar o Lead.',
                 },
                 {
-                  question: 'Como sei quais blocos estão ativos na minha conta?',
-                  answer: 'Acesse Configurações → Módulos. Você verá o status de cada bloco, data de ativação e métricas de uso dos últimos 30 dias.',
+                  question: 'Como sei quais blocos estao ativos na minha conta?',
+                  answer: 'Acesse Configuracoes -> Modulos. Voce vera o status de cada bloco, data de ativacao e metricas de uso dos ultimos 30 dias.',
                 },
               ],
             } as ContentBlock,
@@ -118,7 +134,7 @@ export const buildingBlocksCourse: Course = {
                 { label: 'Feature Flags + AI Agents', value: 'd' },
               ],
               correctAnswer: 'b',
-              explanation: 'E-Signature captura a assinatura → Workflows recebe o evento de assinatura concluída → Billing processa a cobrança. Os três blocos trabalham em sequência via o barramento de eventos da plataforma.',
+              explanation: 'E-Signature captura a assinatura -> Workflows recebe o evento de assinatura concluida -> Billing processa a cobranca. Os tres blocos trabalham em sequencia via o barramento de eventos da plataforma.',
               xpBonus: 15,
             } as ContentBlock,
           ],
@@ -136,27 +152,23 @@ export const buildingBlocksCourse: Course = {
               level: 'h2',
             },
             {
-              type: 'paragraph',
-              text: 'O painel unifica todos os blocos em uma interface coerente. Você não precisa alternar entre sistemas diferentes — tudo está integrado. Veja como navegar e combinar blocos para casos de uso reais.',
-            },
-            {
               type: 'step-by-step',
               steps: [
                 {
-                  title: 'Navegação principal',
-                  description: 'O menu lateral organiza os blocos em seções: Leads (CRM), Conversas (WhatsApp), Automação (Workflows), Agentes (IA) e Configurações. Módulos não ativos aparecem com um cadeado.',
+                  title: 'Navegacao principal',
+                  description: 'O menu lateral organiza os blocos em secoes: Leads (CRM), Conversas (WhatsApp), Automacao (Workflows), Agentes (IA) e Configuracoes. Modulos nao ativos aparecem com um cadeado.',
                 },
                 {
-                  title: 'Painel de Visão Geral',
-                  description: 'O dashboard principal agrega métricas de todos os blocos ativos: leads captados hoje, mensagens enviadas, workflows executados e receita do período.',
+                  title: 'Painel de Visao Geral',
+                  description: 'O dashboard principal agrega metricas de todos os blocos ativos: leads captados hoje, mensagens enviadas, workflows executados e receita do periodo.',
                 },
                 {
-                  title: 'Criando conexões entre blocos',
-                  description: 'Ao criar um Workflow, você pode usar ações de qualquer bloco ativo. O editor de workflow lista todas as ações disponíveis organizadas por categoria de bloco.',
+                  title: 'Criando conexoes entre blocos',
+                  description: 'Ao criar um Workflow, voce pode usar acoes de qualquer bloco ativo. O editor de workflow lista todas as acoes disponiveis organizadas por categoria de bloco.',
                 },
                 {
                   title: 'Monitoramento unificado',
-                  description: 'O log de execuções unificado mostra eventos de todos os blocos em ordem cronológica. Filtros permitem ver apenas eventos de um bloco específico.',
+                  description: 'O log de execucoes unificado mostra eventos de todos os blocos em ordem cronologica. Filtros permitem ver apenas eventos de um bloco especifico.',
                 },
               ],
             } as ContentBlock,
@@ -165,9 +177,11 @@ export const buildingBlocksCourse: Course = {
               variant: 'dashboard',
               interactionSteps: [
                 { targetId: 'nav-leads', instruction: 'Clique em Leads para ver o CRM integrado', position: 'right' },
-                { targetId: 'nav-automacao', instruction: 'Clique em Automação para acessar os Workflows', position: 'right' },
-                { targetId: 'metric-card-workflows', instruction: 'Este card mostra execuções de Workflows hoje', position: 'bottom' },
-                { targetId: 'metric-card-messages', instruction: 'Mensagens WhatsApp enviadas pelo bloco de comunicação', position: 'bottom' },
+                { targetId: 'nav-workflows', instruction: 'Clique em Automacao para acessar os Workflows', position: 'right' },
+                { targetId: 'nav-agents', instruction: 'Clique em Agentes para ver os AI Agents configurados', position: 'right' },
+                { targetId: 'stat-leads', instruction: 'Leads captados hoje pelo bloco de CRM', position: 'bottom' },
+                { targetId: 'stat-conversion', instruction: 'Este card mostra execucoes de Workflows hoje', position: 'bottom' },
+                { targetId: 'stat-messages', instruction: 'Mensagens WhatsApp enviadas pelo bloco de comunicacao', position: 'bottom' },
               ],
               initialData: {
                 leadsHoje: 47,
@@ -177,11 +191,53 @@ export const buildingBlocksCourse: Course = {
               },
             } as ContentBlock,
             {
+              type: 'diagram-animated',
+              variant: 'data-flow',
+              nodes: [
+                { id: 'user', label: 'Usuario\n(Painel)', x: 60, y: 120, color: '#0f766e' },
+                { id: 'crm-block', label: 'Bloco CRM\n(Leads)', x: 240, y: 40, color: '#0d9488' },
+                { id: 'wpp-block', label: 'Bloco WhatsApp\n(Mensagens)', x: 240, y: 120, color: '#0d9488', w: 140 },
+                { id: 'wf-block', label: 'Bloco Workflow\n(Automacao)', x: 240, y: 200, color: '#0d9488', w: 140 },
+                { id: 'event-bus', label: 'Barramento\nde Eventos', x: 460, y: 120, color: '#6366f1', w: 140 },
+                { id: 'dashboard', label: 'Dashboard\nUnificado', x: 660, y: 120, color: '#10b981', w: 140 },
+              ],
+              edges: [
+                { from: 'user', to: 'crm-block', label: 'cria lead', animated: true },
+                { from: 'user', to: 'wpp-block', label: 'envia msg', animated: true },
+                { from: 'user', to: 'wf-block', label: 'cria workflow', animated: true },
+                { from: 'crm-block', to: 'event-bus', animated: true },
+                { from: 'wpp-block', to: 'event-bus', animated: true },
+                { from: 'wf-block', to: 'event-bus', animated: true },
+                { from: 'event-bus', to: 'dashboard', label: 'metricas', animated: true },
+              ],
+              viewBox: { w: 860, h: 280 },
+            } as ContentBlock,
+            {
               type: 'callout',
               variant: 'exercise',
               title: 'Pratique: Explore o painel',
-              text: 'Use o MockUI acima para navegar pelos diferentes blocos. Observe como o dashboard centraliza informações de módulos distintos em uma visão única. Clique em cada card de métrica para ver o detalhamento.',
+              text: 'Use o MockUI acima para navegar pelos diferentes blocos. Clique em cada card de metrica para ver o detalhamento.',
             },
+            {
+              type: 'sandbox',
+              variant: 'workflow-builder',
+              instructions: 'Monte um mini-workflow que combina 3 blocos da Catalisa: 1) Trigger: LEAD_CREATED (bloco CRM) 2) Ação: SEND_MESSAGE de boas-vindas (bloco WhatsApp) 3) Ação: RUN_AGENT para qualificar o lead (bloco AI). Conecte os nós na ordem correta.',
+              validation: {
+                type: 'contains',
+                expected: {
+                  hasTrigger: 'LEAD_CREATED',
+                  hasActions: ['SEND_MESSAGE', 'RUN_AGENT'],
+                },
+              },
+              solution: {
+                trigger: 'LEAD_CREATED',
+                actions: [
+                  { id: 'welcome', type: 'SEND_MESSAGE', message: 'Bem-vindo!' },
+                  { id: 'qualify', type: 'RUN_AGENT', agentId: 'qualificador', dependsOn: ['welcome'] },
+                ],
+              },
+              xpReward: 25,
+            } as ContentBlock,
           ],
         },
       ],
@@ -200,29 +256,29 @@ export const buildingBlocksCourse: Course = {
           contentBlocks: [
             {
               type: 'heading',
-              text: 'Decision Engine + Pricing Dinâmico',
+              text: 'Decision Engine + Pricing Dinamico',
               level: 'h2',
             },
             {
               type: 'paragraph',
-              text: 'O Decision Engine avalia regras de negócio em tempo real para determinar aprovações, classificações e próximas etapas. Combinado com o Pricing Dinâmico, você cria sistemas de precificação baseados em perfil e comportamento.',
+              text: 'O Decision Engine avalia regras de negocio em tempo real. Combinado com o Pricing Dinamico, cria sistemas de precificacao baseados em perfil e comportamento.',
             },
             {
               type: 'diagram-animated',
               variant: 'flow',
               nodes: [
                 { id: 'lead', label: 'Lead\nSubmete Proposta', x: 60, y: 140, color: '#0d9488' },
-                { id: 'decision', label: 'Decision Engine\nAvalia Critérios', x: 250, y: 140, color: '#0f766e', w: 160 },
+                { id: 'decision', label: 'Decision Engine\nAvalia Criterios', x: 250, y: 140, color: '#0f766e', w: 160 },
                 { id: 'risk-a', label: 'Risco A\n(Baixo)', x: 470, y: 60, color: '#10b981' },
-                { id: 'risk-b', label: 'Risco B\n(Médio)', x: 470, y: 140, color: '#f59e0b' },
+                { id: 'risk-b', label: 'Risco B\n(Medio)', x: 470, y: 140, color: '#f59e0b' },
                 { id: 'risk-c', label: 'Risco C\n(Alto)', x: 470, y: 220, color: '#ef4444' },
-                { id: 'pricing', label: 'Pricing Dinâmico\n(Calcula Oferta)', x: 660, y: 140, color: '#0d9488', w: 160 },
+                { id: 'pricing', label: 'Pricing Dinamico\n(Calcula Oferta)', x: 660, y: 140, color: '#0d9488', w: 160 },
                 { id: 'proposta', label: 'Proposta\nPersonalizada', x: 860, y: 140, color: '#6366f1' },
               ],
               edges: [
                 { from: 'lead', to: 'decision', label: 'envia dados', animated: true },
-                { from: 'decision', to: 'risk-a', label: 'score ≥ 80', animated: true },
-                { from: 'decision', to: 'risk-b', label: '50 ≤ score < 80', animated: true },
+                { from: 'decision', to: 'risk-a', label: 'score >= 80', animated: true },
+                { from: 'decision', to: 'risk-b', label: '50 <= score < 80', animated: true },
                 { from: 'decision', to: 'risk-c', label: 'score < 50', animated: true },
                 { from: 'risk-a', to: 'pricing', animated: true },
                 { from: 'risk-b', to: 'pricing', animated: true },
@@ -233,9 +289,9 @@ export const buildingBlocksCourse: Course = {
             {
               type: 'code',
               language: 'json',
-              text: `// Configuração de regra no Decision Engine
+              text: `// Configuracao de regra no Decision Engine
 {
-  "name": "Classificação de Risco de Crédito",
+  "name": "Classificacao de Risco de Credito",
   "conditions": [
     {
       "field": "lead.score",
@@ -263,43 +319,61 @@ export const buildingBlocksCourse: Course = {
             } as ContentBlock,
             {
               type: 'interactive-demo',
-              title: 'Simulação: Decision Engine em Ação',
+              title: 'Simulacao: Decision Engine em Acao',
               scenarios: [
                 {
                   id: 'lead-risco-a',
                   label: 'Lead com Score Alto (Score: 92)',
                   description: 'Simule um lead de alto score passando pelo Decision Engine e recebendo oferta com desconto.',
                   steps: [
-                    { instruction: 'Lead submete proposta com score 92', action: 'submit-high-score', feedback: 'Decision Engine avaliando... Score 92 ≥ 80 → Classificado como RISCO_A' },
-                    { instruction: 'Pricing Dinâmico aplica multiplicador 0.85', action: 'apply-multiplier', feedback: 'Preço base R$ 1.200 × 0.85 = R$ 1.020 (desconto automático por baixo risco)' },
-                    { instruction: 'Proposta gerada e enviada via WhatsApp', action: 'send-proposal', feedback: 'Mensagem WhatsApp enviada: "Sua proposta exclusiva: R$ 1.020/mês — válida por 48h"' },
+                    { instruction: 'Lead submete proposta com score 92', action: 'submit-high-score', feedback: 'Decision Engine avaliando... Score 92 >= 80 -> Classificado como RISCO_A' },
+                    { instruction: 'Pricing Dinamico aplica multiplicador 0.85', action: 'apply-multiplier', feedback: 'Preco base R$ 1.200 x 0.85 = R$ 1.020 (desconto automatico por baixo risco)' },
+                    { instruction: 'Proposta gerada e enviada via WhatsApp', action: 'send-proposal', feedback: 'Mensagem WhatsApp enviada: "Sua proposta exclusiva: R$ 1.020/mes -- valida por 48h"' },
                   ],
                 },
                 {
                   id: 'lead-risco-c',
                   label: 'Lead com Score Baixo (Score: 38)',
-                  description: 'Veja como o Decision Engine encaminha leads de alto risco para revisão manual.',
+                  description: 'Veja como o Decision Engine encaminha leads de alto risco para revisao manual.',
                   steps: [
-                    { instruction: 'Lead submete proposta com score 38', action: 'submit-low-score', feedback: 'Decision Engine avaliando... Score 38 < 50 → Classificado como RISCO_C' },
-                    { instruction: 'Ação: REQUIRE_MANUAL_REVIEW disparada', action: 'trigger-review', feedback: 'Tarefa criada para o time de crédito. Lead marcado com tag "Revisão Manual".' },
-                    { instruction: 'Notificação enviada ao responsável', action: 'notify-team', feedback: 'E-mail enviado: "Novo lead aguarda revisão de crédito: João Silva (score: 38)"' },
+                    { instruction: 'Lead submete proposta com score 38', action: 'submit-low-score', feedback: 'Decision Engine avaliando... Score 38 < 50 -> Classificado como RISCO_C' },
+                    { instruction: 'Acao: REQUIRE_MANUAL_REVIEW disparada', action: 'trigger-review', feedback: 'Tarefa criada para o time de credito. Lead marcado com tag "Revisao Manual".' },
+                    { instruction: 'Notificacao enviada ao responsavel', action: 'notify-team', feedback: 'E-mail enviado: "Novo lead aguarda revisao de credito: Joao Silva (score: 38)"' },
                   ],
                 },
               ],
             } as ContentBlock,
             {
+              type: 'diagram-animated',
+              variant: 'sequence',
+              nodes: [
+                { id: 'lead', label: 'Lead', x: 60, y: 40, color: '#0d9488' },
+                { id: 'decision', label: 'Decision\nEngine', x: 240, y: 40, color: '#0f766e' },
+                { id: 'pricing', label: 'Pricing\nDinamico', x: 420, y: 40, color: '#6366f1' },
+                { id: 'lead2', label: 'Lead', x: 60, y: 180, color: '#0d9488' },
+                { id: 'result', label: 'Proposta\nFinal', x: 420, y: 180, color: '#10b981' },
+              ],
+              edges: [
+                { from: 'lead', to: 'decision', label: 'submete dados', animated: true },
+                { from: 'decision', to: 'pricing', label: 'classificacao + multiplicador', animated: true },
+                { from: 'pricing', to: 'result', label: 'preco calculado', animated: true },
+                { from: 'result', to: 'lead2', label: 'proposta enviada', animated: true },
+              ],
+              viewBox: { w: 560, h: 240 },
+            } as ContentBlock,
+            {
               type: 'quiz',
               quizId: 'bb-decision-q1',
               variant: 'multiple-choice',
-              question: 'Uma empresa de seguros quer aplicar taxas diferentes baseadas na idade e histórico de sinistros do cliente. Qual combinação de blocos resolve isso sem código?',
+              question: 'Uma empresa de seguros quer aplicar taxas diferentes baseadas na idade e historico de sinistros do cliente. Qual combinacao de blocos resolve isso sem codigo?',
               options: [
-                { label: 'Apenas Workflows com ação CONDITIONAL', value: 'a' },
-                { label: 'Decision Engine (classificar perfil) + Pricing Dinâmico (calcular taxa)', value: 'b' },
+                { label: 'Apenas Workflows com acao CONDITIONAL', value: 'a' },
+                { label: 'Decision Engine (classificar perfil) + Pricing Dinamico (calcular taxa)', value: 'b' },
                 { label: 'AI Agents para decidir e Billing para cobrar', value: 'c' },
                 { label: 'Feature Flags para ativar taxas diferentes', value: 'd' },
               ],
               correctAnswer: 'b',
-              explanation: 'O Decision Engine é projetado exatamente para classificação multi-critério (idade + histórico). O Pricing Dinâmico aplica multiplicadores baseados na classificação. Juntos, eliminam a necessidade de código e permitem auditoria completa das decisões.',
+              explanation: 'O Decision Engine e projetado exatamente para classificacao multi-criterio (idade + historico). O Pricing Dinamico aplica multiplicadores baseados na classificacao. Juntos, eliminam a necessidade de codigo e permitem auditoria completa das decisoes.',
               xpBonus: 20,
             } as ContentBlock,
           ],
@@ -308,7 +382,7 @@ export const buildingBlocksCourse: Course = {
           slug: 'billing-webhooks',
           titleKey: 'courses.buildingBlocks.modules.blocosEmAcao.lessons.billingWebhooks',
           durationMin: 9,
-          interactivity: 'medium',
+          interactivity: 'high',
           xpPoints: 40,
           contentBlocks: [
             {
@@ -318,8 +392,28 @@ export const buildingBlocksCourse: Course = {
             },
             {
               type: 'paragraph',
-              text: 'O bloco de Billing gerencia planos, assinaturas e métricas de uso. Os Advanced Webhooks garantem entrega confiável de eventos para sistemas externos. Juntos, permitem integrar seu faturamento com qualquer ERP ou gateway de pagamento.',
+              text: 'O Billing gerencia planos e metricas de uso. Os Advanced Webhooks entregam eventos de forma confiavel para sistemas externos.',
             },
+            {
+              type: 'diagram-animated',
+              variant: 'data-flow',
+              nodes: [
+                { id: 'action', label: 'Acao do\nUsuario', x: 60, y: 100, color: '#0d9488' },
+                { id: 'meter', label: 'Metering\n(Contagem)', x: 240, y: 100, color: '#0f766e', w: 130 },
+                { id: 'plan', label: 'Plano &\nLimites', x: 420, y: 40, color: '#6366f1' },
+                { id: 'invoice', label: 'Fatura\nGerada', x: 420, y: 160, color: '#f59e0b' },
+                { id: 'webhook', label: 'Advanced\nWebhook', x: 600, y: 100, color: '#0d9488', w: 130 },
+                { id: 'erp', label: 'ERP /\nGateway', x: 780, y: 100, color: '#10b981' },
+              ],
+              edges: [
+                { from: 'action', to: 'meter', label: 'msg enviada', animated: true },
+                { from: 'meter', to: 'plan', label: 'verifica limite', animated: true },
+                { from: 'meter', to: 'invoice', label: 'excedente', animated: true },
+                { from: 'invoice', to: 'webhook', label: 'evento', animated: true },
+                { from: 'webhook', to: 'erp', label: 'HMAC-SHA256', animated: true },
+              ],
+              viewBox: { w: 900, h: 220 },
+            } as ContentBlock,
             {
               type: 'comparison-table',
               columns: [
@@ -328,24 +422,24 @@ export const buildingBlocksCourse: Course = {
                 { label: 'Advanced Webhooks' },
               ],
               rows: [
-                { feature: 'Propósito', values: ['', 'Gerenciar planos e cobranças', 'Entregar eventos externamente'] },
-                { feature: 'Metering', values: ['', 'Sim (por uso, por assento)', 'Não aplicável'] },
-                { feature: 'Retry automático', values: ['', 'Não (cobrança é síncrona)', 'Sim (até 10 tentativas)'] },
-                { feature: 'HMAC-SHA256', values: ['', 'Não', 'Sim (verificação de autenticidade)'] },
-                { feature: 'Dashboard de logs', values: ['', 'Faturas e pagamentos', 'Histórico de entregas'] },
-                { feature: 'Integração nativa', values: ['', 'Stripe, PagSeguro, Asaas', 'Qualquer endpoint HTTPS'] },
+                { feature: 'Proposito', values: ['', 'Gerenciar planos e cobrancas', 'Entregar eventos externamente'] },
+                { feature: 'Metering', values: ['', 'Sim (por uso, por assento)', 'Nao aplicavel'] },
+                { feature: 'Retry automatico', values: ['', 'Nao (cobranca e sincrona)', 'Sim (ate 10 tentativas)'] },
+                { feature: 'HMAC-SHA256', values: ['', 'Nao', 'Sim (verificacao de autenticidade)'] },
+                { feature: 'Dashboard de logs', values: ['', 'Faturas e pagamentos', 'Historico de entregas'] },
+                { feature: 'Integracao nativa', values: ['', 'Stripe, PagSeguro, Asaas', 'Qualquer endpoint HTTPS'] },
               ],
             } as ContentBlock,
             {
               type: 'step-by-step',
               steps: [
                 {
-                  title: 'Configure seu plano de cobrança',
-                  description: 'Em Configurações → Billing, crie um plano com nome, preço base, ciclo (mensal/anual) e limites de uso. Exemplo: "Plano Pro — R$ 299/mês — até 5 dispositivos WhatsApp".',
+                  title: 'Configure seu plano de cobranca',
+                  description: 'Em Configuracoes -> Billing, crie um plano com nome, preco base, ciclo (mensal/anual) e limites de uso. Exemplo: "Plano Pro -- R$ 299/mes -- ate 5 dispositivos WhatsApp".',
                 },
                 {
                   title: 'Ative a metering por uso',
-                  description: 'Para cobrança variável, ative "Metering". Defina as métricas que serão contadas: mensagens enviadas, leads criados, workflows executados. Configure o preço por unidade excedente.',
+                  description: 'Para cobranca variavel, ative "Metering". Defina as metricas que serao contadas: mensagens enviadas, leads criados, workflows executados. Configure o preco por unidade excedente.',
                 },
                 {
                   title: 'Configure o webhook de billing',
@@ -353,20 +447,35 @@ export const buildingBlocksCourse: Course = {
                 },
                 {
                   title: 'Teste o fluxo completo',
-                  description: 'Use o modo teste do Billing para simular uma cobrança. Verifique nos logs do Advanced Webhook se o evento foi entregue com sucesso ao endpoint configurado.',
+                  description: 'Use o modo teste do Billing para simular uma cobranca. Verifique nos logs do Advanced Webhook se o evento foi entregue com sucesso ao endpoint configurado.',
                 },
               ],
             } as ContentBlock,
             {
-              type: 'callout',
-              variant: 'pro-tip',
-              title: 'Assinatura HMAC nos webhooks',
-              text: 'Sempre valide a assinatura HMAC-SHA256 nos seus endpoints que recebem Advanced Webhooks. O header "X-Catalisa-Signature" contém o hash do payload. Isso garante que os eventos vieram realmente da Catalisa e não de terceiros mal-intencionados.',
-            },
+              type: 'sandbox',
+              variant: 'webhook-config',
+              instructions: 'Configure um Advanced Webhook para receber eventos de billing. Defina: 1) URL do endpoint (ex: https://seu-erp.com/webhooks/catalisa) 2) Eventos a escutar: payment.succeeded, invoice.overdue 3) Secret para assinatura HMAC 4) Numero maximo de retries (1-10). Valide que o webhook esta funcional.',
+              validation: {
+                type: 'contains',
+                expected: {
+                  url: 'https://',
+                  events: ['payment.succeeded'],
+                  secret: true,
+                },
+              },
+              solution: {
+                url: 'https://seu-erp.com/webhooks/catalisa',
+                events: ['payment.succeeded', 'invoice.overdue'],
+                secret: 'whsec_minha_chave_secreta_32chars_min',
+                maxRetries: 5,
+                headers: { 'Content-Type': 'application/json' },
+              },
+              xpReward: 25,
+            } as ContentBlock,
             {
               type: 'code',
               language: 'typescript',
-              text: `// Validação de HMAC-SHA256 no seu endpoint (Node.js/Express)
+              text: `// Validacao de HMAC-SHA256 no seu endpoint (Node.js/Express)
 import crypto from 'crypto';
 
 app.post('/webhooks/catalisa', (req, res) => {
@@ -382,7 +491,7 @@ app.post('/webhooks/catalisa', (req, res) => {
     return res.status(401).json({ error: 'Invalid signature' });
   }
 
-  // Processar o evento com segurança
+  // Processar o evento com seguranca
   const { event, data } = req.body;
   if (event === 'payment.succeeded') {
     console.log('Pagamento confirmado:', data.invoiceId);
@@ -407,7 +516,7 @@ app.post('/webhooks/catalisa', (req, res) => {
             },
             {
               type: 'paragraph',
-              text: 'O bloco de E-Signature permite coletar assinaturas digitais juridicamente válidas dentro de workflows. Feature Flags controlam quais funcionalidades estão ativas para cada segmento de usuários, permitindo rollouts graduais e testes A/B.',
+              text: 'O bloco de E-Signature coleta assinaturas digitais dentro de workflows. Feature Flags controlam rollouts graduais e testes A/B por segmento.',
             },
             {
               type: 'diagram-animated',
@@ -418,7 +527,7 @@ app.post('/webhooks/catalisa', (req, res) => {
                 { id: 'esign', label: 'E-Signature\nBloco', x: 420, y: 100, color: '#0d9488', w: 120 },
                 { id: 'aguarda', label: 'Aguarda\nAssinatura', x: 420, y: 220, color: '#f59e0b' },
                 { id: 'signed', label: 'Contrato\nAssinado', x: 600, y: 100, color: '#10b981' },
-                { id: 'billing', label: 'Ativar Billing\n(cobrança)', x: 780, y: 100, color: '#6366f1' },
+                { id: 'billing', label: 'Ativar Billing\n(cobranca)', x: 780, y: 100, color: '#6366f1' },
               ],
               edges: [
                 { from: 'lead', to: 'contrato', animated: true },
@@ -430,9 +539,43 @@ app.post('/webhooks/catalisa', (req, res) => {
               viewBox: { w: 940, h: 300 },
             } as ContentBlock,
             {
-              type: 'paragraph',
-              text: 'Feature Flags são chaves booleanas (ou com variantes) que controlam o comportamento da plataforma sem deploy. Elas podem ser segmentadas por organização, plano, usuário específico ou percentual de tráfego.',
-            },
+              type: 'diagram-animated',
+              variant: 'sequence',
+              nodes: [
+                { id: 'client', label: 'Aplicacao\nCliente', x: 60, y: 30, color: '#0d9488' },
+                { id: 'ff-service', label: 'Feature Flags\nService', x: 280, y: 30, color: '#0f766e', w: 140 },
+                { id: 'targeting', label: 'Targeting\nRules', x: 500, y: 30, color: '#6366f1' },
+                { id: 'client2', label: 'Aplicacao\nCliente', x: 60, y: 160, color: '#0d9488' },
+                { id: 'result-on', label: 'Feature\nAtiva', x: 280, y: 160, color: '#10b981' },
+                { id: 'result-off', label: 'Feature\nInativa', x: 500, y: 160, color: '#ef4444' },
+              ],
+              edges: [
+                { from: 'client', to: 'ff-service', label: 'check flag', animated: true },
+                { from: 'ff-service', to: 'targeting', label: 'avalia regras', animated: true },
+                { from: 'targeting', to: 'result-on', label: 'beta-tester', animated: true },
+                { from: 'targeting', to: 'result-off', label: 'fora do rollout', animated: true },
+                { from: 'result-on', to: 'client2', label: 'true', animated: true },
+                { from: 'result-off', to: 'client2', label: 'false', animated: true },
+              ],
+              viewBox: { w: 640, h: 230 },
+            } as ContentBlock,
+            {
+              type: 'accordion-faq',
+              items: [
+                {
+                  question: 'O que sao Feature Flags?',
+                  answer: 'Chaves booleanas (ou com variantes) que controlam o comportamento da plataforma sem deploy. Podem ser segmentadas por organizacao, plano, usuario especifico ou percentual de trafego.',
+                },
+                {
+                  question: 'Como funciona o rollout gradual?',
+                  answer: 'Voce define um percentual (ex: 20%) e a Feature Flag e avaliada em runtime para cada usuario. Apenas a fracao configurada recebe o novo comportamento, permitindo validar funcionalidades com risco controlado.',
+                },
+                {
+                  question: 'Posso usar Feature Flags em workflows?',
+                  answer: 'Sim. A acao CONDITIONAL pode verificar o valor de uma Feature Flag para decidir qual caminho do workflow executar, permitindo comportamento diferenciado sem alterar o workflow.',
+                },
+              ],
+            } as ContentBlock,
             {
               type: 'code',
               language: 'json',
@@ -462,7 +605,7 @@ app.post('/webhooks/catalisa', (req, res) => {
             {
               type: 'sandbox',
               variant: 'workflow-builder',
-              instructions: 'Monte um workflow que: 1) É disparado quando um Lead é aprovado 2) Gera e envia um contrato via E-Signature 3) Aguarda o evento de assinatura (wait state) 4) Quando assinado, atualiza o Lead para status "Cliente" e dispara o Billing. Use o sandbox para arrastar e conectar os blocos.',
+              instructions: 'Monte um workflow que: 1) E disparado quando um Lead e aprovado 2) Gera e envia um contrato via E-Signature 3) Aguarda o evento de assinatura (wait state) 4) Quando assinado, atualiza o Lead para status "Cliente" e dispara o Billing. Use o sandbox para arrastar e conectar os blocos.',
               validation: {
                 type: 'contains',
                 expected: {
@@ -484,13 +627,13 @@ app.post('/webhooks/catalisa', (req, res) => {
               type: 'quiz',
               quizId: 'bb-flags-q1',
               variant: 'true-false',
-              question: 'Verdadeiro ou Falso: Feature Flags permitem ativar uma nova funcionalidade apenas para 10% dos usuários sem precisar fazer um novo deploy da aplicação.',
+              question: 'Verdadeiro ou Falso: Feature Flags permitem ativar uma nova funcionalidade apenas para 10% dos usuarios sem precisar fazer um novo deploy da aplicacao.',
               options: [
                 { label: 'Verdadeiro', value: 'true' },
                 { label: 'Falso', value: 'false' },
               ],
               correctAnswer: 'true',
-              explanation: 'Exatamente! Feature Flags são avaliados em runtime. A configuração de rollout percentual distribui o novo comportamento para a fração configurada dos usuários sem nenhum deploy adicional. Isso permite validar funcionalidades gradualmente com risco controlado.',
+              explanation: 'Exatamente! Feature Flags sao avaliados em runtime. A configuracao de rollout percentual distribui o novo comportamento para a fracao configurada dos usuarios sem nenhum deploy adicional.',
               xpBonus: 15,
             } as ContentBlock,
           ],

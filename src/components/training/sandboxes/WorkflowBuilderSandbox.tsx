@@ -4,6 +4,7 @@ import {
 } from '@chakra-ui/react';
 import { FiZap, FiMessageSquare, FiClock, FiCpu, FiPlus, FiX, FiGitBranch, FiUser } from 'react-icons/fi';
 import { MotionBox } from '../../motion';
+import { validateSandbox } from './validateSandbox';
 
 const palette = [
   { id: 'trigger-lead', label: 'Lead Criado', icon: FiZap, color: 'green', type: 'trigger' },
@@ -30,7 +31,7 @@ interface Props {
   solution?: Record<string, unknown>;
 }
 
-export function WorkflowBuilderSandbox({ onValidate }: Props) {
+export function WorkflowBuilderSandbox({ validation, onValidate }: Props) {
   const [nodes, setNodes] = useState<WorkflowNode[]>([]);
 
   const addNode = (item: typeof palette[0]) => {
@@ -44,7 +45,12 @@ export function WorkflowBuilderSandbox({ onValidate }: Props) {
 
   const hasTrigger = nodes.some(n => n.type === 'trigger');
   const hasActions = nodes.filter(n => n.type === 'action').length >= 2;
-  const isValid = hasTrigger && hasActions;
+  const isValid = (() => {
+    if (validation && validation.type !== 'custom') {
+      return validateSandbox(validation, { nodes: nodes.map(n => n.label), hasTrigger, actionCount: nodes.filter(n => n.type === 'action').length });
+    }
+    return hasTrigger && hasActions;
+  })();
 
   return (
     <VStack spacing={4} align="stretch">

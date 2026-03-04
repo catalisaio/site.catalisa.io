@@ -1,7 +1,7 @@
-import { lazy, Suspense } from 'react';
+import { lazy, Suspense, useMemo } from 'react';
 import {
   Box, Heading, Text, VStack, UnorderedList, OrderedList,
-  ListItem, Alert, AlertIcon, Code, Spinner, Center,
+  ListItem, Alert, AlertIcon, Code, Spinner, Center, Badge,
 } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
 import type { ContentBlock } from '../../data/trainingBlockTypes';
@@ -29,6 +29,27 @@ interface LessonContentProps {
   lessonSlug?: string;
   contentBlocks?: ContentBlock[];
 }
+
+const INTERACTIVE_TYPES = new Set([
+  'mockui', 'sandbox', 'interactive-demo', 'diagram-animated',
+  'comparison-table', 'step-by-step', 'quiz',
+]);
+
+const TEXT_TYPES = new Set([
+  'paragraph', 'heading', 'list', 'alert', 'code', 'callout',
+]);
+
+function isInteractive(type: string) {
+  return INTERACTIVE_TYPES.has(type);
+}
+
+const sectionLabels: Record<string, { label: string; color: string }> = {
+  'mockui': { label: 'Explore', color: 'purple' },
+  'sandbox': { label: 'Pratique', color: 'purple' },
+  'quiz': { label: 'Teste seu conhecimento', color: 'teal' },
+  'interactive-demo': { label: 'Explore', color: 'purple' },
+  'step-by-step': { label: 'Passo a passo', color: 'blue' },
+};
 
 function LazyWrapper({ children }: { children: React.ReactNode }) {
   return (
@@ -118,7 +139,6 @@ function renderBlock(block: ContentBlock, i: number, context?: { courseSlug?: st
 export function LessonContent({ contentKey, courseSlug, moduleSlug, lessonSlug, contentBlocks }: LessonContentProps) {
   const { t } = useTranslation('training');
 
-  // Use contentBlocks from props (TypeScript data) or fall back to i18n JSON
   const blocks: ContentBlock[] = contentBlocks
     || (t(contentKey, { returnObjects: true }) as ContentBlock[]);
 
@@ -132,9 +152,69 @@ export function LessonContent({ contentKey, courseSlug, moduleSlug, lessonSlug, 
 
   const context = { courseSlug, moduleSlug, lessonSlug };
 
+  // Compute spacing and section labels
+  const enrichedBlocks = useMemo(() => {
+    return blocks.map((block, i) => {
+      const prevBlock = i > 0 ? blocks[i - 1] : null;
+      const currInteractive = isInteractive(block.type);
+      const prevInteractive = prevBlock ? isInteractive(prevBlock.type) : false;
+      const prevText = prevBlock ? TEXT_TYPES.has(prevBlock.type) : false;
+
+      // Variable spacing
+      let spacingBefore = 4;
+      if (prevText && currInteractive) spacingBefore = 8;
+      if (prevInteractive && !currInteractive) spacingBefore = 8;
+      if (!currInteractive && prevText) spacingBefore = 3;
+
+      // Section label
+      const showLabel = currInteractive && !prevInteractive;
+      const labelConfig = sectionLabels[block.type];
+
+      return { block, spacingBefore, showLabel, labelConfig, index: i };
+    });
+  }, [blocks]);
+
   return (
-    <VStack align="flex-start" spacing={4} w="full">
-      {blocks.map((block, i) => renderBlock(block, i, context))}
+    <VStack align="stretch" spacing={0} w="full">
+      {enrichedBlocks.map(({ block, spacingBefore, showLabel, labelConfig, index }) => {
+        const interactive = isInteractive(block.type);
+
+        return (
+          <Box key={index} mt={index > 0 ? spacingBefore : 0}>
+            {/* Section label before interactive blocks */}
+            {showLabel && labelConfig && (
+              <Badge
+                colorScheme={labelConfig.color}
+                fontSize="2xs"
+                textTransform="uppercase"
+                letterSpacing="wide"
+                mb={2}
+              >
+                {labelConfig.label}
+              </Badge>
+            )}
+
+            {/* Block wrapper */}
+            {interactive ? (
+              <Box
+                borderLeft="3px solid"
+                borderColor={block.type === 'quiz' ? 'teal.300' : 'purple.300'}
+                bg="white"
+                borderRadius="lg"
+                boxShadow="sm"
+                p={5}
+                overflow="hidden"
+              >
+                {renderBlock(block, index, context)}
+              </Box>
+            ) : (
+              <Box maxW="720px" mx="auto" w="full">
+                {renderBlock(block, index, context)}
+              </Box>
+            )}
+          </Box>
+        );
+      })}
     </VStack>
   );
 }

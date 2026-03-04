@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { Box, Flex, Text, Input, IconButton, VStack, HStack, Icon, Badge } from '@chakra-ui/react';
 import { FiSend, FiZap, FiX } from 'react-icons/fi';
 import { MotionBox } from '../../motion';
+import { hp, type MockScreenProps } from './highlightUtils';
 
 interface ChatMessage {
   role: 'assistant' | 'user';
@@ -18,12 +19,7 @@ const demoConversation: ChatMessage[] = [
   },
 ];
 
-interface Props {
-  initialData?: Record<string, unknown>;
-  activeStepId?: string;
-}
-
-export function MockAIAssistant({ activeStepId }: Props) {
+export function MockAIAssistant({ activeStepId, onStepAction }: MockScreenProps) {
   const [isOpen, setIsOpen] = useState(true);
   const [messages, setMessages] = useState(demoConversation.slice(0, 1));
   const [input, setInput] = useState('');
@@ -51,7 +47,7 @@ export function MockAIAssistant({ activeStepId }: Props) {
       <Flex justify="center" align="center" minH="300px" bg="gray.50">
         <MotionBox
           as="button"
-          onClick={() => setIsOpen(true)}
+          onClick={() => { setIsOpen(true); onStepAction?.(); }}
           bg="purple.500"
           color="white"
           borderRadius="full"
@@ -60,8 +56,7 @@ export function MockAIAssistant({ activeStepId }: Props) {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
           boxShadow="lg"
-          id="btn-open-assistant"
-          sx={activeStepId === 'btn-open-assistant' ? { boxShadow: '0 0 0 4px rgba(115,75,156,0.4)' } : undefined}
+          {...hp(activeStepId, 'btn-open-assistant', onStepAction)}
         >
           <Icon as={FiZap} boxSize={5} />
         </MotionBox>
@@ -99,7 +94,9 @@ export function MockAIAssistant({ activeStepId }: Props) {
         </Flex>
 
         {/* Messages */}
-        <VStack flex={1} overflowY="auto" p={2} spacing={2} align="stretch">
+        <VStack flex={1} overflowY="auto" p={2} spacing={2} align="stretch"
+          {...hp(activeStepId, 'assistant-chat-area', onStepAction)}
+        >
           {messages.map((msg, i) => (
             <MotionBox
               key={i}
@@ -154,6 +151,7 @@ export function MockAIAssistant({ activeStepId }: Props) {
             onChange={e => setInput(e.target.value)}
             onKeyDown={e => e.key === 'Enter' && handleSend()}
             borderRadius="md"
+            {...hp(activeStepId, 'assistant-input', onStepAction)}
           />
           <IconButton
             aria-label="Enviar"

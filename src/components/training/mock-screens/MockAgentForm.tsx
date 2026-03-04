@@ -6,6 +6,7 @@ import {
   Stepper, useSteps,
 } from '@chakra-ui/react';
 import { FiCheck, FiCpu } from 'react-icons/fi';
+import { hp, type MockScreenProps } from './highlightUtils';
 
 const steps = [
   { title: 'Informacoes Basicas' },
@@ -13,12 +14,7 @@ const steps = [
   { title: 'Ferramentas' },
 ];
 
-interface Props {
-  initialData?: Record<string, unknown>;
-  activeStepId?: string;
-}
-
-export function MockAgentForm({ activeStepId }: Props) {
+export function MockAgentForm({ activeStepId, onStepAction }: MockScreenProps) {
   const { activeStep, setActiveStep } = useSteps({ index: 0, count: steps.length });
   const [name, setName] = useState('');
   const [description, setDescription] = useState('');
@@ -53,14 +49,14 @@ export function MockAgentForm({ activeStepId }: Props) {
         {/* Step 1: Basic Info */}
         {activeStep === 0 && (
           <VStack spacing={3} align="stretch">
-            <FormControl id="agent-name" size="sm">
+            <FormControl size="sm">
               <FormLabel fontSize="xs" fontWeight="600">Nome do Agente</FormLabel>
               <Input
                 size="sm"
                 placeholder="Ex: Assistente de Vendas"
                 value={name}
                 onChange={e => setName(e.target.value)}
-                boxShadow={activeStepId === 'agent-name' ? '0 0 0 3px rgba(115,75,156,0.4)' : undefined}
+                {...hp(activeStepId, 'field-name', onStepAction)}
               />
             </FormControl>
             <FormControl size="sm">
@@ -71,11 +67,12 @@ export function MockAgentForm({ activeStepId }: Props) {
                 rows={3}
                 value={description}
                 onChange={e => setDescription(e.target.value)}
+                {...hp(activeStepId, 'field-description', onStepAction)}
               />
             </FormControl>
             <FormControl size="sm">
               <FormLabel fontSize="xs" fontWeight="600">Modelo</FormLabel>
-              <Select size="sm" defaultValue="haiku">
+              <Select size="sm" defaultValue="haiku" {...hp(activeStepId, 'field-model', onStepAction)}>
                 <option value="haiku">Claude Haiku (Rapido)</option>
                 <option value="sonnet">Claude Sonnet (Equilibrado)</option>
               </Select>
@@ -92,11 +89,12 @@ export function MockAgentForm({ activeStepId }: Props) {
                 size="sm"
                 placeholder="Voce e um assistente especializado em..."
                 rows={5}
+                {...hp(activeStepId, 'field-system-prompt', onStepAction)}
               />
             </FormControl>
             <FormControl size="sm">
               <FormLabel fontSize="xs" fontWeight="600">Tom de Comunicacao</FormLabel>
-              <Select size="sm" defaultValue="professional">
+              <Select size="sm" defaultValue="professional" {...hp(activeStepId, 'field-tone', onStepAction)}>
                 <option value="professional">Profissional</option>
                 <option value="friendly">Amigavel</option>
                 <option value="formal">Formal</option>
@@ -107,7 +105,7 @@ export function MockAgentForm({ activeStepId }: Props) {
 
         {/* Step 3: Tools */}
         {activeStep === 2 && (
-          <VStack spacing={2} align="stretch">
+          <VStack spacing={2} align="stretch" {...hp(activeStepId, 'tool-list', onStepAction)}>
             <Text fontSize="xs" color="gray.500" mb={2}>Selecione as ferramentas que o agente pode usar:</Text>
             {['Buscar Lead', 'Enviar Mensagem', 'Criar Lead', 'Consultar Workflow'].map((tool, i) => (
               <HStack
@@ -141,8 +139,7 @@ export function MockAgentForm({ activeStepId }: Props) {
             size="xs"
             colorScheme="purple"
             onClick={() => setActiveStep(Math.min(activeStep + 1, 2))}
-            id="btn-next-step"
-            boxShadow={activeStepId === 'btn-next-step' ? '0 0 0 3px rgba(115,75,156,0.4)' : undefined}
+            {...hp(activeStepId, 'btn-next-step', onStepAction)}
           >
             {activeStep === 2 ? 'Criar Agente' : 'Proximo'}
           </Button>

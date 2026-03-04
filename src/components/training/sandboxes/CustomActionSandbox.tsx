@@ -4,6 +4,7 @@ import {
   FormControl, FormLabel, Code, Badge,
 } from '@chakra-ui/react';
 import { useTrainingSandbox } from '../../../hooks/useTrainingSandbox';
+import { validateSandbox, isValidUrl, isValidJson } from './validateSandbox';
 
 interface ActionConfig {
   method: string;
@@ -34,7 +35,7 @@ interface Props {
   solution?: Record<string, unknown>;
 }
 
-export function CustomActionSandbox({ onValidate }: Props) {
+export function CustomActionSandbox({ validation, onValidate }: Props) {
   const { state, saveState } = useTrainingSandbox<ActionConfig>('custom-action', defaultConfig);
   const [showPreview, setShowPreview] = useState(false);
 
@@ -50,7 +51,12 @@ export function CustomActionSandbox({ onValidate }: Props) {
     return result;
   }, [state.body]);
 
-  const isValid = state.url.length > 5 && state.body.includes('{{');
+  const isValid = (() => {
+    if (validation && validation.type !== 'custom') {
+      return validateSandbox(validation, state);
+    }
+    return isValidUrl(state.url) && state.body.includes('{{') && isValidJson(state.body.replace(/\{\{[^}]+\}\}/g, '"placeholder"'));
+  })();
 
   return (
     <VStack spacing={3} align="stretch">

@@ -1,5 +1,5 @@
 import {
-  Container, Heading, Text, VStack, HStack, Button, Icon, Badge, Breadcrumb, BreadcrumbItem, BreadcrumbLink, Flex, Box,
+  Container, Heading, Text, VStack, HStack, Button, Icon, Badge, Breadcrumb, BreadcrumbItem, BreadcrumbLink, Flex, Box, Progress,
 } from '@chakra-ui/react';
 import { FiChevronRight, FiChevronLeft, FiCheckCircle, FiClock } from 'react-icons/fi';
 import { Link, useParams, Navigate, useNavigate } from 'react-router-dom';
@@ -33,23 +33,23 @@ function LessonPageContent() {
 
   const completed = isLessonComplete(course.slug, mod.slug, lesson.slug);
 
-  // Find next lesson (in this module or next module)
-  const getAdjacentLesson = (direction: 'prev' | 'next') => {
-    const allLessons: { moduleSlug: string; lessonSlug: string }[] = [];
-    for (const m of course.modules) {
-      for (const l of m.lessons) {
-        allLessons.push({ moduleSlug: m.slug, lessonSlug: l.slug });
-      }
+  // Find all lessons and current position
+  const allLessons: { moduleSlug: string; lessonSlug: string }[] = [];
+  for (const m of course.modules) {
+    for (const l of m.lessons) {
+      allLessons.push({ moduleSlug: m.slug, lessonSlug: l.slug });
     }
-    const currentIndex = allLessons.findIndex(
-      (l) => l.moduleSlug === mod.slug && l.lessonSlug === lesson.slug,
-    );
-    const targetIndex = direction === 'next' ? currentIndex + 1 : currentIndex - 1;
-    return allLessons[targetIndex] || null;
-  };
+  }
+  const currentIndex = allLessons.findIndex(
+    (l) => l.moduleSlug === mod.slug && l.lessonSlug === lesson.slug,
+  );
 
-  const prevLesson = getAdjacentLesson('prev');
-  const nextLesson = getAdjacentLesson('next');
+  const prevLesson = currentIndex > 0 ? allLessons[currentIndex - 1] : null;
+  const nextLesson = currentIndex < allLessons.length - 1 ? allLessons[currentIndex + 1] : null;
+
+  // Progress
+  const progressPercent = allLessons.length > 0 ? ((currentIndex + 1) / allLessons.length) * 100 : 0;
+  const blockCount = lesson.contentBlocks?.length || 0;
 
   const contentKey = `content.${course.slug}.${mod.slug}.${lesson.slug}`;
 
@@ -61,34 +61,54 @@ function LessonPageContent() {
   };
 
   return (
-    <Container maxW="800px" py={12}>
-      <VStack spacing={8} align="stretch">
-        <Breadcrumb separator={<FiChevronRight />} fontSize="sm" color="gray.500">
-          <BreadcrumbItem>
-            <BreadcrumbLink as={Link} to={lp('/treinamento')}>{t('catalog.heading')}</BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbItem>
-            <BreadcrumbLink as={Link} to={lp(`/treinamento/${course.slug}`)}>
-              {t(course.titleKey)}
-            </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbItem isCurrentPage>
-            <BreadcrumbLink>{t(lesson.titleKey)}</BreadcrumbLink>
-          </BreadcrumbItem>
-        </Breadcrumb>
+    <Box bg="gray.50" minH="100vh">
+      {/* Fixed Progress Bar */}
+      <Box position="sticky" top={0} zIndex={10} bg="white" borderBottom="1px solid" borderColor="gray.100">
+        <Progress
+          value={progressPercent}
+          size="xs"
+          colorScheme="purple"
+          bg="gray.100"
+        />
+        <Flex maxW="1100px" mx="auto" px={6} py={2} align="center" justify="space-between">
+          <Text fontSize="2xs" color="gray.500">
+            Licao {currentIndex + 1} de {allLessons.length}
+            {blockCount > 0 && ` \u00B7 ${blockCount} blocos`}
+          </Text>
+          <Text fontSize="2xs" color="gray.500">
+            {Math.round(progressPercent)}% concluido
+          </Text>
+        </Flex>
+      </Box>
 
-        <VStack align="flex-start" spacing={2}>
-          <HStack spacing={2}>
-            <Badge colorScheme="blue" fontSize="xs">{t(mod.titleKey)}</Badge>
-            <HStack spacing={1} color="gray.400" fontSize="xs">
-              <Icon as={FiClock} boxSize={3} />
-              <Text>{lesson.durationMin} min</Text>
+      <Container maxW="1100px" py={8} px={6}>
+        <VStack spacing={6} align="stretch">
+          <Breadcrumb separator={<FiChevronRight />} fontSize="sm" color="gray.500">
+            <BreadcrumbItem>
+              <BreadcrumbLink as={Link} to={lp('/treinamento')}>{t('catalog.heading')}</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbItem>
+              <BreadcrumbLink as={Link} to={lp(`/treinamento/${course.slug}`)}>
+                {t(course.titleKey)}
+              </BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbItem isCurrentPage>
+              <BreadcrumbLink>{t(lesson.titleKey)}</BreadcrumbLink>
+            </BreadcrumbItem>
+          </Breadcrumb>
+
+          <VStack align="flex-start" spacing={2}>
+            <HStack spacing={2}>
+              <Badge colorScheme="blue" fontSize="xs">{t(mod.titleKey)}</Badge>
+              <HStack spacing={1} color="gray.400" fontSize="xs">
+                <Icon as={FiClock} boxSize={3} />
+                <Text>{lesson.durationMin} min</Text>
+              </HStack>
             </HStack>
-          </HStack>
-          <Heading size="md">{t(lesson.titleKey)}</Heading>
-        </VStack>
+            <Heading size="md">{t(lesson.titleKey)}</Heading>
+          </VStack>
 
-        <Box bg="white" p={6} borderRadius="xl" border="1px solid" borderColor="gray.200">
+          {/* Lesson Content - no wrapper card, each block has its own styling */}
           <LessonContent
             contentKey={contentKey}
             contentBlocks={lesson.contentBlocks}
@@ -96,55 +116,55 @@ function LessonPageContent() {
             moduleSlug={mod.slug}
             lessonSlug={lesson.slug}
           />
-        </Box>
 
-        <Flex justify="space-between" align="center" pt={4}>
-          {prevLesson ? (
-            <Button
-              as={Link}
-              to={lp(`/treinamento/${course.slug}/${prevLesson.moduleSlug}/${prevLesson.lessonSlug}`)}
-              variant="ghost"
-              leftIcon={<FiChevronLeft />}
-              size="sm"
-            >
-              {t('lesson.previous')}
-            </Button>
-          ) : (
-            <Box />
-          )}
+          <Flex justify="space-between" align="center" pt={4}>
+            {prevLesson ? (
+              <Button
+                as={Link}
+                to={lp(`/treinamento/${course.slug}/${prevLesson.moduleSlug}/${prevLesson.lessonSlug}`)}
+                variant="ghost"
+                leftIcon={<FiChevronLeft />}
+                size="sm"
+              >
+                {t('lesson.previous')}
+              </Button>
+            ) : (
+              <Box />
+            )}
 
-          {completed ? (
-            <HStack spacing={2} color="green.500" fontSize="sm">
-              <Icon as={FiCheckCircle} />
-              <Text fontWeight="600">{t('lesson.completed')}</Text>
-            </HStack>
-          ) : (
-            <Button
-              colorScheme="green"
-              onClick={handleComplete}
-              rightIcon={nextLesson ? <FiChevronRight /> : undefined}
-              size="sm"
-            >
-              {nextLesson ? t('lesson.completeAndNext') : t('lesson.markComplete')}
-            </Button>
-          )}
+            {completed ? (
+              <HStack spacing={2} color="green.500" fontSize="sm">
+                <Icon as={FiCheckCircle} />
+                <Text fontWeight="600">{t('lesson.completed')}</Text>
+              </HStack>
+            ) : (
+              <Button
+                colorScheme="green"
+                onClick={handleComplete}
+                rightIcon={nextLesson ? <FiChevronRight /> : undefined}
+                size="sm"
+              >
+                {nextLesson ? t('lesson.completeAndNext') : t('lesson.markComplete')}
+              </Button>
+            )}
 
-          {nextLesson && completed ? (
-            <Button
-              as={Link}
-              to={lp(`/treinamento/${course.slug}/${nextLesson.moduleSlug}/${nextLesson.lessonSlug}`)}
-              variant="ghost"
-              rightIcon={<FiChevronRight />}
-              size="sm"
-            >
-              {t('lesson.next')}
-            </Button>
-          ) : (
-            <Box />
-          )}
-        </Flex>
-      </VStack>
-    </Container>
+            {nextLesson && completed ? (
+              <Button
+                as={Link}
+                to={lp(`/treinamento/${course.slug}/${nextLesson.moduleSlug}/${nextLesson.lessonSlug}`)}
+                variant="ghost"
+                rightIcon={<FiChevronRight />}
+                size="sm"
+              >
+                {t('lesson.next')}
+              </Button>
+            ) : (
+              <Box />
+            )}
+          </Flex>
+        </VStack>
+      </Container>
+    </Box>
   );
 }
 

@@ -345,7 +345,6 @@ function SlideNavigation({
   onNext,
   onGoTo,
   onComplete,
-  isCompleted,
 }: SlideNavigationProps) {
   return (
     <Box

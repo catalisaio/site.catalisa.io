@@ -1,7 +1,14 @@
+import type { ContentBlock } from './trainingBlockTypes';
+import { allCourses } from './courses';
+
 export interface Lesson {
   slug: string;
   titleKey: string;
   durationMin: number;
+  interactivity?: 'low' | 'medium' | 'high';
+  xpPoints?: number;
+  quizRequired?: boolean;
+  contentBlocks?: ContentBlock[];
 }
 
 export interface Module {
@@ -9,6 +16,7 @@ export interface Module {
   titleKey: string;
   descriptionKey: string;
   lessons: Lesson[];
+  badgeSlug?: string;
 }
 
 export interface Course {
@@ -19,9 +27,17 @@ export interface Course {
   modules: Module[];
   available: boolean;
   badge?: string;
+  track?: 'basico' | 'avancado' | 'especialista';
+  audience?: 'cliente' | 'parceiro' | 'todos';
+  difficulty?: 'iniciante' | 'intermediario' | 'avancado';
+  prerequisites?: string[];
+  iconKey?: string;
+  colorScheme?: string;
+  totalXP?: number;
 }
 
 export const courses: Course[] = [
+  ...allCourses,
   {
     slug: 'iso-42001-ai-ethics',
     titleKey: 'courses.iso42001.title',

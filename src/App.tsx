@@ -46,6 +46,9 @@ const TrainingLogin = lazy(() => import('./pages/training/TrainingLogin').then(m
 const TrainingCatalog = lazy(() => import('./pages/training/TrainingCatalog').then(m => ({ default: m.TrainingCatalog })));
 const CourseDetail = lazy(() => import('./pages/training/CourseDetail').then(m => ({ default: m.CourseDetail })));
 const LessonPage = lazy(() => import('./pages/training/LessonPage').then(m => ({ default: m.LessonPage })));
+const TrainingTracks = lazy(() => import('./pages/training/TrainingTracks').then(m => ({ default: m.TrainingTracks })));
+const TrainingProfile = lazy(() => import('./pages/training/TrainingProfile').then(m => ({ default: m.TrainingProfile })));
+const TrainingCertificate = lazy(() => import('./pages/training/TrainingCertificate').then(m => ({ default: m.TrainingCertificate })));
 const NotFound = lazy(() => import('./pages/NotFound').then(m => ({ default: m.NotFound })));
 
 function PageLoader() {
@@ -133,6 +136,9 @@ function App() {
                 <Route path="/transparencia-ia" element={<AITransparency />} />
                 <Route path="/treinamento/login" element={<TrainingLogin />} />
                 <Route path="/treinamento" element={<TrainingCatalog />} />
+                <Route path="/treinamento/trilhas" element={<TrainingTracks />} />
+                <Route path="/treinamento/perfil" element={<TrainingProfile />} />
+                <Route path="/treinamento/certificado/:certId" element={<TrainingCertificate />} />
                 <Route path="/treinamento/:courseSlug" element={<CourseDetail />} />
                 <Route path="/treinamento/:courseSlug/:moduleSlug/:lessonSlug" element={<LessonPage />} />
                 <Route path="/apresentacao/login" element={<PresentationLogin />} />
@@ -172,6 +178,9 @@ function App() {
                 <Route path="ai-transparency" element={<AITransparency />} />
                 <Route path="training/login" element={<TrainingLogin />} />
                 <Route path="training" element={<TrainingCatalog />} />
+                <Route path="training/tracks" element={<TrainingTracks />} />
+                <Route path="training/profile" element={<TrainingProfile />} />
+                <Route path="training/certificate/:certId" element={<TrainingCertificate />} />
                 <Route path="training/:courseSlug" element={<CourseDetail />} />
                 <Route path="training/:courseSlug/:moduleSlug/:lessonSlug" element={<LessonPage />} />
                 <Route path="presentation/login" element={<PresentationLogin />} />

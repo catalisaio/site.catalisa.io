@@ -32,6 +32,7 @@ const InvestorPresentation = lazy(() => import('./pages/InvestorPresentation').t
 const RetailPresentation = lazy(() => import('./pages/RetailPresentation').then(m => ({ default: m.RetailPresentation })));
 const FintechPresentation = lazy(() => import('./pages/FintechPresentation').then(m => ({ default: m.FintechPresentation })));
 const InsurancePresentation = lazy(() => import('./pages/InsurancePresentation').then(m => ({ default: m.InsurancePresentation })));
+const EconomicsPresentation = lazy(() => import('./pages/EconomicsPresentation').then(m => ({ default: m.EconomicsPresentation })));
 const Apps = lazy(() => import('./pages/Apps').then(m => ({ default: m.Apps })));
 const AIAgentsWhatsApp = lazy(() => import('./pages/AIAgentsWhatsApp').then(m => ({ default: m.AIAgentsWhatsApp })));
 const PlaybookDetail = lazy(() => import('./pages/PlaybookDetail').then(m => ({ default: m.PlaybookDetail })));
@@ -97,6 +98,7 @@ function App() {
               <Route path="/apresentacao/varejo" element={<PresentationGate><RetailPresentation /></PresentationGate>} />
               <Route path="/apresentacao/fintech" element={<PresentationGate><FintechPresentation /></PresentationGate>} />
               <Route path="/apresentacao/seguros" element={<PresentationGate><InsurancePresentation /></PresentationGate>} />
+              <Route path="/apresentacao/economics" element={<PresentationGate><EconomicsPresentation /></PresentationGate>} />
             </Route>
             <Route path="/en" element={<LanguageLayout lang="en-US" />}>
               <Route path="presentation/commercial" element={<PresentationGate><CommercialPresentation /></PresentationGate>} />
@@ -104,6 +106,7 @@ function App() {
               <Route path="presentation/retail" element={<PresentationGate><RetailPresentation /></PresentationGate>} />
               <Route path="presentation/fintech" element={<PresentationGate><FintechPresentation /></PresentationGate>} />
               <Route path="presentation/insurance" element={<PresentationGate><InsurancePresentation /></PresentationGate>} />
+              <Route path="presentation/economics" element={<PresentationGate><EconomicsPresentation /></PresentationGate>} />
             </Route>
 
             {/* Standard routes — with Header/Footer */}

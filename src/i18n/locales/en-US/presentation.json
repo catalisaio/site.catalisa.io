@@ -638,5 +638,172 @@
       }
     ],
     "bottomBar": "$300B+ global AI investment by 2026 (IDC). 80% of companies will integrate GenAI into CX (Gartner)."
+  },
+  "revenueModel": {
+    "badge": "REVENUE MODEL",
+    "headline": "Transparent pricing.",
+    "headlineHighlight": "Scalable.",
+    "plans": [
+      { "name": "Free", "price": "$0", "model": "Hard limit — blocks when quota is reached", "highlight": false },
+      { "name": "Starter", "price": "$29/mo", "model": "Hard limit — upgrade to unlock", "highlight": true },
+      { "name": "Professional", "price": "$99/mo", "model": "Subscription + overage billing for excess", "highlight": false },
+      { "name": "Enterprise", "price": "Custom", "model": "Negotiated, unlimited volumes", "highlight": false }
+    ],
+    "meteringLabel": "6 METERING AXES",
+    "metering": [
+      { "resource": "Workflow Executions", "unit": "executions", "cost": "$0.0002" },
+      { "resource": "Action Executions", "unit": "actions", "cost": "$0.0001" },
+      { "resource": "AI Tokens (Automations)", "unit": "1K tokens", "cost": "$0.01" },
+      { "resource": "AI Tokens (Platform)", "unit": "1K tokens", "cost": "$0.01" },
+      { "resource": "WhatsApp Messages", "unit": "messages", "cost": "$0.009" },
+      { "resource": "Storage", "unit": "GB/month", "cost": "$0.02" }
+    ]
+  },
+  "unitEconomics": {
+    "badge": "UNIT ECONOMICS",
+    "headline": "Healthy margins.",
+    "headlineHighlight": "Above benchmark.",
+    "marginsLabel": "MARGIN PER PLAN",
+    "margins": [
+      { "plan": "Starter", "price": "R$149", "worstCase": "62%", "median": "83%" },
+      { "plan": "Professional", "price": "R$497", "worstCase": "43%", "median": "74%" },
+      { "plan": "Enterprise", "price": "~R$4,997+", "worstCase": "40%+", "median": "40%+" }
+    ],
+    "benchmarkLabel": "AI-FIRST SAAS BENCHMARK (2026)",
+    "benchmarks": [
+      { "label": "AI-First SaaS", "range": "55-70%" },
+      { "label": "Traditional SaaS", "range": "78-85%" },
+      { "label": "Catalisa", "range": "43-83%", "highlight": true }
+    ],
+    "whatsappAdvantage": "65% of WhatsApp messages are free",
+    "whatsappDetail": "Service messages + utility within 24h window reduce average cost from R$0.36 to R$0.046/msg"
+  },
+  "competitiveAdvantage": {
+    "badge": "COMPETITIVE ADVANTAGE",
+    "headline": "Cheaper. More complete.",
+    "headlineHighlight": "No comparison.",
+    "tableLabel": "MARKET COMPARISON",
+    "competitors": [
+      { "name": "Catalisa", "price": "R$149", "includes": "WhatsApp + CRM + AI + Workflows", "multiplier": "1x", "highlight": true },
+      { "name": "Wati", "price": "R$400", "includes": "WhatsApp + basic CRM", "multiplier": "2.7x" },
+      { "name": "Respond.io", "price": "R$458", "includes": "WhatsApp + CRM", "multiplier": "3.1x" },
+      { "name": "Zenvia", "price": "R$754", "includes": "WhatsApp + messaging", "multiplier": "5.1x" }
+    ],
+    "differentials": [
+      "WhatsApp + CRM + AI + Workflows in a single package",
+      "Competitors charge for each component separately",
+      "More complete than pure automation (n8n, Typebot)"
+    ]
+  },
+  "financialProjection": {
+    "badge": "FINANCIAL PROJECTION",
+    "headline": "24 months of",
+    "headlineHighlight": "predictable growth.",
+    "milestonesLabel": "CRITICAL MILESTONES",
+    "milestones": [
+      { "label": "Monthly break-even", "month": "11", "users": "~1,750", "revenue": "R$410K", "highlight": true },
+      { "label": "Revenue > R$500K", "month": "13", "users": "~2,500", "revenue": "R$662K" },
+      { "label": "Revenue > R$1M", "month": "16", "users": "~4,000", "revenue": "R$1.06M" },
+      { "label": "Cumulative payback", "month": "18", "users": "~5,250", "revenue": "R$1.39M", "highlight": true },
+      { "label": "Month 24 target", "month": "24", "users": "10,200", "revenue": "R$2.77M", "highlight": true }
+    ],
+    "summaryLabel": "ANNUAL SUMMARY",
+    "summary": [
+      { "period": "Year 1 (M1-12)", "users": "2,100", "revenue": "R$1.98M", "result": "-R$1.81M", "margin": "Investment" },
+      { "period": "Year 2 (M13-24)", "users": "10,200", "revenue": "R$17.1M", "result": "+R$9.96M", "margin": "58%" }
+    ]
+  },
+  "investmentROI": {
+    "badge": "INVESTMENT THESIS",
+    "headline": "R$2M in capital.",
+    "headlineHighlight": "~4x ROI in 24 months.",
+    "metrics": [
+      { "label": "Capital required", "value": "R$2M" },
+      { "label": "Payback", "value": "Month 18" },
+      { "label": "24-month ROI", "value": "~4x" },
+      { "label": "24m cumulative", "value": "R$7.8M" }
+    ],
+    "thesisLabel": "WHY THE THESIS WORKS",
+    "thesisBullets": [
+      "Low marginal cost: 65% of WhatsApp messages are free (service window)",
+      "Predictable scale: infra grows only R$6K per 30K users",
+      "Market-validated pricing: 2-5x cheaper than competitors with a more complete product",
+      "Healthy margins: 43-83% (above AI-First SaaS benchmark of 55-70%)",
+      "Fast break-even: month 11, payback month 18, 4x ROI in 24 months"
+    ],
+    "projectionLabel": "RETURN PROJECTION",
+    "projection": [
+      { "period": "Year 1", "revenue": "R$1.98M", "result": "-R$1.81M", "users": "2,100" },
+      { "period": "Year 2", "revenue": "R$17.1M", "result": "+R$9.96M", "users": "10,200" }
+    ]
+  },
+  "acquisitionStrategy": {
+    "badge": "ACQUISITION STRATEGY",
+    "headline": "From 12,500 signups to",
+    "headlineHighlight": "1,000 paying customers.",
+    "funnelLabel": "REVERSE FUNNEL (REALISTIC 8% SCENARIO)",
+    "funnel": [
+      { "stage": "Visitors", "value": "~125,000" },
+      { "stage": "Signups", "value": "12,500" },
+      { "stage": "Active trials", "value": "~10,000" },
+      { "stage": "Paying customers", "value": "1,000" }
+    ],
+    "budgetLabel": "BUDGET: R$54K OVER 4 MONTHS",
+    "channels": [
+      { "name": "Meta Ads", "pct": 40, "budget": "R$22K", "signups": "880" },
+      { "name": "Google Ads", "pct": 25, "budget": "R$14K", "signups": "240" },
+      { "name": "Content/SEO", "pct": 15, "budget": "R$8K", "signups": "600" },
+      { "name": "Tools", "pct": 10, "budget": "R$5K", "signups": "—" },
+      { "name": "Experimental", "pct": 10, "budget": "R$5K", "signups": "200" }
+    ],
+    "organicLabel": "ORGANIC CHANNELS",
+    "organicChannels": [
+      { "name": "PLG Viral (WhatsApp)", "signups": "3,000-5,000" },
+      { "name": "Direct outbound", "signups": "800-1,200" },
+      { "name": "SEO + Content", "signups": "1,500-2,500" },
+      { "name": "Communities", "signups": "500-1,000" },
+      { "name": "Referral", "signups": "300-500" }
+    ],
+    "cacHighlight": "CAC: R$85 (healthy max: R$894)"
+  },
+  "growthTargets": {
+    "badge": "GROWTH TARGETS",
+    "headline": "From 100 to 1,000 paying",
+    "headlineHighlight": "in 4 months.",
+    "monthlyLabel": "MONTHLY ESCALATED TARGETS",
+    "months": [
+      { "month": "April", "signups": "1,500", "newPaid": "80-120", "totalPaid": "100", "mrr": "R$17K", "focus": "Seed, personal network, first ads" },
+      { "month": "May", "signups": "2,500", "newPaid": "150-200", "totalPaid": "280", "mrr": "R$47K", "focus": "Ads running, content, outbound" },
+      { "month": "June", "signups": "3,500", "newPaid": "250-320", "totalPaid": "580", "mrr": "R$97K", "focus": "Viral flywheel, referral, lookalike" },
+      { "month": "July", "signups": "4,500", "newPaid": "350-420", "totalPaid": "1,000", "mrr": "R$168K", "focus": "Scale, partnerships, expansion" }
+    ],
+    "realisticLabel": "HONEST ANALYSIS",
+    "realisticScenario": "Realistic scenario: ~630 paying customers in 4 months",
+    "realisticDetail": "Target of 1,000 requires top 25% execution across all channels simultaneously",
+    "adjustedLabel": "ADJUSTED TARGET",
+    "adjustedTargets": [
+      { "label": "Base (likely)", "value": "500-700 customers" },
+      { "label": "Stretch (possible)", "value": "1,000 customers" }
+    ],
+    "keyFactor": "Decisive factor: WhatsApp virality rate"
+  },
+  "kpis": {
+    "badge": "KPIs & METRICS",
+    "headline": "Tracking",
+    "headlineHighlight": "dashboard.",
+    "indicators": [
+      { "label": "MRR", "target": "R$168K", "description": "Monthly recurring revenue (July target)" },
+      { "label": "Signups/week", "target": "720+", "description": "Growing 20-30% MoM" },
+      { "label": "Trial→Paid Conversion", "target": ">8%", "description": "Top quartile: >10%" },
+      { "label": "Monthly Churn", "target": "<5%", "description": "B2B SaaS SMB benchmark: 3-5%" },
+      { "label": "CAC per Channel", "target": "<R$85", "description": "Healthy max: R$894 (LTV/3)" },
+      { "label": "LTV:CAC", "target": ">3:1", "description": "Efficient: 5:1+" }
+    ],
+    "healthLabel": "BUSINESS HEALTH",
+    "healthMetrics": [
+      { "label": "Starter LTV", "value": "R$2,682", "detail": "R$149 × 18 months median" },
+      { "label": "Max CAC", "value": "R$894", "detail": "LTV ÷ 3" },
+      { "label": "Current CAC", "value": "R$85", "detail": "10.5x below maximum" }
+    ]
   }
 }

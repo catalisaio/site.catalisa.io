@@ -380,7 +380,7 @@ function SlideNavigation({
             {currentSlide + 1} / {totalSlides}
           </Text>
 
-          {isLast && onComplete ? (
+          {onComplete ? (
             <Button
               size="sm"
               colorScheme="green"

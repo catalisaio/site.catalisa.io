@@ -1,3 +1,4 @@
+import { useState, useEffect, useRef, useCallback } from 'react';
 import {
   Badge,
   Box,
@@ -11,7 +12,7 @@ import {
   VStack,
 } from '@chakra-ui/react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FiArrowDown, FiMessageCircle } from 'react-icons/fi';
+import { FiArrowDown, FiMessageCircle, FiGitBranch } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
 import { GradientText } from '../shared/GradientText';
 import { WorkflowPreview } from '../workflow-preview/WorkflowPreview';
@@ -32,7 +33,7 @@ const VTEX_WORKFLOW: WorkflowPreviewData = {
     { id: 'catalog',   label: 'Busca Produto',    category: 'Integracao', x: 33, y: 16 },
     { id: 'inventory', label: 'Consulta Estoque', category: 'Integracao', x: 33, y: 50 },
     { id: 'freight',   label: 'Simula Frete',     category: 'Integracao', x: 33, y: 84 },
-    { id: 'ai',        label: 'IA Responde',       category: 'IA',         x: 65, y: 50 },
+    { id: 'ai',        label: 'IA Responde',      category: 'IA',         x: 65, y: 50 },
     { id: 'wpp-out',   label: 'Envia Resposta',   category: 'WhatsApp',   x: 88, y: 50 },
   ],
   edges: [
@@ -49,7 +50,7 @@ const VTEX_WORKFLOW: WorkflowPreviewData = {
 
 const CHAT_MSGS = [
   { id: 'q',  role: 'user', text: 'Tem camiseta P azul? Qual o frete pra 01310?', delay: 0 },
-  { id: 'r1', role: 'bot',  text: '✅ Encontrei 3 opções: Nike Dry-Fit P (R$89), Hering Basic P (R$49), Aramis Slim P (R$129)', delay: 1 },
+  { id: 'r1', role: 'bot',  text: '✅ Encontrei 3 opções:\nNike Dry-Fit P (R$89)\nHering Basic P (R$49)\nAramis Slim P (R$129)', delay: 1 },
   { id: 'r2', role: 'bot',  text: '📦 Estoque confirmado nos 3.\n\n🚚 Frete p/ 01310:\n• Expressa: R$18 (amanhã)\n• Padrão: R$9 (3 dias)', delay: 2 },
   { id: 'r3', role: 'bot',  text: 'Qual opção você prefere? Posso já montar o carrinho 🛒', delay: 3 },
 ] as const;
@@ -59,6 +60,17 @@ const STATS = [
   { value: '< 2s', label: 'de resposta' },
   { value: '5 min', label: 'pra subir' },
 ];
+
+const PANELS = [
+  { id: 'workflow', label: 'Workflow', icon: FiGitBranch,     color: 'brand.400',      dwellTime: 9000 },
+  { id: 'chat',     label: 'WhatsApp', icon: FiMessageCircle, color: 'whatsapp.400',   dwellTime: 8000 },
+] as const;
+
+const panelVariants = {
+  enter: { opacity: 0, x: 30 },
+  center: { opacity: 1, x: 0 },
+  exit: { opacity: 0, x: -30 },
+};
 
 function VtexBadge() {
   return (
@@ -86,61 +98,110 @@ function VtexBadge() {
   );
 }
 
-function ChatOverlay() {
+function WorkflowPanel() {
   return (
-    <Box
-      position="absolute"
-      bottom={{ base: 4, md: 6 }}
-      left={{ base: 4, md: 6 }}
-      w={{ base: '220px', md: '260px' }}
-      borderRadius="2xl"
-      bg="#0b141a"
-      border="1px solid"
-      borderColor="whiteAlpha.200"
-      boxShadow="0 20px 60px rgba(0,0,0,0.8), 0 0 0 1px rgba(255,255,255,0.04)"
-      overflow="hidden"
-      zIndex={5}
-    >
-      <Flex bg="#1f2c33" px={3} py={2} align="center" gap={2}>
-        <Box w="28px" h="28px" borderRadius="full" bg="linear-gradient(135deg,#734B9C,#25D366)" display="flex" alignItems="center" justifyContent="center" fontSize="xs" fontWeight="700" color="white">C</Box>
-        <Box>
-          <Text fontSize="xs" fontWeight="600" color="white">Catalisa · sua loja</Text>
+    <Box>
+      {/* macOS-style header */}
+      <Flex px={5} py={3} align="center" justify="space-between"
+        borderBottom="1px solid" borderColor="whiteAlpha.100" bg="rgba(0,0,0,0.2)">
+        <HStack spacing={2}>
+          <HStack spacing={1}>
+            {['#F71963', '#ECC94B', '#25D366'].map((c) => (
+              <Box key={c} w="10px" h="10px" borderRadius="full" bg={c} opacity={0.8} />
+            ))}
+          </HStack>
+          <Text fontSize="xs" fontFamily="mono" color="whiteAlpha.500">
+            assistente-ecommerce-vtex.wf
+          </Text>
+        </HStack>
+        <HStack spacing={1}>
+          <Box w="6px" h="6px" borderRadius="full" bg="whatsapp.400"
+            sx={{ animation: 'ping 2s ease-in-out infinite', '@keyframes ping': { '0%,100%': { opacity: 1 }, '50%': { opacity: 0.4 } } }} />
+          <Text fontSize="2xs" color="whatsapp.300" fontWeight="600">running</Text>
+        </HStack>
+      </Flex>
+      <Box p={4}>
+        <WorkflowPreview workflow={VTEX_WORKFLOW} variant="dark" autoPlay={true} />
+      </Box>
+    </Box>
+  );
+}
+
+function ChatPanel() {
+  return (
+    <Box>
+      {/* WhatsApp header */}
+      <Flex bg="#1f2c33" px={4} py={3} align="center" gap={3}
+        borderBottom="1px solid" borderColor="whiteAlpha.100">
+        <Box w="36px" h="36px" borderRadius="full"
+          bg="linear-gradient(135deg,#734B9C,#25D366)"
+          display="flex" alignItems="center" justifyContent="center"
+          fontWeight="700" fontSize="sm" color="white" flexShrink={0}>
+          C
+        </Box>
+        <Box flex={1}>
+          <Text fontSize="sm" fontWeight="600" color="white">Catalisa · sua loja</Text>
           <HStack spacing={1}>
             <Box w="6px" h="6px" borderRadius="full" bg="whatsapp.400" />
-            <Text fontSize="2xs" color="whatsapp.300">online</Text>
+            <Text fontSize="xs" color="whatsapp.300">online agora</Text>
           </HStack>
         </Box>
+        <HStack spacing={1} px={2} py={1} borderRadius="full" bg="#F7196318"
+          border="1px solid" borderColor="#F7196340">
+          <Box w="6px" h="6px" borderRadius="full" bg="#F71963"
+            sx={{ animation: 'vtexPing 2s ease-in-out infinite', '@keyframes vtexPing': { '0%,100%': { opacity: 1 }, '50%': { opacity: 0.4 } } }} />
+          <Text fontSize="2xs" fontWeight="700" color="#F71963">VTEX</Text>
+        </HStack>
       </Flex>
-      <Box bg="#0b141a" px={2} py={2} minH="140px" display="flex" flexDirection="column" gap={1.5}>
-        <AnimatePresence>
-          {CHAT_MSGS.map((m) => (
-            <MotionBox
-              key={m.id}
-              initial={{ opacity: 0, y: 6, scale: 0.96 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              transition={{ delay: m.delay * 0.9 + 1.0, duration: 0.3 }}
-              alignSelf={m.role === 'user' ? 'flex-end' : 'flex-start'}
+
+      {/* Chat messages */}
+      <VStack spacing={2.5} p={4} align="stretch" bg="#0b141a" minH="300px"
+        sx={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='20' cy='20' r='1' fill='rgba(255,255,255,0.025)'/%3E%3C/svg%3E\")" }}>
+        {CHAT_MSGS.map((m, i) => (
+          <MotionBox
+            key={m.id}
+            initial={{ opacity: 0, y: 10, scale: 0.96 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ delay: i * 0.55 + 0.3, duration: 0.35 }}
+            alignSelf={m.role === 'user' ? 'flex-end' : 'flex-start'}
+            maxW="85%"
+          >
+            <Box
               bg={m.role === 'user' ? '#005c4b' : '#202c33'}
               color="white"
-              px={2.5}
-              py={1.5}
-              borderRadius={m.role === 'user' ? '10px 10px 4px 10px' : '10px 10px 10px 4px'}
-              maxW="90%"
-              fontSize="2xs"
-              lineHeight="1.45"
+              px={3.5}
+              py={2.5}
+              borderRadius={m.role === 'user' ? '14px 14px 4px 14px' : '14px 14px 14px 4px'}
+              fontSize="sm"
               whiteSpace="pre-line"
+              lineHeight="1.55"
+              boxShadow="0 1px 2px rgba(0,0,0,0.3)"
             >
               {m.text}
-            </MotionBox>
-          ))}
-        </AnimatePresence>
-      </Box>
+            </Box>
+          </MotionBox>
+        ))}
+      </VStack>
     </Box>
   );
 }
 
 export function VtexDayHero() {
   const { t } = useTranslation('vtex-day-2026');
+  const [activePanel, setActivePanel] = useState(0);
+  const [paused, setPaused] = useState(false);
+  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const goToNext = useCallback(() => {
+    setActivePanel((p) => (p + 1) % PANELS.length);
+  }, []);
+
+  useEffect(() => {
+    if (paused) return;
+    const dwell = PANELS[activePanel].dwellTime;
+    timerRef.current = setTimeout(goToNext, dwell);
+    return () => { if (timerRef.current) clearTimeout(timerRef.current); };
+  }, [activePanel, paused, goToNext]);
 
   return (
     <Box
@@ -234,7 +295,7 @@ export function VtexDayHero() {
             </MotionBox>
           </VStack>
 
-          {/* ── RIGHT: WorkflowPreview + WhatsApp chat overlay ── */}
+          {/* ── RIGHT: cycling panels (workflow ↔ chat) ── */}
           <MotionBox
             initial={{ opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
@@ -242,62 +303,100 @@ export function VtexDayHero() {
             flex={1}
             minW={0}
             maxW={{ base: '100%', lg: '620px' }}
-            position="relative"
+            onMouseEnter={() => setPaused(true)}
+            onMouseLeave={() => setPaused(false)}
           >
             {/* VTEX label top-right */}
-            <Box position="absolute" top={-4} right={0} zIndex={6}>
-              <HStack px={3} py={1} bg="#F71963" borderRadius="full" spacing={1.5}>
-                <Text fontSize="xs" fontWeight="800" color="white" letterSpacing="wide">VTEX</Text>
-                <Text fontSize="2xs" fontWeight="600" color="whiteAlpha.800">Integration</Text>
-              </HStack>
-            </Box>
-
-            <Box
-              borderRadius="2xl"
-              border="1px solid"
-              borderColor="whiteAlpha.100"
-              overflow="hidden"
-              bg="rgba(17,24,32,0.6)"
-              backdropFilter="blur(8px)"
-              boxShadow="0 40px 80px -20px rgba(0,0,0,0.6), 0 0 0 1px rgba(115,75,156,0.15)"
-              position="relative"
-              sx={{
-                '&::before': {
-                  content: '""',
-                  position: 'absolute',
-                  inset: 0,
-                  borderRadius: '2xl',
-                  background: 'linear-gradient(135deg, rgba(115,75,156,0.08) 0%, transparent 50%, rgba(247,25,99,0.04) 100%)',
-                  pointerEvents: 'none',
-                  zIndex: 1,
-                },
-              }}
-            >
-              {/* Workflow header */}
-              <Flex px={5} py={3} align="center" justify="space-between"
-                borderBottom="1px solid" borderColor="whiteAlpha.100" bg="rgba(0,0,0,0.2)">
-                <HStack spacing={2}>
-                  <HStack spacing={1}>
-                    {['#F71963', '#ECC94B', '#25D366'].map((c) => (
-                      <Box key={c} w="10px" h="10px" borderRadius="full" bg={c} opacity={0.8} />
-                    ))}
-                  </HStack>
-                  <Text fontSize="xs" fontFamily="mono" color="whiteAlpha.500">
-                    assistente-ecommerce-vtex.wf
-                  </Text>
+            <Box position="relative">
+              <Box position="absolute" top={-4} right={0} zIndex={6}>
+                <HStack px={3} py={1} bg="#F71963" borderRadius="full" spacing={1.5}>
+                  <Text fontSize="xs" fontWeight="800" color="white" letterSpacing="wide">VTEX</Text>
+                  <Text fontSize="2xs" fontWeight="600" color="whiteAlpha.800">Integration</Text>
                 </HStack>
-                <HStack spacing={1}>
-                  <Box w="6px" h="6px" borderRadius="full" bg="whatsapp.400"
-                    sx={{ animation: 'ping 2s ease-in-out infinite', '@keyframes ping': { '0%,100%': { opacity: 1 }, '50%': { opacity: 0.4 } } }} />
-                  <Text fontSize="2xs" color="whatsapp.300" fontWeight="600">running</Text>
-                </HStack>
-              </Flex>
+              </Box>
 
-              <Box p={4} position="relative">
-                <WorkflowPreview workflow={VTEX_WORKFLOW} variant="dark" autoPlay={true} />
-                <ChatOverlay />
+              <Box
+                borderRadius="2xl"
+                border="1px solid"
+                borderColor="whiteAlpha.100"
+                overflow="hidden"
+                bg="rgba(17,24,32,0.6)"
+                backdropFilter="blur(8px)"
+                boxShadow="0 40px 80px -20px rgba(0,0,0,0.6), 0 0 0 1px rgba(115,75,156,0.15)"
+                position="relative"
+                sx={{
+                  '&::before': {
+                    content: '""',
+                    position: 'absolute',
+                    inset: 0,
+                    borderRadius: '2xl',
+                    background: 'linear-gradient(135deg, rgba(115,75,156,0.08) 0%, transparent 50%, rgba(247,25,99,0.04) 100%)',
+                    pointerEvents: 'none',
+                    zIndex: 1,
+                  },
+                }}
+              >
+                <AnimatePresence mode="wait">
+                  <motion.div
+                    key={PANELS[activePanel].id}
+                    variants={panelVariants}
+                    initial="enter"
+                    animate="center"
+                    exit="exit"
+                    transition={{ duration: 0.35, ease: 'easeInOut' }}
+                    style={{ width: '100%' }}
+                  >
+                    {activePanel === 0 ? <WorkflowPanel /> : <ChatPanel />}
+                  </motion.div>
+                </AnimatePresence>
               </Box>
             </Box>
+
+            {/* Panel tab indicators */}
+            <HStack spacing={2} justify="center" mt={4}>
+              {PANELS.map((panel, i) => {
+                const isActive = i === activePanel;
+                const PanelIcon = panel.icon;
+                return (
+                  <Box
+                    key={panel.id}
+                    as="button"
+                    onClick={() => { setActivePanel(i); setPaused(true); setTimeout(() => setPaused(false), 300); }}
+                    px={2.5}
+                    py={1.5}
+                    borderRadius="full"
+                    bg={isActive ? 'whiteAlpha.150' : 'whiteAlpha.50'}
+                    border="1px solid"
+                    borderColor={isActive ? 'whiteAlpha.200' : 'transparent'}
+                    cursor="pointer"
+                    transition="all 0.2s"
+                    _hover={{ bg: 'whiteAlpha.150' }}
+                    position="relative"
+                    overflow="hidden"
+                  >
+                    <HStack spacing={1}>
+                      <Box as={PanelIcon} color={isActive ? panel.color : 'whiteAlpha.500'} boxSize="12px" />
+                      <Text color={isActive ? 'white' : 'whiteAlpha.500'} fontSize="2xs"
+                        fontWeight={isActive ? '600' : '400'}>
+                        {panel.label}
+                      </Text>
+                    </HStack>
+                    {/* Progress bar */}
+                    {isActive && !paused && (
+                      <Box
+                        position="absolute" bottom={0} left={0} w="full" h="2px"
+                        bg={panel.color}
+                        as={motion.div}
+                        style={{ transformOrigin: 'left' }}
+                        initial={{ scaleX: 0 }}
+                        animate={{ scaleX: 1 }}
+                        transition={{ duration: panel.dwellTime / 1000, ease: 'linear' } as any}
+                      />
+                    )}
+                  </Box>
+                );
+              })}
+            </HStack>
           </MotionBox>
         </Flex>
       </Container>

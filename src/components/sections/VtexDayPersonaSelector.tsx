@@ -7,7 +7,6 @@ import {
   HStack,
   Heading,
   Icon,
-  SimpleGrid,
   Text,
   VStack,
   Wrap,

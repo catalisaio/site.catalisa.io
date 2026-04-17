@@ -59,6 +59,8 @@ import { useLocalizedPath } from '../../i18n/useLocalizedPath';
 import { LanguageSwitcher } from '../shared/LanguageSwitcher';
 import { config } from '../../config';
 
+const WHATSAPP_URL = 'https://wa.me/5511977303414?text=Ola!%20Quero%20saber%20mais%20sobre%20a%20Catalisa.';
+
 type MegaMenuItem = {
   icon: IconType;
   labelKey: string;
@@ -649,6 +651,20 @@ export function Header() {
             >
               {t('cta.seeDemo')}
             </Button>
+            <Button
+              as="a"
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              size="sm"
+              bg="whatsapp.500"
+              color="white"
+              _hover={{ bg: 'whatsapp.600' }}
+              leftIcon={<FiMessageCircle />}
+              display={{ base: 'none', md: 'inline-flex' }}
+            >
+              {t('cta.letsChat')}
+            </Button>
             <Box display={{ base: 'none', md: 'inline-flex' }}>
               <LanguageSwitcher isDark={isDarkHero} />
             </Box>
@@ -855,6 +871,19 @@ export function Header() {
                     onClick={onClose}
                   >
                     {t('cta.seeDemo')}
+                  </Button>
+                  <Button
+                    as="a"
+                    href={WHATSAPP_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    w="full"
+                    bg="whatsapp.500"
+                    color="white"
+                    _hover={{ bg: 'whatsapp.600' }}
+                    leftIcon={<FiMessageCircle />}
+                  >
+                    {t('cta.letsChat')}
                   </Button>
                 </VStack>
               </Box>

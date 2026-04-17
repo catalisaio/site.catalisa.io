@@ -12,17 +12,24 @@ export function VtexDayWorkflowScroll() {
     <Box as="section" id="vtex-day-workflow" py={{ base: 16, md: 24 }} bg="hero.bg" color="white">
       <Container maxW="1200px">
         <VStack spacing={4} textAlign="center" mb={12}>
-          <Badge
-            bg="whiteAlpha.100"
-            color="whatsapp.300"
-            px={4}
-            py={1.5}
-            borderRadius="full"
-            fontSize="xs"
-            fontWeight="600"
-          >
-            Assistente E-commerce VTEX · template produtivo
-          </Badge>
+          <HStack spacing={3} justify="center" flexWrap="wrap">
+            <Badge
+              bg="whiteAlpha.100"
+              color="whatsapp.300"
+              px={4}
+              py={1.5}
+              borderRadius="full"
+              fontSize="xs"
+              fontWeight="600"
+            >
+              Assistente E-commerce · template produtivo
+            </Badge>
+            <HStack px={3} py={1.5} borderRadius="full" bg="#F7196318" border="1px solid" borderColor="#F7196340" spacing={2}>
+              <Box w="8px" h="8px" borderRadius="full" bg="#F71963" boxShadow="0 0 6px #F71963"
+                sx={{ animation: 'vtexPulse 2s ease-in-out infinite', '@keyframes vtexPulse': { '0%,100%': { opacity: 1 }, '50%': { opacity: 0.5 } } }} />
+              <Text fontSize="xs" fontWeight="700" color="#F71963" letterSpacing="wide">POWERED BY VTEX</Text>
+            </HStack>
+          </HStack>
           <Heading as="h2" size={{ base: 'lg', md: 'xl' }}>
             {t('workflow.heading')}
           </Heading>

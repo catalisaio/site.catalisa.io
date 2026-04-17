@@ -10,10 +10,11 @@ Marketing site + presentation platform for **Catalisa**, a WhatsApp AI automatio
 
 ```bash
 npm run dev          # Dev server (Vite, port 5175)
-npm run build        # TS compile + Vite build + postbuild (OG images, sitemap, brand zip, pre-render)
+npm run build        # TS compile + Vite build + postbuild (OG images, sitemap, brand zip, inject-seo-meta, pre-render)
 npm run lint         # ESLint
 npm run test         # Vitest (single run)
 npm run test:watch   # Vitest watch mode
+npm run test:e2e     # Playwright end-to-end tests
 npm run preview      # Preview production build
 ```
 
@@ -37,13 +38,13 @@ Integration tests for the invite system: `bash scripts/test-integration.sh`
 - `src/App.tsx` — all routes, lazy-loaded pages with Suspense
 - Portuguese routes at root (`/insights`, `/studio`, etc.)
 - English routes under `/en/` prefix (`/en/insights`, `/en/studio`, etc.)
-- `src/i18n/locales/{pt-BR,en-US}/` — 23 JSON translation namespaces each
+- `src/i18n/locales/{pt-BR,en-US}/` — 36 JSON translation namespaces each
 - `src/seo/routes.ts` — single source of truth for all route definitions + SEO metadata
 
 ### Pages & Components
 
-- `src/pages/` — 32 page components
-- `src/components/sections/` — 38 reusable content sections (composed into pages)
+- `src/pages/` — 34 top-level page components + `training/` (7 pages) + `presentation/` sub-folders
+- `src/components/sections/` — 33 reusable content sections (composed into pages)
 - `src/components/layout/` — PageLayout, LanguageLayout, Header, Footer
 - `src/components/shared/` — reusable UI (CookieConsent, VideoPlayer, PageHero, etc.)
 - `src/components/presentation/` — slide decks, gate, navigation, tracking
@@ -56,6 +57,13 @@ Large static data files drive much of the content:
 - `src/data/playbooks.ts` — playbook definitions
 - `src/data/actions.ts` — workflow building blocks
 - `src/data/useCases.ts` — use case definitions
+
+### Catalisa Academy (Training System)
+
+- Routes under `/treinamento/` (pt-BR) and `/en/training/` (en-US)
+- Supabase-backed: auth, course progress, certificates
+- Pages: `TrainingLogin`, `TrainingCatalog`, `TrainingTracks`, `CourseDetail`, `LessonPage`, `TrainingProfile`, `TrainingCertificate`
+- Translation namespace: `training.json`
 
 ### Pre-rendering & Hydration
 

@@ -50,6 +50,8 @@ const LessonPage = lazy(() => import('./pages/training/LessonPage').then(m => ({
 const TrainingTracks = lazy(() => import('./pages/training/TrainingTracks').then(m => ({ default: m.TrainingTracks })));
 const TrainingProfile = lazy(() => import('./pages/training/TrainingProfile').then(m => ({ default: m.TrainingProfile })));
 const TrainingCertificate = lazy(() => import('./pages/training/TrainingCertificate').then(m => ({ default: m.TrainingCertificate })));
+const Determinismo = lazy(() => import('./pages/Determinismo').then(m => ({ default: m.default })));
+const VtexDay2026 = lazy(() => import('./pages/VtexDay2026').then(m => ({ default: m.default })));
 const NotFound = lazy(() => import('./pages/NotFound').then(m => ({ default: m.NotFound })));
 
 function PageLoader() {
@@ -152,6 +154,8 @@ function App() {
                 <Route path="/insights/all" element={<InsightsListing />} />
                 <Route path="/insights/magazine" element={<Navigate to="/insights" replace />} />
                 <Route path="/insights/:slug" element={<InsightArticle />} />
+                <Route path="/determinismo" element={<Determinismo />} />
+                <Route path="/vtex-day-2026" element={<VtexDay2026 />} />
               </Route>
 
               {/* en-US routes (/en prefix) */}
@@ -194,6 +198,7 @@ function App() {
                 <Route path="insights/all" element={<InsightsListing />} />
                 <Route path="insights/magazine" element={<Navigate to="/en/insights" replace />} />
                 <Route path="insights/:slug" element={<InsightArticle />} />
+                <Route path="determinism" element={<Determinismo />} />
               </Route>
 
               {/* Catch-all */}

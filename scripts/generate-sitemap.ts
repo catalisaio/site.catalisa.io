@@ -41,6 +41,8 @@ const routes: SitemapRoute[] = [
   { ptPath: '/apresentacao/varejo', enPath: '/en/presentation/retail', priority: 0.0, changefreq: 'monthly', noIndex: true },
   { ptPath: '/apresentacao/fintech', enPath: '/en/presentation/fintech', priority: 0.0, changefreq: 'monthly', noIndex: true },
   { ptPath: '/apresentacao/seguros', enPath: '/en/presentation/insurance', priority: 0.0, changefreq: 'monthly', noIndex: true },
+  // VTEX Day 2026 (pt-only route)
+  { ptPath: '/vtex-day-2026', enPath: '/vtex-day-2026', priority: 0.9, changefreq: 'daily' as const },
   // Insights
   { ptPath: '/insights', enPath: '/en/insights', priority: 0.8, changefreq: 'weekly' as const },
   ...articleSlugs.map((slug) => ({
@@ -71,13 +73,19 @@ function generateSitemap(): string {
       <xhtml:link rel="alternate" hreflang="en-US" href="${enUrl}"/>
       <xhtml:link rel="alternate" hreflang="x-default" href="${ptUrl}"/>`;
 
-    return [
-      `  <url>
+    const ptEntry = `  <url>
     <loc>${ptUrl}</loc>
     <lastmod>${today}</lastmod>
     <changefreq>${route.changefreq}</changefreq>
     <priority>${route.priority.toFixed(1)}</priority>${hreflangLinks}
-  </url>`,
+  </url>`;
+
+    if (route.ptPath === route.enPath) {
+      return [ptEntry];
+    }
+
+    return [
+      ptEntry,
       `  <url>
     <loc>${enUrl}</loc>
     <lastmod>${today}</lastmod>

@@ -1,0 +1,81 @@
+{
+  "hero": {
+    "badge": "VTEX Day 2026 · April 16–17 · São Paulo Expo",
+    "headline": "VTEX support that replies in",
+    "headlineHighlight": "2 seconds, on WhatsApp",
+    "subtitle": "23 VTEX actions ready, one production template, real conversations with your customers — straight from the Catalisa Panel.",
+    "ctaPrimary": "Visit our booth",
+    "ctaSecondary": "Schedule a call",
+    "chatCustomer": "Do you have a black T-shirt, size S?",
+    "chatBot1": "Yes! Found 3 options 👕",
+    "chatBot2": "Shipping to 01310-100: Express $15 · Standard $7"
+  },
+  "concept": {
+    "title": "City of Innovation",
+    "tagline": "Protagonists of a New Era",
+    "detail": "{{speakers}} speakers · {{sessions}} sessions · {{brands}} brands",
+    "live": "Happening now",
+    "countdown": "Starts in",
+    "daysLeft": "days",
+    "hoursLeft": "hours"
+  },
+  "persona": {
+    "heading": "You are…",
+    "reactiveHint": "The answers below change based on your role",
+    "whyWeAsk": "We ask because the pain is different — and so is the answer."
+  },
+  "workflow": {
+    "heading": "How the VTEX E-commerce Assistant works",
+    "subtitle": "One template. 7 modules. 23 ready-to-use actions talking to your VTEX.",
+    "scrollHint": "Scroll to light up each module",
+    "footer": "23 actions · 7 modules · 1 template · 5 minutes to go live"
+  },
+  "stages": {
+    "heading": "What you'll experience at VTEX Day 2026",
+    "subtitle": "9 stages · 158 sessions · 2 days",
+    "voicesHeading": "Confirmed voices",
+    "boothNudge": "After each talk, stop by our booth"
+  },
+  "fiveMin": {
+    "heading": "From zero to smart VTEX support in 5 minutes",
+    "steps": [
+      { "title": "Install template", "desc": "\"VTEX E-commerce Assistant\" in the Catalisa Panel", "time": "~30s" },
+      { "title": "Connect your VTEX", "desc": "AppKey & AppToken safely interpolated", "time": "~2min" },
+      { "title": "Plug into WhatsApp", "desc": "Official number via QR code", "time": "~1min" },
+      { "title": "Go live", "desc": "Customer asks, Catalisa answers with live VTEX data", "time": "~1min" }
+    ]
+  },
+  "lead": {
+    "heading": "Want to see it live?",
+    "subtitle": "We'll tailor a demo to your case — your role drives the conversation.",
+    "name": "Name",
+    "email": "Work email",
+    "phone": "Phone (optional)",
+    "company": "Company",
+    "role": "Title",
+    "personaLabel": "You are",
+    "storeName": "VTEX store name (optional)",
+    "orders": "Orders per month",
+    "ordersOptions": ["Under 1k", "1k–10k", "10k–50k", "50k+"],
+    "interests": "Interests",
+    "interestsOptions": [
+      "AI-powered support",
+      "Workflow automation",
+      "ERP integration",
+      "Tracking / invoice automation",
+      "Lead capture",
+      "Post-sales"
+    ],
+    "privacy": "I agree with the privacy policy (LGPD)",
+    "submit": "Send and open WhatsApp",
+    "submitting": "Sending…",
+    "success": "Got it! Opening WhatsApp…",
+    "error": "Something went wrong. Try again in a few seconds?"
+  },
+  "finalCta": {
+    "heading": "See you at VTEX Day",
+    "subtitle": "Bring a case. We'll sketch a live workflow with you at our booth.",
+    "whatsapp": "Open WhatsApp",
+    "calendar": "Add to calendar"
+  }
+}

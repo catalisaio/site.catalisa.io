@@ -1,0 +1,131 @@
+{
+  "hero": {
+    "badge": "Tested Software",
+    "headline": "Software you can",
+    "headlineHighlight": "TEST. Not just GUESS.",
+    "subtitle": "While others offer 'create with AI', we offer real software. Deterministic building blocks that work. Always.",
+    "benefits": [
+      "60+ tested blocks",
+      "Predictable results",
+      "Zero workarounds"
+    ],
+    "cta": {
+      "whatsapp": "Let's talk",
+      "details": "See technical details"
+    },
+    "stats": [
+      { "label": "Building Blocks" },
+      { "label": "Tested" },
+      { "label": "Latency" },
+      { "label": "Available" }
+    ]
+  },
+  "comparison": {
+    "badge": "The difference",
+    "heading": "AI-generated vs Tested software",
+    "subtitle": "Understand why the difference between 'AI generation' and 'deterministic software' changes everything.",
+    "catalisa": {
+      "title": "Catalisa",
+      "badge": "Deterministic",
+      "items": [],
+      "status": [
+        "Predictable result on every execution",
+        "Automatically tested",
+        "Documented behavior",
+        "No surprises in production"
+      ]
+    },
+    "other": {
+      "title": "Other Players",
+      "items": [],
+      "status": [
+        "Result may vary each execution",
+        "Depends on how user configured",
+        "Unpredictable behavior",
+        "Surprises in production"
+      ]
+    },
+    "outputSuccess": "Right answer",
+    "outputUncertain": "Depends...",
+    "insight": "Determinism = Reliability. And reliability = business that scales."
+  },
+  "buildingBlocks": {
+    "badge": "60+ Blocks",
+    "heading": "Capabilities ready for real operations",
+    "subtitle": "Don't improvise. Connect tested and governed blocks for critical processes.",
+    "note": "You connect the blocks. We guarantee they work.",
+    "tested": "100% tested",
+    "enterpriseNote": "Financial and governance blocks ready for regulated operations",
+    "categories": {
+      "communication": "Communication",
+      "intelligence": "Intelligence",
+      "data": "Data",
+      "financial": "Financial",
+      "enterprise": "Enterprise",
+      "calculators": "Calculators"
+    },
+    "blocks": {
+      "whatsapp": "WhatsApp",
+      "email": "E-mail",
+      "sms": "SMS",
+      "push": "Push Notifications",
+      "aiAgent": "AI Agent",
+      "sentiment": "Sentiment",
+      "ocr": "OCR",
+      "classification": "Classification",
+      "crm": "CRM",
+      "webhook": "Webhook",
+      "api": "REST API",
+      "files": "Files",
+      "pixCharge": "PIX Charge",
+      "pixTransfer": "PIX Transfer",
+      "boleto": "Boleto",
+      "split": "Split Payment",
+      "decisionEngine": "Decision Engine",
+      "baas": "BaaS",
+      "openFinance": "Open Finance",
+      "rbac": "RBAC",
+      "compoundInterest": "Compound Interest",
+      "cet": "CET/TAEG",
+      "amortization": "Amortization",
+      "creditLimit": "Credit Limit"
+    }
+  },
+  "valueProps": {
+    "badge": "What this means for you",
+    "heading": "Zero 'what if it doesn't work?'",
+    "subtitle": "Tangibile benefits you feel daily",
+    "cards": [
+      {
+        "title": "Zero workarounds",
+        "description": "Tested building blocks mean: you connect, it works. No breaking in production at 3 AM."
+      },
+      {
+        "title": "Works the first time",
+        "description": "60+ ready blocks = result on first try. No 'trial and error'."
+      },
+      {
+        "title": "Growth without surprises",
+        "description": "Forget 'will it actually work?'. Scale without wondering if things will break."
+      }
+    ],
+    "included": "Included"
+  },
+  "technical": {
+    "badge": "For devs",
+    "heading": "Real code. Not 'AI magic'.",
+    "subtitle": "If you're a developer, understand what you're running.",
+    "features": [],
+    "accordion": {
+      "title": "Understand why determinism matters",
+      "items": [
+        "Each Building Block = typed TypeScript function",
+        "Documented semantic versioning (semver)",
+        "Unit tests + integration tests per block",
+        "Documented SLA per block",
+        "Auditable source code",
+        "Zero dependency on 'AI behavior'"
+      ]
+    }
+  }
+}

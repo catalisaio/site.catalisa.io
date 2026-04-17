@@ -1,0 +1,131 @@
+{
+  "hero": {
+    "badge": "Software Testado",
+    "headline": "Software que você pode",
+    "headlineHighlight": "TESTAR. Não apenas ADIVINHAR.",
+    "subtitle": "Enquanto outros oferecem 'criar com AI', nós oferecemos software de verdade. Building blocks determinísticos que funcionam. Sempre.",
+    "benefits": [
+      "60+ blocos testados",
+      "Resultado previsível",
+      "Zero gambiarras"
+    ],
+    "cta": {
+      "whatsapp": "Vamos conversar",
+      "details": "Ver detalhes técnicos"
+    },
+    "stats": [
+      { "label": "Building Blocks" },
+      { "label": "Testado" },
+      { "label": "Latência" },
+      { "label": "Disponível" }
+    ]
+  },
+  "comparison": {
+    "badge": "A diferença",
+    "heading": "Software gerado vs Software testado",
+    "subtitle": "Entenda por que a diferença entre 'AI generation' e 'deterministic software' muda tudo.",
+    "catalisa": {
+      "title": "Catalisa",
+      "badge": "Determinístico",
+      "items": [],
+      "status": [
+        "Resultado previsível a cada execução",
+        "Testado automaticamente",
+        "Comportamento documentado",
+        "Sem surpresas em produção"
+      ]
+    },
+    "other": {
+      "title": "Outros Players",
+      "items": [],
+      "status": [
+        "Resultado pode variar a cada execução",
+        "Depende de como o usuário configurou",
+        "Comportamento imprevisível",
+        "Surpresas em produção"
+      ]
+    },
+    "outputSuccess": "Resposta certa",
+    "outputUncertain": "Depende...",
+    "insight": "Determinismo = Confiabilidade. E confiabilidade = negócio que escala."
+  },
+  "buildingBlocks": {
+    "badge": "60+ Blocos",
+    "heading": "Capacidades prontas para operação real",
+    "subtitle": "Não improvise. Conecte blocos testados e governados para processos críticos.",
+    "note": "Você conecta os blocos. Nós garantimos que funcionam.",
+    "tested": "100% testados",
+    "enterpriseNote": "Blocos financeiros e de governança prontos para operação regulada",
+    "categories": {
+      "communication": "Comunicação",
+      "intelligence": "Inteligência",
+      "data": "Dados",
+      "financial": "Financeiro",
+      "enterprise": "Enterprise",
+      "calculators": "Calculadoras"
+    },
+    "blocks": {
+      "whatsapp": "WhatsApp",
+      "email": "E-mail",
+      "sms": "SMS",
+      "push": "Notificações",
+      "aiAgent": "Agente IA",
+      "sentiment": "Sentimento",
+      "ocr": "OCR",
+      "classification": "Classificação",
+      "crm": "CRM",
+      "webhook": "Webhook",
+      "api": "API REST",
+      "files": "Arquivos",
+      "pixCharge": "PIX Cobrança",
+      "pixTransfer": "PIX Transfer",
+      "boleto": "Boleto",
+      "split": "Split Payment",
+      "decisionEngine": "Decision Engine",
+      "baas": "BaaS",
+      "openFinance": "Open Finance",
+      "rbac": "RBAC",
+      "compoundInterest": "Juros Compostos",
+      "cet": "CET/TAEG",
+      "amortization": "Amortização",
+      "creditLimit": "Limite Crédito"
+    }
+  },
+  "valueProps": {
+    "badge": "O que isso significa pra você",
+    "heading": "Zero 'e se não funcionar?'",
+    "subtitle": "Benefícios tangíveis que você sente no dia a dia",
+    "cards": [
+      {
+        "title": "Zero gambiarras",
+        "description": "Building blocks testados significam: você conecta, funciona. Sem quebrar em produção às 3 da manhã."
+      },
+      {
+        "title": "Funciona da primeira vez",
+        "description": "60+ blocos prontos = resultado na primeira tentativa. Sem 'trial and error'."
+      },
+      {
+        "title": "Crescimento sem surpresas",
+        "description": "Esqueça 'vai funcionar de verdade?'. Escale sem wondering se o negócio vai quebrar."
+      }
+    ],
+    "included": "Incluído"
+  },
+  "technical": {
+    "badge": "Para devs",
+    "heading": "Código de verdade. Não 'AI magic'.",
+    "subtitle": "Se você é desenvolvedor, entenda o que está rodando.",
+    "features": [],
+    "accordion": {
+      "title": "Entenda por que determinismo importa",
+      "items": [
+        "Cada Building Block = função TypeScript tipada",
+        "Versionamento semântico (semver) documentado",
+        "Unit tests + integration tests por bloco",
+        "SLA documentado por bloco",
+        "Código fonte auditável",
+        "Zero dependência de 'AI comportamento'"
+      ]
+    }
+  }
+}

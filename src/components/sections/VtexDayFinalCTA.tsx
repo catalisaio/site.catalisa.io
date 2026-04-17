@@ -1,14 +1,14 @@
 import { Box, Button, Container, HStack, Heading, Text, VStack } from '@chakra-ui/react';
 import { FiCalendar, FiMessageCircle } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
-import { CATALISA_WHATSAPP, EVENT } from '../../data/vtexDay2026';
+import { CATALISA_WHATSAPP } from '../../data/vtexDay2026';
 
 const CALENDAR_URL =
   'https://www.google.com/calendar/render?action=TEMPLATE' +
-  '&text=' + encodeURIComponent('VTEX Day 2026 · visitar estande Catalisa') +
-  '&dates=20260416T120000Z/20260417T210000Z' +
-  '&details=' + encodeURIComponent('Passar no estande da Catalisa no VTEX Day 2026. São Paulo Expo. https://catalisa.io/vtex-day-2026') +
-  '&location=' + encodeURIComponent('São Paulo Expo');
+  '&text=' + encodeURIComponent('Demo Catalisa — Assistente VTEX WhatsApp') +
+  '&dates=20260420T140000Z/20260420T150000Z' +
+  '&details=' + encodeURIComponent('Conversa com a Catalisa sobre automação de atendimento VTEX via WhatsApp. https://catalisa.io/vtex-day-2026') +
+  '&location=' + encodeURIComponent('Online / WhatsApp');
 
 export function VtexDayFinalCTA() {
   const { t } = useTranslation('vtex-day-2026');
@@ -44,7 +44,7 @@ export function VtexDayFinalCTA() {
       <Container maxW="860px" position="relative">
         <VStack spacing={6} textAlign="center">
           <Heading as="h2" size={{ base: 'lg', md: 'xl' }}>
-            {t('finalCta.heading')} — estande {EVENT.boothLabel}
+            {t('finalCta.heading')}
           </Heading>
           <Text color="whiteAlpha.800" fontSize={{ base: 'md', md: 'lg' }} maxW="600px">
             {t('finalCta.subtitle')}

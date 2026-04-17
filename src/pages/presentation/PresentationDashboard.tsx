@@ -47,6 +47,7 @@ const DECKS = [
   { key: 'varejo', label: 'Varejo', color: 'green', path: '/apresentacao/varejo' },
   { key: 'fintech', label: 'Fintech', color: 'orange', path: '/apresentacao/fintech' },
   { key: 'seguros', label: 'Seguros', color: 'red', path: '/apresentacao/seguros' },
+  { key: 'economics', label: 'Economics', color: 'teal', path: '/apresentacao/economics' },
 ] as const;
 
 const DECK_COLOR_MAP: Record<string, string> = Object.fromEntries(DECKS.map(d => [d.key, d.color]));

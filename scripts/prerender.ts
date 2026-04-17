@@ -15,7 +15,7 @@ const routes = [
   '/fintech', '/bancario', '/seguros', '/varejo', '/startups',
   '/casos-de-uso', '/contato', '/demo', '/politica-privacidade',
   '/termos', '/seguranca', '/precos', '/como-funciona', '/integracoes/whatsapp',
-  '/press-kit', '/agentes-ia-whatsapp',
+  '/press-kit', '/agentes-ia-whatsapp', '/vtex-day-2026',
   '/apresentacao',
   '/apresentacao/comercial', '/apresentacao/investidor', '/apresentacao/varejo', '/apresentacao/fintech', '/apresentacao/seguros',
   // en-US

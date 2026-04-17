@@ -1,7 +1,7 @@
 {
   "name": "catalisa-hotsite",
   "private": true,
-  "version": "0.0.5",
+  "version": "0.0.6",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -18,7 +18,8 @@
     "@chakra-ui/react": "^2.10.9",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
-    "@supabase/supabase-js": "^2.98.0",
+    "@netlify/functions": "^5.1.3",
+    "@supabase/supabase-js": "^2.99.1",
     "framer-motion": "^11.18.2",
     "i18next": "^25.8.12",
     "i18next-resources-to-backend": "^1.2.1",

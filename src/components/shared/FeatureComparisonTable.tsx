@@ -10,12 +10,14 @@ interface Column {
 interface FeatureComparisonTableProps {
   columns: Column[];
   rows: { feature: string; values: (string | boolean)[] }[];
+  featureHeader?: string;
   accentColor?: string;
 }
 
 export function FeatureComparisonTable({
   columns,
   rows,
+  featureHeader,
   accentColor = 'brand',
 }: FeatureComparisonTableProps) {
   return (
@@ -38,7 +40,9 @@ export function FeatureComparisonTable({
                 textTransform="uppercase"
                 letterSpacing="wide"
                 borderColor="gray.100"
-              />
+              >
+                {featureHeader || ''}
+              </Th>
               {columns.map((col) => (
                 <Th
                   key={col.label}

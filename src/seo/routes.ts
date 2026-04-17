@@ -249,6 +249,15 @@ export const routes: RouteDefinition[] = [
     breadcrumbCategory: 'insights',
   },
   {
+    ptPath: '/vtex-day-2026',
+    enPath: '/vtex-day-2026',
+    pageKey: 'vtexDay2026',
+    priority: 0.9,
+    changefreq: 'daily',
+    schemas: ['Organization', 'BreadcrumbList'],
+    ogImage: '/og/default.png',
+  },
+  {
     ptPath: '/apresentacao',
     enPath: '/en/presentation',
     pageKey: 'presentationDashboard',

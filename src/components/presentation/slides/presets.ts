@@ -28,6 +28,14 @@ import { S27_ForresterROI } from './S27_ForresterROI';
 import { S28_GTMStrategy } from './S28_GTMStrategy';
 import { S29_CompetitiveMoat } from './S29_CompetitiveMoat';
 import { S30_MarketValidation } from './S30_MarketValidation';
+import { S31_RevenueModel } from './S31_RevenueModel';
+import { S32_UnitEconomics } from './S32_UnitEconomics';
+import { S33_CompetitiveAdvantage } from './S33_CompetitiveAdvantage';
+import { S34_FinancialProjection } from './S34_FinancialProjection';
+import { S35_InvestmentROI } from './S35_InvestmentROI';
+import { S36_AcquisitionStrategy } from './S36_AcquisitionStrategy';
+import { S37_GrowthTargets } from './S37_GrowthTargets';
+import { S38_KPIs } from './S38_KPIs';
 
 /** Full commercial presentation — 24 slides */
 export const commercialSlides = [
@@ -57,7 +65,7 @@ export const commercialSlides = [
   S16_CTA,
 ];
 
-/** Investor deck — 19 slides */
+/** Investor deck — 24 slides (19 original + 5 economics) */
 export const investorSlides = [
   S01_Cover,
   S02_MarketOpportunity,
@@ -77,6 +85,11 @@ export const investorSlides = [
   S13_Architecture,
   S20_TrustAndPricing,
   S21_InsightsCTA,
+  S31_RevenueModel,
+  S32_UnitEconomics,
+  S33_CompetitiveAdvantage,
+  S34_FinancialProjection,
+  S35_InvestmentROI,
   S16_CTA,
 ];
 
@@ -134,5 +147,20 @@ export const insuranceSlides = [
   S13_Architecture,
   S20_TrustAndPricing,
   S21_InsightsCTA,
+  S16_CTA,
+];
+
+/** Executive economics deck — full financial thesis + KPIs */
+export const economicsSlides = [
+  S01_Cover,
+  S02_MarketOpportunity,
+  S31_RevenueModel,
+  S32_UnitEconomics,
+  S33_CompetitiveAdvantage,
+  S34_FinancialProjection,
+  S35_InvestmentROI,
+  S36_AcquisitionStrategy,
+  S37_GrowthTargets,
+  S38_KPIs,
   S16_CTA,
 ];

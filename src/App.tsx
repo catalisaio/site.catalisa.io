@@ -32,6 +32,7 @@ const InvestorPresentation = lazy(() => import('./pages/InvestorPresentation').t
 const RetailPresentation = lazy(() => import('./pages/RetailPresentation').then(m => ({ default: m.RetailPresentation })));
 const FintechPresentation = lazy(() => import('./pages/FintechPresentation').then(m => ({ default: m.FintechPresentation })));
 const InsurancePresentation = lazy(() => import('./pages/InsurancePresentation').then(m => ({ default: m.InsurancePresentation })));
+const EconomicsPresentation = lazy(() => import('./pages/EconomicsPresentation').then(m => ({ default: m.EconomicsPresentation })));
 const Apps = lazy(() => import('./pages/Apps').then(m => ({ default: m.Apps })));
 const AIAgentsWhatsApp = lazy(() => import('./pages/AIAgentsWhatsApp').then(m => ({ default: m.AIAgentsWhatsApp })));
 const PlaybookDetail = lazy(() => import('./pages/PlaybookDetail').then(m => ({ default: m.PlaybookDetail })));
@@ -46,6 +47,11 @@ const TrainingLogin = lazy(() => import('./pages/training/TrainingLogin').then(m
 const TrainingCatalog = lazy(() => import('./pages/training/TrainingCatalog').then(m => ({ default: m.TrainingCatalog })));
 const CourseDetail = lazy(() => import('./pages/training/CourseDetail').then(m => ({ default: m.CourseDetail })));
 const LessonPage = lazy(() => import('./pages/training/LessonPage').then(m => ({ default: m.LessonPage })));
+const TrainingTracks = lazy(() => import('./pages/training/TrainingTracks').then(m => ({ default: m.TrainingTracks })));
+const TrainingProfile = lazy(() => import('./pages/training/TrainingProfile').then(m => ({ default: m.TrainingProfile })));
+const TrainingCertificate = lazy(() => import('./pages/training/TrainingCertificate').then(m => ({ default: m.TrainingCertificate })));
+const Determinismo = lazy(() => import('./pages/Determinismo').then(m => ({ default: m.default })));
+const VtexDay2026 = lazy(() => import('./pages/VtexDay2026').then(m => ({ default: m.default })));
 const NotFound = lazy(() => import('./pages/NotFound').then(m => ({ default: m.NotFound })));
 
 function PageLoader() {
@@ -94,6 +100,7 @@ function App() {
               <Route path="/apresentacao/varejo" element={<PresentationGate><RetailPresentation /></PresentationGate>} />
               <Route path="/apresentacao/fintech" element={<PresentationGate><FintechPresentation /></PresentationGate>} />
               <Route path="/apresentacao/seguros" element={<PresentationGate><InsurancePresentation /></PresentationGate>} />
+              <Route path="/apresentacao/economics" element={<PresentationGate><EconomicsPresentation /></PresentationGate>} />
             </Route>
             <Route path="/en" element={<LanguageLayout lang="en-US" />}>
               <Route path="presentation/commercial" element={<PresentationGate><CommercialPresentation /></PresentationGate>} />
@@ -101,6 +108,7 @@ function App() {
               <Route path="presentation/retail" element={<PresentationGate><RetailPresentation /></PresentationGate>} />
               <Route path="presentation/fintech" element={<PresentationGate><FintechPresentation /></PresentationGate>} />
               <Route path="presentation/insurance" element={<PresentationGate><InsurancePresentation /></PresentationGate>} />
+              <Route path="presentation/economics" element={<PresentationGate><EconomicsPresentation /></PresentationGate>} />
             </Route>
 
             {/* Standard routes — with Header/Footer */}
@@ -133,6 +141,9 @@ function App() {
                 <Route path="/transparencia-ia" element={<AITransparency />} />
                 <Route path="/treinamento/login" element={<TrainingLogin />} />
                 <Route path="/treinamento" element={<TrainingCatalog />} />
+                <Route path="/treinamento/trilhas" element={<TrainingTracks />} />
+                <Route path="/treinamento/perfil" element={<TrainingProfile />} />
+                <Route path="/treinamento/certificado/:certId" element={<TrainingCertificate />} />
                 <Route path="/treinamento/:courseSlug" element={<CourseDetail />} />
                 <Route path="/treinamento/:courseSlug/:moduleSlug/:lessonSlug" element={<LessonPage />} />
                 <Route path="/apresentacao/login" element={<PresentationLogin />} />
@@ -143,6 +154,8 @@ function App() {
                 <Route path="/insights/all" element={<InsightsListing />} />
                 <Route path="/insights/magazine" element={<Navigate to="/insights" replace />} />
                 <Route path="/insights/:slug" element={<InsightArticle />} />
+                <Route path="/determinismo" element={<Determinismo />} />
+                <Route path="/vtex-day-2026" element={<VtexDay2026 />} />
               </Route>
 
               {/* en-US routes (/en prefix) */}
@@ -172,6 +185,9 @@ function App() {
                 <Route path="ai-transparency" element={<AITransparency />} />
                 <Route path="training/login" element={<TrainingLogin />} />
                 <Route path="training" element={<TrainingCatalog />} />
+                <Route path="training/tracks" element={<TrainingTracks />} />
+                <Route path="training/profile" element={<TrainingProfile />} />
+                <Route path="training/certificate/:certId" element={<TrainingCertificate />} />
                 <Route path="training/:courseSlug" element={<CourseDetail />} />
                 <Route path="training/:courseSlug/:moduleSlug/:lessonSlug" element={<LessonPage />} />
                 <Route path="presentation/login" element={<PresentationLogin />} />
@@ -182,6 +198,7 @@ function App() {
                 <Route path="insights/all" element={<InsightsListing />} />
                 <Route path="insights/magazine" element={<Navigate to="/en/insights" replace />} />
                 <Route path="insights/:slug" element={<InsightArticle />} />
+                <Route path="determinism" element={<Determinismo />} />
               </Route>
 
               {/* Catch-all */}

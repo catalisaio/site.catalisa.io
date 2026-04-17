@@ -20,6 +20,7 @@ const DECK_META: Record<string, { label: string; color: string; path: string }> 
   varejo:     { label: 'Varejo',     color: 'green',  path: '/apresentacao/varejo' },
   fintech:    { label: 'Fintech',    color: 'orange', path: '/apresentacao/fintech' },
   seguros:    { label: 'Seguros',    color: 'red',    path: '/apresentacao/seguros' },
+  economics:  { label: 'Economics',  color: 'teal',   path: '/apresentacao/economics' },
 };
 
 const ALL_DECK_KEYS = Object.keys(DECK_META);

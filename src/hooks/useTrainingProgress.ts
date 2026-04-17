@@ -9,26 +9,11 @@ import {
   insertTrainingEvent,
 } from '../lib/trainingTracking';
 
-const STORAGE_KEY = 'catalisa_training_progress';
-
 interface LessonProgress {
   completedAt: string;
 }
 
 type ProgressMap = Record<string, LessonProgress>;
-
-function loadLocalProgress(): ProgressMap {
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    return raw ? JSON.parse(raw) : {};
-  } catch {
-    return {};
-  }
-}
-
-function saveLocalProgress(progress: ProgressMap) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
-}
 
 function lessonKey(courseSlug: string, moduleSlug: string, lessonSlug: string): string {
   return `${courseSlug}/${moduleSlug}/${lessonSlug}`;
@@ -36,13 +21,15 @@ function lessonKey(courseSlug: string, moduleSlug: string, lessonSlug: string): 
 
 export function useTrainingProgress() {
   const { user } = useSupabaseAuth();
-  const [progress, setProgress] = useState<ProgressMap>(loadLocalProgress);
+  const [progress, setProgress] = useState<ProgressMap>({});
   const [loaded, setLoaded] = useState(false);
   const syncedRef = useRef(false);
 
-  // Init tracking module and sync from Supabase when user is available
+  // Load progress from Supabase when user is available
   useEffect(() => {
     if (!user?.id) {
+      setProgress({});
+      setLoaded(false);
       syncedRef.current = false;
       return;
     }
@@ -54,23 +41,12 @@ export function useTrainingProgress() {
     initTrainingUser(user.id);
 
     fetchUserProgress().then((rows) => {
-      if (rows.length === 0) {
-        setLoaded(true);
-        return;
-      }
-
-      // Merge: server wins
       const serverMap: ProgressMap = {};
       for (const row of rows) {
         const key = lessonKey(row.course_slug, row.module_slug, row.lesson_slug);
         serverMap[key] = { completedAt: row.completed_at };
       }
-
-      setProgress((prev) => {
-        const merged = { ...prev, ...serverMap };
-        saveLocalProgress(merged);
-        return merged;
-      });
+      setProgress(serverMap);
       setLoaded(true);
     });
   }, [user?.id]);
@@ -93,15 +69,17 @@ export function useTrainingProgress() {
       const now = new Date().toISOString();
       const seconds = Math.round(getActiveSeconds());
 
-      // Optimistic: localStorage + state
-      const updated = { ...progress, [key]: { completedAt: now } };
-      saveLocalProgress(updated);
-      setProgress(updated);
+      // Optimistic update (state only)
+      setProgress((prev) => {
+        const updated = { ...prev, [key]: { completedAt: now } };
+        if (modules) {
+          detectMilestones(courseSlug, moduleSlug, lessonSlug, modules, updated);
+        }
+        return updated;
+      });
 
-      // Mark session as completed
       markSessionCompleted();
 
-      // Fire lesson_complete event
       insertTrainingEvent('lesson_complete', {
         course: courseSlug,
         module: moduleSlug,
@@ -109,15 +87,14 @@ export function useTrainingProgress() {
         seconds,
       });
 
-      // Persist to Supabase (async, fire-and-forget)
+      // Persist to Supabase; rollback on failure
       completeLessonInSupabase(courseSlug, moduleSlug, lessonSlug, seconds).catch(() => {
-        // localStorage already has the data; next load will retry sync
+        setProgress((prev) => {
+          const rolled = { ...prev };
+          delete rolled[key];
+          return rolled;
+        });
       });
-
-      // Detect milestones
-      if (modules) {
-        detectMilestones(courseSlug, moduleSlug, lessonSlug, modules, updated);
-      }
     },
     [progress],
   );

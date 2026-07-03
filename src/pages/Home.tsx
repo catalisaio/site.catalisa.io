@@ -16,6 +16,7 @@ const ROICalculator = lazy(() => import('../components/sections/ROICalculator').
 const IndustrySolutions = lazy(() => import('../components/sections/IndustrySolutions').then(m => ({ default: m.IndustrySolutions })));
 const TrustSection = lazy(() => import('../components/sections/TrustSection').then(m => ({ default: m.TrustSection })));
 const FAQ = lazy(() => import('../components/sections/FAQ').then(m => ({ default: m.FAQ })));
+const PlatformPurpose = lazy(() => import('../components/sections/PlatformPurpose').then(m => ({ default: m.PlatformPurpose })));
 const FinalCTA = lazy(() => import('../components/sections/FinalCTA').then(m => ({ default: m.FinalCTA })));
 
 export function Home() {
@@ -38,6 +39,7 @@ export function Home() {
         <IndustrySolutions />
         <TrustSection />
         <FAQ />
+        <PlatformPurpose />
         <FinalCTA />
       </Suspense>
     </>

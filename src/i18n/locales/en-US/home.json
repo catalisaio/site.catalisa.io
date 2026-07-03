@@ -1,5 +1,19 @@
 {
   "scrollHint": "Scroll to explore",
+  "platformPurpose": {
+    "heading": "What Catalisa is",
+    "subtitle": "A platform for businesses to support customers, sell, and automate operations with AI agents — and, when you connect Google, to schedule meetings and send emails too.",
+    "whatIs": {
+      "title": "The platform",
+      "body": "A multi-tenant CRM, customer-engagement and automation platform powered by AI agents. Businesses manage leads, talk to customers over WhatsApp, and automate workflows — including smart meeting scheduling."
+    },
+    "google": {
+      "title": "Google integration",
+      "body": "When you connect your Google account, Catalisa checks your availability and creates, updates or cancels calendar events on your behalf — for example, when an AI agent books a meeting with a customer — and sends emails that you or your automations trigger. You grant access individually and can disconnect at any time."
+    },
+    "privacyNote": "We only access the data needed for these features.",
+    "privacyLink": "See our Privacy Policy"
+  },
   "hero": {
     "headline": "Your customers expect answers in seconds.",
     "headlineGradient": "Your team can't keep up.",

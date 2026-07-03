@@ -199,6 +199,19 @@
       "content": "In the event of a security incident that may pose a risk or relevant harm to personal data subjects, Catalisa will take the following measures:\n\n(a) Notification to the National Data Protection Authority (ANPD) within 72 (seventy-two) hours after confirmation of the incident, in accordance with Art. 48 of the LGPD.\n\n(b) Communication to affected data subjects, within a reasonable timeframe, containing: description of the nature of the affected data, information about the risks, measures taken to mitigate the effects and guidance for the data subject.\n\n(c) Internal incident record with complete documentation: nature, affected data, impacted data subjects, technical measures taken and results of containment actions.\n\n(d) Notification to the User (when acting as Processor) so that they may take the necessary measures with their customers."
     },
     {
+      "title": "Use of Google API Services Data",
+      "content": "When you connect a Google account to the Catalisa Platform, we access and use data from that account solely to provide the features you enable. Catalisa's use and transfer of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements.",
+      "items": [
+        "Google Calendar: we check your availability (free and busy periods) and create, update and cancel calendar events that you — or automations and AI agents you configure — request. Used, for example, to schedule meetings with your customers during a conversation.",
+        "Gmail (send): we send emails on your behalf when you, or an automation you configure, trigger a send from the Platform (for example, meeting confirmations and follow-up messages). We do not read your inbox.",
+        "Account identification: we access your Google email address only to identify which account was connected, so you can recognize and manage it.",
+        "We do not use data obtained from Google APIs for advertising, and we do not sell it.",
+        "We do not transfer data obtained from Google APIs to third parties except as necessary to provide the features described, when required by law, or with your explicit consent.",
+        "Humans do not read this data, except (i) with your explicit consent, (ii) for security purposes (such as investigating abuse or incidents), (iii) to comply with a legal obligation, or (iv) when the data is aggregated and anonymized.",
+        "Access tokens are stored encrypted. You can revoke access at any time within the Platform or at myaccount.google.com/permissions."
+      ]
+    },
+    {
       "title": "Final Provisions",
       "content": "Minors. Our services are not intended for individuals under 18 (eighteen) years of age. We do not intentionally collect personal data from minors. If you become aware that data from a minor has been collected, please contact us so we can delete it.\n\nChanges to this Policy. We may update this Privacy Policy periodically. Significant changes will be communicated with a minimum of 30 (thirty) days' advance notice by email or Platform notification. Continued use of the Platform after the notice period constitutes acceptance of the updated Policy.\n\nContact. To exercise your rights, clarify questions or submit complaints about this Policy:\n\nDPO email: privacidade@catalisa.io\nGeneral email: contato@catalisa.io\nWhatsApp: +55 11 97730-3414\n\nJurisdiction. The courts of Sao Paulo, State of Sao Paulo, Brazil, are elected to resolve any disputes arising from this Policy."
     }

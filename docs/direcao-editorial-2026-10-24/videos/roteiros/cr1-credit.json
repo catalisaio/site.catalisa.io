@@ -1,0 +1,705 @@
+{
+ "version": 1,
+ "title": "CR1 · Credit Platform · Crédito tem começo. A operação continua.",
+ "formats": [
+  "16:9",
+  "9:16"
+ ],
+ "fps": 30,
+ "theme": "paper",
+ "vibe": "premium",
+ "transitionStyle": "push",
+ "captionStyle": "box",
+ "look": {
+  "headingWeight": 300,
+  "tracking": -0.035
+ },
+ "disclaimer": "Interface de referência · ambiente demonstrativo",
+ "musicStock": "475",
+ "brand": {
+  "name": "Catalisa",
+  "url": "catalisa.io",
+  "logo": "brand/logo-tight.png",
+  "logoLight": "brand/logo-white-tight.png",
+  "font": "Inter",
+  "colors": {
+   "primary": "#734B9C",
+   "accent": "#F18A43",
+   "background": "#F6F3EE",
+   "text": "#1A1D23"
+  }
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "type": "collage",
+   "duration": 5.4,
+   "bg": "#35213F",
+   "kicker": "Catalisa / Credit Platform",
+   "headline": "Crédito\ntem começo.\nA operação\ncontinua.",
+   "textAt": [
+    90,
+    230
+   ],
+   "size": 64,
+   "textColor": "#F6F3EE",
+   "textIn": 1,
+   "sign": "light",
+   "layers": [
+    {
+     "kind": "shape",
+     "color": "#CDBAE0",
+     "box": [
+      1380,
+      0,
+      220,
+      360
+     ],
+     "enter": "down",
+     "at": 0
+    },
+    {
+     "kind": "photo",
+     "src": "photos/c1-executivo.jpg",
+     "box": [
+      640,
+      70,
+      760,
+      760
+     ],
+     "focus": [
+      0.47,
+      0.5
+     ],
+     "enter": "grow",
+     "at": 0.2,
+     "shape": "circle",
+     "zoom": 1.05
+    },
+    {
+     "kind": "screen",
+     "src": "screens/mesa-fila.jpg",
+     "box": [
+      1110,
+      590,
+      420,
+      210
+     ],
+     "enter": "up",
+     "at": 1.1
+    },
+    {
+     "kind": "shape",
+     "color": "#F18A43",
+     "box": [
+      330,
+      760,
+      280,
+      140
+     ],
+     "enter": "up",
+     "at": 0.6,
+     "shape": "half"
+    }
+   ],
+   "textAtMobile": [
+    90,
+    1200
+   ],
+   "sizeMobile": 76,
+   "layersMobile": [
+    {
+     "kind": "shape",
+     "color": "#CDBAE0",
+     "box": [
+      760,
+      0,
+      320,
+      300
+     ],
+     "enter": "down",
+     "at": 0
+    },
+    {
+     "kind": "photo",
+     "src": "photos/c1-executivo.jpg",
+     "box": [
+      140,
+      240,
+      800,
+      800
+     ],
+     "focus": [
+      0.47,
+      0.5
+     ],
+     "enter": "grow",
+     "at": 0.2,
+     "shape": "circle",
+     "zoom": 1.05
+    },
+    {
+     "kind": "screen",
+     "src": "screens/mesa-fila.jpg",
+     "box": [
+      500,
+      880,
+      540,
+      270
+     ],
+     "enter": "up",
+     "at": 1.1
+    },
+    {
+     "kind": "shape",
+     "color": "#F18A43",
+     "box": [
+      600,
+      1730,
+      400,
+      200
+     ],
+     "enter": "up",
+     "at": 0.6,
+     "shape": "half"
+    }
+   ]
+  },
+  {
+   "id": "s02",
+   "type": "collage",
+   "duration": 4.8,
+   "enter": "line",
+   "kicker": "Para quem estrutura crédito",
+   "headline": "FIDCs.\nSecuritizadoras.\nFinanceiras. Bancos.",
+   "textAt": [
+    90,
+    280
+   ],
+   "size": 60,
+   "textIn": 0.5,
+   "sign": "color",
+   "layers": [
+    {
+     "kind": "shape",
+     "color": "#F18A43",
+     "box": [
+      960,
+      0,
+      640,
+      900
+     ],
+     "enter": "down",
+     "at": 0
+    },
+    {
+     "kind": "shape",
+     "color": "#734B9C",
+     "box": [
+      1060,
+      180,
+      440,
+      440
+     ],
+     "enter": "grow",
+     "at": 0.3,
+     "shape": "circle"
+    },
+    {
+     "kind": "shape",
+     "color": "#FDC234",
+     "box": [
+      1180,
+      640,
+      180,
+      180
+     ],
+     "enter": "grow",
+     "at": 0.6,
+     "shape": "circle"
+    }
+   ],
+   "textAtMobile": [
+    90,
+    1150
+   ],
+   "sizeMobile": 72,
+   "layersMobile": [
+    {
+     "kind": "shape",
+     "color": "#F18A43",
+     "box": [
+      0,
+      0,
+      1080,
+      980
+     ],
+     "enter": "down",
+     "at": 0
+    },
+    {
+     "kind": "shape",
+     "color": "#734B9C",
+     "box": [
+      300,
+      200,
+      480,
+      480
+     ],
+     "enter": "grow",
+     "at": 0.3,
+     "shape": "circle"
+    },
+    {
+     "kind": "shape",
+     "color": "#FDC234",
+     "box": [
+      700,
+      620,
+      200,
+      200
+     ],
+     "enter": "grow",
+     "at": 0.6,
+     "shape": "circle"
+    }
+   ]
+  },
+  {
+   "id": "s03",
+   "type": "collage",
+   "duration": 4.8,
+   "enter": "dive",
+   "kicker": "01 / Construir",
+   "headline": "Quem cria\ndefine o produto.",
+   "sub": "Produto, política, condições\ne documentos, cada um no seu lugar.",
+   "textAt": [
+    90,
+    330
+   ],
+   "size": 62,
+   "textIn": 0.8,
+   "sign": "color",
+   "layers": [
+    {
+     "kind": "shape",
+     "color": "#734B9C",
+     "box": [
+      980,
+      80,
+      520,
+      520
+     ],
+     "enter": "grow",
+     "at": 0.1,
+     "shape": "circle"
+    },
+    {
+     "kind": "photo",
+     "src": "photos/c7b-criadora.jpg",
+     "box": [
+      720,
+      0,
+      460,
+      900
+     ],
+     "focus": [
+      0.6,
+      0.5
+     ],
+     "enter": "reveal",
+     "at": 0,
+     "flip": true
+    },
+    {
+     "kind": "shape",
+     "color": "#F18A43",
+     "box": [
+      1140,
+      600,
+      460,
+      300
+     ],
+     "enter": "up",
+     "at": 0.4
+    }
+   ],
+   "textAtMobile": [
+    90,
+    1230
+   ],
+   "sizeMobile": 70,
+   "layersMobile": [
+    {
+     "kind": "shape",
+     "color": "#734B9C",
+     "box": [
+      520,
+      120,
+      520,
+      520
+     ],
+     "enter": "grow",
+     "at": 0.1,
+     "shape": "circle"
+    },
+    {
+     "kind": "photo",
+     "src": "photos/c7b-criadora.jpg",
+     "box": [
+      90,
+      200,
+      620,
+      900
+     ],
+     "focus": [
+      0.6,
+      0.5
+     ],
+     "enter": "reveal",
+     "at": 0,
+     "flip": true
+    },
+    {
+     "kind": "shape",
+     "color": "#F18A43",
+     "box": [
+      700,
+      820,
+      380,
+      280
+     ],
+     "enter": "up",
+     "at": 0.4
+    }
+   ]
+  },
+  {
+   "id": "s04",
+   "type": "collage",
+   "duration": 5,
+   "enter": "push",
+   "kicker": "02 / Operar",
+   "headline": "Uma proposta chega.\nO contexto vem junto.",
+   "sub": "A fila reúne propostas, informações e sinais.",
+   "textAt": [
+    90,
+    610
+   ],
+   "size": 50,
+   "textIn": 0.8,
+   "sign": "color",
+   "layers": [
+    {
+     "kind": "shape",
+     "color": "#734B9C",
+     "box": [
+      1020,
+      -160,
+      700,
+      700
+     ],
+     "enter": "grow",
+     "at": 0,
+     "shape": "circle"
+    },
+    {
+     "kind": "screen",
+     "src": "screens/mesa-fila.jpg",
+     "box": [
+      600,
+      110,
+      900,
+      450
+     ],
+     "enter": "up",
+     "at": 0.3
+    },
+    {
+     "kind": "shape",
+     "color": "#FDC234",
+     "box": [
+      1430,
+      520,
+      140,
+      140
+     ],
+     "enter": "grow",
+     "at": 0.6,
+     "shape": "circle"
+    }
+   ],
+   "textAtMobile": [
+    90,
+    1080
+   ],
+   "sizeMobile": 66,
+   "layersMobile": [
+    {
+     "kind": "shape",
+     "color": "#734B9C",
+     "box": [
+      460,
+      -120,
+      760,
+      760
+     ],
+     "enter": "grow",
+     "at": 0,
+     "shape": "circle"
+    },
+    {
+     "kind": "screen",
+     "src": "screens/mesa-fila.jpg",
+     "box": [
+      60,
+      380,
+      960,
+      480
+     ],
+     "enter": "up",
+     "at": 0.3
+    },
+    {
+     "kind": "shape",
+     "color": "#FDC234",
+     "box": [
+      860,
+      800,
+      160,
+      160
+     ],
+     "enter": "grow",
+     "at": 0.6,
+     "shape": "circle"
+    }
+   ]
+  },
+  {
+   "id": "s05",
+   "type": "collage",
+   "duration": 5,
+   "enter": "line",
+   "kicker": "03 / Acompanhar",
+   "headline": "A base comum\ncontinua.\nO lastro muda.",
+   "sub": "Rebanho, recebíveis, plantões.",
+   "textAt": [
+    90,
+    200
+   ],
+   "size": 60,
+   "textIn": 0.8,
+   "sign": "light",
+   "layers": [
+    {
+     "kind": "shape",
+     "color": "#F18A43",
+     "box": [
+      1180,
+      60,
+      380,
+      380
+     ],
+     "enter": "grow",
+     "at": 0.1,
+     "shape": "circle"
+    },
+    {
+     "kind": "photo",
+     "src": "photos/c6-agro.jpg",
+     "box": [
+      760,
+      0,
+      560,
+      900
+     ],
+     "focus": [
+      0.66,
+      0.5
+     ],
+     "enter": "reveal",
+     "at": 0,
+     "zoom": 1.1
+    },
+    {
+     "kind": "shape",
+     "color": "#734B9C",
+     "box": [
+      0,
+      560,
+      760,
+      340
+     ],
+     "enter": "left",
+     "at": 0.4
+    },
+    {
+     "kind": "shape",
+     "color": "#FDC234",
+     "box": [
+      1320,
+      640,
+      180,
+      180
+     ],
+     "enter": "grow",
+     "at": 0.6,
+     "shape": "circle"
+    }
+   ],
+   "textAtMobile": [
+    90,
+    1330
+   ],
+   "sizeMobile": 70,
+   "signMobile": "color",
+   "layersMobile": [
+    {
+     "kind": "shape",
+     "color": "#F18A43",
+     "box": [
+      600,
+      80,
+      420,
+      420
+     ],
+     "enter": "grow",
+     "at": 0.1,
+     "shape": "circle"
+    },
+    {
+     "kind": "photo",
+     "src": "photos/c6-agro.jpg",
+     "box": [
+      160,
+      160,
+      760,
+      1080
+     ],
+     "focus": [
+      0.66,
+      0.5
+     ],
+     "enter": "reveal",
+     "at": 0,
+     "zoom": 1.1
+    },
+    {
+     "kind": "shape",
+     "color": "#FDC234",
+     "box": [
+      820,
+      1100,
+      200,
+      200
+     ],
+     "enter": "grow",
+     "at": 0.6,
+     "shape": "circle"
+    }
+   ]
+  },
+  {
+   "id": "s06",
+   "type": "collage",
+   "duration": 5,
+   "enter": "push",
+   "logoBig": true,
+   "sub": "A operação de crédito\nda sua casa, da proposta à carteira.",
+   "button": "Conheça a Credit",
+   "textAt": [
+    90,
+    330
+   ],
+   "size": 72,
+   "textIn": 0.6,
+   "sign": "color",
+   "layers": [
+    {
+     "kind": "shape",
+     "color": "#F18A43",
+     "box": [
+      1240,
+      0,
+      180,
+      900
+     ],
+     "enter": "down",
+     "at": 0
+    },
+    {
+     "kind": "shape",
+     "color": "#FDC234",
+     "box": [
+      1060,
+      150,
+      400,
+      400
+     ],
+     "enter": "grow",
+     "at": 0.2,
+     "shape": "circle"
+    },
+    {
+     "kind": "shape",
+     "color": "#734B9C",
+     "box": [
+      900,
+      640,
+      520,
+      260
+     ],
+     "enter": "up",
+     "at": 0.4,
+     "shape": "half"
+    }
+   ],
+   "textAtMobile": [
+    90,
+    980
+   ],
+   "sizeMobile": 80,
+   "layersMobile": [
+    {
+     "kind": "shape",
+     "color": "#F18A43",
+     "box": [
+      760,
+      0,
+      200,
+      900
+     ],
+     "enter": "down",
+     "at": 0
+    },
+    {
+     "kind": "shape",
+     "color": "#FDC234",
+     "box": [
+      440,
+      260,
+      460,
+      460
+     ],
+     "enter": "grow",
+     "at": 0.2,
+     "shape": "circle"
+    },
+    {
+     "kind": "shape",
+     "color": "#734B9C",
+     "box": [
+      140,
+      1560,
+      800,
+      400
+     ],
+     "enter": "up",
+     "at": 0.4,
+     "shape": "half"
+    }
+   ]
+  }
+ ],
+ "music": "audio/track-475.mp3"
+}

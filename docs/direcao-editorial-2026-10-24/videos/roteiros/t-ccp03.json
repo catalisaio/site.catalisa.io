@@ -1,0 +1,554 @@
+{
+ "version": 1,
+ "title": "CCP-03 · O contexto chega junto.",
+ "formats": [
+  "16:9",
+  "9:16"
+ ],
+ "fps": 30,
+ "theme": "paper",
+ "vibe": "premium",
+ "transitionStyle": "push",
+ "captionStyle": "box",
+ "look": {
+  "headingWeight": 300,
+  "tracking": -0.035
+ },
+ "disclaimer": "Interface de referência · ambiente demonstrativo",
+ "musicStock": "24",
+ "brand": {
+  "name": "Catalisa",
+  "url": "catalisa.io",
+  "logo": "brand/logo-tight.png",
+  "logoLight": "brand/logo-white-tight.png",
+  "font": "Inter",
+  "colors": {
+   "primary": "#734B9C",
+   "accent": "#F18A43",
+   "background": "#F6F3EE",
+   "text": "#1A1D23"
+  }
+ },
+ "scenes": [
+  {
+   "id": "p1",
+   "type": "collage",
+   "duration": 4.6,
+   "kicker": "Catalisa / Credit Platform",
+   "headline": "O contexto\nchega junto.",
+   "textAt": [
+    90,
+    300
+   ],
+   "size": 80,
+   "textIn": 1,
+   "sign": "light",
+   "layers": [
+    {
+     "kind": "photo",
+     "src": "photos/c1-executivo.jpg",
+     "box": [
+      620,
+      60,
+      780,
+      780
+     ],
+     "focus": [
+      0.47,
+      0.5
+     ],
+     "enter": "grow",
+     "at": 0.1,
+     "shape": "circle",
+     "zoom": 1.05
+    },
+    {
+     "kind": "photo",
+     "src": "photos/c8-desktop.jpg",
+     "box": [
+      1360,
+      420,
+      200,
+      380
+     ],
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "enter": "up",
+     "at": 0.6,
+     "shape": "arch",
+     "zoom": 1.4
+    },
+    {
+     "kind": "shape",
+     "color": "#F18A43",
+     "box": [
+      330,
+      770,
+      200,
+      100
+     ],
+     "enter": "up",
+     "at": 0.5,
+     "shape": "half"
+    }
+   ],
+   "layersMobile": [
+    {
+     "kind": "photo",
+     "src": "photos/c1-executivo.jpg",
+     "box": [
+      120,
+      220,
+      840,
+      840
+     ],
+     "focus": [
+      0.47,
+      0.5
+     ],
+     "enter": "grow",
+     "at": 0.1,
+     "shape": "circle",
+     "zoom": 1.05
+    },
+    {
+     "kind": "photo",
+     "src": "photos/c8-desktop.jpg",
+     "box": [
+      760,
+      900,
+      240,
+      440
+     ],
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "enter": "up",
+     "at": 0.6,
+     "shape": "arch",
+     "zoom": 1.4
+    }
+   ],
+   "textAtMobile": [
+    90,
+    1300
+   ],
+   "sizeMobile": 84,
+   "bg": "#35213F",
+   "textColor": "#F6F3EE"
+  },
+  {
+   "id": "p2",
+   "type": "collage",
+   "duration": 4.6,
+   "kicker": "Catalisa / Credit Platform",
+   "headline": "Fila e dossiê\npara começar\na análise.",
+   "textAt": [
+    90,
+    280
+   ],
+   "size": 66,
+   "textIn": 0.6,
+   "sign": "color",
+   "layers": [
+    {
+     "kind": "shape",
+     "color": "#F18A43",
+     "box": [
+      700,
+      0,
+      900,
+      900
+     ],
+     "enter": "left",
+     "at": 0
+    },
+    {
+     "kind": "shape",
+     "color": "#F6F3EE",
+     "box": [
+      820,
+      150,
+      660,
+      600
+     ],
+     "enter": "spin",
+     "at": 0.25
+    },
+    {
+     "kind": "screen",
+     "src": "screens/credit-queue.png",
+     "box": [
+      860,
+      200,
+      580,
+      362
+     ],
+     "enter": "spin",
+     "at": 0.5
+    }
+   ],
+   "layersMobile": [
+    {
+     "kind": "shape",
+     "color": "#F18A43",
+     "box": [
+      0,
+      0,
+      1080,
+      1100
+     ],
+     "enter": "down",
+     "at": 0
+    },
+    {
+     "kind": "screen",
+     "src": "screens/credit-queue.png",
+     "box": [
+      90,
+      300,
+      900,
+      562
+     ],
+     "enter": "spin",
+     "at": 0.5
+    }
+   ],
+   "textAtMobile": [
+    90,
+    1250
+   ],
+   "sizeMobile": 70,
+   "enter": "dive"
+  },
+  {
+   "id": "p3",
+   "type": "collage",
+   "duration": 6.4,
+   "kicker": "01 / Receber",
+   "headline": "Uma fila para\norientar o trabalho.",
+   "textAt": [
+    90,
+    560
+   ],
+   "size": 48,
+   "textIn": 0.8,
+   "sign": "color",
+   "layers": [
+    {
+     "kind": "shape",
+     "color": "#734B9C",
+     "box": [
+      1100,
+      -200,
+      700,
+      700
+     ],
+     "enter": "grow",
+     "at": 0,
+     "shape": "circle"
+    },
+    {
+     "kind": "screen",
+     "src": "screens/credit-queue.png",
+     "box": [
+      560,
+      130,
+      960,
+      600
+     ],
+     "enter": "up",
+     "at": 0.3
+    },
+    {
+     "kind": "shape",
+     "color": "#FDC234",
+     "box": [
+      1450,
+      700,
+      90,
+      90
+     ],
+     "enter": "grow",
+     "at": 0.8,
+     "shape": "circle"
+    }
+   ],
+   "layersMobile": [
+    {
+     "kind": "shape",
+     "color": "#734B9C",
+     "box": [
+      500,
+      -160,
+      760,
+      760
+     ],
+     "enter": "grow",
+     "at": 0,
+     "shape": "circle"
+    },
+    {
+     "kind": "screen",
+     "src": "screens/credit-queue.png",
+     "box": [
+      60,
+      320,
+      960,
+      600
+     ],
+     "enter": "up",
+     "at": 0.3
+    }
+   ],
+   "textAtMobile": [
+    90,
+    1130
+   ],
+   "sizeMobile": 68,
+   "enter": "line"
+  },
+  {
+   "id": "p5",
+   "type": "collage",
+   "duration": 6.4,
+   "headline": "Sua equipe sabe\nonde aprofundar.",
+   "textAt": [
+    760,
+    640
+   ],
+   "size": 56,
+   "textIn": 0.8,
+   "sign": false,
+   "layers": [
+    {
+     "kind": "photo",
+     "src": "photos/c1-executivo.jpg",
+     "box": [
+      90,
+      0,
+      520,
+      900
+     ],
+     "focus": [
+      0.45,
+      0.5
+     ],
+     "enter": "up",
+     "at": 0,
+     "zoom": 1.2,
+     "slices": 4
+    },
+    {
+     "kind": "screen",
+     "src": "screens/credit-queue.png",
+     "box": [
+      760,
+      90,
+      480,
+      300
+     ],
+     "enter": "up",
+     "at": 0.4
+    },
+    {
+     "kind": "screen",
+     "src": "screens/credit-portfolio.png",
+     "box": [
+      1060,
+      300,
+      480,
+      300
+     ],
+     "enter": "up",
+     "at": 0.6
+    },
+    {
+     "kind": "line",
+     "box": [
+      760,
+      800,
+      760,
+      6
+     ],
+     "at": 1,
+     "enter": "none"
+    }
+   ],
+   "layersMobile": [
+    {
+     "kind": "photo",
+     "src": "photos/c1-executivo.jpg",
+     "box": [
+      0,
+      0,
+      1080,
+      880
+     ],
+     "focus": [
+      0.45,
+      0.45
+     ],
+     "enter": "up",
+     "at": 0,
+     "zoom": 1.2,
+     "slices": 4
+    },
+    {
+     "kind": "screen",
+     "src": "screens/credit-queue.png",
+     "box": [
+      60,
+      940,
+      560,
+      350
+     ],
+     "enter": "up",
+     "at": 0.4
+    },
+    {
+     "kind": "screen",
+     "src": "screens/credit-portfolio.png",
+     "box": [
+      460,
+      1120,
+      560,
+      350
+     ],
+     "enter": "up",
+     "at": 0.6
+    }
+   ],
+   "textAtMobile": [
+    90,
+    1560
+   ],
+   "sizeMobile": 62,
+   "enter": "line"
+  },
+  {
+   "id": "p6",
+   "type": "collage",
+   "duration": 4.5,
+   "enter": "push",
+   "logoBig": true,
+   "button": "Imagine seu produto",
+   "textAt": [
+    90,
+    380
+   ],
+   "size": 72,
+   "textIn": 0.5,
+   "sign": "color",
+   "layers": [
+    {
+     "kind": "shape",
+     "color": "#734B9C",
+     "box": [
+      1100,
+      0,
+      500,
+      900
+     ],
+     "enter": "down",
+     "at": 0
+    },
+    {
+     "kind": "shape",
+     "color": "#EEE8DF",
+     "box": [
+      1100,
+      560,
+      500,
+      340
+     ],
+     "enter": "up",
+     "at": 0.25
+    },
+    {
+     "kind": "shape",
+     "color": "#FDC234",
+     "box": [
+      1300,
+      180,
+      90,
+      90
+     ],
+     "enter": "grow",
+     "at": 0.5,
+     "shape": "circle"
+    },
+    {
+     "kind": "line",
+     "box": [
+      90,
+      560,
+      420,
+      6
+     ],
+     "at": 0.9,
+     "enter": "none"
+    }
+   ],
+   "textAtMobile": [
+    90,
+    1180
+   ],
+   "sizeMobile": 82,
+   "layersMobile": [
+    {
+     "kind": "shape",
+     "color": "#734B9C",
+     "box": [
+      0,
+      0,
+      1080,
+      900
+     ],
+     "enter": "down",
+     "at": 0
+    },
+    {
+     "kind": "shape",
+     "color": "#EEE8DF",
+     "box": [
+      0,
+      900,
+      1080,
+      120
+     ],
+     "enter": "up",
+     "at": 0.25
+    },
+    {
+     "kind": "shape",
+     "color": "#FDC234",
+     "box": [
+      860,
+      300,
+      110,
+      110
+     ],
+     "enter": "grow",
+     "at": 0.5,
+     "shape": "circle"
+    },
+    {
+     "kind": "line",
+     "box": [
+      90,
+      1450,
+      520,
+      8
+     ],
+     "at": 0.9,
+     "enter": "none"
+    }
+   ]
+  }
+ ],
+ "music": "audio/track-24.mp3"
+}

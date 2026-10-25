@@ -1,0 +1,820 @@
+{
+  "version": 1,
+  "title": "BK1 · Banking Platform · O banco digital da sua marca",
+  "formats": [
+    "16:9",
+    "9:16"
+  ],
+  "fps": 30,
+  "theme": "paper",
+  "vibe": "premium",
+  "transitionStyle": "push",
+  "captionStyle": "box",
+  "look": {
+    "headingWeight": 300,
+    "tracking": -0.035
+  },
+  "disclaimer": "Interface de referência · ambiente demonstrativo",
+  "musicStock": "24",
+  "brand": {
+    "name": "Catalisa",
+    "url": "catalisa.io",
+    "logo": "brand/logo-tight.png",
+    "logoLight": "brand/logo-white-tight.png",
+    "font": "Inter",
+    "colors": {
+      "primary": "#734B9C",
+      "accent": "#F18A43",
+      "background": "#F6F3EE",
+      "text": "#1A1D23"
+    }
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "type": "collage",
+      "duration": 5,
+      "bg": "#35213F",
+      "kicker": "Catalisa / Banking Platform",
+      "headline": "O banco digital\nda sua marca.",
+      "textAt": [
+        90,
+        330
+      ],
+      "size": 72,
+      "textColor": "#F6F3EE",
+      "textIn": 1,
+      "sign": "light",
+      "layers": [
+        {
+          "kind": "shape",
+          "color": "#CDBAE0",
+          "box": [
+            1380,
+            0,
+            220,
+            360
+          ],
+          "enter": "down",
+          "at": 0
+        },
+        {
+          "kind": "photo",
+          "src": "photos/c1-executivo.jpg",
+          "box": [
+            640,
+            70,
+            760,
+            760
+          ],
+          "focus": [
+            0.47,
+            0.5
+          ],
+          "enter": "grow",
+          "at": 0.2,
+          "shape": "circle",
+          "zoom": 1.05
+        },
+        {
+          "kind": "shape",
+          "color": "#F18A43",
+          "box": [
+            330,
+            760,
+            280,
+            140
+          ],
+          "enter": "up",
+          "at": 0.6,
+          "shape": "half"
+        }
+      ],
+      "textAtMobile": [
+        90,
+        1230
+      ],
+      "sizeMobile": 80,
+      "layersMobile": [
+        {
+          "kind": "shape",
+          "color": "#CDBAE0",
+          "box": [
+            760,
+            0,
+            320,
+            300
+          ],
+          "enter": "down",
+          "at": 0
+        },
+        {
+          "kind": "photo",
+          "src": "photos/c1-executivo.jpg",
+          "box": [
+            140,
+            260,
+            800,
+            800
+          ],
+          "focus": [
+            0.47,
+            0.5
+          ],
+          "enter": "grow",
+          "at": 0.2,
+          "shape": "circle",
+          "zoom": 1.05
+        },
+        {
+          "kind": "shape",
+          "color": "#F18A43",
+          "box": [
+            600,
+            1730,
+            400,
+            200
+          ],
+          "enter": "up",
+          "at": 0.6,
+          "shape": "half"
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "type": "collage",
+      "duration": 5,
+      "enter": "line",
+      "kicker": "Para quem cria produtos financeiros",
+      "headline": "Bancos. Financeiras.\nFIDCs. Securitizadoras.\nFintechs.",
+      "sub": "E quem quer ter o próprio produto\nde crédito e de banco.",
+      "textAt": [
+        90,
+        250
+      ],
+      "size": 54,
+      "textIn": 0.6,
+      "sign": "color",
+      "layers": [
+        {
+          "kind": "shape",
+          "color": "#734B9C",
+          "box": [
+            980,
+            80,
+            520,
+            520
+          ],
+          "enter": "grow",
+          "at": 0.1,
+          "shape": "circle"
+        },
+        {
+          "kind": "photo",
+          "src": "photos/c7b-criadora.jpg",
+          "box": [
+            720,
+            0,
+            460,
+            900
+          ],
+          "focus": [
+            0.6,
+            0.5
+          ],
+          "enter": "reveal",
+          "at": 0,
+          "flip": true
+        },
+        {
+          "kind": "shape",
+          "color": "#F18A43",
+          "box": [
+            1140,
+            600,
+            460,
+            300
+          ],
+          "enter": "up",
+          "at": 0.4
+        }
+      ],
+      "textAtMobile": [
+        90,
+        1180
+      ],
+      "sizeMobile": 62,
+      "layersMobile": [
+        {
+          "kind": "shape",
+          "color": "#734B9C",
+          "box": [
+            520,
+            120,
+            520,
+            520
+          ],
+          "enter": "grow",
+          "at": 0.1,
+          "shape": "circle"
+        },
+        {
+          "kind": "photo",
+          "src": "photos/c7b-criadora.jpg",
+          "box": [
+            90,
+            200,
+            620,
+            900
+          ],
+          "focus": [
+            0.6,
+            0.5
+          ],
+          "enter": "reveal",
+          "at": 0,
+          "flip": true
+        },
+        {
+          "kind": "shape",
+          "color": "#F18A43",
+          "box": [
+            700,
+            820,
+            380,
+            280
+          ],
+          "enter": "up",
+          "at": 0.4
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "type": "collage",
+      "duration": 4.6,
+      "enter": "dive",
+      "kicker": "01 / O app do seu cliente",
+      "headline": "O seu cliente\nvive a sua marca.",
+      "textAt": [
+        90,
+        560
+      ],
+      "size": 66,
+      "textIn": 1.1,
+      "sign": "color",
+      "layers": [
+        {
+          "kind": "shape",
+          "color": "#F18A43",
+          "box": [
+            1010,
+            0,
+            240,
+            900
+          ],
+          "enter": "down",
+          "at": 0
+        },
+        {
+          "kind": "shape",
+          "color": "#FDC234",
+          "box": [
+            1090,
+            90,
+            320,
+            320
+          ],
+          "enter": "grow",
+          "at": 0.3,
+          "shape": "circle"
+        },
+        {
+          "kind": "photo",
+          "src": "photos/c2-piscina.jpg",
+          "box": [
+            690,
+            120,
+            420,
+            780
+          ],
+          "focus": [
+            0.5,
+            0.52
+          ],
+          "enter": "reveal",
+          "at": 0.45,
+          "shape": "arch",
+          "drift": -3
+        },
+        {
+          "kind": "shape",
+          "color": "#734B9C",
+          "box": [
+            1240,
+            640,
+            360,
+            180
+          ],
+          "enter": "up",
+          "at": 0.8,
+          "shape": "half"
+        },
+        {
+          "kind": "shape",
+          "color": "#734B9C",
+          "box": [
+            1240,
+            820,
+            360,
+            80
+          ],
+          "enter": "up",
+          "at": 0.8
+        },
+        {
+          "kind": "phone",
+          "src": "prints/04-home.png",
+          "box": [
+            1290,
+            300,
+            230,
+            493
+          ],
+          "enter": "up",
+          "at": 1
+        }
+      ],
+      "textAtMobile": [
+        90,
+        1430
+      ],
+      "sizeMobile": 66,
+      "layersMobile": [
+        {
+          "kind": "shape",
+          "color": "#FDC234",
+          "box": [
+            540,
+            140,
+            480,
+            480
+          ],
+          "enter": "grow",
+          "at": 0.3,
+          "shape": "circle"
+        },
+        {
+          "kind": "shape",
+          "color": "#F18A43",
+          "box": [
+            0,
+            380,
+            380,
+            1000
+          ],
+          "enter": "down",
+          "at": 0
+        },
+        {
+          "kind": "photo",
+          "src": "photos/c2-piscina.jpg",
+          "box": [
+            160,
+            320,
+            700,
+            1020
+          ],
+          "focus": [
+            0.5,
+            0.5
+          ],
+          "enter": "reveal",
+          "at": 0.45,
+          "shape": "arch"
+        },
+        {
+          "kind": "phone",
+          "src": "prints/04-home.png",
+          "box": [
+            700,
+            860,
+            260,
+            557
+          ],
+          "enter": "up",
+          "at": 1
+        },
+        {
+          "kind": "shape",
+          "color": "#734B9C",
+          "box": [
+            720,
+            1700,
+            360,
+            180
+          ],
+          "enter": "up",
+          "at": 0.8,
+          "shape": "half"
+        },
+        {
+          "kind": "shape",
+          "color": "#734B9C",
+          "box": [
+            720,
+            1880,
+            360,
+            40
+          ],
+          "enter": "up",
+          "at": 0.8
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "type": "flow",
+      "duration": 7,
+      "enter": "push",
+      "device": "phone",
+      "kicker": "01 / O app do seu cliente",
+      "headline": "Do toque ao comprovante.",
+      "steps": [
+        {
+          "image": "prints/04-home.png",
+          "tap": {
+            "x": 0.137,
+            "y": 0.345
+          },
+          "caption": "Pix"
+        },
+        {
+          "image": "prints/06-pix-enviar-destino.png",
+          "tap": {
+            "x": 0.47,
+            "y": 0.415
+          },
+          "caption": "Para quem"
+        },
+        {
+          "image": "prints/08-pix-revisao.png",
+          "tap": {
+            "x": 0.5,
+            "y": 0.945
+          },
+          "caption": "Revisão"
+        },
+        {
+          "image": "prints/09-pix-comprovante.png",
+          "caption": "Enviado"
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "type": "collage",
+      "duration": 4.6,
+      "enter": "push",
+      "bg": "#EEE8DF",
+      "kicker": "02 / O desktop do titular",
+      "headline": "Mais espaço\npara olhar\na conta.",
+      "textAt": [
+        90,
+        520
+      ],
+      "size": 62,
+      "textIn": 0.8,
+      "sign": "color",
+      "layers": [
+        {
+          "kind": "shape",
+          "color": "#CDBAE0",
+          "box": [
+            1120,
+            0,
+            480,
+            520
+          ],
+          "enter": "down",
+          "at": 0
+        },
+        {
+          "kind": "photo",
+          "src": "photos/c8-desktop.jpg",
+          "box": [
+            620,
+            110,
+            460,
+            790
+          ],
+          "focus": [
+            0.47,
+            0.45
+          ],
+          "enter": "reveal",
+          "at": 0.2,
+          "shape": "arch",
+          "zoom": 1.3
+        },
+        {
+          "kind": "screen",
+          "src": "screens/desktop-inicio.jpg",
+          "box": [
+            1010,
+            470,
+            520,
+            329
+          ],
+          "enter": "up",
+          "at": 0.7
+        },
+        {
+          "kind": "shape",
+          "color": "#F18A43",
+          "box": [
+            1420,
+            90,
+            120,
+            120
+          ],
+          "enter": "grow",
+          "at": 0.5,
+          "shape": "circle"
+        }
+      ],
+      "textAtMobile": [
+        90,
+        1400
+      ],
+      "sizeMobile": 70,
+      "layersMobile": [
+        {
+          "kind": "shape",
+          "color": "#CDBAE0",
+          "box": [
+            600,
+            0,
+            480,
+            700
+          ],
+          "enter": "down",
+          "at": 0
+        },
+        {
+          "kind": "photo",
+          "src": "photos/c8-desktop.jpg",
+          "box": [
+            90,
+            220,
+            620,
+            1000
+          ],
+          "focus": [
+            0.47,
+            0.45
+          ],
+          "enter": "reveal",
+          "at": 0.2,
+          "shape": "arch",
+          "zoom": 1.3
+        },
+        {
+          "kind": "screen",
+          "src": "screens/desktop-inicio.jpg",
+          "box": [
+            420,
+            860,
+            620,
+            392
+          ],
+          "enter": "up",
+          "at": 0.7
+        },
+        {
+          "kind": "shape",
+          "color": "#F18A43",
+          "box": [
+            880,
+            120,
+            140,
+            140
+          ],
+          "enter": "grow",
+          "at": 0.5,
+          "shape": "circle"
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "type": "collage",
+      "duration": 4.8,
+      "enter": "line",
+      "kicker": "03 / O console da sua equipe",
+      "headline": "A sua equipe\nopera com\ncontexto.",
+      "sub": "Contas e bloqueios,\ncom a origem de cada caso.",
+      "textAt": [
+        90,
+        250
+      ],
+      "size": 62,
+      "textIn": 0.8,
+      "sign": "color",
+      "layers": [
+        {
+          "kind": "photo",
+          "src": "photos/c3-circulo.jpg",
+          "box": [
+            640,
+            0,
+            600,
+            900
+          ],
+          "focus": [
+            0.5,
+            0.5
+          ],
+          "enter": "reveal",
+          "at": 0
+        },
+        {
+          "kind": "shape",
+          "color": "#F18A43",
+          "box": [
+            1240,
+            120,
+            360,
+            180
+          ],
+          "enter": "up",
+          "at": 0.3,
+          "shape": "half"
+        },
+        {
+          "kind": "screen",
+          "src": "screens/console-contas.jpg",
+          "box": [
+            1140,
+            380,
+            390,
+            368
+          ],
+          "enter": "up",
+          "at": 0.6
+        }
+      ],
+      "textAtMobile": [
+        90,
+        1280
+      ],
+      "sizeMobile": 70,
+      "layersMobile": [
+        {
+          "kind": "photo",
+          "src": "photos/c3-circulo.jpg",
+          "box": [
+            0,
+            0,
+            1080,
+            1150
+          ],
+          "focus": [
+            0.5,
+            0.4
+          ],
+          "enter": "reveal",
+          "at": 0
+        },
+        {
+          "kind": "shape",
+          "color": "#F18A43",
+          "box": [
+            700,
+            1060,
+            380,
+            190
+          ],
+          "enter": "up",
+          "at": 0.3,
+          "shape": "half"
+        },
+        {
+          "kind": "screen",
+          "src": "screens/console-contas.jpg",
+          "box": [
+            560,
+            700,
+            460,
+            434
+          ],
+          "enter": "up",
+          "at": 0.6
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "type": "collage",
+      "duration": 4.6,
+      "enter": "push",
+      "logoBig": true,
+      "sub": "A tecnologia por trás\ndo seu banco.",
+      "button": "Imagine seu produto",
+      "textAt": [
+        90,
+        330
+      ],
+      "size": 72,
+      "textIn": 0.6,
+      "sign": "color",
+      "layers": [
+        {
+          "kind": "shape",
+          "color": "#F18A43",
+          "box": [
+            1240,
+            0,
+            180,
+            900
+          ],
+          "enter": "down",
+          "at": 0
+        },
+        {
+          "kind": "shape",
+          "color": "#FDC234",
+          "box": [
+            1060,
+            150,
+            400,
+            400
+          ],
+          "enter": "grow",
+          "at": 0.2,
+          "shape": "circle"
+        },
+        {
+          "kind": "shape",
+          "color": "#734B9C",
+          "box": [
+            900,
+            640,
+            520,
+            260
+          ],
+          "enter": "up",
+          "at": 0.4,
+          "shape": "half"
+        }
+      ],
+      "textAtMobile": [
+        90,
+        980
+      ],
+      "sizeMobile": 80,
+      "layersMobile": [
+        {
+          "kind": "shape",
+          "color": "#F18A43",
+          "box": [
+            760,
+            0,
+            200,
+            900
+          ],
+          "enter": "down",
+          "at": 0
+        },
+        {
+          "kind": "shape",
+          "color": "#FDC234",
+          "box": [
+            440,
+            260,
+            460,
+            460
+          ],
+          "enter": "grow",
+          "at": 0.2,
+          "shape": "circle"
+        },
+        {
+          "kind": "shape",
+          "color": "#734B9C",
+          "box": [
+            140,
+            1560,
+            800,
+            400
+          ],
+          "enter": "up",
+          "at": 0.4,
+          "shape": "half"
+        }
+      ]
+    }
+  ],
+  "music": "audio/track-24.mp3"
+}

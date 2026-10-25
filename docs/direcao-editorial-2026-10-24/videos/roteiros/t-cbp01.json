@@ -1,0 +1,791 @@
+{
+ "version": 1,
+ "title": "CBP-01 · A sua marca ganha presença.",
+ "formats": [
+  "16:9",
+  "9:16"
+ ],
+ "fps": 30,
+ "theme": "paper",
+ "vibe": "premium",
+ "transitionStyle": "push",
+ "captionStyle": "box",
+ "look": {
+  "headingWeight": 300,
+  "tracking": -0.035
+ },
+ "disclaimer": "Interface de referência · ambiente demonstrativo",
+ "musicStock": "40",
+ "brand": {
+  "name": "Catalisa",
+  "url": "catalisa.io",
+  "logo": "brand/logo-tight.png",
+  "logoLight": "brand/logo-white-tight.png",
+  "font": "Inter",
+  "colors": {
+   "primary": "#734B9C",
+   "accent": "#F18A43",
+   "background": "#F6F3EE",
+   "text": "#1A1D23"
+  }
+ },
+ "scenes": [
+  {
+   "id": "p1",
+   "type": "collage",
+   "duration": 4.6,
+   "kicker": "Catalisa / Banking Platform",
+   "headline": "A sua marca\nganha presença.",
+   "textAt": [
+    90,
+    250
+   ],
+   "size": 76,
+   "textIn": 0.9,
+   "sign": "color",
+   "layers": [
+    {
+     "kind": "shape",
+     "color": "#EEE8DF",
+     "box": [
+      0,
+      0,
+      860,
+      900
+     ],
+     "enter": "none",
+     "at": 0
+    },
+    {
+     "kind": "photo",
+     "src": "photos/c3-circulo.jpg",
+     "box": [
+      860,
+      0,
+      740,
+      900
+     ],
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "enter": "up",
+     "at": 0.1,
+     "slices": 5
+    },
+    {
+     "kind": "line",
+     "box": [
+      90,
+      470,
+      520,
+      6
+     ],
+     "at": 1.4,
+     "enter": "none"
+    }
+   ],
+   "layersMobile": [
+    {
+     "kind": "photo",
+     "src": "photos/c3-circulo.jpg",
+     "box": [
+      0,
+      0,
+      1080,
+      1220
+     ],
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "enter": "up",
+     "at": 0.1,
+     "slices": 4
+    },
+    {
+     "kind": "line",
+     "box": [
+      90,
+      1580,
+      560,
+      8
+     ],
+     "at": 1.4,
+     "enter": "none"
+    }
+   ],
+   "textAtMobile": [
+    90,
+    1330
+   ],
+   "sizeMobile": 80,
+   "bg": "#EEE8DF"
+  },
+  {
+   "id": "p2",
+   "type": "collage",
+   "duration": 4.6,
+   "kicker": "Catalisa / Banking Platform",
+   "headline": "App, desktop\ne operação para\no seu produto\nbancário.",
+   "textAt": [
+    90,
+    250
+   ],
+   "size": 52,
+   "textIn": 0.6,
+   "sign": "color",
+   "layers": [
+    {
+     "kind": "shape",
+     "color": "#734B9C",
+     "box": [
+      0,
+      600,
+      1600,
+      300
+     ],
+     "enter": "up",
+     "at": 0
+    },
+    {
+     "kind": "phone",
+     "src": "prints/04-home.png",
+     "box": [
+      760,
+      250,
+      170,
+      365
+     ],
+     "enter": "spin",
+     "at": 0.3
+    },
+    {
+     "kind": "screen",
+     "src": "screens/bank-desktop.jpg",
+     "box": [
+      980,
+      250,
+      300,
+      188
+     ],
+     "enter": "spin",
+     "at": 0.5
+    },
+    {
+     "kind": "screen",
+     "src": "screens/bank-live-holds.jpg",
+     "box": [
+      1310,
+      250,
+      240,
+      150
+     ],
+     "enter": "spin",
+     "at": 0.7
+    },
+    {
+     "kind": "line",
+     "box": [
+      760,
+      700,
+      790,
+      6
+     ],
+     "at": 1.2,
+     "enter": "none"
+    }
+   ],
+   "layersMobile": [
+    {
+     "kind": "shape",
+     "color": "#734B9C",
+     "box": [
+      0,
+      1000,
+      1080,
+      920
+     ],
+     "enter": "up",
+     "at": 0
+    },
+    {
+     "kind": "phone",
+     "src": "prints/04-home.png",
+     "box": [
+      90,
+      300,
+      230,
+      493
+     ],
+     "enter": "spin",
+     "at": 0.3
+    },
+    {
+     "kind": "screen",
+     "src": "screens/bank-desktop.jpg",
+     "box": [
+      360,
+      300,
+      640,
+      400
+     ],
+     "enter": "spin",
+     "at": 0.5
+    },
+    {
+     "kind": "screen",
+     "src": "screens/bank-live-holds.jpg",
+     "box": [
+      360,
+      740,
+      480,
+      300
+     ],
+     "enter": "spin",
+     "at": 0.7
+    }
+   ],
+   "textAtMobile": [
+    90,
+    1180
+   ],
+   "sizeMobile": 60,
+   "enter": "dive",
+   "textColorMobile": "#F6F3EE",
+   "kickerColorMobile": "#F6F3EE",
+   "signMobile": "light"
+  },
+  {
+   "id": "p3",
+   "type": "collage",
+   "duration": 6.4,
+   "kicker": "01 / O app do seu cliente",
+   "headline": "O app do\nseu cliente.",
+   "textAt": [
+    90,
+    520
+   ],
+   "size": 70,
+   "textIn": 0.9,
+   "sign": "color",
+   "layers": [
+    {
+     "kind": "shape",
+     "color": "#F18A43",
+     "box": [
+      1010,
+      0,
+      240,
+      900
+     ],
+     "enter": "down",
+     "at": 0
+    },
+    {
+     "kind": "shape",
+     "color": "#FDC234",
+     "box": [
+      1300,
+      120,
+      80,
+      80
+     ],
+     "enter": "grow",
+     "at": 0.6,
+     "shape": "circle"
+    },
+    {
+     "kind": "photo",
+     "src": "photos/c2-piscina.jpg",
+     "box": [
+      690,
+      120,
+      420,
+      780
+     ],
+     "focus": [
+      0.5,
+      0.52
+     ],
+     "enter": "reveal",
+     "at": 0.3,
+     "shape": "arch",
+     "drift": -3
+    },
+    {
+     "kind": "shape",
+     "color": "#734B9C",
+     "box": [
+      1240,
+      640,
+      360,
+      180
+     ],
+     "enter": "up",
+     "at": 0.6,
+     "shape": "half"
+    },
+    {
+     "kind": "shape",
+     "color": "#734B9C",
+     "box": [
+      1240,
+      820,
+      360,
+      80
+     ],
+     "enter": "up",
+     "at": 0.6
+    },
+    {
+     "kind": "phone",
+     "src": "prints/04-home.png",
+     "box": [
+      1290,
+      300,
+      230,
+      493
+     ],
+     "enter": "up",
+     "at": 0.9
+    }
+   ],
+   "layersMobile": [
+    {
+     "kind": "shape",
+     "color": "#F18A43",
+     "box": [
+      0,
+      380,
+      380,
+      1000
+     ],
+     "enter": "down",
+     "at": 0
+    },
+    {
+     "kind": "photo",
+     "src": "photos/c2-piscina.jpg",
+     "box": [
+      160,
+      320,
+      700,
+      1020
+     ],
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "enter": "reveal",
+     "at": 0.3,
+     "shape": "arch"
+    },
+    {
+     "kind": "phone",
+     "src": "prints/04-home.png",
+     "box": [
+      700,
+      860,
+      260,
+      557
+     ],
+     "enter": "up",
+     "at": 0.9
+    },
+    {
+     "kind": "shape",
+     "color": "#FDC234",
+     "box": [
+      880,
+      200,
+      110,
+      110
+     ],
+     "enter": "grow",
+     "at": 0.6,
+     "shape": "circle"
+    }
+   ],
+   "textAtMobile": [
+    90,
+    1460
+   ],
+   "sizeMobile": 70,
+   "enter": "line"
+  },
+  {
+   "id": "p4",
+   "type": "collage",
+   "duration": 6.4,
+   "kicker": "02 / A sua equipe",
+   "headline": "A sua equipe\nvê a operação.",
+   "textAt": [
+    90,
+    330
+   ],
+   "size": 66,
+   "textIn": 0.8,
+   "sign": "light",
+   "layers": [
+    {
+     "kind": "screen",
+     "src": "screens/bank-desktop.jpg",
+     "box": [
+      640,
+      120,
+      560,
+      350
+     ],
+     "enter": "wipe",
+     "at": 0.2
+    },
+    {
+     "kind": "screen",
+     "src": "screens/bank-live-holds.jpg",
+     "box": [
+      960,
+      430,
+      560,
+      350
+     ],
+     "enter": "wipe",
+     "at": 0.5
+    },
+    {
+     "kind": "line",
+     "box": [
+      640,
+      830,
+      880,
+      6
+     ],
+     "at": 1,
+     "enter": "none"
+    }
+   ],
+   "layersMobile": [
+    {
+     "kind": "screen",
+     "src": "screens/bank-desktop.jpg",
+     "box": [
+      60,
+      300,
+      800,
+      500
+     ],
+     "enter": "wipe",
+     "at": 0.2
+    },
+    {
+     "kind": "screen",
+     "src": "screens/bank-live-holds.jpg",
+     "box": [
+      220,
+      860,
+      800,
+      500
+     ],
+     "enter": "wipe",
+     "at": 0.5
+    }
+   ],
+   "textAtMobile": [
+    90,
+    1480
+   ],
+   "sizeMobile": 70,
+   "enter": "push",
+   "bg": "#35213F",
+   "textColor": "#F6F3EE"
+  },
+  {
+   "id": "p5",
+   "type": "collage",
+   "duration": 6.4,
+   "kicker": "Catalisa / Banking Platform",
+   "headline": "Uma base.\nA identidade\nda sua casa.",
+   "textAt": [
+    90,
+    250
+   ],
+   "size": 66,
+   "textIn": 0.8,
+   "sign": "color",
+   "layers": [
+    {
+     "kind": "photo",
+     "src": "photos/c3-circulo.jpg",
+     "box": [
+      700,
+      60,
+      440,
+      440
+     ],
+     "focus": [
+      0.5,
+      0.38
+     ],
+     "enter": "grow",
+     "at": 0.1,
+     "shape": "circle",
+     "zoom": 1.5
+    },
+    {
+     "kind": "phone",
+     "src": "prints/04-home.png",
+     "box": [
+      780,
+      560,
+      120,
+      258
+     ],
+     "enter": "up",
+     "at": 0.4
+    },
+    {
+     "kind": "screen",
+     "src": "screens/bank-desktop.jpg",
+     "box": [
+      960,
+      600,
+      280,
+      175
+     ],
+     "enter": "up",
+     "at": 0.55
+    },
+    {
+     "kind": "screen",
+     "src": "screens/bank-live-holds.jpg",
+     "box": [
+      1280,
+      600,
+      260,
+      163
+     ],
+     "enter": "up",
+     "at": 0.7
+    },
+    {
+     "kind": "line",
+     "box": [
+      780,
+      850,
+      760,
+      6
+     ],
+     "at": 1,
+     "enter": "none"
+    },
+    {
+     "kind": "shape",
+     "color": "#F18A43",
+     "box": [
+      1300,
+      80,
+      240,
+      240
+     ],
+     "enter": "grow",
+     "at": 0.2,
+     "shape": "circle"
+    }
+   ],
+   "layersMobile": [
+    {
+     "kind": "photo",
+     "src": "photos/c3-circulo.jpg",
+     "box": [
+      260,
+      220,
+      560,
+      560
+     ],
+     "focus": [
+      0.5,
+      0.38
+     ],
+     "enter": "grow",
+     "at": 0.1,
+     "shape": "circle",
+     "zoom": 1.5
+    },
+    {
+     "kind": "phone",
+     "src": "prints/04-home.png",
+     "box": [
+      90,
+      860,
+      170,
+      365
+     ],
+     "enter": "up",
+     "at": 0.4
+    },
+    {
+     "kind": "screen",
+     "src": "screens/bank-desktop.jpg",
+     "box": [
+      300,
+      880,
+      420,
+      262
+     ],
+     "enter": "up",
+     "at": 0.55
+    },
+    {
+     "kind": "screen",
+     "src": "screens/bank-live-holds.jpg",
+     "box": [
+      740,
+      880,
+      280,
+      175
+     ],
+     "enter": "up",
+     "at": 0.7
+    },
+    {
+     "kind": "line",
+     "box": [
+      90,
+      1200,
+      900,
+      8
+     ],
+     "at": 1,
+     "enter": "none"
+    }
+   ],
+   "textAtMobile": [
+    90,
+    1360
+   ],
+   "sizeMobile": 70,
+   "enter": "line"
+  },
+  {
+   "id": "p6",
+   "type": "collage",
+   "duration": 4.5,
+   "enter": "push",
+   "logoBig": true,
+   "button": "Conheça Banking",
+   "textAt": [
+    90,
+    380
+   ],
+   "size": 72,
+   "textIn": 0.5,
+   "sign": "color",
+   "layers": [
+    {
+     "kind": "shape",
+     "color": "#734B9C",
+     "box": [
+      1100,
+      0,
+      500,
+      900
+     ],
+     "enter": "down",
+     "at": 0
+    },
+    {
+     "kind": "shape",
+     "color": "#EEE8DF",
+     "box": [
+      1100,
+      560,
+      500,
+      340
+     ],
+     "enter": "up",
+     "at": 0.25
+    },
+    {
+     "kind": "shape",
+     "color": "#FDC234",
+     "box": [
+      1300,
+      180,
+      90,
+      90
+     ],
+     "enter": "grow",
+     "at": 0.5,
+     "shape": "circle"
+    },
+    {
+     "kind": "line",
+     "box": [
+      90,
+      560,
+      420,
+      6
+     ],
+     "at": 0.9,
+     "enter": "none"
+    }
+   ],
+   "textAtMobile": [
+    90,
+    1180
+   ],
+   "sizeMobile": 82,
+   "layersMobile": [
+    {
+     "kind": "shape",
+     "color": "#734B9C",
+     "box": [
+      0,
+      0,
+      1080,
+      900
+     ],
+     "enter": "down",
+     "at": 0
+    },
+    {
+     "kind": "shape",
+     "color": "#EEE8DF",
+     "box": [
+      0,
+      900,
+      1080,
+      120
+     ],
+     "enter": "up",
+     "at": 0.25
+    },
+    {
+     "kind": "shape",
+     "color": "#FDC234",
+     "box": [
+      860,
+      300,
+      110,
+      110
+     ],
+     "enter": "grow",
+     "at": 0.5,
+     "shape": "circle"
+    },
+    {
+     "kind": "line",
+     "box": [
+      90,
+      1450,
+      520,
+      8
+     ],
+     "at": 0.9,
+     "enter": "none"
+    }
+   ]
+  }
+ ],
+ "music": "audio/track-40.mp3"
+}

@@ -1,0 +1,675 @@
+{
+ "version": 1,
+ "title": "MOT-02 · O próximo passo tem porquê.",
+ "formats": [
+  "16:9",
+  "9:16"
+ ],
+ "fps": 30,
+ "theme": "paper",
+ "vibe": "premium",
+ "transitionStyle": "push",
+ "captionStyle": "box",
+ "look": {
+  "headingWeight": 300,
+  "tracking": -0.035
+ },
+ "disclaimer": "Interface de referência · ambiente demonstrativo",
+ "musicStock": "475",
+ "brand": {
+  "name": "Catalisa",
+  "url": "catalisa.io",
+  "logo": "brand/logo-tight.png",
+  "logoLight": "brand/logo-white-tight.png",
+  "font": "Inter",
+  "colors": {
+   "primary": "#734B9C",
+   "accent": "#F18A43",
+   "background": "#F6F3EE",
+   "text": "#1A1D23"
+  }
+ },
+ "scenes": [
+  {
+   "id": "p1",
+   "type": "collage",
+   "duration": 4.6,
+   "kicker": "Catalisa / Plataforma · Workflows",
+   "headline": "O próximo passo\ntem porquê.",
+   "textAt": [
+    90,
+    200
+   ],
+   "size": 72,
+   "textIn": 0.9,
+   "sign": "color",
+   "layers": [
+    {
+     "kind": "photo",
+     "src": "photos/c5-kite.jpg",
+     "box": [
+      0,
+      560,
+      1600,
+      200
+     ],
+     "focus": [
+      0.6,
+      0.5
+     ],
+     "enter": "wipe",
+     "at": 0.1,
+     "drift": -5
+    },
+    {
+     "kind": "photo",
+     "src": "photos/c3-circulo.jpg",
+     "box": [
+      1100,
+      40,
+      380,
+      640
+     ],
+     "focus": [
+      0.5,
+      0.42
+     ],
+     "enter": "reveal",
+     "at": 0.5,
+     "shape": "arch",
+     "zoom": 1.15
+    },
+    {
+     "kind": "shape",
+     "color": "#F18A43",
+     "box": [
+      960,
+      420,
+      180,
+      180
+     ],
+     "enter": "grow",
+     "at": 0.8,
+     "shape": "circle"
+    }
+   ],
+   "layersMobile": [
+    {
+     "kind": "photo",
+     "src": "photos/c5-kite.jpg",
+     "box": [
+      0,
+      1330,
+      1080,
+      590
+     ],
+     "focus": [
+      0.62,
+      0.5
+     ],
+     "enter": "wipe",
+     "at": 0.1
+    },
+    {
+     "kind": "photo",
+     "src": "photos/c3-circulo.jpg",
+     "box": [
+      300,
+      160,
+      560,
+      820
+     ],
+     "focus": [
+      0.5,
+      0.42
+     ],
+     "enter": "reveal",
+     "at": 0.5,
+     "shape": "arch",
+     "zoom": 1.15
+    }
+   ],
+   "textAtMobile": [
+    90,
+    1110
+   ],
+   "sizeMobile": 72,
+   "signMobile": "light",
+   "textColorMobile": "#1A1D23"
+  },
+  {
+   "id": "p2",
+   "type": "collage",
+   "duration": 4.6,
+   "kicker": "Catalisa / Plataforma · Workflows",
+   "headline": "Fluxos conectam\nacontecimentos,\ncondições e revisão.",
+   "textAt": [
+    90,
+    520
+   ],
+   "size": 56,
+   "textIn": 0.7,
+   "sign": "color",
+   "layers": [
+    {
+     "kind": "line",
+     "box": [
+      700,
+      300,
+      360,
+      6
+     ],
+     "at": 0.2,
+     "enter": "none"
+    },
+    {
+     "kind": "line",
+     "box": [
+      1060,
+      300,
+      300,
+      6
+     ],
+     "at": 0.9,
+     "enter": "none"
+    },
+    {
+     "kind": "line",
+     "box": [
+      1060,
+      560,
+      300,
+      6
+     ],
+     "at": 1.1,
+     "enter": "none"
+    },
+    {
+     "kind": "shape",
+     "color": "#734B9C",
+     "box": [
+      1040,
+      280,
+      8,
+      288
+     ],
+     "enter": "reveal",
+     "at": 0.8
+    },
+    {
+     "kind": "photo",
+     "src": "photos/c3-circulo.jpg",
+     "box": [
+      1360,
+      470,
+      180,
+      180
+     ],
+     "focus": [
+      0.5,
+      0.3
+     ],
+     "enter": "grow",
+     "at": 1.4,
+     "shape": "circle",
+     "zoom": 2
+    },
+    {
+     "kind": "shape",
+     "color": "#F18A43",
+     "box": [
+      1360,
+      210,
+      180,
+      180
+     ],
+     "enter": "grow",
+     "at": 1.2,
+     "shape": "circle"
+    }
+   ],
+   "layersMobile": [
+    {
+     "kind": "line",
+     "box": [
+      90,
+      420,
+      500,
+      8
+     ],
+     "at": 0.2,
+     "enter": "none"
+    },
+    {
+     "kind": "line",
+     "box": [
+      580,
+      420,
+      400,
+      8
+     ],
+     "at": 0.9,
+     "enter": "none"
+    },
+    {
+     "kind": "line",
+     "box": [
+      580,
+      780,
+      400,
+      8
+     ],
+     "at": 1.1,
+     "enter": "none"
+    },
+    {
+     "kind": "shape",
+     "color": "#734B9C",
+     "box": [
+      570,
+      400,
+      10,
+      388
+     ],
+     "enter": "reveal",
+     "at": 0.8
+    },
+    {
+     "kind": "photo",
+     "src": "photos/c3-circulo.jpg",
+     "box": [
+      820,
+      860,
+      200,
+      200
+     ],
+     "focus": [
+      0.5,
+      0.3
+     ],
+     "enter": "grow",
+     "at": 1.4,
+     "shape": "circle",
+     "zoom": 2
+    },
+    {
+     "kind": "shape",
+     "color": "#F18A43",
+     "box": [
+      820,
+      240,
+      200,
+      200
+     ],
+     "enter": "grow",
+     "at": 1.2,
+     "shape": "circle"
+    }
+   ],
+   "textAtMobile": [
+    90,
+    1250
+   ],
+   "sizeMobile": 66,
+   "enter": "dive"
+  },
+  {
+   "id": "p3",
+   "type": "collage",
+   "duration": 6.4,
+   "kicker": "01 / Acontecimento",
+   "headline": "Um acontecimento\ninicia o percurso.",
+   "textAt": [
+    90,
+    560
+   ],
+   "size": 44,
+   "textIn": 0.8,
+   "sign": "color",
+   "layers": [
+    {
+     "kind": "shape",
+     "color": "#F18A43",
+     "box": [
+      0,
+      0,
+      520,
+      900
+     ],
+     "enter": "down",
+     "at": 0
+    },
+    {
+     "kind": "screen",
+     "src": "screens/workflows-canvas.jpg",
+     "box": [
+      400,
+      150,
+      1100,
+      550
+     ],
+     "enter": "wipe",
+     "at": 0.3
+    }
+   ],
+   "layersMobile": [
+    {
+     "kind": "shape",
+     "color": "#F18A43",
+     "box": [
+      0,
+      0,
+      1080,
+      700
+     ],
+     "enter": "down",
+     "at": 0
+    },
+    {
+     "kind": "screen",
+     "src": "screens/workflows-canvas.jpg",
+     "box": [
+      40,
+      360,
+      1000,
+      500
+     ],
+     "enter": "wipe",
+     "at": 0.3
+    }
+   ],
+   "textAtMobile": [
+    90,
+    1080
+   ],
+   "sizeMobile": 70,
+   "enter": "line"
+  },
+  {
+   "id": "p4",
+   "type": "collage",
+   "duration": 6.4,
+   "kicker": "02 / Condição",
+   "headline": "A condição define\ncomo continuar.",
+   "textAt": [
+    90,
+    330
+   ],
+   "size": 62,
+   "textIn": 0.8,
+   "sign": "light",
+   "layers": [
+    {
+     "kind": "shape",
+     "color": "#734B9C",
+     "box": [
+      880,
+      0,
+      720,
+      900
+     ],
+     "enter": "down",
+     "at": 0
+    },
+    {
+     "kind": "screen",
+     "src": "screens/workflows-detail.png",
+     "box": [
+      700,
+      170,
+      800,
+      450
+     ],
+     "enter": "spin",
+     "at": 0.3
+    }
+   ],
+   "layersMobile": [
+    {
+     "kind": "shape",
+     "color": "#734B9C",
+     "box": [
+      0,
+      0,
+      1080,
+      1000
+     ],
+     "enter": "down",
+     "at": 0
+    },
+    {
+     "kind": "screen",
+     "src": "screens/workflows-detail.png",
+     "box": [
+      60,
+      320,
+      960,
+      540
+     ],
+     "enter": "spin",
+     "at": 0.3
+    }
+   ],
+   "textAtMobile": [
+    90,
+    1120
+   ],
+   "sizeMobile": 70,
+   "enter": "push",
+   "bg": "#35213F",
+   "textColor": "#F6F3EE"
+  },
+  {
+   "id": "p5",
+   "type": "collage",
+   "duration": 6.4,
+   "kicker": "03 / A sua casa",
+   "headline": "O processo da sua\ncasa ganha forma.",
+   "textAt": [
+    90,
+    300
+   ],
+   "size": 66,
+   "textIn": 0.8,
+   "sign": "color",
+   "layers": [
+    {
+     "kind": "photo",
+     "src": "photos/c3-circulo.jpg",
+     "box": [
+      880,
+      0,
+      720,
+      900
+     ],
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "enter": "up",
+     "at": 0,
+     "slices": 6
+    },
+    {
+     "kind": "line",
+     "box": [
+      90,
+      620,
+      700,
+      6
+     ],
+     "at": 0.8,
+     "enter": "none"
+    },
+    {
+     "kind": "line",
+     "box": [
+      440,
+      720,
+      350,
+      6
+     ],
+     "at": 1.3,
+     "enter": "none"
+    }
+   ],
+   "layersMobile": [
+    {
+     "kind": "photo",
+     "src": "photos/c3-circulo.jpg",
+     "box": [
+      0,
+      0,
+      1080,
+      1150
+     ],
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "enter": "up",
+     "at": 0,
+     "slices": 5
+    },
+    {
+     "kind": "line",
+     "box": [
+      90,
+      1560,
+      800,
+      8
+     ],
+     "at": 0.8,
+     "enter": "none"
+    }
+   ],
+   "textAtMobile": [
+    90,
+    1250
+   ],
+   "sizeMobile": 72,
+   "enter": "line"
+  },
+  {
+   "id": "p6",
+   "type": "collage",
+   "duration": 4.5,
+   "enter": "push",
+   "logoBig": true,
+   "button": "Imagine seu produto",
+   "textAt": [
+    90,
+    380
+   ],
+   "size": 72,
+   "textIn": 0.5,
+   "sign": "color",
+   "layers": [
+    {
+     "kind": "shape",
+     "color": "#734B9C",
+     "box": [
+      1100,
+      0,
+      500,
+      900
+     ],
+     "enter": "down",
+     "at": 0
+    },
+    {
+     "kind": "shape",
+     "color": "#EEE8DF",
+     "box": [
+      1100,
+      560,
+      500,
+      340
+     ],
+     "enter": "up",
+     "at": 0.25
+    },
+    {
+     "kind": "shape",
+     "color": "#FDC234",
+     "box": [
+      1300,
+      180,
+      90,
+      90
+     ],
+     "enter": "grow",
+     "at": 0.5,
+     "shape": "circle"
+    },
+    {
+     "kind": "line",
+     "box": [
+      90,
+      560,
+      420,
+      6
+     ],
+     "at": 0.9,
+     "enter": "none"
+    }
+   ],
+   "textAtMobile": [
+    90,
+    1180
+   ],
+   "sizeMobile": 82,
+   "layersMobile": [
+    {
+     "kind": "shape",
+     "color": "#734B9C",
+     "box": [
+      0,
+      0,
+      1080,
+      900
+     ],
+     "enter": "down",
+     "at": 0
+    },
+    {
+     "kind": "shape",
+     "color": "#EEE8DF",
+     "box": [
+      0,
+      900,
+      1080,
+      120
+     ],
+     "enter": "up",
+     "at": 0.25
+    },
+    {
+     "kind": "shape",
+     "color": "#FDC234",
+     "box": [
+      860,
+      300,
+      110,
+      110
+     ],
+     "enter": "grow",
+     "at": 0.5,
+     "shape": "circle"
+    },
+    {
+     "kind": "line",
+     "box": [
+      90,
+      1450,
+      520,
+      8
+     ],
+     "at": 0.9,
+     "enter": "none"
+    }
+   ]
+  }
+ ],
+ "music": "audio/track-475.mp3"
+}

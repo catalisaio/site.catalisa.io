@@ -1,14 +1,12 @@
 {
   "title": "Política de Privacidade",
-  "lastUpdated": "Última atualização: Março de 2026",
-
+  "lastUpdated": "Última atualização: Outubro de 2026",
   "hero": {
     "badge": "Privacidade",
     "heading": "Sua privacidade,",
     "headingGradient": "sem juridiquês.",
     "subtitle": "Acreditamos que você merece entender como seus dados são tratados — de verdade, sem letras miúdas."
   },
-
   "summary": {
     "title": "Sua privacidade em 2 minutos",
     "subtitle": "Um resumo dos pontos mais importantes. Para a versão completa, veja abaixo.",
@@ -57,24 +55,20 @@
       }
     ]
   },
-
   "fullPolicy": {
     "title": "Política de Privacidade Completa",
     "subtitle": "Versão jurídica integral conforme LGPD"
   },
-
   "controls": {
     "expandAll": "Expandir tudo",
     "collapseAll": "Recolher tudo"
   },
-
   "cta": {
     "heading": "Tem dúvidas sobre seus dados?",
     "subtitle": "Fale com nosso DPO — estamos aqui para ajudar.",
     "primaryLabel": "privacidade@catalisa.io",
     "secondaryLabel": "WhatsApp"
   },
-
   "sections": [
     {
       "title": "Identificação do Controlador",
@@ -209,6 +203,18 @@
         "Não transferimos dados obtidos das APIs do Google a terceiros, exceto quando necessário para prover as funcionalidades descritas, quando exigido por lei, ou mediante o seu consentimento explícito.",
         "Seres humanos não leem esses dados, salvo (i) com o seu consentimento explícito, (ii) por razões de segurança (como investigação de abuso ou incidentes), (iii) para cumprir obrigação legal, ou (iv) quando os dados estiverem agregados e anonimizados.",
         "Os tokens de acesso são armazenados de forma criptografada. Você pode revogar o acesso a qualquer momento na própria Plataforma ou em myaccount.google.com/permissions."
+      ]
+    },
+    {
+      "title": "Uso de Dados do Microsoft Graph e Microsoft Outlook (Microsoft Identity Platform)",
+      "content": "Quando você conecta uma conta Microsoft (Outlook / Microsoft 365) à Plataforma Catalisa, acessamos e utilizamos dados dessa conta via Microsoft Graph exclusivamente para prover as funcionalidades de agenda e e-mail que você ativa:",
+      "items": [
+        "Microsoft Outlook Calendar (Calendars.ReadWrite): consultamos sua disponibilidade (períodos livres e ocupados) e criamos, atualizamos e cancelamos eventos de agenda que você — ou automações e agentes de IA configurados por você — solicitar.",
+        "Microsoft Outlook Mail (Mail.ReadWrite e Mail.Send): lemos, organizamos, rascunhamos e enviamos e-mails em seu nome exclusivamente quando você, ou uma automação/agente configurado por você, aciona essas ações na Plataforma.",
+        "Identificação da conta e acesso contínuo (User.Read e offline_access): acessamos seu perfil básico (nome e endereço de e-mail) apenas para identificar a conta conectada na Plataforma e mantemos tokens de atualização para que suas automações continuem funcionando sem exigir novo login a cada sessão.",
+        "Não utilizamos dados obtidos do Microsoft Graph (agenda ou e-mail) para treinar modelos de inteligência artificial, para publicidade ou para venda a terceiros.",
+        "Não transferimos dados obtidos do Microsoft Graph a terceiros, exceto quando estritamente necessário para prover as funcionalidades descritas e contratadas por você, quando exigido por lei, ou mediante seu consentimento explícito.",
+        "Os tokens de acesso e atualização (OAuth 2.0) são armazenados criptografados em repouso com AES-256-GCM. Você pode revogar o acesso a qualquer momento diretamente na Plataforma ou nas configurações da sua conta Microsoft (account.live.com/consent/Manage ou myapps.microsoft.com)."
       ]
     },
     {

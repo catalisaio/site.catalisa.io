@@ -205,6 +205,18 @@
       ]
     },
     {
+      "title": "Uso de Dados do Microsoft Graph e Microsoft Outlook (Microsoft Identity Platform)",
+      "content": "Quando você conecta uma conta Microsoft (Outlook / Microsoft 365) à Plataforma Catalisa, acessamos e utilizamos dados dessa conta via Microsoft Graph exclusivamente para prover as funcionalidades de agenda e e-mail que você ativa:",
+      "items": [
+        "Microsoft Outlook Calendar (Calendars.ReadWrite): consultamos sua disponibilidade (períodos livres e ocupados) e criamos, atualizamos e cancelamos eventos de agenda que você — ou automações e agentes de IA configurados por você — solicitar.",
+        "Microsoft Outlook Mail (Mail.ReadWrite e Mail.Send): lemos, organizamos, rascunhamos e enviamos e-mails em seu nome exclusivamente quando você, ou uma automação/agente configurado por você, aciona essas ações na Plataforma.",
+        "Identificação da conta e acesso contínuo (User.Read e offline_access): acessamos seu perfil básico (nome e endereço de e-mail) apenas para identificar a conta conectada na Plataforma e mantemos tokens de atualização para que suas automações continuem funcionando sem exigir novo login a cada sessão.",
+        "Não utilizamos dados obtidos do Microsoft Graph (agenda ou e-mail) para treinar modelos de inteligência artificial, para publicidade ou para venda a terceiros.",
+        "Não transferimos dados obtidos do Microsoft Graph a terceiros, exceto quando estritamente necessário para prover as funcionalidades descritas e contratadas por você, quando exigido por lei, ou mediante seu consentimento explícito.",
+        "Os tokens de acesso e atualização (OAuth 2.0) são armazenados criptografados em repouso com AES-256-GCM. Você pode revogar o acesso a qualquer momento diretamente na Plataforma ou nas configurações da sua conta Microsoft (account.live.com/consent/Manage ou myapps.microsoft.com)."
+      ]
+    },
+    {
       "title": "Disposições Finais",
       "content": "Menores de idade. Nossos serviços não são destinados a menores de 18 (dezoito) anos. Não coletamos intencionalmente dados pessoais de menores. Caso tome conhecimento de que dados de um menor foram coletados, entre em contato conosco para que possamos excluí-los.\n\nAlterações nesta Política. Podemos atualizar esta Política de Privacidade periodicamente. Alterações significativas serão comunicadas com antecedência mínima de 30 (trinta) dias por e-mail ou notificação na Plataforma. O uso continuado da Plataforma após o prazo de notificação constitui aceitação da Política atualizada.\n\nContato. Para exercer seus direitos, esclarecer dúvidas ou enviar reclamações sobre esta Política:\n\nE-mail do DPO: privacidade@catalisa.io\nE-mail geral: contato@catalisa.io\nWhatsApp: +55 11 97730-3414\n\nForo. Fica eleito o foro da Comarca de São Paulo, Estado de São Paulo, Brasil, para dirimir quaisquer controvérsias decorrentes desta Política."
     },

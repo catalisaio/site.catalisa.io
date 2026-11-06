@@ -1,0 +1,64 @@
+{
+  "checkedAt": "2026-10-27T00:57:26.218Z",
+  "passed": true,
+  "scope": "Actual un-intercepted Google collector for one fresh synthetic consented public visit with utm_source=ga_validation, and normal qa_realtime_check event; no debug_mode, private pages, leads or messages. Transport receipt does not prove account/report processing.",
+  "runtime": {
+    "consent": "granted",
+    "googleScript": "https://www.googletagmanager.com/gtag/js?id=G-JYJWH17ZVX",
+    "disabled": false,
+    "path": "/",
+    "language": "pt-BR"
+  },
+  "requests": [
+    {
+      "host": "www.google-analytics.com",
+      "path": "/g/collect",
+      "measurementId": "G-JYJWH17ZVX",
+      "event": "page_view",
+      "source": "ga_validation",
+      "consent": "G101",
+      "debug": null
+    },
+    {
+      "host": "www.google-analytics.com",
+      "path": "/g/collect",
+      "measurementId": "G-JYJWH17ZVX",
+      "event": "qa_realtime_check",
+      "source": "ga_validation",
+      "consent": "G101",
+      "debug": null
+    }
+  ],
+  "receipts": [
+    {
+      "host": "www.google-analytics.com",
+      "path": "/g/collect",
+      "measurementId": "G-JYJWH17ZVX",
+      "event": "page_view",
+      "source": "ga_validation",
+      "consent": "G101",
+      "debug": null,
+      "status": 204
+    },
+    {
+      "host": "www.google-analytics.com",
+      "path": "/g/collect",
+      "measurementId": "G-JYJWH17ZVX",
+      "event": "qa_realtime_check",
+      "source": "ga_validation",
+      "consent": "G101",
+      "debug": null,
+      "status": 204
+    }
+  ],
+  "failed": [
+    {
+      "host": "www.google-analytics.com",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "host": "www.google-analytics.com",
+      "error": "net::ERR_ABORTED"
+    }
+  ]
+}

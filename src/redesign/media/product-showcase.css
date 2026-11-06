@@ -1,0 +1,45 @@
+.c-product-showcase{--showcase-paper:#f4f0e8;--showcase-purple:#734b9c;position:relative;isolation:isolate;width:100%;margin:0;color:#2b2034;background:var(--showcase-paper);overflow:hidden;border:1px solid #d6ccdf}
+.c-product-showcase__stage{position:relative;aspect-ratio:1672/941;overflow:hidden;background:linear-gradient(132deg,#eee7f2 0%,#f4f0e8 58%,#e2d6eb 100%)}
+.c-product-showcase--studio .c-product-showcase__stage{aspect-ratio:1891/831;background:linear-gradient(135deg,#4b2d67,#734b9c 62%,#8863ab)}
+.c-product-showcase__orbit{position:absolute;inset:10% 16%;border:1px solid #734b9c33;border-radius:50%;transform:rotate(-25deg)}
+.c-product-showcase--studio .c-product-showcase__orbit{border-color:#f4f0e833}
+.c-product-showcase__window{position:absolute;overflow:hidden;border:1px solid #4d365f2e;border-radius:8px;background:#fff;box-shadow:0 14px 30px #35223e25}
+.c-product-showcase__chrome{height:clamp(17px,2.2vw,30px);display:flex;align-items:center;justify-content:space-between;padding:0 10px;background:#f4f0e8;border-bottom:1px solid #ded7e3;gap:8px}
+.c-product-showcase__chrome>span{display:flex;gap:4px}.c-product-showcase__chrome i{width:5px;height:5px;border-radius:50%;background:#b7a7c5}
+.c-product-showcase__chrome small{color:#5b486b;font:500 clamp(6px,.65vw,10px)/1 'Catalisa Inter',sans-serif;white-space:nowrap}
+.c-product-showcase__window img{display:block;width:100%;height:auto;max-width:none;object-fit:contain;transform:none;filter:none}
+.c-product-showcase--banking .c-product-showcase__window--0{left:5%;top:4%;width:50%}
+.c-product-showcase--banking .c-product-showcase__window--1{right:4%;bottom:8%;width:47%}
+.c-product-showcase--studio .c-product-showcase__window--0{left:4%;top:8%;width:64%}
+.c-product-showcase--studio .c-product-showcase__window--1{right:3%;bottom:6%;width:48%}
+.c-product-showcase__caption{position:relative;display:flex;justify-content:space-between;gap:12px;padding:12px 16px;color:#584662;background:var(--showcase-paper);font:400 11px/1.5 'Catalisa Inter',sans-serif}
+.c-product-showcase__caption>span{max-width:55%}
+.c-product-showcase--card .c-product-showcase__caption{display:block}.c-product-showcase--card .c-product-showcase__caption>span{display:block;max-width:none}
+.c-product-gallery{color:#2b2034;background:#f4f0e8;padding:clamp(16px,3vw,32px);border:1px solid #d6ccdf}
+.c-product-gallery__editorial{margin:0 0 24px;overflow:hidden;background:#e6d9ea;border-radius:4px}
+.c-product-gallery__editorial img{display:block;width:100%;max-width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;transform:none;animation:none}
+.c-product-gallery__intro{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:22px}
+.c-product-gallery__intro>span{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#734b9c}
+.c-product-gallery__intro p{margin:0;font-size:14px;line-height:1.5}
+.c-product-gallery__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.c-product-gallery__item{min-width:0;margin:0}
+.c-product-gallery__open{position:relative;display:block;width:100%;padding:0;overflow:hidden;border:1px solid #d6ccdf;border-radius:5px;background:white;cursor:zoom-in;color:#fff}
+.c-product-gallery__open img{display:block;max-width:100%;width:100%;height:auto;aspect-ratio:4/3;object-fit:contain;object-position:center;transform:none;filter:none}
+.c-product-gallery__open>span{position:absolute;right:10px;bottom:10px;display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#734b9c;font-size:20px}
+.c-product-gallery__open:focus-visible{outline:3px solid #734b9c;outline-offset:4px}
+.c-product-gallery__item figcaption{padding-top:16px;font-size:14px;line-height:1.5}
+.c-product-gallery__item strong{display:block;font-weight:500}.c-product-gallery__item p{margin:8px 0}
+.c-product-gallery__item small{display:block;color:#6c5978;font-size:11px}.c-product-gallery__item a{display:inline-block;margin-top:8px;color:#734b9c}
+.c-product-gallery__item details{margin-top:10px;font-size:11px}.c-product-gallery__item summary{cursor:pointer}.c-product-gallery__item code{display:block;overflow-wrap:anywhere;margin-top:8px}
+.c-product-gallery__note{max-width:78ch;margin:24px 0 0;font-size:12px;line-height:1.6;color:#6c5978}
+@media(max-width:600px){.c-product-showcase__chrome{height:17px;padding-inline:6px}.c-product-showcase__chrome i{width:4px;height:4px}.c-product-showcase__caption{display:block;padding:10px 12px;font-size:10px}.c-product-showcase__caption>span{display:block;max-width:none}.c-product-showcase--studio .c-product-showcase__stage{aspect-ratio:1672/941}.c-product-showcase--studio .c-product-showcase__window--0{top:10%;width:70%}.c-product-showcase--studio .c-product-showcase__window--1{bottom:9%;width:54%}.c-product-gallery__intro{display:block}.c-product-gallery__intro p{margin-top:10px}.c-product-gallery__grid{grid-template-columns:1fr;gap:24px}}
+/* Keep the approved copy column clear while replacing decorative placeholders. */
+.c-site .banking-photo>.c-product-showcase{height:100%;border:0}
+.c-site .banking-photo .c-product-showcase__stage{height:100%;aspect-ratio:auto}
+.c-site .banking-photo .c-product-showcase__window--0{left:43%;top:7%;width:79%}
+.c-site .banking-photo .c-product-showcase__window--1{right:-18%;bottom:8%;width:75%}
+.c-site .banking-photo .c-product-showcase__caption{position:absolute;bottom:0;right:0;max-width:55%;padding:8px;font-size:9px}
+.c-site .c-home .studio-background>.c-product-showcase{position:absolute;right:-2%;width:65%;height:100%;border:0;background:none}
+.c-site .c-home .studio-background .c-product-showcase__stage{height:100%;aspect-ratio:auto;background:transparent}
+.c-site .c-home .studio-background .c-product-showcase__caption{position:absolute;bottom:0;right:0;font-size:10px;background:var(--showcase-paper)}
+@media(max-width:700px){.c-site .c-home .studio-background>.c-product-showcase{width:100%;right:0}.c-site .banking-photo .c-product-showcase__caption{max-width:50%;font-size:8px}}

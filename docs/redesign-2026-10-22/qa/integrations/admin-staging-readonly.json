@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-23T01:16:38.865Z",
+  "origin": "https://panel-api.wpp.bb.stg.catalisa.app",
+  "scope": "User-selected admin account discovery; authentication and GET only. No agent selection, generation, lead, channel or deployment operation.",
+  "operations": [
+    {
+      "resource": "/auth/login",
+      "method": "POST",
+      "status": 201
+    },
+    {
+      "resource": "/auth/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "resource": "/agents",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "resource": "/agents",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "resource": "/agents",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "resource": "/agents/:id",
+      "method": "GET",
+      "status": 200
+    }
+  ],
+  "candidates": [
+    {
+      "name": "Atendimento Catalisa",
+      "slug": "atendimento-catalisa",
+      "active": true,
+      "isPublic": false,
+      "declaredToolCount": 10,
+      "declaredToolNames": [
+        "list_leads",
+        "get_lead",
+        "create_lead",
+        "update_lead",
+        "send_whatsapp_message",
+        "list_lead_types",
+        "get_calendar_slots",
+        "create_calendar_event",
+        "ai_transcribe",
+        "ai_sentiment"
+      ],
+      "knowledgeAssessment": "Not assessed by this account/tool inventory; a dedicated site knowledge contract still needs validation."
+    }
+  ],
+  "accountMatchesUserSelection": true,
+  "candidateCount": 1
+}

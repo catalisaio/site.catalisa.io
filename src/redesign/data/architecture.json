@@ -1,0 +1,125 @@
+[
+  {
+    "name": "Banking",
+    "slug": "banking",
+    "title": "Uma conta. Várias formas de operar.",
+    "copy": "Aplicativo, desktop e console apresentam saldo, extrato e operações a públicos diferentes. Identidade, permissões e capacidades bancárias sustentam os canais sem replicar a regra em cada tela.",
+    "shared": [
+      "Identidade",
+      "BaaS",
+      "Portfólio",
+      "Permissões",
+      "Eventos"
+    ],
+    "specific": "Marca e canais · papéis de operação · regras de autorização",
+    "steps": [
+      "Identificar",
+      "Consultar",
+      "Autorizar",
+      "Operar"
+    ]
+  },
+  {
+    "name": "Crédito",
+    "slug": "credit",
+    "title": "Do pedido à vida da operação.",
+    "copy": "Produto, cálculo, política e formalização se conectam em uma esteira. A mesa acompanha o dossiê, as condições de liberação e a carteira; cada modalidade acrescenta suas particularidades.",
+    "shared": [
+      "Portfólio",
+      "Cálculo",
+      "Pricing",
+      "Decisão",
+      "Documentos"
+    ],
+    "specific": "Modalidade e lastro · condições comerciais · alçadas da mesa",
+    "steps": [
+      "Simular",
+      "Analisar",
+      "Formalizar",
+      "Acompanhar"
+    ]
+  },
+  {
+    "name": "Decisão",
+    "slug": "decision",
+    "title": "Muda a política. A jornada continua.",
+    "copy": "A esteira reúne as fontes configuradas. O motor aplica a versão publicada da política e devolve resultado e motivo. O mesmo fundamento pode participar de elegibilidade, limites ou encaminhamento para análise.",
+    "shared": [
+      "Dados",
+      "Fontes",
+      "Regras",
+      "Identidade",
+      "Evidências"
+    ],
+    "specific": "Dados de entrada · política versionada · tratamento de exceções",
+    "steps": [
+      "Receber",
+      "Consultar",
+      "Avaliar",
+      "Encaminhar"
+    ]
+  },
+  {
+    "name": "Recebíveis",
+    "slug": "credit",
+    "title": "Uma base de crédito. Outro lastro.",
+    "copy": "Em uma composição possível, recebíveis elegíveis entram no dossiê, o cálculo organiza a oferta e a formalização prepara a operação. Conciliação, registro e liquidação dependem dos parceiros conectados.",
+    "shared": [
+      "Dados",
+      "Cálculo",
+      "Pricing",
+      "Decisão",
+      "Assinatura"
+    ],
+    "specific": "Elegibilidade dos títulos · concentração · registro e conciliação",
+    "steps": [
+      "Conferir",
+      "Precificar",
+      "Formalizar",
+      "Conciliar"
+    ],
+    "note": "Composição ilustrativa · integrações a validar"
+  },
+  {
+    "name": "Copiloto",
+    "url": "/agentes/",
+    "title": "Conhecimento que acompanha o trabalho.",
+    "copy": "Em uma visita técnica, vídeo e documentos podem dar contexto ao especialista. A IA prepara um resumo e sugere consultas ao manual; o técnico valida o diagnóstico e autoriza as próximas ações.",
+    "shared": [
+      "Vídeo",
+      "IA",
+      "Documentos",
+      "Dados",
+      "Workflow"
+    ],
+    "specific": "Manuais autorizados · contexto do equipamento · validação técnica",
+    "steps": [
+      "Contextualizar",
+      "Consultar",
+      "Revisar",
+      "Registrar"
+    ],
+    "note": "Aplicação possível · depende da base técnica e das integrações"
+  },
+  {
+    "name": "Atendimento",
+    "url": "/workflows/",
+    "title": "A conversa avança para uma ação.",
+    "copy": "Uma central de serviços pode reconhecer a solicitação, consultar o andamento no sistema de origem e organizar um agendamento. Quando falta contexto ou autorização, a jornada encaminha o caso à equipe.",
+    "shared": [
+      "Conversa",
+      "Identidade",
+      "Agenda",
+      "Dados",
+      "Workflow"
+    ],
+    "specific": "Política de atendimento · sistemas conectados · encaminhamento humano",
+    "steps": [
+      "Entender",
+      "Consultar",
+      "Agendar",
+      "Acompanhar"
+    ],
+    "note": "Aplicação possível · escopo definido por operação"
+  }
+]

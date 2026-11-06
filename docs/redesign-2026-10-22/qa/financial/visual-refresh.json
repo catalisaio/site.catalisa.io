@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-23T01:13:55.445Z",
+  "passed": true,
+  "scope": "Final native screenshots and SPA navigation; preserves functional report.",
+  "measurements": [
+    {
+      "route": "/ecossistema/banking/",
+      "width": 390,
+      "scrollWidth": 390,
+      "font": "\"Catalisa Inter\", Inter, Arial, sans-serif",
+      "images": 10
+    },
+    {
+      "route": "/ecossistema/banking/",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "font": "\"Catalisa Inter\", Inter, Arial, sans-serif",
+      "images": 10
+    },
+    {
+      "route": "/ecossistema/credit/",
+      "width": 390,
+      "scrollWidth": 390,
+      "font": "\"Catalisa Inter\", Inter, Arial, sans-serif",
+      "images": 9
+    },
+    {
+      "route": "/ecossistema/credit/",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "font": "\"Catalisa Inter\", Inter, Arial, sans-serif",
+      "images": 9
+    }
+  ],
+  "states": [],
+  "checks": [],
+  "errors": []
+}

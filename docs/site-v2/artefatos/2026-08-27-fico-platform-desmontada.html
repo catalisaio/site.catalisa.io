@@ -1,0 +1,528 @@
+<title>FICO Platform, Desmontada</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap">
+
+<style>
+:root{
+  --pap:#FBFBFC; --pap2:#F3F3F7; --ink:#14161A; --ink2:#3A4048; --mut:#6A6878;
+  --rule:#E2E3EA; --rule2:#CFD1DA;
+  --acc:#5E3D80; --acc-soft:#F0EBF6; --warn:#8F6206; --warn-soft:#F9F2E1;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --pap:#0E0F13; --pap2:#171922; --ink:#E9EAEF; --ink2:#BCBFC9; --mut:#8B8A99;
+    --rule:#262A34; --rule2:#333846;
+    --acc:#B392DE; --acc-soft:#1E1828; --warn:#D9A441; --warn-soft:#241D10;
+  }
+}
+:root[data-theme="dark"]{
+  --pap:#0E0F13; --pap2:#171922; --ink:#E9EAEF; --ink2:#BCBFC9; --mut:#8B8A99;
+  --rule:#262A34; --rule2:#333846;
+  --acc:#B392DE; --acc-soft:#1E1828; --warn:#D9A441; --warn-soft:#241D10;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--pap);color:var(--ink);
+  font-family:"Source Serif 4",Georgia,serif;
+  font-size:18px;line-height:1.62;
+  font-variant-numeric:oldstyle-nums;
+}
+:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+
+/* ---- grade: coluna de margem + coluna principal ---- */
+.doc{max-width:1140px;margin:0 auto;padding:0 28px 120px}
+.blk{display:grid;grid-template-columns:186px minmax(0,1fr);gap:38px;align-items:start}
+.blk + .blk{margin-top:0}
+.mg{font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:12.5px;line-height:1.5;color:var(--mut);padding-top:6px}
+.mg .sn{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.14em;color:var(--acc);display:block;margin-bottom:10px}
+.col{min-width:0;max-width:70ch}
+
+/* ---- cabeçalho ---- */
+.top{border-bottom:2px solid var(--ink);padding:56px 0 22px;margin-bottom:0}
+.kicker{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--acc);margin:0 0 22px}
+h1{font-size:clamp(34px,5.4vw,58px);line-height:1.04;letter-spacing:-.022em;font-weight:700;margin:0;max-width:16ch;text-wrap:balance}
+.dek{font-size:clamp(18px,2.2vw,22px);line-height:1.45;color:var(--ink2);margin:20px 0 0;max-width:56ch;font-weight:400}
+.meta{
+  display:flex;flex-wrap:wrap;gap:0;margin-top:34px;border-top:1px solid var(--rule);
+  font-family:"IBM Plex Sans",sans-serif;font-size:12.5px;color:var(--mut);
+}
+.meta div{padding:14px 26px 0 0;border-right:1px solid var(--rule);margin-right:26px}
+.meta div:last-child{border-right:0}
+.meta b{display:block;color:var(--ink);font-weight:600;font-size:13px;margin-top:3px}
+
+/* ---- veredito ---- */
+.veredito{border:1px solid var(--rule2);background:var(--pap2);padding:30px 32px;margin:44px 0 0}
+.veredito h2{font-size:15px;font-family:"IBM Plex Sans",sans-serif;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--acc);margin:0 0 20px}
+.veredito ol{margin:0;padding:0;list-style:none;counter-reset:v}
+.veredito li{counter-increment:v;display:grid;grid-template-columns:34px 1fr;gap:14px;padding:13px 0;border-top:1px solid var(--rule)}
+.veredito li:first-child{border-top:0;padding-top:0}
+.veredito li:before{content:counter(v,decimal-leading-zero);font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--mut);padding-top:5px}
+.veredito p{margin:0;font-size:17px;line-height:1.55}
+.veredito b{font-weight:700}
+
+/* ---- tipografia do corpo ---- */
+h2.sec{
+  font-size:clamp(24px,3.2vw,33px);line-height:1.12;letter-spacing:-.018em;font-weight:700;
+  margin:0 0 18px;max-width:22ch;text-wrap:balance;
+}
+h3{font-size:20px;line-height:1.25;font-weight:600;letter-spacing:-.012em;margin:34px 0 12px}
+h3:first-child{margin-top:0}
+p{margin:0 0 17px}
+.col > p:last-child{margin-bottom:0}
+b,strong{font-weight:700;color:var(--ink)}
+em{font-style:italic}
+a{color:var(--acc)}
+.lede{font-size:20px;line-height:1.55;color:var(--ink2)}
+.sep{border:0;border-top:1px solid var(--rule);margin:52px 0}
+.sep-forte{border:0;border-top:2px solid var(--ink);margin:64px 0 40px}
+
+/* ---- citação verbatim ---- */
+.cit{border-left:2px solid var(--acc);padding:2px 0 2px 22px;margin:22px 0 20px}
+.cit .en{font-style:italic;font-size:19px;line-height:1.48;color:var(--ink);margin:0}
+.cit .pt{font-family:"IBM Plex Sans",sans-serif;font-style:normal;font-size:14px;line-height:1.55;color:var(--mut);margin:9px 0 0}
+.cit .fo{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);margin:10px 0 0}
+
+/* ---- selo vale / não vale ---- */
+.selo{
+  display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.1em;
+  text-transform:uppercase;padding:4px 9px;border:1px solid;margin-bottom:12px;
+}
+.selo.ok{color:var(--acc);border-color:var(--acc);background:var(--acc-soft)}
+.selo.no{color:var(--warn);border-color:var(--warn);background:var(--warn-soft)}
+
+/* ---- quadros ---- */
+.quadro{margin:34px 0;border-top:2px solid var(--ink);border-bottom:1px solid var(--rule2)}
+.quadro .cap{
+  font-family:"IBM Plex Sans",sans-serif;font-size:12.5px;color:var(--mut);
+  padding:11px 0 14px;border-bottom:1px solid var(--rule);
+}
+.quadro .cap b{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);font-weight:500;margin-right:10px}
+.quadro .rol{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-family:"IBM Plex Sans",sans-serif;font-size:14px;line-height:1.5}
+th{
+  text-align:left;font-weight:600;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);
+  padding:14px 16px 10px 0;border-bottom:1px solid var(--rule);vertical-align:bottom;
+}
+td{padding:13px 16px 13px 0;border-bottom:1px solid var(--rule);vertical-align:top;color:var(--ink2)}
+tr:last-child td{border-bottom:0}
+td b,th b{color:var(--ink)}
+td.k{color:var(--ink);font-weight:600;white-space:nowrap}
+.num{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;color:var(--ink)}
+
+/* ---- matriz de cobertura ---- */
+.mx td,.mx th{text-align:center;padding:11px 6px}
+.mx td.p,.mx th.p{text-align:left;padding-right:18px;white-space:nowrap}
+.pt{display:inline-block;border-radius:50%}
+.pt.f2{width:13px;height:13px;background:var(--acc)}
+.pt.f1{width:13px;height:13px;border:1.5px solid var(--acc)}
+.pt.f0{width:11px;height:2px;border-radius:0;background:var(--rule2)}
+.leg{display:flex;gap:20px;flex-wrap:wrap;font-family:"IBM Plex Sans",sans-serif;font-size:12px;color:var(--mut);padding:14px 0 0}
+.leg span{display:flex;align-items:center;gap:7px}
+
+/* ---- diagramas ---- */
+.dg{width:100%;height:auto;display:block;padding:24px 0}
+.dg .bx{fill:var(--pap2);stroke:var(--rule2);stroke-width:1.2}
+.dg .bxa{fill:var(--acc-soft);stroke:var(--acc);stroke-width:1.3}
+.dg .ln{stroke:var(--rule2);stroke-width:1.2;fill:none}
+.dg .t{font-family:"IBM Plex Sans",sans-serif;font-size:12px;fill:var(--ink)}
+.dg .tm{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.09em;fill:var(--mut)}
+.dg .ta{font-family:"IBM Plex Sans",sans-serif;font-size:12px;fill:var(--acc);font-weight:600}
+
+/* ---- listas ---- */
+ul.fio{list-style:none;margin:20px 0;padding:0}
+ul.fio li{border-top:1px solid var(--rule);padding:14px 0;display:grid;grid-template-columns:auto 1fr;gap:16px}
+ul.fio li:last-child{border-bottom:1px solid var(--rule)}
+ul.fio .m{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--acc);padding-top:4px}
+ul.simples{margin:16px 0;padding-left:20px}
+ul.simples li{margin-bottom:9px}
+
+/* ---- caixa de fecho ---- */
+.fecho{border:2px solid var(--ink);padding:30px 32px;margin:0}
+.fecho h3{margin:0 0 14px;font-size:19px}
+.fecho p:last-child{margin-bottom:0}
+
+/* ---- fontes ---- */
+.fontes{font-family:"IBM Plex Sans",sans-serif;font-size:13px;color:var(--mut);line-height:1.6}
+.fontes li{margin-bottom:9px}
+
+@media (max-width:880px){
+  .blk{grid-template-columns:1fr;gap:0}
+  .mg{padding:0 0 18px;border-bottom:1px solid var(--rule);margin-bottom:22px}
+  .mg .sn{margin-bottom:6px}
+  .col{max-width:none}
+  .doc{padding:0 18px 80px}
+  .meta div{border-right:0;margin-right:0;padding-right:0;width:100%}
+  body{font-size:17px}
+}
+</style>
+
+<div class="doc">
+
+<header class="top">
+  <p class="kicker">Estudo de posicionamento · 27 de agosto de 2026</p>
+  <h1>FICO Platform, desmontada</h1>
+  <p class="dek">Sete peças de argumento que sustentam uma empresa de 70 anos vendendo soluções sobre uma plataforma — e quais delas a Catalisa pode usar sem mentir.</p>
+  <div class="meta">
+    <div>Para<b>decisão de posicionamento</b></div>
+    <div>Fontes<b>7 páginas da FICO + 2 de terceiros</b></div>
+    <div>Método<b>leitura verbatim, sem paráfrase</b></div>
+    <div>Conclusão<b>5 peças valem · 5 não</b></div>
+  </div>
+</header>
+
+<div class="veredito">
+  <h2>O veredito</h2>
+  <ol>
+    <li><p><b>A peça mais valiosa não é a plataforma — é a navegação.</b> A FICO organiza o catálogo pelo <b>estágio da relação com o cliente</b>, não por setor nem por produto. Trinta e poucas soluções em seis ganchos. É o remédio direto para sete produtos que hoje parecem sete projetos.</p></li>
+    <li><p><b>A unidade de valor é a decisão, tratada como objeto</b> — com versão, dono e histórico. Isso transforma “plataforma” em prática, e é a única forma de cobrar por resultado em vez de por assento.</p></li>
+    <li><p><b>A arquitetura é contada de cima para baixo, com a solução no topo.</b> O site atual da Catalisa faz o inverso: Studio, Apps, Building Blocks e Workflows são quatro páginas de primeiro nível descrevendo a máquina.</p></li>
+    <li><p><b>A pilha de prova deles não se copia.</b> 90% dos maiores credores, Líder no Gartner 2026, 24 logotipos. A Catalisa não tem cliente ativo — e copiar o <em>formato</em> da prova sem ter a prova queima a página na primeira pergunta.</p></li>
+    <li><p><b>O Marketplace é o movimento que muda o modelo de negócio</b>, e a nossa versão é estruturalmente diferente: lá se publica <em>dado</em>; aqui se publicaria <em>uma operação inteira</em>, porque o produto já é dado.</p></li>
+  </ol>
+</div>
+
+<hr class="sep-forte">
+
+<div class="blk">
+  <div class="mg"><span class="sn">§ 1</span>Totvs, Oracle, Microsoft e Sinqia também foram levantados. Só a Microsoft chega perto, e por um motivo só: o Dataverse.</div>
+  <div class="col">
+    <h2 class="sec">Por que a FICO, e não os outros quatro</h2>
+    <p class="lede">Quatro coincidências estruturais, e nenhuma delas é superficial.</p>
+    <p>A FICO passou trinta anos sendo “a empresa do score” e virou plataforma de decisão vendida por soluções. É exatamente a transição que a Catalisa precisa fazer no sentido inverso: tem a plataforma, precisa das soluções na frente.</p>
+    <ul class="fio">
+      <li><span class="m">01</span><span><b>A unidade de valor é a decisão.</b> Não o assento, não a licença. A Catalisa já tem motor de regras em notação aberta versionado e alterado sem publicar sistema, esteira de decisão, precificação por faixa de risco, cálculo de parcela e custo efetivo, consulta a bureau com cache, e trilha de auditoria por organização. É a mesma caixa de ferramentas.</span></li>
+      <li><span class="m">02</span><span><b>Vende solução, mantém a plataforma embaixo.</b> É a correção que este site precisa fazer, escrita por outra empresa.</span></li>
+      <li><span class="m">03</span><span><b>Reuso composto.</b> <em>“Misture, combine e reutilize serviços pré-configurados em aplicações diferentes”</em> descreve literalmente o pacote instalável da Catalisa.</span></li>
+      <li><span class="m">04</span><span><b>Um ativo de dado que dá a categoria.</b> É o que a Catalisa <b>não</b> tem — e por isso é a decisão estratégica mais importante da empresa, tratada no §6.</span></li>
+    </ul>
+    <p>Totvs serve para a tese de ecossistema e expansão de mercado endereçável — “Ecossistema 3D”, doze setores verticalizados, techfin com mercado declarado sete vezes maior que o de gestão. Microsoft serve para uma frase: no Dataverse, informação entrada num aplicativo está imediatamente disponível nos outros. Oracle é suíte por aquisição. Sinqia é distante demais em escala e posicionamento para servir de referência.</p>
+  </div>
+</div>
+
+<hr class="sep">
+
+<div class="blk">
+  <div class="mg"><span class="sn">§ 2</span>Todas as citações desta seção são verbatim das páginas da FICO, consultadas em 27/08/2026. A tradução ao lado é gloss, não citação.</div>
+  <div class="col">
+    <h2 class="sec">As sete peças do argumento</h2>
+    <p class="lede">Lidas na ordem em que a FICO as apresenta — porque a ordem é metade do argumento.</p>
+  </div>
+</div>
+
+<div class="blk">
+  <div class="mg"><span class="sn">2.1</span><span class="selo ok">vale aqui</span> Confirma descartar “composable” e “agêntica” como bandeira, sem descartá-las como descritor técnico mais fundo no site.</div>
+  <div class="col">
+    <h3>O mote é resultado e relação — nunca tecnologia</h3>
+    <div class="cit">
+      <p class="en">Applied Intelligence — Powering Your Customer Connections.</p>
+      <p class="pt">Inteligência aplicada — dando força às suas conexões com o cliente.</p>
+      <p class="fo">fico.com · home</p>
+    </div>
+    <p>Nem “plataforma”, nem “composable”, nem “agêntica” na manchete. A palavra técnica está em <em>applied</em>, que é adjetivo; o substantivo é <b>conexão com o cliente</b>. A categoria só aparece no subtítulo, e mesmo lá subordinada ao ganho de quem compra.</p>
+    <p>É uma escolha cara e deliberada: a FICO abre mão do termo de busca do setor no lugar mais visível da página, e o recupera no título, na descrição e no menu.</p>
+  </div>
+</div>
+
+<div class="blk">
+  <div class="mg"><span class="sn">2.2</span><span class="selo ok">vale aqui</span> <b>É a peça mais valiosa do estudo inteiro.</b> Sozinha, ela resolve o problema de sete produtos que competem por atenção.</div>
+  <div class="col">
+    <h3>O catálogo é organizado pelo ciclo de vida, não por setor</h3>
+    <p>A navegação de soluções da FICO não tem “para bancos”, “para seguradoras”, “para varejo”. Tem estágios da relação com o cliente:</p>
+    <div class="cit">
+      <p class="en">Attract &amp; Engage · Onboard &amp; Originate · Nurture &amp; Manage · Protect &amp; Comply · Contact &amp; Communicate · Scoring Solutions</p>
+      <p class="pt">Atrair e engajar · Cadastrar e originar · Cultivar e gerir · Proteger e conformar · Contatar e comunicar · Soluções de pontuação</p>
+      <p class="fo">fico.com · menu de soluções</p>
+    </div>
+    <p>Trinta e poucas soluções penduradas em seis ganchos. O visitante <b>não precisa saber o nome de nenhuma</b> — precisa saber em que ponto da própria operação está doendo.</p>
+
+    <div class="quadro">
+      <div class="cap"><b>Quadro 1</b> As duas formas possíveis de organizar um catálogo — e o que cada uma faz com a atenção do visitante.</div>
+      <svg class="dg" viewBox="0 0 880 330" role="img" aria-label="Comparação: catálogo por setor repete a mesma solução em toda coluna; catálogo por estágio coloca cada solução uma vez só, numa linha contínua.">
+        <text class="tm" x="0" y="16">POR SETOR — CADA SOLUÇÃO REAPARECE EM TODA COLUNA</text>
+        <g>
+          <rect class="bx" x="20" y="34" width="180" height="26" rx="2"/><text class="t" x="110" y="52" text-anchor="middle">Bancos</text>
+          <rect class="bx" x="230" y="34" width="180" height="26" rx="2"/><text class="t" x="320" y="52" text-anchor="middle">Seguradoras</text>
+          <rect class="bx" x="440" y="34" width="180" height="26" rx="2"/><text class="t" x="530" y="52" text-anchor="middle">Varejo</text>
+          <rect class="bx" x="650" y="34" width="180" height="26" rx="2"/><text class="t" x="740" y="52" text-anchor="middle">Saúde</text>
+        </g>
+        <g>
+          <rect class="bx" x="20" y="72" width="180" height="20" rx="2"/><text class="tm" x="30" y="86">FRAUDE</text>
+          <rect class="bx" x="20" y="98" width="180" height="20" rx="2"/><text class="tm" x="30" y="112">ORIGINAÇÃO</text>
+          <rect class="bx" x="20" y="124" width="180" height="20" rx="2"/><text class="tm" x="30" y="138">COBRANÇA</text>
+          <rect class="bx" x="230" y="72" width="180" height="20" rx="2"/><text class="tm" x="240" y="86">FRAUDE</text>
+          <rect class="bx" x="230" y="98" width="180" height="20" rx="2"/><text class="tm" x="240" y="112">ORIGINAÇÃO</text>
+          <rect class="bx" x="230" y="124" width="180" height="20" rx="2"/><text class="tm" x="240" y="138">COBRANÇA</text>
+          <rect class="bx" x="440" y="72" width="180" height="20" rx="2"/><text class="tm" x="450" y="86">FRAUDE</text>
+          <rect class="bx" x="440" y="98" width="180" height="20" rx="2"/><text class="tm" x="450" y="112">ORIGINAÇÃO</text>
+          <rect class="bx" x="440" y="124" width="180" height="20" rx="2"/><text class="tm" x="450" y="138">COBRANÇA</text>
+          <rect class="bx" x="650" y="72" width="180" height="20" rx="2"/><text class="tm" x="660" y="86">FRAUDE</text>
+          <rect class="bx" x="650" y="98" width="180" height="20" rx="2"/><text class="tm" x="660" y="112">ORIGINAÇÃO</text>
+          <rect class="bx" x="650" y="124" width="180" height="20" rx="2"/><text class="tm" x="660" y="138">COBRANÇA</text>
+        </g>
+        <text class="tm" x="0" y="196">POR ESTÁGIO — CADA SOLUÇÃO APARECE UMA VEZ, NA LINHA DO CLIENTE</text>
+        <path class="ln" d="M20 246 H830"/>
+        <g>
+          <rect class="bxa" x="20" y="214" width="126" height="24" rx="2"/><text class="ta" x="83" y="230" text-anchor="middle">atrair</text>
+          <rect class="bxa" x="157" y="214" width="126" height="24" rx="2"/><text class="ta" x="220" y="230" text-anchor="middle">originar</text>
+          <rect class="bxa" x="294" y="214" width="126" height="24" rx="2"/><text class="ta" x="357" y="230" text-anchor="middle">gerir</text>
+          <rect class="bxa" x="431" y="214" width="126" height="24" rx="2"/><text class="ta" x="494" y="230" text-anchor="middle">proteger</text>
+          <rect class="bxa" x="568" y="214" width="126" height="24" rx="2"/><text class="ta" x="631" y="230" text-anchor="middle">comunicar</text>
+          <rect class="bxa" x="705" y="214" width="126" height="24" rx="2"/><text class="ta" x="768" y="230" text-anchor="middle">pontuar</text>
+        </g>
+        <path class="ln" d="M83 238 V214 M220 238 V214 M357 238 V214 M494 238 V214 M631 238 V214 M768 238 V214"/>
+        <g>
+          <path class="ln" d="M220 246 V268"/><rect class="bx" x="157" y="268" width="126" height="20" rx="2"/><text class="tm" x="167" y="282">ORIGINAÇÃO</text>
+          <path class="ln" d="M357 246 V268"/><rect class="bx" x="294" y="268" width="126" height="20" rx="2"/><text class="tm" x="304" y="282">COBRANÇA</text>
+          <path class="ln" d="M494 246 V268"/><rect class="bx" x="431" y="268" width="126" height="20" rx="2"/><text class="tm" x="441" y="282">FRAUDE</text>
+        </g>
+        <text class="tm" x="20" y="312">A MESMA EMPRESA CLIENTE ATRAVESSA AS SEIS — E VÊ ONDE ESTÁ O BURACO DELA</text>
+      </svg>
+    </div>
+
+    <p>A consequência comercial é direta e é o que interessa: organizados por setor, os produtos <b>competem por atenção</b> e quem não é do setor vai embora. Organizados por estágio, eles <b>se somam</b> — e o mapa de estágios vira, sem esforço adicional, o mapa de venda cruzada. O cliente vê a própria linha com buracos.</p>
+  </div>
+</div>
+
+<div class="blk">
+  <div class="mg"><span class="sn">2.3</span><span class="selo ok">vale aqui</span> Descreve o que a Catalisa já faz. Os cinco verbos são o roteiro pronto de uma página.</div>
+  <div class="col">
+    <h3>A decisão não é funcionalidade: é objeto</h3>
+    <div class="cit">
+      <p class="en">Model decisions with open standards, automate with business rules, and support human-in-the-loop AI. Build a decision-centric enterprise.</p>
+      <p class="pt">Modele decisões com padrões abertos, automatize com regras de negócio e sustente IA com pessoa no circuito. Construa uma empresa centrada em decisão.</p>
+      <p class="fo">fico.com · intelligent decisions</p>
+    </div>
+    <p>A decisão é apresentada como <b>objeto de negócio discreto, versionável e reutilizável</b> — não como recurso do produto. E tem ciclo de vida próprio, dito em cinco verbos:</p>
+    <div class="quadro">
+      <div class="cap"><b>Quadro 2</b> O ciclo de vida da decisão, verbatim, e o que já existe do lado da Catalisa.</div>
+      <div class="rol"><table>
+        <thead><tr><th style="width:130px">verbo (FICO)</th><th style="width:210px">o que significa</th><th>o que a Catalisa já tem</th></tr></thead>
+        <tbody>
+          <tr><td class="k">Model</td><td>notação aberta, diagrama visual</td><td>motor de regras em notação DMN, versionado</td></tr>
+          <tr><td class="k">Author</td><td>tabelas, árvores, conjuntos de regras, pontuações</td><td>tabela de decisão, pontuação, faixa, alçada</td></tr>
+          <tr><td class="k">Test &amp; Validate</td><td>ciclo de vida com testes</td><td>simulação sobre carteira, campeão × desafiante</td></tr>
+          <tr><td class="k">Automate</td><td>publicação em produção, nuvem ou local</td><td>execução por API e por fluxo, <b>sem publicar sistema</b></td></tr>
+          <tr><td class="k">Improve</td><td>simulação e comparação contínuas</td><td>versão congelada em cada contrato, trilha de auditoria</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+    <p>O efeito retórico é forte e transferível: transforma “plataforma” em <b>prática</b>. Deixa de ser uma lista de recursos e passa a ser algo que uma pessoa nomeável faz numa terça-feira.</p>
+  </div>
+</div>
+
+<div class="blk">
+  <div class="mg"><span class="sn">2.4</span><span class="selo ok">vale aqui</span> E vale mais forte: no nosso segmento não existe fila de TI — existe ausência de TI.</div>
+  <div class="col">
+    <h3>O ator é nomeado, e não é o programador</h3>
+    <div class="cit">
+      <p class="en">Speed and efficiency of changes without relying on IT.</p>
+      <p class="pt">Velocidade e eficiência nas mudanças sem depender da TI.</p>
+      <p class="fo">fico.com · intelligent decisions</p>
+    </div>
+    <p>A FICO nomeia o comprador — o <em>business technologist</em>: a pessoa de risco, de produto, de crédito, que hoje espera fila de TI para mudar uma regra. É para ela que o texto é escrito, e é ela que tem orçamento e dor. E ancoram com número de analista: organizações que habilitam essas pessoas têm <span class="num">2,6×</span> mais chance de atingir os resultados que buscavam.</p>
+    <p>A adaptação para o segmento da Catalisa é mais dura e mais verdadeira: a dona da clínica não espera a TI — <b>ela simplesmente nunca muda nada</b>, e a regra envelhece com ela dentro.</p>
+  </div>
+</div>
+
+<div class="blk">
+  <div class="mg"><span class="sn">2.5</span><span class="selo ok">vale aqui</span> A ordem é o argumento. Repare que a solução é a camada <b>de cima</b>.</div>
+  <div class="col">
+    <h3>A arquitetura é contada de cima para baixo</h3>
+    <p>Cinco camadas, cada uma com uma promessa de uma linha. Verbatim:</p>
+    <div class="quadro">
+      <div class="cap"><b>Quadro 3</b> As cinco camadas da FICO Platform, na ordem em que a página as apresenta, e a tradução para a pilha da Catalisa.</div>
+      <div class="rol"><table>
+        <thead><tr><th style="width:34%">camada (FICO)</th><th style="width:33%">a promessa, verbatim</th><th>o equivalente na Catalisa</th></tr></thead>
+        <tbody>
+          <tr><td class="k">Solutions</td><td><em>Purpose-built solutions across every stage of the customer lifecycle</em></td><td><b>o produto</b> — Ágora, Jurídico, Clínica, Antecipação, Recrutamento</td></tr>
+          <tr><td class="k">Business Productivity</td><td><em>The AI-powered operating system to automate and augment human intelligence</em></td><td><b>o pacote</b> — o produto declarado como dado; instala por uma chamada</td></tr>
+          <tr><td class="k">Intelligent Agentic Orchestration</td><td><em>Proven, trusted building blocks for the AI era</em></td><td><b>a operação</b> — leads, funil, agentes, fluxos, metas · <span class="num">207</span> ações</td></tr>
+          <tr><td class="k">Semantic Data Layer</td><td><em>The shared intelligence foundation — always-on, enriched, decision-ready</em></td><td><b>o núcleo</b> — um cadastro e uma linha do tempo, por empresa</td></tr>
+          <tr><td class="k">Enterprise Control Plane</td><td><em>The core everything runs on — enterprise-ready from day 0</em></td><td><b>os blocos</b> — <span class="num">32</span> blocos · <span class="num">863</span> endpoints · identidade, trilha, isolamento</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+    <p>A arquitetura é apresentada como o que <b>sustenta</b> o produto, nunca como o produto. É a correção exata do site atual da Catalisa, onde Studio, Apps, Building Blocks e Workflows são quatro páginas de primeiro nível — quatro maneiras de descrever a máquina, e nenhuma que descreva o que fica pronto.</p>
+  </div>
+</div>
+
+<div class="blk">
+  <div class="mg"><span class="sn">2.6</span><span class="selo ok">vale aqui</span> E temos número melhor que o deles.</div>
+  <div class="col">
+    <h3>Composability é contada como reuso, e o benefício é tempo</h3>
+    <div class="cit">
+      <p class="en">Save time, money, and human capital by mixing, matching, and reusing preconfigured services and prepackaged business capabilities in new ways across different applications.</p>
+      <p class="pt">Economize tempo, dinheiro e gente misturando, combinando e reutilizando serviços pré-configurados e capacidades de negócio pré-empacotadas, de formas novas, em aplicações diferentes.</p>
+      <p class="fo">fico.com · composable workspaces</p>
+    </div>
+    <p>Nunca “nossa arquitetura é modular”. Sempre “você reaproveita e chega antes”. A palavra <em>composable</em> aparece; o argumento, não. O argumento é tempo.</p>
+    <p>Os números da Catalisa, medidos, são mais concretos que os da FICO: produto novo custa <b>zero linha de código de produto</b> (o único arquivo existente que se toca são duas linhas de registro); <b>cerca de 80%</b> da esteira de antecipação atravessa de um setor para outro sem reescrita; <b>três chaves de configuração</b> separam uma adega de um pet shop.</p>
+  </div>
+</div>
+
+<div class="blk">
+  <div class="mg"><span class="sn">2.7</span><span class="selo ok">vale aqui</span> É o argumento do juro composto, dito na língua de quem já comprou software antes.</div>
+  <div class="col">
+    <h3>O dado centralizado é vendido como multiplicador, não como banco</h3>
+    <div class="cit">
+      <p class="en">See people, organizations, locations, and other entities through a single, unified view to find signals in the data deluge.</p>
+      <p class="pt">Veja pessoas, organizações, locais e outras entidades por uma visão única e unificada, para achar sinal no dilúvio de dado.</p>
+      <p class="fo">fico.com · ai &amp; analytics</p>
+    </div>
+    <p>O argumento não é “guardamos seu dado num lugar só”. É que o perfil unificado <b>melhora o desempenho de todas as aplicações ao mesmo tempo</b> — decisão, comunicação e fraude. O dado deixa de ser custo de infraestrutura e vira alavanca de resultado.</p>
+    <p>A formulação mais precisa desse mesmo argumento está na Palantir, e vale citar porque é a melhor frase existente sobre o assunto: a escrita de volta faz o valor do ativo de dado <em>compor</em> ao longo do tempo — o insight capturado por um usuário passa a alimentar a decisão de outro.</p>
+  </div>
+</div>
+
+<hr class="sep">
+
+<div class="blk">
+  <div class="mg"><span class="sn">§ 3</span><span class="selo ok">vale aqui</span> E a nossa versão é estruturalmente diferente — ver a nota ao fim desta seção.</div>
+  <div class="col">
+    <h2 class="sec">O Marketplace, e por que ele muda o modelo de negócio</h2>
+    <p>Anunciado em 2026. Um catálogo curado de <em>decision assets</em>: dados de terceiros, APIs, modelos de aprendizado de máquina, analytics e soluções de parceiros — LexisNexis, Prove Identity, Mitek, Pipl, SentiLink, iPacket.</p>
+    <p>Três argumentos, e os três se aplicam:</p>
+    <ul class="fio">
+      <li><span class="m">01</span><span><b>Tempo.</b> <em>“Integrações que levam semanas ou meses podem ser concluídas em horas.”</em> Um banco global grande <em>“contornou um esforço interno projetado de dois anos e US$ 1,5 milhão”</em> adotando um ativo de parceiro já provisionado.</span></li>
+      <li><span class="m">02</span><span><b>Reuso entre silos.</b> Um ativo comprado uma vez serve fraude, originação, gestão de carteira e marketing — <em>“decision products podem ser usados por qualquer pessoa da empresa com acesso autorizado”</em>.</span></li>
+      <li><span class="m">03</span><span><b>Governança como fosso.</b> Catálogo curado, com linhagem, dependências e segurança. A curadoria é o produto, porque um ativo ruim queima a plataforma inteira.</span></li>
+    </ul>
+    <div class="fecho">
+      <h3>A diferença estrutural a nosso favor</h3>
+      <p>Na FICO, o ativo publicado é sobretudo <b>dado</b>. Aqui, o ativo publicado seria um <b>pacote inteiro</b> — funil, agentes, fluxos e metas — porque o produto já é dado. Seria um marketplace de <b>operações prontas</b>, não de fontes de dados. Nenhum concorrente brasileiro tem essa forma.</p>
+      <p>E a trava é conhecida e não resolvida: enquanto a base de conhecimento não for declarada no pacote — cerca de quarenta linhas no instalador — todo pacote de terceiro instala e <b>responde genérico</b>, que é o oposto do que promete.</p>
+    </div>
+  </div>
+</div>
+
+<hr class="sep-forte">
+
+<div class="blk">
+  <div class="mg"><span class="sn">§ 4</span><span class="selo no">não copiar</span> Esta seção existe porque copiar a forma da prova sem ter a prova é o erro mais caro possível — e o mais fácil de cometer.</div>
+  <div class="col">
+    <h2 class="sec">O que não se copia</h2>
+    <div class="quadro">
+      <div class="cap"><b>Quadro 4</b> Cinco peças da FICO que não transferem, e o motivo de cada uma.</div>
+      <div class="rol"><table>
+        <thead><tr><th style="width:30%">peça</th><th>por que não</th></tr></thead>
+        <tbody>
+          <tr><td class="k">A pilha de prova</td><td><em>“90% dos maiores credores usam FICO Scores”</em>, Líder no Quadrante Mágico do Gartner de 2026, 24 logotipos incluindo Wells Fargo e ANZ, citações quantificadas de clientes (<em>“BMO aumenta eficiência em 50%”</em>). <b>A Catalisa não tem cliente ativo.</b> Copiar o formato sem a substância queima a página na primeira pergunta — e a pergunta sempre vem: <em>“posso falar com essa empresa?”</em></td></tr>
+          <tr><td class="k">O vocabulário</td><td><em>semantic data layer</em>, <em>agentic orchestration</em>, <em>decision-ready</em>, <em>digital workforce</em>. A FICO fala com o CIO de um banco. Metade do público da Catalisa é dono de operação, e a instrução foi explícita: claro o suficiente para leigos.</td></tr>
+          <tr><td class="k">O ativo de dado</td><td>O FICO Score é padrão de mercado há décadas. A Catalisa tem <b>candidato</b> — quanto cada sacado historicamente não paga —, e ele não existe em escala. Sugerir paridade é exagero.</td></tr>
+          <tr><td class="k">O desenho</td><td>Azul corporativo, fotografia de banco de imagem, pilha animada de camadas. Rejeitado, e cai em metade da lista de proibições visuais que a própria Catalisa mantém.</td></tr>
+          <tr><td class="k">A largura do catálogo</td><td>Trinta e poucas soluções na navegação. A Catalisa tem sete produtos. Um menu com trinta itens vindo de uma marca desconhecida não organiza — some.</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+  </div>
+</div>
+
+<hr class="sep">
+
+<div class="blk">
+  <div class="mg"><span class="sn">§ 5</span>A tradução não é literal. Os estágios da FICO são centrados no credor; os da Catalisa são centrados na operação de quem compra.</div>
+  <div class="col">
+    <h2 class="sec">A tradução: seis estações, e nenhum produto preenche as seis</h2>
+    <p class="lede">Se o catálogo passa a ser organizado pelo estágio da relação, é preciso definir quais são os estágios — e eles têm que sair da operação de quem compra, não do nosso organograma.</p>
+    <div class="quadro">
+      <div class="cap"><b>Quadro 5</b> As seis estações, com a pergunta que o dono da operação faz em cada uma.</div>
+      <div class="rol"><table>
+        <thead><tr><th style="width:44px">#</th><th style="width:130px">estação</th><th style="width:38%">a pergunta de quem compra</th><th>o que a Catalisa já tem</th></tr></thead>
+        <tbody>
+          <tr><td class="num">01</td><td class="k">Chegar</td><td><em>“Quem me procurou e ninguém viu?”</em></td><td>quatro portas de conversa, triagem, agenda, cadastro automático</td></tr>
+          <tr><td class="num">02</td><td class="k">Decidir</td><td><em>“Com base em quê a gente decide isso?”</em></td><td>regra em tabela versionada, bureau, pontuação, faixa de taxa, alçada</td></tr>
+          <tr><td class="num">03</td><td class="k">Propor</td><td><em>“Quanto tempo até sair uma proposta?”</em></td><td>documento a partir de modelo, pré-proposta, borderô, contrato, assinatura</td></tr>
+          <tr><td class="num">04</td><td class="k">Executar</td><td><em>“Onde ficou registrado o que foi feito?”</em></td><td>o ato: evento na agenda, pedido, registro da consulta, aceite, e o gate humano</td></tr>
+          <tr><td class="num">05</td><td class="k">Retomar</td><td><em>“Quem esfriou e ninguém retomou?”</em></td><td>cadência com teto de contato, renovação, recorrência, cobrança</td></tr>
+          <tr><td class="num">06</td><td class="k">Responder</td><td><em>“Quem decidiu isso, quando, e com qual regra?”</em></td><td>trilha por organização, versão congelada em contrato, metas e rotina</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+    <div class="quadro">
+      <div class="cap"><b>Quadro 6</b> Cobertura de cada produto por estação. A leitura importante é a das colunas vazias.</div>
+      <div class="rol"><table class="mx">
+        <thead><tr><th class="p">produto</th><th>01<br>chegar</th><th>02<br>decidir</th><th>03<br>propor</th><th>04<br>executar</th><th>05<br>retomar</th><th>06<br>responder</th></tr></thead>
+        <tbody>
+          <tr><td class="p k">Ágora</td><td><span class="pt f2"></span></td><td><span class="pt f1"></span></td><td><span class="pt f2"></span></td><td><span class="pt f0"></span></td><td><span class="pt f1"></span></td><td><span class="pt f1"></span></td></tr>
+          <tr><td class="p k">Jurídico</td><td><span class="pt f2"></span></td><td><span class="pt f1"></span></td><td><span class="pt f0"></span></td><td><span class="pt f1"></span></td><td><span class="pt f0"></span></td><td><span class="pt f1"></span></td></tr>
+          <tr><td class="p k">Clínica</td><td><span class="pt f2"></span></td><td><span class="pt f1"></span></td><td><span class="pt f0"></span></td><td><span class="pt f2"></span></td><td><span class="pt f1"></span></td><td><span class="pt f2"></span></td></tr>
+          <tr><td class="p k">Recrutamento</td><td><span class="pt f2"></span></td><td><span class="pt f2"></span></td><td><span class="pt f1"></span></td><td><span class="pt f1"></span></td><td><span class="pt f0"></span></td><td><span class="pt f1"></span></td></tr>
+          <tr><td class="p k">Antecipação</td><td><span class="pt f1"></span></td><td><span class="pt f2"></span></td><td><span class="pt f2"></span></td><td><span class="pt f1"></span></td><td><span class="pt f0"></span></td><td><span class="pt f2"></span></td></tr>
+          <tr><td class="p k">Comércio de bairro</td><td><span class="pt f2"></span></td><td><span class="pt f1"></span></td><td><span class="pt f1"></span></td><td><span class="pt f2"></span></td><td><span class="pt f2"></span></td><td><span class="pt f1"></span></td></tr>
+          <tr><td class="p k">Cobrança <span class="tm" style="font-size:10px">(próximo)</span></td><td><span class="pt f0"></span></td><td><span class="pt f2"></span></td><td><span class="pt f0"></span></td><td><span class="pt f0"></span></td><td><span class="pt f2"></span></td><td><span class="pt f1"></span></td></tr>
+          <tr><td class="p k">Crédito <span class="tm" style="font-size:10px">(próximo)</span></td><td><span class="pt f1"></span></td><td><span class="pt f2"></span></td><td><span class="pt f2"></span></td><td><span class="pt f2"></span></td><td><span class="pt f0"></span></td><td><span class="pt f2"></span></td></tr>
+          </tbody>
+      </table></div>
+      <div class="leg">
+        <span><i class="pt f2"></i> é a força do produto</span>
+        <span><i class="pt f1"></i> faz, sem ser o foco</span>
+        <span><i class="pt f0"></i> não cobre</span>
+      </div>
+    </div>
+    <p><b>Nenhum produto sozinho preenche as seis estações.</b> Clínica é forte em chegar, executar e responder; Antecipação é forte em decidir, propor e responder. Juntos, cobrem as seis — e sem integração nenhuma, porque é a mesma conta, o mesmo cadastro e a mesma linha do tempo.</p>
+    <p>É este quadro, e não um parágrafo, que vende o segundo produto. É a razão comercial de organizar o catálogo assim.</p>
+  </div>
+</div>
+
+<hr class="sep">
+
+<div class="blk">
+  <div class="mg"><span class="sn">§ 6</span>A FICO prova com escala. Sem escala, a prova tem que mudar de natureza — não de existência.</div>
+  <div class="col">
+    <h2 class="sec">A substituição da pilha de prova</h2>
+    <p>Quatro provas disponíveis hoje, em ordem de força. Todas já existem; nenhuma precisa de cliente.</p>
+    <ul class="fio">
+      <li><span class="m">01</span><span><b>O produto atendendo quem chega.</b> Um dos hotsites é, ao mesmo tempo, o funil comercial real e a demonstração: quem chega é atendido pelo produto. Outro senta o visitante nos dois lados do mesmo atendimento — cliente de um lado, escritório do outro — e cada linha vem da execução que acabou de rodar. <b>Testar vence acreditar</b>, e é mais forte que qualquer depoimento.</span></li>
+      <li><span class="m">02</span><span><b>O artefato real anonimizado.</b> Uma proposta gerada de verdade, com os dados borrados, vale mais que dez logotipos — porque mostra formato, rigor e limite ao mesmo tempo.</span></li>
+      <li><span class="m">03</span><span><b>Prova de mercado de terceiros, com fonte.</b> Itaú com mais de 150 soluções de IA generativa em produção; Klarna resolvendo dois terços do atendimento no primeiro mês; Lemonade liquidando sinistro em dois segundos; Boticário e Magalu no varejo. A categoria já foi provada por quem tem escala — <b>o que ninguém tinha era um jeito de chegar lá em dias em vez de trimestres.</b></span></li>
+      <li><span class="m">04</span><span><b>O registro do que quebrou.</b> Ninguém publica isso, e é exatamente por isso que vale. É a única prova desta lista que nem uma empresa com escala consegue copiar sem ter vivido.</span></li>
+    </ul>
+  </div>
+</div>
+
+<hr class="sep-forte">
+
+<div class="blk">
+  <div class="mg"><span class="sn">§ 7</span>&nbsp;</div>
+  <div class="col">
+    <h2 class="sec">O que este estudo fecha, e o que continua aberto</h2>
+    <div class="quadro">
+      <div class="cap"><b>Quadro 7</b> Estado das decisões após o estudo.</div>
+      <div class="rol"><table>
+        <thead><tr><th style="width:36%">decisão</th><th style="width:110px">estado</th><th>o que sustenta</th></tr></thead>
+        <tbody>
+          <tr><td class="k">Catálogo por estágio, não por setor</td><td><b>fechada</b></td><td>§2.2 e Quadro 6 — a matriz mostra a lacuna sem precisar de discurso</td></tr>
+          <tr><td class="k">Unidade de cobrança é o resultado</td><td><b>fechada</b></td><td>§2.3 — decisão como objeto; a receita cresce com o resultado do cliente, não com o consumo dele</td></tr>
+          <tr><td class="k">Arquitetura de cima para baixo</td><td><b>fechada</b></td><td>§2.5 — corrige as quatro páginas-pilar do site atual</td></tr>
+          <tr><td class="k">Descartar “composable” e “agêntica” como bandeira</td><td><b>fechada</b></td><td>§2.1 — a própria FICO não as usa na manchete</td></tr>
+          <tr><td class="k">Quais são as seis estações, e os nomes delas</td><td>aberta</td><td>Quadro 5 é proposta; os nomes precisam ser testados com quem compra</td></tr>
+          <tr><td class="k">Marketplace de pacotes</td><td>aberta</td><td>§3 — maior retorno estratégico; depende de resolver a base de conhecimento no pacote</td></tr>
+          <tr><td class="k">O ativo de dado proprietário</td><td>aberta</td><td>§4 — exige volume, base legal desde o primeiro contrato, e uma decisão de produto que ainda não foi tomada</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+  </div>
+</div>
+
+<div class="blk">
+  <div class="mg"><span class="sn">Fontes</span>Consultadas em 27/08/2026. As citações verbatim estão em inglês porque traduzir manchete é perder a evidência.</div>
+  <div class="col">
+    <ul class="simples fontes">
+      <li>FICO — <em>Applied Intelligence: Powering Your Customer Connections</em> · fico.com/en</li>
+      <li>FICO — <em>Composable Workspaces</em> · fico.com/en/platform/composable-workspaces</li>
+      <li>FICO — <em>Analytics-Powered Intelligent Decisions</em> · fico.com/en/platform/intelligent-decisions</li>
+      <li>FICO — <em>Technical Architecture</em> · fico.com/en/fico-platform/technical-architecture</li>
+      <li>FICO — <em>Platform Insight Capabilities / AI &amp; Analytics</em> · fico.com/en/platform</li>
+      <li>FICO — <em>FICO Marketplace: A Faster Path to AI Outcomes</em> · fico.com/blogs</li>
+      <li>FICO Investors — <em>FICO Unveils FICO Marketplace</em> · investors.fico.com</li>
+      <li>theCUBE Research — <em>FICO: Building the Future of Intelligent Engagement</em></li>
+      <li>Genial / XP — TOTVS, Investor Day e Ecossistema 3D (para o contraste do §1)</li>
+      <li>Palantir — <em>Why create an Ontology?</em> (para a formulação do §2.7)</li>
+    </ul>
+    <p class="fontes" style="margin-top:22px;padding-top:18px;border-top:1px solid var(--rule)">Todos os números atribuídos à Catalisa neste documento foram contados no código em 27/08/2026: 32 blocos documentados no padrão, 863 endpoints, 199 entidades, 207 tipos de ação de workflow. Onde não houve medição, o texto diz que não houve.</p>
+  </div>
+</div>
+
+</div>

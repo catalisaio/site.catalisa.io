@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-23T15:42:27.065Z",
+  "browser": {
+    "passed": true,
+    "widths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "report": "verification.json"
+  },
+  "typescript": {
+    "passed": true,
+    "command": "npx tsc -b"
+  },
+  "unitTests": {
+    "passed": true,
+    "files": 8,
+    "tests": 138,
+    "command": "npm run test -- --maxWorkers=1"
+  },
+  "diffCheck": {
+    "passed": true
+  },
+  "source": {
+    "src/redesign/Contact.tsx": "a24a649fa1cc25307748f2ca6638affed4955de9a10a9112e209138ecd3a303e",
+    "src/redesign/ContactViews.tsx": "427a42564f56bb18c91c230bf4676a397f2a23d203c0e1ed6b9e3ac3ccb1a9d2",
+    "src/redesign/contact-reference.css": "85eec7285b7f51d132911288d8dccf02c2b220e466545c785f948372e6ed6b5b",
+    "scripts/prepare-redesign-contact.mjs": "f52e91b14db48088f21da67be9cbc68bb1d2fc3c3618d8c820e01f9a878314f1",
+    "scripts/verify-contact.mjs": "427778593118fde9de92c202bc94342ca263c1931ce199e88de7a7934d3ce057",
+    "server/site/api.ts": "3a7805cb7ab8c1891c7b315bcaf523c5b454f6c60f7bf778bfead369032d862f",
+    "server/site/sqlite-store.ts": "c07c7ae7f95d5cebbc665fcc952152159c6ec74af6a7559d24915a1bd16edfbe"
+  },
+  "limits": [
+    "Shared PostgreSQL staging adapter/migration not applied or verified",
+    "AI concept generation and handoff not integrated",
+    "Contact visual comparison covers initial stage geometry, not all concept states",
+    "No deploy or changes to panel/building blocks"
+  ]
+}

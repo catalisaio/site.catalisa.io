@@ -1,0 +1,350 @@
+{
+  "date": "2026-10-26T15:48:07.828Z",
+  "passed": true,
+  "origin": "https://site-staging.catalisa.io",
+  "tlsValidation": true,
+  "scope": "Real staging AI through the target Lab and BFF. Fictional reserved contact address. No handoff or external messages.",
+  "stage": "contact-continuation",
+  "result": {
+    "idea": "Quero matricular alunos de uma escola de inglês pelo WhatsApp",
+    "elapsedMs": 16902,
+    "concept": {
+      "conceptRef": "concept_dc09c3bb-38a8-4404-b373-57c36bb5b507",
+      "version": 1,
+      "briefVersion": 1,
+      "content": {
+        "schemaVersion": "1.0",
+        "title": "Matrícula de Alunos pelo WhatsApp",
+        "summary": "Facilite a matrícula de alunos em sua escola de inglês utilizando o WhatsApp como canal principal de comunicação e vendas.",
+        "hypothesis": "O público alvo são jovens adultos que preferem a praticidade do WhatsApp para interações e matrículas em cursos de inglês.",
+        "roles": [
+          "Gestor de Matrículas",
+          "Atendente WhatsApp",
+          "Coordenador Pedagógico"
+        ],
+        "screens": [
+          {
+            "id": "matricula-inicial",
+            "title": "Início da Matrícula",
+            "description": "Tela inicial para o início do processo de matrícula, onde o aluno pode informar seu nome e curso desejado.",
+            "items": [
+              {
+                "label": "Nome do Aluno",
+                "value": "Digite seu nome completo"
+              },
+              {
+                "label": "Curso Desejado",
+                "value": "Selecione o curso de inglês"
+              },
+              {
+                "label": "Iniciar Matrícula",
+                "value": "Clique para prosseguir"
+              }
+            ],
+            "action": {
+              "label": "Continuar",
+              "nextScreenId": "confirmacao-dados"
+            }
+          },
+          {
+            "id": "confirmacao-dados",
+            "title": "Confirmação de Dados",
+            "description": "Tela para o aluno revisar suas informações antes de confirmar a matrícula.",
+            "items": [
+              {
+                "label": "Nome",
+                "value": "Nome do Aluno: João Silva"
+              },
+              {
+                "label": "Curso",
+                "value": "Curso Desejado: Inglês Básico"
+              },
+              {
+                "label": "Confirmar Matrícula",
+                "value": "Clique para confirmar"
+              }
+            ],
+            "action": {
+              "label": "Enviar",
+              "nextScreenId": "finalizacao-matricula"
+            }
+          },
+          {
+            "id": "finalizacao-matricula",
+            "title": "Finalização da Matrícula",
+            "description": "Tela que confirma a matrícula e fornece informações sobre os próximos passos.",
+            "items": [
+              {
+                "label": "Status da Matrícula",
+                "value": "Matrícula confirmada com sucesso!"
+              },
+              {
+                "label": "Próximos Passos",
+                "value": "Aguarde um contato da nossa equipe."
+              },
+              {
+                "label": "Contato",
+                "value": "Dúvidas? Fale conosco pelo WhatsApp."
+              }
+            ],
+            "action": {
+              "label": "Encerrar",
+              "nextScreenId": null
+            }
+          }
+        ],
+        "blocks": [
+          {
+            "slug": "wpp",
+            "role": "Canal principal de vendas"
+          },
+          {
+            "slug": "email",
+            "role": "Notificações de matrícula"
+          }
+        ],
+        "journey": [
+          {
+            "id": "inicio-matricula",
+            "label": "Início da Matrícula",
+            "description": "O aluno inicia o processo informando seus dados pessoais e curso desejado.",
+            "blockSlugs": [
+              "wpp",
+              "email"
+            ],
+            "humanReview": false
+          },
+          {
+            "id": "confirmacao",
+            "label": "Confirmação de Dados",
+            "description": "O aluno revisa e confirma os dados fornecidos antes da matrícula.",
+            "blockSlugs": [
+              "wpp",
+              "email"
+            ],
+            "humanReview": true
+          },
+          {
+            "id": "finalizacao",
+            "label": "Finalização da Matrícula",
+            "description": "Confirmação final da matrícula e instruções sobre os próximos passos.",
+            "blockSlugs": [
+              "wpp",
+              "email"
+            ],
+            "humanReview": false
+          }
+        ],
+        "limitations": [
+          "Necessidade de confirmação de dados por um atendente.",
+          "Tempo de resposta pode variar dependendo da demanda.",
+          "Disponibilidade de cursos pode mudar conforme a procura."
+        ],
+        "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+      }
+    },
+    "reload": true,
+    "contactContinuation": true,
+    "sessionSetupCount": 1,
+    "requests": [
+      {
+        "path": "/api/site/session",
+        "status": 401,
+        "method": "GET",
+        "elapsedMs": 233
+      },
+      {
+        "path": "/api/site/sessions",
+        "status": 201,
+        "method": "POST",
+        "elapsedMs": 393
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 354
+      },
+      {
+        "path": "/api/site/lab/briefing",
+        "status": 200,
+        "method": "POST",
+        "elapsedMs": 1027
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 592
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 521
+      },
+      {
+        "path": "/api/site/identity",
+        "status": 201,
+        "method": "POST",
+        "elapsedMs": 1201
+      },
+      {
+        "path": "/api/site/contact",
+        "status": 200,
+        "method": "POST",
+        "elapsedMs": 1256
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 696
+      },
+      {
+        "path": "/api/site/concepts",
+        "status": 202,
+        "method": "POST",
+        "elapsedMs": 11101
+      },
+      {
+        "path": "/api/site/jobs/job_c8c2894d-4a61-4164-99a0-3131a2c6475b",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 464
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 510
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 711
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 419
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 729
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 476
+      }
+    ],
+    "errors": []
+  },
+  "requests": [
+    {
+      "path": "/api/site/session",
+      "status": 401,
+      "method": "GET",
+      "elapsedMs": 233
+    },
+    {
+      "path": "/api/site/sessions",
+      "status": 201,
+      "method": "POST",
+      "elapsedMs": 393
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 354
+    },
+    {
+      "path": "/api/site/lab/briefing",
+      "status": 200,
+      "method": "POST",
+      "elapsedMs": 1027
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 592
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 521
+    },
+    {
+      "path": "/api/site/identity",
+      "status": 201,
+      "method": "POST",
+      "elapsedMs": 1201
+    },
+    {
+      "path": "/api/site/contact",
+      "status": 200,
+      "method": "POST",
+      "elapsedMs": 1256
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 696
+    },
+    {
+      "path": "/api/site/concepts",
+      "status": 202,
+      "method": "POST",
+      "elapsedMs": 11101
+    },
+    {
+      "path": "/api/site/jobs/job_c8c2894d-4a61-4164-99a0-3131a2c6475b",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 464
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 510
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 711
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 419
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 729
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 476
+    }
+  ],
+  "failedRequests": [],
+  "errors": [],
+  "totalElapsedMs": 24166
+}

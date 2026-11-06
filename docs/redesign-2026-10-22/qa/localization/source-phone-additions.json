@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-10-26T19:05:59.997Z",
+  "scope": "Manual contextual international phone labels; non-PT input requires explicit country code, with no implicit Brazil prefix.",
+  "messages": [
+    {
+      "source": "Informe o telefone com + e o código do país.",
+      "occurrences": [
+        {
+          "file": "shared/site-contact.ts / src/redesign/ContactReachability.tsx",
+          "kind": "international-phone-context"
+        }
+      ]
+    },
+    {
+      "source": "Inclua + e o código do país.",
+      "occurrences": [
+        {
+          "file": "shared/site-contact.ts / src/redesign/ContactReachability.tsx",
+          "kind": "international-phone-context"
+        }
+      ]
+    },
+    {
+      "source": "Telefone",
+      "occurrences": [
+        {
+          "file": "shared/site-contact.ts / src/redesign/ContactReachability.tsx",
+          "kind": "international-phone-context"
+        }
+      ]
+    }
+  ]
+}

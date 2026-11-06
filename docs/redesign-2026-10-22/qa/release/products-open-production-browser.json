@@ -1,0 +1,56 @@
+{
+  "checkedAt": "2026-10-27T00:16:57.409Z",
+  "passed": true,
+  "origin": "https://catalisa.io",
+  "release": "20261026-products-open-clarity",
+  "scope": "Actual HTTPS/JS on all six product pages and both financial directory links: full content immediately visible, main collapse absent, mobile no overflow. No AI, sessions, leads or external messages.",
+  "checks": [
+    {
+      "slug": "banking",
+      "contentVisibleWithoutClick": true,
+      "mainDisclosureAbsent": true,
+      "width": 390
+    },
+    {
+      "slug": "credit",
+      "contentVisibleWithoutClick": true,
+      "mainDisclosureAbsent": true,
+      "width": 390
+    },
+    {
+      "slug": "med",
+      "contentVisibleWithoutClick": true,
+      "mainDisclosureAbsent": true,
+      "width": 390
+    },
+    {
+      "slug": "juridico",
+      "contentVisibleWithoutClick": true,
+      "mainDisclosureAbsent": true,
+      "width": 390
+    },
+    {
+      "slug": "biometrics",
+      "contentVisibleWithoutClick": true,
+      "mainDisclosureAbsent": true,
+      "width": 390
+    },
+    {
+      "slug": "decision",
+      "contentVisibleWithoutClick": true,
+      "mainDisclosureAbsent": true,
+      "width": 390
+    },
+    {
+      "slug": "banking",
+      "directListingLink": true,
+      "fullContentImmediate": true
+    },
+    {
+      "slug": "credit",
+      "directListingLink": true,
+      "fullContentImmediate": true
+    }
+  ],
+  "errors": []
+}

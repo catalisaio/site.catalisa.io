@@ -1,0 +1,167 @@
+{
+  "checkedAt": "2026-10-26T20:19:30.474Z",
+  "origin": "https://site-staging.catalisa.io",
+  "passed": true,
+  "scope": "Actual requested-origin browser: directory in seven languages, seven products/five real showcase anchors, four widths, no Compositions menu, static existing master art replacing the film. No AI/lead/handoff/external requests.",
+  "checks": [
+    {
+      "width": 320,
+      "locale": "pt-BR",
+      "route": "/produtos",
+      "products": 7,
+      "externalShowcases": 5,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "locale": "de-DE",
+      "route": "/de/produkte",
+      "products": 7,
+      "externalShowcases": 5,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "locale": "fr-FR",
+      "route": "/fr/produits",
+      "products": 7,
+      "externalShowcases": 5,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "route": "/",
+      "staticMasterImage": true,
+      "noConceptPlayer": true,
+      "noCompositionNavigation": true
+    },
+    {
+      "width": 390,
+      "locale": "pt-BR",
+      "route": "/produtos",
+      "products": 7,
+      "externalShowcases": 5,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "locale": "de-DE",
+      "route": "/de/produkte",
+      "products": 7,
+      "externalShowcases": 5,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "locale": "fr-FR",
+      "route": "/fr/produits",
+      "products": 7,
+      "externalShowcases": 5,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "route": "/",
+      "staticMasterImage": true,
+      "noConceptPlayer": true,
+      "noCompositionNavigation": true
+    },
+    {
+      "width": 768,
+      "locale": "pt-BR",
+      "route": "/produtos",
+      "products": 7,
+      "externalShowcases": 5,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "locale": "de-DE",
+      "route": "/de/produkte",
+      "products": 7,
+      "externalShowcases": 5,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "locale": "fr-FR",
+      "route": "/fr/produits",
+      "products": 7,
+      "externalShowcases": 5,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "route": "/",
+      "staticMasterImage": true,
+      "noConceptPlayer": true,
+      "noCompositionNavigation": true
+    },
+    {
+      "width": 1440,
+      "locale": "pt-BR",
+      "route": "/produtos",
+      "products": 7,
+      "externalShowcases": 5,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "locale": "de-DE",
+      "route": "/de/produkte",
+      "products": 7,
+      "externalShowcases": 5,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "locale": "fr-FR",
+      "route": "/fr/produits",
+      "products": 7,
+      "externalShowcases": 5,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "route": "/",
+      "staticMasterImage": true,
+      "noConceptPlayer": true,
+      "noCompositionNavigation": true
+    },
+    {
+      "locale": "en-US",
+      "route": "/en/products",
+      "products": 7,
+      "externalShowcases": 5
+    },
+    {
+      "locale": "es-ES",
+      "route": "/es/productos",
+      "products": 7,
+      "externalShowcases": 5
+    },
+    {
+      "locale": "da-DK",
+      "route": "/da/produkter",
+      "products": 7,
+      "externalShowcases": 5
+    },
+    {
+      "locale": "nl-NL",
+      "route": "/nl/producten",
+      "products": 7,
+      "externalShowcases": 5
+    },
+    {
+      "route": "/ecossistema/banking",
+      "image": "editorial-composition.jpg",
+      "static": true
+    },
+    {
+      "route": "/ecossistema/credit",
+      "image": "editorial-executive.jpg",
+      "static": true
+    }
+  ],
+  "errors": []
+}

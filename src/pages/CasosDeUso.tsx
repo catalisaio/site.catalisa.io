@@ -75,10 +75,10 @@ export function CasosDeUso() {
         '@type': 'ListItem',
         position: i + 1,
         name: tp(pb.nameKey),
-        url: `${BASE_URL}/playbooks/${pb.id}`,
+        url: `${BASE_URL}${lp(`/playbooks/${pb.id}`)}`,
       })),
     },
-  }), [t, tSeo, tp]);
+  }), [t, tSeo, tp,lp]);
 
   return (
     <>

@@ -1,0 +1,618 @@
+[
+  {
+    "case": "D01",
+    "repo": "developy",
+    "sha": "7b951155dff5c2dc02aaad4faf7959f3b49b2e5f",
+    "path": "apps/web/src/lib/server/ingress/traefik.ts",
+    "lines": 248,
+    "sha256": "2928c74fc53733337d3cecb2fdcb37502de7e943444cf7b08dd66f9ca88de40b",
+    "checkpoint": "Afinidade de sessão no ingresso.",
+    "matches": [
+      {
+        "line": 29,
+        "text": "stickyCookie?: boolean;"
+      },
+      {
+        "line": 175,
+        "text": "const sticky = r.stickyCookie"
+      },
+      {
+        "line": 176,
+        "text": "? `\\n        sticky:\\n          cookie:\\n            name: ${name}-affinity\\n            httpOnly: true\\n            secure: true\\n            sameSite: lax`"
+      },
+      {
+        "line": 192,
+        "text": "passHostHeader: true${sticky}${health}"
+      }
+    ],
+    "url": "https://github.com/klederson/proxmox-manager/blob/7b951155dff5c2dc02aaad4faf7959f3b49b2e5f/apps/web/src/lib/server/ingress/traefik.ts"
+  },
+  {
+    "case": "D02",
+    "repo": "developy",
+    "sha": "7b951155dff5c2dc02aaad4faf7959f3b49b2e5f",
+    "path": "apps/web/src/lib/server/launch/dns.ts",
+    "lines": 399,
+    "sha256": "306dd766d67bd2b6c4025f472c5b4043a5e6c30bfdc2b8b58be8f681b27f7080",
+    "checkpoint": "Nome de malha e réplicas publicadas.",
+    "matches": [
+      {
+        "line": 22,
+        "text": "* cliente precisa é de um NOME que siga o endereço: `<svc>.<org>.mesh`,"
+      },
+      {
+        "line": 29,
+        "text": "export const LAUNCH_MESH_DNS_ZONE = process.env.LAUNCH_MESH_DNS_ZONE ?? \"mesh.developy.cloud\";"
+      },
+      {
+        "line": 227,
+        "text": "/** O nome direto, e.g. `web.acme.mesh.developy.cloud`. */"
+      },
+      {
+        "line": 264,
+        "text": "ttl: 30,"
+      },
+      {
+        "line": 266,
+        "text": "comment: `Launch service ${svc.id} (mesh)`,"
+      },
+      {
+        "line": 271,
+        "text": "console.warn(`[Launch] mesh DNS sync failed for ${svc.id}:`, err);"
+      },
+      {
+        "line": 302,
+        "text": "const r = new dnsp.Resolver({ timeout: 3000, tries: 1 });"
+      },
+      {
+        "line": 330,
+        "text": "const intervaloMs = opts.intervaloMs ?? 3000;"
+      }
+    ],
+    "url": "https://github.com/klederson/proxmox-manager/blob/7b951155dff5c2dc02aaad4faf7959f3b49b2e5f/apps/web/src/lib/server/launch/dns.ts"
+  },
+  {
+    "case": "D03",
+    "repo": "developy",
+    "sha": "7b951155dff5c2dc02aaad4faf7959f3b49b2e5f",
+    "path": "apps/web/src/lib/server/remote-exec.ts",
+    "lines": 426,
+    "sha256": "82fd3a771b2196935ef3e28e48a78ad955cc9a62dd6e95219268df809becdba2",
+    "checkpoint": "Multiplexação SSH e proteção do socket.",
+    "matches": [
+      {
+        "line": 45,
+        "text": "* com 0700 — quem alcança o socket manda comando na sessão aberta."
+      },
+      {
+        "line": 51,
+        "text": "/* se não der para criar, o ControlPath falha e o ssh abre conexão normal */"
+      },
+      {
+        "line": 68,
+        "text": "* Com `ControlMaster=auto` a primeira conexão vira mestre e as seguintes"
+      },
+      {
+        "line": 70,
+        "text": "* `ControlPersist=60s` mantém o mestre vivo entre as passadas do reconciliador,"
+      },
+      {
+        "line": 75,
+        "text": "* caminho de socket UNIX, que é o que quebra `ControlPath` com host longo."
+      },
+      {
+        "line": 81,
+        "text": "\"-o ControlMaster=auto\","
+      },
+      {
+        "line": 82,
+        "text": "`-o ControlPath=${DIR_MUX}/%C`,"
+      },
+      {
+        "line": 83,
+        "text": "\"-o ControlPersist=60s\","
+      },
+      {
+        "line": 200,
+        "text": "* O salto interno roda em OUTRA máquina — e o `ControlPath` é avaliado LÁ."
+      }
+    ],
+    "url": "https://github.com/klederson/proxmox-manager/blob/7b951155dff5c2dc02aaad4faf7959f3b49b2e5f/apps/web/src/lib/server/remote-exec.ts"
+  },
+  {
+    "case": "D04",
+    "repo": "developy",
+    "sha": "7b951155dff5c2dc02aaad4faf7959f3b49b2e5f",
+    "path": "apps/web/src/lib/launch-env-mask.ts",
+    "lines": 72,
+    "sha256": "91a2d0b9a7a15272c9742931452c3dd01d2c991aaae4cbb688f08f5bc60174f9",
+    "checkpoint": "Máscara de ambiente e detecção de valores mascarados.",
+    "matches": [
+      {
+        "line": 17,
+        "text": "* WE MASK EVERYTHING, not just what \"looks like\" a secret. The temptation is"
+      },
+      {
+        "line": 35,
+        "text": "export const MASK = \"••••••••\";"
+      },
+      {
+        "line": 37,
+        "text": "/** Replaces EVERY value with the mask, preserving keys and their order. */"
+      },
+      {
+        "line": 38,
+        "text": "export function maskEnv(env: Record<string, string>): Record<string, string> {"
+      },
+      {
+        "line": 39,
+        "text": "const masked: Record<string, string> = {};"
+      },
+      {
+        "line": 40,
+        "text": "for (const key of Object.keys(env)) masked[key] = MASK;"
+      },
+      {
+        "line": 41,
+        "text": "return masked;"
+      },
+      {
+        "line": 45,
+        "text": "* Returns the service object with its `env` masked."
+      },
+      {
+        "line": 53,
+        "text": "return { ...svc, env: maskEnv(svc.env) };"
+      },
+      {
+        "line": 57,
+        "text": "* The keys whose value IS the mask — that is, the ones that came back from a"
+      },
+      {
+        "line": 58,
+        "text": "* masked read without going through the reveal route."
+      },
+      {
+        "line": 64,
+        "text": "* this check, the first read-modify-write cycle after masking would store"
+      },
+      {
+        "line": 69,
+        "text": "export function maskedKeys(env: Record<string, string> | undefined): string[] {"
+      },
+      {
+        "line": 71,
+        "text": "return Object.keys(env).filter((k) => env[k] === MASK);"
+      }
+    ],
+    "url": "https://github.com/klederson/proxmox-manager/blob/7b951155dff5c2dc02aaad4faf7959f3b49b2e5f/apps/web/src/lib/launch-env-mask.ts"
+  },
+  {
+    "case": "D04",
+    "repo": "developy",
+    "sha": "7b951155dff5c2dc02aaad4faf7959f3b49b2e5f",
+    "path": "apps/web/src/app/api/launch/[...path]/route.ts",
+    "lines": 567,
+    "sha256": "7faeea5fd73e6985b2636c75f252c7b1593a22a529fa7d3bb575c233899303fb",
+    "checkpoint": "Fronteira de revelação, auditoria e proteção da escrita.",
+    "matches": [
+      {
+        "line": 39,
+        "text": "import { requireSession, requireWriteSession } from \"@/lib/server/auth/guards\";"
+      },
+      {
+        "line": 41,
+        "text": "import { withMaskedEnv, maskedKeys } from \"@/lib/launch-env-mask\";"
+      },
+      {
+        "line": 181,
+        "text": "function refuseIfMaskedEnv(env: Record<string, string> | undefined): NextResponse | null {"
+      },
+      {
+        "line": 235,
+        "text": "...withMaskedEnv(svc),"
+      },
+      {
+        "line": 334,
+        "text": "const escrita = requireWriteSession(request);"
+      },
+      {
+        "line": 351,
+        "text": "action: \"launch.env.reveal\","
+      },
+      {
+        "line": 372,
+        "text": "return ok(withMaskedEnv(comEnderecoDeMalha(svc)));"
+      },
+      {
+        "line": 392,
+        "text": "const session = requireWriteSession(request);"
+      },
+      {
+        "line": 410,
+        "text": "const maskedWrite = refuseIfMaskedEnv(parsed.data.env);"
+      },
+      {
+        "line": 465,
+        "text": "const maskedWrite = refuseIfMaskedEnv(parsed.data.env);"
+      },
+      {
+        "line": 508,
+        "text": "const session = requireWriteSession(request);"
+      },
+      {
+        "line": 525,
+        "text": "const maskedWrite = refuseIfMaskedEnv(parsed.data.env);"
+      },
+      {
+        "line": 544,
+        "text": "const session = requireWriteSession(request);"
+      }
+    ],
+    "url": "https://github.com/klederson/proxmox-manager/blob/7b951155dff5c2dc02aaad4faf7959f3b49b2e5f/apps/web/src/app/api/launch/[...path]/route.ts"
+  },
+  {
+    "case": "D05",
+    "repo": "developy",
+    "sha": "7b951155dff5c2dc02aaad4faf7959f3b49b2e5f",
+    "path": "apps/web/src/lib/server/launch/provisioner.ts",
+    "lines": 1510,
+    "sha256": "797cd950ec7543a3f6455f4e4caacc30b2c515e8f97f7b397a2518c7779fd5e5",
+    "checkpoint": "Transferência de volume e tratamento de falha.",
+    "matches": [
+      {
+        "line": 29,
+        "text": "getContainerMountPoint,"
+      },
+      {
+        "line": 30,
+        "text": "reassignContainerVolume,"
+      },
+      {
+        "line": 333,
+        "text": "// `rebuildReplica`)."
+      },
+      {
+        "line": 424,
+        "text": "`the data is on LXC ${vmid}, kept stopped — moving it back to LXC ` +"
+      },
+      {
+        "line": 444,
+        "text": "const upid = await reassignContainerVolume(node, fromVmid, VOLUME_KEY, toVmid, VOLUME_KEY);"
+      },
+      {
+        "line": 447,
+        "text": "const landed = await getContainerMountPoint(node, toVmid, VOLUME_KEY).catch(() => null);"
+      },
+      {
+        "line": 448,
+        "text": "const left = await getContainerMountPoint(node, fromVmid, VOLUME_KEY).catch(() => \"unknown\");"
+      },
+      {
+        "line": 536,
+        "text": "async function rebuildReplica(svc: LaunchService, r: LaunchReplica, pool: Mesh.IPPool, node: string): Promise<void> {"
+      },
+      {
+        "line": 546,
+        "text": "current = await getContainerMountPoint(node, r.vmid, VOLUME_KEY);"
+      },
+      {
+        "line": 595,
+        "text": "&& (await getContainerMountPoint(node, r.vmid, VOLUME_KEY).catch(() => null)) !== null;"
+      },
+      {
+        "line": 602,
+        "text": "return `volume kept on the old LXC ${r.vmid}, restarted on the previous version —`;"
+      },
+      {
+        "line": 1350,
+        "text": "await rebuildReplica(svc, r, pool, noDela);"
+      },
+      {
+        "line": 1425,
+        "text": "await rebuildReplica(svc, original, pool, no);"
+      }
+    ],
+    "url": "https://github.com/klederson/proxmox-manager/blob/7b951155dff5c2dc02aaad4faf7959f3b49b2e5f/apps/web/src/lib/server/launch/provisioner.ts"
+  },
+  {
+    "case": "D06",
+    "repo": "developy",
+    "sha": "7b951155dff5c2dc02aaad4faf7959f3b49b2e5f",
+    "path": "apps/web/src/lib/server/network/port-forward.ts",
+    "lines": 381,
+    "sha256": "d4cb8c5d83da46ba7cb47ae328284015cf2b8f223c5a2b43cc9a73550e5d09ea",
+    "checkpoint": "DNAT limitado a destinos locais do host.",
+    "matches": [
+      {
+        "line": 41,
+        "text": "unscoped?: boolean;"
+      },
+      {
+        "line": 105,
+        "text": "* forwards on the node had the same reach. `addrtype LOCAL` matches every"
+      },
+      {
+        "line": 109,
+        "text": "export const LOCAL_ONLY = \"-m addrtype --dst-type LOCAL\";"
+      },
+      {
+        "line": 113,
+        "text": "return `-p tcp ${LOCAL_ONLY} --dport ${rule.externalPort} -j DNAT --to-destination ${rule.containerIp}:${rule.internalPort}`;"
+      },
+      {
+        "line": 116,
+        "text": "/** The spec every rule was written with before `LOCAL_ONLY` — needed to delete them. */"
+      },
+      {
+        "line": 176,
+        "text": "* spec would leave the pre-`LOCAL_ONLY` copy behind — still hijacking the port."
+      },
+      {
+        "line": 182,
+        "text": "/** Only the pre-`LOCAL_ONLY` copy — what a rescope removes once the scoped one is in. */"
+      },
+      {
+        "line": 242,
+        "text": "if (!/--dst-type\\s+LOCAL\\b/.test(line) && !/\\s-d\\s+\\S+/.test(line)) {"
+      },
+      {
+        "line": 243,
+        "text": "rule.unscoped = true;"
+      },
+      {
+        "line": 286,
+        "text": "* Wanted and present, but only in the pre-`LOCAL_ONLY` shape — it forwards"
+      },
+      {
+        "line": 289,
+        "text": "unscoped: DesiredForward[];"
+      },
+      {
+        "line": 312,
+        "text": "if (!rule.unscoped) scopedKeys.add(key);"
+      },
+      {
+        "line": 319,
+        "text": "const unscoped: DesiredForward[] = [];"
+      },
+      {
+        "line": 325,
+        "text": "else if (!scopedKeys.has(key) && actualCounts.get(key) === 1) unscoped.push(want);"
+      }
+    ],
+    "url": "https://github.com/klederson/proxmox-manager/blob/7b951155dff5c2dc02aaad4faf7959f3b49b2e5f/apps/web/src/lib/server/network/port-forward.ts"
+  },
+  {
+    "case": "D07",
+    "repo": "developy",
+    "sha": "7b951155dff5c2dc02aaad4faf7959f3b49b2e5f",
+    "path": "apps/web/src/lib/server/signal/launch-alerts.ts",
+    "lines": 104,
+    "sha256": "c8a3a66307549a1f1f253c91a53868a74c1205d740f0c4d06305454261a567e8",
+    "checkpoint": "Incidentes a partir do estado do Launch.",
+    "matches": [
+      {
+        "line": 11,
+        "text": "* ficaram `failed` por dois dias: a sonda gravava o estado certo a cada"
+      },
+      {
+        "line": 16,
+        "text": "* perdida (o painel reiniciou entre `active` e `failed`) não some, porque o"
+      },
+      {
+        "line": 26,
+        "text": "type Severity = SignalIncident[\"severity\"];"
+      },
+      {
+        "line": 28,
+        "text": "const LOWER: Record<Severity, Severity> = { critical: \"warning\", warning: \"info\", info: \"info\" };"
+      },
+      {
+        "line": 31,
+        "text": "* `failed` é crítico, `degraded` é aviso. Fora de produção desce um nível"
+      },
+      {
+        "line": 35,
+        "text": "export function launchSeverity(status: \"failed\" | \"degraded\" | \"stuck\", environment?: LaunchEnvironment): Severity {"
+      },
+      {
+        "line": 36,
+        "text": "const base: Severity = status === \"failed\" ? \"critical\" : \"warning\";"
+      },
+      {
+        "line": 62,
+        "text": "if (svc.status !== \"failed\" && svc.status !== \"degraded\") continue;"
+      },
+      {
+        "line": 63,
+        "text": "const severity = launchSeverity(svc.status, svc.environment);"
+      },
+      {
+        "line": 64,
+        "text": "if (severity === \"info\") continue;"
+      },
+      {
+        "line": 69,
+        "text": "severity,"
+      },
+      {
+        "line": 70,
+        "text": "title: svc.status === \"failed\""
+      },
+      {
+        "line": 73,
+        "text": "description: reason || (svc.status === \"failed\" ? \"nenhuma réplica saudável\" : \"réplicas abaixo do desejado\"),"
+      },
+      {
+        "line": 75,
+        "text": "orgId: svc.orgId,"
+      }
+    ],
+    "url": "https://github.com/klederson/proxmox-manager/blob/7b951155dff5c2dc02aaad4faf7959f3b49b2e5f/apps/web/src/lib/server/signal/launch-alerts.ts"
+  },
+  {
+    "case": "D08",
+    "repo": "developy",
+    "sha": "7b951155dff5c2dc02aaad4faf7959f3b49b2e5f",
+    "path": "apps/web/src/lib/server/harbor/registry-scopes.ts",
+    "lines": 65,
+    "sha256": "2c994dafc0b535ff82dc02cd421f185b9b2750bde8467609b22db95e1fb8a6ae",
+    "checkpoint": "Escopos do registry e permissões por namespace.",
+    "matches": [
+      {
+        "line": 5,
+        "text": "*   `repository:facila/api:pull,push`  or  `registry:catalog:*`"
+      },
+      {
+        "line": 7,
+        "text": "* caller's resolved registry entitlements (`registry:pull|push|delete`)."
+      },
+      {
+        "line": 33,
+        "text": "/** The org/namespace owning a repository (`org/repo` → `org`; bare name → \"\"). */"
+      },
+      {
+        "line": 34,
+        "text": "export function namespaceOf(repoName: string): string {"
+      },
+      {
+        "line": 41,
+        "text": "* return the granted actions. `registry:pull` → pull (+ catalog `*`), `registry:push`"
+      },
+      {
+        "line": 42,
+        "text": "* → push, `registry:delete` → delete."
+      },
+      {
+        "line": 49,
+        "text": "const canPull = entitlements.has(\"registry:pull\");"
+      },
+      {
+        "line": 50,
+        "text": "const canPush = entitlements.has(\"registry:push\");"
+      },
+      {
+        "line": 51,
+        "text": "const canDelete = entitlements.has(\"registry:delete\");"
+      },
+      {
+        "line": 56,
+        "text": "// `registry:catalog:*` — listing the catalog needs read access."
+      },
+      {
+        "line": 57,
+        "text": "if (scopeType === \"registry\" && canPull) granted.push(\"*\");"
+      },
+      {
+        "line": 60,
+        "text": "if (action === \"pull\" && canPull) granted.push(\"pull\");"
+      },
+      {
+        "line": 61,
+        "text": "else if (action === \"push\" && canPush) granted.push(\"push\");"
+      },
+      {
+        "line": 62,
+        "text": "else if (action === \"delete\" && canDelete) granted.push(\"delete\");"
+      }
+    ],
+    "url": "https://github.com/klederson/proxmox-manager/blob/7b951155dff5c2dc02aaad4faf7959f3b49b2e5f/apps/web/src/lib/server/harbor/registry-scopes.ts"
+  },
+  {
+    "case": "D08",
+    "repo": "developy",
+    "sha": "7b951155dff5c2dc02aaad4faf7959f3b49b2e5f",
+    "path": "apps/web/src/lib/server/ignite/build.ts",
+    "lines": 77,
+    "sha256": "ed89d765de3405ebf45a8ea7cbf0e11dcf849739c60d119e9348e7244b9d4171",
+    "checkpoint": "Contrato do build OCI e sua dependência de agente.",
+    "matches": [
+      {
+        "line": 4,
+        "text": "* The app can't build images itself, so it calls a build agent (IGNITE_BUILD_URL"
+      },
+      {
+        "line": 18,
+        "text": "return !!process.env.IGNITE_BUILD_URL;"
+      },
+      {
+        "line": 34,
+        "text": "export async function buildFunctionImage(fn: IgniteFunction, sourceB64: string): Promise<IgniteFunction> {"
+      },
+      {
+        "line": 36,
+        "text": "const imageRef = `${registryHost()}/${imageRepo(fn)}:${buildNumber}`;"
+      },
+      {
+        "line": 42,
+        "text": "const url = process.env.IGNITE_BUILD_URL;"
+      },
+      {
+        "line": 57,
+        "text": "body: JSON.stringify({ runtime: fn.runtime, handler: fn.handler, source: sourceB64, image: imageRef, username, password }),"
+      },
+      {
+        "line": 67,
+        "text": "...current, buildStatus: \"built\", imageRef, imageDigest: data.digest, buildNumber,"
+      }
+    ],
+    "url": "https://github.com/klederson/proxmox-manager/blob/7b951155dff5c2dc02aaad4faf7959f3b49b2e5f/apps/web/src/lib/server/ignite/build.ts"
+  },
+  {
+    "case": "D09",
+    "repo": "developy",
+    "sha": "7b951155dff5c2dc02aaad4faf7959f3b49b2e5f",
+    "path": "apps/web/src/lib/server/herald/events-store.ts",
+    "lines": 212,
+    "sha256": "f6f3f31bdb7fd92e283ddfe7ef884185fb93c0b280e333086163ea8e32dfe0da",
+    "checkpoint": "Persistência dos eventos de auditoria.",
+    "matches": [
+      {
+        "line": 7,
+        "text": "* written with `readStore → mutate → writeStore`. In Postgres mode"
+      },
+      {
+        "line": 8,
+        "text": "* `writeStore` is `replaceAll`, i.e. DELETE every row then re-INSERT"
+      },
+      {
+        "line": 18,
+        "text": "* → `STORE_BACKEND` → `\"json\"` — so production picks up Postgres from the"
+      },
+      {
+        "line": 19,
+        "text": "* global `STORE_BACKEND=postgres` with no extra configuration, and a fresh"
+      },
+      {
+        "line": 33,
+        "text": "import { heraldEventsAdapter } from \"./events-postgres-adapter\";"
+      },
+      {
+        "line": 75,
+        "text": "// Postgres mode is memoised (it owns connection state); JSON mode resolves"
+      },
+      {
+        "line": 91,
+        "text": "buildPostgresAdapter: heraldEventsAdapter,"
+      },
+      {
+        "line": 95,
+        "text": "if (choice === \"postgres\") {"
+      },
+      {
+        "line": 110,
+        "text": "/** Test hook — drops the memoised Postgres backend. */"
+      },
+      {
+        "line": 119,
+        "text": "* `INSERT … ON CONFLICT DO NOTHING` in Postgres mode. Using `save()` here"
+      },
+      {
+        "line": 153,
+        "text": "* filter). The Postgres adapter bounds the load, so this stays flat as the"
+      }
+    ],
+    "url": "https://github.com/klederson/proxmox-manager/blob/7b951155dff5c2dc02aaad4faf7959f3b49b2e5f/apps/web/src/lib/server/herald/events-store.ts"
+  }
+]

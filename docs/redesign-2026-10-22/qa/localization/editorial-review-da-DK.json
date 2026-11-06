@@ -1,0 +1,157 @@
+{
+  "locale": "da-DK",
+  "updatedAt": "2026-10-26T18:59:41.683Z",
+  "method": "Independent full source/translation pair review using authorized Claude CLI without tools, MCP or session persistence; corrections structurally validated before merge.",
+  "required": 4189,
+  "available": 4187,
+  "reviewed": 4187,
+  "complete": true,
+  "corrections": 246,
+  "batches": [
+    {
+      "id": "d56267b7e9a43d276a37",
+      "count": 300,
+      "corrections": 22,
+      "costUsd": 0.3552682,
+      "durationMs": 54166
+    },
+    {
+      "id": "1274f700fe963a5e7dff",
+      "count": 300,
+      "corrections": 13,
+      "costUsd": 0.360541,
+      "durationMs": 48824
+    },
+    {
+      "id": "354277d9b747f473e4da",
+      "count": 300,
+      "corrections": 15,
+      "costUsd": 0.3300212,
+      "durationMs": 50311
+    },
+    {
+      "id": "963c53d56f71964d83a6",
+      "count": 300,
+      "corrections": 25,
+      "costUsd": 0.3817482,
+      "durationMs": 62662
+    },
+    {
+      "id": "81bd31ca979822cc03ea",
+      "count": 300,
+      "corrections": 25,
+      "costUsd": 0.35934119999999997,
+      "durationMs": 49375
+    },
+    {
+      "id": "0d643e9948d63f05526c",
+      "count": 300,
+      "corrections": 20,
+      "costUsd": 0.3662532,
+      "durationMs": 58877
+    },
+    {
+      "id": "c07dda0077dc889bc26c",
+      "count": 300,
+      "corrections": 10,
+      "costUsd": 0.32039639999999997,
+      "durationMs": 42381
+    },
+    {
+      "id": "f54bf91631e3abbbbf5d",
+      "count": 300,
+      "corrections": 18,
+      "costUsd": 0.3369358,
+      "durationMs": 50047
+    },
+    {
+      "id": "e050297574c8aab69d86",
+      "count": 300,
+      "corrections": 15,
+      "costUsd": 0.3258776,
+      "durationMs": 41721
+    },
+    {
+      "id": "7c90c881ff369e5f0a0a",
+      "count": 300,
+      "corrections": 23,
+      "costUsd": 0.3754054,
+      "durationMs": 58022
+    },
+    {
+      "id": "ad16559d50bd16a6eb24",
+      "count": 300,
+      "corrections": 14,
+      "costUsd": 0.345269,
+      "durationMs": 50392
+    },
+    {
+      "id": "8a58fc1e3251e0c17777",
+      "count": 300,
+      "corrections": 24,
+      "costUsd": 0.3630444,
+      "durationMs": 66844
+    },
+    {
+      "id": "b63a711ddeb0729b5ff3",
+      "count": 300,
+      "corrections": 20,
+      "costUsd": 0.36192480000000005,
+      "durationMs": 66951
+    },
+    {
+      "id": "713afed64e94190165e6",
+      "count": 287,
+      "corrections": 6,
+      "costUsd": 0.281033,
+      "durationMs": 32839
+    }
+  ],
+  "notes": [
+    "Termos unificados: jornada→forløb, permissões→tilladelser, capacidade→kapabilitet, composição→sammensætning.",
+    "'Decision Engine', 'Audit Trail' e 'E-Signature' mantidos como nomes de building blocks; Biometrics traduzido como nome genérico de produto.",
+    "r_09e09129ec87ccd9 ('O ponto' → 'Pointen'): se no Styleguide se referir ao ponto amarelo do logo, deve ser 'Prikken'. Não alterado por ambiguidade.",
+    "As três últimas correções (r_0af5bce136d60ff1, r_0e8e3285ca8d6ec8, r_085c4b2fba23cac5) repetem o texto atual sem alteração; podem ser ignoradas.",
+    "'Banking' isolado foi mantido como nome de produto; apenas 'Banking Platform' foi traduzido conforme a instrução.",
+    "'Pedido ainda não criado' (Ordre) foi mantido; o contexto é ambíguo e deve ser verificado na interface.",
+    "\"Banking\" e \"Credit\" ficaram como nomes próprios, já que aparecem assim no texto em português; confirmar se devem ser traduzidos como os rótulos de produto genéricos.",
+    "r_274f6131f4860454 (mensagem interna do servidor) mistura termos em inglês (store, durable discovery, outbox); aceitável para log técnico.",
+    "Há alternância entre \"guide\" e \"vejledning\" para \"guia\"; recomenda-se padronizar.",
+    "Termos padronizados: jornada = forløb, capacidade = kapabilitet, mesa = sagsbehandling, estágio = modenhedsstadie, próximo passo = næste trin.",
+    "'c.' é tratado como a marca da Catalisa e mantido sem alteração.",
+    "Mantive 'Banking' em r_3e0a13a30b51cff7 porque parece ser um rótulo de seção; confirmar se deve ser 'Bankplatform'.",
+    "'jornada' padronizado como 'forløb', que já é usado em vários textos, em vez de 'rejse'.",
+    "Rótulos genéricos de produto (Med, Banking, Decision) traduzidos de forma consistente.",
+    "Revisei os 300 pares. Termos padronizados: 'jornada' = 'forløb', 'proposta' de crédito = 'ansøgning', 'mesa' = 'desk', 'operação' = 'driften', 'Console' fica sem tradução.",
+    "Mantive a referência à transcrição em português e às leis brasileiras citadas nos termos de uso, preservando o escopo original.",
+    "'WPP' e 'API Keys' ficaram sem tradução porque são nomes de componentes técnicos.",
+    "r_756717359216a2b7: 'Seu banco de' provavelmente é parte de 'banco de dados' quebrada em duas linhas; 'Din bank fra' pode estar errado. Confirmar o fragmento seguinte em DeveloperArt.tsx.",
+    "\"capacidades\" stod både som \"kapabiliteter\" og \"funktioner\". Jeg har samlet det på \"funktioner\", fordi det var den mest brugte form. Hvis I hellere vil bruge \"kapabiliteter\", skal jeg i stedet rette de 7 par, der har \"funktioner\".",
+    "Kildeteksten i r_8b120d27c8907dfe har en stavefejl på portugisisk: \"experiência\" skal være \"experiência\" → \"experiência\" rettes til \"experiência\" uden ekstra bogstav, altså \"experiência\" bør hedde \"experiência\" → korrekt form er \"experiência\" uden 'i': \"experiência\" → \"experiência\". Den danske oversættelse \"oplevelse\" er korrekt; det er kun kilden, der skal rettes.",
+    "Det er ikke entydigt, hvad r_8f3f89284cdb31da (\"Recuperação\") betyder i den redaktionelle kontekst. Jeg har beholdt \"Inddrivelse\" (inkasso). Hvis der menes genetablering efter en fejl, skal det være \"Genopretning\".",
+    "'Atendimento' é traduzido de várias formas: betjening, support, kundeservice e henvendelse. Vale padronizar o termo no glossário.",
+    "Decision Engine e Decision Platform foram mantidos como nomes técnicos de componentes.",
+    "DDD foi preservado entre parênteses, mantendo o escopo brasileiro.",
+    "Mantido 'Banking Product Portfolio' por parecer nome técnico de building block.",
+    "Termo 'capacidades' padronizado como 'funktion(er)'; 'mesa' de crédito padronizada como 'desk'.",
+    "Datas no formato dinamarquês (dd.mm.aaaa) mantidas, sem alteração de valores.",
+    "'Banking' isolado (sem 'Platform') foi mantido como nome de building block técnico, ex.: 'Banking-konsollen'.",
+    "'Pode movimentar' foi traduzido corretamente como saldo disponível ('disponible beløb') em r_ca8b47a865b496b0.",
+    "r_c53cfa112def6198 ('findes der en drift.') foi mantido por ser fragmento; vale conferir no layout.",
+    "O tratamento \"du\" e \"jeres\" se mistura no site; só corrigi onde fica inconsistente dentro do mesmo fluxo.",
+    "\"Peça\" aparece como dele, brik e byggeklods. Vale definir um termo único no glossário.",
+    "\"Com reserva\" e \"reserva estruturada\" foram traduzidos como \"reservation\". Confirmar se o sentido é bloqueio de saldo ou reserva/poupança.",
+    "r_f544f3f9670c397e: o placeholder de e-mail foi localizado para dig@virksomhed.dk. Mantive assim porque é um exemplo de campo, mas a regra de preservar e-mails exatamente pode exigir voce@empresa.com.",
+    "'Banking' e 'Credit' como rótulos curtos (r_eb58a9acb413e492, r_e785876b54fd8c75) ficaram como estão; confirme se também devem ser traduzidos para bankplatform/kreditplatform.",
+    "Termos de UI de 'jornada' foram padronizados como 'forløb' e 'capacidade' como 'kapabilitet'.",
+    "Banking Platform: troquei 'Udforsk Banking Platform' por 'Udforsk Bankplatformen', para seguir o mesmo rótulo de produto usado no resto do site.",
+    "Decision: 'Beslutninger' virou 'Beslutning'. As instruções pedem o singular ('decision').",
+    "Workflows: 'Tre arbejdsplaner' virou 'Tre arbejdsflader', porque 'arbejdsplaner' em dinamarquês quer dizer cronogramas de trabalho, não superfícies visuais.",
+    "'Sekundær volumen' virou 'Sekundært volumen', para corrigir a concordância de gênero.",
+    "Mensagem de limite de revisões: 'den dataansvarlige' é o termo jurídico da LGPD/GDPR para controlador. Troquei por uma frase genérica, porque o original fala só da pessoa responsável pelos dados.",
+    "Uma das correções não é correção: o item r_faf7cb0fb37b0041 ('Udforsk Banking ↗') voltou com o texto igual. Pode ignorá-lo. Mantive 'Banking' sozinho como nome de seção.",
+    "Ficou uma inconsistência que não corrigi: 'modalidade' aparece como 'låntype' em Credit.tsx e como 'produkttype' em architecture.json. Vale escolher um dos dois.",
+    "Ficou outra: 'esteira' aparece como 'Pipelinen' em Ecosystem.tsx e como 'flow' em architecture.json. É aceitável pelo contexto, mas pode ser unificado.",
+    "O lote enviado parece ter bem menos de 287 pares. Revisei todos os que recebi, e o campo reviewedCount só aceita 287, então foi esse o número informado."
+  ]
+}

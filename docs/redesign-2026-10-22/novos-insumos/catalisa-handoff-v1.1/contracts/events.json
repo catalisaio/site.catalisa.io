@@ -1,0 +1,195 @@
+{
+  "status": "proposed",
+  "events": [
+    {
+      "name": "session.started",
+      "meaning": "Sessão criada no backend",
+      "commonProperties": [
+        "eventId",
+        "occurredAt",
+        "requestId",
+        "sessionRef",
+        "briefVersion"
+      ],
+      "analyticsPropertiesAllowed": [
+        "sectorCategory",
+        "problemCategory",
+        "capabilitySlug",
+        "channel",
+        "outcome"
+      ],
+      "rawConversationInAnalytics": false
+    },
+    {
+      "name": "brief.answer_recorded",
+      "meaning": "Resposta persistida",
+      "commonProperties": [
+        "eventId",
+        "occurredAt",
+        "requestId",
+        "sessionRef",
+        "briefVersion"
+      ],
+      "analyticsPropertiesAllowed": [
+        "sectorCategory",
+        "problemCategory",
+        "capabilitySlug",
+        "channel",
+        "outcome"
+      ],
+      "rawConversationInAnalytics": false
+    },
+    {
+      "name": "identity.provisioned",
+      "meaning": "Identidade provisória e lead vinculados",
+      "commonProperties": [
+        "eventId",
+        "occurredAt",
+        "requestId",
+        "sessionRef",
+        "briefVersion"
+      ],
+      "analyticsPropertiesAllowed": [
+        "sectorCategory",
+        "problemCategory",
+        "capabilitySlug",
+        "channel",
+        "outcome"
+      ],
+      "rawConversationInAnalytics": false
+    },
+    {
+      "name": "concept.requested",
+      "meaning": "Trabalho aceito",
+      "commonProperties": [
+        "eventId",
+        "occurredAt",
+        "requestId",
+        "sessionRef",
+        "briefVersion"
+      ],
+      "analyticsPropertiesAllowed": [
+        "sectorCategory",
+        "problemCategory",
+        "capabilitySlug",
+        "channel",
+        "outcome"
+      ],
+      "rawConversationInAnalytics": false
+    },
+    {
+      "name": "concept.ready",
+      "meaning": "Conceito validado e armazenado",
+      "commonProperties": [
+        "eventId",
+        "occurredAt",
+        "requestId",
+        "sessionRef",
+        "briefVersion"
+      ],
+      "analyticsPropertiesAllowed": [
+        "sectorCategory",
+        "problemCategory",
+        "capabilitySlug",
+        "channel",
+        "outcome"
+      ],
+      "rawConversationInAnalytics": false
+    },
+    {
+      "name": "concept.failed",
+      "meaning": "Trabalho encerrado com falha",
+      "commonProperties": [
+        "eventId",
+        "occurredAt",
+        "requestId",
+        "sessionRef",
+        "briefVersion"
+      ],
+      "analyticsPropertiesAllowed": [
+        "sectorCategory",
+        "problemCategory",
+        "capabilitySlug",
+        "channel",
+        "outcome"
+      ],
+      "rawConversationInAnalytics": false
+    },
+    {
+      "name": "concept.refined",
+      "meaning": "Nova versão validada",
+      "commonProperties": [
+        "eventId",
+        "occurredAt",
+        "requestId",
+        "sessionRef",
+        "briefVersion"
+      ],
+      "analyticsPropertiesAllowed": [
+        "sectorCategory",
+        "problemCategory",
+        "capabilitySlug",
+        "channel",
+        "outcome"
+      ],
+      "rawConversationInAnalytics": false
+    },
+    {
+      "name": "handoff.requested",
+      "meaning": "Visitante confirmou continuidade",
+      "commonProperties": [
+        "eventId",
+        "occurredAt",
+        "requestId",
+        "sessionRef",
+        "briefVersion"
+      ],
+      "analyticsPropertiesAllowed": [
+        "sectorCategory",
+        "problemCategory",
+        "capabilitySlug",
+        "channel",
+        "outcome"
+      ],
+      "rawConversationInAnalytics": false
+    },
+    {
+      "name": "handoff.delivered",
+      "meaning": "Canal confirmou entrega",
+      "commonProperties": [
+        "eventId",
+        "occurredAt",
+        "requestId",
+        "sessionRef",
+        "briefVersion"
+      ],
+      "analyticsPropertiesAllowed": [
+        "sectorCategory",
+        "problemCategory",
+        "capabilitySlug",
+        "channel",
+        "outcome"
+      ],
+      "rawConversationInAnalytics": false
+    },
+    {
+      "name": "human.assigned",
+      "meaning": "Atendimento confirmou atribuição",
+      "commonProperties": [
+        "eventId",
+        "occurredAt",
+        "requestId",
+        "sessionRef",
+        "briefVersion"
+      ],
+      "analyticsPropertiesAllowed": [
+        "sectorCategory",
+        "problemCategory",
+        "capabilitySlug",
+        "channel",
+        "outcome"
+      ],
+      "rawConversationInAnalytics": false
+    }
+  ]
+}

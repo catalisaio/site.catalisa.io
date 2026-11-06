@@ -1,0 +1,2190 @@
+{
+  "locale": "es-ES",
+  "date": "2026-10-26T19:01:13.835Z",
+  "sourceCount": 4189,
+  "translated": 4189,
+  "reviewed": 4189,
+  "independentCliReviewed": 4187,
+  "manualSeoSupplementReviewed": 2,
+  "manualSupplement": "editorial-manual-seo-supplement.json",
+  "deltaReviewedBeyondOriginal4031": 158,
+  "coverageComplete": true,
+  "reviewMethod": "Independent full source/translation pair review using authorized Claude CLI without tools, MCP or session persistence; corrections structurally validated before merge.",
+  "style": "tú",
+  "capabilityGlossary": [
+    "capacidad",
+    "capacidades"
+  ],
+  "manualBalanceLabelPreserved": true,
+  "beforeSha256": "a2469cf6182ecf3c7018fe86bcfa0be631c4d8f607f8ca62c382c0cc73079ede",
+  "afterSha256": "be2bb80b3e4e61b70f24e46125eab526258a6f1f026e624db4c6dd21547d9d05",
+  "counts": {
+    "skipped-register": 142,
+    "applied-material": 60,
+    "skipped-style": 15,
+    "skipped-structure": 2,
+    "skipped-unsubstantiated": 17,
+    "skipped-manual": 1,
+    "skipped-identifier": 2
+  },
+  "glossaryNormalizations": 0,
+  "decisions": [
+    {
+      "source": "Organize modelos e preencha documentos com os dados da jornada, preservando uma referência do conteúdo usado.",
+      "previous": "Organice plantillas y complete documentos con los datos del recorrido, conservando una referencia del contenido utilizado.",
+      "proposed": "Organiza plantillas y completa documentos con los datos del recorrido, conservando una referencia del contenido utilizado.",
+      "result": "Organiza plantillas y completa documentos con los datos del recorrido, conservando una referencia del contenido utilizado.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformizar o tratamento informal (tú) usado no restante do site."
+    },
+    {
+      "source": "Seu contexto está na fila da equipe. O atendimento começa quando uma pessoa assumir a conversa.",
+      "previous": "Su contexto está en la cola del equipo. La atención comienza cuando una persona se haga cargo de la conversación.",
+      "proposed": "Tu contexto está en la cola del equipo. La atención comienza cuando una persona se haga cargo de la conversación.",
+      "result": "Tu contexto está en la cola del equipo. La atención comienza cuando una persona se haga cargo de la conversación.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformizar o tratamento informal (tú)."
+    },
+    {
+      "source": "Organize o pedido, os documentos e a visita à oficina em uma jornada acompanhável.",
+      "previous": "Organice el pedido, los documentos y la visita al taller en un recorrido con seguimiento.",
+      "proposed": "Organiza el pedido, los documentos y la visita al taller en un recorrido con seguimiento.",
+      "result": "Organiza el pedido, los documentos y la visita al taller en un recorrido con seguimiento.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformizar o tratamento informal (tú)."
+    },
+    {
+      "source": "VEJA A MESA GANHAR ESPAÇO",
+      "previous": "VEA CÓMO LA MESA GANA ESPACIO",
+      "proposed": "MIRA CÓMO LA MESA GANA ESPACIO",
+      "result": "MIRA CÓMO LA MESA GANA ESPACIO",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformizar o tratamento informal (tú)."
+    },
+    {
+      "source": "03 / Componha",
+      "previous": "03 / Componga",
+      "proposed": "03 / Compón",
+      "result": "03 / Compón",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformizar o tratamento informal (tú)."
+    },
+    {
+      "source": "Conceito exploratório · nenhuma operação é executada nesta prévia. Sua ideia é salva e processada por IA.",
+      "previous": "Concepto exploratorio · no se ejecuta ninguna operación en esta vista previa. Su idea se guarda y se procesa mediante IA.",
+      "proposed": "Concepto exploratorio · no se ejecuta ninguna operación en esta vista previa. Tu idea se guarda y se procesa mediante IA.",
+      "result": "Concepto exploratorio · no se ejecuta ninguna operación en esta vista previa. Tu idea se guarda y se procesa mediante IA.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformizar o tratamento informal (tú)."
+    },
+    {
+      "source": "Nenhuma mensagem ainda. Seu contexto já acompanha esta conversa.",
+      "previous": "Aún no hay mensajes. Su contexto ya acompaña esta conversación.",
+      "proposed": "Aún no hay mensajes. Tu contexto ya acompaña esta conversación.",
+      "result": "Aún no hay mensajes. Tu contexto ya acompaña esta conversación.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformizar o tratamento informal (tú)."
+    },
+    {
+      "source": "Troque o contexto para explorar",
+      "previous": "Cambie el contexto para explorar",
+      "proposed": "Cambia el contexto para explorar",
+      "result": "Cambia el contexto para explorar",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformizar o tratamento informal (tú)."
+    },
+    {
+      "source": "O que você quer colocar no mundo?",
+      "previous": "¿Qué quiere lanzar al mundo?",
+      "proposed": "¿Qué quieres lanzar al mundo?",
+      "result": "¿Qué quieres lanzar al mundo?",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformizar o tratamento informal (tú)."
+    },
+    {
+      "source": "Explore composições que reúnem esta capacidade e outras peças da plataforma.",
+      "previous": "Explore composiciones que reúnen esta capacidad y otras piezas de la plataforma.",
+      "proposed": "Explora composiciones que reúnen esta capacidad y otras piezas de la plataforma.",
+      "result": "Explora composiciones que reúnen esta capacidad y otras piezas de la plataforma.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformizar o tratamento informal (tú)."
+    },
+    {
+      "source": "Como você prefere",
+      "previous": "Cómo prefiere",
+      "proposed": "Cómo prefieres",
+      "result": "Cómo prefieres",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformizar o tratamento informal (tú)."
+    },
+    {
+      "source": "Conte um pouco do seu contexto…",
+      "previous": "Cuéntenos un poco sobre su contexto…",
+      "proposed": "Cuéntanos un poco sobre tu contexto…",
+      "result": "Cuéntanos un poco sobre tu contexto…",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformizar o tratamento informal (tú)."
+    },
+    {
+      "source": "Seu",
+      "previous": "Su",
+      "proposed": "Tu",
+      "result": "Tu",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformizar o tratamento informal (tú) no fragmento."
+    },
+    {
+      "source": "Console / Pessoas e acessos",
+      "previous": "Console / Personas y accesos",
+      "proposed": "Consola / Personas y accesos",
+      "result": "Consola / Personas y accesos",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Termo inconsistente: 'Console' foi traduzido como 'Consola' nos demais rótulos."
+    },
+    {
+      "source": "Entre tocar",
+      "previous": "Entre toques",
+      "proposed": "Entre tocar",
+      "result": "Entre tocar",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Fragmento que continua com 'y consultar la cuenta.'; 'Entre toques' quebra a construção da frase."
+    },
+    {
+      "source": "Banking: Identidade, BaaS, Portfólio, Permissões, Eventos conectados em uma jornada",
+      "previous": "Banking: Identidad, BaaS, Portafolio, Permisos y Eventos conectados en un recorrido",
+      "proposed": "Banking: Identidad, BaaS, Cartera, Permisos y Eventos conectados en un recorrido",
+      "result": "Banking: Identidad, BaaS, Cartera, Permisos y Eventos conectados en un recorrido",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Consistência: 'Portfólio' é traduzido como 'Cartera' nos demais textos."
+    },
+    {
+      "source": "Modalidade e lastro · condições comerciais · alçadas da mesa",
+      "previous": "Modalidad y garantía · condiciones comerciales · niveles de aprobación de la mesa",
+      "proposed": "Modalidad y respaldo · condiciones comerciales · niveles de aprobación de la mesa",
+      "result": "Modalidad y respaldo · condiciones comerciales · niveles de aprobación de la mesa",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Consistência: 'lastro' é traduzido como 'respaldo' em outro texto."
+    },
+    {
+      "source": "Biometrics: prova de vida e comparação facial | Catalisa",
+      "previous": "Biometrics: prueba de vida y comparación facial | Catalisa",
+      "proposed": "Biometría: prueba de vida y comparación facial | Catalisa",
+      "result": "Biometría: prueba de vida y comparación facial | Catalisa",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome genérico de produto (Biometrics) deve ser traduzido."
+    },
+    {
+      "source": "A demanda é concluir trabalho",
+      "previous": "La demanda es completar trabajo",
+      "proposed": "La demanda es completar el trabajo",
+      "result": "La demanda es completar el trabajo",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Falta o artigo; a frase ficava pouco natural."
+    },
+    {
+      "source": "Aceite e Registro",
+      "previous": "Aceptación y Registro",
+      "proposed": "Aceptación y registro",
+      "result": "Aceptación y registro",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Maiúscula indevida; padronizar com os demais títulos."
+    },
+    {
+      "source": "Estes Termos de Uso (\"Termos\") regulam o acesso e uso da plataforma Catalisa, operada por:\n\nCatalisa Tecnologia e Dados LTDA\nCNPJ: 49.646.439/0001-85\nEndereço: Rodovia Raposo Tavares, 7389 - São Paulo - SP - Brasil - 05577-902\n\nAo longo deste documento, \"Catalisa\", \"nós\" ou \"nosso\" referem-se à empresa acima identificada. \"Usuário\", \"você\" ou \"seu\" referem-se à pessoa física ou jurídica que acessa ou utiliza a Plataforma.",
+      "previous": "Estos Términos de Uso («Términos») regulan el acceso y el uso de la plataforma Catalisa, operada por:\n\nCatalisa Tecnologia e Dados LTDA\nCNPJ: 49.646.439/0001-85\nDirección: Rodovia Raposo Tavares, 7389 - São Paulo - SP - Brasil - 05577-902\n\nA lo largo de este documento, «Catalisa», «nosotros» o «nuestro» se refieren a la empresa identificada anteriormente. «Usuario», «usted» o «su» se refieren a la persona física o jurídica que accede a la Plataforma o la utiliza.",
+      "proposed": "Estos Términos de Uso («Términos») regulan el acceso y el uso de la plataforma Catalisa, operada por:\n\nCatalisa Tecnologia e Dados LTDA\nCNPJ: 49.646.439/0001-85\nDirección: Rodovia Raposo Tavares, 7389 - São Paulo - SP - Brasil - 05577-902\n\nA lo largo de este documento, «Catalisa», «nosotros» o «nuestro» se refieren a la empresa identificada anteriormente. «Usuario», «tú» o «tu» se refieren a la persona física o jurídica que accede a la Plataforma o la utiliza.",
+      "result": "Estos Términos de Uso («Términos») regulan el acceso y el uso de la plataforma Catalisa, operada por:\n\nCatalisa Tecnologia e Dados LTDA\nCNPJ: 49.646.439/0001-85\nDirección: Rodovia Raposo Tavares, 7389 - São Paulo - SP - Brasil - 05577-902\n\nA lo largo de este documento, «Catalisa», «nosotros» o «nuestro» se refieren a la empresa identificada anteriormente. «Usuario», «tú» o «tu» se refieren a la persona física o jurídica que accede a la Plataforma o la utiliza.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento inconsistente: os demais trechos dos Termos usam «tú»."
+    },
+    {
+      "source": "Observe a diferença",
+      "previous": "Observe la diferencia",
+      "proposed": "Observa la diferencia",
+      "result": "Observa la diferencia",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento informal (tú) usado no site."
+    },
+    {
+      "source": "Outras áreas do console aparecem no protótipo do guia. Abra as capturas para explorar o desenho.",
+      "previous": "Otras áreas de la consola aparecen en el prototipo de la guía. Abra las capturas para explorar el diseño.",
+      "proposed": "Otras áreas de la consola aparecen en el prototipo de la guía. Abre las capturas para explorar el diseño.",
+      "result": "Otras áreas de la consola aparecen en el prototipo de la guía. Abre las capturas para explorar el diseño.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento informal (tú)."
+    },
+    {
+      "source": "Organize faixas de preço, taxas e componentes da oferta para que a jornada consulte uma referência comum.",
+      "previous": "Organice tramos de precio, tasas y componentes de la oferta para que el recorrido consulte una referencia común.",
+      "proposed": "Organiza tramos de precio, tasas y componentes de la oferta para que el recorrido consulte una referencia común.",
+      "result": "Organiza tramos de precio, tasas y componentes de la oferta para que el recorrido consulte una referencia común.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento informal (tú)."
+    },
+    {
+      "source": "Sua sessão expirou. Comece uma nova conversa.",
+      "previous": "Su sesión ha caducado. Inicie una nueva conversación.",
+      "proposed": "Tu sesión ha caducado. Inicia una nueva conversación.",
+      "result": "Tu sesión ha caducado. Inicia una nueva conversación.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento informal (tú), como nas demais mensagens do servidor."
+    },
+    {
+      "source": "Conecte o WhatsApp que já faz parte da rotina.",
+      "previous": "Conecte el WhatsApp que ya forma parte de la rutina.",
+      "proposed": "Conecta el WhatsApp que ya forma parte de la rutina.",
+      "result": "Conecta el WhatsApp que ya forma parte de la rutina.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento informal (tú)."
+    },
+    {
+      "source": "Seus direitos",
+      "previous": "Sus derechos",
+      "proposed": "Tus derechos",
+      "result": "Tus derechos",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento informal (tú) na política de privacidade."
+    },
+    {
+      "source": "Os tokens de acesso são armazenados de forma criptografada. Você pode revogar o acesso a qualquer momento na própria Plataforma ou em myaccount.google.com/permissions.",
+      "previous": "Los tokens de acceso se almacenan cifrados. Puede revocar el acceso en cualquier momento en la propia Plataforma o en myaccount.google.com/permissions.",
+      "proposed": "Los tokens de acceso se almacenan cifrados. Puedes revocar el acceso en cualquier momento en la propia Plataforma o en myaccount.google.com/permissions.",
+      "result": "Los tokens de acceso se almacenan cifrados. Puedes revocar el acceso en cualquier momento en la propia Plataforma o en myaccount.google.com/permissions.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento informal (tú)."
+    },
+    {
+      "source": "Construa a interface e as regras que diferenciam o negócio. Componha identidade, decisão, documentos e comunicação por trás dela. O primeiro recorte pode ser uma jornada inteira ou apenas uma operação.",
+      "previous": "Construya la interfaz y las reglas que diferencian el negocio. Componga identidad, decisión, documentos y comunicación detrás de ella. El primer alcance puede ser un recorrido completo o solo una operación.",
+      "proposed": "Construye la interfaz y las reglas que diferencian el negocio. Compón identidad, decisión, documentos y comunicación detrás de ella. El primer alcance puede ser un recorrido completo o solo una operación.",
+      "result": "Construye la interfaz y las reglas que diferencian el negocio. Compón identidad, decisión, documentos y comunicación detrás de ella. El primer alcance puede ser un recorrido completo o solo una operación.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento informal (tú)."
+    },
+    {
+      "source": "Explore composições de atendimento, identidade e decisão. Entenda como capacidades com responsabilidades próprias participam de uma mesma jornada.",
+      "previous": "Explore composiciones de atención, identidad y decisión. Entienda cómo capacidades con responsabilidades propias participan en un mismo recorrido.",
+      "proposed": "Explora composiciones de atención, identidad y decisión. Entiende cómo capacidades con responsabilidades propias participan en un mismo recorrido.",
+      "result": "Explora composiciones de atención, identidad y decisión. Entiende cómo capacidades con responsabilidades propias participan en un mismo recorrido.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento informal (tú)."
+    },
+    {
+      "source": "Banking: interface para seu aplicativo de banco digital | Catalisa",
+      "previous": "Banking: interfaz para su aplicación de banca digital | Catalisa",
+      "proposed": "Banking: interfaz para tu aplicación de banca digital | Catalisa",
+      "result": "Banking: interfaz para tu aplicación de banca digital | Catalisa",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento informal (tú)."
+    },
+    {
+      "source": "Contratos e documentos gerados a partir de template versionado, com variáveis tipadas. Consulte aplicações, estágio e documentação.",
+      "previous": "Contratos y documentos generados a partir de una plantilla versionada, con variables tipadas. Consulte aplicaciones, fase y documentación.",
+      "proposed": "Contratos y documentos generados a partir de una plantilla versionada, con variables tipadas. Consulta aplicaciones, fase y documentación.",
+      "result": "Contratos y documentos generados a partir de una plantilla versionada, con variables tipadas. Consulta aplicaciones, fase y documentación.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento informal (tú)."
+    },
+    {
+      "source": "Crie seu produto financeiro.",
+      "previous": "Cree su producto financiero.",
+      "proposed": "Crea tu producto financiero.",
+      "result": "Crea tu producto financiero.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento informal (tú), igual a r_1e50b399a5c515a8."
+    },
+    {
+      "source": "Organize meios e acompanhamento de pagamento para que a operação saiba o que foi cobrado e recebido.",
+      "previous": "Organice los medios y el seguimiento de pago para que la operación sepa qué se ha cobrado y recibido.",
+      "proposed": "Organiza los medios y el seguimiento de pago para que la operación sepa qué se ha cobrado y recibido.",
+      "result": "Organiza los medios y el seguimiento de pago para que la operación sepa qué se ha cobrado y recibido.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento informal (tú)."
+    },
+    {
+      "source": "Conheça as peças",
+      "previous": "Conozca las piezas",
+      "proposed": "Conoce las piezas",
+      "result": "Conoce las piezas",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento informal (tú)."
+    },
+    {
+      "source": "Crie seu produto financeiro.<br>Conecte a experiência à operação.",
+      "previous": "Cree su producto financiero.<br>Conecte la experiencia con la operación.",
+      "proposed": "Crea tu producto financiero.<br>Conecta la experiencia con la operación.",
+      "result": "Crea tu producto financiero.<br>Conecta la experiencia con la operación.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento informal (tú); markup preservado."
+    },
+    {
+      "source": "Comece com uma jornada delimitada e valide o comportamento antes de ampliar.",
+      "previous": "Empiece con un recorrido acotado y valide el comportamiento antes de ampliarlo.",
+      "proposed": "Empieza con un recorrido acotado y valida el comportamiento antes de ampliarlo.",
+      "result": "Empieza con un recorrido acotado y valida el comportamiento antes de ampliarlo.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento informal (tú)."
+    },
+    {
+      "source": "Explore Banking Platform ↗",
+      "previous": "Explorar Banking Platform ↗",
+      "proposed": "Explora la plataforma bancaria ↗",
+      "result": "Explora la plataforma bancaria ↗",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Nome genérico de produto (Banking Platform) deve ser traduzido; tratamento tú."
+    },
+    {
+      "source": "Conheça produtos e experiências que combinam capacidades Catalisa em contextos de banking, crédito, saúde, jurídico, recrutamento, identidade e decisão.",
+      "previous": "Descubre productos y experiencias que combinan capacidades de Catalisa en contextos de banca, crédito, salud, jurídico, selección de personal, identidad y decisión.",
+      "proposed": "Descubre productos y experiencias que combinan capacidades de Catalisa en contextos de banca, crédito, salud, legal, reclutamiento, identidad y decisión.",
+      "result": "Descubre productos y experiencias que combinan capacidades de Catalisa en contextos de banca, crédito, salud, legal, reclutamiento, identidad y decisión.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Rótulos de produto consistentes (Jurídico → legal, Recrutamento → reclutamiento)."
+    },
+    {
+      "source": "Pedido ainda não criado",
+      "previous": "Pedido aún no creado",
+      "proposed": "Solicitud aún no creada",
+      "result": "Solicitud aún no creada",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Terminologia inconsistente: no mesmo arquivo 'pedido' foi traduzido como 'solicitud'."
+    },
+    {
+      "source": "R$ 50,4 bi",
+      "previous": "R$ 50.400 M",
+      "proposed": "R$ 50.400 millones",
+      "result": "R$ 50.400 millones",
+      "outcome": "skipped-structure",
+      "why": "Protected placeholder, URL, email, numeric fact or inline-code mismatch",
+      "reviewReason": "A abreviação \"M\" é ambígua em espanhol; mantém-se o valor e a moeda R$, apenas com a escala por extenso."
+    },
+    {
+      "source": "Recrutamento: atendimento e parecer com revisão | Catalisa",
+      "previous": "Selección de personal: atención y dictamen con revisión | Catalisa",
+      "proposed": "Reclutamiento: atención e informe con revisión | Catalisa",
+      "result": "Reclutamiento: atención e informe con revisión | Catalisa",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Rótulo de produto consistente (Recrutamento = Reclutamiento) e \"parecer\" alinhado a \"informe\", como nos demais textos."
+    },
+    {
+      "source": "O que sustenta",
+      "previous": "Lo que lo sustenta",
+      "proposed": "Lo que sustenta",
+      "result": "Lo que sustenta",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Fragmento de frase: não se deve acrescentar o pronome \"lo\", que muda a estrutura da continuação."
+    },
+    {
+      "source": "Transforme uso em cobrança acompanhável.",
+      "previous": "Convierte el uso en una facturación con seguimiento.",
+      "proposed": "Convierte el uso en un cobro con seguimiento.",
+      "result": "Convierte el uso en un cobro con seguimiento.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Consistência terminológica: \"cobrança\" foi traduzida como \"cobro\" nos demais textos."
+    },
+    {
+      "source": "Mesa + portal",
+      "previous": "Mesa + portal",
+      "proposed": "Equipo de análisis + portal",
+      "result": "Equipo de análisis + portal",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Consistência: \"mesa\" foi traduzida como \"equipo de análisis\" nos outros textos; \"Mesa\" isolado fica ambíguo em espanhol."
+    },
+    {
+      "source": "Ampliar desktop do Banking Platform",
+      "previous": "Ampliar escritorio de Banking Platform",
+      "proposed": "Ampliar escritorio de la plataforma bancaria",
+      "result": "Ampliar escritorio de la plataforma bancaria",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome genérico de produto (Banking Platform) deve ser traduzido de forma consistente."
+    },
+    {
+      "source": "movimentáveis.",
+      "previous": "movibles.",
+      "proposed": "disponibles para transferencias.",
+      "result": "disponibles para transferencias.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Movimentáveis' refere-se a saldo disponível para transferências, não a algo 'movible'."
+    },
+    {
+      "source": "O Usuário concorda em indenizar, defender e isentar a Catalisa, seus diretores, funcionários e prestadores de serviços de quaisquer perdas, danos, custos e despesas (incluindo honorários advocatícios razoáveis) decorrentes de:\n\n(a) Violação destes Termos pelo Usuário.\n(b) Uso ilegal ou indevido da Plataforma pelo Usuário.\n(c) Conteúdo enviado, processado ou armazenado pelo Usuário na Plataforma, incluindo conteúdo gerado por Agentes IA sob sua responsabilidade.\n(d) Violação de direitos de terceiros pelo Usuário, incluindo direitos de propriedade intelectual e privacidade.\n(e) Reclamações de titulares de Dados Pessoais cujo tratamento seja de responsabilidade do Usuário na qualidade de Controlador.",
+      "previous": "El Usuario se compromete a indemnizar, defender y eximir de responsabilidad a Catalisa, sus directivos, empleados y proveedores de servicios frente a cualesquiera pérdidas, daños, costes y gastos (incluidos honorarios razonables de abogados) derivados de:\n\n(a) El incumplimiento de estos Términos por parte del Usuario.\n(b) El uso ilegal o indebido de la Plataforma por parte del Usuario.\n(c) El contenido enviado, procesado o almacenado por el Usuario en la Plataforma, incluido el contenido generado por Agentes de IA bajo su responsabilidad.\n(d) La vulneración de derechos de terceros por parte del Usuario, incluidos los derechos de propiedad intelectual y de privacidad.\n(e) Las reclamaciones de titulares de Datos Personales cuyo tratamiento sea responsabilidad del Usuario en calidad de Responsable del tratamiento.",
+      "proposed": "El Usuario se compromete a indemnizar, defender y eximir de responsabilidad a Catalisa, sus directivos, empleados y proveedores de servicios frente a cualesquiera pérdidas, daños, costes y gastos (incluidos honorarios razonables de abogados) derivados de:\n\n(a) El incumplimiento de estos Términos por parte del Usuario.\n(b) El uso ilegal o indebido de la Plataforma por parte del Usuario.\n(c) El contenido enviado, procesado o almacenado por el Usuario en la Plataforma, incluido el contenido generado por Agentes IA bajo su responsabilidad.\n(d) La vulneración de derechos de terceros por parte del Usuario, incluidos los derechos de propiedad intelectual y de privacidad.\n(e) Las reclamaciones de titulares de Datos Personales cuyo tratamiento sea responsabilidad del Usuario en calidad de Responsable del tratamiento.",
+      "result": "El Usuario se compromete a indemnizar, defender y eximir de responsabilidad a Catalisa, sus directivos, empleados y proveedores de servicios frente a cualesquiera pérdidas, daños, costes y gastos (incluidos honorarios razonables de abogados) derivados de:\n\n(a) El incumplimiento de estos Términos por parte del Usuario.\n(b) El uso ilegal o indebido de la Plataforma por parte del Usuario.\n(c) El contenido enviado, procesado o almacenado por el Usuario en la Plataforma, incluido el contenido generado por Agentes IA bajo su responsabilidad.\n(d) La vulneración de derechos de terceros por parte del Usuario, incluidos los derechos de propiedad intelectual y de privacidad.\n(e) Las reclamaciones de titulares de Datos Personales cuyo tratamiento sea responsabilidad del Usuario en calidad de Responsable del tratamiento.",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "Termo definido «Agentes IA» deve ser mantido igual ao da definição contratual."
+    },
+    {
+      "source": "Dados de uso (base legal: legítimo interesse): interações com a Plataforma, funcionalidades utilizadas, logs de acesso, horários de uso, ações realizadas. Coletados automaticamente durante o uso.",
+      "previous": "Datos de uso (base jurídica: interés legítimo): interacciones con la Plataforma, funcionalidades utilizadas, registros de acceso, horarios de uso y acciones realizadas. Se recopilan automáticamente durante el uso.",
+      "proposed": "Datos de uso (base legal: interés legítimo): interacciones con la Plataforma, funcionalidades utilizadas, registros de acceso, horarios de uso y acciones realizadas. Se recopilan automáticamente durante el uso.",
+      "result": "Datos de uso (base legal: interés legítimo): interacciones con la Plataforma, funcionalidades utilizadas, registros de acceso, horarios de uso y acciones realizadas. Se recopilan automáticamente durante el uso.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência terminológica: 'bases legales' é usado na seção das bases da LGPD."
+    },
+    {
+      "source": "Pode movimentar",
+      "previous": "Saldo disponible",
+      "proposed": "Disponible para transferencias",
+      "result": "Disponible para transferencias",
+      "outcome": "skipped-manual",
+      "why": "Preserve owner-reviewed available-balance label",
+      "reviewReason": "'Pode movimentar' indica saldo disponível para transferências; 'Saldo disponible' perde esse sentido específico."
+    },
+    {
+      "source": "Neste exemplo, o valor informado pelo banco está disponível para movimentação.",
+      "previous": "En este ejemplo, el importe informado por el banco está disponible para movimientos.",
+      "proposed": "En este ejemplo, el importe informado por el banco está disponible para transferencias.",
+      "result": "En este ejemplo, el importe informado por el banco está disponible para transferencias.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'disponible para movimientos' soa literal; alinhado ao rótulo 'Disponible para transferencias'."
+    },
+    {
+      "source": "Decisão",
+      "previous": "Decisiones",
+      "proposed": "Decisión",
+      "result": "Decisión",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Rótulo de produto/capacidade no singular; 'Decisiones' altera o rótulo e quebra a consistência com 'Decision' → 'decisión'."
+    },
+    {
+      "source": "Conheça a composição Med: atendimento pelo WhatsApp, contexto e agenda para clínicas, com revisão humana e responsabilidade pelo prontuário.",
+      "previous": "Conoce la composición Med: atención por WhatsApp, contexto y agenda para clínicas, con revisión humana y responsabilidad sobre la historia clínica.",
+      "proposed": "Conoce la composición Salud: atención por WhatsApp, contexto y agenda para clínicas, con revisión humana y responsabilidad sobre la historia clínica.",
+      "result": "Conoce la composición Salud: atención por WhatsApp, contexto y agenda para clínicas, con revisión humana y responsabilidad sobre la historia clínica.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "O nome de produto Med deve ser traduzido como saúde ('Salud'), consistente com o rótulo do produto."
+    },
+    {
+      "source": "aplicativo Banking",
+      "previous": "aplicación Banking",
+      "proposed": "aplicación de banca",
+      "result": "aplicación de banca",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome genérico de produto Banking deve ser traduzido, consistente com 'Banca' usado em outras strings."
+    },
+    {
+      "source": "Decision Platform reúne fontes; Decision Engine aplica a política. Separar essas funções permite usar o motor com dados próprios ou compô-lo com uma esteira.",
+      "previous": "Decision Platform reúne fuentes; Decision Engine aplica la política. Separar estas funciones permite usar el motor con datos propios o combinarlo con un flujo de procesamiento.",
+      "proposed": "La plataforma de decisión reúne fuentes; el motor de decisión aplica la política. Separar estas funciones permite usar el motor con datos propios o combinarlo con un flujo de procesamiento.",
+      "result": "La plataforma de decisión reúne fuentes; el motor de decisión aplica la política. Separar estas funciones permite usar el motor con datos propios o combinarlo con un flujo de procesamiento.",
+      "outcome": "skipped-identifier",
+      "why": "Proposal removed an existing protected technical or company name",
+      "reviewReason": "Nomes genéricos de produto Decision devem ser traduzidos, consistente com 'Motor de decisión' em Ecosystem."
+    },
+    {
+      "source": "Jornadas ilustrativas conectam capacidades reais, preservando suas fronteiras.",
+      "previous": "Recorridos ilustrativos que conectan capacidades reales y preservan sus límites.",
+      "proposed": "Los recorridos ilustrativos conectan capacidades reales y preservan sus límites.",
+      "result": "Los recorridos ilustrativos conectan capacidades reales y preservan sus límites.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "A tradução transformou uma frase completa em fragmento sem verbo principal."
+    },
+    {
+      "source": "O canal, a capacidade e o provedor têm papéis próprios. Essa separação ajuda a evoluir a experiência com mais clareza sobre quem responde por cada trabalho.",
+      "previous": "El canal, la capacidad y el proveedor tienen funciones propias. Esta separación ayuda a evolucionar la experiencia con más claridad sobre quién responde de cada trabajo.",
+      "proposed": "El canal, la capacidad y el proveedor tienen funciones propias. Esta separación ayuda a evolucionar la experiencia con más claridad sobre quién es responsable de cada trabajo.",
+      "result": "El canal, la capacidad y el proveedor tienen funciones propias. Esta separación ayuda a evolucionar la experiencia con más claridad sobre quién es responsable de cada trabajo.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'responde de cada trabajo' é calco do português; 'es responsable de' é natural em espanhol."
+    },
+    {
+      "source": "Definir um prazo de retenção já elimina os registros?",
+      "previous": "¿Definir un plazo de conservación ya elimina los registros?",
+      "proposed": "¿Definir un plazo de retención ya elimina los registros?",
+      "result": "¿Definir un plazo de retención ya elimina los registros?",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência terminológica: 'retención' é usado nas demais strings para 'retenção'."
+    },
+    {
+      "source": "Med: assistente de IA para clínicas | Catalisa",
+      "previous": "Med: asistente de IA para clínicas | Catalisa",
+      "proposed": "Salud: asistente de IA para clínicas | Catalisa",
+      "result": "Salud: asistente de IA para clínicas | Catalisa",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome genérico de produto Med deve ser traduzido (saúde)."
+    },
+    {
+      "source": "Credit Platform: desenhe seu produto de crédito | Catalisa",
+      "previous": "Credit Platform: diseña tu producto de crédito | Catalisa",
+      "proposed": "Plataforma de crédito: diseña tu producto de crédito | Catalisa",
+      "result": "Plataforma de crédito: diseña tu producto de crédito | Catalisa",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome genérico de produto Credit Platform deve ser traduzido."
+    },
+    {
+      "source": "Provisiona e monitora sua conta Meta Business com a WABA no seu próprio nome. Consulte aplicações, estágio e documentação.",
+      "previous": "Aprovisiona y supervisa tu cuenta de Meta Business con la WABA a tu propio nombre. Consulta solicitudes, fase y documentación.",
+      "proposed": "Aprovisiona y supervisa tu cuenta de Meta Business con la WABA a tu propio nombre. Consulta aplicaciones, fase y documentación.",
+      "result": "Aprovisiona y supervisa tu cuenta de Meta Business con la WABA a tu propio nombre. Consulta aplicaciones, fase y documentación.",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "'Aplicações' são aplicações de uso, não solicitações; alinhar com os demais títulos SEO."
+    },
+    {
+      "source": "O valor movimentável está em conferência.",
+      "previous": "El importe disponible está en verificación.",
+      "proposed": "El importe disponible para transferencias está en verificación.",
+      "result": "El importe disponible para transferencias está en verificación.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Movimentável' refere-se ao saldo disponível para transferências."
+    },
+    {
+      "source": "O cliente combina informações pelo WhatsApp e a proposta continua sem esse histórico.",
+      "previous": "El cliente acuerda información por WhatsApp y la propuesta sigue sin ese historial.",
+      "proposed": "El cliente acuerda los detalles por WhatsApp y la propuesta sigue sin ese historial.",
+      "result": "El cliente acuerda los detalles por WhatsApp y la propuesta sigue sin ese historial.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Combina informações' significa combinar detalhes; 'acuerda información' soa literal."
+    },
+    {
+      "source": "Acervo da casa",
+      "previous": "Fondo de la casa",
+      "proposed": "Acervo propio",
+      "result": "Acervo propio",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Terminologia inconsistente: em outro par 'acervo' foi mantido; 'Fondo de la casa' é literal e estranho."
+    },
+    {
+      "source": "Portfólio",
+      "previous": "Portfolio",
+      "proposed": "Cartera",
+      "result": "Cartera",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "'Portfolio' é anglicismo; usar 'Cartera', como em outras partes do site."
+    },
+    {
+      "source": "Revisão do utilitário",
+      "previous": "Revisión de la utilidad",
+      "proposed": "Revisión de la herramienta",
+      "result": "Revisión de la herramienta",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "'Utilidad' é ambíguo (pode ser lido como 'serventia'); 'utilitário' é uma ferramenta."
+    },
+    {
+      "source": "Conta e Acesso",
+      "previous": "Cuenta y Acceso",
+      "proposed": "Cuenta y acceso",
+      "result": "Cuenta y acceso",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "Em espanhol, títulos não usam maiúscula em todas as palavras."
+    },
+    {
+      "source": "Força maior. Nenhuma das partes será responsável por atrasos ou falhas no cumprimento de suas obrigações decorrentes de eventos fora de seu controle razoável, incluindo desastres naturais, pandemias, guerras, greves, falhas de telecomunicações, atos governamentais ou falhas de infraestrutura de terceiros. A parte afetada deverá notificar a outra em até 5 (cinco) dias úteis após o início do evento.\n\nAnticorrupção. As partes declaram e garantem que conduzem seus negócios em conformidade com a legislação anticorrupção aplicável, incluindo a Lei n. 12.846/2013 (Lei Anticorrupção) e o Decreto n. 11.129/2022. Nenhuma das partes oferecerá, prometerá, pagará ou autorizará o pagamento de qualquer vantagem indevida a agentes públicos ou terceiros.\n\nCessão. O Usuário não poderá ceder ou transferir seus direitos e obrigações sob estes Termos sem o consentimento prévio e por escrito da Catalisa. A Catalisa poderá ceder estes Termos a qualquer afiliada ou em caso de fusão, aquisição ou venda de ativos, mediante notificação ao Usuário.\n\nIntegralidade. Estes Termos, juntamente com a Política de Privacidade e os documentos neles referenciados, constituem o acordo integral entre as partes e substituem todos os acordos anteriores, escritos ou verbais.\n\nAlterações. A Catalisa poderá modificar estes Termos a qualquer momento, comunicando as alterações com antecedência mínima de 30 (trinta) dias por email ou notificação na Plataforma. O uso continuado da Plataforma após o prazo de notificação constitui aceitação dos novos Termos. Caso discorde das alterações, o Usuário poderá rescindir o contrato conforme a Seção 17.\n\nIndependência das cláusulas. A invalidade ou inexequibilidade de qualquer cláusula destes Termos não afetará a validade das demais, que permanecerão em pleno vigor.\n\nRenúncia. A falha de qualquer das partes em exercer qualquer direito previsto nestes Termos não constituirá renúncia a tal direito.\n\nForo. Fica eleito o foro da Comarca de São Paulo, Estado de São Paulo, Brasil, para dirimir quaisquer controvérsias decorrentes destes Termos, com renúncia a qualquer outro, por mais privilegiado que seja.",
+      "previous": "Fuerza mayor. Ninguna de las partes será responsable de retrasos o incumplimientos de sus obligaciones derivados de acontecimientos fuera de su control razonable, incluidos desastres naturales, pandemias, guerras, huelgas, fallos de telecomunicaciones, actos gubernamentales o fallos de infraestructura de terceros. La parte afectada deberá notificarlo a la otra en un plazo de 5 (cinco) días hábiles desde el inicio del acontecimiento.\n\nAnticorrupción. Las partes declaran y garantizan que desarrollan sus actividades de conformidad con la legislación anticorrupción aplicable, incluidas la Ley n.º 12.846/2013 (Ley Anticorrupción) y el Decreto n.º 11.129/2022. Ninguna de las partes ofrecerá, prometerá, pagará ni autorizará el pago de ninguna ventaja indebida a funcionarios públicos o terceros.\n\nCesión. El Usuario no podrá ceder ni transferir sus derechos y obligaciones en virtud de estos Términos sin el consentimiento previo y por escrito de Catalisa. Catalisa podrá ceder estos Términos a cualquier filial o en caso de fusión, adquisición o venta de activos, previa notificación al Usuario.\n\nAcuerdo íntegro. Estos Términos, junto con la Política de Privacidad y los documentos a los que en ellos se hace referencia, constituyen el acuerdo íntegro entre las partes y sustituyen a todos los acuerdos anteriores, escritos o verbales.\n\nModificaciones. Catalisa podrá modificar estos Términos en cualquier momento, comunicando los cambios con una antelación mínima de 30 (treinta) días por correo electrónico o mediante notificación en la Plataforma. El uso continuado de la Plataforma tras el plazo de notificación constituye la aceptación de los nuevos Términos. Si no está de acuerdo con los cambios, el Usuario podrá resolver el contrato conforme a la Sección 17.\n\nIndependencia de las cláusulas. La invalidez o inaplicabilidad de cualquier cláusula de estos Términos no afectará a la validez de las demás, que seguirán plenamente vigentes.\n\nRenuncia. El hecho de que cualquiera de las partes no ejerza algún derecho previsto en estos Términos no constituirá una renuncia a dicho derecho.\n\nFuero. Se elige el fuero de la Comarca de São Paulo, Estado de São Paulo, Brasil, para resolver cualquier controversia derivada de estos Términos, con renuncia a cualquier otro, por privilegiado que sea.",
+      "proposed": "Fuerza mayor. Ninguna de las partes será responsable de retrasos o incumplimientos de sus obligaciones derivados de acontecimientos fuera de su control razonable, incluidos desastres naturales, pandemias, guerras, huelgas, fallos de telecomunicaciones, actos gubernamentales o fallos de infraestructura de terceros. La parte afectada deberá notificarlo a la otra en un plazo de 5 (cinco) días hábiles desde el inicio del acontecimiento.\n\nAnticorrupción. Las partes declaran y garantizan que desarrollan sus actividades de conformidad con la legislación anticorrupción aplicable, incluidas la Ley n.º 12.846/2013 (Ley Anticorrupción) y el Decreto n.º 11.129/2022. Ninguna de las partes ofrecerá, prometerá, pagará ni autorizará el pago de ninguna ventaja indebida a funcionarios públicos o terceros.\n\nCesión. El Usuario no podrá ceder ni transferir sus derechos y obligaciones en virtud de estos Términos sin el consentimiento previo y por escrito de Catalisa. Catalisa podrá ceder estos Términos a cualquier filial o en caso de fusión, adquisición o venta de activos, previa notificación al Usuario.\n\nAcuerdo íntegro. Estos Términos, junto con la Política de Privacidad y los documentos a los que en ellos se hace referencia, constituyen el acuerdo íntegro entre las partes y sustituyen a todos los acuerdos anteriores, escritos o verbales.\n\nModificaciones. Catalisa podrá modificar estos Términos en cualquier momento, comunicando los cambios con una antelación mínima de 30 (treinta) días por correo electrónico o mediante notificación en la Plataforma. El uso continuado de la Plataforma tras el plazo de notificación constituye la aceptación de los nuevos Términos. Si no está de acuerdo con los cambios, el Usuario podrá rescindir el contrato conforme a la Sección 17.\n\nIndependencia de las cláusulas. La invalidez o inaplicabilidad de cualquier cláusula de estos Términos no afectará a la validez de las demás, que seguirán plenamente vigentes.\n\nRenuncia. El hecho de que cualquiera de las partes no ejerza algún derecho previsto en estos Términos no constituirá una renuncia a dicho derecho.\n\nFuero. Se elige el fuero de la Comarca de São Paulo, Estado de São Paulo, Brasil, para resolver cualquier controversia derivada de estos Términos, con renuncia a cualquier otro, por privilegiado que sea.",
+      "result": "Fuerza mayor. Ninguna de las partes será responsable de retrasos o incumplimientos de sus obligaciones derivados de acontecimientos fuera de su control razonable, incluidos desastres naturales, pandemias, guerras, huelgas, fallos de telecomunicaciones, actos gubernamentales o fallos de infraestructura de terceros. La parte afectada deberá notificarlo a la otra en un plazo de 5 (cinco) días hábiles desde el inicio del acontecimiento.\n\nAnticorrupción. Las partes declaran y garantizan que desarrollan sus actividades de conformidad con la legislación anticorrupción aplicable, incluidas la Ley n.º 12.846/2013 (Ley Anticorrupción) y el Decreto n.º 11.129/2022. Ninguna de las partes ofrecerá, prometerá, pagará ni autorizará el pago de ninguna ventaja indebida a funcionarios públicos o terceros.\n\nCesión. El Usuario no podrá ceder ni transferir sus derechos y obligaciones en virtud de estos Términos sin el consentimiento previo y por escrito de Catalisa. Catalisa podrá ceder estos Términos a cualquier filial o en caso de fusión, adquisición o venta de activos, previa notificación al Usuario.\n\nAcuerdo íntegro. Estos Términos, junto con la Política de Privacidad y los documentos a los que en ellos se hace referencia, constituyen el acuerdo íntegro entre las partes y sustituyen a todos los acuerdos anteriores, escritos o verbales.\n\nModificaciones. Catalisa podrá modificar estos Términos en cualquier momento, comunicando los cambios con una antelación mínima de 30 (treinta) días por correo electrónico o mediante notificación en la Plataforma. El uso continuado de la Plataforma tras el plazo de notificación constituye la aceptación de los nuevos Términos. Si no está de acuerdo con los cambios, el Usuario podrá rescindir el contrato conforme a la Sección 17.\n\nIndependencia de las cláusulas. La invalidez o inaplicabilidad de cualquier cláusula de estos Términos no afectará a la validez de las demás, que seguirán plenamente vigentes.\n\nRenuncia. El hecho de que cualquiera de las partes no ejerza algún derecho previsto en estos Términos no constituirá una renuncia a dicho derecho.\n\nFuero. Se elige el fuero de la Comarca de São Paulo, Estado de São Paulo, Brasil, para resolver cualquier controversia derivada de estos Términos, con renuncia a cualquier otro, por privilegiado que sea.",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "Usar 'rescindir', como nas demais cláusulas de rescisão, em vez de 'resolver'."
+    },
+    {
+      "source": "Banking Platform: crie seu produto financeiro | Catalisa",
+      "previous": "Banking Platform: crea tu producto financiero | Catalisa",
+      "proposed": "Plataforma bancaria: crea tu producto financiero | Catalisa",
+      "result": "Plataforma bancaria: crea tu producto financiero | Catalisa",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome genérico de produto (Banking Platform) deve ser traduzido de forma consistente."
+    },
+    {
+      "source": "Ampliar aplicativo Banking",
+      "previous": "Ampliar aplicación Banking",
+      "proposed": "Ampliar aplicación de banca",
+      "result": "Ampliar aplicación de banca",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Rótulo genérico de produto traduzido de forma consistente."
+    },
+    {
+      "source": "Parcela, amortização, IOF e CET como API testada, não como planilha. Consulte aplicações, estágio e documentação.",
+      "previous": "Cuota, amortización, IOF y CET como API probada, no como hoja de cálculo. Consulte aplicaciones, fase y documentación.",
+      "proposed": "Cuota, amortización, IOF y CET como API probada, no como hoja de cálculo. Consulta aplicaciones, fase y documentación.",
+      "result": "Cuota, amortización, IOF y CET como API probada, no como hoja de cálculo. Consulta aplicaciones, fase y documentación.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento inconsistente: o site usa «tú»."
+    },
+    {
+      "source": "Documento entra como imagem, sai como JSON estruturado com nota de confiança. Consulte aplicações, estágio e documentação.",
+      "previous": "El documento entra como imagen y sale como JSON estructurado con una puntuación de confianza. Consulte aplicaciones, fase y documentación.",
+      "proposed": "El documento entra como imagen y sale como JSON estructurado con una puntuación de confianza. Consulta aplicaciones, fase y documentación.",
+      "result": "El documento entra como imagen y sale como JSON estructurado con una puntuación de confianza. Consulta aplicaciones, fase y documentación.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento inconsistente: o site usa «tú»."
+    },
+    {
+      "source": "WhatsApp no número que a empresa já usa, sem trocar de linha nem migrar conversa. Consulte aplicações, estágio e documentação.",
+      "previous": "WhatsApp en el número que la empresa ya usa, sin cambiar de línea ni migrar conversaciones. Consulte aplicaciones, fase y documentación.",
+      "proposed": "WhatsApp en el número que la empresa ya usa, sin cambiar de línea ni migrar conversaciones. Consulta aplicaciones, fase y documentación.",
+      "result": "WhatsApp en el número que la empresa ya usa, sin cambiar de línea ni migrar conversaciones. Consulta aplicaciones, fase y documentación.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento inconsistente: o site usa «tú»."
+    },
+    {
+      "source": "Reúna informações, prepare a avaliação e conduza a formalização em etapas claras.",
+      "previous": "Reúna información, prepare la evaluación y conduzca la formalización en etapas claras.",
+      "proposed": "Reúne información, prepara la evaluación y conduce la formalización en etapas claras.",
+      "result": "Reúne información, prepara la evaluación y conduce la formalización en etapas claras.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento inconsistente: o site usa «tú»."
+    },
+    {
+      "source": "01 / Sua ideia",
+      "previous": "01 / Su idea",
+      "proposed": "01 / Tu idea",
+      "result": "01 / Tu idea",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento inconsistente: o site usa «tú»."
+    },
+    {
+      "source": "COMECE NO SEU CONTEXTO",
+      "previous": "EMPIECE EN SU CONTEXTO",
+      "proposed": "EMPIEZA EN TU CONTEXTO",
+      "result": "EMPIEZA EN TU CONTEXTO",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento inconsistente: o site usa «tú»."
+    },
+    {
+      "source": "SEU ESPAÇO",
+      "previous": "SU ESPACIO",
+      "proposed": "TU ESPACIO",
+      "result": "TU ESPACIO",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento inconsistente: o site usa «tú»."
+    },
+    {
+      "source": "Envie os dados em JSON.",
+      "previous": "Envíe los datos en JSON.",
+      "proposed": "Envía los datos en JSON.",
+      "result": "Envía los datos en JSON.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento inconsistente: o site usa «tú»."
+    },
+    {
+      "source": "Você pode ajustar o que quiser. A seguir, vamos abrir uma demo conceitual.",
+      "previous": "Puede ajustar lo que quiera. A continuación, abriremos una demo conceptual.",
+      "proposed": "Puedes ajustar lo que quieras. A continuación, abriremos una demo conceptual.",
+      "result": "Puedes ajustar lo que quieras. A continuación, abriremos una demo conceptual.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento inconsistente: o site usa «tú»."
+    },
+    {
+      "source": "Construa a partir dela.",
+      "previous": "Construya a partir de ella.",
+      "proposed": "Construye a partir de ella.",
+      "result": "Construye a partir de ella.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento inconsistente: o site usa «tú»."
+    },
+    {
+      "source": "Descreva a necessidade.",
+      "previous": "Describa la necesidad.",
+      "proposed": "Describe la necesidad.",
+      "result": "Describe la necesidad.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento inconsistente: o site usa «tú»."
+    },
+    {
+      "source": "Escolha um problema recorrente e fácil de observar. Descreva o caminho atual, os participantes e o resultado esperado. Use o Lab para explorar a ideia ou converse com a Catalisa para avaliar a construção.",
+      "previous": "Elija un problema recurrente y fácil de observar. Describa el recorrido actual, los participantes y el resultado esperado. Use el Lab para explorar la idea o hable con Catalisa para evaluar la construcción.",
+      "proposed": "Elige un problema recurrente y fácil de observar. Describe el recorrido actual, los participantes y el resultado esperado. Usa el Lab para explorar la idea o habla con Catalisa para evaluar la construcción.",
+      "result": "Elige un problema recurrente y fácil de observar. Describe el recorrido actual, los participantes y el resultado esperado. Usa el Lab para explorar la idea o habla con Catalisa para evaluar la construcción.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento inconsistente: o site usa «tú»."
+    },
+    {
+      "source": "Consulte a cobertura e os limites",
+      "previous": "Consulte la cobertura y los límites",
+      "proposed": "Consulta la cobertura y los límites",
+      "result": "Consulta la cobertura y los límites",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento inconsistente: o site usa «tú»."
+    },
+    {
+      "source": "Informações, ausência de dados e revisão humana têm significados diferentes. Explore uma demonstração simplificada dessa leitura.",
+      "previous": "La información, la ausencia de datos y la revisión humana tienen significados distintos. Explore una demostración simplificada de esta lectura.",
+      "proposed": "La información, la ausencia de datos y la revisión humana tienen significados distintos. Explora una demostración simplificada de esta lectura.",
+      "result": "La información, la ausencia de datos y la revisión humana tienen significados distintos. Explora una demostración simplificada de esta lectura.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento inconsistente: o site usa «tú»."
+    },
+    {
+      "source": "Aguarde um pouco antes de continuar.",
+      "previous": "Espere un momento antes de continuar.",
+      "proposed": "Espera un momento antes de continuar.",
+      "result": "Espera un momento antes de continuar.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento inconsistente: o site usa «tú»."
+    },
+    {
+      "source": "\"Building Blocks\": componentes modulares e composíveis disponibilizados pela Plataforma para construção de Workflows e Agentes IA.",
+      "previous": "\"Building Blocks\": componentes modulares y combinables que la Plataforma pone a disposición para construir Workflows y Agentes de IA.",
+      "proposed": "«Building Blocks»: componentes modulares y combinables que la Plataforma pone a disposición para construir Workflows y Agentes de IA.",
+      "result": "«Building Blocks»: componentes modulares y combinables que la Plataforma pone a disposición para construir Workflows y Agentes de IA.",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "Aspas consistentes com as demais definições dos Termos («»)."
+    },
+    {
+      "source": "A Catalisa disponibiliza ao Usuário acesso a uma plataforma SaaS de automação de comunicação via WhatsApp com inteligência artificial, incluindo Building Blocks, Workflows visuais, Agentes IA e integração com APIs externas.\n\nO escopo dos serviços disponíveis ao Usuário é determinado pelo Plano contratado e pela documentação técnica vigente, disponível em nosso site.\n\nA Catalisa poderá disponibilizar funcionalidades em versão beta ou experimental. Essas funcionalidades são fornecidas \"como estão\", sem garantias de disponibilidade ou estabilidade, e poderão ser descontinuadas a qualquer momento sem aviso prévio.\n\nO uso da Plataforma está condicionado à aceitação integral destes Termos e da Política de Privacidade.",
+      "previous": "Catalisa pone a disposición del Usuario el acceso a una plataforma SaaS de automatización de comunicación vía WhatsApp con inteligencia artificial, que incluye Building Blocks, Workflows visuales, Agentes IA e integración con API externas.\n\nEl alcance de los servicios disponibles para el Usuario lo determinan el Plan contratado y la documentación técnica vigente, disponible en nuestro sitio web.\n\nCatalisa podrá ofrecer funcionalidades en versión beta o experimental. Dichas funcionalidades se proporcionan «tal cual», sin garantías de disponibilidad ni de estabilidad, y podrán discontinuarse en cualquier momento sin previo aviso.\n\nEl uso de la Plataforma está condicionado a la aceptación íntegra de estos Términos y de la Política de Privacidad.",
+      "proposed": "Catalisa pone a disposición del Usuario el acceso a una plataforma SaaS de automatización de comunicación vía WhatsApp con inteligencia artificial, que incluye Building Blocks, Workflows visuales, Agentes de IA e integración con API externas.\n\nEl alcance de los servicios disponibles para el Usuario lo determinan el Plan contratado y la documentación técnica vigente, disponible en nuestro sitio web.\n\nCatalisa podrá ofrecer funcionalidades en versión beta o experimental. Dichas funcionalidades se proporcionan «tal cual», sin garantías de disponibilidad ni de estabilidad, y podrán discontinuarse en cualquier momento sin previo aviso.\n\nEl uso de la Plataforma está condicionado a la aceptación íntegra de estos Términos y de la Política de Privacidad.",
+      "result": "Catalisa pone a disposición del Usuario el acceso a una plataforma SaaS de automatización de comunicación vía WhatsApp con inteligencia artificial, que incluye Building Blocks, Workflows visuales, Agentes de IA e integración con API externas.\n\nEl alcance de los servicios disponibles para el Usuario lo determinan el Plan contratado y la documentación técnica vigente, disponible en nuestro sitio web.\n\nCatalisa podrá ofrecer funcionalidades en versión beta o experimental. Dichas funcionalidades se proporcionan «tal cual», sin garantías de disponibilidad ni de estabilidad, y podrán discontinuarse en cualquier momento sin previo aviso.\n\nEl uso de la Plataforma está condicionado a la aceptación íntegra de estos Términos y de la Política de Privacidad.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Terminologia consistente: «Agentes de IA» como na definição."
+    },
+    {
+      "source": "Montagem visual de interfaces do Banking Platform",
+      "previous": "Montaje visual de interfaces de Banking Platform",
+      "proposed": "Montaje visual de interfaces de la plataforma bancaria",
+      "result": "Montaje visual de interfaces de la plataforma bancaria",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "O nome genérico de produto Banking Platform deve ser traduzido como \"plataforma bancaria\"."
+    },
+    {
+      "source": "A Plataforma é fornecida \"COMO ESTÁ\" (\"AS IS\") e \"CONFORME Disponível\" (\"AS AVAILABLE\"). Na extensão máxima permitida pela legislação aplicável, a Catalisa não oferece garantias, expressas ou implícitas, incluindo, sem limitação, garantias de comercialização, adequação a um fim específico ou não violação de direitos de terceiros.\n\nSem limitar o disposto acima, a Catalisa não garante que:\n\n(a) A Plataforma atenda a todos os requisitos específicos do Usuário.\n(b) A operação da Plataforma será ininterrupta ou livre de erros.\n(c) Os resultados obtidos com o uso de Agentes IA serão precisos, completos ou adequados a qualquer finalidade.\n(d) O uso da Plataforma gerará resultados comerciais específicos.\n\nO Usuário reconhece que inteligência artificial possui limitações inerentes e que o julgamento humano deve sempre prevalecer sobre sugestões automatizadas.",
+      "previous": "La Plataforma se proporciona «TAL CUAL» («AS IS») y «SEGÚN DISPONIBILIDAD» («AS AVAILABLE»). En la máxima medida permitida por la legislación aplicable, Catalisa no ofrece garantías, expresas o implícitas, incluidas, entre otras, las garantías de comerciabilidad, idoneidad para un fin determinado o no infracción de derechos de terceros.\n\nSin perjuicio de lo anterior, Catalisa no garantiza que:\n\n(a) La Plataforma cumpla todos los requisitos específicos del Usuario.\n(b) El funcionamiento de la Plataforma sea ininterrumpido o esté libre de errores.\n(c) Los resultados obtenidos con el uso de Agentes IA sean precisos, completos o adecuados para cualquier finalidad.\n(d) El uso de la Plataforma genere resultados comerciales específicos.\n\nEl Usuario reconoce que la inteligencia artificial tiene limitaciones inherentes y que el criterio humano debe prevalecer siempre sobre las sugerencias automatizadas.",
+      "proposed": "La Plataforma se proporciona «TAL CUAL» («AS IS») y «SEGÚN DISPONIBILIDAD» («AS AVAILABLE»). En la máxima medida permitida por la legislación aplicable, Catalisa no ofrece garantías, expresas o implícitas, incluidas, entre otras, las garantías de comerciabilidad, idoneidad para un fin determinado o no infracción de derechos de terceros.\n\nSin perjuicio de lo anterior, Catalisa no garantiza que:\n\n(a) La Plataforma cumpla todos los requisitos específicos del Usuario.\n(b) El funcionamiento de la Plataforma sea ininterrumpido o esté libre de errores.\n(c) Os resultados obtenidos con el uso de Agentes de IA sean precisos, completos o adecuados para cualquier finalidad.\n(d) El uso de la Plataforma genere resultados comerciales específicos.\n\nEl Usuario reconoce que la inteligencia artificial tiene limitaciones inherentes y que el criterio humano debe prevalecer siempre sobre las sugerencias automatizadas.",
+      "result": "La Plataforma se proporciona «TAL CUAL» («AS IS») y «SEGÚN DISPONIBILIDAD» («AS AVAILABLE»). En la máxima medida permitida por la legislación aplicable, Catalisa no ofrece garantías, expresas o implícitas, incluidas, entre otras, las garantías de comerciabilidad, idoneidad para un fin determinado o no infracción de derechos de terceros.\n\nSin perjuicio de lo anterior, Catalisa no garantiza que:\n\n(a) La Plataforma cumpla todos los requisitos específicos del Usuario.\n(b) El funcionamiento de la Plataforma sea ininterrumpido o esté libre de errores.\n(c) Os resultados obtenidos con el uso de Agentes de IA sean precisos, completos o adecuados para cualquier finalidad.\n(d) El uso de la Plataforma genere resultados comerciales específicos.\n\nEl Usuario reconoce que la inteligencia artificial tiene limitaciones inherentes y que el criterio humano debe prevalecer siempre sobre las sugerencias automatizadas.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Em espanhol, \"Agentes IA\" fica mais natural como \"Agentes de IA\"."
+    },
+    {
+      "source": "Outro operador já assumiu este atendimento.",
+      "previous": "Otro operador ya ha asumido esta atención.",
+      "proposed": "Otro operador ya se ha hecho cargo de esta atención.",
+      "result": "Otro operador ya se ha hecho cargo de esta atención.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "\"Asumido esta atención\" soa como tradução literal; \"se ha hecho cargo\" é a forma natural em espanhol."
+    },
+    {
+      "source": ". A análise e o controle H01–H16 mantêm as fontes e o trabalho restante. Este preview não habilita coleta de conversas nem publicação do redesign.",
+      "previous": ". El análisis y el control H01–H16 mantienen las fuentes y el trabajo pendiente. Esta preview no habilita la recogida de conversaciones ni la publicación del rediseño.",
+      "proposed": ". El análisis y el control H01–H16 mantienen las fuentes y el trabajo pendiente. Esta vista previa no habilita la recogida de conversaciones ni la publicación del rediseño.",
+      "result": ". El análisis y el control H01–H16 mantienen las fuentes y el trabajo pendiente. Esta vista previa no habilita la recogida de conversaciones ni la publicación del rediseño.",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "O anglicismo \"preview\" foi trocado pelo termo em espanhol \"vista previa\"."
+    },
+    {
+      "source": "Decline",
+      "previous": "Decline",
+      "proposed": "Rechazar",
+      "result": "Rechazar",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "Texto de interface deixado em inglês; botão de recusa de consentimento precisa ser traduzido."
+    },
+    {
+      "source": "● Movimentável",
+      "previous": "● Movible",
+      "proposed": "● Disponible para transferencias",
+      "result": "● Disponible para transferencias",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Movimentável' refere-se ao saldo disponível para transferências; 'Movible' é tradução literal e incorreta."
+    },
+    {
+      "source": "CATALISA / CREDIT PLATFORM",
+      "previous": "CATALISA / CREDIT PLATFORM",
+      "proposed": "CATALISA / PLATAFORMA DE CRÉDITO",
+      "result": "CATALISA / PLATAFORMA DE CRÉDITO",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome genérico de produto (Credit Platform) deve ser traduzido de forma consistente."
+    },
+    {
+      "source": "Decision: políticas versionadas e decisões rastreáveis | Catalisa",
+      "previous": "Decision: políticas versionadas y decisiones trazables | Catalisa",
+      "proposed": "Decisión: políticas versionadas y decisiones trazables | Catalisa",
+      "result": "Decisión: políticas versionadas y decisiones trazables | Catalisa",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome genérico de produto 'Decision' deve ser traduzido, coerente com 'CATALISA / DECISIÓN'."
+    },
+    {
+      "source": "\"Operador\": pessoa natural ou jurídica que realiza o tratamento de Dados Pessoais em nome do Controlador.",
+      "previous": "«Encargado»: persona física o jurídica que realiza el tratamiento de Datos Personales en nombre del Responsable.",
+      "proposed": "«Operador»: persona física o jurídica que realiza el tratamiento de Datos Personales en nombre del Controlador.",
+      "result": "«Operador»: persona física o jurídica que realiza el tratamiento de Datos Personales en nombre del Controlador.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Mantém a terminologia da LGPD (operador/controlador) e evita substituí-la pelos equivalentes do RGPD (encargado/responsable)."
+    },
+    {
+      "source": "Correção de dados: solicitar a correção de dados incompletos, inexatos ou desatualizados.",
+      "previous": "Rectificación de datos: solicitar la rectificación de datos incompletos, inexactos o desactualizados.",
+      "proposed": "Corrección de datos: solicitar la corrección de datos incompletos, inexactos o desactualizados.",
+      "result": "Corrección de datos: solicitar la corrección de datos incompletos, inexactos o desactualizados.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Preserva o termo do direito previsto na LGPD (correção) e evita importar o termo 'rectificación' do RGPD."
+    },
+    {
+      "source": "Papel sobre profundo",
+      "previous": "Papel sobre fondo profundo",
+      "proposed": "Papel sobre profundo",
+      "result": "Papel sobre profundo",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "'Profundo' é o nome de uma cor da paleta; o acréscimo de 'fondo' altera o rótulo e quebra o paralelismo com 'Amarillo sobre papel'."
+    },
+    {
+      "source": "O contexto continua junto.",
+      "previous": "El contexto se mantiene.",
+      "proposed": "El contexto sigue acompañando.",
+      "result": "El contexto sigue acompañando.",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "'Se mantiene' perde a ideia de que o contexto acompanha o caso ('continua junto')."
+    },
+    {
+      "source": "Esta Política de Privacidade descreve como a Catalisa coleta, utiliza, armazena e protege seus dados pessoais.\n\nControlador de dados:\nCatalisa Tecnologia e Dados LTDA\nCNPJ: 49.646.439/0001-85\nEndereço: Rodovia Raposo Tavares, 7389 - São Paulo - SP - Brasil - 05577-902\n\nEncarregado de Proteção de Dados (DPO):\nE-mail: privacidade@catalisa.io\nCanal de atendimento: privacidade@catalisa.io",
+      "previous": "Esta Política de Privacidad describe cómo Catalisa recoge, utiliza, almacena y protege tus datos personales.\n\nResponsable del tratamiento:\nCatalisa Tecnologia e Dados LTDA\nCNPJ: 49.646.439/0001-85\nDirección: Rodovia Raposo Tavares, 7389 - São Paulo - SP - Brasil - 05577-902\n\nEncargado de Protección de Datos (DPO):\nCorreo electrónico: privacidad@catalisa.io\nCanal de atención: privacidad@catalisa.io",
+      "proposed": "Esta Política de Privacidad describe cómo Catalisa recoge, utiliza, almacena y protege sus datos personales.\n\nResponsable del tratamiento:\nCatalisa Tecnologia e Dados LTDA\nCNPJ: 49.646.439/0001-85\nDirección: Rodovia Raposo Tavares, 7389 - São Paulo - SP - Brasil - 05577-902\n\nEncargado de Protección de Datos (DPO):\nCorreo electrónico: privacidade@catalisa.io\nCanal de atención: privacidade@catalisa.io",
+      "result": "Esta Política de Privacidad describe cómo Catalisa recoge, utiliza, almacena y protege sus datos personales.\n\nResponsable del tratamiento:\nCatalisa Tecnologia e Dados LTDA\nCNPJ: 49.646.439/0001-85\nDirección: Rodovia Raposo Tavares, 7389 - São Paulo - SP - Brasil - 05577-902\n\nEncargado de Protección de Datos (DPO):\nCorreo electrónico: privacidade@catalisa.io\nCanal de atención: privacidade@catalisa.io",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "E-mail alterado indevidamente (privacidade@catalisa.io deve ser preservado); tratamento padronizado em usted."
+    },
+    {
+      "source": "Invalid handoff channels",
+      "previous": "Canales de traspaso no válidos",
+      "proposed": "Canales de derivación no válidos",
+      "result": "Canales de derivación no válidos",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Terminologia de handoff inconsistente; padronizado como derivación."
+    },
+    {
+      "source": "Invalid handoff origin",
+      "previous": "Origen de traspaso no válido",
+      "proposed": "Origen de derivación no válido",
+      "result": "Origen de derivación no válido",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Terminologia de handoff inconsistente; padronizado como derivación."
+    },
+    {
+      "source": "Biometrics: identidade, verificação e evidência | Catalisa",
+      "previous": "Biometrics: identidad, verificación y evidencia | Catalisa",
+      "proposed": "Biometría: identidad, verificación y evidencia | Catalisa",
+      "result": "Biometría: identidad, verificación y evidencia | Catalisa",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome genérico de produto Biometrics deve ser traduzido."
+    },
+    {
+      "source": "desktop do Banking Platform",
+      "previous": "escritorio de Banking Platform",
+      "proposed": "escritorio de la plataforma bancaria",
+      "result": "escritorio de la plataforma bancaria",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome genérico de produto Banking Platform deve ser traduzido."
+    },
+    {
+      "source": "Montagem visual das interfaces de Credit Platform",
+      "previous": "Composición visual de las interfaces de Credit Platform",
+      "proposed": "Composición visual de las interfaces de la plataforma de crédito",
+      "result": "Composición visual de las interfaces de la plataforma de crédito",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome genérico de produto Credit Platform deve ser traduzido."
+    },
+    {
+      "source": "Explore Credit Platform ↗",
+      "previous": "Explora Credit Platform ↗",
+      "proposed": "Explore la plataforma de crédito ↗",
+      "result": "Explore la plataforma de crédito ↗",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Nome de produto traduzido e tratamento padronizado em usted."
+    },
+    {
+      "source": "Ampliar aplicativo Banking no aparelho",
+      "previous": "Ampliar la aplicación Banking en el dispositivo",
+      "proposed": "Ampliar la aplicación bancaria en el dispositivo",
+      "result": "Ampliar la aplicación bancaria en el dispositivo",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome genérico de produto Banking deve ser traduzido."
+    },
+    {
+      "source": "Complementações solicitadas e tempo até um próximo passo claro.",
+      "previous": "Documentación adicional solicitada y tiempo hasta un siguiente paso claro.",
+      "proposed": "Complementos solicitados y tiempo hasta un siguiente paso claro.",
+      "result": "Complementos solicitados y tiempo hasta un siguiente paso claro.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "«Documentación adicional» restringe o sentido original de complementações."
+    },
+    {
+      "source": "Tire a redigitação do caminho.",
+      "previous": "Elimina la redigitación del camino.",
+      "proposed": "Evite tener que volver a introducir los datos.",
+      "result": "Evite tener que volver a introducir los datos.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "«Redigitación» é decalque inexistente; tratamento em usted."
+    },
+    {
+      "source": "Modernizar sem recomeçar o banco. | Catalisa",
+      "previous": "Modernizar sin volver a empezar el banco. | Catalisa",
+      "proposed": "Modernizar el banco sin empezar de cero. | Catalisa",
+      "result": "Modernizar el banco sin empezar de cero. | Catalisa",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Construção literal e pouco natural."
+    },
+    {
+      "source": "Para os fins destes Termos, consideram-se as seguintes definições:",
+      "previous": "A efectos de estas Condiciones, se consideran las siguientes definiciones:",
+      "proposed": "A efectos de estos Términos, se consideran las siguientes definiciones:",
+      "result": "A efectos de estos Términos, se consideran las siguientes definiciones:",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Inconsistência terminológica: o restante dos termos usa «Términos»."
+    },
+    {
+      "source": "Configuração / Conferir a jornada",
+      "previous": "Configuración / Revisar el recorrido",
+      "proposed": "Configuración / Comprobar el recorrido",
+      "result": "Configuración / Comprobar el recorrido",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência com «Ampliar Configuración / Comprobar el recorrido»."
+    },
+    {
+      "source": "Vamos criar seu produto ↗",
+      "previous": "Creemos tu producto ↗",
+      "proposed": "Creemos su producto ↗",
+      "result": "Creemos su producto ↗",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento padronizado em usted."
+    },
+    {
+      "source": "Seu aplicativo",
+      "previous": "Tu aplicación",
+      "proposed": "Su aplicación",
+      "result": "Su aplicación",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento padronizado em usted."
+    },
+    {
+      "source": "Revise a ideia antes de continuar.",
+      "previous": "Revisa la idea antes de continuar.",
+      "proposed": "Revise la idea antes de continuar.",
+      "result": "Revise la idea antes de continuar.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento padronizado em usted."
+    },
+    {
+      "source": "Experimente a separação entre",
+      "previous": "Prueba la separación entre",
+      "proposed": "Pruebe la separación entre",
+      "result": "Pruebe la separación entre",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento padronizado em usted."
+    },
+    {
+      "source": "Explore a arquitetura",
+      "previous": "Explora la arquitectura",
+      "proposed": "Explore la arquitectura",
+      "result": "Explore la arquitectura",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento padronizado em usted."
+    },
+    {
+      "source": "Confirme a presença de quem está do outro lado.",
+      "previous": "Confirma la presencia de quien está al otro lado.",
+      "proposed": "Confirme la presencia de quien está al otro lado.",
+      "result": "Confirme la presencia de quien está al otro lado.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento padronizado em usted."
+    },
+    {
+      "source": "Confira.",
+      "previous": "Compruébalo.",
+      "proposed": "Compruébelo.",
+      "result": "Compruébelo.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento padronizado em usted."
+    },
+    {
+      "source": "Organize participantes, ordem de assinatura e acompanhamento dos documentos da operação.",
+      "previous": "Organiza participantes, orden de firma y seguimiento de los documentos de la operación.",
+      "proposed": "Organice participantes, orden de firma y seguimiento de los documentos de la operación.",
+      "result": "Organice participantes, orden de firma y seguimiento de los documentos de la operación.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento padronizado em usted."
+    },
+    {
+      "source": "Muitas tentativas. Aguarde alguns minutos antes de tentar novamente.",
+      "previous": "Demasiados intentos. Espera unos minutos antes de volver a intentarlo.",
+      "proposed": "Demasiados intentos. Espere unos minutos antes de volver a intentarlo.",
+      "result": "Demasiados intentos. Espere unos minutos antes de volver a intentarlo.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento padronizado em usted."
+    },
+    {
+      "source": "Não foi possível preparar o atendimento. Sua conversa está salva.",
+      "previous": "No se ha podido preparar la atención. Tu conversación está guardada.",
+      "proposed": "No se ha podido preparar la atención. Su conversación está guardada.",
+      "result": "No se ha podido preparar la atención. Su conversación está guardada.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento padronizado em usted."
+    },
+    {
+      "source": "Escolha uma responsabilidade.",
+      "previous": "Elige una responsabilidad.",
+      "proposed": "Elija una responsabilidad.",
+      "result": "Elija una responsabilidad.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento padronizado em usted."
+    },
+    {
+      "source": "Posso consultar a disponibilidade para você escolher um novo horário.",
+      "previous": "Puedo consultar la disponibilidad para que elijas un nuevo horario.",
+      "proposed": "Puedo consultar la disponibilidad para que elija un nuevo horario.",
+      "result": "Puedo consultar la disponibilidad para que elija un nuevo horario.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento padronizado em usted."
+    },
+    {
+      "source": "Converse com a Catalisa sobre sua operação, explore uma proposta de composição e escolha como continuar o atendimento.",
+      "previous": "Habla con Catalisa sobre tu operación, explora una propuesta de composición y elige cómo continuar la atención.",
+      "proposed": "Hable con Catalisa sobre su operación, explore una propuesta de composición y elija cómo continuar la atención.",
+      "result": "Hable con Catalisa sobre su operación, explore una propuesta de composición y elija cómo continuar la atención.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento padronizado em usted."
+    },
+    {
+      "source": "Escreva livremente e use ↗. Ou clique numa sugestão para responder.",
+      "previous": "Escribe libremente y usa ↗. O haz clic en una sugerencia para responder.",
+      "proposed": "Escriba libremente y use ↗. O haga clic en una sugerencia para responder.",
+      "result": "Escriba libremente y use ↗. O haga clic en una sugerencia para responder.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento padronizado em usted."
+    },
+    {
+      "source": "Descreva o produto que você imagina",
+      "previous": "Describe el producto que imaginas",
+      "proposed": "Describa el producto que imagina",
+      "result": "Describa el producto que imagina",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento padronizado em usted."
+    },
+    {
+      "source": "A conexão demorou mais que o esperado. Sua conversa está salva; consulte novamente antes de tentar outra vez.",
+      "previous": "La conexión ha tardado más de lo esperado. Tu conversación está guardada; consúltala de nuevo antes de volver a intentarlo.",
+      "proposed": "La conexión ha tardado más de lo esperado. Su conversación está guardada; consúltela de nuevo antes de volver a intentarlo.",
+      "result": "La conexión ha tardado más de lo esperado. Su conversación está guardada; consúltela de nuevo antes de volver a intentarlo.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento padronizado em usted."
+    },
+    {
+      "source": "Prova de vida e match facial com motor próprio, no contrato dos provedores certificados. Consulte aplicações, estágio e documentação.",
+      "previous": "Prueba de vida y coincidencia facial con motor propio, en el contrato de los proveedores certificados. Consulta aplicaciones, fase y documentación.",
+      "proposed": "Prueba de vida y coincidencia facial con motor propio, en el contrato de los proveedores certificados. Consulte aplicaciones, fase y documentación.",
+      "result": "Prueba de vida y coincidencia facial con motor propio, en el contrato de los proveedores certificados. Consulte aplicaciones, fase y documentación.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento padronizado em usted."
+    },
+    {
+      "source": "A geração de conceitos utiliza o provedor de inteligência artificial configurado para o serviço, entre os fornecedores identificados nesta política. Esse processamento pode ocorrer fora do Brasil. Enviamos o briefing e o contexto necessários para gerar ou ajustar o conceito; seu nome, e-mail e telefone não são incluídos intencionalmente nesse pedido. Não inclua informações pessoais sensíveis, credenciais ou segredos no texto livre.\n\nOs registros mantidos pelo provedor de IA estão sujeitos aos seus termos, configurações e regras de retenção. Os prazos da conversa neste site não significam que todas as cópias de terceiros sejam excluídas ao mesmo tempo. Para esclarecer o tratamento aplicável à sua solicitação, fale com o canal de privacidade indicado nesta política.",
+      "previous": "La generación de conceptos utiliza el proveedor de inteligencia artificial configurado para el servicio, entre los proveedores identificados en esta política. Este tratamiento puede realizarse fuera de Brasil. Enviamos el briefing y el contexto necesarios para generar o ajustar el concepto; tu nombre, correo electrónico y teléfono no se incluyen intencionadamente en esa solicitud. No incluyas información personal sensible, credenciales ni secretos en el texto libre.\n\nLos registros que conserva el proveedor de IA están sujetos a sus condiciones, configuraciones y normas de retención. Los plazos de la conversación en este sitio no implican que todas las copias de terceros se eliminen al mismo tiempo. Para aclarar el tratamiento aplicable a tu solicitud, ponte en contacto con el canal de privacidad indicado en esta política.",
+      "proposed": "La generación de conceptos utiliza el proveedor de inteligencia artificial configurado para el servicio, entre los proveedores identificados en esta política. Este tratamiento puede realizarse fuera de Brasil. Enviamos el briefing y el contexto necesarios para generar o ajustar el concepto; su nombre, correo electrónico y teléfono no se incluyen intencionadamente en esa solicitud. No incluya información personal sensible, credenciales ni secretos en el texto libre.\n\nLos registros que conserva el proveedor de IA están sujetos a sus condiciones, configuraciones y normas de retención. Los plazos de la conversación en este sitio no implican que todas las copias de terceros se eliminen al mismo tiempo. Para aclarar el tratamiento aplicable a su solicitud, póngase en contacto con el canal de privacidad indicado en esta política.",
+      "result": "La generación de conceptos utiliza el proveedor de inteligencia artificial configurado para el servicio, entre los proveedores identificados en esta política. Este tratamiento puede realizarse fuera de Brasil. Enviamos el briefing y el contexto necesarios para generar o ajustar el concepto; su nombre, correo electrónico y teléfono no se incluyen intencionadamente en esa solicitud. No incluya información personal sensible, credenciales ni secretos en el texto libre.\n\nLos registros que conserva el proveedor de IA están sujetos a sus condiciones, configuraciones y normas de retención. Los plazos de la conversación en este sitio no implican que todas las copias de terceros se eliminen al mismo tiempo. Para aclarar el tratamiento aplicable a su solicitud, póngase en contacto con el canal de privacidad indicado en esta política.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento padronizado em usted."
+    },
+    {
+      "source": "Seu espaço de trabalho",
+      "previous": "Tu espacio de trabajo",
+      "proposed": "Su espacio de trabajo",
+      "result": "Su espacio de trabajo",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento padronizado em usted."
+    },
+    {
+      "source": "Seu nome e pelo menos um e-mail ou telefone vinculam o conceito à sua conversa. A ideia será processada por IA; nenhum envio ou atendimento começa sem sua confirmação.",
+      "previous": "Tu nombre y al menos un correo electrónico o teléfono vinculan el concepto a tu conversación. La idea se procesará mediante IA; ningún envío ni atención comienza sin tu confirmación.",
+      "proposed": "Su nombre y al menos un correo electrónico o teléfono vinculan el concepto a su conversación. La idea se procesará mediante IA; ningún envío ni atención comienza sin su confirmación.",
+      "result": "Su nombre y al menos un correo electrónico o teléfono vinculan el concepto a su conversación. La idea se procesará mediante IA; ningún envío ni atención comienza sin su confirmación.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento padronizado em usted."
+    },
+    {
+      "source": "Descreva o trabalho e prepare uma configuração para revisão com apoio do assistente.",
+      "previous": "Describe el trabajo y prepara una configuración para revisión con la ayuda del asistente.",
+      "proposed": "Describa el trabajo y prepare una configuración para revisión con la ayuda del asistente.",
+      "result": "Describa el trabajo y prepare una configuración para revisión con la ayuda del asistente.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento padronizado em usted."
+    },
+    {
+      "source": "Conte o contexto que ajudaria uma pessoa da Catalisa a chegar mais preparada à conversa.",
+      "previous": "Cuéntanos el contexto que ayudaría a una persona de Catalisa a llegar mejor preparada a la conversación.",
+      "proposed": "Cuéntenos el contexto que ayudaría a una persona de Catalisa a llegar mejor preparada a la conversación.",
+      "result": "Cuéntenos el contexto que ayudaría a una persona de Catalisa a llegar mejor preparada a la conversación.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento padronizado em usted."
+    },
+    {
+      "source": "as suas peças.",
+      "previous": "tus piezas.",
+      "proposed": "sus piezas.",
+      "result": "sus piezas.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento padronizado em usted."
+    },
+    {
+      "source": "Explore a composição de atendimento jurídico pelo WhatsApp, com triagem, organização do contexto e análise sob responsabilidade da equipe.",
+      "previous": "Explora la composición de atención jurídica por WhatsApp, con cribado, organización del contexto y análisis bajo la responsabilidad del equipo.",
+      "proposed": "Explore la composición de atención jurídica por WhatsApp, con cribado, organización del contexto y análisis bajo la responsabilidad del equipo.",
+      "result": "Explore la composición de atención jurídica por WhatsApp, con cribado, organización del contexto y análisis bajo la responsabilidad del equipo.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento padronizado em usted."
+    },
+    {
+      "source": "Entre com a conta da equipe Catalisa.",
+      "previous": "Inicia sesión con la cuenta del equipo de Catalisa.",
+      "proposed": "Inicie sesión con la cuenta del equipo de Catalisa.",
+      "result": "Inicie sesión con la cuenta del equipo de Catalisa.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento padronizado em usted."
+    },
+    {
+      "source": "Conte a ideia. Explore a jornada.",
+      "previous": "Cuenta la idea. Explora el recorrido.",
+      "proposed": "Cuente la idea. Explore el recorrido.",
+      "result": "Cuente la idea. Explore el recorrido.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento padronizado em usted."
+    },
+    {
+      "source": "Acompanhe a continuidade",
+      "previous": "Sigue la continuidad",
+      "proposed": "Siga la continuidad",
+      "result": "Siga la continuidad",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento padronizado em usted."
+    },
+    {
+      "source": "Abra a conversa pelo site da Catalisa.",
+      "previous": "Abre la conversación desde el sitio web de Catalisa.",
+      "proposed": "Abra la conversación desde el sitio web de Catalisa.",
+      "result": "Abra la conversación desde el sitio web de Catalisa.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento padronizado em usted."
+    },
+    {
+      "source": "Quando a espera é aceitável, preserve o pedido, informe a pendência e defina como retomar.",
+      "previous": "Cuando la espera es aceptable, conserva la solicitud, informa de lo pendiente y define cómo retomarla.",
+      "proposed": "Cuando la espera es aceptable, conserve la solicitud, informe de lo pendiente y defina cómo retomarla.",
+      "result": "Cuando la espera es aceptable, conserve la solicitud, informe de lo pendiente y defina cómo retomarla.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento padronizado em usted."
+    },
+    {
+      "source": "Uma reserva muda a leitura da conta. Explicar o disponível ajuda o titular a decidir o próximo passo e a equipe a responder com clareza.",
+      "previous": "Una retención cambia la lectura de la cuenta. Explicar el saldo disponible ayuda al titular a decidir el siguiente paso y al equipo a responder con claridad.",
+      "proposed": "Una reserva cambia la lectura de la cuenta. Explicar el saldo disponible ayuda al titular a decidir el siguiente paso y al equipo a responder con claridad.",
+      "result": "Una reserva cambia la lectura de la cuenta. Explicar el saldo disponible ayuda al titular a decidir el siguiente paso y al equipo a responder con claridad.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Terminologia inconsistente: 'reserva' deve ser mantida como 'reserva', como nos demais textos."
+    },
+    {
+      "source": "Quanto está reservado.",
+      "previous": "Cuánto está retenido.",
+      "proposed": "Cuánto está reservado.",
+      "result": "Cuánto está reservado.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Consistência com 'reservado'/'reserva' usada em outros pares."
+    },
+    {
+      "source": "A reserva estruturada de R$ 200,00 reduz o que pode ser movimentado para R$ 100,00.",
+      "previous": "La reserva estructurada de R$ 200,00 reduce lo que se puede mover a R$ 100,00.",
+      "proposed": "La reserva estructurada de R$ 200,00 reduce el saldo disponible para transferencias a R$ 100,00.",
+      "result": "La reserva estructurada de R$ 200,00 reduce el saldo disponible para transferencias a R$ 100,00.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Pode ser movimentado' é saldo disponível para transferências, não uma ação genérica de 'mover'."
+    },
+    {
+      "source": "Esteira",
+      "previous": "Circuito de procesamiento",
+      "proposed": "Flujo de análisis",
+      "result": "Flujo de análisis",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência com a tradução de 'esteira' como 'flujo' nos outros textos."
+    },
+    {
+      "source": "Decision Platform: esteira de análise e decisão | Catalisa",
+      "previous": "Decision Platform: flujo de análisis y decisión | Catalisa",
+      "proposed": "Plataforma de decisión: flujo de análisis y decisión | Catalisa",
+      "result": "Plataforma de decisión: flujo de análisis y decisión | Catalisa",
+      "outcome": "skipped-identifier",
+      "why": "Proposal removed an existing protected technical or company name",
+      "reviewReason": "Nome genérico de produto (Decision Platform) deve ser traduzido."
+    },
+    {
+      "source": "Explore Decision",
+      "previous": "Explora Decision",
+      "proposed": "Explora la plataforma de decisión",
+      "result": "Explora la plataforma de decisión",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome genérico de produto Decision deve ser traduzido, com rótulo consistente."
+    },
+    {
+      "source": "Crie uma experiência financeira própria ou modernize a atual. Explore marca, canais e regras de operação com Banking, conforme o escopo e as integrações validadas.",
+      "previous": "Crea una experiencia financiera propia o moderniza la actual. Explora marca, canales y reglas de operación con Banking, según el alcance y las integraciones validadas.",
+      "proposed": "Crea una experiencia financiera propia o moderniza la actual. Explora marca, canales y reglas de operación con la plataforma bancaria, según el alcance y las integraciones validadas.",
+      "result": "Crea una experiencia financiera propia o moderniza la actual. Explora marca, canales y reglas de operación con la plataforma bancaria, según el alcance y las integraciones validadas.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome genérico de produto Banking deve ser traduzido de forma consistente."
+    },
+    {
+      "source": "Interface de referência do console Banking, com pessoas, papéis e estados de acesso.",
+      "previous": "Interfaz de referencia de la consola Banking, con personas, roles y estados de acceso.",
+      "proposed": "Interfaz de referencia de la consola de la plataforma bancaria, con personas, roles y estados de acceso.",
+      "result": "Interfaz de referencia de la consola de la plataforma bancaria, con personas, roles y estados de acceso.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Tradução do nome genérico de produto e de 'console' para 'consola'."
+    },
+    {
+      "source": "Console implementado · staging · guia de 29/09/2026",
+      "previous": "Console implementado · staging · guía del 29/09/2026",
+      "proposed": "Consola implementada · staging · guía del 29/09/2026",
+      "result": "Consola implementada · staging · guía del 29/09/2026",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "'Console' deve ser traduzido para 'consola' (feminino)."
+    },
+    {
+      "source": "Console / Pessoas e acessos ↗",
+      "previous": "Console / Personas y accesos ↗",
+      "proposed": "Consola / Personas y accesos ↗",
+      "result": "Consola / Personas y accesos ↗",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência: 'console' traduzido para 'consola'."
+    },
+    {
+      "source": "O que exige uma pessoa?",
+      "previous": "¿Qué requiere a una persona?",
+      "proposed": "¿Qué requiere la intervención de una persona?",
+      "result": "¿Qué requiere la intervención de una persona?",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Tradução literal ambígua; o sentido é o que exige atuação humana."
+    },
+    {
+      "source": "um papel e um estágio.",
+      "previous": "un papel y una fase.",
+      "proposed": "un rol y una fase.",
+      "result": "un rol y una fase.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Consistência terminológica: 'papel' traduzido como 'rol' nos demais textos."
+    },
+    {
+      "source": "O guia apresenta a antecipação de recebíveis como pacote conectado à camada comum.",
+      "previous": "La guía presenta el anticipo de cobros como un paquete conectado a la capa común.",
+      "proposed": "La guía presenta el anticipo de cuentas por cobrar como un paquete conectado a la capa común.",
+      "result": "La guía presenta el anticipo de cuentas por cobrar como un paquete conectado a la capa común.",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "'Recebíveis' corresponde a 'cuentas por cobrar', não a 'cobros'."
+    },
+    {
+      "source": "Em caso de incidente de segurança que possa acarretar risco ou dano relevante aos titulares de dados pessoais, a Catalisa adotará as seguintes medidas:\n\n(a) Notificação à Autoridade Nacional de Proteção de Dados (ANPD) em até 72 (setenta e duas) horas após a confirmação do incidente, conforme Art. 48 da LGPD.\n\n(b) Comunicação ao titular dos dados afetados, em prazo razoável, contendo: descrição da natureza dos dados afetados, informações sobre os riscos, medidas adotadas para mitigar os efeitos e orientações ao titular.\n\n(c) Registro interno do incidente com documentação completa: natureza, dados afetados, titulares impactados, medidas técnicas adotadas e resultado das ações de contenção.\n\n(d) Notificação ao Usuário (quando Operadora) para que este tome as providências necessárias junto a seus clientes.",
+      "previous": "En caso de incidente de seguridad que pueda acarrear un riesgo o daño relevante para los titulares de datos personales, Catalisa adoptará las siguientes medidas:\n\n(a) Notificación a la Autoridade Nacional de Proteção de Dados (ANPD) en un plazo máximo de 72 (setenta y dos) horas tras la confirmación del incidente, conforme al Art. 48 de la LGPD.\n\n(b) Comunicación a los titulares de los datos afectados, en un plazo razonable, que incluya: descripción de la naturaleza de los datos afectados, información sobre los riesgos, medidas adoptadas para mitigar los efectos y orientaciones al titular.\n\n(c) Registro interno del incidente con documentación completa: naturaleza, datos afectados, titulares afectados, medidas técnicas adoptadas y resultado de las acciones de contención.\n\n(d) Notificación al Usuario (cuando actúe como Operador) para que adopte las medidas necesarias ante sus clientes.",
+      "proposed": "En caso de incidente de seguridad que pueda acarrear un riesgo o daño relevante para los titulares de datos personales, Catalisa adoptará las siguientes medidas:\n\n(a) Notificación a la Autoridade Nacional de Proteção de Dados (ANPD) en un plazo máximo de 72 (setenta y dos) horas tras la confirmación del incidente, conforme al Art. 48 de la LGPD.\n\n(b) Comunicación a los titulares de los datos afectados, en un plazo razonable, que incluya: descripción de la naturaleza de los datos afectados, información sobre los riesgos, medidas adoptadas para mitigar los efectos y orientaciones al titular.\n\n(c) Registro interno del incidente con documentación completa: naturaleza, datos afectados, titulares afectados, medidas técnicas adoptadas y resultado de las acciones de contención.\n\n(d) Notificación al Usuario (cuando Catalisa actúe como Operadora) para que este adopte las medidas necesarias ante sus clientes.",
+      "result": "En caso de incidente de seguridad que pueda acarrear un riesgo o daño relevante para los titulares de datos personales, Catalisa adoptará las siguientes medidas:\n\n(a) Notificación a la Autoridade Nacional de Proteção de Dados (ANPD) en un plazo máximo de 72 (setenta y dos) horas tras la confirmación del incidente, conforme al Art. 48 de la LGPD.\n\n(b) Comunicación a los titulares de los datos afectados, en un plazo razonable, que incluya: descripción de la naturaleza de los datos afectados, información sobre los riesgos, medidas adoptadas para mitigar los efectos y orientaciones al titular.\n\n(c) Registro interno del incidente con documentación completa: naturaleza, datos afectados, titulares afectados, medidas técnicas adoptadas y resultado de las acciones de contención.\n\n(d) Notificación al Usuario (cuando Catalisa actúe como Operadora) para que este adopte las medidas necesarias ante sus clientes.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Erro de sentido: 'quando Operadora' refere-se à Catalisa, não ao Usuário."
+    },
+    {
+      "source": "Atendimento por WhatsApp que faz a triagem pela área certa, responde com o material do escritório e marca a consulta na agenda. O acervo da casa dá contexto à conversa e ao trabalho.",
+      "previous": "Atención por WhatsApp que deriva cada consulta al área adecuada, responde con el material del despacho y programa la cita en la agenda. El archivo de la casa aporta contexto a la conversación y al trabajo.",
+      "proposed": "Atención por WhatsApp que deriva cada consulta al área adecuada, responde con el material del despacho y programa la cita en la agenda. El acervo del despacho aporta contexto a la conversación y al trabajo.",
+      "result": "Atención por WhatsApp que deriva cada consulta al área adecuada, responde con el material del despacho y programa la cita en la agenda. El acervo del despacho aporta contexto a la conversación y al trabajo.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Acervo da casa' traduzido literalmente como 'archivo de la casa'; soa estranho."
+    },
+    {
+      "source": "quando funciona inteiro.",
+      "previous": "cuando funciona completo.",
+      "proposed": "cuando funciona como un todo.",
+      "result": "cuando funciona como un todo.",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "'Funciona completo' é construção pouco natural em espanhol."
+    },
+    {
+      "source": "Encontre a equipe no canal em que ela trabalha.",
+      "previous": "Encuentra al equipo en el canal en el que trabaja.",
+      "proposed": "Encuentre al equipo en el canal en el que trabaja.",
+      "result": "Encuentre al equipo en el canal en el que trabaja.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformização do tratamento formal (usted), predominante no site B2B."
+    },
+    {
+      "source": "Encontre o próximo passo",
+      "previous": "Encuentra el siguiente paso",
+      "proposed": "Encuentre el siguiente paso",
+      "result": "Encuentre el siguiente paso",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformização do tratamento formal (usted)."
+    },
+    {
+      "source": "Reúna dados, documentos e poderes de representação para apoiar assinaturas e autorizações.",
+      "previous": "Reúne datos, documentos y poderes de representación para respaldar firmas y autorizaciones.",
+      "proposed": "Reúna datos, documentos y poderes de representación para respaldar firmas y autorizaciones.",
+      "result": "Reúna datos, documentos y poderes de representación para respaldar firmas y autorizaciones.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformização do tratamento formal (usted)."
+    },
+    {
+      "source": "Experimente / Dados de exemplo",
+      "previous": "Pruébalo / Datos de ejemplo",
+      "proposed": "Pruébelo / Datos de ejemplo",
+      "result": "Pruébelo / Datos de ejemplo",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformização do tratamento formal (usted)."
+    },
+    {
+      "source": "Nenhuma capacidade encontrada. Tente outro termo ou limpe os filtros.",
+      "previous": "No se ha encontrado ninguna capacidad. Prueba con otro término o borra los filtros.",
+      "proposed": "No se ha encontrado ninguna capacidad. Pruebe con otro término o borre los filtros.",
+      "result": "No se ha encontrado ninguna capacidad. Pruebe con otro término o borre los filtros.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformização do tratamento formal (usted)."
+    },
+    {
+      "source": "Selecione ferramentas e configure os controles aplicáveis. Dar um nome a uma ação não deve significar acesso irrestrito.",
+      "previous": "Selecciona herramientas y configura los controles aplicables. Dar nombre a una acción no debe implicar un acceso ilimitado.",
+      "proposed": "Seleccione herramientas y configure los controles aplicables. Dar nombre a una acción no debe implicar un acceso ilimitado.",
+      "result": "Seleccione herramientas y configure los controles aplicables. Dar nombre a una acción no debe implicar un acceso ilimitado.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformização do tratamento formal (usted)."
+    },
+    {
+      "source": "Você está aqui",
+      "previous": "Estás aquí",
+      "proposed": "Usted está aquí",
+      "result": "Usted está aquí",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformização do tratamento formal (usted)."
+    },
+    {
+      "source": "Explore uma possibilidade ↗",
+      "previous": "Explora una posibilidad ↗",
+      "proposed": "Explore una posibilidad ↗",
+      "result": "Explore una posibilidad ↗",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformização do tratamento formal (usted)."
+    },
+    {
+      "source": "Me explique as peças",
+      "previous": "Explícame las piezas",
+      "proposed": "Explíqueme las piezas",
+      "result": "Explíqueme las piezas",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformização do tratamento formal (usted)."
+    },
+    {
+      "source": "Usamos cookies essenciais e, com seu ok, analytics. Você escolhe.",
+      "previous": "Usamos cookies esenciales y, si nos das tu permiso, de analítica. Tú decides.",
+      "proposed": "Usamos cookies esenciales y, con su permiso, cookies de analítica. Usted decide.",
+      "result": "Usamos cookies esenciales y, con su permiso, cookies de analítica. Usted decide.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformização do tratamento formal (usted) e construção mais clara."
+    },
+    {
+      "source": "Vamos começar pelo que você imagina.",
+      "previous": "Empecemos por lo que tienes en mente.",
+      "proposed": "Empecemos por lo que usted tiene en mente.",
+      "result": "Empecemos por lo que usted tiene en mente.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformização do tratamento formal (usted)."
+    },
+    {
+      "source": "Aceite cartão, Pix e boleto por mais de um adquirente com uma API só. Consulte aplicações, estágio e documentação.",
+      "previous": "Acepta tarjeta, Pix y boleto a través de más de un adquirente con una sola API. Consulta aplicaciones, fase y documentación.",
+      "proposed": "Acepte tarjeta, Pix y boleto a través de más de un adquirente con una sola API. Consulte aplicaciones, fase y documentación.",
+      "result": "Acepte tarjeta, Pix y boleto a través de más de un adquirente con una sola API. Consulte aplicaciones, fase y documentación.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformização do tratamento formal (usted)."
+    },
+    {
+      "source": "Seu produto de crédito.",
+      "previous": "Tu producto de crédito.",
+      "proposed": "Su producto de crédito.",
+      "result": "Su producto de crédito.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformização do tratamento formal (usted)."
+    },
+    {
+      "source": "Você escolhe o que configurar.",
+      "previous": "Tú eliges qué configurar.",
+      "proposed": "Usted elige qué configurar.",
+      "result": "Usted elige qué configurar.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformização do tratamento formal (usted)."
+    },
+    {
+      "source": "Conecte mensagens de e-mail ao contexto em que o relacionamento acontece.",
+      "previous": "Conecta los mensajes de correo electrónico al contexto en el que se desarrolla la relación.",
+      "proposed": "Conecte los mensajes de correo electrónico al contexto en el que se desarrolla la relación.",
+      "result": "Conecte los mensajes de correo electrónico al contexto en el que se desarrolla la relación.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformização do tratamento formal (usted)."
+    },
+    {
+      "source": "Cadastro de pessoas físicas brasileiras com CPF validado e isolado por organização. Consulte aplicações, estágio e documentação.",
+      "previous": "Registro de personas físicas brasileñas con CPF validado y aislado por organización. Consulta aplicaciones, fase y documentación.",
+      "proposed": "Registro de personas físicas brasileñas con CPF validado y aislado por organización. Consulte aplicaciones, fase y documentación.",
+      "result": "Registro de personas físicas brasileñas con CPF validado y aislado por organización. Consulte aplicaciones, fase y documentación.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformização do tratamento formal (usted)."
+    },
+    {
+      "source": "Usa conexão não oficial. Existe risco de suspensão do número pela Meta. Para operações que exigem o canal oficial, avalie WPP Business.",
+      "previous": "Usa una conexión no oficial. Existe el riesgo de que Meta suspenda el número. Para operaciones que requieren el canal oficial, valora WPP Business.",
+      "proposed": "Usa una conexión no oficial. Existe el riesgo de que Meta suspenda el número. Para operaciones que requieren el canal oficial, valore WPP Business.",
+      "result": "Usa una conexión no oficial. Existe el riesgo de que Meta suspenda el número. Para operaciones que requieren el canal oficial, valore WPP Business.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformização do tratamento formal (usted)."
+    },
+    {
+      "source": "Explique quem participa, o que inicia o trabalho, quais informações são necessárias e como seria um bom resultado. Diga também quando uma pessoa deve revisar ou assumir a conversa.",
+      "previous": "Explica quién participa, qué inicia el trabajo, qué información se necesita y cómo sería un buen resultado. Indica también cuándo una persona debe revisar o asumir la conversación.",
+      "proposed": "Explique quién participa, qué inicia el trabajo, qué información se necesita y cómo sería un buen resultado. Indique también cuándo una persona debe revisar o asumir la conversación.",
+      "result": "Explique quién participa, qué inicia el trabajo, qué información se necesita y cómo sería un buen resultado. Indique también cuándo una persona debe revisar o asumir la conversación.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformização do tratamento formal (usted)."
+    },
+    {
+      "source": "Ligue e desligue funcionalidade em produção sem novo deploy, por segmento de cliente. Consulte aplicações, estágio e documentação.",
+      "previous": "Activa y desactiva funcionalidades en producción sin un nuevo despliegue, por segmento de cliente. Consulta aplicaciones, fase y documentación.",
+      "proposed": "Active y desactive funcionalidades en producción sin un nuevo despliegue, por segmento de cliente. Consulte aplicaciones, fase y documentación.",
+      "result": "Active y desactive funcionalidades en producción sin un nuevo despliegue, por segmento de cliente. Consulte aplicaciones, fase y documentación.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformização do tratamento formal (usted)."
+    },
+    {
+      "source": "Qual é o seu",
+      "previous": "Cuál es tu",
+      "proposed": "¿Cuál es su",
+      "result": "¿Cuál es su",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento formal (usted) e sinal de interrogação de abertura obrigatório em espanhol."
+    },
+    {
+      "source": "Como podemos",
+      "previous": "Cómo podemos",
+      "proposed": "¿Cómo podemos",
+      "result": "¿Cómo podemos",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Fragmento de pergunta: espanhol exige o sinal de interrogação de abertura."
+    },
+    {
+      "source": "Escolha até sete dias dentro do período de retenção.",
+      "previous": "Elige hasta siete días dentro del periodo de retención.",
+      "proposed": "Elija hasta siete días dentro del periodo de retención.",
+      "result": "Elija hasta siete días dentro del periodo de retención.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformização do tratamento formal (usted)."
+    },
+    {
+      "source": "Crie uma experiência financeira própria ou modernize a atual. Defina marca, canais e regras de operação; a composição depende do escopo e das integrações validadas.",
+      "previous": "Crea una experiencia financiera propia o moderniza la actual. Define marca, canales y reglas de operación; la composición depende del alcance y de las integraciones validadas.",
+      "proposed": "Cree una experiencia financiera propia o modernice la actual. Defina marca, canales y reglas de operación; la composición depende del alcance y de las integraciones validadas.",
+      "result": "Cree una experiencia financiera propia o modernice la actual. Defina marca, canales y reglas de operación; la composición depende del alcance y de las integraciones validadas.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformização do tratamento formal (usted)."
+    },
+    {
+      "source": "Escolha um ponto de partida. A resposta será salva ao continuar.",
+      "previous": "Elige un punto de partida. La respuesta se guardará al continuar.",
+      "proposed": "Elija un punto de partida. La respuesta se guardará al continuar.",
+      "result": "Elija un punto de partida. La respuesta se guardará al continuar.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformização do tratamento formal (usted)."
+    },
+    {
+      "source": "Organize assinaturas, consumo e faturas para modelos em que o preço depende do serviço utilizado.",
+      "previous": "Organiza suscripciones, consumo y facturas para modelos en los que el precio depende del servicio utilizado.",
+      "proposed": "Organice suscripciones, consumo y facturas para modelos en los que el precio depende del servicio utilizado.",
+      "result": "Organice suscripciones, consumo y facturas para modelos en los que el precio depende del servicio utilizado.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformização do tratamento formal (usted)."
+    },
+    {
+      "source": "Quando o efeito é desconhecido, confirme antes de repetir. Reconciliação pode ser necessária.",
+      "previous": "Cuando se desconoce el efecto, confirma antes de repetir. Puede ser necesaria una conciliación.",
+      "proposed": "Cuando se desconoce el efecto, confirme antes de repetir. Puede ser necesaria una conciliación.",
+      "result": "Cuando se desconoce el efecto, confirme antes de repetir. Puede ser necesaria una conciliación.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformização do tratamento formal (usted)."
+    },
+    {
+      "source": "Selecione e copie o código abaixo.",
+      "previous": "Selecciona y copia el código de abajo.",
+      "proposed": "Seleccione y copie el código de abajo.",
+      "result": "Seleccione y copie el código de abajo.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformização do tratamento formal (usted)."
+    },
+    {
+      "source": "Composições: conecte capacidades em jornadas | Catalisa",
+      "previous": "Composiciones: conecta capacidades en recorridos | Catalisa",
+      "proposed": "Composiciones: conecte capacidades en recorridos | Catalisa",
+      "result": "Composiciones: conecte capacidades en recorridos | Catalisa",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformização do tratamento formal (usted)."
+    },
+    {
+      "source": "Exemplo: o CRM continua abrindo propostas e o core continua registrando contratos. Uma chamada ao Decision Engine substitui a política espalhada em serviços. Amplie o recorte depois de validar o primeiro.",
+      "previous": "Ejemplo: el CRM sigue abriendo propuestas y el core sigue registrando contratos. Una llamada al Decision Engine sustituye la política dispersa en servicios. Amplía el alcance después de validar el primero.",
+      "proposed": "Ejemplo: el CRM sigue abriendo propuestas y el core sigue registrando contratos. Una llamada al Decision Engine sustituye la política dispersa en servicios. Amplíe el alcance después de validar el primero.",
+      "result": "Ejemplo: el CRM sigue abriendo propuestas y el core sigue registrando contratos. Una llamada al Decision Engine sustituye la política dispersa en servicios. Amplíe el alcance después de validar el primero.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformização do tratamento formal (usted)."
+    },
+    {
+      "source": "De acordo com a LGPD, você possui os seguintes direitos em relação aos seus dados pessoais:",
+      "previous": "De acuerdo con la LGPD, tienes los siguientes derechos en relación con tus datos personales:",
+      "proposed": "De acuerdo con la LGPD, usted tiene los siguientes derechos en relación con sus datos personales:",
+      "result": "De acuerdo con la LGPD, usted tiene los siguientes derechos en relación con sus datos personales:",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformização do tratamento formal (usted), adequado ao texto jurídico."
+    },
+    {
+      "source": "Conteúdo editorial baseado na documentação pública. Consulte os contratos e estágios atualizados antes de integrar.",
+      "previous": "Contenido editorial basado en la documentación pública. Consulta los contratos y las fases actualizados antes de integrar.",
+      "proposed": "Contenido editorial basado en la documentación pública. Consulte los contratos y las fases actualizados antes de integrar.",
+      "result": "Contenido editorial basado en la documentación pública. Consulte los contratos y las fases actualizados antes de integrar.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformização do tratamento formal (usted)."
+    },
+    {
+      "source": "SUA CONVERSA VIRA UM CONCEITO",
+      "previous": "TU CONVERSACIÓN SE CONVIERTE EN UN CONCEPTO",
+      "proposed": "SU CONVERSACIÓN SE CONVIERTE EN UN CONCEPTO",
+      "result": "SU CONVERSACIÓN SE CONVIERTE EN UN CONCEPTO",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformização do tratamento formal (usted)."
+    },
+    {
+      "source": "Entenda como sessão, captura, prova de vida e comparação facial se conectam na experiência Biometrics, preservando o contexto e a evidência da verificação.",
+      "previous": "Descubre cómo se conectan la sesión, la captura, la prueba de vida y la comparación facial en la experiencia Biometrics, preservando el contexto y la evidencia de la verificación.",
+      "proposed": "Descubra cómo se conectan la sesión, la captura, la prueba de vida y la comparación facial en la experiencia de Biometría, preservando el contexto y la evidencia de la verificación.",
+      "result": "Descubra cómo se conectan la sesión, la captura, la prueba de vida y la comparación facial en la experiencia de Biometría, preservando el contexto y la evidencia de la verificación.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento formal (usted) e nome genérico de produto Biometrics deve ser traduzido."
+    },
+    {
+      "source": "Você já pode acompanhar as respostas da equipe nesta página.",
+      "previous": "Ya puedes seguir las respuestas del equipo en esta página.",
+      "proposed": "Ya puede seguir las respuestas del equipo en esta página.",
+      "result": "Ya puede seguir las respuestas del equipo en esta página.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Uniformização do tratamento formal (usted)."
+    },
+    {
+      "source": "Uma pendência. Dois percursos possíveis.",
+      "previous": "Un pendiente. Dos recorridos posibles.",
+      "proposed": "Un asunto pendiente. Dos recorridos posibles.",
+      "result": "Un asunto pendiente. Dos recorridos posibles.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "«Un pendiente» é incorreto/ambíguo em espanhol (significa brinco); usar «asunto pendiente»."
+    },
+    {
+      "source": "Acompanhar contas",
+      "previous": "Seguir cuentas",
+      "proposed": "Hacer seguimiento de las cuentas",
+      "result": "Hacer seguimiento de las cuentas",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "«Seguir cuentas» soa literal (sugere redes sociais); «hacer seguimiento» expressa acompanhar."
+    },
+    {
+      "source": "Banking / Uma atuação possível",
+      "previous": "Banking / Una aplicación posible",
+      "proposed": "Banking / Una actuación posible",
+      "result": "Banking / Una actuación posible",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "«Atuação» foi traduzida como «aplicación», termo já usado para «aplicação»; manter distinção."
+    },
+    {
+      "source": "Peças conectadas — estudo visual",
+      "previous": "Piezas conectadas — estudio visual",
+      "proposed": "Piezas conectadas: estudio visual",
+      "result": "Piezas conectadas: estudio visual",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência com o padrão de legendas «Ciudad financiera: estudio visual»."
+    },
+    {
+      "source": "Pricing",
+      "previous": "Precios",
+      "proposed": "Pricing",
+      "result": "Pricing",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome técnico de building block no diagrama de arquitetura deve ser preservado."
+    },
+    {
+      "source": "O serviço não conseguiu concluir agora. A conversa está salva.",
+      "previous": "El servicio no ha podido completarse ahora. La conversación está guardada.",
+      "proposed": "El servicio no ha podido completar la operación en este momento. La conversación está guardada.",
+      "result": "El servicio no ha podido completar la operación en este momento. La conversación está guardada.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "«Completarse ahora» soa literal e incompleto; frase mais natural."
+    },
+    {
+      "source": "O produto encontra continuidade entre um acontecimento e o próximo.",
+      "previous": "El producto da continuidad entre un acontecimiento y el siguiente.",
+      "proposed": "El producto encuentra continuidad entre un acontecimiento y el siguiente.",
+      "result": "El producto encuentra continuidad entre un acontecimiento y el siguiente.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "\"Da continuidad\" altera o sentido; o original diz que o produto encontra continuidade."
+    },
+    {
+      "source": "O produto encontra",
+      "previous": "El producto da",
+      "proposed": "El producto encuentra",
+      "result": "El producto encuentra",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Fragmento: alinhado ao sentido original (\"encontra\") e à frase completa equivalente."
+    },
+    {
+      "source": "04 / Comece pelo copiloto que reduz uma fila",
+      "previous": "04 / Empieza por el copiloto que reduce una cola",
+      "proposed": "04 / Empiece por el copiloto que reduce una cola",
+      "result": "04 / Empiece por el copiloto que reduce una cola",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento inconsistente: a série paralela usa \"Empiece\" (usted)."
+    },
+    {
+      "source": "Saiba quem pode representar a empresa.",
+      "previous": "Sabe quién puede representar a la empresa.",
+      "proposed": "Sepa quién puede representar a la empresa.",
+      "result": "Sepa quién puede representar a la empresa.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento por usted; \"Sabe\" também soa ambíguo (indicativo)."
+    },
+    {
+      "source": "A composição ainda não foi concluída. Sua ideia está salva; tente novamente.",
+      "previous": "La composición aún no se ha completado. Tu idea está guardada; inténtalo de nuevo.",
+      "proposed": "La composición aún no se ha completado. Su idea está guardada; inténtelo de nuevo.",
+      "result": "La composición aún no se ha completado. Su idea está guardada; inténtelo de nuevo.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento por usted."
+    },
+    {
+      "source": "Quem pode assinar por esta empresa, para este ato, com este valor. Consulte aplicações, estágio e documentação.",
+      "previous": "Quién puede firmar por esta empresa, para este acto, por este importe. Consulta aplicaciones, fase y documentación.",
+      "proposed": "Quién puede firmar por esta empresa, para este acto, por este importe. Consulte aplicaciones, fase y documentación.",
+      "result": "Quién puede firmar por esta empresa, para este acto, por este importe. Consulte aplicaciones, fase y documentación.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento por usted."
+    },
+    {
+      "source": "Explore os passos e as telas ↘",
+      "previous": "Explora los pasos y las pantallas ↘",
+      "proposed": "Explore los pasos y las pantallas ↘",
+      "result": "Explore los pasos y las pantallas ↘",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento por usted."
+    },
+    {
+      "source": "Explore WPP Business",
+      "previous": "Explora WPP Business",
+      "proposed": "Explore WPP Business",
+      "result": "Explore WPP Business",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento por usted."
+    },
+    {
+      "source": "Mensagens do Slack dos seus clientes entrando e saindo do seu produto. Consulte aplicações, estágio e documentação.",
+      "previous": "Mensajes de Slack de tus clientes entrando y saliendo de tu producto. Consulta aplicaciones, fase y documentación.",
+      "proposed": "Mensajes de Slack de sus clientes entrando y saliendo de su producto. Consulte aplicaciones, fase y documentación.",
+      "result": "Mensajes de Slack de sus clientes entrando y saliendo de su producto. Consulte aplicaciones, fase y documentación.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento por usted."
+    },
+    {
+      "source": "Mensagens do Slack dos seus clientes entrando e saindo do seu produto",
+      "previous": "Mensajes de Slack de tus clientes entrando y saliendo de tu producto",
+      "proposed": "Mensajes de Slack de sus clientes entrando y saliendo de su producto",
+      "result": "Mensajes de Slack de sus clientes entrando y saliendo de su producto",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento por usted."
+    },
+    {
+      "source": "Consulte melhor. Evite pagar pela mesma pergunta.",
+      "previous": "Consulta mejor. Evita pagar por la misma pregunta.",
+      "proposed": "Consulte mejor. Evite pagar por la misma pregunta.",
+      "result": "Consulte mejor. Evite pagar por la misma pregunta.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento por usted."
+    },
+    {
+      "source": "Organize mensagens, resuma textos e interprete documentos para apoiar as equipes no trabalho diário.",
+      "previous": "Organiza mensajes, resume textos e interpreta documentos para apoyar a los equipos en el trabajo diario.",
+      "proposed": "Organice mensajes, resuma textos e interprete documentos para apoyar a los equipos en el trabajo diario.",
+      "result": "Organice mensajes, resuma textos e interprete documentos para apoyar a los equipos en el trabajo diario.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento por usted."
+    },
+    {
+      "source": "Não foi possível salvar. Tente novamente.",
+      "previous": "No se ha podido guardar. Inténtalo de nuevo.",
+      "proposed": "No se ha podido guardar. Inténtelo de nuevo.",
+      "result": "No se ha podido guardar. Inténtelo de nuevo.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento por usted."
+    },
+    {
+      "source": "A geração excedeu o tempo limite. Suas respostas estão salvas.",
+      "previous": "La generación ha superado el tiempo límite. Tus respuestas están guardadas.",
+      "proposed": "La generación ha superado el tiempo límite. Sus respuestas están guardadas.",
+      "result": "La generación ha superado el tiempo límite. Sus respuestas están guardadas.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento por usted."
+    },
+    {
+      "source": "Crie um produto de crédito original ou redesenhe o existente: público, modalidade, política e condições próprias. Catálogo e mesa conectam construção e operação conforme o escopo validado.",
+      "previous": "Crea un producto de crédito original o rediseña el existente: público, modalidad, política y condiciones propias. El catálogo y la mesa conectan construcción y operación según el alcance validado.",
+      "proposed": "Cree un producto de crédito original o rediseñe el existente: público, modalidad, política y condiciones propias. El catálogo y la mesa conectan construcción y operación según el alcance validado.",
+      "result": "Cree un producto de crédito original o rediseñe el existente: público, modalidad, política y condiciones propias. El catálogo y la mesa conectan construcción y operación según el alcance validado.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento por usted."
+    },
+    {
+      "source": "Recuperando suas respostas e seu conceito.",
+      "previous": "Recuperando tus respuestas y tu concepto.",
+      "proposed": "Recuperando sus respuestas y su concepto.",
+      "result": "Recuperando sus respuestas y su concepto.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento por usted."
+    },
+    {
+      "source": "Sua conta pode se conectar a um produto de crédito próprio. Explore como proposta, aceite e acompanhamento podem compor essa jornada, conforme o escopo e as integrações.",
+      "previous": "Tu cuenta puede conectarse a un producto de crédito propio. Explora cómo la propuesta, la aceptación y el seguimiento pueden componer ese recorrido, según el alcance y las integraciones.",
+      "proposed": "Su cuenta puede conectarse a un producto de crédito propio. Explore cómo la propuesta, la aceptación y el seguimiento pueden componer ese recorrido, según el alcance y las integraciones.",
+      "result": "Su cuenta puede conectarse a un producto de crédito propio. Explore cómo la propuesta, la aceptación y el seguimiento pueden componer ese recorrido, según el alcance y las integraciones.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento por usted."
+    },
+    {
+      "source": "Crie seu produto de crédito.",
+      "previous": "Crea tu producto de crédito.",
+      "proposed": "Cree su producto de crédito.",
+      "result": "Cree su producto de crédito.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento por usted."
+    },
+    {
+      "source": "Mantenha os dados de contato e cadastro em uma referência compartilhada pelas jornadas.",
+      "previous": "Mantén los datos de contacto y de registro en una referencia compartida por los recorridos.",
+      "proposed": "Mantenga los datos de contacto y de registro en una referencia compartida por los recorridos.",
+      "result": "Mantenga los datos de contacto y de registro en una referencia compartida por los recorridos.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento por usted."
+    },
+    {
+      "source": "Conclua a resposta anterior primeiro.",
+      "previous": "Completa primero la respuesta anterior.",
+      "proposed": "Complete primero la respuesta anterior.",
+      "result": "Complete primero la respuesta anterior.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento por usted."
+    },
+    {
+      "source": "Escolha onde essa conversa faria",
+      "previous": "Elige dónde tendría",
+      "proposed": "Elija dónde tendría",
+      "result": "Elija dónde tendría",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento por usted (fragmento preservado)."
+    },
+    {
+      "source": "Escolha uma jornada, avance pelas etapas",
+      "previous": "Elige un recorrido, avanza por los pasos",
+      "proposed": "Elija un recorrido, avance por los pasos",
+      "result": "Elija un recorrido, avance por los pasos",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento por usted."
+    },
+    {
+      "source": "Explore o nível de acesso",
+      "previous": "Explora el nivel de acceso",
+      "proposed": "Explore el nivel de acceso",
+      "result": "Explore el nivel de acceso",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento por usted."
+    },
+    {
+      "source": "Antes de dar forma à sua ideia,",
+      "previous": "Antes de dar forma a tu idea,",
+      "proposed": "Antes de dar forma a su idea,",
+      "result": "Antes de dar forma a su idea,",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento por usted."
+    },
+    {
+      "source": "Imagine seu produto no Lab",
+      "previous": "Imagina tu producto en el Lab",
+      "proposed": "Imagine su producto en el Lab",
+      "result": "Imagine su producto en el Lab",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento por usted."
+    },
+    {
+      "source": "voce@empresa.com",
+      "previous": "tu@empresa.com",
+      "proposed": "nombre@empresa.com",
+      "result": "nombre@empresa.com",
+      "outcome": "skipped-structure",
+      "why": "Protected placeholder, URL, email, numeric fact or inline-code mismatch",
+      "reviewReason": "Placeholder coerente com o tratamento por usted (\"tu@\" usa tuteo)."
+    },
+    {
+      "source": "O serviço excedeu o tempo de espera. Sua conversa está salva.",
+      "previous": "El servicio ha superado el tiempo de espera. Tu conversación está guardada.",
+      "proposed": "El servicio ha superado el tiempo de espera. Su conversación está guardada.",
+      "result": "El servicio ha superado el tiempo de espera. Su conversación está guardada.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento por usted."
+    },
+    {
+      "source": "Conte sua ideia com suas palavras.",
+      "previous": "Cuenta tu idea con tus propias palabras.",
+      "proposed": "Cuente su idea con sus propias palabras.",
+      "result": "Cuente su idea con sus propias palabras.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento por usted."
+    },
+    {
+      "source": "Classificação de texto com categorias definidas pela sua operação. Configure os provedores disponíveis no ambiente.",
+      "previous": "Clasificación de texto con categorías definidas por tu operación. Configura los proveedores disponibles en el entorno.",
+      "proposed": "Clasificación de texto con categorías definidas por su operación. Configure los proveedores disponibles en el entorno.",
+      "result": "Clasificación de texto con categorías definidas por su operación. Configure los proveedores disponibles en el entorno.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento por usted."
+    },
+    {
+      "source": "Entender o seu estágio.",
+      "previous": "Entender tu etapa.",
+      "proposed": "Entender su fase.",
+      "result": "Entender su fase.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Tratamento por usted e terminologia consistente para \"estágio\" (fase)."
+    },
+    {
+      "source": "REFERÊNCIAS E ESTÁGIO",
+      "previous": "REFERENCIAS Y ETAPA",
+      "proposed": "REFERENCIAS Y FASE",
+      "result": "REFERENCIAS Y FASE",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Terminologia consistente para \"estágio\" (fase), como nas páginas de SEO."
+    },
+    {
+      "source": "Atualize a experiência no ritmo do negócio.",
+      "previous": "Actualiza la experiencia al ritmo del negocio.",
+      "proposed": "Actualice la experiencia al ritmo del negocio.",
+      "result": "Actualice la experiencia al ritmo del negocio.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento por usted."
+    },
+    {
+      "source": "Você só precisa preencher um dos dois.",
+      "previous": "Solo tienes que rellenar uno de los dos.",
+      "proposed": "Solo tiene que rellenar uno de los dos.",
+      "result": "Solo tiene que rellenar uno de los dos.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento por usted."
+    },
+    {
+      "source": "Veja a composição em ação",
+      "previous": "Mira la composición en acción",
+      "proposed": "Vea la composición en acción",
+      "result": "Vea la composición en acción",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is tú",
+      "reviewReason": "Padronização do tratamento por usted."
+    },
+    {
+      "source": "All insights (English)",
+      "previous": "Todos los artículos (en inglés)",
+      "proposed": "Todos los insights (en inglés)",
+      "result": "Todos los insights (en inglés)",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência com o rótulo \"Todos los insights\"."
+    },
+    {
+      "source": "WhatsApp AI agents (English)",
+      "previous": "WhatsApp AI agents (English)",
+      "proposed": "WhatsApp AI agents (en inglés)",
+      "result": "WhatsApp AI agents (en inglés)",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "O marcador de idioma deve ser traduzido, como em outros links para conteúdo em inglês."
+    },
+    {
+      "source": "catalisa — versão Branco",
+      "previous": "catalisa — versión Blanco",
+      "proposed": "catalisa — versión blanca",
+      "result": "catalisa — versión blanca",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "\"Versión Blanco\" é agramatical; a concordância correta é \"blanca\"."
+    },
+    {
+      "source": "CATALISA / BANKING PLATFORM",
+      "previous": "CATALISA / BANKING PLATFORM",
+      "proposed": "CATALISA / PLATAFORMA BANCARIA",
+      "result": "CATALISA / PLATAFORMA BANCARIA",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome genérico de produto (Banking Platform) deve ser traduzido."
+    },
+    {
+      "source": "Explore o Banking Platform",
+      "previous": "Explora Banking Platform",
+      "proposed": "Explora la Plataforma bancaria",
+      "result": "Explora la Plataforma bancaria",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Banking Platform é nome genérico de produto e deve usar o rótulo traduzido consistente (Plataforma bancaria)."
+    },
+    {
+      "source": "A pessoa escreve no WhatsApp do escritório, inclusive fora do horário de atendimento.",
+      "previous": "La persona escribe al WhatsApp de la consulta, incluso fuera del horario de atención.",
+      "proposed": "La persona escribe al WhatsApp del despacho, incluso fuera del horario de atención.",
+      "result": "La persona escribe al WhatsApp del despacho, incluso fuera del horario de atención.",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "\"Escritório\" refere-se a escritório (jurídico/profissional); \"consulta\" sugere consultório médico."
+    },
+    {
+      "source": "Taxa por faixa de risco, com tarifas, comissões e seguros no mesmo cálculo",
+      "previous": "Tipo por tramo de riesgo, con tarifas, comisiones y seguros en el mismo cálculo",
+      "proposed": "Tipo de interés por tramo de riesgo, con tarifas, comisiones y seguros en el mismo cálculo",
+      "result": "Tipo de interés por tramo de riesgo, con tarifas, comisiones y seguros en el mismo cálculo",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "\"Tipo\" isolado é ambíguo; \"tipo de interés\" traduz corretamente \"taxa\" no contexto de crédito."
+    },
+    {
+      "source": "Decision",
+      "previous": "Decisiones",
+      "proposed": "Decisión",
+      "result": "Decisión",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Rótulo de produto deve corresponder ao singular \"Decision\" e manter consistência com os demais rótulos."
+    }
+  ],
+  "normalized": [],
+  "limitations": [
+    "Automatic independent pair review, not native human or legal approval.",
+    "Pure style/register and unsupported synonym changes are retained as skipped proposals.",
+    "Rendering, translated composition fragments and generated AI output require their separate browser/integration checks."
+  ]
+}

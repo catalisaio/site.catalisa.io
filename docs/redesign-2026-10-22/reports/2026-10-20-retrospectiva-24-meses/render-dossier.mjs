@@ -1,0 +1,61 @@
+import { signal } from './render-infografico.mjs';
+import { identityStyles, identityVersion, brandArtwork, diligenceGateway } from './report-identity.mjs';
+import fs from 'node:fs';
+import { fileURLToPath } from 'node:url';
+
+const css = fs.readFileSync(fileURLToPath(new URL('./dossier.css', import.meta.url)), 'utf8');
+const esc = value => String(value).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
+const plain = value => value.replace(/<[^>]*>/g, '');
+
+export function renderConstructionHistory(data) {
+  const labels = { wpp: 'Catalisa', bb: 'Building Blocks', developy: 'Developy Cloud' };
+  const roles = { wpp: 'Produto e experiência', bb: 'Serviços reutilizáveis', developy: 'Infraestrutura e operação' };
+  const colors = { wpp: 'var(--brand-500)', bb: 'var(--accent)', developy: 'var(--ink)' };
+  const dates = data.repositories.map(repo => repo.firstCommit.slice(0, 10));
+  const start = Math.min(...dates.map(date => Date.parse(date)));
+  const endDate = '2026-10-20';
+  const end = Date.parse(endDate);
+  const span = end - start;
+  const dateLabel = date => date.split('-').reverse().join('/');
+  return `<figure class="construction-history"><figcaption><span class="overline">Três bases, o mesmo corte</span><h3>O produto avançava.<br>A operação também era construída.</h3></figcaption><div class="construction-ruler"><span>Primeiros registros disponíveis</span><span>Corte · ${dateLabel(endDate)}</span></div>${data.repositories.map(repo => {
+    const date = repo.firstCommit.slice(0, 10);
+    const offset = 100 * (Date.parse(date) - start) / span;
+    const count = data.prs.filter(pr => pr.repo === repo.key && pr.integrated).length;
+    return `<div class="construction-row" style="--track-color:${colors[repo.key]}"><div><strong>${labels[repo.key]}</strong><span>${roles[repo.key]}</span></div><div class="construction-track"><span class="construction-bar" style="left:${offset.toFixed(2)}%"><time datetime="${date}">${dateLabel(date)}</time></span></div><div class="construction-count"><b>${count.toLocaleString('pt-BR')}</b><span>PRs na principal</span></div></div>`;
+  }).join('')}<p class="construction-note">As datas são dos primeiros commits disponíveis em cada repositório. As faixas terminam no corte do relatório; não medem dedicação contínua ou horas trabalhadas. PRs contam registros integrados, incluindo correções e manutenção.</p></figure>`;
+}
+
+export function dossierNavigation(current) {
+  const links = [['index', 'Infográfico'], ['dossie', 'Dossiê'], ['dashboard', 'Dashboard'], ['cadeia-de-valor', 'Cadeia de valor'], ['timeline', 'Timeline'], ['relatorio-completo', 'Relatório'], ['developy', 'Developy'], ['investidores', 'Investidores'], ['entrevistas', 'Entrevistas'], ['diligencia', 'Diligência'], ['homologacao', 'Homologação']];
+  return `<a class="skip" href="#leitura">Ir para o conteúdo</a><header class="topbar"><a class="brand" href="index.html" aria-label="Catalisa.">${brandArtwork()}<small>UM ACERVO EM CONSTRUÇÃO</small></a><nav aria-label="Materiais do dossiê">${links.map(([id, label]) => `<a href="${id}.html"${current === id ? ' aria-current="page"' : ''}>${label}</a>`).join('')}</nav></header>`;
+}
+
+export function threadArtwork() {
+  return signal().replace('class="signal"', 'class="thread-art"');
+}
+
+export function renderDossier({ filename, title, subtitle, product, pills, bodyHtml, intro, number = '01' }) {
+  const current = filename.replace('.html', '');
+  const headings = [];
+  const content = bodyHtml.replace(/<h2(?: id="([^"]+)")?>([\s\S]*?)<\/h2>/g, (_, original, text) => {
+    const id = original || `secao-${headings.length + 1}`;
+    headings.push({ id, text: plain(text) });
+    return `<h2 id="${id}"><span class="section-number" aria-hidden="true">${String(headings.length).padStart(2, '0')}</span>${text}</h2>`;
+  });
+  return `<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>${esc(plain(title))} · Catalisa</title><style>${css}\n${identityStyles()}</style></head><body data-design="bauhaus-transitoria-v1" data-identity="${identityVersion}">${dossierNavigation(current)}<section class="cover"><div class="cover-top"><span class="overline">${esc(product)}</span><span class="edition">${number} / DOSSIÊ · OUT 2026</span></div><div class="cover-main"><a class="brand print-brand" href="index.html" aria-label="Catalisa.">${brandArtwork()}</a><h1>${title}</h1><div class="cover-note"><p>${esc(subtitle)}</p><a class="journey-link" href="#leitura">Começar a leitura <span>↓</span></a></div></div><div class="cover-art"><div class="art-caption"><span>Uma construção em três camadas</span><span>Mapa editorial das conexões</span></div>${threadArtwork()}</div><div class="cover-foot"><span>Klederson Bueno · 20 de outubro de 2026</span><div>${pills.map(pill => `<span>${esc(pill)}</span>`).join('')}</div></div></section><div class="reading-bar"><span>${esc(product)}</span><div><a href="${current}.pdf" download>Baixar PDF ↓</a><button type="button" onclick="window.print()">Imprimir</button></div></div><main class="doc" id="leitura"><div class="reading-intro"><p class="overline">${esc(intro || 'Construção, valor e evidências')}</p><details class="reading-index"><summary>Explorar esta leitura <span>${headings.length} seções +</span></summary><nav aria-label="Sumário">${headings.map((item, i) => `<a href="#${item.id}"><span>${String(i + 1).padStart(2, '0')}</span>${esc(item.text)}</a>`).join('')}</nav></details></div>${content}${diligenceGateway(current)}<footer class="document-footer"><a class="brand" href="index.html" aria-label="Catalisa.">${brandArtwork()}</a><p>${esc(product)} · Klederson Bueno<br>Janela: 20/10/2024 a 20/10/2026 · Clientes anonimizados na narrativa.</p><a href="#leitura">Voltar ao início ↑</a></footer></main></body></html>`;
+}
+
+export function renderDossierIndex({ stories, prs, commits, integratedDevelopy, developyPrs, milestoneCount, constructionHistory }) {
+  const cards = [
+    ['08', 'diligencia.html', 'Conclusões e próximos passos.', 'Sumário das análises', 'Pontos fortes e fracos, riscos, conclusão por área e oito ações propostas.', 'featured'],
+    ['09', 'homologacao.html', 'Avaliar para contratar.', 'Homologação', '32 controles para Compras, Jurídico, Segurança, Privacidade e operação.', 'infra-card'],
+    ['07', 'cadeia-de-valor.html', 'Seis etapas. Uma operação inteira.', 'Cadeia de valor', 'Da originação à continuidade: capacidades, controles, arquitetura e evidências.', 'featured'],
+    ['06', 'dashboard.html', 'A dimensão da construção.', 'Dashboard e números', '22 visualizações de entrega, produto, arquitetura, segurança e ganhos medidos.', 'infra-card'],
+    ['01', 'timeline.html', 'Siga os fios da história.', 'Timeline e acervo', `${milestoneCount} marcos, sete capítulos e cada evidência ao alcance de um clique.`, 'featured'],
+    ['02', 'relatorio-completo.html', 'A construção, em detalhe.', 'Relatório completo', '110 frentes de valor, conexões entre produtos, medições e fontes.', ''],
+    ['03', 'developy.html', 'A plataforma por baixo da plataforma.', 'Developy Cloud', 'Como publicação, rede, dados e operação viabilizaram a Catalisa.', 'infra-card'],
+    ['04', 'investidores.html', 'O que essa base permite construir.', 'Para investidores', 'Ativos de produto, composição e evidências da execução.', ''],
+    ['05', 'entrevistas.html', 'As decisões por trás das entregas.', 'Para entrevistas', 'Narrativa em primeira pessoa e casos concretos de engenharia.', ''],
+  ];
+  return `<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dossiê profissional · Klederson Bueno · Catalisa</title><style>${css}\n${identityStyles()}</style></head><body class="index-page" data-design="bauhaus-transitoria-v1" data-identity="${identityVersion}">${dossierNavigation('dossie')}<main id="leitura"><section class="index-opening"><p class="overline">Produto, engenharia e infraestrutura · 2024 — 2026</p><div class="index-title"><h1>Da conversa ao crédito.<br>Da ideia à <em>operação.</em></h1><div><p>Construí três bases durante a mesma evolução: Catalisa, Building Blocks e Developy Cloud.</p><p class="muted">Klederson Bueno · 10/11/2025 a 20/10/2026<br>Janela analisada: 24 meses. Clientes anonimizados.</p><a class="journey-link" href="timeline.html">Percorrer a história <span>↗</span></a></div></div></section><section class="index-art"><div class="art-caption"><span>Os produtos se encontram na mesma base</span><span>Mapa editorial · sem escala quantitativa</span></div>${threadArtwork()}</section><section class="index-readings"><div class="section-heading"><div><p class="overline">Escolha a profundidade</p><h2>Uma história.<br><em>Nove maneiras de entrar.</em></h2></div><p>Comece pelo percurso visual ou abra diretamente a leitura que você precisa.</p></div><div class="reading-cards">${cards.map(([n, href, title, label, desc, cls]) => `<a class="reading-card ${cls}" href="${href}"><div class="card-label"><span>${n} / ${label}</span><span>↗</span></div><h3>${title}</h3><p>${desc}</p><span class="card-action">Abrir leitura <span>→</span></span></a>`).join('')}</div><div class="index-stats">${[[stories, 'frentes detalhadas'], [prs, 'PRs inventariados'], [commits, 'commits disponíveis'], ['3', 'bases conectadas']].map(([n, label]) => `<div><b>${n}</b><span>${label}</span></div>`).join('')}</div></section><section class="infra-opening"><div><p class="overline">Developy Cloud · o impacto na Catalisa</p><h2>Publicar. Conectar.<br><em>Manter de pé.</em></h2><p>A infraestrutura tem uma história própria: ${developyPrs} PRs no acervo, ${integratedDevelopy} merges alcançáveis na principal, 31 diretórios de servidor e 334 arquivos de teste no snapshot.</p><a class="journey-link" href="developy.html">Entender o impacto da Developy <span>↗</span></a></div><ol><li><strong>Launch</strong><span>Publicação, réplicas e evolução do runtime dos building blocks.</span></li><li><strong>Mesh + Beacon</strong><span>Conectividade entre serviços, DNS, ingresso e certificados.</span></li><li><strong>Dados + operação</strong><span>Dependências gerenciadas, observabilidade, recuperação e governança.</span></li></ol></section><section class="construction-wrap">${constructionHistory}</section>${diligenceGateway()}<section class="downloads" id="downloads"><div class="section-heading"><div><p class="overline">Levar e aprofundar</p><h2>O acervo vai junto.</h2></div><a class="download-all" href="dossie-catalisa.zip" download>Baixar dossiê completo ↓</a></div><div class="download-groups"><div><h3>Leituras em PDF</h3>${[['diligencia', 'Diligência / investimento e aquisição'], ['diligencia-tecnica', 'Diligência técnica'], ['diligencia-corporativa', 'Diligência corporativa'], ['diligencia-evidencias', 'Evidências e riscos'], ['homologacao', 'Homologação'], ['cadeia-de-valor', 'Cadeia de valor'], ['dashboard', 'Dashboard e números'], ['relatorio-completo', 'Relatório completo'], ['developy', 'Developy Cloud'], ['investidores', 'Investidores'], ['entrevistas', 'Entrevistas']].map(([file, title]) => `<a href="${file}.pdf">${title}<span>PDF ↓</span></a>`).join('')}</div><div><h3>Inventários e verificações</h3>${[['dashboard-data.json', 'Dados do dashboard'], ['prs.csv', 'Pull requests'], ['commits.csv', 'Commits'], ['documentos.csv', 'Documentos'], ['modulos.csv', 'Módulos'], ['cobertura.json', 'Cobertura'], ['verificacao.json', 'Verificações']].map(([file, title]) => `<a href="${file}">${title}<span>${file.split('.').at(-1).toUpperCase()} ↓</span></a>`).join('')}</div></div><p class="archive-note">Janela: 20/10/2024 a 20/10/2026. Primeiros registros disponíveis em novembro de 2025. Método, estado de integração e fontes no relatório. Anexos de consulta reservada preservam caminhos e links históricos. Leitura local sem dependências externas.</p></section></main><footer class="index-footer"><a class="brand" href="index.html" aria-label="Catalisa.">${brandArtwork()}</a><span>Klederson Bueno · Uma construção de ponta a ponta.</span></footer></body></html>`;
+}

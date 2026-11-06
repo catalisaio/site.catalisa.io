@@ -19,6 +19,7 @@ vi.mock('../../../seo/JsonLd', () => ({
 }));
 vi.mock('../../../seo/routes', () => ({
   resolveRoute: () => ({ pageKey: 'home', schemas: [] }),
+  normalizePath: (path: string) => path.replace(/\/+$/, '') || '/',
 }));
 vi.mock('../../../seo/schemas/organization', () => ({
   getOrganizationSchema: () => ({}),
@@ -42,6 +43,8 @@ vi.mock('react-i18next', () => ({
     t: (key: string) => key,
     i18n: {
       get language() { return currentLanguage; },
+      hasResourceBundle: () => true,
+      loadNamespaces: vi.fn(() => Promise.resolve()),
       changeLanguage: vi.fn((lang: string) => {
         return new Promise<void>((resolve) => {
           // Store resolve so tests can control when it completes
@@ -93,7 +96,7 @@ describe('LanguageLayout', () => {
 
   it('sets document.documentElement.lang for en-US', () => {
     render(<LanguageLayout lang="en-US" />);
-    expect(document.documentElement.lang).toBe('en');
+    expect(document.documentElement.lang).toBe('en-US');
   });
 
   it('sets document.documentElement.lang for pt-BR', () => {

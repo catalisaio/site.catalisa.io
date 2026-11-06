@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-24T23:44:10.844Z",
+  "passed": true,
+  "scope": "Local HTTP contract emulators with real site API, SQLite, Catalisa adapter, schema validator, handoff signer and callback verifier. One browser, sequential widths. No real AI inference or external messages.",
+  "results": [
+    {
+      "width": 320,
+      "channel": "here",
+      "conceptVersions": [
+        1,
+        2
+      ],
+      "tabsKeyboard": true,
+      "confirmationRequired": true,
+      "callbackStates": [
+        "delivered",
+        "assigned"
+      ],
+      "reload": true,
+      "counts": {
+        "generationCalls": 1,
+        "handoffCalls": 1
+      }
+    },
+    {
+      "width": 390,
+      "channel": "email",
+      "conceptVersions": [
+        1,
+        2
+      ],
+      "tabsKeyboard": true,
+      "confirmationRequired": true,
+      "callbackStates": [
+        "delivered",
+        "assigned"
+      ],
+      "reload": true,
+      "counts": {
+        "generationCalls": 2,
+        "handoffCalls": 2
+      }
+    },
+    {
+      "width": 768,
+      "channel": "whatsapp",
+      "conceptVersions": [
+        1,
+        2
+      ],
+      "tabsKeyboard": true,
+      "confirmationRequired": true,
+      "callbackStates": [
+        "delivered",
+        "assigned"
+      ],
+      "reload": true,
+      "counts": {
+        "generationCalls": 3,
+        "handoffCalls": 3
+      }
+    },
+    {
+      "width": 1440,
+      "channel": "here",
+      "conceptVersions": [
+        1,
+        2
+      ],
+      "tabsKeyboard": true,
+      "confirmationRequired": true,
+      "callbackStates": [
+        "delivered",
+        "assigned"
+      ],
+      "reload": true,
+      "counts": {
+        "generationCalls": 4,
+        "handoffCalls": 4
+      }
+    }
+  ],
+  "errors": []
+}

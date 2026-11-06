@@ -1,0 +1,586 @@
+{
+  "date": "2026-10-23T01:14:16.303Z",
+  "scope": "Computed solid-background HTML text on implemented native routes at 390/1440px. Ignores SVG, imagery/gradient contrast, hidden content and pseudo-elements; not a complete WCAG audit.",
+  "audit": [
+    {
+      "route": "/design-system",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/design-system/home",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/visao/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/arquitetura/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/desenvolvedores/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/studio/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/workflows/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/agentes/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/governanca/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/ecossistema/banking/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/ecossistema/credit/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/ecossistema/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/ecossistema/med/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/ecossistema/juridico/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/ecossistema/recrutamento/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/ecossistema/biometrics/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/ecossistema/decision/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/composicoes/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/ai-engine/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/analytics/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/api-keys/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/audit-trail/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/baas/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/banking/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/banking-product-portfolio/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/billing/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/biometrics/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/bureaus/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/calculations-engine/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/calendar/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/cms/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/commerce/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/companies/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/customers/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/data-extraction/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/data-store/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/decision-engine/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/decision-platform/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/document-template/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/e-signature/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/email/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/feature-flags/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/file-storage/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/iam/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/meta-account/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/open-finance/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/payments/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/people/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/pricing-engine/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/products/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/rooms/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/service-attestations/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/slack/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/sso/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/webhooks-engine/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/wpp/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/wpp-business/",
+      "width": 390,
+      "failures": []
+    },
+    {
+      "route": "/design-system",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/design-system/home",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/visao/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/arquitetura/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/desenvolvedores/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/studio/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/workflows/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/agentes/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/governanca/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/ecossistema/banking/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/ecossistema/credit/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/ecossistema/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/ecossistema/med/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/ecossistema/juridico/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/ecossistema/recrutamento/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/ecossistema/biometrics/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/ecossistema/decision/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/composicoes/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/ai-engine/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/analytics/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/api-keys/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/audit-trail/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/baas/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/banking/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/banking-product-portfolio/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/billing/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/biometrics/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/bureaus/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/calculations-engine/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/calendar/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/cms/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/commerce/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/companies/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/customers/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/data-extraction/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/data-store/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/decision-engine/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/decision-platform/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/document-template/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/e-signature/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/email/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/feature-flags/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/file-storage/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/iam/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/meta-account/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/open-finance/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/payments/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/people/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/pricing-engine/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/products/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/rooms/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/service-attestations/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/slack/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/sso/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/webhooks-engine/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/wpp/",
+      "width": 1440,
+      "failures": []
+    },
+    {
+      "route": "/capacidades/wpp-business/",
+      "width": 1440,
+      "failures": []
+    }
+  ]
+}

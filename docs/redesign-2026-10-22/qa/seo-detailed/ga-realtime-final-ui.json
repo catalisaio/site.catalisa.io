@@ -1,0 +1,58 @@
+{
+  "recordedAt": "2026-10-27T01:05:22.482Z",
+  "observedAt": "2026-10-27T01:04:15Z",
+  "method": "Final read-only authenticated normal Chrome GA UI via Claude in Chrome",
+  "accountId": "254659401",
+  "propertyId": "350153952",
+  "propertyName": "Catalisa",
+  "streamId": "4436972873",
+  "streamUrl": "https://catalisa.io",
+  "measurementId": "G-JYJWH17ZVX",
+  "nativeWebsiteSendReportedByParent": {
+    "sentAt": "2026-10-27T00:57:26Z",
+    "events": [
+      "page_view",
+      "qa_realtime_check"
+    ],
+    "transportStatus": 204,
+    "evidence": "qa/seo-detailed/ga-production-delivery.json",
+    "release": "20261027-ga-realtime",
+    "notEquivalentToRealtimeReceipt": true
+  },
+  "elapsedSinceNativeSendSeconds": 409,
+  "realtime": {
+    "url": "https://analytics.google.com/analytics/web/#/a254659401p350153952/realtime/overview",
+    "comparison": "All Users",
+    "availableData": "100%",
+    "activeUsersLast30Minutes": 0,
+    "activeUsersLast5Minutes": 0,
+    "activeUsersChartEmpty": true,
+    "eventCountCard": "No data available",
+    "eventsObserved": [],
+    "campaignSourceGaValidationObserved": false
+  },
+  "realtimeReceiptConfirmed": false,
+  "inspectionCompleted": true,
+  "limits": [
+    "No definitive cause is established for the continued zero.",
+    "Native HTTP204 receipts establish transport, not GA account ingestion.",
+    "Normal Chrome public-site check had no Google SDK and no visible banner, but saved consent was not read or inferred.",
+    "InternalTraffic data filter was Testing and not dropping data; no Developer or Include data filter was observed."
+  ],
+  "scope": {
+    "newSiteVisit": false,
+    "newEventsSent": false,
+    "personalConsentChanged": false,
+    "filtersOrSettingsChanged": false,
+    "oauthGranted": false,
+    "visitorSnapshotOpened": false,
+    "tokensOrCookiesRead": false,
+    "ownTabClosed": true
+  },
+  "evidence": {
+    "cliResult": "/tmp/ga-final-realtime-result.json",
+    "permissionDenials": [],
+    "earlierNormalChrome": "qa/seo-detailed/ga-normal-chrome-realtime-ui.json",
+    "filters": "qa/seo-detailed/ga-data-filters-review.json"
+  }
+}

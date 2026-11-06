@@ -1,0 +1,11 @@
+{
+  "generatedAt": "2026-10-26T12:59:48.105Z",
+  "passed": true,
+  "scannedFiles": 917,
+  "secretNamesChecked": [
+    "SITE_CATALISA_TOKEN",
+    "SITE_SESSION_SECRET"
+  ],
+  "findings": [],
+  "scope": "Private-file names and exact configured server secret values in the complete frontend artifact. Secret values never logged; this is not a general secret-discovery or penetration test."
+}

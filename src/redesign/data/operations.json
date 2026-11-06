@@ -1,0 +1,442 @@
+{
+  "stages": [
+    {
+      "title": "Descreva a necessidade.",
+      "tag": "01 / A intenção",
+      "copy": "Comece pelo trabalho que precisa acontecer: quem participa, o que inicia a jornada e qual próximo passo você espera.",
+      "quote": "“Quando chegar uma nova mensagem, entenda o pedido, avise a equipe e mantenha o atendimento organizado.”",
+      "output": "Uma necessidade com contexto.",
+      "shape": "intention"
+    },
+    {
+      "title": "Revise o plano.",
+      "tag": "02 / A especificação",
+      "copy": "A descrição ganha estrutura. Confira as informações necessárias, as ferramentas envolvidas e os limites antes de seguir.",
+      "quote": "Quem recebe a mensagem? Que informação pode ser consultada? Quando uma pessoa precisa assumir?",
+      "output": "Um plano que o time consegue discutir.",
+      "shape": "plan"
+    },
+    {
+      "title": "Conecte as capacidades.",
+      "tag": "03 / A composição",
+      "copy": "O fluxo visual mostra como as ações se relacionam. Conhecimento, canais e Building Blocks entram conforme a necessidade da jornada.",
+      "quote": "A entrada encontra o contexto. A regra orienta o caminho. A ferramenta realiza a ação.",
+      "output": "Um percurso legível, com responsabilidades.",
+      "shape": "compose"
+    },
+    {
+      "title": "Valide e acompanhe.",
+      "tag": "04 / A operação",
+      "copy": "Teste o comportamento, confira as permissões e acompanhe o resultado. O que a operação ensina orienta o próximo ajuste.",
+      "quote": "O que aconteceu? Onde a equipe precisou intervir? O que deve mudar na próxima versão?",
+      "output": "Uma base para observar e evoluir.",
+      "shape": "operate"
+    }
+  ],
+  "cases": [
+    {
+      "label": "Atendimento",
+      "title": "O pedido chega.<br>A equipe encontra contexto.",
+      "intro": "Uma mensagem deixa de ser apenas uma conversa isolada e passa a participar do trabalho.",
+      "start": "Nova mensagem",
+      "middle": "Entender o pedido",
+      "branches": [
+        "Orientar o cliente",
+        "Encaminhar à equipe"
+      ],
+      "end": "Registrar continuidade",
+      "copy": "O Studio ajuda a estruturar a resposta e as ações que acompanham a conversa. A equipe define o que pode ser respondido, quais informações podem ser usadas e quando o atendimento precisa de uma pessoa.",
+      "blocks": [
+        [
+          "wpp-business",
+          "Canal oficial"
+        ],
+        [
+          "ai-engine",
+          "Leitura do contexto"
+        ],
+        [
+          "customers",
+          "Relacionamento"
+        ]
+      ],
+      "note": "Exemplo ilustrativo. Políticas do canal, autorizações e tratamento de exceções fazem parte da configuração."
+    },
+    {
+      "label": "Crédito",
+      "title": "A proposta avança.<br>A política mantém seu lugar.",
+      "intro": "Preparar o contexto, avaliar a regra e encaminhar o próximo passo são responsabilidades diferentes.",
+      "start": "Proposta recebida",
+      "middle": "Preparar informações",
+      "branches": [
+        "Consultar a política",
+        "Revisar pendências"
+      ],
+      "end": "Encaminhar o resultado",
+      "copy": "A composição organiza as etapas e as capacidades necessárias. A política permanece explícita; a equipe define os critérios, a revisão e os limites da operação.",
+      "blocks": [
+        [
+          "decision-platform",
+          "Preparação da análise"
+        ],
+        [
+          "decision-engine",
+          "Política de decisão"
+        ],
+        [
+          "e-signature",
+          "Formalização"
+        ]
+      ],
+      "note": "Exemplo ilustrativo. Disponibilidade das integrações e validação da operação precisam ser confirmadas antes do uso."
+    },
+    {
+      "label": "Relacionamento",
+      "title": "Uma nova pessoa.<br>Um começo com continuidade.",
+      "intro": "Receber, dar boas-vindas e avisar a equipe podem fazer parte da mesma jornada.",
+      "start": "Novo contato",
+      "middle": "Preparar boas-vindas",
+      "branches": [
+        "Enviar mensagem",
+        "Avisar a equipe"
+      ],
+      "end": "Atualizar o relacionamento",
+      "copy": "Um ponto de partida do Builder pode ser ajustado ao contexto da empresa. O time revisa a mensagem, o canal, os dados usados e o que acontece depois da primeira interação.",
+      "blocks": [
+        [
+          "customers",
+          "Cadastro do contato"
+        ],
+        [
+          "wpp-business",
+          "Boas-vindas"
+        ],
+        [
+          "email",
+          "Notificação à equipe"
+        ]
+      ],
+      "note": "Exemplo ilustrativo baseado nos pontos de partida apresentados pelo Studio. Envio depende das permissões e regras do canal."
+    },
+    {
+      "label": "Banking",
+      "title": "O cliente vê uma conta.<br>A operação conecta a base.",
+      "intro": "Saldo, movimentação e confirmação encontram uma jornada comum entre aplicativo e operação.",
+      "start": "Cliente acessa a conta",
+      "middle": "Identificar e dar contexto",
+      "branches": [
+        "Consultar a conta",
+        "Autorizar a operação"
+      ],
+      "end": "Apresentar o resultado",
+      "copy": "O Studio ajuda a organizar como a experiência usa identidade, serviços bancários e confirmação do titular. O aplicativo apresenta o próximo passo; as capacidades responsáveis aplicam suas regras e devolvem o resultado.",
+      "blocks": [
+        [
+          "iam",
+          "Identidade e permissões"
+        ],
+        [
+          "baas",
+          "Conta e movimentação"
+        ],
+        [
+          "biometrics",
+          "Confirmação do titular"
+        ]
+      ],
+      "note": "Leitura conceitual. Serviços bancários dependem de parceiro contratado e integrações validadas. A confirmação exigida varia conforme a operação."
+    },
+    {
+      "label": "Copiloto",
+      "title": "A pessoa conduz.<br>O contexto acompanha.",
+      "intro": "Um perfil reúne o objetivo da conversa, o apoio ao profissional e os próximos passos do atendimento.",
+      "start": "Atendimento iniciado",
+      "middle": "Reunir o contexto autorizado",
+      "branches": [
+        "Sugerir durante a conversa",
+        "Preparar resumo ao encerrar"
+      ],
+      "end": "Revisar e dar continuidade",
+      "copy": "O profissional define o que o copiloto deve observar e quais ações podem acontecer em cada momento. Sugestões apoiam a conversa; documentos e próximos passos podem passar por revisão antes de seguir para a operação.",
+      "blocks": [
+        [
+          "rooms",
+          "Encontro e contexto"
+        ],
+        [
+          "ai-engine",
+          "Apoio à interpretação"
+        ],
+        [
+          "data-store",
+          "Continuidade do atendimento"
+        ]
+      ],
+      "note": "Exemplo ilustrativo. Apoio de IA, resumo e automações são escolhas independentes; disponibilidade, autorização e revisão são definidas no perfil."
+    }
+  ],
+  "shots": [
+    {
+      "file": "studio-builder.jpg",
+      "title": "Builder / A descrição é o ponto de partida",
+      "desc": "A tela reúne a descrição da necessidade e exemplos para iniciar a construção.",
+      "type": "Builder",
+      "source": "https://catalisa.io/screenshots/studio/builder-home-real.jpg"
+    },
+    {
+      "file": "studio-canvas.png",
+      "title": "Canvas / As conexões ficam visíveis",
+      "desc": "O editor apresenta ações e ramificações de um fluxo no espaço visual.",
+      "type": "Canvas",
+      "source": "https://catalisa.io/screenshots/workflow-editor.png"
+    },
+    {
+      "file": "studio-dashboard.jpg",
+      "title": "Painel / O trabalho ganha uma visão comum",
+      "desc": "O painel reúne a leitura de contatos, mensagens e workflows da operação.",
+      "type": "Painel",
+      "source": "https://catalisa.io/screenshots/dashboard.jpeg"
+    }
+  ],
+  "roles": [
+    {
+      "tab": "Atendimento",
+      "role": "Um atendimento que encontra o próximo passo.",
+      "intro": "Entender o pedido, consultar o contexto permitido e ajudar a pessoa a continuar.",
+      "person": "Cliente",
+      "message": "Preciso remarcar meu atendimento. Tem algum horário esta semana?",
+      "reply": "Posso consultar a disponibilidade para você escolher um novo horário.",
+      "tools": [
+        [
+          "Consultar a agenda",
+          "calendar"
+        ],
+        [
+          "Encontrar o contato",
+          "customers"
+        ]
+      ],
+      "action": "Preparar a solicitação de remarcação",
+      "limit": "A alteração depende da escolha do cliente, das permissões e da confirmação prevista na jornada.",
+      "outcome": "Um horário foi escolhido na demonstração. A solicitação fica preparada para a confirmação definida pela operação."
+    },
+    {
+      "tab": "Copiloto",
+      "role": "A pessoa conduz. O agente apoia.",
+      "intro": "Reunir contexto, sugerir perguntas e preparar registros para o profissional revisar.",
+      "person": "Profissional",
+      "message": "Ajude a organizar as pendências e os próximos passos desta conversa.",
+      "reply": "Posso preparar um resumo do contexto autorizado e destacar o que precisa de conferência.",
+      "tools": [
+        [
+          "Usar o contexto da conversa",
+          "rooms"
+        ],
+        [
+          "Preparar um resumo",
+          "ai-engine"
+        ]
+      ],
+      "action": "Preparar próximos passos para revisão",
+      "limit": "Sugestões e documentos são apoio ao profissional. A revisão continua com a pessoa responsável.",
+      "outcome": "Os próximos passos demonstrativos estão preparados para revisão. Nenhuma tarefa ou mensagem foi criada."
+    },
+    {
+      "tab": "Banking",
+      "role": "A conta tem informação. O cliente precisa de clareza.",
+      "intro": "Ajudar a interpretar a posição da conta e encaminhar a questão ao atendimento certo.",
+      "person": "Titular",
+      "message": "Por que meu saldo disponível é diferente do valor que aparece na conta?",
+      "reply": "Com o acesso permitido, posso consultar o contexto de saldo e reservas para explicar a diferença.",
+      "tools": [
+        [
+          "Consultar a posição da conta",
+          "baas"
+        ],
+        [
+          "Identificar o contexto de acesso",
+          "iam"
+        ]
+      ],
+      "action": "Preparar um pedido de esclarecimento",
+      "limit": "Serviços bancários e autorizações ficam nas capacidades responsáveis. Explicar o saldo não autoriza movimentar dinheiro.",
+      "outcome": "Um pedido demonstrativo de esclarecimento está preparado para o atendimento. Não houve consulta real nem movimentação."
+    },
+    {
+      "tab": "Crédito",
+      "role": "Menos dúvida entre a proposta e a próxima etapa.",
+      "intro": "Localizar pendências e orientar o envio das informações necessárias, com a política no lugar certo.",
+      "person": "Cliente",
+      "message": "Minha proposta está parada. O que falta para continuar?",
+      "reply": "Posso consultar o contexto autorizado da proposta e ajudar a identificar o próximo passo.",
+      "tools": [
+        [
+          "Consultar o contexto da proposta",
+          "data-store"
+        ],
+        [
+          "Localizar os documentos",
+          "file-storage"
+        ]
+      ],
+      "action": "Preparar uma solicitação de complemento",
+      "limit": "O agente orienta o atendimento. Critérios e decisões de crédito permanecem nas políticas e nos responsáveis da operação.",
+      "outcome": "A solicitação demonstrativa de complemento está pronta para revisão. Não houve avaliação nem decisão de crédito."
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Uma mensagem",
+      "title": "Receber é só<br>o primeiro passo.",
+      "copy": "A conversa ganha contexto e encontra uma próxima ação. O fluxo deixa explícito o que deve acontecer entre uma etapa e outra.",
+      "nodes": [
+        "Mensagem recebida",
+        "Consultar o contato",
+        "Preparar resposta",
+        "Enviar pelo canal",
+        "Registrar continuidade"
+      ],
+      "groups": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "notes": [
+        "A mensagem inicia este percurso. O contexto do canal acompanha a entrada.",
+        "O fluxo procura a referência do cliente para continuar com contexto.",
+        "A resposta é preparada conforme as orientações da operação.",
+        "O canal realiza o envio, respeitando suas regras e permissões.",
+        "O relacionamento recebe o registro necessário para a próxima conversa."
+      ],
+      "blocks": [
+        [
+          "wpp-business",
+          "Comunicação"
+        ],
+        [
+          "customers",
+          "Relacionamento"
+        ],
+        [
+          "ai-engine",
+          "Apoio à resposta"
+        ]
+      ],
+      "missing": "Se o contato não tiver os dados necessários, a jornada encaminha a pendência para a equipe.",
+      "failure": "Se o canal não responder, a entrega precisa de tratamento. O registro da tentativa ajuda a equipe a decidir como retomar."
+    },
+    {
+      "label": "Uma proposta",
+      "title": "O trabalho pode se dividir.<br>O contexto continua junto.",
+      "copy": "Consultas independentes podem seguir em paralelo. A próxima etapa aguarda as informações de que precisa para continuar.",
+      "nodes": [
+        "Proposta recebida",
+        "Consultar cadastro",
+        "Consultar documentos",
+        "Reunir informações",
+        "Aplicar a política"
+      ],
+      "groups": [
+        [
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "notes": [
+        "A proposta inicia o fluxo com a referência da operação.",
+        "Duas consultas independentes acontecem lado a lado. Cada uma mantém sua responsabilidade.",
+        "O fluxo reúne os resultados antes de seguir para a avaliação.",
+        "A política usa o contexto reunido. O tratamento do resultado continua conforme as regras da operação."
+      ],
+      "blocks": [
+        [
+          "customers",
+          "Cadastro"
+        ],
+        [
+          "file-storage",
+          "Documentos"
+        ],
+        [
+          "decision-engine",
+          "Política"
+        ]
+      ],
+      "missing": "Documento ausente é uma pendência. O produto precisa definir como coletá-lo ou pedir uma revisão, antes de prosseguir.",
+      "failure": "Se uma consulta falhar, informação incompleta não deve parecer resultado válido. O tratamento da exceção precisa estar previsto."
+    },
+    {
+      "label": "Um atendimento",
+      "title": "A conversa termina.<br>A continuidade começa.",
+      "copy": "O encerramento pode preparar um resumo e reunir os próximos passos. A liberação definida pela operação orienta o que vem depois.",
+      "nodes": [
+        "Conversa encerrada",
+        "Preparar resumo",
+        "Conferir o conteúdo",
+        "Liberar próximos passos",
+        "Atualizar a operação"
+      ],
+      "groups": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "notes": [
+        "O encerramento é o ponto de partida deste exemplo. O uso do conteúdo depende da autorização.",
+        "A composição prepara um resumo para apoiar quem acompanhou a conversa.",
+        "A pessoa responsável confere o conteúdo e os encaminhamentos previstos.",
+        "A jornada continua conforme a liberação humana configurada no produto.",
+        "As capacidades selecionadas atualizam o contexto ou realizam as ações autorizadas."
+      ],
+      "blocks": [
+        [
+          "rooms",
+          "Encontro"
+        ],
+        [
+          "ai-engine",
+          "Resumo"
+        ],
+        [
+          "data-store",
+          "Contexto"
+        ]
+      ],
+      "missing": "Se faltar contexto, o resumo pode precisar de complementação. A pessoa responsável deve conseguir revisar antes de liberar.",
+      "failure": "Uma ação indisponível não conclui o trabalho por aparência. A equipe precisa saber o que ficou pendente e como continuar."
+    }
+  ]
+}

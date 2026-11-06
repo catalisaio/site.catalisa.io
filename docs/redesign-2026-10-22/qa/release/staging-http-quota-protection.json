@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-26T14:56:38.635Z",
+  "passed": false,
+  "hostname": "site-staging.catalisa.io",
+  "basicAuth": false,
+  "scope": "Actual trusted HTTPS certificate, configured edge access, noindex, Caddy routes/static HTML, private Node BFF and real staging shared store. Synthetic session only; no external messages.",
+  "checks": [
+    "valid exact-host TLS and anonymous public staging access",
+    "exact candidate Home bytes and staging robots exclusion",
+    {
+      "route": "/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/capacidades",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/capacidades/ai-engine",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/contato",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/lab",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/ecossistema/banking",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/ecossistema/credit",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/arquitetura",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/press-kit",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/en",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/politica-privacidade",
+      "status": 200,
+      "noindex": true
+    },
+    "all migration redirects preserve query",
+    "real HTML404 noindex",
+    "BFF anonymous401 JSON and origin403"
+  ],
+  "tls": {
+    "authorized": true,
+    "protocol": "TLSv1.3",
+    "validTo": "Jan 23 04:01:29 2027 GMT"
+  },
+  "artifact": {
+    "releaseId": "20261026-concept-null",
+    "homeSha256": "e5523eec12725766b9440141d0ab7504a07d35eb3a4a1a5ba477e4001c6762e8",
+    "identicalToCandidate": true
+  }
+}

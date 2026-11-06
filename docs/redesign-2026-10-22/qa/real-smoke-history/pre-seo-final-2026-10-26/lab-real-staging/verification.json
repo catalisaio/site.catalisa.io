@@ -1,0 +1,335 @@
+{
+  "date": "2026-10-26T14:55:38.783Z",
+  "passed": true,
+  "origin": "https://site-staging.catalisa.io",
+  "tlsValidation": true,
+  "scope": "Real staging AI through the target Lab and BFF. Fictional reserved contact address. No handoff or external messages.",
+  "stage": "contact-continuation",
+  "result": {
+    "idea": "Quero matricular alunos de uma escola de inglês pelo WhatsApp",
+    "elapsedMs": 17108,
+    "concept": {
+      "conceptRef": "concept_d074c6cf-4dd0-4031-bfcf-7c09f54816f4",
+      "version": 1,
+      "briefVersion": 1,
+      "content": {
+        "schemaVersion": "1.0",
+        "title": "Matricula de Alunos por WhatsApp",
+        "summary": "Facilite a matrícula de alunos na escola de inglês através do WhatsApp, garantindo uma experiência rápida e intuitiva.",
+        "hypothesis": "O público-alvo são pessoas interessadas em aprender inglês, possivelmente jovens adultos e adultos. A confirmação de matrícula e os próximos passos devem ser claros e acessíveis.",
+        "roles": [
+          "Usuário interessado",
+          "Atendente de matrícula",
+          "Administrador do sistema"
+        ],
+        "screens": [
+          {
+            "id": "screen-matricula",
+            "title": "Matrícula pelo WhatsApp",
+            "description": "Inicie sua matrícula preenchendo as informações necessárias.",
+            "items": [
+              {
+                "label": "Nome Completo",
+                "value": "Digite seu nome completo"
+              },
+              {
+                "label": "Número de Telefone",
+                "value": "Informe seu telefone para contato"
+              },
+              {
+                "label": "Curso Desejado",
+                "value": "Escolha o curso de inglês"
+              }
+            ],
+            "action": {
+              "label": "Enviar Matrícula",
+              "nextScreenId": "screen-confirmacao"
+            }
+          },
+          {
+            "id": "screen-confirmacao",
+            "title": "Confirmação de Matrícula",
+            "description": "Sua matrícula foi recebida com sucesso! Aguarde a confirmação.",
+            "items": [
+              {
+                "label": "Status",
+                "value": "Em análise"
+              },
+              {
+                "label": "Prazo de Resposta",
+                "value": "Você receberá uma resposta em até 24 horas"
+              },
+              {
+                "label": "Contato",
+                "value": "Entre em contato pelo WhatsApp se precisar de ajuda"
+              }
+            ],
+            "action": {
+              "label": "Voltar ao Início",
+              "nextScreenId": null
+            }
+          }
+        ],
+        "blocks": [
+          {
+            "slug": "wpp",
+            "role": "Canal principal de vendas"
+          },
+          {
+            "slug": "email",
+            "role": "Notificações de status da matrícula"
+          }
+        ],
+        "journey": [
+          {
+            "id": "step-inicio",
+            "label": "Início da Matrícula",
+            "description": "O usuário inicia o processo de matrícula pelo WhatsApp.",
+            "blockSlugs": [
+              "wpp"
+            ],
+            "humanReview": false
+          },
+          {
+            "id": "step-envio",
+            "label": "Envio da Matrícula",
+            "description": "Usuário envia as informações necessárias para a matrícula.",
+            "blockSlugs": [
+              "wpp",
+              "email"
+            ],
+            "humanReview": false
+          },
+          {
+            "id": "step-confirmacao",
+            "label": "Confirmação da Matrícula",
+            "description": "A matrícula é confirmada e o usuário é notificado.",
+            "blockSlugs": [
+              "email"
+            ],
+            "humanReview": true
+          },
+          {
+            "id": "step-fim",
+            "label": "Finalização",
+            "description": "O processo de matrícula é finalizado e o usuário é informado sobre os próximos passos.",
+            "blockSlugs": [
+              "wpp"
+            ],
+            "humanReview": false
+          }
+        ],
+        "limitations": [
+          "Necessário acesso à internet para usar o WhatsApp.",
+          "Dependência da capacidade de resposta dos atendentes.",
+          "Informações devem ser precisas para evitar confusões.",
+          "Pode haver limitações de horário para atendimento."
+        ],
+        "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+      }
+    },
+    "reload": true,
+    "contactContinuation": true,
+    "sessionSetupCount": 1,
+    "requests": [
+      {
+        "path": "/api/site/session",
+        "status": 401,
+        "method": "GET",
+        "elapsedMs": 423
+      },
+      {
+        "path": "/api/site/sessions",
+        "status": 201,
+        "method": "POST",
+        "elapsedMs": 624
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 376
+      },
+      {
+        "path": "/api/site/lab/briefing",
+        "status": 200,
+        "method": "POST",
+        "elapsedMs": 683
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 704
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 526
+      },
+      {
+        "path": "/api/site/identity",
+        "status": 201,
+        "method": "POST",
+        "elapsedMs": 997
+      },
+      {
+        "path": "/api/site/contact",
+        "status": 200,
+        "method": "POST",
+        "elapsedMs": 714
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 572
+      },
+      {
+        "path": "/api/site/concepts",
+        "status": 202,
+        "method": "POST",
+        "elapsedMs": 12552
+      },
+      {
+        "path": "/api/site/jobs/job_02eb07e3-62f1-4c49-9542-c92891576299",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 378
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 374
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 472
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 673
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 716
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 360
+      }
+    ],
+    "errors": []
+  },
+  "requests": [
+    {
+      "path": "/api/site/session",
+      "status": 401,
+      "method": "GET",
+      "elapsedMs": 423
+    },
+    {
+      "path": "/api/site/sessions",
+      "status": 201,
+      "method": "POST",
+      "elapsedMs": 624
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 376
+    },
+    {
+      "path": "/api/site/lab/briefing",
+      "status": 200,
+      "method": "POST",
+      "elapsedMs": 683
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 704
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 526
+    },
+    {
+      "path": "/api/site/identity",
+      "status": 201,
+      "method": "POST",
+      "elapsedMs": 997
+    },
+    {
+      "path": "/api/site/contact",
+      "status": 200,
+      "method": "POST",
+      "elapsedMs": 714
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 572
+    },
+    {
+      "path": "/api/site/concepts",
+      "status": 202,
+      "method": "POST",
+      "elapsedMs": 12552
+    },
+    {
+      "path": "/api/site/jobs/job_02eb07e3-62f1-4c49-9542-c92891576299",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 378
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 374
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 472
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 673
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 716
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 360
+    }
+  ],
+  "failedRequests": [],
+  "errors": [],
+  "totalElapsedMs": 26323
+}

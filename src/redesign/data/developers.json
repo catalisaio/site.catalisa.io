@@ -1,0 +1,104 @@
+{
+  "modes": [
+    {
+      "label": "Do zero",
+      "title": "Seu próximo produto. Sua experiência.",
+      "copy": "Construa a interface e as regras que diferenciam o negócio. Componha identidade, decisão, documentos e comunicação por trás dela. O primeiro recorte pode ser uma jornada inteira ou apenas uma operação.",
+      "nodes": [
+        "Web / mobile",
+        "Seu backend",
+        "Identidade",
+        "Decisão",
+        "Documentos",
+        "Seu banco de dados"
+      ],
+      "detail": "Exemplo: uma proposta de crédito nasce na sua interface, passa pela política publicada e segue para formalização. Você define a experiência, os dados de domínio e os pontos de aprovação.",
+      "keep": "Interface, domínio e estratégia de produto",
+      "add": "Capacidades e integrações selecionadas"
+    },
+    {
+      "label": "Com o que já existe",
+      "title": "O sistema continua. Uma parte evolui.",
+      "copy": "Escolha uma fronteira clara no sistema atual: calcular uma condição, avaliar uma política ou emitir um documento. Seu backend adapta o contrato existente à capacidade escolhida e mantém a jornada sob seu controle.",
+      "nodes": [
+        "ERP / CRM",
+        "Seu adaptador",
+        "Cálculo",
+        "Decisão",
+        "Assinatura",
+        "Core existente"
+      ],
+      "detail": "Exemplo: o CRM continua abrindo propostas e o core continua registrando contratos. Uma chamada ao Decision Engine substitui a política espalhada em serviços. Amplie o recorte depois de validar o primeiro.",
+      "keep": "Core, cadastros e contratos existentes",
+      "add": "Uma capacidade atrás do seu adaptador"
+    },
+    {
+      "label": "Cirúrgico no mobile",
+      "title": "Uma nova capacidade. No app que já está lá.",
+      "copy": "Insira uma função no ponto certo da jornada: simulação, consulta de elegibilidade ou uma etapa de verificação. O aplicativo conversa com seu backend, que controla credenciais, autorização e a integração com a Catalisa.",
+      "nodes": [
+        "Seu aplicativo",
+        "Seu BFF / backend",
+        "Simulação",
+        "Decisão",
+        "Verificação",
+        "Jornada atual"
+      ],
+      "detail": "Exemplo: uma nova tela de simulação em um aplicativo existente. O BFF chama o serviço escolhido e devolve um modelo pronto para a tela. A integração é via API; não pressupõe um SDK mobile ou uma interface pronta.",
+      "keep": "App, navegação e sessão do usuário",
+      "add": "Uma operação exposta pelo seu backend"
+    }
+  ],
+  "calls": [
+    {
+      "name": "Decisão",
+      "method": "POST",
+      "path": "/decision-engine/api/v1/decisions/{decisionId}/execute",
+      "body": {
+        "input": {
+          "age": 25
+        }
+      },
+      "slug": "decision-engine",
+      "note": "Exemplo de entrada para uma decisão de idade. Requer decisão ACTIVE e uma versão publicada; os campos de input pertencem à sua tabela DMN."
+    },
+    {
+      "name": "IA aplicada",
+      "method": "POST",
+      "path": "/ai-engine/api/v1/ai/classify",
+      "body": {
+        "text": "Quero renegociar meu contrato.",
+        "categories": [
+          "renegociacao",
+          "duvida",
+          "reclamacao"
+        ]
+      },
+      "slug": "ai-engine",
+      "note": "Classificação de texto com categorias definidas pela sua operação. Configure os provedores disponíveis no ambiente."
+    },
+    {
+      "name": "Eventos",
+      "method": "GET",
+      "path": "/webhooks-engine/api/v1/delivery-logs",
+      "body": null,
+      "slug": "webhooks-engine",
+      "note": "Consulta ao histórico de entregas do escopo autorizado. A paginação, os filtros e o formato de resposta estão na referência do bloco."
+    }
+  ],
+  "examples": [
+    {
+      "curl": "# Configure a URL e o token do seu ambiente.\n# Substitua {decisionId}, quando aplicável.\ncurl --fail-with-body --request POST \\\n  \"$CATALISA_BASE_URL/decision-engine/api/v1/decisions/{decisionId}/execute\" \\\n  --header \"Authorization: Bearer $CATALISA_TOKEN\" \\\n  --header \"Content-Type: application/json\" \\\n  --data '{\n  \"input\": {\n    \"age\": 25\n  }\n}'",
+      "JavaScript": "// Execute no backend. Configure ambiente e credencial.\nconst base = process.env.CATALISA_BASE_URL;\nconst token = process.env.CATALISA_TOKEN;\nconst path = '/decision-engine/api/v1/decisions/{decisionId}/execute';\n\nconst response = await fetch(base + path, {\n  method: 'POST',\n  headers: {\n    Authorization: `Bearer ${token}`,\n    'Content-Type': 'application/json'\n  },\n  body: JSON.stringify({\n    \"input\": {\n      \"age\": 25\n    }\n  })\n});\n\nif (!response.ok) {\n  throw new Error(`HTTP ${response.status}`);\n}\nconst result = await response.json();"
+    },
+    {
+      "curl": "# Configure a URL e o token do seu ambiente.\n# Substitua {decisionId}, quando aplicável.\ncurl --fail-with-body --request POST \\\n  \"$CATALISA_BASE_URL/ai-engine/api/v1/ai/classify\" \\\n  --header \"Authorization: Bearer $CATALISA_TOKEN\" \\\n  --header \"Content-Type: application/json\" \\\n  --data '{\n  \"text\": \"Quero renegociar meu contrato.\",\n  \"categories\": [\n    \"renegociacao\",\n    \"duvida\",\n    \"reclamacao\"\n  ]\n}'",
+      "JavaScript": "// Execute no backend. Configure ambiente e credencial.\nconst base = process.env.CATALISA_BASE_URL;\nconst token = process.env.CATALISA_TOKEN;\nconst path = '/ai-engine/api/v1/ai/classify';\n\nconst response = await fetch(base + path, {\n  method: 'POST',\n  headers: {\n    Authorization: `Bearer ${token}`,\n    'Content-Type': 'application/json'\n  },\n  body: JSON.stringify({\n    \"text\": \"Quero renegociar meu contrato.\",\n    \"categories\": [\n      \"renegociacao\",\n      \"duvida\",\n      \"reclamacao\"\n    ]\n  })\n});\n\nif (!response.ok) {\n  throw new Error(`HTTP ${response.status}`);\n}\nconst result = await response.json();"
+    },
+    {
+      "curl": "# Configure a URL e o token do seu ambiente.\n# Substitua {decisionId}, quando aplicável.\ncurl --fail-with-body --request GET \\\n  \"$CATALISA_BASE_URL/webhooks-engine/api/v1/delivery-logs\" \\\n  --header \"Authorization: Bearer $CATALISA_TOKEN\"",
+      "JavaScript": "// Execute no backend. Configure ambiente e credencial.\nconst base = process.env.CATALISA_BASE_URL;\nconst token = process.env.CATALISA_TOKEN;\nconst path = '/webhooks-engine/api/v1/delivery-logs';\n\nconst response = await fetch(base + path, {\n  method: 'GET',\n  headers: {\n    Authorization: `Bearer ${token}`,\n    'Content-Type': 'application/json'\n  }\n});\n\nif (!response.ok) {\n  throw new Error(`HTTP ${response.status}`);\n}\nconst result = await response.json();"
+    }
+  ],
+  "source": "N01 v1.1; examples from documentation, not requests exercised against an installed environment."
+}

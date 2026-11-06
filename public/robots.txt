@@ -1,3 +1,5 @@
+# Public content is available to search crawlers, including OAI-SearchBot and Bingbot.
+# No special training-bot policy is introduced by the SEO migration.
 User-agent: *
 Allow: /
 Disallow: /apresentacao/

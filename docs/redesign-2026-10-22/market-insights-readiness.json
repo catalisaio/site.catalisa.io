@@ -1,0 +1,123 @@
+{
+  "status": "runtime-wired-disabled-verified-awaiting-owner-policy-decision",
+  "productionCollectionEnabled": false,
+  "policyApproved": false,
+  "moduleFiles": [
+    "server/site/site-market-insights.ts",
+    "server/site/site-market-store.ts",
+    "server/site/site-market-api.ts",
+    "server/site/site-market-insights.test.ts",
+    "shared/site-market.ts",
+    "server/site/site-market-outbox.ts",
+    "server/site/upstream-pressure.ts"
+  ],
+  "provisioningScript": "scripts/provision-site-market-staging.mjs",
+  "provisioningExecuted": true,
+  "testsExecuted": true,
+  "gate": {
+    "flag": "SITE_MARKET_INSIGHTS_ENABLED=1",
+    "matchingPublishedPolicyHash": "SITE_MARKET_POLICY_SHA256",
+    "approval": "MarketPolicyApproval with explicit owner, approvedAt, public policy version/hash, taxonomy revision, retention <=90 days and suppression threshold >=5 distinct subjects",
+    "default": "undefined service; no collection or network request"
+  },
+  "runtimeIntegration": {
+    "creation": "runtime.ts constructs insights only when SITE_MARKET_INSIGHTS_ENABLED=1 plus matching SITE_MARKET_POLICY_SHA256 and privately configured SITE_MARKET_POLICY_APPROVAL_JSON are valid. No flag is enabled in live environments.",
+    "atomicSources": "Visitor events share SessionState state/receipt CAS. Human delivered/assigned events share the encrypted inbox packet and observation CAS; this remains durable after the 7-day visitor session expires.",
+    "staff": "site-team-api invokes marketTeamRequest only after real IAM-backed staff cookie authentication, persistent quota and origin checks, with explicit mode STAFF.",
+    "staffLink": "/api/site/team/metrics/; link is hidden when instrumentation is disabled.",
+    "reviewLink": "Authenticated team detail links the opaque subject to its review portal.",
+    "retention": "standalone bounded retention invokes metrics cleanup only when the approved feature is configured. Maximum event/review/exclusion retention is 90 days.",
+    "worker": "Separate 30-second Node timer; default three events/cycle, durable CAS lease, receiver deduplication, maximum eight attempts, bounded backoff and Retry-After circuit breaker. No provider body or conversation is logged.",
+    "defaultOff": "No analytics producer, collector query or worker timer is started without the approved enabled configuration."
+  },
+  "producerRequirements": [
+    {
+      "name": "session.started",
+      "proof": "Visitor session creation committed; stable session creation event and time."
+    },
+    {
+      "name": "brief.answer_recorded",
+      "proof": "Brief answer or Lab idea committed; message ID and persisted timestamp."
+    },
+    {
+      "name": "identity.provisioned",
+      "proof": "Provisional identity committed after name; stable contactRef and provision timestamp."
+    },
+    {
+      "name": "concept.requested",
+      "proof": "Running job reservation committed; jobRef and startedAt."
+    },
+    {
+      "name": "concept.ready",
+      "proof": "Validated concept committed; conceptRef/version and completion timestamp."
+    },
+    {
+      "name": "concept.failed",
+      "proof": "Failed or expired job committed; jobRef and failure timestamp; no raw provider error."
+    },
+    {
+      "name": "concept.refined",
+      "proof": "Refined concept version committed; conceptRef/version and completion timestamp."
+    },
+    {
+      "name": "handoff.requested",
+      "proof": "Explicit visitor confirmation and queued packet committed; handoffRef and confirmedAt."
+    },
+    {
+      "name": "handoff.delivered",
+      "proof": "Authenticated operator actually opens context; stable observed event ID/time."
+    },
+    {
+      "name": "human.assigned",
+      "proof": "Authenticated operator actually claims request; stable observed event ID/time."
+    }
+  ],
+  "verificationStillRequired": [
+    "Owner decision about enabling measurement. Keep live flag zero until explicit approval and publication of the specific purpose, lawful basis, taxonomy, access, retention and deletion policy. Technical implementation and synthetic test fixtures are not owner approval."
+  ],
+  "scopeNote": "H14 remains part of the requested scope. Isolated code and a disabled flag are not evidence that all instrumentation and real aggregates have been verified.",
+  "verification": {
+    "targeted": {
+      "passed": 37,
+      "files": 4
+    },
+    "fullRegression": {
+      "passed": 211,
+      "files": 16
+    },
+    "nodeBudgetRegression": {
+      "passed": 22,
+      "files": 2
+    },
+    "nodeTypecheck": "passed",
+    "rateLimitRegression": "passed; default three events and 429 circuit",
+    "finalFullRegression": {
+      "passed": 222,
+      "files": 18,
+      "durationSeconds": 13.54
+    },
+    "finalFullAppAndNodeTypecheck": "passed",
+    "evidence": "qa/market-insights/final-verification.json"
+  },
+  "realSyntheticVerification": {
+    "report": "qa/market-insights/real-staging.json",
+    "passed": true,
+    "existingVisitors": 5,
+    "eventKeys": 17,
+    "tenContractEvents": true,
+    "actualIAM": true,
+    "aggregateThreshold": 5,
+    "fourSubjectsSuppressed": true,
+    "reviewCas": [
+      200,
+      409
+    ],
+    "reviewAudit": true,
+    "erasureBlocksReplay": true,
+    "minimumFetchSpacingMs": 500,
+    "networkRequests": 264,
+    "observed429": 0,
+    "cleanupErrors": [],
+    "ownerPolicyApproved": false
+  }
+}

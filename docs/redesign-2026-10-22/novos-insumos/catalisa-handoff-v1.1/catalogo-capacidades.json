@@ -1,0 +1,314 @@
+[
+  {
+    "slug": "ai-engine",
+    "name": "AI Engine",
+    "tagline": "Tarefas de IA sobre texto, imagem e áudio numa API só, na nuvem ou na sua rede",
+    "status": "Produção",
+    "category": "Inteligência",
+    "source": "https://docs.catalisa.app/blocks/ai-engine/"
+  },
+  {
+    "slug": "analytics",
+    "name": "Analytics",
+    "tagline": "Contar a jornada do cliente sem guardar quem ele é",
+    "status": "Alpha",
+    "category": "Plataforma",
+    "source": "https://docs.catalisa.app/blocks/analytics/"
+  },
+  {
+    "slug": "api-keys",
+    "name": "API Keys",
+    "tagline": "Credencial programática de longa duração, com escopo por rota e rotação sem queda",
+    "status": "Produção",
+    "category": "Identidade",
+    "source": "https://docs.catalisa.app/blocks/api-keys/"
+  },
+  {
+    "slug": "audit-trail",
+    "name": "Audit Trail",
+    "tagline": "Quem fez o quê, quando e o que mudou — para toda a plataforma, por organização",
+    "status": "Beta",
+    "category": "Plataforma",
+    "source": "https://docs.catalisa.app/blocks/audit-trail/"
+  },
+  {
+    "slug": "baas",
+    "name": "BaaS",
+    "tagline": "Contas, Pix e TED por API, com o banco parceiro trocável sem reescrever a integração",
+    "status": "Beta",
+    "category": "Financeiro",
+    "source": "https://docs.catalisa.app/blocks/baas/"
+  },
+  {
+    "slug": "banking",
+    "name": "Banking",
+    "tagline": "A porta do aplicativo de banco digital, sem regra de dinheiro própria",
+    "status": "Alpha",
+    "category": "Financeiro",
+    "source": "https://docs.catalisa.app/blocks/banking/"
+  },
+  {
+    "slug": "banking-product-portfolio",
+    "name": "Banking Product Portfolio",
+    "tagline": "Catálogo de produtos financeiros com versão congelada em cada contrato",
+    "status": "Beta",
+    "category": "Financeiro",
+    "source": "https://docs.catalisa.app/blocks/banking-product-portfolio/"
+  },
+  {
+    "slug": "billing",
+    "name": "Billing",
+    "tagline": "Assinaturas, medição de uso e faturas sem pagar percentual sobre o que você fatura",
+    "status": "Beta",
+    "category": "Financeiro",
+    "source": "https://docs.catalisa.app/blocks/billing/"
+  },
+  {
+    "slug": "biometrics",
+    "name": "Biometrics",
+    "tagline": "Prova de vida e match facial com motor próprio, no contrato dos provedores certificados",
+    "status": "Alpha",
+    "category": "Identidade",
+    "source": "https://docs.catalisa.app/blocks/biometrics/"
+  },
+  {
+    "slug": "bureaus",
+    "name": "Bureaus",
+    "tagline": "Consulta a bureau com cache que impede pagar duas vezes pelo mesmo CPF",
+    "status": "Beta",
+    "category": "Dados",
+    "source": "https://docs.catalisa.app/blocks/bureaus/"
+  },
+  {
+    "slug": "calculations-engine",
+    "name": "Calculations Engine",
+    "tagline": "Parcela, amortização, IOF e CET como API testada, não como planilha",
+    "status": "Beta",
+    "category": "Financeiro",
+    "source": "https://docs.catalisa.app/blocks/calculations-engine/"
+  },
+  {
+    "slug": "calendar",
+    "name": "Calendar",
+    "tagline": "Agenda do Google e do Outlook dos seus usuários, com disponibilidade calculada",
+    "status": "Beta",
+    "category": "Produtividade",
+    "source": "https://docs.catalisa.app/blocks/calendar/"
+  },
+  {
+    "slug": "cms",
+    "name": "CMS",
+    "tagline": "Cor, texto e aviso do aplicativo mudam hoje, sem passar pela loja",
+    "status": "Alpha",
+    "category": "Plataforma",
+    "source": "https://docs.catalisa.app/blocks/cms/"
+  },
+  {
+    "slug": "commerce",
+    "name": "Commerce",
+    "tagline": "Catálogo, estoque, preço e pedido multi-loja na mesma API",
+    "status": "Beta",
+    "category": "Comércio",
+    "source": "https://docs.catalisa.app/blocks/commerce/"
+  },
+  {
+    "slug": "companies",
+    "name": "Companies",
+    "tagline": "Quem pode assinar por esta empresa, para este ato, com este valor",
+    "status": "Alpha",
+    "category": "Identidade",
+    "source": "https://docs.catalisa.app/blocks/companies/"
+  },
+  {
+    "slug": "customers",
+    "name": "Customers",
+    "tagline": "Cadastro de pessoas físicas brasileiras com CPF validado e isolado por organização",
+    "status": "Produção",
+    "category": "Dados",
+    "source": "https://docs.catalisa.app/blocks/customers/"
+  },
+  {
+    "slug": "data-extraction",
+    "name": "Data Extraction",
+    "tagline": "Documento entra como imagem, sai como JSON estruturado com nota de confiança",
+    "status": "Beta",
+    "category": "Inteligência",
+    "source": "https://docs.catalisa.app/blocks/data-extraction/"
+  },
+  {
+    "slug": "data-store",
+    "name": "Data Store",
+    "tagline": "Banco de documentos JSON multi-tenant sem criar tabela para cada cliente",
+    "status": "Produção",
+    "category": "Dados",
+    "source": "https://docs.catalisa.app/blocks/data-store/"
+  },
+  {
+    "slug": "decision-engine",
+    "name": "Decision Engine",
+    "tagline": "Regras de negócio em tabelas DMN, versionadas e alteradas sem deploy",
+    "status": "Produção",
+    "category": "Decisão",
+    "source": "https://docs.catalisa.app/blocks/decision-engine/"
+  },
+  {
+    "slug": "decision-platform",
+    "name": "Decision Platform",
+    "tagline": "A esteira que busca os dados, aplica a política e devolve o veredito",
+    "status": "Beta",
+    "category": "Decisão",
+    "source": "https://docs.catalisa.app/blocks/decision-platform/"
+  },
+  {
+    "slug": "document-template",
+    "name": "Document Template",
+    "tagline": "Contratos e documentos gerados a partir de template versionado, com variáveis tipadas",
+    "status": "Beta",
+    "category": "Documentos",
+    "source": "https://docs.catalisa.app/blocks/document-template/"
+  },
+  {
+    "slug": "e-signature",
+    "name": "E-Signature",
+    "tagline": "Coleta de assinatura eletrônica em documento, com trilha de eventos por signatário",
+    "status": "Beta",
+    "category": "Documentos",
+    "source": "https://docs.catalisa.app/blocks/e-signature/"
+  },
+  {
+    "slug": "email",
+    "name": "Email",
+    "tagline": "A caixa de entrada do seu usuário, Gmail ou Outlook, atrás de uma única API",
+    "status": "Beta",
+    "category": "Comunicação",
+    "source": "https://docs.catalisa.app/blocks/email/"
+  },
+  {
+    "slug": "feature-flags",
+    "name": "Feature Flags",
+    "tagline": "Ligue e desligue funcionalidade em produção sem novo deploy, por segmento de cliente",
+    "status": "Produção",
+    "category": "Plataforma",
+    "source": "https://docs.catalisa.app/blocks/feature-flags/"
+  },
+  {
+    "slug": "file-storage",
+    "name": "File Storage",
+    "tagline": "Upload e download de arquivos direto no S3, isolados por empresa cliente",
+    "status": "Produção",
+    "category": "Documentos",
+    "source": "https://docs.catalisa.app/blocks/file-storage/"
+  },
+  {
+    "slug": "iam",
+    "name": "IAM",
+    "tagline": "Identidade, organizações e permissões para todo o catálogo de building blocks",
+    "status": "Produção",
+    "category": "Identidade",
+    "source": "https://docs.catalisa.app/blocks/iam/"
+  },
+  {
+    "slug": "meta-account",
+    "name": "Meta Account",
+    "tagline": "Provisiona e monitora sua conta Meta Business com a WABA no seu próprio nome",
+    "status": "Beta",
+    "category": "Comunicação",
+    "source": "https://docs.catalisa.app/blocks/meta-account/"
+  },
+  {
+    "slug": "open-finance",
+    "name": "Open Finance",
+    "tagline": "Extrato, saldo e identidade bancária do seu cliente, com o consentimento dele",
+    "status": "Produção",
+    "category": "Financeiro",
+    "source": "https://docs.catalisa.app/blocks/open-finance/"
+  },
+  {
+    "slug": "payments",
+    "name": "Payments",
+    "tagline": "Aceite cartão, Pix e boleto por mais de um adquirente com uma API só",
+    "status": "Beta",
+    "category": "Financeiro",
+    "source": "https://docs.catalisa.app/blocks/payments/"
+  },
+  {
+    "slug": "people",
+    "name": "People",
+    "tagline": "Saber quanto você sabe de uma pessoa, e saber quando parou de saber",
+    "status": "Alpha",
+    "category": "Identidade",
+    "source": "https://docs.catalisa.app/blocks/people/"
+  },
+  {
+    "slug": "pricing-engine",
+    "name": "Pricing Engine",
+    "tagline": "Taxa por faixa de risco, com tarifas, comissões e seguros no mesmo cálculo",
+    "status": "Beta",
+    "category": "Financeiro",
+    "source": "https://docs.catalisa.app/blocks/pricing-engine/"
+  },
+  {
+    "slug": "products",
+    "name": "Products",
+    "tagline": "Parâmetros do seu produto de crédito por API, sem constante escondida no código",
+    "status": "Produção",
+    "category": "Financeiro",
+    "source": "https://docs.catalisa.app/blocks/products/"
+  },
+  {
+    "slug": "rooms",
+    "name": "Rooms",
+    "tagline": "Sala de vídeo com link de convidado, gravação e transcrição em português",
+    "status": "Produção",
+    "category": "Comunicação",
+    "source": "https://docs.catalisa.app/blocks/rooms/"
+  },
+  {
+    "slug": "service-attestations",
+    "name": "Service Attestations",
+    "tagline": "O serviço foi prestado? Quem paga confirma — lido direto do sistema de escala",
+    "status": "Alpha",
+    "category": "Documentos",
+    "source": "https://docs.catalisa.app/blocks/service-attestations/"
+  },
+  {
+    "slug": "slack",
+    "name": "Slack",
+    "tagline": "Mensagens do Slack dos seus clientes entrando e saindo do seu produto",
+    "status": "Alpha",
+    "category": "Comunicação",
+    "source": "https://docs.catalisa.app/blocks/slack/"
+  },
+  {
+    "slug": "sso",
+    "name": "SSO",
+    "tagline": "Login com Google, Microsoft, GitHub e Meta para as empresas que você atende",
+    "status": "Beta",
+    "category": "Identidade",
+    "source": "https://docs.catalisa.app/blocks/sso/"
+  },
+  {
+    "slug": "webhooks-engine",
+    "name": "Webhooks Engine",
+    "tagline": "Entrega eventos aos sistemas dos seus clientes com assinatura, retentativa e histórico",
+    "status": "Produção",
+    "category": "Plataforma",
+    "source": "https://docs.catalisa.app/blocks/webhooks-engine/"
+  },
+  {
+    "slug": "wpp",
+    "name": "WPP",
+    "tagline": "WhatsApp no número que a empresa já usa, sem trocar de linha nem migrar conversa",
+    "status": "Produção",
+    "category": "Comunicação",
+    "source": "https://docs.catalisa.app/blocks/wpp/"
+  },
+  {
+    "slug": "wpp-business",
+    "name": "WPP Business",
+    "tagline": "WhatsApp oficial da Meta, multi-tenant, do primeiro template ao atendimento humano",
+    "status": "Produção",
+    "category": "Comunicação",
+    "source": "https://docs.catalisa.app/blocks/wpp-business/"
+  }
+]

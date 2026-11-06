@@ -1,0 +1,50 @@
+{
+  "checkedAt": "2026-10-27T00:59:21.643Z",
+  "method": "Authenticated Chrome UI navigation through actual Admin menus via Claude in Chrome",
+  "accountId": "254659401",
+  "propertyId": "350153952",
+  "stream": {
+    "id": "4436972873",
+    "name": "Catalisa Site",
+    "url": "https://catalisa.io",
+    "measurementId": "G-JYJWH17ZVX",
+    "enhancedMeasurementEnabled": true,
+    "redactDataEnabled": false,
+    "collectionWarningsObserved": [
+      "No data received in past 48 hours",
+      "Data collection is not active for your website"
+    ],
+    "warningIsNotProofOfRejectionOfARecentQaHit": true
+  },
+  "dataFilters": [
+    {
+      "name": "Internal Traffic",
+      "type": "Internal Traffic",
+      "operation": "Exclude",
+      "state": "Testing",
+      "doesNotDiscardEvents": true
+    }
+  ],
+  "developerTrafficFilterPresent": false,
+  "includeFilterPresent": false,
+  "report": {
+    "comparison": "All Users",
+    "availableData": "100%",
+    "otherFilterOrSegmentObserved": false,
+    "activeUsersLast30Minutes": 0,
+    "activeUsersLast5Minutes": 0,
+    "eventCount": "No data available",
+    "qaRealtimeCheckObserved": false,
+    "pageViewObserved": false,
+    "url": "https://analytics.google.com/analytics/web/#/a254659401p350153952/realtime/overview"
+  },
+  "settingsChanged": false,
+  "oauthGranted": false,
+  "visitorDataRead": false,
+  "credentialsRead": false,
+  "conclusion": "The inspected data filters and report comparisons do not explain the zero. Reception of the controlled QA remains unconfirmed.",
+  "evidence": {
+    "cliResult": "/tmp/ga-data-filters-result.json",
+    "permissionDenials": []
+  }
+}

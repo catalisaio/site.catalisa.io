@@ -1,0 +1,123 @@
+{
+  "startedAt": "2026-10-27T01:26:26.822Z",
+  "checkedAt": "2026-10-27T01:26:55.337Z",
+  "passed": true,
+  "release": "20261027-ga-realtime",
+  "headed": true,
+  "scope": "Actual public consent button and public product navigation in a fresh synthetic Chrome context; real Google SDK and collectors. Clarity collection blocked. No personal profile, cookies or tokens copied; no forms, leads, AI or messages.",
+  "scriptsBeforeConsent": [],
+  "receipts": [
+    {
+      "measurementId": "G-JYJWH17ZVX",
+      "event": "page_view",
+      "status": 204,
+      "hasSessionId": true,
+      "engagementMs": 0,
+      "debug": null,
+      "source": "ga_validation",
+      "consent": "G101"
+    },
+    {
+      "measurementId": "G-JYJWH17ZVX",
+      "event": "section_view",
+      "status": 204,
+      "hasSessionId": true,
+      "engagementMs": 13359,
+      "debug": null,
+      "source": "ga_validation",
+      "consent": "G101"
+    },
+    {
+      "measurementId": "G-JYJWH17ZVX",
+      "event": "scroll_depth",
+      "status": 204,
+      "hasSessionId": true,
+      "engagementMs": 414,
+      "debug": null,
+      "source": "ga_validation",
+      "consent": "G101"
+    },
+    {
+      "measurementId": "G-JYJWH17ZVX",
+      "event": "time_on_page",
+      "status": 204,
+      "hasSessionId": true,
+      "engagementMs": 11,
+      "debug": null,
+      "source": "ga_validation",
+      "consent": "G101"
+    },
+    {
+      "measurementId": "G-JYJWH17ZVX",
+      "event": "cta_click",
+      "status": 204,
+      "hasSessionId": true,
+      "engagementMs": 37,
+      "debug": null,
+      "source": "ga_validation",
+      "consent": "G101"
+    },
+    {
+      "measurementId": "G-JYJWH17ZVX",
+      "event": "section_view",
+      "status": 204,
+      "hasSessionId": true,
+      "engagementMs": 488,
+      "debug": null,
+      "source": "ga_validation",
+      "consent": "G101"
+    },
+    {
+      "measurementId": "G-JYJWH17ZVX",
+      "event": "section_view",
+      "status": 204,
+      "hasSessionId": true,
+      "engagementMs": 2,
+      "debug": null,
+      "source": "ga_validation",
+      "consent": "G101"
+    },
+    {
+      "measurementId": "G-JYJWH17ZVX",
+      "event": "page_view",
+      "status": 204,
+      "hasSessionId": true,
+      "engagementMs": 433,
+      "debug": null,
+      "source": "ga_validation",
+      "consent": "G101"
+    },
+    {
+      "measurementId": "G-JYJWH17ZVX",
+      "event": "qa_realtime_check",
+      "status": 204,
+      "hasSessionId": true,
+      "engagementMs": 2593,
+      "debug": null,
+      "source": "ga_validation",
+      "consent": "G101"
+    }
+  ],
+  "failures": [
+    {
+      "hostname": "www.google-analytics.com",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "hostname": "www.google-analytics.com",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "hostname": "www.google-analytics.com",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "hostname": "www.google-analytics.com",
+      "error": "net::ERR_ABORTED"
+    }
+  ],
+  "limits": [
+    "HTTP204 and a session ID prove browser delivery, not account report ingestion.",
+    "The browser is an automated QA browser; Google can exclude bot traffic."
+  ]
+}

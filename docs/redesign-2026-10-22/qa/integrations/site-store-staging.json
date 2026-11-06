@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-25T00:52:24.566Z",
+  "passed": true,
+  "origin": "https://panel-api.wpp.bb.stg.catalisa.app",
+  "collection": "site_catalisa_sessions_v1",
+  "productionDeploy": false,
+  "panelCodeChanged": false,
+  "buildingBlockCodeChanged": false,
+  "collectionCreated": true,
+  "pii": true,
+  "encryptedFieldsConfigured": [
+    "state",
+    "receipts"
+  ],
+  "duplicateCreate": 409,
+  "concurrentCas": [
+    200,
+    409
+  ],
+  "decryptedReadback": true,
+  "lookupByKey": true,
+  "handoffLookup": true,
+  "encryptedFilterRejected": true,
+  "syntheticDataRemoved": true,
+  "remainingSyntheticDocument": false
+}

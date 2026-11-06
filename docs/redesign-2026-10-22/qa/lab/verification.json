@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-24T22:41:21.433Z",
+  "passed": true,
+  "scope": "Native Lab UI with real BFF, SQLite, schema validation and HTTP fixtures. No external inference, CRM or messages. One browser; sequential widths.",
+  "results": [
+    {
+      "width": 320,
+      "examples": 4,
+      "tabsKeyboard": true,
+      "demoDialog": true,
+      "contactRequired": true,
+      "contactChannel": "email",
+      "generatedScreens": true,
+      "reload": true,
+      "newIdea": true,
+      "contactContinuation": true,
+      "errorAndRetry": false,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "examples": 4,
+      "tabsKeyboard": true,
+      "demoDialog": true,
+      "contactRequired": true,
+      "contactChannel": "email",
+      "generatedScreens": true,
+      "reload": true,
+      "newIdea": true,
+      "contactContinuation": true,
+      "errorAndRetry": false,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "examples": 4,
+      "tabsKeyboard": true,
+      "demoDialog": true,
+      "contactRequired": true,
+      "contactChannel": "phone",
+      "generatedScreens": true,
+      "reload": true,
+      "newIdea": true,
+      "contactContinuation": true,
+      "errorAndRetry": false,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "examples": 4,
+      "tabsKeyboard": true,
+      "demoDialog": true,
+      "contactRequired": true,
+      "contactChannel": "phone",
+      "generatedScreens": true,
+      "reload": true,
+      "newIdea": true,
+      "contactContinuation": true,
+      "errorAndRetry": true,
+      "overflow": false
+    }
+  ],
+  "errors": []
+}

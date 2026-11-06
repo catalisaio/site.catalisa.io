@@ -1,0 +1,563 @@
+{
+  "date": "2026-10-26T14:55:10.152Z",
+  "passed": true,
+  "origin": "https://site-staging.catalisa.io",
+  "tlsValidation": true,
+  "scope": "Real staging AI through the target browser/BFF, fictional short contact flows, human review, reload, one free refinement. No handoff or external messages.",
+  "results": [
+    {
+      "key": "loja-whatsapp",
+      "passed": true,
+      "briefing": {
+        "idea": "vender pelo whats",
+        "context": "loja de roupas",
+        "goal": "vender mais"
+      },
+      "elapsedMs": 16933,
+      "reviewElapsedMs": 47,
+      "hadReview": true,
+      "concept": {
+        "conceptRef": "concept_04a79866-66a4-4bd7-bd39-784242f22bbf",
+        "version": 1,
+        "briefVersion": 3,
+        "content": {
+          "schemaVersion": "1.0",
+          "title": "Venda pelo WhatsApp",
+          "summary": "Estratégia para aumentar as vendas de roupas através do WhatsApp, facilitando a comunicação e o fechamento de vendas.",
+          "hypothesis": "A utilização do WhatsApp como canal de vendas poderá aumentar a conversão e facilitar o atendimento ao cliente.",
+          "roles": [
+            "Vendedor",
+            "Cliente",
+            "Gerente de Vendas"
+          ],
+          "screens": [
+            {
+              "id": "whatsapp-integration",
+              "title": "Integração WhatsApp",
+              "description": "Tela para gerenciar e visualizar interações de vendas pelo WhatsApp.",
+              "items": [
+                {
+                  "label": "Mensagens Recebidas",
+                  "value": "Visualizar todas as mensagens de clientes."
+                },
+                {
+                  "label": "Vendas Recentes",
+                  "value": "Acompanhar as vendas realizadas pelo WhatsApp."
+                },
+                {
+                  "label": "Status de Pedidos",
+                  "value": "Verificar o status dos pedidos em andamento."
+                }
+              ],
+              "action": {
+                "label": "Gerenciar Vendas",
+                "nextScreenId": "sales-dashboard"
+              }
+            },
+            {
+              "id": "sales-dashboard",
+              "title": "Dashboard de Vendas",
+              "description": "Painel de controle com métricas de vendas e desempenho do canal WhatsApp.",
+              "items": [
+                {
+                  "label": "Total de Vendas",
+                  "value": "R$ 5.000,00"
+                },
+                {
+                  "label": "Novos Clientes",
+                  "value": "15 novos clientes"
+                },
+                {
+                  "label": "Pedidos Pendentes",
+                  "value": "7 pedidos pendentes"
+                }
+              ],
+              "action": {
+                "label": "Visualizar Detalhes",
+                "nextScreenId": null
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "slug": "wpp",
+              "role": "Canal principal de vendas"
+            },
+            {
+              "slug": "email",
+              "role": "Notificações de vendas"
+            }
+          ],
+          "journey": [
+            {
+              "id": "initial-contact",
+              "label": "Contato Inicial",
+              "description": "Cliente entra em contato via WhatsApp para tirar dúvidas sobre produtos.",
+              "blockSlugs": [
+                "wpp",
+                "email"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "product_selection",
+              "label": "Seleção de Produto",
+              "description": "Cliente escolhe o produto desejado após receber informações.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "order_confirmation",
+              "label": "Confirmação do Pedido",
+              "description": "Vendedor confirma o pedido e envia os detalhes para o cliente.",
+              "blockSlugs": [
+                "email"
+              ],
+              "humanReview": true
+            },
+            {
+              "id": "payment_processing",
+              "label": "Processamento de Pagamento",
+              "description": "Cliente realiza o pagamento e recebe confirmação.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            }
+          ],
+          "limitations": [
+            "Necessidade de conexão estável com a internet.",
+            "Limitações de tempo para resposta ao cliente.",
+            "Dependência de integração com sistema de pagamento.",
+            "Acompanhamento manual dos pedidos pode ser necessário."
+          ],
+          "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+        }
+      },
+      "refinement": {
+        "elapsedMs": 20646,
+        "concept": {
+          "conceptRef": "concept_04a79866-66a4-4bd7-bd39-784242f22bbf",
+          "version": 2,
+          "briefVersion": 3,
+          "content": {
+            "schemaVersion": "1.0",
+            "title": "Venda pelo WhatsApp",
+            "summary": "Estratégia para aumentar as vendas de roupas através do WhatsApp, facilitando a comunicação e o fechamento de vendas.",
+            "hypothesis": "A utilização do WhatsApp como canal de vendas poderá aumentar a conversão e facilitar o atendimento ao cliente.",
+            "roles": [
+              "Vendedor",
+              "Cliente",
+              "Gerente de Vendas"
+            ],
+            "screens": [
+              {
+                "id": "whatsapp-integration",
+                "title": "Integração WhatsApp",
+                "description": "Tela para gerenciar e visualizar interações de vendas pelo WhatsApp.",
+                "items": [
+                  {
+                    "label": "Mensagens Recebidas",
+                    "value": "Visualizar todas as mensagens de clientes."
+                  },
+                  {
+                    "label": "Vendas Recentes",
+                    "value": "Acompanhar as vendas realizadas pelo WhatsApp."
+                  },
+                  {
+                    "label": "Status de Pedidos",
+                    "value": "Verificar o status dos pedidos em andamento."
+                  }
+                ],
+                "action": {
+                  "label": "Gerenciar Vendas",
+                  "nextScreenId": "sales-dashboard"
+                }
+              },
+              {
+                "id": "sales-dashboard",
+                "title": "Dashboard de Vendas",
+                "description": "Painel de controle com métricas de vendas e desempenho do canal WhatsApp.",
+                "items": [
+                  {
+                    "label": "Total de Vendas",
+                    "value": "R$ 5.000,00"
+                  },
+                  {
+                    "label": "Novos Clientes",
+                    "value": "15 novos clientes"
+                  },
+                  {
+                    "label": "Pedidos Pendentes",
+                    "value": "7 pedidos pendentes"
+                  }
+                ],
+                "action": {
+                  "label": "Visualizar Detalhes",
+                  "nextScreenId": null
+                }
+              }
+            ],
+            "blocks": [
+              {
+                "slug": "wpp",
+                "role": "Canal principal de vendas"
+              },
+              {
+                "slug": "email",
+                "role": "Notificações de vendas"
+              }
+            ],
+            "journey": [
+              {
+                "id": "initial-contact",
+                "label": "Contato Inicial",
+                "description": "Cliente entra em contato via WhatsApp para tirar dúvidas sobre produtos.",
+                "blockSlugs": [
+                  "wpp",
+                  "email"
+                ],
+                "humanReview": false
+              },
+              {
+                "id": "product_selection",
+                "label": "Seleção de Produto",
+                "description": "Cliente escolhe o produto desejado após receber informações.",
+                "blockSlugs": [
+                  "wpp"
+                ],
+                "humanReview": false
+              },
+              {
+                "id": "order_confirmation",
+                "label": "Confirmação do Pedido",
+                "description": "Vendedor confirma o pedido e envia os detalhes por e-mail para o cliente.",
+                "blockSlugs": [
+                  "email"
+                ],
+                "humanReview": true
+              },
+              {
+                "id": "payment_processing",
+                "label": "Processamento de Pagamento",
+                "description": "Cliente realiza o pagamento e recebe confirmação.",
+                "blockSlugs": [
+                  "wpp"
+                ],
+                "humanReview": false
+              }
+            ],
+            "limitations": [
+              "Necessidade de conexão estável com a internet.",
+              "Limitações de tempo para resposta ao cliente.",
+              "Dependência de integração com sistema de pagamento.",
+              "Acompanhamento manual dos pedidos pode ser necessário."
+            ],
+            "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "key": "clinica-agenda",
+      "passed": true,
+      "briefing": {
+        "idea": "agenda clinica",
+        "context": "dentista",
+        "goal": "menos faltas"
+      },
+      "elapsedMs": 13950,
+      "reviewElapsedMs": 72,
+      "hadReview": true,
+      "concept": {
+        "conceptRef": "concept_bc5993a8-65b7-40a7-93c7-a2e01d17b28b",
+        "version": 1,
+        "briefVersion": 3,
+        "content": {
+          "schemaVersion": "1.0",
+          "title": "Agenda Clínica para Dentistas",
+          "summary": "Sistema de agendamento para consultórios dentários, visando reduzir faltas e otimizar a agenda.",
+          "hypothesis": "Implementar uma agenda digital para dentistas pode diminuir o número de faltas e melhorar a gestão dos horários.",
+          "roles": [
+            "Dentista",
+            "Recepcionista",
+            "Paciente"
+          ],
+          "screens": [
+            {
+              "id": "screen-agenda",
+              "title": "Agenda do Dentista",
+              "description": "Visualização da agenda do dentista com horários disponíveis e agendamentos.",
+              "items": [
+                {
+                  "label": "Horários disponíveis",
+                  "value": "Segunda a Sexta, das 8h às 18h"
+                },
+                {
+                  "label": "Consultas agendadas",
+                  "value": "João Silva - 10h30"
+                },
+                {
+                  "label": "Lembretes de consultas",
+                  "value": "Lembrete 1 dia antes"
+                }
+              ],
+              "action": {
+                "label": "Agendar nova consulta",
+                "nextScreenId": "screen-agendar-consulta"
+              }
+            },
+            {
+              "id": "screen-agendar-consulta",
+              "title": "Agendar Consulta",
+              "description": "Formulário para agendar uma nova consulta com o dentista.",
+              "items": [
+                {
+                  "label": "Selecione a data",
+                  "value": "26/10/2026"
+                },
+                {
+                  "label": "Selecione o horário",
+                  "value": "14h00"
+                },
+                {
+                  "label": "Nome do paciente",
+                  "value": "Maria Oliveira"
+                }
+              ],
+              "action": {
+                "label": "Confirmar agendamento",
+                "nextScreenId": null
+              }
+            },
+            {
+              "id": "screen-confirmacao",
+              "title": "Confirmação de Agendamento",
+              "description": "Tela de confirmação após o agendamento da consulta.",
+              "items": [
+                {
+                  "label": "Data da consulta",
+                  "value": "26/10/2026"
+                },
+                {
+                  "label": "Horário da consulta",
+                  "value": "14h00"
+                },
+                {
+                  "label": "Nome do paciente",
+                  "value": "Maria Oliveira"
+                }
+              ],
+              "action": {
+                "label": "Voltar para a agenda",
+                "nextScreenId": "screen-agenda"
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "slug": "calendar",
+              "role": "Gerenciamento de agendamentos"
+            },
+            {
+              "slug": "email",
+              "role": "Notificações de agendamentos"
+            },
+            {
+              "slug": "wpp",
+              "role": "Canal principal de vendas"
+            }
+          ],
+          "journey": [
+            {
+              "id": "step-agendar-consulta",
+              "label": "Agendar nova consulta",
+              "description": "O paciente acessa a agenda e agenda uma nova consulta.",
+              "blockSlugs": [
+                "calendar",
+                "email"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "step-confirmacao",
+              "label": "Confirmação de agendamento",
+              "description": "Confirmação do agendamento enviado ao paciente.",
+              "blockSlugs": [
+                "email"
+              ],
+              "humanReview": true
+            },
+            {
+              "id": "step-lembrar-consulta",
+              "label": "Lembrete de consulta",
+              "description": "Lembrete enviado ao paciente um dia antes da consulta.",
+              "blockSlugs": [
+                "email"
+              ],
+              "humanReview": false
+            }
+          ],
+          "limitations": [
+            "Necessário acesso à internet para o uso do sistema.",
+            "Dependência de confirmação dos pacientes para agendamentos.",
+            "Possíveis falhas de comunicação com os sistemas de e-mail."
+          ],
+          "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+        }
+      },
+      "errors": []
+    },
+    {
+      "key": "escola-cobranca",
+      "passed": true,
+      "briefing": {
+        "idea": "cobrar atrasados",
+        "context": "escola de ingles",
+        "goal": "parar cobranca manual"
+      },
+      "elapsedMs": 14927,
+      "reviewElapsedMs": 56,
+      "hadReview": true,
+      "concept": {
+        "conceptRef": "concept_01a7c633-d3a6-44d0-806f-bb4231c0d2cf",
+        "version": 1,
+        "briefVersion": 3,
+        "content": {
+          "schemaVersion": "1.0",
+          "title": "Cobrança de Atrasados",
+          "summary": "Sistema automatizado para cobrança de mensalidades atrasadas em escolas de inglês, visando reduzir a necessidade de cobranças manuais.",
+          "hypothesis": "A automação da cobrança de mensalidades atrasadas pode aumentar a eficiência e a taxa de recuperação de valores devidos.",
+          "roles": [
+            "Administrador",
+            "Financeiro",
+            "Atendente"
+          ],
+          "screens": [
+            {
+              "id": "screen1",
+              "title": "Listagem de Atrasados",
+              "description": "Visualização de alunos com mensalidades em atraso, incluindo detalhes como nome, valor devido e data de vencimento.",
+              "items": [
+                {
+                  "label": "Nome do Aluno",
+                  "value": "João Silva"
+                },
+                {
+                  "label": "Valor Devido",
+                  "value": "R$ 200,00"
+                },
+                {
+                  "label": "Data de Vencimento",
+                  "value": "15/10/2026"
+                }
+              ],
+              "action": {
+                "label": "Enviar Lembrete",
+                "nextScreenId": "screen2"
+              }
+            },
+            {
+              "id": "screen2",
+              "title": "Configuração de Lembrete",
+              "description": "Formulário para configurar o lembrete de cobrança, com opções de canal e mensagem personalizada.",
+              "items": [
+                {
+                  "label": "Canal",
+                  "value": "WhatsApp"
+                },
+                {
+                  "label": "Mensagem",
+                  "value": "Olá, João! Sua mensalidade está atrasada. Por favor, regularize sua situação."
+                },
+                {
+                  "label": "Data do Envio",
+                  "value": "26/10/2026"
+                }
+              ],
+              "action": {
+                "label": "Enviar Lembrete",
+                "nextScreenId": null
+              }
+            },
+            {
+              "id": "screen3",
+              "title": "Confirmação de Envio",
+              "description": "Tela que confirma o envio do lembrete de cobrança, com opções para visualizar o histórico de envios.",
+              "items": [
+                {
+                  "label": "Status",
+                  "value": "Lembrete Enviado"
+                },
+                {
+                  "label": "Destinatário",
+                  "value": "João Silva"
+                },
+                {
+                  "label": "Data de Envio",
+                  "value": "26/10/2026"
+                }
+              ],
+              "action": {
+                "label": "Voltar à Listagem",
+                "nextScreenId": "screen1"
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "slug": "wpp",
+              "role": "Canal principal de vendas"
+            },
+            {
+              "slug": "email",
+              "role": "Notificações de cobrança"
+            }
+          ],
+          "journey": [
+            {
+              "id": "step1",
+              "label": "Identificação de Atrasados",
+              "description": "Listar alunos com mensalidades atrasadas para ação de cobrança.",
+              "blockSlugs": [
+                "wpp",
+                "email"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "step2",
+              "label": "Envio de Lembrete",
+              "description": "Enviar lembrete de cobrança via WhatsApp ou e-mail.",
+              "blockSlugs": [
+                "wpp",
+                "email"
+              ],
+              "humanReview": true
+            },
+            {
+              "id": "step3",
+              "label": "Confirmação de Cobrança",
+              "description": "Confirmar o envio do lembrete e registrar no sistema.",
+              "blockSlugs": [
+                "wpp",
+                "email"
+              ],
+              "humanReview": false
+            }
+          ],
+          "limitations": [
+            "Necessidade de acesso à lista de alunos.",
+            "Dependência da integração com o WhatsApp.",
+            "Restrições na personalização das mensagens."
+          ],
+          "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+        }
+      },
+      "errors": []
+    }
+  ]
+}

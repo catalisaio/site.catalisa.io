@@ -1,0 +1,10 @@
+{
+  "checkedAt": "2026-10-26T15:04:41.263Z",
+  "passed": true,
+  "scope": "Actual staging read and replay of a previously completed synthetic Lab receipt. First browser acknowledgement deliberately aborted; current client retries the identical key. No new concept, inference, contact, external message or production change.",
+  "injectedResponseLoss": true,
+  "postRequests": 2,
+  "sameIdempotencyKey": true,
+  "newGenerationJobs": 0,
+  "sourceSha256": "143b1b485eabd3b280aacf6bd0cb84347733fa02edce1334cb7f2a35c39ce876"
+}

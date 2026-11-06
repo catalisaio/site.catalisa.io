@@ -1,0 +1,27 @@
+import fs from 'node:fs/promises';
+import vm from 'node:vm';
+import {JSDOM} from 'jsdom';
+import {referenceContext} from './redesign-source.mjs';
+import {compileHtml} from './compile-redesign-html.mjs';
+import {scopeStyles} from './scope-redesign-styles.mjs';
+const ctx=await referenceContext(['connection/experience.js']);
+const read=expression=>vm.runInContext(expression,ctx);
+await fs.writeFile('src/redesign/data/lab.json',read('JSON.stringify(L_SCENARIOS,null,2)')+'\n');
+const page=new JSDOM('<main>'+read('lPage()')+'</main>').window.document.querySelector('main').firstElementChild;
+const jsx=compileHtml(page,node=>{
+ if(node.id==='l-form')return{attributes:{onSubmit:'{event=>{event.preventDefault();onGenerate();}}','aria-busy':'{busy}'}};
+ if(node.id==='l-prompt')return{attributes:{value:'{draft}',onChange:'{event=>setDraft(event.currentTarget.value)}',disabled:'{busy}'},children:''};
+ if(node.id==='l-form-status')return{children:'{status}'};
+ if(node.localName==='button'&&node.type==='submit'&&node.closest('form')?.id==='l-form')return{attributes:{disabled:'{busy}'},children:'{busy?<>Aguarde… <span className="l-spinner" aria-hidden="true"/></>:<>Visualizar minha ideia <span>↗</span></>}'};
+ if(node.id==='l-result')return{attributes:{'aria-busy':'{busy}'},children:'{result}'};
+ if(node.id==='l-chat-log')return{children:'{conversation}'};
+ if(node.id==='l-demo-dialog')return'{dialog}';
+ if(node.hasAttribute('data-l-example'))return{attributes:{onClick:`{()=>onExample(${JSON.stringify(node.dataset.lExample)})}`,disabled:'{busy}'}};
+ if(node.classList.contains('l-prototype-note'))return{children:'<>Os exemplos são demonstrações. Ao gerar sua ideia, o briefing é salvo e processado por IA para criar um conceito exploratório. <Link to="/contato/">Continue a conversa com a Catalisa ↗</Link></>'};
+ if(node.localName==='p'&&node.textContent.includes('motor de IA ainda não conectado'))return{children:'<>Conceito exploratório · nenhuma operação é executada nesta prévia. Sua ideia é salva e processada por IA. <a href="/politica-privacidade">Política de Privacidade</a>.</>'};
+ if(node.localName==='button')throw Error('Unbound Lab button: '+node.outerHTML);
+ return null;
+});
+await fs.writeFile('src/redesign/LabViews.tsx',`// Generated offline from the immutable final Lab composition. No legacy runtime.\nimport type{ReactNode}from'react';import{Link}from'react-router-dom';\nexport function LabShell({draft,setDraft,busy,status,onGenerate,onExample,result,conversation,dialog}:{draft:string;setDraft:(value:string)=>void;busy:boolean;status:string;onGenerate:()=>void;onExample:(key:string)=>void;result:ReactNode;conversation:ReactNode;dialog:ReactNode}){return ${jsx};}\n`);
+await scopeStyles({files:[{file:'site'},{file:'experience',all:true},{file:'mobile'}],documents:[page.parentElement],root:'.c-lab',output:'src/redesign/lab-reference.css',insideMain:true});
+console.log('Lab shell, sculpture, scenario data and scoped styles generated from final HTML.');

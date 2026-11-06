@@ -1,0 +1,64 @@
+/* Generated offline from immutable N01 CSS; scoped to .c-resources. */
+.c-site .c-resources a{color:inherit;text-decoration:none}.c-site .c-resources button{font:inherit}.c-site .c-resources button{cursor:pointer;color:inherit}.c-site .c-resources button:focus-visible,.c-site .c-resources a:focus-visible{outline:2px solid var(--c-brand);outline-offset:6px}.c-site .c-resources button{border:0;background:none}.c-site .c-resources img{max-width:100%;display:block}.c-site .c-resources h1,.c-site .c-resources h2,.c-site .c-resources h3,.c-site .c-resources p{margin:0}.c-site .c-resources h1,.c-site .c-resources h2,.c-site .c-resources h3{font-weight:500;letter-spacing:-.055em}.c-site .c-resources h2{font-size:clamp(30px,3.3vw,51px);line-height:1.08}.c-site .c-resources p{line-height:1.6}.c-site .c-resources .c-wrap{width:calc(100% - 11.4%);max-width:1600px;margin:auto}.c-site .c-resources .section{padding:100px 0}.c-site .c-resources .c-eyebrow{display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:25px}.c-site .c-resources .c-text-link{display:inline-flex;align-items:center;gap:12px;font-size:14px;line-height:1.6;border-bottom:1px solid var(--c-ink);padding-bottom:3px}.c-site .c-resources .c-text-link span{transition:transform .2s}.c-site .c-resources .c-text-link:hover span{transform:translate(2px,-2px)}.c-site .c-resources .page-intro{padding:80px 0 100px;border-bottom:1px solid var(--c-rule)}.c-site .c-resources .page-intro h1{font-size:clamp(48px,6.3vw,90px);line-height:1.01;letter-spacing:-.06em;max-width:1100px}.c-site .c-resources .page-intro p{font-size:20px;max-width:720px;margin-top:35px}.c-site .c-resources .screenshot-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;margin-top:50px}.c-site .c-resources .screenshot-button{padding:0;text-align:left}.c-site .c-resources .screenshot-button img{width:100%;height:300px;object-fit:contain;object-position:left center;background:#eeece7}.c-site .c-resources .screenshot-button span{display:block;font-size:16px;margin-top:18px}.c-site .c-resources .reference-list,.c-site .c-resources .site-map>div{display:flex;flex-direction:column;align-items:flex-start;gap:25px}.c-site .c-resources .site-map{display:grid;grid-template-columns:repeat(3,1fr);gap:60px}.c-site .c-resources .reference-list .c-text-link,.c-site .c-resources .site-map .c-text-link{border:0}
+@keyframes c-resources-trace-path{to{stroke-dashoffset:0}}@keyframes c-resources-film-assemble{0%,15%,100%{opacity:1;transform:scale(1)}40%,65%{opacity:0;transform:scale(1.04)}}@keyframes c-resources-film-explode{0%,15%,100%{opacity:0;transform:scale(.94)}40%,65%{opacity:1;transform:scale(1)}}
+@media(max-width:1050px){.c-site .c-resources .section{padding:75px 0}.c-site .c-resources .page-intro{padding:65px 0 75px}}
+@media(max-width:700px){.c-site .c-resources .c-wrap{width:calc(100% - 44px)}.c-site .c-resources .c-eyebrow{font-size:10px;margin-bottom:22px}.c-site .c-resources .section{padding:55px 0}.c-site .c-resources .page-intro{padding:45px 0 55px}.c-site .c-resources .page-intro h1{font-size:45px;overflow-wrap:break-word}.c-site .c-resources .page-intro p{font-size:17px;margin-top:25px}.c-site .c-resources .screenshot-grid{grid-template-columns:1fr;gap:35px;margin-top:30px}.c-site .c-resources .screenshot-button img{height:240px}.c-site .c-resources .screenshot-button span{font-size:14px}.c-site .c-resources .site-map{grid-template-columns:1fr;gap:40px}}
+/* Keep immersive art within the page and feather its seamless ground. */
+.c-site .c-resources .k-hero{background:#e9e1ef;padding:75px 0}
+.c-site .c-resources .k-hero-grid{display:grid;grid-template-columns:1.3fr 1fr;align-items:center;gap:8%}
+.c-site .c-resources .k-hero h1{font-size:clamp(48px,5.8vw,86px);line-height:1.03}
+.c-site .c-resources .k-hero em{font-style:normal;color:#734b9c}
+.c-site .c-resources .k-hero p{font-size:18px;max-width:540px;margin:25px 0}
+.c-site .c-resources .k-button{display:inline-block;padding:18px 24px;background:#56319a;color:#fff;font-size:14px}
+.c-site .c-resources .k-hero small{display:block;font:11px monospace;margin-top:16px;color:#756282}
+.c-site .c-resources .k-brand-art{background:#56319a;aspect-ratio:1;display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(-4deg);box-shadow:20px 20px 0 #f18a43}
+.c-site .c-resources .k-brand-art img{width:85%}
+.c-site .c-resources .k-brand-art span{font:10px monospace;color:#d7c1ed}
+.c-site .c-resources .k-nav{display:flex;gap:35px;padding-block:24px;border-bottom:1px solid #cdbed8;font-size:13px;overflow:auto;white-space:nowrap}
+.c-site .c-resources .k-section{padding-block:90px}
+.c-site .c-resources .k-heading{max-width:770px;margin-bottom:45px}
+.c-site .c-resources .k-heading h2{font-size:clamp(34px,4vw,60px)}
+.c-site .c-resources .k-heading p{max-width:620px;margin-top:24px;color:#6c5d75}
+.c-site .c-resources .k-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.c-site .c-resources .k-card{border:1px solid #d5cbdc;background:#fcfafc;min-width:0}
+.c-site .c-resources .k-preview{height:185px;display:grid;place-items:center}
+.c-site .c-resources .k-preview img{width:90%;height:100%;object-fit:contain}
+.c-site .c-resources .k-preview.simbolo img{width:65%}
+.c-site .c-resources .k-card-info{padding:22px}
+.c-site .c-resources .k-card-info h3{font-size:21px}
+.c-site .c-resources .k-card-info>span{display:block;font-size:11px;color:#7a6d83;margin:10px 0}
+.c-site .c-resources .k-downloads{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px}
+.c-site .c-resources .k-downloads a{font:10px/1.5 monospace;padding:9px;background:#eee7f3;border:1px solid #d9cbe3;color:#56319a}
+.c-site .c-resources .k-downloads a:hover{background:#56319a;color:#fff}
+.c-site .c-resources .k-symbol-section{background:#e8dfef}
+.c-site .c-resources .k-avatars{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.c-site .c-resources .k-avatars img{width:100%;aspect-ratio:1;max-height:280px;object-fit:contain;background:#eee8f2}
+.c-site .c-resources .k-avatars h3,.c-site .c-resources .k-covers h3{font-size:20px;margin-top:20px}
+.c-site .c-resources .k-covers{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:55px}
+.c-site .c-resources .k-covers img{width:100%;aspect-ratio:1.9;object-fit:contain;background:#eee8f2}
+.c-site .c-resources .k-palette-section{background:#211b29;color:#fff}
+.c-site .c-resources .k-palette{display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+.c-site .c-resources .k-palette button{padding:0;text-align:left;color:#fff}
+.c-site .c-resources .k-palette button>span{height:150px;display:block;border:1px solid #ffffff25}
+.c-site .c-resources .k-palette b{display:block;font-size:12px;margin-top:16px;font-weight:400}
+.c-site .c-resources .k-palette code{font-size:11px;display:block;margin-top:8px;color:#c2b2ce}
+.c-site .c-resources #k-copy-status{font-size:12px;color:#c2b2ce;margin-top:24px}
+.c-site .c-resources .k-guide{display:grid;grid-template-columns:repeat(3,1fr);gap:45px}
+.c-site .c-resources .k-guide h3{font-size:25px;margin-bottom:20px}
+.c-site .c-resources .k-guide p{font-size:14px;color:#6a5d72;margin-bottom:16px}
+.c-site .c-resources .k-final{margin-top:60px;background:#e9e1ef;padding:35px;display:flex;justify-content:space-between;gap:25px;align-items:center}
+.c-site .c-resources .k-final h3{font-size:28px}
+.c-site .c-resources .k-final p{font-size:14px;margin-top:10px}
+@media(max-width:900px){.c-site .c-resources .k-grid{grid-template-columns:1fr 1fr}.c-site .c-resources .k-palette{grid-template-columns:repeat(3,1fr)}.c-site .c-resources .k-guide{gap:25px}.c-site .c-resources .k-hero-grid{gap:40px}.c-site .c-resources .k-hero h1{font-size:52px}}
+@media(max-width:650px){.c-site .c-resources .k-hero-grid,.c-site .c-resources .k-grid,.c-site .c-resources .k-avatars,.c-site .c-resources .k-covers,.c-site .c-resources .k-guide{grid-template-columns:1fr}.c-site .c-resources .k-hero{padding:45px 0}.c-site .c-resources .k-brand-art{max-width:300px;width:90%;margin:20px auto}.c-site .c-resources .k-section{padding-block:55px}.c-site .c-resources .k-nav{gap:22px}.c-site .c-resources .k-palette{grid-template-columns:1fr 1fr}.c-site .c-resources .k-final{flex-direction:column;align-items:flex-start;padding:25px}.c-site .c-resources .k-hero h1{font-size:45px}.c-site .c-resources .k-preview{height:200px}.c-site .c-resources .k-avatars img{max-height:320px}}
+/* v1.1 — intentional small-screen layouts. Desktop compositions are preserved. */
+@media(max-width:700px){
+ .c-site .c-resources :where(button,[role=tab],summary){min-height:44px;touch-action:manipulation}
+ .c-site .c-resources :where(h1,h2,h3,h4){overflow-wrap:break-word}
+ .c-site .c-resources .page-intro h1{font-size:clamp(37px,10.4vw,54px);overflow-wrap:anywhere}
+ .c-site .c-resources .site-map a,.c-site .c-resources .reference-list a{min-height:44px;display:flex;align-items:center;overflow-wrap:anywhere}
+ .c-site .c-resources .k-downloads a{min-height:44px;display:inline-flex;align-items:center;font-size:12px}
+}
+@media(max-width:360px){
+ .c-site .c-resources .c-wrap{width:calc(100% - 36px)}
+}

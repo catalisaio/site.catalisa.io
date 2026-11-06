@@ -1,0 +1,107 @@
+{
+  "updatedAt": "2026-10-25T06:48:34.490278+00:00",
+  "objective": "entao fecha tudo quero 100% tudo pronto pra producao",
+  "revision": "20261025-r2",
+  "technicalFunctionalAcceptancePassed": true,
+  "production": {
+    "published": false,
+    "publicUnchanged": true,
+    "explicitApprovalRequired": true,
+    "authorizationReceived": false,
+    "resourcesPrepared": true,
+    "resourcesRealSmokePassed": true,
+    "preparedRelease": ".local/site/releases/production-20261025-r2",
+    "publicHomeSha256": "e446bf5b5f201e8db907a3186f022f07fb902c76c85a134c2904d560a8957735",
+    "routerReadOnlyPlan": "legacy8081 remains active; candidate18182 and rollback prepared; no changes applied"
+  },
+  "staging": {
+    "url": "https://site-staging.catalisa.io",
+    "releaseId": "20261025-r2",
+    "httpsVerified": true,
+    "basicAuth": true,
+    "noindex": true,
+    "robotsDisallow": true,
+    "privateAccessFile": ".local/site/staging-https/access.json",
+    "exactCandidateHomeBytesVerified": true,
+    "publicAndServerIdenticalToProductionPrepared": true,
+    "publicArtifactSha256": "948f85b14b796e50623068d7bf0c8f69818fad5b328e87df532d2b7e642724ff",
+    "serverArtifactSha256": "a4eb20162dd086e470a02df120bdfdf5fc347bfd8dcd60e64365a62dd47a5dff"
+  },
+  "localPreview": {
+    "url": "http://localhost:5175/",
+    "running": true,
+    "hmr": true
+  },
+  "checks": {
+    "tests": 231,
+    "testFiles": 20,
+    "appAndNodeTypeScript": true,
+    "prerenderedRoutes": 257,
+    "seoRoutes": 256,
+    "seoFailures": 0,
+    "seoWarnings": 0,
+    "publicSitemapUrls": 255,
+    "artifactBrowserChecks": 41,
+    "functionalActualStage": [
+      "direct contact without AI",
+      "three short AI Contact flows and free refinement",
+      "Lab AI/reload/Contact continuation",
+      "real operator login/open/claim/reply/reload/logout"
+    ],
+    "fourWidths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "reviewElapsedMs": [
+      1921,
+      52,
+      1927
+    ],
+    "contactGenerationElapsedMs": [
+      33942,
+      20843,
+      32958
+    ],
+    "labGenerationElapsedMs": 59949,
+    "directHandoffElapsedMs": 3952
+  },
+  "performance": {
+    "homeLcpMs": 3032,
+    "homeCls": 0.021033977807361437,
+    "previousHomeLcpMs": 3272,
+    "homeGoal2500msMet": false,
+    "scope": "One cold-cache emulated mobile laboratory run: 150ms RTT, 1.6Mbps and 4x CPU. This is not physical-device or field CWV certification. Other six measured routes were below2.5s before the Home-only preload; final functional smoke covers r2."
+  },
+  "market": {
+    "implementedAndSyntheticRealSmokePassed": true,
+    "liveEnabled": false,
+    "policyApproved": false,
+    "ownerDecisionPending": true
+  },
+  "remaining": [
+    "Owner visual/editorial acceptance of the presented staging revision and policy text",
+    "Explicit authorization before production installation and public cutover",
+    "Owner decision before any real market-insights collection; current flag remains0"
+  ],
+  "limits": [
+    "Home LCP is3.032s in the final laboratory measurement, above the2.5s good threshold; no claim of100% performance",
+    "AI generation remains variable: approximately21–34s in Contact and60s in this Lab test, with progress visible",
+    "83 editorial review records retain pending owner decisions; technical source/hash review is not owner approval",
+    "No field indexing/ranking or physical-device validation is claimed",
+    "No production website, panel or building-block deployment; no CRM creation or outbound human messages"
+  ],
+  "evidence": {
+    "unit": "qa/integrations/contact-direct-unit.json",
+    "http": "qa/release/staging-http.json",
+    "direct": "qa/contact-direct-real-staging/verification.json",
+    "contact": "qa/contact-real-staging/verification.json",
+    "lab": "qa/lab-real-staging/verification.json",
+    "inbox": "qa/inbox-browser-staging/verification.json",
+    "home": "qa/home-preload-production-review/verification.json",
+    "productionResources": "qa/integrations/production-resources-real.json",
+    "marketSynthetic": "qa/market-insights/real-staging.json",
+    "rollback": "qa/release/staging-rollback.json"
+  }
+}

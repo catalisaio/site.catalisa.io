@@ -2,6 +2,8 @@ import { useEffect, useRef, useCallback } from 'react';
 import { useLocation } from 'react-router-dom';
 import { getTrackingContext } from '../lib/presentationTracking';
 import { classifyPageType, resolveFunnelStages } from '../lib/funnelDefinitions';
+import {redesignRelease,liveRedesignPreview}from'../redesign/preview';
+import {trackSiteEvent}from'../analytics/site-analytics';
 
 // ---- Data Layer type helper ----
 declare global {
@@ -17,6 +19,9 @@ declare global {
  * Automatically enriches with invite context when a tracking session is active.
  */
 function pushEvent(event: string, params: Record<string, unknown> = {}) {
+  // Preserved invite hooks must not enqueue recipient names/codes for a vendor
+  // that could be loaded on a later public SPA visit in the new release.
+  if(redesignRelease||liveRedesignPreview){trackSiteEvent(event,params);return;}
   const ctx = getTrackingContext();
   const enriched = ctx.sessionId
     ? {

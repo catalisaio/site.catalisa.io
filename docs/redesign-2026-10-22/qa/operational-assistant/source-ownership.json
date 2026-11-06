@@ -1,0 +1,29 @@
+{
+  "modifiedSharedFiles": [
+    "src/redesign/App.tsx",
+    "src/redesign/HeaderView.tsx",
+    "src/redesign/i18n/locales/da-DK.json",
+    "src/redesign/i18n/locales/de-DE.json",
+    "src/redesign/i18n/locales/en-US.json",
+    "src/redesign/i18n/locales/es-ES.json",
+    "src/redesign/i18n/locales/fr-FR.json",
+    "src/redesign/i18n/locales/nl-NL.json",
+    "src/redesign/i18n/locales/pt-BR.json",
+    "src/redesign/i18n/routes.ts",
+    "src/seo/redesign.ts"
+  ],
+  "newOwnedFiles": [
+    "src/redesign/OperationalAssistant.tsx",
+    "src/redesign/operational-assistant.css",
+    "src/redesign/i18n/operational-assistant-messages.json",
+    "scripts/assemble-operational-assistant-release.mjs",
+    "scripts/verify-operational-assistant.mjs",
+    "scripts/verify-operational-assistant-locales.mjs",
+    "scripts/verify-operational-assistant-home-preservation.mjs",
+    "scripts/verify-operational-assistant-boundaries.mjs",
+    "scripts/verify-operational-assistant-http.mjs",
+    "docs/redesign-2026-10-22/qa/localization/source-operational-assistant-additions.json"
+  ],
+  "homeUnchanged": true,
+  "noUnrelatedStashResetDiscardOrCommit": true
+}

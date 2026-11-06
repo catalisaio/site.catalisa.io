@@ -1,0 +1,67 @@
+{
+ "v": 4,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-26T14:31:10Z"
+ },
+ "lists": "css",
+ "title": "Pine · Onboarding PJ",
+ "cover": "cover",
+ "order": [
+  "cover",
+  "pedido",
+  "tese",
+  "numeros",
+  "jornada",
+  "cadastro",
+  "documentos",
+  "biometria",
+  "decisao",
+  "mesa",
+  "pendencias",
+  "trilha",
+  "backoffice",
+  "app",
+  "arquitetura",
+  "confianca",
+  "sequencia",
+  "alem",
+  "antecipacao",
+  "agro",
+  "mesa-credito",
+  "pix-boleto",
+  "motor-calculo",
+  "blocos",
+  "proximos",
+  "fecho"
+ ],
+ "sections": {
+  "s1": {
+   "description": "A proposta: o pedido, a tese e a jornada PJ",
+   "start": "cover"
+  },
+  "s2": {
+   "description": "Os oito blocos da jornada, cada um com a tela do protótipo do Pine",
+   "start": "cadastro"
+  },
+  "s3": {
+   "description": "Depois da conta, arquitetura, confiança e implantação",
+   "start": "app"
+  },
+  "s4": {
+   "description": "Além do onboarding: seis portas de crédito sobre a mesma fundação",
+   "start": "alem"
+  },
+  "s5": {
+   "description": "Próximos passos e fecho",
+   "start": "proximos"
+  }
+ },
+ "faces": {
+  "inter": {
+   "family": "Inter",
+   "href": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+  }
+ },
+ "designSystems": []
+}

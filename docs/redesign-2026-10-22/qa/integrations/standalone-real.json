@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-25T04:35:51.258Z",
+  "passed": true,
+  "scope": "Final bundled Node server over actual private HTTP, configured HTTPS origin; real staging shared persistence, synthetic session only.",
+  "routing": true,
+  "teamPortalCsp": true,
+  "originEnforced": true,
+  "encodingRejected": true,
+  "bodyLimit": true,
+  "secureCookie": true,
+  "realPersistence": true,
+  "configuredAgentAndInbox": true,
+  "syntheticSessionRemoved": true
+}

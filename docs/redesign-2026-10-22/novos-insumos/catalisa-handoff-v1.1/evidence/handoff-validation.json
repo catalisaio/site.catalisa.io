@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-22",
+  "sourceCommit": "fb78ff5d7229e1ccac83646d6c2bbafbde9a19b6",
+  "checks": {
+    "staticRoutes": 69,
+    "missingLocalResources": 0,
+    "duplicateIds": 0,
+    "h1Count": "one per route",
+    "javascriptSyntax": "passed with node --check",
+    "independentBuild": "69 pages, 1079040 bytes HTML",
+    "installer": "passed in temporary repo; existing AGENTS/CLAUDE preserved; second import rejected",
+    "conceptFixture": "bounded schema + relationship checks passed",
+    "negativeConceptFixtures": 5,
+    "generalJsonSchemaValidation": "not run; jsonschema not installed",
+    "productionIntegration": "not performed; proposed contracts only"
+  },
+  "previousMobileAudit": "207 baseline measurements included separately; not rerun in this packaging task"
+}

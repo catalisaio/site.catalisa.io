@@ -8,8 +8,12 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+.local/
 dist
 dist-ssr
+# O dist abaixo é uma referência congelada fornecida pelo usuário, não saída do build do app.
+!docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/
+!docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/**
 *.local
 .env
 public/brand/catalisa-brand-assets.zip
@@ -32,3 +36,16 @@ tests/e2e/.auth-storage.json
 
 # Local Netlify folder
 .netlify
+
+# Mídia pesada do acervo de docs fica fora do git (mantida localmente/drive)
+docs/**/*.mp4
+docs/**/*.zip
+docs/**/*.mov
+docs/**/*.webm
+
+# Artefatos soltos de trabalho local
+/catalisa-completo.zip
+/.playwright-mcp/
+/vtex-*.png
+/comparar-a-casa-01.html
+/linkedin-leads-buscas.html

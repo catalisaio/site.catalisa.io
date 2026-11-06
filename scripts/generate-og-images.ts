@@ -4,7 +4,7 @@ import sharp from 'sharp';
 import { articles, categoryLabelKeys } from '../src/data/articles';
 import type { ArticleCategory } from '../src/data/articles';
 
-const OUT_DIR = resolve(process.cwd(), 'dist', 'og', 'insights');
+const OUT_DIR = resolve(process.env.SITE_DIST_DIR || 'dist', 'og', 'insights');
 const WIDTH = 1200;
 const HEIGHT = 630;
 

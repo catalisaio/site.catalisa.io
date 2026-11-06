@@ -1,0 +1,4758 @@
+{
+  "generatedAt": "2026-10-26T23:35:21.318Z",
+  "buildMode": {
+    "redesign": true,
+    "indexing": true
+  },
+  "scope": "Built static HTML parsed with JavaScript disabled; hosting rules inspected, not a live CDN audit",
+  "publicUrls": 670,
+  "brandOriginals": 144,
+  "stagedUrls": 7,
+  "failures": [],
+  "warnings": [
+    "/es/capacidades: duplicate title with /capacidades",
+    "/es/perspectivas: duplicate title with /perspectivas",
+    "/fr/perspectives: duplicate title with /en/perspectives"
+  ],
+  "routes": [
+    {
+      "path": "/agentes-ia-whatsapp",
+      "title": "Agentes de IA para WhatsApp Business | Catalisa",
+      "canonical": "https://catalisa.io/agentes-ia-whatsapp",
+      "noIndex": false,
+      "h1": "Grandes varejistas já vendem pelo WhatsApp com IA. Sua empresa pode fazer o mesmo."
+    },
+    {
+      "path": "/en/ai-agents-whatsapp",
+      "title": "AI agents for WhatsApp Business | Catalisa",
+      "canonical": "https://catalisa.io/en/ai-agents-whatsapp",
+      "noIndex": false,
+      "h1": "Leading retailers already sell via WhatsApp with AI. Your company can do the same."
+    },
+    {
+      "path": "/determinismo",
+      "title": "Determinismo e regras de negócio em agentes de IA | Catalisa",
+      "canonical": "https://catalisa.io/determinismo",
+      "noIndex": false,
+      "h1": "Software que você pode TESTAR. Não apenas ADIVINHAR."
+    },
+    {
+      "path": "/en/determinism",
+      "title": "Determinism and business rules for AI agents | Catalisa",
+      "canonical": "https://catalisa.io/en/determinism",
+      "noIndex": false,
+      "h1": "Software you can TEST. Not just GUESS."
+    },
+    {
+      "path": "/",
+      "title": "Catalisa | Crie produtos e automações com IA",
+      "canonical": "https://catalisa.io/",
+      "noIndex": false,
+      "h1": "A forma seguea conexão."
+    },
+    {
+      "path": "/en",
+      "title": "Catalisa | Build products and automations with AI",
+      "canonical": "https://catalisa.io/en",
+      "noIndex": false,
+      "h1": "The shape followsthe connection."
+    },
+    {
+      "path": "/studio",
+      "title": "Studio: construir agentes e automações por composição | Catalisa",
+      "canonical": "https://catalisa.io/studio",
+      "noIndex": false,
+      "h1": "Dê formaao que precisafuncionar."
+    },
+    {
+      "path": "/en/studio",
+      "title": "Studio: build agents and automations through composition | Catalisa",
+      "canonical": "https://catalisa.io/en/studio",
+      "noIndex": false,
+      "h1": "Shape itto what it needswork."
+    },
+    {
+      "path": "/en/ai-agents",
+      "title": "AI agents: context, tools and permissions | Catalisa",
+      "canonical": "https://catalisa.io/en/ai-agents",
+      "noIndex": false,
+      "h1": "Understandthe context.Act with purpose."
+    },
+    {
+      "path": "/workflows",
+      "title": "Workflows: automação de processos e jornadas | Catalisa",
+      "canonical": "https://catalisa.io/workflows",
+      "noIndex": false,
+      "h1": "O próximo passotem umporquê."
+    },
+    {
+      "path": "/en/workflows",
+      "title": "Workflows: process and journey automation | Catalisa",
+      "canonical": "https://catalisa.io/en/workflows",
+      "noIndex": false,
+      "h1": "The next stephas awhy."
+    },
+    {
+      "path": "/fintech",
+      "title": "Catalisa para Fintechs | Automação WhatsApp com IA",
+      "canonical": "https://catalisa.io/fintech",
+      "noIndex": false,
+      "h1": "WhatsApp como canal de negócios para fintechs"
+    },
+    {
+      "path": "/en/fintech",
+      "title": "Catalisa for Fintechs | WhatsApp Automation with AI",
+      "canonical": "https://catalisa.io/en/fintech",
+      "noIndex": false,
+      "h1": "WhatsApp as a business channel for fintechs"
+    },
+    {
+      "path": "/seguros",
+      "title": "Catalisa Seguros | Automação WhatsApp para Seguradoras",
+      "canonical": "https://catalisa.io/seguros",
+      "noIndex": false,
+      "h1": "Sinistros, cotações e renovações pelo WhatsApp"
+    },
+    {
+      "path": "/en/insurance",
+      "title": "Catalisa Insurance | WhatsApp Automation for Insurers",
+      "canonical": "https://catalisa.io/en/insurance",
+      "noIndex": false,
+      "h1": "Claims, quotes, and renewals via WhatsApp"
+    },
+    {
+      "path": "/varejo",
+      "title": "Catalisa Varejo | Automação WhatsApp com IA para Lojas",
+      "canonical": "https://catalisa.io/varejo",
+      "noIndex": false,
+      "h1": "WhatsApp como canal de vendas para o varejo"
+    },
+    {
+      "path": "/en/retail",
+      "title": "Catalisa Retail | WhatsApp Automation with AI",
+      "canonical": "https://catalisa.io/en/retail",
+      "noIndex": false,
+      "h1": "WhatsApp as a sales channel for retail"
+    },
+    {
+      "path": "/startups",
+      "title": "Catalisa para Startups | Escale com WhatsApp e IA",
+      "canonical": "https://catalisa.io/startups",
+      "noIndex": false,
+      "h1": "WhatsApp como motor de crescimento para startups"
+    },
+    {
+      "path": "/en/startups",
+      "title": "Catalisa for Startups | Scale with WhatsApp & AI",
+      "canonical": "https://catalisa.io/en/startups",
+      "noIndex": false,
+      "h1": "WhatsApp as a growth engine for startups"
+    },
+    {
+      "path": "/casos-de-uso",
+      "title": "Catalisa Playbooks | 30+ Casos de Uso com IA",
+      "canonical": "https://catalisa.io/casos-de-uso",
+      "noIndex": false,
+      "h1": "SDR Automatizado que Qualifica e Agenda"
+    },
+    {
+      "path": "/en/use-cases",
+      "title": "Catalisa Playbooks | 30+ WhatsApp AI Use Cases",
+      "canonical": "https://catalisa.io/en/use-cases",
+      "noIndex": false,
+      "h1": "Automated SDR that Qualifies and Books"
+    },
+    {
+      "path": "/contato",
+      "title": "Contato: construa sua próxima conexão | Catalisa",
+      "canonical": "https://catalisa.io/contato",
+      "noIndex": false,
+      "h1": "Vamos dar formaà próximaconversa."
+    },
+    {
+      "path": "/en/contact",
+      "title": "Contact: build your next connection | Catalisa",
+      "canonical": "https://catalisa.io/en/contact",
+      "noIndex": false,
+      "h1": "Let's shape itto the nextconversation."
+    },
+    {
+      "path": "/demo",
+      "title": "Catalisa Demo | Veja a IA Criando Automações ao Vivo",
+      "canonical": "https://catalisa.io/demo",
+      "noIndex": false,
+      "h1": "Criando um Sistema de Atendimento de Seguros com IA em poucos minutos"
+    },
+    {
+      "path": "/en/demo",
+      "title": "Catalisa Demo | Watch AI Build Automations Live",
+      "canonical": "https://catalisa.io/en/demo",
+      "noIndex": false,
+      "h1": "Building an Insurance Customer Service System with AI in Minutes"
+    },
+    {
+      "path": "/politica-privacidade",
+      "title": "Política de Privacidade",
+      "canonical": "https://catalisa.io/politica-privacidade",
+      "noIndex": false,
+      "h1": "Política de Privacidade"
+    },
+    {
+      "path": "/en/privacy-policy",
+      "title": "Privacy Policy",
+      "canonical": "https://catalisa.io/en/privacy-policy",
+      "noIndex": false,
+      "h1": "Privacy Policy"
+    },
+    {
+      "path": "/press-kit",
+      "title": "Press-kit: marca, assinaturas e recursos oficiais | Catalisa",
+      "canonical": "https://catalisa.io/press-kit",
+      "noIndex": false,
+      "h1": "Uma marca.Muitas expressões."
+    },
+    {
+      "path": "/en/press-kit",
+      "title": "Press kit: brand, logos and official resources | Catalisa",
+      "canonical": "https://catalisa.io/en/press-kit",
+      "noIndex": false,
+      "h1": "One brand.Many expressions."
+    },
+    {
+      "path": "/termos",
+      "title": "Termos de Uso",
+      "canonical": "https://catalisa.io/termos",
+      "noIndex": false,
+      "h1": "Termos de Uso"
+    },
+    {
+      "path": "/en/terms",
+      "title": "Terms of Service",
+      "canonical": "https://catalisa.io/en/terms",
+      "noIndex": false,
+      "h1": "Terms of Service"
+    },
+    {
+      "path": "/seguranca",
+      "title": "Catalisa Segurança | Proteção de Nível Bancário",
+      "canonical": "https://catalisa.io/seguranca",
+      "noIndex": false,
+      "h1": "Segurança de nível bancário"
+    },
+    {
+      "path": "/en/security",
+      "title": "Catalisa Security | Banking-Grade Data Protection",
+      "canonical": "https://catalisa.io/en/security",
+      "noIndex": false,
+      "h1": "Banking-grade security"
+    },
+    {
+      "path": "/transparencia-ia",
+      "title": "Catalisa | Transparência em IA e Uso Responsável",
+      "canonical": "https://catalisa.io/transparencia-ia",
+      "noIndex": false,
+      "h1": "Como usamos inteligência artificial"
+    },
+    {
+      "path": "/en/ai-transparency",
+      "title": "Catalisa | AI Transparency & Responsible Use",
+      "canonical": "https://catalisa.io/en/ai-transparency",
+      "noIndex": false,
+      "h1": "How we use artificial intelligence"
+    },
+    {
+      "path": "/como-funciona",
+      "title": "Catalisa | Como Funciona em 3 Passos, Zero Código",
+      "canonical": "https://catalisa.io/como-funciona",
+      "noIndex": false,
+      "h1": "Três passos. Zero código."
+    },
+    {
+      "path": "/en/how-it-works",
+      "title": "Catalisa | How It Works in 3 Steps, Zero Code",
+      "canonical": "https://catalisa.io/en/how-it-works",
+      "noIndex": false,
+      "h1": "Three steps. Zero code."
+    },
+    {
+      "path": "/integracoes/whatsapp",
+      "title": "Catalisa Integração | Cloud API vs QR Code WhatsApp",
+      "canonical": "https://catalisa.io/integracoes/whatsapp",
+      "noIndex": false,
+      "h1": "Cloud API ou QR Code. Você escolhe."
+    },
+    {
+      "path": "/en/integrations/whatsapp",
+      "title": "Catalisa Integration | Cloud API vs QR Code WhatsApp",
+      "canonical": "https://catalisa.io/en/integrations/whatsapp",
+      "noIndex": false,
+      "h1": "Cloud API or QR Code. You choose."
+    },
+    {
+      "path": "/insights",
+      "title": "Catalisa Insights | Cases de IA e WhatsApp Business",
+      "canonical": "https://catalisa.io/insights",
+      "noIndex": false,
+      "h1": "Insights"
+    },
+    {
+      "path": "/en/insights",
+      "title": "Catalisa Insights | AI & WhatsApp Business Cases",
+      "canonical": "https://catalisa.io/en/insights",
+      "noIndex": false,
+      "h1": "Insights"
+    },
+    {
+      "path": "/insights/all",
+      "title": "Catalisa Insights | Todos os Cases e Análises",
+      "canonical": "https://catalisa.io/insights/all",
+      "noIndex": false,
+      "h1": "Agentes de IA Que Geram Resultados Reais"
+    },
+    {
+      "path": "/en/insights/all",
+      "title": "Catalisa Insights | All Cases & Analysis",
+      "canonical": "https://catalisa.io/en/insights/all",
+      "noIndex": false,
+      "h1": "AI Agents That Drive Real Results"
+    },
+    {
+      "path": "/vtex-day-2026",
+      "title": "Catalisa no VTEX Day 2026 | Atendimento VTEX no WhatsApp",
+      "canonical": "https://catalisa.io/vtex-day-2026",
+      "noIndex": false,
+      "h1": "Atendimento VTEX que responde em 2 segundos, no WhatsApp"
+    },
+    {
+      "path": "/insights/boticario-assistente-ia-conversao-ecommerce",
+      "title": "Boticário: +46% Conversão com IA | Catalisa",
+      "canonical": "https://catalisa.io/insights/boticario-assistente-ia-conversao-ecommerce",
+      "noIndex": false,
+      "h1": "Como o Grupo Boticário Elevou a Conversão em 46% com um Assistente de IA no E-commerce"
+    },
+    {
+      "path": "/en/insights/boticario-assistente-ia-conversao-ecommerce",
+      "title": "Boticário: +46% E-commerce Conversion with AI | Catalisa Insights",
+      "canonical": "https://catalisa.io/en/insights/boticario-assistente-ia-conversao-ecommerce",
+      "noIndex": false,
+      "h1": "How Grupo Boticário Boosted E-commerce Conversion by 46% with an AI Assistant"
+    },
+    {
+      "path": "/insights/ifood-comprai-compras-mercado-whatsapp",
+      "title": "iFood Compr.AI: 3-4x Conversão | Catalisa",
+      "canonical": "https://catalisa.io/insights/ifood-comprai-compras-mercado-whatsapp",
+      "noIndex": false,
+      "h1": "iFood Compr.AI: Como a IA Generativa Multiplica Conversões em Compras de Mercado via WhatsApp"
+    },
+    {
+      "path": "/en/insights/ifood-comprai-compras-mercado-whatsapp",
+      "title": "iFood Compr.AI: 3-4x WhatsApp Conversion with AI | Catalisa Insights",
+      "canonical": "https://catalisa.io/en/insights/ifood-comprai-compras-mercado-whatsapp",
+      "noIndex": false,
+      "h1": "iFood Compr.AI: How Generative AI Multiplies Conversions in Grocery Shopping via WhatsApp"
+    },
+    {
+      "path": "/insights/ifood-gerente-virtual-financeiro-whatsapp",
+      "title": "iFood Gerente: IA Financeira WhatsApp | Catalisa",
+      "canonical": "https://catalisa.io/insights/ifood-gerente-virtual-financeiro-whatsapp",
+      "noIndex": false,
+      "h1": "iFood Gerente: O Agente de IA que Faz Pix e Paga Boletos pelo WhatsApp"
+    },
+    {
+      "path": "/en/insights/ifood-gerente-virtual-financeiro-whatsapp",
+      "title": "iFood Gerente: Financial AI Agent on WhatsApp | Catalisa Insights",
+      "canonical": "https://catalisa.io/en/insights/ifood-gerente-virtual-financeiro-whatsapp",
+      "noIndex": false,
+      "h1": "iFood Gerente: The AI Agent That Makes Pix Payments and Pays Bills via WhatsApp"
+    },
+    {
+      "path": "/insights/ifood-cris-mentora-ia-restaurantes",
+      "title": "iFood Cris: IA Mentora Restaurantes | Catalisa",
+      "canonical": "https://catalisa.io/insights/ifood-cris-mentora-ia-restaurantes",
+      "noIndex": false,
+      "h1": "iFood Cris: Como um Agente de IA no WhatsApp Mentora 10 Mil Restaurantes"
+    },
+    {
+      "path": "/en/insights/ifood-cris-mentora-ia-restaurantes",
+      "title": "iFood Cris: AI Mentor for 10K Restaurants | Catalisa Insights",
+      "canonical": "https://catalisa.io/en/insights/ifood-cris-mentora-ia-restaurantes",
+      "noIndex": false,
+      "h1": "iFood Cris: How an AI Agent on WhatsApp Mentors 10,000 Restaurants"
+    },
+    {
+      "path": "/insights/carrefour-ia-atendimento-humanizado",
+      "title": "Carrefour IA Humanizada: 4h→40min | Catalisa",
+      "canonical": "https://catalisa.io/insights/carrefour-ia-atendimento-humanizado",
+      "noIndex": false,
+      "h1": "Carrefour: Como a IA Reduziu o Tempo de Resposta de 4 Horas para 40 Minutos Sem Perder a Humanização"
+    },
+    {
+      "path": "/en/insights/carrefour-ia-atendimento-humanizado",
+      "title": "Carrefour: 4h to 40min Response with Humanized AI | Catalisa Insights",
+      "canonical": "https://catalisa.io/en/insights/carrefour-ia-atendimento-humanizado",
+      "noIndex": false,
+      "h1": "Carrefour: How AI Reduced Response Time from 4 Hours to 40 Minutes Without Losing Humanization"
+    },
+    {
+      "path": "/insights/lotte-homeshopping-ia-reducao-40-carga-atendimento",
+      "title": "Lotte: -40% Carga Atendimento com IA | Catalisa",
+      "canonical": "https://catalisa.io/insights/lotte-homeshopping-ia-reducao-40-carga-atendimento",
+      "noIndex": false,
+      "h1": "Lotte Homeshopping: Redução de 40% na Carga de Atendentes Humanos com IA Conversacional"
+    },
+    {
+      "path": "/en/insights/lotte-homeshopping-ia-reducao-40-carga-atendimento",
+      "title": "Lotte Homeshopping: -40% Agent Workload with AI | Catalisa Insights",
+      "canonical": "https://catalisa.io/en/insights/lotte-homeshopping-ia-reducao-40-carga-atendimento",
+      "noIndex": false,
+      "h1": "Lotte Homeshopping: 40% Reduction in Human Agent Workload with Conversational AI"
+    },
+    {
+      "path": "/insights/synthesia-intercom-fin-ia-suporte-escala",
+      "title": "Synthesia: 87% Self-Service com IA | Catalisa",
+      "canonical": "https://catalisa.io/insights/synthesia-intercom-fin-ia-suporte-escala",
+      "noIndex": false,
+      "h1": "Synthesia: Como Absorver um Aumento de 690% em Contatos Sem Contratar com IA (Intercom Fin)"
+    },
+    {
+      "path": "/en/insights/synthesia-intercom-fin-ia-suporte-escala",
+      "title": "Synthesia: 87% Self-Service with Fin AI | Catalisa Insights",
+      "canonical": "https://catalisa.io/en/insights/synthesia-intercom-fin-ia-suporte-escala",
+      "noIndex": false,
+      "h1": "Synthesia: How to Absorb a 690% Increase in Contacts Without Hiring Using AI (Intercom Fin)"
+    },
+    {
+      "path": "/insights/synthesia-fin-ai-spike-690-suporte",
+      "title": "Synthesia: -96% Tempo Resolução IA | Catalisa",
+      "canonical": "https://catalisa.io/insights/synthesia-fin-ai-spike-690-suporte",
+      "noIndex": false,
+      "h1": "Synthesia e Fin AI: 96% de Redução no Tempo de Resolução com Agente de IA"
+    },
+    {
+      "path": "/en/insights/synthesia-fin-ai-spike-690-suporte",
+      "title": "Synthesia: 96% Faster Resolution with Fin AI | Catalisa Insights",
+      "canonical": "https://catalisa.io/en/insights/synthesia-fin-ai-spike-690-suporte",
+      "noIndex": false,
+      "h1": "Synthesia and Fin AI: 96% Reduction in Resolution Time with AI Agent"
+    },
+    {
+      "path": "/insights/gupshup-whatsapp-roi-270-forrester",
+      "title": "Forrester: 270% ROI WhatsApp | Catalisa",
+      "canonical": "https://catalisa.io/insights/gupshup-whatsapp-roi-270-forrester",
+      "noIndex": false,
+      "h1": "Estudo Forrester: 270% de ROI com WhatsApp Conversacional via Gupshup"
+    },
+    {
+      "path": "/en/insights/gupshup-whatsapp-roi-270-forrester",
+      "title": "Forrester: 270% ROI with Conversational WhatsApp | Catalisa Insights",
+      "canonical": "https://catalisa.io/en/insights/gupshup-whatsapp-roi-270-forrester",
+      "noIndex": false,
+      "h1": "Forrester Study: 270% ROI with Conversational WhatsApp via Gupshup"
+    },
+    {
+      "path": "/insights/magalu-lu-vendedora-ia-whatsapp",
+      "title": "Lu Magalu: 3x Conversão WhatsApp IA | Catalisa",
+      "canonical": "https://catalisa.io/insights/magalu-lu-vendedora-ia-whatsapp",
+      "noIndex": false,
+      "h1": "Lu do Magalu Ganha Cérebro com IA e Alcança 3x Mais Conversão como Vendedora no WhatsApp"
+    },
+    {
+      "path": "/en/insights/magalu-lu-vendedora-ia-whatsapp",
+      "title": "Lu do Magalu: 3x WhatsApp Conversion with AI | Catalisa Insights",
+      "canonical": "https://catalisa.io/en/insights/magalu-lu-vendedora-ia-whatsapp",
+      "noIndex": false,
+      "h1": "Magalu's Lu Gets an AI Brain and Achieves 3x More Conversion as a WhatsApp Salesperson"
+    },
+    {
+      "path": "/insights/bancos-brasileiros-ia-whatsapp-bradesco-itau-nubank",
+      "title": "Bradesco, Itaú, Nubank: IA no WhatsApp | Catalisa",
+      "canonical": "https://catalisa.io/insights/bancos-brasileiros-ia-whatsapp-bradesco-itau-nubank",
+      "noIndex": false,
+      "h1": "Bradesco, Itaú, Nubank: A Corrida dos Bancos Brasileiros pela IA no WhatsApp"
+    },
+    {
+      "path": "/en/insights/bancos-brasileiros-ia-whatsapp-bradesco-itau-nubank",
+      "title": "Bradesco, Itaú, Nubank: AI on WhatsApp | Catalisa",
+      "canonical": "https://catalisa.io/en/insights/bancos-brasileiros-ia-whatsapp-bradesco-itau-nubank",
+      "noIndex": false,
+      "h1": "Bradesco, Itaú, Nubank: The Race Among Brazilian Banks for AI on WhatsApp"
+    },
+    {
+      "path": "/insights/banco-bv-agentes-ia-reducao-rechamadas",
+      "title": "Banco BV: -73% Rechamadas com IA | Catalisa",
+      "canonical": "https://catalisa.io/insights/banco-bv-agentes-ia-reducao-rechamadas",
+      "noIndex": false,
+      "h1": "Banco BV Cortou 73% das Rechamadas com Agentes Autônomos de IA"
+    },
+    {
+      "path": "/en/insights/banco-bv-agentes-ia-reducao-rechamadas",
+      "title": "Banco BV: -73% Repeat Calls with AI | Catalisa",
+      "canonical": "https://catalisa.io/en/insights/banco-bv-agentes-ia-reducao-rechamadas",
+      "noIndex": false,
+      "h1": "Banco BV Cut 73% of Repeat Calls with Autonomous AI Agents"
+    },
+    {
+      "path": "/insights/klarna-ia-40m-economia-contraponto",
+      "title": "Klarna: US$40M com IA e a Reversão | Catalisa",
+      "canonical": "https://catalisa.io/insights/klarna-ia-40m-economia-contraponto",
+      "noIndex": false,
+      "h1": "Klarna: US$40M Economizados com IA — E Por Que Voltaram Atrás"
+    },
+    {
+      "path": "/en/insights/klarna-ia-40m-economia-contraponto",
+      "title": "Klarna: US$40M with AI and the Reversal | Catalisa",
+      "canonical": "https://catalisa.io/en/insights/klarna-ia-40m-economia-contraponto",
+      "noIndex": false,
+      "h1": "Klarna: US$40M Saved with AI — And Why They Reversed Course"
+    },
+    {
+      "path": "/insights/bancos-globais-ia-whatsapp-dbs-hdfc-absa",
+      "title": "Bancos Globais e IA: DBS, HDFC, Absa | Catalisa",
+      "canonical": "https://catalisa.io/insights/bancos-globais-ia-whatsapp-dbs-hdfc-absa",
+      "noIndex": false,
+      "h1": "De Singapura à África do Sul: Como Bancos Globais Usam IA no WhatsApp"
+    },
+    {
+      "path": "/en/insights/bancos-globais-ia-whatsapp-dbs-hdfc-absa",
+      "title": "Global Banks and AI: DBS, HDFC, Absa | Catalisa",
+      "canonical": "https://catalisa.io/en/insights/bancos-globais-ia-whatsapp-dbs-hdfc-absa",
+      "noIndex": false,
+      "h1": "From Singapore to South Africa: How Global Banks Use AI on WhatsApp"
+    },
+    {
+      "path": "/insights/lemonade-sinistro-2-segundos-insurtech",
+      "title": "Lemonade: Sinistro em 2s com IA | Catalisa",
+      "canonical": "https://catalisa.io/insights/lemonade-sinistro-2-segundos-insurtech",
+      "noIndex": false,
+      "h1": "Lemonade: Sinistro Resolvido em 2 Segundos — O Futuro da Insurtech"
+    },
+    {
+      "path": "/en/insights/lemonade-sinistro-2-segundos-insurtech",
+      "title": "Lemonade: 2-Second Claim with AI | Catalisa",
+      "canonical": "https://catalisa.io/en/insights/lemonade-sinistro-2-segundos-insurtech",
+      "noIndex": false,
+      "h1": "Lemonade: Insurance Claim Resolved in 2 Seconds — The Future of Insurtech"
+    },
+    {
+      "path": "/insights/picpay-btg-pix-whatsapp-voz-imagem",
+      "title": "PicPay e BTG: Pix Multimodal WhatsApp | Catalisa",
+      "canonical": "https://catalisa.io/insights/picpay-btg-pix-whatsapp-voz-imagem",
+      "noIndex": false,
+      "h1": "PicPay e BTG no WhatsApp: Pix por Voz, Imagem e Manuscrito"
+    },
+    {
+      "path": "/en/insights/picpay-btg-pix-whatsapp-voz-imagem",
+      "title": "PicPay and BTG: Multimodal Pix WhatsApp | Catalisa",
+      "canonical": "https://catalisa.io/en/insights/picpay-btg-pix-whatsapp-voz-imagem",
+      "noIndex": false,
+      "h1": "PicPay and BTG on WhatsApp: Pix by Voice, Image, and Handwriting"
+    },
+    {
+      "path": "/insights/padrao-3x-conversao-whatsapp-vs-apps",
+      "title": "Padrão 3x: Conversão WhatsApp vs Apps | Catalisa",
+      "canonical": "https://catalisa.io/insights/padrao-3x-conversao-whatsapp-vs-apps",
+      "noIndex": false,
+      "h1": "O Padrão dos 3x: Por Que Conversão via WhatsApp É 3x Maior que Apps Tradicionais"
+    },
+    {
+      "path": "/en/insights/padrao-3x-conversao-whatsapp-vs-apps",
+      "title": "3x Pattern: WhatsApp vs App Conversion | Catalisa",
+      "canonical": "https://catalisa.io/en/insights/padrao-3x-conversao-whatsapp-vs-apps",
+      "noIndex": false,
+      "h1": "The 3x Pattern: Why WhatsApp Conversion Is 3x Higher Than Traditional Apps"
+    },
+    {
+      "path": "/insights/agentes-vs-chatbots-evolucao-faq-transacoes",
+      "title": "Agentes vs Chatbots: A Evolução | Catalisa",
+      "canonical": "https://catalisa.io/insights/agentes-vs-chatbots-evolucao-faq-transacoes",
+      "noIndex": false,
+      "h1": "Agentes vs Chatbots: A Evolução de FAQ para Execução de Transações"
+    },
+    {
+      "path": "/en/insights/agentes-vs-chatbots-evolucao-faq-transacoes",
+      "title": "Agents vs Chatbots: The Evolution | Catalisa",
+      "canonical": "https://catalisa.io/en/insights/agentes-vs-chatbots-evolucao-faq-transacoes",
+      "noIndex": false,
+      "h1": "Agents vs Chatbots: The Evolution from FAQ to Transaction Execution"
+    },
+    {
+      "path": "/insights/ia-financeiro-cobranca-investimentos-mapa",
+      "title": "IA no Financeiro: Mapa Completo | Catalisa",
+      "canonical": "https://catalisa.io/insights/ia-financeiro-cobranca-investimentos-mapa",
+      "noIndex": false,
+      "h1": "IA no Financeiro: De Cobrança a Investimentos — O Mapa Completo"
+    },
+    {
+      "path": "/en/insights/ia-financeiro-cobranca-investimentos-mapa",
+      "title": "AI in Finance: Complete Map | Catalisa",
+      "canonical": "https://catalisa.io/en/insights/ia-financeiro-cobranca-investimentos-mapa",
+      "noIndex": false,
+      "h1": "AI in Finance: From Collections to Investments — The Complete Map"
+    },
+    {
+      "path": "/insights/90-porcento-empresas-mais-clientes-whatsapp",
+      "title": "90% Viram Mais Clientes com WhatsApp | Catalisa",
+      "canonical": "https://catalisa.io/insights/90-porcento-empresas-mais-clientes-whatsapp",
+      "noIndex": false,
+      "h1": "Por Que 90% das Empresas Viram Mais Clientes com WhatsApp (E Como Começar)"
+    },
+    {
+      "path": "/en/insights/90-porcento-empresas-mais-clientes-whatsapp",
+      "title": "90% Saw More Customers with WhatsApp | Catalisa",
+      "canonical": "https://catalisa.io/en/insights/90-porcento-empresas-mais-clientes-whatsapp",
+      "noIndex": false,
+      "h1": "Why 90% of Companies Saw More Customers with WhatsApp (And How to Get Started)"
+    },
+    {
+      "path": "/insights/ia-conversacional-varejo-brasileiro",
+      "title": "IA no Varejo Brasileiro: Cases | Catalisa",
+      "canonical": "https://catalisa.io/insights/ia-conversacional-varejo-brasileiro",
+      "noIndex": false,
+      "h1": "IA Conversacional no Varejo Brasileiro: Como Gigantes Estão Transformando a Experiência de Compra"
+    },
+    {
+      "path": "/en/insights/ia-conversacional-varejo-brasileiro",
+      "title": "Conversational AI in Brazilian Retail: Cases and Analysis | Catalisa Insights",
+      "canonical": "https://catalisa.io/en/insights/ia-conversacional-varejo-brasileiro",
+      "noIndex": false,
+      "h1": "Conversational AI in Brazilian Retail: How Giants Are Transforming the Shopping Experience"
+    },
+    {
+      "path": "/insights/whatsapp-plataforma-vendas-conversational-commerce",
+      "title": "WhatsApp Vendas: Futuro do Commerce | Catalisa",
+      "canonical": "https://catalisa.io/insights/whatsapp-plataforma-vendas-conversational-commerce",
+      "noIndex": false,
+      "h1": "WhatsApp como Plataforma de Vendas: O Futuro do Conversational Commerce no Brasil"
+    },
+    {
+      "path": "/en/insights/whatsapp-plataforma-vendas-conversational-commerce",
+      "title": "WhatsApp as a Sales Platform: Conversational Commerce | Catalisa Insights",
+      "canonical": "https://catalisa.io/en/insights/whatsapp-plataforma-vendas-conversational-commerce",
+      "noIndex": false,
+      "h1": "WhatsApp as a Sales Platform: The Future of Conversational Commerce in Brazil"
+    },
+    {
+      "path": "/insights/roi-ia-customer-experience-dados",
+      "title": "ROI IA em CX: Dados Reais | Catalisa",
+      "canonical": "https://catalisa.io/insights/roi-ia-customer-experience-dados",
+      "noIndex": false,
+      "h1": "O ROI Real da IA em Customer Experience: Dados e Resultados Comprovados"
+    },
+    {
+      "path": "/en/insights/roi-ia-customer-experience-dados",
+      "title": "ROI of AI in Customer Experience: Real Data | Catalisa Insights",
+      "canonical": "https://catalisa.io/en/insights/roi-ia-customer-experience-dados",
+      "noIndex": false,
+      "h1": "The Real ROI of AI in Customer Experience: Proven Data and Results"
+    },
+    {
+      "path": "/insights/escalar-atendimento-sem-contratar-ia",
+      "title": "Escalar Suporte com IA sem Contratar | Catalisa",
+      "canonical": "https://catalisa.io/insights/escalar-atendimento-sem-contratar-ia",
+      "noIndex": false,
+      "h1": "Escalar Atendimento sem Escalar Equipe: Lições de Quem Já Fez com IA"
+    },
+    {
+      "path": "/en/insights/escalar-atendimento-sem-contratar-ia",
+      "title": "Scaling Customer Service with AI Without Hiring | Catalisa Insights",
+      "canonical": "https://catalisa.io/en/insights/escalar-atendimento-sem-contratar-ia",
+      "noIndex": false,
+      "h1": "Scaling Customer Service Without Scaling the Team: Lessons from Those Who've Done It with AI"
+    },
+    {
+      "path": "/insights/agentes-ia-whatsapp-automacao-inteligencia",
+      "title": "Agentes IA WhatsApp: Tipos e Cases | Catalisa",
+      "canonical": "https://catalisa.io/insights/agentes-ia-whatsapp-automacao-inteligencia",
+      "noIndex": false,
+      "h1": "Agentes de IA no WhatsApp: Da Automação à Inteligência de Negócios"
+    },
+    {
+      "path": "/en/insights/agentes-ia-whatsapp-automacao-inteligencia",
+      "title": "AI Agents on WhatsApp: Automation to Intelligence | Catalisa Insights",
+      "canonical": "https://catalisa.io/en/insights/agentes-ia-whatsapp-automacao-inteligencia",
+      "noIndex": false,
+      "h1": "AI Agents on WhatsApp: From Automation to Business Intelligence"
+    },
+    {
+      "path": "/insights/ia-humanizada-equilibrio-automacao-empatia",
+      "title": "IA Humanizada: Automação + Empatia | Catalisa",
+      "canonical": "https://catalisa.io/insights/ia-humanizada-equilibrio-automacao-empatia",
+      "noIndex": false,
+      "h1": "IA Humanizada: Por Que o Equilíbrio entre Automação e Empatia Define o Sucesso"
+    },
+    {
+      "path": "/en/insights/ia-humanizada-equilibrio-automacao-empatia",
+      "title": "Humanized AI: Automation and Empathy Balance | Catalisa Insights",
+      "canonical": "https://catalisa.io/en/insights/ia-humanizada-equilibrio-automacao-empatia",
+      "noIndex": false,
+      "h1": "Humanized AI: Why the Balance Between Automation and Empathy Defines Success"
+    },
+    {
+      "path": "/insights/foodtech-ia-transformacao-conversacional",
+      "title": "Food-tech e IA Conversacional | Catalisa",
+      "canonical": "https://catalisa.io/insights/foodtech-ia-transformacao-conversacional",
+      "noIndex": false,
+      "h1": "Food-tech e IA: Como a Indústria Alimentar Lidera a Inovação Conversacional"
+    },
+    {
+      "path": "/en/insights/foodtech-ia-transformacao-conversacional",
+      "title": "Food-tech and AI: Leading Conversational Innovation | Catalisa Insights",
+      "canonical": "https://catalisa.io/en/insights/foodtech-ia-transformacao-conversacional",
+      "noIndex": false,
+      "h1": "Food-tech and AI: How the Food Industry Leads Conversational Innovation"
+    },
+    {
+      "path": "/playbooks/sdr-automatizado",
+      "title": "SDR Automatizado | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/sdr-automatizado",
+      "noIndex": false,
+      "h1": "SDR Automatizado"
+    },
+    {
+      "path": "/en/playbooks/sdr-automatizado",
+      "title": "Automated SDR | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/sdr-automatizado",
+      "noIndex": false,
+      "h1": "Automated SDR"
+    },
+    {
+      "path": "/playbooks/follow-up-inteligente",
+      "title": "Follow-up Inteligente | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/follow-up-inteligente",
+      "noIndex": false,
+      "h1": "Follow-up Inteligente"
+    },
+    {
+      "path": "/en/playbooks/follow-up-inteligente",
+      "title": "Smart Follow-up | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/follow-up-inteligente",
+      "noIndex": false,
+      "h1": "Smart Follow-up"
+    },
+    {
+      "path": "/playbooks/qualificacao-leads",
+      "title": "Qualificação de Leads SaaS | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/qualificacao-leads",
+      "noIndex": false,
+      "h1": "Qualificação de Leads SaaS"
+    },
+    {
+      "path": "/en/playbooks/qualificacao-leads",
+      "title": "SaaS Lead Qualification | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/qualificacao-leads",
+      "noIndex": false,
+      "h1": "SaaS Lead Qualification"
+    },
+    {
+      "path": "/playbooks/atendimento-imobiliario",
+      "title": "Atendimento Imobiliário | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/atendimento-imobiliario",
+      "noIndex": false,
+      "h1": "Atendimento Imobiliário"
+    },
+    {
+      "path": "/en/playbooks/atendimento-imobiliario",
+      "title": "Real Estate Assistant | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/atendimento-imobiliario",
+      "noIndex": false,
+      "h1": "Real Estate Assistant"
+    },
+    {
+      "path": "/playbooks/suporte-24-7",
+      "title": "Suporte 24/7 | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/suporte-24-7",
+      "noIndex": false,
+      "h1": "Suporte 24/7"
+    },
+    {
+      "path": "/en/playbooks/suporte-24-7",
+      "title": "24/7 Support | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/suporte-24-7",
+      "noIndex": false,
+      "h1": "24/7 Support"
+    },
+    {
+      "path": "/playbooks/suporte-tecnico-ia",
+      "title": "Suporte Técnico com IA | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/suporte-tecnico-ia",
+      "noIndex": false,
+      "h1": "Suporte Técnico com IA"
+    },
+    {
+      "path": "/en/playbooks/suporte-tecnico-ia",
+      "title": "AI Tech Support | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/suporte-tecnico-ia",
+      "noIndex": false,
+      "h1": "AI Tech Support"
+    },
+    {
+      "path": "/playbooks/pos-venda-ecommerce",
+      "title": "Pós-venda E-commerce | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/pos-venda-ecommerce",
+      "noIndex": false,
+      "h1": "Pós-venda E-commerce"
+    },
+    {
+      "path": "/en/playbooks/pos-venda-ecommerce",
+      "title": "E-commerce Post-Sale | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/pos-venda-ecommerce",
+      "noIndex": false,
+      "h1": "E-commerce Post-Sale"
+    },
+    {
+      "path": "/playbooks/atendimento-bancario",
+      "title": "Atendimento Bancário 24/7 | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/atendimento-bancario",
+      "noIndex": false,
+      "h1": "Atendimento Bancário 24/7"
+    },
+    {
+      "path": "/en/playbooks/atendimento-bancario",
+      "title": "Banking Support 24/7 | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/atendimento-bancario",
+      "noIndex": false,
+      "h1": "Banking Support 24/7"
+    },
+    {
+      "path": "/playbooks/atendimento-segurado",
+      "title": "Atendimento ao Segurado 24/7 | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/atendimento-segurado",
+      "noIndex": false,
+      "h1": "Atendimento ao Segurado 24/7"
+    },
+    {
+      "path": "/en/playbooks/atendimento-segurado",
+      "title": "Insurance Support 24/7 | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/atendimento-segurado",
+      "noIndex": false,
+      "h1": "Insurance Support 24/7"
+    },
+    {
+      "path": "/playbooks/cobranca-inteligente",
+      "title": "Cobrança Inteligente | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/cobranca-inteligente",
+      "noIndex": false,
+      "h1": "Cobrança Inteligente"
+    },
+    {
+      "path": "/en/playbooks/cobranca-inteligente",
+      "title": "Smart Collections | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/cobranca-inteligente",
+      "noIndex": false,
+      "h1": "Smart Collections"
+    },
+    {
+      "path": "/playbooks/originacao-credito",
+      "title": "Originação de Crédito | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/originacao-credito",
+      "noIndex": false,
+      "h1": "Originação de Crédito"
+    },
+    {
+      "path": "/en/playbooks/originacao-credito",
+      "title": "Credit Origination | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/originacao-credito",
+      "noIndex": false,
+      "h1": "Credit Origination"
+    },
+    {
+      "path": "/playbooks/simulacao-credito",
+      "title": "Simulação de Crédito | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/simulacao-credito",
+      "noIndex": false,
+      "h1": "Simulação de Crédito"
+    },
+    {
+      "path": "/en/playbooks/simulacao-credito",
+      "title": "Credit Simulation | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/simulacao-credito",
+      "noIndex": false,
+      "h1": "Credit Simulation"
+    },
+    {
+      "path": "/playbooks/renegociacao-dividas",
+      "title": "Renegociação de Dívidas | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/renegociacao-dividas",
+      "noIndex": false,
+      "h1": "Renegociação de Dívidas"
+    },
+    {
+      "path": "/en/playbooks/renegociacao-dividas",
+      "title": "Debt Renegotiation | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/renegociacao-dividas",
+      "noIndex": false,
+      "h1": "Debt Renegotiation"
+    },
+    {
+      "path": "/playbooks/open-finance-credito",
+      "title": "Crédito com Open Finance | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/open-finance-credito",
+      "noIndex": false,
+      "h1": "Crédito com Open Finance"
+    },
+    {
+      "path": "/en/playbooks/open-finance-credito",
+      "title": "Open Finance Credit | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/open-finance-credito",
+      "noIndex": false,
+      "h1": "Open Finance Credit"
+    },
+    {
+      "path": "/playbooks/cotacao-seguro",
+      "title": "Cotação de Seguro | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/cotacao-seguro",
+      "noIndex": false,
+      "h1": "Cotação de Seguro"
+    },
+    {
+      "path": "/en/playbooks/cotacao-seguro",
+      "title": "Insurance Quote | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/cotacao-seguro",
+      "noIndex": false,
+      "h1": "Insurance Quote"
+    },
+    {
+      "path": "/playbooks/onboarding-kyc",
+      "title": "Onboarding KYC | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/onboarding-kyc",
+      "noIndex": false,
+      "h1": "Onboarding KYC"
+    },
+    {
+      "path": "/en/playbooks/onboarding-kyc",
+      "title": "KYC Onboarding | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/onboarding-kyc",
+      "noIndex": false,
+      "h1": "KYC Onboarding"
+    },
+    {
+      "path": "/playbooks/abertura-conta-digital",
+      "title": "Abertura de Conta Digital | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/abertura-conta-digital",
+      "noIndex": false,
+      "h1": "Abertura de Conta Digital"
+    },
+    {
+      "path": "/en/playbooks/abertura-conta-digital",
+      "title": "Digital Account Opening | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/abertura-conta-digital",
+      "noIndex": false,
+      "h1": "Digital Account Opening"
+    },
+    {
+      "path": "/playbooks/onboarding-usuarios",
+      "title": "Onboarding de Usuários SaaS | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/onboarding-usuarios",
+      "noIndex": false,
+      "h1": "Onboarding de Usuários SaaS"
+    },
+    {
+      "path": "/en/playbooks/onboarding-usuarios",
+      "title": "SaaS User Onboarding | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/onboarding-usuarios",
+      "noIndex": false,
+      "h1": "SaaS User Onboarding"
+    },
+    {
+      "path": "/playbooks/matricula-educacao",
+      "title": "Matrícula Automatizada | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/matricula-educacao",
+      "noIndex": false,
+      "h1": "Matrícula Automatizada"
+    },
+    {
+      "path": "/en/playbooks/matricula-educacao",
+      "title": "Automated Enrollment | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/matricula-educacao",
+      "noIndex": false,
+      "h1": "Automated Enrollment"
+    },
+    {
+      "path": "/playbooks/campanhas-whatsapp",
+      "title": "Campanhas WhatsApp | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/campanhas-whatsapp",
+      "noIndex": false,
+      "h1": "Campanhas WhatsApp"
+    },
+    {
+      "path": "/en/playbooks/campanhas-whatsapp",
+      "title": "WhatsApp Campaigns | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/campanhas-whatsapp",
+      "noIndex": false,
+      "h1": "WhatsApp Campaigns"
+    },
+    {
+      "path": "/playbooks/recuperacao-carrinho",
+      "title": "Recuperação de Carrinho | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/recuperacao-carrinho",
+      "noIndex": false,
+      "h1": "Recuperação de Carrinho"
+    },
+    {
+      "path": "/en/playbooks/recuperacao-carrinho",
+      "title": "Cart Recovery | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/recuperacao-carrinho",
+      "noIndex": false,
+      "h1": "Cart Recovery"
+    },
+    {
+      "path": "/playbooks/nps-feedback",
+      "title": "Coleta de NPS e Feedback | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/nps-feedback",
+      "noIndex": false,
+      "h1": "Coleta de NPS e Feedback"
+    },
+    {
+      "path": "/en/playbooks/nps-feedback",
+      "title": "NPS & Feedback Collection | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/nps-feedback",
+      "noIndex": false,
+      "h1": "NPS & Feedback Collection"
+    },
+    {
+      "path": "/playbooks/renovacao-proativa",
+      "title": "Renovação Proativa | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/renovacao-proativa",
+      "noIndex": false,
+      "h1": "Renovação Proativa"
+    },
+    {
+      "path": "/en/playbooks/renovacao-proativa",
+      "title": "Proactive Renewal | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/renovacao-proativa",
+      "noIndex": false,
+      "h1": "Proactive Renewal"
+    },
+    {
+      "path": "/playbooks/sinistro-whatsapp",
+      "title": "Aviso de Sinistro | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/sinistro-whatsapp",
+      "noIndex": false,
+      "h1": "Aviso de Sinistro"
+    },
+    {
+      "path": "/en/playbooks/sinistro-whatsapp",
+      "title": "Claim Notification | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/sinistro-whatsapp",
+      "noIndex": false,
+      "h1": "Claim Notification"
+    },
+    {
+      "path": "/playbooks/vistoria-digital",
+      "title": "Vistoria Digital | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/vistoria-digital",
+      "noIndex": false,
+      "h1": "Vistoria Digital"
+    },
+    {
+      "path": "/en/playbooks/vistoria-digital",
+      "title": "Digital Inspection | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/vistoria-digital",
+      "noIndex": false,
+      "h1": "Digital Inspection"
+    },
+    {
+      "path": "/playbooks/cardapio-digital",
+      "title": "Cardápio Digital e Pedidos | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/cardapio-digital",
+      "noIndex": false,
+      "h1": "Cardápio Digital e Pedidos"
+    },
+    {
+      "path": "/en/playbooks/cardapio-digital",
+      "title": "Digital Menu & Orders | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/cardapio-digital",
+      "noIndex": false,
+      "h1": "Digital Menu & Orders"
+    },
+    {
+      "path": "/playbooks/pix-conversacional",
+      "title": "Pix Conversacional | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/pix-conversacional",
+      "noIndex": false,
+      "h1": "Pix Conversacional"
+    },
+    {
+      "path": "/en/playbooks/pix-conversacional",
+      "title": "Conversational Pix | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/pix-conversacional",
+      "noIndex": false,
+      "h1": "Conversational Pix"
+    },
+    {
+      "path": "/playbooks/agendamento-inteligente",
+      "title": "Agendamento Inteligente | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/agendamento-inteligente",
+      "noIndex": false,
+      "h1": "Agendamento Inteligente"
+    },
+    {
+      "path": "/en/playbooks/agendamento-inteligente",
+      "title": "Smart Scheduling | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/agendamento-inteligente",
+      "noIndex": false,
+      "h1": "Smart Scheduling"
+    },
+    {
+      "path": "/playbooks/agendamento-consultas",
+      "title": "Agendamento de Consultas | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/agendamento-consultas",
+      "noIndex": false,
+      "h1": "Agendamento de Consultas"
+    },
+    {
+      "path": "/en/playbooks/agendamento-consultas",
+      "title": "Medical Appointment Scheduling | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/agendamento-consultas",
+      "noIndex": false,
+      "h1": "Medical Appointment Scheduling"
+    },
+    {
+      "path": "/playbooks/notificacoes-transacionais",
+      "title": "Notificações Transacionais | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/notificacoes-transacionais",
+      "noIndex": false,
+      "h1": "Notificações Transacionais"
+    },
+    {
+      "path": "/en/playbooks/notificacoes-transacionais",
+      "title": "Transactional Notifications | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/notificacoes-transacionais",
+      "noIndex": false,
+      "h1": "Transactional Notifications"
+    },
+    {
+      "path": "/playbooks/app-originacao-credito",
+      "title": "Sistema de Originação de Crédito | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/app-originacao-credito",
+      "noIndex": false,
+      "h1": "Sistema de Originação de Crédito"
+    },
+    {
+      "path": "/en/playbooks/app-originacao-credito",
+      "title": "Credit Origination System | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/app-originacao-credito",
+      "noIndex": false,
+      "h1": "Credit Origination System"
+    },
+    {
+      "path": "/playbooks/app-portal-cliente",
+      "title": "Portal do Cliente | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/app-portal-cliente",
+      "noIndex": false,
+      "h1": "Portal do Cliente"
+    },
+    {
+      "path": "/en/playbooks/app-portal-cliente",
+      "title": "Customer Portal | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/app-portal-cliente",
+      "noIndex": false,
+      "h1": "Customer Portal"
+    },
+    {
+      "path": "/playbooks/app-motor-cobranca",
+      "title": "Motor de Cobrança Automatizado | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/app-motor-cobranca",
+      "noIndex": false,
+      "h1": "Motor de Cobrança Automatizado"
+    },
+    {
+      "path": "/en/playbooks/app-motor-cobranca",
+      "title": "Automated Collections Engine | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/app-motor-cobranca",
+      "noIndex": false,
+      "h1": "Automated Collections Engine"
+    },
+    {
+      "path": "/playbooks/app-kyc-digital",
+      "title": "Sistema KYC Digital | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/app-kyc-digital",
+      "noIndex": false,
+      "h1": "Sistema KYC Digital"
+    },
+    {
+      "path": "/en/playbooks/app-kyc-digital",
+      "title": "Digital KYC System | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/app-kyc-digital",
+      "noIndex": false,
+      "h1": "Digital KYC System"
+    },
+    {
+      "path": "/playbooks/app-backoffice-seguros",
+      "title": "Backoffice de Seguros | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/app-backoffice-seguros",
+      "noIndex": false,
+      "h1": "Backoffice de Seguros"
+    },
+    {
+      "path": "/en/playbooks/app-backoffice-seguros",
+      "title": "Insurance Backoffice | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/app-backoffice-seguros",
+      "noIndex": false,
+      "h1": "Insurance Backoffice"
+    },
+    {
+      "path": "/playbooks/app-hub-onboarding",
+      "title": "Hub de Onboarding Digital | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/app-hub-onboarding",
+      "noIndex": false,
+      "h1": "Hub de Onboarding Digital"
+    },
+    {
+      "path": "/en/playbooks/app-hub-onboarding",
+      "title": "Digital Onboarding Hub | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/app-hub-onboarding",
+      "noIndex": false,
+      "h1": "Digital Onboarding Hub"
+    },
+    {
+      "path": "/playbooks/app-api-pagamentos",
+      "title": "API de Pagamentos Unificada | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/app-api-pagamentos",
+      "noIndex": false,
+      "h1": "API de Pagamentos Unificada"
+    },
+    {
+      "path": "/en/playbooks/app-api-pagamentos",
+      "title": "Unified Payments API | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/app-api-pagamentos",
+      "noIndex": false,
+      "h1": "Unified Payments API"
+    },
+    {
+      "path": "/playbooks/app-assinatura-digital",
+      "title": "Sistema de Assinatura Digital | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/app-assinatura-digital",
+      "noIndex": false,
+      "h1": "Sistema de Assinatura Digital"
+    },
+    {
+      "path": "/en/playbooks/app-assinatura-digital",
+      "title": "Digital Signature System | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/app-assinatura-digital",
+      "noIndex": false,
+      "h1": "Digital Signature System"
+    },
+    {
+      "path": "/playbooks/app-open-finance",
+      "title": "Hub Open Finance | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/app-open-finance",
+      "noIndex": false,
+      "h1": "Hub Open Finance"
+    },
+    {
+      "path": "/en/playbooks/app-open-finance",
+      "title": "Open Finance Hub | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/app-open-finance",
+      "noIndex": false,
+      "h1": "Open Finance Hub"
+    },
+    {
+      "path": "/playbooks/app-gestao-sinistros",
+      "title": "Gestão de Sinistros Digital | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/app-gestao-sinistros",
+      "noIndex": false,
+      "h1": "Gestão de Sinistros Digital"
+    },
+    {
+      "path": "/en/playbooks/app-gestao-sinistros",
+      "title": "Digital Claims Management | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/app-gestao-sinistros",
+      "noIndex": false,
+      "h1": "Digital Claims Management"
+    },
+    {
+      "path": "/playbooks/app-motor-decisao",
+      "title": "Motor de Decisão Enterprise | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/app-motor-decisao",
+      "noIndex": false,
+      "h1": "Motor de Decisão Enterprise"
+    },
+    {
+      "path": "/en/playbooks/app-motor-decisao",
+      "title": "Enterprise Decision Engine | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/app-motor-decisao",
+      "noIndex": false,
+      "h1": "Enterprise Decision Engine"
+    },
+    {
+      "path": "/playbooks/app-portal-parceiros",
+      "title": "Portal de Parceiros | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/app-portal-parceiros",
+      "noIndex": false,
+      "h1": "Portal de Parceiros"
+    },
+    {
+      "path": "/en/playbooks/app-portal-parceiros",
+      "title": "Partner Portal | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/app-portal-parceiros",
+      "noIndex": false,
+      "h1": "Partner Portal"
+    },
+    {
+      "path": "/playbooks/app-compliance-lgpd",
+      "title": "Compliance LGPD Automatizado | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/app-compliance-lgpd",
+      "noIndex": false,
+      "h1": "Compliance LGPD Automatizado"
+    },
+    {
+      "path": "/en/playbooks/app-compliance-lgpd",
+      "title": "Automated Data Compliance | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/app-compliance-lgpd",
+      "noIndex": false,
+      "h1": "Automated Data Compliance"
+    },
+    {
+      "path": "/playbooks/app-conciliacao-financeira",
+      "title": "Conciliação Financeira Automática | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/app-conciliacao-financeira",
+      "noIndex": false,
+      "h1": "Conciliação Financeira Automática"
+    },
+    {
+      "path": "/en/playbooks/app-conciliacao-financeira",
+      "title": "Automatic Financial Reconciliation | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/app-conciliacao-financeira",
+      "noIndex": false,
+      "h1": "Automatic Financial Reconciliation"
+    },
+    {
+      "path": "/playbooks/app-marketplace-credito",
+      "title": "Marketplace de Crédito | Catalisa",
+      "canonical": "https://catalisa.io/playbooks/app-marketplace-credito",
+      "noIndex": false,
+      "h1": "Marketplace de Crédito"
+    },
+    {
+      "path": "/en/playbooks/app-marketplace-credito",
+      "title": "Credit Marketplace | Catalisa",
+      "canonical": "https://catalisa.io/en/playbooks/app-marketplace-credito",
+      "noIndex": false,
+      "h1": "Credit Marketplace"
+    },
+    {
+      "path": "/de",
+      "title": "Catalisa | Produkte und Automatisierungen mit KI erstellen",
+      "canonical": "https://catalisa.io/de",
+      "noIndex": false,
+      "h1": "Die Form folgtdie Verbindung."
+    },
+    {
+      "path": "/es",
+      "title": "Catalisa | Crea productos y automatizaciones con IA",
+      "canonical": "https://catalisa.io/es",
+      "noIndex": false,
+      "h1": "La forma siguela conexión."
+    },
+    {
+      "path": "/da",
+      "title": "Catalisa | Byg produkter og automatiseringer med AI",
+      "canonical": "https://catalisa.io/da",
+      "noIndex": false,
+      "h1": "Formen følgerforbindelsen."
+    },
+    {
+      "path": "/nl",
+      "title": "Catalisa | Bouw producten en automatiseringen met AI",
+      "canonical": "https://catalisa.io/nl",
+      "noIndex": false,
+      "h1": "De vorm volgtde verbinding."
+    },
+    {
+      "path": "/fr",
+      "title": "Catalisa | Créez des produits et des automatisations avec l'IA",
+      "canonical": "https://catalisa.io/fr",
+      "noIndex": false,
+      "h1": "La forme suitla connexion."
+    },
+    {
+      "path": "/design-system",
+      "title": "Sistema de identidade Catalisa",
+      "canonical": "https://catalisa.io/design-system",
+      "noIndex": true,
+      "h1": "Uma base comum.Expressões próprias."
+    },
+    {
+      "path": "/en/design-system",
+      "title": "Catalisa identity system",
+      "canonical": "https://catalisa.io/en/design-system",
+      "noIndex": true,
+      "h1": "A shared foundation.Your own expressions."
+    },
+    {
+      "path": "/de/designsystem",
+      "title": "Catalisa-Identitätssystem",
+      "canonical": "https://catalisa.io/de/designsystem",
+      "noIndex": true,
+      "h1": "Eine gemeinsame Basis.Eigene Ausdrucksformen."
+    },
+    {
+      "path": "/es/sistema-de-diseno",
+      "title": "Sistema de identidad de Catalisa",
+      "canonical": "https://catalisa.io/es/sistema-de-diseno",
+      "noIndex": true,
+      "h1": "Una base común.Expresiones propias."
+    },
+    {
+      "path": "/da/designsystem",
+      "title": "Catalisas identitetssystem",
+      "canonical": "https://catalisa.io/da/designsystem",
+      "noIndex": true,
+      "h1": "Et fælles fundament.Egne udtryk."
+    },
+    {
+      "path": "/nl/designsysteem",
+      "title": "Identiteitssysteem van Catalisa",
+      "canonical": "https://catalisa.io/nl/designsysteem",
+      "noIndex": true,
+      "h1": "Een gemeenschappelijke basis.Eigen uitdrukkingen."
+    },
+    {
+      "path": "/fr/systeme-de-design",
+      "title": "Système d'identité Catalisa",
+      "canonical": "https://catalisa.io/fr/systeme-de-design",
+      "noIndex": true,
+      "h1": "Une base commune.Des expressions propres."
+    },
+    {
+      "path": "/capacidades",
+      "title": "Building blocks: biblioteca de capacidades | Catalisa",
+      "canonical": "https://catalisa.io/capacidades",
+      "noIndex": false,
+      "h1": "Peças com propósito.Possibilidadesem conjunto."
+    },
+    {
+      "path": "/en/capabilities",
+      "title": "Building blocks: capability library | Catalisa",
+      "canonical": "https://catalisa.io/en/capabilities",
+      "noIndex": false,
+      "h1": "Pieces with a purpose.Possibilitiestogether."
+    },
+    {
+      "path": "/de/faehigkeiten",
+      "title": "Building Blocks: Bibliothek von Fähigkeiten | Catalisa",
+      "canonical": "https://catalisa.io/de/faehigkeiten",
+      "noIndex": false,
+      "h1": "Bausteine mit Zweck.Möglichkeitengemeinsam."
+    },
+    {
+      "path": "/es/capacidades",
+      "title": "Building blocks: biblioteca de capacidades | Catalisa",
+      "canonical": "https://catalisa.io/es/capacidades",
+      "noIndex": false,
+      "h1": "Piezas con propósito.Posibilidadesen conjunto."
+    },
+    {
+      "path": "/da/funktioner",
+      "title": "Building blocks: bibliotek af kapabiliteter | Catalisa",
+      "canonical": "https://catalisa.io/da/funktioner",
+      "noIndex": false,
+      "h1": "Brikker med et formål.Mulighederi fællesskab."
+    },
+    {
+      "path": "/nl/mogelijkheden",
+      "title": "Building blocks: bibliotheek van functionaliteiten | Catalisa",
+      "canonical": "https://catalisa.io/nl/mogelijkheden",
+      "noIndex": false,
+      "h1": "Onderdelen met een doel.Mogelijkhedensamen."
+    },
+    {
+      "path": "/fr/capacites",
+      "title": "Building blocks : bibliothèque de capacités | Catalisa",
+      "canonical": "https://catalisa.io/fr/capacites",
+      "noIndex": false,
+      "h1": "Des pièces qui ont un but.Possibilitésensemble."
+    },
+    {
+      "path": "/visao",
+      "title": "Nossa visão: construir por composição | Catalisa",
+      "canonical": "https://catalisa.io/visao",
+      "noIndex": false,
+      "h1": "Dar formaao que vemdepois."
+    },
+    {
+      "path": "/en/vision",
+      "title": "Our vision: building through composition | Catalisa",
+      "canonical": "https://catalisa.io/en/vision",
+      "noIndex": false,
+      "h1": "Give it shapeto what comes nextlater."
+    },
+    {
+      "path": "/de/vision",
+      "title": "Unsere Vision: durch Komposition entwickeln | Catalisa",
+      "canonical": "https://catalisa.io/de/vision",
+      "noIndex": false,
+      "h1": "Gestaltenauf das, was kommtdanach."
+    },
+    {
+      "path": "/es/vision",
+      "title": "Nuestra visión: construir por composición | Catalisa",
+      "canonical": "https://catalisa.io/es/vision",
+      "noIndex": false,
+      "h1": "Dar formaa lo que vienedespués."
+    },
+    {
+      "path": "/da/vision",
+      "title": "Vores vision: at bygge gennem komposition | Catalisa",
+      "canonical": "https://catalisa.io/da/vision",
+      "noIndex": false,
+      "h1": "Giv formtil det, der kommerbagefter."
+    },
+    {
+      "path": "/nl/visie",
+      "title": "Onze visie: bouwen door compositie | Catalisa",
+      "canonical": "https://catalisa.io/nl/visie",
+      "noIndex": false,
+      "h1": "Vorm gevenaan wat komtdaarna."
+    },
+    {
+      "path": "/fr/vision",
+      "title": "Notre vision : construire par composition | Catalisa",
+      "canonical": "https://catalisa.io/fr/vision",
+      "noIndex": false,
+      "h1": "Donner formeà ce qui vientensuite."
+    },
+    {
+      "path": "/arquitetura",
+      "title": "Arquitetura: crie produtos e modernize o legado | Catalisa",
+      "canonical": "https://catalisa.io/arquitetura",
+      "noIndex": false,
+      "h1": "Menos trabalhorepetido.Mais produto."
+    },
+    {
+      "path": "/en/architecture",
+      "title": "Architecture: build products and modernize legacy systems | Catalisa",
+      "canonical": "https://catalisa.io/en/architecture",
+      "noIndex": false,
+      "h1": "Less workrepeated.More product."
+    },
+    {
+      "path": "/de/architektur",
+      "title": "Architektur: Produkte entwickeln und Altsysteme modernisieren | Catalisa",
+      "canonical": "https://catalisa.io/de/architektur",
+      "noIndex": false,
+      "h1": "Weniger Aufwandwiederholt.Mehr Produkt."
+    },
+    {
+      "path": "/es/arquitectura",
+      "title": "Arquitectura: crea productos y moderniza el legado | Catalisa",
+      "canonical": "https://catalisa.io/es/arquitectura",
+      "noIndex": false,
+      "h1": "Menos trabajorepetido.Más producto."
+    },
+    {
+      "path": "/da/arkitektur",
+      "title": "Arkitektur: skab produkter og modernisér legacy | Catalisa",
+      "canonical": "https://catalisa.io/da/arkitektur",
+      "noIndex": false,
+      "h1": "Mindre arbejdegentaget.Mere produkt."
+    },
+    {
+      "path": "/nl/architectuur",
+      "title": "Architectuur: bouw producten en moderniseer legacy | Catalisa",
+      "canonical": "https://catalisa.io/nl/architectuur",
+      "noIndex": false,
+      "h1": "Minder werkherhaald.Meer product."
+    },
+    {
+      "path": "/fr/architecture",
+      "title": "Architecture : créez des produits et modernisez l’existant | Catalisa",
+      "canonical": "https://catalisa.io/fr/architecture",
+      "noIndex": false,
+      "h1": "Moins de travailrépété.Davantage de produit."
+    },
+    {
+      "path": "/desenvolvedores",
+      "title": "APIs, webhooks e integrações para desenvolvedores | Catalisa",
+      "canonical": "https://catalisa.io/desenvolvedores",
+      "noIndex": false,
+      "h1": "Seu código.Mais possibilidades."
+    },
+    {
+      "path": "/en/developers",
+      "title": "APIs, webhooks, and integrations for developers | Catalisa",
+      "canonical": "https://catalisa.io/en/developers",
+      "noIndex": false,
+      "h1": "Your code.More possibilities."
+    },
+    {
+      "path": "/de/entwickler",
+      "title": "APIs, Webhooks und Integrationen für Entwickler | Catalisa",
+      "canonical": "https://catalisa.io/de/entwickler",
+      "noIndex": false,
+      "h1": "Ihr Code.Mehr Möglichkeiten."
+    },
+    {
+      "path": "/es/desarrolladores",
+      "title": "APIs, webhooks e integraciones para desarrolladores | Catalisa",
+      "canonical": "https://catalisa.io/es/desarrolladores",
+      "noIndex": false,
+      "h1": "Tu código.Más posibilidades."
+    },
+    {
+      "path": "/da/udviklere",
+      "title": "API'er, webhooks og integrationer til udviklere | Catalisa",
+      "canonical": "https://catalisa.io/da/udviklere",
+      "noIndex": false,
+      "h1": "Din kode.Mere muligheder."
+    },
+    {
+      "path": "/nl/ontwikkelaars",
+      "title": "API's, webhooks en integraties voor developers | Catalisa",
+      "canonical": "https://catalisa.io/nl/ontwikkelaars",
+      "noIndex": false,
+      "h1": "Jouw code.Meer mogelijkheden."
+    },
+    {
+      "path": "/fr/developpeurs",
+      "title": "API, webhooks et intégrations pour les développeurs | Catalisa",
+      "canonical": "https://catalisa.io/fr/developpeurs",
+      "noIndex": false,
+      "h1": "Votre code.Plus possibilités."
+    },
+    {
+      "path": "/de/studio",
+      "title": "Studio: Agenten und Automatisierungen durch Komposition erstellen | Catalisa",
+      "canonical": "https://catalisa.io/de/studio",
+      "noIndex": false,
+      "h1": "Gestalten Sieauf das, was nötig istfunktionieren."
+    },
+    {
+      "path": "/es/studio",
+      "title": "Studio: crear agentes y automatizaciones por composición | Catalisa",
+      "canonical": "https://catalisa.io/es/studio",
+      "noIndex": false,
+      "h1": "Da formaa lo que necesitafuncionar."
+    },
+    {
+      "path": "/da/studio",
+      "title": "Studio: byg agenter og automatiseringer ved komposition | Catalisa",
+      "canonical": "https://catalisa.io/da/studio",
+      "noIndex": false,
+      "h1": "Giv formtil det nødvendigefungere."
+    },
+    {
+      "path": "/nl/studio",
+      "title": "Studio: agents en automatiseringen bouwen door compositie | Catalisa",
+      "canonical": "https://catalisa.io/nl/studio",
+      "noIndex": false,
+      "h1": "Geef vormtot wat nodig iswerken."
+    },
+    {
+      "path": "/fr/studio",
+      "title": "Studio : construire des agents et des automatisations par composition | Catalisa",
+      "canonical": "https://catalisa.io/fr/studio",
+      "noIndex": false,
+      "h1": "Donnez formeà ce dont vous avez besoinfonctionner."
+    },
+    {
+      "path": "/de/workflows",
+      "title": "Workflows: Automatisierung von Prozessen und Journeys | Catalisa",
+      "canonical": "https://catalisa.io/de/workflows",
+      "noIndex": false,
+      "h1": "Der nächste Schritthat einedas Warum."
+    },
+    {
+      "path": "/es/workflows",
+      "title": "Workflows: automatización de procesos y recorridos | Catalisa",
+      "canonical": "https://catalisa.io/es/workflows",
+      "noIndex": false,
+      "h1": "El siguiente pasotiene unporqué."
+    },
+    {
+      "path": "/da/workflows",
+      "title": "Workflows: automatisering af processer og rejser | Catalisa",
+      "canonical": "https://catalisa.io/da/workflows",
+      "noIndex": false,
+      "h1": "Næste skridthar enhvorfor."
+    },
+    {
+      "path": "/nl/workflows",
+      "title": "Workflows: automatisering van processen en klantreizen | Catalisa",
+      "canonical": "https://catalisa.io/nl/workflows",
+      "noIndex": false,
+      "h1": "De volgende stapheeft eenwaarom."
+    },
+    {
+      "path": "/fr/workflows",
+      "title": "Workflows : automatisation des processus et des parcours | Catalisa",
+      "canonical": "https://catalisa.io/fr/workflows",
+      "noIndex": false,
+      "h1": "La prochaine étapea unpourquoi."
+    },
+    {
+      "path": "/agentes",
+      "title": "Agentes de IA: contexto, ferramentas e permissões | Catalisa",
+      "canonical": "https://catalisa.io/agentes",
+      "noIndex": false,
+      "h1": "Entendero contexto.Agir com sentido."
+    },
+    {
+      "path": "/de/ki-agenten",
+      "title": "KI-Agenten: Kontext, Tools und Berechtigungen | Catalisa",
+      "canonical": "https://catalisa.io/de/ki-agenten",
+      "noIndex": false,
+      "h1": "Verstehenden Kontext.Mit Sinn handeln."
+    },
+    {
+      "path": "/es/agentes-ia",
+      "title": "Agentes de IA: contexto, herramientas y permisos | Catalisa",
+      "canonical": "https://catalisa.io/es/agentes-ia",
+      "noIndex": false,
+      "h1": "Entenderel contexto.Actuar con sentido."
+    },
+    {
+      "path": "/da/ai-agenter",
+      "title": "AI-agenter: kontekst, værktøjer og tilladelser | Catalisa",
+      "canonical": "https://catalisa.io/da/ai-agenter",
+      "noIndex": false,
+      "h1": "Forståkonteksten.Handl med mening."
+    },
+    {
+      "path": "/nl/ai-agenten",
+      "title": "AI-agents: context, tools en rechten | Catalisa",
+      "canonical": "https://catalisa.io/nl/ai-agenten",
+      "noIndex": false,
+      "h1": "Begrijpende context.Handelen met betekenis."
+    },
+    {
+      "path": "/fr/agents-ia",
+      "title": "Agents IA : contexte, outils et autorisations | Catalisa",
+      "canonical": "https://catalisa.io/fr/agents-ia",
+      "noIndex": false,
+      "h1": "Comprendrele contexte.Agir à bon escient."
+    },
+    {
+      "path": "/governanca",
+      "title": "Governança: permissões, revisão e evidências | Catalisa",
+      "canonical": "https://catalisa.io/governanca",
+      "noIndex": false,
+      "h1": "Confiança temestrutura."
+    },
+    {
+      "path": "/en/governance",
+      "title": "Governance: permissions, review and evidence | Catalisa",
+      "canonical": "https://catalisa.io/en/governance",
+      "noIndex": false,
+      "h1": "Trust hasstructure."
+    },
+    {
+      "path": "/de/governance",
+      "title": "Governance: Berechtigungen, Prüfung und Nachweise | Catalisa",
+      "canonical": "https://catalisa.io/de/governance",
+      "noIndex": false,
+      "h1": "Vertrauen hatStruktur."
+    },
+    {
+      "path": "/es/gobernanza",
+      "title": "Gobernanza: permisos, revisión y evidencias | Catalisa",
+      "canonical": "https://catalisa.io/es/gobernanza",
+      "noIndex": false,
+      "h1": "La confianza tieneestructura."
+    },
+    {
+      "path": "/da/governance",
+      "title": "Governance: tilladelser, gennemgang og dokumentation | Catalisa",
+      "canonical": "https://catalisa.io/da/governance",
+      "noIndex": false,
+      "h1": "Tillid harstruktur."
+    },
+    {
+      "path": "/nl/governance",
+      "title": "Governance: rechten, beoordeling en bewijs | Catalisa",
+      "canonical": "https://catalisa.io/nl/governance",
+      "noIndex": false,
+      "h1": "Vertrouwen heeftstructuur."
+    },
+    {
+      "path": "/fr/gouvernance",
+      "title": "Gouvernance : permissions, revue et preuves | Catalisa",
+      "canonical": "https://catalisa.io/fr/gouvernance",
+      "noIndex": false,
+      "h1": "La confiance astructure."
+    },
+    {
+      "path": "/composicoes",
+      "title": "Composições: conecte capacidades em jornadas | Catalisa",
+      "canonical": "https://catalisa.io/composicoes",
+      "noIndex": false,
+      "h1": "A conexão mudao resultado."
+    },
+    {
+      "path": "/en/compositions",
+      "title": "Compositions: connect capabilities into journeys | Catalisa",
+      "canonical": "https://catalisa.io/en/compositions",
+      "noIndex": false,
+      "h1": "The connection changesthe result."
+    },
+    {
+      "path": "/de/kompositionen",
+      "title": "Kompositionen: Fähigkeiten zu Journeys verbinden | Catalisa",
+      "canonical": "https://catalisa.io/de/kompositionen",
+      "noIndex": false,
+      "h1": "Die Verbindung ändert sichdas Ergebnis."
+    },
+    {
+      "path": "/es/composiciones",
+      "title": "Composiciones: conecta capacidades en recorridos | Catalisa",
+      "canonical": "https://catalisa.io/es/composiciones",
+      "noIndex": false,
+      "h1": "La conexión cambiael resultado."
+    },
+    {
+      "path": "/da/sammensaetninger",
+      "title": "Sammensætninger: forbind kapabiliteter i forløb | Catalisa",
+      "canonical": "https://catalisa.io/da/sammensaetninger",
+      "noIndex": false,
+      "h1": "Forbindelsen ændrer sigresultatet."
+    },
+    {
+      "path": "/nl/composities",
+      "title": "Samenstellingen: verbind functionaliteiten in journeys | Catalisa",
+      "canonical": "https://catalisa.io/nl/composities",
+      "noIndex": false,
+      "h1": "De verbinding veranderthet resultaat."
+    },
+    {
+      "path": "/fr/compositions",
+      "title": "Compositions : reliez des capacités en parcours | Catalisa",
+      "canonical": "https://catalisa.io/fr/compositions",
+      "noIndex": false,
+      "h1": "La connexion changele résultat."
+    },
+    {
+      "path": "/ecossistema",
+      "title": "Ecossistema: produtos construídos com capacidades Catalisa",
+      "canonical": "https://catalisa.io/ecossistema",
+      "noIndex": false,
+      "h1": "O mesmo fundamento.Outras formas de operar."
+    },
+    {
+      "path": "/en/ecosystem",
+      "title": "Ecosystem: products built with Catalisa capabilities",
+      "canonical": "https://catalisa.io/en/ecosystem",
+      "noIndex": false,
+      "h1": "The same foundation.Other ways to operate."
+    },
+    {
+      "path": "/de/oekosystem",
+      "title": "Ökosystem: Produkte, die mit Catalisa-Fähigkeiten gebaut wurden",
+      "canonical": "https://catalisa.io/de/oekosystem",
+      "noIndex": false,
+      "h1": "Dieselbe Grundlage.Weitere Betriebsmodelle."
+    },
+    {
+      "path": "/es/ecosistema",
+      "title": "Ecosistema: productos construidos con capacidades de Catalisa",
+      "canonical": "https://catalisa.io/es/ecosistema",
+      "noIndex": false,
+      "h1": "El mismo fundamento.Otras formas de operar."
+    },
+    {
+      "path": "/da/oekosystem",
+      "title": "Økosystem: produkter bygget med Catalisa-kapabiliteter",
+      "canonical": "https://catalisa.io/da/oekosystem",
+      "noIndex": false,
+      "h1": "Det samme fundament.Andre måder at drive forretning på."
+    },
+    {
+      "path": "/nl/ecosysteem",
+      "title": "Ecosysteem: producten gebouwd met Catalisa-functionaliteiten",
+      "canonical": "https://catalisa.io/nl/ecosysteem",
+      "noIndex": false,
+      "h1": "Hetzelfde fundament.Andere manieren van werken."
+    },
+    {
+      "path": "/fr/ecosysteme",
+      "title": "Écosystème : produits construits avec les capacités Catalisa",
+      "canonical": "https://catalisa.io/fr/ecosysteme",
+      "noIndex": false,
+      "h1": "Le même fondement.D’autres façons d’opérer."
+    },
+    {
+      "path": "/produtos",
+      "title": "Produtos: explore o portfólio e as vitrines | Catalisa",
+      "canonical": "https://catalisa.io/produtos",
+      "noIndex": false,
+      "h1": "Produtos Catalisa.Novas possibilidades."
+    },
+    {
+      "path": "/en/products",
+      "title": "Products: explore the portfolio and product sites | Catalisa",
+      "canonical": "https://catalisa.io/en/products",
+      "noIndex": false,
+      "h1": "Catalisa products.New possibilities."
+    },
+    {
+      "path": "/de/produkte",
+      "title": "Produkte: Portfolio und Showcases entdecken | Catalisa",
+      "canonical": "https://catalisa.io/de/produkte",
+      "noIndex": false,
+      "h1": "Catalisa-Produkte.Neue Möglichkeiten."
+    },
+    {
+      "path": "/es/productos",
+      "title": "Productos: explora el catálogo y las webs de producto | Catalisa",
+      "canonical": "https://catalisa.io/es/productos",
+      "noIndex": false,
+      "h1": "Productos Catalisa.Nuevas posibilidades."
+    },
+    {
+      "path": "/da/produkter",
+      "title": "Produkter: udforsk porteføljen og showcases | Catalisa",
+      "canonical": "https://catalisa.io/da/produkter",
+      "noIndex": false,
+      "h1": "Catalisa-produkter.Nye muligheder."
+    },
+    {
+      "path": "/nl/producten",
+      "title": "Producten: verken het portfolio en de showcases | Catalisa",
+      "canonical": "https://catalisa.io/nl/producten",
+      "noIndex": false,
+      "h1": "Catalisa-producten.Nieuwe mogelijkheden."
+    },
+    {
+      "path": "/fr/produits",
+      "title": "Produits : explorez le portefeuille et les vitrines | Catalisa",
+      "canonical": "https://catalisa.io/fr/produits",
+      "noIndex": false,
+      "h1": "Produits Catalisa.De nouvelles possibilités."
+    },
+    {
+      "path": "/ecossistema/banking",
+      "title": "Plataforma bancária: crie seu produto financeiro | Catalisa",
+      "canonical": "https://catalisa.io/ecossistema/banking",
+      "noIndex": false,
+      "h1": "Uma conta.Várias formasde operar."
+    },
+    {
+      "path": "/en/ecosystem/banking",
+      "title": "Banking platform: build your financial product | Catalisa",
+      "canonical": "https://catalisa.io/en/ecosystem/banking",
+      "noIndex": false,
+      "h1": "One account.Many waysof operate."
+    },
+    {
+      "path": "/de/oekosystem/banking",
+      "title": "Banking-Plattform: Erstellen Sie Ihr Finanzprodukt | Catalisa",
+      "canonical": "https://catalisa.io/de/oekosystem/banking",
+      "noIndex": false,
+      "h1": "Ein Konto.Viele Formenvon betreiben."
+    },
+    {
+      "path": "/es/ecosistema/banking",
+      "title": "Plataforma bancaria: crea tu producto financiero | Catalisa",
+      "canonical": "https://catalisa.io/es/ecosistema/banking",
+      "noIndex": false,
+      "h1": "Una cuenta.Varias formasde operar."
+    },
+    {
+      "path": "/da/oekosystem/banking",
+      "title": "Bankplatform: skab dit finansielle produkt | Catalisa",
+      "canonical": "https://catalisa.io/da/oekosystem/banking",
+      "noIndex": false,
+      "h1": "Én konto.Mange formeraf drive."
+    },
+    {
+      "path": "/nl/ecosysteem/banking",
+      "title": "Bankplatform: bouw je financiële product | Catalisa",
+      "canonical": "https://catalisa.io/nl/ecosysteem/banking",
+      "noIndex": false,
+      "h1": "Eén account.Diverse vormenvan opereren."
+    },
+    {
+      "path": "/fr/ecosysteme/banking",
+      "title": "Plateforme bancaire: créez votre produit financier | Catalisa",
+      "canonical": "https://catalisa.io/fr/ecosysteme/banking",
+      "noIndex": false,
+      "h1": "Un compte.Plusieurs formesde opérer."
+    },
+    {
+      "path": "/ecossistema/credit",
+      "title": "Plataforma de crédito: desenhe seu produto de crédito | Catalisa",
+      "canonical": "https://catalisa.io/ecossistema/credit",
+      "noIndex": false,
+      "h1": "Crédito tem começo.A operaçãocontinua."
+    },
+    {
+      "path": "/en/ecosystem/credit",
+      "title": "Credit platform: design your credit product | Catalisa",
+      "canonical": "https://catalisa.io/en/ecosystem/credit",
+      "noIndex": false,
+      "h1": "Credit has a beginning.The operationcontinues."
+    },
+    {
+      "path": "/de/oekosystem/credit",
+      "title": "Kreditplattform: Gestalten Sie Ihr Kreditprodukt | Catalisa",
+      "canonical": "https://catalisa.io/de/oekosystem/credit",
+      "noIndex": false,
+      "h1": "Kredit hat einen Anfang.Der Betriebgeht weiter."
+    },
+    {
+      "path": "/es/ecosistema/credit",
+      "title": "Plataforma de crédito: diseña tu producto de crédito | Catalisa",
+      "canonical": "https://catalisa.io/es/ecosistema/credit",
+      "noIndex": false,
+      "h1": "El crédito tiene un comienzo.La operacióncontinúa."
+    },
+    {
+      "path": "/da/oekosystem/credit",
+      "title": "Kreditplatform: design dit kreditprodukt | Catalisa",
+      "canonical": "https://catalisa.io/da/oekosystem/credit",
+      "noIndex": false,
+      "h1": "Kredit har en begyndelse.Driftenfortsætter."
+    },
+    {
+      "path": "/nl/ecosysteem/credit",
+      "title": "Kredietplatform: ontwerp uw kredietproduct | Catalisa",
+      "canonical": "https://catalisa.io/nl/ecosysteem/credit",
+      "noIndex": false,
+      "h1": "Krediet heeft een begin.De operatiegaat door."
+    },
+    {
+      "path": "/fr/ecosysteme/credit",
+      "title": "Plateforme de crédit: concevez votre produit de crédit | Catalisa",
+      "canonical": "https://catalisa.io/fr/ecosysteme/credit",
+      "noIndex": false,
+      "h1": "Le crédit a un début.L'opérationcontinue."
+    },
+    {
+      "path": "/ecossistema/med",
+      "title": "Saúde: assistente de IA para clínicas | Catalisa",
+      "canonical": "https://catalisa.io/ecossistema/med",
+      "noIndex": false,
+      "h1": "Saúde"
+    },
+    {
+      "path": "/en/ecosystem/med",
+      "title": "Healthcare: AI assistant for clinics | Catalisa",
+      "canonical": "https://catalisa.io/en/ecosystem/med",
+      "noIndex": false,
+      "h1": "Healthcare"
+    },
+    {
+      "path": "/de/oekosystem/med",
+      "title": "Gesundheit: KI-Assistent für Kliniken | Catalisa",
+      "canonical": "https://catalisa.io/de/oekosystem/med",
+      "noIndex": false,
+      "h1": "Gesundheit"
+    },
+    {
+      "path": "/es/ecosistema/med",
+      "title": "Salud: asistente de IA para clínicas | Catalisa",
+      "canonical": "https://catalisa.io/es/ecosistema/med",
+      "noIndex": false,
+      "h1": "Salud"
+    },
+    {
+      "path": "/da/oekosystem/med",
+      "title": "Sundhed: AI-assistent til klinikker | Catalisa",
+      "canonical": "https://catalisa.io/da/oekosystem/med",
+      "noIndex": false,
+      "h1": "Sundhed"
+    },
+    {
+      "path": "/nl/ecosysteem/med",
+      "title": "Zorg: AI-assistent voor klinieken | Catalisa",
+      "canonical": "https://catalisa.io/nl/ecosysteem/med",
+      "noIndex": false,
+      "h1": "Zorg"
+    },
+    {
+      "path": "/fr/ecosysteme/med",
+      "title": "Santé: assistant IA pour les cliniques | Catalisa",
+      "canonical": "https://catalisa.io/fr/ecosysteme/med",
+      "noIndex": false,
+      "h1": "Santé"
+    },
+    {
+      "path": "/ecossistema/juridico",
+      "title": "Jurídico: triagem e contexto no atendimento | Catalisa",
+      "canonical": "https://catalisa.io/ecossistema/juridico",
+      "noIndex": false,
+      "h1": "Jurídico"
+    },
+    {
+      "path": "/en/ecosystem/legal",
+      "title": "Legal: triage and context in client service | Catalisa",
+      "canonical": "https://catalisa.io/en/ecosystem/legal",
+      "noIndex": false,
+      "h1": "Legal"
+    },
+    {
+      "path": "/de/oekosystem/recht",
+      "title": "Recht: Triage und Kontext in der Kundenbetreuung | Catalisa",
+      "canonical": "https://catalisa.io/de/oekosystem/recht",
+      "noIndex": false,
+      "h1": "Recht"
+    },
+    {
+      "path": "/es/ecosistema/juridico",
+      "title": "Servicios jurídicos: triaje y contexto en la atención | Catalisa",
+      "canonical": "https://catalisa.io/es/ecosistema/juridico",
+      "noIndex": false,
+      "h1": "Servicios jurídicos"
+    },
+    {
+      "path": "/da/oekosystem/jura",
+      "title": "Jura: screening og kontekst i kundeservicen | Catalisa",
+      "canonical": "https://catalisa.io/da/oekosystem/jura",
+      "noIndex": false,
+      "h1": "Jura"
+    },
+    {
+      "path": "/nl/ecosysteem/juridisch",
+      "title": "Juridische dienstverlening: triage en context in de klantenservice | Catalisa",
+      "canonical": "https://catalisa.io/nl/ecosysteem/juridisch",
+      "noIndex": false,
+      "h1": "Juridische dienstverlening"
+    },
+    {
+      "path": "/fr/ecosysteme/juridique",
+      "title": "Juridique: tri et contexte dans la prise en charge | Catalisa",
+      "canonical": "https://catalisa.io/fr/ecosysteme/juridique",
+      "noIndex": false,
+      "h1": "Juridique"
+    },
+    {
+      "path": "/ecossistema/biometrics",
+      "title": "Biometria: identidade, verificação e evidência | Catalisa",
+      "canonical": "https://catalisa.io/ecossistema/biometrics",
+      "noIndex": false,
+      "h1": "Biometria"
+    },
+    {
+      "path": "/en/ecosystem/biometrics",
+      "title": "Biometrics: identity, verification, and evidence | Catalisa",
+      "canonical": "https://catalisa.io/en/ecosystem/biometrics",
+      "noIndex": false,
+      "h1": "Biometrics"
+    },
+    {
+      "path": "/de/oekosystem/biometrics",
+      "title": "Biometrie: Identität, Verifizierung und Nachweis | Catalisa",
+      "canonical": "https://catalisa.io/de/oekosystem/biometrics",
+      "noIndex": false,
+      "h1": "Biometrie"
+    },
+    {
+      "path": "/es/ecosistema/biometrics",
+      "title": "Biometría: identidad, verificación y evidencia | Catalisa",
+      "canonical": "https://catalisa.io/es/ecosistema/biometrics",
+      "noIndex": false,
+      "h1": "Biometría"
+    },
+    {
+      "path": "/da/oekosystem/biometrics",
+      "title": "Biometri: identitet, verifikation og dokumentation | Catalisa",
+      "canonical": "https://catalisa.io/da/oekosystem/biometrics",
+      "noIndex": false,
+      "h1": "Biometri"
+    },
+    {
+      "path": "/nl/ecosysteem/biometrics",
+      "title": "Biometrie: identiteit, verificatie en bewijs | Catalisa",
+      "canonical": "https://catalisa.io/nl/ecosysteem/biometrics",
+      "noIndex": false,
+      "h1": "Biometrie"
+    },
+    {
+      "path": "/fr/ecosysteme/biometrics",
+      "title": "Biométrie: identité, vérification et preuves | Catalisa",
+      "canonical": "https://catalisa.io/fr/ecosysteme/biometrics",
+      "noIndex": false,
+      "h1": "Biométrie"
+    },
+    {
+      "path": "/ecossistema/decision",
+      "title": "Decisão: políticas versionadas e decisões rastreáveis | Catalisa",
+      "canonical": "https://catalisa.io/ecossistema/decision",
+      "noIndex": false,
+      "h1": "Decisão"
+    },
+    {
+      "path": "/en/ecosystem/decision",
+      "title": "Decision: versioned policies and traceable decisions | Catalisa",
+      "canonical": "https://catalisa.io/en/ecosystem/decision",
+      "noIndex": false,
+      "h1": "Decision"
+    },
+    {
+      "path": "/de/oekosystem/decision",
+      "title": "Entscheidungen: versionierte Richtlinien und nachvollziehbare Entscheidungen | Catalisa",
+      "canonical": "https://catalisa.io/de/oekosystem/decision",
+      "noIndex": false,
+      "h1": "Entscheidungen"
+    },
+    {
+      "path": "/es/ecosistema/decision",
+      "title": "Decisión: políticas versionadas y decisiones trazables | Catalisa",
+      "canonical": "https://catalisa.io/es/ecosistema/decision",
+      "noIndex": false,
+      "h1": "Decisión"
+    },
+    {
+      "path": "/da/oekosystem/decision",
+      "title": "Beslutning: versionerede politikker og sporbare beslutninger | Catalisa",
+      "canonical": "https://catalisa.io/da/oekosystem/decision",
+      "noIndex": false,
+      "h1": "Beslutning"
+    },
+    {
+      "path": "/nl/ecosysteem/decision",
+      "title": "Besluitvorming: geversioneerd beleid en traceerbare beslissingen | Catalisa",
+      "canonical": "https://catalisa.io/nl/ecosysteem/decision",
+      "noIndex": false,
+      "h1": "Besluitvorming"
+    },
+    {
+      "path": "/fr/ecosysteme/decision",
+      "title": "Décision: politiques versionnées et décisions traçables | Catalisa",
+      "canonical": "https://catalisa.io/fr/ecosysteme/decision",
+      "noIndex": false,
+      "h1": "Décision"
+    },
+    {
+      "path": "/perspectivas",
+      "title": "Perspectivas | Catalisa",
+      "canonical": "https://catalisa.io/perspectivas",
+      "noIndex": false,
+      "h1": "O mercado muda.O que vale construir?"
+    },
+    {
+      "path": "/en/perspectives",
+      "title": "Perspectives | Catalisa",
+      "canonical": "https://catalisa.io/en/perspectives",
+      "noIndex": false,
+      "h1": "The market changes.What is worth building?"
+    },
+    {
+      "path": "/de/perspektiven",
+      "title": "Perspektiven | Catalisa",
+      "canonical": "https://catalisa.io/de/perspektiven",
+      "noIndex": false,
+      "h1": "Der Markt verändert sich.Was lohnt sich zu bauen?"
+    },
+    {
+      "path": "/es/perspectivas",
+      "title": "Perspectivas | Catalisa",
+      "canonical": "https://catalisa.io/es/perspectivas",
+      "noIndex": false,
+      "h1": "El mercado cambia.¿Qué merece la pena construir?"
+    },
+    {
+      "path": "/da/perspektiver",
+      "title": "Perspektiver | Catalisa",
+      "canonical": "https://catalisa.io/da/perspektiver",
+      "noIndex": false,
+      "h1": "Markedet ændrer sig.Hvad er værd at bygge?"
+    },
+    {
+      "path": "/nl/perspectieven",
+      "title": "Perspectieven | Catalisa",
+      "canonical": "https://catalisa.io/nl/perspectieven",
+      "noIndex": false,
+      "h1": "De markt verandert.Wat is de moeite waard om te bouwen?"
+    },
+    {
+      "path": "/fr/perspectives",
+      "title": "Perspectives | Catalisa",
+      "canonical": "https://catalisa.io/fr/perspectives",
+      "noIndex": false,
+      "h1": "Le marché évolue.Qu'est-ce qui vaut la peine d'être construit ?"
+    },
+    {
+      "path": "/perspectivas/construir-por-composicao",
+      "title": "Modernizar sem recomeçar o banco. | Catalisa",
+      "canonical": "https://catalisa.io/perspectivas/construir-por-composicao",
+      "noIndex": false,
+      "h1": "Modernizar sem recomeçar o banco."
+    },
+    {
+      "path": "/en/perspectives/building-by-composition",
+      "title": "Modernize without rebuilding the bank. | Catalisa",
+      "canonical": "https://catalisa.io/en/perspectives/building-by-composition",
+      "noIndex": false,
+      "h1": "Modernize without rebuilding the bank from scratch."
+    },
+    {
+      "path": "/de/perspektiven/aufbau-durch-komposition",
+      "title": "Modernisieren, ohne die Bank neu aufzubauen. | Catalisa",
+      "canonical": "https://catalisa.io/de/perspektiven/aufbau-durch-komposition",
+      "noIndex": false,
+      "h1": "Modernisieren, ohne die Bank neu aufzubauen."
+    },
+    {
+      "path": "/es/perspectivas/construir-por-composicion",
+      "title": "Modernizar el banco sin empezar de cero. | Catalisa",
+      "canonical": "https://catalisa.io/es/perspectivas/construir-por-composicion",
+      "noIndex": false,
+      "h1": "Modernizar sin rehacer el banco desde cero."
+    },
+    {
+      "path": "/da/perspektiver/byg-med-sammensaetning",
+      "title": "Modernisér uden at starte banken forfra. | Catalisa",
+      "canonical": "https://catalisa.io/da/perspektiver/byg-med-sammensaetning",
+      "noIndex": false,
+      "h1": "Modernisér uden at starte banken forfra."
+    },
+    {
+      "path": "/nl/perspectieven/bouwen-door-compositie",
+      "title": "Moderniseren zonder de bank opnieuw op te bouwen. | Catalisa",
+      "canonical": "https://catalisa.io/nl/perspectieven/bouwen-door-compositie",
+      "noIndex": false,
+      "h1": "Moderniseren zonder de bank opnieuw te beginnen."
+    },
+    {
+      "path": "/fr/perspectives/construire-par-composition",
+      "title": "Moderniser sans reconstruire la banque. | Catalisa",
+      "canonical": "https://catalisa.io/fr/perspectives/construire-par-composition",
+      "noIndex": false,
+      "h1": "Moderniser sans reconstruire la banque."
+    },
+    {
+      "path": "/perspectivas/autonomia-responsabilidade",
+      "title": "A IA respondeu. A operação aconteceu? | Catalisa",
+      "canonical": "https://catalisa.io/perspectivas/autonomia-responsabilidade",
+      "noIndex": false,
+      "h1": "A IA respondeu. A operação aconteceu?"
+    },
+    {
+      "path": "/en/perspectives/autonomy-and-responsibility",
+      "title": "The AI responded. Did the operation happen? | Catalisa",
+      "canonical": "https://catalisa.io/en/perspectives/autonomy-and-responsibility",
+      "noIndex": false,
+      "h1": "The AI responded. Did the operation happen?"
+    },
+    {
+      "path": "/de/perspektiven/autonomie-und-verantwortung",
+      "title": "Die KI hat geantwortet. Ist der Vorgang tatsächlich erfolgt? | Catalisa",
+      "canonical": "https://catalisa.io/de/perspektiven/autonomie-und-verantwortung",
+      "noIndex": false,
+      "h1": "Die KI hat geantwortet. Hat der Vorgang tatsächlich stattgefunden?"
+    },
+    {
+      "path": "/es/perspectivas/autonomia-y-responsabilidad",
+      "title": "La IA ha respondido. ¿Se ha realizado la operación? | Catalisa",
+      "canonical": "https://catalisa.io/es/perspectivas/autonomia-y-responsabilidad",
+      "noIndex": false,
+      "h1": "La IA respondió. ¿Se realizó la operación?"
+    },
+    {
+      "path": "/da/perspektiver/autonomi-og-ansvar",
+      "title": "AI'en svarede. Blev handlingen udført? | Catalisa",
+      "canonical": "https://catalisa.io/da/perspektiver/autonomi-og-ansvar",
+      "noIndex": false,
+      "h1": "AI'en svarede. Blev handlingen udført?"
+    },
+    {
+      "path": "/nl/perspectieven/autonomie-en-verantwoordelijkheid",
+      "title": "De AI heeft geantwoord. Is de handeling ook uitgevoerd? | Catalisa",
+      "canonical": "https://catalisa.io/nl/perspectieven/autonomie-en-verantwoordelijkheid",
+      "noIndex": false,
+      "h1": "De AI heeft geantwoord. Heeft de operatie plaatsgevonden?"
+    },
+    {
+      "path": "/fr/perspectives/autonomie-et-responsabilite",
+      "title": "L’IA a répondu. L’opération a-t-elle eu lieu ? | Catalisa",
+      "canonical": "https://catalisa.io/fr/perspectives/autonomie-et-responsabilite",
+      "noIndex": false,
+      "h1": "L'IA a répondu. L'opération a-t-elle eu lieu ?"
+    },
+    {
+      "path": "/perspectivas/regra-legivel",
+      "title": "Decidir rápido. Conseguir explicar depois. | Catalisa",
+      "canonical": "https://catalisa.io/perspectivas/regra-legivel",
+      "noIndex": false,
+      "h1": "Decidir rápido. Conseguir explicar depois."
+    },
+    {
+      "path": "/en/perspectives/readable-rules",
+      "title": "Decide fast. Be able to explain later. | Catalisa",
+      "canonical": "https://catalisa.io/en/perspectives/readable-rules",
+      "noIndex": false,
+      "h1": "Decide fast. Be able to explain it later."
+    },
+    {
+      "path": "/de/perspektiven/lesbare-regeln",
+      "title": "Schnell entscheiden. Später erklären können. | Catalisa",
+      "canonical": "https://catalisa.io/de/perspektiven/lesbare-regeln",
+      "noIndex": false,
+      "h1": "Schnell entscheiden. Später erklären können."
+    },
+    {
+      "path": "/es/perspectivas/reglas-legibles",
+      "title": "Decidir rápido. Poder explicarlo después. | Catalisa",
+      "canonical": "https://catalisa.io/es/perspectivas/reglas-legibles",
+      "noIndex": false,
+      "h1": "Decidir rápido. Poder explicarlo después."
+    },
+    {
+      "path": "/da/perspektiver/laesbare-regler",
+      "title": "Beslut hurtigt. Kunne forklare det bagefter. | Catalisa",
+      "canonical": "https://catalisa.io/da/perspektiver/laesbare-regler",
+      "noIndex": false,
+      "h1": "Beslut hurtigt. Kunne forklare bagefter."
+    },
+    {
+      "path": "/nl/perspectieven/leesbare-regels",
+      "title": "Snel beslissen. Later kunnen uitleggen. | Catalisa",
+      "canonical": "https://catalisa.io/nl/perspectieven/leesbare-regels",
+      "noIndex": false,
+      "h1": "Snel beslissen. Achteraf kunnen uitleggen."
+    },
+    {
+      "path": "/fr/perspectives/regles-lisibles",
+      "title": "Décider vite. Pouvoir l'expliquer ensuite. | Catalisa",
+      "canonical": "https://catalisa.io/fr/perspectives/regles-lisibles",
+      "noIndex": false,
+      "h1": "Décider vite. Pouvoir l'expliquer ensuite."
+    },
+    {
+      "path": "/perspectivas/open-finance-da-conexao-ao-produto",
+      "title": "Conectar dados é só o começo. | Catalisa",
+      "canonical": "https://catalisa.io/perspectivas/open-finance-da-conexao-ao-produto",
+      "noIndex": false,
+      "h1": "Conectar dados é só o começo."
+    },
+    {
+      "path": "/en/perspectives/open-finance-from-connection-to-product",
+      "title": "Connecting data is just the beginning. | Catalisa",
+      "canonical": "https://catalisa.io/en/perspectives/open-finance-from-connection-to-product",
+      "noIndex": false,
+      "h1": "Connecting data is just the beginning."
+    },
+    {
+      "path": "/de/perspektiven/open-finance-von-der-verbindung-zum-produkt",
+      "title": "Daten zu verbinden ist erst der Anfang. | Catalisa",
+      "canonical": "https://catalisa.io/de/perspektiven/open-finance-von-der-verbindung-zum-produkt",
+      "noIndex": false,
+      "h1": "Daten zu verbinden ist erst der Anfang."
+    },
+    {
+      "path": "/es/perspectivas/open-finance-de-la-conexion-al-producto",
+      "title": "Conectar datos es solo el principio. | Catalisa",
+      "canonical": "https://catalisa.io/es/perspectivas/open-finance-de-la-conexion-al-producto",
+      "noIndex": false,
+      "h1": "Conectar datos es solo el comienzo."
+    },
+    {
+      "path": "/da/perspektiver/open-finance-fra-forbindelse-til-produkt",
+      "title": "At forbinde data er kun begyndelsen. | Catalisa",
+      "canonical": "https://catalisa.io/da/perspektiver/open-finance-fra-forbindelse-til-produkt",
+      "noIndex": false,
+      "h1": "At forbinde data er kun begyndelsen."
+    },
+    {
+      "path": "/nl/perspectieven/open-finance-van-verbinding-naar-product",
+      "title": "Gegevens koppelen is pas het begin. | Catalisa",
+      "canonical": "https://catalisa.io/nl/perspectieven/open-finance-van-verbinding-naar-product",
+      "noIndex": false,
+      "h1": "Data koppelen is pas het begin."
+    },
+    {
+      "path": "/fr/perspectives/open-finance-de-la-connexion-au-produit",
+      "title": "Connecter les données n'est que le début. | Catalisa",
+      "canonical": "https://catalisa.io/fr/perspectives/open-finance-de-la-connexion-au-produit",
+      "noIndex": false,
+      "h1": "Connecter des données n’est qu’un début."
+    },
+    {
+      "path": "/perspectivas/resiliencia-e-liberdade-de-evoluir",
+      "title": "E se uma peça ficar indisponível? | Catalisa",
+      "canonical": "https://catalisa.io/perspectivas/resiliencia-e-liberdade-de-evoluir",
+      "noIndex": false,
+      "h1": "E se uma peça ficar indisponível?"
+    },
+    {
+      "path": "/en/perspectives/resilience-and-freedom-to-evolve",
+      "title": "What if a piece becomes unavailable? | Catalisa",
+      "canonical": "https://catalisa.io/en/perspectives/resilience-and-freedom-to-evolve",
+      "noIndex": false,
+      "h1": "What if a component becomes unavailable?"
+    },
+    {
+      "path": "/de/perspektiven/resilienz-und-freiheit-zur-weiterentwicklung",
+      "title": "Was passiert, wenn ein Baustein nicht verfügbar ist? | Catalisa",
+      "canonical": "https://catalisa.io/de/perspektiven/resilienz-und-freiheit-zur-weiterentwicklung",
+      "noIndex": false,
+      "h1": "Und wenn ein Baustein nicht verfügbar ist?"
+    },
+    {
+      "path": "/es/perspectivas/resiliencia-y-libertad-para-evolucionar",
+      "title": "¿Y si una pieza deja de estar disponible? | Catalisa",
+      "canonical": "https://catalisa.io/es/perspectivas/resiliencia-y-libertad-para-evolucionar",
+      "noIndex": false,
+      "h1": "¿Y si una pieza deja de estar disponible?"
+    },
+    {
+      "path": "/da/perspektiver/robusthed-og-frihed-til-at-udvikle",
+      "title": "Hvad hvis en komponent bliver utilgængelig? | Catalisa",
+      "canonical": "https://catalisa.io/da/perspektiver/robusthed-og-frihed-til-at-udvikle",
+      "noIndex": false,
+      "h1": "Hvad hvis en byggeklods bliver utilgængelig?"
+    },
+    {
+      "path": "/nl/perspectieven/veerkracht-en-vrijheid-om-te-evolueren",
+      "title": "Wat als een onderdeel niet beschikbaar is? | Catalisa",
+      "canonical": "https://catalisa.io/nl/perspectieven/veerkracht-en-vrijheid-om-te-evolueren",
+      "noIndex": false,
+      "h1": "En als een onderdeel niet beschikbaar is?"
+    },
+    {
+      "path": "/fr/perspectives/resilience-et-liberte-devoluer",
+      "title": "Et si une brique devient indisponible ? | Catalisa",
+      "canonical": "https://catalisa.io/fr/perspectives/resilience-et-liberte-devoluer",
+      "noIndex": false,
+      "h1": "Et si une brique devient indisponible ?"
+    },
+    {
+      "path": "/interfaces",
+      "title": "Interfaces: capturas e contexto dos produtos | Catalisa",
+      "canonical": "https://catalisa.io/interfaces",
+      "noIndex": false,
+      "h1": "A arquiteturavista por quem usa."
+    },
+    {
+      "path": "/en/interfaces",
+      "title": "Interfaces: product screenshots and context | Catalisa",
+      "canonical": "https://catalisa.io/en/interfaces",
+      "noIndex": false,
+      "h1": "The architectureas seen by those who use it."
+    },
+    {
+      "path": "/de/oberflaechen",
+      "title": "Oberflächen: Screenshots und Kontext der Produkte | Catalisa",
+      "canonical": "https://catalisa.io/de/oberflaechen",
+      "noIndex": false,
+      "h1": "Die Architekturaus Sicht der Nutzer."
+    },
+    {
+      "path": "/es/interfaces",
+      "title": "Interfaces: capturas y contexto de los productos | Catalisa",
+      "canonical": "https://catalisa.io/es/interfaces",
+      "noIndex": false,
+      "h1": "La arquitecturavista por quien la usa."
+    },
+    {
+      "path": "/da/brugerflader",
+      "title": "Grænseflader: skærmbilleder og kontekst for produkterne | Catalisa",
+      "canonical": "https://catalisa.io/da/brugerflader",
+      "noIndex": false,
+      "h1": "Arkitekturenset af dem, der bruger den."
+    },
+    {
+      "path": "/nl/interfaces",
+      "title": "Interfaces: screenshots en context van de producten | Catalisa",
+      "canonical": "https://catalisa.io/nl/interfaces",
+      "noIndex": false,
+      "h1": "De architectuurgezien door wie het gebruikt."
+    },
+    {
+      "path": "/fr/interfaces",
+      "title": "Interfaces : captures d’écran et contexte des produits | Catalisa",
+      "canonical": "https://catalisa.io/fr/interfaces",
+      "noIndex": false,
+      "h1": "L’architecturevue par ceux qui l'utilisent."
+    },
+    {
+      "path": "/de/pressekit",
+      "title": "Pressekit: Marke, Signaturen und offizielle Ressourcen | Catalisa",
+      "canonical": "https://catalisa.io/de/pressekit",
+      "noIndex": false,
+      "h1": "Eine Marke.Viele Ausdrücke."
+    },
+    {
+      "path": "/es/kit-de-prensa",
+      "title": "Press kit: marca, firmas y recursos oficiales | Catalisa",
+      "canonical": "https://catalisa.io/es/kit-de-prensa",
+      "noIndex": false,
+      "h1": "Una marca.Muchas expresiones."
+    },
+    {
+      "path": "/da/pressekit",
+      "title": "Pressekit: brand, signaturer og officielle ressourcer | Catalisa",
+      "canonical": "https://catalisa.io/da/pressekit",
+      "noIndex": false,
+      "h1": "Ét brand.Mange udtryk."
+    },
+    {
+      "path": "/nl/perskit",
+      "title": "Perskit: merk, logo's en officiële middelen | Catalisa",
+      "canonical": "https://catalisa.io/nl/perskit",
+      "noIndex": false,
+      "h1": "Eén merk.Veel uitdrukkingen."
+    },
+    {
+      "path": "/fr/kit-presse",
+      "title": "Kit presse : marque, signatures et ressources officielles | Catalisa",
+      "canonical": "https://catalisa.io/fr/kit-presse",
+      "noIndex": false,
+      "h1": "Une marque.De nombreuses expressions."
+    },
+    {
+      "path": "/fontes",
+      "title": "Fontes e referências do conteúdo | Catalisa",
+      "canonical": "https://catalisa.io/fontes",
+      "noIndex": false,
+      "h1": "A base do conteúdo."
+    },
+    {
+      "path": "/en/sources",
+      "title": "Content sources and references | Catalisa",
+      "canonical": "https://catalisa.io/en/sources",
+      "noIndex": false,
+      "h1": "The foundation of the content."
+    },
+    {
+      "path": "/de/quellen",
+      "title": "Quellen und Referenzen der Inhalte | Catalisa",
+      "canonical": "https://catalisa.io/de/quellen",
+      "noIndex": false,
+      "h1": "Die Grundlage des Inhalts."
+    },
+    {
+      "path": "/es/fuentes",
+      "title": "Fuentes y referencias del contenido | Catalisa",
+      "canonical": "https://catalisa.io/es/fuentes",
+      "noIndex": false,
+      "h1": "La base del contenido."
+    },
+    {
+      "path": "/da/kilder",
+      "title": "Kilder og referencer for indholdet | Catalisa",
+      "canonical": "https://catalisa.io/da/kilder",
+      "noIndex": false,
+      "h1": "Grundlaget for indholdet."
+    },
+    {
+      "path": "/nl/bronnen",
+      "title": "Bronnen en referenties van de content | Catalisa",
+      "canonical": "https://catalisa.io/nl/bronnen",
+      "noIndex": false,
+      "h1": "De basis van de content."
+    },
+    {
+      "path": "/fr/sources",
+      "title": "Sources et références du contenu | Catalisa",
+      "canonical": "https://catalisa.io/fr/sources",
+      "noIndex": false,
+      "h1": "Le fondement du contenu."
+    },
+    {
+      "path": "/mapa",
+      "title": "Mapa do site: explore todas as conexões | Catalisa",
+      "canonical": "https://catalisa.io/mapa",
+      "noIndex": false,
+      "h1": "Todas as conexões."
+    },
+    {
+      "path": "/en/sitemap",
+      "title": "Sitemap: explore all connections | Catalisa",
+      "canonical": "https://catalisa.io/en/sitemap",
+      "noIndex": false,
+      "h1": "All connections."
+    },
+    {
+      "path": "/de/sitemap",
+      "title": "Sitemap: alle Verbindungen erkunden | Catalisa",
+      "canonical": "https://catalisa.io/de/sitemap",
+      "noIndex": false,
+      "h1": "Alle Verbindungen."
+    },
+    {
+      "path": "/es/mapa-del-sitio",
+      "title": "Mapa del sitio: explora todas las conexiones | Catalisa",
+      "canonical": "https://catalisa.io/es/mapa-del-sitio",
+      "noIndex": false,
+      "h1": "Todas las conexiones."
+    },
+    {
+      "path": "/da/sitemap",
+      "title": "Sitemap: udforsk alle forbindelser | Catalisa",
+      "canonical": "https://catalisa.io/da/sitemap",
+      "noIndex": false,
+      "h1": "Alle forbindelser."
+    },
+    {
+      "path": "/nl/sitemap",
+      "title": "Sitemap: verken alle verbindingen | Catalisa",
+      "canonical": "https://catalisa.io/nl/sitemap",
+      "noIndex": false,
+      "h1": "Alle koppelingen."
+    },
+    {
+      "path": "/fr/plan-du-site",
+      "title": "Plan du site : explorez toutes les connexions | Catalisa",
+      "canonical": "https://catalisa.io/fr/plan-du-site",
+      "noIndex": false,
+      "h1": "Toutes les connexions."
+    },
+    {
+      "path": "/de/kontakt",
+      "title": "Kontakt: Knüpfen Sie Ihre nächste Verbindung | Catalisa",
+      "canonical": "https://catalisa.io/de/kontakt",
+      "noIndex": false,
+      "h1": "Lassen Sie uns Gestalt gebenzur nächstenGespräch."
+    },
+    {
+      "path": "/es/contacto",
+      "title": "Contacto: construye tu próxima conexión | Catalisa",
+      "canonical": "https://catalisa.io/es/contacto",
+      "noIndex": false,
+      "h1": "Démosle formaa la siguienteconversación."
+    },
+    {
+      "path": "/da/kontakt",
+      "title": "Kontakt: byg din næste forbindelse | Catalisa",
+      "canonical": "https://catalisa.io/da/kontakt",
+      "noIndex": false,
+      "h1": "Lad os give det formtil den næstesamtale."
+    },
+    {
+      "path": "/nl/contact",
+      "title": "Contact: bouw je volgende verbinding | Catalisa",
+      "canonical": "https://catalisa.io/nl/contact",
+      "noIndex": false,
+      "h1": "Laten we vorm gevennaar de volgendegesprek."
+    },
+    {
+      "path": "/fr/contact",
+      "title": "Contact : construisez votre prochaine connexion | Catalisa",
+      "canonical": "https://catalisa.io/fr/contact",
+      "noIndex": false,
+      "h1": "Donnons formeà la suivanteconversation."
+    },
+    {
+      "path": "/lab",
+      "title": "Lab: explore composições com IA | Catalisa",
+      "canonical": "https://catalisa.io/lab",
+      "noIndex": false,
+      "h1": "O que vocêquer construir?"
+    },
+    {
+      "path": "/en/lab",
+      "title": "Lab: explore compositions with AI | Catalisa",
+      "canonical": "https://catalisa.io/en/lab",
+      "noIndex": false,
+      "h1": "What youwants build?"
+    },
+    {
+      "path": "/de/lab",
+      "title": "Lab: Kompositionen mit KI erkunden | Catalisa",
+      "canonical": "https://catalisa.io/de/lab",
+      "noIndex": false,
+      "h1": "Was Siewill aufbauen?"
+    },
+    {
+      "path": "/es/lab",
+      "title": "Lab: explora composiciones con IA | Catalisa",
+      "canonical": "https://catalisa.io/es/lab",
+      "noIndex": false,
+      "h1": "Lo que ustedquiere construir?"
+    },
+    {
+      "path": "/da/lab",
+      "title": "Lab: udforsk kompositioner med AI | Catalisa",
+      "canonical": "https://catalisa.io/da/lab",
+      "noIndex": false,
+      "h1": "Hvad duvil bygge?"
+    },
+    {
+      "path": "/nl/lab",
+      "title": "Lab: verken composities met AI | Catalisa",
+      "canonical": "https://catalisa.io/nl/lab",
+      "noIndex": false,
+      "h1": "Wat uwil bouwen?"
+    },
+    {
+      "path": "/fr/lab",
+      "title": "Lab : explorez des compositions avec l'IA | Catalisa",
+      "canonical": "https://catalisa.io/fr/lab",
+      "noIndex": false,
+      "h1": "Ce que vousveut construire ?"
+    },
+    {
+      "path": "/de/datenschutz",
+      "title": "Datenschutzerklärung",
+      "canonical": "https://catalisa.io/de/datenschutz",
+      "noIndex": false,
+      "h1": "Datenschutzerklärung"
+    },
+    {
+      "path": "/es/politica-de-privacidad",
+      "title": "Política de Privacidad",
+      "canonical": "https://catalisa.io/es/politica-de-privacidad",
+      "noIndex": false,
+      "h1": "Política de Privacidad"
+    },
+    {
+      "path": "/da/privatlivspolitik",
+      "title": "Privatlivspolitik",
+      "canonical": "https://catalisa.io/da/privatlivspolitik",
+      "noIndex": false,
+      "h1": "Privatlivspolitik"
+    },
+    {
+      "path": "/nl/privacybeleid",
+      "title": "Privacybeleid",
+      "canonical": "https://catalisa.io/nl/privacybeleid",
+      "noIndex": false,
+      "h1": "Privacybeleid"
+    },
+    {
+      "path": "/fr/politique-de-confidentialite",
+      "title": "Politique de confidentialité",
+      "canonical": "https://catalisa.io/fr/politique-de-confidentialite",
+      "noIndex": false,
+      "h1": "Politique de confidentialité"
+    },
+    {
+      "path": "/de/nutzungsbedingungen",
+      "title": "Nutzungsbedingungen",
+      "canonical": "https://catalisa.io/de/nutzungsbedingungen",
+      "noIndex": false,
+      "h1": "Nutzungsbedingungen"
+    },
+    {
+      "path": "/es/terminos",
+      "title": "Términos de uso",
+      "canonical": "https://catalisa.io/es/terminos",
+      "noIndex": false,
+      "h1": "Términos de uso"
+    },
+    {
+      "path": "/da/vilkaar",
+      "title": "Brugsvilkår",
+      "canonical": "https://catalisa.io/da/vilkaar",
+      "noIndex": false,
+      "h1": "Brugsvilkår"
+    },
+    {
+      "path": "/nl/voorwaarden",
+      "title": "Gebruiksvoorwaarden",
+      "canonical": "https://catalisa.io/nl/voorwaarden",
+      "noIndex": false,
+      "h1": "Gebruiksvoorwaarden"
+    },
+    {
+      "path": "/fr/conditions-utilisation",
+      "title": "Conditions d’utilisation",
+      "canonical": "https://catalisa.io/fr/conditions-utilisation",
+      "noIndex": false,
+      "h1": "Conditions d’utilisation"
+    },
+    {
+      "path": "/capacidades/ai-engine",
+      "title": "AI Engine: API de IA para texto, imagem e áudio | Catalisa",
+      "canonical": "https://catalisa.io/capacidades/ai-engine",
+      "noIndex": false,
+      "h1": "Peças com propósito.Possibilidadesem conjunto."
+    },
+    {
+      "path": "/en/capabilities/ai-engine",
+      "title": "AI Engine: AI API for text, image and audio | Catalisa",
+      "canonical": "https://catalisa.io/en/capabilities/ai-engine",
+      "noIndex": false,
+      "h1": "Pieces with a purpose.Possibilitiestogether."
+    },
+    {
+      "path": "/de/faehigkeiten/ai-engine",
+      "title": "AI Engine: KI-API für Text, Bild und Audio | Catalisa",
+      "canonical": "https://catalisa.io/de/faehigkeiten/ai-engine",
+      "noIndex": false,
+      "h1": "Bausteine mit Zweck.Möglichkeitengemeinsam."
+    },
+    {
+      "path": "/es/capacidades/ai-engine",
+      "title": "AI Engine: API de IA para texto, imagen y audio | Catalisa",
+      "canonical": "https://catalisa.io/es/capacidades/ai-engine",
+      "noIndex": false,
+      "h1": "Piezas con propósito.Posibilidadesen conjunto."
+    },
+    {
+      "path": "/da/funktioner/ai-engine",
+      "title": "AI Engine: AI-API til tekst, billeder og lyd | Catalisa",
+      "canonical": "https://catalisa.io/da/funktioner/ai-engine",
+      "noIndex": false,
+      "h1": "Brikker med et formål.Mulighederi fællesskab."
+    },
+    {
+      "path": "/nl/mogelijkheden/ai-engine",
+      "title": "AI Engine: AI-API voor tekst, beeld en audio | Catalisa",
+      "canonical": "https://catalisa.io/nl/mogelijkheden/ai-engine",
+      "noIndex": false,
+      "h1": "Onderdelen met een doel.Mogelijkhedensamen."
+    },
+    {
+      "path": "/fr/capacites/ai-engine",
+      "title": "AI Engine : API d'IA pour le texte, l'image et l'audio | Catalisa",
+      "canonical": "https://catalisa.io/fr/capacites/ai-engine",
+      "noIndex": false,
+      "h1": "Des pièces qui ont un but.Possibilitésensemble."
+    },
+    {
+      "path": "/capacidades/analytics",
+      "title": "Analytics: analytics da jornada sem identificação pessoal | Catalisa",
+      "canonical": "https://catalisa.io/capacidades/analytics",
+      "noIndex": false,
+      "h1": "Peças com propósito.Possibilidadesem conjunto."
+    },
+    {
+      "path": "/en/capabilities/analytics",
+      "title": "Analytics: journey analytics without personal identification | Catalisa",
+      "canonical": "https://catalisa.io/en/capabilities/analytics",
+      "noIndex": false,
+      "h1": "Pieces with a purpose.Possibilitiestogether."
+    },
+    {
+      "path": "/de/faehigkeiten/analytics",
+      "title": "Analytics: Journey-Analysen ohne Personenbezug | Catalisa",
+      "canonical": "https://catalisa.io/de/faehigkeiten/analytics",
+      "noIndex": false,
+      "h1": "Bausteine mit Zweck.Möglichkeitengemeinsam."
+    },
+    {
+      "path": "/es/capacidades/analytics",
+      "title": "Analytics: analítica del recorrido sin identificación personal | Catalisa",
+      "canonical": "https://catalisa.io/es/capacidades/analytics",
+      "noIndex": false,
+      "h1": "Piezas con propósito.Posibilidadesen conjunto."
+    },
+    {
+      "path": "/da/funktioner/analytics",
+      "title": "Analytics: analyse af rejsen uden personidentifikation | Catalisa",
+      "canonical": "https://catalisa.io/da/funktioner/analytics",
+      "noIndex": false,
+      "h1": "Brikker med et formål.Mulighederi fællesskab."
+    },
+    {
+      "path": "/nl/mogelijkheden/analytics",
+      "title": "Analytics: analyse van de klantreis zonder persoonlijke identificatie | Catalisa",
+      "canonical": "https://catalisa.io/nl/mogelijkheden/analytics",
+      "noIndex": false,
+      "h1": "Onderdelen met een doel.Mogelijkhedensamen."
+    },
+    {
+      "path": "/fr/capacites/analytics",
+      "title": "Analytics : analyse du parcours sans identification personnelle | Catalisa",
+      "canonical": "https://catalisa.io/fr/capacites/analytics",
+      "noIndex": false,
+      "h1": "Des pièces qui ont un but.Possibilitésensemble."
+    },
+    {
+      "path": "/capacidades/api-keys",
+      "title": "API Keys: chaves de API com escopo e rotação | Catalisa",
+      "canonical": "https://catalisa.io/capacidades/api-keys",
+      "noIndex": false,
+      "h1": "Peças com propósito.Possibilidadesem conjunto."
+    },
+    {
+      "path": "/en/capabilities/api-keys",
+      "title": "API Keys: scoped API keys with rotation | Catalisa",
+      "canonical": "https://catalisa.io/en/capabilities/api-keys",
+      "noIndex": false,
+      "h1": "Pieces with a purpose.Possibilitiestogether."
+    },
+    {
+      "path": "/de/faehigkeiten/api-keys",
+      "title": "API Keys: API-Schlüssel mit Scope und Rotation | Catalisa",
+      "canonical": "https://catalisa.io/de/faehigkeiten/api-keys",
+      "noIndex": false,
+      "h1": "Bausteine mit Zweck.Möglichkeitengemeinsam."
+    },
+    {
+      "path": "/es/capacidades/api-keys",
+      "title": "API Keys: claves de API con alcance y rotación | Catalisa",
+      "canonical": "https://catalisa.io/es/capacidades/api-keys",
+      "noIndex": false,
+      "h1": "Piezas con propósito.Posibilidadesen conjunto."
+    },
+    {
+      "path": "/da/funktioner/api-keys",
+      "title": "API Keys: API-nøgler med scope og rotation | Catalisa",
+      "canonical": "https://catalisa.io/da/funktioner/api-keys",
+      "noIndex": false,
+      "h1": "Brikker med et formål.Mulighederi fællesskab."
+    },
+    {
+      "path": "/nl/mogelijkheden/api-keys",
+      "title": "API Keys: API-sleutels met scope en rotatie | Catalisa",
+      "canonical": "https://catalisa.io/nl/mogelijkheden/api-keys",
+      "noIndex": false,
+      "h1": "Onderdelen met een doel.Mogelijkhedensamen."
+    },
+    {
+      "path": "/fr/capacites/api-keys",
+      "title": "API Keys : clés d’API avec portée et rotation | Catalisa",
+      "canonical": "https://catalisa.io/fr/capacites/api-keys",
+      "noIndex": false,
+      "h1": "Des pièces qui ont un but.Possibilitésensemble."
+    },
+    {
+      "path": "/capacidades/audit-trail",
+      "title": "Audit Trail: trilha de auditoria por organização | Catalisa",
+      "canonical": "https://catalisa.io/capacidades/audit-trail",
+      "noIndex": false,
+      "h1": "Peças com propósito.Possibilidadesem conjunto."
+    },
+    {
+      "path": "/en/capabilities/audit-trail",
+      "title": "Audit Trail: audit trail by organization | Catalisa",
+      "canonical": "https://catalisa.io/en/capabilities/audit-trail",
+      "noIndex": false,
+      "h1": "Pieces with a purpose.Possibilitiestogether."
+    },
+    {
+      "path": "/de/faehigkeiten/audit-trail",
+      "title": "Audit Trail: Audit-Trail pro Organisation | Catalisa",
+      "canonical": "https://catalisa.io/de/faehigkeiten/audit-trail",
+      "noIndex": false,
+      "h1": "Bausteine mit Zweck.Möglichkeitengemeinsam."
+    },
+    {
+      "path": "/es/capacidades/audit-trail",
+      "title": "Audit Trail: registro de auditoría por organización | Catalisa",
+      "canonical": "https://catalisa.io/es/capacidades/audit-trail",
+      "noIndex": false,
+      "h1": "Piezas con propósito.Posibilidadesen conjunto."
+    },
+    {
+      "path": "/da/funktioner/audit-trail",
+      "title": "Audit Trail: revisionsspor pr. organisation | Catalisa",
+      "canonical": "https://catalisa.io/da/funktioner/audit-trail",
+      "noIndex": false,
+      "h1": "Brikker med et formål.Mulighederi fællesskab."
+    },
+    {
+      "path": "/nl/mogelijkheden/audit-trail",
+      "title": "Audit Trail: audittrail per organisatie | Catalisa",
+      "canonical": "https://catalisa.io/nl/mogelijkheden/audit-trail",
+      "noIndex": false,
+      "h1": "Onderdelen met een doel.Mogelijkhedensamen."
+    },
+    {
+      "path": "/fr/capacites/audit-trail",
+      "title": "Audit Trail : piste d’audit par organisation | Catalisa",
+      "canonical": "https://catalisa.io/fr/capacites/audit-trail",
+      "noIndex": false,
+      "h1": "Des pièces qui ont un but.Possibilitésensemble."
+    },
+    {
+      "path": "/capacidades/baas",
+      "title": "BaaS: Banking as a Service com contas e Pix | Catalisa",
+      "canonical": "https://catalisa.io/capacidades/baas",
+      "noIndex": false,
+      "h1": "Peças com propósito.Possibilidadesem conjunto."
+    },
+    {
+      "path": "/en/capabilities/baas",
+      "title": "BaaS: Banking as a Service with accounts and Pix | Catalisa",
+      "canonical": "https://catalisa.io/en/capabilities/baas",
+      "noIndex": false,
+      "h1": "Pieces with a purpose.Possibilitiestogether."
+    },
+    {
+      "path": "/de/faehigkeiten/baas",
+      "title": "BaaS: Banking as a Service mit Konten und Pix | Catalisa",
+      "canonical": "https://catalisa.io/de/faehigkeiten/baas",
+      "noIndex": false,
+      "h1": "Bausteine mit Zweck.Möglichkeitengemeinsam."
+    },
+    {
+      "path": "/es/capacidades/baas",
+      "title": "BaaS: Banking as a Service con cuentas y Pix | Catalisa",
+      "canonical": "https://catalisa.io/es/capacidades/baas",
+      "noIndex": false,
+      "h1": "Piezas con propósito.Posibilidadesen conjunto."
+    },
+    {
+      "path": "/da/funktioner/baas",
+      "title": "BaaS: Banking as a Service med konti og Pix | Catalisa",
+      "canonical": "https://catalisa.io/da/funktioner/baas",
+      "noIndex": false,
+      "h1": "Brikker med et formål.Mulighederi fællesskab."
+    },
+    {
+      "path": "/nl/mogelijkheden/baas",
+      "title": "BaaS: Banking as a Service met rekeningen en Pix | Catalisa",
+      "canonical": "https://catalisa.io/nl/mogelijkheden/baas",
+      "noIndex": false,
+      "h1": "Onderdelen met een doel.Mogelijkhedensamen."
+    },
+    {
+      "path": "/fr/capacites/baas",
+      "title": "BaaS : Banking as a Service avec comptes et Pix | Catalisa",
+      "canonical": "https://catalisa.io/fr/capacites/baas",
+      "noIndex": false,
+      "h1": "Des pièces qui ont un but.Possibilitésensemble."
+    },
+    {
+      "path": "/capacidades/banking",
+      "title": "Plataforma bancária: interface para seu aplicativo de banco digital | Catalisa",
+      "canonical": "https://catalisa.io/capacidades/banking",
+      "noIndex": false,
+      "h1": "Peças com propósito.Possibilidadesem conjunto."
+    },
+    {
+      "path": "/en/capabilities/banking",
+      "title": "Banking: interface for your digital banking app | Catalisa",
+      "canonical": "https://catalisa.io/en/capabilities/banking",
+      "noIndex": false,
+      "h1": "Pieces with a purpose.Possibilitiestogether."
+    },
+    {
+      "path": "/de/faehigkeiten/banking",
+      "title": "Banking: Oberfläche für Ihre Digital-Banking-App | Catalisa",
+      "canonical": "https://catalisa.io/de/faehigkeiten/banking",
+      "noIndex": false,
+      "h1": "Bausteine mit Zweck.Möglichkeitengemeinsam."
+    },
+    {
+      "path": "/es/capacidades/banking",
+      "title": "Banking: interfaz para su aplicación de banca digital | Catalisa",
+      "canonical": "https://catalisa.io/es/capacidades/banking",
+      "noIndex": false,
+      "h1": "Piezas con propósito.Posibilidadesen conjunto."
+    },
+    {
+      "path": "/da/funktioner/banking",
+      "title": "Banking: brugerflade til din digitale bankapp | Catalisa",
+      "canonical": "https://catalisa.io/da/funktioner/banking",
+      "noIndex": false,
+      "h1": "Brikker med et formål.Mulighederi fællesskab."
+    },
+    {
+      "path": "/nl/mogelijkheden/banking",
+      "title": "Banking: interface voor je digitale bank-app | Catalisa",
+      "canonical": "https://catalisa.io/nl/mogelijkheden/banking",
+      "noIndex": false,
+      "h1": "Onderdelen met een doel.Mogelijkhedensamen."
+    },
+    {
+      "path": "/fr/capacites/banking",
+      "title": "Banking : interface pour votre application de banque numérique | Catalisa",
+      "canonical": "https://catalisa.io/fr/capacites/banking",
+      "noIndex": false,
+      "h1": "Des pièces qui ont un but.Possibilitésensemble."
+    },
+    {
+      "path": "/capacidades/banking-product-portfolio",
+      "title": "Banking Product Portfolio: catálogo de produtos financeiros | Catalisa",
+      "canonical": "https://catalisa.io/capacidades/banking-product-portfolio",
+      "noIndex": false,
+      "h1": "Peças com propósito.Possibilidadesem conjunto."
+    },
+    {
+      "path": "/en/capabilities/banking-product-portfolio",
+      "title": "Banking Product Portfolio: financial product catalog | Catalisa",
+      "canonical": "https://catalisa.io/en/capabilities/banking-product-portfolio",
+      "noIndex": false,
+      "h1": "Pieces with a purpose.Possibilitiestogether."
+    },
+    {
+      "path": "/de/faehigkeiten/banking-product-portfolio",
+      "title": "Banking Product Portfolio: Katalog von Finanzprodukten | Catalisa",
+      "canonical": "https://catalisa.io/de/faehigkeiten/banking-product-portfolio",
+      "noIndex": false,
+      "h1": "Bausteine mit Zweck.Möglichkeitengemeinsam."
+    },
+    {
+      "path": "/es/capacidades/banking-product-portfolio",
+      "title": "Banking Product Portfolio: catálogo de productos financieros | Catalisa",
+      "canonical": "https://catalisa.io/es/capacidades/banking-product-portfolio",
+      "noIndex": false,
+      "h1": "Piezas con propósito.Posibilidadesen conjunto."
+    },
+    {
+      "path": "/da/funktioner/banking-product-portfolio",
+      "title": "Banking Product Portfolio: katalog over finansielle produkter | Catalisa",
+      "canonical": "https://catalisa.io/da/funktioner/banking-product-portfolio",
+      "noIndex": false,
+      "h1": "Brikker med et formål.Mulighederi fællesskab."
+    },
+    {
+      "path": "/nl/mogelijkheden/banking-product-portfolio",
+      "title": "Banking Product Portfolio: catalogus van financiële producten | Catalisa",
+      "canonical": "https://catalisa.io/nl/mogelijkheden/banking-product-portfolio",
+      "noIndex": false,
+      "h1": "Onderdelen met een doel.Mogelijkhedensamen."
+    },
+    {
+      "path": "/fr/capacites/banking-product-portfolio",
+      "title": "Banking Product Portfolio : catalogue de produits financiers | Catalisa",
+      "canonical": "https://catalisa.io/fr/capacites/banking-product-portfolio",
+      "noIndex": false,
+      "h1": "Des pièces qui ont un but.Possibilitésensemble."
+    },
+    {
+      "path": "/capacidades/billing",
+      "title": "Billing: assinaturas, uso e faturamento | Catalisa",
+      "canonical": "https://catalisa.io/capacidades/billing",
+      "noIndex": false,
+      "h1": "Peças com propósito.Possibilidadesem conjunto."
+    },
+    {
+      "path": "/en/capabilities/billing",
+      "title": "Billing: subscriptions, usage and invoicing | Catalisa",
+      "canonical": "https://catalisa.io/en/capabilities/billing",
+      "noIndex": false,
+      "h1": "Pieces with a purpose.Possibilitiestogether."
+    },
+    {
+      "path": "/de/faehigkeiten/billing",
+      "title": "Billing: Abonnements, Nutzung und Abrechnung | Catalisa",
+      "canonical": "https://catalisa.io/de/faehigkeiten/billing",
+      "noIndex": false,
+      "h1": "Bausteine mit Zweck.Möglichkeitengemeinsam."
+    },
+    {
+      "path": "/es/capacidades/billing",
+      "title": "Billing: suscripciones, uso y facturación | Catalisa",
+      "canonical": "https://catalisa.io/es/capacidades/billing",
+      "noIndex": false,
+      "h1": "Piezas con propósito.Posibilidadesen conjunto."
+    },
+    {
+      "path": "/da/funktioner/billing",
+      "title": "Billing: abonnementer, forbrug og fakturering | Catalisa",
+      "canonical": "https://catalisa.io/da/funktioner/billing",
+      "noIndex": false,
+      "h1": "Brikker med et formål.Mulighederi fællesskab."
+    },
+    {
+      "path": "/nl/mogelijkheden/billing",
+      "title": "Billing: abonnementen, gebruik en facturatie | Catalisa",
+      "canonical": "https://catalisa.io/nl/mogelijkheden/billing",
+      "noIndex": false,
+      "h1": "Onderdelen met een doel.Mogelijkhedensamen."
+    },
+    {
+      "path": "/fr/capacites/billing",
+      "title": "Billing : abonnements, usage et facturation | Catalisa",
+      "canonical": "https://catalisa.io/fr/capacites/billing",
+      "noIndex": false,
+      "h1": "Des pièces qui ont un but.Possibilitésensemble."
+    },
+    {
+      "path": "/capacidades/biometrics",
+      "title": "Biometria: prova de vida e comparação facial | Catalisa",
+      "canonical": "https://catalisa.io/capacidades/biometrics",
+      "noIndex": false,
+      "h1": "Peças com propósito.Possibilidadesem conjunto."
+    },
+    {
+      "path": "/en/capabilities/biometrics",
+      "title": "Biometrics: liveness detection and face matching | Catalisa",
+      "canonical": "https://catalisa.io/en/capabilities/biometrics",
+      "noIndex": false,
+      "h1": "Pieces with a purpose.Possibilitiestogether."
+    },
+    {
+      "path": "/de/faehigkeiten/biometrics",
+      "title": "Biometrie: Lebenderkennung und Gesichtsabgleich | Catalisa",
+      "canonical": "https://catalisa.io/de/faehigkeiten/biometrics",
+      "noIndex": false,
+      "h1": "Bausteine mit Zweck.Möglichkeitengemeinsam."
+    },
+    {
+      "path": "/es/capacidades/biometrics",
+      "title": "Biometría: prueba de vida y comparación facial | Catalisa",
+      "canonical": "https://catalisa.io/es/capacidades/biometrics",
+      "noIndex": false,
+      "h1": "Piezas con propósito.Posibilidadesen conjunto."
+    },
+    {
+      "path": "/da/funktioner/biometrics",
+      "title": "Biometri: livstest og ansigtssammenligning | Catalisa",
+      "canonical": "https://catalisa.io/da/funktioner/biometrics",
+      "noIndex": false,
+      "h1": "Brikker med et formål.Mulighederi fællesskab."
+    },
+    {
+      "path": "/nl/mogelijkheden/biometrics",
+      "title": "Biometrie: livenessdetectie en gezichtsvergelijking | Catalisa",
+      "canonical": "https://catalisa.io/nl/mogelijkheden/biometrics",
+      "noIndex": false,
+      "h1": "Onderdelen met een doel.Mogelijkhedensamen."
+    },
+    {
+      "path": "/fr/capacites/biometrics",
+      "title": "Biométrie : preuve de vie et comparaison faciale | Catalisa",
+      "canonical": "https://catalisa.io/fr/capacites/biometrics",
+      "noIndex": false,
+      "h1": "Des pièces qui ont un but.Possibilitésensemble."
+    },
+    {
+      "path": "/capacidades/bureaus",
+      "title": "Bureaus: consulta a bureaus com cache | Catalisa",
+      "canonical": "https://catalisa.io/capacidades/bureaus",
+      "noIndex": false,
+      "h1": "Peças com propósito.Possibilidadesem conjunto."
+    },
+    {
+      "path": "/en/capabilities/bureaus",
+      "title": "Bureaus: cached credit bureau queries | Catalisa",
+      "canonical": "https://catalisa.io/en/capabilities/bureaus",
+      "noIndex": false,
+      "h1": "Pieces with a purpose.Possibilitiestogether."
+    },
+    {
+      "path": "/de/faehigkeiten/bureaus",
+      "title": "Bureaus: Auskunfteiabfrage mit Cache | Catalisa",
+      "canonical": "https://catalisa.io/de/faehigkeiten/bureaus",
+      "noIndex": false,
+      "h1": "Bausteine mit Zweck.Möglichkeitengemeinsam."
+    },
+    {
+      "path": "/es/capacidades/bureaus",
+      "title": "Bureaus: consulta a bureaus con caché | Catalisa",
+      "canonical": "https://catalisa.io/es/capacidades/bureaus",
+      "noIndex": false,
+      "h1": "Piezas con propósito.Posibilidadesen conjunto."
+    },
+    {
+      "path": "/da/funktioner/bureaus",
+      "title": "Bureaus: forespørgsler til kreditbureauer med cache | Catalisa",
+      "canonical": "https://catalisa.io/da/funktioner/bureaus",
+      "noIndex": false,
+      "h1": "Brikker med et formål.Mulighederi fællesskab."
+    },
+    {
+      "path": "/nl/mogelijkheden/bureaus",
+      "title": "Bureaus: bureau-opvragingen met cache | Catalisa",
+      "canonical": "https://catalisa.io/nl/mogelijkheden/bureaus",
+      "noIndex": false,
+      "h1": "Onderdelen met een doel.Mogelijkhedensamen."
+    },
+    {
+      "path": "/fr/capacites/bureaus",
+      "title": "Bureaus : consultation des bureaux de crédit avec cache | Catalisa",
+      "canonical": "https://catalisa.io/fr/capacites/bureaus",
+      "noIndex": false,
+      "h1": "Des pièces qui ont un but.Possibilitésensemble."
+    },
+    {
+      "path": "/capacidades/calculations-engine",
+      "title": "Calculations Engine: cálculo de parcelas, IOF e CET | Catalisa",
+      "canonical": "https://catalisa.io/capacidades/calculations-engine",
+      "noIndex": false,
+      "h1": "Peças com propósito.Possibilidadesem conjunto."
+    },
+    {
+      "path": "/en/capabilities/calculations-engine",
+      "title": "Calculations Engine: installment, IOF and CET calculation | Catalisa",
+      "canonical": "https://catalisa.io/en/capabilities/calculations-engine",
+      "noIndex": false,
+      "h1": "Pieces with a purpose.Possibilitiestogether."
+    },
+    {
+      "path": "/de/faehigkeiten/calculations-engine",
+      "title": "Calculations Engine: Berechnung von Raten, IOF und CET | Catalisa",
+      "canonical": "https://catalisa.io/de/faehigkeiten/calculations-engine",
+      "noIndex": false,
+      "h1": "Bausteine mit Zweck.Möglichkeitengemeinsam."
+    },
+    {
+      "path": "/es/capacidades/calculations-engine",
+      "title": "Calculations Engine: cálculo de cuotas, IOF y CET | Catalisa",
+      "canonical": "https://catalisa.io/es/capacidades/calculations-engine",
+      "noIndex": false,
+      "h1": "Piezas con propósito.Posibilidadesen conjunto."
+    },
+    {
+      "path": "/da/funktioner/calculations-engine",
+      "title": "Calculations Engine: beregning af afdrag, IOF og CET | Catalisa",
+      "canonical": "https://catalisa.io/da/funktioner/calculations-engine",
+      "noIndex": false,
+      "h1": "Brikker med et formål.Mulighederi fællesskab."
+    },
+    {
+      "path": "/nl/mogelijkheden/calculations-engine",
+      "title": "Calculations Engine: berekening van termijnen, IOF en CET | Catalisa",
+      "canonical": "https://catalisa.io/nl/mogelijkheden/calculations-engine",
+      "noIndex": false,
+      "h1": "Onderdelen met een doel.Mogelijkhedensamen."
+    },
+    {
+      "path": "/fr/capacites/calculations-engine",
+      "title": "Calculations Engine : calcul des mensualités, de l'IOF et du CET | Catalisa",
+      "canonical": "https://catalisa.io/fr/capacites/calculations-engine",
+      "noIndex": false,
+      "h1": "Des pièces qui ont un but.Possibilitésensemble."
+    },
+    {
+      "path": "/capacidades/calendar",
+      "title": "Calendar: integração com Google Calendar e Outlook | Catalisa",
+      "canonical": "https://catalisa.io/capacidades/calendar",
+      "noIndex": false,
+      "h1": "Peças com propósito.Possibilidadesem conjunto."
+    },
+    {
+      "path": "/en/capabilities/calendar",
+      "title": "Calendar: Google Calendar and Outlook integration | Catalisa",
+      "canonical": "https://catalisa.io/en/capabilities/calendar",
+      "noIndex": false,
+      "h1": "Pieces with a purpose.Possibilitiestogether."
+    },
+    {
+      "path": "/de/faehigkeiten/calendar",
+      "title": "Calendar: Integration mit Google Calendar und Outlook | Catalisa",
+      "canonical": "https://catalisa.io/de/faehigkeiten/calendar",
+      "noIndex": false,
+      "h1": "Bausteine mit Zweck.Möglichkeitengemeinsam."
+    },
+    {
+      "path": "/es/capacidades/calendar",
+      "title": "Calendar: integración con Google Calendar y Outlook | Catalisa",
+      "canonical": "https://catalisa.io/es/capacidades/calendar",
+      "noIndex": false,
+      "h1": "Piezas con propósito.Posibilidadesen conjunto."
+    },
+    {
+      "path": "/da/funktioner/calendar",
+      "title": "Calendar: integration med Google Calendar og Outlook | Catalisa",
+      "canonical": "https://catalisa.io/da/funktioner/calendar",
+      "noIndex": false,
+      "h1": "Brikker med et formål.Mulighederi fællesskab."
+    },
+    {
+      "path": "/nl/mogelijkheden/calendar",
+      "title": "Calendar: integratie met Google Calendar en Outlook | Catalisa",
+      "canonical": "https://catalisa.io/nl/mogelijkheden/calendar",
+      "noIndex": false,
+      "h1": "Onderdelen met een doel.Mogelijkhedensamen."
+    },
+    {
+      "path": "/fr/capacites/calendar",
+      "title": "Calendar : intégration avec Google Calendar et Outlook | Catalisa",
+      "canonical": "https://catalisa.io/fr/capacites/calendar",
+      "noIndex": false,
+      "h1": "Des pièces qui ont un but.Possibilitésensemble."
+    },
+    {
+      "path": "/capacidades/cms",
+      "title": "CMS: gestão de conteúdo de aplicativos | Catalisa",
+      "canonical": "https://catalisa.io/capacidades/cms",
+      "noIndex": false,
+      "h1": "Peças com propósito.Possibilidadesem conjunto."
+    },
+    {
+      "path": "/en/capabilities/cms",
+      "title": "CMS: app content management | Catalisa",
+      "canonical": "https://catalisa.io/en/capabilities/cms",
+      "noIndex": false,
+      "h1": "Pieces with a purpose.Possibilitiestogether."
+    },
+    {
+      "path": "/de/faehigkeiten/cms",
+      "title": "CMS: Content-Management für Apps | Catalisa",
+      "canonical": "https://catalisa.io/de/faehigkeiten/cms",
+      "noIndex": false,
+      "h1": "Bausteine mit Zweck.Möglichkeitengemeinsam."
+    },
+    {
+      "path": "/es/capacidades/cms",
+      "title": "CMS: gestión de contenido de aplicaciones | Catalisa",
+      "canonical": "https://catalisa.io/es/capacidades/cms",
+      "noIndex": false,
+      "h1": "Piezas con propósito.Posibilidadesen conjunto."
+    },
+    {
+      "path": "/da/funktioner/cms",
+      "title": "CMS: indholdsstyring til apps | Catalisa",
+      "canonical": "https://catalisa.io/da/funktioner/cms",
+      "noIndex": false,
+      "h1": "Brikker med et formål.Mulighederi fællesskab."
+    },
+    {
+      "path": "/nl/mogelijkheden/cms",
+      "title": "CMS: contentbeheer voor apps | Catalisa",
+      "canonical": "https://catalisa.io/nl/mogelijkheden/cms",
+      "noIndex": false,
+      "h1": "Onderdelen met een doel.Mogelijkhedensamen."
+    },
+    {
+      "path": "/fr/capacites/cms",
+      "title": "CMS : gestion de contenu d’applications | Catalisa",
+      "canonical": "https://catalisa.io/fr/capacites/cms",
+      "noIndex": false,
+      "h1": "Des pièces qui ont un but.Possibilitésensemble."
+    },
+    {
+      "path": "/capacidades/commerce",
+      "title": "Commerce: catálogo, estoque e pedidos | Catalisa",
+      "canonical": "https://catalisa.io/capacidades/commerce",
+      "noIndex": false,
+      "h1": "Peças com propósito.Possibilidadesem conjunto."
+    },
+    {
+      "path": "/en/capabilities/commerce",
+      "title": "Commerce: catalog, inventory, and orders | Catalisa",
+      "canonical": "https://catalisa.io/en/capabilities/commerce",
+      "noIndex": false,
+      "h1": "Pieces with a purpose.Possibilitiestogether."
+    },
+    {
+      "path": "/de/faehigkeiten/commerce",
+      "title": "Commerce: Katalog, Lagerbestand und Bestellungen | Catalisa",
+      "canonical": "https://catalisa.io/de/faehigkeiten/commerce",
+      "noIndex": false,
+      "h1": "Bausteine mit Zweck.Möglichkeitengemeinsam."
+    },
+    {
+      "path": "/es/capacidades/commerce",
+      "title": "Commerce: catálogo, inventario y pedidos | Catalisa",
+      "canonical": "https://catalisa.io/es/capacidades/commerce",
+      "noIndex": false,
+      "h1": "Piezas con propósito.Posibilidadesen conjunto."
+    },
+    {
+      "path": "/da/funktioner/commerce",
+      "title": "Commerce: katalog, lager og ordrer | Catalisa",
+      "canonical": "https://catalisa.io/da/funktioner/commerce",
+      "noIndex": false,
+      "h1": "Brikker med et formål.Mulighederi fællesskab."
+    },
+    {
+      "path": "/nl/mogelijkheden/commerce",
+      "title": "Commerce: catalogus, voorraad en bestellingen | Catalisa",
+      "canonical": "https://catalisa.io/nl/mogelijkheden/commerce",
+      "noIndex": false,
+      "h1": "Onderdelen met een doel.Mogelijkhedensamen."
+    },
+    {
+      "path": "/fr/capacites/commerce",
+      "title": "Commerce : catalogue, stock et commandes | Catalisa",
+      "canonical": "https://catalisa.io/fr/capacites/commerce",
+      "noIndex": false,
+      "h1": "Des pièces qui ont un but.Possibilitésensemble."
+    },
+    {
+      "path": "/capacidades/companies",
+      "title": "Companies: representação e poderes de empresas | Catalisa",
+      "canonical": "https://catalisa.io/capacidades/companies",
+      "noIndex": false,
+      "h1": "Peças com propósito.Possibilidadesem conjunto."
+    },
+    {
+      "path": "/en/capabilities/companies",
+      "title": "Companies: company representation and powers | Catalisa",
+      "canonical": "https://catalisa.io/en/capabilities/companies",
+      "noIndex": false,
+      "h1": "Pieces with a purpose.Possibilitiestogether."
+    },
+    {
+      "path": "/de/faehigkeiten/companies",
+      "title": "Companies: Vertretung und Vollmachten von Unternehmen | Catalisa",
+      "canonical": "https://catalisa.io/de/faehigkeiten/companies",
+      "noIndex": false,
+      "h1": "Bausteine mit Zweck.Möglichkeitengemeinsam."
+    },
+    {
+      "path": "/es/capacidades/companies",
+      "title": "Companies: representación y poderes de empresas | Catalisa",
+      "canonical": "https://catalisa.io/es/capacidades/companies",
+      "noIndex": false,
+      "h1": "Piezas con propósito.Posibilidadesen conjunto."
+    },
+    {
+      "path": "/da/funktioner/companies",
+      "title": "Companies: repræsentation og beføjelser for virksomheder | Catalisa",
+      "canonical": "https://catalisa.io/da/funktioner/companies",
+      "noIndex": false,
+      "h1": "Brikker med et formål.Mulighederi fællesskab."
+    },
+    {
+      "path": "/nl/mogelijkheden/companies",
+      "title": "Companies: vertegenwoordiging en bevoegdheden van bedrijven | Catalisa",
+      "canonical": "https://catalisa.io/nl/mogelijkheden/companies",
+      "noIndex": false,
+      "h1": "Onderdelen met een doel.Mogelijkhedensamen."
+    },
+    {
+      "path": "/fr/capacites/companies",
+      "title": "Companies : représentation et pouvoirs des entreprises | Catalisa",
+      "canonical": "https://catalisa.io/fr/capacites/companies",
+      "noIndex": false,
+      "h1": "Des pièces qui ont un but.Possibilitésensemble."
+    },
+    {
+      "path": "/capacidades/customers",
+      "title": "Customers: cadastro de clientes com validação de CPF | Catalisa",
+      "canonical": "https://catalisa.io/capacidades/customers",
+      "noIndex": false,
+      "h1": "Peças com propósito.Possibilidadesem conjunto."
+    },
+    {
+      "path": "/en/capabilities/customers",
+      "title": "Customers: customer registration with CPF validation | Catalisa",
+      "canonical": "https://catalisa.io/en/capabilities/customers",
+      "noIndex": false,
+      "h1": "Pieces with a purpose.Possibilitiestogether."
+    },
+    {
+      "path": "/de/faehigkeiten/customers",
+      "title": "Customers: Kundenstammdaten mit CPF-Validierung | Catalisa",
+      "canonical": "https://catalisa.io/de/faehigkeiten/customers",
+      "noIndex": false,
+      "h1": "Bausteine mit Zweck.Möglichkeitengemeinsam."
+    },
+    {
+      "path": "/es/capacidades/customers",
+      "title": "Customers: registro de clientes con validación de CPF | Catalisa",
+      "canonical": "https://catalisa.io/es/capacidades/customers",
+      "noIndex": false,
+      "h1": "Piezas con propósito.Posibilidadesen conjunto."
+    },
+    {
+      "path": "/da/funktioner/customers",
+      "title": "Customers: kunderegistrering med CPF-validering | Catalisa",
+      "canonical": "https://catalisa.io/da/funktioner/customers",
+      "noIndex": false,
+      "h1": "Brikker med et formål.Mulighederi fællesskab."
+    },
+    {
+      "path": "/nl/mogelijkheden/customers",
+      "title": "Customers: klantregistratie met CPF-validatie | Catalisa",
+      "canonical": "https://catalisa.io/nl/mogelijkheden/customers",
+      "noIndex": false,
+      "h1": "Onderdelen met een doel.Mogelijkhedensamen."
+    },
+    {
+      "path": "/fr/capacites/customers",
+      "title": "Customers : fiche client avec validation du CPF | Catalisa",
+      "canonical": "https://catalisa.io/fr/capacites/customers",
+      "noIndex": false,
+      "h1": "Des pièces qui ont un but.Possibilitésensemble."
+    },
+    {
+      "path": "/capacidades/data-extraction",
+      "title": "Data Extraction: extração de documentos para JSON | Catalisa",
+      "canonical": "https://catalisa.io/capacidades/data-extraction",
+      "noIndex": false,
+      "h1": "Peças com propósito.Possibilidadesem conjunto."
+    },
+    {
+      "path": "/en/capabilities/data-extraction",
+      "title": "Data Extraction: document extraction to JSON | Catalisa",
+      "canonical": "https://catalisa.io/en/capabilities/data-extraction",
+      "noIndex": false,
+      "h1": "Pieces with a purpose.Possibilitiestogether."
+    },
+    {
+      "path": "/de/faehigkeiten/data-extraction",
+      "title": "Data Extraction: Extraktion von Dokumenten in JSON | Catalisa",
+      "canonical": "https://catalisa.io/de/faehigkeiten/data-extraction",
+      "noIndex": false,
+      "h1": "Bausteine mit Zweck.Möglichkeitengemeinsam."
+    },
+    {
+      "path": "/es/capacidades/data-extraction",
+      "title": "Data Extraction: extracción de documentos a JSON | Catalisa",
+      "canonical": "https://catalisa.io/es/capacidades/data-extraction",
+      "noIndex": false,
+      "h1": "Piezas con propósito.Posibilidadesen conjunto."
+    },
+    {
+      "path": "/da/funktioner/data-extraction",
+      "title": "Data Extraction: udtræk fra dokumenter til JSON | Catalisa",
+      "canonical": "https://catalisa.io/da/funktioner/data-extraction",
+      "noIndex": false,
+      "h1": "Brikker med et formål.Mulighederi fællesskab."
+    },
+    {
+      "path": "/nl/mogelijkheden/data-extraction",
+      "title": "Data Extraction: extractie van documenten naar JSON | Catalisa",
+      "canonical": "https://catalisa.io/nl/mogelijkheden/data-extraction",
+      "noIndex": false,
+      "h1": "Onderdelen met een doel.Mogelijkhedensamen."
+    },
+    {
+      "path": "/fr/capacites/data-extraction",
+      "title": "Data Extraction : extraction de documents vers JSON | Catalisa",
+      "canonical": "https://catalisa.io/fr/capacites/data-extraction",
+      "noIndex": false,
+      "h1": "Des pièces qui ont un but.Possibilitésensemble."
+    },
+    {
+      "path": "/capacidades/data-store",
+      "title": "Data Store: armazenamento de documentos JSON | Catalisa",
+      "canonical": "https://catalisa.io/capacidades/data-store",
+      "noIndex": false,
+      "h1": "Peças com propósito.Possibilidadesem conjunto."
+    },
+    {
+      "path": "/en/capabilities/data-store",
+      "title": "Data Store: JSON document storage | Catalisa",
+      "canonical": "https://catalisa.io/en/capabilities/data-store",
+      "noIndex": false,
+      "h1": "Pieces with a purpose.Possibilitiestogether."
+    },
+    {
+      "path": "/de/faehigkeiten/data-store",
+      "title": "Data Store: Speicherung von JSON-Dokumenten | Catalisa",
+      "canonical": "https://catalisa.io/de/faehigkeiten/data-store",
+      "noIndex": false,
+      "h1": "Bausteine mit Zweck.Möglichkeitengemeinsam."
+    },
+    {
+      "path": "/es/capacidades/data-store",
+      "title": "Data Store: almacenamiento de documentos JSON | Catalisa",
+      "canonical": "https://catalisa.io/es/capacidades/data-store",
+      "noIndex": false,
+      "h1": "Piezas con propósito.Posibilidadesen conjunto."
+    },
+    {
+      "path": "/da/funktioner/data-store",
+      "title": "Data Store: lagring af JSON-dokumenter | Catalisa",
+      "canonical": "https://catalisa.io/da/funktioner/data-store",
+      "noIndex": false,
+      "h1": "Brikker med et formål.Mulighederi fællesskab."
+    },
+    {
+      "path": "/nl/mogelijkheden/data-store",
+      "title": "Data Store: opslag van JSON-documenten | Catalisa",
+      "canonical": "https://catalisa.io/nl/mogelijkheden/data-store",
+      "noIndex": false,
+      "h1": "Onderdelen met een doel.Mogelijkhedensamen."
+    },
+    {
+      "path": "/fr/capacites/data-store",
+      "title": "Data Store : stockage de documents JSON | Catalisa",
+      "canonical": "https://catalisa.io/fr/capacites/data-store",
+      "noIndex": false,
+      "h1": "Des pièces qui ont un but.Possibilitésensemble."
+    },
+    {
+      "path": "/capacidades/decision-engine",
+      "title": "Decision Engine: motor de decisão e regras DMN | Catalisa",
+      "canonical": "https://catalisa.io/capacidades/decision-engine",
+      "noIndex": false,
+      "h1": "Peças com propósito.Possibilidadesem conjunto."
+    },
+    {
+      "path": "/en/capabilities/decision-engine",
+      "title": "Decision Engine: decision engine and DMN rules | Catalisa",
+      "canonical": "https://catalisa.io/en/capabilities/decision-engine",
+      "noIndex": false,
+      "h1": "Pieces with a purpose.Possibilitiestogether."
+    },
+    {
+      "path": "/de/faehigkeiten/decision-engine",
+      "title": "Decision Engine: Entscheidungs-Engine und DMN-Regeln | Catalisa",
+      "canonical": "https://catalisa.io/de/faehigkeiten/decision-engine",
+      "noIndex": false,
+      "h1": "Bausteine mit Zweck.Möglichkeitengemeinsam."
+    },
+    {
+      "path": "/es/capacidades/decision-engine",
+      "title": "Decision Engine: motor de decisión y reglas DMN | Catalisa",
+      "canonical": "https://catalisa.io/es/capacidades/decision-engine",
+      "noIndex": false,
+      "h1": "Piezas con propósito.Posibilidadesen conjunto."
+    },
+    {
+      "path": "/da/funktioner/decision-engine",
+      "title": "Decision Engine: beslutningsmotor og DMN-regler | Catalisa",
+      "canonical": "https://catalisa.io/da/funktioner/decision-engine",
+      "noIndex": false,
+      "h1": "Brikker med et formål.Mulighederi fællesskab."
+    },
+    {
+      "path": "/nl/mogelijkheden/decision-engine",
+      "title": "Decision Engine: beslissingsengine en DMN-regels | Catalisa",
+      "canonical": "https://catalisa.io/nl/mogelijkheden/decision-engine",
+      "noIndex": false,
+      "h1": "Onderdelen met een doel.Mogelijkhedensamen."
+    },
+    {
+      "path": "/fr/capacites/decision-engine",
+      "title": "Decision Engine : moteur de décision et règles DMN | Catalisa",
+      "canonical": "https://catalisa.io/fr/capacites/decision-engine",
+      "noIndex": false,
+      "h1": "Des pièces qui ont un but.Possibilitésensemble."
+    },
+    {
+      "path": "/capacidades/decision-platform",
+      "title": "Decision Platform: esteira de análise e decisão | Catalisa",
+      "canonical": "https://catalisa.io/capacidades/decision-platform",
+      "noIndex": false,
+      "h1": "Peças com propósito.Possibilidadesem conjunto."
+    },
+    {
+      "path": "/en/capabilities/decision-platform",
+      "title": "Decision Platform: analysis and decision pipeline | Catalisa",
+      "canonical": "https://catalisa.io/en/capabilities/decision-platform",
+      "noIndex": false,
+      "h1": "Pieces with a purpose.Possibilitiestogether."
+    },
+    {
+      "path": "/de/faehigkeiten/decision-platform",
+      "title": "Decision Platform: Analyse- und Entscheidungs-Pipeline | Catalisa",
+      "canonical": "https://catalisa.io/de/faehigkeiten/decision-platform",
+      "noIndex": false,
+      "h1": "Bausteine mit Zweck.Möglichkeitengemeinsam."
+    },
+    {
+      "path": "/es/capacidades/decision-platform",
+      "title": "Decision Platform: flujo de análisis y decisión | Catalisa",
+      "canonical": "https://catalisa.io/es/capacidades/decision-platform",
+      "noIndex": false,
+      "h1": "Piezas con propósito.Posibilidadesen conjunto."
+    },
+    {
+      "path": "/da/funktioner/decision-platform",
+      "title": "Decision Platform: analyse- og beslutningsflow | Catalisa",
+      "canonical": "https://catalisa.io/da/funktioner/decision-platform",
+      "noIndex": false,
+      "h1": "Brikker med et formål.Mulighederi fællesskab."
+    },
+    {
+      "path": "/nl/mogelijkheden/decision-platform",
+      "title": "Decision Platform: analyse- en beslissingspipeline | Catalisa",
+      "canonical": "https://catalisa.io/nl/mogelijkheden/decision-platform",
+      "noIndex": false,
+      "h1": "Onderdelen met een doel.Mogelijkhedensamen."
+    },
+    {
+      "path": "/fr/capacites/decision-platform",
+      "title": "Decision Platform : chaîne d'analyse et de décision | Catalisa",
+      "canonical": "https://catalisa.io/fr/capacites/decision-platform",
+      "noIndex": false,
+      "h1": "Des pièces qui ont un but.Possibilitésensemble."
+    },
+    {
+      "path": "/capacidades/document-template",
+      "title": "Document Template: geração de contratos e documentos | Catalisa",
+      "canonical": "https://catalisa.io/capacidades/document-template",
+      "noIndex": false,
+      "h1": "Peças com propósito.Possibilidadesem conjunto."
+    },
+    {
+      "path": "/en/capabilities/document-template",
+      "title": "Document Template: contract and document generation | Catalisa",
+      "canonical": "https://catalisa.io/en/capabilities/document-template",
+      "noIndex": false,
+      "h1": "Pieces with a purpose.Possibilitiestogether."
+    },
+    {
+      "path": "/de/faehigkeiten/document-template",
+      "title": "Document Template: Erstellung von Verträgen und Dokumenten | Catalisa",
+      "canonical": "https://catalisa.io/de/faehigkeiten/document-template",
+      "noIndex": false,
+      "h1": "Bausteine mit Zweck.Möglichkeitengemeinsam."
+    },
+    {
+      "path": "/es/capacidades/document-template",
+      "title": "Document Template: generación de contratos y documentos | Catalisa",
+      "canonical": "https://catalisa.io/es/capacidades/document-template",
+      "noIndex": false,
+      "h1": "Piezas con propósito.Posibilidadesen conjunto."
+    },
+    {
+      "path": "/da/funktioner/document-template",
+      "title": "Document Template: generering af kontrakter og dokumenter | Catalisa",
+      "canonical": "https://catalisa.io/da/funktioner/document-template",
+      "noIndex": false,
+      "h1": "Brikker med et formål.Mulighederi fællesskab."
+    },
+    {
+      "path": "/nl/mogelijkheden/document-template",
+      "title": "Document Template: genereren van contracten en documenten | Catalisa",
+      "canonical": "https://catalisa.io/nl/mogelijkheden/document-template",
+      "noIndex": false,
+      "h1": "Onderdelen met een doel.Mogelijkhedensamen."
+    },
+    {
+      "path": "/fr/capacites/document-template",
+      "title": "Document Template : génération de contrats et de documents | Catalisa",
+      "canonical": "https://catalisa.io/fr/capacites/document-template",
+      "noIndex": false,
+      "h1": "Des pièces qui ont un but.Possibilitésensemble."
+    },
+    {
+      "path": "/capacidades/e-signature",
+      "title": "E-Signature: assinatura eletrônica com trilha de eventos | Catalisa",
+      "canonical": "https://catalisa.io/capacidades/e-signature",
+      "noIndex": false,
+      "h1": "Peças com propósito.Possibilidadesem conjunto."
+    },
+    {
+      "path": "/en/capabilities/e-signature",
+      "title": "E-Signature: electronic signature with an event trail | Catalisa",
+      "canonical": "https://catalisa.io/en/capabilities/e-signature",
+      "noIndex": false,
+      "h1": "Pieces with a purpose.Possibilitiestogether."
+    },
+    {
+      "path": "/de/faehigkeiten/e-signature",
+      "title": "E-Signature: elektronische Signatur mit Ereignisprotokoll | Catalisa",
+      "canonical": "https://catalisa.io/de/faehigkeiten/e-signature",
+      "noIndex": false,
+      "h1": "Bausteine mit Zweck.Möglichkeitengemeinsam."
+    },
+    {
+      "path": "/es/capacidades/e-signature",
+      "title": "E-Signature: firma electrónica con registro de eventos | Catalisa",
+      "canonical": "https://catalisa.io/es/capacidades/e-signature",
+      "noIndex": false,
+      "h1": "Piezas con propósito.Posibilidadesen conjunto."
+    },
+    {
+      "path": "/da/funktioner/e-signature",
+      "title": "E-Signature: elektronisk signatur med hændelsesspor | Catalisa",
+      "canonical": "https://catalisa.io/da/funktioner/e-signature",
+      "noIndex": false,
+      "h1": "Brikker med et formål.Mulighederi fællesskab."
+    },
+    {
+      "path": "/nl/mogelijkheden/e-signature",
+      "title": "E-Signature: elektronische handtekening met gebeurtenissenlog | Catalisa",
+      "canonical": "https://catalisa.io/nl/mogelijkheden/e-signature",
+      "noIndex": false,
+      "h1": "Onderdelen met een doel.Mogelijkhedensamen."
+    },
+    {
+      "path": "/fr/capacites/e-signature",
+      "title": "E-Signature : signature électronique avec piste d'événements | Catalisa",
+      "canonical": "https://catalisa.io/fr/capacites/e-signature",
+      "noIndex": false,
+      "h1": "Des pièces qui ont un but.Possibilitésensemble."
+    },
+    {
+      "path": "/capacidades/email",
+      "title": "Email: API para Gmail e Outlook | Catalisa",
+      "canonical": "https://catalisa.io/capacidades/email",
+      "noIndex": false,
+      "h1": "Peças com propósito.Possibilidadesem conjunto."
+    },
+    {
+      "path": "/en/capabilities/email",
+      "title": "Email: API for Gmail and Outlook | Catalisa",
+      "canonical": "https://catalisa.io/en/capabilities/email",
+      "noIndex": false,
+      "h1": "Pieces with a purpose.Possibilitiestogether."
+    },
+    {
+      "path": "/de/faehigkeiten/email",
+      "title": "Email: API für Gmail und Outlook | Catalisa",
+      "canonical": "https://catalisa.io/de/faehigkeiten/email",
+      "noIndex": false,
+      "h1": "Bausteine mit Zweck.Möglichkeitengemeinsam."
+    },
+    {
+      "path": "/es/capacidades/email",
+      "title": "Email: API para Gmail y Outlook | Catalisa",
+      "canonical": "https://catalisa.io/es/capacidades/email",
+      "noIndex": false,
+      "h1": "Piezas con propósito.Posibilidadesen conjunto."
+    },
+    {
+      "path": "/da/funktioner/email",
+      "title": "Email: API til Gmail og Outlook | Catalisa",
+      "canonical": "https://catalisa.io/da/funktioner/email",
+      "noIndex": false,
+      "h1": "Brikker med et formål.Mulighederi fællesskab."
+    },
+    {
+      "path": "/nl/mogelijkheden/email",
+      "title": "Email: API voor Gmail en Outlook | Catalisa",
+      "canonical": "https://catalisa.io/nl/mogelijkheden/email",
+      "noIndex": false,
+      "h1": "Onderdelen met een doel.Mogelijkhedensamen."
+    },
+    {
+      "path": "/fr/capacites/email",
+      "title": "Email : API pour Gmail et Outlook | Catalisa",
+      "canonical": "https://catalisa.io/fr/capacites/email",
+      "noIndex": false,
+      "h1": "Des pièces qui ont un but.Possibilitésensemble."
+    },
+    {
+      "path": "/capacidades/feature-flags",
+      "title": "Feature Flags: controle de funcionalidades por segmento | Catalisa",
+      "canonical": "https://catalisa.io/capacidades/feature-flags",
+      "noIndex": false,
+      "h1": "Peças com propósito.Possibilidadesem conjunto."
+    },
+    {
+      "path": "/en/capabilities/feature-flags",
+      "title": "Feature Flags: feature control by segment | Catalisa",
+      "canonical": "https://catalisa.io/en/capabilities/feature-flags",
+      "noIndex": false,
+      "h1": "Pieces with a purpose.Possibilitiestogether."
+    },
+    {
+      "path": "/de/faehigkeiten/feature-flags",
+      "title": "Feature Flags: Funktionssteuerung nach Segment | Catalisa",
+      "canonical": "https://catalisa.io/de/faehigkeiten/feature-flags",
+      "noIndex": false,
+      "h1": "Bausteine mit Zweck.Möglichkeitengemeinsam."
+    },
+    {
+      "path": "/es/capacidades/feature-flags",
+      "title": "Feature Flags: control de funcionalidades por segmento | Catalisa",
+      "canonical": "https://catalisa.io/es/capacidades/feature-flags",
+      "noIndex": false,
+      "h1": "Piezas con propósito.Posibilidadesen conjunto."
+    },
+    {
+      "path": "/da/funktioner/feature-flags",
+      "title": "Feature Flags: styring af funktioner pr. segment | Catalisa",
+      "canonical": "https://catalisa.io/da/funktioner/feature-flags",
+      "noIndex": false,
+      "h1": "Brikker med et formål.Mulighederi fællesskab."
+    },
+    {
+      "path": "/nl/mogelijkheden/feature-flags",
+      "title": "Feature Flags: functionaliteit per segment beheren | Catalisa",
+      "canonical": "https://catalisa.io/nl/mogelijkheden/feature-flags",
+      "noIndex": false,
+      "h1": "Onderdelen met een doel.Mogelijkhedensamen."
+    },
+    {
+      "path": "/fr/capacites/feature-flags",
+      "title": "Feature Flags : contrôle des fonctionnalités par segment | Catalisa",
+      "canonical": "https://catalisa.io/fr/capacites/feature-flags",
+      "noIndex": false,
+      "h1": "Des pièces qui ont un but.Possibilitésensemble."
+    },
+    {
+      "path": "/capacidades/file-storage",
+      "title": "File Storage: armazenamento de arquivos no S3 | Catalisa",
+      "canonical": "https://catalisa.io/capacidades/file-storage",
+      "noIndex": false,
+      "h1": "Peças com propósito.Possibilidadesem conjunto."
+    },
+    {
+      "path": "/en/capabilities/file-storage",
+      "title": "File Storage: file storage on S3 | Catalisa",
+      "canonical": "https://catalisa.io/en/capabilities/file-storage",
+      "noIndex": false,
+      "h1": "Pieces with a purpose.Possibilitiestogether."
+    },
+    {
+      "path": "/de/faehigkeiten/file-storage",
+      "title": "File Storage: Dateispeicherung in S3 | Catalisa",
+      "canonical": "https://catalisa.io/de/faehigkeiten/file-storage",
+      "noIndex": false,
+      "h1": "Bausteine mit Zweck.Möglichkeitengemeinsam."
+    },
+    {
+      "path": "/es/capacidades/file-storage",
+      "title": "File Storage: almacenamiento de archivos en S3 | Catalisa",
+      "canonical": "https://catalisa.io/es/capacidades/file-storage",
+      "noIndex": false,
+      "h1": "Piezas con propósito.Posibilidadesen conjunto."
+    },
+    {
+      "path": "/da/funktioner/file-storage",
+      "title": "File Storage: fillagring i S3 | Catalisa",
+      "canonical": "https://catalisa.io/da/funktioner/file-storage",
+      "noIndex": false,
+      "h1": "Brikker med et formål.Mulighederi fællesskab."
+    },
+    {
+      "path": "/nl/mogelijkheden/file-storage",
+      "title": "File Storage: bestandsopslag in S3 | Catalisa",
+      "canonical": "https://catalisa.io/nl/mogelijkheden/file-storage",
+      "noIndex": false,
+      "h1": "Onderdelen met een doel.Mogelijkhedensamen."
+    },
+    {
+      "path": "/fr/capacites/file-storage",
+      "title": "File Storage : stockage de fichiers sur S3 | Catalisa",
+      "canonical": "https://catalisa.io/fr/capacites/file-storage",
+      "noIndex": false,
+      "h1": "Des pièces qui ont un but.Possibilitésensemble."
+    },
+    {
+      "path": "/capacidades/iam",
+      "title": "IAM: identidade e gestão de permissões | Catalisa",
+      "canonical": "https://catalisa.io/capacidades/iam",
+      "noIndex": false,
+      "h1": "Peças com propósito.Possibilidadesem conjunto."
+    },
+    {
+      "path": "/en/capabilities/iam",
+      "title": "IAM: identity and permission management | Catalisa",
+      "canonical": "https://catalisa.io/en/capabilities/iam",
+      "noIndex": false,
+      "h1": "Pieces with a purpose.Possibilitiestogether."
+    },
+    {
+      "path": "/de/faehigkeiten/iam",
+      "title": "IAM: Identitäts- und Berechtigungsverwaltung | Catalisa",
+      "canonical": "https://catalisa.io/de/faehigkeiten/iam",
+      "noIndex": false,
+      "h1": "Bausteine mit Zweck.Möglichkeitengemeinsam."
+    },
+    {
+      "path": "/es/capacidades/iam",
+      "title": "IAM: identidad y gestión de permisos | Catalisa",
+      "canonical": "https://catalisa.io/es/capacidades/iam",
+      "noIndex": false,
+      "h1": "Piezas con propósito.Posibilidadesen conjunto."
+    },
+    {
+      "path": "/da/funktioner/iam",
+      "title": "IAM: identitet og rettighedsstyring | Catalisa",
+      "canonical": "https://catalisa.io/da/funktioner/iam",
+      "noIndex": false,
+      "h1": "Brikker med et formål.Mulighederi fællesskab."
+    },
+    {
+      "path": "/nl/mogelijkheden/iam",
+      "title": "IAM: identiteit en rechtenbeheer | Catalisa",
+      "canonical": "https://catalisa.io/nl/mogelijkheden/iam",
+      "noIndex": false,
+      "h1": "Onderdelen met een doel.Mogelijkhedensamen."
+    },
+    {
+      "path": "/fr/capacites/iam",
+      "title": "IAM : identité et gestion des autorisations | Catalisa",
+      "canonical": "https://catalisa.io/fr/capacites/iam",
+      "noIndex": false,
+      "h1": "Des pièces qui ont un but.Possibilitésensemble."
+    },
+    {
+      "path": "/capacidades/meta-account",
+      "title": "Meta Account: gestão de Meta Business e WABA | Catalisa",
+      "canonical": "https://catalisa.io/capacidades/meta-account",
+      "noIndex": false,
+      "h1": "Peças com propósito.Possibilidadesem conjunto."
+    },
+    {
+      "path": "/en/capabilities/meta-account",
+      "title": "Meta Account: Meta Business and WABA management | Catalisa",
+      "canonical": "https://catalisa.io/en/capabilities/meta-account",
+      "noIndex": false,
+      "h1": "Pieces with a purpose.Possibilitiestogether."
+    },
+    {
+      "path": "/de/faehigkeiten/meta-account",
+      "title": "Meta Account: Verwaltung von Meta Business und WABA | Catalisa",
+      "canonical": "https://catalisa.io/de/faehigkeiten/meta-account",
+      "noIndex": false,
+      "h1": "Bausteine mit Zweck.Möglichkeitengemeinsam."
+    },
+    {
+      "path": "/es/capacidades/meta-account",
+      "title": "Meta Account: gestión de Meta Business y WABA | Catalisa",
+      "canonical": "https://catalisa.io/es/capacidades/meta-account",
+      "noIndex": false,
+      "h1": "Piezas con propósito.Posibilidadesen conjunto."
+    },
+    {
+      "path": "/da/funktioner/meta-account",
+      "title": "Meta Account: administration af Meta Business og WABA | Catalisa",
+      "canonical": "https://catalisa.io/da/funktioner/meta-account",
+      "noIndex": false,
+      "h1": "Brikker med et formål.Mulighederi fællesskab."
+    },
+    {
+      "path": "/nl/mogelijkheden/meta-account",
+      "title": "Meta Account: beheer van Meta Business en WABA | Catalisa",
+      "canonical": "https://catalisa.io/nl/mogelijkheden/meta-account",
+      "noIndex": false,
+      "h1": "Onderdelen met een doel.Mogelijkhedensamen."
+    },
+    {
+      "path": "/fr/capacites/meta-account",
+      "title": "Meta Account : gestion de Meta Business et WABA | Catalisa",
+      "canonical": "https://catalisa.io/fr/capacites/meta-account",
+      "noIndex": false,
+      "h1": "Des pièces qui ont un but.Possibilitésensemble."
+    },
+    {
+      "path": "/capacidades/open-finance",
+      "title": "Open Finance: dados bancários com consentimento | Catalisa",
+      "canonical": "https://catalisa.io/capacidades/open-finance",
+      "noIndex": false,
+      "h1": "Peças com propósito.Possibilidadesem conjunto."
+    },
+    {
+      "path": "/en/capabilities/open-finance",
+      "title": "Open Finance: consent-based banking data | Catalisa",
+      "canonical": "https://catalisa.io/en/capabilities/open-finance",
+      "noIndex": false,
+      "h1": "Pieces with a purpose.Possibilitiestogether."
+    },
+    {
+      "path": "/de/faehigkeiten/open-finance",
+      "title": "Open Finance: Bankdaten mit Einwilligung | Catalisa",
+      "canonical": "https://catalisa.io/de/faehigkeiten/open-finance",
+      "noIndex": false,
+      "h1": "Bausteine mit Zweck.Möglichkeitengemeinsam."
+    },
+    {
+      "path": "/es/capacidades/open-finance",
+      "title": "Open Finance: datos bancarios con consentimiento | Catalisa",
+      "canonical": "https://catalisa.io/es/capacidades/open-finance",
+      "noIndex": false,
+      "h1": "Piezas con propósito.Posibilidadesen conjunto."
+    },
+    {
+      "path": "/da/funktioner/open-finance",
+      "title": "Open Finance: bankdata med samtykke | Catalisa",
+      "canonical": "https://catalisa.io/da/funktioner/open-finance",
+      "noIndex": false,
+      "h1": "Brikker med et formål.Mulighederi fællesskab."
+    },
+    {
+      "path": "/nl/mogelijkheden/open-finance",
+      "title": "Open Finance: bankgegevens met toestemming | Catalisa",
+      "canonical": "https://catalisa.io/nl/mogelijkheden/open-finance",
+      "noIndex": false,
+      "h1": "Onderdelen met een doel.Mogelijkhedensamen."
+    },
+    {
+      "path": "/fr/capacites/open-finance",
+      "title": "Open Finance : données bancaires avec consentement | Catalisa",
+      "canonical": "https://catalisa.io/fr/capacites/open-finance",
+      "noIndex": false,
+      "h1": "Des pièces qui ont un but.Possibilitésensemble."
+    },
+    {
+      "path": "/capacidades/payments",
+      "title": "Payments: pagamentos por cartão, Pix e boleto | Catalisa",
+      "canonical": "https://catalisa.io/capacidades/payments",
+      "noIndex": false,
+      "h1": "Peças com propósito.Possibilidadesem conjunto."
+    },
+    {
+      "path": "/en/capabilities/payments",
+      "title": "Payments: card, Pix and boleto payments | Catalisa",
+      "canonical": "https://catalisa.io/en/capabilities/payments",
+      "noIndex": false,
+      "h1": "Pieces with a purpose.Possibilitiestogether."
+    },
+    {
+      "path": "/de/faehigkeiten/payments",
+      "title": "Payments: Zahlungen per Karte, Pix und Boleto | Catalisa",
+      "canonical": "https://catalisa.io/de/faehigkeiten/payments",
+      "noIndex": false,
+      "h1": "Bausteine mit Zweck.Möglichkeitengemeinsam."
+    },
+    {
+      "path": "/es/capacidades/payments",
+      "title": "Payments: pagos con tarjeta, Pix y boleto | Catalisa",
+      "canonical": "https://catalisa.io/es/capacidades/payments",
+      "noIndex": false,
+      "h1": "Piezas con propósito.Posibilidadesen conjunto."
+    },
+    {
+      "path": "/da/funktioner/payments",
+      "title": "Payments: betalinger med kort, Pix og boleto | Catalisa",
+      "canonical": "https://catalisa.io/da/funktioner/payments",
+      "noIndex": false,
+      "h1": "Brikker med et formål.Mulighederi fællesskab."
+    },
+    {
+      "path": "/nl/mogelijkheden/payments",
+      "title": "Payments: betalingen met kaart, Pix en boleto | Catalisa",
+      "canonical": "https://catalisa.io/nl/mogelijkheden/payments",
+      "noIndex": false,
+      "h1": "Onderdelen met een doel.Mogelijkhedensamen."
+    },
+    {
+      "path": "/fr/capacites/payments",
+      "title": "Payments : paiements par carte, Pix et boleto | Catalisa",
+      "canonical": "https://catalisa.io/fr/capacites/payments",
+      "noIndex": false,
+      "h1": "Des pièces qui ont un but.Possibilitésensemble."
+    },
+    {
+      "path": "/capacidades/people",
+      "title": "People: contexto de identidade de pessoas | Catalisa",
+      "canonical": "https://catalisa.io/capacidades/people",
+      "noIndex": false,
+      "h1": "Peças com propósito.Possibilidadesem conjunto."
+    },
+    {
+      "path": "/en/capabilities/people",
+      "title": "People: identity context for people | Catalisa",
+      "canonical": "https://catalisa.io/en/capabilities/people",
+      "noIndex": false,
+      "h1": "Pieces with a purpose.Possibilitiestogether."
+    },
+    {
+      "path": "/de/faehigkeiten/people",
+      "title": "People: Identitätskontext von Personen | Catalisa",
+      "canonical": "https://catalisa.io/de/faehigkeiten/people",
+      "noIndex": false,
+      "h1": "Bausteine mit Zweck.Möglichkeitengemeinsam."
+    },
+    {
+      "path": "/es/capacidades/people",
+      "title": "People: contexto de identidad de personas | Catalisa",
+      "canonical": "https://catalisa.io/es/capacidades/people",
+      "noIndex": false,
+      "h1": "Piezas con propósito.Posibilidadesen conjunto."
+    },
+    {
+      "path": "/da/funktioner/people",
+      "title": "People: identitetskontekst for personer | Catalisa",
+      "canonical": "https://catalisa.io/da/funktioner/people",
+      "noIndex": false,
+      "h1": "Brikker med et formål.Mulighederi fællesskab."
+    },
+    {
+      "path": "/nl/mogelijkheden/people",
+      "title": "People: identiteitscontext van personen | Catalisa",
+      "canonical": "https://catalisa.io/nl/mogelijkheden/people",
+      "noIndex": false,
+      "h1": "Onderdelen met een doel.Mogelijkhedensamen."
+    },
+    {
+      "path": "/fr/capacites/people",
+      "title": "People : contexte d'identité des personnes | Catalisa",
+      "canonical": "https://catalisa.io/fr/capacites/people",
+      "noIndex": false,
+      "h1": "Des pièces qui ont un but.Possibilitésensemble."
+    },
+    {
+      "path": "/capacidades/pricing-engine",
+      "title": "Pricing Engine: precificação de crédito por risco | Catalisa",
+      "canonical": "https://catalisa.io/capacidades/pricing-engine",
+      "noIndex": false,
+      "h1": "Peças com propósito.Possibilidadesem conjunto."
+    },
+    {
+      "path": "/en/capabilities/pricing-engine",
+      "title": "Pricing Engine: risk-based credit pricing | Catalisa",
+      "canonical": "https://catalisa.io/en/capabilities/pricing-engine",
+      "noIndex": false,
+      "h1": "Pieces with a purpose.Possibilitiestogether."
+    },
+    {
+      "path": "/de/faehigkeiten/pricing-engine",
+      "title": "Pricing Engine: risikobasierte Kreditbepreisung | Catalisa",
+      "canonical": "https://catalisa.io/de/faehigkeiten/pricing-engine",
+      "noIndex": false,
+      "h1": "Bausteine mit Zweck.Möglichkeitengemeinsam."
+    },
+    {
+      "path": "/es/capacidades/pricing-engine",
+      "title": "Pricing Engine: fijación de precios de crédito según el riesgo | Catalisa",
+      "canonical": "https://catalisa.io/es/capacidades/pricing-engine",
+      "noIndex": false,
+      "h1": "Piezas con propósito.Posibilidadesen conjunto."
+    },
+    {
+      "path": "/da/funktioner/pricing-engine",
+      "title": "Pricing Engine: risikobaseret kreditprissætning | Catalisa",
+      "canonical": "https://catalisa.io/da/funktioner/pricing-engine",
+      "noIndex": false,
+      "h1": "Brikker med et formål.Mulighederi fællesskab."
+    },
+    {
+      "path": "/nl/mogelijkheden/pricing-engine",
+      "title": "Pricing Engine: risicogebaseerde kredietprijsstelling | Catalisa",
+      "canonical": "https://catalisa.io/nl/mogelijkheden/pricing-engine",
+      "noIndex": false,
+      "h1": "Onderdelen met een doel.Mogelijkhedensamen."
+    },
+    {
+      "path": "/fr/capacites/pricing-engine",
+      "title": "Pricing Engine : tarification du crédit selon le risque | Catalisa",
+      "canonical": "https://catalisa.io/fr/capacites/pricing-engine",
+      "noIndex": false,
+      "h1": "Des pièces qui ont un but.Possibilitésensemble."
+    },
+    {
+      "path": "/capacidades/products",
+      "title": "Products: configuração de produtos de crédito | Catalisa",
+      "canonical": "https://catalisa.io/capacidades/products",
+      "noIndex": false,
+      "h1": "Peças com propósito.Possibilidadesem conjunto."
+    },
+    {
+      "path": "/en/capabilities/products",
+      "title": "Products: credit product configuration | Catalisa",
+      "canonical": "https://catalisa.io/en/capabilities/products",
+      "noIndex": false,
+      "h1": "Pieces with a purpose.Possibilitiestogether."
+    },
+    {
+      "path": "/de/faehigkeiten/products",
+      "title": "Products: Konfiguration von Kreditprodukten | Catalisa",
+      "canonical": "https://catalisa.io/de/faehigkeiten/products",
+      "noIndex": false,
+      "h1": "Bausteine mit Zweck.Möglichkeitengemeinsam."
+    },
+    {
+      "path": "/es/capacidades/products",
+      "title": "Products: configuración de productos de crédito | Catalisa",
+      "canonical": "https://catalisa.io/es/capacidades/products",
+      "noIndex": false,
+      "h1": "Piezas con propósito.Posibilidadesen conjunto."
+    },
+    {
+      "path": "/da/funktioner/products",
+      "title": "Products: konfiguration af kreditprodukter | Catalisa",
+      "canonical": "https://catalisa.io/da/funktioner/products",
+      "noIndex": false,
+      "h1": "Brikker med et formål.Mulighederi fællesskab."
+    },
+    {
+      "path": "/nl/mogelijkheden/products",
+      "title": "Products: configuratie van kredietproducten | Catalisa",
+      "canonical": "https://catalisa.io/nl/mogelijkheden/products",
+      "noIndex": false,
+      "h1": "Onderdelen met een doel.Mogelijkhedensamen."
+    },
+    {
+      "path": "/fr/capacites/products",
+      "title": "Products : configuration des produits de crédit | Catalisa",
+      "canonical": "https://catalisa.io/fr/capacites/products",
+      "noIndex": false,
+      "h1": "Des pièces qui ont un but.Possibilitésensemble."
+    },
+    {
+      "path": "/capacidades/rooms",
+      "title": "Rooms: vídeo, gravação e transcrição | Catalisa",
+      "canonical": "https://catalisa.io/capacidades/rooms",
+      "noIndex": false,
+      "h1": "Peças com propósito.Possibilidadesem conjunto."
+    },
+    {
+      "path": "/en/capabilities/rooms",
+      "title": "Rooms: video, recording and transcription | Catalisa",
+      "canonical": "https://catalisa.io/en/capabilities/rooms",
+      "noIndex": false,
+      "h1": "Pieces with a purpose.Possibilitiestogether."
+    },
+    {
+      "path": "/de/faehigkeiten/rooms",
+      "title": "Rooms: Video, Aufzeichnung und Transkription | Catalisa",
+      "canonical": "https://catalisa.io/de/faehigkeiten/rooms",
+      "noIndex": false,
+      "h1": "Bausteine mit Zweck.Möglichkeitengemeinsam."
+    },
+    {
+      "path": "/es/capacidades/rooms",
+      "title": "Rooms: vídeo, grabación y transcripción | Catalisa",
+      "canonical": "https://catalisa.io/es/capacidades/rooms",
+      "noIndex": false,
+      "h1": "Piezas con propósito.Posibilidadesen conjunto."
+    },
+    {
+      "path": "/da/funktioner/rooms",
+      "title": "Rooms: video, optagelse og transskription | Catalisa",
+      "canonical": "https://catalisa.io/da/funktioner/rooms",
+      "noIndex": false,
+      "h1": "Brikker med et formål.Mulighederi fællesskab."
+    },
+    {
+      "path": "/nl/mogelijkheden/rooms",
+      "title": "Rooms: video, opname en transcriptie | Catalisa",
+      "canonical": "https://catalisa.io/nl/mogelijkheden/rooms",
+      "noIndex": false,
+      "h1": "Onderdelen met een doel.Mogelijkhedensamen."
+    },
+    {
+      "path": "/fr/capacites/rooms",
+      "title": "Rooms : vidéo, enregistrement et transcription | Catalisa",
+      "canonical": "https://catalisa.io/fr/capacites/rooms",
+      "noIndex": false,
+      "h1": "Des pièces qui ont un but.Possibilitésensemble."
+    },
+    {
+      "path": "/capacidades/service-attestations",
+      "title": "Service Attestations: confirmação de serviços prestados | Catalisa",
+      "canonical": "https://catalisa.io/capacidades/service-attestations",
+      "noIndex": false,
+      "h1": "Peças com propósito.Possibilidadesem conjunto."
+    },
+    {
+      "path": "/en/capabilities/service-attestations",
+      "title": "Service Attestations: confirmation of services rendered | Catalisa",
+      "canonical": "https://catalisa.io/en/capabilities/service-attestations",
+      "noIndex": false,
+      "h1": "Pieces with a purpose.Possibilitiestogether."
+    },
+    {
+      "path": "/de/faehigkeiten/service-attestations",
+      "title": "Service Attestations: Bestätigung erbrachter Leistungen | Catalisa",
+      "canonical": "https://catalisa.io/de/faehigkeiten/service-attestations",
+      "noIndex": false,
+      "h1": "Bausteine mit Zweck.Möglichkeitengemeinsam."
+    },
+    {
+      "path": "/es/capacidades/service-attestations",
+      "title": "Service Attestations: confirmación de servicios prestados | Catalisa",
+      "canonical": "https://catalisa.io/es/capacidades/service-attestations",
+      "noIndex": false,
+      "h1": "Piezas con propósito.Posibilidadesen conjunto."
+    },
+    {
+      "path": "/da/funktioner/service-attestations",
+      "title": "Service Attestations: bekræftelse af leverede ydelser | Catalisa",
+      "canonical": "https://catalisa.io/da/funktioner/service-attestations",
+      "noIndex": false,
+      "h1": "Brikker med et formål.Mulighederi fællesskab."
+    },
+    {
+      "path": "/nl/mogelijkheden/service-attestations",
+      "title": "Service Attestations: bevestiging van geleverde diensten | Catalisa",
+      "canonical": "https://catalisa.io/nl/mogelijkheden/service-attestations",
+      "noIndex": false,
+      "h1": "Onderdelen met een doel.Mogelijkhedensamen."
+    },
+    {
+      "path": "/fr/capacites/service-attestations",
+      "title": "Service Attestations : confirmation des services rendus | Catalisa",
+      "canonical": "https://catalisa.io/fr/capacites/service-attestations",
+      "noIndex": false,
+      "h1": "Des pièces qui ont un but.Possibilitésensemble."
+    },
+    {
+      "path": "/capacidades/slack",
+      "title": "Slack: integração de mensagens com Slack | Catalisa",
+      "canonical": "https://catalisa.io/capacidades/slack",
+      "noIndex": false,
+      "h1": "Peças com propósito.Possibilidadesem conjunto."
+    },
+    {
+      "path": "/en/capabilities/slack",
+      "title": "Slack: messaging integration with Slack | Catalisa",
+      "canonical": "https://catalisa.io/en/capabilities/slack",
+      "noIndex": false,
+      "h1": "Pieces with a purpose.Possibilitiestogether."
+    },
+    {
+      "path": "/de/faehigkeiten/slack",
+      "title": "Slack: Messaging-Integration mit Slack | Catalisa",
+      "canonical": "https://catalisa.io/de/faehigkeiten/slack",
+      "noIndex": false,
+      "h1": "Bausteine mit Zweck.Möglichkeitengemeinsam."
+    },
+    {
+      "path": "/es/capacidades/slack",
+      "title": "Slack: integración de mensajería con Slack | Catalisa",
+      "canonical": "https://catalisa.io/es/capacidades/slack",
+      "noIndex": false,
+      "h1": "Piezas con propósito.Posibilidadesen conjunto."
+    },
+    {
+      "path": "/da/funktioner/slack",
+      "title": "Slack: beskedintegration med Slack | Catalisa",
+      "canonical": "https://catalisa.io/da/funktioner/slack",
+      "noIndex": false,
+      "h1": "Brikker med et formål.Mulighederi fællesskab."
+    },
+    {
+      "path": "/nl/mogelijkheden/slack",
+      "title": "Slack: berichtenintegratie met Slack | Catalisa",
+      "canonical": "https://catalisa.io/nl/mogelijkheden/slack",
+      "noIndex": false,
+      "h1": "Onderdelen met een doel.Mogelijkhedensamen."
+    },
+    {
+      "path": "/fr/capacites/slack",
+      "title": "Slack : intégration de messagerie avec Slack | Catalisa",
+      "canonical": "https://catalisa.io/fr/capacites/slack",
+      "noIndex": false,
+      "h1": "Des pièces qui ont un but.Possibilitésensemble."
+    },
+    {
+      "path": "/capacidades/sso",
+      "title": "SSO: login com Google, Microsoft, GitHub e Meta | Catalisa",
+      "canonical": "https://catalisa.io/capacidades/sso",
+      "noIndex": false,
+      "h1": "Peças com propósito.Possibilidadesem conjunto."
+    },
+    {
+      "path": "/en/capabilities/sso",
+      "title": "SSO: sign in with Google, Microsoft, GitHub, and Meta | Catalisa",
+      "canonical": "https://catalisa.io/en/capabilities/sso",
+      "noIndex": false,
+      "h1": "Pieces with a purpose.Possibilitiestogether."
+    },
+    {
+      "path": "/de/faehigkeiten/sso",
+      "title": "SSO: Anmeldung mit Google, Microsoft, GitHub und Meta | Catalisa",
+      "canonical": "https://catalisa.io/de/faehigkeiten/sso",
+      "noIndex": false,
+      "h1": "Bausteine mit Zweck.Möglichkeitengemeinsam."
+    },
+    {
+      "path": "/es/capacidades/sso",
+      "title": "SSO: inicio de sesión con Google, Microsoft, GitHub y Meta | Catalisa",
+      "canonical": "https://catalisa.io/es/capacidades/sso",
+      "noIndex": false,
+      "h1": "Piezas con propósito.Posibilidadesen conjunto."
+    },
+    {
+      "path": "/da/funktioner/sso",
+      "title": "SSO: login med Google, Microsoft, GitHub og Meta | Catalisa",
+      "canonical": "https://catalisa.io/da/funktioner/sso",
+      "noIndex": false,
+      "h1": "Brikker med et formål.Mulighederi fællesskab."
+    },
+    {
+      "path": "/nl/mogelijkheden/sso",
+      "title": "SSO: inloggen met Google, Microsoft, GitHub en Meta | Catalisa",
+      "canonical": "https://catalisa.io/nl/mogelijkheden/sso",
+      "noIndex": false,
+      "h1": "Onderdelen met een doel.Mogelijkhedensamen."
+    },
+    {
+      "path": "/fr/capacites/sso",
+      "title": "SSO : connexion avec Google, Microsoft, GitHub et Meta | Catalisa",
+      "canonical": "https://catalisa.io/fr/capacites/sso",
+      "noIndex": false,
+      "h1": "Des pièces qui ont un but.Possibilitésensemble."
+    },
+    {
+      "path": "/capacidades/webhooks-engine",
+      "title": "Webhooks Engine: webhooks com assinatura e retentativas | Catalisa",
+      "canonical": "https://catalisa.io/capacidades/webhooks-engine",
+      "noIndex": false,
+      "h1": "Peças com propósito.Possibilidadesem conjunto."
+    },
+    {
+      "path": "/en/capabilities/webhooks-engine",
+      "title": "Webhooks Engine: signed webhooks with retries | Catalisa",
+      "canonical": "https://catalisa.io/en/capabilities/webhooks-engine",
+      "noIndex": false,
+      "h1": "Pieces with a purpose.Possibilitiestogether."
+    },
+    {
+      "path": "/de/faehigkeiten/webhooks-engine",
+      "title": "Webhooks Engine: Webhooks mit Signatur und Wiederholungsversuchen | Catalisa",
+      "canonical": "https://catalisa.io/de/faehigkeiten/webhooks-engine",
+      "noIndex": false,
+      "h1": "Bausteine mit Zweck.Möglichkeitengemeinsam."
+    },
+    {
+      "path": "/es/capacidades/webhooks-engine",
+      "title": "Webhooks Engine: webhooks con firma y reintentos | Catalisa",
+      "canonical": "https://catalisa.io/es/capacidades/webhooks-engine",
+      "noIndex": false,
+      "h1": "Piezas con propósito.Posibilidadesen conjunto."
+    },
+    {
+      "path": "/da/funktioner/webhooks-engine",
+      "title": "Webhooks Engine: webhooks med signatur og genforsøg | Catalisa",
+      "canonical": "https://catalisa.io/da/funktioner/webhooks-engine",
+      "noIndex": false,
+      "h1": "Brikker med et formål.Mulighederi fællesskab."
+    },
+    {
+      "path": "/nl/mogelijkheden/webhooks-engine",
+      "title": "Webhooks Engine: webhooks met handtekening en nieuwe pogingen | Catalisa",
+      "canonical": "https://catalisa.io/nl/mogelijkheden/webhooks-engine",
+      "noIndex": false,
+      "h1": "Onderdelen met een doel.Mogelijkhedensamen."
+    },
+    {
+      "path": "/fr/capacites/webhooks-engine",
+      "title": "Webhooks Engine : webhooks signés avec nouvelles tentatives | Catalisa",
+      "canonical": "https://catalisa.io/fr/capacites/webhooks-engine",
+      "noIndex": false,
+      "h1": "Des pièces qui ont un but.Possibilitésensemble."
+    },
+    {
+      "path": "/capacidades/wpp",
+      "title": "WPP: WhatsApp no número da sua empresa | Catalisa",
+      "canonical": "https://catalisa.io/capacidades/wpp",
+      "noIndex": false,
+      "h1": "Peças com propósito.Possibilidadesem conjunto."
+    },
+    {
+      "path": "/en/capabilities/wpp",
+      "title": "WPP: WhatsApp on your company's number | Catalisa",
+      "canonical": "https://catalisa.io/en/capabilities/wpp",
+      "noIndex": false,
+      "h1": "Pieces with a purpose.Possibilitiestogether."
+    },
+    {
+      "path": "/de/faehigkeiten/wpp",
+      "title": "WPP: WhatsApp unter der Nummer Ihres Unternehmens | Catalisa",
+      "canonical": "https://catalisa.io/de/faehigkeiten/wpp",
+      "noIndex": false,
+      "h1": "Bausteine mit Zweck.Möglichkeitengemeinsam."
+    },
+    {
+      "path": "/es/capacidades/wpp",
+      "title": "WPP: WhatsApp en el número de tu empresa | Catalisa",
+      "canonical": "https://catalisa.io/es/capacidades/wpp",
+      "noIndex": false,
+      "h1": "Piezas con propósito.Posibilidadesen conjunto."
+    },
+    {
+      "path": "/da/funktioner/wpp",
+      "title": "WPP: WhatsApp på din virksomheds nummer | Catalisa",
+      "canonical": "https://catalisa.io/da/funktioner/wpp",
+      "noIndex": false,
+      "h1": "Brikker med et formål.Mulighederi fællesskab."
+    },
+    {
+      "path": "/nl/mogelijkheden/wpp",
+      "title": "WPP: WhatsApp op het nummer van je bedrijf | Catalisa",
+      "canonical": "https://catalisa.io/nl/mogelijkheden/wpp",
+      "noIndex": false,
+      "h1": "Onderdelen met een doel.Mogelijkhedensamen."
+    },
+    {
+      "path": "/fr/capacites/wpp",
+      "title": "WPP : WhatsApp sur le numéro de votre entreprise | Catalisa",
+      "canonical": "https://catalisa.io/fr/capacites/wpp",
+      "noIndex": false,
+      "h1": "Des pièces qui ont un but.Possibilitésensemble."
+    },
+    {
+      "path": "/capacidades/wpp-business",
+      "title": "WPP Business: WhatsApp Business API oficial da Meta | Catalisa",
+      "canonical": "https://catalisa.io/capacidades/wpp-business",
+      "noIndex": false,
+      "h1": "Peças com propósito.Possibilidadesem conjunto."
+    },
+    {
+      "path": "/en/capabilities/wpp-business",
+      "title": "WPP Business: Meta's official WhatsApp Business API | Catalisa",
+      "canonical": "https://catalisa.io/en/capabilities/wpp-business",
+      "noIndex": false,
+      "h1": "Pieces with a purpose.Possibilitiestogether."
+    },
+    {
+      "path": "/de/faehigkeiten/wpp-business",
+      "title": "WPP Business: offizielle WhatsApp Business API von Meta | Catalisa",
+      "canonical": "https://catalisa.io/de/faehigkeiten/wpp-business",
+      "noIndex": false,
+      "h1": "Bausteine mit Zweck.Möglichkeitengemeinsam."
+    },
+    {
+      "path": "/es/capacidades/wpp-business",
+      "title": "WPP Business: WhatsApp Business API oficial de Meta | Catalisa",
+      "canonical": "https://catalisa.io/es/capacidades/wpp-business",
+      "noIndex": false,
+      "h1": "Piezas con propósito.Posibilidadesen conjunto."
+    },
+    {
+      "path": "/da/funktioner/wpp-business",
+      "title": "WPP Business: Metas officielle WhatsApp Business API | Catalisa",
+      "canonical": "https://catalisa.io/da/funktioner/wpp-business",
+      "noIndex": false,
+      "h1": "Brikker med et formål.Mulighederi fællesskab."
+    },
+    {
+      "path": "/nl/mogelijkheden/wpp-business",
+      "title": "WPP Business: officiële WhatsApp Business API van Meta | Catalisa",
+      "canonical": "https://catalisa.io/nl/mogelijkheden/wpp-business",
+      "noIndex": false,
+      "h1": "Onderdelen met een doel.Mogelijkhedensamen."
+    },
+    {
+      "path": "/fr/capacites/wpp-business",
+      "title": "WPP Business : API WhatsApp Business officielle de Meta | Catalisa",
+      "canonical": "https://catalisa.io/fr/capacites/wpp-business",
+      "noIndex": false,
+      "h1": "Des pièces qui ont un but.Possibilitésensemble."
+    }
+  ]
+}

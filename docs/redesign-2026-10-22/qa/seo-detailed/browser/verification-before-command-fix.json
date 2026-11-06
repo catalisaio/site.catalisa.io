@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-10-26T15:10:29.302Z",
+  "passed": false,
+  "scope": "Local artifact fulfilled at a production hostname; original public Google SDK snapshot and public Clarity scripts. All collection requests intercepted with204; no events delivered to production Analytics/Clarity accounts. Contact inference/session API controlled, not a real AI smoke.",
+  "checks": [
+    "No optional SDK or collection before consent; banner fits all four widths"
+  ],
+  "events": [],
+  "vendorScriptRequests": 3,
+  "collectionRequestsIntercepted": 2,
+  "externalCollectionDelivered": false,
+  "errors": [],
+  "failure": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 1\nReceived: 0\n\nCall Log:\n- Timeout 20000ms exceeded while waiting on the predicate"
+}

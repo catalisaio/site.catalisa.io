@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-26T19:47:07.236Z",
+  "sourceDirection": "docs/direcao-editorial-2026-10-24/vivere/mensagem-mestra.md",
+  "master": "docs/direcao-editorial-2026-10-24/vivere/e9-deck-texto.md",
+  "assets": [
+    {
+      "source": "c7b-criadora.jpg",
+      "destination": "editorial-creator.jpg",
+      "slot": "Home / seção Studio, substitui player/filme conceitual",
+      "reason": "Composição roxa e laranja com criadora, usada na direção da master para compor produtos; imagem sem texto ou marca de cliente.",
+      "originalPath": "docs/direcao-editorial-2026-10-24/conceitos/c7b-criadora.jpg",
+      "publicPath": "/redesign/media-v3/editorial-creator.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 54436,
+      "sha256": "34b7116b1b2a394bc6195e8ebf16bef2fb2f5b60a815d2483be2a0e789fb2f14",
+      "copiedByteForByte": true
+    },
+    {
+      "source": "c3-circulo.jpg",
+      "destination": "editorial-composition.jpg",
+      "slot": "Banking / apoio estático no lugar da linguagem de reel",
+      "reason": "Círculo e planos da linguagem editorial da master, sem tela fabricada, texto ou cliente identificado.",
+      "originalPath": "docs/direcao-editorial-2026-10-24/conceitos/c3-circulo.jpg",
+      "publicPath": "/redesign/media-v3/editorial-composition.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 72111,
+      "sha256": "1bd6c906b5cc312c3bd8177764aaa6e0ecfea3619a4591aa75d164eab8ff40fc",
+      "copiedByteForByte": true
+    },
+    {
+      "source": "c1-executivo.jpg",
+      "destination": "editorial-executive.jpg",
+      "slot": "Credit / apoio estático no lugar da linguagem de reel",
+      "reason": "Retrato conceitual da direção de crédito e segurança na master, roxo coerente com a identidade e sem texto incorporado.",
+      "originalPath": "docs/direcao-editorial-2026-10-24/conceitos/c1-executivo.jpg",
+      "publicPath": "/redesign/media-v3/editorial-executive.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 92103,
+      "sha256": "eb6409ebf325510a8ccbdfb30ad78ceaf9db64bdf9f8684c0e04aef3fc231810",
+      "copiedByteForByte": true
+    }
+  ],
+  "classification": "Existing conceptual/editorial art from the Catalisa presentation material; not customer photography, testimonials or product screenshots.",
+  "clientBrandingReused": false,
+  "embeddedCopyReused": false,
+  "newAiGeneration": false,
+  "rasterEdits": false,
+  "sourceFilesModified": false,
+  "identityPreserved": true,
+  "limits": [
+    "Images inspected directly from local files; no browser or new visual acceptance yet.",
+    "Source folder labels describe internal editorial references only; client names do not enter the public asset names or page copy."
+  ]
+}

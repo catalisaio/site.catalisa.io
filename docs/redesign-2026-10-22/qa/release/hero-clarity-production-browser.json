@@ -1,0 +1,169 @@
+{
+  "checkedAt": "2026-10-27T22:46:03.889Z",
+  "passed": true,
+  "release": "20261027-hero-clarity",
+  "origin": "https://catalisa.io",
+  "scope": "Actual live HTTPS and JavaScript in seven locales; selector, six products/four sites, Recruitment absent, actual anonymous Contact API401, French Lab ready, six full detail pages without a disclosure at390px. Optional analytics declined. No sessions, leads, AI or external messages created.",
+  "checks": [
+    {
+      "lang": "pt-BR",
+      "path": "/",
+      "selector": true
+    },
+    {
+      "lang": "pt-BR",
+      "path": "/produtos",
+      "products": 6,
+      "siteLinks": 4,
+      "recruitmentRemoved": true
+    },
+    {
+      "lang": "pt-BR",
+      "path": "/contato",
+      "anonymousContactReady": true
+    },
+    {
+      "lang": "en-US",
+      "path": "/en",
+      "selector": true
+    },
+    {
+      "lang": "en-US",
+      "path": "/en/products",
+      "products": 6,
+      "siteLinks": 4,
+      "recruitmentRemoved": true
+    },
+    {
+      "lang": "en-US",
+      "path": "/en/contact",
+      "anonymousContactReady": true
+    },
+    {
+      "lang": "de-DE",
+      "path": "/de",
+      "selector": true
+    },
+    {
+      "lang": "de-DE",
+      "path": "/de/produkte",
+      "products": 6,
+      "siteLinks": 4,
+      "recruitmentRemoved": true
+    },
+    {
+      "lang": "de-DE",
+      "path": "/de/kontakt",
+      "anonymousContactReady": true
+    },
+    {
+      "lang": "es-ES",
+      "path": "/es",
+      "selector": true
+    },
+    {
+      "lang": "es-ES",
+      "path": "/es/productos",
+      "products": 6,
+      "siteLinks": 4,
+      "recruitmentRemoved": true
+    },
+    {
+      "lang": "es-ES",
+      "path": "/es/contacto",
+      "anonymousContactReady": true
+    },
+    {
+      "lang": "da-DK",
+      "path": "/da",
+      "selector": true
+    },
+    {
+      "lang": "da-DK",
+      "path": "/da/produkter",
+      "products": 6,
+      "siteLinks": 4,
+      "recruitmentRemoved": true
+    },
+    {
+      "lang": "da-DK",
+      "path": "/da/kontakt",
+      "anonymousContactReady": true
+    },
+    {
+      "lang": "nl-NL",
+      "path": "/nl",
+      "selector": true
+    },
+    {
+      "lang": "nl-NL",
+      "path": "/nl/producten",
+      "products": 6,
+      "siteLinks": 4,
+      "recruitmentRemoved": true
+    },
+    {
+      "lang": "nl-NL",
+      "path": "/nl/contact",
+      "anonymousContactReady": true
+    },
+    {
+      "lang": "fr-FR",
+      "path": "/fr",
+      "selector": true
+    },
+    {
+      "lang": "fr-FR",
+      "path": "/fr/produits",
+      "products": 6,
+      "siteLinks": 4,
+      "recruitmentRemoved": true
+    },
+    {
+      "lang": "fr-FR",
+      "path": "/fr/contact",
+      "anonymousContactReady": true
+    },
+    {
+      "path": "/fr/lab",
+      "labReady": true
+    },
+    {
+      "slug": "banking",
+      "width": 390,
+      "fullDetailsVisibleWithoutClick": true,
+      "noOverflow": true
+    },
+    {
+      "slug": "credit",
+      "width": 390,
+      "fullDetailsVisibleWithoutClick": true,
+      "noOverflow": true
+    },
+    {
+      "slug": "med",
+      "width": 390,
+      "fullDetailsVisibleWithoutClick": true,
+      "noOverflow": true
+    },
+    {
+      "slug": "juridico",
+      "width": 390,
+      "fullDetailsVisibleWithoutClick": true,
+      "noOverflow": true
+    },
+    {
+      "slug": "biometrics",
+      "width": 390,
+      "fullDetailsVisibleWithoutClick": true,
+      "noOverflow": true
+    },
+    {
+      "slug": "decision",
+      "width": 390,
+      "fullDetailsVisibleWithoutClick": true,
+      "noOverflow": true
+    }
+  ],
+  "errors": []
+}

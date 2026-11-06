@@ -1,0 +1,26 @@
+.c-site .c-lab .l-spinner{display:inline-block;width:18px;height:18px;border:2px solid currentColor;border-right-color:transparent;border-radius:50%;animation:l-spin .8s linear infinite;flex-shrink:0}
+@keyframes l-spin{to{transform:rotate(360deg)}}
+.c-site .c-lab .l-operation{position:fixed;bottom:20px;right:20px;z-index:90;display:flex;align-items:center;gap:12px;max-width:calc(100vw - 40px);padding:16px 20px;background:var(--c-paper);color:var(--c-ink);border:1px solid var(--c-rule);box-shadow:0 8px 28px #17132015;font-size:14px;pointer-events:none}
+.c-site .c-lab .l-identity-dialog form{display:grid;gap:10px}
+.c-site .c-lab .l-identity-dialog input{width:100%;padding:12px;border:1px solid var(--c-rule);background:var(--c-paper);font:inherit;color:var(--c-ink)}
+.c-site .c-lab .l-identity-dialog form>button{margin-top:16px;padding:14px 20px;background:var(--c-brand);color:white;border:0;min-height:44px;text-align:left}
+.c-site .c-lab .l-dialog-close{float:right;border:0;background:none;padding:12px;min-height:44px;color:var(--c-brand);cursor:pointer}
+.c-site .c-lab .l-error,.c-site .c-lab .l-global-error{color:#9c2e3d}
+.c-site .c-lab .l-global-error{max-width:1200px;margin:0 auto;padding:20px}
+.c-site .c-lab .l-result-title h3,.c-site .c-lab .l-app-logo{overflow-wrap:anywhere}
+.c-site .c-lab .l-app aside button.l-app-nav{font:inherit;text-align:left;border:0;background:transparent;cursor:pointer;color:inherit}
+.c-site .c-lab .l-app aside button.l-app-nav.active{background:var(--c-lavender)}
+.c-site .c-lab .l-app-items small{overflow-wrap:anywhere;white-space:normal}
+.c-site .c-lab .l-screen-note{display:block;margin-top:14px;color:var(--c-body);line-height:1.5}
+.c-site .c-lab button:disabled{cursor:wait;opacity:.65}
+.c-site .c-lab .l-app button:disabled{cursor:default}
+.c-site .c-lab .l-prototype-note a{display:block;margin-top:12px;color:var(--c-brand)}
+@media(prefers-reduced-motion:reduce){.c-site .c-lab .l-spinner{animation:none}}
+.c-site .c-lab .l-output[data-processing] .l-output-top>span:last-child{visibility:hidden}
+.c-site .c-lab .l-output:not([data-processing]) #l-result{animation:c-concept-arrive .35s ease-out}
+.c-site .c-lab .l-composer-copy .c-concept-progress{margin-bottom:10px}
+.c-site .c-lab .l-composer-copy .c-concept-progress .c-concept-progress-head p{font-size:12px;line-height:1.75;margin:7px 0 0;color:#594461}
+@media(prefers-reduced-motion:reduce){.c-site .c-lab .l-output:not([data-processing]) #l-result{animation:none}}
+
+/* The final reference retains the native h4 margins in this particular heading. */
+.c-site .c-lab .l-result-lede h4{margin-block:1.33em}

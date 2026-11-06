@@ -1,0 +1,5 @@
+/* Independent document baseline for the new site; no Chakra or legacy global styles. */
+html { scroll-behavior:smooth; scroll-padding-top:100px; }
+body { margin:0; -webkit-font-smoothing:antialiased; background:#F6F3EE; }
+*,*::before,*::after { box-sizing:border-box; }
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto;}}

@@ -1,0 +1,50 @@
+/* Readability and native interaction corrections to the preserved N01 compositions. */
+.c-site :is(.s-page.s-page.s-page.s-page,.w-page.w-page.w-page.w-page,.n-page.n-page.n-page.n-page,.q-page.q-page.q-page.q-page) :is(p,small,label,select,button,blockquote,figcaption,span,a) { color: var(--c-body); }
+.c-site :is(.s-page.s-page,.w-page.w-page,.n-page.n-page,.q-page.q-page) .c-eyebrow { color: var(--c-body); }
+.c-site :is(.s-page.s-page.s-page.s-page,.w-page.w-page.w-page.w-page,.n-page.n-page.n-page.n-page,.q-page.q-page.q-page.q-page) :is(.s-interface,.w-hero,.w-care,.n-knowledge,.q-evidence) :is(p,small,span,label,a,em,h2,h3,h4,blockquote) { color: var(--c-paper); }
+.c-site .s-page.s-page.s-page.s-page .s-interface :is(.s-capture-bar,.s-capture-caption) :is(span,small,p,h3,a) { color: var(--c-body); }
+.c-site .s-page.s-page.s-page.s-page .s-interface-tabs button { color: var(--c-paper); }
+.c-site .w-page.w-page.w-page.w-page .w-hero button { color: var(--c-paper); }
+.c-site .w-page.w-page.w-page.w-page .w-simulation-buttons button:last-child,
+.c-site .n-page.n-page.n-page.n-page .n-permission button[aria-pressed=true],
+.c-site .n-page.n-page.n-page.n-page .n-next-action>button:not(:disabled),
+.c-site .q-page.q-page.q-page.q-page .q-request-actions>button:first-child { color: var(--c-paper); }
+.c-site :is(.s-page.s-page,.w-page.w-page,.n-page.n-page,.q-page.q-page) :is(a,button,summary,select,[tabindex]):focus-visible { outline: 2px solid var(--c-brand); outline-offset: 4px; }
+.c-site :is(.s-interface,.w-hero,.w-care,.n-knowledge,.q-evidence) :is(a,button,summary,[tabindex]):focus-visible { outline-color: var(--c-yellow); }
+.c-site :is(.s-page.s-motion-paused,.w-page.w-motion-paused,.n-page.n-motion-paused,.q-page.q-motion-paused) * { animation-play-state: paused !important; }
+.c-site :is(.s-page,.w-page,.n-page,.q-page) select { max-width: 100%; min-width: 0; }
+.c-site :is(.s-page,.w-page,.n-page,.q-page) button:disabled { cursor: not-allowed; }
+.c-site .q-page.q-page .q-request-actions>button:disabled { opacity: .6; }
+.c-capture-dialog.c-site { min-height: 0; width: calc(100vw - 32px); max-width: 1440px; height: calc(100dvh - 32px); max-height: calc(100dvh - 32px); padding: 0; border: 1px solid var(--c-rule); margin: auto; overflow: hidden; }
+.c-capture-dialog.c-site[open] { display: grid; grid-template-rows: auto auto minmax(0,1fr) auto; }
+.c-capture-dialog::backdrop { background: rgb(23 19 32 / .78); }
+.c-capture-dialog.c-site>header { display: flex; align-items: start; justify-content: space-between; padding: 20px 24px; gap: 20px; }
+.c-capture-dialog.c-site h2 { font-size: clamp(20px,2vw,30px); line-height: 1.2; }
+.c-capture-dialog.c-site button { flex-shrink: 0; border: 1px solid var(--c-rule); padding: 8px 12px; min-height: 42px; }
+.c-capture-dialog.c-site button[aria-pressed=true] { background: var(--c-brand); color: var(--c-paper); }
+.c-capture-dialog.c-site button:disabled { opacity: .5; cursor: not-allowed; }
+.c-capture-toolbar { display: flex; align-items: center; gap: 12px; padding: 0 24px 16px; flex-wrap: wrap; }
+.c-capture-toolbar>span { font: 12px var(--c-mono); }
+.c-capture-viewport { background: var(--c-lavender); overflow: auto; min-height: 0; padding: 16px; overscroll-behavior: contain; }
+.c-capture-viewport img { margin: auto; width: auto; height: auto; max-width: 100%; max-height: 100%; object-fit: contain; }
+.c-capture-viewport.c-capture-actual img { max-width: none; max-height: none; margin: 0; }
+.c-capture-dialog.c-site>footer { padding: 16px 24px; }
+.c-capture-dialog.c-site>footer p { font-size: 14px; color: var(--c-body); line-height: 1.5; }
+.c-capture-dialog.c-site>footer small { font: 11px/1.5 var(--c-mono); color: var(--c-body); }
+@media(max-width:700px) {
+  .c-capture-dialog.c-site { width: calc(100vw - 16px); height: calc(100dvh - 16px); max-height: calc(100dvh - 16px); }
+  .c-capture-dialog.c-site>header { padding: 14px; gap: 12px; }
+  .c-capture-dialog.c-site>header .c-eyebrow { font-size: 9px; }
+  .c-capture-dialog.c-site>header>button { font-size: 12px; }
+  .c-capture-toolbar { padding: 0 14px 12px; gap: 8px; }
+  .c-capture-dialog.c-site>footer { padding: 12px 14px; }
+}
+/* Decorative orbits and sigils cannot cover the controls they frame. */
+.c-site :is(.s-page,.w-page,.n-page,.q-page) [aria-hidden=true] { pointer-events: none; }
+
+.c-site .n-page.n-page.n-page.n-page .n-chat-note { color: var(--c-body); }
+.c-site .q-page.q-page.q-page.q-page .q-person-icon { color: var(--c-ink); }
+.c-site .w-page.w-page.w-page.w-page .w-simulation-buttons button:last-child span,
+.c-site .n-page.n-page.n-page.n-page .n-next-action>button:not(:disabled) span,
+.c-site .q-page.q-page.q-page.q-page .q-request-actions>button:first-child span { color: var(--c-paper); }
+.c-site .n-page.n-page.n-page.n-page .n-boundaries>.c-wrap>div>p { color: var(--c-body); }

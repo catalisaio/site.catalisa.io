@@ -65,7 +65,7 @@ export function MagazineCardCompact({ article, index = 0 }: MagazineCardCompactP
           <Box flex={1} minW={0}>
             <LinkOverlay as={Link} to={lp(`/insights/${article.slug}`)}>
               <Heading
-                as="h4"
+                as="h3"
                 fontSize="sm"
                 fontWeight="600"
                 lineHeight="1.4"

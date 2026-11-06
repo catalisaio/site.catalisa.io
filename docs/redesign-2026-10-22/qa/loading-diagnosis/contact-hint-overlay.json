@@ -1,0 +1,144 @@
+{
+  "checkedAt": "2026-10-27T02:26:33.443Z",
+  "scope": "Controlled local HTML overlay using actual staging HTTPS assets and anonymous session GET. Three alternating samples per variant,390px/4xCPU/4g, cold cache. Only document modulepreload hints differ; no deployment, private browser state, forms, AI, leads, analytics or messages. Document response timing is synthetic, so these are diagnostic comparisons, not live-site or field metrics.",
+  "summary": {
+    "baseline": {
+      "samples": 3,
+      "medianLcpMs": 4840,
+      "medianRevealMs": 4519.799999999814
+    },
+    "revised": {
+      "samples": 3,
+      "medianLcpMs": 3216,
+      "medianRevealMs": 2882.7000000001863
+    }
+  },
+  "results": [
+    {
+      "iteration": 0,
+      "variant": "baseline",
+      "lcp": 6252,
+      "hiddenAt": 70.70000000018626,
+      "revealedAt": 5916,
+      "resources": [
+        {
+          "path": "/assets/Contact-BEh_LRYN.js",
+          "start": 4488.600000000559,
+          "end": 4857.600000000559,
+          "duration": 369
+        },
+        {
+          "path": "/api/site/session",
+          "start": 4870.800000000745,
+          "end": 5818.800000000745,
+          "duration": 948
+        }
+      ]
+    },
+    {
+      "iteration": 0,
+      "variant": "revised",
+      "lcp": 3216,
+      "hiddenAt": 65.29999999981374,
+      "revealedAt": 2882.7000000001863,
+      "resources": [
+        {
+          "path": "/assets/Contact-BEh_LRYN.js",
+          "start": 22.299999999813735,
+          "end": 1124.0999999996275,
+          "duration": 1101.7999999998137
+        },
+        {
+          "path": "/api/site/session",
+          "start": 2021.2000000001863,
+          "end": 2789.7999999998137,
+          "duration": 768.5999999996275
+        }
+      ]
+    },
+    {
+      "iteration": 1,
+      "variant": "revised",
+      "lcp": 3928,
+      "hiddenAt": 64.70000000018626,
+      "revealedAt": 3586.2999999998137,
+      "resources": [
+        {
+          "path": "/assets/Contact-BEh_LRYN.js",
+          "start": 20.5,
+          "end": 2016.7000000001863,
+          "duration": 1996.2000000001863
+        },
+        {
+          "path": "/api/site/session",
+          "start": 2875.5,
+          "end": 3489.7000000001863,
+          "duration": 614.2000000001863
+        }
+      ]
+    },
+    {
+      "iteration": 1,
+      "variant": "baseline",
+      "lcp": 4840,
+      "hiddenAt": 68,
+      "revealedAt": 4519.799999999814,
+      "resources": [
+        {
+          "path": "/assets/Contact-BEh_LRYN.js",
+          "start": 3683.399999999441,
+          "end": 3937.0999999996275,
+          "duration": 253.70000000018626
+        },
+        {
+          "path": "/api/site/session",
+          "start": 3950.2000000001863,
+          "end": 4417.5999999996275,
+          "duration": 467.3999999994412
+        }
+      ]
+    },
+    {
+      "iteration": 2,
+      "variant": "baseline",
+      "lcp": 2932,
+      "hiddenAt": 63.59999999962747,
+      "revealedAt": 2601.7000000001863,
+      "resources": [
+        {
+          "path": "/assets/Contact-BEh_LRYN.js",
+          "start": 1931.8999999994412,
+          "end": 2197,
+          "duration": 265.1000000005588
+        },
+        {
+          "path": "/api/site/session",
+          "start": 2209.7000000001863,
+          "end": 2483.399999999441,
+          "duration": 273.69999999925494
+        }
+      ]
+    },
+    {
+      "iteration": 2,
+      "variant": "revised",
+      "lcp": 2864,
+      "hiddenAt": 67.1000000005588,
+      "revealedAt": 2522.4000000003725,
+      "resources": [
+        {
+          "path": "/assets/Contact-BEh_LRYN.js",
+          "start": 22.800000000745058,
+          "end": 1124.800000000745,
+          "duration": 1102
+        },
+        {
+          "path": "/api/site/session",
+          "start": 2009.6000000005588,
+          "end": 2430.800000000745,
+          "duration": 421.20000000018626
+        }
+      ]
+    }
+  ]
+}

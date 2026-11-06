@@ -112,7 +112,7 @@ export function AITransparency() {
                   <Icon as={dataIcons[i] || FiShield} boxSize={5} color="green.500" />
                 </Box>
                 <VStack align="flex-start" spacing={1}>
-                  <Heading as="h4" size="xs" fontWeight="700">{item.title}</Heading>
+                  <Heading as="h3" size="xs" fontWeight="700">{item.title}</Heading>
                   <Text color="gray.600" fontSize="sm" lineHeight="tall">{item.description}</Text>
                 </VStack>
               </HStack>
@@ -138,7 +138,7 @@ export function AITransparency() {
                   <Icon as={oversightIcons[i] || FiShield} boxSize={5} color="purple.500" />
                 </Box>
                 <VStack align="flex-start" spacing={1}>
-                  <Heading as="h4" size="xs" fontWeight="700">{item.title}</Heading>
+                  <Heading as="h3" size="xs" fontWeight="700">{item.title}</Heading>
                   <Text color="gray.600" fontSize="sm" lineHeight="tall">{item.description}</Text>
                 </VStack>
               </HStack>

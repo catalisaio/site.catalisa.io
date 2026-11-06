@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "1.0",
+  "title": "Clara | agenda de consultas",
+  "summary": "Uma hipótese de agendamento para pacientes e recepção.",
+  "hypothesis": "A clínica valida disponibilidade e responsabilidade profissional antes da confirmação.",
+  "roles": [
+    "Paciente",
+    "Recepção"
+  ],
+  "screens": [
+    {
+      "id": "choose",
+      "title": "Escolha um horário",
+      "description": "Exemplo com dados fictícios, sem reserva real.",
+      "items": [
+        {
+          "label": "Opção de exemplo",
+          "value": "Amanhã às 09h"
+        }
+      ],
+      "action": {
+        "label": "Conferir pedido",
+        "nextScreenId": "review"
+      }
+    },
+    {
+      "id": "review",
+      "title": "Confira o pedido",
+      "description": "Uma pessoa revisa o pedido antes de confirmar.",
+      "items": [
+        {
+          "label": "Estado",
+          "value": "Aguardando revisão humana"
+        }
+      ],
+      "action": {
+        "label": "Voltar",
+        "nextScreenId": "choose"
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "slug": "calendar",
+      "role": "Consultar disponibilidade, conforme integração validada."
+    },
+    {
+      "slug": "customers",
+      "role": "Organizar o contexto do relacionamento."
+    }
+  ],
+  "journey": [
+    {
+      "id": "request",
+      "label": "Receber",
+      "description": "O paciente informa o que precisa.",
+      "blockSlugs": [
+        "customers"
+      ],
+      "humanReview": false
+    },
+    {
+      "id": "check",
+      "label": "Conferir",
+      "description": "Disponibilidade e contexto são revisados.",
+      "blockSlugs": [
+        "calendar"
+      ],
+      "humanReview": true
+    }
+  ],
+  "limitations": [
+    "Não agenda uma consulta de verdade.",
+    "Depende da integração de calendário e das regras da clínica."
+  ],
+  "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+}

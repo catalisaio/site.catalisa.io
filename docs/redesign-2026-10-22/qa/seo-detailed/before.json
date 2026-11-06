@@ -1,0 +1,5587 @@
+{
+  "checkedAt": "2026-10-26T14:48:25.116Z",
+  "artifact": "/tmp/catalisa-network-recovery",
+  "scope": "Static production candidate, all HTML, internal links/assets/fragments, graph reachability, metadata, schema, hreflang and original Search Console verification. No rankings, Search Console access, field performance or owner editorial approval inferred.",
+  "passed": false,
+  "pages": 256,
+  "publicUrls": 255,
+  "reachablePublicUrls": 153,
+  "originalSearchConsoleVerificationPreserved": true,
+  "errors": [
+    {
+      "severity": "error",
+      "path": "/en",
+      "check": "missing_internal_link",
+      "value": "/en/verticais/fintech"
+    },
+    {
+      "severity": "error",
+      "path": "/en",
+      "check": "missing_internal_link",
+      "value": "/en/verticais/bancario"
+    },
+    {
+      "severity": "error",
+      "path": "/en",
+      "check": "missing_internal_link",
+      "value": "/en/verticais/seguros"
+    },
+    {
+      "severity": "error",
+      "path": "/en",
+      "check": "missing_internal_link",
+      "value": "/en/verticais/varejo"
+    },
+    {
+      "severity": "error",
+      "path": "/en",
+      "check": "missing_internal_link",
+      "value": "/en/verticais/startups"
+    },
+    {
+      "severity": "error",
+      "path": "/casos-de-uso",
+      "check": "missing_internal_link",
+      "value": "/bancário"
+    }
+  ],
+  "review": [
+    {
+      "severity": "review",
+      "path": "/ecossistema",
+      "check": "heading_level_skip",
+      "value": "BankingPlatform"
+    },
+    {
+      "severity": "review",
+      "path": "/demo",
+      "check": "heading_level_skip",
+      "value": "O que acontece nesta demo"
+    },
+    {
+      "severity": "review",
+      "path": "/en/demo",
+      "check": "heading_level_skip",
+      "value": "What happens in this demo"
+    },
+    {
+      "severity": "review",
+      "path": "/transparencia-ia",
+      "check": "heading_level_skip",
+      "value": "PII Scrubbing"
+    },
+    {
+      "severity": "review",
+      "path": "/transparencia-ia",
+      "check": "heading_level_skip",
+      "value": "Kill Switch"
+    },
+    {
+      "severity": "review",
+      "path": "/en/ai-transparency",
+      "check": "heading_level_skip",
+      "value": "PII Scrubbing"
+    },
+    {
+      "severity": "review",
+      "path": "/en/ai-transparency",
+      "check": "heading_level_skip",
+      "value": "Kill Switch"
+    },
+    {
+      "severity": "review",
+      "path": "/insights",
+      "check": "heading_level_skip",
+      "value": "IA Conversacional no Varejo Brasileiro: Como Gigantes Estão Transformando a Experiência de Compra"
+    },
+    {
+      "severity": "review",
+      "path": "/insights",
+      "check": "heading_level_skip",
+      "value": "iFood Gerente: O Agente de IA que Faz Pix e Paga Boletos pelo WhatsApp"
+    },
+    {
+      "severity": "review",
+      "path": "/insights",
+      "check": "heading_level_skip",
+      "value": "Escalar Atendimento sem Escalar Equipe: Lições de Quem Já Fez com IA"
+    },
+    {
+      "severity": "review",
+      "path": "/insights",
+      "check": "heading_level_skip",
+      "value": "Agentes vs Chatbots: A Evolução de FAQ para Execução de Transações"
+    },
+    {
+      "severity": "review",
+      "path": "/insights",
+      "check": "heading_level_skip",
+      "value": "IA no Financeiro: De Cobrança a Investimentos — O Mapa Completo"
+    },
+    {
+      "severity": "review",
+      "path": "/en/insights",
+      "check": "heading_level_skip",
+      "value": "Conversational AI in Brazilian Retail: How Giants Are Transforming the Shopping Experience"
+    },
+    {
+      "severity": "review",
+      "path": "/en/insights",
+      "check": "heading_level_skip",
+      "value": "iFood Gerente: The AI Agent That Makes Pix Payments and Pays Bills via WhatsApp"
+    },
+    {
+      "severity": "review",
+      "path": "/en/insights",
+      "check": "heading_level_skip",
+      "value": "Scaling Customer Service Without Scaling the Team: Lessons from Those Who've Done It with AI"
+    },
+    {
+      "severity": "review",
+      "path": "/en/insights",
+      "check": "heading_level_skip",
+      "value": "Agents vs Chatbots: The Evolution from FAQ to Transaction Execution"
+    },
+    {
+      "severity": "review",
+      "path": "/en/insights",
+      "check": "heading_level_skip",
+      "value": "AI in Finance: From Collections to Investments — The Complete Map"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/sdr-automatizado",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/sdr-automatizado",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/follow-up-inteligente",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/follow-up-inteligente",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/qualificacao-leads",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/qualificacao-leads",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/atendimento-imobiliario",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/atendimento-imobiliario",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/suporte-24-7",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/suporte-24-7",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/suporte-tecnico-ia",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/suporte-tecnico-ia",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/pos-venda-ecommerce",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/pos-venda-ecommerce",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/atendimento-bancario",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/atendimento-bancario",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/atendimento-segurado",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/atendimento-segurado",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/cobranca-inteligente",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/cobranca-inteligente",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/originacao-credito",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/originacao-credito",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/simulacao-credito",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/simulacao-credito",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/renegociacao-dividas",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/renegociacao-dividas",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/open-finance-credito",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/open-finance-credito",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/cotacao-seguro",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/cotacao-seguro",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/onboarding-kyc",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/onboarding-kyc",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/abertura-conta-digital",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/abertura-conta-digital",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/onboarding-usuarios",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/onboarding-usuarios",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/matricula-educacao",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/matricula-educacao",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/campanhas-whatsapp",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/campanhas-whatsapp",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/recuperacao-carrinho",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/recuperacao-carrinho",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/nps-feedback",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/nps-feedback",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/renovacao-proativa",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/renovacao-proativa",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/sinistro-whatsapp",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/sinistro-whatsapp",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/vistoria-digital",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/vistoria-digital",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/cardapio-digital",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/cardapio-digital",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/pix-conversacional",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/pix-conversacional",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/agendamento-inteligente",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/agendamento-inteligente",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/agendamento-consultas",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/agendamento-consultas",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/notificacoes-transacionais",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/notificacoes-transacionais",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/app-originacao-credito",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/app-originacao-credito",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/app-portal-cliente",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/app-portal-cliente",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/app-motor-cobranca",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/app-motor-cobranca",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/app-kyc-digital",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/app-kyc-digital",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/app-backoffice-seguros",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/app-backoffice-seguros",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/app-hub-onboarding",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/app-hub-onboarding",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/app-api-pagamentos",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/app-api-pagamentos",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/app-assinatura-digital",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/app-assinatura-digital",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/app-open-finance",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/app-open-finance",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/app-gestao-sinistros",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/app-gestao-sinistros",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/app-motor-decisao",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/app-motor-decisao",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/app-portal-parceiros",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/app-portal-parceiros",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/app-compliance-lgpd",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/app-compliance-lgpd",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/app-conciliacao-financeira",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/app-conciliacao-financeira",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/playbooks/app-marketplace-credito",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/app-marketplace-credito",
+      "check": "offer_requires_visible_current_price"
+    },
+    {
+      "severity": "review",
+      "path": "/en/ai-agents-whatsapp",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/determinismo",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/determinism",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/studio",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/ai-agents",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/apps",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/building-blocks",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/workflows",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/fintech",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/banking",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/insurance",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/retail",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/startups",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/use-cases",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/contact",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/demo",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/privacy-policy",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/press-kit",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/terms",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/security",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/ai-transparency",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/how-it-works",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/integrations/whatsapp",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/insights",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/insights/all",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/insights/all",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/vtex-day-2026",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/insights/boticario-assistente-ia-conversao-ecommerce",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/insights/ifood-comprai-compras-mercado-whatsapp",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/insights/ifood-gerente-virtual-financeiro-whatsapp",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/insights/ifood-cris-mentora-ia-restaurantes",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/insights/carrefour-ia-atendimento-humanizado",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/insights/lotte-homeshopping-ia-reducao-40-carga-atendimento",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/insights/synthesia-intercom-fin-ia-suporte-escala",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/insights/synthesia-fin-ai-spike-690-suporte",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/insights/gupshup-whatsapp-roi-270-forrester",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/insights/magalu-lu-vendedora-ia-whatsapp",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/insights/bancos-brasileiros-ia-whatsapp-bradesco-itau-nubank",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/insights/banco-bv-agentes-ia-reducao-rechamadas",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/insights/klarna-ia-40m-economia-contraponto",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/insights/bancos-globais-ia-whatsapp-dbs-hdfc-absa",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/insights/lemonade-sinistro-2-segundos-insurtech",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/insights/picpay-btg-pix-whatsapp-voz-imagem",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/insights/padrao-3x-conversao-whatsapp-vs-apps",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/insights/agentes-vs-chatbots-evolucao-faq-transacoes",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/insights/ia-financeiro-cobranca-investimentos-mapa",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/insights/90-porcento-empresas-mais-clientes-whatsapp",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/insights/ia-conversacional-varejo-brasileiro",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/insights/whatsapp-plataforma-vendas-conversational-commerce",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/insights/roi-ia-customer-experience-dados",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/insights/escalar-atendimento-sem-contratar-ia",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/insights/agentes-ia-whatsapp-automacao-inteligencia",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/insights/ia-humanizada-equilibrio-automacao-empatia",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/insights/foodtech-ia-transformacao-conversacional",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/sdr-automatizado",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/follow-up-inteligente",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/qualificacao-leads",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/atendimento-imobiliario",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/suporte-24-7",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/suporte-tecnico-ia",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/pos-venda-ecommerce",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/atendimento-bancario",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/atendimento-segurado",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/cobranca-inteligente",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/originacao-credito",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/simulacao-credito",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/renegociacao-dividas",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/open-finance-credito",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/cotacao-seguro",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/onboarding-kyc",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/abertura-conta-digital",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/onboarding-usuarios",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/matricula-educacao",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/campanhas-whatsapp",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/recuperacao-carrinho",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/nps-feedback",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/renovacao-proativa",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/sinistro-whatsapp",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/vistoria-digital",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/cardapio-digital",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/pix-conversacional",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/agendamento-inteligente",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/agendamento-consultas",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/notificacoes-transacionais",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/app-originacao-credito",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/app-portal-cliente",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/app-motor-cobranca",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/app-kyc-digital",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/app-backoffice-seguros",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/app-hub-onboarding",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/app-api-pagamentos",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/app-assinatura-digital",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/app-open-finance",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/app-gestao-sinistros",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/app-motor-decisao",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/app-portal-parceiros",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/app-compliance-lgpd",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/app-conciliacao-financeira",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/en/playbooks/app-marketplace-credito",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/fontes",
+      "check": "not_reachable_from_home"
+    },
+    {
+      "severity": "review",
+      "path": "/mapa",
+      "check": "not_reachable_from_home"
+    }
+  ],
+  "routes": [
+    {
+      "path": "/",
+      "public": true,
+      "native": true,
+      "title": "Catalisa | Plataforma de capacidades para criar produtos",
+      "titleLength": 56,
+      "descriptionLength": 112,
+      "wordCount": 150,
+      "internalLinks": 59,
+      "linksThroughRedirect": 56,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage"
+      ]
+    },
+    {
+      "path": "/studio",
+      "public": true,
+      "native": true,
+      "title": "Studio: construir agentes e automações por composição | Catalisa",
+      "titleLength": 64,
+      "descriptionLength": 138,
+      "wordCount": 910,
+      "internalLinks": 53,
+      "linksThroughRedirect": 48,
+      "missingAlt": 0,
+      "headings": 21,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/workflows",
+      "public": true,
+      "native": true,
+      "title": "Workflows: automação de processos e jornadas | Catalisa",
+      "titleLength": 55,
+      "descriptionLength": 137,
+      "wordCount": 820,
+      "internalLinks": 51,
+      "linksThroughRedirect": 47,
+      "missingAlt": 0,
+      "headings": 24,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/contato",
+      "public": true,
+      "native": true,
+      "title": "Contato: construa sua próxima conexão | Catalisa",
+      "titleLength": 48,
+      "descriptionLength": 118,
+      "wordCount": 172,
+      "internalLinks": 43,
+      "linksThroughRedirect": 40,
+      "missingAlt": 0,
+      "headings": 3,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/press-kit",
+      "public": true,
+      "native": true,
+      "title": "Press-kit: marca, assinaturas e recursos oficiais | Catalisa",
+      "titleLength": 60,
+      "descriptionLength": 112,
+      "wordCount": 474,
+      "internalLinks": 134,
+      "linksThroughRedirect": 39,
+      "missingAlt": 0,
+      "headings": 27,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/lab",
+      "public": true,
+      "native": true,
+      "title": "Lab: explore composições com IA | Catalisa",
+      "titleLength": 42,
+      "descriptionLength": 126,
+      "wordCount": 335,
+      "internalLinks": 49,
+      "linksThroughRedirect": 43,
+      "missingAlt": 0,
+      "headings": 9,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/design-system",
+      "public": false,
+      "native": true,
+      "title": "Sistema de identidade Catalisa",
+      "titleLength": 30,
+      "descriptionLength": 65,
+      "wordCount": 857,
+      "internalLinks": 16,
+      "linksThroughRedirect": 3,
+      "missingAlt": 0,
+      "headings": 51,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage"
+      ]
+    },
+    {
+      "path": "/interfaces",
+      "public": true,
+      "native": true,
+      "title": "Interfaces: capturas e contexto dos produtos | Catalisa",
+      "titleLength": 55,
+      "descriptionLength": 136,
+      "wordCount": 60,
+      "internalLinks": 42,
+      "linksThroughRedirect": 39,
+      "missingAlt": 0,
+      "headings": 1,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/fontes",
+      "public": true,
+      "native": true,
+      "title": "Fontes e referências do conteúdo | Catalisa",
+      "titleLength": 43,
+      "descriptionLength": 123,
+      "wordCount": 23,
+      "internalLinks": 44,
+      "linksThroughRedirect": 40,
+      "missingAlt": 0,
+      "headings": 1,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/mapa",
+      "public": true,
+      "native": true,
+      "title": "Mapa do site: explore todas as conexões | Catalisa",
+      "titleLength": 50,
+      "descriptionLength": 100,
+      "wordCount": 35,
+      "internalLinks": 106,
+      "linksThroughRedirect": 102,
+      "missingAlt": 0,
+      "headings": 1,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/perspectivas",
+      "public": true,
+      "native": true,
+      "title": "Perspectivas | Catalisa",
+      "titleLength": 23,
+      "descriptionLength": 125,
+      "wordCount": 417,
+      "internalLinks": 63,
+      "linksThroughRedirect": 60,
+      "missingAlt": 0,
+      "headings": 14,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "CollectionPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/perspectivas/construir-por-composicao",
+      "public": true,
+      "native": true,
+      "title": "Modernizar sem recomeçar o banco. | Catalisa",
+      "titleLength": 44,
+      "descriptionLength": 139,
+      "wordCount": 780,
+      "internalLinks": 54,
+      "linksThroughRedirect": 44,
+      "missingAlt": 0,
+      "headings": 15,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList",
+        "Article"
+      ]
+    },
+    {
+      "path": "/perspectivas/autonomia-responsabilidade",
+      "public": true,
+      "native": true,
+      "title": "A IA respondeu. A operação aconteceu? | Catalisa",
+      "titleLength": 48,
+      "descriptionLength": 146,
+      "wordCount": 735,
+      "internalLinks": 54,
+      "linksThroughRedirect": 44,
+      "missingAlt": 0,
+      "headings": 15,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList",
+        "Article"
+      ]
+    },
+    {
+      "path": "/perspectivas/regra-legivel",
+      "public": true,
+      "native": true,
+      "title": "Decidir rápido. Conseguir explicar depois. | Catalisa",
+      "titleLength": 53,
+      "descriptionLength": 150,
+      "wordCount": 733,
+      "internalLinks": 54,
+      "linksThroughRedirect": 44,
+      "missingAlt": 0,
+      "headings": 15,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList",
+        "Article"
+      ]
+    },
+    {
+      "path": "/perspectivas/open-finance-da-conexao-ao-produto",
+      "public": true,
+      "native": true,
+      "title": "Conectar dados é só o começo. | Catalisa",
+      "titleLength": 40,
+      "descriptionLength": 130,
+      "wordCount": 749,
+      "internalLinks": 54,
+      "linksThroughRedirect": 44,
+      "missingAlt": 0,
+      "headings": 15,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList",
+        "Article"
+      ]
+    },
+    {
+      "path": "/perspectivas/resiliencia-e-liberdade-de-evoluir",
+      "public": true,
+      "native": true,
+      "title": "E se uma peça ficar indisponível? | Catalisa",
+      "titleLength": 44,
+      "descriptionLength": 147,
+      "wordCount": 716,
+      "internalLinks": 54,
+      "linksThroughRedirect": 44,
+      "missingAlt": 0,
+      "headings": 15,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList",
+        "Article"
+      ]
+    },
+    {
+      "path": "/agentes",
+      "public": true,
+      "native": true,
+      "title": "Agentes de IA: contexto, ferramentas e permissões | Catalisa",
+      "titleLength": 60,
+      "descriptionLength": 133,
+      "wordCount": 917,
+      "internalLinks": 58,
+      "linksThroughRedirect": 54,
+      "missingAlt": 0,
+      "headings": 27,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/governanca",
+      "public": true,
+      "native": true,
+      "title": "Governança: permissões, revisão e evidências | Catalisa",
+      "titleLength": 55,
+      "descriptionLength": 127,
+      "wordCount": 934,
+      "internalLinks": 62,
+      "linksThroughRedirect": 58,
+      "missingAlt": 0,
+      "headings": 29,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/composicoes",
+      "public": true,
+      "native": true,
+      "title": "Composições: conecte capacidades em jornadas | Catalisa",
+      "titleLength": 55,
+      "descriptionLength": 146,
+      "wordCount": 29,
+      "internalLinks": 43,
+      "linksThroughRedirect": 40,
+      "missingAlt": 0,
+      "headings": 3,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/ecossistema",
+      "public": true,
+      "native": true,
+      "title": "Ecossistema: produtos construídos com capacidades Catalisa",
+      "titleLength": 58,
+      "descriptionLength": 152,
+      "wordCount": 267,
+      "internalLinks": 56,
+      "linksThroughRedirect": 53,
+      "missingAlt": 0,
+      "headings": 10,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "CollectionPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/ecossistema/banking",
+      "public": true,
+      "native": true,
+      "title": "Banking Platform: crie seu produto financeiro | Catalisa",
+      "titleLength": 56,
+      "descriptionLength": 163,
+      "wordCount": 942,
+      "internalLinks": 57,
+      "linksThroughRedirect": 49,
+      "missingAlt": 0,
+      "headings": 25,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/ecossistema/credit",
+      "public": true,
+      "native": true,
+      "title": "Credit Platform: desenhe seu produto de crédito | Catalisa",
+      "titleLength": 58,
+      "descriptionLength": 182,
+      "wordCount": 762,
+      "internalLinks": 53,
+      "linksThroughRedirect": 49,
+      "missingAlt": 0,
+      "headings": 20,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/ecossistema/med",
+      "public": true,
+      "native": true,
+      "title": "Med: assistente de IA para clínicas | Catalisa",
+      "titleLength": 46,
+      "descriptionLength": 140,
+      "wordCount": 275,
+      "internalLinks": 49,
+      "linksThroughRedirect": 46,
+      "missingAlt": 0,
+      "headings": 18,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/ecossistema/juridico",
+      "public": true,
+      "native": true,
+      "title": "Jurídico: triagem e contexto no atendimento | Catalisa",
+      "titleLength": 54,
+      "descriptionLength": 138,
+      "wordCount": 282,
+      "internalLinks": 50,
+      "linksThroughRedirect": 47,
+      "missingAlt": 0,
+      "headings": 19,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/ecossistema/recrutamento",
+      "public": true,
+      "native": true,
+      "title": "Recrutamento: atendimento e parecer com revisão | Catalisa",
+      "titleLength": 58,
+      "descriptionLength": 132,
+      "wordCount": 280,
+      "internalLinks": 51,
+      "linksThroughRedirect": 48,
+      "missingAlt": 0,
+      "headings": 20,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/ecossistema/biometrics",
+      "public": true,
+      "native": true,
+      "title": "Biometrics: identidade, verificação e evidência | Catalisa",
+      "titleLength": 58,
+      "descriptionLength": 155,
+      "wordCount": 251,
+      "internalLinks": 49,
+      "linksThroughRedirect": 46,
+      "missingAlt": 0,
+      "headings": 18,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/ecossistema/decision",
+      "public": true,
+      "native": true,
+      "title": "Decision: políticas versionadas e decisões rastreáveis | Catalisa",
+      "titleLength": 65,
+      "descriptionLength": 142,
+      "wordCount": 259,
+      "internalLinks": 49,
+      "linksThroughRedirect": 46,
+      "missingAlt": 0,
+      "headings": 18,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/visao",
+      "public": true,
+      "native": true,
+      "title": "Nossa visão: construir por composição | Catalisa",
+      "titleLength": 48,
+      "descriptionLength": 126,
+      "wordCount": 340,
+      "internalLinks": 49,
+      "linksThroughRedirect": 45,
+      "missingAlt": 0,
+      "headings": 10,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/arquitetura",
+      "public": true,
+      "native": true,
+      "title": "Arquitetura: crie produtos e modernize o legado | Catalisa",
+      "titleLength": 58,
+      "descriptionLength": 181,
+      "wordCount": 643,
+      "internalLinks": 57,
+      "linksThroughRedirect": 49,
+      "missingAlt": 0,
+      "headings": 17,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/desenvolvedores",
+      "public": true,
+      "native": true,
+      "title": "APIs, webhooks e integrações para desenvolvedores | Catalisa",
+      "titleLength": 60,
+      "descriptionLength": 125,
+      "wordCount": 811,
+      "internalLinks": 49,
+      "linksThroughRedirect": 41,
+      "missingAlt": 0,
+      "headings": 23,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/capacidades",
+      "public": true,
+      "native": true,
+      "title": "Building blocks: biblioteca de capacidades | Catalisa",
+      "titleLength": 53,
+      "descriptionLength": 136,
+      "wordCount": 675,
+      "internalLinks": 83,
+      "linksThroughRedirect": 79,
+      "missingAlt": 0,
+      "headings": 43,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "CollectionPage",
+        "BreadcrumbList",
+        "ItemList"
+      ]
+    },
+    {
+      "path": "/capacidades/ai-engine",
+      "public": true,
+      "native": true,
+      "title": "AI Engine: inteligência | Catalisa",
+      "titleLength": 34,
+      "descriptionLength": 140,
+      "wordCount": 284,
+      "internalLinks": 51,
+      "linksThroughRedirect": 45,
+      "missingAlt": 0,
+      "headings": 9,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/capacidades/analytics",
+      "public": true,
+      "native": true,
+      "title": "Analytics: plataforma | Catalisa",
+      "titleLength": 32,
+      "descriptionLength": 112,
+      "wordCount": 277,
+      "internalLinks": 50,
+      "linksThroughRedirect": 44,
+      "missingAlt": 0,
+      "headings": 7,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/capacidades/api-keys",
+      "public": true,
+      "native": true,
+      "title": "API Keys: identidade | Catalisa",
+      "titleLength": 31,
+      "descriptionLength": 143,
+      "wordCount": 299,
+      "internalLinks": 52,
+      "linksThroughRedirect": 46,
+      "missingAlt": 0,
+      "headings": 10,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/capacidades/audit-trail",
+      "public": true,
+      "native": true,
+      "title": "Audit Trail: plataforma | Catalisa",
+      "titleLength": 34,
+      "descriptionLength": 140,
+      "wordCount": 307,
+      "internalLinks": 51,
+      "linksThroughRedirect": 45,
+      "missingAlt": 0,
+      "headings": 9,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/capacidades/baas",
+      "public": true,
+      "native": true,
+      "title": "BaaS: financeiro | Catalisa",
+      "titleLength": 27,
+      "descriptionLength": 146,
+      "wordCount": 312,
+      "internalLinks": 52,
+      "linksThroughRedirect": 46,
+      "missingAlt": 0,
+      "headings": 10,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/capacidades/banking",
+      "public": true,
+      "native": true,
+      "title": "Banking: financeiro | Catalisa",
+      "titleLength": 30,
+      "descriptionLength": 131,
+      "wordCount": 288,
+      "internalLinks": 50,
+      "linksThroughRedirect": 44,
+      "missingAlt": 0,
+      "headings": 7,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/capacidades/banking-product-portfolio",
+      "public": true,
+      "native": true,
+      "title": "Banking Product Portfolio: financeiro | Catalisa",
+      "titleLength": 48,
+      "descriptionLength": 132,
+      "wordCount": 311,
+      "internalLinks": 52,
+      "linksThroughRedirect": 46,
+      "missingAlt": 0,
+      "headings": 10,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/capacidades/billing",
+      "public": true,
+      "native": true,
+      "title": "Billing: financeiro | Catalisa",
+      "titleLength": 30,
+      "descriptionLength": 144,
+      "wordCount": 286,
+      "internalLinks": 52,
+      "linksThroughRedirect": 46,
+      "missingAlt": 0,
+      "headings": 10,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/capacidades/biometrics",
+      "public": true,
+      "native": true,
+      "title": "Biometrics: identidade | Catalisa",
+      "titleLength": 33,
+      "descriptionLength": 149,
+      "wordCount": 302,
+      "internalLinks": 52,
+      "linksThroughRedirect": 46,
+      "missingAlt": 0,
+      "headings": 10,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/capacidades/bureaus",
+      "public": true,
+      "native": true,
+      "title": "Bureaus: dados | Catalisa",
+      "titleLength": 25,
+      "descriptionLength": 132,
+      "wordCount": 280,
+      "internalLinks": 50,
+      "linksThroughRedirect": 44,
+      "missingAlt": 0,
+      "headings": 8,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/capacidades/calculations-engine",
+      "public": true,
+      "native": true,
+      "title": "Calculations Engine: financeiro | Catalisa",
+      "titleLength": 42,
+      "descriptionLength": 129,
+      "wordCount": 286,
+      "internalLinks": 51,
+      "linksThroughRedirect": 45,
+      "missingAlt": 0,
+      "headings": 9,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/capacidades/calendar",
+      "public": true,
+      "native": true,
+      "title": "Calendar: produtividade | Catalisa",
+      "titleLength": 34,
+      "descriptionLength": 140,
+      "wordCount": 241,
+      "internalLinks": 50,
+      "linksThroughRedirect": 44,
+      "missingAlt": 0,
+      "headings": 8,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/capacidades/cms",
+      "public": true,
+      "native": true,
+      "title": "CMS: plataforma | Catalisa",
+      "titleLength": 26,
+      "descriptionLength": 127,
+      "wordCount": 268,
+      "internalLinks": 50,
+      "linksThroughRedirect": 44,
+      "missingAlt": 0,
+      "headings": 7,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/capacidades/commerce",
+      "public": true,
+      "native": true,
+      "title": "Commerce: comércio | Catalisa",
+      "titleLength": 29,
+      "descriptionLength": 119,
+      "wordCount": 212,
+      "internalLinks": 47,
+      "linksThroughRedirect": 41,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/capacidades/companies",
+      "public": true,
+      "native": true,
+      "title": "Companies: identidade | Catalisa",
+      "titleLength": 32,
+      "descriptionLength": 127,
+      "wordCount": 277,
+      "internalLinks": 50,
+      "linksThroughRedirect": 44,
+      "missingAlt": 0,
+      "headings": 7,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/capacidades/customers",
+      "public": true,
+      "native": true,
+      "title": "Customers: dados | Catalisa",
+      "titleLength": 27,
+      "descriptionLength": 144,
+      "wordCount": 235,
+      "internalLinks": 49,
+      "linksThroughRedirect": 43,
+      "missingAlt": 0,
+      "headings": 6,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/capacidades/data-extraction",
+      "public": true,
+      "native": true,
+      "title": "Data Extraction: inteligência | Catalisa",
+      "titleLength": 40,
+      "descriptionLength": 138,
+      "wordCount": 232,
+      "internalLinks": 48,
+      "linksThroughRedirect": 42,
+      "missingAlt": 0,
+      "headings": 5,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/capacidades/data-store",
+      "public": true,
+      "native": true,
+      "title": "Data Store: dados | Catalisa",
+      "titleLength": 28,
+      "descriptionLength": 134,
+      "wordCount": 280,
+      "internalLinks": 51,
+      "linksThroughRedirect": 45,
+      "missingAlt": 0,
+      "headings": 9,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/capacidades/decision-engine",
+      "public": true,
+      "native": true,
+      "title": "Decision Engine: decisão | Catalisa",
+      "titleLength": 35,
+      "descriptionLength": 130,
+      "wordCount": 292,
+      "internalLinks": 50,
+      "linksThroughRedirect": 44,
+      "missingAlt": 0,
+      "headings": 8,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/capacidades/decision-platform",
+      "public": true,
+      "native": true,
+      "title": "Decision Platform: decisão | Catalisa",
+      "titleLength": 37,
+      "descriptionLength": 130,
+      "wordCount": 262,
+      "internalLinks": 49,
+      "linksThroughRedirect": 43,
+      "missingAlt": 0,
+      "headings": 7,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/capacidades/document-template",
+      "public": true,
+      "native": true,
+      "title": "Document Template: documentos | Catalisa",
+      "titleLength": 40,
+      "descriptionLength": 147,
+      "wordCount": 285,
+      "internalLinks": 51,
+      "linksThroughRedirect": 45,
+      "missingAlt": 0,
+      "headings": 9,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/capacidades/e-signature",
+      "public": true,
+      "native": true,
+      "title": "E-Signature: documentos | Catalisa",
+      "titleLength": 34,
+      "descriptionLength": 144,
+      "wordCount": 283,
+      "internalLinks": 51,
+      "linksThroughRedirect": 45,
+      "missingAlt": 0,
+      "headings": 9,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/capacidades/email",
+      "public": true,
+      "native": true,
+      "title": "Email: comunicação | Catalisa",
+      "titleLength": 29,
+      "descriptionLength": 137,
+      "wordCount": 260,
+      "internalLinks": 50,
+      "linksThroughRedirect": 44,
+      "missingAlt": 0,
+      "headings": 7,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/capacidades/feature-flags",
+      "public": true,
+      "native": true,
+      "title": "Feature Flags: plataforma | Catalisa",
+      "titleLength": 36,
+      "descriptionLength": 146,
+      "wordCount": 298,
+      "internalLinks": 51,
+      "linksThroughRedirect": 45,
+      "missingAlt": 0,
+      "headings": 9,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/capacidades/file-storage",
+      "public": true,
+      "native": true,
+      "title": "File Storage: documentos | Catalisa",
+      "titleLength": 35,
+      "descriptionLength": 134,
+      "wordCount": 296,
+      "internalLinks": 53,
+      "linksThroughRedirect": 47,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/capacidades/iam",
+      "public": true,
+      "native": true,
+      "title": "IAM: identidade | Catalisa",
+      "titleLength": 26,
+      "descriptionLength": 139,
+      "wordCount": 289,
+      "internalLinks": 52,
+      "linksThroughRedirect": 46,
+      "missingAlt": 0,
+      "headings": 10,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/capacidades/meta-account",
+      "public": true,
+      "native": true,
+      "title": "Meta Account: comunicação | Catalisa",
+      "titleLength": 36,
+      "descriptionLength": 138,
+      "wordCount": 268,
+      "internalLinks": 50,
+      "linksThroughRedirect": 44,
+      "missingAlt": 0,
+      "headings": 7,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/capacidades/open-finance",
+      "public": true,
+      "native": true,
+      "title": "Open Finance: financeiro | Catalisa",
+      "titleLength": 35,
+      "descriptionLength": 139,
+      "wordCount": 277,
+      "internalLinks": 50,
+      "linksThroughRedirect": 44,
+      "missingAlt": 0,
+      "headings": 7,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/capacidades/payments",
+      "public": true,
+      "native": true,
+      "title": "Payments: financeiro | Catalisa",
+      "titleLength": 31,
+      "descriptionLength": 130,
+      "wordCount": 267,
+      "internalLinks": 50,
+      "linksThroughRedirect": 44,
+      "missingAlt": 0,
+      "headings": 7,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/capacidades/people",
+      "public": true,
+      "native": true,
+      "title": "People: identidade | Catalisa",
+      "titleLength": 29,
+      "descriptionLength": 129,
+      "wordCount": 282,
+      "internalLinks": 50,
+      "linksThroughRedirect": 44,
+      "missingAlt": 0,
+      "headings": 7,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/capacidades/pricing-engine",
+      "public": true,
+      "native": true,
+      "title": "Pricing Engine: financeiro | Catalisa",
+      "titleLength": 37,
+      "descriptionLength": 136,
+      "wordCount": 309,
+      "internalLinks": 51,
+      "linksThroughRedirect": 45,
+      "missingAlt": 0,
+      "headings": 9,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/capacidades/products",
+      "public": true,
+      "native": true,
+      "title": "Products: financeiro | Catalisa",
+      "titleLength": 31,
+      "descriptionLength": 141,
+      "wordCount": 264,
+      "internalLinks": 50,
+      "linksThroughRedirect": 44,
+      "missingAlt": 0,
+      "headings": 7,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/capacidades/rooms",
+      "public": true,
+      "native": true,
+      "title": "Rooms: comunicação | Catalisa",
+      "titleLength": 29,
+      "descriptionLength": 134,
+      "wordCount": 299,
+      "internalLinks": 53,
+      "linksThroughRedirect": 47,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/capacidades/service-attestations",
+      "public": true,
+      "native": true,
+      "title": "Service Attestations: documentos | Catalisa",
+      "titleLength": 43,
+      "descriptionLength": 139,
+      "wordCount": 278,
+      "internalLinks": 50,
+      "linksThroughRedirect": 44,
+      "missingAlt": 0,
+      "headings": 7,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/capacidades/slack",
+      "public": true,
+      "native": true,
+      "title": "Slack: comunicação | Catalisa",
+      "titleLength": 29,
+      "descriptionLength": 131,
+      "wordCount": 268,
+      "internalLinks": 50,
+      "linksThroughRedirect": 44,
+      "missingAlt": 0,
+      "headings": 7,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/capacidades/sso",
+      "public": true,
+      "native": true,
+      "title": "SSO: identidade | Catalisa",
+      "titleLength": 26,
+      "descriptionLength": 137,
+      "wordCount": 283,
+      "internalLinks": 50,
+      "linksThroughRedirect": 44,
+      "missingAlt": 0,
+      "headings": 7,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/capacidades/webhooks-engine",
+      "public": true,
+      "native": true,
+      "title": "Webhooks Engine: plataforma | Catalisa",
+      "titleLength": 38,
+      "descriptionLength": 148,
+      "wordCount": 310,
+      "internalLinks": 51,
+      "linksThroughRedirect": 45,
+      "missingAlt": 0,
+      "headings": 9,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/capacidades/wpp",
+      "public": true,
+      "native": true,
+      "title": "WPP: comunicação | Catalisa",
+      "titleLength": 27,
+      "descriptionLength": 142,
+      "wordCount": 267,
+      "internalLinks": 50,
+      "linksThroughRedirect": 44,
+      "missingAlt": 0,
+      "headings": 7,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/capacidades/wpp-business",
+      "public": true,
+      "native": true,
+      "title": "WPP Business: comunicação | Catalisa",
+      "titleLength": 36,
+      "descriptionLength": 144,
+      "wordCount": 294,
+      "internalLinks": 53,
+      "linksThroughRedirect": 47,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/agentes-ia-whatsapp",
+      "public": true,
+      "native": false,
+      "title": "Agentes de IA para WhatsApp Business | Catalisa",
+      "titleLength": 47,
+      "descriptionLength": 134,
+      "wordCount": 994,
+      "internalLinks": 27,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 10,
+      "schemaTypes": [
+        "Organization"
+      ]
+    },
+    {
+      "path": "/en/ai-agents-whatsapp",
+      "public": true,
+      "native": false,
+      "title": "AI agents for WhatsApp Business | Catalisa",
+      "titleLength": 42,
+      "descriptionLength": 135,
+      "wordCount": 929,
+      "internalLinks": 27,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 10,
+      "schemaTypes": [
+        "Organization"
+      ]
+    },
+    {
+      "path": "/determinismo",
+      "public": true,
+      "native": false,
+      "title": "Determinismo e regras de negócio em agentes de IA | Catalisa",
+      "titleLength": 60,
+      "descriptionLength": 126,
+      "wordCount": 401,
+      "internalLinks": 27,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 15,
+      "schemaTypes": [
+        "Organization"
+      ]
+    },
+    {
+      "path": "/en/determinism",
+      "public": true,
+      "native": false,
+      "title": "Determinism and business rules for AI agents | Catalisa",
+      "titleLength": 55,
+      "descriptionLength": 122,
+      "wordCount": 390,
+      "internalLinks": 27,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 15,
+      "schemaTypes": [
+        "Organization"
+      ]
+    },
+    {
+      "path": "/en",
+      "public": true,
+      "native": false,
+      "title": "Catalisa | AI-Powered WhatsApp Automation Platform",
+      "titleLength": 50,
+      "descriptionLength": 129,
+      "wordCount": 1898,
+      "internalLinks": 34,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 24,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "SoftwareApplication",
+        "SiteNavigationElement",
+        "FAQPage"
+      ]
+    },
+    {
+      "path": "/en/studio",
+      "public": true,
+      "native": false,
+      "title": "Catalisa Studio | Build AI Agents & Automations",
+      "titleLength": 47,
+      "descriptionLength": 130,
+      "wordCount": 436,
+      "internalLinks": 28,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 21,
+      "schemaTypes": [
+        "Organization",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/ai-agents",
+      "public": true,
+      "native": false,
+      "title": "Catalisa Agents | AI Agents for WhatsApp 24/7",
+      "titleLength": 45,
+      "descriptionLength": 141,
+      "wordCount": 351,
+      "internalLinks": 28,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 18,
+      "schemaTypes": [
+        "Organization",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/apps",
+      "public": true,
+      "native": false,
+      "title": "Catalisa Apps | Enterprise Backends & APIs with AI",
+      "titleLength": 50,
+      "descriptionLength": 172,
+      "wordCount": 556,
+      "internalLinks": 28,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 25,
+      "schemaTypes": [
+        "Organization",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/building-blocks",
+      "public": true,
+      "native": false,
+      "title": "Catalisa Blocks | 60+ Modules for WhatsApp Automation",
+      "titleLength": 53,
+      "descriptionLength": 138,
+      "wordCount": 468,
+      "internalLinks": 28,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 20,
+      "schemaTypes": [
+        "Organization",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/workflows",
+      "public": true,
+      "native": false,
+      "title": "Catalisa Workflows | Visual AI Automation, No Code",
+      "titleLength": 50,
+      "descriptionLength": 138,
+      "wordCount": 352,
+      "internalLinks": 26,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 16,
+      "schemaTypes": [
+        "Organization",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/fintech",
+      "public": true,
+      "native": false,
+      "title": "Catalisa para Fintechs | Automação WhatsApp com IA",
+      "titleLength": 50,
+      "descriptionLength": 139,
+      "wordCount": 427,
+      "internalLinks": 26,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 15,
+      "schemaTypes": [
+        "Organization"
+      ]
+    },
+    {
+      "path": "/en/fintech",
+      "public": true,
+      "native": false,
+      "title": "Catalisa for Fintechs | WhatsApp Automation with AI",
+      "titleLength": 51,
+      "descriptionLength": 133,
+      "wordCount": 421,
+      "internalLinks": 26,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 15,
+      "schemaTypes": [
+        "Organization"
+      ]
+    },
+    {
+      "path": "/en/banking",
+      "public": true,
+      "native": false,
+      "title": "Catalisa Banking | WhatsApp AI & Open Finance",
+      "titleLength": 45,
+      "descriptionLength": 117,
+      "wordCount": 457,
+      "internalLinks": 26,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 15,
+      "schemaTypes": [
+        "Organization"
+      ]
+    },
+    {
+      "path": "/seguros",
+      "public": true,
+      "native": false,
+      "title": "Catalisa Seguros | Automação WhatsApp para Seguradoras",
+      "titleLength": 54,
+      "descriptionLength": 122,
+      "wordCount": 488,
+      "internalLinks": 26,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 17,
+      "schemaTypes": [
+        "Organization"
+      ]
+    },
+    {
+      "path": "/en/insurance",
+      "public": true,
+      "native": false,
+      "title": "Catalisa Insurance | WhatsApp Automation for Insurers",
+      "titleLength": 53,
+      "descriptionLength": 122,
+      "wordCount": 473,
+      "internalLinks": 26,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 17,
+      "schemaTypes": [
+        "Organization"
+      ]
+    },
+    {
+      "path": "/varejo",
+      "public": true,
+      "native": false,
+      "title": "Catalisa Varejo | Automação WhatsApp com IA para Lojas",
+      "titleLength": 54,
+      "descriptionLength": 143,
+      "wordCount": 420,
+      "internalLinks": 26,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 15,
+      "schemaTypes": [
+        "Organization"
+      ]
+    },
+    {
+      "path": "/en/retail",
+      "public": true,
+      "native": false,
+      "title": "Catalisa Retail | WhatsApp Automation with AI",
+      "titleLength": 45,
+      "descriptionLength": 126,
+      "wordCount": 406,
+      "internalLinks": 26,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 15,
+      "schemaTypes": [
+        "Organization"
+      ]
+    },
+    {
+      "path": "/startups",
+      "public": true,
+      "native": false,
+      "title": "Catalisa para Startups | Escale com WhatsApp e IA",
+      "titleLength": 49,
+      "descriptionLength": 135,
+      "wordCount": 428,
+      "internalLinks": 26,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 15,
+      "schemaTypes": [
+        "Organization"
+      ]
+    },
+    {
+      "path": "/en/startups",
+      "public": true,
+      "native": false,
+      "title": "Catalisa for Startups | Scale with WhatsApp & AI",
+      "titleLength": 48,
+      "descriptionLength": 121,
+      "wordCount": 416,
+      "internalLinks": 26,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 15,
+      "schemaTypes": [
+        "Organization"
+      ]
+    },
+    {
+      "path": "/casos-de-uso",
+      "public": true,
+      "native": false,
+      "title": "Catalisa Playbooks | 30+ Casos de Uso com IA",
+      "titleLength": 44,
+      "descriptionLength": 133,
+      "wordCount": 1299,
+      "internalLinks": 77,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 5,
+      "schemaTypes": [
+        "Organization",
+        "CollectionPage"
+      ]
+    },
+    {
+      "path": "/en/use-cases",
+      "public": true,
+      "native": false,
+      "title": "Catalisa Playbooks | 30+ WhatsApp AI Use Cases",
+      "titleLength": 46,
+      "descriptionLength": 137,
+      "wordCount": 1260,
+      "internalLinks": 77,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 5,
+      "schemaTypes": [
+        "Organization",
+        "CollectionPage"
+      ]
+    },
+    {
+      "path": "/en/contact",
+      "public": true,
+      "native": false,
+      "title": "Catalisa Contact | Talk to Our Team",
+      "titleLength": 35,
+      "descriptionLength": 135,
+      "wordCount": 155,
+      "internalLinks": 26,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 2,
+      "schemaTypes": [
+        "Organization"
+      ]
+    },
+    {
+      "path": "/demo",
+      "public": true,
+      "native": false,
+      "title": "Catalisa Demo | Veja a IA Criando Automações ao Vivo",
+      "titleLength": 52,
+      "descriptionLength": 133,
+      "wordCount": 157,
+      "internalLinks": 28,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "Organization"
+      ]
+    },
+    {
+      "path": "/en/demo",
+      "public": true,
+      "native": false,
+      "title": "Catalisa Demo | Watch AI Build Automations Live",
+      "titleLength": 47,
+      "descriptionLength": 123,
+      "wordCount": 163,
+      "internalLinks": 28,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "Organization"
+      ]
+    },
+    {
+      "path": "/politica-privacidade",
+      "public": true,
+      "native": false,
+      "title": "Catalisa | Política de Privacidade",
+      "titleLength": 34,
+      "descriptionLength": 134,
+      "wordCount": 2625,
+      "internalLinks": 25,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 26,
+      "schemaTypes": [
+        "Organization"
+      ]
+    },
+    {
+      "path": "/en/privacy-policy",
+      "public": true,
+      "native": false,
+      "title": "Catalisa | Privacy Policy",
+      "titleLength": 25,
+      "descriptionLength": 136,
+      "wordCount": 2482,
+      "internalLinks": 25,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 26,
+      "schemaTypes": [
+        "Organization"
+      ]
+    },
+    {
+      "path": "/en/press-kit",
+      "public": true,
+      "native": false,
+      "title": "Catalisa Press Kit | Brand Assets & Resources",
+      "titleLength": 45,
+      "descriptionLength": 135,
+      "wordCount": 320,
+      "internalLinks": 74,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 13,
+      "schemaTypes": [
+        "Organization"
+      ]
+    },
+    {
+      "path": "/termos",
+      "public": true,
+      "native": false,
+      "title": "Catalisa | Termos de Uso",
+      "titleLength": 24,
+      "descriptionLength": 132,
+      "wordCount": 2654,
+      "internalLinks": 25,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 19,
+      "schemaTypes": [
+        "Organization"
+      ]
+    },
+    {
+      "path": "/en/terms",
+      "public": true,
+      "native": false,
+      "title": "Catalisa | Terms of Service",
+      "titleLength": 27,
+      "descriptionLength": 122,
+      "wordCount": 2639,
+      "internalLinks": 25,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 19,
+      "schemaTypes": [
+        "Organization"
+      ]
+    },
+    {
+      "path": "/seguranca",
+      "public": true,
+      "native": false,
+      "title": "Catalisa Segurança | Proteção de Nível Bancário",
+      "titleLength": 47,
+      "descriptionLength": 155,
+      "wordCount": 308,
+      "internalLinks": 25,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "Organization"
+      ]
+    },
+    {
+      "path": "/en/security",
+      "public": true,
+      "native": false,
+      "title": "Catalisa Security | Banking-Grade Data Protection",
+      "titleLength": 49,
+      "descriptionLength": 152,
+      "wordCount": 263,
+      "internalLinks": 25,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "Organization"
+      ]
+    },
+    {
+      "path": "/transparencia-ia",
+      "public": true,
+      "native": false,
+      "title": "Catalisa | Transparência em IA e Uso Responsável",
+      "titleLength": 48,
+      "descriptionLength": 153,
+      "wordCount": 417,
+      "internalLinks": 25,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 19,
+      "schemaTypes": [
+        "Organization"
+      ]
+    },
+    {
+      "path": "/en/ai-transparency",
+      "public": true,
+      "native": false,
+      "title": "Catalisa | AI Transparency & Responsible Use",
+      "titleLength": 44,
+      "descriptionLength": 137,
+      "wordCount": 369,
+      "internalLinks": 25,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 19,
+      "schemaTypes": [
+        "Organization"
+      ]
+    },
+    {
+      "path": "/como-funciona",
+      "public": true,
+      "native": false,
+      "title": "Catalisa | Como Funciona em 3 Passos, Zero Código",
+      "titleLength": 49,
+      "descriptionLength": 133,
+      "wordCount": 186,
+      "internalLinks": 27,
+      "linksThroughRedirect": 6,
+      "missingAlt": 0,
+      "headings": 7,
+      "schemaTypes": [
+        "Organization"
+      ]
+    },
+    {
+      "path": "/en/how-it-works",
+      "public": true,
+      "native": false,
+      "title": "Catalisa | How It Works in 3 Steps, Zero Code",
+      "titleLength": 45,
+      "descriptionLength": 139,
+      "wordCount": 183,
+      "internalLinks": 27,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 7,
+      "schemaTypes": [
+        "Organization"
+      ]
+    },
+    {
+      "path": "/integracoes/whatsapp",
+      "public": true,
+      "native": false,
+      "title": "Catalisa Integração | Cloud API vs QR Code WhatsApp",
+      "titleLength": 51,
+      "descriptionLength": 120,
+      "wordCount": 435,
+      "internalLinks": 27,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 7,
+      "schemaTypes": [
+        "Organization"
+      ]
+    },
+    {
+      "path": "/en/integrations/whatsapp",
+      "public": true,
+      "native": false,
+      "title": "Catalisa Integration | Cloud API vs QR Code WhatsApp",
+      "titleLength": 52,
+      "descriptionLength": 126,
+      "wordCount": 400,
+      "internalLinks": 27,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 7,
+      "schemaTypes": [
+        "Organization"
+      ]
+    },
+    {
+      "path": "/insights",
+      "public": true,
+      "native": false,
+      "title": "Catalisa Insights | Cases de IA e WhatsApp Business",
+      "titleLength": 51,
+      "descriptionLength": 168,
+      "wordCount": 675,
+      "internalLinks": 55,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 33,
+      "schemaTypes": [
+        "Organization",
+        "CollectionPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/en/insights",
+      "public": true,
+      "native": false,
+      "title": "Catalisa Insights | AI & WhatsApp Business Cases",
+      "titleLength": 48,
+      "descriptionLength": 165,
+      "wordCount": 654,
+      "internalLinks": 55,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 33,
+      "schemaTypes": [
+        "Organization",
+        "CollectionPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/insights/all",
+      "public": true,
+      "native": false,
+      "title": "Catalisa Insights | Todos os Cases e Análises",
+      "titleLength": 45,
+      "descriptionLength": 128,
+      "wordCount": 1025,
+      "internalLinks": 53,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 29,
+      "schemaTypes": [
+        "Organization",
+        "CollectionPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/en/insights/all",
+      "public": true,
+      "native": false,
+      "title": "Catalisa Insights | All Cases & Analysis",
+      "titleLength": 40,
+      "descriptionLength": 112,
+      "wordCount": 1096,
+      "internalLinks": 53,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 29,
+      "schemaTypes": [
+        "Organization",
+        "CollectionPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/vtex-day-2026",
+      "public": true,
+      "native": false,
+      "title": "Catalisa no VTEX Day 2026 | Atendimento VTEX no WhatsApp",
+      "titleLength": 56,
+      "descriptionLength": 141,
+      "wordCount": 524,
+      "internalLinks": 26,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 22,
+      "schemaTypes": [
+        "Organization"
+      ]
+    },
+    {
+      "path": "/insights/boticario-assistente-ia-conversao-ecommerce",
+      "public": true,
+      "native": false,
+      "title": "Boticário: +46% Conversão com IA | Catalisa",
+      "titleLength": 43,
+      "descriptionLength": 146,
+      "wordCount": 676,
+      "internalLinks": 34,
+      "linksThroughRedirect": 6,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/en/insights/boticario-assistente-ia-conversao-ecommerce",
+      "public": true,
+      "native": false,
+      "title": "Boticário: +46% E-commerce Conversion with AI | Catalisa Insights",
+      "titleLength": 65,
+      "descriptionLength": 127,
+      "wordCount": 657,
+      "internalLinks": 34,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/insights/ifood-comprai-compras-mercado-whatsapp",
+      "public": true,
+      "native": false,
+      "title": "iFood Compr.AI: 3-4x Conversão | Catalisa",
+      "titleLength": 41,
+      "descriptionLength": 143,
+      "wordCount": 559,
+      "internalLinks": 34,
+      "linksThroughRedirect": 5,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/en/insights/ifood-comprai-compras-mercado-whatsapp",
+      "public": true,
+      "native": false,
+      "title": "iFood Compr.AI: 3-4x WhatsApp Conversion with AI | Catalisa Insights",
+      "titleLength": 68,
+      "descriptionLength": 120,
+      "wordCount": 637,
+      "internalLinks": 34,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/insights/ifood-gerente-virtual-financeiro-whatsapp",
+      "public": true,
+      "native": false,
+      "title": "iFood Gerente: IA Financeira WhatsApp | Catalisa",
+      "titleLength": 48,
+      "descriptionLength": 115,
+      "wordCount": 543,
+      "internalLinks": 34,
+      "linksThroughRedirect": 5,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/en/insights/ifood-gerente-virtual-financeiro-whatsapp",
+      "public": true,
+      "native": false,
+      "title": "iFood Gerente: Financial AI Agent on WhatsApp | Catalisa Insights",
+      "titleLength": 65,
+      "descriptionLength": 130,
+      "wordCount": 616,
+      "internalLinks": 34,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/insights/ifood-cris-mentora-ia-restaurantes",
+      "public": true,
+      "native": false,
+      "title": "iFood Cris: IA Mentora Restaurantes | Catalisa",
+      "titleLength": 46,
+      "descriptionLength": 137,
+      "wordCount": 532,
+      "internalLinks": 34,
+      "linksThroughRedirect": 6,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/en/insights/ifood-cris-mentora-ia-restaurantes",
+      "public": true,
+      "native": false,
+      "title": "iFood Cris: AI Mentor for 10K Restaurants | Catalisa Insights",
+      "titleLength": 61,
+      "descriptionLength": 136,
+      "wordCount": 623,
+      "internalLinks": 34,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/insights/carrefour-ia-atendimento-humanizado",
+      "public": true,
+      "native": false,
+      "title": "Carrefour IA Humanizada: 4h→40min | Catalisa",
+      "titleLength": 44,
+      "descriptionLength": 146,
+      "wordCount": 570,
+      "internalLinks": 33,
+      "linksThroughRedirect": 5,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/en/insights/carrefour-ia-atendimento-humanizado",
+      "public": true,
+      "native": false,
+      "title": "Carrefour: 4h to 40min Response with Humanized AI | Catalisa Insights",
+      "titleLength": 69,
+      "descriptionLength": 125,
+      "wordCount": 688,
+      "internalLinks": 33,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/insights/lotte-homeshopping-ia-reducao-40-carga-atendimento",
+      "public": true,
+      "native": false,
+      "title": "Lotte: -40% Carga Atendimento com IA | Catalisa",
+      "titleLength": 47,
+      "descriptionLength": 126,
+      "wordCount": 533,
+      "internalLinks": 34,
+      "linksThroughRedirect": 6,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/en/insights/lotte-homeshopping-ia-reducao-40-carga-atendimento",
+      "public": true,
+      "native": false,
+      "title": "Lotte Homeshopping: -40% Agent Workload with AI | Catalisa Insights",
+      "titleLength": 67,
+      "descriptionLength": 128,
+      "wordCount": 605,
+      "internalLinks": 34,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/insights/synthesia-intercom-fin-ia-suporte-escala",
+      "public": true,
+      "native": false,
+      "title": "Synthesia: 87% Self-Service com IA | Catalisa",
+      "titleLength": 45,
+      "descriptionLength": 111,
+      "wordCount": 534,
+      "internalLinks": 33,
+      "linksThroughRedirect": 6,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/en/insights/synthesia-intercom-fin-ia-suporte-escala",
+      "public": true,
+      "native": false,
+      "title": "Synthesia: 87% Self-Service with Fin AI | Catalisa Insights",
+      "titleLength": 59,
+      "descriptionLength": 130,
+      "wordCount": 655,
+      "internalLinks": 33,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/insights/synthesia-fin-ai-spike-690-suporte",
+      "public": true,
+      "native": false,
+      "title": "Synthesia: -96% Tempo Resolução IA | Catalisa",
+      "titleLength": 45,
+      "descriptionLength": 125,
+      "wordCount": 533,
+      "internalLinks": 33,
+      "linksThroughRedirect": 5,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/en/insights/synthesia-fin-ai-spike-690-suporte",
+      "public": true,
+      "native": false,
+      "title": "Synthesia: 96% Faster Resolution with Fin AI | Catalisa Insights",
+      "titleLength": 64,
+      "descriptionLength": 131,
+      "wordCount": 667,
+      "internalLinks": 33,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/insights/gupshup-whatsapp-roi-270-forrester",
+      "public": true,
+      "native": false,
+      "title": "Forrester: 270% ROI WhatsApp | Catalisa",
+      "titleLength": 39,
+      "descriptionLength": 135,
+      "wordCount": 566,
+      "internalLinks": 33,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/en/insights/gupshup-whatsapp-roi-270-forrester",
+      "public": true,
+      "native": false,
+      "title": "Forrester: 270% ROI with Conversational WhatsApp | Catalisa Insights",
+      "titleLength": 68,
+      "descriptionLength": 127,
+      "wordCount": 626,
+      "internalLinks": 33,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/insights/magalu-lu-vendedora-ia-whatsapp",
+      "public": true,
+      "native": false,
+      "title": "Lu Magalu: 3x Conversão WhatsApp IA | Catalisa",
+      "titleLength": 46,
+      "descriptionLength": 131,
+      "wordCount": 596,
+      "internalLinks": 35,
+      "linksThroughRedirect": 5,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/en/insights/magalu-lu-vendedora-ia-whatsapp",
+      "public": true,
+      "native": false,
+      "title": "Lu do Magalu: 3x WhatsApp Conversion with AI | Catalisa Insights",
+      "titleLength": 64,
+      "descriptionLength": 138,
+      "wordCount": 689,
+      "internalLinks": 35,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/insights/bancos-brasileiros-ia-whatsapp-bradesco-itau-nubank",
+      "public": true,
+      "native": false,
+      "title": "Bradesco, Itaú, Nubank: IA no WhatsApp | Catalisa",
+      "titleLength": 49,
+      "descriptionLength": 169,
+      "wordCount": 753,
+      "internalLinks": 34,
+      "linksThroughRedirect": 6,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/en/insights/bancos-brasileiros-ia-whatsapp-bradesco-itau-nubank",
+      "public": true,
+      "native": false,
+      "title": "Bradesco, Itaú, Nubank: AI on WhatsApp | Catalisa",
+      "titleLength": 49,
+      "descriptionLength": 154,
+      "wordCount": 703,
+      "internalLinks": 34,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/insights/banco-bv-agentes-ia-reducao-rechamadas",
+      "public": true,
+      "native": false,
+      "title": "Banco BV: -73% Rechamadas com IA | Catalisa",
+      "titleLength": 43,
+      "descriptionLength": 118,
+      "wordCount": 634,
+      "internalLinks": 34,
+      "linksThroughRedirect": 6,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/en/insights/banco-bv-agentes-ia-reducao-rechamadas",
+      "public": true,
+      "native": false,
+      "title": "Banco BV: -73% Repeat Calls with AI | Catalisa",
+      "titleLength": 46,
+      "descriptionLength": 122,
+      "wordCount": 615,
+      "internalLinks": 34,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/insights/klarna-ia-40m-economia-contraponto",
+      "public": true,
+      "native": false,
+      "title": "Klarna: US$40M com IA e a Reversão | Catalisa",
+      "titleLength": 45,
+      "descriptionLength": 133,
+      "wordCount": 683,
+      "internalLinks": 33,
+      "linksThroughRedirect": 5,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/en/insights/klarna-ia-40m-economia-contraponto",
+      "public": true,
+      "native": false,
+      "title": "Klarna: US$40M with AI and the Reversal | Catalisa",
+      "titleLength": 50,
+      "descriptionLength": 125,
+      "wordCount": 641,
+      "internalLinks": 33,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/insights/bancos-globais-ia-whatsapp-dbs-hdfc-absa",
+      "public": true,
+      "native": false,
+      "title": "Bancos Globais e IA: DBS, HDFC, Absa | Catalisa",
+      "titleLength": 47,
+      "descriptionLength": 132,
+      "wordCount": 724,
+      "internalLinks": 34,
+      "linksThroughRedirect": 6,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/en/insights/bancos-globais-ia-whatsapp-dbs-hdfc-absa",
+      "public": true,
+      "native": false,
+      "title": "Global Banks and AI: DBS, HDFC, Absa | Catalisa",
+      "titleLength": 47,
+      "descriptionLength": 136,
+      "wordCount": 728,
+      "internalLinks": 34,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/insights/lemonade-sinistro-2-segundos-insurtech",
+      "public": true,
+      "native": false,
+      "title": "Lemonade: Sinistro em 2s com IA | Catalisa",
+      "titleLength": 42,
+      "descriptionLength": 128,
+      "wordCount": 640,
+      "internalLinks": 34,
+      "linksThroughRedirect": 5,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/en/insights/lemonade-sinistro-2-segundos-insurtech",
+      "public": true,
+      "native": false,
+      "title": "Lemonade: 2-Second Claim with AI | Catalisa",
+      "titleLength": 43,
+      "descriptionLength": 111,
+      "wordCount": 622,
+      "internalLinks": 34,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/insights/picpay-btg-pix-whatsapp-voz-imagem",
+      "public": true,
+      "native": false,
+      "title": "PicPay e BTG: Pix Multimodal WhatsApp | Catalisa",
+      "titleLength": 48,
+      "descriptionLength": 125,
+      "wordCount": 649,
+      "internalLinks": 34,
+      "linksThroughRedirect": 5,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/en/insights/picpay-btg-pix-whatsapp-voz-imagem",
+      "public": true,
+      "native": false,
+      "title": "PicPay and BTG: Multimodal Pix WhatsApp | Catalisa",
+      "titleLength": 50,
+      "descriptionLength": 130,
+      "wordCount": 661,
+      "internalLinks": 34,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/insights/padrao-3x-conversao-whatsapp-vs-apps",
+      "public": true,
+      "native": false,
+      "title": "Padrão 3x: Conversão WhatsApp vs Apps | Catalisa",
+      "titleLength": 48,
+      "descriptionLength": 124,
+      "wordCount": 803,
+      "internalLinks": 34,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/en/insights/padrao-3x-conversao-whatsapp-vs-apps",
+      "public": true,
+      "native": false,
+      "title": "3x Pattern: WhatsApp vs App Conversion | Catalisa",
+      "titleLength": 49,
+      "descriptionLength": 115,
+      "wordCount": 792,
+      "internalLinks": 34,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/insights/agentes-vs-chatbots-evolucao-faq-transacoes",
+      "public": true,
+      "native": false,
+      "title": "Agentes vs Chatbots: A Evolução | Catalisa",
+      "titleLength": 42,
+      "descriptionLength": 127,
+      "wordCount": 743,
+      "internalLinks": 34,
+      "linksThroughRedirect": 6,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/en/insights/agentes-vs-chatbots-evolucao-faq-transacoes",
+      "public": true,
+      "native": false,
+      "title": "Agents vs Chatbots: The Evolution | Catalisa",
+      "titleLength": 44,
+      "descriptionLength": 135,
+      "wordCount": 832,
+      "internalLinks": 34,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/insights/ia-financeiro-cobranca-investimentos-mapa",
+      "public": true,
+      "native": false,
+      "title": "IA no Financeiro: Mapa Completo | Catalisa",
+      "titleLength": 42,
+      "descriptionLength": 135,
+      "wordCount": 730,
+      "internalLinks": 34,
+      "linksThroughRedirect": 5,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/en/insights/ia-financeiro-cobranca-investimentos-mapa",
+      "public": true,
+      "native": false,
+      "title": "AI in Finance: Complete Map | Catalisa",
+      "titleLength": 38,
+      "descriptionLength": 146,
+      "wordCount": 796,
+      "internalLinks": 34,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/insights/90-porcento-empresas-mais-clientes-whatsapp",
+      "public": true,
+      "native": false,
+      "title": "90% Viram Mais Clientes com WhatsApp | Catalisa",
+      "titleLength": 47,
+      "descriptionLength": 131,
+      "wordCount": 776,
+      "internalLinks": 34,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/en/insights/90-porcento-empresas-mais-clientes-whatsapp",
+      "public": true,
+      "native": false,
+      "title": "90% Saw More Customers with WhatsApp | Catalisa",
+      "titleLength": 47,
+      "descriptionLength": 129,
+      "wordCount": 890,
+      "internalLinks": 34,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/insights/ia-conversacional-varejo-brasileiro",
+      "public": true,
+      "native": false,
+      "title": "IA no Varejo Brasileiro: Cases | Catalisa",
+      "titleLength": 41,
+      "descriptionLength": 130,
+      "wordCount": 674,
+      "internalLinks": 33,
+      "linksThroughRedirect": 5,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/en/insights/ia-conversacional-varejo-brasileiro",
+      "public": true,
+      "native": false,
+      "title": "Conversational AI in Brazilian Retail: Cases and Analysis | Catalisa Insights",
+      "titleLength": 77,
+      "descriptionLength": 139,
+      "wordCount": 770,
+      "internalLinks": 33,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/insights/whatsapp-plataforma-vendas-conversational-commerce",
+      "public": true,
+      "native": false,
+      "title": "WhatsApp Vendas: Futuro do Commerce | Catalisa",
+      "titleLength": 46,
+      "descriptionLength": 128,
+      "wordCount": 624,
+      "internalLinks": 33,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/en/insights/whatsapp-plataforma-vendas-conversational-commerce",
+      "public": true,
+      "native": false,
+      "title": "WhatsApp as a Sales Platform: Conversational Commerce | Catalisa Insights",
+      "titleLength": 73,
+      "descriptionLength": 146,
+      "wordCount": 748,
+      "internalLinks": 33,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/insights/roi-ia-customer-experience-dados",
+      "public": true,
+      "native": false,
+      "title": "ROI IA em CX: Dados Reais | Catalisa",
+      "titleLength": 36,
+      "descriptionLength": 135,
+      "wordCount": 626,
+      "internalLinks": 33,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/en/insights/roi-ia-customer-experience-dados",
+      "public": true,
+      "native": false,
+      "title": "ROI of AI in Customer Experience: Real Data | Catalisa Insights",
+      "titleLength": 63,
+      "descriptionLength": 150,
+      "wordCount": 801,
+      "internalLinks": 33,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/insights/escalar-atendimento-sem-contratar-ia",
+      "public": true,
+      "native": false,
+      "title": "Escalar Suporte com IA sem Contratar | Catalisa",
+      "titleLength": 47,
+      "descriptionLength": 120,
+      "wordCount": 591,
+      "internalLinks": 33,
+      "linksThroughRedirect": 6,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/en/insights/escalar-atendimento-sem-contratar-ia",
+      "public": true,
+      "native": false,
+      "title": "Scaling Customer Service with AI Without Hiring | Catalisa Insights",
+      "titleLength": 67,
+      "descriptionLength": 150,
+      "wordCount": 817,
+      "internalLinks": 33,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/insights/agentes-ia-whatsapp-automacao-inteligencia",
+      "public": true,
+      "native": false,
+      "title": "Agentes IA WhatsApp: Tipos e Cases | Catalisa",
+      "titleLength": 45,
+      "descriptionLength": 140,
+      "wordCount": 594,
+      "internalLinks": 34,
+      "linksThroughRedirect": 5,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/en/insights/agentes-ia-whatsapp-automacao-inteligencia",
+      "public": true,
+      "native": false,
+      "title": "AI Agents on WhatsApp: Automation to Intelligence | Catalisa Insights",
+      "titleLength": 69,
+      "descriptionLength": 146,
+      "wordCount": 894,
+      "internalLinks": 34,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/insights/ia-humanizada-equilibrio-automacao-empatia",
+      "public": true,
+      "native": false,
+      "title": "IA Humanizada: Automação + Empatia | Catalisa",
+      "titleLength": 45,
+      "descriptionLength": 136,
+      "wordCount": 633,
+      "internalLinks": 33,
+      "linksThroughRedirect": 5,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/en/insights/ia-humanizada-equilibrio-automacao-empatia",
+      "public": true,
+      "native": false,
+      "title": "Humanized AI: Automation and Empathy Balance | Catalisa Insights",
+      "titleLength": 64,
+      "descriptionLength": 132,
+      "wordCount": 930,
+      "internalLinks": 33,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/insights/foodtech-ia-transformacao-conversacional",
+      "public": true,
+      "native": false,
+      "title": "Food-tech e IA Conversacional | Catalisa",
+      "titleLength": 40,
+      "descriptionLength": 140,
+      "wordCount": 619,
+      "internalLinks": 33,
+      "linksThroughRedirect": 6,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/en/insights/foodtech-ia-transformacao-conversacional",
+      "public": true,
+      "native": false,
+      "title": "Food-tech and AI: Leading Conversational Innovation | Catalisa Insights",
+      "titleLength": 71,
+      "descriptionLength": 151,
+      "wordCount": 880,
+      "internalLinks": 33,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 11,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/playbooks/sdr-automatizado",
+      "public": true,
+      "native": false,
+      "title": "SDR Automatizado | Catalisa",
+      "titleLength": 27,
+      "descriptionLength": 113,
+      "wordCount": 130,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/sdr-automatizado",
+      "public": true,
+      "native": false,
+      "title": "Automated SDR | Catalisa",
+      "titleLength": 24,
+      "descriptionLength": 118,
+      "wordCount": 127,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/follow-up-inteligente",
+      "public": true,
+      "native": false,
+      "title": "Follow-up Inteligente | Catalisa",
+      "titleLength": 32,
+      "descriptionLength": 112,
+      "wordCount": 126,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/follow-up-inteligente",
+      "public": true,
+      "native": false,
+      "title": "Smart Follow-up | Catalisa",
+      "titleLength": 26,
+      "descriptionLength": 113,
+      "wordCount": 127,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/qualificacao-leads",
+      "public": true,
+      "native": false,
+      "title": "Qualificação de Leads SaaS | Catalisa",
+      "titleLength": 37,
+      "descriptionLength": 109,
+      "wordCount": 131,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/qualificacao-leads",
+      "public": true,
+      "native": false,
+      "title": "SaaS Lead Qualification | Catalisa",
+      "titleLength": 34,
+      "descriptionLength": 102,
+      "wordCount": 127,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/atendimento-imobiliario",
+      "public": true,
+      "native": false,
+      "title": "Atendimento Imobiliário | Catalisa",
+      "titleLength": 34,
+      "descriptionLength": 110,
+      "wordCount": 124,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/atendimento-imobiliario",
+      "public": true,
+      "native": false,
+      "title": "Real Estate Assistant | Catalisa",
+      "titleLength": 32,
+      "descriptionLength": 108,
+      "wordCount": 128,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/suporte-24-7",
+      "public": true,
+      "native": false,
+      "title": "Suporte 24/7 | Catalisa",
+      "titleLength": 23,
+      "descriptionLength": 125,
+      "wordCount": 125,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/suporte-24-7",
+      "public": true,
+      "native": false,
+      "title": "24/7 Support | Catalisa",
+      "titleLength": 23,
+      "descriptionLength": 112,
+      "wordCount": 120,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/suporte-tecnico-ia",
+      "public": true,
+      "native": false,
+      "title": "Suporte Técnico com IA | Catalisa",
+      "titleLength": 33,
+      "descriptionLength": 108,
+      "wordCount": 129,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/suporte-tecnico-ia",
+      "public": true,
+      "native": false,
+      "title": "AI Tech Support | Catalisa",
+      "titleLength": 26,
+      "descriptionLength": 101,
+      "wordCount": 121,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/pos-venda-ecommerce",
+      "public": true,
+      "native": false,
+      "title": "Pós-venda E-commerce | Catalisa",
+      "titleLength": 31,
+      "descriptionLength": 108,
+      "wordCount": 126,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/pos-venda-ecommerce",
+      "public": true,
+      "native": false,
+      "title": "E-commerce Post-Sale | Catalisa",
+      "titleLength": 31,
+      "descriptionLength": 100,
+      "wordCount": 119,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/atendimento-bancario",
+      "public": true,
+      "native": false,
+      "title": "Atendimento Bancário 24/7 | Catalisa",
+      "titleLength": 36,
+      "descriptionLength": 111,
+      "wordCount": 127,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/atendimento-bancario",
+      "public": true,
+      "native": false,
+      "title": "Banking Support 24/7 | Catalisa",
+      "titleLength": 31,
+      "descriptionLength": 105,
+      "wordCount": 120,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/atendimento-segurado",
+      "public": true,
+      "native": false,
+      "title": "Atendimento ao Segurado 24/7 | Catalisa",
+      "titleLength": 39,
+      "descriptionLength": 115,
+      "wordCount": 129,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/atendimento-segurado",
+      "public": true,
+      "native": false,
+      "title": "Insurance Support 24/7 | Catalisa",
+      "titleLength": 33,
+      "descriptionLength": 99,
+      "wordCount": 119,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/cobranca-inteligente",
+      "public": true,
+      "native": false,
+      "title": "Cobrança Inteligente | Catalisa",
+      "titleLength": 31,
+      "descriptionLength": 122,
+      "wordCount": 136,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/cobranca-inteligente",
+      "public": true,
+      "native": false,
+      "title": "Smart Collections | Catalisa",
+      "titleLength": 28,
+      "descriptionLength": 120,
+      "wordCount": 125,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/originacao-credito",
+      "public": true,
+      "native": false,
+      "title": "Originação de Crédito | Catalisa",
+      "titleLength": 32,
+      "descriptionLength": 132,
+      "wordCount": 151,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/originacao-credito",
+      "public": true,
+      "native": false,
+      "title": "Credit Origination | Catalisa",
+      "titleLength": 29,
+      "descriptionLength": 139,
+      "wordCount": 136,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/simulacao-credito",
+      "public": true,
+      "native": false,
+      "title": "Simulação de Crédito | Catalisa",
+      "titleLength": 31,
+      "descriptionLength": 106,
+      "wordCount": 130,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/simulacao-credito",
+      "public": true,
+      "native": false,
+      "title": "Credit Simulation | Catalisa",
+      "titleLength": 28,
+      "descriptionLength": 118,
+      "wordCount": 124,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/renegociacao-dividas",
+      "public": true,
+      "native": false,
+      "title": "Renegociação de Dívidas | Catalisa",
+      "titleLength": 34,
+      "descriptionLength": 119,
+      "wordCount": 138,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/renegociacao-dividas",
+      "public": true,
+      "native": false,
+      "title": "Debt Renegotiation | Catalisa",
+      "titleLength": 29,
+      "descriptionLength": 127,
+      "wordCount": 128,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/open-finance-credito",
+      "public": true,
+      "native": false,
+      "title": "Crédito com Open Finance | Catalisa",
+      "titleLength": 35,
+      "descriptionLength": 119,
+      "wordCount": 141,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/open-finance-credito",
+      "public": true,
+      "native": false,
+      "title": "Open Finance Credit | Catalisa",
+      "titleLength": 30,
+      "descriptionLength": 111,
+      "wordCount": 129,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/cotacao-seguro",
+      "public": true,
+      "native": false,
+      "title": "Cotação de Seguro | Catalisa",
+      "titleLength": 28,
+      "descriptionLength": 100,
+      "wordCount": 126,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/cotacao-seguro",
+      "public": true,
+      "native": false,
+      "title": "Insurance Quote | Catalisa",
+      "titleLength": 26,
+      "descriptionLength": 108,
+      "wordCount": 119,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/onboarding-kyc",
+      "public": true,
+      "native": false,
+      "title": "Onboarding KYC | Catalisa",
+      "titleLength": 25,
+      "descriptionLength": 121,
+      "wordCount": 129,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/onboarding-kyc",
+      "public": true,
+      "native": false,
+      "title": "KYC Onboarding | Catalisa",
+      "titleLength": 25,
+      "descriptionLength": 124,
+      "wordCount": 125,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/abertura-conta-digital",
+      "public": true,
+      "native": false,
+      "title": "Abertura de Conta Digital | Catalisa",
+      "titleLength": 36,
+      "descriptionLength": 91,
+      "wordCount": 134,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/abertura-conta-digital",
+      "public": true,
+      "native": false,
+      "title": "Digital Account Opening | Catalisa",
+      "titleLength": 34,
+      "descriptionLength": 92,
+      "wordCount": 127,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/onboarding-usuarios",
+      "public": true,
+      "native": false,
+      "title": "Onboarding de Usuários SaaS | Catalisa",
+      "titleLength": 38,
+      "descriptionLength": 99,
+      "wordCount": 128,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/onboarding-usuarios",
+      "public": true,
+      "native": false,
+      "title": "SaaS User Onboarding | Catalisa",
+      "titleLength": 31,
+      "descriptionLength": 106,
+      "wordCount": 125,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/matricula-educacao",
+      "public": true,
+      "native": false,
+      "title": "Matrícula Automatizada | Catalisa",
+      "titleLength": 33,
+      "descriptionLength": 98,
+      "wordCount": 129,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/matricula-educacao",
+      "public": true,
+      "native": false,
+      "title": "Automated Enrollment | Catalisa",
+      "titleLength": 31,
+      "descriptionLength": 107,
+      "wordCount": 123,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/campanhas-whatsapp",
+      "public": true,
+      "native": false,
+      "title": "Campanhas WhatsApp | Catalisa",
+      "titleLength": 29,
+      "descriptionLength": 102,
+      "wordCount": 127,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/campanhas-whatsapp",
+      "public": true,
+      "native": false,
+      "title": "WhatsApp Campaigns | Catalisa",
+      "titleLength": 29,
+      "descriptionLength": 98,
+      "wordCount": 116,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/recuperacao-carrinho",
+      "public": true,
+      "native": false,
+      "title": "Recuperação de Carrinho | Catalisa",
+      "titleLength": 34,
+      "descriptionLength": 111,
+      "wordCount": 121,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/recuperacao-carrinho",
+      "public": true,
+      "native": false,
+      "title": "Cart Recovery | Catalisa",
+      "titleLength": 24,
+      "descriptionLength": 106,
+      "wordCount": 113,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/nps-feedback",
+      "public": true,
+      "native": false,
+      "title": "Coleta de NPS e Feedback | Catalisa",
+      "titleLength": 35,
+      "descriptionLength": 110,
+      "wordCount": 128,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/nps-feedback",
+      "public": true,
+      "native": false,
+      "title": "NPS & Feedback Collection | Catalisa",
+      "titleLength": 36,
+      "descriptionLength": 108,
+      "wordCount": 117,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/renovacao-proativa",
+      "public": true,
+      "native": false,
+      "title": "Renovação Proativa | Catalisa",
+      "titleLength": 29,
+      "descriptionLength": 103,
+      "wordCount": 126,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/renovacao-proativa",
+      "public": true,
+      "native": false,
+      "title": "Proactive Renewal | Catalisa",
+      "titleLength": 28,
+      "descriptionLength": 100,
+      "wordCount": 117,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/sinistro-whatsapp",
+      "public": true,
+      "native": false,
+      "title": "Aviso de Sinistro | Catalisa",
+      "titleLength": 28,
+      "descriptionLength": 108,
+      "wordCount": 133,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/sinistro-whatsapp",
+      "public": true,
+      "native": false,
+      "title": "Claim Notification | Catalisa",
+      "titleLength": 29,
+      "descriptionLength": 103,
+      "wordCount": 123,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/vistoria-digital",
+      "public": true,
+      "native": false,
+      "title": "Vistoria Digital | Catalisa",
+      "titleLength": 27,
+      "descriptionLength": 94,
+      "wordCount": 132,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/vistoria-digital",
+      "public": true,
+      "native": false,
+      "title": "Digital Inspection | Catalisa",
+      "titleLength": 29,
+      "descriptionLength": 83,
+      "wordCount": 124,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/cardapio-digital",
+      "public": true,
+      "native": false,
+      "title": "Cardápio Digital e Pedidos | Catalisa",
+      "titleLength": 37,
+      "descriptionLength": 103,
+      "wordCount": 128,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/cardapio-digital",
+      "public": true,
+      "native": false,
+      "title": "Digital Menu & Orders | Catalisa",
+      "titleLength": 32,
+      "descriptionLength": 104,
+      "wordCount": 122,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/pix-conversacional",
+      "public": true,
+      "native": false,
+      "title": "Pix Conversacional | Catalisa",
+      "titleLength": 29,
+      "descriptionLength": 101,
+      "wordCount": 130,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/pix-conversacional",
+      "public": true,
+      "native": false,
+      "title": "Conversational Pix | Catalisa",
+      "titleLength": 29,
+      "descriptionLength": 95,
+      "wordCount": 126,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/agendamento-inteligente",
+      "public": true,
+      "native": false,
+      "title": "Agendamento Inteligente | Catalisa",
+      "titleLength": 34,
+      "descriptionLength": 98,
+      "wordCount": 93,
+      "internalLinks": 29,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/agendamento-inteligente",
+      "public": true,
+      "native": false,
+      "title": "Smart Scheduling | Catalisa",
+      "titleLength": 27,
+      "descriptionLength": 96,
+      "wordCount": 92,
+      "internalLinks": 29,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/agendamento-consultas",
+      "public": true,
+      "native": false,
+      "title": "Agendamento de Consultas | Catalisa",
+      "titleLength": 35,
+      "descriptionLength": 101,
+      "wordCount": 90,
+      "internalLinks": 29,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/agendamento-consultas",
+      "public": true,
+      "native": false,
+      "title": "Medical Appointment Scheduling | Catalisa",
+      "titleLength": 41,
+      "descriptionLength": 94,
+      "wordCount": 89,
+      "internalLinks": 29,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/notificacoes-transacionais",
+      "public": true,
+      "native": false,
+      "title": "Notificações Transacionais | Catalisa",
+      "titleLength": 37,
+      "descriptionLength": 98,
+      "wordCount": 97,
+      "internalLinks": 29,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/notificacoes-transacionais",
+      "public": true,
+      "native": false,
+      "title": "Transactional Notifications | Catalisa",
+      "titleLength": 38,
+      "descriptionLength": 83,
+      "wordCount": 94,
+      "internalLinks": 29,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/app-originacao-credito",
+      "public": true,
+      "native": false,
+      "title": "Sistema de Originação de Crédito | Catalisa",
+      "titleLength": 43,
+      "descriptionLength": 175,
+      "wordCount": 157,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/app-originacao-credito",
+      "public": true,
+      "native": false,
+      "title": "Credit Origination System | Catalisa",
+      "titleLength": 36,
+      "descriptionLength": 163,
+      "wordCount": 141,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/app-portal-cliente",
+      "public": true,
+      "native": false,
+      "title": "Portal do Cliente | Catalisa",
+      "titleLength": 28,
+      "descriptionLength": 124,
+      "wordCount": 140,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/app-portal-cliente",
+      "public": true,
+      "native": false,
+      "title": "Customer Portal | Catalisa",
+      "titleLength": 26,
+      "descriptionLength": 132,
+      "wordCount": 126,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/app-motor-cobranca",
+      "public": true,
+      "native": false,
+      "title": "Motor de Cobrança Automatizado | Catalisa",
+      "titleLength": 41,
+      "descriptionLength": 125,
+      "wordCount": 143,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/app-motor-cobranca",
+      "public": true,
+      "native": false,
+      "title": "Automated Collections Engine | Catalisa",
+      "titleLength": 39,
+      "descriptionLength": 122,
+      "wordCount": 129,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/app-kyc-digital",
+      "public": true,
+      "native": false,
+      "title": "Sistema KYC Digital | Catalisa",
+      "titleLength": 30,
+      "descriptionLength": 112,
+      "wordCount": 139,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/app-kyc-digital",
+      "public": true,
+      "native": false,
+      "title": "Digital KYC System | Catalisa",
+      "titleLength": 29,
+      "descriptionLength": 110,
+      "wordCount": 131,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/app-backoffice-seguros",
+      "public": true,
+      "native": false,
+      "title": "Backoffice de Seguros | Catalisa",
+      "titleLength": 32,
+      "descriptionLength": 109,
+      "wordCount": 133,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/app-backoffice-seguros",
+      "public": true,
+      "native": false,
+      "title": "Insurance Backoffice | Catalisa",
+      "titleLength": 31,
+      "descriptionLength": 107,
+      "wordCount": 127,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/app-hub-onboarding",
+      "public": true,
+      "native": false,
+      "title": "Hub de Onboarding Digital | Catalisa",
+      "titleLength": 36,
+      "descriptionLength": 109,
+      "wordCount": 132,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/app-hub-onboarding",
+      "public": true,
+      "native": false,
+      "title": "Digital Onboarding Hub | Catalisa",
+      "titleLength": 33,
+      "descriptionLength": 112,
+      "wordCount": 127,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/app-api-pagamentos",
+      "public": true,
+      "native": false,
+      "title": "API de Pagamentos Unificada | Catalisa",
+      "titleLength": 38,
+      "descriptionLength": 108,
+      "wordCount": 143,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/app-api-pagamentos",
+      "public": true,
+      "native": false,
+      "title": "Unified Payments API | Catalisa",
+      "titleLength": 31,
+      "descriptionLength": 129,
+      "wordCount": 135,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/app-assinatura-digital",
+      "public": true,
+      "native": false,
+      "title": "Sistema de Assinatura Digital | Catalisa",
+      "titleLength": 40,
+      "descriptionLength": 112,
+      "wordCount": 135,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/app-assinatura-digital",
+      "public": true,
+      "native": false,
+      "title": "Digital Signature System | Catalisa",
+      "titleLength": 35,
+      "descriptionLength": 104,
+      "wordCount": 126,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/app-open-finance",
+      "public": true,
+      "native": false,
+      "title": "Hub Open Finance | Catalisa",
+      "titleLength": 27,
+      "descriptionLength": 100,
+      "wordCount": 147,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/app-open-finance",
+      "public": true,
+      "native": false,
+      "title": "Open Finance Hub | Catalisa",
+      "titleLength": 27,
+      "descriptionLength": 96,
+      "wordCount": 134,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/app-gestao-sinistros",
+      "public": true,
+      "native": false,
+      "title": "Gestão de Sinistros Digital | Catalisa",
+      "titleLength": 38,
+      "descriptionLength": 95,
+      "wordCount": 133,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/app-gestao-sinistros",
+      "public": true,
+      "native": false,
+      "title": "Digital Claims Management | Catalisa",
+      "titleLength": 36,
+      "descriptionLength": 99,
+      "wordCount": 125,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/app-motor-decisao",
+      "public": true,
+      "native": false,
+      "title": "Motor de Decisão Enterprise | Catalisa",
+      "titleLength": 38,
+      "descriptionLength": 108,
+      "wordCount": 139,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/app-motor-decisao",
+      "public": true,
+      "native": false,
+      "title": "Enterprise Decision Engine | Catalisa",
+      "titleLength": 37,
+      "descriptionLength": 102,
+      "wordCount": 130,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/app-portal-parceiros",
+      "public": true,
+      "native": false,
+      "title": "Portal de Parceiros | Catalisa",
+      "titleLength": 30,
+      "descriptionLength": 105,
+      "wordCount": 136,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/app-portal-parceiros",
+      "public": true,
+      "native": false,
+      "title": "Partner Portal | Catalisa",
+      "titleLength": 25,
+      "descriptionLength": 106,
+      "wordCount": 132,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/app-compliance-lgpd",
+      "public": true,
+      "native": false,
+      "title": "Compliance LGPD Automatizado | Catalisa",
+      "titleLength": 39,
+      "descriptionLength": 110,
+      "wordCount": 135,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/app-compliance-lgpd",
+      "public": true,
+      "native": false,
+      "title": "Automated Data Compliance | Catalisa",
+      "titleLength": 36,
+      "descriptionLength": 103,
+      "wordCount": 126,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/app-conciliacao-financeira",
+      "public": true,
+      "native": false,
+      "title": "Conciliação Financeira Automática | Catalisa",
+      "titleLength": 44,
+      "descriptionLength": 96,
+      "wordCount": 132,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/app-conciliacao-financeira",
+      "public": true,
+      "native": false,
+      "title": "Automatic Financial Reconciliation | Catalisa",
+      "titleLength": 45,
+      "descriptionLength": 103,
+      "wordCount": 127,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/playbooks/app-marketplace-credito",
+      "public": true,
+      "native": false,
+      "title": "Marketplace de Crédito | Catalisa",
+      "titleLength": 33,
+      "descriptionLength": 108,
+      "wordCount": 133,
+      "internalLinks": 30,
+      "linksThroughRedirect": 4,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "path": "/en/playbooks/app-marketplace-credito",
+      "public": true,
+      "native": false,
+      "title": "Credit Marketplace | Catalisa",
+      "titleLength": 29,
+      "descriptionLength": 107,
+      "wordCount": 128,
+      "internalLinks": 30,
+      "linksThroughRedirect": 0,
+      "missingAlt": 0,
+      "headings": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    }
+  ]
+}

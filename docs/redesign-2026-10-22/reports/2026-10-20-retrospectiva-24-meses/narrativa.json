@@ -1,0 +1,2653 @@
+{
+  "groups": [
+    {
+      "id": "credito",
+      "title": "Crédito como plataforma de produto",
+      "code": [
+        "wpp:apps/painel-cliente-api/src/modules/credit-desk",
+        "wpp:apps/painel-cliente-api/src/modules/workflow-templates/templates/credito-base",
+        "bb:src/calculations-engine",
+        "bb:src/banking-product-portfolio"
+      ],
+      "docs": [
+        "wpp:docs/guides/credito-em-camadas-guia.md",
+        "wpp:docs/guides/antecipacao-recebiveis-vertical.md"
+      ]
+    },
+    {
+      "id": "banking",
+      "title": "Plataforma bancária e confiança no dinheiro",
+      "code": [
+        "bb:src/baas",
+        "bb:src/banking",
+        "wpp:apps/banking-app",
+        "wpp:packages/banking-core"
+      ],
+      "docs": [
+        "bb:src/baas/README.md",
+        "bb:src/banking/README.md",
+        "wpp:apps/banking-app/README.md"
+      ]
+    },
+    {
+      "id": "decision",
+      "title": "Catalisa Decision e decisão humana auditável",
+      "code": [
+        "bb:src/decision-engine",
+        "bb:src/decision-platform",
+        "bb:src/mesa",
+        "wpp:apps/decision-console"
+      ],
+      "docs": [
+        "wpp:docs/plans/2026-10-19-decision-linha-de-chegada.md",
+        "wpp:docs/handoffs/2026-10-10-decision-mesa-handoff.md"
+      ]
+    },
+    {
+      "id": "ia",
+      "title": "AI Core Assistant RAG e copiloto",
+      "code": [
+        "wpp:apps/painel-cliente-api/src/modules/ai-core",
+        "wpp:apps/painel-cliente-api/src/modules/ai-assistant",
+        "wpp:apps/painel-cliente-api/src/modules/knowledge-base",
+        "wpp:apps/painel-cliente-api/src/modules/video-meetings"
+      ],
+      "docs": [
+        "wpp:docs/plans/2026-08-22-conhecimento-handoff-final.md",
+        "wpp:docs/guides/rooms-video-meetings.md"
+      ]
+    },
+    {
+      "id": "wpp",
+      "title": "WhatsApp CRM e motor de automação",
+      "code": [
+        "bb:src/wpp",
+        "bb:src/wpp-business",
+        "wpp:apps/painel-cliente-api/src/modules/workflows",
+        "wpp:apps/painel-cliente-api/src/modules/whatsapp"
+      ],
+      "docs": [
+        "wpp:docs/guides/wpp-core-baileys-integration.md",
+        "wpp:docs/guides/workflow_actions_guide.md"
+      ]
+    },
+    {
+      "id": "infra",
+      "title": "Developy infraestrutura HA e escalabilidade",
+      "code": [
+        "developy:apps/web/src/lib/server/launch",
+        "developy:apps/web/src/lib/server/mesh",
+        "developy:apps/web/src/lib/server/atlas",
+        "developy:apps/web/src/lib/server/pulse"
+      ],
+      "docs": [
+        "wpp:docs/architecture/infra-ha-escalabilidade.md",
+        "developy:docs/storage-and-node-placement.md"
+      ]
+    },
+    {
+      "id": "seguranca",
+      "title": "Segurança governança e proteção de dados",
+      "code": [
+        "wpp:apps/painel-cliente-api/src/modules/access-grants",
+        "bb:src/iam",
+        "bb:src/api-keys",
+        "bb:src/audit-trail"
+      ],
+      "docs": [
+        "wpp:docs/analysis/2026-08-15-security-audit-plataforma.md",
+        "bb:docs/SECURITY-AUDIT-2026-08-15.md"
+      ]
+    },
+    {
+      "id": "ecossistema",
+      "title": "Ecossistema produtos distribuição e monetização",
+      "code": [
+        "wpp:apps/painel-cliente-api/src/modules/workflow-templates",
+        "wpp:apps/painel-cliente-api/src/modules/billing",
+        "wpp:apps/hotsite-kit",
+        "bb:src/billing"
+      ],
+      "docs": [
+        "wpp:docs/guides/produto-novo-sobre-a-plataforma.md",
+        "wpp:docs/guides/kit-styleguide.md"
+      ]
+    }
+  ],
+  "stories": [
+    {
+      "id": "E001",
+      "group": "credito",
+      "title": "Da solução de antecipação ao núcleo reutilizável de crédito",
+      "summary": "A antecipação deixou de carregar sozinha as regras comuns de uma operação de crédito. O pacote credito-base passou a atender produtos com lastros diferentes.",
+      "details": [
+        "Separação de workflows de aceite, desembolso, pagamento, liquidação e entrada de dados externos; ações de validação e exportação em uma camada comum.",
+        "Dependências declaradas no instalador, eventos de abertura e liquidação e contratos para parcelas e bloqueios.",
+        "Mesa organizada em /credito, com painéis de dossiê e descritores por produto."
+      ],
+      "value": "Criar uma nova modalidade passa a reaproveitar o ciclo operacional e seus controles, reduzindo duplicação entre produtos.",
+      "refs": [
+        "wpp#1216",
+        "wpp#1217",
+        "wpp#1218",
+        "wpp#1220",
+        "wpp#1221"
+      ],
+      "limit": "",
+      "kind": "Arquitetura estruturante"
+    },
+    {
+      "id": "E002",
+      "group": "credito",
+      "title": "Antecipação de recebíveis médicos e genéricos",
+      "summary": "Foi construída uma vertical instalável que transforma recebíveis em propostas, operações e títulos acompanháveis.",
+      "details": [
+        "Captura, análise, proposta, guia de serviço, política do fundo, portal do cedente e mesa de crédito.",
+        "Cálculo de borderô pelo building block, com valor líquido, desconto, encargos e glosa histórica por pagador.",
+        "Evolução do caso médico para produtos genéricos, preservando o cadastro do cedente e as diferenças do lastro."
+      ],
+      "value": "Conecta a originação comercial a uma operação de crédito executável e acompanhável.",
+      "refs": [
+        "wpp#865",
+        "wpp#889",
+        "wpp#890",
+        "wpp#895",
+        "wpp#931",
+        "wpp#1125",
+        "wpp#1408",
+        "bb#274",
+        "bb#277"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E003",
+      "group": "credito",
+      "title": "Catálogo financeiro versionado e identidade do credor",
+      "summary": "Produtos, famílias, bandas e tabelas de decisão passaram a existir na organização do cliente, com edição pela mesa.",
+      "details": [
+        "Integração de banking-product-portfolio, pricing-engine e decision-engine.",
+        "Emissão de credencial credit-blocks-bb no contexto de quem instala; provisionamento de produtos, versões, projeto e tabela na organização correta.",
+        "Reinstalação preserva configurações que a mesa publicou no produto."
+      ],
+      "value": "Permite que operações distintas configurem sua própria oferta e política, mantendo isolamento e rastreabilidade.",
+      "refs": [
+        "bb#71",
+        "wpp#1157",
+        "wpp#1228",
+        "wpp#1231",
+        "wpp#1271",
+        "wpp#1406"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E004",
+      "group": "credito",
+      "title": "Motor financeiro compartilhado pela simulação e operação",
+      "summary": "Cálculos financeiros viraram um serviço reutilizável que alimenta o cronograma, a análise e a apresentação da proposta.",
+      "details": [
+        "Amortização regular e irregular, vetor CUSTOM e cronograma por produto; portabilidade, IOF e CET.",
+        "CET calculado a partir dos fluxos efetivos em cronogramas não constantes; cobertura rural considera haircut.",
+        "Correções de convergência dos resolvedores de taxa, taxa zero e arredondamento; evolução de BULLET capitalizado."
+      ],
+      "value": "Evita manter fórmulas divergentes entre tela, contrato e operação.",
+      "refs": [
+        "wpp#1244",
+        "wpp#1288",
+        "wpp#1414",
+        "bb#69",
+        "bb#609",
+        "bb#612",
+        "bb#622"
+      ],
+      "limit": "O README do motor ainda registra limitações específicas de sistemas de amortização e carência; a existência dos cálculos não equivale à validação de todos os produtos financeiros.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E005",
+      "group": "credito",
+      "title": "Simulador tradicional e conversacional com contratação",
+      "summary": "O mesmo caminho de negócio passou a atender formulário, site, mesa e agente de IA.",
+      "details": [
+        "Produtos e regras consultados pelas credenciais do tenant; simulação por formulário ou conversa.",
+        "POST /credit-desk/apply e ferramenta apply_credit para transformar a simulação em pedido real.",
+        "Captura enfileirada para retirar uma espera de 27–33 segundos do request; origem e referência da proposta preservadas."
+      ],
+      "value": "Reduz a distância entre entender uma oferta e iniciar a contratação, com regras consistentes entre canais.",
+      "refs": [
+        "wpp#1275",
+        "wpp#1276",
+        "wpp#1330",
+        "wpp#1333",
+        "wpp#1335",
+        "wpp#1337",
+        "wpp#1524"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E006",
+      "group": "credito",
+      "title": "Limites de crédito e exposição derivada",
+      "summary": "A concessão passou a verificar a folga disponível antes de iniciar efeitos e novamente no aceite.",
+      "details": [
+        "Coleção de limites, exposição calculada, aprovação por quatro olhos e medidor na mesa.",
+        "Folga incorporada ao dossiê, à decisão, à proposta e ao export.",
+        "Operações por série corrigidas para evitar exposição contada em dobro."
+      ],
+      "value": "Acrescenta controle de concentração e capacidade de concessão ao ciclo de originação.",
+      "refs": [
+        "wpp#1339",
+        "wpp#1340",
+        "wpp#1341",
+        "wpp#1493"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E007",
+      "group": "credito",
+      "title": "Boleta de mesa e exceção controlada à política",
+      "summary": "A operação negociada ganhou registro próprio, com condições, número, aprovação e possibilidade de estorno.",
+      "details": [
+        "Condições dentro da política seguem o caminho permitido; exceções exigem segunda aprovação.",
+        "Boleta incorporada ao dossiê, à precificação, ao DMN e ao export da decisão.",
+        "Conferência na emissão, antes da aprovação final; lista com situação derivada e leituras consolidadas."
+      ],
+      "value": "Permite negociar sem perder a distinção entre autonomia comercial e exceção autorizada.",
+      "refs": [
+        "wpp#1343",
+        "wpp#1344",
+        "wpp#1347",
+        "wpp#1392",
+        "wpp#1522"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E008",
+      "group": "credito",
+      "title": "Política configurável e hierarquia casa produto parceiro",
+      "summary": "Configurações passaram a ser dados operáveis, com regras da casa que o produto só pode apertar.",
+      "details": [
+        "Editor por tópicos; liberação, mesa, credor, IOF, assinatura e concentração por produto.",
+        "Parceiro autorizado a originar somente os produtos concedidos; recusa antes de qualquer efeito.",
+        "Tarifas programadas pelo pricing-engine com referência de versão e parâmetros no simulador e na análise."
+      ],
+      "value": "Aumenta a flexibilidade comercial sem espalhar exceções em código de produto.",
+      "refs": [
+        "wpp#1270",
+        "wpp#1348",
+        "wpp#1381",
+        "wpp#1382",
+        "wpp#1384",
+        "wpp#1385"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E009",
+      "group": "credito",
+      "title": "Garantia de veículo com ciclo de gravame",
+      "summary": "O pacote vehicle-collateral reaproveitou o núcleo de crédito e acrescentou o ciclo específico do veículo.",
+      "details": [
+        "Captura, consulta pela porta de registradora, gravames externos, análise de risco e proposta.",
+        "Garantia com múltiplos gravames em ordem e margem derivada; comparação canônica resistente à reordenação do JSONB.",
+        "Constituição por integração ou protocolo da mesa, desbloqueio, prazo de baixa e comprovação."
+      ],
+      "value": "Transforma garantia em estado operacional verificável ao longo do empréstimo.",
+      "refs": [
+        "wpp#1245",
+        "wpp#1247",
+        "wpp#1258",
+        "wpp#1260",
+        "wpp#1262"
+      ],
+      "limit": "Portas de registradora e protocolo humano não demonstram, por si, contratação ou homologação com registradoras externas.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E010",
+      "group": "credito",
+      "title": "Garantia de imóvel e home equity",
+      "summary": "O pacote property-collateral aplicou as primitivas do crédito a imóvel e alienação fiduciária.",
+      "details": [
+        "Dossiê e painéis de imóvel sobre os mesmos descritores de garantia.",
+        "Prazos de certidões e registro; apresentação de valores e datas das propostas parceladas.",
+        "Reuso de política, cálculo, formalização e acompanhamento."
+      ],
+      "value": "Amplia o catálogo sem criar um segundo sistema operacional de crédito.",
+      "refs": [
+        "wpp#1266",
+        "wpp#1267",
+        "wpp#1268",
+        "wpp#1269"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E011",
+      "group": "credito",
+      "title": "Crédito pessoal consignado e rural",
+      "summary": "A plataforma passou a comportar modalidades com critérios de lastro e de pagamento diferentes.",
+      "details": [
+        "personal-loan como modalidade sem garantia sobre credito-base.",
+        "payroll-loan com margem, porta de averbação e remessa em lote; matrícula diferencia contratos do mesmo CPF.",
+        "rural-loan com CPR financeira, cobertura após haircut e famílias aceitas pelo catálogo."
+      ],
+      "value": "Demonstra a capacidade de compor diferentes produtos financeiros sobre uma base comum.",
+      "refs": [
+        "wpp#1295",
+        "wpp#1297",
+        "wpp#1302",
+        "wpp#1316",
+        "wpp#1407",
+        "wpp#1412"
+      ],
+      "limit": "A implementação da porta de averbação não comprova adesão a todos os convênios ou fornecedores de consignado.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E012",
+      "group": "credito",
+      "title": "Instrumentos financeiros como configuração do produto",
+      "summary": "A formalização passou a selecionar o instrumento declarado pelo produto.",
+      "details": [
+        "CCB, mútuo e termo de cessão; nota comercial e debênture por série; CPR financeira.",
+        "Títulos unitários, pagamentos de série e prazo de registro por emissão.",
+        "PDFs com marca e acesso pela mesa; aceitação identifica o instrumento emitido e materializa títulos das parcelas."
+      ],
+      "value": "Permite ampliar a oferta financeira mantendo a relação entre proposta, instrumento e fluxo de pagamento.",
+      "refs": [
+        "wpp#1249",
+        "wpp#1284",
+        "wpp#1285",
+        "wpp#1294",
+        "wpp#1298",
+        "wpp#1299",
+        "wpp#1324"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E013",
+      "group": "credito",
+      "title": "Formalização assinada como condição para avançar",
+      "summary": "A assinatura passou a participar da máquina de estados do crédito, com evidência associada à operação.",
+      "details": [
+        "Bloqueio assinatura_pendente quando a política exige provedor; liberação por evento de assinatura.",
+        "Hash, nível, provedor e evidência do instrumento no dossiê, na proposta e no export.",
+        "Aceite confere o termo atual, signatário e e-mail; ausência de registro recusa o caminho."
+      ],
+      "value": "Conecta a autorização contratual ao desembolso em vez de tratar documento como anexo decorativo.",
+      "refs": [
+        "wpp#1254",
+        "wpp#1256",
+        "wpp#1380",
+        "wpp#1947",
+        "wpp#1961",
+        "wpp#1978"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E014",
+      "group": "credito",
+      "title": "Contratos mestres aditivos e cessão detalhada",
+      "summary": "A formalização ganhou relações duráveis entre cedente, contrato e operação.",
+      "details": [
+        "Contrato mestre por cedente e aditivo por operação.",
+        "Evolução do termo de cessão com preço por linha e qualificação do valor não antecipado.",
+        "Versão e hash do texto exibido acompanham o aceite; retorno da assinatura preserva link e envio por e-mail."
+      ],
+      "value": "Dá materialidade documental à negociação e reduz ambiguidades na relação com o cedente.",
+      "refs": [
+        "wpp#1358",
+        "wpp#1359",
+        "wpp#1827",
+        "wpp#1880",
+        "wpp#1885",
+        "wpp#1893",
+        "wpp#1982"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E015",
+      "group": "credito",
+      "title": "Desembolso reconhecido apenas após liquidação do Pix",
+      "summary": "Foi corrigida uma falha em que a presença de transferId fazia uma operação parecer paga, mesmo com transferência recusada.",
+      "details": [
+        "Estados settled, pending, failed e unknown separados; COMPLETED é condição para registrar desembolso.",
+        "No máximo um Pix liquidado por operação; nova chave exige confirmação de que a tentativa anterior morreu.",
+        "Conferir pagamento usa rota e evento próprios que nunca autorizam um novo pagamento; textos do provedor são traduzidos e mascarados."
+      ],
+      "value": "Preserva a verdade financeira do produto e evita pagar novamente para resolver uma resposta ambígua.",
+      "refs": [
+        "wpp#1383",
+        "wpp#1881",
+        "wpp#1892"
+      ],
+      "limit": "A documentação descreve implantação e reinstalação como etapas distintas; o novo template só chega à instalação antiga quando ela é atualizada.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E016",
+      "group": "credito",
+      "title": "Liquidação de títulos parcelas e recebimento automático",
+      "summary": "O pagamento bancário passou a alimentar a carteira sem depender de registro manual em cada operação.",
+      "details": [
+        "Webhook BaaS normalizado, casamento com título e execução do fluxo de liquidação.",
+        "Parcelas com títulos materializados e liquidação própria; pagamentos sem casamento ficam pendentes de conciliação.",
+        "Correções para cancelamento, repetição de aceite, escolha do título e inscrição de webhook na organização correta."
+      ],
+      "value": "Fecha o ciclo entre dinheiro recebido, baixa da obrigação e exposição da carteira.",
+      "refs": [
+        "wpp#1188",
+        "wpp#1189",
+        "wpp#1192",
+        "wpp#1281",
+        "wpp#1285",
+        "wpp#1984",
+        "bb#299"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E017",
+      "group": "credito",
+      "title": "Export por decisão e trilha do crédito",
+      "summary": "A decisão ganhou um artefato próprio que permite reconstruir o que aconteceu.",
+      "details": [
+        "Regras e parâmetros, versão, desfecho, intervenção da mesa e motivo de negativa.",
+        "Coleção append-only de exports e eventos de auditoria nos estágios de análise, formalização, desembolso e decisão humana.",
+        "Transporte de auditoria do workflow ao building block audit-trail."
+      ],
+      "value": "Torna a explicação de uma concessão ou recusa um recurso operacional do produto.",
+      "refs": [
+        "wpp#1223",
+        "wpp#1224",
+        "wpp#1226",
+        "wpp#1374",
+        "bb#429"
+      ],
+      "limit": "O artefato auxilia rastreabilidade; não constitui certificação regulatória ou parecer jurídico.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E018",
+      "group": "credito",
+      "title": "Prazos com vencimento e prova de cumprimento",
+      "summary": "Foi criada uma primitiva de prazo que pode ser reaproveitada em obrigações de crédito.",
+      "details": [
+        "Abertura de prazo, varredura diária idempotente e cumprimento com evidência.",
+        "Aplicação a gravames, registros e certidões.",
+        "Nomes e eventos padronizados, com interface correspondente na mesa."
+      ],
+      "value": "Converte obrigações que poderiam ficar em planilhas em trabalho monitorável pela plataforma.",
+      "refs": [
+        "wpp#1238",
+        "wpp#1240",
+        "wpp#1241",
+        "wpp#1262"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E019",
+      "group": "credito",
+      "title": "Parceiros originação comissão e portal",
+      "summary": "A distribuição de crédito passou a ter identidade própria de parceiro e prestação de contas.",
+      "details": [
+        "Regra de comissão descrita em frase; estados prevista, devida e paga por uma porta de repasse.",
+        "Originação carrega canal e parceiro que o lead informou, com produtos autorizados.",
+        "Portal com acesso emitido e revogado pela mesa ou pela IA; regra, originações e extrato em termos legíveis."
+      ],
+      "value": "Cria uma camada de distribuição e relacionamento com originadores sobre a mesma operação de crédito.",
+      "refs": [
+        "wpp#1354",
+        "wpp#1356",
+        "wpp#1357",
+        "wpp#1475",
+        "wpp#1477",
+        "wpp#1479"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E020",
+      "group": "credito",
+      "title": "Carteira exposição concentração aging e cessão em lote",
+      "summary": "A mesa passou a olhar o conjunto de operações e sua distribuição.",
+      "details": [
+        "Exposição, atraso e concentração por produto e veículo.",
+        "Cessão em lote com arquivo, hash, títulos marcados e recibo.",
+        "Agregados arredondados uma vez e correção de exposição duplicada em séries."
+      ],
+      "value": "Acrescenta visão de gestão de carteira à execução de propostas individuais.",
+      "refs": [
+        "wpp#1361",
+        "wpp#1364",
+        "wpp#1366",
+        "wpp#1493"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E021",
+      "group": "credito",
+      "title": "Provisão por estágio e fechamento por competência",
+      "summary": "A plataforma recebeu cálculo e fechamento de provisão inspirado no modelo por estágio.",
+      "details": [
+        "Cálculo puro, parâmetros na política e leitura na Carteira.",
+        "Fechamento com competência, histórico, movimentos, exportação CSV e ferramenta de IA.",
+        "Numeração e reivindicação de chave corrigidas; bloqueio de formalização não altera indevidamente o estágio."
+      ],
+      "value": "Entrega insumos estruturados para acompanhamento de risco e trabalho contábil.",
+      "refs": [
+        "wpp#1480",
+        "wpp#1481",
+        "wpp#1483",
+        "wpp#1545"
+      ],
+      "limit": "A entrega não demonstra validação contábil externa nem conformidade integral com a Resolução CMN 4.966.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E022",
+      "group": "credito",
+      "title": "Prévia de SCR e export para contabilidade",
+      "summary": "Foi implementada uma prévia por cliente e modalidade, com classificação por produto.",
+      "details": [
+        "Agregação da carteira e modalidade por família.",
+        "Conferência do total a centavo e CSV.",
+        "Ferramenta de IA get_scr_preview para consultar a mesma projeção."
+      ],
+      "value": "Reduz trabalho de preparação de informação regulatória e torna a carteira mais explicável.",
+      "refs": [
+        "wpp#1484",
+        "wpp#1487",
+        "wpp#1557"
+      ],
+      "limit": "É prévia e insumo para conferência; não há evidência neste levantamento de transmissão homologada do documento 3040.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E023",
+      "group": "credito",
+      "title": "Pós desembolso portal do cliente e monitoramento",
+      "summary": "A jornada continuou depois do desembolso.",
+      "details": [
+        "Portal mostra operações, parcelas, documentos e negativa em linguagem compreensível.",
+        "Alertas pós-desembolso e marcação de risco pela mesa alimentam o estágio de provisão.",
+        "Acesso resolve o nome pelo lead da operação e apresenta PDFs do instrumento correto."
+      ],
+      "value": "Amplia transparência para o cliente e capacidade de acompanhamento para a operação.",
+      "refs": [
+        "wpp#1491",
+        "wpp#1492",
+        "wpp#1495",
+        "wpp#1500"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E024",
+      "group": "credito",
+      "title": "Régua de cobrança operacional e bancária",
+      "summary": "Foi construída uma régua que une política, agenda de contato e recebimentos.",
+      "details": [
+        "Quem contatar hoje, mensagem pronta, registro de contato e promessa.",
+        "Interface para volume com filtros, paginação, widgets e painel lateral; templates de WhatsApp Business.",
+        "Régua extraída para collections; boleto registrado, eventos de pagamento e baixa conectados à mesa."
+      ],
+      "value": "Transforma cobrança em fluxo rastreável e reutilizável, integrado à carteira.",
+      "refs": [
+        "wpp#1494",
+        "wpp#1540",
+        "wpp#1554",
+        "wpp#1561",
+        "wpp#1613",
+        "wpp#1641",
+        "wpp#1959",
+        "bb#386",
+        "bb#422",
+        "bb#425"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E025",
+      "group": "credito",
+      "title": "Renegociação e covenants",
+      "summary": "O produto passou a tratar mudanças no acordo e obrigações além do pagamento.",
+      "details": [
+        "Cálculo da renegociação, aceite do acordo e opção de novação.",
+        "Covenants registrados e acompanháveis na política e operação.",
+        "Correção de leitura de documento e merge opt-in para impedir que atualizações apaguem dados do acordo ou da restrição."
+      ],
+      "value": "Amplia a gestão do ciclo de vida do crédito após a concessão.",
+      "refs": [
+        "wpp#1646",
+        "wpp#1653",
+        "wpp#1956",
+        "wpp#1964"
+      ],
+      "limit": "As travas de negócio documentadas não substituem revisão jurídica de instrumentos específicos.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E026",
+      "group": "credito",
+      "title": "sistema de escalas e repasses como fonte verificável do lastro",
+      "summary": "Recebíveis passaram a poder ser confirmados na fonte de escala e repasse, com integração própria.",
+      "details": [
+        "Building block service-attestations com provedores MOCK e sistema de escalas e repasses, leitura paginada e lista fechada de operações somente de leitura.",
+        "Repasse e plantão com hash, versão, status e eventos; cancelamento só após leitura completa.",
+        "Conexão configurável por tenant; fontes no dossiê, competência da nota, horários e saldo consumível do repasse."
+      ],
+      "value": "Eleva a qualidade do lastro ao usar dados de quem paga, em vez de depender apenas da declaração de quem pede o crédito.",
+      "refs": [
+        "bb#625",
+        "bb#628",
+        "wpp#1969",
+        "wpp#1970",
+        "wpp#1973",
+        "wpp#1985"
+      ],
+      "limit": "A presença de um provedor real e de smokes documentados não é evidência de volume comercial ou contrato com a fonte.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E027",
+      "group": "credito",
+      "title": "Recebíveis futuros travados na conta do cedente",
+      "summary": "Crédito, aplicativo bancário e BaaS foram conectados por uma autorização explícita sobre recebimentos futuros.",
+      "details": [
+        "Aceite referencia lienId e os termos assinados; consentimento pode conceder o mandato de captura da mesma trava.",
+        "Entrada Pix/TED pode reservar e capturar até o devido, por pagador, com ordem FIFO, idempotência e controle de acumuladores.",
+        "Devido segue à conta do fundo e excedente permanece disponível; app mostra travas e repasses confirmados."
+      ],
+      "value": "Cria uma ligação operacional entre lastro confirmado, consentimento do titular e mecanismo de pagamento.",
+      "refs": [
+        "bb#623",
+        "bb#629",
+        "wpp#1970",
+        "wpp#1972",
+        "wpp#1977"
+      ],
+      "limit": "Caminhos de consentimento e capacidades do provedor condicionam o uso; não é garantia de recebimento de qualquer crédito futuro.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E028",
+      "group": "credito",
+      "title": "Garantia Viva e crédito com rebanho sobre Decision",
+      "summary": "O pacote livestock-collateral aplicou a plataforma de crédito ao lastro pecuário.",
+      "details": [
+        "Dossiê, produto no catálogo, CPR, decisão e Mesa usando o Catalisa Decision.",
+        "Traccar como fonte de rastreio; consulta resumida por lote em vez de baixar toda a frota.",
+        "Nova proposta pela mesa e contratação pelo simulador genérico; estado preco_pendente separa aprovação de precificação indisponível."
+      ],
+      "value": "Demonstra composição de crédito, dados físicos e revisão humana em uma modalidade nova.",
+      "refs": [
+        "wpp#1919",
+        "wpp#1929",
+        "wpp#1932",
+        "wpp#1943",
+        "wpp#1957",
+        "wpp#1993"
+      ],
+      "limit": "O pacote e os smokes usam contexto de demonstração; monitoramento de garantias como building block com múltiplos fornecedores segue planejado em bb#624.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E029",
+      "group": "credito",
+      "title": "Instalação de crédito como operação controlada",
+      "summary": "O instalador passou a provisionar também o que torna o produto contratável.",
+      "details": [
+        "Credor, praça, conta do fundo, documentos legais, perfil do banco, endereço do app e política.",
+        "Reinstalação que preserva configuração do tenant; erros de provisão ficam visíveis e contratação depende das capacidades exigidas.",
+        "Publicação atômica para quem executa; versões de ação desativadas não ressuscitam."
+      ],
+      "value": "Reduz passos manuais e impede que um pacote aparentemente instalado esconda uma dependência essencial ausente.",
+      "refs": [
+        "wpp#1863",
+        "wpp#1864",
+        "wpp#1868",
+        "wpp#1869",
+        "wpp#1871",
+        "wpp#1874",
+        "wpp#1897",
+        "wpp#1905"
+      ],
+      "limit": "A reescrita de workflows no mesmo id é uma evolução separada ainda em PR aberto #1967 no corte.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E030",
+      "group": "banking",
+      "title": "BaaS com múltiplos fornecedores e sandbox financeiro",
+      "summary": "Contas, Pix, TED, KYC e boleto foram expostos por uma API comum sobre provedores bancários.",
+      "details": [
+        "Adaptadores para Celcoin, QI Tech e FitBank, com configuração e credenciais por organização.",
+        "MockBank para testar saldo, chaves, recebimentos e eventos sem contrato bancário real.",
+        "Evolução de boletos registrados e assinatura ES512 para o formato esperado pelo provedor."
+      ],
+      "value": "Reduz acoplamento a um parceiro e permite construir e testar a jornada financeira antes da conexão comercial.",
+      "refs": [
+        "bb#1",
+        "bb#2",
+        "bb#61",
+        "bb#425",
+        "bb#434"
+      ],
+      "limit": "Adaptadores implementados não demonstram homologação contratual de todos os provedores; a Catalisa não é apresentada como instituição bancária licenciada.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E031",
+      "group": "banking",
+      "title": "Autorização do titular conferida antes do banco",
+      "summary": "Contas podem exigir que o titular assine a operação com a chave do próprio aparelho.",
+      "details": [
+        "ECDSA P-256 e payload canônico reconstruído pelo servidor a partir dos termos do pedido.",
+        "Política NONE, HOLDER_SIGNATURE ou OPERATOR; afrouxar a política também é uma operação autorizada.",
+        "O portão roda antes de decifrar credenciais do provedor; conta sem adesão segue a política existente."
+      ],
+      "value": "Acrescenta uma prova de consentimento que não depende apenas do poder do backend do integrador.",
+      "refs": [
+        "bb#428",
+        "bb#444",
+        "wpp#1623"
+      ],
+      "limit": "A proteção é condicionada à política da conta; não se deve afirmar que todas as contas históricas passaram a exigir assinatura.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E032",
+      "group": "banking",
+      "title": "Núcleo nativo de segurança e app bancário",
+      "summary": "Foi criado um aplicativo React Native/Expo com pacotes compartilhados de contrato e segurança.",
+      "details": [
+        "Kotlin e Swift para criação de chave, assinatura, exclusão, postura e proteção de tela.",
+        "banking-core em TypeScript puro: operações canônicas, validações de documentos e Pix, BR Code, máquinas de estado e view-models.",
+        "Compilação Android e prova em aparelho real; logout apaga dados de conta e fluxo único para apagar chave."
+      ],
+      "value": "Entrega uma base de aplicativo de marca própria com segurança sensível isolada em componentes reutilizáveis.",
+      "refs": [
+        "wpp#1623",
+        "wpp#1652",
+        "wpp#1664",
+        "wpp#1684"
+      ],
+      "limit": "Atestação é registrada, não verificada pelo servidor, conforme #1700. A prova em Android não comprova publicação em lojas nem validação equivalente em iOS.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E033",
+      "group": "banking",
+      "title": "Banking como fachada sem duplicar regra de dinheiro",
+      "summary": "O building block banking tornou-se a porta de orquestração do aplicativo.",
+      "details": [
+        "Sessão, início, extrato, contatos, intenção e envio de Pix; chave do aparelho, reserva e provedor continuam no BaaS.",
+        "Contrato OrchestrationClient compartilhado com o app, seguido de novos métodos de onboarding e crédito.",
+        "Métodos ainda sem implementação retornam 501 explícito."
+      ],
+      "value": "Mantém uma autoridade única para movimentação financeira e organiza a evolução dos diferentes canais.",
+      "refs": [
+        "bb#489",
+        "bb#505",
+        "wpp#1683"
+      ],
+      "limit": "O README declara cobertura parcial do contrato e contém contagens em momentos diferentes; o relatório não trata todos os endpoints anunciados como implementados.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E034",
+      "group": "banking",
+      "title": "Cadastro de aparelho e recuperação de acesso",
+      "summary": "O cliente com conta existente pode vincular um novo celular por um fluxo controlado.",
+      "details": [
+        "Rascunho bind_device neutro, sem revelar se o CPF possui conta.",
+        "Código enviado ao WhatsApp do cadastro, selfie do titular, nonce e registro da chave.",
+        "Gestão e revogação de aparelhos; reenquadramento de erros e retomada do fluxo."
+      ],
+      "value": "Reúne conveniência de recuperação e proteção contra enumeração de contas ou vínculo indevido de dispositivo.",
+      "refs": [
+        "bb#503",
+        "bb#504",
+        "bb#505",
+        "bb#510",
+        "bb#511",
+        "wpp#1692",
+        "wpp#1694",
+        "wpp#1698"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E035",
+      "group": "banking",
+      "title": "Abertura de conta com documento selfie e revisão",
+      "summary": "A jornada de abertura deixou de ser apenas um formulário e passou a ter progresso persistido.",
+      "details": [
+        "Rascunho open_account, captura hospedada, termos legais, hash do texto e status de abertura.",
+        "PENDING_KYC, selfie inconclusiva, nova captura e retomada sem perder o rascunho.",
+        "Console com documento, selfie, vídeo e dados do solicitante para revisão humana."
+      ],
+      "value": "Entrega uma jornada operacional de onboarding com tratamento dos casos que não se resolvem automaticamente.",
+      "refs": [
+        "bb#523",
+        "bb#532",
+        "bb#537",
+        "bb#554",
+        "bb#555",
+        "bb#556",
+        "bb#557",
+        "bb#564",
+        "wpp#1727",
+        "wpp#1738",
+        "wpp#1756",
+        "wpp#1758"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E036",
+      "group": "banking",
+      "title": "Pix com desfecho desconhecido e retry seguro",
+      "summary": "O aplicativo passou a tratar resposta perdida como um estado do negócio.",
+      "details": [
+        "Intenção assinada, chave idempotente e consulta do resultado pela chave.",
+        "PIX_OUTCOME_UNKNOWN não dispara novo pagamento; operação em processamento bloqueia uma nova intenção equivalente.",
+        "Renovação de desafio preserva os mesmos termos e a mesma chave; recusas recebem mensagem própria."
+      ],
+      "value": "Evita que conectividade instável transforme uma tentativa de pagamento em pagamento duplicado.",
+      "refs": [
+        "bb#310",
+        "bb#450",
+        "bb#516",
+        "wpp#1682",
+        "wpp#1724"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E037",
+      "group": "banking",
+      "title": "Saldo gastável bloqueios e saídas em voo",
+      "summary": "O saldo apresentado e autorizado passou a considerar compromissos que ainda não liquidaram.",
+      "details": [
+        "Bloqueio de saldo com capacidades declaradas por provedor; liberação, consumo, vencimento e divergências.",
+        "spendableBalance e ledgerHoldAmount na porta de pagamento e nas telas.",
+        "Trava por conta, reserva atômica e desconto de saídas PENDING/PROCESSING para impedir corrida entre duas réplicas."
+      ],
+      "value": "Protege valores comprometidos e torna as decisões de disponibilidade coerentes em concorrência.",
+      "refs": [
+        "bb#467",
+        "bb#472",
+        "bb#478",
+        "bb#479",
+        "bb#480",
+        "bb#501",
+        "bb#508",
+        "bb#548",
+        "wpp#1690"
+      ],
+      "limit": "O smoke #485 documentou falha no vencimento automático e cobertura parcial de outros casos; os caminhos não são apresentados como integralmente provados.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E038",
+      "group": "banking",
+      "title": "Step-up de risco decidido no servidor",
+      "summary": "O servidor decide quando a assinatura local precisa ser acompanhada de selfie.",
+      "details": [
+        "Limites por valor, favorecido novo e horário, com hierarquia plataforma → cliente → conta.",
+        "Selfie vinculada à operação e verificada no portão BaaS; ausência do verificador gera recusa explícita.",
+        "Biometria na abertura e no retorno ao app; limites e motivos disponíveis ao cliente."
+      ],
+      "value": "Centraliza o reforço de autenticação e impede que uma tela escolha rebaixar o controle.",
+      "refs": [
+        "bb#518",
+        "bb#521",
+        "wpp#1723",
+        "wpp#1724"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E039",
+      "group": "banking",
+      "title": "Mandatos quatro olhos e representação de empresas",
+      "summary": "Automação e operação humana ganharam formas distintas de autorização.",
+      "details": [
+        "Mandato com escopo, limites e validade para atos por máquina.",
+        "Pedidos de bloqueio e operações sensíveis podem exigir uma segunda pessoa; autoaprovação é recusada.",
+        "PJ com múltiplos sócios, quórum de assinatura, representante e alçada por ato e valor."
+      ],
+      "value": "Permite automatizar com autorização limitada e operar contas empresariais com governança explícita.",
+      "refs": [
+        "bb#441",
+        "bb#442",
+        "bb#500",
+        "bb#547",
+        "bb#549",
+        "bb#550",
+        "bb#579"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E040",
+      "group": "banking",
+      "title": "Desktop aprovado e executado no celular",
+      "summary": "Foi criado um canal web que depende da autorização do aparelho confiável.",
+      "details": [
+        "Entrada no computador aprovada pelo celular, sessão curta, inatividade conferida no servidor e possibilidade de encerramento remoto.",
+        "Início, extrato, comprovantes, limites e leitura; operações pedidas no computador são aprovadas e executadas no celular.",
+        "View-models e contratos compartilhados com o app."
+      ],
+      "value": "Amplia a conveniência de uso sem entregar ao navegador a mesma autoridade do aparelho.",
+      "refs": [
+        "bb#527",
+        "bb#533",
+        "bb#544",
+        "wpp#1731",
+        "wpp#1732",
+        "wpp#1733",
+        "wpp#1734",
+        "wpp#1745",
+        "wpp#1747",
+        "wpp#1752"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E041",
+      "group": "banking",
+      "title": "Backoffice bancário com dado real e controle de acesso",
+      "summary": "Um console específico reuniu leitura, escrita e governança da operação bancária.",
+      "details": [
+        "Ponte com sessão no servidor e tabela fechada de operações.",
+        "Pessoas, papéis e permissões, chaves de máquina, organização, trilha e pedidos de quatro olhos.",
+        "TOTP do IAM, revisão de abertura, análise e templates de publicação em staging e produção."
+      ],
+      "value": "Dá à instituição um local de operação coerente com os controles do serviço e do aplicativo.",
+      "refs": [
+        "wpp#1699",
+        "wpp#1701",
+        "wpp#1702",
+        "wpp#1704",
+        "wpp#1705",
+        "wpp#1730",
+        "wpp#1750",
+        "wpp#1751",
+        "wpp#1775",
+        "wpp#1910"
+      ],
+      "limit": "Suporte de publicação em produção não comprova que todos os canais já estivessem publicados no corte.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E042",
+      "group": "banking",
+      "title": "Canal de crédito entre CCP e CBP",
+      "summary": "A plataforma de crédito tornou-se um serviço consumível pelo banco digital.",
+      "details": [
+        "/credit-channel/v1 conecta estimativa, proposta, contratação e acompanhamento.",
+        "Produto do canal, banda do cedente, faixa de valor, hash do termo e idempotência do pedido.",
+        "App, desktop e console usam o canal; cliente ainda não habilitado segue à mesa, cuja aprovação pode habilitá-lo."
+      ],
+      "value": "Permite distribuir crédito pelo relacionamento bancário usando a mesma máquina de análise e operação.",
+      "refs": [
+        "wpp#1748",
+        "wpp#1749",
+        "wpp#1768",
+        "wpp#1770",
+        "wpp#1870",
+        "wpp#1878",
+        "bb#546",
+        "bb#576",
+        "bb#603",
+        "bb#608"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E043",
+      "group": "banking",
+      "title": "Conteúdo recursos e navegação do banco como configuração",
+      "summary": "A experiência do aplicativo ganhou conteúdo remoto e capacidades explícitas.",
+      "details": [
+        "CMS com conteúdo tipado, documentos legais, marca e textos.",
+        "Menus e recursos com estados on, maint e off; deep links por lista fechada.",
+        "Manifesto por tenant e contratos que recusam recursos indisponíveis."
+      ],
+      "value": "Permite variar o produto bancário por instituição sem copiar o aplicativo para cada cliente.",
+      "refs": [
+        "bb#430",
+        "bb#445",
+        "bb#532",
+        "bb#535",
+        "wpp#1660"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E044",
+      "group": "banking",
+      "title": "Funis do banco e eventos de domínio",
+      "summary": "Foi construído um building block de analytics para observar jornadas de produto.",
+      "details": [
+        "Catálogo de eventos, ingestão por consumer group, retenção do evento bruto e agregados diários.",
+        "Funil do Pix por coorte, abertura de conta, antecipação, eventos mortos e backfill.",
+        "Saúde da instrumentação e área Análise no console; catálogo corrigido para os eventos de crédito realmente publicados."
+      ],
+      "value": "Permite investigar onde o usuário abandona ou falha e se a própria medição está funcionando.",
+      "refs": [
+        "bb#512",
+        "bb#530",
+        "bb#534",
+        "bb#536",
+        "bb#545",
+        "bb#604",
+        "bb#605",
+        "wpp#1751"
+      ],
+      "limit": "Alertas inicialmente declarados e desarmados não são apresentados como alertas operacionais ativos.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E045",
+      "group": "decision",
+      "title": "Motor de decisão e plataforma de esteiras",
+      "summary": "Foram desenvolvidas camadas distintas para avaliar regras e orquestrar as fontes necessárias à decisão.",
+      "details": [
+        "DMN e FEEL, tabelas e versões, grafo de dependências e seleção do nó-folha.",
+        "Esteira com etapas, dados de fontes e agentes como fonte auxiliar.",
+        "Correções de versão e trace, duas saídas chamadas outcome e início efetivo do consumidor assíncrono."
+      ],
+      "value": "Combina decisão determinística reproduzível com coleta de dados extensível.",
+      "refs": [
+        "bb#420",
+        "bb#458",
+        "bb#614",
+        "bb#615",
+        "bb#616",
+        "wpp#1644"
+      ],
+      "limit": "IA como fonte e análise auxiliar não é apresentada como substituta irrestrita da política determinística de concessão.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E046",
+      "group": "decision",
+      "title": "Editor visual publicação e DRD",
+      "summary": "Política passou a ser um objeto editável e explicável na interface.",
+      "details": [
+        "Modelador DMN com XML, simular e publicar, tabela de decisão e grafo DRD.",
+        "Dados de entrada e knowledge sources visíveis; correção de células para FEEL válido.",
+        "Página da política com versões, uso e simulador."
+      ],
+      "value": "Coloca manutenção da política e explicação das dependências na mão de quem opera o produto.",
+      "refs": [
+        "wpp#1293",
+        "wpp#1304",
+        "wpp#1305",
+        "wpp#1306",
+        "wpp#1309",
+        "wpp#1833"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E047",
+      "group": "decision",
+      "title": "Simulação histórica e campeão contra desafiante",
+      "summary": "Foi criado um caminho para avaliar uma política antes de adotá-la.",
+      "details": [
+        "Um caso isolado, rascunho contra histórico e comparação entre políticas.",
+        "Tela com dados reais e seleção correta do nó em decisões com múltiplos nós.",
+        "Contagem, paginação e desfechos corrigidos pelo smoke de produto."
+      ],
+      "value": "Reduz a dependência de alterar a política vigente para descobrir seu efeito.",
+      "refs": [
+        "wpp#1647",
+        "wpp#1816",
+        "wpp#1838",
+        "wpp#1761"
+      ],
+      "limit": "PRs de implementação adicionais do simulador e funil permanecem abertos em Building Blocks; as superfícies e respectivas limitações estão no inventário.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E048",
+      "group": "decision",
+      "title": "Decision como SaaS de autosserviço",
+      "summary": "O motor ganhou um produto comercial com site, cadastro e console do cliente.",
+      "details": [
+        "Subconta, chaves de teste e produção, decisões, execuções, consumo e limites.",
+        "Planos, checkout, cartão salvo, débito automático, cancelamento e histórico de pagamentos.",
+        "Site com servidor, ponte do portal, recuperação de senha e versões português/inglês."
+      ],
+      "value": "Transforma infraestrutura interna em produto que um cliente pode conhecer, contratar e integrar.",
+      "refs": [
+        "wpp#1631",
+        "wpp#1635",
+        "wpp#1649",
+        "wpp#1650",
+        "wpp#1654",
+        "wpp#1657",
+        "wpp#1658",
+        "wpp#1659",
+        "wpp#1803",
+        "wpp#1809",
+        "wpp#1829",
+        "wpp#1907"
+      ],
+      "limit": "A linha de chegada de 19/10 ainda lista Stripe e prova final entre pendências; código de cobrança não comprova receita recorrente.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E049",
+      "group": "decision",
+      "title": "Ambientes subcontas cotas e idempotência",
+      "summary": "Os blocos de decisão passaram a separar o contexto do cliente e o ambiente de execução.",
+      "details": [
+        "Isolamento por subconta nos dois building blocks.",
+        "Ambiente teste/produção, cotas e endpoint de uso; Idempotency-Key no execute.",
+        "Filtro de ambiente e escopo organization para instalação dentro da organização."
+      ],
+      "value": "Viabiliza revenda e experimentação com fronteiras explícitas entre clientes e ambientes.",
+      "refs": [
+        "bb#426",
+        "bb#431",
+        "bb#432",
+        "bb#452",
+        "bb#474",
+        "bb#619"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E050",
+      "group": "decision",
+      "title": "Mesa genérica de revisão humana",
+      "summary": "A revisão deixou de ser uma implementação particular de cada vertical.",
+      "details": [
+        "Filas, SLA, casos idempotentes, responsável, atribuição, cancelamento e lock otimista.",
+        "Contexto de domínio opaco; veredito append-only, alçada e aprovação por outra pessoa.",
+        "Consumidor de conclusão de decisão, callback com retry e eventos mesa.*; resultado desconhecido encaminhado conservadoramente."
+      ],
+      "value": "Permite reutilizar a mesma governança humana em crédito, biometria e outros domínios.",
+      "refs": [
+        "bb#562",
+        "bb#581",
+        "bb#589",
+        "bb#592",
+        "bb#621",
+        "wpp#1834"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E051",
+      "group": "decision",
+      "title": "Operação de casos explicável e colaborativa",
+      "summary": "A Mesa passou a mostrar a origem da decisão e a organizar o trabalho entre pessoas.",
+      "details": [
+        "Regra, caminho, fontes, simulação e linha do tempo na origem do caso.",
+        "Notas, aguardar algo, retirada de veredito, encaminhamento e último veredito pendente.",
+        "Passar caso, abrir manualmente, filtrar por pessoa, desativar fila e definir motivo."
+      ],
+      "value": "Dá contexto e responsabilidade ao trabalho humano que complementa a automação.",
+      "refs": [
+        "wpp#1840",
+        "wpp#1841",
+        "wpp#1842",
+        "wpp#1844",
+        "wpp#1850",
+        "wpp#1914",
+        "bb#594",
+        "bb#595",
+        "bb#597"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E052",
+      "group": "decision",
+      "title": "Insights e agentes de análise sob demanda",
+      "summary": "Uma capacidade genérica de análise por IA passou a alimentar o Decision.",
+      "details": [
+        "Motor ai-insights separado da decisão de política.",
+        "Histórico, busca, filtros, detalhe, gráficos, arquivamento, nova execução e PDF.",
+        "Agentes de análise no modo SaaS e instalado, com chave de IA do cliente quando aplicável."
+      ],
+      "value": "Acrescenta interpretação e investigação de resultados sem confundir análise com a execução da política.",
+      "refs": [
+        "wpp#1712",
+        "wpp#1831",
+        "wpp#1906",
+        "wpp#1963"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E053",
+      "group": "decision",
+      "title": "Visão geral funil e latência por etapa",
+      "summary": "O console evoluiu da navegação para acompanhamento real da decisão.",
+      "details": [
+        "Distribuição de desfechos, volume diário, esteiras e carga da Mesa.",
+        "Funil por esteira e ambiente, etapas, latência e comparação.",
+        "Nomes legíveis e links entre recursos, corrigindo rótulos e contagens descobertos em demo."
+      ],
+      "value": "Permite localizar gargalos e entender o comportamento operacional das políticas.",
+      "refs": [
+        "bb#484",
+        "bb#617",
+        "wpp#1672",
+        "wpp#1786",
+        "wpp#1902",
+        "wpp#1908",
+        "wpp#1936"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E054",
+      "group": "decision",
+      "title": "Decision instalável dentro do painel e do kit",
+      "summary": "O console passou a ser montável em produtos existentes usando o contexto da conta.",
+      "details": [
+        "DecisionAccountContext e ConsoleHost; rotas dentro do painel e /app/decisao.",
+        "ensureDecisionStarter para política, esteira e fila, pacote instalável e scopes de chave mesa:delegate.",
+        "Reinstalação pode ampliar ou trocar chave sob controle de quatro olhos."
+      ],
+      "value": "Permite oferecer Decision como SaaS próprio ou capacidade embutida em outra solução.",
+      "refs": [
+        "wpp#1678",
+        "wpp#1923",
+        "wpp#1926",
+        "wpp#1927",
+        "wpp#1942",
+        "wpp#1945",
+        "wpp#1948",
+        "wpp#1950",
+        "wpp#1962"
+      ],
+      "limit": "A prova final em tenant novo, reinstalação e parte dos fluxos ainda estão listadas em PRs abertos #1951, #1967, #1968 e #1979 no corte.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E055",
+      "group": "ia",
+      "title": "AI Core compartilhado entre assistente agentes e workflows",
+      "summary": "A infraestrutura de IA foi extraída de uma funcionalidade isolada para um núcleo comum.",
+      "details": [
+        "LLMProviderFactory, configurações por usuário, credenciais e montagem de contexto reutilizados pelo Builder, agentes e automação.",
+        "Provedores Anthropic, OpenAI, Qwen, LiteLLM, Ollama e posteriormente Gemini e Grok.",
+        "Resolução dinâmica por tenant, aliases e seleção de modelos preservados."
+      ],
+      "value": "Evita reconstruir integrações de IA em cada produto e facilita evoluir o provedor sem reescrever as ferramentas.",
+      "refs": [
+        "wpp#127",
+        "wpp#129",
+        "wpp#232",
+        "wpp#1458",
+        "wpp#2005"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E056",
+      "group": "ia",
+      "title": "Modelos atuais e Grok direto com prova por API e navegador",
+      "summary": "O catálogo e os transportes foram atualizados sem criar outro ciclo de execução de ferramentas.",
+      "details": [
+        "IDs explícitos, Responses API para a família GPT-6, preservação de estado de raciocínio e chamadas; tratamento específico dos parâmetros de Claude.",
+        "Grok integrado às mesmas skills, ferramentas e caminho de conhecimento; rotação de credenciais invalida adaptadores.",
+        "PR #2005 registra seis modelos OpenAI/Grok testados em staging e produção por API e SSE, com tokens reais e restauração das configurações."
+      ],
+      "value": "Amplia escolha e portabilidade de fornecedor com prova do caminho usado pelo cliente.",
+      "refs": [
+        "wpp#2005",
+        "wpp#2008",
+        "developy#347"
+      ],
+      "limit": "Anthropic teve validação real adiada por credencial/saldo; NVIDIA NIM é continuidade planejada. #2008 reúne evidências adicionais e estava aberto no corte.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E057",
+      "group": "ia",
+      "title": "Assistant que executa ferramentas em vez de prometer",
+      "summary": "O assistente recebeu correções para trocar narração e confabulação por execução observável.",
+      "details": [
+        "Prevenção de execução de ferramenta inventada e ajustes de construção de workflows.",
+        "Resultados e toolCalls encaminhados ao cliente, progresso e erros refletindo o que aconteceu.",
+        "Limites de ferramentas por skill, seleção de modelo respeitada e frases de negócio para falha de provedor ou de cota."
+      ],
+      "value": "Faz a experiência conversacional produzir ações verificáveis sobre o produto.",
+      "refs": [
+        "wpp#151",
+        "wpp#249",
+        "wpp#250",
+        "wpp#252",
+        "wpp#275",
+        "wpp#1454",
+        "wpp#1457",
+        "wpp#1471",
+        "wpp#1472",
+        "wpp#1476"
+      ],
+      "limit": "O índice de execução 47%→100% no título de #249 pertence ao ensaio daquele PR; não é taxa global de confiabilidade do assistente.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E058",
+      "group": "ia",
+      "title": "Orquestrador por especificação prévia e validação semântica",
+      "summary": "O motor do Builder foi extraído para dar ao assistente uma estrutura de composição mais controlada.",
+      "details": [
+        "Geração com exemplos e padrões, previews antes de mutação e validadores de workflow, agente e custom action.",
+        "Detecção de ações órfãs, branches vazias e dependências quebradas; BudgetTracker por turno.",
+        "Migração do chat de agentes para o orquestrador e correções de interação entre RUN_AGENT e envio de mensagem."
+      ],
+      "value": "Melhora a capacidade de construir automações completas por conversa, com verificações sobre a estrutura gerada.",
+      "refs": [
+        "wpp#266",
+        "wpp#267",
+        "wpp#268",
+        "wpp#270",
+        "wpp#271",
+        "wpp#272",
+        "wpp#273"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E059",
+      "group": "ia",
+      "title": "Skills como superfície contextual de operação",
+      "summary": "As ferramentas passaram a ser selecionadas pelo trabalho que o usuário está fazendo.",
+      "details": [
+        "Intent Router com modo de conversa simples, catálogo de conhecimento, orçamento por modo e telemetria.",
+        "Prompt enxuto e conjunto por skill substituindo a superfície plana e o prompt legado.",
+        "Confirmação herda contexto e skills; resolução de produto e documento usa nomes de negócio."
+      ],
+      "value": "Reduz ruído, custo de contexto e ações equivocadas quando o usuário confirma uma tarefa.",
+      "refs": [
+        "wpp#227",
+        "wpp#265",
+        "wpp#1457",
+        "wpp#1459",
+        "wpp#1460",
+        "wpp#1461",
+        "wpp#1466",
+        "wpp#1469"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E060",
+      "group": "ia",
+      "title": "Examples Library e memória de padrões aprovados",
+      "summary": "A plataforma ganhou uma biblioteca de exemplos que podem orientar a criação futura.",
+      "details": [
+        "Salvar workflow ou agente como exemplo curado.",
+        "Embeddings, recuperação por similaridade e injeção de few-shot no orquestrador.",
+        "Validadores e previews reutilizados em diferentes caminhos de execução."
+      ],
+      "value": "Permite reutilizar conhecimento operacional aprovado, além do prompt fixo da plataforma.",
+      "refs": [
+        "wpp#266",
+        "wpp#268"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E061",
+      "group": "ia",
+      "title": "Base de conhecimento com propriedade explícita",
+      "summary": "O conhecimento do cliente passou a ter um ciclo de vida e fronteiras próprios.",
+      "details": [
+        "Bases, documentos, vínculo agente/base e chunks; ownerId obrigatório e presente no chunk.",
+        "CRUD, anexar e remover base, medição de indexação e consulta.",
+        "Provedor assíncrono do AI Core usa um orçamento comum com o conhecimento interno da plataforma."
+      ],
+      "value": "Permite alimentar agentes com conteúdo de cada cliente sem depender de editar prompts manualmente.",
+      "refs": [
+        "wpp#772",
+        "wpp#775",
+        "wpp#776",
+        "wpp#784"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E062",
+      "group": "ia",
+      "title": "RAG vetorial com índice independente e contexto volátil",
+      "summary": "Foi implementada recuperação semântica em pgvector dedicado.",
+      "details": [
+        "Chunking por estrutura, 300–400 tokens e overlap de 12%; fronteira por cabeçalho de seção.",
+        "Índice HNSW e busca por similaridade; indexação e exclusão acompanham as mutações do documento.",
+        "Trechos voláteis ficam fora do prefixo estável do prompt; estratégia híbrida evita enviar toda base indiscriminadamente."
+      ],
+      "value": "Permite responder com documentos maiores que o orçamento de contexto preservando a organização das fontes.",
+      "refs": [
+        "wpp#789",
+        "wpp#791",
+        "wpp#793",
+        "wpp#803"
+      ],
+      "limit": "O limiar inicial da estratégia AUTO foi corrigido após smoke. Índice dedicado reconstruível não é apresentado como banco vetorial com HA comprovada.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E063",
+      "group": "ia",
+      "title": "Ingestão de PDF DOCX e texto",
+      "summary": "O cliente passou a poder subir documentos e acompanhar seu processamento.",
+      "details": [
+        "Upload recebe bytes, evitando escolher fileId de outro cliente; extração e estados de ingestão.",
+        "PDF e DOCX transformados em texto, chunks e embeddings.",
+        "Contador de trechos e mensagens de credencial corrigidos após provas reais."
+      ],
+      "value": "Torna o conhecimento próprio utilizável por quem opera o produto, sem preparação manual do prompt.",
+      "refs": [
+        "wpp#792",
+        "wpp#793",
+        "wpp#797",
+        "wpp#798",
+        "wpp#799",
+        "wpp#816"
+      ],
+      "limit": "Ingestão de URL avulsa foi deliberadamente retirada do escopo; OCR de todo tipo de PDF não foi comprovado.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E064",
+      "group": "ia",
+      "title": "Conhecimento consultável por ferramenta e por contexto",
+      "summary": "O agente passou a pesquisar ativamente e o contexto ganhou um eixo abaixo do tenant.",
+      "details": [
+        "13 ferramentas de consulta e administração, com search_knowledge e API/SDK.",
+        "scopeTags com condição AND e contexto fornecido pelo servidor.",
+        "Separação de escritório, paciente, clínica, cliente e produto mesmo quando compartilham o agente."
+      ],
+      "value": "Combina recuperação ativa com proteção contra mistura de dados em agentes compartilhados.",
+      "refs": [
+        "wpp#815",
+        "wpp#820",
+        "wpp#821",
+        "wpp#894"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E065",
+      "group": "ia",
+      "title": "Conectores de banco com consulta ao dado vivo",
+      "summary": "Conhecimento documental e consulta transacional passaram a atender necessidades diferentes.",
+      "details": [
+        "Conector DATABASE para Postgres, MySQL/MariaDB e SQL Server.",
+        "Wizard testa conexão, lê catálogo e gera ferramentas de listar, contar e buscar.",
+        "Consulta de leitura com parâmetros ligados; COUNT próprio evita responder totais a partir de uma amostra."
+      ],
+      "value": "Permite que a IA use informação atual do sistema do cliente sem copiar todo o banco para o índice vetorial.",
+      "refs": [
+        "wpp#390",
+        "wpp#391",
+        "wpp#393",
+        "wpp#394",
+        "wpp#809",
+        "wpp#813"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E066",
+      "group": "ia",
+      "title": "RAG medido com referência e exclusão de contexto",
+      "summary": "A qualidade deixou de ser avaliada apenas por a ferramenta ter rodado.",
+      "details": [
+        "Handoff de agosto registra PDF de 60 seções, 31 chunks e perguntas com referência de seção em produção.",
+        "Medição histórica registra latência da busca, tokens de embedding, custo de indexação e tokens no prompt.",
+        "PR #2008 registra oito casos conhecido/desconhecido × API/UI × dois modelos, com exclusão de contexto e remoção das fixtures."
+      ],
+      "value": "Produz evidência reproduzível de recuperação e de como o agente trata informação ausente.",
+      "refs": [
+        "wpp#807",
+        "wpp#2008"
+      ],
+      "limit": "Os números são ensaios documentados, não benchmark geral. #2008 ainda aberto relata produção aprovada e staging bloqueado sem configuração do índice; o estudo não repetiu chamadas pagas.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E067",
+      "group": "ia",
+      "title": "Vídeo gravado e transcrito como matéria prima operacional",
+      "summary": "Rooms e o painel receberam a base de atendimento por vídeo.",
+      "details": [
+        "Sessões LiveKit, gravação por egress em S3 e worker de transcrição.",
+        "Correções de sample rate, falhas explícitas e ligação entre eventos, sala e interface.",
+        "Histórico, transcrição e artefatos acessíveis pela experiência do produto."
+      ],
+      "value": "Cria uma fonte estruturada para assistência em tempo real e continuidade após a chamada.",
+      "refs": [
+        "bb#208",
+        "bb#211",
+        "bb#212",
+        "wpp#488"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E068",
+      "group": "ia",
+      "title": "Copiloto em tempo real com perfil e dossiê",
+      "summary": "O copiloto passou a ser configurado para o tipo de atendimento e informado pelo histórico do cliente.",
+      "details": [
+        "TIPs em tempo real, categorias, cadência e persistência.",
+        "Perfil desacoplado do agente que fala com o cliente; múltiplos perfis por reunião e configuração em linguagem acessível.",
+        "Dossiê de lead e atendimentos anteriores com teto de tamanho e fontes permitidas."
+      ],
+      "value": "Apoia o profissional durante o atendimento usando contexto anterior, em vez de apenas resumir ao final.",
+      "refs": [
+        "wpp#508",
+        "wpp#524",
+        "wpp#525",
+        "wpp#533",
+        "wpp#534",
+        "wpp#623"
+      ],
+      "limit": "Medições de custo no PR #623 são cenários locais documentados, não economia financeira realizada.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E069",
+      "group": "ia",
+      "title": "Do atendimento para o trabalho com aprovação humana",
+      "summary": "A reunião passou a produzir rascunhos e automações vinculados ao perfil certo.",
+      "details": [
+        "Resumo e evento namespaced pelo perfil; ausência de perfil ou de configuração não dispara ações.",
+        "Pacote vertical, MeetingOutcome e ações Liberar, Editar e Descartar.",
+        "Aprovação idempotente e evento único; interface reconhece processamento eventual da fila."
+      ],
+      "value": "Conecta conversa, registro e execução sem exigir que cada vertical reconstrua o pós-atendimento.",
+      "refs": [
+        "wpp#584",
+        "wpp#587",
+        "wpp#1132"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E070",
+      "group": "ia",
+      "title": "Copiloto em reuniões externas e execução por worker",
+      "summary": "A assistência foi estendida para chamadas hospedadas fora da sala própria.",
+      "details": [
+        "Entrada por link e fonte de fala externa.",
+        "Bot como serviço de plantão, retry de falhas transitórias e configuração por réplica.",
+        "Estado na tela e stream de dicas com identidade compartilhada entre réplicas."
+      ],
+      "value": "Amplia o alcance do copiloto para fluxos de atendimento que já existem no cliente.",
+      "refs": [
+        "wpp#1059",
+        "wpp#1071",
+        "wpp#1075",
+        "wpp#1085",
+        "wpp#1088",
+        "wpp#1089",
+        "wpp#1097",
+        "wpp#1709"
+      ],
+      "limit": "Documentação de escala descreve consumo linear de bots por reunião; não há demonstração de capacidade ilimitada nem teste de carga sustentada em larga escala.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E071",
+      "group": "ia",
+      "title": "IA operando a mesa de crédito",
+      "summary": "Ferramentas de IA foram conectadas às mesmas rotas e serviços usados pela interface operacional.",
+      "details": [
+        "Leitura de fila, política, produtos, dossiê, conta do fundo, saldo, Pix e assinatura.",
+        "Decisão, desembolso, pagamento, instrumento, gravame, prazo, limites, boletas e parceiros.",
+        "Provas por conversa e correções de despacho, identificação por documento e confirmação contextual."
+      ],
+      "value": "Permite operar um produto complexo por linguagem natural preservando as regras do domínio.",
+      "refs": [
+        "wpp#1437",
+        "wpp#1440",
+        "wpp#1442",
+        "wpp#1445",
+        "wpp#1449",
+        "wpp#1463",
+        "wpp#1470"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E072",
+      "group": "ia",
+      "title": "Perfis de atendimento guiados e criação aprovada",
+      "summary": "A configuração do atendimento ganhou um percurso acessível no painel e no portal.",
+      "details": [
+        "Wizard de quatro etapas e preparação de atendimento; perfis validados no tenant.",
+        "Assistente contextual prepara cartão revisável antes de criar recursos.",
+        "Aprovação exige sessão e planId corretos; recursos novos inativos, ferramentas restritas e ids de resultado parcial preservados."
+      ],
+      "value": "Reduz o conhecimento técnico necessário para configurar agentes e automações com controle explícito sobre a criação.",
+      "refs": [
+        "wpp#2006",
+        "wpp#2007"
+      ],
+      "limit": "#2007 foi integrado à principal; seus testes e build não demonstram, por si, publicação em produção. Não há rollback transacional nem retomada automática de falha parcial.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E073",
+      "group": "wpp",
+      "title": "Da mensageria inicial ao WhatsApp como building block",
+      "summary": "A camada WhatsApp foi construída e depois extraída para um serviço reutilizável.",
+      "details": [
+        "Mensagens e grupos, callbacks, webhooks avançados, eventos em duas fases e automação.",
+        "Abstração de drivers e Cloud API; migração do painel para clientes de BB WPP e WPP Business.",
+        "Remoção integrada do core legado: API de sessão, workers, SSE e driver internos; Baileys voltou por building block próprio."
+      ],
+      "value": "Separa a evolução do canal de comunicação da evolução do CRM e dos produtos de negócio.",
+      "refs": [
+        "wpp#2",
+        "wpp#14",
+        "wpp#15",
+        "wpp#30",
+        "wpp#138",
+        "wpp#494",
+        "bb#67",
+        "bb#83",
+        "bb#115"
+      ],
+      "limit": "A remoção do core legado chegou à principal; a remoção de apps/admin-panel encontrada na branch de marca não chegou. São fatos diferentes.",
+      "kind": "Arquitetura estruturante"
+    },
+    {
+      "id": "E074",
+      "group": "wpp",
+      "title": "WhatsApp oficial comércio e gestão Meta",
+      "summary": "A plataforma incorporou capacidades comerciais e administrativas do canal oficial.",
+      "details": [
+        "Credenciais dinâmicas de Meta App, webhooks por app/dispositivo e gestão de contas Meta Business.",
+        "Templates, mídia, catálogo, pedidos, campanhas e outras operações do WPP Business e Commerce.",
+        "Concessão de template de autenticação a outra organização para OTP compartilhado."
+      ],
+      "value": "Permite usar o canal em jornadas comerciais e bancárias, com configuração por conta.",
+      "refs": [
+        "bb#83",
+        "bb#96",
+        "bb#97",
+        "bb#102",
+        "bb#106",
+        "bb#108",
+        "bb#111",
+        "bb#646",
+        "wpp#148"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E075",
+      "group": "wpp",
+      "title": "Baileys estável em múltiplos workers",
+      "summary": "A evolução de confiabilidade tratou problemas concretos de identidade, sessão e envio.",
+      "details": [
+        "Restore distribuído por Redis Streams, consumidor por hostname, afinidade e limite de pool Prisma.",
+        "Normalização PN/LID, resolução canônica por onWhatsApp/USync, pareamento e contatos por dispositivo.",
+        "CAS atômico de posse, liberação condicional, entrega no shutdown, alarme de device sem dono e retry de restore."
+      ],
+      "value": "Reduz perdas silenciosas e conflitos ao operar sessões distribuídas.",
+      "refs": [
+        "bb#124",
+        "bb#125",
+        "bb#127",
+        "bb#143",
+        "bb#158",
+        "bb#159",
+        "bb#165",
+        "bb#169",
+        "bb#171",
+        "bb#176",
+        "bb#177",
+        "bb#187",
+        "bb#228",
+        "bb#230",
+        "bb#231",
+        "bb#233"
+      ],
+      "limit": "Estabilidade foi melhorada por incidentes e provas específicas; não há taxa global de entrega ou garantia contra bloqueio da Meta.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E076",
+      "group": "wpp",
+      "title": "Motor visual de workflows e dependências",
+      "summary": "Automações passaram a ser construídas e executadas como estruturas explícitas.",
+      "details": [
+        "Canvas visual, DAG, arestas e branches, interpolação com contexto e helpers.",
+        "Custom actions extensíveis e integração de centenas de capacidades de building blocks.",
+        "Validador, simulador e import/export com resolução de recursos."
+      ],
+      "value": "Permite compor produtos e integrações sem codificar cada fluxo inteiro em um serviço novo.",
+      "refs": [
+        "wpp#23",
+        "wpp#27",
+        "wpp#52",
+        "wpp#55",
+        "wpp#61",
+        "wpp#62",
+        "wpp#88",
+        "wpp#136",
+        "wpp#182"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E077",
+      "group": "wpp",
+      "title": "Execução assíncrona filas e retenção",
+      "summary": "O motor recebeu primitivas para lidar com espera e processamento concorrente.",
+      "details": [
+        "DELAY não bloqueante, agendamento e agregação debounced de mensagens.",
+        "JobId determinístico e deduplicação em múltiplas réplicas; eventos enfileirados com correlação.",
+        "Retenção configurável de execuções, com 36 meses geral e 60 para crédito; cortes UTC e falha fechada."
+      ],
+      "value": "Controla uso de recursos e preserva histórico operacional de automações de longa duração.",
+      "refs": [
+        "wpp#135",
+        "wpp#191",
+        "wpp#261",
+        "wpp#587",
+        "wpp#1925",
+        "wpp#1931"
+      ],
+      "limit": "Política de retenção implementada não significa que já existam 60 meses de dados guardados.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E078",
+      "group": "wpp",
+      "title": "CRM hierárquico com funis próprios",
+      "summary": "O painel tornou-se uma base de relacionamento e operação por conta.",
+      "details": [
+        "Hierarquia de usuários, ACL, atribuição e visibilidade.",
+        "LeadTypes por tenant, campos dinâmicos, funis e log de transição.",
+        "Chat completo e persistência central de mensagens com origem polimórfica e dispositivo."
+      ],
+      "value": "Dá às verticais uma base comum de cliente, histórico e processo.",
+      "refs": [
+        "wpp#18",
+        "wpp#21",
+        "wpp#37",
+        "wpp#38",
+        "wpp#255",
+        "wpp#592"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E079",
+      "group": "wpp",
+      "title": "Metas rotinas consultorias e carteira de atenção",
+      "summary": "A plataforma ampliou sua operação para acompanhamento recorrente e consultoria.",
+      "details": [
+        "Metas, resultados-chave, rotinas, ritmo e responsáveis.",
+        "Concessão de recursos para trabalhar por um cliente com escopo explícito.",
+        "Carteira ordenada por atenção, recência e visibilidade, exibindo agregados em vez de notas e dados pessoais."
+      ],
+      "value": "Permite acompanhar a execução do trabalho do cliente e priorizar onde a consultoria deve atuar.",
+      "refs": [
+        "wpp#773",
+        "wpp#774",
+        "wpp#2006"
+      ],
+      "limit": "Os detalhes de cada entrega de metas e concessões também estão no catálogo integral; a carteira da consultoria não é a carteira financeira de crédito.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E080",
+      "group": "infra",
+      "title": "Developy como plataforma de operação da Catalisa",
+      "summary": "O projeto evoluiu de gestão de Proxmox para uma camada de infraestrutura consumida pelos produtos.",
+      "details": [
+        "Forge para guests e recursos; Mesh para tráfego e rede; Beacon para DNS.",
+        "Atlas, Spark, Tide, Flux e Nexus para dados; Pulse, Radar e Signal para operação.",
+        "Launch para publicação de aplicações, Aegis para governança, Harbor e Ignite para distribuição e execução."
+      ],
+      "value": "Reúne capacidades que sustentam CRM, IA, serviços bancários e building blocks em uma operação própria.",
+      "refs": [
+        "developy#1",
+        "developy#3",
+        "developy#4",
+        "developy#6",
+        "developy#7",
+        "developy#86",
+        "developy#100"
+      ],
+      "limit": "",
+      "kind": "Arquitetura estruturante"
+    },
+    {
+      "id": "E081",
+      "group": "infra",
+      "title": "Launch de implantação de imagem a serviço com réplicas",
+      "summary": "Foi construído um plano de controle para publicar e operar aplicações sobre Proxmox.",
+      "details": [
+        "Catálogo, provisionamento real, wizard, start/stop/restart, DNS, ingress HTTPS e escala.",
+        "Rolling redeploy por réplica, domínios próprios, volumes persistentes e edição de ambiente.",
+        "Logs ao vivo, shell, reinícios, filtros, paginação e razões de falha na operação."
+      ],
+      "value": "Reduz o trabalho artesanal de disponibilizar os serviços que compõem os produtos.",
+      "refs": [
+        "developy#100",
+        "developy#102",
+        "developy#103",
+        "developy#104",
+        "developy#105",
+        "developy#106",
+        "developy#108",
+        "developy#200",
+        "developy#202",
+        "developy#212",
+        "developy#220"
+      ],
+      "limit": "A prova de redeploy sem indisponibilidade foi em serviço de duas réplicas. Uma réplica pode ter queda; não há SLA geral demonstrado.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E082",
+      "group": "infra",
+      "title": "HA por topologia e reconciliação",
+      "summary": "A redundância deixou de ser apenas um número na tela.",
+      "details": [
+        "Launch distribui réplicas por nós diferentes e executa operações no nó de cada réplica.",
+        "Reconciliador detecta serviço degradado e reconstrói o conjunto de backends saudáveis; evoluções tratam rollout interrompido.",
+        "Mesh standard exige dois nós; tier HA acrescenta VIP, keepalived unicast e verificação de HAProxy."
+      ],
+      "value": "Combina capacidade redundante, retirada de destino ruim e recuperação do estado desejado.",
+      "refs": [
+        "developy#228",
+        "developy#229",
+        "developy#236",
+        "developy#264"
+      ],
+      "limit": "O failover de VIP não foi exercido no PR #229. Réplicas, failover do banco e disponibilidade de toda a cadeia são propriedades diferentes.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E083",
+      "group": "infra",
+      "title": "Postgres off-node e failover assistido",
+      "summary": "A operação recebeu uma cópia quente do banco em outro nó físico.",
+      "details": [
+        "Replicação streaming, slot ativo e atraso de 0 bytes no instante documentado.",
+        "Proxy TCP viabilizou o standby apesar da rede overlay defeituosa.",
+        "Runbook check/promote/repoint/status, com recusa de promoção enquanto o primário responde."
+      ],
+      "value": "Reduz o risco de perder aplicação e cópia do banco no mesmo nó e prepara recuperação operacional.",
+      "refs": [
+        "wpp#604",
+        "wpp#610",
+        "wpp#616"
+      ],
+      "limit": "Failover é assistido; promote não foi exercido em produção nesse ensaio e replicação assíncrona admite perda das últimas transações. Referências posteriores a Patroni não são prova suficiente de migração concluída.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E084",
+      "group": "infra",
+      "title": "Serviços gerenciados de banco cache storage e mensageria",
+      "summary": "Os produtos de dados receberam provisionamento e operação próprios.",
+      "details": [
+        "Atlas com bancos, roles, credenciais, firewall, DNS e ajuda de conexão; PgBouncer em clusters existentes.",
+        "Spark/Valkey, Tide/MinIO, Flux/RabbitMQ e Nexus/ScyllaDB com métricas reais e capacidades explícitas.",
+        "Ciclo de vida, endpoints conferidos, coleta de órfãos e reconciliação de publicação."
+      ],
+      "value": "Fornece dependências reutilizáveis para aplicações sem reconstruir o provisionamento de cada tecnologia.",
+      "refs": [
+        "developy#47",
+        "developy#52",
+        "developy#53",
+        "developy#73",
+        "developy#144",
+        "developy#147",
+        "developy#148",
+        "developy#150",
+        "developy#282",
+        "developy#293",
+        "developy#295",
+        "developy#297",
+        "developy#300",
+        "developy#301",
+        "developy#302"
+      ],
+      "limit": "Tecnologias recusadas explicitamente, como certos caminhos Redpanda/NATS/FerretDB, não contam como serviços efetivamente entregues.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E085",
+      "group": "infra",
+      "title": "Persistência durável do plano de controle",
+      "summary": "Estado operacional foi retirado progressivamente de arquivos JSON.",
+      "details": [
+        "Drizzle, StoreBackend e CLI de migração JSON↔Postgres.",
+        "Cortes por módulo em Beacon, Aegis, auditoria, plataforma, Spark, Mesh, Tide, Nexus, Flux e Atlas.",
+        "Migração dos últimos stores, runner SQL próprio, esquema conferido no arranque e publicação levando migrations."
+      ],
+      "value": "Diminui dependência de disco local e dá uma base mais controlada para evolução e reinícios.",
+      "refs": [
+        "developy#16",
+        "developy#20",
+        "developy#21",
+        "developy#24",
+        "developy#25",
+        "developy#28",
+        "developy#30",
+        "developy#31",
+        "developy#32",
+        "developy#33",
+        "developy#34",
+        "developy#35",
+        "developy#110",
+        "developy#111",
+        "developy#305"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E086",
+      "group": "infra",
+      "title": "Rede IPAM DNS e certificados como serviço",
+      "summary": "A infraestrutura ganhou caminhos declarados para criar e alcançar serviços.",
+      "details": [
+        "IPAM IPv4/IPv6 com prevenção de colisão, pools, reserva e seleção de rede.",
+        "VNet/VXLAN, firewall efetivo, NAT reconciliado e drain antes de remover réplica.",
+        "PowerDNS, SOA, DNS-01, wildcard, domínio próprio e sonda de vencimento de certificado."
+      ],
+      "value": "Sustenta publicação e comunicação dos produtos e reduz incidentes provocados por rede não persistente ou nome incorreto.",
+      "refs": [
+        "developy#6",
+        "developy#15",
+        "developy#29",
+        "developy#39",
+        "developy#123",
+        "developy#137",
+        "developy#237",
+        "developy#243",
+        "developy#249",
+        "developy#250",
+        "developy#266",
+        "developy#289",
+        "developy#291",
+        "developy#311"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E087",
+      "group": "infra",
+      "title": "Malha direta para comunicação entre building blocks",
+      "summary": "Foi criado um nome interno estável que acompanha réplicas saudáveis.",
+      "details": [
+        "Nome por serviço e organização com endereços das réplicas e TTL curto.",
+        "finalize atualiza DNS e deprovisionamento limpa o nome.",
+        "Medição documentada de 250 ms pela borda contra 4,7 ms direto entre guests."
+      ],
+      "value": "Remove uma volta desnecessária pela borda pública nas chamadas entre serviços e viabiliza o runtime nativo.",
+      "refs": [
+        "developy#277"
+      ],
+      "limit": "A diferença é de um ensaio de caminho de rede; não é redução garantida em toda requisição do produto.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E088",
+      "group": "infra",
+      "title": "Afinidade de navegador para Assistant com SSE",
+      "summary": "Um defeito entre aplicação e balanceamento foi rastreado e corrigido no Launch.",
+      "details": [
+        "Chat começava em uma API e stream chegava a outra, devolvendo 401.",
+        "Label de adesão ingress.session-affinity=cookie gera cookie específico Secure, HttpOnly e SameSite=Lax.",
+        "Opção preservada na reconciliação, no redeploy e na reaplicação de domínios; rollout posterior documentado pelo PR de AI Core."
+      ],
+      "value": "Demonstra solução no componente compartilhado para um problema que aparecia na experiência de IA do cliente.",
+      "refs": [
+        "developy#347",
+        "wpp#2005",
+        "wpp#2008"
+      ],
+      "limit": "A descrição inicial de #347 dizia ativação pendente; #2005 registra posteriormente a correção publicada e o smoke em produção. A ordem das evidências é relevante.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E089",
+      "group": "infra",
+      "title": "Pulse Radar Signal e métricas que correspondem ao runtime",
+      "summary": "Observabilidade foi ligada ao estado medido dos serviços e da infraestrutura.",
+      "details": [
+        "OTel, traces, logs e métricas; coleta de nós, guests, Postgres, DNS e clusters de clientes.",
+        "Correções retiraram valores simulados ou fontes erradas de métricas.",
+        "Launch alimenta incidentes do Signal pelo laço de fundo, com fonte, severidade, organização e resolução."
+      ],
+      "value": "Aproxima diagnóstico e alertas dos serviços reais que sustentam os produtos.",
+      "refs": [
+        "wpp#124",
+        "developy#2",
+        "developy#4",
+        "developy#138",
+        "developy#144",
+        "developy#147",
+        "developy#279",
+        "developy#280",
+        "developy#281",
+        "developy#338"
+      ],
+      "limit": "Fases seguintes do Signal e canais de notificação presentes em branches abertas não são contados como integralmente publicados.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E090",
+      "group": "infra",
+      "title": "Backups reais e disciplina de recuperação",
+      "summary": "A operação recebeu inventário de cobertura, destinos e scripts verificáveis.",
+      "details": [
+        "Correção de backups fictícios e seleção de storage existente.",
+        "Spark com RDB para Tide dedicado; PBS e levantamento de guests sem cópia.",
+        "Operação manual documentada, scripts e verificação de ferramentas usadas no backup."
+      ],
+      "value": "Converte suposição de proteção em cobertura que pode ser examinada e executada.",
+      "refs": [
+        "developy#101",
+        "developy#119",
+        "developy#177",
+        "developy#180",
+        "developy#183",
+        "developy#184",
+        "developy#187",
+        "developy#345"
+      ],
+      "limit": "Backup configurado ou executado não equivale a restore integral provado de todos os serviços. O relatório preserva essa distinção.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E091",
+      "group": "infra",
+      "title": "Publicação determinística e builder remoto",
+      "summary": "O caminho de entrega evoluiu junto da arquitetura.",
+      "details": [
+        "DigitalOcean, Swarm, K3s/ArgoCD e Terraform aparecem como etapas históricas; depois GHCR, Launch e templates LXC.",
+        "Build remoto com fila, identificação da execução, versão servida e GC conservador.",
+        "Guardas de schema e template, verificação nos nós e depois do redeploy; serviços não são considerados publicados só porque retornam 200."
+      ],
+      "value": "Diminui o risco de promover uma versão diferente da validada ou de publicar código sem seu schema.",
+      "refs": [
+        "wpp#1",
+        "wpp#24",
+        "wpp#96",
+        "wpp#279",
+        "bb#19",
+        "bb#31",
+        "bb#34",
+        "bb#153",
+        "bb#468",
+        "bb#531",
+        "bb#560",
+        "bb#561",
+        "bb#565",
+        "bb#567",
+        "bb#572",
+        "bb#577",
+        "bb#578"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E092",
+      "group": "infra",
+      "title": "Redução de memória e tempo de build",
+      "summary": "Refatorações de infraestrutura tiveram ganhos pontuais documentados.",
+      "details": [
+        "setupContainer modular registra apenas o building block necessário no modo standalone.",
+        "PR #93 registra 28 serviços em aproximadamente 4,2 GB, contra cerca de 100 GB antes.",
+        "Template LXC passou de cerca de 20 para 4 minutos no ensaio de #568, usando COPY --chown e rootfs direto."
+      ],
+      "value": "Libera recursos para crescer a plataforma e reduz o tempo para disponibilizar uma correção.",
+      "refs": [
+        "bb#93",
+        "bb#568"
+      ],
+      "limit": "São medições históricas relatadas pelos PRs, não capacidade atual auditada nem economia de caixa calculada.",
+      "kind": "Eficiência medida"
+    },
+    {
+      "id": "E093",
+      "group": "infra",
+      "title": "Desempenho da mesa tratado até a fronteira dos serviços",
+      "summary": "A otimização investigou solicitações, paginação, concorrência e custo de rede.",
+      "details": [
+        "Índice de gatilhos no lugar de lista de workflows de 16 MB; listagens financeiras paralelas.",
+        "Leituras de boletas consolidadas; lotes e paginação do Data Store em paralelo com teto de concorrência.",
+        "Caches locais entre requisições foram retirados quando se mostraram incorretos com duas réplicas; janela compartilhada em Redis para cobrança."
+      ],
+      "value": "Reduz espera sem trocar consistência financeira por um resultado aparentemente rápido.",
+      "refs": [
+        "wpp#1279",
+        "wpp#1377",
+        "wpp#1522",
+        "wpp#1546",
+        "wpp#1547",
+        "wpp#1549",
+        "wpp#1552",
+        "wpp#1563",
+        "wpp#1569",
+        "wpp#1592",
+        "wpp#1614"
+      ],
+      "limit": "A medição 707→242 ms pertence a uma ida ao BB no ensaio descrito, não à página inteira.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E094",
+      "group": "seguranca",
+      "title": "IAM como fonte de verdade e permissões consistentes",
+      "summary": "A autenticação e os papéis foram unificados com os building blocks.",
+      "details": [
+        "Login via IAM, roles PANEL_MASTER/PANEL_MEMBER e sincronização de papéis.",
+        "Administração do tenant, perfis, links de captura e fronteiras de hierarquia.",
+        "Renovação de sessão re-resolve organização e papéis; convite exige aceite em vez de vincular automaticamente por e-mail."
+      ],
+      "value": "Reduz inconsistências de autorização entre serviços e protege a conta ao incluir usuários.",
+      "refs": [
+        "wpp#115",
+        "wpp#195",
+        "wpp#1937",
+        "wpp#1938",
+        "wpp#1946",
+        "bb#101",
+        "bb#112",
+        "bb#496",
+        "bb#498",
+        "bb#526"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E095",
+      "group": "seguranca",
+      "title": "Auditoria e remediação de falhas verificadas",
+      "summary": "Uma frente sistemática tratou falhas de autorização e execução confirmadas.",
+      "details": [
+        "IDOR em actions, triggers, chats, leads, tarefas, chaves e cancelamento de IA.",
+        "RCE em sandbox de custom action, SSRF em testes de credencial e mídia, validação de ferramentas restritas.",
+        "Correções acompanhadas de testes e smokes descritos por achado; hardening posterior de mass assignment."
+      ],
+      "value": "Converte segurança em melhoria concreta da fronteira de execução e de dados.",
+      "refs": [
+        "wpp#676",
+        "wpp#678",
+        "wpp#681",
+        "wpp#682",
+        "wpp#687",
+        "wpp#694",
+        "wpp#696",
+        "wpp#715",
+        "wpp#720",
+        "wpp#1934",
+        "bb#235",
+        "bb#236",
+        "bb#237",
+        "bb#243"
+      ],
+      "limit": "Auditoria interna e correções não são certificação externa nem prova de ausência de vulnerabilidades.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E096",
+      "group": "seguranca",
+      "title": "Segredos cifrados e separados por ambiente",
+      "summary": "Credenciais e chaves passaram a ter controles de armazenamento e implantação.",
+      "details": [
+        "SOPS/age, rotação, remoção de placeholders e separação de JWT entre staging e produção.",
+        "CryptoKey e credenciais com cifra em repouso e falha fechada; segredo deixa de sair em resposta.",
+        "Chaves de serviço movidas para configuração protegida, sem uso de token global compartilhado em ferramentas de IA."
+      ],
+      "value": "Diminui exposição e evita que um ambiente ou tenant herde autoridade de outro.",
+      "refs": [
+        "bb#194",
+        "bb#196",
+        "bb#198",
+        "bb#199",
+        "bb#218",
+        "bb#222",
+        "bb#227",
+        "wpp#601",
+        "wpp#686",
+        "wpp#690",
+        "wpp#697",
+        "wpp#704",
+        "wpp#718",
+        "wpp#727"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E097",
+      "group": "seguranca",
+      "title": "Navegador sessões e fronteira pública protegidos",
+      "summary": "A segurança cobriu também o caminho entre usuário, site e API.",
+      "details": [
+        "Refresh token em cookie HttpOnly, CSP, tratamento de conteúdo ativo e anti-XSS em callback.",
+        "Segredo de webhook, comparação timing-safe e maior entropia de links.",
+        "BFF com sessão assinada, limites por IP/sessão e teto global; ferramentas do agente público restringidas no servidor."
+      ],
+      "value": "Reduz exposição de tokens e limita o alcance e o custo de uma interação pública.",
+      "refs": [
+        "wpp#693",
+        "wpp#702",
+        "wpp#707",
+        "wpp#708",
+        "wpp#718",
+        "wpp#740",
+        "wpp#743",
+        "wpp#823",
+        "wpp#837"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E098",
+      "group": "seguranca",
+      "title": "Trilha verificável contra adulteração",
+      "summary": "Auditoria ganhou mecanismos que detectam alteração posterior do registro.",
+      "details": [
+        "Corrente SHA-256 por organização, sequência transacional e cabeça com trava.",
+        "Verify, âncoras assinadas e export verificável; registros anteriores classificados como preChain.",
+        "Quarenta escritas simultâneas no teste documentado; timeout da trava evita uma organização parar a trilha inteira."
+      ],
+      "value": "Permite verificar integridade do histórico sem confiar apenas na existência de uma tabela de logs.",
+      "refs": [
+        "bb#429",
+        "bb#493",
+        "bb#611",
+        "bb#613"
+      ],
+      "limit": "A integridade depende das chaves, âncoras e limites de confiança descritos; a implementação não transforma registros históricos anteriores em prova retroativa.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E099",
+      "group": "seguranca",
+      "title": "Biometria própria com captura evidência e revisão",
+      "summary": "Foi construído um building block de biometria ligado ao onboarding e à assinatura de operações.",
+      "details": [
+        "Sessão, captureToken curto e de uso único, página hospedada, política e aparência por tenant.",
+        "Face-engine, documento, selfie, prova de vida e cadastro facial; evidência e retenção.",
+        "Revisão de inconclusivos, proteção contra aprovação de face duvidosa e purga que remove os arquivos reais."
+      ],
+      "value": "Cria uma capacidade de verificação reutilizável nos produtos bancários e no SaaS Biometrics.",
+      "refs": [
+        "bb#329",
+        "bb#398",
+        "bb#502",
+        "bb#522",
+        "bb#539",
+        "bb#541",
+        "bb#551",
+        "bb#552",
+        "bb#553",
+        "bb#554",
+        "bb#556",
+        "wpp#1564",
+        "wpp#1565"
+      ],
+      "limit": "O relatório de avaliação e as normas citadas são declaração interna, sem homologação nem certificação independente, conforme #398.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E100",
+      "group": "seguranca",
+      "title": "Pessoa empresa e representação com evidências",
+      "summary": "Identidade passou a ser um conjunto de informações e autorizações com origem e validade.",
+      "details": [
+        "People com fatos, evidências, melhor contato e noção de atualidade.",
+        "Companies com representante autorizado por ato e valor.",
+        "Cedente empresa e assinatura pelo representante; consultas de bureau com fornecedor e credencial do tenant."
+      ],
+      "value": "Permite justificar quem é o cliente, de onde veio a informação e quem pode representá-lo.",
+      "refs": [
+        "bb#440",
+        "bb#442",
+        "bb#504",
+        "wpp#1628",
+        "wpp#1883"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E101",
+      "group": "seguranca",
+      "title": "Retenção minimização e fronteiras do operador",
+      "summary": "O tratamento de dados pessoais recebeu controles de ciclo de vida e de uso.",
+      "details": [
+        "Data Store com cifra de PII por campo; bureaus com cache e purga de payload.",
+        "RAG por owner/contexto, carteira da consultoria com projeção agregada e trilha sem documento ou chave Pix.",
+        "Eventos de operador em stream próprio; provedores simulados condicionados a concessão e hosts reais em allowlist."
+      ],
+      "value": "Reduz a superfície de dados exposta e separa suporte de plataforma da atividade do cliente.",
+      "refs": [
+        "bb#191",
+        "bb#278",
+        "bb#285",
+        "bb#288",
+        "bb#600",
+        "bb#601",
+        "bb#606",
+        "bb#607",
+        "wpp#773",
+        "wpp#820"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E102",
+      "group": "ecossistema",
+      "title": "Pacotes instaláveis como mecanismo de produto",
+      "summary": "Workflows, agentes e configuração passaram a ser distribuídos como definições compostas.",
+      "details": [
+        "Marketplace de templates e pacotes; dependências, tipos de lead, agentes, workflows e perfis.",
+        "Provisionamento específico por tenant e etapas pós-instalação.",
+        "Mesmo motor atende crédito, Decision, clínica, recrutamento, jurídico e consultoria."
+      ],
+      "value": "Cria um mecanismo repetível para lançar e instalar novas soluções sobre a plataforma.",
+      "refs": [
+        "wpp#85",
+        "wpp#587",
+        "wpp#823",
+        "wpp#868",
+        "wpp#1182",
+        "wpp#1686"
+      ],
+      "limit": "Catálogo, definição no código e instalação efetiva são camadas diferentes; pendências do instalador estão identificadas no inventário.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E103",
+      "group": "ecossistema",
+      "title": "Monetização reutilizável por vertical",
+      "summary": "Cobrança evoluiu de integração pontual para um núcleo compartilhado.",
+      "details": [
+        "Medição de uso, organizações, enforcement e metadados de plano.",
+        "Conta pagadora ligada ao lead, catálogo do cliente, cobrança avulsa, fatura e recebimento.",
+        "Extração do núcleo do Biometrics para adapters de produto; Decision usa os mesmos recursos de cartão e recorrência."
+      ],
+      "value": "Permite transformar uma capacidade técnica em oferta com plano, consumo e cobrança consistente.",
+      "refs": [
+        "wpp#121",
+        "wpp#132",
+        "wpp#1017",
+        "wpp#1021",
+        "wpp#1043",
+        "wpp#1050",
+        "wpp#1620",
+        "wpp#1625",
+        "wpp#1633",
+        "wpp#1634",
+        "wpp#1650",
+        "wpp#1806",
+        "bb#89",
+        "bb#403"
+      ],
+      "limit": "Funcionalidade de cobrança e preços publicados não demonstram faturamento recebido ou retenção comercial.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E104",
+      "group": "ecossistema",
+      "title": "Recrutamento e operação de head hunting",
+      "summary": "Foi desenvolvida uma vertical de recrutamento usando as capacidades comuns.",
+      "details": [
+        "RecruitCRM com 20 custom actions, agentes e webhooks de entrada.",
+        "Fluxos de head hunting e DISC/MBTI, agentes especialistas e atendimento por vídeo.",
+        "Hotsite, BFF, portal e backoffice sobre o kit compartilhado."
+      ],
+      "value": "Demonstra aplicação do motor de agentes, dados e atendimento em um processo especializado.",
+      "refs": [
+        "wpp#311",
+        "wpp#342",
+        "wpp#828"
+      ],
+      "limit": "Classificações comportamentais e análises automatizadas não são apresentadas como validação científica ou certificação.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E105",
+      "group": "ecossistema",
+      "title": "Clínica jurídico fitness consultoria e demonstrações",
+      "summary": "A plataforma foi aplicada a diferentes jornadas de serviço.",
+      "details": [
+        "Clínica e médico autônomo com pacote, portal, agenda, atendimento e conhecimento por paciente.",
+        "Jurídico com agentes, atendimento, pós-consulta e documentos; Personal Trainer com onboarding e roteamento por código.",
+        "Ágora, operação de investimentos, produto digital, seguro auto e outras demonstrações usam o mesmo conjunto de primitivas."
+      ],
+      "value": "Mostra amplitude de composição e reaproveitamento fora do crédito, sem perder a base especializada.",
+      "refs": [
+        "wpp#343",
+        "wpp#417",
+        "wpp#429",
+        "wpp#441",
+        "wpp#823",
+        "wpp#837",
+        "wpp#868",
+        "wpp#904",
+        "wpp#1124",
+        "wpp#1287"
+      ],
+      "limit": "MVP, demo, integração técnica e operação comercial são distinguidos nas fontes; não são contados como clientes pagantes.",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E106",
+      "group": "ecossistema",
+      "title": "Integrações com sistemas de trabalho e comércio",
+      "summary": "Foram criados conectores para usar a plataforma no ambiente do cliente.",
+      "details": [
+        "Outlook e Google Calendar, Gmail/Outlook por OAuth, push, convites de conexão e agenda multi-calendário.",
+        "VTEX com 23 custom actions; Mercado Livre com OAuth, webhooks, ações e agente.",
+        "Slack, storage, Open Finance, extração documental, prescrições e SDKs completam o ecossistema."
+      ],
+      "value": "Reduz trabalho de integração para levar informação e ação aos canais já usados pelo negócio.",
+      "refs": [
+        "wpp#41",
+        "wpp#42",
+        "wpp#202",
+        "wpp#208",
+        "wpp#213",
+        "wpp#253",
+        "wpp#288",
+        "wpp#339",
+        "bb#3",
+        "bb#79",
+        "bb#132",
+        "bb#151",
+        "bb#162",
+        "bb#295",
+        "bb#297"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E107",
+      "group": "ecossistema",
+      "title": "Design system e experiências compartilhadas",
+      "summary": "A interface recebeu componentes e padrões que atendem diferentes produtos.",
+      "details": [
+        "DataTable, ações em lote, filtros, paginação e telas com campos dinâmicos.",
+        "Tokens, moléculas e shell compartilhado; kit de backoffice e portais de verticais.",
+        "Hotsites com tema, BFF, páginas reais, SEO e idioma inglês; wizards adaptados ao painel e ao celular."
+      ],
+      "value": "Faz novas telas herdarem qualidade e reduz a distância entre funcionalidades disponíveis na API e acessíveis ao usuário.",
+      "refs": [
+        "wpp#69",
+        "wpp#190",
+        "wpp#197",
+        "wpp#540",
+        "wpp#546",
+        "wpp#983",
+        "wpp#1023",
+        "wpp#1795",
+        "wpp#1800",
+        "wpp#1807",
+        "wpp#2006"
+      ],
+      "limit": "",
+      "kind": "Capacidade de produto"
+    },
+    {
+      "id": "E108",
+      "group": "ecossistema",
+      "title": "Documentação testes e provas de produto como entregas",
+      "summary": "A engenharia produziu também material para operar, explicar e verificar o que foi construído.",
+      "details": [
+        "Guias, ADRs, auditorias, runbooks, pesquisas, planos de produto e relatórios de smoke.",
+        "Testes unitários, contratos, integração com banco real, E2E, browser e regressões de isolamento.",
+        "Provas de falha e limitações preservadas, com evidências e scripts reutilizáveis."
+      ],
+      "value": "Reduz dependência de conhecimento tácito e melhora a capacidade de apresentar e evoluir o produto.",
+      "refs": [
+        "wpp#11",
+        "wpp#113",
+        "wpp#394",
+        "wpp#662",
+        "wpp#1435",
+        "wpp#2006",
+        "bb#10",
+        "bb#54",
+        "developy#5",
+        "developy#318",
+        "developy#322"
+      ],
+      "limit": "Quantidade de arquivos de teste mede acervo, não quantidade de testes executados nem cobertura percentual.",
+      "kind": "Habilitador"
+    },
+    {
+      "id": "E109",
+      "group": "ecossistema",
+      "title": "Simplificação do legado e trabalho que ficou em ramo",
+      "summary": "A evolução incluiu retirar camadas e experimentar caminhos de marca e white label.",
+      "details": [
+        "Core WhatsApp legado removido da principal na migração aos building blocks.",
+        "Branch de brand migration removeu admin-panel e K8s e recebeu renomes, paleta e branding dinâmico.",
+        "Onze PRs de marca foram mesclados na branch de trabalho; o commit de remoção 6030ad197 não é ancestral do snapshot principal, que ainda contém apps/admin-panel."
+      ],
+      "value": "Permite apresentar tanto a simplificação efetivamente integrada quanto o investimento técnico em uma direção que ficou isolada.",
+      "refs": [
+        "wpp#138",
+        "wpp#292",
+        "wpp#293",
+        "wpp#294",
+        "wpp#295",
+        "wpp#296",
+        "wpp#297",
+        "wpp#298",
+        "wpp#299",
+        "wpp#300",
+        "wpp#301",
+        "wpp#302"
+      ],
+      "limit": "A remoção do admin antigo não deve ser narrada como entrega na principal. Há trabalho implementado em ramo, e não desaparecimento comprovado do componente.",
+      "kind": "Exploração e simplificação"
+    },
+    {
+      "id": "E110",
+      "group": "ecossistema",
+      "title": "Estratégia comercial pesquisa e material de apresentação",
+      "summary": "A construção incluiu o trabalho de definir ofertas e explicar seu valor.",
+      "details": [
+        "Dossiês de crédito, leitura de fluxo FIDC/operação de recebíveis, mapas de setores e posicionamento de produto.",
+        "Guias do originador e deck operação de crédito para saúde, demonstrações de onboarding PJ e propostas de verticais.",
+        "Hotsites com preços, documentação de produto e materiais visuais versionados."
+      ],
+      "value": "Dá suporte a demonstração, venda e posicionamento, ligando engenharia à oferta que será apresentada.",
+      "refs": [
+        "wpp#1114",
+        "wpp#1200",
+        "wpp#1201",
+        "wpp#1203",
+        "wpp#1434",
+        "wpp#1608",
+        "wpp#1631"
+      ],
+      "limit": "Pesquisa, proposta e material comercial são entregas próprias; não são tratados como funcionalidade em produção ou contrato fechado.",
+      "kind": "Estratégia e distribuição"
+    }
+  ],
+  "path": "/home/klederson/Projects/wpp.bb.catalisa.io/docs/reports/2026-10-20-retrospectiva-24-meses/narrativa.json"
+}

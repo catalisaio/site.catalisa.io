@@ -1,0 +1,2389 @@
+{
+  "locale": "da-DK",
+  "date": "2026-10-26T19:01:13.863Z",
+  "sourceCount": 4189,
+  "translated": 4189,
+  "reviewed": 4189,
+  "independentCliReviewed": 4187,
+  "manualSeoSupplementReviewed": 2,
+  "manualSupplement": "editorial-manual-seo-supplement.json",
+  "deltaReviewedBeyondOriginal4031": 158,
+  "coverageComplete": true,
+  "reviewMethod": "Independent full source/translation pair review using authorized Claude CLI without tools, MCP or session persistence; corrections structurally validated before merge.",
+  "style": "du",
+  "capabilityGlossary": [
+    "kapabilitet",
+    "kapabiliteter"
+  ],
+  "manualBalanceLabelPreserved": true,
+  "beforeSha256": "c8e78a86bc99b4d93991f5106fef7a43862a5a7a44032e81f86249de6f2cb858",
+  "afterSha256": "40613d53864557f7106092c71484206f249fe80a1cdf3cd610d0f9c7b0742eb2",
+  "counts": {
+    "skipped-style": 98,
+    "applied-material": 108,
+    "skipped-unsubstantiated": 31,
+    "skipped-manual": 1,
+    "already-current": 5,
+    "skipped-identifier": 1,
+    "skipped-register": 2
+  },
+  "glossaryNormalizations": 27,
+  "decisions": [
+    {
+      "source": "Banking: Identidade, BaaS, Portfólio, Permissões, Eventos conectados em uma jornada",
+      "previous": "Banking: Identitet, BaaS, Portefølje, Rettigheder, Hændelser forbundet i én rejse",
+      "proposed": "Banking: Identitet, BaaS, Portefølje, Tilladelser, Hændelser forbundet i ét forløb",
+      "result": "Banking: Identitet, BaaS, Portefølje, Tilladelser, Hændelser forbundet i ét forløb",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência: 'jornada' = 'forløb' e 'permissões' = 'tilladelser' no restante do site."
+    },
+    {
+      "source": "Definir o que precisa de outra pessoa, em qual etapa e com qual autoridade. O desenho da aprovação faz parte da jornada.",
+      "previous": "Fastlægge, hvad der kræver en anden person, i hvilket trin og med hvilken bemyndigelse. Udformningen af godkendelsen er en del af rejsen.",
+      "proposed": "Fastlægge, hvad der kræver en anden person, i hvilket trin og med hvilken bemyndigelse. Udformningen af godkendelsen er en del af forløbet.",
+      "result": "Fastlægge, hvad der kræver en anden person, i hvilket trin og med hvilken bemyndigelse. Udformningen af godkendelsen er en del af forløbet.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência terminológica: 'jornada' = 'forløb'."
+    },
+    {
+      "source": "Definir o que a jornada pode fazer é tão importante quanto conectar suas ações.",
+      "previous": "At definere, hvad rejsen må gøre, er lige så vigtigt som at forbinde dens handlinger.",
+      "proposed": "At definere, hvad forløbet må gøre, er lige så vigtigt som at forbinde dets handlinger.",
+      "result": "At definere, hvad forløbet må gøre, er lige så vigtigt som at forbinde dets handlinger.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Consistência terminológica: 'jornada' = 'forløb' (ajuste de concordância)."
+    },
+    {
+      "source": "Acesso, tempo de guarda e vínculo com a operação precisam ser definidos na jornada.",
+      "previous": "Adgang, opbevaringstid og tilknytning til driften skal defineres i rejsen.",
+      "proposed": "Adgang, opbevaringstid og tilknytning til driften skal defineres i forløbet.",
+      "result": "Adgang, opbevaringstid og tilknytning til driften skal defineres i forløbet.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência terminológica: 'jornada' = 'forløb'."
+    },
+    {
+      "source": "Usuários e permissões ficam associados à organização e aos papéis definidos para a operação.",
+      "previous": "Brugere og rettigheder er knyttet til organisationen og de roller, der er defineret for driften.",
+      "proposed": "Brugere og tilladelser er knyttet til organisationen og de roller, der er defineret for driften.",
+      "result": "Brugere og tilladelser er knyttet til organisationen og de roller, der er defineret for driften.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência: 'permissões' = 'tilladelser'."
+    },
+    {
+      "source": "Building blocks: biblioteca de capacidades | Catalisa",
+      "previous": "Building blocks: bibliotek af funktioner | Catalisa",
+      "proposed": "Building blocks: bibliotek af kapabiliteter | Catalisa",
+      "result": "Building blocks: bibliotek af kapabiliteter | Catalisa",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência: 'capacidade' = 'kapabilitet' em todo o site."
+    },
+    {
+      "source": "A disponibilidade depende da capacidade, do estágio, das credenciais e dos contratos necessários. Consulte a documentação e valide o fluxo completo antes de planejar o uso em produção.",
+      "previous": "Tilgængeligheden afhænger af funktionen, modenhedsstadiet, legitimationsoplysningerne og de nødvendige kontrakter. Se dokumentationen, og validér hele flowet, før du planlægger brug i produktion.",
+      "proposed": "Tilgængeligheden afhænger af kapabiliteten, modenhedsstadiet, legitimationsoplysningerne og de nødvendige kontrakter. Se dokumentationen, og validér hele flowet, før du planlægger brug i produktion.",
+      "result": "Tilgængeligheden afhænger af kapabiliteten, modenhedsstadiet, legitimationsoplysningerne og de nødvendige kontrakter. Se dokumentationen, og validér hele flowet, før du planlægger brug i produktion.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência: 'capacidade' = 'kapabilitet'."
+    },
+    {
+      "source": "O guia explora uma antecipação ligada à conta: proposta, aceite e acompanhamento. A composição de crédito traz outro ponto de vista para essa continuidade.",
+      "previous": "Guiden udforsker en forudbetaling knyttet til kontoen: tilbud, accept og opfølgning. Kreditkompositionen giver et andet perspektiv på denne kontinuitet.",
+      "proposed": "Guiden udforsker en forudbetaling knyttet til kontoen: tilbud, accept og opfølgning. Kreditsammensætningen giver et andet perspektiv på denne kontinuitet.",
+      "result": "Guiden udforsker en forudbetaling knyttet til kontoen: tilbud, accept og opfølgning. Kreditsammensætningen giver et andet perspektiv på denne kontinuitet.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência: 'composição' = 'sammensætning'."
+    },
+    {
+      "source": "Crie produtos financeiros e jornadas de crédito por composição. Planeje a modernização ou substituição do legado por etapas, validando dados, integrações e continuidade da operação.",
+      "previous": "Byg finansielle produkter og kreditforløb gennem komposition. Planlæg modernisering eller udskiftning af legacy-systemer i etaper, mens data, integrationer og driftens kontinuitet valideres.",
+      "proposed": "Byg finansielle produkter og kreditforløb gennem sammensætning. Planlæg modernisering eller udskiftning af legacy-systemer i etaper, mens data, integrationer og driftens kontinuitet valideres.",
+      "result": "Byg finansielle produkter og kreditforløb gennem sammensætning. Planlæg modernisering eller udskiftning af legacy-systemer i etaper, mens data, integrationer og driftens kontinuitet valideres.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência: 'composição' = 'sammensætning'."
+    },
+    {
+      "source": "O exemplo interrompe a leitura do valor movimentável até esclarecer a divergência. Uma resposta incerta continua identificada como incerta.",
+      "previous": "Eksemplet stopper aflæsningen af det disponible beløb, indtil uoverensstemmelsen er afklaret. Et usikkert svar forbliver markeret som usikkert.",
+      "proposed": "Eksemplet stopper aflæsningen af beløbet, der er tilgængeligt for overførsler, indtil uoverensstemmelsen er afklaret. Et usikkert svar forbliver markeret som usikkert.",
+      "result": "Eksemplet stopper aflæsningen af beløbet, der er tilgængeligt for overførsler, indtil uoverensstemmelsen er afklaret. Et usikkert svar forbliver markeret som usikkert.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Valor movimentável' é saldo disponível para transferências; 'disponible beløb' é genérico demais."
+    },
+    {
+      "source": "Política de crédito na mesa",
+      "previous": "Kreditpolitik på bordet",
+      "proposed": "Kreditpolitik i sagsbehandlingen",
+      "result": "Kreditpolitik i sagsbehandlingen",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Na mesa' refere-se à mesa de crédito; 'på bordet' significa 'em discussão' em dinamarquês."
+    },
+    {
+      "source": "Ampliar acordos e renegociação na mesa",
+      "previous": "Forstør aftaler og genforhandling på bordet",
+      "proposed": "Forstør aftaler og genforhandling i sagsbehandlingen",
+      "result": "Forstør aftaler og genforhandling i sagsbehandlingen",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Mesa' é a mesa de análise; 'på bordet' é tradução literal equivocada."
+    },
+    {
+      "source": "O que você quer colocar no mundo?",
+      "previous": "Hvad vil du sætte i verden?",
+      "proposed": "Hvad vil du bringe ud i verden?",
+      "result": "Hvad vil du bringe ud i verden?",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Sætte i verden' significa dar à luz em dinamarquês; sentido errado."
+    },
+    {
+      "source": "Explorar captura ↗",
+      "previous": "Udforsk indsamling ↗",
+      "proposed": "Udforsk skærmbillede ↗",
+      "result": "Udforsk skærmbillede ↗",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Captura' aqui é captura de tela da interface, não coleta de dados."
+    },
+    {
+      "source": "Conhecer a peça ↗",
+      "previous": "Se komponenten ↗",
+      "proposed": "Lær brikken at kende ↗",
+      "result": "Lær brikken at kende ↗",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência: 'peça' = 'brik' em outras strings; 'Conhecer' = conhecer, não apenas ver."
+    },
+    {
+      "source": "Biometrics: prova de vida e comparação facial | Catalisa",
+      "previous": "Biometrics: livstest og ansigtssammenligning | Catalisa",
+      "proposed": "Biometri: livstest og ansigtssammenligning | Catalisa",
+      "result": "Biometri: livstest og ansigtssammenligning | Catalisa",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome genérico de produto Biometrics deve ser traduzido."
+    },
+    {
+      "source": "Protótipo do desktop do titular · guia de 29/09/2026 · dados de exemplo.",
+      "previous": "Prototype af kontohaverens desktop · vejledning af 29/09/2026 · eksempeldata.",
+      "proposed": "Prototype af kontohaverens desktop · guide fra 29/09/2026 · eksempeldata.",
+      "result": "Prototype af kontohaverens desktop · guide fra 29/09/2026 · eksempeldata.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência com outras legendas ('guide fra')."
+    },
+    {
+      "source": "Entre tocar",
+      "previous": "Mellem tryk",
+      "proposed": "Mellem at trykke",
+      "result": "Mellem at trykke",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Fragmento verbal: 'tocar' é verbo; 'Mellem tryk' perde a estrutura da frase."
+    },
+    {
+      "source": "Leitura disponível",
+      "previous": "Læsning tilgængelig",
+      "proposed": "Aflæsning tilgængelig",
+      "result": "Aflæsning tilgængelig",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "'Leitura' de dados financeiros = 'aflæsning'; 'læsning' soa como leitura de texto."
+    },
+    {
+      "source": "Aguardando a mesa",
+      "previous": "Afventer desken",
+      "proposed": "Afventer kreditafdelingen",
+      "result": "Afventer kreditafdelingen",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Terminologia inconsistente: 'mesa' traduzida como 'kreditafdeling' nos demais textos."
+    },
+    {
+      "source": "monitoramento de obrigações na mesa",
+      "previous": "overvågning af forpligtelser på desken",
+      "proposed": "overvågning af forpligtelser i kreditafdelingen",
+      "result": "overvågning af forpligtelser i kreditafdelingen",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Terminologia inconsistente para 'mesa'."
+    },
+    {
+      "source": "Catálogo, política e condições organizam a construção. A mesa reúne a fila, o dossiê e o acompanhamento. Duas perspectivas para um processo que precisa continuar fazendo sentido.",
+      "previous": "Katalog, politik og betingelser organiserer opbygningen. Sagsbehandlingen samler køen, dossieret og opfølgningen. To perspektiver på en proces, der fortsat skal give mening.",
+      "proposed": "Katalog, politik og betingelser organiserer opbygningen. Kreditafdelingen samler køen, dossieret og opfølgningen. To perspektiver på en proces, der fortsat skal give mening.",
+      "result": "Katalog, politik og betingelser organiserer opbygningen. Kreditafdelingen samler køen, dossieret og opfølgningen. To perspektiver på en proces, der fortsat skal give mening.",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "'Mesa' deve seguir o termo consistente 'kreditafdeling'."
+    },
+    {
+      "source": "Reserva identificada",
+      "previous": "Reservation identificeret",
+      "proposed": "Reserve identificeret",
+      "result": "Reserve identificeret",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Reservation' significa agendamento; trata-se de reserva financeira."
+    },
+    {
+      "source": "O Studio substitui as capacidades da plataforma?",
+      "previous": "Erstatter Studio platformens funktioner?",
+      "proposed": "Erstatter Studio platformens kapabiliteter?",
+      "result": "Erstatter Studio platformens kapabiliteter?",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Terminologia inconsistente: 'capacidades' = 'kapabiliteter'."
+    },
+    {
+      "source": "Explore composições de atendimento, identidade e decisão. Entenda como capacidades com responsabilidades próprias participam de uma mesma jornada.",
+      "previous": "Udforsk sammensætninger af kundeservice, identitet og beslutning. Forstå, hvordan funktioner med egne ansvarsområder indgår i det samme forløb.",
+      "proposed": "Udforsk sammensætninger af kundeservice, identitet og beslutning. Forstå, hvordan kapabiliteter med egne ansvarsområder indgår i det samme forløb.",
+      "result": "Udforsk sammensætninger af kundeservice, identitet og beslutning. Forstå, hvordan kapabiliteter med egne ansvarsområder indgår i det samme forløb.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Terminologia inconsistente: 'capacidades' = 'kapabiliteter'."
+    },
+    {
+      "source": "Um recorte útil pode ser a simulação de uma proposta, a verificação de identidade ou a formalização. Ele precisa ter entrada, saída, responsável e resultado observável. Escolher uma capacidade só porque é simples de extrair pode produzir uma API nova sem melhorar o trabalho de ninguém.",
+      "previous": "Et nyttigt udsnit kan være simulering af et tilbud, identitetsverifikation eller formalisering. Det skal have input, output, en ansvarlig og et observerbart resultat. Hvis man vælger en funktion, blot fordi den er nem at udskille, kan det give en ny API uden at forbedre nogens arbejde.",
+      "proposed": "Et nyttigt udsnit kan være simulering af en ansøgning, identitetsverifikation eller formalisering. Det skal have input, output, en ansvarlig og et observerbart resultat. Hvis man vælger en kapabilitet, blot fordi den er nem at udskille, kan det give en ny API uden at forbedre nogens arbejde.",
+      "result": "Et nyttigt udsnit kan være simulering af en ansøgning, identitetsverifikation eller formalisering. Det skal have input, output, en ansvarlig og et observerbart resultat. Hvis man vælger en kapabilitet, blot fordi den er nem at udskille, kan det give en ny API uden at forbedre nogens arbejde.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência: 'proposta' de crédito = 'ansøgning'; 'capacidade' = 'kapabilitet'."
+    },
+    {
+      "source": "Percurso ilustrativo: Proposta recebida, Consultar cadastro, Consultar documentos, Reunir informações, Aplicar a política",
+      "previous": "Illustrativt forløb: Tilbud modtaget, Slå registrering op, Slå dokumenter op, Saml oplysninger, Anvend politikken",
+      "proposed": "Illustrativt forløb: Ansøgning modtaget, Slå registrering op, Slå dokumenter op, Saml oplysninger, Anvend politikken",
+      "result": "Illustrativt forløb: Ansøgning modtaget, Slå registrering op, Slå dokumenter op, Saml oplysninger, Anvend politikken",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Consistência: 'proposta' de crédito traduzida como 'ansøgning' em outros textos."
+    },
+    {
+      "source": "Uma proposta",
+      "previous": "Et forslag",
+      "proposed": "Én ansøgning",
+      "result": "Én ansøgning",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência com 'proposta' de crédito e com 'Én besked'/'Én samtale'."
+    },
+    {
+      "source": "Tutor",
+      "previous": "Tutor",
+      "proposed": "Ejer",
+      "result": "Ejer",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Tutor' do pet traduzido como 'Ejer' no texto relacionado; 'Tutor' em dinamarquês significa professor."
+    },
+    {
+      "source": "Para quê?",
+      "previous": "Til hvad?",
+      "proposed": "Til hvilket formål?",
+      "result": "Til hvilket formål?",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Til hvad?' soa literal e pouco natural."
+    },
+    {
+      "source": "Explore Banking Platform ↗",
+      "previous": "Udforsk Banking Platform ↗",
+      "proposed": "Udforsk bankplatformen ↗",
+      "result": "Udforsk bankplatformen ↗",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome genérico de produto 'Banking Platform' deve ser traduzido."
+    },
+    {
+      "source": "Conecte o WhatsApp que já faz parte da rotina.",
+      "previous": "Forbind den WhatsApp, der allerede er en del af hverdagen.",
+      "proposed": "Forbind den WhatsApp-konto, der allerede er en del af hverdagen.",
+      "result": "Forbind den WhatsApp-konto, der allerede er en del af hverdagen.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Den WhatsApp' é construção agramatical; explicitar a conta."
+    },
+    {
+      "source": "Originação · Política · Operação",
+      "previous": "Origination · Politik · Drift",
+      "proposed": "Oprettelse · Politik · Drift",
+      "result": "Oprettelse · Politik · Drift",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "\"Origination\" ficou em inglês; termo genérico deve ser traduzido para dinamarquês."
+    },
+    {
+      "source": "A evidência acompanha a decisão.",
+      "previous": "Dokumentationen følger beslutningen.",
+      "proposed": "Dokumentationen følger med beslutningen.",
+      "result": "Dokumentationen følger med beslutningen.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "\"Acompanha\" significa ir junto; \"følger beslutningen\" sugere seguir/obedecer."
+    },
+    {
+      "source": "Mesa + portal",
+      "previous": "Desk + portal",
+      "proposed": "Kreditafdeling + portal",
+      "result": "Kreditafdeling + portal",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "\"Desk\" ficou em inglês; manter consistência com \"kreditafdelingen\" usado para \"mesa\"."
+    },
+    {
+      "source": "Reserva estruturada",
+      "previous": "Struktureret reservation",
+      "proposed": "Struktureret reserve",
+      "result": "Struktureret reserve",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "\"Reservation\" significa agendamento/booking; aqui trata-se de reserva financeira."
+    },
+    {
+      "source": "Protótipo do extrato no desktop · guia de 29/09/2026 · dados de exemplo.",
+      "previous": "Prototype af kontoudtog på desktop · vejledning af 29/09/2026 · eksempeldata.",
+      "proposed": "Prototype af kontoudtog på desktop · guide fra 29.09.2026 · eksempeldata.",
+      "result": "Prototype af kontoudtog på desktop · guide fra 29.09.2026 · eksempeldata.",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "Formato de data e termo \"guide\" consistentes com as demais legendas."
+    },
+    {
+      "source": "Uma operação que você pode acompanhar.",
+      "previous": "En drift, du kan følge.",
+      "proposed": "En drift, du kan følge med i.",
+      "result": "En drift, du kan følge med i.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Formulação mais natural em dinamarquês para \"acompanhar\"."
+    },
+    {
+      "source": "Cor, texto e aviso do aplicativo mudam hoje, sem passar pela loja. Consulte aplicações, estágio e documentação.",
+      "previous": "Appens farver, tekster og meddelelser ændres i dag uden at gå gennem app-butikken. Se applikationer, stadie og dokumentation.",
+      "proposed": "Appens farver, tekster og meddelelser ændres i dag uden at gå gennem app-butikken. Se anvendelser, stadie og dokumentation.",
+      "result": "Appens farver, tekster og meddelelser ændres i dag uden at gå gennem app-butikken. Se anvendelser, stadie og dokumentation.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Consistência: \"aplicações\" é traduzido como \"anvendelser\" nas demais descrições de SEO."
+    },
+    {
+      "source": "Valide autenticação, dependências, entradas e respostas.",
+      "previous": "Valider godkendelse, afhængigheder, input og svar.",
+      "proposed": "Valider autentificering, afhængigheder, input og svar.",
+      "result": "Valider autentificering, afhængigheder, input og svar.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "\"Godkendelse\" significa aprovação; autenticação é \"autentificering\"."
+    },
+    {
+      "source": "Um adaptador pode concentrar particularidades de um provedor, mas não garante troca imediata. Uma alternativa precisa entregar os campos necessários, preservar significado e atender requisitos operacionais. Autenticação, limites, prazos e efeitos também podem mudar.",
+      "previous": "En adapter kan samle en udbyders særlige forhold, men garanterer ikke et øjeblikkeligt skifte. Et alternativ skal levere de nødvendige felter, bevare betydningen og opfylde driftskravene. Godkendelse, grænser, frister og virkninger kan også ændre sig.",
+      "proposed": "En adapter kan samle en udbyders særlige forhold, men garanterer ikke et øjeblikkeligt skifte. Et alternativ skal levere de nødvendige felter, bevare betydningen og opfylde driftskravene. Autentificering, grænser, frister og virkninger kan også ændre sig.",
+      "result": "En adapter kan samle en udbyders særlige forhold, men garanterer ikke et øjeblikkeligt skifte. Et alternativ skal levere de nødvendige felter, bevare betydningen og opfylde driftskravene. Autentificering, grænser, frister og virkninger kan også ændre sig.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "\"Godkendelse\" significa aprovação; autenticação é \"autentificering\"."
+    },
+    {
+      "source": "Jornada conceitual. Explorar os passos não executa consultas, decisões ou operações reais.",
+      "previous": "Konceptuel rejse. At udforske trinnene udfører ikke reelle opslag, beslutninger eller transaktioner.",
+      "proposed": "Konceptuelt forløb. Udforskning af trinnene udfører ikke reelle opslag, beslutninger eller transaktioner.",
+      "result": "Konceptuelt forløb. Udforskning af trinnene udfører ikke reelle opslag, beslutninger eller transaktioner.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência terminológica (\"jornada\" = \"forløb\") e construção mais natural."
+    },
+    {
+      "source": "Uma integração concentra a conversa com um sistema externo. Um contrato claro permite que a jornada use a capacidade sem espalhar particularidades de um fornecedor por toda a experiência.",
+      "previous": "En integration samler kommunikationen med et eksternt system. En klar kontrakt gør det muligt for forløbet at bruge funktionen uden at sprede en leverandørs særegenheder ud over hele oplevelsen.",
+      "proposed": "En integration samler kommunikationen med et eksternt system. En klar kontrakt gør det muligt for forløbet at bruge kapabiliteten uden at sprede en leverandørs særegenheder ud over hele oplevelsen.",
+      "result": "En integration samler kommunikationen med et eksternt system. En klar kontrakt gør det muligt for forløbet at bruge kapabiliteten uden at sprede en leverandørs særegenheder ud over hele oplevelsen.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Consistência: \"capacidade\" é traduzido como \"kapabilitet\" no restante do site."
+    },
+    {
+      "source": "Capacidades",
+      "previous": "Funktioner",
+      "proposed": "Kapabiliteter",
+      "result": "Kapabiliteter",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Consistência: \"capacidades\" é traduzido como \"kapabiliteter\" no restante do site."
+    },
+    {
+      "source": "Escolha o domínio e confira o estágio da capacidade.",
+      "previous": "Vælg domænet, og se funktionens modenhedsstadie.",
+      "proposed": "Vælg domænet, og se kapabilitetens stadie.",
+      "result": "Vælg domænet, og se kapabilitetens stadie.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência terminológica (\"kapabilitet\", \"stadie\")."
+    },
+    {
+      "source": "Protótipo do titular no guia. A imagem descreve o desenho da experiência.",
+      "previous": "Prototype for den registrerede i guiden. Billedet beskriver designet af oplevelsen.",
+      "proposed": "Prototype for kontohaveren i guiden. Billedet beskriver designet af oplevelsen.",
+      "result": "Prototype for kontohaveren i guiden. Billedet beskriver designet af oplevelsen.",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "\"Den registrerede\" é o titular de dados (GDPR); aqui é o titular da conta, como em outras strings."
+    },
+    {
+      "source": "Seu briefing",
+      "previous": "Dit briefing",
+      "proposed": "Din briefing",
+      "result": "Din briefing",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "\"Briefing\" é de gênero comum em dinamarquês (en briefing)."
+    },
+    {
+      "source": "A cobertura depende das fontes conectadas. A avaliação das regras pertence ao Decision Engine; tarefas humanas precisam de uma jornada própria.",
+      "previous": "Dækningen afhænger af de tilsluttede kilder. Evalueringen af reglerne hører under Decision Engine; manuelle opgaver kræver deres egen rejse.",
+      "proposed": "Dækningen afhænger af de tilsluttede kilder. Evalueringen af reglerne hører under Decision Engine; opgaver for mennesker kræver deres eget forløb.",
+      "result": "Dækningen afhænger af de tilsluttede kilder. Evalueringen af reglerne hører under Decision Engine; opgaver for mennesker kræver deres eget forløb.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Terminologia: 'jornada' = 'forløb' no restante do site; 'tarefas humanas' fica mais preciso como 'opgaver for mennesker'."
+    },
+    {
+      "source": "02 / Três responsabilidades em uma mesma jornada",
+      "previous": "02 / Tre ansvarsområder i én og samme rejse",
+      "proposed": "02 / Tre ansvarsområder i ét og samme forløb",
+      "result": "02 / Tre ansvarsområder i ét og samme forløb",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência: 'jornada' = 'forløb'."
+    },
+    {
+      "source": "Enxergue onde a jornada perde força.",
+      "previous": "Se, hvor rejsen mister fart.",
+      "proposed": "Se, hvor forløbet mister fart.",
+      "result": "Se, hvor forløbet mister fart.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência: 'jornada' = 'forløb'."
+    },
+    {
+      "source": "Um exercício útil escolhe uma dependência e observa como a jornada se comporta sem ela. Quem é avisado? O caso pode esperar? Qual ação é bloqueada? Como o trabalho volta ao fluxo depois que o serviço se recupera?",
+      "previous": "En nyttig øvelse er at vælge én afhængighed og se, hvordan rejsen opfører sig uden den. Hvem får besked? Kan sagen vente? Hvilken handling blokeres? Hvordan kommer arbejdet tilbage i flowet, når tjenesten er oppe igen?",
+      "proposed": "En nyttig øvelse er at vælge én afhængighed og se, hvordan forløbet opfører sig uden den. Hvem får besked? Kan sagen vente? Hvilken handling blokeres? Hvordan kommer arbejdet tilbage i flowet, når tjenesten er oppe igen?",
+      "result": "En nyttig øvelse er at vælge én afhængighed og se, hvordan forløbet opfører sig uden den. Hvem får besked? Kan sagen vente? Hvilken handling blokeres? Hvordan kommer arbejdet tilbage i flowet, når tjenesten er oppe igen?",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência: 'jornada' = 'forløb'."
+    },
+    {
+      "source": "Uma jornada possível é a revisão de uma proposta de capital de giro. A instituição define quais informações são relevantes, como avaliar sua qualidade e como tratar períodos incompletos. O cliente entende a finalidade do compartilhamento e acompanha o estado da solicitação.",
+      "previous": "En mulig rejse er gennemgangen af en ansøgning om driftskapital. Institutionen fastlægger, hvilke oplysninger der er relevante, hvordan deres kvalitet vurderes, og hvordan ufuldstændige perioder håndteres. Kunden forstår formålet med delingen og følger anmodningens status.",
+      "proposed": "Et muligt forløb er gennemgangen af en ansøgning om driftskapital. Institutionen fastlægger, hvilke oplysninger der er relevante, hvordan deres kvalitet vurderes, og hvordan ufuldstændige perioder håndteres. Kunden forstår formålet med delingen og følger anmodningens status.",
+      "result": "Et muligt forløb er gennemgangen af en ansøgning om driftskapital. Institutionen fastlægger, hvilke oplysninger der er relevante, hvordan deres kvalitet vurderes, og hvordan ufuldstændige perioder håndteres. Kunden forstår formålet med delingen og følger anmodningens status.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência: 'jornada' = 'forløb'."
+    },
+    {
+      "source": "Explore ideias de produtos com capacidades Catalisa, revise o conceito e experimente diferentes caminhos de composição com IA.",
+      "previous": "Udforsk produktidéer med Catalisa-funktioner, gennemgå konceptet, og afprøv forskellige sammensætninger med AI.",
+      "proposed": "Udforsk produktidéer med Catalisa-kapabiliteter, gennemgå konceptet, og afprøv forskellige sammensætninger med AI.",
+      "result": "Udforsk produktidéer med Catalisa-kapabiliteter, gennemgå konceptet, og afprøv forskellige sammensætninger med AI.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência: 'capacidade' = 'kapabilitet'."
+    },
+    {
+      "source": "Em Alpha, com cobertura parcial da jornada. Serviços de conta e dinheiro ficam nas capacidades bancárias; consulte as funções disponíveis.",
+      "previous": "I Alpha med delvis dækning af forløbet. Konto- og pengetjenester ligger i bankfunktionerne; se de tilgængelige funktioner.",
+      "proposed": "I Alpha med delvis dækning af forløbet. Konto- og pengetjenester ligger i bankkapabiliteterne; se de tilgængelige funktioner.",
+      "result": "I Alpha med delvis dækning af forløbet. Konto- og pengetjenester ligger i bankkapabiliteterne; se de tilgængelige funktioner.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência: 'capacidades bancárias' = 'bankkapabiliteter'."
+    },
+    {
+      "source": "A Catalisa separa essas responsabilidades em building blocks. Cada um oferece uma capacidade que pode participar de jornadas diferentes. O esforço de produto se concentra nas regras, na experiência e nas conexões que tornam aquele negócio específico.",
+      "previous": "Catalisa opdeler disse ansvarsområder i building blocks. Hver af dem tilbyder en funktion, der kan indgå i forskellige forløb. Produktarbejdet samler sig om de regler, den oplevelse og de forbindelser, der gør netop den forretning særlig.",
+      "proposed": "Catalisa opdeler disse ansvarsområder i building blocks. Hver af dem tilbyder en kapabilitet, der kan indgå i forskellige forløb. Produktarbejdet samler sig om de regler, den oplevelse og de forbindelser, der gør netop den forretning særlig.",
+      "result": "Catalisa opdeler disse ansvarsområder i building blocks. Hver af dem tilbyder en kapabilitet, der kan indgå i forskellige forløb. Produktarbejdet samler sig om de regler, den oplevelse og de forbindelser, der gør netop den forretning særlig.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência: 'capacidade' = 'kapabilitet'."
+    },
+    {
+      "source": "Gravação, acesso e uso das informações precisam de autorização e regras de guarda; processamento posterior depende da composição com outras capacidades.",
+      "previous": "Lagring, adgang og brug af oplysningerne kræver autorisation og opbevaringsregler; efterfølgende behandling afhænger af kombinationen med andre funktioner.",
+      "proposed": "Lagring, adgang og brug af oplysningerne kræver autorisation og opbevaringsregler; efterfølgende behandling afhænger af kombinationen med andre kapabiliteter.",
+      "result": "Lagring, adgang og brug af oplysningerne kræver autorisation og opbevaringsregler; efterfølgende behandling afhænger af kombinationen med andre kapabiliteter.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência: 'capacidades' = 'kapabiliteter'."
+    },
+    {
+      "source": "Serviços bancários e autorizações ficam nas capacidades responsáveis. Explicar o saldo não autoriza movimentar dinheiro.",
+      "previous": "Banktjenester og autorisationer ligger i de ansvarlige funktioner. At forklare saldoen giver ikke tilladelse til at flytte penge.",
+      "proposed": "Banktjenester og autorisationer ligger i de ansvarlige kapabiliteter. At forklare saldoen giver ikke tilladelse til at flytte penge.",
+      "result": "Banktjenester og autorisationer ligger i de ansvarlige kapabiliteter. At forklare saldoen giver ikke tilladelse til at flytte penge.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência: 'capacidades' = 'kapabiliteter'."
+    },
+    {
+      "source": "Ampliar Carteira na mesa de crédito",
+      "previous": "Forstør Portefølje i kreditdesken",
+      "proposed": "Forstør Portefølje hos kreditsagsbehandlerne",
+      "result": "Forstør Portefølje hos kreditsagsbehandlerne",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Consistência: 'mesa' é traduzida como 'sagsbehandling/sagsbehandlerne' no restante do site."
+    },
+    {
+      "source": "Mesa / Fila de análise ↗",
+      "previous": "Desk / Analysekø ↗",
+      "proposed": "Sagsbehandling / Analysekø ↗",
+      "result": "Sagsbehandling / Analysekø ↗",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência: 'mesa' = 'sagsbehandling'; 'Desk' é inglês e não está alinhado ao restante."
+    },
+    {
+      "source": "Open Finance & produto",
+      "previous": "Open Finance &amp; produkt",
+      "proposed": "Open Finance & produkt",
+      "result": "Open Finance & produkt",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "A entidade '&amp;' altera o texto original; preservar '&' como na fonte."
+    },
+    {
+      "source": "c.",
+      "previous": "ca.",
+      "proposed": "c.",
+      "result": "c.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'c.' é a marca/símbolo da Catalisa (como em 'c. — versão Principal'), não abreviação de 'cerca'; deve ser preservado."
+    },
+    {
+      "source": "O DESENHO DA OPERAÇÃO",
+      "previous": "DESIGNET AF DRIFTEN",
+      "proposed": "DRIFTENS DESIGN",
+      "result": "DRIFTENS DESIGN",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'DESIGNET AF DRIFTEN' soa como 'desenhado pela operação'; o sentido é 'o desenho da operação'."
+    },
+    {
+      "source": "WhatsApp oficial da Meta, multi-tenant, do primeiro template ao atendimento humano. Consulte aplicações, estágio e documentação.",
+      "previous": "Metas officielle WhatsApp, multi-tenant, fra den første skabelon til manuel betjening. Se anvendelser, modenhedsfase og dokumentation.",
+      "proposed": "Metas officielle WhatsApp, multi-tenant, fra den første skabelon til menneskelig betjening. Se anvendelser, modenhedsstadie og dokumentation.",
+      "result": "Metas officielle WhatsApp, multi-tenant, fra den første skabelon til menneskelig betjening. Se anvendelser, modenhedsstadie og dokumentation.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "'Atendimento humano' = 'menneskelig betjening'; 'estágio' padronizado como 'modenhedsstadie'."
+    },
+    {
+      "source": "movimentáveis.",
+      "previous": "flytbare.",
+      "proposed": "tilgængelige til overførsler.",
+      "result": "tilgængelige til overførsler.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "No exemplo de reserva, 'movimentáveis' indica saldo disponível para transferências, não 'flytbare'."
+    },
+    {
+      "source": "PEÇAS INDEPENDENTES.",
+      "previous": "UAFHÆNGIGE DELE.",
+      "proposed": "SELVSTÆNDIGE KOMPONENTER.",
+      "result": "SELVSTÆNDIGE KOMPONENTER.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência: 'peças independentes' = 'selvstændige komponenter' (como em r_3af641f584c2a47c)."
+    },
+    {
+      "source": "Ampliar bloqueios no console implementado",
+      "previous": "Forstør spærringer i den implementerede konsol",
+      "proposed": "Forstør blokeringer i den implementerede konsol",
+      "result": "Forstør blokeringer i den implementerede konsol",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência com 'IMPLEMENTERET KONSOL / BLOKERINGER'."
+    },
+    {
+      "source": "Ampliar desktop do Banking Platform",
+      "previous": "Forstør Banking Platform-desktop",
+      "proposed": "Forstør bankplatformens desktopversion",
+      "result": "Forstør bankplatformens desktopversion",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome genérico de produto 'Banking Platform' deve ser traduzido ('bankplatform')."
+    },
+    {
+      "source": "Uma necessidade, Pessoas + contexto, Próximo passo",
+      "previous": "Et behov, Personer + kontekst, Næste skridt",
+      "proposed": "Et behov, Personer + kontekst, Næste trin",
+      "result": "Et behov, Personer + kontekst, Næste trin",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência: 'próximo passo' = 'næste trin' no restante do site."
+    },
+    {
+      "source": "Criando seu conceito…",
+      "previous": "Opretter dit koncept …",
+      "proposed": "Opretter dit koncept…",
+      "result": "Opretter dit koncept…",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência tipográfica das reticências com 'Gemmer din kontakt…'."
+    },
+    {
+      "source": "Ampliar Operações e condições de liberação",
+      "previous": "Forstør Operationer og udbetalingsbetingelser",
+      "proposed": "Forstør Transaktioner og udbetalingsbetingelser",
+      "result": "Forstør Transaktioner og udbetalingsbetingelser",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "No contexto de crédito, 'operações' = 'transaktioner', como em outras strings."
+    },
+    {
+      "source": "Ⅱ Pausar movimento",
+      "previous": "Ⅱ Sæt bevægelse på pause",
+      "proposed": "Ⅱ Sæt animation på pause",
+      "result": "Ⅱ Sæt animation på pause",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Pausar movimento' é controle de animação; 'bevægelse' soa literal."
+    },
+    {
+      "source": "Uma leitura melhor",
+      "previous": "En bedre læsning",
+      "proposed": "Et bedre overblik",
+      "result": "Et bedre overblik",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'En bedre læsning' é decalque literal; 'leitura' aqui significa visão/compreensão."
+    },
+    {
+      "source": "Pode movimentar",
+      "previous": "Disponibel saldo",
+      "proposed": "Disponibelt til overførsel",
+      "result": "Disponibelt til overførsel",
+      "outcome": "skipped-manual",
+      "why": "Preserve owner-reviewed available-balance label",
+      "reviewReason": "'Pode movimentar' indica saldo disponível para transferências, não saldo genérico."
+    },
+    {
+      "source": "Decisão",
+      "previous": "Beslutninger",
+      "proposed": "Beslutning",
+      "result": "Beslutning",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Rótulo de produto Decision deve ficar no singular (decisão), consistente com os demais rótulos."
+    },
+    {
+      "source": "aplicativo Banking",
+      "previous": "Banking-app",
+      "proposed": "bankapp",
+      "result": "bankapp",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome genérico de produto Banking deve ser traduzido (banking platform → bank)."
+    },
+    {
+      "source": "Banking, crédito e decisão mostram a profundidade da base. Copiloto e atendimento mostram como ela atravessa setores. Os mapas são conceituais; aplicações propostas e integrações a validar estão identificadas.",
+      "previous": "Banking, kredit og beslutning viser basens dybde. Copilot og kundeservice viser, hvordan den går på tværs af sektorer. Kortene er konceptuelle; foreslåede anvendelser og integrationer, der endnu skal valideres, er markeret.",
+      "proposed": "Bank, kredit og beslutning viser basens dybde. Copilot og kundeservice viser, hvordan den går på tværs af sektorer. Kortene er konceptuelle; foreslåede anvendelser og integrationer, der endnu skal valideres, er markeret.",
+      "result": "Bank, kredit og beslutning viser basens dybde. Copilot og kundeservice viser, hvordan den går på tværs af sektorer. Kortene er konceptuelle; foreslåede anvendelser og integrationer, der endnu skal valideres, er markeret.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Rótulo genérico Banking deve ser traduzido para manter consistência com crédito e decisão."
+    },
+    {
+      "source": "Conheça a composição Med: atendimento pelo WhatsApp, contexto e agenda para clínicas, com revisão humana e responsabilidade pelo prontuário.",
+      "previous": "Mød Med-kompositionen: kundeservice via WhatsApp, kontekst og tidsbestilling for klinikker, med menneskelig gennemgang og ansvar for journalen.",
+      "proposed": "Lær sundhedskompositionen at kende: kundeservice via WhatsApp, kontekst og tidsbestilling for klinikker, med menneskelig gennemgang og ansvar for journalen.",
+      "result": "Lær sundhedskompositionen at kende: kundeservice via WhatsApp, kontekst og tidsbestilling for klinikker, med menneskelig gennemgang og ansvar for journalen.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Med é nome genérico de produto e deve ser traduzido (saúde); 'Mød' soava literal."
+    },
+    {
+      "source": "Preservar a Home, Visão, Lab no topo e as composições de cada família. Comparar estados e telas com a referência.",
+      "previous": "Bevar Home, Visão, Lab øverst og kompositionerne for hver familie. Sammenlign tilstande og skærme med referencen.",
+      "proposed": "Bevar Home, Vision, Lab øverst og kompositionerne for hver familie. Sammenlign tilstande og skærme med referencen.",
+      "result": "Bevar Home, Vision, Lab øverst og kompositionerne for hver familie. Sammenlign tilstande og skærme med referencen.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Português remanescente ('Visão')."
+    },
+    {
+      "source": "Composição ilustrativa das capacidades",
+      "previous": "Illustrativ sammensætning af funktionerne",
+      "proposed": "Illustrativ sammensætning af kapabiliteterne",
+      "result": "Illustrativ sammensætning af kapabiliteterne",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Terminologia inconsistente: 'capacidades' é traduzido como 'kapabiliteter' no restante do site."
+    },
+    {
+      "source": "Esteira e operação de crédito",
+      "previous": "Kreditflow og kreditdrift",
+      "proposed": "Kreditpipeline og kreditdrift",
+      "result": "Kreditpipeline og kreditdrift",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Terminologia inconsistente: 'esteira' é 'pipeline' nas demais strings."
+    },
+    {
+      "source": "Companies: representação e poderes de empresas | Catalisa",
+      "previous": "Companies: repræsentation og fuldmagter for virksomheder | Catalisa",
+      "proposed": "Companies: repræsentation og beføjelser for virksomheder | Catalisa",
+      "result": "Companies: repræsentation og beføjelser for virksomheder | Catalisa",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Poderes' é traduzido como 'beføjelser' em outros textos; 'fuldmagter' muda o sentido."
+    },
+    {
+      "source": "Site market insights require the authenticated site operator inbox",
+      "previous": "Markedsindsigt for sitet kræver den godkendte indbakke for sitets operatør",
+      "proposed": "Markedsindsigt for sitet kræver den autentificerede indbakke for sitets operatør",
+      "result": "Markedsindsigt for sitet kræver den autentificerede indbakke for sitets operatør",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Authenticated' significa autenticado, não aprovado ('godkendt')."
+    },
+    {
+      "source": "FSB · relatório final de 15 out 2026",
+      "previous": "FSB · endelig rapport af 15. okt. 2026",
+      "proposed": "FSB · endelig rapport fra 15. okt. 2026",
+      "result": "FSB · endelig rapport fra 15. okt. 2026",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Preposição mais natural em dinamarquês para datas."
+    },
+    {
+      "source": "Encontre sua próxima peça.",
+      "previous": "Find dit næste stykke.",
+      "proposed": "Find din næste brik.",
+      "result": "Find din næste brik.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Peça' aqui é peça de composição (brik); 'stykke' soa literal."
+    },
+    {
+      "source": "da continuidade.",
+      "previous": "kontinuiteten.",
+      "proposed": "af kontinuiteten.",
+      "result": "af kontinuiteten.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Fragmento perdeu a preposição 'da'; preservar papel sintático."
+    },
+    {
+      "source": "Conheça a visão da Catalisa sobre capacidades combináveis, autonomia e responsabilidade na construção de produtos e operações.",
+      "previous": "Lær Catalisas vision for kombinerbare kapabiliteter, autonomi og ansvar i udviklingen af produkter og forretninger.",
+      "proposed": "Få indblik i Catalisas vision for kombinerbare kapabiliteter, autonomi og ansvar i udviklingen af produkter og forretninger.",
+      "result": "Få indblik i Catalisas vision for kombinerbare kapabiliteter, autonomi og ansvar i udviklingen af produkter og forretninger.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Lær ... vision for' é gramaticalmente incompleto/estranho em dinamarquês."
+    },
+    {
+      "source": "A Plataforma utiliza Agentes IA que processam dados pessoais de forma automatizada para gerar respostas, classificar solicitações e executar Workflows.\n\nConforme a LGPD (Art. 20), você tem o direito de solicitar revisão humana de decisões tomadas unicamente com base em tratamento automatizado de dados pessoais que afetem seus interesses, incluindo decisões sobre perfilamento.\n\nPara solicitar revisão humana ou obter informações sobre a lógica utilizada nas decisões automatizadas, entre em contato com nosso Encarregado de Proteção de Dados através do e-mail privacidade@catalisa.io. Responderemos em até 15 (quinze) dias úteis.",
+      "previous": "Platformen bruger AI-agenter, der behandler personoplysninger automatiseret for at generere svar, klassificere anmodninger og udføre Workflows.\n\nI henhold til LGPD (art. 20) har du ret til at anmode om menneskelig gennemgang af beslutninger, der udelukkende er truffet på grundlag af automatiseret behandling af personoplysninger, og som påvirker dine interesser, herunder beslutninger om profilering.\n\nFor at anmode om menneskelig gennemgang eller få oplysninger om den logik, der anvendes i de automatiserede beslutninger, kan du kontakte vores databeskyttelsesansvarlige (Encarregado de Proteção de Dados) via e-mail på privacidade@catalisa.io. Vi svarer inden for 15 (femten) arbejdsdage.",
+      "proposed": "Platformen bruger AI-agenter, der behandler personoplysninger automatisk for at generere svar, klassificere anmodninger og udføre Workflows.\n\nI henhold til LGPD (art. 20) har du ret til at anmode om menneskelig gennemgang af beslutninger, der udelukkende er truffet på grundlag af automatiseret behandling af personoplysninger, og som påvirker dine interesser, herunder beslutninger om profilering.\n\nFor at anmode om menneskelig gennemgang eller få oplysninger om den logik, der anvendes i de automatiserede beslutninger, kan du kontakte vores databeskyttelsesansvarlige (Encarregado de Proteção de Dados) via e-mail på privacidade@catalisa.io. Vi svarer inden for 15 (femten) arbejdsdage.",
+      "result": "Platformen bruger AI-agenter, der behandler personoplysninger automatisk for at generere svar, klassificere anmodninger og udføre Workflows.\n\nI henhold til LGPD (art. 20) har du ret til at anmode om menneskelig gennemgang af beslutninger, der udelukkende er truffet på grundlag af automatiseret behandling af personoplysninger, og som påvirker dine interesser, herunder beslutninger om profilering.\n\nFor at anmode om menneskelig gennemgang eller få oplysninger om den logik, der anvendes i de automatiserede beslutninger, kan du kontakte vores databeskyttelsesansvarlige (Encarregado de Proteção de Dados) via e-mail på privacidade@catalisa.io. Vi svarer inden for 15 (femten) arbejdsdage.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'behandler ... automatiseret' é agramatical; advérbio correto é 'automatisk'."
+    },
+    {
+      "source": "Uma leitura da jornada / Atendimento",
+      "previous": "En gennemgang af rejsen / Kundeservice",
+      "proposed": "En gennemgang af forløbet / Kundeservice",
+      "result": "En gennemgang af forløbet / Kundeservice",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Consistência: 'jornada' traduzido como 'forløb'; 'rejse' soa literal."
+    },
+    {
+      "source": "Texto, imagem e áudio participam de tarefas com contexto. As ações continuam sujeitas ao papel definido para cada jornada.",
+      "previous": "Tekst, billede og lyd indgår i opgaver med kontekst. Handlingerne er fortsat underlagt den rolle, der er defineret for hver rejse.",
+      "proposed": "Tekst, billede og lyd indgår i opgaver med kontekst. Handlingerne er fortsat underlagt den rolle, der er defineret for hvert forløb.",
+      "result": "Tekst, billede og lyd indgår i opgaver med kontekst. Handlingerne er fortsat underlagt den rolle, der er defineret for hvert forløb.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência terminológica de 'jornada' (forløb)."
+    },
+    {
+      "source": "A jornada prepara o documento, define os participantes e acompanha as etapas junto ao provedor de assinatura.",
+      "previous": "Rejsen forbereder dokumentet, fastlægger deltagerne og følger trinnene hos signaturudbyderen.",
+      "proposed": "Forløbet forbereder dokumentet, fastlægger deltagerne og følger trinnene hos signaturudbyderen.",
+      "result": "Forløbet forbereder dokumentet, fastlægger deltagerne og følger trinnene hos signaturudbyderen.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência terminológica de 'jornada' (forløb)."
+    },
+    {
+      "source": "Quando estiver pronto, você poderá explorar as telas, as peças e a jornada.",
+      "previous": "Når den er klar, kan du udforske skærmene, elementerne og rejsen.",
+      "proposed": "Når den er klar, kan du udforske skærmene, elementerne og forløbet.",
+      "result": "Når den er klar, kan du udforske skærmene, elementerne og forløbet.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência terminológica de 'jornada' (forløb)."
+    },
+    {
+      "source": "Conversão da jornada",
+      "previous": "Rejsens konvertering",
+      "proposed": "Konvertering i forløbet",
+      "result": "Konvertering i forløbet",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência terminológica de 'jornada' (forløb)."
+    },
+    {
+      "source": "a jornada",
+      "previous": "rejsen",
+      "proposed": "forløbet",
+      "result": "forløbet",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência terminológica de 'jornada' (forløb)."
+    },
+    {
+      "source": "O papel da IA e os limites da jornada precisam ser definidos. Regras de negócio, permissões, decisões importantes e revisão humana devem estar explícitas. A composição precisa respeitar essas responsabilidades.",
+      "previous": "AI'ens rolle og rejsens grænser skal defineres. Forretningsregler, tilladelser, vigtige beslutninger og menneskelig gennemgang skal være eksplicitte. Sammensætningen skal respektere disse ansvarsområder.",
+      "proposed": "AI'ens rolle og forløbets grænser skal defineres. Forretningsregler, tilladelser, vigtige beslutninger og menneskelig gennemgang skal være eksplicitte. Sammensætningen skal respektere disse ansvarsområder.",
+      "result": "AI'ens rolle og forløbets grænser skal defineres. Forretningsregler, tilladelser, vigtige beslutninger og menneskelig gennemgang skal være eksplicitte. Sammensætningen skal respektere disse ansvarsområder.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência terminológica de 'jornada' (forløb)."
+    },
+    {
+      "source": "Jornadas ilustrativas conectam capacidades reais, preservando suas fronteiras.",
+      "previous": "Illustrative rejser forbinder reelle kapabiliteter og bevarer deres grænser.",
+      "proposed": "Illustrative forløb forbinder reelle kapabiliteter og bevarer deres grænser.",
+      "result": "Illustrative forløb forbinder reelle kapabiliteter og bevarer deres grænser.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência terminológica de 'jornada' (forløb)."
+    },
+    {
+      "source": "Recebíveis: Dados, Cálculo, Pricing, Decisão, Assinatura conectados em uma jornada",
+      "previous": "Tilgodehavender: Data, Beregning, Pricing, Beslutning, Signatur forbundet i én rejse",
+      "proposed": "Tilgodehavender: Data, Beregning, Pricing, Beslutning, Signatur forbundet i ét forløb",
+      "result": "Tilgodehavender: Data, Beregning, Pricing, Beslutning, Signatur forbundet i ét forløb",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência terminológica de 'jornada' (forløb)."
+    },
+    {
+      "source": "Uma falha de consulta gera uma pendência técnica. A jornada informa o próximo passo em vez de apresentar uma negativa de crédito.",
+      "previous": "En fejl i et opslag skaber en teknisk udestående opgave. Rejsen oplyser næste trin i stedet for at vise et kreditafslag.",
+      "proposed": "En fejl i et opslag skaber en teknisk udestående opgave. Forløbet oplyser næste trin i stedet for at vise et kreditafslag.",
+      "result": "En fejl i et opslag skaber en teknisk udestående opgave. Forløbet oplyser næste trin i stedet for at vise et kreditafslag.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência terminológica de 'jornada' (forløb)."
+    },
+    {
+      "source": "Captura da mesa com múltiplos produtos e dados do tenant de demonstração.",
+      "previous": "Skærmbillede af arbejdsfladen med flere produkter og data fra demo-tenanten.",
+      "proposed": "Skærmbillede af desken med flere produkter og data fra demo-tenanten.",
+      "result": "Skærmbillede af desken med flere produkter og data fra demo-tenanten.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Terminologia inconsistente: 'mesa' é traduzido como 'desk' nas demais strings."
+    },
+    {
+      "source": "03 / CONSOLE",
+      "previous": "03 / KONSOL",
+      "proposed": "03 / CONSOLE",
+      "result": "03 / CONSOLE",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência: 'Console' é mantido como nome da interface nas demais strings."
+    },
+    {
+      "source": "Ampliar Console / Pessoas e acessos — Protótipo do console / pessoas e acessos · guia de 29/09/2026 · dados de exemplo.",
+      "previous": "Forstør Console / Personer og adgange — Prototype af console / personer og adgange · guide af 29/09/2026 · eksempeldata.",
+      "proposed": "Forstør Console / Personer og adgange — Prototype af console / personer og adgange · guide fra 29.09.2026 · eksempeldata.",
+      "result": "Forstør Console / Personer og adgange — Prototype af console / personer og adgange · guide fra 29.09.2026 · eksempeldata.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Consistência de preposição e formato de data com a string equivalente."
+    },
+    {
+      "source": "Uma proposta pronta para ser lida.",
+      "previous": "Et forslag klar til at blive læst.",
+      "proposed": "En ansøgning, der er klar til at blive læst.",
+      "result": "En ansøgning, der er klar til at blive læst.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "No contexto de crédito, 'proposta' é traduzida como 'ansøgning'; 'forslag' é inconsistente."
+    },
+    {
+      "source": "Da proposta à vida da operação.",
+      "previous": "Fra tilbud til hele operationens levetid.",
+      "proposed": "Fra ansøgning til hele transaktionens levetid.",
+      "result": "Fra ansøgning til hele transaktionens levetid.",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "'Proposta' de crédito = 'ansøgning'; 'operação' aqui é a operação de crédito."
+    },
+    {
+      "source": "Carteira, recebimentos e obrigações precisam de acompanhamento. A operação preserva o contexto para o que acontece ao longo do tempo.",
+      "previous": "Portefølje, indbetalinger og forpligtelser kræver opfølgning. Operationen bevarer konteksten for det, der sker over tid.",
+      "proposed": "Portefølje, indbetalinger og forpligtelser kræver opfølgning. Driften bevarer konteksten for det, der sker over tid.",
+      "result": "Portefølje, indbetalinger og forpligtelser kræver opfølgning. Driften bevarer konteksten for det, der sker over tid.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Operação' é traduzida como 'driften' nas demais strings."
+    },
+    {
+      "source": "O cliente combina informações pelo WhatsApp e a proposta continua sem esse histórico.",
+      "previous": "Kunden aftaler oplysninger via WhatsApp, og forslaget fortsætter uden den historik.",
+      "proposed": "Kunden aftaler detaljer via WhatsApp, og ansøgningen fortsætter uden den historik.",
+      "result": "Kunden aftaler detaljer via WhatsApp, og ansøgningen fortsætter uden den historik.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência: 'proposta' = 'ansøgning'; 'aftaler oplysninger' soa estranho."
+    },
+    {
+      "source": "Dê um lugar aos documentos da jornada.",
+      "previous": "Giv rejsens dokumenter et sted.",
+      "proposed": "Giv forløbets dokumenter et sted.",
+      "result": "Giv forløbets dokumenter et sted.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Terminologia: 'jornada' é traduzida como 'forløb' na maioria das strings."
+    },
+    {
+      "source": "A jornada consulta a disponibilidade das agendas conectadas para oferecer e organizar o encontro.",
+      "previous": "Rejsen tjekker tilgængeligheden i de forbundne kalendere for at tilbyde og organisere mødet.",
+      "proposed": "Forløbet tjekker tilgængeligheden i de forbundne kalendere for at tilbyde og organisere mødet.",
+      "result": "Forløbet tjekker tilgængeligheden i de forbundne kalendere for at tilbyde og organisere mødet.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Terminologia: 'jornada' = 'forløb'."
+    },
+    {
+      "source": "Consentimento é estado da jornada",
+      "previous": "Samtykke er en del af rejsens tilstand",
+      "proposed": "Samtykke er en del af forløbets tilstand",
+      "result": "Samtykke er en del af forløbets tilstand",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Terminologia: 'jornada' = 'forløb'."
+    },
+    {
+      "source": "A porta do aplicativo de banco digital, sem regra de dinheiro própria. Consulte aplicações, estágio e documentação.",
+      "previous": "Indgangen til den digitale bankapp uden egne pengeregler. Se applikationer, fase og dokumentation.",
+      "proposed": "Indgangen til den digitale bankapp uden egne pengeregler. Se anvendelser, stadie og dokumentation.",
+      "result": "Indgangen til den digitale bankapp uden egne pengeregler. Se anvendelser, stadie og dokumentation.",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "'Aplicações' = casos de uso; 'estágio' = 'stadie' como no restante do site."
+    },
+    {
+      "source": "Provisiona e monitora sua conta Meta Business com a WABA no seu próprio nome. Consulte aplicações, estágio e documentação.",
+      "previous": "Opretter og overvåger din Meta Business-konto med WABA i dit eget navn. Se ansøgninger, status og dokumentation.",
+      "proposed": "Opretter og overvåger din Meta Business-konto med WABA i dit eget navn. Se anvendelser, stadie og dokumentation.",
+      "result": "Opretter og overvåger din Meta Business-konto med WABA i dit eget navn. Se anvendelser, stadie og dokumentation.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Ansøgninger' é erro de tradução (candidaturas); 'estágio' = 'stadie' (maturidade), não 'status'."
+    },
+    {
+      "source": "Com o acesso permitido, posso consultar o contexto de saldo e reservas para explicar a diferença.",
+      "previous": "Med den tilladte adgang kan jeg slå konteksten for saldo og reservationer op for at forklare forskellen.",
+      "proposed": "Med den tilladte adgang kan jeg slå konteksten for saldo og reserver op for at forklare forskellen.",
+      "result": "Med den tilladte adgang kan jeg slå konteksten for saldo og reserver op for at forklare forskellen.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Reservas' financeiras = 'reserver', não 'reservationer' (reservas de agendamento)."
+    },
+    {
+      "source": "O valor movimentável está em conferência.",
+      "previous": "Det disponible beløb er under kontrol.",
+      "proposed": "Det beløb, der kan overføres, er ved at blive kontrolleret.",
+      "result": "Det beløb, der kan overføres, er ved at blive kontrolleret.",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "'Valor movimentável' = disponível para transferências; 'under kontrol' é ambíguo (sob controle)."
+    },
+    {
+      "source": "Padrões de adoção",
+      "previous": "Adoptionsmønstre",
+      "proposed": "Mønstre for ibrugtagning",
+      "result": "Mønstre for ibrugtagning",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Adoption' em dinamarquês remete a adoção de crianças; tradução literal inadequada."
+    },
+    {
+      "source": "Acervo da casa",
+      "previous": "Husets samling",
+      "proposed": "Husets vidensarkiv",
+      "result": "Husets vidensarkiv",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Consistência: 'acervo' é traduzido como 'vidensarkiv' em outra string."
+    },
+    {
+      "source": "Experiências Banking",
+      "previous": "Banking-oplevelser",
+      "proposed": "Bankoplevelser",
+      "result": "Bankoplevelser",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Rótulo de produto inconsistente; usar 'Bankoplevelser' como nas demais strings."
+    },
+    {
+      "source": "Credit Platform: desenhe seu produto de crédito | Catalisa",
+      "previous": "Credit Platform: design dit kreditprodukt | Catalisa",
+      "proposed": "Kreditplatform: design dit kreditprodukt | Catalisa",
+      "result": "Kreditplatform: design dit kreditprodukt | Catalisa",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome genérico de produto 'Credit Platform' deve ser traduzido."
+    },
+    {
+      "source": "Med: assistente de IA para clínicas | Catalisa",
+      "previous": "Med: AI-assistent til klinikker | Catalisa",
+      "proposed": "Sundhed: AI-assistent til klinikker | Catalisa",
+      "result": "Sundhed: AI-assistent til klinikker | Catalisa",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome genérico de produto 'Med' deve ser traduzido (saúde)."
+    },
+    {
+      "source": "uma direção.",
+      "previous": "én retning.",
+      "proposed": "en retning.",
+      "result": "en retning.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Uma direção' é artigo indefinido, não ênfase numérica; 'én' altera o sentido."
+    },
+    {
+      "source": "Banking Platform: crie seu produto financeiro | Catalisa",
+      "previous": "Banking Platform: skab dit finansielle produkt | Catalisa",
+      "proposed": "Bankplatform: skab dit finansielle produkt | Catalisa",
+      "result": "Bankplatform: skab dit finansielle produkt | Catalisa",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome genérico de produto (Banking Platform) deve ser traduzido."
+    },
+    {
+      "source": "Contas, Pix e TED por API, com o banco parceiro trocável sem reescrever a integração. Consulte aplicações, estágio e documentação.",
+      "previous": "Konti, Pix og TED via API, hvor partnerbanken kan udskiftes uden at omskrive integrationen. Se anvendelser, modenhedsfase og dokumentation.",
+      "proposed": "Konti, Pix og TED via API, hvor partnerbanken kan udskiftes uden at omskrive integrationen. Se anvendelser, modenhedsstadie og dokumentation.",
+      "result": "Konti, Pix og TED via API, hvor partnerbanken kan udskiftes uden at omskrive integrationen. Se anvendelser, modenhedsstadie og dokumentation.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Terminologia inconsistente: usar 'modenhedsstadie' como nas demais descrições."
+    },
+    {
+      "source": "Upload e download de arquivos direto no S3, isolados por empresa cliente. Consulte aplicações, estágio e documentação.",
+      "previous": "Upload og download af filer direkte i S3, isoleret pr. kundevirksomhed. Se anvendelser, modenhedsfase og dokumentation.",
+      "proposed": "Upload og download af filer direkte i S3, isoleret pr. kundevirksomhed. Se anvendelser, modenhedsstadie og dokumentation.",
+      "result": "Upload og download af filer direkte i S3, isoleret pr. kundevirksomhed. Se anvendelser, modenhedsstadie og dokumentation.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Terminologia inconsistente: usar 'modenhedsstadie' como nas demais descrições."
+    },
+    {
+      "source": "Mesa / Operações ↗",
+      "previous": "Desk / Drift ↗",
+      "proposed": "Sagsbehandling / Transaktioner ↗",
+      "result": "Sagsbehandling / Transaktioner ↗",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência com outras ocorrências de 'Mesa / Operações' traduzidas como 'Sagsbehandling / Transaktioner'."
+    },
+    {
+      "source": "Exemplo de desenho: app do cliente, portal do parceiro e mesa consomem cálculo e precificação. Cada canal organiza sua interface; política, parâmetros e versão permanecem identificáveis na base. A migração começa por uma modalidade, com comparação de resultados e plano de retorno.",
+      "previous": "Designeksempel: kundens app, partnerportalen og desken anvender beregning og prissætning. Hver kanal organiserer sin egen grænseflade; politik, parametre og version forbliver identificerbare i fundamentet. Migreringen begynder med én låntype, med sammenligning af resultater og en tilbagerulningsplan.",
+      "proposed": "Designeksempel: kundens app, partnerportalen og sagsbehandlingen anvender beregning og prissætning. Hver kanal organiserer sin egen grænseflade; politik, parametre og version forbliver identificerbare i fundamentet. Migreringen begynder med én låntype, med sammenligning af resultater og en tilbagerulningsplan.",
+      "result": "Designeksempel: kundens app, partnerportalen og sagsbehandlingen anvender beregning og prissætning. Hver kanal organiserer sin egen grænseflade; politik, parametre og version forbliver identificerbare i fundamentet. Migreringen begynder med én låntype, med sammenligning af resultater og en tilbagerulningsplan.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Consistência terminológica: 'mesa' traduzida como 'sagsbehandling' no restante do site."
+    },
+    {
+      "source": "catalisa — versão Grafite",
+      "previous": "catalisa – Grafit-version",
+      "proposed": "catalisa — grafitversion",
+      "result": "catalisa — grafitversion",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência de formato com 'hvid version' e 'hovedversion' (travessão e minúscula)."
+    },
+    {
+      "source": "Negativa",
+      "previous": "Afslag",
+      "proposed": "Negativ",
+      "result": "Negativ",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "Em recursos de marca, 'Negativa' é a versão negativa do logo, não recusa de crédito."
+    },
+    {
+      "source": "O correspondente usa a conta de trabalho",
+      "previous": "Agenten bruger arbejdskontoen",
+      "proposed": "Formidleren bruger arbejdskontoen",
+      "result": "Formidleren bruger arbejdskontoen",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "'Correspondente' (bancário) não é 'agente'; evita confusão com agentes de IA."
+    },
+    {
+      "source": "Tempo entre a regra aprovada e sua chegada aos canais.",
+      "previous": "Tid fra godkendt regel til den når kanalerne.",
+      "proposed": "Tiden fra en regel godkendes, til den når kanalerne.",
+      "result": "Tiden fra en regel godkendes, til den når kanalerne.",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "Construção truncada e pouco natural em dinamarquês."
+    },
+    {
+      "source": "Ampliar aplicativo Banking",
+      "previous": "Forstør Banking-appen",
+      "proposed": "Forstør bank-appen",
+      "result": "Forstør bank-appen",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "Rótulo genérico deve ser traduzido de forma natural."
+    },
+    {
+      "source": "CAPACIDADES COM RESPONSABILIDADE",
+      "previous": "ANSVARLIGE KAPABILITETER",
+      "proposed": "FUNKTIONER MED ANSVAR",
+      "result": "KAPABILITETER MED ANSVAR",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Uniformizar 'capacidades' como 'funktioner' (termo predominante)."
+    },
+    {
+      "source": "Conecte as capacidades.",
+      "previous": "Forbind kapabiliteterne.",
+      "proposed": "Forbind funktionerne.",
+      "result": "Forbind kapabiliteterne.",
+      "outcome": "already-current",
+      "why": "Current value already equals the proposal",
+      "reviewReason": "Uniformizar 'capacidades' como 'funktioner'."
+    },
+    {
+      "source": "Capacidades neste exemplo",
+      "previous": "Kapabiliteter i dette eksempel",
+      "proposed": "Funktioner i dette eksempel",
+      "result": "Kapabiliteter i dette eksempel",
+      "outcome": "already-current",
+      "why": "Current value already equals the proposal",
+      "reviewReason": "Uniformizar 'capacidades' como 'funktioner'."
+    },
+    {
+      "source": "Building blocks organizam capacidades. Workflows conectam etapas. Agentes aproximam conversa e ação. Governança estabelece limites e mantém o histórico do que acontece.",
+      "previous": "Building blocks organiserer funktioner. Workflows forbinder trin. Agenter bringer samtale og handling tættere sammen. Governance sætter grænser og bevarer historikken over, hvad der sker.",
+      "proposed": "Byggeklodser organiserer funktioner. Workflows forbinder trin. Agenter bringer samtale og handling tættere sammen. Governance sætter grænser og bevarer historikken over, hvad der sker.",
+      "result": "Byggeklodser organiserer kapabiliteter. Workflows forbinder trin. Agenter bringer samtale og handling tættere sammen. Governance sætter grænser og bevarer historikken over, hvad der sker.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Building blocks' genérico já traduzido como 'byggeklodser' no restante do site."
+    },
+    {
+      "source": "Atendimento: Conversa, Identidade, Agenda, Dados, Workflow conectados em uma jornada",
+      "previous": "Kundeservice: Samtale, Identitet, Kalender, Data, Workflow forbundet i én rejse",
+      "proposed": "Kundeservice: Samtale, Identitet, Kalender, Data, Workflow forbundet i ét forløb",
+      "result": "Kundeservice: Samtale, Identitet, Kalender, Data, Workflow forbundet i ét forløb",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "'Jornada' é traduzida consistentemente como 'forløb'."
+    },
+    {
+      "source": "Web, app nativo, portal interno ou canal conversacional. Organize a experiência no seu frontend e exponha pelo backend somente o que aquela jornada precisa.",
+      "previous": "Web, native app, intern portal eller samtalekanal. Organiser oplevelsen i din frontend, og eksponer kun det via backend, som den pågældende rejse har brug for.",
+      "proposed": "Web, native app, intern portal eller samtalekanal. Organiser oplevelsen i din frontend, og eksponer via backend kun det, som det pågældende forløb har brug for.",
+      "result": "Web, native app, intern portal eller samtalekanal. Organiser oplevelsen i din frontend, og eksponer via backend kun det, som det pågældende forløb har brug for.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência de 'jornada' como 'forløb' e ordem de palavras mais natural."
+    },
+    {
+      "source": "A esteira busca. O motor decide.",
+      "previous": "Forløbet henter. Motoren beslutter.",
+      "proposed": "Flowet henter. Motoren beslutter.",
+      "result": "Flowet henter. Motoren beslutter.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Esteira' traduzida como 'flow' para não colidir com 'jornada' (forløb)."
+    },
+    {
+      "source": "Uma esteira de crédito organizada em camadas: produto, política, decisão, formalização, operação e acompanhamento. A mesa reúne o trabalho, enquanto capacidades e fluxos sustentam o processo.",
+      "previous": "Et kreditforløb organiseret i lag: produkt, politik, beslutning, formalisering, drift og opfølgning. Desken samler arbejdet, mens funktioner og flows understøtter processen.",
+      "proposed": "Et kreditflow organiseret i lag: produkt, politik, beslutning, formalisering, drift og opfølgning. Desken samler arbejdet, mens funktioner og flows understøtter processen.",
+      "result": "Et kreditflow organiseret i lag: produkt, politik, beslutning, formalisering, drift og opfølgning. Desken samler arbejdet, mens kapabiliteter og flows understøtter processen.",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "'Esteira' consistente com 'flow'; evita confusão com 'forløb' (jornada)."
+    },
+    {
+      "source": "Desktop / Conta do titular",
+      "previous": "Desktop / Kontohavers konto",
+      "proposed": "Desktop / Kontohaverens konto",
+      "result": "Desktop / Kontohaverens konto",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "Forma definida, consistente com 'kontohaverens konto på desktop'."
+    },
+    {
+      "source": "Regras de negócio em tabelas DMN, versionadas e alteradas sem deploy. Consulte aplicações, estágio e documentação.",
+      "previous": "Forretningsregler i DMN-tabeller, versionerede og ændret uden deploy. Se anvendelser, modenhedsfase og dokumentation.",
+      "proposed": "Forretningsregler i DMN-tabeller, der versioneres og ændres uden deploy. Se anvendelser, modenhedsstadie og dokumentation.",
+      "result": "Forretningsregler i DMN-tabeller, der versioneres og ændres uden deploy. Se anvendelser, modenhedsstadie og dokumentation.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Concordância gramatical incorreta dos particípios; uniformizar 'estágio' como 'modenhedsstadie'."
+    },
+    {
+      "source": "Sala de vídeo com link de convidado, gravação e transcrição em português. Consulte aplicações, estágio e documentação.",
+      "previous": "Videorum med gæstelink, optagelse og transskription på portugisisk. Se anvendelser, modenhedsfase og dokumentation.",
+      "proposed": "Videorum med gæstelink, optagelse og transskription på portugisisk. Se anvendelser, modenhedsstadie og dokumentation.",
+      "result": "Videorum med gæstelink, optagelse og transskription på portugisisk. Se anvendelser, modenhedsstadie og dokumentation.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Uniformizar 'estágio' como 'modenhedsstadie'."
+    },
+    {
+      "source": "Combine prova de vida e comparação facial na abertura de conta ou na confirmação de uma operação.",
+      "previous": "Kombinér liveness-kontrol og ansigtsgenkendelse ved kontooprettelse eller ved bekræftelse af en transaktion.",
+      "proposed": "Kombinér liveness-kontrol og ansigtssammenligning ved kontooprettelse eller ved bekræftelse af en transaktion.",
+      "result": "Kombinér liveness-kontrol og ansigtssammenligning ved kontooprettelse eller ved bekræftelse af en transaktion.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Comparação facial' é 'ansigtssammenligning' (consistente); 'ansigtsgenkendelse' muda o significado."
+    },
+    {
+      "source": "Explore as capturas da página para conhecer as interfaces.",
+      "previous": "Udforsk sidens skærmbilleder for at lære grænsefladerne at kende.",
+      "proposed": "Udforsk sidens skærmbilleder for at lære brugerfladerne at kende.",
+      "result": "Udforsk sidens skærmbilleder for at lære brugerfladerne at kende.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Uniformizar 'interface' como 'brugerflade'."
+    },
+    {
+      "source": "Não foi possível acessar o atendimento agora. Tente novamente.",
+      "previous": "Der kunne ikke oprettes forbindelse til supporten lige nu. Prøv igen.",
+      "proposed": "Der kunne ikke oprettes forbindelse til kundeservice lige nu. Prøv igen.",
+      "result": "Der kunne ikke oprettes forbindelse til kundeservice lige nu. Prøv igen.",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "'Atendimento' é traduzido consistentemente como 'kundeservice'."
+    },
+    {
+      "source": "Ampliar simulação de condições na mesa",
+      "previous": "Udvid simulering af vilkår ved skranken",
+      "proposed": "Forstør simulering af vilkår ved desken",
+      "result": "Forstør simulering af vilkår ved desken",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Ampliar' (imagem) é 'Forstør' como nas outras capturas; 'mesa' consistente com 'desk'."
+    },
+    {
+      "source": "Escolha um momento para entender",
+      "previous": "Vælg et øjeblik at forstå",
+      "proposed": "Vælg en fase, du vil forstå",
+      "result": "Vælg en fase, du vil forstå",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Tradução literal; 'momento' corresponde às 'faser' da proposta."
+    },
+    {
+      "source": "UMA PROPOSTA, QUATRO MOMENTOS",
+      "previous": "ÉT FORSLAG, FIRE FASER",
+      "proposed": "ÉN ANSØGNING, FIRE FASER",
+      "result": "ÉN ANSØGNING, FIRE FASER",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Proposta' de crédito é traduzida como 'ansøgning' nos demais textos."
+    },
+    {
+      "source": "Vários próximos passos.",
+      "previous": "Flere næste skridt.",
+      "proposed": "Flere næste trin.",
+      "result": "Flere næste trin.",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "'Próximo passo' é traduzido consistentemente como 'næste trin'."
+    },
+    {
+      "source": "● Movimentável",
+      "previous": "● Flytbar",
+      "proposed": "● Til rådighed for overførsler",
+      "result": "● Til rådighed for overførsler",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "No contexto de reservas, 'Movimentável' indica saldo disponível para transferências, não algo 'móvel'."
+    },
+    {
+      "source": "Decline",
+      "previous": "Decline",
+      "proposed": "Afvis",
+      "result": "Afvis",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "O texto ficou em inglês; o botão de consentimento precisa ser traduzido."
+    },
+    {
+      "source": "CATALISA / CREDIT PLATFORM",
+      "previous": "CATALISA / CREDIT PLATFORM",
+      "proposed": "CATALISA / KREDITPLATFORM",
+      "result": "CATALISA / KREDITPLATFORM",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "O nome genérico do produto (Credit Platform) deve ser traduzido de forma consistente."
+    },
+    {
+      "source": "Decision: políticas versionadas e decisões rastreáveis | Catalisa",
+      "previous": "Decision: versionerede politikker og sporbare beslutninger | Catalisa",
+      "proposed": "Beslutning: versionerede politikker og sporbare beslutninger | Catalisa",
+      "result": "Beslutning: versionerede politikker og sporbare beslutninger | Catalisa",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "O nome genérico do produto Decision deve ser traduzido, como em 'CATALISA / BESLUTNING'."
+    },
+    {
+      "source": "Parâmetros do seu produto de crédito por API, sem constante escondida no código. Consulte aplicações, estágio e documentação.",
+      "previous": "Parametrene for dit kreditprodukt via API, uden konstanter gemt i koden. Se anvendelser, stadie og dokumentation.",
+      "proposed": "Parametrene for dit kreditprodukt via API, uden konstanter gemt i koden. Se anvendelser, modenhedsfase og dokumentation.",
+      "result": "Parametrene for dit kreditprodukt via API, uden konstanter gemt i koden. Se anvendelser, modenhedsfase og dokumentation.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Termo de estágio inconsistente; padronizado como 'modenhedsfase'."
+    },
+    {
+      "source": "Taxa por faixa de risco, com tarifas, comissões e seguros no mesmo cálculo. Consulte aplicações, estágio e documentação.",
+      "previous": "Rente pr. risikointerval, med gebyrer, provisioner og forsikringer i samme beregning. Se anvendelser, stadie og dokumentation.",
+      "proposed": "Rente pr. risikointerval, med gebyrer, provisioner og forsikringer i samme beregning. Se anvendelser, modenhedsfase og dokumentation.",
+      "result": "Rente pr. risikointerval, med gebyrer, provisioner og forsikringer i samme beregning. Se anvendelser, modenhedsfase og dokumentation.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Termo de estágio inconsistente; padronizado como 'modenhedsfase'."
+    },
+    {
+      "source": "Saber quanto você sabe de uma pessoa, e saber quando parou de saber. Consulte aplicações, estágio e documentação.",
+      "previous": "At vide, hvor meget du ved om en person – og at vide, hvornår du holdt op med at vide det. Se anvendelser, modenhedsstadie og dokumentation.",
+      "proposed": "At vide, hvor meget du ved om en person – og at vide, hvornår du holdt op med at vide det. Se anvendelser, modenhedsfase og dokumentation.",
+      "result": "At vide, hvor meget du ved om en person – og at vide, hvornår du holdt op med at vide det. Se anvendelser, modenhedsfase og dokumentation.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Termo de estágio inconsistente; padronizado como 'modenhedsfase'."
+    },
+    {
+      "source": "Decision Engine e Decision Platform têm estágios diferentes no catálogo. O primeiro é marcado como Produção e o segundo como Beta. A página de produto e a documentação têm escopos próprios.",
+      "previous": "Decision Engine og Decision Platform har forskellige stadier i kataloget. Den første er markeret som Produktion og den anden som Beta. Produktsiden og dokumentationen har hver deres omfang.",
+      "proposed": "Decision Engine og Decision Platform har forskellige modenhedsfaser i kataloget. Den første er markeret som Produktion og den anden som Beta. Produktsiden og dokumentationen har hver deres omfang.",
+      "result": "Decision Engine og Decision Platform har forskellige modenhedsfaser i kataloget. Den første er markeret som Produktion og den anden som Beta. Produktsiden og dokumentationen har hver deres omfang.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Padronização do termo de estágio ('modenhedsfase')."
+    },
+    {
+      "source": "Estudo visual de Decisão",
+      "previous": "Visuel undersøgelse af Beslutning",
+      "proposed": "Visuelt studie af Beslutning",
+      "result": "Visuelt studie af Beslutning",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "Inconsistente com 'Visuelt studie af Produktivitet'; 'estudo visual' é 'visuelt studie'."
+    },
+    {
+      "source": "A movimentação tem um responsável.",
+      "previous": "Bevægelsen har en ansvarlig.",
+      "proposed": "Transaktionen har en ansvarlig.",
+      "result": "Transaktionen har en ansvarlig.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Movimentação' financeira é transação; 'Bevægelsen' é literal demais."
+    },
+    {
+      "source": "bloqueios no console implementado",
+      "previous": "blokeringer i den implementerede konsol",
+      "proposed": "spærringer i den implementerede konsol",
+      "result": "spærringer i den implementerede konsol",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Terminologia inconsistente: 'Bloqueios' foi traduzido como 'Spærringer' em outro texto."
+    },
+    {
+      "source": "Razão",
+      "previous": "Begrundelse",
+      "proposed": "Forhold",
+      "result": "Forhold",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "No guia de estilo (tabela de contraste com 'Combinação'), 'Razão' é proporção/ratio, não justificativa."
+    },
+    {
+      "source": "Um fluxo resolve sozinho a revisão humana?",
+      "previous": "Kan et flow alene erstatte den menneskelige gennemgang?",
+      "proposed": "Klarer et flow den menneskelige gennemgang alene?",
+      "result": "Klarer et flow den menneskelige gennemgang alene?",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Erstatte' (substituir) altera o sentido de 'resolve sozinho'."
+    },
+    {
+      "source": "seguem juntos. Assim, a próxima conversa começa de onde você chegou.",
+      "previous": "følger med. Så starter næste samtale der, hvor du kom til.",
+      "proposed": "følger med. Så starter næste samtale der, hvor du slap.",
+      "result": "følger med. Så starter næste samtale der, hvor du slap.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'hvor du kom til' soa pouco natural; 'hvor du slap' é a expressão idiomática."
+    },
+    {
+      "source": "Um ponto de partida para conversar, organizar o contexto e dar continuidade ao atendimento.",
+      "previous": "Et udgangspunkt for at samtale, organisere konteksten og følge op på kundeservicen.",
+      "proposed": "Et udgangspunkt for at samtale, organisere konteksten og videreføre betjeningen.",
+      "result": "Et udgangspunkt for at samtale, organisere konteksten og videreføre betjeningen.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Følge op på kundeservicen' é impreciso; 'dar continuidade ao atendimento' significa dar seguimento ao atendimento."
+    },
+    {
+      "source": "desktop do Banking Platform",
+      "previous": "Banking Platform-desktop",
+      "proposed": "Bankplatformens desktop",
+      "result": "Bankplatformens desktop",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome genérico do produto Banking Platform deve ser traduzido de forma consistente (Bankplatform)."
+    },
+    {
+      "source": "Explore Credit Platform ↗",
+      "previous": "Udforsk Credit Platform ↗",
+      "proposed": "Udforsk Kreditplatform ↗",
+      "result": "Udforsk Kreditplatform ↗",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome genérico do produto Credit Platform deve ser traduzido (Kreditplatform)."
+    },
+    {
+      "source": "Montagem visual das interfaces de Credit Platform",
+      "previous": "Visuel sammensætning af Credit Platforms grænseflader",
+      "proposed": "Visuel sammensætning af Kreditplatformens brugerflader",
+      "result": "Visuel sammensætning af Kreditplatformens brugerflader",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Tradução do nome do produto e termo consistente 'brugerflade' para interface."
+    },
+    {
+      "source": "Biometrics: identidade, verificação e evidência | Catalisa",
+      "previous": "Biometrics: identitet, verifikation og evidens | Catalisa",
+      "proposed": "Biometri: identitet, verifikation og dokumentation | Catalisa",
+      "result": "Biometri: identitet, verifikation og dokumentation | Catalisa",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome genérico Biometrics deve ser traduzido; 'evidência' traduzida como 'dokumentation' em outros textos."
+    },
+    {
+      "source": "Ampliar aplicativo Banking no aparelho",
+      "previous": "Forstør Banking-appen på enheden",
+      "proposed": "Forstør Bankplatform-appen på enheden",
+      "result": "Forstør Bankplatform-appen på enheden",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Rótulo de produto consistente com a tradução de Banking Platform."
+    },
+    {
+      "source": "Sem reserva",
+      "previous": "Uden reservation",
+      "proposed": "Uden reserve",
+      "result": "Uden reserve",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Contexto de reserva financeira; 'reservation' significa agendamento/booking."
+    },
+    {
+      "source": "acordos e renegociação na mesa",
+      "previous": "aftaler og genforhandling på bordet",
+      "proposed": "aftaler og genforhandling i desken",
+      "result": "aftaler og genforhandling i desken",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Mesa' é a mesa de crédito; 'på bordet' é literal e inconsistente com 'desken'."
+    },
+    {
+      "source": "Configuração e leitura da política na interface da mesa.",
+      "previous": "Konfiguration og visning af politikken i skrivebordets brugerflade.",
+      "proposed": "Konfiguration og visning af politikken i deskens brugerflade.",
+      "result": "Konfiguration og visning af politikken i deskens brugerflade.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Mesa' refere-se à mesa de crédito; 'skrivebord' é tradução literal e inconsistente."
+    },
+    {
+      "source": "A Catalisa existe para dar estrutura a essa construção. Organizamos capacidades que podem ser conectadas, reutilizadas e combinadas em produtos com uma identidade própria.",
+      "previous": "Catalisa findes for at give struktur til denne opbygning. Vi organiserer kapabiliteter, der kan forbindes, genbruges og kombineres i produkter med deres egen identitet.",
+      "proposed": "Catalisa findes for at give struktur til denne opbygning. Vi organiserer funktioner, der kan forbindes, genbruges og kombineres i produkter med deres egen identitet.",
+      "result": "Catalisa findes for at give struktur til denne opbygning. Vi organiserer kapabiliteter, der kan forbindes, genbruges og kombineres i produkter med deres egen identitet.",
+      "outcome": "already-current",
+      "why": "Current value already equals the proposal",
+      "reviewReason": "Terminologia inconsistente: 'capacidades' traduzido como 'funktioner' nas demais páginas."
+    },
+    {
+      "source": "O Studio ajuda a estruturar a construção. Os Building Blocks oferecem as capacidades; os workflows organizam as ações; as integrações conectam os sistemas necessários. São partes que trabalham em conjunto.",
+      "previous": "Studio hjælper med at strukturere opbygningen. Building Blocks leverer kapabiliteterne; workflows organiserer handlingerne; integrationer forbinder de nødvendige systemer. Det er dele, der arbejder sammen.",
+      "proposed": "Studio hjælper med at strukturere opbygningen. Building Blocks leverer funktionerne; workflows organiserer handlingerne; integrationer forbinder de nødvendige systemer. Det er dele, der arbejder sammen.",
+      "result": "Studio hjælper med at strukturere opbygningen. Building Blocks leverer kapabiliteterne; workflows organiserer handlingerne; integrationer forbinder de nødvendige systemer. Det er dele, der arbejder sammen.",
+      "outcome": "already-current",
+      "why": "Current value already equals the proposal",
+      "reviewReason": "Terminologia consistente para 'capacidades' (funktioner)."
+    },
+    {
+      "source": "Cada capacidade responde pelo seu trabalho.",
+      "previous": "Hver kapabilitet står for sit eget arbejde.",
+      "proposed": "Hver funktion står for sit eget arbejde.",
+      "result": "Hver kapabilitet står for sit eget arbejde.",
+      "outcome": "already-current",
+      "why": "Current value already equals the proposal",
+      "reviewReason": "Terminologia consistente para 'capacidade' (funktion)."
+    },
+    {
+      "source": "As etapas consultam a mesma capacidade de cálculo, com os parâmetros da operação.",
+      "previous": "Trinnene bruger den samme beregningskapacitet med transaktionens parametre.",
+      "proposed": "Trinnene bruger den samme beregningsfunktion med transaktionens parametre.",
+      "result": "Trinnene bruger den samme beregningsfunktion med transaktionens parametre.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Capacidade' traduzida como 'funktion' de forma consistente; 'kapacitet' sugere volume."
+    },
+    {
+      "source": "Audit Trail está em Beta. Retenção declarada não significa eliminação automática; configuração, coleta e procedimentos operacionais precisam estar ativos. A integridade verificável da trilha tem limites documentados.",
+      "previous": "Audit Trail er i Beta. Angivet opbevaringsperiode betyder ikke automatisk sletning; konfiguration, indsamling og driftsprocedurer skal være aktive. Sporets verificerbare integritet har dokumenterede begrænsninger.",
+      "proposed": "Audit Trail er i beta. Angivet opbevaringsperiode betyder ikke automatisk sletning; konfiguration, indsamling og driftsprocedurer skal være aktive. Sporets verificerbare integritet har dokumenterede begrænsninger.",
+      "result": "Audit Trail er i beta. Angivet opbevaringsperiode betyder ikke automatisk sletning; konfiguration, indsamling og driftsprocedurer skal være aktive. Sporets verificerbare integritet har dokumenterede begrænsninger.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência com 'i beta' em minúscula usado nos demais textos."
+    },
+    {
+      "source": "A geração de conceitos utiliza o provedor de inteligência artificial configurado para o serviço, entre os fornecedores identificados nesta política. Esse processamento pode ocorrer fora do Brasil. Enviamos o briefing e o contexto necessários para gerar ou ajustar o conceito; seu nome, e-mail e telefone não são incluídos intencionalmente nesse pedido. Não inclua informações pessoais sensíveis, credenciais ou segredos no texto livre.\n\nOs registros mantidos pelo provedor de IA estão sujeitos aos seus termos, configurações e regras de retenção. Os prazos da conversa neste site não significam que todas as cópias de terceiros sejam excluídas ao mesmo tempo. Para esclarecer o tratamento aplicável à sua solicitação, fale com o canal de privacidade indicado nesta política.",
+      "previous": "Genereringen af koncepter bruger den AI-udbyder, der er konfigureret til tjenesten, blandt de leverandører, der er angivet i denne politik. Denne behandling kan finde sted uden for Brasilien. Vi sender det briefing og den kontekst, der er nødvendig for at generere eller justere konceptet; dit navn, din e-mail og dit telefonnummer medtages ikke bevidst i denne anmodning. Medtag ikke følsomme personoplysninger, loginoplysninger eller hemmeligheder i fritekstfeltet.\n\nDe registreringer, som AI-udbyderen opbevarer, er underlagt dennes vilkår, indstillinger og regler for opbevaring. Fristerne for samtalen på dette websted betyder ikke, at alle tredjeparters kopier slettes samtidig. Kontakt den privatlivskanal, der er angivet i denne politik, for at få afklaret, hvilken behandling der gælder for din anmodning.",
+      "proposed": "Genereringen af koncepter bruger den AI-udbyder, der er konfigureret til tjenesten, blandt de leverandører, der er angivet i denne politik. Denne behandling kan finde sted uden for Brasilien. Vi sender den briefing og den kontekst, der er nødvendige for at generere eller justere konceptet; dit navn, din e-mail og dit telefonnummer medtages ikke bevidst i denne anmodning. Medtag ikke følsomme personoplysninger, loginoplysninger eller hemmeligheder i fritekstfeltet.\n\nDe registreringer, som AI-udbyderen opbevarer, er underlagt dennes vilkår, indstillinger og regler for opbevaring. Fristerne for samtalen på dette websted betyder ikke, at alle tredjeparters kopier slettes samtidig. Kontakt den privatlivskanal, der er angivet i denne politik, for at få afklaret, hvilken behandling der gælder for din anmodning.",
+      "result": "Genereringen af koncepter bruger den AI-udbyder, der er konfigureret til tjenesten, blandt de leverandører, der er angivet i denne politik. Denne behandling kan finde sted uden for Brasilien. Vi sender den briefing og den kontekst, der er nødvendige for at generere eller justere konceptet; dit navn, din e-mail og dit telefonnummer medtages ikke bevidst i denne anmodning. Medtag ikke følsomme personoplysninger, loginoplysninger eller hemmeligheder i fritekstfeltet.\n\nDe registreringer, som AI-udbyderen opbevarer, er underlagt dennes vilkår, indstillinger og regler for opbevaring. Fristerne for samtalen på dette websted betyder ikke, at alle tredjeparters kopier slettes samtidig. Kontakt den privatlivskanal, der er angivet i denne politik, for at få afklaret, hvilken behandling der gælder for din anmodning.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Erro gramatical: 'briefing' é de gênero comum (den briefing) e concordância plural 'nødvendige'."
+    },
+    {
+      "source": "Esta resposta não pertence ao briefing.",
+      "previous": "Dette svar hører ikke til briefet.",
+      "proposed": "Dette svar hører ikke til briefingen.",
+      "result": "Dette svar hører ikke til briefingen.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Terminologia consistente com 'briefing' usada na política de privacidade."
+    },
+    {
+      "source": "Invalid handoff channels: only email and whatsapp have a team destination",
+      "previous": "Ugyldige videresendelseskanaler: kun e-mail og WhatsApp har en teamdestination",
+      "proposed": "Ugyldige overdragelseskanaler: kun e-mail og WhatsApp har en teamdestination",
+      "result": "Ugyldige overdragelseskanaler: kun e-mail og WhatsApp har en teamdestination",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Inconsistência: 'handoff' traduzido como 'overdragelse' nas outras mensagens."
+    },
+    {
+      "source": "Ampliar Configuração / Conferir a jornada",
+      "previous": "Udvid Konfiguration / Tjek forløbet",
+      "proposed": "Forstør Konfiguration / Gennemgå forløbet",
+      "result": "Forstør Konfiguration / Gennemgå forløbet",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "'Ampliar' é ampliar a imagem (forstør), não expandir; 'Conferir a jornada' consistente com o outro rótulo."
+    },
+    {
+      "source": "Os documentos acompanham a proposta",
+      "previous": "Dokumenterne følger tilbuddet",
+      "proposed": "Dokumenterne følger med tilbuddet",
+      "result": "Dokumenterne følger med tilbuddet",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "'Acompanham' = vão junto; 'følger tilbuddet' sugere monitorar/seguir."
+    },
+    {
+      "source": "A experiência de autorização é definida pela base, conforme a configuração da jornada.",
+      "previous": "Autorisationsoplevelsen fastlægges af basen i henhold til forløbets konfiguration.",
+      "proposed": "Autorisationsoplevelsen fastlægges af fundamentet i henhold til forløbets konfiguration.",
+      "result": "Autorisationsoplevelsen fastlægges af fundamentet i henhold til forløbets konfiguration.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Base' traduzida como 'fundament' nas demais páginas."
+    },
+    {
+      "source": "Etapas da construção",
+      "previous": "Byggeriets faser",
+      "proposed": "Opbygningens faser",
+      "result": "Opbygningens faser",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Byggeri' remete a construção civil; aqui trata-se da construção do produto."
+    },
+    {
+      "source": "Consultar e atualizar informações conforme a composição e os acessos.",
+      "previous": "Se og opdatere oplysninger i henhold til sammensætningen og adgangene.",
+      "proposed": "Se og opdatere oplysninger i henhold til sammensætningen og adgangsrettighederne.",
+      "result": "Se og opdatere oplysninger i henhold til sammensætningen og adgangsrettighederne.",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "'Adgangene' é forma pouco natural; 'acessos' = direitos de acesso."
+    },
+    {
+      "source": "Interface ilustrativa",
+      "previous": "Illustrativ grænseflade",
+      "proposed": "Illustrativ brugerflade",
+      "result": "Illustrativ brugerflade",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Terminologia consistente: 'interface' traduzida como 'brugerflade' no site."
+    },
+    {
+      "source": "Depois, ações reversíveis e bem delimitadas podem ser adicionadas conforme a validação. A expansão deve acompanhar evidência de desempenho em situações reais, incluindo dados incompletos, ferramentas indisponíveis e solicitações fora do escopo. Uma demonstração feliz não cobre essas condições.",
+      "previous": "Derefter kan reversible og veldefinerede handlinger tilføjes i takt med valideringen. Udvidelsen bør følge dokumenteret ydeevne i virkelige situationer, herunder ufuldstændige data, utilgængelige værktøjer og forespørgsler uden for scope. En demo, hvor alt går godt, dækker ikke disse forhold.",
+      "proposed": "Derefter kan reversible og veldefinerede handlinger tilføjes i takt med valideringen. Udvidelsen bør følge dokumenteret ydeevne i virkelige situationer, herunder ufuldstændige data, utilgængelige værktøjer og forespørgsler uden for rammerne. En demo, hvor alt går godt, dækker ikke disse forhold.",
+      "result": "Derefter kan reversible og veldefinerede handlinger tilføjes i takt med valideringen. Udvidelsen bør følge dokumenteret ydeevne i virkelige situationer, herunder ufuldstændige data, utilgængelige værktøjer og forespørgsler uden for rammerne. En demo, hvor alt går godt, dækker ikke disse forhold.",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "Anglicismo 'scope' desnecessário; 'uden for rammerne' é natural em dinamarquês."
+    },
+    {
+      "source": "Explore Decision",
+      "previous": "Udforsk Decision",
+      "proposed": "Udforsk Beslutning",
+      "result": "Udforsk Beslutning",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome genérico de produto (Decision) deve ser traduzido conforme as regras."
+    },
+    {
+      "source": "Decision Platform: esteira de análise e decisão | Catalisa",
+      "previous": "Decision Platform: analyse- og beslutningsflow | Catalisa",
+      "proposed": "Beslutningsplatform: analyse- og beslutningsflow | Catalisa",
+      "result": "Beslutningsplatform: analyse- og beslutningsflow | Catalisa",
+      "outcome": "skipped-identifier",
+      "why": "Proposal removed an existing protected technical or company name",
+      "reviewReason": "Nome genérico de produto (Decision Platform) deve ser traduzido."
+    },
+    {
+      "source": "Na Catalisa, portfólio, cálculo, precificação e decisão são responsabilidades que podem compor jornadas de crédito. A seleção depende do contrato e do estágio de cada capacidade; o catálogo não dispensa validação de integração.",
+      "previous": "Hos Catalisa er portefølje, beregning, prissætning og beslutning ansvarsområder, der kan indgå i kreditforløb. Udvælgelsen afhænger af kontrakten og af den enkelte funktions modenhedsstadie. Kataloget erstatter ikke validering af integrationen.",
+      "proposed": "Hos Catalisa er portefølje, beregning, prissætning og beslutning ansvarsområder, der kan indgå i kreditforløb. Udvælgelsen afhænger af kontrakten og af den enkelte kapabilitets stadie; kataloget erstatter ikke validering af integrationen.",
+      "result": "Hos Catalisa er portefølje, beregning, prissætning og beslutning ansvarsområder, der kan indgå i kreditforløb. Udvælgelsen afhænger af kontrakten og af den enkelte kapabilitets stadie; kataloget erstatter ikke validering af integrationen.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Terminologia consistente: 'capacidade' = kapabilitet e 'estágio' = stadie."
+    },
+    {
+      "source": "Capacidades e integrações selecionadas",
+      "previous": "Valgte funktioner og integrationer",
+      "proposed": "Valgte kapabiliteter og integrationer",
+      "result": "Valgte kapabiliteter og integrationer",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Terminologia consistente: 'capacidade' = kapabilitet."
+    },
+    {
+      "source": "Escolha uma jornada. Identifique quem atua, que informações utiliza, quais ações exigem revisão e que registros precisam estar disponíveis. Cruze essa necessidade com o estágio e os limites das capacidades escolhidas.",
+      "previous": "Vælg et forløb. Identificér, hvem der handler, hvilke oplysninger der bruges, hvilke handlinger der kræver gennemgang, og hvilke registreringer der skal være tilgængelige. Hold dette behov op mod de valgte funktioners modenhedsstadie og begrænsninger.",
+      "proposed": "Vælg et forløb. Identificér, hvem der handler, hvilke oplysninger der bruges, hvilke handlinger der kræver gennemgang, og hvilke registreringer der skal være tilgængelige. Hold dette behov op mod de valgte kapabiliteters stadie og begrænsninger.",
+      "result": "Vælg et forløb. Identificér, hvem der handler, hvilke oplysninger der bruges, hvilke handlinger der kræver gennemgang, og hvilke registreringer der skal være tilgængelige. Hold dette behov op mod de valgte kapabiliteters stadie og begrænsninger.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Terminologia consistente: 'capacidade' = kapabilitet e 'estágio' = stadie."
+    },
+    {
+      "source": "Uma nova capacidade. No app que já está lá.",
+      "previous": "En ny funktion. I den app, der allerede er der.",
+      "proposed": "En ny kapabilitet. I den app, der allerede er der.",
+      "result": "En ny kapabilitet. I den app, der allerede er der.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Terminologia consistente: 'capacidade' = kapabilitet."
+    },
+    {
+      "source": "Catálogo, estoque, preço e pedido multi-loja na mesma API. Consulte aplicações, estágio e documentação.",
+      "previous": "Katalog, lager, pris og ordrer på tværs af flere butikker i samme API. Se anvendelser, modenhedsstadie og dokumentation.",
+      "proposed": "Katalog, lager, pris og ordrer på tværs af flere butikker i samme API. Se anvendelser, stadie og dokumentation.",
+      "result": "Katalog, lager, pris og ordrer på tværs af flere butikker i samme API. Se anvendelser, stadie og dokumentation.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Terminologia consistente com as demais descrições: 'estágio' = stadie."
+    },
+    {
+      "source": "Interface de referência do console Banking, com pessoas, papéis e estados de acesso.",
+      "previous": "Referencegrænseflade til Banking-konsollen med personer, roller og adgangsstatusser.",
+      "proposed": "Referencebrugerflade for Banking-konsollen med personer, roller og adgangsstatusser.",
+      "result": "Referencebrugerflade for Banking-konsollen med personer, roller og adgangsstatusser.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Terminologia consistente: 'interface de referência' = referencebrugerflade."
+    },
+    {
+      "source": "A BASE SE CONECTA. O CONTEXTO DÁ FORMA.",
+      "previous": "FUNDAMENTET FORBINDER. KONTEKSTEN GIVER FORM.",
+      "proposed": "FUNDAMENTET KOBLES SAMMEN. KONTEKSTEN GIVER FORM.",
+      "result": "FUNDAMENTET KOBLES SAMMEN. KONTEKSTEN GIVER FORM.",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "'Se conecta' é reflexivo; 'forbinder' sem objeto fica incompleto."
+    },
+    {
+      "source": "Em Beta. Regras, aprovações e condições precisam ser configuradas e validadas para cada operação.",
+      "previous": "I beta. Regler, godkendelser og vilkår skal konfigureres og valideres for hver enkelt drift.",
+      "proposed": "I Beta. Regler, godkendelser og vilkår skal konfigureres og valideres for hver enkelt drift.",
+      "result": "I Beta. Regler, godkendelser og vilkår skal konfigureres og valideres for hver enkelt drift.",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "Rótulo de estágio consistente com 'I Alpha' (maiúscula)."
+    },
+    {
+      "source": "Console implementado · staging · guia de 29/09/2026",
+      "previous": "Console implementeret · staging · guide af 29.09.2026",
+      "proposed": "Console implementeret · staging · guide fra 29.09.2026",
+      "result": "Console implementeret · staging · guide fra 29.09.2026",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Preposição idiomática para data: 'fra' em vez de 'af'."
+    },
+    {
+      "source": "Estudo visual de Identidade",
+      "previous": "Visuelt identitetsstudie",
+      "proposed": "Visuelt studie af Identitet",
+      "result": "Visuelt studie af Identitet",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Padronização com 'Visuelt studie af Kommunikation'."
+    },
+    {
+      "source": "Preparando…",
+      "previous": "Forbereder …",
+      "proposed": "Forbereder…",
+      "result": "Forbereder…",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência tipográfica das reticências com as demais mensagens de carregamento."
+    },
+    {
+      "source": "Preparando seu atendimento…",
+      "previous": "Klargør din kundeservice…",
+      "proposed": "Forbereder din henvendelse…",
+      "result": "Forbereder din henvendelse…",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "'Seu atendimento' refere-se à sessão de atendimento do usuário, não ao setor de kundeservice."
+    },
+    {
+      "source": "O trabalho continua<br>depois da contratação.",
+      "previous": "Arbejdet fortsætter<br>efter aftalen.",
+      "proposed": "Arbejdet fortsætter<br>efter aftaleindgåelsen.",
+      "result": "Arbejdet fortsætter<br>efter aftaleindgåelsen.",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "\"Contratação\" refere-se ao momento da contratação; \"aftalen\" sozinho fica vago."
+    },
+    {
+      "source": "Protótipo do console / pessoas e acessos · guia de 29/09/2026 · dados de exemplo.",
+      "previous": "Prototype af konsollen / personer og adgange · vejledning af 29/09/2026 · eksempeldata.",
+      "proposed": "Prototype af konsollen / personer og adgange · vejledning af 29.09.2026 · eksempeldata.",
+      "result": "Prototype af konsollen / personer og adgange · vejledning af 29.09.2026 · eksempeldata.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Formato de data inconsistente; padronizar com 29.09.2026, convenção dinamarquesa."
+    },
+    {
+      "source": "O serviço foi prestado? Quem paga confirma — lido direto do sistema de escala. Consulte aplicações, estágio e documentação.",
+      "previous": "Er ydelsen leveret? Den, der betaler, bekræfter – aflæst direkte fra vagtplanssystemet. Se anvendelser, stadie og dokumentation.",
+      "proposed": "Er ydelsen leveret? Den, der betaler, bekræfter – aflæst direkte fra vagtplanssystemet. Se anvendelser, modenhed og dokumentation.",
+      "result": "Er ydelsen leveret? Den, der betaler, bekræfter – aflæst direkte fra vagtplanssystemet. Se anvendelser, modenhed og dokumentation.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Terminologia inconsistente para \"estágio\" nas descrições de SEO; padronizar como \"modenhed\"."
+    },
+    {
+      "source": "Ligue e desligue funcionalidade em produção sem novo deploy, por segmento de cliente. Consulte aplicações, estágio e documentação.",
+      "previous": "Slå funktionalitet til og fra i produktion uden nyt deploy, pr. kundesegment. Se anvendelser, modenhedsstadie og dokumentation.",
+      "proposed": "Slå funktionalitet til og fra i produktion uden nyt deploy, pr. kundesegment. Se anvendelser, modenhed og dokumentation.",
+      "result": "Slå funktionalitet til og fra i produktion uden nyt deploy, pr. kundesegment. Se anvendelser, modenhed og dokumentation.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Padronizar \"estágio\" como \"modenhed\", como nas demais descrições de SEO."
+    },
+    {
+      "source": "Por que construir por composição?",
+      "previous": "Hvorfor bygge ved sammensætning?",
+      "proposed": "Hvorfor bygge gennem sammensætning?",
+      "result": "Hvorfor bygge gennem sammensætning?",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "\"ved sammensætning\" soa literal e pouco natural."
+    },
+    {
+      "source": "Pessoa B / Revisor autorizado",
+      "previous": "Person B / Autoriseret korrekturlæser",
+      "proposed": "Person B / Autoriseret reviewer",
+      "result": "Person B / Autoriseret reviewer",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "\"Korrekturlæser\" significa revisor de textos; aqui é a pessoa que revisa/aprova."
+    },
+    {
+      "source": "Mesa",
+      "previous": "Bord",
+      "proposed": "Sagsbehandlerskrivebord",
+      "result": "Sagsbehandlerskrivebord",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "\"Bord\" é literal demais; padronizar com a tradução de \"mesa\" usada em outros textos."
+    },
+    {
+      "source": "Cidade financeira — estudo visual",
+      "previous": "Finansby – visuel skitse",
+      "proposed": "Finansby – visuelt studie",
+      "result": "Finansby – visuelt studie",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Padronizar \"estudo visual\" com a outra legenda."
+    },
+    {
+      "source": "Peças conectadas — estudo visual",
+      "previous": "Forbundne brikker — visuelt studie",
+      "proposed": "Forbundne brikker – visuelt studie",
+      "result": "Forbundne brikker – visuelt studie",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Padronizar o travessão com espaços (–) usado nas outras legendas."
+    },
+    {
+      "source": "Registrando seu encaminhamento…",
+      "previous": "Registrerer din henvisning …",
+      "proposed": "Registrerer din henvendelse…",
+      "result": "Registrerer din henvendelse…",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "\"Henvisning\" quer dizer encaminhamento médico/referência; aqui é a solicitação do usuário. Reticências padronizadas."
+    },
+    {
+      "source": "uma ordem.",
+      "previous": "en ordre.",
+      "proposed": "en orden.",
+      "result": "en orden.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "\"Ordre\" é pedido comercial; no contexto (\"encontrar uma forma\"), \"ordem\" significa organização/estrutura."
+    },
+    {
+      "source": "Em conferência",
+      "previous": "Under kontrol",
+      "proposed": "Under verificering",
+      "result": "Under verificering",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "\"Under kontrol\" em dinamarquês significa \"sob controle\", o que muda o sentido de \"em conferência\"."
+    },
+    {
+      "source": "Entenda como sessão, captura, prova de vida e comparação facial se conectam na experiência Biometrics, preservando o contexto e a evidência da verificação.",
+      "previous": "Forstå, hvordan session, optagelse, livenesstjek og ansigtssammenligning hænger sammen i Biometrics-oplevelsen, så verifikationens kontekst og dokumentation bevares.",
+      "proposed": "Forstå, hvordan session, optagelse, liveness-kontrol og ansigtssammenligning hænger sammen i biometrioplevelsen, så verifikationens kontekst og dokumentation bevares.",
+      "result": "Forstå, hvordan session, optagelse, liveness-kontrol og ansigtssammenligning hænger sammen i biometrioplevelsen, så verifikationens kontekst og dokumentation bevares.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome genérico do produto Biometrics deve ser traduzido; padronizar \"prova de vida\" como \"liveness-kontrol\"."
+    },
+    {
+      "source": "A relação entre capacidades em uma jornada de produto. A composição define como o trabalho passa de uma responsabilidade para outra.",
+      "previous": "Forholdet mellem kapaciteter i et produktforløb. Sammensætningen fastlægger, hvordan arbejdet går fra ét ansvarsområde til et andet.",
+      "proposed": "Forholdet mellem kapabiliteter i et produktforløb. Sammensætningen fastlægger, hvordan arbejdet går fra ét ansvarsområde til et andet.",
+      "result": "Forholdet mellem kapabiliteter i et produktforløb. Sammensætningen fastlægger, hvordan arbejdet går fra ét ansvarsområde til et andet.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Terminologia inconsistente; padronizar \"capacidades\" como \"kapabiliteter\"."
+    },
+    {
+      "source": "Explore esta capacidade",
+      "previous": "Udforsk denne kapacitet",
+      "proposed": "Udforsk denne kapabilitet",
+      "result": "Udforsk denne kapabilitet",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Padronizar \"capacidade\" como \"kapabilitet\"."
+    },
+    {
+      "source": "O Banco Central informa que o cliente pode cancelar a autorização de compartilhamento a qualquer momento. O produto precisa lidar com essa mudança e com falhas de consulta sem fingir que o fluxo continua nas mesmas condições.",
+      "previous": "Banco Central oplyser, at kunden når som helst kan tilbagekalde samtykket til datadeling. Produktet skal kunne håndtere denne ændring og fejlslagne forespørgsler uden at foregive, at forløbet fortsætter på samme vilkår.",
+      "proposed": "Den brasilianske centralbank (Banco Central) oplyser, at kunden når som helst kan tilbagekalde samtykket til datadeling. Produktet skal kunne håndtere denne ændring og fejlslagne forespørgsler uden at foregive, at forløbet fortsætter på samme vilkår.",
+      "result": "Den brasilianske centralbank (Banco Central) oplyser, at kunden når som helst kan tilbagekalde samtykket til datadeling. Produktet skal kunne håndtere denne ændring og fejlslagne forespørgsler uden at foregive, at forløbet fortsætter på samme vilkår.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Deixar claro o escopo brasileiro da referência ao Banco Central."
+    },
+    {
+      "source": "c. — versão Grafite",
+      "previous": "c. — Grafit-version",
+      "proposed": "c. — grafitversion",
+      "result": "c. — grafitversion",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "Em dinamarquês, compostos se escrevem juntos e em minúscula."
+    },
+    {
+      "source": "Uma jornada bancária com começo, contexto e continuidade.",
+      "previous": "En bankrejse med begyndelse, kontekst og kontinuitet.",
+      "proposed": "Et bankforløb med begyndelse, kontekst og kontinuidade.",
+      "result": "Et bankforløb med begyndelse, kontekst og kontinuidade.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "\"Rejse\" é literal; padronizar \"jornada\" como \"forløb\"."
+    },
+    {
+      "source": "UMA JORNADA, DO COMEÇO AO PRÓXIMO PASSO",
+      "previous": "ÉN REJSE, FRA START TIL NÆSTE SKRIDT",
+      "proposed": "ÉT FORLØB, FRA START TIL NÆSTE SKRIDT",
+      "result": "ÉT FORLØB, FRA START TIL NÆSTE SKRIDT",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Padronizar \"jornada\" como \"forløb\"."
+    },
+    {
+      "source": "Proposta. Decisão.",
+      "previous": "Tilbud. Beslutning.",
+      "proposed": "Ansøgning. Beslutning.",
+      "result": "Ansøgning. Beslutning.",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "No crédito, \"proposta\" é o pedido/ansøgning, como em outros textos."
+    },
+    {
+      "source": "iniciar uma proposta ou autorizar uma operação.",
+      "previous": "starte et tilbud eller godkende en transaktion.",
+      "proposed": "starte en ansøgning eller godkende en transaktion.",
+      "result": "starte en ansøgning eller godkende en transaktion.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Padronizar \"proposta\" de crédito como \"ansøgning\"."
+    },
+    {
+      "source": "Exemplo: o CRM continua abrindo propostas e o core continua registrando contratos. Uma chamada ao Decision Engine substitui a política espalhada em serviços. Amplie o recorte depois de validar o primeiro.",
+      "previous": "Eksempel: CRM-systemet åbner fortsat tilbud, og core-systemet registrerer fortsat kontrakter. Et kald til Decision Engine erstatter den politik, der er spredt ud over tjenester. Udvid afgrænsningen, når den første er valideret.",
+      "proposed": "Eksempel: CRM-systemet åbner fortsat ansøgninger, og core-systemet registrerer fortsat kontrakter. Et kald til Decision Engine erstatter den politik, der er spredt ud over tjenester. Udvid afgrænsningen, når den første er valideret.",
+      "result": "Eksempel: CRM-systemet åbner fortsat ansøgninger, og core-systemet registrerer fortsat kontrakter. Et kald til Decision Engine erstatter den politik, der er spredt ud over tjenester. Udvid afgrænsningen, når den første er valideret.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Padronizar \"propostas\" de crédito como \"ansøgninger\"."
+    },
+    {
+      "source": "SUA CONVERSA VIRA UM CONCEITO",
+      "previous": "JERES SAMTALE BLIVER TIL ET KONCEPT",
+      "proposed": "DIN SAMTALE BLIVER TIL ET KONCEPT",
+      "result": "DIN SAMTALE BLIVER TIL ET KONCEPT",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is du",
+      "reviewReason": "Tratamento inconsistente; o fluxo de contato usa \"din samtale\"."
+    },
+    {
+      "source": "Análise jurídica e responsabilidade pelo caso permanecem com o profissional. O site distingue o que está provado em operação do que é ligado por configuração.",
+      "previous": "Juridisk analyse og ansvaret for sagen forbliver hos den fagprofessionelle. Websitet skelner mellem det, der er dokumenteret i drift, og det, der aktiveres via konfiguration.",
+      "proposed": "Juridisk analyse og ansvaret for sagen forbliver hos fagpersonen. Websitet skelner mellem det, der er dokumenteret i drift, og det, der aktiveres via konfiguration.",
+      "result": "Juridisk analyse og ansvaret for sagen forbliver hos fagpersonen. Websitet skelner mellem det, der er dokumenteret i drift, og det, der aktiveres via konfiguration.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Padronizar \"profissional\" como \"fagperson\"; \"fagprofessionelle\" é redundante."
+    },
+    {
+      "source": "Banking e Credit tornam essa ideia concreta: experiências diferentes construídas sobre capacidades da plataforma.",
+      "previous": "Banking og Credit gør denne idé konkret: forskellige oplevelser bygget på platformens kapaciteter.",
+      "proposed": "Banking og Credit gør denne idé konkret: forskellige oplevelser bygget på platformens kapabiliteter.",
+      "result": "Banking og Credit gør denne idé konkret: forskellige oplevelser bygget på platformens kapabiliteter.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Terminologia consistente: 'capacidades' = 'kapabiliteter' no restante do site."
+    },
+    {
+      "source": "Peças de formas diferentes se organizam numa biblioteca de capacidades",
+      "previous": "Brikker i forskellige former samles i et bibliotek af kapaciteter",
+      "proposed": "Brikker i forskellige former samles i et bibliotek af kapabiliteter",
+      "result": "Brikker i forskellige former samles i et bibliotek af kapabiliteter",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Terminologia consistente: 'capacidades' = 'kapabiliteter'."
+    },
+    {
+      "source": "A capacidade se conecta às regras e às pessoas da sua operação. O produto define como ela participa da jornada.",
+      "previous": "Kapaciteten forbindes med reglerne og menneskene i din drift. Produktet definerer, hvordan den indgår i forløbet.",
+      "proposed": "Kapabiliteten forbindes med reglerne og menneskene i din drift. Produktet definerer, hvordan den indgår i forløbet.",
+      "result": "Kapabiliteten forbindes med reglerne og menneskene i din drift. Produktet definerer, hvordan den indgår i forløbet.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Terminologia consistente: 'capacidade' = 'kapabilitet'."
+    },
+    {
+      "source": "Não foi possível preparar a composição.",
+      "previous": "Kompositionen kunne ikke forberedes.",
+      "proposed": "Sammensætningen kunne ikke forberedes.",
+      "result": "Sammensætningen kunne ikke forberedes.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Terminologia consistente: 'composição' = 'sammensætning' (como em r_eddacbcc24ed9da4)."
+    },
+    {
+      "source": "Veja a composição em ação",
+      "previous": "Se kompositionen i aktion",
+      "proposed": "Se sammensætningen i aktion",
+      "result": "Se sammensætningen i aktion",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Terminologia consistente: 'composição' = 'sammensætning'."
+    },
+    {
+      "source": "Estudo visual de Dados",
+      "previous": "Visuel undersøgelse af Data",
+      "proposed": "Visuelt studie af data",
+      "result": "Visuelt studie af data",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência com 'Visuelt studie af Platform'; 'undersøgelse' soa como pesquisa."
+    },
+    {
+      "source": "CATALISA / BANKING PLATFORM",
+      "previous": "CATALISA / BANKING PLATFORM",
+      "proposed": "CATALISA / BANKPLATFORM",
+      "result": "CATALISA / BANKPLATFORM",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome genérico de produto Banking Platform deve ser traduzido."
+    },
+    {
+      "source": "A ideia encontra",
+      "previous": "Idéen møder",
+      "proposed": "Ideen møder",
+      "result": "Ideen møder",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Ortografia dinamarquesa: forma definida é 'ideen', sem acento."
+    },
+    {
+      "source": "Profissional",
+      "previous": "Professionel",
+      "proposed": "Fagperson",
+      "result": "Fagperson",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "'Professionel' é adjetivo; como papel, usar 'Fagperson', consistente com r_e6ec083995b616a9."
+    },
+    {
+      "source": "Editar e-mail ou telefone",
+      "previous": "Rediger e-mail eller telefonnummer",
+      "proposed": "Redigér e-mail eller telefonnummer",
+      "result": "Redigér e-mail eller telefonnummer",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência de grafia do imperativo com 'Redigér konteksten' no mesmo arquivo."
+    },
+    {
+      "source": "Momentos do percurso",
+      "previous": "Øjeblikke på rejsen",
+      "proposed": "Øjeblikke i forløbet",
+      "result": "Øjeblikke i forløbet",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Terminologia consistente: 'percurso/jornada' = 'forløb'."
+    },
+    {
+      "source": "O cliente envia um Pix, mas perde a conexão antes de receber a confirmação. Repetir a operação pode gerar dúvida e insegurança.",
+      "previous": "Kunden sender en Pix, men mister forbindelsen, før bekræftelsen modtages. At gentage transaktionen kan skabe tvivl og utryghed.",
+      "proposed": "Kunden sender en Pix-betaling, men mister forbindelsen, før bekræftelsen modtages. At gentage transaktionen kan skabe tvivl og utryghed.",
+      "result": "Kunden sender en Pix-betaling, men mister forbindelsen, før bekræftelsen modtages. At gentage transaktionen kan skabe tvivl og utryghed.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Pix é o sistema de pagamento; 'en Pix' soa estranho em dinamarquês."
+    },
+    {
+      "source": "Sua conta pode se conectar a um produto de crédito próprio. Explore como proposta, aceite e acompanhamento podem compor essa jornada, conforme o escopo e as integrações.",
+      "previous": "Din konto kan forbindes til et kreditprodukt, du selv ejer. Udforsk, hvordan tilbud, accept og opfølgning kan indgå i denne rejse, afhængigt af scope og integrationer.",
+      "proposed": "Din konto kan forbindes til et kreditprodukt, du selv ejer. Udforsk, hvordan tilbud, accept og opfølgning kan indgå i dette forløb, afhængigt af scope og integrationer.",
+      "result": "Din konto kan forbindes til et kreditprodukt, du selv ejer. Udforsk, hvordan tilbud, accept og opfølgning kan indgå i dette forløb, afhængigt af scope og integrationer.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Terminologia consistente: 'jornada' = 'forløb'."
+    },
+    {
+      "source": "Mantenha os dados de contato e cadastro em uma referência compartilhada pelas jornadas.",
+      "previous": "Hold kontakt- og registreringsdata i én reference, som rejserne deler.",
+      "proposed": "Hold kontakt- og registreringsdata i én reference, som forløbene deler.",
+      "result": "Hold kontakt- og registreringsdata i én reference, som forløbene deler.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Terminologia consistente: 'jornada' = 'forløb'."
+    },
+    {
+      "source": "Escolha uma jornada, avance pelas etapas",
+      "previous": "Vælg en rejse, gå gennem trinnene",
+      "proposed": "Vælg et forløb, gå gennem trinnene",
+      "result": "Vælg et forløb, gå gennem trinnene",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Terminologia consistente: 'jornada' = 'forløb'."
+    },
+    {
+      "source": "O diferencial aparece quando o dado compartilhado participa de uma jornada útil: com qualidade, política, oferta e acompanhamento.",
+      "previous": "Forskellen opstår, når de delte data indgår i en nyttig rejse: med kvalitet, politik, tilbud og opfølgning.",
+      "proposed": "Forskellen opstår, når de delte data indgår i et nyttigt forløb: med kvalitet, politik, tilbud og opfølgning.",
+      "result": "Forskellen opstår, når de delte data indgår i et nyttigt forløb: med kvalitet, politik, tilbud og opfølgning.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Terminologia consistente: 'jornada' = 'forløb'."
+    },
+    {
+      "source": "O bloco aplica regras definidas pela empresa. Buscar informações, organizar a esteira e decidir sobre revisões humanas são responsabilidades da jornada.",
+      "previous": "Blokken anvender regler defineret af virksomheden. At hente oplysninger, organisere pipelinen og beslutte om manuelle gennemgange er rejsens ansvar.",
+      "proposed": "Blokken anvender regler defineret af virksomheden. At hente oplysninger, organisere pipelinen og beslutte om manuelle gennemgange er forløbets ansvar.",
+      "result": "Blokken anvender regler defineret af virksomheden. At hente oplysninger, organisere pipelinen og beslutte om manuelle gennemgange er forløbets ansvar.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Terminologia consistente: 'jornada' = 'forløb'."
+    },
+    {
+      "source": "Classificação de texto com categorias definidas pela sua operação. Configure os provedores disponíveis no ambiente.",
+      "previous": "Tekstklassificering med kategorier defineret af jeres forretning. Konfigurer de udbydere, der er tilgængelige i miljøet.",
+      "proposed": "Tekstklassificering med kategorier defineret af din forretning. Konfigurer de udbydere, der er tilgængelige i miljøet.",
+      "result": "Tekstklassificering med kategorier defineret af din forretning. Konfigurer de udbydere, der er tilgængelige i miljøet.",
+      "outcome": "skipped-register",
+      "why": "Batch-level register normalization is not a material correction; fixed style is du",
+      "reviewReason": "Consistência de tratamento: o site usa 'din', não 'jeres'."
+    },
+    {
+      "source": "Aplicação possível · escopo definido por operação",
+      "previous": "Mulig anvendelse · omfang defineret pr. drift",
+      "proposed": "Mulig anvendelse · scope defineres af den enkelte forretning",
+      "result": "Mulig anvendelse · scope defineres af den enkelte forretning",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'omfang defineret pr. drift' é literal e estranho; alinhar com 'scope' usado no site."
+    },
+    {
+      "source": "Pequeno no espaço.",
+      "previous": "Lille i omfang.",
+      "proposed": "Lille i formatet.",
+      "result": "Lille i formatet.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'i omfang' significa escopo; o original refere-se a tamanho/espaço ocupado."
+    },
+    {
+      "source": "Explore o Banking Platform",
+      "previous": "Udforsk Banking Platform",
+      "proposed": "Udforsk Bankplatformen",
+      "result": "Udforsk Bankplatformen",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "O nome de produto 'Banking Platform' deve ser traduzido de forma consistente com o rótulo 'Bankplatform'."
+    },
+    {
+      "source": "Decision",
+      "previous": "Beslutninger",
+      "proposed": "Beslutning",
+      "result": "Beslutning",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "O rótulo de produto 'Decision' deve usar o singular 'Beslutning', não o plural."
+    },
+    {
+      "source": "Três planos de trabalho ligados por uma conexão contínua: entrada, organização e resultado",
+      "previous": "Tre arbejdsplaner forbundet af en sammenhængende forbindelse: input, organisering og resultat",
+      "proposed": "Tre arbejdsflader forbundet af en kontinuerlig forbindelse: input, organisering og resultat",
+      "result": "Tre arbejdsflader forbundet af en kontinuerlig forbindelse: input, organisering og resultat",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Arbejdsplaner' significa cronogramas de trabalho; aqui 'planos' são superfícies ou camadas visuais. 'Kontinuerlig' também traduz melhor 'contínua'."
+    },
+    {
+      "source": "Volume secundário",
+      "previous": "Sekundær volumen",
+      "proposed": "Sekundært volumen",
+      "result": "Sekundært volumen",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Volumen' é neutro em dinamarquês, então a concordância exige 'sekundært'."
+    },
+    {
+      "source": "Esta referência atingiu o limite de revisões. Consulte o responsável pelos dados.",
+      "previous": "Denne reference har nået grænsen for antal revisioner. Kontakt den dataansvarlige.",
+      "proposed": "Denne reference har nået grænsen for antal revisioner. Kontakt den, der er ansvarlig for dataene.",
+      "result": "Denne reference har nået grænsen for antal revisioner. Kontakt den, der er ansvarlig for dataene.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "'Den dataansvarlige' é o termo jurídico para controlador de dados. O original fala só da pessoa responsável pelos dados."
+    }
+  ],
+  "normalized": [
+    {
+      "source": "Building blocks: biblioteca de capacidades | Catalisa",
+      "previous": "Building blocks: bibliotek af funktioner | Catalisa",
+      "text": "Building blocks: bibliotek af kapabiliteter | Catalisa"
+    },
+    {
+      "source": "A disponibilidade depende da capacidade, do estágio, das credenciais e dos contratos necessários. Consulte a documentação e valide o fluxo completo antes de planejar o uso em produção.",
+      "previous": "Tilgængeligheden afhænger af funktionen, modenhedsstadiet, legitimationsoplysningerne og de nødvendige kontrakter. Se dokumentationen, og validér hele flowet, før du planlægger brug i produktion.",
+      "text": "Tilgængeligheden afhænger af kapabiliteten, modenhedsstadiet, legitimationsoplysningerne og de nødvendige kontrakter. Se dokumentationen, og validér hele flowet, før du planlægger brug i produktion."
+    },
+    {
+      "source": "O Studio substitui as capacidades da plataforma?",
+      "previous": "Erstatter Studio platformens funktioner?",
+      "text": "Erstatter Studio platformens kapabiliteter?"
+    },
+    {
+      "source": "Um recorte útil pode ser a simulação de uma proposta, a verificação de identidade ou a formalização. Ele precisa ter entrada, saída, responsável e resultado observável. Escolher uma capacidade só porque é simples de extrair pode produzir uma API nova sem melhorar o trabalho de ninguém.",
+      "previous": "Et nyttigt udsnit kan være simulering af et tilbud, identitetsverifikation eller formalisering. Det skal have input, output, en ansvarlig og et observerbart resultat. Hvis man vælger en funktion, blot fordi den er nem at udskille, kan det give en ny API uden at forbedre nogens arbejde.",
+      "text": "Et nyttigt udsnit kan være simulering af et tilbud, identitetsverifikation eller formalisering. Det skal have input, output, en ansvarlig og et observerbart resultat. Hvis man vælger en kapabilitet, blot fordi den er nem at udskille, kan det give en ny API uden at forbedre nogens arbejde."
+    },
+    {
+      "source": "Explore composições de atendimento, identidade e decisão. Entenda como capacidades com responsabilidades próprias participam de uma mesma jornada.",
+      "previous": "Udforsk sammensætninger af kundeservice, identitet og beslutning. Forstå, hvordan funktioner med egne ansvarsområder indgår i det samme forløb.",
+      "text": "Udforsk sammensætninger af kundeservice, identitet og beslutning. Forstå, hvordan kapabiliteter med egne ansvarsområder indgår i det samme forløb."
+    },
+    {
+      "source": "Explore ideias de produtos com capacidades Catalisa, revise o conceito e experimente diferentes caminhos de composição com IA.",
+      "previous": "Udforsk produktidéer med Catalisa-funktioner, gennemgå konceptet, og afprøv forskellige sammensætninger med AI.",
+      "text": "Udforsk produktidéer med Catalisa-kapabiliteter, gennemgå konceptet, og afprøv forskellige sammensætninger med AI."
+    },
+    {
+      "source": "A Catalisa separa essas responsabilidades em building blocks. Cada um oferece uma capacidade que pode participar de jornadas diferentes. O esforço de produto se concentra nas regras, na experiência e nas conexões que tornam aquele negócio específico.",
+      "previous": "Catalisa opdeler disse ansvarsområder i building blocks. Hver af dem tilbyder en funktion, der kan indgå i forskellige forløb. Produktarbejdet samler sig om de regler, den oplevelse og de forbindelser, der gør netop den forretning særlig.",
+      "text": "Catalisa opdeler disse ansvarsområder i building blocks. Hver af dem tilbyder en kapabilitet, der kan indgå i forskellige forløb. Produktarbejdet samler sig om de regler, den oplevelse og de forbindelser, der gør netop den forretning særlig."
+    },
+    {
+      "source": "Gravação, acesso e uso das informações precisam de autorização e regras de guarda; processamento posterior depende da composição com outras capacidades.",
+      "previous": "Lagring, adgang og brug af oplysningerne kræver autorisation og opbevaringsregler; efterfølgende behandling afhænger af kombinationen med andre funktioner.",
+      "text": "Lagring, adgang og brug af oplysningerne kræver autorisation og opbevaringsregler; efterfølgende behandling afhænger af kombinationen med andre kapabiliteter."
+    },
+    {
+      "source": "Serviços bancários e autorizações ficam nas capacidades responsáveis. Explicar o saldo não autoriza movimentar dinheiro.",
+      "previous": "Banktjenester og autorisationer ligger i de ansvarlige funktioner. At forklare saldoen giver ikke tilladelse til at flytte penge.",
+      "text": "Banktjenester og autorisationer ligger i de ansvarlige kapabiliteter. At forklare saldoen giver ikke tilladelse til at flytte penge."
+    },
+    {
+      "source": "Capacidades por trás dos controles",
+      "previous": "Funktioner bag kontrollerne",
+      "text": "Kapabiliteter bag kontrollerne"
+    },
+    {
+      "source": "capacidades encontradas",
+      "previous": "fundne funktioner",
+      "text": "fundne kapabiliteter"
+    },
+    {
+      "source": "A plataforma conecta essas capacidades. Cada organização define sua política, configura os controles e valida se eles atendem ao contexto em que vai operar.",
+      "previous": "Platformen forbinder disse funktioner. Hver organisation fastlægger sin politik, konfigurerer kontrollerne og validerer, om de passer til den kontekst, den skal operere i.",
+      "text": "Platformen forbinder disse kapabiliteter. Hver organisation fastlægger sin politik, konfigurerer kontrollerne og validerer, om de passer til den kontekst, den skal operere i."
+    },
+    {
+      "source": "Contratos e capacidades reutilizáveis ↗",
+      "previous": "Genanvendelige kontrakter og funktioner ↗",
+      "text": "Genanvendelige kontrakter og kapabiliteter ↗"
+    },
+    {
+      "source": "Encontrar capacidades com responsabilidades e estágios próprios.",
+      "previous": "Find funktioner med egne ansvarsområder og modenhedsstadier.",
+      "text": "Find kapabiliteter med egne ansvarsområder og modenhedsstadier."
+    },
+    {
+      "source": "Com o que já existe: interface conecta ao seu backend, que integra capacidades e sistemas existentes",
+      "previous": "Med det, der allerede findes: brugerfladen forbinder til din backend, som integrerer eksisterende funktioner og systemer",
+      "text": "Med det, der allerede findes: brugerfladen forbinder til din backend, som integrerer eksisterende kapabiliteter og systemer"
+    },
+    {
+      "source": "Explore um domínio para encontrar as capacidades.",
+      "previous": "Udforsk et domæne for at finde funktionerne.",
+      "text": "Udforsk et domæne for at finde kapabiliteterne."
+    },
+    {
+      "source": "Uma fronteira modular não elimina acoplamento por si só. Versões, tratamento de falhas e compatibilidade precisam ser combinados com os consumidores. Quando uma capacidade ganha muitos usuários, uma mudança mal governada pode ampliar o impacto em vez de reduzi-lo.",
+      "previous": "En modulær grænse fjerner ikke i sig selv kobling. Versioner, fejlhåndtering og kompatibilitet skal aftales med forbrugerne. Når en funktion får mange brugere, kan en dårligt styret ændring forstærke påvirkningen i stedet for at mindske den.",
+      "text": "En modulær grænse fjerner ikke i sig selv kobling. Versioner, fejlhåndtering og kompatibilitet skal aftales med forbrugerne. Når en kapabilitet får mange brugere, kan en dårligt styret ændring forstærke påvirkningen i stedet for at mindske den."
+    },
+    {
+      "source": "CAPACIDADES",
+      "previous": "FUNKTIONER",
+      "text": "KAPABILITETER"
+    },
+    {
+      "source": "Uma esteira de crédito organizada em camadas: produto, política, decisão, formalização, operação e acompanhamento. A mesa reúne o trabalho, enquanto capacidades e fluxos sustentam o processo.",
+      "previous": "Et kreditforløb organiseret i lag: produkt, politik, beslutning, formalisering, drift og opfølgning. Desken samler arbejdet, mens funktioner og flows understøtter processen.",
+      "text": "Et kreditforløb organiseret i lag: produkt, politik, beslutning, formalisering, drift og opfølgning. Desken samler arbejdet, mens kapabiliteter og flows understøtter processen."
+    },
+    {
+      "source": "Conecta o canal às capacidades responsáveis.",
+      "previous": "Forbinder kanalen med de ansvarlige funktioner.",
+      "text": "Forbinder kanalen med de ansvarlige kapabiliteter."
+    },
+    {
+      "source": "Consuma a API com as ferramentas que seu time já usa. Cada capacidade tem operações, entradas, permissões e limites próprios.",
+      "previous": "Brug API'et med de værktøjer, dit team allerede anvender. Hver funktion har sine egne operationer, input, rettigheder og begrænsninger.",
+      "text": "Brug API'et med de værktøjer, dit team allerede anvender. Hver kapabilitet har sine egne operationer, input, rettigheder og begrænsninger."
+    },
+    {
+      "source": "Capacidades independentes em roxo conectadas por caminhos laranja numa composição modular",
+      "previous": "Uafhængige funktioner i lilla forbundet af orange stier i en modulær komposition",
+      "text": "Uafhængige kapabiliteter i lilla forbundet af orange stier i en modulær komposition"
+    },
+    {
+      "source": "Entrada, Capacidades, Resultado",
+      "previous": "Input, funktioner, resultat",
+      "text": "Input, kapabiliteter, resultat"
+    },
+    {
+      "source": "Os canais consomem um contrato comum. A capacidade concentra a responsabilidade; a mudança ainda exige compatibilidade e testes.",
+      "previous": "Kanalerne bruger en fælles kontrakt. Funktionen samler ansvaret; ændringer kræver stadig kompatibilitet og test.",
+      "text": "Kanalerne bruger en fælles kontrakt. Kapabiliteten samler ansvaret; ændringer kræver stadig kompatibilitet og test."
+    },
+    {
+      "source": "Building blocks / Biblioteca de capacidades",
+      "previous": "Building blocks / Bibliotek over funktioner",
+      "text": "Building blocks / Bibliotek over kapabiliteter"
+    },
+    {
+      "source": "Uma nova capacidade. No app que já está lá.",
+      "previous": "En ny funktion. I den app, der allerede er der.",
+      "text": "En ny kapabilitet. I den app, der allerede er der."
+    },
+    {
+      "source": "Capacidades e integrações selecionadas",
+      "previous": "Valgte funktioner og integrationer",
+      "text": "Valgte kapabiliteter og integrationer"
+    }
+  ],
+  "limitations": [
+    "Automatic independent pair review, not native human or legal approval.",
+    "Pure style/register and unsupported synonym changes are retained as skipped proposals.",
+    "Rendering, translated composition fragments and generated AI output require their separate browser/integration checks."
+  ]
+}

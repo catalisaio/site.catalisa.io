@@ -1,7 +1,7 @@
 import { BASE_URL } from '../routes';
 import type { Article } from '../../data/articles';
 
-export function getBlogPostingSchema(article: Article, title: string, description: string, keywords: string[]) {
+export function getBlogPostingSchema(article: Article, title: string, description: string, keywords: string[], language = 'pt-BR') {
   return {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
@@ -24,7 +24,7 @@ export function getBlogPostingSchema(article: Article, title: string, descriptio
     dateModified: `${article.updatedDate ?? article.publishedDate}T00:00:00-03:00`,
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `${BASE_URL}/insights/${article.slug}`,
+      '@id': `${BASE_URL}${language === 'en-US' ? '/en' : ''}/insights/${article.slug}`,
     },
     image: {
       '@type': 'ImageObject',
@@ -34,7 +34,7 @@ export function getBlogPostingSchema(article: Article, title: string, descriptio
     },
     articleSection: article.category,
     keywords: keywords,
-    wordCount: article.readingTime * 200,
+    inLanguage: language,
     citation: article.sources.map((s) => ({
       '@type': 'CreativeWork',
       name: s.title,

@@ -1,0 +1,323 @@
+{
+  "date": "2026-10-26T14:47:05.390Z",
+  "passed": false,
+  "origin": "https://site-staging.catalisa.io",
+  "tlsValidation": true,
+  "scope": "Real staging AI through the target browser/BFF, fictional short contact flows, human review, reload, one free refinement. No handoff or external messages.",
+  "results": [
+    {
+      "key": "loja-whatsapp",
+      "passed": true,
+      "briefing": {
+        "idea": "vender pelo whats",
+        "context": "loja de roupas",
+        "goal": "vender mais"
+      },
+      "elapsedMs": 17954,
+      "reviewElapsedMs": 42,
+      "hadReview": true,
+      "concept": {
+        "conceptRef": "concept_1ab0e9f9-9161-4ad5-ae60-dd14cdfcb921",
+        "version": 1,
+        "briefVersion": 3,
+        "content": {
+          "schemaVersion": "1.0",
+          "title": "Vendas pelo WhatsApp",
+          "summary": "Implantação de um canal de vendas via WhatsApp para loja de roupas, visando aumentar as vendas e facilitar a comunicação com os clientes.",
+          "hypothesis": "A utilização do WhatsApp como canal de vendas pode aumentar o volume de vendas e melhorar a experiência do cliente na loja de roupas.",
+          "roles": [
+            "Vendedor",
+            "Gerente de loja",
+            "Cliente"
+          ],
+          "screens": [
+            {
+              "id": "screen-1",
+              "title": "Catálogo de Produtos",
+              "description": "Tela onde o cliente pode visualizar todos os produtos disponíveis na loja, com fotos, descrições e preços.",
+              "items": [
+                {
+                  "label": "Produto A",
+                  "value": "R$ 99,90"
+                },
+                {
+                  "label": "Produto B",
+                  "value": "R$ 79,90"
+                },
+                {
+                  "label": "Produto C",
+                  "value": "R$ 49,90"
+                }
+              ],
+              "action": {
+                "label": "Fazer Pedido",
+                "nextScreenId": "screen-2"
+              }
+            },
+            {
+              "id": "screen-2",
+              "title": "Detalhes do Pedido",
+              "description": "Tela para o cliente revisar seu pedido, com itens selecionados e total a pagar.",
+              "items": [
+                {
+                  "label": "Produto A",
+                  "value": "R$ 99,90"
+                },
+                {
+                  "label": "Frete",
+                  "value": "R$ 10,00"
+                },
+                {
+                  "label": "Total",
+                  "value": "R$ 109,90"
+                }
+              ],
+              "action": {
+                "label": "Confirmar Pedido",
+                "nextScreenId": null
+              }
+            },
+            {
+              "id": "screen-3",
+              "title": "Confirmação de Pedido",
+              "description": "Tela de confirmação que mostra que o pedido foi realizado com sucesso e as próximas etapas.",
+              "items": [
+                {
+                  "label": "Pedido",
+                  "value": "Confirmado"
+                },
+                {
+                  "label": "Tempo de Entrega",
+                  "value": "3-5 dias úteis"
+                },
+                {
+                  "label": "Acompanhe pelo WhatsApp",
+                  "value": "Você receberá atualizações"
+                }
+              ],
+              "action": {
+                "label": "Voltar ao Catálogo",
+                "nextScreenId": "screen-1"
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "slug": "wpp",
+              "role": "Canal principal de vendas"
+            },
+            {
+              "slug": "email",
+              "role": "Notificações de confirmação"
+            }
+          ],
+          "journey": [
+            {
+              "id": "step-1",
+              "label": "Visualizar Produtos",
+              "description": "O cliente entra no WhatsApp e visualiza o catálogo de produtos.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "step-2",
+              "label": "Realizar Pedido",
+              "description": "O cliente seleciona os produtos e confirma o pedido.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "step-3",
+              "label": "Receber Confirmação",
+              "description": "O cliente recebe a confirmação do pedido via WhatsApp.",
+              "blockSlugs": [
+                "email"
+              ],
+              "humanReview": true
+            },
+            {
+              "id": "step-4",
+              "label": "Acompanhar Pedido",
+              "description": "O cliente acompanha o status do pedido através de mensagens no WhatsApp.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            }
+          ],
+          "limitations": [
+            "Necessidade de uma conexão estável de internet para uso do WhatsApp.",
+            "Restrições de horário para atendimento ao cliente via WhatsApp.",
+            "Dependência de estoque para a realização dos pedidos.",
+            "Possíveis dificuldades na integração de sistemas de pagamento."
+          ],
+          "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+        }
+      },
+      "refinement": {
+        "elapsedMs": 14513,
+        "concept": {
+          "conceptRef": "concept_1ab0e9f9-9161-4ad5-ae60-dd14cdfcb921",
+          "version": 2,
+          "briefVersion": 3,
+          "content": {
+            "schemaVersion": "1.0",
+            "title": "Vendas pelo WhatsApp",
+            "summary": "Implantação de um canal de vendas via WhatsApp para loja de roupas, visando aumentar as vendas e facilitar a comunicação com os clientes.",
+            "hypothesis": "A utilização do WhatsApp como canal de vendas pode aumentar o volume de vendas e melhorar a experiência do cliente na loja de roupas.",
+            "roles": [
+              "Vendedor",
+              "Gerente de loja",
+              "Cliente"
+            ],
+            "screens": [
+              {
+                "id": "screen-1",
+                "title": "Catálogo de Produtos",
+                "description": "Tela onde o cliente pode visualizar todos os produtos disponíveis na loja, com fotos, descrições e preços.",
+                "items": [
+                  {
+                    "label": "Produto A",
+                    "value": "R$ 99,90"
+                  },
+                  {
+                    "label": "Produto B",
+                    "value": "R$ 79,90"
+                  },
+                  {
+                    "label": "Produto C",
+                    "value": "R$ 49,90"
+                  }
+                ],
+                "action": {
+                  "label": "Fazer Pedido",
+                  "nextScreenId": "screen-2"
+                }
+              },
+              {
+                "id": "screen-2",
+                "title": "Detalhes do Pedido",
+                "description": "Tela para o cliente revisar seu pedido, com itens selecionados e total a pagar.",
+                "items": [
+                  {
+                    "label": "Produto A",
+                    "value": "R$ 99,90"
+                  },
+                  {
+                    "label": "Frete",
+                    "value": "R$ 10,00"
+                  },
+                  {
+                    "label": "Total",
+                    "value": "R$ 109,90"
+                  }
+                ],
+                "action": {
+                  "label": "Confirmar Pedido",
+                  "nextScreenId": null
+                }
+              },
+              {
+                "id": "screen-3",
+                "title": "Confirmação de Pedido",
+                "description": "Tela de confirmação que mostra que o pedido foi realizado com sucesso e as próximas etapas.",
+                "items": [
+                  {
+                    "label": "Pedido",
+                    "value": "Confirmado"
+                  },
+                  {
+                    "label": "Tempo de Entrega",
+                    "value": "3-5 dias úteis"
+                  },
+                  {
+                    "label": "Acompanhe pelo E-mail",
+                    "value": "Você receberá atualizações"
+                  }
+                ],
+                "action": {
+                  "label": "Voltar ao Catálogo",
+                  "nextScreenId": "screen-1"
+                }
+              }
+            ],
+            "blocks": [
+              {
+                "slug": "wpp",
+                "role": "Canal principal de vendas"
+              },
+              {
+                "slug": "email",
+                "role": "Notificações de confirmação"
+              }
+            ],
+            "journey": [
+              {
+                "id": "step-1",
+                "label": "Visualizar Produtos",
+                "description": "O cliente entra no WhatsApp e visualiza o catálogo de produtos.",
+                "blockSlugs": [
+                  "wpp"
+                ],
+                "humanReview": false
+              },
+              {
+                "id": "step-2",
+                "label": "Realizar Pedido",
+                "description": "O cliente seleciona os produtos e confirma o pedido.",
+                "blockSlugs": [
+                  "wpp"
+                ],
+                "humanReview": false
+              },
+              {
+                "id": "step-3",
+                "label": "Receber Confirmação",
+                "description": "O cliente recebe a confirmação do pedido via e-mail.",
+                "blockSlugs": [
+                  "email"
+                ],
+                "humanReview": true
+              },
+              {
+                "id": "step-4",
+                "label": "Acompanhar Pedido",
+                "description": "O cliente acompanha o status do pedido através de mensagens no WhatsApp.",
+                "blockSlugs": [
+                  "wpp"
+                ],
+                "humanReview": false
+              }
+            ],
+            "limitations": [
+              "Necessidade de uma conexão estável de internet para uso do WhatsApp.",
+              "Restrições de horário para atendimento ao cliente via WhatsApp.",
+              "Dependência de estoque para a realização dos pedidos.",
+              "Possíveis dificuldades na integração de sistemas de pagamento."
+            ],
+            "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "key": "clinica-agenda",
+      "passed": false,
+      "stage": "initial-generation",
+      "error": "Error: O conceito retornou conexões inconsistentes. Você pode tentar novamente.",
+      "errors": []
+    },
+    {
+      "key": "escola-cobranca",
+      "passed": false,
+      "stage": "briefing",
+      "error": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('.z-view-contact')\nExpected: visible\nTimeout: 20000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"to.be.visible\" with timeout 20000ms\n  - waiting for locator('.z-view-contact')\n",
+      "errors": []
+    }
+  ]
+}

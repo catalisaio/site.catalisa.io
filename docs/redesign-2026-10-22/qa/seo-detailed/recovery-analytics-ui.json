@@ -1,0 +1,46 @@
+{
+  "checkedAt": "2026-10-27T01:23:48.972Z",
+  "integrationAvailable": true,
+  "authenticated": true,
+  "ga": {
+    "accountId": "254659401",
+    "propertyId": "350153952",
+    "activeUsersLast30Minutes": 0,
+    "eventNamesObserved": [],
+    "receiptConfirmed": false,
+    "limitations": [
+      "Contexto confirmado pelo seletor do GA4 ('Catalisa.io' > 'Catalisa') e pela URL a254659401p350153952; o stream 4436972873 e o ID G-JYJWH17ZVX não foram verificados na interface.",
+      "O Realtime overview mostrou 0 usuários ativos nos últimos 30 e 5 minutos. Os cartões de event count, views e key events mostraram 'No data available'. page_view e qa_realtime_check não aparecem.",
+      "Os eventos foram enviados às 2026-10-27T00:57:26Z, então às 01:23:48Z ainda estavam dentro da janela de 30 minutos (até cerca de 01:27:26Z). A ausência é relevante, mas não prova que a coleta esteja quebrada: hits de server/Measurement Protocol ou filtrados (dados internos, de desenvolvimento ou bots) podem não aparecer no Realtime.",
+      "User Snapshot e dados individuais não foram acessados."
+    ]
+  },
+  "clarityProduction": {
+    "projectId": "z4073yqv5z",
+    "installationDetected": null,
+    "dashboardEnabled": null,
+    "heatmapsEnabled": null,
+    "aggregateSessions": null,
+    "limitations": [
+      "A extensão Claude in Chrome bloqueou a navegação para clarity.microsoft.com com o erro 'Navigation to this domain is not allowed'. Nenhum dado do Clarity foi lido."
+    ]
+  },
+  "clarityStaging": {
+    "projectId": "z40bi9hrk8",
+    "installationDetected": null,
+    "dashboardEnabled": null,
+    "heatmapsEnabled": null,
+    "aggregateSessions": null,
+    "limitations": [
+      "Não foi tentado porque o mesmo bloqueio de domínio afeta clarity.microsoft.com."
+    ]
+  },
+  "settingsChanged": false,
+  "recordedAt": "2026-10-27T01:27:01.197Z",
+  "scope": {
+    "siteChanged": false,
+    "settingsChanged": false,
+    "personalConsentChanged": false,
+    "individualVisitorDataRead": false
+  }
+}

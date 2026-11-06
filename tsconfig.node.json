@@ -7,6 +7,7 @@
     "types": ["node"],
     "skipLibCheck": true,
     "moduleResolution": "bundler",
+    "resolveJsonModule": true,
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
     "moduleDetection": "force",
@@ -16,5 +17,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["vite.config.ts"]
+  "include": ["vite.config.ts", "server/site/**/*.ts", "netlify/functions/*.mts"],
+  "exclude": ["server/**/*.test.ts"]
 }

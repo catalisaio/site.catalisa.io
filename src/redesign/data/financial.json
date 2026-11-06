@@ -1,0 +1,196 @@
+{
+  "layers": {
+    "channels": [
+      "A experiência apresenta.",
+      "App, desktop e console têm papéis diferentes. O canal organiza a interação e mostra o estado recebido da base."
+    ],
+    "capabilities": [
+      "Cada capacidade responde pelo seu trabalho.",
+      "Banking organiza a entrada do aplicativo. Identidade, regras de acesso e outras capacidades entram conforme a composição."
+    ],
+    "provider": [
+      "A movimentação tem um responsável.",
+      "O BaaS faz a ponte com o provedor da conta. Produto, configuração e validação da operação precisam ser definidos para cada implementação."
+    ]
+  },
+  "tour": [
+    [
+      "O pedido começa no canal.",
+      "A pessoa prepara uma operação e confere o que pretende fazer.",
+      "Preparado no desktop",
+      "Aguardando confirmação",
+      "O console ainda não deve tratar intenção como movimentação."
+    ],
+    [
+      "A confirmação ganha contexto.",
+      "A experiência de autorização é definida pela base, conforme a configuração da jornada.",
+      "Confirmar no aparelho",
+      "Contexto da operação",
+      "O canal apresenta o que precisa ser confirmado."
+    ],
+    [
+      "A base responde pelo próximo passo.",
+      "A operação depende da autorização e do resultado dos serviços responsáveis.",
+      "Resposta em consulta",
+      "Aguardando resultado",
+      "Uma espera não deve aparecer como sucesso."
+    ],
+    [
+      "A resposta chega a quem precisa.",
+      "O titular acompanha o estado e a equipe tem uma referência para continuar o atendimento.",
+      "Estado acompanhado",
+      "Contexto compartilhado",
+      "Cliente e operação continuam a partir da mesma referência."
+    ]
+  ],
+  "balances": {
+    "free": {
+      "bank": 300,
+      "reserved": 0,
+      "usable": 300,
+      "title": "Uma posição, sem reserva estruturada.",
+      "copy": "Neste exemplo, o valor informado pelo banco está disponível para movimentação.",
+      "label": "Pode movimentar",
+      "status": "Leitura disponível"
+    },
+    "reserved": {
+      "bank": 300,
+      "reserved": 200,
+      "usable": 100,
+      "title": "Uma parte do valor tem outro destino.",
+      "copy": "A reserva estruturada de R$ 200,00 reduz o que pode ser movimentado para R$ 100,00.",
+      "label": "Pode movimentar",
+      "status": "Reserva identificada"
+    },
+    "checking": {
+      "bank": 300,
+      "reserved": 200,
+      "usable": null,
+      "title": "Quando os números pedem uma conferência.",
+      "copy": "O exemplo interrompe a leitura do valor movimentável até esclarecer a divergência. Uma resposta incerta continua identificada como incerta.",
+      "label": "Pode movimentar",
+      "status": "Em conferência"
+    }
+  },
+  "evidence": {
+    "complete": {
+      "label": "Informações reunidas",
+      "title": "O caso pode ser lido com contexto.",
+      "copy": "Os elementos previstos neste exemplo estão reunidos. A equipe ainda precisa avaliar o caso conforme a política e as responsabilidades definidas.",
+      "state": "Contexto organizado",
+      "items": [
+        "Pedido descrito",
+        "Documentos de referência",
+        "Política identificada"
+      ],
+      "result": "Pronto para revisão"
+    },
+    "missing": {
+      "label": "Um dado pendente",
+      "title": "Uma falta também é uma informação.",
+      "copy": "O exemplo destaca o que ainda não foi recebido. Um dado ausente continua identificado como ausente, sem virar um número inventado.",
+      "state": "Complementar contexto",
+      "items": [
+        "Pedido descrito",
+        "Informação ainda não recebida",
+        "Política identificada"
+      ],
+      "result": "Aguardar complemento"
+    },
+    "human": {
+      "label": "Revisão pela mesa",
+      "title": "Uma pessoa entra no próximo passo.",
+      "copy": "A leitura passa pela mesa. A demonstração separa apoio à análise de uma decisão registrada por quem tem essa responsabilidade.",
+      "state": "Revisão humana",
+      "items": [
+        "Contexto organizado",
+        "Pontos para revisar",
+        "Responsável pela avaliação"
+      ],
+      "result": "Aguardando a mesa"
+    }
+  },
+  "collaterals": {
+    "receivables": {
+      "label": "Recebíveis",
+      "glyph": "≋",
+      "title": "O que já existe a receber ganha contexto.",
+      "copy": "Documentos e referências do recebível entram na composição da proposta e acompanham a operação.",
+      "detail": "O guia apresenta a antecipação de recebíveis como pacote conectado à camada comum."
+    },
+    "vehicle": {
+      "label": "Veículo",
+      "glyph": "↗",
+      "title": "A garantia traz informações próprias.",
+      "copy": "Dados do veículo e condições da garantia acrescentam responsabilidades específicas à jornada.",
+      "detail": "O material explora o produto com garantia de veículo. Integrações e condições precisam ser verificadas por implementação."
+    },
+    "property": {
+      "label": "Imóvel",
+      "glyph": "⌂",
+      "title": "Outro lastro, outras referências.",
+      "copy": "O imóvel acrescenta informações e condições próprias, sobre a mesma organização do processo.",
+      "detail": "A presença da modalidade no material não confirma que todas as etapas externas estejam disponíveis."
+    },
+    "personal": {
+      "label": "Pessoal",
+      "glyph": "◉",
+      "title": "O produto também pode seguir sem uma garantia real.",
+      "copy": "A modalidade reúne parâmetros, condições e política conforme a definição do produto de crédito.",
+      "detail": "O guia inclui o crédito pessoal entre as composições exploradas pela mesa."
+    },
+    "payroll": {
+      "label": "Consignado",
+      "glyph": "⊞",
+      "title": "A relação com a folha participa da composição.",
+      "copy": "Convênio, margem e informações de repasse entram no contexto específico do produto.",
+      "detail": "O material registra telas e percursos de consignado no ambiente de demonstração."
+    }
+  },
+  "stages": [
+    {
+      "id": "receive",
+      "label": "Receber",
+      "title": "Uma proposta chega.<br>O contexto vem junto.",
+      "copy": "A fila aproxima propostas, informações e sinais para a equipe começar a análise. Abrir um caso é continuar um trabalho, com um ponto de partida organizado.",
+      "who": "QUEM ORIGINA + QUEM ANALISA",
+      "result": "Uma proposta pronta para ser lida.",
+      "file": "credit-queue.png",
+      "shot": "Fila de análise da mesa",
+      "detail": "O material de referência reúne propostas de modalidades diferentes na mesma mesa."
+    },
+    {
+      "id": "assess",
+      "label": "Avaliar",
+      "title": "A regra encontra<br>a realidade do caso.",
+      "copy": "Política, condições e simulação ajudam a estruturar a avaliação. O que falta também precisa aparecer para quem decide.",
+      "who": "POLÍTICA + MESA DE CRÉDITO",
+      "result": "Uma avaliação que pode ser explicada.",
+      "file": "credit-policy.png",
+      "shot": "Política de crédito na mesa",
+      "detail": "Parâmetros da casa e do produto têm lugares próprios no material da plataforma."
+    },
+    {
+      "id": "formalize",
+      "label": "Formalizar",
+      "title": "Aceitar uma proposta<br>é outro começo.",
+      "copy": "O aceite dá origem à operação. Documentos, autorizações e condições de liberação continuam a fazer parte do percurso.",
+      "who": "CLIENTE + FORMALIZAÇÃO + OPERAÇÃO",
+      "result": "Uma operação com próximos passos definidos.",
+      "file": "credit-operation.png",
+      "shot": "Operações e condições de liberação",
+      "detail": "A captura mostra operações aceitas que ainda aguardam autorização ou outras condições."
+    },
+    {
+      "id": "follow",
+      "label": "Acompanhar",
+      "title": "O trabalho continua<br>depois da contratação.",
+      "copy": "Carteira, recebimentos e obrigações precisam de acompanhamento. A operação preserva o contexto para o que acontece ao longo do tempo.",
+      "who": "CARTEIRA + OPERAÇÃO + RELACIONAMENTO",
+      "result": "Uma visão para continuar o trabalho.",
+      "file": "credit-portfolio.png",
+      "shot": "Carteira na mesa de crédito",
+      "detail": "Uma leitura da posição e da exposição da carteira no ambiente demonstrativo."
+    }
+  ]
+}

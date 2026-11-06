@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-25T05:19:50.483Z",
+  "passed": true,
+  "scope": "Caddy2 adapt/validate using the already-running isolated staging container binary, stdin only; no reload, files changed, restart, route switch or production-container command",
+  "includeSource": ".local/site/releases/staging-20261025-0446/public/site-hosting.caddy",
+  "includeSha256": "8ddd83ce0ac10e6031af28bc8bb0cf3d81aaa061aed0d7567753d3dca1f78406",
+  "reviewConfigSha256": "1951acb293ec667d92c3ab63996578bf7dfed7801a6ca89e1395804721caf0ad",
+  "exitCode": 0,
+  "errors": [],
+  "limits": [
+    "Syntax/provision validation only; HTTP response assertions required after staging install"
+  ]
+}

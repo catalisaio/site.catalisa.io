@@ -1,0 +1,662 @@
+<meta charset="utf-8">
+<title>Catalisa na Mesa de Operação</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+
+<style>
+/* ══════════════════════════════════════════════════════════════════════
+   Catalisa · direção B · "Mesa de operação"
+   Escuro por padrão, produto à vista. Nenhuma fotografia: a prova é a
+   própria máquina, renderizada. Tokens do styleguide (tema escuro),
+   sem nenhuma cor fora deles.
+   ══════════════════════════════════════════════════════════════════════ */
+:root{
+  --brand-400:#9B7BC0;--brand-500:#734B9C;--brand-600:#5E3D80;
+  --secondary:#FDC234;--accent:#FE8342;--success:#28A745;--danger:#DC3545;--info:#5B9BD5;--teal:#0F9B8E;
+
+  --fs-2xs:11.5px;--fs-xs:12.5px;--fs-sm:13.5px;--fs-base:15px;--fs-prose:16.5px;
+  --fs-lg:18px;--fs-xl:21px;--fs-2xl:25px;--fs-3xl:30px;--fs-4xl:40px;
+  --ctl:40px;--r-xs:7px;--r-sm:10px;--r:13px;--r-lg:16px;--r-xl:22px;
+
+  --disp:'Archivo',ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --font:'Inter',ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+  --ease:cubic-bezier(.4,0,.2,1);
+
+  /* tema escuro do styleguide, literal */
+  --bg:#0E0A16;--surface:#171123;--surface-2:#1E1730;--surface-3:#28203C;
+  --border:rgba(255,255,255,.07);--border-forte:rgba(255,255,255,.13);
+  --text:#F0ECF6;--text-2:#ABA3BB;--text-3:#7A7189;
+  --brand:#B392DE;--brand-soft:rgba(115,75,156,.22);--dot:#2A2240;
+
+  --wrap:1300px;--pad:clamp(20px,4vw,48px);--secao:clamp(64px,8vw,120px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{font-family:var(--font);font-size:var(--fs-base);line-height:1.6;color:var(--text);background-color:var(--bg);-webkit-font-smoothing:antialiased}
+svg{display:block}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--brand);outline-offset:3px;border-radius:var(--r-xs)}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-inline:var(--pad)}
+
+h1,h2,h3{font-family:var(--disp);font-weight:700;letter-spacing:-.034em;color:var(--text);text-wrap:balance}
+h1{font-size:clamp(35px,5.2vw,64px);line-height:1.02}
+h1>span{display:block}
+h2{font-size:clamp(27px,3.6vw,46px);line-height:1.07}
+h3{font-size:var(--fs-lg);line-height:1.25;letter-spacing:-.02em}
+.marcado{color:var(--brand)}
+.po{color:var(--secondary)}
+.olho{font-size:var(--fs-xs);font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--brand)}
+.deck{font-size:clamp(16px,1.3vw,18.5px);line-height:1.62;color:var(--text-2);max-width:58ch}
+.deck b{color:var(--text);font-weight:600}
+
+.botoes{display:flex;flex-wrap:wrap;gap:12px}
+.bt{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 26px;border-radius:var(--r-sm);
+  font-size:var(--fs-sm);font-weight:600;letter-spacing:.075em;text-transform:uppercase;border:1.5px solid transparent;
+  transition:background .2s var(--ease),border-color .2s var(--ease),color .2s var(--ease)}
+.bt.cheio{background:var(--brand-500);color:#FFFFFF;border-color:var(--brand-500)}
+.bt.cheio:hover{background:var(--brand-600);border-color:var(--brand-600)}
+.bt.vazio{color:var(--text);border-color:var(--border-forte)}
+.bt.vazio:hover{border-color:var(--text);background:var(--surface-2)}
+.bt .pt{width:7px;height:7px;border-radius:50%;background:var(--secondary);flex:none}
+.bt.sm{min-height:var(--ctl);padding:0 18px;font-size:var(--fs-xs)}
+
+/* faixa do entregável */
+.fita{background:var(--bg);border-bottom:1px solid var(--border);position:relative;z-index:40}
+.fita .wrap{display:flex;align-items:center;gap:16px;flex-wrap:wrap;min-height:46px}
+.fita .qual{font-family:var(--mono);font-size:var(--fs-2xs);letter-spacing:.14em;text-transform:uppercase;color:var(--text-3)}
+.fita .qual b{color:var(--text-2);font-weight:500}
+.vao{flex:1 1 20px}
+.selet{display:flex;gap:4px}
+.tab{display:inline-flex;align-items:center;gap:9px;min-height:46px;padding:0 14px;font-size:var(--fs-xs);font-weight:600;letter-spacing:.05em;
+  color:var(--text-3);border-bottom:2px solid transparent;transition:color .2s var(--ease),border-color .2s var(--ease)}
+.tab i{font-style:normal;font-family:var(--mono);font-size:var(--fs-2xs);opacity:.8}
+.tab:hover{color:var(--text)}
+.tab[aria-selected="true"]{color:var(--text);border-bottom-color:var(--secondary)}
+.tab[aria-selected="true"] i{color:var(--secondary);opacity:1}
+
+/* cabeçalho */
+.topo{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
+.topo .wrap{display:flex;align-items:center;gap:clamp(16px,2.6vw,40px);min-height:76px}
+.logo{width:130px;height:auto;flex:none}
+.menu{display:flex;align-items:center;gap:clamp(14px,1.8vw,26px)}
+.menu a{display:inline-flex;align-items:center;gap:6px;min-height:var(--ctl);font-size:var(--fs-sm);font-weight:500;color:var(--text-2);
+  border-bottom:2px solid transparent;transition:color .2s var(--ease),border-color .2s var(--ease)}
+.menu a svg{width:11px;height:11px;opacity:.55}
+.menu a:hover{color:var(--text)}
+.menu a.aqui{color:var(--brand);border-bottom-color:var(--brand)}
+
+/* ── o painel: a peça de produto que substitui a fotografia ─────────── */
+.painel{border:1px solid var(--border-forte);border-radius:var(--r-lg);background:var(--surface);overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,.45)}
+.painel-topo{display:flex;align-items:center;gap:12px;padding:13px 18px;border-bottom:1px solid var(--border);background:var(--surface-2)}
+.painel-topo .luzes{display:flex;gap:6px}
+.painel-topo .luzes i{width:9px;height:9px;border-radius:50%;background:var(--surface-3)}
+.painel-topo .rot{font-family:var(--mono);font-size:var(--fs-2xs);letter-spacing:.1em;text-transform:uppercase;color:var(--text-3)}
+.painel-topo .versao{margin-left:auto;font-family:var(--mono);font-size:var(--fs-2xs);color:var(--text-3);border:1px solid var(--border);border-radius:99px;padding:3px 10px}
+.painel-corpo{padding:6px 0}
+
+/* linhas de esteira */
+.passo{display:grid;grid-template-columns:78px minmax(0,1fr) auto;gap:14px;align-items:center;padding:13px 18px;border-bottom:1px solid var(--border)}
+.passo:last-child{border-bottom:0}
+.passo .hora{font-family:var(--mono);font-size:var(--fs-2xs);color:var(--text-3);font-variant-numeric:tabular-nums}
+.passo .oq{display:flex;flex-direction:column;gap:2px;min-width:0}
+.passo .oq b{font-size:var(--fs-sm);font-weight:600;color:var(--text)}
+.passo .oq span{font-size:var(--fs-2xs);color:var(--text-3)}
+.selo{display:inline-flex;align-items:center;gap:7px;padding:4px 11px;border-radius:99px;border:1px solid var(--border-forte);
+  font-family:var(--mono);font-size:var(--fs-2xs);letter-spacing:.06em;text-transform:uppercase;color:var(--text-2);white-space:nowrap}
+.selo i{width:6px;height:6px;border-radius:50%;background:var(--text-3);flex:none}
+.selo.ok{color:var(--success);border-color:color-mix(in srgb,var(--success) 42%,transparent)}
+.selo.ok i{background:var(--success)}
+.selo.decidiu{color:var(--brand);border-color:color-mix(in srgb,var(--brand) 45%,transparent)}
+.selo.decidiu i{background:var(--brand)}
+.selo.espera{color:var(--secondary);border-color:color-mix(in srgb,var(--secondary) 45%,transparent);background:color-mix(in srgb,var(--secondary) 9%,transparent)}
+.selo.espera i{background:var(--secondary)}
+.passo.viva{background:color-mix(in srgb,var(--secondary) 6%,transparent)}
+
+/* tabela de política */
+.politica{width:100%;border-collapse:collapse;font-size:var(--fs-sm)}
+.politica th{text-align:left;padding:11px 18px;font-family:var(--mono);font-size:var(--fs-2xs);font-weight:500;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--text-3);border-bottom:1px solid var(--border);white-space:nowrap}
+.politica td{padding:12px 18px;border-bottom:1px solid var(--border);color:var(--text-2);vertical-align:middle}
+.politica tr:last-child td{border-bottom:0}
+.politica td.cond{font-family:var(--mono);font-size:var(--fs-xs);color:var(--text-2)}
+.politica td.res{color:var(--text);font-weight:500}
+.politica tr.grifada td{background:color-mix(in srgb,var(--brand-500) 16%,transparent)}
+
+/* trilha */
+.trilha{display:flex;flex-direction:column;padding:4px 0}
+.evento{display:grid;grid-template-columns:22px minmax(0,1fr);gap:14px;padding:12px 18px}
+.evento .marca{position:relative;display:flex;justify-content:center}
+.evento .marca::before{content:"";position:absolute;top:14px;bottom:-16px;width:1px;background:var(--border-forte)}
+.evento:last-child .marca::before{display:none}
+.evento .marca i{position:relative;width:9px;height:9px;border-radius:50%;background:var(--surface-3);box-shadow:0 0 0 3px var(--surface);margin-top:5px}
+.evento.assinou .marca i{background:var(--secondary)}
+.evento.decidiu .marca i{background:var(--brand)}
+.evento .txt{display:flex;flex-direction:column;gap:3px;min-width:0}
+.evento .txt b{font-size:var(--fs-sm);font-weight:600;color:var(--text)}
+.evento .txt span{font-family:var(--mono);font-size:var(--fs-2xs);color:var(--text-3);letter-spacing:.03em}
+
+.nota-painel{padding:12px 18px;border-top:1px solid var(--border);background:var(--surface-2);
+  font-family:var(--mono);font-size:var(--fs-2xs);letter-spacing:.05em;color:var(--text-3)}
+
+/* herói */
+.heroi{position:relative;overflow:hidden;padding-block:clamp(46px,6vw,88px) clamp(38px,4.6vw,66px)}
+.heroi::before{content:"";position:absolute;inset:-40% -20% auto 25%;height:150%;z-index:0;pointer-events:none;
+  background:radial-gradient(46% 46% at 50% 50%,color-mix(in srgb,var(--brand-500) 45%,transparent) 0%,transparent 70%)}
+.heroi .wrap{position:relative;z-index:1}
+.heroi-grade{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,1fr);gap:clamp(30px,4vw,68px);align-items:center}
+.heroi-txt{display:flex;flex-direction:column;gap:clamp(18px,2.2vw,26px);min-width:0}
+
+/* números */
+.numeros{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1px solid var(--border);border-radius:var(--r-lg);background:var(--surface);overflow:hidden}
+.num{padding:24px 26px 26px;border-left:1px solid var(--border);display:flex;flex-direction:column;gap:6px}
+.num:first-child{border-left:0}
+.num b{font-family:var(--disp);font-weight:700;font-size:clamp(30px,3.4vw,46px);line-height:1;letter-spacing:-.045em;color:var(--text);font-variant-numeric:tabular-nums}
+.num b i{font-style:normal;color:var(--secondary)}
+.num span{font-size:var(--fs-2xs);font-weight:500;letter-spacing:.11em;text-transform:uppercase;color:var(--text-3)}
+
+/* seções */
+.secao{padding-block:var(--secao)}
+.secao.clara{background:var(--surface);border-block:1px solid var(--border)}
+.secao.colada{padding-top:0}
+.tela[hidden]{display:none}
+.cabeca{display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center;max-width:840px;margin:0 auto clamp(36px,4.4vw,60px)}
+.cabeca .deck{text-align:center;max-width:64ch}
+.cabeca .botoes{justify-content:center;margin-top:6px}
+.dupla{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(28px,4.2vw,76px);align-items:center}
+.dupla.espelho .dupla-txt{order:-1}
+.dupla-txt{display:flex;flex-direction:column;gap:20px;min-width:0}
+
+/* trilho das estações */
+.trilho-estacoes{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));margin-top:clamp(26px,3.2vw,42px)}
+.parada{position:relative;padding:34px 20px 0 0;display:flex;flex-direction:column;gap:8px}
+.parada::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:var(--border-forte)}
+.parada::after{content:"";position:absolute;top:-5px;left:0;width:11px;height:11px;border-radius:50%;background:var(--bg);box-shadow:inset 0 0 0 1.5px var(--border-forte)}
+.parada .ord{font-family:var(--mono);font-size:var(--fs-2xs);letter-spacing:.14em;color:var(--text-3);font-variant-numeric:tabular-nums}
+.parada .nome{font-family:var(--disp);font-weight:700;font-size:var(--fs-xl);letter-spacing:-.025em;color:var(--text)}
+.parada .perg{font-size:var(--fs-sm);line-height:1.5;color:var(--text-2)}
+.parada .tag{font-family:var(--mono);font-size:var(--fs-2xs);letter-spacing:.12em;text-transform:uppercase;color:var(--text-3)}
+.parada.decide::after{background:var(--brand);box-shadow:none}
+.parada.decide .nome,.parada.decide .tag{color:var(--brand)}
+.parada.ato::after{background:var(--secondary);box-shadow:none}
+.parada.ato .tag{color:var(--secondary)}
+.fecho{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:22px 40px;margin-top:clamp(38px,4.6vw,64px);padding-top:clamp(24px,3vw,36px);border-top:1px solid var(--border)}
+.fecho .deck{max-width:64ch}
+
+/* cartões */
+.cartoes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,1.6vw,22px)}
+.cartao{display:flex;flex-direction:column;gap:11px;padding:clamp(22px,2.2vw,30px);border:1px solid var(--border);border-radius:var(--r-lg);background:var(--surface-2)}
+.cartao .kick{font-family:var(--mono);font-size:var(--fs-2xs);font-weight:500;letter-spacing:.13em;text-transform:uppercase;color:var(--text-3)}
+.cartao p{font-size:var(--fs-sm);line-height:1.62;color:var(--text-2)}
+.cartao p b{color:var(--text);font-weight:600}
+.cartao.viva{border-top:3px solid var(--secondary)}
+.cartao.limite{border-top:3px solid var(--accent)}
+.cartao.limite .kick{color:var(--accent)}
+
+/* prosa */
+.leitura{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(28px,4vw,72px);align-items:start}
+.prosa{display:flex;flex-direction:column;gap:18px;max-width:62ch}
+.prosa p{font-size:var(--fs-prose);line-height:1.72;color:var(--text-2)}
+.prosa p b{color:var(--text);font-weight:600}
+.pilha{display:flex;flex-direction:column;gap:14px}
+
+/* citação */
+.citacao{max-width:960px;margin:0 auto;text-align:center;display:flex;flex-direction:column;gap:20px;align-items:center}
+.citacao q{font-family:var(--disp);font-weight:700;quotes:none;font-size:clamp(26px,4.2vw,54px);line-height:1.08;letter-spacing:-.035em;color:var(--text)}
+.citacao .fonte{font-family:var(--mono);font-size:var(--fs-2xs);letter-spacing:.14em;text-transform:uppercase;color:var(--text-3)}
+
+/* quadro */
+.quadro-cab{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 22px;padding:20px 26px;border-bottom:1px solid var(--border);background:var(--surface-2)}
+.rolagem{overflow-x:auto}
+table.matriz{border-collapse:collapse;width:100%;min-width:840px;font-size:var(--fs-sm)}
+table.matriz thead th{text-align:left;padding:13px 26px;background:var(--surface-2);font-size:var(--fs-2xs);font-weight:600;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--text-3);border-bottom:1px solid var(--border);white-space:nowrap}
+table.matriz tbody td{padding:16px 26px;border-bottom:1px solid var(--border);color:var(--text-2);vertical-align:top;line-height:1.5}
+table.matriz tbody tr:last-child td{border-bottom:0}
+table.matriz tbody tr:hover td{background:var(--surface-2)}
+td.prod{font-family:var(--disp);font-weight:600;font-size:var(--fs-base);letter-spacing:-.02em;color:var(--text);white-space:nowrap}
+tr.gate td.quem{color:var(--text);font-weight:500}
+tr.gate td.quem::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--secondary);margin-right:10px;vertical-align:.05em}
+
+/* rodapé */
+.rodape{background:var(--bg);border-top:1px solid var(--border)}
+.rodape .wrap{display:grid;grid-template-columns:minmax(0,1.3fr) repeat(3,minmax(0,1fr));gap:clamp(24px,3.4vw,52px);padding-block:clamp(44px,5.4vw,72px)}
+.rodape .col{display:flex;flex-direction:column;gap:12px}
+.rodape .kick{font-family:var(--mono);font-size:var(--fs-2xs);font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--text-3)}
+.rodape p,.rodape li{font-size:var(--fs-sm);line-height:1.62;color:var(--text-2)}
+.rodape b{color:var(--text);font-weight:600}
+.rodape ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+.rodape code{font-family:var(--mono);font-size:var(--fs-2xs);background:var(--surface-2);padding:1px 6px;border-radius:5px}
+.rodape .marca-pe{display:flex;align-items:center;gap:13px;margin-bottom:4px}
+.rodape .marca-pe svg{width:38px;height:38px;border-radius:var(--r-xs);flex:none}
+.rodape .marca-pe span{font-family:var(--disp);font-weight:700;font-size:var(--fs-xl);letter-spacing:-.03em;color:var(--text)}
+.assinatura{border-top:1px solid var(--border)}
+.assinatura .wrap{display:flex;flex-wrap:wrap;gap:8px 30px;padding-block:18px;font-family:var(--mono);font-size:var(--fs-2xs);letter-spacing:.05em;color:var(--text-3)}
+
+.varredura{position:fixed;inset:0;z-index:60;pointer-events:none;background:var(--brand-500);opacity:0}
+.varredura.ativa{animation:pulso .26s ease-out}
+@keyframes pulso{0%{opacity:0}25%{opacity:.22}100%{opacity:0}}
+
+@media (max-width:1080px){
+  .heroi-grade{grid-template-columns:1fr;gap:34px}
+  .trilho-estacoes{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:26px}
+  .leitura{grid-template-columns:1fr}
+  .rodape .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:860px){
+  .menu{display:none}
+  .numeros{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .num{border-left:0;border-top:1px solid var(--border)}
+  .num:nth-child(-n+2){border-top:0}
+  .num:nth-child(even){border-left:1px solid var(--border)}
+  .dupla{grid-template-columns:1fr}
+  .dupla.espelho .dupla-txt{order:0}
+  .cartoes{grid-template-columns:1fr}
+}
+@media (max-width:600px){
+  .trilho-estacoes{grid-template-columns:1fr;row-gap:22px}
+  .parada{padding:26px 0 0}
+  .rodape .wrap{grid-template-columns:1fr}
+  .logo{width:112px}
+  .bt{width:100%}
+  .passo{grid-template-columns:1fr auto;gap:8px 12px}
+  .passo .hora{grid-column:1/-1}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation-duration:.001ms!important;transition-duration:.001ms!important}
+  .varredura.ativa{animation:none}
+}
+</style>
+
+<div class="varredura" id="varredura" aria-hidden="true"></div>
+
+<div class="fita">
+  <div class="wrap">
+    <span class="qual">Proposta visual · <b>mesa de operação</b> · direção B</span>
+    <span class="vao"></span>
+    <div class="selet" role="tablist" aria-label="Telas da proposta">
+      <button class="tab" role="tab" id="tab-1" aria-controls="tela-1" aria-selected="true"><i>01</i> Abertura</button>
+      <button class="tab" role="tab" id="tab-2" aria-controls="tela-2" aria-selected="false"><i>02</i> Interna</button>
+    </div>
+  </div>
+</div>
+
+<header class="topo">
+  <div class="wrap">
+    <svg class="logo" viewBox="355 180 440 120" role="img" aria-label="Catalisa">
+      <path d="m 459.33594,265.78125 q -7.85157,0 -14.10157,-3.47656 -6.21093,-3.47657 -9.84375,-10.11719 -3.59375,-6.67969 -3.59375,-16.25 0,-9.60938 3.63282,-16.28906 3.67187,-6.67969 9.92187,-10.15625 6.25,-3.47657 13.98438,-3.47657 6.91406,0 12.42187,2.5 5.50781,2.5 8.98438,7.26563 3.47656,4.76562 4.29687,11.5625 h -13.94531 q -0.66406,-4.25781 -3.71094,-6.71875 -3.00781,-2.5 -7.69531,-2.5 -6.40625,0 -10.11719,4.6875 -3.67187,4.64844 -3.67187,13.125 0,8.75 3.71093,13.24219 3.71094,4.49218 10,4.49218 4.6875,0 7.73438,-2.46093 3.04687,-2.5 3.78906,-6.75782 h 13.94531 q -0.39062,3.90625 -2.26562,7.69532 -1.83594,3.78906 -5.07813,6.875 -3.24218,3.08593 -7.85156,4.92187 -4.60937,1.83594 -10.54687,1.83594 z m 45.46875,0 q -6.28907,0 -10.35157,-3.20313 -4.02343,-3.20312 -4.02343,-9.6875 0,-4.84375 2.22656,-7.69531 2.22656,-2.85156 5.89844,-4.21875 3.71093,-1.36719 8.125,-1.75781 5.54687,-0.46875 7.92968,-1.13281 2.42188,-0.70313 2.42188,-2.73438 v -0.15625 q 0,-2.26562 -1.60156,-3.47656 -1.5625,-1.25 -4.33594,-1.25 -2.85156,0 -4.6875,1.21094 -1.83594,1.21093 -2.38281,3.28125 l -12.34375,-1.60157 q 1.28906,-5.58593 6.28906,-9.0625 5.03906,-3.51562 13.24219,-3.51562 5.42968,0 9.80468,1.67969 4.41407,1.67968 6.99219,4.96093 2.61719,3.24219 2.61719,7.92969 V 265 h -12.8125 v -6.13281 h -0.35156 q -3.63282,6.91406 -12.65625,6.91406 z m 4.14062,-9.02344 q 3.4375,0 5.82031,-2.03125 2.38282,-2.03125 2.38282,-5.27344 v -4.17968 q -1.17188,0.625 -3.39844,1.05468 -2.22656,0.42969 -4.14063,0.74219 -6.28906,0.9375 -6.28906,5.19531 0,2.1875 1.5625,3.35938 1.60156,1.13281 4.0625,1.13281 z m 54.25781,-35.42969 v 10.11719 h -7.85156 v 20.19531 q 0,3.39844 3.47656,3.39844 0.70313,0 1.95313,-0.15625 1.28906,-0.19531 1.83594,-0.3125 l 1.75781,9.92188 q -2.30469,0.66406 -4.45313,0.89843 -2.14843,0.23438 -4.0625,0.23438 -6.95312,0 -10.54687,-3.24219 -3.59375,-3.28125 -3.59375,-9.53125 v -21.40625 h -5.78125 v -10.11719 h 5.78125 V 210.9375 h 13.63281 v 10.39062 z m 19.60938,44.45313 q -6.28906,0 -10.35156,-3.20313 -4.02344,-3.20312 -4.02344,-9.6875 0,-4.84375 2.22656,-7.69531 2.22656,-2.85156 5.89844,-4.21875 3.71094,-1.36719 8.125,-1.75781 5.54687,-0.46875 7.92969,-1.13281 2.42187,-0.70313 2.42187,-2.73438 v -0.15625 q 0,-2.26562 -1.60156,-3.47656 -1.5625,-1.25 -4.33594,-1.25 -2.85156,0 -4.6875,1.21094 -1.83594,1.21093 -2.38281,3.28125 l -12.34375,-1.60157 q 1.28906,-5.58593 6.28906,-9.0625 5.03906,-3.51562 13.24219,-3.51562 5.42969,0 9.80469,1.67969 4.41406,1.67968 6.99218,4.96093 2.61719,3.24219 2.61719,7.92969 V 265 h -12.8125 v -6.13281 h -0.35156 q -3.63281,6.91406 -12.65625,6.91406 z m 4.14062,-9.02344 q 3.4375,0 5.82032,-2.03125 2.38281,-2.03125 2.38281,-5.27344 v -4.17968 q -1.17188,0.625 -3.39844,1.05468 -2.22656,0.42969 -4.14062,0.74219 -6.28907,0.9375 -6.28907,5.19531 0,2.1875 1.5625,3.35938 1.60157,1.13281 4.0625,1.13281 z m 44.33594,-49.96094 V 265 H 617.65625 V 206.79687 Z M 640.3125,265 v -43.67188 h 13.63281 V 265 Z m 6.79687,-48.78906 q -2.89062,0 -4.96093,-1.91407 -2.07032,-1.91406 -2.07032,-4.64843 0,-2.73438 2.07032,-4.64844 2.07031,-1.91406 4.96093,-1.91406 2.92969,0 5,1.91406 2.07032,1.91406 2.07032,4.64844 0,2.73437 -2.07032,4.64843 -2.07031,1.91407 -5,1.91407 z m 34.25782,49.60937 q -8.39844,0 -13.82813,-3.51562 Q 662.14844,258.75 661.01562,252.5 l 12.65625,-1.99219 q 0.82032,2.85156 2.77344,4.29688 1.95313,1.44531 5.42969,1.44531 2.85156,0 4.49219,-0.97656 1.64062,-1.01563 1.64062,-2.65625 0,-2.85157 -5.35156,-3.90625 l -7.61719,-1.48438 q -12.92969,-2.46094 -12.92969,-12.57812 0,-6.52344 5.19532,-10.19532 5.23437,-3.67187 14.02343,-3.67187 8.20313,0 13.16407,3.24219 4.96093,3.24218 6.09375,8.86718 l -12.03125,1.91407 q -1.32813,-4.64844 -6.99219,-4.64844 -2.46094,0 -4.17969,1.01562 -1.67969,0.97657 -1.67969,2.65625 0,1.32813 1.05469,2.34375 1.05469,0.97657 3.86719,1.52344 l 8.35937,1.5625 q 12.85157,2.42188 12.85157,11.79688 0,4.49218 -2.65625,7.8125 -2.61719,3.32031 -7.22657,5.15625 -4.60937,1.79687 -10.58593,1.79687 z m 39.6875,-0.0391 q -6.28907,0 -10.35157,-3.20313 -4.02343,-3.20312 -4.02343,-9.6875 0,-4.84375 2.22656,-7.69531 2.22656,-2.85156 5.89844,-4.21875 3.71093,-1.36719 8.125,-1.75781 5.54687,-0.46875 7.92968,-1.13281 2.42188,-0.70313 2.42188,-2.73438 v -0.15625 q 0,-2.26562 -1.60156,-3.47656 -1.5625,-1.25 -4.33594,-1.25 -2.85156,0 -4.6875,1.21094 -1.83594,1.21093 -2.38281,3.28125 l -12.34375,-1.60157 q 1.28906,-5.58593 6.28906,-9.0625 5.03906,-3.51562 13.24219,-3.51562 5.42968,0 9.80468,1.67969 4.41407,1.67968 6.99219,4.96093 2.61719,3.24219 2.61719,7.92969 V 265 h -12.8125 v -6.13281 h -0.35156 q -3.63282,6.91406 -12.65625,6.91406 z m 4.14062,-9.02344 q 3.4375,0 5.82031,-2.03125 2.38282,-2.03125 2.38282,-5.27344 v -4.17968 q -1.17188,0.625 -3.39844,1.05468 -2.22656,0.42969 -4.14063,0.74219 -6.28906,0.9375 -6.28906,5.19531 0,2.1875 1.5625,3.35938 1.60156,1.13281 4.0625,1.13281 z" fill="var(--brand)"/>
+      <circle cx="760" cy="260" r="7" fill="var(--secondary)"/>
+    </svg>
+    <nav class="menu" aria-label="Seções">
+      <a href="#tela-1" class="aqui" data-principal="sim">Plataforma <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5"/></svg></a>
+      <a href="#tela-2">Produtos <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5"/></svg></a>
+      <a href="#tela-2">Por dentro</a>
+      <a href="#limites">Limites</a>
+    </nav>
+    <span class="vao"></span>
+    <a class="bt cheio sm" href="#tela-1"><span class="pt"></span> Agendar demonstração</a>
+  </div>
+</header>
+
+<main>
+
+<!-- ═════════════════ TELA 01 ═════════════════ -->
+<section class="tela" id="tela-1" role="tabpanel" aria-labelledby="tab-1">
+
+  <div class="heroi">
+    <div class="wrap">
+      <div class="heroi-grade">
+        <div class="heroi-txt">
+          <p class="olho">Plataforma de operação e decisão</p>
+          <h1><span class="marcado">Conversa vira decisão<span class="po">.</span></span><span>Decisão vira ato<span class="po">.</span> E o ato tem dono<span class="po">.</span></span></h1>
+          <p class="deck">O atendimento resolve sozinho o que dá para resolver sozinho — e <b>para exatamente no ponto em que alguém assina</b>. Cada passo fica registrado com hora, política aplicada e responsável.</p>
+          <div class="botoes">
+            <a class="bt cheio" href="#tela-2">Ver a plataforma</a>
+            <a class="bt vazio" href="#tela-2">Conhecer os produtos</a>
+          </div>
+        </div>
+
+        <div class="painel">
+          <div class="painel-topo">
+            <span class="luzes"><i></i><i></i><i></i></span>
+            <span class="rot">Esteira · antecipação</span>
+            <span class="versao">política v4</span>
+          </div>
+          <div class="painel-corpo">
+            <div class="passo">
+              <span class="hora">22:47:12</span>
+              <span class="oq"><b>Notas de OS recebidas</b><span>WhatsApp · 14 documentos</span></span>
+              <span class="selo ok"><i></i> chegou</span>
+            </div>
+            <div class="passo">
+              <span class="hora">22:47:31</span>
+              <span class="oq"><b>Dossiê montado</b><span>bureau, histórico de diluição por sacado</span></span>
+              <span class="selo ok"><i></i> concluído</span>
+            </div>
+            <div class="passo">
+              <span class="hora">22:48:02</span>
+              <span class="oq"><b>Score e banda aplicados</b><span>política v4 · publicada em 12/08</span></span>
+              <span class="selo decidiu"><i></i> decidiu</span>
+            </div>
+            <div class="passo">
+              <span class="hora">22:48:20</span>
+              <span class="oq"><b>Borderô e proposta gerados</b><span>líquido e custo efetivo calculados</span></span>
+              <span class="selo ok"><i></i> nasceu</span>
+            </div>
+            <div class="passo viva">
+              <span class="hora">22:48:21</span>
+              <span class="oq"><b>Acima da alçada — a esteira parou</b><span>aguarda a mesa</span></span>
+              <span class="selo espera"><i></i> assinatura</span>
+            </div>
+          </div>
+          <p class="nota-painel">Exemplo ilustrativo da interface · nenhum dado de cliente real</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="numeros">
+      <div class="num"><b>32</b><span>blocos de plataforma</span></div>
+      <div class="num"><b>863</b><span>endpoints</span></div>
+      <div class="num"><b>207</b><span>tipos de ação</span></div>
+      <div class="num"><b>7<i>.</i></b><span>produtos em produção</span></div>
+    </div>
+  </div>
+
+  <section class="secao">
+    <div class="wrap">
+      <div class="dupla">
+        <div class="painel">
+          <div class="painel-topo">
+            <span class="luzes"><i></i><i></i><i></i></span>
+            <span class="rot">Política de alçada</span>
+            <span class="versao">v4 · publicada</span>
+          </div>
+          <div class="rolagem">
+            <table class="politica">
+              <thead><tr><th scope="col">Faixa</th><th scope="col">Diluição do sacado</th><th scope="col">Resultado</th></tr></thead>
+              <tbody>
+                <tr><td class="cond">≤ 50 mil</td><td class="cond">até 3%</td><td class="res">aprova automático</td></tr>
+                <tr><td class="cond">≤ 50 mil</td><td class="cond">acima de 3%</td><td class="res">revisão do analista</td></tr>
+                <tr class="grifada"><td class="cond">acima de 50 mil</td><td class="cond">qualquer</td><td class="res">mesa decide</td></tr>
+                <tr><td class="cond">sacado novo</td><td class="cond">sem histórico</td><td class="res">mesa decide</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="nota-painel">A regra é tabela versionada, não instrução em texto livre</p>
+        </div>
+        <div class="dupla-txt">
+          <p class="olho">A decisão como objeto</p>
+          <h2><span class="marcado">A política é uma tabela</span> que alguém publicou, com versão e data</h2>
+          <p class="deck">Desenhar, escrever, simular, publicar, medir. A decisão não fica na cabeça de quem atendeu nem escondida num prompt: <b>ela é um objeto que se versiona</b> — e por isso tem resposta quando o auditor pergunta com qual regra aquilo foi decidido.</p>
+          <div class="botoes"><a class="bt vazio" href="#tela-2">Ver a trilha</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao clara">
+    <div class="wrap">
+      <div class="cabeca">
+        <p class="olho">A esteira</p>
+        <h2><span class="marcado">Toda operação tem a mesma esteira.</span> O seu setor decide só o vocabulário.</h2>
+        <p class="deck">Alguém chega, alguém decide, alguém propõe, alguém executa, alguém retoma, alguém responde. Nós fazemos estações dessa esteira — e o catálogo se organiza por estação, não por setor.</p>
+      </div>
+
+      <div class="trilho-estacoes">
+        <div class="parada"><span class="ord">01</span><span class="nome">Chegar</span><span class="perg">“quem me procurou e ninguém viu?”</span></div>
+        <div class="parada decide"><span class="ord">02</span><span class="nome">Decidir</span><span class="perg">“com base em quê a gente decide isso?”</span><span class="tag">a decisão</span></div>
+        <div class="parada"><span class="ord">03</span><span class="nome">Propor</span><span class="perg">“quanto tempo até sair uma proposta?”</span></div>
+        <div class="parada ato"><span class="ord">04</span><span class="nome">Executar</span><span class="perg">“onde ficou registrado o que foi feito?”</span><span class="tag">o ato</span></div>
+        <div class="parada"><span class="ord">05</span><span class="nome">Retomar</span><span class="perg">“quem esfriou e ninguém retomou?”</span></div>
+        <div class="parada"><span class="ord">06</span><span class="nome">Responder</span><span class="perg">“quem decidiu isso, quando, e com qual regra?”</span></div>
+      </div>
+
+      <div class="fecho">
+        <p class="deck">Nenhum produto sozinho preenche as seis estações — e é a lacuna, não a linha cheia, que mostra onde entra o próximo. <b>Dois produtos cobrem a linha quase inteira.</b></p>
+        <div class="botoes"><a class="bt vazio" href="#tela-2">Ver a matriz completa</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao">
+    <div class="wrap">
+      <div class="cabeca">
+        <p class="olho">O oitavo produto</p>
+        <h2>Produto novo aqui é um documento, não um projeto</h2>
+        <p class="deck">Sete no ar sobre o mesmo núcleo de cadastro e linha do tempo. O oitavo custa dias, não trimestres — porque o pacote é declarado como dado, e não escrito como projeto.</p>
+        <div class="botoes">
+          <a class="bt cheio" href="#tela-2">Ver como o quadro se soma</a>
+          <a class="bt vazio" href="#limites">Ler os limites</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</section>
+
+<!-- ═════════════════ TELA 02 ═════════════════ -->
+<section class="tela" id="tela-2" role="tabpanel" aria-labelledby="tab-2" hidden>
+
+  <div class="heroi">
+    <div class="wrap">
+      <div class="cabeca">
+        <p class="olho">O quadro</p>
+        <h2><span class="marcado">Sete produtos no ar,</span> e uma única máquina embaixo deles</h2>
+        <p class="deck">Organizados por setor, os sete parecem sete projetos que competem entre si. Organizados pelo estágio da relação com o cliente, <b>eles se somam</b>.</p>
+      </div>
+    </div>
+  </div>
+
+  <section class="secao colada">
+    <div class="wrap">
+      <div class="leitura">
+        <div class="prosa">
+          <p>Lido em coluna, o inventário mostra sempre a mesma máquina. O jurídico que recebe uma mensagem às 22h47 e a mesa de crédito que precifica um borderô fazem, no motor, exatamente a mesma coisa: recebem um pedido por um canal, aplicam uma política versionada, produzem um documento e param no ponto em que alguém precisa assinar.</p>
+          <p>A observação que faz o quadro valer não é a linha cheia — é a lacuna. <b>Nenhum produto sozinho preenche as seis estações.</b> O Ágora é forte em chegar, propor e retomar; a clínica, em chegar, executar e responder; a antecipação, em decidir, propor e responder. Dois produtos cobrem a linha quase inteira, e é isso, não um parágrafo de venda cruzada, que vende o segundo.</p>
+          <p>É também por isso que o oitavo produto custa dias e não trimestres: o pacote é declarado como dado, sobre o mesmo núcleo de cadastro e linha do tempo, e o que muda por setor é vocabulário — não arquitetura.</p>
+        </div>
+        <div class="pilha">
+          <div class="cartao">
+            <span class="kick">Unidade de cobrança</span>
+            <p>Na frente de decisão, cobra-se pela decisão ou pelo volume decidido — <b>não pelo assento</b>. A receita cresce com o cliente, e não com o número de usuários dele.</p>
+          </div>
+          <div class="cartao viva">
+            <span class="kick">O gate humano</span>
+            <p>Em quatro dos sete produtos a esteira para e espera assinatura. <b>É a trava que o comprador procura</b>, e o oposto de vender autonomia.</p>
+          </div>
+          <div class="cartao">
+            <span class="kick">Setor-agnóstico</span>
+            <p>Cerca de 80% do pacote de antecipação não depende de setor. O que muda é vocabulário, carga de histórico e um campo de lastro.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao clara">
+    <div class="wrap">
+      <div class="citacao">
+        <q>Instrução a modelo não é garantia<span class="po">.</span> Estrutura é<span class="po">.</span></q>
+        <p class="fonte">Registro interno · o que separa a esteira do agente solto</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao">
+    <div class="wrap">
+      <div class="dupla espelho">
+        <div class="painel">
+          <div class="painel-topo">
+            <span class="luzes"><i></i><i></i><i></i></span>
+            <span class="rot">Trilha de auditoria</span>
+            <span class="versao">operação #4812</span>
+          </div>
+          <div class="trilha">
+            <div class="evento"><span class="marca"><i></i></span><span class="txt"><b>Pedido recebido pelo canal</b><span>22:47 · WhatsApp · anexos verificados</span></span></div>
+            <div class="evento decidiu"><span class="marca"><i></i></span><span class="txt"><b>Política v4 aplicada</b><span>22:48 · publicada em 12/08 por Coordenação de crédito</span></span></div>
+            <div class="evento"><span class="marca"><i></i></span><span class="txt"><b>Proposta gerada</b><span>22:48 · documento de template · líquido e custo efetivo</span></span></div>
+            <div class="evento assinou"><span class="marca"><i></i></span><span class="txt"><b>Liberada pela mesa</b><span>08:12 · acima da alçada · assinatura registrada</span></span></div>
+          </div>
+          <p class="nota-painel">Exemplo ilustrativo da interface · nenhum dado de cliente real</p>
+        </div>
+        <div class="dupla-txt">
+          <p class="olho">Responder</p>
+          <h2><span class="marcado">A última estação</span> é a que sustenta as outras cinco</h2>
+          <p class="deck">A pergunta que chega depois — do sócio, do auditor, do regulador — é sempre a mesma: quem decidiu isso, quando, e com qual versão da regra. <b>Ela só tem resposta se a decisão foi registrada como objeto</b>, com a política versionada ao lado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao clara">
+    <div class="wrap">
+      <div class="painel">
+        <div class="quadro-cab">
+          <h3>Quadro 1 · os sete produtos, lidos em coluna</h3>
+          <span class="olho">Inventário do que está em produção</span>
+        </div>
+        <div class="rolagem">
+          <table class="matriz">
+            <thead>
+              <tr><th scope="col">Produto</th><th scope="col">O que chega</th><th scope="col">O que se decide</th><th scope="col">O que nasce</th><th scope="col">Onde a pessoa entra</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="prod">Jurídico</td><td>mensagem às 22h47</td><td>qual área, se é urgente</td><td>consulta marcada na agenda real</td><td class="quem">o advogado atende a consulta</td></tr>
+              <tr class="gate"><td class="prod">Clínica</td><td>“vocês atendem?”</td><td>especialidade, encaixe</td><td>registro da consulta</td><td class="quem">quem atendeu libera o prontuário</td></tr>
+              <tr><td class="prod">Recrutamento</td><td>candidato, cliente e consultor no mesmo número</td><td>triagem, aderência</td><td>parecer escrito no ATS</td><td class="quem">o consultor decide o shortlist</td></tr>
+              <tr class="gate"><td class="prod">Ágora</td><td>visitante no site</td><td>se vira reunião</td><td>pré-proposta em rascunho</td><td class="quem">alguém libera a proposta</td></tr>
+              <tr class="gate"><td class="prod">Antecipação</td><td>notas de OS no WhatsApp</td><td>dossiê, score, banda, borderô</td><td>proposta com líquido e custo efetivo</td><td class="quem">a mesa decide acima da alçada</td></tr>
+              <tr><td class="prod">Personal</td><td>aluno com dúvida</td><td>agenda, PAR-Q</td><td>treino e resumo do dia</td><td class="quem">o profissional ajusta</td></tr>
+              <tr class="gate"><td class="prod">Adega</td><td>“manda o de sempre”</td><td>maioridade, estoque, fiado</td><td>pedido, Pix, entrega</td><td class="quem">o dono confere a fila</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="nota-painel">O ponto âmbar marca onde a esteira para até alguém assinar · quatro dos sete produtos têm gate humano explícito</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao" id="limites">
+    <div class="wrap">
+      <div class="cabeca">
+        <p class="olho">Limites</p>
+        <h2>O que esta página não promete</h2>
+        <p class="deck">A credibilidade da página depende de ela nomear os próprios limites <b>antes de o comprador achá-los</b>.</p>
+      </div>
+      <div class="cartoes">
+        <div class="cartao limite">
+          <span class="kick">Antecipação</span>
+          <p><b>Precifica; não libera dinheiro.</b> Não há funding próprio nem registro em CERC ou B3. O que se vende é a esteira, jamais o crédito.</p>
+        </div>
+        <div class="cartao limite">
+          <span class="kick">Prova</span>
+          <p><b>Não há cliente citável.</b> Nenhuma autorização de uso de marca está registrada — nada de depoimento, nada de logotipo. Os painéis desta página são ilustrativos, com dados fictícios.</p>
+        </div>
+        <div class="cartao limite">
+          <span class="kick">Permissão</span>
+          <p><b>Isolamento entre contas é sólido</b> e pode ser vendido; permissão fina por papel dentro de uma mesma conta, não. E a instalação de pacote só existe por API — não há tela de autosserviço.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</section>
+</main>
+
+<footer class="rodape">
+  <div class="wrap">
+    <div class="col">
+      <div class="marca-pe">
+        <svg viewBox="0 0 512 512" role="img" aria-label="Catalisa">
+          <rect width="512" height="512" rx="96" fill="var(--brand-500)"/>
+          <g transform="translate(-30, 15)">
+            <path d="m 361.39648,384.10156 q -41.2207,0 -74.0332,-18.25195 -32.60742,-18.25195 -51.67969,-53.11524 -18.86718,-35.06835 -18.86718,-85.3125 0,-50.44921 19.07226,-85.51757 19.27735,-35.06836 52.08985,-53.320316 32.8125,-18.251953 73.41796,-18.251953 36.29883,0 65.21485,13.125 28.91601,13.125 47.16797,38.144529 18.25195,25.01953 22.55859,60.70313 H 423.125 q -3.48633,-22.35352 -19.48242,-35.27344 -15.79102,-13.125 -40.40039,-13.125 -33.63282,0 -53.11524,24.60937 -19.27734,24.4043 -19.27734,68.90625 0,45.9375 19.48242,69.52149 19.48242,23.58398 52.5,23.58398 24.60938,0 40.60547,-12.91992 15.99609,-13.125 19.89258,-35.47851 h 73.21289 q -2.05078,20.50781 -11.89453,40.40039 -9.63867,19.89257 -26.66016,36.09375 -17.02148,16.20117 -41.2207,25.83984 -24.19922,9.63867 -55.3711,9.63867 z" fill="var(--bg)" transform="translate(-95, -2)"/>
+            <circle cx="440" cy="355" r="30" fill="var(--secondary)"/>
+          </g>
+        </svg>
+        <span>Catalisa</span>
+      </div>
+      <p>Direção B da proposta visual. Escuro por padrão, produto à vista: <b>nenhuma fotografia</b> — a prova é a própria máquina, renderizada. Cores e escala tipográfica do styleguide, tema escuro, sem nenhuma cor fora dos tokens.</p>
+    </div>
+    <div class="col">
+      <p class="kick">Tipografia</p>
+      <ul>
+        <li><b>Archivo</b> — display e títulos, tracking fechado</li>
+        <li><b>Inter</b> — corpo, menu e interface</li>
+        <li><b>JetBrains Mono</b> — hora, versão, rótulo e dado</li>
+      </ul>
+    </div>
+    <div class="col">
+      <p class="kick">O que a cor significa</p>
+      <ul>
+        <li><b>Roxo</b> — a decisão e o estado ativo</li>
+        <li><b>Âmbar</b> — o ato e o gate humano</li>
+        <li><b>Verde, laranja e vermelho</b> — só estado de operação, nunca decoração</li>
+      </ul>
+    </div>
+    <div class="col">
+      <p class="kick">Honestidade dos painéis</p>
+      <ul>
+        <li>Todo painel traz <code>exemplo ilustrativo</code> no rodapé</li>
+        <li>Nenhum dado de cliente, nenhum depoimento, nenhum logotipo</li>
+        <li>Os números medidos vêm do código, não de estimativa</li>
+      </ul>
+    </div>
+  </div>
+  <div class="assinatura">
+    <div class="wrap">
+      <span>Direção B · mesa de operação</span>
+      <span>Números medidos no código: 32 blocos · 863 endpoints · 207 tipos de ação · 7 produtos</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var varredura = document.getElementById('varredura');
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.tab'));
+  var parado = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+  function paraOnde(href) { return href.indexOf('tela-2') > -1 || href === '#limites' ? 1 : 0; }
+
+  function virar(indice) {
+    tabs.forEach(function (tab, i) {
+      document.getElementById(tab.getAttribute('aria-controls')).hidden = i !== indice;
+      tab.setAttribute('aria-selected', i === indice ? 'true' : 'false');
+    });
+    document.querySelectorAll('.menu a').forEach(function (a) {
+      a.classList.toggle('aqui', a.dataset.principal === 'sim' && paraOnde(a.getAttribute('href')) === indice);
+    });
+    window.scrollTo({ top: 0, behavior: parado.matches ? 'auto' : 'smooth' });
+    if (!parado.matches) {
+      varredura.classList.remove('ativa');
+      void varredura.offsetWidth;
+      varredura.classList.add('ativa');
+    }
+  }
+
+  tabs.forEach(function (tab, i) {
+    tab.addEventListener('click', function () { if (tab.getAttribute('aria-selected') !== 'true') virar(i); });
+    tab.addEventListener('keydown', function (ev) {
+      if (ev.key !== 'ArrowRight' && ev.key !== 'ArrowLeft') return;
+      ev.preventDefault();
+      var alvo = (i + (ev.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length;
+      tabs[alvo].focus();
+      virar(alvo);
+    });
+  });
+
+  document.querySelectorAll('.menu a, a.bt').forEach(function (link) {
+    link.addEventListener('click', function (ev) {
+      ev.preventDefault();
+      document.querySelectorAll('.menu a').forEach(function (a) { delete a.dataset.principal; });
+      if (link.closest('.menu')) link.dataset.principal = 'sim';
+      virar(paraOnde(link.getAttribute('href')));
+    });
+  });
+})();
+</script>

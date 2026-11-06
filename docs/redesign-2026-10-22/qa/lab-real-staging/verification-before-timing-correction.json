@@ -1,0 +1,256 @@
+{
+  "date": "2026-10-26T14:18:51.983Z",
+  "passed": true,
+  "origin": "https://site-staging.catalisa.io",
+  "tlsValidation": true,
+  "scope": "Real staging AI through the target Lab and BFF. Fictional reserved contact address. No handoff or external messages.",
+  "stage": "contact-continuation",
+  "result": {
+    "idea": "Quero matricular alunos de uma escola de inglês pelo WhatsApp",
+    "elapsedMs": 51031,
+    "concept": {
+      "conceptRef": "concept_1b3ef058-8695-4dce-a61f-4e7502d5c488",
+      "version": 1,
+      "briefVersion": 1,
+      "content": {
+        "schemaVersion": "1.0",
+        "title": "Matricular Alunos pelo WhatsApp",
+        "summary": "Sistema para facilitar a matrícula de alunos em uma escola de inglês utilizando o WhatsApp como canal principal de comunicação.",
+        "hypothesis": "O público-alvo são pais e alunos interessados em cursos de inglês. Os detalhes da jornada e a aceitação do canal WhatsApp precisam ser confirmados.",
+        "roles": [
+          "Prospect",
+          "Atendente",
+          "Administrador"
+        ],
+        "screens": [
+          {
+            "id": "screen1",
+            "title": "Início da Matricula",
+            "description": "Tela inicial onde o aluno pode iniciar o processo de matrícula.",
+            "items": [
+              {
+                "label": "Escolha o curso",
+                "value": "Inglês Básico, Inglês Intermediário, Inglês Avançado"
+              },
+              {
+                "label": "Horário das aulas",
+                "value": "Manhã, Tarde, Noite"
+              },
+              {
+                "label": "Duração do curso",
+                "value": "6 meses, 1 ano"
+              }
+            ],
+            "action": {
+              "label": "Iniciar Matrícula",
+              "nextScreenId": "screen2"
+            }
+          },
+          {
+            "id": "screen2",
+            "title": "Informações do Aluno",
+            "description": "Tela para coletar as informações do aluno que deseja se matricular.",
+            "items": [
+              {
+                "label": "Nome completo",
+                "value": "Ex: João da Silva"
+              },
+              {
+                "label": "Data de nascimento",
+                "value": "DD/MM/AAAA"
+              },
+              {
+                "label": "Contato",
+                "value": "Número de telefone"
+              }
+            ],
+            "action": {
+              "label": "Confirmar Dados",
+              "nextScreenId": "screen3"
+            }
+          },
+          {
+            "id": "screen3",
+            "title": "Confirmação de Matrícula",
+            "description": "Tela final onde o aluno recebe a confirmação da matrícula.",
+            "items": [
+              {
+                "label": "Status",
+                "value": "Matrícula confirmada"
+              },
+              {
+                "label": "Data de início",
+                "value": "01/11/2026"
+              },
+              {
+                "label": "Próximos passos",
+                "value": "Aguarde o contato do administrador"
+              }
+            ],
+            "action": {
+              "label": "Finalizar",
+              "nextScreenId": null
+            }
+          }
+        ],
+        "blocks": [
+          {
+            "slug": "wpp",
+            "role": "Canal principal de vendas"
+          },
+          {
+            "slug": "email",
+            "role": "Notificações de matrícula"
+          }
+        ],
+        "journey": [
+          {
+            "id": "step1",
+            "label": "Início da Matrícula",
+            "description": "O aluno inicia o processo de matrícula pelo WhatsApp.",
+            "blockSlugs": [
+              "wpp"
+            ],
+            "humanReview": false
+          },
+          {
+            "id": "step2",
+            "label": "Coleta de Informações",
+            "description": "O atendente revisa as informações fornecidas pelo aluno.",
+            "blockSlugs": [
+              "email"
+            ],
+            "humanReview": true
+          },
+          {
+            "id": "step3",
+            "label": "Confirmação de Matrícula",
+            "description": "O sistema envia a confirmação da matrícula ao aluno.",
+            "blockSlugs": [
+              "wpp",
+              "email"
+            ],
+            "humanReview": false
+          },
+          {
+            "id": "step4",
+            "label": "Acompanhamento",
+            "description": "O administrador acompanha a matrícula e entra em contato com o aluno.",
+            "blockSlugs": [
+              "wpp"
+            ],
+            "humanReview": true
+          }
+        ],
+        "limitations": [
+          "Falta de informações sobre o público-alvo.",
+          "Necessidade de confirmar a aceitação do canal WhatsApp pelos alunos.",
+          "Não foram definidos critérios de aceitação do processo de matrícula."
+        ],
+        "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+      }
+    },
+    "reload": true,
+    "contactContinuation": true,
+    "sessionSetupCount": 1,
+    "requests": [
+      {
+        "path": "/api/site/session",
+        "status": 401,
+        "method": "GET",
+        "elapsedMs": 542
+      },
+      {
+        "path": "/api/site/sessions",
+        "status": 201,
+        "method": "POST",
+        "elapsedMs": 634
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 493
+      },
+      {
+        "path": "/api/site/lab/briefing",
+        "status": 200,
+        "method": "POST",
+        "elapsedMs": 978
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 720
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 722
+      },
+      {
+        "path": "/api/site/identity",
+        "status": 201,
+        "method": "POST",
+        "elapsedMs": 724
+      },
+      {
+        "path": "/api/site/contact",
+        "status": 200,
+        "method": "POST",
+        "elapsedMs": 712
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 619
+      },
+      {
+        "path": "/api/site/concepts",
+        "status": 202,
+        "method": "POST",
+        "elapsedMs": 15932
+      },
+      {
+        "path": "/api/site/jobs/job_bb79727b-acb1-4d90-8a7b-8fd3c8f6a82f",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 624
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 894
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 856
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 599
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 510
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 376
+      }
+    ],
+    "errors": []
+  }
+}

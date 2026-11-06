@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-10-26T14:11:07.855417+00:00",
+  "typeScriptAppAndNodePassed": true,
+  "unitTests": {
+    "passed": 234,
+    "files": 21,
+    "durationSeconds": 20.89,
+    "scope": "Request-state behavior including generation/opening/success and previous concept preservation on failure. Final CSS typography and reveal prop subsequently revalidated by the visual browser and final build."
+  },
+  "controlledBrowser": {
+    "report": "verification.json",
+    "checks": 9,
+    "captures": 62,
+    "widths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "errors": 0,
+    "sourceApiControlled": true,
+    "actualAi": false
+  },
+  "sourceSha256": {
+    "src/redesign/ConceptProgress.tsx": "1aef13758e62b362c3641aeab2cfe62a9b50725534c1e6cff39a4c14e5de4765",
+    "src/redesign/concept-progress.css": "fd8027b0aff9e9cc7139421024c2fcc97bdea9cdf1e119e951e854545a42c487",
+    "src/redesign/Contact.tsx": "9be4e13a9406b098d0438d165b2035117c83370ad7b0232da3dbbfc603589721",
+    "src/redesign/ContactViews.tsx": "335ef8da1c857527366ee21f4b4a17c03177857a5cdf64f012db4559715355b6",
+    "src/redesign/ContactConcept.tsx": "b5867a637b7ee16ffeb4be908a35fb9fbbb58beb6c7a88427434ba635560215b",
+    "src/redesign/contact.css": "0de540ded3ed97b24d6cb14cbedd18d2bc1e794bbd62afae2663e96609dc989c",
+    "src/redesign/Lab.tsx": "28936861f4df92c90c531eaf88b45c9e901e8d34c01e47058d09f2ce39c1511f",
+    "src/redesign/LabViews.tsx": "19d2bd225a1004abd7f311d122845ac9eddf015f7deb302f72d1eddebcee64d1",
+    "src/redesign/lab.css": "291b41c5af0af8da13e69be51da2b2b8fe6bdb8a6c456b1c5f7dd23848f440bf"
+  }
+}

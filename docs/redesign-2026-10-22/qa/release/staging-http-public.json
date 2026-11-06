@@ -1,0 +1,94 @@
+{
+  "date": "2026-10-26T18:43:22.238Z",
+  "passed": true,
+  "hostname": "site-staging.catalisa.io",
+  "basicAuth": false,
+  "scope": "Actual trusted HTTPS certificate, configured edge access, noindex, Caddy routes/static HTML, private Node BFF and real staging shared store. Synthetic session only; no external messages.",
+  "checks": [
+    "valid exact-host TLS and anonymous public staging access",
+    "exact candidate Home bytes and staging robots exclusion",
+    {
+      "route": "/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/capacidades",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/capacidades/ai-engine",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/contato",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/lab",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/ecossistema/banking",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/ecossistema/credit",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/arquitetura",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/press-kit",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/en",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/politica-privacidade",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "retainedAsset": "/assets/index-CKsW8BlP.js",
+      "source": "prior-staging",
+      "identicalBytes": true,
+      "status": 200
+    },
+    {
+      "retainedAsset": "/assets/index-CHdmmzxS.js",
+      "source": "original-public-production",
+      "identicalBytes": true,
+      "status": 200
+    },
+    "all migration redirects preserve query",
+    "real HTML404 noindex",
+    "BFF anonymous401 JSON and origin403",
+    "shared session, Secure HttpOnly cookie, configured AI and human inbox",
+    "team portal CSP and independent authentication"
+  ],
+  "tls": {
+    "authorized": true,
+    "protocol": "TLSv1.3",
+    "validTo": "Jan 23 04:01:29 2027 GMT"
+  },
+  "artifact": {
+    "releaseId": "20261026-seo-final",
+    "homeSha256": "886603496367dac00272e64e1f79e7a91cdbe711f7d2f5e773c98d5443b807d4",
+    "identicalToCandidate": true
+  },
+  "syntheticSessionRemoved": true
+}

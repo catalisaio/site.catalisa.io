@@ -1,0 +1,578 @@
+[
+  {
+    "id": 1,
+    "file": "ESTILO DATA.jpg",
+    "observation": "Ficha editorial em papel claro: títulos monoespaçados, linhas finas, faixas de cor, números alinhados.",
+    "application": "Metadados, fonte e data junto aos gráficos; faixas pontuais em laranja Catalisa.",
+    "connection": "Primeira regra do estudo: exuberância visual com precisão editorial.",
+    "decision": "Adotar alinhamento e hierarquia; não importar códigos de barras decorativos ou texto pequeno demais."
+  },
+  {
+    "id": 2,
+    "file": "ESTILO SVGS.jpg",
+    "observation": "Ilustração vetorial com facetas, perspectiva, poucos tons e contorno seletivo; objeto domina a composição.",
+    "application": "Diagramas próprios em SVG para mostrar camadas e fluxos com profundidade controlada.",
+    "connection": "A disciplina de dados da ref. 01 pode conviver com uma ilustração expressiva.",
+    "decision": "SVG como linguagem de explicação. A imagem do coquetel não tem função no relatório."
+  },
+  {
+    "id": 3,
+    "file": "EXCELENTE REPRESENTACAO DO CAOS SE ORGANIZANDO NA CATALISA.jpg",
+    "observation": "Ruído disperso converge em padrão e sinal; cinco estágios numerados organizam a transformação horizontal.",
+    "application": "Metáfora principal: integrações isoladas → capacidades → operação conectada.",
+    "connection": "Une a precisão de 01 à força de 02, com narrativa em vez de ornamento.",
+    "decision": "Priorizar na abertura. A nuvem de pontos é metáfora editorial e nunca gráfico quantitativo."
+  },
+  {
+    "id": 4,
+    "file": "HERO NOISE BECOME SIGNAL.jpg",
+    "observation": "É a mesma composição da ref. 03, renomeada explicitamente como hero.",
+    "application": "Confirma a prioridade do conceito para a abertura.",
+    "connection": "Duplicata visual de 03: reforça intenção, sem criar outra ideia ou outro peso estatístico.",
+    "decision": "Consolidar 03 e 04 em um único hero; não repetir o ruído nas demais seções."
+  },
+  {
+    "id": 5,
+    "file": "IDEIA BANNERS.jpg",
+    "observation": "Módulos com números gigantes, círculos, arcos, listras e alternância entre claro, escuro e cor.",
+    "application": "Faixa de números e transições de capítulo com uma figura geométrica por composição.",
+    "connection": "O sinal de 03 ganha um vocabulário Bauhaus. A ficha de 01 controla a legenda.",
+    "decision": "Usar ritmo e geometria; rejeitar o mosaico de cartões repetidos como estrutura da página inteira."
+  },
+  {
+    "id": 6,
+    "file": "IDEIA BG 001.jpg",
+    "observation": "Pessoas atravessam faixas laranjas em perspectiva; trajetória comum admite identidades diferentes.",
+    "application": "Canais distintos chegam ao mesmo ciclo operacional; linhas podem conectar originação e produto.",
+    "connection": "Estende a transformação de 03 ao uso humano do sistema.",
+    "decision": "Não usar foto de banco de imagem nem sugerir pessoas reais da equipe. Extrair só a ideia de caminhos comuns."
+  },
+  {
+    "id": 7,
+    "file": "IDEIA BUILDING BLOCKS CONSTRUCAO.jpg",
+    "observation": "Banana se decompõe em cubos mantendo a identidade do conjunto.",
+    "application": "Mostrar que um produto se recompõe com capacidades reutilizáveis.",
+    "connection": "Complementa o sinal de 03: ruído se organiza; produto se decompõe em peças com função.",
+    "decision": "Usar decomposição sem frutas literais; reservar os blocos para a arquitetura."
+  },
+  {
+    "id": 8,
+    "file": "IDEIA CAMINHO.jpg",
+    "observation": "Escada e recorte arquitetônico conduzem a um destino luminoso, com forte área negativa.",
+    "application": "Progressão entre etapas do ciclo: proposta, evidência, decisão, contrato, dinheiro e continuidade.",
+    "connection": "Dá direção aos caminhos de 06 e às peças de 07.",
+    "decision": "Adotar fluxo e respiro; não criar promessa abstrata de futuro sem conteúdo comprovável."
+  },
+  {
+    "id": 9,
+    "file": "IDEIA COMPLEXIDADE MACARRONICA.jpg",
+    "observation": "Massa enrolada no garfo representa dependências emaranhadas por uma única metáfora física.",
+    "application": "Estado inicial da narrativa: integrações e regras se confundem antes da modularização.",
+    "connection": "Concorre com 03 para explicar caos. 03 é melhor porque já contém a transformação e o resultado.",
+    "decision": "Revisão: não adicionar uma segunda ilustração de caos. Guardar a ideia para o texto e o desenho inicial do hero."
+  },
+  {
+    "id": 10,
+    "file": "IDEIA COMPONENTS.jpg",
+    "observation": "Faixas estreitas e densas, numeração grande, diagramas técnicos e laranja pontual sobre preto e branco.",
+    "application": "Etiquetas de camada, réguas de dados e índice compacto.",
+    "connection": "A ref. 01 evita que a densidade desta vire ruído; 05 fornece hierarquia maior.",
+    "decision": "Adotar bordas e etiquetas; cortar densidade excessiva, tipos minúsculos e sinais sem significado."
+  },
+  {
+    "id": 11,
+    "file": "IDEIA CONCEITO BUILDING BLOCKS 002.jpg",
+    "observation": "Peças tridimensionais interligadas formam uma estrutura única; chamadas externas identificam partes.",
+    "application": "Diagrama arquitetural com produto, Building Blocks e Developy conectados.",
+    "connection": "É a versão estrutural e explicativa da decomposição de 07.",
+    "decision": "Candidata principal para arquitetura; rótulos precisam estar em texto HTML também."
+  },
+  {
+    "id": 12,
+    "file": "IDEIA CONCEITO BUILDING BLOCKS.jpg",
+    "observation": "Volume vermelho explodido em andares; separação vertical expõe dependências escondidas.",
+    "application": "Três planos para experiência, serviços reutilizáveis e operação de infraestrutura.",
+    "connection": "Refina 11: empilhamento explica dependência melhor que uma escultura abstrata interligada.",
+    "decision": "Revisão: preferir vista explodida em camadas para as três bases; conservar 11 nos conectores."
+  },
+  {
+    "id": 13,
+    "file": "IDEIA DESTAQUES.jpg",
+    "observation": "Um bloco laranja rompe a sequência de volumes claros; destaque por exceção.",
+    "application": "Usar laranja para desfechos, controles críticos e números selecionados.",
+    "connection": "Impõe limite à exuberância de 05 e aos rótulos de 10.",
+    "decision": "Regra de cor: um foco por composição. Roxo estrutura; amarelo oficial #FDC234 assina a marca e cria destaques; laranja complementa percursos e resultados. Correção da assinatura: Catalisa. roxa com ponto amarelo."
+  },
+  {
+    "id": 14,
+    "file": "IDEIA ESTILO 002.jpg",
+    "observation": "Pôster com painel laranja, grade editorial, numeração e símbolos direcionais.",
+    "application": "Números de capítulos, grandes títulos e grade visível.",
+    "connection": "Reforça 05 e 10, mas evidencia risco de importar uma estética de caracteres e ícones sem função.",
+    "decision": "Apropriar proporção e grade; excluir pseudotexto, alfabetos decorativos e pictogramas sem legenda."
+  },
+  {
+    "id": 15,
+    "file": "IDEIA ESTILO SITE 002.jpg",
+    "observation": "Plano modular claro e laranja, cubos em relevo e trajetórias entre peças sobre uma malha.",
+    "application": "Malha discreta no diagrama de arquitetura e módulos com encaixes visuais.",
+    "connection": "Resolve a transição do pôster 14 para interface; complementa camadas de 12.",
+    "decision": "Adotar blocos nítidos e alinhamento; sombras só no desenho de arquitetura, sem cartões flutuantes em toda parte."
+  },
+  {
+    "id": 16,
+    "file": "IDEIA ESTILOS FOTOS E HEROS.jpg",
+    "observation": "Números nas extremidades, objeto central isolado e tarja laranja atravessando uma composição sóbria.",
+    "application": "Compor data de início/corte, desenho central e nota editorial curta.",
+    "connection": "Ajuda 03 a ganhar hierarquia de abertura; reforça a parcimônia de 13.",
+    "decision": "Sem necessidade de foto: o objeto principal será uma transformação vetorial própria."
+  },
+  {
+    "id": 17,
+    "file": "IDEIA GRAFICA CORES E VIDA.jpg",
+    "observation": "Recorte macro da laranja funde objeto e fundo, usando textura e escala para dar vida.",
+    "application": "Áreas amplas de uma cor e recortes de círculo nas transições.",
+    "connection": "É alternativa mais viva à densidade técnica de 10.",
+    "decision": "Extrair escala e enquadramento; textura de fruta não serve como prova do produto. Usar o amarelo oficial #FDC234 da Catalisa, sem copiar a tonalidade da fotografia. Revisado após a confirmação do usuário sobre o amarelo e o logotipo."
+  },
+  {
+    "id": 18,
+    "file": "IDEIA GRAFICOS 001.jpg",
+    "observation": "Marca alongada se ergue do plano monocromático; dobra e sombra dão materialidade a um gesto mínimo.",
+    "application": "Forma simples com profundidade no diagrama; transição de plano para volume.",
+    "connection": "Reforça 12 e 15: profundidade localizada explica mais que uma coleção de renders.",
+    "decision": "Conservar minimalismo; não adicionar símbolo parecido com marca externa nem sombra em gráficos de dados."
+  },
+  {
+    "id": 19,
+    "file": "IDEIA GRAFICOS 003.jpg",
+    "observation": "Teclas monocromáticas em perspectiva, com algumas peças brancas destacadas.",
+    "application": "Evidenciar capacidades selecionadas dentro de uma base comum de serviços.",
+    "connection": "Complementa 13: exceções claras sobre um campo uniforme; 12 já explica as camadas.",
+    "decision": "Não transformar dados em teclas 3D. Reservar relevo para arquitetura e legenda textual para o significado."
+  },
+  {
+    "id": 20,
+    "file": "IDEIA GRAFICOS 004.jpg",
+    "observation": "Avião branco abre um corredor em fundo amarelo; espaço negativo se torna trajetória.",
+    "application": "Criar canais de leitura e conectores que conduzem a um resultado.",
+    "connection": "Retoma a escada de 08 e os caminhos de 06 com menos elementos.",
+    "decision": "Usar espaço negativo como fluxo. Descartar avião literal e metáfora de decolagem, que não explica a operação."
+  },
+  {
+    "id": 21,
+    "file": "IDEIA GRAFICOS VIVOS 001.jpg",
+    "observation": "Listras verticais do fundo se transformam em frutos; objeto e ambiente compartilham a mesma cor.",
+    "application": "Conectores que deixam de ser decoração e passam a tocar módulos reais no desenho.",
+    "connection": "Amplia 17: a cor dá vida quando conecta partes, sem exigir novas cores.",
+    "decision": "Não usar foto literal de veículo/fruta. A conexão deve ter origem e destino identificáveis."
+  },
+  {
+    "id": 22,
+    "file": "IDEIA GRAFICOS VIVOS 002.jpg",
+    "observation": "Retrato sobre círculo, sombra marcada e recorte vertical pensado para uma tela móvel.",
+    "application": "Composição responsiva com uma figura forte e texto curto, sem diminuir a página desktop inteira.",
+    "connection": "A ref. 16 orienta o hero amplo; esta exige uma composição própria no celular.",
+    "decision": "Revisão: diagramas terão enquadramento móvel ou reorganização, nunca apenas redução proporcional de texto."
+  },
+  {
+    "id": 23,
+    "file": "IDEIA GRAFICOS VIVOS 004.jpg",
+    "observation": "Carro pequeno no topo de uma faixa branca atravessa enorme campo vermelho; rastro indica direção.",
+    "application": "Uma linha contínua acompanha a progressão da operação e encontra checkpoints.",
+    "connection": "Combina direção de 20 com contenção de 13.",
+    "decision": "Uma trajetória por composição; não animar elementos constantemente nem usar movimento como prova de desempenho."
+  },
+  {
+    "id": 24,
+    "file": "IDEIA GRAFICOS VIVOS.jpg",
+    "observation": "Rosto emerge entre faixas preta e laranja; sólido, vazio e forma reconhecível se intercalam.",
+    "application": "As capacidades aparecem como recortes organizados de um sistema antes opaco.",
+    "connection": "É outra versão da transformação de 03; acrescenta contraste e continuidade entre áreas.",
+    "decision": "Não introduzir máscara/rosto: disputa com o hero. Extrair continuidade entre superfície e forma."
+  },
+  {
+    "id": 25,
+    "file": "IDEIA SITE.jpg",
+    "observation": "Página com grade aparente, áreas de cor desiguais, títulos grandes e imagens que atravessam colunas.",
+    "application": "Composição editorial com seções de tamanhos variados, legenda e navegação compacta.",
+    "connection": "É o sistema de página que faltava às peças isoladas de 05, 14 e 15.",
+    "decision": "Adotar assimetria disciplinada. Evitar sequência de grids idênticos de cartões e o excesso de amarelo da referência."
+  },
+  {
+    "id": 26,
+    "file": "IDEIA TRANSFORMACAO.jpg",
+    "observation": "Avião feito de blocos projeta sombra de avião real.",
+    "application": "Relacionar capacidades implementadas ao produto que elas tornam possível.",
+    "connection": "Combina decomposição de 07 com destino de 20. A sombra acrescenta a relação peça→potencial.",
+    "decision": "Distinguir visualmente capacidade técnica e tração comercial; não desenhar potencial como resultado já medido."
+  },
+  {
+    "id": 27,
+    "file": "IDEIA TRAZER A VIDA.jpg",
+    "observation": "Frutas voxelizadas conservam cor, textura e identidade do conjunto.",
+    "application": "Um mesmo vocabulário modular pode produzir famílias diferentes de produto.",
+    "connection": "Confirma 07, mas substitui um único exemplo por diversidade sobre o mesmo princípio.",
+    "decision": "Uma demonstração arquitetural basta; não repetir vários objetos 3D em cada seção."
+  },
+  {
+    "id": 28,
+    "file": "IDEIA VISAO E TRANSDFORMACAO.jpg",
+    "observation": "Avião de papel projeta a sombra de um avião grande; ideia e possível resultado ocupam planos distintos.",
+    "application": "Separar base construída de aplicação futura e de valor comercial habilitado.",
+    "connection": "Duplica conceitualmente 26, em versão mais leve.",
+    "decision": "Revisão: incluir uma nota explícita de capacidade/validação comercial junto ao ecossistema; evitar promessas visuais sem fonte."
+  },
+  {
+    "id": 29,
+    "file": "MOBILE IDEAS.jpg",
+    "observation": "Dois layouts de celular, títulos grandes, grandes campos de cor e desenho técnico contido em largura estreita.",
+    "application": "Cada seção móvel conserva hierarquia, rótulos legíveis e uma figura por vez.",
+    "connection": "Materializa a revisão de 22 e a composição da página em 25.",
+    "decision": "Priorizar reflow: camadas empilham, gráfico recebe tabela acessível, nav não gera rolagem horizontal."
+  },
+  {
+    "id": 30,
+    "file": "PERFEITA REPRESENTACAO BUILDING BLOCKS CONCEPT.jpg",
+    "observation": "Volume explodido divide um conjunto em camadas, com chamadas laterais e detalhes em várias escalas.",
+    "application": "Diagrama central da arquitetura: produto acima, serviços no meio, infraestrutura sustentando a base.",
+    "connection": "Resolve a escolha de 11/12 e dá escala narrativa à modularidade de 07/27.",
+    "decision": "Revisão principal: esta é a referência de arquitetura. Não usar volume de cubos para representar quantidade, pois não há uma unidade homogênea."
+  },
+  {
+    "id": 31,
+    "file": "canvas.png",
+    "observation": "Arquivo PNG inteiramente preto na visualização disponível, sem composição ou informação perceptível.",
+    "application": "Sem aplicação visual sustentada por este arquivo.",
+    "connection": "Não adiciona evidência às outras 30 imagens descritivas.",
+    "decision": "Registrar o limite; não inventar intenção a partir do nome canvas."
+  },
+  {
+    "id": 32,
+    "file": "03887d094fe7b93cfe6aa5271ed34be4.jpg",
+    "observation": "Filamento tubular laranja em fundo quase preto; uma linha acesa comunica energia.",
+    "application": "Conexão ativa e continuidade numa seção escura de infraestrutura.",
+    "connection": "Complementa o sinal de 03 e 04; dá vida ao resultado organizado.",
+    "decision": "Usar cor e continuidade, sem brilho neon excessivo nem prometer disponibilidade contínua."
+  },
+  {
+    "id": 33,
+    "file": "05ff7229ab7c50002a9d5658bee5a0e9.jpg",
+    "observation": "Silhuetas humanas surgem de retângulos vermelhos e laranjas sobre amarelo.",
+    "application": "Módulos formam uma experiência compreensível para as pessoas.",
+    "connection": "Une modularidade de 07/30 ao propósito humano de 06.",
+    "decision": "Evitar novas cores e pessoas geométricas genéricas; a ideia serve para orientar a composição."
+  },
+  {
+    "id": 34,
+    "file": "060437fee227981cb683b5df3e3aaa88.jpg",
+    "observation": "Limão com óculos: uma imagem central, fundo único e humor.",
+    "application": "Dar personalidade com uma imagem conceitual clara por seção.",
+    "connection": "Reforça contenção de 13 e imagem central de 16.",
+    "decision": "Humor literal de fruta não combina com a prestação de contas; aproveitar foco visual."
+  },
+  {
+    "id": 35,
+    "file": "09059839fea0017995c22a4d9f032f15.jpg",
+    "observation": "Banana se torna pincelada, misturando volume e superfície.",
+    "application": "Transição entre representação física e abstrata.",
+    "connection": "Variação da transformação de 07 e 24, sem nova função de informação.",
+    "decision": "Não acrescentar outra metáfora no infográfico; manter como recurso futuro de marca."
+  },
+  {
+    "id": 36,
+    "file": "0cf37c231d27c55059f02131642ba0ff.jpg",
+    "observation": "Edifícios formados por padrões tipográficos, linhas e áreas em dissolução.",
+    "application": "Densidade do histórico pode se resolver em estrutura legível.",
+    "connection": "Fortalece o arco ruído→estrutura de 03, com linguagem arquitetônica.",
+    "decision": "Usar densidade de linhas no hero; não usar texto microscópico como textura de dados."
+  },
+  {
+    "id": 37,
+    "file": "0f21e570ca3957ed45f88e247902496e.jpg",
+    "observation": "Fios coloridos se alinham, descem e se abrem em perspectiva numa base comum.",
+    "application": "Mostrar produtos diferentes apoiados nas mesmas capacidades e infraestrutura.",
+    "connection": "Conecta caminhos de 06 às camadas de 30 e ao filamento de 32.",
+    "decision": "Adotar trilhas da paleta oficial: roxo, amarelo #FDC234, laranja complementar e neutros, cada qual com função e destino. Não criar arco-íris por estética."
+  },
+  {
+    "id": 38,
+    "file": "1551b157eba6a80563f59d92d9cf3b91.jpg",
+    "observation": "Dobras de papel amarelo com sombras precisas criam planos sem objetos extras.",
+    "application": "Pequenas diferenças de plano no diagrama explodido.",
+    "connection": "Aprofunda 18 e 15 com uma superfície simples.",
+    "decision": "Profundidade restrita ao desenho; base de leitura segue plana e contrastada."
+  },
+  {
+    "id": 39,
+    "file": "241be83465af087a2794dab2e4da4191.jpg",
+    "observation": "Figura humana dentro de um marcador de localização vermelho.",
+    "application": "Identidade e contexto precisam acompanhar o trabalho.",
+    "connection": "Relaciona o uso humano de 06 ao escopo contextual de IA do relatório.",
+    "decision": "Não inferir rastreamento geográfico como capacidade do produto a partir da referência."
+  },
+  {
+    "id": 40,
+    "file": "2a21b1688ed155cbda06dde7b25cad65.jpg",
+    "observation": "Livro transforma canto de página em avião; dobras mostram passagem de informação para ação.",
+    "application": "Conhecimento alimenta operação, em vez de ser apenas armazenamento.",
+    "connection": "Relaciona 28 à cadeia de IA: documento→consulta→ferramenta.",
+    "decision": "Manter a conexão conceitual; a página não terá terceiro avião nem render de livro."
+  },
+  {
+    "id": 41,
+    "file": "48e09e7254841328936945380fd04619.jpg",
+    "observation": "Limão numa cadeira de praia, monocromia amarela e sombras naturais.",
+    "application": "Objeto único pode ter presença sem interface carregada.",
+    "connection": "Confirma 34 e 17, sem acrescentar outra regra ao sistema.",
+    "decision": "Não usar como cena do relatório; preservar apenas espaço negativo e foco."
+  },
+  {
+    "id": 42,
+    "file": "4a7a8d125ac11dee60e4a0d0e077a2fa.jpg",
+    "observation": "Rio esculpido em papel azul conduz um pequeno barco; camadas fazem o caminho.",
+    "application": "Fluxo e estrutura são partes da mesma composição.",
+    "connection": "Sintetiza caminho de 08/20 com camadas de 30.",
+    "decision": "Aplicar conectores que pertencem ao desenho; não desenhar um rio literal nem curvas que pareçam série temporal."
+  },
+  {
+    "id": 43,
+    "file": "501ed9ab90c429aab446f71a2e1637bc.jpg",
+    "observation": "Figura de blocos aberta ao meio revela construção interna modular.",
+    "application": "Mostrar capacidades internas sem perder a identidade do produto.",
+    "connection": "Confirma 07/27 e sugere corte explicativo para a arquitetura de 30.",
+    "decision": "Priorizar vista explodida já escolhida; não usar personagem de marca alheia."
+  },
+  {
+    "id": 44,
+    "file": "5a26c0db52c8f28f42511f3497056f63.jpg",
+    "observation": "Galinha em voxels sobre ciano: forma reconhecível nasce de cubos simples.",
+    "application": "Família de produtos compartilha linguagem construtiva.",
+    "connection": "Mais uma confirmação de 27; não exige nova seção.",
+    "decision": "Não usar animal ou ciano por literalidade; aproveitar consistência das peças."
+  },
+  {
+    "id": 45,
+    "file": "63db6812bda166b5f0e368da5ba11e2a.jpg",
+    "observation": "Figura de blocos na praia com prancha, escala humana e horizonte.",
+    "application": "O resultado final pode ser reconhecível mesmo quando a base é modular.",
+    "connection": "Acrescenta contexto de uso às refs. 43 e 44, que mostram figuras reconhecíveis montadas com blocos.",
+    "decision": "Não encenar usuário satisfeito como evidência. Sem aplicação direta nesta entrega."
+  },
+  {
+    "id": 46,
+    "file": "640ffcfb62b6874a5f2c1b3842c98bfb.jpg",
+    "observation": "Contorno luminoso de uma lâmpada em fundo escuro.",
+    "application": "Sinal contínuo destaca a infraestrutura que opera sob a interface.",
+    "connection": "Par conceitual de 32 e 37.",
+    "decision": "Consolidar com 32; não usar lâmpada como ícone genérico de inovação."
+  },
+  {
+    "id": 47,
+    "file": "659653389345c69716ea22338773b7c2.jpg",
+    "observation": "Cubo verde em degraus com encaixes e vazios mostra estrutura composável.",
+    "application": "Dependências, interfaces e encaixes entre camadas.",
+    "connection": "Reforça o diagrama de 11/12/30 com silhueta mais simples.",
+    "decision": "Adotar encaixes lógicos, não geometria impossível que prometa integração automática."
+  },
+  {
+    "id": 48,
+    "file": "697c873ab61333af780dafdda4bcfdb0.jpg",
+    "observation": "Casca amarela com espinhos troca materialidade e expectativa.",
+    "application": "Contraste conceitual pode tornar visível uma característica escondida.",
+    "connection": "Pertence à família de transformações de 35, mas não explica diretamente a modularidade.",
+    "decision": "Não incorporar: acrescentaria metáfora de risco/ameaça alheia ao dado apresentado."
+  },
+  {
+    "id": 49,
+    "file": "79378e5eaaacb073f7bf9e8b38f03add.jpg",
+    "observation": "Fita amarela sobe em espiral sobre plano escuro e campo amarelo.",
+    "application": "Continuidade atravessando uma mudança de plano.",
+    "connection": "Combina linhas de 37 com relevo localizado de 38.",
+    "decision": "Uma curva expressiva pode ser decorativa, mas nunca fingir gráfico de crescimento."
+  },
+  {
+    "id": 50,
+    "file": "7d11ba229393795cb30c2c7fe8508d76.jpg",
+    "observation": "Bolsa de infusão contém blocos coloridos; produto final depende de peças pequenas.",
+    "application": "Arquitetura serve jornadas de saúde entre outras verticais.",
+    "connection": "Conecta modularidade de 07 ao ecossistema, com carga semântica clínica forte.",
+    "decision": "Não usar: pode sugerir benefício clínico sem medição e reproduz marca externa."
+  },
+  {
+    "id": 51,
+    "file": "831c6bfc420c264597479e1e89d8bda6.jpg",
+    "observation": "Duas mãos quase se encontram sobre amarelo: conexão como gesto central.",
+    "application": "Relação entre revisão humana e automação.",
+    "connection": "Humaniza 06 e o capítulo de Decision.",
+    "decision": "Evitar metáfora artística literal e imagem de IA substituindo pessoa; representar aprovação no fluxo real."
+  },
+  {
+    "id": 52,
+    "file": "8aee7903fa8d968e4145bbc6a9c96929.jpg",
+    "observation": "Personagem e acessórios organizados numa embalagem.",
+    "application": "Pacotes instaláveis reúnem componentes com dependências explícitas.",
+    "connection": "A organização em kit complementa os blocos de 30 e a relação entre componentes e contexto de uso da ref. 50.",
+    "decision": "Não adotar embalagem ou personagem; evitar fazer pacotes parecerem totalmente prontos onde há pendências."
+  },
+  {
+    "id": 53,
+    "file": "8c23134178f2ed9c0e606a52c29c36eb.jpg",
+    "observation": "Número gigante claro ao fundo, figura recortada e título pequeno em campo laranja.",
+    "application": "Números como arquitetura da página e escala visual.",
+    "connection": "Combina faixas de 05 com objeto e datas de 16.",
+    "decision": "Aplicar a números reais com rótulo próximo; nunca usar número solto como enfeite de dado."
+  },
+  {
+    "id": 54,
+    "file": "8fde658d68dd2e3aa80a5c08b94b91b6.jpg",
+    "observation": "Cabeça de animal voxelizada em fundo neutro, com iluminação lateral e recortes.",
+    "application": "Peças simples podem formar volumes ricos.",
+    "connection": "Confirma 43 e 44 como família voxel, sem alterar a decisão central de 30.",
+    "decision": "Não gerar mascote ou coleção de objetos; complexidade adicional sem ganho de compreensão."
+  },
+  {
+    "id": 55,
+    "file": "929a5f364e901cbb0c8c9690f23ae9cc.jpg",
+    "observation": "Pôster com grande número vermelho feito de blocos e pequenas figuras em escala.",
+    "application": "Uma métrica dominante e relações de escala bem controladas.",
+    "connection": "Reforça 05 e 53; figuras minúsculas trazem risco de falsa escala quantitativa.",
+    "decision": "Usar números grandes tipográficos; excluir unidade de cubo ou pessoa sem correspondência real."
+  },
+  {
+    "id": 56,
+    "file": "9408c9bce12cd0c17410bb293fff94f3.jpg",
+    "observation": "Skyline se forma com pequenos quadrados que se dispersam na base.",
+    "application": "Pequenos componentes formam uma arquitetura reconhecível.",
+    "connection": "Encontro mais literal entre ruído de 03 e arquitetura tipográfica de 36.",
+    "decision": "Usar como reforço do conceito; não inventar correlação entre quantidade de pixels e entregas."
+  },
+  {
+    "id": 57,
+    "file": "98444a965e7431eb7093d2bdd5abc7f0.jpg",
+    "observation": "Incisão em papel branco revela sombra e profundidade com pouquíssimos elementos.",
+    "application": "Separação de planos na arquitetura e recortes simples em formas.",
+    "connection": "Leva minimalismo de 18/38 ao extremo.",
+    "decision": "Revisão: a profundidade pode ser sugerida com poucos polígonos; dispensar WebGL e efeitos de luz que sigam o mouse."
+  },
+  {
+    "id": 58,
+    "file": "9c28a2c857765f4bd43795c3410c9e68.jpg",
+    "observation": "Pato montado em cubos amarelos e laranjas sobre campo neutro.",
+    "application": "Conjunto reconhecível a partir de peças padronizadas.",
+    "connection": "Complementa 43 e 44 como família voxel.",
+    "decision": "Não criar fauna de mascotes; a arquitetura já demonstra modularidade."
+  },
+  {
+    "id": 59,
+    "file": "9de454a3fe3e35afd3e6449e70178561.jpg",
+    "observation": "Pessoa sentada cobre o rosto com um quadrado vermelho; enorme espaço negativo e texto pequeno.",
+    "application": "Foco único, composição assimétrica e respiro de pôster.",
+    "connection": "Reforça 16/25 e contrapõe densidade de 10.",
+    "decision": "Adotar contraste de escalas, mantendo corpo de texto legível e sem figura humana sem função."
+  },
+  {
+    "id": 60,
+    "file": "a4e36212d9802d5efb52bc3f5cfeac69.jpg",
+    "observation": "Avião de papel magenta nasce de uma superfície curvada escura.",
+    "application": "Elemento e fundo compartilham material, gerando uma saída clara.",
+    "connection": "Conecta 20, 28 e 42: trajetória, transformação e caminho moldado na superfície.",
+    "decision": "Consolidar como família de transformação; não introduzir magenta nem outra ilustração de avião."
+  },
+  {
+    "id": 61,
+    "file": "a5faaec7622f3642f34ffc2d9c31a1df.jpg",
+    "observation": "Cinco painéis: grade rígida se curva, fragmenta e dá lugar a terreno mais orgânico; círculo vermelho fecha a narrativa.",
+    "application": "A grade pode orientar sem aprisionar a narrativa.",
+    "connection": "Corrige um risco de 25: grade totalmente uniforme se torna previsível. Relaciona-se ao ruído de 03.",
+    "decision": "Revisão: variar proporções e composição por seção, conservando alinhamentos e unidade; evitar encher a página de grades decorativas."
+  },
+  {
+    "id": 62,
+    "file": "b88957566e750b249b7b49fc46f19168.jpg",
+    "observation": "Programa em colunas com números vermelhos grandes sobre uma paisagem monocromática contínua.",
+    "application": "Linha do tempo com marcos editoriais, em sequência claramente rotulada.",
+    "connection": "Combina números de 53 com continuidade de 37.",
+    "decision": "Usar datas reais e marcos; paisagem não substitui escala temporal quantitativa."
+  },
+  {
+    "id": 63,
+    "file": "b8c1578a5c3040c21a8b9f4a44db7246.jpg",
+    "observation": "Cabeça de pato em blocos coloridos com encaixes evidentes.",
+    "application": "Módulos com papéis distintos criam uma unidade.",
+    "connection": "Outra variação de 58/43: força do conjunto, sem nova regra.",
+    "decision": "Registrar repetição como confirmação, não como motivo para adicionar cores ou personagens."
+  },
+  {
+    "id": 64,
+    "file": "bc078fdaafdb5a4a615bdfeda32fdb9c.jpg",
+    "observation": "Berinjela se transforma em uma pincelada roxa.",
+    "application": "Roxo pode ser material expressivo, além de cor de botão.",
+    "connection": "Variação de 35, agora próxima à cor estabelecida da Catalisa.",
+    "decision": "Adotar presença do roxo e grandes campos; não utilizar fruta ou pincelada como gráfico."
+  },
+  {
+    "id": 65,
+    "file": "bf6578c151091c36c8f40e8b090c999d.jpg",
+    "observation": "Arquitetura física é recoberta por uma malha de pequenos quadrados translúcidos.",
+    "application": "Camadas permitem ver dentro do sistema sem ocultar seu contorno.",
+    "connection": "Aproxima profundidade de 30 e grade de 15 de uma aplicação real.",
+    "decision": "Excluir fotografia corporativa e marca fictícia; diagrama próprio será suficiente."
+  },
+  {
+    "id": 66,
+    "file": "c3d8682e5b61c17c372f0ae3c3652265.jpg",
+    "observation": "Cápsula transparente contém figuras e blocos; embalagem revela o conjunto.",
+    "application": "Pacote instalável pode ser explicado como composição com dependências.",
+    "connection": "Confirma 52/50, com ainda mais associações médicas.",
+    "decision": "Não usar cápsula: pode confundir plataforma de software com produto de saúde. Extrair transparência e organização."
+  },
+  {
+    "id": 67,
+    "file": "ece18b065846feb9b8e84310f2febeab.jpg",
+    "observation": "Placas brancas em alturas diferentes expõem uma base verde comum.",
+    "application": "Camadas compartilham infraestrutura; vazio ajuda a separar componentes.",
+    "connection": "Versão mais contida da arquitetura de 30; relaciona-se a 15 e 38.",
+    "decision": "Aplicar neutralidade e cortes claros; reduzir a quantidade de planos para as três bases reais."
+  },
+  {
+    "id": 68,
+    "file": "f6c263270fdd56dbd06d347c65378fd2.jpg",
+    "observation": "Volumes azuis translúcidos se cruzam com linhas de construção e grande área branca.",
+    "application": "Traçados técnicos discretos e planos independentes podem mostrar composição.",
+    "connection": "Complementa 65 e 30, mas abstração pode esconder significado.",
+    "decision": "Desenhar conectores e rótulos compreensíveis. Sem transparência sobre texto ou cores externas."
+  },
+  {
+    "id": 69,
+    "file": "fbaecfe557522d7fb18fa0e2066a8688.jpg",
+    "observation": "Carro ocupa a faixa superior laranja; tipografia enorme ancora a metade clara inferior.",
+    "application": "Alternância de imagem e texto com quebras fortes de proporção.",
+    "connection": "Refina o ritmo editorial de 25 e a hierarquia de 53.",
+    "decision": "Usar relações de área e tipografia; não usar marca, carro ou códigos decorativos."
+  },
+  {
+    "id": 70,
+    "file": "fcfe4c703de2d662b6095483f74377d1.jpg",
+    "observation": "Pimenta vermelha vira pincelada, mesmo princípio das refs. 35 e 64.",
+    "application": "Mostra uma família visual baseada em transformação material.",
+    "connection": "Identifica série recorrente, sem novas funções narrativas.",
+    "decision": "Consolidar as três pinceladas como uma família secundária, fora do infográfico atual."
+  },
+  {
+    "id": 71,
+    "file": "Proposta GEMINI (NAO APROVADA AINDA).pdf",
+    "observation": "Documento de 12 páginas, com duas propostas: Bauhaus tátil e grade suíça industrial. Sugere cores novas, catálogo, manifesto e métricas comerciais/temporais sem prova neste dossiê.",
+    "application": "Aproveitar apenas camadas explodidas, metadados, modularidade, ritmo editorial e transformação do ruído em estrutura.",
+    "connection": "Reúne várias referências já anotadas, mas não as transforma automaticamente em diretriz aprovada. A segunda proposta reconhece não ter encontrado press-kit fechado.",
+    "decision": "Rejeitar troca da primária por laranja, os 60+ blocos como contagem deste inventário, 100% de clareza e prazos sem fonte. Preservar roxo #734B9C, amarelo #FDC234, laranja #FE8342 e 42 diretórios BB como métrica definida. O logotipo principal é o SVG oficial Catalisa. roxo com ponto amarelo."
+  },
+  {
+    "id": 72,
+    "file": "Pin on Quick Saves.html",
+    "observation": "Página salva do Pinterest cujo pin central é o garfo com massa em fundo amarelo; o restante reúne recomendações de fotografia de alimentos e arquivos de funcionamento do site.",
+    "application": "Confirma a origem da referência de complexidade macarrônica.",
+    "connection": "Mesmo conceito da ref. 09, cercado por exemplos da família de objetos monocromáticos e pinceladas de 35/64/70.",
+    "decision": "Consolidar com 09. Recomendações, anúncios e scripts do Pinterest não são diretrizes adicionais do usuário nem entram na página final."
+  }
+]

@@ -1,0 +1,46 @@
+{
+  "checkedAt": "2026-10-27T00:38:47.472Z",
+  "method": "Read-only authenticated Chrome UI via Claude in Chrome",
+  "authenticated": true,
+  "preexistingRealtimeTabFound": null,
+  "visibleAccount": {
+    "name": "Catalisa.io",
+    "id": "254659401"
+  },
+  "verifiedWebProperty": {
+    "name": "Catalisa",
+    "id": "350153952",
+    "streamName": "Catalisa Site",
+    "streamId": "4436972873",
+    "streamUrl": "https://catalisa.io",
+    "measurementId": "G-JYJWH17ZVX",
+    "observedInStreamDetails": true
+  },
+  "previousWebsiteConfiguration": {
+    "measurementId": "G-V6VD9QY6CC",
+    "googleTag": "GT-5TW4R7FV",
+    "targetNotFoundInInspectedCatalisaStreamsOrSelectorSearch": true,
+    "notAClaimAboutOtherGoogleLogins": true
+  },
+  "realtime": {
+    "url": "https://analytics.google.com/analytics/web/#/a254659401p350153952/realtime/overview",
+    "activeUsersLast30Minutes": 0,
+    "qaEventObserved": false,
+    "measurementIdMismatchExplainsTransportNotVisibleInThisProperty": true
+  },
+  "dataFilters": {
+    "read": false,
+    "reason": "Direct Admin Data filters navigation returned to Home; no settings modified"
+  },
+  "limits": [
+    "No other Google login was selected.",
+    "No OAuth granted, no property/filter/source/GTМ changed.",
+    "No visitor identities, tokens or cookies extracted.",
+    "Realtime must be reread after an explicit event is sent to the verified G-JYJWH17ZVX destination."
+  ],
+  "evidence": {
+    "cliResult": "/tmp/ga-realtime-diagnosis-result.json",
+    "permissionDenials": []
+  },
+  "browserTabScope": "Chrome integration sees its own task tab group; existing user tabs are not available to this CLI session. No conclusion about which Realtime tab the user personally had open."
+}

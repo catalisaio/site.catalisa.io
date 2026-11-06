@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-10-26T13:10:30.441632+00:00",
+  "passed": true,
+  "releaseId": "20261026-ai-recovery",
+  "scope": "Current HTTPS staging: same failed Contact session retried with actual AI, refinement/human-review/reload/four widths; Lab actual AI/screen/reload/Contact continuation; HTTP controls and compiled artifact. Earlier broader tests remain dated evidence, not new executions.",
+  "productionPublished": false,
+  "originalFailedConversationRetried": true,
+  "publicArtifactSha256": "5ba12f845313026afd7b8554bf9b6cbd55888064aceae0742f08f7622d41e46b",
+  "serverArtifactSha256": "a4eb20162dd086e470a02df120bdfdf5fc347bfd8dcd60e64365a62dd47a5dff",
+  "contact": "qa/contact-recovery-real-staging/verification.json",
+  "lab": "qa/lab-real-staging/verification.json",
+  "http": "qa/release/staging-http-public.json",
+  "artifact": "qa/ai-recovery-artifact/validation.json",
+  "remaining": [
+    "Owner visual/editorial acceptance of the presented staging revision and policy text",
+    "Explicit authorization before production installation and public cutover",
+    "Owner decision before any real market-insights collection; current flag remains0",
+    "Physical Safari/iOS and Chrome/Android launch-gate verification, or an explicit responsible-owner exception",
+    "Confirm monitoring duty, support queue coverage/out-of-hours behavior and receipt of operational alerts before launch"
+  ],
+  "limits": [
+    "Production agent provider/configuration was not changed or inferred on during this recovery.",
+    "No new physical-device, editorial, staffing or market-policy approval is inferred.",
+    "AI remains variable; Lab took52885ms in this run."
+  ]
+}

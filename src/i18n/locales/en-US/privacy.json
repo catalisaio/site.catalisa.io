@@ -35,14 +35,14 @@
       {
         "icon": "FiShare2",
         "title": "Who we share with",
-        "description": "Infra (AWS), WhatsApp, AI (Claude/GPT). We never sell your data.",
+        "description": "Infrastructure and AI needed for the service. Human support for this site continues on this page.",
         "linkText": "See details",
         "anchor": 6
       },
       {
         "icon": "FiLock",
         "title": "Security",
-        "description": "End-to-end encryption, data isolation, 24/7 monitoring. Your data stays in Brazil.",
+        "description": "Protected connections, access restricted to your conversation and private content encrypted in storage.",
         "linkText": "See details",
         "anchor": 8
       },
@@ -57,7 +57,7 @@
   },
   "fullPolicy": {
     "title": "Full Privacy Policy",
-    "subtitle": "Complete legal version in accordance with LGPD"
+    "subtitle": "How we handle your data"
   },
   "controls": {
     "expandAll": "Expand all",
@@ -114,7 +114,7 @@
     },
     {
       "title": "Cookies and Tracking Technologies",
-      "content": "Our website and Platform use cookies and similar technologies to improve your experience. We use Google Tag Manager (GTM) and Google Analytics 4 (GA4) with Consent Mode v2 implemented.\n\nCookie categories:",
+      "content": "Our website and Platform use cookies and similar technologies to improve your experience. We use the Google tag and Google Analytics 4 (GA4), with Consent Mode v2, and Microsoft Clarity only after analytics permission. You can change your choice in “Cookie preferences”; declining does not prevent use of the site. Contact details and conversation, concept and support content are not sent as analytics parameters. Clarity is not loaded on Contact, Lab or authenticated surfaces.\n\nCookie categories:",
       "items": [
         "Strictly necessary cookies: essential for Platform operation, including authentication, security and session preferences. Stored via localStorage and session cookies. Do not require consent.",
         "Analytical cookies (GA4): collect aggregated data about website and Platform usage for improvement purposes. Include: _ga (user identification, 2 years), _ga_* (session state, 2 years). Require consent.",
@@ -126,7 +126,7 @@
       "title": "Data Sharing",
       "content": "We do not sell your personal data. We share data only with the following categories of recipients, to the extent necessary for the purposes described in this Policy:",
       "items": [
-        "Infrastructure providers (AWS/GCP): hosting, storage and data processing. Servers located in Brazil, with replication for service continuity.",
+        "Infrastructure providers: hosting, storage and processing needed for the service. Processing locations depend on the services used; we do not guarantee that all data resides exclusively in Brazil.",
         "Meta/WhatsApp: message processing through the WhatsApp Business API. Necessary for communication integration functionality. Subject to WhatsApp's Terms of Service and Privacy Policy.",
         "Anthropic (Claude): natural language processing and content generation by AI Agents. Data may be transferred to servers in the United States (see Section 8).",
         "OpenAI (GPT): natural language processing and content generation by AI Agents. Data may be transferred to servers in the United States (see Section 8).",
@@ -137,32 +137,29 @@
     },
     {
       "title": "International Data Transfer",
-      "content": "Some of our sub-processors, specifically Anthropic and OpenAI, operate servers in the United States. This means that personal data processed by AI Agents may be transferred outside of Brazil.\n\nTo ensure adequate protection of internationally transferred data, we adopt the following safeguards in accordance with the LGPD (Art. 33):\n\n(a) Standard contractual clauses with data protection commitments equivalent to those of Brazilian legislation.\n(b) International transfer impact assessment to verify the level of protection in the destination country.\n(c) Guarantees that sub-processors apply adequate technical and organizational measures for data protection.\n\nWe minimize the transfer of personal data abroad, using anonymization and pseudonymization whenever possible before sending data for AI model processing."
+      "content": "Concept generation uses the AI provider configured for the service, among the providers identified in this policy. This processing may take place outside Brazil. We send the brief and context needed to generate or refine the concept; your name, email and phone are not intentionally included in that request. Do not put sensitive personal information, credentials or secrets in free text.\n\nRecords retained by the AI provider are subject to its terms, settings and retention rules. Conversation periods on this site do not mean that all third-party copies are deleted at the same time. To clarify the processing applicable to your request, contact the privacy channel identified in this policy."
     },
     {
       "title": "Data Security",
-      "content": "We implement robust technical and organizational measures to protect your personal data against unauthorized access, destruction, loss, alteration or leakage:",
+      "content": "We use the following measures to protect conversations and support on this site:",
       "items": [
-        "Encryption in transit (TLS 1.2+) for all communications between the browser and our servers.",
-        "Encryption at rest (AES-256) for data stored in our databases and file systems.",
-        "Multi-tenant isolation with role-based access control (RBAC), ensuring each organization accesses only its own data.",
-        "Automatic sensitive data masking (PII masking) in logs and development environments.",
-        "Automatic backups with geographic redundancy and periodic restoration testing.",
-        "24/7 monitoring with anomaly detection and real-time security alerts.",
-        "Primary infrastructure hosted in data centers in Brazil with security certifications (ISO 27001, SOC 2).",
-        "Periodic penetration testing conducted by specialized teams.",
-        "Security and privacy training program for all employees."
+        "HTTPS connections while you use the site.",
+        "Separate essential cookies to keep your conversation and authenticate the team. A visitor cookie does not grant access to other people’s conversations or to team access.",
+        "Private content encrypted in storage and access restricted to authorized staff. The server and AI provider must process the content needed for the service; this is not end-to-end encryption.",
+        "Access checks, usage limits and validation of submitted data to reduce unauthorized access and abuse.",
+        "The AI produces a structured preview. The site does not execute code supplied by the AI or the visitor."
       ]
     },
     {
       "title": "Data Retention",
-      "content": "We retain your personal data only for as long as necessary to fulfill the purposes described in this Policy, observing the following periods:",
+      "content": "The periods below apply to conversations, concepts and human support on this site. After expiry, records are no longer available for normal use and enter periodic cleanup. Backups and service provider records may follow their own deletion cycles.",
       "items": [
-        "Account data: retained while the account is active, plus 6 (six) months after closure to allow reactivation and meet legal obligations.",
-        "Access and security logs: retained for 12 (twelve) months, as required by the Marco Civil da Internet (Law No. 12,965/2014).",
-        "Communication data (messages): retained according to the User's Workflow configuration, plus 90 (ninety) days after deletion for backup and recovery purposes.",
-        "Financial and fiscal data: retained for 5 (five) years, as required by Brazilian tax legislation.",
-        "Anonymized and aggregated data: may be retained indefinitely, as they do not allow identification of the data subject."
+        "Visitor conversation, answers, provisional identity and concepts: up to 7 days after the session starts.",
+        "Records used to prevent duplicate processing of the same request: up to 24 hours. Conversation content remains subject to the session period.",
+        "Shared context and human support messages: up to 30 days after the handoff is accepted.",
+        "Authenticated team access: up to 1 hour, also limited by credential expiry. Signing out ends that access.",
+        "Technical usage limit records: until the relevant control window ends.",
+        "Market insight measurement is disabled. Enabling it requires specific information about purposes, access, retention and deletion before collection starts."
       ]
     },
     {
@@ -193,33 +190,27 @@
       "content": "In the event of a security incident that may pose a risk or relevant harm to personal data subjects, Catalisa will take the following measures:\n\n(a) Notification to the National Data Protection Authority (ANPD) within 72 (seventy-two) hours after confirmation of the incident, in accordance with Art. 48 of the LGPD.\n\n(b) Communication to affected data subjects, within a reasonable timeframe, containing: description of the nature of the affected data, information about the risks, measures taken to mitigate the effects and guidance for the data subject.\n\n(c) Internal incident record with complete documentation: nature, affected data, impacted data subjects, technical measures taken and results of containment actions.\n\n(d) Notification to the User (when acting as Processor) so that they may take the necessary measures with their customers."
     },
     {
-      "title": "Use of Google API Services Data",
-      "content": "When you connect a Google account to the Catalisa Platform, we access and use data from that account solely to provide the features you enable. Catalisa's use and transfer of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements.",
+      "title": "Google user data",
+      "content": "When you connect your Google account to Catalisa or Facila, Catalisa, the data controller, accesses only the data needed for the features you enable. For questions or requests about this data, contact privacidade@catalisa.io.\n\nThe use and transfer to any other app of information received from Google APIs will adhere to the Google API Services User Data Policy (https://developers.google.com/terms/api-services-user-data-policy), including the Limited Use requirements.",
       "items": [
-        "Google Calendar: we check your availability (free and busy periods) and create, update and cancel calendar events that you — or automations and AI agents you configure — request. Used, for example, to schedule meetings with your customers during a conversation.",
-        "Gmail (send): we send emails on your behalf when you, or an automation you configure, trigger a send from the Platform (for example, meeting confirmations and follow-up messages). We do not read your inbox.",
-        "Account identification: we access your Google email address only to identify which account was connected, so you can recognize and manage it.",
-        "We do not use data obtained from Google APIs for advertising, and we do not sell it.",
-        "We do not transfer data obtained from Google APIs to third parties except as necessary to provide the features described, when required by law, or with your explicit consent.",
-        "Humans do not read this data, except (i) with your explicit consent, (ii) for security purposes (such as investigating abuse or incidents), (iii) to comply with a legal obligation, or (iv) when the data is aggregated and anonymized.",
-        "Access tokens are stored encrypted. You can revoke access at any time within the Platform or at myaccount.google.com/permissions."
-      ]
-    },
-    {
-      "title": "Use of Microsoft Graph and Microsoft Outlook Data (Microsoft Identity Platform)",
-      "content": "When you connect a Microsoft account (Outlook / Microsoft 365) to the Catalisa Platform, we access and use data from that account via Microsoft Graph solely to provide the calendar and email features you enable:",
-      "items": [
-        "Microsoft Outlook Calendar (Calendars.ReadWrite): we check your availability (free and busy periods) and create, update and cancel calendar events that you — or automations and AI agents you configure — request.",
-        "Microsoft Outlook Mail (Mail.ReadWrite and Mail.Send): we read, organize, draft and send emails on your behalf solely when you, or an automation/agent you configure, trigger those actions on the Platform.",
-        "Account identification and offline access (User.Read and offline_access): we access your basic profile (name and email address) only to identify the connected account on the Platform and maintain refresh tokens so your automations continue operating without requiring you to sign in again each session.",
-        "We do not use data obtained from Microsoft Graph (calendar or mail) to train artificial intelligence models, for advertising, or for sale to third parties.",
-        "We do not transfer data obtained from Microsoft Graph to third parties except as strictly necessary to provide the features described and contracted by you, when required by law, or with your explicit consent.",
-        "OAuth 2.0 access and refresh tokens are stored encrypted at rest using AES-256-GCM. You can revoke access at any time directly within the Platform or in your Microsoft account settings (account.live.com/consent/Manage or myapps.microsoft.com)."
+        "Google sign-in (openid, email, profile): we access your name, email address and profile photo to authenticate you and identify your account.",
+        "Gmail (gmail.send): we send emails only from your own account. In Facila, each send requires the customer’s explicit approval; in Catalisa, sends are triggered by workflows you create. We do not read, store or modify the contents of your mailbox.",
+        "Google Calendar (calendar.events, calendar.calendars.readonly, calendar.calendarlist.readonly, calendar.freebusy): we read your calendar list, calendar names, time zones and free/busy information. We create, update and cancel appointment events on the calendar you choose.",
+        "Purpose and sharing: we use this data only to provide the features described above. We do not sell it, use it for advertising or use it to train AI models. We do not transfer it to third parties except as needed to operate the service or as required by law.",
+        "Prohibited use: using the integration for spam, fraud or unsolicited messages is forbidden and leads to suspension of the integration or account.",
+        "Security and storage: OAuth tokens are stored encrypted, with access restricted to authorized people and systems that need them to operate the service.",
+        "Retention and deletion: data obtained from Google and OAuth tokens are deleted when you disconnect the integration or request deletion by emailing privacidade@catalisa.io.",
+        "Revoking access: you can revoke access at any time inside the app or at https://myaccount.google.com/permissions.",
+        "Human access: people do not read this data except with your explicit consent, for security purposes (such as investigating abuse or incidents), to comply with a legal obligation, or when the data is aggregated and anonymized."
       ]
     },
     {
       "title": "Final Provisions",
       "content": "Minors. Our services are not intended for individuals under 18 (eighteen) years of age. We do not intentionally collect personal data from minors. If you become aware that data from a minor has been collected, please contact us so we can delete it.\n\nChanges to this Policy. We may update this Privacy Policy periodically. Significant changes will be communicated with a minimum of 30 (thirty) days' advance notice by email or Platform notification. Continued use of the Platform after the notice period constitutes acceptance of the updated Policy.\n\nContact. To exercise your rights, clarify questions or submit complaints about this Policy:\n\nDPO email: privacidade@catalisa.io\nGeneral email: contato@catalisa.io\nWhatsApp: +55 11 97730-3414\n\nJurisdiction. The courts of Sao Paulo, State of Sao Paulo, Brazil, are elected to resolve any disputes arising from this Policy."
+    },
+    {
+      "title": "Contact, Lab and human support on this site",
+      "content": "To explore an idea, the site stores your answers and creates a provisional identity after you give your name. Before AI generation or support, it requests a valid email address or phone number; either one is sufficient. An essential cookie lets you resume only the same session. Provisional site references are not CRM records.\n\nThe agent receives the brief, context needed for generation or refinement, and the authorized capability catalog. Your name, email and phone are not intentionally included in the generation request. However, do not include sensitive customer information, credentials or secrets in free text. The AI generates a product hypothesis; it does not approve credit, execute transactions or publish a system.\n\nWhen you confirm continuation, you share your contact information, answers, history, selected concept and refinements with the team. The human channel currently implemented is here on the site. Acceptance means the packet was stored; delivery means an authenticated person opened the context; assignment means that person claimed the request. Replies remain in the same conversation. Collecting an email or phone does not automatically send external messages.\n\nContact, Lab, concepts and support surfaces do not send conversations, names, emails or phone numbers to browser analytics tools. Proposed market measurement requires specific approval and public information before real collection. To request access, correction or deletion, use the privacy contact identified in this policy; identity and request scope will be checked before changing data."
     }
   ]
 }

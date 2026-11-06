@@ -1,0 +1,147 @@
+{
+  "decision": "financial-products-2026-10-24",
+  "source": "user-request-2026-10-24",
+  "date": "2026-10-24",
+  "intent": "Convidar a criar produto financeiro próprio, desenhar crédito original e modernizar ou substituir legado nos espaços existentes.",
+  "reference": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist",
+  "financial": [
+    {
+      "id": "banking-hero-intro",
+      "route": "/ecossistema/banking/",
+      "selector": ".bk-hero p",
+      "beforeHtml": "O titular acompanha. O aplicativo conecta.<br>A equipe opera com contexto.",
+      "afterHtml": "Crie seu produto financeiro.<br>Conecte a experiência à operação."
+    },
+    {
+      "id": "banking-premise",
+      "route": "/ecossistema/banking/",
+      "selector": ".bk-premise p",
+      "beforeHtml": "Uma conta digital precisa fazer sentido para quem usa e para quem cuida da operação. Banking aproxima essas experiências, com responsabilidades distribuídas na base.",
+      "afterHtml": "Crie uma experiência financeira própria ou modernize a atual. Defina marca, canais e regras de operação; a composição depende do escopo e das integrações validadas."
+    },
+    {
+      "id": "banking-credit-connection",
+      "route": "/ecossistema/banking/",
+      "selector": ".bk-credit-connection p",
+      "beforeHtml": "O guia explora uma antecipação ligada à conta: proposta, aceite e acompanhamento. A composição de crédito traz outro ponto de vista para essa continuidade.",
+      "afterHtml": "Sua conta pode se conectar a um produto de crédito próprio. Explore como proposta, aceite e acompanhamento podem compor essa jornada, conforme o escopo e as integrações."
+    },
+    {
+      "id": "banking-credit-cta",
+      "route": "/ecossistema/banking/",
+      "selector": ".bk-credit-connection .text-link",
+      "beforeHtml": "Explore Credit Platform ↗",
+      "afterHtml": "Desenhe seu produto de crédito ↗",
+      "href": "/ecossistema/credit/"
+    },
+    {
+      "id": "banking-closing-title",
+      "route": "/ecossistema/banking/",
+      "selector": ".bk-closing h2",
+      "beforeHtml": "O próximo produto<br>começa nas <em>conexões.</em>",
+      "afterHtml": "Crie seu produto<br>financeiro com <em>identidade.</em>"
+    },
+    {
+      "id": "banking-contact-cta",
+      "route": "/ecossistema/banking/",
+      "selector": ".bk-closing .text-link[href=\"/contato/\"]",
+      "beforeHtml": "Converse com a Catalisa ↗",
+      "afterHtml": "Vamos criar seu produto ↗",
+      "href": "/contato/"
+    },
+    {
+      "id": "credit-hero-intro",
+      "route": "/ecossistema/credit/",
+      "selector": ".cr-hero p",
+      "beforeHtml": "Da proposta à carteira, uma composição<br>para dar continuidade ao trabalho.",
+      "afterHtml": "Crie seu produto de crédito.<br>Da proposta à vida da operação."
+    },
+    {
+      "id": "credit-intro",
+      "route": "/ecossistema/credit/",
+      "selector": ".cr-intro > div:not(.cr-two-works) > p",
+      "beforeHtml": "Catálogo, política e condições organizam a construção. A mesa reúne a fila, o dossiê e o acompanhamento. Duas perspectivas para um processo que precisa continuar fazendo sentido.",
+      "afterHtml": "Crie um produto de crédito original ou redesenhe o existente: público, modalidade, política e condições próprias. Catálogo e mesa conectam construção e operação conforme o escopo validado."
+    },
+    {
+      "id": "credit-closing-title",
+      "route": "/ecossistema/credit/",
+      "selector": ".cr-closing h2",
+      "beforeHtml": "O produto ganha força<br>quando as partes<br><em>trabalham juntas.</em>",
+      "afterHtml": "Seu produto de crédito.<br>Suas regras.<br><em>Uma nova composição.</em>"
+    },
+    {
+      "id": "credit-banking-cta",
+      "route": "/ecossistema/credit/",
+      "selector": ".cr-closing .text-link[href=\"/ecossistema/banking/\"]",
+      "beforeHtml": "Explore Banking Platform ↗",
+      "afterHtml": "Crie sua experiência financeira ↗",
+      "href": "/ecossistema/banking/"
+    },
+    {
+      "id": "credit-contact-cta",
+      "route": "/ecossistema/credit/",
+      "selector": ".cr-closing .text-link[href=\"/contato/\"]",
+      "beforeHtml": "Converse com a Catalisa ↗",
+      "afterHtml": "Desenhe seu produto de crédito ↗",
+      "href": "/contato/"
+    }
+  ],
+  "platform": {
+    "heroIntro": "Crie seu produto financeiro. Desenhe uma jornada de crédito original. Ou modernize o legado por etapas, reunindo capacidades, regras e integrações validadas.",
+    "evolutionIntro": "Para modernizar ou substituir um legado, comece por uma jornada delimitada. Adaptadores conectam o que permanece à nova composição, com contratos claros entre os sistemas.",
+    "evolutionLimits": "Planeje a substituição por etapas. Cada avanço exige validar dados, equivalência funcional, integrações e continuidade da operação antes de retirar a parte anterior.",
+    "closingTitle": [
+      "Crie o próximo produto.",
+      "Evolua o que já existe."
+    ],
+    "closingCopy": "Seu produto financeiro pode ter regras e experiência próprias. A modernização do legado também começa por um recorte: o que preservar, o que substituir e como validar cada etapa.",
+    "contactCta": "Planeje seu produto ou a modernização"
+  },
+  "platformChanges": [
+    {
+      "id": "architecture-hero-intro",
+      "route": "/arquitetura/",
+      "selector": ".a-hero-grid > div:first-child > p",
+      "beforeHtml": "Reutilize capacidades. Conecte regras, dados e experiências. Dedique o próximo ciclo ao que diferencia seu produto — com uma base que já tem por onde começar.",
+      "afterHtml": "Crie seu produto financeiro. Desenhe uma jornada de crédito original. Ou modernize o legado por etapas, reunindo capacidades, regras e integrações validadas."
+    },
+    {
+      "id": "architecture-evolution-intro",
+      "route": "/arquitetura/",
+      "selector": "#evolucao .a-prose:nth-of-type(1)",
+      "beforeHtml": "Uma integração concentra a conversa com um sistema externo. Um contrato claro permite que a jornada use a capacidade sem espalhar particularidades de um fornecedor por toda a experiência.",
+      "afterHtml": "Para modernizar ou substituir um legado, comece por uma jornada delimitada. Adaptadores conectam o que permanece à nova composição, com contratos claros entre os sistemas."
+    },
+    {
+      "id": "architecture-evolution-limits",
+      "route": "/arquitetura/",
+      "selector": "#evolucao .a-prose:nth-of-type(2)",
+      "beforeHtml": "Isso cria espaço para adaptar e evoluir integrações. A troca depende de equivalência funcional, compatibilidade e testes — a fronteira organiza esse trabalho.",
+      "afterHtml": "Planeje a substituição por etapas. Cada avanço exige validar dados, equivalência funcional, integrações e continuidade da operação antes de retirar a parte anterior."
+    },
+    {
+      "id": "architecture-closing-title",
+      "route": "/arquitetura/",
+      "selector": ".a-closing h2",
+      "beforeHtml": "Cada produto tem sua forma.<br><em>A base aprende a sustentar mais.</em>",
+      "afterHtml": "Crie o próximo produto.<br><em>Evolua o que já existe.</em>"
+    },
+    {
+      "id": "architecture-closing-copy",
+      "route": "/arquitetura/",
+      "selector": ".a-closing > p",
+      "beforeHtml": "Reúso não elimina o trabalho específico de cada negócio. Ele muda o ponto de partida — e permite dedicar mais atenção ao que faz o próximo produto valer a pena.",
+      "afterHtml": "Seu produto financeiro pode ter regras e experiência próprias. A modernização do legado também começa por um recorte: o que preservar, o que substituir e como validar cada etapa."
+    },
+    {
+      "id": "architecture-contact-cta",
+      "route": "/arquitetura/",
+      "selector": ".a-closing a[href=\"/desenvolvedores/\"]",
+      "beforeHtml": "Aprofunde a arquitetura<span aria-hidden=\"true\">↗</span>",
+      "afterHtml": "Planeje seu produto ou a modernização<span aria-hidden=\"true\">↗</span>",
+      "beforeHref": "/desenvolvedores/",
+      "href": "/contato/"
+    }
+  ]
+}

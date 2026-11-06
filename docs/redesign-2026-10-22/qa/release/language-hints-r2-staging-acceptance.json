@@ -1,0 +1,61 @@
+{
+  "checkedAt": "2026-10-27T02:06:13.454Z",
+  "releaseId": "20261027-language-hints-r2",
+  "staging": "https://site-staging.catalisa.io",
+  "productionStill": "20261027-ga-realtime",
+  "stagingValidationPassed": true,
+  "productionPrepared": true,
+  "productionInstalled": false,
+  "productionAuthorizationReceived": false,
+  "publicArtifactSha256": "2b86cd9fcd11b8821ec232b941c82a710e2106109909be449b3f98c83429d1a7",
+  "serverArtifactSha256": "586254469a4310eaf70a5603952bdcedb0c81151ff14e04083027b58f557889f",
+  "serverIdenticalToPublishedProduction": true,
+  "changes": [
+    "Language aria-controls is present only while its popup exists.",
+    "Prerender modulepreload links now use current Vite assets, preventing old/current duplicate downloads."
+  ],
+  "unchanged": [
+    "CCP communication and all other page copy",
+    "All media and branding",
+    "Backend, Contact/Lab generation and integrations",
+    "GA and Clarity configuration",
+    "Routes, SEO metadata and sitemap"
+  ],
+  "checks": {
+    "publicHttpsRoutes": 49,
+    "languages": 7,
+    "languageBrowserChecks": 12,
+    "languageWidths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "qualityRoutes": 7,
+    "keyboardChecks": 5,
+    "staleScriptLoads": 0,
+    "languageUnitTests": 7,
+    "htmlFilesCompared": 680,
+    "privateArtifactScanPassed": true,
+    "exactStageProductionBytes": true,
+    "stagingOperationsPassed": true,
+    "appTypeScriptPassed": true
+  },
+  "evidence": {
+    "http": "qa/release/language-hints-r2-staging-http.json",
+    "browser": "qa/release/language-hints-r2-browser-summary.json",
+    "language": "qa/language-hints-r2-language/verification.json",
+    "operational": "qa/release/language-hints-r2-staging-ops.json",
+    "content": "qa/release/language-a11y-artifact-content.json",
+    "moduleHints": "qa/release/language-hints-applied.json",
+    "integrity": "qa/release/language-hints-r2-integrity.json",
+    "privateScan": "qa/release/language-a11y-private-artifact.json"
+  },
+  "limits": [
+    "Lab performance is measured, not a universal2.5s pass: six routes exceeded2.5s in the sample; no field/mobile physical certification.",
+    "User confirmed physical iPhone/Safari and Android/Chrome tests have not been performed.",
+    "The user has not assigned operational alert/queue/rollback responsibilities.",
+    "CCP editorial proposals still require validation.",
+    "A filled Clarity heatmap is not yet confirmed; enabled dashboards and aggregate production sessions are confirmed."
+  ]
+}

@@ -1,0 +1,648 @@
+Firefox                                                                                             about:blank
+
+
+
+
+          Proposta Visual e Arquitetural Catalisa.io
+          https://gemini.google.com/app/cc6b81b58110e090
+
+          User prompt: quero que me traga uma proposta baseada nas inspiracoes que eu anexei, quero
+          algo minimalista estilo bauhaus do site catalisa.io a proposta e seguir a linha minimalista-
+          bauhaus cores svgs ricos imagens ricas e um foco na plataforma que foi feita para construir
+          teremos uma versao mais comercial do site depois mas agora eu quero estabelecer o site
+          principal catalisa como marca e referencia arquitetural e menos para vender a plataforma em
+          si para isso temos sites como med.catalisa.app juridico.catalisa.app recrutamento...
+          biometrics.catalisa.app decision.catalisa.app e por ai vai que sao vitrines-saas dos nossos
+          produtos feitos em cima da plataforma
+
+          Response: Esta é uma proposta de Direção de Arte, Arquitetura de Informação e
+          Experiência (UI/UX) para o novo portal catalisa.io, posicionando-o como um manifesto
+          arquitetural e fundação tecnológica ("The Engine"), enquanto os subdomínios (.app)
+          atuam como vitrines comerciais verticais.
+
+          1. Conceito Central: “A Forma Segue a Fundação” (Bauhaus Tátil)
+
+          Analisando as suas referências, há um ﬁo condutor muito claro que vai além do Bauhaus
+          bidimensional clássico: o minimalismo tátil, a física da luz, a modularidade explícita e
+          o uso inteligente do espaço negativo.
+
+             • Modularidade & Construção (O "Efeito Lego/Voxel"): As referências de blocos e
+               peças traduzem perfeitamente o conceito de PaaS (Platform as a Service). A Catalisa
+               é o sistema de blocos fundamentais; os produtos (med, juridico, biometrics) são
+               o que você constrói com eles.
+
+             • Tactilidade, Corte e Profundidade: Os cortes no papel branco e na superfície verde-
+               limão mostram uma estética onde a interface não é "plana" (ﬂat), mas esculpida. Os
+               elementos emergem da superfície com sombras suaves e precisas.
+
+             • Escalabilidade Arquitetural: O cubo vermelho fatiado em camadas crescentes com
+               uma escala humana no topo é a metáfora exata para arquitetura de software
+               escalável e fundação sólida.
+
+             • Energia Catalisadora (O Filamento): As lâmpadas minimalistas no escuro
+               representam o próprio nome Catalisa — a faísca, o motor invisível que ilumina e dá
+               vida às soluções complexas.
+
+             • Espaço Negativo & Contraste Radical: O avião branco rasgando o amarelo e o
+               garfo em fundo amarelo sólido mostram como usar cores puras e vibrantes para
+               guiar o olho sem poluição visual.
+
+          2. Sistema Visual (Design System Bauhaus-Contemporâneo)
+
+
+
+1 of 12                                                                                           10/15/26, 09:12
+Firefox                                                                                            about:blank
+
+
+
+          A. Paleta de Cores (Cores Primárias Puras + Neutros Arquiteturais)
+
+          Em vez de gradientes genéricos de SaaS (roxo/azul), usamos blocos de cores sólidas,
+          industriais e vibrantes combinados com fundos de altíssimo contraste:
+
+             • Fundo Base (Light Mode Arquitetural): #F4F3EF (Oﬀ-white papel/concreto,
+               inspirado no fundo do cubo vermelho e no corte branco) e #FFFFFF puro.
+
+             • Fundo Base (Dark Mode "Filamento"): #0E0F12 (Preto fosco profundo para seções
+               de engenharia/core, inspirado nas lâmpadas).
+
+             • Cores Catalisadoras (Acentos Bauhaus):
+
+                  ◦ Vermelho Estrutural: #D92B2B (Inspirado nos blocos de escala).
+
+                  ◦ Amarelo Solar / Cromo: #FFC700 (Inspirado nos fundos de alto contraste).
+
+                  ◦ Azul Ciano / Voxel: #00D2FF ou Azul Cobalto Bauhaus #0047AB.
+
+                  ◦ Verde Ácido / Incisão: #C5E827 (Para detalhes cirúrgicos de interação,
+                    inspirado na letra "J" esculpida).
+
+          B. Tipograﬁa & Grid
+
+             • Grid Exposto: Linhas divisórias ﬁnas (1px solid) visíveis na estrutura da página,
+               remetendo a plantas baixas de arquitetura e infográﬁcos técnicos.
+
+             • Tipograﬁa Principal (Títulos): Geométrica pura com DNA Bauhaus — ex: Futura PT,
+               Space Grotesk, PP Neue Montreal ou Plus Jakarta Sans. Títulos gigantes, alinhados à
+               esquerda, com números de seção grandes (01, 02, 03, 04 em negrito, exatamente
+               como na referência).
+
+             • Tipograﬁa Técnica (Metadados e Subdomínios): Monoespaçada limpa — ex:
+               JetBrains Mono ou IBM Plex Mono — para listar endpoints, módulos e os links
+               *.catalisa.app.
+
+          C. SVGs Ricos & Imagens Táteis
+
+             • SVGs Interativos (Isométricos e Vetoriais): Diagramas vivos que reagem ao cursor.
+               Linhas de conexão ortogonais (ângulos de 90 e 45 graus) que mostram como um
+               módulo de Biometria se conecta ao módulo de Decisão.
+
+             • Renders 3D Minimalistas (Matte & Luz Direcional): Em vez de fotos de banco de
+               imagens ou prints de telas cheios de tabelas, cada conceito da plataforma é
+               representado por um objeto 3D hiper-minimalista com textura fosca (matte clay/
+               plastic) e iluminação de estúdio dramática.
+
+
+
+
+2 of 12                                                                                         10/15/26, 09:12
+Firefox                                                                                            about:blank
+
+
+
+          3. Estrutura da Página (Wireframe Conceitual para catalisa.io)
+
+          O site não terá botões apelativos de "Compre Agora" ou "Veja a Tabela de Preços". Ele deve
+          parecer uma exposição de design e engenharia.
+
+          DOBRA 00: Header Minimalista (Fixo)
+
+             • Esquerda: Logo catalisa.io (construído com formas geométricas simples: círculo,
+               quadrado, incisão).
+
+             • Centro: Indicador de coordenada/seção atual (ex: [ 01 // FUNDAÇÃO ]).
+
+             • Direita: Apenas dois links: Arquitetura | Ecossistema (.app) ↗.
+
+          DOBRA 01: Hero Section — A Incisão / O Motor
+
+             • Visual: Fundo claro (#F4F3EF) ou escuro profundo (#0E0F12). No centro, um
+               elemento 3D/SVG escultural: uma superfície monolítica que se abre (como o corte na
+               folha branca ou a letra esculpida) revelando um ﬁlamento incandescente laranja/
+               amarelo no interior ou camadas geométricas internas.
+
+             • Copywriting:
+
+                  ◦ Headline: A arquitetura invisível por trás de sistemas extraordinários.
+
+                  ◦ Subheadline: Catalisa não é apenas um software. É a fundação modular
+                    projetada para esculpir, escalar e sustentar plataformas críticas.
+
+             • Interação: Ao mover o mouse, a luz muda de ângulo, alterando a sombra projetada
+               da estrutura (efeito neumórﬁco/tátil de alta precisão).
+
+          DOBRA 02: [ 01 // A FUNDAÇÃO ] — Escala e Camadas
+
+          (Inspiração direta: Imagem do monolito vermelho fatiado com numeração 01–04)
+
+             • Layout: No centro da tela, um grande cubo/monolito isométrico em Vermelho
+               Estrutural (#D92B2B) que se divide em 4 camadas horizontais conforme o usuário
+               faz o scroll.
+
+             • Linhas de chamada ortogonais (SVGs) saem de cada fatia do cubo para as laterais
+               da tela:
+
+                  ◦ 01. Core Engine: Processamento distribuído e orquestração de eventos em
+                    tempo real.
+
+                  ◦ 02. Inteligência & Decisão: Motores de regras e modelos preditivos acopláveis.
+
+                  ◦ 03. Identidade & Segurança: Biometria, criptograﬁa e conformidade por
+
+
+3 of 12                                                                                          10/15/26, 09:12
+Firefox                                                                                            about:blank
+
+
+
+                    design.
+
+                  ◦ 04. Interface & Experiência: Camada de abstração pronta para gerar produtos
+                    verticais.
+
+          DOBRA 03: [ 02 // COMPOSIÇÃO MODULAR ] — Feita para Construir
+
+          (Inspiração direta: Imagens de blocos Voxel e Kit Lego embalado)
+
+             • Conceito: Mostrar que a plataforma é uma "caixa de ferramentas de precisão" onde
+               blocos complexos de engenharia já vêm prontos para encaixe.
+
+             • Visual: Um grid estilo "blister/embalagem de colecionador" ou peças geométricas
+               3D (cubos, cilindros, esferas em amarelo, ciano e vermelho).
+
+             • Interatividade (SVG Rico): O usuário pode clicar em 3 ou 4 "peças fundamentais"
+               (ex: [Bloco Auth/Biometria] + [Bloco Workflow] + [Bloco AI Decision]).
+               Ao combiná-las, um diagrama SVG anima o encaixe das peças e mostra como elas
+               dão origem a um produto inteiro em questão de segundos.
+
+          DOBRA 04: [ 03 // O ECOSSISTEMA .APP ] — A Vitrine Arquitetural
+
+          (Inspiração direta: Fundos de cor pura de alto impacto — Amarelo avião, Verde limão,
+          Ciano)
+
+             • Conceito: Aqui apresentamos os produtos comerciais sem transformar o
+               catalisa.io em um catálogo de vendas. Tratamos cada SaaS como uma "Obra
+               Construída" sobre a arquitetura Catalisa.
+
+             • Layout: Cards grandes em formato de pôsteres Bauhaus. Quando o usuário passa o
+               mouse sobre cada card, o fundo da seção assume a cor sólida daquele domínio, com
+               uma ilustração metafórica minimalista:
+
+                  1. med.catalisa.app
+
+                       ▪ Estética: Fundo Branco Puro com uma incisão cirúrgica precisa + detalhe
+                         em Verde ou Vermelho.
+
+                       ▪ Tag: [ SAÚDE & CLÍNICA ]
+
+                  2. juridico.catalisa.app
+
+                       ▪ Estética: Blocos perfeitamente equilibrados e simétricos em fundo Oﬀ-
+                         White.
+
+                       ▪ Tag: [ GOVERNANÇA & LEIS ]
+
+                  3. biometrics.catalisa.app
+
+
+
+
+4 of 12                                                                                          10/15/26, 09:12
+Firefox                                                                                           about:blank
+
+
+
+                       ▪ Estética: Topo gráﬁco / ondas esculpidas em relevo sobre fundo Verde-
+                         Limão ou Ciano.
+
+                       ▪ Tag: [ IDENTIDADE & PRESENÇA ]
+
+                  4. decision.catalisa.app
+
+                       ▪ Estética: O avião branco cortando o amarelo sólido ou o ﬁlamento aceso
+                         no escuro — simbolizando direção clara, corte do ruído e tomada de
+                         decisão.
+
+                       ▪ Tag: [ INTELIGÊNCIA & FLUXO ]
+
+                  5. recrutamento.catalisa.app
+
+                       ▪ Estética: Peças modulares humanas/conectadas em cores primárias.
+
+                       ▪ Tag: [ TALENTO & CULTURA ]
+
+          (Cada card tem apenas o título do subdomínio em fonte monoespaçada, uma frase de deﬁnição
+          arquitetural e uma seta diagonal ↗ que leva para a vitrine comercial daquele produto).
+
+          DOBRA 05: [ 04 // MANIFESTO ] — Menos Ruído. Mais Estrutura.
+
+          (Inspiração direta: O garfo desembaraçando o caos em uma esfera perfeita no fundo
+          amarelo e a lâmpada tubular)
+
+             • Visual: Uma seção dividida ao meio (50% Amarelo Cromo, 50% Preto Fosco).
+
+             • Conceito Visual: A ideia de transformar a complexidade emaranhada do
+               desenvolvimento de software (como os ﬁos de espaguete perfeitamente enrolados
+               em uma forma geométrica limpa) em uma linha única e incandescente de execução.
+
+             • Texto Manifesto: Uma declaração curta sobre por que a Catalisa existe: eliminar a
+               reconstrução constante de infraestrutura para que empresas possam focar apenas
+               na regra de negócio.
+
+          4. Diretrizes Técnicas para Execução (Front-end & Motion)
+
+          Para que essa estética Bauhaus-Minimalista funcione como referência de marca no ar:
+
+            1. SVGs com Física e Path Drawing: Usar GSAP (ScrollTrigger) ou Framer Motion para
+               que as linhas técnicas (como as do infográﬁco vermelho) sejam "desenhadas" na tela
+               conforme a rolagem.
+
+            2. Iluminação Dinâmica em CSS/WebGL: Nos divisores de seção, usar sombras
+               internas (inset box-shadow) ou shaders leves em Three.js para simular o corte no
+               papel que reage à posição do scroll.
+
+
+
+5 of 12                                                                                       10/15/26, 09:12
+Firefox                                                                                            about:blank
+
+
+
+             3. Transições de Página "Corte Seco" (Wipe): Ao clicar em um elemento ou mudar de
+                seção, uma cortina geométrica de cor sólida (Amarelo, Vermelho ou Azul) atravessa a
+                tela rapidamente (inspirado no rastro geométrico branco do avião).
+
+          Próximos Passos Sugeridos
+
+          Se você gostar dessa direção, podemos avançar agora mesmo para uma destas frentes:
+
+             1. Gerar Mockups Visuais / Key Visuals: Posso gerar imagens conceituais da Hero
+                Section e dos Cards do Ecossistema seguindo exatamente essa estética Bauhaus +
+                3D Tátil.
+
+             2. Escrever o Copywriting Completo + Código Base (HTML/Tailwind/SVG): Posso
+                estruturar o código de uma primeira versão interativa dessa Landing Page com o
+                grid Bauhaus, tipograﬁa, paleta de cores e SVGs animados prontos para você testar
+                no navegador.
+
+          Qual caminho prefere seguir primeiro?
+
+
+
+
+          User prompt: mais inspiracoes para complementar sua analise e leve em consideracao o press-
+          kit da catalisa tb para referencias de cores primarias e secundarias, etc... logo
+
+          Response: Com estas 8 novas referências somadas ao posicionamento da Catalisa.
+          (Composable Architecture, Event Backbone, 60+ Building Blocks, Agent Systems), a direção
+          visual ganha uma precisão cirúrgica: saímos do Bauhaus puramente acadêmico e
+          entramos no Swiss-Grid Industrial & Bauhaus Técnico (muito alinhado à escola de Dieter
+          Rams / Teenage Engineering / International Typographic Style).
+
+          1. Decodiﬁcação das Novas Inspirações + DNA Catalisa
+
+             1. "Noise Becomes Signal" (A Narrativa Central da Plataforma):
+
+                  ◦ A imagem das 5 colunas mostrando o ruído caótico se transformando em uma
+                    onda senoidal limpa atravessada por um círculo vermelho/laranja é a tradução
+                    visual perfeita da Catalisa.
+
+                  ◦ O Caos (Colunas 01–02): O desenvolvimento tradicional, sistemas legados
+                    emaranhados, integrações quebradas e meses de espera.
+
+                  ◦ O Catalisador (Colunas 03–04): A camada de Event Backbone, AI Agents e Building
+                    Blocks ﬁltrando e estruturando os padrões.
+
+                  ◦ O Sinal Puro (Coluna 05): Os produtos verticais prontos e escaláveis
+                    (med.catalisa.app, juridico.catalisa.app, decision.catalisa.app,
+                    biometrics.catalisa.app).
+
+
+
+6 of 12                                                                                          10/15/26, 09:12
+Firefox                                                                                             about:blank
+
+
+
+             2. Estética Industrial de Precisão (Estilo Teenage Engineering / Fitas VHS):
+
+                  ◦ O hardware TP-7 com uma faixa laranja translúcida por cima e metadados
+                    tipográﬁcos nos cantos traz a ideia de que a Catalisa é uma máquina de
+                    engenharia de altíssima precisão.
+
+                  ◦ As capas de VHS mostram como tratar Building Blocks como "Cartuchos /
+                    Módulos Físicos" com códigos técnicos (E-180, SXG/High, K4-E240 → na
+                    Catalisa viram BB-IAM-01, BB-DECISION-04, BB-BIO-09).
+
+                  ◦ O layout mobile "S1/S2 Modular Agent Systems" entrega exatamente como
+                    devemos desenhar as especiﬁcações técnicas: fundo Laranja Catalisador de
+                    altíssimo impacto alternando com Oﬀ-White Técnico, acompanhado de SVGs
+                    em wireframe explodido (CAD/Isométrico).
+
+             3. O "Cubo Catalisador" & SVGs Facetados:
+
+                  ◦ Na ﬁla de cubos brancos onde um cubo laranja gira e quebra o padrão ("Stick
+                    Out"), temos a representação visual do Building Block ativo dentro da
+                    arquitetura.
+
+                  ◦ O pôster do Negroni mostra como fugir do vetor chapado sem graça: SVGs
+                    construídos com planos geométricos de luz, refração e sombras angulares
+                    duras, criando ilustrações ricas e artísticas com peso de pôster modernista.
+
+             4. Grid Construtivo Exposto & Tipograﬁa de Dados:
+
+                  ◦ O uso de linhas de construção visíveis (horizontais, verticais e diagonais de 45°),
+                    sinais de + nas interseções e blocos de cor que "vazam" a estrutura.
+
+                  ◦ Tabelas estilo painel de aviação/engenharia com fonte monoespaçada (Crato
+                    Mono), setas de ﬂuxo (ORIGEM > DESTINO) e etiquetas tarjadas em laranja para
+                    métricas de tempo e performance.
+
+          2. Identidade Visual & Press-Kit Integrado (catalisa.io)
+
+          (Nota: Busquei no seu Google Drive pelos arquivos da Catalisa — encontrei os decks executivos
+          e de Building Blocks com a assinatura "Catalisa.", mas não havia um arquivo PDF/ZIP
+          especíﬁco nomeado como "press-kit" com os hexadecimais fechados. Abaixo, consolidei o
+          sistema cromático unindo a assinatura "Catalisa." aos tons exatos que dominam todas as suas
+          referências — se houver algum HEX especíﬁco do press-kit que queira substituir, basta me
+          indicar!)
+
+
+           Papel no         Cor / Nome            Hexadecimal       Referência Direta nas
+           Sistema          Arquitetural          Sugerido          Inspirações
+
+
+
+
+7 of 12                                                                                           10/15/26, 09:12
+Firefox                                                                                              about:blank
+
+
+
+
+           Papel no        Cor / Nome            Hexadecimal        Referência Direta nas
+           Sistema         Arquitetural          Sugerido           Inspirações
+
+                                                                    Cubo em destaque, Mobile S1
+                           Laranja
+           Primária                              #FF4800 /          Agent Systems, Faixa acrílica
+                           Catalisador
+           (Brand Core)                          #FF5500            TP-7, Círculo Signal, Tabelas
+                           (Signal Orange)
+                                                                    Crato Mono.
+
+                                                                    Tipograﬁa pesada e ﬁtas VHS,
+           Primária        Preto Carbono
+                                                 #0D0D0D            Fundo das lâmpadas, Barras de
+           (Estrutura)     (Obsidian Ink)
+                                                                    seção mobile.
+
+                                                                    Fundo de Noise Becomes Signal,
+           Superfície      Papel Técnico         #F2F0EB /
+                                                                    Hardware TP-7, Crato Mono e
+           Base            (Swiss Oﬀ-White)      #EAEAE6
+                                                                    Infográﬁco Vermelho.
+
+                           Amarelo                                  Grid geométrico Event Promo,
+           Secundária
+                           Construtivo           #FFD000            Avião no espaço negativo,
+           01
+                           (Bauhaus Yellow)                         Espaguete/Caos controlado.
+
+                           Vermelho
+           Secundária                                               Camadas de escalabilidade,
+                           Monolito              #D92323
+           02                                                       Sombras densas do SVG Negroni.
+                           (Structural Red)
+
+                           Ciano / Verde                            Identiﬁcadores de verticais
+           Secundária                            #00D2FF &
+                           Ácido (Accent                            especíﬁcas no ecossistema
+           03                                    #C5E827
+                           Modules)                                 .app.
+
+
+          Assinatura da Marca & Tipograﬁa
+
+             • Logo: Catalisa. (Com o ponto ﬁnal geométrico funcionando como âncora visual —
+               podendo assumir a forma de um quadrado ou círculo no Laranja Catalisador
+               #FF4800, exatamente como o ponto ﬁnal de "SIGNAL.").
+
+             • Display / Títulos: Sans-serif grotesca suíça de alto impacto (Inter Tight, Helvetica Now
+               Display ou Space Grotesk) com números gigantes nos cabeçalhos (19 — 26, 240, 01–
+               05).
+
+             • Dados / Engenharia: Monoespaçada com personalidade industrial (Crato Mono,
+               JetBrains Mono ou Space Mono) para códigos de Building Blocks, coordenadas de grid
+               e rotas de subdomínios.
+
+          3. Arquitetura Completa da Experiência (catalisa.io)
+
+          O site será estruturado sobre um Grid Suíço Visível (com linhas de 1px, marcadores + nas
+
+
+
+8 of 12                                                                                           10/15/26, 09:12
+Firefox                                                                                       about:blank
+
+
+
+          interseções e metadados técnicos nos cantos da tela).
+
+          DOBRA 01: Hero Section — Engenharia de Precisão & Modular Agent Systems
+
+          (Fusão das referências: Layout TP-7 + Wireframe Explodido S1/S2 + Cubo Laranja)
+
+             • Topo da Tela (Tipograﬁa Arquitetural):
+
+                  ◦ Nas extremidades superiores, números ou palavras-chave monumentais
+                    separados por uma barra sólida preta: CORE ——————— ENGINE
+                    (acompanhados de micro-textos técnicos em monoespaçada: COMPOSABLE
+                    ARCHITECTURE // REV 2026 // 60+ BUILDING BLOCKS).
+
+             • Centro Visual (A "Máquina" Catalisa):
+
+                  ◦ No centro de um fundo Oﬀ-White Técnico (#EAEAE6), uma ilustração SVG/3D
+                    isométrica explodida em altíssima precisão (estilo o hardware desmontado
+                    em camadas da referência mobile ou os cubos modulares).
+
+                  ◦ Atravessando o centro dessa estrutura, um bloco retangular translúcido em
+                    Laranja Catalisador (#FF4800) que funciona como uma "lente de raio-X": onde
+                    o bloco laranja passa por cima do desenho técnico, o wireframe ganha vida,
+                    mostrando os ﬂuxos de dados e agentes operando por dentro.
+
+             • Posicionamento (Copy):
+
+                  ◦ Headline: S1. Arquitetura Componível & Sistemas de Agentes.
+
+                  ◦ Subheadline: A fundação projetada para transformar complexidade
+                    operacional em infraestrutura pura. Não vendemos apenas software;
+                    fornecemos os blocos fundamentais para esculpir plataformas inteiras.
+
+          DOBRA 02: A Tese Arquitetural — "Noise Becomes Signal"
+
+          (Inspiração direta: O painel de 5 colunas "Noise Becomes Signal")
+
+             • Layout: A tela é dividida verticalmente em 5 colunas numeradas (01 a 05)
+               separadas por linhas ﬁnas. Conforme o usuário rola a página (ou passa o mouse da
+               esquerda para a direita), um SVG generativo de partículas e ondas atravessa as 5
+               colunas:
+
+                  ◦ 01 // RAW INPUT (Caos Legado): Milhares de pontos dispersos e ruído visual.
+                    Texto: "No início, tudo é ruído. Sistemas fragmentados, integrações lentas e
+                    meses de engenharia repetitiva."
+
+                  ◦ 02 // HIDDEN PATTERNS (Abstração): Os pontos começam a se alinhar em
+                    eixos ortogonais. Texto: "Padrões ocultos emergem quando você separa o Core
+                    das capacidades reutilizáveis."
+
+
+9 of 12                                                                                     10/15/26, 09:12
+Firefox                                                                                             about:blank
+
+
+
+                   ◦ 03 // STRUCTURE FORMS (Building Blocks): O pulso se organiza em blocos
+                     modulares rítmicos. Texto: "Mais de 60 Building Blocks prontos para encaixe:
+                     IAM, Biometria, Motores de Cálculo, Eventos e IA."
+
+                   ◦ 04 // CATALYSIS (O Motor): A onda atravessa um Círculo Sólido Laranja/
+                     Vermelho (#FF4800). Texto: "A estrutura cria signiﬁcado. Orquestração No-Code
+                     e Agentes Autônomos entram em ignição."
+
+                   ◦ 05 // PURE SIGNAL. (O Produto Final): Sai uma linha senoidal perfeita,
+                     limpa e contínua, com métricas no rodapé: CLARITY: 100% | TIME-TO-
+                     MARKET: WEEKS | OUTPUT: SAAS.
+
+           DOBRA 03: Anatomia dos Building Blocks — Catálogo Industrial (Estilo VHS / Blueprint)
+
+           (Fusão das referências: Capas de ﬁta VHS + Diagramas Explodidos Mobile + Grid Amarelo)
+
+              • Conceito: Em vez de uma lista comum de "Features", os Building Blocks da Catalisa
+                são apresentados como Módulos de Engenharia Padronizados (com o peso gráﬁco
+                dos cartuchos VHS da referência).
+
+              • Visual dos Cards: Blocos retangulares em Preto Carbono, Laranja Catalisador e
+                Cinza Técnico, com tipograﬁa gigante cortada, faixas diagonais, matrizes de pontos
+                e ilustrações vetoriais facetadas (estilo o contraste de sombras do pôster Negroni):
+
+                   ◦ Módulo BB-01 // EVENT BACKBONE (Gráﬁco de linhas diagonais de alta
+                     velocidade).
+
+                   ◦ Módulo BB-02 // AI AGENT ORCHESTRATOR (Ilustração isométrica em linha
+                     ﬁna estilo o drone/placa mãe).
+
+                   ◦ Módulo BB-03 // DECISION & RULES ENGINE (Matriz de pontos
+                     geométricos vermelhos/laranjas).
+
+                   ◦ Módulo BB-04 // BIOMETRICS & ZERO-TRUST IAM (Círculos concêntricos
+                     Bauhaus em alto contraste).
+
+           DOBRA 04: Telemetria de Construção — Da Ideia ao Deploy
+
+           (Inspiração direta: Tipograﬁa e Tabela "Crato Mono")
+
+              • Visual: Uma seção limpa com estética de "painel de controle / bilhete técnico".
+                Mostra a diferença brutal de tempo de construção usando a arquitetura Catalisa
+                versus engenharia tradicional (dados reais dos seus decks: de 720 dias para semanas
+                ou horas):
+
+              • Tabela Estilizada (Fonte Monoespaçada + Tarjas Laranjas):
+
+                   ◦ LEGACY ARCHITECTURE > PRODUCTION DEPLOY — [ 24.00.00 MESES ]
+
+
+10 of 12                                                                                        10/15/26, 09:12
+Firefox                                                                                                about:blank
+
+
+
+                     (Tarja Cinza)
+
+                   ◦ CATALISA COMPOSABLE > PRODUCTION DEPLOY — [ 00.03.00 SEMANAS ]
+                     (Tarja Laranja #FF4800)
+
+                   ◦ LOW-CODE + AI AGENTS > PROOF OF CONCEPT — [ 00.00.29 HORAS ]
+                     (Tarja Laranja #FF4800)
+
+           DOBRA 05: O Ecossistema de Vitrines (.catalisa.app) — As Obras Construídas
+
+           (Fusão das referências: Lista inferior do Mobile S1 + Pôsteres Bauhaus)
+
+              • Conceito: Aqui deixamos explícito para o visitante: "Quer ver o que esta arquitetura
+                constrói na prática? Visite nossas plataformas verticais em operação."
+
+              • Layout: Uma tabela interativa de largura total inspirada no rodapé do protótipo
+                mobile laranja, combinada com um preview visual lateral rico (SVGs facetados estilo
+                pôster ou renders táteis minimalistas):
+
+
+            Vertical /           Arquitetura Acionada
+                                                                Endpoint Direto
+            Domínio              (Building Blocks)
+
+            [01] SAÚDE &         IAM + AI Triage +
+                                                                med.catalisa.app [EXPLORE ↗]
+            CLÍNICA              Workflows + Compliance
+
+            [02] JURÍDICO        Document Engine + Audit        juridico.catalisa.app
+            & GOV                Trail + AI Agents              [EXPLORE ↗]
+
+            [03]
+                                 Facial/Voice Match +           biometrics.catalisa.app
+            IDENTIDADE
+            DIGITAL              Anti-Fraud + Zero-Trust        [EXPLORE ↗]
+
+            [04] CRÉDITO &       Calculations Engine +          decision.catalisa.app
+            DECISÃO              Risk Matrix + Events           [EXPLORE ↗]
+
+            [05] TALENTO &       Matching Engine +              recrutamento.catalisa.app
+            RH                   Omnichannel WhatsApp           [EXPLORE ↗]
+
+
+           (Ao passar o mouse sobre cada linha da tabela, um painel gráﬁco ao lado muda
+           instantaneamente para o pôster geométrico exclusivo daquela vertical).
+
+           4. Como Transformamos Isso em Realidade Agora?
+
+           Com esse direcionamento fechado, temos tudo para criar uma peça digna de destaque no
+           Awwwards ou SiteInspire. Como você prefere dar o próximo passo?
+
+              1. Prototipação em Código (HTML/Tailwind + SVGs Ricos): Posso escrever agora
+
+
+
+11 of 12                                                                                          10/15/26, 09:12
+Firefox                                                                                            about:blank
+
+
+
+             mesmo o código de uma primeira versão funcional e responsiva do catalisa.io
+             contendo o Grid Suíço exposto, a seção "Noise Becomes Signal" em SVG, os
+             Cartuchos de Building Blocks estilo VHS/Bauhaus e a Tabela de Telemetria/
+             Ecossistema .app.
+
+           2. Geração de Key Visuals / Ilustrações (SVGs & Renders): Posso gerar as artes
+              conceituais para você visualizar a Hero Section (Estilo TP-7 / S1 Modular) e os
+              pôsteres das verticais.
+
+           3. Ajuste Fino do Press-Kit: Se você quiser anexar aqui o arquivo do logo oﬁcial da
+              Catalisa ou conﬁrmar os códigos HEX exatos do seu press-kit atual, eu já aplico
+              milimetricamente no protótipo.
+
+
+
+
+12 of 12                                                                                         10/15/26, 09:12
+

@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-25T06:34:45.346Z",
+  "passed": true,
+  "scope": "Final source tests for direct contact and immutable confirmed handoff. Node API units and a controlled HTTP-contract client unit; this does not claim a real BFF inside JSDOM.",
+  "fullRegression": {
+    "command": "npx vitest run --maxWorkers=1",
+    "passed": 231,
+    "files": 20,
+    "durationSeconds": 17.91,
+    "exitCode": 0
+  },
+  "typecheck": {
+    "command": "npx tsc -b --noEmit",
+    "scope": "Application and Node references",
+    "exitCode": 0
+  },
+  "verified": [
+    "Direct visitor choice is recorded literally; missing briefing fields are explicit system defaults, preserving already supplied answers.",
+    "Name and either email or phone are required before the confirmed handoff.",
+    "Client skips the three-question and generation steps; reload resumes the direct step with unchecked confirmation.",
+    "Node API direct tests invoke no generator; client tests issue no concept request.",
+    "Immutable handoff descriptor remains version one after a separate version two is generated.",
+    "Existing bootstrap/StrictMode restoration tests pass without a duplicated initial GET."
+  ],
+  "realBrowserVerification": "Passed on exact20261025-r2 HTTPS staging; ../contact-direct-real-staging/verification.json, zero AI/jobs, real owner inbox, fresh confirmation, reload, cleanup and320/390/768/1440 screenshots.",
+  "sourceSha256": {
+    "server/site/api.ts": "b656d9368f4a4a93b41075bfb3f0b5a529b1092791e0227be6212dbaeb1b9754",
+    "server/site/types.ts": "a9755bbf52fa840b2f1db14b2cf6dc4181c6da8da192009727682ecd70adf8ae",
+    "server/site/contact-operations.ts": "ff2672d77378cce9df272ed01d7109a8a90596477c5ac3bd2fabbacbd12bac6c",
+    "src/redesign/Contact.tsx": "1f0d3b1cf01f56b84cfde9594b9f69fbfec5b3c07d0a405d846a12e8a82d690f",
+    "src/redesign/ContactContinuation.tsx": "62653388f0e025b5ed27343f0c02cd54f7f8614d4c4635b0b78cf2316ddd9153",
+    "src/redesign/site-client.ts": "45a5b33eac8b12058ff836f4847ea75716bea27bf378444525d6014fe39e03bb",
+    "server/site/api.test.ts": "83c0a4be1eec7a9f6ee2a10ce67d390d85b4db2971623b4e8a50075ae4871c5a",
+    "server/site/contact-operations.test.ts": "5f75cf18707666365d8da520bd48b61563b0f5b3ddbd9bff03e2376c17d19453",
+    "src/redesign/Contact.direct.test.tsx": "aadc66e917812b028ae9206539adadb6f07d49a601b4090b2fd4b956d0c094f9",
+    "src/redesign/Contact.bootstrap.test.tsx": "dfab196388c4e764b246bd5dc47d0e6145639c6e7e7df38e6d081da452a734f9"
+  },
+  "productionDeploy": false
+}

@@ -1,0 +1,136 @@
+{
+  "summary": {
+    "prs": 2978,
+    "mergedPrs": 2856,
+    "integratedPrs": 2840,
+    "mergedOtherBranchPrs": [
+      "wpp#97",
+      "bb#102",
+      "wpp#292",
+      "wpp#293",
+      "wpp#294",
+      "wpp#295",
+      "wpp#296",
+      "wpp#297",
+      "wpp#298",
+      "wpp#299",
+      "wpp#300",
+      "wpp#301",
+      "wpp#302",
+      "wpp#585",
+      "developy#149",
+      "wpp#1697"
+    ],
+    "openPrs": 75,
+    "closedPrs": 47,
+    "commits": 9909,
+    "integratedCommits": 7502,
+    "docsCurrent": 1328,
+    "docsHistorical": 285,
+    "files": 12859,
+    "testFiles": 2710,
+    "modules": 159,
+    "redactions": {
+      "tokens": 11,
+      "assignments": 19,
+      "clientNames": 1138
+    }
+  },
+  "repositories": [
+    {
+      "repo": "catalisaio/wpp.bb.catalisa.io",
+      "defaultBranch": "master",
+      "sha": "54e6fb44fc8ff87256b412b3fcf5f8c95ca76622",
+      "head": "2026-10-20T17:41:05-03:00 Merge pull request #2007 from catalisaio/feat/crm-guided-composition-20261020",
+      "firstCommit": "2025-11-10T12:45:39-03:00 first functional",
+      "shallow": "false",
+      "collectedAt": "2026-10-20T20:54:17.124582+00:00",
+      "windowStart": "2024-10-20T03:00:00+00:00",
+      "windowEndExclusive": "2026-10-21T03:00:00+00:00",
+      "commits": 6842,
+      "integratedCommits": 5302,
+      "files": 7709,
+      "docs": 879,
+      "key": "wpp",
+      "testFiles": 1367
+    },
+    {
+      "repo": "catalisaio/building-blocks-v2",
+      "defaultBranch": "main",
+      "sha": "027709dc971c63ded425f5bda8374a6e0e52b7db",
+      "head": "2026-10-19T14:52:00-03:00 feat(wpp-business): concessão de template de autenticação a outra organização (OTP compartilhado) (#646)",
+      "firstCommit": "2025-11-25T01:37:46-03:00 iam",
+      "shallow": "false",
+      "collectedAt": "2026-10-20T20:54:18.114903+00:00",
+      "windowStart": "2024-10-20T03:00:00+00:00",
+      "windowEndExclusive": "2026-10-21T03:00:00+00:00",
+      "commits": 2164,
+      "integratedCommits": 1667,
+      "files": 3404,
+      "docs": 364,
+      "key": "bb",
+      "testFiles": 1009
+    },
+    {
+      "repo": "klederson/proxmox-manager",
+      "defaultBranch": "main",
+      "sha": "7b951155dff5c2dc02aaad4faf7959f3b49b2e5f",
+      "head": "2026-10-20T15:18:31-03:00 Merge pull request #347 from klederson/fix/launch-panel-sse-affinity",
+      "firstCommit": "2026-03-03T16:30:24-03:00 Add .worktrees/ to gitignore",
+      "shallow": "false",
+      "collectedAt": "2026-10-20T20:54:18.412408+00:00",
+      "windowStart": "2024-10-20T03:00:00+00:00",
+      "windowEndExclusive": "2026-10-21T03:00:00+00:00",
+      "commits": 903,
+      "integratedCommits": 533,
+      "files": 1746,
+      "docs": 85,
+      "key": "developy",
+      "testFiles": 334
+    }
+  ],
+  "countsByRepo": {
+    "wpp": {
+      "states": {
+        "MERGED": 1920,
+        "CLOSED": 33,
+        "OPEN": 53
+      },
+      "integration": {
+        "Integrado à principal": 1906,
+        "Fechado sem merge": 33,
+        "Mesclado em outro ramo": 14,
+        "Aberto": 53
+      },
+      "knownMergeDiff": 1919
+    },
+    "bb": {
+      "states": {
+        "MERGED": 607,
+        "CLOSED": 13,
+        "OPEN": 17
+      },
+      "integration": {
+        "Integrado à principal": 606,
+        "Fechado sem merge": 13,
+        "Aberto": 17,
+        "Mesclado em outro ramo": 1
+      },
+      "knownMergeDiff": 607
+    },
+    "developy": {
+      "states": {
+        "MERGED": 329,
+        "CLOSED": 1,
+        "OPEN": 5
+      },
+      "integration": {
+        "Integrado à principal": 328,
+        "Mesclado em outro ramo": 1,
+        "Fechado sem merge": 1,
+        "Aberto": 5
+      },
+      "knownMergeDiff": 329
+    }
+  }
+}

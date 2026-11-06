@@ -1,0 +1,133 @@
+{
+  "generatedAt": "2026-10-23T00:18:03.663692+00:00",
+  "scope": "Local SEO foundation and regression checks; no staging/production deployment, indexing or ranking claim",
+  "prototypeRoutes": {
+    "initialNativeImplementation": 44,
+    "pending": 25,
+    "total": 69,
+    "additionalWorkGuide": 1
+  },
+  "build": {
+    "command": "SITE_DIST_DIR=/tmp/catalisa-seo-validated PUPPETEER_EXECUTABLE_PATH=/usr/bin/google-chrome npm run build -- --outDir /tmp/catalisa-seo-validated",
+    "exitCode": 0,
+    "prerenderedPagesIncluding404": 241,
+    "publicLegacyUrls": 195,
+    "nativeNoindexUrlsIncludingGuide": 45,
+    "staticAuditFailures": [],
+    "staticAuditWarnings": []
+  },
+  "unitTests": {
+    "passed": 125,
+    "failed": 0
+  },
+  "browser": {
+    "checks": 14,
+    "errors": [],
+    "noJsEditorialAnimationsReadable": true
+  },
+  "nativeRegression": {
+    "layoutMeasurements": 168,
+    "errors": []
+  },
+  "contrast": {
+    "measurements": 90,
+    "scope": "Computed solid-background HTML text on the native styleguide, Home, catalog, 39 details, Visão, Arquitetura and Desenvolvedores at 390/1440px. Ignores SVG, imagery/gradient contrast, hidden content and pseudo-elements; not a complete WCAG audit."
+  },
+  "hostingModeChecks": [
+    "Preview artifact has global noindex",
+    "Production artifact generation clears a stale preview header; local only"
+  ],
+  "referenceValidator": {
+    "routes": 69,
+    "errors": []
+  },
+  "deployment": {
+    "staging": false,
+    "production": false,
+    "panelOrBlocksChanged": false,
+    "productionRequires": "Validated staging, notice and explicit user authorization"
+  },
+  "releaseReady": false,
+  "remaining": [
+    "25 prototype routes",
+    "Real assistant/contact/lead/channel integrations",
+    "Full source and claims review",
+    "Staging/CDN/redirect validation",
+    "Selective indexing release and search measurement",
+    "Mobile performance and remaining accessibility checks"
+  ],
+  "existingDistIndexStillAbsent": true,
+  "sourceHashes": {
+    "AGENTS.md": "c6ddbd90ef2b66ceea1ab0cdeeb9d2efaa30c4dd9f0c93a211ad352bf882118c",
+    "CLAUDE.md": "f5d89ff433e828628d0624069edc36766bf958388179610af16ee4148acebd3e",
+    "index.html": "7e2ee309b0a0a1acd24b2926f378fc3db88e324ed6a1b00322ef2c1fa56a1e81",
+    "netlify.toml": "8cfb42863b254588307a1e4210ad0dbf81362234873b992ecb469223be889ec4",
+    "package-lock.json": "569a5c3ca58759815a38095c19ba4ae1ae91a73f2c22e51cb0c461c34c7c51c2",
+    "package.json": "4682706f6296c4feacc4fb4769eb704f3954738e4ba6298b0f06919f4f10240e",
+    "public/robots.txt": "998ea5512105e135613182cfed2e4265675a6310c02014633997875974c2d5f2",
+    "scripts/generate-brand-zip.sh": "40acfd78c680ed5afafda0be3997c707285bf200d4c3f5dc0b4766a867846f24",
+    "scripts/generate-hosting.ts": "f0745ca5e1fe46012ff8d1cc0d3262b9da11b6c9aec1bb8cbb273237a027e47b",
+    "scripts/generate-og-images.ts": "7a5e0938e2f1e0f0e20128caf87b7bfc7ec5672a8ae8bd2a5642175a4c3da5d3",
+    "scripts/generate-redesign-og.ts": "81f48e0e8a47c418be7097afa5a573d66a6f086be67c0f3a53bbcc4037e5c7c7",
+    "scripts/generate-sitemap.ts": "9b0290698d43c26ca5dd425262b3d91bea449ae6ba0b9b85a3640def6fa78d09",
+    "scripts/inject-seo-meta.ts": "53c52221b71f60134c13df6be2d2bde407260682325cc7d3f0c550eb2d91d695",
+    "scripts/prerender.ts": "b7376964a3b5f050cccaf86470a0cdf61a981bf5ac7ba1aece8f50705bac4d09",
+    "scripts/verify-redesign.mjs": "ddedf4bbfcfce6499f1fa5e0812256aa21b4bfec7e0683674c542c7cde8556a0",
+    "scripts/verify-seo-browser.mjs": "ece0940d82d7ece7b4a258f5fdce84ce2de8096f689bee0a1a9a567a1d1878e8",
+    "scripts/verify-seo.ts": "0b2eaa84e07a5c99af5ce9a1ef1b1c200339d157c89f8318dca570d9c3e1e5ba",
+    "src/App.tsx": "7e9ecf9570b116926050a2b85691bf1b7f13d7c7936b39a63851ee9f5fc757f3",
+    "src/components/layout/LanguageLayout.tsx": "9f5c137831ab207b39e8af7b9828761b99e5a7b9d8645a396da8c89f9e9d373b",
+    "src/i18n/critical-namespaces.ts": "a25e9fd8bc2c46c70a61fadd9ba20ba437021700c2d50a6759018e25ab315f28",
+    "src/i18n/locales/en-US/seo.json": "37bd2adead8fc879d855eaa00f902487e286564672800a6f3a503d5743194f87",
+    "src/i18n/locales/pt-BR/seo.json": "795330ad730fc39bc8b04e17ac64a0da55f383c5ba67b4859e83ee33bbebc57c",
+    "src/i18n/useAlternatePath.ts": "403a2f5c9360b28101dfdf3530bf663c360abde18a46b5dbcd1183c57691410e",
+    "src/i18n/useLocalizedPath.ts": "86768b7ca52eb59ef059be3d35d60bf26ccc2b8a2c436bd9322aead41f39de7e",
+    "src/main.tsx": "30c0685dc79816d276a268f5cecd5c56eb5a4718bc45f2b9b9c60b9184ee8304",
+    "src/pages/Determinismo.tsx": "b85d036ce519b93e4c7490153be2bad267c67b71b4225d83b753be7745ecd207",
+    "src/pages/InsightArticle.tsx": "9b762d3617e8396ebcb0f4957001dc4fef813758a180e0a2d5c27ced73ea2fc2",
+    "src/redesign/Architecture.tsx": "36a2e605db269f06341fbc5a2e81587f8cae97ee0654ac1b076457be9db520b1",
+    "src/redesign/Capabilities.tsx": "a1f69d9a16ae13920eb23e2d5f3ce6b6e90df307c4a2af860b1f61067a9fd085",
+    "src/redesign/CatalogArt.tsx": "479395edf7a4a8584d4933a3a3c8c6de602c9efafd173f6f9ce2321bba814f5a",
+    "src/redesign/DeveloperArt.tsx": "c27f9583e1858b84ca2077608c4b0cc6e2032c78050aab5ac78c788240a53500",
+    "src/redesign/Developers.tsx": "64ccbae8380cdf8b2e8fd9c1df1a657610847fd3e5f8eb4720aec3a30107aca0",
+    "src/redesign/FoundationArt.tsx": "66c574d7d75851a8f6c1a8c14b55bb8ef304aac0aa4fd4e09a27e70371a92064",
+    "src/redesign/Home.tsx": "b41cb3d815e776f1c71d56622ebc822097a3224fcd6cc4bf7ca85ac349df3ee9",
+    "src/redesign/PreviewMeta.tsx": "42b228fa34b1ef8a44abff89d8bf6783d880155fb33c48479b321e57a202c228",
+    "src/redesign/Styleguide.tsx": "9aab47c852316ebcb00d783d1a5603d93dbf9d75276a8ff0639bf1f9ebec7f70",
+    "src/redesign/Vision.tsx": "89415bced2091ec4badd7f26f1dc496724cb56d40469b995b59bca6e4a35ce63",
+    "src/redesign/architecture-reference.css": "5dc9dfdc325ac9056b1ee95bec8ae2dd08efb0e9946f3177798ba698aa4ddaae",
+    "src/redesign/base.css": "fad391fc085fe25e9adb9059c531ba35bb1ca2c621f5d6a5bd19ff016be3de81",
+    "src/redesign/capabilities.css": "fca443e5390b3ac4bb8adc80f35e4ea6bcc2637b6adbe48081563a15d6b55241",
+    "src/redesign/catalog-reference.css": "fb043a91f8c824a034da07505419126cb98638528e576c4cf826989a6542eb16",
+    "src/redesign/components.tsx": "98b89bdd9e401bcc1853d9c58dd4e7897e2d90b5d685404560b2c8cc6aa590c7",
+    "src/redesign/data/architecture.json": "99fbc82ac5ad0dd828502b5ed879c51d48b263a0ad507809fbf9771c98a73eed",
+    "src/redesign/data/catalog.json": "3b5e240e904640340412bf7507380fdc4b82bce196d45c214f463e85bbcc8185",
+    "src/redesign/data/developers.json": "be10fb958a7ae51780616db8fe13827b69a7d83dc65602cdf03c81a0d2c31a6b",
+    "src/redesign/data/platform-answers.ts": "5eb179ad6186579425efa48e197853d86d78b65a9ab7ac3b9261b4d742301b14",
+    "src/redesign/developers-reference.css": "9b86a4828a52ac1d50e3a0d14963fa418ab028693d0034060bdd05379bbe5299",
+    "src/redesign/developers.css": "aaf605546187790ed13e2aa4707e02441e819341f39b9a4c7331bd84f885271b",
+    "src/redesign/foundation-components.tsx": "6d6a8662f5159adcffdd5419b03d92022c9bd823bdf8941d8f200152e5697343",
+    "src/redesign/foundations.css": "4c51a02480851b4d043c876b8c02afeb28a3104dc150e2f8805e0ad8e9b319d5",
+    "src/redesign/home.css": "add34d8248cd10af26a6f31a0d751bc1e1df3bd191806f79b15070270f86f14d",
+    "src/redesign/styleguide.css": "80ef6558620cb1151c16ffebccd5f5950ed94a78f3e26c9b26d6ddbf0f34f1a8",
+    "src/redesign/tokens.css": "ae58587ae3903bdb1332df68819d0589cdfb62bda848acd1c17b310093b5e949",
+    "src/redesign/vision-reference.css": "2b4decc25e5eab647335af1c38cff401305ad899051e865b6d11311f3b68c175",
+    "src/seo/Breadcrumbs.tsx": "cb6189e055561aabf14dff2c379811689c567644fa264a379c2ea75249a3ac4c",
+    "src/seo/JsonLd.tsx": "123058e8671fc609aed4a19ef34fcef4b606620067b20e763ff121ee2f1465bc",
+    "src/seo/README-SEO.md": "e266b78b38e0b586f6828dab24b908b259f7bb88fae063c5a504974e0a24a0b5",
+    "src/seo/SEOHead.tsx": "7055eb212f70a3c6f446cc2bcd63636d56f739c14af9f420d65b6557f0974d7e",
+    "src/seo/__tests__/build-pages.test.ts": "55c0b60e0b09fc379c797550bc91b4d340a125d7d208f756a817701245c68052",
+    "src/seo/build-pages.ts": "8cad45e2cb2ba6ded96684d3c018250ca0a35116583d59e4e7a5cc1f6ed85414",
+    "src/seo/redesign.ts": "30cf6a6178b611f2af4a0d7740000e909b3fdea56dcdaaa1b304a64ab38a4e1f",
+    "src/seo/routes.ts": "a1e25f2e5fe4e550d506f76b2f236a043d0d1058af64a93065f567cdd617301e",
+    "src/seo/schemas/article.ts": "93151cf209f53fe569d3c907e152037bee9d83c15823b931fa8b31643d2fb363",
+    "src/seo/schemas/breadcrumb.ts": "0885d637a1308042e14a864caeb2e43ab9fa7e2c4c0d1c4c772a9fb96d3e36b9",
+    "src/seo/schemas/faq.ts": "6ccf099e85cf1d4c3c49f0139b3fa20360cf702d0174ad27da2cb98b475582b5",
+    "src/seo/schemas/navigation.ts": "11b23625cdcfb1045f5efc835532bca57ddb6c08e63a34f0ff4fe43eede63079",
+    "src/seo/schemas/organization.ts": "40d8cb68ddda4a285276de87c5ec4ca7966835709f60341e7b1f6cebbbb66071",
+    "src/seo/schemas/playbook.ts": "52345503021569e05d31e271a20eb420aacac905b7186382f773e28fdec36545",
+    "src/seo/schemas/software.ts": "608072dead4e3aa75e08adb5fbee794c4f869bc231dd9404ddfd10871250d4f8",
+    "src/seo/schemas/video.ts": "a628ef1cd50855815cab1248cfb9de6bfa9cae8074799cab4f8e913182d6bade",
+    "src/seo/schemas/website.ts": "0875c8535f34c687b5e6b5d0fb65b960d439e294c66bf6fe3d6bd9fb3adbbf06"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "date": "2026-10-25T06:41:23.348Z",
+  "origin": "https://site-staging.catalisa.io",
+  "scope": "Real browser and staging shared store/inbox; direct visitor choice, name, email-only, explicit confirmation, reload. No concept generation or external messaging.",
+  "reloadRequiresFreshConfirmation": true,
+  "systemDefaultsAreNotVisitorAnswers": true,
+  "handoffElapsedMs": 3952,
+  "zeroGenerationRequests": true,
+  "singleHandoffAfterReload": true,
+  "zeroBackendGenerationJobs": true,
+  "actualStagingOwnerVerified": true,
+  "actualInboxPacketVerified": true,
+  "syntheticSessionAndPacketRemoved": true,
+  "passed": true,
+  "stage": "accepted",
+  "requests": [
+    {
+      "path": "/api/site/session",
+      "method": "GET"
+    },
+    {
+      "path": "/api/site/sessions",
+      "method": "POST"
+    },
+    {
+      "path": "/api/site/session",
+      "method": "GET"
+    },
+    {
+      "path": "/api/site/direct/briefing",
+      "method": "POST"
+    },
+    {
+      "path": "/api/site/session",
+      "method": "GET"
+    },
+    {
+      "path": "/api/site/session",
+      "method": "GET"
+    },
+    {
+      "path": "/api/site/identity",
+      "method": "POST"
+    },
+    {
+      "path": "/api/site/session",
+      "method": "GET"
+    },
+    {
+      "path": "/api/site/contact",
+      "method": "POST"
+    },
+    {
+      "path": "/api/site/session",
+      "method": "GET"
+    },
+    {
+      "path": "/api/site/session",
+      "method": "GET"
+    },
+    {
+      "path": "/api/site/session",
+      "method": "GET"
+    },
+    {
+      "path": "/api/site/handoffs",
+      "method": "POST"
+    },
+    {
+      "path": "/api/site/handoffs/handoff_a331b2a3-a4b5-477b-bd62-3a16c7e16509",
+      "method": "GET"
+    },
+    {
+      "path": "/api/site/session",
+      "method": "GET"
+    },
+    {
+      "path": "/api/site/handoffs/handoff_a331b2a3-a4b5-477b-bd62-3a16c7e16509/messages",
+      "method": "GET"
+    },
+    {
+      "path": "/api/site/session",
+      "method": "GET"
+    },
+    {
+      "path": "/api/site/session",
+      "method": "GET"
+    },
+    {
+      "path": "/api/site/handoffs/handoff_a331b2a3-a4b5-477b-bd62-3a16c7e16509/messages",
+      "method": "GET"
+    },
+    {
+      "path": "/api/site/handoffs/handoff_a331b2a3-a4b5-477b-bd62-3a16c7e16509",
+      "method": "GET"
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-25T06:03:46.446Z",
+  "passed": true,
+  "scope": "Real isolated staging rollback and restoration, with a fictional saved conversation and unchanged public production body hash. No production route/config/container changed.",
+  "from": "20261025-prod-review",
+  "rollbackTo": "20261025-contact-node",
+  "productionBodySha256Before": "e446bf5b5f201e8db907a3186f022f07fb902c76c85a134c2904d560a8957735",
+  "rollbackPreservedConversation": true,
+  "restorePreservedConversation": true,
+  "productionBodySha256After": "e446bf5b5f201e8db907a3186f022f07fb902c76c85a134c2904d560a8957735",
+  "publicProductionUnchanged": true,
+  "syntheticSessionRemoved": true
+}

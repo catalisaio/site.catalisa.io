@@ -8,15 +8,14 @@ interface SectionWrapperProps {
   py?: number | string | Record<string, number | string>;
   maxW?: string;
   id?: string;
+  animate?: boolean;
 }
 
-export function SectionWrapper({ children, bg, py = { base: 16, md: 24 }, maxW = '1280px', id }: SectionWrapperProps) {
+export function SectionWrapper({ children, bg, py = { base: 16, md: 24 }, maxW = '1280px', id, animate = true }: SectionWrapperProps) {
   return (
     <Box as="section" bg={bg} id={id}>
       <Container maxW={maxW} py={py}>
-        <MotionBox {...fadeInUp}>
-          {children}
-        </MotionBox>
+        {animate ? <MotionBox {...fadeInUp}>{children}</MotionBox> : children}
       </Container>
     </Box>
   );

@@ -1,0 +1,32 @@
+{
+  "updatedAt": "2026-10-27T22:51:31.153Z",
+  "releaseId": "20261027-hero-clarity",
+  "productionPublished": true,
+  "url": "https://catalisa.io",
+  "authorizationReceived": true,
+  "userMessage": "ta otimo por mim pode subir",
+  "stagingValidated": true,
+  "sameStagingAndProductionArtifact": true,
+  "publicArtifactSha256": "03c0b7324d4e6abbe0f9530af58d86b4ddb0fbf9dea719505e440378b3ad8878",
+  "serverArtifactSha256": "586254469a4310eaf70a5603952bdcedb0c81151ff14e04083027b58f557889f",
+  "runtimeApiMatchesPreviousProduction": true,
+  "publicHeroesVerified": 140,
+  "localizedHttpsRoutes": 49,
+  "liveBrowserChecks": 28,
+  "operationsPassed": true,
+  "languages": 7,
+  "localResponsiveChecks": 560,
+  "htmlCachePolicy": "no-cache",
+  "apiConfigurationPreserved": true,
+  "rollback": {
+    "retained": true,
+    "releaseId": "20261027-ga-realtime",
+    "port": 18183
+  },
+  "production": {
+    "port": 18182,
+    "slot": "blue"
+  },
+  "juridicoPublished": false,
+  "panelOrBuildingBlockDeployment": false
+}

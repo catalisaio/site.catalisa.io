@@ -1,0 +1,222 @@
+{
+  "vet": {
+    "name": "Pata & Prosa",
+    "kind": "Clínica veterinária",
+    "title": "Do “tem horário?” ao cuidado marcado.",
+    "description": "Uma conversa ajuda a escolher o atendimento, encontrar um horário e preparar a visita.",
+    "roles": [
+      "Tutor",
+      "Recepção",
+      "Veterinário"
+    ],
+    "steps": [
+      [
+        "A conversa começa",
+        "O tutor conta o que seu pet precisa.",
+        "Comunicação",
+        "wpp-business"
+      ],
+      [
+        "A agenda encontra espaço",
+        "O cliente escolhe entre os horários disponíveis.",
+        "Agenda",
+        "calendar"
+      ],
+      [
+        "O atendimento ganha contexto",
+        "Os dados da visita acompanham o agendamento.",
+        "Contexto",
+        "data-store"
+      ],
+      [
+        "A equipe dá continuidade",
+        "A recepção confirma a visita e orienta o tutor.",
+        "Relacionamento",
+        "customers"
+      ]
+    ],
+    "items": [
+      "Consulta da Luna",
+      "Retorno do Bento",
+      "Vacina da Amora"
+    ],
+    "action": "Experimentar agendamento",
+    "note": "Orientações clínicas e urgências devem ser encaminhadas a um profissional."
+  },
+  "repair": {
+    "name": "Oficina em Dia",
+    "kind": "Serviços automotivos",
+    "title": "O carro para. O atendimento continua.",
+    "description": "Organize o pedido, os documentos e a visita à oficina em uma jornada acompanhável.",
+    "roles": [
+      "Motorista",
+      "Atendimento",
+      "Oficina"
+    ],
+    "steps": [
+      [
+        "Receber o pedido",
+        "O motorista descreve o que aconteceu.",
+        "Comunicação",
+        "wpp-business"
+      ],
+      [
+        "Organizar o contexto",
+        "Fotos e informações ajudam a preparar o atendimento.",
+        "Documentos",
+        "file-storage"
+      ],
+      [
+        "Reservar uma visita",
+        "O motorista escolhe um horário para avaliação.",
+        "Agenda",
+        "calendar"
+      ],
+      [
+        "Acompanhar o serviço",
+        "A equipe atualiza o andamento do caso.",
+        "Contexto",
+        "data-store"
+      ]
+    ],
+    "items": [
+      "Revisão do utilitário",
+      "Avaliação do freio",
+      "Troca de óleo"
+    ],
+    "action": "Experimentar agendamento",
+    "note": "Diagnóstico, orçamento e execução dependem da avaliação e autorização dos responsáveis."
+  },
+  "credit": {
+    "name": "Crédito com Contexto",
+    "kind": "Serviços financeiros",
+    "title": "Da intenção à proposta organizada.",
+    "description": "Reúna informações, prepare a avaliação e conduza a formalização em etapas claras.",
+    "roles": [
+      "Cliente",
+      "Analista",
+      "Operação"
+    ],
+    "steps": [
+      [
+        "Entender o pedido",
+        "O cliente informa o que procura e autoriza as próximas etapas.",
+        "Cadastro",
+        "customers"
+      ],
+      [
+        "Preparar a análise",
+        "As informações necessárias compõem o dossiê.",
+        "Esteira",
+        "decision-platform"
+      ],
+      [
+        "Aplicar a política",
+        "As regras orientam a avaliação e suas revisões.",
+        "Decisão",
+        "decision-engine"
+      ],
+      [
+        "Preparar a formalização",
+        "O documento segue para os participantes previstos.",
+        "Assinatura",
+        "e-signature"
+      ]
+    ],
+    "items": [
+      "Proposta em preparação",
+      "Dossiê em revisão",
+      "Documento aguardando aceite"
+    ],
+    "action": "Abrir proposta demonstrativa",
+    "note": "Não há análise, oferta ou concessão de crédito neste protótipo. A operação exige política, parceiros e validação."
+  },
+  "hiring": {
+    "name": "Próxima Pessoa",
+    "kind": "Recrutamento",
+    "title": "Uma candidatura com próximo passo.",
+    "description": "Conecte a conversa, a agenda e o contexto da entrevista para apoiar o recrutador.",
+    "roles": [
+      "Candidato",
+      "Recrutador",
+      "Gestor"
+    ],
+    "steps": [
+      [
+        "Receber a candidatura",
+        "A pessoa manifesta interesse e envia suas informações.",
+        "Comunicação",
+        "wpp-business"
+      ],
+      [
+        "Organizar o perfil",
+        "O material autorizado acompanha a candidatura.",
+        "Contexto",
+        "data-store"
+      ],
+      [
+        "Combinar a entrevista",
+        "As agendas encontram um horário comum.",
+        "Agenda",
+        "calendar"
+      ],
+      [
+        "Conversar com contexto",
+        "A entrevista acontece em uma sala vinculada à jornada.",
+        "Encontro",
+        "rooms"
+      ]
+    ],
+    "items": [
+      "Entrevista de produto",
+      "Conversa inicial",
+      "Retorno ao candidato"
+    ],
+    "action": "Experimentar agendamento",
+    "note": "Seleção e avaliação ficam com os responsáveis. A demonstração não classifica nem elimina candidatos."
+  },
+  "custom": {
+    "name": "Seu próximo produto",
+    "kind": "Uma composição inicial",
+    "title": "Uma ideia encontra sua primeira forma.",
+    "description": "Um ponto de partida para conversar, organizar o contexto e dar continuidade ao atendimento.",
+    "roles": [
+      "Cliente",
+      "Equipe",
+      "Operação"
+    ],
+    "steps": [
+      [
+        "Ouvir o cliente",
+        "A pessoa explica o que precisa.",
+        "Comunicação",
+        "wpp-business"
+      ],
+      [
+        "Organizar o contexto",
+        "As informações acompanham o pedido.",
+        "Contexto",
+        "data-store"
+      ],
+      [
+        "Conectar o próximo passo",
+        "A equipe encontra um horário para conversar.",
+        "Agenda",
+        "calendar"
+      ],
+      [
+        "Continuar o relacionamento",
+        "O histórico ajuda a retomar o atendimento.",
+        "Relacionamento",
+        "customers"
+      ]
+    ],
+    "items": [
+      "Novo pedido",
+      "Conversa em preparação",
+      "Próximo atendimento"
+    ],
+    "action": "Experimentar agendamento",
+    "note": "Composição exploratória. Regras específicas, integrações e disponibilidade precisam ser definidos."
+  }
+}

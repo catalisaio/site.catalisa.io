@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-10-26T19:09:54.590Z",
+  "scope": "Three missing Contact sidebar labels found in the actual 504-route browser audit; manually translated/reviewed in six target languages.",
+  "messages": [
+    {
+      "source": "Uma ideia merece espaço.",
+      "occurrences": [
+        {
+          "file": "src/redesign/Contact.tsx",
+          "kind": "rendered-missing-key"
+        }
+      ]
+    },
+    {
+      "source": "Experiência",
+      "occurrences": [
+        {
+          "file": "src/redesign/Contact.tsx",
+          "kind": "rendered-missing-key"
+        }
+      ]
+    },
+    {
+      "source": "Construção",
+      "occurrences": [
+        {
+          "file": "src/redesign/Contact.tsx",
+          "kind": "rendered-missing-key"
+        }
+      ]
+    }
+  ]
+}

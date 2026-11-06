@@ -41,10 +41,12 @@ interface PolicySection {
 
 export function PrivacyPolicy() {
   const { t } = useTranslation('privacy');
-  const [expandedIndices, setExpandedIndices] = useState<number[]>([]);
-
   const cards = t('summary.cards', { returnObjects: true }) as SummaryCard[];
   const sections = t('sections', { returnObjects: true }) as PolicySection[];
+  // Keep the controller and Google disclosures readable in the static snapshot.
+  const [expandedIndices, setExpandedIndices] = useState<number[]>(() => [
+    0, sections.findIndex(section => section.title.includes('Google')),
+  ].filter(index => index >= 0));
 
   const allIndices = sections.map((_, i) => i);
 
@@ -147,7 +149,7 @@ export function PrivacyPolicy() {
       </SectionWrapper>
 
       {/* Divider + Full Policy Header */}
-      <SectionWrapper bg="gray.50" id="politica-completa">
+      <SectionWrapper bg="gray.50" id="politica-completa" animate={false}>
         <SectionHeader
           badge={t('fullPolicy.title')}
           badgeIcon={FiFileText}
@@ -190,6 +192,7 @@ export function PrivacyPolicy() {
         <Box maxW="900px" mx="auto">
           <Accordion
             allowMultiple
+            reduceMotion
             index={expandedIndices}
             onChange={handleAccordionChange}
           >

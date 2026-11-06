@@ -1,0 +1,159 @@
+{
+  "origin": "https://catalisa.io",
+  "release": "20261028-operational-assistant",
+  "checkedAt": "2026-10-28T19:00:32.835Z",
+  "passed": true,
+  "checks": [
+    {
+      "path": "/assistente-operacional",
+      "status": 200,
+      "finalPath": "/assistente-operacional",
+      "locale": "pt-BR",
+      "exactCandidateBytes": true
+    },
+    {
+      "path": "/assistente-operacional/",
+      "status": 200,
+      "finalPath": "/assistente-operacional",
+      "locale": "pt-BR",
+      "exactCandidateBytes": true
+    },
+    {
+      "path": "/en/operational-assistant",
+      "status": 200,
+      "finalPath": "/en/operational-assistant",
+      "locale": "en-US",
+      "exactCandidateBytes": true
+    },
+    {
+      "path": "/en/operational-assistant/",
+      "status": 200,
+      "finalPath": "/en/operational-assistant",
+      "locale": "en-US",
+      "exactCandidateBytes": true
+    },
+    {
+      "path": "/de/operativer-assistent",
+      "status": 200,
+      "finalPath": "/de/operativer-assistent",
+      "locale": "de-DE",
+      "exactCandidateBytes": true
+    },
+    {
+      "path": "/de/operativer-assistent/",
+      "status": 200,
+      "finalPath": "/de/operativer-assistent",
+      "locale": "de-DE",
+      "exactCandidateBytes": true
+    },
+    {
+      "path": "/es/asistente-operativo",
+      "status": 200,
+      "finalPath": "/es/asistente-operativo",
+      "locale": "es-ES",
+      "exactCandidateBytes": true
+    },
+    {
+      "path": "/es/asistente-operativo/",
+      "status": 200,
+      "finalPath": "/es/asistente-operativo",
+      "locale": "es-ES",
+      "exactCandidateBytes": true
+    },
+    {
+      "path": "/da/driftsassistent",
+      "status": 200,
+      "finalPath": "/da/driftsassistent",
+      "locale": "da-DK",
+      "exactCandidateBytes": true
+    },
+    {
+      "path": "/da/driftsassistent/",
+      "status": 200,
+      "finalPath": "/da/driftsassistent",
+      "locale": "da-DK",
+      "exactCandidateBytes": true
+    },
+    {
+      "path": "/nl/operationele-assistent",
+      "status": 200,
+      "finalPath": "/nl/operationele-assistent",
+      "locale": "nl-NL",
+      "exactCandidateBytes": true
+    },
+    {
+      "path": "/nl/operationele-assistent/",
+      "status": 200,
+      "finalPath": "/nl/operationele-assistent",
+      "locale": "nl-NL",
+      "exactCandidateBytes": true
+    },
+    {
+      "path": "/fr/assistant-operationnel",
+      "status": 200,
+      "finalPath": "/fr/assistant-operationnel",
+      "locale": "fr-FR",
+      "exactCandidateBytes": true
+    },
+    {
+      "path": "/fr/assistant-operationnel/",
+      "status": 200,
+      "finalPath": "/fr/assistant-operationnel",
+      "locale": "fr-FR",
+      "exactCandidateBytes": true
+    },
+    {
+      "home": "/",
+      "status": 200,
+      "exactCandidateBytes": true
+    },
+    {
+      "home": "/en",
+      "status": 200,
+      "exactCandidateBytes": true
+    },
+    {
+      "home": "/de",
+      "status": 200,
+      "exactCandidateBytes": true
+    },
+    {
+      "home": "/es",
+      "status": 200,
+      "exactCandidateBytes": true
+    },
+    {
+      "home": "/da",
+      "status": 200,
+      "exactCandidateBytes": true
+    },
+    {
+      "home": "/nl",
+      "status": 200,
+      "exactCandidateBytes": true
+    },
+    {
+      "home": "/fr",
+      "status": 200,
+      "exactCandidateBytes": true
+    },
+    {
+      "asset": "/assets/index-DR97Jf9W.js",
+      "status": 200,
+      "exactCandidateBytes": true
+    },
+    {
+      "asset": "/assets/operational-assistant-nav-c5dfbbaed75f.js",
+      "status": 200,
+      "exactCandidateBytes": true
+    },
+    {
+      "anonymousSession": 401
+    },
+    {
+      "unknownPath": 404
+    }
+  ],
+  "noMutations": true,
+  "realMessagesSent": false
+}

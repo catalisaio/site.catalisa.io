@@ -2,7 +2,7 @@
 # Generate a ZIP archive of all brand assets for the press kit download button.
 set -euo pipefail
 
-BRAND_DIR="dist/brand"
+BRAND_DIR="${SITE_DIST_DIR:-dist}/brand"
 ZIP_FILE="$BRAND_DIR/catalisa-brand-assets.zip"
 
 if [ ! -d "$BRAND_DIR" ]; then

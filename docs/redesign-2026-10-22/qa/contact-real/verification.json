@@ -1,0 +1,471 @@
+{
+  "date": "2026-10-24T23:10:02.615Z",
+  "passed": false,
+  "scope": "Real staging AI through local browser/BFF, fictional short contact flows, human review, reload, one free refinement. No handoff or external messages.",
+  "results": [
+    {
+      "key": "loja-whatsapp",
+      "passed": true,
+      "briefing": {
+        "idea": "vender pelo whats",
+        "context": "loja de roupas",
+        "goal": "vender mais"
+      },
+      "elapsedMs": 16850,
+      "reviewElapsedMs": 59,
+      "hadReview": true,
+      "concept": {
+        "conceptRef": "concept_e7909035-ba46-4a94-bde5-3e99f822a457",
+        "version": 1,
+        "briefVersion": 3,
+        "content": {
+          "schemaVersion": "1.0",
+          "title": "Venda via WhatsApp para roupas",
+          "summary": "Conceito para loja de roupas usar WhatsApp na venda direta, com catálogo e checkout simplificado.",
+          "hypothesis": "Loja de roupas pode aumentar vendas usando WhatsApp para mostrar produtos e fechar pedidos sem sair do chat.",
+          "roles": [
+            "Vendedor de loja",
+            "Gerente de vendas",
+            "Cliente final"
+          ],
+          "screens": [
+            {
+              "id": "catalogo",
+              "title": "Catálogo de roupas",
+              "description": "Lista de peças disponíveis com fotos e preços.",
+              "items": [
+                {
+                  "label": "Camiseta básica",
+                  "value": "R$ 49,90 - cores disponíveis"
+                },
+                {
+                  "label": "Calça jeans",
+                  "value": "R$ 129,90 - tamanhos 36 a 44"
+                }
+              ],
+              "action": {
+                "label": "Enviar para WhatsApp",
+                "nextScreenId": "chat"
+              }
+            },
+            {
+              "id": "chat",
+              "title": "Conversa no WhatsApp",
+              "description": "Atendimento com envio de fotos e proposta de pedido.",
+              "items": [
+                {
+                  "label": "Mensagem automática",
+                  "value": "Olá! Qual peça você gostou?"
+                },
+                {
+                  "label": "Resposta do cliente",
+                  "value": "Quero a camiseta azul"
+                }
+              ],
+              "action": {
+                "label": "Gerar pedido",
+                "nextScreenId": "pedido"
+              }
+            },
+            {
+              "id": "pedido",
+              "title": "Resumo do pedido",
+              "description": "Confirmação de itens, valor total e forma de pagamento.",
+              "items": [
+                {
+                  "label": "Total",
+                  "value": "R$ 179,80"
+                },
+                {
+                  "label": "Entrega",
+                  "value": "Sedex em 5 dias"
+                }
+              ],
+              "action": {
+                "label": "Confirmar e pagar",
+                "nextScreenId": null
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "slug": "wpp",
+              "role": "Envio de catálogo e mensagens de venda"
+            },
+            {
+              "slug": "commerce",
+              "role": "Gestão de catálogo e pedidos"
+            },
+            {
+              "slug": "payments",
+              "role": "Recebimento de pagamentos via Pix ou cartão"
+            },
+            {
+              "slug": "customers",
+              "role": "Cadastro de clientes com CPF validado"
+            }
+          ],
+          "journey": [
+            {
+              "id": "j1",
+              "label": "Cliente acessa catálogo",
+              "description": "Navega pelas peças no WhatsApp",
+              "blockSlugs": [
+                "wpp",
+                "commerce"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "j2",
+              "label": "Atendimento e seleção",
+              "description": "Vendedor envia fotos e tira dúvidas",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "j3",
+              "label": "Geração do pedido",
+              "description": "Resumo e confirmação de itens",
+              "blockSlugs": [
+                "commerce",
+                "customers"
+              ],
+              "humanReview": true
+            },
+            {
+              "id": "j4",
+              "label": "Pagamento e entrega",
+              "description": "Cliente paga e recebe confirmação",
+              "blockSlugs": [
+                "payments"
+              ],
+              "humanReview": false
+            }
+          ],
+          "limitations": [
+            "Dependente de integração com WhatsApp Business API",
+            "Catálogo manual atualizado pelo lojista",
+            "Sem automação de estoque em tempo real"
+          ],
+          "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+        }
+      },
+      "refinement": {
+        "elapsedMs": 16892,
+        "concept": {
+          "conceptRef": "concept_e7909035-ba46-4a94-bde5-3e99f822a457",
+          "version": 2,
+          "briefVersion": 3,
+          "content": {
+            "schemaVersion": "1.0",
+            "title": "Venda por e-mail para roupas",
+            "summary": "Conceito para loja de roupas usar e-mail na venda direta, com catálogo e checkout simplificado.",
+            "hypothesis": "Loja de roupas pode aumentar vendas usando e-mail para mostrar produtos e fechar pedidos, com revisão humana antes do envio.",
+            "roles": [
+              "Vendedor de loja",
+              "Gerente de vendas",
+              "Cliente final"
+            ],
+            "screens": [
+              {
+                "id": "catalogo",
+                "title": "Catálogo de roupas",
+                "description": "Lista de peças disponíveis com fotos e preços.",
+                "items": [
+                  {
+                    "label": "Camiseta básica",
+                    "value": "R$ 49,90 - cores disponíveis"
+                  },
+                  {
+                    "label": "Calça jeans",
+                    "value": "R$ 129,90 - tamanhos 36 a 44"
+                  }
+                ],
+                "action": {
+                  "label": "Enviar para e-mail",
+                  "nextScreenId": "email"
+                }
+              },
+              {
+                "id": "email",
+                "title": "E-mail de atendimento",
+                "description": "Mensagem com fotos e proposta de pedido, revisada antes do envio.",
+                "items": [
+                  {
+                    "label": "Mensagem automática",
+                    "value": "Olá! Qual peça você gostou?"
+                  },
+                  {
+                    "label": "Resposta do cliente",
+                    "value": "Quero a camiseta azul"
+                  }
+                ],
+                "action": {
+                  "label": "Gerar pedido",
+                  "nextScreenId": "pedido"
+                }
+              },
+              {
+                "id": "pedido",
+                "title": "Resumo do pedido",
+                "description": "Confirmação de itens, valor total e forma de pagamento.",
+                "items": [
+                  {
+                    "label": "Total",
+                    "value": "R$ 179,80"
+                  },
+                  {
+                    "label": "Entrega",
+                    "value": "Sedex em 5 dias"
+                  }
+                ],
+                "action": {
+                  "label": "Confirmar e pagar",
+                  "nextScreenId": null
+                }
+              }
+            ],
+            "blocks": [
+              {
+                "slug": "email",
+                "role": "Envio de catálogo e mensagens de venda com revisão humana"
+              },
+              {
+                "slug": "commerce",
+                "role": "Gestão de catálogo e pedidos"
+              },
+              {
+                "slug": "payments",
+                "role": "Recebimento de pagamentos via Pix ou cartão"
+              },
+              {
+                "slug": "customers",
+                "role": "Cadastro de clientes com CPF validado"
+              }
+            ],
+            "journey": [
+              {
+                "id": "j1",
+                "label": "Cliente acessa catálogo",
+                "description": "Navega pelas peças no e-mail",
+                "blockSlugs": [
+                  "email",
+                  "commerce"
+                ],
+                "humanReview": false
+              },
+              {
+                "id": "j2",
+                "label": "Atendimento e seleção",
+                "description": "Vendedor prepara e-mail com fotos e tira dúvidas",
+                "blockSlugs": [
+                  "email"
+                ],
+                "humanReview": true
+              },
+              {
+                "id": "j3",
+                "label": "Geração do pedido",
+                "description": "Resumo e confirmação de itens",
+                "blockSlugs": [
+                  "commerce",
+                  "customers"
+                ],
+                "humanReview": true
+              },
+              {
+                "id": "j4",
+                "label": "Pagamento e entrega",
+                "description": "Cliente paga e recebe confirmação",
+                "blockSlugs": [
+                  "payments"
+                ],
+                "humanReview": false
+              }
+            ],
+            "limitations": [
+              "Dependente de integração com provedor de e-mail",
+              "Catálogo manual atualizado pelo lojista",
+              "Sem automação de estoque em tempo real"
+            ],
+            "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "key": "clinica-agenda",
+      "passed": true,
+      "briefing": {
+        "idea": "agenda clinica",
+        "context": "dentista",
+        "goal": "menos faltas"
+      },
+      "elapsedMs": 14839,
+      "reviewElapsedMs": 43,
+      "hadReview": true,
+      "concept": {
+        "conceptRef": "concept_03c648b2-6c07-4674-82c1-8af3f489c34c",
+        "version": 1,
+        "briefVersion": 3,
+        "content": {
+          "schemaVersion": "1.0",
+          "title": "Agenda Clínica sem Faltas",
+          "summary": "Sistema para dentistas reduzir faltas com agenda integrada e lembretes automáticos via WhatsApp.",
+          "hypothesis": "Lembretes automáticos e confirmações digitais diminuem ausências em consultas odontológicas.",
+          "roles": [
+            "Dentista",
+            "Recepcionista",
+            "Paciente"
+          ],
+          "screens": [
+            {
+              "id": "agendamento",
+              "title": "Agendar Consulta",
+              "description": "Marque horários com dados do paciente e tipo de procedimento.",
+              "items": [
+                {
+                  "label": "Paciente",
+                  "value": "Nome e CPF"
+                },
+                {
+                  "label": "Horário",
+                  "value": "Data e hora disponíveis"
+                },
+                {
+                  "label": "Procedimento",
+                  "value": "Limpeza, extração ou implante"
+                }
+              ],
+              "action": {
+                "label": "Confirmar agendamento",
+                "nextScreenId": "confirmacao"
+              }
+            },
+            {
+              "id": "confirmacao",
+              "title": "Confirmar Consulta",
+              "description": "Envie convite e solicite resposta do paciente.",
+              "items": [
+                {
+                  "label": "Convite",
+                  "value": "Link de calendário"
+                },
+                {
+                  "label": "Mensagem",
+                  "value": "Texto personalizado"
+                },
+                {
+                  "label": "Status",
+                  "value": "Aguardando resposta"
+                }
+              ],
+              "action": {
+                "label": "Enviar lembrete",
+                "nextScreenId": "lembretes"
+              }
+            },
+            {
+              "id": "lembretes",
+              "title": "Lembretes Automáticos",
+              "description": "Configure envios 48h e 2h antes da consulta.",
+              "items": [
+                {
+                  "label": "Canal",
+                  "value": "WhatsApp"
+                },
+                {
+                  "label": "Conteúdo",
+                  "value": "Horário e endereço"
+                },
+                {
+                  "label": "Ação",
+                  "value": "Reagendar ou cancelar"
+                }
+              ],
+              "action": {
+                "label": "Ver relatórios",
+                "nextScreenId": null
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "slug": "calendar",
+              "role": "Gerencia disponibilidade e marcações"
+            },
+            {
+              "slug": "wpp",
+              "role": "Envia lembretes e confirmações"
+            },
+            {
+              "slug": "customers",
+              "role": "Armazena dados de pacientes"
+            },
+            {
+              "slug": "analytics",
+              "role": "Mede taxa de comparecimento"
+            }
+          ],
+          "journey": [
+            {
+              "id": "passo1",
+              "label": "Cadastro do paciente",
+              "description": "Recepcionista registra dados básicos.",
+              "blockSlugs": [
+                "customers"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "passo2",
+              "label": "Marcação da consulta",
+              "description": "Dentista ou recepcionista agenda no calendário.",
+              "blockSlugs": [
+                "calendar"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "passo3",
+              "label": "Envio de convite",
+              "description": "Sistema envia mensagem de confirmação.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "passo4",
+              "label": "Lembrete e reagendamento",
+              "description": "Paciente confirma ou altera horário.",
+              "blockSlugs": [
+                "wpp",
+                "calendar"
+              ],
+              "humanReview": true
+            }
+          ],
+          "limitations": [
+            "Hipótese de integração com WhatsApp precisa validação manual.",
+            "Taxa de resposta dos pacientes não é garantida.",
+            "Requer revisão humana para reagendamentos complexos."
+          ],
+          "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+        }
+      },
+      "errors": []
+    },
+    {
+      "key": "escola-cobranca",
+      "passed": false,
+      "stage": "human-review",
+      "error": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('.zd-workspace')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"to.be.visible\" with timeout 5000ms\n  - waiting for locator('.zd-workspace')\n",
+      "errors": []
+    }
+  ]
+}

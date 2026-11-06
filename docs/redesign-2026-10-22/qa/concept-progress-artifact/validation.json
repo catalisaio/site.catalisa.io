@@ -1,0 +1,97 @@
+{
+  "generatedAt": "2026-10-26T14:09:42.195Z",
+  "releaseId": "20261026-progress",
+  "artifact": "/tmp/catalisa-progress-candidate",
+  "passed": true,
+  "scope": "Production-mode local artifact preparation and browser hosting emulation. Actual staging/AI/UI pending-flow smokes remain separate checks owned by coordinator.",
+  "build": {
+    "command": "VITE_SITE_RELEASE=redesign VITE_SITE_INDEXING=enabled CONTEXT=production SITE_DIST_DIR=/tmp/catalisa-progress-candidate PUPPETEER_EXECUTABLE_PATH=/usr/bin/google-chrome PRERENDER_WORKERS=1 npm run build -- --outDir /tmp/catalisa-progress-candidate --emptyOutDir",
+    "exitCode": 0,
+    "typescriptPassed": true
+  },
+  "mode": {
+    "redesign": true,
+    "indexing": true
+  },
+  "prerender": {
+    "routes": 257,
+    "failures": [],
+    "shell": {
+      "file": "/tmp/catalisa-progress-candidate/index.html",
+      "moduleScript": "/assets/index-CrdpmcBD.js"
+    }
+  },
+  "seo": {
+    "routes": 256,
+    "publicUrls": 255,
+    "brandOriginals": 144,
+    "failures": [],
+    "warnings": []
+  },
+  "browser": {
+    "passed": true,
+    "checks": 41,
+    "errors": []
+  },
+  "nativeBundle": {
+    "passed": true,
+    "initialChunks": 7,
+    "nativePages": 17,
+    "allStaticChunks": 29,
+    "failures": []
+  },
+  "privateArtifact": {
+    "passed": true,
+    "files": 918,
+    "findings": []
+  },
+  "integrity": {
+    "generatedAt": "2026-10-26T14:09:05.706Z",
+    "artifact": "/tmp/catalisa-progress-candidate",
+    "releaseId": "20261026-progress",
+    "passed": true,
+    "entry": "/assets/index-CrdpmcBD.js",
+    "entrySha256": "eb65d9197467ca1d875337c9842b02a408dd3acd3ca1057c1599ed6658fb7717",
+    "homeSha256": "37c6682e20a8b2c7af3f63d5a6a5c34f357b897dc32d5031d8b6593abf6c7448",
+    "applicationHtmlFiles": 258,
+    "mismatches": [],
+    "privacy": [
+      {
+        "route": "/politica-privacidade",
+        "configuredProviderStatement": true,
+        "listedAnthropic": true,
+        "listedOpenAI": true,
+        "passed": true
+      },
+      {
+        "route": "/en/privacy-policy",
+        "configuredProviderStatement": true,
+        "listedAnthropic": true,
+        "listedOpenAI": true,
+        "passed": true
+      }
+    ],
+    "scope": "Built HTML entry consistency and configured-provider privacy copy PT/EN. No real AI requests, deployment or visual acceptance."
+  },
+  "coordinatorSourceVerification": {
+    "reportedSuitePassed": 234,
+    "files": 21,
+    "typescriptAppNodePassed": true,
+    "controlledVisualReport": "../concept-progress-local",
+    "scope": "Coordinator-reported prebuild source evidence, not rerun by artifact builder"
+  },
+  "olderCandidatesPreserved": true,
+  "productionPublished": false,
+  "publicationAuthorized": false,
+  "realAiRequestsInThisAudit": 0,
+  "remaining": [
+    "Coordinator installs this exact candidate in staging",
+    "Real short Contact flows and Lab with captures of actual progress state, followed by Direct Contact and operator Inbox",
+    "Owner visual/editorial/policy acceptance and explicit authorization before production cutover"
+  ],
+  "limits": [
+    "No new performance measurement in this build; historical Home r2 LCP3.032s exceeded the2.5s target",
+    "No field Core Web Vitals, ranking, full WCAG or physical-device certification",
+    "Market insights remains disabled; no panel or building-block changes"
+  ]
+}

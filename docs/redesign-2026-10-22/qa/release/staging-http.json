@@ -1,0 +1,81 @@
+{
+  "date": "2026-10-25T06:41:25.852Z",
+  "passed": true,
+  "hostname": "site-staging.catalisa.io",
+  "scope": "Actual trusted HTTPS certificate, Traefik BasicAuth, noindex, Caddy routes/static HTML, private Node BFF and real staging shared store. Synthetic session only; no external messages.",
+  "checks": [
+    "valid exact-host TLS and BasicAuth gate",
+    "exact candidate Home bytes and staging robots exclusion",
+    {
+      "route": "/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/capacidades",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/capacidades/ai-engine",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/contato",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/lab",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/ecossistema/banking",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/ecossistema/credit",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/arquitetura",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/press-kit",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/en",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/politica-privacidade",
+      "status": 200,
+      "noindex": true
+    },
+    "all migration redirects preserve query",
+    "real HTML404 noindex",
+    "BFF authenticated edge, anonymous401 JSON, origin403",
+    "shared session, Secure HttpOnly cookie, configured AI and human inbox",
+    "team portal CSP and independent authentication"
+  ],
+  "tls": {
+    "authorized": true,
+    "protocol": "TLSv1.3",
+    "validTo": "Jan 23 04:01:29 2027 GMT"
+  },
+  "artifact": {
+    "releaseId": "20261025-r2",
+    "homeSha256": "8dcb3cea1049a0cd8b07e261eb41b920f91ad23ec414b170aeffc9e6bd03c2cd",
+    "identicalToCandidate": true
+  },
+  "syntheticSessionRemoved": true
+}

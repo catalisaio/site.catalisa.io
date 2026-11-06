@@ -1,0 +1,1180 @@
+{
+  "checkedAt": "2026-10-27T00:28:55.418Z",
+  "target": "staging",
+  "origin": "https://site-staging.catalisa.io",
+  "expectedRelease": "20261026-staging-clarity",
+  "candidate": "/tmp/catalisa-staging-clarity-final",
+  "passed": true,
+  "scope": "Actual trusted HTTPS GET-only checks. Production uses normal DNS; staging alone uses the documented dedicated edge lookup. Checks public HTML, exact optional candidate bytes, metadata/JSON-LD/alternates, all sitemap URLs, robots, WWW redirect and anonymous session401. No AI, browser, session creation, authentication, outbound messages or deployment.",
+  "requestPolicy": {
+    "methods": [
+      "GET"
+    ],
+    "cookiesSent": false,
+    "aiCalls": 0,
+    "mutatingRequests": 0,
+    "stagingEdgeMapping": {
+      "hostname": "site-staging.catalisa.io",
+      "address": "177.104.184.38"
+    }
+  },
+  "languages": [
+    {
+      "locale": "pt-BR",
+      "path": "/",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 1007,
+      "lang": "pt-BR",
+      "title": "Catalisa | Crie produtos e automações com IA",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "c2e17198a91da97a558f2c35c6f947cc251f5b8cffdeb7f02bb2ef97ae9ea5e9",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "en-US",
+      "path": "/en",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 352,
+      "lang": "en-US",
+      "title": "Catalisa | Build products and automations with AI",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "7a32bf15c763d8bf954d3b7e433f78450959161b5253b631370bb5f8da4e911f",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 352,
+      "lang": "de-DE",
+      "title": "Catalisa | Produkte und Automatisierungen mit KI erstellen",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "1847a6c207377bc4d87aa53c4e1e9abf7a6fac9302936c2f873fe63292b5eaa6",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 441,
+      "lang": "es-ES",
+      "title": "Catalisa | Crea productos y automatizaciones con IA",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "0888baaa0344682e63c15dfeaa48e2c56f4d9dc311536981239a83448403767e",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 195,
+      "lang": "da-DK",
+      "title": "Catalisa | Byg produkter og automatiseringer med AI",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "4a19e159a81cb71dbc62652e5854c9a58331a462601cd1a2751fbca5af4e7f97",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 275,
+      "lang": "nl-NL",
+      "title": "Catalisa | Bouw producten en automatiseringen met AI",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "5aee39b3dbb9322c11eb295d72449ccf6e860025d53d1c83bea104e4cdce437d",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 324,
+      "lang": "fr-FR",
+      "title": "Catalisa | Créez des produits et des automatisations avec l'IA",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "8ce1623def95c17e9fee43d6e5e31aba7131a76af6f726b4f1e3363c127a4f2c",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    }
+  ],
+  "routes": [
+    {
+      "locale": "pt-BR",
+      "path": "/",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 1007,
+      "lang": "pt-BR",
+      "title": "Catalisa | Crie produtos e automações com IA",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "c2e17198a91da97a558f2c35c6f947cc251f5b8cffdeb7f02bb2ef97ae9ea5e9",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "en-US",
+      "path": "/en",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 352,
+      "lang": "en-US",
+      "title": "Catalisa | Build products and automations with AI",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "7a32bf15c763d8bf954d3b7e433f78450959161b5253b631370bb5f8da4e911f",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 352,
+      "lang": "de-DE",
+      "title": "Catalisa | Produkte und Automatisierungen mit KI erstellen",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "1847a6c207377bc4d87aa53c4e1e9abf7a6fac9302936c2f873fe63292b5eaa6",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 441,
+      "lang": "es-ES",
+      "title": "Catalisa | Crea productos y automatizaciones con IA",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "0888baaa0344682e63c15dfeaa48e2c56f4d9dc311536981239a83448403767e",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 195,
+      "lang": "da-DK",
+      "title": "Catalisa | Byg produkter og automatiseringer med AI",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "4a19e159a81cb71dbc62652e5854c9a58331a462601cd1a2751fbca5af4e7f97",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 275,
+      "lang": "nl-NL",
+      "title": "Catalisa | Bouw producten en automatiseringen met AI",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "5aee39b3dbb9322c11eb295d72449ccf6e860025d53d1c83bea104e4cdce437d",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 324,
+      "lang": "fr-FR",
+      "title": "Catalisa | Créez des produits et des automatisations avec l'IA",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "8ce1623def95c17e9fee43d6e5e31aba7131a76af6f726b4f1e3363c127a4f2c",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/produtos",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 164,
+      "lang": "pt-BR",
+      "title": "Produtos: explore o portfólio e as vitrines | Catalisa",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "7f751fdaf9f027251c95fd07a5ca0621d8525df62c00bd301daa464f61fedb8c",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/products",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 129,
+      "lang": "en-US",
+      "title": "Products: explore the portfolio and product sites | Catalisa",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "2d75642c78f9479a94fd3b0122005e5d59a468092a05965fe897fe99dda17746",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/produkte",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 398,
+      "lang": "de-DE",
+      "title": "Produkte: Portfolio und Showcases entdecken | Catalisa",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "988a2c106a2750f5ec7c35a6f7c2baf0d50ae1321132a4edc46e5fba61575e9a",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/productos",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 189,
+      "lang": "es-ES",
+      "title": "Productos: explora el catálogo y las webs de producto | Catalisa",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "b7e81e7f0b3e5455715e6c248fca4983b17ce6f34daf08d287867f04903d9041",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/produkter",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 158,
+      "lang": "da-DK",
+      "title": "Produkter: udforsk porteføljen og showcases | Catalisa",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "8cd714b9e5361fc07b4096b569be04da32fb81191444d09b1627ebea36e914b3",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/producten",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 206,
+      "lang": "nl-NL",
+      "title": "Producten: verken het portfolio en de showcases | Catalisa",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "98b828261a2c92658795a055c69be0aa57089411308a084fd278df374882791d",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/produits",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 157,
+      "lang": "fr-FR",
+      "title": "Produits : explorez le portefeuille et les vitrines | Catalisa",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "b1c78b3366b7ef6ebf499213c63ff54f4a05733ada0297dda28b813cb410056b",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/contato",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 136,
+      "lang": "pt-BR",
+      "title": "Contato: construa sua próxima conexão | Catalisa",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "57f8cb225c4cad67414d88db5c7fd4ab0fbbaf06ad97359dac879fca0ebbc022",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/contact",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 111,
+      "lang": "en-US",
+      "title": "Contact: build your next connection | Catalisa",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "db47aed2d4e53061f880fa384b9b7b9823b5149ab352e6d485a003249bdac791",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/kontakt",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 129,
+      "lang": "de-DE",
+      "title": "Kontakt: Knüpfen Sie Ihre nächste Verbindung | Catalisa",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "750a9a9d7fbb9c54dcde39ee03a11e7e897c6b9e82cc56fc7e17a98fa7dc6e82",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/contacto",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 194,
+      "lang": "es-ES",
+      "title": "Contacto: construye tu próxima conexión | Catalisa",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "ad69e1241437f46f4a7e92e802ab1ffb3655b649aad67ea6b612fff2de1f3c88",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/kontakt",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 204,
+      "lang": "da-DK",
+      "title": "Kontakt: byg din næste forbindelse | Catalisa",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "0072e8d174a7ca8f6e98c3f82be60671798c009d0e8d0ab5324d612c815beee9",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/contact",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 298,
+      "lang": "nl-NL",
+      "title": "Contact: bouw je volgende verbinding | Catalisa",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "64dbd3a29324867920bb97e8fd369a96398a186d34dd85a127cfc1c4940253ae",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/contact",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 140,
+      "lang": "fr-FR",
+      "title": "Contact : construisez votre prochaine connexion | Catalisa",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "be8c509abd8ab7e09eecccf9fb23d01f9645b2ca4a4185142177f016bf0daef0",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/lab",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 269,
+      "lang": "pt-BR",
+      "title": "Lab: explore composições com IA | Catalisa",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "5afac75d94bb2e633bad3e28cbb023dbd0d618593aabf6cc58fee3639f457bdd",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/lab",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 182,
+      "lang": "en-US",
+      "title": "Lab: explore compositions with AI | Catalisa",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "96224c7376813ea69aad89d26bd8622e287b9e26c691903dc356828c52568dcd",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/lab",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 116,
+      "lang": "de-DE",
+      "title": "Lab: Kompositionen mit KI erkunden | Catalisa",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "2591b698da5f695adc745ac6f7e0ee4c86d642c8cb485ca8f2e4fdb5c2793047",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/lab",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 151,
+      "lang": "es-ES",
+      "title": "Lab: explora composiciones con IA | Catalisa",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "2c2908e882fbf0d4abc0ebc05da9d9093bb340be1737357ff754f7bf134353f1",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/lab",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 130,
+      "lang": "da-DK",
+      "title": "Lab: udforsk kompositioner med AI | Catalisa",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "7d2321d720f880588df47caee0ba77a601a23c398ea2a43c92b4f40069adc331",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/lab",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 353,
+      "lang": "nl-NL",
+      "title": "Lab: verken composities met AI | Catalisa",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "b4f3e82d020760eb181aa927c984e8f226f56a32a8404b1553cc8869d110794b",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/lab",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 307,
+      "lang": "fr-FR",
+      "title": "Lab : explorez des compositions avec l'IA | Catalisa",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "0f32d5acb5bccccb48e98f5300f224f226c77a1ab3761bac6523b41878bf039a",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/ecossistema/banking",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 304,
+      "lang": "pt-BR",
+      "title": "Plataforma bancária: crie seu produto financeiro | Catalisa",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "b01fda35641ea6a6665343d08116e0933f152d7138e2da5fe57b5490881ef3a3",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/ecosystem/banking",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 189,
+      "lang": "en-US",
+      "title": "Banking platform: build your financial product | Catalisa",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "68393415bb54d3f710f0f545a2f738e03c146fed8a544080e589db53110231cb",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/oekosystem/banking",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 257,
+      "lang": "de-DE",
+      "title": "Banking-Plattform: Erstellen Sie Ihr Finanzprodukt | Catalisa",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "aa4a4bd5d12369af00abf017aef9b036247c95b8aa60abd0d0d098a224f497c5",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/ecosistema/banking",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 394,
+      "lang": "es-ES",
+      "title": "Plataforma bancaria: crea tu producto financiero | Catalisa",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "5d457c6c5e818e0b651a6fb96c7af166b57d9f457f49f5347c8848fe67758109",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/oekosystem/banking",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 472,
+      "lang": "da-DK",
+      "title": "Bankplatform: skab dit finansielle produkt | Catalisa",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "1cff1a3bb95ec2cc9e992806121ef6441bc7a3ae1a596a5ef383c3067f23cf17",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/ecosysteem/banking",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 678,
+      "lang": "nl-NL",
+      "title": "Bankplatform: bouw je financiële product | Catalisa",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "e0cf2ca359a6de32b6d81f49c5e55fbd70a701ef460ba650a38447c366095e3c",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/ecosysteme/banking",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 953,
+      "lang": "fr-FR",
+      "title": "Plateforme bancaire: créez votre produit financier | Catalisa",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "4a47ce747fd5217f5ceca1814e406f29617160235fbade9abaef82958105231a",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/ecossistema/credit",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 737,
+      "lang": "pt-BR",
+      "title": "Plataforma de crédito: desenhe seu produto de crédito | Catalisa",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "abcef2873fd0569556d65086efeca191bdcd005e2767b2a75ffb213a8911c81f",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/ecosystem/credit",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 200,
+      "lang": "en-US",
+      "title": "Credit platform: design your credit product | Catalisa",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "49a53e53f13813c524431e83fa7d95374409f5915277e7fdf00413117ffb97d2",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/oekosystem/credit",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 267,
+      "lang": "de-DE",
+      "title": "Kreditplattform: Gestalten Sie Ihr Kreditprodukt | Catalisa",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "05cba5d66c2533bd13557e054eeba077a7dc256699e6fd6319a1359aa614ab5a",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/ecosistema/credit",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 473,
+      "lang": "es-ES",
+      "title": "Plataforma de crédito: diseña tu producto de crédito | Catalisa",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "f009d202dfbfc4ffe2cca1427c75d74283cbe0883e0f66fb946782a5b1006ce2",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/oekosystem/credit",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 202,
+      "lang": "da-DK",
+      "title": "Kreditplatform: design dit kreditprodukt | Catalisa",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "4b2a25e4ba56e31da1bfc8f5ba31550b4a925d71fc03fb56fe5fdb2939ee568d",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/ecosysteem/credit",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 198,
+      "lang": "nl-NL",
+      "title": "Kredietplatform: ontwerp uw kredietproduct | Catalisa",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "4c8f57e997b9b15e1b568c152eee5c05dd266c5b987b90849a278f09a5e27679",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/ecosysteme/credit",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 138,
+      "lang": "fr-FR",
+      "title": "Plateforme de crédit: concevez votre produit de crédit | Catalisa",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "b31f09f871fa1a44e331958662aee50ab7acbd79416e03275c15ea3b4ef6991a",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/politica-privacidade",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 188,
+      "lang": "pt-BR",
+      "title": "Política de Privacidade",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "040a08cf8a015d4ec2f90a0dc3e37056f2387017b53dd5dc6d4716604bbc7dd4",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/privacy-policy",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 157,
+      "lang": "en-US",
+      "title": "Privacy Policy",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "708dd0943e604efcdbb6364a9faca1b1609b3342e16947640e33ddf5daace5c6",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/datenschutz",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 267,
+      "lang": "de-DE",
+      "title": "Datenschutzerklärung",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "d52a083580a69b44ca81b1e622c0cf45407a9210e5ac2d94aed1dbc4f3dc28d4",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/politica-de-privacidad",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 119,
+      "lang": "es-ES",
+      "title": "Política de Privacidad",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "ecca8440f24431bb06f914a68c8c7b70ed9245fcb2602c27aff8935e0d71e437",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/privatlivspolitik",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 57,
+      "lang": "da-DK",
+      "title": "Privatlivspolitik",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "187d785db1499fc09077090ce8ffa6e9c2d5ed0e9d831776fbacff82d685dd1e",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/privacybeleid",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 379,
+      "lang": "nl-NL",
+      "title": "Privacybeleid",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "463719c05a3f5816fae9847ed862845115242f4c726ecafe46eb6a3c7d945aa7",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/politique-de-confidentialite",
+      "status": 200,
+      "passed": true,
+      "release": "20261026-staging-clarity",
+      "durationMs": 807,
+      "lang": "fr-FR",
+      "title": "Politique de confidentialité",
+      "alternates": 8,
+      "headerNoindex": true,
+      "htmlSha256": "0875733bd19907f1a87b85bb767e693871a1e0b26763a91945235d7b5f3bfc3b",
+      "tls": {
+        "authorized": true,
+        "protocol": "TLSv1.3",
+        "validTo": "Jan 23 04:01:29 2027 GMT"
+      },
+      "candidateBytesIdentical": true
+    }
+  ],
+  "errors": [],
+  "dns": [
+    {
+      "hostname": "catalisa.io",
+      "addresses": [
+        {
+          "address": "177.104.184.38",
+          "family": 4
+        }
+      ]
+    },
+    {
+      "hostname": "www.catalisa.io",
+      "addresses": [
+        {
+          "address": "177.104.184.38",
+          "family": 4
+        }
+      ]
+    },
+    {
+      "hostname": "site-staging.catalisa.io",
+      "addresses": [
+        {
+          "address": "177.104.184.38",
+          "family": 4
+        }
+      ]
+    }
+  ],
+  "robots": {
+    "status": 200,
+    "blocksAll": true,
+    "sha256": "efdb5938a9736727f5cce2b60355588e4fa541d19d022d222d8a09b8efd5dcce"
+  },
+  "sitemap": {
+    "status": 200,
+    "publicUrls": 670,
+    "exactInventory": true,
+    "reciprocalExpectedAlternates": true,
+    "sha256": "e0238bcd777689ac1247a729a6d882c2de3b01890ca01c269d184fc68fb1938f"
+  },
+  "anonymousSession": {
+    "status": 401,
+    "json": true,
+    "noCookieIssued": true
+  },
+  "designSystem": [
+    {
+      "locale": "pt-BR",
+      "path": "/design-system",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/design-system",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/designsystem",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/sistema-de-diseno",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/designsystem",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/designsysteem",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/systeme-de-design",
+      "status": 200,
+      "noindex": true
+    }
+  ]
+}

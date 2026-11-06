@@ -1,0 +1,20 @@
+{
+  "target": "staging",
+  "dedicatedSiteAgentOnly": true,
+  "agentIdUnchanged": true,
+  "providerBefore": "anthropic",
+  "providerAfter": "openai",
+  "toolCount": 0,
+  "usesExistingOwnerCredential": true,
+  "productionUnchanged": true,
+  "panelDeployment": false,
+  "buildingBlockChanges": false,
+  "apply": true,
+  "appliedAt": "2026-10-26T13:03:39.733Z",
+  "verified": true,
+  "systemPromptSha256": "e370864cbc77f5d560bdad0d2e147564165961ee2c5ce8250dec53d71d3a5625",
+  "realBrowserAcceptancePending": false,
+  "realBrowserAcceptedAt": "2026-10-26T13:10:30.441632+00:00",
+  "actualContactReport": "qa/contact-recovery-real-staging/verification.json",
+  "actualLabReport": "qa/lab-real-staging/verification.json"
+}

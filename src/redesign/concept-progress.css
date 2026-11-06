@@ -1,0 +1,43 @@
+.c-site .c-concept-progress{margin:24px 0;padding:20px;border:1px solid #c9b3d9;background:#eee5f4;color:var(--c-ink);text-align:left;scroll-margin-block:110px 28px;animation:c-concept-arrive .3s ease-out}
+.c-site .c-concept-progress-head{display:flex;align-items:flex-start;gap:14px}
+.c-site .c-concept-progress-head>div{flex:1;min-width:0}
+.c-site .c-concept-progress-head strong{display:block;font-size:15px;font-weight:600;line-height:1.5}
+.c-site .c-concept-progress-head p{margin:7px 0 0;font-size:12px;line-height:1.75;color:#594461;max-width:50ch}
+.c-site .c-concept-progress-time{font:12px/1.8 monospace;color:#694582;min-width:4ch;white-space:nowrap;font-variant-numeric:tabular-nums}
+.c-site .c-concept-progress-mark{display:grid;grid-template-columns:repeat(2,12px);grid-template-rows:repeat(2,12px);gap:3px;width:27px;margin-top:4px;flex-shrink:0}
+.c-site .c-concept-progress-mark i{background:#734b9c;animation:c-concept-piece 1.8s ease-in-out infinite alternate}
+.c-site .c-concept-progress-mark i:nth-child(2){background:#e9a05f;animation-delay:-.6s}
+.c-site .c-concept-progress-mark i:nth-child(3){background:#f2c341;border-radius:50%;grid-column:2;animation-delay:-1.2s}
+.c-site .c-concept-progress-track{height:3px;overflow:hidden;background:#d7c5e3;margin:19px 0 16px}
+.c-site .c-concept-progress-track>span{display:block;width:35%;height:100%;background:#734b9c;animation:c-concept-scan 2.2s ease-in-out infinite}
+.c-site .c-concept-progress ol{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;list-style:none;margin:0;padding:0}
+.c-site .c-concept-progress li{display:flex;align-items:flex-start;gap:7px;font-size:10px;line-height:1.6;color:#75607e}
+.c-site .c-concept-progress li>span{display:block;width:9px;height:9px;flex:0 0 9px;border:1px solid #a68ab8;margin-top:3px}
+.c-site .c-concept-progress li[data-state=done]>span{background:#a58ab8;border-color:#a58ab8}
+.c-site .c-concept-progress li[data-state=active]{color:#503065;font-weight:600}
+.c-site .c-concept-progress li[data-state=active]>span{background:#f2c341;border-color:#c39a2b;box-shadow:0 0 0 3px #f2c34130}
+.c-site .c-concept-progress-compact{padding:16px;margin:16px 0}
+.c-site .c-concept-progress-compact .c-concept-progress-head{gap:10px;flex-wrap:wrap}
+.c-site .c-concept-progress-compact .c-concept-progress-head strong{font-size:13px}
+.c-site .c-concept-progress-compact .c-concept-progress-head p{font-size:11px}
+.c-site .c-concept-progress-compact .c-concept-progress-mark{display:none}
+.c-site .c-concept-pending-preview{min-height:540px;padding:38px;background:#eee5f4;overflow:hidden;animation:c-concept-arrive .3s ease-out}
+.c-site .c-concept-pending-preview h3{font-size:clamp(30px,4vw,48px);font-weight:400;letter-spacing:-.045em;line-height:1.08;margin:22px 0 16px;color:var(--c-ink)}
+.c-site .c-concept-pending-preview>p{font-size:13px;line-height:1.8;max-width:40ch;color:#594461;margin:0}
+.c-site .c-concept-pending-cards{display:flex;gap:15px;margin:40px 0 8px;transform:rotate(-3deg)}
+.c-site .c-concept-pending-cards>div{flex:1;min-width:0;height:190px;background:#f9f5fb;border:1px solid #d0bddd;padding:18px;animation:c-concept-card 2.4s ease-in-out infinite alternate}
+.c-site .c-concept-pending-cards>div:nth-child(2){animation-delay:-.8s;transform:translateY(12px)}
+.c-site .c-concept-pending-cards>div:nth-child(3){animation-delay:-1.6s}
+.c-site .c-concept-pending-cards i{display:block;width:24px;height:24px;background:#d1b8e1;border-radius:50%;margin:4px 0 24px}
+.c-site .c-concept-pending-cards span{display:block;height:5px;background:#e2d4eb;margin:11px 0;width:90%}
+.c-site .c-concept-pending-cards span+span{width:65%}
+.c-site .c-concept-pending-cards b{display:block;width:50%;height:15px;background:#edb78b;margin-top:25px}
+@keyframes c-concept-piece{from{opacity:.55;transform:translateY(0)}to{opacity:1;transform:translateY(-4px)}}
+@keyframes c-concept-scan{from{transform:translateX(-110%)}to{transform:translateX(390%)}}
+@keyframes c-concept-card{from{opacity:.55;translate:0 0}to{opacity:1;translate:0 -7px}}
+@keyframes c-concept-arrive{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.c-site.c-scene-paused .c-concept-progress *,.c-site.c-scene-paused .c-concept-pending-preview *{animation-play-state:paused!important}
+.c-site.c-scene-paused .c-concept-progress,.c-site.c-scene-paused .c-concept-pending-preview,.c-site.c-scene-paused .zd-workspace{animation:none}
+.c-site.c-scene-paused .c-concept-progress-track>span{animation:none;transform:translateX(100%)}
+@media(max-width:700px){.c-site .c-concept-progress{padding:16px;margin:20px 0}.c-site .c-concept-progress-head{gap:10px}.c-site .c-concept-progress-head strong{font-size:13px}.c-site .c-concept-progress-head p{font-size:11px}.c-site .c-concept-progress-mark{grid-template-columns:repeat(2,9px);grid-template-rows:repeat(2,9px);width:21px}.c-site .c-concept-progress-time{font-size:11px}.c-site .c-concept-progress ol{gap:8px}.c-site .c-concept-progress li{font-size:9px;gap:5px}.c-site .c-concept-pending-preview{padding:25px;min-height:420px}.c-site .c-concept-pending-cards{gap:8px}.c-site .c-concept-pending-cards>div{height:150px;padding:10px}}
+@media(prefers-reduced-motion:reduce){.c-site .c-concept-progress,.c-site .c-concept-progress *,.c-site .c-concept-pending-preview,.c-site .c-concept-pending-preview *{animation:none!important;transition:none!important}.c-site .c-concept-progress-track>span{transform:translateX(100%)}}

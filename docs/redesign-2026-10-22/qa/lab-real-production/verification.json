@@ -1,0 +1,371 @@
+{
+  "date": "2026-10-26T23:46:43.943Z",
+  "passed": true,
+  "origin": "https://catalisa.io",
+  "release": "20261026-products-exhibition",
+  "tlsValidation": true,
+  "scope": "Actual public production Lab/BFF and configured production AI; synthetic reserved contact, generation, reload and Contact continuation. No handoff or external messages.",
+  "stage": "contact-continuation",
+  "result": {
+    "idea": "Quero matricular alunos de uma escola de inglês pelo WhatsApp",
+    "elapsedMs": 23014,
+    "concept": {
+      "conceptRef": "concept_1ff72f0d-5d2c-460f-8f4d-28febd2a79f7",
+      "version": 1,
+      "briefVersion": 1,
+      "content": {
+        "schemaVersion": "1.0",
+        "title": "Matrícula de Alunos por WhatsApp",
+        "summary": "Plataforma de inscrição e matrícula de alunos para escola de inglês via WhatsApp, permitindo coleta de dados, confirmação de turma e envio de documentos, sem necessidade de formulário web ou presencial.",
+        "hypothesis": "Escolas de inglês podem capturar e processar matrículas via WhatsApp, reduzindo fricção e alcançando alunos em seu canal preferido. Assumimos: (1) a escola já opera WhatsApp Business; (2) os dados de matrícula incluem nome, contato, nível de inglês e turma desejada; (3) há confirmação manual ou automática antes da finalização; (4) documentos (contrato, comprovante) são entregues por link ou arquivo; (5) o público-alvo é Brasil, maiores de idade ou responsáveis de menores.",
+        "roles": [
+          "Interessado (candidato a aluno ou responsável)",
+          "Assistente IA (coleta e orienta na matrícula)",
+          "Gestor da escola (confirma inscrição e aloca turma)",
+          "Sistema de armazenamento (registra dados e documentos)"
+        ],
+        "screens": [
+          {
+            "id": "screen_welcome",
+            "title": "Boas-vindas e Apresentação",
+            "description": "Primeiro contato: apresentação da escola e coleta de consentimento para iniciar a matrícula.",
+            "items": [
+              {
+                "label": "Escola",
+                "value": "Escola de Inglês [Nome da Escola]"
+              },
+              {
+                "label": "Propósito",
+                "value": "Vamos matriculá-lo em uma turma de inglês"
+              },
+              {
+                "label": "Consentimento",
+                "value": "Autorizo o armazenamento de meus dados para matrícula"
+              }
+            ],
+            "action": {
+              "label": "Iniciar matrícula",
+              "nextScreenId": "screen_data_collection"
+            }
+          },
+          {
+            "id": "screen_data_collection",
+            "title": "Coleta de Dados",
+            "description": "Perguntas sequenciais sobre nome completo, contato, nível de inglês e turma preferida.",
+            "items": [
+              {
+                "label": "Nome completo",
+                "value": "Seu nome completo (obrigatório)"
+              },
+              {
+                "label": "Nível de inglês",
+                "value": "Iniciante, Intermediário ou Avançado"
+              },
+              {
+                "label": "Turma preferida",
+                "value": "Manhã, Tarde ou Noite"
+              }
+            ],
+            "action": {
+              "label": "Confirmar dados",
+              "nextScreenId": "screen_confirmation"
+            }
+          },
+          {
+            "id": "screen_confirmation",
+            "title": "Resumo e Confirmação",
+            "description": "Revisão dos dados coletados e confirmação de inscrição antes do envio ao gestor.",
+            "items": [
+              {
+                "label": "Dados fornecidos",
+                "value": "Nome, contato, nível e turma selecionada"
+              },
+              {
+                "label": "Status",
+                "value": "Aguardando confirmação da escola"
+              },
+              {
+                "label": "Próximos passos",
+                "value": "Você receberá contato da escola em até 24 horas"
+              }
+            ],
+            "action": {
+              "label": "Finalizar inscrição",
+              "nextScreenId": null
+            }
+          }
+        ],
+        "blocks": [
+          {
+            "slug": "wpp-business",
+            "role": "Canal principal de entrada, coleta de dados e envio de confirmações via WhatsApp Business da escola"
+          },
+          {
+            "slug": "ai-engine",
+            "role": "Assistente conversacional que guia o candidato pelas perguntas de matrícula e valida respostas"
+          },
+          {
+            "slug": "data-store",
+            "role": "Armazenamento de inscrições e dados de candidatos isolados por escola (multi-tenant)"
+          },
+          {
+            "slug": "document-template",
+            "role": "Geração de contrato de matrícula e comprovante de inscrição a partir de template versionado"
+          }
+        ],
+        "journey": [
+          {
+            "id": "step_01_engagement",
+            "label": "Engajamento inicial",
+            "description": "Candidato recebe mensagem de boas-vindas no WhatsApp e consente em iniciar o fluxo de matrícula.",
+            "blockSlugs": [
+              "wpp-business"
+            ],
+            "humanReview": false
+          },
+          {
+            "id": "step_02_data_collection",
+            "label": "Coleta de dados",
+            "description": "Assistente IA faz perguntas sobre nome, nível de inglês e turma preferida; valida e armazena as respostas.",
+            "blockSlugs": [
+              "ai-engine",
+              "data-store"
+            ],
+            "humanReview": false
+          },
+          {
+            "id": "step_03_confirmation",
+            "label": "Confirmação e alocação",
+            "description": "Gestor da escola revisa a inscrição, confirma disponibilidade de turma e envia documentos (contrato, comprovante).",
+            "blockSlugs": [
+              "document-template",
+              "wpp-business"
+            ],
+            "humanReview": true
+          },
+          {
+            "id": "step_04_delivery",
+            "label": "Entrega de documentos",
+            "description": "Contrato e comprovante de matrícula são enviados ao candidato via WhatsApp; fluxo encerrado.",
+            "blockSlugs": [
+              "wpp-business"
+            ],
+            "humanReview": false
+          }
+        ],
+        "limitations": [
+          "Menores de idade: requer consentimento e assinatura do responsável legal; fluxo atual não diferencia ou autentica responsável.",
+          "Validação de identidade: conceito não inclui prova de vida ou verificação de CPF; recomenda-se adicionar biometria ou consulta a bureaus em fase de refinamento.",
+          "Integração com agenda: alocação de turma assume disponibilidade manual; não sincroniza com calendário de aulas em tempo real.",
+          "Assinatura eletrônica: contrato é enviado por link externo; conceito não inclui e-signature integrada; recomenda-se avaliar e-signature em próximo passo.",
+          "Suporte multi-idioma: fluxo assume português brasileiro; alunos internacionais ou em outros idiomas não estão cobertos.",
+          "Retenção de dados: conceito não especifica política de exclusão ou conformidade LGPD; requer revisão jurídica antes de produção."
+        ],
+        "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+      }
+    },
+    "reload": true,
+    "contactContinuation": true,
+    "sessionSetupCount": 1,
+    "requests": [
+      {
+        "path": "/api/site/session",
+        "status": 401,
+        "method": "GET",
+        "elapsedMs": 400
+      },
+      {
+        "path": "/api/site/sessions",
+        "status": 201,
+        "method": "POST",
+        "elapsedMs": 543
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 528
+      },
+      {
+        "path": "/api/site/lab/briefing",
+        "status": 200,
+        "method": "POST",
+        "elapsedMs": 816
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 690
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 661
+      },
+      {
+        "path": "/api/site/identity",
+        "status": 201,
+        "method": "POST",
+        "elapsedMs": 890
+      },
+      {
+        "path": "/api/site/contact",
+        "status": 200,
+        "method": "POST",
+        "elapsedMs": 717
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 344
+      },
+      {
+        "path": "/api/site/concepts",
+        "status": 202,
+        "method": "POST",
+        "elapsedMs": 19044
+      },
+      {
+        "path": "/api/site/jobs/job_ee586ffc-635c-4b88-b563-f23505e24528",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 392
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 347
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 330
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 443
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 527
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 584
+      }
+    ],
+    "errors": []
+  },
+  "requests": [
+    {
+      "path": "/api/site/session",
+      "status": 401,
+      "method": "GET",
+      "elapsedMs": 400
+    },
+    {
+      "path": "/api/site/sessions",
+      "status": 201,
+      "method": "POST",
+      "elapsedMs": 543
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 528
+    },
+    {
+      "path": "/api/site/lab/briefing",
+      "status": 200,
+      "method": "POST",
+      "elapsedMs": 816
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 690
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 661
+    },
+    {
+      "path": "/api/site/identity",
+      "status": 201,
+      "method": "POST",
+      "elapsedMs": 890
+    },
+    {
+      "path": "/api/site/contact",
+      "status": 200,
+      "method": "POST",
+      "elapsedMs": 717
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 344
+    },
+    {
+      "path": "/api/site/concepts",
+      "status": 202,
+      "method": "POST",
+      "elapsedMs": 19044
+    },
+    {
+      "path": "/api/site/jobs/job_ee586ffc-635c-4b88-b563-f23505e24528",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 392
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 347
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 330
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 443
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 527
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 584
+    }
+  ],
+  "failedRequests": [],
+  "errors": [],
+  "totalElapsedMs": 30956
+}

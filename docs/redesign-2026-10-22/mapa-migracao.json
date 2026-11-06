@@ -1,0 +1,630 @@
+{
+  "date": "2026-10-23",
+  "baseline": "fb78ff5d7229e1ccac83646d6c2bbafbde9a19b6",
+  "scope": "69 prototype routes. Code presence is separate from visual fidelity, real integrations and release approval. Visual review reopened after explicit user feedback on 2026-10-23. Preview is an independent new application; no staging/production deployment.",
+  "routes": [
+    {
+      "referenceRoute": "/",
+      "title": "Home",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Home.tsx",
+      "localPreview": "/",
+      "legacyRouteExists": true
+    },
+    {
+      "referenceRoute": "/visao/",
+      "title": "Visão",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/visao/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Vision.tsx",
+      "localPreview": "/visao/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/arquitetura/",
+      "title": "Arquitetura",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/arquitetura/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Architecture.tsx",
+      "localPreview": "/arquitetura/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/capacidades/",
+      "title": "Building blocks",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/capacidades/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Capabilities.tsx",
+      "localPreview": "/capacidades/",
+      "legacyRouteExists": true
+    },
+    {
+      "referenceRoute": "/studio/",
+      "title": "Studio",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/studio/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Studio.tsx",
+      "localPreview": "/studio/",
+      "legacyRouteExists": true
+    },
+    {
+      "referenceRoute": "/workflows/",
+      "title": "Workflows",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/workflows/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Workflows.tsx",
+      "localPreview": "/workflows/",
+      "legacyRouteExists": true
+    },
+    {
+      "referenceRoute": "/agentes/",
+      "title": "Agentes IA",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/agentes/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Agents.tsx",
+      "localPreview": "/agentes/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/governanca/",
+      "title": "Governança",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/governanca/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Governance.tsx",
+      "localPreview": "/governanca/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/desenvolvedores/",
+      "title": "Desenvolvedores",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/desenvolvedores/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Developers.tsx",
+      "localPreview": "/desenvolvedores/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/composicoes/",
+      "title": "Composições",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/composicoes/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Ecosystem.tsx",
+      "localPreview": "/composicoes/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/ecossistema/",
+      "title": "Ecossistema",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/ecossistema/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Ecosystem.tsx",
+      "localPreview": "/ecossistema/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/interfaces/",
+      "title": "Interfaces",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/interfaces/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Resources.tsx",
+      "localPreview": "/interfaces/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/perspectivas/",
+      "title": "Perspectivas",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/perspectivas/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Editorial.tsx",
+      "localPreview": "/perspectivas/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/press-kit/",
+      "title": "Press-kit",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/press-kit/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Resources.tsx",
+      "localPreview": "/press-kit/",
+      "legacyRouteExists": true
+    },
+    {
+      "referenceRoute": "/contato/",
+      "title": "Contato",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/contato/index.html",
+      "state": "native-integration-in-progress",
+      "component": "src/redesign/Contact.tsx",
+      "localPreview": "/contato/",
+      "legacyRouteExists": true,
+      "notes": "Four-width local QA through persisted summary. Shared staging storage, AI generation and handoff remain pending."
+    },
+    {
+      "referenceRoute": "/fontes/",
+      "title": "Fontes",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/fontes/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Resources.tsx",
+      "localPreview": "/fontes/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/mapa/",
+      "title": "Mapa do site",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/mapa/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Resources.tsx",
+      "localPreview": "/mapa/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/lab/",
+      "title": "Lab",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/lab/index.html",
+      "state": "pending-native",
+      "component": null,
+      "localPreview": null,
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/ecossistema/banking/",
+      "title": "Banking Platform",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/ecossistema/banking/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Banking.tsx",
+      "localPreview": "/ecossistema/banking/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/ecossistema/credit/",
+      "title": "Credit Platform",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/ecossistema/credit/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Credit.tsx",
+      "localPreview": "/ecossistema/credit/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/ecossistema/med/",
+      "title": "Med",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/ecossistema/med/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Ecosystem.tsx",
+      "localPreview": "/ecossistema/med/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/ecossistema/juridico/",
+      "title": "Jurídico",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/ecossistema/juridico/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Ecosystem.tsx",
+      "localPreview": "/ecossistema/juridico/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/ecossistema/recrutamento/",
+      "title": "Recrutamento",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/ecossistema/recrutamento/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Ecosystem.tsx",
+      "localPreview": "/ecossistema/recrutamento/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/ecossistema/biometrics/",
+      "title": "Biometrics",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/ecossistema/biometrics/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Ecosystem.tsx",
+      "localPreview": "/ecossistema/biometrics/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/ecossistema/decision/",
+      "title": "Decision",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/ecossistema/decision/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Ecosystem.tsx",
+      "localPreview": "/ecossistema/decision/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/capacidades/ai-engine/",
+      "title": "AI Engine",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/capacidades/ai-engine/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Capabilities.tsx",
+      "localPreview": "/capacidades/ai-engine/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/capacidades/analytics/",
+      "title": "Analytics",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/capacidades/analytics/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Capabilities.tsx",
+      "localPreview": "/capacidades/analytics/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/capacidades/api-keys/",
+      "title": "API Keys",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/capacidades/api-keys/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Capabilities.tsx",
+      "localPreview": "/capacidades/api-keys/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/capacidades/audit-trail/",
+      "title": "Audit Trail",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/capacidades/audit-trail/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Capabilities.tsx",
+      "localPreview": "/capacidades/audit-trail/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/capacidades/baas/",
+      "title": "BaaS",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/capacidades/baas/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Capabilities.tsx",
+      "localPreview": "/capacidades/baas/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/capacidades/banking/",
+      "title": "Banking",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/capacidades/banking/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Capabilities.tsx",
+      "localPreview": "/capacidades/banking/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/capacidades/banking-product-portfolio/",
+      "title": "Banking Product Portfolio",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/capacidades/banking-product-portfolio/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Capabilities.tsx",
+      "localPreview": "/capacidades/banking-product-portfolio/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/capacidades/billing/",
+      "title": "Billing",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/capacidades/billing/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Capabilities.tsx",
+      "localPreview": "/capacidades/billing/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/capacidades/biometrics/",
+      "title": "Biometrics",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/capacidades/biometrics/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Capabilities.tsx",
+      "localPreview": "/capacidades/biometrics/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/capacidades/bureaus/",
+      "title": "Bureaus",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/capacidades/bureaus/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Capabilities.tsx",
+      "localPreview": "/capacidades/bureaus/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/capacidades/calculations-engine/",
+      "title": "Calculations Engine",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/capacidades/calculations-engine/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Capabilities.tsx",
+      "localPreview": "/capacidades/calculations-engine/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/capacidades/calendar/",
+      "title": "Calendar",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/capacidades/calendar/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Capabilities.tsx",
+      "localPreview": "/capacidades/calendar/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/capacidades/cms/",
+      "title": "CMS",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/capacidades/cms/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Capabilities.tsx",
+      "localPreview": "/capacidades/cms/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/capacidades/commerce/",
+      "title": "Commerce",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/capacidades/commerce/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Capabilities.tsx",
+      "localPreview": "/capacidades/commerce/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/capacidades/companies/",
+      "title": "Companies",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/capacidades/companies/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Capabilities.tsx",
+      "localPreview": "/capacidades/companies/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/capacidades/customers/",
+      "title": "Customers",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/capacidades/customers/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Capabilities.tsx",
+      "localPreview": "/capacidades/customers/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/capacidades/data-extraction/",
+      "title": "Data Extraction",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/capacidades/data-extraction/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Capabilities.tsx",
+      "localPreview": "/capacidades/data-extraction/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/capacidades/data-store/",
+      "title": "Data Store",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/capacidades/data-store/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Capabilities.tsx",
+      "localPreview": "/capacidades/data-store/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/capacidades/decision-engine/",
+      "title": "Decision Engine",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/capacidades/decision-engine/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Capabilities.tsx",
+      "localPreview": "/capacidades/decision-engine/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/capacidades/decision-platform/",
+      "title": "Decision Platform",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/capacidades/decision-platform/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Capabilities.tsx",
+      "localPreview": "/capacidades/decision-platform/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/capacidades/document-template/",
+      "title": "Document Template",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/capacidades/document-template/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Capabilities.tsx",
+      "localPreview": "/capacidades/document-template/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/capacidades/e-signature/",
+      "title": "E-Signature",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/capacidades/e-signature/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Capabilities.tsx",
+      "localPreview": "/capacidades/e-signature/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/capacidades/email/",
+      "title": "Email",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/capacidades/email/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Capabilities.tsx",
+      "localPreview": "/capacidades/email/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/capacidades/feature-flags/",
+      "title": "Feature Flags",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/capacidades/feature-flags/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Capabilities.tsx",
+      "localPreview": "/capacidades/feature-flags/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/capacidades/file-storage/",
+      "title": "File Storage",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/capacidades/file-storage/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Capabilities.tsx",
+      "localPreview": "/capacidades/file-storage/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/capacidades/iam/",
+      "title": "IAM",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/capacidades/iam/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Capabilities.tsx",
+      "localPreview": "/capacidades/iam/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/capacidades/meta-account/",
+      "title": "Meta Account",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/capacidades/meta-account/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Capabilities.tsx",
+      "localPreview": "/capacidades/meta-account/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/capacidades/open-finance/",
+      "title": "Open Finance",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/capacidades/open-finance/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Capabilities.tsx",
+      "localPreview": "/capacidades/open-finance/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/capacidades/payments/",
+      "title": "Payments",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/capacidades/payments/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Capabilities.tsx",
+      "localPreview": "/capacidades/payments/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/capacidades/people/",
+      "title": "People",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/capacidades/people/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Capabilities.tsx",
+      "localPreview": "/capacidades/people/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/capacidades/pricing-engine/",
+      "title": "Pricing Engine",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/capacidades/pricing-engine/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Capabilities.tsx",
+      "localPreview": "/capacidades/pricing-engine/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/capacidades/products/",
+      "title": "Products",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/capacidades/products/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Capabilities.tsx",
+      "localPreview": "/capacidades/products/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/capacidades/rooms/",
+      "title": "Rooms",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/capacidades/rooms/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Capabilities.tsx",
+      "localPreview": "/capacidades/rooms/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/capacidades/service-attestations/",
+      "title": "Service Attestations",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/capacidades/service-attestations/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Capabilities.tsx",
+      "localPreview": "/capacidades/service-attestations/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/capacidades/slack/",
+      "title": "Slack",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/capacidades/slack/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Capabilities.tsx",
+      "localPreview": "/capacidades/slack/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/capacidades/sso/",
+      "title": "SSO",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/capacidades/sso/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Capabilities.tsx",
+      "localPreview": "/capacidades/sso/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/capacidades/webhooks-engine/",
+      "title": "Webhooks Engine",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/capacidades/webhooks-engine/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Capabilities.tsx",
+      "localPreview": "/capacidades/webhooks-engine/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/capacidades/wpp/",
+      "title": "WPP",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/capacidades/wpp/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Capabilities.tsx",
+      "localPreview": "/capacidades/wpp/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/capacidades/wpp-business/",
+      "title": "WPP Business",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/capacidades/wpp-business/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Capabilities.tsx",
+      "localPreview": "/capacidades/wpp-business/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/perspectivas/construir-por-composicao/",
+      "title": "Modernizar sem recomeçar o banco.",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/perspectivas/construir-por-composicao/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Editorial.tsx",
+      "localPreview": "/perspectivas/construir-por-composicao/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/perspectivas/autonomia-responsabilidade/",
+      "title": "A IA respondeu. A operação aconteceu?",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/perspectivas/autonomia-responsabilidade/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Editorial.tsx",
+      "localPreview": "/perspectivas/autonomia-responsabilidade/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/perspectivas/regra-legivel/",
+      "title": "Decidir rápido. Conseguir explicar depois.",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/perspectivas/regra-legivel/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Editorial.tsx",
+      "localPreview": "/perspectivas/regra-legivel/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/perspectivas/open-finance-da-conexao-ao-produto/",
+      "title": "Conectar dados é só o começo.",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/perspectivas/open-finance-da-conexao-ao-produto/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Editorial.tsx",
+      "localPreview": "/perspectivas/open-finance-da-conexao-ao-produto/",
+      "legacyRouteExists": false
+    },
+    {
+      "referenceRoute": "/perspectivas/resiliencia-e-liberdade-de-evoluir/",
+      "title": "E se uma peça ficar indisponível?",
+      "referenceHtml": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/reference/site/dist/perspectivas/resiliencia-e-liberdade-de-evoluir/index.html",
+      "state": "native-under-visual-review",
+      "component": "src/redesign/Editorial.tsx",
+      "localPreview": "/perspectivas/resiliencia-e-liberdade-de-evoluir/",
+      "legacyRouteExists": false
+    }
+  ],
+  "existingRoutesOutsidePrototype": "English, Academy, presentations, legal, legacy use cases and Insights remain in src/App.tsx; audit redirects and new shell integration before cutover."
+}

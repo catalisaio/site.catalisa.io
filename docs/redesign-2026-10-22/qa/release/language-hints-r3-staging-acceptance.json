@@ -1,0 +1,95 @@
+{
+  "checkedAt": "2026-10-27T02:50:07.954Z",
+  "releaseId": "20261027-language-hints-r3",
+  "staging": "https://site-staging.catalisa.io",
+  "productionStill": "20261027-ga-realtime",
+  "stagingValidationPassed": true,
+  "productionPrepared": true,
+  "productionInstalled": false,
+  "productionAuthorizationReceived": false,
+  "publicArtifactSha256": "796edeb53cb1047405e57a081a9e4918fc02e33f2fb91274f3d9cc0fcf088fed",
+  "serverArtifactSha256": "586254469a4310eaf70a5603952bdcedb0c81151ff14e04083027b58f557889f",
+  "serverIdenticalToPublishedProduction": true,
+  "runtimeAssetsIdenticalToValidatedR2": true,
+  "changes": [
+    "Language aria-controls exists only while the popup is mounted.",
+    "Snapshot modulepreloads point to the current build; modules sharing a filename are identified by stable public named exports when unambiguous."
+  ],
+  "unchanged": [
+    "All page copy, imagery, branding, SEO metadata and routes",
+    "CCP communication pending user validation",
+    "Runtime API/session behavior and backend",
+    "GA and Clarity configuration"
+  ],
+  "checks": {
+    "publicHttpsRoutes": 49,
+    "languages": 7,
+    "actualLiveUiChecks": 28,
+    "languageBrowserChecks": 12,
+    "languageWidths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "stagingOperationsPassed": true,
+    "actualLoadingTimelineRoutes": 3,
+    "staleScriptLoads": 0,
+    "unitTestsPassed": 7,
+    "appTypeScriptPassed": true,
+    "sourceChecksReusedBecauseRuntimeAssetBytesUnchanged": true,
+    "htmlFilesContentCompared": 680,
+    "stageProductionBytesIdentical": true
+  },
+  "performance": {
+    "controlledContactComparison": {
+      "baseline": {
+        "samples": 3,
+        "medianLcpMs": 4840,
+        "medianRevealMs": 4519.799999999814
+      },
+      "revised": {
+        "samples": 3,
+        "medianLcpMs": 3216,
+        "medianRevealMs": 2882.7000000001863
+      }
+    },
+    "scope": "Three alternating local document-overlay samples per variant on actual staging assets. This is a controlled diagnostic, not a production or field performance claim.",
+    "actualStagingSingleRun": [
+      {
+        "route": "/contato",
+        "lcpMs": 4036,
+        "ttfbMs": 372.5
+      },
+      {
+        "route": "/lab",
+        "lcpMs": 1604,
+        "ttfbMs": 190.20000000018626
+      },
+      {
+        "route": "/ecossistema/credit",
+        "lcpMs": 4028,
+        "ttfbMs": 2323.7000000001863
+      }
+    ],
+    "universalSpeedImprovementProven": false
+  },
+  "evidence": {
+    "http": "qa/release/language-hints-r3-staging-http.json",
+    "browser": "qa/release/language-hints-r3-staging-browser.json",
+    "language": "qa/language-hints-r3-language/verification.json",
+    "operations": "qa/release/language-hints-r3-staging-ops.json",
+    "integrity": "qa/release/language-hints-r3-integrity.json",
+    "moduleHints": "qa/loading-diagnosis/semantic-hints-applied.json",
+    "loading": "qa/loading-diagnosis/r3-staging-timeline.json",
+    "controlledComparison": "qa/loading-diagnosis/contact-hint-overlay.json",
+    "baseContent": "qa/release/language-a11y-artifact-content.json"
+  },
+  "limits": [
+    "User confirmed no physical iPhone/Safari or Android/Chrome validation yet.",
+    "Contact and Credit samples still exceed2.5s under4xCPU/constrained4g; no field metrics or universal performance pass.",
+    "Operational queue, alerts and rollback responsibility remains unassigned.",
+    "Per-item editorial ownership and optional market-collection policy remain as previously recorded; no assignment or activation inferred.",
+    "CCP proposals remain unapplied."
+  ]
+}

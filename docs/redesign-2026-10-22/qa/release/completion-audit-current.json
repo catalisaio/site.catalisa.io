@@ -1,0 +1,313 @@
+{
+  "checkedAt": "2026-10-27T01:29:50.703Z",
+  "release": "20261027-ga-realtime",
+  "objective": "entao fecha tudo quero 100% tudo pronto pra producao",
+  "complete": false,
+  "scope": "Current production release; earlier functional evidence is identified explicitly when backend or rendered content is unchanged. CCP communication is separately held for user validation.",
+  "requirements": [
+    {
+      "id": "H01",
+      "state": "technical-evidence-present",
+      "evidence": [
+        "README.md",
+        "producao-operacao.md",
+        "qa/release/ga-realtime-production-published.json"
+      ],
+      "remaining": [],
+      "missingEvidenceFiles": []
+    },
+    {
+      "id": "H02",
+      "state": "technical-evidence-present",
+      "evidence": [
+        "qa/reference/rebuild.json",
+        "qa/release/brand-originals.json"
+      ],
+      "remaining": [],
+      "missingEvidenceFiles": []
+    },
+    {
+      "id": "H03",
+      "state": "published-and-user-approved",
+      "evidence": [
+        "qa/release/products-open-production-browser.json",
+        "qa/release/products-open-content.json",
+        "qa/release/current-status.json"
+      ],
+      "remaining": [],
+      "missingEvidenceFiles": []
+    },
+    {
+      "id": "H04",
+      "state": "integration-evidence-present",
+      "evidence": [
+        "qa/integrations/production-resources-real.json",
+        "qa/contact-real-production/verification-clinica-agenda.json",
+        "qa/lab-real-production/verification.json"
+      ],
+      "remaining": [],
+      "missingEvidenceFiles": []
+    },
+    {
+      "id": "H05",
+      "state": "integration-evidence-present",
+      "evidence": [
+        "qa/integrations/shared-store-real.json",
+        "qa/release/staging-rollback.json",
+        "qa/contact-real-production/verification-clinica-agenda.json",
+        "qa/lab-real-production/verification.json"
+      ],
+      "remaining": [],
+      "missingEvidenceFiles": []
+    },
+    {
+      "id": "H06",
+      "state": "implemented-with-explicit-inbox-adaptation",
+      "evidence": [
+        "qa/contact-direct-real-staging/verification.json",
+        "qa/contact-real-production/verification-clinica-agenda.json"
+      ],
+      "remaining": [
+        "Native CRM lead creation is not implemented; provisional BFF identity and site inbox are the documented operational adaptation."
+      ],
+      "missingEvidenceFiles": []
+    },
+    {
+      "id": "H07",
+      "state": "real-ai-smokes-passed-unchanged-backend",
+      "evidence": [
+        "qa/contact-real-production/verification-clinica-agenda.json",
+        "qa/lab-real-production/verification.json",
+        "qa/release/ga-realtime-production-published.json"
+      ],
+      "remaining": [],
+      "missingEvidenceFiles": []
+    },
+    {
+      "id": "H08",
+      "state": "integration-evidence-present",
+      "evidence": [
+        "qa/contact-real-production/verification-clinica-agenda.json",
+        "qa/lab-real-production/verification.json"
+      ],
+      "remaining": [],
+      "missingEvidenceFiles": []
+    },
+    {
+      "id": "H09",
+      "state": "inbox-integration-evidence-human-operation-pending",
+      "evidence": [
+        "qa/inbox-browser-staging/verification.json",
+        "qa/contact-direct-real-staging/verification.json"
+      ],
+      "remaining": [
+        "Confirm responsibility for queue and support coverage; external email/WhatsApp delivery is disabled."
+      ],
+      "missingEvidenceFiles": []
+    },
+    {
+      "id": "H10",
+      "state": "technical-hardening-and-live-operations-passed",
+      "evidence": [
+        "qa/release/recovery-production-ops.json",
+        "qa/release/recovery-staging-ops.json"
+      ],
+      "remaining": [
+        "Scheduled monitoring and alert receipt need operational confirmation."
+      ],
+      "missingEvidenceFiles": []
+    },
+    {
+      "id": "H11",
+      "state": "owner-review-register-still-pending",
+      "evidence": [
+        "editorial-review-register.json",
+        "qa/capability-curation/inventory.json"
+      ],
+      "remaining": [
+        "Per-item product maturity/editorial owner decisions are not recorded. Existing public-site acceptance is not rewritten as a specific product certification."
+      ],
+      "missingEvidenceFiles": []
+    },
+    {
+      "id": "H12",
+      "state": "automated-coverage-present-physical-devices-unconfirmed",
+      "evidence": [
+        "qa/site-quality-production-review/verification.json",
+        "qa/native/contrast.json"
+      ],
+      "remaining": [
+        "Confirm required physical Safari/iPhone and Chrome/Android validation or explicit exception.",
+        "Language accessibility and complete current-module hints verified in stagingr3; explicit production authorization remains pending."
+      ],
+      "missingEvidenceFiles": []
+    },
+    {
+      "id": "H13",
+      "state": "public-technical-ga-realtime-and-clarity-dashboards-verified",
+      "evidence": [
+        "qa/release/ga-realtime-production-http.json",
+        "qa/release/ga-realtime-staging-http.json",
+        "qa/seo-detailed/after.json",
+        "qa/seo-detailed/ga-production-consent-session.json",
+        "qa/seo-detailed/recovery-analytics-ui.json",
+        "qa/seo-detailed/recovery-ga-realtime-confirmed.json",
+        "qa/seo-detailed/recovery-clarity-confirmed.json"
+      ],
+      "remaining": [],
+      "missingEvidenceFiles": []
+    },
+    {
+      "id": "H14",
+      "state": "implemented-tested-public-market-collection-disabled",
+      "evidence": [
+        "qa/market-insights/real-staging.json"
+      ],
+      "remaining": [
+        "Market conversation taxonomy collection remains disabled pending policy/activation decision. GA and Clarity optional analytics are separate."
+      ],
+      "missingEvidenceFiles": []
+    },
+    {
+      "id": "H15",
+      "state": "optimized-laboratory-measurements-physical-performance-unconfirmed",
+      "evidence": [
+        "qa/home-preload-production-review/verification.json",
+        "qa/site-quality-production-review/verification.json"
+      ],
+      "remaining": [
+        "Current staging has correct native module hints and a controlled Contact preload improvement. Actual slow-network timing still varies and some samples exceed2.5s. Physical/field performance evidence is missing."
+      ],
+      "missingEvidenceFiles": []
+    },
+    {
+      "id": "H16",
+      "state": "editorial-routine-awaits-owner",
+      "evidence": [
+        "editorial-review-register.json"
+      ],
+      "remaining": [
+        "Confirm editorial owner and review interval before recording accepted assignment."
+      ],
+      "missingEvidenceFiles": []
+    }
+  ],
+  "userConstraints": {
+    "stagingBeforeProduction": true,
+    "productionAuthorizationRequired": true,
+    "noPanelOrBuildingBlocksChanges": true,
+    "ccpCommunicationImplementationHeld": true,
+    "contactLabLatencyOptimizationDeferred": true
+  },
+  "newEvidence": {
+    "productionOperational": "qa/release/recovery-production-ops.json",
+    "stagingOperational": "qa/release/recovery-staging-ops.json",
+    "actualConsentSession": "qa/seo-detailed/ga-production-consent-session.json",
+    "publicQuality": "qa/recovery-public-quality/verification.json",
+    "menuKeyboard": "qa/recovery-public-quality/keyboard-settled.json",
+    "stagingAcceptance": "qa/release/language-hints-r3-staging-acceptance.json",
+    "loadingTimeline": "qa/loading-diagnosis/staging-timeline.json",
+    "contactPreloadComparison": "qa/loading-diagnosis/contact-hint-overlay.json"
+  },
+  "questionsPending": [
+    "Name the queue, monitoring/alert and rollback responsible person and alert destination.",
+    "Confirm physical iPhone/Safari and Android/Chrome validation.",
+    "Explicit authorization to publish the staging-validated technical corrections."
+  ],
+  "priorGoalTurnClassification": "progress: restored and verified local preview and public release; persisted complete CCP terminology analysis; no production deployment.",
+  "currentTurnProgress": [
+    "Authenticated GA account Realtime reread, still zero.",
+    "Actual headed isolated Chrome test clicked consent and received9 real native GA event receipts with session IDs.",
+    "Both production and staging operational probes passed, including retention, no OOM/restarts, readiness and anonymous401.",
+    "Authenticated correct-account GA Realtime now confirms active user and native page_view,cta_click,qa_realtime_check events.",
+    "Clarity authenticated dashboards now confirmed, production3 sessions and both Heatmaps enabled. Inspected map has no click/scroll data; no settings changed.",
+    "Prepared and validated staging correction:680HTML preserved,678module-hint updates,49HTTPS routes,12locale/geometry checks,7quality routes,5keyboard checks,zero stale scripts; production unchanged.",
+    "Improved ambiguity resolution for modulepreloads, preserved all runtime asset bytes, and validated stagingr3 with49HTTP routes/28liveUI checks/12locale checks/operational probe and controlled plus actual loading timelines. Production unchanged."
+  ],
+  "userAnswers": {
+    "physicalDeviceValidation": "Ainda não validei",
+    "alertOwnership": "User asked why operational recipient was needed; no owner or alert destination has been assigned.",
+    "clarityAccess": "Retry succeeded: authenticated aggregate dashboards and Heatmaps enabled for both projects; production3 sessions, staging0."
+  },
+  "runtimeFindings": {
+    "publishedLanguageControlReference": "Closed language picker references a missing popup; source fix validated in7 tests, candidate20261027-language-a11y installing in staging only.",
+    "menuKeyboard": "Settled explicit PT and EN pages passed6 actual keyboard scenarios; initial failures were verifier locale-navigation race, not a confirmed menu defect.",
+    "performance": {
+      "scope": "Single-run production cold-cache390px Chromium emulation,4xCPU, constrained4g; not physical or field data.",
+      "routes": [
+        {
+          "route": "/",
+          "lcpMs": 2540,
+          "cls": 0.005473797045646566
+        },
+        {
+          "route": "/arquitetura",
+          "lcpMs": 3636,
+          "cls": 0.0002072391093600888
+        },
+        {
+          "route": "/contato",
+          "lcpMs": 4976,
+          "cls": 0.00009624864980167815
+        },
+        {
+          "route": "/lab",
+          "lcpMs": 5144,
+          "cls": 0.0008034237948211128
+        },
+        {
+          "route": "/produtos",
+          "lcpMs": 3072,
+          "cls": 0.0005542661299565344
+        },
+        {
+          "route": "/ecossistema/banking",
+          "lcpMs": 2576,
+          "cls": 0.0003652859466995984
+        },
+        {
+          "route": "/ecossistema/credit",
+          "lcpMs": 4916,
+          "cls": 0.00004105285916643198
+        }
+      ],
+      "thresholdFailuresNotHidden": true
+    },
+    "productionCandidate": "20261027-language-hints-r3"
+  },
+  "continuationAudit": {
+    "checkedAt": "2026-10-27T02:29:33.718Z",
+    "previousTurnClassification": "progress: confirmed GA/Clarity account reception and validated source-only ARIA/resource-hint corrections in staging; production approval requested, not received.",
+    "currentProgress": [
+      "Measured direct server response versus browser loading timeline.",
+      "Confirmed Contact reveals its screen only after session restoration; no generation latency claim.",
+      "Resolved ambiguous native module preloads by stable public exports while keeping content/runtime unchanged.",
+      "Controlled3+3 sample overlay comparison: Contact LCP median4840ms versus3216ms; private session behavior preserved."
+    ],
+    "productionPermissionReceived": false,
+    "physicalDeviceTestsUserConfirmedAbsent": true,
+    "operationalAlertOwnerStillUnassigned": true,
+    "stagingValidationFinished": true,
+    "latestValidatedCandidate": "20261027-language-hints-r3",
+    "productionAuthorizationStillMissing": true,
+    "nextRequiredAction": "User authorization for the presented staged technical correction; physical-device validation and operational responsibility decisions remain external requirements."
+  },
+  "externalGateAudit": {
+    "checkedAt": "2026-10-27T02:57:12.390Z",
+    "condition": "Explicit authorization to publish the staged language/accessibility/module-loading correction has not been received; physical-device validation and operational responsibility remain unconfirmed.",
+    "consecutiveGoalTurnsWithPublicationGatePending": 3,
+    "basis": [
+      "Previous goal turn ended with validated stagingr2 and an explicit unanswered publication question.",
+      "This goal continuation completed further loading diagnostics and validated stagingr3; no user publication authorization arrived.",
+      "Third consecutive goal turn: no explicit production approval or physical-device/operational confirmation arrived. Current HTTPS headers confirm production stays20261027-ga-realtime and staging stays validated20261027-language-hints-r3."
+    ],
+    "currentGoalTurnClassification": "no progress: unchanged external authorization gate revalidated against current AGENTS.md, current acceptance evidence and actual public HTTPS release headers.",
+    "currentValidatedRelease": "20261027-language-hints-r3",
+    "productionUnchanged": "20261027-ga-realtime",
+    "knownAutonomousWorkForThisCorrectionCompleted": true,
+    "goalMarkedComplete": false,
+    "goalMarkedBlocked": false,
+    "blockThresholdSatisfied": true,
+    "requestedGoalStatus": "blocked"
+  }
+}

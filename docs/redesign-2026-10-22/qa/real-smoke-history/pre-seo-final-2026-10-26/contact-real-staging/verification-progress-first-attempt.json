@@ -1,0 +1,288 @@
+{
+  "date": "2026-10-26T14:14:01.930Z",
+  "passed": false,
+  "origin": "https://site-staging.catalisa.io",
+  "tlsValidation": true,
+  "scope": "Real staging AI through the target browser/BFF, fictional short contact flows, human review, reload, one free refinement. No handoff or external messages.",
+  "results": [
+    {
+      "key": "loja-whatsapp",
+      "passed": false,
+      "stage": "briefing",
+      "error": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('.z-view-context')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"to.be.visible\" with timeout 5000ms\n  - waiting for locator('.z-view-context')\n",
+      "errors": []
+    },
+    {
+      "key": "clinica-agenda",
+      "passed": true,
+      "briefing": {
+        "idea": "agenda clinica",
+        "context": "dentista",
+        "goal": "menos faltas"
+      },
+      "elapsedMs": 18949,
+      "reviewElapsedMs": 53,
+      "hadReview": true,
+      "concept": {
+        "conceptRef": "concept_99b3ec54-0725-48d2-b875-c9124eda043d",
+        "version": 1,
+        "briefVersion": 3,
+        "content": {
+          "schemaVersion": "1.0",
+          "title": "Agenda Clínica para Dentistas",
+          "summary": "Sistema de agendamento que reduz faltas e otimiza a gestão de consultas para dentistas.",
+          "hypothesis": "A implementação de um sistema de agendamento digital melhorará a taxa de comparecimento dos pacientes às consultas.",
+          "roles": [
+            "Dentista",
+            "Recepcionista",
+            "Paciente"
+          ],
+          "screens": [
+            {
+              "id": "screen-agenda",
+              "title": "Agenda de Consultas",
+              "description": "Visualização das consultas agendadas e horários disponíveis.",
+              "items": [
+                {
+                  "label": "Consulta com Dr. Silva",
+                  "value": "25/10/2026 14:00"
+                },
+                {
+                  "label": "Consulta com Dra. Maria",
+                  "value": "26/10/2026 09:00"
+                },
+                {
+                  "label": "Horários Disponíveis",
+                  "value": "27/10/2026 10:00 - 16:00"
+                }
+              ],
+              "action": {
+                "label": "Agendar Nova Consulta",
+                "nextScreenId": "screen-agendamento"
+              }
+            },
+            {
+              "id": "screen-agendamento",
+              "title": "Agendamento de Consulta",
+              "description": "Formulário para agendar nova consulta.",
+              "items": [
+                {
+                  "label": "Nome do Paciente",
+                  "value": "João da Silva"
+                },
+                {
+                  "label": "Data da Consulta",
+                  "value": "27/10/2026"
+                },
+                {
+                  "label": "Horário",
+                  "value": "10:00"
+                }
+              ],
+              "action": {
+                "label": "Confirmar Agendamento",
+                "nextScreenId": null
+              }
+            },
+            {
+              "id": "screen-confirmacao",
+              "title": "Confirmação de Agendamento",
+              "description": "Mensagem de confirmação do agendamento realizado com sucesso.",
+              "items": [
+                {
+                  "label": "Consulta Agendada",
+                  "value": "27/10/2026 10:00"
+                },
+                {
+                  "label": "Paciente",
+                  "value": "João da Silva"
+                },
+                {
+                  "label": "Dentista",
+                  "value": "Dr. Silva"
+                }
+              ],
+              "action": {
+                "label": "Voltar para Agenda",
+                "nextScreenId": "screen-agenda"
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "slug": "calendar",
+              "role": "Gerenciamento de agenda e disponibilidade"
+            },
+            {
+              "slug": "email",
+              "role": "Notificações de agendamentos"
+            },
+            {
+              "slug": "wpp",
+              "role": "Canal principal de vendas"
+            }
+          ],
+          "journey": [
+            {
+              "id": "step-agendar-consulta",
+              "label": "Agendar Consulta",
+              "description": "O paciente acessa a agenda e solicita um horário disponível.",
+              "blockSlugs": [
+                "calendar",
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "step-confirmar-agendamento",
+              "label": "Confirmar Agendamento",
+              "description": "O sistema envia e-mail de confirmação ao paciente após o agendamento.",
+              "blockSlugs": [
+                "email"
+              ],
+              "humanReview": true
+            },
+            {
+              "id": "step-notificar-recepcao",
+              "label": "Notificar Recepção",
+              "description": "A recepção é notificada sobre o novo agendamento.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            }
+          ],
+          "limitations": [
+            "Necessidade de internet para acesso ao sistema.",
+            "Dependência de confirmação de horários pelos dentistas.",
+            "Limitação na quantidade de consultas que podem ser agendadas simultaneamente."
+          ],
+          "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+        }
+      },
+      "errors": []
+    },
+    {
+      "key": "escola-cobranca",
+      "passed": true,
+      "briefing": {
+        "idea": "cobrar atrasados",
+        "context": "escola de ingles",
+        "goal": "parar cobranca manual"
+      },
+      "elapsedMs": 13931,
+      "reviewElapsedMs": 42,
+      "hadReview": true,
+      "concept": {
+        "conceptRef": "concept_074a620b-c755-4cef-9fc7-475a499eeee3",
+        "version": 1,
+        "briefVersion": 3,
+        "content": {
+          "schemaVersion": "1.0",
+          "title": "Cobrança de Atrasados",
+          "summary": "Sistema de cobrança automatizada para alunos de escola de inglês com notificações por e-mail e WhatsApp.",
+          "hypothesis": "A automação na cobrança poderá reduzir a inadimplência e melhorar o fluxo de caixa da escola.",
+          "roles": [
+            "Administradores",
+            "Financeiros"
+          ],
+          "screens": [
+            {
+              "id": "tela-cobranca",
+              "title": "Tela de Cobrança",
+              "description": "Visualização das cobranças pendentes dos alunos com detalhes.",
+              "items": [
+                {
+                  "label": "Aluno",
+                  "value": "João Silva"
+                },
+                {
+                  "label": "Valor",
+                  "value": "R$ 200,00"
+                },
+                {
+                  "label": "Data de Vencimento",
+                  "value": "30/10/2026"
+                }
+              ],
+              "action": {
+                "label": "Enviar Notificação",
+                "nextScreenId": null
+              }
+            },
+            {
+              "id": "tela-historico",
+              "title": "Histórico de Cobranças",
+              "description": "Registro de todas as cobranças realizadas e status.",
+              "items": [
+                {
+                  "label": "Data",
+                  "value": "01/10/2026"
+                },
+                {
+                  "label": "Status",
+                  "value": "Enviada"
+                },
+                {
+                  "label": "Método",
+                  "value": "E-mail"
+                }
+              ],
+              "action": {
+                "label": "Ver Detalhes",
+                "nextScreenId": null
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "slug": "email",
+              "role": "Notificações de cobrança"
+            },
+            {
+              "slug": "wpp",
+              "role": "Canal principal de vendas"
+            }
+          ],
+          "journey": [
+            {
+              "id": "etapa-notificacao",
+              "label": "Notificação de Cobrança",
+              "description": "Notificação enviada ao aluno sobre a cobrança pendente.",
+              "blockSlugs": [
+                "email",
+                "wpp"
+              ],
+              "humanReview": true
+            },
+            {
+              "id": "etapa-confirmacao",
+              "label": "Confirmação de Recebimento",
+              "description": "Confirmação do aluno sobre o recebimento da notificação.",
+              "blockSlugs": [
+                "email"
+              ],
+              "humanReview": true
+            },
+            {
+              "id": "etapa-pagamento",
+              "label": "Registro de Pagamento",
+              "description": "Registro do pagamento realizado pelo aluno.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": true
+            }
+          ],
+          "limitations": [
+            "A automação depende da atualização correta dos dados dos alunos.",
+            "Notificações podem não ser recebidas em alguns casos de falha na entrega.",
+            "A aceitação do pagamento por canais diversos deve ser configurada."
+          ],
+          "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+        }
+      },
+      "errors": []
+    }
+  ]
+}

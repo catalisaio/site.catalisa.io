@@ -1,0 +1,31 @@
+{
+  "checkedAt": "2026-10-26T19:29:53.924Z",
+  "passed": false,
+  "release": "20261026-multilingual",
+  "scope": "Actual public production HTTPS and JS for seven locales, language selector, anonymous Contact API401 and ready inputs; French Lab ready. Optional analytics explicitly declined. No sessions/leads/generations/external messages created.",
+  "checks": [
+    {
+      "lang": "pt-BR",
+      "path": "/",
+      "status": 200,
+      "selector": true
+    },
+    {
+      "lang": "pt-BR",
+      "path": "/contato",
+      "anonymousContactReady": true
+    },
+    {
+      "lang": "en-US",
+      "path": "/en",
+      "status": 200,
+      "selector": true
+    },
+    {
+      "lang": "en-US",
+      "path": "/en/contact",
+      "anonymousContactReady": true
+    }
+  ],
+  "errors": []
+}

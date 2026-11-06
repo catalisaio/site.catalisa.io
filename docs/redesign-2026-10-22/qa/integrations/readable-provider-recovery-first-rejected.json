@@ -1,0 +1,286 @@
+{
+  "checkedAt": "2026-10-26T12:47:22.921Z",
+  "passed": false,
+  "scope": "Real owned staging zero-tool candidate; initial and notification-only refinement. Existing connected site agent and all other products unchanged. No outbound messaging. Agent chat still controls the actual model tier.",
+  "results": [
+    {
+      "operation": "initial",
+      "elapsedMs": 12994,
+      "content": {
+        "schemaVersion": "1.0",
+        "title": "Venda pelo WhatsApp",
+        "summary": "Conceito para aumentar as vendas de uma loja de roupas através do WhatsApp, facilitando a comunicação com os clientes e otimização dos pedidos.",
+        "hypothesis": "Aumentar as vendas utilizando o WhatsApp como canal de venda principal pode melhorar a experiência do cliente e aumentar a conversão.",
+        "roles": [
+          "Vendedor",
+          "Gerente de Loja"
+        ],
+        "screens": [
+          {
+            "id": "screen1",
+            "title": "Tela de Vendas pelo WhatsApp",
+            "description": "Interface para gerenciar pedidos e interações com clientes via WhatsApp.",
+            "items": [
+              {
+                "label": "Iniciar Conversa",
+                "value": "Clique para iniciar uma conversa com o cliente."
+              },
+              {
+                "label": "Visualizar Pedidos",
+                "value": "Acesse os pedidos feitos através do WhatsApp."
+              },
+              {
+                "label": "Enviar Promoções",
+                "value": "Envie promoções e novidades para os clientes."
+              }
+            ],
+            "action": {
+              "label": "Ir para Tela de Pedidos",
+              "nextScreenId": "screen2"
+            }
+          },
+          {
+            "id": "screen2",
+            "title": "Tela de Pedidos",
+            "description": "Lista de pedidos realizados via WhatsApp, com detalhes e status.",
+            "items": [
+              {
+                "label": "Pedido 1",
+                "value": "Detalhes do pedido 1."
+              },
+              {
+                "label": "Pedido 2",
+                "value": "Detalhes do pedido 2."
+              },
+              {
+                "label": "Pedido 3",
+                "value": "Detalhes do pedido 3."
+              }
+            ],
+            "action": {
+              "label": "Voltar para Vendas",
+              "nextScreenId": "screen1"
+            }
+          },
+          {
+            "id": "screen3",
+            "title": "Notificações de Vendas",
+            "description": "Configuração de notificações para vendas realizadas e interações com clientes.",
+            "items": [
+              {
+                "label": "Ativar Notificações",
+                "value": "Receba notificações sobre novas vendas."
+              },
+              {
+                "label": "Configurar Alertas",
+                "value": "Defina como e quando receber alertas."
+              },
+              {
+                "label": "Histórico de Notificações",
+                "value": "Veja o histórico das notificações enviadas."
+              }
+            ],
+            "action": {
+              "label": "Ir para Tela de Vendas",
+              "nextScreenId": "screen1"
+            }
+          }
+        ],
+        "blocks": [
+          {
+            "slug": "wpp",
+            "role": "Canal de venda"
+          },
+          {
+            "slug": "wpp-business",
+            "role": "Canal de comunicação"
+          }
+        ],
+        "journey": [
+          {
+            "id": "step1",
+            "label": "Início da Venda",
+            "description": "O vendedor inicia uma conversa com o cliente pelo WhatsApp.",
+            "blockSlugs": [
+              "wpp"
+            ],
+            "humanReview": false
+          },
+          {
+            "id": "step2",
+            "label": "Apresentação de Produtos",
+            "description": "O vendedor apresenta os produtos disponíveis para o cliente.",
+            "blockSlugs": [
+              "wpp"
+            ],
+            "humanReview": false
+          },
+          {
+            "id": "step3",
+            "label": "Finalização do Pedido",
+            "description": "O cliente finaliza o pedido pelo WhatsApp.",
+            "blockSlugs": [
+              "wpp"
+            ],
+            "humanReview": true
+          },
+          {
+            "id": "step4",
+            "label": "Envio de Notificações",
+            "description": "Notificações são enviadas ao vendedor sobre o status do pedido.",
+            "blockSlugs": [
+              "wpp-business"
+            ],
+            "humanReview": false
+          }
+        ],
+        "limitations": [
+          "Necessário ter um número de WhatsApp ativo para vendas.",
+          "Limitações de envios de mensagens podem afetar a comunicação.",
+          "Dependência da taxa de resposta dos clientes."
+        ],
+        "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+      }
+    },
+    {
+      "operation": "refinement",
+      "elapsedMs": 13697,
+      "content": {
+        "schemaVersion": "1.0",
+        "title": "Venda pelo WhatsApp",
+        "summary": "Conceito para aumentar as vendas de uma loja de roupas através do WhatsApp, facilitando a comunicação com os clientes e otimização dos pedidos.",
+        "hypothesis": "Aumentar as vendas utilizando o WhatsApp como canal de venda principal pode melhorar a experiência do cliente e aumentar a conversão.",
+        "roles": [
+          "Vendedor",
+          "Gerente de Loja"
+        ],
+        "screens": [
+          {
+            "id": "screen1",
+            "title": "Tela de Vendas pelo WhatsApp",
+            "description": "Interface para gerenciar pedidos e interações com clientes via WhatsApp.",
+            "items": [
+              {
+                "label": "Iniciar Conversa",
+                "value": "Clique para iniciar uma conversa com o cliente."
+              },
+              {
+                "label": "Visualizar Pedidos",
+                "value": "Acesse os pedidos feitos através do WhatsApp."
+              },
+              {
+                "label": "Enviar Promoções",
+                "value": "Envie promoções e novidades para os clientes."
+              }
+            ],
+            "action": {
+              "label": "Ir para Tela de Pedidos",
+              "nextScreenId": "screen2"
+            }
+          },
+          {
+            "id": "screen2",
+            "title": "Tela de Pedidos",
+            "description": "Lista de pedidos realizados via WhatsApp, com detalhes e status.",
+            "items": [
+              {
+                "label": "Pedido 1",
+                "value": "Detalhes do pedido 1."
+              },
+              {
+                "label": "Pedido 2",
+                "value": "Detalhes do pedido 2."
+              },
+              {
+                "label": "Pedido 3",
+                "value": "Detalhes do pedido 3."
+              }
+            ],
+            "action": {
+              "label": "Voltar para Vendas",
+              "nextScreenId": "screen1"
+            }
+          },
+          {
+            "id": "screen3",
+            "title": "Configurações de E-mail",
+            "description": "Configuração de envio de e-mails de vendas realizadas e interações com clientes.",
+            "items": [
+              {
+                "label": "Ativar Envio de E-mail",
+                "value": "Receba e-mails sobre novas vendas."
+              },
+              {
+                "label": "Configurar Alertas por E-mail",
+                "value": "Defina como e quando receber alertas."
+              },
+              {
+                "label": "Histórico de E-mails Enviados",
+                "value": "Veja o histórico dos e-mails enviados."
+              }
+            ],
+            "action": {
+              "label": "Ir para Tela de Vendas",
+              "nextScreenId": "screen1"
+            }
+          }
+        ],
+        "blocks": [
+          {
+            "slug": "wpp",
+            "role": "Canal de venda"
+          },
+          {
+            "slug": "wpp-business",
+            "role": "Canal de comunicação"
+          }
+        ],
+        "journey": [
+          {
+            "id": "step1",
+            "label": "Início da Venda",
+            "description": "O vendedor inicia uma conversa com o cliente pelo WhatsApp.",
+            "blockSlugs": [
+              "wpp"
+            ],
+            "humanReview": false
+          },
+          {
+            "id": "step2",
+            "label": "Apresentação de Produtos",
+            "description": "O vendedor apresenta os produtos disponíveis para o cliente.",
+            "blockSlugs": [
+              "wpp"
+            ],
+            "humanReview": false
+          },
+          {
+            "id": "step3",
+            "label": "Finalização do Pedido",
+            "description": "O cliente finaliza o pedido pelo WhatsApp.",
+            "blockSlugs": [
+              "wpp"
+            ],
+            "humanReview": true
+          },
+          {
+            "id": "step4",
+            "label": "Envio de Notificações por E-mail",
+            "description": "Notificações são enviadas ao vendedor sobre o status do pedido por e-mail.",
+            "blockSlugs": [
+              "wpp-business"
+            ],
+            "humanReview": true
+          }
+        ],
+        "limitations": [
+          "Necessário ter um número de WhatsApp ativo para vendas.",
+          "Limitações de envios de mensagens podem afetar a comunicação.",
+          "Dependência da taxa de resposta dos clientes."
+        ],
+        "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+      }
+    }
+  ],
+  "error": "Refinement did not include email"
+}

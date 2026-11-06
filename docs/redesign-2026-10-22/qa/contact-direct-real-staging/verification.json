@@ -1,0 +1,119 @@
+{
+  "date": "2026-10-26T19:24:30.382Z",
+  "origin": "https://site-staging.catalisa.io",
+  "scope": "Real browser and staging shared store/inbox; direct visitor choice, name, email-only, explicit confirmation, reload. No concept generation or external messaging.",
+  "reloadRequiresFreshConfirmation": true,
+  "systemDefaultsAreNotVisitorAnswers": true,
+  "handoffElapsedMs": 3940,
+  "zeroGenerationRequests": true,
+  "singleHandoffAfterReload": true,
+  "zeroBackendGenerationJobs": true,
+  "actualStagingOwnerVerified": true,
+  "actualInboxPacketVerified": true,
+  "syntheticSessionAndPacketRemoved": true,
+  "passed": true,
+  "stage": "accepted",
+  "requests": [
+    {
+      "path": "/api/site/session",
+      "method": "GET",
+      "status": 401
+    },
+    {
+      "path": "/api/site/sessions",
+      "method": "POST",
+      "status": 201
+    },
+    {
+      "path": "/api/site/session",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/site/direct/briefing",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/site/session",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/site/session",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/site/identity",
+      "method": "POST",
+      "status": 201
+    },
+    {
+      "path": "/api/site/session",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/site/contact",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/site/session",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/site/session",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/site/session",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/site/handoffs",
+      "method": "POST",
+      "status": 202
+    },
+    {
+      "path": "/api/site/handoffs/handoff_bbd73412-514e-4724-8f76-d2319bd08f48",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/site/session",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/site/handoffs/handoff_bbd73412-514e-4724-8f76-d2319bd08f48/messages",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/site/session",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/site/session",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/site/handoffs/handoff_bbd73412-514e-4724-8f76-d2319bd08f48/messages",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/site/handoffs/handoff_bbd73412-514e-4724-8f76-d2319bd08f48",
+      "method": "GET",
+      "status": 200
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,71 @@
+{
+  "generatedAt": "2026-10-26",
+  "messages": [
+    {"source":"Produtos da Catalisa","occurrences":[{"file":"src/redesign/data/product-directory.json","kind":"json-title"},{"file":"src/redesign/Products.tsx","kind":"accessible-section-label"}]},
+    {"source":"Soluções para serviços financeiros, saúde, advocacia, recrutamento, identidade e decisão. Conheça cada produto e escolha por onde explorar.","occurrences":[{"file":"src/redesign/data/product-directory.json","kind":"json-intro"}]},
+    {"source":"Ver vitrine","occurrences":[{"file":"src/redesign/Products.tsx","kind":"external-link-label"}]},
+    {"source":"Explorar plataforma","occurrences":[{"file":"src/redesign/Products.tsx","kind":"internal-link-label"}]},
+    {"source":"Abre em nova aba","occurrences":[{"file":"src/redesign/Products.tsx","kind":"accessible-external-link-notice"}]},
+    {"source":"Crie ou modernize seu produto financeiro, conectando marca, canais e regras de operação conforme as integrações validadas.","occurrences":[{"file":"src/redesign/data/product-directory.json","kind":"product-description","product":"banking"}]},
+    {"source":"Desenhe produtos de crédito com público, políticas e condições próprias, conectando análise e operação.","occurrences":[{"file":"src/redesign/data/product-directory.json","kind":"product-description","product":"credit"}]},
+    {"source":"Atendimento pelo WhatsApp e organização da agenda de clínicas, com revisão humana e contexto para a consulta.","occurrences":[{"file":"src/redesign/data/product-directory.json","kind":"product-description","product":"med"}]},
+    {"source":"Triagem pelo WhatsApp e organização do contexto dos casos para a equipe jurídica.","occurrences":[{"file":"src/redesign/data/product-directory.json","kind":"product-description","product":"juridico"}]},
+    {"source":"Atendimento a candidatos pelo WhatsApp e organização do processo de seleção, com aprovação humana do parecer.","occurrences":[{"file":"src/redesign/data/product-directory.json","kind":"product-description","product":"recrutamento"}]},
+    {"source":"Prova de vida e comparação facial para verificar identidades e preservar as evidências da análise.","occurrences":[{"file":"src/redesign/data/product-directory.json","kind":"product-description","product":"biometrics"}]},
+    {"source":"Regras de decisão em tabelas DMN, com versões publicadas e rastreabilidade do resultado.","occurrences":[{"file":"src/redesign/data/product-directory.json","kind":"product-description","product":"decision"}]}
+  ],
+  "provenance": {
+    "catalog":"src/redesign/data/catalog.json products: original seven names, slugs and categories preserved",
+    "descriptions":"One-sentence factual summaries approved by the coordinator, based on the seven existing /ecossistema/:product descriptions and catalog content; no additional feature or availability claim",
+    "externalUrlVerification":"Coordinator verified HTTPS GET 200 and the HTML title before assigning this task. This component author did not perform an independent network check.",
+    "verifiedExternalUrls":["https://med.catalisa.app/","https://juridico.catalisa.app/","https://recrutamento.catalisa.app/","https://biometrics.catalisa.app/","https://decision.catalisa.app/"],
+    "internalOnly":["/ecossistema/banking/","/ecossistema/credit/"],
+    "excludedExternalDomains":"Coordinator reported DNS ENOTFOUND for banking/bank/credit/credito/studio/workflows subdomains; none is linked by this directory.",
+    "visualReference":"Native N01 Resources typography, spacing and simple editorial rules. No additional photo, availability claim or pricing claim."
+  },
+  "translationMethod":"Direct editorial translations for the first five interface strings prepared for coordinator merge; not a new independent CLI review. Seven new product-description keys await coordinator translation. Existing category keys and productLabel mappings are reused.",
+  "translations": {
+    "en-US": {
+      "Produtos da Catalisa":"Catalisa products",
+      "Soluções para serviços financeiros, saúde, advocacia, recrutamento, identidade e decisão. Conheça cada produto e escolha por onde explorar.":"Solutions for financial services, healthcare, legal services, recruitment, identity and decision-making. Discover each product and choose where to start.",
+      "Ver vitrine":"Visit product site",
+      "Explorar plataforma":"Explore the platform",
+      "Abre em nova aba":"Opens in a new tab"
+    },
+    "de-DE": {
+      "Produtos da Catalisa":"Produkte von Catalisa",
+      "Soluções para serviços financeiros, saúde, advocacia, recrutamento, identidade e decisão. Conheça cada produto e escolha por onde explorar.":"Lösungen für Finanzdienstleistungen, Gesundheitswesen, Rechtswesen, Personalgewinnung, Identität und Entscheidungsfindung. Entdecken Sie die Produkte und wählen Sie Ihren Einstieg.",
+      "Ver vitrine":"Produktwebsite öffnen",
+      "Explorar plataforma":"Plattform erkunden",
+      "Abre em nova aba":"Öffnet in einem neuen Tab"
+    },
+    "es-ES": {
+      "Produtos da Catalisa":"Productos de Catalisa",
+      "Soluções para serviços financeiros, saúde, advocacia, recrutamento, identidade e decisão. Conheça cada produto e escolha por onde explorar.":"Soluciones para servicios financieros, salud, abogacía, selección de personal, identidad y toma de decisiones. Conoce cada producto y elige por dónde empezar.",
+      "Ver vitrine":"Ver sitio del producto",
+      "Explorar plataforma":"Explora la plataforma",
+      "Abre em nova aba":"Se abre en una pestaña nueva"
+    },
+    "da-DK": {
+      "Produtos da Catalisa":"Catalisas produkter",
+      "Soluções para serviços financeiros, saúde, advocacia, recrutamento, identidade e decisão. Conheça cada produto e escolha por onde explorar.":"Løsninger til finansielle tjenester, sundhed, jura, rekruttering, identitet og beslutninger. Lær hvert produkt at kende, og vælg, hvor du vil begynde.",
+      "Ver vitrine":"Se produktets hjemmeside",
+      "Explorar plataforma":"Udforsk platformen",
+      "Abre em nova aba":"Åbner i en ny fane"
+    },
+    "nl-NL": {
+      "Produtos da Catalisa":"Producten van Catalisa",
+      "Soluções para serviços financeiros, saúde, advocacia, recrutamento, identidade e decisão. Conheça cada produto e escolha por onde explorar.":"Oplossingen voor financiële dienstverlening, zorg, juridische dienstverlening, werving en selectie, identiteit en besluitvorming. Ontdek elk product en kies waar je wilt beginnen.",
+      "Ver vitrine":"Bekijk de productsite",
+      "Explorar plataforma":"Ontdek het platform",
+      "Abre em nova aba":"Opent in een nieuw tabblad"
+    },
+    "fr-FR": {
+      "Produtos da Catalisa":"Les produits Catalisa",
+      "Soluções para serviços financeiros, saúde, advocacia, recrutamento, identidade e decisão. Conheça cada produto e escolha por onde explorar.":"Des solutions pour les services financiers, la santé, les métiers du droit, le recrutement, l’identité et la prise de décision. Découvrez chaque produit et choisissez par où commencer.",
+      "Ver vitrine":"Voir le site du produit",
+      "Explorar plataforma":"Explorez la plateforme",
+      "Abre em nova aba":"S’ouvre dans un nouvel onglet"
+    }
+  }
+}

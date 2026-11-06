@@ -1,0 +1,172 @@
+{
+  "date": "2026-10-26T15:32:06.900Z",
+  "passed": true,
+  "scope": "Two in-process site BFFs using actual dedicated production IAM/Data Store/owner AI agent, synthetic credit-product brief and here-only inbox. No website deployment, traffic change, CRM creation, email/WhatsApp or real market collection.",
+  "realProductionAiMs": 19955,
+  "concept": {
+    "conceptRef": "concept_2e157d45-8897-4821-8ace-7baa00e1580d",
+    "version": 1,
+    "briefVersion": 1,
+    "content": {
+      "schemaVersion": "1.0",
+      "title": "Crédito para Lojistas",
+      "summary": "Produto de crédito com análise estruturada em etapas, substituindo planilhas por decisão automatizada e conferência humana antes da proposta. Público-alvo: lojistas. Próximos passos: validar regras de negócio, definir limite e taxa por perfil de risco.",
+      "hypothesis": "Lojistas precisam de crédito rápido com transparência nas etapas de análise. Uma jornada com decisão automática + aprovação humana reduz tempo de resposta e aumenta confiança. Público específico, contexto operacional e critérios de elegibilidade devem ser confirmados com o time de negócio.",
+      "roles": [
+        "Lojista",
+        "Analista de Crédito",
+        "Sistema de Decisão"
+      ],
+      "screens": [
+        {
+          "id": "solicitar-credito",
+          "title": "Solicitar Crédito",
+          "description": "Entrada do lojista com dados básicos do negócio e valor solicitado.",
+          "items": [
+            {
+              "label": "Nome da Loja",
+              "value": "Texto livre"
+            },
+            {
+              "label": "CNPJ",
+              "value": "Campo validado"
+            },
+            {
+              "label": "Valor Solicitado",
+              "value": "Numérico com máscara de moeda"
+            }
+          ],
+          "action": {
+            "label": "Enviar Solicitação",
+            "nextScreenId": "analise-em-andamento"
+          }
+        },
+        {
+          "id": "analise-em-andamento",
+          "title": "Análise em Andamento",
+          "description": "Exibe o progresso da análise automática com etapas: dados, financeiro, risco e conferência humana.",
+          "items": [
+            {
+              "label": "Etapa 1: Validação de Dados",
+              "value": "Concluída"
+            },
+            {
+              "label": "Etapa 2: Análise Financeira",
+              "value": "Concluída"
+            },
+            {
+              "label": "Etapa 3: Conferência Humana",
+              "value": "Em andamento"
+            }
+          ],
+          "action": {
+            "label": "Aguardar Resultado",
+            "nextScreenId": null
+          }
+        },
+        {
+          "id": "proposta-credito",
+          "title": "Proposta de Crédito",
+          "description": "Apresenta a proposta aprovada com valor, taxa, prazo e condições. Lojista pode aceitar ou rejeitar.",
+          "items": [
+            {
+              "label": "Valor Aprovado",
+              "value": "R$ [valor]"
+            },
+            {
+              "label": "Taxa Mensal",
+              "value": "[%] a.m."
+            },
+            {
+              "label": "Prazo",
+              "value": "[n] meses"
+            }
+          ],
+          "action": {
+            "label": "Aceitar Proposta",
+            "nextScreenId": null
+          }
+        }
+      ],
+      "blocks": [
+        {
+          "slug": "customers",
+          "role": "Cadastro e validação de CNPJ do lojista"
+        },
+        {
+          "slug": "open-finance",
+          "role": "Consulta de saldo e extrato bancário para análise financeira"
+        },
+        {
+          "slug": "decision-engine",
+          "role": "Regras DMN para elegibilidade, limite e taxa por perfil de risco"
+        },
+        {
+          "slug": "products",
+          "role": "Parâmetros do produto de crédito (prazos, taxas, limites)"
+        },
+        {
+          "slug": "analytics",
+          "role": "Contagem de solicitações e conversão sem guardar identidade"
+        }
+      ],
+      "journey": [
+        {
+          "id": "step-1-captura",
+          "label": "Captura de Solicitação",
+          "description": "Lojista entra com CNPJ, nome da loja e valor solicitado. Sistema valida dados básicos e armazena a solicitação.",
+          "blockSlugs": [
+            "customers"
+          ],
+          "humanReview": false
+        },
+        {
+          "id": "step-2-analise-automatica",
+          "label": "Análise Automática",
+          "description": "Sistema consulta Open Finance, aplica regras de elegibilidade e calcula limite e taxa via Decision Engine.",
+          "blockSlugs": [
+            "open-finance",
+            "decision-engine",
+            "products"
+          ],
+          "humanReview": false
+        },
+        {
+          "id": "step-3-conferencia-humana",
+          "label": "Conferência Humana",
+          "description": "Analista de crédito revisa a análise automática, valida outliers e aprova ou rejeita antes da proposta.",
+          "blockSlugs": [
+            "decision-engine"
+          ],
+          "humanReview": true
+        },
+        {
+          "id": "step-4-proposta",
+          "label": "Proposta e Aceite",
+          "description": "Sistema apresenta proposta ao lojista com valor, taxa e prazo. Lojista aceita ou rejeita. Analytics registra conversão.",
+          "blockSlugs": [
+            "analytics"
+          ],
+          "humanReview": false
+        }
+      ],
+      "limitations": [
+        "Público-alvo limitado a lojistas; critérios de elegibilidade por segmento (comércio, serviços, etc.) não foram definidos e devem ser validados com o time de negócio.",
+        "Regras de decisão (Decision Engine) e parâmetros de produto (limites, taxas, prazos) não existem ainda; precisam ser configurados antes da implantação.",
+        "Integração com Open Finance assume consentimento prévio do lojista; fluxo de autorização não foi modelado.",
+        "Conferência humana é um passo manual; volume esperado, SLA e critérios de escalação devem ser definidos.",
+        "Não inclui contrato eletrônico, desembolso, amortização ou cobrança; escopo limitado a proposta.",
+        "Analytics não inclui rastreamento de identidade; métricas de risco e performance por lojista requerem tabela separada ou Data Store."
+      ],
+      "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+    }
+  },
+  "replayedSameJob": true,
+  "emailOnlyAccepted": true,
+  "visitorAndTeamIsolation": true,
+  "authenticatedOwnerOpenedClaimedReplied": true,
+  "replyRecoveredAcrossInstances": true,
+  "marketCollectionRemainsDisabled": true,
+  "syntheticPacketRemoved": true,
+  "syntheticSessionsRemoved": true
+}

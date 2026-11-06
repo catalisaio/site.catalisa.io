@@ -1,0 +1,130 @@
+{
+  "date": "2026-10-25T04:34:24.258Z",
+  "scope": "Actual browser UI, dedicated staging inbox and IAM, email-only fictional visitor, here-only human chat. No CRM creation or external messages.",
+  "actualOperatorLogin": true,
+  "deliveryAfterActualOpen": true,
+  "assignmentAfterActualClaim": true,
+  "visitorMessageRenderedAsText": true,
+  "actualHumanReplyVisible": true,
+  "visitorReloadRestoresThread": true,
+  "logoutBlocksQueue": true,
+  "syntheticPacketRemoved": true,
+  "syntheticSessionRemoved": true,
+  "passed": true,
+  "stage": "logout",
+  "errors": [],
+  "requests": [
+    {
+      "path": "/api/site/session",
+      "status": 200
+    },
+    {
+      "path": "/api/site/team/",
+      "status": 200
+    },
+    {
+      "path": "/api/site/team/session",
+      "status": 401
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200
+    },
+    {
+      "path": "/api/site/handoffs/handoff_90f5e698-0082-484c-95ea-06fcf29bd774/messages",
+      "status": 200
+    },
+    {
+      "path": "/api/site/handoffs/handoff_90f5e698-0082-484c-95ea-06fcf29bd774/messages",
+      "status": 200
+    },
+    {
+      "path": "/api/site/team/login",
+      "status": 200
+    },
+    {
+      "path": "/api/site/handoffs/handoff_90f5e698-0082-484c-95ea-06fcf29bd774",
+      "status": 200
+    },
+    {
+      "path": "/api/site/team/requests",
+      "status": 200
+    },
+    {
+      "path": "/api/site/team/requests/handoff_90f5e698-0082-484c-95ea-06fcf29bd774",
+      "status": 200
+    },
+    {
+      "path": "/api/site/handoffs/handoff_90f5e698-0082-484c-95ea-06fcf29bd774",
+      "status": 200
+    },
+    {
+      "path": "/api/site/handoffs/handoff_90f5e698-0082-484c-95ea-06fcf29bd774",
+      "status": 200
+    },
+    {
+      "path": "/api/site/team/requests/handoff_90f5e698-0082-484c-95ea-06fcf29bd774/claim",
+      "status": 200
+    },
+    {
+      "path": "/api/site/handoffs/handoff_90f5e698-0082-484c-95ea-06fcf29bd774",
+      "status": 200
+    },
+    {
+      "path": "/api/site/team/requests",
+      "status": 200
+    },
+    {
+      "path": "/api/site/handoffs/handoff_90f5e698-0082-484c-95ea-06fcf29bd774/messages",
+      "status": 200
+    },
+    {
+      "path": "/api/site/handoffs/handoff_90f5e698-0082-484c-95ea-06fcf29bd774",
+      "status": 200
+    },
+    {
+      "path": "/api/site/handoffs/handoff_90f5e698-0082-484c-95ea-06fcf29bd774/messages",
+      "status": 200
+    },
+    {
+      "path": "/api/site/team/requests",
+      "status": 200
+    },
+    {
+      "path": "/api/site/team/requests/handoff_90f5e698-0082-484c-95ea-06fcf29bd774",
+      "status": 200
+    },
+    {
+      "path": "/api/site/team/requests/handoff_90f5e698-0082-484c-95ea-06fcf29bd774/replies",
+      "status": 200
+    },
+    {
+      "path": "/api/site/team/requests",
+      "status": 200
+    },
+    {
+      "path": "/api/site/handoffs/handoff_90f5e698-0082-484c-95ea-06fcf29bd774/messages",
+      "status": 200
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200
+    },
+    {
+      "path": "/api/site/handoffs/handoff_90f5e698-0082-484c-95ea-06fcf29bd774/messages",
+      "status": 200
+    },
+    {
+      "path": "/api/site/handoffs/handoff_90f5e698-0082-484c-95ea-06fcf29bd774/messages",
+      "status": 200
+    },
+    {
+      "path": "/api/site/team/logout",
+      "status": 200
+    }
+  ]
+}

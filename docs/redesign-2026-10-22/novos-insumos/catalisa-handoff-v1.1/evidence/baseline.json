@@ -1,0 +1,20 @@
+{
+  "label": "Catalisa v1.1 handoff final",
+  "created": "2026-10-22",
+  "sourceCommit": "fb78ff5d7229e1ccac83646d6c2bbafbde9a19b6",
+  "savedVersionNumber": 26,
+  "prototypeURL": "https://catalisa-arquitetura.blondlemon2.chatgpt.site",
+  "routes": 69,
+  "baselineV1": "evidence/v1.json",
+  "state": "Static reference with local simulations; production integrations pending",
+  "excluded": [
+    "Git metadata and credentials",
+    "Hosting project configuration",
+    "Internal browser QA screenshots"
+  ],
+  "proposedNotImplemented": [
+    "contracts/",
+    "design/tokens.json",
+    "Production backlog"
+  ]
+}

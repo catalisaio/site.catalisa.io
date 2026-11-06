@@ -1,0 +1,9 @@
+.diligence-gateway{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:40px;max-width:1296px;margin:50px auto;padding:35px;background:var(--secondary-soft);border-top:4px solid var(--secondary);color:var(--ink);font-family:var(--font);box-sizing:border-box}
+.diligence-gateway>div>span{font:10px/1.7 var(--mono);letter-spacing:.05em}
+.diligence-gateway h2{font:700 37px/1.1 var(--font)!important;letter-spacing:-.05em;margin:16px 0!important;padding:0!important;border:0!important;color:var(--ink)!important}
+.diligence-gateway p{font:13px/1.8 var(--font);color:var(--ink-2);margin:0;max-width:680px}
+.diligence-gateway nav{display:flex;flex-direction:column;gap:13px;justify-content:center;min-width:0}
+.diligence-gateway nav a{font:11px/1.7 var(--mono);color:var(--ink);text-decoration:none;border-bottom:1px solid var(--soft-ink);padding-bottom:8px;overflow-wrap:anywhere}
+.diligence-gateway nav a:first-child{font-weight:700;color:var(--brand-700)}
+@media(max-width:700px){.diligence-gateway{grid-template-columns:1fr;gap:25px;padding:25px;margin:35px 22px}.diligence-gateway h2{font-size:31px!important}.diligence-gateway p{font-size:12px}.diligence-gateway nav a{font-size:10px}}
+@media print{.diligence-gateway{margin:20pt 0;padding:18pt;gap:20pt;break-inside:avoid}.diligence-gateway h2{font-size:23pt!important}.diligence-gateway p{font-size:8.5pt}.diligence-gateway nav a{font-size:7pt}.diligence-gateway>div>span{font-size:6.5pt}}

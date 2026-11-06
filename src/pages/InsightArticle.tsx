@@ -30,7 +30,7 @@ export function InsightArticle() {
     const title = t(article.metaTitleKey.replace('insights.', ''));
     const description = t(article.metaDescriptionKey.replace('insights.', ''));
 
-    const blogPosting = getBlogPostingSchema(article, title, description, article.keywords);
+    const blogPosting = getBlogPostingSchema(article, title, description, article.keywords, lp('/') === '/en' ? 'en-US' : 'pt-BR');
 
     const breadcrumbs = getBreadcrumbSchema([
       { name: tSeo('breadcrumbs.home'), path: lp('/') },

@@ -1,0 +1,1568 @@
+{
+  "origin": "ZIP fornecido pelo usuário na raiz do repositório; protótipo criado no ChatGPT",
+  "received": "2026-10-22",
+  "archive": "catalisa-completo.zip",
+  "sha256": "89eac219f9499b74377dc801e6853baacbd381893f8f69255e1366a1d52dc97d",
+  "files": [
+    {
+      "path": "catalisa-handoff-v1.1/CHECKSUMS.sha256",
+      "bytes": 36129,
+      "sha256": "a9d6bce29f8d815b9399d561e6ab6d27069b8460998a75366d8b061f1daf7097"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/Catalisa-Handoff-Estrategia-Design-Producao.pdf",
+      "bytes": 1458045,
+      "sha256": "9c6b7554d0166f2a73dda7e3b5f368d19372a1cab4ff6ecd88865a7f4c19278b"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/PROMPT-PARA-O-CODEX.md",
+      "bytes": 3432,
+      "sha256": "e57fd53cf2cf4ec480c358f1c855089323225bbf89edf4ab096c4ea6b4695011"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/README.md",
+      "bytes": 2718,
+      "sha256": "2f2a01c582dbd3f9e99fed557ad057d4c453af5296f36398f158413d2140dab6"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/catalogo-capacidades.json",
+      "bytes": 10615,
+      "sha256": "c44904f46d3f8312c07d0ec778b134038253ee79d2c0e62615c8e199bf0bf83f"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/conteudo-atual.json",
+      "bytes": 378734,
+      "sha256": "80ac200030e130faa186b1c2ba253fd86e8be789829493eb414d55f6406c9725"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/contracts/README.md",
+      "bytes": 3950,
+      "sha256": "dd90ed3cd3e232ff8a25fee02ce6293c1ba7e5d03dde37a745484b994e48141a"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/contracts/concept.example.json",
+      "bytes": 1934,
+      "sha256": "a8c602adc12c7d0f83280bb290dbce021e66cb278cec34340451d7f033bb4036"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/contracts/concept.schema.json",
+      "bytes": 6917,
+      "sha256": "2dfb2de947ad10c90f429cf4f46f8d92c54f7de23785fbc22b4032634d99e99d"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/contracts/env.example",
+      "bytes": 543,
+      "sha256": "461c65dd1f6a88817cc99c8fe4d375952e6ed99eb1277ba6b383bf54e9018366"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/contracts/events.json",
+      "bytes": 4485,
+      "sha256": "50abf2c5eb55c4f5df94f2ac21c586088013a93c96f8711dd5517c2f04568fab"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/contracts/openapi.proposed.json",
+      "bytes": 45049,
+      "sha256": "7328b9186474bf8d94d5bccb8bcb5452ef255acb90463dec9bc2b7ee10717c24"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/design/README.md",
+      "bytes": 861,
+      "sha256": "9f4a908c73d93d5bc3b83af8613428ec20ff8cd990ec121c430ba051e468c462"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/design/assets-inventory.json",
+      "bytes": 29342,
+      "sha256": "7fe0f618458e1fa8f52b20f4c476495cb9e37320b1be7201502805b25b4f1b1c"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/design/atlas.svg",
+      "bytes": 2866,
+      "sha256": "fb6e308bca43f649a907225e26c022aad052fb47dfb1cef00b6fd1db31180f51"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/design/contrast-examples.json",
+      "bytes": 1294,
+      "sha256": "2c81af48d181e2640e17a604da60ac543128cb974d8b7a5c28ac595a37bf1fc9"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/design/tokens.css",
+      "bytes": 619,
+      "sha256": "6373779f4cac1dfd769b1da0c0b29fb67e55aa3ce345a66d1947cf3183840103"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/design/tokens.json",
+      "bytes": 1478,
+      "sha256": "18b45903e23dde54bb1fc5e9535d9cc92e8ac55f28736c91751dbb82bbf749df"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/docs/00-LEIA-PRIMEIRO.md",
+      "bytes": 2833,
+      "sha256": "dd38ad83b4529b7a3fc2fba68f6bd6c396c92f614ae22c7ae0f44d3f98ad545c"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/docs/01-estrategia.md",
+      "bytes": 4866,
+      "sha256": "36965398a057796ed4c5d67bf3e521347f397bdb4954dbb0e8b110f01dcbf384"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/docs/02-linguagem.md",
+      "bytes": 4980,
+      "sha256": "411d9c419adcea4959ff3c409676d968749a2d291e6068b4d04b4e35a4ef3547"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/docs/03-direcao-visual.md",
+      "bytes": 6473,
+      "sha256": "a3c21db32c6cfe3fecd0286be943d7f9fc724670b43f8522ed48dffa973bd2c8"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/docs/04-paginas-e-componentes.md",
+      "bytes": 5446,
+      "sha256": "ed6cfd4a6c52da8160e4a4f93bb1ed9525b2849ea128753babd9e5fdc92c1be1"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/docs/05-producao.md",
+      "bytes": 8844,
+      "sha256": "879d0eb97f81772d1c55f21ad812e9070fd1fd73477bff9654e47323341faa4c"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/docs/06-backlog-e-aceite.md",
+      "bytes": 5322,
+      "sha256": "16e0bef516f8d08d180ef1da844f6361c84eedfa3c0a805320a37a155580c423"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/docs/07-inspiracoes-e-decisoes.md",
+      "bytes": 3924,
+      "sha256": "ec339a9204e5743d48fa396bb86c2c8d85d915449c9055fdf7ea0afeab6219fc"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/docs/08-proveniencia.md",
+      "bytes": 2415,
+      "sha256": "7a032416efea9436d9c14cd1fcc5d1d47326b5b3d876cf192da1dfc9518377a7"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/evidence/baseline.json",
+      "bytes": 612,
+      "sha256": "60f209659625dc88bac44181255a42a83731ef56a5f26d72e875a831c3cc957c"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/evidence/handoff-validation.json",
+      "bytes": 783,
+      "sha256": "19768a0678faead61e131c6df3b9ad86c472f98b105f9dcdc2895b163a12a05a"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/evidence/mobile-layout-previous.json",
+      "bytes": 36527,
+      "sha256": "914eb84610b62988369f4b98fae210b88530d7ac0d81efe8062fb63be6a8bc3a"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/evidence/v1.json",
+      "bytes": 516,
+      "sha256": "a4030843c1a1e632d878b22dadeb919644334ae1e97fa12e2464ab448bd7965d"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/install-handoff.sh",
+      "bytes": 1632,
+      "sha256": "3a265cf7e6e8d42e91b039051b64ce563ca6fa48894b38d144490688fba78820"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/inventario-paginas.csv",
+      "bytes": 10018,
+      "sha256": "d9e7d570ebdad712001cc28ed2874f619ef403427682cd646b7eb203d130a8c9"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/build.mjs",
+      "bytes": 8451,
+      "sha256": "649b4467bcd282fdf952c97f6298c5e29efb048b99a5c028497e5ed487613709"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/404.html",
+      "bytes": 422,
+      "sha256": "d62166729d4d0dbc76655307bb915cbba0112e5b8f5f3a410a557a32b9a4a064"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/agentes/index.html",
+      "bytes": 22762,
+      "sha256": "77b52cec6a7ff43e34be161cb5d5794305550c943db8add9ca4d73191caf3d27"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/arquitetura/index.html",
+      "bytes": 52492,
+      "sha256": "68a32b18497acfd5b483301554f3cb54961e4ea5db900dd27080c087c4c35f17"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/app.js",
+      "bytes": 57187,
+      "sha256": "5451b51810367c16d0b52f64f24602c62952cd3ca0c837505903213588ebe9ea"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/approved/hero.png",
+      "bytes": 1574185,
+      "sha256": "82d962db4329dc4c69619ac54a8e3f5484b5c634bbc78304ce3f5a6a568cfebe"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/approved/modules.png",
+      "bytes": 867396,
+      "sha256": "1529154804978e69ceb131666e393098264867fdb8c90fe3f5459cc712dd2b4e"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/approved/products.png",
+      "bytes": 1383821,
+      "sha256": "b5ee641b0af7ad5ffe09564781f3d4b1d28f24f7fe4d82532348660e934ebfe5"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/approved/stack.png",
+      "bytes": 1408018,
+      "sha256": "96ac997f84e1a4f7346a16cde6ea2a26bfbff13d1b65736f475f537f1c9b7e3f"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/biometrics.svg",
+      "bytes": 1578,
+      "sha256": "250805ab9a3897ecb5bfe153eb439a0cca93b00c8bd3f231e244ebb7d1231926"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/blocks.json",
+      "bytes": 201328,
+      "sha256": "cd74c68b5eaa8ee00c427bfaf917261e0a4bc1f8f56621495de8ea97b24deca3"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/LEIA-ME.txt",
+      "bytes": 577,
+      "sha256": "17a03633143e32caaa42476e6b7ae0a66218f035a5edf3482423cf84428c1438"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-avatar-claro-1024.png",
+      "bytes": 38006,
+      "sha256": "f79d5d9312033f9a85403e036e0ff6a405c9a73f8c98188e9945a1fcd0df151e"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-avatar-claro-128.png",
+      "bytes": 2101,
+      "sha256": "344158e60b165546fc97b3b02bbc274b8e71e793bc396550a1bdcd08206c55c8"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-avatar-claro-256.png",
+      "bytes": 5120,
+      "sha256": "b631cbcf59ca03b7fde5a29082f5b4719a087bebb7820f66e21eef871e02dd59"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-avatar-claro-512.png",
+      "bytes": 13267,
+      "sha256": "770c6878cd65970ac397a4f16e654fbf52952f408e6ae6d69c594cfedf433823"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-avatar-claro.svg",
+      "bytes": 988,
+      "sha256": "63e93f1e6425799cde4abfc334e34803f4f205bb4603cb0b5d3e5e835153c280"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-avatar-laranja-1024.png",
+      "bytes": 37261,
+      "sha256": "d2e53dfd2e879de4b46e00599cf6aa1d86298aad342bb3260157f11064c08144"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-avatar-laranja-128.png",
+      "bytes": 2025,
+      "sha256": "57eaa1e7c1f1c35446cc96f9ec85bc8b6ec233b4c71949f13b64b371e17f42b7"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-avatar-laranja-256.png",
+      "bytes": 4794,
+      "sha256": "aa16f26129fc256a82d2166c543d4a629164329da8d5db53b81af1cba3690e9a"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-avatar-laranja-512.png",
+      "bytes": 12703,
+      "sha256": "ec35769d3ce0dd3d24aec0ce5bfe95c31fbac4e3b7159e274ce27b4f1f541f37"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-avatar-laranja.svg",
+      "bytes": 988,
+      "sha256": "0c091cf05eca913154e2e4b78b66e65fa07c2340a1aa3f80f8c103c5bf128447"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-avatar-roxo-1024.png",
+      "bytes": 37618,
+      "sha256": "34d93304fb53fae8134e45247c099b5e6d1b62db641f2900ca5516020390cbcc"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-avatar-roxo-128.png",
+      "bytes": 2132,
+      "sha256": "d54e0230041c22b116d84f3e6cebf0bd51d38189f94128031b189caf9b36441c"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-avatar-roxo-256.png",
+      "bytes": 5131,
+      "sha256": "3622910ae5d5730cde1b78e90be77b41dcb70d70304764c8756098d0e3c32c7c"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-avatar-roxo-512.png",
+      "bytes": 13218,
+      "sha256": "37da71897fe2b2e15cd2b9a5df6f02651b81b4bec6384fc21f5a5484ec760cd0"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-avatar-roxo.svg",
+      "bytes": 985,
+      "sha256": "946430d0462241aaef630bb750310b5f31ae39ace28341c58940ca1eb339b7e1"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-capa-apresentacao-1920.png",
+      "bytes": 76052,
+      "sha256": "9e8e3eb21a4672533cf09aff9d771ce5e4baa61748281ae68870e4ab88e7430f"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-capa-apresentacao.svg",
+      "bytes": 4852,
+      "sha256": "eba25b70166fd7ebadce0ec89f0844111f835954f07b622313e3cc4166530f6c"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-capa-social-1200.png",
+      "bytes": 35804,
+      "sha256": "c07663c004902bcd66ad842757f8aec20ff580347c7b788938736593aedd940a"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-capa-social.svg",
+      "bytes": 4845,
+      "sha256": "34ffe346212587016d13137e6bd705ade4d9fbfa07a7a816446b37c92c798cc2"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-logo-branco-1024.png",
+      "bytes": 16997,
+      "sha256": "44ed6dae638c2aa7782be6258c70ec169e61120240165f8e92a0bb2f6f927863"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-logo-branco-2048.png",
+      "bytes": 38769,
+      "sha256": "157d71637267b4a430f49d95a74d55182a526a3d866d3ca6df6b89b286f50aff"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-logo-branco-256.png",
+      "bytes": 3497,
+      "sha256": "49a0884c0c38d9d0753a7c08481b417659af178a8d8a2bee5d66f028517839e9"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-logo-branco-512.png",
+      "bytes": 7646,
+      "sha256": "7b698678c65066b74d68d2bdc6e8672b1a78c073d6e9c99334c9eb8ed45d66e7"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-logo-branco.svg",
+      "bytes": 4633,
+      "sha256": "5d48ca3ca0395776cac5ad2506449de0d433d261101eba390b89199de4605720"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-logo-grafite-1024.png",
+      "bytes": 21022,
+      "sha256": "a16841ea5ff2abf0cd866763e4ab6edb340296cdfc4db247ebbd85b4c16b367f"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-logo-grafite-2048.png",
+      "bytes": 50814,
+      "sha256": "72fe1f4606a464a49c0845778b7949f0ab7c6385ffc55f88006c458aed5a26dc"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-logo-grafite-256.png",
+      "bytes": 4258,
+      "sha256": "5b8ded7f4ac53875efd9f4866314d5d8dfe1ed127ab01e888a11d098bbbc8cfe"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-logo-grafite-512.png",
+      "bytes": 9103,
+      "sha256": "621838ebe6d080b666598b34772d4bccaea03510bb0f2949dc1bdc11e1bc2461"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-logo-grafite.svg",
+      "bytes": 4634,
+      "sha256": "22799ebc90d69b80fc7c2bdf0d4ab64efbc95fc6327a95369d3b557a61822233"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-logo-laranja-1024.png",
+      "bytes": 21350,
+      "sha256": "4b6506a4777c7f7024ebe0853986933dc60b8613bd3b9b466f53af1027d3db09"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-logo-laranja-2048.png",
+      "bytes": 51740,
+      "sha256": "61403f92232bcce1d08659a7e0ea426d30a6133d03df6269b2b6f5d5b56a8da1"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-logo-laranja-256.png",
+      "bytes": 4290,
+      "sha256": "596142ea9c71a89d13efb951d20539d096e66e8cfcb4fb31d1a62173799e930b"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-logo-laranja-512.png",
+      "bytes": 9195,
+      "sha256": "ca2a40ee32e5a9e2fb9a4d35e30798c00b6097c28e9b6a414895eac0c9783714"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-logo-laranja.svg",
+      "bytes": 4634,
+      "sha256": "83e4aa74e77613dee49d4a24217c607d94b1269649d9a9f65ed8f2952620eaeb"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-logo-negativo-1024.png",
+      "bytes": 17721,
+      "sha256": "2d717b36b47b07dc0f35ef95dfa886dde39fe8abbdcf4eec054a5c333576dc40"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-logo-negativo-2048.png",
+      "bytes": 40240,
+      "sha256": "b3f688a842620a76aad053cc1f0648fa23782f73f0e1e4202a8365197636c86f"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-logo-negativo-256.png",
+      "bytes": 3663,
+      "sha256": "822d79a7017b03176ea0734cf55fbc0633491f637ba52334d625951c4ec2ce82"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-logo-negativo-512.png",
+      "bytes": 7995,
+      "sha256": "6cc0ddbd203e182f35029e15e53abb20e232466c712596fe31d26a41ac743ee9"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-logo-negativo.svg",
+      "bytes": 4635,
+      "sha256": "102fb80148ffb701fe2c11b444d401f19aeb384d855f822fc360e13d68e6e0a3"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-logo-principal-1024.png",
+      "bytes": 21826,
+      "sha256": "d817dd5b45c5366c318efdcca3a12027d47c355051ccf6e323c1870d5a109705"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-logo-principal-2048.png",
+      "bytes": 52577,
+      "sha256": "4b34900d2a1fec7053c3466e9cff32dca4e93b418b3f1106a77537e95b7b629a"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-logo-principal-256.png",
+      "bytes": 4409,
+      "sha256": "b15ab0593fafd0e7dcecd80f4a1e89d99fba8b272534fa59a1d61a1704648730"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-logo-principal-512.png",
+      "bytes": 9443,
+      "sha256": "c03bf7a172f4bf67da2821a43cff0a23c4c79bda9fe8eb670c736c3ad6af7843"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-logo-principal.svg",
+      "bytes": 4636,
+      "sha256": "30a2b5abd23eec5a52595609e8b0ff008b979fb1c9d03fe340f173f38ba77fac"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-logo-roxo-1024.png",
+      "bytes": 21314,
+      "sha256": "cef25af5725db52e67d3d955365ab9c75d2fcce012513243c77522a197430880"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-logo-roxo-2048.png",
+      "bytes": 51440,
+      "sha256": "5fc153b960c67977f6f747b61d5964dabdf31b289569a7815fae76f8b191aaf9"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-logo-roxo-256.png",
+      "bytes": 4264,
+      "sha256": "eefe46c9b750c7e470d3b0463ec9c53fa92e162317610f85d109e5605f1167e3"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-logo-roxo-512.png",
+      "bytes": 9194,
+      "sha256": "fb2b83240aba3136bd68c8bf1ea59a36690e93ff66954fa019ca77320cc4aa4a"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-logo-roxo.svg",
+      "bytes": 4631,
+      "sha256": "089d9e23d82fb3d31bd69b38627fbe6fd11fa674e7163ba024a3cc178421d601"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-press-kit.zip",
+      "bytes": 898665,
+      "sha256": "3e83b779b8092c4f63be9b29383722160b18b8df24f0f3a631f81b6308479e97"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-simbolo-branco-1024.png",
+      "bytes": 18412,
+      "sha256": "224ab56cc994db77729f8101d69f34f2e71547702a6e645f17004903989bd302"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-simbolo-branco-128.png",
+      "bytes": 1353,
+      "sha256": "9d609f2c5e1239f5afccbeac185827f8316d200bfa2a459f6f4ca4159eca70c2"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-simbolo-branco-256.png",
+      "bytes": 3702,
+      "sha256": "8f62ee29b15e0a8ad001733bba66ebdccf9f3ad4bdb942b78cff26a103b35ab4"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-simbolo-branco-512.png",
+      "bytes": 7846,
+      "sha256": "39312706a0e5f55cb2b967b4eb241c84d1e2883da1c78fcd3b7442138376dd40"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-simbolo-branco-64.png",
+      "bytes": 672,
+      "sha256": "327f661fe61f01677a65c040f136c4412cb84997f4f24fb1cb9d4bbd59221b19"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-simbolo-branco.svg",
+      "bytes": 939,
+      "sha256": "7500e073100be42391e0264156f4a6ad2ed73222a8a9c4a6325194ee8b795051"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-simbolo-grafite-1024.png",
+      "bytes": 26731,
+      "sha256": "c7452e776ef981a29c3b654dd1b449d7cdb3297c4d7f127e55df66c9f460385f"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-simbolo-grafite-128.png",
+      "bytes": 1709,
+      "sha256": "f3cea0bbfbf5e0908a3eda5eecfe8ae65ae11777bc4e4f7aeda440f7855078ee"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-simbolo-grafite-256.png",
+      "bytes": 5342,
+      "sha256": "4ecd667a98afd9085bb4de69dc514f513c080b846df1009e0c0a63a0ac7b1d56"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-simbolo-grafite-512.png",
+      "bytes": 11449,
+      "sha256": "0415dd4f2fca3f1d6e6e55322a7aa15644f4ed1e131ddd1de567db9b62043a71"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-simbolo-grafite-64.png",
+      "bytes": 863,
+      "sha256": "2bec9b7cdfc460be9713deb8b1e74d940bd430f5466a1693007efdb2122730ba"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-simbolo-grafite.svg",
+      "bytes": 940,
+      "sha256": "ec366cde8d1a9b7ccc44c630f6935b38ba97fba3c1dfbac8fc6184920c0ecb42"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-simbolo-laranja-1024.png",
+      "bytes": 31494,
+      "sha256": "3be37f878f99ab64ca530910c15840ce9965303aa07b7604049f7a15a00ee58d"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-simbolo-laranja-128.png",
+      "bytes": 1744,
+      "sha256": "4705eb79198111ae94688681361e05fbba90b1abc0cf76b2acea7ae36483fd0f"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-simbolo-laranja-256.png",
+      "bytes": 6448,
+      "sha256": "f5d15a7c688d03f98e22452ba8cdac8aea5338a5fcfb89e6bbffe8cb380c7d36"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-simbolo-laranja-512.png",
+      "bytes": 13724,
+      "sha256": "73e2c9c8de2c17b827d490ff17e967c3ad5cd2d8add77e4d9af8488e366f4dac"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-simbolo-laranja-64.png",
+      "bytes": 902,
+      "sha256": "5533f064d5f4093f36f40d9fd82e110f820d011fc51b62a295dc16c7be2e24c9"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-simbolo-laranja.svg",
+      "bytes": 940,
+      "sha256": "c874416d3fea280129beb5fba5e2702446e6c7b63ef5a9cc617397f41da9564a"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-simbolo-negativo-1024.png",
+      "bytes": 22808,
+      "sha256": "1c7624e61610b6b92d370c03ce888596fb9337b93191c5d3e921a1d9e92b588f"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-simbolo-negativo-128.png",
+      "bytes": 1537,
+      "sha256": "e64830dcdc15dd8d185b8c27665feb63140ede5c8f0afbad1210f1277f522864"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-simbolo-negativo-256.png",
+      "bytes": 4594,
+      "sha256": "773c15d5531d37ec2d850bdce561ccaed63cbda00ca1dee0094db31f1c36b08f"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-simbolo-negativo-512.png",
+      "bytes": 9644,
+      "sha256": "3b548b66f2129ec062ff889b710ae45b6fe74c8e23a10b5133b0d1c68892e5ed"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-simbolo-negativo-64.png",
+      "bytes": 783,
+      "sha256": "dbe0780ef3a1bb3197bebc9eb5ab3a669624989cc33eb156a8e75b97e8e0073c"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-simbolo-negativo.svg",
+      "bytes": 941,
+      "sha256": "30a240b6af6f8e2fc27eb1d00b7812d0ccf964d2b731386ef14c9f648e684f9a"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-simbolo-principal-1024.png",
+      "bytes": 31333,
+      "sha256": "c03ae5e01a3a73db0719efc878bc2deded3b81909bd038ef1fcc0b83fa48745c"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-simbolo-principal-128.png",
+      "bytes": 1850,
+      "sha256": "ea75173cd0167a64f961774667dd1f631232a3e09cb2e4c58c89eb42e26911ab"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-simbolo-principal-256.png",
+      "bytes": 6522,
+      "sha256": "c074d2ca2421b18ea2675412b604b0e8e0955c9f5aaadb53421cd1c0fce8f6a9"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-simbolo-principal-512.png",
+      "bytes": 13731,
+      "sha256": "04eab1ddad467175896f9568b6d54c2e6bf9a257702cea2d15176267950fa713"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-simbolo-principal-64.png",
+      "bytes": 951,
+      "sha256": "cf244eaac9410f4a6a6a4f8be061fa24ecffdbd2114b9aa907817ad7e8d7dd1a"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-simbolo-principal.svg",
+      "bytes": 942,
+      "sha256": "e0e5914d2dad92c3896e43371a3bb6431888e6421aa191fa4b642bc36cd5ca2e"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-simbolo-roxo-1024.png",
+      "bytes": 30248,
+      "sha256": "0b29a60ca3dcf38a5b7ae8c451b7f3a8d2dbdf01ac514a1395366402ec50bf39"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-simbolo-roxo-128.png",
+      "bytes": 1732,
+      "sha256": "ad957d3d93d34899eef75df7336758f2ba010ca29832f2edd84ecc990ce7b5d2"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-simbolo-roxo-256.png",
+      "bytes": 6262,
+      "sha256": "d91175c04fe6418f16aea3da8cea3b54c20d6c22626f6107197605e28dc9010c"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-simbolo-roxo-512.png",
+      "bytes": 13274,
+      "sha256": "7fdd0364b6053e47e33f23de415e8a829f634aa38551d3bec9004f069f78083c"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-simbolo-roxo-64.png",
+      "bytes": 891,
+      "sha256": "dbebb5a61f9119101d802090508ea887175d3f4ed0eb74798a0b77a1faa67f65"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/catalisa-simbolo-roxo.svg",
+      "bytes": 937,
+      "sha256": "9774c6d3b6e37f73ff064c635a8f38bcd0b2df2d95ae947587f49dc779592be3"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/brand/manifest.json",
+      "bytes": 1793,
+      "sha256": "06b5bb387b1e2ac7eb3153db7c52f3a66c726160b670f3578c3f14fb528bca31"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/connection/about.css",
+      "bytes": 10032,
+      "sha256": "87fef20bf2030436c1cae0214bf01b7a0a20f0d9878dc377eb688e317acab120"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/connection/about.js",
+      "bytes": 8056,
+      "sha256": "416dbe649fde1c19892d45675273db2620b512dc4523b73152d7a56fd43949f7"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/connection/agents.css",
+      "bytes": 15135,
+      "sha256": "b8e7210ea7d2b3ea6d55c425d4f5c1f9d097721dfb68d1d3245ee4a7996b925d"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/connection/agents.js",
+      "bytes": 19952,
+      "sha256": "24ff7dd33144d8eb6f2cfae2d74d548da2b923a07db768fd41a72caf4dcb1303"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/connection/architecture.css",
+      "bytes": 14859,
+      "sha256": "654ea9910d176c25b18895b390b738cca7372d7e12780d3abacbca06c44bddfb"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/connection/architecture.js",
+      "bytes": 21793,
+      "sha256": "0cf0adacfd21cc1a2c002ba9915bd88e5aa1173e4c021c306e5a1745bc7fb533"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/connection/architecture.webp",
+      "bytes": 100566,
+      "sha256": "6efe6bee7dbaf6d3185913d008e4959e919fc009e23b5fd46d8c36b7f0fcdc13"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/connection/banking.css",
+      "bytes": 36090,
+      "sha256": "ef7b556bc9f23850d7d00959f0f8c5e8f7e5c8ce08bf132172b830afd505a090"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/connection/banking.js",
+      "bytes": 26529,
+      "sha256": "ce2f448a55b50ef762c3f295d74e3109c0d86b9d4a461621ccdb45589f2e1bc3"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/connection/banking.webp",
+      "bytes": 84048,
+      "sha256": "7f41501ce070aead8b7e7d434a03bf0138a2c1de8feee957cb2eb1718fe17657"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/connection/contact-demo.css",
+      "bytes": 27798,
+      "sha256": "916dbdf1e04e33355518c1ac5427b3fd0c6ddd249217629dbe544024c09bd10d"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/connection/contact-demo.js",
+      "bytes": 20919,
+      "sha256": "0ff607650b5ad1b82d52a2d1a73af3491670dccb4e8e7d1bbab8fff143a36e86"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/connection/contact.css",
+      "bytes": 16207,
+      "sha256": "8ab8276d6552c99fbd5b8e4ba0600c58d71b3cb6eff434f5967d4a7fe2af6176"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/connection/contact.js",
+      "bytes": 33800,
+      "sha256": "57e1db7b4ca080c62120a2370183d8d25e14aef90413f6de9a70a329ca0bc32c"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/connection/credit.css",
+      "bytes": 23789,
+      "sha256": "db359eae19af7910d37acd5ef9a6745efab7d3caf19de644d399e07190a5d9cf"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/connection/credit.js",
+      "bytes": 19555,
+      "sha256": "f54d87f5b0349d1599be778bf4e7a10f568103a23df3274c09f28d77ed851085"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/connection/developers.css",
+      "bytes": 8740,
+      "sha256": "fbaef3faad98d909e0997d2c760484cb6b5677d4804fcc56eb6a9e55075014a9"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/connection/developers.js",
+      "bytes": 16823,
+      "sha256": "af8c29ef461f97e9b07dcf28e345fc6a79d01aaa70e246d896af64bcc1f71869"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/connection/editorial-data.js",
+      "bytes": 24066,
+      "sha256": "aa809e441e3195f44d3f768507aebb1531a79012fbccc52cb130faa87f9c4f0a"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/connection/editorial.css",
+      "bytes": 14557,
+      "sha256": "d9e10c96ee1c5158589dfb00b3f97e5e05380c88caf52daf05c4939ccbfe19c0"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/connection/editorial.js",
+      "bytes": 17823,
+      "sha256": "a64de0a9fe73e9efa530e1f94766f613ee4dd0b129fd178bdc59ffb550822764"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/connection/experience.css",
+      "bytes": 21798,
+      "sha256": "ad5f90fb03ee6aa45abb3021ed8b3efbb61bf29d4ae5b294cca746982430d6d8"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/connection/experience.js",
+      "bytes": 25889,
+      "sha256": "2a419d19288f5d885185a6abd0b189f138be63b44c06fd8e8e9c90145715cdd0"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/connection/financial-city.webp",
+      "bytes": 113386,
+      "sha256": "af26d1e57d7223d3bb65493ff4e34c853e0c4eaf5885ef8432c3f23a28395ae1"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/connection/governance.css",
+      "bytes": 14337,
+      "sha256": "ae1262fe25d96f7e5ccdb977251eebe2ee80e2b96791f4968af204cc99c7a83a"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/connection/governance.js",
+      "bytes": 17597,
+      "sha256": "516f08630357be9b054cd611feff45d0445e8c44879ce2abd69db3f96c7ede73"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/connection/hero.webp",
+      "bytes": 74952,
+      "sha256": "26c354a2bc8d402c0f4be465b1247b06ebb58aade3118848eac81a73b2923020"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/connection/mobile.css",
+      "bytes": 8267,
+      "sha256": "6a2fdcc88c9b8721887fdd560bda0c6a97053626735fa59f0ac66b35eae9bf6f"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/connection/perspectives.css",
+      "bytes": 20764,
+      "sha256": "5586ca47f97bbffbe16d57714a0e1cd40ea77e7735535a98efe376d4171988db"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/connection/perspectives.js",
+      "bytes": 24805,
+      "sha256": "d8e8a2539702d4283eb5eef6e2bb4dcc3cfe9c34489056b6ae4e9909b50623da"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/connection/platform.css",
+      "bytes": 27734,
+      "sha256": "e057e6cc76af93181f7284f83f774f0bbf2e2339870dd8858f117be5c50c66da"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/connection/platform.js",
+      "bytes": 64920,
+      "sha256": "0740363b170da303025fb13512e016647eb2fa54719c4a80d55cc81e864c4fed"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/connection/presskit.css",
+      "bytes": 3494,
+      "sha256": "8da59fe4eae14cb4065b367602343ba6cf3e3c822b00d9bb05c1f300a51ca438"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/connection/presskit.js",
+      "bytes": 6174,
+      "sha256": "8eb3935ebcddf6cbdcbe516c03908b0172fc609b70c6a9b76605535f8341e5ba"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/connection/site.css",
+      "bytes": 28225,
+      "sha256": "5cf8b6ddb37980d1e05609c9fbed05d2f3681aadbcf19fd9ed1179edf21086bc"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/connection/site.js",
+      "bytes": 32638,
+      "sha256": "1453ccef44b64c12e38a6b82f597af6d400aae4d7c974b89225b2f3582d45eeb"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/connection/studio.css",
+      "bytes": 15841,
+      "sha256": "87abb90b698a27fded11515931d68fd4d9a6e02fb34d4070d85e6bfb1f9e01e2"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/connection/studio.js",
+      "bytes": 26503,
+      "sha256": "b8f6981f930e74cf66669da0f19a30f47cfdaa890968391ff510d39e74c56493"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/connection/studio.webp",
+      "bytes": 128812,
+      "sha256": "e1cb3dfcf1d0efa77c42005f9ca5e14ad1406e1bed6488fd2b01a8d1915e00ed"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/connection/workflows.css",
+      "bytes": 13945,
+      "sha256": "e9b32db5de9d52b82cf308920cdd20694fa44dac1cfb8e035626f0666a1d8287"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/connection/workflows.js",
+      "bytes": 21381,
+      "sha256": "0f72935540dbf5ed9001c9a1e872f0589c91cc42a212f67d61e941ada253455c"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/decision.svg",
+      "bytes": 2227,
+      "sha256": "945d5c8f21d77eaab415cf8632c55114584dceeba0395c6c6fdeb9f8467a1ff2"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/document.svg",
+      "bytes": 1060,
+      "sha256": "e667e4c7c48948a4ec4379674e43d76c2adbb01b54c5c43b8d102f9b80e3cb42"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/editorial.css",
+      "bytes": 16103,
+      "sha256": "470829bb3d92e6c0c4dfd8ae449a36859a6c9814909cc254309563529429e4c0"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/editorial.js",
+      "bytes": 16312,
+      "sha256": "dc6d572f36c92a85d9cc23e05c6579ae34f86631b1d33e1266a16c70d8a9f44e"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/experience-v2.css",
+      "bytes": 39424,
+      "sha256": "58c8868a06b8b69da0c5da646a988ae6d19388ecc4542a1fc54603c2c2afa21f"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/experience-v2.js",
+      "bytes": 33510,
+      "sha256": "5c69f52761165c1e07b7793a6cda316c3d7b4e7160a5e3803dbf81e97235b109"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/faithful.css",
+      "bytes": 29609,
+      "sha256": "c8453cd449fd8d60830cf6c2448363ebd3e90a145d9dad6b5c81bbe581c33123"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/faithful.js",
+      "bytes": 15488,
+      "sha256": "123ac15c9515b977179aba9f5e7a0ab33a5c19abdfdd4a3d93674a57a466e376"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/favicon.svg",
+      "bytes": 244,
+      "sha256": "60ee8e0732f0b76f4c330a6d7e2e8c06e49927fa86f9d76c330f02abc6dbda7b"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/hero-architecture.png",
+      "bytes": 1782252,
+      "sha256": "2e851960fb4333ebdbebd4fc8f1abb08e4b09205ecabc6c49bdf0ac0e1b66921"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/inter-0.ttf",
+      "bytes": 324820,
+      "sha256": "1b08e7fc267a5c7e1d614100f604b83e7e8a0be241f0f288faa2b3ac93a683ba"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/inter-1.ttf",
+      "bytes": 325304,
+      "sha256": "8c883f63b2c4157d997319f2c8bc6995ed4357ef371940d31ca159004a4aae63"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/inter-2.ttf",
+      "bytes": 326048,
+      "sha256": "e7a1aaf7eda9f2fad4131725fa556265ec75ca7b2d756260173a040363e8d4f7"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/inter-3.ttf",
+      "bytes": 326468,
+      "sha256": "b37284b5701b6b168dfc770aa1a4ac492106422fd3ba76bc7641e37434e8019c"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/inter-4.ttf",
+      "bytes": 327324,
+      "sha256": "eec66af7f2337bd34fe6e801cf92ededcb57a20c0d7bc40a61d4eefcbe3dd40c"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/inter-5.ttf",
+      "bytes": 327260,
+      "sha256": "5b717029a2c4cfca2167e97be1157edb24151591e5ec96eb484745c392817a7a"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/juridico.svg",
+      "bytes": 1419,
+      "sha256": "61b08e47f6b2743d3119e28df3780f6bc223b867f90c0f37a3890442356f02f6"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/logo.svg",
+      "bytes": 5045,
+      "sha256": "3356b3d7c8bd7b68fdb830bdaefbaa90e4a681ab95885e9b73c54f58f6b6b4ab"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/med.svg",
+      "bytes": 923,
+      "sha256": "cea0c96b0dd12dc6f540a66be5fdea11f591f70b066ab490a6daf6e639e51b2f"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/media/banking-reel.mp4",
+      "bytes": 1059354,
+      "sha256": "8484e89ea453cbf8456645f124ac26531a0c00e192b33f51fa97d6f4409119ef"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/media/citrus.png",
+      "bytes": 1916947,
+      "sha256": "5f9fa2b80663c27ccbbffac02021e9bb92a2a8e497b3fddece49345f92dded0e"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/media/composition-film.mp4",
+      "bytes": 1019912,
+      "sha256": "6a7088f434efc66b8d143ad1c69b8c75a59dce4745a3ce7a4b94052261e6c2b2"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/media/credit-reel.mp4",
+      "bytes": 1551650,
+      "sha256": "b76d996dbecedd60b9c436ab7de02e2ac63eae7f7d95183924545ffc4e48cdd0"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/media/portal.png",
+      "bytes": 2220449,
+      "sha256": "e327f976573eadb1546bc7979ee8cb6b0bb7586958a8359a9838925287311cc0"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/media/ribbon.png",
+      "bytes": 2011327,
+      "sha256": "7df0029a0a00e0c967fc14a906190ba040e04a34998a4fdeb67b2dc72de86fa9"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/modules.svg",
+      "bytes": 2390,
+      "sha256": "2f0785cc1a232ac2454422ed838e9357f25cb84e837b3467c7e5e66704c3f0c6"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/orbit.svg",
+      "bytes": 1037,
+      "sha256": "cdcbce5b9628bef2aa11ed29b136a0018dae926d01667b1ee06f0491c9118e49"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/plane.svg",
+      "bytes": 869,
+      "sha256": "7c750e7e8d0aa2fd8611cb4f71b18fafadb1b8cb32fe019cafa6c6126baa9511"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/platforms.js",
+      "bytes": 6082,
+      "sha256": "b3563b2ac8c2fb01f5ff4a35d9f357eac2d94bdd1a705e16f0130d7494396d17"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/products.js",
+      "bytes": 8591,
+      "sha256": "6082b8a5f32418db0854042a0324f1699ba1d0a25de237aa07c27a13d98ee053"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/recrutamento.svg",
+      "bytes": 1866,
+      "sha256": "eeb6bfcf49e6c4efa2797e14f0fcc5f2fe6f81be8662fd60203d122a66e352da"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/routes.json",
+      "bytes": 7160,
+      "sha256": "163800c21e6c4747dfd069379fae91921925068e8cf0ea62807938fc853aafa6"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/screens/agents-config.png",
+      "bytes": 216853,
+      "sha256": "90a893855f22cdc386c218ec80cd64fedb4446596a2e8084ff8bac5aa5e0b2e0"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/screens/agents-overview.jpg",
+      "bytes": 49876,
+      "sha256": "479d95cf5dffb8ab713b95dd528bc48be3cbd6c9b7a731957efd6ee57f3098db"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/screens/bank-access.jpg",
+      "bytes": 82050,
+      "sha256": "f12671ec0ab308baabf9354e153c7854c6b4a1a66ba9614605eaf7a18f942e3f"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/screens/bank-analysis.jpg",
+      "bytes": 75228,
+      "sha256": "8ce3ea8965a7c7a2b121991e58336dca632b10ad2a19c0ef48f35049db85d9f0"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/screens/bank-console.jpg",
+      "bytes": 55726,
+      "sha256": "19aabfe3a292d5a94bf02625bd33353d4fee53682311091144ddb9e555637489"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/screens/bank-desktop.jpg",
+      "bytes": 54600,
+      "sha256": "3dbb6f94b036b127b943052f1b0491f94924ecd8a48165b948e58e3c9c28714f"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/screens/bank-live-accounts.jpg",
+      "bytes": 127908,
+      "sha256": "538660273ad72b6f8c7b7ccb0c77ee598f114f827974b10b39f7b10bf64e21b7"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/screens/bank-live-holds.jpg",
+      "bytes": 91466,
+      "sha256": "1216be941f6df9b49efe0429b889784c5aa2a4129fb032b15a27784c806b1159"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/screens/bank-mobile.png",
+      "bytes": 218290,
+      "sha256": "8c6da0da120bd972325904bbb76facee52aeac0f2c9d54c9afa356b8102f74e8"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/screens/bank-statement.jpg",
+      "bytes": 63210,
+      "sha256": "e8b1d2d3404c968f92cd679f6e0fdd697d6424885bb2b1bc58f638607d89da8c"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/screens/credit-latest-agreements.png",
+      "bytes": 119305,
+      "sha256": "1b2fc4b3694cbe6632ee72cdb660be7a93469f0051b65eef82d1aadcd6ee3e2c"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/screens/credit-latest-covenants.png",
+      "bytes": 166759,
+      "sha256": "49b462319e89a62bb358ac00793e1dd00875621f45b65638df84ce5db524b4ef"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/screens/credit-operation.png",
+      "bytes": 231957,
+      "sha256": "0ad812b56d84a8fa5c412f5dadd922a7d979f1bd91d0525cdbfaf8a66469943b"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/screens/credit-policy.png",
+      "bytes": 166564,
+      "sha256": "dd6e63e3801b2830aebc3c7589d2873d07631e0f9d3458fc698886dfe5f33370"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/screens/credit-portal.jpg",
+      "bytes": 44165,
+      "sha256": "9d20fd2903e207f820658f3c206033d38ce9783a6aed91dd342230c43eda3e14"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/screens/credit-portfolio.png",
+      "bytes": 159486,
+      "sha256": "af86e6185a01536d22a400f018f06c51c5f26476560fbb1f913243c219a72983"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/screens/credit-queue.png",
+      "bytes": 183001,
+      "sha256": "636b5923ac82069a1b7343e2b9e96020bb05fc99e4d74706113672c361c670cc"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/screens/credit-simulator.png",
+      "bytes": 120649,
+      "sha256": "856e01d23e9458ef0e19faacb7f7d3c6ca6a8822c65a31702edfb991653f2fcf"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/screens/studio-builder.jpg",
+      "bytes": 77112,
+      "sha256": "ce76b76c1136dd5b998a4efa74275595f8fac2c7144aa40c23454ff1181e065e"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/screens/studio-canvas.png",
+      "bytes": 22695,
+      "sha256": "8611a66b901a9d8d112ecff7fae113567e24ad71505309b803ccba0086ca1ca7"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/screens/studio-dashboard.jpg",
+      "bytes": 88413,
+      "sha256": "842d1f97ff2de54ae92e4341a7630aa63a5ce45b4b081e4384a74a3d77baacae"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/screens/studio-service-ai.png",
+      "bytes": 127953,
+      "sha256": "aa3f7dc8b04973498bf60acb1562a2ec60852d1deb66502535ca1ff3659c2da3"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/screens/studio-service-manual.png",
+      "bytes": 120088,
+      "sha256": "dd29404216a8302121822279abf9008ef9daed771e7c01bfc3eab7791a75f791"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/screens/workflows-canvas.jpg",
+      "bytes": 41345,
+      "sha256": "e27a13967b486a46399d6fb9b3de2c95774cc7b50ec93f88d6236acc64830c4d"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/screens/workflows-detail.png",
+      "bytes": 181575,
+      "sha256": "018e2636af7e4cd7a71be5af1449e6d027501a5f58793b7d4a00ccce58cc8b72"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/signal.svg",
+      "bytes": 43059,
+      "sha256": "5a720b90373f4dc5435b80a14d1ec2e7d7414ac5e60a98788bc111445aaa4218"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/stack.svg",
+      "bytes": 2183,
+      "sha256": "03d573610c3207d001801e531fbac706ed9ad71cc922d97882c8c7b02d109e79"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/stair.svg",
+      "bytes": 926,
+      "sha256": "879c829e2c1e27449d5a64b3da1e4d9d101c40ad558b9c23507fd48a3ac30e3b"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/assets/style.css",
+      "bytes": 20008,
+      "sha256": "c39bf4665e24b178dc0a3c7b4de9bdf5d2d1195cab2cdf54859f17917c7e866d"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/capacidades/ai-engine/index.html",
+      "bytes": 11928,
+      "sha256": "8513fe8430b35a05ffe4e20786912d66b1119c78e6ba575a3662b9268aeb14e7"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/capacidades/analytics/index.html",
+      "bytes": 11733,
+      "sha256": "33b4712f5016a8b92214b420b5f93dedb4a516e44e5b72b258f51d889791975b"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/capacidades/api-keys/index.html",
+      "bytes": 12360,
+      "sha256": "57afe523eb4e699724e3df93a2da5c146ae94dda7cf4be1fdcc33b98f774f547"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/capacidades/audit-trail/index.html",
+      "bytes": 12190,
+      "sha256": "eef854210dba8d95a041993545dad0bc36fe692f34feb478825aebe7afea7540"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/capacidades/baas/index.html",
+      "bytes": 12152,
+      "sha256": "9e1f5c69b02ddf21a606029bd219c7d6750485a2b8adbb17dce6485597d94344"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/capacidades/banking/index.html",
+      "bytes": 11620,
+      "sha256": "9ad9725f6fcf690106843ea905c2c8d36f97dc74692f41ee8e7e417c2440e2c2"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/capacidades/banking-product-portfolio/index.html",
+      "bytes": 12196,
+      "sha256": "fdda2e2848e6593920af05f8ca754d1e9d412022cc45a5f0f461df853d7da337"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/capacidades/billing/index.html",
+      "bytes": 11992,
+      "sha256": "1c5056647fa185cafd24c89b83be9d3bc766fe519b885a5e53eb3ed7233318d4"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/capacidades/biometrics/index.html",
+      "bytes": 12337,
+      "sha256": "bf1ec2cf360c2163e80d1002b65ff2d2ad0dbbd98b3a4da66989591c3af66aa6"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/capacidades/bureaus/index.html",
+      "bytes": 11917,
+      "sha256": "3ba5a74ee68af3d1fbf89c2fe0efed238185b3d2c1a2e13f6743621578ff66d5"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/capacidades/calculations-engine/index.html",
+      "bytes": 11935,
+      "sha256": "ffa1372a0e204def3da98f610e8a43f2a3b2418a1b099466f4c8ccdcb92e6684"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/capacidades/calendar/index.html",
+      "bytes": 11765,
+      "sha256": "86809d8c93638c7168f8e885ae3b760a3ad9a1a8d1a55fd396803b57d2c56737"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/capacidades/cms/index.html",
+      "bytes": 11715,
+      "sha256": "bb89a861f7419dd7d7078f0a9398b9e44290a294cb1e4cb97e0a77b9e4c1d52b"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/capacidades/commerce/index.html",
+      "bytes": 10706,
+      "sha256": "89d19382eb29dd9941d95b036c9ff730a7fcced5e11442cd06a2deb6716e2719"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/capacidades/companies/index.html",
+      "bytes": 11784,
+      "sha256": "2369b39083d1ddd894043fce1b71d0ca9587b3dfe2f73e78caa43971809526a2"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/capacidades/customers/index.html",
+      "bytes": 11422,
+      "sha256": "5f75a537b6c004715c485d9800b3c2ef34c0e88d073c96cb44f33cc297e1d07a"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/capacidades/data-extraction/index.html",
+      "bytes": 11033,
+      "sha256": "e1d2dce8f7adfa7ef6a8f86ee635d61defe9b06053d2962531f114c388fd4b51"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/capacidades/data-store/index.html",
+      "bytes": 12001,
+      "sha256": "0c0956e573baf7f9be67966c4a8f3d54c26d9f53368af4416f5b3afeb9011ddb"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/capacidades/decision-engine/index.html",
+      "bytes": 11694,
+      "sha256": "e8daef0b577d408a8e29fbd675e5bfad7f76bf653b867dbc13767ec159be0cc6"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/capacidades/decision-platform/index.html",
+      "bytes": 11407,
+      "sha256": "45814106ac867090476ba80744923f283ea28e54519fc5781c285e2ff23d6fa9"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/capacidades/document-template/index.html",
+      "bytes": 12109,
+      "sha256": "f0166d20b07739b759617954952f3b403bdf2797c24d79c420081f489332a792"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/capacidades/e-signature/index.html",
+      "bytes": 12124,
+      "sha256": "68738d824dab3c7ff974e5995ed25689314c6ab3dbab1db20175b83f8f2a6ec7"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/capacidades/email/index.html",
+      "bytes": 11121,
+      "sha256": "a37728039e154f28dc53157b1825bf5c9071f95c0788eb116e806b0ac2178f66"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/capacidades/feature-flags/index.html",
+      "bytes": 12232,
+      "sha256": "1d4f748fcf755d4c08ba146e3e4466d3b881a0acb5a40fa19da614e521b76ed4"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/capacidades/file-storage/index.html",
+      "bytes": 12376,
+      "sha256": "2297102d9ea0c76a840a01d489cb8e963d398b8591886150fef8434aadc296ca"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/capacidades/iam/index.html",
+      "bytes": 12277,
+      "sha256": "d61d5fe1dc873c8d13ebaa8fd2b1c02d21411f8717b110f26ba4eab4c65eec68"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/capacidades/index.html",
+      "bytes": 82765,
+      "sha256": "e0bd07eb846de2b0e1357a47825fd3d14317a6747a42bd953a2fea1f74030b76"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/capacidades/meta-account/index.html",
+      "bytes": 11226,
+      "sha256": "490189d240d8ba4479aa4cb6b92978811804a1d73a8c6df4d935a0a499356c3f"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/capacidades/open-finance/index.html",
+      "bytes": 11611,
+      "sha256": "7d8d65abdf43b9c8bd44e6b21dcbfe2b5ad0bba4543c8565e39b0ac83c5115fc"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/capacidades/payments/index.html",
+      "bytes": 11449,
+      "sha256": "2c469508db0f3cf0c7ddbf14f15784ad56e7457f86fa7d08b5a565dad98ce075"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/capacidades/people/index.html",
+      "bytes": 11722,
+      "sha256": "c4d9eea07fcee2001e60f324b75a1930cf30b75b0074163fca650946d90a70c6"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/capacidades/pricing-engine/index.html",
+      "bytes": 12027,
+      "sha256": "81d6460467b98bcbca6bf040b0d320f2bdca173d8a10c1d9c55e77b547fdd144"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/capacidades/products/index.html",
+      "bytes": 11507,
+      "sha256": "b63618e74173c2975a4bffa0974b3704e4cb2e6f593c5738c0e74b8119515909"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/capacidades/rooms/index.html",
+      "bytes": 11921,
+      "sha256": "d9da8696980f4517f0a24790b2b6497392b6dc52b374ffac060b42b925ee4660"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/capacidades/service-attestations/index.html",
+      "bytes": 11847,
+      "sha256": "03faa87f32822ad8319dab321bfb659d669785bf96e14c4b37c124c4fc30ab2d"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/capacidades/slack/index.html",
+      "bytes": 11160,
+      "sha256": "3802d0bbd850768ea4e73692b5d6c2e92af0578ff4659a58ac56904f9fc8b8f3"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/capacidades/sso/index.html",
+      "bytes": 11718,
+      "sha256": "b6a2272420c623881c3323743acdcc26e3618e0dd5fe49afca3ee1ecb162033f"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/capacidades/webhooks-engine/index.html",
+      "bytes": 12291,
+      "sha256": "4a5c8a9e9f73a273a382758f1c9d794b15240ce05ee6ad6b996336fa971c67d0"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/capacidades/wpp/index.html",
+      "bytes": 11189,
+      "sha256": "540824b9d9e6f9eb0495c1a4151449feaf7dc08da0c108e150752b9825a51175"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/capacidades/wpp-business/index.html",
+      "bytes": 11902,
+      "sha256": "2304c95e8abc0ab71b6fa6cfe00dd11fc4e5ba5f2d2e6ed21a35bda1b8e73e09"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/composicoes/index.html",
+      "bytes": 7606,
+      "sha256": "6ca47c22a3e5038c78f23f4e653dfa41ee333b5bd234bd48e010aa7da1a4d5ea"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/contato/index.html",
+      "bytes": 12853,
+      "sha256": "874b8c3efea9813d864e5fc4d37cbee9d798516766f76f3b979a3d8f587ddf96"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/desenvolvedores/index.html",
+      "bytes": 20985,
+      "sha256": "1f3edb0f8d615dbb22bf6e7540f368944b12c7968c67b29e6a3ebf54a13ea44d"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/ecossistema/banking/index.html",
+      "bytes": 29684,
+      "sha256": "1be73cc30a8beaa498a6e55177d6d631828c8269665bb7b478a50e986913e70d"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/ecossistema/biometrics/index.html",
+      "bytes": 11716,
+      "sha256": "0bd2b20c04e597077b790062fa7ad224a2571687f87075f9a54787a451ba8f33"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/ecossistema/credit/index.html",
+      "bytes": 25291,
+      "sha256": "b98149d5280138c74dbc3b49a32aa171227f96981b22afe2a0aefdbd8b810739"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/ecossistema/decision/index.html",
+      "bytes": 11494,
+      "sha256": "284fc70ef16ea76a73ab2faedc8fc30edacda7569fb2bfca2fc2b66461043ce9"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/ecossistema/index.html",
+      "bytes": 11155,
+      "sha256": "9302401cc716b7a99606940dae858d33d3ae8e58bb8290b52043616f1f654ae8"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/ecossistema/juridico/index.html",
+      "bytes": 12175,
+      "sha256": "544040f6ad4daff4060e4499e478452c5649c82cfcf6c04135349c0c6b44bbd7"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/ecossistema/med/index.html",
+      "bytes": 11752,
+      "sha256": "e4293983fd56f50ca0a14e52268ec746e441061d4c49f7b888acb2a1185eb27b"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/ecossistema/recrutamento/index.html",
+      "bytes": 12491,
+      "sha256": "24a18f344cff56af65d300de0d985ccfe03ab43ee443d09010a4888e3d79f1c9"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/fontes/index.html",
+      "bytes": 8284,
+      "sha256": "ca3242b711d0cbfe74151aad9056e13e3bcf53aa99aa4b25304b38f7814bcde4"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/governanca/index.html",
+      "bytes": 22916,
+      "sha256": "2740e586dd2a62f64755b23bb76dd0a0881845ae8a3a22aa476ed9303e35c7c6"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/index.html",
+      "bytes": 45700,
+      "sha256": "4124991d1dcfde6310ffa165ea54a5ef70c3d7c4e92076aa713827ac6f46f7e2"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/interfaces/index.html",
+      "bytes": 10502,
+      "sha256": "84ff1b47a95c1cb45b2a59fd4a8070c012f412ea8e757b8a8633cbaa10669f27"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/lab/index.html",
+      "bytes": 13074,
+      "sha256": "a3a890b98675a3c5c1efd6ab84898d0d4c45b190a2fd09f1a62cc06d14fa6fd9"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/mapa/index.html",
+      "bytes": 12818,
+      "sha256": "d4a306f65d08a63112cbace3d42bd777d9ed4776bf9c150422f929afe40bed21"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/perspectivas/autonomia-responsabilidade/index.html",
+      "bytes": 17620,
+      "sha256": "c03a2a2cbed8950394034360f506360bf4a95e244983e8eb43c7c8636bf900b4"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/perspectivas/construir-por-composicao/index.html",
+      "bytes": 18457,
+      "sha256": "839a9599d05172e216406ba151cd39edb0df06c5707adedf9a6d76e7f634b127"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/perspectivas/index.html",
+      "bytes": 21692,
+      "sha256": "aad77eb3657cfa2d6351cfdfbe1e519ec840d76ed1e5940d5c8c65ae4be35cde"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/perspectivas/open-finance-da-conexao-ao-produto/index.html",
+      "bytes": 18023,
+      "sha256": "433763b4c8481347bf921c8f682a77f19cf98837362c44de3fc19140b610b955"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/perspectivas/regra-legivel/index.html",
+      "bytes": 17216,
+      "sha256": "d9a6ccee2595fd22004c7cb0d2b42b5e15edbc9bc1457cc1d8a00082a465ec53"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/perspectivas/resiliencia-e-liberdade-de-evoluir/index.html",
+      "bytes": 17722,
+      "sha256": "bcfd342f8f64c08566e0decb83bbff5567d0ffe1b95becb4d5504857e06faa66"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/press-kit/index.html",
+      "bytes": 22497,
+      "sha256": "5cdbdc0d22ff2316591b7c8d700d1d4739e8c914fa0bc4ab12e41c5bcf83784f"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/studio/index.html",
+      "bytes": 26778,
+      "sha256": "41c78f41883ae9651f351df7293164b617c4ae072423f78e103355e9baf03478"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/visao/index.html",
+      "bytes": 13094,
+      "sha256": "a1a7bacf59c8861a02264298876bdca3123686e8b50e26cc6dea117336b0b901"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/dist/workflows/index.html",
+      "bytes": 23372,
+      "sha256": "cff16c5ed113e4e254de4a90d20c0e494993ff8bacdcfe0f2013e07fa4f5ab2c"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/docs/AGENTS-PAGE.md",
+      "bytes": 1217,
+      "sha256": "6cfb90596593226451c3d9dbec7f759712afc0fdfcbffdb3c30e16a4d0238c99"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/docs/CATALISA-CONTACT-AGENT-PROMPT.md",
+      "bytes": 19156,
+      "sha256": "1d074c6290b72bf110a8b29bb91e79526825bfbd65ba40ccfc4024f0a813866e"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/docs/CONTACT-EXPERIENCE.md",
+      "bytes": 3361,
+      "sha256": "a48b58cad1e15f866f0fef9a9e26bbaf44551488d404f377d78f042161194fb0"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/docs/FLAGSHIP-PRODUCTS.md",
+      "bytes": 2436,
+      "sha256": "f372cb5f2e80b6cd54dc652fa12e509d866087de9d2e658afed183b07eac7e94"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/docs/HANDOFF-NOTE.md",
+      "bytes": 287,
+      "sha256": "75809f780caec4ed17127cea51bd329b97843f6bd209acc0294173bc5e26b5a1"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/docs/LAB-PROTOTYPE.md",
+      "bytes": 3204,
+      "sha256": "7b5f3d98c6b9c9baa14c166ff981800b44f6379c8765a154ed7f943c8685f3d0"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/docs/MOBILE-v1.1.md",
+      "bytes": 2026,
+      "sha256": "f4a8cd5c648f33eb07cf525cc4ca4ce910ed4704ecde237419721c4a729d95d7"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/reference/site/docs/WORKFLOWS-PAGE.md",
+      "bytes": 1232,
+      "sha256": "1491a19dfa1ca978c47705ec700cf3282a1b33f849a91771ac9b3ad7c3004803"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/tools/README.md",
+      "bytes": 1074,
+      "sha256": "85c6928d4ad7587df2153a3c71367c9c53837bd7f7b700e74fc29fcd6f697db8"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/tools/validate_contracts.py",
+      "bytes": 2928,
+      "sha256": "af92918fd2a8ad944bf3a31b008449eaa57e703c41e65ced0f30a4380d4d3b31"
+    },
+    {
+      "path": "catalisa-handoff-v1.1/tools/validate_reference.py",
+      "bytes": 2548,
+      "sha256": "8ce457c0cc85a42a16be55a4ab28f3e2ba472a26b69da41689e25e686c8f3798"
+    }
+  ]
+}

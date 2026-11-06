@@ -1,4 +1,4 @@
-import { ptToEn } from '../i18n/useLocalizedPath';
+import { ptToEn } from '../i18n/route-paths';
 
 export type SchemaType = 'Organization' | 'WebSite' | 'SoftwareApplication' | 'BreadcrumbList' | 'VideoObject' | 'SiteNavigationElement' | 'FAQPage' | 'CollectionPage';
 
@@ -18,6 +18,16 @@ export interface RouteDefinition {
 export const BASE_URL = 'https://catalisa.io';
 
 export const routes: RouteDefinition[] = [
+  {
+    ptPath: '/agentes-ia-whatsapp', enPath: '/en/ai-agents-whatsapp',
+    pageKey: 'aiAgentsWhatsApp', priority: 0.9, changefreq: 'monthly',
+    schemas: ['Organization', 'BreadcrumbList'], ogImage: '/og/default.png',
+  },
+  {
+    ptPath: '/determinismo', enPath: '/en/determinism',
+    pageKey: 'determinism', priority: 0.7, changefreq: 'monthly',
+    schemas: ['Organization', 'BreadcrumbList'], ogImage: '/og/default.png',
+  },
   {
     ptPath: '/',
     enPath: '/en',
@@ -334,9 +344,14 @@ export const routes: RouteDefinition[] = [
  * Works for both pt-BR and en-US paths.
  */
 export function resolveRoute(pathname: string): RouteDefinition | undefined {
+  pathname = normalizePath(pathname);
   return routes.find(
     (r) => r.ptPath === pathname || r.enPath === pathname,
   );
+}
+
+export function normalizePath(pathname: string): string {
+  return pathname.replace(/\/+$/, '') || '/';
 }
 
 /**

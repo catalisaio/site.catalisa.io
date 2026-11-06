@@ -1,0 +1,237 @@
+{
+  "url": "https://entregas.interno.catalisa.app",
+  "checkedAt": "2026-10-21T14:51:07.104060+00:00",
+  "release": "20261020-a852a1d20db8",
+  "checks": [
+    {
+      "path": "/catalisa-logo.svg",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/identidade-transitoria.css",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/report-identity.css",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/infografico.html",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/dossie.html",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/infografico.pdf",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/infografico-inter-regular.ttf",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/infografico-inter-bold.ttf",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/infografico-cobertura.json",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/timeline.html",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/dashboard.html",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/cadeia-de-valor.html",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/cadeia-de-valor.pdf",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/dashboard.pdf",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/dashboard-data.json",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/relatorio-completo.html",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/relatorio-completo.pdf",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/developy.html",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/developy.pdf",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/investidores.html",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/investidores.pdf",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/entrevistas.html",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/entrevistas.pdf",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/dados.json",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/dossie-catalisa.zip",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/diligencia.html",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/diligencia.pdf",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/diligencia-tecnica.html",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/diligencia-tecnica.pdf",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/diligencia-corporativa.html",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/diligencia-corporativa.pdf",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/diligencia-evidencias.html",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/diligencia-evidencias.pdf",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/homologacao.html",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/homologacao.pdf",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/diligencia-dados.json",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/diligencia-fontes.json",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/diligencia-pedidos.csv",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/diligencia-riscos.csv",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/homologacao-controles.csv",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/verificacao-diligencia.json",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    },
+    {
+      "path": "/diligencia-acoes.csv",
+      "anonymous": 401,
+      "incorrectPassword": 401
+    }
+  ],
+  "tlsVerified": true,
+  "certificate": {
+    "notAfter": "Jan 18 22:09:35 2027 GMT",
+    "subjectAltName": [
+      [
+        "DNS",
+        "entregas.interno.catalisa.app"
+      ]
+    ]
+  },
+  "installedHashesVerified": true,
+  "verifiedManifestFiles": 165,
+  "nginxConfigurationPreserved": true,
+  "passwordFileMode": "640",
+  "authenticatedBrowserVerification": "pending-original-credential"
+}

@@ -1,0 +1,3240 @@
+{
+  "mode": {
+    "redesign": true,
+    "indexing": true
+  },
+  "redirects": {
+    "/use-cases": "/casos-de-uso",
+    "/playbooks": "/casos-de-uso",
+    "/en/playbooks": "/en/use-cases",
+    "/insights/magazine": "/insights",
+    "/en/insights/magazine": "/en/insights",
+    "/ecossistema/recrutamento": "/produtos",
+    "/en/ecosystem/recruitment": "/en/products",
+    "/de/oekosystem/recruiting": "/de/produkte",
+    "/es/ecosistema/reclutamiento": "/es/productos",
+    "/da/oekosystem/rekruttering": "/da/produkter",
+    "/nl/ecosysteem/werving": "/nl/producten",
+    "/fr/ecosysteme/recrutement": "/fr/produits",
+    "/design-system/home": "/",
+    "/ai-agents": "/agentes",
+    "/apps": "/ecossistema",
+    "/building-blocks": "/capacidades",
+    "/bancario": "/ecossistema/banking",
+    "/en/design-system/home": "/en",
+    "/en/agents": "/en/ai-agents",
+    "/en/building-blocks": "/en/capabilities",
+    "/en/apps": "/en/ecosystem",
+    "/en/banking": "/en/ecosystem/banking"
+  },
+  "native": [
+    "/",
+    "/en",
+    "/studio",
+    "/en/studio",
+    "/en/ai-agents",
+    "/workflows",
+    "/en/workflows",
+    "/contato",
+    "/en/contact",
+    "/politica-privacidade",
+    "/en/privacy-policy",
+    "/press-kit",
+    "/en/press-kit",
+    "/termos",
+    "/en/terms",
+    "/de",
+    "/es",
+    "/da",
+    "/nl",
+    "/fr",
+    "/design-system",
+    "/en/design-system",
+    "/de/designsystem",
+    "/es/sistema-de-diseno",
+    "/da/designsystem",
+    "/nl/designsysteem",
+    "/fr/systeme-de-design",
+    "/capacidades",
+    "/en/capabilities",
+    "/de/faehigkeiten",
+    "/es/capacidades",
+    "/da/funktioner",
+    "/nl/mogelijkheden",
+    "/fr/capacites",
+    "/visao",
+    "/en/vision",
+    "/de/vision",
+    "/es/vision",
+    "/da/vision",
+    "/nl/visie",
+    "/fr/vision",
+    "/arquitetura",
+    "/en/architecture",
+    "/de/architektur",
+    "/es/arquitectura",
+    "/da/arkitektur",
+    "/nl/architectuur",
+    "/fr/architecture",
+    "/desenvolvedores",
+    "/en/developers",
+    "/de/entwickler",
+    "/es/desarrolladores",
+    "/da/udviklere",
+    "/nl/ontwikkelaars",
+    "/fr/developpeurs",
+    "/de/studio",
+    "/es/studio",
+    "/da/studio",
+    "/nl/studio",
+    "/fr/studio",
+    "/de/workflows",
+    "/es/workflows",
+    "/da/workflows",
+    "/nl/workflows",
+    "/fr/workflows",
+    "/agentes",
+    "/de/ki-agenten",
+    "/es/agentes-ia",
+    "/da/ai-agenter",
+    "/nl/ai-agenten",
+    "/fr/agents-ia",
+    "/governanca",
+    "/en/governance",
+    "/de/governance",
+    "/es/gobernanza",
+    "/da/governance",
+    "/nl/governance",
+    "/fr/gouvernance",
+    "/composicoes",
+    "/en/compositions",
+    "/de/kompositionen",
+    "/es/composiciones",
+    "/da/sammensaetninger",
+    "/nl/composities",
+    "/fr/compositions",
+    "/ecossistema",
+    "/en/ecosystem",
+    "/de/oekosystem",
+    "/es/ecosistema",
+    "/da/oekosystem",
+    "/nl/ecosysteem",
+    "/fr/ecosysteme",
+    "/produtos",
+    "/en/products",
+    "/de/produkte",
+    "/es/productos",
+    "/da/produkter",
+    "/nl/producten",
+    "/fr/produits",
+    "/ecossistema/banking",
+    "/en/ecosystem/banking",
+    "/de/oekosystem/banking",
+    "/es/ecosistema/banking",
+    "/da/oekosystem/banking",
+    "/nl/ecosysteem/banking",
+    "/fr/ecosysteme/banking",
+    "/ecossistema/credit",
+    "/en/ecosystem/credit",
+    "/de/oekosystem/credit",
+    "/es/ecosistema/credit",
+    "/da/oekosystem/credit",
+    "/nl/ecosysteem/credit",
+    "/fr/ecosysteme/credit",
+    "/ecossistema/med",
+    "/en/ecosystem/med",
+    "/de/oekosystem/med",
+    "/es/ecosistema/med",
+    "/da/oekosystem/med",
+    "/nl/ecosysteem/med",
+    "/fr/ecosysteme/med",
+    "/ecossistema/juridico",
+    "/en/ecosystem/legal",
+    "/de/oekosystem/recht",
+    "/es/ecosistema/juridico",
+    "/da/oekosystem/jura",
+    "/nl/ecosysteem/juridisch",
+    "/fr/ecosysteme/juridique",
+    "/ecossistema/biometrics",
+    "/en/ecosystem/biometrics",
+    "/de/oekosystem/biometrics",
+    "/es/ecosistema/biometrics",
+    "/da/oekosystem/biometrics",
+    "/nl/ecosysteem/biometrics",
+    "/fr/ecosysteme/biometrics",
+    "/ecossistema/decision",
+    "/en/ecosystem/decision",
+    "/de/oekosystem/decision",
+    "/es/ecosistema/decision",
+    "/da/oekosystem/decision",
+    "/nl/ecosysteem/decision",
+    "/fr/ecosysteme/decision",
+    "/perspectivas",
+    "/en/perspectives",
+    "/de/perspektiven",
+    "/es/perspectivas",
+    "/da/perspektiver",
+    "/nl/perspectieven",
+    "/fr/perspectives",
+    "/perspectivas/construir-por-composicao",
+    "/en/perspectives/building-by-composition",
+    "/de/perspektiven/aufbau-durch-komposition",
+    "/es/perspectivas/construir-por-composicion",
+    "/da/perspektiver/byg-med-sammensaetning",
+    "/nl/perspectieven/bouwen-door-compositie",
+    "/fr/perspectives/construire-par-composition",
+    "/perspectivas/autonomia-responsabilidade",
+    "/en/perspectives/autonomy-and-responsibility",
+    "/de/perspektiven/autonomie-und-verantwortung",
+    "/es/perspectivas/autonomia-y-responsabilidad",
+    "/da/perspektiver/autonomi-og-ansvar",
+    "/nl/perspectieven/autonomie-en-verantwoordelijkheid",
+    "/fr/perspectives/autonomie-et-responsabilite",
+    "/perspectivas/regra-legivel",
+    "/en/perspectives/readable-rules",
+    "/de/perspektiven/lesbare-regeln",
+    "/es/perspectivas/reglas-legibles",
+    "/da/perspektiver/laesbare-regler",
+    "/nl/perspectieven/leesbare-regels",
+    "/fr/perspectives/regles-lisibles",
+    "/perspectivas/open-finance-da-conexao-ao-produto",
+    "/en/perspectives/open-finance-from-connection-to-product",
+    "/de/perspektiven/open-finance-von-der-verbindung-zum-produkt",
+    "/es/perspectivas/open-finance-de-la-conexion-al-producto",
+    "/da/perspektiver/open-finance-fra-forbindelse-til-produkt",
+    "/nl/perspectieven/open-finance-van-verbinding-naar-product",
+    "/fr/perspectives/open-finance-de-la-connexion-au-produit",
+    "/perspectivas/resiliencia-e-liberdade-de-evoluir",
+    "/en/perspectives/resilience-and-freedom-to-evolve",
+    "/de/perspektiven/resilienz-und-freiheit-zur-weiterentwicklung",
+    "/es/perspectivas/resiliencia-y-libertad-para-evolucionar",
+    "/da/perspektiver/robusthed-og-frihed-til-at-udvikle",
+    "/nl/perspectieven/veerkracht-en-vrijheid-om-te-evolueren",
+    "/fr/perspectives/resilience-et-liberte-devoluer",
+    "/interfaces",
+    "/en/interfaces",
+    "/de/oberflaechen",
+    "/es/interfaces",
+    "/da/brugerflader",
+    "/nl/interfaces",
+    "/fr/interfaces",
+    "/de/pressekit",
+    "/es/kit-de-prensa",
+    "/da/pressekit",
+    "/nl/perskit",
+    "/fr/kit-presse",
+    "/fontes",
+    "/en/sources",
+    "/de/quellen",
+    "/es/fuentes",
+    "/da/kilder",
+    "/nl/bronnen",
+    "/fr/sources",
+    "/mapa",
+    "/en/sitemap",
+    "/de/sitemap",
+    "/es/mapa-del-sitio",
+    "/da/sitemap",
+    "/nl/sitemap",
+    "/fr/plan-du-site",
+    "/de/kontakt",
+    "/es/contacto",
+    "/da/kontakt",
+    "/nl/contact",
+    "/fr/contact",
+    "/lab",
+    "/en/lab",
+    "/de/lab",
+    "/es/lab",
+    "/da/lab",
+    "/nl/lab",
+    "/fr/lab",
+    "/de/datenschutz",
+    "/es/politica-de-privacidad",
+    "/da/privatlivspolitik",
+    "/nl/privacybeleid",
+    "/fr/politique-de-confidentialite",
+    "/de/nutzungsbedingungen",
+    "/es/terminos",
+    "/da/vilkaar",
+    "/nl/voorwaarden",
+    "/fr/conditions-utilisation",
+    "/capacidades/ai-engine",
+    "/en/capabilities/ai-engine",
+    "/de/faehigkeiten/ai-engine",
+    "/es/capacidades/ai-engine",
+    "/da/funktioner/ai-engine",
+    "/nl/mogelijkheden/ai-engine",
+    "/fr/capacites/ai-engine",
+    "/capacidades/analytics",
+    "/en/capabilities/analytics",
+    "/de/faehigkeiten/analytics",
+    "/es/capacidades/analytics",
+    "/da/funktioner/analytics",
+    "/nl/mogelijkheden/analytics",
+    "/fr/capacites/analytics",
+    "/capacidades/api-keys",
+    "/en/capabilities/api-keys",
+    "/de/faehigkeiten/api-keys",
+    "/es/capacidades/api-keys",
+    "/da/funktioner/api-keys",
+    "/nl/mogelijkheden/api-keys",
+    "/fr/capacites/api-keys",
+    "/capacidades/audit-trail",
+    "/en/capabilities/audit-trail",
+    "/de/faehigkeiten/audit-trail",
+    "/es/capacidades/audit-trail",
+    "/da/funktioner/audit-trail",
+    "/nl/mogelijkheden/audit-trail",
+    "/fr/capacites/audit-trail",
+    "/capacidades/baas",
+    "/en/capabilities/baas",
+    "/de/faehigkeiten/baas",
+    "/es/capacidades/baas",
+    "/da/funktioner/baas",
+    "/nl/mogelijkheden/baas",
+    "/fr/capacites/baas",
+    "/capacidades/banking",
+    "/en/capabilities/banking",
+    "/de/faehigkeiten/banking",
+    "/es/capacidades/banking",
+    "/da/funktioner/banking",
+    "/nl/mogelijkheden/banking",
+    "/fr/capacites/banking",
+    "/capacidades/banking-product-portfolio",
+    "/en/capabilities/banking-product-portfolio",
+    "/de/faehigkeiten/banking-product-portfolio",
+    "/es/capacidades/banking-product-portfolio",
+    "/da/funktioner/banking-product-portfolio",
+    "/nl/mogelijkheden/banking-product-portfolio",
+    "/fr/capacites/banking-product-portfolio",
+    "/capacidades/billing",
+    "/en/capabilities/billing",
+    "/de/faehigkeiten/billing",
+    "/es/capacidades/billing",
+    "/da/funktioner/billing",
+    "/nl/mogelijkheden/billing",
+    "/fr/capacites/billing",
+    "/capacidades/biometrics",
+    "/en/capabilities/biometrics",
+    "/de/faehigkeiten/biometrics",
+    "/es/capacidades/biometrics",
+    "/da/funktioner/biometrics",
+    "/nl/mogelijkheden/biometrics",
+    "/fr/capacites/biometrics",
+    "/capacidades/bureaus",
+    "/en/capabilities/bureaus",
+    "/de/faehigkeiten/bureaus",
+    "/es/capacidades/bureaus",
+    "/da/funktioner/bureaus",
+    "/nl/mogelijkheden/bureaus",
+    "/fr/capacites/bureaus",
+    "/capacidades/calculations-engine",
+    "/en/capabilities/calculations-engine",
+    "/de/faehigkeiten/calculations-engine",
+    "/es/capacidades/calculations-engine",
+    "/da/funktioner/calculations-engine",
+    "/nl/mogelijkheden/calculations-engine",
+    "/fr/capacites/calculations-engine",
+    "/capacidades/calendar",
+    "/en/capabilities/calendar",
+    "/de/faehigkeiten/calendar",
+    "/es/capacidades/calendar",
+    "/da/funktioner/calendar",
+    "/nl/mogelijkheden/calendar",
+    "/fr/capacites/calendar",
+    "/capacidades/cms",
+    "/en/capabilities/cms",
+    "/de/faehigkeiten/cms",
+    "/es/capacidades/cms",
+    "/da/funktioner/cms",
+    "/nl/mogelijkheden/cms",
+    "/fr/capacites/cms",
+    "/capacidades/commerce",
+    "/en/capabilities/commerce",
+    "/de/faehigkeiten/commerce",
+    "/es/capacidades/commerce",
+    "/da/funktioner/commerce",
+    "/nl/mogelijkheden/commerce",
+    "/fr/capacites/commerce",
+    "/capacidades/companies",
+    "/en/capabilities/companies",
+    "/de/faehigkeiten/companies",
+    "/es/capacidades/companies",
+    "/da/funktioner/companies",
+    "/nl/mogelijkheden/companies",
+    "/fr/capacites/companies",
+    "/capacidades/customers",
+    "/en/capabilities/customers",
+    "/de/faehigkeiten/customers",
+    "/es/capacidades/customers",
+    "/da/funktioner/customers",
+    "/nl/mogelijkheden/customers",
+    "/fr/capacites/customers",
+    "/capacidades/data-extraction",
+    "/en/capabilities/data-extraction",
+    "/de/faehigkeiten/data-extraction",
+    "/es/capacidades/data-extraction",
+    "/da/funktioner/data-extraction",
+    "/nl/mogelijkheden/data-extraction",
+    "/fr/capacites/data-extraction",
+    "/capacidades/data-store",
+    "/en/capabilities/data-store",
+    "/de/faehigkeiten/data-store",
+    "/es/capacidades/data-store",
+    "/da/funktioner/data-store",
+    "/nl/mogelijkheden/data-store",
+    "/fr/capacites/data-store",
+    "/capacidades/decision-engine",
+    "/en/capabilities/decision-engine",
+    "/de/faehigkeiten/decision-engine",
+    "/es/capacidades/decision-engine",
+    "/da/funktioner/decision-engine",
+    "/nl/mogelijkheden/decision-engine",
+    "/fr/capacites/decision-engine",
+    "/capacidades/decision-platform",
+    "/en/capabilities/decision-platform",
+    "/de/faehigkeiten/decision-platform",
+    "/es/capacidades/decision-platform",
+    "/da/funktioner/decision-platform",
+    "/nl/mogelijkheden/decision-platform",
+    "/fr/capacites/decision-platform",
+    "/capacidades/document-template",
+    "/en/capabilities/document-template",
+    "/de/faehigkeiten/document-template",
+    "/es/capacidades/document-template",
+    "/da/funktioner/document-template",
+    "/nl/mogelijkheden/document-template",
+    "/fr/capacites/document-template",
+    "/capacidades/e-signature",
+    "/en/capabilities/e-signature",
+    "/de/faehigkeiten/e-signature",
+    "/es/capacidades/e-signature",
+    "/da/funktioner/e-signature",
+    "/nl/mogelijkheden/e-signature",
+    "/fr/capacites/e-signature",
+    "/capacidades/email",
+    "/en/capabilities/email",
+    "/de/faehigkeiten/email",
+    "/es/capacidades/email",
+    "/da/funktioner/email",
+    "/nl/mogelijkheden/email",
+    "/fr/capacites/email",
+    "/capacidades/feature-flags",
+    "/en/capabilities/feature-flags",
+    "/de/faehigkeiten/feature-flags",
+    "/es/capacidades/feature-flags",
+    "/da/funktioner/feature-flags",
+    "/nl/mogelijkheden/feature-flags",
+    "/fr/capacites/feature-flags",
+    "/capacidades/file-storage",
+    "/en/capabilities/file-storage",
+    "/de/faehigkeiten/file-storage",
+    "/es/capacidades/file-storage",
+    "/da/funktioner/file-storage",
+    "/nl/mogelijkheden/file-storage",
+    "/fr/capacites/file-storage",
+    "/capacidades/iam",
+    "/en/capabilities/iam",
+    "/de/faehigkeiten/iam",
+    "/es/capacidades/iam",
+    "/da/funktioner/iam",
+    "/nl/mogelijkheden/iam",
+    "/fr/capacites/iam",
+    "/capacidades/meta-account",
+    "/en/capabilities/meta-account",
+    "/de/faehigkeiten/meta-account",
+    "/es/capacidades/meta-account",
+    "/da/funktioner/meta-account",
+    "/nl/mogelijkheden/meta-account",
+    "/fr/capacites/meta-account",
+    "/capacidades/open-finance",
+    "/en/capabilities/open-finance",
+    "/de/faehigkeiten/open-finance",
+    "/es/capacidades/open-finance",
+    "/da/funktioner/open-finance",
+    "/nl/mogelijkheden/open-finance",
+    "/fr/capacites/open-finance",
+    "/capacidades/payments",
+    "/en/capabilities/payments",
+    "/de/faehigkeiten/payments",
+    "/es/capacidades/payments",
+    "/da/funktioner/payments",
+    "/nl/mogelijkheden/payments",
+    "/fr/capacites/payments",
+    "/capacidades/people",
+    "/en/capabilities/people",
+    "/de/faehigkeiten/people",
+    "/es/capacidades/people",
+    "/da/funktioner/people",
+    "/nl/mogelijkheden/people",
+    "/fr/capacites/people",
+    "/capacidades/pricing-engine",
+    "/en/capabilities/pricing-engine",
+    "/de/faehigkeiten/pricing-engine",
+    "/es/capacidades/pricing-engine",
+    "/da/funktioner/pricing-engine",
+    "/nl/mogelijkheden/pricing-engine",
+    "/fr/capacites/pricing-engine",
+    "/capacidades/products",
+    "/en/capabilities/products",
+    "/de/faehigkeiten/products",
+    "/es/capacidades/products",
+    "/da/funktioner/products",
+    "/nl/mogelijkheden/products",
+    "/fr/capacites/products",
+    "/capacidades/rooms",
+    "/en/capabilities/rooms",
+    "/de/faehigkeiten/rooms",
+    "/es/capacidades/rooms",
+    "/da/funktioner/rooms",
+    "/nl/mogelijkheden/rooms",
+    "/fr/capacites/rooms",
+    "/capacidades/service-attestations",
+    "/en/capabilities/service-attestations",
+    "/de/faehigkeiten/service-attestations",
+    "/es/capacidades/service-attestations",
+    "/da/funktioner/service-attestations",
+    "/nl/mogelijkheden/service-attestations",
+    "/fr/capacites/service-attestations",
+    "/capacidades/slack",
+    "/en/capabilities/slack",
+    "/de/faehigkeiten/slack",
+    "/es/capacidades/slack",
+    "/da/funktioner/slack",
+    "/nl/mogelijkheden/slack",
+    "/fr/capacites/slack",
+    "/capacidades/sso",
+    "/en/capabilities/sso",
+    "/de/faehigkeiten/sso",
+    "/es/capacidades/sso",
+    "/da/funktioner/sso",
+    "/nl/mogelijkheden/sso",
+    "/fr/capacites/sso",
+    "/capacidades/webhooks-engine",
+    "/en/capabilities/webhooks-engine",
+    "/de/faehigkeiten/webhooks-engine",
+    "/es/capacidades/webhooks-engine",
+    "/da/funktioner/webhooks-engine",
+    "/nl/mogelijkheden/webhooks-engine",
+    "/fr/capacites/webhooks-engine",
+    "/capacidades/wpp",
+    "/en/capabilities/wpp",
+    "/de/faehigkeiten/wpp",
+    "/es/capacidades/wpp",
+    "/da/funktioner/wpp",
+    "/nl/mogelijkheden/wpp",
+    "/fr/capacites/wpp",
+    "/capacidades/wpp-business",
+    "/en/capabilities/wpp-business",
+    "/de/faehigkeiten/wpp-business",
+    "/es/capacidades/wpp-business",
+    "/da/funktioner/wpp-business",
+    "/nl/mogelijkheden/wpp-business",
+    "/fr/capacites/wpp-business"
+  ],
+  "localizedPages": [
+    {
+      "path": "/",
+      "basePath": "/",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en",
+      "basePath": "/",
+      "lang": "en-US"
+    },
+    {
+      "path": "/studio",
+      "basePath": "/studio",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/studio",
+      "basePath": "/studio",
+      "lang": "en-US"
+    },
+    {
+      "path": "/en/ai-agents",
+      "basePath": "/agentes",
+      "lang": "en-US"
+    },
+    {
+      "path": "/workflows",
+      "basePath": "/workflows",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/workflows",
+      "basePath": "/workflows",
+      "lang": "en-US"
+    },
+    {
+      "path": "/contato",
+      "basePath": "/contato",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/contact",
+      "basePath": "/contato",
+      "lang": "en-US"
+    },
+    {
+      "path": "/politica-privacidade",
+      "basePath": "/politica-privacidade",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/privacy-policy",
+      "basePath": "/politica-privacidade",
+      "lang": "en-US"
+    },
+    {
+      "path": "/press-kit",
+      "basePath": "/press-kit",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/press-kit",
+      "basePath": "/press-kit",
+      "lang": "en-US"
+    },
+    {
+      "path": "/termos",
+      "basePath": "/termos",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/terms",
+      "basePath": "/termos",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de",
+      "basePath": "/",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es",
+      "basePath": "/",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da",
+      "basePath": "/",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl",
+      "basePath": "/",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr",
+      "basePath": "/",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/design-system",
+      "basePath": "/design-system",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/design-system",
+      "basePath": "/design-system",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/designsystem",
+      "basePath": "/design-system",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/sistema-de-diseno",
+      "basePath": "/design-system",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/designsystem",
+      "basePath": "/design-system",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/designsysteem",
+      "basePath": "/design-system",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/systeme-de-design",
+      "basePath": "/design-system",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/capacidades",
+      "basePath": "/capacidades",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/capabilities",
+      "basePath": "/capacidades",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/faehigkeiten",
+      "basePath": "/capacidades",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/capacidades",
+      "basePath": "/capacidades",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/funktioner",
+      "basePath": "/capacidades",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/mogelijkheden",
+      "basePath": "/capacidades",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/capacites",
+      "basePath": "/capacidades",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/visao",
+      "basePath": "/visao",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/vision",
+      "basePath": "/visao",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/vision",
+      "basePath": "/visao",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/vision",
+      "basePath": "/visao",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/vision",
+      "basePath": "/visao",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/visie",
+      "basePath": "/visao",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/vision",
+      "basePath": "/visao",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/arquitetura",
+      "basePath": "/arquitetura",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/architecture",
+      "basePath": "/arquitetura",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/architektur",
+      "basePath": "/arquitetura",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/arquitectura",
+      "basePath": "/arquitetura",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/arkitektur",
+      "basePath": "/arquitetura",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/architectuur",
+      "basePath": "/arquitetura",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/architecture",
+      "basePath": "/arquitetura",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/desenvolvedores",
+      "basePath": "/desenvolvedores",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/developers",
+      "basePath": "/desenvolvedores",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/entwickler",
+      "basePath": "/desenvolvedores",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/desarrolladores",
+      "basePath": "/desenvolvedores",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/udviklere",
+      "basePath": "/desenvolvedores",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/ontwikkelaars",
+      "basePath": "/desenvolvedores",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/developpeurs",
+      "basePath": "/desenvolvedores",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/de/studio",
+      "basePath": "/studio",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/studio",
+      "basePath": "/studio",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/studio",
+      "basePath": "/studio",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/studio",
+      "basePath": "/studio",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/studio",
+      "basePath": "/studio",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/de/workflows",
+      "basePath": "/workflows",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/workflows",
+      "basePath": "/workflows",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/workflows",
+      "basePath": "/workflows",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/workflows",
+      "basePath": "/workflows",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/workflows",
+      "basePath": "/workflows",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/agentes",
+      "basePath": "/agentes",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/de/ki-agenten",
+      "basePath": "/agentes",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/agentes-ia",
+      "basePath": "/agentes",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/ai-agenter",
+      "basePath": "/agentes",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/ai-agenten",
+      "basePath": "/agentes",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/agents-ia",
+      "basePath": "/agentes",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/governanca",
+      "basePath": "/governanca",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/governance",
+      "basePath": "/governanca",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/governance",
+      "basePath": "/governanca",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/gobernanza",
+      "basePath": "/governanca",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/governance",
+      "basePath": "/governanca",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/governance",
+      "basePath": "/governanca",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/gouvernance",
+      "basePath": "/governanca",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/composicoes",
+      "basePath": "/composicoes",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/compositions",
+      "basePath": "/composicoes",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/kompositionen",
+      "basePath": "/composicoes",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/composiciones",
+      "basePath": "/composicoes",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/sammensaetninger",
+      "basePath": "/composicoes",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/composities",
+      "basePath": "/composicoes",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/compositions",
+      "basePath": "/composicoes",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/ecossistema",
+      "basePath": "/ecossistema",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/ecosystem",
+      "basePath": "/ecossistema",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/oekosystem",
+      "basePath": "/ecossistema",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/ecosistema",
+      "basePath": "/ecossistema",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/oekosystem",
+      "basePath": "/ecossistema",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/ecosysteem",
+      "basePath": "/ecossistema",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/ecosysteme",
+      "basePath": "/ecossistema",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/produtos",
+      "basePath": "/produtos",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/products",
+      "basePath": "/produtos",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/produkte",
+      "basePath": "/produtos",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/productos",
+      "basePath": "/produtos",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/produkter",
+      "basePath": "/produtos",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/producten",
+      "basePath": "/produtos",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/produits",
+      "basePath": "/produtos",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/ecossistema/banking",
+      "basePath": "/ecossistema/banking",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/ecosystem/banking",
+      "basePath": "/ecossistema/banking",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/oekosystem/banking",
+      "basePath": "/ecossistema/banking",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/ecosistema/banking",
+      "basePath": "/ecossistema/banking",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/oekosystem/banking",
+      "basePath": "/ecossistema/banking",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/ecosysteem/banking",
+      "basePath": "/ecossistema/banking",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/ecosysteme/banking",
+      "basePath": "/ecossistema/banking",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/ecossistema/credit",
+      "basePath": "/ecossistema/credit",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/ecosystem/credit",
+      "basePath": "/ecossistema/credit",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/oekosystem/credit",
+      "basePath": "/ecossistema/credit",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/ecosistema/credit",
+      "basePath": "/ecossistema/credit",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/oekosystem/credit",
+      "basePath": "/ecossistema/credit",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/ecosysteem/credit",
+      "basePath": "/ecossistema/credit",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/ecosysteme/credit",
+      "basePath": "/ecossistema/credit",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/ecossistema/med",
+      "basePath": "/ecossistema/med",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/ecosystem/med",
+      "basePath": "/ecossistema/med",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/oekosystem/med",
+      "basePath": "/ecossistema/med",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/ecosistema/med",
+      "basePath": "/ecossistema/med",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/oekosystem/med",
+      "basePath": "/ecossistema/med",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/ecosysteem/med",
+      "basePath": "/ecossistema/med",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/ecosysteme/med",
+      "basePath": "/ecossistema/med",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/ecossistema/juridico",
+      "basePath": "/ecossistema/juridico",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/ecosystem/legal",
+      "basePath": "/ecossistema/juridico",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/oekosystem/recht",
+      "basePath": "/ecossistema/juridico",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/ecosistema/juridico",
+      "basePath": "/ecossistema/juridico",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/oekosystem/jura",
+      "basePath": "/ecossistema/juridico",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/ecosysteem/juridisch",
+      "basePath": "/ecossistema/juridico",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/ecosysteme/juridique",
+      "basePath": "/ecossistema/juridico",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/ecossistema/biometrics",
+      "basePath": "/ecossistema/biometrics",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/ecosystem/biometrics",
+      "basePath": "/ecossistema/biometrics",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/oekosystem/biometrics",
+      "basePath": "/ecossistema/biometrics",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/ecosistema/biometrics",
+      "basePath": "/ecossistema/biometrics",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/oekosystem/biometrics",
+      "basePath": "/ecossistema/biometrics",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/ecosysteem/biometrics",
+      "basePath": "/ecossistema/biometrics",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/ecosysteme/biometrics",
+      "basePath": "/ecossistema/biometrics",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/ecossistema/decision",
+      "basePath": "/ecossistema/decision",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/ecosystem/decision",
+      "basePath": "/ecossistema/decision",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/oekosystem/decision",
+      "basePath": "/ecossistema/decision",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/ecosistema/decision",
+      "basePath": "/ecossistema/decision",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/oekosystem/decision",
+      "basePath": "/ecossistema/decision",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/ecosysteem/decision",
+      "basePath": "/ecossistema/decision",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/ecosysteme/decision",
+      "basePath": "/ecossistema/decision",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/perspectivas",
+      "basePath": "/perspectivas",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/perspectives",
+      "basePath": "/perspectivas",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/perspektiven",
+      "basePath": "/perspectivas",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/perspectivas",
+      "basePath": "/perspectivas",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/perspektiver",
+      "basePath": "/perspectivas",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/perspectieven",
+      "basePath": "/perspectivas",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/perspectives",
+      "basePath": "/perspectivas",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/perspectivas/construir-por-composicao",
+      "basePath": "/perspectivas/construir-por-composicao",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/perspectives/building-by-composition",
+      "basePath": "/perspectivas/construir-por-composicao",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/perspektiven/aufbau-durch-komposition",
+      "basePath": "/perspectivas/construir-por-composicao",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/perspectivas/construir-por-composicion",
+      "basePath": "/perspectivas/construir-por-composicao",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/perspektiver/byg-med-sammensaetning",
+      "basePath": "/perspectivas/construir-por-composicao",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/perspectieven/bouwen-door-compositie",
+      "basePath": "/perspectivas/construir-por-composicao",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/perspectives/construire-par-composition",
+      "basePath": "/perspectivas/construir-por-composicao",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/perspectivas/autonomia-responsabilidade",
+      "basePath": "/perspectivas/autonomia-responsabilidade",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/perspectives/autonomy-and-responsibility",
+      "basePath": "/perspectivas/autonomia-responsabilidade",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/perspektiven/autonomie-und-verantwortung",
+      "basePath": "/perspectivas/autonomia-responsabilidade",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/perspectivas/autonomia-y-responsabilidad",
+      "basePath": "/perspectivas/autonomia-responsabilidade",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/perspektiver/autonomi-og-ansvar",
+      "basePath": "/perspectivas/autonomia-responsabilidade",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/perspectieven/autonomie-en-verantwoordelijkheid",
+      "basePath": "/perspectivas/autonomia-responsabilidade",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/perspectives/autonomie-et-responsabilite",
+      "basePath": "/perspectivas/autonomia-responsabilidade",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/perspectivas/regra-legivel",
+      "basePath": "/perspectivas/regra-legivel",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/perspectives/readable-rules",
+      "basePath": "/perspectivas/regra-legivel",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/perspektiven/lesbare-regeln",
+      "basePath": "/perspectivas/regra-legivel",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/perspectivas/reglas-legibles",
+      "basePath": "/perspectivas/regra-legivel",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/perspektiver/laesbare-regler",
+      "basePath": "/perspectivas/regra-legivel",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/perspectieven/leesbare-regels",
+      "basePath": "/perspectivas/regra-legivel",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/perspectives/regles-lisibles",
+      "basePath": "/perspectivas/regra-legivel",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/perspectivas/open-finance-da-conexao-ao-produto",
+      "basePath": "/perspectivas/open-finance-da-conexao-ao-produto",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/perspectives/open-finance-from-connection-to-product",
+      "basePath": "/perspectivas/open-finance-da-conexao-ao-produto",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/perspektiven/open-finance-von-der-verbindung-zum-produkt",
+      "basePath": "/perspectivas/open-finance-da-conexao-ao-produto",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/perspectivas/open-finance-de-la-conexion-al-producto",
+      "basePath": "/perspectivas/open-finance-da-conexao-ao-produto",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/perspektiver/open-finance-fra-forbindelse-til-produkt",
+      "basePath": "/perspectivas/open-finance-da-conexao-ao-produto",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/perspectieven/open-finance-van-verbinding-naar-product",
+      "basePath": "/perspectivas/open-finance-da-conexao-ao-produto",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/perspectives/open-finance-de-la-connexion-au-produit",
+      "basePath": "/perspectivas/open-finance-da-conexao-ao-produto",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/perspectivas/resiliencia-e-liberdade-de-evoluir",
+      "basePath": "/perspectivas/resiliencia-e-liberdade-de-evoluir",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/perspectives/resilience-and-freedom-to-evolve",
+      "basePath": "/perspectivas/resiliencia-e-liberdade-de-evoluir",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/perspektiven/resilienz-und-freiheit-zur-weiterentwicklung",
+      "basePath": "/perspectivas/resiliencia-e-liberdade-de-evoluir",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/perspectivas/resiliencia-y-libertad-para-evolucionar",
+      "basePath": "/perspectivas/resiliencia-e-liberdade-de-evoluir",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/perspektiver/robusthed-og-frihed-til-at-udvikle",
+      "basePath": "/perspectivas/resiliencia-e-liberdade-de-evoluir",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/perspectieven/veerkracht-en-vrijheid-om-te-evolueren",
+      "basePath": "/perspectivas/resiliencia-e-liberdade-de-evoluir",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/perspectives/resilience-et-liberte-devoluer",
+      "basePath": "/perspectivas/resiliencia-e-liberdade-de-evoluir",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/interfaces",
+      "basePath": "/interfaces",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/interfaces",
+      "basePath": "/interfaces",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/oberflaechen",
+      "basePath": "/interfaces",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/interfaces",
+      "basePath": "/interfaces",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/brugerflader",
+      "basePath": "/interfaces",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/interfaces",
+      "basePath": "/interfaces",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/interfaces",
+      "basePath": "/interfaces",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/de/pressekit",
+      "basePath": "/press-kit",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/kit-de-prensa",
+      "basePath": "/press-kit",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/pressekit",
+      "basePath": "/press-kit",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/perskit",
+      "basePath": "/press-kit",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/kit-presse",
+      "basePath": "/press-kit",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/fontes",
+      "basePath": "/fontes",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/sources",
+      "basePath": "/fontes",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/quellen",
+      "basePath": "/fontes",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/fuentes",
+      "basePath": "/fontes",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/kilder",
+      "basePath": "/fontes",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/bronnen",
+      "basePath": "/fontes",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/sources",
+      "basePath": "/fontes",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/mapa",
+      "basePath": "/mapa",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/sitemap",
+      "basePath": "/mapa",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/sitemap",
+      "basePath": "/mapa",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/mapa-del-sitio",
+      "basePath": "/mapa",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/sitemap",
+      "basePath": "/mapa",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/sitemap",
+      "basePath": "/mapa",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/plan-du-site",
+      "basePath": "/mapa",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/de/kontakt",
+      "basePath": "/contato",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/contacto",
+      "basePath": "/contato",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/kontakt",
+      "basePath": "/contato",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/contact",
+      "basePath": "/contato",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/contact",
+      "basePath": "/contato",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/lab",
+      "basePath": "/lab",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/lab",
+      "basePath": "/lab",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/lab",
+      "basePath": "/lab",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/lab",
+      "basePath": "/lab",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/lab",
+      "basePath": "/lab",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/lab",
+      "basePath": "/lab",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/lab",
+      "basePath": "/lab",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/de/datenschutz",
+      "basePath": "/politica-privacidade",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/politica-de-privacidad",
+      "basePath": "/politica-privacidade",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/privatlivspolitik",
+      "basePath": "/politica-privacidade",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/privacybeleid",
+      "basePath": "/politica-privacidade",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/politique-de-confidentialite",
+      "basePath": "/politica-privacidade",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/de/nutzungsbedingungen",
+      "basePath": "/termos",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/terminos",
+      "basePath": "/termos",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/vilkaar",
+      "basePath": "/termos",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/voorwaarden",
+      "basePath": "/termos",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/conditions-utilisation",
+      "basePath": "/termos",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/capacidades/ai-engine",
+      "basePath": "/capacidades/ai-engine",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/capabilities/ai-engine",
+      "basePath": "/capacidades/ai-engine",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/faehigkeiten/ai-engine",
+      "basePath": "/capacidades/ai-engine",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/capacidades/ai-engine",
+      "basePath": "/capacidades/ai-engine",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/funktioner/ai-engine",
+      "basePath": "/capacidades/ai-engine",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/mogelijkheden/ai-engine",
+      "basePath": "/capacidades/ai-engine",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/capacites/ai-engine",
+      "basePath": "/capacidades/ai-engine",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/capacidades/analytics",
+      "basePath": "/capacidades/analytics",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/capabilities/analytics",
+      "basePath": "/capacidades/analytics",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/faehigkeiten/analytics",
+      "basePath": "/capacidades/analytics",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/capacidades/analytics",
+      "basePath": "/capacidades/analytics",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/funktioner/analytics",
+      "basePath": "/capacidades/analytics",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/mogelijkheden/analytics",
+      "basePath": "/capacidades/analytics",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/capacites/analytics",
+      "basePath": "/capacidades/analytics",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/capacidades/api-keys",
+      "basePath": "/capacidades/api-keys",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/capabilities/api-keys",
+      "basePath": "/capacidades/api-keys",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/faehigkeiten/api-keys",
+      "basePath": "/capacidades/api-keys",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/capacidades/api-keys",
+      "basePath": "/capacidades/api-keys",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/funktioner/api-keys",
+      "basePath": "/capacidades/api-keys",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/mogelijkheden/api-keys",
+      "basePath": "/capacidades/api-keys",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/capacites/api-keys",
+      "basePath": "/capacidades/api-keys",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/capacidades/audit-trail",
+      "basePath": "/capacidades/audit-trail",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/capabilities/audit-trail",
+      "basePath": "/capacidades/audit-trail",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/faehigkeiten/audit-trail",
+      "basePath": "/capacidades/audit-trail",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/capacidades/audit-trail",
+      "basePath": "/capacidades/audit-trail",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/funktioner/audit-trail",
+      "basePath": "/capacidades/audit-trail",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/mogelijkheden/audit-trail",
+      "basePath": "/capacidades/audit-trail",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/capacites/audit-trail",
+      "basePath": "/capacidades/audit-trail",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/capacidades/baas",
+      "basePath": "/capacidades/baas",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/capabilities/baas",
+      "basePath": "/capacidades/baas",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/faehigkeiten/baas",
+      "basePath": "/capacidades/baas",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/capacidades/baas",
+      "basePath": "/capacidades/baas",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/funktioner/baas",
+      "basePath": "/capacidades/baas",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/mogelijkheden/baas",
+      "basePath": "/capacidades/baas",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/capacites/baas",
+      "basePath": "/capacidades/baas",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/capacidades/banking",
+      "basePath": "/capacidades/banking",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/capabilities/banking",
+      "basePath": "/capacidades/banking",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/faehigkeiten/banking",
+      "basePath": "/capacidades/banking",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/capacidades/banking",
+      "basePath": "/capacidades/banking",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/funktioner/banking",
+      "basePath": "/capacidades/banking",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/mogelijkheden/banking",
+      "basePath": "/capacidades/banking",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/capacites/banking",
+      "basePath": "/capacidades/banking",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/capacidades/banking-product-portfolio",
+      "basePath": "/capacidades/banking-product-portfolio",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/capabilities/banking-product-portfolio",
+      "basePath": "/capacidades/banking-product-portfolio",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/faehigkeiten/banking-product-portfolio",
+      "basePath": "/capacidades/banking-product-portfolio",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/capacidades/banking-product-portfolio",
+      "basePath": "/capacidades/banking-product-portfolio",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/funktioner/banking-product-portfolio",
+      "basePath": "/capacidades/banking-product-portfolio",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/mogelijkheden/banking-product-portfolio",
+      "basePath": "/capacidades/banking-product-portfolio",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/capacites/banking-product-portfolio",
+      "basePath": "/capacidades/banking-product-portfolio",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/capacidades/billing",
+      "basePath": "/capacidades/billing",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/capabilities/billing",
+      "basePath": "/capacidades/billing",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/faehigkeiten/billing",
+      "basePath": "/capacidades/billing",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/capacidades/billing",
+      "basePath": "/capacidades/billing",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/funktioner/billing",
+      "basePath": "/capacidades/billing",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/mogelijkheden/billing",
+      "basePath": "/capacidades/billing",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/capacites/billing",
+      "basePath": "/capacidades/billing",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/capacidades/biometrics",
+      "basePath": "/capacidades/biometrics",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/capabilities/biometrics",
+      "basePath": "/capacidades/biometrics",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/faehigkeiten/biometrics",
+      "basePath": "/capacidades/biometrics",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/capacidades/biometrics",
+      "basePath": "/capacidades/biometrics",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/funktioner/biometrics",
+      "basePath": "/capacidades/biometrics",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/mogelijkheden/biometrics",
+      "basePath": "/capacidades/biometrics",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/capacites/biometrics",
+      "basePath": "/capacidades/biometrics",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/capacidades/bureaus",
+      "basePath": "/capacidades/bureaus",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/capabilities/bureaus",
+      "basePath": "/capacidades/bureaus",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/faehigkeiten/bureaus",
+      "basePath": "/capacidades/bureaus",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/capacidades/bureaus",
+      "basePath": "/capacidades/bureaus",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/funktioner/bureaus",
+      "basePath": "/capacidades/bureaus",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/mogelijkheden/bureaus",
+      "basePath": "/capacidades/bureaus",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/capacites/bureaus",
+      "basePath": "/capacidades/bureaus",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/capacidades/calculations-engine",
+      "basePath": "/capacidades/calculations-engine",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/capabilities/calculations-engine",
+      "basePath": "/capacidades/calculations-engine",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/faehigkeiten/calculations-engine",
+      "basePath": "/capacidades/calculations-engine",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/capacidades/calculations-engine",
+      "basePath": "/capacidades/calculations-engine",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/funktioner/calculations-engine",
+      "basePath": "/capacidades/calculations-engine",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/mogelijkheden/calculations-engine",
+      "basePath": "/capacidades/calculations-engine",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/capacites/calculations-engine",
+      "basePath": "/capacidades/calculations-engine",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/capacidades/calendar",
+      "basePath": "/capacidades/calendar",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/capabilities/calendar",
+      "basePath": "/capacidades/calendar",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/faehigkeiten/calendar",
+      "basePath": "/capacidades/calendar",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/capacidades/calendar",
+      "basePath": "/capacidades/calendar",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/funktioner/calendar",
+      "basePath": "/capacidades/calendar",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/mogelijkheden/calendar",
+      "basePath": "/capacidades/calendar",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/capacites/calendar",
+      "basePath": "/capacidades/calendar",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/capacidades/cms",
+      "basePath": "/capacidades/cms",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/capabilities/cms",
+      "basePath": "/capacidades/cms",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/faehigkeiten/cms",
+      "basePath": "/capacidades/cms",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/capacidades/cms",
+      "basePath": "/capacidades/cms",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/funktioner/cms",
+      "basePath": "/capacidades/cms",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/mogelijkheden/cms",
+      "basePath": "/capacidades/cms",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/capacites/cms",
+      "basePath": "/capacidades/cms",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/capacidades/commerce",
+      "basePath": "/capacidades/commerce",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/capabilities/commerce",
+      "basePath": "/capacidades/commerce",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/faehigkeiten/commerce",
+      "basePath": "/capacidades/commerce",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/capacidades/commerce",
+      "basePath": "/capacidades/commerce",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/funktioner/commerce",
+      "basePath": "/capacidades/commerce",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/mogelijkheden/commerce",
+      "basePath": "/capacidades/commerce",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/capacites/commerce",
+      "basePath": "/capacidades/commerce",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/capacidades/companies",
+      "basePath": "/capacidades/companies",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/capabilities/companies",
+      "basePath": "/capacidades/companies",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/faehigkeiten/companies",
+      "basePath": "/capacidades/companies",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/capacidades/companies",
+      "basePath": "/capacidades/companies",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/funktioner/companies",
+      "basePath": "/capacidades/companies",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/mogelijkheden/companies",
+      "basePath": "/capacidades/companies",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/capacites/companies",
+      "basePath": "/capacidades/companies",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/capacidades/customers",
+      "basePath": "/capacidades/customers",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/capabilities/customers",
+      "basePath": "/capacidades/customers",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/faehigkeiten/customers",
+      "basePath": "/capacidades/customers",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/capacidades/customers",
+      "basePath": "/capacidades/customers",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/funktioner/customers",
+      "basePath": "/capacidades/customers",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/mogelijkheden/customers",
+      "basePath": "/capacidades/customers",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/capacites/customers",
+      "basePath": "/capacidades/customers",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/capacidades/data-extraction",
+      "basePath": "/capacidades/data-extraction",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/capabilities/data-extraction",
+      "basePath": "/capacidades/data-extraction",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/faehigkeiten/data-extraction",
+      "basePath": "/capacidades/data-extraction",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/capacidades/data-extraction",
+      "basePath": "/capacidades/data-extraction",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/funktioner/data-extraction",
+      "basePath": "/capacidades/data-extraction",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/mogelijkheden/data-extraction",
+      "basePath": "/capacidades/data-extraction",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/capacites/data-extraction",
+      "basePath": "/capacidades/data-extraction",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/capacidades/data-store",
+      "basePath": "/capacidades/data-store",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/capabilities/data-store",
+      "basePath": "/capacidades/data-store",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/faehigkeiten/data-store",
+      "basePath": "/capacidades/data-store",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/capacidades/data-store",
+      "basePath": "/capacidades/data-store",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/funktioner/data-store",
+      "basePath": "/capacidades/data-store",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/mogelijkheden/data-store",
+      "basePath": "/capacidades/data-store",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/capacites/data-store",
+      "basePath": "/capacidades/data-store",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/capacidades/decision-engine",
+      "basePath": "/capacidades/decision-engine",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/capabilities/decision-engine",
+      "basePath": "/capacidades/decision-engine",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/faehigkeiten/decision-engine",
+      "basePath": "/capacidades/decision-engine",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/capacidades/decision-engine",
+      "basePath": "/capacidades/decision-engine",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/funktioner/decision-engine",
+      "basePath": "/capacidades/decision-engine",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/mogelijkheden/decision-engine",
+      "basePath": "/capacidades/decision-engine",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/capacites/decision-engine",
+      "basePath": "/capacidades/decision-engine",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/capacidades/decision-platform",
+      "basePath": "/capacidades/decision-platform",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/capabilities/decision-platform",
+      "basePath": "/capacidades/decision-platform",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/faehigkeiten/decision-platform",
+      "basePath": "/capacidades/decision-platform",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/capacidades/decision-platform",
+      "basePath": "/capacidades/decision-platform",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/funktioner/decision-platform",
+      "basePath": "/capacidades/decision-platform",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/mogelijkheden/decision-platform",
+      "basePath": "/capacidades/decision-platform",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/capacites/decision-platform",
+      "basePath": "/capacidades/decision-platform",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/capacidades/document-template",
+      "basePath": "/capacidades/document-template",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/capabilities/document-template",
+      "basePath": "/capacidades/document-template",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/faehigkeiten/document-template",
+      "basePath": "/capacidades/document-template",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/capacidades/document-template",
+      "basePath": "/capacidades/document-template",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/funktioner/document-template",
+      "basePath": "/capacidades/document-template",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/mogelijkheden/document-template",
+      "basePath": "/capacidades/document-template",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/capacites/document-template",
+      "basePath": "/capacidades/document-template",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/capacidades/e-signature",
+      "basePath": "/capacidades/e-signature",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/capabilities/e-signature",
+      "basePath": "/capacidades/e-signature",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/faehigkeiten/e-signature",
+      "basePath": "/capacidades/e-signature",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/capacidades/e-signature",
+      "basePath": "/capacidades/e-signature",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/funktioner/e-signature",
+      "basePath": "/capacidades/e-signature",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/mogelijkheden/e-signature",
+      "basePath": "/capacidades/e-signature",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/capacites/e-signature",
+      "basePath": "/capacidades/e-signature",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/capacidades/email",
+      "basePath": "/capacidades/email",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/capabilities/email",
+      "basePath": "/capacidades/email",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/faehigkeiten/email",
+      "basePath": "/capacidades/email",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/capacidades/email",
+      "basePath": "/capacidades/email",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/funktioner/email",
+      "basePath": "/capacidades/email",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/mogelijkheden/email",
+      "basePath": "/capacidades/email",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/capacites/email",
+      "basePath": "/capacidades/email",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/capacidades/feature-flags",
+      "basePath": "/capacidades/feature-flags",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/capabilities/feature-flags",
+      "basePath": "/capacidades/feature-flags",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/faehigkeiten/feature-flags",
+      "basePath": "/capacidades/feature-flags",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/capacidades/feature-flags",
+      "basePath": "/capacidades/feature-flags",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/funktioner/feature-flags",
+      "basePath": "/capacidades/feature-flags",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/mogelijkheden/feature-flags",
+      "basePath": "/capacidades/feature-flags",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/capacites/feature-flags",
+      "basePath": "/capacidades/feature-flags",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/capacidades/file-storage",
+      "basePath": "/capacidades/file-storage",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/capabilities/file-storage",
+      "basePath": "/capacidades/file-storage",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/faehigkeiten/file-storage",
+      "basePath": "/capacidades/file-storage",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/capacidades/file-storage",
+      "basePath": "/capacidades/file-storage",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/funktioner/file-storage",
+      "basePath": "/capacidades/file-storage",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/mogelijkheden/file-storage",
+      "basePath": "/capacidades/file-storage",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/capacites/file-storage",
+      "basePath": "/capacidades/file-storage",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/capacidades/iam",
+      "basePath": "/capacidades/iam",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/capabilities/iam",
+      "basePath": "/capacidades/iam",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/faehigkeiten/iam",
+      "basePath": "/capacidades/iam",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/capacidades/iam",
+      "basePath": "/capacidades/iam",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/funktioner/iam",
+      "basePath": "/capacidades/iam",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/mogelijkheden/iam",
+      "basePath": "/capacidades/iam",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/capacites/iam",
+      "basePath": "/capacidades/iam",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/capacidades/meta-account",
+      "basePath": "/capacidades/meta-account",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/capabilities/meta-account",
+      "basePath": "/capacidades/meta-account",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/faehigkeiten/meta-account",
+      "basePath": "/capacidades/meta-account",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/capacidades/meta-account",
+      "basePath": "/capacidades/meta-account",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/funktioner/meta-account",
+      "basePath": "/capacidades/meta-account",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/mogelijkheden/meta-account",
+      "basePath": "/capacidades/meta-account",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/capacites/meta-account",
+      "basePath": "/capacidades/meta-account",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/capacidades/open-finance",
+      "basePath": "/capacidades/open-finance",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/capabilities/open-finance",
+      "basePath": "/capacidades/open-finance",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/faehigkeiten/open-finance",
+      "basePath": "/capacidades/open-finance",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/capacidades/open-finance",
+      "basePath": "/capacidades/open-finance",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/funktioner/open-finance",
+      "basePath": "/capacidades/open-finance",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/mogelijkheden/open-finance",
+      "basePath": "/capacidades/open-finance",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/capacites/open-finance",
+      "basePath": "/capacidades/open-finance",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/capacidades/payments",
+      "basePath": "/capacidades/payments",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/capabilities/payments",
+      "basePath": "/capacidades/payments",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/faehigkeiten/payments",
+      "basePath": "/capacidades/payments",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/capacidades/payments",
+      "basePath": "/capacidades/payments",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/funktioner/payments",
+      "basePath": "/capacidades/payments",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/mogelijkheden/payments",
+      "basePath": "/capacidades/payments",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/capacites/payments",
+      "basePath": "/capacidades/payments",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/capacidades/people",
+      "basePath": "/capacidades/people",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/capabilities/people",
+      "basePath": "/capacidades/people",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/faehigkeiten/people",
+      "basePath": "/capacidades/people",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/capacidades/people",
+      "basePath": "/capacidades/people",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/funktioner/people",
+      "basePath": "/capacidades/people",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/mogelijkheden/people",
+      "basePath": "/capacidades/people",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/capacites/people",
+      "basePath": "/capacidades/people",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/capacidades/pricing-engine",
+      "basePath": "/capacidades/pricing-engine",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/capabilities/pricing-engine",
+      "basePath": "/capacidades/pricing-engine",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/faehigkeiten/pricing-engine",
+      "basePath": "/capacidades/pricing-engine",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/capacidades/pricing-engine",
+      "basePath": "/capacidades/pricing-engine",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/funktioner/pricing-engine",
+      "basePath": "/capacidades/pricing-engine",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/mogelijkheden/pricing-engine",
+      "basePath": "/capacidades/pricing-engine",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/capacites/pricing-engine",
+      "basePath": "/capacidades/pricing-engine",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/capacidades/products",
+      "basePath": "/capacidades/products",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/capabilities/products",
+      "basePath": "/capacidades/products",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/faehigkeiten/products",
+      "basePath": "/capacidades/products",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/capacidades/products",
+      "basePath": "/capacidades/products",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/funktioner/products",
+      "basePath": "/capacidades/products",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/mogelijkheden/products",
+      "basePath": "/capacidades/products",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/capacites/products",
+      "basePath": "/capacidades/products",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/capacidades/rooms",
+      "basePath": "/capacidades/rooms",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/capabilities/rooms",
+      "basePath": "/capacidades/rooms",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/faehigkeiten/rooms",
+      "basePath": "/capacidades/rooms",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/capacidades/rooms",
+      "basePath": "/capacidades/rooms",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/funktioner/rooms",
+      "basePath": "/capacidades/rooms",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/mogelijkheden/rooms",
+      "basePath": "/capacidades/rooms",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/capacites/rooms",
+      "basePath": "/capacidades/rooms",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/capacidades/service-attestations",
+      "basePath": "/capacidades/service-attestations",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/capabilities/service-attestations",
+      "basePath": "/capacidades/service-attestations",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/faehigkeiten/service-attestations",
+      "basePath": "/capacidades/service-attestations",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/capacidades/service-attestations",
+      "basePath": "/capacidades/service-attestations",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/funktioner/service-attestations",
+      "basePath": "/capacidades/service-attestations",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/mogelijkheden/service-attestations",
+      "basePath": "/capacidades/service-attestations",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/capacites/service-attestations",
+      "basePath": "/capacidades/service-attestations",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/capacidades/slack",
+      "basePath": "/capacidades/slack",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/capabilities/slack",
+      "basePath": "/capacidades/slack",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/faehigkeiten/slack",
+      "basePath": "/capacidades/slack",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/capacidades/slack",
+      "basePath": "/capacidades/slack",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/funktioner/slack",
+      "basePath": "/capacidades/slack",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/mogelijkheden/slack",
+      "basePath": "/capacidades/slack",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/capacites/slack",
+      "basePath": "/capacidades/slack",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/capacidades/sso",
+      "basePath": "/capacidades/sso",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/capabilities/sso",
+      "basePath": "/capacidades/sso",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/faehigkeiten/sso",
+      "basePath": "/capacidades/sso",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/capacidades/sso",
+      "basePath": "/capacidades/sso",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/funktioner/sso",
+      "basePath": "/capacidades/sso",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/mogelijkheden/sso",
+      "basePath": "/capacidades/sso",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/capacites/sso",
+      "basePath": "/capacidades/sso",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/capacidades/webhooks-engine",
+      "basePath": "/capacidades/webhooks-engine",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/capabilities/webhooks-engine",
+      "basePath": "/capacidades/webhooks-engine",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/faehigkeiten/webhooks-engine",
+      "basePath": "/capacidades/webhooks-engine",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/capacidades/webhooks-engine",
+      "basePath": "/capacidades/webhooks-engine",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/funktioner/webhooks-engine",
+      "basePath": "/capacidades/webhooks-engine",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/mogelijkheden/webhooks-engine",
+      "basePath": "/capacidades/webhooks-engine",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/capacites/webhooks-engine",
+      "basePath": "/capacidades/webhooks-engine",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/capacidades/wpp",
+      "basePath": "/capacidades/wpp",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/capabilities/wpp",
+      "basePath": "/capacidades/wpp",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/faehigkeiten/wpp",
+      "basePath": "/capacidades/wpp",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/capacidades/wpp",
+      "basePath": "/capacidades/wpp",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/funktioner/wpp",
+      "basePath": "/capacidades/wpp",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/mogelijkheden/wpp",
+      "basePath": "/capacidades/wpp",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/capacites/wpp",
+      "basePath": "/capacidades/wpp",
+      "lang": "fr-FR"
+    },
+    {
+      "path": "/capacidades/wpp-business",
+      "basePath": "/capacidades/wpp-business",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/capabilities/wpp-business",
+      "basePath": "/capacidades/wpp-business",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/faehigkeiten/wpp-business",
+      "basePath": "/capacidades/wpp-business",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/capacidades/wpp-business",
+      "basePath": "/capacidades/wpp-business",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/funktioner/wpp-business",
+      "basePath": "/capacidades/wpp-business",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/mogelijkheden/wpp-business",
+      "basePath": "/capacidades/wpp-business",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/capacites/wpp-business",
+      "basePath": "/capacidades/wpp-business",
+      "lang": "fr-FR"
+    }
+  ],
+  "compatibility": [
+    "/agentes-ia-whatsapp",
+    "/en/ai-agents-whatsapp",
+    "/determinismo",
+    "/en/determinism",
+    "/fintech",
+    "/en/fintech",
+    "/seguros",
+    "/en/insurance",
+    "/varejo",
+    "/en/retail",
+    "/startups",
+    "/en/startups",
+    "/casos-de-uso",
+    "/en/use-cases",
+    "/demo",
+    "/en/demo",
+    "/seguranca",
+    "/en/security",
+    "/transparencia-ia",
+    "/en/ai-transparency",
+    "/como-funciona",
+    "/en/how-it-works",
+    "/integracoes/whatsapp",
+    "/en/integrations/whatsapp",
+    "/insights",
+    "/en/insights",
+    "/insights/all",
+    "/en/insights/all",
+    "/vtex-day-2026",
+    "/insights/boticario-assistente-ia-conversao-ecommerce",
+    "/en/insights/boticario-assistente-ia-conversao-ecommerce",
+    "/insights/ifood-comprai-compras-mercado-whatsapp",
+    "/en/insights/ifood-comprai-compras-mercado-whatsapp",
+    "/insights/ifood-gerente-virtual-financeiro-whatsapp",
+    "/en/insights/ifood-gerente-virtual-financeiro-whatsapp",
+    "/insights/ifood-cris-mentora-ia-restaurantes",
+    "/en/insights/ifood-cris-mentora-ia-restaurantes",
+    "/insights/carrefour-ia-atendimento-humanizado",
+    "/en/insights/carrefour-ia-atendimento-humanizado",
+    "/insights/lotte-homeshopping-ia-reducao-40-carga-atendimento",
+    "/en/insights/lotte-homeshopping-ia-reducao-40-carga-atendimento",
+    "/insights/synthesia-intercom-fin-ia-suporte-escala",
+    "/en/insights/synthesia-intercom-fin-ia-suporte-escala",
+    "/insights/synthesia-fin-ai-spike-690-suporte",
+    "/en/insights/synthesia-fin-ai-spike-690-suporte",
+    "/insights/gupshup-whatsapp-roi-270-forrester",
+    "/en/insights/gupshup-whatsapp-roi-270-forrester",
+    "/insights/magalu-lu-vendedora-ia-whatsapp",
+    "/en/insights/magalu-lu-vendedora-ia-whatsapp",
+    "/insights/bancos-brasileiros-ia-whatsapp-bradesco-itau-nubank",
+    "/en/insights/bancos-brasileiros-ia-whatsapp-bradesco-itau-nubank",
+    "/insights/banco-bv-agentes-ia-reducao-rechamadas",
+    "/en/insights/banco-bv-agentes-ia-reducao-rechamadas",
+    "/insights/klarna-ia-40m-economia-contraponto",
+    "/en/insights/klarna-ia-40m-economia-contraponto",
+    "/insights/bancos-globais-ia-whatsapp-dbs-hdfc-absa",
+    "/en/insights/bancos-globais-ia-whatsapp-dbs-hdfc-absa",
+    "/insights/lemonade-sinistro-2-segundos-insurtech",
+    "/en/insights/lemonade-sinistro-2-segundos-insurtech",
+    "/insights/picpay-btg-pix-whatsapp-voz-imagem",
+    "/en/insights/picpay-btg-pix-whatsapp-voz-imagem",
+    "/insights/padrao-3x-conversao-whatsapp-vs-apps",
+    "/en/insights/padrao-3x-conversao-whatsapp-vs-apps",
+    "/insights/agentes-vs-chatbots-evolucao-faq-transacoes",
+    "/en/insights/agentes-vs-chatbots-evolucao-faq-transacoes",
+    "/insights/ia-financeiro-cobranca-investimentos-mapa",
+    "/en/insights/ia-financeiro-cobranca-investimentos-mapa",
+    "/insights/90-porcento-empresas-mais-clientes-whatsapp",
+    "/en/insights/90-porcento-empresas-mais-clientes-whatsapp",
+    "/insights/ia-conversacional-varejo-brasileiro",
+    "/en/insights/ia-conversacional-varejo-brasileiro",
+    "/insights/whatsapp-plataforma-vendas-conversational-commerce",
+    "/en/insights/whatsapp-plataforma-vendas-conversational-commerce",
+    "/insights/roi-ia-customer-experience-dados",
+    "/en/insights/roi-ia-customer-experience-dados",
+    "/insights/escalar-atendimento-sem-contratar-ia",
+    "/en/insights/escalar-atendimento-sem-contratar-ia",
+    "/insights/agentes-ia-whatsapp-automacao-inteligencia",
+    "/en/insights/agentes-ia-whatsapp-automacao-inteligencia",
+    "/insights/ia-humanizada-equilibrio-automacao-empatia",
+    "/en/insights/ia-humanizada-equilibrio-automacao-empatia",
+    "/insights/foodtech-ia-transformacao-conversacional",
+    "/en/insights/foodtech-ia-transformacao-conversacional",
+    "/playbooks/sdr-automatizado",
+    "/en/playbooks/sdr-automatizado",
+    "/playbooks/follow-up-inteligente",
+    "/en/playbooks/follow-up-inteligente",
+    "/playbooks/qualificacao-leads",
+    "/en/playbooks/qualificacao-leads",
+    "/playbooks/atendimento-imobiliario",
+    "/en/playbooks/atendimento-imobiliario",
+    "/playbooks/suporte-24-7",
+    "/en/playbooks/suporte-24-7",
+    "/playbooks/suporte-tecnico-ia",
+    "/en/playbooks/suporte-tecnico-ia",
+    "/playbooks/pos-venda-ecommerce",
+    "/en/playbooks/pos-venda-ecommerce",
+    "/playbooks/atendimento-bancario",
+    "/en/playbooks/atendimento-bancario",
+    "/playbooks/atendimento-segurado",
+    "/en/playbooks/atendimento-segurado",
+    "/playbooks/cobranca-inteligente",
+    "/en/playbooks/cobranca-inteligente",
+    "/playbooks/originacao-credito",
+    "/en/playbooks/originacao-credito",
+    "/playbooks/simulacao-credito",
+    "/en/playbooks/simulacao-credito",
+    "/playbooks/renegociacao-dividas",
+    "/en/playbooks/renegociacao-dividas",
+    "/playbooks/open-finance-credito",
+    "/en/playbooks/open-finance-credito",
+    "/playbooks/cotacao-seguro",
+    "/en/playbooks/cotacao-seguro",
+    "/playbooks/onboarding-kyc",
+    "/en/playbooks/onboarding-kyc",
+    "/playbooks/abertura-conta-digital",
+    "/en/playbooks/abertura-conta-digital",
+    "/playbooks/onboarding-usuarios",
+    "/en/playbooks/onboarding-usuarios",
+    "/playbooks/matricula-educacao",
+    "/en/playbooks/matricula-educacao",
+    "/playbooks/campanhas-whatsapp",
+    "/en/playbooks/campanhas-whatsapp",
+    "/playbooks/recuperacao-carrinho",
+    "/en/playbooks/recuperacao-carrinho",
+    "/playbooks/nps-feedback",
+    "/en/playbooks/nps-feedback",
+    "/playbooks/renovacao-proativa",
+    "/en/playbooks/renovacao-proativa",
+    "/playbooks/sinistro-whatsapp",
+    "/en/playbooks/sinistro-whatsapp",
+    "/playbooks/vistoria-digital",
+    "/en/playbooks/vistoria-digital",
+    "/playbooks/cardapio-digital",
+    "/en/playbooks/cardapio-digital",
+    "/playbooks/pix-conversacional",
+    "/en/playbooks/pix-conversacional",
+    "/playbooks/agendamento-inteligente",
+    "/en/playbooks/agendamento-inteligente",
+    "/playbooks/agendamento-consultas",
+    "/en/playbooks/agendamento-consultas",
+    "/playbooks/notificacoes-transacionais",
+    "/en/playbooks/notificacoes-transacionais",
+    "/playbooks/app-originacao-credito",
+    "/en/playbooks/app-originacao-credito",
+    "/playbooks/app-portal-cliente",
+    "/en/playbooks/app-portal-cliente",
+    "/playbooks/app-motor-cobranca",
+    "/en/playbooks/app-motor-cobranca",
+    "/playbooks/app-kyc-digital",
+    "/en/playbooks/app-kyc-digital",
+    "/playbooks/app-backoffice-seguros",
+    "/en/playbooks/app-backoffice-seguros",
+    "/playbooks/app-hub-onboarding",
+    "/en/playbooks/app-hub-onboarding",
+    "/playbooks/app-api-pagamentos",
+    "/en/playbooks/app-api-pagamentos",
+    "/playbooks/app-assinatura-digital",
+    "/en/playbooks/app-assinatura-digital",
+    "/playbooks/app-open-finance",
+    "/en/playbooks/app-open-finance",
+    "/playbooks/app-gestao-sinistros",
+    "/en/playbooks/app-gestao-sinistros",
+    "/playbooks/app-motor-decisao",
+    "/en/playbooks/app-motor-decisao",
+    "/playbooks/app-portal-parceiros",
+    "/en/playbooks/app-portal-parceiros",
+    "/playbooks/app-compliance-lgpd",
+    "/en/playbooks/app-compliance-lgpd",
+    "/playbooks/app-conciliacao-financeira",
+    "/en/playbooks/app-conciliacao-financeira",
+    "/playbooks/app-marketplace-credito",
+    "/en/playbooks/app-marketplace-credito"
+  ],
+  "authenticatedPrefixes": [
+    "/apresentacao",
+    "/en/presentation",
+    "/treinamento",
+    "/en/training"
+  ],
+  "strategy": "Localized native site in enabled languages; authenticated applications and unmigrated PT/EN archives retain isolated compatibility navigation. No invented archive translations or archive-to-home redirects."
+}

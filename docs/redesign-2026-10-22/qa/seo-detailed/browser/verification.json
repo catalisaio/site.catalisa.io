@@ -1,0 +1,220 @@
+{
+  "checkedAt": "2026-10-27T00:49:42.996Z",
+  "passed": true,
+  "scope": "Local artifact fulfilled at a production hostname; original public Google SDK snapshot and public Clarity scripts. All collection requests intercepted with204; no events delivered to production Analytics/Clarity accounts. Contact inference/session API controlled, not a real AI smoke.",
+  "checks": [
+    "No optional SDK or collection before consent; banner fits all four widths",
+    "Existing Google SDK produces exactly one initial page_view after consent",
+    "New user-owned Clarity project z4073yqv5z is the requested SDK after consent",
+    "One Google automatic history page_view per native route, with correct URL",
+    "Products directory click reports the fixed product slug and detail/showcase kind",
+    "Financial Contact CTA reports exactly one product-specific contact click",
+    "Controlled Contact request reports requested/ready without loading session replay",
+    "No seeded identity, contact, idea, concept reference or session reference in intercepted collection requests",
+    "Consent revocation persists and reloads without optional vendors",
+    "Even with an old grant: private query and authenticated invite do not load production measurement",
+    "Every Google event targets the account-verified Catalisa property G-JYJWH17ZVX"
+  ],
+  "events": [
+    {
+      "event": "page_view",
+      "location": "https://catalisa.io/",
+      "campaignSource": "linkedin",
+      "ctaType": null,
+      "measurementId": "G-JYJWH17ZVX"
+    },
+    {
+      "event": "time_on_page",
+      "location": "https://catalisa.io/",
+      "campaignSource": "linkedin",
+      "ctaType": null,
+      "measurementId": "G-JYJWH17ZVX"
+    },
+    {
+      "event": "scroll_depth",
+      "location": "https://catalisa.io/mapa",
+      "campaignSource": "linkedin",
+      "ctaType": null,
+      "measurementId": "G-JYJWH17ZVX"
+    },
+    {
+      "event": "scroll_depth",
+      "location": "https://catalisa.io/mapa",
+      "campaignSource": "linkedin",
+      "ctaType": null,
+      "measurementId": "G-JYJWH17ZVX"
+    },
+    {
+      "event": "scroll_depth",
+      "location": "https://catalisa.io/mapa",
+      "campaignSource": "linkedin",
+      "ctaType": null,
+      "measurementId": "G-JYJWH17ZVX"
+    },
+    {
+      "event": "scroll_depth",
+      "location": "https://catalisa.io/mapa",
+      "campaignSource": "linkedin",
+      "ctaType": null,
+      "measurementId": "G-JYJWH17ZVX"
+    },
+    {
+      "event": "scroll",
+      "location": "https://catalisa.io/",
+      "campaignSource": "linkedin",
+      "ctaType": null,
+      "measurementId": "G-JYJWH17ZVX"
+    },
+    {
+      "event": "page_view",
+      "location": "https://catalisa.io/mapa",
+      "campaignSource": "linkedin",
+      "ctaType": null,
+      "measurementId": "G-JYJWH17ZVX"
+    },
+    {
+      "event": "user_engagement",
+      "location": "https://catalisa.io/",
+      "campaignSource": "linkedin",
+      "ctaType": null,
+      "measurementId": "G-JYJWH17ZVX"
+    },
+    {
+      "event": "page_view",
+      "location": "https://catalisa.io/produtos",
+      "campaignSource": null,
+      "ctaType": null,
+      "measurementId": "G-JYJWH17ZVX"
+    },
+    {
+      "event": "time_on_page",
+      "location": "https://catalisa.io/produtos",
+      "campaignSource": null,
+      "ctaType": null,
+      "measurementId": "G-JYJWH17ZVX"
+    },
+    {
+      "event": "cta_click",
+      "location": "https://catalisa.io/ecossistema/banking",
+      "campaignSource": null,
+      "ctaType": "product_banking_details",
+      "measurementId": "G-JYJWH17ZVX"
+    },
+    {
+      "event": "scroll_depth",
+      "location": "https://catalisa.io/ecossistema/banking",
+      "campaignSource": null,
+      "ctaType": null,
+      "measurementId": "G-JYJWH17ZVX"
+    },
+    {
+      "event": "section_view",
+      "location": "https://catalisa.io/ecossistema/banking",
+      "campaignSource": null,
+      "ctaType": null,
+      "measurementId": "G-JYJWH17ZVX"
+    },
+    {
+      "event": "section_view",
+      "location": "https://catalisa.io/ecossistema/banking",
+      "campaignSource": null,
+      "ctaType": null,
+      "measurementId": "G-JYJWH17ZVX"
+    },
+    {
+      "event": "section_view",
+      "location": "https://catalisa.io/ecossistema/banking",
+      "campaignSource": null,
+      "ctaType": null,
+      "measurementId": "G-JYJWH17ZVX"
+    },
+    {
+      "event": "page_view",
+      "location": "https://catalisa.io/ecossistema/banking",
+      "campaignSource": null,
+      "ctaType": null,
+      "measurementId": "G-JYJWH17ZVX"
+    },
+    {
+      "event": "page_view",
+      "location": "https://catalisa.io/produtos",
+      "campaignSource": null,
+      "ctaType": null,
+      "measurementId": "G-JYJWH17ZVX"
+    },
+    {
+      "event": "cta_click",
+      "location": "https://catalisa.io/produtos",
+      "campaignSource": null,
+      "ctaType": "product_credit_contact",
+      "measurementId": "G-JYJWH17ZVX"
+    },
+    {
+      "event": "scroll_depth",
+      "location": "https://catalisa.io/produtos",
+      "campaignSource": null,
+      "ctaType": null,
+      "measurementId": "G-JYJWH17ZVX"
+    },
+    {
+      "event": "page_view",
+      "location": "https://catalisa.io/contato",
+      "campaignSource": null,
+      "ctaType": null,
+      "measurementId": "G-JYJWH17ZVX"
+    },
+    {
+      "event": "concept_requested",
+      "location": "https://catalisa.io/contato",
+      "campaignSource": null,
+      "ctaType": null,
+      "measurementId": "G-JYJWH17ZVX"
+    },
+    {
+      "event": "concept_ready",
+      "location": "https://catalisa.io/contato",
+      "campaignSource": null,
+      "ctaType": null,
+      "measurementId": "G-JYJWH17ZVX"
+    },
+    {
+      "event": "scroll_depth",
+      "location": "https://catalisa.io/contato",
+      "campaignSource": null,
+      "ctaType": null,
+      "measurementId": "G-JYJWH17ZVX"
+    },
+    {
+      "event": "scroll_depth",
+      "location": "https://catalisa.io/contato",
+      "campaignSource": null,
+      "ctaType": null,
+      "measurementId": "G-JYJWH17ZVX"
+    },
+    {
+      "event": "scroll_depth",
+      "location": "https://catalisa.io/contato",
+      "campaignSource": null,
+      "ctaType": null,
+      "measurementId": "G-JYJWH17ZVX"
+    },
+    {
+      "event": "scroll_depth",
+      "location": "https://catalisa.io/contato",
+      "campaignSource": null,
+      "ctaType": null,
+      "measurementId": "G-JYJWH17ZVX"
+    },
+    {
+      "event": "scroll",
+      "location": "https://catalisa.io/contato",
+      "campaignSource": null,
+      "ctaType": null,
+      "measurementId": "G-JYJWH17ZVX"
+    }
+  ],
+  "vendorScriptRequests": 10,
+  "collectionRequestsIntercepted": 29,
+  "externalCollectionDelivered": false,
+  "errors": []
+}

@@ -1,0 +1,50 @@
+{
+  "checkedAt": "2026-10-27T01:03:37.121Z",
+  "method": "Normal authenticated Chrome via Claude in Chrome; no standalone/headless browser launched by this agent",
+  "siteObservation": {
+    "observedAtApprox": "2026-10-27T00:59:52Z",
+    "hostname": "catalisa.io",
+    "pathname": "/",
+    "visitCampaign": "ga_validation",
+    "bannerVisible": false,
+    "cookiePreferencesButtonVisible": true,
+    "consentPreferenceRead": false,
+    "consentPreferenceInferred": false,
+    "googleLoaderPresent": false,
+    "googleTagManagerGlobalPresent": false,
+    "googleRequestsObserved": false,
+    "gtagFunctionPresent": true,
+    "dataLayerItemCount": 1,
+    "qaEventSent": false,
+    "reasonNoEvent": "No evidence of an initialized, already-consented Google SDK; did not inject SDK or change consent."
+  },
+  "realtimeObservation": {
+    "lastObservedAt": "2026-10-27T01:00:58Z",
+    "accountId": "254659401",
+    "propertyId": "350153952",
+    "measurementId": "G-JYJWH17ZVX",
+    "activeUsersLast30Minutes": 0,
+    "activeUsersLast5Minutes": 0,
+    "eventsObserved": [],
+    "sourceGaValidationObserved": false,
+    "url": "https://analytics.google.com/analytics/web/#/a254659401p350153952/realtime/overview"
+  },
+  "receiptConfirmed": false,
+  "limits": [
+    "SDK suppression in this browser could be consistent with a saved refusal, but the preference was not read, so the cause is not established.",
+    "Absence of a banner does not distinguish grant from refusal.",
+    "Parent separately confirmed native SDK requests and204 receipts in a controlled consenting context; that transport proof is not Realtime receipt."
+  ],
+  "scope": {
+    "personalConsentChanged": false,
+    "formsSubmitted": false,
+    "leadsOrAiGenerated": false,
+    "cookiesOrStorageRead": false,
+    "settingsOrFiltersChanged": false,
+    "oauthGranted": false
+  },
+  "evidence": {
+    "cliResult": "/tmp/ga-native-chrome-validation-result.json",
+    "permissionDenials": []
+  }
+}

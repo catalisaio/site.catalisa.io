@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-23T01:00:49.282Z",
+  "passed": true,
+  "scope": "Four native operation families compared with final reference HTML and finite states at 320/390/768/1440; gallery and keyboard; no real service calls; not full accessibility/device/production QA",
+  "measurements": [
+    {
+      "family": "studio",
+      "route": "/studio/",
+      "width": 390,
+      "scrollWidth": 390,
+      "broken": []
+    },
+    {
+      "family": "studio",
+      "route": "/studio/",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "broken": []
+    },
+    {
+      "family": "workflows",
+      "route": "/workflows/",
+      "width": 390,
+      "scrollWidth": 390,
+      "broken": []
+    },
+    {
+      "family": "workflows",
+      "route": "/workflows/",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "broken": []
+    },
+    {
+      "family": "agents",
+      "route": "/agentes/",
+      "width": 390,
+      "scrollWidth": 390,
+      "broken": []
+    },
+    {
+      "family": "agents",
+      "route": "/agentes/",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "broken": []
+    },
+    {
+      "family": "governance",
+      "route": "/governanca/",
+      "width": 390,
+      "scrollWidth": 390,
+      "broken": []
+    },
+    {
+      "family": "governance",
+      "route": "/governanca/",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "broken": []
+    }
+  ],
+  "states": [],
+  "checks": [],
+  "errors": []
+}

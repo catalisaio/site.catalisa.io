@@ -1,0 +1,311 @@
+{
+  "date": "2026-10-26T13:04:11.175Z",
+  "origin": "https://site-staging.catalisa.io",
+  "scope": "Actual staged UI/BFF/owner AI; retries the same fictional cookie that failed with upstream HTTP500, preserves briefing/contact, performs human review and free refinement, then reloads. No outbound message or handoff.",
+  "releaseId": "20261026-ai-recovery",
+  "sameFailedSessionRecovered": true,
+  "originalSessionRef": "859178a7-6669-4722-ae07-11a60316a1d0",
+  "briefingPreserved": true,
+  "contactPreserved": true,
+  "initialElapsedMs": 19853,
+  "initialConcept": {
+    "conceptRef": "concept_36a080e8-50c4-4bca-ac90-4cbb384d38df",
+    "version": 1,
+    "briefVersion": 3,
+    "content": {
+      "schemaVersion": "1.0",
+      "title": "Venda pelo WhatsApp",
+      "summary": "Aumente suas vendas na loja de roupas usando WhatsApp como canal principal de vendas.",
+      "hypothesis": "Ao integrar o WhatsApp como canal de vendas, a loja poderá alcançar mais clientes e aumentar as vendas.",
+      "roles": [
+        "Vendedor",
+        "Gerente de Vendas",
+        "Atendente"
+      ],
+      "screens": [
+        {
+          "id": "whatsapp-screen",
+          "title": "WhatsApp da Loja",
+          "description": "Tela principal para interação com os clientes pelo WhatsApp.",
+          "items": [
+            {
+              "label": "Iniciar conversa",
+              "value": "Clique para iniciar uma nova conversa com o cliente."
+            },
+            {
+              "label": "Histórico de Conversas",
+              "value": "Acesse as conversas anteriores com os clientes."
+            },
+            {
+              "label": "Enviar Promoções",
+              "value": "Envie promoções e novidades diretamente pelo WhatsApp."
+            }
+          ],
+          "action": {
+            "label": "Continuar",
+            "nextScreenId": "product-catalog-screen"
+          }
+        },
+        {
+          "id": "product-catalog-screen",
+          "title": "Catálogo de Produtos",
+          "description": "Tela para exibir os produtos disponíveis para venda.",
+          "items": [
+            {
+              "label": "Camisas",
+              "value": "Camisas masculinas e femininas a partir de R$ 49,90."
+            },
+            {
+              "label": "Calças",
+              "value": "Calças jeans e de tecido a partir de R$ 89,90."
+            },
+            {
+              "label": "Acessórios",
+              "value": "Acessórios como cintos e bolsas a partir de R$ 29,90."
+            }
+          ],
+          "action": {
+            "label": "Selecionar Produto",
+            "nextScreenId": "order-summary-screen"
+          }
+        },
+        {
+          "id": "order-summary-screen",
+          "title": "Resumo do Pedido",
+          "description": "Tela para revisar o pedido antes da finalização.",
+          "items": [
+            {
+              "label": "Produto Selecionado",
+              "value": "Camisa - R$ 49,90"
+            },
+            {
+              "label": "Quantidade",
+              "value": "1"
+            },
+            {
+              "label": "Total",
+              "value": "R$ 49,90"
+            }
+          ],
+          "action": {
+            "label": "Finalizar Compra",
+            "nextScreenId": null
+          }
+        }
+      ],
+      "blocks": [
+        {
+          "slug": "wpp",
+          "role": "Canal principal de vendas"
+        },
+        {
+          "slug": "email",
+          "role": "Notificações de pedido"
+        }
+      ],
+      "journey": [
+        {
+          "id": "initiate-chat",
+          "label": "Iniciar Conversa",
+          "description": "O vendedor inicia uma conversa com o cliente pelo WhatsApp.",
+          "blockSlugs": [
+            "wpp",
+            "email"
+          ],
+          "humanReview": false
+        },
+        {
+          "id": "select-product",
+          "label": "Selecionar Produto",
+          "description": "O cliente seleciona um produto do catálogo.",
+          "blockSlugs": [
+            "wpp",
+            "email"
+          ],
+          "humanReview": false
+        },
+        {
+          "id": "review-order",
+          "label": "Revisar Pedido",
+          "description": "O vendedor revisa o pedido com o cliente antes de finalizar.",
+          "blockSlugs": [
+            "wpp",
+            "email"
+          ],
+          "humanReview": true
+        },
+        {
+          "id": "finalize-purchase",
+          "label": "Finalizar Compra",
+          "description": "O cliente finaliza a compra e recebe a confirmação.",
+          "blockSlugs": [
+            "wpp",
+            "email"
+          ],
+          "humanReview": false
+        }
+      ],
+      "limitations": [
+        "Necessário ter acesso ao WhatsApp Business.",
+        "Limitações de envio de mensagens em massa pelo WhatsApp.",
+        "Dependência da conexão de internet para comunicação.",
+        "Variabilidade no tempo de resposta dos clientes."
+      ],
+      "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+    }
+  },
+  "humanReviewElapsedMs": 42,
+  "humanReviewAlreadyExisted": true,
+  "refinementElapsedMs": 14840,
+  "refinedConcept": {
+    "conceptRef": "concept_36a080e8-50c4-4bca-ac90-4cbb384d38df",
+    "version": 2,
+    "briefVersion": 3,
+    "content": {
+      "schemaVersion": "1.0",
+      "title": "Venda pelo WhatsApp",
+      "summary": "Aumente suas vendas na loja de roupas usando WhatsApp como canal principal de vendas.",
+      "hypothesis": "Ao integrar o WhatsApp como canal de vendas, a loja poderá alcançar mais clientes e aumentar as vendas.",
+      "roles": [
+        "Vendedor",
+        "Gerente de Vendas",
+        "Atendente"
+      ],
+      "screens": [
+        {
+          "id": "whatsapp-screen",
+          "title": "WhatsApp da Loja",
+          "description": "Tela principal para interação com os clientes pelo WhatsApp.",
+          "items": [
+            {
+              "label": "Iniciar conversa",
+              "value": "Clique para iniciar uma nova conversa com o cliente."
+            },
+            {
+              "label": "Histórico de Conversas",
+              "value": "Acesse as conversas anteriores com os clientes."
+            },
+            {
+              "label": "Enviar Promoções",
+              "value": "Envie promoções e novidades diretamente pelo WhatsApp."
+            }
+          ],
+          "action": {
+            "label": "Continuar",
+            "nextScreenId": "product-catalog-screen"
+          }
+        },
+        {
+          "id": "product-catalog-screen",
+          "title": "Catálogo de Produtos",
+          "description": "Tela para exibir os produtos disponíveis para venda.",
+          "items": [
+            {
+              "label": "Camisas",
+              "value": "Camisas masculinas e femininas a partir de R$ 49,90."
+            },
+            {
+              "label": "Calças",
+              "value": "Calças jeans e de tecido a partir de R$ 89,90."
+            },
+            {
+              "label": "Acessórios",
+              "value": "Acessórios como cintos e bolsas a partir de R$ 29,90."
+            }
+          ],
+          "action": {
+            "label": "Selecionar Produto",
+            "nextScreenId": "order-summary-screen"
+          }
+        },
+        {
+          "id": "order-summary-screen",
+          "title": "Resumo do Pedido",
+          "description": "Tela para revisar o pedido antes da finalização.",
+          "items": [
+            {
+              "label": "Produto Selecionado",
+              "value": "Camisa - R$ 49,90"
+            },
+            {
+              "label": "Quantidade",
+              "value": "1"
+            },
+            {
+              "label": "Total",
+              "value": "R$ 49,90"
+            }
+          ],
+          "action": {
+            "label": "Finalizar Compra",
+            "nextScreenId": null
+          }
+        }
+      ],
+      "blocks": [
+        {
+          "slug": "wpp",
+          "role": "Canal principal de vendas"
+        },
+        {
+          "slug": "email",
+          "role": "Notificações de pedido"
+        }
+      ],
+      "journey": [
+        {
+          "id": "initiate-chat",
+          "label": "Iniciar Conversa",
+          "description": "O vendedor inicia uma conversa com o cliente pelo WhatsApp.",
+          "blockSlugs": [
+            "wpp",
+            "email"
+          ],
+          "humanReview": false
+        },
+        {
+          "id": "select-product",
+          "label": "Selecionar Produto",
+          "description": "O cliente seleciona um produto do catálogo.",
+          "blockSlugs": [
+            "wpp",
+            "email"
+          ],
+          "humanReview": false
+        },
+        {
+          "id": "review-order",
+          "label": "Revisar Pedido",
+          "description": "O vendedor revisa o pedido com o cliente antes de finalizar.",
+          "blockSlugs": [
+            "wpp",
+            "email"
+          ],
+          "humanReview": true
+        },
+        {
+          "id": "finalize-purchase",
+          "label": "Finalizar Compra",
+          "description": "O cliente finaliza a compra e recebe a confirmação.",
+          "blockSlugs": [
+            "wpp",
+            "email"
+          ],
+          "humanReview": false
+        }
+      ],
+      "limitations": [
+        "Necessário ter acesso ao WhatsApp Business.",
+        "Limitações de envio de mensagens em massa pelo WhatsApp.",
+        "Dependência da conexão de internet para comunicação.",
+        "Variabilidade no tempo de resposta dos clientes."
+      ],
+      "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+    }
+  },
+  "notificationChangePreservesPrimaryChannel": true,
+  "reloadRestoresVersionAndContext": true,
+  "passed": true,
+  "stage": "reload",
+  "errors": []
+}

@@ -1,0 +1,3075 @@
+{
+  "passed": true,
+  "base": ".local/site/releases/production-20261027-hero-clarity/public",
+  "output": ".local/operational-assistant-integration/candidate-final",
+  "scope": "Prior public runtime, snapshots, compatibility/private pages and server preserved. New internal page has its own runtime and document navigation boundaries. Existing native HTML adds only two contextual hardlinks and a navigation-only extension; every existing main HTML and module entry is byte-identical.",
+  "nativeSnapshotsPatched": 504,
+  "newRoutes": [
+    {
+      "path": "/assistente-operacional",
+      "basePath": "/assistente-operacional",
+      "lang": "pt-BR"
+    },
+    {
+      "path": "/en/operational-assistant",
+      "basePath": "/assistente-operacional",
+      "lang": "en-US"
+    },
+    {
+      "path": "/de/operativer-assistent",
+      "basePath": "/assistente-operacional",
+      "lang": "de-DE"
+    },
+    {
+      "path": "/es/asistente-operativo",
+      "basePath": "/assistente-operacional",
+      "lang": "es-ES"
+    },
+    {
+      "path": "/da/driftsassistent",
+      "basePath": "/assistente-operacional",
+      "lang": "da-DK"
+    },
+    {
+      "path": "/nl/operationele-assistent",
+      "basePath": "/assistente-operacional",
+      "lang": "nl-NL"
+    },
+    {
+      "path": "/fr/assistant-operationnel",
+      "basePath": "/assistente-operacional",
+      "lang": "fr-FR"
+    }
+  ],
+  "navigationExtension": "/assets/operational-assistant-nav-c5dfbbaed75f.js",
+  "priorAssetsByteIdentical": 2269,
+  "existingBffReused": true,
+  "brandZipPreserved": true,
+  "productionChanged": false,
+  "records": [
+    {
+      "path": "/",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/studio",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/studio",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/ai-agents",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/workflows",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/workflows",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/contato",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/contact",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/politica-privacidade",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/privacy-policy",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/press-kit",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/press-kit",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/termos",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/terms",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/design-system",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "none"
+    },
+    {
+      "path": "/en/design-system",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "none"
+    },
+    {
+      "path": "/de/designsystem",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "none"
+    },
+    {
+      "path": "/es/sistema-de-diseno",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "none"
+    },
+    {
+      "path": "/da/designsystem",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "none"
+    },
+    {
+      "path": "/nl/designsysteem",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "none"
+    },
+    {
+      "path": "/fr/systeme-de-design",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "none"
+    },
+    {
+      "path": "/capacidades",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/capabilities",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/faehigkeiten",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/capacidades",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/funktioner",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/mogelijkheden",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/capacites",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/visao",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/vision",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/vision",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/vision",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/vision",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/visie",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/vision",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/arquitetura",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/architecture",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/architektur",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/arquitectura",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/arkitektur",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/architectuur",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/architecture",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/desenvolvedores",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/developers",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/entwickler",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/desarrolladores",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/udviklere",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/ontwikkelaars",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/developpeurs",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/studio",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/studio",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/studio",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/studio",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/studio",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/workflows",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/workflows",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/workflows",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/workflows",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/workflows",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/agentes",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/ki-agenten",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/agentes-ia",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/ai-agenter",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/ai-agenten",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/agents-ia",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/governanca",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/governance",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/governance",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/gobernanza",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/governance",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/governance",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/gouvernance",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/composicoes",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/compositions",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/kompositionen",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/composiciones",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/sammensaetninger",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/composities",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/compositions",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/ecossistema",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/ecosystem",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/oekosystem",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/ecosistema",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/oekosystem",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/ecosysteem",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/ecosysteme",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/produtos",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/products",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/produkte",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/productos",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/produkter",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/producten",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/produits",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/ecossistema/banking",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/ecosystem/banking",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/oekosystem/banking",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/ecosistema/banking",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/oekosystem/banking",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/ecosysteem/banking",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/ecosysteme/banking",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/ecossistema/credit",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/ecosystem/credit",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/oekosystem/credit",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/ecosistema/credit",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/oekosystem/credit",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/ecosysteem/credit",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/ecosysteme/credit",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/ecossistema/med",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/ecosystem/med",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/oekosystem/med",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/ecosistema/med",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/oekosystem/med",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/ecosysteem/med",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/ecosysteme/med",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/ecossistema/juridico",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/ecosystem/legal",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/oekosystem/recht",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/ecosistema/juridico",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/oekosystem/jura",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/ecosysteem/juridisch",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/ecosysteme/juridique",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/ecossistema/biometrics",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/ecosystem/biometrics",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/oekosystem/biometrics",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/ecosistema/biometrics",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/oekosystem/biometrics",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/ecosysteem/biometrics",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/ecosysteme/biometrics",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/ecossistema/decision",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/ecosystem/decision",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/oekosystem/decision",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/ecosistema/decision",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/oekosystem/decision",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/ecosysteem/decision",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/ecosysteme/decision",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/perspectivas",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/perspectives",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/perspektiven",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/perspectivas",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/perspektiver",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/perspectieven",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/perspectives",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/perspectivas/construir-por-composicao",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/perspectives/building-by-composition",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/perspektiven/aufbau-durch-komposition",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/perspectivas/construir-por-composicion",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/perspektiver/byg-med-sammensaetning",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/perspectieven/bouwen-door-compositie",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/perspectives/construire-par-composition",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/perspectivas/autonomia-responsabilidade",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/perspectives/autonomy-and-responsibility",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/perspektiven/autonomie-und-verantwortung",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/perspectivas/autonomia-y-responsabilidad",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/perspektiver/autonomi-og-ansvar",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/perspectieven/autonomie-en-verantwoordelijkheid",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/perspectives/autonomie-et-responsabilite",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/perspectivas/regra-legivel",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/perspectives/readable-rules",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/perspektiven/lesbare-regeln",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/perspectivas/reglas-legibles",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/perspektiver/laesbare-regler",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/perspectieven/leesbare-regels",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/perspectives/regles-lisibles",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/perspectivas/open-finance-da-conexao-ao-produto",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/perspectives/open-finance-from-connection-to-product",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/perspektiven/open-finance-von-der-verbindung-zum-produkt",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/perspectivas/open-finance-de-la-conexion-al-producto",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/perspektiver/open-finance-fra-forbindelse-til-produkt",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/perspectieven/open-finance-van-verbinding-naar-product",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/perspectives/open-finance-de-la-connexion-au-produit",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/perspectivas/resiliencia-e-liberdade-de-evoluir",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/perspectives/resilience-and-freedom-to-evolve",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/perspektiven/resilienz-und-freiheit-zur-weiterentwicklung",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/perspectivas/resiliencia-y-libertad-para-evolucionar",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/perspektiver/robusthed-og-frihed-til-at-udvikle",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/perspectieven/veerkracht-en-vrijheid-om-te-evolueren",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/perspectives/resilience-et-liberte-devoluer",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/interfaces",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/interfaces",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/oberflaechen",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/interfaces",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/brugerflader",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/interfaces",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/interfaces",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/pressekit",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/kit-de-prensa",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/pressekit",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/perskit",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/kit-presse",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fontes",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/sources",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/quellen",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/fuentes",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/kilder",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/bronnen",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/sources",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/mapa",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/sitemap",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/sitemap",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/mapa-del-sitio",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/sitemap",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/sitemap",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/plan-du-site",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/kontakt",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/contacto",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/kontakt",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/contact",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/contact",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/lab",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/lab",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/lab",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/lab",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/lab",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/lab",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/lab",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/datenschutz",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/politica-de-privacidad",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/privatlivspolitik",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/privacybeleid",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/politique-de-confidentialite",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/nutzungsbedingungen",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/terminos",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/vilkaar",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/voorwaarden",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/conditions-utilisation",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/capacidades/ai-engine",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/capabilities/ai-engine",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/faehigkeiten/ai-engine",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/capacidades/ai-engine",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/funktioner/ai-engine",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/mogelijkheden/ai-engine",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/capacites/ai-engine",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/capacidades/analytics",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/capabilities/analytics",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/faehigkeiten/analytics",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/capacidades/analytics",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/funktioner/analytics",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/mogelijkheden/analytics",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/capacites/analytics",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/capacidades/api-keys",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/capabilities/api-keys",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/faehigkeiten/api-keys",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/capacidades/api-keys",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/funktioner/api-keys",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/mogelijkheden/api-keys",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/capacites/api-keys",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/capacidades/audit-trail",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/capabilities/audit-trail",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/faehigkeiten/audit-trail",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/capacidades/audit-trail",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/funktioner/audit-trail",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/mogelijkheden/audit-trail",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/capacites/audit-trail",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/capacidades/baas",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/capabilities/baas",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/faehigkeiten/baas",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/capacidades/baas",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/funktioner/baas",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/mogelijkheden/baas",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/capacites/baas",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/capacidades/banking",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/capabilities/banking",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/faehigkeiten/banking",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/capacidades/banking",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/funktioner/banking",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/mogelijkheden/banking",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/capacites/banking",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/capacidades/banking-product-portfolio",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/capabilities/banking-product-portfolio",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/faehigkeiten/banking-product-portfolio",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/capacidades/banking-product-portfolio",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/funktioner/banking-product-portfolio",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/mogelijkheden/banking-product-portfolio",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/capacites/banking-product-portfolio",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/capacidades/billing",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/capabilities/billing",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/faehigkeiten/billing",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/capacidades/billing",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/funktioner/billing",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/mogelijkheden/billing",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/capacites/billing",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/capacidades/biometrics",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/capabilities/biometrics",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/faehigkeiten/biometrics",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/capacidades/biometrics",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/funktioner/biometrics",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/mogelijkheden/biometrics",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/capacites/biometrics",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/capacidades/bureaus",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/capabilities/bureaus",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/faehigkeiten/bureaus",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/capacidades/bureaus",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/funktioner/bureaus",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/mogelijkheden/bureaus",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/capacites/bureaus",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/capacidades/calculations-engine",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/capabilities/calculations-engine",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/faehigkeiten/calculations-engine",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/capacidades/calculations-engine",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/funktioner/calculations-engine",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/mogelijkheden/calculations-engine",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/capacites/calculations-engine",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/capacidades/calendar",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/capabilities/calendar",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/faehigkeiten/calendar",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/capacidades/calendar",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/funktioner/calendar",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/mogelijkheden/calendar",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/capacites/calendar",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/capacidades/cms",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/capabilities/cms",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/faehigkeiten/cms",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/capacidades/cms",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/funktioner/cms",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/mogelijkheden/cms",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/capacites/cms",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/capacidades/commerce",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/capabilities/commerce",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/faehigkeiten/commerce",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/capacidades/commerce",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/funktioner/commerce",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/mogelijkheden/commerce",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/capacites/commerce",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/capacidades/companies",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/capabilities/companies",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/faehigkeiten/companies",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/capacidades/companies",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/funktioner/companies",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/mogelijkheden/companies",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/capacites/companies",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/capacidades/customers",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/capabilities/customers",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/faehigkeiten/customers",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/capacidades/customers",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/funktioner/customers",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/mogelijkheden/customers",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/capacites/customers",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/capacidades/data-extraction",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/capabilities/data-extraction",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/faehigkeiten/data-extraction",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/capacidades/data-extraction",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/funktioner/data-extraction",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/mogelijkheden/data-extraction",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/capacites/data-extraction",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/capacidades/data-store",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/capabilities/data-store",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/faehigkeiten/data-store",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/capacidades/data-store",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/funktioner/data-store",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/mogelijkheden/data-store",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/capacites/data-store",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/capacidades/decision-engine",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/capabilities/decision-engine",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/faehigkeiten/decision-engine",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/capacidades/decision-engine",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/funktioner/decision-engine",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/mogelijkheden/decision-engine",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/capacites/decision-engine",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/capacidades/decision-platform",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/capabilities/decision-platform",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/faehigkeiten/decision-platform",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/capacidades/decision-platform",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/funktioner/decision-platform",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/mogelijkheden/decision-platform",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/capacites/decision-platform",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/capacidades/document-template",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/capabilities/document-template",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/faehigkeiten/document-template",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/capacidades/document-template",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/funktioner/document-template",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/mogelijkheden/document-template",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/capacites/document-template",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/capacidades/e-signature",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/capabilities/e-signature",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/faehigkeiten/e-signature",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/capacidades/e-signature",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/funktioner/e-signature",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/mogelijkheden/e-signature",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/capacites/e-signature",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/capacidades/email",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/capabilities/email",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/faehigkeiten/email",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/capacidades/email",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/funktioner/email",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/mogelijkheden/email",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/capacites/email",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/capacidades/feature-flags",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/capabilities/feature-flags",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/faehigkeiten/feature-flags",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/capacidades/feature-flags",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/funktioner/feature-flags",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/mogelijkheden/feature-flags",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/capacites/feature-flags",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/capacidades/file-storage",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/capabilities/file-storage",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/faehigkeiten/file-storage",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/capacidades/file-storage",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/funktioner/file-storage",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/mogelijkheden/file-storage",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/capacites/file-storage",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/capacidades/iam",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/capabilities/iam",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/faehigkeiten/iam",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/capacidades/iam",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/funktioner/iam",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/mogelijkheden/iam",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/capacites/iam",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/capacidades/meta-account",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/capabilities/meta-account",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/faehigkeiten/meta-account",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/capacidades/meta-account",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/funktioner/meta-account",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/mogelijkheden/meta-account",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/capacites/meta-account",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/capacidades/open-finance",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/capabilities/open-finance",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/faehigkeiten/open-finance",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/capacidades/open-finance",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/funktioner/open-finance",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/mogelijkheden/open-finance",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/capacites/open-finance",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/capacidades/payments",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/capabilities/payments",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/faehigkeiten/payments",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/capacidades/payments",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/funktioner/payments",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/mogelijkheden/payments",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/capacites/payments",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/capacidades/people",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/capabilities/people",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/faehigkeiten/people",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/capacidades/people",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/funktioner/people",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/mogelijkheden/people",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/capacites/people",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/capacidades/pricing-engine",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/capabilities/pricing-engine",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/faehigkeiten/pricing-engine",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/capacidades/pricing-engine",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/funktioner/pricing-engine",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/mogelijkheden/pricing-engine",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/capacites/pricing-engine",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/capacidades/products",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/capabilities/products",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/faehigkeiten/products",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/capacidades/products",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/funktioner/products",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/mogelijkheden/products",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/capacites/products",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/capacidades/rooms",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/capabilities/rooms",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/faehigkeiten/rooms",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/capacidades/rooms",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/funktioner/rooms",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/mogelijkheden/rooms",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/capacites/rooms",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/capacidades/service-attestations",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/capabilities/service-attestations",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/faehigkeiten/service-attestations",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/capacidades/service-attestations",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/funktioner/service-attestations",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/mogelijkheden/service-attestations",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/capacites/service-attestations",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/capacidades/slack",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/capabilities/slack",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/faehigkeiten/slack",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/capacidades/slack",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/funktioner/slack",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/mogelijkheden/slack",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/capacites/slack",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/capacidades/sso",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/capabilities/sso",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/faehigkeiten/sso",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/capacidades/sso",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/funktioner/sso",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/mogelijkheden/sso",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/capacites/sso",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/capacidades/webhooks-engine",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/capabilities/webhooks-engine",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/faehigkeiten/webhooks-engine",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/capacidades/webhooks-engine",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/funktioner/webhooks-engine",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/mogelijkheden/webhooks-engine",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/capacites/webhooks-engine",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/capacidades/wpp",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/capabilities/wpp",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/faehigkeiten/wpp",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/capacidades/wpp",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/funktioner/wpp",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/mogelijkheden/wpp",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/capacites/wpp",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/capacidades/wpp-business",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/en/capabilities/wpp-business",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/de/faehigkeiten/wpp-business",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/es/capacidades/wpp-business",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/da/funktioner/wpp-business",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/nl/mogelijkheden/wpp-business",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    },
+    {
+      "path": "/fr/capacites/wpp-business",
+      "mainByteIdentical": true,
+      "existingRuntimeEntryUnchanged": true,
+      "changes": "two contextual hardlinks and navigation-only extension"
+    }
+  ]
+}

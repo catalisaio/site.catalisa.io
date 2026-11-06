@@ -1,0 +1,150 @@
+{
+  "date": "2026-10-25T04:32:58.380Z",
+  "passed": true,
+  "scope": "Real staging AI through local browser/BFF, fictional short contact flows, human review, reload, one free refinement. No handoff or external messages.",
+  "results": [
+    {
+      "key": "escola-cobranca",
+      "passed": true,
+      "briefing": {
+        "idea": "cobrar atrasados",
+        "context": "escola de ingles",
+        "goal": "parar cobranca manual"
+      },
+      "elapsedMs": 23855,
+      "reviewElapsedMs": 54,
+      "hadReview": true,
+      "concept": {
+        "conceptRef": "concept_bfc77cb9-50c9-412d-a2fa-ed906d81c64a",
+        "version": 1,
+        "briefVersion": 3,
+        "content": {
+          "schemaVersion": "1.0",
+          "title": "Cobrança Automatizada Escola",
+          "summary": "Automatiza notificações e pagamentos de mensalidades atrasadas em escola de inglês, eliminando cobrança manual via WhatsApp e portal.",
+          "hypothesis": "Escola de inglês precisa de fluxo simples para cobrar atrasados sem intervenção manual constante; contexto limitado assume uso de WhatsApp e pagamentos básicos.",
+          "roles": [
+            "Gestor Financeiro",
+            "Secretaria",
+            "Diretor"
+          ],
+          "screens": [
+            {
+              "id": "inicial",
+              "title": "Visão de Atrasados",
+              "description": "Lista alunos com mensalidades vencidas.",
+              "items": [
+                {
+                  "label": "Aluno",
+                  "value": "João Silva - R$ 250"
+                },
+                {
+                  "label": "Status",
+                  "value": "15 dias atrasado"
+                }
+              ],
+              "action": {
+                "label": "Enviar lembrete",
+                "nextScreenId": "envio"
+              }
+            },
+            {
+              "id": "envio",
+              "title": "Enviar Notificação",
+              "description": "Confirma mensagem personalizada via WhatsApp.",
+              "items": [
+                {
+                  "label": "Mensagem",
+                  "value": "Olá João, sua mensalidade venceu."
+                }
+              ],
+              "action": {
+                "label": "Confirmar envio",
+                "nextScreenId": "pagamento"
+              }
+            },
+            {
+              "id": "pagamento",
+              "title": "Registrar Pagamento",
+              "description": "Confirma quitação ou link de pagamento.",
+              "items": [
+                {
+                  "label": "Valor",
+                  "value": "R$ 250"
+                }
+              ],
+              "action": {
+                "label": "Finalizar",
+                "nextScreenId": null
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "slug": "wpp",
+              "role": "Envio de lembretes automáticos"
+            },
+            {
+              "slug": "payments",
+              "role": "Geração de links e confirmação de pagamento"
+            },
+            {
+              "slug": "customers",
+              "role": "Cadastro e isolamento de alunos"
+            },
+            {
+              "slug": "billing",
+              "role": "Gestão de faturas e status de atraso"
+            }
+          ],
+          "journey": [
+            {
+              "id": "j1",
+              "label": "Identificar atrasados",
+              "description": "Consulta alunos com mensalidades vencidas.",
+              "blockSlugs": [
+                "customers",
+                "billing"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "j2",
+              "label": "Notificar via WhatsApp",
+              "description": "Envia mensagem personalizada automaticamente.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "j3",
+              "label": "Oferecer pagamento",
+              "description": "Gera link ou registra quitação.",
+              "blockSlugs": [
+                "payments"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "j4",
+              "label": "Atualizar status",
+              "description": "Registra pagamento e fecha pendência.",
+              "blockSlugs": [
+                "billing"
+              ],
+              "humanReview": true
+            }
+          ],
+          "limitations": [
+            "Assume integração prévia com WhatsApp da escola.",
+            "Não contempla regras complexas de desconto ou parcelamento.",
+            "Revisão humana necessária para autorizar estornos."
+          ],
+          "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+        }
+      },
+      "errors": []
+    }
+  ]
+}

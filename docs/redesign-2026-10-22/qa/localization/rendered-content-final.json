@@ -1,0 +1,5701 @@
+{
+  "generatedAt": "2026-10-26T19:08:40.256Z",
+  "scope": "Actual local native routes, rendered text/attributes and missing runtime keys. Private API requests intercepted as anonymous; no AI generation, visitor sessions or deploy. Exact-source detection is a diagnostic, not proof of native linguistic quality.",
+  "passed": false,
+  "pages": 504,
+  "errors": [],
+  "checks": [
+    {
+      "locale": "pt-BR",
+      "path": "/",
+      "basePath": "/",
+      "heading": "A forma segue\na conexão.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/design-system",
+      "basePath": "/design-system",
+      "heading": "Uma base comum.\nExpressões próprias.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/capacidades",
+      "basePath": "/capacidades",
+      "heading": "Peças com propósito.\nPossibilidades\nem conjunto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/visao",
+      "basePath": "/visao",
+      "heading": "Dar forma\nao que vem\ndepois.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/arquitetura",
+      "basePath": "/arquitetura",
+      "heading": "Menos trabalho\nrepetido.\nMais produto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/desenvolvedores",
+      "basePath": "/desenvolvedores",
+      "heading": "Seu código.\nMais possibilidades.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/studio",
+      "basePath": "/studio",
+      "heading": "Dê forma\nao que precisa\nfuncionar.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/workflows",
+      "basePath": "/workflows",
+      "heading": "O próximo passo\ntem um\nporquê.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/agentes",
+      "basePath": "/agentes",
+      "heading": "Entender\no contexto.\nAgir com sentido.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/governanca",
+      "basePath": "/governanca",
+      "heading": "Confiança tem\nestrutura.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/composicoes",
+      "basePath": "/composicoes",
+      "heading": "A conexão muda\no resultado.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/ecossistema",
+      "basePath": "/ecossistema",
+      "heading": "O mesmo fundamento.\nOutras formas de operar.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/ecossistema/banking",
+      "basePath": "/ecossistema/banking",
+      "heading": "Uma conta.\nVárias formas\nde operar.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/ecossistema/credit",
+      "basePath": "/ecossistema/credit",
+      "heading": "Crédito tem começo.\nA operação\ncontinua.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/ecossistema/med",
+      "basePath": "/ecossistema/med",
+      "heading": "Saúde",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/ecossistema/juridico",
+      "basePath": "/ecossistema/juridico",
+      "heading": "Jurídico",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/ecossistema/recrutamento",
+      "basePath": "/ecossistema/recrutamento",
+      "heading": "Recrutamento",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/ecossistema/biometrics",
+      "basePath": "/ecossistema/biometrics",
+      "heading": "Biometria",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/ecossistema/decision",
+      "basePath": "/ecossistema/decision",
+      "heading": "Decisão",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/perspectivas",
+      "basePath": "/perspectivas",
+      "heading": "O mercado muda.\nO que vale construir?",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/perspectivas/construir-por-composicao",
+      "basePath": "/perspectivas/construir-por-composicao",
+      "heading": "Modernizar sem recomeçar o banco.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/perspectivas/autonomia-responsabilidade",
+      "basePath": "/perspectivas/autonomia-responsabilidade",
+      "heading": "A IA respondeu. A operação aconteceu?",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/perspectivas/regra-legivel",
+      "basePath": "/perspectivas/regra-legivel",
+      "heading": "Decidir rápido. Conseguir explicar depois.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/perspectivas/open-finance-da-conexao-ao-produto",
+      "basePath": "/perspectivas/open-finance-da-conexao-ao-produto",
+      "heading": "Conectar dados é só o começo.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/perspectivas/resiliencia-e-liberdade-de-evoluir",
+      "basePath": "/perspectivas/resiliencia-e-liberdade-de-evoluir",
+      "heading": "E se uma peça ficar indisponível?",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/interfaces",
+      "basePath": "/interfaces",
+      "heading": "A arquitetura\nvista por quem usa.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/press-kit",
+      "basePath": "/press-kit",
+      "heading": "Uma marca.\nMuitas expressões.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/fontes",
+      "basePath": "/fontes",
+      "heading": "A base do conteúdo.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/mapa",
+      "basePath": "/mapa",
+      "heading": "Todas as conexões.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/contato",
+      "basePath": "/contato",
+      "heading": "Vamos dar forma\nà próxima\nconversa.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/lab",
+      "basePath": "/lab",
+      "heading": "O que você\nquer construir?",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/politica-privacidade",
+      "basePath": "/politica-privacidade",
+      "heading": "Política de Privacidade",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/termos",
+      "basePath": "/termos",
+      "heading": "Termos de Uso",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/capacidades/ai-engine",
+      "basePath": "/capacidades/ai-engine",
+      "heading": "Peças com propósito.\nPossibilidades\nem conjunto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/capacidades/analytics",
+      "basePath": "/capacidades/analytics",
+      "heading": "Peças com propósito.\nPossibilidades\nem conjunto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/capacidades/api-keys",
+      "basePath": "/capacidades/api-keys",
+      "heading": "Peças com propósito.\nPossibilidades\nem conjunto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/capacidades/audit-trail",
+      "basePath": "/capacidades/audit-trail",
+      "heading": "Peças com propósito.\nPossibilidades\nem conjunto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/capacidades/baas",
+      "basePath": "/capacidades/baas",
+      "heading": "Peças com propósito.\nPossibilidades\nem conjunto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/capacidades/banking",
+      "basePath": "/capacidades/banking",
+      "heading": "Peças com propósito.\nPossibilidades\nem conjunto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/capacidades/banking-product-portfolio",
+      "basePath": "/capacidades/banking-product-portfolio",
+      "heading": "Peças com propósito.\nPossibilidades\nem conjunto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/capacidades/billing",
+      "basePath": "/capacidades/billing",
+      "heading": "Peças com propósito.\nPossibilidades\nem conjunto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/capacidades/biometrics",
+      "basePath": "/capacidades/biometrics",
+      "heading": "Peças com propósito.\nPossibilidades\nem conjunto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/capacidades/bureaus",
+      "basePath": "/capacidades/bureaus",
+      "heading": "Peças com propósito.\nPossibilidades\nem conjunto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/capacidades/calculations-engine",
+      "basePath": "/capacidades/calculations-engine",
+      "heading": "Peças com propósito.\nPossibilidades\nem conjunto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/capacidades/calendar",
+      "basePath": "/capacidades/calendar",
+      "heading": "Peças com propósito.\nPossibilidades\nem conjunto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/capacidades/cms",
+      "basePath": "/capacidades/cms",
+      "heading": "Peças com propósito.\nPossibilidades\nem conjunto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/capacidades/commerce",
+      "basePath": "/capacidades/commerce",
+      "heading": "Peças com propósito.\nPossibilidades\nem conjunto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/capacidades/companies",
+      "basePath": "/capacidades/companies",
+      "heading": "Peças com propósito.\nPossibilidades\nem conjunto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/capacidades/customers",
+      "basePath": "/capacidades/customers",
+      "heading": "Peças com propósito.\nPossibilidades\nem conjunto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/capacidades/data-extraction",
+      "basePath": "/capacidades/data-extraction",
+      "heading": "Peças com propósito.\nPossibilidades\nem conjunto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/capacidades/data-store",
+      "basePath": "/capacidades/data-store",
+      "heading": "Peças com propósito.\nPossibilidades\nem conjunto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/capacidades/decision-engine",
+      "basePath": "/capacidades/decision-engine",
+      "heading": "Peças com propósito.\nPossibilidades\nem conjunto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/capacidades/decision-platform",
+      "basePath": "/capacidades/decision-platform",
+      "heading": "Peças com propósito.\nPossibilidades\nem conjunto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/capacidades/document-template",
+      "basePath": "/capacidades/document-template",
+      "heading": "Peças com propósito.\nPossibilidades\nem conjunto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/capacidades/e-signature",
+      "basePath": "/capacidades/e-signature",
+      "heading": "Peças com propósito.\nPossibilidades\nem conjunto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/capacidades/email",
+      "basePath": "/capacidades/email",
+      "heading": "Peças com propósito.\nPossibilidades\nem conjunto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/capacidades/feature-flags",
+      "basePath": "/capacidades/feature-flags",
+      "heading": "Peças com propósito.\nPossibilidades\nem conjunto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/capacidades/file-storage",
+      "basePath": "/capacidades/file-storage",
+      "heading": "Peças com propósito.\nPossibilidades\nem conjunto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/capacidades/iam",
+      "basePath": "/capacidades/iam",
+      "heading": "Peças com propósito.\nPossibilidades\nem conjunto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/capacidades/meta-account",
+      "basePath": "/capacidades/meta-account",
+      "heading": "Peças com propósito.\nPossibilidades\nem conjunto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/capacidades/open-finance",
+      "basePath": "/capacidades/open-finance",
+      "heading": "Peças com propósito.\nPossibilidades\nem conjunto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/capacidades/payments",
+      "basePath": "/capacidades/payments",
+      "heading": "Peças com propósito.\nPossibilidades\nem conjunto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/capacidades/people",
+      "basePath": "/capacidades/people",
+      "heading": "Peças com propósito.\nPossibilidades\nem conjunto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/capacidades/pricing-engine",
+      "basePath": "/capacidades/pricing-engine",
+      "heading": "Peças com propósito.\nPossibilidades\nem conjunto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/capacidades/products",
+      "basePath": "/capacidades/products",
+      "heading": "Peças com propósito.\nPossibilidades\nem conjunto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/capacidades/rooms",
+      "basePath": "/capacidades/rooms",
+      "heading": "Peças com propósito.\nPossibilidades\nem conjunto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/capacidades/service-attestations",
+      "basePath": "/capacidades/service-attestations",
+      "heading": "Peças com propósito.\nPossibilidades\nem conjunto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/capacidades/slack",
+      "basePath": "/capacidades/slack",
+      "heading": "Peças com propósito.\nPossibilidades\nem conjunto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/capacidades/sso",
+      "basePath": "/capacidades/sso",
+      "heading": "Peças com propósito.\nPossibilidades\nem conjunto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/capacidades/webhooks-engine",
+      "basePath": "/capacidades/webhooks-engine",
+      "heading": "Peças com propósito.\nPossibilidades\nem conjunto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/capacidades/wpp",
+      "basePath": "/capacidades/wpp",
+      "heading": "Peças com propósito.\nPossibilidades\nem conjunto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/capacidades/wpp-business",
+      "basePath": "/capacidades/wpp-business",
+      "heading": "Peças com propósito.\nPossibilidades\nem conjunto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en",
+      "basePath": "/",
+      "heading": "The shape follows\nthe connection.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/design-system",
+      "basePath": "/design-system",
+      "heading": "A shared foundation.\nYour own expressions.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Identidade",
+          "expected": "Identity",
+          "element": "BUTTON"
+        },
+        {
+          "kind": "text",
+          "source": "Continuidade",
+          "expected": "Continuity",
+          "element": "BUTTON"
+        }
+      ]
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/capabilities",
+      "basePath": "/capacidades",
+      "heading": "Pieces with a purpose.\nPossibilities\ntogether.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/vision",
+      "basePath": "/visao",
+      "heading": "Give it shape\nto what comes next\nlater.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/architecture",
+      "basePath": "/arquitetura",
+      "heading": "Less work\nrepeated.\nMore product.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/developers",
+      "basePath": "/desenvolvedores",
+      "heading": "Your code.\nMore possibilities.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/studio",
+      "basePath": "/studio",
+      "heading": "Shape it\nto what it needs\nwork.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/workflows",
+      "basePath": "/workflows",
+      "heading": "The next step\nhas a\nwhy.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/ai-agents",
+      "basePath": "/agentes",
+      "heading": "Understand\nthe context.\nAct with purpose.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/governance",
+      "basePath": "/governanca",
+      "heading": "Trust has\nstructure.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/compositions",
+      "basePath": "/composicoes",
+      "heading": "The connection changes\nthe result.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/ecosystem",
+      "basePath": "/ecossistema",
+      "heading": "The same foundation.\nOther ways to operate.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/ecosystem/banking",
+      "basePath": "/ecossistema/banking",
+      "heading": "One account.\nMany ways\nof operate.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/ecosystem/credit",
+      "basePath": "/ecossistema/credit",
+      "heading": "Credit has a beginning.\nThe operation\ncontinues.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/ecosystem/med",
+      "basePath": "/ecossistema/med",
+      "heading": "Healthcare",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/ecosystem/legal",
+      "basePath": "/ecossistema/juridico",
+      "heading": "Legal",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/ecosystem/recruitment",
+      "basePath": "/ecossistema/recrutamento",
+      "heading": "Recruitment",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/ecosystem/biometrics",
+      "basePath": "/ecossistema/biometrics",
+      "heading": "Biometrics",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/ecosystem/decision",
+      "basePath": "/ecossistema/decision",
+      "heading": "Decision",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/perspectives",
+      "basePath": "/perspectivas",
+      "heading": "The market changes.\nWhat is worth building?",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/perspectives/building-by-composition",
+      "basePath": "/perspectivas/construir-por-composicao",
+      "heading": "Modernize without rebuilding the bank from scratch.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/perspectives/autonomy-and-responsibility",
+      "basePath": "/perspectivas/autonomia-responsabilidade",
+      "heading": "The AI responded. Did the operation happen?",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/perspectives/readable-rules",
+      "basePath": "/perspectivas/regra-legivel",
+      "heading": "Decide fast. Be able to explain it later.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/perspectives/open-finance-from-connection-to-product",
+      "basePath": "/perspectivas/open-finance-da-conexao-ao-produto",
+      "heading": "Connecting data is just the beginning.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/perspectives/resilience-and-freedom-to-evolve",
+      "basePath": "/perspectivas/resiliencia-e-liberdade-de-evoluir",
+      "heading": "What if a component becomes unavailable?",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/interfaces",
+      "basePath": "/interfaces",
+      "heading": "The architecture\nas seen by those who use it.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/press-kit",
+      "basePath": "/press-kit",
+      "heading": "One brand.\nMany expressions.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/sources",
+      "basePath": "/fontes",
+      "heading": "The foundation of the content.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/sitemap",
+      "basePath": "/mapa",
+      "heading": "All connections.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/contact",
+      "basePath": "/contato",
+      "heading": "Let's shape it\nto the next\nconversation.",
+      "missing": [
+        "Uma ideia merece espaço.",
+        "Experiência",
+        "Construção",
+        "No active session"
+      ],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/lab",
+      "basePath": "/lab",
+      "heading": "What you\nwants build?",
+      "missing": [
+        "No active session"
+      ],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/privacy-policy",
+      "basePath": "/politica-privacidade",
+      "heading": "Privacy Policy",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/terms",
+      "basePath": "/termos",
+      "heading": "Terms of Service",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/capabilities/ai-engine",
+      "basePath": "/capacidades/ai-engine",
+      "heading": "Pieces with a purpose.\nPossibilities\ntogether.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/capabilities/analytics",
+      "basePath": "/capacidades/analytics",
+      "heading": "Pieces with a purpose.\nPossibilities\ntogether.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/capabilities/api-keys",
+      "basePath": "/capacidades/api-keys",
+      "heading": "Pieces with a purpose.\nPossibilities\ntogether.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/capabilities/audit-trail",
+      "basePath": "/capacidades/audit-trail",
+      "heading": "Pieces with a purpose.\nPossibilities\ntogether.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/capabilities/baas",
+      "basePath": "/capacidades/baas",
+      "heading": "Pieces with a purpose.\nPossibilities\ntogether.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/capabilities/banking",
+      "basePath": "/capacidades/banking",
+      "heading": "Pieces with a purpose.\nPossibilities\ntogether.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/capabilities/banking-product-portfolio",
+      "basePath": "/capacidades/banking-product-portfolio",
+      "heading": "Pieces with a purpose.\nPossibilities\ntogether.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/capabilities/billing",
+      "basePath": "/capacidades/billing",
+      "heading": "Pieces with a purpose.\nPossibilities\ntogether.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/capabilities/biometrics",
+      "basePath": "/capacidades/biometrics",
+      "heading": "Pieces with a purpose.\nPossibilities\ntogether.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/capabilities/bureaus",
+      "basePath": "/capacidades/bureaus",
+      "heading": "Pieces with a purpose.\nPossibilities\ntogether.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/capabilities/calculations-engine",
+      "basePath": "/capacidades/calculations-engine",
+      "heading": "Pieces with a purpose.\nPossibilities\ntogether.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/capabilities/calendar",
+      "basePath": "/capacidades/calendar",
+      "heading": "Pieces with a purpose.\nPossibilities\ntogether.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/capabilities/cms",
+      "basePath": "/capacidades/cms",
+      "heading": "Pieces with a purpose.\nPossibilities\ntogether.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/capabilities/commerce",
+      "basePath": "/capacidades/commerce",
+      "heading": "Pieces with a purpose.\nPossibilities\ntogether.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/capabilities/companies",
+      "basePath": "/capacidades/companies",
+      "heading": "Pieces with a purpose.\nPossibilities\ntogether.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/capabilities/customers",
+      "basePath": "/capacidades/customers",
+      "heading": "Pieces with a purpose.\nPossibilities\ntogether.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/capabilities/data-extraction",
+      "basePath": "/capacidades/data-extraction",
+      "heading": "Pieces with a purpose.\nPossibilities\ntogether.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/capabilities/data-store",
+      "basePath": "/capacidades/data-store",
+      "heading": "Pieces with a purpose.\nPossibilities\ntogether.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/capabilities/decision-engine",
+      "basePath": "/capacidades/decision-engine",
+      "heading": "Pieces with a purpose.\nPossibilities\ntogether.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/capabilities/decision-platform",
+      "basePath": "/capacidades/decision-platform",
+      "heading": "Pieces with a purpose.\nPossibilities\ntogether.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/capabilities/document-template",
+      "basePath": "/capacidades/document-template",
+      "heading": "Pieces with a purpose.\nPossibilities\ntogether.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/capabilities/e-signature",
+      "basePath": "/capacidades/e-signature",
+      "heading": "Pieces with a purpose.\nPossibilities\ntogether.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/capabilities/email",
+      "basePath": "/capacidades/email",
+      "heading": "Pieces with a purpose.\nPossibilities\ntogether.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/capabilities/feature-flags",
+      "basePath": "/capacidades/feature-flags",
+      "heading": "Pieces with a purpose.\nPossibilities\ntogether.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/capabilities/file-storage",
+      "basePath": "/capacidades/file-storage",
+      "heading": "Pieces with a purpose.\nPossibilities\ntogether.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/capabilities/iam",
+      "basePath": "/capacidades/iam",
+      "heading": "Pieces with a purpose.\nPossibilities\ntogether.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/capabilities/meta-account",
+      "basePath": "/capacidades/meta-account",
+      "heading": "Pieces with a purpose.\nPossibilities\ntogether.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/capabilities/open-finance",
+      "basePath": "/capacidades/open-finance",
+      "heading": "Pieces with a purpose.\nPossibilities\ntogether.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/capabilities/payments",
+      "basePath": "/capacidades/payments",
+      "heading": "Pieces with a purpose.\nPossibilities\ntogether.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/capabilities/people",
+      "basePath": "/capacidades/people",
+      "heading": "Pieces with a purpose.\nPossibilities\ntogether.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/capabilities/pricing-engine",
+      "basePath": "/capacidades/pricing-engine",
+      "heading": "Pieces with a purpose.\nPossibilities\ntogether.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/capabilities/products",
+      "basePath": "/capacidades/products",
+      "heading": "Pieces with a purpose.\nPossibilities\ntogether.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/capabilities/rooms",
+      "basePath": "/capacidades/rooms",
+      "heading": "Pieces with a purpose.\nPossibilities\ntogether.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/capabilities/service-attestations",
+      "basePath": "/capacidades/service-attestations",
+      "heading": "Pieces with a purpose.\nPossibilities\ntogether.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/capabilities/slack",
+      "basePath": "/capacidades/slack",
+      "heading": "Pieces with a purpose.\nPossibilities\ntogether.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/capabilities/sso",
+      "basePath": "/capacidades/sso",
+      "heading": "Pieces with a purpose.\nPossibilities\ntogether.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/capabilities/webhooks-engine",
+      "basePath": "/capacidades/webhooks-engine",
+      "heading": "Pieces with a purpose.\nPossibilities\ntogether.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/capabilities/wpp",
+      "basePath": "/capacidades/wpp",
+      "heading": "Pieces with a purpose.\nPossibilities\ntogether.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/capabilities/wpp-business",
+      "basePath": "/capacidades/wpp-business",
+      "heading": "Pieces with a purpose.\nPossibilities\ntogether.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de",
+      "basePath": "/",
+      "heading": "Die Form folgt\ndie Verbindung.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/designsystem",
+      "basePath": "/design-system",
+      "heading": "Eine gemeinsame Basis.\nEigene Ausdrucksformen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Identidade",
+          "expected": "Identität",
+          "element": "BUTTON"
+        },
+        {
+          "kind": "text",
+          "source": "Continuidade",
+          "expected": "Kontinuität",
+          "element": "BUTTON"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/faehigkeiten",
+      "basePath": "/capacidades",
+      "heading": "Bausteine mit Zweck.\nMöglichkeiten\ngemeinsam.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/vision",
+      "basePath": "/visao",
+      "heading": "Gestalten\nauf das, was kommt\ndanach.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/architektur",
+      "basePath": "/arquitetura",
+      "heading": "Weniger Aufwand\nwiederholt.\nMehr Produkt.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/entwickler",
+      "basePath": "/desenvolvedores",
+      "heading": "Ihr Code.\nMehr Möglichkeiten.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/studio",
+      "basePath": "/studio",
+      "heading": "Gestalten Sie\nauf das, was nötig ist\nfunktionieren.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/workflows",
+      "basePath": "/workflows",
+      "heading": "Der nächste Schritt\nhat eine\ndas Warum.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/ki-agenten",
+      "basePath": "/agentes",
+      "heading": "Verstehen\nden Kontext.\nMit Sinn handeln.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/governance",
+      "basePath": "/governanca",
+      "heading": "Vertrauen hat\nStruktur.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "SPAN"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/kompositionen",
+      "basePath": "/composicoes",
+      "heading": "Die Verbindung ändert sich\ndas Ergebnis.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/oekosystem",
+      "basePath": "/ecossistema",
+      "heading": "Dieselbe Grundlage.\nWeitere Betriebsmodelle.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/oekosystem/banking",
+      "basePath": "/ecossistema/banking",
+      "heading": "Ein Konto.\nViele Formen\nvon betreiben.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "SMALL"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/oekosystem/credit",
+      "basePath": "/ecossistema/credit",
+      "heading": "Kredit hat einen Anfang.\nDer Betrieb\ngeht weiter.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/oekosystem/med",
+      "basePath": "/ecossistema/med",
+      "heading": "Gesundheit",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/oekosystem/recht",
+      "basePath": "/ecossistema/juridico",
+      "heading": "Recht",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/oekosystem/recruiting",
+      "basePath": "/ecossistema/recrutamento",
+      "heading": "Personalgewinnung",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/oekosystem/biometrics",
+      "basePath": "/ecossistema/biometrics",
+      "heading": "Biometrie",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/oekosystem/decision",
+      "basePath": "/ecossistema/decision",
+      "heading": "Entscheidungen",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/perspektiven",
+      "basePath": "/perspectivas",
+      "heading": "Der Markt verändert sich.\nWas lohnt sich zu bauen?",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/perspektiven/aufbau-durch-komposition",
+      "basePath": "/perspectivas/construir-por-composicao",
+      "heading": "Modernisieren, ohne die Bank neu aufzubauen.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/perspektiven/autonomie-und-verantwortung",
+      "basePath": "/perspectivas/autonomia-responsabilidade",
+      "heading": "Die KI hat geantwortet. Hat der Vorgang tatsächlich stattgefunden?",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/perspektiven/lesbare-regeln",
+      "basePath": "/perspectivas/regra-legivel",
+      "heading": "Schnell entscheiden. Später erklären können.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/perspektiven/open-finance-von-der-verbindung-zum-produkt",
+      "basePath": "/perspectivas/open-finance-da-conexao-ao-produto",
+      "heading": "Daten zu verbinden ist erst der Anfang.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/perspektiven/resilienz-und-freiheit-zur-weiterentwicklung",
+      "basePath": "/perspectivas/resiliencia-e-liberdade-de-evoluir",
+      "heading": "Und wenn ein Baustein nicht verfügbar ist?",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/oberflaechen",
+      "basePath": "/interfaces",
+      "heading": "Die Architektur\naus Sicht der Nutzer.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/pressekit",
+      "basePath": "/press-kit",
+      "heading": "Eine Marke.\nViele Ausdrücke.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/quellen",
+      "basePath": "/fontes",
+      "heading": "Die Grundlage des Inhalts.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/sitemap",
+      "basePath": "/mapa",
+      "heading": "Alle Verbindungen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "A"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/kontakt",
+      "basePath": "/contato",
+      "heading": "Lassen Sie uns Gestalt geben\nzur nächsten\nGespräch.",
+      "missing": [
+        "Uma ideia merece espaço.",
+        "Experiência",
+        "Construção",
+        "No active session"
+      ],
+      "untranslated": []
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/lab",
+      "basePath": "/lab",
+      "heading": "Was Sie\nwill aufbauen?",
+      "missing": [
+        "No active session"
+      ],
+      "untranslated": []
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/datenschutz",
+      "basePath": "/politica-privacidade",
+      "heading": "Datenschutzerklärung",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/nutzungsbedingungen",
+      "basePath": "/termos",
+      "heading": "Nutzungsbedingungen",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/faehigkeiten/ai-engine",
+      "basePath": "/capacidades/ai-engine",
+      "heading": "Bausteine mit Zweck.\nMöglichkeiten\ngemeinsam.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/faehigkeiten/analytics",
+      "basePath": "/capacidades/analytics",
+      "heading": "Bausteine mit Zweck.\nMöglichkeiten\ngemeinsam.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/faehigkeiten/api-keys",
+      "basePath": "/capacidades/api-keys",
+      "heading": "Bausteine mit Zweck.\nMöglichkeiten\ngemeinsam.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/faehigkeiten/audit-trail",
+      "basePath": "/capacidades/audit-trail",
+      "heading": "Bausteine mit Zweck.\nMöglichkeiten\ngemeinsam.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/faehigkeiten/baas",
+      "basePath": "/capacidades/baas",
+      "heading": "Bausteine mit Zweck.\nMöglichkeiten\ngemeinsam.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/faehigkeiten/banking",
+      "basePath": "/capacidades/banking",
+      "heading": "Bausteine mit Zweck.\nMöglichkeiten\ngemeinsam.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/faehigkeiten/banking-product-portfolio",
+      "basePath": "/capacidades/banking-product-portfolio",
+      "heading": "Bausteine mit Zweck.\nMöglichkeiten\ngemeinsam.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/faehigkeiten/billing",
+      "basePath": "/capacidades/billing",
+      "heading": "Bausteine mit Zweck.\nMöglichkeiten\ngemeinsam.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/faehigkeiten/biometrics",
+      "basePath": "/capacidades/biometrics",
+      "heading": "Bausteine mit Zweck.\nMöglichkeiten\ngemeinsam.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/faehigkeiten/bureaus",
+      "basePath": "/capacidades/bureaus",
+      "heading": "Bausteine mit Zweck.\nMöglichkeiten\ngemeinsam.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/faehigkeiten/calculations-engine",
+      "basePath": "/capacidades/calculations-engine",
+      "heading": "Bausteine mit Zweck.\nMöglichkeiten\ngemeinsam.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/faehigkeiten/calendar",
+      "basePath": "/capacidades/calendar",
+      "heading": "Bausteine mit Zweck.\nMöglichkeiten\ngemeinsam.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/faehigkeiten/cms",
+      "basePath": "/capacidades/cms",
+      "heading": "Bausteine mit Zweck.\nMöglichkeiten\ngemeinsam.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/faehigkeiten/commerce",
+      "basePath": "/capacidades/commerce",
+      "heading": "Bausteine mit Zweck.\nMöglichkeiten\ngemeinsam.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/faehigkeiten/companies",
+      "basePath": "/capacidades/companies",
+      "heading": "Bausteine mit Zweck.\nMöglichkeiten\ngemeinsam.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/faehigkeiten/customers",
+      "basePath": "/capacidades/customers",
+      "heading": "Bausteine mit Zweck.\nMöglichkeiten\ngemeinsam.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/faehigkeiten/data-extraction",
+      "basePath": "/capacidades/data-extraction",
+      "heading": "Bausteine mit Zweck.\nMöglichkeiten\ngemeinsam.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/faehigkeiten/data-store",
+      "basePath": "/capacidades/data-store",
+      "heading": "Bausteine mit Zweck.\nMöglichkeiten\ngemeinsam.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/faehigkeiten/decision-engine",
+      "basePath": "/capacidades/decision-engine",
+      "heading": "Bausteine mit Zweck.\nMöglichkeiten\ngemeinsam.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/faehigkeiten/decision-platform",
+      "basePath": "/capacidades/decision-platform",
+      "heading": "Bausteine mit Zweck.\nMöglichkeiten\ngemeinsam.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/faehigkeiten/document-template",
+      "basePath": "/capacidades/document-template",
+      "heading": "Bausteine mit Zweck.\nMöglichkeiten\ngemeinsam.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/faehigkeiten/e-signature",
+      "basePath": "/capacidades/e-signature",
+      "heading": "Bausteine mit Zweck.\nMöglichkeiten\ngemeinsam.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/faehigkeiten/email",
+      "basePath": "/capacidades/email",
+      "heading": "Bausteine mit Zweck.\nMöglichkeiten\ngemeinsam.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/faehigkeiten/feature-flags",
+      "basePath": "/capacidades/feature-flags",
+      "heading": "Bausteine mit Zweck.\nMöglichkeiten\ngemeinsam.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/faehigkeiten/file-storage",
+      "basePath": "/capacidades/file-storage",
+      "heading": "Bausteine mit Zweck.\nMöglichkeiten\ngemeinsam.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/faehigkeiten/iam",
+      "basePath": "/capacidades/iam",
+      "heading": "Bausteine mit Zweck.\nMöglichkeiten\ngemeinsam.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/faehigkeiten/meta-account",
+      "basePath": "/capacidades/meta-account",
+      "heading": "Bausteine mit Zweck.\nMöglichkeiten\ngemeinsam.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/faehigkeiten/open-finance",
+      "basePath": "/capacidades/open-finance",
+      "heading": "Bausteine mit Zweck.\nMöglichkeiten\ngemeinsam.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/faehigkeiten/payments",
+      "basePath": "/capacidades/payments",
+      "heading": "Bausteine mit Zweck.\nMöglichkeiten\ngemeinsam.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/faehigkeiten/people",
+      "basePath": "/capacidades/people",
+      "heading": "Bausteine mit Zweck.\nMöglichkeiten\ngemeinsam.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/faehigkeiten/pricing-engine",
+      "basePath": "/capacidades/pricing-engine",
+      "heading": "Bausteine mit Zweck.\nMöglichkeiten\ngemeinsam.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/faehigkeiten/products",
+      "basePath": "/capacidades/products",
+      "heading": "Bausteine mit Zweck.\nMöglichkeiten\ngemeinsam.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/faehigkeiten/rooms",
+      "basePath": "/capacidades/rooms",
+      "heading": "Bausteine mit Zweck.\nMöglichkeiten\ngemeinsam.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/faehigkeiten/service-attestations",
+      "basePath": "/capacidades/service-attestations",
+      "heading": "Bausteine mit Zweck.\nMöglichkeiten\ngemeinsam.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/faehigkeiten/slack",
+      "basePath": "/capacidades/slack",
+      "heading": "Bausteine mit Zweck.\nMöglichkeiten\ngemeinsam.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/faehigkeiten/sso",
+      "basePath": "/capacidades/sso",
+      "heading": "Bausteine mit Zweck.\nMöglichkeiten\ngemeinsam.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/faehigkeiten/webhooks-engine",
+      "basePath": "/capacidades/webhooks-engine",
+      "heading": "Bausteine mit Zweck.\nMöglichkeiten\ngemeinsam.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/faehigkeiten/wpp",
+      "basePath": "/capacidades/wpp",
+      "heading": "Bausteine mit Zweck.\nMöglichkeiten\ngemeinsam.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/faehigkeiten/wpp-business",
+      "basePath": "/capacidades/wpp-business",
+      "heading": "Bausteine mit Zweck.\nMöglichkeiten\ngemeinsam.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es",
+      "basePath": "/",
+      "heading": "La forma sigue\nla conexión.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/sistema-de-diseno",
+      "basePath": "/design-system",
+      "heading": "Una base común.\nExpresiones propias.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Identidade",
+          "expected": "Identidad",
+          "element": "BUTTON"
+        },
+        {
+          "kind": "text",
+          "source": "Continuidade",
+          "expected": "Continuidad",
+          "element": "BUTTON"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/capacidades",
+      "basePath": "/capacidades",
+      "heading": "Piezas con propósito.\nPosibilidades\nen conjunto.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/vision",
+      "basePath": "/visao",
+      "heading": "Dar forma\na lo que viene\ndespués.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/arquitectura",
+      "basePath": "/arquitetura",
+      "heading": "Menos trabajo\nrepetido.\nMás producto.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/desarrolladores",
+      "basePath": "/desenvolvedores",
+      "heading": "Tu código.\nMás posibilidades.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/studio",
+      "basePath": "/studio",
+      "heading": "Da forma\na lo que necesita\nfuncionar.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/workflows",
+      "basePath": "/workflows",
+      "heading": "El siguiente paso\ntiene un\nporqué.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/agentes-ia",
+      "basePath": "/agentes",
+      "heading": "Entender\nel contexto.\nActuar con sentido.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/gobernanza",
+      "basePath": "/governanca",
+      "heading": "La confianza tiene\nestructura.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "SPAN"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/composiciones",
+      "basePath": "/composicoes",
+      "heading": "La conexión cambia\nel resultado.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/ecosistema",
+      "basePath": "/ecossistema",
+      "heading": "El mismo fundamento.\nOtras formas de operar.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/ecosistema/banking",
+      "basePath": "/ecossistema/banking",
+      "heading": "Una cuenta.\nVarias formas\nde operar.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "SMALL"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/ecosistema/credit",
+      "basePath": "/ecossistema/credit",
+      "heading": "El crédito tiene un comienzo.\nLa operación\ncontinúa.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/ecosistema/med",
+      "basePath": "/ecossistema/med",
+      "heading": "Salud",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/ecosistema/juridico",
+      "basePath": "/ecossistema/juridico",
+      "heading": "Servicios jurídicos",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/ecosistema/reclutamiento",
+      "basePath": "/ecossistema/recrutamento",
+      "heading": "Selección de personal",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/ecosistema/biometrics",
+      "basePath": "/ecossistema/biometrics",
+      "heading": "Biometría",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/ecosistema/decision",
+      "basePath": "/ecossistema/decision",
+      "heading": "Decisión",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/perspectivas",
+      "basePath": "/perspectivas",
+      "heading": "El mercado cambia.\n¿Qué merece la pena construir?",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/perspectivas/construir-por-composicion",
+      "basePath": "/perspectivas/construir-por-composicao",
+      "heading": "Modernizar sin rehacer el banco desde cero.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/perspectivas/autonomia-y-responsabilidad",
+      "basePath": "/perspectivas/autonomia-responsabilidade",
+      "heading": "La IA respondió. ¿Se realizó la operación?",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/perspectivas/reglas-legibles",
+      "basePath": "/perspectivas/regra-legivel",
+      "heading": "Decidir rápido. Poder explicarlo después.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/perspectivas/open-finance-de-la-conexion-al-producto",
+      "basePath": "/perspectivas/open-finance-da-conexao-ao-produto",
+      "heading": "Conectar datos es solo el comienzo.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/perspectivas/resiliencia-y-libertad-para-evolucionar",
+      "basePath": "/perspectivas/resiliencia-e-liberdade-de-evoluir",
+      "heading": "¿Y si una pieza deja de estar disponible?",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/interfaces",
+      "basePath": "/interfaces",
+      "heading": "La arquitectura\nvista por quien la usa.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/kit-de-prensa",
+      "basePath": "/press-kit",
+      "heading": "Una marca.\nMuchas expresiones.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/fuentes",
+      "basePath": "/fontes",
+      "heading": "La base del contenido.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/mapa-del-sitio",
+      "basePath": "/mapa",
+      "heading": "Todas las conexiones.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "A"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/contacto",
+      "basePath": "/contato",
+      "heading": "Démosle forma\na la siguiente\nconversación.",
+      "missing": [
+        "Uma ideia merece espaço.",
+        "Experiência",
+        "Construção",
+        "No active session"
+      ],
+      "untranslated": []
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/lab",
+      "basePath": "/lab",
+      "heading": "Lo que usted\nquiere construir?",
+      "missing": [
+        "No active session"
+      ],
+      "untranslated": []
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/politica-de-privacidad",
+      "basePath": "/politica-privacidade",
+      "heading": "Política de Privacidad",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/terminos",
+      "basePath": "/termos",
+      "heading": "Términos de uso",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/capacidades/ai-engine",
+      "basePath": "/capacidades/ai-engine",
+      "heading": "Piezas con propósito.\nPosibilidades\nen conjunto.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/capacidades/analytics",
+      "basePath": "/capacidades/analytics",
+      "heading": "Piezas con propósito.\nPosibilidades\nen conjunto.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/capacidades/api-keys",
+      "basePath": "/capacidades/api-keys",
+      "heading": "Piezas con propósito.\nPosibilidades\nen conjunto.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/capacidades/audit-trail",
+      "basePath": "/capacidades/audit-trail",
+      "heading": "Piezas con propósito.\nPosibilidades\nen conjunto.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/capacidades/baas",
+      "basePath": "/capacidades/baas",
+      "heading": "Piezas con propósito.\nPosibilidades\nen conjunto.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/capacidades/banking",
+      "basePath": "/capacidades/banking",
+      "heading": "Piezas con propósito.\nPosibilidades\nen conjunto.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/capacidades/banking-product-portfolio",
+      "basePath": "/capacidades/banking-product-portfolio",
+      "heading": "Piezas con propósito.\nPosibilidades\nen conjunto.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/capacidades/billing",
+      "basePath": "/capacidades/billing",
+      "heading": "Piezas con propósito.\nPosibilidades\nen conjunto.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/capacidades/biometrics",
+      "basePath": "/capacidades/biometrics",
+      "heading": "Piezas con propósito.\nPosibilidades\nen conjunto.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/capacidades/bureaus",
+      "basePath": "/capacidades/bureaus",
+      "heading": "Piezas con propósito.\nPosibilidades\nen conjunto.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/capacidades/calculations-engine",
+      "basePath": "/capacidades/calculations-engine",
+      "heading": "Piezas con propósito.\nPosibilidades\nen conjunto.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/capacidades/calendar",
+      "basePath": "/capacidades/calendar",
+      "heading": "Piezas con propósito.\nPosibilidades\nen conjunto.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/capacidades/cms",
+      "basePath": "/capacidades/cms",
+      "heading": "Piezas con propósito.\nPosibilidades\nen conjunto.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/capacidades/commerce",
+      "basePath": "/capacidades/commerce",
+      "heading": "Piezas con propósito.\nPosibilidades\nen conjunto.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/capacidades/companies",
+      "basePath": "/capacidades/companies",
+      "heading": "Piezas con propósito.\nPosibilidades\nen conjunto.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/capacidades/customers",
+      "basePath": "/capacidades/customers",
+      "heading": "Piezas con propósito.\nPosibilidades\nen conjunto.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/capacidades/data-extraction",
+      "basePath": "/capacidades/data-extraction",
+      "heading": "Piezas con propósito.\nPosibilidades\nen conjunto.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/capacidades/data-store",
+      "basePath": "/capacidades/data-store",
+      "heading": "Piezas con propósito.\nPosibilidades\nen conjunto.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/capacidades/decision-engine",
+      "basePath": "/capacidades/decision-engine",
+      "heading": "Piezas con propósito.\nPosibilidades\nen conjunto.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/capacidades/decision-platform",
+      "basePath": "/capacidades/decision-platform",
+      "heading": "Piezas con propósito.\nPosibilidades\nen conjunto.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/capacidades/document-template",
+      "basePath": "/capacidades/document-template",
+      "heading": "Piezas con propósito.\nPosibilidades\nen conjunto.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/capacidades/e-signature",
+      "basePath": "/capacidades/e-signature",
+      "heading": "Piezas con propósito.\nPosibilidades\nen conjunto.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/capacidades/email",
+      "basePath": "/capacidades/email",
+      "heading": "Piezas con propósito.\nPosibilidades\nen conjunto.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/capacidades/feature-flags",
+      "basePath": "/capacidades/feature-flags",
+      "heading": "Piezas con propósito.\nPosibilidades\nen conjunto.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/capacidades/file-storage",
+      "basePath": "/capacidades/file-storage",
+      "heading": "Piezas con propósito.\nPosibilidades\nen conjunto.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/capacidades/iam",
+      "basePath": "/capacidades/iam",
+      "heading": "Piezas con propósito.\nPosibilidades\nen conjunto.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/capacidades/meta-account",
+      "basePath": "/capacidades/meta-account",
+      "heading": "Piezas con propósito.\nPosibilidades\nen conjunto.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/capacidades/open-finance",
+      "basePath": "/capacidades/open-finance",
+      "heading": "Piezas con propósito.\nPosibilidades\nen conjunto.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/capacidades/payments",
+      "basePath": "/capacidades/payments",
+      "heading": "Piezas con propósito.\nPosibilidades\nen conjunto.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/capacidades/people",
+      "basePath": "/capacidades/people",
+      "heading": "Piezas con propósito.\nPosibilidades\nen conjunto.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/capacidades/pricing-engine",
+      "basePath": "/capacidades/pricing-engine",
+      "heading": "Piezas con propósito.\nPosibilidades\nen conjunto.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/capacidades/products",
+      "basePath": "/capacidades/products",
+      "heading": "Piezas con propósito.\nPosibilidades\nen conjunto.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/capacidades/rooms",
+      "basePath": "/capacidades/rooms",
+      "heading": "Piezas con propósito.\nPosibilidades\nen conjunto.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/capacidades/service-attestations",
+      "basePath": "/capacidades/service-attestations",
+      "heading": "Piezas con propósito.\nPosibilidades\nen conjunto.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/capacidades/slack",
+      "basePath": "/capacidades/slack",
+      "heading": "Piezas con propósito.\nPosibilidades\nen conjunto.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/capacidades/sso",
+      "basePath": "/capacidades/sso",
+      "heading": "Piezas con propósito.\nPosibilidades\nen conjunto.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/capacidades/webhooks-engine",
+      "basePath": "/capacidades/webhooks-engine",
+      "heading": "Piezas con propósito.\nPosibilidades\nen conjunto.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/capacidades/wpp",
+      "basePath": "/capacidades/wpp",
+      "heading": "Piezas con propósito.\nPosibilidades\nen conjunto.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/capacidades/wpp-business",
+      "basePath": "/capacidades/wpp-business",
+      "heading": "Piezas con propósito.\nPosibilidades\nen conjunto.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometría",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da",
+      "basePath": "/",
+      "heading": "Formen følger\nforbindelsen.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/designsystem",
+      "basePath": "/design-system",
+      "heading": "Et fælles fundament.\nEgne udtryk.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Identidade",
+          "expected": "Identitet",
+          "element": "BUTTON"
+        },
+        {
+          "kind": "text",
+          "source": "Continuidade",
+          "expected": "Kontinuitet",
+          "element": "BUTTON"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/funktioner",
+      "basePath": "/capacidades",
+      "heading": "Brikker med et formål.\nMuligheder\ni fællesskab.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/vision",
+      "basePath": "/visao",
+      "heading": "Giv form\ntil det, der kommer\nbagefter.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/arkitektur",
+      "basePath": "/arquitetura",
+      "heading": "Mindre arbejde\ngentaget.\nMere produkt.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/udviklere",
+      "basePath": "/desenvolvedores",
+      "heading": "Din kode.\nMere muligheder.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/studio",
+      "basePath": "/studio",
+      "heading": "Giv form\ntil det nødvendige\nfungere.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/workflows",
+      "basePath": "/workflows",
+      "heading": "Næste skridt\nhar en\nhvorfor.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/ai-agenter",
+      "basePath": "/agentes",
+      "heading": "Forstå\nkonteksten.\nHandl med mening.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/governance",
+      "basePath": "/governanca",
+      "heading": "Tillid har\nstruktur.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "SPAN"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/sammensaetninger",
+      "basePath": "/composicoes",
+      "heading": "Forbindelsen ændrer sig\nresultatet.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/oekosystem",
+      "basePath": "/ecossistema",
+      "heading": "Det samme fundament.\nAndre måder at drive forretning på.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/oekosystem/banking",
+      "basePath": "/ecossistema/banking",
+      "heading": "Én konto.\nMange former\naf drive.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "SMALL"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/oekosystem/credit",
+      "basePath": "/ecossistema/credit",
+      "heading": "Kredit har en begyndelse.\nDriften\nfortsætter.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/oekosystem/med",
+      "basePath": "/ecossistema/med",
+      "heading": "Sundhed",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/oekosystem/jura",
+      "basePath": "/ecossistema/juridico",
+      "heading": "Jura",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/oekosystem/rekruttering",
+      "basePath": "/ecossistema/recrutamento",
+      "heading": "Rekruttering",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/oekosystem/biometrics",
+      "basePath": "/ecossistema/biometrics",
+      "heading": "Biometri",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/oekosystem/decision",
+      "basePath": "/ecossistema/decision",
+      "heading": "Beslutning",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/perspektiver",
+      "basePath": "/perspectivas",
+      "heading": "Markedet ændrer sig.\nHvad er værd at bygge?",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/perspektiver/byg-med-sammensaetning",
+      "basePath": "/perspectivas/construir-por-composicao",
+      "heading": "Modernisér uden at starte banken forfra.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/perspektiver/autonomi-og-ansvar",
+      "basePath": "/perspectivas/autonomia-responsabilidade",
+      "heading": "AI'en svarede. Blev handlingen udført?",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/perspektiver/laesbare-regler",
+      "basePath": "/perspectivas/regra-legivel",
+      "heading": "Beslut hurtigt. Kunne forklare bagefter.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/perspektiver/open-finance-fra-forbindelse-til-produkt",
+      "basePath": "/perspectivas/open-finance-da-conexao-ao-produto",
+      "heading": "At forbinde data er kun begyndelsen.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/perspektiver/robusthed-og-frihed-til-at-udvikle",
+      "basePath": "/perspectivas/resiliencia-e-liberdade-de-evoluir",
+      "heading": "Hvad hvis en byggeklods bliver utilgængelig?",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/brugerflader",
+      "basePath": "/interfaces",
+      "heading": "Arkitekturen\nset af dem, der bruger den.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/pressekit",
+      "basePath": "/press-kit",
+      "heading": "Ét brand.\nMange udtryk.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/kilder",
+      "basePath": "/fontes",
+      "heading": "Grundlaget for indholdet.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/sitemap",
+      "basePath": "/mapa",
+      "heading": "Alle forbindelser.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "A"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/kontakt",
+      "basePath": "/contato",
+      "heading": "Lad os give det form\ntil den næste\nsamtale.",
+      "missing": [
+        "Uma ideia merece espaço.",
+        "Experiência",
+        "Construção",
+        "No active session"
+      ],
+      "untranslated": []
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/lab",
+      "basePath": "/lab",
+      "heading": "Hvad du\nvil bygge?",
+      "missing": [
+        "No active session"
+      ],
+      "untranslated": []
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/privatlivspolitik",
+      "basePath": "/politica-privacidade",
+      "heading": "Privatlivspolitik",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/vilkaar",
+      "basePath": "/termos",
+      "heading": "Brugsvilkår",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/funktioner/ai-engine",
+      "basePath": "/capacidades/ai-engine",
+      "heading": "Brikker med et formål.\nMuligheder\ni fællesskab.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/funktioner/analytics",
+      "basePath": "/capacidades/analytics",
+      "heading": "Brikker med et formål.\nMuligheder\ni fællesskab.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/funktioner/api-keys",
+      "basePath": "/capacidades/api-keys",
+      "heading": "Brikker med et formål.\nMuligheder\ni fællesskab.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/funktioner/audit-trail",
+      "basePath": "/capacidades/audit-trail",
+      "heading": "Brikker med et formål.\nMuligheder\ni fællesskab.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/funktioner/baas",
+      "basePath": "/capacidades/baas",
+      "heading": "Brikker med et formål.\nMuligheder\ni fællesskab.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/funktioner/banking",
+      "basePath": "/capacidades/banking",
+      "heading": "Brikker med et formål.\nMuligheder\ni fællesskab.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/funktioner/banking-product-portfolio",
+      "basePath": "/capacidades/banking-product-portfolio",
+      "heading": "Brikker med et formål.\nMuligheder\ni fællesskab.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/funktioner/billing",
+      "basePath": "/capacidades/billing",
+      "heading": "Brikker med et formål.\nMuligheder\ni fællesskab.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/funktioner/biometrics",
+      "basePath": "/capacidades/biometrics",
+      "heading": "Brikker med et formål.\nMuligheder\ni fællesskab.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/funktioner/bureaus",
+      "basePath": "/capacidades/bureaus",
+      "heading": "Brikker med et formål.\nMuligheder\ni fællesskab.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/funktioner/calculations-engine",
+      "basePath": "/capacidades/calculations-engine",
+      "heading": "Brikker med et formål.\nMuligheder\ni fællesskab.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/funktioner/calendar",
+      "basePath": "/capacidades/calendar",
+      "heading": "Brikker med et formål.\nMuligheder\ni fællesskab.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/funktioner/cms",
+      "basePath": "/capacidades/cms",
+      "heading": "Brikker med et formål.\nMuligheder\ni fællesskab.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/funktioner/commerce",
+      "basePath": "/capacidades/commerce",
+      "heading": "Brikker med et formål.\nMuligheder\ni fællesskab.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/funktioner/companies",
+      "basePath": "/capacidades/companies",
+      "heading": "Brikker med et formål.\nMuligheder\ni fællesskab.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/funktioner/customers",
+      "basePath": "/capacidades/customers",
+      "heading": "Brikker med et formål.\nMuligheder\ni fællesskab.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/funktioner/data-extraction",
+      "basePath": "/capacidades/data-extraction",
+      "heading": "Brikker med et formål.\nMuligheder\ni fællesskab.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/funktioner/data-store",
+      "basePath": "/capacidades/data-store",
+      "heading": "Brikker med et formål.\nMuligheder\ni fællesskab.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/funktioner/decision-engine",
+      "basePath": "/capacidades/decision-engine",
+      "heading": "Brikker med et formål.\nMuligheder\ni fællesskab.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/funktioner/decision-platform",
+      "basePath": "/capacidades/decision-platform",
+      "heading": "Brikker med et formål.\nMuligheder\ni fællesskab.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/funktioner/document-template",
+      "basePath": "/capacidades/document-template",
+      "heading": "Brikker med et formål.\nMuligheder\ni fællesskab.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/funktioner/e-signature",
+      "basePath": "/capacidades/e-signature",
+      "heading": "Brikker med et formål.\nMuligheder\ni fællesskab.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/funktioner/email",
+      "basePath": "/capacidades/email",
+      "heading": "Brikker med et formål.\nMuligheder\ni fællesskab.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/funktioner/feature-flags",
+      "basePath": "/capacidades/feature-flags",
+      "heading": "Brikker med et formål.\nMuligheder\ni fællesskab.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/funktioner/file-storage",
+      "basePath": "/capacidades/file-storage",
+      "heading": "Brikker med et formål.\nMuligheder\ni fællesskab.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/funktioner/iam",
+      "basePath": "/capacidades/iam",
+      "heading": "Brikker med et formål.\nMuligheder\ni fællesskab.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/funktioner/meta-account",
+      "basePath": "/capacidades/meta-account",
+      "heading": "Brikker med et formål.\nMuligheder\ni fællesskab.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/funktioner/open-finance",
+      "basePath": "/capacidades/open-finance",
+      "heading": "Brikker med et formål.\nMuligheder\ni fællesskab.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/funktioner/payments",
+      "basePath": "/capacidades/payments",
+      "heading": "Brikker med et formål.\nMuligheder\ni fællesskab.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/funktioner/people",
+      "basePath": "/capacidades/people",
+      "heading": "Brikker med et formål.\nMuligheder\ni fællesskab.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/funktioner/pricing-engine",
+      "basePath": "/capacidades/pricing-engine",
+      "heading": "Brikker med et formål.\nMuligheder\ni fællesskab.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/funktioner/products",
+      "basePath": "/capacidades/products",
+      "heading": "Brikker med et formål.\nMuligheder\ni fællesskab.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/funktioner/rooms",
+      "basePath": "/capacidades/rooms",
+      "heading": "Brikker med et formål.\nMuligheder\ni fællesskab.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/funktioner/service-attestations",
+      "basePath": "/capacidades/service-attestations",
+      "heading": "Brikker med et formål.\nMuligheder\ni fællesskab.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/funktioner/slack",
+      "basePath": "/capacidades/slack",
+      "heading": "Brikker med et formål.\nMuligheder\ni fællesskab.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/funktioner/sso",
+      "basePath": "/capacidades/sso",
+      "heading": "Brikker med et formål.\nMuligheder\ni fællesskab.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/funktioner/webhooks-engine",
+      "basePath": "/capacidades/webhooks-engine",
+      "heading": "Brikker med et formål.\nMuligheder\ni fællesskab.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/funktioner/wpp",
+      "basePath": "/capacidades/wpp",
+      "heading": "Brikker med et formål.\nMuligheder\ni fællesskab.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/funktioner/wpp-business",
+      "basePath": "/capacidades/wpp-business",
+      "heading": "Brikker med et formål.\nMuligheder\ni fællesskab.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometri",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl",
+      "basePath": "/",
+      "heading": "De vorm volgt\nde verbinding.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/designsysteem",
+      "basePath": "/design-system",
+      "heading": "Een gemeenschappelijke basis.\nEigen uitdrukkingen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Identidade",
+          "expected": "Identiteit",
+          "element": "BUTTON"
+        },
+        {
+          "kind": "text",
+          "source": "Continuidade",
+          "expected": "Continuïteit",
+          "element": "BUTTON"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/mogelijkheden",
+      "basePath": "/capacidades",
+      "heading": "Onderdelen met een doel.\nMogelijkheden\nsamen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/visie",
+      "basePath": "/visao",
+      "heading": "Vorm geven\naan wat komt\ndaarna.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/architectuur",
+      "basePath": "/arquitetura",
+      "heading": "Minder werk\nherhaald.\nMeer product.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/ontwikkelaars",
+      "basePath": "/desenvolvedores",
+      "heading": "Jouw code.\nMeer mogelijkheden.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/studio",
+      "basePath": "/studio",
+      "heading": "Geef vorm\ntot wat nodig is\nwerken.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/workflows",
+      "basePath": "/workflows",
+      "heading": "De volgende stap\nheeft een\nwaarom.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/ai-agenten",
+      "basePath": "/agentes",
+      "heading": "Begrijpen\nde context.\nHandelen met betekenis.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/governance",
+      "basePath": "/governanca",
+      "heading": "Vertrouwen heeft\nstructuur.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "SPAN"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/composities",
+      "basePath": "/composicoes",
+      "heading": "De verbinding verandert\nhet resultaat.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/ecosysteem",
+      "basePath": "/ecossistema",
+      "heading": "Hetzelfde fundament.\nAndere manieren van werken.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/ecosysteem/banking",
+      "basePath": "/ecossistema/banking",
+      "heading": "Eén account.\nDiverse vormen\nvan opereren.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "SMALL"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/ecosysteem/credit",
+      "basePath": "/ecossistema/credit",
+      "heading": "Krediet heeft een begin.\nDe operatie\ngaat door.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/ecosysteem/med",
+      "basePath": "/ecossistema/med",
+      "heading": "Zorg",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/ecosysteem/juridisch",
+      "basePath": "/ecossistema/juridico",
+      "heading": "Juridische dienstverlening",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/ecosysteem/werving",
+      "basePath": "/ecossistema/recrutamento",
+      "heading": "Werving",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/ecosysteem/biometrics",
+      "basePath": "/ecossistema/biometrics",
+      "heading": "Biometrie",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/ecosysteem/decision",
+      "basePath": "/ecossistema/decision",
+      "heading": "Besluitvorming",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/perspectieven",
+      "basePath": "/perspectivas",
+      "heading": "De markt verandert.\nWat is de moeite waard om te bouwen?",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/perspectieven/bouwen-door-compositie",
+      "basePath": "/perspectivas/construir-por-composicao",
+      "heading": "Moderniseren zonder de bank opnieuw te beginnen.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/perspectieven/autonomie-en-verantwoordelijkheid",
+      "basePath": "/perspectivas/autonomia-responsabilidade",
+      "heading": "De AI heeft geantwoord. Heeft de operatie plaatsgevonden?",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/perspectieven/leesbare-regels",
+      "basePath": "/perspectivas/regra-legivel",
+      "heading": "Snel beslissen. Achteraf kunnen uitleggen.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/perspectieven/open-finance-van-verbinding-naar-product",
+      "basePath": "/perspectivas/open-finance-da-conexao-ao-produto",
+      "heading": "Data koppelen is pas het begin.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/perspectieven/veerkracht-en-vrijheid-om-te-evolueren",
+      "basePath": "/perspectivas/resiliencia-e-liberdade-de-evoluir",
+      "heading": "En als een onderdeel niet beschikbaar is?",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/interfaces",
+      "basePath": "/interfaces",
+      "heading": "De architectuur\ngezien door wie het gebruikt.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/perskit",
+      "basePath": "/press-kit",
+      "heading": "Eén merk.\nVeel uitdrukkingen.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/bronnen",
+      "basePath": "/fontes",
+      "heading": "De basis van de content.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/sitemap",
+      "basePath": "/mapa",
+      "heading": "Alle koppelingen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "A"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/contact",
+      "basePath": "/contato",
+      "heading": "Laten we vorm geven\nnaar de volgende\ngesprek.",
+      "missing": [
+        "Uma ideia merece espaço.",
+        "Experiência",
+        "Construção",
+        "No active session"
+      ],
+      "untranslated": []
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/lab",
+      "basePath": "/lab",
+      "heading": "Wat u\nwil bouwen?",
+      "missing": [
+        "No active session"
+      ],
+      "untranslated": []
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/privacybeleid",
+      "basePath": "/politica-privacidade",
+      "heading": "Privacybeleid",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/voorwaarden",
+      "basePath": "/termos",
+      "heading": "Gebruiksvoorwaarden",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/mogelijkheden/ai-engine",
+      "basePath": "/capacidades/ai-engine",
+      "heading": "Onderdelen met een doel.\nMogelijkheden\nsamen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/mogelijkheden/analytics",
+      "basePath": "/capacidades/analytics",
+      "heading": "Onderdelen met een doel.\nMogelijkheden\nsamen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/mogelijkheden/api-keys",
+      "basePath": "/capacidades/api-keys",
+      "heading": "Onderdelen met een doel.\nMogelijkheden\nsamen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/mogelijkheden/audit-trail",
+      "basePath": "/capacidades/audit-trail",
+      "heading": "Onderdelen met een doel.\nMogelijkheden\nsamen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/mogelijkheden/baas",
+      "basePath": "/capacidades/baas",
+      "heading": "Onderdelen met een doel.\nMogelijkheden\nsamen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/mogelijkheden/banking",
+      "basePath": "/capacidades/banking",
+      "heading": "Onderdelen met een doel.\nMogelijkheden\nsamen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/mogelijkheden/banking-product-portfolio",
+      "basePath": "/capacidades/banking-product-portfolio",
+      "heading": "Onderdelen met een doel.\nMogelijkheden\nsamen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/mogelijkheden/billing",
+      "basePath": "/capacidades/billing",
+      "heading": "Onderdelen met een doel.\nMogelijkheden\nsamen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/mogelijkheden/biometrics",
+      "basePath": "/capacidades/biometrics",
+      "heading": "Onderdelen met een doel.\nMogelijkheden\nsamen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/mogelijkheden/bureaus",
+      "basePath": "/capacidades/bureaus",
+      "heading": "Onderdelen met een doel.\nMogelijkheden\nsamen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/mogelijkheden/calculations-engine",
+      "basePath": "/capacidades/calculations-engine",
+      "heading": "Onderdelen met een doel.\nMogelijkheden\nsamen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/mogelijkheden/calendar",
+      "basePath": "/capacidades/calendar",
+      "heading": "Onderdelen met een doel.\nMogelijkheden\nsamen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/mogelijkheden/cms",
+      "basePath": "/capacidades/cms",
+      "heading": "Onderdelen met een doel.\nMogelijkheden\nsamen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/mogelijkheden/commerce",
+      "basePath": "/capacidades/commerce",
+      "heading": "Onderdelen met een doel.\nMogelijkheden\nsamen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/mogelijkheden/companies",
+      "basePath": "/capacidades/companies",
+      "heading": "Onderdelen met een doel.\nMogelijkheden\nsamen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/mogelijkheden/customers",
+      "basePath": "/capacidades/customers",
+      "heading": "Onderdelen met een doel.\nMogelijkheden\nsamen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/mogelijkheden/data-extraction",
+      "basePath": "/capacidades/data-extraction",
+      "heading": "Onderdelen met een doel.\nMogelijkheden\nsamen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/mogelijkheden/data-store",
+      "basePath": "/capacidades/data-store",
+      "heading": "Onderdelen met een doel.\nMogelijkheden\nsamen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/mogelijkheden/decision-engine",
+      "basePath": "/capacidades/decision-engine",
+      "heading": "Onderdelen met een doel.\nMogelijkheden\nsamen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/mogelijkheden/decision-platform",
+      "basePath": "/capacidades/decision-platform",
+      "heading": "Onderdelen met een doel.\nMogelijkheden\nsamen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/mogelijkheden/document-template",
+      "basePath": "/capacidades/document-template",
+      "heading": "Onderdelen met een doel.\nMogelijkheden\nsamen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/mogelijkheden/e-signature",
+      "basePath": "/capacidades/e-signature",
+      "heading": "Onderdelen met een doel.\nMogelijkheden\nsamen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/mogelijkheden/email",
+      "basePath": "/capacidades/email",
+      "heading": "Onderdelen met een doel.\nMogelijkheden\nsamen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/mogelijkheden/feature-flags",
+      "basePath": "/capacidades/feature-flags",
+      "heading": "Onderdelen met een doel.\nMogelijkheden\nsamen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/mogelijkheden/file-storage",
+      "basePath": "/capacidades/file-storage",
+      "heading": "Onderdelen met een doel.\nMogelijkheden\nsamen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/mogelijkheden/iam",
+      "basePath": "/capacidades/iam",
+      "heading": "Onderdelen met een doel.\nMogelijkheden\nsamen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/mogelijkheden/meta-account",
+      "basePath": "/capacidades/meta-account",
+      "heading": "Onderdelen met een doel.\nMogelijkheden\nsamen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/mogelijkheden/open-finance",
+      "basePath": "/capacidades/open-finance",
+      "heading": "Onderdelen met een doel.\nMogelijkheden\nsamen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/mogelijkheden/payments",
+      "basePath": "/capacidades/payments",
+      "heading": "Onderdelen met een doel.\nMogelijkheden\nsamen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/mogelijkheden/people",
+      "basePath": "/capacidades/people",
+      "heading": "Onderdelen met een doel.\nMogelijkheden\nsamen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/mogelijkheden/pricing-engine",
+      "basePath": "/capacidades/pricing-engine",
+      "heading": "Onderdelen met een doel.\nMogelijkheden\nsamen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/mogelijkheden/products",
+      "basePath": "/capacidades/products",
+      "heading": "Onderdelen met een doel.\nMogelijkheden\nsamen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/mogelijkheden/rooms",
+      "basePath": "/capacidades/rooms",
+      "heading": "Onderdelen met een doel.\nMogelijkheden\nsamen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/mogelijkheden/service-attestations",
+      "basePath": "/capacidades/service-attestations",
+      "heading": "Onderdelen met een doel.\nMogelijkheden\nsamen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/mogelijkheden/slack",
+      "basePath": "/capacidades/slack",
+      "heading": "Onderdelen met een doel.\nMogelijkheden\nsamen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/mogelijkheden/sso",
+      "basePath": "/capacidades/sso",
+      "heading": "Onderdelen met een doel.\nMogelijkheden\nsamen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/mogelijkheden/webhooks-engine",
+      "basePath": "/capacidades/webhooks-engine",
+      "heading": "Onderdelen met een doel.\nMogelijkheden\nsamen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/mogelijkheden/wpp",
+      "basePath": "/capacidades/wpp",
+      "heading": "Onderdelen met een doel.\nMogelijkheden\nsamen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/mogelijkheden/wpp-business",
+      "basePath": "/capacidades/wpp-business",
+      "heading": "Onderdelen met een doel.\nMogelijkheden\nsamen.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biometrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr",
+      "basePath": "/",
+      "heading": "La forme suit\nla connexion.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/systeme-de-design",
+      "basePath": "/design-system",
+      "heading": "Une base commune.\nDes expressions propres.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Identidade",
+          "expected": "Identité",
+          "element": "BUTTON"
+        },
+        {
+          "kind": "text",
+          "source": "Continuidade",
+          "expected": "Continuité",
+          "element": "BUTTON"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/capacites",
+      "basePath": "/capacidades",
+      "heading": "Des pièces qui ont un but.\nPossibilités\nensemble.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/vision",
+      "basePath": "/visao",
+      "heading": "Donner forme\nà ce qui vient\nensuite.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/architecture",
+      "basePath": "/arquitetura",
+      "heading": "Moins de travail\nrépété.\nPlus de produit.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/developpeurs",
+      "basePath": "/desenvolvedores",
+      "heading": "Votre code.\nPlus possibilités.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/studio",
+      "basePath": "/studio",
+      "heading": "Donnez forme\nà ce dont vous avez besoin\nfonctionner.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/workflows",
+      "basePath": "/workflows",
+      "heading": "La prochaine étape\na un\npourquoi.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/agents-ia",
+      "basePath": "/agentes",
+      "heading": "Comprendre\nle contexte.\nAgir avec sens.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/gouvernance",
+      "basePath": "/governanca",
+      "heading": "La confiance a\nstructure.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "SPAN"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/compositions",
+      "basePath": "/composicoes",
+      "heading": "La connexion change\nle résultat.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/ecosysteme",
+      "basePath": "/ecossistema",
+      "heading": "Le même fondement.\nD’autres façons d’opérer.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/ecosysteme/banking",
+      "basePath": "/ecossistema/banking",
+      "heading": "Un compte.\nPlusieurs formes\nde opérer.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "SMALL"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/ecosysteme/credit",
+      "basePath": "/ecossistema/credit",
+      "heading": "Le crédit a un début.\nL'opération\ncontinue.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/ecosysteme/med",
+      "basePath": "/ecossistema/med",
+      "heading": "Santé",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/ecosysteme/juridique",
+      "basePath": "/ecossistema/juridico",
+      "heading": "Juridique",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/ecosysteme/recrutement",
+      "basePath": "/ecossistema/recrutamento",
+      "heading": "Recrutement",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/ecosysteme/biometrics",
+      "basePath": "/ecossistema/biometrics",
+      "heading": "Biométrie",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/ecosysteme/decision",
+      "basePath": "/ecossistema/decision",
+      "heading": "Décision",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/perspectives",
+      "basePath": "/perspectivas",
+      "heading": "Le marché évolue.\nQu'est-ce qui vaut la peine d'être construit ?",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/perspectives/construire-par-composition",
+      "basePath": "/perspectivas/construir-por-composicao",
+      "heading": "Moderniser sans reconstruire la banque.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/perspectives/autonomie-et-responsabilite",
+      "basePath": "/perspectivas/autonomia-responsabilidade",
+      "heading": "L'IA a répondu. L'opération a-t-elle eu lieu ?",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/perspectives/regles-lisibles",
+      "basePath": "/perspectivas/regra-legivel",
+      "heading": "Décider vite. Pouvoir l'expliquer ensuite.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/perspectives/open-finance-de-la-connexion-au-produit",
+      "basePath": "/perspectivas/open-finance-da-conexao-ao-produto",
+      "heading": "Connecter des données n’est qu’un début.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/perspectives/resilience-et-liberte-devoluer",
+      "basePath": "/perspectivas/resiliencia-e-liberdade-de-evoluir",
+      "heading": "Et si une brique devient indisponible ?",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/interfaces",
+      "basePath": "/interfaces",
+      "heading": "L’architecture\nvue par ceux qui l'utilisent.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/kit-presse",
+      "basePath": "/press-kit",
+      "heading": "Une marque.\nDe nombreuses expressions.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/sources",
+      "basePath": "/fontes",
+      "heading": "Le fondement du contenu.",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/plan-du-site",
+      "basePath": "/mapa",
+      "heading": "Toutes les connexions.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "A"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/contact",
+      "basePath": "/contato",
+      "heading": "Donnons forme\nà la suivante\nconversation.",
+      "missing": [
+        "Uma ideia merece espaço.",
+        "Experiência",
+        "Construção",
+        "No active session"
+      ],
+      "untranslated": []
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/lab",
+      "basePath": "/lab",
+      "heading": "Ce que vous\nveut construire ?",
+      "missing": [
+        "No active session"
+      ],
+      "untranslated": []
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/politique-de-confidentialite",
+      "basePath": "/politica-privacidade",
+      "heading": "Politique de confidentialité",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/conditions-utilisation",
+      "basePath": "/termos",
+      "heading": "Conditions d’utilisation",
+      "missing": [],
+      "untranslated": []
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/capacites/ai-engine",
+      "basePath": "/capacidades/ai-engine",
+      "heading": "Des pièces qui ont un but.\nPossibilités\nensemble.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/capacites/analytics",
+      "basePath": "/capacidades/analytics",
+      "heading": "Des pièces qui ont un but.\nPossibilités\nensemble.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/capacites/api-keys",
+      "basePath": "/capacidades/api-keys",
+      "heading": "Des pièces qui ont un but.\nPossibilités\nensemble.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/capacites/audit-trail",
+      "basePath": "/capacidades/audit-trail",
+      "heading": "Des pièces qui ont un but.\nPossibilités\nensemble.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/capacites/baas",
+      "basePath": "/capacidades/baas",
+      "heading": "Des pièces qui ont un but.\nPossibilités\nensemble.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/capacites/banking",
+      "basePath": "/capacidades/banking",
+      "heading": "Des pièces qui ont un but.\nPossibilités\nensemble.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/capacites/banking-product-portfolio",
+      "basePath": "/capacidades/banking-product-portfolio",
+      "heading": "Des pièces qui ont un but.\nPossibilités\nensemble.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/capacites/billing",
+      "basePath": "/capacidades/billing",
+      "heading": "Des pièces qui ont un but.\nPossibilités\nensemble.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/capacites/biometrics",
+      "basePath": "/capacidades/biometrics",
+      "heading": "Des pièces qui ont un but.\nPossibilités\nensemble.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/capacites/bureaus",
+      "basePath": "/capacidades/bureaus",
+      "heading": "Des pièces qui ont un but.\nPossibilités\nensemble.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/capacites/calculations-engine",
+      "basePath": "/capacidades/calculations-engine",
+      "heading": "Des pièces qui ont un but.\nPossibilités\nensemble.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/capacites/calendar",
+      "basePath": "/capacidades/calendar",
+      "heading": "Des pièces qui ont un but.\nPossibilités\nensemble.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/capacites/cms",
+      "basePath": "/capacidades/cms",
+      "heading": "Des pièces qui ont un but.\nPossibilités\nensemble.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/capacites/commerce",
+      "basePath": "/capacidades/commerce",
+      "heading": "Des pièces qui ont un but.\nPossibilités\nensemble.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/capacites/companies",
+      "basePath": "/capacidades/companies",
+      "heading": "Des pièces qui ont un but.\nPossibilités\nensemble.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/capacites/customers",
+      "basePath": "/capacidades/customers",
+      "heading": "Des pièces qui ont un but.\nPossibilités\nensemble.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/capacites/data-extraction",
+      "basePath": "/capacidades/data-extraction",
+      "heading": "Des pièces qui ont un but.\nPossibilités\nensemble.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/capacites/data-store",
+      "basePath": "/capacidades/data-store",
+      "heading": "Des pièces qui ont un but.\nPossibilités\nensemble.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/capacites/decision-engine",
+      "basePath": "/capacidades/decision-engine",
+      "heading": "Des pièces qui ont un but.\nPossibilités\nensemble.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/capacites/decision-platform",
+      "basePath": "/capacidades/decision-platform",
+      "heading": "Des pièces qui ont un but.\nPossibilités\nensemble.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/capacites/document-template",
+      "basePath": "/capacidades/document-template",
+      "heading": "Des pièces qui ont un but.\nPossibilités\nensemble.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/capacites/e-signature",
+      "basePath": "/capacidades/e-signature",
+      "heading": "Des pièces qui ont un but.\nPossibilités\nensemble.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/capacites/email",
+      "basePath": "/capacidades/email",
+      "heading": "Des pièces qui ont un but.\nPossibilités\nensemble.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/capacites/feature-flags",
+      "basePath": "/capacidades/feature-flags",
+      "heading": "Des pièces qui ont un but.\nPossibilités\nensemble.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/capacites/file-storage",
+      "basePath": "/capacidades/file-storage",
+      "heading": "Des pièces qui ont un but.\nPossibilités\nensemble.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/capacites/iam",
+      "basePath": "/capacidades/iam",
+      "heading": "Des pièces qui ont un but.\nPossibilités\nensemble.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/capacites/meta-account",
+      "basePath": "/capacidades/meta-account",
+      "heading": "Des pièces qui ont un but.\nPossibilités\nensemble.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/capacites/open-finance",
+      "basePath": "/capacidades/open-finance",
+      "heading": "Des pièces qui ont un but.\nPossibilités\nensemble.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/capacites/payments",
+      "basePath": "/capacidades/payments",
+      "heading": "Des pièces qui ont un but.\nPossibilités\nensemble.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/capacites/people",
+      "basePath": "/capacidades/people",
+      "heading": "Des pièces qui ont un but.\nPossibilités\nensemble.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/capacites/pricing-engine",
+      "basePath": "/capacidades/pricing-engine",
+      "heading": "Des pièces qui ont un but.\nPossibilités\nensemble.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/capacites/products",
+      "basePath": "/capacidades/products",
+      "heading": "Des pièces qui ont un but.\nPossibilités\nensemble.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/capacites/rooms",
+      "basePath": "/capacidades/rooms",
+      "heading": "Des pièces qui ont un but.\nPossibilités\nensemble.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/capacites/service-attestations",
+      "basePath": "/capacidades/service-attestations",
+      "heading": "Des pièces qui ont un but.\nPossibilités\nensemble.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/capacites/slack",
+      "basePath": "/capacidades/slack",
+      "heading": "Des pièces qui ont un but.\nPossibilités\nensemble.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/capacites/sso",
+      "basePath": "/capacidades/sso",
+      "heading": "Des pièces qui ont un but.\nPossibilités\nensemble.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/capacites/webhooks-engine",
+      "basePath": "/capacidades/webhooks-engine",
+      "heading": "Des pièces qui ont un but.\nPossibilités\nensemble.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/capacites/wpp",
+      "basePath": "/capacidades/wpp",
+      "heading": "Des pièces qui ont un but.\nPossibilités\nensemble.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "H3"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/capacites/wpp-business",
+      "basePath": "/capacidades/wpp-business",
+      "heading": "Des pièces qui ont un but.\nPossibilités\nensemble.",
+      "missing": [],
+      "untranslated": [
+        {
+          "kind": "text",
+          "source": "Biometrics",
+          "expected": "Biométrie",
+          "element": "H3"
+        }
+      ]
+    }
+  ]
+}

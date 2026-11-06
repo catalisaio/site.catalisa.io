@@ -1,0 +1,79 @@
+{
+  "checkedAt": "2026-10-26T20:01:22.853Z",
+  "scope": "Source review for essential Home auto-locale, deliberate navigation changes and product-directory integration. Browser AutoLocale evidence is separate.",
+  "autoLocale": {
+    "storageKey": "catalisa_site_locale",
+    "manualPreferenceEssential": true,
+    "automaticScope": "Exact root / only",
+    "priority": [
+      "explicit URL outside / unchanged",
+      "saved valid manual choice",
+      "navigator.languages in order",
+      "navigator.language",
+      "Intl resolved locale",
+      "en-US fallback"
+    ],
+    "botsKeepCanonicalPortuguese": true,
+    "privateAndArchiveDeepLinksUntouched": true,
+    "networkGeolocation": false,
+    "publicParameters": "Known UTM and click IDs; auth/session/redirect parameters dropped on redirect",
+    "homeAnchorAllowlist": [
+      "c-main",
+      "arquitetura"
+    ],
+    "obsoleteConceptFilmAnchorRemoved": true,
+    "prerenderSeedsPortuguesePreference": true,
+    "browserEvidence": "docs/redesign-2026-10-22/qa/localization/auto-locale-browser.json"
+  },
+  "navigation": {
+    "removedCompositionLinks": {
+      "HeaderView": 2,
+      "platformLinks": 1,
+      "SiteMap": 1
+    },
+    "remainingCompositionLinks": [],
+    "compositionUrlAndLocaleDefinitionsRetained": true,
+    "productLinks": [
+      {
+        "file": "src/redesign/HeaderView.tsx",
+        "line": 7,
+        "path": "/produtos/"
+      },
+      {
+        "file": "src/redesign/HeaderView.tsx",
+        "line": 7,
+        "path": "/produtos/"
+      },
+      {
+        "file": "src/redesign/Resources.tsx",
+        "line": 15,
+        "path": "/produtos/"
+      }
+    ]
+  },
+  "products": {
+    "component": "src/redesign/Products.tsx",
+    "loader": "getPageLoader",
+    "basePath": "/produtos",
+    "localizedPaths": [
+      "/produtos",
+      "/en/products",
+      "/de/produkte",
+      "/es/productos",
+      "/da/produkter",
+      "/nl/producten",
+      "/fr/produits"
+    ],
+    "seoSources": "docs/redesign-2026-10-22/qa/localization/source-products-seo-additions.json",
+    "independentFromEcosystem": true,
+    "noAvailabilityOfferOrPriceClaimsAdded": true
+  },
+  "validation": {
+    "syntaxCheckedModules": 17,
+    "rootReportedAutoPickerViteUnitTestsPassed": 49,
+    "realBrowserCasesPassed": 14,
+    "browserClosed": true,
+    "buildExecutedByThisTask": false,
+    "deployExecutedByThisTask": false
+  }
+}

@@ -1,0 +1,4093 @@
+{
+  "checkedAt": "2026-10-27T01:38:27.897Z",
+  "passed": true,
+  "baseRelease": "20261027-ga-realtime",
+  "candidate": ".local/site/candidates/20261027-language-a11y",
+  "oldEntry": "/assets/index-0S1y1kp5.js",
+  "newEntry": "/assets/index-i_UZAR9N.js",
+  "htmlFiles": 680,
+  "closedLanguageReferencesRemoved": 497,
+  "scope": "New Vite runtime plus removal of closed language aria-controls only. Every HTML is compared byte-for-byte after normalizing precisely those permitted edits. Fresh SPA shell equals prior shell except native entry. All existing rendered content, media, SEO and server remain unchanged.",
+  "records": [
+    {
+      "file": "404.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "agentes/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "agentes-ia-whatsapp/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "arquitetura/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "capacidades/ai-engine/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "capacidades/analytics/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "capacidades/api-keys/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "capacidades/audit-trail/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "capacidades/baas/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "capacidades/banking/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "capacidades/banking-product-portfolio/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "capacidades/billing/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "capacidades/biometrics/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "capacidades/bureaus/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "capacidades/calculations-engine/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "capacidades/calendar/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "capacidades/cms/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "capacidades/commerce/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "capacidades/companies/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "capacidades/customers/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "capacidades/data-extraction/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "capacidades/data-store/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "capacidades/decision-engine/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "capacidades/decision-platform/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "capacidades/document-template/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "capacidades/e-signature/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "capacidades/email/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "capacidades/feature-flags/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "capacidades/file-storage/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "capacidades/iam/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "capacidades/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "capacidades/meta-account/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "capacidades/open-finance/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "capacidades/payments/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "capacidades/people/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "capacidades/pricing-engine/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "capacidades/products/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "capacidades/rooms/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "capacidades/service-attestations/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "capacidades/slack/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "capacidades/sso/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "capacidades/webhooks-engine/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "capacidades/wpp/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "capacidades/wpp-business/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "casos-de-uso/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "como-funciona/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "composicoes/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "contato/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/ai-agenter/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/arkitektur/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/brugerflader/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/designsystem/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/funktioner/ai-engine/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/funktioner/analytics/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/funktioner/api-keys/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/funktioner/audit-trail/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/funktioner/baas/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/funktioner/banking/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/funktioner/banking-product-portfolio/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/funktioner/billing/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/funktioner/biometrics/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/funktioner/bureaus/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/funktioner/calculations-engine/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/funktioner/calendar/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/funktioner/cms/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/funktioner/commerce/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/funktioner/companies/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/funktioner/customers/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/funktioner/data-extraction/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/funktioner/data-store/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/funktioner/decision-engine/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/funktioner/decision-platform/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/funktioner/document-template/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/funktioner/e-signature/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/funktioner/email/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/funktioner/feature-flags/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/funktioner/file-storage/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/funktioner/iam/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/funktioner/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/funktioner/meta-account/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/funktioner/open-finance/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/funktioner/payments/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/funktioner/people/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/funktioner/pricing-engine/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/funktioner/products/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/funktioner/rooms/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/funktioner/service-attestations/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/funktioner/slack/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/funktioner/sso/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/funktioner/webhooks-engine/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/funktioner/wpp/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/funktioner/wpp-business/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/governance/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/kilder/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/kontakt/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/lab/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/oekosystem/banking/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/oekosystem/biometrics/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/oekosystem/credit/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/oekosystem/decision/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/oekosystem/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/oekosystem/jura/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/oekosystem/med/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/perspektiver/autonomi-og-ansvar/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/perspektiver/byg-med-sammensaetning/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/perspektiver/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/perspektiver/laesbare-regler/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/perspektiver/open-finance-fra-forbindelse-til-produkt/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/perspektiver/robusthed-og-frihed-til-at-udvikle/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/pressekit/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/privatlivspolitik/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/produkter/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/sammensaetninger/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/sitemap/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/studio/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/udviklere/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/vilkaar/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/vision/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "da/workflows/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/architektur/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/datenschutz/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/designsystem/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/entwickler/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/faehigkeiten/ai-engine/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/faehigkeiten/analytics/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/faehigkeiten/api-keys/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/faehigkeiten/audit-trail/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/faehigkeiten/baas/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/faehigkeiten/banking/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/faehigkeiten/banking-product-portfolio/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/faehigkeiten/billing/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/faehigkeiten/biometrics/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/faehigkeiten/bureaus/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/faehigkeiten/calculations-engine/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/faehigkeiten/calendar/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/faehigkeiten/cms/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/faehigkeiten/commerce/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/faehigkeiten/companies/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/faehigkeiten/customers/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/faehigkeiten/data-extraction/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/faehigkeiten/data-store/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/faehigkeiten/decision-engine/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/faehigkeiten/decision-platform/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/faehigkeiten/document-template/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/faehigkeiten/e-signature/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/faehigkeiten/email/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/faehigkeiten/feature-flags/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/faehigkeiten/file-storage/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/faehigkeiten/iam/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/faehigkeiten/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/faehigkeiten/meta-account/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/faehigkeiten/open-finance/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/faehigkeiten/payments/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/faehigkeiten/people/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/faehigkeiten/pricing-engine/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/faehigkeiten/products/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/faehigkeiten/rooms/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/faehigkeiten/service-attestations/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/faehigkeiten/slack/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/faehigkeiten/sso/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/faehigkeiten/webhooks-engine/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/faehigkeiten/wpp/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/faehigkeiten/wpp-business/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/governance/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/ki-agenten/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/kompositionen/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/kontakt/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/lab/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/nutzungsbedingungen/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/oberflaechen/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/oekosystem/banking/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/oekosystem/biometrics/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/oekosystem/credit/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/oekosystem/decision/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/oekosystem/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/oekosystem/med/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/oekosystem/recht/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/perspektiven/aufbau-durch-komposition/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/perspektiven/autonomie-und-verantwortung/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/perspektiven/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/perspektiven/lesbare-regeln/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/perspektiven/open-finance-von-der-verbindung-zum-produkt/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/perspektiven/resilienz-und-freiheit-zur-weiterentwicklung/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/pressekit/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/produkte/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/quellen/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/sitemap/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/studio/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/vision/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "de/workflows/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "demo/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "desenvolvedores/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "design-system/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "determinismo/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "ecossistema/banking/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "ecossistema/biometrics/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "ecossistema/credit/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "ecossistema/decision/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "ecossistema/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "ecossistema/juridico/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "ecossistema/med/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/ai-agents/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/ai-agents-whatsapp/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/ai-transparency/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/architecture/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/capabilities/ai-engine/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/capabilities/analytics/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/capabilities/api-keys/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/capabilities/audit-trail/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/capabilities/baas/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/capabilities/banking/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/capabilities/banking-product-portfolio/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/capabilities/billing/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/capabilities/biometrics/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/capabilities/bureaus/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/capabilities/calculations-engine/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/capabilities/calendar/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/capabilities/cms/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/capabilities/commerce/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/capabilities/companies/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/capabilities/customers/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/capabilities/data-extraction/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/capabilities/data-store/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/capabilities/decision-engine/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/capabilities/decision-platform/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/capabilities/document-template/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/capabilities/e-signature/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/capabilities/email/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/capabilities/feature-flags/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/capabilities/file-storage/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/capabilities/iam/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/capabilities/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/capabilities/meta-account/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/capabilities/open-finance/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/capabilities/payments/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/capabilities/people/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/capabilities/pricing-engine/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/capabilities/products/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/capabilities/rooms/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/capabilities/service-attestations/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/capabilities/slack/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/capabilities/sso/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/capabilities/webhooks-engine/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/capabilities/wpp/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/capabilities/wpp-business/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/compositions/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/contact/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/demo/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/design-system/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/determinism/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/developers/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/ecosystem/banking/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/ecosystem/biometrics/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/ecosystem/credit/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/ecosystem/decision/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/ecosystem/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/ecosystem/legal/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/ecosystem/med/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/fintech/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/governance/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/how-it-works/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/insights/90-porcento-empresas-mais-clientes-whatsapp/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/insights/agentes-ia-whatsapp-automacao-inteligencia/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/insights/agentes-vs-chatbots-evolucao-faq-transacoes/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/insights/all/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/insights/banco-bv-agentes-ia-reducao-rechamadas/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/insights/bancos-brasileiros-ia-whatsapp-bradesco-itau-nubank/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/insights/bancos-globais-ia-whatsapp-dbs-hdfc-absa/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/insights/boticario-assistente-ia-conversao-ecommerce/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/insights/carrefour-ia-atendimento-humanizado/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/insights/escalar-atendimento-sem-contratar-ia/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/insights/foodtech-ia-transformacao-conversacional/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/insights/gupshup-whatsapp-roi-270-forrester/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/insights/ia-conversacional-varejo-brasileiro/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/insights/ia-financeiro-cobranca-investimentos-mapa/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/insights/ia-humanizada-equilibrio-automacao-empatia/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/insights/ifood-comprai-compras-mercado-whatsapp/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/insights/ifood-cris-mentora-ia-restaurantes/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/insights/ifood-gerente-virtual-financeiro-whatsapp/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/insights/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/insights/klarna-ia-40m-economia-contraponto/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/insights/lemonade-sinistro-2-segundos-insurtech/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/insights/lotte-homeshopping-ia-reducao-40-carga-atendimento/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/insights/magalu-lu-vendedora-ia-whatsapp/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/insights/padrao-3x-conversao-whatsapp-vs-apps/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/insights/picpay-btg-pix-whatsapp-voz-imagem/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/insights/roi-ia-customer-experience-dados/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/insights/synthesia-fin-ai-spike-690-suporte/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/insights/synthesia-intercom-fin-ia-suporte-escala/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/insights/whatsapp-plataforma-vendas-conversational-commerce/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/insurance/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/integrations/whatsapp/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/interfaces/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/lab/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/perspectives/autonomy-and-responsibility/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/perspectives/building-by-composition/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/perspectives/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/perspectives/open-finance-from-connection-to-product/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/perspectives/readable-rules/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/perspectives/resilience-and-freedom-to-evolve/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/abertura-conta-digital/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/agendamento-consultas/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/agendamento-inteligente/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/app-api-pagamentos/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/app-assinatura-digital/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/app-backoffice-seguros/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/app-compliance-lgpd/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/app-conciliacao-financeira/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/app-gestao-sinistros/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/app-hub-onboarding/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/app-kyc-digital/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/app-marketplace-credito/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/app-motor-cobranca/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/app-motor-decisao/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/app-open-finance/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/app-originacao-credito/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/app-portal-cliente/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/app-portal-parceiros/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/atendimento-bancario/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/atendimento-imobiliario/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/atendimento-segurado/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/campanhas-whatsapp/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/cardapio-digital/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/cobranca-inteligente/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/cotacao-seguro/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/follow-up-inteligente/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/matricula-educacao/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/notificacoes-transacionais/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/nps-feedback/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/onboarding-kyc/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/onboarding-usuarios/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/open-finance-credito/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/originacao-credito/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/pix-conversacional/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/pos-venda-ecommerce/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/qualificacao-leads/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/recuperacao-carrinho/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/renegociacao-dividas/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/renovacao-proativa/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/sdr-automatizado/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/simulacao-credito/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/sinistro-whatsapp/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/suporte-24-7/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/suporte-tecnico-ia/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/playbooks/vistoria-digital/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/press-kit/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/privacy-policy/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/products/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/retail/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/security/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/sitemap/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/sources/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/startups/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/studio/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/terms/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/use-cases/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/vision/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "en/workflows/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/agentes-ia/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/arquitectura/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/capacidades/ai-engine/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/capacidades/analytics/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/capacidades/api-keys/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/capacidades/audit-trail/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/capacidades/baas/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/capacidades/banking/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/capacidades/banking-product-portfolio/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/capacidades/billing/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/capacidades/biometrics/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/capacidades/bureaus/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/capacidades/calculations-engine/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/capacidades/calendar/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/capacidades/cms/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/capacidades/commerce/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/capacidades/companies/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/capacidades/customers/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/capacidades/data-extraction/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/capacidades/data-store/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/capacidades/decision-engine/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/capacidades/decision-platform/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/capacidades/document-template/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/capacidades/e-signature/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/capacidades/email/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/capacidades/feature-flags/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/capacidades/file-storage/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/capacidades/iam/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/capacidades/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/capacidades/meta-account/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/capacidades/open-finance/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/capacidades/payments/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/capacidades/people/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/capacidades/pricing-engine/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/capacidades/products/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/capacidades/rooms/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/capacidades/service-attestations/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/capacidades/slack/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/capacidades/sso/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/capacidades/webhooks-engine/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/capacidades/wpp/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/capacidades/wpp-business/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/composiciones/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/contacto/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/desarrolladores/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/ecosistema/banking/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/ecosistema/biometrics/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/ecosistema/credit/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/ecosistema/decision/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/ecosistema/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/ecosistema/juridico/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/ecosistema/med/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/fuentes/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/gobernanza/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/interfaces/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/kit-de-prensa/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/lab/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/mapa-del-sitio/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/perspectivas/autonomia-y-responsabilidad/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/perspectivas/construir-por-composicion/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/perspectivas/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/perspectivas/open-finance-de-la-conexion-al-producto/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/perspectivas/reglas-legibles/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/perspectivas/resiliencia-y-libertad-para-evolucionar/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/politica-de-privacidad/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/productos/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/sistema-de-diseno/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/studio/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/terminos/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/vision/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "es/workflows/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fintech/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fontes/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/agents-ia/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/architecture/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/capacites/ai-engine/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/capacites/analytics/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/capacites/api-keys/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/capacites/audit-trail/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/capacites/baas/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/capacites/banking/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/capacites/banking-product-portfolio/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/capacites/billing/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/capacites/biometrics/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/capacites/bureaus/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/capacites/calculations-engine/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/capacites/calendar/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/capacites/cms/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/capacites/commerce/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/capacites/companies/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/capacites/customers/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/capacites/data-extraction/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/capacites/data-store/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/capacites/decision-engine/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/capacites/decision-platform/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/capacites/document-template/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/capacites/e-signature/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/capacites/email/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/capacites/feature-flags/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/capacites/file-storage/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/capacites/iam/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/capacites/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/capacites/meta-account/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/capacites/open-finance/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/capacites/payments/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/capacites/people/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/capacites/pricing-engine/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/capacites/products/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/capacites/rooms/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/capacites/service-attestations/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/capacites/slack/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/capacites/sso/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/capacites/webhooks-engine/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/capacites/wpp/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/capacites/wpp-business/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/compositions/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/conditions-utilisation/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/contact/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/developpeurs/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/ecosysteme/banking/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/ecosysteme/biometrics/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/ecosysteme/credit/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/ecosysteme/decision/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/ecosysteme/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/ecosysteme/juridique/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/ecosysteme/med/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/gouvernance/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/interfaces/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/kit-presse/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/lab/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/perspectives/autonomie-et-responsabilite/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/perspectives/construire-par-composition/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/perspectives/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/perspectives/open-finance-de-la-connexion-au-produit/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/perspectives/regles-lisibles/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/perspectives/resilience-et-liberte-devoluer/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/plan-du-site/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/politique-de-confidentialite/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/produits/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/sources/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/studio/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/systeme-de-design/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/vision/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "fr/workflows/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "googlebf700a2a05f1612d.html",
+      "entryUpdated": false,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "governanca/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "insights/90-porcento-empresas-mais-clientes-whatsapp/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "insights/agentes-ia-whatsapp-automacao-inteligencia/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "insights/agentes-vs-chatbots-evolucao-faq-transacoes/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "insights/all/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "insights/banco-bv-agentes-ia-reducao-rechamadas/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "insights/bancos-brasileiros-ia-whatsapp-bradesco-itau-nubank/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "insights/bancos-globais-ia-whatsapp-dbs-hdfc-absa/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "insights/boticario-assistente-ia-conversao-ecommerce/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "insights/carrefour-ia-atendimento-humanizado/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "insights/escalar-atendimento-sem-contratar-ia/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "insights/foodtech-ia-transformacao-conversacional/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "insights/gupshup-whatsapp-roi-270-forrester/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "insights/ia-conversacional-varejo-brasileiro/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "insights/ia-financeiro-cobranca-investimentos-mapa/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "insights/ia-humanizada-equilibrio-automacao-empatia/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "insights/ifood-comprai-compras-mercado-whatsapp/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "insights/ifood-cris-mentora-ia-restaurantes/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "insights/ifood-gerente-virtual-financeiro-whatsapp/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "insights/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "insights/klarna-ia-40m-economia-contraponto/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "insights/lemonade-sinistro-2-segundos-insurtech/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "insights/lotte-homeshopping-ia-reducao-40-carga-atendimento/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "insights/magalu-lu-vendedora-ia-whatsapp/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "insights/padrao-3x-conversao-whatsapp-vs-apps/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "insights/picpay-btg-pix-whatsapp-voz-imagem/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "insights/roi-ia-customer-experience-dados/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "insights/synthesia-fin-ai-spike-690-suporte/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "insights/synthesia-intercom-fin-ia-suporte-escala/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "insights/whatsapp-plataforma-vendas-conversational-commerce/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "integracoes/whatsapp/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "interfaces/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "lab/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "mapa/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/ai-agenten/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/architectuur/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/bronnen/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/composities/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/contact/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/designsysteem/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/ecosysteem/banking/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/ecosysteem/biometrics/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/ecosysteem/credit/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/ecosysteem/decision/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/ecosysteem/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/ecosysteem/juridisch/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/ecosysteem/med/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/governance/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/interfaces/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/lab/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/mogelijkheden/ai-engine/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/mogelijkheden/analytics/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/mogelijkheden/api-keys/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/mogelijkheden/audit-trail/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/mogelijkheden/baas/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/mogelijkheden/banking/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/mogelijkheden/banking-product-portfolio/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/mogelijkheden/billing/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/mogelijkheden/biometrics/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/mogelijkheden/bureaus/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/mogelijkheden/calculations-engine/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/mogelijkheden/calendar/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/mogelijkheden/cms/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/mogelijkheden/commerce/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/mogelijkheden/companies/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/mogelijkheden/customers/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/mogelijkheden/data-extraction/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/mogelijkheden/data-store/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/mogelijkheden/decision-engine/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/mogelijkheden/decision-platform/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/mogelijkheden/document-template/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/mogelijkheden/e-signature/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/mogelijkheden/email/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/mogelijkheden/feature-flags/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/mogelijkheden/file-storage/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/mogelijkheden/iam/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/mogelijkheden/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/mogelijkheden/meta-account/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/mogelijkheden/open-finance/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/mogelijkheden/payments/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/mogelijkheden/people/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/mogelijkheden/pricing-engine/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/mogelijkheden/products/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/mogelijkheden/rooms/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/mogelijkheden/service-attestations/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/mogelijkheden/slack/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/mogelijkheden/sso/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/mogelijkheden/webhooks-engine/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/mogelijkheden/wpp/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/mogelijkheden/wpp-business/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/ontwikkelaars/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/perskit/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/perspectieven/autonomie-en-verantwoordelijkheid/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/perspectieven/bouwen-door-compositie/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/perspectieven/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/perspectieven/leesbare-regels/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/perspectieven/open-finance-van-verbinding-naar-product/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/perspectieven/veerkracht-en-vrijheid-om-te-evolueren/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/privacybeleid/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/producten/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/sitemap/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/studio/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/visie/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/voorwaarden/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "nl/workflows/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "perspectivas/autonomia-responsabilidade/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "perspectivas/construir-por-composicao/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "perspectivas/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "perspectivas/open-finance-da-conexao-ao-produto/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "perspectivas/regra-legivel/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "perspectivas/resiliencia-e-liberdade-de-evoluir/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/abertura-conta-digital/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/agendamento-consultas/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/agendamento-inteligente/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/app-api-pagamentos/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/app-assinatura-digital/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/app-backoffice-seguros/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/app-compliance-lgpd/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/app-conciliacao-financeira/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/app-gestao-sinistros/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/app-hub-onboarding/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/app-kyc-digital/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/app-marketplace-credito/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/app-motor-cobranca/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/app-motor-decisao/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/app-open-finance/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/app-originacao-credito/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/app-portal-cliente/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/app-portal-parceiros/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/atendimento-bancario/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/atendimento-imobiliario/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/atendimento-segurado/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/campanhas-whatsapp/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/cardapio-digital/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/cobranca-inteligente/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/cotacao-seguro/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/follow-up-inteligente/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/matricula-educacao/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/notificacoes-transacionais/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/nps-feedback/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/onboarding-kyc/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/onboarding-usuarios/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/open-finance-credito/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/originacao-credito/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/pix-conversacional/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/pos-venda-ecommerce/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/qualificacao-leads/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/recuperacao-carrinho/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/renegociacao-dividas/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/renovacao-proativa/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/sdr-automatizado/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/simulacao-credito/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/sinistro-whatsapp/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/suporte-24-7/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/suporte-tecnico-ia/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "playbooks/vistoria-digital/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "politica-privacidade/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "press-kit/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "produtos/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "seguranca/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "seguros/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "spa.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "startups/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "studio/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "termos/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "transparencia-ia/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "varejo/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "visao/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "vtex-day-2026/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": false,
+      "otherContentPreserved": true
+    },
+    {
+      "file": "workflows/index.html",
+      "entryUpdated": true,
+      "closedLanguageReferenceRemoved": true,
+      "otherContentPreserved": true
+    }
+  ]
+}

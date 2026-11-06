@@ -1,0 +1,909 @@
+{
+  "source": "N01 / v1.1 / 2026-10-22; editorial snapshot, not live service verification",
+  "blocks": [
+    {
+      "slug": "ai-engine",
+      "name": "AI Engine",
+      "category": "Inteligência",
+      "status": "Produção",
+      "tagline": "Tarefas de IA sobre texto, imagem e áudio numa API só, na nuvem ou na sua rede",
+      "source": "https://docs.catalisa.app/blocks/ai-engine/"
+    },
+    {
+      "slug": "analytics",
+      "name": "Analytics",
+      "category": "Plataforma",
+      "status": "Alpha",
+      "tagline": "Contar a jornada do cliente sem guardar quem ele é",
+      "source": "https://docs.catalisa.app/blocks/analytics/"
+    },
+    {
+      "slug": "api-keys",
+      "name": "API Keys",
+      "category": "Identidade",
+      "status": "Produção",
+      "tagline": "Credencial programática de longa duração, com escopo por rota e rotação sem queda",
+      "source": "https://docs.catalisa.app/blocks/api-keys/"
+    },
+    {
+      "slug": "audit-trail",
+      "name": "Audit Trail",
+      "category": "Plataforma",
+      "status": "Beta",
+      "tagline": "Quem fez o quê, quando e o que mudou — para toda a plataforma, por organização",
+      "source": "https://docs.catalisa.app/blocks/audit-trail/"
+    },
+    {
+      "slug": "baas",
+      "name": "BaaS",
+      "category": "Financeiro",
+      "status": "Beta",
+      "tagline": "Contas, Pix e TED por API, com o banco parceiro trocável sem reescrever a integração",
+      "source": "https://docs.catalisa.app/blocks/baas/"
+    },
+    {
+      "slug": "banking",
+      "name": "Banking",
+      "category": "Financeiro",
+      "status": "Alpha",
+      "tagline": "A porta do aplicativo de banco digital, sem regra de dinheiro própria",
+      "source": "https://docs.catalisa.app/blocks/banking/"
+    },
+    {
+      "slug": "banking-product-portfolio",
+      "name": "Banking Product Portfolio",
+      "category": "Financeiro",
+      "status": "Beta",
+      "tagline": "Catálogo de produtos financeiros com versão congelada em cada contrato",
+      "source": "https://docs.catalisa.app/blocks/banking-product-portfolio/"
+    },
+    {
+      "slug": "billing",
+      "name": "Billing",
+      "category": "Financeiro",
+      "status": "Beta",
+      "tagline": "Assinaturas, medição de uso e faturas sem pagar percentual sobre o que você fatura",
+      "source": "https://docs.catalisa.app/blocks/billing/"
+    },
+    {
+      "slug": "biometrics",
+      "name": "Biometrics",
+      "category": "Identidade",
+      "status": "Alpha",
+      "tagline": "Prova de vida e match facial com motor próprio, no contrato dos provedores certificados",
+      "source": "https://docs.catalisa.app/blocks/biometrics/"
+    },
+    {
+      "slug": "bureaus",
+      "name": "Bureaus",
+      "category": "Dados",
+      "status": "Beta",
+      "tagline": "Consulta a bureau com cache que impede pagar duas vezes pelo mesmo CPF",
+      "source": "https://docs.catalisa.app/blocks/bureaus/"
+    },
+    {
+      "slug": "calculations-engine",
+      "name": "Calculations Engine",
+      "category": "Financeiro",
+      "status": "Beta",
+      "tagline": "Parcela, amortização, IOF e CET como API testada, não como planilha",
+      "source": "https://docs.catalisa.app/blocks/calculations-engine/"
+    },
+    {
+      "slug": "calendar",
+      "name": "Calendar",
+      "category": "Produtividade",
+      "status": "Beta",
+      "tagline": "Agenda do Google e do Outlook dos seus usuários, com disponibilidade calculada",
+      "source": "https://docs.catalisa.app/blocks/calendar/"
+    },
+    {
+      "slug": "cms",
+      "name": "CMS",
+      "category": "Plataforma",
+      "status": "Alpha",
+      "tagline": "Cor, texto e aviso do aplicativo mudam hoje, sem passar pela loja",
+      "source": "https://docs.catalisa.app/blocks/cms/"
+    },
+    {
+      "slug": "commerce",
+      "name": "Commerce",
+      "category": "Comércio",
+      "status": "Beta",
+      "tagline": "Catálogo, estoque, preço e pedido multi-loja na mesma API",
+      "source": "https://docs.catalisa.app/blocks/commerce/"
+    },
+    {
+      "slug": "companies",
+      "name": "Companies",
+      "category": "Identidade",
+      "status": "Alpha",
+      "tagline": "Quem pode assinar por esta empresa, para este ato, com este valor",
+      "source": "https://docs.catalisa.app/blocks/companies/"
+    },
+    {
+      "slug": "customers",
+      "name": "Customers",
+      "category": "Dados",
+      "status": "Produção",
+      "tagline": "Cadastro de pessoas físicas brasileiras com CPF validado e isolado por organização",
+      "source": "https://docs.catalisa.app/blocks/customers/"
+    },
+    {
+      "slug": "data-extraction",
+      "name": "Data Extraction",
+      "category": "Inteligência",
+      "status": "Beta",
+      "tagline": "Documento entra como imagem, sai como JSON estruturado com nota de confiança",
+      "source": "https://docs.catalisa.app/blocks/data-extraction/"
+    },
+    {
+      "slug": "data-store",
+      "name": "Data Store",
+      "category": "Dados",
+      "status": "Produção",
+      "tagline": "Banco de documentos JSON multi-tenant sem criar tabela para cada cliente",
+      "source": "https://docs.catalisa.app/blocks/data-store/"
+    },
+    {
+      "slug": "decision-engine",
+      "name": "Decision Engine",
+      "category": "Decisão",
+      "status": "Produção",
+      "tagline": "Regras de negócio em tabelas DMN, versionadas e alteradas sem deploy",
+      "source": "https://docs.catalisa.app/blocks/decision-engine/"
+    },
+    {
+      "slug": "decision-platform",
+      "name": "Decision Platform",
+      "category": "Decisão",
+      "status": "Beta",
+      "tagline": "A esteira que busca os dados, aplica a política e devolve o veredito",
+      "source": "https://docs.catalisa.app/blocks/decision-platform/"
+    },
+    {
+      "slug": "document-template",
+      "name": "Document Template",
+      "category": "Documentos",
+      "status": "Beta",
+      "tagline": "Contratos e documentos gerados a partir de template versionado, com variáveis tipadas",
+      "source": "https://docs.catalisa.app/blocks/document-template/"
+    },
+    {
+      "slug": "e-signature",
+      "name": "E-Signature",
+      "category": "Documentos",
+      "status": "Beta",
+      "tagline": "Coleta de assinatura eletrônica em documento, com trilha de eventos por signatário",
+      "source": "https://docs.catalisa.app/blocks/e-signature/"
+    },
+    {
+      "slug": "email",
+      "name": "Email",
+      "category": "Comunicação",
+      "status": "Beta",
+      "tagline": "A caixa de entrada do seu usuário, Gmail ou Outlook, atrás de uma única API",
+      "source": "https://docs.catalisa.app/blocks/email/"
+    },
+    {
+      "slug": "feature-flags",
+      "name": "Feature Flags",
+      "category": "Plataforma",
+      "status": "Produção",
+      "tagline": "Ligue e desligue funcionalidade em produção sem novo deploy, por segmento de cliente",
+      "source": "https://docs.catalisa.app/blocks/feature-flags/"
+    },
+    {
+      "slug": "file-storage",
+      "name": "File Storage",
+      "category": "Documentos",
+      "status": "Produção",
+      "tagline": "Upload e download de arquivos direto no S3, isolados por empresa cliente",
+      "source": "https://docs.catalisa.app/blocks/file-storage/"
+    },
+    {
+      "slug": "iam",
+      "name": "IAM",
+      "category": "Identidade",
+      "status": "Produção",
+      "tagline": "Identidade, organizações e permissões para todo o catálogo de building blocks",
+      "source": "https://docs.catalisa.app/blocks/iam/"
+    },
+    {
+      "slug": "meta-account",
+      "name": "Meta Account",
+      "category": "Comunicação",
+      "status": "Beta",
+      "tagline": "Provisiona e monitora sua conta Meta Business com a WABA no seu próprio nome",
+      "source": "https://docs.catalisa.app/blocks/meta-account/"
+    },
+    {
+      "slug": "open-finance",
+      "name": "Open Finance",
+      "category": "Financeiro",
+      "status": "Produção",
+      "tagline": "Extrato, saldo e identidade bancária do seu cliente, com o consentimento dele",
+      "source": "https://docs.catalisa.app/blocks/open-finance/"
+    },
+    {
+      "slug": "payments",
+      "name": "Payments",
+      "category": "Financeiro",
+      "status": "Beta",
+      "tagline": "Aceite cartão, Pix e boleto por mais de um adquirente com uma API só",
+      "source": "https://docs.catalisa.app/blocks/payments/"
+    },
+    {
+      "slug": "people",
+      "name": "People",
+      "category": "Identidade",
+      "status": "Alpha",
+      "tagline": "Saber quanto você sabe de uma pessoa, e saber quando parou de saber",
+      "source": "https://docs.catalisa.app/blocks/people/"
+    },
+    {
+      "slug": "pricing-engine",
+      "name": "Pricing Engine",
+      "category": "Financeiro",
+      "status": "Beta",
+      "tagline": "Taxa por faixa de risco, com tarifas, comissões e seguros no mesmo cálculo",
+      "source": "https://docs.catalisa.app/blocks/pricing-engine/"
+    },
+    {
+      "slug": "products",
+      "name": "Products",
+      "category": "Financeiro",
+      "status": "Produção",
+      "tagline": "Parâmetros do seu produto de crédito por API, sem constante escondida no código",
+      "source": "https://docs.catalisa.app/blocks/products/"
+    },
+    {
+      "slug": "rooms",
+      "name": "Rooms",
+      "category": "Comunicação",
+      "status": "Produção",
+      "tagline": "Sala de vídeo com link de convidado, gravação e transcrição em português",
+      "source": "https://docs.catalisa.app/blocks/rooms/"
+    },
+    {
+      "slug": "service-attestations",
+      "name": "Service Attestations",
+      "category": "Documentos",
+      "status": "Alpha",
+      "tagline": "O serviço foi prestado? Quem paga confirma — lido direto do sistema de escala",
+      "source": "https://docs.catalisa.app/blocks/service-attestations/"
+    },
+    {
+      "slug": "slack",
+      "name": "Slack",
+      "category": "Comunicação",
+      "status": "Alpha",
+      "tagline": "Mensagens do Slack dos seus clientes entrando e saindo do seu produto",
+      "source": "https://docs.catalisa.app/blocks/slack/"
+    },
+    {
+      "slug": "sso",
+      "name": "SSO",
+      "category": "Identidade",
+      "status": "Beta",
+      "tagline": "Login com Google, Microsoft, GitHub e Meta para as empresas que você atende",
+      "source": "https://docs.catalisa.app/blocks/sso/"
+    },
+    {
+      "slug": "webhooks-engine",
+      "name": "Webhooks Engine",
+      "category": "Plataforma",
+      "status": "Produção",
+      "tagline": "Entrega eventos aos sistemas dos seus clientes com assinatura, retentativa e histórico",
+      "source": "https://docs.catalisa.app/blocks/webhooks-engine/"
+    },
+    {
+      "slug": "wpp",
+      "name": "WPP",
+      "category": "Comunicação",
+      "status": "Produção",
+      "tagline": "WhatsApp no número que a empresa já usa, sem trocar de linha nem migrar conversa",
+      "source": "https://docs.catalisa.app/blocks/wpp/"
+    },
+    {
+      "slug": "wpp-business",
+      "name": "WPP Business",
+      "category": "Comunicação",
+      "status": "Produção",
+      "tagline": "WhatsApp oficial da Meta, multi-tenant, do primeiro template ao atendimento humano",
+      "source": "https://docs.catalisa.app/blocks/wpp-business/"
+    }
+  ],
+  "domains": {
+    "Identidade": {
+      "title": "Quem participa.",
+      "copy": "Pessoas, organizações, credenciais e permissões acompanham o contexto de cada interação.",
+      "input": "Contexto de acesso",
+      "output": "Identidade e escopo",
+      "tone": "identity"
+    },
+    "Comunicação": {
+      "title": "Onde a experiência acontece.",
+      "copy": "Canais conectam pessoas e operações. A conversa participa da jornada sem absorver todas as regras do produto.",
+      "input": "Mensagem ou encontro",
+      "output": "Interação conectada",
+      "tone": "communication"
+    },
+    "Financeiro": {
+      "title": "O dinheiro tem responsabilidades próprias.",
+      "copy": "Contas, cálculos, parâmetros e operações financeiras participam da composição com contratos distintos.",
+      "input": "Contexto financeiro",
+      "output": "Operação ou condição",
+      "tone": "finance"
+    },
+    "Dados": {
+      "title": "Informação com contexto.",
+      "copy": "Fontes e registros oferecem os dados de que a jornada precisa, preservando sua responsabilidade no conjunto.",
+      "input": "Fonte ou informação",
+      "output": "Contexto organizado",
+      "tone": "data"
+    },
+    "Decisão": {
+      "title": "Regras que encontram o contexto.",
+      "copy": "A política e a orquestração trabalham juntas com papéis distintos: avaliar uma regra e organizar o percurso.",
+      "input": "Dados da jornada",
+      "output": "Resposta da avaliação",
+      "tone": "decision"
+    },
+    "Documentos": {
+      "title": "O registro também tem uma jornada.",
+      "copy": "Gerar, guardar, assinar e confirmar são responsabilidades diferentes, conectadas ao trabalho do produto.",
+      "input": "Conteúdo ou evidência",
+      "output": "Documento ou registro",
+      "tone": "document"
+    },
+    "Produtividade": {
+      "title": "O próximo encontro começa na disponibilidade.",
+      "copy": "A organização do tempo pode participar de consultas, entrevistas e reuniões sem precisar ser refeita a cada produto.",
+      "input": "Pessoas e horários",
+      "output": "Disponibilidade e encontro",
+      "tone": "calendar"
+    },
+    "Plataforma": {
+      "title": "Uma operação que você pode acompanhar.",
+      "copy": "Configuração, eventos, registros e observação sustentam a evolução do produto com responsabilidades explícitas.",
+      "input": "Estado da operação",
+      "output": "Controle e acompanhamento",
+      "tone": "platform"
+    },
+    "Inteligência": {
+      "title": "Inteligência conectada ao trabalho.",
+      "copy": "Texto, imagem e áudio participam de tarefas com contexto. As ações continuam sujeitas ao papel definido para cada jornada.",
+      "input": "Conteúdo e contexto",
+      "output": "Informação trabalhada",
+      "tone": "intelligence"
+    },
+    "Comércio": {
+      "title": "O comércio encontra uma base.",
+      "copy": "Catálogo, estoque, preço e pedido participam de uma operação comercial por capacidades que podem ser combinadas.",
+      "input": "Produto ou pedido",
+      "output": "Operação comercial",
+      "tone": "commerce"
+    }
+  },
+  "stories": {
+    "ai-engine": {
+      "headline": "Transforme conversas em informação útil.",
+      "intro": "Organize mensagens, resuma textos e interprete documentos para apoiar as equipes no trabalho diário.",
+      "caseTitle": "Atendimento que encontra a fila certa",
+      "problem": "Uma financeira recebe dúvidas, reclamações e pedidos de negociação no mesmo canal. Separar tudo por palavras-chave faz conversas importantes chegarem à equipe errada.",
+      "action": "A inteligência artificial identifica o assunto e o tom da mensagem. A operação usa essa leitura para encaminhar o atendimento e definir prioridades.",
+      "value": "A equipe recebe conversas com mais contexto e concentra a atenção nos casos que precisam dela.",
+      "limit": "Classificar uma mensagem não resolve o atendimento. Encaminhamento, respostas e revisão humana precisam fazer parte da jornada.",
+      "source": "https://docs.catalisa.app/blocks/ai-engine/",
+      "sourceSection": "casos-de-uso-reais"
+    },
+    "analytics": {
+      "headline": "Enxergue onde a jornada perde força.",
+      "intro": "Acompanhe quantas pessoas avançam, desistem ou encontram uma barreira, sem transformar a análise de uso em um cadastro pessoal.",
+      "caseTitle": "Entender o caminho até o primeiro Pix",
+      "problem": "O time de produto precisa saber se uma transferência parou por abandono, recusa ou dificuldade na experiência.",
+      "action": "O bloco organiza a contagem das etapas e dos desfechos previstos na jornada.",
+      "value": "A equipe ganha uma leitura do funil para investigar atritos e orientar melhorias.",
+      "limit": "O bloco está em Alpha. A leitura depende dos eventos que cada produto já envia; jornadas ainda não conectadas não aparecem como concluídas.",
+      "source": "https://docs.catalisa.app/blocks/analytics/",
+      "sourceSection": "casos-de-uso-reais"
+    },
+    "api-keys": {
+      "headline": "Dê a cada parceiro o acesso de que precisa.",
+      "intro": "Conecte sistemas externos com permissões e limites próprios, que podem ser revogados quando a relação muda.",
+      "caseTitle": "Um marketplace acompanha pedidos com acesso restrito",
+      "problem": "Três parceiros precisam consultar pedidos. Um acesso compartilhado e amplo deixa ações que eles não deveriam executar ao alcance de todos.",
+      "action": "Cada parceiro recebe seu próprio acesso, limitado às consultas acordadas e ao período do contrato.",
+      "value": "A operação consegue acompanhar e encerrar cada integração separadamente.",
+      "limit": "O escopo precisa refletir o contrato de cada parceiro. O bloco organiza o acesso; não substitui a definição dessas responsabilidades.",
+      "source": "https://docs.catalisa.app/blocks/api-keys/",
+      "sourceSection": "casos-de-uso-reais"
+    },
+    "audit-trail": {
+      "headline": "Dê contexto a cada mudança importante.",
+      "intro": "Consulte quem alterou uma informação, quando isso aconteceu e o que mudou, dentro da organização.",
+      "caseTitle": "Descobrir por que uma taxa mudou",
+      "problem": "Uma condição comercial aparece diferente da aprovada. A equipe precisa reconstruir o que aconteceu.",
+      "action": "As alterações registradas pelos blocos ficam reunidas em um histórico consultável, com autoria e momento da mudança.",
+      "value": "A investigação começa por uma linha do tempo, em vez de depender da memória de quem participou.",
+      "limit": "Em Beta. A cobertura depende das ações que enviam registros à trilha e do prazo de retenção configurado.",
+      "source": "https://docs.catalisa.app/blocks/audit-trail/",
+      "sourceSection": "casos-de-uso-reais"
+    },
+    "baas": {
+      "headline": "Leve serviços bancários à jornada do seu produto.",
+      "intro": "Conecte abertura de contas, consultas e movimentações a um parceiro bancário, dentro da experiência da sua empresa.",
+      "caseTitle": "Separar os recursos de cada operação",
+      "problem": "Uma financeira precisa acompanhar o dinheiro de operações diferentes sem reconstruir essa separação em planilhas.",
+      "action": "A jornada associa contas e movimentações à operação correspondente, usando os serviços do parceiro bancário.",
+      "value": "O time passa a consultar o movimento de cada operação com uma referência comum.",
+      "limit": "Em Beta. A execução bancária depende do provedor contratado e das homologações necessárias; a Catalisa fornece a camada de software.",
+      "source": "https://docs.catalisa.app/blocks/baas/",
+      "sourceSection": "casos-de-uso-reais"
+    },
+    "banking": {
+      "headline": "Uma jornada bancária com começo, contexto e continuidade.",
+      "intro": "Conecte o aplicativo às capacidades que cuidam de identidade, conta e movimentação, respeitando as regras de cada etapa.",
+      "caseTitle": "Confirmar uma transferência sem reenviar o pagamento",
+      "problem": "O cliente envia um Pix, mas perde a conexão antes de receber a confirmação. Repetir a operação pode gerar dúvida e insegurança.",
+      "action": "A jornada consulta o desfecho da tentativa anterior e orienta o próximo passo antes de iniciar outra operação.",
+      "value": "O aplicativo consegue comunicar o que está confirmado e o que ainda precisa ser verificado.",
+      "limit": "Em Alpha, com cobertura parcial da jornada. Serviços de conta e dinheiro ficam nas capacidades bancárias; consulte as funções disponíveis.",
+      "source": "https://docs.catalisa.app/blocks/banking/",
+      "sourceSection": "casos-de-uso-reais"
+    },
+    "banking-product-portfolio": {
+      "headline": "Evolua a oferta sem apagar o que foi contratado.",
+      "intro": "Organize produtos financeiros e suas versões para que mudanças comerciais respeitem as condições já assumidas.",
+      "caseTitle": "Uma nova condição para os próximos contratos",
+      "problem": "Uma mudança de imposto ou condição entra em vigor. Contratos anteriores precisam manter a referência do que foi acordado.",
+      "action": "A oferta evolui em uma nova versão, enquanto cada contratação continua ligada à sua referência.",
+      "value": "A operação distingue o produto oferecido hoje das condições de uma contratação passada.",
+      "limit": "Em Beta. Regras, aprovações e condições precisam ser configuradas e validadas para cada operação.",
+      "source": "https://docs.catalisa.app/blocks/banking-product-portfolio/",
+      "sourceSection": "casos-de-uso-reais"
+    },
+    "billing": {
+      "headline": "Transforme uso em cobrança acompanhável.",
+      "intro": "Organize assinaturas, consumo e faturas para modelos em que o preço depende do serviço utilizado.",
+      "caseTitle": "Cobrar pelas consultas realizadas",
+      "problem": "Uma empresa cobra por consulta de crédito e fecha o mês cruzando planilhas para descobrir o consumo de cada cliente.",
+      "action": "O consumo registrado alimenta as regras de cobrança e a composição das faturas.",
+      "value": "A equipe consegue acompanhar a origem da cobrança com mais clareza.",
+      "limit": "Em Beta. Medição, preços e ciclo de faturamento precisam estar alinhados ao contrato comercial.",
+      "source": "https://docs.catalisa.app/blocks/billing/",
+      "sourceSection": "casos-de-uso-reais"
+    },
+    "biometrics": {
+      "headline": "Confirme a presença de quem está do outro lado.",
+      "intro": "Combine prova de vida e comparação facial na abertura de conta ou na confirmação de uma operação.",
+      "caseTitle": "Uma selfie na abertura de conta",
+      "problem": "Uma jornada digital precisa avaliar se há uma pessoa presente e se ela corresponde à identidade apresentada.",
+      "action": "O cliente passa pela captura orientada; a jornada recebe a avaliação e as evidências disponíveis.",
+      "value": "A equipe incorpora a verificação à jornada e consegue consultar o fundamento da avaliação.",
+      "limit": "Em Alpha. O motor próprio não tem certificação independente de laboratório; provedores declarados dependem de integração e credenciais.",
+      "source": "https://docs.catalisa.app/blocks/biometrics/",
+      "sourceSection": "casos-de-uso-reais"
+    },
+    "bureaus": {
+      "headline": "Consulte melhor. Evite pagar pela mesma pergunta.",
+      "intro": "Reúna consultas cadastrais e seu histórico para apoiar análises e acompanhar a finalidade de cada pesquisa.",
+      "caseTitle": "O mesmo cliente aparece em três etapas",
+      "problem": "Uma proposta passa por pré-análise, decisão e formalização. As três etapas podem repetir a mesma consulta paga.",
+      "action": "Quando a informação ainda está válida, o bloco reaproveita a consulta já realizada.",
+      "value": "A operação pode reduzir consultas repetidas e acompanhar quem pesquisou, quando e por qual finalidade.",
+      "limit": "O reaproveitamento depende da validade e das condições da consulta. Fornecedores disponíveis e bases autorizadas devem ser conferidos na documentação.",
+      "source": "https://docs.catalisa.app/blocks/bureaus/",
+      "sourceSection": "casos-de-uso-reais"
+    },
+    "calculations-engine": {
+      "headline": "Uma conta coerente do começo ao contrato.",
+      "intro": "Calcule parcelas, amortização e encargos com uma referência comum para simulação e formalização.",
+      "caseTitle": "A parcela mostrada precisa ser a contratada",
+      "problem": "O aplicativo apresenta uma parcela e o contrato calcula outra, porque cada etapa usa sua própria conta.",
+      "action": "As etapas consultam a mesma capacidade de cálculo, com os parâmetros da operação.",
+      "value": "Simulação e formalização passam a compartilhar o mesmo fundamento de cálculo.",
+      "limit": "Métodos, encargos e parâmetros precisam ser validados para cada modalidade financeira.",
+      "source": "https://docs.catalisa.app/blocks/calculations-engine/",
+      "sourceSection": "casos-de-uso-reais"
+    },
+    "calendar": {
+      "headline": "Ofereça horários que cabem na agenda real.",
+      "intro": "Conecte disponibilidade e agendamento às agendas que os profissionais já usam.",
+      "caseTitle": "Agendar com o analista sem uma agenda paralela",
+      "problem": "O cliente escolhe um horário, mas a agenda interna da plataforma não acompanha os compromissos do profissional.",
+      "action": "A jornada consulta a disponibilidade das agendas conectadas para oferecer e organizar o encontro.",
+      "value": "O agendamento encontra espaço na rotina do profissional e na experiência do cliente.",
+      "limit": "Em Beta. O acesso depende da autorização do usuário e das agendas conectadas.",
+      "source": "https://docs.catalisa.app/blocks/calendar/",
+      "sourceSection": "casos-de-uso-reais"
+    },
+    "cms": {
+      "headline": "Atualize a experiência no ritmo do negócio.",
+      "intro": "Organize textos, marca, avisos e campanhas do aplicativo sem depender de uma nova versão para cada mudança de conteúdo.",
+      "caseTitle": "A promoção termina junto com a campanha",
+      "problem": "Uma oferta acaba no domingo, mas continua aparecendo no aplicativo até a próxima atualização.",
+      "action": "A equipe define o período de exibição e publica o conteúdo nos espaços previstos pelo produto.",
+      "value": "A comunicação pode acompanhar o calendário comercial com mais precisão.",
+      "limit": "Em Alpha. O conteúdo usa formatos e ações previstos pelo aplicativo; novas funções continuam exigindo evolução do produto.",
+      "source": "https://docs.catalisa.app/blocks/cms/",
+      "sourceSection": "casos-de-uso-reais"
+    },
+    "commerce": {
+      "headline": "Conecte a venda ao que a operação consegue entregar.",
+      "intro": "Reúna catálogo, estoque e pedidos para dar continuidade à experiência de compra.",
+      "caseTitle": "Várias lojas, uma leitura do estoque",
+      "problem": "Uma rede vende o mesmo item em canais diferentes e descobre tarde que a unidade disponível já foi comprometida.",
+      "action": "A operação conecta a disponibilidade e os pedidos ao mesmo conjunto de informações comerciais.",
+      "value": "Os canais passam a trabalhar com uma referência comum para vender e acompanhar o pedido.",
+      "limit": "A qualidade da disponibilidade depende das lojas e integrações que atualizam o estoque.",
+      "source": "https://docs.catalisa.app/blocks/commerce/",
+      "sourceSection": "casos-de-uso-reais"
+    },
+    "companies": {
+      "headline": "Saiba quem pode representar a empresa.",
+      "intro": "Reúna dados, documentos e poderes de representação para apoiar assinaturas e autorizações.",
+      "caseTitle": "O termo chega a quem tem poder para assinar",
+      "problem": "Uma operação com uma empresa precisa ir além de registrar que alguém aceitou: é necessário conhecer os poderes de representação.",
+      "action": "A jornada consulta os documentos vigentes e as combinações de representantes previstas para aquela operação.",
+      "value": "A preparação da assinatura passa a considerar quem pode representar a empresa naquele valor e momento.",
+      "limit": "Em Alpha. A análise completa de beneficiários, revisões e integração com envelopes de assinatura ainda tem partes em evolução.",
+      "source": "https://docs.catalisa.app/blocks/companies/",
+      "sourceSection": "casos-de-uso-reais"
+    },
+    "customers": {
+      "headline": "Dê continuidade ao relacionamento com o cliente.",
+      "intro": "Mantenha os dados de contato e cadastro em uma referência compartilhada pelas jornadas.",
+      "caseTitle": "Um cliente, três telefones diferentes",
+      "problem": "Atendimento, proposta e cobrança guardam cadastros separados e deixam a equipe sem saber qual informação usar.",
+      "action": "As jornadas consultam e atualizam a mesma referência de cliente.",
+      "value": "A operação reduz desencontros e consegue continuar o relacionamento com mais contexto.",
+      "limit": "Cadastro depende da qualidade das informações e das regras de atualização adotadas pela empresa.",
+      "source": "https://docs.catalisa.app/blocks/customers/",
+      "sourceSection": "casos-de-uso-reais"
+    },
+    "data-extraction": {
+      "headline": "Tire a redigitação do caminho.",
+      "intro": "Transforme informações de documentos em campos que a equipe pode conferir e usar na jornada.",
+      "caseTitle": "O cadastro avança a partir do documento",
+      "problem": "A abertura de conta fica parada enquanto alguém copia informações de documentos enviados pelo cliente.",
+      "action": "O bloco identifica os dados e os apresenta de forma organizada para a próxima etapa.",
+      "value": "A equipe pode se concentrar na conferência e nas exceções, em vez de copiar cada campo.",
+      "limit": "A extração pode errar. Documentos, qualidade da imagem e campos relevantes precisam ser avaliados, com revisão onde necessário.",
+      "source": "https://docs.catalisa.app/blocks/data-extraction/",
+      "sourceSection": "casos-de-uso-reais"
+    },
+    "data-store": {
+      "headline": "Guarde o contexto para a próxima etapa.",
+      "intro": "Organize as informações de uma jornada para que cada participante encontre o estado atual do trabalho.",
+      "caseTitle": "A proposta continua de onde parou",
+      "problem": "Uma esteira precisa guardar dados, pendências e o andamento de cada proposta ao longo de várias etapas.",
+      "action": "A jornada registra esse contexto em uma base organizada para consulta e atualização.",
+      "value": "As etapas deixam de depender de informações dispersas para saber o próximo passo.",
+      "limit": "O modelo das informações, os acessos e o tempo de guarda fazem parte da configuração da jornada.",
+      "source": "https://docs.catalisa.app/blocks/data-store/",
+      "sourceSection": "casos-de-uso-reais"
+    },
+    "decision-engine": {
+      "headline": "Mude a regra no ritmo da decisão de negócio.",
+      "intro": "Organize políticas em tabelas que podem ser revisadas, publicadas e consultadas com histórico de versões.",
+      "caseTitle": "A política de risco muda com o negócio",
+      "problem": "O comitê decide ajustar um critério de crédito, mas a regra depende de uma alteração no aplicativo.",
+      "action": "A equipe responsável revisa a tabela, publica a versão aprovada e passa a avaliar as propostas com essa referência.",
+      "value": "O negócio ganha uma forma mais clara de governar a regra e identificar qual versão orientou cada avaliação.",
+      "limit": "O bloco aplica regras definidas pela empresa. Buscar informações, organizar a esteira e decidir sobre revisões humanas são responsabilidades da jornada.",
+      "source": "https://docs.catalisa.app/blocks/decision-engine/",
+      "sourceSection": "casos-de-uso-reais"
+    },
+    "decision-platform": {
+      "headline": "Prepare o contexto antes de aplicar a política.",
+      "intro": "Conecte as consultas e as etapas necessárias para reunir as informações de uma avaliação.",
+      "caseTitle": "Uma proposta chega mais completa à decisão",
+      "problem": "A análise de crédito depende de dados que estão em fontes diferentes e precisam chegar na ordem certa.",
+      "action": "A esteira reúne e organiza essas informações e as encaminha à avaliação da política.",
+      "value": "A operação consegue distinguir a preparação do dossiê da aplicação da regra.",
+      "limit": "A cobertura depende das fontes conectadas. A avaliação das regras pertence ao Decision Engine; tarefas humanas precisam de uma jornada própria.",
+      "source": "https://docs.catalisa.app/blocks/decision-platform/",
+      "sourceSection": "casos-de-uso-reais"
+    },
+    "document-template": {
+      "headline": "Faça o documento acompanhar a operação.",
+      "intro": "Organize modelos e preencha documentos com os dados da jornada, preservando uma referência do conteúdo usado.",
+      "caseTitle": "Uma cláusula muda e o modelo acompanha",
+      "problem": "A equipe jurídica altera uma cláusula, mas a formalização ainda depende de um modelo fixo no aplicativo.",
+      "action": "O modelo é atualizado e usado para gerar os próximos documentos com as informações da operação.",
+      "value": "O trabalho de ajustar o texto pode acompanhar o processo de revisão do negócio.",
+      "limit": "A revisão jurídica, a aprovação do modelo e a qualidade dos dados continuam sendo responsabilidades da operação.",
+      "source": "https://docs.catalisa.app/blocks/document-template/",
+      "sourceSection": "casos-de-uso-reais"
+    },
+    "e-signature": {
+      "headline": "Conduza a assinatura até o documento concluído.",
+      "intro": "Organize participantes, ordem de assinatura e acompanhamento dos documentos da operação.",
+      "caseTitle": "Devedor e avalista assinam na sequência certa",
+      "problem": "A formalização exige assinaturas de pessoas diferentes e a equipe precisa acompanhar quem ainda não concluiu.",
+      "action": "A jornada prepara o documento, define os participantes e acompanha as etapas junto ao provedor de assinatura.",
+      "value": "A equipe encontra o andamento da formalização em uma referência comum.",
+      "limit": "A modalidade de assinatura e sua adequação ao documento devem ser definidas pela operação, com o provedor contratado.",
+      "source": "https://docs.catalisa.app/blocks/e-signature/",
+      "sourceSection": "casos-de-uso-reais"
+    },
+    "email": {
+      "headline": "Traga a conversa para perto da operação.",
+      "intro": "Conecte mensagens de e-mail ao contexto em que o relacionamento acontece.",
+      "caseTitle": "O CRM enxerga mais da negociação",
+      "problem": "A negociação fica na caixa de entrada do vendedor e o restante da equipe só vê o que foi anotado manualmente.",
+      "action": "Com a autorização de acesso, as mensagens relevantes entram no fluxo do produto e ajudam a compor o histórico.",
+      "value": "A equipe pode continuar o atendimento com acesso ao contexto da conversa.",
+      "limit": "A conexão depende da autorização do usuário, do provedor e das permissões concedidas.",
+      "source": "https://docs.catalisa.app/blocks/email/",
+      "sourceSection": "casos-de-uso-reais"
+    },
+    "feature-flags": {
+      "headline": "Apresente a mudança aos poucos.",
+      "intro": "Controle a disponibilidade de funções por público para experimentar e ampliar o uso de forma gradual.",
+      "caseTitle": "Uma mudança começa com poucos correspondentes",
+      "problem": "A financeira quer experimentar uma nova condição com um grupo reduzido antes de disponibilizá-la à rede inteira.",
+      "action": "A equipe define o público que recebe a mudança e ajusta a disponibilidade conforme a avaliação da operação.",
+      "value": "A expansão pode acontecer por etapas, com possibilidade de interromper a exposição da função.",
+      "limit": "Liberar uma função não substitui testar sua qualidade ou validar suas regras de negócio.",
+      "source": "https://docs.catalisa.app/blocks/feature-flags/",
+      "sourceSection": "casos-de-uso-reais"
+    },
+    "file-storage": {
+      "headline": "Dê um lugar aos documentos da jornada.",
+      "intro": "Receba e organize arquivos para que as etapas autorizadas encontrem o material de que precisam.",
+      "caseTitle": "Os documentos acompanham a proposta",
+      "problem": "Uma proposta de crédito recebe vários anexos e a equipe precisa saber onde estão e a que operação pertencem.",
+      "action": "A jornada envia os arquivos e mantém referências para recuperá-los com o acesso adequado.",
+      "value": "O documento deixa de depender da pasta ou da caixa de mensagens de uma pessoa.",
+      "limit": "Acesso, tempo de guarda e vínculo com a operação precisam ser definidos na jornada.",
+      "source": "https://docs.catalisa.app/blocks/file-storage/",
+      "sourceSection": "casos-de-uso-reais"
+    },
+    "iam": {
+      "headline": "Cada pessoa no contexto certo.",
+      "intro": "Organize usuários, empresas e permissões para que cada participante tenha acesso ao trabalho que lhe cabe.",
+      "caseTitle": "Correspondentes compartilham a plataforma, não os dados",
+      "problem": "Uma financeira atende empresas parceiras diferentes e precisa delimitar a visão de cada equipe.",
+      "action": "Usuários e permissões ficam associados à organização e aos papéis definidos para a operação.",
+      "value": "O mesmo produto pode atender organizações diferentes com fronteiras de acesso explícitas.",
+      "limit": "As permissões precisam ser desenhadas e revisadas conforme os papéis reais de cada empresa.",
+      "source": "https://docs.catalisa.app/blocks/iam/",
+      "sourceSection": "casos-de-uso-reais"
+    },
+    "meta-account": {
+      "headline": "Mantenha a relação com a Meta sob controle.",
+      "intro": "Reúna a visão das contas, números e autorizações usados na operação de WhatsApp.",
+      "caseTitle": "Trocar de fornecedor sem perder o controle da conta",
+      "problem": "Uma rede descobre que a conta de WhatsApp pertence ao fornecedor e que a mudança de serviço depende dele.",
+      "action": "A operação parte de uma conta da própria empresa, com acesso delegado ao prestador.",
+      "value": "A empresa mantém a governança dos ativos e consegue revisar quem tem autorização para operá-los.",
+      "limit": "Em Beta e pré-produção na documentação consultada. A disponibilidade precisa ser confirmada antes de planejar a operação.",
+      "source": "https://docs.catalisa.app/blocks/meta-account/",
+      "sourceSection": "casos-de-uso-reais"
+    },
+    "open-finance": {
+      "headline": "Analise dados que o cliente autorizou compartilhar.",
+      "intro": "Traga informações bancárias para a jornada com o consentimento do cliente, por meio do provedor contratado.",
+      "caseTitle": "Analisar renda sem pedir um extrato por e-mail",
+      "problem": "A proposta para na etapa de anexar extratos, com arquivos incompletos e formatos diferentes.",
+      "action": "O cliente autoriza o compartilhamento no fluxo do provedor e as informações bancárias passam a apoiar a análise.",
+      "value": "A operação pode reduzir o trabalho de receber e conferir documentos enviados manualmente.",
+      "limit": "A Catalisa fornece o software de integração. O acesso depende do consentimento e de um provedor agregador contratado e habilitado.",
+      "source": "https://docs.catalisa.app/blocks/open-finance/",
+      "sourceSection": "casos-de-uso-reais"
+    },
+    "payments": {
+      "headline": "Conecte a cobrança à jornada do cliente.",
+      "intro": "Organize meios e acompanhamento de pagamento para que a operação saiba o que foi cobrado e recebido.",
+      "caseTitle": "A parcela ganha a opção de pagamento por Pix",
+      "problem": "Uma financeira quer ampliar as opções de cobrança sem tratar cada nova forma de pagamento como um produto separado.",
+      "action": "A jornada prepara a cobrança e acompanha seu andamento por meio do provedor conectado.",
+      "value": "A equipe reúne a visão do pagamento no contexto da operação.",
+      "limit": "Meios disponíveis, liquidação e condições comerciais dependem dos provedores e contratos conectados.",
+      "source": "https://docs.catalisa.app/blocks/payments/",
+      "sourceSection": "casos-de-uso-reais"
+    },
+    "people": {
+      "headline": "Peça de novo apenas o que precisa ser atualizado.",
+      "intro": "Reúna o que foi verificado sobre uma pessoa, a origem da informação e sua validade.",
+      "caseTitle": "O cliente volta e o cadastro tem memória",
+      "problem": "Um cedente retorna meses depois e o analista pede todos os documentos porque não sabe o que ainda está válido.",
+      "action": "A jornada consulta o que já foi comprovado e identifica as informações que precisam de atualização.",
+      "value": "O novo atendimento pode se concentrar no que falta, em vez de repetir toda a coleta.",
+      "limit": "Em Alpha, ainda sem publicação operacional na documentação consultada. Consentimento formal e outras partes do ciclo continuam em evolução.",
+      "source": "https://docs.catalisa.app/blocks/people/",
+      "sourceSection": "casos-de-uso-reais"
+    },
+    "pricing-engine": {
+      "headline": "Dê uma lógica clara à condição comercial.",
+      "intro": "Organize faixas de preço, taxas e componentes da oferta para que a jornada consulte uma referência comum.",
+      "caseTitle": "A condição acompanha o custo da operação",
+      "problem": "O custo de captação muda e a equipe precisa ajustar as condições oferecidas sem manter uma planilha diferente por canal.",
+      "action": "Os responsáveis atualizam as faixas e regras comerciais usadas na composição da oferta.",
+      "value": "A operação consegue relacionar o preço apresentado à regra comercial que o originou.",
+      "limit": "Em Beta. Tipos de regra disponíveis e composição de taxas precisam ser conferidos; a ligação com decisões não cobre todas as modalidades declaradas.",
+      "source": "https://docs.catalisa.app/blocks/pricing-engine/",
+      "sourceSection": "casos-de-uso-reais"
+    },
+    "products": {
+      "headline": "Deixe a oferta acompanhar a decisão comercial.",
+      "intro": "Organize limites, prazos e condições dos produtos de crédito usados pela sua operação.",
+      "caseTitle": "O prazo da oferta muda sem reescrever a jornada",
+      "problem": "O comercial quer ampliar o prazo máximo, mas essa condição está fixa dentro do aplicativo.",
+      "action": "As condições ficam reunidas no cadastro do produto, consultado pela jornada ao preparar a oferta.",
+      "value": "O time passa a administrar os parâmetros comerciais em uma referência própria.",
+      "limit": "Para famílias, variantes e versões publicadas com governança mais ampla, avalie Banking Product Portfolio.",
+      "source": "https://docs.catalisa.app/blocks/products/",
+      "sourceSection": "casos-de-uso-reais"
+    },
+    "rooms": {
+      "headline": "Faça a conversa participar da jornada.",
+      "intro": "Conecte encontros por vídeo ao atendimento e às informações que precisam continuar depois da reunião.",
+      "caseTitle": "A entrevista de crédito ganha continuidade",
+      "problem": "Analista e cliente conversam por vídeo, mas o combinado se perde antes de chegar ao restante da operação.",
+      "action": "A jornada associa a sala e os registros autorizados ao atendimento e às próximas etapas.",
+      "value": "A equipe consegue retomar o contexto e dar continuidade ao que foi tratado.",
+      "limit": "Gravação, acesso e uso das informações precisam de autorização e regras de guarda; processamento posterior depende da composição com outras capacidades.",
+      "source": "https://docs.catalisa.app/blocks/rooms/",
+      "sourceSection": "casos-de-uso-reais"
+    },
+    "service-attestations": {
+      "headline": "Confirme o serviço na fonte de quem paga.",
+      "intro": "Consulte a confirmação de serviços prestados e acompanhe alterações no repasse previsto.",
+      "caseTitle": "Antecipação de um plantão confirmado",
+      "problem": "Um fundo avalia antecipar o pagamento de um plantão. Um comprovante enviado pelo prestador não informa necessariamente mudanças ou cancelamentos posteriores.",
+      "action": "A jornada consulta a fonte do pagador e usa a confirmação para compor a análise do repasse.",
+      "value": "O processo pode trabalhar com uma referência da fonte e identificar alterações que afetam a operação.",
+      "limit": "Em Alpha. A documentação informa uso de provedor simulado enquanto falta a credencial real; o cenário não representa operação de cliente comprovada.",
+      "source": "https://docs.catalisa.app/blocks/service-attestations/",
+      "sourceSection": "casos-de-uso-reais"
+    },
+    "slack": {
+      "headline": "Encontre a equipe no canal em que ela trabalha.",
+      "intro": "Leve conversas e respostas do produto ao Slack, respeitando a autorização e os canais escolhidos.",
+      "caseTitle": "O assistente chega ao Slack",
+      "problem": "Um assistente já atende por outro canal, mas os clientes corporativos querem conversar com ele no ambiente de trabalho.",
+      "action": "A empresa conecta o ambiente e seleciona as conversas que podem chegar ao produto.",
+      "value": "A experiência ganha um novo ponto de contato sem criar outra rotina para o usuário.",
+      "limit": "Em Alpha. Distribuição do aplicativo e partes do ciclo de conexão ainda dependem de evolução e aprovação do provedor.",
+      "source": "https://docs.catalisa.app/blocks/slack/",
+      "sourceSection": "casos-de-uso-reais"
+    },
+    "sso": {
+      "headline": "Entre com a identidade que a empresa já usa.",
+      "intro": "Conecte o acesso à conta corporativa para simplificar a entrada na plataforma e respeitar o contexto de cada organização.",
+      "caseTitle": "O correspondente usa a conta de trabalho",
+      "problem": "Uma empresa parceira quer que seus operadores acessem a plataforma com a identidade corporativa, sem manter outra senha.",
+      "action": "A organização habilita o provedor e os domínios permitidos para a entrada dos seus usuários.",
+      "value": "O acesso passa a aproveitar a identidade que a empresa administra no dia a dia.",
+      "limit": "Em Beta. A documentação aponta etapas pendentes no vínculo com o usuário interno; o ciclo completo precisa ser validado antes da adoção.",
+      "source": "https://docs.catalisa.app/blocks/sso/",
+      "sourceSection": "casos-de-uso-reais"
+    },
+    "webhooks-engine": {
+      "headline": "Faça o próximo sistema saber o que aconteceu.",
+      "intro": "Entregue avisos de acontecimentos da plataforma, com acompanhamento e novas tentativas quando o destino não responde.",
+      "caseTitle": "O contrato foi assinado durante a manutenção do ERP",
+      "problem": "O sistema que libera a próxima etapa está indisponível no momento da assinatura. Um aviso perdido deixa a operação parada.",
+      "action": "A entrega é acompanhada e pode ser tentada novamente, com histórico do que o sistema de destino respondeu.",
+      "value": "O suporte consegue investigar o aviso e recuperar uma entrega que precisa de atenção.",
+      "limit": "A conclusão depende da resposta do destino. Novas tentativas e tratamento de entregas repetidas precisam estar alinhados à integração.",
+      "source": "https://docs.catalisa.app/blocks/webhooks-engine/",
+      "sourceSection": "casos-de-uso-reais"
+    },
+    "wpp": {
+      "headline": "Conecte o WhatsApp que já faz parte da rotina.",
+      "intro": "Leve mensagens do número utilizado pela empresa para o contexto do atendimento e da operação.",
+      "caseTitle": "A conversa chega ao sistema de propostas",
+      "problem": "O cliente combina informações pelo WhatsApp e a proposta continua sem esse histórico.",
+      "action": "O número é conectado e as mensagens passam a alimentar a jornada, com respostas do sistema quando previstas.",
+      "value": "A equipe pode consultar o contexto da conversa junto do trabalho em andamento.",
+      "limit": "Usa conexão não oficial. Existe risco de suspensão do número pela Meta. Para operações que exigem o canal oficial, avalie WPP Business.",
+      "source": "https://docs.catalisa.app/blocks/wpp/",
+      "sourceSection": "casos-de-uso-reais"
+    },
+    "wpp-business": {
+      "headline": "Transforme o WhatsApp em parte da operação.",
+      "intro": "Conecte o canal oficial da Meta a mensagens, campanhas e atendimento humano dentro da jornada do cliente.",
+      "caseTitle": "A conversa começa antes do vencimento",
+      "problem": "Uma financeira quer lembrar a parcela e acolher respostas sem esperar o cliente entrar em atraso.",
+      "action": "A régua envia mensagens aprovadas pelo canal oficial e encaminha as respostas para o atendimento.",
+      "value": "A equipe reúne a comunicação e acompanha a continuidade da conversa.",
+      "limit": "Envios dependem das regras da Meta, de aprovação de modelos quando exigida e das condições do canal.",
+      "source": "https://docs.catalisa.app/blocks/wpp-business/",
+      "sourceSection": "casos-de-uso-reais"
+    }
+  },
+  "products": [
+    {
+      "slug": "banking",
+      "name": "Banking Platform",
+      "category": "Infraestrutura bancária e canais",
+      "principle": "O canal apresenta. A capacidade decide.",
+      "title": "Uma base bancária. Várias experiências.",
+      "blocks": [
+        "baas",
+        "iam",
+        "biometrics",
+        "api-keys",
+        "banking-product-portfolio",
+        "feature-flags"
+      ]
+    },
+    {
+      "slug": "credit",
+      "name": "Credit Platform",
+      "category": "Esteira e operação de crédito",
+      "principle": "A base comum continua. O lastro muda.",
+      "title": "O processo de crédito ganha estrutura.",
+      "blocks": [
+        "banking-product-portfolio",
+        "decision-engine",
+        "calculations-engine",
+        "pricing-engine",
+        "data-store",
+        "baas"
+      ]
+    },
+    {
+      "slug": "med",
+      "name": "Med",
+      "category": "Saúde",
+      "principle": "Entre o rascunho e o prontuário, existe uma pessoa.",
+      "title": "Da conversa à consulta.",
+      "blocks": [
+        "wpp-business",
+        "calendar",
+        "rooms",
+        "ai-engine",
+        "file-storage"
+      ]
+    },
+    {
+      "slug": "juridico",
+      "name": "Jurídico",
+      "category": "Advocacia",
+      "principle": "A análise do caso continua sendo sua.",
+      "title": "O conhecimento da casa, em ação.",
+      "blocks": [
+        "wpp-business",
+        "calendar",
+        "rooms",
+        "ai-engine",
+        "file-storage",
+        "document-template"
+      ]
+    },
+    {
+      "slug": "biometrics",
+      "name": "Biometrics",
+      "category": "Identidade",
+      "principle": "A evidência acompanha a decisão.",
+      "title": "Identidade com evidência.",
+      "blocks": [
+        "biometrics",
+        "api-keys",
+        "file-storage",
+        "webhooks-engine",
+        "billing"
+      ]
+    },
+    {
+      "slug": "decision",
+      "name": "Decision",
+      "category": "Decisão e crédito",
+      "principle": "A regra sai do código e ganha uma versão.",
+      "title": "A regra tem versão. A decisão tem motivo.",
+      "blocks": [
+        "decision-engine",
+        "decision-platform",
+        "bureaus",
+        "iam",
+        "audit-trail"
+      ]
+    }
+  ]
+}

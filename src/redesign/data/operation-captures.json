@@ -1,0 +1,111 @@
+[
+  {
+    "file": "studio-builder.jpg",
+    "title": "Builder / A descrição é o ponto de partida",
+    "desc": "A tela reúne a descrição da necessidade e exemplos para iniciar a construção.",
+    "type": "Builder",
+    "source": "https://catalisa.io/screenshots/studio/builder-home-real.jpg",
+    "product": "studio",
+    "origin": "Captura publicada no site Catalisa · consultada em 22/10/2026 · data original não informada",
+    "width": 1920,
+    "height": 1013
+  },
+  {
+    "file": "studio-service-manual.png",
+    "title": "Formulário / Prepare o perfil passo a passo",
+    "desc": "Defina finalidade, apoio, ações e revisão pelo formulário.",
+    "type": "Preparação pelo formulário",
+    "origin": "20/10/2026 · prévia local de integração · formulário manual",
+    "product": "studio-profiles",
+    "path": "docs/analysis/2026-10-20-crm-integracao/screenshots/panel-wizard-purpose.png",
+    "sha": "23e4f2ef22da7715c1a96b05f9e138137716d89d",
+    "source": "https://github.com/catalisaio/wpp.bb.catalisa.io/blob/3fc7b15c9b16107d16770bf6412e99e957315681/docs/analysis/2026-10-20-crm-integracao/screenshots/panel-wizard-purpose.png",
+    "width": 1280,
+    "height": 800
+  },
+  {
+    "file": "studio-service-ai.png",
+    "title": "Com IA / Comece pelo resultado esperado",
+    "desc": "Descreva o trabalho e prepare uma configuração para revisão com apoio do assistente.",
+    "type": "Preparação com apoio de IA",
+    "origin": "20/10/2026 · candidato local de design · tela anterior ao início da IA",
+    "product": "studio-profiles",
+    "path": "docs/analysis/2026-10-20-crm-validacao/visible-design-admin-2026-10-20T22-45-07-396Z/local-cta-prepare-start-reachable-1280.png",
+    "sha": "b060171b78cb2a3e37bb42d0fe98fba27d5d4355",
+    "source": "https://github.com/catalisaio/wpp.bb.catalisa.io/blob/3fc7b15c9b16107d16770bf6412e99e957315681/docs/analysis/2026-10-20-crm-validacao/visible-design-admin-2026-10-20T22-45-07-396Z/local-cta-prepare-start-reachable-1280.png",
+    "width": 1280,
+    "height": 800
+  },
+  {
+    "file": "workflows-canvas.jpg",
+    "product": "workflows",
+    "title": "Canvas / Uma campanha ganha percurso",
+    "desc": "Editor visual com etapas, conexões e uma ramificação de campanha.",
+    "type": "Canvas",
+    "origin": "Captura preservada em apps/vitrine/src/assets/ss-canvas.jpg · data original não informada",
+    "width": 1400,
+    "height": 700
+  },
+  {
+    "file": "workflows-detail.png",
+    "product": "workflows",
+    "title": "Configuração / Gatilhos, ações e validação",
+    "desc": "Interface de configuração de um fluxo de teste, com seus pontos de entrada e passos.",
+    "type": "Configuração",
+    "origin": "Baseline de interface de 30/07/2026 · fluxo de teste · não é indicador de cliente",
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "file": "agents-overview.jpg",
+    "product": "agents",
+    "title": "Agentes / Uma visão dos papéis configurados",
+    "desc": "Interface de gestão com agentes, ferramentas e estado de configuração.",
+    "type": "Gestão",
+    "origin": "Material da vitrine Catalisa · data original não informada",
+    "width": 1400,
+    "height": 700
+  },
+  {
+    "file": "agents-config.png",
+    "product": "agents",
+    "title": "Configuração / Identidade antes da atuação",
+    "desc": "Passo inicial de configuração de um agente: identidade e personalidade, com etapas de habilidades, segurança, instruções e revisão.",
+    "type": "Configuração",
+    "origin": "Baseline de interface de 30/07/2026 · material de referência",
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "file": "bank-access.jpg",
+    "product": "governance",
+    "title": "Acesso / Pessoas, papéis e estado",
+    "desc": "Interface de referência do console Banking, com pessoas, papéis e estados de acesso.",
+    "type": "Console",
+    "origin": "Protótipo no guia Banking · dados de exemplo · data original da captura não informada",
+    "width": 1200,
+    "height": 963
+  },
+  {
+    "file": "studio-canvas.png",
+    "title": "Canvas / As conexões ficam visíveis",
+    "desc": "O editor apresenta ações e ramificações de um fluxo no espaço visual.",
+    "type": "Canvas",
+    "source": "https://catalisa.io/screenshots/workflow-editor.png",
+    "product": "studio",
+    "origin": "Captura publicada no site Catalisa · consultada em 22/10/2026 · data original não informada",
+    "width": 1600,
+    "height": 870
+  },
+  {
+    "file": "studio-dashboard.jpg",
+    "title": "Painel / O trabalho ganha uma visão comum",
+    "desc": "O painel reúne a leitura de contatos, mensagens e workflows da operação.",
+    "type": "Painel",
+    "source": "https://catalisa.io/screenshots/dashboard.jpeg",
+    "product": "studio",
+    "origin": "Captura publicada no site Catalisa · consultada em 22/10/2026 · data original não informada",
+    "width": 1600,
+    "height": 900
+  }
+]

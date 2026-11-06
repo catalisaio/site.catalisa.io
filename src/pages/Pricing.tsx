@@ -51,14 +51,38 @@ export function Pricing() {
     items: { name: string; price: string; description: string }[];
   };
 
-  const savings = t('savings', { returnObjects: true }) as {
-    heading: string;
-    subtitle: string;
+  type SavingsAnchor = {
+    title?: string;
     traditional: { title: string; items: { label: string; value: string }[]; total: string };
     catalisa: { title: string; items: { label: string; value: string }[]; total: string };
     savingsLabel: string;
     savingsValue: string;
     savingsPercent: string;
+  };
+
+  const savings = t('savings', { returnObjects: true }) as {
+    heading: string;
+    subtitle: string;
+    anchors?: SavingsAnchor[];
+  } & Partial<SavingsAnchor>;
+
+  const savingsAnchors: SavingsAnchor[] = Array.isArray(savings.anchors) && savings.anchors.length
+    ? savings.anchors
+    : (savings.traditional && savings.catalisa
+      ? [{
+          traditional: savings.traditional,
+          catalisa: savings.catalisa,
+          savingsLabel: savings.savingsLabel!,
+          savingsValue: savings.savingsValue!,
+          savingsPercent: savings.savingsPercent!,
+        }]
+      : []);
+
+  const overage = t('overage', { returnObjects: true }) as {
+    heading?: string;
+    headingGradient?: string;
+    subtitle?: string;
+    items?: { unit: string; price: string }[];
   };
 
   const faq = t('faq.items', { returnObjects: true }) as Array<{
@@ -67,10 +91,10 @@ export function Pricing() {
   }>;
 
   const recommendedPlan = useMemo(() => {
-    if (calcConversations <= 100) return 'Free';
-    if (calcConversations <= 1000) return 'Starter';
-    if (calcConversations <= 5000) return 'Professional';
-    if (calcConversations <= 25000) return 'Business';
+    if (calcConversations <= 20) return 'Free';
+    if (calcConversations <= 400) return 'Starter';
+    if (calcConversations <= 800) return 'Growth';
+    if (calcConversations <= 3000) return 'Professional';
     return 'Enterprise';
   }, [calcConversations]);
 
@@ -332,61 +356,110 @@ export function Pricing() {
         </SimpleGrid>
       </SectionWrapper>
 
-      {/* Savings vs. Hiring */}
-      <SectionWrapper>
-        <SectionHeader
-          heading={savings.heading}
-          subtitle={savings.subtitle}
-        />
+      {/* Overage — transparent pay-per-unit */}
+      {overage.items && overage.items.length > 0 && (
+        <SectionWrapper>
+          <SectionHeader
+            heading={overage.heading || ''}
+            headingGradient={overage.headingGradient}
+            subtitle={overage.subtitle}
+          />
 
-        <Flex direction={{ base: 'column', md: 'row' }} gap={6} maxW="800px" mx="auto" align="stretch">
-          {/* Traditional */}
-          <VStack flex={1} bg="red.50" p={6} borderRadius="xl" align="stretch" spacing={3}>
-            <Text fontWeight="700" color="red.600">{savings.traditional.title}</Text>
-            {savings.traditional.items.map((item) => (
-              <HStack key={item.label} justify="space-between">
-                <Text fontSize="sm" color="gray.600">{item.label}</Text>
-                <Text fontSize="sm" fontWeight="600" color="red.600">{item.value}</Text>
-              </HStack>
+          <SimpleGrid columns={{ base: 1, sm: 2, lg: 3 }} spacing={4} maxW="900px" mx="auto">
+            {overage.items.map((item, i) => (
+              <MotionBox
+                key={i}
+                initial={{ opacity: 0, y: 15 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.05, duration: 0.4 }}
+              >
+                <HStack
+                  justify="space-between"
+                  p={5}
+                  bg="white"
+                  borderRadius="xl"
+                  border="1px solid"
+                  borderColor="gray.200"
+                  h="full"
+                >
+                  <Text fontWeight="600" fontSize="sm" color="gray.700">{item.unit}</Text>
+                  <Text color="brand.500" fontWeight="800" fontSize="md" whiteSpace="nowrap">{item.price}</Text>
+                </HStack>
+              </MotionBox>
             ))}
-            <Divider borderColor="red.200" />
-            <HStack justify="space-between">
-              <Text fontWeight="700" color="red.700">Total</Text>
-              <Text fontWeight="800" fontSize="lg" color="red.700">{savings.traditional.total}</Text>
-            </HStack>
-          </VStack>
+          </SimpleGrid>
+        </SectionWrapper>
+      )}
 
-          {/* Catalisa */}
-          <VStack flex={1} bg="green.50" p={6} borderRadius="xl" align="stretch" spacing={3}>
-            <Text fontWeight="700" color="green.600">{savings.catalisa.title}</Text>
-            {savings.catalisa.items.map((item) => (
-              <HStack key={item.label} justify="space-between">
-                <Text fontSize="sm" color="gray.600">{item.label}</Text>
-                <Text fontSize="sm" fontWeight="600" color="green.600">{item.value}</Text>
-              </HStack>
+      {/* Savings vs. Hiring — iterates anchors (dual-anchor supported) */}
+      {savingsAnchors.length > 0 && (
+        <SectionWrapper bg="gray.50">
+          <SectionHeader
+            heading={savings.heading}
+            subtitle={savings.subtitle}
+          />
+
+          <VStack spacing={10} maxW="900px" mx="auto" align="stretch">
+            {savingsAnchors.map((anchor, idx) => (
+              <Box key={idx} w="full">
+                {anchor.title && savingsAnchors.length > 1 && (
+                  <Text fontWeight="800" fontSize="md" color="gray.700" mb={4} textAlign="center">
+                    {anchor.title}
+                  </Text>
+                )}
+
+                <Flex direction={{ base: 'column', md: 'row' }} gap={6} align="stretch">
+                  {/* Traditional */}
+                  <VStack flex={1} bg="red.50" p={6} borderRadius="xl" align="stretch" spacing={3}>
+                    <Text fontWeight="700" color="red.600">{anchor.traditional.title}</Text>
+                    {anchor.traditional.items.map((item) => (
+                      <HStack key={item.label} justify="space-between">
+                        <Text fontSize="sm" color="gray.600">{item.label}</Text>
+                        <Text fontSize="sm" fontWeight="600" color="red.600">{item.value}</Text>
+                      </HStack>
+                    ))}
+                    <Divider borderColor="red.200" />
+                    <HStack justify="space-between">
+                      <Text fontWeight="700" color="red.700">Total</Text>
+                      <Text fontWeight="800" fontSize="lg" color="red.700">{anchor.traditional.total}</Text>
+                    </HStack>
+                  </VStack>
+
+                  {/* Catalisa */}
+                  <VStack flex={1} bg="green.50" p={6} borderRadius="xl" align="stretch" spacing={3}>
+                    <Text fontWeight="700" color="green.600">{anchor.catalisa.title}</Text>
+                    {anchor.catalisa.items.map((item) => (
+                      <HStack key={item.label} justify="space-between">
+                        <Text fontSize="sm" color="gray.600">{item.label}</Text>
+                        <Text fontSize="sm" fontWeight="600" color="green.600">{item.value}</Text>
+                      </HStack>
+                    ))}
+                    <Divider borderColor="green.200" />
+                    <HStack justify="space-between">
+                      <Text fontWeight="700" color="green.700">Total</Text>
+                      <Text fontWeight="800" fontSize="lg" color="green.700">{anchor.catalisa.total}</Text>
+                    </HStack>
+                  </VStack>
+                </Flex>
+
+                <Flex justify="center" mt={4}>
+                  <Badge
+                    bg="brand.500"
+                    color="white"
+                    px={6}
+                    py={3}
+                    borderRadius="xl"
+                    fontSize="md"
+                  >
+                    {anchor.savingsLabel}: {anchor.savingsValue} ({anchor.savingsPercent})
+                  </Badge>
+                </Flex>
+              </Box>
             ))}
-            <Divider borderColor="green.200" />
-            <HStack justify="space-between">
-              <Text fontWeight="700" color="green.700">Total</Text>
-              <Text fontWeight="800" fontSize="lg" color="green.700">{savings.catalisa.total}</Text>
-            </HStack>
           </VStack>
-        </Flex>
-
-        {/* Savings badge */}
-        <Flex justify="center" mt={6}>
-          <Badge
-            bg="brand.500"
-            color="white"
-            px={6}
-            py={3}
-            borderRadius="xl"
-            fontSize="md"
-          >
-            {savings.savingsLabel}: {savings.savingsValue} ({savings.savingsPercent})
-          </Badge>
-        </Flex>
-      </SectionWrapper>
+        </SectionWrapper>
+      )}
 
       {/* FAQ */}
       <SectionWrapper bg="gray.50">

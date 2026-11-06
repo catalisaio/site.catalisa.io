@@ -1,0 +1,60 @@
+diff --git a/prompts/director.md b/prompts/director.md
+index 8a161b6..cdcac70 100644
+--- a/prompts/director.md
++++ b/prompts/director.md
+@@ -124,3 +124,11 @@ Siga a receita pedida. Com `auto` (ou sem receita), escolha a que mais vende par
+ - Trabalhe apenas dentro da pasta atual. Não acesse a internet: tudo que você precisa está nos arquivos.
+ - Não altere `captures/`, `brief.json` nem os scripts.
+ - Se os prints forem insuficientes (ex.: só tela de login), faça o melhor roteiro possível com `hook`, `features` e `cta` e explique a limitação no resumo.
++
++### Colagem editorial e personagens animados
++
++Quando o briefing adotar a direção editorial de luxo, a cena principal é `collage`: título Inter Light, assinatura oficial, fotografia recortada e geometria que explica relações. `layers` usa o quadro 1600×900; `layersMobile` recompõe o 1080×1920. As camadas aceitam `kind: shape|photo|video|phone|screen|line`, `box: [x,y,w,h]`, `enter`, `at`, `shape`, `src`, `focus` e `zoom`. `video` coloca um clipe mudo no mesmo recorte de uma foto, conservando a colagem; não use `slices` em vídeo e forneça clipe com duração suficiente para a cena. O vídeo não altera nem substitui a prova real da interface.
++
++Em comparativos de modelos, fixe roteiro, imagem inicial, prompt, duração, resolução, recorte, áudio, textos e montagem; substitua apenas o clipe correspondente ao modelo. Não misture variação de personagem com comparação de animação. Registre custo e configuração de cada geração e aguarde a escolha antes de produzir em lote.
++
++Em temporadas, preserve personagens, figurino, cenário, luz, cores e tratamento de áudio. Varie gesto e enquadramento com as mesmas referências. Cada episódio precisa explicar seu assunto e encerrar com sua própria chamada; a sequência acrescenta uma história maior sem exigir o anterior para compreender o seguinte.
+diff --git a/remotion/Video.tsx b/remotion/Video.tsx
+index 00665d4..d8499ec 100644
+--- a/remotion/Video.tsx
++++ b/remotion/Video.tsx
+@@ -1330,11 +1330,11 @@ const CollageView: React.FC<{ scene: CollageScene }> = ({ scene }) => {
+ 				</div>
+ 			);
+ 		}
+-		// Foto recortada: o ponto de foco fica no centro do recorte; espelhar não muda o enquadramento escolhido.
+ 		const px = (l.flip ? 1 - fx : fx) * 100;
++		const mediaStyle: React.CSSProperties = { width: '100%', height: '100%', objectFit: 'cover', objectPosition: `${px}% ${fy * 100}%`, transform: `${l.flip ? 'scaleX(-1) ' : ''}scale(${l.zoom ?? 1})`, transformOrigin: `${fx * 100}% ${fy * 100}%` };
+ 		return (
+ 			<div key={i} style={{ ...box, borderRadius: radius, overflow: 'hidden', boxShadow: shadow }}>
+-				<Img src={asset(l.src!)} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: `${px}% ${fy * 100}%`, transform: `${l.flip ? 'scaleX(-1) ' : ''}scale(${l.zoom ?? 1})`, transformOrigin: `${fx * 100}% ${fy * 100}%` }} />
++				{l.kind === 'video' ? <OffthreadVideo src={asset(l.src!)} muted style={mediaStyle} /> : <Img src={asset(l.src!)} style={mediaStyle} />}
+ 			</div>
+ 		);
+ 	};
+diff --git a/remotion/types.ts b/remotion/types.ts
+index 08e1144..0d2563d 100644
+--- a/remotion/types.ts
++++ b/remotion/types.ts
+@@ -281,7 +281,7 @@ export type WorldScene = Base & {
+  */
+ export type CollageLayer = {
+ 	/** line = traço laranja que se desenha da esquerda para a direita (box: x, y, comprimento, espessura), com o ponto na ponta. */
+-	kind: 'shape' | 'photo' | 'phone' | 'screen' | 'line';
++	kind: 'shape' | 'photo' | 'video' | 'phone' | 'screen' | 'line';
+ 	/** Recorte: retângulo, círculo, arco (semicírculo em cima) ou meia-lua (reta embaixo). */
+ 	shape?: 'rect' | 'circle' | 'arch' | 'half';
+ 	box: [number, number, number, number];
+diff --git a/scripts/validate.mjs b/scripts/validate.mjs
+index 7723247..60d344c 100644
+--- a/scripts/validate.mjs
++++ b/scripts/validate.mjs
+@@ -162,7 +162,7 @@ scenes.forEach((s, i) => {
+ 			if (s.focus && !['monitor', 'phone', 'both'].includes(s.focus)) err(`${at}: focus deve ser monitor|phone|both`);
+ 			break;
+ 		case 'collage': {
+-			const KINDS = ['shape', 'photo', 'phone', 'screen', 'line'], SHAPES = ['rect', 'circle', 'arch', 'half'], ENTERS = ['up', 'down', 'left', 'right', 'grow', 'reveal', 'fade', 'none', 'wipe', 'spin'];
++			const KINDS = ['shape', 'photo', 'video', 'phone', 'screen', 'line'], SHAPES = ['rect', 'circle', 'arch', 'half'], ENTERS = ['up', 'down', 'left', 'right', 'grow', 'reveal', 'fade', 'none', 'wipe', 'spin'];
+ 			for (const [key, list] of [['layers', s.layers], ['layersMobile', s.layersMobile]]) {
+ 				if (list === undefined && key === 'layersMobile') continue;
+ 				if (!Array.isArray(list) || !list.length || list.length > 14) { err(`${at}: ${key} precisa de 1–14 peças`); continue; }

@@ -1,0 +1,1665 @@
+{
+  "generatedAt": "2026-10-27T02:00:14.111Z",
+  "origin": "https://site-staging.catalisa.io",
+  "passed": true,
+  "scope": "Single-run Chrome laboratory measurement of initial anonymous mobile pages under CDP network/CPU throttling, focused DOM and optional keyboard checks. No field Core Web Vitals, INP claim, full WCAG certification or automated axe/Lighthouse result. No axe/Lighthouse dependency is installed.",
+  "keyboardScope": "390/1440px skip link and menus",
+  "emulation": {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "screen": {
+      "width": 390,
+      "height": 844
+    },
+    "deviceScaleFactor": 3,
+    "isMobile": true,
+    "hasTouch": true,
+    "locale": "pt-BR",
+    "cpuSlowdown": 4,
+    "network": {
+      "offline": false,
+      "latency": 150,
+      "downloadThroughput": 200000,
+      "uploadThroughput": 93750,
+      "connectionType": "cellular4g"
+    },
+    "coldCache": true,
+    "settleAfterFontsAndNetworkMs": 3000
+  },
+  "metricsAreMeasurementsNotThresholdPasses": true,
+  "results": [
+    {
+      "route": "/",
+      "status": 200,
+      "contentEncoding": "zstd",
+      "metrics": {
+        "fcpMs": 1508,
+        "lcp": {
+          "value": 1980,
+          "size": 119224,
+          "element": "IMG",
+          "url": "/redesign/media-v2/hero-composition.webp"
+        },
+        "cls": 0.016353937014166174,
+        "layoutShifts": [
+          {
+            "time": 2818,
+            "value": 0.016353937014166174,
+            "sources": [
+              {
+                "id": null,
+                "className": null,
+                "previous": {
+                  "x": 22,
+                  "y": 260.21875,
+                  "width": 320,
+                  "height": 43.1875
+                },
+                "current": {
+                  "x": 22,
+                  "y": 258.21875,
+                  "width": 320,
+                  "height": 43.1875
+                }
+              },
+              {
+                "id": null,
+                "className": null,
+                "previous": {
+                  "x": 22,
+                  "y": 237.03125,
+                  "width": 320,
+                  "height": 20
+                },
+                "current": {
+                  "x": 22,
+                  "y": 258.21875,
+                  "width": 320,
+                  "height": 20
+                }
+              },
+              {
+                "tag": "SPAN",
+                "id": null,
+                "className": null,
+                "previous": {
+                  "x": 171.765625,
+                  "y": 327.59375,
+                  "width": 8.65625,
+                  "height": 22.390625
+                },
+                "current": {
+                  "x": 180.1875,
+                  "y": 327.59375,
+                  "width": 10.859375,
+                  "height": 22.390625
+                }
+              }
+            ]
+          }
+        ],
+        "longTasks": {
+          "count": 3,
+          "totalMs": 281,
+          "maxMs": 156
+        },
+        "fontsReadyAtCheckMs": 2872.2000000001863,
+        "fontLoadingEvents": [
+          {
+            "event": "loading",
+            "time": 1487.9000000003725
+          },
+          {
+            "event": "loadingdone",
+            "time": 2872.2000000001863
+          }
+        ],
+        "observedUntilMs": 6788.4000000003725,
+        "navigation": {
+          "ttfbMs": 185.5,
+          "domContentLoadedMs": 2412.4000000003725,
+          "loadMs": 3102.3000000002794,
+          "transferSize": 15157,
+          "encodedBodySize": 14857
+        },
+        "resources": {
+          "count": 31,
+          "scriptPaths": [
+            "/assets/AnalyticsConsent-C3mCcOXZ.js",
+            "/assets/App-CHDsO-MB.js",
+            "/assets/Home-Bsyy-QY0.js",
+            "/assets/PreviewMeta-uISoISsC.js",
+            "/assets/ProductName-Ck1nuXqY.js",
+            "/assets/ProductShowcase-tRYk20Yt.js",
+            "/assets/chunk-JZWAC4HX-B-3zMdpZ.js",
+            "/assets/ecosystem-DpyJv1Ax.js",
+            "/assets/foundation-components-DaT-vu2P.js",
+            "/assets/index-i_UZAR9N.js",
+            "/assets/navigation-CRhD5201.js",
+            "/assets/operation-components-xGsa5Mwr.js",
+            "/assets/privacy-CYCxLjnm.js",
+            "/assets/redesign-M5OBwipO.js",
+            "/assets/resources-c2rum-GM.js",
+            "/assets/seo-BgMMcJqv.js",
+            "/assets/site-analytics-BNQSbGzK.js",
+            "/assets/terms-VaW3iTxe.js"
+          ],
+          "transferBytes": 492907,
+          "encodedBytes": 483607,
+          "largest": [
+            {
+              "path": "/redesign/media-v2/architecture-composition.webp",
+              "encodedBytes": 78736,
+              "durationMs": 1501.5,
+              "type": "img"
+            },
+            {
+              "path": "/assets/index-i_UZAR9N.js",
+              "encodedBytes": 78718,
+              "durationMs": 1986.7999999998137,
+              "type": "script"
+            },
+            {
+              "path": "/redesign/media-v2/hero-composition.webp",
+              "encodedBytes": 74784,
+              "durationMs": 1659.2999999998137,
+              "type": "link"
+            },
+            {
+              "path": "/redesign/inter-latin-2.woff2",
+              "encodedBytes": 51080,
+              "durationMs": 1441.8999999999069,
+              "type": "css"
+            },
+            {
+              "path": "/redesign/inter-latin-1.woff2",
+              "encodedBytes": 51024,
+              "durationMs": 1433.2999999998137,
+              "type": "css"
+            },
+            {
+              "path": "/redesign/inter-latin-0.woff2",
+              "encodedBytes": 49416,
+              "durationMs": 1375.2000000001863,
+              "type": "css"
+            },
+            {
+              "path": "/assets/redesign-M5OBwipO.js",
+              "encodedBytes": 17825,
+              "durationMs": 885.1000000000931,
+              "type": "script"
+            },
+            {
+              "path": "/assets/chunk-JZWAC4HX-B-3zMdpZ.js",
+              "encodedBytes": 13867,
+              "durationMs": 839.9000000003725,
+              "type": "script"
+            }
+          ]
+        }
+      },
+      "dom": {
+        "lang": "pt-BR",
+        "startupScript": "/assets/index-i_UZAR9N.js",
+        "mainCount": 1,
+        "h1Count": 1,
+        "controlCount": 31,
+        "unnamedControls": [],
+        "missingAlt": [],
+        "brokenImages": [],
+        "duplicateIds": [],
+        "brokenReferences": [],
+        "overflow": false,
+        "fonts": {
+          "status": "loaded",
+          "faces": [
+            {
+              "family": "Catalisa Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "status": "loaded"
+            }
+          ]
+        },
+        "errorText": []
+      },
+      "exceptions": [],
+      "failedRequests": [],
+      "trackerRequests": [],
+      "legacyChunkRequests": [],
+      "externalOrigins": [],
+      "domChecksPassed": true,
+      "issues": []
+    },
+    {
+      "route": "/arquitetura",
+      "status": 200,
+      "contentEncoding": "zstd",
+      "metrics": {
+        "fcpMs": 1740,
+        "lcp": {
+          "value": 3332,
+          "size": 48670,
+          "element": "H1",
+          "url": null
+        },
+        "cls": 0.0002072391093600888,
+        "layoutShifts": [
+          {
+            "time": 2826.7000000001863,
+            "value": 0.0002072391093600888,
+            "sources": [
+              {
+                "tag": "BUTTON",
+                "id": null,
+                "className": null,
+                "previous": {
+                  "x": 255.953125,
+                  "y": 86,
+                  "width": 112.046875,
+                  "height": 44
+                },
+                "current": {
+                  "x": 250.8125,
+                  "y": 86,
+                  "width": 117.1875,
+                  "height": 44
+                }
+              },
+              {
+                "tag": "SPAN",
+                "id": null,
+                "className": null,
+                "previous": {
+                  "x": 209.109375,
+                  "y": 463.046875,
+                  "width": 7,
+                  "height": 22.390625
+                },
+                "current": {
+                  "x": 219.453125,
+                  "y": 464.046875,
+                  "width": 11.6875,
+                  "height": 22.390625
+                }
+              }
+            ]
+          }
+        ],
+        "longTasks": {
+          "count": 3,
+          "totalMs": 306,
+          "maxMs": 147
+        },
+        "fontsReadyAtCheckMs": 3316.899999999907,
+        "fontLoadingEvents": [
+          {
+            "event": "loading",
+            "time": 1731
+          },
+          {
+            "event": "loadingdone",
+            "time": 2981.3000000002794
+          }
+        ],
+        "observedUntilMs": 6844.300000000279,
+        "navigation": {
+          "ttfbMs": 790.1000000000931,
+          "domContentLoadedMs": 2926.100000000093,
+          "loadMs": 2929.8000000002794,
+          "transferSize": 14395,
+          "encodedBodySize": 14095
+        },
+        "resources": {
+          "count": 26,
+          "scriptPaths": [
+            "/assets/AnalyticsConsent-C3mCcOXZ.js",
+            "/assets/App-CHDsO-MB.js",
+            "/assets/Architecture-CZhueq1I.js",
+            "/assets/PreviewMeta-uISoISsC.js",
+            "/assets/chunk-JZWAC4HX-B-3zMdpZ.js",
+            "/assets/ecosystem-DpyJv1Ax.js",
+            "/assets/foundation-components-DaT-vu2P.js",
+            "/assets/foundations-DGw5N1Vz.js",
+            "/assets/index-i_UZAR9N.js",
+            "/assets/navigation-CRhD5201.js",
+            "/assets/privacy-CYCxLjnm.js",
+            "/assets/redesign-M5OBwipO.js",
+            "/assets/resources-c2rum-GM.js",
+            "/assets/seo-BgMMcJqv.js",
+            "/assets/site-analytics-BNQSbGzK.js",
+            "/assets/terms-VaW3iTxe.js"
+          ],
+          "transferBytes": 330830,
+          "encodedBytes": 323030,
+          "largest": [
+            {
+              "path": "/assets/index-i_UZAR9N.js",
+              "encodedBytes": 78718,
+              "durationMs": 1835.2000000001863,
+              "type": "script"
+            },
+            {
+              "path": "/redesign/inter-latin-2.woff2",
+              "encodedBytes": 51080,
+              "durationMs": 1170.8999999999069,
+              "type": "css"
+            },
+            {
+              "path": "/redesign/inter-latin-1.woff2",
+              "encodedBytes": 51024,
+              "durationMs": 1173.3999999999069,
+              "type": "css"
+            },
+            {
+              "path": "/redesign/inter-latin-0.woff2",
+              "encodedBytes": 49416,
+              "durationMs": 1126.4000000003725,
+              "type": "css"
+            },
+            {
+              "path": "/assets/redesign-M5OBwipO.js",
+              "encodedBytes": 17825,
+              "durationMs": 786.3999999999069,
+              "type": "script"
+            },
+            {
+              "path": "/assets/chunk-JZWAC4HX-B-3zMdpZ.js",
+              "encodedBytes": 13867,
+              "durationMs": 764.2999999998137,
+              "type": "script"
+            },
+            {
+              "path": "/assets/privacy-CYCxLjnm.js",
+              "encodedBytes": 7909,
+              "durationMs": 628.2000000001863,
+              "type": "script"
+            },
+            {
+              "path": "/assets/terms-VaW3iTxe.js",
+              "encodedBytes": 7567,
+              "durationMs": 637,
+              "type": "script"
+            }
+          ]
+        }
+      },
+      "dom": {
+        "lang": "pt-BR",
+        "startupScript": "/assets/index-i_UZAR9N.js",
+        "mainCount": 1,
+        "h1Count": 1,
+        "controlCount": 37,
+        "unnamedControls": [],
+        "missingAlt": [],
+        "brokenImages": [],
+        "duplicateIds": [],
+        "brokenReferences": [],
+        "overflow": false,
+        "fonts": {
+          "status": "loaded",
+          "faces": [
+            {
+              "family": "Catalisa Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "status": "loaded"
+            }
+          ]
+        },
+        "errorText": []
+      },
+      "exceptions": [],
+      "failedRequests": [],
+      "trackerRequests": [],
+      "legacyChunkRequests": [],
+      "externalOrigins": [],
+      "domChecksPassed": true,
+      "issues": []
+    },
+    {
+      "route": "/contato",
+      "status": 200,
+      "contentEncoding": "zstd",
+      "metrics": {
+        "fcpMs": 3176,
+        "lcp": {
+          "value": 5156,
+          "size": 26244,
+          "element": "P",
+          "url": null
+        },
+        "cls": 0.00009624864980167815,
+        "layoutShifts": [
+          {
+            "time": 3925.899999999907,
+            "value": 0.00009624864980167815,
+            "sources": [
+              {
+                "tag": "BUTTON",
+                "id": null,
+                "className": "z-prototype",
+                "previous": {
+                  "x": 285.765625,
+                  "y": 103,
+                  "width": 82.234375,
+                  "height": 44
+                },
+                "current": {
+                  "x": 278.9375,
+                  "y": 103,
+                  "width": 89.0625,
+                  "height": 44
+                }
+              }
+            ]
+          }
+        ],
+        "longTasks": {
+          "count": 3,
+          "totalMs": 269,
+          "maxMs": 142
+        },
+        "fontsReadyAtCheckMs": 4911.5999999996275,
+        "fontLoadingEvents": [
+          {
+            "event": "loading",
+            "time": 3174.0999999996275
+          },
+          {
+            "event": "loadingdone",
+            "time": 3955.5
+          }
+        ],
+        "observedUntilMs": 8183.0999999996275,
+        "navigation": {
+          "ttfbMs": 2216.5999999996275,
+          "domContentLoadedMs": 3724.6999999997206,
+          "loadMs": 3931.0999999996275,
+          "transferSize": 9034,
+          "encodedBodySize": 8734
+        },
+        "resources": {
+          "count": 26,
+          "scriptPaths": [
+            "/assets/AnalyticsConsent-C3mCcOXZ.js",
+            "/assets/App-CHDsO-MB.js",
+            "/assets/Contact-BEh_LRYN.js",
+            "/assets/PreviewMeta-uISoISsC.js",
+            "/assets/chunk-JZWAC4HX-B-3zMdpZ.js",
+            "/assets/ecosystem-DpyJv1Ax.js",
+            "/assets/foundation-components-DaT-vu2P.js",
+            "/assets/index-i_UZAR9N.js",
+            "/assets/navigation-CRhD5201.js",
+            "/assets/privacy-CYCxLjnm.js",
+            "/assets/redesign-M5OBwipO.js",
+            "/assets/resources-c2rum-GM.js",
+            "/assets/seo-BgMMcJqv.js",
+            "/assets/site-analytics-BNQSbGzK.js",
+            "/assets/site-client-BJfA8EhM.js",
+            "/assets/terms-VaW3iTxe.js"
+          ],
+          "transferBytes": 297638,
+          "encodedBytes": 289838,
+          "largest": [
+            {
+              "path": "/assets/index-i_UZAR9N.js",
+              "encodedBytes": 78718,
+              "durationMs": 1335.7000000001863,
+              "type": "script"
+            },
+            {
+              "path": "/redesign/inter-latin-2.woff2",
+              "encodedBytes": 51080,
+              "durationMs": 798.5,
+              "type": "css"
+            },
+            {
+              "path": "/redesign/inter-latin-0.woff2",
+              "encodedBytes": 49416,
+              "durationMs": 775.8999999999069,
+              "type": "css"
+            },
+            {
+              "path": "/assets/Contact-BEh_LRYN.js",
+              "encodedBytes": 19815,
+              "durationMs": 275.20000000018626,
+              "type": "script"
+            },
+            {
+              "path": "/assets/redesign-M5OBwipO.js",
+              "encodedBytes": 17825,
+              "durationMs": 770.5,
+              "type": "script"
+            },
+            {
+              "path": "/assets/chunk-JZWAC4HX-B-3zMdpZ.js",
+              "encodedBytes": 13867,
+              "durationMs": 734.2999999998137,
+              "type": "script"
+            },
+            {
+              "path": "/assets/Contact-DkEpSUND.css",
+              "encodedBytes": 12984,
+              "durationMs": 720.1000000000931,
+              "type": "link"
+            },
+            {
+              "path": "/assets/privacy-CYCxLjnm.js",
+              "encodedBytes": 7909,
+              "durationMs": 612.7000000001863,
+              "type": "script"
+            }
+          ]
+        }
+      },
+      "dom": {
+        "lang": "pt-BR",
+        "startupScript": "/assets/index-i_UZAR9N.js",
+        "mainCount": 1,
+        "h1Count": 1,
+        "controlCount": 27,
+        "unnamedControls": [],
+        "missingAlt": [],
+        "brokenImages": [],
+        "duplicateIds": [],
+        "brokenReferences": [],
+        "overflow": false,
+        "fonts": {
+          "status": "loaded",
+          "faces": [
+            {
+              "family": "Catalisa Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "status": "loaded"
+            }
+          ]
+        },
+        "errorText": []
+      },
+      "exceptions": [],
+      "failedRequests": [],
+      "trackerRequests": [],
+      "legacyChunkRequests": [],
+      "externalOrigins": [],
+      "domChecksPassed": true,
+      "issues": []
+    },
+    {
+      "route": "/lab",
+      "status": 200,
+      "contentEncoding": "zstd",
+      "metrics": {
+        "fcpMs": 2200,
+        "lcp": {
+          "value": 3512,
+          "size": 58410,
+          "element": "H1",
+          "url": null
+        },
+        "cls": 0.0008034237948211128,
+        "layoutShifts": [
+          {
+            "time": 3273,
+            "value": 0.0008034237948211128,
+            "sources": [
+              {
+                "tag": "FORM",
+                "id": "l-form",
+                "className": null,
+                "previous": {
+                  "x": 45,
+                  "y": 666.421875,
+                  "width": 300,
+                  "height": 177.578125
+                },
+                "current": {
+                  "x": 45,
+                  "y": 669.421875,
+                  "width": 300,
+                  "height": 174.578125
+                }
+              },
+              {
+                "tag": "H2",
+                "id": null,
+                "className": null,
+                "previous": {
+                  "x": 45,
+                  "y": 575.421875,
+                  "width": 300,
+                  "height": 66
+                },
+                "current": {
+                  "x": 45,
+                  "y": 576.421875,
+                  "width": 300,
+                  "height": 69
+                }
+              }
+            ]
+          }
+        ],
+        "longTasks": {
+          "count": 3,
+          "totalMs": 240,
+          "maxMs": 113
+        },
+        "fontsReadyAtCheckMs": 3525,
+        "fontLoadingEvents": [
+          {
+            "event": "loading",
+            "time": 2191
+          },
+          {
+            "event": "loadingdone",
+            "time": 3351.5
+          }
+        ],
+        "observedUntilMs": 7515.5,
+        "navigation": {
+          "ttfbMs": 1286.8999999999069,
+          "domContentLoadedMs": 3204.0999999996275,
+          "loadMs": 3282.5999999996275,
+          "transferSize": 9210,
+          "encodedBodySize": 8910
+        },
+        "resources": {
+          "count": 27,
+          "scriptPaths": [
+            "/assets/AnalyticsConsent-C3mCcOXZ.js",
+            "/assets/App-CHDsO-MB.js",
+            "/assets/Lab-B9xL5fpR.js",
+            "/assets/PreviewMeta-uISoISsC.js",
+            "/assets/chunk-JZWAC4HX-B-3zMdpZ.js",
+            "/assets/ecosystem-DpyJv1Ax.js",
+            "/assets/foundation-components-DaT-vu2P.js",
+            "/assets/index-i_UZAR9N.js",
+            "/assets/navigation-CRhD5201.js",
+            "/assets/privacy-CYCxLjnm.js",
+            "/assets/redesign-M5OBwipO.js",
+            "/assets/resources-c2rum-GM.js",
+            "/assets/seo-BgMMcJqv.js",
+            "/assets/site-analytics-BNQSbGzK.js",
+            "/assets/site-client-BJfA8EhM.js",
+            "/assets/terms-VaW3iTxe.js"
+          ],
+          "transferBytes": 333166,
+          "encodedBytes": 325066,
+          "largest": [
+            {
+              "path": "/assets/index-i_UZAR9N.js",
+              "encodedBytes": 78718,
+              "durationMs": 1736,
+              "type": "script"
+            },
+            {
+              "path": "/redesign/inter-latin-2.woff2",
+              "encodedBytes": 51080,
+              "durationMs": 1129.7000000001863,
+              "type": "css"
+            },
+            {
+              "path": "/redesign/inter-latin-1.woff2",
+              "encodedBytes": 51024,
+              "durationMs": 1137.2999999998137,
+              "type": "css"
+            },
+            {
+              "path": "/redesign/inter-latin-0.woff2",
+              "encodedBytes": 49416,
+              "durationMs": 1093.6000000000931,
+              "type": "css"
+            },
+            {
+              "path": "/assets/redesign-M5OBwipO.js",
+              "encodedBytes": 17825,
+              "durationMs": 799.2000000001863,
+              "type": "script"
+            },
+            {
+              "path": "/assets/chunk-JZWAC4HX-B-3zMdpZ.js",
+              "encodedBytes": 13867,
+              "durationMs": 770.2000000001863,
+              "type": "script"
+            },
+            {
+              "path": "/assets/Lab-B9xL5fpR.js",
+              "encodedBytes": 9495,
+              "durationMs": 705.2999999998137,
+              "type": "script"
+            },
+            {
+              "path": "/assets/privacy-CYCxLjnm.js",
+              "encodedBytes": 7909,
+              "durationMs": 649.0999999996275,
+              "type": "script"
+            }
+          ]
+        }
+      },
+      "dom": {
+        "lang": "pt-BR",
+        "startupScript": "/assets/index-i_UZAR9N.js",
+        "mainCount": 1,
+        "h1Count": 1,
+        "controlCount": 34,
+        "unnamedControls": [],
+        "missingAlt": [],
+        "brokenImages": [],
+        "duplicateIds": [],
+        "brokenReferences": [],
+        "overflow": false,
+        "fonts": {
+          "status": "loaded",
+          "faces": [
+            {
+              "family": "Catalisa Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "status": "loaded"
+            }
+          ]
+        },
+        "errorText": []
+      },
+      "exceptions": [],
+      "failedRequests": [],
+      "trackerRequests": [],
+      "legacyChunkRequests": [],
+      "externalOrigins": [],
+      "domChecksPassed": true,
+      "issues": []
+    },
+    {
+      "route": "/produtos",
+      "status": 200,
+      "contentEncoding": "zstd",
+      "metrics": {
+        "fcpMs": 904,
+        "lcp": {
+          "value": 3016,
+          "size": 98292,
+          "element": "IMG",
+          "url": "/redesign/media-v2/hero-composition.webp"
+        },
+        "cls": 0.0005542661299565344,
+        "layoutShifts": [
+          {
+            "time": 2578.399999999907,
+            "value": 0.0005542661299565344,
+            "sources": [
+              {
+                "tag": "A",
+                "id": null,
+                "className": null,
+                "previous": {
+                  "x": 207.5,
+                  "y": 736.78125,
+                  "width": 136.65625,
+                  "height": 40
+                },
+                "current": {
+                  "x": 218.703125,
+                  "y": 737.78125,
+                  "width": 146.890625,
+                  "height": 40
+                }
+              },
+              {
+                "tag": "SPAN",
+                "id": null,
+                "className": "p-hero-signature",
+                "previous": {
+                  "x": 300.9971923828125,
+                  "y": 654.060302734375,
+                  "width": 60.6412353515625,
+                  "height": 25.07562255859375
+                },
+                "current": {
+                  "x": 296.40625,
+                  "y": 654.03466796875,
+                  "width": 66.00100708007812,
+                  "height": 26.26092529296875
+                }
+              },
+              {
+                "tag": "SPAN",
+                "id": null,
+                "className": null,
+                "previous": {
+                  "x": 200.875,
+                  "y": 390.625,
+                  "width": 7,
+                  "height": 16
+                },
+                "current": {
+                  "x": 208.859375,
+                  "y": 391.125,
+                  "width": 11.6875,
+                  "height": 17
+                }
+              },
+              {
+                "tag": "SPAN",
+                "id": null,
+                "className": null,
+                "previous": {
+                  "x": 177,
+                  "y": 750.78125,
+                  "width": 5.5,
+                  "height": 12
+                },
+                "current": {
+                  "x": 184.515625,
+                  "y": 750.78125,
+                  "width": 9.1875,
+                  "height": 14
+                }
+              }
+            ]
+          }
+        ],
+        "longTasks": {
+          "count": 3,
+          "totalMs": 225,
+          "maxMs": 118
+        },
+        "fontsReadyAtCheckMs": 3070.2999999998137,
+        "fontLoadingEvents": [
+          {
+            "event": "loading",
+            "time": 898.5
+          },
+          {
+            "event": "loadingdone",
+            "time": 2672
+          }
+        ],
+        "observedUntilMs": 6910.699999999721,
+        "navigation": {
+          "ttfbMs": 192.6999999997206,
+          "domContentLoadedMs": 2845.399999999907,
+          "loadMs": 3235.399999999907,
+          "transferSize": 9160,
+          "encodedBodySize": 8860
+        },
+        "resources": {
+          "count": 27,
+          "scriptPaths": [
+            "/assets/AnalyticsConsent-C3mCcOXZ.js",
+            "/assets/App-CHDsO-MB.js",
+            "/assets/PreviewMeta-uISoISsC.js",
+            "/assets/Products-ADa6ZLLB.js",
+            "/assets/chunk-JZWAC4HX-B-3zMdpZ.js",
+            "/assets/ecosystem-DpyJv1Ax.js",
+            "/assets/foundation-components-DaT-vu2P.js",
+            "/assets/index-i_UZAR9N.js",
+            "/assets/navigation-CRhD5201.js",
+            "/assets/privacy-CYCxLjnm.js",
+            "/assets/product-directory-UAyYVusM.js",
+            "/assets/redesign-M5OBwipO.js",
+            "/assets/resources-c2rum-GM.js",
+            "/assets/seo-BgMMcJqv.js",
+            "/assets/site-analytics-BNQSbGzK.js",
+            "/assets/terms-VaW3iTxe.js"
+          ],
+          "transferBytes": 534628,
+          "encodedBytes": 526528,
+          "largest": [
+            {
+              "path": "/redesign/financial-city.webp",
+              "encodedBytes": 113386,
+              "durationMs": 2336.7000000001863,
+              "type": "img"
+            },
+            {
+              "path": "/redesign/media-v2/architecture-composition.webp",
+              "encodedBytes": 78736,
+              "durationMs": 2156.2000000001863,
+              "type": "img"
+            },
+            {
+              "path": "/assets/index-i_UZAR9N.js",
+              "encodedBytes": 78718,
+              "durationMs": 2436.1999999997206,
+              "type": "script"
+            },
+            {
+              "path": "/redesign/media-v2/hero-composition.webp",
+              "encodedBytes": 74784,
+              "durationMs": 2511.600000000093,
+              "type": "img"
+            },
+            {
+              "path": "/redesign/inter-latin-2.woff2",
+              "encodedBytes": 51080,
+              "durationMs": 1802.7000000001863,
+              "type": "css"
+            },
+            {
+              "path": "/redesign/inter-latin-0.woff2",
+              "encodedBytes": 49416,
+              "durationMs": 1712,
+              "type": "css"
+            },
+            {
+              "path": "/assets/redesign-M5OBwipO.js",
+              "encodedBytes": 17825,
+              "durationMs": 1017.1999999997206,
+              "type": "script"
+            },
+            {
+              "path": "/assets/chunk-JZWAC4HX-B-3zMdpZ.js",
+              "encodedBytes": 13867,
+              "durationMs": 904,
+              "type": "script"
+            }
+          ]
+        }
+      },
+      "dom": {
+        "lang": "pt-BR",
+        "startupScript": "/assets/index-i_UZAR9N.js",
+        "mainCount": 1,
+        "h1Count": 1,
+        "controlCount": 36,
+        "unnamedControls": [],
+        "missingAlt": [],
+        "brokenImages": [],
+        "duplicateIds": [],
+        "brokenReferences": [],
+        "overflow": false,
+        "fonts": {
+          "status": "loaded",
+          "faces": [
+            {
+              "family": "Catalisa Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "status": "loaded"
+            }
+          ]
+        },
+        "errorText": []
+      },
+      "exceptions": [],
+      "failedRequests": [],
+      "trackerRequests": [],
+      "legacyChunkRequests": [],
+      "externalOrigins": [],
+      "domChecksPassed": true,
+      "issues": []
+    },
+    {
+      "route": "/ecossistema/banking",
+      "status": 200,
+      "contentEncoding": "zstd",
+      "metrics": {
+        "fcpMs": 1436,
+        "lcp": {
+          "value": 2588,
+          "size": 60780,
+          "element": "IMG",
+          "url": "/redesign/screens/bank-desktop.jpg"
+        },
+        "cls": 0.0003652859466995984,
+        "layoutShifts": [
+          {
+            "time": 2910.100000000093,
+            "value": 0.0003652859466995984,
+            "sources": [
+              {
+                "id": null,
+                "className": null,
+                "previous": {
+                  "x": 22,
+                  "y": 251.484375,
+                  "width": 346,
+                  "height": 57
+                },
+                "current": {
+                  "x": 22,
+                  "y": 249.484375,
+                  "width": 346,
+                  "height": 57
+                }
+              },
+              {
+                "tag": "SPAN",
+                "id": null,
+                "className": null,
+                "previous": {
+                  "x": 200.390625,
+                  "y": 417.40625,
+                  "width": 8.65625,
+                  "height": 21
+                },
+                "current": {
+                  "x": 205.28125,
+                  "y": 417.40625,
+                  "width": 10.859375,
+                  "height": 21
+                }
+              }
+            ]
+          }
+        ],
+        "longTasks": {
+          "count": 3,
+          "totalMs": 241,
+          "maxMs": 130
+        },
+        "fontsReadyAtCheckMs": 3110.5,
+        "fontLoadingEvents": [
+          {
+            "event": "loading",
+            "time": 1419.7000000001863
+          },
+          {
+            "event": "loadingdone",
+            "time": 3026.600000000093
+          }
+        ],
+        "observedUntilMs": 6795.800000000279,
+        "navigation": {
+          "ttfbMs": 276,
+          "domContentLoadedMs": 3016.2000000001863,
+          "loadMs": 3017.9000000003725,
+          "transferSize": 14581,
+          "encodedBodySize": 14281
+        },
+        "resources": {
+          "count": 36,
+          "scriptPaths": [
+            "/assets/AnalyticsConsent-C3mCcOXZ.js",
+            "/assets/App-CHDsO-MB.js",
+            "/assets/Banking-Ctz7vi10.js",
+            "/assets/PreviewMeta-uISoISsC.js",
+            "/assets/ProductDetail-Da3i-5kD.js",
+            "/assets/ProductShowcase-tRYk20Yt.js",
+            "/assets/chunk-JZWAC4HX-B-3zMdpZ.js",
+            "/assets/ecosystem-DpyJv1Ax.js",
+            "/assets/financial-D-pWSgVW.js",
+            "/assets/format-B_F_ffRt.js",
+            "/assets/foundation-components-DaT-vu2P.js",
+            "/assets/index-i_UZAR9N.js",
+            "/assets/navigation-CRhD5201.js",
+            "/assets/operation-components-xGsa5Mwr.js",
+            "/assets/privacy-CYCxLjnm.js",
+            "/assets/product-directory-UAyYVusM.js",
+            "/assets/redesign-M5OBwipO.js",
+            "/assets/resources-c2rum-GM.js",
+            "/assets/seo-BgMMcJqv.js",
+            "/assets/site-analytics-BNQSbGzK.js",
+            "/assets/terms-VaW3iTxe.js"
+          ],
+          "transferBytes": 466116,
+          "encodedBytes": 455316,
+          "largest": [
+            {
+              "path": "/assets/index-i_UZAR9N.js",
+              "encodedBytes": 78718,
+              "durationMs": 2492.100000000093,
+              "type": "script"
+            },
+            {
+              "path": "/redesign/screens/bank-mobile.png",
+              "encodedBytes": 60688,
+              "durationMs": 2281.5,
+              "type": "img"
+            },
+            {
+              "path": "/redesign/screens/bank-desktop.jpg",
+              "encodedBytes": 53615,
+              "durationMs": 2095.399999999907,
+              "type": "img"
+            },
+            {
+              "path": "/redesign/inter-latin-2.woff2",
+              "encodedBytes": 51080,
+              "durationMs": 1586.6000000000931,
+              "type": "css"
+            },
+            {
+              "path": "/redesign/inter-latin-1.woff2",
+              "encodedBytes": 51024,
+              "durationMs": 1591.3999999999069,
+              "type": "css"
+            },
+            {
+              "path": "/redesign/inter-latin-0.woff2",
+              "encodedBytes": 49416,
+              "durationMs": 1534.3999999999069,
+              "type": "css"
+            },
+            {
+              "path": "/assets/redesign-M5OBwipO.js",
+              "encodedBytes": 17825,
+              "durationMs": 1018,
+              "type": "script"
+            },
+            {
+              "path": "/assets/chunk-JZWAC4HX-B-3zMdpZ.js",
+              "encodedBytes": 13867,
+              "durationMs": 943.7999999998137,
+              "type": "script"
+            }
+          ]
+        }
+      },
+      "dom": {
+        "lang": "pt-BR",
+        "startupScript": "/assets/index-i_UZAR9N.js",
+        "mainCount": 1,
+        "h1Count": 1,
+        "controlCount": 56,
+        "unnamedControls": [],
+        "missingAlt": [],
+        "brokenImages": [],
+        "duplicateIds": [],
+        "brokenReferences": [],
+        "overflow": false,
+        "fonts": {
+          "status": "loaded",
+          "faces": [
+            {
+              "family": "Catalisa Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "status": "loaded"
+            }
+          ]
+        },
+        "errorText": []
+      },
+      "exceptions": [],
+      "failedRequests": [],
+      "trackerRequests": [],
+      "legacyChunkRequests": [],
+      "externalOrigins": [],
+      "domChecksPassed": true,
+      "issues": []
+    },
+    {
+      "route": "/ecossistema/credit",
+      "status": 200,
+      "contentEncoding": "zstd",
+      "metrics": {
+        "fcpMs": 3312,
+        "lcp": {
+          "value": 4956,
+          "size": 72492,
+          "element": "IMG",
+          "url": "/redesign/screens/credit-queue.png"
+        },
+        "cls": 0,
+        "layoutShifts": [],
+        "longTasks": {
+          "count": 3,
+          "totalMs": 235,
+          "maxMs": 113
+        },
+        "fontsReadyAtCheckMs": 5223,
+        "fontLoadingEvents": [
+          {
+            "event": "loading",
+            "time": 3298.2000000001863
+          },
+          {
+            "event": "loadingdone",
+            "time": 5223
+          }
+        ],
+        "observedUntilMs": 8902.100000000093,
+        "navigation": {
+          "ttfbMs": 2225,
+          "domContentLoadedMs": 4681.399999999907,
+          "loadMs": 5184.100000000093,
+          "transferSize": 12874,
+          "encodedBodySize": 12574
+        },
+        "resources": {
+          "count": 35,
+          "scriptPaths": [
+            "/assets/AnalyticsConsent-C3mCcOXZ.js",
+            "/assets/App-CHDsO-MB.js",
+            "/assets/Credit-CZM_d_jx.js",
+            "/assets/PreviewMeta-uISoISsC.js",
+            "/assets/ProductDetail-Da3i-5kD.js",
+            "/assets/ProductShowcase-tRYk20Yt.js",
+            "/assets/chunk-JZWAC4HX-B-3zMdpZ.js",
+            "/assets/ecosystem-DpyJv1Ax.js",
+            "/assets/financial-D-pWSgVW.js",
+            "/assets/foundation-components-DaT-vu2P.js",
+            "/assets/index-i_UZAR9N.js",
+            "/assets/navigation-CRhD5201.js",
+            "/assets/operation-components-xGsa5Mwr.js",
+            "/assets/privacy-CYCxLjnm.js",
+            "/assets/product-directory-UAyYVusM.js",
+            "/assets/redesign-M5OBwipO.js",
+            "/assets/resources-c2rum-GM.js",
+            "/assets/seo-BgMMcJqv.js",
+            "/assets/site-analytics-BNQSbGzK.js",
+            "/assets/terms-VaW3iTxe.js"
+          ],
+          "transferBytes": 520159,
+          "encodedBytes": 509659,
+          "largest": [
+            {
+              "path": "/redesign/inter-0.woff2",
+              "encodedBytes": 108560,
+              "durationMs": 1913.8000000002794,
+              "type": "css"
+            },
+            {
+              "path": "/assets/index-i_UZAR9N.js",
+              "encodedBytes": 78718,
+              "durationMs": 2245.7000000001863,
+              "type": "script"
+            },
+            {
+              "path": "/redesign/screens/credit-queue.png",
+              "encodedBytes": 65654,
+              "durationMs": 2444,
+              "type": "img"
+            },
+            {
+              "path": "/redesign/inter-latin-2.woff2",
+              "encodedBytes": 51080,
+              "durationMs": 1646.6999999997206,
+              "type": "css"
+            },
+            {
+              "path": "/redesign/inter-latin-1.woff2",
+              "encodedBytes": 51024,
+              "durationMs": 1659.8999999999069,
+              "type": "css"
+            },
+            {
+              "path": "/redesign/inter-latin-0.woff2",
+              "encodedBytes": 49416,
+              "durationMs": 1587.3999999999069,
+              "type": "css"
+            },
+            {
+              "path": "/assets/redesign-M5OBwipO.js",
+              "encodedBytes": 17825,
+              "durationMs": 1017.5,
+              "type": "script"
+            },
+            {
+              "path": "/assets/chunk-JZWAC4HX-B-3zMdpZ.js",
+              "encodedBytes": 13867,
+              "durationMs": 964.1999999997206,
+              "type": "script"
+            }
+          ]
+        }
+      },
+      "dom": {
+        "lang": "pt-BR",
+        "startupScript": "/assets/index-i_UZAR9N.js",
+        "mainCount": 1,
+        "h1Count": 1,
+        "controlCount": 49,
+        "unnamedControls": [],
+        "missingAlt": [],
+        "brokenImages": [],
+        "duplicateIds": [],
+        "brokenReferences": [],
+        "overflow": false,
+        "fonts": {
+          "status": "loaded",
+          "faces": [
+            {
+              "family": "Catalisa Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "status": "loaded"
+            }
+          ]
+        },
+        "errorText": []
+      },
+      "exceptions": [],
+      "failedRequests": [],
+      "trackerRequests": [],
+      "legacyChunkRequests": [],
+      "externalOrigins": [],
+      "domChecksPassed": true,
+      "issues": []
+    }
+  ],
+  "keyboard": [
+    {
+      "width": 390,
+      "check": "skip link reaches main",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "menu": "all",
+      "check": "Enter/Tab loop/Shift+Tab/Escape/focus return/no heading movement",
+      "maxHeadingShiftPx": 0,
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "check": "skip link reaches main",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "menu": "platform",
+      "check": "Enter/Tab loop/Shift+Tab/Escape/focus return/no heading movement",
+      "maxHeadingShiftPx": 0,
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "menu": "all",
+      "check": "Enter/Tab loop/Shift+Tab/Escape/focus return/no heading movement",
+      "maxHeadingShiftPx": 0,
+      "passed": true
+    }
+  ],
+  "failures": []
+}

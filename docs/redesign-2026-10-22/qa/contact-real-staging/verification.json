@@ -1,0 +1,508 @@
+{
+  "date": "2026-10-26T15:47:41.781Z",
+  "passed": true,
+  "origin": "https://site-staging.catalisa.io",
+  "tlsValidation": true,
+  "scope": "Real staging AI through the target browser/BFF, fictional short contact flows, human review, reload, one free refinement. No handoff or external messages.",
+  "results": [
+    {
+      "key": "loja-whatsapp",
+      "passed": true,
+      "briefing": {
+        "idea": "vender pelo whats",
+        "context": "loja de roupas",
+        "goal": "vender mais"
+      },
+      "elapsedMs": 14947,
+      "reviewElapsedMs": 49,
+      "hadReview": true,
+      "concept": {
+        "conceptRef": "concept_883de4eb-8a55-4bf8-a676-0dffcd4098f1",
+        "version": 1,
+        "briefVersion": 3,
+        "content": {
+          "schemaVersion": "1.0",
+          "title": "Venda de Roupas pelo WhatsApp",
+          "summary": "Plataforma para impulsionar vendas de roupas via WhatsApp, facilitando o contato direto com clientes e gerenciamento de pedidos.",
+          "hypothesis": "Aumentar as vendas por meio de um canal direto e interativo como o WhatsApp pode melhorar a experiência do cliente e a taxa de conversão.",
+          "roles": [
+            "Vendedor",
+            "Cliente"
+          ],
+          "screens": [
+            {
+              "id": "whatsapp_contact",
+              "title": "Contato via WhatsApp",
+              "description": "Tela onde o vendedor inicia o contato com o cliente pelo WhatsApp.",
+              "items": [
+                {
+                  "label": "Iniciar conversa",
+                  "value": "Clique para enviar mensagem ao cliente"
+                },
+                {
+                  "label": "Enviar catálogo",
+                  "value": "Compartilhe fotos das roupas disponíveis"
+                },
+                {
+                  "label": "Receber pedidos",
+                  "value": "Anote os pedidos feitos pelo cliente"
+                }
+              ],
+              "action": {
+                "label": "Próxima etapa",
+                "nextScreenId": "order_confirmation"
+              }
+            },
+            {
+              "id": "order_confirmation",
+              "title": "Confirmação de Pedido",
+              "description": "Tela onde o vendedor confirma os detalhes do pedido com o cliente.",
+              "items": [
+                {
+                  "label": "Ver detalhes do pedido",
+                  "value": "Revise os itens solicitados"
+                },
+                {
+                  "label": "Confirmar pagamento",
+                  "value": "Aguarde a confirmação do pagamento"
+                },
+                {
+                  "label": "Finalizar venda",
+                  "value": "Conclua a venda e envie um resumo"
+                }
+              ],
+              "action": {
+                "label": "Enviar resumo",
+                "nextScreenId": null
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "slug": "wpp",
+              "role": "Canal principal de vendas"
+            },
+            {
+              "slug": "email",
+              "role": "Notificações após conferência humana"
+            }
+          ],
+          "journey": [
+            {
+              "id": "initiate_contact",
+              "label": "Iniciar Contato",
+              "description": "O vendedor inicia o contato com o cliente via WhatsApp.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "confirm_order",
+              "label": "Confirmar Pedido",
+              "description": "O vendedor confirma os detalhes do pedido com o cliente.",
+              "blockSlugs": [
+                "email"
+              ],
+              "humanReview": true
+            }
+          ],
+          "limitations": [
+            "Este conceito não abrange outros canais de vendas além do WhatsApp.",
+            "As interações dependem da disponibilidade do vendedor e do cliente.",
+            "Não inclui métricas de desempenho nem previsões de vendas.",
+            "A implementação de pagamento via WhatsApp não está detalhada."
+          ],
+          "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+        }
+      },
+      "refinement": {
+        "elapsedMs": 11580,
+        "concept": {
+          "conceptRef": "concept_883de4eb-8a55-4bf8-a676-0dffcd4098f1",
+          "version": 2,
+          "briefVersion": 3,
+          "content": {
+            "schemaVersion": "1.0",
+            "title": "Venda de Roupas pelo WhatsApp",
+            "summary": "Plataforma para impulsionar vendas de roupas via WhatsApp, facilitando o contato direto com clientes e gerenciamento de pedidos.",
+            "hypothesis": "Aumentar as vendas por meio de um canal direto e interativo como o WhatsApp pode melhorar a experiência do cliente e a taxa de conversão.",
+            "roles": [
+              "Vendedor",
+              "Cliente"
+            ],
+            "screens": [
+              {
+                "id": "whatsapp_contact",
+                "title": "Contato via WhatsApp",
+                "description": "Tela onde o vendedor inicia o contato com o cliente pelo WhatsApp.",
+                "items": [
+                  {
+                    "label": "Iniciar conversa",
+                    "value": "Clique para enviar mensagem ao cliente"
+                  },
+                  {
+                    "label": "Enviar catálogo",
+                    "value": "Compartilhe fotos das roupas disponíveis"
+                  },
+                  {
+                    "label": "Receber pedidos",
+                    "value": "Anote os pedidos feitos pelo cliente"
+                  }
+                ],
+                "action": {
+                  "label": "Próxima etapa",
+                  "nextScreenId": "order_confirmation"
+                }
+              },
+              {
+                "id": "order_confirmation",
+                "title": "Confirmação de Pedido",
+                "description": "Tela onde o vendedor confirma os detalhes do pedido com o cliente.",
+                "items": [
+                  {
+                    "label": "Ver detalhes do pedido",
+                    "value": "Revise os itens solicitados"
+                  },
+                  {
+                    "label": "Confirmar pagamento",
+                    "value": "Aguarde a confirmação do pagamento"
+                  },
+                  {
+                    "label": "Finalizar venda",
+                    "value": "Conclua a venda e envie um resumo"
+                  }
+                ],
+                "action": {
+                  "label": "Enviar resumo",
+                  "nextScreenId": null
+                }
+              }
+            ],
+            "blocks": [
+              {
+                "slug": "wpp",
+                "role": "Canal principal de vendas"
+              },
+              {
+                "slug": "email",
+                "role": "Notificações após conferência humana"
+              }
+            ],
+            "journey": [
+              {
+                "id": "initiate_contact",
+                "label": "Iniciar Contato",
+                "description": "O vendedor inicia o contato com o cliente via WhatsApp.",
+                "blockSlugs": [
+                  "wpp"
+                ],
+                "humanReview": false
+              },
+              {
+                "id": "confirm_order",
+                "label": "Confirmar Pedido",
+                "description": "O vendedor confirma os detalhes do pedido com o cliente.",
+                "blockSlugs": [
+                  "email"
+                ],
+                "humanReview": true
+              }
+            ],
+            "limitations": [
+              "Este conceito não abrange outros canais de vendas além do WhatsApp.",
+              "As interações dependem da disponibilidade do vendedor e do cliente.",
+              "Não inclui métricas de desempenho nem previsões de vendas.",
+              "A implementação de pagamento via WhatsApp não está detalhada."
+            ],
+            "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "key": "clinica-agenda",
+      "passed": true,
+      "briefing": {
+        "idea": "agenda clinica",
+        "context": "dentista",
+        "goal": "menos faltas"
+      },
+      "elapsedMs": 18924,
+      "reviewElapsedMs": 35,
+      "hadReview": true,
+      "concept": {
+        "conceptRef": "concept_2bc01466-fb0a-4a7c-8258-9570893e90a1",
+        "version": 1,
+        "briefVersion": 3,
+        "content": {
+          "schemaVersion": "1.0",
+          "title": "Agenda Clínica",
+          "summary": "Sistema de agendamento para consultórios odontológicos, visando reduzir faltas e otimizar a agenda.",
+          "hypothesis": "Dentistas terão maior controle sobre suas agendas, reduzindo o número de faltas e melhorando a experiência do paciente.",
+          "roles": [
+            "Dentista",
+            "Recepcionista"
+          ],
+          "screens": [
+            {
+              "id": "tela-agendamento",
+              "title": "Agendamento de Consultas",
+              "description": "Tela para agendar, alterar ou cancelar consultas com os pacientes.",
+              "items": [
+                {
+                  "label": "Data",
+                  "value": "26/10/2026"
+                },
+                {
+                  "label": "Horário",
+                  "value": "14:00"
+                },
+                {
+                  "label": "Paciente",
+                  "value": "João Silva"
+                }
+              ],
+              "action": {
+                "label": "Confirmar Agendamento",
+                "nextScreenId": "tela-confirmacao"
+              }
+            },
+            {
+              "id": "tela-confirmacao",
+              "title": "Confirmação de Agendamento",
+              "description": "Tela de confirmação do agendamento feito com sucesso.",
+              "items": [
+                {
+                  "label": "Paciente",
+                  "value": "João Silva"
+                },
+                {
+                  "label": "Data",
+                  "value": "26/10/2026"
+                },
+                {
+                  "label": "Horário",
+                  "value": "14:00"
+                }
+              ],
+              "action": {
+                "label": "Enviar Lembrete",
+                "nextScreenId": null
+              }
+            },
+            {
+              "id": "tela-historico",
+              "title": "Histórico de Consultas",
+              "description": "Visualização das consultas realizadas e faltas dos pacientes.",
+              "items": [
+                {
+                  "label": "Paciente",
+                  "value": "Maria Oliveira"
+                },
+                {
+                  "label": "Data",
+                  "value": "25/10/2026"
+                },
+                {
+                  "label": "Status",
+                  "value": "Falta"
+                }
+              ],
+              "action": {
+                "label": "Ver Detalhes",
+                "nextScreenId": null
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "slug": "calendar",
+              "role": "Gerencia os agendamentos"
+            },
+            {
+              "slug": "email",
+              "role": "Notificações de agendamentos"
+            },
+            {
+              "slug": "wpp",
+              "role": "Canal principal de vendas"
+            }
+          ],
+          "journey": [
+            {
+              "id": "etapa-agendar",
+              "label": "Agendar Consulta",
+              "description": "Dentista agenda uma consulta para o paciente.",
+              "blockSlugs": [
+                "calendar",
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "etapa-confirmar",
+              "label": "Confirmar Agendamento",
+              "description": "Confirmação do agendamento realizado.",
+              "blockSlugs": [
+                "email"
+              ],
+              "humanReview": true
+            },
+            {
+              "id": "etapa-enviar-lembrete",
+              "label": "Enviar Lembrete",
+              "description": "Envio de lembrete para o paciente antes da consulta.",
+              "blockSlugs": [
+                "email",
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "etapa-historico",
+              "label": "Ver Histórico",
+              "description": "Dentista visualiza o histórico de consultas e faltas.",
+              "blockSlugs": [
+                "calendar"
+              ],
+              "humanReview": false
+            }
+          ],
+          "limitations": [
+            "Necessário integração com sistema de gestão de pacientes.",
+            "Dependência de confirmação do dentista para envio de lembretes.",
+            "Limitação no número de notificações enviadas por dia.",
+            "Necessidade de treinamento para uso adequado do sistema."
+          ],
+          "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+        }
+      },
+      "errors": []
+    },
+    {
+      "key": "escola-cobranca",
+      "passed": true,
+      "briefing": {
+        "idea": "cobrar atrasados",
+        "context": "escola de ingles",
+        "goal": "parar cobranca manual"
+      },
+      "elapsedMs": 15904,
+      "reviewElapsedMs": 53,
+      "hadReview": true,
+      "concept": {
+        "conceptRef": "concept_d6cd6954-f225-4778-a796-0779f10af03a",
+        "version": 1,
+        "briefVersion": 3,
+        "content": {
+          "schemaVersion": "1.0",
+          "title": "Cobrança de Atrasados",
+          "summary": "Sistema para automatizar a cobrança de alunos atrasados em uma escola de inglês, reduzindo o trabalho manual.",
+          "hypothesis": "A automatização da cobrança pode reduzir a inadimplência e melhorar o fluxo de caixa da escola.",
+          "roles": [
+            "Gestor Financeiro",
+            "Coordenador Pedagógico",
+            "Aluno"
+          ],
+          "screens": [
+            {
+              "id": "screen-cobranca",
+              "title": "Tela de Cobrança",
+              "description": "Visualização das cobranças pendentes e suas informações.",
+              "items": [
+                {
+                  "label": "Aluno",
+                  "value": "João da Silva"
+                },
+                {
+                  "label": "Valor",
+                  "value": "R$ 300,00"
+                },
+                {
+                  "label": "Data de Vencimento",
+                  "value": "15/10/2026"
+                }
+              ],
+              "action": {
+                "label": "Enviar Notificação",
+                "nextScreenId": "screen-confirmacao"
+              }
+            },
+            {
+              "id": "screen-confirmacao",
+              "title": "Confirmação de Envio",
+              "description": "Confirmação do envio da notificação ao aluno.",
+              "items": [
+                {
+                  "label": "Status",
+                  "value": "Notificação enviada com sucesso."
+                },
+                {
+                  "label": "Método",
+                  "value": "Email"
+                },
+                {
+                  "label": "Data de Envio",
+                  "value": "26/10/2026"
+                }
+              ],
+              "action": {
+                "label": "Voltar para Cobrança",
+                "nextScreenId": "screen-cobranca"
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "slug": "email",
+              "role": "Notificações de cobrança"
+            },
+            {
+              "slug": "wpp",
+              "role": "Canal principal de vendas"
+            }
+          ],
+          "journey": [
+            {
+              "id": "step-cobranca",
+              "label": "Iniciar Cobrança",
+              "description": "O gestor financeiro inicia o processo de cobrança de alunos atrasados.",
+              "blockSlugs": [
+                "wpp",
+                "email"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "step-envio-notificacao",
+              "label": "Enviar Notificação",
+              "description": "O sistema envia uma notificação ao aluno sobre a cobrança pendente.",
+              "blockSlugs": [
+                "email"
+              ],
+              "humanReview": true
+            },
+            {
+              "id": "step-confirmacao-envio",
+              "label": "Confirmar Envio",
+              "description": "Confirmação do envio da notificação ao aluno.",
+              "blockSlugs": [
+                "email"
+              ],
+              "humanReview": true
+            }
+          ],
+          "limitations": [
+            "Necessidade de confirmação manual para o envio de notificações.",
+            "Dependência de canais de comunicação como email e WhatsApp.",
+            "Possíveis falhas na entrega de notificações."
+          ],
+          "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+        }
+      },
+      "errors": []
+    }
+  ]
+}

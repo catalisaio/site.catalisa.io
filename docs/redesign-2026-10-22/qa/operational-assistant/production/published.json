@@ -1,0 +1,57 @@
+{
+  "publishedAt": "2026-10-28T19:01:40.478Z",
+  "passed": true,
+  "url": "https://catalisa.io/assistente-operacional",
+  "release": "20261028-operational-assistant",
+  "scope": "New internal page in seven languages and contextual menu links. Home, institutional offer, existing runtimes and backend bytes preserved.",
+  "previousRelease": "20261027-hero-clarity",
+  "previousPort": 18182,
+  "activePort": 18183,
+  "stagingAndProductionPublicArtifactIdentical": true,
+  "publicArtifactSha256": "7208790798112bb8d21b60daaf373c9ddb262f3efa3f32028ff475612405b034",
+  "serverArtifactSha256": "586254469a4310eaf70a5603952bdcedb0c81151ff14e04083027b58f557889f",
+  "serverByteIdenticalToPriorProduction": true,
+  "productionChecks": {
+    "http": {
+      "passed": true,
+      "checks": 25
+    },
+    "boundaries": {
+      "passed": true,
+      "checks": 7
+    },
+    "locales": {
+      "passed": true,
+      "checks": 14
+    },
+    "verification": {
+      "passed": true,
+      "widths": [
+        320,
+        390,
+        768,
+        1440
+      ],
+      "completedJourneys": 4,
+      "textRequests": 16,
+      "keyboardChecks": 8,
+      "foundationStates": 12
+    }
+  },
+  "independentCoordinatorCheckPassed": true,
+  "originalSevenHomeContentAndScriptsPreserved": true,
+  "noRealCrmActionsOrMessages": true,
+  "rollback": {
+    "previousServiceStillRunning": true,
+    "edgeBackup": "/opt/traefik/config/rollback/catalisa-site-20261028-operational-assistant.yml",
+    "script": "/root/catalisa-site-cutovers/20261028-operational-assistant/site-production-cutover.sh",
+    "approvalRecord": "/root/catalisa-site-cutovers/20261028-operational-assistant/approval.json",
+    "instructions": "docs/redesign-2026-10-22/qa/operational-assistant/README.md"
+  },
+  "previewServersKeptAlive": [
+    5175,
+    8142,
+    8144
+  ],
+  "sourceHomeSha256": "b709f72e1523881e8451e4fc8a1adf52acd722e1d942e950b3f3516bbb920d50"
+}

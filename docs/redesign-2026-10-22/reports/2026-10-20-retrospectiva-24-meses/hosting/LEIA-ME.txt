@@ -1,0 +1,76 @@
+PUBLICAÇÃO DO DOSSIÊ
+
+Atualização de 21/10/2026: index.html agora apresenta o infográfico Bauhaus;
+infografico.html conserva um endereço explícito; dossie.html preserva o índice
+anterior. Fontes Inter locais e infografico.pdf entram no mesmo volume protegido.
+A atualização reaproveita serviço, domínio e autenticação existentes. A troca
+de current mantém o release anterior disponível para eventual reversão.
+
+Destino solicitado: https://entregas.interno.catalisa.app
+Usuário HTTP: entregas
+A senha é fornecida separadamente; não é escrita neste diretório.
+
+O site usa um serviço próprio do Developy Launch, com Nginx em contêiner e um
+volume de 1 GB. O servidor protege o diretório inteiro com HTTP Basic Auth,
+incluindo PDFs, inventários, JSON e ZIP. /healthz responde apenas "ok" para a
+sonda de disponibilidade. A conexão pública passa pelo HTTPS da borda.
+
+nginx.conf é a configuração usada na publicação. O arquivo de autenticação fica
+fora da raiz de documentos e contém o hash APR1, sem a senha em texto aberto.
+As respostas incluem noindex, nofollow, noarchive e cache privado sem retenção.
+
+O domínio e o CNAME do desafio ACME são registros próprios criados no Beacon.
+O Launch administra a rota do domínio. Não se edita a rota gerenciada à mão nem
+se reinicia a borda compartilhada para publicar este material.
+
+REPRODUÇÃO
+
+publicar.py registra as etapas desta publicação. Ele lê a chave da Developy em
+~/.config/developy/api-key e usa arquivos locais temporários com permissão 0600
+para sessão, estado e senha. Esses arquivos não são enviados como documentos.
+O script não imprime credenciais.
+
+Etapas: preflight, inspect, create, status, dns-preflight, dns, dns-check, bundle,
+install, stage, publish, verify-public. create e dns preservam a identidade dos
+recursos; install exige serviço saudável e confere a posse do guest antes de
+enviar conteúdo. O procedimento de recuperação da imagem fica registrado em
+recover-image; a imagem externa precisa do endereço docker.io/library/nginx.
+
+O pacote é composto dos arquivos do manifesto, do próprio manifesto e do ZIP.
+O diretório hosting não integra a raiz publicada. A transferência confere o
+SHA-256 do pacote e os hashes de todos os arquivos do manifesto no destino.
+As versões ficam em /srv/entregas/releases; current aponta para a versão servida.
+
+stage testa os arquivos reais: 401 anônimo, 401 com senha errada, 200 com a senha
+correta e hashes iguais aos locais, além de leitura parcial de PDF (206).
+publish depende desses testes e só então associa o domínio definitivo.
+verify-public verifica o HTTPS com a cadeia de confiança padrão, os nomes do
+certificado, a autenticação pública e os hashes dos HTMLs publicados.
+As rotas de verificação incluem os HTMLs, os PDFs, as duas fontes e a
+cobertura do infográfico. Os corpos do PDF e das fontes também têm hashes
+conferidos no HTTPS. verificar-infografico.mjs --public cobre a interação nova;
+verificar-publicacao.mjs conserva a regressão do dossiê, dashboard e timeline.
+
+publicacao.json, quando presente, contém a evidência final e os identificadores
+do serviço e da versão. Não contém a senha. Os relatórios continuam reproduzíveis
+pelos comandos gerar.mjs, verificar.mjs e empacotar.py do diretório superior.
+
+Identidade de 21/10/2026: todas as 15 páginas e os 12 PDFs usam a base
+transitória aprovada, com o SVG oficial Catalisa. roxo e ponto amarelo #FDC234.
+A conferência remota verifica os hashes de todos os arquivos do manifesto,
+além do certificado, das 43 rotas e da preservação da configuração Nginx.
+A interface é validada localmente com os mesmos arquivos instalados; sem o
+arquivo temporário da senha, não se declara navegação autenticada em HTTPS.
+
+Diligência de 21/10/2026: cinco leituras e PDFs foram acrescentados, com
+12 domínios, 60 questões/pedidos, 16 riscos, 32 controles de homologação e
+146 entradas de fonte. As dez páginas anteriores têm acessos contextuais.
+As rotas incluem as novas leituras, PDFs, JSONs e CSVs. A publicação conserva
+a autenticação existente; não cria permissões individuais ou gestão de NDA.
+publicacao-diligencia.json registra versão, verificações locais e remotas,
+preservação do corpus e limitações da avaliação.
+
+Revisão 2: diligencia.html é o Sumário das análises, com conclusões,
+pontos fortes/fracos, riscos, ações e conclusão por área. As cinco leituras
+têm atalhos visíveis, e as dez páginas anteriores oferecem acessos diretos.
+diligencia-acoes.csv contém as oito propostas, sem datas ou pessoas presumidas.

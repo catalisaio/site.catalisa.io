@@ -8,10 +8,5 @@ export function getPlaybookSchema(playbook: Playbook, t: (key: string) => string
     description: t(playbook.descriptionKey),
     applicationCategory: 'BusinessApplication',
     operatingSystem: 'Web',
-    offers: {
-      '@type': 'Offer',
-      price: '0',
-      priceCurrency: 'BRL',
-    },
   };
 }

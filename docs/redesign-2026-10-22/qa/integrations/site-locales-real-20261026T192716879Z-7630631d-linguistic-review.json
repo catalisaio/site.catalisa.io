@@ -1,0 +1,28 @@
+{
+  "reviewedAt": "2026-10-26T19:28:45.052Z",
+  "sourceReport": "docs/redesign-2026-10-22/qa/integrations/site-locales-real-20261026T192716879Z-7630631d.json",
+  "releaseId": "20261026-multilingual",
+  "promptRevisionEvidence": [
+    "docs/redesign-2026-10-22/qa/integrations/site-agent-locales-staging.json",
+    "docs/redesign-2026-10-22/qa/integrations/site-agent-locales-production.json"
+  ],
+  "scope": "One explicitly authorized fresh French inference after root applied dedicated-agent promptv2; no ambiguous generation retry.",
+  "automatedContractsPassed": true,
+  "knownWrongLanguageIssueResolved": true,
+  "title": "Inscription à l'école de langues",
+  "summary": "Inscription des élèves à une école de langues via WhatsApp, incluant la présentation des cours et le choix du groupe.",
+  "roles": [
+    "Élève",
+    "Administrateur",
+    "Système"
+  ],
+  "screenAndJourneyLanguageReviewed": "French; no Portuguese title intrusion observed",
+  "disclaimerExact": true,
+  "sameJobReplay": true,
+  "deterministicHumanReviewWithoutAnotherInference": true,
+  "syntheticSessionRemoved": true,
+  "cookiesRemainingInPrivateCheckpoint": 0,
+  "limits": [
+    "Human reading of this synthetic result is not exhaustive linguistic proof for every future generated concept."
+  ]
+}

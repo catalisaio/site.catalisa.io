@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-10-27T00:13:40.519Z",
+  "projectId": "z40bi9hrk8",
+  "name": "Catalisa Staging",
+  "siteUrl": "https://site-staging.catalisa.io",
+  "platform": "Web",
+  "industry": "Technology and Telecommunications",
+  "created": true,
+  "authenticatedUi": true,
+  "idConfirmedInUrlAndOverview": true,
+  "masking": "Balanced",
+  "cookiesEnabled": true,
+  "botDetectionEnabled": true,
+  "productionProjectUnchanged": true,
+  "gaAdsIntegrationsNotConnected": true,
+  "sourceChanged": false,
+  "deployments": 0,
+  "visitorsRead": false,
+  "credentialsExtracted": false,
+  "messagesOrInvitationsSent": false,
+  "pending": [
+    "Publish staging project ID with consent gate and no production GA measurement on staging.",
+    "Verify installation receipt after deployment."
+  ],
+  "gettingStartedUrl": "https://clarity.microsoft.com/projects/view/z40bi9hrk8/gettingstarted",
+  "evidence": {
+    "cliResult": "/tmp/clarity-staging-cli-result.json",
+    "permissionDenials": []
+  }
+}

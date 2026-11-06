@@ -1,0 +1,171 @@
+{
+  "date": "2026-10-25T05:06:29.460Z",
+  "passed": false,
+  "origin": "https://site-staging.catalisa.io",
+  "tlsValidation": true,
+  "scope": "Real staging AI through the target browser/BFF, fictional short contact flows, human review, reload, one free refinement. No handoff or external messages.",
+  "results": [
+    {
+      "key": "loja-whatsapp",
+      "passed": false,
+      "stage": "free-refinement",
+      "error": "Error: O serviço excedeu o tempo de espera. Sua conversa está salva.",
+      "errors": []
+    },
+    {
+      "key": "clinica-agenda",
+      "passed": true,
+      "briefing": {
+        "idea": "agenda clinica",
+        "context": "dentista",
+        "goal": "menos faltas"
+      },
+      "elapsedMs": 29982,
+      "reviewElapsedMs": 41,
+      "hadReview": true,
+      "concept": {
+        "conceptRef": "concept_8275318e-ed3e-4fe1-8d1c-3bc5f3db9020",
+        "version": 1,
+        "briefVersion": 3,
+        "content": {
+          "schemaVersion": "1.0",
+          "title": "Agenda Clínica Dentista",
+          "summary": "Agenda integrada com lembretes automáticos para reduzir faltas em consultórios odontológicos.",
+          "hypothesis": "Lembretes via WhatsApp e confirmação de presença diminuem faltas quando conectados à agenda clínica.",
+          "roles": [
+            "Dentista",
+            "Recepcionista",
+            "Paciente"
+          ],
+          "screens": [
+            {
+              "id": "agenda",
+              "title": "Agenda do Dia",
+              "description": "Visualize consultas e marque presenças.",
+              "items": [
+                {
+                  "label": "Horário",
+                  "value": "09:00 - João Silva"
+                },
+                {
+                  "label": "Status",
+                  "value": "Confirmado"
+                }
+              ],
+              "action": {
+                "label": "Enviar lembrete",
+                "nextScreenId": "lembretes"
+              }
+            },
+            {
+              "id": "lembretes",
+              "title": "Configurar Lembretes",
+              "description": "Defina mensagens automáticas por WhatsApp.",
+              "items": [
+                {
+                  "label": "Antecedência",
+                  "value": "24 horas"
+                },
+                {
+                  "label": "Canal",
+                  "value": "WhatsApp"
+                }
+              ],
+              "action": {
+                "label": "Salvar",
+                "nextScreenId": "confirmacao"
+              }
+            },
+            {
+              "id": "confirmacao",
+              "title": "Confirmação do Paciente",
+              "description": "Paciente confirma ou remarca via link.",
+              "items": [
+                {
+                  "label": "Resposta",
+                  "value": "Confirmado"
+                }
+              ],
+              "action": {
+                "label": "Voltar à agenda",
+                "nextScreenId": "agenda"
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "slug": "calendar",
+              "role": "Agenda clínica com disponibilidade"
+            },
+            {
+              "slug": "wpp",
+              "role": "Lembretes automáticos de consulta"
+            },
+            {
+              "slug": "customers",
+              "role": "Cadastro de pacientes"
+            },
+            {
+              "slug": "analytics",
+              "role": "Acompanhamento de faltas"
+            }
+          ],
+          "journey": [
+            {
+              "id": "passo1",
+              "label": "Agendar consulta",
+              "description": "Recepcionista marca horário no calendário.",
+              "blockSlugs": [
+                "calendar",
+                "customers"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "passo2",
+              "label": "Enviar lembrete",
+              "description": "Sistema dispara mensagem automática 24h antes.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "passo3",
+              "label": "Paciente confirma",
+              "description": "Paciente responde por WhatsApp ou link.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": true
+            },
+            {
+              "id": "passo4",
+              "label": "Registrar presença",
+              "description": "Dentista marca comparecimento e analisa faltas.",
+              "blockSlugs": [
+                "calendar",
+                "analytics"
+              ],
+              "humanReview": true
+            }
+          ],
+          "limitations": [
+            "Depende de integração com WhatsApp da clínica.",
+            "Lembretes automáticos exigem configuração inicial.",
+            "Análise de faltas é visual, sem IA preditiva."
+          ],
+          "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+        }
+      },
+      "errors": []
+    },
+    {
+      "key": "escola-cobranca",
+      "passed": false,
+      "stage": "human-review",
+      "error": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('.zd-flow-nodes')\nExpected: visible\nTimeout: 3000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"to.be.visible\" with timeout 3000ms\n  - waiting for locator('.zd-flow-nodes')\n",
+      "errors": []
+    }
+  ]
+}

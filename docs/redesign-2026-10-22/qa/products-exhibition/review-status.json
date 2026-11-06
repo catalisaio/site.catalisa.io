@@ -1,0 +1,46 @@
+{
+  "updatedAt": "2026-10-26T22:50:03.564Z",
+  "revision": "20261026-products-exhibition-v2",
+  "state": "ready-for-user-visual-review",
+  "localUrl": "http://localhost:5175/produtos",
+  "productionPublished": false,
+  "stagingPublished": false,
+  "previousCompositionSuperseded": true,
+  "agreedNaming": "Produtos; visual exhibition of actual products, without presenting product sites as a prerequisite or claiming a corporate group.",
+  "editorialDecisions": [
+    "CBP and CCP are the financial flagships, first in a dedicated large exhibition.",
+    "Five further solutions are separated by an explicit Beyond finance chapter, different background and individual brand illustrations.",
+    "Five products have their verified product-site link; CBP/CCP have primary Contact and secondary product-detail links. Visual panels also link to details.",
+    "The five sector-detail openings use a large themed hero, short description and three highlights. The extended existing content remains available through native details.",
+    "Financial hero compositions and capture dialogs remain; the two financial pages now have an immediate Contact CTA and optional extended content.",
+    "Existing brand renders/master photograph were reused. New illustrations are native SVGs, not simulated interfaces or claims of deployments."
+  ],
+  "checks": {
+    "browserScenarios": 46,
+    "unitTestsPassed": 104,
+    "unitTestFiles": 12,
+    "viewportWidths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "listingLocales": 7,
+    "detailsProducts": 7,
+    "dictionaryCoverage": "4223/4223 messages in each of six target dictionaries",
+    "noAiOrLeadWrites": true,
+    "appTypeScriptPassed": true,
+    "financialHeroHashLinksPassed": true,
+    "longGermanTitleOnOneLineAt320": true
+  },
+  "evidence": {
+    "browser": "qa/products-exhibition/verification.json",
+    "additionalBrowser": "qa/products-exhibition/additional-verification.json",
+    "dictionaries": "qa/localization/exhibition-coverage.json"
+  },
+  "limits": [
+    "This is the local visual revision for joint evaluation. Previous staged/prepared packages contain the earlier design. No new build, staging or production deployment occurred in this iteration.",
+    "Browser functional/layout checks do not constitute human visual approval.",
+    "Production Contact/Lab smoke evidence belongs to the published release; no new AI generation was run for this visual change."
+  ]
+}

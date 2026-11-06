@@ -1,0 +1,316 @@
+{
+  "date": "2026-10-26T14:17:11.175Z",
+  "passed": true,
+  "origin": "https://site-staging.catalisa.io",
+  "tlsValidation": true,
+  "scope": "Real staging AI through the target browser/BFF, fictional short contact flows, human review, reload, one free refinement. No handoff or external messages.",
+  "results": [
+    {
+      "key": "loja-whatsapp",
+      "passed": true,
+      "briefing": {
+        "idea": "vender pelo whats",
+        "context": "loja de roupas",
+        "goal": "vender mais"
+      },
+      "elapsedMs": 15060,
+      "reviewElapsedMs": 67,
+      "hadReview": true,
+      "concept": {
+        "conceptRef": "concept_948a599d-480d-4642-ab37-830523ab1eab",
+        "version": 1,
+        "briefVersion": 3,
+        "content": {
+          "schemaVersion": "1.0",
+          "title": "Venda de Roupas pelo WhatsApp",
+          "summary": "Aumente suas vendas de roupas utilizando o WhatsApp como canal principal de atendimento e vendas, facilitando a comunicação com os clientes.",
+          "hypothesis": "A utilização do WhatsApp como canal de vendas pode aumentar o volume de vendas ao proporcionar um atendimento mais ágil e próximo ao cliente.",
+          "roles": [
+            "Atendente",
+            "Gerente de Vendas",
+            "Cliente"
+          ],
+          "screens": [
+            {
+              "id": "whatsapp-integration",
+              "title": "Integração com WhatsApp",
+              "description": "Tela para gerenciar as vendas e interações realizadas via WhatsApp, com histórico de mensagens e pedidos.",
+              "items": [
+                {
+                  "label": "Pedidos Recentes",
+                  "value": "Exibição dos últimos 5 pedidos realizados via WhatsApp."
+                },
+                {
+                  "label": "Mensagens Não Lidas",
+                  "value": "Número de mensagens não lidas dos clientes."
+                },
+                {
+                  "label": "Status da Integração",
+                  "value": "Verificação se o WhatsApp está ativo e funcionando corretamente."
+                }
+              ],
+              "action": {
+                "label": "Ver Detalhes do Pedido",
+                "nextScreenId": null
+              }
+            },
+            {
+              "id": "customer-interaction",
+              "title": "Interação com Clientes",
+              "description": "Tela para visualizar e responder mensagens dos clientes, organizando as interações por status.",
+              "items": [
+                {
+                  "label": "Cliente A",
+                  "value": "Mensagem: 'Qual o tamanho da blusa X?'"
+                },
+                {
+                  "label": "Cliente B",
+                  "value": "Mensagem: 'Vocês têm a calça Y em estoque?'"
+                },
+                {
+                  "label": "Cliente C",
+                  "value": "Mensagem: 'Quando a entrega será feita?'"
+                }
+              ],
+              "action": {
+                "label": "Responder Mensagem",
+                "nextScreenId": null
+              }
+            },
+            {
+              "id": "sales-report",
+              "title": "Relatório de Vendas",
+              "description": "Tela que apresenta um resumo das vendas realizadas pelo WhatsApp em um determinado período.",
+              "items": [
+                {
+                  "label": "Total de Vendas",
+                  "value": "R$ 1.500,00"
+                },
+                {
+                  "label": "Total de Pedidos",
+                  "value": "30 pedidos"
+                },
+                {
+                  "label": "Média de Tickets",
+                  "value": "R$ 50,00"
+                }
+              ],
+              "action": {
+                "label": "Exportar Relatório",
+                "nextScreenId": null
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "slug": "wpp",
+              "role": "Canal principal de vendas"
+            },
+            {
+              "slug": "email",
+              "role": "Notificações de vendas realizadas"
+            }
+          ],
+          "journey": [
+            {
+              "id": "customer-inquiry",
+              "label": "Consulta do Cliente",
+              "description": "O cliente inicia uma conversa pelo WhatsApp perguntando sobre um produto.",
+              "blockSlugs": [
+                "wpp",
+                "email"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "provide-information",
+              "label": "Fornecimento de Informação",
+              "description": "O atendente responde à consulta do cliente com informações sobre o produto e disponibilidade.",
+              "blockSlugs": [
+                "wpp",
+                "email"
+              ],
+              "humanReview": true
+            },
+            {
+              "id": "confirm-order",
+              "label": "Confirmação do Pedido",
+              "description": "O cliente confirma o pedido através do WhatsApp.",
+              "blockSlugs": [
+                "wpp",
+                "email"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "send-confirmation",
+              "label": "Envio de Confirmação",
+              "description": "O sistema envia uma confirmação do pedido e detalhes de entrega ao cliente via WhatsApp.",
+              "blockSlugs": [
+                "wpp",
+                "email"
+              ],
+              "humanReview": true
+            }
+          ],
+          "limitations": [
+            "Necessidade de acesso à internet para funcionamento do WhatsApp.",
+            "Limitações na quantidade de mensagens que podem ser enviadas por hora.",
+            "Possível dificuldade na integração com sistemas legados.",
+            "Dependência da aceitação do cliente em usar o WhatsApp como canal de venda."
+          ],
+          "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+        }
+      },
+      "refinement": {
+        "elapsedMs": 24426,
+        "concept": {
+          "conceptRef": "concept_948a599d-480d-4642-ab37-830523ab1eab",
+          "version": 2,
+          "briefVersion": 3,
+          "content": {
+            "schemaVersion": "1.0",
+            "title": "Venda de Roupas pelo WhatsApp",
+            "summary": "Aumente suas vendas de roupas utilizando o WhatsApp como canal principal de atendimento e vendas, facilitando a comunicação com os clientes.",
+            "hypothesis": "A utilização do WhatsApp como canal de vendas pode aumentar o volume de vendas ao proporcionar um atendimento mais ágil e próximo ao cliente.",
+            "roles": [
+              "Atendente",
+              "Gerente de Vendas",
+              "Cliente"
+            ],
+            "screens": [
+              {
+                "id": "whatsapp-integration",
+                "title": "Integração com WhatsApp",
+                "description": "Tela para gerenciar as vendas e interações realizadas via WhatsApp, com histórico de mensagens e pedidos.",
+                "items": [
+                  {
+                    "label": "Pedidos Recentes",
+                    "value": "Exibição dos últimos 5 pedidos realizados via WhatsApp."
+                  },
+                  {
+                    "label": "Mensagens Não Lidas",
+                    "value": "Número de mensagens não lidas dos clientes."
+                  },
+                  {
+                    "label": "Status da Integração",
+                    "value": "Verificação se o WhatsApp está ativo e funcionando corretamente."
+                  }
+                ],
+                "action": {
+                  "label": "Ver Detalhes do Pedido",
+                  "nextScreenId": null
+                }
+              },
+              {
+                "id": "customer-interaction",
+                "title": "Interação com Clientes",
+                "description": "Tela para visualizar e responder mensagens dos clientes, organizando as interações por status.",
+                "items": [
+                  {
+                    "label": "Cliente A",
+                    "value": "Mensagem: 'Qual o tamanho da blusa X?'"
+                  },
+                  {
+                    "label": "Cliente B",
+                    "value": "Mensagem: 'Vocês têm a calça Y em estoque?'"
+                  },
+                  {
+                    "label": "Cliente C",
+                    "value": "Mensagem: 'Quando a entrega será feita?'"
+                  }
+                ],
+                "action": {
+                  "label": "Responder Mensagem",
+                  "nextScreenId": null
+                }
+              },
+              {
+                "id": "sales-report",
+                "title": "Relatório de Vendas",
+                "description": "Tela que apresenta um resumo das vendas realizadas pelo WhatsApp em um determinado período.",
+                "items": [
+                  {
+                    "label": "Total de Vendas",
+                    "value": "R$ 1.500,00"
+                  },
+                  {
+                    "label": "Total de Pedidos",
+                    "value": "30 pedidos"
+                  },
+                  {
+                    "label": "Média de Tickets",
+                    "value": "R$ 50,00"
+                  }
+                ],
+                "action": {
+                  "label": "Exportar Relatório",
+                  "nextScreenId": null
+                }
+              }
+            ],
+            "blocks": [
+              {
+                "slug": "wpp",
+                "role": "Canal principal de vendas"
+              },
+              {
+                "slug": "email",
+                "role": "Notificações após conferência humana"
+              }
+            ],
+            "journey": [
+              {
+                "id": "customer-inquiry",
+                "label": "Consulta do Cliente",
+                "description": "O cliente inicia uma conversa pelo WhatsApp perguntando sobre um produto.",
+                "blockSlugs": [
+                  "wpp",
+                  "email"
+                ],
+                "humanReview": false
+              },
+              {
+                "id": "provide-information",
+                "label": "Fornecimento de Informação",
+                "description": "O atendente responde à consulta do cliente com informações sobre o produto e disponibilidade.",
+                "blockSlugs": [
+                  "wpp",
+                  "email"
+                ],
+                "humanReview": true
+              },
+              {
+                "id": "confirm-order",
+                "label": "Confirmação do Pedido",
+                "description": "O cliente confirma o pedido através do WhatsApp.",
+                "blockSlugs": [
+                  "wpp",
+                  "email"
+                ],
+                "humanReview": false
+              },
+              {
+                "id": "send-confirmation",
+                "label": "Envio de Confirmação",
+                "description": "O sistema envia uma confirmação do pedido e detalhes de entrega ao cliente via e-mail.",
+                "blockSlugs": [
+                  "email"
+                ],
+                "humanReview": true
+              }
+            ],
+            "limitations": [
+              "Necessidade de acesso à internet para funcionamento do WhatsApp.",
+              "Limitações na quantidade de mensagens que podem ser enviadas por hora.",
+              "Possível dificuldade na integração com sistemas legados.",
+              "Dependência da aceitação do cliente em usar o WhatsApp como canal de venda."
+            ],
+            "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+          }
+        }
+      },
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "schemaVersion": "1.0",
+  "title": "Cobrança Automatizada",
+  "summary": "Automatiza cobrança de mensalidades atrasadas em escola de inglês via WhatsApp e e-mail, eliminando processos manuais.",
+  "hypothesis": "Integração de pagamentos, WPP e decision engine permite identificar inadimplentes e enviar lembretes automáticos, reduzindo trabalho manual da equipe.",
+  "roles": [
+    "Coordenador Financeiro",
+    "Secretária",
+    "Diretor"
+  ],
+  "screens": [
+    {
+      "id": "lista-inadimplentes",
+      "title": "Alunos com atraso",
+      "description": "Lista de alunos com mensalidades vencidas, valores e datas.",
+      "items": [
+        {
+          "label": "Nome",
+          "value": "João Silva"
+        },
+        {
+          "label": "Valor devido",
+          "value": "R$ 450"
+        },
+        {
+          "label": "Dias em atraso",
+          "value": "15"
+        }
+      ],
+      "action": {
+        "label": "Ver detalhes",
+        "nextScreenId": "detalhe-aluno"
+      }
+    },
+    {
+      "id": "detalhe-aluno",
+      "title": "Detalhe do aluno",
+      "description": "Histórico de pagamentos e opções de cobrança automática.",
+      "items": [
+        {
+          "label": "Último pagamento",
+          "value": "10/09/2026"
+        },
+        {
+          "label": "Status",
+          "value": "Atrasado"
+        },
+        {
+          "label": "Canal sugerido",
+          "value": "WhatsApp"
+        }
+      ],
+      "action": {
+        "label": "Disparar cobrança",
+        "nextScreenId": "confirmacao-envio"
+      }
+    },
+    {
+      "id": "confirmacao-envio",
+      "title": "Confirmação de envio",
+      "description": "Resumo da mensagem gerada e status do disparo.",
+      "items": [
+        {
+          "label": "Mensagem",
+          "value": "Olá, sua mensalidade está atrasada"
+        },
+        {
+          "label": "Canal",
+          "value": "WPP"
+        },
+        {
+          "label": "Resultado",
+          "value": "Enviado"
+        }
+      ],
+      "action": {
+        "label": "Voltar à lista",
+        "nextScreenId": "lista-inadimplentes"
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "slug": "payments",
+      "role": "Consulta de débitos e geração de boletos"
+    },
+    {
+      "slug": "wpp",
+      "role": "Envio de lembretes automáticos"
+    },
+    {
+      "slug": "customers",
+      "role": "Cadastro de alunos com CPF validado"
+    },
+    {
+      "slug": "billing",
+      "role": "Gestão de assinaturas e faturas recorrentes"
+    }
+  ],
+  "journey": [
+    {
+      "id": "passo1",
+      "label": "Identificar atrasados",
+      "description": "Sistema consulta base de alunos e filtra quem está em atraso.",
+      "blockSlugs": [
+        "customers",
+        "billing"
+      ],
+      "humanReview": false
+    },
+    {
+      "id": "passo2",
+      "label": "Calcular valor e canal",
+      "description": "Decision engine define valor devido e melhor canal de contato.",
+      "blockSlugs": [
+        "payments",
+        "decision-engine"
+      ],
+      "humanReview": false
+    },
+    {
+      "id": "passo3",
+      "label": "Disparar mensagem",
+      "description": "Envia lembrete automático por WhatsApp ou e-mail.",
+      "blockSlugs": [
+        "wpp",
+        "email"
+      ],
+      "humanReview": false
+    },
+    {
+      "id": "passo4",
+      "label": "Registrar pagamento",
+      "description": "Confirmação de quitação atualiza status do aluno.",
+      "blockSlugs": [
+        "payments",
+        "billing"
+      ],
+      "humanReview": true
+    }
+  ],
+  "limitations": [
+    "Requer integração prévia com sistema de matrícula da escola",
+    "Mensagens automáticas limitadas a templates aprovados",
+    "Cobrança judicial permanece manual"
+  ],
+  "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+}

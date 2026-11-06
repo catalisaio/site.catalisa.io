@@ -1,0 +1,56 @@
+{
+  "checkedAt": "2026-10-27T00:08:09.690Z",
+  "projectId": "z4073yqv5z",
+  "projectName": "Catalisa",
+  "gettingStartedUrl": "https://clarity.microsoft.com/projects/view/z4073yqv5z/gettingstarted",
+  "method": "Authenticated existing Chrome session through Claude in Chrome using claude -p --chrome; no standalone browser launched.",
+  "authenticatedAccessConfirmed": true,
+  "domain": {
+    "before": "catalisa.oi",
+    "after": "catalisa.io",
+    "corrected": true,
+    "saved": true,
+    "reloadVerified": true
+  },
+  "privacy": {
+    "masking": "Balanced / Equilibrado",
+    "maskingChanged": false,
+    "perElementMaskRules": 0,
+    "cookiesEnabled": true,
+    "cookieSettingChanged": false,
+    "botDetectionEnabled": true,
+    "siteConsentAndPrivateRouteExclusionsPreserved": true
+  },
+  "integrations": {
+    "microsoftAds": "Not connected",
+    "googleAds": "Not connected",
+    "googleAnalytics": "Not connected",
+    "changed": false
+  },
+  "installation": {
+    "observedStatus": "Getting Started / Quase lá",
+    "trackingReceiptConfirmed": false,
+    "expectedBeforeSourceDeployment": true
+  },
+  "heatmaps": {
+    "navigationEnabled": false,
+    "exactHeatmapUrlObserved": false,
+    "dashboardUrlObserved": false
+  },
+  "scope": {
+    "sourceChanged": false,
+    "deployments": 0,
+    "visitorsOrRecordingsRead": false,
+    "credentialsOrCookiesExtracted": false,
+    "invitationsOrMessagesSent": false,
+    "otherProjectsChanged": false
+  },
+  "pending": [
+    "Parent agent publishes the new project ID in the website.",
+    "Recheck activation and actual Heatmaps navigation after the project receives data."
+  ],
+  "evidence": {
+    "cliResult": "/tmp/clarity-cli-result.json",
+    "permissionDenials": []
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "checkedAt": "2026-10-28T18:33:44.380Z",
+  "passed": true,
+  "origin": "http://127.0.0.1:5175",
+  "scope": "Settled explicit Portuguese and English pages at390/1440px: real Enter/Escape, focus and heading stability. No forms, sessions, AI, leads, analytics or messages.",
+  "checks": [
+    {
+      "locale": "pt-BR",
+      "width": 390,
+      "menu": "all",
+      "enterOpens": true,
+      "escapeCloses": true,
+      "focusReturns": true,
+      "headingShiftPx": 0
+    },
+    {
+      "locale": "pt-BR",
+      "width": 1440,
+      "menu": "platform",
+      "enterOpens": true,
+      "escapeCloses": true,
+      "focusReturns": true,
+      "headingShiftPx": 0
+    },
+    {
+      "locale": "pt-BR",
+      "width": 1440,
+      "menu": "all",
+      "enterOpens": true,
+      "escapeCloses": true,
+      "focusReturns": true,
+      "headingShiftPx": 0
+    },
+    {
+      "locale": "en-US",
+      "width": 390,
+      "menu": "all",
+      "enterOpens": true,
+      "escapeCloses": true,
+      "focusReturns": true,
+      "headingShiftPx": 0
+    },
+    {
+      "locale": "en-US",
+      "width": 1440,
+      "menu": "platform",
+      "enterOpens": true,
+      "escapeCloses": true,
+      "focusReturns": true,
+      "headingShiftPx": 0
+    },
+    {
+      "locale": "en-US",
+      "width": 1440,
+      "menu": "all",
+      "enterOpens": true,
+      "escapeCloses": true,
+      "focusReturns": true,
+      "headingShiftPx": 0
+    }
+  ],
+  "errors": []
+}

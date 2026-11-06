@@ -1,0 +1,90 @@
+{
+  "generatedAt": "2026-10-26T13:00:50.071Z",
+  "releaseId": "20261026-ai-recovery",
+  "artifact": "/tmp/catalisa-recovery-candidate",
+  "passed": true,
+  "scope": "Production-mode local artifact preparation and browser hosting emulation. AI recovery and actual staging installation remain separate checks owned by coordinator.",
+  "build": {
+    "command": "VITE_SITE_RELEASE=redesign VITE_SITE_INDEXING=enabled CONTEXT=production SITE_DIST_DIR=/tmp/catalisa-recovery-candidate PUPPETEER_EXECUTABLE_PATH=/usr/bin/google-chrome PRERENDER_WORKERS=1 npm run build -- --outDir /tmp/catalisa-recovery-candidate --emptyOutDir",
+    "exitCode": 0,
+    "typescriptPassed": true
+  },
+  "mode": {
+    "redesign": true,
+    "indexing": true
+  },
+  "prerender": {
+    "routes": 257,
+    "failures": [],
+    "shell": {
+      "file": "/tmp/catalisa-recovery-candidate/index.html",
+      "moduleScript": "/assets/index-D2_-4OX5.js"
+    }
+  },
+  "seo": {
+    "routes": 256,
+    "publicUrls": 255,
+    "brandOriginals": 144,
+    "failures": [],
+    "warnings": []
+  },
+  "browser": {
+    "passed": true,
+    "checks": 41,
+    "errors": []
+  },
+  "nativeBundle": {
+    "passed": true,
+    "initialChunks": 7,
+    "nativePages": 17,
+    "allStaticChunks": 29,
+    "failures": []
+  },
+  "privateArtifact": {
+    "passed": true,
+    "files": 917,
+    "findings": []
+  },
+  "integrity": {
+    "generatedAt": "2026-10-26T13:00:14.263Z",
+    "artifact": "/tmp/catalisa-recovery-candidate",
+    "releaseId": "20261026-ai-recovery",
+    "passed": true,
+    "entry": "/assets/index-D2_-4OX5.js",
+    "entrySha256": "f8683d9ee4e6454467b43213982f951f28a733077504c9b45341a6a33694d57b",
+    "homeSha256": "77bf263b9da94b47a6e2687e1593fde9c9b8dd54521ee0acf76b868f9db468a0",
+    "applicationHtmlFiles": 258,
+    "mismatches": [],
+    "privacy": [
+      {
+        "route": "/politica-privacidade",
+        "configuredProviderStatement": true,
+        "listedAnthropic": true,
+        "listedOpenAI": true,
+        "passed": true
+      },
+      {
+        "route": "/en/privacy-policy",
+        "configuredProviderStatement": true,
+        "listedAnthropic": true,
+        "listedOpenAI": true,
+        "passed": true
+      }
+    ],
+    "scope": "Built HTML entry consistency and configured-provider privacy copy PT/EN. No real AI requests, deployment or visual acceptance."
+  },
+  "previousR2Preserved": true,
+  "productionPublished": false,
+  "publicationAuthorized": false,
+  "realAiRequestsInThisAudit": 0,
+  "remaining": [
+    "Coordinator installs recovery revision in staging and applies only the dedicated site agent recovery",
+    "Real Contact recovery using the previously failing visitor cookie and real Lab smoke",
+    "Owner visual/editorial/policy acceptance and explicit authorization before production cutover"
+  ],
+  "limits": [
+    "No new performance or visual measurement in this recovery build; prior Home r2 LCP3.032s exceeded the2.5s target",
+    "No field Core Web Vitals, ranking, full WCAG or physical-device certification",
+    "Market insights remains disabled; no panel or building-block changes"
+  ]
+}

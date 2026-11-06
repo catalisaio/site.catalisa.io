@@ -1,0 +1,168 @@
+{
+  "generatedAt": "2026-10-25T06:40:41.764500+00:00",
+  "artifact": "/tmp/catalisa-production-candidate",
+  "mode": {
+    "redesign": true,
+    "indexing": true
+  },
+  "types": {
+    "command": "npm run build (tsc -b then Vite)",
+    "passed": true
+  },
+  "frontendTargetedTests": {
+    "passed": 22,
+    "scope": "Contact startup anonymous/returning/failure under StrictMode; shell tracking/fonts/contact loading/no-JS; SEO inventory"
+  },
+  "vite": {
+    "command": "VITE_SITE_RELEASE=redesign VITE_SITE_INDEXING=enabled CONTEXT=production npx vite build --outDir /tmp/catalisa-production-candidate --emptyOutDir",
+    "passed": true,
+    "chunkPolicy": "Automatic Rollup splitting for redesign; previous strategy remains only for legacy builds"
+  },
+  "prerender": {
+    "routes": 257,
+    "failures": [],
+    "shell": {
+      "file": "/tmp/catalisa-production-candidate/index.html",
+      "moduleScript": "/assets/index-DF_ROU9L.js"
+    }
+  },
+  "staticSeo": {
+    "routes": 256,
+    "publicUrls": 255,
+    "failures": [],
+    "warnings": [],
+    "brandOriginals": 144
+  },
+  "browser": {
+    "passed": true,
+    "checks": 41,
+    "errors": []
+  },
+  "nativeBundle": {
+    "passed": true,
+    "initialStaticChunks": 7,
+    "allNativeStaticChunks": 29,
+    "nativeLazyPages": 17,
+    "preservedLegacyAppsOutsideNativeGraph": [
+      "assets/App-CWRuGZtl.js"
+    ],
+    "failures": []
+  },
+  "moduleEntrypoint": {
+    "path": "/assets/index-DF_ROU9L.js",
+    "sha256": "7db379d787cec0cea9681d109837b15c0dde4442f9442748897ce35651bbc2f8",
+    "applicationHtmlFiles": 258,
+    "mismatches": []
+  },
+  "anonymousPublicSnapshots": {
+    "passed": true,
+    "states": [
+      {
+        "path": "/contato",
+        "h1": "Vamos dar formaà próximaconversa.",
+        "busy": false,
+        "controlReady": true,
+        "errors": []
+      },
+      {
+        "path": "/lab",
+        "h1": "O que vocêquer construir?",
+        "busy": false,
+        "controlReady": true,
+        "errors": []
+      }
+    ],
+    "actualClientSession401AndNoJsVerified": true
+  },
+  "privateArtifact": {
+    "passed": true,
+    "scannedFiles": 917,
+    "findings": []
+  },
+  "fonts": {
+    "latinWoff2Bytes": 151520,
+    "fullWoff2ComplementBytes": 332220,
+    "unicodeRangesComplementary": true,
+    "nativeAndSvgInterAliases": true,
+    "verification": "../site-quality/font-subsets.json"
+  },
+  "bootstrap": "Initial route module/CSS is prepared before replacing the public snapshot. Contact performs one bounded session read before first commit, with separate 401/200/error paths and loading that preserves geometry. Returning/private state never enters static HTML.",
+  "pending": [
+    "Owner visual/editorial acceptance of the presented staging revision and policy text",
+    "Explicit authorization before production installation and public cutover",
+    "Owner decision before any real market-insights collection; current flag remains0"
+  ],
+  "limits": [
+    "This report proves the local production-mode artifact, not a public deployment or live indexation",
+    "Previous staging H15 baseline describes older code and does not prove these improvements",
+    "No full WCAG certification, field Core Web Vitals, physical-device or ranking claim"
+  ],
+  "homeResourceHint": {
+    "persistentSource": "scripts/route-resource-hints.mjs (native entries only)",
+    "testsPassed": 3,
+    "headPreload": "/redesign/financial-city.webp",
+    "fetchpriority": "high",
+    "count": 1,
+    "homeHtmlSha256": "8dcb3cea1049a0cd8b07e261eb41b920f91ad23ec414b170aeffc9e6bd03c2cd",
+    "scope": "Generated during the full r2 prerender; no old HTML copied over new JavaScript. Actual r2 staging impact awaits the one-Home measurement.",
+    "actualR2StageMeasurement": {
+      "report": "../home-preload-production-review/verification.json",
+      "lcpMs": 3032,
+      "previousLcpMs": 3272,
+      "cls": 0.021033977807361437,
+      "preloadInitiator": "link",
+      "homeGoal2500msMet": false,
+      "scope": "Single-run Chrome laboratory measurement of initial anonymous mobile pages under CDP network/CPU throttling, focused DOM and optional keyboard checks. No field Core Web Vitals, INP claim, full WCAG certification or automated axe/Lighthouse result. No axe/Lighthouse dependency is installed."
+    }
+  },
+  "stagingH15BeforeHomeHint": {
+    "report": "../site-quality-production-review/verification.json",
+    "allSevenRoutesDomAndKeyboardPassed": true,
+    "legacyChunkDownloads": 0,
+    "homeLcpMs": 3272,
+    "contactCls": 0.00024548812926944875,
+    "scope": "Actual HTTPS production-review artifact before the final Home preload; one laboratory run, not field data."
+  },
+  "revision": "r2-direct-contact",
+  "fullSuite": {
+    "passed": 231,
+    "files": 20,
+    "source": "Final frozen API/Contact/Node/App suite, confirmed by inbox_team and coordinator before r2 build"
+  },
+  "directContact": {
+    "sourceReady": true,
+    "scope": "Visitor choice recorded, missing context authored as system, name plus email OR phone, explicit confirmation and real human inbox without AI generation. Initial bootstrap and reload honor the direct marker.",
+    "actualStagingSmoke": {
+      "passed": true,
+      "generationCalls": 0,
+      "jobsCreated": 0,
+      "handoffElapsedMs": 3952,
+      "widths": [
+        320,
+        390,
+        768,
+        1440
+      ],
+      "evidence": "../contact-direct-real-staging/verification.json"
+    }
+  },
+  "finalAcceptance": "../release/acceptance-r2.json",
+  "stagingFinal": {
+    "url": "https://site-staging.catalisa.io",
+    "releaseId": "20261025-r2",
+    "httpsVerified": true,
+    "basicAuth": true,
+    "noindex": true,
+    "publicAndServerIdenticalToProductionPrepared": true,
+    "publicArtifactSha256": "948f85b14b796e50623068d7bf0c8f69818fad5b328e87df532d2b7e642724ff",
+    "serverArtifactSha256": "a4eb20162dd086e470a02df120bdfdf5fc347bfd8dcd60e64365a62dd47a5dff",
+    "functionalActualStage": [
+      "direct contact without AI",
+      "three short AI Contact flows and free refinement",
+      "Lab AI/reload/Contact continuation",
+      "real operator login/open/claim/reply/reload/logout"
+    ]
+  },
+  "publicationAuthorized": false,
+  "performanceLimit": "Home laboratory LCP3.032s remains above2.5s. No100% performance, field CWV or physical-device claim."
+}

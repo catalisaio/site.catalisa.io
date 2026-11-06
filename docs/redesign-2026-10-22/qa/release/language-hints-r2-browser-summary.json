@@ -1,0 +1,87 @@
+{
+  "checkedAt": "2026-10-27T02:03:09.694Z",
+  "passed": true,
+  "release": "20261027-language-hints-r2",
+  "staleScriptLoads": [],
+  "domRoutesPassed": 7,
+  "keyboardChecksPassed": 5,
+  "scope": "Single cold-cache lab sample per route,390px,4xCPU,constrained4g. Production baseline and staging candidate differ in origin and root negotiation locale, so no causal LCP improvement or physical/field guarantee is claimed.",
+  "routes": [
+    {
+      "route": "/",
+      "lcpMs": 1980,
+      "cls": 0.016353937014166174,
+      "encodedBytes": 483607,
+      "baselineEncodedBytes": 718996,
+      "encodedBytesReduction": 235389,
+      "above2500ms": false,
+      "ttfbMs": 185.5
+    },
+    {
+      "route": "/arquitetura",
+      "lcpMs": 3332,
+      "cls": 0.0002072391093600888,
+      "encodedBytes": 323030,
+      "baselineEncodedBytes": 381583,
+      "encodedBytesReduction": 58553,
+      "above2500ms": true,
+      "ttfbMs": 790.1000000000931
+    },
+    {
+      "route": "/contato",
+      "lcpMs": 5156,
+      "cls": 0.00009624864980167815,
+      "encodedBytes": 289838,
+      "baselineEncodedBytes": 357628,
+      "encodedBytesReduction": 67790,
+      "above2500ms": true,
+      "ttfbMs": 2216.5999999996275
+    },
+    {
+      "route": "/lab",
+      "lcpMs": 3512,
+      "cls": 0.0008034237948211128,
+      "encodedBytes": 325066,
+      "baselineEncodedBytes": 382532,
+      "encodedBytesReduction": 57466,
+      "above2500ms": true,
+      "ttfbMs": 1286.8999999999069
+    },
+    {
+      "route": "/produtos",
+      "lcpMs": 3016,
+      "cls": 0.0005542661299565344,
+      "encodedBytes": 526528,
+      "baselineEncodedBytes": 575927,
+      "encodedBytesReduction": 49399,
+      "above2500ms": true,
+      "ttfbMs": 192.6999999997206
+    },
+    {
+      "route": "/ecossistema/banking",
+      "lcpMs": 2588,
+      "cls": 0.0003652859466995984,
+      "encodedBytes": 455316,
+      "baselineEncodedBytes": 519465,
+      "encodedBytesReduction": 64149,
+      "above2500ms": true,
+      "ttfbMs": 276
+    },
+    {
+      "route": "/ecossistema/credit",
+      "lcpMs": 4956,
+      "cls": 0,
+      "encodedBytes": 509659,
+      "baselineEncodedBytes": 571508,
+      "encodedBytesReduction": 61849,
+      "above2500ms": true,
+      "ttfbMs": 2225
+    }
+  ],
+  "limits": [
+    "All remaining JavaScript requests belong to the current Vite build.",
+    "The root baseline negotiated English, whereas the candidate used explicit pt-BR browser locale; root-byte/LCP comparisons include this difference.",
+    "Six routes remain above2.5s in this lab sample; the complete objective is not marked achieved.",
+    "Physical iPhone/Safari and Android/Chrome tests remain unperformed, as confirmed by the user."
+  ]
+}

@@ -1,0 +1,397 @@
+{
+  "checkedAt": "2026-10-25T06:57:46.965Z",
+  "passed": true,
+  "scope": "Read-only HTTPS GET of39 catalog documentation URLs. Validates HTTP/content type/title and path without login/not-found redirects. Does not prove product maturity, runtime availability, fragment anchors, licenses or owner approval.",
+  "results": [
+    {
+      "slug": "ai-engine",
+      "url": "https://docs.catalisa.app/blocks/ai-engine/",
+      "finalUrl": "https://docs.catalisa.app/blocks/ai-engine/",
+      "status": 200,
+      "title": "AI Engine · Catalisa Building Blocks",
+      "h1": "AI Engine",
+      "passed": true,
+      "elapsedMs": 824
+    },
+    {
+      "slug": "analytics",
+      "url": "https://docs.catalisa.app/blocks/analytics/",
+      "finalUrl": "https://docs.catalisa.app/blocks/analytics/",
+      "status": 200,
+      "title": "Analytics · Catalisa Building Blocks",
+      "h1": "Analytics",
+      "passed": true,
+      "elapsedMs": 81
+    },
+    {
+      "slug": "api-keys",
+      "url": "https://docs.catalisa.app/blocks/api-keys/",
+      "finalUrl": "https://docs.catalisa.app/blocks/api-keys/",
+      "status": 200,
+      "title": "API Keys · Catalisa Building Blocks",
+      "h1": "API Keys",
+      "passed": true,
+      "elapsedMs": 88
+    },
+    {
+      "slug": "audit-trail",
+      "url": "https://docs.catalisa.app/blocks/audit-trail/",
+      "finalUrl": "https://docs.catalisa.app/blocks/audit-trail/",
+      "status": 200,
+      "title": "Audit Trail · Catalisa Building Blocks",
+      "h1": "Audit Trail",
+      "passed": true,
+      "elapsedMs": 82
+    },
+    {
+      "slug": "baas",
+      "url": "https://docs.catalisa.app/blocks/baas/",
+      "finalUrl": "https://docs.catalisa.app/blocks/baas/",
+      "status": 200,
+      "title": "BaaS · Catalisa Building Blocks",
+      "h1": "BaaS",
+      "passed": true,
+      "elapsedMs": 141
+    },
+    {
+      "slug": "banking",
+      "url": "https://docs.catalisa.app/blocks/banking/",
+      "finalUrl": "https://docs.catalisa.app/blocks/banking/",
+      "status": 200,
+      "title": "Banking · Catalisa Building Blocks",
+      "h1": "Banking",
+      "passed": true,
+      "elapsedMs": 64
+    },
+    {
+      "slug": "banking-product-portfolio",
+      "url": "https://docs.catalisa.app/blocks/banking-product-portfolio/",
+      "finalUrl": "https://docs.catalisa.app/blocks/banking-product-portfolio/",
+      "status": 200,
+      "title": "Banking Product Portfolio · Catalisa Building Blocks",
+      "h1": "Banking Product Portfolio",
+      "passed": true,
+      "elapsedMs": 55
+    },
+    {
+      "slug": "billing",
+      "url": "https://docs.catalisa.app/blocks/billing/",
+      "finalUrl": "https://docs.catalisa.app/blocks/billing/",
+      "status": 200,
+      "title": "Billing · Catalisa Building Blocks",
+      "h1": "Billing",
+      "passed": true,
+      "elapsedMs": 77
+    },
+    {
+      "slug": "biometrics",
+      "url": "https://docs.catalisa.app/blocks/biometrics/",
+      "finalUrl": "https://docs.catalisa.app/blocks/biometrics/",
+      "status": 200,
+      "title": "Biometrics · Catalisa Building Blocks",
+      "h1": "Biometrics",
+      "passed": true,
+      "elapsedMs": 85
+    },
+    {
+      "slug": "bureaus",
+      "url": "https://docs.catalisa.app/blocks/bureaus/",
+      "finalUrl": "https://docs.catalisa.app/blocks/bureaus/",
+      "status": 200,
+      "title": "Bureaus · Catalisa Building Blocks",
+      "h1": "Bureaus",
+      "passed": true,
+      "elapsedMs": 68
+    },
+    {
+      "slug": "calculations-engine",
+      "url": "https://docs.catalisa.app/blocks/calculations-engine/",
+      "finalUrl": "https://docs.catalisa.app/blocks/calculations-engine/",
+      "status": 200,
+      "title": "Calculations Engine · Catalisa Building Blocks",
+      "h1": "Calculations Engine",
+      "passed": true,
+      "elapsedMs": 55
+    },
+    {
+      "slug": "calendar",
+      "url": "https://docs.catalisa.app/blocks/calendar/",
+      "finalUrl": "https://docs.catalisa.app/blocks/calendar/",
+      "status": 200,
+      "title": "Calendar · Catalisa Building Blocks",
+      "h1": "Calendar",
+      "passed": true,
+      "elapsedMs": 40
+    },
+    {
+      "slug": "cms",
+      "url": "https://docs.catalisa.app/blocks/cms/",
+      "finalUrl": "https://docs.catalisa.app/blocks/cms/",
+      "status": 200,
+      "title": "CMS · Catalisa Building Blocks",
+      "h1": "CMS",
+      "passed": true,
+      "elapsedMs": 48
+    },
+    {
+      "slug": "commerce",
+      "url": "https://docs.catalisa.app/blocks/commerce/",
+      "finalUrl": "https://docs.catalisa.app/blocks/commerce/",
+      "status": 200,
+      "title": "Commerce · Catalisa Building Blocks",
+      "h1": "Commerce",
+      "passed": true,
+      "elapsedMs": 61
+    },
+    {
+      "slug": "companies",
+      "url": "https://docs.catalisa.app/blocks/companies/",
+      "finalUrl": "https://docs.catalisa.app/blocks/companies/",
+      "status": 200,
+      "title": "Companies · Catalisa Building Blocks",
+      "h1": "Companies",
+      "passed": true,
+      "elapsedMs": 40
+    },
+    {
+      "slug": "customers",
+      "url": "https://docs.catalisa.app/blocks/customers/",
+      "finalUrl": "https://docs.catalisa.app/blocks/customers/",
+      "status": 200,
+      "title": "Customers · Catalisa Building Blocks",
+      "h1": "Customers",
+      "passed": true,
+      "elapsedMs": 70
+    },
+    {
+      "slug": "data-extraction",
+      "url": "https://docs.catalisa.app/blocks/data-extraction/",
+      "finalUrl": "https://docs.catalisa.app/blocks/data-extraction/",
+      "status": 200,
+      "title": "Data Extraction · Catalisa Building Blocks",
+      "h1": "Data Extraction",
+      "passed": true,
+      "elapsedMs": 65
+    },
+    {
+      "slug": "data-store",
+      "url": "https://docs.catalisa.app/blocks/data-store/",
+      "finalUrl": "https://docs.catalisa.app/blocks/data-store/",
+      "status": 200,
+      "title": "Data Store · Catalisa Building Blocks",
+      "h1": "Data Store",
+      "passed": true,
+      "elapsedMs": 68
+    },
+    {
+      "slug": "decision-engine",
+      "url": "https://docs.catalisa.app/blocks/decision-engine/",
+      "finalUrl": "https://docs.catalisa.app/blocks/decision-engine/",
+      "status": 200,
+      "title": "Decision Engine · Catalisa Building Blocks",
+      "h1": "Decision Engine",
+      "passed": true,
+      "elapsedMs": 91
+    },
+    {
+      "slug": "decision-platform",
+      "url": "https://docs.catalisa.app/blocks/decision-platform/",
+      "finalUrl": "https://docs.catalisa.app/blocks/decision-platform/",
+      "status": 200,
+      "title": "Decision Platform · Catalisa Building Blocks",
+      "h1": "Decision Platform",
+      "passed": true,
+      "elapsedMs": 108
+    },
+    {
+      "slug": "document-template",
+      "url": "https://docs.catalisa.app/blocks/document-template/",
+      "finalUrl": "https://docs.catalisa.app/blocks/document-template/",
+      "status": 200,
+      "title": "Document Template · Catalisa Building Blocks",
+      "h1": "Document Template",
+      "passed": true,
+      "elapsedMs": 115
+    },
+    {
+      "slug": "e-signature",
+      "url": "https://docs.catalisa.app/blocks/e-signature/",
+      "finalUrl": "https://docs.catalisa.app/blocks/e-signature/",
+      "status": 200,
+      "title": "E-Signature · Catalisa Building Blocks",
+      "h1": "E-Signature",
+      "passed": true,
+      "elapsedMs": 104
+    },
+    {
+      "slug": "email",
+      "url": "https://docs.catalisa.app/blocks/email/",
+      "finalUrl": "https://docs.catalisa.app/blocks/email/",
+      "status": 200,
+      "title": "Email · Catalisa Building Blocks",
+      "h1": "Email",
+      "passed": true,
+      "elapsedMs": 84
+    },
+    {
+      "slug": "feature-flags",
+      "url": "https://docs.catalisa.app/blocks/feature-flags/",
+      "finalUrl": "https://docs.catalisa.app/blocks/feature-flags/",
+      "status": 200,
+      "title": "Feature Flags · Catalisa Building Blocks",
+      "h1": "Feature Flags",
+      "passed": true,
+      "elapsedMs": 103
+    },
+    {
+      "slug": "file-storage",
+      "url": "https://docs.catalisa.app/blocks/file-storage/",
+      "finalUrl": "https://docs.catalisa.app/blocks/file-storage/",
+      "status": 200,
+      "title": "File Storage · Catalisa Building Blocks",
+      "h1": "File Storage",
+      "passed": true,
+      "elapsedMs": 59
+    },
+    {
+      "slug": "iam",
+      "url": "https://docs.catalisa.app/blocks/iam/",
+      "finalUrl": "https://docs.catalisa.app/blocks/iam/",
+      "status": 200,
+      "title": "IAM · Catalisa Building Blocks",
+      "h1": "IAM",
+      "passed": true,
+      "elapsedMs": 53
+    },
+    {
+      "slug": "meta-account",
+      "url": "https://docs.catalisa.app/blocks/meta-account/",
+      "finalUrl": "https://docs.catalisa.app/blocks/meta-account/",
+      "status": 200,
+      "title": "Meta Account · Catalisa Building Blocks",
+      "h1": "Meta Account",
+      "passed": true,
+      "elapsedMs": 39
+    },
+    {
+      "slug": "open-finance",
+      "url": "https://docs.catalisa.app/blocks/open-finance/",
+      "finalUrl": "https://docs.catalisa.app/blocks/open-finance/",
+      "status": 200,
+      "title": "Open Finance · Catalisa Building Blocks",
+      "h1": "Open Finance",
+      "passed": true,
+      "elapsedMs": 51
+    },
+    {
+      "slug": "payments",
+      "url": "https://docs.catalisa.app/blocks/payments/",
+      "finalUrl": "https://docs.catalisa.app/blocks/payments/",
+      "status": 200,
+      "title": "Payments · Catalisa Building Blocks",
+      "h1": "Payments",
+      "passed": true,
+      "elapsedMs": 62
+    },
+    {
+      "slug": "people",
+      "url": "https://docs.catalisa.app/blocks/people/",
+      "finalUrl": "https://docs.catalisa.app/blocks/people/",
+      "status": 200,
+      "title": "People · Catalisa Building Blocks",
+      "h1": "People",
+      "passed": true,
+      "elapsedMs": 26
+    },
+    {
+      "slug": "pricing-engine",
+      "url": "https://docs.catalisa.app/blocks/pricing-engine/",
+      "finalUrl": "https://docs.catalisa.app/blocks/pricing-engine/",
+      "status": 200,
+      "title": "Pricing Engine · Catalisa Building Blocks",
+      "h1": "Pricing Engine",
+      "passed": true,
+      "elapsedMs": 73
+    },
+    {
+      "slug": "products",
+      "url": "https://docs.catalisa.app/blocks/products/",
+      "finalUrl": "https://docs.catalisa.app/blocks/products/",
+      "status": 200,
+      "title": "Products · Catalisa Building Blocks",
+      "h1": "Products",
+      "passed": true,
+      "elapsedMs": 58
+    },
+    {
+      "slug": "rooms",
+      "url": "https://docs.catalisa.app/blocks/rooms/",
+      "finalUrl": "https://docs.catalisa.app/blocks/rooms/",
+      "status": 200,
+      "title": "Rooms · Catalisa Building Blocks",
+      "h1": "Rooms",
+      "passed": true,
+      "elapsedMs": 49
+    },
+    {
+      "slug": "service-attestations",
+      "url": "https://docs.catalisa.app/blocks/service-attestations/",
+      "finalUrl": "https://docs.catalisa.app/blocks/service-attestations/",
+      "status": 200,
+      "title": "Service Attestations · Catalisa Building Blocks",
+      "h1": "Service Attestations",
+      "passed": true,
+      "elapsedMs": 72
+    },
+    {
+      "slug": "slack",
+      "url": "https://docs.catalisa.app/blocks/slack/",
+      "finalUrl": "https://docs.catalisa.app/blocks/slack/",
+      "status": 200,
+      "title": "Slack · Catalisa Building Blocks",
+      "h1": "Slack",
+      "passed": true,
+      "elapsedMs": 90
+    },
+    {
+      "slug": "sso",
+      "url": "https://docs.catalisa.app/blocks/sso/",
+      "finalUrl": "https://docs.catalisa.app/blocks/sso/",
+      "status": 200,
+      "title": "SSO · Catalisa Building Blocks",
+      "h1": "SSO",
+      "passed": true,
+      "elapsedMs": 98
+    },
+    {
+      "slug": "webhooks-engine",
+      "url": "https://docs.catalisa.app/blocks/webhooks-engine/",
+      "finalUrl": "https://docs.catalisa.app/blocks/webhooks-engine/",
+      "status": 200,
+      "title": "Webhooks Engine · Catalisa Building Blocks",
+      "h1": "Webhooks Engine",
+      "passed": true,
+      "elapsedMs": 169
+    },
+    {
+      "slug": "wpp",
+      "url": "https://docs.catalisa.app/blocks/wpp/",
+      "finalUrl": "https://docs.catalisa.app/blocks/wpp/",
+      "status": 200,
+      "title": "WPP · Catalisa Building Blocks",
+      "h1": "WPP",
+      "passed": true,
+      "elapsedMs": 139
+    },
+    {
+      "slug": "wpp-business",
+      "url": "https://docs.catalisa.app/blocks/wpp-business/",
+      "finalUrl": "https://docs.catalisa.app/blocks/wpp-business/",
+      "status": 200,
+      "title": "WPP Business · Catalisa Building Blocks",
+      "h1": "WPP Business",
+      "passed": true,
+      "elapsedMs": 122
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "locale": "en-US",
+  "updatedAt": "2026-10-26T18:55:49.210Z",
+  "method": "Independent full source/translation pair review using authorized Claude CLI without tools, MCP or session persistence; corrections structurally validated before merge.",
+  "required": 4187,
+  "available": 4187,
+  "reviewed": 4187,
+  "complete": true,
+  "corrections": 141,
+  "batches": [
+    {
+      "id": "e3f9d00710a4f5528f75",
+      "count": 300,
+      "corrections": 3,
+      "costUsd": 0.30742800000000003,
+      "durationMs": 23167
+    },
+    {
+      "id": "ae1060639796f872a7cd",
+      "count": 300,
+      "corrections": 9,
+      "costUsd": 0.34475599999999995,
+      "durationMs": 33595
+    },
+    {
+      "id": "7ac1c9749e26f60c8ec2",
+      "count": 300,
+      "corrections": 9,
+      "costUsd": 0.31674,
+      "durationMs": 32693
+    },
+    {
+      "id": "b048208435f6eb3bd2a1",
+      "count": 300,
+      "corrections": 12,
+      "costUsd": 0.35768,
+      "durationMs": 42539
+    },
+    {
+      "id": "488c3f415fdb5102383a",
+      "count": 300,
+      "corrections": 9,
+      "costUsd": 0.2966364,
+      "durationMs": 31959
+    },
+    {
+      "id": "a27e4e8225dda92de227",
+      "count": 300,
+      "corrections": 11,
+      "costUsd": 0.35930799999999996,
+      "durationMs": 42407
+    },
+    {
+      "id": "f45f3abe24381bb471ea",
+      "count": 300,
+      "corrections": 10,
+      "costUsd": 0.32467599999999996,
+      "durationMs": 30775
+    },
+    {
+      "id": "012d551db52530da6302",
+      "count": 300,
+      "corrections": 7,
+      "costUsd": 0.315128,
+      "durationMs": 27607
+    },
+    {
+      "id": "9c430c9b3fda04b7c2f0",
+      "count": 300,
+      "corrections": 13,
+      "costUsd": 0.336504,
+      "durationMs": 35720
+    },
+    {
+      "id": "161163033e8929fbfe32",
+      "count": 300,
+      "corrections": 10,
+      "costUsd": 0.323752,
+      "durationMs": 26494
+    },
+    {
+      "id": "7f3e6c70c915fbe02736",
+      "count": 300,
+      "corrections": 27,
+      "costUsd": 0.41486,
+      "durationMs": 66314
+    },
+    {
+      "id": "7154825f21f4b70ace06",
+      "count": 300,
+      "corrections": 3,
+      "costUsd": 0.29588400000000004,
+      "durationMs": 21405
+    },
+    {
+      "id": "5c0b843bae7613c9ee84",
+      "count": 300,
+      "corrections": 9,
+      "costUsd": 0.30954,
+      "durationMs": 26705
+    },
+    {
+      "id": "52543730b948d911f3e4",
+      "count": 287,
+      "corrections": 11,
+      "costUsd": 0.31723199999999996,
+      "durationMs": 37428
+    }
+  ],
+  "notes": [
+    "\"Leitura disponível\" (r_04b29ca1bdf92dfa) foi traduzido como \"Read access available\", o que sugere permissão. Se o contexto for a leitura de saldo, considere \"Reading available\".",
+    "A tradução de \"lastro\" varia: \"backing\" em r_048da04d34ab716d e \"collateral\" em r_0f380f7da0c25c12. Convém padronizar se os dois se referem ao mesmo conceito.",
+    "Datas foram convertidas para o formato americano (09/29/2026). Está consistente, mas confirme se esse é o padrão desejado.",
+    "Os 300 pares foram revisados; a maioria já estava correta.",
+    "r_19a9310a411fda71: 'authorized capability catalog' acrescenta 'capability', que não está no original; é um acréscimo pequeno, mas pode ser revisto.",
+    "r_14b040e7486f8ede ('ACCOUNT HOLDER'S ACCOUNT') ficou como está, mas soa repetitivo; vale ver se o layout aceita algo como 'HOLDER'S ACCOUNT'.",
+    "\"Credit\" e \"Banking\" isolados (por exemplo, \"Explore Credit\", \"Banking console\") foram mantidos porque já estão em inglês no texto de origem; confirmar se a regra de tradução dos rótulos de produto também vale para eles.",
+    "LGPD aparece de forma inconsistente: \"by LGPD (Brazilian General Data Protection Law)\" em um lugar e \"the LGPD\" em outro; convém padronizar.",
+    "Fragmentos como \"Continuing begins\", \"Also think about\" e \"State has\" foram mantidos; o sentido depende do trecho que vem a seguir.",
+    "\"c.\" em Resources.tsx foi tratado como a marca da Catalisa; o caso de ContactConcept.tsx precisa ser confirmado.",
+    "Há uso misto da vírgula serial (Oxford comma) entre os textos; vale padronizar depois.",
+    "\"Termos de Uso\" foi traduzido como \"Terms of Service\"; confirmar se é o mesmo termo usado nas outras páginas.",
+    "Mantive os textos que já estavam em inglês no código-fonte (mensagens de servidor e 'Analytics preferences').",
+    "Mantive 'Oficina em Dia' como nome de empresa.",
+    "Mantive 'Decision Platform' e 'Decision Engine' como nomes de building blocks técnicos.",
+    "r_6f5da6bebfc88820: 'titular' traduzido como 'data subject'; confirmar se o contexto é LGPD ou titular de conta (account holder).",
+    "Uso da vírgula de série é inconsistente entre os textos; não padronizado.",
+    "r_7518a392e48a4437 'Compose what sustains.' é um pouco estranho, mas foi mantido por ser título.",
+    "r_7be1c816a856abdb: a origem atribui o Unsplash à Imgur Inc., o que parece factualmente incorreto; a tradução foi mantida fiel à origem, mas recomenda-se revisar o texto-fonte.",
+    "r_81592c1d91987c18: \"real collateral\" mantido para \"garantia real\"; vale validação jurídica, se necessário.",
+    "Os demais pares estão corretos: preservam o significado, o estágio do produto, os limites legais, os identificadores e os placeholders.",
+    "Sugestões opcionais, sem correção: \"CADERNO\" → \"ISSUE\" se for uma série editorial; \"Retomar movimento\" → \"Resume animation\" se o controle for de animação.",
+    "O uso da vírgula serial (Oxford comma) varia entre os textos; vale definir um padrão único.",
+    "Mantive 'area code (DDD)', pois DDD é uma referência brasileira e deve ser preservada.",
+    "Mantive 'CREDIT PLATFORM', 'DECISION' e 'Decision:' como estão: já estão em inglês e seguem a regra de traduzir os nomes genéricos de produto.",
+    "Mantive Decision Platform e Decision Engine como nomes técnicos de componentes.",
+    "Mantive 'Banking Product Portfolio' porque parece ser o nome técnico de um building block.",
+    "Mantive 'Biometrics' porque o rótulo traduzido coincide com o nome em inglês.",
+    "As datas foram convertidas para o formato americano (MM/DD/AAAA) de forma correta e consistente.",
+    "Mantidos os nomes técnicos de building blocks (Payments, BaaS, AI Engine, Calculations Engine) e Studio.",
+    "Terminologia de reserva padronizada em 'hold'/'on hold'; 'modalidade' padronizada como 'product type'.",
+    "Padronizada a ausência de vírgula serial, seguindo a maioria das strings.",
+    "A frase \"Consulte aplicações, estágio e documentação\" estava traduzida de duas formas: \"applications\" e \"use cases\". Padronizei como \"use cases\". A vírgula serial antes de \"and\" também varia entre os textos e pode ser padronizada.",
+    "\"liberação/liberações\" aparece como \"release\" (r_d44988714d6b881f) e como \"approvals\" (r_e001b9e69527483d). Mantive as duas, mas vale definir um termo único no glossário.",
+    "As datas foram convertidas para o formato americano (09/29/2026). Está aceitável para inglês dos EUA. Se o site for para público internacional, considere o formato 29 Sep 2026.",
+    "O fragmento r_df5e906240268025 (\"s available\") depende da interpolação no código. É preciso confirmar que a concatenação do plural funciona em inglês.",
+    "A fonte de r_e8f4d1a5ed1b6e79 tem um erro de digitação (\"mudao\" em vez de \"muda o\"). A tradução está correta.",
+    "Os pares r_e6801c1ac318eb4a, r_e72c6b5051430499, r_eca5a79d1b0f7239, r_ea927aadfbad8233, r_ef0ff962d22d18be, r_ef81f0c898668602 e r_efbe3335a5ccdc8b já estão em inglês na fonte e foram mantidos.",
+    "\"Modalidade\" aparece como \"product type\" em r_f382f276519ddacc e como \"modalities\" em r_f133f9a932025482. Vale padronizar se houver um glossário.",
+    "Vírgula serial inconsistente: os primeiros pares usam a vírgula de Oxford (\"catalog, inventory, and orders\"). Do r_77248b299013942e em diante, ela some (\"Action, focus and structure\"). Escolha um padrão para todo o site; não corrigi par a par.",
+    "\"Conheça Banking ↗\" (r_faf7cb0fb37b0041) e \"Banking with its own identity\" ficaram como estão, porque \"Banking\" sozinho não está na lista de rótulos genéricos. Confirme se ele deve virar \"banking platform\".",
+    "\"Decision\" (r_640ae4baf96061fe) e \"Biometrics\" já estão em inglês e foram mantidos. \"Decision Engine\" e \"API Keys\" foram mantidos como nomes técnicos de building blocks."
+  ]
+}

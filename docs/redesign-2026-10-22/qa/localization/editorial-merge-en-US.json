@@ -1,0 +1,1307 @@
+{
+  "locale": "en-US",
+  "date": "2026-10-26T19:01:13.781Z",
+  "sourceCount": 4189,
+  "translated": 4189,
+  "reviewed": 4189,
+  "independentCliReviewed": 4187,
+  "manualSeoSupplementReviewed": 2,
+  "manualSupplement": "editorial-manual-seo-supplement.json",
+  "deltaReviewedBeyondOriginal4031": 158,
+  "coverageComplete": true,
+  "reviewMethod": "Independent full source/translation pair review using authorized Claude CLI without tools, MCP or session persistence; corrections structurally validated before merge.",
+  "style": "you",
+  "capabilityGlossary": [
+    "capability",
+    "capabilities"
+  ],
+  "manualBalanceLabelPreserved": true,
+  "beforeSha256": "9b8831bcd204c88d53b08b1fc0774c697b91b651c2a4c8ad7d50a6777e42bfcd",
+  "afterSha256": "4ce613379fa8f0c2304ce876968ba2bedee7fd9c87cfb8bbc8544100ec05649a",
+  "counts": {
+    "applied-material": 85,
+    "skipped-unsubstantiated": 23,
+    "skipped-style": 26,
+    "skipped-manual": 1,
+    "skipped-structure": 5,
+    "skipped-identifier": 1
+  },
+  "glossaryNormalizations": 0,
+  "decisions": [
+    {
+      "source": "Conexões protegidas por HTTPS durante o uso do site.",
+      "previous": "HTTPS connections while you use the site.",
+      "proposed": "Connections protected by HTTPS while you use the site.",
+      "result": "Connections protected by HTTPS while you use the site.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "A tradução omitia \"protegidas\", o que enfraquecia a garantia descrita na política de privacidade."
+    },
+    {
+      "source": "Símbolo c.",
+      "previous": "The \"c\" symbol.",
+      "proposed": "The c. symbol.",
+      "result": "The c. symbol.",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "Mantém o nome do símbolo \"c.\" com o ponto, igual às outras ocorrências (por exemplo, \"White c. symbol\")."
+    },
+    {
+      "source": "O exemplo interrompe a leitura do valor movimentável até esclarecer a divergência. Uma resposta incerta continua identificada como incerta.",
+      "previous": "The example pauses reading the available balance until the discrepancy is resolved. An uncertain answer stays flagged as uncertain.",
+      "proposed": "The example stops reading the amount available for transfers until the discrepancy is resolved. An uncertain answer stays flagged as uncertain.",
+      "result": "The example stops reading the amount available for transfers until the discrepancy is resolved. An uncertain answer stays flagged as uncertain.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "\"Valor movimentável\" é o saldo disponível para movimentação (available for transfers), não \"available balance\" genérico. A troca de \"pauses\" por \"stops\" também torna a frase mais natural."
+    },
+    {
+      "source": "Explore Banking Platform ↗",
+      "previous": "Explore Banking Platform ↗",
+      "proposed": "Explore the banking platform ↗",
+      "result": "Explore the banking platform ↗",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome genérico de produto (Banking Platform) deve ser traduzido como \"banking platform\", conforme a regra de rótulos."
+    },
+    {
+      "source": "Conheça produtos e experiências que combinam capacidades Catalisa em contextos de banking, crédito, saúde, jurídico, recrutamento, identidade e decisão.",
+      "previous": "Discover products and experiences that combine Catalisa capabilities in banking, credit, healthcare, legal, recruiting, identity and decisioning contexts.",
+      "proposed": "Discover products and experiences that combine Catalisa capabilities in banking, credit, healthcare, legal, recruitment, identity and decision contexts.",
+      "result": "Discover products and experiences that combine Catalisa capabilities in banking, credit, healthcare, legal, recruitment, identity and decision contexts.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Rótulos de produto consistentes: Recrutamento = recruitment, Decision = decision."
+    },
+    {
+      "source": "Estes Termos de Uso (\"Termos\") regulam o acesso e uso da plataforma Catalisa, operada por:\n\nCatalisa Tecnologia e Dados LTDA\nCNPJ: 49.646.439/0001-85\nEndereço: Rodovia Raposo Tavares, 7389 - São Paulo - SP - Brasil - 05577-902\n\nAo longo deste documento, \"Catalisa\", \"nós\" ou \"nosso\" referem-se à empresa acima identificada. \"Usuário\", \"você\" ou \"seu\" referem-se à pessoa física ou jurídica que acessa ou utiliza a Plataforma.",
+      "previous": "These Terms of Service (\"Terms\") govern access to and use of the Catalisa platform, operated by:\n\nCatalisa Tecnologia e Dados LTDA\nCNPJ (Tax ID): 49.646.439/0001-85\nAddress: Rodovia Raposo Tavares, 7389 - Sao Paulo - SP - Brazil - 05577-902\n\nThroughout this document, \"Catalisa\", \"we\" or \"our\" refer to the company identified above. \"User\", \"you\" or \"your\" refer to the individual or legal entity that accesses or uses the Platform.",
+      "proposed": "These Terms of Service (\"Terms\") govern access to and use of the Catalisa platform, operated by:\n\nCatalisa Tecnologia e Dados LTDA\nCNPJ (Tax ID): 49.646.439/0001-85\nAddress: Rodovia Raposo Tavares, 7389 - São Paulo - SP - Brasil - 05577-902\n\nThroughout this document, \"Catalisa\", \"we\" or \"our\" refer to the company identified above. \"User\", \"you\" or \"your\" refer to the individual or legal entity that accesses or uses the Platform.",
+      "result": "These Terms of Service (\"Terms\") govern access to and use of the Catalisa platform, operated by:\n\nCatalisa Tecnologia e Dados LTDA\nCNPJ (Tax ID): 49.646.439/0001-85\nAddress: Rodovia Raposo Tavares, 7389 - São Paulo - SP - Brasil - 05577-902\n\nThroughout this document, \"Catalisa\", \"we\" or \"our\" refer to the company identified above. \"User\", \"you\" or \"your\" refer to the individual or legal entity that accesses or uses the Platform.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Endereço legal deve ser mantido como no original: \"São Paulo\" com acento e \"Brasil\"."
+    },
+    {
+      "source": "Origem / 20.10.2026 ↗",
+      "previous": "Source / 10.20.2026 ↗",
+      "proposed": "Source / 10/20/2026 ↗",
+      "result": "Source / 10/20/2026 ↗",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "Data com pontos no formato americano fica ambígua; usar barras, como no restante do site (09/29/2026)."
+    },
+    {
+      "source": "Percurso ilustrativo: Proposta recebida, Consultar cadastro, Consultar documentos, Reunir informações, Aplicar a política",
+      "previous": "Illustrative path: Proposal received, Check registration data, Check documents, Gather information, Apply the policy",
+      "proposed": "Illustrative path: Application received, Check registration data, Check documents, Gather information, Apply the policy",
+      "result": "Illustrative path: Application received, Check registration data, Check documents, Gather information, Apply the policy",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "No contexto de crédito, \"proposta\" é traduzida como \"application\" no resto do site."
+    },
+    {
+      "source": "Reserva identificada",
+      "previous": "Booking identified",
+      "proposed": "Reserve identified",
+      "result": "Reserve identified",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "No exemplo financeiro, \"reserva\" é reserva de saldo, não agendamento (booking)."
+    },
+    {
+      "source": "Tutor",
+      "previous": "Tutor",
+      "proposed": "Pet owner",
+      "result": "Pet owner",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "No contexto pet, \"tutor\" quer dizer o dono do animal; \"Tutor\" em inglês é um falso cognato."
+    },
+    {
+      "source": "Cookies estritamente necessários: essenciais para o funcionamento da Plataforma, incluindo autenticação, segurança e preferências de sessão. Armazenados via localStorage e cookies de sessão. Não requerem consentimento.",
+      "previous": "Strictly necessary cookies: essential for Platform operation, including authentication, security and session preferences. Stored via localStorage and session cookies. Do not require consent.",
+      "proposed": "Strictly necessary cookies: essential for Platform operation, including authentication, security and session preferences. Stored via localStorage and session cookies. They do not require consent.",
+      "result": "Strictly necessary cookies: essential for Platform operation, including authentication, security and session preferences. Stored via localStorage and session cookies. They do not require consent.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Faltava o sujeito na última frase; corrigido para ficar gramatical em inglês."
+    },
+    {
+      "source": "Ampliar conta do titular no desktop",
+      "previous": "Enlarge account holder's account on desktop",
+      "proposed": "Enlarge the account holder's account view on desktop",
+      "result": "Enlarge the account holder's account view on desktop",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "\"account holder's account\" ficou literal e estranho; ajustado para ler naturalmente."
+    },
+    {
+      "source": "Recrutamento: atendimento e parecer com revisão | Catalisa",
+      "previous": "Recruiting: candidate engagement and reviewed assessments | Catalisa",
+      "proposed": "Recruitment: candidate engagement and reviewed assessments | Catalisa",
+      "result": "Recruitment: candidate engagement and reviewed assessments | Catalisa",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Rótulo de produto consistente: Recrutamento = recruitment."
+    },
+    {
+      "source": "Aprofunde a governança",
+      "previous": "Strengthen governance",
+      "proposed": "Explore governance in depth",
+      "result": "Explore governance in depth",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "\"Aprofunde\" significa conhecer em profundidade, não fortalecer; a tradução mudava o sentido."
+    },
+    {
+      "source": "Cor, texto e aviso do aplicativo mudam hoje, sem passar pela loja. Consulte aplicações, estágio e documentação.",
+      "previous": "App colors, copy, and notices change today, without going through the app store. See applications, stage, and documentation.",
+      "proposed": "App colors, copy and notices change today, without going through the app store. See use cases, stage and documentation.",
+      "result": "App colors, copy and notices change today, without going through the app store. See use cases, stage and documentation.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Terminologia consistente para \"aplicações\" (use cases) e pontuação uniforme."
+    },
+    {
+      "source": "Contar a jornada do cliente sem guardar quem ele é. Consulte aplicações, estágio e documentação.",
+      "previous": "Track the customer journey without storing who the customer is. See applications, stage and documentation.",
+      "proposed": "Track the customer journey without storing who the customer is. See use cases, stage and documentation.",
+      "result": "Track the customer journey without storing who the customer is. See use cases, stage and documentation.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Terminologia consistente para \"Consulte aplicações\" nas descrições SEO."
+    },
+    {
+      "source": "Reserva estruturada",
+      "previous": "Structured hold",
+      "proposed": "Structured reserve",
+      "result": "Structured reserve",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "\"Reserva\" é diferente de \"bloqueio\" (hold); evitar confundir os conceitos."
+    },
+    {
+      "source": "Seu uso precisa respeitar o papel e as permissões.",
+      "previous": "Your use must respect your role and permissions.",
+      "proposed": "Its use must respect roles and permissions.",
+      "result": "Its use must respect roles and permissions.",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "No contexto, \"Seu\" se refere à ferramenta, não ao leitor."
+    },
+    {
+      "source": "Proposta recebida, Preparar informações, Consultar a política e Revisar pendências, Encaminhar o resultado",
+      "previous": "Proposal received, Prepare information, Check the policy and Review pending items, Forward the outcome",
+      "proposed": "Application received, Prepare information, Check the policy and Review pending items, Forward the outcome",
+      "result": "Application received, Prepare information, Check the policy and Review pending items, Forward the outcome",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "\"Proposta\" de crédito traduzida de forma consistente como \"application\"."
+    },
+    {
+      "source": "A mesa recebe uma pendência explicada ou apenas uma proposta sem resposta?",
+      "previous": "Does the desk receive an explained pending item or just an unanswered proposal?",
+      "proposed": "Does the desk receive an explained pending item or just an unanswered application?",
+      "result": "Does the desk receive an explained pending item or just an unanswered application?",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "\"Proposta\" de crédito traduzida de forma consistente como \"application\"."
+    },
+    {
+      "source": "Ampliar Crédito / Política — Configuração e leitura da política na interface da mesa.",
+      "previous": "Ampliar Crédito / Policy — Configuring and reading the policy in the desk interface.",
+      "proposed": "Enlarge Credit / Policy — Configuring and reading the policy in the desk interface.",
+      "result": "Enlarge Credit / Policy — Configuring and reading the policy in the desk interface.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "\"Ampliar\" ficou em português; padronizado como \"Enlarge\"."
+    },
+    {
+      "source": "Ampliar Operações e condições de liberação",
+      "previous": "Expand Operations and release conditions",
+      "proposed": "Enlarge Operations and release conditions",
+      "result": "Enlarge Operations and release conditions",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Consistência: \"Ampliar\" (zoom de imagem) traduzido como \"Enlarge\" nos demais rótulos."
+    },
+    {
+      "source": "Ampliar bloqueios no console implementado",
+      "previous": "Expand blocks in the implemented console",
+      "proposed": "Enlarge holds in the implemented console",
+      "result": "Enlarge holds in the implemented console",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Consistência de \"Ampliar\"; \"bloqueios\" bancários são \"holds\", não \"blocks\"."
+    },
+    {
+      "source": "CONSOLE IMPLEMENTADO / BLOQUEIOS",
+      "previous": "IMPLEMENTED CONSOLE / BLOCKS",
+      "proposed": "IMPLEMENTED CONSOLE / HOLDS",
+      "result": "IMPLEMENTED CONSOLE / HOLDS",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "No contexto bancário, \"bloqueios\" são retenções de saldo (\"holds\")."
+    },
+    {
+      "source": "movimentáveis.",
+      "previous": "movable.",
+      "proposed": "available for transfers.",
+      "result": "available for transfers.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "\"Movimentáveis\" refere-se a saldo disponível para movimentação, não a algo \"movable\"."
+    },
+    {
+      "source": "Ampliar desktop do Banking Platform",
+      "previous": "Enlarge Banking Platform desktop",
+      "proposed": "Enlarge banking platform desktop",
+      "result": "Enlarge banking platform desktop",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome genérico de produto deve ser traduzido de forma consistente (banking platform)."
+    },
+    {
+      "source": "Uma leitura da jornada / Banking",
+      "previous": "A look at the journey / Banking",
+      "proposed": "A look at the journey / Banking platform",
+      "result": "A look at the journey / Banking platform",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Rótulo de produto consistente com \"banking platform\"."
+    },
+    {
+      "source": "Analise dados que o cliente autorizou compartilhar.",
+      "previous": "Analyze data the customer has authorized you to share.",
+      "proposed": "Analyze data the customer has authorized for sharing.",
+      "result": "Analyze data the customer has authorized for sharing.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "O original não diz que o cliente autorizou \"você\" a compartilhar; mantém o sentido de autorização de compartilhamento."
+    },
+    {
+      "source": "c.",
+      "previous": "approx.",
+      "proposed": "c.",
+      "result": "c.",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "\"c.\" parece ser a marca Catalisa (como em \"c. — versão Roxo\"), não abreviação de \"aproximadamente\"; confirmar no contexto de ContactConcept.tsx."
+    },
+    {
+      "source": "O DESENHO DA OPERAÇÃO",
+      "previous": "THE OPERATION DESIGN",
+      "proposed": "THE DESIGN OF THE OPERATION",
+      "result": "THE DESIGN OF THE OPERATION",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Construção literal e pouco natural em inglês."
+    },
+    {
+      "source": "extrato no desktop",
+      "previous": "desktop statement",
+      "proposed": "statement on desktop",
+      "result": "statement on desktop",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Fragmento: preserva a ordem e o papel do trecho original (extrato no desktop)."
+    },
+    {
+      "source": "O Usuário concorda em indenizar, defender e isentar a Catalisa, seus diretores, funcionários e prestadores de serviços de quaisquer perdas, danos, custos e despesas (incluindo honorários advocatícios razoáveis) decorrentes de:\n\n(a) Violação destes Termos pelo Usuário.\n(b) Uso ilegal ou indevido da Plataforma pelo Usuário.\n(c) Conteúdo enviado, processado ou armazenado pelo Usuário na Plataforma, incluindo conteúdo gerado por Agentes IA sob sua responsabilidade.\n(d) Violação de direitos de terceiros pelo Usuário, incluindo direitos de propriedade intelectual e privacidade.\n(e) Reclamações de titulares de Dados Pessoais cujo tratamento seja de responsabilidade do Usuário na qualidade de Controlador.",
+      "previous": "The User agrees to indemnify, defend and hold harmless Catalisa, its directors, employees and service providers from any losses, damages, costs and expenses (including reasonable attorney fees) arising from:\n\n(a) Breach of these Terms by the User.\n(b) Illegal or improper use of the Platform by the User.\n(c) Content sent, processed or stored by the User on the Platform, including content generated by AI Agents under the User's responsibility.\n(d) Violation of third-party rights by the User, including intellectual property and privacy rights.\n(e) Claims from data subjects whose data processing is the responsibility of the User as Controller.",
+      "proposed": "The User agrees to indemnify, defend and hold harmless Catalisa, its directors, employees and service providers from any losses, damages, costs and expenses (including reasonable attorneys' fees) arising from:\n\n(a) Breach of these Terms by the User.\n(b) Illegal or improper use of the Platform by the User.\n(c) Content sent, processed or stored by the User on the Platform, including content generated by AI Agents under the User's responsibility.\n(d) Violation of third-party rights by the User, including intellectual property and privacy rights.\n(e) Claims from data subjects whose data processing is the responsibility of the User as Controller.",
+      "result": "The User agrees to indemnify, defend and hold harmless Catalisa, its directors, employees and service providers from any losses, damages, costs and expenses (including reasonable attorneys' fees) arising from:\n\n(a) Breach of these Terms by the User.\n(b) Illegal or improper use of the Platform by the User.\n(c) Content sent, processed or stored by the User on the Platform, including content generated by AI Agents under the User's responsibility.\n(d) Violation of third-party rights by the User, including intellectual property and privacy rights.\n(e) Claims from data subjects whose data processing is the responsibility of the User as Controller.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Expressão jurídica padrão é \"attorneys' fees\"."
+    },
+    {
+      "source": "Pode movimentar",
+      "previous": "Available balance",
+      "proposed": "Available for transfers",
+      "result": "Available for transfers",
+      "outcome": "skipped-manual",
+      "why": "Preserve owner-reviewed available-balance label",
+      "reviewReason": "'Pode movimentar' indica saldo disponível para transferências, conforme a orientação; 'Available balance' perde essa nuance."
+    },
+    {
+      "source": "Neste exemplo, o valor informado pelo banco está disponível para movimentação.",
+      "previous": "In this example, the amount reported by the bank is available to move.",
+      "proposed": "In this example, the amount reported by the bank is available for transfers.",
+      "result": "In this example, the amount reported by the bank is available for transfers.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Mantém a consistência com 'Pode movimentar' (saldo disponível para transferências); 'available to move' soa literal."
+    },
+    {
+      "source": "Conheça a composição Med: atendimento pelo WhatsApp, contexto e agenda para clínicas, com revisão humana e responsabilidade pelo prontuário.",
+      "previous": "Discover the Med composition: WhatsApp-based patient service, context and scheduling for clinics, with human review and accountability for medical records.",
+      "proposed": "Discover the healthcare composition: WhatsApp-based patient service, context and scheduling for clinics, with human review and accountability for medical records.",
+      "result": "Discover the healthcare composition: WhatsApp-based patient service, context and scheduling for clinics, with human review and accountability for medical records.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "O nome de produto genérico Med deve ser traduzido como 'healthcare'."
+    },
+    {
+      "source": "Menores de idade. Nossos serviços não são destinados a menores de 18 (dezoito) anos. Não coletamos intencionalmente dados pessoais de menores. Caso tome conhecimento de que dados de um menor foram coletados, entre em contato conosco para que possamos excluí-los.\n\nAlterações nesta Política. Podemos atualizar esta Política de Privacidade periodicamente. Alterações significativas serão comunicadas com antecedência mínima de 30 (trinta) dias por e-mail ou notificação na Plataforma. O uso continuado da Plataforma após o prazo de notificação constitui aceitação da Política atualizada.\n\nContato. Para exercer seus direitos, esclarecer dúvidas ou enviar reclamações sobre esta Política:\n\nE-mail do DPO: privacidade@catalisa.io\nE-mail geral: contato@catalisa.io\nWhatsApp: +55 11 97730-3414\n\nForo. Fica eleito o foro da Comarca de São Paulo, Estado de São Paulo, Brasil, para dirimir quaisquer controvérsias decorrentes desta Política.",
+      "previous": "Minors. Our services are not intended for individuals under 18 (eighteen) years of age. We do not intentionally collect personal data from minors. If you become aware that data from a minor has been collected, please contact us so we can delete it.\n\nChanges to this Policy. We may update this Privacy Policy periodically. Significant changes will be communicated with a minimum of 30 (thirty) days' advance notice by email or Platform notification. Continued use of the Platform after the notice period constitutes acceptance of the updated Policy.\n\nContact. To exercise your rights, clarify questions or submit complaints about this Policy:\n\nDPO email: privacidade@catalisa.io\nGeneral email: contato@catalisa.io\nWhatsApp: +55 11 97730-3414\n\nJurisdiction. The courts of Sao Paulo, State of Sao Paulo, Brazil, are elected to resolve any disputes arising from this Policy.",
+      "proposed": "Minors. Our services are not intended for individuals under 18 (eighteen) years of age. We do not intentionally collect personal data from minors. If you become aware that data from a minor has been collected, please contact us so we can delete it.\n\nChanges to this Policy. We may update this Privacy Policy periodically. Significant changes will be communicated with a minimum of 30 (thirty) days' advance notice by email or Platform notification. Continued use of the Platform after the notice period constitutes acceptance of the updated Policy.\n\nContact. To exercise your rights, clarify questions or submit complaints about this Policy:\n\nDPO email: privacidade@catalisa.io\nGeneral email: contato@catalisa.io\nWhatsApp: +55 11 97730-3414\n\nJurisdiction. The courts of the District of São Paulo, State of São Paulo, Brazil, are chosen to resolve any disputes arising from this Policy.",
+      "result": "Minors. Our services are not intended for individuals under 18 (eighteen) years of age. We do not intentionally collect personal data from minors. If you become aware that data from a minor has been collected, please contact us so we can delete it.\n\nChanges to this Policy. We may update this Privacy Policy periodically. Significant changes will be communicated with a minimum of 30 (thirty) days' advance notice by email or Platform notification. Continued use of the Platform after the notice period constitutes acceptance of the updated Policy.\n\nContact. To exercise your rights, clarify questions or submit complaints about this Policy:\n\nDPO email: privacidade@catalisa.io\nGeneral email: contato@catalisa.io\nWhatsApp: +55 11 97730-3414\n\nJurisdiction. The courts of the District of São Paulo, State of São Paulo, Brazil, are chosen to resolve any disputes arising from this Policy.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Restaura o acento de 'São Paulo' (nome próprio) e substitui 'are elected', literal e inadequado, por 'are chosen', referindo-se à Comarca."
+    },
+    {
+      "source": "Experiências com trabalhos próprios.",
+      "previous": "Experiences with our own work.",
+      "proposed": "Experiences, each with its own job.",
+      "result": "Experiences, each with its own job.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Erro de sentido: 'trabalhos próprios' indica que cada experiência tem seu próprio papel, não 'nosso próprio trabalho'."
+    },
+    {
+      "source": "Ampliar Crédito / Simulação — Resultado de simulação na interface de referência, com dados de exemplo.",
+      "previous": "Expand Credit / Simulation — Simulation result in the reference interface, with sample data.",
+      "proposed": "Enlarge Credit / Simulation — Simulation result in the reference interface, with sample data.",
+      "result": "Enlarge Credit / Simulation — Simulation result in the reference interface, with sample data.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Padroniza 'Ampliar' como 'Enlarge', como nos demais rótulos."
+    },
+    {
+      "source": "Ampliar extrato no desktop",
+      "previous": "Expand statement on desktop",
+      "proposed": "Enlarge statement on desktop",
+      "result": "Enlarge statement on desktop",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Padroniza 'Ampliar' como 'Enlarge', como nos demais rótulos."
+    },
+    {
+      "source": "O volume divulgado pelo Banco Central mostra uso de dados compartilhados em operações de crédito. Não mede retorno de uma plataforma específica, nem permite atribuir toda a concessão exclusivamente ao Open Finance.",
+      "previous": "The volume published by the Central Bank shows the use of shared data in credit operations. It doesn't measure the return of any specific platform, nor does it allow all lending to be attributed exclusively to Open Finance.",
+      "proposed": "The volume published by the Central Bank of Brazil shows the use of shared data in credit operations. It doesn't measure the return of any specific platform, nor does it allow all lending to be attributed exclusively to Open Finance.",
+      "result": "The volume published by the Central Bank of Brazil shows the use of shared data in credit operations. It doesn't measure the return of any specific platform, nor does it allow all lending to be attributed exclusively to Open Finance.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Mantém o escopo brasileiro da referência ao Banco Central."
+    },
+    {
+      "source": "Conversa do visitante, respostas, identificação provisória e conceitos: até 7 dias após o início da sessão.",
+      "previous": "Visitor conversation, answers, provisional identity and concepts: up to 7 days after the session starts.",
+      "proposed": "Visitor conversation, answers, provisional identification and concepts: up to 7 days after the session starts.",
+      "result": "Visitor conversation, answers, provisional identification and concepts: up to 7 days after the session starts.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Identificação provisória' corresponde a 'provisional identification'; 'identity' altera o sentido."
+    },
+    {
+      "source": "Credit Platform: desenhe seu produto de crédito | Catalisa",
+      "previous": "Credit Platform: design your credit product | Catalisa",
+      "proposed": "Credit platform: design your credit product | Catalisa",
+      "result": "Credit platform: design your credit product | Catalisa",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome genérico de produto deve ser traduzido (Credit Platform → credit platform)."
+    },
+    {
+      "source": "Med: assistente de IA para clínicas | Catalisa",
+      "previous": "Med: AI assistant for clinics | Catalisa",
+      "proposed": "Healthcare: AI assistant for clinics | Catalisa",
+      "result": "Healthcare: AI assistant for clinics | Catalisa",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome genérico de produto Med deve ser traduzido como healthcare."
+    },
+    {
+      "source": "Experiências Banking",
+      "previous": "Banking Experiences",
+      "proposed": "Banking experiences",
+      "result": "Banking experiences",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência com o rótulo usado em outras telas (Banking experiences)."
+    },
+    {
+      "source": "O valor movimentável está em conferência.",
+      "previous": "The amount available to move is under review.",
+      "proposed": "The amount available for transfers is under review.",
+      "result": "The amount available for transfers is under review.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Em exemplos de reserva, 'movimentável' indica saldo disponível para transferências, não permissão genérica."
+    },
+    {
+      "source": "Força maior. Nenhuma das partes será responsável por atrasos ou falhas no cumprimento de suas obrigações decorrentes de eventos fora de seu controle razoável, incluindo desastres naturais, pandemias, guerras, greves, falhas de telecomunicações, atos governamentais ou falhas de infraestrutura de terceiros. A parte afetada deverá notificar a outra em até 5 (cinco) dias úteis após o início do evento.\n\nAnticorrupção. As partes declaram e garantem que conduzem seus negócios em conformidade com a legislação anticorrupção aplicável, incluindo a Lei n. 12.846/2013 (Lei Anticorrupção) e o Decreto n. 11.129/2022. Nenhuma das partes oferecerá, prometerá, pagará ou autorizará o pagamento de qualquer vantagem indevida a agentes públicos ou terceiros.\n\nCessão. O Usuário não poderá ceder ou transferir seus direitos e obrigações sob estes Termos sem o consentimento prévio e por escrito da Catalisa. A Catalisa poderá ceder estes Termos a qualquer afiliada ou em caso de fusão, aquisição ou venda de ativos, mediante notificação ao Usuário.\n\nIntegralidade. Estes Termos, juntamente com a Política de Privacidade e os documentos neles referenciados, constituem o acordo integral entre as partes e substituem todos os acordos anteriores, escritos ou verbais.\n\nAlterações. A Catalisa poderá modificar estes Termos a qualquer momento, comunicando as alterações com antecedência mínima de 30 (trinta) dias por email ou notificação na Plataforma. O uso continuado da Plataforma após o prazo de notificação constitui aceitação dos novos Termos. Caso discorde das alterações, o Usuário poderá rescindir o contrato conforme a Seção 17.\n\nIndependência das cláusulas. A invalidade ou inexequibilidade de qualquer cláusula destes Termos não afetará a validade das demais, que permanecerão em pleno vigor.\n\nRenúncia. A falha de qualquer das partes em exercer qualquer direito previsto nestes Termos não constituirá renúncia a tal direito.\n\nForo. Fica eleito o foro da Comarca de São Paulo, Estado de São Paulo, Brasil, para dirimir quaisquer controvérsias decorrentes destes Termos, com renúncia a qualquer outro, por mais privilegiado que seja.",
+      "previous": "Force majeure. Neither party shall be liable for delays or failures in the performance of its obligations resulting from events beyond its reasonable control, including natural disasters, pandemics, wars, strikes, telecommunications failures, governmental acts or third-party infrastructure failures. The affected party shall notify the other within 5 (five) business days after the onset of the event.\n\nAnti-corruption. The parties represent and warrant that they conduct their business in compliance with applicable anti-corruption legislation, including Law No. 12,846/2013 (Anti-Corruption Law) and Decree No. 11,129/2022. Neither party shall offer, promise, pay or authorize the payment of any undue advantage to public officials or third parties.\n\nAssignment. The User may not assign or transfer their rights and obligations under these Terms without the prior written consent of Catalisa. Catalisa may assign these Terms to any affiliate or in the event of a merger, acquisition or asset sale, upon notice to the User.\n\nEntire agreement. These Terms, together with the Privacy Policy and the documents referenced herein, constitute the entire agreement between the parties and supersede all prior agreements, written or oral.\n\nAmendments. Catalisa may modify these Terms at any time, communicating changes with a minimum of 30 (thirty) days' advance notice by email or Platform notification. Continued use of the Platform after the notice period constitutes acceptance of the new Terms. If the User disagrees with the changes, they may terminate the agreement as provided in Section 17.\n\nSeverability. The invalidity or unenforceability of any provision of these Terms shall not affect the validity of the remaining provisions, which shall remain in full force and effect.\n\nWaiver. The failure of either party to exercise any right provided under these Terms shall not constitute a waiver of such right.\n\nJurisdiction. The courts of Sao Paulo, State of Sao Paulo, Brazil, are elected to resolve any disputes arising from these Terms, with waiver of any other jurisdiction, however privileged.",
+      "proposed": "Force majeure. Neither party shall be liable for delays or failures in the performance of its obligations resulting from events beyond its reasonable control, including natural disasters, pandemics, wars, strikes, telecommunications failures, governmental acts or third-party infrastructure failures. The affected party shall notify the other within 5 (five) business days after the onset of the event.\n\nAnti-corruption. The parties represent and warrant that they conduct their business in compliance with applicable anti-corruption legislation, including Law No. 12,846/2013 (Anti-Corruption Law) and Decree No. 11,129/2022. Neither party shall offer, promise, pay or authorize the payment of any undue advantage to public officials or third parties.\n\nAssignment. The User may not assign or transfer their rights and obligations under these Terms without the prior written consent of Catalisa. Catalisa may assign these Terms to any affiliate or in the event of a merger, acquisition or asset sale, upon notice to the User.\n\nEntire agreement. These Terms, together with the Privacy Policy and the documents referenced herein, constitute the entire agreement between the parties and supersede all prior agreements, written or oral.\n\nAmendments. Catalisa may modify these Terms at any time, communicating changes with a minimum of 30 (thirty) days' advance notice by email or Platform notification. Continued use of the Platform after the notice period constitutes acceptance of the new Terms. If the User disagrees with the changes, they may terminate the agreement as provided in Section 17.\n\nSeverability. The invalidity or unenforceability of any provision of these Terms shall not affect the validity of the remaining provisions, which shall remain in full force and effect.\n\nWaiver. The failure of either party to exercise any right provided under these Terms shall not constitute a waiver of such right.\n\nJurisdiction. The courts of São Paulo, State of São Paulo, Brazil, are elected to resolve any disputes arising from these Terms, with waiver of any other jurisdiction, however privileged.",
+      "result": "Force majeure. Neither party shall be liable for delays or failures in the performance of its obligations resulting from events beyond its reasonable control, including natural disasters, pandemics, wars, strikes, telecommunications failures, governmental acts or third-party infrastructure failures. The affected party shall notify the other within 5 (five) business days after the onset of the event.\n\nAnti-corruption. The parties represent and warrant that they conduct their business in compliance with applicable anti-corruption legislation, including Law No. 12,846/2013 (Anti-Corruption Law) and Decree No. 11,129/2022. Neither party shall offer, promise, pay or authorize the payment of any undue advantage to public officials or third parties.\n\nAssignment. The User may not assign or transfer their rights and obligations under these Terms without the prior written consent of Catalisa. Catalisa may assign these Terms to any affiliate or in the event of a merger, acquisition or asset sale, upon notice to the User.\n\nEntire agreement. These Terms, together with the Privacy Policy and the documents referenced herein, constitute the entire agreement between the parties and supersede all prior agreements, written or oral.\n\nAmendments. Catalisa may modify these Terms at any time, communicating changes with a minimum of 30 (thirty) days' advance notice by email or Platform notification. Continued use of the Platform after the notice period constitutes acceptance of the new Terms. If the User disagrees with the changes, they may terminate the agreement as provided in Section 17.\n\nSeverability. The invalidity or unenforceability of any provision of these Terms shall not affect the validity of the remaining provisions, which shall remain in full force and effect.\n\nWaiver. The failure of either party to exercise any right provided under these Terms shall not constitute a waiver of such right.\n\nJurisdiction. The courts of São Paulo, State of São Paulo, Brazil, are elected to resolve any disputes arising from these Terms, with waiver of any other jurisdiction, however privileged.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome próprio 'São Paulo' deve manter o acento."
+    },
+    {
+      "source": "Ampliar Console / Pessoas e acessos — Protótipo do console / pessoas e acessos · guia de 29/09/2026 · dados de exemplo.",
+      "previous": "Enlarge Console / People and access — Console / people and access prototype · 09/29/2026 guide · sample data.",
+      "proposed": "Expand Console / People and access — Console / people and access prototype · guide from 09/29/2026 · sample data.",
+      "result": "Expand Console / People and access — Console / people and access prototype · guide from 09/29/2026 · sample data.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência de 'Ampliar' (Expand) e do formato da data do guia com os demais rótulos."
+    },
+    {
+      "source": "Ampliar captura do Builder",
+      "previous": "Enlarge Builder screenshot",
+      "proposed": "Expand Builder screenshot",
+      "result": "Expand Builder screenshot",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência terminológica de 'Ampliar' (Expand) em todo o site."
+    },
+    {
+      "source": "Uma proposta chega mais completa à decisão",
+      "previous": "An application reaches the decision more complete",
+      "proposed": "A more complete application reaches the decision",
+      "result": "A more complete application reaches the decision",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Construção literal e truncada; reformulado para inglês natural."
+    },
+    {
+      "source": "Acervo da casa",
+      "previous": "In-house library",
+      "proposed": "In-house knowledge base",
+      "result": "In-house knowledge base",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Consistência com 'acervo' traduzido como knowledge base."
+    },
+    {
+      "source": "Complementação",
+      "previous": "Supplementation",
+      "proposed": "Additional information",
+      "result": "Additional information",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "'Supplementation' soa artificial; alinhado a 'request for additional information'."
+    },
+    {
+      "source": "Banking Platform: crie seu produto financeiro | Catalisa",
+      "previous": "Banking Platform: build your financial product | Catalisa",
+      "proposed": "Banking platform: build your financial product | Catalisa",
+      "result": "Banking platform: build your financial product | Catalisa",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome genérico de produto deve ser traduzido de forma consistente (banking platform)."
+    },
+    {
+      "source": "\"LGPD\": Lei Geral de Proteção de Dados Pessoais (Lei n. 13.709/2018).",
+      "previous": "\"LGPD\": Lei Geral de Protecao de Dados Pessoais (Brazilian General Data Protection Law — Law No. 13,709/2018).",
+      "proposed": "\"LGPD\": Lei Geral de Proteção de Dados Pessoais (Brazilian General Data Protection Law — Law No. 13,709/2018).",
+      "result": "\"LGPD\": Lei Geral de Proteção de Dados Pessoais (Brazilian General Data Protection Law — Law No. 13,709/2018).",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome oficial da lei perdeu os acentos; deve ser preservado exatamente."
+    },
+    {
+      "source": "Parcela, amortização, IOF e CET como API testada, não como planilha. Consulte aplicações, estágio e documentação.",
+      "previous": "Installments, amortization, IOF and CET as a tested API, not a spreadsheet. See applications, stage and documentation.",
+      "proposed": "Installments, amortization, IOF and CET as a tested API, not a spreadsheet. See use cases, stage and documentation.",
+      "result": "Installments, amortization, IOF and CET as a tested API, not a spreadsheet. See use cases, stage and documentation.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Terminologia inconsistente: as demais descrições usam \"use cases\" para \"aplicações\"."
+    },
+    {
+      "source": "Documento entra como imagem, sai como JSON estruturado com nota de confiança. Consulte aplicações, estágio e documentação.",
+      "previous": "A document goes in as an image and comes out as structured JSON with a confidence score. See applications, stage and documentation.",
+      "proposed": "A document goes in as an image and comes out as structured JSON with a confidence score. See use cases, stage and documentation.",
+      "result": "A document goes in as an image and comes out as structured JSON with a confidence score. See use cases, stage and documentation.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Terminologia inconsistente: padronizar \"use cases\"."
+    },
+    {
+      "source": "WhatsApp no número que a empresa já usa, sem trocar de linha nem migrar conversa. Consulte aplicações, estágio e documentação.",
+      "previous": "WhatsApp on the number the company already uses, without switching lines or migrating conversations. See applications, stage and documentation.",
+      "proposed": "WhatsApp on the number the company already uses, without switching lines or migrating conversations. See use cases, stage and documentation.",
+      "result": "WhatsApp on the number the company already uses, without switching lines or migrating conversations. See use cases, stage and documentation.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Terminologia inconsistente: padronizar \"use cases\"."
+    },
+    {
+      "source": "Negativa",
+      "previous": "Denial",
+      "proposed": "Negative",
+      "result": "Negative",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "No contexto de versões da marca (Branco, Grafite), \"Negativa\" refere-se à versão negativa do logotipo, não a uma recusa."
+    },
+    {
+      "source": "App em aparelho · referência de 09/10/2026",
+      "previous": "On-device app · reference as of 10/09/2026",
+      "proposed": "On-device app · reference as of October 9, 2026",
+      "result": "On-device app · reference as of October 9, 2026",
+      "outcome": "skipped-structure",
+      "why": "Protected placeholder, URL, email, numeric fact or inline-code mismatch",
+      "reviewReason": "A data 10/09/2026 fica ambígua; escrever o mês por extenso preserva o mesmo dia (9 de outubro)."
+    },
+    {
+      "source": "Filme conceitual · animação de imagens · sem áudio",
+      "previous": "Conceptual film · image animation · no audio",
+      "proposed": "Concept film · image animation · no audio",
+      "result": "Concept film · image animation · no audio",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Inconsistência com \"Concept film\" usado no mesmo componente."
+    },
+    {
+      "source": "Ampliar Preparação pelo formulário",
+      "previous": "Expand Preparation via the form",
+      "proposed": "Enlarge Preparation via the form",
+      "result": "Enlarge Preparation via the form",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "\"Ampliar\" refere-se a ampliar imagem; padronizar com \"Enlarge\" usado nas demais legendas."
+    },
+    {
+      "source": "O papel e o contexto de acesso importam para saber o que pode ser consultado ou realizado.",
+      "previous": "Role and access context determine what can be viewed or done.",
+      "proposed": "Role and access context matter in determining what can be viewed or done.",
+      "result": "Role and access context matter in determining what can be viewed or done.",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "A tradução tornava a afirmação mais forte que o original (\"importam\", não \"determinam\")."
+    },
+    {
+      "source": "Desktop / Conta do titular",
+      "previous": "Desktop / Account holder's account",
+      "proposed": "Desktop / Holder's account",
+      "result": "Desktop / Holder's account",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Redundância \"Account holder's account\"; formulação mais natural."
+    },
+    {
+      "source": "conta do titular no desktop",
+      "previous": "account holder on desktop",
+      "proposed": "holder's account on desktop",
+      "result": "holder's account on desktop",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "A tradução perdeu a referência à conta (\"conta do titular\")."
+    },
+    {
+      "source": "Montagem visual de interfaces do Banking Platform",
+      "previous": "Visual interface assembly in Banking Platform",
+      "proposed": "Visual interface assembly in the banking platform",
+      "result": "Visual interface assembly in the banking platform",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "O nome genérico do produto Banking Platform deve ser traduzido como \"banking platform\"."
+    },
+    {
+      "source": "Ampliar App / Início — Aplicativo em aparelho · material de referência de 09/10/2026. Não é uma captura ao vivo.",
+      "previous": "Enlarge App / Home — App on device · reference material from 10/09/2026. Not a live capture.",
+      "proposed": "Enlarge App / Home — App on device · reference material from October 9, 2026. Not a live capture.",
+      "result": "Enlarge App / Home — App on device · reference material from October 9, 2026. Not a live capture.",
+      "outcome": "skipped-structure",
+      "why": "Protected placeholder, URL, email, numeric fact or inline-code mismatch",
+      "reviewReason": "A data 09/10/2026 (formato brasileiro) fica ambígua em inglês; usar a data por extenso evita confusão."
+    },
+    {
+      "source": "Sala de vídeo com link de convidado, gravação e transcrição em português. Consulte aplicações, estágio e documentação.",
+      "previous": "Video room with guest link, recording, and Portuguese transcription. See applications, stage, and documentation.",
+      "proposed": "Video room with guest link, recording, and Portuguese transcription. See use cases, stage, and documentation.",
+      "result": "Video room with guest link, recording, and Portuguese transcription. See use cases, stage, and documentation.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência terminológica: \"Consulte aplicações\" já aparece como \"use cases\" em outras descrições de SEO."
+    },
+    {
+      "source": "Quem fez o quê, quando e o que mudou — para toda a plataforma, por organização. Consulte aplicações, estágio e documentação.",
+      "previous": "Who did what, when, and what changed — across the entire platform, by organization. See applications, stage, and documentation.",
+      "proposed": "Who did what, when, and what changed — across the entire platform, by organization. See use cases, stage, and documentation.",
+      "result": "Who did what, when, and what changed — across the entire platform, by organization. See use cases, stage, and documentation.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência terminológica com \"See use cases\" nas demais descrições."
+    },
+    {
+      "source": "Confirme o serviço na fonte de quem paga.",
+      "previous": "Confirm the service with the payer's source.",
+      "proposed": "Confirm the service against the payer's source.",
+      "result": "Confirm the service against the payer's source.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "\"with the payer's source\" soa estranho; \"against\" expressa melhor a verificação na fonte."
+    },
+    {
+      "source": "● Movimentável",
+      "previous": "● Available to move",
+      "proposed": "● Available for transfers",
+      "result": "● Available for transfers",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Em reservas financeiras, 'Movimentável' indica saldo disponível para transferências, não permissão."
+    },
+    {
+      "source": "bloqueios no console implementado",
+      "previous": "console blocks implemented",
+      "proposed": "holds in the implemented console",
+      "result": "holds in the implemented console",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Tradução invertida: 'bloqueios' são retenções de saldo (holds), e 'implementado' qualifica o console."
+    },
+    {
+      "source": "Enviar ou processar conteúdo ilegal, incluindo pornografia infantil, incitação à violência, discurso de ódio ou qualquer material que viole a legislação brasileira.",
+      "previous": "Sending or processing illegal content, including child pornography, incitement to violence, hate speech or any material that violates applicable law.",
+      "proposed": "Sending or processing illegal content, including child pornography, incitement to violence, hate speech or any material that violates Brazilian law.",
+      "result": "Sending or processing illegal content, including child pornography, incitement to violence, hate speech or any material that violates Brazilian law.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "A referência à legislação brasileira deve manter seu escopo original; 'applicable law' altera o sentido jurídico."
+    },
+    {
+      "source": "Parâmetros do seu produto de crédito por API, sem constante escondida no código. Consulte aplicações, estágio e documentação.",
+      "previous": "Your credit product's parameters via API, with no constants hidden in code. See applications, stage and documentation.",
+      "proposed": "Your credit product's parameters via API, with no constants hidden in code. See use cases, stage, and documentation.",
+      "result": "Your credit product's parameters via API, with no constants hidden in code. See use cases, stage, and documentation.",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "Mantém consistente a tradução de 'aplicações' ('use cases'), como nas demais descrições de SEO."
+    },
+    {
+      "source": "Login com Google, Microsoft, GitHub e Meta para as empresas que você atende. Consulte aplicações, estágio e documentação.",
+      "previous": "Sign in with Google, Microsoft, GitHub and Meta for the companies you serve. See applications, stage and documentation.",
+      "proposed": "Sign in with Google, Microsoft, GitHub, and Meta for the companies you serve. See use cases, stage, and documentation.",
+      "result": "Sign in with Google, Microsoft, GitHub, and Meta for the companies you serve. See use cases, stage, and documentation.",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "Mantém consistente a tradução de 'aplicações' ('use cases'), como nas demais descrições de SEO."
+    },
+    {
+      "source": "Saber quanto você sabe de uma pessoa, e saber quando parou de saber. Consulte aplicações, estágio e documentação.",
+      "previous": "Know how much you know about a person, and know when you stopped knowing it. See use cases, stage, and documentation.",
+      "proposed": "Knowing how much you know about a person, and knowing when you stopped knowing. See use cases, stage, and documentation.",
+      "result": "Knowing how much you know about a person, and knowing when you stopped knowing. See use cases, stage, and documentation.",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "Alinha a frase com a versão do catálogo (r_a1c87d445c7a45fa)."
+    },
+    {
+      "source": "Ampliar Análise e acompanhamento",
+      "previous": "Expand Analysis and monitoring",
+      "proposed": "Enlarge Analysis and monitoring",
+      "result": "Enlarge Analysis and monitoring",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Ampliar' aqui significa ampliar a imagem; usa o mesmo termo que os outros rótulos ('Enlarge')."
+    },
+    {
+      "source": "Ampliar Gestão / Papéis e ferramentas",
+      "previous": "Expand Management / Roles and tools",
+      "proposed": "Enlarge Management / Roles and tools",
+      "result": "Enlarge Management / Roles and tools",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Ampliar' aqui significa ampliar a imagem; usa o mesmo termo que os outros rótulos ('Enlarge')."
+    },
+    {
+      "source": "Encaminhamento não encontrado.",
+      "previous": "Referral not found.",
+      "proposed": "Handoff not found.",
+      "result": "Handoff not found.",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "No contexto, 'encaminhamento' é o envio da conversa à equipe (handoff), não uma indicação (referral)."
+    },
+    {
+      "source": "Quem atende encontra uma explicação.",
+      "previous": "Whoever handles it finds an explanation.",
+      "proposed": "The person handling the case finds an explanation.",
+      "result": "The person handling the case finds an explanation.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "'Whoever handles it' soa estranho e ambíguo; 'quem atende' se refere à pessoa do atendimento."
+    },
+    {
+      "source": "Nosso site e Plataforma utilizam cookies e tecnologias similares para melhorar sua experiência. Utilizamos a Google tag e Google Analytics 4 (GA4), com Consent Mode v2, e Microsoft Clarity somente após a permissão para analytics. A preferência pode ser alterada em “Preferências de cookies”; recusar não impede o uso do site. Dados de contato e conteúdo das conversas, conceitos e atendimento não são enviados como parâmetros de analytics. O Clarity não é carregado no Contato, Lab ou nas áreas autenticadas.\n\nCategorias de cookies:",
+      "previous": "Our website and Platform use cookies and similar technologies to improve your experience. We use the Google tag and Google Analytics 4 (GA4), with Consent Mode v2, and Microsoft Clarity only after analytics permission. You can change your choice in “Cookie preferences”; declining does not prevent use of the site. Contact details and conversation, concept and support content are not sent as analytics parameters. Clarity is not loaded on Contact, Lab or authenticated surfaces.\n\nCookie categories:",
+      "proposed": "Our website and Platform use cookies and similar technologies to improve your experience. We use the Google tag and Google Analytics 4 (GA4), with Consent Mode v2, and Microsoft Clarity only after analytics permission. You can change your choice in “Cookie preferences”; declining does not prevent use of the site. Contact details and conversation, concept and support content are not sent as analytics parameters. Clarity is not loaded on Contact, Lab or authenticated areas.\n\nCookie categories:",
+      "result": "Our website and Platform use cookies and similar technologies to improve your experience. We use the Google tag and Google Analytics 4 (GA4), with Consent Mode v2, and Microsoft Clarity only after analytics permission. You can change your choice in “Cookie preferences”; declining does not prevent use of the site. Contact details and conversation, concept and support content are not sent as analytics parameters. Clarity is not loaded on Contact, Lab or authenticated areas.\n\nCookie categories:",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "'Áreas autenticadas' deve ser 'authenticated areas'; 'surfaces' é uma tradução imprecisa."
+    },
+    {
+      "source": "As capturas são referências de interfaces do repositório. Não representam uma execução ao vivo nem disponibilidade integral de integrações.",
+      "previous": "The screenshots are references of interfaces from the repository. They do not represent a live run or full availability of integrations.",
+      "proposed": "The screenshots are interface references from the repository. They do not represent a live run or full availability of integrations.",
+      "result": "The screenshots are interface references from the repository. They do not represent a live run or full availability of integrations.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Redação mais natural; 'references of interfaces' é uma construção literal."
+    },
+    {
+      "source": "Um primeiro recorte pode preparar dossiês, localizar documentos ou organizar o atendimento para quem decide. O ganho aparece quando diminui o tempo de busca e preparação sem ocultar lacunas ou criar novos erros de execução.",
+      "previous": "A first scope might prepare dossiers, locate documents or organize information for decision-makers. The gain shows up when search and preparation time drops without hiding gaps or introducing new execution errors.",
+      "proposed": "A first scope might prepare dossiers, locate documents or organize the service workflow for decision-makers. The gain shows up when search and preparation time drops without hiding gaps or introducing new execution errors.",
+      "result": "A first scope might prepare dossiers, locate documents or organize the service workflow for decision-makers. The gain shows up when search and preparation time drops without hiding gaps or introducing new execution errors.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Organizar o atendimento' foi traduzido como 'organize information', o que muda o sentido."
+    },
+    {
+      "source": "desktop do Banking Platform",
+      "previous": "Banking Platform desktop",
+      "proposed": "banking platform desktop",
+      "result": "banking platform desktop",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome genérico de produto deve ser traduzido de forma consistente (Banking Platform → banking platform)."
+    },
+    {
+      "source": "Explore Credit Platform ↗",
+      "previous": "Explore Credit Platform ↗",
+      "proposed": "Explore the credit platform ↗",
+      "result": "Explore the credit platform ↗",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome genérico de produto deve ser traduzido (Credit Platform → credit platform)."
+    },
+    {
+      "source": "Montagem visual das interfaces de Credit Platform",
+      "previous": "Visual composite of the Credit Platform interfaces",
+      "proposed": "Visual composite of the credit platform interfaces",
+      "result": "Visual composite of the credit platform interfaces",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome genérico de produto deve ser traduzido (Credit Platform → credit platform)."
+    },
+    {
+      "source": "Principal",
+      "previous": "Principal",
+      "proposed": "Main",
+      "result": "Main",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Rótulo de navegação: 'Principal' significa 'Main'; 'Principal' em inglês tem outro sentido (inclusive financeiro)."
+    },
+    {
+      "source": "Sem reserva",
+      "previous": "No reservation",
+      "proposed": "No reserve",
+      "result": "No reserve",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Contexto de reserva financeira: 'reserva' é 'reserve', não 'reservation' (agendamento)."
+    },
+    {
+      "source": "Tire a redigitação do caminho.",
+      "previous": "Take re-entry out of the way.",
+      "proposed": "Eliminate retyping.",
+      "result": "Eliminate retyping.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Tradução literal e pouco natural; 'redigitação' significa digitar os dados de novo."
+    },
+    {
+      "source": "Um dado pendente",
+      "previous": "One pending item of data",
+      "proposed": "One pending data item",
+      "result": "One pending data item",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Construção artificial em inglês; a nova formulação soa mais natural."
+    },
+    {
+      "source": "acordos e renegociação na mesa",
+      "previous": "settlements and renegotiation on the table",
+      "proposed": "agreements and renegotiation at the desk",
+      "result": "agreements and renegotiation at the desk",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'mesa' refere-se à mesa de crédito do produto; 'on the table' é expressão idiomática que muda o sentido."
+    },
+    {
+      "source": "Esta Política de Privacidade descreve como a Catalisa coleta, utiliza, armazena e protege seus dados pessoais.\n\nControlador de dados:\nCatalisa Tecnologia e Dados LTDA\nCNPJ: 49.646.439/0001-85\nEndereço: Rodovia Raposo Tavares, 7389 - São Paulo - SP - Brasil - 05577-902\n\nEncarregado de Proteção de Dados (DPO):\nE-mail: privacidade@catalisa.io\nCanal de atendimento: privacidade@catalisa.io",
+      "previous": "This Privacy Policy describes how Catalisa collects, uses, stores and protects your personal data.\n\nData Controller:\nCatalisa Tecnologia e Dados LTDA\nCNPJ (Tax ID): 49.646.439/0001-85\nAddress: Rodovia Raposo Tavares, 7389 - Sao Paulo - SP - Brazil - 05577-902\n\nData Protection Officer (DPO):\nEmail: privacidade@catalisa.io\nContact channel: privacidade@catalisa.io",
+      "proposed": "This Privacy Policy describes how Catalisa collects, uses, stores and protects your personal data.\n\nData Controller:\nCatalisa Tecnologia e Dados LTDA\nCNPJ (Tax ID): 49.646.439/0001-85\nAddress: Rodovia Raposo Tavares, 7389 - São Paulo - SP - Brazil - 05577-902\n\nData Protection Officer (DPO):\nEmail: privacidade@catalisa.io\nContact channel: privacidade@catalisa.io",
+      "result": "This Privacy Policy describes how Catalisa collects, uses, stores and protects your personal data.\n\nData Controller:\nCatalisa Tecnologia e Dados LTDA\nCNPJ (Tax ID): 49.646.439/0001-85\nAddress: Rodovia Raposo Tavares, 7389 - São Paulo - SP - Brazil - 05577-902\n\nData Protection Officer (DPO):\nEmail: privacidade@catalisa.io\nContact channel: privacidade@catalisa.io",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "Nome próprio do endereço deve manter a acentuação original (São Paulo)."
+    },
+    {
+      "source": "Marca e recursos",
+      "previous": "Brand and features",
+      "proposed": "Brand and resources",
+      "result": "Brand and resources",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "No cabeçalho, 'recursos' remete à página Resources, não a 'features'."
+    },
+    {
+      "source": "O tratamento de Dados Pessoais pela Catalisa é regulado pela Política de Privacidade, disponível em /politica-privacidade, que é parte integrante destes Termos.\n\nNo contexto da Plataforma, as partes atuam nos seguintes papéis definidos pela LGPD:\n\n- Catalisa como Operadora: processa Dados Pessoais dos clientes do Usuário conforme as instruções deste, exclusivamente para a prestação dos serviços.\n- Usuário como Controlador: toma as decisões sobre o tratamento de Dados Pessoais de seus clientes, incluindo coleta, finalidade e base legal.\n\nO Usuário se compromete a:\n\n(a) Garantir que possui base legal adequada (consentimento, contrato ou outra) para o tratamento de Dados Pessoais de seus clientes através da Plataforma.\n(b) Informar seus clientes finais sobre o uso da Plataforma para processamento de suas comunicações.\n(c) Atender solicitações de direitos dos titulares de Dados Pessoais de seus clientes, podendo solicitar apoio técnico da Catalisa para tanto.",
+      "previous": "The processing of Personal Data by Catalisa is governed by the Privacy Policy, available at /privacy-policy, which is an integral part of these Terms.\n\nIn the context of the Platform, the parties operate in the following roles as defined by LGPD:\n\n- Catalisa as Processor: processes Personal Data of the User's customers according to the User's instructions, exclusively for the provision of services.\n- User as Controller: makes decisions regarding the processing of Personal Data of their customers, including collection, purpose and legal basis.\n\nThe User agrees to:\n\n(a) Ensure that they have an adequate legal basis (consent, contract or other) for the processing of Personal Data of their customers through the Platform.\n(b) Inform their end customers about the use of the Platform for processing their communications.\n(c) Handle requests from data subjects regarding their Personal Data, and may request technical support from Catalisa to do so.",
+      "proposed": "The processing of Personal Data by Catalisa is governed by the Privacy Policy, available at /politica-privacidade, which is an integral part of these Terms.\n\nIn the context of the Platform, the parties operate in the following roles as defined by the LGPD:\n\n- Catalisa as Processor: processes Personal Data of the User's customers according to the User's instructions, exclusively for the provision of services.\n- User as Controller: makes decisions regarding the processing of Personal Data of their customers, including collection, purpose and legal basis.\n\nThe User agrees to:\n\n(a) Ensure that they have an adequate legal basis (consent, contract or other) for the processing of Personal Data of their customers through the Platform.\n(b) Inform their end customers about the use of the Platform for processing their communications.\n(c) Handle requests from data subjects regarding their Personal Data, and may request technical support from Catalisa to do so.",
+      "result": "The processing of Personal Data by Catalisa is governed by the Privacy Policy, available at /politica-privacidade, which is an integral part of these Terms.\n\nIn the context of the Platform, the parties operate in the following roles as defined by the LGPD:\n\n- Catalisa as Processor: processes Personal Data of the User's customers according to the User's instructions, exclusively for the provision of services.\n- User as Controller: makes decisions regarding the processing of Personal Data of their customers, including collection, purpose and legal basis.\n\nThe User agrees to:\n\n(a) Ensure that they have an adequate legal basis (consent, contract or other) for the processing of Personal Data of their customers through the Platform.\n(b) Inform their end customers about the use of the Platform for processing their communications.\n(c) Handle requests from data subjects regarding their Personal Data, and may request technical support from Catalisa to do so.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Links devem ser preservados exatamente; /politica-privacidade foi traduzido indevidamente."
+    },
+    {
+      "source": "A reserva estruturada de R$ 200,00 reduz o que pode ser movimentado para R$ 100,00.",
+      "previous": "The structured reserve of R$ 200.00 reduces the amount available to move to R$ 100.00.",
+      "proposed": "The structured hold of R$ 200.00 reduces the balance available for transfers to R$ 100.00.",
+      "result": "The structured hold of R$ 200.00 reduces the balance available for transfers to R$ 100.00.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Pode movimentar' é saldo disponível para transferências; alinhar 'reserva' com 'hold' usado no Banking."
+    },
+    {
+      "source": "Uma reserva muda a leitura da conta. Explicar o disponível ajuda o titular a decidir o próximo passo e a equipe a responder com clareza.",
+      "previous": "A hold changes how the account reads. Explaining the available balance helps the account holder decide the next step and helps the team respond clearly.",
+      "proposed": "A hold changes how the balance is read. Explaining the available balance helps the account holder decide the next step and helps the team respond clearly.",
+      "result": "A hold changes how the balance is read. Explaining the available balance helps the account holder decide the next step and helps the team respond clearly.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'how the account reads' é construção literal e estranha."
+    },
+    {
+      "source": "O que está disponível e o que está reservado ficam separados.",
+      "previous": "What is available and what is reserved are kept separate.",
+      "proposed": "What is available and what is on hold are kept separate.",
+      "result": "What is available and what is on hold are kept separate.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Consistência terminológica com 'on hold'/'hold' nas demais strings de reserva."
+    },
+    {
+      "source": "Crédito originado com análise de dados compartilhados, de 2021 a junho de 2025, segundo o Banco Central. Valor acumulado; não é projeção.",
+      "previous": "Credit originated with shared data analysis, from 2021 to June 2025, according to the Banco Central. Cumulative amount; not a projection.",
+      "proposed": "Credit originated with shared data analysis, from 2021 to June 2025, according to Brazil's Central Bank (Banco Central). Cumulative amount; not a projection.",
+      "result": "Credit originated with shared data analysis, from 2021 to June 2025, according to Brazil's Central Bank (Banco Central). Cumulative amount; not a projection.",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "Deixar explícito o escopo brasileiro e alinhar com 'Central Bank' usado em outra string."
+    },
+    {
+      "source": "Cenário de produto proposto pela Catalisa. O dado histórico do BC não representa tração, volume ou resultado da Catalisa.",
+      "previous": "Product scenario proposed by Catalisa. The Central Bank's historical data does not represent Catalisa's traction, volume or results.",
+      "proposed": "Product scenario proposed by Catalisa. Brazil's Central Bank historical data does not represent Catalisa's traction, volume or results.",
+      "result": "Product scenario proposed by Catalisa. Brazil's Central Bank historical data does not represent Catalisa's traction, volume or results.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Manter o escopo brasileiro da referência ao BC e a consistência."
+    },
+    {
+      "source": "Explore Decision",
+      "previous": "Explore Decision",
+      "proposed": "Explore the decision platform",
+      "result": "Explore the decision platform",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome genérico de produto Decision deve ser traduzido."
+    },
+    {
+      "source": "Decision Platform: esteira de análise e decisão | Catalisa",
+      "previous": "Decision Platform: analysis and decision pipeline | Catalisa",
+      "proposed": "Decision platform: analysis and decision pipeline | Catalisa",
+      "result": "Decision platform: analysis and decision pipeline | Catalisa",
+      "outcome": "skipped-identifier",
+      "why": "Proposal removed an existing protected technical or company name",
+      "reviewReason": "Nome genérico de produto Decision deve ser traduzido de forma consistente."
+    },
+    {
+      "source": "Crie uma experiência financeira própria ou modernize a atual. Explore marca, canais e regras de operação com Banking, conforme o escopo e as integrações validadas.",
+      "previous": "Create your own financial experience or modernize your current one. Explore brand, channels and operating rules with Banking, according to the validated scope and integrations.",
+      "proposed": "Create your own financial experience or modernize your current one. Explore brand, channels and operating rules with the banking platform, according to the validated scope and integrations.",
+      "result": "Create your own financial experience or modernize your current one. Explore brand, channels and operating rules with the banking platform, according to the validated scope and integrations.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome genérico de produto Banking deve ser traduzido."
+    },
+    {
+      "source": "Interface de referência do console Banking, com pessoas, papéis e estados de acesso.",
+      "previous": "Reference interface for the Banking console, with people, roles and access states.",
+      "proposed": "Reference interface for the banking platform console, with people, roles and access states.",
+      "result": "Reference interface for the banking platform console, with people, roles and access states.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome genérico de produto Banking deve ser traduzido."
+    },
+    {
+      "source": "Console implementado · staging · guia de 29/09/2026",
+      "previous": "Console implemented · staging · guide dated 09/29/2026",
+      "proposed": "Console implemented · staging · guide dated Sep 29, 2026",
+      "result": "Console implemented · staging · guide dated Sep 29, 2026",
+      "outcome": "skipped-structure",
+      "why": "Protected placeholder, URL, email, numeric fact or inline-code mismatch",
+      "reviewReason": "Padronizar formato de data com 'Aug 17, 2026' e evitar ambiguidade."
+    },
+    {
+      "source": "Cirúrgico no mobile: interface conecta ao seu backend, que integra capacidades e sistemas existentes",
+      "previous": "Surgical on mobile: the interface connects to your backend, which integrates capabilities and existing systems",
+      "proposed": "Targeted on mobile: the interface connects to your backend, which integrates capabilities and existing systems",
+      "result": "Targeted on mobile: the interface connects to your backend, which integrates capabilities and existing systems",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'Surgical' é tradução literal e estranha de 'cirúrgico' neste contexto."
+    },
+    {
+      "source": "Atendimento por WhatsApp que faz a triagem pela área certa, responde com o material do escritório e marca a consulta na agenda. O acervo da casa dá contexto à conversa e ao trabalho.",
+      "previous": "WhatsApp service that triages by the right practice area, responds with the firm's materials and books the appointment on the calendar. The firm's knowledge base gives context to the conversation and the work.",
+      "proposed": "WhatsApp service that triages and routes to the right practice area, responds with the firm's materials and books the appointment on the calendar. The firm's knowledge base gives context to the conversation and the work.",
+      "result": "WhatsApp service that triages and routes to the right practice area, responds with the firm's materials and books the appointment on the calendar. The firm's knowledge base gives context to the conversation and the work.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'triages by the right practice area' é construção incorreta."
+    },
+    {
+      "source": "Parecer no processo",
+      "previous": "Opinion in the process",
+      "proposed": "Opinion in the case file",
+      "result": "Opinion in the case file",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "No contexto jurídico, 'processo' é o processo/autos, não 'process'."
+    },
+    {
+      "source": "Existe uma modalidade pequena o suficiente para validar a transição?",
+      "previous": "Is there a product line small enough to validate the transition?",
+      "proposed": "Is there a product type small enough to validate the transition?",
+      "result": "Is there a product type small enough to validate the transition?",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Consistência: 'modalidade' traduzida como 'product type' em outras strings."
+    },
+    {
+      "source": "Em caso de incidente de segurança que possa acarretar risco ou dano relevante aos titulares de dados pessoais, a Catalisa adotará as seguintes medidas:\n\n(a) Notificação à Autoridade Nacional de Proteção de Dados (ANPD) em até 72 (setenta e duas) horas após a confirmação do incidente, conforme Art. 48 da LGPD.\n\n(b) Comunicação ao titular dos dados afetados, em prazo razoável, contendo: descrição da natureza dos dados afetados, informações sobre os riscos, medidas adotadas para mitigar os efeitos e orientações ao titular.\n\n(c) Registro interno do incidente com documentação completa: natureza, dados afetados, titulares impactados, medidas técnicas adotadas e resultado das ações de contenção.\n\n(d) Notificação ao Usuário (quando Operadora) para que este tome as providências necessárias junto a seus clientes.",
+      "previous": "In the event of a security incident that may pose a risk or relevant harm to personal data subjects, Catalisa will take the following measures:\n\n(a) Notification to the National Data Protection Authority (ANPD) within 72 (seventy-two) hours after confirmation of the incident, in accordance with Art. 48 of the LGPD.\n\n(b) Communication to affected data subjects, within a reasonable timeframe, containing: description of the nature of the affected data, information about the risks, measures taken to mitigate the effects and guidance for the data subject.\n\n(c) Internal incident record with complete documentation: nature, affected data, impacted data subjects, technical measures taken and results of containment actions.\n\n(d) Notification to the User (when acting as Processor) so that they may take the necessary measures with their customers.",
+      "proposed": "In the event of a security incident that may pose a risk or significant harm to personal data subjects, Catalisa will take the following measures:\n\n(a) Notification to the National Data Protection Authority (ANPD) within 72 (seventy-two) hours after confirmation of the incident, in accordance with Art. 48 of the LGPD.\n\n(b) Communication to affected data subjects, within a reasonable timeframe, containing: description of the nature of the affected data, information about the risks, measures taken to mitigate the effects and guidance for the data subject.\n\n(c) Internal incident record with complete documentation: nature, affected data, impacted data subjects, technical measures taken and results of containment actions.\n\n(d) Notification to the User (when Catalisa acts as Processor) so that they may take the necessary measures with their customers.",
+      "result": "In the event of a security incident that may pose a risk or significant harm to personal data subjects, Catalisa will take the following measures:\n\n(a) Notification to the National Data Protection Authority (ANPD) within 72 (seventy-two) hours after confirmation of the incident, in accordance with Art. 48 of the LGPD.\n\n(b) Communication to affected data subjects, within a reasonable timeframe, containing: description of the nature of the affected data, information about the risks, measures taken to mitigate the effects and guidance for the data subject.\n\n(c) Internal incident record with complete documentation: nature, affected data, impacted data subjects, technical measures taken and results of containment actions.\n\n(d) Notification to the User (when Catalisa acts as Processor) so that they may take the necessary measures with their customers.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'relevant harm' é falso cognato de 'dano relevante'; esclarecer quem atua como Operadora."
+    },
+    {
+      "source": "Níveis de Serviço (SLA)",
+      "previous": "Service Level Agreement (SLA)",
+      "proposed": "Service Levels (SLA)",
+      "result": "Service Levels (SLA)",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "Fonte diz 'Níveis de Serviço', não 'Agreement'."
+    },
+    {
+      "source": "Preparando seu atendimento…",
+      "previous": "Preparing your service…",
+      "proposed": "Preparing your support session…",
+      "result": "Preparing your support session…",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "'atendimento' aqui é suporte humano; 'service' é ambíguo."
+    },
+    {
+      "source": "O atendimento ainda está sendo conectado. Sua conversa está salva e você pode continuar explorando o conceito.",
+      "previous": "The service is still being connected. Your conversation is saved, and you can keep exploring the concept.",
+      "proposed": "Support is still being connected. Your conversation is saved, and you can keep exploring the concept.",
+      "result": "Support is still being connected. Your conversation is saved, and you can keep exploring the concept.",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "'The service' é ambíguo; trata-se do atendimento humano."
+    },
+    {
+      "source": "Revisão humana prevista nesta etapa: uma pessoa confere as informações e decide se o fluxo pode seguir ou precisa de ajuste. Esta prévia não aciona atendimento.",
+      "previous": "Human review planned at this step: a person checks the information and decides whether the flow can proceed or needs adjustment. This preview does not trigger any service.",
+      "proposed": "Human review planned at this step: a person checks the information and decides whether the flow can proceed or needs adjustment. This preview does not engage the support team.",
+      "result": "Human review planned at this step: a person checks the information and decides whether the flow can proceed or needs adjustment. This preview does not engage the support team.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "'does not trigger any service' é ambíguo; o sentido é não acionar atendimento."
+    },
+    {
+      "source": "Banco de documentos JSON multi-tenant sem criar tabela para cada cliente. Consulte aplicações, estágio e documentação.",
+      "previous": "Multi-tenant JSON document database without creating a table for each customer. Check applications, stage and documentation.",
+      "proposed": "Multi-tenant JSON document database without creating a table for each customer. See use cases, stage and documentation.",
+      "result": "Multi-tenant JSON document database without creating a table for each customer. See use cases, stage and documentation.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência com as demais descrições SEO."
+    },
+    {
+      "source": "{value0}. Consulte aplicações, estágio e documentação.",
+      "previous": "{value0}. See applications, stage and documentation.",
+      "proposed": "{value0}. See use cases, stage and documentation.",
+      "result": "{value0}. See use cases, stage and documentation.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Consistência de terminologia ('use cases') entre descrições SEO."
+    },
+    {
+      "source": "Catálogo, estoque, preço e pedido multi-loja na mesma API. Consulte aplicações, estágio e documentação.",
+      "previous": "Catalog, inventory, pricing, and multi-store orders in the same API. See use cases, stage, and documentation.",
+      "proposed": "Catalog, inventory, pricing and multi-store orders in the same API. See use cases, stage and documentation.",
+      "result": "Catalog, inventory, pricing and multi-store orders in the same API. See use cases, stage and documentation.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Padronizar pontuação (sem vírgula serial) com o restante do site."
+    },
+    {
+      "source": "Calculations Engine: cálculo de parcelas, IOF e CET | Catalisa",
+      "previous": "Calculations Engine: installment, IOF, and CET calculation | Catalisa",
+      "proposed": "Calculations Engine: installment, IOF and CET calculation | Catalisa",
+      "result": "Calculations Engine: installment, IOF and CET calculation | Catalisa",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Padronizar pontuação (sem vírgula serial)."
+    },
+    {
+      "source": "Conecte o canal oficial da Meta a mensagens, campanhas e atendimento humano dentro da jornada do cliente.",
+      "previous": "Connect Meta's official channel to messaging, campaigns, and human support within the customer journey.",
+      "proposed": "Connect Meta's official channel to messaging, campaigns and human support within the customer journey.",
+      "result": "Connect Meta's official channel to messaging, campaigns and human support within the customer journey.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Padronizar pontuação (sem vírgula serial)."
+    },
+    {
+      "source": "Organize usuários, empresas e permissões para que cada participante tenha acesso ao trabalho que lhe cabe.",
+      "previous": "Organize users, companies, and permissions so each participant has access to the work that belongs to them.",
+      "proposed": "Organize users, companies and permissions so each participant has access to the work that belongs to them.",
+      "result": "Organize users, companies and permissions so each participant has access to the work that belongs to them.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Padronizar pontuação (sem vírgula serial)."
+    },
+    {
+      "source": "Escolha uma jornada. Identifique quem atua, que informações utiliza, quais ações exigem revisão e que registros precisam estar disponíveis. Cruze essa necessidade com o estágio e os limites das capacidades escolhidas.",
+      "previous": "Choose a journey. Identify who is involved, what information they use, which actions require review, and which records need to be available. Then compare those needs with the stage and limits of the capabilities you've chosen.",
+      "proposed": "Choose a journey. Identify who is involved, what information they use, which actions require review and which records need to be available. Then compare those needs with the stage and limits of the capabilities you've chosen.",
+      "result": "Choose a journey. Identify who is involved, what information they use, which actions require review and which records need to be available. Then compare those needs with the stage and limits of the capabilities you've chosen.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Padronizar pontuação (sem vírgula serial)."
+    },
+    {
+      "source": "Com reserva",
+      "previous": "With reservations",
+      "proposed": "With a reserve",
+      "result": "With a reserve",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "No contexto bancário, \"reserva\" é saldo reservado; \"with reservations\" sugere ressalvas ou dúvidas."
+    },
+    {
+      "source": "Cadastro de pessoas físicas brasileiras com CPF validado e isolado por organização. Consulte aplicações, estágio e documentação.",
+      "previous": "Registry of Brazilian individuals with validated CPF, isolated by organization. See applications, stage, and documentation.",
+      "proposed": "Registry of Brazilian individuals with validated CPF, isolated by organization. See use cases, stage, and documentation.",
+      "result": "Registry of Brazilian individuals with validated CPF, isolated by organization. See use cases, stage, and documentation.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Padroniza \"Consulte aplicações\" como \"use cases\", como nas demais meta descriptions."
+    },
+    {
+      "source": "Ligue e desligue funcionalidade em produção sem novo deploy, por segmento de cliente. Consulte aplicações, estágio e documentação.",
+      "previous": "Turn features on and off in production without a new deploy, by customer segment. See applications, stage, and documentation.",
+      "proposed": "Turn features on and off in production without a new deploy, by customer segment. See use cases, stage, and documentation.",
+      "result": "Turn features on and off in production without a new deploy, by customer segment. See use cases, stage, and documentation.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "Padroniza \"Consulte aplicações\" como \"use cases\", como nas demais meta descriptions."
+    },
+    {
+      "source": "Entender reservas",
+      "previous": "Understand holds",
+      "proposed": "Understand reserves",
+      "result": "Understand reserves",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "No contexto bancário, \"reservas\" são reservas financeiras (saldo), não bloqueios (holds)."
+    },
+    {
+      "source": "Uma posição, sem reserva estruturada.",
+      "previous": "One position, with no structured reservation.",
+      "proposed": "One position, with no structured reserve.",
+      "result": "One position, with no structured reserve.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "\"Reserva\" financeira deve ser \"reserve\", não \"reservation\"."
+    },
+    {
+      "source": "Dados de cadastro (base legal: execução de contrato): nome completo, e-mail corporativo, telefone, nome da empresa, cargo, CNPJ. Coletados no momento do registro na Plataforma.",
+      "previous": "Registration data (legal basis: contract performance): full name, corporate email, phone number, company name, job title, tax ID. Collected at the time of registration on the Platform.",
+      "proposed": "Registration data (legal basis: contract performance): full name, corporate email, phone number, company name, job title, CNPJ. Collected at the time of registration on the Platform.",
+      "result": "Registration data (legal basis: contract performance): full name, corporate email, phone number, company name, job title, CNPJ. Collected at the time of registration on the Platform.",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "CNPJ deve ser mantido; não pode ser genericizado como \"tax ID\"."
+    },
+    {
+      "source": "Selecionamos publicações de Febraban/Deloitte, Banco Central, FSB, Bank of England e GOV.UK. Os períodos dos dados estão preservados; projeções não são apresentadas como resultados realizados.",
+      "previous": "We selected publications from Febraban/Deloitte, the Central Bank, the FSB, the Bank of England, and GOV.UK. Data periods are preserved; projections are not presented as actual results.",
+      "proposed": "We selected publications from Febraban/Deloitte, the Central Bank of Brazil, the FSB, the Bank of England, and GOV.UK. Data periods are preserved; projections are not presented as actual results.",
+      "result": "We selected publications from Febraban/Deloitte, the Central Bank of Brazil, the FSB, the Bank of England, and GOV.UK. Data periods are preserved; projections are not presented as actual results.",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "Manter o escopo brasileiro: \"Banco Central\" refere-se ao Banco Central do Brasil."
+    },
+    {
+      "source": "A captura mostra operações aceitas que ainda aguardam autorização ou outras condições.",
+      "previous": "The capture shows accepted transactions still awaiting authorization or other conditions.",
+      "proposed": "The screenshot shows accepted transactions still awaiting authorization or other conditions.",
+      "result": "The screenshot shows accepted transactions still awaiting authorization or other conditions.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Terminologia consistente: \"captura\" é traduzida como \"screenshot\" nas demais strings."
+    },
+    {
+      "source": "Um atendimento",
+      "previous": "A conversation",
+      "proposed": "A service interaction",
+      "result": "A service interaction",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Consistência com \"Simulação conceitual / Um atendimento\", traduzido como \"A service interaction\"."
+    },
+    {
+      "source": "A transcrição vira rascunho e aguarda revisão e liberação de quem atendeu.",
+      "previous": "The transcript becomes a draft and awaits review and release by the agent who handled the call.",
+      "proposed": "The transcript becomes a draft and awaits review and release by the person who handled the interaction.",
+      "result": "The transcript becomes a draft and awaits review and release by the person who handled the interaction.",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "\"Agent\" é ambíguo com agente de IA; \"quem atendeu\" refere-se à pessoa, e não necessariamente a uma ligação."
+    },
+    {
+      "source": "Desktop / Conta do titular ↗",
+      "previous": "Desktop / Account holder's account ↗",
+      "proposed": "Desktop / Holder's account ↗",
+      "result": "Desktop / Holder's account ↗",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "\"Account holder's account\" é redundante e soa artificial."
+    },
+    {
+      "source": "Ver a Home em React",
+      "previous": "View the Home in React",
+      "proposed": "View the Home page in React",
+      "result": "View the Home page in React",
+      "outcome": "skipped-style",
+      "why": "Subjective synonym/terminology preference; no demonstrated grammar or meaning defect",
+      "reviewReason": "\"the Home\" isolado soa incompleto em inglês."
+    },
+    {
+      "source": "Explore o Banking Platform",
+      "previous": "Explore the Banking Platform",
+      "proposed": "Explore the banking platform",
+      "result": "Explore the banking platform",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Nome genérico de produto deve ser traduzido e manter o mesmo rótulo de r_41d2084ab6b82b12 (\"Banking platform\")."
+    },
+    {
+      "source": "Protótipo / guia de 29/09/2026",
+      "previous": "Prototype / guide dated 09/29/2026",
+      "proposed": "Prototype / guide dated Sep 29, 2026",
+      "result": "Prototype / guide dated Sep 29, 2026",
+      "outcome": "skipped-structure",
+      "why": "Protected placeholder, URL, email, numeric fact or inline-code mismatch",
+      "reviewReason": "Formato de data diferente do usado no restante do site (\"Oct 20, 2026\"); 09/29/2026 também pode gerar ambiguidade."
+    },
+    {
+      "source": "Ampliar Desktop / Conta do titular — Protótipo do desktop do titular · guia de 29/09/2026 · dados de exemplo.",
+      "previous": "Enlarge Desktop / Account holder's account — Account holder desktop prototype · guide dated 09/29/2026 · sample data.",
+      "proposed": "Enlarge Desktop / Account holder account — Account holder desktop prototype · guide dated Sep 29, 2026 · sample data.",
+      "result": "Enlarge Desktop / Account holder account — Account holder desktop prototype · guide dated Sep 29, 2026 · sample data.",
+      "outcome": "skipped-structure",
+      "why": "Protected placeholder, URL, email, numeric fact or inline-code mismatch",
+      "reviewReason": "\"Account holder's account\" soa redundante; data padronizada no formato usado no site."
+    },
+    {
+      "source": "precisam de uma leitura clara.",
+      "previous": "need a clear reading.",
+      "proposed": "need a clear read.",
+      "result": "need a clear read.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "\"Need a clear reading\" é tradução literal; \"a clear read\" é a forma idiomática. Mantém-se como fragmento."
+    },
+    {
+      "source": "01 — PEÇAS EM ABERTO",
+      "previous": "01 — OPEN PIECES",
+      "proposed": "01 — PIECES STILL OPEN",
+      "result": "01 — PIECES STILL OPEN",
+      "outcome": "skipped-unsubstantiated",
+      "why": "No clear material grammar/meaning correction in the reason",
+      "reviewReason": "\"Em aberto\" quer dizer pendente ou não resolvido; \"open pieces\" fica ambíguo."
+    },
+    {
+      "source": "Confirme o envio do contexto antes de continuar.",
+      "previous": "Confirm that the context was sent before continuing.",
+      "proposed": "Confirm sending the context before continuing.",
+      "result": "Confirm sending the context before continuing.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "A tradução mudou o sentido: o pedido é para a pessoa autorizar o envio, não para verificar se o contexto já foi enviado."
+    },
+    {
+      "source": "Da proposta à carteira, com continuidade.",
+      "previous": "From proposal to portfolio, with continuity.",
+      "proposed": "From application to portfolio, with continuity.",
+      "result": "From application to portfolio, with continuity.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Termo inconsistente: em crédito, \"proposta\" foi traduzida como \"application\" (r_fea52e0d0f7ed9aa)."
+    },
+    {
+      "source": "Sua tela recebe a proposta. Seu backend prepara os dados, chama a decisão e encaminha a formalização quando a política permitir.",
+      "previous": "Your screen receives the proposal. Your backend prepares the data, calls the decision and forwards it for formalization when the policy allows.",
+      "proposed": "Your screen receives the application. Your backend prepares the data, calls the decision and forwards it for formalization when the policy allows.",
+      "result": "Your screen receives the application. Your backend prepares the data, calls the decision and forwards it for formalization when the policy allows.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Termo inconsistente: \"proposta\" de crédito traduzida como \"application\" no restante do site."
+    },
+    {
+      "source": "Ponto",
+      "previous": "Point",
+      "proposed": "Dot",
+      "result": "Dot",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "No guia de estilo, \"Ponto\" é o elemento da marca, já traduzido como \"dot\" em r_fb2273d1785d6cac."
+    },
+    {
+      "source": "Composição demonstrativa",
+      "previous": "Demonstration composition",
+      "proposed": "Illustrative composition",
+      "result": "Illustrative composition",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "\"Demonstration composition\" soa literal e pouco natural; \"illustrative\" mantém o caráter de exemplo."
+    },
+    {
+      "source": "Informe pelo menos um e-mail ou telefone para contato.",
+      "previous": "Enter at least one email or phone number for contact.",
+      "proposed": "Enter at least one contact email or phone number.",
+      "result": "Enter at least one contact email or phone number.",
+      "outcome": "applied-material",
+      "why": "Grammar/meaning/product-label correction",
+      "reviewReason": "Frase literal e pouco natural (\"for contact\" no final)."
+    }
+  ],
+  "normalized": [],
+  "limitations": [
+    "Automatic independent pair review, not native human or legal approval.",
+    "Pure style/register and unsupported synonym changes are retained as skipped proposals.",
+    "Rendering, translated composition fragments and generated AI output require their separate browser/integration checks."
+  ]
+}

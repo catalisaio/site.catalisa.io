@@ -1,0 +1,122 @@
+{
+  "date": "2026-10-22T23:35:12.606Z",
+  "scope": "Native Visão, Arquitetura and Desenvolvedores; reference text, initial layout and interactive states at four widths, keyboard, motion, clipboard and catalog CSS isolation. Chromium only; not a full site or physical-device audit.",
+  "measurements": [
+    {
+      "route": "/visao/",
+      "width": 320,
+      "scrollWidth": 320,
+      "initialTextMatchesReference": true,
+      "stateCount": 3,
+      "allStatesMatchReference": true,
+      "status": 200
+    },
+    {
+      "route": "/visao/",
+      "width": 390,
+      "scrollWidth": 390,
+      "initialTextMatchesReference": true,
+      "stateCount": 3,
+      "allStatesMatchReference": true,
+      "status": 200
+    },
+    {
+      "route": "/visao/",
+      "width": 768,
+      "scrollWidth": 768,
+      "initialTextMatchesReference": true,
+      "stateCount": 3,
+      "allStatesMatchReference": true,
+      "status": 200
+    },
+    {
+      "route": "/visao/",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "initialTextMatchesReference": true,
+      "stateCount": 3,
+      "allStatesMatchReference": true,
+      "status": 200
+    },
+    {
+      "route": "/arquitetura/",
+      "width": 320,
+      "scrollWidth": 320,
+      "initialTextMatchesReference": true,
+      "stateCount": 6,
+      "allStatesMatchReference": true,
+      "status": 200
+    },
+    {
+      "route": "/arquitetura/",
+      "width": 390,
+      "scrollWidth": 390,
+      "initialTextMatchesReference": true,
+      "stateCount": 6,
+      "allStatesMatchReference": true,
+      "status": 200
+    },
+    {
+      "route": "/arquitetura/",
+      "width": 768,
+      "scrollWidth": 768,
+      "initialTextMatchesReference": true,
+      "stateCount": 6,
+      "allStatesMatchReference": true,
+      "status": 200
+    },
+    {
+      "route": "/arquitetura/",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "initialTextMatchesReference": true,
+      "stateCount": 6,
+      "allStatesMatchReference": true,
+      "status": 200
+    },
+    {
+      "route": "/desenvolvedores/",
+      "width": 320,
+      "scrollWidth": 320,
+      "initialTextMatchesReference": true,
+      "stateCount": 9,
+      "allStatesMatchReference": true,
+      "status": 200
+    },
+    {
+      "route": "/desenvolvedores/",
+      "width": 390,
+      "scrollWidth": 390,
+      "initialTextMatchesReference": true,
+      "stateCount": 9,
+      "allStatesMatchReference": true,
+      "status": 200
+    },
+    {
+      "route": "/desenvolvedores/",
+      "width": 768,
+      "scrollWidth": 768,
+      "initialTextMatchesReference": true,
+      "stateCount": 9,
+      "allStatesMatchReference": true,
+      "status": 200
+    },
+    {
+      "route": "/desenvolvedores/",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "initialTextMatchesReference": true,
+      "stateCount": 9,
+      "allStatesMatchReference": true,
+      "status": 200
+    }
+  ],
+  "interactions": [
+    "Vision: all three principles preserve reference text; state, shapes and pressed selection update; Space works.",
+    "Architecture: all six maps preserve reference text and SVG labels; roving focus, Home/End/arrow keys and layer disclosure work.",
+    "Developers: three adoption maps and six endpoint/language combinations match the reference. Clipboard success/failure preserve the exact code without calling the demonstrated APIs.",
+    "Architecture → menu → catalog keeps catalog layout after both CSS families load.",
+    "Ambient art pauses/resumes; reduced-motion checks run in the main matrix."
+  ],
+  "errors": []
+}

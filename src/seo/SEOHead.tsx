@@ -2,6 +2,9 @@ import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useHreflangPaths } from '../i18n/useAlternatePath';
 import { BASE_URL } from './routes';
+import { redesignRelease, redesignIndexing } from '../redesign/preview';
+import { redesignRedirects } from './migration';
+import { getRedesignPage } from './redesign';
 
 export interface ArticleOGProps {
   publishedTime: string;
@@ -99,10 +102,10 @@ export function SEOHead({ pageKey, title, description, ogImage, noIndex, article
     }
 
     // Robots
-    if (noIndex) {
+    if (noIndex || (redesignRelease && !redesignIndexing)) {
       setMeta('robots', 'noindex, nofollow');
     } else {
-      setMeta('robots', 'index, follow');
+      setMeta('robots', 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
     }
 
     // Canonical
@@ -162,10 +165,12 @@ export function SEOHead({ pageKey, title, description, ogImage, noIndex, article
     // Hreflang links (absorbing HreflangMeta logic)
     // First remove any old hreflang links (from HreflangMeta or previous render)
     document.querySelectorAll('link[data-hreflang]').forEach((el) => el.remove());
-
-    setLink('alternate', `${BASE_URL}${ptBR}`, { hreflang: 'pt-BR' });
-    setLink('alternate', `${BASE_URL}${enUS}`, { hreflang: 'en-US' });
-    setLink('alternate', `${BASE_URL}${ptBR}`, { hreflang: 'x-default' });
+    document.querySelectorAll('link[hreflang]').forEach((el) => el.remove());
+    const ptPublic = (!redesignRelease && ['/', '/contato'].includes(ptBR) || !getRedesignPage(ptBR)) && !(redesignRelease && redesignRedirects[ptBR]);
+    const enPublic = !getRedesignPage(enUS) && enUS !== ptBR;
+    if (ptPublic) setLink('alternate', `${BASE_URL}${ptBR}`, { hreflang: 'pt-BR' });
+    if (enPublic) setLink('alternate', `${BASE_URL}${enUS}`, { hreflang: 'en-US' });
+    if (ptPublic || enPublic) setLink('alternate', `${BASE_URL}${ptPublic ? ptBR : enUS}`, { hreflang: 'x-default' });
 
     return () => {
       document.querySelectorAll('[data-seo="true"]').forEach((el) => el.remove());

@@ -1,0 +1,72 @@
+{
+  "checkedAt": "2026-10-26T15:08:54.334Z",
+  "releaseId": "20261026-concept-null",
+  "passed": true,
+  "scope": "Current isolated staging: real AI Contact cases, refinement, Lab/reload/continuation, direct handoff, authenticated human inbox, HTTPS/static bytes and real reserved-receipt response-loss recovery. No production publication or acceptance by owner inferred.",
+  "contact": [
+    {
+      "key": "loja-whatsapp",
+      "passed": true,
+      "generationMs": 16933,
+      "reviewMs": 47,
+      "report": "../contact-real-staging/verification.json"
+    },
+    {
+      "key": "clinica-agenda",
+      "passed": true,
+      "generationMs": 13950,
+      "reviewMs": 72,
+      "report": "../contact-real-staging/verification.json"
+    },
+    {
+      "key": "escola-cobranca",
+      "passed": true,
+      "generationMs": 14927,
+      "reviewMs": 56,
+      "report": "../contact-real-staging/verification.json"
+    }
+  ],
+  "lab": {
+    "passed": true,
+    "generationMs": 17108,
+    "report": "../lab-real-staging/verification.json"
+  },
+  "directContact": {
+    "passed": true,
+    "handoffMs": 4941,
+    "report": "../contact-direct-real-staging/verification.json"
+  },
+  "inbox": {
+    "passed": true,
+    "report": "../inbox-browser-staging/verification.json"
+  },
+  "http": {
+    "passed": true,
+    "releaseId": "20261026-concept-null",
+    "report": "staging-http-public.json"
+  },
+  "networkReplay": {
+    "passed": true,
+    "newGenerationJobs": 0,
+    "report": "network-response-replay.json"
+  },
+  "artifacts": {
+    "publicSha256": "4c120de34a8f20fb0bf6d3db1ee51e65abd13d6d5b998602cf8d0fd9f24eaa54",
+    "serverSha256": "cd3b9e685a573c75cc8adc726fbfc3673887fa1a91f8df5f2a802c331ed5ab74",
+    "preparedProductionIdentical": true
+  },
+  "timingCorrection": "Older Lab52.885s/59.949s and first progress51.031s included about30s waiting for an absent error locator. They are invalid as generation latency comparisons. Corrected latest real UI measure17.108s.",
+  "failuresPreserved": [
+    "../real-smoke-history/network-recovery-failed-2026-10-26",
+    "../lab-real-staging/verification-network-diagnosed.json",
+    "staging-http-quota-protection.json"
+  ],
+  "postLaunchUrgentTodo": "../../TODO-pos-publicacao.md",
+  "seoAnalytics": "Local source changes and isolated artifact validation in progress; not installed in this functional staging release.",
+  "remaining": [
+    "Manual owner validation of staging",
+    "Detailed SEO/analytics candidate validation",
+    "Owner decisions already recorded for publication, editorial acceptance, physical devices and operations coverage; do not infer approval"
+  ],
+  "productionPublished": false
+}

@@ -1,0 +1,113 @@
+{
+  "origin": "https://site-staging.catalisa.io",
+  "passed": true,
+  "checks": [
+    {
+      "locale": "pt-BR",
+      "menuReopened": 3,
+      "resize": true,
+      "linkPersisted": true,
+      "entryToPageDocumentNavigation": true,
+      "exitViaHeaderDocumentNavigation": true,
+      "originalRuntimeRestored": true,
+      "demoChangedLocally": true,
+      "documentRequests": [
+        "/",
+        "/assistente-operacional",
+        "/"
+      ]
+    },
+    {
+      "locale": "en-US",
+      "menuReopened": 3,
+      "resize": true,
+      "linkPersisted": true,
+      "entryToPageDocumentNavigation": true,
+      "exitViaHeaderDocumentNavigation": true,
+      "originalRuntimeRestored": true,
+      "demoChangedLocally": true,
+      "documentRequests": [
+        "/en",
+        "/en/operational-assistant",
+        "/en"
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "menuReopened": 3,
+      "resize": true,
+      "linkPersisted": true,
+      "entryToPageDocumentNavigation": true,
+      "exitViaHeaderDocumentNavigation": true,
+      "originalRuntimeRestored": true,
+      "demoChangedLocally": true,
+      "documentRequests": [
+        "/es",
+        "/es/asistente-operativo",
+        "/es"
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "menuReopened": 3,
+      "resize": true,
+      "linkPersisted": true,
+      "entryToPageDocumentNavigation": true,
+      "exitViaHeaderDocumentNavigation": true,
+      "originalRuntimeRestored": true,
+      "demoChangedLocally": true,
+      "documentRequests": [
+        "/fr",
+        "/fr/assistant-operationnel",
+        "/fr"
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "menuReopened": 3,
+      "resize": true,
+      "linkPersisted": true,
+      "entryToPageDocumentNavigation": true,
+      "exitViaHeaderDocumentNavigation": true,
+      "originalRuntimeRestored": true,
+      "demoChangedLocally": true,
+      "documentRequests": [
+        "/de",
+        "/de/operativer-assistent",
+        "/de"
+      ]
+    },
+    {
+      "locale": "nl-NL",
+      "menuReopened": 3,
+      "resize": true,
+      "linkPersisted": true,
+      "entryToPageDocumentNavigation": true,
+      "exitViaHeaderDocumentNavigation": true,
+      "originalRuntimeRestored": true,
+      "demoChangedLocally": true,
+      "documentRequests": [
+        "/nl",
+        "/nl/operationele-assistent",
+        "/nl"
+      ]
+    },
+    {
+      "locale": "da-DK",
+      "menuReopened": 3,
+      "resize": true,
+      "linkPersisted": true,
+      "entryToPageDocumentNavigation": true,
+      "exitViaHeaderDocumentNavigation": true,
+      "originalRuntimeRestored": true,
+      "demoChangedLocally": true,
+      "documentRequests": [
+        "/da",
+        "/da/driftsassistent",
+        "/da"
+      ]
+    }
+  ],
+  "errors": [],
+  "realCrmChanges": false
+}

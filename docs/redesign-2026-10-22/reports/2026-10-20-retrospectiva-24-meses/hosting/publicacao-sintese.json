@@ -1,0 +1,305 @@
+{
+  "url": "https://entregas.interno.catalisa.app/diligencia.html",
+  "release": "20261020-a852a1d20db8",
+  "checkedAt": "2026-10-21T14:51:07.104060+00:00",
+  "version": "diligencia-2026-10-21-v2",
+  "implementationAndPublicationComplete": true,
+  "audit": {
+    "version": "diligencia-2026-10-21-v2",
+    "change": "Conclusões, pontos fortes/fracos, riscos e plano de ação reunidos em sumário explícito; cada domínio detalhado ganhou conclusão própria.",
+    "counts": {
+      "domains": 12,
+      "findings": 60,
+      "requests": 60,
+      "risks": 16,
+      "vendorControls": 32,
+      "capabilities": 110,
+      "sources": 146,
+      "documentsRead": 14,
+      "strengths": 6,
+      "weaknesses": 3,
+      "actions": 8
+    },
+    "sections": [
+      "sumario-analises",
+      "pontos-fortes",
+      "pontos-fracos",
+      "riscos",
+      "plano-de-acao",
+      "analise-por-area"
+    ],
+    "evidenceDistinction": "Ponto fraco identificado é uma limitação expressa nas fontes. Prova técnica incompleta é algo que ainda precisa ser demonstrado. Documento não fornecido é uma lacuna do acervo, sem conclusão sobre sua existência na empresa.",
+    "all16RisksHaveProposedActions": true,
+    "all8ActionsAwaitAssignmentAndAcceptance": true,
+    "localVerification": {
+      "verificacao.json": {
+        "passed": true,
+        "checkedAt": "2026-10-21T14:43:19.025Z"
+      },
+      "verificacao-infografico.json": {
+        "passed": true,
+        "checkedAt": "2026-10-21T14:43:18.740Z"
+      },
+      "verificacao-diligencia.json": {
+        "passed": true,
+        "checkedAt": "2026-10-21T14:44:33.704Z"
+      },
+      "verificacao-identidade.json": {
+        "passed": true,
+        "checkedAt": "2026-10-21T14:45:15.205Z"
+      }
+    },
+    "publicationVerification": "installed-and-verified",
+    "limitations": [
+      "Síntese baseada no corpus de 20/10/2026, sem reexecução de testes de produto em produção.",
+      "Ações propostas não são correções executadas; responsáveis e datas precisam ser acordados.",
+      "Documentos não fornecidos estão separados das limitações expressas nas fontes.",
+      "Navegação autenticada em HTTPS não repetida por indisponibilidade da credencial original; arquivos locais validados e 165 arquivos instalados conferidos por hash."
+    ],
+    "release": "20261020-a852a1d20db8",
+    "checkedAt": "2026-10-21T14:51:07.104060+00:00",
+    "verifiedFiles": 165,
+    "protectedRoutes": 43,
+    "tlsVerified": true,
+    "nginxConfigurationPreserved": true
+  },
+  "remoteVerification": {
+    "url": "https://entregas.interno.catalisa.app",
+    "checkedAt": "2026-10-21T14:51:07.104060+00:00",
+    "release": "20261020-a852a1d20db8",
+    "checks": [
+      {
+        "path": "/catalisa-logo.svg",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/identidade-transitoria.css",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/report-identity.css",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/infografico.html",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/dossie.html",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/infografico.pdf",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/infografico-inter-regular.ttf",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/infografico-inter-bold.ttf",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/infografico-cobertura.json",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/timeline.html",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/dashboard.html",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/cadeia-de-valor.html",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/cadeia-de-valor.pdf",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/dashboard.pdf",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/dashboard-data.json",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/relatorio-completo.html",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/relatorio-completo.pdf",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/developy.html",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/developy.pdf",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/investidores.html",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/investidores.pdf",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/entrevistas.html",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/entrevistas.pdf",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/dados.json",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/dossie-catalisa.zip",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/diligencia.html",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/diligencia.pdf",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/diligencia-tecnica.html",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/diligencia-tecnica.pdf",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/diligencia-corporativa.html",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/diligencia-corporativa.pdf",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/diligencia-evidencias.html",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/diligencia-evidencias.pdf",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/homologacao.html",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/homologacao.pdf",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/diligencia-dados.json",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/diligencia-fontes.json",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/diligencia-pedidos.csv",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/diligencia-riscos.csv",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/homologacao-controles.csv",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/verificacao-diligencia.json",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/diligencia-acoes.csv",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      }
+    ],
+    "tlsVerified": true,
+    "certificate": {
+      "notAfter": "Jan 18 22:09:35 2027 GMT",
+      "subjectAltName": [
+        [
+          "DNS",
+          "entregas.interno.catalisa.app"
+        ]
+      ]
+    },
+    "installedHashesVerified": true,
+    "verifiedManifestFiles": 165,
+    "nginxConfigurationPreserved": true,
+    "passwordFileMode": "640",
+    "authenticatedBrowserVerification": "pending-original-credential"
+  },
+  "pdf": "https://entregas.interno.catalisa.app/diligencia.pdf",
+  "actionsCsv": "https://entregas.interno.catalisa.app/diligencia-acoes.csv"
+}

@@ -1,0 +1,320 @@
+{
+  "updatedAt": "2026-10-26T19:56:28.920Z",
+  "locale": "de-DE",
+  "language": "German",
+  "sourceCatalogSha256": "a0609b6a31757ad12060c974c3d70142144715beca0377559f10a2289f8ba4e1",
+  "method": "claude -p, safe-mode, no tools/MCP/session persistence, default user model",
+  "total": 4209,
+  "completed": 4209,
+  "complete": true,
+  "batches": [
+    {
+      "index": 1,
+      "id": "96a5c14262ac6b59937b",
+      "count": 100,
+      "costUsd": 0.220452,
+      "durationMs": 53375
+    },
+    {
+      "index": 2,
+      "id": "9c4f45142b11aa7ce28f",
+      "count": 100,
+      "costUsd": 0.1651028,
+      "durationMs": 48356
+    },
+    {
+      "index": 3,
+      "id": "967b4eeb9bc38d2208ff",
+      "count": 100,
+      "costUsd": 0.2600868,
+      "durationMs": 78024
+    },
+    {
+      "index": 4,
+      "id": "c863ac56a1edb198688c",
+      "count": 100,
+      "costUsd": 0.19476359999999998,
+      "durationMs": 54651
+    },
+    {
+      "index": 5,
+      "id": "15f20fb2df1ef0fbee7e",
+      "count": 100,
+      "costUsd": 0.310886,
+      "durationMs": 94231
+    },
+    {
+      "index": 6,
+      "id": "9557dbfcde91b299fcc4",
+      "count": 100,
+      "costUsd": 0.17065639999999999,
+      "durationMs": 48079
+    },
+    {
+      "index": 7,
+      "id": "471e484448b55b13b8da",
+      "count": 100,
+      "costUsd": 0.2300484,
+      "durationMs": 69493
+    },
+    {
+      "index": 8,
+      "id": "d57d6f1956325cd40aa2",
+      "count": 100,
+      "costUsd": 0.166584,
+      "durationMs": 44601
+    },
+    {
+      "index": 9,
+      "id": "357efcc02c8ca9cf579e",
+      "count": 100,
+      "costUsd": 0.17511000000000002,
+      "durationMs": 48608
+    },
+    {
+      "index": 10,
+      "id": "10cefdb2913a96c53211",
+      "count": 100,
+      "costUsd": 0.17528960000000002,
+      "durationMs": 46389
+    },
+    {
+      "index": 11,
+      "id": "17618c0175da64a9b980",
+      "count": 100,
+      "costUsd": 0.2730948,
+      "durationMs": 82592
+    },
+    {
+      "index": 12,
+      "id": "3d1b8bf7abc7d8ff1624",
+      "count": 100,
+      "costUsd": 0.27014000000000005,
+      "durationMs": 78947
+    },
+    {
+      "index": 13,
+      "id": "1796d1215425cbe43673",
+      "count": 100,
+      "costUsd": 0.2961512,
+      "durationMs": 88398
+    },
+    {
+      "index": 14,
+      "id": "75ae0ca06b6f8f6d1e10",
+      "count": 100,
+      "costUsd": 0.1768972,
+      "durationMs": 48540
+    },
+    {
+      "index": 15,
+      "id": "af1f793d8c7570ff4cef",
+      "count": 100,
+      "costUsd": 0.2672608,
+      "durationMs": 88247
+    },
+    {
+      "index": 16,
+      "id": "ad6794aed2a79bb6094c",
+      "count": 100,
+      "costUsd": 0.277882,
+      "durationMs": 86675
+    },
+    {
+      "index": 17,
+      "id": "a8e1f4a2d1d7c3b458cd",
+      "count": 100,
+      "costUsd": 0.1710668,
+      "durationMs": 53524
+    },
+    {
+      "index": 18,
+      "id": "2058b434a9607054d36a",
+      "count": 100,
+      "costUsd": 0.20043360000000002,
+      "durationMs": 54982
+    },
+    {
+      "index": 19,
+      "id": "61c72d9b378830d38e68",
+      "count": 100,
+      "costUsd": 0.18358359999999999,
+      "durationMs": 50882
+    },
+    {
+      "index": 20,
+      "id": "6b1037eef9bc84df31a5",
+      "count": 100,
+      "costUsd": 0.169192,
+      "durationMs": 45863
+    },
+    {
+      "index": 21,
+      "id": "36f27d9c6d30a2938e2b",
+      "count": 100,
+      "costUsd": 0.1697772,
+      "durationMs": 46453
+    },
+    {
+      "index": 22,
+      "id": "9817d1d2b25221e2feaa",
+      "count": 100,
+      "costUsd": 0.17588520000000002,
+      "durationMs": 46830
+    },
+    {
+      "index": 23,
+      "id": "59c1b9316f55d6a46d3e",
+      "count": 100,
+      "costUsd": 0.1732816,
+      "durationMs": 48645
+    },
+    {
+      "index": 24,
+      "id": "6139e171fe01df13f1d4",
+      "count": 100,
+      "costUsd": 0.1568128,
+      "durationMs": 43401
+    },
+    {
+      "index": 25,
+      "id": "fad690b4bc54c3eb5adc",
+      "count": 100,
+      "costUsd": 0.1685376,
+      "durationMs": 47019
+    },
+    {
+      "index": 26,
+      "id": "e45297d27dbaa9b2a58f",
+      "count": 100,
+      "costUsd": 0.174192,
+      "durationMs": 47673
+    },
+    {
+      "index": 27,
+      "id": "b32573d80bb243f7ce34",
+      "count": 100,
+      "costUsd": 0.18218560000000003,
+      "durationMs": 49883
+    },
+    {
+      "index": 28,
+      "id": "2c978960d60af49cb24e",
+      "count": 100,
+      "costUsd": 0.16904400000000003,
+      "durationMs": 50436
+    },
+    {
+      "index": 29,
+      "id": "9c77da9b636996e57cd8",
+      "count": 100,
+      "costUsd": 0.2595464,
+      "durationMs": 76450
+    },
+    {
+      "index": 30,
+      "id": "c21b78f2bebb2b7c6d4b",
+      "count": 100,
+      "costUsd": 0.1948804,
+      "durationMs": 53119
+    },
+    {
+      "index": 31,
+      "id": "48fe699b7bc8e60ba6f3",
+      "count": 100,
+      "costUsd": 0.18385120000000002,
+      "durationMs": 49810
+    },
+    {
+      "index": 32,
+      "id": "35289eb6bae62ae87631",
+      "count": 100,
+      "costUsd": 0.1955712,
+      "durationMs": 55544
+    },
+    {
+      "index": 33,
+      "id": "c9be22ec1a3e62499873",
+      "count": 100,
+      "costUsd": 0.1571356,
+      "durationMs": 43199
+    },
+    {
+      "index": 34,
+      "id": "33e51ccbd52089566f22",
+      "count": 100,
+      "costUsd": 0.2446528,
+      "durationMs": 75298
+    },
+    {
+      "index": 35,
+      "id": "b529fc8f609d743b5cc2",
+      "count": 100,
+      "costUsd": 0.1773588,
+      "durationMs": 53847
+    },
+    {
+      "index": 36,
+      "id": "f6de89b1dfebf0a7e320",
+      "count": 100,
+      "costUsd": 0.1683012,
+      "durationMs": 46324
+    },
+    {
+      "index": 37,
+      "id": "c7c94825e7249a3c68d9",
+      "count": 100,
+      "costUsd": 0.18152480000000001,
+      "durationMs": 53832
+    },
+    {
+      "index": 38,
+      "id": "99a437a4326abc2aa026",
+      "count": 100,
+      "costUsd": 0.17759760000000002,
+      "durationMs": 50253
+    },
+    {
+      "index": 39,
+      "id": "79f39d6b937906600923",
+      "count": 100,
+      "costUsd": 0.2424472,
+      "durationMs": 74142
+    },
+    {
+      "index": 40,
+      "id": "16ffd7247ec6f718fb0f",
+      "count": 100,
+      "costUsd": 0.1977356,
+      "durationMs": 59035
+    },
+    {
+      "index": 41,
+      "id": "99ebf65c6c5fc27fb2ac",
+      "count": 29,
+      "costUsd": 0.058575,
+      "durationMs": 16248
+    },
+    {
+      "index": 1,
+      "id": "46f3c9c9836465c8d3b3",
+      "count": 131,
+      "costUsd": 0.2928478,
+      "durationMs": 90059
+    },
+    {
+      "index": 1,
+      "id": "3a1973afcab5c1b41693",
+      "count": 12,
+      "costUsd": 0.033444,
+      "durationMs": 5837
+    },
+    {
+      "index": 1,
+      "id": "91506ebaf626f2fcccca",
+      "count": 14,
+      "costUsd": 0.045584,
+      "durationMs": 9315
+    }
+  ]
+}

@@ -1,0 +1,754 @@
+{
+  "date": "2026-10-24T23:34:09.544Z",
+  "scope": "Rendered final frozen Lab reference versus native initial state. New identity and truthful integration copy are intentional differences; no visual approval is implied.",
+  "results": [
+    {
+      "width": 320,
+      "samples": {
+        "reference": {
+          ".l-hero h1": {
+            "width": 284,
+            "height": 245.5,
+            "fontSize": "62px",
+            "lineHeight": "61.38px",
+            "fontWeight": "400",
+            "text": "O que vocêquer construir?"
+          },
+          ".l-composer-copy h2": {
+            "width": 238,
+            "height": 66,
+            "fontSize": "30px",
+            "lineHeight": "33px",
+            "fontWeight": "400",
+            "text": "Conte o que aindanão existe."
+          },
+          "#l-prompt": {
+            "width": 238,
+            "height": 140.75,
+            "fontSize": "16px",
+            "lineHeight": "27.2px",
+            "fontWeight": "400",
+            "text": ""
+          },
+          ".l-workbench": {
+            "width": 284,
+            "height": 2142.890625,
+            "fontSize": "16px",
+            "lineHeight": "normal",
+            "fontWeight": "400",
+            "text": "01 / Sua ideiaComeça comuma conversa.Qual problema você quer resolver? Para quem? O que deveria acontecer do primeiro contato ao próximo passo?catalisa.Que tal uma clínica veterinária em que marcar a consulta da Luna seja tão simples quanto mandar uma mensagem?Ou experimente um ponto de partidaCuidar do pet ↗Organizar uma oficina ↗Criar uma jornada de crédito ↗Conectar candidatos e entrevistas ↗Protótipo interativo. Esta versão usa cenários demonstrativos locais; o motor de IA será conectado depois. O texto fica nesta página e não é enviado a um serviço.02 / Uma primeira formaExplore os passos e as telas ↘Clínica veterinária / Composição demonstrativaPata & ProsaIdeia em movimento Do “tem horário?” ao cuidado marcado.Uma conversa ajuda a escolher o atendimento, encontrar um horário e preparar a visita.1Tutor2Recepção3VeterinárioA jornadaUma tela possívelAs peças01A conversa começaComunicação02A agenda encontra espaçoAgenda03O atendimento ganha contextoContexto04A equipe dá continuidadeRelacionamentoPASSO 1 / 4A conversa começaO tutor conta o que seu pet precisa.Comunicação na plataforma↗Orientações clínicas e urgências devem ser encaminhadas a um profissional."
+          },
+          ".l-conversation h2": {
+            "width": 284,
+            "height": 77.75,
+            "fontSize": "36px",
+            "lineHeight": "38.88px",
+            "fontWeight": "400",
+            "text": "Começa comuma conversa."
+          },
+          ".l-result-title h3": {
+            "width": 216.953125,
+            "height": 36,
+            "fontSize": "30px",
+            "lineHeight": "normal",
+            "fontWeight": "400",
+            "text": "Pata & Prosa"
+          },
+          ".l-journey-track": {
+            "width": 242,
+            "height": 358.375,
+            "fontSize": "16px",
+            "lineHeight": "normal",
+            "fontWeight": "400",
+            "text": "01A conversa começaComunicação02A agenda encontra espaçoAgenda03O atendimento ganha contextoContexto04A equipe dá continuidadeRelacionamento"
+          },
+          ".l-closing h2": {
+            "width": 284,
+            "height": 138.5625,
+            "fontSize": "44px",
+            "lineHeight": "46.2px",
+            "fontWeight": "400",
+            "text": "O produto nascenas conexões."
+          }
+        },
+        "native": {
+          ".l-hero h1": {
+            "width": 284,
+            "height": 245.5,
+            "fontSize": "62px",
+            "lineHeight": "61.38px",
+            "fontWeight": "400",
+            "text": "O que vocêquer construir?"
+          },
+          ".l-composer-copy h2": {
+            "width": 238,
+            "height": 66,
+            "fontSize": "30px",
+            "lineHeight": "33px",
+            "fontWeight": "400",
+            "text": "Conte o que aindanão existe."
+          },
+          "#l-prompt": {
+            "width": 238,
+            "height": 127.1875,
+            "fontSize": "14px",
+            "lineHeight": "23.8px",
+            "fontWeight": "400",
+            "text": ""
+          },
+          ".l-workbench": {
+            "width": 284,
+            "height": 2154.890625,
+            "fontSize": "16px",
+            "lineHeight": "normal",
+            "fontWeight": "400",
+            "text": "01 / Sua ideiaComeça comuma conversa.Qual problema você quer resolver? Para quem? O que deveria acontecer do primeiro contato ao próximo passo?catalisa.Que tal uma clínica veterinária em que marcar a consulta da Luna seja tão simples quanto mandar uma mensagem?Ou experimente um ponto de partidaCuidar do pet ↗Organizar uma oficina ↗Criar uma jornada de crédito ↗Conectar candidatos e entrevistas ↗Os exemplos são demonstrações. Ao gerar sua ideia, o briefing é salvo e processado por IA para criar um conceito exploratório. Continue a conversa com a Catalisa ↗02 / Uma primeira formaExplore os passos e as telas ↘Clínica veterinária / Composição demonstrativaPata & ProsaIdeia em movimento Do “tem horário?” ao cuidado marcado.Uma conversa ajuda a escolher o atendimento, encontrar um horário e preparar a visita.1Tutor2Recepção3VeterinárioA jornadaUma tela possívelAs peças01A conversa começaComunicação02A agenda encontra espaçoAgenda03O atendimento ganha contextoContexto04A equipe dá continuidadeRelacionamentoPASSO 1 / 4A conversa começaO tutor conta o que seu pet precisa.Comunicação na plataforma ↗Orientações clínicas e urgências devem ser encaminhadas a um profissional."
+          },
+          ".l-conversation h2": {
+            "width": 284,
+            "height": 77.75,
+            "fontSize": "36px",
+            "lineHeight": "38.88px",
+            "fontWeight": "400",
+            "text": "Começa comuma conversa."
+          },
+          ".l-result-title h3": {
+            "width": 216.953125,
+            "height": 36,
+            "fontSize": "30px",
+            "lineHeight": "normal",
+            "fontWeight": "400",
+            "text": "Pata & Prosa"
+          },
+          ".l-journey-track": {
+            "width": 242,
+            "height": 358.375,
+            "fontSize": "16px",
+            "lineHeight": "normal",
+            "fontWeight": "400",
+            "text": "01A conversa começaComunicação02A agenda encontra espaçoAgenda03O atendimento ganha contextoContexto04A equipe dá continuidadeRelacionamento"
+          },
+          ".l-closing h2": {
+            "width": 284,
+            "height": 138.5625,
+            "fontSize": "44px",
+            "lineHeight": "46.2px",
+            "fontWeight": "400",
+            "text": "O produto nascenas conexões."
+          }
+        }
+      },
+      "deltas": {
+        ".l-hero h1": {
+          "width": 0,
+          "height": 0,
+          "fontSizeMatches": true,
+          "lineHeightMatches": true
+        },
+        ".l-composer-copy h2": {
+          "width": 0,
+          "height": 0,
+          "fontSizeMatches": true,
+          "lineHeightMatches": true
+        },
+        "#l-prompt": {
+          "width": 0,
+          "height": -13.56,
+          "fontSizeMatches": false,
+          "lineHeightMatches": false
+        },
+        ".l-workbench": {
+          "width": 0,
+          "height": 12,
+          "fontSizeMatches": true,
+          "lineHeightMatches": true
+        },
+        ".l-conversation h2": {
+          "width": 0,
+          "height": 0,
+          "fontSizeMatches": true,
+          "lineHeightMatches": true
+        },
+        ".l-result-title h3": {
+          "width": 0,
+          "height": 0,
+          "fontSizeMatches": true,
+          "lineHeightMatches": true
+        },
+        ".l-journey-track": {
+          "width": 0,
+          "height": 0,
+          "fontSizeMatches": true,
+          "lineHeightMatches": true
+        },
+        ".l-closing h2": {
+          "width": 0,
+          "height": 0,
+          "fontSizeMatches": true,
+          "lineHeightMatches": true
+        }
+      }
+    },
+    {
+      "width": 390,
+      "samples": {
+        "reference": {
+          ".l-hero h1": {
+            "width": 346,
+            "height": 184.125,
+            "fontSize": "62px",
+            "lineHeight": "61.38px",
+            "fontWeight": "400",
+            "text": "O que vocêquer construir?"
+          },
+          ".l-composer-copy h2": {
+            "width": 300,
+            "height": 66,
+            "fontSize": "30px",
+            "lineHeight": "33px",
+            "fontWeight": "400",
+            "text": "Conte o que aindanão existe."
+          },
+          "#l-prompt": {
+            "width": 300,
+            "height": 140.75,
+            "fontSize": "16px",
+            "lineHeight": "27.2px",
+            "fontWeight": "400",
+            "text": ""
+          },
+          ".l-workbench": {
+            "width": 346,
+            "height": 1916.359375,
+            "fontSize": "16px",
+            "lineHeight": "normal",
+            "fontWeight": "400",
+            "text": "01 / Sua ideiaComeça comuma conversa.Qual problema você quer resolver? Para quem? O que deveria acontecer do primeiro contato ao próximo passo?catalisa.Que tal uma clínica veterinária em que marcar a consulta da Luna seja tão simples quanto mandar uma mensagem?Ou experimente um ponto de partidaCuidar do pet ↗Organizar uma oficina ↗Criar uma jornada de crédito ↗Conectar candidatos e entrevistas ↗Protótipo interativo. Esta versão usa cenários demonstrativos locais; o motor de IA será conectado depois. O texto fica nesta página e não é enviado a um serviço.02 / Uma primeira formaExplore os passos e as telas ↘Clínica veterinária / Composição demonstrativaPata & ProsaIdeia em movimento Do “tem horário?” ao cuidado marcado.Uma conversa ajuda a escolher o atendimento, encontrar um horário e preparar a visita.1Tutor2Recepção3VeterinárioA jornadaUma tela possívelAs peças01A conversa começaComunicação02A agenda encontra espaçoAgenda03O atendimento ganha contextoContexto04A equipe dá continuidadeRelacionamentoPASSO 1 / 4A conversa começaO tutor conta o que seu pet precisa.Comunicação na plataforma↗Orientações clínicas e urgências devem ser encaminhadas a um profissional."
+          },
+          ".l-conversation h2": {
+            "width": 346,
+            "height": 77.75,
+            "fontSize": "36px",
+            "lineHeight": "38.88px",
+            "fontWeight": "400",
+            "text": "Começa comuma conversa."
+          },
+          ".l-result-title h3": {
+            "width": 216.953125,
+            "height": 36,
+            "fontSize": "30px",
+            "lineHeight": "normal",
+            "fontWeight": "400",
+            "text": "Pata & Prosa"
+          },
+          ".l-journey-track": {
+            "width": 304,
+            "height": 358.375,
+            "fontSize": "16px",
+            "lineHeight": "normal",
+            "fontWeight": "400",
+            "text": "01A conversa começaComunicação02A agenda encontra espaçoAgenda03O atendimento ganha contextoContexto04A equipe dá continuidadeRelacionamento"
+          },
+          ".l-closing h2": {
+            "width": 346,
+            "height": 92.375,
+            "fontSize": "44px",
+            "lineHeight": "46.2px",
+            "fontWeight": "400",
+            "text": "O produto nascenas conexões."
+          }
+        },
+        "native": {
+          ".l-hero h1": {
+            "width": 346,
+            "height": 184.125,
+            "fontSize": "62px",
+            "lineHeight": "61.38px",
+            "fontWeight": "400",
+            "text": "O que vocêquer construir?"
+          },
+          ".l-composer-copy h2": {
+            "width": 300,
+            "height": 66,
+            "fontSize": "30px",
+            "lineHeight": "33px",
+            "fontWeight": "400",
+            "text": "Conte o que aindanão existe."
+          },
+          "#l-prompt": {
+            "width": 300,
+            "height": 127.1875,
+            "fontSize": "14px",
+            "lineHeight": "23.8px",
+            "fontWeight": "400",
+            "text": ""
+          },
+          ".l-workbench": {
+            "width": 346,
+            "height": 1928.359375,
+            "fontSize": "16px",
+            "lineHeight": "normal",
+            "fontWeight": "400",
+            "text": "01 / Sua ideiaComeça comuma conversa.Qual problema você quer resolver? Para quem? O que deveria acontecer do primeiro contato ao próximo passo?catalisa.Que tal uma clínica veterinária em que marcar a consulta da Luna seja tão simples quanto mandar uma mensagem?Ou experimente um ponto de partidaCuidar do pet ↗Organizar uma oficina ↗Criar uma jornada de crédito ↗Conectar candidatos e entrevistas ↗Os exemplos são demonstrações. Ao gerar sua ideia, o briefing é salvo e processado por IA para criar um conceito exploratório. Continue a conversa com a Catalisa ↗02 / Uma primeira formaExplore os passos e as telas ↘Clínica veterinária / Composição demonstrativaPata & ProsaIdeia em movimento Do “tem horário?” ao cuidado marcado.Uma conversa ajuda a escolher o atendimento, encontrar um horário e preparar a visita.1Tutor2Recepção3VeterinárioA jornadaUma tela possívelAs peças01A conversa começaComunicação02A agenda encontra espaçoAgenda03O atendimento ganha contextoContexto04A equipe dá continuidadeRelacionamentoPASSO 1 / 4A conversa começaO tutor conta o que seu pet precisa.Comunicação na plataforma ↗Orientações clínicas e urgências devem ser encaminhadas a um profissional."
+          },
+          ".l-conversation h2": {
+            "width": 346,
+            "height": 77.75,
+            "fontSize": "36px",
+            "lineHeight": "38.88px",
+            "fontWeight": "400",
+            "text": "Começa comuma conversa."
+          },
+          ".l-result-title h3": {
+            "width": 216.953125,
+            "height": 36,
+            "fontSize": "30px",
+            "lineHeight": "normal",
+            "fontWeight": "400",
+            "text": "Pata & Prosa"
+          },
+          ".l-journey-track": {
+            "width": 304,
+            "height": 358.375,
+            "fontSize": "16px",
+            "lineHeight": "normal",
+            "fontWeight": "400",
+            "text": "01A conversa começaComunicação02A agenda encontra espaçoAgenda03O atendimento ganha contextoContexto04A equipe dá continuidadeRelacionamento"
+          },
+          ".l-closing h2": {
+            "width": 346,
+            "height": 92.375,
+            "fontSize": "44px",
+            "lineHeight": "46.2px",
+            "fontWeight": "400",
+            "text": "O produto nascenas conexões."
+          }
+        }
+      },
+      "deltas": {
+        ".l-hero h1": {
+          "width": 0,
+          "height": 0,
+          "fontSizeMatches": true,
+          "lineHeightMatches": true
+        },
+        ".l-composer-copy h2": {
+          "width": 0,
+          "height": 0,
+          "fontSizeMatches": true,
+          "lineHeightMatches": true
+        },
+        "#l-prompt": {
+          "width": 0,
+          "height": -13.56,
+          "fontSizeMatches": false,
+          "lineHeightMatches": false
+        },
+        ".l-workbench": {
+          "width": 0,
+          "height": 12,
+          "fontSizeMatches": true,
+          "lineHeightMatches": true
+        },
+        ".l-conversation h2": {
+          "width": 0,
+          "height": 0,
+          "fontSizeMatches": true,
+          "lineHeightMatches": true
+        },
+        ".l-result-title h3": {
+          "width": 0,
+          "height": 0,
+          "fontSizeMatches": true,
+          "lineHeightMatches": true
+        },
+        ".l-journey-track": {
+          "width": 0,
+          "height": 0,
+          "fontSizeMatches": true,
+          "lineHeightMatches": true
+        },
+        ".l-closing h2": {
+          "width": 0,
+          "height": 0,
+          "fontSizeMatches": true,
+          "lineHeightMatches": true
+        }
+      }
+    },
+    {
+      "width": 768,
+      "samples": {
+        "reference": {
+          ".l-hero h1": {
+            "width": 340.703125,
+            "height": 184.125,
+            "fontSize": "62px",
+            "lineHeight": "61.38px",
+            "fontWeight": "400",
+            "text": "O que vocêquer construir?"
+          },
+          ".l-composer-copy h2": {
+            "width": 263.734375,
+            "height": 66,
+            "fontSize": "30px",
+            "lineHeight": "33px",
+            "fontWeight": "400",
+            "text": "Conte o que aindanão existe."
+          },
+          "#l-prompt": {
+            "width": 263.734375,
+            "height": 127.1875,
+            "fontSize": "14px",
+            "lineHeight": "23.8px",
+            "fontWeight": "400",
+            "text": ""
+          },
+          ".l-workbench": {
+            "width": 680.4375,
+            "height": 1743.1875,
+            "fontSize": "16px",
+            "lineHeight": "normal",
+            "fontWeight": "400",
+            "text": "01 / Sua ideiaComeça comuma conversa.Qual problema você quer resolver? Para quem? O que deveria acontecer do primeiro contato ao próximo passo?catalisa.Que tal uma clínica veterinária em que marcar a consulta da Luna seja tão simples quanto mandar uma mensagem?Ou experimente um ponto de partidaCuidar do pet ↗Organizar uma oficina ↗Criar uma jornada de crédito ↗Conectar candidatos e entrevistas ↗Protótipo interativo. Esta versão usa cenários demonstrativos locais; o motor de IA será conectado depois. O texto fica nesta página e não é enviado a um serviço.02 / Uma primeira formaExplore os passos e as telas ↘Clínica veterinária / Composição demonstrativaPata & ProsaIdeia em movimento Do “tem horário?” ao cuidado marcado.Uma conversa ajuda a escolher o atendimento, encontrar um horário e preparar a visita.1Tutor2Recepção3VeterinárioA jornadaUma tela possívelAs peças01A conversa começaComunicação02A agenda encontra espaçoAgenda03O atendimento ganha contextoContexto04A equipe dá continuidadeRelacionamentoPASSO 1 / 4A conversa começaO tutor conta o que seu pet precisa.Comunicação na plataforma↗Orientações clínicas e urgências devem ser encaminhadas a um profissional."
+          },
+          ".l-conversation h2": {
+            "width": 325.21875,
+            "height": 84.21875,
+            "fontSize": "39px",
+            "lineHeight": "42.12px",
+            "fontWeight": "400",
+            "text": "Começa comuma conversa."
+          },
+          ".l-result-title h3": {
+            "width": 247.9375,
+            "height": 41,
+            "fontSize": "34px",
+            "lineHeight": "normal",
+            "fontWeight": "400",
+            "text": "Pata & Prosa"
+          },
+          ".l-journey-track": {
+            "width": 638.4375,
+            "height": 162.78125,
+            "fontSize": "16px",
+            "lineHeight": "normal",
+            "fontWeight": "400",
+            "text": "01A conversa começaComunicação02A agenda encontra espaçoAgenda03O atendimento ganha contextoContexto04A equipe dá continuidadeRelacionamento"
+          },
+          ".l-closing h2": {
+            "width": 680.4375,
+            "height": 121.78125,
+            "fontSize": "58px",
+            "lineHeight": "60.9px",
+            "fontWeight": "400",
+            "text": "O produto nascenas conexões."
+          }
+        },
+        "native": {
+          ".l-hero h1": {
+            "width": 340.703125,
+            "height": 184.125,
+            "fontSize": "62px",
+            "lineHeight": "61.38px",
+            "fontWeight": "400",
+            "text": "O que vocêquer construir?"
+          },
+          ".l-composer-copy h2": {
+            "width": 263.734375,
+            "height": 66,
+            "fontSize": "30px",
+            "lineHeight": "33px",
+            "fontWeight": "400",
+            "text": "Conte o que aindanão existe."
+          },
+          "#l-prompt": {
+            "width": 263.734375,
+            "height": 127.1875,
+            "fontSize": "14px",
+            "lineHeight": "23.8px",
+            "fontWeight": "400",
+            "text": ""
+          },
+          ".l-workbench": {
+            "width": 680.4375,
+            "height": 1755.1875,
+            "fontSize": "16px",
+            "lineHeight": "normal",
+            "fontWeight": "400",
+            "text": "01 / Sua ideiaComeça comuma conversa.Qual problema você quer resolver? Para quem? O que deveria acontecer do primeiro contato ao próximo passo?catalisa.Que tal uma clínica veterinária em que marcar a consulta da Luna seja tão simples quanto mandar uma mensagem?Ou experimente um ponto de partidaCuidar do pet ↗Organizar uma oficina ↗Criar uma jornada de crédito ↗Conectar candidatos e entrevistas ↗Os exemplos são demonstrações. Ao gerar sua ideia, o briefing é salvo e processado por IA para criar um conceito exploratório. Continue a conversa com a Catalisa ↗02 / Uma primeira formaExplore os passos e as telas ↘Clínica veterinária / Composição demonstrativaPata & ProsaIdeia em movimento Do “tem horário?” ao cuidado marcado.Uma conversa ajuda a escolher o atendimento, encontrar um horário e preparar a visita.1Tutor2Recepção3VeterinárioA jornadaUma tela possívelAs peças01A conversa começaComunicação02A agenda encontra espaçoAgenda03O atendimento ganha contextoContexto04A equipe dá continuidadeRelacionamentoPASSO 1 / 4A conversa começaO tutor conta o que seu pet precisa.Comunicação na plataforma ↗Orientações clínicas e urgências devem ser encaminhadas a um profissional."
+          },
+          ".l-conversation h2": {
+            "width": 325.21875,
+            "height": 84.21875,
+            "fontSize": "39px",
+            "lineHeight": "42.12px",
+            "fontWeight": "400",
+            "text": "Começa comuma conversa."
+          },
+          ".l-result-title h3": {
+            "width": 247.9375,
+            "height": 41,
+            "fontSize": "34px",
+            "lineHeight": "normal",
+            "fontWeight": "400",
+            "text": "Pata & Prosa"
+          },
+          ".l-journey-track": {
+            "width": 638.4375,
+            "height": 162.78125,
+            "fontSize": "16px",
+            "lineHeight": "normal",
+            "fontWeight": "400",
+            "text": "01A conversa começaComunicação02A agenda encontra espaçoAgenda03O atendimento ganha contextoContexto04A equipe dá continuidadeRelacionamento"
+          },
+          ".l-closing h2": {
+            "width": 680.4375,
+            "height": 121.78125,
+            "fontSize": "58px",
+            "lineHeight": "60.9px",
+            "fontWeight": "400",
+            "text": "O produto nascenas conexões."
+          }
+        }
+      },
+      "deltas": {
+        ".l-hero h1": {
+          "width": 0,
+          "height": 0,
+          "fontSizeMatches": true,
+          "lineHeightMatches": true
+        },
+        ".l-composer-copy h2": {
+          "width": 0,
+          "height": 0,
+          "fontSizeMatches": true,
+          "lineHeightMatches": true
+        },
+        "#l-prompt": {
+          "width": 0,
+          "height": 0,
+          "fontSizeMatches": true,
+          "lineHeightMatches": true
+        },
+        ".l-workbench": {
+          "width": 0,
+          "height": 12,
+          "fontSizeMatches": true,
+          "lineHeightMatches": true
+        },
+        ".l-conversation h2": {
+          "width": 0,
+          "height": 0,
+          "fontSizeMatches": true,
+          "lineHeightMatches": true
+        },
+        ".l-result-title h3": {
+          "width": 0,
+          "height": 0,
+          "fontSizeMatches": true,
+          "lineHeightMatches": true
+        },
+        ".l-journey-track": {
+          "width": 0,
+          "height": 0,
+          "fontSizeMatches": true,
+          "lineHeightMatches": true
+        },
+        ".l-closing h2": {
+          "width": 0,
+          "height": 0,
+          "fontSizeMatches": true,
+          "lineHeightMatches": true
+        }
+      }
+    },
+    {
+      "width": 1440,
+      "samples": {
+        "reference": {
+          ".l-hero h1": {
+            "width": 648.234375,
+            "height": 333.5625,
+            "fontSize": "112.32px",
+            "lineHeight": "111.197px",
+            "fontWeight": "400",
+            "text": "O que vocêquer construir?"
+          },
+          ".l-composer-copy h2": {
+            "width": 388,
+            "height": 77,
+            "fontSize": "35px",
+            "lineHeight": "38.5px",
+            "fontWeight": "400",
+            "text": "Conte o que aindanão existe."
+          },
+          "#l-prompt": {
+            "width": 388,
+            "height": 127.1875,
+            "fontSize": "14px",
+            "lineHeight": "23.8px",
+            "fontWeight": "400",
+            "text": ""
+          },
+          ".l-workbench": {
+            "width": 1275.828125,
+            "height": 1133.984375,
+            "fontSize": "16px",
+            "lineHeight": "normal",
+            "fontWeight": "400",
+            "text": "01 / Sua ideiaComeça comuma conversa.Qual problema você quer resolver? Para quem? O que deveria acontecer do primeiro contato ao próximo passo?catalisa.Que tal uma clínica veterinária em que marcar a consulta da Luna seja tão simples quanto mandar uma mensagem?Ou experimente um ponto de partidaCuidar do pet ↗Organizar uma oficina ↗Criar uma jornada de crédito ↗Conectar candidatos e entrevistas ↗Protótipo interativo. Esta versão usa cenários demonstrativos locais; o motor de IA será conectado depois. O texto fica nesta página e não é enviado a um serviço.02 / Uma primeira formaExplore os passos e as telas ↘Clínica veterinária / Composição demonstrativaPata & ProsaIdeia em movimento Do “tem horário?” ao cuidado marcado.Uma conversa ajuda a escolher o atendimento, encontrar um horário e preparar a visita.1Tutor2Recepção3VeterinárioA jornadaUma tela possívelAs peças01A conversa começaComunicação02A agenda encontra espaçoAgenda03O atendimento ganha contextoContexto04A equipe dá continuidadeRelacionamentoPASSO 1 / 4A conversa começaO tutor conta o que seu pet precisa.Comunicação na plataforma↗Orientações clínicas e urgências devem ser encaminhadas a um profissional."
+          },
+          ".l-conversation h2": {
+            "width": 340,
+            "height": 84.21875,
+            "fontSize": "39px",
+            "lineHeight": "42.12px",
+            "fontWeight": "400",
+            "text": "Começa comuma conversa."
+          },
+          ".l-result-title h3": {
+            "width": 247.9375,
+            "height": 41,
+            "fontSize": "34px",
+            "lineHeight": "normal",
+            "fontWeight": "400",
+            "text": "Pata & Prosa"
+          },
+          ".l-journey-track": {
+            "width": 808.828125,
+            "height": 145.390625,
+            "fontSize": "16px",
+            "lineHeight": "normal",
+            "fontWeight": "400",
+            "text": "01A conversa começaComunicação02A agenda encontra espaçoAgenda03O atendimento ganha contextoContexto04A equipe dá continuidadeRelacionamento"
+          },
+          ".l-closing h2": {
+            "width": 1275.828125,
+            "height": 121.78125,
+            "fontSize": "58px",
+            "lineHeight": "60.9px",
+            "fontWeight": "400",
+            "text": "O produto nascenas conexões."
+          }
+        },
+        "native": {
+          ".l-hero h1": {
+            "width": 648.234375,
+            "height": 333.5625,
+            "fontSize": "112.32px",
+            "lineHeight": "111.197px",
+            "fontWeight": "400",
+            "text": "O que vocêquer construir?"
+          },
+          ".l-composer-copy h2": {
+            "width": 388,
+            "height": 77,
+            "fontSize": "35px",
+            "lineHeight": "38.5px",
+            "fontWeight": "400",
+            "text": "Conte o que aindanão existe."
+          },
+          "#l-prompt": {
+            "width": 388,
+            "height": 127.1875,
+            "fontSize": "14px",
+            "lineHeight": "23.8px",
+            "fontWeight": "400",
+            "text": ""
+          },
+          ".l-workbench": {
+            "width": 1275.828125,
+            "height": 1133.984375,
+            "fontSize": "16px",
+            "lineHeight": "normal",
+            "fontWeight": "400",
+            "text": "01 / Sua ideiaComeça comuma conversa.Qual problema você quer resolver? Para quem? O que deveria acontecer do primeiro contato ao próximo passo?catalisa.Que tal uma clínica veterinária em que marcar a consulta da Luna seja tão simples quanto mandar uma mensagem?Ou experimente um ponto de partidaCuidar do pet ↗Organizar uma oficina ↗Criar uma jornada de crédito ↗Conectar candidatos e entrevistas ↗Os exemplos são demonstrações. Ao gerar sua ideia, o briefing é salvo e processado por IA para criar um conceito exploratório. Continue a conversa com a Catalisa ↗02 / Uma primeira formaExplore os passos e as telas ↘Clínica veterinária / Composição demonstrativaPata & ProsaIdeia em movimento Do “tem horário?” ao cuidado marcado.Uma conversa ajuda a escolher o atendimento, encontrar um horário e preparar a visita.1Tutor2Recepção3VeterinárioA jornadaUma tela possívelAs peças01A conversa começaComunicação02A agenda encontra espaçoAgenda03O atendimento ganha contextoContexto04A equipe dá continuidadeRelacionamentoPASSO 1 / 4A conversa começaO tutor conta o que seu pet precisa.Comunicação na plataforma ↗Orientações clínicas e urgências devem ser encaminhadas a um profissional."
+          },
+          ".l-conversation h2": {
+            "width": 340,
+            "height": 84.21875,
+            "fontSize": "39px",
+            "lineHeight": "42.12px",
+            "fontWeight": "400",
+            "text": "Começa comuma conversa."
+          },
+          ".l-result-title h3": {
+            "width": 247.9375,
+            "height": 41,
+            "fontSize": "34px",
+            "lineHeight": "normal",
+            "fontWeight": "400",
+            "text": "Pata & Prosa"
+          },
+          ".l-journey-track": {
+            "width": 808.828125,
+            "height": 145.390625,
+            "fontSize": "16px",
+            "lineHeight": "normal",
+            "fontWeight": "400",
+            "text": "01A conversa começaComunicação02A agenda encontra espaçoAgenda03O atendimento ganha contextoContexto04A equipe dá continuidadeRelacionamento"
+          },
+          ".l-closing h2": {
+            "width": 1275.828125,
+            "height": 121.78125,
+            "fontSize": "58px",
+            "lineHeight": "60.9px",
+            "fontWeight": "400",
+            "text": "O produto nascenas conexões."
+          }
+        }
+      },
+      "deltas": {
+        ".l-hero h1": {
+          "width": 0,
+          "height": 0,
+          "fontSizeMatches": true,
+          "lineHeightMatches": true
+        },
+        ".l-composer-copy h2": {
+          "width": 0,
+          "height": 0,
+          "fontSizeMatches": true,
+          "lineHeightMatches": true
+        },
+        "#l-prompt": {
+          "width": 0,
+          "height": 0,
+          "fontSizeMatches": true,
+          "lineHeightMatches": true
+        },
+        ".l-workbench": {
+          "width": 0,
+          "height": 0,
+          "fontSizeMatches": true,
+          "lineHeightMatches": true
+        },
+        ".l-conversation h2": {
+          "width": 0,
+          "height": 0,
+          "fontSizeMatches": true,
+          "lineHeightMatches": true
+        },
+        ".l-result-title h3": {
+          "width": 0,
+          "height": 0,
+          "fontSizeMatches": true,
+          "lineHeightMatches": true
+        },
+        ".l-journey-track": {
+          "width": 0,
+          "height": 0,
+          "fontSizeMatches": true,
+          "lineHeightMatches": true
+        },
+        ".l-closing h2": {
+          "width": 0,
+          "height": 0,
+          "fontSizeMatches": true,
+          "lineHeightMatches": true
+        }
+      }
+    }
+  ]
+}

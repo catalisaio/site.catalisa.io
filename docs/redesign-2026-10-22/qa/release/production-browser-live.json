@@ -1,0 +1,91 @@
+{
+  "checkedAt": "2026-10-26T19:33:27.953Z",
+  "passed": true,
+  "release": "20261026-multilingual",
+  "scope": "Actual public production HTTPS and JS for seven locales, language selector, anonymous Contact API401 and ready inputs; French Lab ready. Optional analytics explicitly declined. No sessions/leads/generations/external messages created.",
+  "checks": [
+    {
+      "lang": "pt-BR",
+      "path": "/",
+      "status": 200,
+      "selector": true
+    },
+    {
+      "lang": "pt-BR",
+      "path": "/contato",
+      "anonymousContactReady": true
+    },
+    {
+      "lang": "en-US",
+      "path": "/en",
+      "status": 200,
+      "selector": true
+    },
+    {
+      "lang": "en-US",
+      "path": "/en/contact",
+      "anonymousContactReady": true
+    },
+    {
+      "lang": "de-DE",
+      "path": "/de",
+      "status": 200,
+      "selector": true
+    },
+    {
+      "lang": "de-DE",
+      "path": "/de/kontakt",
+      "anonymousContactReady": true
+    },
+    {
+      "lang": "es-ES",
+      "path": "/es",
+      "status": 200,
+      "selector": true
+    },
+    {
+      "lang": "es-ES",
+      "path": "/es/contacto",
+      "anonymousContactReady": true
+    },
+    {
+      "lang": "da-DK",
+      "path": "/da",
+      "status": 200,
+      "selector": true
+    },
+    {
+      "lang": "da-DK",
+      "path": "/da/kontakt",
+      "anonymousContactReady": true
+    },
+    {
+      "lang": "nl-NL",
+      "path": "/nl",
+      "status": 200,
+      "selector": true
+    },
+    {
+      "lang": "nl-NL",
+      "path": "/nl/contact",
+      "anonymousContactReady": true
+    },
+    {
+      "lang": "fr-FR",
+      "path": "/fr",
+      "status": 200,
+      "selector": true
+    },
+    {
+      "lang": "fr-FR",
+      "path": "/fr/contact",
+      "anonymousContactReady": true
+    },
+    {
+      "lang": "fr-FR",
+      "path": "/fr/lab",
+      "labReady": true
+    }
+  ],
+  "errors": []
+}

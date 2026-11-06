@@ -1,0 +1,882 @@
+{
+  "checkedAt": "2026-10-27T02:18:35.350Z",
+  "origin": "https://site-staging.catalisa.io",
+  "scope": "Single cold-cache mobile emulation per route,4xCPU and constrained4g. Anonymous GET-only page load; no consent changes, forms, leads, AI or messages. Timelines diagnose this run and are not field Core Web Vitals.",
+  "results": [
+    {
+      "route": "/contato",
+      "status": 200,
+      "release": "20261027-language-hints-r2",
+      "paints": [
+        {
+          "at": 1632,
+          "renderTime": 1632,
+          "loadTime": 0,
+          "element": "A",
+          "className": "c-brand c-wordmark",
+          "size": 2790,
+          "resource": null
+        },
+        {
+          "at": 3332,
+          "renderTime": 3332,
+          "loadTime": 0,
+          "element": "A",
+          "className": "c-brand c-wordmark",
+          "size": 3094,
+          "resource": null
+        },
+        {
+          "at": 3632,
+          "renderTime": 3632,
+          "loadTime": 0,
+          "element": "P",
+          "className": null,
+          "size": 26244,
+          "resource": null
+        }
+      ],
+      "rootChanges": [
+        {
+          "at": 405,
+          "children": 1
+        },
+        {
+          "at": 3300.7999999998137,
+          "children": 1
+        },
+        {
+          "at": 3300.7999999998137,
+          "children": 1
+        },
+        {
+          "at": 3595.0999999996275,
+          "children": 2
+        }
+      ],
+      "bootstrapChanges": [
+        {
+          "at": 392.39999999990687,
+          "hidden": true
+        },
+        {
+          "at": 3300.7999999998137,
+          "hidden": false
+        }
+      ],
+      "domReadyAt": 1538.5,
+      "fontsReadyAt": 2378.6999999997206,
+      "navigation": {
+        "startTime": 0,
+        "domainLookupStart": 6.199999999720603,
+        "domainLookupEnd": 27.799999999813735,
+        "connectStart": 27.799999999813735,
+        "secureConnectionStart": 88.29999999981374,
+        "connectEnd": 152.89999999990687,
+        "requestStart": 152.89999999990687,
+        "responseStart": 239.79999999981374,
+        "responseEnd": 349.89999999990687,
+        "domContentLoadedEventEnd": 1539,
+        "loadEventEnd": 2370.6999999997206
+      },
+      "resources": [
+        {
+          "path": "/assets/index-i_UZAR9N.js",
+          "start": 354.59999999962747,
+          "end": 1483.2999999998137,
+          "duration": 1128.7000000001863,
+          "transferBytes": 79018,
+          "encodedBytes": 78718
+        },
+        {
+          "path": "/assets/navigation-CRhD5201.js",
+          "start": 393.59999999962747,
+          "end": 575.7999999998137,
+          "duration": 182.20000000018626,
+          "transferBytes": 758,
+          "encodedBytes": 458
+        },
+        {
+          "path": "/assets/App-CHDsO-MB.js",
+          "start": 393.59999999962747,
+          "end": 695.3999999999069,
+          "duration": 301.8000000002794,
+          "transferBytes": 2834,
+          "encodedBytes": 2534
+        },
+        {
+          "path": "/assets/chunk-JZWAC4HX-B-3zMdpZ.js",
+          "start": 394.09999999962747,
+          "end": 1137.6999999997206,
+          "duration": 743.6000000000931,
+          "transferBytes": 14167,
+          "encodedBytes": 13867
+        },
+        {
+          "path": "/assets/redesign-M5OBwipO.js",
+          "start": 394.1999999997206,
+          "end": 1175.5,
+          "duration": 781.3000000002794,
+          "transferBytes": 18125,
+          "encodedBytes": 17825
+        },
+        {
+          "path": "/assets/privacy-CYCxLjnm.js",
+          "start": 394.59999999962747,
+          "end": 1017.5999999996275,
+          "duration": 623,
+          "transferBytes": 8209,
+          "encodedBytes": 7909
+        },
+        {
+          "path": "/assets/terms-VaW3iTxe.js",
+          "start": 394.59999999962747,
+          "end": 1040,
+          "duration": 645.4000000003725,
+          "transferBytes": 7867,
+          "encodedBytes": 7567
+        },
+        {
+          "path": "/assets/seo-BgMMcJqv.js",
+          "start": 394.6999999997206,
+          "end": 875.5999999996275,
+          "duration": 480.89999999990687,
+          "transferBytes": 3994,
+          "encodedBytes": 3694
+        },
+        {
+          "path": "/assets/resources-c2rum-GM.js",
+          "start": 395.29999999981374,
+          "end": 673,
+          "duration": 277.70000000018626,
+          "transferBytes": 472,
+          "encodedBytes": 172
+        },
+        {
+          "path": "/assets/ecosystem-DpyJv1Ax.js",
+          "start": 395.29999999981374,
+          "end": 681.0999999996275,
+          "duration": 285.79999999981374,
+          "transferBytes": 639,
+          "encodedBytes": 339
+        },
+        {
+          "path": "/assets/foundation-components-DaT-vu2P.js",
+          "start": 395.29999999981374,
+          "end": 688.0999999996275,
+          "duration": 292.79999999981374,
+          "transferBytes": 919,
+          "encodedBytes": 619
+        },
+        {
+          "path": "/assets/PreviewMeta-uISoISsC.js",
+          "start": 395.29999999981374,
+          "end": 950.2999999998137,
+          "duration": 555,
+          "transferBytes": 6194,
+          "encodedBytes": 5894
+        },
+        {
+          "path": "/assets/App-Dgai9iNN.css",
+          "start": 395.5,
+          "end": 620.3999999999069,
+          "duration": 224.89999999990687,
+          "transferBytes": 528,
+          "encodedBytes": 228
+        },
+        {
+          "path": "/assets/PreviewMeta-DcyUndMg.css",
+          "start": 395.5,
+          "end": 762.5999999996275,
+          "duration": 367.09999999962747,
+          "transferBytes": 2904,
+          "encodedBytes": 2604
+        },
+        {
+          "path": "/assets/base-CkaTQCVj.css",
+          "start": 396.29999999981374,
+          "end": 890.1999999997206,
+          "duration": 493.89999999990687,
+          "transferBytes": 3859,
+          "encodedBytes": 3559
+        },
+        {
+          "path": "/assets/site-client-BJfA8EhM.js",
+          "start": 396.39999999990687,
+          "end": 808,
+          "duration": 411.60000000009313,
+          "transferBytes": 2787,
+          "encodedBytes": 2487
+        },
+        {
+          "path": "/assets/site-client-rdJd2oWk.css",
+          "start": 396.5,
+          "end": 770,
+          "duration": 373.5,
+          "transferBytes": 1905,
+          "encodedBytes": 1605
+        },
+        {
+          "path": "/assets/site-analytics-BNQSbGzK.js",
+          "start": 396.5,
+          "end": 905.5,
+          "duration": 509,
+          "transferBytes": 4408,
+          "encodedBytes": 4108
+        },
+        {
+          "path": "/assets/Contact-DkEpSUND.css",
+          "start": 397,
+          "end": 1130.1999999997206,
+          "duration": 733.1999999997206,
+          "transferBytes": 13284,
+          "encodedBytes": 12984
+        },
+        {
+          "path": "/assets/AnalyticsConsent-C3mCcOXZ.js",
+          "start": 397.09999999962747,
+          "end": 628.2999999998137,
+          "duration": 231.20000000018626,
+          "transferBytes": 1257,
+          "encodedBytes": 957
+        },
+        {
+          "path": "/assets/AnalyticsConsent-MDaiwW0O.css",
+          "start": 397.09999999962747,
+          "end": 651.1999999997206,
+          "duration": 254.10000000009313,
+          "transferBytes": 948,
+          "encodedBytes": 648
+        },
+        {
+          "path": "/redesign/inter-latin-0.woff2",
+          "start": 1550.0999999996275,
+          "end": 2345.5999999996275,
+          "duration": 795.5,
+          "transferBytes": 49716,
+          "encodedBytes": 49416
+        },
+        {
+          "path": "/redesign/inter-latin-2.woff2",
+          "start": 1550.3999999999069,
+          "end": 2367.5,
+          "duration": 817.1000000000931,
+          "transferBytes": 51380,
+          "encodedBytes": 51080
+        },
+        {
+          "path": "/assets/Contact-BEh_LRYN.js",
+          "start": 1621.8999999999069,
+          "end": 2090.399999999907,
+          "duration": 468.5,
+          "transferBytes": 20115,
+          "encodedBytes": 19815
+        },
+        {
+          "path": "/api/site/session",
+          "start": 2102.6999999997206,
+          "end": 3201.899999999907,
+          "duration": 1099.2000000001863,
+          "transferBytes": 444,
+          "encodedBytes": 144
+        }
+      ],
+      "documentLanguage": "pt-BR"
+    },
+    {
+      "route": "/lab",
+      "status": 200,
+      "release": "20261027-language-hints-r2",
+      "paints": [
+        {
+          "at": 1680,
+          "renderTime": 1680,
+          "loadTime": 0,
+          "element": "H1",
+          "className": null,
+          "size": 52992,
+          "resource": null
+        }
+      ],
+      "rootChanges": [
+        {
+          "at": 378.5,
+          "children": 1
+        },
+        {
+          "at": 1645.2000000001863,
+          "children": 1
+        },
+        {
+          "at": 1645.2000000001863,
+          "children": 1
+        },
+        {
+          "at": 1944.7999999998137,
+          "children": 2
+        }
+      ],
+      "bootstrapChanges": [],
+      "domReadyAt": 1455.2000000001863,
+      "fontsReadyAt": 2482.899999999907,
+      "navigation": {
+        "startTime": 0,
+        "domainLookupStart": 2,
+        "domainLookupEnd": 20.899999999906868,
+        "connectStart": 20.899999999906868,
+        "secureConnectionStart": 39.39999999990687,
+        "connectEnd": 116.89999999990687,
+        "requestStart": 117.10000000009313,
+        "responseStart": 154.89999999990687,
+        "responseEnd": 314.79999999981374,
+        "domContentLoadedEventEnd": 1455.8999999999069,
+        "loadEventEnd": 2466
+      },
+      "resources": [
+        {
+          "path": "/assets/index-i_UZAR9N.js",
+          "start": 319.29999999981374,
+          "end": 1199.7999999998137,
+          "duration": 880.5,
+          "transferBytes": 79018,
+          "encodedBytes": 78718
+        },
+        {
+          "path": "/assets/App-CHDsO-MB.js",
+          "start": 363,
+          "end": 577.3999999999069,
+          "duration": 214.39999999990687,
+          "transferBytes": 2834,
+          "encodedBytes": 2534
+        },
+        {
+          "path": "/assets/navigation-CRhD5201.js",
+          "start": 363.5,
+          "end": 1057.7000000001863,
+          "duration": 694.2000000001863,
+          "transferBytes": 758,
+          "encodedBytes": 458
+        },
+        {
+          "path": "/assets/privacy-CYCxLjnm.js",
+          "start": 363.70000000018626,
+          "end": 1341.2999999998137,
+          "duration": 977.5999999996275,
+          "transferBytes": 8209,
+          "encodedBytes": 7909
+        },
+        {
+          "path": "/assets/chunk-JZWAC4HX-B-3zMdpZ.js",
+          "start": 363.70000000018626,
+          "end": 1477,
+          "duration": 1113.2999999998137,
+          "transferBytes": 14167,
+          "encodedBytes": 13867
+        },
+        {
+          "path": "/assets/redesign-M5OBwipO.js",
+          "start": 363.70000000018626,
+          "end": 1484.5,
+          "duration": 1120.7999999998137,
+          "transferBytes": 18125,
+          "encodedBytes": 17825
+        },
+        {
+          "path": "/assets/terms-VaW3iTxe.js",
+          "start": 364.5,
+          "end": 1356.8999999999069,
+          "duration": 992.3999999999069,
+          "transferBytes": 7867,
+          "encodedBytes": 7567
+        },
+        {
+          "path": "/assets/resources-c2rum-GM.js",
+          "start": 364.70000000018626,
+          "end": 968.2000000001863,
+          "duration": 603.5,
+          "transferBytes": 472,
+          "encodedBytes": 172
+        },
+        {
+          "path": "/assets/seo-BgMMcJqv.js",
+          "start": 364.70000000018626,
+          "end": 1019.2999999998137,
+          "duration": 654.5999999996275,
+          "transferBytes": 3994,
+          "encodedBytes": 3694
+        },
+        {
+          "path": "/assets/ecosystem-DpyJv1Ax.js",
+          "start": 365.10000000009313,
+          "end": 1133,
+          "duration": 767.8999999999069,
+          "transferBytes": 639,
+          "encodedBytes": 339
+        },
+        {
+          "path": "/assets/PreviewMeta-DcyUndMg.css",
+          "start": 365.20000000018626,
+          "end": 584.7999999998137,
+          "duration": 219.59999999962747,
+          "transferBytes": 2904,
+          "encodedBytes": 2604
+        },
+        {
+          "path": "/assets/foundation-components-DaT-vu2P.js",
+          "start": 365.20000000018626,
+          "end": 1139.8999999999069,
+          "duration": 774.6999999997206,
+          "transferBytes": 919,
+          "encodedBytes": 619
+        },
+        {
+          "path": "/assets/PreviewMeta-uISoISsC.js",
+          "start": 365.20000000018626,
+          "end": 1326.7999999998137,
+          "duration": 961.5999999996275,
+          "transferBytes": 6194,
+          "encodedBytes": 5894
+        },
+        {
+          "path": "/assets/App-Dgai9iNN.css",
+          "start": 366,
+          "end": 1094.6000000000931,
+          "duration": 728.6000000000931,
+          "transferBytes": 528,
+          "encodedBytes": 228
+        },
+        {
+          "path": "/assets/base-CkaTQCVj.css",
+          "start": 366.60000000009313,
+          "end": 1221.7000000001863,
+          "duration": 855.1000000000931,
+          "transferBytes": 3859,
+          "encodedBytes": 3559
+        },
+        {
+          "path": "/assets/Lab-B9xL5fpR.js",
+          "start": 366.70000000018626,
+          "end": 1431.7000000001863,
+          "duration": 1065,
+          "transferBytes": 9795,
+          "encodedBytes": 9495
+        },
+        {
+          "path": "/assets/site-client-BJfA8EhM.js",
+          "start": 366.79999999981374,
+          "end": 592,
+          "duration": 225.20000000018626,
+          "transferBytes": 2787,
+          "encodedBytes": 2487
+        },
+        {
+          "path": "/assets/site-client-rdJd2oWk.css",
+          "start": 367.70000000018626,
+          "end": 599.3999999999069,
+          "duration": 231.6999999997206,
+          "transferBytes": 1905,
+          "encodedBytes": 1605
+        },
+        {
+          "path": "/assets/site-analytics-BNQSbGzK.js",
+          "start": 367.79999999981374,
+          "end": 1259.5,
+          "duration": 891.7000000001863,
+          "transferBytes": 4408,
+          "encodedBytes": 4108
+        },
+        {
+          "path": "/assets/Lab-ClUb8_qq.css",
+          "start": 368.5,
+          "end": 1401.8999999999069,
+          "duration": 1033.3999999999069,
+          "transferBytes": 7808,
+          "encodedBytes": 7508
+        },
+        {
+          "path": "/assets/AnalyticsConsent-C3mCcOXZ.js",
+          "start": 368.89999999990687,
+          "end": 1079.7000000001863,
+          "duration": 710.8000000002794,
+          "transferBytes": 1257,
+          "encodedBytes": 957
+        },
+        {
+          "path": "/assets/AnalyticsConsent-MDaiwW0O.css",
+          "start": 368.89999999990687,
+          "end": 1125,
+          "duration": 756.1000000000931,
+          "transferBytes": 948,
+          "encodedBytes": 648
+        },
+        {
+          "path": "/redesign/inter-latin-0.woff2",
+          "start": 1466,
+          "end": 2406.899999999907,
+          "duration": 940.8999999999069,
+          "transferBytes": 49716,
+          "encodedBytes": 49416
+        },
+        {
+          "path": "/redesign/inter-latin-2.woff2",
+          "start": 1466.6000000000931,
+          "end": 2444,
+          "duration": 977.3999999999069,
+          "transferBytes": 51380,
+          "encodedBytes": 51080
+        },
+        {
+          "path": "/redesign/inter-latin-1.woff2",
+          "start": 1467.5,
+          "end": 2452.2999999998137,
+          "duration": 984.7999999998137,
+          "transferBytes": 51324,
+          "encodedBytes": 51024
+        },
+        {
+          "path": "/api/site/session",
+          "start": 1677.2000000001863,
+          "end": 3387.600000000093,
+          "duration": 1710.3999999999069,
+          "transferBytes": 444,
+          "encodedBytes": 144
+        }
+      ],
+      "documentLanguage": "pt-BR"
+    },
+    {
+      "route": "/ecossistema/credit",
+      "status": 200,
+      "release": "20261027-language-hints-r2",
+      "paints": [
+        {
+          "at": 1300,
+          "renderTime": 1300,
+          "loadTime": 0,
+          "element": "H1",
+          "className": null,
+          "size": 39140,
+          "resource": null
+        },
+        {
+          "at": 2748,
+          "renderTime": 2748,
+          "loadTime": 2708.899999999907,
+          "element": "IMG",
+          "className": null,
+          "size": 72492,
+          "resource": "/redesign/screens/credit-queue.png"
+        }
+      ],
+      "rootChanges": [
+        {
+          "at": 428.10000000009313,
+          "children": 2
+        },
+        {
+          "at": 430.60000000009313,
+          "children": 2
+        },
+        {
+          "at": 3162.7999999998137,
+          "children": 2
+        },
+        {
+          "at": 3162.7999999998137,
+          "children": 2
+        },
+        {
+          "at": 3162.7999999998137,
+          "children": 2
+        },
+        {
+          "at": 3447.600000000093,
+          "children": 3
+        }
+      ],
+      "bootstrapChanges": [],
+      "domReadyAt": 3037.899999999907,
+      "fontsReadyAt": 3288.600000000093,
+      "navigation": {
+        "startTime": 0,
+        "domainLookupStart": 1.7999999998137355,
+        "domainLookupEnd": 31.199999999720603,
+        "connectStart": 31.199999999720603,
+        "secureConnectionStart": 48.799999999813735,
+        "connectEnd": 150.29999999981374,
+        "requestStart": 150.5,
+        "responseStart": 225.29999999981374,
+        "responseEnd": 367.39999999990687,
+        "domContentLoadedEventEnd": 3038.600000000093,
+        "loadEventEnd": 3247
+      },
+      "resources": [
+        {
+          "path": "/assets/index-i_UZAR9N.js",
+          "start": 372.29999999981374,
+          "end": 2954.1999999997206,
+          "duration": 2581.899999999907,
+          "transferBytes": 79018,
+          "encodedBytes": 78718
+        },
+        {
+          "path": "/assets/App-CHDsO-MB.js",
+          "start": 412,
+          "end": 891.7999999998137,
+          "duration": 479.79999999981374,
+          "transferBytes": 2834,
+          "encodedBytes": 2534
+        },
+        {
+          "path": "/assets/navigation-CRhD5201.js",
+          "start": 412.10000000009313,
+          "end": 705.6000000000931,
+          "duration": 293.5,
+          "transferBytes": 758,
+          "encodedBytes": 458
+        },
+        {
+          "path": "/assets/chunk-JZWAC4HX-B-3zMdpZ.js",
+          "start": 412.10000000009313,
+          "end": 1334.8999999999069,
+          "duration": 922.7999999998137,
+          "transferBytes": 14167,
+          "encodedBytes": 13867
+        },
+        {
+          "path": "/assets/redesign-M5OBwipO.js",
+          "start": 412.89999999990687,
+          "end": 1387.1999999997206,
+          "duration": 974.2999999998137,
+          "transferBytes": 18125,
+          "encodedBytes": 17825
+        },
+        {
+          "path": "/assets/privacy-CYCxLjnm.js",
+          "start": 413.29999999981374,
+          "end": 1185.1000000000931,
+          "duration": 771.8000000002794,
+          "transferBytes": 8209,
+          "encodedBytes": 7909
+        },
+        {
+          "path": "/assets/terms-VaW3iTxe.js",
+          "start": 413.39999999990687,
+          "end": 1192.5,
+          "duration": 779.1000000000931,
+          "transferBytes": 7867,
+          "encodedBytes": 7567
+        },
+        {
+          "path": "/assets/resources-c2rum-GM.js",
+          "start": 414.10000000009313,
+          "end": 645,
+          "duration": 230.89999999990687,
+          "transferBytes": 472,
+          "encodedBytes": 172
+        },
+        {
+          "path": "/assets/seo-BgMMcJqv.js",
+          "start": 414.10000000009313,
+          "end": 974.2999999998137,
+          "duration": 560.1999999997206,
+          "transferBytes": 3994,
+          "encodedBytes": 3694
+        },
+        {
+          "path": "/assets/ecosystem-DpyJv1Ax.js",
+          "start": 414.1999999997206,
+          "end": 593.1999999997206,
+          "duration": 179,
+          "transferBytes": 639,
+          "encodedBytes": 339
+        },
+        {
+          "path": "/assets/foundation-components-DaT-vu2P.js",
+          "start": 414.1999999997206,
+          "end": 608.1000000000931,
+          "duration": 193.90000000037253,
+          "transferBytes": 919,
+          "encodedBytes": 619
+        },
+        {
+          "path": "/assets/PreviewMeta-DcyUndMg.css",
+          "start": 414.89999999990687,
+          "end": 749.7999999998137,
+          "duration": 334.89999999990687,
+          "transferBytes": 2904,
+          "encodedBytes": 2604
+        },
+        {
+          "path": "/assets/PreviewMeta-uISoISsC.js",
+          "start": 414.89999999990687,
+          "end": 1056.8999999999069,
+          "duration": 642,
+          "transferBytes": 6194,
+          "encodedBytes": 5894
+        },
+        {
+          "path": "/assets/App-Dgai9iNN.css",
+          "start": 415.29999999981374,
+          "end": 690.5,
+          "duration": 275.20000000018626,
+          "transferBytes": 528,
+          "encodedBytes": 228
+        },
+        {
+          "path": "/assets/base-CkaTQCVj.css",
+          "start": 415.29999999981374,
+          "end": 1004.1999999997206,
+          "duration": 588.8999999999069,
+          "transferBytes": 3859,
+          "encodedBytes": 3559
+        },
+        {
+          "path": "/assets/Credit-CZM_d_jx.js",
+          "start": 415.29999999981374,
+          "end": 1147,
+          "duration": 731.7000000001863,
+          "transferBytes": 7425,
+          "encodedBytes": 7125
+        },
+        {
+          "path": "/assets/ProductDetail-Da3i-5kD.js",
+          "start": 415.39999999990687,
+          "end": 727.8999999999069,
+          "duration": 312.5,
+          "transferBytes": 1701,
+          "encodedBytes": 1401
+        },
+        {
+          "path": "/assets/ProductDetail-Ca9hf-WM.css",
+          "start": 416.10000000009313,
+          "end": 869.8999999999069,
+          "duration": 453.79999999981374,
+          "transferBytes": 2425,
+          "encodedBytes": 2125
+        },
+        {
+          "path": "/assets/product-directory-UAyYVusM.js",
+          "start": 416.10000000009313,
+          "end": 930.1999999997206,
+          "duration": 514.0999999996275,
+          "transferBytes": 2692,
+          "encodedBytes": 2392
+        },
+        {
+          "path": "/assets/ProductShowcase-tRYk20Yt.js",
+          "start": 416.1999999997206,
+          "end": 959.6000000000931,
+          "duration": 543.4000000003725,
+          "transferBytes": 2945,
+          "encodedBytes": 2645
+        },
+        {
+          "path": "/assets/operation-components-xGsa5Mwr.js",
+          "start": 416.6999999997206,
+          "end": 981.8999999999069,
+          "duration": 565.2000000001863,
+          "transferBytes": 3118,
+          "encodedBytes": 2818
+        },
+        {
+          "path": "/assets/operation-components-VcwNFoQp.css",
+          "start": 416.89999999990687,
+          "end": 758.1000000000931,
+          "duration": 341.20000000018626,
+          "transferBytes": 1693,
+          "encodedBytes": 1393
+        },
+        {
+          "path": "/assets/ProductShowcase-Dw4mzDuy.css",
+          "start": 416.89999999990687,
+          "end": 921.6000000000931,
+          "duration": 504.70000000018626,
+          "transferBytes": 2098,
+          "encodedBytes": 1798
+        },
+        {
+          "path": "/assets/financial-D-pWSgVW.js",
+          "start": 417,
+          "end": 989.3999999999069,
+          "duration": 572.3999999999069,
+          "transferBytes": 3182,
+          "encodedBytes": 2882
+        },
+        {
+          "path": "/assets/financial-CZQgU3mG.css",
+          "start": 417.29999999981374,
+          "end": 772.5,
+          "duration": 355.20000000018626,
+          "transferBytes": 837,
+          "encodedBytes": 537
+        },
+        {
+          "path": "/assets/AnalyticsConsent-C3mCcOXZ.js",
+          "start": 417.39999999990687,
+          "end": 818.2999999998137,
+          "duration": 400.89999999990687,
+          "transferBytes": 1257,
+          "encodedBytes": 957
+        },
+        {
+          "path": "/assets/Credit-DPOEQpDo.css",
+          "start": 417.39999999990687,
+          "end": 1176.6999999997206,
+          "duration": 759.2999999998137,
+          "transferBytes": 6802,
+          "encodedBytes": 6502
+        },
+        {
+          "path": "/assets/AnalyticsConsent-MDaiwW0O.css",
+          "start": 417.89999999990687,
+          "end": 743.2999999998137,
+          "duration": 325.39999999990687,
+          "transferBytes": 948,
+          "encodedBytes": 648
+        },
+        {
+          "path": "/assets/site-analytics-BNQSbGzK.js",
+          "start": 417.89999999990687,
+          "end": 1049.5,
+          "duration": 631.6000000000931,
+          "transferBytes": 4408,
+          "encodedBytes": 4108
+        },
+        {
+          "path": "/redesign/inter-latin-0.woff2",
+          "start": 1201.6999999997206,
+          "end": 2864.2999999998137,
+          "duration": 1662.6000000000931,
+          "transferBytes": 49716,
+          "encodedBytes": 49416
+        },
+        {
+          "path": "/redesign/inter-latin-2.woff2",
+          "start": 1201.7999999998137,
+          "end": 2946.6999999997206,
+          "duration": 1744.8999999999069,
+          "transferBytes": 51380,
+          "encodedBytes": 51080
+        },
+        {
+          "path": "/redesign/inter-latin-1.woff2",
+          "start": 1203.3999999999069,
+          "end": 2932.100000000093,
+          "duration": 1728.7000000001863,
+          "transferBytes": 51324,
+          "encodedBytes": 51024
+        },
+        {
+          "path": "/redesign/inter-0.woff2",
+          "start": 1246.1999999997206,
+          "end": 3239.600000000093,
+          "duration": 1993.4000000003725,
+          "transferBytes": 108860,
+          "encodedBytes": 108560
+        }
+      ],
+      "documentLanguage": "pt-BR"
+    }
+  ]
+}

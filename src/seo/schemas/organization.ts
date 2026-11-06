@@ -4,9 +4,10 @@ export function getOrganizationSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
+    '@id': `${BASE_URL}/#organization`,
     name: 'Catalisa',
     url: BASE_URL,
-    logo: `${BASE_URL}/favicon.svg`,
+    logo: `${BASE_URL}/brand/logo-full-color.svg`,
     description: 'Plataforma B2B de automacao WhatsApp com IA para fintechs e empresas brasileiras',
     foundingDate: '2023',
     contactPoint: [

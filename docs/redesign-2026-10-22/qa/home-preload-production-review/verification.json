@@ -1,0 +1,276 @@
+{
+  "generatedAt": "2026-10-25T06:47:22.717Z",
+  "origin": "https://site-staging.catalisa.io",
+  "passed": true,
+  "scope": "Single-run Chrome laboratory measurement of initial anonymous mobile pages under CDP network/CPU throttling, focused DOM and optional keyboard checks. No field Core Web Vitals, INP claim, full WCAG certification or automated axe/Lighthouse result. No axe/Lighthouse dependency is installed.",
+  "keyboardScope": "Not run in this invocation",
+  "emulation": {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "screen": {
+      "width": 390,
+      "height": 844
+    },
+    "deviceScaleFactor": 3,
+    "isMobile": true,
+    "hasTouch": true,
+    "cpuSlowdown": 4,
+    "network": {
+      "offline": false,
+      "latency": 150,
+      "downloadThroughput": 200000,
+      "uploadThroughput": 93750,
+      "connectionType": "cellular4g"
+    },
+    "coldCache": true,
+    "settleAfterFontsAndNetworkMs": 3000
+  },
+  "metricsAreMeasurementsNotThresholdPasses": true,
+  "results": [
+    {
+      "route": "/",
+      "status": 200,
+      "metrics": {
+        "fcpMs": 1208,
+        "lcp": {
+          "value": 3032,
+          "size": 119224,
+          "element": "IMG",
+          "url": "/redesign/financial-city.webp"
+        },
+        "cls": 0.021033977807361437,
+        "layoutShifts": [
+          {
+            "time": 2753.7999999970198,
+            "value": 0.021033977807361437,
+            "sources": [
+              {
+                "id": null,
+                "className": null,
+                "previous": {
+                  "x": 22,
+                  "y": 260.21875,
+                  "width": 320,
+                  "height": 43.1875
+                },
+                "current": {
+                  "x": 22,
+                  "y": 258.21875,
+                  "width": 320,
+                  "height": 43.1875
+                }
+              },
+              {
+                "id": null,
+                "className": null,
+                "previous": {
+                  "x": 22,
+                  "y": 237.03125,
+                  "width": 320,
+                  "height": 20
+                },
+                "current": {
+                  "x": 22,
+                  "y": 258.21875,
+                  "width": 320,
+                  "height": 20
+                }
+              },
+              {
+                "tag": "DIV",
+                "id": null,
+                "className": "c-header-right",
+                "previous": {
+                  "x": 234.515625,
+                  "y": 17,
+                  "width": 133.484375,
+                  "height": 44
+                },
+                "current": {
+                  "x": 229.78125,
+                  "y": 17,
+                  "width": 138.21875,
+                  "height": 44
+                }
+              },
+              {
+                "tag": "SPAN",
+                "id": null,
+                "className": null,
+                "previous": {
+                  "x": 171.765625,
+                  "y": 327.59375,
+                  "width": 8.65625,
+                  "height": 22.390625
+                },
+                "current": {
+                  "x": 180.1875,
+                  "y": 327.59375,
+                  "width": 10.859375,
+                  "height": 22.390625
+                }
+              }
+            ]
+          }
+        ],
+        "longTasks": {
+          "count": 2,
+          "totalMs": 170,
+          "maxMs": 96
+        },
+        "fontsReadyAtCheckMs": 2828.199999999255,
+        "fontLoadingEvents": [
+          {
+            "event": "loading",
+            "time": 1176
+          },
+          {
+            "event": "loadingdone",
+            "time": 2828.199999999255
+          }
+        ],
+        "observedUntilMs": 6833.5,
+        "navigation": {
+          "ttfbMs": 305.0999999977648,
+          "domContentLoadedMs": 2411.5,
+          "loadMs": 3148.89999999851,
+          "transferSize": 12687,
+          "encodedBodySize": 12387
+        },
+        "resources": {
+          "count": 18,
+          "transferBytes": 499960,
+          "encodedBytes": 494560,
+          "largest": [
+            {
+              "path": "/redesign/financial-city.webp",
+              "encodedBytes": 113386,
+              "durationMs": 2549.699999999255,
+              "type": "link"
+            },
+            {
+              "path": "/redesign/architecture.webp",
+              "encodedBytes": 100566,
+              "durationMs": 1973.7999999970198,
+              "type": "img"
+            },
+            {
+              "path": "/assets/index-DF_ROU9L.js",
+              "encodedBytes": 66692,
+              "durationMs": 1861.1000000014901,
+              "type": "script"
+            },
+            {
+              "path": "/redesign/inter-latin-2.woff2",
+              "encodedBytes": 51080,
+              "durationMs": 1785,
+              "type": "css"
+            },
+            {
+              "path": "/redesign/inter-latin-1.woff2",
+              "encodedBytes": 51024,
+              "durationMs": 1768.6000000014901,
+              "type": "css"
+            },
+            {
+              "path": "/redesign/inter-latin-0.woff2",
+              "encodedBytes": 49416,
+              "durationMs": 1711,
+              "type": "css"
+            },
+            {
+              "path": "/assets/redesign-Cnam7vM3.js",
+              "encodedBytes": 30524,
+              "durationMs": 837.4000000022352,
+              "type": "script"
+            },
+            {
+              "path": "/assets/Home-qFShe7VD.js",
+              "encodedBytes": 9536,
+              "durationMs": 520.4000000022352,
+              "type": "script"
+            }
+          ]
+        }
+      },
+      "dom": {
+        "lang": "pt-BR",
+        "startupScript": "/assets/index-DF_ROU9L.js",
+        "mainCount": 1,
+        "h1Count": 1,
+        "controlCount": 28,
+        "unnamedControls": [],
+        "missingAlt": [],
+        "brokenImages": [],
+        "duplicateIds": [],
+        "brokenReferences": [],
+        "overflow": false,
+        "fonts": {
+          "status": "loaded",
+          "faces": [
+            {
+              "family": "Catalisa Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "status": "loaded"
+            }
+          ]
+        },
+        "errorText": []
+      },
+      "exceptions": [],
+      "failedRequests": [],
+      "trackerRequests": [],
+      "legacyChunkRequests": [],
+      "externalOrigins": [],
+      "domChecksPassed": true,
+      "issues": []
+    }
+  ],
+  "keyboard": [],
+  "failures": []
+}

@@ -1,0 +1,63 @@
+{
+  "checkedAt": "2026-10-27T01:36:16.235Z",
+  "passed": true,
+  "origin": "https://catalisa.io",
+  "scope": "Settled explicit Portuguese and English pages at390/1440px: real Enter/Escape, focus and heading stability. No forms, sessions, AI, leads, analytics or messages.",
+  "checks": [
+    {
+      "locale": "pt-BR",
+      "width": 390,
+      "menu": "all",
+      "enterOpens": true,
+      "escapeCloses": true,
+      "focusReturns": true,
+      "headingShiftPx": 0
+    },
+    {
+      "locale": "pt-BR",
+      "width": 1440,
+      "menu": "platform",
+      "enterOpens": true,
+      "escapeCloses": true,
+      "focusReturns": true,
+      "headingShiftPx": 0
+    },
+    {
+      "locale": "pt-BR",
+      "width": 1440,
+      "menu": "all",
+      "enterOpens": true,
+      "escapeCloses": true,
+      "focusReturns": true,
+      "headingShiftPx": 0
+    },
+    {
+      "locale": "en-US",
+      "width": 390,
+      "menu": "all",
+      "enterOpens": true,
+      "escapeCloses": true,
+      "focusReturns": true,
+      "headingShiftPx": 0
+    },
+    {
+      "locale": "en-US",
+      "width": 1440,
+      "menu": "platform",
+      "enterOpens": true,
+      "escapeCloses": true,
+      "focusReturns": true,
+      "headingShiftPx": 0
+    },
+    {
+      "locale": "en-US",
+      "width": 1440,
+      "menu": "all",
+      "enterOpens": true,
+      "escapeCloses": true,
+      "focusReturns": true,
+      "headingShiftPx": 0
+    }
+  ],
+  "errors": []
+}

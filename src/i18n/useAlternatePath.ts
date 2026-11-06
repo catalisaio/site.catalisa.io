@@ -1,6 +1,7 @@
 import { useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { ptToEn } from './useLocalizedPath';
+import { ptToEn } from './route-paths';
+import { resolveRoute } from '../seo/routes';
 
 // Reverse map: en-US path -> pt-BR path
 const enToPt: Record<string, string> = Object.fromEntries(
@@ -14,7 +15,7 @@ const enToPt: Record<string, string> = Object.fromEntries(
 export function useAlternatePath(): { path: string; lang: string; label: string } {
   const { i18n } = useTranslation();
   const location = useLocation();
-  const currentPath = location.pathname;
+  const currentPath = location.pathname.replace(/\/+$/, '') || '/';
 
   if (i18n.language === 'en-US') {
     // Currently en-US, return pt-BR path
@@ -33,7 +34,10 @@ export function useAlternatePath(): { path: string; lang: string; label: string 
 export function useHreflangPaths(): { ptBR: string; enUS: string } {
   const location = useLocation();
   const { i18n } = useTranslation();
-  const currentPath = location.pathname;
+  const currentPath = location.pathname.replace(/\/+$/, '') || '/';
+
+  const route = resolveRoute(currentPath);
+  if (route) return { ptBR: route.ptPath, enUS: route.enPath };
 
   if (i18n.language === 'en-US') {
     const ptPath = enToPt[currentPath] || currentPath.replace(/^\/en\/?/, '/') || '/';

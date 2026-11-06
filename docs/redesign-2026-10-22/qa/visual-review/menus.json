@@ -1,0 +1,412 @@
+{
+  "date": "2026-10-23T14:08:52.240Z",
+  "passed": true,
+  "scope": "Local new-site preview. Checks both menus, typography and header/heading geometry while opening and closing; desktop Chromium, not physical-device certification.",
+  "checks": [
+    {
+      "width": 320,
+      "menu": "Direita",
+      "before": {
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 305,
+          "height": 78
+        },
+        "heading": {
+          "x": 40,
+          "y": 106,
+          "width": 225,
+          "height": 146.859375
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "bodyWidth": 305,
+        "bodyPadding": "0px",
+        "gutter": 15
+      },
+      "open": {
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 305,
+          "height": 78
+        },
+        "heading": {
+          "x": 40,
+          "y": 106,
+          "width": 225,
+          "height": 146.859375
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "bodyWidth": 320,
+        "bodyPadding": "15px",
+        "gutter": 0
+      },
+      "closed": {
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 305,
+          "height": 78
+        },
+        "heading": {
+          "x": 40,
+          "y": 106,
+          "width": 225,
+          "height": 146.859375
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "bodyWidth": 305,
+        "bodyPadding": "0px",
+        "gutter": 15
+      },
+      "layoutShifts": []
+    },
+    {
+      "width": 390,
+      "menu": "Direita",
+      "before": {
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 375,
+          "height": 78
+        },
+        "heading": {
+          "x": 22,
+          "y": 106,
+          "width": 331,
+          "height": 101.03125
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "bodyWidth": 375,
+        "bodyPadding": "0px",
+        "gutter": 15
+      },
+      "open": {
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 375,
+          "height": 78
+        },
+        "heading": {
+          "x": 22,
+          "y": 106,
+          "width": 331,
+          "height": 101.03125
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "bodyWidth": 390,
+        "bodyPadding": "15px",
+        "gutter": 0
+      },
+      "closed": {
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 375,
+          "height": 78
+        },
+        "heading": {
+          "x": 22,
+          "y": 106,
+          "width": 331,
+          "height": 101.03125
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "bodyWidth": 375,
+        "bodyPadding": "0px",
+        "gutter": 15
+      },
+      "layoutShifts": []
+    },
+    {
+      "width": 768,
+      "menu": "Plataforma",
+      "fonts": [
+        {
+          "size": "13px",
+          "family": "\"Catalisa Inter\", Inter, Arial, sans-serif",
+          "weight": "400"
+        },
+        {
+          "size": "13px",
+          "family": "\"Catalisa Inter\", Inter, Arial, sans-serif",
+          "weight": "400"
+        },
+        {
+          "size": "13px",
+          "family": "\"Catalisa Inter\", Inter, Arial, sans-serif",
+          "weight": "400"
+        }
+      ],
+      "before": {
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 753,
+          "height": 85
+        },
+        "heading": {
+          "x": 42.921875,
+          "y": 135,
+          "width": 433.640625,
+          "height": 231.65625
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "bodyWidth": 753,
+        "bodyPadding": "0px",
+        "gutter": 15
+      },
+      "open": {
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 753,
+          "height": 85
+        },
+        "heading": {
+          "x": 42.921875,
+          "y": 135,
+          "width": 433.640625,
+          "height": 231.65625
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "bodyWidth": 768,
+        "bodyPadding": "15px",
+        "gutter": 0
+      },
+      "closed": {
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 753,
+          "height": 85
+        },
+        "heading": {
+          "x": 42.921875,
+          "y": 135,
+          "width": 433.640625,
+          "height": 231.65625
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "bodyWidth": 753,
+        "bodyPadding": "0px",
+        "gutter": 15
+      }
+    },
+    {
+      "width": 768,
+      "menu": "Direita",
+      "before": {
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 753,
+          "height": 85
+        },
+        "heading": {
+          "x": 42.921875,
+          "y": 135,
+          "width": 433.640625,
+          "height": 231.65625
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "bodyWidth": 753,
+        "bodyPadding": "0px",
+        "gutter": 15
+      },
+      "open": {
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 753,
+          "height": 85
+        },
+        "heading": {
+          "x": 42.921875,
+          "y": 135,
+          "width": 433.640625,
+          "height": 231.65625
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "bodyWidth": 768,
+        "bodyPadding": "15px",
+        "gutter": 0
+      },
+      "closed": {
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 753,
+          "height": 85
+        },
+        "heading": {
+          "x": 42.921875,
+          "y": 135,
+          "width": 433.640625,
+          "height": 231.65625
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "bodyWidth": 753,
+        "bodyPadding": "0px",
+        "gutter": 15
+      },
+      "layoutShifts": []
+    },
+    {
+      "width": 1440,
+      "menu": "Plataforma",
+      "fonts": [
+        {
+          "size": "13px",
+          "family": "\"Catalisa Inter\", Inter, Arial, sans-serif",
+          "weight": "400"
+        },
+        {
+          "size": "13px",
+          "family": "\"Catalisa Inter\", Inter, Arial, sans-serif",
+          "weight": "400"
+        },
+        {
+          "size": "13px",
+          "family": "\"Catalisa Inter\", Inter, Arial, sans-serif",
+          "weight": "400"
+        }
+      ],
+      "before": {
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1425,
+          "height": 100
+        },
+        "heading": {
+          "x": 81.21875,
+          "y": 165,
+          "width": 820.640625,
+          "height": 219.53125
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "bodyWidth": 1425,
+        "bodyPadding": "0px",
+        "gutter": 15
+      },
+      "open": {
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1425,
+          "height": 100
+        },
+        "heading": {
+          "x": 81.21875,
+          "y": 165,
+          "width": 820.640625,
+          "height": 219.53125
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "bodyWidth": 1440,
+        "bodyPadding": "15px",
+        "gutter": 0
+      },
+      "closed": {
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1425,
+          "height": 100
+        },
+        "heading": {
+          "x": 81.21875,
+          "y": 165,
+          "width": 820.640625,
+          "height": 219.53125
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "bodyWidth": 1425,
+        "bodyPadding": "0px",
+        "gutter": 15
+      }
+    },
+    {
+      "width": 1440,
+      "menu": "Direita",
+      "before": {
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1425,
+          "height": 100
+        },
+        "heading": {
+          "x": 81.21875,
+          "y": 165,
+          "width": 820.640625,
+          "height": 219.53125
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "bodyWidth": 1425,
+        "bodyPadding": "0px",
+        "gutter": 15
+      },
+      "open": {
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1425,
+          "height": 100
+        },
+        "heading": {
+          "x": 81.21875,
+          "y": 165,
+          "width": 820.640625,
+          "height": 219.53125
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "bodyWidth": 1440,
+        "bodyPadding": "15px",
+        "gutter": 0
+      },
+      "closed": {
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1425,
+          "height": 100
+        },
+        "heading": {
+          "x": 81.21875,
+          "y": 165,
+          "width": 820.640625,
+          "height": 219.53125
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "bodyWidth": 1425,
+        "bodyPadding": "0px",
+        "gutter": 15
+      },
+      "layoutShifts": []
+    }
+  ],
+  "errors": []
+}

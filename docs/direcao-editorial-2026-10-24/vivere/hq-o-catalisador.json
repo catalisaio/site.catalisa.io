@@ -1,0 +1,2651 @@
+{
+  "title": "O Catalisador · em quadrinhos",
+  "version": "hq-v1",
+  "created": "2026-10-26",
+  "personagens_que_falam": {
+    "nina": "raríssimo",
+    "henrique": "uma linha, nas conquistas",
+    "camila": "uma linha, nas conquistas",
+    "marina": "uma linha, nas conquistas",
+    "rafael": "uma linha, nas conquistas",
+    "lia": "uma linha, nas conquistas"
+  },
+  "regra_texto": "narracao, fala, pensamento e onomatopeia são rascunhos; o Codex reescreve. Ideia central: o mundo monolítico se quebrando no mundo componível. Sem nome de cliente e sem marca no texto.",
+  "nota": "Ordem de leitura. Cada plano tem abertura (= keyframe F do plano), meio(s) e o fecho é a abertura do plano seguinte. Gerar em 16:9 (o quadro da revista recorta). Arquivo: keyframes/v2/CAT-<id>.jpg. Quadros com `reuse` já têm imagem válida; os de prioridade 3 só se o dono pedir refação.",
+  "ordem_de_geracao": [
+    "P03a",
+    "P03b",
+    "P03c",
+    "P04b",
+    "P04c",
+    "P05a",
+    "P05b",
+    "P05c",
+    "P06b",
+    "P06c",
+    "P07b",
+    "P07c",
+    "P08b",
+    "P11b",
+    "P12b",
+    "P13b",
+    "P14b",
+    "P15b",
+    "P01b",
+    "P01c",
+    "P02b",
+    "P09b",
+    "P10b",
+    "P16b",
+    "P01a",
+    "P16a"
+  ],
+  "paginas": [
+    {
+      "n": 1,
+      "ato": "Desafio",
+      "titulo": "O mundo corre",
+      "dupla": false,
+      "linhas": [
+        {
+          "proporcao": 2.4,
+          "quadros": [
+            {
+              "id": "P01a",
+              "peso": 1
+            }
+          ]
+        },
+        {
+          "proporcao": 2.4,
+          "quadros": [
+            {
+              "id": "P01b",
+              "peso": 1
+            },
+            {
+              "id": "P01c",
+              "peso": 1
+            }
+          ]
+        },
+        {
+          "proporcao": 1.9,
+          "quadros": [
+            {
+              "id": "P02a",
+              "peso": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "ato": "Desafio",
+      "titulo": "O monólito",
+      "dupla": false,
+      "linhas": [
+        {
+          "proporcao": 2.6,
+          "quadros": [
+            {
+              "id": "P02b",
+              "peso": 1
+            }
+          ]
+        },
+        {
+          "proporcao": 1.78,
+          "quadros": [
+            {
+              "id": "P03a",
+              "peso": 1
+            }
+          ]
+        },
+        {
+          "proporcao": 2.4,
+          "quadros": [
+            {
+              "id": "P03b",
+              "peso": 1
+            },
+            {
+              "id": "P03c",
+              "peso": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "ato": "Superação",
+      "titulo": "O brilho",
+      "dupla": false,
+      "linhas": [
+        {
+          "proporcao": 1.5,
+          "quadros": [
+            {
+              "id": "P04a",
+              "peso": 1
+            }
+          ]
+        },
+        {
+          "proporcao": 1.5,
+          "quadros": [
+            {
+              "id": "P04b",
+              "peso": 2
+            },
+            {
+              "id": "P04c",
+              "peso": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "ato": "Superação",
+      "titulo": "A travessia",
+      "dupla": false,
+      "linhas": [
+        {
+          "proporcao": 1.78,
+          "quadros": [
+            {
+              "id": "P05a",
+              "peso": 1
+            }
+          ]
+        },
+        {
+          "proporcao": 1.4,
+          "quadros": [
+            {
+              "id": "P05b",
+              "peso": 3
+            },
+            {
+              "id": "P05c",
+              "peso": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "ato": "Superação",
+      "titulo": "O encaixe",
+      "dupla": false,
+      "linhas": [
+        {
+          "proporcao": 0.75,
+          "quadros": [
+            {
+              "id": "P06a",
+              "peso": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "ato": "Superação",
+      "titulo": "A onda",
+      "dupla": false,
+      "linhas": [
+        {
+          "proporcao": 2.4,
+          "quadros": [
+            {
+              "id": "P06b",
+              "peso": 1
+            },
+            {
+              "id": "P06c",
+              "peso": 1
+            }
+          ]
+        },
+        {
+          "proporcao": 2.0,
+          "quadros": [
+            {
+              "id": "P07a",
+              "peso": 1
+            }
+          ]
+        },
+        {
+          "proporcao": 2.4,
+          "quadros": [
+            {
+              "id": "P07b",
+              "peso": 1
+            },
+            {
+              "id": "P07c",
+              "peso": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "ato": "Superação",
+      "titulo": "Uma peça vira muitas",
+      "dupla": false,
+      "linhas": [
+        {
+          "proporcao": 0.75,
+          "quadros": [
+            {
+              "id": "P08a",
+              "peso": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "ato": "Vitória",
+      "titulo": "Peso vira peça",
+      "dupla": false,
+      "linhas": [
+        {
+          "proporcao": 1.5,
+          "quadros": [
+            {
+              "id": "P08b",
+              "peso": 1
+            },
+            {
+              "id": "P09a",
+              "peso": 2
+            }
+          ]
+        },
+        {
+          "proporcao": 1.6,
+          "quadros": [
+            {
+              "id": "P09b",
+              "peso": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 9,
+      "ato": "Vitória",
+      "titulo": "Os módulos",
+      "dupla": false,
+      "linhas": [
+        {
+          "proporcao": 1.6,
+          "quadros": [
+            {
+              "id": "P10a",
+              "peso": 1
+            }
+          ]
+        },
+        {
+          "proporcao": 1.6,
+          "quadros": [
+            {
+              "id": "P10b",
+              "peso": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "ato": "Vitória",
+      "titulo": "A cidade",
+      "dupla": true,
+      "linhas": [
+        {
+          "proporcao": 1.36,
+          "quadros": [
+            {
+              "id": "P11a",
+              "peso": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "ato": "Conquista",
+      "titulo": "Consórcio",
+      "dupla": false,
+      "linhas": [
+        {
+          "proporcao": 2.2,
+          "quadros": [
+            {
+              "id": "P11b",
+              "peso": 1
+            }
+          ]
+        },
+        {
+          "proporcao": 1.2,
+          "quadros": [
+            {
+              "id": "P12a",
+              "peso": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 13,
+      "ato": "Conquista",
+      "titulo": "Agro",
+      "dupla": false,
+      "linhas": [
+        {
+          "proporcao": 2.2,
+          "quadros": [
+            {
+              "id": "P12b",
+              "peso": 1
+            }
+          ]
+        },
+        {
+          "proporcao": 1.2,
+          "quadros": [
+            {
+              "id": "P13a",
+              "peso": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 14,
+      "ato": "Conquista",
+      "titulo": "Imobiliário",
+      "dupla": false,
+      "linhas": [
+        {
+          "proporcao": 2.2,
+          "quadros": [
+            {
+              "id": "P13b",
+              "peso": 1
+            }
+          ]
+        },
+        {
+          "proporcao": 1.2,
+          "quadros": [
+            {
+              "id": "P14a",
+              "peso": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 15,
+      "ato": "Conquista",
+      "titulo": "Auto",
+      "dupla": false,
+      "linhas": [
+        {
+          "proporcao": 2.2,
+          "quadros": [
+            {
+              "id": "P14b",
+              "peso": 1
+            }
+          ]
+        },
+        {
+          "proporcao": 1.2,
+          "quadros": [
+            {
+              "id": "P15a",
+              "peso": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 16,
+      "ato": "Paz",
+      "titulo": "O horizonte",
+      "dupla": false,
+      "linhas": [
+        {
+          "proporcao": 1.6,
+          "quadros": [
+            {
+              "id": "P15b",
+              "peso": 1
+            }
+          ]
+        },
+        {
+          "proporcao": 1.6,
+          "quadros": [
+            {
+              "id": "P16a",
+              "peso": 3
+            },
+            {
+              "id": "P16b",
+              "peso": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 17,
+      "ato": "Paz",
+      "titulo": "Um ponto de luz",
+      "dupla": false,
+      "linhas": [
+        {
+          "proporcao": 0.9,
+          "quadros": [
+            {
+              "id": "P16c",
+              "peso": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "paineis": [
+    {
+      "id": "P01a",
+      "status": "provisoria",
+      "imagem": "keyframes/s01.png",
+      "plano": "p01",
+      "papel": "abertura",
+      "frame": "F01",
+      "tempo": 0.0,
+      "pagina": 1,
+      "linha": 1,
+      "peso": 1,
+      "tamanho": "largo",
+      "proporcao_no_quadro": 2.4,
+      "prioridade": 3,
+      "contexto": "Vista do teto: o salão de travertino em grade, gente apressada cruzando, Nina parada no centro. Apresenta o mundo monolítico em movimento e a heroína como o único ponto calmo.",
+      "narracao": "O mundo se move por sonhos.",
+      "fala": null,
+      "pensamento": null,
+      "onomatopeia": [
+        "TAC TAC TAC"
+      ],
+      "layout": [
+        {
+          "t": "cap",
+          "x": 70,
+          "y": 4,
+          "w": 27
+        },
+        {
+          "t": "sfx",
+          "x": 36,
+          "y": 80,
+          "r": -4,
+          "s": 0.8,
+          "i": 0
+        }
+      ],
+      "personagens": [
+        "nina",
+        "henrique",
+        "marina"
+      ],
+      "referencias": [
+        "refs/elenco/nina.png",
+        "refs/elenco/henrique.png",
+        "refs/elenco/marina.png"
+      ],
+      "refazer": true,
+      "prompt": "Top-down overhead shot from the ceiling of a monumental cream travertine hall, tall smooth pillars, high ceiling, floor of travertine slabs laid in a precise grid with thin dark joints, a thin line of orange light crossing the grid. In the exact center, standing perfectly still, a small figure: Nina (athletic Brazilian woman about 30 years old, warm brown skin, long dark hair in a sleek low ponytail, determined expression, wearing an ivory sleeveless tailored top, high-waisted magenta shorts, white minimalist sneakers and a thin gold cuff bracelet). Hurrying diagonally across the floor, seen from above and slightly motion-blurred, carrying blank paper folders: Henrique (Distinguished Brazilian man in his late fifties of Italian descent, light olive skin, neatly trimmed full salt-and-pepper beard, thick silver hair swept back, rectangular tortoiseshell glasses, slim build, tailored navy double-breasted suit, white open-collar shirt, steel watch) and Marina (Brazilian woman about 35 years old, shoulder-length dark wavy hair, light brown skin, wearing a pale blue linen blazer over a white t-shirt and cream trousers, delicate silver necklace). A few blank white sheets slide across the floor. Only these three people in the hall. cinematic 35mm film still, editorial luxury campaign, low golden late-afternoon light, warm cream travertine and paper tones, deep purple and orange accents, fine film grain, shallow depth of field, photorealistic, natural skin texture, 16:9. Negative: no text, no letters, no numbers, no logos, no brand names, no emblems, no signage, no screens, no phones, no tablets, no monitors, no watermark, no crowd, no extra people, no faceless background figures, no deformed hands, no extra fingers, no merged animals, no melted objects, no pickaxe, no axe, no mallet head with a blade.",
+      "arquivo": "keyframes/v2/CAT-P01a.jpg",
+      "alt_files": [],
+      "reuse": "keyframes/s01.png",
+      "reuse_nota": "Provisória da v1 (tem multidão sem rosto). Refazer só com os três.",
+      "foco": "50% 50%",
+      "esboco": [
+        "salao-alto",
+        "figura:50:62:0.8",
+        "figura:28:40:0.7",
+        "figura:72:74:0.7"
+      ]
+    },
+    {
+      "id": "P01b",
+      "status": "a_gerar",
+      "imagem": null,
+      "plano": "p01",
+      "papel": "meio",
+      "frame": null,
+      "tempo": 1.3,
+      "pagina": 1,
+      "linha": 2,
+      "peso": 1,
+      "tamanho": "médio",
+      "proporcao_no_quadro": 1.2,
+      "prioridade": 2,
+      "contexto": "A câmera desce; Henrique e Marina passam com pastas em branco. Mostra a pressa elegante e sem direção do mundo antigo.",
+      "narracao": "Tantos destinos nas mãos.",
+      "fala": null,
+      "pensamento": null,
+      "onomatopeia": [
+        "FSSS"
+      ],
+      "layout": [
+        {
+          "t": "cap",
+          "x": 3,
+          "y": 5,
+          "w": 40
+        },
+        {
+          "t": "sfx",
+          "x": 70,
+          "y": 78,
+          "r": 8,
+          "s": 0.8,
+          "i": 0
+        }
+      ],
+      "personagens": [
+        "nina",
+        "henrique",
+        "marina"
+      ],
+      "referencias": [
+        "refs/elenco/nina.png",
+        "refs/elenco/henrique.png",
+        "refs/elenco/marina.png"
+      ],
+      "refazer": false,
+      "prompt": "High-angle shot at 45 degrees, camera halfway down from the ceiling of a monumental cream travertine hall, tall smooth pillars, high ceiling, floor of travertine slabs laid in a precise grid with thin dark joints, a thin line of orange light crossing the grid. Henrique (Distinguished Brazilian man in his late fifties of Italian descent, light olive skin, neatly trimmed full salt-and-pepper beard, thick silver hair swept back, rectangular tortoiseshell glasses, slim build, tailored navy double-breasted suit, white open-collar shirt, steel watch) and Marina (Brazilian woman about 35 years old, shoulder-length dark wavy hair, light brown skin, wearing a pale blue linen blazer over a white t-shirt and cream trousers, delicate silver necklace) hurry past diagonally in the foreground, slightly motion-blurred, carrying blank paper folders. In sharp focus at the center, standing perfectly still, Nina (athletic Brazilian woman about 30 years old, warm brown skin, long dark hair in a sleek low ponytail, determined expression, wearing an ivory sleeveless tailored top, high-waisted magenta shorts, white minimalist sneakers and a thin gold cuff bracelet). A few blank white sheets slide across the floor. Only these three people. Composition: keep the upper-left quarter of the frame calm and uncluttered (plain wall, floor or sky), main subject center-right. cinematic 35mm film still, editorial luxury campaign, low golden late-afternoon light, warm cream travertine and paper tones, deep purple and orange accents, fine film grain, shallow depth of field, photorealistic, natural skin texture, 16:9. Negative: no text, no letters, no numbers, no logos, no brand names, no emblems, no signage, no screens, no phones, no tablets, no monitors, no watermark, no crowd, no extra people, no faceless background figures, no deformed hands, no extra fingers, no merged animals, no melted objects, no pickaxe, no axe, no mallet head with a blade.",
+      "arquivo": "keyframes/v2/CAT-P01b.jpg",
+      "alt_files": [],
+      "reuse": null,
+      "reuse_nota": null,
+      "foco": "50% 50%",
+      "esboco": [
+        "salao",
+        "figura:56:80:1",
+        "figura:80:86:1.2",
+        "figura:30:84:1.1",
+        "folha:44:88"
+      ]
+    },
+    {
+      "id": "P01c",
+      "status": "a_gerar",
+      "imagem": null,
+      "plano": "p01",
+      "papel": "meio",
+      "frame": null,
+      "tempo": 2.7,
+      "pagina": 1,
+      "linha": 2,
+      "peso": 1,
+      "tamanho": "médio",
+      "proporcao_no_quadro": 1.2,
+      "prioridade": 2,
+      "contexto": "Detalhe dos tênis de Nina parados na linha laranja enquanto folhas e pernas passam. Firma a imobilidade dela; a linha laranja é o fio da história.",
+      "narracao": "Nina escolhe a pausa.",
+      "fala": null,
+      "pensamento": null,
+      "onomatopeia": [
+        "…"
+      ],
+      "layout": [
+        {
+          "t": "cap",
+          "x": 60,
+          "y": 6,
+          "w": 36
+        },
+        {
+          "t": "sfx",
+          "x": 8,
+          "y": 70,
+          "r": -10,
+          "s": 0.8,
+          "i": 0
+        }
+      ],
+      "personagens": [
+        "nina",
+        "henrique",
+        "marina"
+      ],
+      "referencias": [
+        "refs/elenco/nina.png",
+        "refs/elenco/henrique.png",
+        "refs/elenco/marina.png"
+      ],
+      "refazer": false,
+      "prompt": "Ground-level close-up on the travertine grid floor: Nina's white minimalist sneakers planted perfectly still beside the thin line of orange light; blank white sheets slide past; in the blurred background the hurrying legs of Henrique (navy suit trousers) and Marina (cream trousers) cross the frame. Floor of travertine slabs with thin dark joints. Composition: keep the upper-right quarter of the frame calm and uncluttered (plain wall, floor or sky), main subject center-left. cinematic 35mm film still, editorial luxury campaign, low golden late-afternoon light, warm cream travertine and paper tones, deep purple and orange accents, fine film grain, shallow depth of field, photorealistic, natural skin texture, 16:9. Negative: no text, no letters, no numbers, no logos, no brand names, no emblems, no signage, no screens, no phones, no tablets, no monitors, no watermark, no crowd, no extra people, no faceless background figures, no deformed hands, no extra fingers, no merged animals, no melted objects, no pickaxe, no axe, no mallet head with a blade.",
+      "arquivo": "keyframes/v2/CAT-P01c.jpg",
+      "alt_files": [],
+      "reuse": null,
+      "reuse_nota": null,
+      "foco": "50% 50%",
+      "esboco": [
+        "chao",
+        "pes:50:78",
+        "folha:22:84",
+        "folha:76:88"
+      ]
+    },
+    {
+      "id": "P02a",
+      "status": "reaproveitada",
+      "imagem": "keyframes/v2/F02.jpg",
+      "plano": "p02",
+      "papel": "abertura",
+      "frame": "F02",
+      "tempo": 4.0,
+      "pagina": 1,
+      "linha": 3,
+      "peso": 1,
+      "tamanho": "largo",
+      "proporcao_no_quadro": 1.9,
+      "prioridade": 2,
+      "contexto": "Nina levanta o rosto para a câmera. O primeiro olhar: ela percebe algo.",
+      "narracao": "E encontra outra perspectiva.",
+      "fala": null,
+      "pensamento": null,
+      "onomatopeia": [
+        "TUM"
+      ],
+      "layout": [
+        {
+          "t": "cap",
+          "x": 3,
+          "y": 6,
+          "w": 28
+        },
+        {
+          "t": "sfx",
+          "x": 76,
+          "y": 74,
+          "r": 6,
+          "s": 1.0,
+          "i": 0
+        }
+      ],
+      "personagens": [
+        "nina"
+      ],
+      "referencias": [
+        "refs/elenco/nina.png"
+      ],
+      "refazer": false,
+      "prompt": "Low overhead shot, camera two meters above Nina (athletic Brazilian woman about 30 years old, warm brown skin, long dark hair in a sleek low ponytail, determined expression, wearing an ivory sleeveless tailored top, high-waisted magenta shorts, white minimalist sneakers and a thin gold cuff bracelet), standing still at the center of the travertine grid floor, face lifted toward the lens with calm determination; blank white sheets of paper scattered on the floor around her; the thin orange line of light passes at her feet. Nobody else in frame. cinematic 35mm film still, editorial luxury campaign, low golden late-afternoon light, warm cream travertine and paper tones, deep purple and orange accents, fine film grain, shallow depth of field, photorealistic, natural skin texture, 16:9. Negative: no text, no letters, no numbers, no logos, no brand names, no emblems, no signage, no screens, no phones, no tablets, no monitors, no watermark, no crowd, no extra people, no faceless background figures, no deformed hands, no extra fingers, no merged animals, no melted objects, no pickaxe, no axe, no mallet head with a blade.",
+      "arquivo": "keyframes/v2/CAT-P02a.jpg",
+      "alt_files": [],
+      "reuse": "keyframes/v2/F02.jpg",
+      "reuse_nota": null,
+      "foco": "50% 50%",
+      "esboco": [
+        "chao",
+        "figura:50:80:1.6",
+        "folha:30:80",
+        "folha:70:84"
+      ]
+    },
+    {
+      "id": "P02b",
+      "status": "a_gerar",
+      "imagem": null,
+      "plano": "p02",
+      "papel": "meio",
+      "frame": null,
+      "tempo": 6.0,
+      "pagina": 2,
+      "linha": 1,
+      "peso": 1,
+      "tamanho": "largo",
+      "proporcao_no_quadro": 2.6,
+      "prioridade": 2,
+      "contexto": "A câmera contorna Nina e revela a parede monumental. Apresenta o monólito: o legado de uma peça só que bloqueia a luz.",
+      "narracao": "Um mundo de uma peça só.",
+      "fala": null,
+      "pensamento": null,
+      "onomatopeia": [
+        "VUMMM"
+      ],
+      "layout": [
+        {
+          "t": "cap",
+          "x": 62,
+          "y": 6,
+          "w": 34
+        },
+        {
+          "t": "sfx",
+          "x": 6,
+          "y": 72,
+          "r": -4,
+          "s": 0.8,
+          "i": 0
+        }
+      ],
+      "personagens": [
+        "nina"
+      ],
+      "referencias": [
+        "refs/elenco/nina.png",
+        "refs/parede-canonica.jpg",
+        "refs/parede-canonica-detalhe.jpg"
+      ],
+      "refazer": false,
+      "prompt": "Camera arcing behind Nina (athletic Brazilian woman about 30 years old, warm brown skin, long dark hair in a sleek low ponytail, determined expression, wearing an ivory sleeveless tailored top, high-waisted magenta shorts, white minimalist sneakers and a thin gold cuff bracelet) at shoulder height, three-quarter back view on the left of the frame; ahead of her, a monumental wall filling the hall from floor to ceiling, built from alternating horizontal layers of rough grey stone slabs and thick stacks of compressed white paper reams, like geological sediment, heavy and ancient, no inscriptions, no color except grey stone and off-white paper, appears and fills the right of the frame; blank sheets settle on the monumental cream travertine hall, tall smooth pillars, high ceiling, floor of travertine slabs laid in a precise grid with thin dark joints. Nobody else. Composition: keep the upper-right quarter of the frame calm and uncluttered (plain wall, floor or sky), main subject center-left. cinematic 35mm film still, editorial luxury campaign, low golden late-afternoon light, warm cream travertine and paper tones, deep purple and orange accents, fine film grain, shallow depth of field, photorealistic, natural skin texture, 16:9. Negative: no text, no letters, no numbers, no logos, no brand names, no emblems, no signage, no screens, no phones, no tablets, no monitors, no watermark, no crowd, no extra people, no faceless background figures, no deformed hands, no extra fingers, no merged animals, no melted objects, no pickaxe, no axe, no mallet head with a blade.",
+      "arquivo": "keyframes/v2/CAT-P02b.jpg",
+      "alt_files": [],
+      "reuse": null,
+      "reuse_nota": null,
+      "foco": "50% 50%",
+      "esboco": [
+        "parede",
+        "salao",
+        "figura:24:86:1.5"
+      ]
+    },
+    {
+      "id": "P03a",
+      "status": "provisoria",
+      "imagem": "keyframes/s05.png",
+      "plano": "p03",
+      "papel": "abertura",
+      "frame": "F03",
+      "tempo": 8.0,
+      "pagina": 2,
+      "linha": 2,
+      "peso": 1,
+      "tamanho": "largo",
+      "proporcao_no_quadro": 1.78,
+      "prioridade": 1,
+      "contexto": "Nina de costas diante da parede. O tamanho do problema; o único momento em que ouvimos o pensamento dela.",
+      "narracao": "Pedra e papel. Tempo reunido.",
+      "fala": null,
+      "pensamento": "E se cada parte abrisse um caminho?",
+      "onomatopeia": [],
+      "layout": [
+        {
+          "t": "cap",
+          "x": 3,
+          "y": 5,
+          "w": 34
+        },
+        {
+          "t": "think",
+          "x": 64,
+          "y": 8,
+          "w": 30,
+          "tx": 53,
+          "ty": 38
+        }
+      ],
+      "personagens": [
+        "nina"
+      ],
+      "referencias": [
+        "refs/elenco/nina.png",
+        "refs/parede-canonica.jpg",
+        "refs/parede-canonica-detalhe.jpg"
+      ],
+      "refazer": true,
+      "prompt": "Medium-wide shot from behind Nina (athletic Brazilian woman about 30 years old, warm brown skin, long dark hair in a sleek low ponytail, determined expression, wearing an ivory sleeveless tailored top, high-waisted magenta shorts, white minimalist sneakers and a thin gold cuff bracelet), standing still, centered, facing a monumental wall filling the hall from floor to ceiling, built from alternating horizontal layers of rough grey stone slabs and thick stacks of compressed white paper reams, like geological sediment, heavy and ancient, no inscriptions, no color except grey stone and off-white paper, filling the background; two thin orange lines of light on the cream floor converge toward the wall; travertine pillars frame left and right. Nobody else in frame. cinematic 35mm film still, editorial luxury campaign, low golden late-afternoon light, warm cream travertine and paper tones, deep purple and orange accents, fine film grain, shallow depth of field, photorealistic, natural skin texture, 16:9. Negative: no text, no letters, no numbers, no logos, no brand names, no emblems, no signage, no screens, no phones, no tablets, no monitors, no watermark, no crowd, no extra people, no faceless background figures, no deformed hands, no extra fingers, no merged animals, no melted objects, no pickaxe, no axe, no mallet head with a blade.",
+      "arquivo": "keyframes/v2/CAT-P03a.jpg",
+      "alt_files": [],
+      "reuse": "keyframes/s05.png",
+      "reuse_nota": "Provisória da v1: a parede não é a canônica. Refazer com refs/parede-canonica.jpg.",
+      "foco": "50% 50%",
+      "esboco": [
+        "parede",
+        "salao",
+        "figura:50:88:1.6"
+      ]
+    },
+    {
+      "id": "P03b",
+      "status": "a_gerar",
+      "imagem": null,
+      "plano": "p03",
+      "papel": "meio",
+      "frame": null,
+      "tempo": 9.0,
+      "pagina": 2,
+      "linha": 3,
+      "peso": 1,
+      "tamanho": "médio",
+      "proporcao_no_quadro": 1.2,
+      "prioridade": 1,
+      "contexto": "Uma folha se solta da parede e cai. Primeiro sinal de que o monólito não é eterno.",
+      "narracao": "Um sopro anuncia o movimento.",
+      "fala": null,
+      "pensamento": null,
+      "onomatopeia": [
+        "FFF…"
+      ],
+      "layout": [
+        {
+          "t": "cap",
+          "x": 3,
+          "y": 5,
+          "w": 40
+        },
+        {
+          "t": "sfx",
+          "x": 46,
+          "y": 30,
+          "r": 12,
+          "s": 0.7,
+          "i": 0
+        }
+      ],
+      "personagens": [
+        "nina"
+      ],
+      "referencias": [
+        "refs/elenco/nina.png",
+        "refs/parede-canonica.jpg",
+        "refs/parede-canonica-detalhe.jpg"
+      ],
+      "refazer": false,
+      "prompt": "Over-the-shoulder shot behind Nina (athletic Brazilian woman about 30 years old, warm brown skin, long dark hair in a sleek low ponytail, determined expression, wearing an ivory sleeveless tailored top, high-waisted magenta shorts, white minimalist sneakers and a thin gold cuff bracelet), her shoulder and ponytail soft in the lower right foreground; a single blank sheet of paper detaches from a monumental wall filling the hall from floor to ceiling, built from alternating horizontal layers of rough grey stone slabs and thick stacks of compressed white paper reams, like geological sediment, heavy and ancient, no inscriptions, no color except grey stone and off-white paper and falls slowly through the golden light toward her. Composition: keep the upper-left quarter of the frame calm and uncluttered (plain wall, floor or sky), main subject center-right. cinematic 35mm film still, editorial luxury campaign, low golden late-afternoon light, warm cream travertine and paper tones, deep purple and orange accents, fine film grain, shallow depth of field, photorealistic, natural skin texture, 16:9. Negative: no text, no letters, no numbers, no logos, no brand names, no emblems, no signage, no screens, no phones, no tablets, no monitors, no watermark, no crowd, no extra people, no faceless background figures, no deformed hands, no extra fingers, no merged animals, no melted objects, no pickaxe, no axe, no mallet head with a blade.",
+      "arquivo": "keyframes/v2/CAT-P03b.jpg",
+      "alt_files": [],
+      "reuse": null,
+      "reuse_nota": null,
+      "foco": "50% 50%",
+      "esboco": [
+        "parede-perto",
+        "folha:50:45",
+        "ombro:80:92"
+      ]
+    },
+    {
+      "id": "P03c",
+      "status": "a_gerar",
+      "imagem": null,
+      "plano": "p03",
+      "papel": "meio",
+      "frame": null,
+      "tempo": 10.0,
+      "pagina": 2,
+      "linha": 3,
+      "peso": 1,
+      "tamanho": "médio",
+      "proporcao_no_quadro": 1.2,
+      "prioridade": 1,
+      "contexto": "Nina vira o rosto e vê um brilho laranja: o cubo sobre a bancada junto à coluna. Apresenta o catalisador.",
+      "narracao": "A luz chama.",
+      "fala": null,
+      "pensamento": null,
+      "onomatopeia": [
+        "VUM"
+      ],
+      "layout": [
+        {
+          "t": "cap",
+          "x": 56,
+          "y": 5,
+          "w": 40
+        },
+        {
+          "t": "sfx",
+          "x": 66,
+          "y": 74,
+          "r": -8,
+          "s": 0.8,
+          "i": 0
+        }
+      ],
+      "personagens": [
+        "nina"
+      ],
+      "referencias": [
+        "refs/elenco/nina.png"
+      ],
+      "refazer": false,
+      "prompt": "Medium close-up, Nina (athletic Brazilian woman about 30 years old, warm brown skin, long dark hair in a sleek low ponytail, determined expression, wearing an ivory sleeveless tailored top, high-waisted magenta shorts, white minimalist sneakers and a thin gold cuff bracelet) on the left of the frame turns her head to the right in profile, her face touched by a soft warm orange glow from frame right; on the right, in soft focus, a small perfect cube of glowing orange glass-like material, the size of a hand, softly lit from within, clean edges, no markings rests on a smooth travertine ledge beside a column, glowing. The layered grey wall blurred behind. Composition: keep the upper-right quarter of the frame calm and uncluttered (plain wall, floor or sky), main subject center-left. cinematic 35mm film still, editorial luxury campaign, low golden late-afternoon light, warm cream travertine and paper tones, deep purple and orange accents, fine film grain, shallow depth of field, photorealistic, natural skin texture, 16:9. Negative: no text, no letters, no numbers, no logos, no brand names, no emblems, no signage, no screens, no phones, no tablets, no monitors, no watermark, no crowd, no extra people, no faceless background figures, no deformed hands, no extra fingers, no merged animals, no melted objects, no pickaxe, no axe, no mallet head with a blade.",
+      "arquivo": "keyframes/v2/CAT-P03c.jpg",
+      "alt_files": [],
+      "reuse": null,
+      "reuse_nota": null,
+      "foco": "50% 50%",
+      "esboco": [
+        "perfil:30:60",
+        "coluna:78",
+        "cubo:74:62:0.9"
+      ]
+    },
+    {
+      "id": "P04a",
+      "status": "pronta",
+      "imagem": "keyframes/v2/CAT-F04.jpg",
+      "plano": "p04",
+      "papel": "abertura",
+      "frame": "F04",
+      "tempo": 11.0,
+      "pagina": 3,
+      "linha": 1,
+      "peso": 1,
+      "tamanho": "largo",
+      "proporcao_no_quadro": 1.5,
+      "prioridade": 1,
+      "contexto": "A mão de Nina pega o cubo laranja (CAT-F04). O gesto da decisão.",
+      "narracao": "A possibilidade cabe na mão.",
+      "fala": null,
+      "pensamento": null,
+      "onomatopeia": [
+        "TIC"
+      ],
+      "layout": [
+        {
+          "t": "cap",
+          "x": 3,
+          "y": 5,
+          "w": 34
+        },
+        {
+          "t": "sfx",
+          "x": 74,
+          "y": 68,
+          "r": -10,
+          "s": 0.9,
+          "i": 0
+        }
+      ],
+      "personagens": [
+        "nina"
+      ],
+      "referencias": [
+        "refs/elenco/nina.png"
+      ],
+      "refazer": false,
+      "prompt": "Close-up of the right hand of Nina (warm brown skin, thin gold cuff bracelet) picking up a small perfect cube of glowing orange glass-like material, the size of a hand, softly lit from within, clean edges, no markings from a smooth travertine ledge beside a column; its warm glow lights her fingers; the canonical layered wall of grey stone and white paper softly out of focus behind. cinematic 35mm film still, editorial luxury campaign, low golden late-afternoon light, warm cream travertine and paper tones, deep purple and orange accents, fine film grain, shallow depth of field, photorealistic, natural skin texture, 16:9. Negative: no text, no letters, no numbers, no logos, no brand names, no emblems, no signage, no screens, no phones, no tablets, no monitors, no watermark, no crowd, no extra people, no faceless background figures, no deformed hands, no extra fingers, no merged animals, no melted objects, no pickaxe, no axe, no mallet head with a blade.",
+      "arquivo": "keyframes/v2/CAT-P04a.jpg",
+      "alt_files": [
+        "keyframes/v2/CAT-F04.jpg"
+      ],
+      "reuse": null,
+      "reuse_nota": null,
+      "foco": "50% 50%",
+      "esboco": [
+        "coluna:84",
+        "bancada",
+        "cubo:62:56:1.6",
+        "mao:42:60:1.4"
+      ]
+    },
+    {
+      "id": "P04b",
+      "status": "a_gerar",
+      "imagem": null,
+      "plano": "p04",
+      "papel": "meio",
+      "frame": null,
+      "tempo": 12.0,
+      "pagina": 3,
+      "linha": 2,
+      "peso": 2,
+      "tamanho": "pequeno",
+      "proporcao_no_quadro": 0.6,
+      "prioridade": 1,
+      "contexto": "O cubo na palma, a luz atravessando os dedos. A ideia central: uma peça pequena carrega a mudança.",
+      "narracao": "Pequena peça. Imensa força.",
+      "fala": null,
+      "pensamento": null,
+      "onomatopeia": [
+        "VUMMM"
+      ],
+      "layout": [
+        {
+          "t": "cap",
+          "x": 6,
+          "y": 5,
+          "w": 76
+        },
+        {
+          "t": "sfx",
+          "x": 10,
+          "y": 76,
+          "r": -8,
+          "s": 1.0,
+          "i": 0
+        }
+      ],
+      "personagens": [
+        "nina"
+      ],
+      "referencias": [
+        "refs/elenco/nina.png"
+      ],
+      "refazer": false,
+      "prompt": "Extreme macro close-up: a small perfect cube of glowing orange glass-like material, the size of a hand, softly lit from within, clean edges, no markings, cradled in Nina's open palm (warm brown skin, thin gold cuff bracelet on the wrist); its warm glow shines through her fingers; the background is dark soft travertine bokeh. Subject centered so a tall vertical crop of the frame also works. cinematic 35mm film still, editorial luxury campaign, low golden late-afternoon light, warm cream travertine and paper tones, deep purple and orange accents, fine film grain, shallow depth of field, photorealistic, natural skin texture, 16:9. Negative: no text, no letters, no numbers, no logos, no brand names, no emblems, no signage, no screens, no phones, no tablets, no monitors, no watermark, no crowd, no extra people, no faceless background figures, no deformed hands, no extra fingers, no merged animals, no melted objects, no pickaxe, no axe, no mallet head with a blade.",
+      "arquivo": "keyframes/v2/CAT-P04b.jpg",
+      "alt_files": [],
+      "reuse": null,
+      "reuse_nota": null,
+      "foco": "50% 50%",
+      "esboco": [
+        "escuro",
+        "mao:50:62:2",
+        "cubo:50:52:1.8"
+      ]
+    },
+    {
+      "id": "P04c",
+      "status": "a_gerar",
+      "imagem": null,
+      "plano": "p04",
+      "papel": "meio",
+      "frame": null,
+      "tempo": 13.0,
+      "pagina": 3,
+      "linha": 2,
+      "peso": 3,
+      "tamanho": "médio",
+      "proporcao_no_quadro": 0.9,
+      "prioridade": 1,
+      "contexto": "O rosto de Nina iluminado de baixo pelo cubo. A decisão tomada.",
+      "narracao": "Nina escolhe agir.",
+      "fala": null,
+      "pensamento": null,
+      "onomatopeia": [],
+      "layout": [
+        {
+          "t": "cap",
+          "x": 5,
+          "y": 80,
+          "w": 40
+        }
+      ],
+      "personagens": [
+        "nina"
+      ],
+      "referencias": [
+        "refs/elenco/nina.png"
+      ],
+      "refazer": false,
+      "prompt": "Close-up portrait at 85mm, Nina (athletic Brazilian woman about 30 years old, warm brown skin, long dark hair in a sleek low ponytail, determined expression, wearing an ivory sleeveless tailored top, high-waisted magenta shorts, white minimalist sneakers and a thin gold cuff bracelet), face on the right half of the frame, lit softly from below by the orange glow of the cube she holds just out of frame; calm, decided expression; the layered grey wall soft behind her. Composition: keep the lower-left quarter of the frame calm and uncluttered, main subject in the upper-right half. Subject centered so a tall vertical crop of the frame also works. cinematic 35mm film still, editorial luxury campaign, low golden late-afternoon light, warm cream travertine and paper tones, deep purple and orange accents, fine film grain, shallow depth of field, photorealistic, natural skin texture, 16:9. Negative: no text, no letters, no numbers, no logos, no brand names, no emblems, no signage, no screens, no phones, no tablets, no monitors, no watermark, no crowd, no extra people, no faceless background figures, no deformed hands, no extra fingers, no merged animals, no melted objects, no pickaxe, no axe, no mallet head with a blade.",
+      "arquivo": "keyframes/v2/CAT-P04c.jpg",
+      "alt_files": [],
+      "reuse": null,
+      "reuse_nota": null,
+      "foco": "50% 50%",
+      "esboco": [
+        "rosto:60:44"
+      ]
+    },
+    {
+      "id": "P05a",
+      "status": "a_gerar",
+      "imagem": null,
+      "plano": "p05",
+      "papel": "abertura",
+      "frame": "F05",
+      "tempo": 14.0,
+      "pagina": 4,
+      "linha": 1,
+      "peso": 1,
+      "tamanho": "largo",
+      "proporcao_no_quadro": 1.78,
+      "prioridade": 1,
+      "contexto": "Nina caminha até a parede com o cubo; ao fundo, Henrique e Camila param. A travessia.",
+      "narracao": "A calma ganha direção.",
+      "fala": null,
+      "pensamento": null,
+      "onomatopeia": [
+        "TAC… TAC… TAC…"
+      ],
+      "layout": [
+        {
+          "t": "cap",
+          "x": 3,
+          "y": 5,
+          "w": 32
+        },
+        {
+          "t": "sfx",
+          "x": 70,
+          "y": 82,
+          "r": -3,
+          "s": 0.8,
+          "i": 0
+        }
+      ],
+      "personagens": [
+        "nina",
+        "henrique",
+        "camila"
+      ],
+      "referencias": [
+        "refs/elenco/nina.png",
+        "refs/elenco/henrique.png",
+        "refs/elenco/camila.png"
+      ],
+      "refazer": false,
+      "prompt": "Medium shot, Nina (athletic Brazilian woman about 30 years old, warm brown skin, long dark hair in a sleek low ponytail, determined expression, wearing an ivory sleeveless tailored top, high-waisted magenta shorts, white minimalist sneakers and a thin gold cuff bracelet) walking calmly and steadily toward the wall, holding a small perfect cube of glowing orange glass-like material, the size of a hand, softly lit from within, clean edges, no markings in her right hand at her side, determined. In the soft background of the monumental cream travertine hall, tall smooth pillars, high ceiling, floor of travertine slabs laid in a precise grid with thin dark joints, standing still and turning their heads toward her: Henrique (Distinguished Brazilian man in his late fifties of Italian descent, light olive skin, neatly trimmed full salt-and-pepper beard, thick silver hair swept back, rectangular tortoiseshell glasses, slim build, tailored navy double-breasted suit, white open-collar shirt, steel watch) and Camila (Brazilian Black woman about 45 years old, short natural curly hair, thin gold-rimmed glasses, warm confident gaze, wearing a tailored magenta blazer over an ivory silk blouse and wide-leg cream trousers, small gold earrings). No one else. cinematic 35mm film still, editorial luxury campaign, low golden late-afternoon light, warm cream travertine and paper tones, deep purple and orange accents, fine film grain, shallow depth of field, photorealistic, natural skin texture, 16:9. Negative: no text, no letters, no numbers, no logos, no brand names, no emblems, no signage, no screens, no phones, no tablets, no monitors, no watermark, no crowd, no extra people, no faceless background figures, no deformed hands, no extra fingers, no merged animals, no melted objects, no pickaxe, no axe, no mallet head with a blade.",
+      "arquivo": "keyframes/v2/CAT-P05a.jpg",
+      "alt_files": [
+        "keyframes/v2/CAT-F05.jpg"
+      ],
+      "reuse": null,
+      "reuse_nota": null,
+      "foco": "50% 50%",
+      "esboco": [
+        "salao",
+        "figura:52:86:1.7",
+        "cubo:58:66:0.6",
+        "figura:20:60:0.8",
+        "figura:84:60:0.8"
+      ]
+    },
+    {
+      "id": "P05b",
+      "status": "a_gerar",
+      "imagem": null,
+      "plano": "p05",
+      "papel": "meio",
+      "frame": null,
+      "tempo": 15.3,
+      "pagina": 4,
+      "linha": 2,
+      "peso": 3,
+      "tamanho": "médio",
+      "proporcao_no_quadro": 0.84,
+      "prioridade": 1,
+      "contexto": "Henrique e Camila parados, olhando Nina. O mundo antigo para pela primeira vez.",
+      "narracao": "E inspira outros olhares.",
+      "fala": null,
+      "pensamento": null,
+      "onomatopeia": [],
+      "layout": [
+        {
+          "t": "cap",
+          "x": 56,
+          "y": 5,
+          "w": 40
+        }
+      ],
+      "personagens": [
+        "henrique",
+        "camila"
+      ],
+      "referencias": [
+        "refs/elenco/henrique.png",
+        "refs/elenco/camila.png"
+      ],
+      "refazer": false,
+      "prompt": "Medium shot in the monumental cream travertine hall, tall smooth pillars, high ceiling, floor of travertine slabs laid in a precise grid with thin dark joints: Henrique (Distinguished Brazilian man in his late fifties of Italian descent, light olive skin, neatly trimmed full salt-and-pepper beard, thick silver hair swept back, rectangular tortoiseshell glasses, slim build, tailored navy double-breasted suit, white open-collar shirt, steel watch) and Camila (Brazilian Black woman about 45 years old, short natural curly hair, thin gold-rimmed glasses, warm confident gaze, wearing a tailored magenta blazer over an ivory silk blouse and wide-leg cream trousers, small gold earrings) have stopped walking and stand still side by side, turned toward frame left, watching someone off-screen with quiet attention, blank folders lowered; the thin line of orange light on the floor. Only these two people. Composition: keep the upper-right quarter of the frame calm and uncluttered (plain wall, floor or sky), main subject center-left. cinematic 35mm film still, editorial luxury campaign, low golden late-afternoon light, warm cream travertine and paper tones, deep purple and orange accents, fine film grain, shallow depth of field, photorealistic, natural skin texture, 16:9. Negative: no text, no letters, no numbers, no logos, no brand names, no emblems, no signage, no screens, no phones, no tablets, no monitors, no watermark, no crowd, no extra people, no faceless background figures, no deformed hands, no extra fingers, no merged animals, no melted objects, no pickaxe, no axe, no mallet head with a blade.",
+      "arquivo": "keyframes/v2/CAT-P05b.jpg",
+      "alt_files": [],
+      "reuse": null,
+      "reuse_nota": null,
+      "foco": "50% 50%",
+      "esboco": [
+        "salao",
+        "figura:36:86:1.6",
+        "figura:60:88:1.6"
+      ]
+    },
+    {
+      "id": "P05c",
+      "status": "a_gerar",
+      "imagem": null,
+      "plano": "p05",
+      "papel": "meio",
+      "frame": null,
+      "tempo": 16.7,
+      "pagina": 4,
+      "linha": 2,
+      "peso": 2,
+      "tamanho": "pequeno",
+      "proporcao_no_quadro": 0.56,
+      "prioridade": 1,
+      "contexto": "Tênis de Nina pisando a linha laranja, o cubo no alto do quadro. O passo que ninguém mais dá.",
+      "narracao": "Cada passo aproxima a mudança.",
+      "fala": null,
+      "pensamento": null,
+      "onomatopeia": [
+        "TAC"
+      ],
+      "layout": [
+        {
+          "t": "cap",
+          "x": 6,
+          "y": 5,
+          "w": 80
+        },
+        {
+          "t": "sfx",
+          "x": 46,
+          "y": 74,
+          "r": -8,
+          "s": 1.1,
+          "i": 0
+        }
+      ],
+      "personagens": [
+        "nina"
+      ],
+      "referencias": [
+        "refs/elenco/nina.png"
+      ],
+      "refazer": false,
+      "prompt": "Low-angle shot at floor level: Nina's white minimalist sneaker stepping onto the thin line of orange light on the travertine grid; her hand at the top of the frame holds a small perfect cube of glowing orange glass-like material, the size of a hand, softly lit from within, clean edges, no markings; the monumental layered grey wall towers out of focus in the background. Subject centered so a tall vertical crop of the frame also works. cinematic 35mm film still, editorial luxury campaign, low golden late-afternoon light, warm cream travertine and paper tones, deep purple and orange accents, fine film grain, shallow depth of field, photorealistic, natural skin texture, 16:9. Negative: no text, no letters, no numbers, no logos, no brand names, no emblems, no signage, no screens, no phones, no tablets, no monitors, no watermark, no crowd, no extra people, no faceless background figures, no deformed hands, no extra fingers, no merged animals, no melted objects, no pickaxe, no axe, no mallet head with a blade.",
+      "arquivo": "keyframes/v2/CAT-P05c.jpg",
+      "alt_files": [],
+      "reuse": null,
+      "reuse_nota": null,
+      "foco": "50% 50%",
+      "esboco": [
+        "parede",
+        "chao",
+        "pes:50:80",
+        "cubo:56:26:0.9"
+      ]
+    },
+    {
+      "id": "P06a",
+      "status": "pronta",
+      "imagem": "keyframes/v2/CAT-F06.jpg",
+      "plano": "p06",
+      "papel": "abertura",
+      "frame": "F06",
+      "tempo": 18.0,
+      "pagina": 5,
+      "linha": 1,
+      "peso": 1,
+      "tamanho": "largo",
+      "proporcao_no_quadro": 0.75,
+      "prioridade": 1,
+      "contexto": "Close: a mão encaixa o cubo numa fresta da parede (CAT-F06). O clímax do gesto: o encaixe.",
+      "narracao": "Um toque.",
+      "fala": null,
+      "pensamento": null,
+      "onomatopeia": [
+        "CLIQUE"
+      ],
+      "layout": [
+        {
+          "t": "cap",
+          "x": 4,
+          "y": 4,
+          "w": 26
+        },
+        {
+          "t": "sfx",
+          "x": 56,
+          "y": 66,
+          "r": -8,
+          "s": 2.2,
+          "i": 0
+        }
+      ],
+      "personagens": [
+        "nina"
+      ],
+      "referencias": [
+        "refs/elenco/nina.png",
+        "refs/parede-canonica.jpg",
+        "refs/parede-canonica-detalhe.jpg"
+      ],
+      "refazer": false,
+      "prompt": "Extreme close-up: Nina's hand (warm brown skin, thin gold cuff bracelet) pressing a small perfect cube of glowing orange glass-like material, the size of a hand, softly lit from within, clean edges, no markings into a narrow gap between grey stone layers and compressed blank paper of a monumental wall filling the hall from floor to ceiling, built from alternating horizontal layers of rough grey stone slabs and thick stacks of compressed white paper reams, like geological sediment, heavy and ancient, no inscriptions, no color except grey stone and off-white paper; the cube fits exactly; a thin line of orange light begins to spread into the cracks around it. cinematic 35mm film still, editorial luxury campaign, low golden late-afternoon light, warm cream travertine and paper tones, deep purple and orange accents, fine film grain, shallow depth of field, photorealistic, natural skin texture, 16:9. Negative: no text, no letters, no numbers, no logos, no brand names, no emblems, no signage, no screens, no phones, no tablets, no monitors, no watermark, no crowd, no extra people, no faceless background figures, no deformed hands, no extra fingers, no merged animals, no melted objects, no pickaxe, no axe, no mallet head with a blade.",
+      "arquivo": "keyframes/v2/CAT-P06a.jpg",
+      "alt_files": [
+        "keyframes/v2/CAT-F06.jpg"
+      ],
+      "reuse": null,
+      "reuse_nota": null,
+      "foco": "50% 50%",
+      "esboco": [
+        "parede-perto",
+        "fresta",
+        "cubo:52:48:2",
+        "mao:66:56:2"
+      ]
+    },
+    {
+      "id": "P06b",
+      "status": "a_gerar",
+      "imagem": null,
+      "plano": "p06",
+      "papel": "meio",
+      "frame": null,
+      "tempo": 19.0,
+      "pagina": 6,
+      "linha": 1,
+      "peso": 1,
+      "tamanho": "médio",
+      "proporcao_no_quadro": 1.2,
+      "prioridade": 1,
+      "contexto": "O cubo encaixado, a mão já saiu, poeira suspensa. A peça certa no lugar certo.",
+      "narracao": "A peça certa transforma o todo.",
+      "fala": null,
+      "pensamento": null,
+      "onomatopeia": [],
+      "layout": [
+        {
+          "t": "cap",
+          "x": 3,
+          "y": 5,
+          "w": 30
+        }
+      ],
+      "personagens": [],
+      "referencias": [
+        "refs/parede-canonica.jpg",
+        "refs/parede-canonica-detalhe.jpg"
+      ],
+      "refazer": false,
+      "prompt": "Macro close-up: a small perfect cube of glowing orange glass-like material, the size of a hand, softly lit from within, clean edges, no markings, sitting perfectly flush in a narrow gap of a monumental wall filling the hall from floor to ceiling, built from alternating horizontal layers of rough grey stone slabs and thick stacks of compressed white paper reams, like geological sediment, heavy and ancient, no inscriptions, no color except grey stone and off-white paper; the hand has just withdrawn; the glow is steady; tiny dust particles hang motionless in the golden light. Nobody in frame. Composition: keep the upper-left quarter of the frame calm and uncluttered (plain wall, floor or sky), main subject center-right. cinematic 35mm film still, editorial luxury campaign, low golden late-afternoon light, warm cream travertine and paper tones, deep purple and orange accents, fine film grain, shallow depth of field, photorealistic, natural skin texture, 16:9. Negative: no text, no letters, no numbers, no logos, no brand names, no emblems, no signage, no screens, no phones, no tablets, no monitors, no watermark, no crowd, no extra people, no faceless background figures, no deformed hands, no extra fingers, no merged animals, no melted objects, no pickaxe, no axe, no mallet head with a blade.",
+      "arquivo": "keyframes/v2/CAT-P06b.jpg",
+      "alt_files": [],
+      "reuse": null,
+      "reuse_nota": null,
+      "foco": "50% 50%",
+      "esboco": [
+        "parede-perto",
+        "fresta",
+        "cubo:56:52:1.6",
+        "poeira"
+      ]
+    },
+    {
+      "id": "P06c",
+      "status": "a_gerar",
+      "imagem": null,
+      "plano": "p06",
+      "papel": "meio",
+      "frame": null,
+      "tempo": 20.0,
+      "pagina": 6,
+      "linha": 1,
+      "peso": 1,
+      "tamanho": "médio",
+      "proporcao_no_quadro": 1.2,
+      "prioridade": 1,
+      "contexto": "Nina pequena diante da parede, um ponto laranja no centro. Um segundo de silêncio antes da reação.",
+      "narracao": null,
+      "fala": null,
+      "pensamento": null,
+      "onomatopeia": [],
+      "layout": [
+        {
+          "t": "cap",
+          "x": 4,
+          "y": 5,
+          "w": 40
+        },
+        {
+          "t": "quiet",
+          "x": 70,
+          "y": 12
+        }
+      ],
+      "personagens": [
+        "nina"
+      ],
+      "referencias": [
+        "refs/elenco/nina.png",
+        "refs/parede-canonica.jpg",
+        "refs/parede-canonica-detalhe.jpg"
+      ],
+      "refazer": false,
+      "prompt": "Wide shot from behind: Nina (athletic Brazilian woman about 30 years old, warm brown skin, long dark hair in a sleek low ponytail, determined expression, wearing an ivory sleeveless tailored top, high-waisted magenta shorts, white minimalist sneakers and a thin gold cuff bracelet), small in the foreground, standing perfectly still before a monumental wall filling the hall from floor to ceiling, built from alternating horizontal layers of rough grey stone slabs and thick stacks of compressed white paper reams, like geological sediment, heavy and ancient, no inscriptions, no color except grey stone and off-white paper, which fills the frame; a single small point of orange light glows at the wall's center; dust motes suspended; absolute stillness in the monumental cream travertine hall, tall smooth pillars, high ceiling, floor of travertine slabs laid in a precise grid with thin dark joints. Composition: keep the upper-right quarter of the frame calm and uncluttered (plain wall, floor or sky), main subject center-left. cinematic 35mm film still, editorial luxury campaign, low golden late-afternoon light, warm cream travertine and paper tones, deep purple and orange accents, fine film grain, shallow depth of field, photorealistic, natural skin texture, 16:9. Negative: no text, no letters, no numbers, no logos, no brand names, no emblems, no signage, no screens, no phones, no tablets, no monitors, no watermark, no crowd, no extra people, no faceless background figures, no deformed hands, no extra fingers, no merged animals, no melted objects, no pickaxe, no axe, no mallet head with a blade.",
+      "arquivo": "keyframes/v2/CAT-P06c.jpg",
+      "alt_files": [],
+      "reuse": null,
+      "reuse_nota": null,
+      "foco": "50% 50%",
+      "esboco": [
+        "parede",
+        "salao",
+        "ponto:80:36",
+        "figura:50:88:1.1"
+      ]
+    },
+    {
+      "id": "P07a",
+      "status": "pronta",
+      "imagem": "keyframes/v2/CAT-F07.jpg",
+      "plano": "p07",
+      "papel": "abertura",
+      "frame": "F07",
+      "tempo": 21.0,
+      "pagina": 6,
+      "linha": 2,
+      "peso": 1,
+      "tamanho": "largo",
+      "proporcao_no_quadro": 2.0,
+      "prioridade": 1,
+      "contexto": "Veios de luz laranja correm pela parede a partir do cubo (CAT-F07). A reação começa.",
+      "narracao": "A pedra se acende.",
+      "fala": null,
+      "pensamento": null,
+      "onomatopeia": [
+        "VUUUM"
+      ],
+      "layout": [
+        {
+          "t": "cap",
+          "x": 3,
+          "y": 5,
+          "w": 26
+        },
+        {
+          "t": "sfx",
+          "x": 64,
+          "y": 62,
+          "r": -6,
+          "s": 1.6,
+          "i": 0
+        }
+      ],
+      "personagens": [
+        "nina"
+      ],
+      "referencias": [
+        "refs/elenco/nina.png",
+        "refs/parede-canonica.jpg",
+        "refs/parede-canonica-detalhe.jpg"
+      ],
+      "refazer": false,
+      "prompt": "Wide shot from behind Nina (athletic Brazilian woman about 30 years old, warm brown skin, long dark hair in a sleek low ponytail, determined expression, wearing an ivory sleeveless tailored top, high-waisted magenta shorts, white minimalist sneakers and a thin gold cuff bracelet), standing calmly before a monumental wall filling the hall from floor to ceiling, built from alternating horizontal layers of rough grey stone slabs and thick stacks of compressed white paper reams, like geological sediment, heavy and ancient, no inscriptions, no color except grey stone and off-white paper; from a single glowing orange point at the center, veins of orange light race outward through every crack, the stone layers and paper sheets beginning to loosen and lift slightly; she does not move. Nobody else in frame. cinematic 35mm film still, editorial luxury campaign, low golden late-afternoon light, warm cream travertine and paper tones, deep purple and orange accents, fine film grain, shallow depth of field, photorealistic, natural skin texture, 16:9. Negative: no text, no letters, no numbers, no logos, no brand names, no emblems, no signage, no screens, no phones, no tablets, no monitors, no watermark, no crowd, no extra people, no faceless background figures, no deformed hands, no extra fingers, no merged animals, no melted objects, no pickaxe, no axe, no mallet head with a blade.",
+      "arquivo": "keyframes/v2/CAT-P07a.jpg",
+      "alt_files": [
+        "keyframes/v2/CAT-F07.jpg"
+      ],
+      "reuse": null,
+      "reuse_nota": null,
+      "foco": "50% 50%",
+      "esboco": [
+        "parede",
+        "veios",
+        "salao",
+        "figura:50:88:1.1"
+      ]
+    },
+    {
+      "id": "P07b",
+      "status": "a_gerar",
+      "imagem": null,
+      "plano": "p07",
+      "papel": "meio",
+      "frame": null,
+      "tempo": 22.3,
+      "pagina": 6,
+      "linha": 3,
+      "peso": 1,
+      "tamanho": "médio",
+      "proporcao_no_quadro": 1.2,
+      "prioridade": 1,
+      "contexto": "Macro das frestas acendendo entre pedra e papel. A luz encontra as juntas do monólito.",
+      "narracao": "A luz encontra caminhos.",
+      "fala": null,
+      "pensamento": null,
+      "onomatopeia": [
+        "CRIC"
+      ],
+      "layout": [
+        {
+          "t": "cap",
+          "x": 3,
+          "y": 5,
+          "w": 44
+        },
+        {
+          "t": "sfx",
+          "x": 60,
+          "y": 70,
+          "r": 10,
+          "s": 0.9,
+          "i": 0
+        }
+      ],
+      "personagens": [],
+      "referencias": [
+        "refs/parede-canonica.jpg",
+        "refs/parede-canonica-detalhe.jpg"
+      ],
+      "refazer": false,
+      "prompt": "Macro close-up of a monumental wall filling the hall from floor to ceiling, built from alternating horizontal layers of rough grey stone slabs and thick stacks of compressed white paper reams, like geological sediment, heavy and ancient, no inscriptions, no color except grey stone and off-white paper: veins of bright orange light race through every crack between the grey stone layers and the compressed blank paper, the layer edges glowing. Nobody in frame. Composition: keep the upper-left quarter of the frame calm and uncluttered (plain wall, floor or sky), main subject center-right. cinematic 35mm film still, editorial luxury campaign, low golden late-afternoon light, warm cream travertine and paper tones, deep purple and orange accents, fine film grain, shallow depth of field, photorealistic, natural skin texture, 16:9. Negative: no text, no letters, no numbers, no logos, no brand names, no emblems, no signage, no screens, no phones, no tablets, no monitors, no watermark, no crowd, no extra people, no faceless background figures, no deformed hands, no extra fingers, no merged animals, no melted objects, no pickaxe, no axe, no mallet head with a blade.",
+      "arquivo": "keyframes/v2/CAT-P07b.jpg",
+      "alt_files": [],
+      "reuse": null,
+      "reuse_nota": null,
+      "foco": "50% 50%",
+      "esboco": [
+        "parede-perto",
+        "veios"
+      ]
+    },
+    {
+      "id": "P07c",
+      "status": "a_gerar",
+      "imagem": null,
+      "plano": "p07",
+      "papel": "meio",
+      "frame": null,
+      "tempo": 23.7,
+      "pagina": 6,
+      "linha": 3,
+      "peso": 1,
+      "tamanho": "médio",
+      "proporcao_no_quadro": 1.2,
+      "prioridade": 1,
+      "contexto": "Camadas começam a soltar, folhas pairando; Nina imóvel. O monólito cede.",
+      "narracao": "Novos contornos despertam.",
+      "fala": null,
+      "pensamento": null,
+      "onomatopeia": [
+        "CRAC… CRAC…"
+      ],
+      "layout": [
+        {
+          "t": "cap",
+          "x": 3,
+          "y": 5,
+          "w": 44
+        },
+        {
+          "t": "sfx",
+          "x": 8,
+          "y": 74,
+          "r": -6,
+          "s": 0.9,
+          "i": 0
+        }
+      ],
+      "personagens": [
+        "nina"
+      ],
+      "referencias": [
+        "refs/elenco/nina.png",
+        "refs/parede-canonica.jpg",
+        "refs/parede-canonica-detalhe.jpg"
+      ],
+      "refazer": false,
+      "prompt": "Medium shot over Nina's shoulder (athletic Brazilian woman about 30 years old, warm brown skin, long dark hair in a sleek low ponytail, determined expression, wearing an ivory sleeveless tailored top, high-waisted magenta shorts, white minimalist sneakers and a thin gold cuff bracelet), seen from behind on the right: the stone and paper layers of a monumental wall filling the hall from floor to ceiling, built from alternating horizontal layers of rough grey stone slabs and thick stacks of compressed white paper reams, like geological sediment, heavy and ancient, no inscriptions, no color except grey stone and off-white paper begin to loosen and lift off, flakes of blank paper hovering, warm orange light glowing in the gaps. She stays still. Composition: keep the upper-left quarter of the frame calm and uncluttered (plain wall, floor or sky), main subject center-right. cinematic 35mm film still, editorial luxury campaign, low golden late-afternoon light, warm cream travertine and paper tones, deep purple and orange accents, fine film grain, shallow depth of field, photorealistic, natural skin texture, 16:9. Negative: no text, no letters, no numbers, no logos, no brand names, no emblems, no signage, no screens, no phones, no tablets, no monitors, no watermark, no crowd, no extra people, no faceless background figures, no deformed hands, no extra fingers, no merged animals, no melted objects, no pickaxe, no axe, no mallet head with a blade.",
+      "arquivo": "keyframes/v2/CAT-P07c.jpg",
+      "alt_files": [],
+      "reuse": null,
+      "reuse_nota": null,
+      "foco": "50% 50%",
+      "esboco": [
+        "parede-perto",
+        "veios",
+        "folha:30:40",
+        "folha:60:30",
+        "ombro:82:92"
+      ]
+    },
+    {
+      "id": "P08a",
+      "status": "pronta",
+      "imagem": "keyframes/v2/CAT-F08.jpg",
+      "plano": "p08",
+      "papel": "abertura",
+      "frame": "F08",
+      "tempo": 25.0,
+      "pagina": 7,
+      "linha": 1,
+      "peso": 1,
+      "tamanho": "largo",
+      "proporcao_no_quadro": 0.75,
+      "prioridade": 1,
+      "contexto": "A parede se parte em blocos de concreto roxo que sobem (CAT-F08). O mundo de uma peça vira muitos módulos.",
+      "narracao": "Uma peça se faz muitas.",
+      "fala": null,
+      "pensamento": null,
+      "onomatopeia": [
+        "RRRUM"
+      ],
+      "layout": [
+        {
+          "t": "cap",
+          "x": 3,
+          "y": 5,
+          "w": 26
+        },
+        {
+          "t": "sfx",
+          "x": 70,
+          "y": 70,
+          "r": -4,
+          "s": 1.3,
+          "i": 0
+        }
+      ],
+      "personagens": [
+        "nina"
+      ],
+      "referencias": [
+        "refs/elenco/nina.png"
+      ],
+      "refazer": false,
+      "prompt": "Wide shot: the monumental wall dissolving from the center outward, its grey stone and paper pieces turning into clean deep purple raw-concrete blocks that rise and rotate gently into the air, orange light glowing between them, warm golden light pouring through; Nina small in the foreground seen from behind. Calm, not explosive. cinematic 35mm film still, editorial luxury campaign, low golden late-afternoon light, warm cream travertine and paper tones, deep purple and orange accents, fine film grain, shallow depth of field, photorealistic, natural skin texture, 16:9. Negative: no text, no letters, no numbers, no logos, no brand names, no emblems, no signage, no screens, no phones, no tablets, no monitors, no watermark, no crowd, no extra people, no faceless background figures, no deformed hands, no extra fingers, no merged animals, no melted objects, no pickaxe, no axe, no mallet head with a blade.",
+      "arquivo": "keyframes/v2/CAT-P08a.jpg",
+      "alt_files": [
+        "keyframes/v2/CAT-F08.jpg"
+      ],
+      "reuse": null,
+      "reuse_nota": null,
+      "foco": "50% 50%",
+      "esboco": [
+        "salao",
+        "blocos",
+        "figura:50:90:1"
+      ]
+    },
+    {
+      "id": "P08b",
+      "status": "a_gerar",
+      "imagem": null,
+      "plano": "p08",
+      "papel": "meio",
+      "frame": null,
+      "tempo": 26.5,
+      "pagina": 8,
+      "linha": 1,
+      "peso": 1,
+      "tamanho": "pequeno",
+      "proporcao_no_quadro": 0.5,
+      "prioridade": 1,
+      "contexto": "Uma laje cinza se solta e revela o bloco roxo por dentro. A transformação em detalhe: peso vira peça.",
+      "narracao": "Cada parte guarda sua força.",
+      "fala": null,
+      "pensamento": null,
+      "onomatopeia": [],
+      "layout": [
+        {
+          "t": "cap",
+          "x": 6,
+          "y": 5,
+          "w": 80
+        }
+      ],
+      "personagens": [],
+      "referencias": [],
+      "refazer": false,
+      "prompt": "Close-up in mid-air inside the monumental cream travertine hall, tall smooth pillars, high ceiling, floor of travertine slabs laid in a precise grid with thin dark joints: a rough grey stone slab breaking free and revealing itself as one of the heavy rectangular blocks of raw concrete with deep purple pigment, textured, porous, with chipped edges, the size of a car or larger, never curved shapes, arches or letters, orange light along its seams, golden light behind. Calm, not explosive. Nobody in frame. Subject centered so a tall vertical crop of the frame also works. cinematic 35mm film still, editorial luxury campaign, low golden late-afternoon light, warm cream travertine and paper tones, deep purple and orange accents, fine film grain, shallow depth of field, photorealistic, natural skin texture, 16:9. Negative: no text, no letters, no numbers, no logos, no brand names, no emblems, no signage, no screens, no phones, no tablets, no monitors, no watermark, no crowd, no extra people, no faceless background figures, no deformed hands, no extra fingers, no merged animals, no melted objects, no pickaxe, no axe, no mallet head with a blade.",
+      "arquivo": "keyframes/v2/CAT-P08b.jpg",
+      "alt_files": [],
+      "reuse": null,
+      "reuse_nota": null,
+      "foco": "50% 50%",
+      "esboco": [
+        "escuro",
+        "bloco:50:52:2.6"
+      ]
+    },
+    {
+      "id": "P09a",
+      "status": "reaproveitada",
+      "imagem": "keyframes/s12.png",
+      "plano": "p09",
+      "papel": "abertura",
+      "frame": "F09",
+      "tempo": 28.0,
+      "pagina": 8,
+      "linha": 1,
+      "peso": 2,
+      "tamanho": "médio",
+      "proporcao_no_quadro": 1.0,
+      "prioridade": 2,
+      "contexto": "A parede se abre de dentro para fora; o roxo aparece. O impacto.",
+      "narracao": "O horizonte se abre.",
+      "fala": null,
+      "pensamento": null,
+      "onomatopeia": [
+        "CRAC"
+      ],
+      "layout": [
+        {
+          "t": "cap",
+          "x": 3,
+          "y": 78,
+          "w": 32
+        },
+        {
+          "t": "sfx",
+          "x": 4,
+          "y": 8,
+          "r": -6,
+          "s": 1.2,
+          "i": 0
+        }
+      ],
+      "personagens": [],
+      "referencias": [],
+      "refazer": false,
+      "prompt": "Moment of impact inside the travertine hall: the monumental grey layered wall bursts open from the inside out, stone and paper fragments suspended in the air, revealing deep purple raw concrete within; warm golden light floods through the breach; dust hangs in the air. Nobody in frame. cinematic 35mm film still, editorial luxury campaign, low golden late-afternoon light, warm cream travertine and paper tones, deep purple and orange accents, fine film grain, shallow depth of field, photorealistic, natural skin texture, 16:9. Negative: no text, no letters, no numbers, no logos, no brand names, no emblems, no signage, no screens, no phones, no tablets, no monitors, no watermark, no crowd, no extra people, no faceless background figures, no deformed hands, no extra fingers, no merged animals, no melted objects, no pickaxe, no axe, no mallet head with a blade.",
+      "arquivo": "keyframes/v2/CAT-P09a.jpg",
+      "alt_files": [],
+      "reuse": "keyframes/s12.png",
+      "reuse_nota": null,
+      "foco": "50% 50%",
+      "esboco": [
+        "salao",
+        "blocos"
+      ]
+    },
+    {
+      "id": "P09b",
+      "status": "a_gerar",
+      "imagem": null,
+      "plano": "p09",
+      "papel": "meio",
+      "frame": null,
+      "tempo": 30.0,
+      "pagina": 8,
+      "linha": 2,
+      "peso": 1,
+      "tamanho": "largo",
+      "proporcao_no_quadro": 1.6,
+      "prioridade": 2,
+      "contexto": "Fragmentos e blocos suspensos, tudo parado no ar. O segundo de silêncio total do filme (00:30–00:31).",
+      "narracao": null,
+      "fala": null,
+      "pensamento": null,
+      "onomatopeia": [],
+      "layout": [
+        {
+          "t": "cap",
+          "x": 3,
+          "y": 6,
+          "w": 28
+        },
+        {
+          "t": "quiet",
+          "x": 76,
+          "y": 10
+        }
+      ],
+      "personagens": [],
+      "referencias": [],
+      "refazer": false,
+      "prompt": "Wide shot of the monumental cream travertine hall, tall smooth pillars, high ceiling, floor of travertine slabs laid in a precise grid with thin dark joints: fragments and heavy rectangular blocks of raw concrete with deep purple pigment, textured, porous, with chipped edges, the size of a car or larger, never curved shapes, arches or letters, suspended motionless in mid-air, golden dust frozen, total stillness, nobody in the hall. Composition: keep the upper-left quarter of the frame calm and uncluttered (plain wall, floor or sky), main subject center-right. cinematic 35mm film still, editorial luxury campaign, low golden late-afternoon light, warm cream travertine and paper tones, deep purple and orange accents, fine film grain, shallow depth of field, photorealistic, natural skin texture, 16:9. Negative: no text, no letters, no numbers, no logos, no brand names, no emblems, no signage, no screens, no phones, no tablets, no monitors, no watermark, no crowd, no extra people, no faceless background figures, no deformed hands, no extra fingers, no merged animals, no melted objects, no pickaxe, no axe, no mallet head with a blade.",
+      "arquivo": "keyframes/v2/CAT-P09b.jpg",
+      "alt_files": [],
+      "reuse": null,
+      "reuse_nota": null,
+      "foco": "50% 50%",
+      "esboco": [
+        "salao",
+        "blocos",
+        "poeira"
+      ]
+    },
+    {
+      "id": "P10a",
+      "status": "reaproveitada",
+      "imagem": "keyframes/s13.png",
+      "plano": "p10",
+      "papel": "abertura",
+      "frame": "F10",
+      "tempo": 32.0,
+      "pagina": 9,
+      "linha": 1,
+      "peso": 1,
+      "tamanho": "largo",
+      "proporcao_no_quadro": 1.6,
+      "prioridade": 2,
+      "contexto": "Blocos roxos flutuando no salão, a faixa laranja na base. Os módulos estão soltos e prontos.",
+      "narracao": "Peças livres para compor.",
+      "fala": null,
+      "pensamento": null,
+      "onomatopeia": [
+        "CLONC"
+      ],
+      "layout": [
+        {
+          "t": "cap",
+          "x": 3,
+          "y": 74,
+          "w": 30
+        },
+        {
+          "t": "sfx",
+          "x": 78,
+          "y": 76,
+          "r": 8,
+          "s": 0.9,
+          "i": 0
+        }
+      ],
+      "personagens": [],
+      "referencias": [],
+      "refazer": false,
+      "prompt": "Dozens of deep purple raw-concrete blocks of different sizes floating weightless inside the travertine hall, a few already resting on the floor, warm low light, a strip of orange light along the base of the walls. Nobody in frame. cinematic 35mm film still, editorial luxury campaign, low golden late-afternoon light, warm cream travertine and paper tones, deep purple and orange accents, fine film grain, shallow depth of field, photorealistic, natural skin texture, 16:9. Negative: no text, no letters, no numbers, no logos, no brand names, no emblems, no signage, no screens, no phones, no tablets, no monitors, no watermark, no crowd, no extra people, no faceless background figures, no deformed hands, no extra fingers, no merged animals, no melted objects, no pickaxe, no axe, no mallet head with a blade.",
+      "arquivo": "keyframes/v2/CAT-P10a.jpg",
+      "alt_files": [],
+      "reuse": "keyframes/s13.png",
+      "reuse_nota": null,
+      "foco": "50% 50%",
+      "esboco": [
+        "salao",
+        "blocos",
+        "bloco:20:80:1",
+        "bloco:80:78:1.1"
+      ]
+    },
+    {
+      "id": "P10b",
+      "status": "a_gerar",
+      "imagem": null,
+      "plano": "p10",
+      "papel": "meio",
+      "frame": null,
+      "tempo": 34.0,
+      "pagina": 9,
+      "linha": 2,
+      "peso": 1,
+      "tamanho": "largo",
+      "proporcao_no_quadro": 1.6,
+      "prioridade": 2,
+      "contexto": "A câmera sobe entre os blocos que se encaixam; pontes laranja se estendem. Os módulos se reconectam.",
+      "narracao": "Pontes unem possibilidades.",
+      "fala": null,
+      "pensamento": null,
+      "onomatopeia": [
+        "CLONC",
+        "TIN"
+      ],
+      "layout": [
+        {
+          "t": "cap",
+          "x": 3,
+          "y": 6,
+          "w": 30
+        },
+        {
+          "t": "sfx",
+          "x": 52,
+          "y": 70,
+          "r": -6,
+          "s": 1.1,
+          "i": 0
+        },
+        {
+          "t": "sfx",
+          "x": 80,
+          "y": 30,
+          "r": 8,
+          "s": 0.8,
+          "i": 1
+        }
+      ],
+      "personagens": [],
+      "referencias": [],
+      "refazer": false,
+      "prompt": "Camera craning up between heavy rectangular blocks of raw concrete with deep purple pigment, textured, porous, with chipped edges, the size of a car or larger, never curved shapes, arches or letters, that slide into place on a cream travertine grid, bright orange bridges extending between them, the ceiling of the travertine hall opening to a clear warm sunset sky. Nobody in frame. Composition: keep the upper-left quarter of the frame calm and uncluttered (plain wall, floor or sky), main subject center-right. cinematic 35mm film still, editorial luxury campaign, low golden late-afternoon light, warm cream travertine and paper tones, deep purple and orange accents, fine film grain, shallow depth of field, photorealistic, natural skin texture, 16:9. Negative: no text, no letters, no numbers, no logos, no brand names, no emblems, no signage, no screens, no phones, no tablets, no monitors, no watermark, no crowd, no extra people, no faceless background figures, no deformed hands, no extra fingers, no merged animals, no melted objects, no pickaxe, no axe, no mallet head with a blade.",
+      "arquivo": "keyframes/v2/CAT-P10b.jpg",
+      "alt_files": [],
+      "reuse": null,
+      "reuse_nota": null,
+      "foco": "50% 50%",
+      "esboco": [
+        "cidade"
+      ]
+    },
+    {
+      "id": "P11a",
+      "status": "reaproveitada",
+      "imagem": "keyframes/v2/F11.jpg",
+      "plano": "p11",
+      "papel": "abertura",
+      "frame": "F11",
+      "tempo": 36.0,
+      "pagina": 10,
+      "linha": 1,
+      "peso": 1,
+      "tamanho": "largo",
+      "proporcao_no_quadro": 1.36,
+      "prioridade": 2,
+      "contexto": "Vista aérea da cidade de blocos roxos e pontes laranja. O mundo componível montado.",
+      "narracao": "Juntas, erguem uma cidade.",
+      "fala": null,
+      "pensamento": null,
+      "onomatopeia": [
+        "FUUU"
+      ],
+      "layout": [
+        {
+          "t": "cap",
+          "x": 3,
+          "y": 5,
+          "w": 30
+        },
+        {
+          "t": "sfx",
+          "x": 80,
+          "y": 6,
+          "r": 6,
+          "s": 0.8,
+          "i": 0
+        }
+      ],
+      "personagens": [],
+      "referencias": [],
+      "refazer": false,
+      "prompt": "Aerial view at sunset of a city made of monumental deep purple raw-concrete blocks in Bauhaus forms (arches, stepped towers, cylinders), connected by bright orange bridges, standing on a cream travertine grid; in the foreground center, a circular travertine plaza under a large orange arch; long soft shadows; no real city, no ordinary buildings, clear warm sky to the horizon. Nobody visible. cinematic 35mm film still, editorial luxury campaign, low golden late-afternoon light, warm cream travertine and paper tones, deep purple and orange accents, fine film grain, shallow depth of field, photorealistic, natural skin texture, 16:9. Negative: no text, no letters, no numbers, no logos, no brand names, no emblems, no signage, no screens, no phones, no tablets, no monitors, no watermark, no crowd, no extra people, no faceless background figures, no deformed hands, no extra fingers, no merged animals, no melted objects, no pickaxe, no axe, no mallet head with a blade.",
+      "arquivo": "keyframes/v2/CAT-P11a.jpg",
+      "alt_files": [],
+      "reuse": "keyframes/v2/F11.jpg",
+      "reuse_nota": null,
+      "foco": "50% 50%",
+      "esboco": [
+        "cidade",
+        "arco:56:70"
+      ]
+    },
+    {
+      "id": "P11b",
+      "status": "a_gerar",
+      "imagem": null,
+      "plano": "p11",
+      "papel": "meio",
+      "frame": null,
+      "tempo": 38.0,
+      "pagina": 12,
+      "linha": 1,
+      "peso": 1,
+      "tamanho": "largo",
+      "proporcao_no_quadro": 2.2,
+      "prioridade": 1,
+      "contexto": "Descida sobre a praça do arco laranja; Camila, Lia e Rafael chegam de lados diferentes. Começam as conquistas.",
+      "narracao": "Cada encontro amplia o sonho.",
+      "fala": {
+        "quem": "lia",
+        "texto": "Meu plano ganhou companhia."
+      },
+      "pensamento": null,
+      "onomatopeia": [],
+      "layout": [
+        {
+          "t": "cap",
+          "x": 3,
+          "y": 5,
+          "w": 52
+        }
+      ],
+      "personagens": [
+        "camila",
+        "lia",
+        "rafael"
+      ],
+      "referencias": [
+        "refs/elenco/camila.png",
+        "refs/elenco/lia.png",
+        "refs/elenco/rafael.png"
+      ],
+      "refazer": false,
+      "prompt": "Aerial shot descending toward a circular cream travertine plaza under a large bright orange arch, deep purple Bauhaus blocks around it; three small figures walk in from different sides: Camila (Brazilian Black woman about 45 years old, short natural curly hair, thin gold-rimmed glasses, warm confident gaze, wearing a tailored magenta blazer over an ivory silk blouse and wide-leg cream trousers, small gold earrings), Lia (Brazilian woman of Japanese descent about 38 years old, sleek black chin-length bob, minimal silver earrings, wearing a charcoal structured jacket over a black turtleneck and black tailored trousers, hands empty) and Rafael (Brazilian man about 40 years old, short brown hair, short trimmed beard, fair skin, wearing a beige linen jacket over a navy knit polo shirt and light chinos). Only these three people. Composition: keep the upper-left quarter of the frame calm and uncluttered (plain wall, floor or sky), main subject center-right. cinematic 35mm film still, editorial luxury campaign, low golden late-afternoon light, warm cream travertine and paper tones, deep purple and orange accents, fine film grain, shallow depth of field, photorealistic, natural skin texture, 16:9. Negative: no text, no letters, no numbers, no logos, no brand names, no emblems, no signage, no screens, no phones, no tablets, no monitors, no watermark, no crowd, no extra people, no faceless background figures, no deformed hands, no extra fingers, no merged animals, no melted objects, no pickaxe, no axe, no mallet head with a blade, no tablet, no device.",
+      "arquivo": "keyframes/v2/CAT-P11b.jpg",
+      "alt_files": [],
+      "reuse": null,
+      "reuse_nota": null,
+      "foco": "50% 50%",
+      "esboco": [
+        "praca",
+        "arco:50:62",
+        "figura:30:84:0.7",
+        "figura:50:90:0.7",
+        "figura:70:84:0.7"
+      ]
+    },
+    {
+      "id": "P12a",
+      "status": "reaproveitada",
+      "imagem": "refs/cenas/consorcio-grupo.jpg",
+      "plano": "p12",
+      "papel": "abertura",
+      "frame": "F12",
+      "tempo": 40.0,
+      "pagina": 12,
+      "linha": 2,
+      "peso": 1,
+      "tamanho": "largo",
+      "proporcao_no_quadro": 1.2,
+      "prioridade": 3,
+      "contexto": "Camila, Lia e Rafael juntos sob o arco. Conquista 1: consórcio, a conquista coletiva.",
+      "narracao": "A conquista encontra companhia.",
+      "fala": {
+        "quem": "camila",
+        "texto": "Essa conquista é nossa."
+      },
+      "pensamento": null,
+      "onomatopeia": [],
+      "layout": [
+        {
+          "t": "cap",
+          "x": 3,
+          "y": 78,
+          "w": 30
+        },
+        {
+          "t": "fala",
+          "x": 4,
+          "y": 30,
+          "w": 26,
+          "tx": 37,
+          "ty": 18
+        }
+      ],
+      "personagens": [
+        "camila",
+        "lia",
+        "rafael"
+      ],
+      "referencias": [
+        "refs/elenco/camila.png",
+        "refs/elenco/lia.png",
+        "refs/elenco/rafael.png"
+      ],
+      "refazer": false,
+      "prompt": "Camila (Brazilian Black woman about 45 years old, short natural curly hair, thin gold-rimmed glasses, warm confident gaze, wearing a tailored magenta blazer over an ivory silk blouse and wide-leg cream trousers, small gold earrings), Lia (Brazilian woman of Japanese descent about 38 years old, sleek black chin-length bob, minimal silver earrings, wearing a charcoal structured jacket over a black turtleneck and black tailored trousers, hands empty) and Rafael (Brazilian man about 40 years old, short brown hair, short trimmed beard, fair skin, wearing a beige linen jacket over a navy knit polo shirt and light chinos) standing together, smiling, in a circular travertine plaza under a large orange arch at golden hour, celebrating a shared achievement. Nobody else. cinematic 35mm film still, editorial luxury campaign, low golden late-afternoon light, warm cream travertine and paper tones, deep purple and orange accents, fine film grain, shallow depth of field, photorealistic, natural skin texture, 16:9. Negative: no text, no letters, no numbers, no logos, no brand names, no emblems, no signage, no screens, no phones, no tablets, no monitors, no watermark, no crowd, no extra people, no faceless background figures, no deformed hands, no extra fingers, no merged animals, no melted objects, no pickaxe, no axe, no mallet head with a blade.",
+      "arquivo": "keyframes/v2/CAT-P12a.jpg",
+      "alt_files": [],
+      "reuse": "refs/cenas/consorcio-grupo.jpg",
+      "reuse_nota": "Aprovada pelo dono. Ressalva: figuras ao fundo sem rosto (apagar por inpaint).",
+      "foco": "50% 50%",
+      "esboco": [
+        "praca",
+        "arco:50:50",
+        "figura:36:90:1.5",
+        "figura:50:90:1.5",
+        "figura:64:90:1.5"
+      ]
+    },
+    {
+      "id": "P12b",
+      "status": "a_gerar",
+      "imagem": null,
+      "plano": "p12",
+      "papel": "meio",
+      "frame": null,
+      "tempo": 42.0,
+      "pagina": 13,
+      "linha": 1,
+      "peso": 1,
+      "tamanho": "largo",
+      "proporcao_no_quadro": 2.2,
+      "prioridade": 1,
+      "contexto": "Rafael segue em frente, o chão vira pasto; as duas saem pelos lados. Transição para o agro.",
+      "narracao": "E cria raízes.",
+      "fala": null,
+      "pensamento": null,
+      "onomatopeia": [],
+      "layout": [
+        {
+          "t": "cap",
+          "x": 3,
+          "y": 5,
+          "w": 40
+        }
+      ],
+      "personagens": [
+        "rafael",
+        "camila",
+        "lia"
+      ],
+      "referencias": [
+        "refs/elenco/rafael.png",
+        "refs/elenco/camila.png",
+        "refs/elenco/lia.png"
+      ],
+      "refazer": false,
+      "prompt": "Transition shot: Rafael (Brazilian man about 40 years old, short brown hair, short trimmed beard, fair skin, wearing a beige linen jacket over a navy knit polo shirt and light chinos) walks forward toward the camera, centered, while the cream travertine floor at his feet turns into green grass; Camila (Brazilian Black woman about 45 years old, short natural curly hair, thin gold-rimmed glasses, warm confident gaze, wearing a tailored magenta blazer over an ivory silk blouse and wide-leg cream trousers, small gold earrings) and Lia (Brazilian woman of Japanese descent about 38 years old, sleek black chin-length bob, minimal silver earrings, wearing a charcoal structured jacket over a black turtleneck and black tailored trousers, hands empty) step out of frame at the left and right edges; the bright orange arch recedes into the distance and becomes the orange walkway of a deep purple Bauhaus building far away. Golden hour. Only these three people. Composition: keep the upper-left quarter of the frame calm and uncluttered (plain wall, floor or sky), main subject center-right. cinematic 35mm film still, editorial luxury campaign, low golden late-afternoon light, warm cream travertine and paper tones, deep purple and orange accents, fine film grain, shallow depth of field, photorealistic, natural skin texture, 16:9. Negative: no text, no letters, no numbers, no logos, no brand names, no emblems, no signage, no screens, no phones, no tablets, no monitors, no watermark, no crowd, no extra people, no faceless background figures, no deformed hands, no extra fingers, no merged animals, no melted objects, no pickaxe, no axe, no mallet head with a blade, no tablet, no device.",
+      "arquivo": "keyframes/v2/CAT-P12b.jpg",
+      "alt_files": [],
+      "reuse": null,
+      "reuse_nota": null,
+      "foco": "50% 50%",
+      "esboco": [
+        "pasto",
+        "arco:76:50",
+        "figura:50:88:1.6",
+        "figura:10:84:1.3",
+        "figura:92:84:1.3"
+      ]
+    },
+    {
+      "id": "P13a",
+      "status": "reaproveitada",
+      "imagem": "refs/cenas/agro-rafael.png",
+      "plano": "p13",
+      "papel": "abertura",
+      "frame": "F13",
+      "tempo": 44.0,
+      "pagina": 13,
+      "linha": 2,
+      "peso": 1,
+      "tamanho": "largo",
+      "proporcao_no_quadro": 1.2,
+      "prioridade": 3,
+      "contexto": "Rafael no campo com o gado, o edifício roxo ao fundo. Conquista 2: agro.",
+      "narracao": "O cuidado dá frutos.",
+      "fala": {
+        "quem": "rafael",
+        "texto": "Esta colheita tem a nossa história."
+      },
+      "pensamento": null,
+      "onomatopeia": [
+        "MUUUM"
+      ],
+      "layout": [
+        {
+          "t": "cap",
+          "x": 3,
+          "y": 5,
+          "w": 36
+        },
+        {
+          "t": "sfx",
+          "x": 70,
+          "y": 26,
+          "r": 8,
+          "s": 0.8,
+          "i": 0
+        },
+        {
+          "t": "fala",
+          "x": 4,
+          "y": 34,
+          "w": 34,
+          "tx": 44,
+          "ty": 28
+        }
+      ],
+      "personagens": [
+        "rafael"
+      ],
+      "referencias": [
+        "refs/elenco/rafael.png"
+      ],
+      "refazer": false,
+      "prompt": "Rafael (Brazilian man about 40 years old, short brown hair, short trimmed beard, fair skin, wearing a beige linen jacket over a navy knit polo shirt and light chinos) walking toward camera across green grassland at golden hour, white Nelore cattle grazing on both sides, a purple Bauhaus building with an orange footbridge in the distance. cinematic 35mm film still, editorial luxury campaign, low golden late-afternoon light, warm cream travertine and paper tones, deep purple and orange accents, fine film grain, shallow depth of field, photorealistic, natural skin texture, 16:9. Negative: no text, no letters, no numbers, no logos, no brand names, no emblems, no signage, no screens, no phones, no tablets, no monitors, no watermark, no crowd, no extra people, no faceless background figures, no deformed hands, no extra fingers, no merged animals, no melted objects, no pickaxe, no axe, no mallet head with a blade.",
+      "arquivo": "keyframes/v2/CAT-P13a.jpg",
+      "alt_files": [],
+      "reuse": "refs/cenas/agro-rafael.png",
+      "reuse_nota": null,
+      "foco": "50% 50%",
+      "esboco": [
+        "pasto",
+        "figura:50:90:1.6",
+        "boi:20:78",
+        "boi:80:78"
+      ]
+    },
+    {
+      "id": "P13b",
+      "status": "a_gerar",
+      "imagem": null,
+      "plano": "p13",
+      "papel": "meio",
+      "frame": null,
+      "tempo": 46.0,
+      "pagina": 14,
+      "linha": 1,
+      "peso": 1,
+      "tamanho": "largo",
+      "proporcao_no_quadro": 2.2,
+      "prioridade": 1,
+      "contexto": "O edifício roxo desliza e vira volume de uma casa; janelas acendem. Transição para o imobiliário.",
+      "narracao": "A vida encontra abrigo.",
+      "fala": null,
+      "pensamento": null,
+      "onomatopeia": [
+        "CLAC"
+      ],
+      "layout": [
+        {
+          "t": "cap",
+          "x": 3,
+          "y": 6,
+          "w": 28
+        },
+        {
+          "t": "sfx",
+          "x": 56,
+          "y": 30,
+          "r": -8,
+          "s": 0.9,
+          "i": 0
+        }
+      ],
+      "personagens": [],
+      "referencias": [],
+      "refazer": false,
+      "prompt": "Transition shot, smooth lateral slide to the right at dusk: a deep purple Bauhaus building slides and locks into place as one volume of a contemporary cream-and-purple modernist house; its windows ignite in warm orange; circular orange openings; a still pool appears in the foreground; palm trees. Nobody in frame. Composition: keep the upper-left quarter of the frame calm and uncluttered (plain wall, floor or sky), main subject center-right. cinematic 35mm film still, editorial luxury campaign, low golden late-afternoon light, warm cream travertine and paper tones, deep purple and orange accents, fine film grain, shallow depth of field, photorealistic, natural skin texture, 16:9. Negative: no text, no letters, no numbers, no logos, no brand names, no emblems, no signage, no screens, no phones, no tablets, no monitors, no watermark, no crowd, no extra people, no faceless background figures, no deformed hands, no extra fingers, no merged animals, no melted objects, no pickaxe, no axe, no mallet head with a blade.",
+      "arquivo": "keyframes/v2/CAT-P13b.jpg",
+      "alt_files": [],
+      "reuse": null,
+      "reuse_nota": null,
+      "foco": "50% 50%",
+      "esboco": [
+        "casa"
+      ]
+    },
+    {
+      "id": "P14a",
+      "status": "reaproveitada",
+      "imagem": "refs/cenas/imobiliario-marina.png",
+      "plano": "p14",
+      "papel": "abertura",
+      "frame": "F14",
+      "tempo": 48.0,
+      "pagina": 14,
+      "linha": 2,
+      "peso": 1,
+      "tamanho": "largo",
+      "proporcao_no_quadro": 1.2,
+      "prioridade": 3,
+      "contexto": "Marina diante da casa modernista ao anoitecer. Conquista 3: imobiliário.",
+      "narracao": "O sonho ganha endereço.",
+      "fala": {
+        "quem": "marina",
+        "texto": "Cheguei em casa."
+      },
+      "pensamento": null,
+      "onomatopeia": [
+        "CHUÁ"
+      ],
+      "layout": [
+        {
+          "t": "cap",
+          "x": 58,
+          "y": 4,
+          "w": 38
+        },
+        {
+          "t": "sfx",
+          "x": 72,
+          "y": 84,
+          "r": 6,
+          "s": 0.7,
+          "i": 0
+        },
+        {
+          "t": "fala",
+          "x": 60,
+          "y": 34,
+          "w": 26,
+          "tx": 50,
+          "ty": 28
+        }
+      ],
+      "personagens": [
+        "marina"
+      ],
+      "referencias": [
+        "refs/elenco/marina.png"
+      ],
+      "refazer": false,
+      "prompt": "Marina (Brazilian woman about 35 years old, shoulder-length dark wavy hair, light brown skin, wearing a pale blue linen blazer over a white t-shirt and cream trousers, delicate silver necklace) standing by the pool in front of a contemporary cream and purple modernist house at dusk, windows glowing orange, circular orange openings, palm trees, reflections on the water. cinematic 35mm film still, editorial luxury campaign, low golden late-afternoon light, warm cream travertine and paper tones, deep purple and orange accents, fine film grain, shallow depth of field, photorealistic, natural skin texture, 16:9. Negative: no text, no letters, no numbers, no logos, no brand names, no emblems, no signage, no screens, no phones, no tablets, no monitors, no watermark, no crowd, no extra people, no faceless background figures, no deformed hands, no extra fingers, no merged animals, no melted objects, no pickaxe, no axe, no mallet head with a blade.",
+      "arquivo": "keyframes/v2/CAT-P14a.jpg",
+      "alt_files": [],
+      "reuse": "refs/cenas/imobiliario-marina.png",
+      "reuse_nota": null,
+      "foco": "50% 50%",
+      "esboco": [
+        "casa",
+        "figura:40:92:1.8"
+      ]
+    },
+    {
+      "id": "P14b",
+      "status": "a_gerar",
+      "imagem": null,
+      "plano": "p14",
+      "papel": "meio",
+      "frame": null,
+      "tempo": 50.0,
+      "pagina": 15,
+      "linha": 1,
+      "peso": 1,
+      "tamanho": "largo",
+      "proporcao_no_quadro": 2.2,
+      "prioridade": 1,
+      "contexto": "A parede da casa vira um muro longo com a linha laranja; o sedã chega. Transição para o auto.",
+      "narracao": "A luz segue viagem.",
+      "fala": null,
+      "pensamento": null,
+      "onomatopeia": [
+        "VRUM"
+      ],
+      "layout": [
+        {
+          "t": "cap",
+          "x": 58,
+          "y": 5,
+          "w": 38
+        },
+        {
+          "t": "sfx",
+          "x": 6,
+          "y": 78,
+          "r": -6,
+          "s": 0.9,
+          "i": 0
+        }
+      ],
+      "personagens": [],
+      "referencias": [],
+      "refazer": false,
+      "prompt": "Transition shot, slow pan: the cream wall of the modernist house stretches into a long cream concrete wall with a line of orange light at its base; a sleek unbranded grey sedan glides in from the left on a pale floor, no emblem, round wheels. Nobody in frame yet. Composition: keep the upper-right quarter of the frame calm and uncluttered (plain wall, floor or sky), main subject center-left. cinematic 35mm film still, editorial luxury campaign, low golden late-afternoon light, warm cream travertine and paper tones, deep purple and orange accents, fine film grain, shallow depth of field, photorealistic, natural skin texture, 16:9. Negative: no text, no letters, no numbers, no logos, no brand names, no emblems, no signage, no screens, no phones, no tablets, no monitors, no watermark, no crowd, no extra people, no faceless background figures, no deformed hands, no extra fingers, no merged animals, no melted objects, no pickaxe, no axe, no mallet head with a blade.",
+      "arquivo": "keyframes/v2/CAT-P14b.jpg",
+      "alt_files": [],
+      "reuse": null,
+      "reuse_nota": null,
+      "foco": "50% 50%",
+      "esboco": [
+        "muro",
+        "carro:36:76"
+      ]
+    },
+    {
+      "id": "P15a",
+      "status": "reaproveitada",
+      "imagem": "refs/cenas/auto-henrique.png",
+      "plano": "p15",
+      "papel": "abertura",
+      "frame": "F15",
+      "tempo": 52.0,
+      "pagina": 15,
+      "linha": 2,
+      "peso": 1,
+      "tamanho": "largo",
+      "proporcao_no_quadro": 1.2,
+      "prioridade": 3,
+      "contexto": "Henrique ao lado do sedã sem marca. Conquista 4: auto.",
+      "narracao": "A conquista abre horizontes.",
+      "fala": {
+        "quem": "henrique",
+        "texto": "Esse carro vai levar tantas histórias."
+      },
+      "pensamento": null,
+      "onomatopeia": [
+        "TUM"
+      ],
+      "layout": [
+        {
+          "t": "cap",
+          "x": 3,
+          "y": 4,
+          "w": 40
+        },
+        {
+          "t": "sfx",
+          "x": 36,
+          "y": 80,
+          "r": -6,
+          "s": 0.8,
+          "i": 0
+        },
+        {
+          "t": "fala",
+          "x": 30,
+          "y": 22,
+          "w": 30,
+          "tx": 74,
+          "ty": 18
+        }
+      ],
+      "personagens": [
+        "henrique"
+      ],
+      "referencias": [
+        "refs/elenco/henrique.png"
+      ],
+      "refazer": false,
+      "prompt": "Henrique (Distinguished Brazilian man in his late fifties of Italian descent, light olive skin, neatly trimmed full salt-and-pepper beard, thick silver hair swept back, rectangular tortoiseshell glasses, slim build, tailored navy double-breasted suit, white open-collar shirt, steel watch) standing beside a sleek unbranded grey sedan in front of a long cream concrete wall with a line of orange light at its base, late-afternoon sun, long shadows. cinematic 35mm film still, editorial luxury campaign, low golden late-afternoon light, warm cream travertine and paper tones, deep purple and orange accents, fine film grain, shallow depth of field, photorealistic, natural skin texture, 16:9. Negative: no text, no letters, no numbers, no logos, no brand names, no emblems, no signage, no screens, no phones, no tablets, no monitors, no watermark, no crowd, no extra people, no faceless background figures, no deformed hands, no extra fingers, no merged animals, no melted objects, no pickaxe, no axe, no mallet head with a blade.",
+      "arquivo": "keyframes/v2/CAT-P15a.jpg",
+      "alt_files": [],
+      "reuse": "refs/cenas/auto-henrique.png",
+      "reuse_nota": null,
+      "foco": "70% 50%",
+      "esboco": [
+        "muro",
+        "carro:30:76",
+        "figura:80:86:1.6"
+      ]
+    },
+    {
+      "id": "P15b",
+      "status": "a_gerar",
+      "imagem": null,
+      "plano": "p15",
+      "papel": "meio",
+      "frame": null,
+      "tempo": 54.0,
+      "pagina": 16,
+      "linha": 1,
+      "peso": 1,
+      "tamanho": "largo",
+      "proporcao_no_quadro": 1.6,
+      "prioridade": 1,
+      "contexto": "A linha laranja do muro vira o horizonte do mar; Nina ao longe, na piscina. Transição para a paz.",
+      "narracao": "O horizonte encontra o mar.",
+      "fala": null,
+      "pensamento": null,
+      "onomatopeia": [
+        "SHHH"
+      ],
+      "layout": [
+        {
+          "t": "cap",
+          "x": 3,
+          "y": 5,
+          "w": 40
+        },
+        {
+          "t": "sfx",
+          "x": 40,
+          "y": 70,
+          "r": -4,
+          "s": 0.8,
+          "i": 0
+        }
+      ],
+      "personagens": [
+        "nina"
+      ],
+      "referencias": [
+        "refs/elenco/nina.png"
+      ],
+      "refazer": false,
+      "prompt": "Transition shot, slow lateral slide: the line of orange light at the base of a long cream wall extends and becomes the horizon of a calm sea at sunset; past the end of the wall a cream travertine terrace with an infinity pool is revealed; far on the right, small, Nina (athletic Brazilian woman about 30 years old, warm brown skin, long dark hair in a sleek low ponytail, determined expression, wearing an ivory sleeveless tailored top, high-waisted magenta shorts, white minimalist sneakers and a thin gold cuff bracelet) sits at the pool edge. Nobody else. Composition: keep the upper-left quarter of the frame calm and uncluttered (plain wall, floor or sky), main subject center-right. cinematic 35mm film still, editorial luxury campaign, low golden late-afternoon light, warm cream travertine and paper tones, deep purple and orange accents, fine film grain, shallow depth of field, photorealistic, natural skin texture, 16:9. Negative: no text, no letters, no numbers, no logos, no brand names, no emblems, no signage, no screens, no phones, no tablets, no monitors, no watermark, no crowd, no extra people, no faceless background figures, no deformed hands, no extra fingers, no merged animals, no melted objects, no pickaxe, no axe, no mallet head with a blade.",
+      "arquivo": "keyframes/v2/CAT-P15b.jpg",
+      "alt_files": [],
+      "reuse": null,
+      "reuse_nota": null,
+      "foco": "50% 50%",
+      "esboco": [
+        "mar",
+        "figura:84:76:0.6"
+      ]
+    },
+    {
+      "id": "P16a",
+      "status": "provisoria",
+      "imagem": "keyframes/s18.png",
+      "plano": "p16",
+      "papel": "abertura",
+      "frame": "F16",
+      "tempo": 56.0,
+      "pagina": 16,
+      "linha": 2,
+      "peso": 3,
+      "tamanho": "médio",
+      "proporcao_no_quadro": 0.96,
+      "prioridade": 3,
+      "contexto": "Nina sentada à beira da piscina ao pôr do sol. A paz depois da travessia.",
+      "narracao": "Espaço para respirar.",
+      "fala": null,
+      "pensamento": null,
+      "onomatopeia": [],
+      "layout": [
+        {
+          "t": "cap",
+          "x": 3,
+          "y": 4,
+          "w": 30
+        }
+      ],
+      "personagens": [
+        "nina"
+      ],
+      "referencias": [
+        "refs/elenco/nina.png"
+      ],
+      "refazer": true,
+      "prompt": "Nina (athletic Brazilian woman about 30 years old, warm brown skin, long dark hair in a sleek low ponytail, determined expression, wearing an ivory sleeveless tailored top, high-waisted magenta shorts, white minimalist sneakers and a thin gold cuff bracelet) sitting relaxed at the edge of an infinity pool on a cream travertine terrace at sunset, one hand resting open on the warm stone, calm sea and a low orange sun on the horizon; a modernist travertine house behind. Nobody else. cinematic 35mm film still, editorial luxury campaign, low golden late-afternoon light, warm cream travertine and paper tones, deep purple and orange accents, fine film grain, shallow depth of field, photorealistic, natural skin texture, 16:9. Negative: no text, no letters, no numbers, no logos, no brand names, no emblems, no signage, no screens, no phones, no tablets, no monitors, no watermark, no crowd, no extra people, no faceless background figures, no deformed hands, no extra fingers, no merged animals, no melted objects, no pickaxe, no axe, no mallet head with a blade.",
+      "arquivo": "keyframes/v2/CAT-P16a.jpg",
+      "alt_files": [],
+      "reuse": "keyframes/s18.png",
+      "reuse_nota": "Provisória da v1: Nina de saia; a bíblia pede o short magenta.",
+      "foco": "50% 50%",
+      "esboco": [
+        "mar",
+        "figura:46:94:2"
+      ]
+    },
+    {
+      "id": "P16b",
+      "status": "a_gerar",
+      "imagem": null,
+      "plano": "p16",
+      "papel": "meio",
+      "frame": null,
+      "tempo": 58.0,
+      "pagina": 16,
+      "linha": 2,
+      "peso": 2,
+      "tamanho": "pequeno",
+      "proporcao_no_quadro": 0.64,
+      "prioridade": 2,
+      "contexto": "A mão de Nina aberta sobre a pedra morna. Rima com a mão que pegou o cubo.",
+      "narracao": "Tempo para viver.",
+      "fala": null,
+      "pensamento": null,
+      "onomatopeia": [
+        "AH…"
+      ],
+      "layout": [
+        {
+          "t": "cap",
+          "x": 6,
+          "y": 5,
+          "w": 84
+        },
+        {
+          "t": "sfx",
+          "x": 58,
+          "y": 80,
+          "r": -4,
+          "s": 0.7,
+          "i": 0
+        }
+      ],
+      "personagens": [
+        "nina"
+      ],
+      "referencias": [
+        "refs/elenco/nina.png"
+      ],
+      "refazer": false,
+      "prompt": "Close-up: Nina's open hand (warm brown skin, thin gold cuff bracelet) resting palm-down on warm cream travertine at the edge of an infinity pool at sunset, relaxed fingers, five fingers, soft low light, calm water behind. Subject centered so a tall vertical crop of the frame also works. cinematic 35mm film still, editorial luxury campaign, low golden late-afternoon light, warm cream travertine and paper tones, deep purple and orange accents, fine film grain, shallow depth of field, photorealistic, natural skin texture, 16:9. Negative: no text, no letters, no numbers, no logos, no brand names, no emblems, no signage, no screens, no phones, no tablets, no monitors, no watermark, no crowd, no extra people, no faceless background figures, no deformed hands, no extra fingers, no merged animals, no melted objects, no pickaxe, no axe, no mallet head with a blade.",
+      "arquivo": "keyframes/v2/CAT-P16b.jpg",
+      "alt_files": [],
+      "reuse": null,
+      "reuse_nota": null,
+      "foco": "50% 50%",
+      "esboco": [
+        "mar",
+        "mao:50:72:2"
+      ]
+    },
+    {
+      "id": "P16c",
+      "status": "reaproveitada",
+      "imagem": "keyframes/s19.png",
+      "plano": "p16",
+      "papel": "fecho",
+      "frame": "F17",
+      "tempo": 60,
+      "pagina": 17,
+      "linha": 1,
+      "peso": 1,
+      "tamanho": "largo",
+      "proporcao_no_quadro": 0.9,
+      "prioridade": 3,
+      "contexto": "O círculo laranja na parede creme; o reflexo vira um ponto amarelo na água. O fecho, em silêncio.",
+      "narracao": null,
+      "fala": null,
+      "pensamento": null,
+      "onomatopeia": [],
+      "layout": [
+        {
+          "t": "cap",
+          "x": 3,
+          "y": 6,
+          "w": 24
+        },
+        {
+          "t": "quiet",
+          "x": 82,
+          "y": 70
+        }
+      ],
+      "personagens": [],
+      "referencias": [],
+      "refazer": false,
+      "prompt": "A large flat solid orange circle painted on a cream plaster wall, a low travertine ledge, the edge of a still pool in the foreground; on the water the reflection of the circle condenses into a single small yellow point of light. Nobody in frame. cinematic 35mm film still, editorial luxury campaign, low golden late-afternoon light, warm cream travertine and paper tones, deep purple and orange accents, fine film grain, shallow depth of field, photorealistic, natural skin texture, 16:9. Negative: no text, no letters, no numbers, no logos, no brand names, no emblems, no signage, no screens, no phones, no tablets, no monitors, no watermark, no crowd, no extra people, no faceless background figures, no deformed hands, no extra fingers, no merged animals, no melted objects, no pickaxe, no axe, no mallet head with a blade.",
+      "arquivo": "keyframes/v2/CAT-P16c.jpg",
+      "alt_files": [],
+      "reuse": "keyframes/s19.png",
+      "reuse_nota": null,
+      "foco": "50% 80%",
+      "esboco": [
+        "sol-parede"
+      ]
+    }
+  ]
+}

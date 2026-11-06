@@ -1,0 +1,185 @@
+{
+  "url": "https://entregas.interno.catalisa.app",
+  "release": "20261020-5ed4067391bb",
+  "checkedAt": "2026-10-21T11:49:33.492426+00:00",
+  "identity": "catalisa-transitoria-2026-10",
+  "scopeComplete": true,
+  "pages": 10,
+  "pdfs": 7,
+  "userApproved": true,
+  "localVerification": {
+    "verificacao.json": {
+      "passed": true,
+      "checkedAt": "2026-10-21T11:41:01.218Z"
+    },
+    "verificacao-infografico.json": {
+      "passed": true,
+      "checkedAt": "2026-10-21T11:41:00.924Z"
+    },
+    "verificacao-identidade.json": {
+      "passed": true,
+      "checkedAt": "2026-10-21T11:47:30.853Z"
+    }
+  },
+  "remoteVerification": {
+    "url": "https://entregas.interno.catalisa.app",
+    "checkedAt": "2026-10-21T11:49:33.492426+00:00",
+    "release": "20261020-5ed4067391bb",
+    "checks": [
+      {
+        "path": "/catalisa-logo.svg",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/identidade-transitoria.css",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/report-identity.css",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/infografico.html",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/dossie.html",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/infografico.pdf",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/infografico-inter-regular.ttf",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/infografico-inter-bold.ttf",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/infografico-cobertura.json",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/timeline.html",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/dashboard.html",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/cadeia-de-valor.html",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/cadeia-de-valor.pdf",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/dashboard.pdf",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/dashboard-data.json",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/relatorio-completo.html",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/relatorio-completo.pdf",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/developy.html",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/developy.pdf",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/investidores.html",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/investidores.pdf",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/entrevistas.html",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/entrevistas.pdf",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/dados.json",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/dossie-catalisa.zip",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      }
+    ],
+    "tlsVerified": true,
+    "certificate": {
+      "notAfter": "Jan 18 22:09:35 2027 GMT",
+      "subjectAltName": [
+        [
+          "DNS",
+          "entregas.interno.catalisa.app"
+        ]
+      ]
+    },
+    "installedHashesVerified": true,
+    "verifiedManifestFiles": 123,
+    "nginxConfigurationPreserved": true,
+    "passwordFileMode": "640",
+    "authenticatedBrowserVerification": "pending-original-credential"
+  },
+  "persistentKnowledge": [
+    "AGENTS.md",
+    "docs/design/entregas-bauhaus/identidade-transitoria.json",
+    "docs/design/entregas-bauhaus/identidade-transitoria.css",
+    "docs/design/entregas-bauhaus/logo-full-color.svg",
+    "docs/design/entregas-bauhaus/direcao.html",
+    "docs/design/entregas-bauhaus/referencias.json"
+  ],
+  "limitation": "Navegação autenticada em produção não repetida: credencial original indisponível. Navegação local validada e os 123 arquivos instalados conferidos por hash."
+}

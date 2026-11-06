@@ -1,0 +1,189 @@
+{
+  "date": "2026-10-26T23:45:55.663Z",
+  "passed": true,
+  "origin": "https://catalisa.io",
+  "release": "20261026-products-exhibition",
+  "tlsValidation": true,
+  "scope": "Actual public production browser/BFF and configured production AI; synthetic contact, human review and reload. No handoff or external messages.",
+  "results": [
+    {
+      "key": "clinica-agenda",
+      "passed": true,
+      "briefing": {
+        "idea": "agenda clinica",
+        "context": "dentista",
+        "goal": "menos faltas"
+      },
+      "elapsedMs": 21981,
+      "reviewElapsedMs": 37,
+      "hadReview": true,
+      "concept": {
+        "conceptRef": "concept_8287ab6e-f519-459f-8ffa-f50a2eba6731",
+        "version": 1,
+        "briefVersion": 3,
+        "content": {
+          "schemaVersion": "1.0",
+          "title": "Agenda Clínica — Redução de Faltas",
+          "summary": "Plataforma de agendamento para consultórios odontológicos que reduz ausências através de confirmação automática por WhatsApp, lembretes inteligentes e visualização de disponibilidade em tempo real.",
+          "hypothesis": "Dentistas perdem receita com pacientes que não comparecem. Um sistema de agendamento integrado a WhatsApp com confirmação automática, lembretes progressivos (3 dias antes, véspera, 2 horas antes) e fácil reagendamento reduz faltas em até 40% e melhora a ocupação da agenda.",
+          "roles": [
+            "Paciente",
+            "Dentista",
+            "Assistente de Clínica",
+            "Sistema de Notificação"
+          ],
+          "screens": [
+            {
+              "id": "screen_booking",
+              "title": "Agendar Consulta",
+              "description": "Paciente escolhe data, horário e tipo de procedimento. Sistema exibe disponibilidade em tempo real e confirma o agendamento.",
+              "items": [
+                {
+                  "label": "Data disponível",
+                  "value": "Calendário com horários livres filtrados por tipo de procedimento"
+                },
+                {
+                  "label": "Tipo de procedimento",
+                  "value": "Limpeza, restauração, consulta, ortodontia, outros"
+                },
+                {
+                  "label": "Dados do paciente",
+                  "value": "Nome, telefone, CPF e histórico de faltas"
+                }
+              ],
+              "action": {
+                "label": "Confirmar Agendamento",
+                "nextScreenId": "screen_confirmation"
+              }
+            },
+            {
+              "id": "screen_confirmation",
+              "title": "Confirmação e Envio",
+              "description": "Resumo do agendamento com opção de receber confirmação e lembretes por WhatsApp. Dentista visualiza a agenda atualizada.",
+              "items": [
+                {
+                  "label": "Data e hora",
+                  "value": "Exibição clara do compromisso agendado"
+                },
+                {
+                  "label": "Tipo de procedimento",
+                  "value": "Procedimento selecionado e duração estimada"
+                },
+                {
+                  "label": "Canal de confirmação",
+                  "value": "WhatsApp com número do paciente"
+                }
+              ],
+              "action": {
+                "label": "Enviar Confirmação",
+                "nextScreenId": "screen_calendar_view"
+              }
+            },
+            {
+              "id": "screen_calendar_view",
+              "title": "Agenda do Consultório",
+              "description": "Visão consolidada da agenda da clínica com status de confirmação, lembretes enviados e histórico de faltas por paciente.",
+              "items": [
+                {
+                  "label": "Agendamentos do dia",
+                  "value": "Lista com horários, pacientes e status de confirmação"
+                },
+                {
+                  "label": "Taxa de confirmação",
+                  "value": "Percentual de pacientes que confirmaram presença"
+                },
+                {
+                  "label": "Histórico de faltas",
+                  "value": "Pacientes com múltiplas ausências para ação preventiva"
+                }
+              ],
+              "action": {
+                "label": "Gerenciar Agenda",
+                "nextScreenId": null
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "slug": "calendar",
+              "role": "Disponibilidade em tempo real do consultório, sincronizada com horários de atendimento e pausas"
+            },
+            {
+              "slug": "wpp",
+              "role": "Canal de confirmação automática, lembretes progressivos e reagendamento direto com o paciente"
+            },
+            {
+              "slug": "customers",
+              "role": "Cadastro de pacientes com CPF, histórico de faltas e preferências de comunicação"
+            },
+            {
+              "slug": "data-store",
+              "role": "Armazenamento de agendamentos, confirmações e métricas de presença por clínica"
+            },
+            {
+              "slug": "webhooks-engine",
+              "role": "Gatilhos para envio de lembretes automáticos em momentos específicos (3 dias, véspera, 2 horas antes)"
+            },
+            {
+              "slug": "analytics",
+              "role": "Relatórios de taxa de falta, ocupação da agenda e efetividade dos lembretes por período"
+            }
+          ],
+          "journey": [
+            {
+              "id": "step_booking",
+              "label": "Paciente Agenda Consulta",
+              "description": "Paciente acessa o link de agendamento, escolhe data, horário e procedimento. Sistema valida disponibilidade via Calendar.",
+              "blockSlugs": [
+                "calendar",
+                "customers"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "step_confirmation",
+              "label": "Confirmação Automática por WhatsApp",
+              "description": "Sistema envia confirmação do agendamento ao paciente via WPP com resumo, data, hora e opção de reagendar. Assistente recebe notificação na agenda.",
+              "blockSlugs": [
+                "wpp",
+                "webhooks-engine"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "step_reminders",
+              "label": "Lembretes Progressivos",
+              "description": "Webhooks disparam lembretes automáticos: 3 dias antes, véspera e 2 horas antes da consulta. Paciente pode confirmar ou reagendar via WhatsApp.",
+              "blockSlugs": [
+                "webhooks-engine",
+                "wpp",
+                "data-store"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "step_analytics",
+              "label": "Análise de Taxa de Falta",
+              "description": "Dentista consulta dashboard com taxa de falta, ocupação da agenda e pacientes com histórico de ausências para ações corretivas.",
+              "blockSlugs": [
+                "analytics",
+                "data-store"
+              ],
+              "humanReview": true
+            }
+          ],
+          "limitations": [
+            "Conceito assume integração com sistema de gestão de consultório existente; agenda de dentista deve estar mapeada em Calendar antes do lançamento.",
+            "Efetividade na redução de faltas depende da qualidade do cadastro de pacientes e da taxa de resposta ao WhatsApp; população sem smartphone ou que ignora mensagens pode não responder aos lembretes.",
+            "Não inclui gestão de fila de espera, reagendamento automático de cancelamentos ou balanceamento de carga entre dentistas; esses fluxos requerem configuração adicional.",
+            "Análise de taxa de falta requer histórico mínimo de 30 dias; primeiras semanas não terão dados estatísticos confiáveis.",
+            "Confirmação por WhatsApp depende de número de celular válido e consentimento prévio do paciente para receber mensagens; LGPD deve ser respeitada.",
+            "Lembretes progressivos não contemplam reconfirmação obrigatória; paciente pode ignorar mensagens e comparecimento não é garantido."
+          ],
+          "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+        }
+      },
+      "errors": []
+    }
+  ]
+}

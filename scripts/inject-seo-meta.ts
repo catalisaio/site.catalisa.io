@@ -1,3 +1,4 @@
+import {installBuildSiteLocales, assertBuildSiteLocaleCoverage} from './site-locales';
 /**
  * Injects article-specific SEO meta tags into static HTML files.
  * Runs without Puppeteer — uses string replacement on the built index.html template.
@@ -10,9 +11,9 @@
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { articles, categoryLabelKeys } from '../src/data/articles';
-import type { ArticleCategory } from '../src/data/articles';
+import { getArtifactBuildMode } from './site-build-mode';
 
-const DIST_DIR = resolve(process.cwd(), 'dist');
+const DIST_DIR = resolve(process.env.SITE_DIST_DIR || 'dist');
 const BASE_URL = 'https://catalisa.io';
 
 // Load translation files
@@ -72,6 +73,7 @@ function buildArticleHtml(
   const jsonLd = JSON.stringify({
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
+    inLanguage: lang,
     headline: metaTitle,
     description: metaDescription,
     author: { '@type': 'Organization', name: 'Catalisa', url: BASE_URL },
@@ -86,7 +88,6 @@ function buildArticleHtml(
     image: { '@type': 'ImageObject', url: ogImage, width: 1200, height: 630 },
     articleSection: article.category,
     keywords: article.keywords,
-    wordCount: article.readingTime * 200,
   });
 
   // Replace meta tags in template
@@ -179,6 +180,8 @@ ${articleTags}
 }
 
 function main() {
+  // The release inventory owns native and compatibility metadata during prerender.
+  if (getArtifactBuildMode().redesign) { installBuildSiteLocales(); assertBuildSiteLocaleCoverage(); console.log('Article meta injection deferred to release prerender'); return; }
   const templatePath = resolve(DIST_DIR, 'index.html');
   if (!existsSync(templatePath)) {
     console.error('dist/index.html not found — run vite build first');

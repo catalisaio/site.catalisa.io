@@ -1,0 +1,51 @@
+/* site-2026.10 — decisões D03–D05; Latin transfer subset with unchanged full-font complement. */
+@font-face { font-family: 'Catalisa Inter'; src: url('/redesign/inter-0.woff2') format('woff2'); font-weight: 400; font-display: swap; unicode-range: U+0250-02FF, U+0370-1DFF, U+1F00-1FFF, U+2070-209F, U+20D0-20FF, U+2150-2160, U+2162-218F, U+2200-2211, U+2213-225F, U+2261-2263, U+2266-25B5, U+25B8-25CA, U+25CC-25CE, U+25D0-2712, U+2714-10FFFF; }
+@font-face { font-family: 'Catalisa Inter'; src: url('/redesign/inter-latin-0.woff2') format('woff2'); font-weight: 400; font-display: swap; unicode-range: U+0000-024F, U+0300-036F, U+1E00-1EFF, U+2000-206F, U+20A0-20CF, U+2100-214F, U+2161, U+2190-21FF, U+2212, U+2260, U+2264, U+2265, U+25B6, U+25B7, U+25CB, U+25CF, U+2713; }
+@font-face { font-family: 'Catalisa Inter'; src: url('/redesign/inter-1.woff2') format('woff2'); font-weight: 500; font-display: swap; unicode-range: U+0250-02FF, U+0370-1DFF, U+1F00-1FFF, U+2070-209F, U+20D0-20FF, U+2150-2160, U+2162-218F, U+2200-2211, U+2213-225F, U+2261-2263, U+2266-25B5, U+25B8-25CA, U+25CC-25CE, U+25D0-2712, U+2714-10FFFF; }
+@font-face { font-family: 'Catalisa Inter'; src: url('/redesign/inter-latin-1.woff2') format('woff2'); font-weight: 500; font-display: swap; unicode-range: U+0000-024F, U+0300-036F, U+1E00-1EFF, U+2000-206F, U+20A0-20CF, U+2100-214F, U+2161, U+2190-21FF, U+2212, U+2260, U+2264, U+2265, U+25B6, U+25B7, U+25CB, U+25CF, U+2713; }
+@font-face { font-family: 'Catalisa Inter'; src: url('/redesign/inter-2.woff2') format('woff2'); font-weight: 600; font-display: swap; unicode-range: U+0250-02FF, U+0370-1DFF, U+1F00-1FFF, U+2070-209F, U+20D0-20FF, U+2150-2160, U+2162-218F, U+2200-2211, U+2213-225F, U+2261-2263, U+2266-25B5, U+25B8-25CA, U+25CC-25CE, U+25D0-2712, U+2714-10FFFF; }
+@font-face { font-family: 'Catalisa Inter'; src: url('/redesign/inter-latin-2.woff2') format('woff2'); font-weight: 600; font-display: swap; unicode-range: U+0000-024F, U+0300-036F, U+1E00-1EFF, U+2000-206F, U+20A0-20CF, U+2100-214F, U+2161, U+2190-21FF, U+2212, U+2260, U+2264, U+2265, U+25B6, U+25B7, U+25CB, U+25CF, U+2713; }
+/* Embedded SVGs explicitly name Inter; same URLs reuse the downloaded Latin faces. */
+@font-face { font-family: 'Inter'; src: url('/redesign/inter-0.woff2') format('woff2'); font-weight: 400; font-display: swap; unicode-range: U+0250-02FF, U+0370-1DFF, U+1F00-1FFF, U+2070-209F, U+20D0-20FF, U+2150-2160, U+2162-218F, U+2200-2211, U+2213-225F, U+2261-2263, U+2266-25B5, U+25B8-25CA, U+25CC-25CE, U+25D0-2712, U+2714-10FFFF; }
+@font-face { font-family: 'Inter'; src: url('/redesign/inter-latin-0.woff2') format('woff2'); font-weight: 400; font-display: swap; unicode-range: U+0000-024F, U+0300-036F, U+1E00-1EFF, U+2000-206F, U+20A0-20CF, U+2100-214F, U+2161, U+2190-21FF, U+2212, U+2260, U+2264, U+2265, U+25B6, U+25B7, U+25CB, U+25CF, U+2713; }
+@font-face { font-family: 'Inter'; src: url('/redesign/inter-1.woff2') format('woff2'); font-weight: 500; font-display: swap; unicode-range: U+0250-02FF, U+0370-1DFF, U+1F00-1FFF, U+2070-209F, U+20D0-20FF, U+2150-2160, U+2162-218F, U+2200-2211, U+2213-225F, U+2261-2263, U+2266-25B5, U+25B8-25CA, U+25CC-25CE, U+25D0-2712, U+2714-10FFFF; }
+@font-face { font-family: 'Inter'; src: url('/redesign/inter-latin-1.woff2') format('woff2'); font-weight: 500; font-display: swap; unicode-range: U+0000-024F, U+0300-036F, U+1E00-1EFF, U+2000-206F, U+20A0-20CF, U+2100-214F, U+2161, U+2190-21FF, U+2212, U+2260, U+2264, U+2265, U+25B6, U+25B7, U+25CB, U+25CF, U+2713; }
+@font-face { font-family: 'Inter'; src: url('/redesign/inter-2.woff2') format('woff2'); font-weight: 600; font-display: swap; unicode-range: U+0250-02FF, U+0370-1DFF, U+1F00-1FFF, U+2070-209F, U+20D0-20FF, U+2150-2160, U+2162-218F, U+2200-2211, U+2213-225F, U+2261-2263, U+2266-25B5, U+25B8-25CA, U+25CC-25CE, U+25D0-2712, U+2714-10FFFF; }
+@font-face { font-family: 'Inter'; src: url('/redesign/inter-latin-2.woff2') format('woff2'); font-weight: 600; font-display: swap; unicode-range: U+0000-024F, U+0300-036F, U+1E00-1EFF, U+2000-206F, U+20A0-20CF, U+2100-214F, U+2161, U+2190-21FF, U+2212, U+2260, U+2264, U+2265, U+25B6, U+25B7, U+25CB, U+25CF, U+2713; }
+
+.c-site {
+  --c-brand: #734B9C;
+  --c-yellow: #FDC234;
+  --c-orange: #FE8342;
+  --c-paper: #F6F3EE;
+  --c-paper-report: #F4F0E8;
+  --c-ink: #1A1D23;
+  --c-body: #62596A;
+  --c-muted: #716678;
+  --c-rule: #CBC6C0;
+  --c-control-border: #87778F;
+  --c-lavender: #E9E3EE;
+  --c-warm: #EEE8DF;
+  --c-deep: #35213F;
+  --c-scene-orange: #F18A43;
+  --c-scene-soft: #ED9E62;
+  --c-scene-purple: #B69BCF;
+  --c-danger: #A12636;
+  --c-success: #356449;
+  --c-font: 'Catalisa Inter', Inter, Arial, sans-serif;
+  --c-mono: ui-monospace, SFMono-Regular, Consolas, monospace;
+  --c-space-1: 4px;
+  --c-space-2: 8px;
+  --c-space-3: 12px;
+  --c-space-4: 16px;
+  --c-space-6: 24px;
+  --c-space-8: 32px;
+  --c-space-12: 48px;
+  --c-space-16: 64px;
+  --c-space-24: 96px;
+  --c-duration: 240ms;
+  --c-duration-scene: 400ms;
+  --c-cycle: 12s;
+  --c-radius: 2px;
+  --c-max-width: 1600px;
+}

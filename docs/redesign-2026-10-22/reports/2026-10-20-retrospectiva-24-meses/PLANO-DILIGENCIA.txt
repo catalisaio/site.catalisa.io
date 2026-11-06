@@ -1,0 +1,35 @@
+PLANO DE IMPLEMENTAÇÃO — DILIGÊNCIA CATALISA
+Edição: 21/10/2026. Base técnica: snapshot de 20/10/2026.
+
+Objetivo confirmado pelo usuário: avaliação para investimento ou aquisição,
+com seção própria de homologação como fornecedor. Público: equipes de avaliação
+de empresas como Accenture e Deloitte. Não pressupõe vínculo ou aprovação delas.
+
+1. Criar cinco leituras conectadas: síntese da transação; diligência técnica;
+   diligência corporativa/comercial/financeira; sala de evidências e riscos;
+   homologação para contratação. Cada leitura terá PDF e navegação acessível.
+2. Manter o corpus anterior congelado. Usar fontes por SHA, PRs com estado,
+   observações de código e documentos versionados. Relacionar as 110 frentes.
+3. Separar evidência técnica, relato histórico, autodeclaração e documento não
+   fornecido. Disponibilidade documental não equivale à efetividade de controle.
+4. Cobrir produto, arquitetura, segurança, dados/privacidade, IA, continuidade,
+   qualidade, titularidade/IP, societário, comercial, financeiro/fiscal,
+   pessoas, fornecedores e integração após a transação.
+5. Para cada questão: achado, fonte, limite, consequência, pedido documental,
+   responsável sugerido, prioridade e critério verificável de encerramento.
+6. Criar registro de riscos, índice de evidências, pedidos de informação e
+   controles de homologação exportáveis. Busca/filtros funcionam offline;
+   conteúdo e PDFs permanecem legíveis sem JavaScript.
+7. Integrar acessos contextuais às páginas existentes e à página inicial.
+   Preservar identidade aprovada, logo roxo com ponto amarelo e funcionalidades.
+8. Validar integridade das fontes, cobertura, links, navegação, exportação,
+   impressão, PDFs, responsividade e regressões das leituras existentes.
+9. Empacotar e publicar no serviço interno existente, preservando autenticação,
+   TLS e corpus. Conferir arquivos instalados por hash e registrar limitações.
+
+LIMITES DO TRABALHO
+Não executar pentest, operações financeiras, alterações de banco ou testes
+destrutivos em produção. Não inferir receita, valuation, licença regulatória,
+certificação, quadro societário ou cessão de IP do histórico de engenharia.
+Não enviar materiais a terceiros. Planos/prazos/papéis são propostas até aceite.
+Conteúdo para revisão da administração e dos avaliadores; não é parecer externo.

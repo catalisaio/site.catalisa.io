@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-22T23:27:49.818Z",
+  "origin": "https://panel-api.wpp.bb.stg.catalisa.app",
+  "scope": "Read-only discovery using an existing staging hotsite configuration. This candidate is not yet selected as the new institutional site tenant/agent.",
+  "candidateOnly": true,
+  "operations": [
+    {
+      "label": "AI service status",
+      "method": "GET",
+      "status": 200,
+      "enabled": true
+    },
+    {
+      "label": "Configured candidate agent metadata",
+      "method": "GET",
+      "status": 200,
+      "agentReachable": true,
+      "active": true,
+      "declaredToolCount": 4
+    },
+    {
+      "label": "Configured candidate public capture contract",
+      "method": "GET",
+      "status": 200,
+      "captureReachable": true,
+      "fields": null
+    }
+  ]
+}

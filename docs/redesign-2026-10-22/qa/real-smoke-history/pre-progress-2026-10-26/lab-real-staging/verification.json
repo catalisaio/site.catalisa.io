@@ -1,0 +1,231 @@
+{
+  "date": "2026-10-26T13:06:07.321Z",
+  "passed": true,
+  "origin": "https://site-staging.catalisa.io",
+  "tlsValidation": true,
+  "scope": "Real staging AI through the target Lab and BFF. Fictional reserved contact address. No handoff or external messages.",
+  "stage": "contact-continuation",
+  "result": {
+    "idea": "Quero matricular alunos de uma escola de inglês pelo WhatsApp",
+    "elapsedMs": 52885,
+    "concept": {
+      "conceptRef": "concept_8a257033-be43-4c10-9dca-74a0cab5888a",
+      "version": 1,
+      "briefVersion": 1,
+      "content": {
+        "schemaVersion": "1.0",
+        "title": "Matricular Alunos pelo WhatsApp",
+        "summary": "Plataforma para matricular alunos de uma escola de inglês via WhatsApp, facilitando a comunicação e o processo de inscrição.",
+        "hypothesis": "O público-alvo são alunos de escolas de inglês que preferem a comunicação digital e rápida. A confirmação do interesse e a matrícula podem ser feitas diretamente pelo WhatsApp.",
+        "roles": [
+          "Atendente de matrícula",
+          "Alunos interessados",
+          "Coordenador da escola"
+        ],
+        "screens": [
+          {
+            "id": "screen-matricula-inicial",
+            "title": "Início da Matrícula",
+            "description": "Tela inicial onde o aluno pode iniciar o processo de matrícula e escolher o curso desejado.",
+            "items": [
+              {
+                "label": "Selecione o curso",
+                "value": "Inglês Básico, Intermediário, Avançado"
+              },
+              {
+                "label": "Horários disponíveis",
+                "value": "Manhã, Tarde, Noite"
+              },
+              {
+                "label": "Iniciar matrícula",
+                "value": "Clique aqui para prosseguir"
+              }
+            ],
+            "action": {
+              "label": "Continuar para informações pessoais",
+              "nextScreenId": "screen-informacoes-pessoais"
+            }
+          },
+          {
+            "id": "screen-informacoes-pessoais",
+            "title": "Informações Pessoais",
+            "description": "Tela onde o aluno insere suas informações pessoais para completar a matrícula.",
+            "items": [
+              {
+                "label": "Nome completo",
+                "value": "Digite seu nome"
+              },
+              {
+                "label": "Email",
+                "value": "seuemail@exemplo.com"
+              },
+              {
+                "label": "Telefone",
+                "value": "+55 11 91234-5678"
+              }
+            ],
+            "action": {
+              "label": "Enviar informações",
+              "nextScreenId": "screen-confirmacao"
+            }
+          },
+          {
+            "id": "screen-confirmacao",
+            "title": "Confirmação de Matrícula",
+            "description": "Tela que confirma a matrícula e fornece orientações sobre os próximos passos.",
+            "items": [
+              {
+                "label": "Matrícula concluída!",
+                "value": "Você receberá um email com as informações."
+              },
+              {
+                "label": "Acesse o grupo no WhatsApp",
+                "value": "Clique aqui para entrar no grupo de alunos."
+              },
+              {
+                "label": "Fale com o coordenador",
+                "value": "Para dúvidas, entre em contato."
+              }
+            ],
+            "action": {
+              "label": "Finalizar",
+              "nextScreenId": null
+            }
+          }
+        ],
+        "blocks": [
+          {
+            "slug": "wpp",
+            "role": "Canal principal de vendas"
+          },
+          {
+            "slug": "email",
+            "role": "Notificações de matrícula"
+          }
+        ],
+        "journey": [
+          {
+            "id": "step-inicio",
+            "label": "Iniciar matrícula",
+            "description": "Aluno inicia o processo de matrícula pelo WhatsApp.",
+            "blockSlugs": [
+              "wpp"
+            ],
+            "humanReview": false
+          },
+          {
+            "id": "step-informacoes",
+            "label": "Enviar informações pessoais",
+            "description": "Aluno fornece suas informações pessoais para a matrícula.",
+            "blockSlugs": [
+              "email"
+            ],
+            "humanReview": false
+          },
+          {
+            "id": "step-confirmacao",
+            "label": "Confirmação da matrícula",
+            "description": "Confirmação da matrícula é enviada ao aluno via email.",
+            "blockSlugs": [
+              "email"
+            ],
+            "humanReview": true
+          },
+          {
+            "id": "step-grupo-whatsapp",
+            "label": "Acesso ao grupo",
+            "description": "Aluno é convidado a acessar o grupo no WhatsApp.",
+            "blockSlugs": [
+              "wpp"
+            ],
+            "humanReview": false
+          }
+        ],
+        "limitations": [
+          "Necessário confirmar a disponibilidade de horários antes da matrícula.",
+          "Alunos devem ter idade mínima de 16 anos.",
+          "A plataforma depende da conexão estável do aluno ao WhatsApp.",
+          "Informações pessoais precisam ser tratadas conforme a LGPD."
+        ],
+        "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+      }
+    },
+    "reload": true,
+    "contactContinuation": true,
+    "requests": [
+      {
+        "path": "/api/site/session",
+        "status": 401
+      },
+      {
+        "path": "/api/site/sessions",
+        "status": 201
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200
+      },
+      {
+        "path": "/api/site/lab/briefing",
+        "status": 200
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200
+      },
+      {
+        "path": "/api/site/identity",
+        "status": 201
+      },
+      {
+        "path": "/api/site/contact",
+        "status": 200
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200
+      },
+      {
+        "path": "/api/site/sessions",
+        "status": 201
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200
+      },
+      {
+        "path": "/api/site/concepts",
+        "status": 202
+      },
+      {
+        "path": "/api/site/jobs/job_a73b0689-7501-42f1-8848-38c3d5c832a0",
+        "status": 200
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200
+      }
+    ],
+    "errors": []
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "version": "2026-10-25-proposal",
+  "status": "draft-awaiting-owner-review",
+  "legalApprovalClaimed": false,
+  "publicTranslationProposal": {
+    "pt-BR": "docs/redesign-2026-10-22/privacy-proposed.pt-BR.json",
+    "en-US": "docs/redesign-2026-10-22/privacy-proposed.en-US.json",
+    "diff": "/tmp/site-privacy-review.diff",
+    "repositoryApplied": true,
+    "technicalReviewByCoordinator": true
+  },
+  "verifiedImplementationFacts": {
+    "contact": "Name plus email OR phone; essential opaque session cookie; no native CRM lead is currently created.",
+    "ai": "Dedicated configured agent, zero tools, bounded generation, structured validated output. Name/email/phone are not intentionally put into the generation input; visitor free text can still contain personal data.",
+    "humanSupport": "Confirmed immutable packet; here-only operational channel; authenticated operator opens, claims and replies; no automatic outbound email or WhatsApp.",
+    "siteRetention": {
+      "visitorSessionDays": 7,
+      "idempotencyReceiptHours": 24,
+      "inboxDays": 30,
+      "staffSessionMaximumHours": 1
+    },
+    "expiryAndDeletion": "Logical expiry followed by hourly cleanup that clears encrypted sensitive fields before soft-delete. This is not proof of immediate physical deletion from backups or upstream provider records.",
+    "storage": "Private state, receipts, support packets and staff credentials use fields marked encrypted in the dedicated Data Store collections.",
+    "securityClaimsNotProven": [
+      "end-to-end encryption",
+      "exclusive Brazilian residency",
+      "24/7 staffed monitoring",
+      "particular certifications or penetration test schedule",
+      "completed LIA or signed transfer safeguards",
+      "specific backup physical-deletion deadline"
+    ]
+  },
+  "marketInsightsProposal": {
+    "enabled": false,
+    "requires": "Owner-approved and published policy version/hash plus explicit server flag. Do not turn on collection merely because modules exist.",
+    "purpose": "Understand completion of the site funnel and aggregate demand categories to prioritize product and content work.",
+    "data": "Allowlisted contract event name, day, briefing version and enum taxonomy. Raw session/event identifiers are replaced by keyed opaque hashes. No conversation, prompt, concept text, contact details, IP, browser identifiers or credentials are accepted.",
+    "classification": "Pseudonymized operational analytics, not a claim of irreversible anonymization.",
+    "access": "Authenticated authorized site operator only; categories can be corrected with version checks. Aggregate outputs exclude subject identifiers.",
+    "proposedRetentionDays": 90,
+    "minimumDistinctSubjectsPerPublishedBucket": 5,
+    "deletion": "Expiry and cleanup required for event and review records; retention must be applied to any approved backups as well.",
+    "pending": [
+      "owner decision about enabling measurement",
+      "owner approval of purpose, lawful basis, taxonomy, access and retention",
+      "publish approved information before enabling collection; real synthetic pipeline proof passed with live collection disabled"
+    ]
+  },
+  "ownerReviewBeforePublication": [
+    "Review the PT/EN factual changes and the remaining platform-wide policy clauses; technical corrections are not legal approval.",
+    "Confirm controller/DPO and privacy mailbox operation, legal bases and rights-request process.",
+    "Confirm the actual production hosting, AI provider account terms, processing locations, backups and provider retention exceptions.",
+    "Choose and confirm support queue ownership, hours and incident monitoring responsibility.",
+    "Approve or keep market insights disabled; approve a specific public policy/hash before real collection."
+  ],
+  "providerSourcesForOwnerVerification": [
+    "https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data",
+    "https://platform.claude.com/docs/en/manage-claude/api-and-data-retention"
+  ],
+  "providerSourceCaveat": "These primary references do not establish the exact account contract, enabled features or retention exceptions used by this installation. No account-specific guarantee is asserted."
+}

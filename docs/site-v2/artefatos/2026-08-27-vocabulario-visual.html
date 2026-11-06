@@ -1,0 +1,445 @@
+<title>Vocabulário Visual Catalisa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Sans:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+
+<script>
+(function(){try{var t=localStorage.getItem('cat-tema');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+
+<style>
+:root{
+  --marca-amb:#FDC234;
+  --pap:  color-mix(in srgb, #FCFCFD 95%, var(--marca-amb));
+  --pap2: color-mix(in srgb, #F4F4F7 94%, var(--marca-amb));
+  --pap3: color-mix(in srgb, #ECECF2 92%, var(--marca-amb));
+  --rule: color-mix(in srgb, #E1E2E9 93%, var(--marca-amb));
+  --rule2:color-mix(in srgb, #C7C9D4 93%, var(--marca-amb));
+  --ink:#101317; --ink2:#39404A; --mut:#6C6B7A;
+  --acc:#734B9C; --acc-soft:#F2EDF8; --lim:#8F6206; --neg:#B3261E;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --pap:#0D0F13; --pap2:#161922; --pap3:#1D212C; --rule:#252934; --rule2:#3A4050;
+    --ink:#E9EAEF; --ink2:#BEC2CC; --mut:#8A8998;
+    --acc:#B392DE; --acc-soft:#1E1829; --lim:#D9A441; --neg:#E7857C;
+  }
+}
+:root[data-theme="dark"]{
+  --pap:#0D0F13; --pap2:#161922; --pap3:#1D212C; --rule:#252934; --rule2:#3A4050;
+  --ink:#E9EAEF; --ink2:#BEC2CC; --mut:#8A8998;
+  --acc:#B392DE; --acc-soft:#1E1829; --lim:#D9A441; --neg:#E7857C;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--pap);color:var(--ink);
+  font-family:"Instrument Sans",system-ui,-apple-system,sans-serif;font-size:16px;line-height:1.55}
+:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+p{margin:0}
+
+.bar{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--pap) 93%,transparent);
+  backdrop-filter:blur(12px);border-bottom:1px solid var(--rule)}
+.bar-in{max-width:1080px;margin:0 auto;padding:0 28px;display:flex;align-items:center;gap:20px;min-height:54px;flex-wrap:wrap}
+.logo{font-weight:700;font-size:15px;letter-spacing:-.02em;white-space:nowrap}
+.logo i{font-style:normal;color:var(--acc)}
+.logo b{color:var(--marca-amb)}
+.filtros{display:flex;gap:2px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.filtros::-webkit-scrollbar{display:none}
+.filtros button{appearance:none;background:none;border:0;border-bottom:2px solid transparent;color:var(--mut);
+  font:inherit;font-size:13px;padding:16px 11px;cursor:pointer;white-space:nowrap;min-height:44px}
+.filtros button:hover{color:var(--ink)}
+.filtros button[aria-pressed="true"]{color:var(--ink);border-bottom-color:var(--acc);font-weight:600}
+.tema{appearance:none;background:none;border:1px solid var(--rule2);color:var(--mut);
+  font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;
+  padding:0 11px;height:32px;cursor:pointer;display:inline-flex;align-items:center;gap:7px;align-self:center}
+.tema:hover{color:var(--ink);border-color:var(--acc)}
+.tema svg{width:13px;height:13px}
+
+.doc{max-width:1080px;margin:0 auto;padding:0 28px 120px}
+.abre{padding:56px 0 44px;border-bottom:1px solid var(--rule)}
+.kick{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--acc);margin:0 0 18px}
+h1{font-family:"Source Serif 4",Georgia,serif;font-weight:600;letter-spacing:-.022em;line-height:1.08;
+  font-size:clamp(30px,4.6vw,48px);margin:0;max-width:20ch;text-wrap:balance}
+.lede{font-size:18px;line-height:1.55;color:var(--ink2);margin:20px 0 0;max-width:62ch}
+.lede b{color:var(--ink);font-weight:600}
+.aviso{margin-top:26px;border-left:2px solid var(--lim);padding:12px 0 12px 18px;font-size:15px;color:var(--ink2);max-width:66ch;line-height:1.55}
+.aviso b{color:var(--ink)}
+
+.comp{padding:52px 0;border-bottom:1px solid var(--rule)}
+.comp.off{display:none}
+.cab{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:6px}
+.cn{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.14em;color:var(--acc)}
+.ct{font-family:"Source Serif 4",Georgia,serif;font-size:24px;font-weight:600;letter-spacing:-.018em;margin:0}
+.cg{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);
+  border:1px solid var(--rule2);padding:3px 8px;margin-left:auto}
+.cd{font-size:16px;color:var(--ink2);max-width:70ch;margin:0 0 4px}
+.cd b{color:var(--ink);font-weight:600}
+.art{margin:26px 0 20px;background:var(--pap2);border:1px solid var(--rule);padding:26px 22px}
+.art svg{width:100%;height:auto;display:block}
+.uso{display:grid;grid-template-columns:88px 1fr;gap:16px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:14.5px;color:var(--ink2);line-height:1.5}
+.uso span{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);padding-top:3px}
+
+/* ── gramática comum dos desenhos ── */
+svg .l{fill:none;stroke:var(--rule2);stroke-width:1.2}
+svg .a{fill:none;stroke:var(--acc);stroke-width:1.5}
+svg .am{fill:none;stroke:var(--lim);stroke-width:1.5}
+svg .fa{fill:var(--acc)}
+svg .fam{fill:var(--lim)}
+svg .fs{fill:var(--pap)}
+svg .fs2{fill:var(--pap3)}
+svg .t{fill:var(--ink);font-family:"Instrument Sans",sans-serif;font-size:13px}
+svg .tb{fill:var(--ink);font-family:"Instrument Sans",sans-serif;font-size:13.5px;font-weight:600}
+svg .tm{fill:var(--mut);font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.1em}
+svg .ta{fill:var(--acc);font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.1em}
+svg .tl{fill:var(--lim);font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.1em}
+svg .tn{fill:var(--ink);font-family:"IBM Plex Mono",monospace;font-size:26px;font-weight:600;letter-spacing:-.03em}
+@media (prefers-reduced-motion:reduce){ [data-anima]{display:none} }
+@media (max-width:720px){
+  .doc{padding:0 16px 80px}.bar-in{padding:0 16px}
+  .art{padding:16px 12px}.uso{grid-template-columns:1fr;gap:4px}
+}
+</style>
+
+<header class="bar"><div class="bar-in">
+  <div class="logo">Catalisa<b>.</b> <i>vocabulário visual</i></div>
+  <nav class="filtros" aria-label="Grupos">
+    <button data-g="todos" aria-pressed="true">Todos</button>
+    <button data-g="modelo" aria-pressed="false">O modelo</button>
+    <button data-g="alavanca" aria-pressed="false">A alavanca</button>
+    <button data-g="composto" aria-pressed="false">O composto</button>
+    <button data-g="confianca" aria-pressed="false">A confiança</button>
+    <button data-g="mercado" aria-pressed="false">O mercado</button>
+  </nav>
+  <button class="tema" id="tema" type="button" aria-label="Alternar tema"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path id="ti" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span id="tl">escuro</span></button>
+</div></header>
+
+<div class="doc">
+<section class="abre">
+  <p class="kick">Vocabulário visual</p>
+  <h1>Catorze desenhos que explicam a plataforma sem falar dela.</h1>
+  <p class="lede">Cada peça aqui carrega <b>um argumento</b> da Catalisa e existe para substituir parágrafo, não para decorá-lo. A régua é única: se apagar o desenho e o argumento continuar de pé, o desenho era enfeite; se o argumento cair, ele estava fazendo o trabalho certo.</p>
+  <p class="aviso"><b>O protagonista é o modelo, não o produto.</b> A versão anterior do site derivou para catálogo — “instale a etapa que dói” — e isso contraria o pedido original: falar da plataforma, do modelo e da arquitetura, com os produtos entrando como <b>prova de flexibilidade</b>. Os desenhos abaixo assumem essa correção.</p>
+</section>
+
+<section class="comp" data-g="modelo">
+  <div class="cab"><span class="cn">01</span><h2 class="ct">O ciclo que define a Catalisa</h2><span class="cg">o modelo</span></div>
+  <p class="cd">A operação de um cliente gera dado; o dado vira um pacote declarativo; o pacote vira um produto novo — que opera e gera mais dado. <b>É o argumento da plataforma inteira em um desenho.</b></p>
+  <div class="art"><svg viewBox="0 0 960 280" role="img" aria-label="Ciclo: a operação roda, o dado acumula, vira pacote declarativo, nasce um produto — e o produto volta a operar.">
+    <defs><path id="ciclo" d="M137 95 H823 Q863 95 863 135 V145 Q863 185 823 185 H137 Q97 185 97 145 V135 Q97 95 137 95 Z"/></defs>
+    <use href="#ciclo" class="l"/>
+    <g class="fs2"><rect x="40" y="62" width="196" height="56" rx="3"/><rect x="275" y="62" width="196" height="56" rx="3"/><rect x="510" y="62" width="196" height="56" rx="3"/><rect x="745" y="62" width="196" height="56" rx="3"/></g>
+    <g class="l"><rect x="40" y="62" width="196" height="56" rx="3"/><rect x="275" y="62" width="196" height="56" rx="3"/><rect x="510" y="62" width="196" height="56" rx="3"/><rect x="745" y="62" width="196" height="56" rx="3"/></g>
+    <g class="tb"><text x="60" y="88">A operação roda</text><text x="295" y="88">O dado acumula</text><text x="530" y="88">Vira pacote</text><text x="765" y="88">Nasce um produto</text></g>
+    <g class="tm"><text x="60" y="106">ATENDE, DECIDE, REGISTRA</text><text x="295" y="106">NA BASE DO CLIENTE</text><text x="530" y="106">FUNIL, AGENTES, FLUXOS</text><text x="765" y="106">COM PORTA PRÓPRIA</text></g>
+    <g class="a"><path d="M244 90 H267"/><path d="M259 84l8 6-8 6"/><path d="M479 90 H502"/><path d="M494 84l8 6-8 6"/><path d="M714 90 H737"/><path d="M729 84l8 6-8 6"/></g>
+    <g class="am"><path d="M111 152 H849" stroke-dasharray="4 5"/><path d="M125 144l-9 8 9 8"/></g>
+    <text class="tl" x="480" y="172" text-anchor="middle">E O PRODUTO NOVO VOLTA A OPERAR — SOBRE A MESMA BASE</text>
+    <g data-anima><circle class="fa" r="4.5"><animateMotion dur="11s" repeatCount="indefinite"><mpath href="#ciclo"/></animateMotion></circle></g>
+    <text class="tm" x="40" y="238">CADA VOLTA BARATEIA A SEGUINTE: O QUE ERA PROJETO VIRA DOCUMENTO</text>
+  </svg></div>
+  <div class="uso"><span>usar em</span><p>Abertura da home e primeiro slide de investidor. É a peça que responde “por que vocês têm tantos produtos” sem citar nenhum.</p></div>
+</section>
+
+<section class="comp" data-g="modelo">
+  <div class="cab"><span class="cn">02</span><h2 class="ct">A pilha invertida</h2><span class="cg">o modelo</span></div>
+  <p class="cd">A arquitetura contada de cima para baixo: o produto no topo, e tudo abaixo existindo para sustentá-lo. <b>A ordem é o argumento</b> — plataforma apresentada como protagonista transfere ao comprador o trabalho de imaginar o que ela vira.</p>
+  <div class="art"><svg viewBox="0 0 960 264" role="img" aria-label="Cinco camadas empilhadas: o produto no topo, depois o pacote, a operação, o núcleo e os blocos.">
+    <g><rect x="40" y="14" width="880" height="42" rx="3" fill="var(--acc-soft)" stroke="var(--acc)" stroke-width="1.5"/>
+       <text class="tb" x="62" y="41" fill="var(--acc)">o produto</text><text class="tm" x="898" y="41" text-anchor="end" fill="var(--acc)">É ISTO QUE SE CONTRATA</text></g>
+    <g class="l fs"><rect x="40" y="64" width="880" height="42" rx="3"/><rect x="40" y="114" width="880" height="42" rx="3"/><rect x="40" y="164" width="880" height="42" rx="3"/><rect x="40" y="214" width="880" height="42" rx="3"/></g>
+    <g class="tb"><text x="62" y="91">o pacote</text><text x="62" y="141">a operação</text><text x="62" y="191">o núcleo</text><text x="62" y="241">os blocos</text></g>
+    <g class="tm"><text x="898" y="91" text-anchor="end">O PRODUTO DECLARADO COMO DADO</text><text x="898" y="141" text-anchor="end">CADASTRO, FUNIL, AGENTES · 207 AÇÕES</text><text x="898" y="191" text-anchor="end">UMA BASE POR EMPRESA</text><text x="898" y="241" text-anchor="end">32 BLOCOS · 863 ENDPOINTS</text></g>
+  </svg></div>
+  <div class="uso"><span>usar em</span><p>Página de arquitetura e material técnico. Substitui a lista de módulos que o site atual tem em quatro páginas de primeiro nível.</p></div>
+</section>
+
+<section class="comp" data-g="alavanca">
+  <div class="cab"><span class="cn">03</span><h2 class="ct">Dado ou código</h2><span class="cg">a alavanca</span></div>
+  <p class="cd">A régua que explica a velocidade sem prometê-la. Quando alguém pergunta “vocês atendem o meu setor?”, a resposta honesta é <b>uma tabela, não um sim</b>.</p>
+  <div class="art"><svg viewBox="0 0 960 258" role="img" aria-label="Duas colunas: o que é dado entra em dias; o que é código entra em semanas.">
+    <rect x="40" y="16" width="420" height="226" rx="3" fill="var(--acc-soft)" stroke="var(--acc)" stroke-width="1.4"/>
+    <rect x="500" y="16" width="420" height="226" rx="3" class="l fs"/>
+    <text class="ta" x="62" y="44">É DADO — ENTRA EM DIAS</text>
+    <text class="tm" x="522" y="44">É CÓDIGO — ENTRA EM SEMANAS</text>
+    <g class="t">
+      <text x="62" y="80">Tipo de cadastro e funil</text><text x="62" y="110">Agentes, ferramentas e limites</text>
+      <text x="62" y="140">Fluxos, gatilhos e a ordem</text><text x="62" y="170">Perfil do copiloto e metas</text>
+      <text x="62" y="200">Catálogo e vocabulário</text>
+      <text x="522" y="80">Campo de lastro por setor</text><text x="522" y="110">Integração com o sistema do cliente</text>
+      <text x="522" y="140">Venda por peso, que fecha na balança</text><text x="522" y="170">Ficha técnica e custo de prato</text>
+      <text x="522" y="200">Tela que atualiza sozinha</text>
+    </g>
+    <g class="a"><path d="M62 88 H440" opacity=".35"/><path d="M62 118 H440" opacity=".35"/><path d="M62 148 H440" opacity=".35"/><path d="M62 178 H440" opacity=".35"/></g>
+    <g class="l"><path d="M522 88 H900"/><path d="M522 118 H900"/><path d="M522 148 H900"/><path d="M522 178 H900"/></g>
+    <text class="ta" x="62" y="228">ZERO LINHA DE CÓDIGO DE PRODUTO</text>
+    <text class="tm" x="522" y="228">ORÇADO E DITO ANTES DE ASSINAR</text>
+  </svg></div>
+  <div class="uso"><span>usar em</span><p>Toda página de vertical, e na conversa comercial. É a peça que impede a promessa de “fazemos qualquer coisa em dias”.</p></div>
+</section>
+
+<section class="comp" data-g="modelo">
+  <div class="cab"><span class="cn">04</span><h2 class="ct">Um motor, vários vocabulários</h2><span class="cg">o modelo</span></div>
+  <p class="cd">O que cada setor chama por um nome diferente é, no motor, <b>o mesmo número</b>. É a prova concreta de que a abstração aguenta — e ela foi medida, não suposta.</p>
+  <div class="art"><svg viewBox="0 0 960 262" role="img" aria-label="Quatro setores com nomes diferentes convergem para o mesmo cálculo: taxa de diluição por pagador.">
+    <g class="t"><text x="40" y="56">saúde</text><text x="40" y="102">energia</text><text x="40" y="148">setor público</text><text x="40" y="194">logística</text></g>
+    <g class="tm"><text x="150" y="56">“GLOSA”</text><text x="150" y="102">“RETENÇÃO”</text><text x="150" y="148">“EMPENHO”</text><text x="150" y="194">“DESCONTO DE AVARIA”</text></g>
+    <g class="l"><path d="M330 52 C 450 52 470 122 560 122"/><path d="M330 98 C 450 98 470 122 560 122"/><path d="M330 144 C 450 144 470 122 560 122"/><path d="M330 190 C 450 190 470 122 560 122"/></g>
+    <rect x="580" y="78" width="340" height="88" rx="3" fill="var(--acc-soft)" stroke="var(--acc)" stroke-width="1.5"/>
+    <text class="tb" x="604" y="112" fill="var(--acc)">taxa de diluição por pagador</text>
+    <text class="tm" x="604" y="136" fill="var(--acc)">QUANTO ELE HISTORICAMENTE NÃO PAGA</text>
+    <text class="tm" x="40" y="240">MEDIDO: ~80% DA ESTEIRA ATRAVESSA DE UM SETOR A OUTRO SEM REESCRITA</text>
+    <g data-anima><circle class="fa" r="4"><animateMotion dur="8s" repeatCount="indefinite" path="M330 52 C 450 52 470 122 560 122"/></circle>
+      <circle class="fa" r="4"><animateMotion dur="8s" begin="2s" repeatCount="indefinite" path="M330 98 C 450 98 470 122 560 122"/></circle>
+      <circle class="fa" r="4"><animateMotion dur="8s" begin="4s" repeatCount="indefinite" path="M330 144 C 450 144 470 122 560 122"/></circle>
+      <circle class="fa" r="4"><animateMotion dur="8s" begin="6s" repeatCount="indefinite" path="M330 190 C 450 190 470 122 560 122"/></circle></g>
+  </svg></div>
+  <div class="uso"><span>usar em</span><p>Página de plataforma e material de investidor. É o desenho que mais rapidamente converte “eles fizeram um produto” em “eles fizeram um motor”.</p></div>
+</section>
+
+<section class="comp" data-g="alavanca">
+  <div class="cab"><span class="cn">05</span><h2 class="ct">O custo do enésimo produto</h2><span class="cg">a alavanca</span></div>
+  <p class="cd">O primeiro produto custou um vertical inteiro. O sétimo custou um documento declarativo. <b>A curva é a tese econômica</b> — e o eixo é qualitativo de propósito, porque não medimos horas.</p>
+  <div class="art"><svg viewBox="0 0 960 250" role="img" aria-label="Barras decrescentes do primeiro ao sétimo produto: o esforço cai e estabiliza perto do piso.">
+    <path class="l" d="M70 200 H920 M70 26 V200"/>
+    <g class="fs2"><rect x="100" y="42" width="72" height="158"/><rect x="212" y="86" width="72" height="114"/><rect x="324" y="122" width="72" height="78"/><rect x="436" y="146" width="72" height="54"/><rect x="548" y="160" width="72" height="40"/><rect x="660" y="168" width="72" height="32"/></g>
+    <rect x="772" y="172" width="72" height="28" class="fa"/>
+    <g class="l"><rect x="100" y="42" width="72" height="158"/><rect x="212" y="86" width="72" height="114"/><rect x="324" y="122" width="72" height="78"/><rect x="436" y="146" width="72" height="54"/><rect x="548" y="160" width="72" height="40"/><rect x="660" y="168" width="72" height="32"/></g>
+    <g class="tm"><text x="136" y="218" text-anchor="middle">1º</text><text x="248" y="218" text-anchor="middle">2º</text><text x="360" y="218" text-anchor="middle">3º</text><text x="472" y="218" text-anchor="middle">4º</text><text x="584" y="218" text-anchor="middle">5º</text><text x="696" y="218" text-anchor="middle">6º</text></g>
+    <text class="ta" x="808" y="218" text-anchor="middle">7º</text>
+    <path class="am" d="M100 178 H920" stroke-dasharray="4 5"/>
+    <text class="tl" x="920" y="170" text-anchor="end">O PISO: O CUSTO DE ESCREVER O PACOTE</text>
+    <text class="tm" x="70" y="20">ESFORÇO PARA PÔR UM PRODUTO NO AR</text>
+  </svg></div>
+  <div class="uso"><span>usar em</span><p>Material de investidor e página de plataforma. Anda junto do 03 — sem ele, a curva vira promessa.</p></div>
+</section>
+
+<section class="comp" data-g="alavanca">
+  <div class="cab"><span class="cn">06</span><h2 class="ct">Um pacote, muitos perfis</h2><span class="cg">a alavanca</span></div>
+  <p class="cd">Cinco negócios diferentes atendidos pelo <b>mesmo pacote</b>, separados por três chaves de configuração. Publicar cinco pacotes seria cinco vezes o custo de manutenção e quatro chances de divergirem em silêncio.</p>
+  <div class="art"><svg viewBox="0 0 960 236" role="img" aria-label="Um pacote no centro, três chaves de configuração, e cinco perfis de negócio derivados.">
+    <rect x="40" y="70" width="230" height="96" rx="3" fill="var(--acc-soft)" stroke="var(--acc)" stroke-width="1.5"/>
+    <text class="tb" x="62" y="108" fill="var(--acc)">um pacote</text>
+    <text class="tm" x="62" y="132" fill="var(--acc)">CATÁLOGO, PEDIDO, PIX, FIADO</text>
+    <g class="tm"><text x="310" y="66">CHAVES</text></g>
+    <g class="t"><text x="310" y="98">exige maioridade</text><text x="310" y="126">unidade de venda</text><text x="310" y="154">janela de entrega</text></g>
+    <g class="l"><path d="M278 118 H302"/><path d="M470 92 H556"/><path d="M470 118 H556"/><path d="M470 146 H556"/></g>
+    <g class="l fs"><rect x="580" y="30" width="340" height="34" rx="3"/><rect x="580" y="72" width="340" height="34" rx="3"/><rect x="580" y="114" width="340" height="34" rx="3"/><rect x="580" y="156" width="340" height="34" rx="3"/><rect x="580" y="198" width="340" height="34" rx="3"/></g>
+    <g class="t"><text x="600" y="52">adega</text><text x="600" y="94">mercearia</text><text x="600" y="136">padaria</text><text x="600" y="178">açougue</text><text x="600" y="220">pet shop</text></g>
+    <g class="tm"><text x="900" y="52" text-anchor="end">MAIORIDADE ✓</text><text x="900" y="94" text-anchor="end">LISTA RECORRENTE</text><text x="900" y="136" text-anchor="end">ENCOMENDA COM DATA</text><text x="900" y="178" text-anchor="end">VENDA POR PESO</text><text x="900" y="220" text-anchor="end">RECORRÊNCIA + AGENDA</text></g>
+  </svg></div>
+  <div class="uso"><span>usar em</span><p>Página de vertical e conversa com parceiro. É o desenho que transforma “um caso” em “uma família”.</p></div>
+</section>
+
+<section class="comp" data-g="composto">
+  <div class="cab"><span class="cn">07</span><h2 class="ct">Base única, visão 360</h2><span class="cg">o composto</span></div>
+  <p class="cd">Todos os canais e todos os produtos escrevem na <b>mesma base</b>, dentro da conta da empresa. Por isso o segundo produto não pede migração, conector nem reconciliação.</p>
+  <div class="art"><svg viewBox="0 0 960 292" role="img" aria-label="Cinco canais e três gatilhos automáticos escrevem na mesma ficha do cliente.">
+    <defs>
+      <path id="v1" d="M262 52 C 400 52 420 146 520 146"/><path id="v2" d="M262 99 C 400 99 420 146 520 146"/>
+      <path id="v3" d="M262 146 H520"/><path id="v4" d="M262 193 C 400 193 420 146 520 146"/>
+      <path id="v5" d="M262 240 C 400 240 420 146 520 146"/>
+    </defs>
+    <g class="t"><text x="40" y="56">WhatsApp</text><text x="40" y="103">site e portal</text><text x="40" y="150">sala de vídeo</text><text x="40" y="197">e-mail</text><text x="40" y="244">HTTP: totem, PDV, ERP</text></g>
+    <g class="l"><use href="#v1"/><use href="#v2"/><use href="#v3"/><use href="#v4"/><use href="#v5"/></g>
+    <rect x="540" y="40" width="380" height="212" rx="3" fill="var(--acc-soft)" stroke="var(--acc)" stroke-width="1.5"/>
+    <text class="ta" x="564" y="68">FICHA ÚNICA DO CLIENTE</text>
+    <g class="l"><path d="M564 94 H860"/><path d="M564 120 H896"/><path d="M564 146 H812"/><path d="M564 172 H876"/><path d="M564 198 H788"/><path d="M564 224 H840"/></g>
+    <g data-anima>
+      <circle class="fam" r="4"><animateMotion dur="7s" repeatCount="indefinite"><mpath href="#v1"/></animateMotion></circle>
+      <circle class="fam" r="4"><animateMotion dur="7s" begin="1.4s" repeatCount="indefinite"><mpath href="#v2"/></animateMotion></circle>
+      <circle class="fam" r="4"><animateMotion dur="7s" begin="2.8s" repeatCount="indefinite"><mpath href="#v3"/></animateMotion></circle>
+      <circle class="fam" r="4"><animateMotion dur="7s" begin="4.2s" repeatCount="indefinite"><mpath href="#v4"/></animateMotion></circle>
+      <circle class="fam" r="4"><animateMotion dur="7s" begin="5.6s" repeatCount="indefinite"><mpath href="#v5"/></animateMotion></circle>
+    </g>
+    <text class="tm" x="40" y="282">NÃO HÁ INTEGRAÇÃO PORQUE NUNCA HOUVE SEPARAÇÃO</text>
+  </svg></div>
+  <div class="uso"><span>usar em</span><p>Home e página de dados. É a peça que justifica preço crescente dentro do mesmo cliente.</p></div>
+</section>
+
+<section class="comp" data-g="composto">
+  <div class="cab"><span class="cn">08</span><h2 class="ct">A escada do composto</h2><span class="cg">o composto</span></div>
+  <p class="cd">Um produto é um sistema. Dois são uma visão. Três são uma operação com memória — e é aí que <b>o cliente antigo passa a valer mais que o novo</b>.</p>
+  <div class="art"><svg viewBox="0 0 960 236" role="img" aria-label="Três degraus: um produto resolve a etapa, dois dão visão 360, três dão uma operação com memória.">
+    <g class="l fs"><rect x="40" y="120" width="280" height="88" rx="3"/><rect x="340" y="86" width="280" height="122" rx="3"/></g>
+    <rect x="640" y="42" width="280" height="166" rx="3" fill="var(--acc-soft)" stroke="var(--acc)" stroke-width="1.5"/>
+    <g class="tn"><text x="62" y="160">1</text><text x="362" y="126">2</text><text x="662" y="82" fill="var(--acc)">3</text></g>
+    <g class="tb"><text x="102" y="160">a etapa resolvida</text><text x="402" y="126">visão 360</text><text x="702" y="82" fill="var(--acc)">operação com memória</text></g>
+    <g class="tm"><text x="62" y="186">FONTE ÚNICA DAQUELA ETAPA</text><text x="362" y="152">O MESMO CADASTRO ATRAVESSA</text><text x="362" y="172">AS DUAS JORNADAS</text>
+      <text x="662" y="108" fill="var(--acc)">A DECISÃO DE UMA ETAPA USA</text><text x="662" y="128" fill="var(--acc)">O HISTÓRICO DA OUTRA</text>
+      <text x="662" y="162" fill="var(--acc)">CONDIÇÃO MELHOR POR TER OPERADO</text></g>
+    <g class="am"><path d="M328 164 H336"/><path d="M628 130 H636"/></g>
+    <text class="tm" x="40" y="228">NADA DISSO É INTEGRAÇÃO: É A MESMA CONTA, DESDE O PRIMEIRO DIA</text>
+  </svg></div>
+  <div class="uso"><span>usar em</span><p>Página de expansão e conversa de renovação. Substitui o parágrafo sobre venda cruzada.</p></div>
+</section>
+
+<section class="comp" data-g="confianca">
+  <div class="cab"><span class="cn">09</span><h2 class="ct">O que não atravessa</h2><span class="cg">a confiança</span></div>
+  <p class="cd">Nenhum recurso passa de uma conta para outra — <b>nem por automação</b>. O isolamento não vem de uma camada de permissão que alguém pode esquecer de aplicar: vem de um invariante sem exceção.</p>
+  <div class="art"><svg viewBox="0 0 960 232" role="img" aria-label="Duas contas separadas por uma parede: só um evento de saída explícito atravessa.">
+    <g class="l fs"><rect x="40" y="42" width="380" height="150" rx="3"/><rect x="540" y="42" width="380" height="150" rx="3"/></g>
+    <g class="ta"><text x="64" y="70">EMPRESA A</text><text x="564" y="70">EMPRESA B</text></g>
+    <g class="t"><text x="64" y="100">cadastro · conversas</text><text x="64" y="128">fluxos · conhecimento</text><text x="64" y="156">documentos · decisões</text>
+      <text x="564" y="100">cadastro · conversas</text><text x="564" y="128">fluxos · conhecimento</text><text x="564" y="156">documentos · decisões</text></g>
+    <path d="M480 24 V210" stroke="var(--acc)" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <g stroke="var(--neg)" stroke-width="1.6" fill="none" stroke-linecap="round">
+      <path d="M424 108 H462"/><path d="M448 98l12 10-12 10"/>
+      <path d="M536 148 H498"/><path d="M512 138l-12 10 12 10"/>
+      <path d="M470 100l20 16M490 100l-20 16" stroke-width="2"/>
+      <path d="M470 140l20 16M490 140l-20 16" stroke-width="2"/>
+    </g>
+    <path class="am" d="M424 70 H530" stroke-dasharray="5 5"/><path class="am" d="M518 62l12 8-12 8"/>
+    <text class="tl" x="480" y="52" text-anchor="middle">WEBHOOK</text>
+    <text class="tm" x="480" y="224" text-anchor="middle">O FLUXO EXECUTA ONDE MORA. CRUZAR EXIGE EVENTO EXPLÍCITO.</text>
+  </svg></div>
+  <div class="uso"><span>usar em</span><p>Página de segurança e resposta a due diligence. É o desenho que fecha a objeção antes dela ser feita.</p></div>
+</section>
+
+<section class="comp" data-g="confianca">
+  <div class="cab"><span class="cn">10</span><h2 class="ct">A versão congelada</h2><span class="cg">a confiança</span></div>
+  <p class="cd">A regra muda; o que já foi contratado, não. <b>Sem isso, “por que este caso saiu com esta taxa?” não tem resposta — só tem opinião.</b></p>
+  <div class="art"><svg viewBox="0 0 960 236" role="img" aria-label="A política passa da versão 1 para a 2, e o contrato assinado mantém o selo da versão 1.">
+    <rect x="40" y="34" width="330" height="164" rx="3" class="l fs"/>
+    <text class="tm" x="64" y="62">POLÍTICA DE DECISÃO</text>
+    <g class="l"><path d="M64 88 H322"/><path d="M64 112 H346"/><path d="M64 136 H286"/></g>
+    <g data-anima>
+      <text class="tn" x="64" y="180">v1<animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;.42;.5;.95;1" dur="9s" repeatCount="indefinite"/></text>
+      <text class="tn" x="64" y="180" fill="var(--acc)">v2<animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.42;.5;.95;1" dur="9s" repeatCount="indefinite"/></text>
+    </g>
+    <g class="l"><path d="M394 116 H566"/><path d="M550 106l16 10-16 10"/></g>
+    <text class="tm" x="480" y="102" text-anchor="middle">ASSINOU SOB v1</text>
+    <rect x="590" y="34" width="330" height="164" rx="3" fill="var(--acc-soft)" stroke="var(--acc)" stroke-width="1.5"/>
+    <text class="ta" x="614" y="62">CONTRATO ASSINADO</text>
+    <g class="a" opacity=".45"><path d="M614 88 H872"/><path d="M614 112 H896"/><path d="M614 136 H836"/></g>
+    <circle cx="856" cy="164" r="26" class="am"/><text class="tn" x="856" y="173" text-anchor="middle" fill="var(--lim)" font-size="19">v1</text>
+    <text class="tm" x="40" y="226">A CONDIÇÃO DO CONTRATO É A QUE VALIA NO DIA — E ISSO É AUDITÁVEL</text>
+  </svg></div>
+  <div class="uso"><span>usar em</span><p>Página de decisão e material para instituição financeira. É o argumento que uma plataforma de conversa não consegue fazer.</p></div>
+</section>
+
+<section class="comp" data-g="confianca">
+  <div class="cab"><span class="cn">11</span><h2 class="ct">A fronteira é o conjunto de ferramentas</h2><span class="cg">a confiança</span></div>
+  <p class="cd">O que limita um agente exposto ao público não é o login nem o texto do pedido — é <b>o que não está na lista dele</b>. Instrução a modelo não é garantia; estrutura é.</p>
+  <div class="art"><svg viewBox="0 0 960 258" role="img" aria-label="O agente tem quatro ferramentas de leitura e não tem quatro de escrita, que aparecem riscadas.">
+    <circle cx="480" cy="126" r="52" fill="var(--acc-soft)" stroke="var(--acc)" stroke-width="1.6"/>
+    <text class="tb" x="480" y="122" text-anchor="middle" fill="var(--acc)">agente</text>
+    <text class="tm" x="480" y="142" text-anchor="middle" fill="var(--acc)">DO SITE</text>
+    <g class="a"><path d="M300 56 H424"/><path d="M280 100 H426"/><path d="M280 152 H426"/><path d="M300 196 H424"/></g>
+    <g class="t" text-anchor="end"><text x="292" y="52">responder sobre o produto</text><text x="272" y="96">consultar a agenda</text><text x="272" y="148">ler a base de conhecimento</text><text x="292" y="192">oferecer horário</text></g>
+    <text class="ta" x="40" y="24">TEM</text>
+    <g stroke="var(--neg)" stroke-width="1.5" fill="none" stroke-dasharray="4 4"><path d="M534 56 H660"/><path d="M534 100 H680"/><path d="M534 152 H680"/><path d="M534 196 H660"/></g>
+    <g stroke="var(--neg)" stroke-width="1.8" fill="none">
+      <path d="M584 46l16 20M600 46l-16 20"/><path d="M596 90l16 20M612 90l-16 20"/><path d="M596 142l16 20M612 142l-16 20"/><path d="M584 186l16 20M600 186l-16 20"/></g>
+    <g class="t"><text x="696" y="52">criar cadastro</text><text x="696" y="96">emitir credencial</text><text x="696" y="148">listar outro cliente</text><text x="696" y="192">executar ação livre</text></g>
+    <text x="920" y="24" text-anchor="end" fill="var(--neg)" font-family="IBM Plex Mono, monospace" font-size="9.5" letter-spacing=".1em">NÃO TEM</text>
+    <text class="tm" x="480" y="240" text-anchor="middle">O QUE NÃO ESTÁ NA LISTA NÃO EXISTE PARA QUEM CONVERSA</text>
+  </svg></div>
+  <div class="uso"><span>usar em</span><p>Página de segurança e de agentes. É a resposta ao medo de “agente solto” — o medo real de quem compra.</p></div>
+</section>
+
+<section class="comp" data-g="composto">
+  <div class="cab"><span class="cn">12</span><h2 class="ct">A régua do dia</h2><span class="cg">o composto</span></div>
+  <p class="cd">O canal é a parte visível e não é a parte grande. <b>A única marca alta do dia é o ato humano</b> — todo o resto disparou sozinho.</p>
+  <div class="art"><svg viewBox="0 0 960 226" role="img" aria-label="Régua de 24 horas com quatro processos automáticos e um único ato humano, marcado alto.">
+    <path class="l" d="M50 156 H910"/>
+    <g class="l"><path d="M50 156v9"/><path d="M265 156v9"/><path d="M480 156v9"/><path d="M695 156v9"/><path d="M910 156v9"/></g>
+    <g class="tm"><text x="50" y="186">00h</text><text x="265" y="186" text-anchor="middle">06h</text><text x="480" y="186" text-anchor="middle">12h</text><text x="695" y="186" text-anchor="middle">18h</text><text x="910" y="186" text-anchor="end">24h</text></g>
+    <g class="am"><path d="M301 156V124"/><path d="M462 156V124"/><path d="M731 156V124"/><path d="M850 156V104"/></g>
+    <g class="t" text-anchor="middle" font-size="12"><text x="301" y="114">resumo da manhã</text><text x="462" y="114">documento nasce</text><text x="731" y="114">retomada, com teto</text><text x="850" y="94">lote no segmento</text></g>
+    <path d="M587 156V46" stroke="var(--acc)" stroke-width="2.6" fill="none"/>
+    <rect x="579" y="30" width="16" height="16" rx="2" class="fa"/>
+    <text class="tb" x="608" y="42" fill="var(--acc)">o único ato humano: alguém libera</text>
+    <text class="tm" x="50" y="214">NENHUM DOS OUTROS FOI DISPARADO POR UMA PESSOA</text>
+  </svg></div>
+  <div class="uso"><span>usar em</span><p>Home. É a peça que separa a Catalisa da categoria “atendimento automático” em um só olhar.</p></div>
+</section>
+
+<section class="comp" data-g="mercado">
+  <div class="cab"><span class="cn">13</span><h2 class="ct">Onde nos comparar</h2><span class="cg">o mercado</span></div>
+  <p class="cd">O que decide não vem pronto; o que vem pronto não decide. <b>O mapa é nosso, com os eixos declarados</b> — a Catalisa não é avaliada por analista nenhum, e a página diz isso.</p>
+  <div class="art"><svg viewBox="0 0 960 450" role="img" aria-label="Dois eixos: o que chega pronto na horizontal e profundidade da decisão na vertical. A Catalisa fica no alto à direita.">
+    <rect x="440" y="44" width="380" height="168" rx="3" fill="var(--acc-soft)"/>
+    <path d="M440 44 H820 V212 H440 Z" fill="none" stroke="var(--acc)" stroke-width="1" stroke-dasharray="4 5"/>
+    <text class="ta" x="454" y="64">OPERAÇÃO INSTALADA, COM DECISÃO AUDITÁVEL</text>
+    <path class="l" d="M84 384 H830 M84 38 V384"/>
+    <path class="l" d="M440 38 V384 M84 212 H830" opacity=".5"/>
+    <g class="tm"><text x="84" y="408">← PEÇA PARA MONTAR</text><text x="830" y="408" text-anchor="end">OPERAÇÃO INSTALADA →</text>
+      <text x="16" y="382" transform="rotate(-90 16 382)">← SEM REGRA EXPLÍCITA</text><text x="16" y="178" transform="rotate(-90 16 178)">POLÍTICA VERSIONADA →</text></g>
+    <g class="l fs">
+      <rect x="100" y="302" width="178" height="42" rx="3"/><rect x="142" y="230" width="200" height="42" rx="3"/>
+      <rect x="112" y="92" width="212" height="42" rx="3"/><rect x="398" y="308" width="192" height="42" rx="3"/><rect x="628" y="256" width="182" height="42" rx="3"/></g>
+    <g class="t" text-anchor="middle" font-size="12"><text x="189" y="322">Automação por fluxo</text><text x="242" y="250">Plataformas de conversa</text>
+      <text x="218" y="112">Plataformas de decisão</text><text x="494" y="328">Suítes de gestão e ERP</text><text x="719" y="276">SaaS vertical pronto</text></g>
+    <g class="tm" text-anchor="middle"><text x="189" y="337">ZAPIER · N8N</text><text x="242" y="265">MQ CONVERSATIONAL AI</text>
+      <text x="218" y="127">MQ DECISION INTELLIGENCE · FICO</text><text x="494" y="343">TOTVS · ORACLE · MICROSOFT</text><text x="719" y="291">O SISTEMA DO SEU SETOR</text></g>
+    <rect x="600" y="108" width="196" height="52" rx="3" fill="var(--acc-soft)" stroke="var(--acc)" stroke-width="1.5"/>
+    <circle cx="622" cy="134" r="6" class="fa"/>
+    <text class="tb" x="640" y="130" fill="var(--acc)">Catalisa</text><text class="ta" x="640" y="148">O MODELO INTEIRO</text>
+  </svg></div>
+  <div class="uso"><span>usar em</span><p>Página de posicionamento e slide de abertura comercial. Responde “com quem vocês competem” sem fingir avaliação de analista.</p></div>
+</section>
+
+<section class="comp" data-g="mercado">
+  <div class="cab"><span class="cn">14</span><h2 class="ct">Duas frentes, uma máquina</h2><span class="cg">o mercado</span></div>
+  <p class="cd">O atendimento origina a relação e o dado; a decisão monetiza o que a operação já sabe. <b>A ligação entre as duas é a tese</b> — e a Catalisa já a percorreu sem nomear: a antecipação nasceu do WhatsApp do prestador de saúde.</p>
+  <div class="art"><svg viewBox="0 0 960 270" role="img" aria-label="A frente de atendimento origina relação e dado; a frente de decisão monetiza; e o dado acumulado melhora a decisão.">
+    <rect x="40" y="46" width="380" height="132" rx="3" class="l fs"/>
+    <rect x="540" y="46" width="380" height="132" rx="3" fill="var(--acc-soft)" stroke="var(--acc)" stroke-width="1.5"/>
+    <text class="tb" x="64" y="78">Frente A — atendimento</text>
+    <text class="tb" x="564" y="78" fill="var(--acc)">Frente B — decisão</text>
+    <g class="tm"><text x="64" y="104">CICLO CURTO · CAC BAIXO</text><text x="64" y="126">TICKET BAIXO, RECORRENTE</text><text x="64" y="148">ENTREGA VOLUME, PROVA E O DADO</text></g>
+    <g class="ta"><text x="564" y="104">CICLO LONGO · VENDA ASSISTIDA</text><text x="564" y="126">COBRA POR DECISÃO OU POR VOLUME</text><text x="564" y="148">ENTREGA RECEITA POR RESULTADO</text></g>
+    <g class="a"><path d="M430 92 H528"/><path d="M514 84l14 8-14 8"/></g>
+    <text class="ta" x="479" y="78" text-anchor="middle">ORIGINA</text>
+    <g class="am"><path d="M528 140 H430" stroke-dasharray="5 5"/><path d="M444 132l-14 8 14 8"/></g>
+    <text class="tl" x="479" y="164" text-anchor="middle">O DADO MELHORA A DECISÃO</text>
+    <text class="tm" x="40" y="216">O MESMO MOVIMENTO QUE A TOTVS CHAMA DE TECHFIN, COM MERCADO ENDEREÇÁVEL DECLARADO 7× MAIOR QUE O DE GESTÃO</text>
+    <text class="tm" x="40" y="240">A ANTECIPAÇÃO NASCEU DO WHATSAPP DO PRESTADOR DE SAÚDE — NÃO DE UMA MESA DE CRÉDITO</text>
+  </svg></div>
+  <div class="uso"><span>usar em</span><p>Material de investidor. É o desenho que transforma “sete produtos” em “uma estratégia”.</p></div>
+</section>
+
+<section class="comp" data-g="modelo" style="border-bottom:0">
+  <div class="cab"><span class="cn">—</span><h2 class="ct">A régua que decide se um desenho entra</h2><span class="cg">método</span></div>
+  <p class="cd">Quatro perguntas, e todas precisam de sim. Elas existem porque a tentação constante é desenhar o que fica bonito em vez do que carrega argumento.</p>
+  <div class="art"><svg viewBox="0 0 960 200" role="img" aria-label="Quatro critérios para um desenho entrar: carrega argumento, substitui texto, sobrevive ao teste da metáfora e a animação explica.">
+    <g class="l fs"><rect x="40" y="30" width="210" height="120" rx="3"/><rect x="264" y="30" width="210" height="120" rx="3"/><rect x="488" y="30" width="210" height="120" rx="3"/><rect x="712" y="30" width="208" height="120" rx="3"/></g>
+    <g class="ta"><text x="62" y="58">01</text><text x="286" y="58">02</text><text x="510" y="58">03</text><text x="734" y="58">04</text></g>
+    <g class="tb"><text x="62" y="88">Carrega argumento</text><text x="286" y="88">Substitui texto</text><text x="510" y="88">Passa no teste</text><text x="734" y="88">A animação explica</text></g>
+    <g class="t" font-size="12"><text x="62" y="112">Se sai, o argumento</text><text x="62" y="130">cai junto.</text>
+      <text x="286" y="112">O parágrafo vira</text><text x="286" y="130">rótulo dentro dele.</text>
+      <text x="510" y="112">Funcionaria igual</text><text x="510" y="130">em outro setor? Refaz.</text>
+      <text x="734" y="112">Dá para dizer o quê</text><text x="734" y="130">se move, e por quê.</text></g>
+    <text class="tm" x="40" y="186">SEM OS QUATRO SIM, É ENFEITE — E ENFEITE É O QUE FAZ UMA PÁGINA PARECER GERADA</text>
+  </svg></div>
+  <div class="uso"><span>usar em</span><p>Interno. É a catraca que impede a biblioteca de virar galeria.</p></div>
+</section>
+
+</div>
+
+<script>
+(function(){
+  var raiz=document.documentElement, bt=document.getElementById('tema'),
+      rot=document.getElementById('tl'), ico=document.getElementById('ti'), mq=null;
+  try{ mq=window.matchMedia('(prefers-color-scheme: dark)'); }catch(e){}
+  var LUA='M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z';
+  var SOL='M12 4V2M12 22v-2M4 12H2M22 12h-2M6.3 6.3 4.9 4.9M19.1 19.1l-1.4-1.4M6.3 17.7l-1.4 1.4M19.1 4.9l-1.4 1.4M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0z';
+  function efetivo(){var c=raiz.getAttribute('data-theme');return (c==='dark'||c==='light')?c:((mq&&mq.matches)?'dark':'light');}
+  function pintar(){var e=efetivo(),op=(e==='dark')?'claro':'escuro';rot.textContent=op;ico.setAttribute('d',e==='dark'?SOL:LUA);bt.setAttribute('aria-label','Alternar para tema '+op);}
+  bt.addEventListener('click',function(){var n=(efetivo()==='dark')?'light':'dark';raiz.setAttribute('data-theme',n);try{localStorage.setItem('cat-tema',n);}catch(e){}pintar();});
+  if(mq&&mq.addEventListener) mq.addEventListener('change',function(){ if(!raiz.getAttribute('data-theme')) pintar(); });
+  pintar();
+
+  var bts=[].slice.call(document.querySelectorAll('.filtros button'));
+  var comps=[].slice.call(document.querySelectorAll('.comp'));
+  bts.forEach(function(b){
+    b.addEventListener('click',function(){
+      bts.forEach(function(x){ x.setAttribute('aria-pressed', String(x===b)); });
+      var g=b.dataset.g;
+      comps.forEach(function(c){ c.classList.toggle('off', g!=='todos' && c.dataset.g!==g); });
+      window.scrollTo({top:0,behavior:'smooth'});
+    });
+  });
+})();
+</script>

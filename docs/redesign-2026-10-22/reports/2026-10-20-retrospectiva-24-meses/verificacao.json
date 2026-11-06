@@ -1,0 +1,240 @@
+{
+  "checkedAt": "2026-10-21T14:43:19.025Z",
+  "checks": [
+    {
+      "name": "PRs únicos e contagem completa",
+      "passed": true
+    },
+    {
+      "name": "Estados particionam o inventário",
+      "passed": true
+    },
+    {
+      "name": "Integração principal não confunde ramo de trabalho",
+      "passed": true
+    },
+    {
+      "name": "Commits únicos e integração",
+      "passed": true
+    },
+    {
+      "name": "110 frentes com fontes existentes",
+      "passed": true
+    },
+    {
+      "name": "Nenhum registro sem categoria válida",
+      "passed": true
+    },
+    {
+      "name": "Documentação atual e histórica",
+      "passed": true
+    },
+    {
+      "name": "Acervo de testes e estrutura",
+      "passed": true
+    },
+    {
+      "name": "Referências de código e docs dos capítulos existem",
+      "passed": true
+    },
+    {
+      "name": "CRM de hoje representado",
+      "passed": true
+    },
+    {
+      "name": "Narrativa sem nomes de clientes",
+      "passed": true
+    },
+    {
+      "name": "CSV existe para cada inventário",
+      "passed": true
+    },
+    {
+      "name": "Casos Developy ancorados no mesmo corpus",
+      "passed": true
+    },
+    {
+      "name": "Conferência de código Developy usa caminhos e snapshot do corpus",
+      "passed": true
+    }
+  ],
+  "browser": [
+    {
+      "page": "dossie",
+      "version": "bauhaus-transitoria-v1",
+      "visibleClientNames": false,
+      "overflow": false,
+      "brokenAnchors": [],
+      "palette": {
+        "paper": "#f4f0e8",
+        "title": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", system-ui, sans-serif"
+      },
+      "tableOfContents": false,
+      "mobileOverflow": false,
+      "mobileTableOfContents": false
+    },
+    {
+      "page": "relatorio-completo",
+      "version": "bauhaus-transitoria-v1",
+      "visibleClientNames": false,
+      "overflow": false,
+      "brokenAnchors": [],
+      "palette": {
+        "paper": "#f4f0e8",
+        "title": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", system-ui, sans-serif"
+      },
+      "tableOfContents": true,
+      "mobileOverflow": false,
+      "mobileTableOfContents": true
+    },
+    {
+      "page": "developy",
+      "version": "bauhaus-transitoria-v1",
+      "visibleClientNames": false,
+      "overflow": false,
+      "brokenAnchors": [],
+      "palette": {
+        "paper": "#f4f0e8",
+        "title": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", system-ui, sans-serif"
+      },
+      "tableOfContents": true,
+      "mobileOverflow": false,
+      "mobileTableOfContents": true
+    },
+    {
+      "page": "investidores",
+      "version": "bauhaus-transitoria-v1",
+      "visibleClientNames": false,
+      "overflow": false,
+      "brokenAnchors": [],
+      "palette": {
+        "paper": "#f4f0e8",
+        "title": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", system-ui, sans-serif"
+      },
+      "tableOfContents": true,
+      "mobileOverflow": false,
+      "mobileTableOfContents": true
+    },
+    {
+      "page": "entrevistas",
+      "version": "bauhaus-transitoria-v1",
+      "visibleClientNames": false,
+      "overflow": false,
+      "brokenAnchors": [],
+      "palette": {
+        "paper": "#f4f0e8",
+        "title": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", system-ui, sans-serif"
+      },
+      "tableOfContents": true,
+      "mobileOverflow": false,
+      "mobileTableOfContents": true
+    },
+    {
+      "page": "dashboard",
+      "charts": 22,
+      "dataTables": 22,
+      "modules": 42,
+      "filtersVerified": true,
+      "emptyRangeVerified": true,
+      "csvVerified": true,
+      "mobileOverflow": false,
+      "privateNames": false,
+      "pdf": {
+        "file": "dashboard.pdf",
+        "pages": 14,
+        "bytes": 373436,
+        "visibleClientNames": false,
+        "pageNumbers": true
+      }
+    },
+    {
+      "page": "cadeia-de-valor",
+      "chapters": 6,
+      "stories": 37,
+      "distinctPrs": 220,
+      "presentationKeyboard": true,
+      "deepLinks": true,
+      "expandableCapabilities": true,
+      "mobileOverflow": false,
+      "visibleClientNames": false,
+      "pdf": {
+        "file": "cadeia-de-valor.pdf",
+        "pages": 23,
+        "bytes": 195664,
+        "pageNumbers": true,
+        "visibleClientNames": false
+      }
+    },
+    {
+      "page": "timeline",
+      "version": "artistic-atlas-v3",
+      "milestones": 34,
+      "allStories": 110,
+      "chapters": 7,
+      "allPrs": 2978,
+      "commits": 9909,
+      "docs": 1613,
+      "modules": 159,
+      "searchIdempotMatches": 276,
+      "filters": true,
+      "chipRemoval": true,
+      "savedHash": true,
+      "openPrs": 75,
+      "otherBranchPrs": 16,
+      "recordDetails": true,
+      "csvDownload": true,
+      "presentationKeyboard": true,
+      "svgKeyboard": true,
+      "emptyStateRecovery": true,
+      "mobileOverflow": false,
+      "benchmarks": 4
+    }
+  ],
+  "pdfs": [
+    {
+      "file": "relatorio-completo.pdf",
+      "bytes": 857121,
+      "pages": 80,
+      "visibleClientNames": false,
+      "pageNumbers": true
+    },
+    {
+      "file": "developy.pdf",
+      "bytes": 314909,
+      "pages": 23,
+      "visibleClientNames": false,
+      "pageNumbers": true
+    },
+    {
+      "file": "investidores.pdf",
+      "bytes": 176994,
+      "pages": 7,
+      "visibleClientNames": false,
+      "pageNumbers": true
+    },
+    {
+      "file": "entrevistas.pdf",
+      "bytes": 200031,
+      "pages": 8,
+      "visibleClientNames": false,
+      "pageNumbers": true
+    },
+    {
+      "file": "dashboard.pdf",
+      "pages": 14,
+      "bytes": 373436,
+      "visibleClientNames": false,
+      "pageNumbers": true
+    },
+    {
+      "file": "cadeia-de-valor.pdf",
+      "pages": 23,
+      "bytes": 195664,
+      "pageNumbers": true,
+      "visibleClientNames": false
+    }
+  ],
+  "pageErrors": [],
+  "externalRequests": [],
+  "passed": true
+}

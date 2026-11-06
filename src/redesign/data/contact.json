@@ -1,0 +1,146 @@
+{
+  "paths": {
+    "product": {
+      "label": "Uma ideia de produto",
+      "title": "Uma ideia merece espaço.",
+      "reply": "Vamos começar pelo que você imagina.",
+      "question": "Para quem você quer construir?",
+      "hint": "Conte quem usaria o produto e o que você gostaria de tornar mais simples.",
+      "examples": [
+        "Para clientes que precisam pedir crédito.",
+        "Para equipes que atendem pelo WhatsApp.",
+        "Ainda estou descobrindo."
+      ],
+      "focus": "E o que faria essa ideia valer a pena?",
+      "choices": [
+        "Uma experiência mais simples",
+        "Um novo negócio",
+        "Menos trabalho manual",
+        "Quero explorar as possibilidades"
+      ],
+      "tags": [
+        "Produto",
+        "Experiência",
+        "Construção"
+      ]
+    },
+    "connect": {
+      "label": "Conectar o que já existe",
+      "title": "O próximo pode começar no que existe.",
+      "reply": "Não precisamos começar do zero.",
+      "question": "O que você quer aproximar?",
+      "hint": "Pode ser uma equipe, um sistema, um canal ou uma parte da operação que hoje trabalha separada.",
+      "examples": [
+        "Meu sistema e o atendimento ao cliente.",
+        "Dados que estão em lugares diferentes.",
+        "Uma operação manual e os nossos sistemas."
+      ],
+      "focus": "Onde essa conexão faria mais diferença?",
+      "choices": [
+        "No dia a dia da equipe",
+        "Na experiência do cliente",
+        "Na velocidade da operação",
+        "Quero entender por onde começar"
+      ],
+      "tags": [
+        "Integração",
+        "Operação",
+        "Continuidade"
+      ]
+    },
+    "discover": {
+      "label": "Conhecer a Catalisa",
+      "title": "Conhecer também é um começo.",
+      "reply": "Vamos encontrar um bom ponto de entrada.",
+      "question": "O que despertou sua curiosidade?",
+      "hint": "Você pode trazer uma pergunta de negócio, uma dúvida sobre a plataforma ou apenas uma vontade de explorar.",
+      "examples": [
+        "Como a plataforma funciona na prática.",
+        "O que consigo construir com os Building Blocks.",
+        "Como usar com os sistemas que já tenho."
+      ],
+      "focus": "Qual caminho você gostaria de explorar primeiro?",
+      "choices": [
+        "Ver um exemplo aplicado",
+        "Entender a arquitetura",
+        "Conversar sobre meu contexto",
+        "Ainda não sei"
+      ],
+      "tags": [
+        "Plataforma",
+        "Possibilidades",
+        "Conversa"
+      ]
+    },
+    "partner": {
+      "label": "Uma parceria",
+      "title": "Boas conexões abrem caminhos.",
+      "reply": "Vamos entender o que podemos aproximar.",
+      "question": "Que encontro você tem em mente?",
+      "hint": "Conte um pouco sobre o que você faz e onde imagina uma conexão com a Catalisa.",
+      "examples": [
+        "Levar a plataforma para nossos clientes.",
+        "Combinar nossa solução com a Catalisa.",
+        "Explorar um projeto em conjunto."
+      ],
+      "focus": "O que você gostaria de construir junto?",
+      "choices": [
+        "Uma oferta para o mercado",
+        "Uma integração de produtos",
+        "Uma oportunidade em comum",
+        "Vamos descobrir na conversa"
+      ],
+      "tags": [
+        "Parceria",
+        "Complementaridade",
+        "Possibilidades"
+      ]
+    },
+    "custom": {
+      "label": "Uma nova conversa",
+      "title": "Todo começo tem seu próprio caminho.",
+      "reply": "Tem espaço para essa conversa aqui.",
+      "question": "O que seria importante entendermos?",
+      "hint": "Conte o contexto que ajudaria uma pessoa da Catalisa a chegar mais preparada à conversa.",
+      "examples": [
+        "O que acontece hoje e o que quero mudar.",
+        "Para quem estou pensando nessa ideia.",
+        "Prefiro entender junto com vocês."
+      ],
+      "focus": "O que você espera dessa primeira conversa?",
+      "choices": [
+        "Encontrar uma direção",
+        "Explorar possibilidades",
+        "Tirar uma dúvida",
+        "Conhecer a equipe"
+      ],
+      "tags": [
+        "Contexto",
+        "Intenção",
+        "Conversa"
+      ]
+    }
+  },
+  "samples": [
+    {
+      "name": "Clara",
+      "idea": "Quero uma clínica em que agendar pelo WhatsApp seja simples."
+    },
+    {
+      "name": "Lume",
+      "idea": "Quero uma experiência simples para solicitar crédito e acompanhar a proposta."
+    },
+    {
+      "name": "Encontro",
+      "idea": "Quero conectar candidatos e recrutadores pelo WhatsApp, com entrevistas mais organizadas."
+    },
+    {
+      "name": "Próxima",
+      "idea": "Quero conectar a loja ao WhatsApp e acompanhar os pedidos em um só lugar."
+    },
+    {
+      "name": "Conecta",
+      "idea": "Quero conectar meu atendimento aos sistemas que já tenho."
+    }
+  ]
+}

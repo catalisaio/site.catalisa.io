@@ -1,0 +1,641 @@
+{
+  "date": "2026-10-25T06:44:30.497Z",
+  "passed": true,
+  "origin": "https://site-staging.catalisa.io",
+  "tlsValidation": true,
+  "scope": "Real staging AI through the target browser/BFF, fictional short contact flows, human review, reload, one free refinement. No handoff or external messages.",
+  "results": [
+    {
+      "key": "loja-whatsapp",
+      "passed": true,
+      "briefing": {
+        "idea": "vender pelo whats",
+        "context": "loja de roupas",
+        "goal": "vender mais"
+      },
+      "elapsedMs": 33942,
+      "reviewElapsedMs": 1921,
+      "hadReview": false,
+      "concept": {
+        "conceptRef": "concept_96133d5d-77d0-415e-9fff-ce86d25baf62",
+        "version": 1,
+        "briefVersion": 3,
+        "content": {
+          "schemaVersion": "1.0",
+          "title": "Venda de roupas pelo WhatsApp",
+          "summary": "Loja de roupas usa WhatsApp para catálogo, pedidos e pagamento, aumentando conversão sem trocar de canal.",
+          "hypothesis": "Integrar catálogo de roupas, pedidos e pagamentos via WhatsApp permite vender mais mantendo o número atual da loja.",
+          "roles": [
+            "Vendedor",
+            "Cliente",
+            "Gerente de loja"
+          ],
+          "screens": [
+            {
+              "id": "catalogo",
+              "title": "Catálogo no WhatsApp",
+              "description": "Cliente navega peças, cores e tamanhos por mensagens ou catálogo interativo.",
+              "items": [
+                {
+                  "label": "Peça",
+                  "value": "Vestido floral"
+                },
+                {
+                  "label": "Preço",
+                  "value": "R$ 129"
+                },
+                {
+                  "label": "Estoque",
+                  "value": "12 unidades"
+                }
+              ],
+              "action": {
+                "label": "Adicionar ao pedido",
+                "nextScreenId": "pedido"
+              }
+            },
+            {
+              "id": "pedido",
+              "title": "Resumo do pedido",
+              "description": "Lista itens, subtotal e opções de entrega ou retirada.",
+              "items": [
+                {
+                  "label": "Total",
+                  "value": "R$ 258"
+                },
+                {
+                  "label": "Entrega",
+                  "value": "R$ 15"
+                },
+                {
+                  "label": "Prazo",
+                  "value": "3 dias"
+                }
+              ],
+              "action": {
+                "label": "Pagar agora",
+                "nextScreenId": "pagamento"
+              }
+            },
+            {
+              "id": "pagamento",
+              "title": "Pagamento",
+              "description": "Escolha Pix, cartão ou boleto e confirmação imediata.",
+              "items": [
+                {
+                  "label": "Método",
+                  "value": "Pix"
+                },
+                {
+                  "label": "Status",
+                  "value": "Aguardando"
+                },
+                {
+                  "label": "Link",
+                  "value": "pagar agora"
+                }
+              ],
+              "action": {
+                "label": "Ver pedido",
+                "nextScreenId": null
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "slug": "wpp",
+              "role": "Canal principal de catálogo e pedidos"
+            },
+            {
+              "slug": "commerce",
+              "role": "Catálogo, estoque e pedidos multi-loja"
+            },
+            {
+              "slug": "payments",
+              "role": "Aceite de Pix e cartão no mesmo fluxo"
+            },
+            {
+              "slug": "billing",
+              "role": "Fatura e controle de assinaturas"
+            }
+          ],
+          "journey": [
+            {
+              "id": "j1",
+              "label": "Cliente inicia conversa",
+              "description": "Envia mensagem ou clica em link do catálogo.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "j2",
+              "label": "Escolhe peças",
+              "description": "Navega catálogo e adiciona ao pedido.",
+              "blockSlugs": [
+                "commerce"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "j3",
+              "label": "Confirma e paga",
+              "description": "Revisa total e escolhe forma de pagamento.",
+              "blockSlugs": [
+                "payments"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "j4",
+              "label": "Recebe confirmação",
+              "description": "Obtém link de pagamento e status do pedido.",
+              "blockSlugs": [
+                "billing"
+              ],
+              "humanReview": false
+            }
+          ],
+          "limitations": [
+            "Catálogo limitado a 50 itens por conversa.",
+            "Integração depende de catálogo já existente na loja.",
+            "Pagamentos exigem conta em adquirente parceiro.",
+            "Sem análise de preferências de clientes."
+          ],
+          "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+        }
+      },
+      "refinement": {
+        "elapsedMs": 17602,
+        "concept": {
+          "conceptRef": "concept_96133d5d-77d0-415e-9fff-ce86d25baf62",
+          "version": 3,
+          "briefVersion": 3,
+          "content": {
+            "schemaVersion": "1.0",
+            "title": "Venda de roupas pelo WhatsApp",
+            "summary": "Loja de roupas usa WhatsApp para catálogo e pedidos, com notificações por e-mail após revisão humana, aumentando conversão sem trocar de canal.",
+            "hypothesis": "Integrar catálogo de roupas, pedidos e pagamentos via WhatsApp, com notificações por e-mail após revisão humana, permite vender mais mantendo o número atual da loja.",
+            "roles": [
+              "Vendedor",
+              "Cliente",
+              "Gerente de loja"
+            ],
+            "screens": [
+              {
+                "id": "catalogo",
+                "title": "Catálogo no WhatsApp",
+                "description": "Cliente navega peças, cores e tamanhos por mensagens ou catálogo interativo.",
+                "items": [
+                  {
+                    "label": "Peça",
+                    "value": "Vestido floral"
+                  },
+                  {
+                    "label": "Preço",
+                    "value": "R$ 129"
+                  },
+                  {
+                    "label": "Estoque",
+                    "value": "12 unidades"
+                  }
+                ],
+                "action": {
+                  "label": "Adicionar ao pedido",
+                  "nextScreenId": "pedido"
+                }
+              },
+              {
+                "id": "pedido",
+                "title": "Resumo do pedido",
+                "description": "Lista itens, subtotal e opções de entrega ou retirada.",
+                "items": [
+                  {
+                    "label": "Total",
+                    "value": "R$ 258"
+                  },
+                  {
+                    "label": "Entrega",
+                    "value": "R$ 15"
+                  },
+                  {
+                    "label": "Prazo",
+                    "value": "3 dias"
+                  }
+                ],
+                "action": {
+                  "label": "Pagar agora",
+                  "nextScreenId": "pagamento"
+                }
+              },
+              {
+                "id": "pagamento",
+                "title": "Pagamento",
+                "description": "Escolha Pix, cartão ou boleto e confirmação imediata.",
+                "items": [
+                  {
+                    "label": "Método",
+                    "value": "Pix"
+                  },
+                  {
+                    "label": "Status",
+                    "value": "Aguardando"
+                  },
+                  {
+                    "label": "Link",
+                    "value": "pagar agora"
+                  }
+                ],
+                "action": {
+                  "label": "Ver pedido",
+                  "nextScreenId": null
+                }
+              }
+            ],
+            "blocks": [
+              {
+                "slug": "wpp",
+                "role": "Canal principal de catálogo e pedidos"
+              },
+              {
+                "slug": "commerce",
+                "role": "Catálogo, estoque e pedidos multi-loja"
+              },
+              {
+                "slug": "payments",
+                "role": "Aceite de Pix e cartão no mesmo fluxo"
+              },
+              {
+                "slug": "email",
+                "role": "Notificações de confirmação após revisão humana"
+              }
+            ],
+            "journey": [
+              {
+                "id": "j1",
+                "label": "Cliente inicia conversa",
+                "description": "Envia mensagem ou clica em link do catálogo.",
+                "blockSlugs": [
+                  "wpp"
+                ],
+                "humanReview": false
+              },
+              {
+                "id": "j2",
+                "label": "Escolhe peças",
+                "description": "Navega catálogo e adiciona ao pedido.",
+                "blockSlugs": [
+                  "commerce"
+                ],
+                "humanReview": false
+              },
+              {
+                "id": "j3",
+                "label": "Confirma e paga",
+                "description": "Revisa total e escolhe forma de pagamento.",
+                "blockSlugs": [
+                  "payments"
+                ],
+                "humanReview": false
+              },
+              {
+                "id": "j4",
+                "label": "Recebe notificação por e-mail",
+                "description": "Após revisão humana, envia confirmação por e-mail.",
+                "blockSlugs": [
+                  "email"
+                ],
+                "humanReview": true
+              }
+            ],
+            "limitations": [
+              "Catálogo limitado a 50 itens por conversa.",
+              "Integração depende de catálogo já existente na loja.",
+              "Pagamentos exigem conta em adquirente parceiro.",
+              "Sem análise de preferências de clientes."
+            ],
+            "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "key": "clinica-agenda",
+      "passed": true,
+      "briefing": {
+        "idea": "agenda clinica",
+        "context": "dentista",
+        "goal": "menos faltas"
+      },
+      "elapsedMs": 20843,
+      "reviewElapsedMs": 52,
+      "hadReview": true,
+      "concept": {
+        "conceptRef": "concept_4a79a936-a14a-4493-aa0d-68630b4b429e",
+        "version": 1,
+        "briefVersion": 3,
+        "content": {
+          "schemaVersion": "1.0",
+          "title": "Agenda Clínica Dentista",
+          "summary": "Agenda integrada com lembretes para reduzir faltas em consultórios odontológicos.",
+          "hypothesis": "Lembretes automáticos via WhatsApp e e-mail, combinados a agenda compartilhada, diminuem ausências de pacientes.",
+          "roles": [
+            "Dentista",
+            "Recepcionista",
+            "Paciente"
+          ],
+          "screens": [
+            {
+              "id": "agendar",
+              "title": "Agendar Consulta",
+              "description": "Marque horários com disponibilidade em tempo real.",
+              "items": [
+                {
+                  "label": "Data",
+                  "value": "Selecione dia e hora"
+                },
+                {
+                  "label": "Paciente",
+                  "value": "Nome e contato"
+                },
+                {
+                  "label": "Procedimento",
+                  "value": "Tipo de atendimento"
+                }
+              ],
+              "action": {
+                "label": "Confirmar",
+                "nextScreenId": "confirmar"
+              }
+            },
+            {
+              "id": "confirmar",
+              "title": "Confirmar Agendamento",
+              "description": "Envie detalhes e colete confirmação do paciente.",
+              "items": [
+                {
+                  "label": "Resumo",
+                  "value": "Data, hora e procedimento"
+                },
+                {
+                  "label": "Contato",
+                  "value": "WhatsApp e e-mail"
+                },
+                {
+                  "label": "Status",
+                  "value": "Aguardando confirmação"
+                }
+              ],
+              "action": {
+                "label": "Enviar",
+                "nextScreenId": "lembrete"
+              }
+            },
+            {
+              "id": "lembrete",
+              "title": "Lembrete Automático",
+              "description": "Notifique 24h antes para evitar faltas.",
+              "items": [
+                {
+                  "label": "Canal",
+                  "value": "WhatsApp principal"
+                },
+                {
+                  "label": "Mensagem",
+                  "value": "Confirme presença ou reagende"
+                },
+                {
+                  "label": "Ação",
+                  "value": "Link de remarcação"
+                }
+              ],
+              "action": {
+                "label": "Finalizar",
+                "nextScreenId": null
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "slug": "calendar",
+              "role": "Agenda compartilhada do dentista"
+            },
+            {
+              "slug": "wpp",
+              "role": "Lembretes e confirmações via WhatsApp"
+            },
+            {
+              "slug": "email",
+              "role": "Notificações secundárias por e-mail"
+            }
+          ],
+          "journey": [
+            {
+              "id": "passo1",
+              "label": "Cadastrar agenda",
+              "description": "Definir horários disponíveis no calendário.",
+              "blockSlugs": [
+                "calendar"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "passo2",
+              "label": "Agendar paciente",
+              "description": "Marcar consulta com dados básicos.",
+              "blockSlugs": [
+                "calendar"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "passo3",
+              "label": "Confirmar consulta",
+              "description": "Enviar resumo e solicitar confirmação.",
+              "blockSlugs": [
+                "wpp",
+                "email"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "passo4",
+              "label": "Lembrar e reagendar",
+              "description": "Notificar 24h antes e oferecer remarcação.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": true
+            }
+          ],
+          "limitations": [
+            "Depende de integração com WhatsApp do consultório.",
+            "Lembretes automáticos requerem consentimento do paciente.",
+            "Revisão humana necessária para reagendamentos complexos."
+          ],
+          "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+        }
+      },
+      "errors": []
+    },
+    {
+      "key": "escola-cobranca",
+      "passed": true,
+      "briefing": {
+        "idea": "cobrar atrasados",
+        "context": "escola de ingles",
+        "goal": "parar cobranca manual"
+      },
+      "elapsedMs": 32958,
+      "reviewElapsedMs": 1927,
+      "hadReview": false,
+      "concept": {
+        "conceptRef": "concept_756a34b9-0b6d-4e31-99e5-3f96b57369e9",
+        "version": 1,
+        "briefVersion": 3,
+        "content": {
+          "schemaVersion": "1.0",
+          "title": "Cobrança Automatizada de Atrasados",
+          "summary": "Automatiza identificação e cobrança de mensalidades atrasadas em escola de inglês, substituindo processos manuais por notificações via canais digitais.",
+          "hypothesis": "A escola possui cadastro de alunos e histórico de pagamentos; o sistema detecta atrasos e envia lembretes automáticos sem intervenção humana inicial.",
+          "roles": [
+            "Coordenador Financeiro",
+            "Secretaria",
+            "Diretor"
+          ],
+          "screens": [
+            {
+              "id": "atrasados",
+              "title": "Alunos com Atraso",
+              "description": "Lista alunos com mensalidades vencidas há mais de 7 dias.",
+              "items": [
+                {
+                  "label": "Aluno",
+                  "value": "João Silva - 2 parcelas"
+                },
+                {
+                  "label": "Valor devido",
+                  "value": "R$ 240,00"
+                },
+                {
+                  "label": "Último contato",
+                  "value": "15/10/2026"
+                }
+              ],
+              "action": {
+                "label": "Enviar lembretes",
+                "nextScreenId": "confirmacao"
+              }
+            },
+            {
+              "id": "confirmacao",
+              "title": "Confirmar Envio",
+              "description": "Revisa mensagem e canal antes do disparo automático.",
+              "items": [
+                {
+                  "label": "Canal",
+                  "value": "WhatsApp + Email"
+                },
+                {
+                  "label": "Template",
+                  "value": "Lembrete de mensalidade"
+                }
+              ],
+              "action": {
+                "label": "Disparar agora",
+                "nextScreenId": null
+              }
+            },
+            {
+              "id": "historico",
+              "title": "Histórico de Cobranças",
+              "description": "Registra envios e respostas dos alunos.",
+              "items": [
+                {
+                  "label": "Enviado",
+                  "value": "20/10/2026 - WhatsApp"
+                },
+                {
+                  "label": "Resposta",
+                  "value": "Pago via Pix"
+                }
+              ],
+              "action": {
+                "label": "Voltar",
+                "nextScreenId": "atrasados"
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "slug": "billing",
+              "role": "Identifica mensalidades vencidas e calcula valores devidos"
+            },
+            {
+              "slug": "customers",
+              "role": "Mantém cadastro isolado de alunos por organização"
+            },
+            {
+              "slug": "email",
+              "role": "Envia lembretes por e-mail com trilha de abertura"
+            },
+            {
+              "slug": "wpp",
+              "role": "Dispara mensagens WhatsApp no número já usado pela escola"
+            }
+          ],
+          "journey": [
+            {
+              "id": "detectar",
+              "label": "Detectar atrasos",
+              "description": "Billing consulta pagamentos vencidos e lista alunos inadimplentes.",
+              "blockSlugs": [
+                "billing",
+                "customers"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "preparar",
+              "label": "Preparar mensagem",
+              "description": "Seleciona template e define canais de envio.",
+              "blockSlugs": [
+                "email",
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "disparar",
+              "label": "Disparar notificações",
+              "description": "Envia lembretes automáticos e registra evento.",
+              "blockSlugs": [
+                "email",
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "acompanhar",
+              "label": "Acompanhar retorno",
+              "description": "Registra respostas e atualiza status de pagamento.",
+              "blockSlugs": [
+                "billing"
+              ],
+              "humanReview": false
+            }
+          ],
+          "limitations": [
+            "Depende de integração prévia com sistema de matrícula da escola.",
+            "Templates de mensagem devem ser aprovados manualmente na primeira execução.",
+            "Não substitui sistema contábil oficial da escola."
+          ],
+          "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+        }
+      },
+      "errors": []
+    }
+  ]
+}

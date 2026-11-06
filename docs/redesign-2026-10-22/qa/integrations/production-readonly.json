@@ -1,0 +1,40 @@
+{
+  "observedAt": "2026-10-25T04:31:15.105Z",
+  "origin": "https://panel-api.wpp.bb.catalisa.app",
+  "scope": "Production readiness GET-only inventory; no provision, inference, message or deploy",
+  "operations": [
+    {
+      "method": "GET",
+      "path": "/auth/me",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/agents?limit=100&offset=0&includeInactive=true&search=site-catalisa",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/data-store/collections",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/credentials",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/ai/status",
+      "status": 200
+    }
+  ],
+  "ownerConfirmed": true,
+  "resources": {
+    "dedicatedSiteAgents": [],
+    "dedicatedSiteCollections": [],
+    "activeOwnerAiCredentialCount": 4,
+    "activeOwnerAnthropicCredentialAvailable": true,
+    "note": "Missing dedicated resources require separate scoped provisioning before production candidate. Inventory is not a generation or persistence proof."
+  }
+}

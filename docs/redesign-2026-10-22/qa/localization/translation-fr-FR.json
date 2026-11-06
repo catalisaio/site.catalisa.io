@@ -1,0 +1,96 @@
+{
+  "updatedAt": "2026-10-26T19:59:01.930Z",
+  "locale": "fr-FR",
+  "language": "French",
+  "sourceCatalogSha256": "a0609b6a31757ad12060c974c3d70142144715beca0377559f10a2289f8ba4e1",
+  "method": "claude -p, safe-mode, no tools/MCP/session persistence, default user model",
+  "total": 4209,
+  "completed": 4209,
+  "complete": true,
+  "batches": [
+    {
+      "index": 1,
+      "id": "231c731882352cec5724",
+      "count": 200,
+      "costUsd": 0.36378,
+      "durationMs": 80156
+    },
+    {
+      "index": 2,
+      "id": "3b7ffc319d5f63202fe0",
+      "count": 200,
+      "costUsd": 0.40001600000000004,
+      "durationMs": 87235
+    },
+    {
+      "index": 3,
+      "id": "01261ee68fbc4f275c8b",
+      "count": 200,
+      "costUsd": 0.42269199999999996,
+      "durationMs": 105016
+    },
+    {
+      "index": 4,
+      "id": "cff6e0e7598138711391",
+      "count": 200,
+      "costUsd": 0.490316,
+      "durationMs": 121811
+    },
+    {
+      "index": 5,
+      "id": "95a407e0ee00b12c73cc",
+      "count": 200,
+      "costUsd": 0.393964,
+      "durationMs": 87727
+    },
+    {
+      "index": 6,
+      "id": "a1379ed90ae3cd273bbc",
+      "count": 200,
+      "costUsd": 0.40226,
+      "durationMs": 93427
+    },
+    {
+      "index": 7,
+      "id": "f4a6ebdfe280f74a5c9d",
+      "count": 200,
+      "costUsd": 0.37976,
+      "durationMs": 80910
+    },
+    {
+      "index": 8,
+      "id": "7c3a378ae521eddaf038",
+      "count": 200,
+      "costUsd": 0.402296,
+      "durationMs": 86507
+    },
+    {
+      "index": 9,
+      "id": "1a7d044e601ea4a48939",
+      "count": 200,
+      "costUsd": 0.401876,
+      "durationMs": 91891
+    },
+    {
+      "index": 10,
+      "id": "86b03623490c2b8f477d",
+      "count": 200,
+      "costUsd": 0.41447999999999996,
+      "durationMs": 95447
+    },
+    {
+      "index": 11,
+      "id": "00ff7da15f1fde812002",
+      "count": 200,
+      "costUsd": 0.382548,
+      "durationMs": 92056
+    },
+    {
+      "index": 1,
+      "id": "58cd3032be78cc01dccc",
+      "count": 14,
+      "costUsd": 0.0316176,
+      "durationMs": 9020
+    }
+  ]
+}

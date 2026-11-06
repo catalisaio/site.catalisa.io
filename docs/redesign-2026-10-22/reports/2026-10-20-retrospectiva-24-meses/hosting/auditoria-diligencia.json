@@ -1,0 +1,74 @@
+{
+  "scope": "Preparação e implementação da diligência no relatório; avaliação de investimento/aquisição e homologação em seção própria",
+  "version": "diligencia-2026-10-21-v1",
+  "technicalCutoff": "2026-10-20",
+  "counts": {
+    "domains": 12,
+    "findings": 60,
+    "requests": 60,
+    "risks": 16,
+    "vendorControls": 32,
+    "capabilities": 110,
+    "sources": 146,
+    "documentsRead": 14
+  },
+  "htmlPages": 15,
+  "pdfs": 12,
+  "localVerification": {
+    "verificacao.json": {
+      "passed": true,
+      "checkedAt": "2026-10-21T13:53:43.891Z"
+    },
+    "verificacao-infografico.json": {
+      "passed": true,
+      "checkedAt": "2026-10-21T13:53:43.477Z"
+    },
+    "verificacao-identidade.json": {
+      "passed": true,
+      "checkedAt": "2026-10-21T13:56:19.734Z"
+    },
+    "verificacao-diligencia.json": {
+      "passed": true,
+      "checkedAt": "2026-10-21T13:55:24.292Z"
+    }
+  },
+  "existingPagesLinked": 10,
+  "corpusBaselinePreserved": true,
+  "newFilesInPackage": true,
+  "allVendorControlsAwaitBuyerEvaluation": true,
+  "documentsNotProvidedRemainRequests": true,
+  "sourcesBySnapshot": [
+    {
+      "key": "wpp",
+      "repo": "catalisaio/wpp.bb.catalisa.io",
+      "sha": "54e6fb44fc8ff87256b412b3fcf5f8c95ca76622",
+      "collectedAt": "2026-10-20T20:54:17.124582+00:00"
+    },
+    {
+      "key": "bb",
+      "repo": "catalisaio/building-blocks-v2",
+      "sha": "027709dc971c63ded425f5bda8374a6e0e52b7db",
+      "collectedAt": "2026-10-20T20:54:18.114903+00:00"
+    },
+    {
+      "key": "developy",
+      "repo": "klederson/proxmox-manager",
+      "sha": "7b951155dff5c2dc02aaad4faf7959f3b49b2e5f",
+      "collectedAt": "2026-10-20T20:54:18.412408+00:00"
+    }
+  ],
+  "publicationVerification": "installed-and-verified",
+  "limits": [
+    "Não é auditoria independente nem parecer jurídico/financeiro.",
+    "Não executou pentest, ensaios financeiros ou alterações de dados dos produtos.",
+    "Não presume certificação, receita, titularidade, homologação ou aceite externo.",
+    "Nenhum material foi enviado a consultorias.",
+    "Navegação autenticada em HTTPS não repetida: credencial original indisponível. Os mesmos artefatos foram validados localmente e os 162 arquivos instalados foram conferidos por hash."
+  ],
+  "release": "20261020-3e0d07175517",
+  "checkedAt": "2026-10-21T13:59:50.432755+00:00",
+  "verifiedManifestFiles": 162,
+  "protectedRoutesVerified": 42,
+  "tlsVerified": true,
+  "nginxConfigurationPreserved": true
+}

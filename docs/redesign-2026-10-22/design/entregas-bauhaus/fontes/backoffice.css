@@ -1,0 +1,2028 @@
+/*
+ * O PADRÃO do backoffice — o styleguide do painel, em CSS puro.
+ *
+ * ## A regra que este arquivo serve
+ *
+ * "Começamos com padrão e depois customizamos — é assim que os produtos
+ * escalam." Vertical nova não redesenha botão, campo, card e aba: lista este
+ * arquivo e já tem a casa inteira. O que ela desenha é o que é dela.
+ *
+ * ## E a metade que costuma se perder
+ *
+ * Ele tem que sair do caminho POR INTEIRO. Não é "tema de cor": o dono quer
+ * poder ter tema, design **e layout** completamente diferentes numa vertical —
+ * e o backoffice da clínica já está marcado para virar o padrão de mercado do
+ * público médico. Se a customização parasse nos tokens, essa adaptação seria
+ * reescrita, não ajuste.
+ *
+ * Por isso, três níveis, e o terceiro é o que prova os outros dois:
+ *
+ *   1. **usar como está** — `estilos: ['kit:backoffice.css']`
+ *   2. **trocar os tokens** — `estilos: ['kit:backoffice.css', 'src/meu-tema.css']`,
+ *      redefinindo as variáveis de `:root`. Nenhuma regra abaixo tem cor
+ *      literal; todas leem `var(--…)`, para que isto funcione de verdade
+ *   3. **não usar** — `estilos: ['src/meu-desenho.css']`, e nada daqui entra
+ *
+ * ## O que NÃO mora aqui, de propósito
+ *
+ * A CASCA. Nav, abas, painéis, grade da página: tudo isso é `site.html` do
+ * site. Um kit que carrega layout mata o nível 3 — a vertical passaria a poder
+ * trocar a pintura e não a estrutura, que é metade do que foi pedido.
+ *
+ * E nenhuma palavra: não há `content:` com texto em lugar nenhum. Texto é do
+ * site, e texto no CSS não se traduz nem se revisa.
+ *
+ * ## Fonte dos valores
+ *
+ * `apps/painel-cliente/src/theme/index.ts` — o revamp v1. Copiados de lá, não
+ * inventados: roxo `#734B9C`, Inter, e os tokens semânticos de superfície,
+ * texto e borda com os dois modos. Se o painel mudar, este arquivo é o par a
+ * atualizar, e há teste amarrando os dois.
+ */
+
+:root {
+  /* A marca. Uma escala inteira porque estado (hover, ativo, foco) precisa de
+     vizinhos — usar só o 500 obriga a inventar cor na primeira interação. */
+  --brand-50: #f5f0f9;
+  --brand-100: #e6d9f0;
+  --brand-200: #d1b8e3;
+  --brand-300: #b794d4;
+  --brand-400: #9b7bc0;
+  --brand-500: #734b9c;
+  --brand-600: #5e3d80;
+  --brand-700: #4a3066;
+  --brand-800: #36234c;
+  --brand-900: #231733;
+
+  --accent: #fe8342;
+  --success: #28a745;
+  --warning: #fe8342;
+  --danger: #dc3545;
+  --info: #5b9bd5;
+  --teal: #0f9b8e;
+
+  /* Superfície, texto e borda — os semânticos, não os literais. É por estes
+     que uma vertical troca o clima da tela inteira em cinco linhas. */
+  --canvas: #fbfafb;
+  --surface: #ffffff;
+  --sunken: #f6f4f8;
+  --rail: #f8f6fa;
+
+  --ink: #171320;
+  --ink-2: #5a5468;
+  --ink-3: #8e8899;
+  --ink-inverted: #ffffff;
+
+  --line: #e9e6ed;
+  --line-soft: #f1eff4;
+  --line-strong: #dedae5;
+
+  /* Sombra é metade da percepção de profundidade. Sem token, todo `box-shadow`
+     cai no cinza neutro e a tela parece de outro sistema mesmo com a cor
+     certa — foi o que aconteceu no painel antes destes existirem. */
+  --sh-sm: 0 1px 2px rgba(23, 19, 32, 0.05);
+  --sh: 0 1px 3px rgba(23, 19, 32, 0.06), 0 4px 12px rgba(23, 19, 32, 0.045);
+  --sh-lg: 0 4px 12px rgba(23, 19, 32, 0.07), 0 16px 40px rgba(23, 19, 32, 0.09);
+
+  --font: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, Roboto, Arial, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* ══ A ESCALA DO PROTÓTIPO ═══════════════════════════════════════════════
+   *
+   * Copiada de `docs/design/revamp-v1/completo.html` (§:root), que é o alvo
+   * declarado do revamp v1 — não inventada, e não arredondada.
+   *
+   * ⚠️ ESTA METADE FALTAVA, e é a que dá a CARA. A primeira versão desta folha
+   * trouxe a paleta e parou aí; o resultado ficou com as cores certas e a
+   * sensação errada. O README do protótipo diz por quê, em duas frases:
+   *
+   *   "base 15px, títulos 30px com tracking -0.032em, controles de 40px
+   *    (hoje 36px). É a origem da sensação de old style."
+   *
+   *   "controle mais alto é o que faz o formulário parar de parecer apertado —
+   *    e é a mudança que mais aparece no diff visual desta onda."
+   *
+   * Ou seja: tipografia e densidade não são acabamento, são o design. Há
+   * catraca amarrando cada valor abaixo ao protótipo.
+   */
+  /* ⚠️ `--fs-3xs` NÃO é do protótipo — é meu, e existe só para o selo de
+     contagem da faixa de ícones, onde 11.5px não cabe em 15px de altura. Se
+     aparecer num terceiro lugar, é sinal de que a escala está sendo dobrada
+     para caber num layout apertado, e o layout é que está errado. */
+  --fs-3xs: 9.5px;
+  --fs-2xs: 11.5px;
+  --fs-xs: 12.5px;
+  --fs-sm: 13.5px;
+  --fs-base: 15px;
+  --fs-prose: 16.5px;
+  --fs-lg: 18px;
+  --fs-xl: 21px;
+  --fs-2xl: 25px;
+  --fs-3xl: 30px;
+  --fs-4xl: 40px;
+
+  /* A altura dos controles. Um `input` de 40px ao lado de um `button` de 36
+     desalinha a linha inteira, e é o defeito que mais se vê sem se nomear. */
+  --ctl: 40px;
+  --ctl-sm: 34px;
+
+  /* Os raios do protótipo. Cinco degraus, e o `--r-lg` (16px) é o do CARD —
+     o valor que mais aparece na tela. */
+  --r-xs: 7px;
+  --r-sm: 10px;
+  --r: 13px;
+  --r-lg: 16px;
+  --r-xl: 22px;
+
+  /* A terceira cor da marca. Estava faltando: a marca é roxo + amarelo +
+     laranja, e o protótipo é explícito em usar o roxo como ACENTO, nunca como
+     área grande. */
+  --secondary: #fdc234;
+
+  /* As larguras dos DOIS rails. O protótipo separa a faixa de ÁREAS (60px) do
+     rail de CONTEXTO (252px) — ver a casca, lá embaixo, para o porquê. */
+  --icrail: 60px;
+  --ctxrail: 252px;
+
+  /* As superfícies intermediárias. Sem elas, o hover de um item de rail só
+     tinha duas opções — a mesma cor do fundo ou a do card — e a faixa de
+     ícones ficava sem estado intermediário nenhum. */
+  --surface-2: #f6f4f8;
+  --surface-3: #edeaf1;
+  --brand-soft: #f4eefa;
+  --brand-ring: rgba(115, 75, 156, 0.15);
+
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Os apelidos semânticos, mantidos porque o resto da folha já os usa. Eles
+     APONTAM para a escala acima — dois nomes, um valor, e nada para divergir. */
+  --radius-sm: var(--r-sm);
+  --radius: var(--r);
+  --radius-lg: var(--r-lg);
+  --radius-pill: 999px;
+
+  --gap: 12px;
+  --pad: 18px;
+
+  color-scheme: light;
+
+  /* ── a sala de vídeo (`/sala`, `/js/sala.js`) ──────────────────────────
+     Tela ESCURA por natureza da tarefa — não é o tema escuro do kit. Os
+     valores moram aqui, e as regras leem tokens, para que a catraca de cor
+     literal continue valendo para todo o resto. */
+  --sala-bg: #0e0a16;
+  --sala-ink: #f2eef8;
+  --sala-ink-2: #aba3bb;
+  --sala-tile: #171123;
+  --sala-tile-2: #2a2240;
+  --sala-line: #2b2438;
+  --sala-line-2: #3d3550;
+  --sala-aviso: #1d1730;
+  --sala-erro: #3a1a22;
+  --sala-ok: #16301f;
+  --sala-perigo: #b3261e;
+  --sala-shade: rgba(0, 0, 0, 0.55);
+}
+
+/*
+ * O ESCURO.
+ *
+ * Só os tokens mudam — nenhuma regra abaixo é reescrita, que é a prova de que
+ * a folha é mesmo dirigida por variável. Uma regra com cor literal apareceria
+ * aqui como um remendo, e é assim que se percebe.
+ *
+ * ⚠️ O PADRÃO É CLARO — decisão do dono, 28/08.
+ *
+ * O escuro NÃO entra por `prefers-color-scheme`. Um backoffice é ferramenta de
+ * trabalho: ele abre no claro para todo mundo, e escurece só para quem PEDIR
+ * (`data-theme="dark"` no elemento raiz). O sistema operacional do operador não
+ * decide a aparência do produto que ele vende ao cliente dele — e num
+ * whitelabel isso é ainda mais verdade, porque dois clientes veriam telas
+ * diferentes do mesmo produto sem ninguém ter escolhido.
+ *
+ * O bloco `prefers` continua abaixo, mas **exigindo o opt-in explícito**
+ * (`[data-theme="auto"]`): quem quiser seguir o sistema pede, e quem não pede
+ * tem claro. Trocar isto muda a cara de todos os backoffices de uma vez.
+ */
+@media (prefers-color-scheme: dark) {
+  :root[data-theme="auto"] {
+    --canvas: #0e0a16;
+    --surface: #171123;
+    --sunken: #1e1730;
+    --rail: #130e1e;
+    --ink: #f0ecf6;
+    --ink-2: #aba3bb;
+    --ink-3: #7a7189;
+    --ink-inverted: #171320;
+    --line: rgba(255, 255, 255, 0.07);
+    --line-soft: rgba(255, 255, 255, 0.04);
+    --line-strong: rgba(255, 255, 255, 0.12);
+    --brand-500: #9b7bc0;
+    --brand-600: #b794d4;
+    --sh-sm: 0 1px 2px rgba(0, 0, 0, 0.45);
+    --sh: 0 2px 8px rgba(0, 0, 0, 0.4);
+    --sh-lg: 0 20px 48px rgba(0, 0, 0, 0.55);
+    --surface-2: #1e1730;
+    --surface-3: #28203c;
+    --brand-soft: rgba(115, 75, 156, 0.22);
+    --brand-ring: rgba(179, 146, 222, 0.22);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --canvas: #0e0a16;
+  --surface: #171123;
+  --sunken: #1e1730;
+  --rail: #130e1e;
+  --ink: #f0ecf6;
+  --ink-2: #aba3bb;
+  --ink-3: #7a7189;
+  --ink-inverted: #171320;
+  --line: rgba(255, 255, 255, 0.07);
+  --line-soft: rgba(255, 255, 255, 0.04);
+  --line-strong: rgba(255, 255, 255, 0.12);
+  --brand-500: #9b7bc0;
+  --brand-600: #b794d4;
+  --sh-sm: 0 1px 2px rgba(0, 0, 0, 0.45);
+  --sh: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --sh-lg: 0 20px 48px rgba(0, 0, 0, 0.55);
+  --surface-2: #1e1730;
+    --surface-3: #28203c;
+    --brand-soft: rgba(115, 75, 156, 0.22);
+    --brand-ring: rgba(179, 146, 222, 0.22);
+    color-scheme: dark;
+}
+
+/* ══ a base ═══════════════════════════════════════════════════════════════ */
+
+* {
+  box-sizing: border-box;
+}
+/* ⚠️ 15px, não 16. É a BASE do protótipo, e ela recalibra a tela inteira: os
+   `rem` e os `em` de todo o resto saem daqui. Ficar no 16 do navegador é o que
+   faz a mesma paleta parecer "de outro sistema". */
+body {
+  margin: 0;
+  background: var(--canvas);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: var(--fs-base);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+ * A ROTA ATIVA — e só ela.
+ *
+ * ⚠️ Todas as rotas do site moram no MESMO html; o build só marca qual `<main>`
+ * está ativo. Enquanto esta folha dizia apenas `.page { display: block }`, um
+ * site com duas rotas mostrava as DUAS empilhadas: no backoffice da clínica
+ * (#961) isso seriam duas telas de login numa página só, a de cima roubando o
+ * clique da de baixo. Passou porque o smoke daquele site depende do F3, que
+ * está bloqueado no TLS — o defeito nunca chegou a um navegador.
+ *
+ * O `base.css` do kit sempre teve estas duas linhas; esta folha nasceu sem
+ * elas. Há guarda no `build.mjs` desde então: site com mais de um `<main>` cuja
+ * folha não esconde a rota inativa não constrói.
+ */
+.page {
+  display: none;
+}
+.page[data-active="true"] {
+  display: block;
+}
+.hide {
+  display: none !important;
+}
+
+/*
+ * ⚠️ `[hidden]` PRECISA DA MESMA FORÇA QUE `.hide`.
+ *
+ * O atributo só vale enquanto ninguém declarar `display` depois: a regra do
+ * agente de usuário é `[hidden]{display:none}` e QUALQUER `display` de autor
+ * ganha dela. Nesta folha ganham três de uma vez — `button{display:inline-flex}`,
+ * `.ic{display:grid}` e `.trilho{display:flex}` — então `elemento.hidden = true`
+ * não escondia nada. Medido em 28/08: o botão "Entrar também como clínica"
+ * com `hidden` no DOM e `display:flex` no computado, na tela.
+ *
+ * Não é detalhe de uma vertical: o bloco `tabs` do próprio kit esconde painel
+ * com `tab.panel.hidden = !active` na sua função `activate` padrão. Sem esta
+ * linha, todo site que usar o padrão do bloco mostra os painéis todos ao
+ * mesmo tempo.
+ *
+ * ⚠️ E ISTO JÁ TINHA SIDO APRENDIDO: `base.css` tem a mesma regra, com a mesma
+ * explicação, desde o portão do chat. A lição virou regra em UMA folha e
+ * voltou pela que ficou de fora — as duas são do kit e nenhuma importa a
+ * outra. Há teste exigindo a regra nas DUAS.
+ */
+[hidden] {
+  display: none !important;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--ink);
+  line-height: 1.25;
+  margin: 0 0 6px;
+}
+/* ⚠️ `640` e `-0.032em` são do protótipo, e não são arredondáveis: o tracking
+   negativo forte no título grande é a assinatura visual do revamp. Com
+   `-0.01em` (o valor antigo desta folha) o título fica solto e a tela parece
+   de outro sistema, com as MESMAS cores. */
+h1 {
+  font-size: var(--fs-3xl);
+  font-weight: 640;
+  letter-spacing: -0.032em;
+  line-height: 1.18;
+}
+h2 {
+  font-size: var(--fs-xl);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+h3 {
+  font-size: var(--fs-base);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+a {
+  color: var(--brand-500);
+}
+.meta {
+  color: var(--ink-3);
+  font-size: var(--fs-sm);
+  margin: 0;
+}
+/*
+ * O VAZIO DESENHADO.
+ *
+ * Era uma frase cinza encostada à esquerda dentro de um cartão de 1500px —
+ * indistinguível de "carregou errado". Um estado vazio é uma TELA: ele diz o
+ * que aconteceu e, quando dá, o que fazer. Centrado e com respiro, ele lê como
+ * resposta; alinhado à esquerda num cartão largo, lê como sobra.
+ */
+.vazio {
+  color: var(--ink-3);
+  font-size: var(--fs-sm);
+  padding: 44px 20px;
+  margin: 0;
+  text-align: center;
+  text-wrap: balance;
+  line-height: 1.55;
+}
+
+/* Quando o cartão não tem mais nada além do vazio, ele não precisa de moldura:
+   duas bordas em volta de "nada aqui" é enfeite em cima de ausência. */
+.card:has(> .vazio:only-child) {
+  background: transparent;
+  border-style: dashed;
+  box-shadow: none;
+}
+.mono {
+  font-family: var(--font-mono);
+}
+
+/* ══ superfícies ══════════════════════════════════════════════════════════ */
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  padding: var(--pad);
+  margin: 16px 0;
+  box-shadow: var(--sh-sm);
+}
+
+/*
+ * O TÍTULO DE CARD.
+ *
+ * ⚠️ NÃO é caixa alta, e isso é do protótipo. Lá a caixa alta existe em três
+ * lugares e só três: o rótulo de grupo do trilho, o `thead th` da tabela e o
+ * título do inspetor. Um deles é navegação, outro é cabeçalho de dado, o
+ * terceiro é painel lateral — nenhum é conteúdo.
+ *
+ * A clínica tinha inventado caixa alta aqui, com uma justificativa razoável
+ * ("o título some do caminho da leitura"). Razoável e divergente: em pt-BR a
+ * caixa alta é pior de ler que em inglês, e o protótipo já resolveu isso
+ * baixando o PESO e a cor, não a caixa.
+ */
+.card h2 {
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  color: var(--ink);
+  margin: 0 0 var(--gap);
+}
+
+/* A linha de lista — o tijolo do backoffice inteiro: um paciente, uma
+   consulta, um documento na fila. Não é card: card dentro de card empilha
+   sombra e borda e a tela vira um acordeão de caixas. */
+.item {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  background: var(--surface);
+}
+.item:last-child {
+  margin-bottom: 0;
+}
+.item h3 {
+  margin: 0 0 2px;
+}
+
+.linha {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  align-items: center;
+}
+
+/* ══ controles ════════════════════════════════════════════════════════════ */
+
+/* ⚠️ `550` é de propósito — entre o regular e o semibold. O comentário do
+   theme do painel explica: "600 pesa demais num controle de 40px". E a ALTURA
+   é a mudança que mais aparece no diff visual do revamp. */
+button {
+  font: inherit;
+  font-size: var(--fs-base);
+  font-weight: 550;
+  height: var(--ctl);
+  border: 1px solid transparent;
+  border-radius: var(--r-sm);
+  padding: 0 17px;
+  cursor: pointer;
+  background: var(--brand-500);
+  color: var(--ink-inverted);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  transition: 0.15s var(--ease);
+}
+button:hover:not([disabled]) {
+  background: var(--brand-600);
+}
+button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+button.ghost {
+  background: var(--surface);
+  color: var(--ink);
+  border-color: var(--line-strong);
+}
+button.ghost:hover:not([disabled]) {
+  background: var(--sunken);
+}
+/* Destrutivo NÃO é vermelho sólido: um botão vermelho grande num painel de
+   trabalho é lido como alerta permanente. Vermelho no texto e na borda diz o
+   que é sem gritar. */
+button.perigo {
+  background: var(--surface);
+  color: var(--danger);
+  border-color: var(--danger);
+}
+button.perigo:hover:not([disabled]) {
+  background: var(--danger);
+  color: #fff;
+}
+
+/* Foco visível SEMPRE. Um backoffice é operado por teclado o dia inteiro; o
+   `:focus-visible` some para quem usa mouse e fica para quem usa Tab. */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--brand-400);
+  outline-offset: 2px;
+}
+
+label {
+  display: block;
+  font-size: var(--fs-sm);
+  margin: 10px 0 4px;
+  color: var(--ink-2);
+  font-weight: 500;
+}
+/* ⚠️ A MESMA `--ctl` do botão. Um campo de 40px ao lado de um botão de 36
+   desalinha a linha inteira — é o defeito que mais se vê sem se nomear.
+   `textarea` fica de fora da altura fixa, óbvio: ele cresce. */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--r-sm);
+  font: inherit;
+  font-size: var(--fs-base);
+  background: var(--surface);
+  color: var(--ink);
+  transition: border-color 0.15s var(--ease);
+}
+input,
+select {
+  height: var(--ctl);
+}
+textarea {
+  padding: 10px 12px;
+  min-height: 88px;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--brand-400);
+}
+
+/*
+ * ⚠️ CHECKBOX E RADIO SAEM DA REGRA DE CAMPO — e isto faltava desde sempre.
+ *
+ * A regra acima veste TODO `input`: `width:100%`, `height:40px`, borda e
+ * fundo. Um checkbox pega tudo isso e vira uma caixa azul de 410×40 dentro da
+ * linha, empurrando o próprio rótulo para baixo. Medido em 28/08 no portal do
+ * jurídico: `lembreteAtivo` com 410px de largura.
+ *
+ * ⚠️ A clínica já tinha remendado isto NA FOLHA DELA (`.dia input {width:auto}`)
+ * — o mesmo achado, consertado num lugar e deixado nos outros três. Aqui vale
+ * para todo mundo.
+ *
+ * `accent-color` em vez de desenhar a caixa: o controle nativo é acessível,
+ * responde a teclado e a tema alto contraste de graça. Repintá-lo à mão é
+ * trocar isso por pixel.
+ */
+input[type='checkbox'],
+input[type='radio'] {
+  /* ⚠️ `width`, NÃO `inline-size` — SÃO A MESMA PROPRIEDADE. `inline-size` é o
+   * apelido lógico de `width` em escrita horizontal, então a folha que dizia
+   *
+   *     inline-size: 16px;  block-size: 16px;
+   *     height: auto;       width: auto;
+   *
+   * declarava a mesma propriedade DUAS vezes, e a última vencia: a caixa
+   * ficava no padrão do agente de usuário (13px), nunca nos 16px escritos
+   * logo acima. Não era visível — 13px também é uma caixa plausível — e o
+   * `accent-color` funcionando dava a impressão de que a regra toda pegava.
+   * Medido em 28/08 no backoffice da clínica: `width: 13px`. */
+  width: 16px;
+  height: 16px;
+  flex: none;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: none;
+  accent-color: var(--brand-500);
+  cursor: pointer;
+}
+
+/* O rótulo de um controle de marcar fica AO LADO, não em cima: `form label` é
+   `display:block` porque campo de texto pede rótulo acima — o checkbox, não. */
+label:has(> input[type='checkbox']),
+label:has(> input[type='radio']) {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  /* ⚠️ PESO NORMAL: `form label` é 600 porque nomeia um campo. Aqui o rótulo é
+     a FRASE da pergunta ("Enviar lembrete automático") — em negrito ela vira
+     um título e a linha inteira parece uma seção. A clínica já tinha isto na
+     folha dela (`label.inline`), valendo só onde alguém lembrou da classe. */
+  font-weight: 400;
+  /* ⚠️ MANTÉM O ESPAÇO DE CIMA, TIRA O DE BAIXO. `label` traz
+     `margin: 10px 0 4px` — os 10px separam do campo anterior e continuam
+     certos; os 4px existem para o campo que vem LOGO ABAIXO do rótulo, e num
+     checkbox o campo está ao lado, não abaixo. Zerar os dois (que foi a minha
+     primeira versão) cola a linha no que vem antes: a clínica tinha
+     `margin-top: 12px` justamente para isso, e some junto com o remendo. */
+  margin: 10px 0 0;
+}
+
+.linha > input[type='checkbox'] + label,
+.linha > input[type='radio'] + label {
+  display: inline;
+  margin: 0;
+  cursor: pointer;
+  font-weight: 400;
+  color: var(--ink-2);
+}
+
+/* ══ sinais ═══════════════════════════════════════════════════════════════ */
+
+/* O aviso inline. A barra à esquerda em vez de fundo saturado: no meio de uma
+   lista, um bloco colorido inteiro rouba a leitura da linha que importa. */
+.aviso {
+  border-left: 3px solid var(--brand-400);
+  background: var(--sunken);
+  color: var(--ink);
+  padding: 10px 14px;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin: 12px 0;
+  font-size: var(--fs-base);
+}
+.aviso.ok {
+  border-left-color: var(--success);
+}
+.aviso.erro {
+  border-left-color: var(--danger);
+}
+.aviso.atencao {
+  border-left-color: var(--warning);
+}
+
+.tag {
+  display: inline-block;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-pill);
+  padding: 2px 10px;
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  color: var(--ink-2);
+  background: var(--surface);
+}
+
+/* O selo de LIGADO/DESLIGADO — irmão da `.tag`, com bolinha e cor de estado.
+   `.tag` diz o que a coisa é; `.status-pill` diz se ela está funcionando.
+
+   ⚠️ ESTAVA SÓ EM `portal-precisao.css`, E O DEFEITO ESTAVA NO AR.
+
+   Terceira vez da mesma família (`.banner` no #1056, `.summary-row` no #1055,
+   agora esta): regra escrita no tema do HOTSITE, e nenhum backoffice carrega
+   aquela folha — os quatro declaram `kit:backoffice.css` mais o delta da
+   vertical. `renderCalendarStatus` e `renderPaymentsStatus` escrevem
+   `<span class="status-pill on">` desde sempre, e nos três portais o
+   "conectado" do calendário e do recebedor saía como TEXTO CRU: sem pílula,
+   sem cor, sem bolinha, colado no que vinha antes.
+
+   Ninguém reprovava porque a palavra aparece — um estado sem caixa parece
+   escolha de desenho. E o styleguide não pegava porque a peça é escrita em
+   RUNTIME pelo script: nenhum HTML do repositório a contém, então ela nunca
+   entrou na conta de cobertura. Entrou agora (ver `paineis.html` do
+   `kit-styleguide`), e é isso que impede a quarta vez. */
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-pill);
+  padding: 2px 10px;
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  color: var(--ink-2);
+  background: var(--surface);
+}
+
+.status-pill.on {
+  border-color: var(--success);
+  color: var(--success);
+}
+
+/* A bolinha herda a cor do selo — uma regra em vez de uma por estado. */
+.status-pill i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+/* ══ navegação por abas ═══════════════════════════════════════════════════ */
+
+/* Só o VISUAL da aba. Qual painel ela abre é do site — é aí que mora o layout,
+   e é por isso que trocar o desenho não obriga a reescrever a navegação. */
+.abas {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 18px;
+}
+.aba {
+  background: transparent;
+  color: var(--ink-3);
+  border: 0;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+  padding: 10px 14px;
+  font-weight: 600;
+}
+.aba:hover:not([disabled]) {
+  background: transparent;
+  color: var(--ink);
+}
+.aba[aria-selected="true"] {
+  color: var(--brand-500);
+  border-bottom-color: var(--brand-500);
+}
+
+/* ══ o diálogo ════════════════════════════════════════════════════════════ */
+
+dialog {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 0;
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: var(--sh-lg);
+  max-width: min(720px, 92vw);
+}
+dialog::backdrop {
+  background: rgba(23, 19, 32, 0.45);
+}
+.modal-corpo {
+  padding: 22px 24px;
+}
+
+/* ══ o formulário ═════════════════════════════════════════════════════════ */
+
+/*
+ * ⚠️ `fieldset` e `legend` NÃO tinham regra aqui, e é o defeito que o dono viu
+ * como "CSS quebrado" — com razão. Sem regra, o navegador aplica o próprio
+ * padrão: uma moldura cinza fina com o rótulo cavado nela, que é o visual de
+ * formulário de 2005. A tela tinha os tokens certos, a tipografia certa, e
+ * três caixas com cara de outro século no meio.
+ *
+ * A lição é a mesma do `.num` e do `h1`: **a folha só pinta o que ela nomeia**.
+ * Classe sem regra o build acusa; ELEMENTO sem regra não — e é justamente o que
+ * passa despercebido, porque o navegador sempre desenha alguma coisa.
+ */
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0 0 26px;
+  min-width: 0;
+}
+
+fieldset:last-of-type {
+  margin-bottom: 0;
+}
+
+/* O rótulo do grupo vira um cabeçalho de seção, não uma etiqueta cavada na
+   borda. Mesma linguagem do `.trilho-grupo`: é rótulo de navegação dentro do
+   formulário, e por isso divide o espaço com uma linha em vez de uma caixa. */
+legend {
+  display: block;
+  width: 100%;
+  padding: 0 0 8px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--line);
+  font-size: var(--fs-2xs);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+/*
+ * A COLUNA DE LEITURA do formulário.
+ *
+ * ⚠️ Um campo de texto com 1400px de largura é ilegível, e pior: parece que a
+ * tela não tem desenho. O `corpo` da casca ocupa a tela inteira de propósito
+ * (tabela precisa disso); o formulário, não.
+ *
+ * `72ch` e não um px: a medida que importa é quantos CARACTERES cabem, e ela
+ * acompanha a fonte se a vertical trocar a tipografia — que é o nível 2.
+ */
+form {
+  max-width: 72ch;
+}
+
+/* E o CARD acompanha o formulário. Sem isto o card ocupa a tela toda com o
+   conteúdo espremido num canto — metade de moldura vazia, que lê como tela
+   inacabada em vez de coluna de leitura deliberada. */
+.card:has(form) {
+  max-width: 76ch;
+}
+
+/*
+ * ⚠️ DENTRO DA CASCA A COLUNA É CENTRADA — e sem isto a regra acima produz
+ * exatamente o defeito que ela quis evitar, do outro lado.
+ *
+ * Medido em 28/08 no portal do jurídico: `.corpo` com 1526px e o
+ * `#configPanel` com 643px encostado à ESQUERDA. Não era meia moldura vazia,
+ * eram 880px de vazio à direita — que lê igual: tela inacabada.
+ *
+ * Dentro da casca o formulário também ganha um pouco mais de largura: ali ele
+ * usa pares lado a lado (`.par`), que numa coluna de 76ch quebram cedo demais.
+ * Fora da casca (login, cadastro) a coluna estreita continua certa — lá o
+ * formulário é a página inteira e não tem par nenhum.
+ */
+.corpo .card:has(form) {
+  max-width: none;
+  margin-inline: 0;
+}
+.corpo form {
+  max-width: none;
+}
+
+/*
+ * ⚠️ CENTRAR NÃO ERA A RESPOSTA — foi a minha primeira tentativa e criou um
+ * defeito pior: o `h1` da página alinhado à ESQUERDA e o formulário centrado,
+ * duas colunas diferentes na mesma tela. O olho lê duas páginas empilhadas.
+ *
+ * A resposta é USAR a largura. Um formulário de oito blocos numa coluna de
+ * 76ch são três telas de rolagem; os mesmos oito blocos lado a lado cabem em
+ * uma, alinhados com o título. `auto-fit` com mínimo resolve o celular sem
+ * media query: abaixo de 380px por coluna ele volta sozinho para uma só.
+ */
+/* ⚠️ `form` OU `.card`: a clínica põe os `fieldset` direto no cartão, sem
+   `<form>` em volta, e os portais os põem dentro de um. Olhar só para `form`
+   deixaria metade dos produtos fora da grade — e é assim que dois produtos do
+   mesmo kit passam a ter telas de configuração diferentes sem ninguém decidir
+   isso. */
+.corpo form:has(> fieldset),
+.corpo .card:has(> fieldset) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 16px;
+  align-items: start;
+}
+
+/*
+ * ⚠️ NA GRADE, O BLOCO VIRA CARTÃO — e isto não é enfeite.
+ *
+ * Sem moldura, oito blocos de alturas diferentes lado a lado viram colunas
+ * esfarrapadas: "Escalação" tem um campo e um vão de 300px embaixo, "Lembrete"
+ * acaba no meio. O olho lê desalinhamento, não seções — foi assim que a tela
+ * do personal foi descrita como errada.
+ *
+ * Com borda e fundo, a mesma altura irregular lê como uma GRADE DE CARTÕES,
+ * que é o que a tela de configuração do protótipo faz. O conteúdo é o mesmo;
+ * o que muda é o vão ter dono.
+ *
+ * ⚠️ Só DENTRO da grade. Um `fieldset` numa coluna única (o login, uma folha
+ * lateral) não vira cartão — ali não há vão para explicar, e a moldura só
+ * acrescentaria borda.
+ */
+.corpo form:has(> fieldset) > fieldset,
+.corpo .card:has(> fieldset) > fieldset {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  padding: 16px 18px 18px;
+  margin: 0;
+  height: 100%;
+}
+
+/* O cartão que EMBRULHA a grade perde a própria moldura: cartão dentro de
+   cartão é borda em cima de borda, e o contraste dos blocos some. */
+.corpo .card:has(> fieldset) {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+}
+
+.corpo form:has(> fieldset) > fieldset > legend,
+.corpo .card:has(> fieldset) > fieldset > legend {
+  margin-bottom: 14px;
+}
+
+/* O que não é bloco — avisos e a linha de botões — atravessa a grade inteira.
+   Sem isto o "Salvar" vira uma coluna órfã ao lado do último bloco. */
+.corpo form:has(> fieldset) > :not(fieldset),
+.corpo .card:has(> fieldset) > :not(fieldset) {
+  grid-column: 1 / -1;
+}
+
+/*
+ * O RODAPÉ. Sem regra ele encosta em x=0, colado na borda da janela, enquanto
+ * todo o resto da página respeita a coluna — e a tela termina parecendo que
+ * faltou carregar alguma coisa. Visto no login dos três portais.
+ */
+footer {
+  padding: 28px 20px;
+  color: var(--ink-3);
+  font-size: var(--fs-2xs);
+  border-top: 1px solid var(--line-soft);
+  margin-top: 40px;
+}
+
+/* O campo e o rótulo em pilha, com respiro entre grupos. Sem isto cada tela
+   inventa a própria margem, e duas telas do mesmo produto ficam com espaçamento
+   diferente sem ninguém decidir isso. */
+form label {
+  margin-top: 14px;
+}
+
+form label:first-of-type {
+  margin-top: 0;
+}
+
+/* ══ a tabela ═════════════════════════════════════════════════════════════ */
+
+/*
+ * O `DataTable` do painel roda em 21 páginas, e esta folha não tinha tabela
+ * nenhuma — cada backoffice desenhava a sua. Os valores são do protótipo.
+ *
+ * ⚠️ A CAIXA ALTA no cabeçalho vem do protótipo e contradiz a decisão que o
+ * kit registrou no seu próprio selo ("acento em maiúscula é ruim de ler em
+ * português"). Mantida porque o protótipo é o alvo declarado, e a divergência
+ * está anotada no theme do painel também. Reverter é trocar duas linhas —
+ * mas nos dois lugares, senão o painel e os portais divergem.
+ */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--fs-sm);
+}
+
+th {
+  text-align: left;
+  font-size: var(--fs-2xs);
+  font-weight: 600;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--line);
+  white-space: nowrap;
+}
+
+td {
+  padding: 13px 20px;
+  border-bottom: 1px solid var(--line-soft);
+  vertical-align: middle;
+}
+
+tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+/* Números em coluna precisam de dígito de largura fixa, senão a coluna dança a
+   cada recarga. Vale para preço, contagem e hora.
+ *
+ * ⚠️ SEM `text-align: right`, e isso é do protótipo. Eu tinha acrescentado o
+ * alinhamento por hábito de planilha, e ele jogou "08:00 às 17:00" para a
+ * borda da tela numa tabela de rótulo/valor — a classe marca o TIPO do dado,
+ * não a posição dele. Alinhar coluna de número é decisão da tabela que a
+ * contém, não do dado. */
+.num {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ══ o antes da sessão ════════════════════════════════════════════════════ */
+
+/*
+ * O CABEÇALHO PÚBLICO, O LOGIN E O CADASTRO — o que se vê ANTES de entrar.
+ *
+ * ⚠️ ISTO É DA BASE, e ficou fora dela até 28/08. O `casca.mjs` SEMPRE emitiu
+ * esta marcação (`.nav`, `.brand`, `.dot`, `.nav-cta`, `.back-link`,
+ * `.logout-link`, `.page-body`, `.pagewrap`, `.wrap`, `.eyebrow`, `.lead`) e
+ * nenhuma das regras morava aqui — cada portal carregava a MESMA cópia de 14
+ * regras na própria folha, byte a byte igual nas três. Marcação da base
+ * estilizada pela vertical é o desenho que garante divergência silenciosa: o
+ * dia em que alguém ajustasse o cabeçalho ajustaria um portal de três.
+ *
+ * Achado pelo `kit-styleguide` na PRIMEIRA vez que ele foi construído — o
+ * verificador de classes acusou `.brand`, `.nav`, `.lead` e mais nove sem
+ * regra na folha. Nenhum produto tinha como notar: todos traziam a cópia.
+ *
+ * `.authwrap` vem junto de propósito: quem monta o cadastro hoje é o
+ * `js/signup.js` do kit, então a convenção é da base também.
+ */
+
+.wrap {
+  max-width: 980px;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+
+.page-body {
+  padding: 28px 0 64px;
+}
+
+/* A coluna de leitura do login e do cadastro. Estreita de propósito: um
+   formulário de 6 campos numa largura de tabela cansa de ler. */
+.pagewrap,
+.authwrap {
+  max-width: 560px;
+}
+
+/* Some quando a casca está VISÍVEL: um trilho espremido numa coluna de 560px
+   deixaria o conteúdo com menos de 350px.
+ *
+ * ⚠️ `:not([hidden])` é obrigatório, e custou uma rodada: `:has` NÃO liga para
+ * visibilidade. O `#portalView` existe no DOM desde o primeiro byte, escondido
+ * — então `:has(.casca)` casava já na tela de LOGIN, e o formulário de dois
+ * campos abria com a largura de uma tabela. A tela não quebra, só fica errada,
+ * que é o tipo de defeito que se explica como "ficou estranho". */
+.wrap:has(#portalView:not([hidden])) {
+  max-width: none;
+  padding-inline: 0;
+}
+
+.pagewrap:has(#portalView:not([hidden])) {
+  max-width: none;
+}
+
+/* O cabeçalho público */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 20px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-weight: 600;
+  font-size: var(--fs-base);
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.brand small {
+  font-weight: 400;
+  font-size: var(--fs-xs);
+  color: var(--ink-3);
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--brand-500);
+  display: inline-block;
+  flex: none;
+}
+
+.nav-cta {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.back-link,
+.logout-link {
+  font-size: var(--fs-sm);
+  color: var(--ink-2);
+  text-decoration: none;
+  background: none;
+  border: 0;
+  padding: 6px 8px;
+  cursor: pointer;
+  font-family: var(--font);
+}
+
+.back-link:hover,
+.logout-link:hover {
+  color: var(--brand-500);
+}
+
+/* O selo da seção, no cadastro e no login */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font: 500 var(--fs-2xs)/1 var(--font-mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.lead {
+  font-size: var(--fs-base);
+  color: var(--ink-2);
+  line-height: 1.55;
+}
+
+/* ══ o par, os dias e o cadastro ══════════════════════════════════════════ */
+
+/*
+ * ⚠️ ESTAS 12 REGRAS ESTAVAM EM TRÊS FOLHAS DE VERTICAL, byte a byte iguais.
+ *
+ * A carteira, o passo do cadastro, o código gerado, o par de campos e a
+ * seleção de dias não são de nenhum produto — são o vocabulário de qualquer
+ * backoffice que cadastre gente e configure horário. Cada portal carregava a
+ * cópia inteira, e o dia em que alguém ajustasse a pílula de dia ajustaria um
+ * portal de três.
+ *
+ * Achado pela catraca `vertical-nao-redeclara-a-base.test.mjs` — a mesma que
+ * agora reprova o retorno. Depois desta mudança as três folhas de portal têm
+ * UMA declaração cada (`--product`), que é a medida honesta do que de fato
+ * diverge entre elas.
+ *
+ * ⚠️ `.dia` traz `color` e `margin` que vieram da CLÍNICA, não dos portais: a
+ * clínica tinha a mesma pílula com dois ajustes a mais, e eles estão certos
+ * para todo mundo. `margin: 0` neutraliza a margem que `form label` dá — sem
+ * ele a pílula ganha espaço de rótulo de campo, que ela não é.
+ */
+
+/* A carteira e a agenda: uma linha por pessoa ou compromisso, o que importa à
+ * esquerda e o estado à direita. A peça é `.item.linha` — a mesma que o painel
+ * de Materiais e o de Conversas usam.
+ *
+ * ⚠️ AQUI MORAVA `.summary-row.cliente`, E ELA NUNCA VALEU NO PRODUTO.
+ *
+ * O #1055 pôs o `display: flex` da carteira em `.summary-row.cliente`; o
+ * #1073 acrescentou a regra base `.summary-row`, que faltava. As duas estavam
+ * certas e as duas eram inalcançáveis: `portal.js` escreve `item cliente` e
+ * `item compromisso`. Uma classe que script nenhum escreve não estiliza nada,
+ * então a carteira e a agenda empilhavam nos três portais — medido em produção
+ * em 01/09 (`.summary-row.cliente` → flex, `.item.cliente` → block).
+ *
+ * O styleguide renderizava `.summary-row.cliente` e mostrava a peça CERTA, o
+ * que fazia a divergência parecer resolvida. Renderizar não é usar: a conta de
+ * cobertura via a classe viva e o produto não a escrevia.
+ *
+ * Duas lições, e a segunda é a que se repete: uma regra só existe se o
+ * CONSUMIDOR a escreve, e o lugar onde se prova isso é a tela do produto, não
+ * a do styleguide. */
+
+/* Sem cadastro NÃO é erro — é quem falou e ainda não virou ficha. Por isso
+ * discreto, e não vermelho.
+ *
+ * ⚠️ SEM ANCESTRAL E SEM `.val`. A regra antiga era
+ * `.summary-row.cliente .val.sem-nome`, e o `portal.js` escreve `sem-nome`
+ * sozinho, num `div` — três condições, nenhuma satisfeita. Resultado: "Sem
+ * cadastro ainda" saía IDÊNTICO a um nome de verdade, que é o oposto do que
+ * esta regra existe para fazer. */
+.sem-nome {
+  font-style: italic;
+  opacity: 0.72;
+}
+
+/* O passo numerado do cadastro */
+.step {
+  display: flex;
+  gap: 11px;
+  align-items: flex-start;
+  padding: 9px 0;
+}
+
+.check-badge {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--brand-50);
+  color: var(--brand-500);
+  display: grid;
+  place-items: center;
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  flex: none;
+}
+
+/* O código gerado no fim do cadastro — é o que a pessoa copia e divulga, então
+   ele é o maior elemento da tela e monoespaçado, para não confundir 0 com O. */
+.code-display {
+  font-family: var(--font-mono);
+  font-size: var(--fs-2xl);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  background: var(--sunken);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  text-align: center;
+}
+
+/* Dois campos que só fazem sentido juntos (abre/fecha, antecedência/cancela-
+   mento). Numa coluna só, a pessoa lê como duas perguntas independentes. */
+.par {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+}
+
+.dias {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+
+.dia {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-pill);
+  padding: 5px 11px;
+  font-size: var(--fs-xs);
+  color: var(--ink-2);
+  margin: 0;
+  cursor: pointer;
+}
+
+.dia:has(input:checked) {
+  background: var(--brand-50);
+  border-color: var(--brand-300);
+  color: var(--brand-700);
+}
+
+@media (max-width: 560px) {
+  .par {
+    grid-template-columns: 1fr;
+  }
+
+  /* A coluna que cabe no bolso é a que decide; o resto sai. Marcar a célula
+     com `.esconde` é como a tabela escolhe — não há como o kit adivinhar qual
+     coluna importa em cada produto, e uma tabela de seis colunas no celular
+     ou rola de lado ou some inteira. */
+  th.esconde,
+  td.esconde {
+    display: none;
+  }
+}
+
+/* O cabeçalho público some ao entrar: a marca já está no trilho, e duas marcas
+   na mesma tela é ruído. `:has` na página inteira porque o cabeçalho é IRMÃO
+   do corpo — não dá para perguntar de dentro dele. */
+.page:has(#portalView:not([hidden])) [data-publico],
+.page:has(#portalView:not([hidden])) footer {
+  display: none;
+}
+
+/* ══ a casca padrão ═══════════════════════════════════════════════════════ */
+
+/*
+ * O TRILHO, O TOPO E A MOLDURA — as três primeiras afirmações da proposta.
+ *
+ * ## Por que isto passou a existir
+ *
+ * Este arquivo dizia, no cabeçalho, que a casca NÃO morava aqui "de propósito",
+ * para não matar o nível 3. A proposta aprovada dizia o contrário, e com todas
+ * as letras: "trilho à esquerda, não abas — o portal da clínica usa quatro abas
+ * e já precisa de oito destinos". Quem leu o CSS executou o oposto de quem leu
+ * a proposta, e três produtos ficaram fora do padrão sem nada reprovar.
+ *
+ * As duas se conciliam, e a distinção é **padrão ≠ imposição**:
+ *
+ *  - o que está aqui é PINTURA de casca, e só entra se a vertical listar esta
+ *    folha. A marcação continua sendo o `site.html` do site — copiada de um
+ *    andaime, nunca montada por JS do kit;
+ *  - o nível 3 segue intacto: `estilos: ['src/meu-desenho.css']`, `site.html`
+ *    próprio, e nada daqui entra;
+ *  - o nível 4 (whitelabel por tenant) idem — e é por ele que nenhuma regra
+ *    abaixo tem cor literal ou palavra.
+ *
+ * ## Por que trilho e não abas
+ *
+ * Aba não passa de cinco sem virar rolagem horizontal. A clínica já tem quatro
+ * e precisa de oito quando configuração e equipe entrarem. O trilho cresce em
+ * grupo e é onde o selo de pendência cabe sem apertar nada.
+ *
+ * As abas continuam existindo (`.abas`/`.aba`, acima): elas servem para dividir
+ * UMA tela, não para navegar entre destinos. São coisas diferentes que a mesma
+ * palavra escondia.
+ */
+
+/*
+ * ══ O RAIL DUPLO ═════════════════════════════════════════════════════════
+ *
+ * Duas faixas, e a separação é de PERGUNTA, não de estética:
+ *
+ *   `.icrail`  (60px)  — **em que ÁREA estou?** Só ícones, sempre visível.
+ *   `.ctxrail` (252px) — **o que faço nesta área?** Os destinos, com nome.
+ *
+ * ⚠️ A primeira versão desta casca tinha UM trilho de 208px com os grupos
+ * empilhados. Funcionava com quatro destinos e não é o desenho: o protótipo
+ * navega 13 áreas pela faixa de ícones, e um trilho único com 13 rótulos vira
+ * rolagem vertical — o mesmo defeito das abas, deitado.
+ *
+ * A faixa de ícones também é onde o selo de pendência sobrevive: ele fica
+ * visível mesmo quando a pessoa está noutra área, que é o único momento em que
+ * ele importa.
+ *
+ * `grid` e não `flex` para que os rails não encolham quando o conteúdo é largo
+ * — tabela grande empurrando a navegação para fora foi o defeito que fez o
+ * painel adotar esta mesma grade.
+ */
+.casca {
+  display: grid;
+  grid-template-columns: var(--icrail) var(--ctxrail) 1fr;
+  min-height: 100vh;
+  background: var(--canvas);
+}
+
+/* ── a faixa de áreas ───────────────────────────────────────────────────── */
+
+.icrail {
+  background: var(--rail);
+  border-right: 1px solid var(--line);
+  padding: 12px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.icrail .marca {
+  width: 30px;
+  height: 30px;
+  border-radius: var(--r-sm);
+  background: var(--brand-500);
+  color: var(--ink-inverted);
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-size: var(--fs-xs);
+  flex: none;
+  margin-bottom: 8px;
+}
+
+/* Empurra o que vier depois para o pé da faixa. */
+.icrail .empurra {
+  flex: 1;
+  min-height: 8px;
+}
+
+.ic {
+  width: 42px;
+  height: 38px;
+  border: 0;
+  padding: 0;
+  border-radius: 11px;
+  display: grid;
+  place-items: center;
+  color: var(--ink-3);
+  background: none;
+  position: relative;
+  transition: 0.15s var(--ease);
+  flex: none;
+  cursor: pointer;
+}
+
+.ic svg {
+  width: 19px;
+  height: 19px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.ic:hover:not([disabled]) {
+  background: var(--surface-3);
+  color: var(--ink);
+}
+
+.ic[aria-current="true"] {
+  background: var(--surface);
+  color: var(--brand-500);
+  box-shadow: var(--sh-sm);
+}
+
+/* A lasca à esquerda. É ela que diz "você está AQUI" quando a faixa inteira
+   está em repouso — a cor sozinha não basta em tela pequena. */
+.ic[aria-current="true"]::before {
+  content: "";
+  position: absolute;
+  left: -9px;
+  top: 9px;
+  bottom: 9px;
+  width: 3px;
+  border-radius: 0 3px 3px 0;
+  background: var(--brand-500);
+}
+
+/* O selo de pendência VIVE aqui, e não no destino: ele precisa ser visto de
+   outra área, que é justamente quando importa. */
+.ic .selo {
+  position: absolute;
+  top: 2px;
+  right: 3px;
+  min-width: 15px;
+  height: 15px;
+  padding: 0 4px;
+  border-radius: var(--radius-pill);
+  background: var(--accent);
+  color: var(--ink-inverted);
+  font-size: var(--fs-3xs);
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+  line-height: 1;
+}
+
+/* O nome da área aparece ao pousar — a faixa é só ícone, e ícone sozinho é
+   adivinhação para quem chegou hoje. */
+.ic[data-nome]:hover::after {
+  content: attr(data-nome);
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--ink);
+  color: var(--canvas);
+  font-size: var(--fs-xs);
+  font-weight: 500;
+  padding: 5px 9px;
+  border-radius: var(--r-xs);
+  white-space: nowrap;
+  z-index: 20;
+  pointer-events: none;
+}
+
+/* ── o rail de contexto ─────────────────────────────────────────────────── */
+
+.ctxrail {
+  background: var(--surface);
+  border-right: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+/*
+ * O SELETOR DE CONTEXTO, no topo do rail.
+ *
+ * No protótipo é o produto; aqui é a unidade ou a conta. Ele fica no rail e não
+ * no topo da página porque a pergunta "onde estou operando" precede "o que vou
+ * fazer" — e porque trocar de contexto não pode depender de estar na tela
+ * certa.
+ */
+.ctxsel {
+  margin: 12px;
+  padding: 9px 11px;
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  background: var(--surface-2);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: calc(100% - 24px);
+  text-align: left;
+  cursor: pointer;
+  color: inherit;
+  font-family: var(--font);
+  height: auto;
+}
+
+.ctxsel:hover {
+  border-color: var(--brand-400);
+  background: var(--brand-soft);
+}
+
+.ctxsel .quem {
+  flex: 1;
+  min-width: 0;
+}
+
+.ctxsel .quem b {
+  display: block;
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ctxsel .quem span {
+  display: block;
+  font-size: var(--fs-2xs);
+  color: var(--ink-3);
+}
+
+/* Um `<select>` cru dentro do rail: sem borda própria, porque a moldura já é
+   do `.ctxsel`.
+ *
+ * ⚠️ `min-width: 0` no pai E `width: 100%` aqui. Sem os dois, um rótulo longo
+ * ("MED-MBNP · médico(a)") empurra a seta para fora da moldura em vez de
+ * truncar — o rail tem 252px e não negocia. */
+.ctxsel select {
+  border: 0;
+  background: none;
+  padding: 0;
+  height: auto;
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  width: 100%;
+  min-width: 0;
+  color: inherit;
+  text-overflow: ellipsis;
+}
+
+.crs {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0 8px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* Os destinos da área ativa. Os das outras ficam no DOM e escondidos: trocar
+   de área não deve pedir dado de novo. */
+.crs [data-area] {
+  display: none;
+}
+
+.crs [data-area][data-ativa] {
+  display: contents;
+}
+
+.trilho {
+  display: contents;
+}
+
+/*
+ * ⚠️ AQUI MORAVAM `.trilho-marca` e `.trilho-logo` — 5 regras, ZERO
+ * consumidores, removidas em 28/08.
+ *
+ * Elas eram o bloco de marca no topo do rail de contexto, do primeiro esboço.
+ * Quem ficou no lugar foi `.ctxsel` (avatar + `.quem`), que o `casca.mjs`
+ * emite — e ninguém apagou o esboço. Achado pelo `kit-styleguide`: a tela
+ * renderiza todas as primitivas, o verificador do build comparou a folha com
+ * o HTML e sobraram exatamente estas duas classes.
+ *
+ * CSS morto na BASE é pior que na vertical: ele parece disponível. Alguém
+ * escreveria `class="trilho-marca"` numa tela nova, funcionaria por acidente,
+ * e passaríamos a ter dois blocos de marca com desenhos diferentes.
+ */
+
+/* O rótulo de grupo — é o que faz o trilho crescer sem virar lista longa. */
+.trilho-grupo {
+  font: 500 9.5px/1 var(--font-mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  padding: 13px 9px 5px;
+}
+
+.trilho-item {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 7px 9px;
+  border-radius: var(--radius-sm);
+  color: var(--ink-2);
+  font-size: var(--fs-xs);
+  font-weight: 500;
+  border: 0;
+  background: none;
+  width: 100%;
+  text-align: left;
+  font-family: var(--font);
+  cursor: pointer;
+}
+
+.trilho-item svg {
+  width: 15px;
+  height: 15px;
+  flex: none;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/*
+ * ⚠️ `:not([disabled])` NÃO É ENFEITE AQUI — é aritmética de especificidade.
+ *
+ * A pele genérica do botão é `button:hover:not([disabled])`, que vale
+ * (0,2,1). Um `.classe:hover` vale (0,2,0) e PERDE: o item de navegação
+ * ganhava `background: var(--brand-600)` (roxo escuro) no hover, com o texto
+ * em `--ink` (quase preto) por cima. Preto sobre roxo escuro — foi assim que
+ * o dono viu, e descreveu como "a fonte fica cinza no hover".
+ *
+ * Repetindo o mesmo guarda aqui, o seletor vira (0,3,0) e vence — sem mexer
+ * na pele genérica, que está certa para os botões que são botões de verdade.
+ * Há teste amarrando isto (`hover-do-trilho.test.mjs`).
+ */
+.trilho-item:hover:not([disabled]) {
+  background: var(--sunken);
+  color: var(--ink);
+}
+
+/* `aria-current` e não uma classe: o estado ativo precisa existir para quem
+   navega por leitor de tela, e amarrar o visual ao atributo impede que os dois
+   se separem — o defeito que o bloco `tabs` conserta do outro lado. */
+.trilho-item[aria-current="page"] {
+  background: var(--brand-50);
+  color: var(--brand-500);
+}
+
+/* O selo de pendência. `margin-left:auto` para que ele encoste à direita
+   independentemente do tamanho do rótulo — em pt-BR os rótulos variam muito. */
+.trilho-item .selo {
+  margin-left: auto;
+  background: var(--accent);
+  color: var(--ink-inverted);
+  border-radius: var(--radius-pill);
+  font: 600 10px/1 var(--font);
+  padding: 3px 6px;
+}
+
+/*
+ * O PÉ do rail encosta em duas bordas se ninguém o afastar.
+ *
+ * `margin-top:auto` prende o bloco no fim de uma coluna que tem a altura da
+ * JANELA, então o último filho fica rente ao rodapé da tela; e sem recuo
+ * lateral o conteúdo cola na borda esquerda do rail, desalinhado de
+ * `.trilho-marca` e dos destinos, que já recuam 8px. Com um botão no pé — o
+ * "Entrar também como clínica" — o resultado lê como elemento fora do layout,
+ * e não como o pé do trilho.
+ *
+ * O recuo é do PÉ e não do rail: `.ctxrail` sem padding é o que deixa cada
+ * bloco decidir o seu, e é o que permite um bloco sangrar de propósito.
+ */
+.trilho-pe {
+  margin-top: auto;
+  border-top: 1px solid var(--line);
+  padding: 10px 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+/* Iniciais, não foto: não há upload de avatar em nenhuma vertical, e um círculo
+   vazio parece defeito. */
+.avatar {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--brand-100);
+  color: var(--brand-700);
+  display: grid;
+  place-items: center;
+  font-size: var(--fs-2xs);
+  font-weight: 600;
+  flex: none;
+}
+
+/* `min-width:0` obrigatório: sem ele um nome longo estoura a grade em vez de
+   truncar, e o trilho inteiro alarga. */
+.principal {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+/*
+ * O TOPO — contexto sempre visível.
+ *
+ * A proposta: "quem trabalha em duas unidades erra de unidade. O seletor fica
+ * no topo, ao lado da migalha, e nunca dentro de uma tela". Trocar de contexto
+ * não pode depender de estar na tela certa.
+ */
+/* O topo acompanha a coluna do corpo: com o corpo centrado e o topo colado nas
+   bordas, a migalha e o "Sair" ficam em outra coluna que o conteúdo, e o olho
+   lê duas páginas empilhadas em vez de uma. */
+.topo > * {
+  max-width: none;
+}
+.topo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 20px;
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.migalha {
+  font-size: var(--fs-2xs);
+  color: var(--ink-3);
+}
+
+.migalha b {
+  color: var(--ink-2);
+  font-weight: 500;
+}
+
+/* Empurra o que vem depois para a direita. Uma classe e não `margin-left:auto`
+   solto porque o site decide O QUE fica de cada lado. */
+.espaco {
+  flex: 1;
+}
+
+.corpo {
+  padding: 18px 28px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+  /*
+   * ⚠️ SEM TETO DE LARGURA, e isso é decisão revista.
+   *
+   * Eu tinha capado em 1400px porque num monitor de 1853px o portal abria com
+   * uma ilha de conteúdo num oceano branco. Estava tratando o SINTOMA: o
+   * problema não era a largura, era o conteúdo — uma coluna de formulário de
+   * 76ch e um cartão com uma frase. Com os blocos em grade e o vazio
+   * desenhado, a tela usa a largura, e capá-la só devolve a margem morta.
+   *
+   * Painel operacional é ferramenta de trabalho: quem tem monitor grande
+   * comprou monitor grande para ver mais linha, não mais branco.
+   */
+}
+
+/*
+ * A MOLDURA DE PÁGINA.
+ *
+ * Título, uma linha sem jargão dizendo o que aquilo é, ações à direita. A linha
+ * de descrição não é enfeite: é metade do que torna a tela usável por quem não
+ * é técnico — e é a primeira coisa que se perde quando alguém copia a moldura
+ * de outra tela.
+ */
+.cabeca {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+/* ⚠️ A moldura usa a escala INTEIRA, não um px cravado. A primeira versão
+   desta casca escreveu `font-size: 20px` aqui e sobrescreveu o `h1` global —
+   a folha tinha a escala do protótipo e a tela não a usava, que é o mesmo que
+   não tê-la. */
+.cabeca h1 {
+  font-size: var(--fs-3xl);
+  font-weight: 640;
+  margin: 0;
+  letter-spacing: -0.032em;
+  line-height: 1.18;
+}
+
+.cabeca p {
+  margin: 6px 0 0;
+  font-size: var(--fs-sm);
+  color: var(--ink-2);
+  max-width: 62ch;
+}
+
+/* Os indicadores. `auto-fit` com mínimo para que quatro caibam no desktop e
+   dois no celular sem media query — e sem número mágico de coluna. */
+.indicadores {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(148px, 1fr));
+  gap: var(--gap);
+}
+
+.indicador {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+}
+
+.indicador .rotulo {
+  font-size: var(--fs-2xs);
+  color: var(--ink-3);
+}
+
+/* `tabular-nums` porque quatro indicadores lado a lado com larguras de dígito
+   diferentes dançam a cada recarga. */
+.indicador .valor {
+  font-size: var(--fs-2xl);
+  font-weight: 600;
+  line-height: 1.2;
+  font-variant-numeric: tabular-nums;
+}
+
+.indicador .detalhe {
+  font-size: var(--fs-2xs);
+  color: var(--ink-3);
+}
+
+/*
+ * O CELULAR.
+ *
+ * O trilho vira uma faixa rolável no topo. Não vira menu-sanduíche: um
+ * backoffice é operado com pressa, e esconder a navegação atrás de um toque
+ * a mais custa em toda tarefa. A faixa mantém tudo alcançável com um polegar.
+ */
+/*
+ * O CELULAR.
+ *
+ * Os dois rails viram um só, deitado no topo: a faixa de áreas some e os
+ * destinos da área ativa viram uma tira rolável. Não vira menu-sanduíche —
+ * backoffice se opera com pressa, e esconder a navegação atrás de um toque a
+ * mais custa em toda tarefa.
+ *
+ * ⚠️ A faixa de ÁREAS é a que some, não a de destinos: com duas ou três áreas
+ * o custo de perdê-la é um toque a mais; perder os destinos deixaria a pessoa
+ * sem saber o que a tela oferece.
+ */
+@media (max-width: 860px) {
+  .casca {
+    grid-template-columns: 1fr;
+    min-height: 100dvh;
+  }
+  .icrail {
+    flex-direction: row;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+    padding: 8px 12px;
+    gap: 6px;
+  }
+  .icrail .marca {
+    margin-bottom: 0;
+  }
+  /* A lasca de "você está aqui" fica embaixo quando a faixa está deitada. */
+  .ic[aria-current="true"]::before {
+    left: 9px;
+    right: 9px;
+    top: auto;
+    bottom: -8px;
+    width: auto;
+    height: 3px;
+    border-radius: 3px 3px 0 0;
+  }
+  .ctxrail {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .ctxsel {
+    margin: 10px 12px;
+    width: calc(100% - 24px);
+  }
+  .crs {
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 0 8px 10px;
+    scrollbar-width: none;
+  }
+  .crs::-webkit-scrollbar {
+    display: none;
+  }
+  .trilho-grupo {
+    display: none;
+  }
+  .trilho-item {
+    white-space: nowrap;
+    width: auto;
+  }
+  .corpo {
+    padding: 14px 14px 22px;
+  }
+}
+
+/* ══ o dedo, não o cursor ═════════════════════════════════════════════════ */
+
+/*
+ * ⚠️ NO FIM DO ARQUIVO, e isso é obrigatório.
+ *
+ * Bloco de `pointer: coarse` no meio do arquivo perde para toda regra escrita
+ * depois — e o sintoma é o alvo continuar pequeno no celular sem nada acusar.
+ * Custou uma sessão inteira num hotsite desta casa.
+ */
+
+/* ══ as consultas por vídeo: a fila de liberação e a sala ═════════════════
+   Nasceram em `med-clinica/src/clinica.css` (28/08) como divergência de
+   nível 3 — "o único produto com sala de vídeo". Em 03/09 o jurídico passou a
+   ter a mesma sala e a mesma fila (`/js/sala.js`, `recursos.consultas`), e
+   regra que dois produtos vestem igual é base, não delta — a catraca
+   `vertical-nao-redeclara-a-base` reprovaria a terceira cópia. A clínica ainda
+   carrega a dela; migrá-la é apagar o bloco de lá. */
+
+/* A busca de cliente: as sugestões caem por baixo do campo. */
+.sugestoes {
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  background: var(--surface);
+  margin-top: 4px;
+  max-height: 220px;
+  overflow: auto;
+}
+.sugestoes button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  padding: 8px 10px;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+.sugestoes button:last-child { border-bottom: 0; }
+
+/* O link da sala: é copiado e colado, então quebra em qualquer ponto e usa
+   monoespaçada — num link de sala, `l` e `1` decidem se a consulta acontece. */
+.link-sala {
+  word-break: break-all;
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+}
+
+/* Um rascunho na fila. */
+.rascunho {
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  padding: 12px 14px;
+  margin-top: 10px;
+}
+.rascunho h4 { margin: 0 0 4px; font-size: var(--fs-base); }
+
+/* ══ o diálogo ════════════════════════════════════════════════════════════ */
+.modal-pe {
+  display: flex;
+  gap: var(--gap);
+  justify-content: flex-end;
+  padding: 14px 20px;
+  border-top: 1px solid var(--line);
+  background: var(--sunken);
+}
+/* O texto do rascunho é leitura longa: monoespaçada e alto o bastante. */
+.modal-corpo textarea {
+  min-height: 220px;
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  line-height: 1.55;
+}
+
+/* ══ a sala ═══════════════════════════════════════════════════════════════
+   Tela escura por natureza da tarefa (não é o tema escuro do kit): a
+   repintura mora aqui, escopada em `#sala`. */
+/* ⚠️ Só a rota ATIVA: `display: flex` num `#sala` nu vence o `display: none`
+   que a base dá a toda `.page` inativa (id > classe), e a sala aparecia
+   inteira embaixo do login — medido em 03/09 no primeiro print. */
+#sala[data-active="true"] {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--sala-bg);
+  color: var(--sala-ink);
+}
+.sala-topo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px;
+  border-bottom: 1px solid var(--sala-line);
+  flex-wrap: wrap;
+}
+.sala-topo .espaco { flex: 1; }
+.sala-titulo { font-weight: 600; letter-spacing: -0.012em; }
+.sala-estado {
+  font-size: var(--fs-2xs);
+  color: var(--sala-ink-2);
+  border: 1px solid var(--sala-line-2);
+  border-radius: 999px;
+  padding: 3px 10px;
+}
+.sala-grade {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 10px;
+  padding: 14px 18px 18px;
+  align-content: start;
+}
+.sala-tile {
+  position: relative;
+  background: var(--sala-tile);
+  border: 1px solid var(--sala-line);
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+}
+.sala-tile video { width: 100%; height: 100%; object-fit: cover; display: block; }
+.sala-tile .quem {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 8px 10px;
+  font-size: var(--fs-2xs);
+  background: linear-gradient(transparent, var(--sala-shade));
+}
+.sala-tile.sem-video::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 42%, var(--sala-tile-2), var(--sala-tile));
+}
+#sala .aviso { background: var(--sala-aviso); color: var(--sala-ink); border-color: var(--sala-line-2); margin: 12px 18px 0; }
+#sala .aviso.erro { background: var(--sala-erro); }
+#sala .aviso.ok { background: var(--sala-ok); }
+#sala .ghost { color: var(--sala-ink); border-color: var(--sala-line-2); background: transparent; }
+#sala .perigo { background: var(--sala-perigo); color: var(--sala-ink); border-color: var(--sala-perigo); }
+
+@media (pointer: coarse) {
+  button,
+  .aba {
+    min-height: 44px;
+  }
+  /* ⚠️ CHECKBOX E RADIO FICAM DE FORA — eles não crescem, quem cresce é o
+   * rótulo. `input{min-height:44px}` pegava os dois e produzia uma caixa de
+   * 16×44 no celular: alta, estreita e desalinhada da frase ao lado.
+   *
+   * Estava remendado em `.dia input{min-height:0}` nas quatro verticais — o
+   * mesmo achado que o `width:auto`, consertado quatro vezes fora da base e
+   * valendo só dentro de `.dia`. Em qualquer outro checkbox da tela o defeito
+   * continuava, no aparelho onde ele mais atrapalha. */
+  input:not([type='checkbox']):not([type='radio']),
+  select,
+  textarea {
+    min-height: 44px;
+    /* 16px é o limiar abaixo do qual o Safari dá zoom ao focar o campo — e o
+       zoom desloca a tela inteira no meio do preenchimento. */
+    font-size: var(--fs-prose);
+  }
+
+  /* O alvo de toque é a LINHA INTEIRA — caixa mais frase. É o que dá os 44px
+     sem deformar o controle nativo. */
+  label:has(> input[type='checkbox']),
+  label:has(> input[type='radio']) {
+    min-height: 44px;
+  }
+}

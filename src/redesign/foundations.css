@@ -1,0 +1,45 @@
+.c-site :is(.v-hero,.a-hero) { position: relative; }
+.c-site .v-page em { font-style: normal; }
+.c-site .v-page :is(.v-hero-copy>p,.v-statement-body p,.v-principles-heading>p,.v-principle-description p,.v-evolution-body>p,.v-products-intro,.v-product>p,.v-human p) { color: var(--c-body); }
+.c-site .v-page :is(.v-eyebrow,.v-art-caption,.v-hero-baseline,.v-principle-controls button>span) { color: var(--c-body); }
+.c-site .v-page .v-principle-controls button { min-height: 48px; color: var(--c-body); }
+.c-site .v-page .v-principle-controls button[aria-pressed=true] { color: var(--c-brand); }
+.c-site .v-page .v-principle-controls button[aria-pressed=true]>span { color: var(--c-brand); }
+.c-site .v-page .v-button { color: white; min-height: 48px; align-items: center; }
+.c-site .v-page :is(a,button):focus-visible { outline-color: var(--c-brand); }
+.c-site .a-page :is(a,button,summary,[tabindex]):focus-visible { outline: 2px solid var(--c-brand); outline-offset: 4px; }
+.c-site .a-page :is(.a-caption,.a-hero-benefits span,.a-exhibit-status,.a-map-legend,.a-tabs button small,.a-specific small,.a-steps small,.a-fleet-actions small,.a-concept-tag) { color: var(--c-body); }
+.c-site .a-page .a-path-number { color: var(--c-brand); }
+.c-site .a-page .a-tabs button[aria-selected=true] small { color: var(--c-yellow); }
+.c-site .a-page .a-vertical .a-specific small { color: var(--c-body); }
+.c-site .a-page .a-tabs button { min-height: 48px; }
+.c-site .a-page .a-tabs button>span { margin-left: 12px; }
+.c-site .a-page .a-chapters a { position:relative; }
+.c-site .a-page .a-chapters a::before { content:'';position:absolute;inset:50% 0 auto;height:44px;transform:translateY(-50%); }
+.c-site .a-page .a-layer-stack summary { min-height: 48px; }
+.c-site .a-page .l-lab-invitation { padding-block: 70px; background: #E7DDED; overflow: clip; }
+.c-site .a-page .l-lab-invitation>.c-wrap { display: grid; grid-template-columns: 1.1fr 1fr; gap: 10%; align-items: center; }
+.c-site .a-page .l-lab-invitation h2 { font-size:clamp(36px,4.2vw,65px);font-weight:400;letter-spacing:-.055em;line-height:1.08;margin-bottom:30px; }
+.c-site .a-page .l-lab-invitation p { max-width:550px;font-size:16px;line-height:1.65;color:var(--c-body);margin-bottom:30px; }
+.c-site .a-page .l-invite-art svg { display:block;width:100%;height:auto;max-height:460px;margin-left:-7%;overflow:visible; }
+.c-site .a-page .l-art-piece { animation: c-lab-invite-float 9s ease-in-out infinite; }
+.c-site .a-page .l-art-orange { animation-delay: -4s; }
+@keyframes c-lab-invite-float { 50% { transform: translateY(-10px); } }
+.c-site .a-page :is(.a-two,.a-hero-grid,.a-vertical,.a-build-path)>* { min-width: 0; }
+.c-site .a-page .a-vertical .c-sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+@media(max-width:700px) {
+  .c-site .a-page .a-hero h1 { font-size: clamp(47px,12.4vw,70px); }
+  .c-site .a-page .a-tabs button { font-size: 14px; padding-inline: 10px; }
+  .c-site .a-page .a-tabs button span { display: none; }
+  .c-site .a-page .a-hero-benefits>div { grid-template-columns: 100px minmax(0,1fr); }
+  .c-site .v-page .v-art-caption { gap: 12px; }
+}
+@media(max-width:800px) { .c-site .a-page .l-lab-invitation>.c-wrap { gap:25px; } }
+@media(max-width:600px) {
+  .c-site .a-page .l-lab-invitation { padding-block:45px; }
+  .c-site .a-page .l-lab-invitation>.c-wrap { grid-template-columns:1fr; }
+  .c-site .a-page .l-lab-invitation h2 { font-size:36px; }
+  .c-site .a-page .l-invite-art { height:230px; }
+  .c-site .a-page .l-invite-art svg { width:100%;height:auto;margin:0; }
+}
+@media(prefers-reduced-motion:reduce) { .c-foundation-motion { display: none; } }

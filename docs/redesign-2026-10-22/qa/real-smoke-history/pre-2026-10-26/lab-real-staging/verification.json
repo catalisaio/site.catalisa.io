@@ -1,0 +1,219 @@
+{
+  "date": "2026-10-25T06:45:53.921Z",
+  "passed": true,
+  "origin": "https://site-staging.catalisa.io",
+  "tlsValidation": true,
+  "scope": "Real staging AI through the target Lab and BFF. Fictional reserved contact address. No handoff or external messages.",
+  "stage": "contact-continuation",
+  "result": {
+    "idea": "Quero matricular alunos de uma escola de inglês pelo WhatsApp",
+    "elapsedMs": 59949,
+    "concept": {
+      "conceptRef": "concept_97c8f918-7f2f-495a-99b9-7a6e0594e8b6",
+      "version": 1,
+      "briefVersion": 1,
+      "content": {
+        "schemaVersion": "1.0",
+        "title": "Matrícula via WhatsApp",
+        "summary": "Explorar matrícula de alunos de escola de inglês pelo WhatsApp usando blocos do Catalisa. Hipótese: escola já usa WhatsApp e precisa de cadastro simples de alunos.",
+        "hypothesis": "Público é escola de inglês com demanda de matrículas online; contexto de integração com sistema interno da escola e validação de dados de alunos a confirmar; volume e perfil dos alunos não informados.",
+        "roles": [
+          "Aluno ou responsável",
+          "Secretaria da escola",
+          "Administrador da escola"
+        ],
+        "screens": [
+          {
+            "id": "inicio",
+            "title": "Boas-vindas",
+            "description": "Mensagem inicial no WhatsApp para iniciar matrícula",
+            "items": [
+              {
+                "label": "Mensagem",
+                "value": "Olá! Quer matricular na escola de inglês?"
+              }
+            ],
+            "action": {
+              "label": "Iniciar",
+              "nextScreenId": "dados"
+            }
+          },
+          {
+            "id": "dados",
+            "title": "Dados do aluno",
+            "description": "Coleta de informações básicas via WhatsApp",
+            "items": [
+              {
+                "label": "Nome",
+                "value": "Nome completo do aluno"
+              },
+              {
+                "label": "Idade",
+                "value": "Idade ou série"
+              },
+              {
+                "label": "Contato",
+                "value": "Telefone do responsável"
+              }
+            ],
+            "action": {
+              "label": "Enviar",
+              "nextScreenId": "confirmacao"
+            }
+          },
+          {
+            "id": "confirmacao",
+            "title": "Confirmação",
+            "description": "Resumo e confirmação da matrícula",
+            "items": [
+              {
+                "label": "Resumo",
+                "value": "Dados enviados para análise"
+              }
+            ],
+            "action": {
+              "label": "Finalizar",
+              "nextScreenId": null
+            }
+          }
+        ],
+        "blocks": [
+          {
+            "slug": "wpp",
+            "role": "Canal principal de entrada e matrícula via WhatsApp"
+          },
+          {
+            "slug": "customers",
+            "role": "Cadastro de alunos com CPF validado"
+          },
+          {
+            "slug": "decision-engine",
+            "role": "Regras de validação de matrícula"
+          }
+        ],
+        "journey": [
+          {
+            "id": "passo1",
+            "label": "Contato inicial",
+            "description": "Aluno inicia conversa no WhatsApp",
+            "blockSlugs": [
+              "wpp"
+            ],
+            "humanReview": false
+          },
+          {
+            "id": "passo2",
+            "label": "Coleta de dados",
+            "description": "Informações do aluno coletadas e salvas",
+            "blockSlugs": [
+              "wpp",
+              "customers"
+            ],
+            "humanReview": false
+          },
+          {
+            "id": "passo3",
+            "label": "Validação",
+            "description": "Regras aplicadas para aprovar ou revisar matrícula",
+            "blockSlugs": [
+              "decision-engine"
+            ],
+            "humanReview": false
+          },
+          {
+            "id": "passo4",
+            "label": "Confirmação humana",
+            "description": "Secretaria revisa e confirma matrícula",
+            "blockSlugs": [
+              "customers"
+            ],
+            "humanReview": true
+          }
+        ],
+        "limitations": [
+          "Integração com sistema escolar existente é hipótese a validar",
+          "Processo de pagamento ou contrato não incluído nesta exploração",
+          "Suporte a múltiplos idiomas ou turmas não detalhado"
+        ],
+        "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+      }
+    },
+    "reload": true,
+    "contactContinuation": true,
+    "requests": [
+      {
+        "path": "/api/site/session",
+        "status": 401
+      },
+      {
+        "path": "/api/site/sessions",
+        "status": 201
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200
+      },
+      {
+        "path": "/api/site/lab/briefing",
+        "status": 200
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200
+      },
+      {
+        "path": "/api/site/identity",
+        "status": 201
+      },
+      {
+        "path": "/api/site/contact",
+        "status": 200
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200
+      },
+      {
+        "path": "/api/site/sessions",
+        "status": 201
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200
+      },
+      {
+        "path": "/api/site/concepts",
+        "status": 202
+      },
+      {
+        "path": "/api/site/jobs/job_f5605103-bb44-44ec-ba41-80e112f000ac",
+        "status": 200
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200
+      }
+    ],
+    "errors": []
+  }
+}

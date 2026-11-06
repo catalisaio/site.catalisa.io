@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-26T14:34:59.555Z",
+  "passed": false,
+  "origin": "https://site-staging.catalisa.io",
+  "tlsValidation": true,
+  "scope": "Real staging AI through the target Lab and BFF. Fictional reserved contact address. No handoff or external messages.",
+  "stage": "real-generation",
+  "error": "Error: Não foi possível conectar. Sua resposta continua aqui; tente novamente.",
+  "requests": [
+    {
+      "path": "/api/site/session",
+      "status": 401,
+      "method": "GET",
+      "elapsedMs": 2012
+    },
+    {
+      "path": "/api/site/sessions",
+      "status": 201,
+      "method": "POST",
+      "elapsedMs": 643
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 369
+    },
+    {
+      "path": "/api/site/lab/briefing",
+      "status": 200,
+      "method": "POST",
+      "elapsedMs": 1128
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 603
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 768
+    },
+    {
+      "path": "/api/site/identity",
+      "status": 201,
+      "method": "POST",
+      "elapsedMs": 1618
+    },
+    {
+      "path": "/api/site/contact",
+      "status": 200,
+      "method": "POST",
+      "elapsedMs": 772
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 685
+    }
+  ],
+  "failedRequests": [
+    {
+      "path": "/api/site/concepts",
+      "method": "POST",
+      "elapsedMs": 8940,
+      "error": "net::ERR_NETWORK_CHANGED"
+    }
+  ],
+  "errors": [],
+  "totalElapsedMs": 22880
+}

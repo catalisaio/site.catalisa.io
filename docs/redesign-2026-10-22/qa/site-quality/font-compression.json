@@ -1,0 +1,38 @@
+{
+  "generatedAt": "2026-10-25T04:34:51.758921+00:00",
+  "scope": "Compression only, no subsetting; all glyph outlines/components, instructions, cmap, metrics and other font tables preserved. TTF and frozen ZIP unchanged.",
+  "sourceBytes": 976172,
+  "woff2Bytes": 332220,
+  "fonts": [
+    {
+      "source": "public/redesign/inter-0.ttf",
+      "target": "public/redesign/inter-0.woff2",
+      "sourceBytes": 324820,
+      "woff2Bytes": 108560,
+      "sourceSha256": "1b08e7fc267a5c7e1d614100f604b83e7e8a0be241f0f288faa2b3ac93a683ba",
+      "woff2Sha256": "cada73c24ab2b3af9ef89d7d4efd204e79be86fe5c5c63b1eed66051a02f4230",
+      "glyphCount": 2871,
+      "verifiedLossless": true
+    },
+    {
+      "source": "public/redesign/inter-1.ttf",
+      "target": "public/redesign/inter-1.woff2",
+      "sourceBytes": 325304,
+      "woff2Bytes": 111528,
+      "sourceSha256": "8c883f63b2c4157d997319f2c8bc6995ed4357ef371940d31ca159004a4aae63",
+      "woff2Sha256": "0c1fff1be5cc64d938e4284e788b26620be66d70a55817569a31fa9f10fa7881",
+      "glyphCount": 2871,
+      "verifiedLossless": true
+    },
+    {
+      "source": "public/redesign/inter-2.ttf",
+      "target": "public/redesign/inter-2.woff2",
+      "sourceBytes": 326048,
+      "woff2Bytes": 112132,
+      "sourceSha256": "e7a1aaf7eda9f2fad4131725fa556265ec75ca7b2d756260173a040363e8d4f7",
+      "woff2Sha256": "1e591b6e84c93771cd5b942019aa961907d4a2143a3fa46287b9d12e02594f05",
+      "glyphCount": 2871,
+      "verifiedLossless": true
+    }
+  ]
+}

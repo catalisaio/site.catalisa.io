@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-25T04:30:56.411Z",
+  "passed": true,
+  "scope": "Two independent site runtimes, actual staging IAM and encrypted Data Store, email-only synthetic contact, here-only team chat. No CRM lead, email or WhatsApp messages.",
+  "durableAcceptance": true,
+  "emailOnly": true,
+  "visitorCannotReadTeam": true,
+  "otherCookieIsolated": true,
+  "actualIamLogin": true,
+  "staffAcrossInstances": true,
+  "deliveryOnlyAfterOpened": true,
+  "assignmentOnlyAfterClaim": true,
+  "actualThreadReplyRestored": true,
+  "messageDeduplication": true,
+  "messageMismatchRejected": true,
+  "crossOriginRejected": true,
+  "logoutAcrossInstances": true,
+  "syntheticPacketRemoved": true,
+  "syntheticSessionsRemoved": true
+}

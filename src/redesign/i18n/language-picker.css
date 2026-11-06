@@ -1,0 +1,20 @@
+/* Fixed trigger dimensions and an out-of-flow popup keep the header stable. */
+.c-site .c-header-host .c-language-picker{position:relative;flex:0 0 auto;isolation:isolate;color:var(--c-brand,#734b9c)}
+.c-site .c-header-host .c-language-picker .c-language-trigger{display:inline-flex;align-items:center;justify-content:center;gap:7px;width:64px;height:44px;min-height:44px;box-sizing:border-box;padding:0 8px;border:1px solid transparent;border-radius:4px;background:transparent;color:inherit;font:inherit;font-size:12px;font-weight:600;line-height:1;letter-spacing:.035em;cursor:pointer}
+.c-site .c-header-host .c-language-picker .c-language-trigger svg{fill:none;stroke:currentColor;stroke-width:1.5;flex:none;transition:transform .12s ease}
+.c-site .c-header-host .c-language-picker .c-language-trigger[aria-expanded=true] svg{transform:rotate(180deg)}
+.c-site .c-header-host .c-language-picker .c-language-trigger:hover,.c-site .c-header-host .c-language-picker .c-language-trigger[aria-expanded=true]{background:var(--c-lavender,#e9e3ee)}
+.c-site .c-header-host .c-language-picker .c-language-trigger:focus-visible,.c-site .c-header-host .c-language-picker .c-language-options a:focus-visible{outline:2px solid var(--c-brand,#734b9c);outline-offset:3px}
+.c-site .c-header-host .c-language-picker .c-language-options{display:block;position:absolute;z-index:80;inset-block-start:calc(100% + 8px);inset-inline-end:0;box-sizing:border-box;width:184px;max-width:calc(100vw - 24px);padding:7px;border:1px solid rgba(115,75,156,.2);border-radius:6px;background:var(--c-paper,#f6f3ee);color:var(--c-brand,#734b9c);box-shadow:0 10px 28px rgba(53,33,63,.12);text-align:start}
+.c-site .c-header-host .c-language-picker .c-language-options ul{margin:0;padding:0;list-style:none}
+.c-site .c-header-host .c-language-picker .c-language-options li{margin:0;padding:0}
+.c-site .c-header-host .c-language-picker .c-language-options a{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:44px;box-sizing:border-box;padding:10px 12px;border-radius:3px;color:inherit;text-decoration:none;font:inherit;font-size:14px;font-weight:500;line-height:1.35;letter-spacing:0;text-transform:none;white-space:nowrap}
+.c-site .c-header-host .c-language-picker .c-language-options a:hover,.c-site .c-header-host .c-language-picker .c-language-options a[aria-current=page]{background:var(--c-lavender,#e9e3ee)}
+.c-site .c-header-host .c-language-picker .c-language-check{width:16px;flex:none;text-align:center}
+@media(max-width:390px){.c-site .c-header-host .c-language-picker .c-language-trigger{width:56px;gap:5px;padding-inline:6px}.c-site .c-header-host .c-language-picker .c-language-options{width:176px}}
+@media(prefers-reduced-motion:reduce){.c-site .c-header-host .c-language-picker .c-language-trigger svg{transition:none}}
+
+/* Reserve room for language navigation alongside the existing header actions. */
+@media(min-width:701px) and (max-width:1150px){.c-site .c-header-host.c-header-with-languages .c-top-nav{display:none}}
+@media(max-width:700px){.c-site .c-header-host.c-header-with-languages .c-header-right{gap:8px}}
+@media(max-width:400px){.c-site .c-header-host.c-header-with-languages .c-mobile-menu-label{display:none}.c-site .c-header-host.c-header-with-languages .c-header-right{gap:6px}}

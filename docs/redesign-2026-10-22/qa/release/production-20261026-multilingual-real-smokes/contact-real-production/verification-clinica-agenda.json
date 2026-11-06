@@ -1,0 +1,187 @@
+{
+  "date": "2026-10-26T19:45:41.886Z",
+  "passed": true,
+  "origin": "https://catalisa.io",
+  "tlsValidation": true,
+  "scope": "Actual public production browser/BFF and configured production AI; synthetic contact, human review and reload. No handoff or external messages.",
+  "results": [
+    {
+      "key": "clinica-agenda",
+      "passed": true,
+      "briefing": {
+        "idea": "agenda clinica",
+        "context": "dentista",
+        "goal": "menos faltas"
+      },
+      "elapsedMs": 23958,
+      "reviewElapsedMs": 43,
+      "hadReview": true,
+      "concept": {
+        "conceptRef": "concept_1d1ba130-2062-40d0-9912-0f22fde6bdf9",
+        "version": 1,
+        "briefVersion": 3,
+        "content": {
+          "schemaVersion": "1.0",
+          "title": "Agenda Clínica — Redução de Faltas",
+          "summary": "Sistema de agendamento para consultórios odontológicos com confirmação automática de consultas via WhatsApp, lembretes programados e gestão de disponibilidade do dentista, focado em reduzir ausências de pacientes.",
+          "hypothesis": "Dentistas perdem receita por faltas de pacientes. Um sistema que confirma consultas, envia lembretes no dia anterior e permite visualizar disponibilidade em tempo real reduzirá cancelamentos e ausências não comunicadas. Assumimos que o consultório já usa WhatsApp para comunicação com pacientes e que a maioria possui smartphone.",
+          "roles": [
+            "Paciente",
+            "Dentista",
+            "Sistema de Agenda"
+          ],
+          "screens": [
+            {
+              "id": "tela_agendamento",
+              "title": "Agendar Consulta",
+              "description": "Paciente visualiza horários disponíveis do dentista, escolhe data e hora, e confirma o agendamento.",
+              "items": [
+                {
+                  "label": "Data disponível",
+                  "value": "Calendário com dias livres marcados em verde"
+                },
+                {
+                  "label": "Horário selecionado",
+                  "value": "Slot de 30 min a 1 hora conforme tipo de procedimento"
+                },
+                {
+                  "label": "Tipo de consulta",
+                  "value": "Limpeza, avaliação, tratamento ou urgência"
+                }
+              ],
+              "action": {
+                "label": "Confirmar Agendamento",
+                "nextScreenId": "tela_confirmacao"
+              }
+            },
+            {
+              "id": "tela_confirmacao",
+              "title": "Confirmação e Dados",
+              "description": "Sistema coleta dados do paciente (nome, telefone, CPF) e exibe resumo da consulta agendada. Envia confirmação por WhatsApp.",
+              "items": [
+                {
+                  "label": "Resumo da consulta",
+                  "value": "Data, hora, tipo e dentista responsável"
+                },
+                {
+                  "label": "Dados do paciente",
+                  "value": "Nome, telefone WhatsApp e CPF (validado)"
+                },
+                {
+                  "label": "Mensagem de confirmação",
+                  "value": "Enviada automaticamente ao WhatsApp do paciente"
+                }
+              ],
+              "action": {
+                "label": "Finalizar",
+                "nextScreenId": null
+              }
+            },
+            {
+              "id": "tela_disponibilidade",
+              "title": "Agenda do Dentista",
+              "description": "Dentista visualiza sua agenda de consultas confirmadas, pacientes faltosos e horários livres. Permite bloquear períodos indisponíveis.",
+              "items": [
+                {
+                  "label": "Consultas do dia",
+                  "value": "Lista com nome do paciente, horário e tipo de procedimento"
+                },
+                {
+                  "label": "Status de confirmação",
+                  "value": "Confirmado, aguardando resposta ou falta"
+                },
+                {
+                  "label": "Bloqueio de horários",
+                  "value": "Dentista marca períodos indisponíveis (intervalo, almoço, folga)"
+                }
+              ],
+              "action": {
+                "label": "Salvar Alterações",
+                "nextScreenId": null
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "slug": "calendar",
+              "role": "Disponibilidade do dentista sincronizada com slots de agendamento; paciente visualiza horários livres em tempo real"
+            },
+            {
+              "slug": "customers",
+              "role": "Cadastro de pacientes com CPF validado, isolado por consultório; histórico de consultas e preferências"
+            },
+            {
+              "slug": "wpp",
+              "role": "Envio de confirmação de agendamento e lembretes automáticos 24h antes da consulta pelo WhatsApp da clínica"
+            },
+            {
+              "slug": "webhooks-engine",
+              "role": "Dispara eventos quando consulta é agendada, confirmada ou não comparecimento; integra com sistemas externos de faturamento"
+            },
+            {
+              "slug": "data-store",
+              "role": "Armazena agendamentos, histórico de consultas e preferências do paciente por consultório"
+            },
+            {
+              "slug": "decision-engine",
+              "role": "Regras para definir qual tipo de consulta bloqueia quantos minutos, se permite reagendamento automático após falta, etc."
+            }
+          ],
+          "journey": [
+            {
+              "id": "etapa_1_agendamento",
+              "label": "Paciente Agenda Consulta",
+              "description": "Paciente acessa link ou app, visualiza agenda do dentista, escolhe data/hora e preenche dados. Sistema valida CPF e registra no data-store.",
+              "blockSlugs": [
+                "calendar",
+                "customers",
+                "data-store"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "etapa_2_confirmacao",
+              "label": "Confirmação por WhatsApp",
+              "description": "Sistema envia automaticamente mensagem de confirmação e link para confirmar presença via WhatsApp. Paciente clica para confirmar ou avisa que não pode ir.",
+              "blockSlugs": [
+                "wpp",
+                "webhooks-engine"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "etapa_3_lembrete",
+              "label": "Lembrete 24h Antes",
+              "description": "Sistema envia lembrete automático 24 horas antes da consulta. Se paciente não confirmou, reforça pedido de confirmação ou cancelamento.",
+              "blockSlugs": [
+                "wpp",
+                "decision-engine"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "etapa_4_consulta_realizada",
+              "label": "Registro de Comparecimento",
+              "description": "Dentista marca se paciente compareceu, faltou ou reagendou. Dados são registrados no histórico para análise de padrões de falta.",
+              "blockSlugs": [
+                "data-store",
+                "webhooks-engine"
+              ],
+              "humanReview": true
+            }
+          ],
+          "limitations": [
+            "Conceito não cobre integração com sistemas de faturamento ou prontuário eletrônico; assume webhook para terceiros.",
+            "Não inclui gestão de múltiplos dentistas ou consultórios; cada instância é isolada por organização no data-store.",
+            "Lembretes automáticos dependem de número de WhatsApp válido; pacientes sem smartphone ou WhatsApp não receberão notificações.",
+            "Não há suporte a reagendamento automático; paciente que faltar precisa entrar em contato manualmente ou aguardar disponibilidade futura.",
+            "Decisões sobre bloqueio de horários e regras de cancelamento são configuráveis via decision-engine, mas requerem revisão humana para ajustes.",
+            "Análise de padrões de falta (relatórios, previsão de ausência) não está incluída nesta versão; recomenda-se analytics em refinamento futuro."
+          ],
+          "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+        }
+      },
+      "errors": []
+    }
+  ]
+}

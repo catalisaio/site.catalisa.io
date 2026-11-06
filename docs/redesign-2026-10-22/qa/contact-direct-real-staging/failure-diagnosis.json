@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-26",
+  "scope": "Read-only diagnosis of the failed 15:48 UTC staging Direct smoke. No browser, API request, inference, application change or deployment was performed for this diagnosis.",
+  "evidence": [
+    "verification.json: stage required-contact, final observed request POST /api/site/identity, no subsequent GET /api/site/session, no JavaScript page error",
+    "failure.png: name form remains visible, input preserved, submit enabled, transport-error message displayed",
+    "Private browser-state metadata: site cookie present, Secure and HttpOnly, staging domain, /api/site path, SameSite Strict. Values were not included in this report.",
+    "verification.json: own synthetic session was removed by cleanup; zero backend generation jobs and actual staging owner were verified"
+  ],
+  "finding": {
+    "category": "identity-request-network-error",
+    "confidence": "high for the transport-error branch; exact Chromium error is not recorded",
+    "visibleError": "Não foi possível conectar. Sua resposta continua aqui; tente novamente.",
+    "explanation": "siteRequest emits this exact message when fetch rejects with a non-timeout transport error. submit awaits POST identity before GET session and applySaved; the observed trace stops at that POST. The contact panel therefore could not be reached in this attempt.",
+    "notEstablished": [
+      "The verifier did not subscribe to requestfailed or response. ERR_NETWORK_CHANGED is plausible given the separate earlier incident, but is not proved for this request.",
+      "No usable HTTP status or response was captured for identity. This is not evidence of a particular HTTP 4xx/5xx.",
+      "The report does not record whether identity committed before the connection was lost. Cleanup has already erased the synthetic session, so its cookie cannot now establish that outcome."
+    ],
+    "logicReview": "savedMode routes a persisted identity with neither email nor phone to the required contact form. The direct marker is preserved by identity creation. No inconsistent branch was found in this path."
+  },
+  "reviewedSourceChanges": [
+    "Verifier now records response HTTP status and requestfailed errorText per /api/site pathname/method. No headers, bodies, cookies, names or contact values are added to the diagnostic trace.",
+    "Client allows exactly one non-timeout network recovery after 400ms for receipt-protected POST messages, identity, contact, lab/briefing, direct/briefing, concepts and concept revisions, plus PUT briefing, only with an Idempotency-Key and the identical method/body/key. GET retains its existing single recovery. Server receipt lookup plus same-document CAS and replay handling protect these specific operations.",
+    "HTTP errors, request timeouts, aborts, sessions and handoffs are not recovered automatically. The allowlist also rejects unsupported methods.",
+    "Client tests updated for the precise route/method allowlist, identical payload/key, no key, one-retry maximum, HTTP errors, timeout and abort. Parent will run the tests serially; they were not executed by the diagnosis agent."
+  ],
+  "nextVerification": "After the reviewed client change and targeted tests, rerun the real Direct script in one fresh staging browser context with response/requestfailed diagnostics enabled. Prove name -> required email OR phone -> explicit unchecked confirmation on reload -> one accepted immutable inbox packet, zero concept POSTs and zero backend generation jobs. The previous fixture is already cleaned, so a fresh synthetic session is required.",
+  "status": "diagnosed; reviewed client and verifier changes prepared locally; targeted tests and real Direct acceptance repeat remain pending; nothing deployed"
+}

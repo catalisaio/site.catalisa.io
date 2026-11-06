@@ -1,0 +1,31 @@
+{
+  "identity": "catalisa-transitoria-2026-10",
+  "userApproved": true,
+  "yellow": "#FDC234",
+  "logoSha256": "3356b3d7c8bd7b68fdb830bdaefbaa90e4a681ab95885e9b73c54f58f6b6b4ab",
+  "pages": 10,
+  "pdfs": 7,
+  "allPagesHaveOfficialLogo": true,
+  "allPdfsHavePrintLogo": true,
+  "sourceCorpusPreserved": true,
+  "localTests": [
+    "verificar.mjs",
+    "verificar-infografico.mjs",
+    "verificar-identidade.mjs"
+  ],
+  "persistentKnowledge": [
+    "AGENTS.md",
+    "docs/design/entregas-bauhaus/identidade-transitoria.json",
+    "docs/design/entregas-bauhaus/identidade-transitoria.css",
+    "docs/design/entregas-bauhaus/logo-full-color.svg",
+    "docs/design/entregas-bauhaus/direcao.html",
+    "docs/design/entregas-bauhaus/referencias.json"
+  ],
+  "publicationVerification": "installed-and-verified",
+  "release": "20261020-5ed4067391bb",
+  "checkedAt": "2026-10-21T11:49:33.492426+00:00",
+  "verifiedManifestFiles": 123,
+  "protectedRoutesVerified": 26,
+  "tlsVerified": true,
+  "limitation": "Navegação autenticada em produção não repetida: credencial original indisponível. Navegação local validada e os 123 arquivos instalados conferidos por hash."
+}

@@ -1,5 +1,9 @@
 # CLAUDE.md
 
+## Redesign e acervo de referência
+
+Começar por `docs/redesign-2026-10-22/README.md`. O acervo pertence a este repositório desde 22/10/2026 e reúne as 72 inspirações com suas análises, a identidade transitória aprovada e o relatório completo com fontes, PDFs, dados e scripts. A pasta contém orientação de continuidade para combinar esses materiais com `docs/site-v2` e com novos insumos. A referência persistente da marca é `docs/redesign-2026-10-22/design/entregas-bauhaus/identidade-transitoria.json`.
+
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Project Overview
@@ -65,11 +69,11 @@ Large static data files drive much of the content:
 - Pages: `TrainingLogin`, `TrainingCatalog`, `TrainingTracks`, `CourseDetail`, `LessonPage`, `TrainingProfile`, `TrainingCertificate`
 - Translation namespace: `training.json`
 
-### Pre-rendering & Hydration
+### Pre-rendering & Client Mount
 
 - `scripts/prerender.ts` — Puppeteer captures rendered HTML for all routes
-- `src/main.tsx` — detects pre-rendered HTML and hydrates instead of full render
-- Pages dispatch `app-rendered` event when ready for capture
+- `src/main.tsx` — mounts the interactive app with createRoot; browser snapshots are not react-dom/server output and must not be hydrated as SSR
+- Capture waits for main content, canonical, robots and title in the requested language; failures block the build
 
 ### SEO
 

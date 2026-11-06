@@ -1,0 +1,793 @@
+{
+  "version": 1,
+  "title": "A casa · 01 · A forma segue a conexão · Gen-4.5 Pro",
+  "formats": [
+    "16:9",
+    "9:16"
+  ],
+  "fps": 30,
+  "theme": "paper",
+  "vibe": "premium",
+  "transition": 0.6,
+  "transitionStyle": "push",
+  "captionStyle": "box",
+  "look": {
+    "headingWeight": 300,
+    "tracking": -0.035
+  },
+  "brand": {
+    "name": "Catalisa",
+    "url": "catalisa.io",
+    "logo": "brand/logo-tight.png",
+    "logoLight": "brand/logo-white-tight.png",
+    "font": "Inter",
+    "colors": {
+      "primary": "#734B9C",
+      "accent": "#F18A43",
+      "background": "#F6F3EE",
+      "text": "#1A1D23"
+    }
+  },
+  "music": "audio/track-475.mp3",
+  "musicStock": "475",
+  "scenes": [
+    {
+      "id": "p1",
+      "type": "collage",
+      "duration": 4.6,
+      "bg": "#F6F3EE",
+      "kicker": "A casa / 01 · Manifesto",
+      "headline": "A forma segue\na conexão.",
+      "textAt": [
+        90,
+        270
+      ],
+      "textAtMobile": [
+        90,
+        1270
+      ],
+      "size": 78,
+      "sizeMobile": 84,
+      "textIn": 0.6,
+      "sign": "color",
+      "textColor": "#1A1D23",
+      "layers": [
+        {
+          "kind": "shape",
+          "box": [
+            0,
+            0,
+            870,
+            900
+          ],
+          "color": "#EEE8DF",
+          "enter": "none",
+          "at": 0,
+          "shape": "rect",
+          "shadow": false
+        },
+        {
+          "kind": "video",
+          "src": "gen/gen4-5.mp4",
+          "box": [
+            870,
+            0,
+            730,
+            900
+          ],
+          "enter": "up",
+          "at": 0.2,
+          "shape": "rect",
+          "focus": [
+            0.5,
+            0.45
+          ]
+        },
+        {
+          "kind": "photo",
+          "src": "photos/c5-kite.jpg",
+          "box": [
+            420,
+            590,
+            530,
+            180
+          ],
+          "enter": "wipe",
+          "at": 0.5,
+          "shape": "rect",
+          "focus": [
+            0.65,
+            0.45
+          ]
+        },
+        {
+          "kind": "line",
+          "box": [
+            90,
+            520,
+            500,
+            5
+          ],
+          "at": 1.2,
+          "enter": "none"
+        }
+      ],
+      "layersMobile": [
+        {
+          "kind": "video",
+          "src": "gen/gen4-5.mp4",
+          "box": [
+            0,
+            0,
+            1080,
+            1130
+          ],
+          "enter": "up",
+          "at": 0.2,
+          "shape": "rect",
+          "focus": [
+            0.5,
+            0.45
+          ]
+        },
+        {
+          "kind": "photo",
+          "src": "photos/c5-kite.jpg",
+          "box": [
+            600,
+            860,
+            480,
+            240
+          ],
+          "enter": "wipe",
+          "at": 0.4,
+          "shape": "rect",
+          "focus": [
+            0.5,
+            0.45
+          ]
+        },
+        {
+          "kind": "line",
+          "box": [
+            90,
+            1570,
+            620,
+            6
+          ],
+          "at": 1.2,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "type": "collage",
+      "duration": 4.6,
+      "bg": "#F6F3EE",
+      "kicker": "A casa / 01 · Manifesto",
+      "headline": "Capacidades\ncombináveis para\nconstruir seu produto.",
+      "textAt": [
+        90,
+        280
+      ],
+      "textAtMobile": [
+        90,
+        1170
+      ],
+      "size": 56,
+      "sizeMobile": 66,
+      "textIn": 0.6,
+      "sign": "color",
+      "textColor": "#1A1D23",
+      "layers": [
+        {
+          "kind": "shape",
+          "box": [
+            800,
+            0,
+            800,
+            900
+          ],
+          "color": "#734B9C",
+          "enter": "left",
+          "at": 0,
+          "shape": "rect",
+          "shadow": false
+        },
+        {
+          "kind": "photo",
+          "src": "photos/c3-circulo.jpg",
+          "box": [
+            890,
+            100,
+            330,
+            450
+          ],
+          "enter": "reveal",
+          "at": 0.2,
+          "shape": "arch",
+          "focus": [
+            0.5,
+            0.45
+          ]
+        },
+        {
+          "kind": "photo",
+          "src": "photos/c1-executivo.jpg",
+          "box": [
+            1240,
+            390,
+            290,
+            390
+          ],
+          "enter": "right",
+          "at": 0.4,
+          "shape": "arch",
+          "focus": [
+            0.5,
+            0.45
+          ]
+        },
+        {
+          "kind": "line",
+          "box": [
+            90,
+            610,
+            620,
+            5
+          ],
+          "at": 1.2,
+          "enter": "none"
+        }
+      ],
+      "layersMobile": [
+        {
+          "kind": "shape",
+          "box": [
+            0,
+            0,
+            1080,
+            990
+          ],
+          "color": "#734B9C",
+          "enter": "down",
+          "at": 0,
+          "shape": "rect",
+          "shadow": false
+        },
+        {
+          "kind": "photo",
+          "src": "photos/c3-circulo.jpg",
+          "box": [
+            90,
+            190,
+            450,
+            670
+          ],
+          "enter": "reveal",
+          "at": 0.2,
+          "shape": "arch",
+          "focus": [
+            0.5,
+            0.45
+          ]
+        },
+        {
+          "kind": "photo",
+          "src": "photos/c1-executivo.jpg",
+          "box": [
+            590,
+            410,
+            400,
+            530
+          ],
+          "enter": "right",
+          "at": 0.4,
+          "shape": "arch",
+          "focus": [
+            0.5,
+            0.45
+          ]
+        },
+        {
+          "kind": "line",
+          "box": [
+            90,
+            1610,
+            650,
+            6
+          ],
+          "at": 1.2,
+          "enter": "none"
+        }
+      ],
+      "enter": "dive"
+    },
+    {
+      "id": "p3",
+      "type": "collage",
+      "duration": 6.4,
+      "bg": "#F6F3EE",
+      "kicker": "A casa / 01 · Manifesto",
+      "headline": "Sua intenção\nencontra capacidades.",
+      "textAt": [
+        550,
+        710
+      ],
+      "textAtMobile": [
+        90,
+        1230
+      ],
+      "size": 44,
+      "sizeMobile": 66,
+      "textIn": 0.6,
+      "sign": "color",
+      "textColor": "#1A1D23",
+      "layers": [
+        {
+          "kind": "shape",
+          "box": [
+            0,
+            0,
+            430,
+            900
+          ],
+          "color": "#F18A43",
+          "enter": "down",
+          "at": 0,
+          "shape": "rect",
+          "shadow": false
+        },
+        {
+          "kind": "photo",
+          "src": "photos/c7b-criadora.jpg",
+          "box": [
+            80,
+            190,
+            300,
+            330
+          ],
+          "enter": "grow",
+          "at": 0.2,
+          "shape": "circle",
+          "focus": [
+            0.5,
+            0.45
+          ]
+        },
+        {
+          "kind": "screen",
+          "src": "screens/studio-canvas.png",
+          "box": [
+            550,
+            90,
+            970,
+            527
+          ],
+          "enter": "wipe",
+          "at": 0.3
+        }
+      ],
+      "layersMobile": [
+        {
+          "kind": "shape",
+          "box": [
+            0,
+            0,
+            1080,
+            1030
+          ],
+          "color": "#F18A43",
+          "enter": "down",
+          "at": 0,
+          "shape": "rect",
+          "shadow": false
+        },
+        {
+          "kind": "photo",
+          "src": "photos/c7b-criadora.jpg",
+          "box": [
+            70,
+            120,
+            270,
+            270
+          ],
+          "enter": "grow",
+          "at": 0.2,
+          "shape": "circle",
+          "focus": [
+            0.5,
+            0.45
+          ]
+        },
+        {
+          "kind": "screen",
+          "src": "screens/studio-canvas.png",
+          "box": [
+            40,
+            440,
+            1000,
+            544
+          ],
+          "enter": "wipe",
+          "at": 0.3
+        },
+        {
+          "kind": "line",
+          "box": [
+            90,
+            1050,
+            900,
+            6
+          ],
+          "at": 1.1,
+          "enter": "none"
+        }
+      ],
+      "enter": "line",
+      "sub": "Interface de referência · ambiente demonstrativo"
+    },
+    {
+      "id": "p4",
+      "type": "collage",
+      "duration": 6.4,
+      "bg": "#F6F3EE",
+      "kicker": "A casa / 01 · Manifesto",
+      "headline": "Sua casa escolhe\no produto e o processo.",
+      "textAt": [
+        90,
+        650
+      ],
+      "textAtMobile": [
+        90,
+        1320
+      ],
+      "size": 43,
+      "sizeMobile": 62,
+      "textIn": 0.6,
+      "sign": "color",
+      "textColor": "#1A1D23",
+      "layers": [
+        {
+          "kind": "shape",
+          "box": [
+            0,
+            0,
+            1600,
+            210
+          ],
+          "color": "#734B9C",
+          "enter": "left",
+          "at": 0,
+          "shape": "rect",
+          "shadow": false
+        },
+        {
+          "kind": "screen",
+          "src": "screens/studio-canvas.png",
+          "box": [
+            700,
+            310,
+            820,
+            446
+          ],
+          "enter": "wipe",
+          "at": 0.3
+        },
+        {
+          "kind": "photo",
+          "src": "photos/c3-circulo.jpg",
+          "box": [
+            90,
+            260,
+            280,
+            280
+          ],
+          "enter": "reveal",
+          "at": 0.2,
+          "shape": "circle",
+          "focus": [
+            0.5,
+            0.45
+          ],
+          "zoom": 1.2
+        },
+        {
+          "kind": "line",
+          "box": [
+            90,
+            600,
+            500,
+            5
+          ],
+          "at": 1.1,
+          "enter": "none"
+        }
+      ],
+      "layersMobile": [
+        {
+          "kind": "shape",
+          "box": [
+            0,
+            0,
+            1080,
+            220
+          ],
+          "color": "#734B9C",
+          "enter": "left",
+          "at": 0,
+          "shape": "rect",
+          "shadow": false
+        },
+        {
+          "kind": "screen",
+          "src": "screens/studio-canvas.png",
+          "box": [
+            40,
+            320,
+            1000,
+            544
+          ],
+          "enter": "wipe",
+          "at": 0.3
+        },
+        {
+          "kind": "photo",
+          "src": "photos/c3-circulo.jpg",
+          "box": [
+            690,
+            900,
+            280,
+            280
+          ],
+          "enter": "reveal",
+          "at": 0.2,
+          "shape": "circle",
+          "focus": [
+            0.5,
+            0.45
+          ],
+          "zoom": 1.2
+        },
+        {
+          "kind": "line",
+          "box": [
+            90,
+            1050,
+            490,
+            6
+          ],
+          "at": 1.1,
+          "enter": "none"
+        }
+      ],
+      "enter": "push",
+      "kickerColor": "#F6F3EE",
+      "sub": "Interface de referência · ambiente demonstrativo",
+      "kickerColorMobile": "#1A1D23"
+    },
+    {
+      "id": "p5",
+      "type": "collage",
+      "duration": 6.6,
+      "bg": "#F6F3EE",
+      "kicker": "A casa / 01 · Manifesto",
+      "headline": "Comece pelo que\ndiferencia sua casa.",
+      "textAt": [
+        90,
+        250
+      ],
+      "textAtMobile": [
+        90,
+        1340
+      ],
+      "size": 66,
+      "sizeMobile": 72,
+      "textIn": 0.6,
+      "sign": "color",
+      "textColor": "#1A1D23",
+      "layers": [
+        {
+          "kind": "photo",
+          "src": "photos/c7b-criadora.jpg",
+          "box": [
+            960,
+            80,
+            550,
+            740
+          ],
+          "enter": "reveal",
+          "at": 0.2,
+          "shape": "arch",
+          "focus": [
+            0.5,
+            0.45
+          ]
+        },
+        {
+          "kind": "photo",
+          "src": "photos/c5-kite.jpg",
+          "box": [
+            90,
+            530,
+            790,
+            220
+          ],
+          "enter": "wipe",
+          "at": 0.4,
+          "shape": "rect",
+          "focus": [
+            0.65,
+            0.5
+          ]
+        },
+        {
+          "kind": "line",
+          "box": [
+            90,
+            440,
+            700,
+            5
+          ],
+          "at": 1.1,
+          "enter": "none"
+        }
+      ],
+      "layersMobile": [
+        {
+          "kind": "photo",
+          "src": "photos/c7b-criadora.jpg",
+          "box": [
+            200,
+            110,
+            700,
+            960
+          ],
+          "enter": "reveal",
+          "at": 0.2,
+          "shape": "arch",
+          "focus": [
+            0.5,
+            0.45
+          ]
+        },
+        {
+          "kind": "photo",
+          "src": "photos/c5-kite.jpg",
+          "box": [
+            0,
+            970,
+            1080,
+            220
+          ],
+          "enter": "wipe",
+          "at": 0.4,
+          "shape": "rect",
+          "focus": [
+            0.65,
+            0.5
+          ]
+        },
+        {
+          "kind": "line",
+          "box": [
+            90,
+            1620,
+            750,
+            6
+          ],
+          "at": 1.1,
+          "enter": "none"
+        }
+      ],
+      "enter": "line"
+    },
+    {
+      "id": "p6",
+      "type": "collage",
+      "duration": 4.4,
+      "bg": "#F6F3EE",
+      "kicker": "A casa / 01 · Manifesto",
+      "headline": "",
+      "textAt": [
+        90,
+        330
+      ],
+      "textAtMobile": [
+        90,
+        750
+      ],
+      "size": 146,
+      "sizeMobile": 160,
+      "textIn": 0.6,
+      "sign": "color",
+      "textColor": "#1A1D23",
+      "layers": [
+        {
+          "kind": "shape",
+          "box": [
+            1210,
+            -190,
+            650,
+            650
+          ],
+          "color": "#734B9C",
+          "enter": "grow",
+          "at": 0,
+          "shape": "circle",
+          "shadow": false
+        },
+        {
+          "kind": "shape",
+          "box": [
+            1240,
+            640,
+            360,
+            260
+          ],
+          "color": "#F18A43",
+          "enter": "up",
+          "at": 0,
+          "shape": "rect",
+          "shadow": false
+        },
+        {
+          "kind": "line",
+          "box": [
+            90,
+            680,
+            820,
+            5
+          ],
+          "at": 0.9,
+          "enter": "none"
+        }
+      ],
+      "layersMobile": [
+        {
+          "kind": "shape",
+          "box": [
+            720,
+            -100,
+            650,
+            650
+          ],
+          "color": "#734B9C",
+          "enter": "grow",
+          "at": 0,
+          "shape": "circle",
+          "shadow": false
+        },
+        {
+          "kind": "shape",
+          "box": [
+            820,
+            1500,
+            260,
+            420
+          ],
+          "color": "#F18A43",
+          "enter": "up",
+          "at": 0,
+          "shape": "rect",
+          "shadow": false
+        },
+        {
+          "kind": "line",
+          "box": [
+            90,
+            1370,
+            730,
+            6
+          ],
+          "at": 0.9,
+          "enter": "none"
+        }
+      ],
+      "enter": "push",
+      "logoBig": true,
+      "button": "Imagine seu produto"
+    }
+  ]
+}

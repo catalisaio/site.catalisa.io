@@ -1,0 +1,41 @@
+{
+  "checkedAt": "2026-10-27T00:55:08.033Z",
+  "method": "Read-only authenticated Chrome UI via Claude in Chrome",
+  "propertyId": "350153952",
+  "accountId": "254659401",
+  "measurementId": "G-JYJWH17ZVX",
+  "scope": "Reception check for an explicit controlled QA send, not proof of the currently deployed native bundle.",
+  "expectedQa": {
+    "sentAt": "2026-10-27T00:51:40Z",
+    "events": [
+      "page_view",
+      "user_engagement",
+      "qa_realtime_check"
+    ],
+    "campaignSource": "ga_validation",
+    "transportStatus": 204,
+    "sourceEvidence": "qa/seo-detailed/ga-correct-stream-live.json"
+  },
+  "observedUi": {
+    "firstReadAround": "2026-10-26 21:52 America/Sao_Paulo",
+    "secondRead": "2026-10-26 21:53:33 America/Sao_Paulo",
+    "activeUsersLast30Minutes": 0,
+    "activeUsersLast5Minutes": 0,
+    "eventCountCard": "No data available",
+    "qaEventObserved": false,
+    "pageViewObserved": false,
+    "campaignSourceObserved": false
+  },
+  "receptionConfirmed": false,
+  "realtimeUrl": "https://analytics.google.com/analytics/web/#/a254659401p350153952/realtime/overview",
+  "limits": [
+    "The signal was sent about2minutes before the last reading; it had not aged out of the30minute window.",
+    "HTTP204 confirms transport only, not ingestion/report receipt.",
+    "No settings, filters, source, consent or cookies changed.",
+    "Cause of continued zero after the controlled send has not been established."
+  ],
+  "evidence": {
+    "cliResult": "/tmp/ga-realtime-after-send-result.json",
+    "permissionDenials": []
+  }
+}

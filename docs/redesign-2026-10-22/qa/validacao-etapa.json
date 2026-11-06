@@ -1,0 +1,130 @@
+{
+  "date": "2026-10-22",
+  "goalStatus": "active; implementation incomplete",
+  "checks": [
+    {
+      "command": "original validate_reference.py",
+      "status": "passed",
+      "scope": "69 reference routes, local assets, JS syntax, concept fixture, original checksums"
+    },
+    {
+      "command": "node build.mjs in temporary copy",
+      "status": "passed",
+      "scope": "69 rebuilt pages, byte-identical HTML; frozen original untouched",
+      "evidence": "reference/rebuild.json"
+    },
+    {
+      "command": "npx tsc -b",
+      "status": "passed",
+      "scope": "TypeScript application build"
+    },
+    {
+      "command": "npx vite build --outDir /tmp/catalisa-redesign-build-verified",
+      "status": "passed",
+      "scope": "Frontend production bundle only. Full npm postbuild/prerender not run."
+    },
+    {
+      "command": "npm run test",
+      "status": "passed",
+      "scope": "116 unit tests in 5 suites. Existing external Playwright training suite not run."
+    },
+    {
+      "command": "node scripts/verify-redesign.mjs",
+      "status": "passed",
+      "scope": "168 layout measurements and native local interaction checks",
+      "evidence": "native/verification.json"
+    },
+    {
+      "command": "node scripts/verify-redesign.mjs --contrast-only",
+      "status": "passed",
+      "scope": "84 route/width measurements of HTML text against computed solid backgrounds; excludes SVG/imagery and is not full WCAG certification",
+      "evidence": "native/contrast.json"
+    },
+    {
+      "command": "git diff --check",
+      "status": "passed",
+      "scope": "Tracked changes whitespace"
+    }
+  ],
+  "limitations": [
+    "28 prototype routes still pending native migration",
+    "Public Home not switched; cross-family navigation incomplete",
+    "No remote Catalisa API, persistence, AI generation or channel delivery verified",
+    "Content/maturity/licenses, physical devices, full accessibility, SEO/redirects and staging/rollback remain open",
+    "No production deployment performed"
+  ],
+  "sourceFiles": [
+    {
+      "path": "src/App.tsx",
+      "sha256": "8dddc11de15b7d3a696ddf6d7d6a5f3d58ca1ad2a740b3f0e7f4648e24686889"
+    },
+    {
+      "path": "vitest.config.ts",
+      "sha256": "e07cf06bfe7990ff33f8e5b99f23496eb0b7c554fb1d0967374a09377196e120"
+    },
+    {
+      "path": "netlify.toml",
+      "sha256": "c505b7305cce0fb6fc4597d1632cce9dedc55a83d1e9071b824845049fcdfc1b"
+    },
+    {
+      "path": "package.json",
+      "sha256": "31c3dd399f4bc3ea0cb4281dafc78c3aeb46ef3dd180e9aad68b60b9c4334be5"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "569a5c3ca58759815a38095c19ba4ae1ae91a73f2c22e51cb0c461c34c7c51c2"
+    },
+    {
+      "path": "src/redesign/Capabilities.tsx",
+      "sha256": "a600a6117bd0008851c744e02872a484fea8abdafc4c9bfd272e66090d20a3f1"
+    },
+    {
+      "path": "src/redesign/CatalogArt.tsx",
+      "sha256": "479395edf7a4a8584d4933a3a3c8c6de602c9efafd173f6f9ce2321bba814f5a"
+    },
+    {
+      "path": "src/redesign/Home.tsx",
+      "sha256": "36abc7b5bb7b5cc1369aa2868e0cc9eacb7eade27c968b48cbf2c5471e298477"
+    },
+    {
+      "path": "src/redesign/PreviewMeta.tsx",
+      "sha256": "ebe8450c3b91c32f97750b3df1121ef02e85288d583e67df82e065967553ebcf"
+    },
+    {
+      "path": "src/redesign/Styleguide.tsx",
+      "sha256": "9aab47c852316ebcb00d783d1a5603d93dbf9d75276a8ff0639bf1f9ebec7f70"
+    },
+    {
+      "path": "src/redesign/base.css",
+      "sha256": "df9b51c59e5b97c21128bcfb57a4de0c268c7e0bad8dfb676084de402feca70c"
+    },
+    {
+      "path": "src/redesign/capabilities.css",
+      "sha256": "fb2fe767fe7f7db5e4c642c35e42b5e2f05376ab67eb398090d9d1f78fd1b472"
+    },
+    {
+      "path": "src/redesign/catalog-reference.css",
+      "sha256": "f583c741be688a65f423762c36395269a0e0f05b4e88d10efd050e1f5fd38fdf"
+    },
+    {
+      "path": "src/redesign/components.tsx",
+      "sha256": "98b89bdd9e401bcc1853d9c58dd4e7897e2d90b5d685404560b2c8cc6aa590c7"
+    },
+    {
+      "path": "src/redesign/data/catalog.json",
+      "sha256": "3b5e240e904640340412bf7507380fdc4b82bce196d45c214f463e85bbcc8185"
+    },
+    {
+      "path": "src/redesign/home.css",
+      "sha256": "f55afcb6a1aa50608be4b47a7c15c90eda31ae7b7db024110c9ffe792e316ac7"
+    },
+    {
+      "path": "src/redesign/styleguide.css",
+      "sha256": "80ef6558620cb1151c16ffebccd5f5950ed94a78f3e26c9b26d6ddbf0f34f1a8"
+    },
+    {
+      "path": "src/redesign/tokens.css",
+      "sha256": "ae58587ae3903bdb1332df68819d0589cdfb62bda848acd1c17b310093b5e949"
+    }
+  ]
+}

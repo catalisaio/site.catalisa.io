@@ -1,0 +1,626 @@
+<meta charset="utf-8">
+<title>O Registro da Catalisa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+
+<style>
+/* ══════════════════════════════════════════════════════════════════════
+   Catalisa · direção C · "O Registro"
+   Risco zero de estilo: só as fontes do styleguide (Inter + JetBrains
+   Mono), só os tokens do styleguide, nenhuma fotografia. A prova é a
+   matriz — produto por estação, com as lacunas à vista.
+   ══════════════════════════════════════════════════════════════════════ */
+:root{
+  --brand-400:#9B7BC0;--brand-500:#734B9C;--brand-600:#5E3D80;
+  --secondary:#FDC234;--accent:#FE8342;--success:#28A745;--danger:#DC3545;--info:#5B9BD5;--teal:#0F9B8E;
+
+  --fs-2xs:11.5px;--fs-xs:12.5px;--fs-sm:13.5px;--fs-base:15px;--fs-prose:16.5px;
+  --fs-lg:18px;--fs-xl:21px;--fs-2xl:25px;--fs-3xl:30px;--fs-4xl:40px;
+  --ctl:40px;--r-xs:7px;--r-sm:10px;--r:13px;--r-lg:16px;--r-xl:22px;
+
+  --font:'Inter',ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+  --ease:cubic-bezier(.4,0,.2,1);
+
+  --bg:#FBFAFB;--surface:#FFFFFF;--surface-2:#F6F4F8;--surface-3:#EDEAF1;
+  --border:#E9E6ED;--border-soft:#F1EFF4;
+  --text:#171320;--text-2:#5A5468;--text-3:#8E8899;
+  --brand:#6B4193;--brand-soft:#F4EEFA;--dot:#DEDAE5;
+
+  --wrap:1300px;--pad:clamp(18px,3.4vw,44px);--rail:74px;--secao:clamp(56px,7vw,104px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{font-family:var(--font);font-size:var(--fs-base);line-height:1.6;color:var(--text);background-color:var(--bg);-webkit-font-smoothing:antialiased}
+svg{display:block}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--brand);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-inline:var(--pad)}
+
+h1,h2,h3{font-weight:800;letter-spacing:-.038em;color:var(--text);text-wrap:balance}
+h1{font-size:clamp(34px,5vw,60px);line-height:1.03}
+h2{font-size:clamp(25px,3.2vw,40px);line-height:1.08}
+h3{font-size:var(--fs-lg);font-weight:700;line-height:1.3;letter-spacing:-.02em}
+.marcado{color:var(--brand)}
+.po{color:var(--secondary)}
+.olho{font-family:var(--mono);font-size:var(--fs-2xs);font-weight:500;letter-spacing:.17em;text-transform:uppercase;color:var(--text-3)}
+.olho b{color:var(--brand);font-weight:500}
+.deck{font-size:clamp(15.5px,1.25vw,18px);line-height:1.64;color:var(--text-2);max-width:58ch}
+.deck b{color:var(--text);font-weight:600}
+
+.botoes{display:flex;flex-wrap:wrap;gap:10px}
+.bt{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:46px;padding:0 24px;
+  font-size:var(--fs-xs);font-weight:600;letter-spacing:.09em;text-transform:uppercase;border:1.5px solid transparent;
+  transition:background .18s var(--ease),border-color .18s var(--ease),color .18s var(--ease)}
+.bt.cheio{background:var(--brand);color:var(--surface);border-color:var(--brand)}
+.bt.cheio:hover{background:var(--brand-600);border-color:var(--brand-600)}
+.bt.vazio{color:var(--text);border-color:var(--border)}
+.bt.vazio:hover{border-color:var(--text)}
+.bt .pt{width:6px;height:6px;border-radius:50%;background:var(--secondary);flex:none}
+.bt.sm{min-height:var(--ctl);padding:0 17px}
+
+/* faixa do entregável */
+.fita{background:var(--text);color:var(--bg);position:relative;z-index:40}
+.fita .wrap{display:flex;align-items:center;gap:16px;flex-wrap:wrap;min-height:46px}
+.fita .qual{font-family:var(--mono);font-size:var(--fs-2xs);letter-spacing:.14em;text-transform:uppercase;color:color-mix(in srgb,var(--bg) 55%,transparent)}
+.fita .qual b{color:var(--bg);font-weight:500}
+.vao{flex:1 1 20px}
+.selet{display:flex;gap:4px}
+.tab{display:inline-flex;align-items:center;gap:9px;min-height:46px;padding:0 14px;font-size:var(--fs-xs);font-weight:600;letter-spacing:.05em;
+  color:color-mix(in srgb,var(--bg) 52%,transparent);border-bottom:2px solid transparent;transition:color .2s var(--ease),border-color .2s var(--ease)}
+.tab i{font-style:normal;font-family:var(--mono);font-size:var(--fs-2xs);opacity:.8}
+.tab:hover{color:var(--bg)}
+.tab[aria-selected="true"]{color:var(--bg);border-bottom-color:var(--secondary)}
+.tab[aria-selected="true"] i{color:var(--secondary);opacity:1}
+
+/* cabeçalho */
+.topo{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--bg) 93%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.topo .wrap{display:flex;align-items:center;gap:clamp(14px,2.4vw,36px);min-height:70px}
+.logo{width:124px;height:auto;flex:none}
+.menu{display:flex;align-items:center;gap:clamp(14px,1.7vw,24px)}
+.menu a{display:inline-flex;align-items:center;min-height:var(--ctl);font-size:var(--fs-sm);font-weight:500;color:var(--text-2);
+  border-bottom:2px solid transparent;transition:color .18s var(--ease),border-color .18s var(--ease)}
+.menu a:hover{color:var(--text)}
+.menu a.aqui{color:var(--brand);border-bottom-color:var(--brand)}
+
+/* ── a assinatura da direção: a calha de registro ─────────────────── */
+.bloco{display:grid;grid-template-columns:var(--rail) minmax(0,1fr);align-items:start}
+.calha{position:relative;align-self:stretch;padding-top:4px}
+.calha::after{content:"";position:absolute;top:0;bottom:calc(-1 * var(--secao));left:0;width:1px;background:var(--border)}
+.calha span{display:block;font-family:var(--mono);font-size:var(--fs-2xs);letter-spacing:.14em;color:var(--text-3);padding-left:0}
+.conteudo{min-width:0;display:flex;flex-direction:column;gap:clamp(18px,2.2vw,26px);padding-left:clamp(16px,2.2vw,30px)}
+.secao{padding-block:var(--secao)}
+.secao.macia{background:var(--surface-2)}
+.secao.regua{border-top:1px solid var(--border)}
+.tela[hidden]{display:none}
+
+/* ── matriz produto × estação ──────────────────────────────────────── */
+.matriz{border:1px solid var(--border);background:var(--surface)}
+.matriz-cab{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 20px;padding:16px 20px;border-bottom:1px solid var(--border);background:var(--surface-2)}
+.matriz-cab h3{font-size:var(--fs-base);font-weight:700}
+.mrow{display:grid;grid-template-columns:minmax(112px,1.1fr) repeat(6,minmax(0,1fr));align-items:center;border-bottom:1px solid var(--border-soft)}
+.mrow:last-child{border-bottom:0}
+.mrow.topo{border-bottom:1px solid var(--border)}
+.mrow.uniao{background:var(--brand-soft);border-top:1px solid var(--border)}
+.mcel{padding:13px 8px;display:flex;align-items:center;justify-content:center}
+.mcel:first-child{justify-content:flex-start;padding-left:20px;font-size:var(--fs-sm);font-weight:600;color:var(--text)}
+.mrow.topo .mcel{font-family:var(--mono);font-size:var(--fs-2xs);letter-spacing:.08em;text-transform:uppercase;color:var(--text-3);padding-block:11px;text-align:center;line-height:1.3}
+.mrow.topo .mcel:first-child{color:var(--text-3);font-weight:500}
+.mrow.uniao .mcel:first-child{color:var(--brand)}
+.pin{width:13px;height:13px;border-radius:50%;flex:none;box-shadow:inset 0 0 0 1.5px var(--dot)}
+.pin.tem{background:var(--brand);box-shadow:none}
+.pin.falta{box-shadow:inset 0 0 0 1.5px var(--accent)}
+.matriz-pe{display:flex;flex-wrap:wrap;gap:8px 24px;padding:14px 20px;border-top:1px solid var(--border);background:var(--surface-2);
+  font-family:var(--mono);font-size:var(--fs-2xs);letter-spacing:.05em;color:var(--text-3)}
+.matriz-pe span{display:inline-flex;align-items:center;gap:8px}
+.matriz-pe i{width:11px;height:11px;border-radius:50%;flex:none;box-shadow:inset 0 0 0 1.5px var(--dot)}
+.matriz-pe i.tem{background:var(--brand);box-shadow:none}
+.matriz-pe i.falta{box-shadow:inset 0 0 0 1.5px var(--accent)}
+
+/* ── herói ─────────────────────────────────────────────────────────── */
+.heroi{padding-block:clamp(40px,5vw,72px) clamp(30px,3.6vw,52px)}
+.heroi-grade{display:grid;grid-template-columns:minmax(0,.94fr) minmax(0,1.06fr);gap:clamp(28px,3.6vw,60px);align-items:center}
+.heroi-txt{display:flex;flex-direction:column;gap:clamp(16px,2vw,24px);min-width:0}
+
+/* ── números como folha de especificação ───────────────────────────── */
+.especs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:2px solid var(--text);border-bottom:1px solid var(--border)}
+.espec{padding:20px 22px 22px;border-left:1px solid var(--border-soft);display:flex;flex-direction:column;gap:5px}
+.espec:first-child{border-left:0;padding-left:0}
+.espec b{font-weight:800;font-size:clamp(30px,3.4vw,46px);line-height:1;letter-spacing:-.05em;color:var(--text);font-variant-numeric:tabular-nums}
+.espec b i{font-style:normal;color:var(--secondary)}
+.espec span{font-family:var(--mono);font-size:var(--fs-2xs);letter-spacing:.1em;text-transform:uppercase;color:var(--text-3)}
+
+/* ── razão das estações ────────────────────────────────────────────── */
+.razao{border-top:2px solid var(--text)}
+.linha{display:grid;grid-template-columns:56px minmax(120px,180px) minmax(0,1fr) 118px;gap:16px;align-items:baseline;
+  padding:16px 4px;border-bottom:1px solid var(--border-soft);transition:background .18s var(--ease)}
+.linha:hover{background:var(--surface-2)}
+.linha .ord{font-family:var(--mono);font-size:var(--fs-xs);color:var(--text-3);font-variant-numeric:tabular-nums}
+.linha .est{font-size:var(--fs-lg);font-weight:700;letter-spacing:-.022em;color:var(--text)}
+.linha .perg{font-size:var(--fs-sm);line-height:1.5;color:var(--text-2)}
+.linha .sin{display:flex;align-items:center;justify-content:flex-end;gap:8px;font-family:var(--mono);font-size:var(--fs-2xs);
+  letter-spacing:.11em;text-transform:uppercase;color:var(--text-3)}
+.linha .sin i{width:9px;height:9px;border-radius:50%;flex:none;display:none}
+.linha.decide .est,.linha.decide .sin{color:var(--brand)}
+.linha.decide .sin i{display:block;background:var(--brand)}
+.linha.ato .sin{color:var(--text-2)}
+.linha.ato .sin i{display:block;background:var(--secondary)}
+
+/* ── a pilha da arquitetura ────────────────────────────────────────── */
+.pilha{display:flex;flex-direction:column;border:1px solid var(--border);background:var(--surface)}
+.camada{display:grid;grid-template-columns:minmax(120px,168px) minmax(0,1fr);gap:16px;align-items:baseline;
+  padding:16px 20px;border-bottom:1px solid var(--border-soft)}
+.camada:last-child{border-bottom:0}
+.camada b{font-size:var(--fs-base);font-weight:700;letter-spacing:-.02em;color:var(--text)}
+.camada span{font-family:var(--mono);font-size:var(--fs-xs);line-height:1.6;color:var(--text-2)}
+.camada.alto{background:var(--brand-soft)}
+.camada.alto b{color:var(--brand)}
+
+/* ── cartões ───────────────────────────────────────────────────────── */
+.cartoes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:2px solid var(--text)}
+.cartao{display:flex;flex-direction:column;gap:10px;padding:22px 24px 26px;border-left:1px solid var(--border-soft)}
+.cartao:first-child{border-left:0;padding-left:0}
+.cartao .kick{font-family:var(--mono);font-size:var(--fs-2xs);font-weight:500;letter-spacing:.13em;text-transform:uppercase;color:var(--text-3)}
+.cartao p{font-size:var(--fs-sm);line-height:1.62;color:var(--text-2)}
+.cartao p b{color:var(--text);font-weight:600}
+.cartao.limite .kick{color:var(--accent)}
+
+/* ── prosa e citação ───────────────────────────────────────────────── */
+.prosa{display:flex;flex-direction:column;gap:17px;max-width:66ch}
+.prosa p{font-size:var(--fs-prose);line-height:1.72;color:var(--text-2)}
+.prosa p b{color:var(--text);font-weight:600}
+.citacao{border-top:2px solid var(--text);border-bottom:1px solid var(--border);padding-block:clamp(26px,3.4vw,44px);
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,220px);gap:20px clamp(20px,3vw,48px);align-items:end}
+.citacao q{display:block;quotes:none;font-weight:800;font-size:clamp(24px,3.4vw,44px);line-height:1.1;letter-spacing:-.04em;color:var(--text)}
+.citacao .fonte{font-family:var(--mono);font-size:var(--fs-2xs);letter-spacing:.11em;text-transform:uppercase;color:var(--text-3);line-height:1.7}
+
+/* ── quadro dos sete ───────────────────────────────────────────────── */
+.rolagem{overflow-x:auto;border-top:2px solid var(--text)}
+table{border-collapse:collapse;width:100%;min-width:820px;font-size:var(--fs-sm)}
+thead th{text-align:left;padding:12px 18px 12px 0;font-family:var(--mono);font-size:var(--fs-2xs);font-weight:500;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--text-3);border-bottom:1px solid var(--border);white-space:nowrap}
+tbody td{padding:15px 18px 15px 0;border-bottom:1px solid var(--border-soft);color:var(--text-2);vertical-align:top;line-height:1.5}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover td{background:var(--surface-2)}
+td.prod{font-weight:700;font-size:var(--fs-base);letter-spacing:-.02em;color:var(--text);white-space:nowrap}
+tr.gate td.quem{color:var(--text);font-weight:500}
+tr.gate td.quem::before{content:"";display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--secondary);margin-right:9px;vertical-align:.05em}
+.legenda{display:flex;flex-wrap:wrap;gap:8px 24px;padding-top:12px;font-family:var(--mono);font-size:var(--fs-2xs);letter-spacing:.05em;color:var(--text-3)}
+.legenda span{display:inline-flex;align-items:center;gap:8px}
+.legenda i{width:9px;height:9px;border-radius:50%;background:var(--secondary);flex:none}
+
+/* ── rodapé ────────────────────────────────────────────────────────── */
+.rodape{background:var(--text);color:var(--bg);margin-top:clamp(48px,6vw,80px)}
+.rodape .wrap{display:grid;grid-template-columns:minmax(0,1.3fr) repeat(3,minmax(0,1fr));gap:clamp(22px,3.2vw,48px);padding-block:clamp(40px,5vw,66px)}
+.rodape .col{display:flex;flex-direction:column;gap:11px}
+.rodape .kick{font-family:var(--mono);font-size:var(--fs-2xs);font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:color-mix(in srgb,var(--bg) 45%,transparent)}
+.rodape p,.rodape li{font-size:var(--fs-sm);line-height:1.62;color:color-mix(in srgb,var(--bg) 62%,transparent)}
+.rodape b{color:var(--bg);font-weight:600}
+.rodape ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+.rodape .marca-pe{display:flex;align-items:center;gap:12px;margin-bottom:4px}
+.rodape .marca-pe svg{width:36px;height:36px;flex:none}
+.rodape .marca-pe span{font-weight:800;font-size:var(--fs-xl);letter-spacing:-.035em;color:var(--bg)}
+.assinatura{border-top:1px solid color-mix(in srgb,var(--bg) 14%,transparent)}
+.assinatura .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;padding-block:16px;font-family:var(--mono);font-size:var(--fs-2xs);
+  letter-spacing:.05em;color:color-mix(in srgb,var(--bg) 42%,transparent)}
+
+.varredura{position:fixed;inset:0;z-index:60;pointer-events:none;background:var(--text);opacity:0}
+.varredura.ativa{animation:lampejo .2s steps(2,end)}
+@keyframes lampejo{0%{opacity:0}30%{opacity:.85}60%{opacity:.04}100%{opacity:0}}
+
+@media (max-width:1080px){
+  .heroi-grade{grid-template-columns:1fr;gap:30px}
+  .citacao{grid-template-columns:1fr;align-items:start}
+  .rodape .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:860px){
+  .menu{display:none}
+  :root{--rail:0px}
+  .bloco{grid-template-columns:1fr}
+  .calha{padding-bottom:12px;align-self:auto}
+  .calha::after{display:none}
+  .conteudo{padding-left:0}
+  .especs{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .espec{border-left:0;padding-left:0;border-top:1px solid var(--border-soft)}
+  .espec:nth-child(-n+2){border-top:0}
+  .cartoes{grid-template-columns:1fr}
+  .cartao{border-left:0;padding-left:0;border-top:1px solid var(--border-soft)}
+  .cartao:first-child{border-top:0}
+  .linha{grid-template-columns:44px minmax(0,1fr);gap:4px 14px}
+  .linha .perg,.linha .sin{grid-column:2}
+  .linha .sin{justify-content:flex-start;padding-top:4px}
+  .camada{grid-template-columns:1fr;gap:4px}
+}
+@media (max-width:640px){
+  .mrow{grid-template-columns:minmax(94px,1fr) repeat(6,minmax(0,1fr))}
+  .mcel{padding:11px 3px}
+  .mcel:first-child{padding-left:12px;font-size:var(--fs-xs)}
+  .mrow.topo .mcel{font-size:9.5px;letter-spacing:.02em}
+  .rodape .wrap{grid-template-columns:1fr}
+  .bt{width:100%}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation-duration:.001ms!important;transition-duration:.001ms!important}
+  .varredura.ativa{animation:none}
+}
+</style>
+
+<div class="varredura" id="varredura" aria-hidden="true"></div>
+
+<div class="fita">
+  <div class="wrap">
+    <span class="qual">Proposta visual · <b>o registro</b> · direção C</span>
+    <span class="vao"></span>
+    <div class="selet" role="tablist" aria-label="Telas da proposta">
+      <button class="tab" role="tab" id="tab-1" aria-controls="tela-1" aria-selected="true"><i>01</i> Abertura</button>
+      <button class="tab" role="tab" id="tab-2" aria-controls="tela-2" aria-selected="false"><i>02</i> Interna</button>
+    </div>
+  </div>
+</div>
+
+<header class="topo">
+  <div class="wrap">
+    <svg class="logo" viewBox="355 180 440 120" role="img" aria-label="Catalisa">
+      <path d="m 459.33594,265.78125 q -7.85157,0 -14.10157,-3.47656 -6.21093,-3.47657 -9.84375,-10.11719 -3.59375,-6.67969 -3.59375,-16.25 0,-9.60938 3.63282,-16.28906 3.67187,-6.67969 9.92187,-10.15625 6.25,-3.47657 13.98438,-3.47657 6.91406,0 12.42187,2.5 5.50781,2.5 8.98438,7.26563 3.47656,4.76562 4.29687,11.5625 h -13.94531 q -0.66406,-4.25781 -3.71094,-6.71875 -3.00781,-2.5 -7.69531,-2.5 -6.40625,0 -10.11719,4.6875 -3.67187,4.64844 -3.67187,13.125 0,8.75 3.71093,13.24219 3.71094,4.49218 10,4.49218 4.6875,0 7.73438,-2.46093 3.04687,-2.5 3.78906,-6.75782 h 13.94531 q -0.39062,3.90625 -2.26562,7.69532 -1.83594,3.78906 -5.07813,6.875 -3.24218,3.08593 -7.85156,4.92187 -4.60937,1.83594 -10.54687,1.83594 z m 45.46875,0 q -6.28907,0 -10.35157,-3.20313 -4.02343,-3.20312 -4.02343,-9.6875 0,-4.84375 2.22656,-7.69531 2.22656,-2.85156 5.89844,-4.21875 3.71093,-1.36719 8.125,-1.75781 5.54687,-0.46875 7.92968,-1.13281 2.42188,-0.70313 2.42188,-2.73438 v -0.15625 q 0,-2.26562 -1.60156,-3.47656 -1.5625,-1.25 -4.33594,-1.25 -2.85156,0 -4.6875,1.21094 -1.83594,1.21093 -2.38281,3.28125 l -12.34375,-1.60157 q 1.28906,-5.58593 6.28906,-9.0625 5.03906,-3.51562 13.24219,-3.51562 5.42968,0 9.80468,1.67969 4.41407,1.67968 6.99219,4.96093 2.61719,3.24219 2.61719,7.92969 V 265 h -12.8125 v -6.13281 h -0.35156 q -3.63282,6.91406 -12.65625,6.91406 z m 4.14062,-9.02344 q 3.4375,0 5.82031,-2.03125 2.38282,-2.03125 2.38282,-5.27344 v -4.17968 q -1.17188,0.625 -3.39844,1.05468 -2.22656,0.42969 -4.14063,0.74219 -6.28906,0.9375 -6.28906,5.19531 0,2.1875 1.5625,3.35938 1.60156,1.13281 4.0625,1.13281 z m 54.25781,-35.42969 v 10.11719 h -7.85156 v 20.19531 q 0,3.39844 3.47656,3.39844 0.70313,0 1.95313,-0.15625 1.28906,-0.19531 1.83594,-0.3125 l 1.75781,9.92188 q -2.30469,0.66406 -4.45313,0.89843 -2.14843,0.23438 -4.0625,0.23438 -6.95312,0 -10.54687,-3.24219 -3.59375,-3.28125 -3.59375,-9.53125 v -21.40625 h -5.78125 v -10.11719 h 5.78125 V 210.9375 h 13.63281 v 10.39062 z m 19.60938,44.45313 q -6.28906,0 -10.35156,-3.20313 -4.02344,-3.20312 -4.02344,-9.6875 0,-4.84375 2.22656,-7.69531 2.22656,-2.85156 5.89844,-4.21875 3.71094,-1.36719 8.125,-1.75781 5.54687,-0.46875 7.92969,-1.13281 2.42187,-0.70313 2.42187,-2.73438 v -0.15625 q 0,-2.26562 -1.60156,-3.47656 -1.5625,-1.25 -4.33594,-1.25 -2.85156,0 -4.6875,1.21094 -1.83594,1.21093 -2.38281,3.28125 l -12.34375,-1.60157 q 1.28906,-5.58593 6.28906,-9.0625 5.03906,-3.51562 13.24219,-3.51562 5.42969,0 9.80469,1.67969 4.41406,1.67968 6.99218,4.96093 2.61719,3.24219 2.61719,7.92969 V 265 h -12.8125 v -6.13281 h -0.35156 q -3.63281,6.91406 -12.65625,6.91406 z m 4.14062,-9.02344 q 3.4375,0 5.82032,-2.03125 2.38281,-2.03125 2.38281,-5.27344 v -4.17968 q -1.17188,0.625 -3.39844,1.05468 -2.22656,0.42969 -4.14062,0.74219 -6.28907,0.9375 -6.28907,5.19531 0,2.1875 1.5625,3.35938 1.60157,1.13281 4.0625,1.13281 z m 44.33594,-49.96094 V 265 H 617.65625 V 206.79687 Z M 640.3125,265 v -43.67188 h 13.63281 V 265 Z m 6.79687,-48.78906 q -2.89062,0 -4.96093,-1.91407 -2.07032,-1.91406 -2.07032,-4.64843 0,-2.73438 2.07032,-4.64844 2.07031,-1.91406 4.96093,-1.91406 2.92969,0 5,1.91406 2.07032,1.91406 2.07032,4.64844 0,2.73437 -2.07032,4.64843 -2.07031,1.91407 -5,1.91407 z m 34.25782,49.60937 q -8.39844,0 -13.82813,-3.51562 Q 662.14844,258.75 661.01562,252.5 l 12.65625,-1.99219 q 0.82032,2.85156 2.77344,4.29688 1.95313,1.44531 5.42969,1.44531 2.85156,0 4.49219,-0.97656 1.64062,-1.01563 1.64062,-2.65625 0,-2.85157 -5.35156,-3.90625 l -7.61719,-1.48438 q -12.92969,-2.46094 -12.92969,-12.57812 0,-6.52344 5.19532,-10.19532 5.23437,-3.67187 14.02343,-3.67187 8.20313,0 13.16407,3.24219 4.96093,3.24218 6.09375,8.86718 l -12.03125,1.91407 q -1.32813,-4.64844 -6.99219,-4.64844 -2.46094,0 -4.17969,1.01562 -1.67969,0.97657 -1.67969,2.65625 0,1.32813 1.05469,2.34375 1.05469,0.97657 3.86719,1.52344 l 8.35937,1.5625 q 12.85157,2.42188 12.85157,11.79688 0,4.49218 -2.65625,7.8125 -2.61719,3.32031 -7.22657,5.15625 -4.60937,1.79687 -10.58593,1.79687 z m 39.6875,-0.0391 q -6.28907,0 -10.35157,-3.20313 -4.02343,-3.20312 -4.02343,-9.6875 0,-4.84375 2.22656,-7.69531 2.22656,-2.85156 5.89844,-4.21875 3.71093,-1.36719 8.125,-1.75781 5.54687,-0.46875 7.92968,-1.13281 2.42188,-0.70313 2.42188,-2.73438 v -0.15625 q 0,-2.26562 -1.60156,-3.47656 -1.5625,-1.25 -4.33594,-1.25 -2.85156,0 -4.6875,1.21094 -1.83594,1.21093 -2.38281,3.28125 l -12.34375,-1.60157 q 1.28906,-5.58593 6.28906,-9.0625 5.03906,-3.51562 13.24219,-3.51562 5.42968,0 9.80468,1.67969 4.41407,1.67968 6.99219,4.96093 2.61719,3.24219 2.61719,7.92969 V 265 h -12.8125 v -6.13281 h -0.35156 q -3.63282,6.91406 -12.65625,6.91406 z m 4.14062,-9.02344 q 3.4375,0 5.82031,-2.03125 2.38282,-2.03125 2.38282,-5.27344 v -4.17968 q -1.17188,0.625 -3.39844,1.05468 -2.22656,0.42969 -4.14063,0.74219 -6.28906,0.9375 -6.28906,5.19531 0,2.1875 1.5625,3.35938 1.60156,1.13281 4.0625,1.13281 z" fill="var(--brand)"/>
+      <circle cx="760" cy="260" r="7" fill="var(--secondary)"/>
+    </svg>
+    <nav class="menu" aria-label="Seções">
+      <a href="#tela-1" class="aqui" data-principal="sim">A esteira</a>
+      <a href="#tela-2">Produtos</a>
+      <a href="#tela-1">Por dentro</a>
+      <a href="#limites">Limites</a>
+    </nav>
+    <span class="vao"></span>
+    <a class="bt cheio sm" href="#tela-1"><span class="pt"></span> Agendar demonstração</a>
+  </div>
+</header>
+
+<main>
+
+<!-- ═════════════════ TELA 01 ═════════════════ -->
+<section class="tela" id="tela-1" role="tabpanel" aria-labelledby="tab-1">
+
+  <div class="heroi">
+    <div class="wrap">
+      <div class="heroi-grade">
+        <div class="heroi-txt">
+          <p class="olho"><b>01</b> &nbsp;Plataforma de operação e decisão</p>
+          <h1>Conversa vira decisão<span class="po">.</span> Decisão vira ato<span class="po">.</span> <span class="marcado">E o ato tem dono<span class="po">.</span></span></h1>
+          <p class="deck">O atendimento resolve sozinho o que dá para resolver sozinho — e <b>para exatamente no ponto em que alguém assina</b>. Toda operação percorre a mesma esteira; o seu setor decide só o vocabulário.</p>
+          <div class="botoes">
+            <a class="bt cheio" href="#tela-2">Ver o inventário</a>
+            <a class="bt vazio" href="#limites">Ler os limites</a>
+          </div>
+        </div>
+
+        <div class="matriz">
+          <div class="matriz-cab">
+            <h3>Cobertura por estação</h3>
+            <span class="olho">o recorte mapeado</span>
+          </div>
+          <div class="mrow topo">
+            <span class="mcel">Produto</span>
+            <span class="mcel">Chegar</span><span class="mcel">Decidir</span><span class="mcel">Propor</span>
+            <span class="mcel">Executar</span><span class="mcel">Retomar</span><span class="mcel">Responder</span>
+          </div>
+          <div class="mrow">
+            <span class="mcel">Ágora</span>
+            <span class="mcel"><i class="pin tem"></i></span><span class="mcel"><i class="pin"></i></span><span class="mcel"><i class="pin tem"></i></span>
+            <span class="mcel"><i class="pin"></i></span><span class="mcel"><i class="pin tem"></i></span><span class="mcel"><i class="pin"></i></span>
+          </div>
+          <div class="mrow">
+            <span class="mcel">Clínica</span>
+            <span class="mcel"><i class="pin tem"></i></span><span class="mcel"><i class="pin"></i></span><span class="mcel"><i class="pin"></i></span>
+            <span class="mcel"><i class="pin tem"></i></span><span class="mcel"><i class="pin"></i></span><span class="mcel"><i class="pin tem"></i></span>
+          </div>
+          <div class="mrow uniao">
+            <span class="mcel">Os dois juntos</span>
+            <span class="mcel"><i class="pin tem"></i></span><span class="mcel"><i class="pin falta"></i></span><span class="mcel"><i class="pin tem"></i></span>
+            <span class="mcel"><i class="pin tem"></i></span><span class="mcel"><i class="pin tem"></i></span><span class="mcel"><i class="pin tem"></i></span>
+          </div>
+          <div class="mrow">
+            <span class="mcel">Antecipação</span>
+            <span class="mcel"><i class="pin"></i></span><span class="mcel"><i class="pin tem"></i></span><span class="mcel"><i class="pin tem"></i></span>
+            <span class="mcel"><i class="pin"></i></span><span class="mcel"><i class="pin"></i></span><span class="mcel"><i class="pin tem"></i></span>
+          </div>
+          <p class="matriz-pe">
+            <span><i class="tem"></i> estação coberta</span>
+            <span><i class="falta"></i> a única lacuna dos dois juntos</span>
+            <span>e é exatamente onde entra o terceiro</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="especs">
+      <div class="espec"><b>32</b><span>blocos de plataforma</span></div>
+      <div class="espec"><b>863</b><span>endpoints</span></div>
+      <div class="espec"><b>207</b><span>tipos de ação</span></div>
+      <div class="espec"><b>7<i>.</i></b><span>produtos em produção</span></div>
+    </div>
+  </div>
+
+  <section class="secao">
+    <div class="wrap">
+      <div class="bloco">
+        <p class="calha"><span>02</span></p>
+        <div class="conteudo">
+          <p class="olho">A esteira</p>
+          <h2>Alguém chega, alguém decide, alguém propõe, alguém executa, alguém retoma, alguém responde</h2>
+          <p class="deck">Nós fazemos estações dessa esteira. O catálogo se organiza por estágio da relação com o cliente, e não por setor — <b>é assim que dois produtos deixam de competir e passam a se somar</b>.</p>
+
+          <div class="razao">
+            <div class="linha">
+              <span class="ord">01</span><span class="est">Chegar</span>
+              <span class="perg">“quem me procurou e ninguém viu?”</span><span class="sin"><i></i></span>
+            </div>
+            <div class="linha decide">
+              <span class="ord">02</span><span class="est">Decidir</span>
+              <span class="perg">“com base em quê a gente decide isso?”</span><span class="sin">a decisão <i></i></span>
+            </div>
+            <div class="linha">
+              <span class="ord">03</span><span class="est">Propor</span>
+              <span class="perg">“quanto tempo até sair uma proposta?”</span><span class="sin"><i></i></span>
+            </div>
+            <div class="linha ato">
+              <span class="ord">04</span><span class="est">Executar</span>
+              <span class="perg">“onde ficou registrado o que foi feito?”</span><span class="sin">o ato <i></i></span>
+            </div>
+            <div class="linha">
+              <span class="ord">05</span><span class="est">Retomar</span>
+              <span class="perg">“quem esfriou e ninguém retomou?”</span><span class="sin"><i></i></span>
+            </div>
+            <div class="linha">
+              <span class="ord">06</span><span class="est">Responder</span>
+              <span class="perg">“quem decidiu isso, quando, e com qual regra?”</span><span class="sin"><i></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao macia regua">
+    <div class="wrap">
+      <div class="bloco">
+        <p class="calha"><span>03</span></p>
+        <div class="conteudo">
+          <p class="olho">Por dentro</p>
+          <h2>O produto está no topo. A plataforma é o que o sustenta.</h2>
+          <p class="deck">A ordem importa mais que o conteúdo: quem compra encontra o produto do seu ofício, e só depois descobre por que o próximo custa dias.</p>
+          <div class="pilha">
+            <div class="camada alto"><b>o produto</b><span>ágora · jurídico · clínica · antecipação · recrutamento · personal · adega</span></div>
+            <div class="camada"><b>o pacote</b><span>o produto declarado como dado — instala por uma chamada de API</span></div>
+            <div class="camada"><b>a operação</b><span>leads, funil, agentes, fluxos, conhecimento, metas · 207 tipos de ação</span></div>
+            <div class="camada"><b>o núcleo</b><span>um cadastro e uma linha do tempo, por empresa</span></div>
+            <div class="camada"><b>os blocos</b><span>32 blocos · 863 endpoints · identidade, trilha de auditoria, isolamento</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao">
+    <div class="wrap">
+      <div class="bloco">
+        <p class="calha"><span>04</span></p>
+        <div class="conteudo">
+          <p class="olho">O oitavo produto</p>
+          <h2>Produto novo aqui é um documento, não um projeto</h2>
+          <p class="deck">Sete no ar sobre o mesmo núcleo de cadastro e linha do tempo. O oitavo custa dias, não trimestres — porque o pacote é declarado como dado, e não escrito como projeto.</p>
+          <div class="botoes">
+            <a class="bt cheio" href="#tela-2">Ver os sete, lidos em coluna</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</section>
+
+<!-- ═════════════════ TELA 02 ═════════════════ -->
+<section class="tela" id="tela-2" role="tabpanel" aria-labelledby="tab-2" hidden>
+
+  <section class="secao">
+    <div class="wrap">
+      <div class="bloco">
+        <p class="calha"><span>05</span></p>
+        <div class="conteudo">
+          <p class="olho">O quadro</p>
+          <h2>Sete produtos no ar, e <span class="marcado">uma única máquina</span> embaixo deles</h2>
+          <p class="deck">Organizados por setor, os sete parecem sete projetos que competem entre si. Organizados pelo estágio da relação com o cliente, <b>eles se somam</b>.</p>
+
+          <div class="rolagem">
+            <table>
+              <thead>
+                <tr><th scope="col">Produto</th><th scope="col">O que chega</th><th scope="col">O que se decide</th><th scope="col">O que nasce</th><th scope="col">Onde a pessoa entra</th></tr>
+              </thead>
+              <tbody>
+                <tr><td class="prod">Jurídico</td><td>mensagem às 22h47</td><td>qual área, se é urgente</td><td>consulta marcada na agenda real</td><td class="quem">o advogado atende a consulta</td></tr>
+                <tr class="gate"><td class="prod">Clínica</td><td>“vocês atendem?”</td><td>especialidade, encaixe</td><td>registro da consulta</td><td class="quem">quem atendeu libera o prontuário</td></tr>
+                <tr><td class="prod">Recrutamento</td><td>candidato, cliente e consultor no mesmo número</td><td>triagem, aderência</td><td>parecer escrito no ATS</td><td class="quem">o consultor decide o shortlist</td></tr>
+                <tr class="gate"><td class="prod">Ágora</td><td>visitante no site</td><td>se vira reunião</td><td>pré-proposta em rascunho</td><td class="quem">alguém libera a proposta</td></tr>
+                <tr class="gate"><td class="prod">Antecipação</td><td>notas de OS no WhatsApp</td><td>dossiê, score, banda, borderô</td><td>proposta com líquido e custo efetivo</td><td class="quem">a mesa decide acima da alçada</td></tr>
+                <tr><td class="prod">Personal</td><td>aluno com dúvida</td><td>agenda, PAR-Q</td><td>treino e resumo do dia</td><td class="quem">o profissional ajusta</td></tr>
+                <tr class="gate"><td class="prod">Adega</td><td>“manda o de sempre”</td><td>maioridade, estoque, fiado</td><td>pedido, Pix, entrega</td><td class="quem">o dono confere a fila</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="legenda">
+            <span><i></i> o ponto âmbar marca onde a esteira para até alguém assinar</span>
+            <span>quatro dos sete produtos têm gate humano explícito</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao macia regua">
+    <div class="wrap">
+      <div class="bloco">
+        <p class="calha"><span>06</span></p>
+        <div class="conteudo">
+          <div class="prosa">
+            <p>Lido em coluna, o inventário mostra sempre a mesma máquina. O jurídico que recebe uma mensagem às 22h47 e a mesa de crédito que precifica um borderô fazem, no motor, exatamente a mesma coisa: recebem um pedido por um canal, aplicam uma política versionada, produzem um documento e param no ponto em que alguém precisa assinar.</p>
+            <p>A observação que faz o quadro valer não é a linha cheia — é a lacuna. <b>Nenhum produto sozinho preenche as seis estações.</b> É também por isso que o oitavo produto custa dias e não trimestres: o pacote é declarado como dado, sobre o mesmo núcleo, e o que muda por setor é vocabulário — não arquitetura.</p>
+          </div>
+
+          <div class="cartoes">
+            <div class="cartao">
+              <span class="kick">Unidade de cobrança</span>
+              <p>Na frente de decisão, cobra-se pela decisão ou pelo volume decidido — <b>não pelo assento</b>. A receita cresce com o cliente, e não com o número de usuários dele.</p>
+            </div>
+            <div class="cartao">
+              <span class="kick">O gate humano</span>
+              <p>Em quatro dos sete produtos a esteira para e espera assinatura. <b>É a trava que o comprador procura</b>, e o oposto de vender autonomia.</p>
+            </div>
+            <div class="cartao">
+              <span class="kick">Setor-agnóstico</span>
+              <p>Cerca de 80% do pacote de antecipação não depende de setor. O que muda é vocabulário, carga de histórico e um campo de lastro.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao">
+    <div class="wrap">
+      <div class="bloco">
+        <p class="calha"><span>07</span></p>
+        <div class="conteudo">
+          <div class="citacao">
+            <q>Instrução a modelo não é garantia<span class="po">.</span> Estrutura é<span class="po">.</span></q>
+            <p class="fonte">Registro interno<br>o que separa a esteira do agente solto</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao regua" id="limites">
+    <div class="wrap">
+      <div class="bloco">
+        <p class="calha"><span>08</span></p>
+        <div class="conteudo">
+          <p class="olho">Limites</p>
+          <h2>O que esta página não promete</h2>
+          <p class="deck">A credibilidade da página depende de ela nomear os próprios limites <b>antes de o comprador achá-los</b>.</p>
+          <div class="cartoes">
+            <div class="cartao limite">
+              <span class="kick">Antecipação</span>
+              <p><b>Precifica; não libera dinheiro.</b> Não há funding próprio nem registro em CERC ou B3. O que se vende é a esteira, jamais o crédito.</p>
+            </div>
+            <div class="cartao limite">
+              <span class="kick">Prova</span>
+              <p><b>Não há cliente citável.</b> Nenhuma autorização de uso de marca está registrada — nada de depoimento, nada de logotipo. A prova disponível é um artefato real anonimizado.</p>
+            </div>
+            <div class="cartao limite">
+              <span class="kick">Permissão</span>
+              <p><b>Isolamento entre contas é sólido</b> e pode ser vendido; permissão fina por papel dentro de uma mesma conta, não. E a instalação de pacote só existe por API.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</section>
+</main>
+
+<footer class="rodape">
+  <div class="wrap">
+    <div class="col">
+      <div class="marca-pe">
+        <svg viewBox="0 0 512 512" role="img" aria-label="Catalisa">
+          <rect width="512" height="512" rx="96" fill="var(--brand-500)"/>
+          <g transform="translate(-30, 15)">
+            <path d="m 361.39648,384.10156 q -41.2207,0 -74.0332,-18.25195 -32.60742,-18.25195 -51.67969,-53.11524 -18.86718,-35.06835 -18.86718,-85.3125 0,-50.44921 19.07226,-85.51757 19.27735,-35.06836 52.08985,-53.320316 32.8125,-18.251953 73.41796,-18.251953 36.29883,0 65.21485,13.125 28.91601,13.125 47.16797,38.144529 18.25195,25.01953 22.55859,60.70313 H 423.125 q -3.48633,-22.35352 -19.48242,-35.27344 -15.79102,-13.125 -40.40039,-13.125 -33.63282,0 -53.11524,24.60937 -19.27734,24.4043 -19.27734,68.90625 0,45.9375 19.48242,69.52149 19.48242,23.58398 52.5,23.58398 24.60938,0 40.60547,-12.91992 15.99609,-13.125 19.89258,-35.47851 h 73.21289 q -2.05078,20.50781 -11.89453,40.40039 -9.63867,19.89257 -26.66016,36.09375 -17.02148,16.20117 -41.2207,25.83984 -24.19922,9.63867 -55.3711,9.63867 z" fill="var(--bg)" transform="translate(-95, -2)"/>
+            <circle cx="440" cy="355" r="30" fill="var(--secondary)"/>
+          </g>
+        </svg>
+        <span>Catalisa</span>
+      </div>
+      <p>Direção C da proposta visual. <b>Risco zero de estilo</b>: só as fontes do styleguide, só os tokens do styleguide, nenhuma fotografia. O herói é a matriz — a lacuna à vista.</p>
+    </div>
+    <div class="col">
+      <p class="kick">Tipografia</p>
+      <ul>
+        <li><b>Inter</b> — display, corpo e interface, sem nenhuma família adicional</li>
+        <li><b>JetBrains Mono</b> — calha de registro, rótulos e dado</li>
+      </ul>
+    </div>
+    <div class="col">
+      <p class="kick">O que a cor significa</p>
+      <ul>
+        <li><b>Roxo</b> — estação coberta, estado ativo, link</li>
+        <li><b>Âmbar</b> — o gate humano e o ponto da marca</li>
+        <li><b>Laranja</b> — a lacuna e o limite, nunca área</li>
+      </ul>
+    </div>
+    <div class="col">
+      <p class="kick">Por que sem imagem</p>
+      <ul>
+        <li>Não há cliente autorizado nem foto própria de operação</li>
+        <li>Banco de imagem genérico enfraquece uma página de plataforma</li>
+        <li>O que sobra é o que a Catalisa tem de próprio: o inventário</li>
+      </ul>
+    </div>
+  </div>
+  <div class="assinatura">
+    <div class="wrap">
+      <span>Direção C · o registro</span>
+      <span>Números medidos no código: 32 blocos · 863 endpoints · 207 tipos de ação · 7 produtos</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var varredura = document.getElementById('varredura');
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.tab'));
+  var parado = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+  function paraOnde(href) { return href.indexOf('tela-2') > -1 || href === '#limites' ? 1 : 0; }
+
+  function virar(indice) {
+    tabs.forEach(function (tab, i) {
+      document.getElementById(tab.getAttribute('aria-controls')).hidden = i !== indice;
+      tab.setAttribute('aria-selected', i === indice ? 'true' : 'false');
+    });
+    document.querySelectorAll('.menu a').forEach(function (a) {
+      a.classList.toggle('aqui', a.dataset.principal === 'sim' && paraOnde(a.getAttribute('href')) === indice);
+    });
+    window.scrollTo({ top: 0, behavior: parado.matches ? 'auto' : 'smooth' });
+    if (!parado.matches) {
+      varredura.classList.remove('ativa');
+      void varredura.offsetWidth;
+      varredura.classList.add('ativa');
+    }
+  }
+
+  tabs.forEach(function (tab, i) {
+    tab.addEventListener('click', function () { if (tab.getAttribute('aria-selected') !== 'true') virar(i); });
+    tab.addEventListener('keydown', function (ev) {
+      if (ev.key !== 'ArrowRight' && ev.key !== 'ArrowLeft') return;
+      ev.preventDefault();
+      var alvo = (i + (ev.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length;
+      tabs[alvo].focus();
+      virar(alvo);
+    });
+  });
+
+  document.querySelectorAll('.menu a, a.bt').forEach(function (link) {
+    link.addEventListener('click', function (ev) {
+      ev.preventDefault();
+      document.querySelectorAll('.menu a').forEach(function (a) { delete a.dataset.principal; });
+      if (link.closest('.menu')) link.dataset.principal = 'sim';
+      virar(paraOnde(link.getAttribute('href')));
+    });
+  });
+})();
+</script>

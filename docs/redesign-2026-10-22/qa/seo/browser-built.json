@@ -1,0 +1,166 @@
+{
+  "generatedAt": "2026-10-23T00:17:21.595Z",
+  "scope": "Local static build, JS and no-JS; CDN not tested",
+  "checks": [
+    {
+      "path": "/agentes-ia-whatsapp",
+      "title": "Agentes de IA para WhatsApp Business | Catalisa",
+      "lang": "pt-BR",
+      "canonicals": [
+        "https://catalisa.io/agentes-ia-whatsapp"
+      ],
+      "robots": [
+        "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      ],
+      "headings": [
+        "Grandes varejistas já vendem pelo WhatsApp com IA. Sua empresa pode fazer o mesmo."
+      ],
+      "schemas": 1
+    },
+    {
+      "path": "/insights",
+      "title": "Catalisa Insights | Cases de IA e WhatsApp Business",
+      "lang": "pt-BR",
+      "canonicals": [
+        "https://catalisa.io/insights"
+      ],
+      "robots": [
+        "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      ],
+      "headings": [
+        "Insights"
+      ],
+      "schemas": 3
+    },
+    {
+      "path": "/insights/90-porcento-empresas-mais-clientes-whatsapp",
+      "title": "90% Viram Mais Clientes com WhatsApp | Catalisa",
+      "lang": "pt-BR",
+      "canonicals": [
+        "https://catalisa.io/insights/90-porcento-empresas-mais-clientes-whatsapp"
+      ],
+      "robots": [
+        "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      ],
+      "headings": [
+        "Por Que 90% das Empresas Viram Mais Clientes com WhatsApp (E Como Começar)"
+      ],
+      "schemas": 2
+    },
+    {
+      "path": "/en/insights/90-porcento-empresas-mais-clientes-whatsapp",
+      "title": "90% Saw More Customers with WhatsApp | Catalisa",
+      "lang": "en-US",
+      "canonicals": [
+        "https://catalisa.io/en/insights/90-porcento-empresas-mais-clientes-whatsapp"
+      ],
+      "robots": [
+        "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      ],
+      "headings": [
+        "Why 90% of Companies Saw More Customers with WhatsApp (And How to Get Started)"
+      ],
+      "schemas": 2
+    },
+    {
+      "path": "/design-system/home",
+      "title": "Catalisa | Plataforma de capacidades para criar produtos",
+      "lang": "pt-BR",
+      "canonicals": [
+        "https://catalisa.io/design-system/home"
+      ],
+      "robots": [
+        "noindex, nofollow"
+      ],
+      "headings": [
+        "A forma seguea conexão."
+      ],
+      "schemas": 1
+    },
+    {
+      "path": "/capacidades",
+      "title": "Building blocks: biblioteca de capacidades | Catalisa",
+      "lang": "pt-BR",
+      "canonicals": [
+        "https://catalisa.io/capacidades"
+      ],
+      "robots": [
+        "noindex, nofollow"
+      ],
+      "headings": [
+        "Peças com propósito.Possibilidadesem conjunto."
+      ],
+      "schemas": 1
+    },
+    {
+      "path": "/arquitetura",
+      "title": "Arquitetura de capacidades combináveis | Catalisa",
+      "lang": "pt-BR",
+      "canonicals": [
+        "https://catalisa.io/arquitetura"
+      ],
+      "robots": [
+        "noindex, nofollow"
+      ],
+      "headings": [
+        "Menos trabalhorepetido.Mais produto."
+      ],
+      "schemas": 1
+    },
+    {
+      "path": "/desenvolvedores",
+      "title": "APIs, webhooks e integrações para desenvolvedores | Catalisa",
+      "lang": "pt-BR",
+      "canonicals": [
+        "https://catalisa.io/desenvolvedores"
+      ],
+      "robots": [
+        "noindex, nofollow"
+      ],
+      "headings": [
+        "Seu código.Mais possibilidades."
+      ],
+      "schemas": 1
+    },
+    {
+      "path": "/",
+      "title": "Catalisa | Plataforma de Automação WhatsApp com IA",
+      "lang": "pt-BR",
+      "canonicals": [
+        "https://catalisa.io/"
+      ],
+      "robots": [
+        "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      ],
+      "headings": [
+        "Seus agentes de IA. Seu WhatsApp. Seus Building Blocks. Da conversa ao resultado, sem código."
+      ],
+      "schemas": 4
+    },
+    {
+      "interaction": "Native Home to legacy Home via SPA link",
+      "canonical": "https://catalisa.io/"
+    },
+    {
+      "noJavaScript": "/design-system/home",
+      "status": 200,
+      "h1Visible": true
+    },
+    {
+      "noJavaScript": "/capacidades",
+      "status": 200,
+      "h1Visible": true
+    },
+    {
+      "noJavaScript": "/capacidades/ai-engine",
+      "status": 200,
+      "h1Visible": true
+    },
+    {
+      "noJavaScript": "/en/insights/90-porcento-empresas-mais-clientes-whatsapp",
+      "status": 200,
+      "h1Visible": true
+    }
+  ],
+  "errors": []
+}

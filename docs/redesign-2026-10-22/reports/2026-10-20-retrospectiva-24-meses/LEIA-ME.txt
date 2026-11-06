@@ -1,0 +1,187 @@
+DOSSIÊ DE ENGENHARIA E PRODUTO CATALISA
+Klederson Bueno | 20 de outubro de 2026
+
+COMECE POR index.html
+O início agora é um infográfico Bauhaus de uma página, com síntese das três bases,
+seis etapas, oito áreas, todas as 110 frentes expansíveis, evolução mensal,
+quatro medições históricas, nove impactos Developy, valor de produto e fontes.
+infografico.html é o endereço explícito da mesma página.
+infografico.pdf é a edição de uma página longa com texto selecionável.
+dossie.html preserva a estrutura do índice anterior e oferece nove caminhos de leitura,
+agora com a mesma identidade do infográfico.
+Abra diretamente no navegador. Não precisa de servidor nem de internet para ler,
+pesquisar, filtrar ou exportar. As referências externas exigem acesso aos respectivos
+repositórios privados no GitHub.
+
+ARQUIVOS DE APRESENTAÇÃO
+Todos os materiais seguem a identidade transitória Catalisa aprovada em 21/10/2026:
+papel quente, roxo #734B9C, amarelo #FDC234, laranja complementar #FE8342,
+Inter, títulos fortes sem serifa,
+metadados monoespaçados, geometria e leitura por camadas. As leituras longas têm
+sumário recolhível; os PDFs conservam a mesma linguagem visual.
+A assinatura principal usa o SVG oficial Catalisa. roxo com ponto amarelo,
+distribuído como catalisa-logo.svg e incorporado nas páginas e PDFs.
+identidade-transitoria.css distribui os tokens; report-identity.css adapta as
+leituras, os gráficos, a timeline e os modos de apresentação.
+A fonte dos tokens, a aprovação, as regras e as referências ficam em
+docs/design/entregas-bauhaus; AGENTS.md aponta para essa referência persistente.
+Ela será o ponto de partida para a próxima evolução do novo site da Catalisa.
+As três bases têm um quadro comparativo dos inícios do histórico e do corte,
+com contagens de PRs integrados; as faixas não representam horas trabalhadas.
+Os PDFs têm numeração de páginas para consulta durante a apresentação.
+cadeia-de-valor.html / .pdf — percurso em seis etapas, 37 frentes e 220 PRs distintos:
+entradas, transformações, saídas, controles, camadas e fontes. Navegação fixa,
+capacidades expansíveis e apresentação com setas do teclado; Esc encerra.
+dashboard.html / .pdf — 22 visualizações de entrega, produto, arquitetura, segurança
+e resultados técnicos. Filtros de base e mês atuam na seção de entregas; tabelas,
+fontes e CSV preservam o recorte. Demais seções usam os snapshots completos.
+relatorio-completo.html / .pdf — 110 frentes detalhadas, timeline, conexões entre os
+três projetos, código, valor, métricas, estados e fontes.
+developy.html / .pdf — dossiê próprio da infraestrutura: nove casos de impacto na
+Catalisa, as 14 frentes de infraestrutura, evolução, 31 diretórios e fontes.
+investidores.html / .pdf — ativos construídos e valor de produto.
+entrevistas.html / .pdf — narrativa profissional, currículo e dez casos técnicos.
+
+DILIGÊNCIA PARA INVESTIMENTO/AQUISIÇÃO E HOMOLOGAÇÃO — EDIÇÃO 21/10/2026
+O acervo técnico permanece no corte de 20/10/2026. A organização da diligência
+foi solicitada em 21/10, para avaliação de empresas como Accenture e Deloitte.
+Isso não indica vínculo, endosso, certificação ou aprovação dessas empresas.
+diligencia.html / .pdf — SUMÁRIO DAS ANÁLISES: conclusão geral e por área,
+6 pontos fortes, 3 fragilidades identificadas, provas/documentos pendentes,
+16 riscos com origem/consequência/tratamento e 8 ações propostas. Cada ação
+explicita trabalho, função sugerida, momento, entrega e prova de conclusão.
+Atalhos: #sumario-analises, #pontos-fortes, #pontos-fracos, #riscos,
+#plano-de-acao e #analise-por-area. O conteúdo principal é visível sem expansão.
+As questões e documentos detalhados ficam nas demais leituras.
+diligencia-tecnica.html / .pdf — 35 questões em sete domínios: produto,
+arquitetura, segurança, dados/privacidade, IA/Decision, operação e engenharia;
+inclui matriz das 110 frentes, cada uma relacionada a perguntas e fontes.
+diligencia-corporativa.html / .pdf — 25 questões em cinco domínios: societário/IP,
+comercial, financeiro/fiscal, pessoas/governança e fornecedores/transição;
+define a documentação necessária sem inventar indicadores ou direitos.
+diligencia-evidencias.html / .pdf — 146 entradas de fonte, 16 riscos abertos,
+60 pedidos documentais, origem e método de encerramento. Busca/filtros e CSV
+do recorte funcionam offline. Os detalhes nativos abrem sem JavaScript.
+homologacao.html / .pdf — leitura própria para contratação, com 32 controles
+para Compras, Jurídico, Segurança, Privacidade, operação e tecnologia.
+Nenhum controle tem aprovação presumida; requisitos oficiais e decisão são
+do comprador. A avaliação é por produto, ambiente, dados e volume contratados.
+
+diligencia-dados.json — modelo comum de questões, fontes, riscos, pedidos,
+controles e relações; papéis são sugestões e não atribuições confirmadas.
+diligencia-fontes.json — 14 documentos internos lidos no snapshot, com blob,
+hash, versão e observação, mais os hashes dos oito insumos congelados.
+diligencia-pedidos.csv — 60 pedidos, função sugerida, prioridade e critério.
+diligencia-riscos.csv — 16 riscos, decisões afetadas e critérios de encerramento.
+homologacao-controles.csv — 32 controles, evidência e aceite propostos.
+diligencia-acoes.csv — 8 ações propostas, funções/momentos sugeridos,
+entregas, critérios e riscos relacionados; datas e pessoas permanecem abertas.
+PLANO-DILIGENCIA.txt — plano, escopo e limites da implementação.
+
+A diligência distingue código disponível, ensaio histórico, documento interno
+e documento a fornecer. Documentação de IA de março apresenta divergências com
+a arquitetura de outubro; a matriz registra a necessidade de atualização.
+Autodeclarações de aderência e percentuais internos não são certificados.
+Receita, caixa, contratos, cap table, cessões de IP e regularidade precisam de
+documentos próprios. Ausência no corpus não significa inexistência na empresa.
+Esta etapa não realizou auditoria independente, pentest, ensaios de produto em
+produção ou análise de contratos e demonstrativos financeiros não fornecidos.
+
+O site conserva a senha comum existente. Classificações de compartilhamento
+são orientações; não há controle individual por documento, trilha individual
+de acessos ou gestão de NDA nesta implementação. Anexos e documentos sensíveis
+devem ser compartilhados somente com destinatários autorizados, após revisão.
+Nenhum material foi enviado a consultorias nesta etapa.
+
+CONSULTA E DADOS
+timeline.html — atlas visual offline: 34 marcos em sete capítulos, 110 frentes e
+inventário completo de PRs, commits, documentos e módulos.
+Clique nos pontos do desenho para abrir entregas; nos nomes dos fios e capítulos
+para recortar a leitura. Refinar a leitura recolhe os filtros e oferece caminhos
+prontos. Chips mostram o que foi aplicado; o endereço conserva o recorte.
+Apresentar percorre os marcos com as setas do teclado; Esc encerra.
+O desenho usa capítulos de largura semelhante, sem representar volume ou impacto.
+O acervo comprimido abre sob demanda em navegadores atuais, sem acesso à rede.
+prs.csv — todos os 2.978 PRs capturados, com descrição e estado.
+commits.csv — os 9.909 commits disponíveis nas referências coletadas.
+documentos.csv — 1.328 documentos atuais e 285 caminhos históricos adicionais.
+modulos.csv — 159 diretórios indexados: 86 da API, 42 dos BBs e 31 do Developy.
+dashboard-data.json — modelo auditável das visualizações, regras de contagem e
+limites das medições; usa o mesmo corpus congelado.
+dados.json — base estruturada completa, incluindo caminhos alterados.
+narrativa.json — síntese editorial das 110 frentes, com os PRs que a sustentam.
+
+EVIDÊNCIAS E CONSISTÊNCIA
+cobertura.json — contagens e snapshots por repositório.
+paginacao-github.json — totalCount remoto comparado com o acervo capturado.
+fontes-codigo.json — pontos centrais conferidos no código congelado por SHA.
+infra-evidencias.json — 11 arquivos do snapshot Developy conferidos nos nove casos,
+com hashes, linhas e vínculos para a implementação.
+metricas-codigo.json — ações do workflow e models do schema do painel.
+verificacao-fontes.json — disponibilidade de documentos históricos e diffs.
+verificacao.json — testes do acervo, da apresentação e da consulta no navegador.
+hashes-fontes-privadas.json — hashes dos insumos originais, preservados em /tmp na
+máquina da coleta; os insumos privados completos não integram o pacote.
+manifesto-sha256.json — integridade dos arquivos desta entrega.
+
+ESCOPO E DATAS
+Janela de 20/10/2024 a 20/10/2026, America/Sao_Paulo. Os primeiros registros dos
+três projetos aparecem em novembro/2025 e março/2026. Não foi inventado trabalho
+para preencher meses anteriores. Outubro aparece parcialmente nas duas pontas da
+timeline mensal.
+
+O inventário inclui merges em branches intermediárias, PRs abertos e fechados sem
+merge, além dos registros integrados. Há 2.856 PRs mesclados; 2.840 têm o merge na
+ancestralidade da principal. Conteúdo de outro ramo pode ter sido reaplicado por
+outro commit. Merge, publicação e validação do produto são estados distintos.
+
+A documentação e os PRs contêm evidências de testes históricos; este levantamento
+conferiu o acervo e os relatórios e não repetiu testes de produção ou chamadas de IA.
+
+ANONIMIZAÇÃO
+As versões de apresentação e os textos visíveis foram anonimizados por segmento.
+Os anexos são de consulta reservada: caminhos, branches, endereços exatos de fontes
+e ferramentas de reprodução podem conter referências históricas aos clientes.
+Identificadores de credenciais reconhecíveis foram suprimidos na base exportada.
+Para compartilhar uma narrativa externa, use os PDFs de investidores e entrevistas.
+
+REPRODUÇÃO LOCAL DOS ARTEFATOS
+Com o Node.js e as dependências já existentes neste monorepo:
+node docs/reports/2026-10-20-retrospectiva-24-meses/gerar.mjs
+node docs/reports/2026-10-20-retrospectiva-24-meses/verificar.mjs
+
+Para atualizar apenas o infográfico sobre o corpus congelado:
+node docs/reports/2026-10-20-retrospectiva-24-meses/gerar-infografico.mjs
+node docs/reports/2026-10-20-retrospectiva-24-meses/verificar-infografico.mjs
+node docs/reports/2026-10-20-retrospectiva-24-meses/verificar-identidade.mjs
+O verificador confere conteúdo, links, proporções dos gráficos, cinco larguras,
+leitura sem JavaScript, fontes locais e gera o PDF de uma página.
+verificar-identidade.mjs confere as 15 páginas em quatro larguras, os tokens,
+as fontes incorporadas nos PDFs e o registro persistente da aprovação.
+Com --public, verifica o infográfico e a preservação do dossiê no HTTPS.
+infografico-cobertura.json relaciona cada área às frentes e aos documentos.
+O estudo local das 72 referências está em docs/design/entregas-bauhaus.
+As imagens de inspiração não são publicadas com o dossiê; o desenho é próprio.
+
+Para validar as cinco novas leituras e gerar seus PDFs:
+node docs/reports/2026-10-20-retrospectiva-24-meses/verificar-diligencia.mjs
+O verificador confere as relações de 60 questões, 16 riscos, 32 controles e
+110 frentes; preservação dos oito insumos; 146 fontes; filtros e CSV; navegação
+por teclado, links profundos, leitura sem JavaScript e cinco larguras.
+Os cinco PDFs contêm todos os identificadores esperados e paginação.
+verificar-identidade.mjs agora cobre 15 páginas e 12 PDFs.
+A revisão 2 também verifica que conclusões, pontos fortes/fracos, riscos e
+ações são visíveis sem expansão; que documentos ausentes não são apresentados
+como falhas comprovadas; e que os 16 riscos têm encaminhamento nas 8 ações.
+A identidade foi mantida; o relatório anterior ganhou acessos contextuais.
+
+O segundo comando usa o Chrome local e Playwright para produzir PDFs e verificar a
+consulta. Ele abre apenas os arquivos deste dossiê, sem acessar o ambiente vivo.
+Os scripts coletar.py e estruturar.py registram a lógica de coleta e classificação;
+uma nova coleta remota exige GitHub autenticado e gera um novo estado, porque PRs,
+descrições e referências podem mudar. Os hashes preservam a identidade desta coleta.
+
+O dossiê está publicado em entregas.interno.catalisa.app, protegido por senha,
+em serviço próprio. hosting registra o procedimento e as verificações do HTTPS.
+A geração e a publicação deste material não alteram as aplicações ou as bases de
+dados dos produtos; não criam nem mesclam PRs.

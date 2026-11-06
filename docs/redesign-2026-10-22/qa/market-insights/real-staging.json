@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-25T05:43:12.218Z",
+  "passed": true,
+  "scope": "Resume existing fictional H14 records only. Actual staging encrypted stores and IAM; no listener, no visitor creation, no external AI/messages, no live configuration or policy activation.",
+  "testOnlyPolicyFixture": true,
+  "ownerPolicyApproved": false,
+  "productionDeploy": false,
+  "resumedExistingFiveSessions": true,
+  "tenContractEventsStored": true,
+  "durableOutboxRestartRecovery": true,
+  "actualEventRows": 17,
+  "fiveSubjectAggregate": true,
+  "actualReviewCas": [
+    200,
+    409
+  ],
+  "reviewAudit": true,
+  "actualEventDeduplication": true,
+  "changedDuplicateRejected": true,
+  "erasureBlocksReplay": true,
+  "fourSubjectsSuppressed": true,
+  "cleanupErrors": [],
+  "syntheticSessionsRemoved": true,
+  "syntheticMetricsAndPacketsRemoved": true,
+  "quotaRecords": "Left to expire within their normal bounded windows; shared operator quotas were not deleted.",
+  "phase": "erase-and-suppression",
+  "networkRequests": 264,
+  "minimumFetchSpacingMs": 500,
+  "observed429": 0
+}

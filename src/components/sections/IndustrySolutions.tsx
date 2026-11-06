@@ -24,7 +24,7 @@ interface IndustryData {
 
 const industryIcons: IconType[] = [FiTrendingUp, FiDollarSign, FiShield, FiShoppingBag, FiZap];
 const industryColors = ['blue.400', 'green.400', 'orange.400', 'purple.400', 'cyan.400'];
-const industryPaths = ['/verticais/fintech', '/verticais/bancario', '/verticais/seguros', '/verticais/varejo', '/verticais/startups'];
+const industryPaths = ['/fintech', '/bancario', '/seguros', '/varejo', '/startups'];
 
 export function IndustrySolutions() {
   const { t } = useTranslation('home');

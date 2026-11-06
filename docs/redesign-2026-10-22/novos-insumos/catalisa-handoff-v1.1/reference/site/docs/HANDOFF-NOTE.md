@@ -1,0 +1,1 @@
+Esta pasta preserva documentação histórica do protótipo. As decisões finais estão nos documentos principais do handoff. Screenshots internos de QA não foram incluídos; o relatório de layout foi transferido para evidence/ no pacote principal. O rótulo público atual é Visão.

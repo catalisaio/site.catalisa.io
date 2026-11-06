@@ -99,7 +99,7 @@ export function Demo() {
           {/* Chapter list */}
           <Box flex={1}>
             <MotionBox {...fadeInUp}>
-              <Heading as="h3" fontSize={{ base: 'lg', md: 'xl' }} fontWeight="700" color="white" mb={6}>
+              <Heading as="h2" fontSize={{ base: 'lg', md: 'xl' }} fontWeight="700" color="white" mb={6}>
                 {t('chapters.heading')}
               </Heading>
 

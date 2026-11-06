@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-24T11:48:18.180Z",
+  "origin": "https://panel-api.wpp.bb.stg.catalisa.app",
+  "accountMatches": true,
+  "agent": {
+    "name": "Catalisa Site — Conceitos",
+    "slug": "site-catalisa-conceitos",
+    "active": true,
+    "toolCount": 0,
+    "provider": "anthropic",
+    "model": "fast",
+    "created": true
+  },
+  "serviceToken": {
+    "created": true,
+    "storedLocally": true,
+    "expiresInDays": 30
+  },
+  "localConfiguration": true,
+  "productionDeploy": false,
+  "panelDeploy": false,
+  "buildingBlockCodeChanged": false
+}

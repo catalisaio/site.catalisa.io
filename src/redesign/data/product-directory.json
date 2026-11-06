@@ -1,0 +1,60 @@
+{
+  "title": "Produtos da Catalisa",
+  "intro": "Crie produtos financeiros, organize crédito e encontre soluções para atendimento e rotinas de trabalho. Conheça o que cada produto entrega e como ele se conecta à sua operação.",
+  "products": [
+    {
+      "slug": "banking",
+      "name": "Banking Platform",
+      "category": "Infraestrutura bancária e canais",
+      "description": "Ofereça contas e serviços financeiros com sua marca, conectando canais, regras de operação e parceiros.",
+      "detailPath": "/ecossistema/banking/",
+      "siteUrl": null,
+      "headline": "Crie e opere seu produto financeiro."
+    },
+    {
+      "slug": "credit",
+      "name": "Credit Platform",
+      "category": "Esteira e operação de crédito",
+      "description": "Crie produtos de crédito com suas políticas e organize propostas, análise, documentos e acompanhamento da carteira.",
+      "detailPath": "/ecossistema/credit/",
+      "siteUrl": null,
+      "headline": "Gerencie o crédito, da proposta à carteira."
+    },
+    {
+      "slug": "med",
+      "name": "Med",
+      "category": "Saúde",
+      "description": "Organize agendas, equipes e consultas presenciais ou remotas. Use o copiloto e as automações para reduzir o trabalho entre uma consulta e outra.",
+      "detailPath": "/ecossistema/med/",
+      "siteUrl": "https://med.catalisa.app/",
+      "headline": "Gerencie sua rotina médica em todas as suas clínicas."
+    },
+    {
+      "slug": "juridico",
+      "name": "Jurídico",
+      "category": "Advocacia",
+      "description": "Reúna o contexto dos casos, consulte o acervo do escritório e prepare o trabalho da equipe com IA e revisão profissional.",
+      "detailPath": "/ecossistema/juridico/",
+      "siteUrl": "https://juridico.catalisa.app/",
+      "headline": "Organize o atendimento e a rotina do seu escritório."
+    },
+    {
+      "slug": "biometrics",
+      "name": "Biometrics",
+      "category": "Identidade",
+      "description": "Integre a verificação de identidade ao seu cadastro ou atendimento. Aplique sua política de análise e preserve as evidências de cada verificação.",
+      "detailPath": "/ecossistema/biometrics/",
+      "siteUrl": "https://biometrics.catalisa.app/",
+      "headline": "Verifique identidades com prova de vida e comparação facial."
+    },
+    {
+      "slug": "decision",
+      "name": "Decision",
+      "category": "Decisão e crédito",
+      "description": "Defina políticas em tabelas de decisão DMN, publique versões e consulte o resultado e as regras aplicadas em cada análise.",
+      "detailPath": "/ecossistema/decision/",
+      "siteUrl": "https://decision.catalisa.app/",
+      "headline": "Automatize decisões com as regras do seu negócio."
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "generatedAt": "2026-10-25T04:56:03.738602+00:00",
+  "artifact": "/tmp/catalisa-release-candidate",
+  "mode": {
+    "redesign": true,
+    "indexing": false
+  },
+  "types": {
+    "command": "npm run build -- --outDir /tmp/catalisa-release-candidate --emptyOutDir (tsc -b and Vite)",
+    "passed": true
+  },
+  "unitTests": {
+    "targetedCommand": "npx vitest run scripts/public-snapshot-contract.test.mjs scripts/vite-release.test.ts --maxWorkers=1",
+    "targetedPassed": 10,
+    "earlierInventoryTestsPassed": 15,
+    "limits": "Full application/server suite coordinated separately."
+  },
+  "prerender": {
+    "routes": 257,
+    "failures": [],
+    "shell": {
+      "file": "/tmp/catalisa-release-candidate/index.html",
+      "moduleScript": "/assets/index-C2aWKTBx.js"
+    }
+  },
+  "moduleEntrypoint": {
+    "path": "/assets/index-C2aWKTBx.js",
+    "sha256": "1fd96474dce4a5fac22624a3c845d0221e0e1d52700f98f645a5f9b7f6a8f57a",
+    "applicationHtmlFiles": 258,
+    "mismatches": [],
+    "scope": "Application inventory plus SPA shell; domain-verification HTML is not an application entry."
+  },
+  "staticSeo": {
+    "routes": 256,
+    "failures": [],
+    "warnings": [],
+    "brandOriginals": 144
+  },
+  "browser": {
+    "passed": true,
+    "checks": 41,
+    "errors": []
+  },
+  "anonymousPublicSnapshots": {
+    "passed": true,
+    "actualClientSessionRead401AndNoJsVerified": true,
+    "states": [
+      {
+        "path": "/contato",
+        "h1": "Vamos dar formaà próximaconversa.",
+        "busy": false,
+        "controlReady": true,
+        "errors": []
+      },
+      {
+        "path": "/lab",
+        "h1": "O que vocêquer construir?",
+        "busy": false,
+        "controlReady": true,
+        "errors": []
+      }
+    ]
+  },
+  "privateArtifact": {
+    "passed": true,
+    "scannedFiles": 870,
+    "findings": []
+  },
+  "brand": {
+    "originals": 144,
+    "allMatch": true,
+    "futureBuilds": "vite.config.ts excludes redesign/brand; check:seo blocks modified originals"
+  },
+  "fonts": {
+    "report": "../site-quality/font-compression.json",
+    "sourceBytes": 976172,
+    "woff2Bytes": 332220,
+    "losslessVerification": true,
+    "pendingNextProductionBuild": "Local Inter alias for explicitly named SVG labels is now in source, not this artifact."
+  },
+  "editorialDecision": "financial-products-2026-10-24; JS and no-JS verified for Banking, Credit and Architecture",
+  "caddy": {
+    "sha256": "8ddd83ce0ac10e6031af28bc8bb0cf3d81aaa061aed0d7567753d3dca1f78406",
+    "matchesRealBinaryFixture": true,
+    "runtimeHttp": "7/7 isolated fixture checks; actual HTTPS staging is a separate operational report"
+  },
+  "visual": {
+    "architecture": {
+      "widths": [
+        320,
+        390,
+        768,
+        1440
+      ],
+      "maxHeadingDeltaPx": 2,
+      "differing": 0,
+      "browserExceptions": [],
+      "limits": "Geometry/text excludes verified clipped assistive descriptions and applies intentional financial copy to reference browser DOM only. SVG local font alias awaits next artifact; not pixel/user approval."
+    },
+    "lab": {
+      "widths": [
+        320,
+        390,
+        768,
+        1440
+      ],
+      "measurements": 40,
+      "intentionalNoteDeltaPx": 12,
+      "limits": "Functional continuity link changes note/workbench height on narrow screens; main typography and measured geometry match."
+    }
+  },
+  "pending": [
+    "Build production artifact with indexing enabled and local Inter alias, then revalidate it",
+    "Actual HTTPS staging, real service and performance acceptance coordinated separately",
+    "Explicit user approval before production deployment"
+  ],
+  "limits": [
+    "No inference of actual CDN/staging service acceptance from this local report",
+    "No broad WCAG, field Core Web Vitals, physical-device or ranking claim",
+    "No user visual approval inferred from measurements",
+    "No production deployment authorization supplied by these reports"
+  ]
+}

@@ -1,0 +1,412 @@
+{
+  "date": "2026-10-26T19:48:18.373Z",
+  "passed": true,
+  "origin": "https://catalisa.io",
+  "tlsValidation": true,
+  "scope": "Actual public production Lab/BFF and configured production AI; synthetic reserved contact, generation, reload and Contact continuation. No handoff or external messages.",
+  "stage": "contact-continuation",
+  "result": {
+    "idea": "Quero matricular alunos de uma escola de inglês pelo WhatsApp",
+    "elapsedMs": 30913,
+    "concept": {
+      "conceptRef": "concept_a76ae0bb-59b7-4bee-9465-d73ba1bc8ae0",
+      "version": 1,
+      "briefVersion": 1,
+      "content": {
+        "schemaVersion": "1.0",
+        "title": "Matrícula de Alunos pelo WhatsApp",
+        "summary": "Plataforma de inscrição e matrícula para alunos de escola de inglês operada via WhatsApp, permitindo coleta de dados, confirmação de disponibilidade e geração de documentos de matrícula sem sair do chat.",
+        "hypothesis": "Escolas de inglês podem reduzir atrito no processo de matrícula ao oferecer inscrição conversacional pelo WhatsApp. Hipóteses a validar: (1) público-alvo é responsável por alunos (pais/responsáveis) ou alunos adultos; (2) escola possui equipe para atender via WhatsApp ou deseja automatizar parte do fluxo; (3) dados críticos de matrícula são coletáveis em conversa estruturada; (4) necessidade de agendamento de aula experimental ou confirmação de turma existente.",
+        "roles": [
+          "Candidato à matrícula (pais, responsável ou aluno adulto)",
+          "Assistente de matrícula (IA conversacional)",
+          "Gestor de matrículas (humano, revisão e confirmação)"
+        ],
+        "screens": [
+          {
+            "id": "screen_welcome",
+            "title": "Boas-vindas e Início",
+            "description": "Primeira mensagem no WhatsApp apresentando a escola, explicando o processo de matrícula e coletando confirmação de interesse.",
+            "items": [
+              {
+                "label": "Nome da escola",
+                "value": "Escola de Inglês [Nome]"
+              },
+              {
+                "label": "Proposta",
+                "value": "Inscrever-se em um curso de inglês em poucos passos"
+              },
+              {
+                "label": "Próximo passo",
+                "value": "Confirmar interesse e informar dados básicos"
+              }
+            ],
+            "action": {
+              "label": "Começar inscrição",
+              "nextScreenId": "screen_student_info"
+            }
+          },
+          {
+            "id": "screen_student_info",
+            "title": "Dados do Aluno",
+            "description": "Coleta de informações essenciais: nome completo, idade ou data de nascimento, nível de inglês (se aplicável) e contato do responsável (se menor).",
+            "items": [
+              {
+                "label": "Nome completo",
+                "value": "Texto livre"
+              },
+              {
+                "label": "Data de nascimento",
+                "value": "DD/MM/AAAA"
+              },
+              {
+                "label": "Nível de inglês",
+                "value": "Iniciante, Intermediário, Avançado ou Não sei"
+              }
+            ],
+            "action": {
+              "label": "Confirmar e prosseguir",
+              "nextScreenId": "screen_turma_agendamento"
+            }
+          },
+          {
+            "id": "screen_turma_agendamento",
+            "title": "Escolha de Turma e Agendamento",
+            "description": "Apresentação de turmas disponíveis com horários e dias da semana. Opção de agendar aula experimental ou confirmar matrícula em turma existente.",
+            "items": [
+              {
+                "label": "Turmas disponíveis",
+                "value": "Lista dinâmica (dias, horários, nível)"
+              },
+              {
+                "label": "Aula experimental",
+                "value": "Agendar data e horário"
+              },
+              {
+                "label": "Confirmação",
+                "value": "Revisar escolha antes de finalizar"
+              }
+            ],
+            "action": {
+              "label": "Finalizar matrícula",
+              "nextScreenId": "screen_confirmacao"
+            }
+          },
+          {
+            "id": "screen_confirmacao",
+            "title": "Confirmação e Próximos Passos",
+            "description": "Resumo dos dados coletados, confirmação de matrícula, geração de documento de inscrição e informações sobre primeira aula.",
+            "items": [
+              {
+                "label": "Resumo da inscrição",
+                "value": "Aluno, turma, horário, nível"
+              },
+              {
+                "label": "Documento de matrícula",
+                "value": "Link para download ou anexo"
+              },
+              {
+                "label": "Próximos passos",
+                "value": "Data da primeira aula, material necessário, contato da escola"
+              }
+            ],
+            "action": {
+              "label": "Concluir",
+              "nextScreenId": null
+            }
+          }
+        ],
+        "blocks": [
+          {
+            "slug": "wpp-business",
+            "role": "Canal de entrada, coleta de dados e entrega de confirmações; suporta templates de mensagem e integração com sistema de matrícula"
+          },
+          {
+            "slug": "ai-engine",
+            "role": "Assistente conversacional para coleta estruturada de dados do aluno, validação de respostas e encaminhamento para gestor quando necessário"
+          },
+          {
+            "slug": "data-extraction",
+            "role": "Extração de dados de documentos (comprovante de residência, identidade) enviados via WhatsApp, se exigido no processo de matrícula"
+          },
+          {
+            "slug": "document-template",
+            "role": "Geração de contrato ou termo de inscrição com dados do aluno, turma e escola, entregue como PDF no WhatsApp"
+          },
+          {
+            "slug": "calendar",
+            "role": "Consulta de disponibilidade de turmas e horários, sincronização com calendário da escola para evitar conflitos de agendamento"
+          },
+          {
+            "slug": "data-store",
+            "role": "Armazenamento de dados de inscrição (nome, data de nascimento, nível, turma escolhida) isolados por escola, sem criar tabelas customizadas"
+          },
+          {
+            "slug": "e-signature",
+            "role": "Coleta de assinatura eletrônica do responsável ou aluno no documento de matrícula, com trilha de auditoria"
+          },
+          {
+            "slug": "webhooks-engine",
+            "role": "Notificação assíncrona ao sistema de gestão escolar ou CRM quando matrícula é concluída, disparando lembretes e próximos passos"
+          }
+        ],
+        "journey": [
+          {
+            "id": "step_1_engajamento",
+            "label": "Engajamento e boas-vindas",
+            "description": "Candidato recebe mensagem no WhatsApp da escola apresentando a oportunidade de matrícula. IA confirma interesse e explica o fluxo em linguagem conversacional.",
+            "blockSlugs": [
+              "wpp-business",
+              "ai-engine"
+            ],
+            "humanReview": false
+          },
+          {
+            "id": "step_2_coleta_dados",
+            "label": "Coleta de dados do aluno",
+            "description": "Assistente IA coleta nome, data de nascimento, nível de inglês e informações do responsável (se menor). Valida dados e armazena no Data Store.",
+            "blockSlugs": [
+              "ai-engine",
+              "data-store"
+            ],
+            "humanReview": false
+          },
+          {
+            "id": "step_3_agendamento_turma",
+            "label": "Agendamento de turma e aula experimental",
+            "description": "IA apresenta turmas disponíveis consultando calendário da escola. Candidato escolhe horário e turma; sistema reserva vaga ou agenda aula experimental para conferência humana.",
+            "blockSlugs": [
+              "calendar",
+              "data-store",
+              "ai-engine"
+            ],
+            "humanReview": true
+          },
+          {
+            "id": "step_4_documento_assinatura",
+            "label": "Geração de documento e assinatura",
+            "description": "Sistema gera contrato de matrícula a partir de template, com dados do aluno e turma. Candidato assina eletronicamente via WhatsApp. Gestor recebe notificação para confirmação final.",
+            "blockSlugs": [
+              "document-template",
+              "e-signature",
+              "webhooks-engine"
+            ],
+            "humanReview": true
+          }
+        ],
+        "limitations": [
+          "Público-alvo (pais, responsáveis, alunos adultos) e modelo de negócio (presencial, online, híbrido) não foram explicitados; conceito assume flexibilidade para validação com escola.",
+          "Capacidade de agendamento depende de integração com sistema de calendário escolar existente; sem integração, reservas podem ser gerenciadas manualmente via data-store.",
+          "Coleta de documentos (identidade, comprovante de residência) é opcional; se exigida, requer IA de extração e fluxo adicional de validação humana.",
+          "Processo de pagamento de matrícula não foi incluído; se necessário, adicionar bloco Payments ou Billing em etapa posterior.",
+          "Idioma de interação é português; suporte a outros idiomas exigiria configuração adicional de IA Engine.",
+          "Conceito assume que escola possui equipe ou automação para confirmar vagas e finalizar matrículas; sem isso, todas as etapas exigem revisão humana."
+        ],
+        "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+      }
+    },
+    "reload": true,
+    "contactContinuation": true,
+    "sessionSetupCount": 1,
+    "requests": [
+      {
+        "path": "/api/site/session",
+        "status": 401,
+        "method": "GET",
+        "elapsedMs": 548
+      },
+      {
+        "path": "/api/site/sessions",
+        "status": 201,
+        "method": "POST",
+        "elapsedMs": 379
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 455
+      },
+      {
+        "path": "/api/site/lab/briefing",
+        "status": 200,
+        "method": "POST",
+        "elapsedMs": 888
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 391
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 408
+      },
+      {
+        "path": "/api/site/identity",
+        "status": 201,
+        "method": "POST",
+        "elapsedMs": 663
+      },
+      {
+        "path": "/api/site/contact",
+        "status": 200,
+        "method": "POST",
+        "elapsedMs": 811
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 672
+      },
+      {
+        "path": "/api/site/concepts",
+        "status": 202,
+        "method": "POST",
+        "elapsedMs": 26508
+      },
+      {
+        "path": "/api/site/jobs/job_aea80375-390d-429e-b4b2-80b364e6a896",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 454
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 340
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 490
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 558
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 819
+      },
+      {
+        "path": "/api/site/session",
+        "status": 200,
+        "method": "GET",
+        "elapsedMs": 561
+      }
+    ],
+    "errors": []
+  },
+  "requests": [
+    {
+      "path": "/api/site/session",
+      "status": 401,
+      "method": "GET",
+      "elapsedMs": 548
+    },
+    {
+      "path": "/api/site/sessions",
+      "status": 201,
+      "method": "POST",
+      "elapsedMs": 379
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 455
+    },
+    {
+      "path": "/api/site/lab/briefing",
+      "status": 200,
+      "method": "POST",
+      "elapsedMs": 888
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 391
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 408
+    },
+    {
+      "path": "/api/site/identity",
+      "status": 201,
+      "method": "POST",
+      "elapsedMs": 663
+    },
+    {
+      "path": "/api/site/contact",
+      "status": 200,
+      "method": "POST",
+      "elapsedMs": 811
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 672
+    },
+    {
+      "path": "/api/site/concepts",
+      "status": 202,
+      "method": "POST",
+      "elapsedMs": 26508
+    },
+    {
+      "path": "/api/site/jobs/job_aea80375-390d-429e-b4b2-80b364e6a896",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 454
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 340
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 490
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 558
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 819
+    },
+    {
+      "path": "/api/site/session",
+      "status": 200,
+      "method": "GET",
+      "elapsedMs": 561
+    }
+  ],
+  "failedRequests": [],
+  "errors": [],
+  "totalElapsedMs": 40233
+}

@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-10-27T22:21:56.673Z",
+  "passed": true,
+  "scope": "Actual TypeScript runtime transpiled in an isolated VM with the Vite import.meta.glob boundary supplied by test dictionaries. No DOM mutation, browser, network, build, source-component change or deployment.",
+  "checks": [
+    "PT source preserves text and whitespace",
+    "Lazy dictionary loaded once; padding and interpolation preserved",
+    "Display data localized without mutation; logic keys, slugs, names and contracts stay exact",
+    "Missing display message reported to QA; technical values are not false misses",
+    "Disabled and missing dictionaries reject instead of activating a fake localized route",
+    "Late dictionary response cannot override a newer language selection",
+    "Build metadata translates explicitly without changing the active browser locale"
+  ]
+}

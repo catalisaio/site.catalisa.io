@@ -1,0 +1,51 @@
+{
+  "generatedAt": "2026-10-26T18:37:02.378Z",
+  "scope": "Illustrative units are locale-specific; factual Brazilian figures stay BRL. No exchange conversion.",
+  "messages": [
+    {
+      "source": "A reserva estruturada de {reserved} reduz o saldo disponível para movimentação para {available}.",
+      "occurrences": [
+        {
+          "file": "src/redesign/Banking.tsx / Editorial.tsx",
+          "kind": "currency-context"
+        }
+      ]
+    },
+    {
+      "source": "Saldo disponível",
+      "occurrences": [
+        {
+          "file": "src/redesign/Banking.tsx / Editorial.tsx",
+          "kind": "currency-context"
+        }
+      ]
+    },
+    {
+      "source": "Exemplo ilustrativo em {currency}. Valores fictícios, sem conversão cambial.",
+      "occurrences": [
+        {
+          "file": "src/redesign/Banking.tsx / Editorial.tsx",
+          "kind": "currency-context"
+        }
+      ]
+    },
+    {
+      "source": "Orçamento tecnológico projetado para os bancos no Brasil em 2026. Valor em reais brasileiros (BRL).",
+      "occurrences": [
+        {
+          "file": "src/redesign/Banking.tsx / Editorial.tsx",
+          "kind": "currency-context"
+        }
+      ]
+    },
+    {
+      "source": "Crédito originado no Brasil com análise de dados compartilhados, de 2021 a junho de 2025, segundo o Banco Central. Valor acumulado em reais brasileiros (BRL); não é projeção.",
+      "occurrences": [
+        {
+          "file": "src/redesign/Banking.tsx / Editorial.tsx",
+          "kind": "currency-context"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-25T05:48:18.719Z",
+  "passed": true,
+  "origin": "https://panel-api.wpp.bb.catalisa.app",
+  "ownerConfirmed": true,
+  "productionDeploy": false,
+  "panelCodeChanged": false,
+  "buildingBlockCodeChanged": false,
+  "externalMessages": false,
+  "marketCollectionActive": false,
+  "collections": [
+    {
+      "name": "site_catalisa_sessions_v1",
+      "created": true,
+      "pii": true,
+      "encryptedFields": [
+        "state",
+        "receipts"
+      ],
+      "duplicateStatus": 409,
+      "concurrentCas": [
+        200,
+        409
+      ],
+      "decryptedReadback": true
+    },
+    {
+      "name": "site_catalisa_inbox_v1",
+      "created": true,
+      "pii": true,
+      "encryptedFields": [
+        "packet",
+        "staffSession"
+      ],
+      "duplicateStatus": 409,
+      "concurrentCas": [
+        200,
+        409
+      ],
+      "decryptedReadback": true
+    },
+    {
+      "name": "site_catalisa_metrics_v1",
+      "created": true,
+      "pii": true,
+      "encryptedFields": [
+        "payload"
+      ],
+      "duplicateStatus": 409,
+      "concurrentCas": [
+        200,
+        409
+      ],
+      "decryptedReadback": true
+    }
+  ],
+  "agent": {
+    "slug": "site-catalisa-conceitos",
+    "created": true,
+    "active": true,
+    "toolCount": 0,
+    "provider": "anthropic",
+    "model": "fast"
+  },
+  "privateRuntimePrepared": true,
+  "dedicatedServiceToken": true,
+  "syntheticDataRemoved": true
+}

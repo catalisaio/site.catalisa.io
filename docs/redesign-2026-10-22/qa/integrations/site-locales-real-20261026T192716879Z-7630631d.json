@@ -1,0 +1,390 @@
+{
+  "createdAt": "2026-10-26T19:27:16.879Z",
+  "updatedAt": "2026-10-26T19:27:54.825Z",
+  "releaseId": "20261026-multilingual",
+  "origin": "https://site-staging.catalisa.io",
+  "locales": [
+    "fr-FR"
+  ],
+  "total": 1,
+  "scope": "Real trusted HTTPS staging BFF/owner AI; 1 serial synthetic Lab-to-Contact session(s), one initial generation per language, exact-literal/schema/reference checks, idempotent replay and deterministic human review. No browser, handoff, CRM operation, email/WhatsApp delivery or optional market collection.",
+  "passed": true,
+  "completed": 1,
+  "results": [
+    {
+      "locale": "fr-FR",
+      "phase": "complete",
+      "passed": true,
+      "idea": "Je souhaite inscrire des élèves à une école de langues via WhatsApp : présenter les cours, choisir un groupe et confirmer l’inscription. Il s’agit d’un test fictif, sans envoyer de messages ni réaliser d’opérations réelles.",
+      "email": "locale-fr-fr-7630631d@example.invalid",
+      "phone": "+12025550101",
+      "requests": [
+        {
+          "route": "sessions",
+          "method": "POST",
+          "status": 201,
+          "elapsedMs": 3424,
+          "requestId": "b09edecb-ce99-4581-ada1-9deb9d999571"
+        },
+        {
+          "route": "lab/briefing",
+          "method": "POST",
+          "status": 200,
+          "elapsedMs": 1443,
+          "requestId": "0e38e1f7-2cb8-491d-b069-2a550081c0b0"
+        },
+        {
+          "route": "identity",
+          "method": "POST",
+          "status": 201,
+          "elapsedMs": 1385,
+          "requestId": "46d0d25f-b8b0-4759-ad90-1e8aadc7f83a"
+        },
+        {
+          "route": "contact",
+          "method": "POST",
+          "status": 200,
+          "elapsedMs": 1084,
+          "requestId": "41dfa48c-1d9d-4f7e-8122-2b59f20be098"
+        },
+        {
+          "route": "concepts",
+          "method": "POST",
+          "status": 202,
+          "elapsedMs": 19504,
+          "requestId": "98acbae5-8157-40d1-8db6-98538f1207ec"
+        },
+        {
+          "route": "jobs/job_fbde4b45-41a2-4bab-95bb-10ae22e4b5cd",
+          "method": "GET",
+          "status": 200,
+          "elapsedMs": 3131,
+          "requestId": "a8369c3d-e489-409d-884c-378e9d34c492"
+        },
+        {
+          "route": "session",
+          "method": "GET",
+          "status": 200,
+          "elapsedMs": 555,
+          "requestId": "f858c791-1633-4540-9247-ee056755ae2e"
+        },
+        {
+          "route": "concepts",
+          "method": "POST",
+          "status": 202,
+          "elapsedMs": 463,
+          "requestId": "40a41892-19e1-46ef-8609-1f1f28a84dda"
+        },
+        {
+          "route": "concepts/concept_c280bcf9-f061-4a8b-9672-af08cafdd089/revisions",
+          "method": "POST",
+          "status": 202,
+          "elapsedMs": 1142,
+          "requestId": "66ff9745-ffa3-450b-8327-2c17ff1e8a23"
+        },
+        {
+          "route": "jobs/job_46e9301f-e569-4fdc-95d6-b3ed6a153014",
+          "method": "GET",
+          "status": 200,
+          "elapsedMs": 685,
+          "requestId": "455609e7-3023-465c-b027-a22c57ceee8a"
+        },
+        {
+          "route": "concepts/concept_c280bcf9-f061-4a8b-9672-af08cafdd089/revisions",
+          "method": "POST",
+          "status": 202,
+          "elapsedMs": 840,
+          "requestId": "b0ef997d-79e0-4236-bb5a-310a99a2f6f4"
+        },
+        {
+          "route": "session",
+          "method": "GET",
+          "status": 200,
+          "elapsedMs": 445,
+          "requestId": "c72e7c80-e9a7-4c94-8383-643b9fe8b63a"
+        }
+      ],
+      "generationMs": 19505,
+      "initialConcept": {
+        "conceptRef": "concept_c280bcf9-f061-4a8b-9672-af08cafdd089",
+        "version": 1,
+        "briefVersion": 1,
+        "locale": "fr-FR",
+        "content": {
+          "schemaVersion": "1.0",
+          "title": "Inscription à l'école de langues",
+          "summary": "Inscription des élèves à une école de langues via WhatsApp, incluant la présentation des cours et le choix du groupe.",
+          "hypothesis": "Le public cible et le contexte de l'inscription nécessitent confirmation lors de l'interaction avec les utilisateurs.",
+          "roles": [
+            "Élève",
+            "Administrateur",
+            "Système"
+          ],
+          "screens": [
+            {
+              "id": "presentation-cours",
+              "title": "Présentation des Cours",
+              "description": "Affiche les différents cours disponibles à l'école de langues.",
+              "items": [
+                {
+                  "label": "Cours de Français",
+                  "value": "Apprenez le français avec des experts."
+                },
+                {
+                  "label": "Cours d'Anglais",
+                  "value": "Améliorez vos compétences en anglais."
+                },
+                {
+                  "label": "Cours d'Espagnol",
+                  "value": "Découvrez l'espagnol à travers des pratiques immersives."
+                }
+              ],
+              "action": {
+                "label": "Choisir un Groupe",
+                "nextScreenId": "choix-groupe"
+              }
+            },
+            {
+              "id": "choix-groupe",
+              "title": "Choix du Groupe",
+              "description": "Sélectionnez le groupe qui vous convient le mieux.",
+              "items": [
+                {
+                  "label": "Groupe Débutant",
+                  "value": "Pour les nouveaux apprenants."
+                },
+                {
+                  "label": "Groupe Intermédiaire",
+                  "value": "Pour ceux qui ont déjà des bases."
+                },
+                {
+                  "label": "Groupe Avancé",
+                  "value": "Pour les apprenants avancés."
+                }
+              ],
+              "action": {
+                "label": "Confirmer l'Inscription",
+                "nextScreenId": "confirmation-inscription"
+              }
+            },
+            {
+              "id": "confirmation-inscription",
+              "title": "Confirmation d'Inscription",
+              "description": "Vérifiez les détails de votre inscription avant la finalisation.",
+              "items": [
+                {
+                  "label": "Nom",
+                  "value": "Jean Dupont"
+                },
+                {
+                  "label": "Cours Sélectionné",
+                  "value": "Cours de Français"
+                },
+                {
+                  "label": "Groupe Sélectionné",
+                  "value": "Groupe Débutant"
+                }
+              ],
+              "action": {
+                "label": "Finaliser Inscription",
+                "nextScreenId": null
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "slug": "wpp",
+              "role": "Canal principal de ventes"
+            },
+            {
+              "slug": "email",
+              "role": "Notificações après conférence humaine"
+            }
+          ],
+          "journey": [
+            {
+              "id": "etape-presentation",
+              "label": "Étape 1: Présentation des Cours",
+              "description": "L'élève consulte les cours disponibles.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "etape_choix",
+              "label": "Étape 2: Choix du Groupe",
+              "description": "L'élève choisit un groupe en fonction de son niveau.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "etape_confirmation",
+              "label": "Étape 3: Confirmation d'Inscription",
+              "description": "L'élève confirme les détails de son inscription.",
+              "blockSlugs": [
+                "email"
+              ],
+              "humanReview": true
+            }
+          ],
+          "limitations": [
+            "Les informations sur les cours peuvent changer.",
+            "Les groupes peuvent être pleins au moment de la sélection.",
+            "La confirmation d'inscription dépend de la vérification humaine.",
+            "Aucune opération réelle ne sera effectuée durant ce test."
+          ],
+          "disclaimer": "Concept exploratoire. Il ne constitue ni une proposition définitive, ni une approbation, ni un produit publié."
+        }
+      },
+      "title": "Inscription à l'école de langues",
+      "summary": "Inscription des élèves à une école de langues via WhatsApp, incluant la présentation des cours et le choix du groupe.",
+      "languageReviewRequired": true,
+      "replayedSameJob": true,
+      "reviewMs": 1145,
+      "reviewedConcept": {
+        "conceptRef": "concept_c280bcf9-f061-4a8b-9672-af08cafdd089",
+        "version": 2,
+        "briefVersion": 1,
+        "locale": "fr-FR",
+        "content": {
+          "schemaVersion": "1.0",
+          "title": "Inscription à l'école de langues",
+          "summary": "Inscription des élèves à une école de langues via WhatsApp, incluant la présentation des cours et le choix du groupe.",
+          "hypothesis": "Le public cible et le contexte de l'inscription nécessitent confirmation lors de l'interaction avec les utilisateurs.",
+          "roles": [
+            "Élève",
+            "Administrateur",
+            "Système"
+          ],
+          "screens": [
+            {
+              "id": "presentation-cours",
+              "title": "Présentation des Cours",
+              "description": "Affiche les différents cours disponibles à l'école de langues.",
+              "items": [
+                {
+                  "label": "Cours de Français",
+                  "value": "Apprenez le français avec des experts."
+                },
+                {
+                  "label": "Cours d'Anglais",
+                  "value": "Améliorez vos compétences en anglais."
+                },
+                {
+                  "label": "Cours d'Espagnol",
+                  "value": "Découvrez l'espagnol à travers des pratiques immersives."
+                }
+              ],
+              "action": {
+                "label": "Choisir un Groupe",
+                "nextScreenId": "choix-groupe"
+              }
+            },
+            {
+              "id": "choix-groupe",
+              "title": "Choix du Groupe",
+              "description": "Sélectionnez le groupe qui vous convient le mieux.",
+              "items": [
+                {
+                  "label": "Groupe Débutant",
+                  "value": "Pour les nouveaux apprenants."
+                },
+                {
+                  "label": "Groupe Intermédiaire",
+                  "value": "Pour ceux qui ont déjà des bases."
+                },
+                {
+                  "label": "Groupe Avancé",
+                  "value": "Pour les apprenants avancés."
+                }
+              ],
+              "action": {
+                "label": "Confirmer l'Inscription",
+                "nextScreenId": "confirmation-inscription"
+              }
+            },
+            {
+              "id": "confirmation-inscription",
+              "title": "Confirmation d'Inscription",
+              "description": "Vérifiez les détails de votre inscription avant la finalisation.",
+              "items": [
+                {
+                  "label": "Nom",
+                  "value": "Jean Dupont"
+                },
+                {
+                  "label": "Cours Sélectionné",
+                  "value": "Cours de Français"
+                },
+                {
+                  "label": "Groupe Sélectionné",
+                  "value": "Groupe Débutant"
+                }
+              ],
+              "action": {
+                "label": "Finaliser Inscription",
+                "nextScreenId": null
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "slug": "wpp",
+              "role": "Canal principal de ventes"
+            },
+            {
+              "slug": "email",
+              "role": "Notificações après conférence humaine"
+            }
+          ],
+          "journey": [
+            {
+              "id": "etape-presentation",
+              "label": "Étape 1: Présentation des Cours",
+              "description": "L'élève consulte les cours disponibles.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "etape_choix",
+              "label": "Étape 2: Choix du Groupe",
+              "description": "L'élève choisit un groupe en fonction de son niveau.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "etape_confirmation",
+              "label": "Étape 3: Confirmation d'Inscription",
+              "description": "L'élève confirme les détails de son inscription.",
+              "blockSlugs": [
+                "email"
+              ],
+              "humanReview": true
+            }
+          ],
+          "limitations": [
+            "Les informations sur les cours peuvent changer.",
+            "Les groupes peuvent être pleins au moment de la sélection.",
+            "La confirmation d'inscription dépend de la vérification humaine.",
+            "Aucune opération réelle ne sera effectuée durant ce test."
+          ],
+          "disclaimer": "Concept exploratoire. Il ne constitue ni une proposition définitive, ni une approbation, ni un produit publié."
+        }
+      },
+      "reviewReplayedSameJob": true,
+      "deterministicReviewWithoutInference": true,
+      "syntheticSessionRemoved": true
+    }
+  ],
+  "limits": [
+    "Generated titles/summaries/full concepts are saved for readable linguistic QA; literal/locale/schema validation does not certify every sentence’s grammar.",
+    "Zero extra AI for human review is evidenced by the immediate succeeded receipt, deterministic stored-job marker and exact local transformation; provider usage logs are not queried."
+  ]
+}

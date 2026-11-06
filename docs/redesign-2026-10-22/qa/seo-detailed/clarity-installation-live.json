@@ -1,0 +1,29 @@
+{
+  "checkedAt": "2026-10-27T00:30:04.478Z",
+  "passed": true,
+  "scope": "Actual public SDK and Clarity collector for one fresh synthetic opted-in /produtos visit per user-owned project, QA label and utm_source=qa_setup; Google collection intercepted204. No personal browser state, conversations, forms, leads or human messages. Collector receipt proves transport, not dashboard/heatmap processing.",
+  "checks": [
+    {
+      "origin": "https://catalisa.io",
+      "project": "z4073yqv5z",
+      "publicPage": "/produtos",
+      "consent": "granted in fresh synthetic QA context",
+      "tagVerified": true,
+      "collectorStatus": 204,
+      "collectorHost": "l.clarity.ms",
+      "qaLabel": "installation-check",
+      "noConversationOrLead": true
+    },
+    {
+      "origin": "https://site-staging.catalisa.io",
+      "project": "z40bi9hrk8",
+      "publicPage": "/produtos",
+      "consent": "granted in fresh synthetic QA context",
+      "tagVerified": true,
+      "collectorStatus": 204,
+      "collectorHost": "b.clarity.ms",
+      "qaLabel": "installation-check",
+      "noConversationOrLead": true
+    }
+  ]
+}

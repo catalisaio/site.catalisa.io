@@ -1,0 +1,69 @@
+{
+  "entry": "http://127.0.0.1:5186/comparar-a-casa-01.html",
+  "comparison": {
+    "entry": "http://127.0.0.1:5186/comparar-a-casa-01.html",
+    "resolvedUrl": "http://127.0.0.1:5186/docs/direcao-editorial-2026-10-24/videos/comparativo-modelos.html#comparacao",
+    "actualVariants": 2,
+    "missingVariants": 2,
+    "currentSeason": "31 episódios conferidos · 2 masters · 16:9 e 9:16 · sem nova geração paga",
+    "currentLinks": [
+      "http://127.0.0.1:5186/docs/direcao-editorial-2026-10-24/videos/temporada-executiva.html?episodio=a-casa-02-montar-capacidades",
+      "http://127.0.0.1:5186/docs/direcao-editorial-2026-10-24/videos/temporada-executiva.html?episodio=a-casa-03-duas-plataformas",
+      "http://127.0.0.1:5186/docs/direcao-editorial-2026-10-24/videos/temporada-executiva.html?episodio=a-casa-04-studio-fluxo",
+      "http://127.0.0.1:5186/docs/direcao-editorial-2026-10-24/videos/temporada-executiva.html?episodio=a-casa-00-filme-master"
+    ],
+    "formats": [
+      [
+        {
+          "width": 1920,
+          "height": 1080,
+          "duration": 30.1,
+          "hidden": false
+        },
+        {
+          "width": 1920,
+          "height": 1080,
+          "duration": 30.1,
+          "hidden": false
+        }
+      ],
+      [
+        {
+          "width": 1080,
+          "height": 1920,
+          "duration": 30.1,
+          "hidden": false
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "duration": 30.1,
+          "hidden": false
+        }
+      ]
+    ],
+    "playback": [
+      {
+        "paused": true,
+        "time": 0.380127
+      },
+      {
+        "paused": true,
+        "time": 0.380122
+      }
+    ],
+    "viewports": [
+      1440,
+      390
+    ],
+    "errors": []
+  },
+  "renderedOutputsVerified": 66,
+  "requiredJobs": [
+    "a-casa-02-montar-capacidades",
+    "a-casa-03-duas-plataformas",
+    "a-casa-04-studio-fluxo",
+    "a-casa-00-filme-master"
+  ],
+  "newGenerationCredits": 0
+}

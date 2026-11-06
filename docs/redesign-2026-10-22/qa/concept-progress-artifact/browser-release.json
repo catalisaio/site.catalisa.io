@@ -1,0 +1,255 @@
+{
+  "generatedAt": "2026-10-26T14:09:08.340Z",
+  "passed": true,
+  "mode": {
+    "redesign": true,
+    "indexing": true
+  },
+  "scope": "Local release artifact and hosting emulation; no CDN deployment or real auth/integration exercised",
+  "checks": [
+    {
+      "path": "/",
+      "title": "Catalisa | Plataforma de capacidades para criar produtos",
+      "lang": "pt-BR",
+      "robots": "index, follow, max-image-preview:large",
+      "native": true,
+      "emotion": 0
+    },
+    {
+      "path": "/capacidades",
+      "title": "Building blocks: biblioteca de capacidades | Catalisa",
+      "lang": "pt-BR",
+      "robots": "index, follow, max-image-preview:large",
+      "native": true,
+      "emotion": 0
+    },
+    {
+      "path": "/capacidades/ai-engine",
+      "title": "AI Engine: inteligência | Catalisa",
+      "lang": "pt-BR",
+      "robots": "index, follow, max-image-preview:large",
+      "native": true,
+      "emotion": 0
+    },
+    {
+      "anonymousPublicSnapshot": "/contato",
+      "path": "/contato",
+      "h1": "Vamos dar formaà próximaconversa.",
+      "busy": false,
+      "controlReady": true,
+      "errors": []
+    },
+    {
+      "path": "/contato",
+      "title": "Contato: construa sua próxima conexão | Catalisa",
+      "lang": "pt-BR",
+      "robots": "index, follow, max-image-preview:large",
+      "native": true,
+      "emotion": 0
+    },
+    {
+      "anonymousPublicSnapshot": "/lab",
+      "path": "/lab",
+      "h1": "O que vocêquer construir?",
+      "busy": false,
+      "controlReady": true,
+      "errors": []
+    },
+    {
+      "path": "/lab",
+      "title": "Lab: explore composições com IA | Catalisa",
+      "lang": "pt-BR",
+      "robots": "index, follow, max-image-preview:large",
+      "native": true,
+      "emotion": 0
+    },
+    {
+      "path": "/ecossistema/banking",
+      "title": "Banking Platform: crie seu produto financeiro | Catalisa",
+      "lang": "pt-BR",
+      "robots": "index, follow, max-image-preview:large",
+      "native": true,
+      "emotion": 0
+    },
+    {
+      "path": "/ecossistema/credit",
+      "title": "Credit Platform: desenhe seu produto de crédito | Catalisa",
+      "lang": "pt-BR",
+      "robots": "index, follow, max-image-preview:large",
+      "native": true,
+      "emotion": 0
+    },
+    {
+      "path": "/arquitetura",
+      "title": "Arquitetura: crie produtos e modernize o legado | Catalisa",
+      "lang": "pt-BR",
+      "robots": "index, follow, max-image-preview:large",
+      "native": true,
+      "emotion": 0
+    },
+    {
+      "path": "/perspectivas",
+      "title": "Perspectivas | Catalisa",
+      "lang": "pt-BR",
+      "robots": "index, follow, max-image-preview:large",
+      "native": true,
+      "emotion": 0
+    },
+    {
+      "path": "/press-kit",
+      "title": "Press-kit: marca, assinaturas e recursos oficiais | Catalisa",
+      "lang": "pt-BR",
+      "robots": "index, follow, max-image-preview:large",
+      "native": true,
+      "emotion": 0
+    },
+    {
+      "path": "/en",
+      "title": "Catalisa | AI-Powered WhatsApp Automation Platform",
+      "lang": "en-US",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "native": false,
+      "emotion": 8
+    },
+    {
+      "path": "/en/studio",
+      "title": "Catalisa Studio | Build AI Agents & Automations",
+      "lang": "en-US",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "native": false,
+      "emotion": 8
+    },
+    {
+      "path": "/insights",
+      "title": "Catalisa Insights | Cases de IA e WhatsApp Business",
+      "lang": "pt-BR",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "native": false,
+      "emotion": 8
+    },
+    {
+      "path": "/politica-privacidade",
+      "title": "Catalisa | Política de Privacidade",
+      "lang": "pt-BR",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "native": false,
+      "emotion": 8
+    },
+    {
+      "redirect": "/use-cases",
+      "destination": "/casos-de-uso",
+      "preservedQuery": true
+    },
+    {
+      "redirect": "/playbooks",
+      "destination": "/casos-de-uso",
+      "preservedQuery": true
+    },
+    {
+      "redirect": "/en/playbooks",
+      "destination": "/en/use-cases",
+      "preservedQuery": true
+    },
+    {
+      "redirect": "/insights/magazine",
+      "destination": "/insights",
+      "preservedQuery": true
+    },
+    {
+      "redirect": "/en/insights/magazine",
+      "destination": "/en/insights",
+      "preservedQuery": true
+    },
+    {
+      "redirect": "/design-system/home",
+      "destination": "/",
+      "preservedQuery": true
+    },
+    {
+      "redirect": "/ai-agents",
+      "destination": "/agentes",
+      "preservedQuery": true
+    },
+    {
+      "redirect": "/apps",
+      "destination": "/ecossistema",
+      "preservedQuery": true
+    },
+    {
+      "redirect": "/building-blocks",
+      "destination": "/capacidades",
+      "preservedQuery": true
+    },
+    {
+      "redirect": "/bancario",
+      "destination": "/ecossistema/banking",
+      "preservedQuery": true
+    },
+    {
+      "navigation": "native → compatibility → native",
+      "fullDocumentNavigation": true,
+      "legacyThemeUnloaded": true
+    },
+    {
+      "navigation": "English language switch → native Studio",
+      "fullDocumentNavigation": true
+    },
+    {
+      "authenticatedLogin": "/treinamento/login",
+      "status": 200,
+      "noIndex": true
+    },
+    {
+      "authenticatedLogin": "/apresentacao/login",
+      "status": 200,
+      "noIndex": true
+    },
+    {
+      "authenticatedLogin": "/en/training/login",
+      "status": 200,
+      "noIndex": true
+    },
+    {
+      "authenticatedLogin": "/en/presentation/login",
+      "status": 200,
+      "noIndex": true
+    },
+    {
+      "withoutJavaScript": "/",
+      "status": 200
+    },
+    {
+      "withoutJavaScript": "/capacidades",
+      "status": 200
+    },
+    {
+      "withoutJavaScript": "/contato",
+      "status": 200
+    },
+    {
+      "withoutJavaScript": "/lab",
+      "status": 200
+    },
+    {
+      "withoutJavaScript": "/ecossistema/banking",
+      "status": 200
+    },
+    {
+      "withoutJavaScript": "/ecossistema/credit",
+      "status": 200
+    },
+    {
+      "withoutJavaScript": "/arquitetura",
+      "status": 200
+    },
+    {
+      "withoutJavaScript": "/en",
+      "status": 200
+    },
+    {
+      "withoutJavaScript": "/insights",
+      "status": 200
+    }
+  ],
+  "errors": []
+}

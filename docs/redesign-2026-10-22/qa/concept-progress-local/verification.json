@@ -1,0 +1,1453 @@
+{
+  "date": "2026-10-26T14:04:10.387Z",
+  "passed": true,
+  "origin": "http://127.0.0.1:5175",
+  "scope": "Local browser rendering/state verification with controlled API routes and existing contract JSON fixture. No real inference, server persistence, provider call, handoff, external message or production deployment.",
+  "fixture": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/contracts/concept.example.json",
+  "widths": [
+    320,
+    390,
+    768,
+    1440
+  ],
+  "stage": "normal motion",
+  "checks": [
+    {
+      "width": 320,
+      "flow": "contact",
+      "initialPostPending": true,
+      "elapsedControlledClockAdvanced31s": true,
+      "noInventedPercentage": true,
+      "openingHeldBySessionRead": true,
+      "success": true,
+      "refinementPreservesOldPreviewUntilCommit": true,
+      "reducedMotion": true
+    },
+    {
+      "width": 320,
+      "flow": "lab",
+      "demoReplacedWhilePending": true,
+      "previousReplacedWhilePending": true,
+      "openingHeldBySessionRead": true,
+      "success": true,
+      "errorPreservesPreviousConcept": true,
+      "reducedMotion": true
+    },
+    {
+      "width": 390,
+      "flow": "contact",
+      "initialPostPending": true,
+      "elapsedControlledClockAdvanced31s": true,
+      "noInventedPercentage": true,
+      "openingHeldBySessionRead": true,
+      "success": true,
+      "refinementPreservesOldPreviewUntilCommit": true,
+      "reducedMotion": true
+    },
+    {
+      "width": 390,
+      "flow": "lab",
+      "demoReplacedWhilePending": true,
+      "previousReplacedWhilePending": true,
+      "openingHeldBySessionRead": true,
+      "success": true,
+      "errorPreservesPreviousConcept": true,
+      "reducedMotion": true
+    },
+    {
+      "width": 768,
+      "flow": "contact",
+      "initialPostPending": true,
+      "elapsedControlledClockAdvanced31s": true,
+      "noInventedPercentage": true,
+      "openingHeldBySessionRead": true,
+      "success": true,
+      "refinementPreservesOldPreviewUntilCommit": true,
+      "reducedMotion": true
+    },
+    {
+      "width": 768,
+      "flow": "lab",
+      "demoReplacedWhilePending": true,
+      "previousReplacedWhilePending": true,
+      "openingHeldBySessionRead": true,
+      "success": true,
+      "errorPreservesPreviousConcept": true,
+      "reducedMotion": true
+    },
+    {
+      "width": 1440,
+      "flow": "contact",
+      "initialPostPending": true,
+      "elapsedControlledClockAdvanced31s": true,
+      "noInventedPercentage": true,
+      "openingHeldBySessionRead": true,
+      "success": true,
+      "refinementPreservesOldPreviewUntilCommit": true,
+      "reducedMotion": true
+    },
+    {
+      "width": 1440,
+      "flow": "lab",
+      "demoReplacedWhilePending": true,
+      "previousReplacedWhilePending": true,
+      "openingHeldBySessionRead": true,
+      "success": true,
+      "errorPreservesPreviousConcept": true,
+      "reducedMotion": true
+    },
+    {
+      "flow": "normal-motion",
+      "indeterminateAnimationPresent": true,
+      "manualPausePreservesVisibleCard": true,
+      "manualPauseStopsTrack": true,
+      "noPercentage": true
+    }
+  ],
+  "captures": [
+    {
+      "name": "contact-initial-post-pending",
+      "width": 320,
+      "file": "320-contact-initial-post-pending.png",
+      "overflow": {
+        "viewport": 320,
+        "document": 320,
+        "body": 320
+      }
+    },
+    {
+      "name": "contact-initial-elapsed",
+      "width": 320,
+      "file": "320-contact-initial-elapsed.png",
+      "overflow": {
+        "viewport": 320,
+        "document": 320,
+        "body": 320
+      }
+    },
+    {
+      "name": "contact-initial-opening",
+      "width": 320,
+      "file": "320-contact-initial-opening.png",
+      "overflow": {
+        "viewport": 320,
+        "document": 320,
+        "body": 320
+      }
+    },
+    {
+      "name": "contact-initial-success",
+      "width": 320,
+      "file": "320-contact-initial-success.png",
+      "overflow": {
+        "viewport": 320,
+        "document": 320,
+        "body": 320
+      }
+    },
+    {
+      "name": "contact-refinement-post-pending",
+      "width": 320,
+      "file": "320-contact-refinement-post-pending.png",
+      "overflow": {
+        "viewport": 320,
+        "document": 320,
+        "body": 320
+      }
+    },
+    {
+      "name": "contact-refinement-opening",
+      "width": 320,
+      "file": "320-contact-refinement-opening.png",
+      "overflow": {
+        "viewport": 320,
+        "document": 320,
+        "body": 320
+      }
+    },
+    {
+      "name": "contact-refinement-success",
+      "width": 320,
+      "file": "320-contact-refinement-success.png",
+      "overflow": {
+        "viewport": 320,
+        "document": 320,
+        "body": 320
+      }
+    },
+    {
+      "name": "lab-from-demo-post-pending",
+      "width": 320,
+      "file": "320-lab-from-demo-post-pending.png",
+      "overflow": {
+        "viewport": 320,
+        "document": 320,
+        "body": 320
+      }
+    },
+    {
+      "name": "lab-from-demo-opening",
+      "width": 320,
+      "file": "320-lab-from-demo-opening.png",
+      "overflow": {
+        "viewport": 320,
+        "document": 320,
+        "body": 320
+      }
+    },
+    {
+      "name": "lab-first-success",
+      "width": 320,
+      "file": "320-lab-first-success.png",
+      "overflow": {
+        "viewport": 320,
+        "document": 320,
+        "body": 320
+      }
+    },
+    {
+      "name": "lab-previous-failure-post-pending",
+      "width": 320,
+      "file": "320-lab-previous-failure-post-pending.png",
+      "overflow": {
+        "viewport": 320,
+        "document": 320,
+        "body": 320
+      }
+    },
+    {
+      "name": "lab-error-preserves-previous",
+      "width": 320,
+      "file": "320-lab-error-preserves-previous.png",
+      "overflow": {
+        "viewport": 320,
+        "document": 320,
+        "body": 320
+      }
+    },
+    {
+      "name": "lab-previous-success-post-pending",
+      "width": 320,
+      "file": "320-lab-previous-success-post-pending.png",
+      "overflow": {
+        "viewport": 320,
+        "document": 320,
+        "body": 320
+      }
+    },
+    {
+      "name": "lab-previous-success-opening",
+      "width": 320,
+      "file": "320-lab-previous-success-opening.png",
+      "overflow": {
+        "viewport": 320,
+        "document": 320,
+        "body": 320
+      }
+    },
+    {
+      "name": "lab-next-success",
+      "width": 320,
+      "file": "320-lab-next-success.png",
+      "overflow": {
+        "viewport": 320,
+        "document": 320,
+        "body": 320
+      }
+    },
+    {
+      "name": "contact-initial-post-pending",
+      "width": 390,
+      "file": "390-contact-initial-post-pending.png",
+      "overflow": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390
+      }
+    },
+    {
+      "name": "contact-initial-elapsed",
+      "width": 390,
+      "file": "390-contact-initial-elapsed.png",
+      "overflow": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390
+      }
+    },
+    {
+      "name": "contact-initial-opening",
+      "width": 390,
+      "file": "390-contact-initial-opening.png",
+      "overflow": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390
+      }
+    },
+    {
+      "name": "contact-initial-success",
+      "width": 390,
+      "file": "390-contact-initial-success.png",
+      "overflow": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390
+      }
+    },
+    {
+      "name": "contact-refinement-post-pending",
+      "width": 390,
+      "file": "390-contact-refinement-post-pending.png",
+      "overflow": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390
+      }
+    },
+    {
+      "name": "contact-refinement-opening",
+      "width": 390,
+      "file": "390-contact-refinement-opening.png",
+      "overflow": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390
+      }
+    },
+    {
+      "name": "contact-refinement-success",
+      "width": 390,
+      "file": "390-contact-refinement-success.png",
+      "overflow": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390
+      }
+    },
+    {
+      "name": "lab-from-demo-post-pending",
+      "width": 390,
+      "file": "390-lab-from-demo-post-pending.png",
+      "overflow": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390
+      }
+    },
+    {
+      "name": "lab-from-demo-opening",
+      "width": 390,
+      "file": "390-lab-from-demo-opening.png",
+      "overflow": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390
+      }
+    },
+    {
+      "name": "lab-first-success",
+      "width": 390,
+      "file": "390-lab-first-success.png",
+      "overflow": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390
+      }
+    },
+    {
+      "name": "lab-previous-failure-post-pending",
+      "width": 390,
+      "file": "390-lab-previous-failure-post-pending.png",
+      "overflow": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390
+      }
+    },
+    {
+      "name": "lab-error-preserves-previous",
+      "width": 390,
+      "file": "390-lab-error-preserves-previous.png",
+      "overflow": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390
+      }
+    },
+    {
+      "name": "lab-previous-success-post-pending",
+      "width": 390,
+      "file": "390-lab-previous-success-post-pending.png",
+      "overflow": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390
+      }
+    },
+    {
+      "name": "lab-previous-success-opening",
+      "width": 390,
+      "file": "390-lab-previous-success-opening.png",
+      "overflow": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390
+      }
+    },
+    {
+      "name": "lab-next-success",
+      "width": 390,
+      "file": "390-lab-next-success.png",
+      "overflow": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390
+      }
+    },
+    {
+      "name": "contact-initial-post-pending",
+      "width": 768,
+      "file": "768-contact-initial-post-pending.png",
+      "overflow": {
+        "viewport": 768,
+        "document": 768,
+        "body": 768
+      }
+    },
+    {
+      "name": "contact-initial-elapsed",
+      "width": 768,
+      "file": "768-contact-initial-elapsed.png",
+      "overflow": {
+        "viewport": 768,
+        "document": 768,
+        "body": 768
+      }
+    },
+    {
+      "name": "contact-initial-opening",
+      "width": 768,
+      "file": "768-contact-initial-opening.png",
+      "overflow": {
+        "viewport": 768,
+        "document": 768,
+        "body": 768
+      }
+    },
+    {
+      "name": "contact-initial-success",
+      "width": 768,
+      "file": "768-contact-initial-success.png",
+      "overflow": {
+        "viewport": 768,
+        "document": 768,
+        "body": 768
+      }
+    },
+    {
+      "name": "contact-refinement-post-pending",
+      "width": 768,
+      "file": "768-contact-refinement-post-pending.png",
+      "overflow": {
+        "viewport": 768,
+        "document": 768,
+        "body": 768
+      }
+    },
+    {
+      "name": "contact-refinement-opening",
+      "width": 768,
+      "file": "768-contact-refinement-opening.png",
+      "overflow": {
+        "viewport": 768,
+        "document": 768,
+        "body": 768
+      }
+    },
+    {
+      "name": "contact-refinement-success",
+      "width": 768,
+      "file": "768-contact-refinement-success.png",
+      "overflow": {
+        "viewport": 768,
+        "document": 768,
+        "body": 768
+      }
+    },
+    {
+      "name": "lab-from-demo-post-pending",
+      "width": 768,
+      "file": "768-lab-from-demo-post-pending.png",
+      "overflow": {
+        "viewport": 768,
+        "document": 768,
+        "body": 768
+      }
+    },
+    {
+      "name": "lab-from-demo-opening",
+      "width": 768,
+      "file": "768-lab-from-demo-opening.png",
+      "overflow": {
+        "viewport": 768,
+        "document": 768,
+        "body": 768
+      }
+    },
+    {
+      "name": "lab-first-success",
+      "width": 768,
+      "file": "768-lab-first-success.png",
+      "overflow": {
+        "viewport": 768,
+        "document": 768,
+        "body": 768
+      }
+    },
+    {
+      "name": "lab-previous-failure-post-pending",
+      "width": 768,
+      "file": "768-lab-previous-failure-post-pending.png",
+      "overflow": {
+        "viewport": 768,
+        "document": 768,
+        "body": 768
+      }
+    },
+    {
+      "name": "lab-error-preserves-previous",
+      "width": 768,
+      "file": "768-lab-error-preserves-previous.png",
+      "overflow": {
+        "viewport": 768,
+        "document": 768,
+        "body": 768
+      }
+    },
+    {
+      "name": "lab-previous-success-post-pending",
+      "width": 768,
+      "file": "768-lab-previous-success-post-pending.png",
+      "overflow": {
+        "viewport": 768,
+        "document": 768,
+        "body": 768
+      }
+    },
+    {
+      "name": "lab-previous-success-opening",
+      "width": 768,
+      "file": "768-lab-previous-success-opening.png",
+      "overflow": {
+        "viewport": 768,
+        "document": 768,
+        "body": 768
+      }
+    },
+    {
+      "name": "lab-next-success",
+      "width": 768,
+      "file": "768-lab-next-success.png",
+      "overflow": {
+        "viewport": 768,
+        "document": 768,
+        "body": 768
+      }
+    },
+    {
+      "name": "contact-initial-post-pending",
+      "width": 1440,
+      "file": "1440-contact-initial-post-pending.png",
+      "overflow": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440
+      }
+    },
+    {
+      "name": "contact-initial-elapsed",
+      "width": 1440,
+      "file": "1440-contact-initial-elapsed.png",
+      "overflow": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440
+      }
+    },
+    {
+      "name": "contact-initial-opening",
+      "width": 1440,
+      "file": "1440-contact-initial-opening.png",
+      "overflow": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440
+      }
+    },
+    {
+      "name": "contact-initial-success",
+      "width": 1440,
+      "file": "1440-contact-initial-success.png",
+      "overflow": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440
+      }
+    },
+    {
+      "name": "contact-refinement-post-pending",
+      "width": 1440,
+      "file": "1440-contact-refinement-post-pending.png",
+      "overflow": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440
+      }
+    },
+    {
+      "name": "contact-refinement-opening",
+      "width": 1440,
+      "file": "1440-contact-refinement-opening.png",
+      "overflow": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440
+      }
+    },
+    {
+      "name": "contact-refinement-success",
+      "width": 1440,
+      "file": "1440-contact-refinement-success.png",
+      "overflow": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440
+      }
+    },
+    {
+      "name": "lab-from-demo-post-pending",
+      "width": 1440,
+      "file": "1440-lab-from-demo-post-pending.png",
+      "overflow": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440
+      }
+    },
+    {
+      "name": "lab-from-demo-opening",
+      "width": 1440,
+      "file": "1440-lab-from-demo-opening.png",
+      "overflow": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440
+      }
+    },
+    {
+      "name": "lab-first-success",
+      "width": 1440,
+      "file": "1440-lab-first-success.png",
+      "overflow": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440
+      }
+    },
+    {
+      "name": "lab-previous-failure-post-pending",
+      "width": 1440,
+      "file": "1440-lab-previous-failure-post-pending.png",
+      "overflow": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440
+      }
+    },
+    {
+      "name": "lab-error-preserves-previous",
+      "width": 1440,
+      "file": "1440-lab-error-preserves-previous.png",
+      "overflow": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440
+      }
+    },
+    {
+      "name": "lab-previous-success-post-pending",
+      "width": 1440,
+      "file": "1440-lab-previous-success-post-pending.png",
+      "overflow": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440
+      }
+    },
+    {
+      "name": "lab-previous-success-opening",
+      "width": 1440,
+      "file": "1440-lab-previous-success-opening.png",
+      "overflow": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440
+      }
+    },
+    {
+      "name": "lab-next-success",
+      "width": 1440,
+      "file": "1440-lab-next-success.png",
+      "overflow": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440
+      }
+    },
+    {
+      "name": "contact-motion-enabled",
+      "width": 1440,
+      "file": "1440-contact-motion-enabled.png",
+      "overflow": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440
+      }
+    },
+    {
+      "name": "contact-motion-manually-paused",
+      "width": 1440,
+      "file": "1440-contact-motion-manually-paused.png",
+      "overflow": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440
+      }
+    }
+  ],
+  "requests": [
+    {
+      "label": "contact",
+      "width": 320,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "contact",
+      "width": 320,
+      "endpoint": "concepts",
+      "method": "POST"
+    },
+    {
+      "label": "contact",
+      "width": 320,
+      "endpoint": "jobs/visual-job-1",
+      "method": "GET"
+    },
+    {
+      "label": "contact",
+      "width": 320,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "contact",
+      "width": 320,
+      "endpoint": "concepts/concept_visual_fixture/revisions",
+      "method": "POST"
+    },
+    {
+      "label": "contact",
+      "width": 320,
+      "endpoint": "jobs/visual-job-2",
+      "method": "GET"
+    },
+    {
+      "label": "contact",
+      "width": 320,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 320,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 320,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 320,
+      "endpoint": "sessions",
+      "method": "POST"
+    },
+    {
+      "label": "lab",
+      "width": 320,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 320,
+      "endpoint": "lab/briefing",
+      "method": "POST"
+    },
+    {
+      "label": "lab",
+      "width": 320,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 320,
+      "endpoint": "concepts",
+      "method": "POST"
+    },
+    {
+      "label": "lab",
+      "width": 320,
+      "endpoint": "jobs/visual-job-1",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 320,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 320,
+      "endpoint": "sessions",
+      "method": "POST"
+    },
+    {
+      "label": "lab",
+      "width": 320,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 320,
+      "endpoint": "lab/briefing",
+      "method": "POST"
+    },
+    {
+      "label": "lab",
+      "width": 320,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 320,
+      "endpoint": "concepts",
+      "method": "POST"
+    },
+    {
+      "label": "lab",
+      "width": 320,
+      "endpoint": "jobs/visual-job-2",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 320,
+      "endpoint": "sessions",
+      "method": "POST"
+    },
+    {
+      "label": "lab",
+      "width": 320,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 320,
+      "endpoint": "lab/briefing",
+      "method": "POST"
+    },
+    {
+      "label": "lab",
+      "width": 320,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 320,
+      "endpoint": "concepts",
+      "method": "POST"
+    },
+    {
+      "label": "lab",
+      "width": 320,
+      "endpoint": "jobs/visual-job-3",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 320,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "contact",
+      "width": 390,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "contact",
+      "width": 390,
+      "endpoint": "concepts",
+      "method": "POST"
+    },
+    {
+      "label": "contact",
+      "width": 390,
+      "endpoint": "jobs/visual-job-1",
+      "method": "GET"
+    },
+    {
+      "label": "contact",
+      "width": 390,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "contact",
+      "width": 390,
+      "endpoint": "concepts/concept_visual_fixture/revisions",
+      "method": "POST"
+    },
+    {
+      "label": "contact",
+      "width": 390,
+      "endpoint": "jobs/visual-job-2",
+      "method": "GET"
+    },
+    {
+      "label": "contact",
+      "width": 390,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 390,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 390,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 390,
+      "endpoint": "sessions",
+      "method": "POST"
+    },
+    {
+      "label": "lab",
+      "width": 390,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 390,
+      "endpoint": "lab/briefing",
+      "method": "POST"
+    },
+    {
+      "label": "lab",
+      "width": 390,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 390,
+      "endpoint": "concepts",
+      "method": "POST"
+    },
+    {
+      "label": "lab",
+      "width": 390,
+      "endpoint": "jobs/visual-job-1",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 390,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 390,
+      "endpoint": "sessions",
+      "method": "POST"
+    },
+    {
+      "label": "lab",
+      "width": 390,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 390,
+      "endpoint": "lab/briefing",
+      "method": "POST"
+    },
+    {
+      "label": "lab",
+      "width": 390,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 390,
+      "endpoint": "concepts",
+      "method": "POST"
+    },
+    {
+      "label": "lab",
+      "width": 390,
+      "endpoint": "jobs/visual-job-2",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 390,
+      "endpoint": "sessions",
+      "method": "POST"
+    },
+    {
+      "label": "lab",
+      "width": 390,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 390,
+      "endpoint": "lab/briefing",
+      "method": "POST"
+    },
+    {
+      "label": "lab",
+      "width": 390,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 390,
+      "endpoint": "concepts",
+      "method": "POST"
+    },
+    {
+      "label": "lab",
+      "width": 390,
+      "endpoint": "jobs/visual-job-3",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 390,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "contact",
+      "width": 768,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "contact",
+      "width": 768,
+      "endpoint": "concepts",
+      "method": "POST"
+    },
+    {
+      "label": "contact",
+      "width": 768,
+      "endpoint": "jobs/visual-job-1",
+      "method": "GET"
+    },
+    {
+      "label": "contact",
+      "width": 768,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "contact",
+      "width": 768,
+      "endpoint": "concepts/concept_visual_fixture/revisions",
+      "method": "POST"
+    },
+    {
+      "label": "contact",
+      "width": 768,
+      "endpoint": "jobs/visual-job-2",
+      "method": "GET"
+    },
+    {
+      "label": "contact",
+      "width": 768,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 768,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 768,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 768,
+      "endpoint": "sessions",
+      "method": "POST"
+    },
+    {
+      "label": "lab",
+      "width": 768,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 768,
+      "endpoint": "lab/briefing",
+      "method": "POST"
+    },
+    {
+      "label": "lab",
+      "width": 768,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 768,
+      "endpoint": "concepts",
+      "method": "POST"
+    },
+    {
+      "label": "lab",
+      "width": 768,
+      "endpoint": "jobs/visual-job-1",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 768,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 768,
+      "endpoint": "sessions",
+      "method": "POST"
+    },
+    {
+      "label": "lab",
+      "width": 768,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 768,
+      "endpoint": "lab/briefing",
+      "method": "POST"
+    },
+    {
+      "label": "lab",
+      "width": 768,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 768,
+      "endpoint": "concepts",
+      "method": "POST"
+    },
+    {
+      "label": "lab",
+      "width": 768,
+      "endpoint": "jobs/visual-job-2",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 768,
+      "endpoint": "sessions",
+      "method": "POST"
+    },
+    {
+      "label": "lab",
+      "width": 768,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 768,
+      "endpoint": "lab/briefing",
+      "method": "POST"
+    },
+    {
+      "label": "lab",
+      "width": 768,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 768,
+      "endpoint": "concepts",
+      "method": "POST"
+    },
+    {
+      "label": "lab",
+      "width": 768,
+      "endpoint": "jobs/visual-job-3",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 768,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "contact",
+      "width": 1440,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "contact",
+      "width": 1440,
+      "endpoint": "concepts",
+      "method": "POST"
+    },
+    {
+      "label": "contact",
+      "width": 1440,
+      "endpoint": "jobs/visual-job-1",
+      "method": "GET"
+    },
+    {
+      "label": "contact",
+      "width": 1440,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "contact",
+      "width": 1440,
+      "endpoint": "concepts/concept_visual_fixture/revisions",
+      "method": "POST"
+    },
+    {
+      "label": "contact",
+      "width": 1440,
+      "endpoint": "jobs/visual-job-2",
+      "method": "GET"
+    },
+    {
+      "label": "contact",
+      "width": 1440,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 1440,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 1440,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 1440,
+      "endpoint": "sessions",
+      "method": "POST"
+    },
+    {
+      "label": "lab",
+      "width": 1440,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 1440,
+      "endpoint": "lab/briefing",
+      "method": "POST"
+    },
+    {
+      "label": "lab",
+      "width": 1440,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 1440,
+      "endpoint": "concepts",
+      "method": "POST"
+    },
+    {
+      "label": "lab",
+      "width": 1440,
+      "endpoint": "jobs/visual-job-1",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 1440,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 1440,
+      "endpoint": "sessions",
+      "method": "POST"
+    },
+    {
+      "label": "lab",
+      "width": 1440,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 1440,
+      "endpoint": "lab/briefing",
+      "method": "POST"
+    },
+    {
+      "label": "lab",
+      "width": 1440,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 1440,
+      "endpoint": "concepts",
+      "method": "POST"
+    },
+    {
+      "label": "lab",
+      "width": 1440,
+      "endpoint": "jobs/visual-job-2",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 1440,
+      "endpoint": "sessions",
+      "method": "POST"
+    },
+    {
+      "label": "lab",
+      "width": 1440,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 1440,
+      "endpoint": "lab/briefing",
+      "method": "POST"
+    },
+    {
+      "label": "lab",
+      "width": 1440,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 1440,
+      "endpoint": "concepts",
+      "method": "POST"
+    },
+    {
+      "label": "lab",
+      "width": 1440,
+      "endpoint": "jobs/visual-job-3",
+      "method": "GET"
+    },
+    {
+      "label": "lab",
+      "width": 1440,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "motion",
+      "width": 1440,
+      "endpoint": "session",
+      "method": "GET"
+    },
+    {
+      "label": "motion",
+      "width": 1440,
+      "endpoint": "concepts",
+      "method": "POST"
+    },
+    {
+      "label": "motion",
+      "width": 1440,
+      "endpoint": "jobs/visual-job-1",
+      "method": "GET"
+    },
+    {
+      "label": "motion",
+      "width": 1440,
+      "endpoint": "session",
+      "method": "GET"
+    }
+  ],
+  "blockedExternalRequests": [],
+  "errors": []
+}

@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-25T05:11:54.284Z",
+  "passed": false,
+  "scope": "One synthetic zero-tool FAST text generation using the authenticated staging owner IAM token; provider is BB managed, not copied from the site agent. No configuration changes or external messages.",
+  "httpStatus": 500,
+  "elapsedMs": 281,
+  "message": "Text generation failed: Anthropic provider not configured. Set AI_ENGINE_ANTHROPIC_API_KEY environment variable."
+}

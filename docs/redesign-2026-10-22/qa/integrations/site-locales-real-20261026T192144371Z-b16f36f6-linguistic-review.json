@@ -1,0 +1,56 @@
+{
+  "reviewedAt": "2026-10-26T19:27:11.654Z",
+  "sourceReport": "docs/redesign-2026-10-22/qa/integrations/site-locales-real-20261026T192144371Z-b16f36f6.json",
+  "releaseId": "20261026-multilingual",
+  "automatedContractsPassed": true,
+  "successfulSyntheticCleanup": 7,
+  "cookiesRemainingInPrivateCheckpoint": 0,
+  "linguisticApproval": false,
+  "findings": [
+    {
+      "locale": "fr-FR",
+      "field": "content.title",
+      "actual": "Inscrição à École de Langues",
+      "severity": "requires_correction",
+      "finding": "Portuguese word Inscrição appears in the French title.",
+      "suggestedFrench": "Inscription à l’école de langues"
+    },
+    {
+      "locale": "en-US",
+      "field": "content.roles",
+      "severity": "semantic_quality",
+      "finding": "Roles enumerate channels/capabilities instead of participant roles; all strings are English.",
+      "actual": [
+        "WhatsApp as the main communication channel",
+        "Email for enrollment confirmation notifications",
+        "AI Engine for automated responses"
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "field": "content.screens[2].title",
+      "severity": "wording_quality",
+      "actual": "Anmeldung Bestätigung",
+      "suggestion": "Anmeldebestätigung or Bestätigung der Anmeldung"
+    },
+    {
+      "locale": "nl-NL",
+      "field": "screen/journey labels",
+      "severity": "wording_quality",
+      "actual": [
+        "Cursus Uitleg",
+        "Groep Keuze"
+      ],
+      "suggestion": [
+        "Cursusuitleg",
+        "Groepskeuze"
+      ]
+    }
+  ],
+  "followup": "Root will reinforce the dedicated agent language prompt; a new explicitly authorized French-only synthetic inference will use a new checkpoint. The original7 schema/idempotency/cleanup report remains unchanged.",
+  "frenchIssueResolution": {
+    "resolved": true,
+    "followupReport": "docs/redesign-2026-10-22/qa/integrations/site-locales-real-20261026T192716879Z-7630631d.json",
+    "followupLinguisticReview": "docs/redesign-2026-10-22/qa/integrations/site-locales-real-20261026T192716879Z-7630631d-linguistic-review.json"
+  }
+}

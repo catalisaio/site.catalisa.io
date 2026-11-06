@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-25T01:39:30.398Z",
+  "scope": "Real staging Data Store, two independent BFF/store instances, real agent inference, no SQLite, no outbound messages or handoff.",
+  "generation": {
+    "elapsedMs": 15841,
+    "title": "Pedidos via WhatsApp com Revisão",
+    "calls": 1,
+    "pendingVisible": true
+  },
+  "atomicReplay": true,
+  "casStatuses": [
+    201,
+    409
+  ],
+  "sharedRecovery": true,
+  "isolation": true,
+  "expiredSessionExcluded": true,
+  "retentionCleanup": {
+    "removed": 2,
+    "remaining": 0
+  },
+  "passed": true,
+  "stage": "retention",
+  "syntheticSessionsRemoved": 3,
+  "syntheticSessionsCreated": 3
+}

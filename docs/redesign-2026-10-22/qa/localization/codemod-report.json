@@ -1,0 +1,357 @@
+{
+  "generatedAt": "2026-10-26T16:25:27.365Z",
+  "applied": true,
+  "scope": "Literal JSX, UI attributes, templates and user-facing status/error messages only. Existing files remain untouched without --apply. No JSON import rewriting, dynamic user content, classes, IDs, route/API values, enums, code/pre examples or product-name translation.",
+  "files": [
+    {
+      "file": "src/redesign/Agents.tsx",
+      "changed": true,
+      "edits": 142,
+      "syntaxVerified": true,
+      "preservationVerified": true,
+      "beforeSha256": "2556bc6ea77b8eb333e1d36a0fb101e9e440956b3f4c49c18e017f0ef910f968",
+      "afterSha256": "c814cabf76fffa4fd3fe9baf0ffc755e040539c78e745819cc2b8dfed8d2c3c2"
+    },
+    {
+      "file": "src/redesign/App.tsx",
+      "changed": true,
+      "edits": 4,
+      "syntaxVerified": true,
+      "preservationVerified": true,
+      "beforeSha256": "4e6ab4990087301099686faf9fe2ba9677548d671c12ff79c6be298c1187d8fa",
+      "afterSha256": "8f5689f5655bb664aebe79ff7fe16608bc6d074103521568e1ca56d5ce4adeec"
+    },
+    {
+      "file": "src/redesign/Architecture.tsx",
+      "changed": true,
+      "edits": 64,
+      "syntaxVerified": true,
+      "preservationVerified": true,
+      "beforeSha256": "30829bb03b098d907469fb729a544f0ef3551800cd0df15f467a78f21d9fed5f",
+      "afterSha256": "11fd55773d07d737b750cf737254b6a0e640d7f358177d4cdf74c8958bcbe61a"
+    },
+    {
+      "file": "src/redesign/Banking.tsx",
+      "changed": true,
+      "edits": 236,
+      "syntaxVerified": true,
+      "preservationVerified": true,
+      "beforeSha256": "b52c55989cedbbf189327b1c292fe66f5f5a25754858d8f9d164da30fe01c11d",
+      "afterSha256": "4b1e54ef45ec18ed095b841d80ef0f293cb541d851d79992e92508af51978dea"
+    },
+    {
+      "file": "src/redesign/Capabilities.tsx",
+      "changed": true,
+      "edits": 69,
+      "syntaxVerified": true,
+      "preservationVerified": true,
+      "beforeSha256": "4e26b674b45dd181c456bb9c83e2f664faf98e6d62d1902b08698916b7b6d2ae",
+      "afterSha256": "dfeee081572d277e231f8fde1fbd934781f4362c95284fcf8ad69bda1544eba0"
+    },
+    {
+      "file": "src/redesign/CatalogArt.tsx",
+      "changed": true,
+      "edits": 22,
+      "syntaxVerified": true,
+      "preservationVerified": true,
+      "beforeSha256": "479395edf7a4a8584d4933a3a3c8c6de602c9efafd173f6f9ce2321bba814f5a",
+      "afterSha256": "f1172af8722729c977da3c9332fea2af68dfafa4904e4958f82150d6e407c10a"
+    },
+    {
+      "file": "src/redesign/ConceptProgress.tsx",
+      "changed": true,
+      "edits": 16,
+      "syntaxVerified": true,
+      "preservationVerified": true,
+      "beforeSha256": "1aef13758e62b362c3641aeab2cfe62a9b50725534c1e6cff39a4c14e5de4765",
+      "afterSha256": "67643355083ae41e355c38165e7a496cbde92790f568ee097e127a9f8572c6bd"
+    },
+    {
+      "file": "src/redesign/Contact.tsx",
+      "changed": true,
+      "edits": 53,
+      "syntaxVerified": true,
+      "preservationVerified": true,
+      "beforeSha256": "7889f62c439c751c7fa822ca79bfec8f9bbae391bef54cdc642a9a3b00884520",
+      "afterSha256": "5fe93147c1bf43180e903ef5ade6bad17ba9bc9c84ff82ad668d7da2d95e6f88"
+    },
+    {
+      "file": "src/redesign/ContactConcept.tsx",
+      "changed": true,
+      "edits": 59,
+      "syntaxVerified": true,
+      "preservationVerified": true,
+      "beforeSha256": "b5867a637b7ee16ffeb4be908a35fb9fbbb58beb6c7a88427434ba635560215b",
+      "afterSha256": "6552f090b927f7224ecfd6901d9a34f9dd6d0525440a8c24e45cf70a8d87ef01"
+    },
+    {
+      "file": "src/redesign/ContactContinuation.tsx",
+      "changed": true,
+      "edits": 87,
+      "syntaxVerified": true,
+      "preservationVerified": true,
+      "beforeSha256": "62653388f0e025b5ed27343f0c02cd54f7f8614d4c4635b0b78cf2316ddd9153",
+      "afterSha256": "ece2299b35cb703ffae81c113ef63c41365e01f8743f01042f9ffe0195a4b658"
+    },
+    {
+      "file": "src/redesign/ContactReachability.tsx",
+      "changed": true,
+      "edits": 14,
+      "syntaxVerified": true,
+      "preservationVerified": true,
+      "beforeSha256": "e28352debf2afc536936ad3ed003b3869bea22ec8c4c00d2890ea9b8af2dcc6e",
+      "afterSha256": "693a87318e96b7b7c2fdaee9154eef0d265ad3863563f4bcadd2bfe1fbdf7af6"
+    },
+    {
+      "file": "src/redesign/ContactViews.tsx",
+      "changed": true,
+      "edits": 233,
+      "syntaxVerified": true,
+      "preservationVerified": true,
+      "beforeSha256": "335ef8da1c857527366ee21f4b4a17c03177857a5cdf64f012db4559715355b6",
+      "afterSha256": "db82b38d7bde2cf3dc9cfb155be67c336e60748f22f44df5ac952c6e0d6b840d"
+    },
+    {
+      "file": "src/redesign/Credit.tsx",
+      "changed": true,
+      "edits": 196,
+      "syntaxVerified": true,
+      "preservationVerified": true,
+      "beforeSha256": "c517ab46d22ca390796490ccdbf4b32aa4af43a9b02c6162c15620f6ae7e823c",
+      "afterSha256": "82b2ec5df89ccf55cc07ed9a253ddda20ee265cca2a4232b855a28c62a211b32"
+    },
+    {
+      "file": "src/redesign/DeveloperArt.tsx",
+      "changed": true,
+      "edits": 24,
+      "syntaxVerified": true,
+      "preservationVerified": true,
+      "beforeSha256": "c27f9583e1858b84ca2077608c4b0cc6e2032c78050aab5ac78c788240a53500",
+      "afterSha256": "b1ad57c4aeeb107acdf35b96e8b222dbf76b4f1eb231103aca2ffe82e265083e"
+    },
+    {
+      "file": "src/redesign/Developers.tsx",
+      "changed": true,
+      "edits": 87,
+      "syntaxVerified": true,
+      "preservationVerified": true,
+      "beforeSha256": "64ccbae8380cdf8b2e8fd9c1df1a657610847fd3e5f8eb4720aec3a30107aca0",
+      "afterSha256": "809d85f629ee3c467d878a9aae1384885bddf53dfe8588a4b081c46993d387b7"
+    },
+    {
+      "file": "src/redesign/Ecosystem.tsx",
+      "changed": true,
+      "edits": 304,
+      "syntaxVerified": true,
+      "preservationVerified": true,
+      "beforeSha256": "970536f79f7630fbee99d39b1167f84cffaa0d630bfc0eecb1cd0a91ac23a30c",
+      "afterSha256": "0147e2d7e160ff8550149ca4c855bae60d28a47719fe49b908c9a4b914f83f7c"
+    },
+    {
+      "file": "src/redesign/Editorial.tsx",
+      "changed": true,
+      "edits": 561,
+      "syntaxVerified": true,
+      "preservationVerified": true,
+      "beforeSha256": "ac7676405cfbaba23b95f0aef6e15d7033cc14a805178d22c8708f0ac8c64004",
+      "afterSha256": "3b0ae891ab64eed21975ba1f969bb01846c6d778c550f57031d8bc69ba70b303"
+    },
+    {
+      "file": "src/redesign/FoundationArt.tsx",
+      "changed": true,
+      "edits": 66,
+      "syntaxVerified": true,
+      "preservationVerified": true,
+      "beforeSha256": "66c574d7d75851a8f6c1a8c14b55bb8ef304aac0aa4fd4e09a27e70371a92064",
+      "afterSha256": "7fffa87b080eefd446087a4446417fd96d623c305cfbbc7a24dd2f9d612ec1c1"
+    },
+    {
+      "file": "src/redesign/Governance.tsx",
+      "changed": true,
+      "edits": 140,
+      "syntaxVerified": true,
+      "preservationVerified": true,
+      "beforeSha256": "917ce5d118521b231873578e5360dbacf9e2f604571b3b10ffb65c1da1817095",
+      "afterSha256": "c351ff17c51bd3fd1bc4522224ee2363f1f654f5a75e67b4b7a42f1d638f9453"
+    },
+    {
+      "file": "src/redesign/HeaderView.tsx",
+      "changed": true,
+      "edits": 55,
+      "syntaxVerified": true,
+      "preservationVerified": true,
+      "beforeSha256": "3f64f26942a1fe2b873d5567f5a35fdff7333e321125a87949aba2979e039644",
+      "afterSha256": "49c75246edb2fae536544d690577a644783b6245446ad9989c77b92ee0008ae8"
+    },
+    {
+      "file": "src/redesign/Home.tsx",
+      "changed": true,
+      "edits": 74,
+      "syntaxVerified": true,
+      "preservationVerified": true,
+      "beforeSha256": "f58ca143d42160c899dfbf6877aa3763d97c314e04a56c07096e224a748a9df3",
+      "afterSha256": "ec9c17b0fc4802bf56e74b953b0b7ed2b049022d6b973786e5bb5c80ad7e9970"
+    },
+    {
+      "file": "src/redesign/Lab.tsx",
+      "changed": true,
+      "edits": 56,
+      "syntaxVerified": true,
+      "preservationVerified": true,
+      "beforeSha256": "ec83008bbf96b19ac642eb8db070eb46477459cb1fc8799c957b3f758979c982",
+      "afterSha256": "6d214f932657041d7bc55239dd303c7e93bbb12dbb876960589eb925451cbda2"
+    },
+    {
+      "file": "src/redesign/LabResult.tsx",
+      "changed": true,
+      "edits": 26,
+      "syntaxVerified": true,
+      "preservationVerified": true,
+      "beforeSha256": "f34dbd3bb345f5d959c70e026f4a8e0db5dfcff0a4145c316fa917977261ef14",
+      "afterSha256": "62df34def9a81b08df33933b9f1f7fd42a96f3fe1e1466dc9987550a48f0c295"
+    },
+    {
+      "file": "src/redesign/LabViews.tsx",
+      "changed": true,
+      "edits": 37,
+      "syntaxVerified": true,
+      "preservationVerified": true,
+      "beforeSha256": "19d2bd225a1004abd7f311d122845ac9eddf015f7deb302f72d1eddebcee64d1",
+      "afterSha256": "afd1179b6166e4776b6739a6572a164176ca8e702fe793869457e5019dd57e61"
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "changed": true,
+      "edits": 1757,
+      "syntaxVerified": true,
+      "preservationVerified": true,
+      "beforeSha256": "221fe8fb1bc0aa9fdb6fbb161a4a60dda7b89815e4adb1472ac3116bf5c3f639",
+      "afterSha256": "819b8fc7d5bf8e585d8a811b75ab266d0e99fde41372ae4fdc8a154d14e97123"
+    },
+    {
+      "file": "src/redesign/PreviewMeta.tsx",
+      "changed": false,
+      "edits": 0,
+      "syntaxVerified": true,
+      "preservationVerified": true,
+      "beforeSha256": "bdbc7f71fa3f57aa12760c986a19ceb0713697196f3055e40976e61f2ff9ab02",
+      "afterSha256": "bdbc7f71fa3f57aa12760c986a19ceb0713697196f3055e40976e61f2ff9ab02"
+    },
+    {
+      "file": "src/redesign/Resources.tsx",
+      "changed": true,
+      "edits": 263,
+      "syntaxVerified": true,
+      "preservationVerified": true,
+      "beforeSha256": "a992ab306c447dd97bd09e3e7d85730c155252d57a34c579cdc2e4eee13e98b7",
+      "afterSha256": "fddc07f51501efc171c649864015fada9da836d56f80ca768c7dc233d3082d43"
+    },
+    {
+      "file": "src/redesign/Studio.tsx",
+      "changed": true,
+      "edits": 128,
+      "syntaxVerified": true,
+      "preservationVerified": true,
+      "beforeSha256": "b769df30319bf29d5f56ef096771a404c90a11161e0aa194240eff2571407512",
+      "afterSha256": "6048ee7b635f2a59bc278d89aa8350cc1f33004e384d1fc345155b7104ee9c14"
+    },
+    {
+      "file": "src/redesign/Styleguide.tsx",
+      "changed": true,
+      "edits": 157,
+      "syntaxVerified": true,
+      "preservationVerified": true,
+      "beforeSha256": "9aab47c852316ebcb00d783d1a5603d93dbf9d75276a8ff0639bf1f9ebec7f70",
+      "afterSha256": "ff8bfddb13e5dfd8096584c799facb6725591ceadf0d72fcc0c74a86b147391a"
+    },
+    {
+      "file": "src/redesign/Vision.tsx",
+      "changed": true,
+      "edits": 55,
+      "syntaxVerified": true,
+      "preservationVerified": true,
+      "beforeSha256": "89415bced2091ec4badd7f26f1dc496724cb56d40469b995b59bca6e4a35ce63",
+      "afterSha256": "8c932ba426cc2359e9a993ae44e69782033ddadb17d213bb6a73d03372420162"
+    },
+    {
+      "file": "src/redesign/Workflows.tsx",
+      "changed": true,
+      "edits": 121,
+      "syntaxVerified": true,
+      "preservationVerified": true,
+      "beforeSha256": "238274700da65ace450c3998b98c528d596c348017b147dda703e9c10d479490",
+      "afterSha256": "518d8c82e1a4737ac52712c9f19484c2e3a5bbe64a6ae6811f56df033a17677c"
+    },
+    {
+      "file": "src/redesign/components.tsx",
+      "changed": true,
+      "edits": 13,
+      "syntaxVerified": true,
+      "preservationVerified": true,
+      "beforeSha256": "0fcbe3b2c345a4bb1889bf85228a4781734aa158a472ba3af821602faff24d70",
+      "afterSha256": "c483415b8dd02215a69eddf58ba0a40dbd8f9352ae927c50f3b0064a01c1579f"
+    },
+    {
+      "file": "src/redesign/foundation-components.tsx",
+      "changed": true,
+      "edits": 2,
+      "syntaxVerified": true,
+      "preservationVerified": true,
+      "beforeSha256": "92a3f72e18b9f03af93f7479be39d67195789780847aab06456c5dc98249ced7",
+      "afterSha256": "5b01fac630c954bc66d72e57ae6703cab6fdebbbb9fe138c153d02ee4cc4f887"
+    },
+    {
+      "file": "src/redesign/operation-components.tsx",
+      "changed": true,
+      "edits": 8,
+      "syntaxVerified": true,
+      "preservationVerified": true,
+      "beforeSha256": "9893a455c7e986f4d19e92a1f5becee661f2483e5089065feb1950731727384a",
+      "afterSha256": "149eef17eda046b2f82a0465f74497d15a4f65a6db117dd97659ed952025f44a"
+    },
+    {
+      "file": "src/redesign/site-client.ts",
+      "changed": true,
+      "edits": 3,
+      "syntaxVerified": true,
+      "preservationVerified": true,
+      "beforeSha256": "3b91ce53a9098ac729a372dd5738835845530a17f3affae8c8e362f92f4770ae",
+      "afterSha256": "cdb993241253ef0ef409cac3b192dd71f5418997ad403f4767c18dfff4d31c82"
+    },
+    {
+      "file": "src/analytics/AnalyticsConsent.tsx",
+      "changed": true,
+      "edits": 14,
+      "syntaxVerified": true,
+      "preservationVerified": true,
+      "beforeSha256": "792ee08a45d47ae8998083797bad5f847d00422803b1ff408f22b4c44e432a78",
+      "afterSha256": "11b72999f6aa0b7ae1787658b2a64092c54caae30b1aecbda3088e99f4f08baf"
+    }
+  ],
+  "review": [
+    {
+      "file": "src/redesign/ContactContinuation.tsx",
+      "line": 7,
+      "kind": "display-data-with-possible-logic",
+      "name": "channelName"
+    },
+    {
+      "file": "src/redesign/ContactContinuation.tsx",
+      "line": 17,
+      "kind": "display-data-with-possible-logic",
+      "name": "statusCopy"
+    },
+    {
+      "file": "src/redesign/Lab.tsx",
+      "line": 18,
+      "kind": "display-data-with-possible-logic",
+      "name": "prompts"
+    },
+    {
+      "file": "src/redesign/Lab.tsx",
+      "line": 94,
+      "kind": "display-data-with-possible-logic",
+      "name": "demoOptions"
+    }
+  ]
+}

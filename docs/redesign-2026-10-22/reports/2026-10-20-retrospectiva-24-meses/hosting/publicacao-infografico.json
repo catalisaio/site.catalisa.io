@@ -1,0 +1,215 @@
+{
+  "url": "https://entregas.interno.catalisa.app",
+  "release": "20261020-79b72599ca9e",
+  "serviceId": "lsvc-o68bbc75",
+  "installed": true,
+  "localBrowserVerification": {
+    "design": "bauhaus-infographic-v1",
+    "url": "file:///home/klederson/Projects/wpp.bb.catalisa.io/docs/reports/2026-10-20-retrospectiva-24-meses/index.html",
+    "checkedAt": "2026-10-21T10:57:18.337Z",
+    "passed": true,
+    "checks": [
+      "Todas as 110 frentes estão representadas uma vez, nas oito áreas.",
+      "Contagem mensal particiona os 2.840 PRs integrados e conserva cada base.",
+      "Nove efeitos de infraestrutura apontam para os casos corretos.",
+      "Página contém oito áreas, 110 frentes, seis etapas, sete capítulos, quatro ensaios e nove casos Developy.",
+      "Todas as frentes abrem na própria página, com síntese, valor, alcance e link específico.",
+      "Âncora de frente abre o catálogo correspondente; tabela do gráfico abre pelo teclado.",
+      "165 destinos locais conferidos, incluindo âncoras das 110 frentes e seis etapas.",
+      "Inter local carregada e tokens de marca preservados.",
+      "Cinco larguras de 320 a 1440 px sem overflow; navegação, progresso e links internos funcionam.",
+      "A leitura e os catálogos nativos funcionam com JavaScript desativado.",
+      "PDF de uma página gerado com texto selecionável e conteúdo até o rodapé.",
+      "Nenhum erro de página ou dependência externa; leitura disponível offline."
+    ],
+    "viewports": [
+      {
+        "viewport": 320,
+        "content": 320,
+        "height": 26565
+      },
+      {
+        "viewport": 390,
+        "content": 390,
+        "height": 23960
+      },
+      {
+        "viewport": 768,
+        "content": 768,
+        "height": 16326
+      },
+      {
+        "viewport": 1024,
+        "content": 1024,
+        "height": 14422
+      },
+      {
+        "viewport": 1440,
+        "content": 1440,
+        "height": 15108
+      }
+    ],
+    "pageErrors": [],
+    "fonts": {
+      "regular": true,
+      "bold": true,
+      "loaded": true,
+      "brand": "#734b9c",
+      "accent": "#fe8342"
+    },
+    "pdf": {
+      "file": "infografico.pdf",
+      "pages": 1,
+      "heightPx": 13448,
+      "bytes": 185761
+    }
+  },
+  "remoteVerification": {
+    "url": "https://entregas.interno.catalisa.app",
+    "checkedAt": "2026-10-21T11:04:10.639698+00:00",
+    "release": "20261020-79b72599ca9e",
+    "checks": [
+      {
+        "path": "/",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/infografico.html",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/dossie.html",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/infografico.pdf",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/infografico-inter-regular.ttf",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/infografico-inter-bold.ttf",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/infografico-cobertura.json",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/timeline.html",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/dashboard.html",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/cadeia-de-valor.html",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/cadeia-de-valor.pdf",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/dashboard.pdf",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/dashboard-data.json",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/relatorio-completo.html",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/relatorio-completo.pdf",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/developy.html",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/developy.pdf",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/investidores.html",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/investidores.pdf",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/entrevistas.html",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/entrevistas.pdf",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/dados.json",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      },
+      {
+        "path": "/dossie-catalisa.zip",
+        "anonymous": 401,
+        "incorrectPassword": 401
+      }
+    ],
+    "tlsVerified": true,
+    "certificate": {
+      "notAfter": "Jan 18 22:09:35 2027 GMT",
+      "subjectAltName": [
+        [
+          "DNS",
+          "entregas.interno.catalisa.app"
+        ]
+      ]
+    },
+    "installedHashesVerified": true,
+    "nginxConfigurationPreserved": true,
+    "passwordFileMode": "640",
+    "authenticatedBrowserVerification": "pending-original-credential"
+  },
+  "manifestMatchesInstalledRelease": true,
+  "originalIndex": "/dossie.html",
+  "onePagePdf": "/infografico.pdf",
+  "study": {
+    "files": 72,
+    "individualAnnotations": 72,
+    "path": "docs/design/entregas-bauhaus/referencias.html"
+  },
+  "remaining": [
+    "Verificação autenticada no HTTPS: o arquivo temporário original de credenciais não está disponível. Local alternativo solicitado ao usuário, sem pedir senha no chat."
+  ],
+  "complete": false
+}

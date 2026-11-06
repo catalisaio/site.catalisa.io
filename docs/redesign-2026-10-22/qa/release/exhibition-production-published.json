@@ -1,0 +1,84 @@
+{
+  "publishedAt": "2026-10-26T23:44:12.522Z",
+  "verifiedAt": "2026-10-26T23:48:57.900Z",
+  "releaseId": "20261026-products-exhibition",
+  "url": "https://catalisa.io",
+  "productPage": "https://catalisa.io/produtos",
+  "published": true,
+  "authorization": "perfeito pode subir; REMOVA RECRUTAMENTO",
+  "stagingValidated": true,
+  "publicArtifactSha256": "5642547bfb285ab4fc483898648efc2f744b64617892248a482fa223fb64cd25",
+  "serverArtifactSha256": "586254469a4310eaf70a5603952bdcedb0c81151ff14e04083027b58f557889f",
+  "backendByteIdenticalToPreviousProduction": true,
+  "productionUpstream": "http://172.10.0.202:18183",
+  "rollback": {
+    "previousUpstream": "http://172.10.0.202:18182",
+    "previousRelease": "20261026-multilingual",
+    "routerBackup": "/opt/traefik/config/rollback/catalisa-site-20261026-products-exhibition.yml",
+    "edgePrivateControlDirectory": "/root/catalisa-site-cutovers/20261026-products-exhibition",
+    "previousServiceRetained": true,
+    "original8081AlsoRetained": true
+  },
+  "products": {
+    "total": 6,
+    "financialFlagships": [
+      "CBP",
+      "CCP"
+    ],
+    "sectorSolutions": [
+      "med",
+      "juridico",
+      "biometrics",
+      "decision"
+    ],
+    "externalSites": 4,
+    "retired": "recrutamento",
+    "permanentRedirectsVerified": 7
+  },
+  "checks": {
+    "publicLanguages": 7,
+    "publicHttpsRoutes": 49,
+    "publicBrowser": 28,
+    "stagingBrowser": 38,
+    "autoLocaleScenarios": 14,
+    "artifactBrowser": 99,
+    "seoPages": 677,
+    "sitemapPublicUrls": 670,
+    "seoFailures": 0,
+    "seoWarnings": [
+      "/es/capacidades: duplicate title with /capacidades",
+      "/es/perspectivas: duplicate title with /perspectivas",
+      "/fr/perspectives: duplicate title with /en/perspectives"
+    ],
+    "prerenderedPages": 678,
+    "measurementPassed": true,
+    "secretScanPassed": true,
+    "realPublicContact": true,
+    "contactGenerationMs": 21981,
+    "contactHumanReviewMs": 37,
+    "realPublicLab": true,
+    "labGenerationMs": 23014,
+    "syntheticSessionsCleaned": true
+  },
+  "evidence": {
+    "publicHttp": "qa/release/exhibition-production-http.json",
+    "publicBrowser": "qa/release/exhibition-production-browser.json",
+    "retirement": "qa/release/exhibition-production-retirement.json",
+    "stagingHttp": "qa/release/exhibition-staging-http.json",
+    "stagingBrowser": "qa/release/exhibition-staging-browser/verification.json",
+    "autoLocale": "qa/release/exhibition-staging-auto-locale.json",
+    "measurement": "qa/seo-detailed/browser/verification.json",
+    "realPublicContact": "qa/contact-real-production/verification-clinica-agenda.json",
+    "realPublicLab": "qa/lab-real-production/verification.json"
+  },
+  "scope": {
+    "siteOnly": true,
+    "panelOrBuildingBlocksChanged": false,
+    "noExternalMessagesOrHandoffsInSmokes": true,
+    "localHmrPreviewRetained": true
+  },
+  "remaining": [
+    "Contact/Lab generation latency, token usage and cost improvement remains explicitly deferred in TODO-pos-publicacao.md.",
+    "Cloudflare CAPTCHA has not been activated on this site."
+  ]
+}

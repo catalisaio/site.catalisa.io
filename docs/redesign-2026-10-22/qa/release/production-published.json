@@ -1,0 +1,31 @@
+{
+  "published": true,
+  "url": "https://catalisa.io",
+  "authorizationReceived": true,
+  "authorizationSource": "tem que publicar com multilingue; manda ver e se tiver correcoes faz mas precisa subir logo; certo entao pode subir?",
+  "stagingValidated": true,
+  "releaseId": "20261026-multilingual",
+  "publicArtifactSha256": "6f7e60210790283d6f526891092d6cad55e415ccf2ac397beecef8cdd8934bbb",
+  "serverArtifactSha256": "586254469a4310eaf70a5603952bdcedb0c81151ff14e04083027b58f557889f",
+  "publicHttpsPassed": true,
+  "publicLocales": 7,
+  "publicRoutesVerified": 42,
+  "liveBrowserChecks": 15,
+  "rollback": "Original upstream172.10.0.202:8081 and edge router backup retained; candidate18182 active.",
+  "panelOrBuildingBlockDeployment": false,
+  "confirmedAt": "2026-10-26T19:35:10.443Z",
+  "evidence": {
+    "publicHttp": "qa/release/public-locales-production.json",
+    "publicBrowser": "qa/release/production-browser-live.json",
+    "stagingHttp": "qa/release/public-locales-staging.json",
+    "realConceptLocales": "qa/integrations/site-locales-real-20261026T192144371Z-b16f36f6.json",
+    "frenchCorrection": "qa/integrations/site-locales-real-20261026T192716879Z-7630631d.json",
+    "measurement": "qa/seo-detailed/browser/verification.json",
+    "dictionaryCoverage": "qa/localization/coverage.json"
+  },
+  "edgeConfirmation": {
+    "initialPublicIpHairpinUnavailable": true,
+    "correctedBy": "Trusted TLS to local edge listener with real hostname/SNI; external public42-route and JS audits also passed.",
+    "rollbackBackupPreserved": true
+  }
+}

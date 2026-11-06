@@ -1,0 +1,43 @@
+{
+  "checkedAt": "2026-10-27T01:43:39.596Z",
+  "domainAllowed": true,
+  "authenticated": true,
+  "production": {
+    "projectId": "z4073yqv5z",
+    "projectName": "Catalisa",
+    "installationDetected": true,
+    "dashboardEnabled": true,
+    "heatmapsEnabled": true,
+    "aggregateSessions": 3,
+    "aggregateHeatmapAvailable": null,
+    "limitations": [
+      "gettingstarted redirecionou para o Painel; nenhuma mensagem explícita de 'instalação detectada' foi vista. Instalação deduzida das sessões agregadas.",
+      "Contagem de sessões dos 'Últimos 3 dias' (filtro padrão); 1 sessão de bot excluída.",
+      "Lista de páginas populares disponível nos Mapas de Calor (ex.: /produtos 12 visitas, / 7, /ecossistema/banking 5).",
+      "A tentativa de abrir o mapa da home '/' caiu na linha de /ecossistema/banking; foi esse mapa que abri.",
+      "O mapa de banking abriu sem dados: clique (desktop e mobile) 'Não foi possível encontrar nenhum clique' e rolagem (mobile) 'nenhuma informação de rolagem'. Nenhuma outra URL foi testada."
+    ]
+  },
+  "staging": {
+    "projectId": "z40bi9hrk8",
+    "projectName": "Catalisa Staging",
+    "installationDetected": null,
+    "dashboardEnabled": true,
+    "heatmapsEnabled": true,
+    "aggregateSessions": 0,
+    "aggregateHeatmapAvailable": false,
+    "limitations": [
+      "gettingstarted redirecionou para o Painel; nenhuma mensagem explícita de instalação foi vista e há 0 sessões nos últimos 3 dias (1 sessão de bot excluída).",
+      "A página dos Mapas de Calor carrega, mas a lista mostra 'Nenhum resultado localizado.'; nenhum mapa foi aberto.",
+      "A prova de coleta (204) do parent não aparece no Painel nos últimos 3 dias; pode estar fora do intervalo ou ter sido filtrada como bot."
+    ]
+  },
+  "settingsChanged": false,
+  "visitorRecordingsRead": false,
+  "scope": {
+    "aggregatesOnly": true,
+    "settingsChanged": false,
+    "visitorRecordingsRead": false,
+    "personalConsentChanged": false
+  }
+}

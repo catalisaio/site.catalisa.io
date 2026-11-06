@@ -1,0 +1,28 @@
+{
+  "generatedAt": "2026-10-26T14:09:05.706Z",
+  "artifact": "/tmp/catalisa-progress-candidate",
+  "releaseId": "20261026-progress",
+  "passed": true,
+  "entry": "/assets/index-CrdpmcBD.js",
+  "entrySha256": "eb65d9197467ca1d875337c9842b02a408dd3acd3ca1057c1599ed6658fb7717",
+  "homeSha256": "37c6682e20a8b2c7af3f63d5a6a5c34f357b897dc32d5031d8b6593abf6c7448",
+  "applicationHtmlFiles": 258,
+  "mismatches": [],
+  "privacy": [
+    {
+      "route": "/politica-privacidade",
+      "configuredProviderStatement": true,
+      "listedAnthropic": true,
+      "listedOpenAI": true,
+      "passed": true
+    },
+    {
+      "route": "/en/privacy-policy",
+      "configuredProviderStatement": true,
+      "listedAnthropic": true,
+      "listedOpenAI": true,
+      "passed": true
+    }
+  ],
+  "scope": "Built HTML entry consistency and configured-provider privacy copy PT/EN. No real AI requests, deployment or visual acceptance."
+}

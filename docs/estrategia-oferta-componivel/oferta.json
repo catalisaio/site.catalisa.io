@@ -1,0 +1,115 @@
+{
+  "documentType": "strategy_proposal",
+  "runtimeConfiguration": false,
+  "recordedAt": "2026-10-27",
+  "scope": "Evolução da oferta, do site Catalisa e da composição futura dos produtos e verticais",
+  "adoptionTiming": "Após a conclusão do escopo atual do Med, com adoção progressiva",
+  "verticalsAffected": true,
+  "effortPosition": "Priorizar reaproveitamento e mudanças editoriais ou de configuração; dimensionar identidade, cobrança, dados e novos ambientes por auditoria",
+  "products": [
+    {
+      "id": "banking",
+      "name": "Banking",
+      "kind": "domain",
+      "purpose": "Criação e operação de produtos financeiros",
+      "recordAuthority": "Registros financeiros e ações do domínio Banking",
+      "futureExperience": "Ambiente operacional com papéis, solicitações, exceções e autorizações"
+    },
+    {
+      "id": "credit",
+      "name": "Credit",
+      "kind": "domain",
+      "purpose": "Originação, análise, formalização e acompanhamento de operações de crédito",
+      "recordAuthority": "Propostas, políticas, dossiês e operações de crédito",
+      "futureExperience": "Ambiente operacional com propostas, análises, formalização e carteira"
+    },
+    {
+      "id": "office",
+      "name": "Office",
+      "kind": "cross_sector",
+      "purpose": "Operação do dia a dia com tarefas, documentos, agendas, aprovações e equipes humanas e virtuais",
+      "recordAuthority": "Trabalho operacional e referências aos registros de domínio",
+      "boundary": "Produto operacional distinto dos motores compartilhados da plataforma"
+    },
+    {
+      "id": "atendimento",
+      "name": "Atendimento",
+      "kind": "cross_sector",
+      "purpose": "Canais, conversas, encaminhamento e continuidade do relacionamento",
+      "recordAuthority": "Contexto das conversas e das solicitações recebidas",
+      "naming": "Nome funcional a alinhar na revisão comercial"
+    }
+  ],
+  "compositionExamples": [
+    {
+      "experience": "med",
+      "products": ["office", "atendimento"],
+      "domainExtension": "Capacidades clínicas, consulta e revisão profissional",
+      "preserve": ["Marca e linguagem médica", "Vínculos por clínica", "Contexto clínico", "Revisão e liberação profissional"],
+      "futureImpact": "Pacotes, equipe virtual e componentes de operação podem adotar a composição comum"
+    },
+    {
+      "experience": "juridico",
+      "products": ["office", "atendimento"],
+      "domainExtension": "Casos, documentos e responsabilidades jurídicas",
+      "preserve": ["Vocabulário do domínio", "Contexto dos casos", "Revisão profissional"]
+    },
+    {
+      "experience": "banking_operations",
+      "products": ["banking"],
+      "optionalProducts": ["office", "atendimento"],
+      "timing": "Futuro, após estabilização",
+      "branding": "Experiência do produto; não exige uma nova marca"
+    },
+    {
+      "experience": "credit_operations",
+      "products": ["credit"],
+      "optionalProducts": ["office", "atendimento", "banking"],
+      "timing": "Futuro, após estabilização",
+      "branding": "Experiência do produto; não exige uma nova marca"
+    }
+  ],
+  "currentOffersToClassify": ["biometrics", "decision"],
+  "packageDimensions": ["products", "roles", "routines", "integrations", "permissions", "requiredResources", "version", "usageAttribution"],
+  "compositionRequirements": [
+    "Identidade e contexto autorizados por organização e vínculo",
+    "Origem e autoridade dos registros preservadas",
+    "Contratos de ações e eventos versionados",
+    "Correlação, retomada e prevenção de execução duplicada",
+    "Responsabilidades e aprovações explícitas",
+    "Dependências de instalação e recursos definidos",
+    "Medição atribuída ao contrato correto"
+  ],
+  "commercialPrinciples": [
+    "Cada produto permite uma operação mínima coerente",
+    "Composição não implica contratação obrigatória dos demais produtos",
+    "Capacidade técnica compartilhada não equivale a produto adicional contratado",
+    "A vertical pode oferecer uma combinação em um pacote compreensível ao seu mercado",
+    "Mudanças de contrato, preços e medição recebem decisões próprias"
+  ],
+  "migrationPrinciples": [
+    "Preservar jornadas, dados, integrações e funcionalidades existentes",
+    "Começar por inventário, posicionamento e metadados de composição",
+    "Evitar renomeação técnica motivada apenas por taxonomia comercial",
+    "Separar mudanças editoriais das estruturais",
+    "Validar uma jornada antes de propagar às verticais",
+    "Reaproveitar componentes e contratos adequados ao domínio"
+  ],
+  "siteStrategy": {
+    "primaryEntry": "Produtos e trabalhos que resolvem",
+    "secondaryEntry": "Composições e aplicações contextualizadas",
+    "technicalDepth": "Capacidades, arquitetura, integrações e documentação",
+    "localesToPreserve": ["pt-BR", "en-US", "de-DE", "es-ES", "da-DK", "nl-NL", "fr-FR"],
+    "routePolicy": "Mapear e preservar rotas e links existentes na transição"
+  },
+  "references": [
+    { "repository": "site.catalisa.io", "path": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/docs/01-estrategia.md" },
+    { "repository": "site.catalisa.io", "path": "docs/redesign-2026-10-22/novos-insumos/catalisa-handoff-v1.1/docs/02-linguagem.md" },
+    { "repository": "site.catalisa.io", "path": "docs/direcao-editorial-2026-10-24/README.md" },
+    { "repository": "site.catalisa.io", "path": "src/redesign/data/product-directory.json" },
+    { "repository": "site.catalisa.io", "path": "src/redesign/data/architecture.json" },
+    { "repository": "wpp.bb.catalisa.io", "path": "apps/hotsite-kit/README.md" },
+    { "repository": "wpp.bb.catalisa.io", "path": "apps/painel-cliente-api/src/modules/workflow-templates/types/workflow-template.types.ts" },
+    { "repository": "wpp.bb.catalisa.io", "path": "apps/painel-cliente-api/src/modules/custom-actions/types/custom-action.types.ts" }
+  ]
+}

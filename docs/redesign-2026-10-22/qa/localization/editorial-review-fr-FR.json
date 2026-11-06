@@ -1,0 +1,159 @@
+{
+  "locale": "fr-FR",
+  "updatedAt": "2026-10-26T19:08:47.182Z",
+  "method": "Independent full source/translation pair review using authorized Claude CLI without tools, MCP or session persistence; corrections structurally validated before merge.",
+  "required": 4189,
+  "available": 4189,
+  "reviewed": 4189,
+  "complete": true,
+  "corrections": 161,
+  "batches": [
+    {
+      "id": "fe01a33a335153a52790",
+      "count": 300,
+      "corrections": 10,
+      "costUsd": 0.30697620000000003,
+      "durationMs": 33105
+    },
+    {
+      "id": "e5731757c9b49f3bbf78",
+      "count": 300,
+      "corrections": 14,
+      "costUsd": 0.342613,
+      "durationMs": 39361
+    },
+    {
+      "id": "62525e96ac2d94a2cdba",
+      "count": 300,
+      "corrections": 9,
+      "costUsd": 0.29310519999999995,
+      "durationMs": 32245
+    },
+    {
+      "id": "6a9ad0bc5f73b7a292e5",
+      "count": 300,
+      "corrections": 19,
+      "costUsd": 0.3463482,
+      "durationMs": 49146
+    },
+    {
+      "id": "7a44f7c3ef2ee0259b2e",
+      "count": 300,
+      "corrections": 7,
+      "costUsd": 0.3152566,
+      "durationMs": 31874
+    },
+    {
+      "id": "853d76283a4a28fc60d8",
+      "count": 300,
+      "corrections": 12,
+      "costUsd": 0.3672652,
+      "durationMs": 57755
+    },
+    {
+      "id": "e9bd8a0cbb5350244bb4",
+      "count": 300,
+      "corrections": 9,
+      "costUsd": 0.2991604,
+      "durationMs": 31034
+    },
+    {
+      "id": "ab6e496f4830691fb399",
+      "count": 300,
+      "corrections": 9,
+      "costUsd": 0.2970358,
+      "durationMs": 31705
+    },
+    {
+      "id": "ede8aaf783896bb91842",
+      "count": 300,
+      "corrections": 9,
+      "costUsd": 0.31215760000000004,
+      "durationMs": 37404
+    },
+    {
+      "id": "c90ad1fb04ca3d23fc69",
+      "count": 300,
+      "corrections": 12,
+      "costUsd": 0.3334174,
+      "durationMs": 45371
+    },
+    {
+      "id": "dbd8b003a51c1820c594",
+      "count": 300,
+      "corrections": 13,
+      "costUsd": 0.338045,
+      "durationMs": 43259
+    },
+    {
+      "id": "ff9ff9dd2cb3339ae567",
+      "count": 300,
+      "corrections": 11,
+      "costUsd": 0.2906084,
+      "durationMs": 31617
+    },
+    {
+      "id": "328f018ffb12abeb1aeb",
+      "count": 300,
+      "corrections": 17,
+      "costUsd": 0.3220728,
+      "durationMs": 46724
+    },
+    {
+      "id": "212d32766a62f7e92481",
+      "count": 289,
+      "corrections": 11,
+      "costUsd": 0.351596,
+      "durationMs": 47675
+    }
+  ],
+  "notes": [
+    "Os apóstrofos estão misturados: tipográfico (’) e reto ('). Convém padronizar no conjunto inteiro.",
+    "Mantidos como identificadores técnicos de building blocks: Decision Engine, Audit Trail e E-Signature.",
+    "«Mesa» foi uniformizada como «back-office», seguindo r_082240c583f1554e.",
+    "Mantive 'Banking' sozinho como nome de página/produto; só 'Banking Platform' foi traduzido como 'plateforme bancaire'.",
+    "'Pedido' aparece como 'Commande' e 'Demande' conforme o contexto; não alterei porque falta contexto para escolher um termo único.",
+    "Mantive 'Proposition en préparation' (lab.json, contexto pet) porque não se trata de uma proposta de crédito.",
+    "r_3a03eebd35010011: não está claro se 'correspondentes' significa correspondentes bancários ou correspondências (matches). Mantive o texto; vale confirmar o contexto.",
+    "r_307b6e38dfed716b e r_30f7004a9dc55952: mantive Data Store e Decision Engine porque são nomes técnicos de building blocks.",
+    "r_393ed03a75d6830f: falta um espaço entre as frases já no original (provavelmente uma quebra de linha no markup). Mantive igual.",
+    "r_2ad27e90bc451528: 'Md' é uma abreviação aceita em francês para milliard. Não converti o valor.",
+    "Foi adotado «capacité» para «capacidade» em todo o site, já que o termo alternava com «fonctionnalité».",
+    "«Mesa» foi harmonizada como «cellule (d’analyse/de crédit)», já que «bureau de crédit» designa um birô de crédito.",
+    "«Esteira» foi harmonizada como «pipeline».",
+    "Duas entradas na lista não mudam nada: r_3abb451f35a4d213 repete o texto atual sem alteração. r_3ba51564f46ef28e ficou redundante («File d’analyse de la cellule d’analyse»); o texto original («File d’analyse de la cellule») pode ser mantido.",
+    "Nomes técnicos, Pix, boleto, CPF, LGPD, building blocks e placeholders foram preservados; nenhum dos demais pares precisou de ajuste.",
+    "r_55c22f2bb2223e00 ('Cette prise en charge') e r_53a089dbd7854666 ('Cette conversation') traduzem 'atendimento' de formas diferentes; vale padronizar se os dois aparecerem no mesmo fluxo.",
+    "r_559aead08264d579 ('A' → 'La') é um fragmento ambíguo: confirmar no contexto se não é o rótulo 'Pessoa A'.",
+    "Tipografia inconsistente: parte dos alvos usa o apóstrofo tipográfico (’) e parte usa o reto ('). Recomenda-se normalizar tudo para ’ no código ou em um passe automático.",
+    "Encaminhamento aparece como \"transmission\" (contato/handoff) e como \"transfert\" (agentes/configuração). Os dois são aceitáveis no contexto, mas vale definir um glossário.",
+    "O título Febraban \"Pesquisa de Tecnologia Bancária 2026\" foi mantido em português por ser o título da fonte vinculada; está correto.",
+    "\"transcription en portugais\" preserva o fato original e não foi adaptado.",
+    "O tipo de apóstrofo varia entre as strings (' e ’). Vale padronizar no arquivo inteiro.",
+    "Em r_84d71e3472e6592e, confirmar se \"pedidos\" no console bancário são solicitações (demandes) ou pedidos comerciais (commandes).",
+    "As aspas tipográficas (’) e retas (') estão misturadas no conjunto. Vale padronizar tudo para a tipográfica.",
+    "\"Mesa de crédito\" agora é traduzido sempre como \"desk\". Se preferirem outro termo, como \"desk de crédit\" ou \"bureau de crédit\", ele precisa ser aplicado em todo o site da mesma forma.",
+    "Mantive \"Banking Platform\" como \"plateforme bancaire\" (minúscula). Convém confirmar se o rótulo do produto deve levar maiúscula (\"Plateforme bancaire\").",
+    "Mantive \"Opérateur\" e \"Contrôleur\" nos termos (Operador/Controlador da LGPD) para não divergir de outras definições que não aparecem neste lote. Vale validar com o time jurídico se \"Responsable du traitement\" e \"Sous-traitant\" seriam preferíveis.",
+    "Mantive Decision Engine, Decision Platform, Service Attestations, Banking Product Portfolio e File Storage como nomes técnicos de componentes.",
+    "Há uso misto de apóstrofos (’ e ') no lote. Recomenda-se padronizar em código.",
+    "r_c0b955b5c1d8e34d: o gênero de \"la suivante\" depende do substantivo omitido; conferir no contexto de Home.tsx.",
+    "r_b288993d3557349d / r_af14315a19e579b3: fragmentos de \"Vamos levar ... junto.\"; conferir se \"ensemble\" combina com a frase montada (talvez \"avec nous\").",
+    "r_ba49db83978a6193: \"Réponse en consultation\" é ambíguo; conferir o contexto da tela.",
+    "As 300 entradas foram revisadas; a maior parte já estava correta.",
+    "r_c8ab4c4cfbd89ee5: a frase de origem é ambígua (excluir os indicadores desta referência ou excluir a referência dos indicadores). A tradução mantida segue a segunda leitura; vale confirmar a intenção no código.",
+    "r_c284ad418b2c0f9a: 'Banking' foi traduzido como 'la plateforme bancaire', o que é aceitável.",
+    "Mantive os nomes técnicos e de blocos (Decision Engine, Building Blocks, Workflows, Rooms, Email, WPP Business, Meta Account, Customers), além de Pix, CPF, LGPD e do e-mail privacidade@catalisa.io.",
+    "\"31 Md R$\" ficou como está: o valor não foi convertido de moeda.",
+    "\"Proposta\" foi traduzida às vezes como \"demande\" e às vezes como \"proposition\", conforme o contexto (pedido de crédito ou oferta e aceite). Não mudei, mas vale padronizar se o glossário pedir.",
+    "Revisei todos os 300 pares. Os nomes de guia como 'guide Banking' foram mantidos porque se referem ao título do guia, e não ao rótulo do produto.",
+    "O placeholder de e-mail foi revertido para o original porque a regra exige preservar os endereços exatamente. Se ele puder ser localizado, convém validar isso com o produto.",
+    "O texto-fonte de r_e8f4d1a5ed1b6e79 tem o erro de digitação 'mudao'. A tradução está correta.",
+    "Revisei as 289 paires e corrigi 11.",
+    "Há uma mistura de apóstrofos tipográficos (’) e retos (') entre as paires. Não alterei isso uma a uma; recomendo padronizar no francês (de preferência ’).",
+    "Mantive «Banking» onde ele faz parte de um título genérico de caso de uso ou do nome do guia (r_8837ed9599f15804, r_a37a67270960b3b0). Se também for o rótulo do produto, deve virar «plateforme bancaire».",
+    "Mantive «Decision Engine» por tratá-lo como nome de building block técnico. Se for o rótulo do produto Decision, deve virar «Décision».",
+    "Mantive «DDD» entre parênteses nas mensagens de telefone, preservando o escopo brasileiro.",
+    "Para r_14e91f9a13ba40b1, a tradução «Aceite» → «Acceptation» depende do contexto do styleguide. Se «Aceite» for o nome de uma cor ou de um token, é preciso revisar."
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "title": "A casa · comparação de animação",
+  "state": "Duas montagens completas disponíveis nos dois formatos · preservar créditos",
+  "episode": 1,
+  "script": "A forma segue a conexão.",
+  "sourceImage": "../conceitos/c7b-criadora.jpg",
+  "sourcePrompt": "Locked-off camera. The woman gently turns her head toward the viewer. The hand already resting on the purple circle stays in contact with it. Her extended free hand makes a small, open-palmed presenting gesture, then settles. She gives a warm, confident smile. Her feet stay planted. Natural breathing and subtle fabric movement. The geometric studio panels remain perfectly still. One continuous shot.",
+  "clipSeconds": 5,
+  "filmSeconds": 30,
+  "estimatedTotalCredits": 60,
+  "spentCredits": 60,
+  "voice": "Sem locução, conforme o plano aprovado",
+  "music": "Mesma trilha 475 nas duas versões",
+  "decision": "Orientação mais recente: preservar créditos; seguir com material existente e animação local; handover para o Grok, sem novas confirmações criativas.",
+  "models": [
+    {
+      "id": "normal",
+      "name": "Normal · colagem existente",
+      "expectedCredits": 0,
+      "status": "Pronto · 30 segundos · imagens existentes e colagem",
+      "clip": null,
+      "film": "comparativo/normal-16x9.mp4",
+      "portrait": "comparativo/normal-9x16.mp4"
+    },
+    {
+      "id": "gen4-5",
+      "name": "Gen-4.5 · Pro",
+      "expectedCredits": 60,
+      "status": "Pronto · filme completo de 30 segundos · clipe de 5 segundos incorporado · 60 créditos",
+      "clip": "comparativo/gen4-5-5s.mp4",
+      "film": "comparativo/gen4-5-pro-16x9.mp4",
+      "portrait": "comparativo/gen4-5-pro-9x16.mp4"
+    }
+  ],
+  "apiEvidence": [
+    {
+      "model": "gen4_turbo",
+      "account": "Conta de teste autorizada; chave protegida separada",
+      "httpStatus": 400,
+      "error": "You do not have enough credits to run this task.",
+      "attemptedAt": "2026-10-25T01:38:05.678Z",
+      "taskId": null
+    },
+    {
+      "model": "gen4.5",
+      "account": "Conta de teste autorizada; chave protegida separada",
+      "httpStatus": 400,
+      "error": "You do not have enough credits to run this task.",
+      "attemptedAt": "2026-10-25T01:38:18.024Z",
+      "taskId": null
+    },
+    {
+      "model": "gen4_turbo",
+      "account": "API configurada em ~/.config/runway/api_key",
+      "httpStatus": 400,
+      "error": "You do not have enough credits to run this task.",
+      "attemptedAt": "2026-10-25T01:35:30.655Z",
+      "taskId": null
+    },
+    {
+      "model": "gen4.5",
+      "account": "Conta oficial configurada",
+      "httpStatus": 400,
+      "error": "You do not have enough credits to run this task.",
+      "attemptedAt": "2026-10-25T01:44:19.284Z",
+      "taskId": null
+    }
+  ],
+  "generation": {
+    "model": "gen4.5",
+    "provider": "Runway web app · Pro",
+    "account": "Klederson · Pro",
+    "clipSeconds": 5,
+    "downloadedSeconds": 5.041667,
+    "creditsCharged": 60,
+    "creditsBefore": 2250,
+    "creditsAfterGeneration": 2190,
+    "sourceImageSha256": "40fa9840add92ece400458a479336611735f07e242c9039237632edcc7a8225d",
+    "sourcePrompt": "Locked-off camera. The woman gently turns her head toward the viewer. The hand already resting on the purple circle stays in contact with it. Her extended free hand makes a small, open-palmed presenting gesture, then settles. She gives a warm, confident smile. Her feet stay planted. Natural breathing and subtle fabric movement. The geometric studio panels remain perfectly still. One continuous shot.",
+    "downloadedAt": "2026-10-25T02:07:38.987Z",
+    "file": "/home/klederson/Projects/videos.catalisa.app/jobs/a-casa-01-gen4-5-pro/gen/gen4-5.mp4",
+    "stage": "Filmes completos 16:9 e 9:16 renderizados; folhas de seis cenas inspecionadas; material reaproveitável.",
+    "freeAccountAttempt": "Gen-4 Turbo selecionado; UI exigiu upgrade, nenhuma geração iniciada"
+  },
+  "freeAccount": {
+    "name": "Catalisabot · Free",
+    "webCredits": 500,
+    "modelAttempted": "Gen-4 Turbo",
+    "generated": false,
+    "spentCredits": 0,
+    "result": "Botão de geração substituído por Upgrade; nenhuma geração iniciada."
+  },
+  "requestedVersions": [
+    {
+      "id": "normal",
+      "name": "Normal · colagem existente",
+      "status": "available",
+      "cost": 0,
+      "film": "comparativo/normal-16x9.mp4",
+      "portrait": "comparativo/normal-9x16.mp4",
+      "clip": null,
+      "detail": "Filme completo com imagens existentes, texto e trilha. Nenhuma geração nova.",
+      "job": "a-casa-01-manifesto"
+    },
+    {
+      "id": "test-turbo",
+      "name": "Gen-4 Turbo · teste",
+      "status": "not_generated",
+      "cost": 0,
+      "film": null,
+      "portrait": null,
+      "clip": null,
+      "detail": "API recusou por saldo insuficiente. Na tentativa pelo site, o botão exigiu Upgrade. Nenhuma tarefa foi criada."
+    },
+    {
+      "id": "official-turbo",
+      "name": "Gen-4 Turbo · oficial",
+      "status": "not_generated",
+      "cost": 0,
+      "film": null,
+      "portrait": null,
+      "clip": null,
+      "detail": "API recusou por saldo insuficiente. Nenhum clipe ou filme desta variante existe."
+    },
+    {
+      "id": "gen4-5",
+      "name": "Gen-4.5 · Pro",
+      "status": "available",
+      "cost": 60,
+      "film": "comparativo/gen4-5-pro-16x9.mp4",
+      "portrait": "comparativo/gen4-5-pro-9x16.mp4",
+      "clip": "comparativo/gen4-5-5s.mp4",
+      "detail": "Uma geração existente de 5 s incorporada na abertura do filme completo. Produzida anteriormente pelo site Pro, autorizado depois das recusas da API.",
+      "job": "a-casa-01-gen4-5-pro"
+    }
+  ],
+  "completionAudit": {
+    "file": "comparativo-auditoria.json",
+    "complete": false,
+    "actualVariants": 2,
+    "requestedVariants": 4
+  },
+  "originalPlannedCeiling": 110,
+  "newGenerationBudget": 0
+}

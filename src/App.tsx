@@ -7,6 +7,7 @@ import { LanguageLayout } from './components/layout/LanguageLayout';
 import { CookieConsent } from './components/shared/CookieConsent';
 import { PresentationGate } from './components/presentation/PresentationGate';
 import { useAnalytics } from './hooks/useAnalytics';
+import { liveRedesignPreview,redesignRelease } from './redesign/preview';
 
 const Home = lazy(() => import('./pages/Home').then(m => ({ default: m.Home })));
 const Studio = lazy(() => import('./pages/Studio').then(m => ({ default: m.Studio })));
@@ -53,6 +54,22 @@ const TrainingCertificate = lazy(() => import('./pages/training/TrainingCertific
 const Determinismo = lazy(() => import('./pages/Determinismo').then(m => ({ default: m.default })));
 const VtexDay2026 = lazy(() => import('./pages/VtexDay2026').then(m => ({ default: m.default })));
 const NotFound = lazy(() => import('./pages/NotFound').then(m => ({ default: m.NotFound })));
+const RedesignLab = lazy(() => import('./redesign/Lab'));
+const RedesignStyleguide = lazy(() => import('./redesign/Styleguide'));
+const RedesignHome = lazy(() => import('./redesign/Home'));
+const RedesignCapabilities = lazy(() => import('./redesign/Capabilities'));
+const RedesignVision = lazy(() => import('./redesign/Vision'));
+const RedesignArchitecture = lazy(() => import('./redesign/Architecture'));
+const RedesignStudio = lazy(() => import('./redesign/Studio'));
+const RedesignWorkflows = lazy(() => import('./redesign/Workflows'));
+const RedesignAgents = lazy(() => import('./redesign/Agents'));
+const RedesignGovernance = lazy(() => import('./redesign/Governance'));
+const RedesignDevelopers = lazy(() => import('./redesign/Developers'));
+const RedesignEcosystem = lazy(() => import('./redesign/Ecosystem'));
+const RedesignBanking = lazy(() => import('./redesign/Banking'));
+const RedesignCredit = lazy(() => import('./redesign/Credit'));
+const RedesignEditorial = lazy(() => import('./redesign/Editorial'));
+const RedesignResources = lazy(() => import('./redesign/Resources'));
 
 function PageLoader() {
   return (
@@ -89,10 +106,43 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
       <BrowserRouter>
-        <AnalyticsTracker />
+        {!(redesignRelease||liveRedesignPreview)&&<AnalyticsTracker />}
         <AppReadySignal />
         <Suspense fallback={<PageLoader />}>
           <Routes>
+            {/* Redesign previews remain isolated and noindex until migration and integrations pass QA. */}
+            {liveRedesignPreview && <Route path="/" element={<RedesignHome />} />}
+            <Route path="/lab" element={<RedesignLab />} />
+            <Route path="/design-system" element={<RedesignStyleguide />} />
+            <Route path="/design-system/home" element={<RedesignHome />} />
+            <Route path="/capacidades" element={<RedesignCapabilities />} />
+            <Route path="/capacidades/:slug" element={<RedesignCapabilities />} />
+            <Route path="/visao" element={<RedesignVision />} />
+            <Route path="/arquitetura" element={<RedesignArchitecture />} />
+            <Route path="/studio" element={<RedesignStudio />} />
+            <Route path="/workflows" element={<RedesignWorkflows />} />
+            <Route path="/agentes" element={<RedesignAgents />} />
+            <Route path="/governanca" element={<RedesignGovernance />} />
+            <Route path="/desenvolvedores" element={<RedesignDevelopers />} />
+            <Route path="/composicoes" element={<RedesignEcosystem />} />
+            <Route path="/ecossistema" element={<RedesignEcosystem />} />
+            <Route path="/ecossistema/banking" element={<RedesignBanking />} />
+            <Route path="/ecossistema/credit" element={<RedesignCredit />} />
+            <Route path="/ecossistema/med" element={<RedesignEcosystem />} />
+            <Route path="/ecossistema/juridico" element={<RedesignEcosystem />} />
+            <Route path="/ecossistema/recrutamento" element={<RedesignEcosystem />} />
+            <Route path="/ecossistema/biometrics" element={<RedesignEcosystem />} />
+            <Route path="/ecossistema/decision" element={<RedesignEcosystem />} />
+            <Route path="/perspectivas" element={<RedesignEditorial />} />
+            <Route path="/perspectivas/construir-por-composicao" element={<RedesignEditorial />} />
+            <Route path="/perspectivas/autonomia-responsabilidade" element={<RedesignEditorial />} />
+            <Route path="/perspectivas/regra-legivel" element={<RedesignEditorial />} />
+            <Route path="/perspectivas/open-finance-da-conexao-ao-produto" element={<RedesignEditorial />} />
+            <Route path="/perspectivas/resiliencia-e-liberdade-de-evoluir" element={<RedesignEditorial />} />
+            <Route path="/interfaces" element={<RedesignResources />} />
+            <Route path="/press-kit" element={<RedesignResources />} />
+            <Route path="/fontes" element={<RedesignResources />} />
+            <Route path="/mapa" element={<RedesignResources />} />
             {/* Fullscreen routes — no Header/Footer (presentation viewers only) */}
             <Route element={<LanguageLayout lang="pt-BR" />}>
               <Route path="/apresentacao/comercial" element={<PresentationGate><CommercialPresentation /></PresentationGate>} />
@@ -206,7 +256,7 @@ function App() {
             </Route>
           </Routes>
         </Suspense>
-        <CookieConsent />
+        {!(redesignRelease||liveRedesignPreview)&&<CookieConsent />}
       </BrowserRouter>
     </ChakraProvider>
   );

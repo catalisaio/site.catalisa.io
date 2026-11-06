@@ -1,0 +1,156 @@
+{
+  "locale": "de-DE",
+  "updatedAt": "2026-10-26T18:56:29.742Z",
+  "method": "Independent full source/translation pair review using authorized Claude CLI without tools, MCP or session persistence; corrections structurally validated before merge.",
+  "required": 4187,
+  "available": 4187,
+  "reviewed": 4187,
+  "complete": true,
+  "corrections": 250,
+  "batches": [
+    {
+      "id": "dbc9a1e1e67ccb6d569b",
+      "count": 300,
+      "corrections": 17,
+      "costUsd": 0.36396819999999996,
+      "durationMs": 50755
+    },
+    {
+      "id": "92b46705b61eb66553da",
+      "count": 300,
+      "corrections": 26,
+      "costUsd": 0.457717,
+      "durationMs": 76322
+    },
+    {
+      "id": "14f58862eac1a90a9198",
+      "count": 300,
+      "corrections": 22,
+      "costUsd": 0.3587572,
+      "durationMs": 54503
+    },
+    {
+      "id": "994bd6197502254b877b",
+      "count": 300,
+      "corrections": 14,
+      "costUsd": 0.37414420000000004,
+      "durationMs": 46329
+    },
+    {
+      "id": "28bb381eccd675d4a33e",
+      "count": 300,
+      "corrections": 13,
+      "costUsd": 0.3632044,
+      "durationMs": 48853
+    },
+    {
+      "id": "bd5fa006158318d7ef32",
+      "count": 300,
+      "corrections": 18,
+      "costUsd": 0.4331412,
+      "durationMs": 85830
+    },
+    {
+      "id": "167bfb4071428d79d483",
+      "count": 300,
+      "corrections": 19,
+      "costUsd": 0.39666840000000003,
+      "durationMs": 65982
+    },
+    {
+      "id": "5bd091dfde18cd82c7c3",
+      "count": 300,
+      "corrections": 10,
+      "costUsd": 0.3220718,
+      "durationMs": 36617
+    },
+    {
+      "id": "5cd7437037e467dd778a",
+      "count": 300,
+      "corrections": 18,
+      "costUsd": 0.3480456,
+      "durationMs": 42545
+    },
+    {
+      "id": "355044ff3af112836707",
+      "count": 300,
+      "corrections": 16,
+      "costUsd": 0.3736894,
+      "durationMs": 54253
+    },
+    {
+      "id": "bb9333c799f84a99b481",
+      "count": 300,
+      "corrections": 29,
+      "costUsd": 0.420357,
+      "durationMs": 75782
+    },
+    {
+      "id": "a5c0ff0553590ae7a346",
+      "count": 300,
+      "corrections": 19,
+      "costUsd": 0.39572039999999997,
+      "durationMs": 78593
+    },
+    {
+      "id": "49fb99066bafc7edc705",
+      "count": 300,
+      "corrections": 12,
+      "costUsd": 0.33147279999999996,
+      "durationMs": 44639
+    },
+    {
+      "id": "274f5a54ee03f91eee32",
+      "count": 287,
+      "corrections": 18,
+      "costUsd": 0.351793,
+      "durationMs": 60644
+    }
+  ],
+  "notes": [
+    "'mesa' aparece ora como 'Desk', ora como 'Backoffice' (r_082240c583f1554e, r_08ed12f0d99815f2, r_0f380f7da0c25c12, r_1045c9b58247d758, r_10ab552e9bf2d07c). Recomenda-se escolher um termo e usá-lo em todo o site.",
+    "r_08ed12f0d99815f2 ('VEJA A MESA GANHAR ESPAÇO'): a tradução 'an Bedeutung gewinnt' pode alterar o sentido se o texto se refere a ampliar a imagem. Vale verificar o contexto da interface.",
+    "r_0a8f48d18b822ecf ('Mehr Vertrag.') soa estranho, mas mantém o paralelismo com 'Weniger Rätselraten.'. Pode ser ajustado de acordo com o contexto de contrato de API.",
+    "Terminologia padronizada: capacidades = Fähigkeiten; política = Richtlinie; proposta de crédito = Antrag; mesa = Desk; assinatura da marca = Schriftzug.",
+    "r_2380b8b6bcac5a01 (Lab) mantém 'Angebot' porque parece uma proposta comercial, não de crédito.",
+    "r_18ecc90334e3f75d (prompt do LLM) manteve 'Funktionen'; a diferença não afeta o resultado.",
+    "'Banking' sozinho foi mantido por ser usual em alemão; só 'Banking Platform' foi traduzido.",
+    "r_3a03eebd35010011: \"correspondentes\" é ambíguo. Pode ser correspondentes bancários ou registros que correspondem a um critério; o texto foi mantido e precisa ser verificado no contexto.",
+    "r_32844d300013ab39: \"market subject\" pode ser um identificador técnico, e não um tema; recomenda-se verificar.",
+    "r_393ed03a75d6830f: o espaço que falta após o ponto também falta na origem e foi mantido igual.",
+    "Revisei os 300 pares e fiz 14 correções. A maioria trata de terminologia inconsistente: Console, Experience, Fähigkeiten e Sachbearbeitung para „mesa“.",
+    "Também corrigi um nome de produto genérico que não estava traduzido (Banking Platform → Banking-Plattform) e removi um termo em português que ficou nos Termos (Controlador).",
+    "Em „movimentáveis“ usei „verfügbar“, seguindo o sentido de saldo disponível para movimentação. Se o contexto da tela for outro, vale conferir.",
+    "As traduções de SEO usam „Anwendungen“ para „aplicações“, o que é aceitável. Uma alternativa seria „Anwendungsfälle“, mas não mudei para manter a consistência.",
+    "Pode movimentar = Verfügbarer Saldo foi mantido por expressar corretamente o saldo disponível.",
+    "Screens e Ansichten aparecem alternadamente em textos de prévia; vale uniformizar.",
+    "Revisei os textos jurídicos (LGPD, foro, encargos): os termos brasileiros foram preservados e o escopo segue correto.",
+    "'Encontro' é traduzido em geral como 'Termin', mas em r_685d74e9a22570ec como 'Treffen'. Mantive porque o contexto ali é uma reunião com a equipe.",
+    "Em r_6f5da6bebfc88820, 'titular' foi traduzido como 'betroffene Person' (titular dos dados). Se o contexto for o titular da conta, use 'Kontoinhaber'.",
+    "Em r_628af03846cafe95, 'originiert' é termo técnico de crédito e é aceitável; ainda assim, vale confirmar o tom.",
+    "r_756717359216a2b7: 'Seu banco de' → 'Ihre Bank aus' pode estar incorreto se o fragmento continuar como 'banco de dados' (Datenbank); verificar contexto em DeveloperArt.tsx.",
+    "r_82acebf08dd2e25f: 'jeden kennen' depende do gênero do substantivo da linha seguinte; verificar.",
+    "Fonte de privacidade cita 'Unsplash (Imgur Inc.)'; mantido como no original, mas o fato parece incorreto na fonte.",
+    "'experiência' aparece como 'Erlebnis' (r_8b120d27c8907dfe) e como 'Experience' (r_9aea9ec12842fe93); vale confirmar qual termo usar em Developers.tsx.",
+    "'Transkription auf Portugiesisch' foi mantido de propósito porque é um fato do produto.",
+    "'Experience' (Anglizismus) e 'Erfahrung' coexistem; considerar unificar em revisão futura.",
+    "'Pedido' (r_9e9ea5774a2dda55) foi traduzido como 'Bestellung'; verificar no contexto se não seria 'Anfrage'.",
+    "Terminologia padronizada: Banking-Plattform, Kreditplattform, Biometrie; 'capacidade' = 'Funktion'; 'mesa' (mesa de crédito) = 'Desk'; 'titular' = 'Kontoinhaber'.",
+    "Mantidos sem alteração: Banking Product Portfolio e Audit Trail, tratados como nomes de building blocks.",
+    "r_afc19f1734c1d195 ('Principal' → 'Hauptseite'): o rótulo pode ser de navegação principal ('Hauptnavigation'), por isso convém conferir o contexto no componente.",
+    "Ambíguos, deixados como estão: r_bda69fef06f49fe7 ('as suas peças' pode significar 'seine Teile') e r_b26620abce64f6c3 (o gênero do fragmento 'hat eine' depende da continuação).",
+    "Ambíguos, deixados como estão: r_b1e691cd03dc4a40 ('FREUT UNS,') depende do que vem depois; verificar.",
+    "A correção r_b0de64e6b3381e81 repete o texto atual sem mudança e pode ser descartada.",
+    "Nomes de building blocks técnicos (Payments, AI Engine, Calculations Engine, BaaS) foram mantidos; 'Banking' foi mantido, porque só 'Banking Platform' está na lista de nomes traduzíveis.",
+    "Termos ambíguos de lab.json ('Novo pedido', 'Próximo atendimento') foram mantidos por falta de contexto.",
+    "r_df5e906240268025: fragmento de sufixo de plural (\"s disponíveis\"); em alemão a pluralização não funciona por concatenação de sufixo. Recomenda-se tratar no código com formas completas no singular e no plural.",
+    "Os termos \"contratos\" (contratos de API) aparecem como \"Verträge\" (r_d7b3572446ea8d76, r_da19fbcd4b7d286a, r_e445fc304b0ef4db); mantido, mas considere \"API-Verträge\" se o contexto for exclusivamente técnico.",
+    "Há inconsistência menor de espaçamento antes de reticências (\"gesendet…\" vs \"erfasst …\").",
+    "r_f544f3f9670c397e: o exemplo de e-mail placeholder foi localizado (sie@unternehmen.com). A regra pede preservar e-mails exatamente; confirmar se placeholders de formulário podem ser localizados ou se devem voltar para voce@empresa.com.",
+    "r_f3cdf4a1132317a4 / r_f1826d31fbb1e51d: 'proposta' alterna entre 'Angebot' e 'Antrag'; avaliar padronização no contexto de crédito.",
+    "r_e8f4d1a5ed1b6e79: o texto-fonte tem erro de digitação ('mudao'); a tradução está correta.",
+    "'Decision Engine' foi mantido como nome técnico de building block.",
+    "Os fragmentos ('financeiro com', 'e acontecer,', 'O evento tem') foram mantidos sem completar a frase.",
+    "As referências brasileiras (BRL, Banco Central, DDD, LGPD, Art. 7, I) mantêm o escopo original."
+  ]
+}

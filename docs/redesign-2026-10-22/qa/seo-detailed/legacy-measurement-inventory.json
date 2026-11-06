@@ -1,0 +1,44 @@
+{
+  "checkedAt": "2026-10-26T14:58:51.916Z",
+  "scope": "Read-only original public production HTML and public Google tag configuration; no dashboard/account access or production mutation.",
+  "productionHomeSha256": "e446bf5b5f201e8db907a3186f022f07fb902c76c85a134c2904d560a8957735",
+  "google": {
+    "tagId": "GT-5TW4R7FV",
+    "ga4Destination": "G-V6VD9QY6CC",
+    "publicTagHttpStatus": 200,
+    "publicTagSha256": "0f11f57e2cdf3051483a35154e939e3e355aa1f8340d7a00c0f1db4f0c9156c7",
+    "automaticHistoryPageViews": true,
+    "automaticFormMeasurement": true,
+    "automaticUserProvidedData": true,
+    "websiteSourceCallsDataLayerWithoutVerifiedCustomTagTriggers": true
+  },
+  "clarity": {
+    "site": "vp6hhn7234",
+    "presentations": "vp5b7apoc2"
+  },
+  "searchConsole": {
+    "htmlVerificationFile": "googlebf700a2a05f1612d.html",
+    "filePresentInSource": true,
+    "accountAccess": false
+  },
+  "otherPublicTrackingIdsFound": [],
+  "otherFirstPartySystems": [
+    "Essential Contact/Lab session and site inbox",
+    "Supabase authenticated training and invite/presentation systems",
+    "H14 market insights: existing implementation disabled pending specific policy approval"
+  ],
+  "migration": {
+    "preserveGa4Destination": true,
+    "onePageViewOwner": "Existing Google automatic history measurement; no duplicate React page_view",
+    "consent": "Existing catalisa_cookie_consent granted/denied key, optional scripts only after grant",
+    "adsConsent": "All advertising storage, user-data and personalization denied",
+    "clarityOnContactLabOrAuthenticatedPages": false,
+    "previewsTransmitToProductionAnalytics": false,
+    "productionDeployment": false
+  },
+  "limits": [
+    "No account-level reports, key-event configuration, custom-dimension configuration, retention settings or Search Console coverage verified",
+    "No ranking or traffic guarantee",
+    "Absence of other IDs in sampled public code does not prove no external server-side integrations exist"
+  ]
+}

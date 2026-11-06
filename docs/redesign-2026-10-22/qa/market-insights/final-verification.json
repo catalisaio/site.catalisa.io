@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-25T05:53:16.487Z",
+  "passed": true,
+  "scope": "Final repository tests and full application plus Node TypeScript check. No deployment or collection activation.",
+  "tests": {
+    "command": "npx vitest run --maxWorkers=1",
+    "passed": 222,
+    "files": 18,
+    "durationSeconds": 13.54,
+    "exitCode": 0
+  },
+  "typecheck": {
+    "command": "npx tsc -b --noEmit",
+    "scope": "Application and Node project references",
+    "exitCode": 0
+  },
+  "verified": [
+    "human review single CAS and rollback",
+    "Node budget 90/60 and unmarked 55/45 defaults",
+    "ten contractual producer names through committed handlers",
+    "bounded three-event worker cycle",
+    "upstream 429 circuit and Retry-After",
+    "concurrent outbox CAS, lost-ACK dedup and maximum eight attempts",
+    "staff authentication, aggregate minimum-five suppression and review audit",
+    "subject erasure and replay exclusion",
+    "browser-safe shared market DTOs"
+  ],
+  "sourceSha256": {
+    "shared/site-market.ts": "a4274f8c03aa3ecefb7232d7d7deb950fd138e266decc338c823685c470829c5",
+    "server/site/api.ts": "1b3034f434ee0c6edbb02ffc0f0d12e2445ff0720999c4969a1617563a3d91ff",
+    "server/site/types.ts": "71d9e53eccd8cc0e0138458a6ae47c5bf841f481ba68e76cff070046de42d836",
+    "server/site/contact-operations.ts": "14645ccf9e7a5d7b1efba4ecc275a3c3f9e8d5d29240acb4c6a556033534cc8b",
+    "server/site/runtime.ts": "34889716bf87d3f7c854f486cc5d48c1cbaf8be62f94c6cb68638aab739a123a",
+    "server/site/standalone.ts": "c454e608ce6a9bb4623a2786768ba581323a005c5f62152a5eee9b0efc9e79da",
+    "server/site/site-inbox.ts": "e30a388cadfcebd4f210c05540d9def08724f2d944bfadade2f24a0d0e368414",
+    "server/site/site-team-api.ts": "b145f96b5993bfbecdaccb16a269d75fcd87729fe9ed3f368239e0fb21421174",
+    "server/site/site-market-api.ts": "aefdc28f1f7c4911dffdcf5100bc83032b136ba60b5440ce18a9ac00c6f7a47d",
+    "server/site/site-market-insights.ts": "af1c01f39f300b5ee6e3ae9bd82a43f0e2df4195a0d2eaec79c762e5ac9fbd4a",
+    "server/site/site-market-store.ts": "1c028e3d2678f2f56102bd3c52d64550ad615463d331aa9938e5ce4dc4a54dff",
+    "server/site/site-market-outbox.ts": "fcc3b2482291fbd52a17a35a32305bb5831d948bce358b4e9ad4023210487927",
+    "server/site/upstream-pressure.ts": "7b9eac8d11e03682e73abedb94a7809e57f5923bb14fcd5a9c9d71b55e6d936f",
+    "server/site/contact-operations.test.ts": "bac8033458a443fff8f570fbf6819875e69fb29f85989c4777bcc51c2c48c702",
+    "server/site/runtime-budget.test.ts": "aad60d3db041708a4cb5386db64649dc2efb4cf9470d0372d1b7a28c284f4aa4",
+    "server/site/site-market-insights.test.ts": "f6ebd3cf1e8678d088d4ff6179e7c60ed9640bc6e59b695033560b42aa08f696",
+    "server/site/site-market-flow.test.ts": "a84b2dfdbbd32183d97dbc14ffab4df212e997602d8433074b76548322973f3d"
+  },
+  "policyApprovalClaimed": false,
+  "liveAnalyticsEnabled": false
+}

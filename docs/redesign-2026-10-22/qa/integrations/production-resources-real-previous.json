@@ -1,0 +1,179 @@
+{
+  "date": "2026-10-25T05:56:19.806Z",
+  "passed": true,
+  "scope": "Two in-process site BFFs using actual dedicated production IAM/Data Store/owner AI agent, synthetic credit-product brief and here-only inbox. No website deployment, traffic change, CRM creation, email/WhatsApp or real market collection.",
+  "realProductionAiMs": 19817,
+  "concept": {
+    "conceptRef": "concept_72265e5f-fec6-42c6-baf1-b0a5b14e5698",
+    "version": 1,
+    "briefVersion": 1,
+    "content": {
+      "schemaVersion": "1.0",
+      "title": "Crédito para Lojistas",
+      "summary": "Plataforma de análise e concessão de crédito para lojistas, substituindo planilhas manuais por etapas estruturadas com conferência humana antes da proposta de limite.",
+      "hypothesis": "Lojistas (MEI, PJ pequeno) precisam de crédito ágil com transparência na análise. Assumimos que a conferência humana ocorre antes da proposta ser comunicada ao cliente, não após aceitação. Público-alvo, volume esperado e critérios de risco ainda não foram definidos e devem ser validados.",
+      "roles": [
+        "Lojista (solicitante)",
+        "Analista de crédito (revisor)",
+        "Administrador (gestor da carteira)"
+      ],
+      "screens": [
+        {
+          "id": "screen_1_solicitar",
+          "title": "Solicitar Crédito",
+          "description": "Formulário inicial para o lojista informar dados da empresa e finalidade do crédito.",
+          "items": [
+            {
+              "label": "Razão Social / Nome",
+              "value": "Campo obrigatório"
+            },
+            {
+              "label": "CNPJ / CPF",
+              "value": "Identificação da empresa"
+            },
+            {
+              "label": "Valor solicitado",
+              "value": "Limite de crédito desejado"
+            }
+          ],
+          "action": {
+            "label": "Enviar para análise",
+            "nextScreenId": "screen_2_analise"
+          }
+        },
+        {
+          "id": "screen_2_analise",
+          "title": "Análise de Crédito",
+          "description": "Painel do analista com dados estruturados, regras de decisão aplicadas e recomendação antes de liberar proposta.",
+          "items": [
+            {
+              "label": "Dados do solicitante",
+              "value": "CNPJ, faturamento, histórico"
+            },
+            {
+              "label": "Resultado da análise",
+              "value": "Score, restrições, limite recomendado"
+            },
+            {
+              "label": "Parecer do analista",
+              "value": "Aprovado, rejeitado ou com ressalvas"
+            }
+          ],
+          "action": {
+            "label": "Confirmar e gerar proposta",
+            "nextScreenId": "screen_3_proposta"
+          }
+        },
+        {
+          "id": "screen_3_proposta",
+          "title": "Proposta de Crédito",
+          "description": "Resumo final com limite aprovado, taxa e condições, pronto para envio ao lojista.",
+          "items": [
+            {
+              "label": "Limite aprovado",
+              "value": "Valor final após análise"
+            },
+            {
+              "label": "Taxa e prazo",
+              "value": "Condições comerciais"
+            },
+            {
+              "label": "Próximos passos",
+              "value": "Assinatura eletrônica e ativação"
+            }
+          ],
+          "action": {
+            "label": "Enviar proposta",
+            "nextScreenId": null
+          }
+        }
+      ],
+      "blocks": [
+        {
+          "slug": "customers",
+          "role": "Cadastro e validação de CPF/CNPJ do lojista"
+        },
+        {
+          "slug": "data-store",
+          "role": "Armazenar histórico de solicitações e análises por lojista"
+        },
+        {
+          "slug": "decision-engine",
+          "role": "Tabelas DMN com regras de elegibilidade, score e limite recomendado"
+        },
+        {
+          "slug": "products",
+          "role": "Parâmetros do produto de crédito (taxa, prazo, limites por faixa)"
+        },
+        {
+          "slug": "document-template",
+          "role": "Gerar proposta e contrato com variáveis tipadas"
+        },
+        {
+          "slug": "e-signature",
+          "role": "Coleta de assinatura eletrônica no contrato"
+        }
+      ],
+      "journey": [
+        {
+          "id": "step_1_captura",
+          "label": "Captura de solicitação",
+          "description": "Lojista preenche formulário com dados básicos da empresa e valor desejado.",
+          "blockSlugs": [
+            "customers",
+            "data-store"
+          ],
+          "humanReview": false
+        },
+        {
+          "id": "step_2_analise_automatica",
+          "label": "Análise automatizada",
+          "description": "Sistema aplica regras de decisão (elegibilidade, score, limite) sem intervenção humana.",
+          "blockSlugs": [
+            "decision-engine",
+            "products",
+            "data-store"
+          ],
+          "humanReview": false
+        },
+        {
+          "id": "step_3_conferencia_humana",
+          "label": "Conferência e autorização",
+          "description": "Analista revisa resultado, parecer e recomendação antes de gerar a proposta ao cliente.",
+          "blockSlugs": [
+            "data-store"
+          ],
+          "humanReview": true
+        },
+        {
+          "id": "step_4_proposta_e_assinatura",
+          "label": "Proposta e assinatura",
+          "description": "Sistema gera proposta com condições aprovadas e coleta assinatura eletrônica do lojista.",
+          "blockSlugs": [
+            "document-template",
+            "e-signature",
+            "data-store"
+          ],
+          "humanReview": false
+        }
+      ],
+      "limitations": [
+        "Escopo não inclui integração com bureaus de crédito, open finance ou sistemas bancários; consultas de risco devem ser configuradas como entrada manual ou via API externa.",
+        "Modelo de decisão (variáveis, pesos, limiares) não foi definido; será necessário workshop de risco e compliance.",
+        "Públicoalvo exato (MEI, PJ até X faturamento, segmentos) deve ser confirmado antes de parametrizar regras.",
+        "Fluxo assume conferência humana antes da proposta; se o requisito for pós-assinatura, a jornada muda.",
+        "Não inclui cobrança, provisão ou acompanhamento de carteira em aberto; são escopo de fase posterior.",
+        "Permissões e segregação de papéis (analista vs. gestor) não foram detalhadas; devem ser configuradas no IAM."
+      ],
+      "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+    }
+  },
+  "replayedSameJob": true,
+  "emailOnlyAccepted": true,
+  "visitorAndTeamIsolation": true,
+  "authenticatedOwnerOpenedClaimedReplied": true,
+  "replyRecoveredAcrossInstances": true,
+  "marketCollectionRemainsDisabled": true,
+  "syntheticPacketRemoved": true,
+  "syntheticSessionsRemoved": true
+}

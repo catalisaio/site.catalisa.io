@@ -1,0 +1,129 @@
+{
+  "url": "https://entregas.interno.catalisa.app",
+  "username": "entregas",
+  "checkedAt": "2026-10-21T00:08:18.827129+00:00",
+  "checks": [
+    {
+      "path": "/",
+      "anonymous": 401,
+      "incorrectPassword": 401,
+      "authenticated": 200
+    },
+    {
+      "path": "/timeline.html",
+      "anonymous": 401,
+      "incorrectPassword": 401,
+      "authenticated": 200
+    },
+    {
+      "path": "/dashboard.html",
+      "anonymous": 401,
+      "incorrectPassword": 401,
+      "authenticated": 200
+    },
+    {
+      "path": "/cadeia-de-valor.html",
+      "anonymous": 401,
+      "incorrectPassword": 401,
+      "authenticated": 200
+    },
+    {
+      "path": "/cadeia-de-valor.pdf",
+      "anonymous": 401,
+      "incorrectPassword": 401,
+      "authenticated": 200
+    },
+    {
+      "path": "/dashboard.pdf",
+      "anonymous": 401,
+      "incorrectPassword": 401,
+      "authenticated": 200
+    },
+    {
+      "path": "/dashboard-data.json",
+      "anonymous": 401,
+      "incorrectPassword": 401,
+      "authenticated": 200
+    },
+    {
+      "path": "/relatorio-completo.pdf",
+      "anonymous": 401,
+      "incorrectPassword": 401,
+      "authenticated": 200
+    },
+    {
+      "path": "/developy.pdf",
+      "anonymous": 401,
+      "incorrectPassword": 401,
+      "authenticated": 200
+    },
+    {
+      "path": "/investidores.pdf",
+      "anonymous": 401,
+      "incorrectPassword": 401,
+      "authenticated": 200
+    },
+    {
+      "path": "/entrevistas.pdf",
+      "anonymous": 401,
+      "incorrectPassword": 401,
+      "authenticated": 200
+    },
+    {
+      "path": "/dados.json",
+      "anonymous": 401,
+      "incorrectPassword": 401,
+      "authenticated": 200
+    },
+    {
+      "path": "/dossie-catalisa.zip",
+      "anonymous": 401,
+      "incorrectPassword": 401,
+      "authenticated": 200
+    }
+  ],
+  "tlsVerified": true,
+  "certificate": {
+    "issuer": [
+      [
+        [
+          "countryName",
+          "US"
+        ]
+      ],
+      [
+        [
+          "organizationName",
+          "Let's Encrypt"
+        ]
+      ],
+      [
+        [
+          "commonName",
+          "YR2"
+        ]
+      ]
+    ],
+    "notAfter": "Jan 18 22:09:35 2027 GMT",
+    "subjectAltName": [
+      [
+        "DNS",
+        "entregas.interno.catalisa.app"
+      ]
+    ],
+    "sha256": "7b30111e311d3745711242cc565c088e9322f0517fc4643f518abd4f443b10db"
+  },
+  "htmlHashesVerified": true,
+  "serviceId": "lsvc-o68bbc75",
+  "release": "20261020-ccd86bb9fe63",
+  "browserVerified": true,
+  "dashboardCharts": 22,
+  "dashboardPdfPages": 14,
+  "valueChain": {
+    "stages": 6,
+    "stories": 37,
+    "distinctPrs": 220,
+    "presentationVerified": true,
+    "pdfPages": 23
+  }
+}

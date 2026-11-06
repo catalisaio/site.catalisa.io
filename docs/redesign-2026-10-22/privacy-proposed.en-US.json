@@ -1,0 +1,214 @@
+{
+  "title": "Privacy Policy",
+  "lastUpdated": "Last updated: October 2026",
+  "hero": {
+    "badge": "Privacy",
+    "heading": "Your privacy,",
+    "headingGradient": "no legalese.",
+    "subtitle": "We believe you deserve to understand how your data is handled — for real, no fine print."
+  },
+  "summary": {
+    "title": "Your privacy in 2 minutes",
+    "subtitle": "A summary of the key points. For the full version, see below.",
+    "cards": [
+      {
+        "icon": "FiDatabase",
+        "title": "What we collect",
+        "description": "Name, email, phone, usage data and technical data. Nothing beyond what's necessary.",
+        "linkText": "See details",
+        "anchor": 2
+      },
+      {
+        "icon": "FiTarget",
+        "title": "Why we use it",
+        "description": "To operate the platform, improve your experience and keep everything secure.",
+        "linkText": "See details",
+        "anchor": 4
+      },
+      {
+        "icon": "FiToggleRight",
+        "title": "Cookies",
+        "description": "We use essential cookies and, with your consent, analytics. You choose.",
+        "linkText": "See details",
+        "anchor": 5
+      },
+      {
+        "icon": "FiShare2",
+        "title": "Who we share with",
+        "description": "Infrastructure and AI needed for the service. Human support for this site continues on this page.",
+        "linkText": "See details",
+        "anchor": 6
+      },
+      {
+        "icon": "FiLock",
+        "title": "Security",
+        "description": "Protected connections, access restricted to your conversation and private content encrypted in storage.",
+        "linkText": "See details",
+        "anchor": 8
+      },
+      {
+        "icon": "FiUserCheck",
+        "title": "Your rights",
+        "description": "Access, correction, deletion, portability and more. Contact us: privacidade@catalisa.io",
+        "linkText": "See details",
+        "anchor": 10
+      }
+    ]
+  },
+  "fullPolicy": {
+    "title": "Full Privacy Policy",
+    "subtitle": "How we handle your data"
+  },
+  "controls": {
+    "expandAll": "Expand all",
+    "collapseAll": "Collapse all"
+  },
+  "cta": {
+    "heading": "Questions about your data?",
+    "subtitle": "Talk to our DPO — we're here to help.",
+    "primaryLabel": "privacidade@catalisa.io",
+    "secondaryLabel": "WhatsApp"
+  },
+  "sections": [
+    {
+      "title": "Data Controller Identification",
+      "content": "This Privacy Policy describes how Catalisa collects, uses, stores and protects your personal data.\n\nData Controller:\nCatalisa Tecnologia e Dados LTDA\nCNPJ (Tax ID): 49.646.439/0001-85\nAddress: Rodovia Raposo Tavares, 7389 - Sao Paulo - SP - Brazil - 05577-902\n\nData Protection Officer (DPO):\nEmail: privacidade@catalisa.io\nContact channel: privacidade@catalisa.io"
+    },
+    {
+      "title": "Scope",
+      "content": "This Policy applies to the processing of personal data carried out by Catalisa in two categories:\n\n(a) Platform user data: personal information provided by you when creating an account, using our services or interacting with our website.\n\n(b) Users' customer data: personal information of third parties (the User's end customers) that is processed through the Platform, especially via WhatsApp integrations. For this data, the relationship between Catalisa and the User follows the roles defined in Section 13.\n\nThis Policy is an integral part of the Platform's Terms of Service."
+    },
+    {
+      "title": "Data Collected",
+      "content": "We collect the following categories of personal data:",
+      "items": [
+        "Registration data (legal basis: contract performance): full name, corporate email, phone number, company name, job title, tax ID. Collected at the time of registration on the Platform.",
+        "Usage data (legal basis: legitimate interest): Platform interactions, features used, access logs, usage times, actions taken. Collected automatically during use.",
+        "Communication data (legal basis: contract performance): messages processed by the Platform, message templates, Workflow and AI Agent configurations. Processed according to User instructions.",
+        "Technical data (legal basis: legitimate interest): IP address, browser type and version, operating system, device, screen resolution, pages accessed, time spent. Collected automatically by cookies and similar technologies."
+      ]
+    },
+    {
+      "title": "Legal Basis (LGPD Art. 7)",
+      "content": "The processing of personal data by Catalisa is based on the following legal bases provided by the LGPD (Brazilian General Data Protection Law):",
+      "items": [
+        "Contract performance (Art. 7, V): processing necessary for the provision of contracted services, including account creation, message processing, Workflow execution and technical support.",
+        "Legitimate interest (Art. 7, IX): processing necessary to improve the Platform, ensure security, prevent fraud, perform usage analytics and send service communications. We conduct a Legitimate Interest Assessment (LIA) to ensure our interests do not override the data subject's rights.",
+        "Consent (Art. 7, I): used for specific purposes such as marketing communications, analytical and marketing cookies, and participation in surveys. Consent may be revoked at any time without prejudice to prior processing.",
+        "Legal obligation (Art. 7, II): processing necessary to comply with legal and regulatory obligations, including retention of fiscal and financial data, compliance with requests from competent authorities and maintenance of legally required records."
+      ]
+    },
+    {
+      "title": "Processing Purposes",
+      "content": "We use your personal data for the following purposes:",
+      "items": [
+        "Service provision: operating the Platform, processing automations and Workflows, running AI Agents and providing contracted features.",
+        "Account management: creating and maintaining your account, authenticating access, managing permissions and preferences.",
+        "Technical support: handling support requests, diagnosing issues and providing technical assistance.",
+        "Service communications: sending notifications about maintenance, updates, terms changes and essential service information.",
+        "Platform improvement: analyzing usage patterns (in aggregate), identifying improvements, developing new features and fixing bugs.",
+        "Security: monitoring suspicious activities, preventing fraud, detecting vulnerabilities and protecting Platform integrity.",
+        "Legal compliance: meeting legal and regulatory obligations and responding to requests from competent authorities.",
+        "Marketing (with consent): sending communications about new features, educational content and offers, only when authorized by the data subject."
+      ]
+    },
+    {
+      "title": "Cookies and Tracking Technologies",
+      "content": "Our website and Platform use cookies and similar technologies to improve your experience. We use Google Tag Manager (GTM) and Google Analytics 4 (GA4) with Consent Mode v2 implemented.\n\nCookie categories:",
+      "items": [
+        "Strictly necessary cookies: essential for Platform operation, including authentication, security and session preferences. Stored via localStorage and session cookies. Do not require consent.",
+        "Analytical cookies (GA4): collect aggregated data about website and Platform usage for improvement purposes. Include: _ga (user identification, 2 years), _ga_* (session state, 2 years). Require consent.",
+        "Marketing cookies: used to deliver relevant communications. Activated only with explicit consent via the cookie banner.",
+        "External resources (images): our website may load illustrative images from third-party services, such as Unsplash (Imgur Inc.), to enrich editorial content. When loading these images, your browser makes direct requests to the provider's servers, which may receive technical data such as IP address, user-agent and the URL of the visited page. These resources are loaded based on legitimate interest (LGPD Art. 7, IX) to improve user experience. They do not require additional consent, as they do not install cookies or trackers."
+      ]
+    },
+    {
+      "title": "Data Sharing",
+      "content": "We do not sell your personal data. We share data only with the following categories of recipients, to the extent necessary for the purposes described in this Policy:",
+      "items": [
+        "Infrastructure providers: hosting, storage and processing needed for the service. Processing locations depend on the services used; we do not guarantee that all data resides exclusively in Brazil.",
+        "Meta/WhatsApp: message processing through the WhatsApp Business API. Necessary for communication integration functionality. Subject to WhatsApp's Terms of Service and Privacy Policy.",
+        "Anthropic (Claude): natural language processing and content generation by AI Agents. Data may be transferred to servers in the United States (see Section 8).",
+        "OpenAI (GPT): natural language processing and content generation by AI Agents. Data may be transferred to servers in the United States (see Section 8).",
+        "Unsplash (Imgur Inc.): provision of illustrative images for the website's editorial content. When loading pages with external images, your browser makes requests to Unsplash servers, which may receive technical data (IP address, user-agent). No personal data is actively shared by Catalisa. Subject to Unsplash's Privacy Policy (unsplash.com/privacy).",
+        "Microsoft Clarity: behavioral analytics and heatmap tool to improve user experience. May collect interaction data such as clicks, scrolling and mouse movements. Subject to Microsoft's Privacy Policy.",
+        "Competent authorities: when required by law, judicial or administrative order, or to protect rights in legal proceedings."
+      ]
+    },
+    {
+      "title": "International Data Transfer",
+      "content": "Concept generation uses the AI provider configured for the service, currently Anthropic (Claude). This processing may take place outside Brazil. We send the brief and context needed to generate or refine the concept; your name, email and phone are not intentionally included in that request. Do not put sensitive personal information, credentials or secrets in free text.\n\nRecords retained by the AI provider are subject to its terms, settings and retention rules. Conversation periods on this site do not mean that all third-party copies are deleted at the same time. To clarify the processing applicable to your request, contact the privacy channel identified in this policy."
+    },
+    {
+      "title": "Data Security",
+      "content": "We use the following measures to protect conversations and support on this site:",
+      "items": [
+        "HTTPS connections while you use the site.",
+        "Separate essential cookies to keep your conversation and authenticate the team. A visitor cookie does not grant access to other people’s conversations or to team access.",
+        "Private content encrypted in storage and access restricted to authorized staff. The server and AI provider must process the content needed for the service; this is not end-to-end encryption.",
+        "Access checks, usage limits and validation of submitted data to reduce unauthorized access and abuse.",
+        "The AI produces a structured preview. The site does not execute code supplied by the AI or the visitor."
+      ]
+    },
+    {
+      "title": "Data Retention",
+      "content": "The periods below apply to conversations, concepts and human support on this site. After expiry, records are no longer available for normal use and enter periodic cleanup. Backups and service provider records may follow their own deletion cycles.",
+      "items": [
+        "Visitor conversation, answers, provisional identity and concepts: up to 7 days after the session starts.",
+        "Records used to prevent duplicate processing of the same request: up to 24 hours. Conversation content remains subject to the session period.",
+        "Shared context and human support messages: up to 30 days after the handoff is accepted.",
+        "Authenticated team access: up to 1 hour, also limited by credential expiry. Signing out ends that access.",
+        "Technical usage limit records: until the relevant control window ends.",
+        "Market insight measurement is disabled. Enabling it requires specific information about purposes, access, retention and deletion before collection starts."
+      ]
+    },
+    {
+      "title": "Data Subject Rights (LGPD Art. 18)",
+      "content": "In accordance with the LGPD (Brazilian General Data Protection Law), you have the following rights regarding your personal data:",
+      "items": [
+        "Confirmation of processing: know whether Catalisa processes your personal data.",
+        "Data access: obtain a copy of the personal data we hold about you.",
+        "Data correction: request correction of incomplete, inaccurate or outdated data.",
+        "Anonymization, blocking or deletion: request when data is unnecessary, excessive or processed in non-compliance with the LGPD.",
+        "Data portability: obtain your data in a structured format for transfer to another service provider.",
+        "Deletion of consent-based data: request deletion of data whose processing was based on consent.",
+        "Information about sharing: know which public and private entities your data was shared with.",
+        "Objection to processing: object to processing based on legitimate interest, if you believe your rights prevail.",
+        "Review of automated decisions: request human review of decisions made solely based on automated processing of personal data, including AI Agent decisions."
+      ]
+    },
+    {
+      "title": "Automated Decisions",
+      "content": "The Platform uses AI Agents that process personal data in an automated manner to generate responses, classify requests and execute Workflows.\n\nIn accordance with the LGPD (Art. 20), you have the right to request human review of decisions made solely based on automated processing of personal data that affect your interests, including profiling decisions.\n\nTo request human review or obtain information about the logic used in automated decisions, contact our Data Protection Officer at privacidade@catalisa.io. We will respond within 15 (fifteen) business days."
+    },
+    {
+      "title": "Third-Party Data (User's Customers)",
+      "content": "When the User processes personal data of their own customers through the Platform (especially via WhatsApp integrations), the parties operate in the following roles:\n\n- User: Controller of their customers' personal data. Responsible for defining the purpose and legal basis for processing, informing their customers about the use of the Platform and handling data subject rights requests.\n\n- Catalisa: Processor of the User's customers' personal data. Processes data exclusively according to the User's instructions and for the provision of contracted services.\n\nThe User is responsible for:\n\n(a) Ensuring they have a valid legal basis for processing their customers' data through the Platform.\n(b) Providing clear information to their customers about data processing, including the existence of AI processing.\n(c) Handling data subject rights requests in a timely manner.\n(d) Entering into a Data Processing Agreement (DPA) with Catalisa, when necessary, available upon request."
+    },
+    {
+      "title": "Security Incidents",
+      "content": "In the event of a security incident that may pose a risk or relevant harm to personal data subjects, Catalisa will take the following measures:\n\n(a) Notification to the National Data Protection Authority (ANPD) within 72 (seventy-two) hours after confirmation of the incident, in accordance with Art. 48 of the LGPD.\n\n(b) Communication to affected data subjects, within a reasonable timeframe, containing: description of the nature of the affected data, information about the risks, measures taken to mitigate the effects and guidance for the data subject.\n\n(c) Internal incident record with complete documentation: nature, affected data, impacted data subjects, technical measures taken and results of containment actions.\n\n(d) Notification to the User (when acting as Processor) so that they may take the necessary measures with their customers."
+    },
+    {
+      "title": "Use of Google API Services Data",
+      "content": "When you connect a Google account to the Catalisa Platform, we access and use data from that account solely to provide the features you enable. Catalisa's use and transfer of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements.",
+      "items": [
+        "Google Calendar: we check your availability (free and busy periods) and create, update and cancel calendar events that you — or automations and AI agents you configure — request. Used, for example, to schedule meetings with your customers during a conversation.",
+        "Gmail (send): we send emails on your behalf when you, or an automation you configure, trigger a send from the Platform (for example, meeting confirmations and follow-up messages). We do not read your inbox.",
+        "Account identification: we access your Google email address only to identify which account was connected, so you can recognize and manage it.",
+        "We do not use data obtained from Google APIs for advertising, and we do not sell it.",
+        "We do not transfer data obtained from Google APIs to third parties except as necessary to provide the features described, when required by law, or with your explicit consent.",
+        "Humans do not read this data, except (i) with your explicit consent, (ii) for security purposes (such as investigating abuse or incidents), (iii) to comply with a legal obligation, or (iv) when the data is aggregated and anonymized.",
+        "Access tokens are stored encrypted. You can revoke access at any time within the Platform or at myaccount.google.com/permissions."
+      ]
+    },
+    {
+      "title": "Final Provisions",
+      "content": "Minors. Our services are not intended for individuals under 18 (eighteen) years of age. We do not intentionally collect personal data from minors. If you become aware that data from a minor has been collected, please contact us so we can delete it.\n\nChanges to this Policy. We may update this Privacy Policy periodically. Significant changes will be communicated with a minimum of 30 (thirty) days' advance notice by email or Platform notification. Continued use of the Platform after the notice period constitutes acceptance of the updated Policy.\n\nContact. To exercise your rights, clarify questions or submit complaints about this Policy:\n\nDPO email: privacidade@catalisa.io\nGeneral email: contato@catalisa.io\nWhatsApp: +55 11 97730-3414\n\nJurisdiction. The courts of Sao Paulo, State of Sao Paulo, Brazil, are elected to resolve any disputes arising from this Policy."
+    },
+    {
+      "title": "Contact, Lab and human support on this site",
+      "content": "To explore an idea, the site stores your answers and creates a provisional identity after you give your name. Before AI generation or support, it requests a valid email address or phone number; either one is sufficient. An essential cookie lets you resume only the same session. Provisional site references are not CRM records.\n\nThe agent receives the brief, context needed for generation or refinement, and the authorized capability catalog. Your name, email and phone are not intentionally included in the generation request. However, do not include sensitive customer information, credentials or secrets in free text. The AI generates a product hypothesis; it does not approve credit, execute transactions or publish a system.\n\nWhen you confirm continuation, you share your contact information, answers, history, selected concept and refinements with the team. The human channel currently implemented is here on the site. Acceptance means the packet was stored; delivery means an authenticated person opened the context; assignment means that person claimed the request. Replies remain in the same conversation. Collecting an email or phone does not automatically send external messages.\n\nContact, Lab, concepts and support surfaces do not send conversations, names, emails or phone numbers to browser analytics tools. Proposed market measurement requires specific approval and public information before real collection. To request access, correction or deletion, use the privacy contact identified in this policy; identity and request scope will be checked before changing data."
+    }
+  ]
+}

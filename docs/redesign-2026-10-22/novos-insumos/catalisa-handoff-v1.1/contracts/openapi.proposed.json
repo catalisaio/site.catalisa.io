@@ -1,0 +1,1760 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Catalisa public site BFF - PROPOSTA",
+    "version": "0.1.0",
+    "description": "Contrato de handoff proposto. Não descreve endpoints existentes da Catalisa. Validar e mapear no repo de produção."
+  },
+  "paths": {
+    "/api/site/sessions": {
+      "post": {
+        "operationId": "createSession",
+        "security": [],
+        "responses": {
+          "201": {
+            "description": "Resultado persistido",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Session"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requisição inválida",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Sessão ausente/expirada",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Acesso negado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Conflito de versão ou idempotência",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Pré-condição ou conteúdo inválido",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Limite de uso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Dependência indisponível",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "header",
+            "name": "Idempotency-Key",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 100
+            }
+          }
+        ]
+      }
+    },
+    "/api/site/session": {
+      "get": {
+        "operationId": "getCurrentSessionSnapshot",
+        "security": [
+          {
+            "siteSession": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Resultado persistido",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SessionSnapshot"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requisição inválida",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Sessão ausente/expirada",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Acesso negado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Conflito de versão ou idempotência",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Pré-condição ou conteúdo inválido",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Limite de uso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Dependência indisponível",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/site/messages": {
+      "post": {
+        "operationId": "appendMessage",
+        "security": [
+          {
+            "siteSession": []
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Resultado persistido",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageReceipt"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requisição inválida",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Sessão ausente/expirada",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Acesso negado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Conflito de versão ou idempotência",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Pré-condição ou conteúdo inválido",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Limite de uso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Dependência indisponível",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MessageInput"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "header",
+            "name": "Idempotency-Key",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 100
+            }
+          }
+        ]
+      }
+    },
+    "/api/site/identity": {
+      "post": {
+        "operationId": "identifyAndCreateLead",
+        "security": [
+          {
+            "siteSession": []
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Resultado persistido",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IdentityReceipt"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requisição inválida",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Sessão ausente/expirada",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Acesso negado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Conflito de versão ou idempotência",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Pré-condição ou conteúdo inválido",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Limite de uso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Dependência indisponível",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/IdentityInput"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "header",
+            "name": "Idempotency-Key",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 100
+            }
+          }
+        ]
+      }
+    },
+    "/api/site/concepts": {
+      "post": {
+        "operationId": "createConcept",
+        "security": [
+          {
+            "siteSession": []
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Resultado persistido",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Job"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requisição inválida",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Sessão ausente/expirada",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Acesso negado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Conflito de versão ou idempotência",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Pré-condição ou conteúdo inválido",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Limite de uso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Dependência indisponível",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ConceptInput"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "header",
+            "name": "Idempotency-Key",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 100
+            }
+          }
+        ]
+      }
+    },
+    "/api/site/jobs/{jobRef}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "jobRef",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+          }
+        }
+      ],
+      "get": {
+        "operationId": "getJob",
+        "security": [
+          {
+            "siteSession": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Resultado persistido",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Job"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requisição inválida",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Sessão ausente/expirada",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Acesso negado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Conflito de versão ou idempotência",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Pré-condição ou conteúdo inválido",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Limite de uso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Dependência indisponível",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/site/concepts/{conceptRef}/revisions": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "conceptRef",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+          }
+        }
+      ],
+      "post": {
+        "operationId": "refineConcept",
+        "security": [
+          {
+            "siteSession": []
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Resultado persistido",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Job"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requisição inválida",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Sessão ausente/expirada",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Acesso negado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Conflito de versão ou idempotência",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Pré-condição ou conteúdo inválido",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Limite de uso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Dependência indisponível",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RefinementInput"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "header",
+            "name": "Idempotency-Key",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 100
+            }
+          }
+        ]
+      }
+    },
+    "/api/site/handoffs": {
+      "post": {
+        "operationId": "createHandoff",
+        "security": [
+          {
+            "siteSession": []
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Resultado persistido",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Handoff"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requisição inválida",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Sessão ausente/expirada",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Acesso negado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Conflito de versão ou idempotência",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Pré-condição ou conteúdo inválido",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Limite de uso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Dependência indisponível",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/HandoffInput"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "header",
+            "name": "Idempotency-Key",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 100
+            }
+          }
+        ]
+      }
+    },
+    "/api/site/handoffs/{handoffRef}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "handoffRef",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+          }
+        }
+      ],
+      "get": {
+        "operationId": "getHandoff",
+        "security": [
+          {
+            "siteSession": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Resultado persistido",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Handoff"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requisição inválida",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Sessão ausente/expirada",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Acesso negado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Conflito de versão ou idempotência",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Pré-condição ou conteúdo inválido",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Limite de uso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Dependência indisponível",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/internal/handoff-events": {
+      "post": {
+        "operationId": "ingestHandoffEvent",
+        "security": [
+          {
+            "webhookSignature": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Resultado persistido",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Handoff"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requisição inválida",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Sessão ausente/expirada",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Acesso negado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Conflito de versão ou idempotência",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Pré-condição ou conteúdo inválido",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Limite de uso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Dependência indisponível",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/HandoffEvent"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "header",
+            "name": "Idempotency-Key",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 100
+            }
+          }
+        ]
+      }
+    },
+    "/api/site/briefing": {
+      "put": {
+        "operationId": "editBriefing",
+        "security": [
+          {
+            "siteSession": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Resultado persistido",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SessionSnapshot"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requisição inválida",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Sessão ausente/expirada",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Acesso negado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Conflito de versão ou idempotência",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Pré-condição ou conteúdo inválido",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Limite de uso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Dependência indisponível",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BriefEdit"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "header",
+            "name": "Idempotency-Key",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 100
+            }
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "siteSession": {
+        "type": "apiKey",
+        "in": "cookie",
+        "name": "catalisa_site_session",
+        "description": "Cookie opaco emitido pelo backend; seguro e HttpOnly. Validar sessão e origem."
+      },
+      "webhookSignature": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "X-Catalisa-Signature",
+        "description": "Contrato de assinatura a pactuar com o emissor; validar timestamp, corpo e replay no servidor."
+      }
+    },
+    "schemas": {
+      "Error": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "message": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 500
+          },
+          "requestId": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+          },
+          "retryable": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "code",
+          "message",
+          "requestId",
+          "retryable"
+        ]
+      },
+      "Session": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "sessionRef": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+          },
+          "briefVersion": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "identityStatus": {
+            "enum": [
+              "anonymous",
+              "provisional",
+              "verified"
+            ]
+          },
+          "leadStatus": {
+            "enum": [
+              "none",
+              "pending",
+              "created",
+              "failed"
+            ]
+          }
+        },
+        "required": [
+          "sessionRef",
+          "briefVersion",
+          "identityStatus",
+          "leadStatus"
+        ]
+      },
+      "MessageInput": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "clientMessageId": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+          },
+          "step": {
+            "enum": [
+              "idea",
+              "context",
+              "goal",
+              "refinement"
+            ]
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4000
+          },
+          "briefVersion": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "required": [
+          "clientMessageId",
+          "step",
+          "text",
+          "briefVersion"
+        ]
+      },
+      "MessageReceipt": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "messageRef": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+          },
+          "briefVersion": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "required": [
+          "messageRef",
+          "briefVersion"
+        ]
+      },
+      "IdentityInput": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160
+          },
+          "briefVersion": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "required": [
+          "name",
+          "briefVersion"
+        ]
+      },
+      "IdentityReceipt": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "contactRef": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+          },
+          "leadRef": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+          },
+          "identityStatus": {
+            "enum": [
+              "provisional",
+              "verified"
+            ]
+          },
+          "briefVersion": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "required": [
+          "contactRef",
+          "leadRef",
+          "identityStatus",
+          "briefVersion"
+        ]
+      },
+      "ConceptInput": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "briefVersion": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "required": [
+          "briefVersion"
+        ]
+      },
+      "RefinementInput": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "text": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2000
+          },
+          "briefVersion": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "baseConceptVersion": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "required": [
+          "text",
+          "briefVersion",
+          "baseConceptVersion"
+        ]
+      },
+      "Job": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "jobRef": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+          },
+          "status": {
+            "enum": [
+              "queued",
+              "running",
+              "succeeded",
+              "failed",
+              "expired"
+            ]
+          },
+          "requestId": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+          },
+          "concept": {
+            "$ref": "#/components/schemas/Concept"
+          },
+          "error": {
+            "$ref": "#/components/schemas/Error"
+          }
+        },
+        "required": [
+          "jobRef",
+          "status",
+          "requestId"
+        ]
+      },
+      "Concept": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "conceptRef": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+          },
+          "version": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "briefVersion": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "content": {
+            "$ref": "./concept.schema.json"
+          }
+        },
+        "required": [
+          "conceptRef",
+          "version",
+          "briefVersion",
+          "content"
+        ]
+      },
+      "HandoffInput": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "channel": {
+            "enum": [
+              "here",
+              "email",
+              "whatsapp"
+            ]
+          },
+          "address": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 320
+          },
+          "confirmed": {
+            "const": true
+          },
+          "contextVersion": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "conceptRef": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+          },
+          "conceptVersion": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "required": [
+          "channel",
+          "confirmed",
+          "contextVersion"
+        ]
+      },
+      "Handoff": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "handoffRef": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+          },
+          "status": {
+            "enum": [
+              "accepted",
+              "queued",
+              "delivered",
+              "assigned",
+              "failed"
+            ]
+          },
+          "requestId": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "required": [
+          "handoffRef",
+          "status",
+          "requestId",
+          "updatedAt"
+        ]
+      },
+      "HandoffEvent": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "eventId": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+          },
+          "handoffRef": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+          },
+          "sequence": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "status": {
+            "enum": [
+              "queued",
+              "delivered",
+              "assigned",
+              "failed"
+            ]
+          },
+          "occurredAt": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "required": [
+          "eventId",
+          "handoffRef",
+          "sequence",
+          "status",
+          "occurredAt"
+        ]
+      },
+      "SessionSnapshot": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "session": {
+            "$ref": "#/components/schemas/Session"
+          },
+          "briefing": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "idea": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 4000
+              },
+              "context": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 4000
+              },
+              "goal": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 4000
+              }
+            },
+            "required": []
+          },
+          "messages": {
+            "type": "array",
+            "maxItems": 500,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "messageRef": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 100
+                },
+                "role": {
+                  "enum": [
+                    "visitor",
+                    "agent",
+                    "system",
+                    "human"
+                  ]
+                },
+                "step": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 80
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 4000
+                },
+                "occurredAt": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "briefVersion": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "required": [
+                "messageRef",
+                "role",
+                "step",
+                "text",
+                "occurredAt",
+                "briefVersion"
+              ]
+            }
+          },
+          "availableChannels": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "here",
+                "email",
+                "whatsapp"
+              ]
+            }
+          },
+          "latestConcept": {
+            "$ref": "#/components/schemas/Concept"
+          },
+          "identity": {
+            "$ref": "#/components/schemas/IdentityReceipt"
+          }
+        },
+        "required": [
+          "session",
+          "briefing",
+          "messages",
+          "availableChannels"
+        ]
+      },
+      "BriefEdit": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "expectedVersion": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "briefing": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "idea": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 4000
+              },
+              "context": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 4000
+              },
+              "goal": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 4000
+              }
+            },
+            "required": []
+          }
+        },
+        "required": [
+          "expectedVersion",
+          "briefing"
+        ]
+      }
+    }
+  }
+}

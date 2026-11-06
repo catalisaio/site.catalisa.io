@@ -1,0 +1,138 @@
+{
+  "generatedAt": "2026-10-26T16:45:56.554Z",
+  "sourceLocale": "pt-BR",
+  "scope": "New isolated ProductShowcase/ProductGallery static messages only. Frozen 4029-message catalog unchanged; translate complementary batch after current workers finish.",
+  "messages": [
+    {
+      "id": "text_1e124bec1ccdf488",
+      "source": "Capturas publicadas do Studio.",
+      "inFrozenCatalog": false,
+      "occurrences": [
+        {
+          "file": "src/redesign/media/ProductShowcase.tsx",
+          "line": 63,
+          "kind": "t-call"
+        }
+      ]
+    },
+    {
+      "id": "text_7be26608ea3a8073",
+      "source": "Capturas do console implementado em staging.",
+      "inFrozenCatalog": false,
+      "occurrences": [
+        {
+          "file": "src/redesign/media/ProductShowcase.tsx",
+          "line": 63,
+          "kind": "t-call"
+        }
+      ]
+    },
+    {
+      "id": "text_e0761cfb8de118cd",
+      "source": "Interfaces de referência; disponibilidade e configuração podem variar.",
+      "inFrozenCatalog": false,
+      "occurrences": [
+        {
+          "file": "src/redesign/media/ProductShowcase.tsx",
+          "line": 64,
+          "kind": "t-call"
+        }
+      ]
+    },
+    {
+      "id": "text_e30e13e87386a1f3",
+      "source": "Interfaces documentadas",
+      "inFrozenCatalog": false,
+      "occurrences": [
+        {
+          "file": "src/redesign/media/ProductShowcase.tsx",
+          "line": 79,
+          "kind": "t-call"
+        }
+      ]
+    },
+    {
+      "id": "text_137ad41413ca43e3",
+      "source": "Explore as capturas e amplie os detalhes.",
+      "inFrozenCatalog": false,
+      "occurrences": [
+        {
+          "file": "src/redesign/media/ProductShowcase.tsx",
+          "line": 80,
+          "kind": "t-call"
+        }
+      ]
+    },
+    {
+      "id": "text_507ed39c2fd1756c",
+      "source": "Ampliar {value0}",
+      "inFrozenCatalog": false,
+      "occurrences": [
+        {
+          "file": "src/redesign/media/ProductShowcase.tsx",
+          "line": 84,
+          "kind": "t-call"
+        }
+      ]
+    },
+    {
+      "id": "text_eebe643c8a440be9",
+      "source": "Origem da captura ↗",
+      "inFrozenCatalog": true,
+      "occurrences": [
+        {
+          "file": "src/redesign/media/ProductShowcase.tsx",
+          "line": 91,
+          "kind": "t-call"
+        }
+      ]
+    },
+    {
+      "id": "text_0d226f9495370108",
+      "source": "Referência preservada",
+      "inFrozenCatalog": false,
+      "occurrences": [
+        {
+          "file": "src/redesign/media/ProductShowcase.tsx",
+          "line": 92,
+          "kind": "t-call"
+        }
+      ]
+    },
+    {
+      "id": "text_b91692e66fae9f2f",
+      "source": "Capturas de staging. Não são uma gravação de fluxo nem comprovam a publicação dessas interfaces em produção.",
+      "inFrozenCatalog": false,
+      "occurrences": [
+        {
+          "file": "src/redesign/media/ProductShowcase.tsx",
+          "line": 98,
+          "kind": "t-call"
+        }
+      ]
+    }
+  ],
+  "additionalMessages": 8,
+  "dynamicMessages": "Capture title/desc/type/origin use t at render time; their source strings already exist in the frozen capture metadata/catalog.",
+  "integration": [
+    "No existing page changed. ProductShowcase is static and safe inside a Link.",
+    "ProductGallery must render inside the existing OperationFrame for CaptureButton to open the established accessible dialog.",
+    "getProductGalleryCaptures exports a restricted documented set if a future integration needs it; do not replace all OperationFrame items blindly because existing capture controls use the complete page inventory.",
+    "Banking showcase intentionally selects only implemented staging console captures; old desktop/mobile references are not relabelled as production.",
+    "No browser, build or visual approval in this preparation."
+  ],
+  "selectedFiles": {
+    "banking": [
+      "bank-live-accounts.jpg",
+      "bank-live-holds.jpg"
+    ],
+    "studio": [
+      "studio-builder.jpg",
+      "studio-canvas.png"
+    ],
+    "credit": [
+      "credit-latest-agreements.png",
+      "credit-latest-covenants.png"
+    ]
+  }
+}

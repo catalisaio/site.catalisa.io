@@ -1,0 +1,1033 @@
+{
+  "generatedAt": "2026-10-25T05:21:42.889Z",
+  "origin": "https://site-staging.catalisa.io",
+  "passed": true,
+  "scope": "Single-run Chrome laboratory measurement of initial anonymous mobile pages under CDP network/CPU throttling, focused DOM and keyboard checks. No field Core Web Vitals, INP claim, full WCAG certification or automated axe/Lighthouse result. No axe/Lighthouse dependency is installed.",
+  "emulation": {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "screen": {
+      "width": 390,
+      "height": 844
+    },
+    "deviceScaleFactor": 3,
+    "isMobile": true,
+    "hasTouch": true,
+    "cpuSlowdown": 4,
+    "network": {
+      "offline": false,
+      "latency": 150,
+      "downloadThroughput": 200000,
+      "uploadThroughput": 93750,
+      "connectionType": "cellular4g"
+    },
+    "coldCache": true,
+    "settleAfterFontsAndNetworkMs": 3000
+  },
+  "metricsAreMeasurementsNotThresholdPasses": true,
+  "results": [
+    {
+      "route": "/",
+      "status": 200,
+      "metrics": {
+        "fcpMs": 1176,
+        "lcp": {
+          "value": 5792,
+          "size": 119224,
+          "element": "IMG",
+          "url": "/redesign/financial-city.webp"
+        },
+        "cls": 0.021033977807361437,
+        "layoutShifts": [
+          {
+            "time": 6006.599999997765,
+            "value": 0.021033977807361437,
+            "sources": [
+              null,
+              null,
+              "DIV",
+              "SPAN"
+            ]
+          }
+        ],
+        "longTasks": {
+          "count": 1,
+          "totalMs": 152,
+          "maxMs": 152
+        },
+        "fontsReadyAtCheckMs": 6541.199999999255,
+        "fontLoadingEvents": [
+          {
+            "event": "loading",
+            "time": 1151.5999999977648
+          },
+          {
+            "event": "loadingdone",
+            "time": 6088
+          }
+        ],
+        "observedUntilMs": 9814.300000000745,
+        "navigation": {
+          "ttfbMs": 292.5,
+          "domContentLoadedMs": 5975.39999999851,
+          "loadMs": 6025.5,
+          "transferSize": 11848,
+          "encodedBodySize": 11548
+        },
+        "resources": {
+          "count": 24,
+          "transferBytes": 1072048,
+          "encodedBytes": 1064848,
+          "largest": [
+            {
+              "path": "/redesign/financial-city.webp",
+              "encodedBytes": 113386,
+              "durationMs": 5304.5,
+              "type": "img"
+            },
+            {
+              "path": "/redesign/inter-2.woff2",
+              "encodedBytes": 112132,
+              "durationMs": 4975.300000000745,
+              "type": "css"
+            },
+            {
+              "path": "/assets/chakra-5STDrfVA.js",
+              "encodedBytes": 111679,
+              "durationMs": 5386.10000000149,
+              "type": "script"
+            },
+            {
+              "path": "/redesign/inter-1.woff2",
+              "encodedBytes": 111528,
+              "durationMs": 4967.89999999851,
+              "type": "css"
+            },
+            {
+              "path": "/redesign/inter-0.woff2",
+              "encodedBytes": 108560,
+              "durationMs": 4931.70000000298,
+              "type": "css"
+            },
+            {
+              "path": "/redesign/architecture.webp",
+              "encodedBytes": 100566,
+              "durationMs": 4704.89999999851,
+              "type": "img"
+            },
+            {
+              "path": "/assets/icons-bD1cthhe.js",
+              "encodedBytes": 87521,
+              "durationMs": 4666.10000000149,
+              "type": "script"
+            },
+            {
+              "path": "/assets/presentation-q1UnG70_.js",
+              "encodedBytes": 77210,
+              "durationMs": 4304.800000000745,
+              "type": "script"
+            }
+          ]
+        }
+      },
+      "dom": {
+        "lang": "pt-BR",
+        "mainCount": 1,
+        "h1Count": 1,
+        "controlCount": 28,
+        "unnamedControls": [],
+        "missingAlt": [],
+        "brokenImages": [],
+        "duplicateIds": [],
+        "brokenReferences": [],
+        "overflow": false,
+        "fonts": {
+          "status": "loaded",
+          "faces": [
+            {
+              "family": "Catalisa Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "loaded"
+            }
+          ]
+        },
+        "errorText": []
+      },
+      "exceptions": [],
+      "failedRequests": [],
+      "trackerRequests": [],
+      "externalOrigins": [],
+      "domChecksPassed": true,
+      "issues": []
+    },
+    {
+      "route": "/arquitetura",
+      "status": 200,
+      "metrics": {
+        "fcpMs": 1120,
+        "lcp": {
+          "value": 5480,
+          "size": 48670,
+          "element": "H1",
+          "url": null
+        },
+        "cls": 0.00043331813775291295,
+        "layoutShifts": [
+          {
+            "time": 4995.800000000745,
+            "value": 0.00043331813775291295,
+            "sources": [
+              "DIV",
+              "BUTTON",
+              "SPAN"
+            ]
+          }
+        ],
+        "longTasks": {
+          "count": 2,
+          "totalMs": 236,
+          "maxMs": 183
+        },
+        "fontsReadyAtCheckMs": 5548.39999999851,
+        "fontLoadingEvents": [
+          {
+            "event": "loading",
+            "time": 1114.5
+          },
+          {
+            "event": "loadingdone",
+            "time": 5059.800000000745
+          }
+        ],
+        "observedUntilMs": 8743.800000000745,
+        "navigation": {
+          "ttfbMs": 269.19999999925494,
+          "domContentLoadedMs": 4926.300000000745,
+          "loadMs": 4943.89999999851,
+          "transferSize": 11463,
+          "encodedBodySize": 11163
+        },
+        "resources": {
+          "count": 24,
+          "transferBytes": 858126,
+          "encodedBytes": 850926,
+          "largest": [
+            {
+              "path": "/redesign/inter-2.woff2",
+              "encodedBytes": 112132,
+              "durationMs": 3910.5,
+              "type": "css"
+            },
+            {
+              "path": "/assets/chakra-5STDrfVA.js",
+              "encodedBytes": 111679,
+              "durationMs": 4297.300000000745,
+              "type": "script"
+            },
+            {
+              "path": "/redesign/inter-1.woff2",
+              "encodedBytes": 111528,
+              "durationMs": 3899,
+              "type": "css"
+            },
+            {
+              "path": "/redesign/inter-0.woff2",
+              "encodedBytes": 108560,
+              "durationMs": 3881.39999999851,
+              "type": "css"
+            },
+            {
+              "path": "/assets/icons-bD1cthhe.js",
+              "encodedBytes": 87521,
+              "durationMs": 3809.900000002235,
+              "type": "script"
+            },
+            {
+              "path": "/assets/presentation-q1UnG70_.js",
+              "encodedBytes": 77210,
+              "durationMs": 3576.5,
+              "type": "script"
+            },
+            {
+              "path": "/assets/vendor-DUPRWDcC.js",
+              "encodedBytes": 77144,
+              "durationMs": 3540.10000000149,
+              "type": "script"
+            },
+            {
+              "path": "/assets/playbooks-Ck2m4HzC.js",
+              "encodedBytes": 70363,
+              "durationMs": 3275.5,
+              "type": "script"
+            }
+          ]
+        }
+      },
+      "dom": {
+        "lang": "pt-BR",
+        "mainCount": 1,
+        "h1Count": 1,
+        "controlCount": 32,
+        "unnamedControls": [],
+        "missingAlt": [],
+        "brokenImages": [],
+        "duplicateIds": [],
+        "brokenReferences": [],
+        "overflow": false,
+        "fonts": {
+          "status": "loaded",
+          "faces": [
+            {
+              "family": "Catalisa Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "loaded"
+            }
+          ]
+        },
+        "errorText": []
+      },
+      "exceptions": [],
+      "failedRequests": [],
+      "trackerRequests": [],
+      "externalOrigins": [],
+      "domChecksPassed": true,
+      "issues": []
+    },
+    {
+      "route": "/contato",
+      "status": 200,
+      "metrics": {
+        "fcpMs": 1400,
+        "lcp": {
+          "value": 4852,
+          "size": 17475,
+          "element": "H2",
+          "url": null
+        },
+        "cls": 0.12845048956207789,
+        "layoutShifts": [
+          {
+            "time": 4471.699999999255,
+            "value": 0.00024548812926944875,
+            "sources": [
+              "DIV",
+              "BUTTON"
+            ]
+          },
+          {
+            "time": 5709.800000000745,
+            "value": 0.12845048956207789,
+            "sources": [
+              "SECTION",
+              "DIV"
+            ]
+          }
+        ],
+        "longTasks": {
+          "count": 1,
+          "totalMs": 169,
+          "maxMs": 169
+        },
+        "fontsReadyAtCheckMs": 5817.39999999851,
+        "fontLoadingEvents": [
+          {
+            "event": "loading",
+            "time": 1394.3999999985099
+          },
+          {
+            "event": "loadingdone",
+            "time": 4528.89999999851
+          }
+        ],
+        "observedUntilMs": 9179.099999997765,
+        "navigation": {
+          "ttfbMs": 284.19999999925494,
+          "domContentLoadedMs": 4398.300000000745,
+          "loadMs": 4444.699999999255,
+          "transferSize": 6200,
+          "encodedBodySize": 5900
+        },
+        "resources": {
+          "count": 23,
+          "transferBytes": 760991,
+          "encodedBytes": 754091,
+          "largest": [
+            {
+              "path": "/redesign/inter-2.woff2",
+              "encodedBytes": 112132,
+              "durationMs": 3102,
+              "type": "css"
+            },
+            {
+              "path": "/assets/chakra-5STDrfVA.js",
+              "encodedBytes": 111679,
+              "durationMs": 3820,
+              "type": "script"
+            },
+            {
+              "path": "/redesign/inter-0.woff2",
+              "encodedBytes": 108560,
+              "durationMs": 3088,
+              "type": "css"
+            },
+            {
+              "path": "/assets/icons-bD1cthhe.js",
+              "encodedBytes": 87521,
+              "durationMs": 3461.699999999255,
+              "type": "script"
+            },
+            {
+              "path": "/assets/presentation-q1UnG70_.js",
+              "encodedBytes": 77210,
+              "durationMs": 3242.10000000149,
+              "type": "script"
+            },
+            {
+              "path": "/assets/vendor-DUPRWDcC.js",
+              "encodedBytes": 77144,
+              "durationMs": 3176.599999997765,
+              "type": "script"
+            },
+            {
+              "path": "/assets/playbooks-Ck2m4HzC.js",
+              "encodedBytes": 70363,
+              "durationMs": 2994.699999999255,
+              "type": "script"
+            },
+            {
+              "path": "/assets/motion-BXGg2hNB.js",
+              "encodedBytes": 43904,
+              "durationMs": 2117.699999999255,
+              "type": "script"
+            }
+          ]
+        }
+      },
+      "dom": {
+        "lang": "pt-BR",
+        "mainCount": 1,
+        "h1Count": 1,
+        "controlCount": 22,
+        "unnamedControls": [],
+        "missingAlt": [],
+        "brokenImages": [],
+        "duplicateIds": [],
+        "brokenReferences": [],
+        "overflow": false,
+        "fonts": {
+          "status": "loaded",
+          "faces": [
+            {
+              "family": "Catalisa Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "loaded"
+            }
+          ]
+        },
+        "errorText": []
+      },
+      "exceptions": [],
+      "failedRequests": [],
+      "trackerRequests": [],
+      "externalOrigins": [],
+      "domChecksPassed": true,
+      "issues": []
+    },
+    {
+      "route": "/lab",
+      "status": 200,
+      "metrics": {
+        "fcpMs": 1060,
+        "lcp": {
+          "value": 5284,
+          "size": 58410,
+          "element": "H1",
+          "url": null
+        },
+        "cls": 0,
+        "layoutShifts": [],
+        "longTasks": {
+          "count": 1,
+          "totalMs": 128,
+          "maxMs": 128
+        },
+        "fontsReadyAtCheckMs": 6222.89999999851,
+        "fontLoadingEvents": [
+          {
+            "event": "loading",
+            "time": 1051.199999999255
+          },
+          {
+            "event": "loadingdone",
+            "time": 4977.39999999851
+          }
+        ],
+        "observedUntilMs": 9644.599999997765,
+        "navigation": {
+          "ttfbMs": 213,
+          "domContentLoadedMs": 4834.29999999702,
+          "loadMs": 4898.699999999255,
+          "transferSize": 6403,
+          "encodedBodySize": 6103
+        },
+        "resources": {
+          "count": 24,
+          "transferBytes": 858051,
+          "encodedBytes": 850851,
+          "largest": [
+            {
+              "path": "/redesign/inter-2.woff2",
+              "encodedBytes": 112132,
+              "durationMs": 3908.7000000029802,
+              "type": "css"
+            },
+            {
+              "path": "/assets/chakra-5STDrfVA.js",
+              "encodedBytes": 111679,
+              "durationMs": 4320.199999999255,
+              "type": "script"
+            },
+            {
+              "path": "/redesign/inter-1.woff2",
+              "encodedBytes": 111528,
+              "durationMs": 3900.300000000745,
+              "type": "css"
+            },
+            {
+              "path": "/redesign/inter-0.woff2",
+              "encodedBytes": 108560,
+              "durationMs": 3879.199999999255,
+              "type": "css"
+            },
+            {
+              "path": "/assets/icons-bD1cthhe.js",
+              "encodedBytes": 87521,
+              "durationMs": 3810.900000002235,
+              "type": "script"
+            },
+            {
+              "path": "/assets/presentation-q1UnG70_.js",
+              "encodedBytes": 77210,
+              "durationMs": 3570.300000000745,
+              "type": "script"
+            },
+            {
+              "path": "/assets/vendor-DUPRWDcC.js",
+              "encodedBytes": 77144,
+              "durationMs": 3533.39999999851,
+              "type": "script"
+            },
+            {
+              "path": "/assets/playbooks-Ck2m4HzC.js",
+              "encodedBytes": 70363,
+              "durationMs": 3315.699999999255,
+              "type": "script"
+            }
+          ]
+        }
+      },
+      "dom": {
+        "lang": "pt-BR",
+        "mainCount": 1,
+        "h1Count": 1,
+        "controlCount": 29,
+        "unnamedControls": [],
+        "missingAlt": [],
+        "brokenImages": [],
+        "duplicateIds": [],
+        "brokenReferences": [],
+        "overflow": false,
+        "fonts": {
+          "status": "loaded",
+          "faces": [
+            {
+              "family": "Catalisa Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "loaded"
+            }
+          ]
+        },
+        "errorText": []
+      },
+      "exceptions": [],
+      "failedRequests": [],
+      "trackerRequests": [],
+      "externalOrigins": [],
+      "domChecksPassed": true,
+      "issues": []
+    },
+    {
+      "route": "/capacidades",
+      "status": 200,
+      "metrics": {
+        "fcpMs": 1344,
+        "lcp": {
+          "value": 1344,
+          "size": 43940,
+          "element": "H1",
+          "url": null
+        },
+        "cls": 0,
+        "layoutShifts": [],
+        "longTasks": {
+          "count": 1,
+          "totalMs": 129,
+          "maxMs": 129
+        },
+        "fontsReadyAtCheckMs": 5267.10000000149,
+        "fontLoadingEvents": [
+          {
+            "event": "loading",
+            "time": 1337.7000000029802
+          },
+          {
+            "event": "loadingdone",
+            "time": 4962.800000000745
+          }
+        ],
+        "observedUntilMs": 8636.900000002235,
+        "navigation": {
+          "ttfbMs": 234.30000000074506,
+          "domContentLoadedMs": 4766.900000002235,
+          "loadMs": 4945.10000000149,
+          "transferSize": 10765,
+          "encodedBodySize": 10465
+        },
+        "resources": {
+          "count": 22,
+          "transferBytes": 857447,
+          "encodedBytes": 850847,
+          "largest": [
+            {
+              "path": "/redesign/inter-2.woff2",
+              "encodedBytes": 112132,
+              "durationMs": 3668.300000000745,
+              "type": "css"
+            },
+            {
+              "path": "/assets/chakra-5STDrfVA.js",
+              "encodedBytes": 111679,
+              "durationMs": 4205.199999999255,
+              "type": "script"
+            },
+            {
+              "path": "/redesign/inter-1.woff2",
+              "encodedBytes": 111528,
+              "durationMs": 3659.199999999255,
+              "type": "css"
+            },
+            {
+              "path": "/redesign/inter-0.woff2",
+              "encodedBytes": 108560,
+              "durationMs": 3651.7000000029802,
+              "type": "css"
+            },
+            {
+              "path": "/assets/icons-bD1cthhe.js",
+              "encodedBytes": 87521,
+              "durationMs": 3719.699999999255,
+              "type": "script"
+            },
+            {
+              "path": "/assets/presentation-q1UnG70_.js",
+              "encodedBytes": 77210,
+              "durationMs": 3462.10000000149,
+              "type": "script"
+            },
+            {
+              "path": "/assets/vendor-DUPRWDcC.js",
+              "encodedBytes": 77144,
+              "durationMs": 3441.699999999255,
+              "type": "script"
+            },
+            {
+              "path": "/assets/playbooks-Ck2m4HzC.js",
+              "encodedBytes": 70363,
+              "durationMs": 3200.5,
+              "type": "script"
+            }
+          ]
+        }
+      },
+      "dom": {
+        "lang": "pt-BR",
+        "mainCount": 1,
+        "h1Count": 1,
+        "controlCount": 40,
+        "unnamedControls": [],
+        "missingAlt": [],
+        "brokenImages": [],
+        "duplicateIds": [],
+        "brokenReferences": [],
+        "overflow": false,
+        "fonts": {
+          "status": "loaded",
+          "faces": [
+            {
+              "family": "Catalisa Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "loaded"
+            }
+          ]
+        },
+        "errorText": []
+      },
+      "exceptions": [],
+      "failedRequests": [],
+      "trackerRequests": [],
+      "externalOrigins": [],
+      "domChecksPassed": true,
+      "issues": []
+    },
+    {
+      "route": "/ecossistema/banking",
+      "status": 200,
+      "metrics": {
+        "fcpMs": 1348,
+        "lcp": {
+          "value": 3524,
+          "size": 60780,
+          "element": "IMG",
+          "url": "/redesign/screens/bank-desktop.jpg"
+        },
+        "cls": 0.0004661077926384783,
+        "layoutShifts": [
+          {
+            "time": 5040.5,
+            "value": 0.0004661077926384783,
+            "sources": [
+              null,
+              "DIV",
+              "BUTTON"
+            ]
+          }
+        ],
+        "longTasks": {
+          "count": 2,
+          "totalMs": 200,
+          "maxMs": 147
+        },
+        "fontsReadyAtCheckMs": 5564.099999997765,
+        "fontLoadingEvents": [
+          {
+            "event": "loading",
+            "time": 1332.3999999985099
+          },
+          {
+            "event": "loadingdone",
+            "time": 5111.699999999255
+          }
+        ],
+        "observedUntilMs": 8829.39999999851,
+        "navigation": {
+          "ttfbMs": 282.5999999977648,
+          "domContentLoadedMs": 4975.699999999255,
+          "loadMs": 5052.79999999702,
+          "transferSize": 11031,
+          "encodedBodySize": 10731
+        },
+        "resources": {
+          "count": 27,
+          "transferBytes": 870873,
+          "encodedBytes": 862773,
+          "largest": [
+            {
+              "path": "/redesign/inter-2.woff2",
+              "encodedBytes": 112132,
+              "durationMs": 3770.10000000149,
+              "type": "css"
+            },
+            {
+              "path": "/assets/chakra-5STDrfVA.js",
+              "encodedBytes": 111679,
+              "durationMs": 4391.60000000149,
+              "type": "script"
+            },
+            {
+              "path": "/redesign/inter-0.woff2",
+              "encodedBytes": 108560,
+              "durationMs": 3749,
+              "type": "css"
+            },
+            {
+              "path": "/assets/icons-bD1cthhe.js",
+              "encodedBytes": 87521,
+              "durationMs": 4018.699999999255,
+              "type": "script"
+            },
+            {
+              "path": "/assets/presentation-q1UnG70_.js",
+              "encodedBytes": 77210,
+              "durationMs": 3845.699999999255,
+              "type": "script"
+            },
+            {
+              "path": "/assets/vendor-DUPRWDcC.js",
+              "encodedBytes": 77144,
+              "durationMs": 3697,
+              "type": "script"
+            },
+            {
+              "path": "/assets/playbooks-Ck2m4HzC.js",
+              "encodedBytes": 70363,
+              "durationMs": 3642.099999997765,
+              "type": "script"
+            },
+            {
+              "path": "/redesign/screens/bank-mobile.png",
+              "encodedBytes": 60688,
+              "durationMs": 3365.7000000029802,
+              "type": "img"
+            }
+          ]
+        }
+      },
+      "dom": {
+        "lang": "pt-BR",
+        "mainCount": 1,
+        "h1Count": 1,
+        "controlCount": 48,
+        "unnamedControls": [],
+        "missingAlt": [],
+        "brokenImages": [],
+        "duplicateIds": [],
+        "brokenReferences": [],
+        "overflow": false,
+        "fonts": {
+          "status": "loaded",
+          "faces": [
+            {
+              "family": "Catalisa Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "loaded"
+            }
+          ]
+        },
+        "errorText": []
+      },
+      "exceptions": [],
+      "failedRequests": [],
+      "trackerRequests": [],
+      "externalOrigins": [],
+      "domChecksPassed": true,
+      "issues": []
+    },
+    {
+      "route": "/ecossistema/credit",
+      "status": 200,
+      "metrics": {
+        "fcpMs": 1020,
+        "lcp": {
+          "value": 3804,
+          "size": 72492,
+          "element": "IMG",
+          "url": "/redesign/screens/credit-queue.png"
+        },
+        "cls": 0.00013749251109675123,
+        "layoutShifts": [
+          {
+            "time": 4871.70000000298,
+            "value": 0.00013749251109675123,
+            "sources": [
+              "DIV",
+              "SPAN"
+            ]
+          }
+        ],
+        "longTasks": {
+          "count": 2,
+          "totalMs": 214,
+          "maxMs": 164
+        },
+        "fontsReadyAtCheckMs": 5423.300000000745,
+        "fontLoadingEvents": [
+          {
+            "event": "loading",
+            "time": 1019.8000000007451
+          },
+          {
+            "event": "loadingdone",
+            "time": 4944
+          }
+        ],
+        "observedUntilMs": 8630.70000000298,
+        "navigation": {
+          "ttfbMs": 249.30000000074506,
+          "domContentLoadedMs": 4805.900000002235,
+          "loadMs": 4818.300000000745,
+          "transferSize": 9432,
+          "encodedBodySize": 9132
+        },
+        "resources": {
+          "count": 26,
+          "transferBytes": 816860,
+          "encodedBytes": 809060,
+          "largest": [
+            {
+              "path": "/redesign/inter-2.woff2",
+              "encodedBytes": 112132,
+              "durationMs": 3841.099999997765,
+              "type": "css"
+            },
+            {
+              "path": "/assets/chakra-5STDrfVA.js",
+              "encodedBytes": 111679,
+              "durationMs": 4196.800000000745,
+              "type": "script"
+            },
+            {
+              "path": "/redesign/inter-0.woff2",
+              "encodedBytes": 108560,
+              "durationMs": 3818.300000000745,
+              "type": "css"
+            },
+            {
+              "path": "/assets/icons-bD1cthhe.js",
+              "encodedBytes": 87521,
+              "durationMs": 3800.300000000745,
+              "type": "script"
+            },
+            {
+              "path": "/assets/presentation-q1UnG70_.js",
+              "encodedBytes": 77210,
+              "durationMs": 3641.699999999255,
+              "type": "script"
+            },
+            {
+              "path": "/assets/vendor-DUPRWDcC.js",
+              "encodedBytes": 77144,
+              "durationMs": 3568.199999999255,
+              "type": "script"
+            },
+            {
+              "path": "/assets/playbooks-Ck2m4HzC.js",
+              "encodedBytes": 70363,
+              "durationMs": 3424.60000000149,
+              "type": "script"
+            },
+            {
+              "path": "/redesign/screens/credit-queue.png",
+              "encodedBytes": 65654,
+              "durationMs": 3319.199999999255,
+              "type": "img"
+            }
+          ]
+        }
+      },
+      "dom": {
+        "lang": "pt-BR",
+        "mainCount": 1,
+        "h1Count": 1,
+        "controlCount": 41,
+        "unnamedControls": [],
+        "missingAlt": [],
+        "brokenImages": [],
+        "duplicateIds": [],
+        "brokenReferences": [],
+        "overflow": false,
+        "fonts": {
+          "status": "loaded",
+          "faces": [
+            {
+              "family": "Catalisa Inter",
+              "status": "loaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "unloaded"
+            },
+            {
+              "family": "Catalisa Inter",
+              "status": "loaded"
+            }
+          ]
+        },
+        "errorText": []
+      },
+      "exceptions": [],
+      "failedRequests": [],
+      "trackerRequests": [],
+      "externalOrigins": [],
+      "domChecksPassed": true,
+      "issues": []
+    }
+  ],
+  "keyboard": [
+    {
+      "width": 390,
+      "check": "skip link reaches main",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "menu": "all",
+      "check": "Enter/Tab loop/Shift+Tab/Escape/focus return/no heading movement",
+      "maxHeadingShiftPx": 0,
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "check": "skip link reaches main",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "menu": "platform",
+      "check": "Enter/Tab loop/Shift+Tab/Escape/focus return/no heading movement",
+      "maxHeadingShiftPx": 0,
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "menu": "all",
+      "check": "Enter/Tab loop/Shift+Tab/Escape/focus return/no heading movement",
+      "maxHeadingShiftPx": 0,
+      "passed": true
+    }
+  ],
+  "failures": []
+}

@@ -5,6 +5,17 @@
 [functions]
   directory = "netlify/functions"
 
+# Indexing directives for migrated pages are generated from the artifact release manifest.
+[[headers]]
+  for = "/design-system"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
+[[headers]]
+  for = "/design-system/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
 [[headers]]
   for = "/*"
   [headers.values]
@@ -34,17 +45,34 @@
     Cache-Control = "public, max-age=86400"
     Content-Type = "application/xml"
 
+# Redirects and the 404 fallback are generated into dist/_redirects after prerender QA.
+
 [[headers]]
-  for = "/.well-known/microsoft-identity-association.json"
+  for = "/spa.html"
   [headers.values]
-    Content-Type = "application/json"
+    X-Robots-Tag = "noindex, nofollow"
 
-[[redirects]]
-  from = "/en/*"
-  to = "/index.html"
-  status = 200
+[[headers]]
+  for = "/404.html"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+[[headers]]
+  for = "/apresentacao*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
+[[headers]]
+  for = "/en/presentation*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
+[[headers]]
+  for = "/treinamento*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
+[[headers]]
+  for = "/en/training*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"

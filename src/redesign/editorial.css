@@ -1,0 +1,4 @@
+.c-site .c-editorial .e-paused *, .c-site .c-editorial .e-paused *::before, .c-site .c-editorial .e-paused *::after { animation-play-state: paused !important; }
+.c-site .c-editorial .e-page [aria-hidden=true] { pointer-events: none; }
+.c-site .c-editorial :is(button,.e-toc a,.e-lab-options [role=tab]) { min-height:44px; }
+.c-site .c-editorial .e-eyebrow { font-family: var(--c-mono); }

@@ -1,0 +1,157 @@
+{
+  "locale": "es-ES",
+  "updatedAt": "2026-10-26T18:55:45.927Z",
+  "method": "Independent full source/translation pair review using authorized Claude CLI without tools, MCP or session persistence; corrections structurally validated before merge.",
+  "required": 4187,
+  "available": 4187,
+  "reviewed": 4187,
+  "complete": true,
+  "corrections": 239,
+  "batches": [
+    {
+      "id": "3e48e75286dd39d9374f",
+      "count": 300,
+      "corrections": 20,
+      "costUsd": 0.32130020000000004,
+      "durationMs": 41812
+    },
+    {
+      "id": "16fd0603e87ae7d5c202",
+      "count": 300,
+      "corrections": 20,
+      "costUsd": 0.341493,
+      "durationMs": 38549
+    },
+    {
+      "id": "e9b944cc56e6e9433547",
+      "count": 300,
+      "corrections": 5,
+      "costUsd": 0.2764012,
+      "durationMs": 24866
+    },
+    {
+      "id": "1eae7e0be2c27c598889",
+      "count": 300,
+      "corrections": 4,
+      "costUsd": 0.3086882,
+      "durationMs": 26600
+    },
+    {
+      "id": "f7458fc3ffbc12413c04",
+      "count": 300,
+      "corrections": 9,
+      "costUsd": 0.3131416,
+      "durationMs": 33332
+    },
+    {
+      "id": "b02b8f20f0bec71897af",
+      "count": 300,
+      "corrections": 10,
+      "costUsd": 0.35871719999999996,
+      "durationMs": 54871
+    },
+    {
+      "id": "c05d28f23f678314bc80",
+      "count": 300,
+      "corrections": 19,
+      "costUsd": 0.30002039999999996,
+      "durationMs": 26698
+    },
+    {
+      "id": "0b78205094c20b5f1793",
+      "count": 300,
+      "corrections": 4,
+      "costUsd": 0.2768558,
+      "durationMs": 20536
+    },
+    {
+      "id": "c3bf6980b073c9b7a614",
+      "count": 300,
+      "corrections": 8,
+      "costUsd": 0.2937456,
+      "durationMs": 30271
+    },
+    {
+      "id": "19de32f678bd2a4779fe",
+      "count": 300,
+      "corrections": 42,
+      "costUsd": 0.37847739999999996,
+      "durationMs": 63420
+    },
+    {
+      "id": "ddb186abcafbba280395",
+      "count": 300,
+      "corrections": 16,
+      "costUsd": 0.34836500000000004,
+      "durationMs": 51093
+    },
+    {
+      "id": "5b0a8a34fd1b41dcd255",
+      "count": 300,
+      "corrections": 40,
+      "costUsd": 0.37238040000000006,
+      "durationMs": 66319
+    },
+    {
+      "id": "896f1a94c825730ce30a",
+      "count": 300,
+      "corrections": 38,
+      "costUsd": 0.3509328,
+      "durationMs": 55569
+    },
+    {
+      "id": "129f7f0cc30a368d661d",
+      "count": 287,
+      "corrections": 4,
+      "costUsd": 0.31489999999999996,
+      "durationMs": 32704
+    }
+  ],
+  "notes": [
+    "'vosotros' (r_01c57be222258555) está correto, mas é uso da Espanha; para um público latino-americano ou neutro, considerar 'ustedes'.",
+    "Mensagens de erro do servidor estão inconsistentes: r_058a1af4b967864f segue em inglês, enquanto r_0a112211e3000077 e r_08685235e05b970c foram traduzidas.",
+    "Os nomes Decision Engine, Audit Trail, E-Signature, Builder e Canvas foram mantidos por serem nomes técnicos de building blocks ou do Studio.",
+    "Predomina o tratamento informal (tú); os trechos com usted foram padronizados.",
+    "'Banking' sozinho (r_198a04be1ce48ae2, r_1b3460f29df9bbc1, r_2459bd79f057f158) foi mantido como nome curto; confirmar se deve virar 'Plataforma bancaria' para manter consistência.",
+    "Webhooks Engine e outros nomes de building blocks foram preservados.",
+    "\"Banking\" e \"Credit\" foram mantidos como nomes próprios de produto, como nos demais textos.",
+    "Fragmentos como \"¿WhatsApp?\" e \"la complejidad?\" dependem da quebra de linha; o posicionamento do sinal \"¿\" deve ser conferido no componente.",
+    "\"Invalid market subject\" foi traduzido como \"Tema de mercado\"; conferir se \"subject\" se refere a tema ou a sujeito/entidade.",
+    "r_3e0a13a30b51cff7: o rótulo 'Banking' foi mantido em inglês. Avaliar se deve ser 'Banca' ou 'Plataforma bancaria', em linha com a regra de traduzir nomes genéricos de produtos.",
+    "r_453dc718c25891ac: 'Jurídico' também é um termo válido em espanhol, então foi mantido.",
+    "r_4bcdffa39f1513c8: em espanhol, 'e hipótesis' está correto, porque o 'y' vira 'e' antes de 'hi'.",
+    "r_5f2f57894008b440: fragmento de pergunta dividido; o espanhol exigiria '¿' no início do fragmento anterior (r_5f061780b277929e). Convém verificar a composição no componente.",
+    "r_5acb38ea9cbaa2a3 usa 'Compartición de datos' e r_588e1715796e4d35 usa 'intercambio de datos'. Avaliar se convém padronizar.",
+    "'Encontro' aparece como 'Encuentro' e como 'Reunión'. Não foi alterado porque os contextos podem ser diferentes (consulta marcada × reunião).",
+    "'Atenciones' (r_730c491e2c6115cd) soa estranho no espanhol da Espanha, mas não foi alterado porque o contexto não é conhecido.",
+    "'Experiencias Banking' foi mantido porque o original também usa 'Banking', sem traduzir.",
+    "'Cartera' (r_6899731dbc3f0411) supõe carteira financeira; se for portfólio de produtos, usar 'Portafolio'.",
+    "O tratamento predominante é «tú»; as ocorrências de «usted» foram uniformizadas.",
+    "AI Engine, Document Template e Analytics foram mantidos como nomes de building blocks.",
+    "Origem «Unsplash (Imgur Inc.)» mantida como no original; verificar o fato na fonte.",
+    "Mantive em inglês os termos que já estão em inglês no original: Building blocks, BRAND RESOURCES, banking e Pricing Engine.",
+    "A menção a \"transcripción en portugués\" ficou como está, porque é um fato do produto.",
+    "Os fragmentos de frase foram traduzidos sem completar nem inventar frases.",
+    "Mantive Decision Engine e Decision Platform como nomes técnicos de componentes, sem traduzir.",
+    "Usei a variante do espanhol da Espanha (tú, recorrido, derivar, expediente), que está consistente em todo o conjunto.",
+    "DDD foi mantido entre parênteses, preservando a referência brasileira.",
+    "O conjunto misturava tú e usted; padronizei em usted, que já é a forma predominante (Conozca, Elija, Consulte, rótulo «Usted»).",
+    "Handoff padronizado como «derivación» em toda a interface e nas mensagens do servidor.",
+    "Mantive «Banking Product Portfolio» e «Audit Trail» por serem nomes de building blocks.",
+    "'Reserva' foi padronizada em todos os pares financeiros; 'pode movimentar' é tratado como saldo disponível para transferências.",
+    "Nomes genéricos de produto foram traduzidos: Decision → plataforma de decisión; Banking (forma curta de Banking Platform) → plataforma bancaria. Blocos técnicos (Payments, AI Engine, BaaS, Calculations Engine) foram preservados.",
+    "Verificar no contexto se 'Próxima atención' (r_c534633bbce8c0eb) deveria ser 'Próxima cita'.",
+    "Tratamento predominante adotado: usted (formal, B2B premium e textos jurídicos); todas as ocorrências de tú foram uniformizadas.",
+    "Fragmentos interrogativos receberam '¿' de abertura; verificar se o fragmento seguinte termina com '?'.",
+    "Mantidos: R$ 31.000 M (sem conversão), FiTarget, privacidade@catalisa.io, Workflows, Building Blocks, Consignado, Pix, CPF, LGPD.",
+    "'Liberação' foi traduzida como 'autorización' em vários textos, e 'Liberar próximos passos' como 'Habilitar'; considerar unificar o termo no glossário.",
+    "Padronizado para usted: era o tratamento predominante e combina com o tom B2B premium. Os textos em tú foram convertidos.",
+    "Mantida a instrução entre aspas para o agente (r_f8217ee400e8e11d) com tuteo, por ser uma ordem dirigida ao agente de IA e não ao visitante.",
+    "O source de r_e8f4d1a5ed1b6e79 tem um erro de digitação ('mudao'); a tradução já está correta.",
+    "'Banking' e 'Credit' isolados e 'guía Banking' foram mantidos como referências a materiais/nomes curtos; vale confirmar a política de marca.",
+    "'Site in English' foi mantido em inglês por ser um seletor de idioma.",
+    "\"esteira\" aparece como \"pipeline\" (r_f97c254c1a56d74d) e \"flujo\" (r_ff4a488079632a61); aceitável pelo contexto, mas pode-se unificar.",
+    "\"Banking\" isolado (r_faf7cb0fb37b0041, r_a37a67270960b3b0) foi mantido como nome curto de produto.",
+    "\"Servicios jurídicos\" para Jurídico é aceitável; \"Jurídico\" seria alternativa mais curta."
+  ]
+}

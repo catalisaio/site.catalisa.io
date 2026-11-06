@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-10-26T22:49:42.496Z",
+  "passed": true,
+  "checks": [
+    {
+      "path": "/de/produkte",
+      "width": 320,
+      "hyphenatedGermanTitle": true
+    },
+    {
+      "path": "/de/oekosystem/recruiting",
+      "width": 320,
+      "longGermanNameFits": true,
+      "singleLineTitleHeight": 32.625
+    },
+    {
+      "slug": "banking",
+      "heroDeepLinkOpensDetails": true
+    },
+    {
+      "slug": "credit",
+      "heroDeepLinkOpensDetails": true
+    }
+  ],
+  "errors": [],
+  "scope": "Source preview only; German long-name layout and native financial hero deep-link disclosure. No AI, sessions or deployment."
+}

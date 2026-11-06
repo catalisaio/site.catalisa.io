@@ -1,0 +1,105 @@
+{
+  "date": "2026-10-26T19:01:13.892Z",
+  "scope": "Five non-French dictionaries only; guarded editorial patches and architecture capability glossary. No original Portuguese source or application code changed.",
+  "complete": true,
+  "sourceCount": 4189,
+  "locales": [
+    {
+      "locale": "en-US",
+      "sourceCount": 4189,
+      "translated": 4189,
+      "reviewed": 4189,
+      "independentCliReviewed": 4187,
+      "manualSeoSupplementReviewed": 2,
+      "deltaReviewed": 158,
+      "counts": {
+        "applied-material": 85,
+        "skipped-unsubstantiated": 23,
+        "skipped-style": 26,
+        "skipped-manual": 1,
+        "skipped-structure": 5,
+        "skipped-identifier": 1
+      },
+      "glossaryNormalizations": 0,
+      "dictionarySha256": "4ce613379fa8f0c2304ce876968ba2bedee7fd9c87cfb8bbc8544100ec05649a"
+    },
+    {
+      "locale": "de-DE",
+      "sourceCount": 4189,
+      "translated": 4189,
+      "reviewed": 4189,
+      "independentCliReviewed": 4187,
+      "manualSeoSupplementReviewed": 2,
+      "deltaReviewed": 158,
+      "counts": {
+        "applied-material": 122,
+        "already-current": 8,
+        "skipped-style": 76,
+        "skipped-register": 1,
+        "skipped-unsubstantiated": 41,
+        "skipped-identifier": 2
+      },
+      "glossaryNormalizations": 37,
+      "dictionarySha256": "81c7e263660aa34aea52851a353bb0628d6a70cda8022d16292b0cbd76eb95bf"
+    },
+    {
+      "locale": "es-ES",
+      "sourceCount": 4189,
+      "translated": 4189,
+      "reviewed": 4189,
+      "independentCliReviewed": 4187,
+      "manualSeoSupplementReviewed": 2,
+      "deltaReviewed": 158,
+      "counts": {
+        "skipped-register": 142,
+        "applied-material": 60,
+        "skipped-style": 15,
+        "skipped-structure": 2,
+        "skipped-unsubstantiated": 17,
+        "skipped-manual": 1,
+        "skipped-identifier": 2
+      },
+      "glossaryNormalizations": 0,
+      "dictionarySha256": "be2bb80b3e4e61b70f24e46125eab526258a6f1f026e624db4c6dd21547d9d05"
+    },
+    {
+      "locale": "da-DK",
+      "sourceCount": 4189,
+      "translated": 4189,
+      "reviewed": 4189,
+      "independentCliReviewed": 4187,
+      "manualSeoSupplementReviewed": 2,
+      "deltaReviewed": 158,
+      "counts": {
+        "skipped-style": 98,
+        "applied-material": 108,
+        "skipped-unsubstantiated": 31,
+        "skipped-manual": 1,
+        "already-current": 5,
+        "skipped-identifier": 1,
+        "skipped-register": 2
+      },
+      "glossaryNormalizations": 27,
+      "dictionarySha256": "40613d53864557f7106092c71484206f249fe80a1cdf3cd610d0f9c7b0742eb2"
+    },
+    {
+      "locale": "nl-NL",
+      "sourceCount": 4189,
+      "translated": 4189,
+      "reviewed": 4189,
+      "independentCliReviewed": 4187,
+      "manualSeoSupplementReviewed": 2,
+      "deltaReviewed": 158,
+      "counts": {
+        "skipped-style": 112,
+        "skipped-unsubstantiated": 41,
+        "applied-material": 116,
+        "skipped-register": 76,
+        "already-current": 3,
+        "skipped-identifier": 1
+      },
+      "glossaryNormalizations": 108,
+      "dictionarySha256": "5a4194b98fdeca2fbd89797b043696d66def02250b76829ae115c7203c7def20"
+    }
+  ]
+}

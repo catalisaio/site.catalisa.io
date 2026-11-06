@@ -1,0 +1,165 @@
+{
+  "locale": "pt-BR",
+  "updatedAt": "2026-10-26T18:44:47.188Z",
+  "method": "Independent full source/translation pair review using authorized Claude CLI without tools, MCP or session persistence; corrections structurally validated before merge.",
+  "required": 4175,
+  "available": 4175,
+  "reviewed": 4175,
+  "complete": true,
+  "corrections": 88,
+  "batches": [
+    {
+      "id": "17874b38e54419696cb7",
+      "count": 300,
+      "corrections": 3,
+      "costUsd": 0.2656042,
+      "durationMs": 16422
+    },
+    {
+      "id": "5297af255933cf2651ff",
+      "count": 300,
+      "corrections": 8,
+      "costUsd": 0.31505299999999997,
+      "durationMs": 25226
+    },
+    {
+      "id": "8de766e5df8e5306497a",
+      "count": 300,
+      "corrections": 6,
+      "costUsd": 0.2754692,
+      "durationMs": 25091
+    },
+    {
+      "id": "448bf9c9ed3dac6a8660",
+      "count": 300,
+      "corrections": 2,
+      "costUsd": 0.2839042,
+      "durationMs": 15837
+    },
+    {
+      "id": "9d0f7b1bc04b60a20c88",
+      "count": 300,
+      "corrections": 10,
+      "costUsd": 0.3238246,
+      "durationMs": 36409
+    },
+    {
+      "id": "8bd88ad5bf546893d9f3",
+      "count": 300,
+      "corrections": 10,
+      "costUsd": 0.2997492,
+      "durationMs": 24236
+    },
+    {
+      "id": "0c4900181216802c2e05",
+      "count": 300,
+      "corrections": 6,
+      "costUsd": 0.2837244,
+      "durationMs": 22987
+    },
+    {
+      "id": "e2496ecc752098c3f87c",
+      "count": 300,
+      "corrections": 3,
+      "costUsd": 0.2677238,
+      "durationMs": 17524
+    },
+    {
+      "id": "3705c16434b08cd76ca8",
+      "count": 300,
+      "corrections": 6,
+      "costUsd": 0.2769416,
+      "durationMs": 18920
+    },
+    {
+      "id": "64a42a20840429883d85",
+      "count": 300,
+      "corrections": 13,
+      "costUsd": 0.2958414,
+      "durationMs": 23411
+    },
+    {
+      "id": "5c2c84f1639fa132b359",
+      "count": 300,
+      "corrections": 7,
+      "costUsd": 0.299337,
+      "durationMs": 31769
+    },
+    {
+      "id": "e246dabaf0a8c54432a3",
+      "count": 300,
+      "corrections": 2,
+      "costUsd": 0.2540844,
+      "durationMs": 16159
+    },
+    {
+      "id": "f5eccd3abc06c626c1f4",
+      "count": 300,
+      "corrections": 6,
+      "costUsd": 0.2698928,
+      "durationMs": 18987
+    },
+    {
+      "id": "6d39362dae85a0ea807b",
+      "count": 275,
+      "corrections": 7,
+      "costUsd": 0.269184,
+      "durationMs": 15700
+    }
+  ],
+  "notes": [
+    "r_028630b51664cd90: \"Decision Engine\" ficou como está porque parece nome de building block técnico. Se for nome de produto, a tradução seria \"Motor de decisão\".",
+    "r_108ffd46dc9ad45d: o texto diz \"Unsplash (Imgur Inc.)\", mas o Unsplash pertence à Getty Images. Não alterei porque a regra é preservar os fatos; vale confirmar com o jurídico.",
+    "r_058a1af4b967864f, r_08685235e05b970c, r_0a112211e3000077: mensagens de servidor em inglês, provavelmente de log interno. Se aparecerem para o usuário, precisam de tradução.",
+    "r_0fd047b9a9610bd7: \"Agentes IA\" ficou como está, pois pode ser termo definido no texto legal. Fora disso, a forma natural seria \"agentes de IA\".",
+    "r_2016a8c925fb3ef3 e r_24d5f2625a50975d continuam em inglês. Parecem mensagens internas de servidor ou log, por isso não foram alteradas. Se aparecerem para o usuário, precisam ser traduzidas.",
+    "FiToggleRight é um identificador de ícone e foi mantido.",
+    "Ficaram como estão nomes técnicos de building blocks (Webhooks Engine), API-first, Studio, Catalisa, DMN, CPF, IOF, CET, LGPD e CNPJ.",
+    "Mensagens de servidor em inglês (por exemplo, \"Invalid store configuration\", \"Invalid quota\", \"Selected store does not support durable market outbox discovery\") foram mantidas por parecerem logs ou erros internos. Se forem exibidas ao usuário, precisam de tradução.",
+    "Nomes técnicos como Data Store, Decision Engine, Workflows, Studio e o termo \"building block\" foram preservados.",
+    "Antes de aceitar r_393ed03a75d6830f, confirme se o componente divide a frase no ponto; nesse caso, o espaço adicionado pode ter outro efeito.",
+    "As mensagens de servidor em inglês 'Site Supabase configuration missing' (r_3b49014831351b86) e 'HTTPS site origins required' (r_4b90695b9502d5ea) parecem erros internos de configuração; ficaram sem alteração. Se forem exibidas ao usuário, sugiro traduzir.",
+    "Mantive 'Decision Engine' (r_472bfad152f724d4) e 'building blocks' por serem nomes técnicos de componentes.",
+    "Termos legais, percentuais de SLA, referências à LGPD (Art. 7, II) e cookies (_ga, _ga_*) foram preservados sem mudança.",
+    "Fragmentos de frase (por exemplo, 'e hipótese têm', 'c.', 'CONCEITO /') foram mantidos como estão no texto.",
+    "Em todos os pares, o texto de destino era igual ao de origem em português. A revisão buscou restos de inglês, rótulos de produto inconsistentes e frases ambíguas.",
+    "Não alterei os nomes técnicos de building blocks e APIs (Companies, Products, Pricing, Canvas, IAM, DMN, Studio, Lab).",
+    "'Banking' em r_59f559a8c16ccc68 é nome de área de atuação, termo comum no setor, e ficou como está. Se a equipe quiser o mesmo padrão de 'aplicativo bancário' no site inteiro, vale revisar esse uso também.",
+    "'Agentes IA' ficou como está porque já é usado como rótulo em todo o site. Em texto corrido, 'Agentes de IA' soaria mais natural.",
+    "Os 300 pares foram revisados. Os textos de origem e de destino estavam idênticos, porque a origem já está em português do Brasil.",
+    "Foram mantidos sem alteração: os nomes de componentes técnicos (API Keys, WPP, Audit Trail, Builder, Studio), as siglas (WABA, ATS, ERP, FSB), as datas e as citações factuais.",
+    "As três mensagens de erro de configuração do servidor foram traduzidas. Se elas aparecem só nos logs internos, a tradução é opcional.",
+    "Política de Privacidade (r_7be1c816a856abdb): \"Unsplash (Imgur Inc.)\" parece um erro factual, pois a Unsplash não pertence à Imgur. Verificar com o jurídico; o texto não foi alterado para não mudar fatos.",
+    "r_791b406bfe7dbfe2 e r_7ef9505b374e02ea são mensagens de erro do servidor em inglês. Se o usuário final puder vê-las, precisam de tradução.",
+    "r_8312c72dfca32d2f \"Ampliar aplicativo Banking\": se \"Banking\" se referir ao produto, ajustar ao rótulo \"plataforma bancária\".",
+    "Nomes de Building Blocks (AI Engine, Document Template, Analytics) foram mantidos como identificadores técnicos.",
+    "Os pares de origem e destino estavam idênticos em português; a revisão se concentrou em gramática, termos em inglês remanescentes e consistência dos rótulos de produto.",
+    "Mantidas sem alteração as mensagens técnicas internas do servidor em inglês (r_95e99daea0823953, r_9a98f77be42a06fd), por parecerem logs ou erros técnicos e não textos para o usuário. Recomenda-se confirmar se chegam à interface.",
+    "Confirmar se o rótulo \"Plataforma Bancária\" é o adotado nas demais páginas, para manter a consistência.",
+    "\"Agentes IA\" nos Termos foi mantido por possivelmente ser um termo definido; avaliar a forma \"Agentes de IA\" em revisão jurídica.",
+    "Mensagens de servidor em inglês (r_a8174ece75b79772, r_a94ed2ab538f6af0, r_ad9282a1fd484c6b, r_ae17e3359edc08f4) foram mantidas: parecem logs ou erros internos que o código pode comparar como string. Se aparecerem para o usuário, traduza.",
+    "r_ae0a9ad3227c5420 ('idea') parece um identificador técnico; foi mantido.",
+    "'Decision Platform' e 'Decision Engine' foram mantidos por serem nomes de blocos técnicos.",
+    "Os demais pares estão corretos em pt-BR e foram mantidos sem alteração.",
+    "Mantive Banking Product Portfolio e Audit Trail porque são nomes técnicos de building blocks. Também mantive Studio, Catalisa, DMN, Pix e o e-mail privacidade@catalisa.io.",
+    "As mensagens do servidor em inglês (server/site/*.ts) foram traduzidas. Se forem apenas logs internos e não aparecerem para o usuário, essas correções podem ser descartadas.",
+    "Origem e destino são idênticos em todos os pares; a maior parte já estava correta em português do Brasil.",
+    "Os nomes de componentes técnicos ficaram como estão: Payments, BaaS, AI Engine, Calculations Engine, Studio e Console.",
+    "Os textos jurídicos ficaram sem alteração: Termos, Política de Privacidade, a citação \"Art. 48 da LGPD\" e o prazo de 72 horas.",
+    "Em r_ca8b47a865b496b0, \"o que pode ser movimentado\" já fala de saldo disponível, não de permissão.",
+    "Concordâncias no masculino plural com substantivos de gêneros diferentes (r_ca65f718e89fd9ed, r_c9f2da25329f9665) estão gramaticalmente corretas e foram mantidas.",
+    "Quase todos os destinos são idênticos à origem e já estão corretos em pt-BR; nenhuma alteração necessária.",
+    "Mensagens de servidor em inglês mantidas sem alteração (r_dca5cab8edea1fb9, r_e5417aa46d214d21, r_e5f336c7db6b05c4): parecem erros internos de validação, e o código ou testes podem depender do texto exato. Se forem exibidas ao usuário, traduzir para: 'Tempo limite de geração do site inválido', 'Retenção da caixa de entrada inválida' e 'Chave de mercado inválida'.",
+    "Mantidos como identificadores técnicos ou nomes de blocos: Decision Engine, Pricing, Workflows, Building Blocks, Studio, WPP Business, Meta Account, Rooms, Email, Customers, Recruit CRM, FiTarget, WABA.",
+    "Mantidos sem alteração: Pix, CPF, LGPD, privacidade@catalisa.io, {value0} e a marcação <br>.",
+    "Fragmentos de frase (ex.: 's disponíveis', 'depois.', 'construir?') preservados como estão, sem completar.",
+    "As mensagens de servidor em inglês (r_ea927aadfbad8233, r_ef0ff962d22d18be, r_ef81f0c898668602) parecem ser logs ou erros internos e foram mantidas. Se aparecerem para o usuário, precisam ser traduzidas.",
+    "Os rótulos \"Site in English\", \"WhatsApp AI agents (English)\" e \"All insights (English)\" foram mantidos, porque parecem apontar de propósito para o conteúdo em inglês.",
+    "\"catalisa — versão Branco\" e \"versão Negativa\" não concordam no gênero. Mantive como está porque podem ser nomes de variantes do kit de marca. Se não forem, vale padronizar para \"versão Branca\".",
+    "\"Explore WPP Business\", \"Calendar\" e \"Feature Flags\" foram mantidos por serem nomes de building blocks ou identificadores técnicos.",
+    "Os pares 'Explore building blocks' e 'Explore workflows' foram mantidos, porque 'workflows' é usado como termo da plataforma em outras partes do site. Se quiserem padronizar, o primeiro pode virar 'Explore os blocos de construção'.",
+    "'Conheça Banking ↗' e 'Banking com identidade própria' foram mantidos, pois parecem se referir à área ou vertical Banking e não ao rótulo 'Banking Platform'. Vale confirmar.",
+    "'Determinism (English)' foi mantido, pois indica um material disponível em inglês.",
+    "Os textos sobre a reserva financeira, os valores em BRL, a LGPD e o DDD mantêm o escopo original, sem alteração."
+  ]
+}

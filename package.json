@@ -5,13 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
-    "postbuild": "tsx scripts/generate-og-images.ts; tsx scripts/generate-sitemap.ts; bash scripts/generate-brand-zip.sh; tsx scripts/inject-seo-meta.ts; tsx scripts/prerender.ts",
+    "build": "tsc -b && vite build --emptyOutDir",
+    "postbuild": "tsx scripts/generate-og-images.ts && tsx scripts/generate-redesign-og.ts && tsx scripts/generate-sitemap.ts && bash scripts/generate-brand-zip.sh && tsx scripts/inject-seo-meta.ts && tsx scripts/prerender.ts && tsx scripts/generate-hosting.ts && tsx scripts/verify-seo.ts",
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "check:seo": "tsx scripts/verify-seo.ts"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.2.4",
@@ -20,6 +21,7 @@
     "@emotion/styled": "^11.14.1",
     "@netlify/functions": "^5.1.3",
     "@supabase/supabase-js": "^2.99.1",
+    "ajv": "^8.20.0",
     "framer-motion": "^11.18.2",
     "i18next": "^25.8.12",
     "i18next-resources-to-backend": "^1.2.1",
@@ -45,6 +47,7 @@
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",
     "jsdom": "^28.1.0",
+    "postcss": "8.5.6",
     "puppeteer": "^24.37.5",
     "sharp": "^0.34.5",
     "tsx": "^4.21.0",

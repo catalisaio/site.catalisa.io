@@ -1,0 +1,127 @@
+{
+  "checkedAt": "2026-10-21T14:44:33.704Z",
+  "version": "diligencia-2026-10-21-v2",
+  "checks": [
+    "8 arquivos do corpus permanecem byte a byte iguais ao início da diligência",
+    "12 domínios, 60 questões/pedidos, 16 riscos e 32 controles únicos e relacionados",
+    "110 frentes relacionadas sem duplicação ou alteração de estado dos PRs",
+    "146 fontes e 14 documentos com blobs do snapshot reconciliados ao inventário",
+    "Documentação desatualizada e autodeclaração não são tratadas como certificação",
+    "A síntese separa fortalezas, fragilidades, provas pendentes e documentos; 8 ações cobrem os 16 riscos",
+    "Busca com acentos normalizados, filtros combinados, estado vazio, teclado, links profundos e CSV do recorte verificados",
+    "Conclusões, pontos fortes/fracos, riscos e ações visíveis sem expansão; atalhos entre páginas e CSV de ações verificados",
+    "Leitura dos pedidos e fontes disponível sem JavaScript; controles inativos não são exibidos"
+  ],
+  "browser": [
+    {
+      "name": "diligencia",
+      "widthsWithoutOverflow": [
+        320,
+        390,
+        768,
+        1024,
+        1440
+      ],
+      "printLogo": true,
+      "brokenAnchors": [],
+      "privacyChecked": true
+    },
+    {
+      "name": "diligencia-tecnica",
+      "widthsWithoutOverflow": [
+        320,
+        390,
+        768,
+        1024,
+        1440
+      ],
+      "printLogo": true,
+      "brokenAnchors": [],
+      "privacyChecked": true
+    },
+    {
+      "name": "diligencia-corporativa",
+      "widthsWithoutOverflow": [
+        320,
+        390,
+        768,
+        1024,
+        1440
+      ],
+      "printLogo": true,
+      "brokenAnchors": [],
+      "privacyChecked": true
+    },
+    {
+      "name": "diligencia-evidencias",
+      "widthsWithoutOverflow": [
+        320,
+        390,
+        768,
+        1024,
+        1440
+      ],
+      "printLogo": true,
+      "brokenAnchors": [],
+      "privacyChecked": true
+    },
+    {
+      "name": "homologacao",
+      "widthsWithoutOverflow": [
+        320,
+        390,
+        768,
+        1024,
+        1440
+      ],
+      "printLogo": true,
+      "brokenAnchors": [],
+      "privacyChecked": true
+    }
+  ],
+  "pdfs": [
+    {
+      "file": "diligencia.pdf",
+      "pages": 18,
+      "bytes": 229091,
+      "identifiersChecked": 33,
+      "pageNumbers": true,
+      "fontsEmbedded": true
+    },
+    {
+      "file": "diligencia-tecnica.pdf",
+      "pages": 58,
+      "bytes": 520505,
+      "identifiersChecked": 145,
+      "pageNumbers": true,
+      "fontsEmbedded": true
+    },
+    {
+      "file": "diligencia-corporativa.pdf",
+      "pages": 19,
+      "bytes": 189192,
+      "identifiersChecked": 25,
+      "pageNumbers": true,
+      "fontsEmbedded": true
+    },
+    {
+      "file": "diligencia-evidencias.pdf",
+      "pages": 88,
+      "bytes": 922463,
+      "identifiersChecked": 222,
+      "pageNumbers": true,
+      "fontsEmbedded": true
+    },
+    {
+      "file": "homologacao.pdf",
+      "pages": 14,
+      "bytes": 128719,
+      "identifiersChecked": 32,
+      "pageNumbers": true,
+      "fontsEmbedded": true
+    }
+  ],
+  "pageErrors": [],
+  "externalRequests": [],
+  "passed": true
+}

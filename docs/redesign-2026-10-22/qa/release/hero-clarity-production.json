@@ -1,0 +1,992 @@
+{
+  "checkedAt": "2026-10-27T22:45:29.592Z",
+  "target": "production",
+  "origin": "https://catalisa.io",
+  "release": "20261027-hero-clarity",
+  "passed": true,
+  "checks": 140,
+  "expected": 140,
+  "errors": [],
+  "results": [
+    {
+      "locale": "pt-BR",
+      "path": "/produtos",
+      "heading": "Encontre o produto para a sua operação.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/ecossistema/credit",
+      "heading": "Gerencie o crédito, da proposta à carteira.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/",
+      "heading": "Crie produtos e automatize operações com IA.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/ecossistema/banking",
+      "heading": "Crie e opere seu produto financeiro.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/studio",
+      "heading": "Crie agentes e automações para sua operação.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/workflows",
+      "heading": "Automatize tarefas e conecte seus sistemas.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/agentes",
+      "heading": "Use agentes de IA para atender e executar tarefas.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/governanca",
+      "heading": "Controle o acesso e as ações da sua equipe e da IA.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/arquitetura",
+      "heading": "Crie produtos com uma base de tecnologia compartilhada.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/desenvolvedores",
+      "heading": "Conecte seu sistema às APIs da Catalisa.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/visao",
+      "heading": "Conheça a plataforma por trás dos produtos Catalisa.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/ecossistema/juridico",
+      "heading": "Organize o atendimento e a rotina do seu escritório.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/ecossistema/med",
+      "heading": "Gerencie sua rotina médica em todas as suas clínicas.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/capacidades",
+      "heading": "Integre novas funções ao seu produto.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/ecossistema/decision",
+      "heading": "Automatize decisões com as regras do seu negócio.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/ecossistema",
+      "heading": "Conheça os produtos e suas aplicações.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/composicoes",
+      "heading": "Veja como conectar produtos e automatizar uma jornada.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/contato",
+      "heading": "Converse sobre o que sua empresa precisa.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/ecossistema/biometrics",
+      "heading": "Verifique identidades com prova de vida e comparação facial.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "pt-BR",
+      "path": "/lab",
+      "heading": "Descreva sua ideia e explore um conceito de produto.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/products",
+      "heading": "Find the product for your operations.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "en-US",
+      "path": "/en",
+      "heading": "Create products and automate operations with AI.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/ecosystem/banking",
+      "heading": "Create and run your financial product.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/ecosystem/credit",
+      "heading": "Manage credit, from application to portfolio.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/studio",
+      "heading": "Create agents and automations for your operations.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/workflows",
+      "heading": "Automate tasks and connect your systems.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/ai-agents",
+      "heading": "Use AI agents to serve customers and execute tasks.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/capabilities",
+      "heading": "Add new capabilities to your product.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/developers",
+      "heading": "Connect your system to Catalisa's APIs.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/architecture",
+      "heading": "Build products on a shared technology foundation.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/governance",
+      "heading": "Control access and actions for your team and AI.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/vision",
+      "heading": "Discover the platform behind Catalisa's products.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/ecosystem/med",
+      "heading": "Manage your medical practice across all your clinics.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/ecosystem/biometrics",
+      "heading": "Verify identities with liveness detection and facial matching.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/ecosystem/decision",
+      "heading": "Automate decisions with your business rules.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/ecosystem/legal",
+      "heading": "Organize client service and your law firm's daily work.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/ecosystem",
+      "heading": "Explore the products and what they do.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/contact",
+      "heading": "Let's talk about what your business needs.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/compositions",
+      "heading": "See how to connect products and automate a workflow.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "en-US",
+      "path": "/en/lab",
+      "heading": "Describe your idea and explore a product concept.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/oekosystem/banking",
+      "heading": "Entwickeln und betreiben Sie Ihr Finanzprodukt.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/oekosystem/credit",
+      "heading": "Steuern Sie Kredite vom Antrag bis zum Portfolio.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/produkte",
+      "heading": "Finden Sie das Produkt für Ihren Betrieb.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de",
+      "heading": "Entwickeln Sie Produkte und automatisieren Sie Abläufe mit KI.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/ki-agenten",
+      "heading": "Setzen Sie KI-Agenten für Kundenservice und Aufgaben ein.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/studio",
+      "heading": "Erstellen Sie Agenten und Automatisierungen für Ihren Betrieb.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/workflows",
+      "heading": "Automatisieren Sie Aufgaben und verbinden Sie Ihre Systeme.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/faehigkeiten",
+      "heading": "Integrieren Sie neue Funktionen in Ihr Produkt.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/architektur",
+      "heading": "Entwickeln Sie Produkte auf einer gemeinsamen Technologiebasis.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/vision",
+      "heading": "Entdecken Sie die Plattform hinter den Produkten von Catalisa.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/oekosystem/med",
+      "heading": "Organisieren Sie Ihren ärztlichen Alltag an allen Standorten.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/governance",
+      "heading": "Steuern Sie Zugriffe und Aktionen Ihres Teams und der KI.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/oekosystem/biometrics",
+      "heading": "Prüfen Sie Identitäten mit Lebenderkennung und Gesichtsabgleich.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/oekosystem/recht",
+      "heading": "Organisieren Sie Mandantenservice und Kanzleialltag.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/oekosystem/decision",
+      "heading": "Automatisieren Sie Entscheidungen nach Ihren Geschäftsregeln.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/entwickler",
+      "heading": "Verbinden Sie Ihr System mit den APIs von Catalisa.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/kompositionen",
+      "heading": "Sehen Sie, wie Sie Produkte verbinden und einen Ablauf automatisieren.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/oekosystem",
+      "heading": "Entdecken Sie die Produkte und ihre Anwendungen.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/lab",
+      "heading": "Beschreiben Sie Ihre Idee und erkunden Sie ein Produktkonzept.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "de-DE",
+      "path": "/de/kontakt",
+      "heading": "Sprechen wir darüber, was Ihr Unternehmen braucht.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es",
+      "heading": "Crea productos y automatiza operaciones con IA.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/productos",
+      "heading": "Encuentra el producto para tu operación.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/ecosistema/banking",
+      "heading": "Crea y opera tu producto financiero.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/ecosistema/credit",
+      "heading": "Gestiona el crédito, de la solicitud a la cartera.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/studio",
+      "heading": "Crea agentes y automatizaciones para tu operación.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/workflows",
+      "heading": "Automatiza tareas y conecta tus sistemas.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/agentes-ia",
+      "heading": "Usa agentes de IA para atender y ejecutar tareas.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/desarrolladores",
+      "heading": "Conecta tu sistema a las API de Catalisa.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/capacidades",
+      "heading": "Integra nuevas funciones en tu producto.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/arquitectura",
+      "heading": "Crea productos sobre una base tecnológica compartida.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/gobernanza",
+      "heading": "Controla el acceso y las acciones de tu equipo y de la IA.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/vision",
+      "heading": "Conoce la plataforma detrás de los productos Catalisa.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/ecosistema/med",
+      "heading": "Gestiona tu rutina médica en todas tus clínicas.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/ecosistema/juridico",
+      "heading": "Organiza la atención y el trabajo diario de tu despacho.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/ecosistema/biometrics",
+      "heading": "Verifica identidades con prueba de vida y comparación facial.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/ecosistema/decision",
+      "heading": "Automatiza decisiones con las reglas de tu negocio.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/ecosistema",
+      "heading": "Conoce los productos y sus aplicaciones.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/composiciones",
+      "heading": "Descubre cómo conectar productos y automatizar un proceso.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/contacto",
+      "heading": "Hablemos de lo que tu empresa necesita.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "es-ES",
+      "path": "/es/lab",
+      "heading": "Describe tu idea y explora un concepto de producto.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da",
+      "heading": "Skab produkter, og automatisér drift med AI.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/produkter",
+      "heading": "Find produktet til din drift.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/oekosystem/credit",
+      "heading": "Administrér kredit fra ansøgning til portefølje.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/studio",
+      "heading": "Opret agenter og automatiseringer til din drift.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/workflows",
+      "heading": "Automatisér opgaver, og forbind dine systemer.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/oekosystem/banking",
+      "heading": "Skab og driv dit finansielle produkt.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/ai-agenter",
+      "heading": "Brug AI-agenter til kundeservice og opgaver.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/funktioner",
+      "heading": "Integrér nye funktioner i dit produkt.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/udviklere",
+      "heading": "Forbind dit system med Catalisas API'er.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/arkitektur",
+      "heading": "Byg produkter på et fælles teknologisk fundament.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/governance",
+      "heading": "Styr adgang og handlinger for dit team og AI.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/vision",
+      "heading": "Lær platformen bag Catalisas produkter at kende.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/oekosystem/med",
+      "heading": "Organisér din lægehverdag på tværs af alle dine klinikker.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/oekosystem/jura",
+      "heading": "Organisér klientservice og advokatkontorets daglige arbejde.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/oekosystem/biometrics",
+      "heading": "Kontrollér identiteter med livstegnregistrering og ansigtssammenligning.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/oekosystem/decision",
+      "heading": "Automatisér beslutninger med dine forretningsregler.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/oekosystem",
+      "heading": "Udforsk produkterne og deres anvendelser.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/kontakt",
+      "heading": "Lad os tale om, hvad din virksomhed har brug for.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/sammensaetninger",
+      "heading": "Se, hvordan du forbinder produkter og automatiserer et forløb.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "da-DK",
+      "path": "/da/lab",
+      "heading": "Beskriv din idé, og udforsk et produktkoncept.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/producten",
+      "heading": "Vind het product voor jouw bedrijfsvoering.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/ecosysteem/credit",
+      "heading": "Beheer krediet, van aanvraag tot portefeuille.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl",
+      "heading": "Maak producten en automatiseer processen met AI.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/studio",
+      "heading": "Maak agents en automatiseringen voor je bedrijfsvoering.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/ecosysteem/banking",
+      "heading": "Ontwikkel en beheer je financiële product.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/workflows",
+      "heading": "Automatiseer taken en verbind je systemen.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/ai-agenten",
+      "heading": "Zet AI-agents in om klanten te helpen en taken uit te voeren.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/mogelijkheden",
+      "heading": "Voeg nieuwe functies toe aan je product.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/architectuur",
+      "heading": "Bouw producten op een gedeelde technologische basis.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/ontwikkelaars",
+      "heading": "Verbind je systeem met de API's van Catalisa.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/governance",
+      "heading": "Beheer toegang en acties van je team en AI.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/visie",
+      "heading": "Ontdek het platform achter de producten van Catalisa.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/ecosysteem/med",
+      "heading": "Organiseer je medische werk in al je klinieken.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/ecosysteem/juridisch",
+      "heading": "Organiseer de cliëntendienst en het dagelijkse werk van je advocatenkantoor.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/ecosysteem/biometrics",
+      "heading": "Verifieer identiteiten met livenessdetectie en gezichtsvergelijking.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/ecosysteem/decision",
+      "heading": "Automatiseer beslissingen met je eigen bedrijfsregels.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/ecosysteem",
+      "heading": "Ontdek de producten en hun toepassingen.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/composities",
+      "heading": "Bekijk hoe je producten verbindt en een proces automatiseert.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/lab",
+      "heading": "Beschrijf je idee en verken een productconcept.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr",
+      "heading": "Créez des produits et automatisez les opérations avec l'IA.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/produits",
+      "heading": "Trouvez le produit adapté à vos opérations.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/ecosysteme/banking",
+      "heading": "Créez et exploitez votre produit financier.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/ecosysteme/credit",
+      "heading": "Gérez le crédit, de la demande au portefeuille.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/studio",
+      "heading": "Créez des agents et des automatisations pour vos opérations.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/workflows",
+      "heading": "Automatisez les tâches et connectez vos systèmes.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/agents-ia",
+      "heading": "Utilisez des agents IA pour servir vos clients et exécuter des tâches.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/capacites",
+      "heading": "Intégrez de nouvelles fonctions à votre produit.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/architecture",
+      "heading": "Créez des produits sur un socle technologique partagé.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "nl-NL",
+      "path": "/nl/contact",
+      "heading": "Laten we bespreken wat je bedrijf nodig heeft.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/developpeurs",
+      "heading": "Connectez votre système aux API de Catalisa.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/gouvernance",
+      "heading": "Contrôlez les accès et les actions de votre équipe et de l'IA.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/vision",
+      "heading": "Découvrez la plateforme derrière les produits Catalisa.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/ecosysteme/med",
+      "heading": "Organisez votre quotidien médical dans toutes vos cliniques.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/ecosysteme/juridique",
+      "heading": "Organisez l'accueil et le quotidien de votre cabinet d'avocats.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/ecosysteme/biometrics",
+      "heading": "Vérifiez les identités par détection du vivant et comparaison faciale.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/ecosysteme",
+      "heading": "Découvrez les produits et leurs applications.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/ecosysteme/decision",
+      "heading": "Automatisez les décisions avec vos règles métier.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/compositions",
+      "heading": "Découvrez comment connecter des produits et automatiser un parcours.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/contact",
+      "heading": "Parlons des besoins de votre entreprise.",
+      "exactArtifact": true,
+      "status": 200
+    },
+    {
+      "locale": "fr-FR",
+      "path": "/fr/lab",
+      "heading": "Décrivez votre idée et explorez un concept de produit.",
+      "exactArtifact": true,
+      "status": 200
+    }
+  ]
+}

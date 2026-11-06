@@ -1,0 +1,36 @@
+import fs from'node:fs/promises';import path from'node:path';import{createHash}from'node:crypto';import{parse}from'@babel/parser';import traverseModule from'@babel/traverse';import{jsxText}from'./localize-source.mjs';
+const traverse=traverseModule.default??traverseModule,root='src/redesign',qa='docs/redesign-2026-10-22/qa/localization';
+const apply=process.argv.includes('--apply');
+const excluded=new Set(['HeaderView.tsx','components.tsx','App.tsx','PreviewMeta.tsx','Banking.tsx','Credit.tsx']);
+const productNames=new Set(['Banking Platform','Credit Platform','Med','Jurídico','Recrutamento','Biometrics','Decision','Banking','Credit']);
+const aliases={Banking:'Banking Platform',Credit:'Credit Platform',banking:'Banking Platform',credit:'Credit Platform'};
+const sourceFiles=async d=>(await Promise.all((await fs.readdir(d,{withFileTypes:true})).map(x=>x.isDirectory()&&x.name!=='i18n'?sourceFiles(d+'/'+x.name):x.isFile()&&/\.[tj]sx?$/.test(x.name)&&!x.name.includes('.test.')?[d+'/'+x.name]:[]))).flat();
+const files=await sourceFiles(root),report={generatedAt:new Date().toISOString(),applied:apply,scope:'AST coverage review of every native non-test TS/TSX module, including media/data subfolders; static JSON import/display field review; native product labels localized only at render time.',exclusions:[...excluded],files:[],manualFindings:[]};
+function insideCode(p){return p.findParent(x=>x.isJSXElement()&&['pre','code'].includes(x.node.openingElement.name.name));}
+function technicalLink(p){const link=p.findParent(x=>x.isJSXElement()&&['Link','a','TextLink'].includes(x.node.openingElement.name.name));const attr=link?.node.openingElement.attributes.find(x=>['to','href'].includes(x.name?.name));const target=attr?.value?.value??attr?.value?.expression?.value;return typeof target==='string'&&target.startsWith('/capacidades/');}
+function eligible(p){if(insideCode(p))return false;const attr=p.findParent(x=>x.isJSXAttribute());if(attr&&!['title','label','alt','aria-label','description','placeholder'].includes(attr.node.name.name))return false;if(p.findParent(x=>x.isBinaryExpression()&&['===','!==','==','!='].includes(x.node.operator)))return false;const jsx=p.findParent(x=>x.isJSXExpressionContainer()||x.isJSXAttribute());if(!jsx)return false;const call=p.findParent(x=>x.isCallExpression()&&x.node.start>=jsx.node.start&&x.node.end<=jsx.node.end&&!['t','__siteT','productLabel','__productLabel'].includes(x.node.callee.name));return !call;}
+for(const file of files){const source=await fs.readFile(file,'utf8'),base=path.basename(file),ast=parse(source,{sourceType:'module',plugins:['typescript','jsx']}),edits=[],products=[];let output=source;
+ traverse(ast,{JSXText(p){const value=jsxText(p.node.value);if(insideCode(p))return;const trimmed=value.trim();if(!productNames.has(trimmed)&&!['banking','credit'].includes(trimmed))return;if(technicalLink(p))return;products.push({line:p.node.loc.start.line,source:trimmed,kind:'literal-product-label'});edits.push({start:p.node.start,end:p.node.end,text:'{__productLabel('+JSON.stringify(aliases[trimmed]??trimmed)+')}'});},StringLiteral(p){const value=p.node.value;if(!productNames.has(value)||!eligible(p)||technicalLink(p))return;if(p.findParent(x=>x.isCallExpression()&&['productLabel','__productLabel'].includes(x.node.callee.name)))return;products.push({line:p.node.loc.start.line,source:value,kind:'expression-product-label'});const translated=p.parentPath.isCallExpression()&&['t','__siteT'].includes(p.parentPath.node.callee.name)?p.parentPath:null;const node=translated?.node??p.node,attribute=p.parentPath.isJSXAttribute();edits.push({start:node.start,end:node.end,text:(attribute?'{':'')+'__productLabel('+JSON.stringify(aliases[value]??value)+')'+(attribute?'}':'')});}});
+ const allowed=!excluded.has(base)&&file!==root+'/site-client.ts';
+ if(allowed){
+  // Split product headings need one whole-name translation before line wrapping.
+  if(['Home.tsx','Ecosystem.tsx'].includes(base)){
+   for(const name of['Banking','Credit']){const pattern='{'+JSON.stringify(name)+'}<br />{"Platform"}';const at=source.indexOf(pattern);if(at>=0){for(let i=edits.length-1;i>=0;i--)if(edits[i].start>=at&&edits[i].end<=at+pattern.length)edits.splice(i,1);edits.push({start:at,end:at+pattern.length,text:'<ProductName name="'+name+' Platform"/>'});}}
+  }
+  for(const edit of edits.sort((a,b)=>b.start-a.start))output=output.slice(0,edit.start)+edit.text+output.slice(edit.end);
+  if(output.includes('__productLabel(')&&!source.includes('productLabel as __productLabel')){const importPath=file.includes('/media/')?'../i18n/product-label':'./i18n/product-label';output='import{productLabel as __productLabel}from'+JSON.stringify(importPath)+';\n'+output;}
+  if(['Home.tsx','Ecosystem.tsx'].includes(base)&&output.includes('<ProductName ')&&!source.includes('import{ProductName}'))output='import{ProductName}from"./ProductName";\n'+output;
+  const replace=(from,to)=>{if(!output.includes(from)){if(output.includes(to))return;throw Error(file+' missing '+from);}output=output.replaceAll(from,to);};
+  if(base==='Capabilities.tsx'){replace('<h3>{product.name}</h3>','<h3>{__productLabel(product.name)}</h3>');replace(' / Building block</span>',' / {__siteT("Building block")}</span>');}
+  if(base==='Architecture.tsx'){replace('__siteT(item.name)','__productLabel(item.name===\'Banking\'?\'Banking Platform\':item.name)');replace('__siteT(d.name)','__productLabel(d.name===\'Banking\'?\'Banking Platform\':d.name)');replace('"value0":d.name','"value0":__productLabel(d.name===\'Banking\'?\'Banking Platform\':d.name)');}
+  if(base==='Ecosystem.tsx')replace('page?.name||__siteT("Ecossistema")','page?__productLabel(page.name):__siteT("Ecossistema")');
+  if(base==='Resources.tsx'){replace('const captures=__siteData(__siteBase_captures);','const captures=__siteData(__siteBase_captures,{translateKeys:["type","origin"]});');replace("useState('Clique em uma cor para copiar o HEX.')",'useState(__siteT("Clique em uma cor para copiar o HEX."))');}
+  if(base==='Styleguide.tsx')replace('href={`#${id}`}>{name}</a>','href={`#${id}`}>{__siteT(name)}</a>');
+  if(base==='Contact.tsx'){replace("reason.message:'Não foi possível retomar sua conversa.'",'reason.message:__siteT("Não foi possível retomar sua conversa.")');replace("submit('Para descobrir juntos na conversa.')",'submit(__siteT("Para descobrir juntos na conversa."))');}
+  if(output.includes('__productLabel(')&&!output.includes('productLabel as __productLabel'))output='import{productLabel as __productLabel}from"./i18n/product-label";\n'+output;
+  parse(output,{sourceType:'module',plugins:['typescript','jsx']});
+  if(apply&&output!==source){if(await fs.readFile(file,'utf8')!==source)throw Error('Changed during audit: '+file);await fs.writeFile(file,output);}
+ }
+ report.files.push({file,sha256:createHash('sha256').update(source).digest('hex'),editable:allowed,changed:allowed&&output!==source,productBindingsFound:products.length,productBindings:products,syntaxVerified:true});
+}
+await fs.writeFile(qa+'/native-audit-report.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify({applied:apply,files:files.length,changed:report.files.filter(x=>x.changed).length,productBindings:report.files.reduce((s,x)=>s+x.productBindingsFound,0)}));

@@ -1,0 +1,639 @@
+<style>
+/* ---- proposta: composição sobre o kit do Pine ---- */
+.wrap{max-width:1080px}
+.sec-h{margin-bottom:22px}
+section{margin-bottom:84px}
+p{max-width:72ch}
+.lead-in{font:300 19px/1.55 var(--p-display);color:var(--p-text-2);max-width:62ch;margin:0 0 22px}
+.tiles4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:16px}
+.tile{border-top:1px solid var(--p-ouro-300);padding:14px 2px 0}
+.tile b{display:block;font:300 30px/1 var(--p-display);font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+.tile span{display:block;font-size:12.5px;color:var(--p-text-2);margin-top:7px;line-height:1.45}
+.diffs{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:8px}
+.diff{background:var(--p-surface-2);padding:14px 16px;border-left:1px solid var(--p-primary)}
+.diff b{display:block;font-size:13.5px;margin-bottom:4px}
+.diff span{font-size:12.5px;color:var(--p-text-2);line-height:1.5}
+.thesis{background:linear-gradient(135deg,var(--p-bordo-700),var(--p-bordo-900));color:#fff;padding:34px 38px;position:relative;overflow:hidden;clip-path:inset(0);margin-bottom:24px}
+.thesis::after{content:"";position:absolute;right:-90px;top:-90px;width:300px;height:300px;border:1px solid rgba(201,164,92,.3);transform:rotate(45deg);pointer-events:none}
+.thesis .k{font:500 10.5px var(--p-mono);letter-spacing:.16em;text-transform:uppercase;color:var(--p-ouro-300)}
+.thesis h2{font:300 34px/1.15 var(--p-display);color:#fff;margin:10px 0 14px;max-width:24ch}
+.thesis p{color:rgba(242,236,227,.85);max-width:68ch;font-size:15px}
+.thesis strong{color:#fff;font-weight:600}
+.tw{overflow-x:auto;border:1px solid var(--p-hair);margin:4px 0}
+table.pt{border-collapse:collapse;width:100%;min-width:720px;font-size:13.5px;background:var(--p-surface)}
+table.pt th{font:500 10.5px var(--p-body);letter-spacing:.09em;text-transform:uppercase;color:var(--p-text-3);text-align:left;padding:11px 14px;border-bottom:1px solid var(--p-hair-2);background:var(--p-surface-2);white-space:nowrap}
+table.pt td{padding:12px 14px;border-bottom:1px solid var(--p-hair);vertical-align:top;line-height:1.5}
+table.pt tr:last-child td{border-bottom:0}
+table.pt td:first-child{font-weight:600;white-space:nowrap}
+table.pt code{white-space:nowrap}
+table.pt tr.hl td{background:var(--p-bordo-050)}
+:root[data-theme="dark"] table.pt tr.hl td{background:rgba(158,63,73,.10)}
+.bb{display:grid;grid-template-columns:repeat(2,1fr);gap:0 26px}
+.bb-row{display:grid;grid-template-columns:150px 1fr;gap:16px;padding:15px 0;border-bottom:1px solid var(--p-hair);align-items:start}
+.bb-row:last-child{border-bottom:0}
+.bb-row .n{font:500 13px var(--p-mono);color:var(--p-text);line-height:1.45}
+.bb-row .n small{display:block;font:400 11px var(--p-mono);color:var(--p-text-3);margin-top:3px}
+.bb-row .d{font-size:13.5px;color:var(--p-text-2);line-height:1.55}
+.bb-row .d b{color:var(--p-text);font-weight:600}
+.grp-h{font:500 10.5px var(--p-mono);letter-spacing:.16em;text-transform:uppercase;color:var(--p-ouro-700);margin:30px 0 4px;padding-top:14px;border-top:1px solid var(--p-hair-2)}
+:root[data-theme="dark"] .grp-h{color:var(--p-ouro-300)}
+figure{margin:0 0 10px;background:var(--p-surface);border:1px solid var(--p-hair);padding:20px 22px;cursor:zoom-in}
+figure svg{display:block;width:100%;height:auto;max-width:100%;color:var(--p-text)}
+figcaption{font-size:12.5px;color:var(--p-text-3);margin-top:14px;padding-top:12px;border-top:1px solid var(--p-hair);line-height:1.55}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.note-b{border-left:1px solid var(--p-ouro-500);background:var(--p-ouro-100);padding:14px 18px;font-size:13.5px;line-height:1.6;color:var(--p-text-2)}
+:root[data-theme="dark"] .note-b{background:rgba(201,164,92,.10)}
+.note-b b{color:var(--p-text)}
+.live{display:inline-flex;align-items:center;gap:7px;font:500 13px var(--p-body);color:var(--p-primary);text-decoration:none;border-bottom:1px solid var(--p-ouro-300);padding-bottom:2px;margin-top:6px}
+.live:hover{border-bottom-color:var(--p-primary)}
+.lives{display:flex;gap:22px;flex-wrap:wrap;margin-top:18px}
+.seccard{border-top:1px solid var(--p-hair-2);padding:14px 0 0}
+.seccard b{display:block;font:500 13.5px var(--p-body);margin-bottom:6px}
+.seccard span{display:block;font-size:13px;color:var(--p-text-2);line-height:1.6}
+.steps-n{list-style:none;padding:0;margin:0;display:grid;gap:0}
+.steps-n li{display:grid;grid-template-columns:30px 1fr;gap:14px;padding:14px 0;border-bottom:1px solid var(--p-hair);font-size:14px;line-height:1.55;color:var(--p-text-2)}
+.steps-n li:last-child{border-bottom:0}
+.steps-n b{font:400 13px var(--p-mono);color:var(--p-ouro-700);padding-top:2px}
+:root[data-theme="dark"] .steps-n b{color:var(--p-ouro-300)}
+.steps-n strong{color:var(--p-text);font-weight:600}
+.foot{margin-top:56px;padding-top:20px;border-top:1px solid var(--p-hair);font-size:12.5px;color:var(--p-text-3);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.lb{position:fixed;inset:0;background:rgba(20,16,14,.9);display:none;z-index:60;padding:22px}
+.lb[data-open="1"]{display:grid;grid-template-rows:auto 1fr}
+.lb .ctl{display:flex;gap:8px;justify-content:flex-end;align-items:center;color:#F2ECE3;font:400 12px var(--p-mono)}
+.lb .ctl button{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);color:#F2ECE3;height:32px;min-width:34px;padding:0 12px;cursor:pointer;font:500 13px var(--p-body);border-radius:2px}
+.lb .vp{overflow:auto;display:grid;place-items:center;cursor:grab}
+.lb .vp>div{background:var(--p-surface);padding:22px;color:var(--p-text)}
+.lb .vp svg{width:var(--zw,1000px);height:auto}
+@media (max-width:900px){.tiles4,.diffs,.two,.three{grid-template-columns:1fr}.bb{grid-template-columns:1fr}.bb-row{grid-template-columns:1fr;gap:6px}.thesis{padding:26px 22px}.thesis h2{font-size:27px}}
+</style>
+
+<div class="wrap">
+  <div class="top">
+    <div>
+      <span class="eyebrow">Banco Pine · Onboarding Digital PJ · proposta técnica</span>
+      <h1>A regra de aceitação<br>como ativo do banco</h1>
+    </div>
+    <button class="btn-ui" id="theme-toggle" type="button" aria-pressed="false">Tema escuro</button>
+  </div>
+
+  <p class="lede">Uma jornada de abertura de relacionamento PJ construída sobre blocos que já operam em produção — e, no centro dela, uma política de aceitação que o compliance do Pine escreve, simula, publica e revisa, sem release e sem depender de fornecedor.</p>
+
+  <div class="status">
+    <span>Versão <b>1.0</b></span>
+    <span>Emitida em <b>17/09/2026</b></span>
+    <span>Escopo <b>técnico</b></span>
+    <span>Para <b>SEMPRE IT · Banco Pine</b></span>
+    <span>Demonstrações em <b>banco-pine.catalisa.app</b></span>
+  </div>
+
+  <div class="tiles4">
+    <div class="tile"><b>35</b><span>building blocks no catálogo; <strong>12</strong> compõem esta entrega</span></div>
+    <div class="tile"><b>6 · 8 · 3</b><span>das 18 etapas da jornada: no ar, parciais e novas — medido no código, não estimado</span></div>
+    <div class="tile"><b>1 motor</b><span>de decisão para onboarding, crédito e cobrança; aqui habilitado para as regras do onboarding</span></div>
+    <div class="tile"><b>0</b><span>deploys para mudar a regra de aceitação — publicar uma versão da política é ação de tela</span></div>
+  </div>
+
+  <div class="diffs">
+    <div class="diff"><b>A regra sai do código</b><span>Tabela de decisão versionada, publicada sem deploy. Mudar apetite deixa de ser release.</span></div>
+    <div class="diff"><b>A decisão não vem acoplada ao dado</b><span>Bureau, OCR e biometria são provedores trocáveis. Trocar de fonte não é trocar de fornecedor de decisão.</span></div>
+    <div class="diff"><b>O backoffice é código do banco</b><span>Fila, dossiê e trilha rodam no repositório do Pine, consumindo a API. Nenhuma regra mora neles.</span></div>
+    <div class="diff"><b>Reversível por desenho</b><span>Cada peça é um contrato: o banco troca por sistema interno sem redesenhar a jornada. A política é DMN, exportável.</span></div>
+  </div>
+
+  <!-- ================= 1 · LEITURA DO PEDIDO ================= -->
+  <section style="margin-top:72px">
+    <div class="sec-h">
+      <span class="eyebrow">1 · O pedido, como entendemos</span>
+      <h2>Captação leve no site, verificação assíncrona, formalização retomável</h2>
+      <p>Os dois documentos do banco e as sete maquetes descrevem uma jornada em dois momentos: um modal sobre o site institucional que pede CNPJ, confirma os dados públicos, pergunta quem é a pessoa e responde <em>“estamos verificando; confirmação por e-mail em até 24 horas”</em>; e, depois, a jornada stateful de documentos, biometria dos representantes legais e assinatura. Esta proposta cobre os dois, sob a marca do Pine.</p>
+    </div>
+    <div class="tw">
+      <table class="pt">
+        <thead><tr><th>O que o documento exige</th><th>Como entra nesta proposta</th></tr></thead>
+        <tbody>
+          <tr><td>C# .NET Core, SQL Server, RabbitMQ<br><span style="font-weight:400;color:var(--p-text-3);font-size:12px">§4, Requisitos para Proposta</span></td><td>A orquestração assíncrona de validações que vive no perímetro do banco é escrita nesse padrão — a decisão de quem a escreve é do projeto. Os blocos são consumidos por API e não impõem linguagem a quem os chama; a mensageria do banco continua sendo a do banco.</td></tr>
+          <tr><td>Captura inteligente por CNPJ, com QSA</td><td>Bloco <code>bureaus</code>: 23 tipos de consulta sobre CNPJ e CPF, com finalidade obrigatória por consulta e cache que impede pagar duas vezes pelo mesmo documento na mesma jornada.</td></tr>
+          <tr><td>Jornada stateful, pausar e retomar</td><td>O dossiê da empresa vive em <code>data-store</code>, salvo a cada passo; a retomada é por link, e-mail ou WhatsApp, sem senha para quem foi convidado.</td></tr>
+          <tr><td>OCR de contrato social e faturamento</td><td><code>data-extraction</code>: o que extrair é um template em linguagem natural, e cada campo volta com nota de confiança — a mesa revisa só o que ficou abaixo do limiar.</td></tr>
+          <tr><td>Validação biométrica dos representantes legais</td><td>Bloco <code>biometrics</code>: sessão, página de captura hospedada com token de uso único e envelope de decisão com score, limiar e evidência com hash.</td></tr>
+          <tr><td>Assinatura com validade jurídica</td><td><code>e-signature</code> com hash do documento e nível registrado (simples, avançada, qualificada); ICP-Brasil entra pelo bloco <code>certificates</code> se o compliance exigir.</td></tr>
+          <tr><td>Receita, Juntas Comerciais, Serasa/Boa Vista, antifraude</td><td>Um contrato único de consulta com provedores plugáveis. Receita e cadastral estão no ar; Juntas, Serasa/Boa Vista e antifraude entram como provedores novos atrás do mesmo contrato.</td></tr>
+          <tr><td>Analytics em todas as etapas, Dynatrace e Splunk</td><td>Evento por etapa emitido pelo próprio componente, e a trilha exportada para o SIEM do banco.</td></tr>
+          <tr><td>Conta criada no Core pelo API Gateway</td><td>Publicamos <code>onboarding.approved</code> com o dossiê assinado, por webhook com assinatura RSA e retentativa. Quem grava no core é o core.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="lives"><a class="live" href="https://banco-pine.catalisa.app/demo-onboarding#/site" target="_blank" rel="noopener">Percorrer a jornada do cliente <span aria-hidden="true">↗</span></a><a class="live" href="https://banco-pine.catalisa.app/demo-desktop" target="_blank" rel="noopener">Ver o aplicativo PJ <span aria-hidden="true">↗</span></a></div>
+    <p class="cap">Um ponto que não está no documento e vale dizer em voz alta: <strong>Itaú e Santander só abrem conta PJ 100% online para empresa de sócio único.</strong> A jornada proposta aqui trata quadro societário com vários sócios, procurador com alçada e holding no quadro — que é exatamente o perfil de empresa do Pine.</p>
+  </section>
+
+  <!-- ================= 2 · A TESE ================= -->
+  <section>
+    <div class="thesis">
+      <span class="k">A tese desta proposta</span>
+      <h2>Quem escreve a regra é o banco</h2>
+      <p>Hoje, num onboarding PJ típico, o apetite de aceitação vive em três lugares ao mesmo tempo: em <strong>condicionais dentro do código</strong>, numa <strong>planilha do compliance</strong> e na <strong>cabeça do analista experiente</strong>. As três versões divergem com o tempo, e mudar o apetite vira chamado, fila de desenvolvimento e release.</p>
+      <p>A proposta é outra: a política de aceitação é uma <strong>decisão versionada</strong>, escrita em tabela, publicada sem deploy, e cada abertura registra <strong>qual versão e qual linha decidiram</strong>. É o mesmo motor que hoje opera esteiras de crédito em produção — e, nesta entrega, ele fica habilitado para o Pine <strong>criar e manter as regras do onboarding</strong>.</p>
+    </div>
+
+    <div class="two" style="margin-top:28px">
+      <div>
+        <h3 style="font:300 22px var(--p-display);margin-bottom:10px">O que isso muda na prática</h3>
+        <ul class="steps-n">
+          <li><b>01</b><span><strong>O comitê decide na terça e vale na terça.</strong> Publicar uma versão da política é uma ação de tela, com registro de quem publicou. Não há janela de deploy no caminho.</span></li>
+          <li><b>02</b><span><strong>Toda recusa tem endereço.</strong> O caso guarda a versão da política e a linha que casou. A pergunta “por que essa empresa foi para a mesa?” tem resposta em um clique, não em investigação.</span></li>
+          <li><b>03</b><span><strong>Simular antes de valer.</strong> Uma versão nova pode ser executada sobre casos já decididos antes de publicar — o comitê vê quantos mudariam de resultado.</span></li>
+          <li><b>04</b><span><strong>Voltar atrás é publicar a anterior.</strong> Versionamento em semver; reverter não depende de rollback de sistema.</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="font:300 22px var(--p-display);margin-bottom:10px">O que não muda, de propósito</h3>
+        <p style="font-size:14px;color:var(--p-text-2)">A decisão continua sendo do banco, e a responsabilidade regulatória também — a Resolução Conjunta nº 16/2025 aloca KYC e PLD à instituição, não ao fornecedor de tecnologia. A plataforma não decide no lugar do Pine: ela <strong>executa a regra do Pine</strong>, guarda a prova e entrega a exceção para uma pessoa.</p>
+        <div class="note-b" style="margin-top:14px"><b>Onde a IA entra — e onde não entra.</b> A plataforma tem agentes que operam a mesa por conversa, com confirmação humana em toda mutação. Eles <b>não decidem crédito nem aceitação</b>: quem decide é a tabela, que é auditável. A IA monta, consulta e redige; a regra julga. Isso está fora do escopo desta entrega e disponível depois.</div>
+      </div>
+    </div>
+
+    <h3 class="grp-h" style="border-top:0;margin-top:34px">O ciclo de vida de uma regra</h3>
+    <figure>
+      <svg viewBox="0 0 1000 250" role="img" aria-label="Ciclo de vida de uma regra de aceitação: rascunho, simulação sobre casos reais, publicação com semver e segunda aprovação, execução com log por caso, auto de decisão e revisão que volta ao rascunho">
+        <defs><marker id="ar1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="currentColor"/></marker></defs>
+        <g font-family="Nunito Sans,system-ui,sans-serif" font-size="12.5" fill="currentColor">
+          <g>
+            <rect x="16" y="74" width="140" height="62" rx="2" fill="none" stroke="currentColor" stroke-width="1.1"/>
+            <text x="86" y="100" text-anchor="middle" font-weight="600">Rascunho</text>
+            <text x="86" y="118" text-anchor="middle" font-size="11" opacity=".7">compliance e risco</text>
+          </g>
+          <g>
+            <rect x="188" y="74" width="140" height="62" rx="2" fill="none" stroke="currentColor" stroke-width="1.1"/>
+            <text x="258" y="100" text-anchor="middle" font-weight="600">Simulação</text>
+            <text x="258" y="118" text-anchor="middle" font-size="11" opacity=".7">sobre casos já decididos</text>
+          </g>
+          <g>
+            <rect x="360" y="74" width="140" height="62" rx="2" fill="#70242B" stroke="none"/>
+            <text x="430" y="100" text-anchor="middle" font-weight="600" fill="#fff">Publicação</text>
+            <text x="430" y="118" text-anchor="middle" font-size="11" fill="#fff" opacity=".85">semver · sem deploy</text>
+          </g>
+          <g>
+            <rect x="532" y="74" width="140" height="62" rx="2" fill="none" stroke="currentColor" stroke-width="1.1"/>
+            <text x="602" y="100" text-anchor="middle" font-weight="600">Execução</text>
+            <text x="602" y="118" text-anchor="middle" font-size="11" opacity=".7">uma linha de log por caso</text>
+          </g>
+          <g>
+            <rect x="704" y="74" width="140" height="62" rx="2" fill="none" stroke="currentColor" stroke-width="1.1"/>
+            <text x="774" y="100" text-anchor="middle" font-weight="600">Auto de decisão</text>
+            <text x="774" y="118" text-anchor="middle" font-size="11" opacity=".7">versão + linha que decidiu</text>
+          </g>
+          <g>
+            <rect x="876" y="74" width="108" height="62" rx="2" fill="none" stroke="currentColor" stroke-width="1.1" stroke-dasharray="4 3"/>
+            <text x="930" y="100" text-anchor="middle" font-weight="600">Revisão</text>
+            <text x="930" y="118" text-anchor="middle" font-size="11" opacity=".7">do comitê</text>
+          </g>
+          <g stroke="currentColor" stroke-width="1.2" marker-end="url(#ar1)">
+            <line x1="156" y1="105" x2="186" y2="105"/>
+            <line x1="328" y1="105" x2="358" y2="105"/>
+            <line x1="500" y1="105" x2="530" y2="105"/>
+            <line x1="672" y1="105" x2="702" y2="105"/>
+            <line x1="844" y1="105" x2="874" y2="105"/>
+          </g>
+          <path d="M930 136 v44 H86 v-42" fill="none" stroke="currentColor" stroke-width="1.1" stroke-dasharray="4 4" marker-end="url(#ar1)"/>
+          <text x="508" y="196" text-anchor="middle" font-size="11.5" opacity=".75">a versão seguinte nasce do que o log mostrou — e a anterior continua publicável</text>
+          <g font-size="11" opacity=".8">
+            <text x="430" y="52" text-anchor="middle">segunda aprovação para publicar</text>
+            <line x1="430" y1="58" x2="430" y2="72" stroke="currentColor" stroke-width="1.1" marker-end="url(#ar1)"/>
+            <text x="602" y="52" text-anchor="middle">entrada, saída, tempo, quem executou</text>
+            <line x1="602" y1="58" x2="602" y2="72" stroke="currentColor" stroke-width="1.1" marker-end="url(#ar1)"/>
+          </g>
+        </g>
+      </svg>
+      <figcaption>Ver funcionando: a tela de política, com os parâmetros editáveis e o botão de publicar, está em <a class="p-link" href="https://banco-pine.catalisa.app/demo-backoffice#/mesa/politica" target="_blank" rel="noopener">demonstração · política</a>. A política é um objeto com chave estável e versões em semver. O que executa é sempre uma versão publicada; o que fica guardado por caso é a versão e a linha. É o que transforma “nosso apetite mudou em março” de memória em registro.</figcaption>
+    </figure>
+  </section>
+
+  <!-- ================= 3 · ANATOMIA DE UMA DECISÃO ================= -->
+  <section>
+    <div class="sec-h">
+      <span class="eyebrow">2 · Anatomia de uma decisão</span>
+      <h2>Dois motores: um busca o dado, o outro julga</h2>
+      <p>A separação é deliberada e é o que permite trocar fonte sem tocar na regra, e mudar a regra sem tocar na integração.</p>
+    </div>
+    <figure>
+      <svg viewBox="0 0 1000 380" role="img" aria-label="Uma decisão: o dossiê da empresa entra na esteira, que busca Receita, bureau, OCR e biometria em paralelo, mescla os dados e chama a tabela de decisão versionada, que devolve aprovar, mesa ou recusar e grava um log com a versão e a linha">
+        <defs><marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="currentColor"/></marker></defs>
+        <g font-family="Nunito Sans,system-ui,sans-serif" font-size="12" fill="currentColor">
+          <rect x="16" y="150" width="132" height="70" rx="2" fill="none" stroke="currentColor" stroke-width="1.2"/>
+          <text x="82" y="178" text-anchor="middle" font-weight="600">Dossiê</text>
+          <text x="82" y="196" text-anchor="middle" font-size="11" opacity=".7">CNPJ, pessoas,</text>
+          <text x="82" y="210" text-anchor="middle" font-size="11" opacity=".7">documentos</text>
+
+          <rect x="196" y="40" width="250" height="290" rx="2" fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3 3"/>
+          <text x="321" y="64" text-anchor="middle" font-weight="600" font-size="12.5">decision-platform</text>
+          <text x="321" y="81" text-anchor="middle" font-size="11" opacity=".7">busca em paralelo e mescla</text>
+          <g font-size="11">
+            <rect x="214" y="96" width="214" height="30" rx="2" fill="none" stroke="currentColor" opacity=".75"/><text x="321" y="115" text-anchor="middle">Receita · situação e QSA</text>
+            <rect x="214" y="132" width="214" height="30" rx="2" fill="none" stroke="currentColor" opacity=".75"/><text x="321" y="151" text-anchor="middle">bureau · PEP, sanções, processos</text>
+            <rect x="214" y="168" width="214" height="30" rx="2" fill="none" stroke="currentColor" opacity=".75"/><text x="321" y="187" text-anchor="middle">OCR · contrato, balanço</text>
+            <rect x="214" y="204" width="214" height="30" rx="2" fill="none" stroke="currentColor" opacity=".75"/><text x="321" y="223" text-anchor="middle">biometria · face e vida</text>
+            <rect x="214" y="240" width="214" height="30" rx="2" fill="none" stroke="currentColor" opacity=".75" stroke-dasharray="3 3"/><text x="321" y="259" text-anchor="middle">bureau secundário (opcional)</text>
+          </g>
+          <text x="321" y="292" text-anchor="middle" font-size="10.5" opacity=".7">fonte obrigatória que falha interrompe;</text>
+          <text x="321" y="307" text-anchor="middle" font-size="10.5" opacity=".7">fonte opcional que falha cai numa faixa mais conservadora</text>
+
+          <rect x="494" y="120" width="230" height="130" rx="2" fill="rgba(112,36,43,.08)" stroke="#70242B" stroke-width="1.4"/>
+          <text x="609" y="146" text-anchor="middle" font-weight="600" font-size="12.5">decision-engine</text>
+          <text x="609" y="164" text-anchor="middle" font-size="11" opacity=".75">tabela de decisão · versão 7</text>
+          <g font-family="JetBrains Mono,monospace" font-size="10">
+            <text x="510" y="190">03  pep = true</text>
+            <text x="694" y="190" text-anchor="end">mesa</text>
+            <text x="510" y="208">12  divergência &gt; 25%</text>
+            <text x="694" y="208" text-anchor="end">mesa</text>
+            <text x="510" y="226">20  senão</text>
+            <text x="694" y="226" text-anchor="end">aprovar</text>
+          </g>
+          <text x="609" y="243" text-anchor="middle" font-size="10.5" opacity=".7">primeira linha que casa vence</text>
+
+          <g font-size="11.5">
+            <rect x="772" y="96" width="212" height="46" rx="2" fill="none" stroke="#2E7D5B" stroke-width="1.2"/>
+            <text x="878" y="118" text-anchor="middle" font-weight="600">Aprovar</text>
+            <text x="878" y="133" text-anchor="middle" font-size="10.5" opacity=".75">segue para assinatura</text>
+            <rect x="772" y="152" width="212" height="46" rx="2" fill="none" stroke="#B8621B" stroke-width="1.2"/>
+            <text x="878" y="174" text-anchor="middle" font-weight="600">Mesa</text>
+            <text x="878" y="189" text-anchor="middle" font-size="10.5" opacity=".75">com o motivo em português</text>
+            <rect x="772" y="208" width="212" height="46" rx="2" fill="none" stroke="#B3261E" stroke-width="1.2"/>
+            <text x="878" y="230" text-anchor="middle" font-weight="600">Recusar</text>
+            <text x="878" y="245" text-anchor="middle" font-size="10.5" opacity=".75">motivo registrado</text>
+          </g>
+
+          <g stroke="currentColor" stroke-width="1.3" marker-end="url(#ar2)">
+            <line x1="148" y1="185" x2="194" y2="185"/>
+            <line x1="446" y1="185" x2="492" y2="185"/>
+            <line x1="724" y1="185" x2="770" y2="185"/>
+          </g>
+          <rect x="494" y="286" width="490" height="44" rx="2" fill="none" stroke="currentColor" stroke-width="1.1" stroke-dasharray="4 3"/>
+          <text x="739" y="304" text-anchor="middle" font-size="11.5" font-weight="600">ExecutionLog</text>
+          <text x="739" y="320" text-anchor="middle" font-size="10.5" opacity=".75">entrada · entrada enriquecida · saída · versão · linha · tempo · quem executou</text>
+          <line x1="609" y1="250" x2="609" y2="284" stroke="currentColor" stroke-width="1.1" marker-end="url(#ar2)"/>
+        </g>
+      </svg>
+      <figcaption>A esteira resolve “de onde vem o dado” e tolera falha de fonte opcional por decisão de negócio, não por acidente. A tabela resolve “o que fazer com o dado”. O log fecha as duas pontas: é dele que sai o auto de decisão que o compliance lê.</figcaption>
+    </figure>
+    <div class="lives"><a class="live" href="https://banco-pine.catalisa.app/demo-backoffice#/mesa/dossie" target="_blank" rel="noopener">Ver o motivo da mesa num dossiê real <span aria-hidden="true">↗</span></a><a class="live" href="https://banco-pine.catalisa.app/demo-backoffice#/mesa/politica" target="_blank" rel="noopener">Publicar uma versão e ver o caso mudar <span aria-hidden="true">↗</span></a></div>
+    <div class="note-b" style="margin-top:18px"><b>O detalhe que um auditor vai perguntar.</b> A tela de auto de decisão não recalcula nada quando você a abre: ela mostra o que o caso já gravou — a regra disparada, o fator que decidiu, e se uma reavaliação local concorda com o que foi registrado. Quando a política daquela época não guardou a fotografia da tabela, a tela diz <b>“parcial”</b> em vez de fingir certeza. É uma escolha de engenharia que preferimos defender a esconder.</div>
+  </section>
+
+  <!-- ================= 4 · ARQUITETURA ================= -->
+  <section>
+    <div class="sec-h">
+      <span class="eyebrow">3 · Arquitetura</span>
+      <h2>O que roda no perímetro do banco, e o que é serviço</h2>
+      <p>A restrição de stack do documento é respeitada onde ela importa: o que conversa com o API Gateway e com o Core é escrito no padrão da casa — C# .NET Core, SQL Server e RabbitMQ, como o §4 do documento de requisitos pede. <strong>Quem escreve essa camada é decisão de projeto</strong>: o time do banco, a SEMPRE IT como prime da integração, ou nós com parceiro. Para os blocos é indiferente — eles são chamados por HTTP com credencial de máquina e não impõem linguagem a quem os chama, do mesmo modo que o banco já consome bureau e assinatura hoje.</p>
+    </div>
+    <figure>
+      <svg viewBox="0 0 1000 440" role="img" aria-label="Quatro camadas: perímetro do banco com jornada web, backoffice, orquestração .NET e API Gateway para o core; motor de onboarding da Catalisa; doze building blocks; e provedores externos trocáveis">
+        <defs><marker id="ar3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="currentColor"/></marker></defs>
+        <g font-family="Nunito Sans,system-ui,sans-serif" font-size="12" fill="currentColor">
+          <g font-family="JetBrains Mono,monospace" font-size="10" opacity=".55">
+            <text x="14" y="30">PERÍMETRO DO BANCO</text>
+            <text x="14" y="150">CATALISA · MOTOR</text>
+            <text x="14" y="248">CATALISA · BLOCOS</text>
+            <text x="14" y="396">PROVEDORES</text>
+          </g>
+          <rect x="16" y="40" width="232" height="58" rx="2" fill="none" stroke="#70242B" stroke-width="1.3"/>
+          <text x="132" y="63" text-anchor="middle" font-weight="600">Jornada web PJ</text>
+          <text x="132" y="80" text-anchor="middle" font-size="10.5" opacity=".75">marca do Pine · nossa entrega</text>
+          <rect x="260" y="40" width="232" height="58" rx="2" fill="none" stroke="#70242B" stroke-width="1.3"/>
+          <text x="376" y="63" text-anchor="middle" font-weight="600">Backoffice</text>
+          <text x="376" y="80" text-anchor="middle" font-size="10.5" opacity=".75">código do banco · consome a API</text>
+          <rect x="504" y="40" width="232" height="58" rx="2" fill="none" stroke="#70242B" stroke-width="1.3"/>
+          <text x="620" y="63" text-anchor="middle" font-weight="600">Orquestração .NET + RabbitMQ</text>
+          <text x="620" y="80" text-anchor="middle" font-size="10.5" opacity=".75">padrão da casa · §4 do documento</text>
+          <rect x="748" y="40" width="236" height="58" rx="2" fill="none" stroke="#70242B" stroke-width="1.3" stroke-dasharray="5 4"/>
+          <text x="866" y="63" text-anchor="middle" font-weight="600">API Gateway → Core</text>
+          <text x="866" y="80" text-anchor="middle" font-size="10.5" opacity=".75">cria a conta · do banco</text>
+          <line x1="736" y1="69" x2="746" y2="69" stroke="currentColor" stroke-width="1.2" marker-end="url(#ar3)"/>
+
+          <rect x="16" y="118" width="968" height="76" rx="2" fill="none" stroke="#70242B" stroke-width="1.5"/>
+          <text x="34" y="141" font-weight="600" fill="#70242B">Motor de onboarding</text>
+          <g font-size="11">
+            <rect x="34" y="150" width="172" height="32" rx="2" fill="none" stroke="currentColor" opacity=".8"/><text x="120" y="170" text-anchor="middle">passos e dossiê</text>
+            <rect x="218" y="150" width="172" height="32" rx="2" fill="none" stroke="currentColor" opacity=".8"/><text x="304" y="170" text-anchor="middle">esteira de decisão</text>
+            <rect x="402" y="150" width="172" height="32" rx="2" fill="none" stroke="currentColor" opacity=".8"/><text x="488" y="170" text-anchor="middle">fila, alçada e prazo</text>
+            <rect x="586" y="150" width="172" height="32" rx="2" fill="none" stroke="currentColor" opacity=".8"/><text x="672" y="170" text-anchor="middle">convite por pessoa</text>
+            <rect x="770" y="150" width="196" height="32" rx="2" fill="none" stroke="currentColor" opacity=".8"/><text x="868" y="170" text-anchor="middle">eventos assinados</text>
+          </g>
+          <g stroke="currentColor" stroke-width="1.2" marker-end="url(#ar3)">
+            <line x1="132" y1="98" x2="132" y2="116"/>
+            <line x1="376" y1="98" x2="376" y2="116"/>
+            <line x1="620" y1="116" x2="620" y2="100"/>
+          </g>
+          <text x="694" y="112" font-size="10.5" opacity=".75">onboarding.approved</text>
+
+          <g font-size="11">
+            <rect x="16" y="214" width="150" height="40" rx="2" fill="rgba(112,36,43,.10)" stroke="#70242B" stroke-width="1.3"/><text x="91" y="232" text-anchor="middle" font-weight="600">decision-engine</text><text x="91" y="247" text-anchor="middle" font-size="10" opacity=".75">a regra</text>
+            <rect x="178" y="214" width="150" height="40" rx="2" fill="rgba(112,36,43,.10)" stroke="#70242B" stroke-width="1.3"/><text x="253" y="232" text-anchor="middle" font-weight="600">decision-platform</text><text x="253" y="247" text-anchor="middle" font-size="10" opacity=".75">a esteira</text>
+            <rect x="340" y="214" width="150" height="40" rx="2" fill="none" stroke="currentColor" opacity=".85"/><text x="415" y="232" text-anchor="middle" font-weight="600">bureaus</text><text x="415" y="247" text-anchor="middle" font-size="10" opacity=".7">dado cadastral</text>
+            <rect x="502" y="214" width="150" height="40" rx="2" fill="none" stroke="currentColor" opacity=".85"/><text x="577" y="232" text-anchor="middle" font-weight="600">data-extraction</text><text x="577" y="247" text-anchor="middle" font-size="10" opacity=".7">documento → campo</text>
+            <rect x="664" y="214" width="150" height="40" rx="2" fill="none" stroke="currentColor" opacity=".85"/><text x="739" y="232" text-anchor="middle" font-weight="600">biometrics</text><text x="739" y="247" text-anchor="middle" font-size="10" opacity=".7">face e prova de vida</text>
+            <rect x="826" y="214" width="158" height="40" rx="2" fill="none" stroke="currentColor" opacity=".85"/><text x="905" y="232" text-anchor="middle" font-weight="600">e-signature</text><text x="905" y="247" text-anchor="middle" font-size="10" opacity=".7">assinatura e evidência</text>
+
+            <rect x="16" y="266" width="150" height="40" rx="2" fill="none" stroke="currentColor" opacity=".85"/><text x="91" y="284" text-anchor="middle" font-weight="600">customers · PJ</text><text x="91" y="299" text-anchor="middle" font-size="10" opacity=".7">a empresa</text>
+            <rect x="178" y="266" width="150" height="40" rx="2" fill="none" stroke="currentColor" opacity=".85"/><text x="253" y="284" text-anchor="middle" font-weight="600">data-store</text><text x="253" y="299" text-anchor="middle" font-size="10" opacity=".7">dossiê stateful</text>
+            <rect x="340" y="266" width="150" height="40" rx="2" fill="none" stroke="currentColor" opacity=".85"/><text x="415" y="284" text-anchor="middle" font-weight="600">file-storage</text><text x="415" y="299" text-anchor="middle" font-size="10" opacity=".7">documentos</text>
+            <rect x="502" y="266" width="150" height="40" rx="2" fill="none" stroke="currentColor" opacity=".85"/><text x="577" y="284" text-anchor="middle" font-weight="600">document-template</text><text x="577" y="299" text-anchor="middle" font-size="10" opacity=".7">ficha e termos</text>
+            <rect x="664" y="266" width="150" height="40" rx="2" fill="none" stroke="currentColor" opacity=".85"/><text x="739" y="284" text-anchor="middle" font-weight="600">audit-trail</text><text x="739" y="299" text-anchor="middle" font-size="10" opacity=".7">quem fez o quê</text>
+            <rect x="826" y="266" width="158" height="40" rx="2" fill="none" stroke="currentColor" opacity=".85"/><text x="905" y="284" text-anchor="middle" font-weight="600">webhooks-engine</text><text x="905" y="299" text-anchor="middle" font-size="10" opacity=".7">evento ao core</text>
+          </g>
+          <text x="500" y="332" text-anchor="middle" font-size="11" opacity=".75">iam · api-keys · feature-flags atravessam todos: identidade da organização vem do token assinado, nunca do corpo da requisição</text>
+
+          <g font-size="11">
+            <rect x="178" y="352" width="190" height="42" rx="2" fill="none" stroke="currentColor" stroke-dasharray="4 3"/><text x="273" y="370" text-anchor="middle" font-weight="600">Receita · bureaus</text><text x="273" y="385" text-anchor="middle" font-size="10" opacity=".7">cadastral, PEP, processos</text>
+            <rect x="382" y="352" width="190" height="42" rx="2" fill="none" stroke="currentColor" stroke-dasharray="4 3"/><text x="477" y="370" text-anchor="middle" font-weight="600">Juntas · antifraude</text><text x="477" y="385" text-anchor="middle" font-size="10" opacity=".7">provedores a contratar</text>
+            <rect x="586" y="352" width="190" height="42" rx="2" fill="none" stroke="currentColor" stroke-dasharray="4 3"/><text x="681" y="370" text-anchor="middle" font-weight="600">Biometria</text><text x="681" y="385" text-anchor="middle" font-size="10" opacity=".7">o do banco, ou de mercado</text>
+            <rect x="790" y="352" width="194" height="42" rx="2" fill="none" stroke="currentColor" stroke-dasharray="4 3"/><text x="887" y="370" text-anchor="middle" font-weight="600">Assinatura · ICP-Brasil</text><text x="887" y="385" text-anchor="middle" font-size="10" opacity=".7">nível que o compliance pedir</text>
+          </g>
+          <g stroke="currentColor" stroke-width="1" opacity=".6" marker-end="url(#ar3)">
+            <line x1="415" y1="254" x2="330" y2="350"/>
+            <line x1="577" y1="254" x2="520" y2="350"/>
+            <line x1="739" y1="254" x2="700" y2="350"/>
+            <line x1="905" y1="254" x2="900" y2="350"/>
+          </g>
+        </g>
+      </svg>
+      <figcaption>Os provedores são configuração por organização, com credencial cifrada — trocar de fornecedor de dado ou de biometria não reescreve a jornada nem a política. É a diferença entre contratar uma integração e contratar uma dependência.</figcaption>
+    </figure>
+  </section>
+
+  <!-- ================= 5 · OS BLOCOS ================= -->
+  <section>
+    <div class="sec-h">
+      <span class="eyebrow">4 · Os building blocks</span>
+      <h2>O que é cada peça e o lugar dela nesta entrega</h2>
+      <p>O catálogo tem 35 serviços. Doze compõem o Onboarding PJ; os demais existem, estão documentados e ficam disponíveis por contrato — não fazem parte do escopo desta entrega. O estado de cada um é medido no código: <strong>no ar</strong> quando o bloco está em produção e já é usado por uma esteira real; <strong>parcial</strong> quando existe e falta uma peça nomeada; <strong>novo</strong> quando nasce aqui.</p>
+    </div>
+
+    <div class="grp-h" style="border-top:0;margin-top:0">Decisão — o coração desta proposta</div>
+    <div class="bb">
+      <div class="bb-row"><div class="n">decision-engine<small>25 rotas · no ar</small></div><div class="d"><b>A regra.</b> Decisões com chave estável, versões em semver e um registro por execução com entrada, saída, tempo e a versão usada. O XML é padrão DMN, e a célula é escrita em FEEL — <code>&gt;= 18</code>, <code>"ativa"</code>. <b>No Pine:</b> a política de aceitação do onboarding, autorada pelo banco.</div></div>
+      <div class="bb-row"><div class="n">decision-platform<small>26 rotas · parcial</small></div><div class="d"><b>A esteira.</b> Declara as fontes de dado de uma decisão, busca todas em paralelo com prioridade e tempo limite, mescla e chama a regra. Fonte obrigatória que falha interrompe; opcional que falha segue e cai numa faixa conservadora, por desenho. <b>No Pine:</b> orquestra Receita, bureau, OCR e biometria antes de cada veredito.</div></div>
+    </div>
+
+    <div class="grp-h">Dado e verificação</div>
+    <div class="bb">
+      <div class="bb-row"><div class="n">bureaus<small>15 rotas · parcial</small></div><div class="d"><b>A camada entre a esteira e os fornecedores de dado.</b> 23 tipos de consulta sobre CNPJ e CPF, finalidade obrigatória em cada uma, documento nunca gravado em claro, cache com prazo por tipo e medição de custo por organização. <b>No Pine:</b> pré-preenchimento por CNPJ, QSA, PEP, sanções, processos e restrições. Serasa/Boa Vista e antifraude entram como provedores novos atrás do mesmo contrato.</div></div>
+      <div class="bb-row"><div class="n">data-extraction<small>22 rotas · parcial</small></div><div class="d"><b>Documento vira campo.</b> O que extrair é um template descrito em linguagem natural, não um modelo treinado; cada campo volta com nota de confiança própria. <b>No Pine:</b> contrato social, procuração e balanço — a mesa revisa só o que ficou abaixo do limiar. Falta um ajuste de rota no conector, medido e pequeno.</div></div>
+      <div class="bb-row"><div class="n">biometrics<small>26 rotas · parcial</small></div><div class="d"><b>A pessoa diante da câmera está viva e é a do documento?</b> Sessão, página de captura hospedada com token de uso único (o cliente final nunca carrega credencial), envelope com decisão, score, limiar e evidência com hash, e política de garantia mínima por organização. <b>No Pine:</b> representantes legais e procuradores. A máquina está de pé; os provedores de mercado entram por credencial.</div></div>
+    </div>
+
+    <div class="grp-h">Documento, formalização e prova</div>
+    <div class="bb">
+      <div class="bb-row"><div class="n">document-template<small>11 rotas · parcial</small></div><div class="d"><b>Contrato gerado de template versionado</b>, com variáveis tipadas e renderização em PDF. <b>No Pine:</b> ficha cadastral e termos, montados com o que foi confirmado — sem redigitação.</div></div>
+      <div class="bb-row"><div class="n">e-signature<small>18 rotas · no ar</small></div><div class="d"><b>Assinatura com trilha por signatário.</b> O estado de cada pessoa é modelado à parte do envelope — “quem falta assinar” é consulta, não dedução. Guarda hash do documento e o nível da assinatura. <b>No Pine:</b> ficha, termos e contrato, com vários signatários em ordem ou em paralelo.</div></div>
+      <div class="bb-row"><div class="n">file-storage<small>7 rotas · no ar</small></div><div class="d"><b>Arquivo isolado por organização</b>, direto no S3, com URL assinada. <b>No Pine:</b> tudo que a empresa envia.</div></div>
+      <div class="bb-row"><div class="n">certificates<small>especificado · novo</small></div><div class="d"><b>O ato criptográfico com certificado ICP-Brasil</b>, separado do fluxo de assinatura de propósito. Desenho pronto, não implementado. <b>No Pine:</b> entra na fundação apenas se o compliance exigir assinatura qualificada.</div></div>
+    </div>
+
+    <div class="grp-h">Estado, identidade e integração</div>
+    <div class="bb">
+      <div class="bb-row"><div class="n">data-store<small>13 rotas · no ar</small></div><div class="d"><b>Documentos JSON por organização</b>, com coleções e consulta. <b>No Pine:</b> o dossiê da empresa — salvo a cada passo, é o que torna a jornada retomável.</div></div>
+      <div class="bb-row"><div class="n">customers<small>5 rotas · novo para PJ</small></div><div class="d"><b>Cadastro de pessoas com documento validado</b> e isolamento por organização. Hoje só pessoa física; <b>a pessoa jurídica com CNPJ, quadro societário e procuradores é entrega desta fase</b> — e serve também ao crédito depois.</div></div>
+      <div class="bb-row"><div class="n">audit-trail<small>6 rotas · parcial</small></div><div class="d"><b>Quem fez o quê, quando e o que mudou</b>, por organização, com linha do tempo por recurso. <b>No Pine:</b> a trilha que o compliance lê e que o SIEM recebe. Falta o armazenamento imutável que um banco pede — está no escopo, na frente de segurança.</div></div>
+      <div class="bb-row"><div class="n">webhooks-engine<small>17 rotas · no ar</small></div><div class="d"><b>Entrega de evento com assinatura, retentativa e histórico.</b> <b>No Pine:</b> <code>onboarding.approved</code> com o dossiê assinado, para o API Gateway criar a conta no core.</div></div>
+      <div class="bb-row"><div class="n">iam<small>22 rotas · no ar</small></div><div class="d"><b>Identidade, organizações e permissões</b> para todo o catálogo. A organização vem do token assinado e nunca do corpo — é isso que garante que uma rota não alcance dado de outra empresa.</div></div>
+      <div class="bb-row"><div class="n">api-keys · feature-flags<small>8 e 25 rotas · no ar</small></div><div class="d"><b>Credencial de máquina com escopo e rotação</b> para a orquestração do banco chamar os blocos; e <b>liga-desliga por segmento</b> para subir a jornada nova para uma fatia do tráfego antes de abrir para todos.</div></div>
+    </div>
+
+    <div class="lives" style="margin-top:20px"><a class="live" href="https://banco-pine.catalisa.app/ui-kit" target="_blank" rel="noopener">Ver o kit de interface que a entrega usa <span aria-hidden="true">↗</span></a></div>
+    <div class="grp-h">No catálogo, fora desta entrega</div>
+    <p style="font-size:14px;color:var(--p-text-2);max-width:78ch;margin-bottom:10px"><code>open-finance</code> (extrato e identidade bancária com consentimento) · <code>calculations-engine</code> (parcela, amortização, IOF e CET como API testada) · <code>pricing-engine</code> (taxa por faixa de risco, com tarifas e comissões no mesmo cálculo) · <code>banking-product-portfolio</code> · <code>baas</code> (contas, Pix e TED com provedor trocável) · <code>ai-engine</code> (IA sobre texto, imagem e áudio, na nuvem ou na rede do cliente) · <code>calendar</code>, <code>email</code>, <code>commerce</code>, <code>payments</code>, <code>rooms</code>, <code>slack</code>, <code>sso</code>, <code>wpp</code> e os demais. Citamos porque a resposta a “e depois?” é contratual e de configuração, não um novo projeto.</p>
+  </section>
+
+  <!-- ================= 6 · A MESA ================= -->
+  <section>
+    <div class="sec-h">
+      <span class="eyebrow">5 · A mesa</span>
+      <h2>O analista vê só o que a regra não resolveu — com o motivo</h2>
+      <p>A mesa não é uma caixa de entrada. É a exceção da política, com prazo, alçada e devolutiva — e é onde o banco descobre que a regra precisa mudar.</p>
+    </div>
+    <div class="tw">
+      <table class="pt">
+        <thead><tr><th>Peça</th><th>O que faz</th><th>Por que importa para o Pine</th></tr></thead>
+        <tbody>
+          <tr><td>Fila</td><td>Só os casos que a política mandou para análise, com a coluna “na mesa porque” escrita em português a partir da linha que casou.</td></tr>
+          <tr><td>Dossiê</td><td>Verificações com a fonte de cada uma, documentos lidos com confiança, pessoas e estado, o motivo exato e a ação sugerida.</td><td>A decisão é tomada numa tela só, sem abrir cinco sistemas.</td></tr>
+          <tr><td>Alçada</td><td>Quem aprova o quê e até quanto; individual, conjunta ou comitê, avaliada no servidor.</td></tr>
+          <tr><td>Prazos</td><td>Varredura diária, prazo que pausa quando a bola está com o cliente e sobe de alçada quando vence.</td><td>O SLA do backoffice deixa de depender de alguém lembrar.</td></tr>
+          <tr><td>Devolutiva</td><td>Pedido de ajuste ao cliente com texto do analista, por e-mail e WhatsApp, retomando o passo exato.</td></tr>
+          <tr class="hl"><td>Auto de decisão</td><td>Exportação por caso, em JSON e em texto: a regra disparada, o fator que decidiu, a versão da política e a linha do tempo até o desembolso do processo.</td><td>É o documento que responde ao regulador e ao auditor interno sem trabalho manual.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="lives"><a class="live" href="https://banco-pine.catalisa.app/demo-backoffice#/mesa/fila" target="_blank" rel="noopener">Percorrer a fila e o dossiê <span aria-hidden="true">↗</span></a><a class="live" href="https://banco-pine.catalisa.app/demo-backoffice#/mesa/prazos" target="_blank" rel="noopener">Ver prazos e alçada <span aria-hidden="true">↗</span></a></div>
+    <div class="note-b" style="margin-top:18px"><b>Onde esse código mora.</b> O backoffice do Pine é <b>código separado, de propriedade do banco</b>, no design system do banco, consumindo a Catalisa por API. Nenhuma regra, score ou limiar mora nele — fila, dossiê, decisão, prazos e trilha vêm do motor. O desenho vem das telas que já operam esteiras de crédito em produção; o repositório é do Pine. O contrato de API dessas telas é entregável explícito desta proposta.</div>
+  </section>
+
+  <!-- ================= 7 · ESCOPO E HABILITAÇÃO ================= -->
+  <section>
+    <div class="sec-h">
+      <span class="eyebrow">6 · O que fica habilitado</span>
+      <h2>Os mesmos motores, um escopo definido</h2>
+      <p>Não há um produto diferente por trás de cada projeto. Há um motor, um catálogo de blocos e um escopo habilitado — e é por isso que ampliar depois é contrato e configuração, não reimplantação.</p>
+    </div>
+    <div class="tw">
+      <table class="pt">
+        <thead><tr><th>Motor ou superfície</th><th>Neste projeto — Onboarding PJ</th><th>Mesmo motor, outro módulo</th></tr></thead>
+        <tbody>
+          <tr class="hl"><td>Autoria de regras</td><td><b>Habilitada para o banco:</b> tópicos, tabelas, versões, simulação e publicação das regras de <b>onboarding e aceitação cadastral</b>.</td><td>Política de crédito, precificação por faixa de risco, régua de cobrança, alçadas operacionais.</td></tr>
+          <tr><td>Esteira de decisão</td><td>Fontes do onboarding: Receita, bureau, OCR e biometria.</td></tr>
+          <tr class="hl"><td>Mesa</td><td>Fila, dossiê, alçada, prazos, devolutiva e auto de decisão <b>do onboarding</b>.</td><td>Esteira de crédito completa: produtos, limites, instrumentos, formalização, carteira e provisão.</td></tr>
+          <tr><td>Blocos</td><td>Os 12 da jornada, com os provedores que o banco contratar.</td></tr>
+          <tr><td>Agentes de IA</td><td>Fora do escopo.</td><td>Operação da mesa por conversa, com confirmação humana em toda mutação.</td></tr>
+          <tr><td>Hospedagem</td><td>Nuvem Catalisa ou <b>infraestrutura do Pine</b>: os blocos rodam em contêiner e o motor de IA já opera na rede do cliente.</td><td>Idem, por ambiente.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="cap">A licença de uso da autoria de regras acompanha o domínio contratado. Isso não é uma trava técnica inventada para cobrar depois: é o mesmo desenho que permite ao banco começar pelo onboarding sem implantar uma plataforma de crédito inteira — e ampliar depois sobre a fundação já instalada.</p>
+  </section>
+
+  <!-- ================= 8 · POSSIBILIDADES ================= -->
+  <section>
+    <div class="sec-h">
+      <span class="eyebrow">7 · O que a fundação abre</span>
+      <h2>Quatro caminhos que ficam baratos depois deste projeto</h2>
+      <p>Sem desviar o foco: nada abaixo faz parte do escopo desta entrega. Está aqui porque a arquitetura do onboarding é a fundação dos quatro — e porque a pergunta “e depois?” é legítima.</p>
+    </div>
+    <div class="ideas">
+      <div class="idea"><b>Crédito PJ com política do banco</b><p>O mesmo par motor + mesa opera hoje, em produção, esteiras de originação a desembolso: produto, simulação, política, limite e folga, formalização com instrumento, desembolso, carteira, provisão por estágio e prévia de informe regulatório. Para o Pine, o custo marginal é o produto — a máquina já está de pé e a empresa já está cadastrada.</p></div>
+      <div class="idea"><b>Revisão cadastral periódica</b><p>KYC não termina na abertura. A mesma esteira, disparada por tempo ou por evento, reconsulta bureau e listas, compara com o dossiê e só leva à mesa o que mudou. É o requisito de atualização cadastral resolvido com a regra que já existe.</p></div>
+      <div class="idea"><b>Alçadas para o Desktop PJ</b><p>O dossiê já produz quem opera, até quanto e sob qual regra de representação. O aplicativo desktop consome esse contrato em vez de reconstruir a mesma informação — é a razão pela qual o pilar (ii) e o pilar (iii) da proposta da SEMPRE IT se encaixam.</p></div>
+      <div class="idea"><b>Onboarding de parceiro e correspondente</b><p>A mesma jornada, outro tipo de contraparte e outra tabela de aceitação. Trocar o público de análise é configuração de regra e de fonte, não um novo desenvolvimento.</p></div>
+    </div>
+  </section>
+
+  <!-- ================= 9 · CONCORRÊNCIA ================= -->
+  <section>
+    <div class="sec-h">
+      <span class="eyebrow">8 · Onde nos posicionamos</span>
+      <h2>Três caminhos que o Pine tem, e o que cada um custa em liberdade</h2>
+    </div>
+    <div class="tw">
+      <table class="pt">
+        <thead><tr><th>Caminho</th><th>Força</th><th>O que ele cobra em liberdade</th></tr></thead>
+        <tbody>
+          <tr><td>Plataformas globais de decisão</td><td>Esteira completa, autoria visual madura e marketplace de dados.</td></tr>
+          <tr><td>Bureaus que também vendem decisão</td><td>Profundidade de dado brasileiro difícil de igualar.</td><td>A decisão vem acoplada ao grupo que vende o dado — trocar de fonte passa a significar trocar de motor.</td></tr>
+          <tr><td>Construir na casa</td><td>Controle total e nenhuma licença.</td></tr>
+          <tr class="hl"><td>Catalisa</td><td>Motor com versionamento, publicação sem deploy e registro por execução já prontos; fontes plugáveis; blocos que rodam na infraestrutura do banco; backoffice como código do Pine.</td><td>Somos um fornecedor de porte médio, e é justo dizer: a contrapartida é a proximidade — o banco fala com quem escreve o código, e a customização é dias, não roadmap.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="cap">A comparação está escrita do jeito que a defenderíamos numa sala com o time de risco: cada linha tem um custo real, inclusive a nossa.</p>
+  </section>
+
+  <!-- ================= 10 · SEGURANÇA ================= -->
+  <section>
+    <div class="sec-h">
+      <span class="eyebrow">9 · Segurança e conformidade</span>
+      <h2>O cliente atesta e assina; o servidor decide</h2>
+      <p>Frente transversal do plano, da fundação ao go-live, com uma régua verificável: OWASP MASVS L2+R no aplicativo e ASVS L2/L3 nas APIs, além de Res. CMN 4.893/2021, Res. BCB 85/2021, Res. CMN 4.753/2019, Circ. BCB 3.978/2020, Res. Conjunta 16/2025 e LGPD.</p>
+    </div>
+    <div class="three">
+      <div class="seccard"><b>Dispositivo e sessão</b><span>Atestação de aplicativo, detecção de root e de injeção, nada transacional em WebView, vínculo de dispositivo com chave em hardware, MFA e elevação por operação.</span></div>
+      <div class="seccard"><b>Ordem e alçada</b><span>Toda ordem assinada no dispositivo e validada no servidor contra alçada e limite; chave idempotente por organização; aviso por outro canal a quem não emitiu.</span></div>
+      <div class="seccard"><b>Dado e trilha</b><span>Finalidade obrigatória por consulta, documento nunca em claro, credencial cifrada por organização, trilha imutável com encadeamento de hash e reconciliação diária.</span></div>
+    </div>
+    <p class="cap" style="margin-top:16px">Regra que não abrimos: <strong>nenhum controle vive só no cliente.</strong> O aplicativo atesta e assina; alçada, limite e execução são decididos no servidor. Pentest externo fecha a fase de formalização, antes do go-live.</p>
+  </section>
+
+  <!-- ================= 11 · ENTREGA ================= -->
+  <section>
+    <div class="sec-h">
+      <span class="eyebrow">10 · Sequência de implantação</span>
+      <h2>Cada etapa fecha com uma prova executável no ambiente do banco</h2>
+      <p>A ordem abaixo é técnica: cada etapa existe porque a seguinte depende dela, e nenhuma é declarada pronta por relatório — fecha com uma prova que roda em homologação do Pine.</p>
+    </div>
+    <div class="tw">
+      <table class="pt">
+        <thead><tr><th>Etapa</th><th>Entrega</th><th>Prova que a fecha</th></tr></thead>
+        <tbody>
+                    <tr><td>1 · Fundação</td><td>Pessoa jurídica no cadastro; biometria com provedor real; provedores de Juntas, Serasa/Boa Vista e antifraude; conector de OCR; orquestração no padrão do banco.</td><td>Um CNPJ atravessa da consulta à decisão, ponta a ponta, em homologação.</td></tr>
+          <tr><td>2 · Jornada</td><td>Captação e formalização sob o design system do Pine, multi-sócio, convite por pessoa, regra de representação, holding até o beneficiário final.</td><td>Uma empresa com três sócios conclui sozinha, em homologação.</td></tr>
+          <tr class="hl"><td>3 · Decisão e mesa</td><td>Política autorada pelo banco, simulação, publicação; backoffice como código do Pine, com fila, dossiê, alçada, prazos e auto de decisão.</td><td>O compliance publica uma versão e um caso muda de resultado sem deploy.</td></tr>
+          <tr><td>4 · Formalização e core</td><td>Ficha e termos por template, assinatura com evidência, evento assinado para o API Gateway.</td><td>Conta aberta ponta a ponta, com o dossiê no core.</td></tr>
+          <tr><td>5 · Observabilidade</td><td>Trilha exportada, logs em Dynatrace e Splunk, funil por etapa, regras de detecção.</td><td>Go-live com painel de funil e alerta ativos.</td></tr>
+          <tr><td>T · Segurança</td><td>Frente transversal: atestação, assinatura de transação, pinning e mTLS, upload hostil, trilha imutável, SSDLC com SBOM.</td><td>Pentest externo antes do go-live, com re-teste.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="cap">As etapas 1 e 2 são independentes entre si e correm em paralelo. A frente de segurança atravessa todas, da fundação ao go-live.</p>
+
+    <h3 class="grp-h">O que o Pine recebe, além do sistema funcionando</h3>
+    <ul class="steps-n" style="max-width:82ch">
+      <li><b>01</b><span><strong>O código do backoffice</strong>, no repositório do banco, no design system do banco.</span></li>
+      <li><b>02</b><span><strong>O contrato de API</strong> de fila, dossiê, decisão, prazos, formalização e trilha — documentado e versionado, com prova executável.</span></li>
+      <li><b>03</b><span><strong>As regras em formato aberto</strong> (DMN), versionadas e exportáveis: a política é do banco, inclusive se um dia sairmos de cena.</span></li>
+      <li><b>04</b><span><strong>A trilha</strong>, exportável para o SIEM, e o auto de decisão por caso.</span></li>
+    </ul>
+  </section>
+
+  <!-- ================= DISPONIBILIDADE E REVERSIBILIDADE ================= -->
+  <section>
+    <div class="sec-h">
+      <span class="eyebrow">11 · Disponibilidade e reversibilidade</span>
+      <h2>Feito para continuar de pé — e para ser trocado sem redesenho</h2>
+      <p>Duas perguntas que um banco faz antes de assinar: o que acontece quando uma peça cai, e o que acontece quando o banco decide internalizar. As duas têm resposta arquitetural nesta proposta, não resposta comercial.</p>
+    </div>
+
+    <h3 class="grp-h" style="border-top:0;margin-top:0">Quando algo falha</h3>
+    <div class="bb">
+      <div class="bb-row"><div class="n">Fonte de dado indisponível<small>degradação declarada</small></div><div class="d">Cada fonte da esteira é declarada como obrigatória ou opcional. A obrigatória que falha interrompe e devolve o caso; a opcional que falha <b>não derruba a análise</b> — a decisão cai numa faixa mais conservadora porque a linha que dependia daquele campo não casa. É uma decisão de negócio escrita na tabela, não um erro técnico tratado no escuro.</div></div>
+      <div class="bb-row"><div class="n">Fornecedor lento ou intermitente<small>tempo limite e cache</small></div><div class="d">Cada fonte tem prioridade e tempo limite próprios, e as buscas são paralelas. A consulta repetida do mesmo documento na mesma jornada é servida do cache com prazo por tipo — o que reduz ao mesmo tempo a exposição ao fornecedor e a conta no fim do mês.</div></div>
+      <div class="bb-row"><div class="n">Core ou gateway fora do ar<small>entrega garantida</small></div><div class="d">A abertura aprovada vira evento assinado com <b>retentativa e histórico de entrega</b>. Se o API Gateway não responder no momento, o evento é reentregue e fica auditável — a conta não se perde porque um sistema estava em janela.</div></div>
+      <div class="bb-row"><div class="n">Repetição de chamada<small>idempotência</small></div><div class="d">Operações que mudam estado aceitam chave idempotente por organização: repetir a mesma chamada devolve o mesmo resultado em vez de criar um segundo efeito. É o que torna a retentativa segura.</div></div>
+      <div class="bb-row"><div class="n">Saúde real, não sonda de processo<small>observabilidade</small></div><div class="d">A verificação de saúde de cada bloco responde pelas dependências dele, não apenas por estar no ar — e a telemetria segue para o Dynatrace e o Splunk do banco, junto com a trilha.</div></div>
+      <div class="bb-row"><div class="n">Onde roda<small>perímetro</small></div><div class="d">Os blocos rodam em contêiner: nuvem Catalisa ou <b>dentro da infraestrutura do Pine</b>, com o motor de IA já preparado para operar na rede do cliente. O nível de serviço acompanha o ambiente escolhido e é fixado em contrato.</div></div>
+    </div>
+
+    <h3 class="grp-h">Quando o banco quiser trocar por um sistema interno</h3>
+    <p style="max-width:76ch">Nenhuma peça desta arquitetura é um nó cego. Cada uma é um <strong>contrato</strong> — HTTP, com credencial de máquina e formato estável. Substituir uma peça por um sistema do próprio Pine significa implementar aquele contrato; o resto da jornada não fica sabendo. Isso não é uma concessão de última hora: é a razão de os blocos serem blocos.</p>
+    <div class="tw" style="margin-top:14px">
+      <table class="pt">
+        <thead><tr><th>Peça</th><th>Como o banco internaliza</th><th>Impacto no resto do desenho</th></tr></thead>
+        <tbody>
+          <tr><td>Consulta cadastral</td><td>Registra o próprio fornecedor como provedor do bloco, ou expõe o serviço interno no mesmo contrato de consulta.</td><td>Nenhum. A esteira continua chamando o mesmo endereço, com a mesma finalidade registrada.</td></tr>
+          <tr><td>Biometria</td><td>Pluga o fornecedor que o banco já tem; o envelope de decisão — score, limiar, evidência — continua o mesmo.</td><td>Nenhum. A política lê o resultado, não o fornecedor.</td></tr>
+          <tr><td>Assinatura</td><td>Provedor por organização, ou a plataforma de assinatura do próprio banco assumindo o envelope.</td><td>Nenhum. Hash e nível seguem registrados do mesmo jeito.</td></tr>
+          <tr class="hl"><td>Motor de decisão</td><td>As políticas são <b>DMN</b>, padrão aberto da OMG: o XML é exportável e executa em qualquer runner compatível.</td><td>A regra é portável. O que não vai junto é o que construímos em volta — versionamento, registro por execução e isolamento por organização.</td></tr>
+          <tr><td>Dossiê e estado</td><td>Exportação das coleções em JSON, ou apontar a jornada para a base do banco.</td><td>Nenhum na jornada: a leitura e a escrita são pela mesma API.</td></tr>
+          <tr><td>Trilha</td><td>Exportada continuamente para o SIEM do banco; o auto de decisão sai em JSON por caso.</td><td>Nenhum. O banco já tem a cópia enquanto o sistema opera.</td></tr>
+          <tr><td>Backoffice</td><td>Já nasce assim: código do Pine, no repositório do Pine.</td><td>Nenhum. Nunca esteve do nosso lado.</td></tr>
+          <tr><td>Entrega ao core</td><td>Webhook assinado, ou publicação numa fila do próprio banco.</td><td>Nenhum. O evento é o mesmo contrato.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note-b" style="margin-top:18px"><b>Dito sem rodeio.</b> Uma arquitetura em que sair é caro costuma ser vendida como integração e descoberta como dependência. Preferimos o contrário: o banco fica porque a operação é boa, não porque a saída dói. Na prática, a peça mais difícil de substituir é justamente a que entregamos de graça — <b>a política em DMN é do Pine desde o primeiro dia, exportável e legível fora daqui</b>.</div>
+  </section>
+
+  <!-- ================= 12 · PRÓXIMOS PASSOS ================= -->
+  <section>
+    <div class="sec-h">
+      <span class="eyebrow">12 · Próximos passos</span>
+      <h2>Duas sessões técnicas e quatro perguntas</h2>
+    </div>
+    <div class="two">
+      <div>
+        <h3 style="font:300 21px var(--p-display);margin-bottom:10px">Para avançar</h3>
+        <ul class="steps-n">
+          <li><b>01</b><span><strong>Sessão técnica com risco e compliance</strong> — uma hora com as demonstrações abertas, para escrever juntos a primeira tabela de aceitação do Pine.</span></li>
+          <li><b>02</b><span><strong>Sessão de arquitetura com a plataforma</strong> — o escopo exato da restrição de .NET, SQL Server e RabbitMQ, o perímetro de hospedagem e o contrato de API do backoffice.</span></li>
+          <li><b>03</b><span><strong>Definir os provedores</strong> — biometria, Juntas Comerciais, bureau de crédito e antifraude: quais o banco já tem contratados e quais entram por nossa conta.</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="font:300 21px var(--p-display);margin-bottom:10px">O que precisamos saber</h3>
+        <ul class="steps-n">
+          <li><b>01</b><span>Volume mensal de aberturas e mistura de tipo societário.</span></li>
+          <li><b>02</b><span>O banco já tem fornecedor de biometria e de antifraude contratado?</span></li>
+          <li><b>03</b><span>Assinatura avançada basta, ou o compliance exige ICP-Brasil?</span></li>
+          <li><b>04</b><span>Hospedagem: nuvem Catalisa, nuvem do banco ou dentro do perímetro?</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="note-b" style="margin-top:24px"><b>Veja funcionando antes de decidir.</b> As demonstrações navegáveis desta proposta estão em <b>banco-pine.catalisa.app</b>: a jornada de abertura, a mesa com a política editável — inclusive publicar uma versão nova e ver um caso sair da fila —, e o aplicativo PJ em desktop e celular. São protótipos com dados fictícios, construídos sobre o mesmo kit de interface que a entrega usa.</div>
+  </section>
+
+  <div class="foot">
+    <span>Catalisa · proposta técnica para o Onboarding Digital PJ do Banco Pine, via SEMPRE IT</span>
+    <span>v1.0 · 17/09/2026 · estados medidos no código em 17/09</span>
+  </div>
+</div>
+
+<div class="lb" id="lb" aria-hidden="true">
+  <div class="ctl"><span id="lb-pct">100%</span><button type="button" id="lb-minus" aria-label="Diminuir">−</button><button type="button" id="lb-plus" aria-label="Aumentar">+</button><button type="button" id="lb-fit">Ajustar</button><button type="button" id="lb-close">Fechar · Esc</button></div>
+  <div class="vp" id="lb-vp"></div>
+</div>
+
+<script>
+(function(){
+  var root=document.documentElement,btn=document.getElementById('theme-toggle');
+  function isDark(){return root.getAttribute('data-theme')==='dark';}
+  function paint(){btn.textContent=isDark()?'Tema claro':'Tema escuro';btn.setAttribute('aria-pressed',String(isDark()));}
+  try{root.setAttribute('data-theme',localStorage.getItem('pine-theme')==='dark'?'dark':'light');}catch(e){root.setAttribute('data-theme','light');}
+  btn.addEventListener('click',function(){var n=isDark()?'light':'dark';root.setAttribute('data-theme',n);try{localStorage.setItem('pine-theme',n);}catch(e){}paint();});
+  paint();
+
+  var lb=document.getElementById('lb'),vp=document.getElementById('lb-vp'),pct=document.getElementById('lb-pct'),z=1,base=1000;
+  function apply(){vp.style.setProperty('--zw',Math.round(base*z)+'px');pct.textContent=Math.round(z*100)+'%';}
+  function open(fig){var svg=fig.querySelector('svg');if(!svg)return;vp.innerHTML='';var box=document.createElement('div');box.appendChild(svg.cloneNode(true));vp.appendChild(box);base=Math.min(window.innerWidth-90,1500);z=1;apply();lb.setAttribute('data-open','1');lb.setAttribute('aria-hidden','false');}
+  function close(){lb.removeAttribute('data-open');lb.setAttribute('aria-hidden','true');vp.innerHTML='';}
+  document.querySelectorAll('figure').forEach(function(f){f.addEventListener('click',function(){open(f);});});
+  document.getElementById('lb-close').addEventListener('click',close);
+  document.getElementById('lb-plus').addEventListener('click',function(){z=Math.min(4,z*1.25);apply();});
+  document.getElementById('lb-minus').addEventListener('click',function(){z=Math.max(.4,z/1.25);apply();});
+  document.getElementById('lb-fit').addEventListener('click',function(){z=1;apply();});
+  lb.addEventListener('click',function(e){if(e.target===lb||e.target===vp)close();});
+  document.addEventListener('keydown',function(e){if(lb.getAttribute('data-open')!=='1')return;if(e.key==='Escape')close();if(e.key==='+'||e.key==='=')document.getElementById('lb-plus').click();if(e.key==='-')document.getElementById('lb-minus').click();});
+  var drag=null;vp.addEventListener('mousedown',function(e){drag={x:e.clientX,y:e.clientY,sl:vp.scrollLeft,st:vp.scrollTop};});
+  window.addEventListener('mousemove',function(e){if(!drag)return;vp.scrollLeft=drag.sl-(e.clientX-drag.x);vp.scrollTop=drag.st-(e.clientY-drag.y);});
+  window.addEventListener('mouseup',function(){drag=null;});
+})();
+</script>

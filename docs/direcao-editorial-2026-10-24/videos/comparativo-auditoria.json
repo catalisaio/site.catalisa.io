@@ -1,0 +1,235 @@
+{
+  "observedAt": "2026-10-25T02:47:00.402479+00:00",
+  "goalComplete": false,
+  "plannedVariants": 4,
+  "actualVariants": 2,
+  "actualFinalFiles": 4,
+  "creditsSpent": 60,
+  "originalPlannedCeiling": 110,
+  "newGenerationBudget": 0,
+  "variants": [
+    {
+      "id": "normal",
+      "name": "Normal · colagem existente",
+      "status": "available",
+      "cost": 0,
+      "film": "comparativo/normal-16x9.mp4",
+      "portrait": "comparativo/normal-9x16.mp4",
+      "clip": null,
+      "detail": "Filme completo com imagens existentes, texto e trilha. Nenhuma geração nova.",
+      "job": "a-casa-01-manifesto"
+    },
+    {
+      "id": "test-turbo",
+      "name": "Gen-4 Turbo · teste",
+      "status": "not_generated",
+      "cost": 0,
+      "film": null,
+      "portrait": null,
+      "clip": null,
+      "detail": "API recusou por saldo insuficiente. Na tentativa pelo site, o botão exigiu Upgrade. Nenhuma tarefa foi criada."
+    },
+    {
+      "id": "official-turbo",
+      "name": "Gen-4 Turbo · oficial",
+      "status": "not_generated",
+      "cost": 0,
+      "film": null,
+      "portrait": null,
+      "clip": null,
+      "detail": "API recusou por saldo insuficiente. Nenhum clipe ou filme desta variante existe."
+    },
+    {
+      "id": "gen4-5",
+      "name": "Gen-4.5 · Pro",
+      "status": "available",
+      "cost": 60,
+      "film": "comparativo/gen4-5-pro-16x9.mp4",
+      "portrait": "comparativo/gen4-5-pro-9x16.mp4",
+      "clip": "comparativo/gen4-5-5s.mp4",
+      "detail": "Uma geração existente de 5 s incorporada na abertura do filme completo. Produzida anteriormente pelo site Pro, autorizado depois das recusas da API.",
+      "job": "a-casa-01-gen4-5-pro"
+    }
+  ],
+  "files": [
+    {
+      "variant": "normal",
+      "format": "16x9",
+      "file": "comparativo/normal-16x9.mp4",
+      "bytes": 4411562,
+      "sha256": "4249ef86c1900f1a6f801e5c7b3ca35bafc2c28cfde19d1b1edc4e0bfd033100",
+      "matchesRenderedJob": true,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "30/1",
+            "side_data_list": [
+              {}
+            ]
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "30.100000"
+        }
+      }
+    },
+    {
+      "variant": "normal",
+      "format": "9x16",
+      "file": "comparativo/normal-9x16.mp4",
+      "bytes": 4434441,
+      "sha256": "194e7dd5d836e3c625545779faf284ab39167e9634d31192288eed811ee36f85",
+      "matchesRenderedJob": true,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1080,
+            "height": 1920,
+            "r_frame_rate": "30/1",
+            "side_data_list": [
+              {}
+            ]
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "30.100000"
+        }
+      }
+    },
+    {
+      "variant": "gen4-5",
+      "format": "16x9",
+      "file": "comparativo/gen4-5-pro-16x9.mp4",
+      "bytes": 5436363,
+      "sha256": "3258f7ad2e9361e1eaee2c3c46cfca280e90fc61c20dffe64c6d1f398aeb64d8",
+      "matchesRenderedJob": true,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "30/1",
+            "side_data_list": [
+              {}
+            ]
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "30.100000"
+        }
+      }
+    },
+    {
+      "variant": "gen4-5",
+      "format": "9x16",
+      "file": "comparativo/gen4-5-pro-9x16.mp4",
+      "bytes": 5618854,
+      "sha256": "618d805720ecbcadc8721a8a6fe83f09769944bd3ad36e48191ac8bda809e9a0",
+      "matchesRenderedJob": true,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1080,
+            "height": 1920,
+            "r_frame_rate": "30/1",
+            "side_data_list": [
+              {}
+            ]
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "30.100000"
+        }
+      }
+    }
+  ],
+  "apiRefusals": [
+    {
+      "model": "gen4_turbo",
+      "account": "Conta de teste autorizada; chave protegida separada",
+      "httpStatus": 400,
+      "error": "You do not have enough credits to run this task.",
+      "attemptedAt": "2026-10-25T01:38:05.678Z",
+      "taskId": null
+    },
+    {
+      "model": "gen4.5",
+      "account": "Conta de teste autorizada; chave protegida separada",
+      "httpStatus": 400,
+      "error": "You do not have enough credits to run this task.",
+      "attemptedAt": "2026-10-25T01:38:18.024Z",
+      "taskId": null
+    },
+    {
+      "model": "gen4_turbo",
+      "account": "API configurada em ~/.config/runway/api_key",
+      "httpStatus": 400,
+      "error": "You do not have enough credits to run this task.",
+      "attemptedAt": "2026-10-25T01:35:30.655Z",
+      "taskId": null
+    },
+    {
+      "model": "gen4.5",
+      "account": "Conta oficial configurada",
+      "httpStatus": 400,
+      "error": "You do not have enough credits to run this task.",
+      "attemptedAt": "2026-10-25T01:44:19.284Z",
+      "taskId": null
+    }
+  ],
+  "sameContent": {
+    "scenesAfterOpeningIdentical": true,
+    "musicIdentical": true,
+    "openingOnlyChange": "photo c7b replaced by existing Gen-4.5 clip in horizontal and vertical layers",
+    "voice": "No voice audio; text and music only"
+  },
+  "remainingRequirements": [
+    "A clip and complete inspected film for each of the two Turbo variants do not exist.",
+    "There is no completed four-variant quality comparison; two formats of one version do not create two model results."
+  ],
+  "blockingCondition": "API project balances were insufficient; later user requested preserving credits, with zero new paid generation. No new attempt is authorized by that instruction.",
+  "indispensableCorrection": "Completing the original paid four-variant comparison needs both valid model access/funds in the selected project and an instruction consistent with consuming those funds. The current task can continue only by reusing existing results.",
+  "attemptPolicy": "No new generation, balance polling, automatic retries, credential changes, or new browser operations performed for this audit.",
+  "blockedAudit": {
+    "consecutiveGoalTurnsWithThisCurrentBlocker": 1,
+    "previousTurn": "Progress: documentary handover, outputs packaged and verified. Not counted as a blocked turn."
+  }
+}

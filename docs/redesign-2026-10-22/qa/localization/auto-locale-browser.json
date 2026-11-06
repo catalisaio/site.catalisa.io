@@ -1,0 +1,217 @@
+{
+  "startedAt": "2026-10-26T19:57:50.078Z",
+  "updatedAt": "2026-10-26T19:58:01.885Z",
+  "origin": "http://127.0.0.1:5175",
+  "scope": "One real headless Chromium against the existing local source preview; serial isolated contexts. Machine languages, persisted manual choice, explicit URLs, bots, public attribution, secret-param stripping and redirect visibility. No build/AI/handoff/external requests.",
+  "passed": true,
+  "results": [
+    {
+      "name": "machine-pt-PT",
+      "passed": true,
+      "fixtureRetries": 0,
+      "navigations": [
+        "/"
+      ],
+      "path": "/",
+      "lang": "pt-BR",
+      "bodyVisibility": "visible",
+      "pending": false,
+      "preference": null,
+      "samples": []
+    },
+    {
+      "name": "machine-en-GB",
+      "passed": true,
+      "fixtureRetries": 0,
+      "navigations": [
+        "/",
+        "/en"
+      ],
+      "path": "/en",
+      "lang": "en-US",
+      "bodyVisibility": "visible",
+      "pending": false,
+      "preference": null,
+      "samples": []
+    },
+    {
+      "name": "machine-de-CH",
+      "passed": true,
+      "fixtureRetries": 0,
+      "navigations": [
+        "/",
+        "/de"
+      ],
+      "path": "/de",
+      "lang": "de-DE",
+      "bodyVisibility": "visible",
+      "pending": false,
+      "preference": null,
+      "samples": []
+    },
+    {
+      "name": "machine-es-MX",
+      "passed": true,
+      "fixtureRetries": 0,
+      "navigations": [
+        "/",
+        "/es"
+      ],
+      "path": "/es",
+      "lang": "es-ES",
+      "bodyVisibility": "visible",
+      "pending": false,
+      "preference": null,
+      "samples": []
+    },
+    {
+      "name": "machine-da-DK",
+      "passed": true,
+      "fixtureRetries": 0,
+      "navigations": [
+        "/",
+        "/da"
+      ],
+      "path": "/da",
+      "lang": "da-DK",
+      "bodyVisibility": "visible",
+      "pending": false,
+      "preference": null,
+      "samples": []
+    },
+    {
+      "name": "machine-nl-BE",
+      "passed": true,
+      "fixtureRetries": 0,
+      "navigations": [
+        "/",
+        "/nl"
+      ],
+      "path": "/nl",
+      "lang": "nl-NL",
+      "bodyVisibility": "visible",
+      "pending": false,
+      "preference": null,
+      "samples": []
+    },
+    {
+      "name": "machine-fr-CH",
+      "passed": true,
+      "fixtureRetries": 0,
+      "navigations": [
+        "/",
+        "/fr"
+      ],
+      "path": "/fr",
+      "lang": "fr-FR",
+      "bodyVisibility": "visible",
+      "pending": false,
+      "preference": null,
+      "samples": []
+    },
+    {
+      "name": "unsupported-falls-back-English",
+      "passed": true,
+      "fixtureRetries": 0,
+      "navigations": [
+        "/",
+        "/en"
+      ],
+      "path": "/en",
+      "lang": "en-US",
+      "bodyVisibility": "visible",
+      "pending": false,
+      "preference": null,
+      "samples": []
+    },
+    {
+      "name": "saved-manual-Portuguese-over-English",
+      "passed": true,
+      "fixtureRetries": 0,
+      "navigations": [
+        "/"
+      ],
+      "path": "/",
+      "lang": "pt-BR",
+      "bodyVisibility": "visible",
+      "pending": false,
+      "preference": "pt-BR",
+      "samples": []
+    },
+    {
+      "name": "French-picker-to-Portuguese-stays-root",
+      "passed": true,
+      "fixtureRetries": 0,
+      "navigations": [
+        "/fr",
+        "/",
+        "/"
+      ],
+      "path": "/",
+      "lang": "pt-BR",
+      "bodyVisibility": "visible",
+      "pending": false,
+      "preference": "pt-BR",
+      "samples": []
+    },
+    {
+      "name": "explicit-French-over-machine-and-saved-English",
+      "passed": true,
+      "fixtureRetries": 0,
+      "navigations": [
+        "/fr/vision"
+      ],
+      "path": "/fr/vision",
+      "lang": "fr-FR",
+      "bodyVisibility": "visible",
+      "pending": false,
+      "preference": "en-US",
+      "samples": []
+    },
+    {
+      "name": "Portuguese-deep-link-stays-Portuguese",
+      "passed": true,
+      "fixtureRetries": 0,
+      "navigations": [
+        "/capacidades/ai-engine"
+      ],
+      "path": "/capacidades/ai-engine",
+      "lang": "pt-BR",
+      "bodyVisibility": "visible",
+      "pending": false,
+      "preference": "fr-FR",
+      "samples": []
+    },
+    {
+      "name": "search-bot-keeps-Portuguese-root",
+      "passed": true,
+      "fixtureRetries": 0,
+      "navigations": [
+        "/"
+      ],
+      "path": "/",
+      "lang": "pt-BR",
+      "bodyVisibility": "visible",
+      "pending": false,
+      "preference": "fr-FR",
+      "samples": []
+    },
+    {
+      "name": "UTM-and-existing-anchor-without-private-token",
+      "passed": true,
+      "fixtureRetries": 0,
+      "navigations": [
+        "/",
+        "/de"
+      ],
+      "path": "/de",
+      "lang": "de-DE",
+      "bodyVisibility": "visible",
+      "pending": false,
+      "preference": null,
+      "samples": [],
+      "search": "?utm_source=auto-smoke",
+      "hash": "#arquitetura"
+    }
+  ]
+}

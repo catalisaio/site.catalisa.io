@@ -1,0 +1,11 @@
+@font-face{font-family:Inter;src:url('infografico-inter-regular.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:Inter;src:url('infografico-inter-bold.ttf') format('truetype');font-weight:600 900;font-style:normal;font-display:swap}
+:root{
+  --brand-50:#f5f0f9;--brand-100:#e6d9f0;--brand-200:#d1b8e3;--brand-300:#b794d4;--brand-400:#9b7bc0;--brand-500:#734b9c;--brand-600:#5e3d80;--brand-700:#4a3066;--brand-800:#36234c;--brand-900:#231733;
+  --accent:#fe8342;--secondary:#fdc234;--yellow:var(--secondary);--secondary-soft:color-mix(in srgb,var(--secondary) 22%,var(--paper));--ink:#171320;--ink-2:#5a5468;--ink-inverted:#fff;--line:#dedae5;--paper:#f4f0e8;--paper-light:#fcfaf5;--night:#171320;--chalk:#f4f0e8;
+  --soft-ink:color-mix(in srgb,var(--ink) 22%,transparent);--night-line:color-mix(in srgb,var(--chalk) 22%,transparent);--font:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;--mono:ui-monospace,'Cascadia Code','SF Mono',Consolas,monospace;
+  --purple:var(--brand-500);--green:var(--brand-500);--muted:var(--ink-2);--brand:var(--brand-500);--lavender:var(--brand-300);--gutter:clamp(24px,5vw,80px);--max-width:1440px;
+}
+
+.brand-logo{display:block;width:180px;height:auto;max-width:100%;flex-shrink:0}
+@media(max-width:560px){.brand-logo{width:140px}.topbar{gap:16px}}

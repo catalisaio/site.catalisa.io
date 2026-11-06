@@ -1,0 +1,31 @@
+{
+  "checkedAt": "2026-10-27T02:57:12.390Z",
+  "goalComplete": false,
+  "requestedGoalStatus": "blocked",
+  "consecutiveGoalTurns": 3,
+  "reason": "The staged correction is concrete and verified, but deployment requires explicit user authorization under AGENTS.md; mandatory physical-device and operational owner confirmations remain external.",
+  "production": {
+    "url": "https://catalisa.io",
+    "http": 200,
+    "release": "20261027-ga-realtime",
+    "unchanged": true
+  },
+  "staging": {
+    "url": "https://site-staging.catalisa.io",
+    "http": 200,
+    "release": "20261027-language-hints-r3",
+    "acceptance": "qa/release/language-hints-r3-staging-acceptance.json"
+  },
+  "preview": {
+    "url": "http://localhost:5175/",
+    "http": 200,
+    "leftRunning": true
+  },
+  "awaiting": [
+    "Explicit authorization to publish the validated technical corrections.",
+    "Physical iPhone/Safari and Android/Chrome checks, or an explicit responsible-owner exception.",
+    "Operational queue/alert/rollback responsibility and the remaining owner/policy decisions documented in the full audit."
+  ],
+  "ccpCommunication": "Analysis saved; proposals remain unapplied pending validation.",
+  "noAdditionalPublicationOrMessages": true
+}

@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-24T16:06:19.679790+00:00",
+  "scope": "Local Contact human-review adjustment, contact capture and handoff contracts. Real AI reliability remains pending.",
+  "typeScript": {
+    "passed": true,
+    "command": "npx tsc -b"
+  },
+  "unit": {
+    "passed": true,
+    "tests": 157,
+    "files": 10,
+    "command": "npx vitest run --maxWorkers=1"
+  },
+  "integratedBrowser": {
+    "passed": true,
+    "widths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "channels": [
+      "here",
+      "email",
+      "whatsapp"
+    ],
+    "fixtureOnly": true,
+    "scope": "Local HTTP contract emulators with real site API, SQLite, Catalisa adapter, schema validator, handoff signer and callback verifier. One browser, sequential widths. No real AI inference or external messages."
+  },
+  "normalBrowser": {
+    "currentRevisionVerified": false,
+    "lastVerifiedAt": "2026-10-23",
+    "note": "Historical pre-contact-capture check; current browser coverage is the integrated local harness."
+  },
+  "source": {
+    "server/site/api.ts": "cc250ba1c8a71061a916d34c4cf7e9b689f165ef174b4ed24b1fed0b6528e9a0",
+    "server/site/contact-operations.ts": "77827cd71a5bfd998c0a068a26bf541dc6e22e41fbe682ce3d020dc91f256007",
+    "server/site/integrations.ts": "a8261a35e269bbb4309f7a74ecfa498b8ca1857607403b24cde7a749801b3998",
+    "server/site/concept.ts": "0dbf4d31a1bc98650c8099579ec3a07907388bddc6f59b876c48abccd52364d3",
+    "server/site/concept.schema.json": "2dfb2de947ad10c90f429cf4f46f8d92c54f7de23785fbc22b4032634d99e99d",
+    "src/redesign/Contact.tsx": "c364ae462151bcdec7a1db51118a464f2d0f1e1247cd54d3ed3e980bc65cd07f",
+    "src/redesign/ContactViews.tsx": "d13e884bfbb4a0216e0dc541deb62190a5e154c9e32806e17aec03d81826f039",
+    "src/redesign/ContactConcept.tsx": "9b32c38644748a6fcd758be7b5ae0bb9028d4bb0644ed1d8167a2cbfacc9eb67",
+    "src/redesign/ContactContinuation.tsx": "73b21cde4ff2a2fa1c1d3a1910a50398c875f2985005316f4548bdd9a00ec1bb",
+    "scripts/prepare-redesign-contact.mjs": "985e29d72371b00fdc8d2528d99880afcfb12d6d9705be83b8feb546df282434",
+    "scripts/verify-contact-integrated.ts": "4db1ac066c6a61797e67c6b5734e39eb0422c1ed9bacf6d39b64c3e45f3bdced",
+    "src/redesign/ContactReachability.tsx": "213ead9b8927b7442a71d44c882b9006dfad0b25711822d622a590685ec8eccf",
+    "shared/site-contact.ts": "b2c45acef17226a71183e9550ecf554107551bf3bc868763378f520dfb2707b7",
+    "src/redesign/contact.css": "23811afb8f64825eff6307658ba1d49ca2322ad6fcf7da67ff1272a3af8baeb7",
+    "scripts/contact-integration-harness.ts": "579eef087dc4564f507829c2ea81290c27a300c46225285725d4c0695138c452",
+    "server/site/contact-operations.test.ts": "c9da1838b67170104fc97c3bcce8096fc780522f9c062065049faaa3ea0d94c0",
+    "server/site/api.test.ts": "3e052909330c9e7baf4b8e74e5f2003413e027b8905dbfcc25d22733227edd5d"
+  },
+  "limits": [
+    "Integrated browser uses loopback HTTP contracts; no real messages or CRM creation",
+    "Dedicated staging agent is configured locally; real inference succeeded once and failed in a subsequent attempt. Three real scenarios not completed",
+    "Real receiving workflow and CRM reconciliation remain pending",
+    "PostgreSQL migrations and hosting have not been deployed or validated",
+    "Browser captures do not certify complete visual fidelity"
+  ],
+  "execution": "One heavyweight check at a time; one browser; sequential contexts; one unit-test worker.",
+  "deployment": {
+    "siteStaging": false,
+    "siteProduction": false,
+    "panelDeployment": false,
+    "panelCodeChanged": false,
+    "buildingBlockCodeChanged": false,
+    "dedicatedStagingAgentConfigured": true
+  },
+  "humanReview": {
+    "providerCallsDuringAdjustment": 0,
+    "existingReviewOpensWithoutPost": true,
+    "preservesPreviousVersion": true,
+    "reload": true,
+    "fullJourneyBoundaryAndIdCollisions": true
+  }
+}

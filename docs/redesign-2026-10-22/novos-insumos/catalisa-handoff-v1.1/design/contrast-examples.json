@@ -1,0 +1,54 @@
+{
+  "method": "sRGB relative luminance",
+  "scope": "Examples only; not a complete accessibility audit",
+  "pairs": [
+    {
+      "foreground": "#734B9C",
+      "background": "#F6F3EE",
+      "role": "Roxo de apoio no papel",
+      "ratio": 5.9,
+      "normalText4_5": true,
+      "largeText3": true
+    },
+    {
+      "foreground": "#62596A",
+      "background": "#F6F3EE",
+      "role": "Corpo recomendado no papel",
+      "ratio": 6.01,
+      "normalText4_5": true,
+      "largeText3": true
+    },
+    {
+      "foreground": "#90779B",
+      "background": "#F6F3EE",
+      "role": "Exemplo de texto suave da referência",
+      "ratio": 3.58,
+      "normalText4_5": false,
+      "largeText3": true
+    },
+    {
+      "foreground": "#F18A43",
+      "background": "#F6F3EE",
+      "role": "Laranja expressivo no papel",
+      "ratio": 2.24,
+      "normalText4_5": false,
+      "largeText3": false
+    },
+    {
+      "foreground": "#F6F3EE",
+      "background": "#35213F",
+      "role": "Texto claro na cena escura",
+      "ratio": 13.17,
+      "normalText4_5": true,
+      "largeText3": true
+    },
+    {
+      "foreground": "#FDC234",
+      "background": "#FFFFFF",
+      "role": "Amarelo sobre branco",
+      "ratio": 1.62,
+      "normalText4_5": false,
+      "largeText3": false
+    }
+  ]
+}

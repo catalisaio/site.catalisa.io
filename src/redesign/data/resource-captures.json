@@ -1,0 +1,135 @@
+[
+  {
+    "file": "bank-mobile.png",
+    "title": "App / Início",
+    "desc": "Aplicativo em aparelho · material de referência de 09/10/2026. Não é uma captura ao vivo.",
+    "type": "App",
+    "product": "banking",
+    "portrait": true,
+    "origin": "Aplicativo em aparelho · material de referência de 09/10/2026. Não é uma captura ao vivo.",
+    "legacy": true,
+    "width": 1080,
+    "height": 2316
+  },
+  {
+    "file": "bank-desktop.jpg",
+    "title": "Desktop / Conta do titular",
+    "desc": "Protótipo do desktop do titular · guia de 29/09/2026 · dados de exemplo.",
+    "type": "Desktop",
+    "product": "banking",
+    "origin": "Protótipo do desktop do titular · guia de 29/09/2026 · dados de exemplo.",
+    "legacy": true,
+    "width": 1440,
+    "height": 900
+  },
+  {
+    "file": "bank-statement.jpg",
+    "title": "Desktop / Extrato",
+    "desc": "Protótipo do extrato no desktop · guia de 29/09/2026 · dados de exemplo.",
+    "type": "Desktop",
+    "product": "banking",
+    "origin": "Protótipo do extrato no desktop · guia de 29/09/2026 · dados de exemplo.",
+    "legacy": true,
+    "width": 1440,
+    "height": 900
+  },
+  {
+    "file": "bank-console.jpg",
+    "title": "Console / Contas",
+    "desc": "Protótipo do console / contas · guia de 29/09/2026 · dados de exemplo.",
+    "type": "Console",
+    "product": "banking",
+    "origin": "Protótipo do console / contas · guia de 29/09/2026 · dados de exemplo.",
+    "legacy": true,
+    "width": 1200,
+    "height": 658
+  },
+  {
+    "file": "bank-access.jpg",
+    "title": "Console / Pessoas e acessos",
+    "desc": "Protótipo do console / pessoas e acessos · guia de 29/09/2026 · dados de exemplo.",
+    "type": "Console",
+    "product": "banking",
+    "origin": "Protótipo do console / pessoas e acessos · guia de 29/09/2026 · dados de exemplo.",
+    "legacy": true,
+    "width": 1200,
+    "height": 963
+  },
+  {
+    "file": "bank-analysis.jpg",
+    "title": "Console / Análise",
+    "desc": "Protótipo do console / análise · guia de 29/09/2026 · dados de exemplo.",
+    "type": "Console",
+    "product": "banking",
+    "origin": "Protótipo do console / análise · guia de 29/09/2026 · dados de exemplo.",
+    "legacy": true,
+    "width": 1200,
+    "height": 963
+  },
+  {
+    "file": "credit-queue.png",
+    "title": "Mesa / Fila de análise",
+    "desc": "Captura da mesa com múltiplos produtos e dados do tenant de demonstração.",
+    "type": "Mesa",
+    "product": "credit",
+    "origin": "Captura da mesa com múltiplos produtos e dados do tenant de demonstração.",
+    "legacy": true,
+    "width": 1440,
+    "height": 900
+  },
+  {
+    "file": "credit-operation.png",
+    "title": "Mesa / Operações",
+    "desc": "Lista de operações no material de referência de crédito.",
+    "type": "Operação",
+    "product": "credit",
+    "origin": "Lista de operações no material de referência de crédito.",
+    "legacy": true,
+    "width": 1440,
+    "height": 900
+  },
+  {
+    "file": "credit-policy.png",
+    "title": "Crédito / Política",
+    "desc": "Configuração e leitura da política na interface da mesa.",
+    "type": "Política",
+    "product": "credit",
+    "origin": "Configuração e leitura da política na interface da mesa.",
+    "legacy": true,
+    "width": 1440,
+    "height": 900
+  },
+  {
+    "file": "credit-simulator.png",
+    "title": "Crédito / Simulação",
+    "desc": "Resultado de simulação na interface de referência, com dados de exemplo.",
+    "type": "Política",
+    "product": "credit",
+    "origin": "Resultado de simulação na interface de referência, com dados de exemplo.",
+    "legacy": true,
+    "width": 1440,
+    "height": 900
+  },
+  {
+    "file": "credit-portfolio.png",
+    "title": "Crédito / Carteira",
+    "desc": "Posição da carteira na interface capturada no repositório.",
+    "type": "Operação",
+    "product": "credit",
+    "origin": "Posição da carteira na interface capturada no repositório.",
+    "legacy": true,
+    "width": 1440,
+    "height": 900
+  },
+  {
+    "file": "credit-portal.jpg",
+    "title": "Parceiros / Portal",
+    "desc": "Interface de referência do portal do parceiro.",
+    "type": "Operação",
+    "product": "credit",
+    "origin": "Interface de referência do portal do parceiro.",
+    "legacy": true,
+    "width": 1568,
+    "height": 737
+  }
+]

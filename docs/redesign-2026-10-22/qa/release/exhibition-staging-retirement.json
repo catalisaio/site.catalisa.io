@@ -1,0 +1,51 @@
+{
+  "checkedAt": "2026-10-26T23:39:33.286Z",
+  "origin": "https://site-staging.catalisa.io",
+  "release": "20261026-products-exhibition",
+  "passed": true,
+  "checks": [
+    {
+      "from": "/ecossistema/recrutamento",
+      "to": "/produtos",
+      "status": 301,
+      "queryPreserved": true
+    },
+    {
+      "from": "/en/ecosystem/recruitment",
+      "to": "/en/products",
+      "status": 301,
+      "queryPreserved": true
+    },
+    {
+      "from": "/de/oekosystem/recruiting",
+      "to": "/de/produkte",
+      "status": 301,
+      "queryPreserved": true
+    },
+    {
+      "from": "/es/ecosistema/reclutamiento",
+      "to": "/es/productos",
+      "status": 301,
+      "queryPreserved": true
+    },
+    {
+      "from": "/da/oekosystem/rekruttering",
+      "to": "/da/produkter",
+      "status": 301,
+      "queryPreserved": true
+    },
+    {
+      "from": "/nl/ecosysteem/werving",
+      "to": "/nl/producten",
+      "status": 301,
+      "queryPreserved": true
+    },
+    {
+      "from": "/fr/ecosysteme/recrutement",
+      "to": "/fr/produits",
+      "status": 301,
+      "queryPreserved": true
+    }
+  ],
+  "scope": "Trusted HTTPS GET-only retirement redirects for the removed Recruitment product in seven locales; no writes or AI."
+}

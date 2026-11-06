@@ -1,0 +1,259 @@
+{
+  "checkedAt": "2026-10-26T12:51:55.195Z",
+  "passed": true,
+  "scope": "Real owned staging zero-tool candidate; initial and notification-only refinement. Existing connected site agent and all other products unchanged. No outbound messaging. Agent chat still controls the actual model tier.",
+  "results": [
+    {
+      "operation": "initial",
+      "elapsedMs": 13802,
+      "content": {
+        "schemaVersion": "1.0",
+        "title": "Venda de Roupas pelo WhatsApp",
+        "summary": "Aumente suas vendas de roupas utilizando o WhatsApp como canal principal. Ofereça uma experiência de compra direta e personalizada aos clientes.",
+        "hypothesis": "Clientes preferem comprar roupas através do WhatsApp por ser um canal mais direto e acessível.",
+        "roles": [
+          "Vendedor",
+          "Cliente"
+        ],
+        "screens": [
+          {
+            "id": "whatsapp-sales",
+            "title": "Vendas pelo WhatsApp",
+            "description": "Tela principal para interações de vendas via WhatsApp, permitindo visualização de produtos e envio de mensagens.",
+            "items": [
+              {
+                "label": "Produto 1",
+                "value": "Camisa Polo - R$ 79,90"
+              },
+              {
+                "label": "Produto 2",
+                "value": "Calça Jeans - R$ 99,90"
+              },
+              {
+                "label": "Produto 3",
+                "value": "Vestido Floral - R$ 129,90"
+              }
+            ],
+            "action": {
+              "label": "Iniciar Conversa",
+              "nextScreenId": null
+            }
+          },
+          {
+            "id": "order-confirmation",
+            "title": "Confirmação de Pedido",
+            "description": "Tela para confirmar o pedido do cliente, incluindo detalhes dos produtos e total da compra.",
+            "items": [
+              {
+                "label": "Total do Pedido",
+                "value": "R$ 79,90"
+              },
+              {
+                "label": "Método de Pagamento",
+                "value": "Cartão de Crédito"
+              },
+              {
+                "label": "Endereço de Entrega",
+                "value": "Rua das Flores, 123"
+              }
+            ],
+            "action": {
+              "label": "Confirmar Pedido",
+              "nextScreenId": null
+            }
+          },
+          {
+            "id": "customer-feedback",
+            "title": "Feedback do Cliente",
+            "description": "Tela para coletar feedback do cliente após a compra, ajudando a melhorar a experiência.",
+            "items": [
+              {
+                "label": "Satisfação",
+                "value": "Muito Satisfeito"
+              },
+              {
+                "label": "Comentário",
+                "value": "Ótimo atendimento!"
+              }
+            ],
+            "action": {
+              "label": "Enviar Feedback",
+              "nextScreenId": null
+            }
+          }
+        ],
+        "blocks": [
+          {
+            "slug": "wpp",
+            "role": "Canal principal de vendas"
+          },
+          {
+            "slug": "email",
+            "role": "Notificações de confirmação de pedido"
+          }
+        ],
+        "journey": [
+          {
+            "id": "start-sale",
+            "label": "Iniciar Venda",
+            "description": "O vendedor inicia a conversa com o cliente pelo WhatsApp.",
+            "blockSlugs": [
+              "wpp"
+            ],
+            "humanReview": false
+          },
+          {
+            "id": "confirm-order",
+            "label": "Confirmar Pedido",
+            "description": "O vendedor confirma os detalhes do pedido e o total com o cliente.",
+            "blockSlugs": [
+              "email"
+            ],
+            "humanReview": true
+          },
+          {
+            "id": "collect-feedback",
+            "label": "Coletar Feedback",
+            "description": "Após a venda, o vendedor solicita feedback ao cliente sobre a experiência.",
+            "blockSlugs": [
+              "email"
+            ],
+            "humanReview": false
+          }
+        ],
+        "limitations": [
+          "Necessidade de integração com o WhatsApp para vendas.",
+          "Dependência de um estoque atualizado dos produtos.",
+          "Avaliação contínua da satisfação do cliente para melhorias."
+        ],
+        "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+      }
+    },
+    {
+      "operation": "refinement",
+      "elapsedMs": 12047,
+      "content": {
+        "schemaVersion": "1.0",
+        "title": "Venda de Roupas pelo WhatsApp",
+        "summary": "Aumente suas vendas de roupas utilizando o WhatsApp como canal principal. Ofereça uma experiência de compra direta e personalizada aos clientes.",
+        "hypothesis": "Clientes preferem comprar roupas através do WhatsApp por ser um canal mais direto e acessível.",
+        "roles": [
+          "Vendedor",
+          "Cliente"
+        ],
+        "screens": [
+          {
+            "id": "whatsapp-sales",
+            "title": "Vendas pelo WhatsApp",
+            "description": "Tela principal para interações de vendas via WhatsApp, permitindo visualização de produtos e envio de mensagens.",
+            "items": [
+              {
+                "label": "Produto 1",
+                "value": "Camisa Polo - R$ 79,90"
+              },
+              {
+                "label": "Produto 2",
+                "value": "Calça Jeans - R$ 99,90"
+              },
+              {
+                "label": "Produto 3",
+                "value": "Vestido Floral - R$ 129,90"
+              }
+            ],
+            "action": {
+              "label": "Iniciar Conversa",
+              "nextScreenId": null
+            }
+          },
+          {
+            "id": "order-confirmation",
+            "title": "Confirmação de Pedido",
+            "description": "Tela para confirmar o pedido do cliente, incluindo detalhes dos produtos e total da compra.",
+            "items": [
+              {
+                "label": "Total do Pedido",
+                "value": "R$ 79,90"
+              },
+              {
+                "label": "Método de Pagamento",
+                "value": "Cartão de Crédito"
+              },
+              {
+                "label": "Endereço de Entrega",
+                "value": "Rua das Flores, 123"
+              }
+            ],
+            "action": {
+              "label": "Confirmar Pedido",
+              "nextScreenId": null
+            }
+          },
+          {
+            "id": "customer-feedback",
+            "title": "Feedback do Cliente",
+            "description": "Tela para coletar feedback do cliente após a compra, ajudando a melhorar a experiência.",
+            "items": [
+              {
+                "label": "Satisfação",
+                "value": "Muito Satisfeito"
+              },
+              {
+                "label": "Comentário",
+                "value": "Ótimo atendimento!"
+              }
+            ],
+            "action": {
+              "label": "Enviar Feedback",
+              "nextScreenId": null
+            }
+          }
+        ],
+        "blocks": [
+          {
+            "slug": "wpp",
+            "role": "Canal principal de vendas"
+          },
+          {
+            "slug": "email",
+            "role": "Notificações de confirmação de pedido"
+          }
+        ],
+        "journey": [
+          {
+            "id": "start-sale",
+            "label": "Iniciar Venda",
+            "description": "O vendedor inicia a conversa com o cliente pelo WhatsApp.",
+            "blockSlugs": [
+              "wpp"
+            ],
+            "humanReview": false
+          },
+          {
+            "id": "confirm-order",
+            "label": "Confirmar Pedido",
+            "description": "O vendedor confirma os detalhes do pedido e o total com o cliente.",
+            "blockSlugs": [
+              "email"
+            ],
+            "humanReview": true
+          },
+          {
+            "id": "collect-feedback",
+            "label": "Coletar Feedback",
+            "description": "Após a venda, o vendedor solicita feedback ao cliente sobre a experiência.",
+            "blockSlugs": [
+              "email"
+            ],
+            "humanReview": false
+          }
+        ],
+        "limitations": [
+          "Necessidade de integração com o WhatsApp para vendas.",
+          "Dependência de um estoque atualizado dos produtos.",
+          "Avaliação contínua da satisfação do cliente para melhorias."
+        ],
+        "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+      }
+    }
+  ]
+}

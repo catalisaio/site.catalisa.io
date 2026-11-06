@@ -1,0 +1,665 @@
+[
+  {
+    "repo": "wpp",
+    "path": "apps/painel-cliente-api/src/modules/knowledge-base/vector/knowledge-vector-store.service.ts",
+    "sha": "54e6fb44fc8ff87256b412b3fcf5f8c95ca76622",
+    "lines": 294,
+    "matches": [
+      {
+        "line": 4,
+        "text": "import { EMBED_DIMS } from '../../ai-core/embeddings/embedding.service';"
+      },
+      {
+        "line": 29,
+        "text": "* as duas pontas. O `ownerId` gravado na linha e exigido em toda busca é a"
+      },
+      {
+        "line": 48,
+        "text": "ownerId: string;"
+      },
+      {
+        "line": 54,
+        "text": "embedding: Buffer;"
+      },
+      {
+        "line": 99,
+        "text": "owner_id       TEXT NOT NULL,"
+      },
+      {
+        "line": 105,
+        "text": "embedding      vector(${EMBED_DIMS}),"
+      },
+      {
+        "line": 111,
+        "text": "'CREATE INDEX IF NOT EXISTS knowledge_chunks_owner_idx ON knowledge_chunks (owner_id)',"
+      },
+      {
+        "line": 120,
+        "text": "CREATE INDEX IF NOT EXISTS knowledge_chunks_embedding_idx"
+      },
+      {
+        "line": 121,
+        "text": "ON knowledge_chunks USING hnsw (embedding vector_cosine_ops)"
+      },
+      {
+        "line": 157,
+        "text": "(id, owner_id, base_id, document_id, chunk_index, content, token_estimate, embedding)"
+      },
+      {
+        "line": 161,
+        "text": "c.ownerId,"
+      },
+      {
+        "line": 167,
+        "text": "this.toVectorLiteral(c.embedding),"
+      },
+      {
+        "line": 197,
+        "text": "* `ownerId` e `baseIds` são AMBOS obrigatórios: o dono é o invariante de"
+      },
+      {
+        "line": 203,
+        "text": "ownerId: string;"
+      }
+    ],
+    "url": "https://github.com/catalisaio/wpp.bb.catalisa.io/blob/54e6fb44fc8ff87256b412b3fcf5f8c95ca76622/apps/painel-cliente-api/src/modules/knowledge-base/vector/knowledge-vector-store.service.ts"
+  },
+  {
+    "repo": "wpp",
+    "path": "apps/painel-cliente-api/src/modules/knowledge-base/knowledge-scope.ts",
+    "sha": "54e6fb44fc8ff87256b412b3fcf5f8c95ca76622",
+    "lines": 62,
+    "matches": [
+      {
+        "line": 2,
+        "text": "* A regra de contexto do Conhecimento — em UM lugar só."
+      },
+      {
+        "line": 15,
+        "text": "* A base declara EM QUE CONTEXTO vale (`scopeTags`); o atendimento declara ONDE"
+      },
+      {
+        "line": 16,
+        "text": "* ESTÁ (`contextKeys`). A base entra quando **todas** as tags dela estão no"
+      },
+      {
+        "line": 17,
+        "text": "* contexto — um E, não um OU. Com OU, uma base mais exigente"
+      },
+      {
+        "line": 28,
+        "text": "export function isShared(scopeTags?: string[] | null): boolean {"
+      },
+      {
+        "line": 29,
+        "text": "return !scopeTags || scopeTags.length === 0;"
+      },
+      {
+        "line": 35,
+        "text": "* Fail-closed por construção: contexto ausente ou vazio só deixa passar o que"
+      },
+      {
+        "line": 38,
+        "text": "export function basePassesContext("
+      },
+      {
+        "line": 39,
+        "text": "scopeTags: string[] | null | undefined,"
+      },
+      {
+        "line": 40,
+        "text": "contextKeys?: string[] | null,"
+      },
+      {
+        "line": 42,
+        "text": "if (isShared(scopeTags)) return true;"
+      },
+      {
+        "line": 43,
+        "text": "if (!contextKeys || contextKeys.length === 0) return false;"
+      }
+    ],
+    "url": "https://github.com/catalisaio/wpp.bb.catalisa.io/blob/54e6fb44fc8ff87256b412b3fcf5f8c95ca76622/apps/painel-cliente-api/src/modules/knowledge-base/knowledge-scope.ts"
+  },
+  {
+    "repo": "wpp",
+    "path": "apps/painel-cliente-api/src/modules/workflows/handlers/catalisa/baas/pix-settlement.ts",
+    "sha": "54e6fb44fc8ff87256b412b3fcf5f8c95ca76622",
+    "lines": 327,
+    "matches": [
+      {
+        "line": 8,
+        "text": "* `FAILED`, and an id. The flow read \"there is a transferId\" as \"paid\". The operation became `desembolsada` with no"
+      },
+      {
+        "line": 12,
+        "text": "*   - `POST /pix/transfers` → 201 new · 200 replay of the key with a known outcome (ANY status, `FAILED` included)"
+      },
+      {
+        "line": 14,
+        "text": "*     key was used for a different request · 4xx when the bank refused (the reservation row goes to `FAILED`) ·"
+      },
+      {
+        "line": 15,
+        "text": "*     timeout/5xx when nobody knows (the reservation stays `PENDING` and the block's reconciliation closes it)."
+      },
+      {
+        "line": 16,
+        "text": "*   - statuses: `PENDING` → `PROCESSING` → `COMPLETED` | `FAILED` | `CANCELLED`; `COMPLETED` → `REVERSED`."
+      },
+      {
+        "line": 17,
+        "text": "*     `FAILED` and `CANCELLED` are terminal: nothing leaves them (`utils/status-transitions.ts`)."
+      },
+      {
+        "line": 23,
+        "text": "* 401/403, not a 404 from the gateway, not a timeout, not a 4xx of this call — those answer \"failed\" or \"unknown\""
+      },
+      {
+        "line": 38,
+        "text": "export type SettlementOutcome = 'settled' | 'pending' | 'failed' | 'partial' | 'unknown';"
+      },
+      {
+        "line": 95,
+        "text": "/** `pay`: may send a Pix. `check`: only reads — used to confirm a pending one and to cure a wrong record. */"
+      },
+      {
+        "line": 110,
+        "text": "/** The transfer that settled it, or the one still being processed. Never a failed one. */"
+      },
+      {
+        "line": 122,
+        "text": "/** Ids of the attempts found terminally failed on the way. */"
+      },
+      {
+        "line": 123,
+        "text": "failedTransferIds: string[];"
+      },
+      {
+        "line": 132,
+        "text": "const SETTLED = new Set(['COMPLETED']);"
+      },
+      {
+        "line": 133,
+        "text": "const IN_PROGRESS = new Set(['PENDING', 'PROCESSING']);"
+      },
+      {
+        "line": 134,
+        "text": "const DEAD = new Set(['FAILED', 'CANCELLED']);"
+      },
+      {
+        "line": 136,
+        "text": "export type TransferState = 'settled' | 'pending' | 'dead' | 'reversed' | 'unknown';"
+      }
+    ],
+    "url": "https://github.com/catalisaio/wpp.bb.catalisa.io/blob/54e6fb44fc8ff87256b412b3fcf5f8c95ca76622/apps/painel-cliente-api/src/modules/workflows/handlers/catalisa/baas/pix-settlement.ts"
+  },
+  {
+    "repo": "wpp",
+    "path": "apps/painel-cliente-api/src/modules/ai-assistant/plan/plan-mode.service.ts",
+    "sha": "54e6fb44fc8ff87256b412b3fcf5f8c95ca76622",
+    "lines": 805,
+    "matches": [
+      {
+        "line": 149,
+        "text": "const DRAFT_CONFIGURATION_PROMPT = `"
+      },
+      {
+        "line": 171,
+        "text": "/** In-memory plan storage keyed by sessionId */"
+      },
+      {
+        "line": 214,
+        "text": "startPrePlanSession(sessionId: string, skillsRequired: string[], originalMessage: string): PrePlanSession {"
+      },
+      {
+        "line": 216,
+        "text": "sessionId,"
+      },
+      {
+        "line": 222,
+        "text": "this.prePlanSessions.set(sessionId, session);"
+      },
+      {
+        "line": 223,
+        "text": "this.logger.log(`Pre-plan session started for ${sessionId}`, { skillsRequired, originalMessage: originalMessage.substring(0, 80) });"
+      },
+      {
+        "line": 230,
+        "text": "getPrePlanSession(sessionId: string): PrePlanSession | null {"
+      },
+      {
+        "line": 231,
+        "text": "const session = this.prePlanSessions.get(sessionId);"
+      },
+      {
+        "line": 235,
+        "text": "this.prePlanSessions.delete(sessionId);"
+      },
+      {
+        "line": 244,
+        "text": "incrementPrePlanTurns(sessionId: string): void {"
+      },
+      {
+        "line": 245,
+        "text": "const session = this.prePlanSessions.get(sessionId);"
+      },
+      {
+        "line": 254,
+        "text": "clearPrePlanSession(sessionId: string): void {"
+      },
+      {
+        "line": 255,
+        "text": "this.prePlanSessions.delete(sessionId);"
+      },
+      {
+        "line": 293,
+        "text": "* Returns the plan for user approval."
+      }
+    ],
+    "url": "https://github.com/catalisaio/wpp.bb.catalisa.io/blob/54e6fb44fc8ff87256b412b3fcf5f8c95ca76622/apps/painel-cliente-api/src/modules/ai-assistant/plan/plan-mode.service.ts"
+  },
+  {
+    "repo": "bb",
+    "path": "src/baas/services/hold.service.ts",
+    "sha": "027709dc971c63ded425f5bda8374a6e0e52b7db",
+    "lines": 2115,
+    "matches": [
+      {
+        "line": 30,
+        "text": "idempotencyKeyReusedError,"
+      },
+      {
+        "line": 32,
+        "text": "isInFlight,"
+      },
+      {
+        "line": 36,
+        "text": "warnMissingIdempotencyKey,"
+      },
+      {
+        "line": 38,
+        "text": "} from './idempotency'"
+      },
+      {
+        "line": 41,
+        "text": "HoldCustody,"
+      },
+      {
+        "line": 58,
+        "text": "inFlightAmount?: string"
+      },
+      {
+        "line": 94,
+        "text": "* `details.code` de um `409`: a linha diz `custody = PROVIDER` e não tem o id do"
+      },
+      {
+        "line": 224,
+        "text": "* outro bloqueio. Ver a nota de idempotência em `create`."
+      },
+      {
+        "line": 226,
+        "text": "idempotencyKey?: string"
+      },
+      {
+        "line": 232,
+        "text": "* `inFlight` é a mesma distinção do Pix (`ReplayableTransaction`): um bloqueio"
+      },
+      {
+        "line": 238,
+        "text": "export type ReplayableHold = HoldEntity & { replayed?: boolean; inFlight?: boolean }"
+      },
+      {
+        "line": 245,
+        "text": "export function isHoldCreationInFlight(hold: HoldEntity): boolean {"
+      },
+      {
+        "line": 246,
+        "text": "return hold.custody === HoldCustody.PROVIDER && !hold.providerHoldId && hold.status === 'ACTIVE'"
+      },
+      {
+        "line": 332,
+        "text": "* novo — ver a nota de idempotência em `settle`."
+      },
+      {
+        "line": 334,
+        "text": "idempotencyKey?: string"
+      },
+      {
+        "line": 402,
+        "text": "* A criação no banco (`custody = PROVIDER`) ainda não teve desfecho: o banco"
+      }
+    ],
+    "url": "https://github.com/catalisaio/building-blocks-v2/blob/027709dc971c63ded425f5bda8374a6e0e52b7db/src/baas/services/hold.service.ts"
+  },
+  {
+    "repo": "bb",
+    "path": "src/baas/services/lien.service.ts",
+    "sha": "027709dc971c63ded425f5bda8374a6e0e52b7db",
+    "lines": 978,
+    "matches": [
+      {
+        "line": 12,
+        "text": "LienCaptureEntity,"
+      },
+      {
+        "line": 20,
+        "text": "import { isDeterministicRefusal } from './idempotency'"
+      },
+      {
+        "line": 30,
+        "text": "import { MANDATE_MAX_MONTHS, addMonths, type HolderAuthorizationInput } from '../types/authorization'"
+      },
+      {
+        "line": 44,
+        "text": "export const LIEN_IDEMPOTENCY_KEY_REUSED = 'IDEMPOTENCY_KEY_REUSED'"
+      },
+      {
+        "line": 50,
+        "text": "/** Uma captura sem desfecho é tentada de novo até isto; depois falha com o último código. */"
+      },
+      {
+        "line": 51,
+        "text": "export const LIEN_CAPTURE_MAX_ATTEMPTS = 30"
+      },
+      {
+        "line": 63,
+        "text": "/** Uma chave determinística em forma de UUID (v5-like): a mesma captura, a mesma chave, sempre. */"
+      },
+      {
+        "line": 82,
+        "text": "mandateNotBefore?: Date"
+      },
+      {
+        "line": 83,
+        "text": "idempotencyKey: string"
+      },
+      {
+        "line": 105,
+        "text": "capturedAmount: number"
+      },
+      {
+        "line": 106,
+        "text": "reservedAmount: number"
+      },
+      {
+        "line": 107,
+        "text": "/** `amount − capturado − reservado`. */"
+      },
+      {
+        "line": 117,
+        "text": "mandateId: string | null"
+      },
+      {
+        "line": 127,
+        "text": "export interface LienCaptureData {"
+      }
+    ],
+    "url": "https://github.com/catalisaio/building-blocks-v2/blob/027709dc971c63ded425f5bda8374a6e0e52b7db/src/baas/services/lien.service.ts"
+  },
+  {
+    "repo": "bb",
+    "path": "src/audit-trail/repositories/audit-chain.repository.ts",
+    "sha": "027709dc971c63ded425f5bda8374a6e0e52b7db",
+    "lines": 435,
+    "matches": [
+      {
+        "line": 7,
+        "text": "import { GENESIS_PREV_HASH, hashChainRecord, normalizeJsonValue } from '../utils/canonical'"
+      },
+      {
+        "line": 12,
+        "text": "sequence: bigint"
+      },
+      {
+        "line": 13,
+        "text": "hash: string"
+      },
+      {
+        "line": 14,
+        "text": "prunedThroughSequence: bigint"
+      },
+      {
+        "line": 15,
+        "text": "prunedThroughHash: string"
+      },
+      {
+        "line": 36,
+        "text": "afterSequence?: bigint"
+      },
+      {
+        "line": 37,
+        "text": "fromSequence?: bigint"
+      },
+      {
+        "line": 38,
+        "text": "toSequence?: bigint"
+      },
+      {
+        "line": 45,
+        "text": "/** The wait for another transaction's lock on this organization's chain ran out (`lock_timeout`). */"
+      },
+      {
+        "line": 46,
+        "text": "export const CHAIN_LOCK_TIMEOUT = 'CHAIN_LOCK_TIMEOUT'"
+      },
+      {
+        "line": 50,
+        "text": "* (`AUDIT_CHAIN_LOCK_TIMEOUT_MS`)."
+      },
+      {
+        "line": 59,
+        "text": "export const DEFAULT_CHAIN_LOCK_TIMEOUT_MS = 5_000"
+      },
+      {
+        "line": 61,
+        "text": "/** Postgres `lock_not_available`: what `lock_timeout` raises. */"
+      },
+      {
+        "line": 117,
+        "text": "*  1. `pg_advisory_xact_lock(hashtext(organization_id))` — serializa também o nascimento da"
+      }
+    ],
+    "url": "https://github.com/catalisaio/building-blocks-v2/blob/027709dc971c63ded425f5bda8374a6e0e52b7db/src/audit-trail/repositories/audit-chain.repository.ts"
+  },
+  {
+    "repo": "bb",
+    "path": "src/e-signature/services/signature-applier.service.ts",
+    "sha": "027709dc971c63ded425f5bda8374a6e0e52b7db",
+    "lines": 340,
+    "matches": [
+      {
+        "line": 3,
+        "text": "import type { SignatureRequest } from '@prisma/client'"
+      },
+      {
+        "line": 7,
+        "text": "import { createESignatureProvider, type ESignatureProvider } from '../providers'"
+      },
+      {
+        "line": 8,
+        "text": "import type { ProviderArtifacts } from '../providers/esignature-provider.interface'"
+      },
+      {
+        "line": 9,
+        "text": "import { checkSignaturePng, stripDataUrl } from '../providers/opensign/opensign.pdf'"
+      },
+      {
+        "line": 10,
+        "text": "import { MAX_PNG_BYTES, validSignerIp } from '../providers/opensign/opensign.provider'"
+      },
+      {
+        "line": 11,
+        "text": "import type { SignatureRequestRepository, SignatureRequestWithRelations } from '../repositories/signature-request.repository'"
+      },
+      {
+        "line": 12,
+        "text": "import type { SignerRepository } from '../repositories/signer.repository'"
+      },
+      {
+        "line": 13,
+        "text": "import { ESignatureEvents, type SignatureRequestStatus } from '../types'"
+      },
+      {
+        "line": 16,
+        "text": "import { signingLockKey } from './signing-lock'"
+      },
+      {
+        "line": 17,
+        "text": "import type { ApplySignatureInput, ApplySignatureOutput, SignatureApplier, SignatureRefusalReason } from './signature-applier'"
+      }
+    ],
+    "url": "https://github.com/catalisaio/building-blocks-v2/blob/027709dc971c63ded425f5bda8374a6e0e52b7db/src/e-signature/services/signature-applier.service.ts"
+  },
+  {
+    "repo": "developy",
+    "path": "apps/web/src/lib/server/mesh/keepalived-config.ts",
+    "sha": "7b951155dff5c2dc02aaad4faf7959f3b49b2e5f",
+    "lines": 157,
+    "matches": [
+      {
+        "line": 2,
+        "text": "* VRRP configuration for the virtual address."
+      },
+      {
+        "line": 9,
+        "text": "* The same shape of rule as the HAProxy generator: build a model, render it,"
+      },
+      {
+        "line": 10,
+        "text": "* and refuse to render one that cannot work. A VRRP group whose members"
+      },
+      {
+        "line": 21,
+        "text": "/** Address of this replica, which VRRP advertises from. */"
+      },
+      {
+        "line": 23,
+        "text": "/** Addresses of the other replicas, as unicast peers. */"
+      },
+      {
+        "line": 32,
+        "text": "virtualRouterId: number;"
+      },
+      {
+        "line": 33,
+        "text": "virtualAddress: string;"
+      },
+      {
+        "line": 34,
+        "text": "/** CIDR prefix the virtual address is announced with. */"
+      },
+      {
+        "line": 55,
+        "text": "export function virtualRouterIdFor(serviceId: string): number {"
+      },
+      {
+        "line": 68,
+        "text": "(a) => a.purpose === \"virtual-ip\" && a.status !== \"released\""
+      },
+      {
+        "line": 72,
+        "text": "\"This service has no virtual address allocated, so there is nothing for VRRP to move.\""
+      },
+      {
+        "line": 79,
+        "text": "`A virtual address needs at least two replicas to move between; this service has ${running.length}.`"
+      },
+      {
+        "line": 85,
+        "text": "// VRRP unicast needs every member to know where the others are."
+      },
+      {
+        "line": 87,
+        "text": "\"Every replica needs its own address before VRRP can be configured; \" +"
+      }
+    ],
+    "url": "https://github.com/klederson/proxmox-manager/blob/7b951155dff5c2dc02aaad4faf7959f3b49b2e5f/apps/web/src/lib/server/mesh/keepalived-config.ts"
+  },
+  {
+    "repo": "developy",
+    "path": "apps/web/src/lib/server/ingress/traefik.ts",
+    "sha": "7b951155dff5c2dc02aaad4faf7959f3b49b2e5f",
+    "lines": 248,
+    "matches": [
+      {
+        "line": 29,
+        "text": "stickyCookie?: boolean;"
+      },
+      {
+        "line": 175,
+        "text": "const sticky = r.stickyCookie"
+      },
+      {
+        "line": 176,
+        "text": "? `\\n        sticky:\\n          cookie:\\n            name: ${name}-affinity\\n            httpOnly: true\\n            secure: true\\n            sameSite: lax`"
+      },
+      {
+        "line": 184,
+        "text": "- websecure"
+      },
+      {
+        "line": 192,
+        "text": "passHostHeader: true${sticky}${health}"
+      }
+    ],
+    "url": "https://github.com/klederson/proxmox-manager/blob/7b951155dff5c2dc02aaad4faf7959f3b49b2e5f/apps/web/src/lib/server/ingress/traefik.ts"
+  },
+  {
+    "repo": "developy",
+    "path": "apps/web/src/lib/server/signal/launch-alerts.ts",
+    "sha": "7b951155dff5c2dc02aaad4faf7959f3b49b2e5f",
+    "lines": 104,
+    "matches": [
+      {
+        "line": 3,
+        "text": "import { redactSecrets } from \"../erro-sem-segredo\";"
+      },
+      {
+        "line": 11,
+        "text": "* ficaram `failed` por dois dias: a sonda gravava o estado certo a cada"
+      },
+      {
+        "line": 16,
+        "text": "* perdida (o painel reiniciou entre `active` e `failed`) não some, porque o"
+      },
+      {
+        "line": 26,
+        "text": "type Severity = SignalIncident[\"severity\"];"
+      },
+      {
+        "line": 28,
+        "text": "const LOWER: Record<Severity, Severity> = { critical: \"warning\", warning: \"info\", info: \"info\" };"
+      },
+      {
+        "line": 31,
+        "text": "* `failed` é crítico, `degraded` é aviso. Fora de produção desce um nível"
+      },
+      {
+        "line": 35,
+        "text": "export function launchSeverity(status: \"failed\" | \"degraded\" | \"stuck\", environment?: LaunchEnvironment): Severity {"
+      },
+      {
+        "line": 36,
+        "text": "const base: Severity = status === \"failed\" ? \"critical\" : \"warning\";"
+      },
+      {
+        "line": 62,
+        "text": "if (svc.status !== \"failed\" && svc.status !== \"degraded\") continue;"
+      },
+      {
+        "line": 63,
+        "text": "const severity = launchSeverity(svc.status, svc.environment);"
+      },
+      {
+        "line": 64,
+        "text": "if (severity === \"info\") continue;"
+      },
+      {
+        "line": 66,
+        "text": "const reason = svc.statusMessage ? redactSecrets(svc.statusMessage) : \"\";"
+      }
+    ],
+    "url": "https://github.com/klederson/proxmox-manager/blob/7b951155dff5c2dc02aaad4faf7959f3b49b2e5f/apps/web/src/lib/server/signal/launch-alerts.ts"
+  }
+]

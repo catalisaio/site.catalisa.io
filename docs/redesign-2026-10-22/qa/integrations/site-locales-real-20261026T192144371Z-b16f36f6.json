@@ -1,0 +1,2612 @@
+{
+  "createdAt": "2026-10-26T19:21:44.372Z",
+  "updatedAt": "2026-10-26T19:24:43.587Z",
+  "releaseId": "20261026-multilingual",
+  "origin": "https://site-staging.catalisa.io",
+  "scope": "Real trusted HTTPS staging BFF/owner AI; seven serial synthetic Lab-to-Contact sessions, one initial generation per language, exact-literal/schema/reference checks, idempotent replay and deterministic human review. No browser, handoff, CRM operation, email/WhatsApp delivery or optional market collection.",
+  "passed": true,
+  "completed": 7,
+  "results": [
+    {
+      "locale": "pt-BR",
+      "phase": "complete",
+      "passed": true,
+      "idea": "Quero matricular alunos em uma escola de idiomas pelo WhatsApp: informar cursos, escolher uma turma e confirmar a matrícula. É um teste fictício, sem enviar mensagens ou executar operações reais.",
+      "email": "locale-pt-br-b16f36f6@example.invalid",
+      "phone": "+12025550101",
+      "requests": [
+        {
+          "route": "sessions",
+          "method": "POST",
+          "status": 201,
+          "elapsedMs": 857,
+          "requestId": "4c54e171-a811-443b-9203-eddee6a83c78"
+        },
+        {
+          "route": "lab/briefing",
+          "method": "POST",
+          "status": 200,
+          "elapsedMs": 842,
+          "requestId": "3343054b-4cac-4f71-8ca2-9f7b5974d985"
+        },
+        {
+          "route": "identity",
+          "method": "POST",
+          "status": 201,
+          "elapsedMs": 1054,
+          "requestId": "c7c511c0-98dd-428a-9f86-3b21d9edb109"
+        },
+        {
+          "route": "contact",
+          "method": "POST",
+          "status": 200,
+          "elapsedMs": 700,
+          "requestId": "64b8da1e-980e-479a-bf2e-e701d5c96730"
+        },
+        {
+          "route": "concepts",
+          "method": "POST",
+          "status": 202,
+          "elapsedMs": 13732,
+          "requestId": "6aa58c53-723d-46dd-95fe-46ef6c5f3ef3"
+        },
+        {
+          "route": "jobs/job_6b1a0b4c-2ed7-4a97-a244-e00750bc72f9",
+          "method": "GET",
+          "status": 200,
+          "elapsedMs": 526,
+          "requestId": "494e9d23-9aec-40c4-ae55-d9b31cc289c4"
+        },
+        {
+          "route": "session",
+          "method": "GET",
+          "status": 200,
+          "elapsedMs": 501,
+          "requestId": "e1ef19fc-ab7d-44b2-b920-4449d1505879"
+        },
+        {
+          "route": "concepts",
+          "method": "POST",
+          "status": 202,
+          "elapsedMs": 720,
+          "requestId": "38302aca-3496-4565-92d3-8b501b11a35c"
+        },
+        {
+          "route": "concepts/concept_b9357d6f-238f-4b29-b605-aa127028b356/revisions",
+          "method": "POST",
+          "status": 202,
+          "elapsedMs": 1184,
+          "requestId": "c5786c82-3d8c-4aea-8716-03b1d193afe5"
+        },
+        {
+          "route": "jobs/job_ce012979-b345-4ba6-9b02-5082d47687dd",
+          "method": "GET",
+          "status": 200,
+          "elapsedMs": 650,
+          "requestId": "854fe006-d3ac-485b-8e7d-2a15ab96fd1c"
+        },
+        {
+          "route": "concepts/concept_b9357d6f-238f-4b29-b605-aa127028b356/revisions",
+          "method": "POST",
+          "status": 202,
+          "elapsedMs": 1025,
+          "requestId": "aaeea867-8eba-4a35-94f4-7d5b926e220a"
+        },
+        {
+          "route": "session",
+          "method": "GET",
+          "status": 200,
+          "elapsedMs": 750,
+          "requestId": "b5cf0c5a-7815-4cdf-a309-cc9dc84bad0a"
+        }
+      ],
+      "generationMs": 13732,
+      "initialConcept": {
+        "conceptRef": "concept_b9357d6f-238f-4b29-b605-aa127028b356",
+        "version": 1,
+        "briefVersion": 1,
+        "content": {
+          "schemaVersion": "1.0",
+          "title": "Matrícula em Escola de Idiomas",
+          "summary": "Facilita a matrícula de alunos em cursos de idiomas via WhatsApp, incluindo seleção de turma e confirmação.",
+          "hypothesis": "Os usuários preferem usar o WhatsApp para matricular-se em cursos de idiomas pela sua conveniência e agilidade.",
+          "roles": [
+            "Usuário",
+            "Atendente",
+            "Administrador"
+          ],
+          "screens": [
+            {
+              "id": "cursos",
+              "title": "Escolha de Cursos",
+              "description": "Selecione o curso de idiomas desejado.",
+              "items": [
+                {
+                  "label": "Inglês Básico",
+                  "value": "Curso de inglês para iniciantes."
+                },
+                {
+                  "label": "Espanhol Intermediário",
+                  "value": "Curso de espanhol para alunos com conhecimento prévio."
+                },
+                {
+                  "label": "Francês Avançado",
+                  "value": "Curso de francês para fluentes que desejam aprimorar."
+                }
+              ],
+              "action": {
+                "label": "Selecionar Curso",
+                "nextScreenId": "turmas"
+              }
+            },
+            {
+              "id": "turmas",
+              "title": "Seleção de Turmas",
+              "description": "Escolha a turma disponível para o curso selecionado.",
+              "items": [
+                {
+                  "label": "Turma A - Seg/Qua 19h",
+                  "value": "Aula presencial às segundas e quartas-feiras."
+                },
+                {
+                  "label": "Turma B - Ter/Qui 18h",
+                  "value": "Aula online às terças e quintas-feiras."
+                },
+                {
+                  "label": "Turma C - Sex 17h",
+                  "value": "Aula intensiva às sextas-feiras."
+                }
+              ],
+              "action": {
+                "label": "Confirmar Turma",
+                "nextScreenId": "confirmacao"
+              }
+            },
+            {
+              "id": "confirmacao",
+              "title": "Confirmação de Matrícula",
+              "description": "Confirme sua matrícula no curso e turma selecionados.",
+              "items": [
+                {
+                  "label": "Curso",
+                  "value": "Inglês Básico"
+                },
+                {
+                  "label": "Turma",
+                  "value": "Turma A - Seg/Qua 19h"
+                },
+                {
+                  "label": "Valor",
+                  "value": "R$ 200,00"
+                }
+              ],
+              "action": {
+                "label": "Finalizar Matrícula",
+                "nextScreenId": null
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "slug": "wpp",
+              "role": "Canal principal de vendas"
+            },
+            {
+              "slug": "email",
+              "role": "Notificações de matrícula"
+            }
+          ],
+          "journey": [
+            {
+              "id": "inicio",
+              "label": "Início da Matrícula",
+              "description": "Usuário inicia o processo de matrícula pelo WhatsApp.",
+              "blockSlugs": [
+                "wpp",
+                "email"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "escolha_cursos",
+              "label": "Escolha do Curso",
+              "description": "Usuário seleciona o curso desejado.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "selecionar_turma",
+              "label": "Seleção da Turma",
+              "description": "Usuário escolhe a turma e confirma.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "confirmar_matricula",
+              "label": "Confirmação da Matrícula",
+              "description": "Usuário finaliza a matrícula e recebe confirmação.",
+              "blockSlugs": [
+                "email"
+              ],
+              "humanReview": true
+            }
+          ],
+          "limitations": [
+            "Apenas cursos e turmas disponíveis no sistema podem ser selecionados.",
+            "O processo depende da resposta do usuário em cada etapa.",
+            "Notificações por e-mail requerem que o usuário forneça um endereço válido.",
+            "A confirmação da matrícula deve ser realizada antes do início das aulas."
+          ],
+          "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+        }
+      },
+      "title": "Matrícula em Escola de Idiomas",
+      "summary": "Facilita a matrícula de alunos em cursos de idiomas via WhatsApp, incluindo seleção de turma e confirmação.",
+      "languageReviewRequired": true,
+      "replayedSameJob": true,
+      "reviewMs": 1185,
+      "reviewedConcept": {
+        "conceptRef": "concept_b9357d6f-238f-4b29-b605-aa127028b356",
+        "version": 2,
+        "briefVersion": 1,
+        "content": {
+          "schemaVersion": "1.0",
+          "title": "Matrícula em Escola de Idiomas",
+          "summary": "Facilita a matrícula de alunos em cursos de idiomas via WhatsApp, incluindo seleção de turma e confirmação.",
+          "hypothesis": "Os usuários preferem usar o WhatsApp para matricular-se em cursos de idiomas pela sua conveniência e agilidade.",
+          "roles": [
+            "Usuário",
+            "Atendente",
+            "Administrador"
+          ],
+          "screens": [
+            {
+              "id": "cursos",
+              "title": "Escolha de Cursos",
+              "description": "Selecione o curso de idiomas desejado.",
+              "items": [
+                {
+                  "label": "Inglês Básico",
+                  "value": "Curso de inglês para iniciantes."
+                },
+                {
+                  "label": "Espanhol Intermediário",
+                  "value": "Curso de espanhol para alunos com conhecimento prévio."
+                },
+                {
+                  "label": "Francês Avançado",
+                  "value": "Curso de francês para fluentes que desejam aprimorar."
+                }
+              ],
+              "action": {
+                "label": "Selecionar Curso",
+                "nextScreenId": "turmas"
+              }
+            },
+            {
+              "id": "turmas",
+              "title": "Seleção de Turmas",
+              "description": "Escolha a turma disponível para o curso selecionado.",
+              "items": [
+                {
+                  "label": "Turma A - Seg/Qua 19h",
+                  "value": "Aula presencial às segundas e quartas-feiras."
+                },
+                {
+                  "label": "Turma B - Ter/Qui 18h",
+                  "value": "Aula online às terças e quintas-feiras."
+                },
+                {
+                  "label": "Turma C - Sex 17h",
+                  "value": "Aula intensiva às sextas-feiras."
+                }
+              ],
+              "action": {
+                "label": "Confirmar Turma",
+                "nextScreenId": "confirmacao"
+              }
+            },
+            {
+              "id": "confirmacao",
+              "title": "Confirmação de Matrícula",
+              "description": "Confirme sua matrícula no curso e turma selecionados.",
+              "items": [
+                {
+                  "label": "Curso",
+                  "value": "Inglês Básico"
+                },
+                {
+                  "label": "Turma",
+                  "value": "Turma A - Seg/Qua 19h"
+                },
+                {
+                  "label": "Valor",
+                  "value": "R$ 200,00"
+                }
+              ],
+              "action": {
+                "label": "Finalizar Matrícula",
+                "nextScreenId": null
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "slug": "wpp",
+              "role": "Canal principal de vendas"
+            },
+            {
+              "slug": "email",
+              "role": "Notificações de matrícula"
+            }
+          ],
+          "journey": [
+            {
+              "id": "inicio",
+              "label": "Início da Matrícula",
+              "description": "Usuário inicia o processo de matrícula pelo WhatsApp.",
+              "blockSlugs": [
+                "wpp",
+                "email"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "escolha_cursos",
+              "label": "Escolha do Curso",
+              "description": "Usuário seleciona o curso desejado.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "selecionar_turma",
+              "label": "Seleção da Turma",
+              "description": "Usuário escolhe a turma e confirma.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "confirmar_matricula",
+              "label": "Confirmação da Matrícula",
+              "description": "Usuário finaliza a matrícula e recebe confirmação.",
+              "blockSlugs": [
+                "email"
+              ],
+              "humanReview": true
+            }
+          ],
+          "limitations": [
+            "Apenas cursos e turmas disponíveis no sistema podem ser selecionados.",
+            "O processo depende da resposta do usuário em cada etapa.",
+            "Notificações por e-mail requerem que o usuário forneça um endereço válido.",
+            "A confirmação da matrícula deve ser realizada antes do início das aulas."
+          ],
+          "disclaimer": "Conceito exploratório. Não constitui proposta final, aprovação ou produto publicado."
+        }
+      },
+      "reviewReplayedSameJob": true,
+      "deterministicReviewWithoutInference": true,
+      "syntheticSessionRemoved": true
+    },
+    {
+      "locale": "en-US",
+      "phase": "complete",
+      "passed": true,
+      "idea": "I want to enroll students in a language school through WhatsApp: explain courses, choose a class and confirm enrollment. This is a fictional test; do not send messages or perform real operations.",
+      "email": "locale-en-us-b16f36f6@example.invalid",
+      "phone": "+12025550102",
+      "requests": [
+        {
+          "route": "sessions",
+          "method": "POST",
+          "status": 201,
+          "elapsedMs": 383,
+          "requestId": "3eca29f6-abbd-469a-a47b-e320bf3ed553"
+        },
+        {
+          "route": "lab/briefing",
+          "method": "POST",
+          "status": 200,
+          "elapsedMs": 737,
+          "requestId": "b02fd8df-071f-44e2-8b07-a1504b6c1383"
+        },
+        {
+          "route": "identity",
+          "method": "POST",
+          "status": 201,
+          "elapsedMs": 714,
+          "requestId": "f83fe1d0-120e-42e6-95c2-7bcb3b7e1a7c"
+        },
+        {
+          "route": "contact",
+          "method": "POST",
+          "status": 200,
+          "elapsedMs": 797,
+          "requestId": "36808b78-70d9-44a8-8625-a34e675b85e6"
+        },
+        {
+          "route": "concepts",
+          "method": "POST",
+          "status": 202,
+          "elapsedMs": 12392,
+          "requestId": "ac5b7403-1d28-407a-bfff-430b488fdb6a"
+        },
+        {
+          "route": "jobs/job_77bfb7b9-74ff-44de-9c8c-ca6ff48cc5a1",
+          "method": "GET",
+          "status": 200,
+          "elapsedMs": 765,
+          "requestId": "09a7c8b0-63c3-4531-ad87-9fba664afba8"
+        },
+        {
+          "route": "session",
+          "method": "GET",
+          "status": 200,
+          "elapsedMs": 401,
+          "requestId": "d7526810-025b-415a-99b8-8a3ea127ff9b"
+        },
+        {
+          "route": "concepts",
+          "method": "POST",
+          "status": 202,
+          "elapsedMs": 977,
+          "requestId": "a4550b6b-e96b-47c8-84ab-f2d264746cad"
+        },
+        {
+          "route": "concepts/concept_37157798-8bb3-4c45-91c1-63c25adc6d4c/revisions",
+          "method": "POST",
+          "status": 202,
+          "elapsedMs": 1158,
+          "requestId": "efc6eafb-0b8f-4bf3-9618-5aedb8c5847b"
+        },
+        {
+          "route": "jobs/job_58d01a5a-ba99-4dd3-be9d-901fd4f5b927",
+          "method": "GET",
+          "status": 200,
+          "elapsedMs": 568,
+          "requestId": "f530a630-bea5-4120-bf23-6e2fd1fd901f"
+        },
+        {
+          "route": "concepts/concept_37157798-8bb3-4c45-91c1-63c25adc6d4c/revisions",
+          "method": "POST",
+          "status": 202,
+          "elapsedMs": 779,
+          "requestId": "299b9ac2-c982-4700-8caa-4cb4b463efae"
+        },
+        {
+          "route": "session",
+          "method": "GET",
+          "status": 200,
+          "elapsedMs": 440,
+          "requestId": "b95daa62-662d-4666-8348-6b7917156a12"
+        }
+      ],
+      "generationMs": 12396,
+      "initialConcept": {
+        "conceptRef": "concept_37157798-8bb3-4c45-91c1-63c25adc6d4c",
+        "version": 1,
+        "briefVersion": 1,
+        "locale": "en-US",
+        "content": {
+          "schemaVersion": "1.0",
+          "title": "Student Enrollment via WhatsApp",
+          "summary": "Enroll students in language courses using WhatsApp, allowing them to inquire about courses, choose classes, and confirm their enrollment.",
+          "hypothesis": "The target audience includes students interested in learning a new language through a convenient and accessible platform like WhatsApp. Confirmation of actual interest and the effectiveness of the WhatsApp channel should be evaluated.",
+          "roles": [
+            "WhatsApp as the main communication channel",
+            "Email for enrollment confirmation notifications",
+            "AI Engine for automated responses"
+          ],
+          "screens": [
+            {
+              "id": "course-info",
+              "title": "Course Information",
+              "description": "Display available language courses with details like duration, schedule, and pricing.",
+              "items": [
+                {
+                  "label": "Course Name",
+                  "value": "English Level 1"
+                },
+                {
+                  "label": "Duration",
+                  "value": "3 months"
+                },
+                {
+                  "label": "Price",
+                  "value": "$300"
+                }
+              ],
+              "action": {
+                "label": "Select Class",
+                "nextScreenId": "class-selection"
+              }
+            },
+            {
+              "id": "class-selection",
+              "title": "Select Class",
+              "description": "Choose a class time slot for the selected course.",
+              "items": [
+                {
+                  "label": "Morning Class",
+                  "value": "9:00 AM - 11:00 AM"
+                },
+                {
+                  "label": "Evening Class",
+                  "value": "6:00 PM - 8:00 PM"
+                },
+                {
+                  "label": "Weekend Class",
+                  "value": "Saturday 10:00 AM - 12:00 PM"
+                }
+              ],
+              "action": {
+                "label": "Confirm Enrollment",
+                "nextScreenId": "confirmation"
+              }
+            },
+            {
+              "id": "confirmation",
+              "title": "Enrollment Confirmation",
+              "description": "Confirm your enrollment in the selected class.",
+              "items": [
+                {
+                  "label": "Course",
+                  "value": "English Level 1"
+                },
+                {
+                  "label": "Class Time",
+                  "value": "9:00 AM - 11:00 AM"
+                },
+                {
+                  "label": "Total Price",
+                  "value": "$300"
+                }
+              ],
+              "action": {
+                "label": "Send Confirmation Email",
+                "nextScreenId": null
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "slug": "wpp",
+              "role": "Main communication channel for enrollment"
+            },
+            {
+              "slug": "email",
+              "role": "Notifications for enrollment confirmation"
+            },
+            {
+              "slug": "ai-engine",
+              "role": "Automated responses to inquiries"
+            }
+          ],
+          "journey": [
+            {
+              "id": "start-enrollment",
+              "label": "Start Enrollment Process",
+              "description": "Begin the enrollment process by requesting course information via WhatsApp.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "select-class",
+              "label": "Select Class",
+              "description": "User selects a class time from the options provided.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "confirm-enrollment",
+              "label": "Confirm Enrollment",
+              "description": "User confirms their enrollment and receives a confirmation email.",
+              "blockSlugs": [
+                "email"
+              ],
+              "humanReview": true
+            }
+          ],
+          "limitations": [
+            "The effectiveness of WhatsApp as a communication channel needs to be evaluated.",
+            "User engagement levels may vary based on course offerings.",
+            "Automated responses may not cover all user inquiries effectively.",
+            "Confirmation of enrollment requires manual review to ensure accuracy."
+          ],
+          "disclaimer": "Exploratory concept. This is not a final proposal, approval or published product."
+        }
+      },
+      "title": "Student Enrollment via WhatsApp",
+      "summary": "Enroll students in language courses using WhatsApp, allowing them to inquire about courses, choose classes, and confirm their enrollment.",
+      "languageReviewRequired": true,
+      "replayedSameJob": true,
+      "reviewMs": 1168,
+      "reviewedConcept": {
+        "conceptRef": "concept_37157798-8bb3-4c45-91c1-63c25adc6d4c",
+        "version": 2,
+        "briefVersion": 1,
+        "locale": "en-US",
+        "content": {
+          "schemaVersion": "1.0",
+          "title": "Student Enrollment via WhatsApp",
+          "summary": "Enroll students in language courses using WhatsApp, allowing them to inquire about courses, choose classes, and confirm their enrollment.",
+          "hypothesis": "The target audience includes students interested in learning a new language through a convenient and accessible platform like WhatsApp. Confirmation of actual interest and the effectiveness of the WhatsApp channel should be evaluated.",
+          "roles": [
+            "WhatsApp as the main communication channel",
+            "Email for enrollment confirmation notifications",
+            "AI Engine for automated responses"
+          ],
+          "screens": [
+            {
+              "id": "course-info",
+              "title": "Course Information",
+              "description": "Display available language courses with details like duration, schedule, and pricing.",
+              "items": [
+                {
+                  "label": "Course Name",
+                  "value": "English Level 1"
+                },
+                {
+                  "label": "Duration",
+                  "value": "3 months"
+                },
+                {
+                  "label": "Price",
+                  "value": "$300"
+                }
+              ],
+              "action": {
+                "label": "Select Class",
+                "nextScreenId": "class-selection"
+              }
+            },
+            {
+              "id": "class-selection",
+              "title": "Select Class",
+              "description": "Choose a class time slot for the selected course.",
+              "items": [
+                {
+                  "label": "Morning Class",
+                  "value": "9:00 AM - 11:00 AM"
+                },
+                {
+                  "label": "Evening Class",
+                  "value": "6:00 PM - 8:00 PM"
+                },
+                {
+                  "label": "Weekend Class",
+                  "value": "Saturday 10:00 AM - 12:00 PM"
+                }
+              ],
+              "action": {
+                "label": "Confirm Enrollment",
+                "nextScreenId": "confirmation"
+              }
+            },
+            {
+              "id": "confirmation",
+              "title": "Enrollment Confirmation",
+              "description": "Confirm your enrollment in the selected class.",
+              "items": [
+                {
+                  "label": "Course",
+                  "value": "English Level 1"
+                },
+                {
+                  "label": "Class Time",
+                  "value": "9:00 AM - 11:00 AM"
+                },
+                {
+                  "label": "Total Price",
+                  "value": "$300"
+                }
+              ],
+              "action": {
+                "label": "Send Confirmation Email",
+                "nextScreenId": null
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "slug": "wpp",
+              "role": "Main communication channel for enrollment"
+            },
+            {
+              "slug": "email",
+              "role": "Notifications for enrollment confirmation"
+            },
+            {
+              "slug": "ai-engine",
+              "role": "Automated responses to inquiries"
+            }
+          ],
+          "journey": [
+            {
+              "id": "start-enrollment",
+              "label": "Start Enrollment Process",
+              "description": "Begin the enrollment process by requesting course information via WhatsApp.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "select-class",
+              "label": "Select Class",
+              "description": "User selects a class time from the options provided.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "confirm-enrollment",
+              "label": "Confirm Enrollment",
+              "description": "User confirms their enrollment and receives a confirmation email.",
+              "blockSlugs": [
+                "email"
+              ],
+              "humanReview": true
+            }
+          ],
+          "limitations": [
+            "The effectiveness of WhatsApp as a communication channel needs to be evaluated.",
+            "User engagement levels may vary based on course offerings.",
+            "Automated responses may not cover all user inquiries effectively.",
+            "Confirmation of enrollment requires manual review to ensure accuracy."
+          ],
+          "disclaimer": "Exploratory concept. This is not a final proposal, approval or published product."
+        }
+      },
+      "reviewReplayedSameJob": true,
+      "deterministicReviewWithoutInference": true,
+      "syntheticSessionRemoved": true
+    },
+    {
+      "locale": "de-DE",
+      "phase": "complete",
+      "passed": true,
+      "idea": "Ich möchte Schülerinnen und Schüler über WhatsApp an einer Sprachschule anmelden: Kurse erklären, eine Gruppe auswählen und die Anmeldung bestätigen. Dies ist ein fiktiver Test ohne Nachrichtenversand oder echte Vorgänge.",
+      "email": "locale-de-de-b16f36f6@example.invalid",
+      "phone": "+12025550103",
+      "requests": [
+        {
+          "route": "sessions",
+          "method": "POST",
+          "status": 201,
+          "elapsedMs": 562,
+          "requestId": "8cf1a2ba-3a90-46e3-ac1e-cafaedb9c6a1"
+        },
+        {
+          "route": "lab/briefing",
+          "method": "POST",
+          "status": 200,
+          "elapsedMs": 1064,
+          "requestId": "c6fe1b4e-ae6a-4b96-90a2-9e8b755d1d3d"
+        },
+        {
+          "route": "identity",
+          "method": "POST",
+          "status": 201,
+          "elapsedMs": 1066,
+          "requestId": "604af861-5bf9-4a46-af15-aee30e2fd121"
+        },
+        {
+          "route": "contact",
+          "method": "POST",
+          "status": 200,
+          "elapsedMs": 781,
+          "requestId": "698be468-acf6-450a-a766-5e7e31f9368d"
+        },
+        {
+          "route": "concepts",
+          "method": "POST",
+          "status": 202,
+          "elapsedMs": 12357,
+          "requestId": "ce6ffa35-25b3-4d10-87a0-fb246ebb9faf"
+        },
+        {
+          "route": "jobs/job_360f8d04-fa36-4c55-b1f3-0c7aa3b82460",
+          "method": "GET",
+          "status": 200,
+          "elapsedMs": 453,
+          "requestId": "69894422-b65e-4ef6-b425-16638555c7c5"
+        },
+        {
+          "route": "session",
+          "method": "GET",
+          "status": 200,
+          "elapsedMs": 594,
+          "requestId": "844bb5b5-916e-4db0-9695-b49f939a3329"
+        },
+        {
+          "route": "concepts",
+          "method": "POST",
+          "status": 202,
+          "elapsedMs": 601,
+          "requestId": "14314a0e-8946-40b2-b687-e707b394e039"
+        },
+        {
+          "route": "concepts/concept_5b44b2ee-0c04-4763-b1ae-0f1b10707f73/revisions",
+          "method": "POST",
+          "status": 202,
+          "elapsedMs": 894,
+          "requestId": "332bffc3-a385-44b5-af8c-2d5b9115e82f"
+        },
+        {
+          "route": "jobs/job_802f3802-3ba6-4793-8d61-71fea9832aeb",
+          "method": "GET",
+          "status": 200,
+          "elapsedMs": 710,
+          "requestId": "5975b244-5c07-49ec-88ed-fed8f4a3b211"
+        },
+        {
+          "route": "concepts/concept_5b44b2ee-0c04-4763-b1ae-0f1b10707f73/revisions",
+          "method": "POST",
+          "status": 202,
+          "elapsedMs": 925,
+          "requestId": "f6cdcab0-1a95-4f08-aed3-cab1df439447"
+        },
+        {
+          "route": "session",
+          "method": "GET",
+          "status": 200,
+          "elapsedMs": 395,
+          "requestId": "1d17f4e3-9e1f-4464-80db-2e7250b2cb5c"
+        }
+      ],
+      "generationMs": 12360,
+      "initialConcept": {
+        "conceptRef": "concept_5b44b2ee-0c04-4763-b1ae-0f1b10707f73",
+        "version": 1,
+        "briefVersion": 1,
+        "locale": "de-DE",
+        "content": {
+          "schemaVersion": "1.0",
+          "title": "Anmeldung Sprachschule",
+          "summary": "Ermöglichen Sie Schülern, sich über WhatsApp für Sprachkurse anzumelden, indem Sie Kurse erklären, Gruppen auswählen und Anmeldungen bestätigen.",
+          "hypothesis": "Die Schüler sind bereits mit WhatsApp vertraut und nutzen es bevorzugt für die Kommunikation. Die Sprachschule hat ein aktuelles Kursangebot, das klar kommuniziert werden kann.",
+          "roles": [
+            "Schüler",
+            "Lehrer",
+            "Administrativer Mitarbeiter"
+          ],
+          "screens": [
+            {
+              "id": "course-explanation",
+              "title": "Kursübersicht",
+              "description": "Hier können Schüler die verfügbaren Sprachkurse einsehen und sich über Inhalte und Zeitpläne informieren.",
+              "items": [
+                {
+                  "label": "Kurs A",
+                  "value": "Intensivkurs Deutsch, 3x pro Woche"
+                },
+                {
+                  "label": "Kurs B",
+                  "value": "Konversationskurs Englisch, 2x pro Woche"
+                },
+                {
+                  "label": "Kurs C",
+                  "value": "Business-Englisch, 1x pro Woche"
+                }
+              ],
+              "action": {
+                "label": "Gruppe auswählen",
+                "nextScreenId": "group-selection"
+              }
+            },
+            {
+              "id": "group-selection",
+              "title": "Gruppenauswahl",
+              "description": "Wählen Sie eine Gruppe für den gewünschten Kurs aus.",
+              "items": [
+                {
+                  "label": "Gruppe 1",
+                  "value": "Montag und Mittwoch, 18:00 - 20:00"
+                },
+                {
+                  "label": "Gruppe 2",
+                  "value": "Dienstag und Donnerstag, 19:00 - 21:00"
+                },
+                {
+                  "label": "Gruppe 3",
+                  "value": "Freitag, 16:00 - 18:00"
+                }
+              ],
+              "action": {
+                "label": "Anmeldung bestätigen",
+                "nextScreenId": "confirmation"
+              }
+            },
+            {
+              "id": "confirmation",
+              "title": "Anmeldung Bestätigung",
+              "description": "Bestätigen Sie Ihre Anmeldung für den ausgewählten Kurs und die Gruppe.",
+              "items": [
+                {
+                  "label": "Kurs",
+                  "value": "Intensivkurs Deutsch"
+                },
+                {
+                  "label": "Gruppe",
+                  "value": "Montag und Mittwoch, 18:00 - 20:00"
+                },
+                {
+                  "label": "Bestätigung",
+                  "value": "Vielen Dank für Ihre Anmeldung!"
+                }
+              ],
+              "action": {
+                "label": "Bestätigung senden",
+                "nextScreenId": null
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "slug": "wpp",
+              "role": "Hauptkommunikationskanal für Anmeldungen"
+            },
+            {
+              "slug": "email",
+              "role": "Benachrichtigungen nach Anmeldung"
+            }
+          ],
+          "journey": [
+            {
+              "id": "step1",
+              "label": "Kursübersicht anzeigen",
+              "description": "Schüler sehen die Kursübersicht und wählen einen Kurs aus.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "step2",
+              "label": "Gruppe auswählen",
+              "description": "Schüler wählen die gewünschte Gruppe für den Kurs aus.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "step3",
+              "label": "Anmeldung bestätigen",
+              "description": "Schüler bestätigen ihre Anmeldung und erhalten eine Bestätigung.",
+              "blockSlugs": [
+                "email"
+              ],
+              "humanReview": true
+            }
+          ],
+          "limitations": [
+            "Die Schüler müssen über WhatsApp erreichbar sein.",
+            "Die Kursverfügbarkeit kann variieren.",
+            "Es wird keine persönliche Beratung angeboten.",
+            "Die Bestätigung erfolgt ausschließlich über WhatsApp."
+          ],
+          "disclaimer": "Exploratives Konzept. Kein endgültiges Angebot, keine Genehmigung und kein veröffentlichtes Produkt."
+        }
+      },
+      "title": "Anmeldung Sprachschule",
+      "summary": "Ermöglichen Sie Schülern, sich über WhatsApp für Sprachkurse anzumelden, indem Sie Kurse erklären, Gruppen auswählen und Anmeldungen bestätigen.",
+      "languageReviewRequired": true,
+      "replayedSameJob": true,
+      "reviewMs": 896,
+      "reviewedConcept": {
+        "conceptRef": "concept_5b44b2ee-0c04-4763-b1ae-0f1b10707f73",
+        "version": 2,
+        "briefVersion": 1,
+        "locale": "de-DE",
+        "content": {
+          "schemaVersion": "1.0",
+          "title": "Anmeldung Sprachschule",
+          "summary": "Ermöglichen Sie Schülern, sich über WhatsApp für Sprachkurse anzumelden, indem Sie Kurse erklären, Gruppen auswählen und Anmeldungen bestätigen.",
+          "hypothesis": "Die Schüler sind bereits mit WhatsApp vertraut und nutzen es bevorzugt für die Kommunikation. Die Sprachschule hat ein aktuelles Kursangebot, das klar kommuniziert werden kann.",
+          "roles": [
+            "Schüler",
+            "Lehrer",
+            "Administrativer Mitarbeiter"
+          ],
+          "screens": [
+            {
+              "id": "course-explanation",
+              "title": "Kursübersicht",
+              "description": "Hier können Schüler die verfügbaren Sprachkurse einsehen und sich über Inhalte und Zeitpläne informieren.",
+              "items": [
+                {
+                  "label": "Kurs A",
+                  "value": "Intensivkurs Deutsch, 3x pro Woche"
+                },
+                {
+                  "label": "Kurs B",
+                  "value": "Konversationskurs Englisch, 2x pro Woche"
+                },
+                {
+                  "label": "Kurs C",
+                  "value": "Business-Englisch, 1x pro Woche"
+                }
+              ],
+              "action": {
+                "label": "Gruppe auswählen",
+                "nextScreenId": "group-selection"
+              }
+            },
+            {
+              "id": "group-selection",
+              "title": "Gruppenauswahl",
+              "description": "Wählen Sie eine Gruppe für den gewünschten Kurs aus.",
+              "items": [
+                {
+                  "label": "Gruppe 1",
+                  "value": "Montag und Mittwoch, 18:00 - 20:00"
+                },
+                {
+                  "label": "Gruppe 2",
+                  "value": "Dienstag und Donnerstag, 19:00 - 21:00"
+                },
+                {
+                  "label": "Gruppe 3",
+                  "value": "Freitag, 16:00 - 18:00"
+                }
+              ],
+              "action": {
+                "label": "Anmeldung bestätigen",
+                "nextScreenId": "confirmation"
+              }
+            },
+            {
+              "id": "confirmation",
+              "title": "Anmeldung Bestätigung",
+              "description": "Bestätigen Sie Ihre Anmeldung für den ausgewählten Kurs und die Gruppe.",
+              "items": [
+                {
+                  "label": "Kurs",
+                  "value": "Intensivkurs Deutsch"
+                },
+                {
+                  "label": "Gruppe",
+                  "value": "Montag und Mittwoch, 18:00 - 20:00"
+                },
+                {
+                  "label": "Bestätigung",
+                  "value": "Vielen Dank für Ihre Anmeldung!"
+                }
+              ],
+              "action": {
+                "label": "Bestätigung senden",
+                "nextScreenId": null
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "slug": "wpp",
+              "role": "Hauptkommunikationskanal für Anmeldungen"
+            },
+            {
+              "slug": "email",
+              "role": "Benachrichtigungen nach Anmeldung"
+            }
+          ],
+          "journey": [
+            {
+              "id": "step1",
+              "label": "Kursübersicht anzeigen",
+              "description": "Schüler sehen die Kursübersicht und wählen einen Kurs aus.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "step2",
+              "label": "Gruppe auswählen",
+              "description": "Schüler wählen die gewünschte Gruppe für den Kurs aus.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "step3",
+              "label": "Anmeldung bestätigen",
+              "description": "Schüler bestätigen ihre Anmeldung und erhalten eine Bestätigung.",
+              "blockSlugs": [
+                "email"
+              ],
+              "humanReview": true
+            }
+          ],
+          "limitations": [
+            "Die Schüler müssen über WhatsApp erreichbar sein.",
+            "Die Kursverfügbarkeit kann variieren.",
+            "Es wird keine persönliche Beratung angeboten.",
+            "Die Bestätigung erfolgt ausschließlich über WhatsApp."
+          ],
+          "disclaimer": "Exploratives Konzept. Kein endgültiges Angebot, keine Genehmigung und kein veröffentlichtes Produkt."
+        }
+      },
+      "reviewReplayedSameJob": true,
+      "deterministicReviewWithoutInference": true,
+      "syntheticSessionRemoved": true
+    },
+    {
+      "locale": "es-ES",
+      "phase": "complete",
+      "passed": true,
+      "idea": "Quiero inscribir alumnos en una escuela de idiomas por WhatsApp: informar sobre los cursos, elegir un grupo y confirmar la inscripción. Es una prueba ficticia, sin enviar mensajes ni ejecutar operaciones reales.",
+      "email": "locale-es-es-b16f36f6@example.invalid",
+      "phone": "+12025550104",
+      "requests": [
+        {
+          "route": "sessions",
+          "method": "POST",
+          "status": 201,
+          "elapsedMs": 599,
+          "requestId": "8db9e3b2-cfe2-4da8-b8ea-99bc0688293a"
+        },
+        {
+          "route": "lab/briefing",
+          "method": "POST",
+          "status": 200,
+          "elapsedMs": 1757,
+          "requestId": "d08402c1-1466-4b8a-8415-bfad4e37ff58"
+        },
+        {
+          "route": "identity",
+          "method": "POST",
+          "status": 201,
+          "elapsedMs": 831,
+          "requestId": "f6bc2110-7cbf-4d8f-b023-e9c1b638fdd2"
+        },
+        {
+          "route": "contact",
+          "method": "POST",
+          "status": 200,
+          "elapsedMs": 1167,
+          "requestId": "a35692ce-02c1-4078-95ad-0d874d9443e7"
+        },
+        {
+          "route": "concepts",
+          "method": "POST",
+          "status": 202,
+          "elapsedMs": 12634,
+          "requestId": "f6f9fae5-8d46-4e62-9280-0130dc5d65f3"
+        },
+        {
+          "route": "jobs/job_04907fde-101e-4a0d-8924-32490dbf0782",
+          "method": "GET",
+          "status": 200,
+          "elapsedMs": 445,
+          "requestId": "50383d28-ef14-48c7-bc3d-55d185eef9d4"
+        },
+        {
+          "route": "session",
+          "method": "GET",
+          "status": 200,
+          "elapsedMs": 676,
+          "requestId": "ad195874-1135-4bab-b9ac-5ab541af3bbe"
+        },
+        {
+          "route": "concepts",
+          "method": "POST",
+          "status": 202,
+          "elapsedMs": 789,
+          "requestId": "ce82fc25-5101-479a-b647-d18b43970219"
+        },
+        {
+          "route": "concepts/concept_530daa46-b1b1-4423-9bd4-6f17ac4c7fd6/revisions",
+          "method": "POST",
+          "status": 202,
+          "elapsedMs": 887,
+          "requestId": "7134897f-389f-4d07-ad91-fc0bc10f2c89"
+        },
+        {
+          "route": "jobs/job_9490dc6f-45d6-4f64-9f51-bbf7589207ce",
+          "method": "GET",
+          "status": 200,
+          "elapsedMs": 399,
+          "requestId": "b12357eb-10fd-48de-8992-34856fc7d239"
+        },
+        {
+          "route": "concepts/concept_530daa46-b1b1-4423-9bd4-6f17ac4c7fd6/revisions",
+          "method": "POST",
+          "status": 202,
+          "elapsedMs": 804,
+          "requestId": "844c9bbf-168f-42a9-be39-67e786f1fee4"
+        },
+        {
+          "route": "session",
+          "method": "GET",
+          "status": 200,
+          "elapsedMs": 471,
+          "requestId": "7a9863c2-d0d5-438b-b5f3-4bb42bcf4850"
+        }
+      ],
+      "generationMs": 12708,
+      "initialConcept": {
+        "conceptRef": "concept_530daa46-b1b1-4423-9bd4-6f17ac4c7fd6",
+        "version": 1,
+        "briefVersion": 1,
+        "locale": "es-ES",
+        "content": {
+          "schemaVersion": "1.0",
+          "title": "Inscripción de Alumnos",
+          "summary": "Proceso para inscribir alumnos en una escuela de idiomas a través de WhatsApp, incluyendo información sobre cursos y selección de grupos.",
+          "hypothesis": "Se asume que el público objetivo son personas interesadas en aprender idiomas que prefieren comunicarse vía WhatsApp.",
+          "roles": [
+            "Estudiante interesado",
+            "Asesor de inscripción",
+            "Administrador de cursos"
+          ],
+          "screens": [
+            {
+              "id": "informacion-cursos",
+              "title": "Información de Cursos",
+              "description": "Lista de cursos disponibles con detalles como horarios y precios.",
+              "items": [
+                {
+                  "label": "Curso de Inglés",
+                  "value": "Inglés básico, intermedio y avanzado, 2 veces por semana."
+                },
+                {
+                  "label": "Curso de Español",
+                  "value": "Español conversacional, 3 veces por semana."
+                },
+                {
+                  "label": "Curso de Francés",
+                  "value": "Francés inicial, 1 vez por semana."
+                }
+              ],
+              "action": {
+                "label": "Seleccionar Curso",
+                "nextScreenId": "seleccion-grupo"
+              }
+            },
+            {
+              "id": "seleccion-grupo",
+              "title": "Selección de Grupo",
+              "description": "Elige un grupo para el curso seleccionado.",
+              "items": [
+                {
+                  "label": "Grupo A",
+                  "value": "Lunes y Miércoles, 18:00 - 20:00."
+                },
+                {
+                  "label": "Grupo B",
+                  "value": "Martes y Jueves, 19:00 - 21:00."
+                },
+                {
+                  "label": "Grupo C",
+                  "value": "Sábados, 10:00 - 12:00."
+                }
+              ],
+              "action": {
+                "label": "Confirmar Inscripción",
+                "nextScreenId": null
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "slug": "wpp",
+              "role": "Canal principal de ventas"
+            },
+            {
+              "slug": "email",
+              "role": "Notificaciones de confirmación"
+            }
+          ],
+          "journey": [
+            {
+              "id": "inicio",
+              "label": "Inicio del Proceso",
+              "description": "El estudiante inicia el contacto por WhatsApp para obtener información sobre los cursos.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "informar-cursos",
+              "label": "Informar sobre Cursos",
+              "description": "El asesor envía información sobre los cursos disponibles a través de WhatsApp.",
+              "blockSlugs": [
+                "wpp",
+                "email"
+              ],
+              "humanReview": true
+            },
+            {
+              "id": "seleccion-grupo",
+              "label": "Selección de Grupo",
+              "description": "El estudiante selecciona el grupo para el curso elegido.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "confirmacion-inscripcion",
+              "label": "Confirmación de Inscripción",
+              "description": "El asesor confirma la inscripción del estudiante y envía un correo de confirmación.",
+              "blockSlugs": [
+                "wpp",
+                "email"
+              ],
+              "humanReview": true
+            }
+          ],
+          "limitations": [
+            "No se pueden enviar mensajes reales a través del sistema.",
+            "El proceso depende de la disponibilidad de grupos y cursos.",
+            "La comunicación está limitada a WhatsApp y correo electrónico.",
+            "No incluye pagos ni gestión de facturas."
+          ],
+          "disclaimer": "Concepto exploratorio. No constituye una propuesta final, una aprobación ni un producto publicado."
+        }
+      },
+      "title": "Inscripción de Alumnos",
+      "summary": "Proceso para inscribir alumnos en una escuela de idiomas a través de WhatsApp, incluyendo información sobre cursos y selección de grupos.",
+      "languageReviewRequired": true,
+      "replayedSameJob": true,
+      "reviewMs": 889,
+      "reviewedConcept": {
+        "conceptRef": "concept_530daa46-b1b1-4423-9bd4-6f17ac4c7fd6",
+        "version": 2,
+        "briefVersion": 1,
+        "locale": "es-ES",
+        "content": {
+          "schemaVersion": "1.0",
+          "title": "Inscripción de Alumnos",
+          "summary": "Proceso para inscribir alumnos en una escuela de idiomas a través de WhatsApp, incluyendo información sobre cursos y selección de grupos.",
+          "hypothesis": "Se asume que el público objetivo son personas interesadas en aprender idiomas que prefieren comunicarse vía WhatsApp.",
+          "roles": [
+            "Estudiante interesado",
+            "Asesor de inscripción",
+            "Administrador de cursos"
+          ],
+          "screens": [
+            {
+              "id": "informacion-cursos",
+              "title": "Información de Cursos",
+              "description": "Lista de cursos disponibles con detalles como horarios y precios.",
+              "items": [
+                {
+                  "label": "Curso de Inglés",
+                  "value": "Inglés básico, intermedio y avanzado, 2 veces por semana."
+                },
+                {
+                  "label": "Curso de Español",
+                  "value": "Español conversacional, 3 veces por semana."
+                },
+                {
+                  "label": "Curso de Francés",
+                  "value": "Francés inicial, 1 vez por semana."
+                }
+              ],
+              "action": {
+                "label": "Seleccionar Curso",
+                "nextScreenId": "seleccion-grupo"
+              }
+            },
+            {
+              "id": "seleccion-grupo",
+              "title": "Selección de Grupo",
+              "description": "Elige un grupo para el curso seleccionado.",
+              "items": [
+                {
+                  "label": "Grupo A",
+                  "value": "Lunes y Miércoles, 18:00 - 20:00."
+                },
+                {
+                  "label": "Grupo B",
+                  "value": "Martes y Jueves, 19:00 - 21:00."
+                },
+                {
+                  "label": "Grupo C",
+                  "value": "Sábados, 10:00 - 12:00."
+                }
+              ],
+              "action": {
+                "label": "Confirmar Inscripción",
+                "nextScreenId": null
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "slug": "wpp",
+              "role": "Canal principal de ventas"
+            },
+            {
+              "slug": "email",
+              "role": "Notificaciones de confirmación"
+            }
+          ],
+          "journey": [
+            {
+              "id": "inicio",
+              "label": "Inicio del Proceso",
+              "description": "El estudiante inicia el contacto por WhatsApp para obtener información sobre los cursos.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "informar-cursos",
+              "label": "Informar sobre Cursos",
+              "description": "El asesor envía información sobre los cursos disponibles a través de WhatsApp.",
+              "blockSlugs": [
+                "wpp",
+                "email"
+              ],
+              "humanReview": true
+            },
+            {
+              "id": "seleccion-grupo",
+              "label": "Selección de Grupo",
+              "description": "El estudiante selecciona el grupo para el curso elegido.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "confirmacion-inscripcion",
+              "label": "Confirmación de Inscripción",
+              "description": "El asesor confirma la inscripción del estudiante y envía un correo de confirmación.",
+              "blockSlugs": [
+                "wpp",
+                "email"
+              ],
+              "humanReview": true
+            }
+          ],
+          "limitations": [
+            "No se pueden enviar mensajes reales a través del sistema.",
+            "El proceso depende de la disponibilidad de grupos y cursos.",
+            "La comunicación está limitada a WhatsApp y correo electrónico.",
+            "No incluye pagos ni gestión de facturas."
+          ],
+          "disclaimer": "Concepto exploratorio. No constituye una propuesta final, una aprobación ni un producto publicado."
+        }
+      },
+      "reviewReplayedSameJob": true,
+      "deterministicReviewWithoutInference": true,
+      "syntheticSessionRemoved": true
+    },
+    {
+      "locale": "da-DK",
+      "phase": "complete",
+      "passed": true,
+      "idea": "Jeg vil tilmelde elever til en sprogskole via WhatsApp: forklare kurserne, vælge et hold og bekræfte tilmeldingen. Dette er en fiktiv test uden at sende beskeder eller udføre virkelige handlinger.",
+      "email": "locale-da-dk-b16f36f6@example.invalid",
+      "phone": "+12025550105",
+      "requests": [
+        {
+          "route": "sessions",
+          "method": "POST",
+          "status": 201,
+          "elapsedMs": 651,
+          "requestId": "9741d971-fe8e-4a5f-8769-8aee3bc332b9"
+        },
+        {
+          "route": "lab/briefing",
+          "method": "POST",
+          "status": 200,
+          "elapsedMs": 1378,
+          "requestId": "0ed26656-8b29-41d6-bb12-d0ae95b99593"
+        },
+        {
+          "route": "identity",
+          "method": "POST",
+          "status": 201,
+          "elapsedMs": 693,
+          "requestId": "eb56fd8f-7fe2-4620-9e06-253b2fedf919"
+        },
+        {
+          "route": "contact",
+          "method": "POST",
+          "status": 200,
+          "elapsedMs": 717,
+          "requestId": "f1fc7462-295e-4c39-98ea-42e8b0629792"
+        },
+        {
+          "route": "concepts",
+          "method": "POST",
+          "status": 202,
+          "elapsedMs": 13747,
+          "requestId": "317deb17-3894-422c-b4dd-4b9e6731d663"
+        },
+        {
+          "route": "jobs/job_c006433e-78dd-46cd-ae52-f674830ce873",
+          "method": "GET",
+          "status": 200,
+          "elapsedMs": 655,
+          "requestId": "56714a76-3adf-4a97-8bbb-7fb642ec033b"
+        },
+        {
+          "route": "session",
+          "method": "GET",
+          "status": 200,
+          "elapsedMs": 372,
+          "requestId": "f46e8607-548d-4a03-90f0-675af2cfbde7"
+        },
+        {
+          "route": "concepts",
+          "method": "POST",
+          "status": 202,
+          "elapsedMs": 616,
+          "requestId": "b7be6eaf-d2b0-4365-b1f1-2284b5256694"
+        },
+        {
+          "route": "concepts/concept_1adb1499-bb23-461c-be45-b7170f4580e5/revisions",
+          "method": "POST",
+          "status": 202,
+          "elapsedMs": 792,
+          "requestId": "86af2212-e9da-44ae-95b6-83d8c20c8469"
+        },
+        {
+          "route": "jobs/job_f99e5b40-44e5-4208-afad-65685dff9997",
+          "method": "GET",
+          "status": 200,
+          "elapsedMs": 751,
+          "requestId": "1193ecdf-a2af-4c6d-82db-1127c30fc0bf"
+        },
+        {
+          "route": "concepts/concept_1adb1499-bb23-461c-be45-b7170f4580e5/revisions",
+          "method": "POST",
+          "status": 202,
+          "elapsedMs": 479,
+          "requestId": "ebdbede9-843e-42eb-be11-40151fd6bc4d"
+        },
+        {
+          "route": "session",
+          "method": "GET",
+          "status": 200,
+          "elapsedMs": 371,
+          "requestId": "bed25095-b857-4194-9727-d6a74a1f0366"
+        }
+      ],
+      "generationMs": 13868,
+      "initialConcept": {
+        "conceptRef": "concept_1adb1499-bb23-461c-be45-b7170f4580e5",
+        "version": 1,
+        "briefVersion": 1,
+        "locale": "da-DK",
+        "content": {
+          "schemaVersion": "1.0",
+          "title": "Tilmelding til Sprogskole",
+          "summary": "En platform til tilmelding af elever til sprogkurser via WhatsApp, der forklarer kurser, vælger hold og bekræfter tilmeldinger.",
+          "hypothesis": "Målgruppen for platformen er studerende, der ønsker at lære sprog, men som ikke er bekendt med tilmeldingsprocessen. Derudover vil vi undersøge brugen af WhatsApp som et effektivt kommunikationsværktøj.",
+          "roles": [
+            "Studerende",
+            "Kursusrådgiver",
+            "Administrator"
+          ],
+          "screens": [
+            {
+              "id": "screen1",
+              "title": "Kursusoversigt",
+              "description": "Viser en liste over tilgængelige sprogkurser med beskrivelse og varighed.",
+              "items": [
+                {
+                  "label": "Kursusnavn",
+                  "value": "Engelsk A1"
+                },
+                {
+                  "label": "Varighed",
+                  "value": "3 måneder"
+                },
+                {
+                  "label": "Pris",
+                  "value": "1.200 DKK"
+                }
+              ],
+              "action": {
+                "label": "Vælg kursus",
+                "nextScreenId": "screen2"
+              }
+            },
+            {
+              "id": "screen2",
+              "title": "Holdvalg",
+              "description": "Vælg et hold for det valgte kursus baseret på tilgængelighed.",
+              "items": [
+                {
+                  "label": "Hold",
+                  "value": "Mandag og Onsdag 18:00 - 20:00"
+                },
+                {
+                  "label": "Ledige pladser",
+                  "value": "5"
+                },
+                {
+                  "label": "Startdato",
+                  "value": "01-11-2026"
+                }
+              ],
+              "action": {
+                "label": "Bekræft tilmelding",
+                "nextScreenId": "screen3"
+              }
+            },
+            {
+              "id": "screen3",
+              "title": "Bekræftelse",
+              "description": "Viser en opsummering af tilmeldingen og beder om bekræftelse.",
+              "items": [
+                {
+                  "label": "Kursus",
+                  "value": "Engelsk A1"
+                },
+                {
+                  "label": "Hold",
+                  "value": "Mandag og Onsdag 18:00 - 20:00"
+                },
+                {
+                  "label": "Total pris",
+                  "value": "1.200 DKK"
+                }
+              ],
+              "action": {
+                "label": "Send tilmelding",
+                "nextScreenId": null
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "slug": "wpp",
+              "role": "Hovedkommunikationskanal"
+            },
+            {
+              "slug": "email",
+              "role": "Notifikationer ved tilmelding"
+            }
+          ],
+          "journey": [
+            {
+              "id": "step1",
+              "label": "Kursusvalg",
+              "description": "Bruger vælger et kursus fra kursusoversigten.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "step2",
+              "label": "Holdvalg",
+              "description": "Bruger vælger et hold og ser tilgængelighed.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "step3",
+              "label": "Bekræftelse",
+              "description": "Bruger bekræfter tilmeldingen og modtager en notifikation.",
+              "blockSlugs": [
+                "email"
+              ],
+              "humanReview": true
+            }
+          ],
+          "limitations": [
+            "Platformen er kun tilgængelig for elever, der bruger WhatsApp.",
+            "Kurserne er begrænset til dem, der tilbydes af skolen.",
+            "Systemet kræver internetadgang for at fungere.",
+            "Ingen dataopbevaring efter tilmeldingen."
+          ],
+          "disclaimer": "Undersøgende koncept. Dette er ikke et endeligt tilbud, en godkendelse eller et offentliggjort produkt."
+        }
+      },
+      "title": "Tilmelding til Sprogskole",
+      "summary": "En platform til tilmelding af elever til sprogkurser via WhatsApp, der forklarer kurser, vælger hold og bekræfter tilmeldinger.",
+      "languageReviewRequired": true,
+      "replayedSameJob": true,
+      "reviewMs": 805,
+      "reviewedConcept": {
+        "conceptRef": "concept_1adb1499-bb23-461c-be45-b7170f4580e5",
+        "version": 2,
+        "briefVersion": 1,
+        "locale": "da-DK",
+        "content": {
+          "schemaVersion": "1.0",
+          "title": "Tilmelding til Sprogskole",
+          "summary": "En platform til tilmelding af elever til sprogkurser via WhatsApp, der forklarer kurser, vælger hold og bekræfter tilmeldinger.",
+          "hypothesis": "Målgruppen for platformen er studerende, der ønsker at lære sprog, men som ikke er bekendt med tilmeldingsprocessen. Derudover vil vi undersøge brugen af WhatsApp som et effektivt kommunikationsværktøj.",
+          "roles": [
+            "Studerende",
+            "Kursusrådgiver",
+            "Administrator"
+          ],
+          "screens": [
+            {
+              "id": "screen1",
+              "title": "Kursusoversigt",
+              "description": "Viser en liste over tilgængelige sprogkurser med beskrivelse og varighed.",
+              "items": [
+                {
+                  "label": "Kursusnavn",
+                  "value": "Engelsk A1"
+                },
+                {
+                  "label": "Varighed",
+                  "value": "3 måneder"
+                },
+                {
+                  "label": "Pris",
+                  "value": "1.200 DKK"
+                }
+              ],
+              "action": {
+                "label": "Vælg kursus",
+                "nextScreenId": "screen2"
+              }
+            },
+            {
+              "id": "screen2",
+              "title": "Holdvalg",
+              "description": "Vælg et hold for det valgte kursus baseret på tilgængelighed.",
+              "items": [
+                {
+                  "label": "Hold",
+                  "value": "Mandag og Onsdag 18:00 - 20:00"
+                },
+                {
+                  "label": "Ledige pladser",
+                  "value": "5"
+                },
+                {
+                  "label": "Startdato",
+                  "value": "01-11-2026"
+                }
+              ],
+              "action": {
+                "label": "Bekræft tilmelding",
+                "nextScreenId": "screen3"
+              }
+            },
+            {
+              "id": "screen3",
+              "title": "Bekræftelse",
+              "description": "Viser en opsummering af tilmeldingen og beder om bekræftelse.",
+              "items": [
+                {
+                  "label": "Kursus",
+                  "value": "Engelsk A1"
+                },
+                {
+                  "label": "Hold",
+                  "value": "Mandag og Onsdag 18:00 - 20:00"
+                },
+                {
+                  "label": "Total pris",
+                  "value": "1.200 DKK"
+                }
+              ],
+              "action": {
+                "label": "Send tilmelding",
+                "nextScreenId": null
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "slug": "wpp",
+              "role": "Hovedkommunikationskanal"
+            },
+            {
+              "slug": "email",
+              "role": "Notifikationer ved tilmelding"
+            }
+          ],
+          "journey": [
+            {
+              "id": "step1",
+              "label": "Kursusvalg",
+              "description": "Bruger vælger et kursus fra kursusoversigten.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "step2",
+              "label": "Holdvalg",
+              "description": "Bruger vælger et hold og ser tilgængelighed.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "step3",
+              "label": "Bekræftelse",
+              "description": "Bruger bekræfter tilmeldingen og modtager en notifikation.",
+              "blockSlugs": [
+                "email"
+              ],
+              "humanReview": true
+            }
+          ],
+          "limitations": [
+            "Platformen er kun tilgængelig for elever, der bruger WhatsApp.",
+            "Kurserne er begrænset til dem, der tilbydes af skolen.",
+            "Systemet kræver internetadgang for at fungere.",
+            "Ingen dataopbevaring efter tilmeldingen."
+          ],
+          "disclaimer": "Undersøgende koncept. Dette er ikke et endeligt tilbud, en godkendelse eller et offentliggjort produkt."
+        }
+      },
+      "reviewReplayedSameJob": true,
+      "deterministicReviewWithoutInference": true,
+      "syntheticSessionRemoved": true
+    },
+    {
+      "locale": "nl-NL",
+      "phase": "complete",
+      "passed": true,
+      "idea": "Ik wil leerlingen via WhatsApp bij een taalschool inschrijven: cursussen uitleggen, een groep kiezen en de inschrijving bevestigen. Dit is een fictieve test zonder berichten te versturen of echte handelingen uit te voeren.",
+      "email": "locale-nl-nl-b16f36f6@example.invalid",
+      "phone": "+12025550106",
+      "requests": [
+        {
+          "route": "sessions",
+          "method": "POST",
+          "status": 201,
+          "elapsedMs": 460,
+          "requestId": "47e041d8-4d85-4212-b2da-2d8eae6c1861"
+        },
+        {
+          "route": "lab/briefing",
+          "method": "POST",
+          "status": 200,
+          "elapsedMs": 991,
+          "requestId": "bc8c722a-0222-4295-a1d9-59ab32885a90"
+        },
+        {
+          "route": "identity",
+          "method": "POST",
+          "status": 201,
+          "elapsedMs": 936,
+          "requestId": "002f2751-bd10-4bc3-b7d0-15e1b6592c6c"
+        },
+        {
+          "route": "contact",
+          "method": "POST",
+          "status": 200,
+          "elapsedMs": 1168,
+          "requestId": "2c225f13-b22a-4771-843e-a1b955cfcc5b"
+        },
+        {
+          "route": "concepts",
+          "method": "POST",
+          "status": 202,
+          "elapsedMs": 11109,
+          "requestId": "79f77f89-494a-48df-812c-3c48d8488d12"
+        },
+        {
+          "route": "jobs/job_9fa244ba-6ef9-42c7-815b-7ec2f9c106b1",
+          "method": "GET",
+          "status": 200,
+          "elapsedMs": 928,
+          "requestId": "f5d53bff-6029-4394-bee3-1c287503fe70"
+        },
+        {
+          "route": "session",
+          "method": "GET",
+          "status": 200,
+          "elapsedMs": 690,
+          "requestId": "97aae121-58f7-40f1-961d-3bb0798f7326"
+        },
+        {
+          "route": "concepts",
+          "method": "POST",
+          "status": 202,
+          "elapsedMs": 643,
+          "requestId": "d776cd0a-e01a-41b3-93f4-62aed85b9f85"
+        },
+        {
+          "route": "concepts/concept_e174688a-3622-4efc-82b2-651d90f92f88/revisions",
+          "method": "POST",
+          "status": 202,
+          "elapsedMs": 1667,
+          "requestId": "2bd1fdc8-2eb7-4dcd-b8fe-4fcf5cc2bdd5"
+        },
+        {
+          "route": "jobs/job_c8ae4d9e-3966-4353-8aab-08d7f18d3340",
+          "method": "GET",
+          "status": 200,
+          "elapsedMs": 639,
+          "requestId": "d0244c68-0f5c-4d00-a13d-c65de892b80a"
+        },
+        {
+          "route": "concepts/concept_e174688a-3622-4efc-82b2-651d90f92f88/revisions",
+          "method": "POST",
+          "status": 202,
+          "elapsedMs": 676,
+          "requestId": "531f4600-c9d5-4e84-b568-0e65e9aef515"
+        },
+        {
+          "route": "session",
+          "method": "GET",
+          "status": 200,
+          "elapsedMs": 603,
+          "requestId": "90349706-eb5a-4503-949f-dbd5d6b9f760"
+        }
+      ],
+      "generationMs": 11113,
+      "initialConcept": {
+        "conceptRef": "concept_e174688a-3622-4efc-82b2-651d90f92f88",
+        "version": 1,
+        "briefVersion": 1,
+        "locale": "nl-NL",
+        "content": {
+          "schemaVersion": "1.0",
+          "title": "Inschrijving Taalcursussen",
+          "summary": "Schrijf leerlingen in voor taalcursussen via WhatsApp, met uitleg over cursussen en groepskeuze.",
+          "hypothesis": "De doelgroep bestaat uit leerlingen die geïnteresseerd zijn in taalonderwijs en voorkeur geven aan communicatie via WhatsApp.",
+          "roles": [
+            "Leerling",
+            "Docent",
+            "Administratie"
+          ],
+          "screens": [
+            {
+              "id": "screen1",
+              "title": "Cursus Uitleg",
+              "description": "Een overzicht van beschikbare taal cursussen en hun details.",
+              "items": [
+                {
+                  "label": "Cursusnaam",
+                  "value": "Engels voor Beginners"
+                },
+                {
+                  "label": "Duur",
+                  "value": "8 weken"
+                },
+                {
+                  "label": "Startdatum",
+                  "value": "1 november 2026"
+                }
+              ],
+              "action": {
+                "label": "Volgende",
+                "nextScreenId": "screen2"
+              }
+            },
+            {
+              "id": "screen2",
+              "title": "Groep Keuze",
+              "description": "Kies de groep waarin je je wilt inschrijven.",
+              "items": [
+                {
+                  "label": "Groep A",
+                  "value": "10:00 - 12:00"
+                },
+                {
+                  "label": "Groep B",
+                  "value": "14:00 - 16:00"
+                },
+                {
+                  "label": "Groep C",
+                  "value": "18:00 - 20:00"
+                }
+              ],
+              "action": {
+                "label": "Bevestigen",
+                "nextScreenId": "screen3"
+              }
+            },
+            {
+              "id": "screen3",
+              "title": "Bevestiging",
+              "description": "Bevestig je inschrijving voor de gekozen cursus en groep.",
+              "items": [
+                {
+                  "label": "Cursus",
+                  "value": "Engels voor Beginners"
+                },
+                {
+                  "label": "Groep",
+                  "value": "Groep A"
+                },
+                {
+                  "label": "Startdatum",
+                  "value": "1 november 2026"
+                }
+              ],
+              "action": {
+                "label": "Inschrijven",
+                "nextScreenId": null
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "slug": "wpp",
+              "role": "Hoofd communicatiemiddel voor inschrijvingen"
+            },
+            {
+              "slug": "email",
+              "role": "Notificaties na inschrijving"
+            }
+          ],
+          "journey": [
+            {
+              "id": "step1",
+              "label": "Cursus Uitleg",
+              "description": "De leerling ontvangt informatie over de beschikbare cursussen via WhatsApp.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "step2",
+              "label": "Groep Keuze",
+              "description": "De leerling kiest een groep en bevestigt de keuze.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "step3",
+              "label": "Bevestiging",
+              "description": "De leerling ontvangt een bevestiging van zijn inschrijving via e-mail.",
+              "blockSlugs": [
+                "email"
+              ],
+              "humanReview": true
+            }
+          ],
+          "limitations": [
+            "Communicatie alleen via WhatsApp en e-mail.",
+            "Geen mogelijkheid voor telefonische inschrijvingen.",
+            "Bevestiging van inschrijving is afhankelijk van menselijke controle."
+          ],
+          "disclaimer": "Verkennend concept. Dit is geen definitief voorstel, goedkeuring of gepubliceerd product."
+        }
+      },
+      "title": "Inschrijving Taalcursussen",
+      "summary": "Schrijf leerlingen in voor taalcursussen via WhatsApp, met uitleg over cursussen en groepskeuze.",
+      "languageReviewRequired": true,
+      "replayedSameJob": true,
+      "reviewMs": 1736,
+      "reviewedConcept": {
+        "conceptRef": "concept_e174688a-3622-4efc-82b2-651d90f92f88",
+        "version": 2,
+        "briefVersion": 1,
+        "locale": "nl-NL",
+        "content": {
+          "schemaVersion": "1.0",
+          "title": "Inschrijving Taalcursussen",
+          "summary": "Schrijf leerlingen in voor taalcursussen via WhatsApp, met uitleg over cursussen en groepskeuze.",
+          "hypothesis": "De doelgroep bestaat uit leerlingen die geïnteresseerd zijn in taalonderwijs en voorkeur geven aan communicatie via WhatsApp.",
+          "roles": [
+            "Leerling",
+            "Docent",
+            "Administratie"
+          ],
+          "screens": [
+            {
+              "id": "screen1",
+              "title": "Cursus Uitleg",
+              "description": "Een overzicht van beschikbare taal cursussen en hun details.",
+              "items": [
+                {
+                  "label": "Cursusnaam",
+                  "value": "Engels voor Beginners"
+                },
+                {
+                  "label": "Duur",
+                  "value": "8 weken"
+                },
+                {
+                  "label": "Startdatum",
+                  "value": "1 november 2026"
+                }
+              ],
+              "action": {
+                "label": "Volgende",
+                "nextScreenId": "screen2"
+              }
+            },
+            {
+              "id": "screen2",
+              "title": "Groep Keuze",
+              "description": "Kies de groep waarin je je wilt inschrijven.",
+              "items": [
+                {
+                  "label": "Groep A",
+                  "value": "10:00 - 12:00"
+                },
+                {
+                  "label": "Groep B",
+                  "value": "14:00 - 16:00"
+                },
+                {
+                  "label": "Groep C",
+                  "value": "18:00 - 20:00"
+                }
+              ],
+              "action": {
+                "label": "Bevestigen",
+                "nextScreenId": "screen3"
+              }
+            },
+            {
+              "id": "screen3",
+              "title": "Bevestiging",
+              "description": "Bevestig je inschrijving voor de gekozen cursus en groep.",
+              "items": [
+                {
+                  "label": "Cursus",
+                  "value": "Engels voor Beginners"
+                },
+                {
+                  "label": "Groep",
+                  "value": "Groep A"
+                },
+                {
+                  "label": "Startdatum",
+                  "value": "1 november 2026"
+                }
+              ],
+              "action": {
+                "label": "Inschrijven",
+                "nextScreenId": null
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "slug": "wpp",
+              "role": "Hoofd communicatiemiddel voor inschrijvingen"
+            },
+            {
+              "slug": "email",
+              "role": "Notificaties na inschrijving"
+            }
+          ],
+          "journey": [
+            {
+              "id": "step1",
+              "label": "Cursus Uitleg",
+              "description": "De leerling ontvangt informatie over de beschikbare cursussen via WhatsApp.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "step2",
+              "label": "Groep Keuze",
+              "description": "De leerling kiest een groep en bevestigt de keuze.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "step3",
+              "label": "Bevestiging",
+              "description": "De leerling ontvangt een bevestiging van zijn inschrijving via e-mail.",
+              "blockSlugs": [
+                "email"
+              ],
+              "humanReview": true
+            }
+          ],
+          "limitations": [
+            "Communicatie alleen via WhatsApp en e-mail.",
+            "Geen mogelijkheid voor telefonische inschrijvingen.",
+            "Bevestiging van inschrijving is afhankelijk van menselijke controle."
+          ],
+          "disclaimer": "Verkennend concept. Dit is geen definitief voorstel, goedkeuring of gepubliceerd product."
+        }
+      },
+      "reviewReplayedSameJob": true,
+      "deterministicReviewWithoutInference": true,
+      "syntheticSessionRemoved": true
+    },
+    {
+      "locale": "fr-FR",
+      "phase": "complete",
+      "passed": true,
+      "idea": "Je souhaite inscrire des élèves à une école de langues via WhatsApp : présenter les cours, choisir un groupe et confirmer l’inscription. Il s’agit d’un test fictif, sans envoyer de messages ni réaliser d’opérations réelles.",
+      "email": "locale-fr-fr-b16f36f6@example.invalid",
+      "phone": "+12025550107",
+      "requests": [
+        {
+          "route": "sessions",
+          "method": "POST",
+          "status": 201,
+          "elapsedMs": 685,
+          "requestId": "4d7fe537-b3d4-419e-9c50-181b12f15db0"
+        },
+        {
+          "route": "lab/briefing",
+          "method": "POST",
+          "status": 200,
+          "elapsedMs": 743,
+          "requestId": "4639d0b4-4c07-433d-8271-b79a3653c4a1"
+        },
+        {
+          "route": "identity",
+          "method": "POST",
+          "status": 201,
+          "elapsedMs": 1060,
+          "requestId": "df4f979e-ddd2-4381-ad14-f719a93e3b1e"
+        },
+        {
+          "route": "contact",
+          "method": "POST",
+          "status": 200,
+          "elapsedMs": 870,
+          "requestId": "b3e14fd0-9f4c-471d-bded-3070cd99bfd1"
+        },
+        {
+          "route": "concepts",
+          "method": "POST",
+          "status": 202,
+          "elapsedMs": 19595,
+          "requestId": "9137dc57-80c1-43f2-bb36-c13296200559"
+        },
+        {
+          "route": "jobs/job_9288163c-b001-4a36-a988-d698750e5f6b",
+          "method": "GET",
+          "status": 200,
+          "elapsedMs": 945,
+          "requestId": "833de510-6a0d-451b-9025-31043c09af50"
+        },
+        {
+          "route": "session",
+          "method": "GET",
+          "status": 200,
+          "elapsedMs": 996,
+          "requestId": "415d77d0-1de1-49f8-9c61-e3d6fcca65b0"
+        },
+        {
+          "route": "concepts",
+          "method": "POST",
+          "status": 202,
+          "elapsedMs": 713,
+          "requestId": "978102bd-bdcc-4d7e-9df5-1dbf50683136"
+        },
+        {
+          "route": "concepts/concept_b9366028-2227-4e11-963f-1949620981ba/revisions",
+          "method": "POST",
+          "status": 202,
+          "elapsedMs": 821,
+          "requestId": "72516b0e-b783-432b-9fe3-6332fc0fd111"
+        },
+        {
+          "route": "jobs/job_0a1e4933-5528-4c67-9d70-b845e31f5327",
+          "method": "GET",
+          "status": 200,
+          "elapsedMs": 522,
+          "requestId": "677b2c23-aad1-41dc-8edb-e45d713b37f3"
+        },
+        {
+          "route": "concepts/concept_b9366028-2227-4e11-963f-1949620981ba/revisions",
+          "method": "POST",
+          "status": 202,
+          "elapsedMs": 673,
+          "requestId": "50a62290-8465-4fd1-8c31-c15bf10eb64f"
+        },
+        {
+          "route": "session",
+          "method": "GET",
+          "status": 200,
+          "elapsedMs": 611,
+          "requestId": "2e90543b-bd0e-45a9-9cdb-7cffc077f368"
+        }
+      ],
+      "generationMs": 19597,
+      "initialConcept": {
+        "conceptRef": "concept_b9366028-2227-4e11-963f-1949620981ba",
+        "version": 1,
+        "briefVersion": 1,
+        "locale": "fr-FR",
+        "content": {
+          "schemaVersion": "1.0",
+          "title": "Inscrição à École de Langues",
+          "summary": "Permet aux élèves de s'inscrire à une école de langues via WhatsApp, en présentant les cours et en confirmant l'inscription.",
+          "hypothesis": "Le public cible est constitué d'élèves potentiels cherchant à apprendre une langue, mais les détails spécifiques sur les utilisateurs ne sont pas fournis.",
+          "roles": [
+            "Élève",
+            "Administrateur de l'école",
+            "Assistant virtuel"
+          ],
+          "screens": [
+            {
+              "id": "presentation-cours",
+              "title": "Présentation des Cours",
+              "description": "Affiche les différents cours de langues offerts, y compris les horaires et les niveaux.",
+              "items": [
+                {
+                  "label": "Cours d'anglais",
+                  "value": "Débutant, Intermédiaire, Avancé"
+                },
+                {
+                  "label": "Cours d'espagnol",
+                  "value": "Débutant, Intermédiaire, Avancé"
+                },
+                {
+                  "label": "Cours de français",
+                  "value": "Débutant, Intermédiaire, Avancé"
+                }
+              ],
+              "action": {
+                "label": "Choisir un cours",
+                "nextScreenId": "choix-groupe"
+              }
+            },
+            {
+              "id": "choix-groupe",
+              "title": "Choix du Groupe",
+              "description": "Permet à l'élève de choisir un groupe en fonction de sa disponibilité.",
+              "items": [
+                {
+                  "label": "Groupe du matin",
+                  "value": "Lundi, Mercredi, Vendredi à 9h"
+                },
+                {
+                  "label": "Groupe de l'après-midi",
+                  "value": "Mardi, Jeudi à 14h"
+                },
+                {
+                  "label": "Groupe du soir",
+                  "value": "Lundi à 18h"
+                }
+              ],
+              "action": {
+                "label": "Confirmer l'inscription",
+                "nextScreenId": "confirmation-inscription"
+              }
+            },
+            {
+              "id": "confirmation-inscription",
+              "title": "Confirmation d'Inscription",
+              "description": "Affiche un récapitulatif du cours et du groupe choisis, et demande la confirmation.",
+              "items": [
+                {
+                  "label": "Cours choisi",
+                  "value": "Cours d'anglais, Groupe du matin"
+                },
+                {
+                  "label": "Date de début",
+                  "value": "1er Novembre 2026"
+                },
+                {
+                  "label": "Prix",
+                  "value": "200 €"
+                }
+              ],
+              "action": {
+                "label": "Finaliser l'inscription",
+                "nextScreenId": null
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "slug": "wpp",
+              "role": "Canal principal de ventes"
+            },
+            {
+              "slug": "email",
+              "role": "Notificações de confirmation"
+            }
+          ],
+          "journey": [
+            {
+              "id": "etape1",
+              "label": "Afficher les cours",
+              "description": "L'élève consulte les cours disponibles.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "etape2",
+              "label": "Choisir un groupe",
+              "description": "L'élève sélectionne le groupe qui lui convient.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "etape3",
+              "label": "Confirmer l'inscription",
+              "description": "L'élève vérifie les détails et confirme son inscription.",
+              "blockSlugs": [
+                "email"
+              ],
+              "humanReview": true
+            }
+          ],
+          "limitations": [
+            "Aucune intégration réelle avec les systèmes de paiement.",
+            "Aucune vérification en temps réel des disponibilités de cours.",
+            "Les notifications par e-mail dépendent de la configuration de l'utilisateur.",
+            "Les informations sur les élèves ne sont pas collectées dans cette phase."
+          ],
+          "disclaimer": "Concept exploratoire. Il ne constitue ni une proposition définitive, ni une approbation, ni un produit publié."
+        }
+      },
+      "title": "Inscrição à École de Langues",
+      "summary": "Permet aux élèves de s'inscrire à une école de langues via WhatsApp, en présentant les cours et en confirmant l'inscription.",
+      "languageReviewRequired": true,
+      "replayedSameJob": true,
+      "reviewMs": 823,
+      "reviewedConcept": {
+        "conceptRef": "concept_b9366028-2227-4e11-963f-1949620981ba",
+        "version": 2,
+        "briefVersion": 1,
+        "locale": "fr-FR",
+        "content": {
+          "schemaVersion": "1.0",
+          "title": "Inscrição à École de Langues",
+          "summary": "Permet aux élèves de s'inscrire à une école de langues via WhatsApp, en présentant les cours et en confirmant l'inscription.",
+          "hypothesis": "Le public cible est constitué d'élèves potentiels cherchant à apprendre une langue, mais les détails spécifiques sur les utilisateurs ne sont pas fournis.",
+          "roles": [
+            "Élève",
+            "Administrateur de l'école",
+            "Assistant virtuel"
+          ],
+          "screens": [
+            {
+              "id": "presentation-cours",
+              "title": "Présentation des Cours",
+              "description": "Affiche les différents cours de langues offerts, y compris les horaires et les niveaux.",
+              "items": [
+                {
+                  "label": "Cours d'anglais",
+                  "value": "Débutant, Intermédiaire, Avancé"
+                },
+                {
+                  "label": "Cours d'espagnol",
+                  "value": "Débutant, Intermédiaire, Avancé"
+                },
+                {
+                  "label": "Cours de français",
+                  "value": "Débutant, Intermédiaire, Avancé"
+                }
+              ],
+              "action": {
+                "label": "Choisir un cours",
+                "nextScreenId": "choix-groupe"
+              }
+            },
+            {
+              "id": "choix-groupe",
+              "title": "Choix du Groupe",
+              "description": "Permet à l'élève de choisir un groupe en fonction de sa disponibilité.",
+              "items": [
+                {
+                  "label": "Groupe du matin",
+                  "value": "Lundi, Mercredi, Vendredi à 9h"
+                },
+                {
+                  "label": "Groupe de l'après-midi",
+                  "value": "Mardi, Jeudi à 14h"
+                },
+                {
+                  "label": "Groupe du soir",
+                  "value": "Lundi à 18h"
+                }
+              ],
+              "action": {
+                "label": "Confirmer l'inscription",
+                "nextScreenId": "confirmation-inscription"
+              }
+            },
+            {
+              "id": "confirmation-inscription",
+              "title": "Confirmation d'Inscription",
+              "description": "Affiche un récapitulatif du cours et du groupe choisis, et demande la confirmation.",
+              "items": [
+                {
+                  "label": "Cours choisi",
+                  "value": "Cours d'anglais, Groupe du matin"
+                },
+                {
+                  "label": "Date de début",
+                  "value": "1er Novembre 2026"
+                },
+                {
+                  "label": "Prix",
+                  "value": "200 €"
+                }
+              ],
+              "action": {
+                "label": "Finaliser l'inscription",
+                "nextScreenId": null
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "slug": "wpp",
+              "role": "Canal principal de ventes"
+            },
+            {
+              "slug": "email",
+              "role": "Notificações de confirmation"
+            }
+          ],
+          "journey": [
+            {
+              "id": "etape1",
+              "label": "Afficher les cours",
+              "description": "L'élève consulte les cours disponibles.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "etape2",
+              "label": "Choisir un groupe",
+              "description": "L'élève sélectionne le groupe qui lui convient.",
+              "blockSlugs": [
+                "wpp"
+              ],
+              "humanReview": false
+            },
+            {
+              "id": "etape3",
+              "label": "Confirmer l'inscription",
+              "description": "L'élève vérifie les détails et confirme son inscription.",
+              "blockSlugs": [
+                "email"
+              ],
+              "humanReview": true
+            }
+          ],
+          "limitations": [
+            "Aucune intégration réelle avec les systèmes de paiement.",
+            "Aucune vérification en temps réel des disponibilités de cours.",
+            "Les notifications par e-mail dépendent de la configuration de l'utilisateur.",
+            "Les informations sur les élèves ne sont pas collectées dans cette phase."
+          ],
+          "disclaimer": "Concept exploratoire. Il ne constitue ni une proposition définitive, ni une approbation, ni un produit publié."
+        }
+      },
+      "reviewReplayedSameJob": true,
+      "deterministicReviewWithoutInference": true,
+      "syntheticSessionRemoved": true
+    }
+  ],
+  "limits": [
+    "Generated titles/summaries/full concepts are saved for readable linguistic QA; literal/locale/schema validation does not certify every sentence’s grammar.",
+    "Zero extra AI for human review is evidenced by the immediate succeeded receipt, deterministic stored-job marker and exact local transformation; provider usage logs are not queried."
+  ]
+}

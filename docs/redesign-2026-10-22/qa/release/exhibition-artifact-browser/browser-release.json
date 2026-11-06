@@ -1,0 +1,615 @@
+{
+  "generatedAt": "2026-10-26T23:37:19.445Z",
+  "passed": true,
+  "mode": {
+    "redesign": true,
+    "indexing": true
+  },
+  "scope": "Local release artifact and hosting emulation; no CDN deployment or real auth/integration exercised",
+  "checks": [
+    {
+      "path": "/",
+      "title": "Catalisa | Crie produtos e automações com IA",
+      "lang": "pt-BR",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "native": true,
+      "emotion": 0
+    },
+    {
+      "path": "/capacidades",
+      "title": "Building blocks: biblioteca de capacidades | Catalisa",
+      "lang": "pt-BR",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "native": true,
+      "emotion": 0
+    },
+    {
+      "path": "/capacidades/ai-engine",
+      "title": "AI Engine: API de IA para texto, imagem e áudio | Catalisa",
+      "lang": "pt-BR",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "native": true,
+      "emotion": 0
+    },
+    {
+      "anonymousPublicSnapshot": "/contato",
+      "path": "/contato",
+      "h1": "Vamos dar formaà próximaconversa.",
+      "busy": false,
+      "controlReady": true,
+      "errors": []
+    },
+    {
+      "path": "/contato",
+      "title": "Contato: construa sua próxima conexão | Catalisa",
+      "lang": "pt-BR",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "native": true,
+      "emotion": 0
+    },
+    {
+      "anonymousPublicSnapshot": "/lab",
+      "path": "/lab",
+      "h1": "O que vocêquer construir?",
+      "busy": false,
+      "controlReady": true,
+      "errors": []
+    },
+    {
+      "path": "/lab",
+      "title": "Lab: explore composições com IA | Catalisa",
+      "lang": "pt-BR",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "native": true,
+      "emotion": 0
+    },
+    {
+      "path": "/ecossistema/banking",
+      "title": "Plataforma bancária: crie seu produto financeiro | Catalisa",
+      "lang": "pt-BR",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "native": true,
+      "emotion": 0
+    },
+    {
+      "path": "/ecossistema/credit",
+      "title": "Plataforma de crédito: desenhe seu produto de crédito | Catalisa",
+      "lang": "pt-BR",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "native": true,
+      "emotion": 0
+    },
+    {
+      "path": "/arquitetura",
+      "title": "Arquitetura: crie produtos e modernize o legado | Catalisa",
+      "lang": "pt-BR",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "native": true,
+      "emotion": 0
+    },
+    {
+      "path": "/perspectivas",
+      "title": "Perspectivas | Catalisa",
+      "lang": "pt-BR",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "native": true,
+      "emotion": 0
+    },
+    {
+      "path": "/press-kit",
+      "title": "Press-kit: marca, assinaturas e recursos oficiais | Catalisa",
+      "lang": "pt-BR",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "native": true,
+      "emotion": 0
+    },
+    {
+      "path": "/en",
+      "title": "Catalisa | Build products and automations with AI",
+      "lang": "en-US",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "native": true,
+      "emotion": 0
+    },
+    {
+      "path": "/en/studio",
+      "title": "Studio: build agents and automations through composition | Catalisa",
+      "lang": "en-US",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "native": true,
+      "emotion": 0
+    },
+    {
+      "path": "/insights",
+      "title": "Catalisa Insights | Cases de IA e WhatsApp Business",
+      "lang": "pt-BR",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "native": false,
+      "emotion": 8
+    },
+    {
+      "path": "/politica-privacidade",
+      "title": "Política de Privacidade",
+      "lang": "pt-BR",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "native": true,
+      "emotion": 0
+    },
+    {
+      "anonymousPublicSnapshot": "/en/contact",
+      "path": "/contato",
+      "h1": "Let's shape itto the nextconversation.",
+      "busy": false,
+      "controlReady": true,
+      "errors": []
+    },
+    {
+      "path": "/en/contact",
+      "title": "Contact: build your next connection | Catalisa",
+      "lang": "en-US",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "native": true,
+      "emotion": 0
+    },
+    {
+      "path": "/de",
+      "title": "Catalisa | Produkte und Automatisierungen mit KI erstellen",
+      "lang": "de-DE",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "native": true,
+      "emotion": 0
+    },
+    {
+      "path": "/es",
+      "title": "Catalisa | Crea productos y automatizaciones con IA",
+      "lang": "es-ES",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "native": true,
+      "emotion": 0
+    },
+    {
+      "path": "/da",
+      "title": "Catalisa | Byg produkter og automatiseringer med AI",
+      "lang": "da-DK",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "native": true,
+      "emotion": 0
+    },
+    {
+      "path": "/nl",
+      "title": "Catalisa | Bouw producten en automatiseringen met AI",
+      "lang": "nl-NL",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "native": true,
+      "emotion": 0
+    },
+    {
+      "path": "/fr",
+      "title": "Catalisa | Créez des produits et des automatisations avec l'IA",
+      "lang": "fr-FR",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "native": true,
+      "emotion": 0
+    },
+    {
+      "anonymousPublicSnapshot": "/de/kontakt",
+      "path": "/contato",
+      "h1": "Lassen Sie uns Gestalt gebenzur nächstenGespräch.",
+      "busy": false,
+      "controlReady": true,
+      "errors": []
+    },
+    {
+      "path": "/de/kontakt",
+      "title": "Kontakt: Knüpfen Sie Ihre nächste Verbindung | Catalisa",
+      "lang": "de-DE",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "native": true,
+      "emotion": 0
+    },
+    {
+      "anonymousPublicSnapshot": "/es/contacto",
+      "path": "/contato",
+      "h1": "Démosle formaa la siguienteconversación.",
+      "busy": false,
+      "controlReady": true,
+      "errors": []
+    },
+    {
+      "path": "/es/contacto",
+      "title": "Contacto: construye tu próxima conexión | Catalisa",
+      "lang": "es-ES",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "native": true,
+      "emotion": 0
+    },
+    {
+      "anonymousPublicSnapshot": "/da/kontakt",
+      "path": "/contato",
+      "h1": "Lad os give det formtil den næstesamtale.",
+      "busy": false,
+      "controlReady": true,
+      "errors": []
+    },
+    {
+      "path": "/da/kontakt",
+      "title": "Kontakt: byg din næste forbindelse | Catalisa",
+      "lang": "da-DK",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "native": true,
+      "emotion": 0
+    },
+    {
+      "anonymousPublicSnapshot": "/nl/contact",
+      "path": "/contato",
+      "h1": "Laten we vorm gevennaar de volgendegesprek.",
+      "busy": false,
+      "controlReady": true,
+      "errors": []
+    },
+    {
+      "path": "/nl/contact",
+      "title": "Contact: bouw je volgende verbinding | Catalisa",
+      "lang": "nl-NL",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "native": true,
+      "emotion": 0
+    },
+    {
+      "anonymousPublicSnapshot": "/fr/contact",
+      "path": "/contato",
+      "h1": "Donnons formeà la suivanteconversation.",
+      "busy": false,
+      "controlReady": true,
+      "errors": []
+    },
+    {
+      "path": "/fr/contact",
+      "title": "Contact : construisez votre prochaine connexion | Catalisa",
+      "lang": "fr-FR",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "native": true,
+      "emotion": 0
+    },
+    {
+      "anonymousPublicSnapshot": "/en/lab",
+      "path": "/lab",
+      "h1": "What youwants build?",
+      "busy": false,
+      "controlReady": true,
+      "errors": []
+    },
+    {
+      "path": "/en/lab",
+      "title": "Lab: explore compositions with AI | Catalisa",
+      "lang": "en-US",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "native": true,
+      "emotion": 0
+    },
+    {
+      "anonymousPublicSnapshot": "/de/lab",
+      "path": "/lab",
+      "h1": "Was Siewill aufbauen?",
+      "busy": false,
+      "controlReady": true,
+      "errors": []
+    },
+    {
+      "path": "/de/lab",
+      "title": "Lab: Kompositionen mit KI erkunden | Catalisa",
+      "lang": "de-DE",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "native": true,
+      "emotion": 0
+    },
+    {
+      "anonymousPublicSnapshot": "/es/lab",
+      "path": "/lab",
+      "h1": "Lo que ustedquiere construir?",
+      "busy": false,
+      "controlReady": true,
+      "errors": []
+    },
+    {
+      "path": "/es/lab",
+      "title": "Lab: explora composiciones con IA | Catalisa",
+      "lang": "es-ES",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "native": true,
+      "emotion": 0
+    },
+    {
+      "anonymousPublicSnapshot": "/da/lab",
+      "path": "/lab",
+      "h1": "Hvad duvil bygge?",
+      "busy": false,
+      "controlReady": true,
+      "errors": []
+    },
+    {
+      "path": "/da/lab",
+      "title": "Lab: udforsk kompositioner med AI | Catalisa",
+      "lang": "da-DK",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "native": true,
+      "emotion": 0
+    },
+    {
+      "anonymousPublicSnapshot": "/nl/lab",
+      "path": "/lab",
+      "h1": "Wat uwil bouwen?",
+      "busy": false,
+      "controlReady": true,
+      "errors": []
+    },
+    {
+      "path": "/nl/lab",
+      "title": "Lab: verken composities met AI | Catalisa",
+      "lang": "nl-NL",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "native": true,
+      "emotion": 0
+    },
+    {
+      "anonymousPublicSnapshot": "/fr/lab",
+      "path": "/lab",
+      "h1": "Ce que vousveut construire ?",
+      "busy": false,
+      "controlReady": true,
+      "errors": []
+    },
+    {
+      "path": "/fr/lab",
+      "title": "Lab : explorez des compositions avec l'IA | Catalisa",
+      "lang": "fr-FR",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "native": true,
+      "emotion": 0
+    },
+    {
+      "redirect": "/use-cases",
+      "destination": "/casos-de-uso",
+      "preservedQuery": true
+    },
+    {
+      "redirect": "/playbooks",
+      "destination": "/casos-de-uso",
+      "preservedQuery": true
+    },
+    {
+      "redirect": "/en/playbooks",
+      "destination": "/en/use-cases",
+      "preservedQuery": true
+    },
+    {
+      "redirect": "/insights/magazine",
+      "destination": "/insights",
+      "preservedQuery": true
+    },
+    {
+      "redirect": "/en/insights/magazine",
+      "destination": "/en/insights",
+      "preservedQuery": true
+    },
+    {
+      "redirect": "/ecossistema/recrutamento",
+      "destination": "/produtos",
+      "preservedQuery": true
+    },
+    {
+      "redirect": "/en/ecosystem/recruitment",
+      "destination": "/en/products",
+      "preservedQuery": true
+    },
+    {
+      "redirect": "/de/oekosystem/recruiting",
+      "destination": "/de/produkte",
+      "preservedQuery": true
+    },
+    {
+      "redirect": "/es/ecosistema/reclutamiento",
+      "destination": "/es/productos",
+      "preservedQuery": true
+    },
+    {
+      "redirect": "/da/oekosystem/rekruttering",
+      "destination": "/da/produkter",
+      "preservedQuery": true
+    },
+    {
+      "redirect": "/nl/ecosysteem/werving",
+      "destination": "/nl/producten",
+      "preservedQuery": true
+    },
+    {
+      "redirect": "/fr/ecosysteme/recrutement",
+      "destination": "/fr/produits",
+      "preservedQuery": true
+    },
+    {
+      "redirect": "/design-system/home",
+      "destination": "/",
+      "preservedQuery": true
+    },
+    {
+      "redirect": "/ai-agents",
+      "destination": "/agentes",
+      "preservedQuery": true
+    },
+    {
+      "redirect": "/apps",
+      "destination": "/ecossistema",
+      "preservedQuery": true
+    },
+    {
+      "redirect": "/building-blocks",
+      "destination": "/capacidades",
+      "preservedQuery": true
+    },
+    {
+      "redirect": "/bancario",
+      "destination": "/ecossistema/banking",
+      "preservedQuery": true
+    },
+    {
+      "redirect": "/en/design-system/home",
+      "destination": "/en",
+      "preservedQuery": true
+    },
+    {
+      "redirect": "/en/agents",
+      "destination": "/en/ai-agents",
+      "preservedQuery": true
+    },
+    {
+      "redirect": "/en/building-blocks",
+      "destination": "/en/capabilities",
+      "preservedQuery": true
+    },
+    {
+      "redirect": "/en/apps",
+      "destination": "/en/ecosystem",
+      "preservedQuery": true
+    },
+    {
+      "redirect": "/en/banking",
+      "destination": "/en/ecosystem/banking",
+      "preservedQuery": true
+    },
+    {
+      "navigation": "native → compatibility → native",
+      "fullDocumentNavigation": true,
+      "legacyThemeUnloaded": true
+    },
+    {
+      "navigation": "English language switch → native Studio",
+      "fullDocumentNavigation": true
+    },
+    {
+      "authenticatedLogin": "/treinamento/login",
+      "status": 200,
+      "noIndex": true
+    },
+    {
+      "authenticatedLogin": "/apresentacao/login",
+      "status": 200,
+      "noIndex": true
+    },
+    {
+      "authenticatedLogin": "/en/training/login",
+      "status": 200,
+      "noIndex": true
+    },
+    {
+      "authenticatedLogin": "/en/presentation/login",
+      "status": 200,
+      "noIndex": true
+    },
+    {
+      "withoutJavaScript": "/",
+      "status": 200
+    },
+    {
+      "withoutJavaScript": "/capacidades",
+      "status": 200
+    },
+    {
+      "withoutJavaScript": "/contato",
+      "status": 200
+    },
+    {
+      "withoutJavaScript": "/lab",
+      "status": 200
+    },
+    {
+      "withoutJavaScript": "/ecossistema/banking",
+      "status": 200
+    },
+    {
+      "withoutJavaScript": "/ecossistema/credit",
+      "status": 200
+    },
+    {
+      "withoutJavaScript": "/arquitetura",
+      "status": 200
+    },
+    {
+      "withoutJavaScript": "/en",
+      "status": 200
+    },
+    {
+      "withoutJavaScript": "/insights",
+      "status": 200
+    },
+    {
+      "withoutJavaScript": "/en/contact",
+      "status": 200
+    },
+    {
+      "withoutJavaScript": "/de",
+      "status": 200
+    },
+    {
+      "withoutJavaScript": "/es",
+      "status": 200
+    },
+    {
+      "withoutJavaScript": "/da",
+      "status": 200
+    },
+    {
+      "withoutJavaScript": "/nl",
+      "status": 200
+    },
+    {
+      "withoutJavaScript": "/fr",
+      "status": 200
+    },
+    {
+      "withoutJavaScript": "/de/kontakt",
+      "status": 200
+    },
+    {
+      "withoutJavaScript": "/es/contacto",
+      "status": 200
+    },
+    {
+      "withoutJavaScript": "/da/kontakt",
+      "status": 200
+    },
+    {
+      "withoutJavaScript": "/nl/contact",
+      "status": 200
+    },
+    {
+      "withoutJavaScript": "/fr/contact",
+      "status": 200
+    },
+    {
+      "withoutJavaScript": "/en/lab",
+      "status": 200
+    },
+    {
+      "withoutJavaScript": "/de/lab",
+      "status": 200
+    },
+    {
+      "withoutJavaScript": "/es/lab",
+      "status": 200
+    },
+    {
+      "withoutJavaScript": "/da/lab",
+      "status": 200
+    },
+    {
+      "withoutJavaScript": "/nl/lab",
+      "status": 200
+    },
+    {
+      "withoutJavaScript": "/fr/lab",
+      "status": 200
+    }
+  ],
+  "errors": []
+}

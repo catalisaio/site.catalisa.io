@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-26T19:48:20.926Z",
+  "passed": true,
+  "tsxSyntaxFiles": [
+    "src/redesign/Home.tsx",
+    "src/redesign/media/ProductShowcase.tsx"
+  ],
+  "homeConceptFilmRemoved": true,
+  "originalHeroPreserved": true,
+  "assets": [
+    {
+      "path": "/redesign/media-v3/editorial-creator.jpg",
+      "source": "docs/direcao-editorial-2026-10-24/conceitos/c7b-criadora.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 54436,
+      "sha256": "34b7116b1b2a394bc6195e8ebf16bef2fb2f5b60a815d2483be2a0e789fb2f14",
+      "identicalBytes": true
+    },
+    {
+      "path": "/redesign/media-v3/editorial-composition.jpg",
+      "source": "docs/direcao-editorial-2026-10-24/conceitos/c3-circulo.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 72111,
+      "sha256": "1bd6c906b5cc312c3bd8177764aaa6e0ecfea3619a4591aa75d164eab8ff40fc",
+      "identicalBytes": true
+    },
+    {
+      "path": "/redesign/media-v3/editorial-executive.jpg",
+      "source": "docs/direcao-editorial-2026-10-24/conceitos/c1-executivo.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 92103,
+      "sha256": "eb6409ebf325510a8ccbdfb30ad78ceaf9db64bdf9f8684c0e04aef3fc231810",
+      "identicalBytes": true
+    }
+  ],
+  "newTranslationKeys": 0,
+  "scope": "Static AST and original/copy byte integrity only. No build, Chrome, screenshot rendering, raster editing or production deployment. Four-width rendering remains coordinator verification."
+}

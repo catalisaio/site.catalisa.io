@@ -1,0 +1,147 @@
+{
+  "updatedAt": "2026-10-27T22:51:31.153Z",
+  "releaseId": "20261027-hero-clarity",
+  "scope": "Hero comercial com ação e entrega reconhecíveis; subtítulos concretos e próximo passo claro. Método do Med adaptado ao propósito de cada página da Catalisa.",
+  "offerArchitecture": "A direção de produtos componíveis está preservada na estratégia. Esta revisão não cria novas ofertas, rotas ou contratação de Office/Atendimento.",
+  "visualScope": "Identidade, imagens e composições existentes preservadas; ajustes locais de tipografia e encaixe para frases completas nos sete idiomas.",
+  "pages": [
+    {
+      "path": "/",
+      "before": "A forma segue a conexão.",
+      "after": "Crie produtos e automatize operações com IA."
+    },
+    {
+      "path": "/produtos",
+      "before": "Produtos Catalisa. Novas possibilidades.",
+      "after": "Encontre o produto para a sua operação."
+    },
+    {
+      "path": "/ecossistema/banking",
+      "before": "Uma conta. Várias formas de operar.",
+      "after": "Crie e opere seu produto financeiro."
+    },
+    {
+      "path": "/ecossistema/credit",
+      "before": "Crédito tem começo. A operação continua.",
+      "after": "Gerencie o crédito, da proposta à carteira."
+    },
+    {
+      "path": "/studio",
+      "before": "Dê forma ao que precisa funcionar.",
+      "after": "Crie agentes e automações para sua operação."
+    },
+    {
+      "path": "/workflows",
+      "before": "O próximo passo tem um porquê.",
+      "after": "Automatize tarefas e conecte seus sistemas."
+    },
+    {
+      "path": "/agentes",
+      "before": "Entender o contexto. Agir com sentido.",
+      "after": "Use agentes de IA para atender e executar tarefas."
+    },
+    {
+      "path": "/capacidades",
+      "before": "Peças com propósito. Possibilidades em conjunto.",
+      "after": "Integre novas funções ao seu produto."
+    },
+    {
+      "path": "/arquitetura",
+      "before": "Menos trabalho repetido. Mais produto.",
+      "after": "Crie produtos com uma base de tecnologia compartilhada."
+    },
+    {
+      "path": "/desenvolvedores",
+      "before": "Seu código. Mais possibilidades.",
+      "after": "Conecte seu sistema às APIs da Catalisa."
+    },
+    {
+      "path": "/governanca",
+      "before": "Confiança tem estrutura.",
+      "after": "Controle o acesso e as ações da sua equipe e da IA."
+    },
+    {
+      "path": "/visao",
+      "before": "Dar forma ao que vem depois.",
+      "after": "Conheça a plataforma por trás dos produtos Catalisa."
+    },
+    {
+      "path": "/ecossistema/med",
+      "before": "Med",
+      "after": "Gerencie sua rotina médica em todas as suas clínicas."
+    },
+    {
+      "path": "/ecossistema/juridico",
+      "before": "Jurídico",
+      "after": "Organize o atendimento e a rotina do seu escritório."
+    },
+    {
+      "path": "/ecossistema/biometrics",
+      "before": "Biometrics",
+      "after": "Verifique identidades com prova de vida e comparação facial."
+    },
+    {
+      "path": "/ecossistema/decision",
+      "before": "Decision",
+      "after": "Automatize decisões com as regras do seu negócio."
+    },
+    {
+      "path": "/ecossistema",
+      "before": "O mesmo fundamento. Outras formas de operar.",
+      "after": "Conheça os produtos e suas aplicações."
+    },
+    {
+      "path": "/composicoes",
+      "before": "A conexão muda o resultado.",
+      "after": "Veja como conectar produtos e automatizar uma jornada."
+    },
+    {
+      "path": "/contato",
+      "before": "Vamos dar forma à próxima conversa.",
+      "after": "Converse sobre o que sua empresa precisa."
+    },
+    {
+      "path": "/lab",
+      "before": "O que você quer construir?",
+      "after": "Descreva sua ideia e explore um conceito de produto."
+    }
+  ],
+  "validation": {
+    "languages": 7,
+    "widths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "browserChecks": 560,
+    "browserPassed": true,
+    "relevantTestsPassed": 56,
+    "typeScriptPassed": true,
+    "prerenderedRoutes": 678,
+    "seoFailures": 0,
+    "seoWarnings": 3,
+    "seoWarningsScope": "Títulos idênticos entre idiomas que compartilham o mesmo termo, em Capacidades/Perspectivas.",
+    "runtimeApiMatchesPublished": true,
+    "retainedPublishedAssets": 1887
+  },
+  "productionAuthorization": {
+    "received": true,
+    "scope": "catalisa.io",
+    "userMessage": "ta otimo por mim pode subir"
+  },
+  "stagingValidated": true,
+  "productionPublished": true,
+  "stagingChecks": {
+    "heroes": 140,
+    "localizedHttpsRoutes": 49,
+    "liveBrowserChecks": 28
+  },
+  "productionValidation": {
+    "heroes": 140,
+    "localizedHttpsRoutes": 49,
+    "liveBrowserChecks": 28,
+    "operationsPassed": true
+  },
+  "publicationEvidence": "../release/hero-clarity-production-published.json"
+}

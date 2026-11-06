@@ -1,0 +1,155 @@
+{
+  "locale": "nl-NL",
+  "updatedAt": "2026-10-26T18:59:48.574Z",
+  "method": "Independent full source/translation pair review using authorized Claude CLI without tools, MCP or session persistence; corrections structurally validated before merge.",
+  "required": 4189,
+  "available": 4187,
+  "reviewed": 4187,
+  "complete": true,
+  "corrections": 349,
+  "batches": [
+    {
+      "id": "b2bba8f39f3024fd3e2e",
+      "count": 300,
+      "corrections": 21,
+      "costUsd": 0.3538082,
+      "durationMs": 54027
+    },
+    {
+      "id": "ab6abf3a96490a5ed478",
+      "count": 300,
+      "corrections": 30,
+      "costUsd": 0.42819700000000005,
+      "durationMs": 67775
+    },
+    {
+      "id": "20b6467c42e5ae5b9af1",
+      "count": 300,
+      "corrections": 31,
+      "costUsd": 0.3697732,
+      "durationMs": 65531
+    },
+    {
+      "id": "7f508f970df2f7730099",
+      "count": 300,
+      "corrections": 29,
+      "costUsd": 0.4144202,
+      "durationMs": 72114
+    },
+    {
+      "id": "8ec5152ad92fc2c75998",
+      "count": 300,
+      "corrections": 20,
+      "costUsd": 0.34548559999999995,
+      "durationMs": 44227
+    },
+    {
+      "id": "a6a6d7bcdcba56dd6220",
+      "count": 300,
+      "corrections": 23,
+      "costUsd": 0.3529292,
+      "durationMs": 44407
+    },
+    {
+      "id": "a1ee43e48587315d3d1b",
+      "count": 300,
+      "corrections": 27,
+      "costUsd": 0.37793240000000006,
+      "durationMs": 63387
+    },
+    {
+      "id": "0b6e1d77918dd45fd71c",
+      "count": 300,
+      "corrections": 16,
+      "costUsd": 0.41455980000000003,
+      "durationMs": 97285
+    },
+    {
+      "id": "ea7036b9c6f015cb04e3",
+      "count": 300,
+      "corrections": 27,
+      "costUsd": 0.3584216,
+      "durationMs": 50551
+    },
+    {
+      "id": "2c0cf6e639a96a1c6c81",
+      "count": 300,
+      "corrections": 30,
+      "costUsd": 0.3838574,
+      "durationMs": 61032
+    },
+    {
+      "id": "e559867a6e8da7616895",
+      "count": 300,
+      "corrections": 25,
+      "costUsd": 0.35562499999999997,
+      "durationMs": 52235
+    },
+    {
+      "id": "b9b7346a104031fa9877",
+      "count": 300,
+      "corrections": 25,
+      "costUsd": 0.3422524,
+      "durationMs": 52276
+    },
+    {
+      "id": "7fc284c94d24f5e73b8e",
+      "count": 300,
+      "corrections": 24,
+      "costUsd": 0.3435608,
+      "durationMs": 53149
+    },
+    {
+      "id": "a65c1c1490c762807f4b",
+      "count": 287,
+      "corrections": 21,
+      "costUsd": 0.31516900000000003,
+      "durationMs": 42376
+    }
+  ],
+  "notes": [
+    "'mesa' foi padronizado como 'desk' e 'jornada' como 'journey'.",
+    "Decision Engine, Audit Trail e E-Signature foram mantidos como nomes de building blocks.",
+    "Os textos de interface foram padronizados com o tratamento informal 'je', que já predomina no site. Os Termos de Uso mantêm 'u', porque o próprio documento define esse tratamento.",
+    "Terminologia unificada: capacidades = capaciteiten, mesa = desk, proposta de crédito = aanvraag, capturas = schermafbeeldingen, modelo = sjabloon.",
+    "'Banking' sozinho como rótulo (r_198a04be1ce48ae2, r_1b3460f29df9bbc1, r_2459bd79f057f158) ficou sem alteração. Confirmem se deve ser traduzido como o nome genérico 'bankplatform'.",
+    "Tratamento padronizado em 'u' (formal), predominante no site B2B.",
+    "Termos padronizados: capacidade = functionaliteit; bloco = bouwsteen; estágio = fase; escopo = scope; jornada = journey; guia = handleiding; mesa = beoordelingsteam.",
+    "Nomes de building blocks (Data Store, Decision Engine, Catalisa Workflows) mantidos sem tradução.",
+    "r_393ed03a75d6830f: o espaço que falta após o ponto também falta na fonte; preservei, mas vale conferir o markup.",
+    "Os textos jurídicos e de privacidade (privacy.json e terms.json) continuam com 'u'. Nos textos da interface, padronizei para 'je'.",
+    "Mantive 'SIGNATUUR' para 'assinatura' (logo) por consistência entre Resources e Styleguide. Uma alternativa possível seria 'logo'.",
+    "Mantive 'Banking' no rótulo 'Een blik op de journey / Banking' porque não fica claro se é o nome do produto ou uma categoria.",
+    "Os textos jurídicos (LGPD, foro de São Paulo, IGPM/IPCA) mantêm o escopo brasileiro original.",
+    "As expressões 'Pode movimentar' → 'Beschikbaar saldo' e 'beschikbaar voor transacties' indicam corretamente um saldo, não uma permissão.",
+    "Recomenda-se definir globalmente se 'composição' será traduzida como 'compositie' ou 'samenstelling'; hoje as duas formas convivem.",
+    "As correções põem o tratamento ao leitor no informal 'je', a forma mais usada no site. Os textos jurídicos continuam com 'Gebruiker' em terceira pessoa.",
+    "Os nomes de produto foram traduzidos: Credit Platform virou Kredietplatform e Med virou Zorg. API Keys e WPP ficaram como estão, por serem identificadores técnicos.",
+    "Na tradução de 'jornada' havia 'traject' e 'journey' misturados. Ficou 'traject', a forma mais frequente, e as ocorrências de 'journey' foram corrigidas.",
+    "Referências brasileiras ficaram como no original: Lei 12.846/2013, foro de São Paulo, Febraban, +55 e transcrição em português.",
+    "Na interface usei \"je\". Nos textos jurídicos de privacidade mantive \"u\" e nos termos mantive \"Gebruiker\", como é habitual em textos legais.",
+    "r_82acebf08dd2e25f ('conhecer cada' → 'elke') é fragmento de quebra de linha; o verbo provavelmente foi deslocado pela ordem das palavras em holandês. Vale conferir com a linha seguinte.",
+    "Mantive 'Banking' isolado (por exemplo, 'Banking-app') porque nesses trechos parece nomear o domínio, não o produto Banking Platform.",
+    "Revisei os 300 pares e fiz 16 correções.",
+    "Padronizei os termos 'jornada' como 'journey', 'capacidades' como 'capabilities' e 'atendimento' como 'klantenservice'.",
+    "Mantive as referências brasileiras (LGPD, art. 7 IX, Banco Central, CPF, Pix) e os nomes técnicos (FiDatabase, People, Bureaus, Pricing Engine, IAM) como estão no original.",
+    "Tratamento padronizado como informal 'je', que predomina no conteúdo.",
+    "'Jornada' padronizada como 'journey'; 'capacidade' como 'capability'; 'estágio' como 'ontwikkelfase'.",
+    "Os nomes técnicos de building blocks (Decision Engine, Decision Platform, File Storage, Banking Product Portfolio, Service Attestations) foram mantidos.",
+    "A palavra 'financeira' foi traduzida de duas formas: 'kredietverstrekker' e 'financieringsmaatschappij'. Pode valer a pena unificar.",
+    "'jornada' unificado como 'journey', 'composição' como 'compositie' e 'capacidade' como 'capability'.",
+    "Produtos genéricos: Bankplatform, Kredietplatform, Biometrie. 'Banking Product Portfolio' mantido como nome técnico.",
+    "Os 300 pares foram revisados.",
+    "'Machtiging' (r_c4e46d78935cec0a) ficou como está: é um rótulo isolado, e 'Recht' sozinho seria ambíguo.",
+    "Payments, AI Engine, BaaS, Calculations Engine e Studio ficaram em inglês por serem nomes técnicos de building blocks.",
+    "O tratamento está misturado (u/uw versus je/jouw). Padronizei em 'u' (formal), porque é o mais usado neste lote e nos textos legais; vale verificar o restante do site.",
+    "Também está variável a tradução de 'revisão' (review/beoordeling) e de 'atendimento' (klantcontact/klantinteractie); não corrigi porque as duas formas são aceitáveis, mas recomendo padronizar.",
+    "Mantive Consignado, Convênio, boleto e Decision Engine como termos brasileiros ou nomes técnicos.",
+    "Fonte r_e8f4d1a5ed1b6e79 contém erro de digitação ('mudao'); tradução está correta.",
+    "Mantido 'Site in English' como rótulo de seleção de idioma.",
+    "DDD preservado como referência brasileira.",
+    "Revisei todos os 287 pares. A maioria dos problemas estava em Developers.tsx e site-contact.ts, que usavam 'u/uw' enquanto o resto do site usa 'je'. Padronizei tudo em 'je'.",
+    "'Banking' sozinho (r_faf7cb0fb37b0041, r_8837ed9599f15804) ficou como estava, porque não está na lista de rótulos de produto. Só 'Banking Platform' foi traduzido como 'Bankplatform'.",
+    "Decision Engine ficou sem tradução porque é nome de building block técnico. O rótulo de produto Decision ficou como 'Besluitvorming'."
+  ]
+}

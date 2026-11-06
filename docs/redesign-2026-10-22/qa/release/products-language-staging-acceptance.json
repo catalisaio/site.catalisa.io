@@ -1,0 +1,49 @@
+{
+  "updatedAt": "2026-10-26T20:20:25.469Z",
+  "releaseId": "20261026-products-language",
+  "productionDeployed": false,
+  "productionAuthorizationPending": true,
+  "productionAuthorizationReason": "The prior explicit authorization published 20261026-multilingual. This subsequent feature batch is presented in staging for approval under AGENTS.md; no production install or cutover was run.",
+  "stagingValidated": true,
+  "stagingUrl": "https://site-staging.catalisa.io",
+  "productPage": "https://site-staging.catalisa.io/produtos",
+  "localPreview": "http://localhost:5175/produtos",
+  "publicArtifactSha256": "049858966d9569126b72db76a579fb07c37d51b1aef6f8ba5b67492e531e08d0",
+  "serverArtifactSha256": "586254469a4310eaf70a5603952bdcedb0c81151ff14e04083027b58f557889f",
+  "stagingProductionPackagesIdentical": true,
+  "backendIdenticalToCurrentProduction": true,
+  "features": [
+    "Seven-product directory, seven locales, brief descriptions, five verified public showcase links and internal Banking/Credit detail routes; main navigation and sitemap/CollectionPage/ItemList integrated.",
+    "Compositions removed from public navigation; existing routes preserved.",
+    "Browser/system language selection on root only, saved manual choice honored, unsupported language defaults to English; explicit URLs and bots preserved. No IP/geolocation request.",
+    "Home film replaced with existing master imagery; Banking/Credit use existing editorial images with documented captures.",
+    "Products CTA analytics uses the existing consent-gated sanitized event."
+  ],
+  "checks": {
+    "unitIntegrationTestsPassed": 234,
+    "artifactBrowserChecks": 92,
+    "prerenderedPages": 685,
+    "seoPages": 684,
+    "seoFailures": 0,
+    "stagingHttpsRoutes": 49,
+    "stagingLanguages": 7,
+    "stagingVisualChecks": 22,
+    "autoLocaleScenarios": 14,
+    "measurementPassed": true,
+    "secretScanPassed": true
+  },
+  "evidence": {
+    "stagingHttp": "qa/release/public-locales-products-staging.json",
+    "stagingBrowser": "qa/release/followup-staging-visual/verification.json",
+    "autoLocale": "qa/localization/auto-locale-staging-browser.json",
+    "artifactBrowser": "qa/release/followup-browser/browser-release.json",
+    "measurement": "qa/seo-detailed/browser/verification.json",
+    "translations": "qa/localization/products-editorial-review.json"
+  },
+  "limits": [
+    "No new production publication in this batch.",
+    "No CAPTCHA enabled on Contact/Lab; existing rate limiting remains.",
+    "Previous actual public Contact/Lab smoke evidence belongs to 20261026-multilingual. Backend bytes are identical; those costly AI flows were not repeated for this frontend batch.",
+    "The requested Contact/Lab generation latency/token/cost improvement remains in TODO-pos-publicacao.md."
+  ]
+}

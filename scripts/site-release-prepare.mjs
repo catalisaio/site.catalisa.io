@@ -1,0 +1,44 @@
+import { cp, mkdir, readFile, writeFile, readdir } from 'node:fs/promises';
+import { resolve, join, relative, dirname } from 'node:path';
+import { createHash } from 'node:crypto';
+import { checkArtifact } from './site-release-preflight.mjs';
+import { reviewHeaders, reviewRobots, reviewHostingInclude } from './site-review-caddy.mjs';
+
+const args = Object.fromEntries(process.argv.slice(2).map(value => value.replace(/^--/, '').split(/=(.*)/s).slice(0, 2)));
+const target = args.target || 'staging';
+if (!['staging','production'].includes(target)) throw Error('Invalid target');
+const productionSlot = args['production-slot'];
+if (productionSlot !== undefined && (target !== 'production' || productionSlot !== 'green')) throw Error('--production-slot=green applies only to production');
+const httpsStaging = args['https-staging'] === 'true';
+if (httpsStaging && target !== 'staging') throw Error('HTTPS staging applies only to staging');
+const reviewProductionArtifact = args['review-production-artifact'] === 'true';
+if (reviewProductionArtifact && (target !== 'staging' || !httpsStaging)) throw Error('Production artifact review requires target staging and HTTPS staging');
+const edgePrivate = args['edge-private'] === 'true';
+if (edgePrivate && target !== 'production') throw Error('Private production edge applies only to production');
+const privateEdge = httpsStaging || edgePrivate;
+const bindHost = privateEdge ? '172.10.0.202' : '127.0.0.1';
+const id = args.id || new Date().toISOString().replace(/[-:.]/g, '');
+if (!/^[a-zA-Z0-9_-]{1,64}$/.test(id)) throw Error('Invalid release ID');
+const dist = resolve(args.dist || 'dist');
+const server = resolve(args.server || '.local/site/server-dist');
+const failures = await checkArtifact(dist, target, { reviewProductionArtifact, httpsStaging });
+if (failures.length) throw Error('Artifact rejected: ' + failures.join(', '));
+for (const name of ['site-server.mjs','package.json','package-lock.json']) await readFile(join(server, name));
+const output = resolve(args.out || `.local/site/releases/${target}-${id}`);
+await mkdir(dirname(output), { recursive: true });
+await mkdir(output); // Existing releases are immutable; never overwrite a prepared candidate.
+await cp(dist, join(output, 'public'), { recursive: true });
+await mkdir(join(output, 'server'));
+for (const name of ['site-server.mjs','package.json','package-lock.json']) await cp(join(server, name), join(output, 'server', name));
+await writeFile(join(output, 'Dockerfile'), `FROM node:22-alpine\nWORKDIR /app\nCOPY server/package*.json ./\nRUN npm ci --omit=dev --ignore-scripts && npm cache clean --force\nCOPY server/site-server.mjs ./\nUSER node\nCMD ["node", "site-server.mjs"]\n`);
+if (reviewProductionArtifact) await writeFile(join(output, 'site-review-hosting.caddy'), reviewHostingInclude(await readFile(join(dist, 'site-hosting.caddy'), 'utf8')));
+await writeFile(join(output, 'Caddyfile'), `{\n servers {\n  trusted_proxies static 172.10.0.105\n  trusted_proxies_strict\n  client_ip_headers X-Forwarded-For\n }\n}\n:80 {\n encode zstd gzip\n header {\n  -Server\n  X-Catalisa-Site-Release ${id}\n  X-Content-Type-Options nosniff\n  X-Frame-Options DENY\n  Referrer-Policy strict-origin-when-cross-origin\n  Permissions-Policy "camera=(), microphone=(), geolocation=()"\n }\n @site_www host www.catalisa.io\n redir @site_www https://catalisa.io{uri} 308\n${reviewProductionArtifact ? reviewHeaders : ''}${privateEdge ? ' @unexpected_peer not remote_ip 172.10.0.105 172.10.0.202 127.0.0.1 ::1\n respond @unexpected_peer 403\n' : ''}${reviewProductionArtifact ? reviewRobots : ''} @api path /api/site/* /api/internal/handoff-events\n handle @api {\n  reverse_proxy 127.0.0.1:8096 {\n   header_up X-Real-IP {client_ip}\n  }\n }\n handle /healthz {\n  reverse_proxy 127.0.0.1:8096\n }\n import /etc/caddy/${reviewProductionArtifact ? 'site-review-hosting.caddy' : 'site-hosting.caddy'}\n}\n`);
+const port = target === 'staging' ? 18181 : productionSlot === 'green' ? 18183 : 18182;
+const imageTarget = target + (productionSlot === 'green' ? '-green' : '');
+await writeFile(join(output, 'compose.yaml'), `services:\n  caddy:\n    image: caddy:2-alpine\n    restart: unless-stopped\n    ports: ["${bindHost}:${port}:80"]\n    volumes:\n      - ./public:/srv:ro\n      - ./Caddyfile:/etc/caddy/Caddyfile:ro\n      - ./public/site-hosting.caddy:/etc/caddy/site-hosting.caddy:ro\n${reviewProductionArtifact ? '      - ./site-review-hosting.caddy:/etc/caddy/site-review-hosting.caddy:ro\n' : ''}    read_only: true\n    tmpfs: [/data, /config]\n    cap_drop: [ALL]\n    cap_add: [NET_BIND_SERVICE]\n    security_opt: [no-new-privileges:true]\n  api:\n    image: catalisa-site-${imageTarget}-api:${id.toLowerCase()}\n    build: .\n    restart: unless-stopped\n    network_mode: service:caddy\n    env_file: [../../runtime.env]\n    environment:\n      NODE_ENV: production\n      SITE_LISTEN_HOST: 127.0.0.1\n      SITE_LISTEN_PORT: "8096"\n      SITE_TRUSTED_PROXIES: "127.0.0.1,::1"\n    read_only: true\n    tmpfs: [/tmp]\n    cap_drop: [ALL]\n    security_opt: [no-new-privileges:true]\n`);
+const files = {};
+async function digest(path) { for (const entry of await readdir(path, { withFileTypes: true })) { const file = join(path, entry.name); if (entry.isDirectory()) await digest(file); else files[relative(output, file)] = createHash('sha256').update(await readFile(file)).digest('hex'); } }
+await digest(output);
+const treeSha256 = prefix => createHash('sha256').update(JSON.stringify(Object.fromEntries(Object.entries(files).filter(([name]) => name.startsWith(prefix+'/')).map(([name,hash]) => [name.slice(prefix.length+1),hash]).sort(([left],[right]) => left.localeCompare(right))))).digest('hex');
+await writeFile(join(output, 'release.json'), JSON.stringify({ id, target, port, ...(productionSlot ? {productionSlot} : {}), bindHost, httpsStaging, edgePrivate, reviewProductionArtifact, preparedAt: new Date().toISOString(), publicArtifactSha256: treeSha256('public'), serverArtifactSha256: treeSha256('server'), files }, null, 2) + '\n');
+console.info(JSON.stringify({ output, id, target, port, ...(productionSlot ? {productionSlot} : {}), reviewProductionArtifact, deployed: false }));

@@ -1,0 +1,65 @@
+{
+  "name": "Identidade transitória Catalisa",
+  "version": "catalisa-transitoria-2026-10",
+  "status": "aprovada pelo usuário",
+  "approvedAt": "2026-10-21",
+  "approval": "perfeito use essa identidade em todo o relatorio ajuste o que for necessario ficou perfeito salve esse conhecimento para uso futuro como identidade transitoria o proximo passo vai ser melhorar isso para a identidade do novo site da catalisa ... por hora so adapte essa identidade para tudo do relatorio",
+  "scopeNow": "Todas as páginas e PDFs do relatório em entregas.interno.catalisa.app.",
+  "futureUse": "Ponto de partida aprovado para evoluir a identidade do novo site da Catalisa em uma próxima etapa.",
+  "notAuthorizedNow": "Redesenhar ou publicar o novo site da Catalisa, ou alterar interfaces dos produtos.",
+  "reference": "../../reports/2026-10-20-retrospectiva-24-meses/infografico.html",
+  "tokens": "identidade-transitoria.css",
+  "study": "referencias.html",
+  "direction": "direcao.html",
+  "principles": [
+    "Ruído vira estrutura na abertura; blocos e camadas explicam arquitetura.",
+    "Roxo #734B9C primário, amarelo #FDC234 secundário, laranja #FE8342 complementar, papel #F4F0E8 e tinta #171320.",
+    "Logotipo principal oficial Catalisa.: letras roxas e ponto amarelo, com capitalização e proporções do SVG original.",
+    "Inter local; títulos fortes, sans serif, sem itálico; metadados em monoespaçada.",
+    "Grade editorial visível, proporções variadas, áreas planas e geometria simples.",
+    "Um foco por composição; profundidade restrita a diagramas que explicam dependências.",
+    "Números com unidade, data, cenário e fonte; arte conceitual identificada sem falsa escala.",
+    "Celular com reorganização própria e controles acessíveis; nada essencial depende de hover ou animação.",
+    "A informação e as ferramentas existentes são preservadas ao adaptar a identidade."
+  ],
+  "rejected": [
+    "Logotipo redigitado em minúsculas ou preto, ou com ponto laranja.",
+    "Paleta alternativa proposta pelo Gemini no PDF não aprovado.",
+    "Serifas e a paleta pastel verde/ocre da versão editorial anterior do relatório.",
+    "Fotos genéricas, mascotes alheios, várias metáforas competindo e códigos decorativos sem significado.",
+    "Efeitos WebGL ou movimentos sem função, gráficos em perspectiva e métricas comerciais inventadas."
+  ],
+  "studyFiles": 72,
+  "brandingCorrection": "so um pequeno detalhe da identidade tb temos o amarelo nas cores que nao vi ser usado e o logo principal é o Catalisa. roxo com ponto amarelo leve isso em consideracao e inclua nas suas analises e ideias e docs",
+  "palette": {
+    "primary": "#734B9C",
+    "secondary": "#FDC234",
+    "complementaryAccent": "#FE8342",
+    "paper": "#F4F0E8",
+    "ink": "#171320"
+  },
+  "logo": {
+    "name": "Catalisa.",
+    "asset": "logo-full-color.svg",
+    "source": "/home/klederson/Projects/site.catalisa.io/public/brand/logo-full-color.svg",
+    "sha256": "3356b3d7c8bd7b68fdb830bdaefbaa90e4a681ab95885e9b73c54f58f6b6b4ab",
+    "letters": "roxo #734B9C",
+    "dot": "amarelo #FDC234",
+    "rules": [
+      "Usar o SVG oficial, sem redigitar a assinatura como texto.",
+      "Não trocar o ponto por laranja, alterar proporção, distorcer ou adicionar efeitos.",
+      "Preservar área livre e legibilidade em cada suporte."
+    ]
+  },
+  "colorRoles": {
+    "purple": "Marca, títulos e estrutura.",
+    "yellow": "Ponto do logotipo, pontos de catalisação e destaques em composição com roxo.",
+    "orange": "Acento complementar para percurso, ação e resultado; não substitui o amarelo da marca."
+  },
+  "ownership": {
+    "repository": "site.catalisa.io",
+    "since": "2026-10-22",
+    "reason": "Material transferido pelo usuário para continuar o redesign do site.",
+    "historicalSource": "wpp.bb.catalisa.io/docs/design/entregas-bauhaus"
+  }
+}

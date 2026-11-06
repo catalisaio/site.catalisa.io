@@ -1,0 +1,61 @@
+.c-site .p-detail{--detail-accent:#734b9c;--detail-bg:#f6f3ee;--detail-ink:#35213f;background:var(--detail-bg);color:var(--detail-ink)}
+.c-site .p-detail--credit{--detail-bg:#35213f;--detail-ink:#f6f3ee;--detail-accent:#fdc234}
+.c-site .p-detail--juridico{--detail-bg:#35213f;--detail-ink:#f6f3ee;--detail-accent:#d7b9ed}
+.c-site .p-detail--med{--detail-bg:#f0dfcd}
+.c-site .p-detail--biometrics{--detail-bg:#e9e0f0}
+.c-site .p-detail-breadcrumb{display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-size:11px;padding-top:25px;line-height:1.5}
+.c-site .p-detail-breadcrumb a{min-height:44px;display:inline-flex;align-items:center;border-bottom:1px solid transparent}
+.c-site .p-detail-breadcrumb a:hover{border-color:currentColor}
+.c-site .p-detail-hero{padding:30px 0 60px;overflow:hidden}
+.c-site .p-detail-layout{display:grid;grid-template-columns:1fr 1.1fr;gap:5%;align-items:center;min-height:530px}
+.c-site .p-detail-copy{padding:30px 0;position:relative;z-index:1;min-width:0}
+.c-site .p-detail .c-eyebrow{color:var(--detail-accent);font-family:var(--c-mono);font-size:10px;line-height:1.7;letter-spacing:.065em}
+.c-site .p-detail h1{font-size:clamp(55px,6.9vw,104px);font-weight:400;line-height:1.02;letter-spacing:-.068em;overflow-wrap:break-word}
+.c-site .p-detail-copy>p{font-size:19px;line-height:1.75;max-width:510px;margin:30px 0 35px;opacity:.9}
+.c-site .p-detail-actions{display:flex;flex-wrap:wrap;align-items:center;gap:20px 30px}
+.c-site .p-detail-button{display:inline-flex;align-items:center;justify-content:space-between;gap:40px;min-height:52px;background:var(--detail-accent);color:var(--detail-bg);padding:16px 20px;font-size:14px;line-height:1.5}
+.c-site .p-detail-read{display:inline-flex;gap:15px;align-items:center;font-size:12px;min-height:44px;border-bottom:1px solid currentColor}
+.c-site .p-detail-art{position:relative;isolation:isolate;min-width:0;aspect-ratio:1.1;transform:rotate(-3deg);background:#e5d8ed;box-shadow:15px 20px 0 #734b9c12}
+.c-site .p-detail-art .p-product-image,.c-site .p-detail-art>.p-product-art{width:100%;height:100%;object-fit:cover;display:block}
+.c-site .p-detail-art--banking{background:#eee9dd}
+.c-site .p-detail-art--credit{background:#e8ded8;box-shadow:15px 20px 0 #b49cc51f}
+.c-site .p-detail-art--med{background:#f3d3b5;color:#bc906e}
+.c-site .p-detail-art--juridico{background:#2c1b36;color:#d4b8e7;box-shadow:15px 20px 0 #b49cc51f}
+.c-site .p-detail-art--biometrics{background:#d9c8e7;color:#78578e}
+.c-site .p-detail-art--decision{background:#ecd7bf;color:#9d7a57}
+.c-site .p-detail-art-index{position:absolute;left:26px;top:25px;font:12px/1 var(--c-mono);color:#68418e;letter-spacing:.1em;z-index:2}
+.c-site .p-detail-art--juridico .p-detail-art-index{color:#d4b8e7}
+.c-site .p-detail-art-dot{position:absolute;width:45px;height:45px;border-radius:50%;background:#fdc234;right:-14px;bottom:35px;box-shadow:4px 5px 0 #b7984c33}
+.c-site .p-detail .p-people-art{height:100%;overflow:hidden}
+.c-site .p-detail .p-people-art img{height:100%;width:100%;object-fit:cover;object-position:60% 50%}
+.c-site .p-detail-highlights{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:38px;padding-top:28px;padding-bottom:55px;border-top:1px solid #8c72974d;scroll-margin-top:100px}
+.c-site .p-detail-highlights>div{min-width:0}
+.c-site .p-detail-highlights>div>span{display:block;font:10px/1 var(--c-mono);color:var(--detail-accent);margin-bottom:18px}
+.c-site .p-detail-highlights h2{font-weight:400;font-size:clamp(20px,2vw,29px);letter-spacing:-.04em;line-height:1.3}
+.c-site .p-detail-more{margin-top:45px;margin-bottom:70px;border-top:1px solid var(--c-rule);border-bottom:1px solid var(--c-rule)}
+.c-site .p-detail-more>summary{list-style:none;display:flex;justify-content:space-between;gap:25px;align-items:center;min-height:90px;font-size:19px;letter-spacing:-.025em;cursor:pointer}
+.c-site .p-detail-more>summary::-webkit-details-marker{display:none}
+.c-site .p-detail-more>summary>span:last-child{font-size:30px;color:#734b9c;font-weight:400;transition:transform .2s}
+.c-site .p-detail-more[open]>summary>span:last-child{transform:rotate(45deg)}
+.c-site .p-detail-expanded>.c-wrap,.c-site .p-detail-expanded>.c-ecosystem>.section>.c-wrap{width:100%}
+.c-site .p-detail-expanded .section{padding-block:55px}
+@media(max-width:1000px){.c-site .p-detail-layout{grid-template-columns:1fr 1fr;min-height:470px;gap:4%}.c-site .p-detail h1{font-size:clamp(47px,6.5vw,75px)}.c-site .p-detail-copy>p{font-size:17px}.c-site .p-detail-art{aspect-ratio:.9}}
+@media(max-width:760px){.c-site .p-detail .c-wrap{width:calc(100% - 44px)}.c-site .p-detail-hero{padding:15px 0 45px}.c-site .p-detail-layout{grid-template-columns:1fr;gap:22px;min-height:0}.c-site .p-detail-copy{padding:20px 0 5px}.c-site .p-detail h1{font-size:clamp(43px,10vw,68px)}.c-site .p-detail-copy>p{font-size:17px;margin:24px 0}.c-site .p-detail-art{aspect-ratio:1.2;margin:12px 8px 10px;transform:rotate(-2deg)}.c-site .p-detail-art-index{font-size:10px;left:20px;top:20px}.c-site .p-detail-art-dot{width:29px;height:29px;right:-10px;bottom:25px}.c-site .p-detail-highlights{grid-template-columns:1fr;gap:22px;padding-bottom:40px}.c-site .p-detail-highlights>div{display:grid;grid-template-columns:24px 1fr;gap:14px;align-items:baseline}.c-site .p-detail-highlights>div>span{margin:0}.c-site .p-detail-highlights h2{font-size:22px}.c-site .p-detail-button{font-size:13px;gap:20px}.c-site .p-detail-more{margin-top:25px;margin-bottom:45px}.c-site .p-detail-more>summary{font-size:17px;min-height:80px}}
+@media(prefers-reduced-motion:reduce){.c-site .p-detail-more>summary>span:last-child{transition:none}}
+.c-site .p-financial-hero-primary{display:inline-flex;gap:30px;align-items:center;min-height:50px;padding:14px 20px;background:#734b9c;color:#fff;font:14px/1.5 var(--c-font);margin:0 22px 18px 0}
+.c-site .cr-page .p-financial-hero-primary{background:#fdc234;color:#35213f}
+.c-site .bk-page .p-detail-expanded>.c-wrap,.c-site .cr-page .p-detail-expanded>.c-wrap{width:100%}
+.c-site .cr-page .p-detail-more{color:#35213f}
+/* The compact page no longer relies on the old following section to clear this image. */
+.c-site .cr-page .cr-hero{padding-bottom:45px}
+.c-site .cr-page .cr-hero-screen{margin-bottom:0}
+.c-site .cr-page .cr-hero-description{flex-wrap:wrap;gap:22px 30px;align-items:center}
+.c-site .cr-page .cr-hero-description>.p-financial-hero-primary{flex-shrink:0;margin:0}
+.c-site .cr-page .cr-hero-description>button{font-size:10px;min-height:44px;margin-bottom:0}
+.c-site .cr-page .p-detail-expanded .cr-intro{padding-top:60px}
+/* Legacy financial text rules are broad; preserve the new CTA contrast explicitly. */
+.c-site #bk-page .p-financial-hero-primary,.c-site #bk-page .p-financial-hero-primary>span{color:#fff}
+.c-site #cr-page .p-financial-hero-primary,.c-site #cr-page .p-financial-hero-primary>span{color:#35213f}
+@media(max-width:700px){.c-site .cr-page .cr-journey-tabs{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 18px}.c-site .cr-page .cr-journey-tabs>button{min-width:0;white-space:normal}}
+/* Long translated product names stay intact at the smallest viewport. */
+.c-site .p-detail--long-name h1{font-size:clamp(32px,4.4vw,64px)}

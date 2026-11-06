@@ -1,0 +1,21 @@
+{
+  "checkedAt": "2026-10-27T00:28:30.501Z",
+  "passed": true,
+  "scope": "Local artifact fulfilled under staging HTTPS hostname, public SDK GET only, every collection intercepted204; no data sent to either project or GA.",
+  "checks": [
+    "No vendors before consent; grant loads only the separate staging Clarity, no Google/prod project",
+    "Public → Contact clears document and loads no replay on the conversation",
+    "Initial private → public clears old DOM and private referrer prevents replay in the new document",
+    "All14 localized conversations, private query, invite and unknown page load no replay despite old consent",
+    "Revocation persists, reload starts no SDK and staging preserves Google cookies"
+  ],
+  "requestedScripts": [
+    "https://www.clarity.ms/tag/z40bi9hrk8",
+    "https://www.clarity.ms/tag/z40bi9hrk8",
+    "https://scripts.clarity.ms/0.8.73-beta/clarity.js"
+  ],
+  "googleRequests": [],
+  "collectionsIntercepted": 3,
+  "externalCollectionDelivered": false,
+  "errors": []
+}

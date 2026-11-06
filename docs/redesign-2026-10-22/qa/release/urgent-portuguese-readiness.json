@@ -1,0 +1,24 @@
+{
+  "updatedAt": "2026-10-26T18:45:43.617Z",
+  "releaseId": "20261026-seo-final",
+  "stagingUrl": "https://site-staging.catalisa.io",
+  "productionPublished": false,
+  "userRequestedUrgentPublication": true,
+  "pendingScopeDecision": "Publish the validated Portuguese candidate now, deferring unfinished localization/French/media replacement, or finish that expanded scope before publication. An async question is pending; no answer is inferred.",
+  "localizationMediaCandidateSeparate": true,
+  "publicArtifactSha256": "5bae5a5cfbd2b3da4e9dd9017d4dc462ca707bce8b3a93b4c0df97ebf5ffe6c7",
+  "serverArtifactSha256": "cd3b9e685a573c75cc8adc726fbfc3673887fa1a91f8df5f2a802c331ed5ab74",
+  "identicalPublicAndServer": true,
+  "directContactPassed": true,
+  "directElapsedMs": 4959,
+  "inboxPassed": true,
+  "productionResourcesRealPassed": true,
+  "preflightPassed": true,
+  "publicHttpsSmoke": "staging-http-public.json",
+  "rollbackPlan": {
+    "current": "legacy8081",
+    "candidate": "18182",
+    "readOnlyPlanVerified": true
+  },
+  "scope": "Concrete immutable PT release, existing staging validation and renewed direct/inbox/HTTP smoke. This is not approval to waive remaining languages/media and does not authorize a different artifact."
+}

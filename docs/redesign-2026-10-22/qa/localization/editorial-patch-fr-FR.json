@@ -1,0 +1,972 @@
+{
+  "locale": "fr-FR",
+  "generatedAt": "2026-10-26T19:08:47.179Z",
+  "corrections": [
+    {
+      "source": "O que põe",
+      "previous": "Ce qui est en jeu",
+      "text": "Ce qui met",
+      "reason": "Fragmento de frase quebrada em linha; a tradução completou o sentido e mudou o papel do trecho."
+    },
+    {
+      "source": "VEJA A MESA GANHAR ESPAÇO",
+      "previous": "VOYEZ LE BACK-OFFICE GAGNER DE LA MARGE",
+      "text": "VOYEZ LE BACK-OFFICE GAGNER EN MARGE DE MANŒUVRE",
+      "reason": "No contexto financeiro, «marge» soa como margem financeira; «espaço» aqui é capacidade operacional."
+    },
+    {
+      "source": "Política de crédito na mesa",
+      "previous": "Politique de crédit au comité",
+      "text": "Politique de crédit au back-office",
+      "reason": "«Mesa» foi traduzida como «comité», que muda o sentido; uniformizado como «back-office»."
+    },
+    {
+      "source": "Modalidade e lastro · condições comerciais · alçadas da mesa",
+      "previous": "Modalité et garantie · conditions commerciales · niveaux de délégation du comité",
+      "text": "Modalité et garantie · conditions commerciales · niveaux de délégation du back-office",
+      "reason": "Terminologia consistente para «mesa»; «comité» sugere um órgão colegiado que não existe na origem."
+    },
+    {
+      "source": "Ampliar acordos e renegociação na mesa",
+      "previous": "Agrandir accords et renégociation au comité",
+      "text": "Agrandir accords et renégociation au back-office",
+      "reason": "Terminologia consistente para «mesa»."
+    },
+    {
+      "source": "Uma proposta chega.<br>O contexto vem junto.",
+      "previous": "Une demande arrive.<br>Le contexte l'accompagne.",
+      "text": "Une proposition arrive.<br>Le contexte l'accompagne.",
+      "reason": "«Proposta» é traduzida como «proposition» no restante do conteúdo de crédito."
+    },
+    {
+      "source": "Mais contrato.",
+      "previous": "Plus de contrat.",
+      "text": "Davantage de contrat.",
+      "reason": "«Plus de contrat» é ambíguo em francês e pode significar «nenhum contrato», o oposto do original."
+    },
+    {
+      "source": "Biometrics: prova de vida e comparação facial | Catalisa",
+      "previous": "Biometrics : preuve de vie et comparaison faciale | Catalisa",
+      "text": "Biométrie : preuve de vie et comparaison faciale | Catalisa",
+      "reason": "O nome genérico do produto Biometrics deve ser traduzido."
+    },
+    {
+      "source": "O exemplo interrompe a leitura do valor movimentável até esclarecer a divergência. Uma resposta incerta continua identificada como incerta.",
+      "previous": "L'exemple suspend la lecture du montant disponible jusqu'à ce que l'écart soit éclairci. Une réponse incertaine reste identifiée comme incertaine.",
+      "text": "L'exemple suspend la lecture du montant disponible pour les virements jusqu'à ce que l'écart soit éclairci. Une réponse incertaine reste identifiée comme incertaine.",
+      "reason": "«Valor movimentável» é o saldo disponível para transferências; a tradução precisa explicitar isso."
+    },
+    {
+      "source": "Logos, símbolos, avatares, capas e guia de uso.",
+      "previous": "Logos, symboles, avatars, couvertures et guide d'utilisation.",
+      "text": "Logos, symboles, avatars, visuels de couverture et guide d'utilisation.",
+      "reason": "Termo uniformizado com «visuels de couverture», usado nas demais páginas de recursos."
+    },
+    {
+      "source": "Reserva identificada",
+      "previous": "Réservation identifiée",
+      "text": "Réserve identifiée",
+      "reason": "No contexto financeiro, 'reserva' é uma reserva de saldo, não uma 'réservation' (agendamento)."
+    },
+    {
+      "source": "Informe WhatsApp com país e DDD, como +5511999999999.",
+      "previous": "Indiquez un numéro WhatsApp avec l'indicatif du pays et la zone, par exemple +5511999999999.",
+      "text": "Indiquez un numéro WhatsApp avec l'indicatif du pays et l'indicatif régional (DDD), par exemple +5511999999999.",
+      "reason": "'la zone' soa artificial; 'indicatif régional' é o termo correto, e manter DDD preserva a referência brasileira."
+    },
+    {
+      "source": "Tutor",
+      "previous": "Tuteur",
+      "text": "Propriétaire",
+      "reason": "'Tuteur' não se usa para o dono de um animal; assim fica consistente com 'Le propriétaire' em r_1c0ef9f0ff1f1392."
+    },
+    {
+      "source": "Copiloto para uma mesa de crédito",
+      "previous": "Copilote pour un comité de crédit",
+      "text": "Copilote pour un poste d'analyse de crédit",
+      "reason": "'Comité' muda o sentido de 'mesa de crédito'; assim fica consistente com 'poste d'analyse' usado nas outras telas."
+    },
+    {
+      "source": "O material de referência reúne propostas de modalidades diferentes na mesma mesa.",
+      "previous": "Le support de référence rassemble des demandes de modalités différentes au sein du même comité.",
+      "text": "Le support de référence rassemble des demandes de modalités différentes sur le même poste d'analyse.",
+      "reason": "Mantém a mesma terminologia para 'mesa' ('poste d'analyse')."
+    },
+    {
+      "source": "Percurso ilustrativo: Proposta recebida, Consultar cadastro, Consultar documentos, Reunir informações, Aplicar a política",
+      "previous": "Parcours illustratif : Proposition reçue, Consulter le dossier client, Consulter les documents, Rassembler les informations, Appliquer la politique",
+      "text": "Parcours illustratif : Demande reçue, Consulter le dossier client, Consulter les documents, Rassembler les informations, Appliquer la politique",
+      "reason": "Uniformiza 'proposta' de crédito como 'demande', igual a r_15697cdd48d038bd."
+    },
+    {
+      "source": "Uma proposta",
+      "previous": "Une proposition",
+      "text": "Une demande",
+      "reason": "Uniformiza 'proposta' de crédito como 'demande'."
+    },
+    {
+      "source": "Um recorte útil pode ser a simulação de uma proposta, a verificação de identidade ou a formalização. Ele precisa ter entrada, saída, responsável e resultado observável. Escolher uma capacidade só porque é simples de extrair pode produzir uma API nova sem melhorar o trabalho de ninguém.",
+      "previous": "Un périmètre utile peut être la simulation d'une proposition, la vérification d'identité ou la formalisation. Il doit avoir une entrée, une sortie, un responsable et un résultat observable. Choisir une capacité uniquement parce qu'elle est simple à extraire peut produire une nouvelle API sans améliorer le travail de qui que ce soit.",
+      "text": "Un périmètre utile peut être la simulation d'une demande, la vérification d'identité ou la formalisation. Il doit avoir une entrée, une sortie, un responsable et un résultat observable. Choisir une capacité uniquement parce qu'elle est simple à extraire peut produire une nouvelle API sans améliorer le travail de qui que ce soit.",
+      "reason": "Uniformiza 'proposta' de crédito como 'demande'."
+    },
+    {
+      "source": "O PRODUTO É MAIS DO QUE A PROPOSTA",
+      "previous": "LE PRODUIT VA AU-DELÀ DE LA PROPOSITION",
+      "text": "LE PRODUIT VA AU-DELÀ DE LA DEMANDE",
+      "reason": "Uniformiza 'proposta' de crédito como 'demande'."
+    },
+    {
+      "source": "Market insights require explicit matching published policy approval",
+      "previous": "Les insights de marché exigent une approbation explicite et correspondante de la politique publiée",
+      "text": "Les insights de marché exigent une approbation explicite correspondant à la politique publiée",
+      "reason": "A construção 'explicite et correspondante de la politique' estava gramaticalmente estranha."
+    },
+    {
+      "source": "Conheça produtos e experiências que combinam capacidades Catalisa em contextos de banking, crédito, saúde, jurídico, recrutamento, identidade e decisão.",
+      "previous": "Découvrez des produits et des expériences qui combinent les capacités Catalisa dans des contextes de banque, de crédit, de santé, de juridique, de recrutement, d'identité et de décision.",
+      "text": "Découvrez des produits et des expériences qui combinent les capacités Catalisa dans des contextes bancaires, de crédit, de santé, juridiques, de recrutement, d'identité et de décision.",
+      "reason": "'de juridique' e 'de banque' estavam agramaticais; troquei por adjetivos."
+    },
+    {
+      "source": "Parcela, amortização, IOF e CET como API testada, não como planilha",
+      "previous": "Échéance, amortissement, IOF et CET sous forme d'API testée, pas de tableur",
+      "text": "Échéance, amortissement, IOF et CET sous forme d'API testée, et non de tableur",
+      "reason": "'pas de tableur' ficava ambíguo; a oposição agora está clara."
+    },
+    {
+      "source": "Organize meios e acompanhamento de pagamento para que a operação saiba o que foi cobrado e recebido.",
+      "previous": "Organisez les moyens et le suivi des paiements pour que l'équipe sache ce qui a été facturé et encaissé.",
+      "text": "Organisez les moyens et le suivi des paiements pour que l'activité sache ce qui a été facturé et encaissé.",
+      "reason": "'operação' é traduzida como 'activité' no resto do site; 'l'équipe' mudava o sujeito."
+    },
+    {
+      "source": "Marca sobre papel",
+      "previous": "Logo sur papier",
+      "text": "Marque sur papier",
+      "reason": "Fica consistente com 'marque' usado nas outras telas do guia de estilo."
+    },
+    {
+      "source": "Catálogo de produtos financeiros com versão congelada em cada contrato. Consulte aplicações, estágio e documentação.",
+      "previous": "Catalogue de produits financiers avec une version figée dans chaque contrat. Consultez les applications, le stade et la documentation.",
+      "text": "Catalogue de produits financiers avec une version figée dans chaque contrat. Consultez les cas d'usage, le stade et la documentation.",
+      "reason": "Padronização: 'aplicações' = casos de uso (evita ambiguidade com 'apps'), consistente com r_398008c085f7ed8d."
+    },
+    {
+      "source": "Cor, texto e aviso do aplicativo mudam hoje, sem passar pela loja. Consulte aplicações, estágio e documentação.",
+      "previous": "La couleur, le texte et le message de l'application changent dès aujourd'hui, sans passer par le store. Consultez les applications, le stade et la documentation.",
+      "text": "La couleur, le texte et le message de l'application changent dès aujourd'hui, sans passer par le store. Consultez les cas d'usage, le stade et la documentation.",
+      "reason": "Padronização de 'aplicações' como 'cas d'usage' nas descrições SEO."
+    },
+    {
+      "source": "Selected store does not support durable market outbox discovery",
+      "previous": "Le magasin de données sélectionné ne prend pas en charge la découverte durable de l'outbox de marché",
+      "text": "Le stockage sélectionné ne prend pas en charge la découverte durable de l'outbox de marché",
+      "reason": "'Magasin de données' soa artificial; 'stockage' é consistente com r_2cb96f004b67faef."
+    },
+    {
+      "source": "Invalid store configuration",
+      "previous": "Configuration du magasin de données invalide",
+      "text": "Configuration du stockage invalide",
+      "reason": "Terminologia consistente para 'store' ('stockage')."
+    },
+    {
+      "source": "Mesa + portal",
+      "previous": "Back-office + portail",
+      "text": "Cellule d'analyse + portail",
+      "reason": "'Mesa' é traduzida como 'cellule d'analyse' no restante do site; 'back-office' é inconsistente."
+    },
+    {
+      "source": "Estágio do building block",
+      "previous": "Stade du building block",
+      "text": "Stade du bloc",
+      "reason": "O termo genérico 'building block' é traduzido como 'bloc' no restante do site."
+    },
+    {
+      "source": "O assistente responde no número da clínica com o material da casa: horários, convênios, endereço e especialidades.",
+      "previous": "L'assistant répond sur le numéro de la clinique avec les informations de l'établissement : horaires, mutuelles acceptées, adresse et spécialités.",
+      "text": "L'assistant répond sur le numéro de la clinique avec les informations de l'établissement : horaires, plans de santé acceptés, adresse et spécialités.",
+      "reason": "'Mutuelles' é um equivalente local francês; 'convênios' são planos de saúde brasileiros, e o escopo original deve ser mantido."
+    },
+    {
+      "source": "Lista de operações no material de referência de crédito.",
+      "previous": "Liste des opérations dans le support de référence crédit.",
+      "text": "Liste des opérations dans le support de référence de crédit.",
+      "reason": "Falta a preposição 'de' em 'support de référence crédit'."
+    },
+    {
+      "source": "Sala de consulta, transcrição e apoio ao profissional durante o encontro.",
+      "previous": "Salle de consultation, transcription et assistance au professionnel pendant la consultation.",
+      "text": "Salle de consultation, transcription et assistance au professionnel pendant le rendez-vous.",
+      "reason": "Evita repetir 'consultation' e traduz melhor 'encontro'."
+    },
+    {
+      "source": "Analise dados que o cliente autorizou compartilhar.",
+      "previous": "Analysez les données que le client a autorisé à partager.",
+      "text": "Analysez les données dont le client a autorisé le partage.",
+      "reason": "Construção «a autorisé à partager» é agramatical; reformulação natural."
+    },
+    {
+      "source": "Quero organizar uma oficina com pedido por WhatsApp, fotos do veículo e agendamento de avaliação.",
+      "previous": "Je veux organiser un garage avec commande par WhatsApp, photos du véhicule et prise de rendez-vous pour l’évaluation.",
+      "text": "Je veux structurer l’activité d’un garage avec commande par WhatsApp, photos du véhicule et prise de rendez-vous pour l’évaluation.",
+      "reason": "«organiser un garage» é literal e ambíguo; trata-se de organizar a operação da oficina."
+    },
+    {
+      "source": "movimentáveis.",
+      "previous": "déplaçables.",
+      "text": "disponibles pour les virements.",
+      "reason": "«Movimentáveis» refere-se a saldo disponível para movimentação, não a algo «déplaçable»."
+    },
+    {
+      "source": "Serviços bancários e autorizações ficam nas capacidades responsáveis. Explicar o saldo não autoriza movimentar dinheiro.",
+      "previous": "Les services bancaires et les autorisations restent dans les fonctionnalités responsables. Expliquer le solde n’autorise pas à déplacer de l’argent.",
+      "text": "Les services bancaires et les autorisations restent dans les capacités responsables. Expliquer le solde n’autorise pas à effectuer des mouvements de fonds.",
+      "reason": "Terminologia consistente («capacités») e «déplacer de l’argent» é coloquial/impreciso."
+    },
+    {
+      "source": "Ampliar Carteira na mesa de crédito",
+      "previous": "Agrandir Portefeuille dans le bureau de crédit",
+      "text": "Agrandir Portefeuille dans la cellule de crédit",
+      "reason": "«Bureau de crédit» significa birô de crédito; «mesa» é a equipe de análise (consistência com «cellule»)."
+    },
+    {
+      "source": "Mesa / Fila de análise ↗",
+      "previous": "Bureau / File d’analyse ↗",
+      "text": "Cellule / File d’analyse ↗",
+      "reason": "Consistência terminológica de «mesa» com «cellule d’analyse»."
+    },
+    {
+      "source": "A esteira reúne as fontes. O motor aplica a política publicada e versionada.",
+      "previous": "La chaîne de traitement réunit les sources. Le moteur applique la politique publiée et versionnée.",
+      "text": "Le pipeline réunit les sources. Le moteur applique la politique publiée et versionnée.",
+      "reason": "Consistência: «esteira» traduzida como «pipeline» em outro ponto."
+    },
+    {
+      "source": "WhatsApp oficial da Meta, multi-tenant, do primeiro template ao atendimento humano. Consulte aplicações, estágio e documentação.",
+      "previous": "WhatsApp officiel de Meta, multi-tenant, du premier template à la prise en charge humaine. Consultez les applications, le stade de maturité et la documentation.",
+      "text": "WhatsApp officiel de Meta, multi-tenant, du premier template à la prise en charge humaine. Consultez les cas d’usage, le stade et la documentation.",
+      "reason": "Consistência com as demais descrições SEO («cas d’usage, le stade»)."
+    },
+    {
+      "source": "Ler A IA respondeu. A operação aconteceu?",
+      "previous": "Lire L’IA a répondu. L’opération a-t-elle eu lieu ?",
+      "text": "Lire « L’IA a répondu. L’opération a-t-elle eu lieu ? »",
+      "reason": "Consistência com o padrão «Lire « … »» usado nos outros links de leitura."
+    },
+    {
+      "source": "O provedor falhou. E agora?",
+      "previous": "Le fournisseur est en échec. Et maintenant ?",
+      "text": "Le fournisseur est tombé en panne. Et maintenant ?",
+      "reason": "«est en échec» soa artificial; formulação natural."
+    },
+    {
+      "source": "Em Alpha, com cobertura parcial da jornada. Serviços de conta e dinheiro ficam nas capacidades bancárias; consulte as funções disponíveis.",
+      "previous": "En Alpha, avec une couverture partielle du parcours. Les services de compte et de flux financiers relèvent des capacités bancaires ; consultez les fonctions disponibles.",
+      "text": "En alpha, avec une couverture partielle du parcours. Les services de compte et de flux financiers relèvent des capacités bancaires ; consultez les fonctions disponibles.",
+      "reason": "Consistência tipográfica do estágio com «En bêta» (minúscula)."
+    },
+    {
+      "source": "Resumo editorial baseado na documentação da capacidade. Exemplos ilustram aplicações possíveis; resultados e disponibilidade dependem da composição e das integrações.",
+      "previous": "Résumé éditorial fondé sur la documentation de la fonctionnalité. Les exemples illustrent des applications possibles ; les résultats et la disponibilité dépendent de la composition et des intégrations.",
+      "text": "Résumé éditorial fondé sur la documentation de la capacité. Les exemples illustrent des applications possibles ; les résultats et la disponibilité dépendent de la composition et des intégrations.",
+      "reason": "Terminologia consistente: «capacidade» = «capacité»."
+    },
+    {
+      "source": "Ele organiza a ordem, as condições e as informações que cada passo utiliza. As capacidades fazem o trabalho; o fluxo dá sentido às conexões.",
+      "previous": "Il organise l’ordre, les conditions et les informations utilisées à chaque étape. Les fonctionnalités font le travail ; le flux donne du sens aux connexions.",
+      "text": "Il organise l’ordre, les conditions et les informations utilisées à chaque étape. Les capacités font le travail ; le flux donne du sens aux connexions.",
+      "reason": "Terminologia consistente: «capacidades» = «capacités»."
+    },
+    {
+      "source": "A capacidade mantém sua responsabilidade.",
+      "previous": "La fonctionnalité conserve sa responsabilité.",
+      "text": "La capacité conserve sa responsabilité.",
+      "reason": "Terminologia consistente: «capacidade» = «capacité»."
+    },
+    {
+      "source": "Capacidade não encontrada",
+      "previous": "Fonctionnalité introuvable",
+      "text": "Capacité introuvable",
+      "reason": "Terminologia consistente: «capacidade» = «capacité»."
+    },
+    {
+      "source": "Gravação, acesso e uso das informações precisam de autorização e regras de guarda; processamento posterior depende da composição com outras capacidades.",
+      "previous": "L’enregistrement, l’accès et l’utilisation des informations nécessitent une autorisation et des règles de conservation ; tout traitement ultérieur dépend de la composition avec d’autres fonctionnalités.",
+      "text": "L’enregistrement, l’accès et l’utilisation des informations nécessitent une autorisation et des règles de conservation ; tout traitement ultérieur dépend de la composition avec d’autres capacités.",
+      "reason": "Terminologia consistente: «capacidades» = «capacités»."
+    },
+    {
+      "source": "Aplicativo, desktop e console apresentam saldo, extrato e operações a públicos diferentes. Identidade, permissões e capacidades bancárias sustentam os canais sem replicar a regra em cada tela.",
+      "previous": "L’application, le desktop et la console présentent le solde, le relevé et les opérations à des publics différents. L’identité, les permissions et les fonctionnalités bancaires soutiennent les canaux sans dupliquer la règle sur chaque écran.",
+      "text": "L’application, le desktop et la console présentent le solde, le relevé et les opérations à des publics différents. L’identité, les permissions et les capacités bancaires soutiennent les canaux sans dupliquer la règle sur chaque écran.",
+      "reason": "Terminologia consistente: «capacidades bancárias» = «capacités bancaires»."
+    },
+    {
+      "source": "Fila de análise da mesa",
+      "previous": "File d'analyse de la cellule",
+      "text": "File d’analyse de la cellule d’analyse",
+      "reason": "Consistência com «cellule d’analyse» usada nos demais textos sobre a mesa."
+    },
+    {
+      "source": "Pode movimentar",
+      "previous": "Peut effectuer des mouvements",
+      "text": "Disponible pour les virements",
+      "reason": "'Pode movimentar' indica saldo disponível para transferências, não permissão."
+    },
+    {
+      "source": "Neste exemplo, o valor informado pelo banco está disponível para movimentação.",
+      "previous": "Dans cet exemple, le montant communiqué par la banque est disponible pour des opérations.",
+      "text": "Dans cet exemple, le montant communiqué par la banque est disponible pour les virements.",
+      "reason": "Alinhar com o rótulo de saldo disponível para transferências."
+    },
+    {
+      "source": "Carteira na mesa de crédito",
+      "previous": "Portefeuille au bureau de crédit",
+      "text": "Portefeuille sur le poste de travail crédit",
+      "reason": "'Bureau de crédit' significa birô de crédito; 'mesa de crédito' é o espaço de trabalho da equipe de crédito."
+    },
+    {
+      "source": "Conheça a composição Med: atendimento pelo WhatsApp, contexto e agenda para clínicas, com revisão humana e responsabilidade pelo prontuário.",
+      "previous": "Découvrez la composition Santé : relation patient par WhatsApp, contexte et agenda pour les cliniques, avec relecture humaine et responsabilité du dossier médical.",
+      "text": "Découvrez la composition Santé : relation patient par WhatsApp, contexte et agenda pour les cliniques, avec revue humaine et responsabilité du dossier médical.",
+      "reason": "Terminologia consistente: 'revisão humana' = 'revue humaine' no restante do site."
+    },
+    {
+      "source": "Do zero: interface conecta ao seu backend, que integra capacidades e sistemas existentes",
+      "previous": "Depuis zéro : l’interface se connecte à votre backend, qui intègre les capacités et les systèmes existants",
+      "text": "À partir de zéro : l’interface se connecte à votre backend, qui intègre les capacités et les systèmes existants",
+      "reason": "'Depuis zéro' é decalque não idiomático em francês."
+    },
+    {
+      "source": "A parcela mostrada precisa ser a contratada",
+      "previous": "La mensualité affichée doit être celle contractée",
+      "text": "La mensualité affichée doit être celle souscrite",
+      "reason": "'Contractée' soa inadequado para parcela; 'souscrite' é o termo usual em crédito."
+    },
+    {
+      "source": "Uma falha de consulta gera uma pendência técnica. A jornada informa o próximo passo em vez de apresentar uma negativa de crédito.",
+      "previous": "Un échec de consultation génère une anomalie technique en attente. Le parcours indique l’étape suivante au lieu de présenter un refus de crédit.",
+      "text": "Un échec de consultation crée une tâche technique en attente. Le parcours indique l’étape suivante au lieu de présenter un refus de crédit.",
+      "reason": "'Anomalie technique en attente' é estranho; 'pendência técnica' = tarefa técnica pendente."
+    },
+    {
+      "source": "Sexta, às 9h",
+      "previous": "Vendredi, à 9 h",
+      "text": "Vendredi à 9 h",
+      "reason": "Vírgula desnecessária antes de \"à 9 h\"; forma natural em francês."
+    },
+    {
+      "source": "Captura da mesa com múltiplos produtos e dados do tenant de demonstração.",
+      "previous": "Capture du poste de travail avec plusieurs produits et des données du tenant de démonstration.",
+      "text": "Capture de l’espace de l’équipe d’analyse avec plusieurs produits et des données du tenant de démonstration.",
+      "reason": "Terminologia inconsistente para \"mesa\": em outros pares foi traduzido como \"équipe d’analyse\"."
+    },
+    {
+      "source": "Ampliar monitoramento de obrigações na mesa",
+      "previous": "Agrandir le suivi des obligations sur le poste de travail",
+      "text": "Agrandir le suivi des obligations dans l’espace de l’équipe d’analyse",
+      "reason": "Terminologia inconsistente para \"mesa\": em outros pares foi traduzido como \"équipe d’analyse\"."
+    },
+    {
+      "source": "Encontro ↗",
+      "previous": "Rencontre ↗",
+      "text": "Rendez-vous ↗",
+      "reason": "\"Encontro\" foi traduzido como \"Rendez-vous\" nos demais pares; uniformizar."
+    },
+    {
+      "source": "Que encontro você tem em mente?",
+      "previous": "Quelle rencontre avez-vous en tête ?",
+      "text": "Quel rendez-vous avez-vous en tête ?",
+      "reason": "Consistência com \"Encontro\" = \"Rendez-vous\" no mesmo arquivo contact.json."
+    },
+    {
+      "source": "O cliente combina informações pelo WhatsApp e a proposta continua sem esse histórico.",
+      "previous": "Le client convient d’informations par WhatsApp et la proposition se poursuit sans cet historique.",
+      "text": "Le client s’accorde sur certains points par WhatsApp et la proposition avance sans cet historique.",
+      "reason": "\"convient d’informations\" é calco literal e soa estranho em francês."
+    },
+    {
+      "source": "Provisiona e monitora sua conta Meta Business com a WABA no seu próprio nome. Consulte aplicações, estágio e documentação.",
+      "previous": "Provisionne et surveille votre compte Meta Business avec la WABA à votre propre nom. Consultez les demandes, leur étape et la documentation.",
+      "text": "Provisionne et surveille votre compte Meta Business avec la WABA à votre propre nom. Consultez les applications, leur stade et la documentation.",
+      "reason": "\"aplicações\" ≠ \"demandes\" e \"estágio\" deve seguir o padrão \"stade\" usado nas outras descrições SEO."
+    },
+    {
+      "source": "Uma proposta chega mais completa à decisão",
+      "previous": "Une proposition arrive plus complète à la décision",
+      "text": "Une proposition plus complète arrive à l’étape de décision",
+      "reason": "Construção literal e pouco natural em francês."
+    },
+    {
+      "source": "O valor movimentável está em conferência.",
+      "previous": "Le montant disponible est en cours de vérification.",
+      "text": "Le montant disponible pour les transferts est en cours de vérification.",
+      "reason": "\"Movimentável\" designa o saldo disponível para movimentações; explicitar conforme o glossário."
+    },
+    {
+      "source": "Aprofunde a arquitetura<span aria-hidden=\"true\">↗</span>",
+      "previous": "Approfondir l'architecture<span aria-hidden=\"true\">↗</span>",
+      "text": "Approfondissez l’architecture<span aria-hidden=\"true\">↗</span>",
+      "reason": "Usar o imperativo, como nos demais CTAs (\"Explorez\")."
+    },
+    {
+      "source": "Mais produto.",
+      "previous": "Plus de produit.",
+      "text": "Davantage de produit.",
+      "reason": "\"Plus de produit\" é ambíguo em francês e pode ser lido como \"não há mais produto\"."
+    },
+    {
+      "source": "Força maior. Nenhuma das partes será responsável por atrasos ou falhas no cumprimento de suas obrigações decorrentes de eventos fora de seu controle razoável, incluindo desastres naturais, pandemias, guerras, greves, falhas de telecomunicações, atos governamentais ou falhas de infraestrutura de terceiros. A parte afetada deverá notificar a outra em até 5 (cinco) dias úteis após o início do evento.\n\nAnticorrupção. As partes declaram e garantem que conduzem seus negócios em conformidade com a legislação anticorrupção aplicável, incluindo a Lei n. 12.846/2013 (Lei Anticorrupção) e o Decreto n. 11.129/2022. Nenhuma das partes oferecerá, prometerá, pagará ou autorizará o pagamento de qualquer vantagem indevida a agentes públicos ou terceiros.\n\nCessão. O Usuário não poderá ceder ou transferir seus direitos e obrigações sob estes Termos sem o consentimento prévio e por escrito da Catalisa. A Catalisa poderá ceder estes Termos a qualquer afiliada ou em caso de fusão, aquisição ou venda de ativos, mediante notificação ao Usuário.\n\nIntegralidade. Estes Termos, juntamente com a Política de Privacidade e os documentos neles referenciados, constituem o acordo integral entre as partes e substituem todos os acordos anteriores, escritos ou verbais.\n\nAlterações. A Catalisa poderá modificar estes Termos a qualquer momento, comunicando as alterações com antecedência mínima de 30 (trinta) dias por email ou notificação na Plataforma. O uso continuado da Plataforma após o prazo de notificação constitui aceitação dos novos Termos. Caso discorde das alterações, o Usuário poderá rescindir o contrato conforme a Seção 17.\n\nIndependência das cláusulas. A invalidade ou inexequibilidade de qualquer cláusula destes Termos não afetará a validade das demais, que permanecerão em pleno vigor.\n\nRenúncia. A falha de qualquer das partes em exercer qualquer direito previsto nestes Termos não constituirá renúncia a tal direito.\n\nForo. Fica eleito o foro da Comarca de São Paulo, Estado de São Paulo, Brasil, para dirimir quaisquer controvérsias decorrentes destes Termos, com renúncia a qualquer outro, por mais privilegiado que seja.",
+      "previous": "Force majeure. Aucune des parties ne sera responsable des retards ou manquements dans l'exécution de ses obligations résultant d'événements échappant à son contrôle raisonnable, notamment les catastrophes naturelles, pandémies, guerres, grèves, défaillances des télécommunications, actes gouvernementaux ou défaillances d'infrastructures de tiers. La partie affectée devra en informer l'autre dans un délai de 5 (cinq) jours ouvrés à compter du début de l'événement.\n\nAnticorruption. Les parties déclarent et garantissent qu'elles exercent leurs activités conformément à la législation anticorruption applicable, notamment la loi n° 12.846/2013 (Lei Anticorrupção) et le décret n° 11.129/2022. Aucune des parties n'offrira, ne promettra, ne versera ni n'autorisera le versement d'un quelconque avantage indu à des agents publics ou à des tiers.\n\nCession. L'Utilisateur ne pourra céder ni transférer ses droits et obligations au titre des présentes Conditions sans le consentement préalable et écrit de Catalisa. Catalisa pourra céder les présentes Conditions à toute société affiliée ou en cas de fusion, d'acquisition ou de cession d'actifs, moyennant notification à l'Utilisateur.\n\nIntégralité. Les présentes Conditions, ainsi que la Politique de confidentialité et les documents qui y sont mentionnés, constituent l'intégralité de l'accord entre les parties et remplacent tous les accords antérieurs, écrits ou verbaux.\n\nModifications. Catalisa pourra modifier les présentes Conditions à tout moment, en communiquant les modifications avec un préavis minimum de 30 (trente) jours par e-mail ou par notification sur la Plateforme. La poursuite de l'utilisation de la Plateforme après le délai de notification vaut acceptation des nouvelles Conditions. En cas de désaccord avec les modifications, l'Utilisateur pourra résilier le contrat conformément à la Section 17.\n\nDivisibilité des clauses. La nullité ou l'inapplicabilité de toute clause des présentes Conditions n'affectera pas la validité des autres clauses, qui demeureront pleinement en vigueur.\n\nRenonciation. Le fait pour l'une des parties de ne pas exercer un droit prévu par les présentes Conditions ne vaudra pas renonciation à ce droit.\n\nJuridiction compétente. Le for de la Comarca de São Paulo, État de São Paulo, Brésil, est désigné pour trancher tout litige découlant des présentes Conditions, à l'exclusion de tout autre, aussi privilégié soit-il.",
+      "text": "Force majeure. Aucune des parties ne sera responsable des retards ou manquements dans l’exécution de ses obligations résultant d’événements échappant à son contrôle raisonnable, notamment les catastrophes naturelles, pandémies, guerres, grèves, défaillances des télécommunications, actes gouvernementaux ou défaillances d’infrastructures de tiers. La partie affectée devra en informer l’autre dans un délai de 5 (cinq) jours ouvrés à compter du début de l’événement.\n\nAnticorruption. Les parties déclarent et garantissent qu’elles exercent leurs activités conformément à la législation anticorruption applicable, notamment la loi n° 12.846/2013 (Lei Anticorrupção) et le décret n° 11.129/2022. Aucune des parties n’offrira, ne promettra, ne versera ni n’autorisera le versement d’un quelconque avantage indu à des agents publics ou à des tiers.\n\nCession. L’Utilisateur ne pourra céder ni transférer ses droits et obligations au titre des présentes Conditions sans le consentement préalable et écrit de Catalisa. Catalisa pourra céder les présentes Conditions à toute société affiliée ou en cas de fusion, d’acquisition ou de cession d’actifs, moyennant notification à l’Utilisateur.\n\nIntégralité. Les présentes Conditions, ainsi que la Politique de confidentialité et les documents qui y sont mentionnés, constituent l’intégralité de l’accord entre les parties et remplacent tous les accords antérieurs, écrits ou verbaux.\n\nModifications. Catalisa pourra modifier les présentes Conditions à tout moment, en communiquant les modifications avec un préavis minimum de 30 (trente) jours par e-mail ou par notification sur la Plateforme. La poursuite de l’utilisation de la Plateforme après le délai de notification vaut acceptation des nouvelles Conditions. En cas de désaccord avec les modifications, l’Utilisateur pourra résilier le contrat conformément à la Section 17.\n\nDivisibilité des clauses. La nullité ou l’inapplicabilité de toute clause des présentes Conditions n’affectera pas la validité des autres clauses, qui demeureront pleinement en vigueur.\n\nRenonciation. Le fait pour l’une des parties de ne pas exercer un droit prévu par les présentes Conditions ne vaudra pas renonciation à ce droit.\n\nJuridiction compétente. Les tribunaux de la Comarca de São Paulo, État de São Paulo, Brésil, sont désignés pour trancher tout litige découlant des présentes Conditions, à l’exclusion de tout autre, aussi privilégié soit-il.",
+      "reason": "\"Le for\" não é usual no francês jurídico da França; usar \"Les tribunaux\" sem alterar o foro brasileiro."
+    },
+    {
+      "source": "Ampliar Mesa / Fila de análise — Captura da mesa com múltiplos produtos e dados do tenant de demonstração.",
+      "previous": "Agrandir Bureau / File d’analyse — Capture du bureau avec plusieurs produits et données du tenant de démonstration.",
+      "text": "Agrandir Back-office / File d’analyse — Capture du back-office avec plusieurs produits et données du tenant de démonstration.",
+      "reason": "Terminologia inconsistente: \"Mesa\" é traduzida como \"Back-office\" nas demais strings."
+    },
+    {
+      "source": "Ampliar Mesa / Operações — Lista de operações no material de referência de crédito.",
+      "previous": "Agrandir Bureau / Opérations — Liste des opérations dans le support de référence crédit.",
+      "text": "Agrandir Back-office / Opérations — Liste des opérations dans le support de référence crédit.",
+      "reason": "Terminologia inconsistente: \"Mesa\" deve ser \"Back-office\", como em \"Back-office / Opérations ↗\"."
+    },
+    {
+      "source": "Ação preparada, sujeita à revisão",
+      "previous": "Action préparée, soumise à révision",
+      "text": "Action préparée, soumise à revue",
+      "reason": "Consistência: \"revisão\" é traduzida como \"revue\" no resto do site."
+    },
+    {
+      "source": "Delimita pessoas, organizações e permissões.",
+      "previous": "Délimite les personnes, les organisations et les permissions.",
+      "text": "Délimite les personnes, les organisations et les autorisations.",
+      "reason": "Consistência: \"permissões\" é traduzido como \"autorisations\" nas demais strings."
+    },
+    {
+      "source": "Ação e estado",
+      "previous": "Action et état",
+      "text": "Action et statut",
+      "reason": "Consistência: \"estado\" é traduzido como \"statut\" nas demais strings."
+    },
+    {
+      "source": "catalisa — versão Principal",
+      "previous": "catalisa — version principale",
+      "text": "catalisa — version Principale",
+      "reason": "Nome de variante da marca: manter a maiúscula, como em \"version Graphite\"."
+    },
+    {
+      "source": "c. — versão Branco",
+      "previous": "c. — version blanche",
+      "text": "c. — version Blanche",
+      "reason": "Nome de variante da marca: manter a maiúscula, como em \"version Graphite\"."
+    },
+    {
+      "source": "Sinais que orientam a pauta",
+      "previous": "Les signaux qui orientent l’ordre du jour",
+      "text": "Les signaux qui orientent nos sujets éditoriaux",
+      "reason": "Aqui \"pauta\" é a pauta editorial; \"ordre du jour\" significa a pauta de uma reunião."
+    },
+    {
+      "source": "Ter uma trilha significa registrar tudo?",
+      "previous": "Disposer d'une piste signifie-t-il tout enregistrer ?",
+      "text": "Disposer d’une piste d’audit signifie-t-il tout enregistrer ?",
+      "reason": "Aqui \"trilha\" é a trilha de auditoria; \"piste\" sozinho fica ambíguo."
+    },
+    {
+      "source": "Sala de vídeo com link de convidado, gravação e transcrição em português. Consulte aplicações, estágio e documentação.",
+      "previous": "Salle vidéo avec lien invité, enregistrement et transcription en portugais. Consultez les candidatures, l'étape et la documentation.",
+      "text": "Salle vidéo avec lien invité, enregistrement et transcription en portugais. Consultez les cas d’usage, le stade de maturité et la documentation.",
+      "reason": "\"aplicações\" foi traduzido como \"candidatures\" e \"estágio\" como \"étape\"; padronizado com as outras descrições de SEO."
+    },
+    {
+      "source": "Quem fez o quê, quando e o que mudou — para toda a plataforma, por organização. Consulte aplicações, estágio e documentação.",
+      "previous": "Qui a fait quoi, quand et ce qui a changé — pour toute la plateforme, par organisation. Consultez les applications, le stade et la documentation.",
+      "text": "Qui a fait quoi, quand et ce qui a changé — pour toute la plateforme, par organisation. Consultez les cas d’usage, le stade de maturité et la documentation.",
+      "reason": "Terminologia alinhada com as demais descrições de SEO (cas d’usage, stade de maturité)."
+    },
+    {
+      "source": "CRÉDITO E BANKING / CONTINUIDADE",
+      "previous": "CRÉDIT ET BANKING / CONTINUITÉ",
+      "text": "CRÉDIT ET SERVICES BANCAIRES / CONTINUITÉ",
+      "reason": "\"Banking\" ficou em inglês; usar o termo francês adotado em outras partes do texto."
+    },
+    {
+      "source": "POLÍTICA + MESA DE CRÉDITO",
+      "previous": "POLITIQUE + COMITÉ DE CRÉDIT",
+      "text": "POLITIQUE + DESK DE CRÉDIT",
+      "reason": "\"Mesa de crédito\" é a mesa operacional (desk), não um comitê; padronizado com \"desk\" usado em outras partes."
+    },
+    {
+      "source": "Uma posição que",
+      "previous": "Un poste qui",
+      "text": "Une position qui",
+      "reason": "No contexto bancário, \"posição\" é a posição/saldo da conta, não um cargo (\"poste\")."
+    },
+    {
+      "source": "Explore a composição ↗",
+      "previous": "Explorer la composition ↗",
+      "text": "Explorez la composition ↗",
+      "reason": "Imperativo padronizado com os demais CTAs (forma \"vous\")."
+    },
+    {
+      "source": "Crie seu produto de crédito.<br>Da proposta à vida da operação.",
+      "previous": "Créez votre produit de crédit.<br>De la demande à la vie de l'opération.",
+      "text": "Créez votre produit de crédit.<br>De la proposition à la vie de l'opération.",
+      "reason": "\"Proposta\" foi traduzido como \"proposition\" em outras partes do texto (UNE PROPOSITION, QUATRE MOMENTS)."
+    },
+    {
+      "source": "O que seria importante entendermos?",
+      "previous": "Qu'est-ce qu'il serait important pour nous de comprendre ?",
+      "text": "Qu’est-ce qui serait important que nous comprenions ?",
+      "reason": "A construção \"Qu'est-ce qu'il serait important pour nous\" é agramatical/pouco natural em francês."
+    },
+    {
+      "source": "Onde essa conexão faria mais diferença?",
+      "previous": "Où cette connexion ferait-elle le plus de différence ?",
+      "text": "Où cette connexion ferait-elle la plus grande différence ?",
+      "reason": "Formulação mais idiomática em francês."
+    },
+    {
+      "source": "Parâmetros do seu produto de crédito por API, sem constante escondida no código. Consulte aplicações, estágio e documentação.",
+      "previous": "Les paramètres de votre produit de crédit par API, sans constante cachée dans le code. Consultez les applications, le stade et la documentation.",
+      "text": "Les paramètres de votre produit de crédit par API, sans constante cachée dans le code. Consultez les cas d’usage, le stade de maturité et la documentation.",
+      "reason": "Padroniza a frase de SEO com as demais descrições (\"cas d’usage\", \"stade de maturité\")."
+    },
+    {
+      "source": "Login com Google, Microsoft, GitHub e Meta para as empresas que você atende. Consulte aplicações, estágio e documentação.",
+      "previous": "Connexion avec Google, Microsoft, GitHub et Meta pour les entreprises que vous servez. Consultez les applications, le stade et la documentation.",
+      "text": "Connexion avec Google, Microsoft, GitHub et Meta pour les entreprises que vous servez. Consultez les cas d’usage, le stade de maturité et la documentation.",
+      "reason": "Padroniza a frase de SEO com as demais descrições (\"cas d’usage\", \"stade de maturité\")."
+    },
+    {
+      "source": "Saber quanto você sabe de uma pessoa, e saber quando parou de saber. Consulte aplicações, estágio e documentação.",
+      "previous": "Savoir ce que vous savez d'une personne, et savoir quand vous avez cessé de le savoir. Consultez les applications, le stade et la documentation.",
+      "text": "Savoir ce que vous savez d'une personne, et savoir quand vous avez cessé de le savoir. Consultez les cas d’usage, le stade de maturité et la documentation.",
+      "reason": "Padroniza a frase de SEO com as demais descrições (\"cas d’usage\", \"stade de maturité\")."
+    },
+    {
+      "source": "Decision: políticas versionadas e decisões rastreáveis | Catalisa",
+      "previous": "Decision : politiques versionnées et décisions traçables | Catalisa",
+      "text": "Décision : politiques versionnées et décisions traçables | Catalisa",
+      "reason": "O nome genérico de produto Decision deve ser traduzido, de forma consistente com \"CATALISA / DÉCISION\"."
+    },
+    {
+      "source": "● Movimentável",
+      "previous": "● Mobilisable",
+      "text": "● Disponible pour les virements",
+      "reason": "\"Movimentável\" indica saldo disponível para movimentações. \"Mobilisable\" é ambíguo nesse contexto."
+    },
+    {
+      "source": "Decline",
+      "previous": "Refus",
+      "text": "Refuser",
+      "reason": "Rótulo de botão de consentimento: o verbo no infinitivo é o padrão em francês."
+    },
+    {
+      "source": "A proposta para na etapa de anexar extratos, com arquivos incompletos e formatos diferentes.",
+      "previous": "La demande bloque à l'étape de l'ajout des relevés, avec des fichiers incomplets et des formats différents.",
+      "text": "La demande est bloquée à l'étape de l'ajout des relevés, avec des fichiers incomplets et des formats différents.",
+      "reason": "\"Bloque\" usado de forma intransitiva soa coloquial. A forma correta é \"est bloquée\"."
+    },
+    {
+      "source": "O CRM enxerga mais da negociação",
+      "previous": "Le CRM voit davantage de la négociation",
+      "text": "Le CRM offre une meilleure visibilité sur la négociation",
+      "reason": "A tradução literal \"voit davantage de la négociation\" soa artificial em francês."
+    },
+    {
+      "source": "04 / A revisão humana precisa ter conteúdo",
+      "previous": "04 / La revue humaine doit avoir du contenu",
+      "text": "04 / La revue humaine doit avoir de la substance",
+      "reason": "\"Avoir du contenu\" é um decalque. \"De la substance\" transmite melhor a ideia."
+    },
+    {
+      "source": "A proposta continua de onde parou",
+      "previous": "La demande reprend là où elle s'était arrêtée",
+      "text": "La proposition reprend là où elle s'était arrêtée",
+      "reason": "\"Proposta\" significa proposta (proposition), não pedido (demande)."
+    },
+    {
+      "source": "Sem reserva",
+      "previous": "Sans réservation",
+      "text": "Sans réserve",
+      "reason": "No contexto de reserva financeira, \"réserve\" é o termo correto; \"réservation\" significa agendamento."
+    },
+    {
+      "source": "Biometrics: identidade, verificação e evidência | Catalisa",
+      "previous": "Biometrics : identité, vérification et preuves | Catalisa",
+      "text": "Biométrie : identité, vérification et preuves | Catalisa",
+      "reason": "O nome genérico do produto Biometrics deve ser traduzido."
+    },
+    {
+      "source": "Audit Trail está em Beta. Retenção declarada não significa eliminação automática; configuração, coleta e procedimentos operacionais precisam estar ativos. A integridade verificável da trilha tem limites documentados.",
+      "previous": "Audit Trail est en Bêta. Une durée de conservation déclarée ne signifie pas une suppression automatique ; la configuration, la collecte et les procédures opérationnelles doivent être actives. L'intégrité vérifiable de la piste comporte des limites documentées.",
+      "text": "Audit Trail est en bêta. Une durée de conservation déclarée ne signifie pas une suppression automatique ; la configuration, la collecte et les procédures opérationnelles doivent être actives. L'intégrité vérifiable de la piste comporte des limites documentées.",
+      "reason": "Grafia do estágio padronizada como \"bêta\", em minúsculas, como no restante do site."
+    },
+    {
+      "source": "O guia inclui o crédito pessoal entre as composições exploradas pela mesa.",
+      "previous": "Le guide inclut le crédit personnel parmi les compositions explorées par le desk.",
+      "text": "Le guide inclut le crédit personnel parmi les compositions explorées par le poste d'analyse.",
+      "reason": "Terminologia de \"mesa\" alinhada com \"poste d'analyse\", já usado em outras strings; \"desk\" é anglicismo."
+    },
+    {
+      "source": "acordos e renegociação na mesa",
+      "previous": "accords et renégociation au comptoir",
+      "text": "accords et renégociation sur le poste d'analyse",
+      "reason": "\"Comptoir\" é tradução errada de \"mesa\" (mesa de operação); terminologia uniformizada."
+    },
+    {
+      "source": "Aplicativo, desktop do titular e console de operação conectam a experiência de quem usa à rotina de quem cuida.",
+      "previous": "Application, poste de bureau du titulaire et console d'exploitation relient l'expérience de l'utilisateur au quotidien de ceux qui en prennent soin.",
+      "text": "Application, version desktop du titulaire et console d'exploitation relient l'expérience de l'utilisateur au quotidien de ceux qui en prennent soin.",
+      "reason": "Uniformiza \"desktop do titular\" com \"expérience/version desktop\", usado nas outras páginas."
+    },
+    {
+      "source": "O princípio ganha contexto",
+      "previous": "Le principe prend du contexte",
+      "text": "Le principe s'inscrit dans un contexte",
+      "reason": "\"Prend du contexte\" é um decalque pouco natural em francês."
+    },
+    {
+      "source": "A arquitetura ganha contexto",
+      "previous": "L'architecture prend du contexte",
+      "text": "L'architecture s'inscrit dans un contexte",
+      "reason": "\"Prend du contexte\" é um decalque pouco natural; mesma solução da string paralela."
+    },
+    {
+      "source": "Um dado pendente",
+      "previous": "Une donnée manquante",
+      "text": "Une donnée en attente",
+      "reason": "\"Pendente\" significa em espera, não \"faltante\" (manquante)."
+    },
+    {
+      "source": "A consulta encontra a agenda",
+      "previous": "La requête rejoint l'agenda",
+      "text": "La consultation rejoint l'agenda",
+      "reason": "No contexto de saúde, \"consulta\" é uma consulta médica, não uma requisição (requête)."
+    },
+    {
+      "source": "Revisão humana prevista nesta etapa. Uma pessoa confere as informações antes de prosseguir; esta prévia não aciona atendimento.",
+      "previous": "Revue humaine prévue à cette étape. Une personne vérifie les informations avant de poursuivre ; cette préversion ne déclenche aucune prise en charge.",
+      "text": "Revue humaine prévue à cette étape. Une personne vérifie les informations avant de poursuivre ; cet aperçu ne déclenche aucune prise en charge.",
+      "reason": "Uniformiza \"prévia\" como \"aperçu\", termo usado em todo o site."
+    },
+    {
+      "source": "A reserva estruturada de R$ 200,00 reduz o que pode ser movimentado para R$ 100,00.",
+      "previous": "La réserve structurée de 200,00 R$ réduit le montant mobilisable à 100,00 R$.",
+      "text": "La réserve structurée de 200,00 R$ réduit le solde disponible pour les virements à 100,00 R$.",
+      "reason": "'Pode ser movimentado' indica saldo disponível para movimentações, não 'mobilizável'."
+    },
+    {
+      "source": "Cenário de produto proposto pela Catalisa. O dado histórico do BC não representa tração, volume ou resultado da Catalisa.",
+      "previous": "Scénario produit proposé par Catalisa. La donnée historique de la BC ne représente ni la traction, ni le volume, ni les résultats de Catalisa.",
+      "text": "Scénario produit proposé par Catalisa. La donnée historique de la Banque centrale du Brésil ne représente ni la traction, ni le volume, ni les résultats de Catalisa.",
+      "reason": "A sigla 'BC' não significa nada em francês; mantém o escopo brasileiro e a consistência com outras ocorrências."
+    },
+    {
+      "source": "Explore Decision",
+      "previous": "Découvrir Decision",
+      "text": "Découvrir la plateforme de décision",
+      "reason": "O nome de produto Decision deve ser traduzido, de forma consistente."
+    },
+    {
+      "source": "Decision Platform: esteira de análise e decisão | Catalisa",
+      "previous": "Decision Platform : chaîne d'analyse et de décision | Catalisa",
+      "text": "Plateforme de décision : chaîne d'analyse et de décision | Catalisa",
+      "reason": "O nome de produto Decision Platform deve ser traduzido."
+    },
+    {
+      "source": "Uma ação precisa",
+      "previous": "Une action précise",
+      "text": "Une action doit",
+      "reason": "'Precisa' é verbo (precisar) neste fragmento, não o adjetivo 'précise'."
+    },
+    {
+      "source": "Em caso de incidente de segurança que possa acarretar risco ou dano relevante aos titulares de dados pessoais, a Catalisa adotará as seguintes medidas:\n\n(a) Notificação à Autoridade Nacional de Proteção de Dados (ANPD) em até 72 (setenta e duas) horas após a confirmação do incidente, conforme Art. 48 da LGPD.\n\n(b) Comunicação ao titular dos dados afetados, em prazo razoável, contendo: descrição da natureza dos dados afetados, informações sobre os riscos, medidas adotadas para mitigar os efeitos e orientações ao titular.\n\n(c) Registro interno do incidente com documentação completa: natureza, dados afetados, titulares impactados, medidas técnicas adotadas e resultado das ações de contenção.\n\n(d) Notificação ao Usuário (quando Operadora) para que este tome as providências necessárias junto a seus clientes.",
+      "previous": "En cas d'incident de sécurité susceptible d'entraîner un risque ou un préjudice important pour les personnes concernées, Catalisa prendra les mesures suivantes :\n\n(a) Notification à l'Autorité nationale de protection des données (ANPD) dans un délai de 72 (soixante-douze) heures après la confirmation de l'incident, conformément à l'Art. 48 de la LGPD.\n\n(b) Information des personnes concernées dans un délai raisonnable, comprenant : la description de la nature des données concernées, des informations sur les risques, les mesures prises pour en atténuer les effets et des recommandations à leur intention.\n\n(c) Enregistrement interne de l'incident avec une documentation complète : nature, données concernées, personnes touchées, mesures techniques adoptées et résultat des actions de confinement.\n\n(d) Notification à l'Utilisateur (lorsqu'il agit en tant qu'Opérateur) afin qu'il prenne les mesures nécessaires auprès de ses clients.",
+      "text": "En cas d'incident de sécurité susceptible d'entraîner un risque ou un préjudice important pour les personnes concernées, Catalisa prendra les mesures suivantes :\n\n(a) Notification à l'Autorité nationale de protection des données (ANPD) dans un délai de 72 (soixante-douze) heures après la confirmation de l'incident, conformément à l'Art. 48 de la LGPD.\n\n(b) Information des personnes concernées dans un délai raisonnable, comprenant : la description de la nature des données concernées, des informations sur les risques, les mesures prises pour en atténuer les effets et des recommandations à leur intention.\n\n(c) Enregistrement interne de l'incident avec une documentation complète : nature, données concernées, personnes touchées, mesures techniques adoptées et résultat des actions de confinement.\n\n(d) Notification à l'Utilisateur (lorsque Catalisa agit en tant qu'Opérateur) afin qu'il prenne les mesures nécessaires auprès de ses clients.",
+      "reason": "'Quando Operadora' refere-se à Catalisa, não ao Usuário; a tradução alterava o sentido jurídico."
+    },
+    {
+      "source": "O tratamento de Dados Pessoais pela Catalisa é regulado pela Política de Privacidade, disponível em /politica-privacidade, que é parte integrante destes Termos.\n\nNo contexto da Plataforma, as partes atuam nos seguintes papéis definidos pela LGPD:\n\n- Catalisa como Operadora: processa Dados Pessoais dos clientes do Usuário conforme as instruções deste, exclusivamente para a prestação dos serviços.\n- Usuário como Controlador: toma as decisões sobre o tratamento de Dados Pessoais de seus clientes, incluindo coleta, finalidade e base legal.\n\nO Usuário se compromete a:\n\n(a) Garantir que possui base legal adequada (consentimento, contrato ou outra) para o tratamento de Dados Pessoais de seus clientes através da Plataforma.\n(b) Informar seus clientes finais sobre o uso da Plataforma para processamento de suas comunicações.\n(c) Atender solicitações de direitos dos titulares de Dados Pessoais de seus clientes, podendo solicitar apoio técnico da Catalisa para tanto.",
+      "previous": "Le traitement des Données personnelles par Catalisa est régi par la Politique de confidentialité, disponible sur /politica-privacidade, qui fait partie intégrante des présentes Conditions.\n\nDans le cadre de la Plateforme, les parties agissent selon les rôles suivants, définis par la LGPD :\n\n- Catalisa en tant qu'Opérateur : traite les Données personnelles des clients de l'Utilisateur conformément aux instructions de celui-ci, exclusivement pour la prestation des services.\n- L'Utilisateur en tant que Contrôleur : prend les décisions relatives au traitement des Données personnelles de ses clients, y compris la collecte, la finalité et la base légale.\n\nL'Utilisateur s'engage à :\n\n(a) Garantir qu'il dispose d'une base légale appropriée (consentement, contrat ou autre) pour le traitement des Données personnelles de ses clients via la Plateforme.\n(b) Informer ses clients finaux de l'utilisation de la Plateforme pour le traitement de leurs communications.\n(c) Répondre aux demandes d'exercice des droits des titulaires des Données personnelles de ses clients, avec la possibilité de solliciter l'assistance technique de Catalisa à cette fin.",
+      "text": "Le traitement des Données personnelles par Catalisa est régi par la Politique de confidentialité, disponible sur /politica-privacidade, qui fait partie intégrante des présentes Conditions.\n\nDans le cadre de la Plateforme, les parties agissent selon les rôles suivants, définis par la LGPD :\n\n- Catalisa en tant qu'Opérateur : traite les Données personnelles des clients de l'Utilisateur conformément aux instructions de celui-ci, exclusivement pour la prestation des services.\n- L'Utilisateur en tant que Responsable du traitement : prend les décisions relatives au traitement des Données personnelles de ses clients, y compris la collecte, la finalité et la base légale.\n\nL'Utilisateur s'engage à :\n\n(a) Garantir qu'il dispose d'une base légale appropriée (consentement, contrat ou autre) pour le traitement des Données personnelles de ses clients via la Plateforme.\n(b) Informer ses clients finaux de l'utilisation de la Plateforme pour le traitement de leurs communications.\n(c) Répondre aux demandes d'exercice des droits des titulaires des Données personnelles de ses clients, avec la possibilité de solliciter l'assistance technique de Catalisa à cette fin.",
+      "reason": "'Contrôleur' é anglicismo; o termo jurídico francês para controlador é 'responsable du traitement'."
+    },
+    {
+      "source": "simulação de condições na mesa",
+      "previous": "simulation des conditions au comptoir",
+      "text": "simulation des conditions par l'équipe d'analyse",
+      "reason": "'Mesa' refere-se à mesa de análise de crédito, não a um balcão; consistente com outras ocorrências."
+    },
+    {
+      "source": "Desktop / Extrato",
+      "previous": "Desktop / Relevé",
+      "text": "Ordinateur / Relevé",
+      "reason": "Consistência com 'Ordinateur + app' usado para 'Desktop'."
+    },
+    {
+      "source": "Em Alpha. A análise completa de beneficiários, revisões e integração com envelopes de assinatura ainda tem partes em evolução.",
+      "previous": "En Alpha. L'analyse complète des bénéficiaires, les revues et l'intégration avec les enveloppes de signature comportent encore des parties en évolution.",
+      "text": "En alpha. L'analyse complète des bénéficiaires, les revues et l'intégration avec les enveloppes de signature comportent encore des parties en évolution.",
+      "reason": "Consistência na grafia dos estágios ('En bêta')."
+    },
+    {
+      "source": "Esteira",
+      "previous": "Pipeline",
+      "text": "Chaîne d'analyse",
+      "reason": "Consistência terminológica: 'esteira' é traduzida como 'chaîne d'analyse' no restante do site."
+    },
+    {
+      "source": "Estudo visual de Comunicação",
+      "previous": "Étude visuelle de la Communication",
+      "text": "Étude visuelle : Communication",
+      "reason": "Construção com artigo e maiúscula soava artificial; nome da categoria fica como rótulo."
+    },
+    {
+      "source": "Estudo visual de Identidade",
+      "previous": "Étude visuelle de l'Identité",
+      "text": "Étude visuelle : Identité",
+      "reason": "Construção com artigo e maiúscula soava artificial; nome da categoria fica como rótulo."
+    },
+    {
+      "source": "Organize textos, marca, avisos e campanhas do aplicativo sem depender de uma nova versão para cada mudança de conteúdo.",
+      "previous": "Organisez les textes, la marca, les avis et les campagnes de l'application sans dépendre d'une nouvelle version à chaque changement de contenu.",
+      "text": "Organisez les textes, la marque, les avis et les campagnes de l'application sans dépendre d'une nouvelle version à chaque changement de contenu.",
+      "reason": "Resto de português: \"marca\" não foi traduzido."
+    },
+    {
+      "source": "de reserva estruturada e",
+      "previous": "de réservation structurée et",
+      "text": "de réserve structurée et",
+      "reason": "Aqui \"reserva\" é uma reserva financeira (saldo). \"Réservation\" quer dizer agendamento e muda o sentido."
+    },
+    {
+      "source": "Mesa",
+      "previous": "Comité",
+      "text": "Poste d'analyse",
+      "reason": "\"Comité\" muda o sentido de \"mesa\" (mesa de crédito). Alinhado com \"poste d'analyse\" usado em Resources."
+    },
+    {
+      "source": "MESA DE CRÉDITO / UMA VISÃO DA OPERAÇÃO",
+      "previous": "COMITÉ DE CRÉDIT / UNE VUE DE L’OPÉRATION",
+      "text": "POSTE D'ANALYSE CRÉDIT / UNE VUE DE L'OPÉRATION",
+      "reason": "\"Mesa de crédito\" não é um comitê. Termo alinhado com as outras ocorrências."
+    },
+    {
+      "source": "O serviço foi prestado? Quem paga confirma — lido direto do sistema de escala. Consulte aplicações, estágio e documentação.",
+      "previous": "Le service a-t-il été rendu ? Le payeur le confirme — directement à partir du système de planification. Consultez les applications, le stade et la documentation.",
+      "text": "Le service a-t-il été rendu ? Le payeur le confirme — directement à partir du système de planification. Consultez les cas d'usage, le stade de maturité et la documentation.",
+      "reason": "Falta de consistência com as outras descrições de SEO (\"cas d'usage\", \"stade de maturité\")."
+    },
+    {
+      "source": "Entenda como sessão, captura, prova de vida e comparação facial se conectam na experiência Biometrics, preservando o contexto e a evidência da verificação.",
+      "previous": "Découvrez comment session, capture, preuve de vie et comparaison faciale s’articulent dans l’expérience Biometrics, en préservant le contexte et la preuve de la vérification.",
+      "text": "Découvrez comment session, capture, preuve de vie et comparaison faciale s'articulent dans l'expérience de biométrie, en préservant le contexte et la preuve de la vérification.",
+      "reason": "O nome genérico do produto Biometrics deve ser traduzido (biometria)."
+    },
+    {
+      "source": "Identificação do Controlador",
+      "previous": "Identification du Contrôleur",
+      "text": "Identification du responsable du traitement",
+      "reason": "No contexto de proteção de dados, o \"controlador\" se chama \"responsable du traitement\" em francês. \"Contrôleur\" é tradução literal."
+    },
+    {
+      "source": "A pessoa conduz.",
+      "previous": "La personne mène.",
+      "text": "C'est la personne qui conduit.",
+      "reason": "\"La personne mène.\" soa estranho, porque o verbo fica sem complemento."
+    },
+    {
+      "source": "Agir com sentido.",
+      "previous": "Agir avec sens.",
+      "text": "Agir à bon escient.",
+      "reason": "\"Agir avec sens\" é decalque do português e soa artificial."
+    },
+    {
+      "source": "Sessão isolada, histórico, retry idempotente, IA estruturada, versões e atendimento no mesmo contexto.",
+      "previous": "Session isolée, historique, retry idempotent, IA structurée, versions et support dans le même contexte.",
+      "text": "Session isolée, historique, nouvelle tentative idempotente, IA structurée, versions et support dans le même contexte.",
+      "reason": "\"Retry\" é anglicismo desnecessário num texto em francês, e o adjetivo concorda melhor com \"tentative\"."
+    },
+    {
+      "source": "Do zero",
+      "previous": "De zéro",
+      "text": "À partir de zéro",
+      "reason": "\"De zéro\" sozinho não é natural em francês."
+    },
+    {
+      "source": "Entender reservas",
+      "previous": "Comprendre les réservations",
+      "text": "Comprendre les réserves",
+      "reason": "No contexto bancário, 'reservas' são reservas financeiras (saldos), não 'réservations'."
+    },
+    {
+      "source": "Uma posição, sem reserva estruturada.",
+      "previous": "Une position, sans réservation structurée.",
+      "text": "Une position, sans réserve structurée.",
+      "reason": "'Reserva' é reserva financeira; 'réservation' significa agendamento."
+    },
+    {
+      "source": "Banking e Credit tornam essa ideia concreta: experiências diferentes construídas sobre capacidades da plataforma.",
+      "previous": "Banking et Credit concrétisent cette idée : des expériences différentes construites sur les capacités de la plateforme.",
+      "text": "La plateforme bancaire et la plateforme de crédit concrétisent cette idée : des expériences différentes construites sur les capacités de la plateforme.",
+      "reason": "Nomes genéricos de produto devem ser traduzidos de forma consistente (Banking/Credit)."
+    },
+    {
+      "source": "Ampliar Política de crédito na mesa",
+      "previous": "Agrandir Politique de crédit au comité",
+      "text": "Agrandir Politique de crédit dans la cellule",
+      "reason": "Terminologia inconsistente para 'mesa': usar 'cellule', como no restante do conteúdo."
+    },
+    {
+      "source": "Crie um produto de crédito original ou redesenhe o existente: público, modalidade, política e condições próprias. Catálogo e mesa conectam construção e operação conforme o escopo validado.",
+      "previous": "Créez un produit de crédit original ou repensez l’existant : public, modalité, politique et conditions propres. Le catalogue et le comité relient construction et opération selon le périmètre validé.",
+      "text": "Créez un produit de crédit original ou repensez l’existant : public, modalité, politique et conditions propres. Le catalogue et la cellule d’analyse relient construction et opération selon le périmètre validé.",
+      "reason": "Terminologia inconsistente para 'mesa' ('comité' vs 'cellule')."
+    },
+    {
+      "source": "Market outbox maximum exceeded",
+      "previous": "Nombre maximal de la boîte d’envoi Market dépassé",
+      "text": "Capacité maximale de la boîte d’envoi Market dépassée",
+      "reason": "Formulação mais natural e concordância correta."
+    },
+    {
+      "source": "catalisa — versão Branco",
+      "previous": "catalisa — version Blanc",
+      "text": "catalisa — version blanche",
+      "reason": "Adjetivo deve concordar com 'version' e ficar em minúscula."
+    },
+    {
+      "source": "catalisa — versão Negativa",
+      "previous": "catalisa — version Négative",
+      "text": "catalisa — version négative",
+      "reason": "Adjetivo em minúscula, coerente com as demais variantes."
+    },
+    {
+      "source": "Permissões",
+      "previous": "Autorisations",
+      "text": "Permissions",
+      "reason": "Terminologia inconsistente: 'permissões' é traduzido como 'permissions' em outras strings; 'autorisation' fica reservado para 'autorização'."
+    },
+    {
+      "source": "Pessoas, organizações e permissões mantêm o contexto do acesso.",
+      "previous": "Les personnes, les organisations et les autorisations préservent le contexte de l’accès.",
+      "text": "Les personnes, les organisations et les permissions préservent le contexte de l’accès.",
+      "reason": "Consistência: 'permissões' = 'permissions'."
+    },
+    {
+      "source": "voce@empresa.com",
+      "previous": "nom@example.com",
+      "text": "voce@empresa.com",
+      "reason": "Endereços de e-mail devem ser preservados exatamente."
+    },
+    {
+      "source": "A equipe ganha uma leitura do funil para investigar atritos e orientar melhorias.",
+      "previous": "L’équipe dispose d’une lecture du entonnoir pour investiguer les points de friction et orienter les améliorations.",
+      "text": "L’équipe dispose d’une lecture de l’entonnoir pour investiguer les points de friction et orienter les améliorations.",
+      "reason": "Erro gramatical: 'du entonnoir' deve ser 'de l’entonnoir'."
+    },
+    {
+      "source": "WhatsApp AI agents (English)",
+      "previous": "Agents IA WhatsApp (anglais)",
+      "text": "Agents IA WhatsApp (en anglais)",
+      "reason": "Consistência com '(en anglais)' em outros links."
+    },
+    {
+      "source": "Prova de vida e match facial com motor próprio, no contrato dos provedores certificados",
+      "previous": "Preuve de vie et correspondance faciale avec un moteur propriétaire, dans le cadre du contrat des fournisseurs certifiés",
+      "text": "Détection du vivant et correspondance faciale avec un moteur propriétaire, dans le cadre du contrat des fournisseurs certifiés",
+      "reason": "'Prova de vida' biométrica (liveness) é 'détection du vivant'; 'preuve de vie' remete a contexto previdenciário."
+    },
+    {
+      "source": "Simulação conceitual / Um atendimento",
+      "previous": "Simulation conceptuelle / Un accompagnement",
+      "text": "Simulation conceptuelle / Une prise en charge",
+      "reason": "Consistência: 'Um atendimento' traduzido como 'Une prise en charge' em outras strings."
+    },
+    {
+      "source": "O atendimento organiza a demanda e usa o contexto e a política da casa.",
+      "previous": "L’accompagnement organise la demande et s’appuie sur le contexte et la politique de la maison.",
+      "text": "La prise en charge organise la demande et s’appuie sur le contexte et la politique de la maison.",
+      "reason": "Consistência terminológica para 'atendimento'."
+    },
+    {
+      "source": "A equipe consegue acompanhar a origem da cobrança com mais clareza.",
+      "previous": "L’équipe peut suivre plus clairement l’origine du prélèvement.",
+      "text": "L’équipe peut suivre plus clairement l’origine de la facturation.",
+      "reason": "'Cobrança' aqui é faturamento/cobrança, não necessariamente débito automático ('prélèvement')."
+    },
+    {
+      "source": "Conheça Banking ↗",
+      "previous": "Découvrir Banking ↗",
+      "text": "Découvrez la plateforme bancaire ↗",
+      "reason": "Rótulo de produto deve ser traduzido de forma consistente (Banking Platform → plateforme bancaire) e o imperativo alinhado aos demais CTAs."
+    },
+    {
+      "source": "QUEM ORIGINA + QUEM ANALISA",
+      "previous": "QUI ORIGINE + QUI ANALYSE",
+      "text": "QUI INITIE + QUI ANALYSE",
+      "reason": "«Originer» não é verbo usual em francês no sentido de originação de crédito; «initier» é natural."
+    },
+    {
+      "source": "Operação e liberação",
+      "previous": "Opération et validation",
+      "text": "Opération et déblocage",
+      "reason": "No contexto de crédito, «liberação» é a liberação de recursos (déblocage), não validação; alinha com r_ff4a488079632a61."
+    },
+    {
+      "source": "A reserva estruturada de {reserved} reduz o saldo disponível para movimentação para {available}.",
+      "previous": "La réserve structurée de {reserved} réduit le solde disponible pour les mouvements à {available}.",
+      "text": "La réserve structurée de {reserved} réduit le solde disponible pour les virements à {available}.",
+      "reason": "«Disponível para movimentação» refere-se ao saldo disponível para transferências; «pour les mouvements» é literal e pouco claro."
+    },
+    {
+      "source": "Esta página não está disponível. Explore os caminhos da plataforma Catalisa.",
+      "previous": "Cette page n’est pas disponible. Découvrez les fonctionnalités de la plateforme Catalisa.",
+      "text": "Cette page n’est pas disponible. Explorez les parcours de la plateforme Catalisa.",
+      "reason": "«Caminhos» foi alterado para «fonctionnalités», mudando o sentido; restaurado «parcours» e o verbo «explorer»."
+    },
+    {
+      "source": "Tratar Dados Pessoais em conformidade com a LGPD, na qualidade de Operadora, conforme as instruções do Usuário-Controlador.",
+      "previous": "Traiter les Données personnelles conformément à la LGPD, en qualité de Sous-traitant, selon les instructions de l’Utilisateur-Responsable du traitement.",
+      "text": "Traiter les Données personnelles conformément à la LGPD, en qualité d’Opérateur (« Operadora »), selon les instructions de l’Utilisateur-Contrôleur (« Controlador »).",
+      "reason": "«Sous-traitant»/«Responsable du traitement» são termos do RGPD; os papéis da LGPD devem manter seu escopo brasileiro, sem equivalente local."
+    },
+    {
+      "source": "Explore workflows",
+      "previous": "Explorer les workflows",
+      "text": "Explorez les workflows",
+      "reason": "Consistência com o CTA paralelo «Explorez les building blocks» (mesmo modo verbal)."
+    },
+    {
+      "source": "Captura publicada no site Catalisa · consultada em 22/10/2026 · data original não informada",
+      "previous": "Capture publiée sur le site Catalisa · consultée le 22/10/2026 · date d'origine non communiquée",
+      "text": "Capture publiée sur le site Catalisa · consultée le 22/10/2026 · date d'origine non renseignée",
+      "reason": "Terminologia inconsistente: as demais legendas usam «non renseignée» para «não informada»."
+    },
+    {
+      "source": "Painel / O trabalho ganha uma visão comum",
+      "previous": "Tableau de bord / Le travail gagne une vue commune",
+      "text": "Tableau de bord / Le travail se dote d’une vue commune",
+      "reason": "«Gagne une vue commune» é decalque do português e soa artificial em francês."
+    },
+    {
+      "source": "Permissões, histórico e revisão humana ajudam a definir quem pode agir, acompanhar o que aconteceu e cuidar das decisões que importam.",
+      "previous": "Les autorisations, l'historique et la revue humaine aident à définir qui peut agir, à suivre ce qui s'est passé et à prendre soin des décisions qui comptent.",
+      "text": "Les autorisations, l'historique et la revue humaine aident à définir qui peut agir, à suivre ce qui s'est passé et à veiller aux décisions qui comptent.",
+      "reason": "«Prendre soin des décisions» é tradução literal e estranha; «veiller aux décisions» é idiomático."
+    },
+    {
+      "source": "Produto, cálculo, política e formalização se conectam em uma esteira. A mesa acompanha o dossiê, as condições de liberação e a carteira; cada modalidade acrescenta suas particularidades.",
+      "previous": "Produit, calcul, politique et formalisation s'enchaînent dans un même circuit. L'équipe suit le dossier, les conditions de déblocage et le portefeuille ; chaque modalité ajoute ses particularités.",
+      "text": "Produit, calcul, politique et formalisation s'enchaînent dans un même circuit. L'équipe de crédit suit le dossier, les conditions de déblocage et le portefeuille ; chaque modalité ajoute ses particularités.",
+      "reason": "«Mesa» refere-se à mesa de crédito; «L'équipe» isolado perde essa especificidade."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "generatedAt": "2026-10-26T16:48:32.102Z",
+  "scope": "Fixed shared contact validator errors translated only at the frontend trusted boundary",
+  "uniqueMessages": 5,
+  "messages": [
+    {
+      "source": "Informe um e-mail ou telefone válido.",
+      "occurrences": [
+        {
+          "file": "shared/site-contact.ts",
+          "kind": "trusted-validation-message",
+          "line": 4
+        }
+      ]
+    },
+    {
+      "source": "Informe pelo menos um e-mail ou telefone para contato.",
+      "occurrences": [
+        {
+          "file": "shared/site-contact.ts",
+          "kind": "trusted-validation-message",
+          "line": 7
+        }
+      ]
+    },
+    {
+      "source": "Informe um e-mail válido.",
+      "occurrences": [
+        {
+          "file": "shared/site-contact.ts",
+          "kind": "trusted-validation-message",
+          "line": 8
+        }
+      ]
+    },
+    {
+      "source": "Informe um telefone válido, com DDD.",
+      "occurrences": [
+        {
+          "file": "shared/site-contact.ts",
+          "kind": "trusted-validation-message",
+          "line": 10
+        }
+      ]
+    },
+    {
+      "source": "Informe o telefone com DDD. Para outro país, inclua + e o código do país.",
+      "occurrences": [
+        {
+          "file": "shared/site-contact.ts",
+          "kind": "trusted-validation-message",
+          "line": 16
+        }
+      ]
+    }
+  ]
+}

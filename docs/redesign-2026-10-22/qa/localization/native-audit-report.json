@@ -1,0 +1,3232 @@
+{
+  "generatedAt": "2026-10-26T18:42:51.080Z",
+  "scope": "Read-only Babel AST source audit of every native non-test TS/TSX module outside root-owned i18n internals, plus all static data JSON. No build, browser, inference, fact/maturity change or deployment.",
+  "catalogs": [
+    "source-additions.json",
+    "source-audit-additions.json",
+    "source-catalog.json",
+    "source-currency-additions.json",
+    "source-picker-additions.json",
+    "source-products-additions.json",
+    "source-validation-additions.json"
+  ],
+  "registeredMessages": 4187,
+  "files": [
+    {
+      "file": "src/redesign/Agents.tsx",
+      "sha256": "e22fc1ae0a63948fd6d7a11e3c2ba1580b886c748de96e295e46b30f4d814fb9",
+      "syntaxVerified": true,
+      "jsonImports": [],
+      "localizeDataBindings": 0
+    },
+    {
+      "file": "src/redesign/App.tsx",
+      "sha256": "14aaa77eb1a61ec5357527c3055128035f0c2459f02fb38c35c267b66b4c267e",
+      "syntaxVerified": true,
+      "jsonImports": [
+        "./data/editorial.json",
+        "./data/resources.json",
+        "./data/ecosystem.json"
+      ],
+      "localizeDataBindings": 0
+    },
+    {
+      "file": "src/redesign/Architecture.tsx",
+      "sha256": "d23824ddd67419537eae74d11762c0d815a66854e5544a23b4a63c8d64461056",
+      "syntaxVerified": true,
+      "jsonImports": [
+        "./data/architecture.json",
+        "./data/financial-messaging.json"
+      ],
+      "localizeDataBindings": 2
+    },
+    {
+      "file": "src/redesign/Banking.tsx",
+      "sha256": "63f04c5eb8b684e342b81ae668837fe3239991ae8262fe4bb63393707607655f",
+      "syntaxVerified": true,
+      "jsonImports": [
+        "./data/financial.json",
+        "./data/financial-captures.json"
+      ],
+      "localizeDataBindings": 2
+    },
+    {
+      "file": "src/redesign/Capabilities.tsx",
+      "sha256": "5227f344cbc2b36efb67cba90458d6d03ba4cee4788ea8925148ac8a9227b880",
+      "syntaxVerified": true,
+      "jsonImports": [
+        "./data/catalog.json"
+      ],
+      "localizeDataBindings": 1
+    },
+    {
+      "file": "src/redesign/CatalogArt.tsx",
+      "sha256": "f1172af8722729c977da3c9332fea2af68dfafa4904e4958f82150d6e407c10a",
+      "syntaxVerified": true,
+      "jsonImports": [],
+      "localizeDataBindings": 0
+    },
+    {
+      "file": "src/redesign/ConceptProgress.tsx",
+      "sha256": "67643355083ae41e355c38165e7a496cbde92790f568ee097e127a9f8572c6bd",
+      "syntaxVerified": true,
+      "jsonImports": [],
+      "localizeDataBindings": 0
+    },
+    {
+      "file": "src/redesign/Contact.tsx",
+      "sha256": "3d482936a19fd015016adafed899149b2801d0a7ed06d64fac7eac7bf3ede662",
+      "syntaxVerified": true,
+      "jsonImports": [
+        "./data/contact.json"
+      ],
+      "localizeDataBindings": 1
+    },
+    {
+      "file": "src/redesign/ContactConcept.tsx",
+      "sha256": "2c4d5bfb3d0b0427eddd448dd8f99b0a75d3697d69c4f1880964270f5e846810",
+      "syntaxVerified": true,
+      "jsonImports": [
+        "./data/catalog.json"
+      ],
+      "localizeDataBindings": 1
+    },
+    {
+      "file": "src/redesign/ContactContinuation.tsx",
+      "sha256": "a9faa53292018282e15d8c8669fbdadd65b543948eec47fa66c38ef95353e354",
+      "syntaxVerified": true,
+      "jsonImports": [],
+      "localizeDataBindings": 0
+    },
+    {
+      "file": "src/redesign/ContactReachability.tsx",
+      "sha256": "b67bbd95d0db94b30a3e7558d375549a58c6b8d1db94a7c2e5d1761051ae3b7d",
+      "syntaxVerified": true,
+      "jsonImports": [],
+      "localizeDataBindings": 0
+    },
+    {
+      "file": "src/redesign/ContactViews.tsx",
+      "sha256": "c71669a9c1c9f8072291c0d60de16f5b1aefb114e9a51f09e9780a9a3bd4dcb4",
+      "syntaxVerified": true,
+      "jsonImports": [],
+      "localizeDataBindings": 0
+    },
+    {
+      "file": "src/redesign/Credit.tsx",
+      "sha256": "900d0d9a8ce012f9e5036a8248524e43307c2fa0edbf5987c01b9e5609f0c00e",
+      "syntaxVerified": true,
+      "jsonImports": [
+        "./data/financial.json",
+        "./data/financial-captures.json"
+      ],
+      "localizeDataBindings": 2
+    },
+    {
+      "file": "src/redesign/DeveloperArt.tsx",
+      "sha256": "b1ad57c4aeeb107acdf35b96e8b222dbf76b4f1eb231103aca2ffe82e265083e",
+      "syntaxVerified": true,
+      "jsonImports": [],
+      "localizeDataBindings": 0
+    },
+    {
+      "file": "src/redesign/Developers.tsx",
+      "sha256": "20c969167d78de3cee4eca2c4eea49945894b711f3842e6c471ec22b975b434d",
+      "syntaxVerified": true,
+      "jsonImports": [
+        "./data/developers.json"
+      ],
+      "localizeDataBindings": 1
+    },
+    {
+      "file": "src/redesign/Ecosystem.tsx",
+      "sha256": "d3ecbc2e3085eea2a43f1a859575c3bc0bbda6c74442874c23cbe2230720b289",
+      "syntaxVerified": true,
+      "jsonImports": [
+        "./data/ecosystem.json"
+      ],
+      "localizeDataBindings": 1
+    },
+    {
+      "file": "src/redesign/Editorial.tsx",
+      "sha256": "2e44c6c9028698a54cc537d8247e6d6541bb847e7a01a3699d5ed7413fc3e552",
+      "syntaxVerified": true,
+      "jsonImports": [
+        "./data/editorial.json"
+      ],
+      "localizeDataBindings": 1
+    },
+    {
+      "file": "src/redesign/FoundationArt.tsx",
+      "sha256": "e5d5d3e2c67e62e1c668dfc4c174b27e1d1dc1ca22e5ca0b14ca0dcfffafb586",
+      "syntaxVerified": true,
+      "jsonImports": [],
+      "localizeDataBindings": 0
+    },
+    {
+      "file": "src/redesign/Governance.tsx",
+      "sha256": "c0c4a2a6808d25323d5d102e9ee81d25c7475d73bccb16071d4069a27f3ea491",
+      "syntaxVerified": true,
+      "jsonImports": [],
+      "localizeDataBindings": 0
+    },
+    {
+      "file": "src/redesign/HeaderView.tsx",
+      "sha256": "35eb0a30de7115b94bb5d0e26348f2cb504553c3a0d9124c5fffd26fa8bf755e",
+      "syntaxVerified": true,
+      "jsonImports": [],
+      "localizeDataBindings": 0
+    },
+    {
+      "file": "src/redesign/Home.tsx",
+      "sha256": "b90cf1e0bc0fcbac16e3e5c62c1dd4754f24588dee134d5003a041fa2d879613",
+      "syntaxVerified": true,
+      "jsonImports": [],
+      "localizeDataBindings": 0
+    },
+    {
+      "file": "src/redesign/Lab.tsx",
+      "sha256": "0a36575c3a7b05e6dfbf323044327e024019774ce590489b072f26d64852ad7c",
+      "syntaxVerified": true,
+      "jsonImports": [
+        "./data/lab.json"
+      ],
+      "localizeDataBindings": 1
+    },
+    {
+      "file": "src/redesign/LabResult.tsx",
+      "sha256": "6c7a633dc7a6451ae34b7aad16b02d2683cb8269602ea151c332bc81971b42c1",
+      "syntaxVerified": true,
+      "jsonImports": [
+        "./data/catalog.json"
+      ],
+      "localizeDataBindings": 1
+    },
+    {
+      "file": "src/redesign/LabViews.tsx",
+      "sha256": "e6750248f2a56fcc88076f3dfb475bf9ab6b08b6416c3e2da02c178e2343bba1",
+      "syntaxVerified": true,
+      "jsonImports": [],
+      "localizeDataBindings": 0
+    },
+    {
+      "file": "src/redesign/Legal.tsx",
+      "sha256": "a9cefe6f0ba09628a110be016e3e7c6f9ec0c525584aea25edd00072b25baab3",
+      "syntaxVerified": true,
+      "jsonImports": [
+        "../i18n/locales/pt-BR/privacy.json",
+        "../i18n/locales/pt-BR/terms.json"
+      ],
+      "localizeDataBindings": 1
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "sha256": "2cf2e21da7f0ce1b89789e10e8cbf4e228b4e64c8d3bf8d8ed990a1406b98a8b",
+      "syntaxVerified": true,
+      "jsonImports": [],
+      "localizeDataBindings": 0
+    },
+    {
+      "file": "src/redesign/PreviewMeta.tsx",
+      "sha256": "bdbc7f71fa3f57aa12760c986a19ceb0713697196f3055e40976e61f2ff9ab02",
+      "syntaxVerified": true,
+      "jsonImports": [],
+      "localizeDataBindings": 0
+    },
+    {
+      "file": "src/redesign/ProductName.tsx",
+      "sha256": "58ab22409620f8352f81fd8517d9bce58da28ced36edef2762a038beca07aed8",
+      "syntaxVerified": true,
+      "jsonImports": [],
+      "localizeDataBindings": 0
+    },
+    {
+      "file": "src/redesign/Resources.tsx",
+      "sha256": "2b48a9221fe8808a37ad90c4264cd85edad9a2e7e5f6a61bf47aa083c80b8584",
+      "syntaxVerified": true,
+      "jsonImports": [
+        "./data/resource-captures.json",
+        "./data/resources.json"
+      ],
+      "localizeDataBindings": 2
+    },
+    {
+      "file": "src/redesign/Studio.tsx",
+      "sha256": "488bb2befa85574c5ca20cd44c9a91acf4afda740aeec3faf4a8843477ecfe79",
+      "syntaxVerified": true,
+      "jsonImports": [],
+      "localizeDataBindings": 0
+    },
+    {
+      "file": "src/redesign/Styleguide.tsx",
+      "sha256": "ddca14b75949d5643d9c714f8e2e46685761b0390edc666a3c05c33a6464e6a5",
+      "syntaxVerified": true,
+      "jsonImports": [],
+      "localizeDataBindings": 0
+    },
+    {
+      "file": "src/redesign/Vision.tsx",
+      "sha256": "5c868b88261769e0173058286f17a6d8b430e6f131d5613d345cd920e7f950d4",
+      "syntaxVerified": true,
+      "jsonImports": [],
+      "localizeDataBindings": 0
+    },
+    {
+      "file": "src/redesign/Workflows.tsx",
+      "sha256": "00138d850dd15cf0b2ad1a46942640f432c02b31e34470df6727d63e2e200067",
+      "syntaxVerified": true,
+      "jsonImports": [
+        "./data/operations.json"
+      ],
+      "localizeDataBindings": 1
+    },
+    {
+      "file": "src/redesign/components.tsx",
+      "sha256": "b6ed21524a594baa27ab4dad6f96e10c648613af3dcc49963deef4db38f68c97",
+      "syntaxVerified": true,
+      "jsonImports": [],
+      "localizeDataBindings": 0
+    },
+    {
+      "file": "src/redesign/data/platform-answers.ts",
+      "sha256": "5eb179ad6186579425efa48e197853d86d78b65a9ab7ac3b9261b4d742301b14",
+      "syntaxVerified": true,
+      "jsonImports": [],
+      "localizeDataBindings": 0
+    },
+    {
+      "file": "src/redesign/foundation-components.tsx",
+      "sha256": "83f905c764e9e4a8c668013ab190fa0e37fa3c02c9c19f2f338210afc4737a06",
+      "syntaxVerified": true,
+      "jsonImports": [],
+      "localizeDataBindings": 0
+    },
+    {
+      "file": "src/redesign/media/ProductShowcase.tsx",
+      "sha256": "46e238045caf6411f5444cb8057ea8d88aa11868d30c5c1a2f70b34914906dd4",
+      "syntaxVerified": true,
+      "jsonImports": [
+        "../data/financial-captures.json",
+        "../data/operation-captures.json"
+      ],
+      "localizeDataBindings": 0
+    },
+    {
+      "file": "src/redesign/operation-components.tsx",
+      "sha256": "8b5276de1a4fd7d4c0db97436b63d67b9e29ddc242e20d2825af3fa903f239b4",
+      "syntaxVerified": true,
+      "jsonImports": [
+        "./data/operation-captures.json"
+      ],
+      "localizeDataBindings": 1
+    },
+    {
+      "file": "src/redesign/preview.ts",
+      "sha256": "cba31931ea50ac937b80881de1e38b18ac5b83e8fb4fea524a09bae60eba7ec9",
+      "syntaxVerified": true,
+      "jsonImports": [],
+      "localizeDataBindings": 0
+    },
+    {
+      "file": "src/redesign/site-client.ts",
+      "sha256": "65e6da86112f86e293e0aedf970a93001bc85874f4409686ccb17a2f37bd8093",
+      "syntaxVerified": true,
+      "jsonImports": [],
+      "localizeDataBindings": 0
+    }
+  ],
+  "unboundVisibleLiterals": [
+    {
+      "file": "src/redesign/Editorial.tsx",
+      "line": 26,
+      "source": "/ Modernização & eficiência"
+    },
+    {
+      "file": "src/redesign/Editorial.tsx",
+      "line": 27,
+      "source": "/ IA aplicada & operação"
+    },
+    {
+      "file": "src/redesign/Editorial.tsx",
+      "line": 28,
+      "source": "/ Crédito & decisão"
+    },
+    {
+      "file": "src/redesign/Editorial.tsx",
+      "line": 29,
+      "source": "/ Open Finance & produto"
+    },
+    {
+      "file": "src/redesign/Editorial.tsx",
+      "line": 30,
+      "source": "/ Resiliência & integrações"
+    }
+  ],
+  "preservedTechnicalLiterals": [
+    {
+      "file": "src/redesign/Banking.tsx",
+      "line": 18,
+      "source": "Biometrics",
+      "target": "/capacidades/biometrics/"
+    },
+    {
+      "file": "src/redesign/Ecosystem.tsx",
+      "line": 24,
+      "source": "Biometrics",
+      "target": "/capacidades/biometrics/"
+    },
+    {
+      "file": "src/redesign/Governance.tsx",
+      "line": 15,
+      "source": "Biometrics",
+      "target": "/capacidades/biometrics/"
+    },
+    {
+      "file": "src/redesign/Resources.tsx",
+      "line": 15,
+      "source": "Biometrics",
+      "target": "/capacidades/biometrics/"
+    }
+  ],
+  "unregisteredTranslationKeys": [],
+  "protectedBindingViolations": [],
+  "productBindings": [
+    {
+      "file": "src/redesign/Agents.tsx",
+      "line": 15,
+      "expression": "__productLabel(\"Banking Platform\")"
+    },
+    {
+      "file": "src/redesign/Architecture.tsx",
+      "line": 44,
+      "expression": "__productLabel(item.name==='Banking'?'Banking Platform':item.name)"
+    },
+    {
+      "file": "src/redesign/Architecture.tsx",
+      "line": 47,
+      "expression": "__productLabel(d.name==='Banking'?'Banking Platform':d.name)"
+    },
+    {
+      "file": "src/redesign/Architecture.tsx",
+      "line": 47,
+      "expression": "__productLabel(d.name==='Banking'?'Banking Platform':d.name)"
+    },
+    {
+      "file": "src/redesign/Banking.tsx",
+      "line": 18,
+      "expression": "productLabel(\"Banking Platform\")"
+    },
+    {
+      "file": "src/redesign/Capabilities.tsx",
+      "line": 47,
+      "expression": "__productLabel(product.name)"
+    },
+    {
+      "file": "src/redesign/Credit.tsx",
+      "line": 17,
+      "expression": "productLabel(\"Credit Platform\")"
+    },
+    {
+      "file": "src/redesign/Ecosystem.tsx",
+      "line": 20,
+      "expression": "__productLabel(\"Med\")"
+    },
+    {
+      "file": "src/redesign/Ecosystem.tsx",
+      "line": 20,
+      "expression": "__productLabel(\"Jurídico\")"
+    },
+    {
+      "file": "src/redesign/Ecosystem.tsx",
+      "line": 20,
+      "expression": "__productLabel(\"Recrutamento\")"
+    },
+    {
+      "file": "src/redesign/Ecosystem.tsx",
+      "line": 20,
+      "expression": "__productLabel(\"Biometrics\")"
+    },
+    {
+      "file": "src/redesign/Ecosystem.tsx",
+      "line": 20,
+      "expression": "__productLabel(\"Decision\")"
+    },
+    {
+      "file": "src/redesign/Ecosystem.tsx",
+      "line": 20,
+      "expression": "__productLabel(\"Banking Platform\")"
+    },
+    {
+      "file": "src/redesign/Ecosystem.tsx",
+      "line": 20,
+      "expression": "__productLabel(\"Credit Platform\")"
+    },
+    {
+      "file": "src/redesign/Ecosystem.tsx",
+      "line": 20,
+      "expression": "__productLabel(\"Med\")"
+    },
+    {
+      "file": "src/redesign/Ecosystem.tsx",
+      "line": 20,
+      "expression": "__productLabel(\"Jurídico\")"
+    },
+    {
+      "file": "src/redesign/Ecosystem.tsx",
+      "line": 20,
+      "expression": "__productLabel(\"Recrutamento\")"
+    },
+    {
+      "file": "src/redesign/Ecosystem.tsx",
+      "line": 20,
+      "expression": "__productLabel(\"Biometrics\")"
+    },
+    {
+      "file": "src/redesign/Ecosystem.tsx",
+      "line": 20,
+      "expression": "__productLabel(\"Decision\")"
+    },
+    {
+      "file": "src/redesign/Ecosystem.tsx",
+      "line": 21,
+      "expression": "__productLabel(\"Med\")"
+    },
+    {
+      "file": "src/redesign/Ecosystem.tsx",
+      "line": 21,
+      "expression": "__productLabel(\"Med\")"
+    },
+    {
+      "file": "src/redesign/Ecosystem.tsx",
+      "line": 22,
+      "expression": "__productLabel(\"Jurídico\")"
+    },
+    {
+      "file": "src/redesign/Ecosystem.tsx",
+      "line": 22,
+      "expression": "__productLabel(\"Jurídico\")"
+    },
+    {
+      "file": "src/redesign/Ecosystem.tsx",
+      "line": 23,
+      "expression": "__productLabel(\"Recrutamento\")"
+    },
+    {
+      "file": "src/redesign/Ecosystem.tsx",
+      "line": 23,
+      "expression": "__productLabel(\"Recrutamento\")"
+    },
+    {
+      "file": "src/redesign/Ecosystem.tsx",
+      "line": 24,
+      "expression": "__productLabel(\"Biometrics\")"
+    },
+    {
+      "file": "src/redesign/Ecosystem.tsx",
+      "line": 24,
+      "expression": "__productLabel(\"Biometrics\")"
+    },
+    {
+      "file": "src/redesign/Ecosystem.tsx",
+      "line": 25,
+      "expression": "__productLabel(\"Decision\")"
+    },
+    {
+      "file": "src/redesign/Ecosystem.tsx",
+      "line": 25,
+      "expression": "__productLabel(\"Decision\")"
+    },
+    {
+      "file": "src/redesign/Ecosystem.tsx",
+      "line": 27,
+      "expression": "__productLabel(page.name)"
+    },
+    {
+      "file": "src/redesign/Editorial.tsx",
+      "line": 26,
+      "expression": "__productLabel(\"Credit Platform\")"
+    },
+    {
+      "file": "src/redesign/Editorial.tsx",
+      "line": 28,
+      "expression": "__productLabel(\"Decision\")"
+    },
+    {
+      "file": "src/redesign/Editorial.tsx",
+      "line": 29,
+      "expression": "__productLabel(\"Credit Platform\")"
+    },
+    {
+      "file": "src/redesign/FoundationArt.tsx",
+      "line": 9,
+      "expression": "__productLabel(\"Banking Platform\")"
+    },
+    {
+      "file": "src/redesign/FoundationArt.tsx",
+      "line": 15,
+      "expression": "__productLabel(\"Banking Platform\")"
+    },
+    {
+      "file": "src/redesign/Governance.tsx",
+      "line": 15,
+      "expression": "__productLabel(\"Decision\")"
+    },
+    {
+      "file": "src/redesign/HeaderView.tsx",
+      "line": 7,
+      "expression": "productLabel(\"Banking Platform\")"
+    },
+    {
+      "file": "src/redesign/HeaderView.tsx",
+      "line": 7,
+      "expression": "productLabel(\"Credit Platform\")"
+    },
+    {
+      "file": "src/redesign/HeaderView.tsx",
+      "line": 7,
+      "expression": "productLabel(\"Med\")"
+    },
+    {
+      "file": "src/redesign/HeaderView.tsx",
+      "line": 7,
+      "expression": "productLabel(\"Jurídico\")"
+    },
+    {
+      "file": "src/redesign/HeaderView.tsx",
+      "line": 7,
+      "expression": "productLabel(\"Recrutamento\")"
+    },
+    {
+      "file": "src/redesign/HeaderView.tsx",
+      "line": 7,
+      "expression": "productLabel(\"Biometrics\")"
+    },
+    {
+      "file": "src/redesign/HeaderView.tsx",
+      "line": 7,
+      "expression": "productLabel(\"Decision\")"
+    },
+    {
+      "file": "src/redesign/Home.tsx",
+      "line": 10,
+      "expression": "__productLabel(\"Med\")"
+    },
+    {
+      "file": "src/redesign/Home.tsx",
+      "line": 10,
+      "expression": "__productLabel(\"Jurídico\")"
+    },
+    {
+      "file": "src/redesign/Home.tsx",
+      "line": 10,
+      "expression": "__productLabel(\"Recrutamento\")"
+    },
+    {
+      "file": "src/redesign/Home.tsx",
+      "line": 10,
+      "expression": "__productLabel(\"Biometrics\")"
+    },
+    {
+      "file": "src/redesign/Home.tsx",
+      "line": 10,
+      "expression": "__productLabel(\"Decision\")"
+    },
+    {
+      "file": "src/redesign/ProductName.tsx",
+      "line": 5,
+      "expression": "productLabel(name)"
+    },
+    {
+      "file": "src/redesign/Resources.tsx",
+      "line": 14,
+      "expression": "__productLabel(\"Banking Platform\")"
+    },
+    {
+      "file": "src/redesign/Resources.tsx",
+      "line": 14,
+      "expression": "__productLabel(\"Credit Platform\")"
+    },
+    {
+      "file": "src/redesign/Resources.tsx",
+      "line": 14,
+      "expression": "__productLabel(\"Med\")"
+    },
+    {
+      "file": "src/redesign/Resources.tsx",
+      "line": 14,
+      "expression": "__productLabel(\"Jurídico\")"
+    },
+    {
+      "file": "src/redesign/Resources.tsx",
+      "line": 14,
+      "expression": "__productLabel(\"Recrutamento\")"
+    },
+    {
+      "file": "src/redesign/Resources.tsx",
+      "line": 14,
+      "expression": "__productLabel(\"Biometrics\")"
+    },
+    {
+      "file": "src/redesign/Resources.tsx",
+      "line": 14,
+      "expression": "__productLabel(\"Decision\")"
+    },
+    {
+      "file": "src/redesign/Resources.tsx",
+      "line": 15,
+      "expression": "__productLabel(\"Banking Platform\")"
+    },
+    {
+      "file": "src/redesign/Resources.tsx",
+      "line": 15,
+      "expression": "__productLabel(\"Credit Platform\")"
+    },
+    {
+      "file": "src/redesign/Resources.tsx",
+      "line": 15,
+      "expression": "__productLabel(\"Med\")"
+    },
+    {
+      "file": "src/redesign/Resources.tsx",
+      "line": 15,
+      "expression": "__productLabel(\"Jurídico\")"
+    },
+    {
+      "file": "src/redesign/Resources.tsx",
+      "line": 15,
+      "expression": "__productLabel(\"Recrutamento\")"
+    },
+    {
+      "file": "src/redesign/Resources.tsx",
+      "line": 15,
+      "expression": "__productLabel(\"Biometrics\")"
+    },
+    {
+      "file": "src/redesign/Resources.tsx",
+      "line": 15,
+      "expression": "__productLabel(\"Decision\")"
+    },
+    {
+      "file": "src/redesign/Studio.tsx",
+      "line": 15,
+      "expression": "__productLabel(\"Banking Platform\")"
+    },
+    {
+      "file": "src/redesign/Vision.tsx",
+      "line": 49,
+      "expression": "__productLabel(\"Banking Platform\")"
+    },
+    {
+      "file": "src/redesign/Vision.tsx",
+      "line": 49,
+      "expression": "__productLabel(\"Banking Platform\")"
+    },
+    {
+      "file": "src/redesign/Vision.tsx",
+      "line": 50,
+      "expression": "__productLabel(\"Credit Platform\")"
+    },
+    {
+      "file": "src/redesign/Vision.tsx",
+      "line": 50,
+      "expression": "__productLabel(\"Credit Platform\")"
+    },
+    {
+      "file": "src/redesign/media/ProductShowcase.tsx",
+      "line": 58,
+      "expression": "__productLabel(\"Banking Platform\")"
+    }
+  ],
+  "fragmentedEditorialElements": [
+    {
+      "file": "src/redesign/Agents.tsx",
+      "line": 15,
+      "fragments": [
+        "Entender",
+        "o contexto."
+      ]
+    },
+    {
+      "file": "src/redesign/Agents.tsx",
+      "line": 15,
+      "fragments": [
+        "Uma conversa pode",
+        "encontrar uma informação."
+      ]
+    },
+    {
+      "file": "src/redesign/Agents.tsx",
+      "line": 15,
+      "fragments": [
+        "Um agente precisa",
+        "saber o seu lugar."
+      ]
+    },
+    {
+      "file": "src/redesign/Agents.tsx",
+      "line": 15,
+      "fragments": [
+        "Apoio na conversa.",
+        "Continuidade na operação."
+      ]
+    },
+    {
+      "file": "src/redesign/Agents.tsx",
+      "line": 15,
+      "fragments": [
+        "Explore os contextos e o nível de acesso.",
+        "A mesma ideia de agente encontra trabalhos diferentes."
+      ]
+    },
+    {
+      "file": "src/redesign/Agents.tsx",
+      "line": 15,
+      "fragments": [
+        "Continuar começa",
+        "por reconhecer"
+      ]
+    },
+    {
+      "file": "src/redesign/Agents.tsx",
+      "line": 15,
+      "fragments": [
+        "Agendamento",
+        "+ preferência de horário"
+      ]
+    },
+    {
+      "file": "src/redesign/Agents.tsx",
+      "line": 15,
+      "fragments": [
+        "O agente encontra",
+        "as peças do trabalho."
+      ]
+    },
+    {
+      "file": "src/redesign/Agents.tsx",
+      "line": 15,
+      "fragments": [
+        "Uma ferramenta dá acesso a uma operação.",
+        "Seu uso precisa respeitar o papel e as permissões."
+      ]
+    },
+    {
+      "file": "src/redesign/Agents.tsx",
+      "line": 15,
+      "fragments": [
+        "Da intenção à identidade.",
+        "Da identidade às ferramentas."
+      ]
+    },
+    {
+      "file": "src/redesign/Agents.tsx",
+      "line": 15,
+      "fragments": [
+        "Uma visão da gestão de agentes",
+        "e do início de sua configuração."
+      ]
+    },
+    {
+      "file": "src/redesign/Agents.tsx",
+      "line": 15,
+      "fragments": [
+        "Nome, propósito",
+        "e comportamento",
+        "são o começo."
+      ]
+    },
+    {
+      "file": "src/redesign/Agents.tsx",
+      "line": 15,
+      "fragments": [
+        "O agente interpreta.",
+        "O fluxo conecta.",
+        "O produto dá contexto."
+      ]
+    },
+    {
+      "file": "src/redesign/Agents.tsx",
+      "line": 15,
+      "fragments": [
+        "Autonomia começa",
+        "com clareza."
+      ]
+    },
+    {
+      "file": "src/redesign/Agents.tsx",
+      "line": 15,
+      "fragments": [
+        "Escolha um propósito.",
+        "Encontre as conexões."
+      ]
+    },
+    {
+      "file": "src/redesign/App.tsx",
+      "line": 22,
+      "fragments": [
+        "Vamos encontrar",
+        "outra conexão."
+      ]
+    },
+    {
+      "file": "src/redesign/Architecture.tsx",
+      "line": 55,
+      "fragments": [
+        "Menos trabalho",
+        "repetido."
+      ]
+    },
+    {
+      "file": "src/redesign/Architecture.tsx",
+      "line": 56,
+      "fragments": [
+        "Começar pelo que diferencia.",
+        "Compor o que sustenta."
+      ]
+    },
+    {
+      "file": "src/redesign/Architecture.tsx",
+      "line": 58,
+      "fragments": [
+        "O valor não está apenas",
+        "em cada peça."
+      ]
+    },
+    {
+      "file": "src/redesign/Architecture.tsx",
+      "line": 58,
+      "fragments": [
+        "Uma identidade pode abrir uma conta,",
+        "iniciar uma proposta ou autorizar uma operação."
+      ]
+    },
+    {
+      "file": "src/redesign/Architecture.tsx",
+      "line": 59,
+      "fragments": [
+        "Da experiência",
+        "ao fundamento."
+      ]
+    },
+    {
+      "file": "src/redesign/Architecture.tsx",
+      "line": 61,
+      "fragments": [
+        "Uma consulta para a Luna.",
+        "Uma ideia para o seu negócio."
+      ]
+    },
+    {
+      "file": "src/redesign/Architecture.tsx",
+      "line": 62,
+      "fragments": [
+        "O produto não precisa",
+        "conhecer cada"
+      ]
+    },
+    {
+      "file": "src/redesign/Banking.tsx",
+      "line": 18,
+      "fragments": [
+        "Uma conta.",
+        "Várias formas",
+        "de "
+      ]
+    },
+    {
+      "file": "src/redesign/Banking.tsx",
+      "line": 18,
+      "fragments": [
+        "Crie seu produto financeiro.",
+        "Conecte a experiência à operação."
+      ]
+    },
+    {
+      "file": "src/redesign/Banking.tsx",
+      "line": 18,
+      "fragments": [
+        "Uma base compartilhada.",
+        "Experiências com trabalhos próprios."
+      ]
+    },
+    {
+      "file": "src/redesign/Banking.tsx",
+      "line": 18,
+      "fragments": [
+        "Troque o contexto para explorar",
+        "como cada interface participa."
+      ]
+    },
+    {
+      "file": "src/redesign/Banking.tsx",
+      "line": 18,
+      "fragments": [
+        "O banco acompanha",
+        "o ritmo da pessoa."
+      ]
+    },
+    {
+      "file": "src/redesign/Banking.tsx",
+      "line": 18,
+      "fragments": [
+        "UM APARELHO.",
+        "UM PONTO DE CONTINUIDADE."
+      ]
+    },
+    {
+      "file": "src/redesign/Banking.tsx",
+      "line": 18,
+      "fragments": [
+        "Mais espaço para",
+        "olhar a conta."
+      ]
+    },
+    {
+      "file": "src/redesign/Banking.tsx",
+      "line": 18,
+      "fragments": [
+        "Uma leitura organizada",
+        "dos movimentos da conta."
+      ]
+    },
+    {
+      "file": "src/redesign/Banking.tsx",
+      "line": 18,
+      "fragments": [
+        "Quem opera precisa",
+        "enxergar o contexto."
+      ]
+    },
+    {
+      "file": "src/redesign/Banking.tsx",
+      "line": 18,
+      "fragments": [
+        "Entre tocar",
+        "e acontecer,",
+        "existe "
+      ]
+    },
+    {
+      "file": "src/redesign/Banking.tsx",
+      "line": 18,
+      "fragments": [
+        "Uma operação.",
+        "Um próximo passo claro."
+      ]
+    },
+    {
+      "file": "src/redesign/Banking.tsx",
+      "line": 18,
+      "fragments": [
+        "Ter um saldo.",
+        "Entender o que"
+      ]
+    },
+    {
+      "file": "src/redesign/Banking.tsx",
+      "line": 18,
+      "fragments": [
+        "O console aproxima posição, motivo e histórico.",
+        "Quem atende encontra uma explicação.",
+        "Quem opera encontra o contexto."
+      ]
+    },
+    {
+      "file": "src/redesign/Banking.tsx",
+      "line": 18,
+      "fragments": [
+        "Quanto está reservado.",
+        "Por qual motivo.",
+        "Qual referência acompanha o bloqueio."
+      ]
+    },
+    {
+      "file": "src/redesign/Banking.tsx",
+      "line": 18,
+      "fragments": [
+        "Uma posição que",
+        "pode ser explicada."
+      ]
+    },
+    {
+      "file": "src/redesign/Banking.tsx",
+      "line": 18,
+      "fragments": [
+        "Montagem de materiais do produto.",
+        "Não é uma gravação de operação bancária."
+      ]
+    },
+    {
+      "file": "src/redesign/Banking.tsx",
+      "line": 18,
+      "fragments": [
+        "O movimento da conta",
+        "pode fazer parte de"
+      ]
+    },
+    {
+      "file": "src/redesign/Banking.tsx",
+      "line": 18,
+      "fragments": [
+        "Crie seu produto",
+        "financeiro com "
+      ]
+    },
+    {
+      "file": "src/redesign/Capabilities.tsx",
+      "line": 35,
+      "fragments": [
+        "Peças com propósito.",
+        "Possibilidades",
+        "em conjunto."
+      ]
+    },
+    {
+      "file": "src/redesign/Capabilities.tsx",
+      "line": 35,
+      "fragments": [
+        "Identidade, dados, canais, decisão e operação.",
+        "Encontre a responsabilidade de que seu produto precisa."
+      ]
+    },
+    {
+      "file": "src/redesign/Capabilities.tsx",
+      "line": 36,
+      "fragments": [
+        "Contratos e estágios próprios.",
+        "Uma leitura clara antes de conectar."
+      ]
+    },
+    {
+      "file": "src/redesign/Capabilities.tsx",
+      "line": 36,
+      "fragments": [
+        "Uma peça pode participar",
+        "de mais de um produto."
+      ]
+    },
+    {
+      "file": "src/redesign/Capabilities.tsx",
+      "line": 36,
+      "fragments": [
+        "O contexto dá identidade à jornada.",
+        "A capacidade mantém sua responsabilidade."
+      ]
+    },
+    {
+      "file": "src/redesign/Capabilities.tsx",
+      "line": 47,
+      "fragments": [
+        "Veja o negócio",
+        "ganhar forma."
+      ]
+    },
+    {
+      "file": "src/redesign/Capabilities.tsx",
+      "line": 48,
+      "fragments": [
+        "Disponibilidade",
+        "e contexto."
+      ]
+    },
+    {
+      "file": "src/redesign/Capabilities.tsx",
+      "line": 57,
+      "fragments": [
+        "Vamos encontrar",
+        "outra peça."
+      ]
+    },
+    {
+      "file": "src/redesign/ConceptProgress.tsx",
+      "line": 25,
+      "fragments": [
+        "Seu conceito",
+        "está tomando forma."
+      ]
+    },
+    {
+      "file": "src/redesign/Contact.tsx",
+      "line": 184,
+      "fragments": [
+        "Outras ideias.",
+        "Outras formas."
+      ]
+    },
+    {
+      "file": "src/redesign/Contact.tsx",
+      "line": 184,
+      "fragments": [
+        "Da conversa",
+        "a uma primeira forma."
+      ]
+    },
+    {
+      "file": "src/redesign/Contact.tsx",
+      "line": 190,
+      "fragments": [
+        "As peças começam",
+        "a "
+      ]
+    },
+    {
+      "file": "src/redesign/ContactConcept.tsx",
+      "line": 24,
+      "fragments": [
+        "Um conceito para explorar, ajustar e conversar.",
+        "Experimente as telas. Descubra o que conecta tudo."
+      ]
+    },
+    {
+      "file": "src/redesign/ContactConcept.tsx",
+      "line": 24,
+      "fragments": [
+        "Uma possibilidade.",
+        "O começo de muitas."
+      ]
+    },
+    {
+      "file": "src/redesign/ContactConcept.tsx",
+      "line": 27,
+      "fragments": [
+        "Uma composição",
+        "com Catalisa."
+      ]
+    },
+    {
+      "file": "src/redesign/ContactConcept.tsx",
+      "line": 28,
+      "fragments": [
+        "Uma experiência.",
+        "Responsabilidades conectadas."
+      ]
+    },
+    {
+      "file": "src/redesign/ContactConcept.tsx",
+      "line": 29,
+      "fragments": [
+        "As conexões",
+        "também têm "
+      ]
+    },
+    {
+      "file": "src/redesign/ContactContinuation.tsx",
+      "line": 11,
+      "fragments": [
+        "Escolha onde essa conversa faria",
+        "mais sentido para você."
+      ]
+    },
+    {
+      "file": "src/redesign/ContactContinuation.tsx",
+      "line": 14,
+      "fragments": [
+        "Este será o canal para continuar",
+        "a conversa com a equipe."
+      ]
+    },
+    {
+      "file": "src/redesign/ContactContinuation.tsx",
+      "line": 21,
+      "fragments": [
+        "Acompanhe a continuidade",
+        "a partir da mesma primeira ideia."
+      ]
+    },
+    {
+      "file": "src/redesign/ContactReachability.tsx",
+      "line": 7,
+      "fragments": [
+        "Deixe um e-mail ou telefone para continuar.",
+        "Você só precisa preencher um dos dois."
+      ]
+    },
+    {
+      "file": "src/redesign/ContactViews.tsx",
+      "line": 7,
+      "fragments": [
+        "Vamos dar forma",
+        "à próxima"
+      ]
+    },
+    {
+      "file": "src/redesign/ContactViews.tsx",
+      "line": 7,
+      "fragments": [
+        "Conte sua ideia com suas palavras.",
+        "Depois, vamos explorar uma primeira forma do seu produto."
+      ]
+    },
+    {
+      "file": "src/redesign/ContactViews.tsx",
+      "line": 13,
+      "fragments": [
+        "Escolha uma sugestão abaixo ou escreva livremente.",
+        "Não existe uma resposta certa."
+      ]
+    },
+    {
+      "file": "src/redesign/ContactViews.tsx",
+      "line": 14,
+      "fragments": [
+        "Escolha uma sugestão abaixo ou escreva livremente.",
+        "Não existe uma resposta certa."
+      ]
+    },
+    {
+      "file": "src/redesign/ContactViews.tsx",
+      "line": 15,
+      "fragments": [
+        "Escolha uma sugestão abaixo ou escreva livremente.",
+        "Não existe uma resposta certa."
+      ]
+    },
+    {
+      "file": "src/redesign/ContactViews.tsx",
+      "line": 16,
+      "fragments": [
+        "Escolha uma sugestão abaixo ou escreva livremente.",
+        "Não existe uma resposta certa."
+      ]
+    },
+    {
+      "file": "src/redesign/ContactViews.tsx",
+      "line": 17,
+      "fragments": [
+        "Escolha uma sugestão abaixo ou escreva livremente.",
+        "Não existe uma resposta certa."
+      ]
+    },
+    {
+      "file": "src/redesign/ContactViews.tsx",
+      "line": 18,
+      "fragments": [
+        "Como podemos",
+        "chamar "
+      ]
+    },
+    {
+      "file": "src/redesign/ContactViews.tsx",
+      "line": 18,
+      "fragments": [
+        "Antes de dar forma à sua ideia,",
+        "como podemos chamar você durante a conversa?"
+      ]
+    },
+    {
+      "file": "src/redesign/ContactViews.tsx",
+      "line": 19,
+      "fragments": [
+        "Veja se entendemos seu ponto de partida.",
+        "Você pode ajustar o que quiser. A seguir, vamos abrir uma demo conceitual."
+      ]
+    },
+    {
+      "file": "src/redesign/ContactViews.tsx",
+      "line": 20,
+      "fragments": [
+        "Você escolhe",
+        "por onde chegar."
+      ]
+    },
+    {
+      "file": "src/redesign/Credit.tsx",
+      "line": 17,
+      "fragments": [
+        "Crédito tem começo.",
+        "A operação"
+      ]
+    },
+    {
+      "file": "src/redesign/Credit.tsx",
+      "line": 17,
+      "fragments": [
+        "Crie seu produto de crédito.",
+        "Da proposta à vida da operação."
+      ]
+    },
+    {
+      "file": "src/redesign/Credit.tsx",
+      "line": 17,
+      "fragments": [
+        "Produto. Política.",
+        "Condições. Documentos."
+      ]
+    },
+    {
+      "file": "src/redesign/Credit.tsx",
+      "line": 17,
+      "fragments": [
+        "Proposta. Decisão.",
+        "Operação. Carteira."
+      ]
+    },
+    {
+      "file": "src/redesign/Credit.tsx",
+      "line": 17,
+      "fragments": [
+        "Escolha um momento para entender",
+        "o trabalho e explorar a interface."
+      ]
+    },
+    {
+      "file": "src/redesign/Credit.tsx",
+      "line": 17,
+      "fragments": [
+        "Uma proposta chega.",
+        "O contexto vem junto."
+      ]
+    },
+    {
+      "file": "src/redesign/Credit.tsx",
+      "line": 17,
+      "fragments": [
+        "A regra encontra",
+        "a realidade do caso."
+      ]
+    },
+    {
+      "file": "src/redesign/Credit.tsx",
+      "line": 17,
+      "fragments": [
+        "As condições também",
+        "precisam de uma leitura clara."
+      ]
+    },
+    {
+      "file": "src/redesign/Credit.tsx",
+      "line": 17,
+      "fragments": [
+        "Aceitar uma proposta",
+        "é outro começo."
+      ]
+    },
+    {
+      "file": "src/redesign/Credit.tsx",
+      "line": 17,
+      "fragments": [
+        "O trabalho continua",
+        "depois da contratação."
+      ]
+    },
+    {
+      "file": "src/redesign/Credit.tsx",
+      "line": 17,
+      "fragments": [
+        "Uma leitura melhor",
+        "começa pelo"
+      ]
+    },
+    {
+      "file": "src/redesign/Credit.tsx",
+      "line": 17,
+      "fragments": [
+        "Uma camada comum organiza etapas recorrentes.",
+        "Cada modalidade acrescenta o que é específico."
+      ]
+    },
+    {
+      "file": "src/redesign/Credit.tsx",
+      "line": 17,
+      "fragments": [
+        "Acompanhar, revisar e continuar.",
+        "O produto mantém espaço para a vida da operação."
+      ]
+    },
+    {
+      "file": "src/redesign/Credit.tsx",
+      "line": 17,
+      "fragments": [
+        "Quando a operação",
+        "precisa de outro caminho."
+      ]
+    },
+    {
+      "file": "src/redesign/Credit.tsx",
+      "line": 17,
+      "fragments": [
+        "O contrato continua",
+        "a pedir atenção."
+      ]
+    },
+    {
+      "file": "src/redesign/Credit.tsx",
+      "line": 17,
+      "fragments": [
+        "Quem origina",
+        "também precisa"
+      ]
+    },
+    {
+      "file": "src/redesign/Credit.tsx",
+      "line": 17,
+      "fragments": [
+        "Interface capturada no material de referência.",
+        "Dados de demonstração."
+      ]
+    },
+    {
+      "file": "src/redesign/Credit.tsx",
+      "line": 17,
+      "fragments": [
+        "Cada responsabilidade",
+        "encontra "
+      ]
+    },
+    {
+      "file": "src/redesign/Credit.tsx",
+      "line": 17,
+      "fragments": [
+        "O produto combina recursos conforme o escopo.",
+        "Os estágios do catálogo ajudam a entender cada peça."
+      ]
+    },
+    {
+      "file": "src/redesign/Credit.tsx",
+      "line": 17,
+      "fragments": [
+        "Um percurso visual",
+        "pelas "
+      ]
+    },
+    {
+      "file": "src/redesign/Credit.tsx",
+      "line": 17,
+      "fragments": [
+        "Montagem das capturas de referência.",
+        "Não é uma gravação de concessão ou movimentação real."
+      ]
+    },
+    {
+      "file": "src/redesign/Credit.tsx",
+      "line": 17,
+      "fragments": [
+        "Seu produto de crédito.",
+        "Suas regras."
+      ]
+    },
+    {
+      "file": "src/redesign/Developers.tsx",
+      "line": 49,
+      "fragments": [
+        "Seu código.",
+        "Mais "
+      ]
+    },
+    {
+      "file": "src/redesign/Developers.tsx",
+      "line": 51,
+      "fragments": [
+        "A melhor integração",
+        "cabe no seu sistema."
+      ]
+    },
+    {
+      "file": "src/redesign/Developers.tsx",
+      "line": 53,
+      "fragments": [
+        "Plugável onde importa.",
+        "Seu produto no comando."
+      ]
+    },
+    {
+      "file": "src/redesign/Developers.tsx",
+      "line": 54,
+      "fragments": [
+        "O que você quer",
+        "colocar de pé?"
+      ]
+    },
+    {
+      "file": "src/redesign/Developers.tsx",
+      "line": 55,
+      "fragments": [
+        "O código integra.",
+        "O contrato sustenta."
+      ]
+    },
+    {
+      "file": "src/redesign/Developers.tsx",
+      "line": 55,
+      "fragments": [
+        "O evento tem",
+        "um caminho de volta."
+      ]
+    },
+    {
+      "file": "src/redesign/Ecosystem.tsx",
+      "line": 20,
+      "fragments": [
+        "O mesmo fundamento.",
+        "Outras formas de operar."
+      ]
+    },
+    {
+      "file": "src/redesign/Ecosystem.tsx",
+      "line": 20,
+      "fragments": [
+        "Experiências bancárias",
+        "conectadas à operação."
+      ]
+    },
+    {
+      "file": "src/redesign/Ecosystem.tsx",
+      "line": 20,
+      "fragments": [
+        "Da entrada da proposta",
+        "ao acompanhamento",
+        "da carteira."
+      ]
+    },
+    {
+      "file": "src/redesign/Ecosystem.tsx",
+      "line": 26,
+      "fragments": [
+        "A conexão muda",
+        "o resultado."
+      ]
+    },
+    {
+      "file": "src/redesign/Editorial.tsx",
+      "line": 25,
+      "fragments": [
+        "Como entregar o próximo",
+        "produto sem multiplicar",
+        "a complexidade?"
+      ]
+    },
+    {
+      "file": "src/redesign/Editorial.tsx",
+      "line": 25,
+      "fragments": [
+        "Indicadores com período e origem.",
+        "Interpretações com autoria explícita."
+      ]
+    },
+    {
+      "file": "src/redesign/Editorial.tsx",
+      "line": 25,
+      "fragments": [
+        "Escolha a pergunta",
+        "da sua operação."
+      ]
+    },
+    {
+      "file": "src/redesign/Editorial.tsx",
+      "line": 25,
+      "fragments": [
+        "O que a demanda",
+        "muda no desenho?"
+      ]
+    },
+    {
+      "file": "src/redesign/Editorial.tsx",
+      "line": 25,
+      "fragments": [
+        "Fonte, análise",
+        "e hipótese têm",
+        "lugares diferentes."
+      ]
+    },
+    {
+      "file": "src/redesign/Editorial.tsx",
+      "line": 26,
+      "fragments": [
+        "Três perguntas",
+        "antes de construir."
+      ]
+    },
+    {
+      "file": "src/redesign/Editorial.tsx",
+      "line": 26,
+      "fragments": [
+        "Da leitura",
+        "à composição."
+      ]
+    },
+    {
+      "file": "src/redesign/Editorial.tsx",
+      "line": 26,
+      "fragments": [
+        "O que sustenta",
+        "esta leitura."
+      ]
+    },
+    {
+      "file": "src/redesign/Editorial.tsx",
+      "line": 27,
+      "fragments": [
+        "Três perguntas",
+        "antes de construir."
+      ]
+    },
+    {
+      "file": "src/redesign/Editorial.tsx",
+      "line": 27,
+      "fragments": [
+        "Da leitura",
+        "à composição."
+      ]
+    },
+    {
+      "file": "src/redesign/Editorial.tsx",
+      "line": 27,
+      "fragments": [
+        "O que sustenta",
+        "esta leitura."
+      ]
+    },
+    {
+      "file": "src/redesign/Editorial.tsx",
+      "line": 28,
+      "fragments": [
+        "Três perguntas",
+        "antes de construir."
+      ]
+    },
+    {
+      "file": "src/redesign/Editorial.tsx",
+      "line": 28,
+      "fragments": [
+        "Da leitura",
+        "à composição."
+      ]
+    },
+    {
+      "file": "src/redesign/Editorial.tsx",
+      "line": 28,
+      "fragments": [
+        "O que sustenta",
+        "esta leitura."
+      ]
+    },
+    {
+      "file": "src/redesign/Editorial.tsx",
+      "line": 29,
+      "fragments": [
+        "Três perguntas",
+        "antes de construir."
+      ]
+    },
+    {
+      "file": "src/redesign/Editorial.tsx",
+      "line": 29,
+      "fragments": [
+        "Da leitura",
+        "à composição."
+      ]
+    },
+    {
+      "file": "src/redesign/Editorial.tsx",
+      "line": 29,
+      "fragments": [
+        "O que sustenta",
+        "esta leitura."
+      ]
+    },
+    {
+      "file": "src/redesign/Editorial.tsx",
+      "line": 30,
+      "fragments": [
+        "Três perguntas",
+        "antes de construir."
+      ]
+    },
+    {
+      "file": "src/redesign/Editorial.tsx",
+      "line": 30,
+      "fragments": [
+        "Da leitura",
+        "à composição."
+      ]
+    },
+    {
+      "file": "src/redesign/Editorial.tsx",
+      "line": 30,
+      "fragments": [
+        "O que sustenta",
+        "esta leitura."
+      ]
+    },
+    {
+      "file": "src/redesign/Governance.tsx",
+      "line": 15,
+      "fragments": [
+        "Mais clareza para agir.",
+        "Mais contexto para responder."
+      ]
+    },
+    {
+      "file": "src/redesign/Governance.tsx",
+      "line": 15,
+      "fragments": [
+        "Uma ação precisa",
+        "fazer sentido",
+        "em cada momento."
+      ]
+    },
+    {
+      "file": "src/redesign/Governance.tsx",
+      "line": 15,
+      "fragments": [
+        "Um pedido não precisa",
+        "ser a própria aprovação."
+      ]
+    },
+    {
+      "file": "src/redesign/Governance.tsx",
+      "line": 15,
+      "fragments": [
+        "Experimente a separação entre",
+        "quem solicita e quem revisa."
+      ]
+    },
+    {
+      "file": "src/redesign/Governance.tsx",
+      "line": 15,
+      "fragments": [
+        "Prepare.",
+        "Confira.",
+        "Decida."
+      ]
+    },
+    {
+      "file": "src/redesign/Governance.tsx",
+      "line": 15,
+      "fragments": [
+        "O histórico precisa",
+        "ajudar a contar a história."
+      ]
+    },
+    {
+      "file": "src/redesign/Governance.tsx",
+      "line": 15,
+      "fragments": [
+        "Uma mudança.",
+        "Mais de uma",
+        "pergunta."
+      ]
+    },
+    {
+      "file": "src/redesign/Governance.tsx",
+      "line": 15,
+      "fragments": [
+        "A governança acompanha",
+        "o tipo de trabalho."
+      ]
+    },
+    {
+      "file": "src/redesign/Governance.tsx",
+      "line": 15,
+      "fragments": [
+        "A mesma plataforma.",
+        "Fronteiras de acesso próprias."
+      ]
+    },
+    {
+      "file": "src/redesign/Governance.tsx",
+      "line": 15,
+      "fragments": [
+        "A regra muda.",
+        "A referência permanece."
+      ]
+    },
+    {
+      "file": "src/redesign/Governance.tsx",
+      "line": 15,
+      "fragments": [
+        "A inteligência apoia.",
+        "O profissional revisa."
+      ]
+    },
+    {
+      "file": "src/redesign/Governance.tsx",
+      "line": 15,
+      "fragments": [
+        "Pessoas, papéis",
+        "e estados precisam",
+        "ser compreensíveis."
+      ]
+    },
+    {
+      "file": "src/redesign/Governance.tsx",
+      "line": 15,
+      "fragments": [
+        "Cada mecanismo tem",
+        "um papel e um estágio."
+      ]
+    },
+    {
+      "file": "src/redesign/Governance.tsx",
+      "line": 15,
+      "fragments": [
+        "Explore o propósito da capacidade",
+        "e consulte os limites antes de integrar."
+      ]
+    },
+    {
+      "file": "src/redesign/Governance.tsx",
+      "line": 15,
+      "fragments": [
+        "Confiança também",
+        "é conhecer o escopo."
+      ]
+    },
+    {
+      "file": "src/redesign/Governance.tsx",
+      "line": 15,
+      "fragments": [
+        "Construa o próximo passo.",
+        "Com clareza para responder."
+      ]
+    },
+    {
+      "file": "src/redesign/HeaderView.tsx",
+      "line": 7,
+      "fragments": [
+        "Uma base",
+        "para construir."
+      ]
+    },
+    {
+      "file": "src/redesign/Home.tsx",
+      "line": 10,
+      "fragments": [
+        "A forma segue",
+        "a conexão."
+      ]
+    },
+    {
+      "file": "src/redesign/Home.tsx",
+      "line": 10,
+      "fragments": [
+        "Uma plataforma de capacidades",
+        " combináveis para criar produtos,",
+        " conectar operações e transformar",
+        " ideias em sistemas."
+      ]
+    },
+    {
+      "file": "src/redesign/Home.tsx",
+      "line": 10,
+      "fragments": [
+        "PEÇAS INDEPENDENTES.",
+        "POSSIBILIDADES",
+        "CONECTADAS."
+      ]
+    },
+    {
+      "file": "src/redesign/Home.tsx",
+      "line": 10,
+      "fragments": [
+        "A complexidade pode",
+        "encontrar outra lógica."
+      ]
+    },
+    {
+      "file": "src/redesign/Home.tsx",
+      "line": 10,
+      "fragments": [
+        "Identidade, dados, decisões e canais.",
+        "Capacidades com responsabilidades",
+        "próprias, conectadas por uma base comum."
+      ]
+    },
+    {
+      "file": "src/redesign/Home.tsx",
+      "line": 10,
+      "fragments": [
+        "Independentes na função.",
+        "Conectadas na arquitetura."
+      ]
+    },
+    {
+      "file": "src/redesign/Home.tsx",
+      "line": 10,
+      "fragments": [
+        "O mesmo fundamento.",
+        "Outras formas de operar."
+      ]
+    },
+    {
+      "file": "src/redesign/Home.tsx",
+      "line": 10,
+      "fragments": [
+        "Experiências bancárias",
+        "conectadas à operação."
+      ]
+    },
+    {
+      "file": "src/redesign/Home.tsx",
+      "line": 10,
+      "fragments": [
+        "Da entrada da proposta",
+        "ao acompanhamento",
+        "da carteira."
+      ]
+    },
+    {
+      "file": "src/redesign/Home.tsx",
+      "line": 10,
+      "fragments": [
+        "Da intenção",
+        "ao sistema."
+      ]
+    },
+    {
+      "file": "src/redesign/Home.tsx",
+      "line": 10,
+      "fragments": [
+        "No Studio, a descrição encontra",
+        "contexto, ferramentas e fluxos."
+      ]
+    },
+    {
+      "file": "src/redesign/Home.tsx",
+      "line": 10,
+      "fragments": [
+        "Pensar também",
+        "é construir."
+      ]
+    },
+    {
+      "file": "src/redesign/Home.tsx",
+      "line": 10,
+      "fragments": [
+        "Vamos conectar",
+        "o próximo?"
+      ]
+    },
+    {
+      "file": "src/redesign/Home.tsx",
+      "line": 10,
+      "fragments": [
+        "Peças independentes.",
+        "Possibilidades conectadas."
+      ]
+    },
+    {
+      "file": "src/redesign/Lab.tsx",
+      "line": 101,
+      "fragments": [
+        "Como podemos",
+        "falar com você?"
+      ]
+    },
+    {
+      "file": "src/redesign/LabViews.tsx",
+      "line": 5,
+      "fragments": [
+        "O que você",
+        "quer "
+      ]
+    },
+    {
+      "file": "src/redesign/LabViews.tsx",
+      "line": 5,
+      "fragments": [
+        "Conte a ideia. Explore a jornada.",
+        "Veja as peças encontrarem uma forma."
+      ]
+    },
+    {
+      "file": "src/redesign/LabViews.tsx",
+      "line": 5,
+      "fragments": [
+        "Conte o que ainda",
+        "não existe."
+      ]
+    },
+    {
+      "file": "src/redesign/LabViews.tsx",
+      "line": 5,
+      "fragments": [
+        "Começa com",
+        "uma conversa."
+      ]
+    },
+    {
+      "file": "src/redesign/LabViews.tsx",
+      "line": 5,
+      "fragments": [
+        "O produto nasce",
+        "nas conexões."
+      ]
+    },
+    {
+      "file": "src/redesign/LabViews.tsx",
+      "line": 5,
+      "fragments": [
+        "O Lab ajuda a dar forma à conversa.",
+        "A arquitetura dá profundidade ao que vem depois."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 18,
+      "fragments": [
+        "O pedido chega.",
+        "A equipe encontra contexto."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 19,
+      "fragments": [
+        "A proposta avança.",
+        "A política mantém seu lugar."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 20,
+      "fragments": [
+        "Uma nova pessoa.",
+        "Um começo com continuidade."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 21,
+      "fragments": [
+        "O cliente vê uma conta.",
+        "A operação conecta a base."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 22,
+      "fragments": [
+        "A pessoa conduz.",
+        "O contexto acompanha."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 24,
+      "fragments": [
+        "Receber é só",
+        "o primeiro passo."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 25,
+      "fragments": [
+        "Receber é só",
+        "o primeiro passo."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 26,
+      "fragments": [
+        "Receber é só",
+        "o primeiro passo."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 27,
+      "fragments": [
+        "Receber é só",
+        "o primeiro passo."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 28,
+      "fragments": [
+        "Receber é só",
+        "o primeiro passo."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 29,
+      "fragments": [
+        "Receber é só",
+        "o primeiro passo."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 30,
+      "fragments": [
+        "Receber é só",
+        "o primeiro passo."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 31,
+      "fragments": [
+        "Receber é só",
+        "o primeiro passo."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 32,
+      "fragments": [
+        "Receber é só",
+        "o primeiro passo."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 33,
+      "fragments": [
+        "Receber é só",
+        "o primeiro passo."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 34,
+      "fragments": [
+        "Receber é só",
+        "o primeiro passo."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 35,
+      "fragments": [
+        "Receber é só",
+        "o primeiro passo."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 36,
+      "fragments": [
+        "Receber é só",
+        "o primeiro passo."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 37,
+      "fragments": [
+        "Receber é só",
+        "o primeiro passo."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 38,
+      "fragments": [
+        "Receber é só",
+        "o primeiro passo."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 39,
+      "fragments": [
+        "O trabalho pode se dividir.",
+        "O contexto continua junto."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 40,
+      "fragments": [
+        "O trabalho pode se dividir.",
+        "O contexto continua junto."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 41,
+      "fragments": [
+        "O trabalho pode se dividir.",
+        "O contexto continua junto."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 42,
+      "fragments": [
+        "O trabalho pode se dividir.",
+        "O contexto continua junto."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 43,
+      "fragments": [
+        "O trabalho pode se dividir.",
+        "O contexto continua junto."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 44,
+      "fragments": [
+        "O trabalho pode se dividir.",
+        "O contexto continua junto."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 45,
+      "fragments": [
+        "O trabalho pode se dividir.",
+        "O contexto continua junto."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 46,
+      "fragments": [
+        "O trabalho pode se dividir.",
+        "O contexto continua junto."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 47,
+      "fragments": [
+        "O trabalho pode se dividir.",
+        "O contexto continua junto."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 48,
+      "fragments": [
+        "O trabalho pode se dividir.",
+        "O contexto continua junto."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 49,
+      "fragments": [
+        "O trabalho pode se dividir.",
+        "O contexto continua junto."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 50,
+      "fragments": [
+        "O trabalho pode se dividir.",
+        "O contexto continua junto."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 51,
+      "fragments": [
+        "A conversa termina.",
+        "A continuidade começa."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 52,
+      "fragments": [
+        "A conversa termina.",
+        "A continuidade começa."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 53,
+      "fragments": [
+        "A conversa termina.",
+        "A continuidade começa."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 54,
+      "fragments": [
+        "A conversa termina.",
+        "A continuidade começa."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 55,
+      "fragments": [
+        "A conversa termina.",
+        "A continuidade começa."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 56,
+      "fragments": [
+        "A conversa termina.",
+        "A continuidade começa."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 57,
+      "fragments": [
+        "A conversa termina.",
+        "A continuidade começa."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 58,
+      "fragments": [
+        "A conversa termina.",
+        "A continuidade começa."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 59,
+      "fragments": [
+        "A conversa termina.",
+        "A continuidade começa."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 60,
+      "fragments": [
+        "A conversa termina.",
+        "A continuidade começa."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 61,
+      "fragments": [
+        "A conversa termina.",
+        "A continuidade começa."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 62,
+      "fragments": [
+        "A conversa termina.",
+        "A continuidade começa."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 63,
+      "fragments": [
+        "A conversa termina.",
+        "A continuidade começa."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 64,
+      "fragments": [
+        "A conversa termina.",
+        "A continuidade começa."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 65,
+      "fragments": [
+        "A conversa termina.",
+        "A continuidade começa."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 80,
+      "fragments": [
+        "Conceder um papel",
+        "de acesso sensível."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 81,
+      "fragments": [
+        "Conceder um papel",
+        "de acesso sensível."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 82,
+      "fragments": [
+        "Conceder um papel",
+        "de acesso sensível."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 83,
+      "fragments": [
+        "Conceder um papel",
+        "de acesso sensível."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 84,
+      "fragments": [
+        "Conceder um papel",
+        "de acesso sensível."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 85,
+      "fragments": [
+        "Conceder um papel",
+        "de acesso sensível."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 86,
+      "fragments": [
+        "Conceder um papel",
+        "de acesso sensível."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 87,
+      "fragments": [
+        "Conceder um papel",
+        "de acesso sensível."
+      ]
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 88,
+      "fragments": [
+        "Conceder um papel",
+        "de acesso sensível."
+      ]
+    },
+    {
+      "file": "src/redesign/Resources.tsx",
+      "line": 12,
+      "fragments": [
+        "A arquitetura",
+        "vista por quem usa."
+      ]
+    },
+    {
+      "file": "src/redesign/Resources.tsx",
+      "line": 13,
+      "fragments": [
+        "Pequeno no espaço.",
+        "Presente na identidade."
+      ]
+    },
+    {
+      "file": "src/redesign/Resources.tsx",
+      "line": 13,
+      "fragments": [
+        "Do perfil",
+        "à próxima apresentação."
+      ]
+    },
+    {
+      "file": "src/redesign/Resources.tsx",
+      "line": 13,
+      "fragments": [
+        "Uma base roxa.",
+        "Acentos que conectam."
+      ]
+    },
+    {
+      "file": "src/redesign/Resources.tsx",
+      "line": 13,
+      "fragments": [
+        "Consistência",
+        "também é composição."
+      ]
+    },
+    {
+      "file": "src/redesign/Studio.tsx",
+      "line": 15,
+      "fragments": [
+        "Dê forma",
+        "ao que precisa"
+      ]
+    },
+    {
+      "file": "src/redesign/Studio.tsx",
+      "line": 15,
+      "fragments": [
+        "Descrever é o começo.",
+        "Entender as conexões é construir."
+      ]
+    },
+    {
+      "file": "src/redesign/Studio.tsx",
+      "line": 15,
+      "fragments": [
+        "A ideia encontra",
+        "um plano."
+      ]
+    },
+    {
+      "file": "src/redesign/Studio.tsx",
+      "line": 15,
+      "fragments": [
+        "Construir também",
+        "é fazer boas perguntas."
+      ]
+    },
+    {
+      "file": "src/redesign/Studio.tsx",
+      "line": 15,
+      "fragments": [
+        "Explore o percurso.",
+        "Cada etapa deixa uma decisão mais clara."
+      ]
+    },
+    {
+      "file": "src/redesign/Studio.tsx",
+      "line": 15,
+      "fragments": [
+        "O trabalho ganha",
+        "um lugar para acontecer."
+      ]
+    },
+    {
+      "file": "src/redesign/Studio.tsx",
+      "line": 15,
+      "fragments": [
+        "Descrever, conectar e acompanhar.",
+        "Três leituras da interface da plataforma."
+      ]
+    },
+    {
+      "file": "src/redesign/Studio.tsx",
+      "line": 15,
+      "fragments": [
+        "O mesmo espaço.",
+        "Trabalhos diferentes."
+      ]
+    },
+    {
+      "file": "src/redesign/Studio.tsx",
+      "line": 15,
+      "fragments": [
+        "Troque o contexto para explorar",
+        "o que a composição organiza."
+      ]
+    },
+    {
+      "file": "src/redesign/Studio.tsx",
+      "line": 15,
+      "fragments": [
+        "Seu jeito de atender.",
+        "Com o apoio que faz sentido."
+      ]
+    },
+    {
+      "file": "src/redesign/Studio.tsx",
+      "line": 15,
+      "fragments": [
+        "Defina cada parte.",
+        "No seu ritmo."
+      ]
+    },
+    {
+      "file": "src/redesign/Studio.tsx",
+      "line": 15,
+      "fragments": [
+        "Conte o resultado.",
+        "Revise a proposta."
+      ]
+    },
+    {
+      "file": "src/redesign/Studio.tsx",
+      "line": 15,
+      "fragments": [
+        "Uma boa automação",
+        "sabe onde"
+      ]
+    },
+    {
+      "file": "src/redesign/Studio.tsx",
+      "line": 15,
+      "fragments": [
+        "Explorar, construir",
+        "e executar se conectam."
+      ]
+    },
+    {
+      "file": "src/redesign/Studio.tsx",
+      "line": 15,
+      "fragments": [
+        "Menos dúvida.",
+        "Mais direção."
+      ]
+    },
+    {
+      "file": "src/redesign/Studio.tsx",
+      "line": 15,
+      "fragments": [
+        "Seu próximo produto",
+        "pode começar",
+        "com uma boa descrição."
+      ]
+    },
+    {
+      "file": "src/redesign/Styleguide.tsx",
+      "line": 49,
+      "fragments": [
+        "Entender antes",
+        "de conectar."
+      ]
+    },
+    {
+      "file": "src/redesign/Styleguide.tsx",
+      "line": 49,
+      "fragments": [
+        "Uma família.",
+        "Muitos ritmos."
+      ]
+    },
+    {
+      "file": "src/redesign/Styleguide.tsx",
+      "line": 49,
+      "fragments": [
+        "Estado tem",
+        "significado."
+      ]
+    },
+    {
+      "file": "src/redesign/Styleguide.tsx",
+      "line": 50,
+      "fragments": [
+        "O ponto",
+        "é da Catalisa."
+      ]
+    },
+    {
+      "file": "src/redesign/Styleguide.tsx",
+      "line": 51,
+      "fragments": [
+        "O roxo organiza.",
+        "A cena ganha vida."
+      ]
+    },
+    {
+      "file": "src/redesign/Styleguide.tsx",
+      "line": 52,
+      "fragments": [
+        "A forma segue",
+        "a conexão."
+      ]
+    },
+    {
+      "file": "src/redesign/Styleguide.tsx",
+      "line": 53,
+      "fragments": [
+        "Consistência",
+        "no comportamento."
+      ]
+    },
+    {
+      "file": "src/redesign/Styleguide.tsx",
+      "line": 54,
+      "fragments": [
+        "Espaço também",
+        "organiza o sentido."
+      ]
+    },
+    {
+      "file": "src/redesign/Styleguide.tsx",
+      "line": 55,
+      "fragments": [
+        "Uma transformação.",
+        "Uma leitura."
+      ]
+    },
+    {
+      "file": "src/redesign/Styleguide.tsx",
+      "line": 56,
+      "fragments": [
+        "A mesma origem.",
+        "Outra forma de contar."
+      ]
+    },
+    {
+      "file": "src/redesign/Styleguide.tsx",
+      "line": 57,
+      "fragments": [
+        "Contexto antes",
+        "da continuidade."
+      ]
+    },
+    {
+      "file": "src/redesign/Styleguide.tsx",
+      "line": 58,
+      "fragments": [
+        "O sistema aparece",
+        "quando funciona inteiro."
+      ]
+    },
+    {
+      "file": "src/redesign/Vision.tsx",
+      "line": 27,
+      "fragments": [
+        "Dar forma",
+        "ao que vem"
+      ]
+    },
+    {
+      "file": "src/redesign/Vision.tsx",
+      "line": 37,
+      "fragments": [
+        "Há ideias demais",
+        "esperando os sistemas"
+      ]
+    },
+    {
+      "file": "src/redesign/Vision.tsx",
+      "line": 41,
+      "fragments": [
+        "Peças com propósito.",
+        "Conexões com sentido."
+      ]
+    },
+    {
+      "file": "src/redesign/Vision.tsx",
+      "line": 41,
+      "fragments": [
+        "Três ideias orientam a plataforma.",
+        "Explore cada uma."
+      ]
+    },
+    {
+      "file": "src/redesign/Vision.tsx",
+      "line": 47,
+      "fragments": [
+        "O próximo passo",
+        "não precisa começar"
+      ]
+    },
+    {
+      "file": "src/redesign/Vision.tsx",
+      "line": 48,
+      "fragments": [
+        "Uma mesma origem.",
+        "Expressões próprias."
+      ]
+    },
+    {
+      "file": "src/redesign/Vision.tsx",
+      "line": 49,
+      "fragments": [
+        "Uma relação.",
+        "Muitos pontos de contato."
+      ]
+    },
+    {
+      "file": "src/redesign/Vision.tsx",
+      "line": 50,
+      "fragments": [
+        "Da intenção",
+        "ao acompanhamento."
+      ]
+    },
+    {
+      "file": "src/redesign/Vision.tsx",
+      "line": 53,
+      "fragments": [
+        "A próxima forma",
+        "começa com "
+      ]
+    },
+    {
+      "file": "src/redesign/Workflows.tsx",
+      "line": 17,
+      "fragments": [
+        "O próximo passo",
+        "tem um"
+      ]
+    },
+    {
+      "file": "src/redesign/Workflows.tsx",
+      "line": 17,
+      "fragments": [
+        "O que põe",
+        "a jornada",
+        "em movimento?"
+      ]
+    },
+    {
+      "file": "src/redesign/Workflows.tsx",
+      "line": 17,
+      "fragments": [
+        "Uma lógica que",
+        "dá para acompanhar."
+      ]
+    },
+    {
+      "file": "src/redesign/Workflows.tsx",
+      "line": 17,
+      "fragments": [
+        "Escolha uma jornada, avance pelas etapas",
+        "e explore o que muda diante de uma exceção."
+      ]
+    },
+    {
+      "file": "src/redesign/Workflows.tsx",
+      "line": 17,
+      "fragments": [
+        "Esperar quando precisa.",
+        "Avançar quando pode."
+      ]
+    },
+    {
+      "file": "src/redesign/Workflows.tsx",
+      "line": 17,
+      "fragments": [
+        "As conexões saem",
+        "da cabeça de uma pessoa."
+      ]
+    },
+    {
+      "file": "src/redesign/Workflows.tsx",
+      "line": 17,
+      "fragments": [
+        "O editor visual torna a composição visível.",
+        "A configuração explicita como cada etapa participa."
+      ]
+    },
+    {
+      "file": "src/redesign/Workflows.tsx",
+      "line": 17,
+      "fragments": [
+        "O que inicia.",
+        "O que cada passo faz.",
+        "Como conferir."
+      ]
+    },
+    {
+      "file": "src/redesign/Workflows.tsx",
+      "line": 17,
+      "fragments": [
+        "O próximo passo",
+        "não começa"
+      ]
+    },
+    {
+      "file": "src/redesign/Workflows.tsx",
+      "line": 17,
+      "fragments": [
+        "O fluxo precisa",
+        "explicar também",
+        "o que não deu certo."
+      ]
+    },
+    {
+      "file": "src/redesign/Workflows.tsx",
+      "line": 17,
+      "fragments": [
+        "Perguntas que",
+        "abrem caminho."
+      ]
+    },
+    {
+      "file": "src/redesign/Workflows.tsx",
+      "line": 17,
+      "fragments": [
+        "Conecte as peças.",
+        "Dê sentido ao percurso."
+      ]
+    }
+  ],
+  "embeddedProductMessages": [
+    {
+      "file": "src/redesign/Architecture.tsx",
+      "line": 60,
+      "source": "Banking, crédito e decisão mostram a profundidade da base. Copiloto e atendimento mostram como ela atravessa setores. Os mapas são conceituais; aplicações propostas e integrações a validar estão identificadas."
+    },
+    {
+      "file": "src/redesign/Architecture.tsx",
+      "line": 62,
+      "source": "Decision Platform reúne fontes; Decision Engine aplica a política. Separar essas funções permite usar o motor com dados próprios ou compô-lo com uma esteira."
+    },
+    {
+      "file": "src/redesign/Architecture.tsx",
+      "line": 62,
+      "source": "Explore Decision "
+    },
+    {
+      "file": "src/redesign/Banking.tsx",
+      "line": 18,
+      "source": "Ampliar desktop do Banking Platform"
+    },
+    {
+      "file": "src/redesign/Banking.tsx",
+      "line": 18,
+      "source": "desktop do Banking Platform"
+    },
+    {
+      "file": "src/redesign/Banking.tsx",
+      "line": 18,
+      "source": "Ampliar aplicativo Banking"
+    },
+    {
+      "file": "src/redesign/Banking.tsx",
+      "line": 18,
+      "source": "aplicativo Banking"
+    },
+    {
+      "file": "src/redesign/Banking.tsx",
+      "line": 18,
+      "source": "Experiências Banking"
+    },
+    {
+      "file": "src/redesign/Banking.tsx",
+      "line": 18,
+      "source": "Ampliar aplicativo Banking no aparelho"
+    },
+    {
+      "file": "src/redesign/Banking.tsx",
+      "line": 18,
+      "source": "aplicativo Banking no aparelho"
+    },
+    {
+      "file": "src/redesign/Banking.tsx",
+      "line": 18,
+      "source": "Montagem visual de interfaces do Banking Platform"
+    },
+    {
+      "file": "src/redesign/Credit.tsx",
+      "line": 17,
+      "source": "Montagem visual das interfaces de Credit Platform"
+    },
+    {
+      "file": "src/redesign/Developers.tsx",
+      "line": 17,
+      "source": "Banking com identidade própria"
+    },
+    {
+      "file": "src/redesign/Developers.tsx",
+      "line": 24,
+      "source": "No Decision Engine, a política tem versão e a execução deixa registro. Planeje casos de regressão antes de publicar uma nova política."
+    },
+    {
+      "file": "src/redesign/Ecosystem.tsx",
+      "line": 25,
+      "source": "Decision Engine e Decision Platform têm estágios diferentes no catálogo. O primeiro é marcado como Produção e o segundo como Beta. A página de produto e a documentação têm escopos próprios."
+    },
+    {
+      "file": "src/redesign/Editorial.tsx",
+      "line": 26,
+      "source": "A proposta é compartilhar o fundamento e manter explícito o contexto. Banking, crédito e recebíveis podem reutilizar identidade e documentos sem compartilhar a mesma política de aprovação. A arquitetura precisa permitir essa diferença."
+    },
+    {
+      "file": "src/redesign/Editorial.tsx",
+      "line": 28,
+      "source": "Decision Platform e Decision Engine têm papéis distintos na Catalisa: reunir fontes e avaliar políticas. A composição com cálculo, precificação e formalização deve preservar esses contratos e o estágio de cada componente."
+    },
+    {
+      "file": "src/redesign/FoundationArt.tsx",
+      "line": 15,
+      "source": "Banking: Identidade, BaaS, Portfólio, Permissões, Eventos conectados em uma jornada"
+    },
+    {
+      "file": "src/redesign/Governance.tsx",
+      "line": 15,
+      "source": "Interface de referência do guia Banking: protótipo com dados de exemplo. A tela não comprova a disponibilidade de todos os fluxos apresentados."
+    },
+    {
+      "file": "src/redesign/Governance.tsx",
+      "line": 15,
+      "source": "Explore o Banking Platform"
+    },
+    {
+      "file": "src/redesign/Governance.tsx",
+      "line": 15,
+      "source": "Protótipo do console Banking com pessoas, papéis e estados de acesso"
+    },
+    {
+      "file": "src/redesign/Governance.tsx",
+      "line": 15,
+      "source": "Material do guia Banking · dados de exemplo · data original não informada"
+    },
+    {
+      "file": "src/redesign/Home.tsx",
+      "line": 10,
+      "source": "Explore Decision Engine"
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 21,
+      "source": "Uma leitura da jornada / Banking"
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 73,
+      "source": "Banking / Uma atuação possível"
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 74,
+      "source": "Banking / Uma atuação possível"
+    },
+    {
+      "file": "src/redesign/OperationViews.tsx",
+      "line": 75,
+      "source": "Banking / Uma atuação possível"
+    },
+    {
+      "file": "src/redesign/Vision.tsx",
+      "line": 48,
+      "source": "Banking e Credit tornam essa ideia concreta: experiências diferentes construídas sobre capacidades da plataforma."
+    },
+    {
+      "file": "src/redesign/Vision.tsx",
+      "line": 49,
+      "source": "Conheça Banking ↗"
+    },
+    {
+      "file": "src/redesign/Vision.tsx",
+      "line": 50,
+      "source": "Conheça Credit ↗"
+    }
+  ],
+  "dataFiles": [
+    {
+      "file": "src/redesign/data/architecture.json",
+      "sha256": "99fbc82ac5ad0dd828502b5ed879c51d48b263a0ad507809fbf9771c98a73eed",
+      "syntaxVerified": true
+    },
+    {
+      "file": "src/redesign/data/brand-kit.json",
+      "sha256": "d173b187e585fe9da8ca1a480353510721dafe82ba2c595fae4f5b97dd4a5218",
+      "syntaxVerified": true
+    },
+    {
+      "file": "src/redesign/data/catalog.json",
+      "sha256": "3b5e240e904640340412bf7507380fdc4b82bce196d45c214f463e85bbcc8185",
+      "syntaxVerified": true
+    },
+    {
+      "file": "src/redesign/data/contact.json",
+      "sha256": "4ec998944ceda269e71e9a9c43903f704b24d2ec7d086bafbb9133649a4b68f1",
+      "syntaxVerified": true
+    },
+    {
+      "file": "src/redesign/data/developers.json",
+      "sha256": "be10fb958a7ae51780616db8fe13827b69a7d83dc65602cdf03c81a0d2c31a6b",
+      "syntaxVerified": true
+    },
+    {
+      "file": "src/redesign/data/ecosystem.json",
+      "sha256": "56927770976fb6f95de8ddc7999203c0152a8aa3c2071e2ff9eac7fd668224e8",
+      "syntaxVerified": true
+    },
+    {
+      "file": "src/redesign/data/editorial.json",
+      "sha256": "20d0fe4196b707ae6337ab6a9b951c6ea51caaa89c522024bac897dffbfd3a1c",
+      "syntaxVerified": true
+    },
+    {
+      "file": "src/redesign/data/financial-captures.json",
+      "sha256": "48823cc1919c154a99782eacd6646296e06607cd320cbfd00405279b0ab41726",
+      "syntaxVerified": true
+    },
+    {
+      "file": "src/redesign/data/financial-messaging.json",
+      "sha256": "f30d28d5713589254cc266d08929bb21df4c0aa3bc553f8ef379ff2be6df2c80",
+      "syntaxVerified": true
+    },
+    {
+      "file": "src/redesign/data/financial.json",
+      "sha256": "850db5140a095ddfb52c7a501c6eea423a751cfcdd28770806ed6ebc5122ae80",
+      "syntaxVerified": true
+    },
+    {
+      "file": "src/redesign/data/lab.json",
+      "sha256": "45bb51dabbcc2e92c647da3b92e6f3b05d5efa3a8a01a0b0d76e93cf123967dc",
+      "syntaxVerified": true
+    },
+    {
+      "file": "src/redesign/data/operation-captures.json",
+      "sha256": "3e078afffc178778bd9ebd608ab182e07cc2a085c92ed00d16a15b46d0e7c4b4",
+      "syntaxVerified": true
+    },
+    {
+      "file": "src/redesign/data/operations.json",
+      "sha256": "50747ab9acc72cb1b3abf32e9e26208796bf95d0172c8152587c3cef6ba6f8cd",
+      "syntaxVerified": true
+    },
+    {
+      "file": "src/redesign/data/resource-captures.json",
+      "sha256": "4ea7e31346cb04f073549545a3179db03e3ffec924de0ac5c55df4d0819b1490",
+      "syntaxVerified": true
+    },
+    {
+      "file": "src/redesign/data/resources.json",
+      "sha256": "3e8023c7946e35627adf58d4b0d7fc8effeaddba0ca1d117fa5d7ec288ebf185",
+      "syntaxVerified": true
+    }
+  ],
+  "manualFindings": [
+    {
+      "file": "src/redesign/PreviewMeta.tsx",
+      "owner": "root",
+      "finding": "Fallback description contains an untranslated source literal in a non-JSX logical expression; wrap through runtime or localized metadata policy."
+    },
+    {
+      "file": "src/redesign/data/platform-answers.ts",
+      "finding": "Dormant source: platformAnswers has no consumer import in the native site; its source literals are not currently rendered."
+    },
+    {
+      "file": "src/redesign/data/ecosystem.json",
+      "finding": "Metadata name sources concatenate words/sentences without spacing (O mesmo fundamento.Outras formas de operar.; A conexão mudao resultado.). Correct source/translation in metadata policy; do not infer new marketing copy."
+    },
+    {
+      "file": "src/redesign/Banking.tsx",
+      "owner": "root",
+      "finding": "Read-only boundary: currency formatting, illustrative reserve copy and product headings are being corrected by root."
+    },
+    {
+      "file": "src/redesign/Credit.tsx",
+      "owner": "root",
+      "finding": "Read-only boundary: currency formatting and product labels are being corrected by root."
+    },
+    {
+      "file": "src/redesign/i18n/routes.test.ts",
+      "owner": "root",
+      "finding": "French activation requires removing previous six-language length assertion."
+    },
+    {
+      "file": "src/redesign/i18n/LanguagePicker.test.tsx",
+      "owner": "root",
+      "finding": "French activation requires updating the six-links/French-absent assertions."
+    }
+  ],
+  "limits": [
+    "Source binding completeness is not a linguistic review of every target sentence. Root owns translated grammar/terminology review in dictionaries.",
+    "Explicit line-break fragments are inventoried for contextual linguistic/visual review; localizing a fragment alone cannot prove the complete sentence is grammatical.",
+    "Technical block/API labels, versions, brand signatures and code examples remain exact. Product names are localized only in UI; data names/slugs/filter values retain original identities.",
+    "Dynamic visitor messages and generated concept content are never passed through generic translation.",
+    "Root-owned header/router/bootstrap/SEO/runtime/dictionaries and financial pages were inspected read-only; DOM and responsive checks remain serial with root."
+  ],
+  "counts": {
+    "modules": 40,
+    "json": 15,
+    "jsonImports": 25,
+    "localizeDataBindings": 19,
+    "productLabelCalls": 69,
+    "unboundVisibleLiterals": 5,
+    "unregisteredTranslationKeys": 0,
+    "protectedBindingViolations": 0,
+    "fragmentedEditorialElements": 273,
+    "embeddedProductMessages": 30
+  }
+}

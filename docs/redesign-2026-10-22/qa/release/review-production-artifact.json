@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-26T23:29:36.783Z",
+  "passed": true,
+  "scope": "Small local fixtures and command plans only; no build, browser, network, container or deployment. Caddy runtime validation is separate.",
+  "checks": [
+    "default staging rejects production-indexable artifact",
+    "review requires HTTPS staging",
+    "review cannot target production",
+    "normal staging requires noindex; review requires production bytes",
+    "prepared review and production public/server hashes match exactly",
+    "separate target/port and explicit manifest protection",
+    "installer rejects implicit review and accepts explicit protected plan without network",
+    "installer rejects modified protection overlay",
+    "green fixture isolates port18183, image/project/private base and rejects apply without authorization",
+    "green approval binds exact staged SHA, manifest SHA and18182→18183; slot/port and compose tampering rejected",
+    "cutover guards preserve blue rollback, allow identical confirmation retry, reject unrelated changes/reversed port approval/unrecorded cutover and retain trusted local443 TLS"
+  ],
+  "remoteChanges": false
+}

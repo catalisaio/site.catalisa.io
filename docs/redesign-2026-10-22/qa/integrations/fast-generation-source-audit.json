@@ -1,0 +1,113 @@
+{
+  "checkedAt": "2026-10-25T05:10:45.630921+00:00",
+  "scope": "Read-only local source investigation; zero network calls, tests, inference, product/config changes or deployment",
+  "agentApi": {
+    "chat": "POST /agents/:id/chat",
+    "test": "POST /agents/:id/test",
+    "fastOverrideSupported": false,
+    "reason": "Both orchestration calls set modelTier smart; ChatWithAgentDto accepts only message, conversationId and context. resolvedModel after execution labels metrics/metadata, not the provider call. executionBudgetMs is consumed by RUN_AGENT workflow, not this controller.",
+    "evidence": [
+      "wpp/apps/painel-cliente-api/src/modules/agents/services/agent-executor.service.ts:531",
+      "wpp/apps/painel-cliente-api/src/modules/agents/services/agent-executor.service.ts:656",
+      "wpp/apps/painel-cliente-api/src/modules/agents/services/agent-executor.service.ts:795",
+      "wpp/apps/painel-cliente-api/src/modules/agents/dto/chat-with-agent.dto.ts:4",
+      "wpp/apps/painel-cliente-api/src/modules/agents/agents.controller.ts:358"
+    ]
+  },
+  "supportedFastToolFreeCandidate": {
+    "method": "POST",
+    "stagingUrl": "https://ai-engine.bb.stg.catalisa.app/ai-engine/api/v1/ai/generate",
+    "productionUrl": "https://ai-engine.bb.catalisa.app/ai-engine/api/v1/ai/generate",
+    "request": {
+      "prompt": "JSON.stringify({briefing, currentConcept?, refinement?, schema, allowedCatalog}); omit contact/name/phone/email/history not needed for composition",
+      "systemPrompt": "Existing exclusive concept generator instructions, maximum10000 characters",
+      "provider": "anthropic",
+      "model": "fast",
+      "maxTokens": 2500,
+      "temperature": 0.3,
+      "language": "pt"
+    },
+    "response": "{data:{text,model,usage}}; parse data.text then existing schema/invariant validation; never execute generated content",
+    "tools": "No tools field/dispatch in CompletionService.generate/provider.complete body; plain text generation only",
+    "resolvedFastModelInCurrentSource": "claude-haiku-4-5-20251001",
+    "limits": {
+      "promptCharacters": 50000,
+      "systemPromptCharacters": 10000,
+      "maxTokensUpperBound": 4096,
+      "defaultMaxTokens": 500
+    },
+    "authentication": "Server-only BB organization-scoped API key in X-API-Key or Authorization: ApiKey; exact allowed resource POST /ai-engine/api/v1/ai/generate. Alternatively BB IAM access JWT with organizationId and AI_ENGINE_EXECUTE. Panel site API token is not proven compatible. Never send key to browser.",
+    "credentialBoundary": "BB uses its own server-configured Anthropic provider. It does not accept the panel owner credentialId/provider key. Ownership/billing/configuration must be verified before adoption; not drop-in equivalent to existing owner agent credential.",
+    "budget": "No request-supported wall-clock execution budget. Current BB ClaudeProvider uses120000ms per attempt and up to3 retries; client timeout does not prove upstream cancellation or latency. Must smoke actual deployment before choosing.",
+    "evidence": [
+      "bb/src/ai-engine/app.ts:11",
+      "bb/src/ai-engine/routes/completions.router.ts:24",
+      "bb/src/ai-engine/types/index.ts:159",
+      "bb/src/ai-engine/services/completion.service.ts:21",
+      "bb/src/ai-engine/providers/provider.factory.ts:18",
+      "bb/src/ai-engine/config/models.ts:8",
+      "bb/src/ai-engine/types/index.ts:74",
+      "bb/src/ai-engine/providers/claude.provider.ts:44",
+      "bb/src/shared/middleware/auth.middleware.ts:157",
+      "bb/src/shared/middleware/permission.middleware.ts:20"
+    ]
+  },
+  "workflowAlternatives": {
+    "AI_GENERATE_TEXT": {
+      "supportedConfig": {
+        "model": "fast",
+        "provider": "anthropic",
+        "maxTokens": 2500,
+        "temperature": 0.3,
+        "language": "pt",
+        "systemPrompt": "existing instructions",
+        "prompt": "minimal request"
+      },
+      "zeroTools": true,
+      "caveat": "Uses global LLMProviderFactory.getProviderByName/getProvider, no tenant credentialId; workflow payload/action logs persist data. Not the existing owner agent credential.",
+      "evidence": [
+        "wpp/apps/painel-cliente-api/src/modules/workflows/handlers/ai/ai-generate-text.handler.ts:66",
+        "wpp/apps/painel-cliente-api/src/modules/workflows/handlers/base/base-ai.handler.ts:81",
+        "wpp/apps/painel-cliente-api/src/modules/workflows/handlers/base/base-ai.handler.ts:229"
+      ]
+    },
+    "BB_GENERATE_TEXT": {
+      "doNotAdoptAsIs": true,
+      "defects": [
+        "Handler posts /api/v1/generate, but actual BB path is /ai-engine/api/v1/ai/generate",
+        "Handler reads response.body.text; BB response wraps content in data.text",
+        "Handler does not forward provider/language although direct BB schema supports them",
+        "No credentialId falls back to platform token; no per-tenant identity override on this handler"
+      ],
+      "evidence": [
+        "wpp/apps/painel-cliente-api/src/modules/workflows/handlers/catalisa/aiengine/bb-generate-text.handler.ts:49",
+        "wpp/apps/painel-cliente-api/src/modules/workflows/handlers/base/base-catalisa.handler.ts:254",
+        "bb/src/ai-engine/routes/completions.router.ts:36"
+      ]
+    },
+    "aiChat": "Rejected: /ai/chat is full platform assistant and explicitly can execute tools; not a tool-free concept generator."
+  },
+  "conclusion": "No supported public request switches the current dedicated agent chat to fast while preserving its owner credential. The direct BB API is a supported fast tool-free text endpoint at source level, but auth/provider billing and actual latency remain unverified. Do not change agent/global settings or adopt a workflow workaround without those checks.",
+  "repoAliases": {
+    "wpp": "/home/klederson/Projects/wpp.bb.catalisa.io",
+    "bb": "/home/klederson/Projects/building-blocks-v2"
+  },
+  "ownerCredentialHttpBridgeAudit": {
+    "checkedAt": "2026-10-25T05:22:33.702961+00:00",
+    "scope": "Additional read-only local source inspection; no network or code/configuration changes",
+    "supported": false,
+    "action": "WEB_REQUEST, not HTTP_REQUEST",
+    "webRequestCanInjectCredentialHeaders": true,
+    "aiProviderCredentialCanResolveToHeaders": false,
+    "reason": "CredentialResolverService.resolveHeaders switch has only JWT_BEARER, OAUTH2_CLIENT_CREDENTIALS, OAUTH2_AUTHORIZATION_CODE, BASIC_AUTH, API_KEY and CUSTOM_HEADERS. AI_PROVIDER falls through to an empty headers object. WEB_REQUEST never maps AI_PROVIDER.apiKey to x-api-key.",
+    "apiKeyCredentialAlternative": "API_KEY can bind encrypted key to header paramName=x-api-key/location=header, but requires another explicit credential containing a known key. Existing masked AI_PROVIDER cannot be aliased or safely converted through this API; no extraction attempted.",
+    "otherActions": "BaseAIHandler/AI handlers expose no credentialId. No registered HTTP_REQUEST or LLM_TEXT_GENERATE alternate. Agent chat/test public DTO still offers no direct provider or fast override.",
+    "evidence": [
+      "wpp/apps/painel-cliente-api/src/modules/workflows/handlers/web-request.handler.ts:65",
+      "wpp/apps/painel-cliente-api/src/modules/credentials/credential-resolver.service.ts:337",
+      "wpp/apps/painel-cliente-api/src/modules/credentials/credential-resolver.service.ts:367",
+      "wpp/apps/painel-cliente-api/src/modules/workflows/handlers/action-registry.ts:552"
+    ],
+    "recommendation": "Do not construct a workflow bridge with this credential or expose/extract its key. Continue the existing owned-agent path with a durable job/deadline appropriate to observed real latency, or use a separately authorized supported provider integration."
+  }
+}

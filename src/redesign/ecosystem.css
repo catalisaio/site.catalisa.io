@@ -1,0 +1,17 @@
+/* Native readability and input affordances; composition and copy follow N01. */
+.c-site .c-ecosystem .c-eyebrow { font-family: var(--c-mono); }
+.c-site .c-ecosystem .composition-selector [role=tab] { min-height: 48px; }
+.c-site .c-ecosystem :is(.breadcrumb,.block-status,.block-list .c-eyebrow,.content-rows .c-eyebrow) { color: var(--c-body); }
+.c-site .c-ecosystem .credit-feature :is(h2,h3,p,small,.c-text-link) { color: var(--c-paper); }
+.c-site .c-ecosystem .credit-feature:focus-visible { outline-color: var(--c-yellow); outline-offset: -5px; }
+.c-site .c-ecosystem .banking-feature .feature-copy { background: linear-gradient(90deg,#f4f0e8f5,#f4f0e8dc 45%,transparent 85%); }
+.c-site .c-ecosystem :is(.product-directory,.product-lead,.composition-content)>* { min-width: 0; }
+@media(max-width:360px) {
+  .c-site .c-ecosystem .page-intro h1 { font-size: clamp(37px,10.4vw,54px); overflow-wrap: anywhere; }
+  .c-site .c-ecosystem .c-wrap { width: calc(100% - 36px); }
+}
+
+/* Same typography for product titles after correcting their heading level. */
+.c-site .c-ecosystem .feature-copy h2{font-size:34px;line-height:1.02;letter-spacing:-.05em}
+@media(max-width:1050px){.c-site .c-ecosystem .feature-copy h2,.c-site .c-ecosystem .credit-feature .feature-copy h2{font-size:28px}}
+@media(max-width:700px){.c-site .c-ecosystem .feature-copy h2,.c-site .c-ecosystem .credit-feature .feature-copy h2{font-size:31px}}

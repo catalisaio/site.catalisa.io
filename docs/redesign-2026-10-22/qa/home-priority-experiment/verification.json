@@ -1,0 +1,316 @@
+{
+  "date": "2026-10-25T07:02:52.833Z",
+  "scope": "Isolated gzip HTTP serving frozen r2 bytes; only low priority on below-fold images is modified in memory for the second variant. Same4xCPU/150ms/1.6Mbps/mobile simulation. Not staging performance, not owner acceptance, no artifact changed.",
+  "results": [
+    {
+      "variant": "baseline",
+      "lcp": {
+        "value": 2652,
+        "url": "/redesign/financial-city.webp"
+      },
+      "cls": 0.021033977807361437,
+      "images": [
+        {
+          "src": "/redesign/financial-city.webp",
+          "priority": "high",
+          "top": 423.8125
+        },
+        {
+          "src": "/redesign/architecture.webp",
+          "priority": "auto",
+          "top": 1756.78125
+        },
+        {
+          "src": "/redesign/banking.webp",
+          "priority": "auto",
+          "top": 2317.875
+        },
+        {
+          "src": "/redesign/studio.webp",
+          "priority": "auto",
+          "top": 3420.25
+        },
+        {
+          "src": "/redesign/hero.webp",
+          "priority": "auto",
+          "top": 0
+        },
+        {
+          "src": "/redesign/architecture.webp",
+          "priority": "auto",
+          "top": 0
+        }
+      ],
+      "resources": [
+        {
+          "url": "/redesign/financial-city.webp",
+          "bytes": 113386,
+          "start": 178.89999999850988,
+          "end": 2627.7999999970198
+        },
+        {
+          "url": "/assets/index-DF_ROU9L.js",
+          "bytes": 63615,
+          "start": 179.19999999925494,
+          "end": 1795.2999999970198
+        },
+        {
+          "url": "/assets/App-D5zo17Vg.js",
+          "bytes": 2113,
+          "start": 179.89999999850988,
+          "end": 393.0999999977648
+        },
+        {
+          "url": "/assets/redesign-Cnam7vM3.js",
+          "bytes": 28720,
+          "start": 179.89999999850988,
+          "end": 911.1999999992549
+        },
+        {
+          "url": "/assets/resources-MjVSx-YK.js",
+          "bytes": 126,
+          "start": 180.39999999850988,
+          "end": 603.8999999985099
+        },
+        {
+          "url": "/assets/ecosystem-CsvCLPsP.js",
+          "bytes": 213,
+          "start": 180.5,
+          "end": 784.6999999992549
+        },
+        {
+          "url": "/assets/foundation-components-DCtnGUsO.js",
+          "bytes": 511,
+          "start": 180.59999999776483,
+          "end": 822.5
+        },
+        {
+          "url": "/assets/PreviewMeta-R8j4Mlr-.js",
+          "bytes": 4408,
+          "start": 180.69999999925494,
+          "end": 985.2999999970198
+        },
+        {
+          "url": "/assets/PreviewMeta-CwGQPNAo.css",
+          "bytes": 1789,
+          "start": 181.5,
+          "end": 380.29999999701977
+        },
+        {
+          "url": "/assets/App-Dgai9iNN.css",
+          "bytes": 184,
+          "start": 181.5,
+          "end": 409.19999999925494
+        },
+        {
+          "url": "/assets/base-CkaTQCVj.css",
+          "bytes": 3206,
+          "start": 181.5,
+          "end": 640
+        },
+        {
+          "url": "/assets/Home-qFShe7VD.js",
+          "bytes": 9772,
+          "start": 181.5,
+          "end": 1449.7999999970198
+        },
+        {
+          "url": "/assets/Home-D5IVvhVV.css",
+          "bytes": 6825,
+          "start": 181.59999999776483,
+          "end": 722.5999999977648
+        },
+        {
+          "url": "/redesign/inter-latin-0.woff2",
+          "bytes": 49416,
+          "start": 740.5999999977648,
+          "end": 2252.599999997765
+        },
+        {
+          "url": "/redesign/inter-latin-2.woff2",
+          "bytes": 51080,
+          "start": 740.6999999992549,
+          "end": 2342.7999999970198
+        },
+        {
+          "url": "/redesign/inter-latin-1.woff2",
+          "bytes": 51024,
+          "start": 741.0999999977648,
+          "end": 2403
+        },
+        {
+          "url": "/redesign/architecture.webp",
+          "bytes": 100566,
+          "start": 876.0999999977648,
+          "end": 2868
+        },
+        {
+          "url": "/redesign/brand/catalisa-simbolo-principal.svg",
+          "bytes": 566,
+          "start": 2877.7999999970198,
+          "end": 3035.199999999255
+        }
+      ],
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "variant": "low",
+      "lcp": {
+        "value": 2700,
+        "url": "/redesign/financial-city.webp"
+      },
+      "cls": 0.021033977807361437,
+      "images": [
+        {
+          "src": "/redesign/financial-city.webp",
+          "priority": "high",
+          "top": 423.8125
+        },
+        {
+          "src": "/redesign/architecture.webp",
+          "priority": "low",
+          "top": 1756.78125
+        },
+        {
+          "src": "/redesign/banking.webp",
+          "priority": "low",
+          "top": 2317.875
+        },
+        {
+          "src": "/redesign/studio.webp",
+          "priority": "low",
+          "top": 3420.25
+        },
+        {
+          "src": "/redesign/hero.webp",
+          "priority": "low",
+          "top": 0
+        },
+        {
+          "src": "/redesign/architecture.webp",
+          "priority": "low",
+          "top": 0
+        }
+      ],
+      "resources": [
+        {
+          "url": "/redesign/financial-city.webp",
+          "bytes": 113386,
+          "start": 176.69999999925494,
+          "end": 2676.300000000745
+        },
+        {
+          "url": "/assets/index-DF_ROU9L.js",
+          "bytes": 63615,
+          "start": 177.80000000074506,
+          "end": 1791.5
+        },
+        {
+          "url": "/assets/App-D5zo17Vg.js",
+          "bytes": 2113,
+          "start": 177.89999999850988,
+          "end": 389.5
+        },
+        {
+          "url": "/assets/resources-MjVSx-YK.js",
+          "bytes": 126,
+          "start": 178,
+          "end": 370
+        },
+        {
+          "url": "/assets/redesign-Cnam7vM3.js",
+          "bytes": 28720,
+          "start": 178,
+          "end": 898.6999999992549
+        },
+        {
+          "url": "/assets/ecosystem-CsvCLPsP.js",
+          "bytes": 213,
+          "start": 178.39999999850988,
+          "end": 734.0999999977648
+        },
+        {
+          "url": "/assets/foundation-components-DCtnGUsO.js",
+          "bytes": 511,
+          "start": 179,
+          "end": 824.0999999977648
+        },
+        {
+          "url": "/assets/PreviewMeta-R8j4Mlr-.js",
+          "bytes": 4408,
+          "start": 179,
+          "end": 1004.0999999977648
+        },
+        {
+          "url": "/assets/PreviewMeta-CwGQPNAo.css",
+          "bytes": 1789,
+          "start": 179.5,
+          "end": 433.80000000074506
+        },
+        {
+          "url": "/assets/App-Dgai9iNN.css",
+          "bytes": 184,
+          "start": 180.19999999925494,
+          "end": 547
+        },
+        {
+          "url": "/assets/base-CkaTQCVj.css",
+          "bytes": 3206,
+          "start": 181,
+          "end": 643.3999999985099
+        },
+        {
+          "url": "/assets/Home-D5IVvhVV.css",
+          "bytes": 6825,
+          "start": 181.09999999776483,
+          "end": 749.5
+        },
+        {
+          "url": "/assets/Home-qFShe7VD.js",
+          "bytes": 9787,
+          "start": 181.09999999776483,
+          "end": 1130.5999999977648
+        },
+        {
+          "url": "/redesign/inter-latin-0.woff2",
+          "bytes": 49416,
+          "start": 774.3000000007451,
+          "end": 2316.89999999851
+        },
+        {
+          "url": "/redesign/inter-latin-2.woff2",
+          "bytes": 51080,
+          "start": 774.3999999985099,
+          "end": 2421.5
+        },
+        {
+          "url": "/redesign/inter-latin-1.woff2",
+          "bytes": 51024,
+          "start": 774.3999999985099,
+          "end": 2488.89999999851
+        },
+        {
+          "url": "/redesign/architecture.webp",
+          "bytes": 100566,
+          "start": 830.1999999992549,
+          "end": 2864
+        },
+        {
+          "url": "/redesign/brand/catalisa-simbolo-principal.svg",
+          "bytes": 566,
+          "start": 2884.599999997765,
+          "end": 3045.199999999255
+        }
+      ],
+      "overflow": false,
+      "errors": []
+    }
+  ],
+  "decision": {
+    "adopted": false,
+    "reason": "No measured gain:2652ms baseline versus2700ms low priority, equal CLS and no JS errors. Do not change the frozen r2 based on this experiment.",
+    "candidateChanged": false,
+    "productionChanged": false
+  }
+}

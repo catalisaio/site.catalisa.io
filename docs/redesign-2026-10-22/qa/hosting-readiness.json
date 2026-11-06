@@ -1,0 +1,96 @@
+{
+  "observedAt": "2026-10-25T01:45:00Z",
+  "scope": "Read-only discovery and operational preparation; no deploy",
+  "public": {
+    "url": "https://catalisa.io",
+    "httpStatus": 200,
+    "remoteIp": "177.104.184.38",
+    "lastModified": "2026-07-04T16:10:30Z"
+  },
+  "edge": {
+    "node": "177.104.184.34",
+    "containerId": 105,
+    "router": "catalisa-io-site@file",
+    "service": "catalisa-io-svc@file",
+    "source": "/opt/traefik/config/dynamic/catalisa-io.yml",
+    "upstream": "http://172.10.0.202:8081",
+    "status": "UP"
+  },
+  "hosting": {
+    "node": "177.104.184.34",
+    "containerId": 154,
+    "name": "marketing-prod-01",
+    "ip": "172.10.0.202",
+    "dockerContainer": "catalisa-site",
+    "image": "caddy:2-alpine",
+    "mounts": [
+      "/opt/apps/catalisa/Caddyfile:/etc/caddy/Caddyfile:ro",
+      "/opt/apps/catalisa/dist:/srv:ro"
+    ],
+    "composeVersion": "5.1.3",
+    "node22ImagePresent": false
+  },
+  "access": {
+    "sshReadOnlyVerified": true,
+    "githubKeyringVerified": true,
+    "githubDefaultBranch": "master",
+    "netlifyCliInstalled": false,
+    "netlifyTokenEnvironmentPresent": false,
+    "netlifyConfigDirectoryPresent": false,
+    "note": "Netlify is historical; the live Caddyfile says ex-Netlify"
+  },
+  "checks": {
+    "newNodeScriptSyntax": "passed",
+    "activationBashSyntax": "passed",
+    "generatedCaddyAdaptValidateUsingInstalledBinary": "passed (exit 0)",
+    "generatedCaddyRuntimeHttp": "passed 7/7 in isolated network-none ephemeral Caddy container; qa/release/caddy-http.json",
+    "standaloneTypecheckAndBundle": "pending shared heavy-work slot",
+    "candidateDeploy": "not executed",
+    "productionDeploy": "not executed",
+    "stagingInstallerSyntax": "passed; plan/apply explicit, integrity+private-env+fixed-target checks",
+    "stagingEdgePlan": "passed; exact fixed router, htpasswd mode600; access.json stays local"
+  },
+  "remaining": [
+    "Final static artifact including Caddy SEO rules",
+    "Bundle standalone server and create runtime dependency lock",
+    "Validate runtime environment without printing values",
+    "Pull Node22 image and install candidate dependencies when staging is authorized",
+    "Start isolated staging candidate and verify full HTTPS journeys",
+    "Configure dedicated production resources",
+    "Present validated staging and obtain explicit production approval"
+  ],
+  "httpsStaging": {
+    "hostname": "site-staging.catalisa.io",
+    "wildcardCertificateAvailable": false,
+    "publicCertificateSAN": [
+      "catalisa.io",
+      "www.catalisa.io"
+    ],
+    "publicCertificateNotAfter": "2027-01-15T22:55:04Z",
+    "candidateSniCertificate": "TRAEFIK DEFAULT CERT",
+    "dnsAccessVerified": true,
+    "dnsNode": "177.104.184.35",
+    "dnsContainer": 123,
+    "dnsVersion": "4.8.3",
+    "zone": "catalisa.io",
+    "recordPresent": false,
+    "plannedRecord": "site-staging.catalisa.io A 177.104.184.38 TTL60",
+    "certificateResolver": "letsencrypt (HTTP01, same resolver configuration as current site)",
+    "edgeIpVerified": "172.10.0.105",
+    "trustedProxyPolicy": "Caddy only edge172.10.0.105 strict XFF; BFF only loopback",
+    "routePrepared": true,
+    "authentication": "dedicated BasicAuth; callbacks use BFF Bearer/signature",
+    "dnsOrEdgeChangesExecuted": false
+  },
+  "preinstallationReadOnly": {
+    "observedAt": "2026-10-25T04:34:03.770949+00:00",
+    "stagingDirectoryPresent": false,
+    "port18181Listening": false,
+    "stagingRoutePresent": false,
+    "stagingBasicAuthFilePresent": false,
+    "existingPublicContainerStillPresent": true,
+    "scope": "SSH reads only; no candidate, DNS or edge applied",
+    "stagingDnsRecordPresent": false
+  },
+  "productionReadOnly": "qa/integrations/production-readonly.json: owner confirmed, Anthropic available, dedicated site resources absent"
+}

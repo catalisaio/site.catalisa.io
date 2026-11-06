@@ -60,9 +60,9 @@ describe('Search publication inventory', () => {
   it('does not describe a free demo as a free software price', () => {
     expect(getSoftwareApplicationSchema()).not.toHaveProperty('offers');
   });
-  it('attributes the five provided editorials to the organization without inventing publication dates',()=>{
+  it('preserves editorial attribution unless a named author is provided, without inventing publication dates',()=>{
     const articles=redesignPages.filter(page=>page.article);expect(articles).toHaveLength(5);
-    for(const page of articles){const article=getRedesignGraph(page)['@graph'].find(item=>item['@type']==='Article')!;expect(article.headline).toBe(page.article?.headline);expect(article.author).toEqual({'@id':'https://catalisa.io/#organization'});expect(article).not.toHaveProperty('datePublished');expect(article).not.toHaveProperty('dateModified');}
+    for(const page of articles){const article=getRedesignGraph(page)['@graph'].find(item=>item['@type']==='BlogPosting')!;expect(article.headline).toBe(page.article?.headline);expect(article.author).toEqual(page.path==='/perspectivas/construir-por-composicao'?{'@type':'Person',name:'Klederson Bueno'}:{'@id':'https://catalisa.io/#organization'});expect(article).not.toHaveProperty('datePublished');expect(article).not.toHaveProperty('dateModified');if(page.path!=='/perspectivas/construir-por-composicao')expect(article).not.toHaveProperty('sameAs');}
   });
 });
 
@@ -148,7 +148,7 @@ describe('Explicit locale native metadata',()=>{
   expect(page).toMatchObject({path,basePath:source.basePath,locale:'de-DE',title:'Lesbare Regeln | Catalisa',article:{headline:'Lesbare Regeln'}});
   const graph=getRedesignGraph(page)['@graph'];
   expect(graph.find(node=>node['@type']==='WebPage')).toMatchObject({url:'https://catalisa.io'+path,inLanguage:'de-DE',name:page.title,description:page.description});
-  expect(graph.find(node=>node['@type']==='Article')).toMatchObject({headline:'Lesbare Regeln',inLanguage:'de-DE'});
+  expect(graph.find(node=>node['@type']==='BlogPosting')).toMatchObject({headline:'Lesbare Regeln',inLanguage:'de-DE'});
   const crumbs=graph.find(node=>node['@type']==='BreadcrumbList')!.itemListElement as {item:string}[];
   expect(crumbs.map(crumb=>crumb.item)).toEqual(['https://catalisa.io/de','https://catalisa.io/de/perspektiven','https://catalisa.io'+path]);
   expect(graph.find(node=>node['@type']==='Organization')).toEqual(getRedesignGraph(source)['@graph'].find(node=>node['@type']==='Organization'));

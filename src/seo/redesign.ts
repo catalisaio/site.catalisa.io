@@ -1,5 +1,6 @@
 import catalog from '../redesign/data/catalog.json';
-import editorial from '../redesign/data/editorial.json';
+import editorial from '../redesign/data/editorial';
+import type { Syndication } from '../redesign/data/editorial';
 import { BASE_URL, normalizePath } from './routes';
 import privacy from '../i18n/locales/pt-BR/privacy.json';
 import terms from '../i18n/locales/pt-BR/terms.json';
@@ -15,7 +16,7 @@ export interface RedesignPage {
   title: string;
   description: string;
   type?: 'CollectionPage' | 'WebPage';
-  article?: { headline: string };
+  article?: { headline: string; author?: string; syndication?: Syndication[] };
   basePath?: string;
   locale?: SiteLocale;
   nativeLegal?: boolean;
@@ -36,7 +37,7 @@ export const redesignPages: RedesignPage[] = [
   { path: '/press-kit', title: 'Press-kit: marca, assinaturas e recursos oficiais | Catalisa', description: 'Baixe assinaturas, ícones e capas da Catalisa em SVG e PNG. Consulte a paleta aprovada e o guia de uso da marca.' },
   { path: '/fontes', title: 'Fontes e referências do conteúdo | Catalisa', description: 'Consulte as fontes e materiais de referência do site Catalisa, com caminhos para a documentação e os guias de cada produto.' },
   { path: '/mapa', title: 'Mapa do site: explore todas as conexões | Catalisa', description: 'Encontre os caminhos da plataforma, do ecossistema, das capacidades e dos recursos do site Catalisa.' },
-  ...editorial.map(page=>({path:page.path,title:`${page.title} | Catalisa`,description:page.description??'Perspectivas da Catalisa sobre produtos, arquitetura e operação.',...(page.stateCount>0?{article:{headline:page.title}}:{type:'CollectionPage' as const})})),
+  ...editorial.map(page=>({path:page.path,title:`${page.title} | Catalisa`,description:page.description??'Perspectivas da Catalisa sobre produtos, arquitetura e operação.',...(page.stateCount>0?{article:{headline:page.title,author:page.author,syndication:page.syndication}}:{type:'CollectionPage' as const})})),
   { path: '/design-system/home', title: 'Catalisa | Crie produtos e automações com IA', description: 'Crie produtos, agentes de IA e automações conectando identidade, dados, decisões e canais. Explore soluções financeiras, crédito e operações com a Catalisa.' },
   { path: '/studio', title: 'Studio: construir agentes e automações por composição | Catalisa', description: 'Conheça o espaço de construção da Catalisa: descreva a necessidade, revise o plano, conecte capacidades e acompanhe a evolução da jornada.' },
   { path: '/workflows', title: 'Workflows: automação de processos e jornadas | Catalisa', description: 'Entenda como eventos, condições e ações organizam a continuidade do trabalho. Explore percursos, dependências, exceções e revisão humana.' },
@@ -76,7 +77,7 @@ export function getRedesignPage(path: string) {
   let title=translate(source.title);
   const product=catalog.products.find(item=>parsed.basePath===`/ecossistema/${item.slug}`);
   if(product&&productSourceLabels[product.name]&&source.title.startsWith(product.name+':')){const colon=title.indexOf(':');if(colon>=0)title=translate(productSourceLabels[product.name])+title.slice(colon);}
-  return {...source,path:parsed.canonicalPath,basePath:parsed.basePath,locale:parsed.locale,title,description:translate(source.description),...(source.article?{article:{headline:translate(source.article.headline)}}:{})};
+  return {...source,path:parsed.canonicalPath,basePath:parsed.basePath,locale:parsed.locale,title,description:translate(source.description),...(source.article?{article:{...source.article,headline:translate(source.article.headline)}}:{})};
 }
 
 /** Emit only after the release gate has verified every enabled dictionary. */
@@ -107,6 +108,6 @@ export function getRedesignGraph(page: RedesignPage) {
   }
   if (basePath === '/capacidades') graph.push({ '@type': 'ItemList', '@id': `${url}#catalog`, numberOfItems: catalog.blocks.length, itemListElement: catalog.blocks.map((block, i) => ({ '@type': 'ListItem', position: i + 1, name: block.name, url: local(`/capacidades/${block.slug}`) })) });
   if(basePath==='/produtos')graph.push({'@type':'ItemList','@id':`${url}#products`,numberOfItems:catalog.products.length,itemListElement:catalog.products.map((product,index)=>({'@type':'ListItem',position:index+1,name:translate(productSourceLabels[product.name]??product.name),url:local(`/ecossistema/${product.slug}`)}))});
-  if(resolved.article)graph.push({'@type':'Article','@id':`${url}#article`,headline:resolved.article.headline,description:resolved.description,image:BASE_URL+getRedesignImage(resolved),inLanguage:locale,mainEntityOfPage:{'@id':`${url}#webpage`},author:{'@id':`${BASE_URL}/#organization`},publisher:{'@id':`${BASE_URL}/#organization`}});
+  if(resolved.article)graph.push({'@type':'BlogPosting','@id':`${url}#article`,url,headline:resolved.article.headline,description:resolved.description,image:BASE_URL+getRedesignImage(resolved),inLanguage:locale,mainEntityOfPage:url,author:resolved.article.author?{'@type':'Person',name:resolved.article.author}:{'@id':`${BASE_URL}/#organization`},publisher:{'@id':`${BASE_URL}/#organization`},...(resolved.article.syndication?.length?{sameAs:resolved.article.syndication.map(channel=>channel.url)}:{})});
   return { '@context': 'https://schema.org', '@graph': graph };
 }

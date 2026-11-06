@@ -51,7 +51,7 @@ for(const route of paths){
  const schemas=[...d.querySelectorAll('script[type="application/ld+json"]')].flatMap(node=>{const json=JSON.parse(node.textContent||'{}');return json['@graph']??(Array.isArray(json)?json:[json]);});
  const normalizedText=(value:string)=>value.replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim().toLocaleLowerCase();const text=normalizedText(d.querySelector('main')?.textContent??'');
  for(const schema of schemas){
-  if(schema['@type']==='Article'&&!schema.headline)issue('error','article_without_headline');
+  if(['Article','BlogPosting'].includes(schema['@type'])&&!schema.headline)issue('error','article_without_headline');
   if(schema['@type']==='FAQPage')for(const question of schema.mainEntity??[])if(question.name&&!text.includes(normalizedText(question.name)))issue('error','faq_question_not_in_content',question.name);
   if(schema.datePublished&&schema.dateModified&&Date.parse(schema.dateModified)<Date.parse(schema.datePublished))issue('error','modified_before_published');
   if(schema.aggregateRating)issue('review','rating_requires_visible_verified_source');if(schema.offers)issue('review','offer_requires_visible_current_price');

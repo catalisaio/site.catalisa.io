@@ -2,3 +2,6 @@
 .c-site .c-editorial .e-page [aria-hidden=true] { pointer-events: none; }
 .c-site .c-editorial :is(button,.e-toc a,.e-lab-options [role=tab]) { min-height:44px; }
 .c-site .c-editorial .e-eyebrow { font-family: var(--c-mono); }
+.c-site .c-editorial .e-syndication { border-top: 1px solid var(--c-rule); padding-top: 24px; padding-bottom: 32px; color: var(--c-ink); font-size: 13px; }
+.c-site .c-editorial .e-syndication ul { display: flex; flex-wrap: wrap; gap: 12px 24px; list-style: none; margin: 12px 0 0; padding: 0; }
+.c-site .c-editorial .e-syndication a { color: var(--c-brand); text-decoration: underline; text-underline-offset: 3px; }

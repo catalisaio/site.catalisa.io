@@ -31,6 +31,8 @@ const ptToEn: Record<string, string> = {
   '/agentes-ia-whatsapp': '/en/ai-agents-whatsapp',
   '/insights': '/en/insights',
   '/insights/all': '/en/insights/all',
+  '/artigos': '/en/artigos',
+  '/artigos/construir-por-composicao': '/en/artigos/construir-por-composicao',
   '/apresentacao/comercial': '/en/presentation/commercial',
   '/apresentacao/investidor': '/en/presentation/investor',
   '/apresentacao/varejo': '/en/presentation/retail',

@@ -11,6 +11,8 @@ import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { articles, categoryLabelKeys } from '../src/data/articles';
 import type { ArticleCategory } from '../src/data/articles';
+import { channelArticles, publishedChannels, articleWordCount } from '../src/data/channelArticles';
+import type { ArticleLocale, ChannelArticle } from '../src/data/channelArticles';
 
 const DIST_DIR = resolve(process.cwd(), 'dist');
 const BASE_URL = 'https://catalisa.io';
@@ -178,6 +180,85 @@ ${articleTags}
   return html;
 }
 
+function buildChannelArticleHtml(
+  template: string,
+  article: ChannelArticle,
+  locale: ArticleLocale,
+): string {
+  const metaTitle = article.metaTitle[locale];
+  const metaDescription = article.metaDescription[locale];
+  const routePrefix = locale === 'en' ? '/en' : '';
+  const canonicalUrl = `${BASE_URL}${routePrefix}/artigos/${article.slug}`;
+  const ptUrl = `${BASE_URL}/artigos/${article.slug}`;
+  const enUrl = `${BASE_URL}/en/artigos/${article.slug}`;
+  const ogLocale = locale === 'en' ? 'en_US' : 'pt_BR';
+  const altLocale = locale === 'en' ? 'pt_BR' : 'en_US';
+  const publishedTime = `${article.date}T00:00:00-03:00`;
+  const channels = publishedChannels(article);
+  const perspective = article.relatedPerspective;
+  const escapedTitle = escapeHtml(metaTitle);
+  const escapedDesc = escapeHtml(metaDescription);
+  const articleTags = article.keywords[locale]
+    .map((kw) => `    <meta property="article:tag" content="${escapeHtml(kw)}" />`)
+    .join('\n');
+
+  const jsonLd = JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: article.title[locale],
+    description: metaDescription,
+    inLanguage: locale === 'en' ? 'en-US' : 'pt-BR',
+    author: { '@type': 'Organization', name: 'Catalisa', url: BASE_URL },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Catalisa',
+      logo: { '@type': 'ImageObject', url: `${BASE_URL}/brand/logos/color/logo-color-200h.png` },
+    },
+    datePublished: publishedTime,
+    dateModified: publishedTime,
+    mainEntityOfPage: { '@type': 'WebPage', '@id': canonicalUrl },
+    url: canonicalUrl,
+    image: { '@type': 'ImageObject', url: `${BASE_URL}/og/default.png`, width: 1200, height: 630 },
+    articleSection: article.series[locale],
+    keywords: article.keywords[locale],
+    wordCount: articleWordCount(article, locale),
+    sameAs: channels.map((channel) => channel.url),
+    ...(perspective
+      ? { citation: [{ '@type': 'Article', name: perspective.title[locale], url: perspective.url[locale] }] }
+      : {}),
+  });
+
+  let html = template;
+  html = html.replace(/<title>[^<]*<\/title>/, `<title>${escapedTitle}</title>`);
+  html = html.replace(
+    /<meta name="description" content="[^"]*"/,
+    `<meta name="description" content="${escapedDesc}"`,
+  );
+  html = html.replace(/<meta property="og:title" content="[^"]*"/, `<meta property="og:title" content="${escapedTitle}"`);
+  html = html.replace(/<meta property="og:description" content="[^"]*"/, `<meta property="og:description" content="${escapedDesc}"`);
+  html = html.replace(/<meta property="og:url" content="[^"]*"/, `<meta property="og:url" content="${canonicalUrl}"`);
+  html = html.replace(/<meta property="og:type" content="[^"]*"/, `<meta property="og:type" content="article"`);
+  html = html.replace(/<meta property="og:locale" content="[^"]*"/, `<meta property="og:locale" content="${ogLocale}"`);
+  html = html.replace(/<meta name="twitter:title" content="[^"]*"/, `<meta name="twitter:title" content="${escapedTitle}"`);
+  html = html.replace(/<meta name="twitter:description" content="[^"]*"/, `<meta name="twitter:description" content="${escapedDesc}"`);
+  html = html.replace(/<link rel="canonical" href="[^"]*"/, `<link rel="canonical" href="${canonicalUrl}"`);
+
+  const articleMeta = `
+    <!-- Channel article meta (injected by inject-seo-meta) -->
+    <meta property="og:locale:alternate" content="${altLocale}" />
+    <meta property="article:published_time" content="${publishedTime}" />
+    <meta property="article:modified_time" content="${publishedTime}" />
+    <meta property="article:author" content="Catalisa" />
+    <meta property="article:section" content="${escapeHtml(article.series[locale])}" />
+${articleTags}
+    <link rel="alternate" hreflang="pt-BR" href="${ptUrl}" />
+    <link rel="alternate" hreflang="en-US" href="${enUrl}" />
+    <link rel="alternate" hreflang="x-default" href="${ptUrl}" />
+    <script type="application/ld+json">${jsonLd}</script>`;
+
+  return html.replace('</head>', `${articleMeta}\n  </head>`);
+}
+
 function main() {
   const templatePath = resolve(DIST_DIR, 'index.html');
   if (!existsSync(templatePath)) {
@@ -204,7 +285,20 @@ function main() {
     count++;
   }
 
+  let channelCount = 0;
+  for (const article of channelArticles) {
+    const ptPath = resolve(DIST_DIR, `artigos/${article.slug}/index.html`);
+    mkdirSync(dirname(ptPath), { recursive: true });
+    writeFileSync(ptPath, buildChannelArticleHtml(template, article, 'pt'));
+
+    const enPath = resolve(DIST_DIR, `en/artigos/${article.slug}/index.html`);
+    mkdirSync(dirname(enPath), { recursive: true });
+    writeFileSync(enPath, buildChannelArticleHtml(template, article, 'en'));
+    channelCount++;
+  }
+
   console.log(`SEO meta injected: ${count} articles × 2 languages = ${count * 2} files`);
+  console.log(`Channel article SEO meta injected: ${channelCount} × 2 languages = ${channelCount * 2} files`);
 }
 
 main();

@@ -98,8 +98,8 @@ export const funnelDefinitions: FunnelDefinition[] = [
     id: 'content_path',
     label: 'Content Path',
     stages: [
-      { id: 'content_landing',   label: 'Content Landing',  matchPatterns: ['/insights', '/en/insights'] },
-      { id: 'article_read',      label: 'Article Read',     matchPatterns: ['/insights/', '/en/insights/'] },
+      { id: 'content_landing',   label: 'Content Landing',  matchPatterns: ['/insights', '/en/insights', '/artigos', '/en/artigos'] },
+      { id: 'article_read',      label: 'Article Read',     matchPatterns: ['/insights/', '/en/insights/', '/artigos/', '/en/artigos/'] },
       { id: 'contact',           label: 'Contact',          matchPatterns: ['/contato', '/en/contact'] },
       { id: 'whatsapp_open',     label: 'WhatsApp Open',    matchPatterns: [] },
     ],
@@ -144,10 +144,10 @@ export function classifyPageType(pathname: string): PageType {
   ) return 'industry';
 
   // Content articles (must check before generic content)
-  if (/\/insights\/.+/.test(p)) return 'content_article';
+  if (/\/insights\/.+/.test(p) || /\/artigos\/.+/.test(p)) return 'content_article';
 
   // Content listing
-  if (p.includes('/insights')) return 'content';
+  if (p.includes('/insights') || p === '/artigos' || p === '/en/artigos') return 'content';
 
   // Legal
   if (

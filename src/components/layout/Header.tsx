@@ -611,6 +611,22 @@ export function Header() {
               {t('nav.insights')}
             </Button>
 
+            {/* Artigos — top-level link */}
+            <Button
+              as={Link}
+              to={lp('/artigos')}
+              variant="ghost"
+              size="sm"
+              color={isDarkHero ? 'whiteAlpha.800' : 'gray.600'}
+              fontWeight={pathname.startsWith(lp('/artigos')) ? '600' : '400'}
+              _hover={{
+                color: isDarkHero ? 'white' : 'brand.500',
+                bg: isDarkHero ? 'whiteAlpha.100' : 'brand.50',
+              }}
+            >
+              {t('nav.articles')}
+            </Button>
+
             {/* Developers link */}
             <Button
               as="a"
@@ -839,6 +855,18 @@ export function Header() {
                 onClick={onClose}
               >
                 {t('nav.insights')}
+              </Button>
+
+              {/* Artigos */}
+              <Button
+                as={Link}
+                to={lp('/artigos')}
+                variant="ghost"
+                justifyContent="flex-start"
+                fontWeight={pathname.startsWith(lp('/artigos')) ? '600' : '400'}
+                onClick={onClose}
+              >
+                {t('nav.articles')}
               </Button>
 
               {/* Developers */}

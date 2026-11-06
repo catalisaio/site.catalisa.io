@@ -229,6 +229,15 @@ export const routes: RouteDefinition[] = [
     ogImage: '/og/default.png',
   },
   {
+    ptPath: '/artigos',
+    enPath: '/en/artigos',
+    pageKey: 'artigos',
+    priority: 0.8,
+    changefreq: 'weekly',
+    schemas: ['Organization', 'BreadcrumbList', 'CollectionPage'],
+    ogImage: '/og/default.png',
+  },
+  {
     ptPath: '/insights',
     enPath: '/en/insights',
     pageKey: 'insights',

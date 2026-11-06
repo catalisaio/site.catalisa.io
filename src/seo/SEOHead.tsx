@@ -15,6 +15,7 @@ interface SEOHeadProps {
   pageKey: string;
   title?: string;
   description?: string;
+  keywords?: string;
   ogImage?: string;
   noIndex?: boolean;
   article?: ArticleOGProps;
@@ -74,7 +75,7 @@ function setLink(rel: string, href: string, attrs?: Record<string, string>) {
  * Manages all SEO-related tags in <head>: title, meta, canonical, OG, Twitter, hreflang.
  * Uses data-seo="true" attribute for cleanup on unmount.
  */
-export function SEOHead({ pageKey, title, description, ogImage, noIndex, article }: SEOHeadProps) {
+export function SEOHead({ pageKey, title, description, keywords, ogImage, noIndex, article }: SEOHeadProps) {
   const { t } = useTranslation('seo');
   const { i18n } = useTranslation();
   const { ptBR, enUS } = useHreflangPaths();
@@ -86,7 +87,7 @@ export function SEOHead({ pageKey, title, description, ogImage, noIndex, article
 
     const resolvedTitle = title || t(`${pageKey}.title`);
     const resolvedDescription = description || t(`${pageKey}.description`);
-    const resolvedKeywords = t(`${pageKey}.keywords`, { defaultValue: '' });
+    const resolvedKeywords = keywords || t(`${pageKey}.keywords`, { defaultValue: '' });
     const resolvedOgImage = `${BASE_URL}${ogImage || '/og/default.png'}`;
 
     // Title
@@ -170,7 +171,7 @@ export function SEOHead({ pageKey, title, description, ogImage, noIndex, article
     return () => {
       document.querySelectorAll('[data-seo="true"]').forEach((el) => el.remove());
     };
-  }, [pageKey, title, description, ogImage, noIndex, article, t, i18n.language, ptBR, enUS]);
+  }, [pageKey, title, description, keywords, ogImage, noIndex, article, t, i18n.language, ptBR, enUS]);
 
   return null;
 }

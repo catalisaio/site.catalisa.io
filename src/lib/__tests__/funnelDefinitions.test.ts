@@ -88,6 +88,13 @@ describe('classifyPageType', () => {
     it('classifies /en/insights/some-article as content_article', () => {
       expect(classifyPageType('/en/insights/some-article-slug')).toBe('content_article');
     });
+
+    it('classifies artigos listing and article pages', () => {
+      expect(classifyPageType('/artigos')).toBe('content');
+      expect(classifyPageType('/en/artigos')).toBe('content');
+      expect(classifyPageType('/artigos/construir-por-composicao')).toBe('content_article');
+      expect(classifyPageType('/en/artigos/construir-por-composicao')).toBe('content_article');
+    });
   });
 
   describe('presentation', () => {

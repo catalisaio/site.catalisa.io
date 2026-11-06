@@ -36,6 +36,7 @@ export default defineConfig({
 
           // Insights — consolidate into single chunk to avoid duplicates
           if (id.includes('/insights/') || id.includes('data/articles')) return 'insights';
+          if (id.includes('/articles/') || id.includes('data/channelArticles')) return 'articles';
 
           // Playbooks — consolidate
           if (id.includes('/playbooks') || id.includes('PlaybookCard') || id.includes('PlaybookDetail')) return 'playbooks';

@@ -4,6 +4,7 @@ import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { playbookIds } from '../src/data/playbook-ids';
 import { articleSlugs } from '../src/data/articles';
+import { channelArticleSlugs } from '../src/data/channelArticles';
 
 const DIST_DIR = resolve(process.cwd(), 'dist');
 const PORT = 4173;
@@ -25,6 +26,11 @@ const routes = [
   '/en/terms', '/en/security', '/en/pricing', '/en/how-it-works', '/en/integrations/whatsapp',
   '/en/press-kit', '/en/ai-agents-whatsapp',
   '/en/presentation/commercial', '/en/presentation/investor', '/en/presentation/retail', '/en/presentation/fintech', '/en/presentation/insurance',
+  // Artigos
+  '/artigos',
+  '/en/artigos',
+  ...channelArticleSlugs.map(slug => `/artigos/${slug}`),
+  ...channelArticleSlugs.map(slug => `/en/artigos/${slug}`),
   // Insights
   '/insights',
   '/en/insights',

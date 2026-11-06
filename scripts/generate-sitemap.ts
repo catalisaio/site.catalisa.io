@@ -2,6 +2,7 @@ import { writeFileSync } from 'fs';
 import { resolve } from 'path';
 import { playbookIds } from '../src/data/playbook-ids';
 import { articleSlugs } from '../src/data/articles';
+import { channelArticleSlugs } from '../src/data/channelArticles';
 
 const BASE_URL = 'https://catalisa.io';
 
@@ -43,6 +44,14 @@ const routes: SitemapRoute[] = [
   { ptPath: '/apresentacao/seguros', enPath: '/en/presentation/insurance', priority: 0.0, changefreq: 'monthly', noIndex: true },
   // VTEX Day 2026 (pt-only route)
   { ptPath: '/vtex-day-2026', enPath: '/vtex-day-2026', priority: 0.9, changefreq: 'daily' as const },
+  // Artigos (channel essays)
+  { ptPath: '/artigos', enPath: '/en/artigos', priority: 0.8, changefreq: 'weekly' as const },
+  ...channelArticleSlugs.map((slug) => ({
+    ptPath: `/artigos/${slug}`,
+    enPath: `/en/artigos/${slug}`,
+    priority: 0.7,
+    changefreq: 'monthly' as const,
+  })),
   // Insights
   { ptPath: '/insights', enPath: '/en/insights', priority: 0.8, changefreq: 'weekly' as const },
   ...articleSlugs.map((slug) => ({

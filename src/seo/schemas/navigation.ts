@@ -66,6 +66,11 @@ export function getSiteNavigationSchema() {
       },
       {
         '@type': 'WebPage',
+        name: 'Artigos',
+        url: `${BASE_URL}/artigos`,
+      },
+      {
+        '@type': 'WebPage',
         name: 'Como Funciona',
         url: `${BASE_URL}/como-funciona`,
       },

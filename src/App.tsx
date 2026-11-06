@@ -39,6 +39,8 @@ const PlaybookDetail = lazy(() => import('./pages/PlaybookDetail').then(m => ({ 
 const InsightsListing = lazy(() => import('./pages/InsightsListing').then(m => ({ default: m.InsightsListing })));
 const InsightsListingMagazine = lazy(() => import('./pages/InsightsListingMagazine').then(m => ({ default: m.InsightsListingMagazine })));
 const InsightArticle = lazy(() => import('./pages/InsightArticle').then(m => ({ default: m.InsightArticle })));
+const ArticlesIndex = lazy(() => import('./pages/ArticlesIndex').then(m => ({ default: m.ArticlesIndex })));
+const ChannelArticlePage = lazy(() => import('./pages/ChannelArticlePage').then(m => ({ default: m.ChannelArticlePage })));
 const PresentationLogin = lazy(() => import('./pages/presentation/PresentationLogin').then(m => ({ default: m.PresentationLogin })));
 const PresentationDashboard = lazy(() => import('./pages/presentation/PresentationDashboard').then(m => ({ default: m.PresentationDashboard })));
 const PresentationInvite = lazy(() => import('./pages/presentation/PresentationInvite').then(m => ({ default: m.PresentationInvite })));
@@ -154,6 +156,8 @@ function App() {
                 <Route path="/insights/all" element={<InsightsListing />} />
                 <Route path="/insights/magazine" element={<Navigate to="/insights" replace />} />
                 <Route path="/insights/:slug" element={<InsightArticle />} />
+                <Route path="/artigos" element={<ArticlesIndex />} />
+                <Route path="/artigos/:slug" element={<ChannelArticlePage />} />
                 <Route path="/determinismo" element={<Determinismo />} />
                 <Route path="/vtex-day-2026" element={<VtexDay2026 />} />
               </Route>
@@ -198,6 +202,8 @@ function App() {
                 <Route path="insights/all" element={<InsightsListing />} />
                 <Route path="insights/magazine" element={<Navigate to="/en/insights" replace />} />
                 <Route path="insights/:slug" element={<InsightArticle />} />
+                <Route path="artigos" element={<ArticlesIndex />} />
+                <Route path="artigos/:slug" element={<ChannelArticlePage />} />
                 <Route path="determinism" element={<Determinismo />} />
               </Route>
 

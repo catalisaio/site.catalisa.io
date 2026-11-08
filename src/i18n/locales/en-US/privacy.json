@@ -205,6 +205,18 @@
       ]
     },
     {
+      "title": "Use of Microsoft Graph and Microsoft Outlook Data (Microsoft Identity Platform)",
+      "content": "When you connect a Microsoft account (Outlook / Microsoft 365) to the Catalisa Platform, we access and use data from that account via Microsoft Graph solely to provide the calendar and email features you enable:",
+      "items": [
+        "Microsoft Outlook Calendar (Calendars.ReadWrite): we check your availability (free and busy periods) and create, update and cancel calendar events that you — or automations and AI agents you configure — request.",
+        "Microsoft Outlook Mail (Mail.ReadWrite and Mail.Send): we read, organize, draft and send emails on your behalf solely when you, or an automation/agent you configure, trigger those actions on the Platform.",
+        "Account identification and offline access (User.Read and offline_access): we access your basic profile (name and email address) only to identify the connected account on the Platform and maintain refresh tokens so your automations continue operating without requiring you to sign in again each session.",
+        "We do not use data obtained from Microsoft Graph (calendar or mail) to train artificial intelligence models, for advertising, or for sale to third parties.",
+        "We do not transfer data obtained from Microsoft Graph to third parties except as strictly necessary to provide the features described and contracted by you, when required by law, or with your explicit consent.",
+        "OAuth 2.0 access and refresh tokens are stored encrypted at rest using AES-256-GCM. You can revoke access at any time directly within the Platform or in your Microsoft account settings (account.live.com/consent/Manage or myapps.microsoft.com)."
+      ]
+    },
+    {
       "title": "Final Provisions",
       "content": "Minors. Our services are not intended for individuals under 18 (eighteen) years of age. We do not intentionally collect personal data from minors. If you become aware that data from a minor has been collected, please contact us so we can delete it.\n\nChanges to this Policy. We may update this Privacy Policy periodically. Significant changes will be communicated with a minimum of 30 (thirty) days' advance notice by email or Platform notification. Continued use of the Platform after the notice period constitutes acceptance of the updated Policy.\n\nContact. To exercise your rights, clarify questions or submit complaints about this Policy:\n\nDPO email: privacidade@catalisa.io\nGeneral email: contato@catalisa.io\nWhatsApp: +55 11 97730-3414\n\nJurisdiction. The courts of Sao Paulo, State of Sao Paulo, Brazil, are elected to resolve any disputes arising from this Policy."
     },
